@@ -1,0 +1,20 @@
+T1	Medical-Problem 217 233	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 236 253	Mild cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 263 284;286 295	Increasing asymmetric opacities
+T4	Medical-Anatomy 303 325	right perihilar region
+T5	Medical-Assertion 326 341	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 342 362;364 369	asymmetric pulmonary edema
+T7	Medical-Problem 375 397	superimposed infection
+T8	Medical-Assertion 398 416	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 419 442;444 460	Right small-to-moderate pleural effusion
+E7	Medical-Problem:T9
+T10	Medical-Problem 598 619	persistent dilatation
+T11	Medical-Anatomy 627 664	visualized colon in the upper abdomen
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11

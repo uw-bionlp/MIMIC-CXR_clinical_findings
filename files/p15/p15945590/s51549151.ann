@@ -1,0 +1,23 @@
+T1	Medical-Problem 255 271;273 276	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 396 430	pleural effusions of moderate size
+E2	Medical-Problem:T2
+T3	Medical-Problem 481 500	confluent opacities
+T4	Medical-Anatomy 509 551	lung bases, greater on the left than right
+T5	Medical-Problem 562 576;578 588	mild pulmonary congestion
+E5	Medical-Problem:T5
+T6	Medical-Assertion 733 743	suggesting
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 744 764	mild pulmonary edema
+T8	Medical-Problem 766 792;794 803	moderate bilateral pleural effusions
+T9	Medical-Problem 809 837	extensive basilar opacities,
+E8	Medical-Problem:T9
+T10	Medical-Problem 871 882	atelectasis
+T11	Medical-Assertion 883 889	versus
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 890 899	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T6 has-Medical-Assertion:T11
+E10	Medical-Problem:T12 has-Medical-Assertion:T6 has-Medical-Assertion:T11

@@ -1,0 +1,28 @@
+T1	Medical-Problem 456 501	pleural effusion right lower lobe atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 560 576	right upper lobe
+T3	Medical-Problem 610 617	abscess
+T4	Medical-Assertion 665 667	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 669 696	corresponding abnormalities
+T6	Medical-Assertion 799 801	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 802 811	pneumonia
+T8	Lesion-Size-Trend 841 844	new
+A3	Lesion-Size-TrendValue T8 new
+T9	Lesion-Size-Trend 848 853	newly
+A4	Lesion-Size-TrendValue T9 new
+T10	Lesion-Size 863 868	25 mm
+T11	Lesion-Characteristic 874 884	peripheral
+T12	Lesion-Description 885 892	nodular
+T13	Lesion-Description 894 901	opacity
+T14	Lesion-Anatomy 922 972;974 984	left upper lobe at the level of the anterior third interspace
+T15	Medical-Problem 1080 1104	septic pulmonary embolus
+E11	Medical-Problem:T15
+T16	Medical-Problem 1108 1128	pulmonary infarction
+E12	Medical-Problem:T16
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Lesion-Description:T12 has-Lesion-Size-Trend:T8
+E9	Lesion-Description:T13 has-Lesion-Size-Trend:T9 has-Lesion-Size-Present:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T14

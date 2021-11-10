@@ -1,0 +1,28 @@
+T1	Medical-Problem 236 263	Heterogeneous opacification
+T2	Medical-Anatomy 271 281	right lung
+T3	Medical-Problem 360 371	Abnormality
+T4	Medical-Anatomy 379 388	left lung
+T5	Medical-Problem 431 465	nodular quality of the abnormality
+T6	Medical-Anatomy 470 480	both lungs
+T7	Medical-Assertion 481 488	suggest
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 489 509	widespread infection
+T9	Medical-Assertion 550 561	may account
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 568 600	increase in general radiodensity
+T11	Medical-Anatomy 604 614	both lungs
+T12	Medical-Problem 640 678	component of increased pulmonary edema
+E10	Medical-Problem:T12
+T13	Medical-Problem 680 687	Pleural
+E11	Medical-Problem:T13
+T14	Medical-Problem 689 698	effusions
+E12	Medical-Problem:T14
+T15	Medical-Problem 781 796	mildly enlarged
+E13	Medical-Problem:T15
+T16	Medical-Problem 959 971	pneumothorax
+E14	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11

@@ -1,0 +1,32 @@
+T1	Medical-Assertion 457 459	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 460 475	pulmonary edema
+T3	Medical-Problem 494 507;509 533	Bibasilar and left perihilar opacities
+E2	Medical-Problem:T3
+T4	Medical-Assertion 588 590	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 591 607	pleural effusion
+T6	Medical-Assertion 638 640	no
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 641 653	pneumothorax
+T8	Medical-Problem 655 663;665 683	Biapical pleural thickening
+E5	Medical-Problem:T8
+T9	Medical-Assertion 738 740	no
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 742 769	acute osseous abnormalities
+T11	Medical-Problem 790 828	Bibasilar and left perihilar opacities
+E7	Medical-Problem:T11
+T12	Medical-Assertion 872 886	concerning for
+A5	Medical-AssertionValue T12 possible
+T13	Medical-Problem 887 917	recurrent aspiration pneumonia
+T14	Lesion-Characteristic 920 930	Underlying
+T15	Lesion-Description 931 935	mass
+T16	Lesion-Anatomy 948 965	left hilar region
+T17	Lesion-Assertion 969 981	not excluded
+A6	Lesion-AssertionValue T17 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Lesion-Description:T15 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T16 has-Lesion-Assertion:T17

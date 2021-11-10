@@ -1,0 +1,21 @@
+T1	Medical-Anatomy 316 333	upper mediastinum
+T2	Medical-Problem 382 389;391 402	widened appreciably
+T3	Medical-Assertion 425 427	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 428 456	contralateral tracheal shift
+T5	Medical-Assertion 466 481	could be due to
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 482 509	active mediastinal bleeding
+T7	Medical-Problem 513 540;542 553	severe mediastinal vascular engorgement
+T8	Lesion-Size 616 620;622 627	very large
+T9	Lesion-Anatomy 628 641	right thyroid
+T10	Lesion-Description 642 646	mass
+T11	Medical-Problem 650 657	abscess
+E9	Medical-Problem:T11
+T12	Medical-Problem 771 779;781 805	multiple left-sided rib fractures
+E10	Medical-Problem:T12
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Lesion-Description:T10 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T9

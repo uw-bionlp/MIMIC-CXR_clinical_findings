@@ -1,0 +1,29 @@
+T1	Medical-Problem 246 280	pre-existing left pleural effusion
+T2	Medical-Assertion 281 284;286 305	has completely resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 316 330	mild scoliosis
+T4	Medical-Anatomy 338 352	thoracic spine
+T5	Medical-Problem 358 362;364 373	mild asymmetry
+T6	Medical-Anatomy 381 388	ribcage
+T7	Medical-Assertion 461 463	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 464 481	pleural effusions
+T9	Medical-Assertion 484 486	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 487 496	pneumonia
+T11	Medical-Assertion 498 500	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 501 510;512 517	pulmonary edema
+T13	Lesion-Assertion 520 522	No
+A5	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 523 527	lung
+T15	Lesion-Description 528 535	nodules
+T16	Lesion-Description 539 545	masses
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14
+E11	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14

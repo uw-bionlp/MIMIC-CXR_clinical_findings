@@ -1,0 +1,27 @@
+T1	Medical-Assertion 325 327	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 328 333;335 348	focal consolidation
+T3	Medical-Assertion 349 363	concerning for
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 364 373	pneumonia
+T5	Medical-Problem 375 391	pleural effusion
+T6	Medical-Problem 396 408	pneumothorax
+T7	Medical-Problem 424 442	Bi-apical scarring
+E5	Medical-Problem:T7
+T8	Medical-Anatomy 458 479	pulmonary vasculature
+T9	Medical-Assertion 483 486	not
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 488 496	engorged
+T11	Medical-Assertion 678 680	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 681 706	acute osseous abnormality
+T13	Medical-Assertion 739 741	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 742 771	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T1 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T1 has-Medical-Assertion:T3
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

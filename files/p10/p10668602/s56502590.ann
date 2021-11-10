@@ -1,0 +1,34 @@
+T1	Medical-Anatomy 257 272	left upper lobe
+T2	Medical-Problem 273 280	opacity
+T3	Medical-Problem 291 298	opacity
+T4	Medical-Anatomy 306 321	left upper lobe
+T5	Medical-Problem 364 390	slowly resolving pneumonia
+T6	Lesion-Description 395 402	nodular
+E6	Lesion-Description:T6
+T7	Lesion-Description 403 410	opacity
+T8	Lesion-Anatomy 418 441;443 458	inferior portion of the left lower lobe
+T9	Lesion-Size-Trend 462 465	new
+A1	Lesion-Size-TrendValue T9 new
+T10	Medical-Assertion 589 591	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 593 608	pulmonary edema
+T12	Medical-Assertion 610 612	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 613 630	pleural effusions
+T14	Medical-Problem 662 704	slowly resolving left upper lobe pneumonia
+E11	Medical-Problem:T14
+T15	Lesion-Size-Trend 709 712	new
+A4	Lesion-Size-TrendValue T15 new
+T16	Lesion-Description 713 720	nodular
+E12	Lesion-Description:T16
+T17	Lesion-Description 722 729	opacity
+T18	Lesion-Anatomy 737 752	left upper lobe
+T19	Medical-Problem 811 829	delayed resolution
+E15	Medical-Problem:T19
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Lesion-Description:T17 has-Lesion-Size-Trend:T15 has-Lesion-Anatomy:T18

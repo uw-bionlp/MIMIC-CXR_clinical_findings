@@ -1,0 +1,41 @@
+T1	Medical-Assertion 314 316	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 317 329	pneumothorax
+T3	Medical-Problem 332 359	Bilateral pleural effusions
+E2	Medical-Problem:T3
+T4	Medical-Problem 436 440;442 454	Mild cardiomegaly
+E3	Medical-Problem:T4
+T5	Medical-Problem 456 481	central venous congestion
+E4	Medical-Problem:T5
+T6	Medical-Problem 487 505	interstitial edema
+E5	Medical-Problem:T6
+T7	Medical-Problem 525 541	New hazy opacity
+T8	Medical-Anatomy 549 564	left lower lobe
+T9	Medical-Problem 576 590;592 603	bulky superior mediastinal
+E8	Medical-Problem:T9
+T10	Lesion-Description 604 614	adenopathy
+E9	Lesion-Description:T10
+T11	Medical-Problem 621 629	widening
+T12	Medical-Anatomy 637 664;666 673	right and left paratracheal stripes
+T13	Medical-Problem 680 688	aorta is
+E12	Medical-Problem:T13
+T14	Medical-Problem 689 697	tortuous
+E13	Medical-Problem:T14
+T15	Medical-Problem 702 711	calcified
+E14	Medical-Problem:T15
+T16	Medical-Problem 733 758	Worsening pulmonary edema
+E15	Medical-Problem:T16
+T17	Medical-Anatomy 765 769	Left
+T18	Medical-Problem 781 788	opacity
+E17	Medical-Problem:T18
+T19	Medical-Assertion 789 804	could represent
+A2	Medical-AssertionValue T19 possible
+T20	Medical-Problem 805 831	aspiration/early infection
+T21	Medical-Assertion 838 840	No
+A3	Medical-AssertionValue T21 absent
+T22	Medical-Problem 841 853	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E18	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T19
+E19	Medical-Problem:T22 has-Medical-Assertion:T21

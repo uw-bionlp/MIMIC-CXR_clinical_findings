@@ -1,0 +1,43 @@
+T1	Lesion-Characteristic 618 628	Widespread
+T2	Lesion-Characteristic 630 639	calcified
+T3	Lesion-Anatomy 640 649	pulmonary
+T4	Lesion-Description 650 657	nodules
+T5	Lesion-Characteristic 699 707	dominant
+T6	Lesion-Characteristic 709 718	calcified
+T7	Lesion-Anatomy 719 735	right upper lobe
+T8	Lesion-Description 736 742	nodule
+T9	Lesion-Size 752 756	8 mm
+T10	Medical-Problem 797 815	linear atelectasis
+T11	Medical-Anatomy 823 833	right base
+T12	Medical-Problem 838 857;859 885	minimal patchy left retrocardiac opacification
+E12	Medical-Problem:T12
+T13	Medical-Assertion 888 907	Interval resolution
+A1	Medical-AssertionValue T13 absent
+T14	Medical-Problem 911 926	pulmonary edema
+T15	Medical-Problem 933 971	basilar predominant airspace opacities
+T16	Medical-Problem 976 993	pleural effusions
+T17	Medical-Assertion 1028 1038	Resolution
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1042 1083	acute pulmonary and pleural abnormalities
+T19	Medical-Problem 1121 1155;1157 1166	minimal residual left retrocardiac opacities
+E17	Medical-Problem:T19
+T20	Medical-Problem 1173 1220	small focus of linear right basilar atelectasis
+E18	Medical-Problem:T20
+T21	Lesion-Characteristic 1229 1239	Widespread
+T22	Lesion-Characteristic 1240 1249	calcified
+T23	Lesion-Anatomy 1250 1259	pulmonary
+T24	Lesion-Description 1260 1267	nodules
+T25	Medical-Assertion 1272 1285	suggestive of
+A3	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1286 1294	previous
+E23	Medical-Problem:T26
+T27	Medical-Problem 1323 1339	healed varicella
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T3
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7 has-Lesion-Size-Present:T9
+E10	Medical-Problem:T10 has-Medical-Anatomy:T11
+E13	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Medical-Problem:T16 has-Medical-Assertion:T13
+E16	Medical-Problem:T18 has-Medical-Assertion:T17
+E22	Lesion-Description:T24 has-Lesion-Characteristic:T21 has-Lesion-Characteristic:T22 has-Lesion-Anatomy:T23
+E24	Medical-Problem:T27 has-Medical-Assertion:T25

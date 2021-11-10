@@ -1,0 +1,36 @@
+T1	Lesion-Description 280 284	mass
+E1	Lesion-Description:T1
+T2	Lesion-Description 341 347	masses
+T3	Lesion-Characteristic 351 370	soft tissue density
+T4	Lesion-Description 419 423	mass
+E4	Lesion-Description:T4
+T5	Lesion-Description 466 470	mass
+T6	Lesion-Characteristic 477 483;485 492	direct contact
+T7	Lesion-Anatomy 500 510	chest wall
+T8	Lesion-Anatomy 516 527	mediastinal
+T9	Lesion-Anatomy 544 551	left AP
+T10	Lesion-Anatomy 631 640	bilateral
+T11	Lesion-Characteristic 641 663	solid and well-defined
+T12	Lesion-Anatomy 664 673	pulmonary
+T13	Lesion-Description 674 681	nodules
+T14	Lesion-Description 747 754	nodules
+T15	Lesion-Size 779 783	2 cm
+T16	Lesion-Anatomy 818 834;836 841	right upper lobe basis
+T17	Medical-Assertion 846 857	No evidence
+A1	Medical-AssertionValue T17 absent
+T18	Medical-Problem 861 899	focal parenchymal opacities suggesting
+E17	Medical-Problem:T18
+T19	Medical-Problem 900 909	pneumonia
+T20	Medical-Assertion 912 914	No
+A2	Medical-AssertionValue T20 absent
+T21	Medical-Problem 915 922;924 933	pleural effusions
+T22	Medical-Assertion 936 938	No
+A3	Medical-AssertionValue T22 absent
+T23	Medical-Problem 939 954	pulmonary edema
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T3
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E13	Lesion-Description:T13 has-Lesion-Anatomy:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12
+E14	Lesion-Description:T14 has-Lesion-Size-Present:T15 has-Lesion-Anatomy:T16
+E18	Medical-Problem:T19 has-Medical-Assertion:T17
+E19	Medical-Problem:T21 has-Medical-Assertion:T20
+E20	Medical-Problem:T23 has-Medical-Assertion:T22

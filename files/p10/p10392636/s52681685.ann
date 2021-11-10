@@ -1,0 +1,21 @@
+T1	Medical-Problem 274 284	Tortuosity
+T2	Medical-Anatomy 292 297	aorta
+T3	Medical-Assertion 363 387	might be consistent with
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 388 398	dilatation
+T5	Lesion-Description 441 448	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 449 456	opacity
+T7	Lesion-Anatomy 464 484	left suprahilar area
+T8	Lesion-Size 501 506	10 mm
+T9	Lesion-Description 579 585	nodule
+E8	Lesion-Description:T9
+T10	Medical-Assertion 607 609	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 610 626	pleural effusion
+T12	Medical-Problem 630 642	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T7 has-Lesion-Size-Present:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10

@@ -1,0 +1,42 @@
+T1	Medical-Problem 291 311	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 372 386;388 396	remains mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 453 461	crowding
+T4	Medical-Anatomy 470 485	bronchovascular
+T5	Medical-Assertion 521 528	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 529 544;546 551	overt pulmonary edema
+T7	Lesion-Characteristic 553 564	Innumerable
+T8	Lesion-Anatomy 565 572	basilar
+T9	Lesion-Characteristic 573 584	predominant
+T10	Lesion-Description 585 592	nodular
+T11	Lesion-Description 593 602	opacities
+T12	Medical-Problem 683 699	Patchy opacities
+T13	Medical-Anatomy 729 739	lung bases
+T14	Medical-Assertion 740 760	likely reflective of
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 761 772	atelectasis
+T16	Medical-Assertion 774 776	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 778 801	new focal consolidation
+T18	Medical-Problem 803 819	pleural effusion
+T19	Medical-Problem 823 835	pneumothorax
+T20	Medical-Problem 854 885	Multilevel degenerative changes
+T21	Medical-Anatomy 909 923	thoracic spine
+T22	Lesion-Count 944 955	Innumerable
+T23	Lesion-Anatomy 956 965	pulmonary
+T24	Lesion-Description 966 976	metastases
+T25	Medical-Problem 1020 1041	Bibasilar atelectasis
+E22	Medical-Problem:T25
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T7
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T16
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21
+E21	Lesion-Description:T24 has-Lesion-Count:T22 has-Lesion-Anatomy:T23

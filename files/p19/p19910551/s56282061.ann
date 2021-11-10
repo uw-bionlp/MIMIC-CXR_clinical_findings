@@ -1,0 +1,40 @@
+T1	Medical-Problem 227 242;244 251	left lower lobe opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 252 266	concerning for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 267 276	pneumonia
+T4	Medical-Problem 302 316	subtle opacity
+T5	Medical-Anatomy 338 354	right lower lung
+T6	Medical-Assertion 376 390	concerning for
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 392 401	pneumonia
+T8	Medical-Anatomy 408 413	lungs
+T9	Medical-Assertion 438 446	suggests
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 447 456	emphysema
+T11	Medical-Assertion 459 461	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 462 467;469 485	large pleural effusion
+T13	Medical-Assertion 505 507	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 508 520	pneumothorax
+T15	Medical-Assertion 596 598	No
+A6	Medical-AssertionValue T15 absent
+T16	Medical-Assertion 599 609	convincing
+A7	Medical-AssertionValue T16 possible
+T17	Medical-Problem 624 629	edema
+T18	Medical-Problem 679 688	Emphysema
+E11	Medical-Problem:T18
+T19	Medical-Problem 694 714	lower lung opacities
+E12	Medical-Problem:T19
+T20	Medical-Assertion 715 729	concerning for
+A8	Medical-AssertionValue T20 possible
+T21	Medical-Problem 730 750	multifocal pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T17 has-Medical-Assertion:T15 has-Medical-Assertion:T16
+E13	Medical-Problem:T21 has-Medical-Assertion:T20

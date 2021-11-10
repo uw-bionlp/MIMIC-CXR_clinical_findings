@@ -1,0 +1,25 @@
+T1	Medical-Problem 493 522	multifocal airspace opacities
+T2	Medical-Anatomy 530 545	right lung base
+T3	Medical-Anatomy 547 556;558 562	left lung base
+T4	Medical-Anatomy 568 597	within the retrocardiac space
+T5	Medical-Problem 608 628;630 651	persistent increased interstitial markings
+E5	Medical-Problem:T5
+T6	Medical-Problem 668 700	upper lobe predominant emphysema
+E6	Medical-Problem:T6
+T7	Medical-Assertion 703 711	Probable
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 712 745	small bilateral pleural effusions
+T9	Medical-Assertion 766 777	no evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 782 794	pneumothorax
+T11	Medical-Assertion 912 914	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 915 928;930 943	acute osseous abnormalities
+T13	Medical-Problem 1001 1038	multiple bilateral airspace opacities
+E10	Medical-Problem:T13
+T14	Medical-Problem 1057 1077	multifocal pneumonia
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

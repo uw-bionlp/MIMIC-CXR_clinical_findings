@@ -1,0 +1,35 @@
+T1	Medical-Assertion 226 228	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 229 236;238 246	pleural effusion
+T3	Medical-Problem 250 262	pneumothorax
+T4	Medical-Problem 265 298	Right subcutaneous chest wall air
+T5	Medical-Assertion 299 311	has resolved
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 314 331	Increased density
+T7	Medical-Anatomy 339 360	right infrahilar area
+T8	Medical-Problem 468 500	Slightly increased lung markings
+T9	Medical-Anatomy 508 532	right mid and lower lung
+T10	Medical-Problem 577 610	Air-filled dilated loops of bowel
+E8	Medical-Problem:T10
+T11	Medical-Assertion 679 681	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 682 694	pneumothorax
+T13	Medical-Problem 700 734	Increased right infrahilar density
+T14	Medical-Problem 740 773;775 783	persistent increased interstitial markings
+T15	Medical-Anatomy 793 817	right mid and lower lung
+T16	Medical-Problem 819 841	Post-procedure changes
+T17	Medical-Assertion 847 855	possible
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 919 928	Pneumonia
+E14	Medical-Problem:T18
+T19	Medical-Problem 932 942	aspiration
+E15	Medical-Problem:T19
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T15
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T16 has-Medical-Assertion:T17

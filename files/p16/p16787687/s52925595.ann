@@ -1,0 +1,38 @@
+T1	Medical-Assertion 30 32	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 33 62	acute cardiopulmonary process
+T3	Medical-Problem 106 113	Opacity
+T4	Medical-Anatomy 121 143	medial right lung base
+T5	Medical-Assertion 151 162	may reflect
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 163 174	atelectasis
+T7	Medical-Assertion 181 195	cannot exclude
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 196 206	aspiration
+T9	Medical-Problem 210 219	pneumonia
+T10	Medical-Assertion 265 267	no
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 268 297	acute cardiopulmonary process
+T12	Medical-Problem 680 687	opacity
+T13	Medical-Anatomy 695 717	medial right lung base
+T14	Medical-Problem 746 763	prominent fat pad
+T15	Medical-Assertion 801 803	no
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 805 812	pleural
+E11	Medical-Problem:T16
+T17	Medical-Problem 813 821	effusion
+T18	Medical-Problem 825 837	pneumothorax
+T19	Medical-Assertion 940 942	No
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 943 948	acute
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Anatomy:T13
+E10	Medical-Problem:T14 has-Medical-Anatomy:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T15
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

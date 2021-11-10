@@ -1,0 +1,23 @@
+T1	Medical-Problem 264 285;287 316	dense left lower lobe and lower under consolidation
+E1	Medical-Problem:T1
+T2	Medical-Assertion 317 323	can be
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 324 333	pneumonia
+T4	Medical-Problem 341 351	aspiration
+T5	Medical-Assertion 364 370	likely
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 371 393	adjacent pleural fluid
+T7	Medical-Problem 449 461	pneumothorax
+E5	Medical-Problem:T7
+T8	Medical-Problem 486 505	dense consolidation
+T9	Medical-Anatomy 513 528	left lower lobe
+T10	Medical-Problem 534 553;555 563	associated moderate effusion
+T11	Medical-Assertion 564 570	can be
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 571 580	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11

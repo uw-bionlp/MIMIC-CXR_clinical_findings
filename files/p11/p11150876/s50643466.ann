@@ -1,0 +1,34 @@
+T1	Medical-Problem 201 225	subtle increased opacity
+T2	Medical-Anatomy 246 270;272 313	left lung apex overlying the clavicle and posterior left sixth rib
+T3	Medical-Problem 338 346	blunting
+T4	Medical-Anatomy 355 386	left lateral costophrenic angle
+T5	Medical-Problem 410 426;428 436	small underlying effusion
+T6	Medical-Problem 439 451	Retrocardiac
+E6	Medical-Problem:T6
+T7	Medical-Problem 452 459	opacity
+E7	Medical-Problem:T7
+T8	Medical-Assertion 460 478	may also be due to
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 479 490	atelectasis
+T10	Medical-Problem 494 503	infection
+T11	Medical-Problem 516 537	moderate cardiomegaly
+E10	Medical-Problem:T11
+T12	Medical-Problem 668 687	left apical opacity
+E11	Medical-Problem:T12
+T13	Medical-Problem 759 774	basilar opacity
+E12	Medical-Problem:T13
+T14	Medical-Assertion 775 788	likely due in
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 800 808	effusion
+T16	Medical-Problem 814 825	atelectasis
+T17	Medical-Problem 828 837	Infection
+T18	Medical-Assertion 841 853	not excluded
+A3	Medical-AssertionValue T18 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T18

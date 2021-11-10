@@ -1,0 +1,46 @@
+T1	Medical-Problem 302 319	increased opacity
+T2	Medical-Anatomy 327 337;339 343	right lung base
+T3	Medical-Assertion 353 367	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 368 377	pneumonia
+T5	Medical-Problem 402 414;416 457	retrocardiac opacity, mostly in a linear configuration
+E4	Medical-Problem:T5
+T6	Medical-Problem 481 492	atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Problem 507 527	pneumonia/aspiration
+E6	Medical-Problem:T7
+T8	Lesion-Count 532 535	few
+T9	Lesion-Characteristic 536 545	scattered
+T10	Lesion-Characteristic 551 568	nodular-appearing
+T11	Lesion-Description 570 579	opacities
+T12	Lesion-Anatomy 596 614	mid-to-upper lungs
+T13	Medical-Assertion 694 696	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 697 709	pneumothorax
+T15	Medical-Assertion 720 722	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 724 738	large effusion
+T17	Medical-Problem 839 846	Opacity
+T18	Medical-Anatomy 854 869	right lung base
+T19	Medical-Assertion 870 884	concerning for
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 885 894	pneumonia
+T21	Medical-Problem 898 906	Presumed
+E17	Medical-Problem:T21
+T22	Medical-Problem 907 931	retrocardiac atelectasis
+E18	Medical-Problem:T22
+T23	Lesion-Description 945 962	nodular opacities
+T24	Lesion-Anatomy 970 975;977 1007	right lower lung and left upper lung
+T25	Lesion-Assertion 1008 1023	could represent
+A5	Lesion-AssertionValue T25 possible
+T26	Lesion-Anatomy 1029 1038	pulmonary
+T27	Lesion-Description 1039 1046	nodules
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E10	Lesion-Description:T11 has-Lesion-Count:T8 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E19	Lesion-Description:T23 has-Lesion-Anatomy:T24
+E22	Lesion-Description:T27 has-Lesion-Anatomy:T24 has-Lesion-Assertion:T25 has-Lesion-Anatomy:T26

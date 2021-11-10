@@ -1,0 +1,23 @@
+T1	Medical-Problem 237 252	volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Assertion 263 274	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 278 290	pneumothorax
+T4	Medical-Problem 352 360	blunting
+T5	Medical-Anatomy 368 373;375 388	right hemidiaphragm
+T6	Medical-Assertion 432 448	likely represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 452 468	pleural effusion
+T8	Medical-Assertion 470 472	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 473 492	focal consolidation
+T10	Medical-Problem 559 586	acute osseous abnormalities
+E7	Medical-Problem:T10
+T11	Medical-Assertion 618 620	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 633 645	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

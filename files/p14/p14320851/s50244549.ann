@@ -1,0 +1,25 @@
+T1	Lesion-Anatomy 187 198	Mediastinal
+T2	Lesion-Description 199 209	adenopathy
+T3	Lesion-Anatomy 214 225	Mediastinal
+T4	Lesion-Description 227 237	adenopathy
+T5	Medical-Problem 298 317	atelectatic changes
+T6	Medical-Anatomy 326 335	left base
+T7	Medical-Assertion 373 398	almost completely cleared
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Assertion 412 423	no evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 427 436	pneumonia
+T10	Medical-Problem 438 457	vascular congestion
+T11	Medical-Problem 462 478	pleural effusion
+T12	Lesion-Assertion 495 510	no radiographic
+A3	Lesion-AssertionValue T12 absent
+T13	Lesion-Anatomy 523 528	hilar
+T14	Lesion-Anatomy 532 543	mediastinal
+T15	Lesion-Description 544 554	adenopathy
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T1 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E12	Lesion-Description:T15 has-Lesion-Assertion:T12 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T14

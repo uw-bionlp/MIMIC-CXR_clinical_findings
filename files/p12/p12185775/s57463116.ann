@@ -1,0 +1,45 @@
+T1	Medical-Problem 69 107;109 122;124 134	Minimally improved right and unchanged  left pleural  effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 140 160	adjacent atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 171 200	underlying infectious process
+T4	Medical-Assertion 203 220	can't be excluded
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 255 273;275 300	stable to slightly  improved pulmonary edema
+E4	Medical-Problem:T5
+T6	Medical-Problem 302 319	Mild cardiomegaly
+E5	Medical-Problem:T6
+T7	Medical-Problem 498 513	pulmonary edema
+E6	Medical-Problem:T7
+T8	Medical-Problem 726 732;734 746	Severe cardiomegaly
+E7	Medical-Problem:T8
+T9	Medical-Problem 758 775	Mild interstitial
+E8	Medical-Problem:T9
+T10	Medical-Problem 776 781	edema
+E9	Medical-Problem:T10
+T11	Medical-Problem 793 799;801 814	Severe opacification
+T12	Medical-Anatomy 822 837	left lower lung
+T13	Medical-Assertion 838 846	could be
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 847 858	atelectasis
+T15	Medical-Problem 863 879	pleural effusion
+T16	Medical-Assertion 885 903	raises concern for
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 904 913	pneumonia
+T18	Medical-Problem 916 958;960 965	Pleural effusion, at least moderate on the right
+E15	Medical-Problem:T18
+T19	Medical-Assertion 982 984	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 985 997	pneumothorax
+T21	Medical-Anatomy 1033 1048	right pulmonary
+E17	Medical-Anatomy:T21
+T22	Medical-Assertion 1125 1127	No
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1128 1140	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T12 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

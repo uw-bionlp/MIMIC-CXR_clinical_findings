@@ -1,0 +1,24 @@
+T1	Medical-Assertion 319 321	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 322 334	pneumothorax
+T3	Medical-Problem 408 429	Posttreatment changes
+E2	Medical-Problem:T3
+T4	Medical-Problem 463 467;469 505	Mild elevation of the right hemidiaphragm
+E3	Medical-Problem:T4
+T5	Medical-Assertion 519 530	No evidence
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 534 539	acute
+T7	Medical-Assertion 549 556	suggest
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 557 566	pneumonia
+T9	Medical-Problem 568 583	pulmonary edema
+T10	Medical-Problem 587 604	pleural effusions
+T11	Medical-Assertion 625 627	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 628 640	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

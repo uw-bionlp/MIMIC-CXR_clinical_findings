@@ -1,0 +1,27 @@
+T1	Medical-Assertion 599 610	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 615 646	significant cardiac enlargement
+T3	Medical-Assertion 678 681	not
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 682 691	congested
+T5	Medical-Problem 695 707	Hazy density
+T6	Medical-Anatomy 711 720	left base
+T7	Medical-Assertion 721 745	most likely representing
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 746 762	pleural effusion
+T9	Medical-Problem 768 779	atelectasis
+T10	Medical-Assertion 937 939	No
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 940 952	pneumothorax
+T12	Medical-Problem 1072 1096	Unchanged chest findings
+E8	Medical-Problem:T12
+T13	Medical-Assertion 1099 1101	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1102 1140;1142 1176	reoccurrence of previously encountered mediastinal shift towards the left
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

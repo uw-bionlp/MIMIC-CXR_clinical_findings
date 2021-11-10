@@ -1,0 +1,30 @@
+T1	Medical-Problem 340 358	left hemidiaphragm
+E1	Medical-Problem:T1
+T2	Medical-Problem 368 376	elevated
+E2	Medical-Problem:T2
+T3	Medical-Assertion 440 442	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 443 459;461 469	definite pleural effusion
+T5	Medical-Assertion 480 482	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 483 495	pneumothorax
+T7	Medical-Anatomy 501 516	lung parenchyma
+T8	Medical-Assertion 520 527	without
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 529 542	consolidation
+T10	Lesion-Characteristic 554 564	suspicious
+T11	Lesion-Anatomy 565 578	left mid lung
+T12	Lesion-Description 579 585	nodule
+T13	Lesion-Size 595 599	5 mm
+T14	Lesion-Size 616 620	3 mm
+T15	Medical-Problem 658 666;668 680	moderate cardiomegaly
+E12	Medical-Problem:T15
+T16	Lesion-Anatomy 712 725	left mid lung
+T17	Lesion-Description 726 732	nodule
+T18	Lesion-Size 743 747	5 mm
+T19	Lesion-Size 763 767	3 mm
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Present:T13 has-Lesion-Size-Past:T14
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T16 has-Lesion-Size-Present:T18 has-Lesion-Size-Past:T19

@@ -1,0 +1,31 @@
+T1	Medical-Problem 280 321	Small, peripheral consolidative opacities
+T2	Medical-Anatomy 351 356;358 363	upper lungs
+T3	Medical-Assertion 423 445	Differential diagnosis
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 455 464	pneumonia
+T5	Medical-Problem 466 488	eosinophilic pneumonia
+T6	Medical-Problem 495 501;503 509	septic emboli
+T7	Medical-Problem 512 532	Mild pulmonary edema
+E6	Medical-Problem:T7
+T8	Medical-Anatomy 588 617	base of the right hemi thorax
+E7	Medical-Anatomy:T8
+T9	Medical-Problem 649 656;658 666	pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 679 688	pneumonia
+E9	Medical-Problem:T10
+T11	Medical-Problem 692 716	atelectasis is worsening
+E10	Medical-Problem:T11
+T12	Medical-Problem 719 734	Left lower lobe
+E11	Medical-Problem:T12
+T13	Medical-Problem 736 749	consolidation
+T14	Medical-Assertion 797 809;811 820	differential diagnosis
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Assertion 943 945	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 946 958	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E12	Medical-Problem:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

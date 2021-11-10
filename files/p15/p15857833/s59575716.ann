@@ -1,0 +1,21 @@
+T1	Medical-Assertion 279 281	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 283 295	pneumothorax
+T3	Medical-Problem 299 315	pleural effusion
+T4	Lesion-Assertion 327 329	no
+A2	Lesion-AssertionValue T4 absent
+T5	Medical-Problem 342 347	large
+E3	Medical-Problem:T5
+T6	Lesion-Anatomy 348 359	mediastinal
+T7	Lesion-Anatomy 364 369	hilar
+T8	Lesion-Description 370 385	lymphadenopathy
+T9	Medical-Problem 398 423	mild degenerative changes
+T10	Medical-Anatomy 431 439;441 446	thoracic spine
+T11	Medical-Assertion 464 466	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 479 512	acute cardiopulmonary abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T8 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

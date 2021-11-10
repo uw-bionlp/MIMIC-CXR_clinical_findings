@@ -1,0 +1,30 @@
+T1	Medical-Problem 85 100	Volume overload
+E1	Medical-Problem:T1
+T2	Medical-Problem 104 119	pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 204 231	heterogeneous opacification
+T4	Medical-Anatomy 239 243;245 250	lung bases
+T5	Medical-Assertion 251 266	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 267 282	dependent edema
+T7	Medical-Assertion 288 307	raises more concern
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 312 321	pneumonia
+T9	Lesion-Size 329 334	large
+T10	Lesion-Characteristic 335 344	cavitated
+T11	Lesion-Description 345 349	mass
+T12	Lesion-Anatomy 357 372	left upper lobe
+T13	Medical-Assertion 421 432	possibility
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 436 455	internal aspiration
+T15	Medical-Assertion 458 460	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 461 473	pneumothorax
+T17	Medical-Problem 478 506	appreciable pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15

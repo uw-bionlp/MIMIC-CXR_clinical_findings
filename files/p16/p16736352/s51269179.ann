@@ -1,0 +1,31 @@
+T1	Medical-Problem 165 182;184 194	bilateral pleural  effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 200 224	bibasilar atelectasis on
+E2	Medical-Problem:T2
+T3	Medical-Problem 260 286	Prominent left mediastinum
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 594 609	Left lower lobe
+T5	Medical-Problem 635 655	atelectasis worsened
+T6	Medical-Problem 706 717	obstruction
+T7	Medical-Assertion 721 729	presumed
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 732 739	perhaps
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 740 750	aspiration
+T10	Medical-Problem 754 763	impaction
+T11	Medical-Problem 772 793	left pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 838 854	pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Problem 879 886;888 911	shifted leftward by atelectasis
+T14	Medical-Assertion 916 919	not
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 920 929	enlarged.
+T16	Medical-Problem 971 983	pneumothorax
+E13	Medical-Problem:T16
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Assertion:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

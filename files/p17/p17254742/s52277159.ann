@@ -1,0 +1,34 @@
+T1	Lesion-Count 218 226	Multiple
+T2	Lesion-Description 227 234	nodular
+E2	Lesion-Description:T2
+T3	Lesion-Anatomy 235 244	pulmonary
+T4	Lesion-Description 245 254	opacities
+T5	Lesion-Size 328 334	2.3 cm
+T6	Lesion-Description 335 342	nodular
+E6	Lesion-Description:T6
+T7	Lesion-Description 343 350	opacity
+T8	Lesion-Anatomy 361 366;368 373	right hilum
+T9	Lesion-Assertion 374 388	concerning for
+A1	Lesion-AssertionValue T9 possible
+T10	Lesion-Description 389 404	lymphadenopathy
+T11	Medical-Problem 416 445	mild left basilar atelectasis
+E10	Medical-Problem:T11
+T12	Medical-Assertion 448 450	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 451 467	pleural effusion
+T14	Medical-Problem 471 483	pneumothorax
+T15	Medical-Anatomy 493 498	Heart
+T16	Medical-Assertion 502 505	not
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 506 514	enlarged
+T18	Lesion-Characteristic 535 542	Nodular
+T19	Lesion-Anatomy 543 552	pulmonary
+T20	Lesion-Anatomy 557 568	right hilar
+T21	Lesion-Description 569 578	opacities
+E4	Lesion-Description:T4 has-Lesion-Count:T1 has-Lesion-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E18	Lesion-Description:T21 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T19 has-Lesion-Anatomy:T20

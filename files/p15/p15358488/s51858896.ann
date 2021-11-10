@@ -1,0 +1,21 @@
+T1	Medical-Assertion 396 398;400 408	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 412 424	pneumothorax
+T3	Medical-Problem 509 524	slight blunting
+T4	Medical-Anatomy 532 541;543 562	posterior costophrenic angles
+T5	Medical-Problem 567 589	trace pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 607 613;615 625	Slight prominence
+T7	Medical-Anatomy 633 645	interstitium
+T8	Medical-Assertion 646 659	may be due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 660 686	minimal interstitial edema
+T10	Medical-Problem 695 710	chronic changes
+T11	Medical-Anatomy 713 720	Cardiac
+T12	Medical-Problem 735 762	mild-to-moderately enlarged
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T11

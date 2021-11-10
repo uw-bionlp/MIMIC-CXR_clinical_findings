@@ -1,0 +1,19 @@
+T1	Medical-Problem 202 247;249 256	Widened mediastinum due to engorgement of the vessels
+E1	Medical-Problem:T1
+T2	Medical-Problem 269 289	Mild pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 316 326;328 337	Increasing opacities
+T4	Medical-Anatomy 345 361	right lower lobe
+T5	Medical-Assertion 362 377	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 378 389	atelectasis
+T7	Medical-Problem 415 437	superimposed infection
+T8	Medical-Assertion 438 456	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 518 520	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 521 551	pneumothorax/pleural effusions
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

@@ -1,0 +1,30 @@
+T1	Medical-Problem 245 268	increased opacification
+T2	Medical-Anatomy 276 290	left lung base
+T3	Medical-Problem 333 352	associated blunting
+T4	Medical-Anatomy 360 383	left costophrenic angle
+T5	Medical-Problem 398 419	left pleural effusion
+T6	Medical-Problem 425 449	associated lung collapse
+E6	Medical-Problem:T6
+T7	Medical-Problem 457 462;464 477	focal consolidation
+E7	Medical-Problem:T7
+T8	Medical-Problem 582 607;609 617	Diffuse interstitial lung markings
+T9	Medical-Problem 623 631	scarring
+T10	Medical-Anatomy 639 655	bilateral apices
+T11	Medical-Assertion 672 674	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 675 686;688 710	significant right pleural effusion
+T13	Medical-Assertion 725 727	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 728 740	pneumothorax
+T15	Medical-Anatomy 763 784	pulmonary vasculature
+T16	Medical-Assertion 785 793	does not
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 794 809	appear engorged
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E8	Medical-Problem:T8 has-Medical-Anatomy:T10
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

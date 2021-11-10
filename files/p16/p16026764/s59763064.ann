@@ -1,0 +1,25 @@
+T1	Lesion-Anatomy 209 219	right lung
+T2	Lesion-Description 230 234	mass
+T3	Medical-Problem 244 253	elevation
+T4	Medical-Anatomy 261 276	right lung base
+T5	Medical-Problem 295 303	elevated
+T6	Medical-Problem 349 360;362 378	subpulmonic pleural effusion
+T7	Medical-Anatomy 466 475	Left lung
+T8	Medical-Problem 500 508;510 524	vascular redistribution
+T9	Medical-Problem 539 564	redirection of blood flow
+T10	Medical-Anatomy 574 584	right lung
+T11	Medical-Problem 615 637	Azygous region is full
+E11	Medical-Problem:T11
+T12	Lesion-Anatomy 678 702	right lower paratracheal
+T13	Lesion-Description 703 713	adenopathy
+T14	Medical-Problem 775 798	acute pulmonary embolus
+T15	Medical-Assertion 799 820	should be entertained
+A1	Medical-AssertionValue T15 possible
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E13	Lesion-Description:T13 has-Lesion-Anatomy:T12
+E14	Medical-Problem:T14 has-Medical-Assertion:T15

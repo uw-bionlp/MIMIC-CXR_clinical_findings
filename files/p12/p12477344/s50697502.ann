@@ -1,0 +1,61 @@
+T1	Medical-Anatomy 324 345	pulmonary vasculature
+T2	Medical-Assertion 349 352	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 353 361	engorged
+T4	Medical-Problem 454 477	Lungs are hyperinflated
+E3	Medical-Problem:T4
+T5	Medical-Problem 480 509	Subtle areas of opacification
+T6	Medical-Anatomy 526 542	right upper lobe
+T7	Medical-Anatomy 544 554;556 560	right lung base
+T8	Lesion-Anatomy 566 581	left upper lobe
+T9	Lesion-Characteristic 599 611	ground-glass
+T10	Lesion-Description 612 619	lesions
+T11	Medical-Problem 675 694	areas of hemorrhage
+E10	Medical-Problem:T11
+T12	Medical-Problem 744 752	blunting
+T13	Medical-Anatomy 760 784	right costophrenic angle
+T14	Medical-Problem 804 826	small pleural effusion
+T15	Medical-Assertion 878 880	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 881 904	new focal consolidation
+T17	Medical-Assertion 927 929	no
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 931 943	pneumothorax
+T19	Medical-Problem 946 954	Scarring
+T20	Medical-Anatomy 966 977	lung apices
+T21	Lesion-Description 1017 1024	nodules
+E18	Lesion-Description:T21
+T22	Lesion-Characteristic 1093 1100	Diffuse
+T23	Lesion-Characteristic 1101 1108	osseous
+T24	Lesion-Description 1120 1127	lesions
+T25	Medical-Problem 1175 1198	Moderate loss of height
+T26	Medical-Anatomy 1204 1231	mid thoracic vertebral body
+T27	Medical-Problem 1272 1301	Subtle areas of opacification
+T28	Medical-Anatomy 1309 1325	right upper lobe
+T29	Medical-Anatomy 1327 1342	right lung base
+T30	Medical-Anatomy 1349 1364	left upper lobe
+T31	Medical-Problem 1382 1404	ground-glass opacities
+T32	Medical-Problem 1449 1459	hemorrhage
+E29	Medical-Problem:T32
+T33	Medical-Assertion 1499 1501	No
+A4	Medical-AssertionValue T33 absent
+T34	Medical-Problem 1503 1529	new areas of opacification
+T35	Medical-Problem 1552 1580	Small right pleural effusion
+E31	Medical-Problem:T35
+T36	Lesion-Anatomy 1651 1660	pulmonary
+T37	Lesion-Description 1661 1668	nodules
+T38	Lesion-Characteristic 1673 1680	osseous
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T14 has-Medical-Anatomy:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E21	Lesion-Description:T24 has-Lesion-Characteristic:T22 has-Lesion-Characteristic:T23
+E22	Medical-Problem:T25 has-Medical-Anatomy:T26
+E24	Medical-Problem:T27 has-Medical-Anatomy:T28 has-Medical-Anatomy:T29 has-Medical-Anatomy:T30
+E28	Medical-Problem:T31 has-Medical-Anatomy:T30
+E30	Medical-Problem:T34 has-Medical-Assertion:T33
+E33	Lesion-Description:T37 has-Lesion-Anatomy:T36 has-Lesion-Characteristic:T38

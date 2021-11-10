@@ -1,0 +1,18 @@
+T1	Medical-Anatomy 217 226	Left lung
+T2	Medical-Problem 230 246	entirely airless
+T3	Medical-Problem 258 279	left pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 326 348;350 363	mediastinum is shifted ipsilaterally
+E4	Medical-Problem:T4
+T5	Medical-Problem 369 402	loss of volume due to atelectasis
+E5	Medical-Problem:T5
+T6	Medical-Problem 470 502;504 524	Right pleural effusion is small, layering posteriorly
+E6	Medical-Problem:T6
+T7	Medical-Problem 527 547	Vascular engorgement
+T8	Medical-Anatomy 555 565	right lung
+T9	Medical-Assertion 600 602	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 603 627	definite pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

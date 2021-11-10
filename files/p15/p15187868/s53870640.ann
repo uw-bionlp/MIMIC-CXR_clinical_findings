@@ -1,0 +1,49 @@
+T1	Medical-Problem 317 332	Rounded density
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 361 377	right upper lobe
+T3	Lesion-Assertion 378 393	likely reflects
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Characteristic 396 405	calcified
+T5	Lesion-Description 406 415	granuloma
+T6	Medical-Problem 417 434	Streaky opacities
+T7	Medical-Anatomy 443 453	lung bases
+T8	Medical-Problem 474 494	areas of atelectasis
+T9	Medical-Assertion 496 498	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 499 515	pleural effusion
+T11	Medical-Problem 520 532	pneumothorax
+T12	Medical-Assertion 548 550	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 551 570	displaced fractures
+T14	Medical-Problem 581 591;593 613	Multilevel degenerative changes
+T15	Medical-Anatomy 631 645	thoracic spine
+T16	Medical-Problem 647 661;663 684	Anterior wedge compression deformity
+T17	Medical-Anatomy 692 714	thoracolumbar junction
+T18	Medical-Problem 742 762	Degenerative changes
+T19	Medical-Anatomy 792 816	right glenohumeral joint
+T20	Medical-Problem 837 858	Bibasilar atelectasis
+E17	Medical-Problem:T20
+T21	Lesion-Size 861 866	15 mm
+T22	Lesion-Characteristic 867 876	calcified
+T23	Lesion-Characteristic 877 884	rounded
+T24	Lesion-Description 885 891	lesion
+T25	Lesion-Anatomy 899 915	right upper lobe
+T26	Lesion-Description 935 944	granuloma
+T27	Medical-Assertion 946 948	No
+A4	Medical-AssertionValue T27 absent
+T28	Medical-Problem 949 972	displaced rib fractures
+T29	Medical-Problem 974 991;993 1014	Age indeterminate compression deformity
+T30	Medical-Anatomy 1020 1064	vertebral body at the thoracolumbar junction
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T2 has-Lesion-Assertion:T3 has-Lesion-Characteristic:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E21	Lesion-Description:T24 has-Lesion-Size-Present:T21 has-Lesion-Characteristic:T22 has-Lesion-Characteristic:T23 has-Lesion-Anatomy:T25
+E23	Lesion-Description:T26 has-Lesion-Anatomy:T25
+E24	Medical-Problem:T28 has-Medical-Assertion:T27
+E25	Medical-Problem:T29 has-Medical-Anatomy:T30

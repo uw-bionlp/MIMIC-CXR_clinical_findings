@@ -1,0 +1,41 @@
+T1	Medical-Problem 378 391	Large opacity
+T2	Medical-Anatomy 399 412	left mid lung
+T3	Medical-Problem 514 543	greater heterogeneous opacity
+T4	Medical-Anatomy 551 566	right lung base
+T5	Lesion-Characteristic 585 592	similar
+T6	Lesion-Characteristic 594 604	peripheral
+T7	Lesion-Anatomy 605 609	lung
+T8	Lesion-Anatomy 614 621	pleural
+T9	Lesion-Description 622 628	lesion
+T10	Medical-Problem 662 672;674 688	multifocal lung infection
+T11	Medical-Assertion 693 701	unlikely
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 901 943	Bilateral diffuse interstitial abnormality
+E11	Medical-Problem:T12
+T13	Medical-Assertion 969 977	probably
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 979 984	edema
+T15	Medical-Assertion 986 993	perhaps
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 1001 1049	background of interstitial lung disease/fibrosis
+T17	Medical-Problem 1053 1084	Bilateral pleural effusions are
+E14	Medical-Problem:T17
+T18	Medical-Anatomy 1114 1119	Heart
+T19	Medical-Assertion 1123 1126	not
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1128 1136	enlarged
+T21	Medical-Assertion 1148 1150	no
+A5	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1151 1163	pneumothorax
+T23	Medical-Problem 1224 1243	Worsened mild edema
+E18	Medical-Problem:T23
+T24	Medical-Problem 1266 1286	pericardial effusion
+E19	Medical-Problem:T24
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E9	Lesion-Description:T9 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21

@@ -1,0 +1,29 @@
+T1	Medical-Problem 189 210	bibasilar atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Problem 213 230	Basilar opacities
+E2	Medical-Problem:T2
+T3	Medical-Assertion 231 244	may relate to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 245 256	atelectasis
+T5	Medical-Problem 268 288	underlying pneumonia
+T6	Medical-Assertion 292 304	not excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Anatomy 360 381	medial left lung base
+T8	Medical-Assertion 384 386	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 387 409	large pleural effusion
+T10	Medical-Problem 428 450	trace pleural effusion
+T11	Medical-Assertion 489 492;494 496	may be
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 497 523	minimal interstitial edema
+T13	Medical-Problem 586 607	Aortic calcifications
+E9	Medical-Problem:T13
+T14	Medical-Assertion 628 630	no
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 631 643	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

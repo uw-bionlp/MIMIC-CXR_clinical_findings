@@ -1,0 +1,22 @@
+T1	Medical-Problem 191 220	lung volumes are slightly low
+E1	Medical-Problem:T1
+T2	Medical-Assertion 290 292	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 293 310	pleural effusions
+T4	Medical-Assertion 313 315	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 316 328	pneumothorax
+T6	Medical-Anatomy 344 353	esophagus
+T7	Medical-Problem 357 367	air-filled
+T8	Medical-Problem 372 379	dilated
+T9	Medical-Anatomy 387 408;410 415	level of the thoracic inlet
+T10	Medical-Assertion 566 590	No radiographic evidence
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 597 623;625 632	acute cardiac or pulmonary process
+T12	Medical-Problem 708 726	pulmonary embolism
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6 has-Medical-Anatomy:T9
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10

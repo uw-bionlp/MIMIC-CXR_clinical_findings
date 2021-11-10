@@ -1,0 +1,40 @@
+T1	Medical-Problem 195 218	Worsening opacification
+T2	Medical-Problem 223 236	consolidation
+T3	Medical-Anatomy 248 267;269 285	right lung base and perihilar region
+T4	Medical-Assertion 298 312	concerning for
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 313 332	worsening pneumonia
+T6	Medical-Problem 393 407	hyperinflation
+T7	Medical-Problem 423 444	emphysematous changes
+E6	Medical-Problem:T7
+T8	Medical-Anatomy 446 480	most pronounced in the lung apices
+T9	Medical-Problem 483 500	Streaky opacities
+T10	Medical-Anatomy 509 523	left lung base
+T11	Medical-Assertion 524 538	likely reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 539 550	atelectasis
+T13	Medical-Assertion 615 617	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 618 630	pneumothorax
+T15	Medical-Assertion 647 649	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 650 657;659 667	pleural effusion
+T17	Medical-Assertion 691 693	no
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 694 721	acute osseous abnormalities
+T19	Medical-Problem 741 778	Worsening consolidative opacification
+T20	Medical-Anatomy 790 805	right lung base
+T21	Medical-Assertion 806 816;818 821	concerning for
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 822 831	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T19 has-Medical-Anatomy:T20
+E16	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

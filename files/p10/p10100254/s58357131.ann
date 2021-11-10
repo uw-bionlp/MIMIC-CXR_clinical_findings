@@ -1,0 +1,35 @@
+T1	Lesion-Count 254 262	Multiple
+T2	Lesion-Anatomy 263 284	bilateral parenchymal
+T3	Lesion-Description 286 293	nodules
+T4	Medical-Problem 366 386	Right apical opacity
+E4	Medical-Problem:T4
+T5	Lesion-Anatomy 404 417	right thyroid
+T6	Lesion-Description 418 424	nodule
+T7	Medical-Assertion 436 438	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 439 444;446 459	focal consolidation
+T9	Medical-Problem 461 477	pleural effusion
+T10	Medical-Problem 482 494	pneumothorax
+T11	Medical-Assertion 556 558	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 559 567	fracture
+T13	Lesion-Count 638 646	Multiple
+T14	Lesion-Anatomy 647 661	bilateral lung
+T15	Lesion-Description 662 669	nodules
+T16	Medical-Problem 743 763	Right apical opacity
+E14	Medical-Problem:T16
+T17	Lesion-Size 776 781	large
+T18	Lesion-Anatomy 782 789	thyroid
+T19	Lesion-Description 790 796	nodule
+T20	Medical-Assertion 837 839	No
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 840 848	fracture
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Lesion-Description:T15 has-Lesion-Count:T13 has-Lesion-Anatomy:T14
+E17	Lesion-Description:T19 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T18
+E18	Medical-Problem:T21 has-Medical-Assertion:T20

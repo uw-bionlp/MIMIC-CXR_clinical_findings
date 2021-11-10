@@ -1,0 +1,37 @@
+T1	Medical-Assertion 574 576	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 577 593	pleural effusion
+T3	Medical-Assertion 595 597	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 598 610	pneumothorax
+T5	Lesion-Size 612 621;623 625	2.8 x 0.9 cm
+T6	Lesion-Characteristic 626 631	ovoid
+T7	Lesion-Description 632 639	opacity
+T8	Lesion-Anatomy 660 674	right mid lung
+T9	Lesion-Size 700 712	1.7 x 1.0 cm
+T10	Lesion-Description 713 720	opacity
+T11	Lesion-Anatomy 741 757	right lower lobe
+T12	Medical-Problem 810 819	Elevation
+T13	Medical-Anatomy 827 845	left hemidiaphragm
+T14	Medical-Problem 861 896	associated retrocardiac atelectasis
+T15	Medical-Problem 961 975	Calcifications
+T16	Medical-Anatomy 984 995	aortic knob
+T17	Medical-Anatomy 1229 1234	right
+T18	Lesion-Characteristic 1298 1327	well circumscribed appearance
+T19	Lesion-Assertion 1328 1340	differential
+A3	Lesion-AssertionValue T19 possible
+T20	Medical-Problem 1351 1360	pulmonary
+E17	Medical-Problem:T20
+T21	Lesion-Description 1361 1367	nodule
+T22	Medical-Problem 1372 1385	consolidation
+T23	Medical-Problem 1460 1489	Mild retrocardiac atelectasis
+E20	Medical-Problem:T23
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E8	Lesion-Description:T10 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E18	Lesion-Description:T21 has-Lesion-Characteristic:T18 has-Lesion-Assertion:T19
+E19	Medical-Problem:T22 has-Medical-Anatomy:T17

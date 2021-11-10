@@ -1,0 +1,27 @@
+T1	Medical-Assertion 319 321	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 322 334	pneumothorax
+T3	Medical-Problem 363 377	Linear opacity
+T4	Medical-Anatomy 385 399	right mid lung
+T5	Medical-Assertion 403 409	likely
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 411 422	atelectasis
+T7	Medical-Problem 440 473	small bilateral pleural effusions
+E5	Medical-Problem:T7
+T8	Medical-Problem 479 489;491 514	tenting of the right hemidiaphragm
+E6	Medical-Problem:T8
+T9	Medical-Assertion 516 531	possibly due to
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 532 543	atelectasis
+T11	Medical-Assertion 555 557	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 558 563;565 578	focal consolidation
+T13	Medical-Assertion 683 685	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 686 698	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,21 @@
+T1	Medical-Problem 336 353	stable tortuosity
+T2	Medical-Anatomy 361 375	thoracic aorta
+T3	Lesion-Characteristic 382 391	calcified
+T4	Lesion-Anatomy 392 410	right paratracheal
+T5	Lesion-Description 412 422	lymph node
+T6	Medical-Assertion 478 480	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 481 488;490 498	pleural effusion
+T8	Medical-Problem 502 514	pneumothorax
+T9	Medical-Assertion 534 536	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 537 564	acute osseous abnormalities
+T11	Medical-Assertion 585 587	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 588 621	acute cardiopulmonary abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

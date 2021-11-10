@@ -1,0 +1,56 @@
+T1	Medical-Problem 33 55	Complete opacification
+T2	Medical-Anatomy 63 78	left hemithorax
+T3	Medical-Problem 88 106;108 118	left hemidiaphragm  elevation
+E3	Medical-Problem:T3
+T4	Medical-Problem 124 152	left-sided mediastinal shift
+E4	Medical-Problem:T4
+T5	Medical-Assertion 163 169	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 189 213	total left lung collapse
+T7	Medical-Problem 218 226	effusion
+T8	Medical-Problem 269 279	hemothorax
+E7	Medical-Problem:T8
+T9	Medical-Problem 416 438	Complete opacification
+T10	Medical-Anatomy 446 461	left hemithorax
+T11	Medical-Problem 471 489;491 501	left hemidiaphragm  elevation
+E10	Medical-Problem:T11
+T12	Medical-Problem 507 535	left-sided mediastinal shift
+E11	Medical-Problem:T12
+T13	Medical-Assertion 546 552	likely
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 572 596	total left lung collapse
+T15	Medical-Problem 601 609	effusion
+T16	Medical-Problem 857 874	Complete collapse
+E14	Medical-Problem:T16
+T17	Medical-Anatomy 935 940	Right
+T18	Medical-Assertion 1004 1015	no evidence
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1019 1041	right pleural effusion
+T20	Lesion-Description 1075 1081	lesion
+E17	Lesion-Description:T20
+T21	Lesion-Size 1086 1091	small
+T22	Lesion-Anatomy 1092 1101	pulmonary
+T23	Lesion-Description 1102 1109	nodules
+T24	Medical-Problem 1174 1191	Complete collapse
+E21	Medical-Problem:T24
+T25	Medical-Problem 1210 1239	associated abrupt termination
+T26	Medical-Anatomy 1244 1262	left main bronchus
+T27	Medical-Assertion 1264 1287	likely primarily due to
+A4	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1288 1308	acute mucus plugging
+T29	Medical-Problem 1316 1345	rapid development of collapse
+E25	Medical-Problem:T29
+T30	Medical-Problem 1563 1585	soft tissue thickening
+E26	Medical-Problem:T30
+T31	Medical-Problem 1590 1602	irregularity
+E27	Medical-Problem:T31
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E16	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E20	Lesion-Description:T23 has-Lesion-Size-Present:T21 has-Lesion-Anatomy:T22
+E22	Medical-Problem:T25 has-Medical-Anatomy:T26
+E24	Medical-Problem:T28 has-Medical-Assertion:T27

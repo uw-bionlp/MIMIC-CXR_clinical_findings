@@ -1,0 +1,21 @@
+T1	Medical-Problem 139 157	diffuse tortuosity
+T2	Medical-Anatomy 165 179	thoracic aorta
+T3	Medical-Problem 226 253;255 264	Patchy and linear bibasilar opacities
+E3	Medical-Problem:T3
+T4	Medical-Assertion 265 276	may reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 277 288	atelectasis
+T6	Medical-Problem 294 304	aspiration
+T7	Medical-Problem 309 329	infectious pneumonia
+T8	Medical-Assertion 335 360	additional considerations
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 384 401	biapical scarring
+E7	Medical-Problem:T9
+T10	Lesion-Characteristic 409 421	questionable
+T11	Lesion-Description 422 437	nodular opacity
+T12	Lesion-Anatomy 445 460	right lung apex
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12

@@ -1,0 +1,21 @@
+T1	Medical-Problem 214 234	Retrocardiac opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 309 325	Linear opacities
+T3	Medical-Anatomy 333 348	left lower lobe
+T4	Medical-Assertion 366 372	likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 373 381	scarring
+T6	Medical-Problem 440 488	Moderate to severe scoliosis convex to the right
+E5	Medical-Problem:T6
+T7	Medical-Assertion 509 511	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 512 535	new focal consolidation
+T9	Medical-Problem 537 567	improving retrocardiac opacity
+T10	Medical-Assertion 568 574	can be
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 575 584;586 597	resolving atelectasis
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T7 has-Medical-Assertion:T10

@@ -1,0 +1,25 @@
+T1	Medical-Assertion 286 288	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 289 301	pneumothorax
+T3	Medical-Problem 303 318;320 334	Large bibasilar consolidations
+E2	Medical-Problem:T3
+T4	Medical-Problem 363 388	Small bilateral effusions
+E3	Medical-Problem:T4
+T5	Lesion-Characteristic 414 423	Extensive
+T6	Lesion-Description 424 431	nodular
+T7	Lesion-Description 450 459	opacities
+T8	Medical-Problem 542 549;551 579	minimal right subcutaneous emphysema
+E7	Medical-Problem:T8
+T9	Medical-Assertion 599 601	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 602 614	pneumothorax
+T11	Medical-Problem 616 655	Increased left lower lobe consolidation
+E9	Medical-Problem:T11
+T12	Medical-Assertion 657 663	likely
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 664 667;669 693	new atelectasis superimposed
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

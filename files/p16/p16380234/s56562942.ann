@@ -1,0 +1,24 @@
+T1	Medical-Problem 371 401	small left apical pneumothorax
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 475 491	right upper lobe
+T3	Lesion-Size 492 497	15 mm
+T4	Lesion-Description 499 505	lesion
+T5	Lesion-Assertion 509 517	not seen
+A1	Lesion-AssertionValue T5 absent
+T6	Medical-Assertion 560 567	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 568 573;575 588	focal consolidation
+T8	Medical-Problem 590 606	pleural effusion
+T9	Medical-Problem 610 631	overt pulmonary edema
+T10	Medical-Problem 735 765	Small left apical pneumothorax
+E8	Medical-Problem:T10
+T11	Lesion-Size 789 794	15 mm
+T12	Lesion-Characteristic 795 804	lobulated
+T13	Lesion-Description 805 811	lesion
+T14	Lesion-Assertion 816 831	not appreciated
+A3	Lesion-AssertionValue T14 absent
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T2 has-Lesion-Size-Present:T3 has-Lesion-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E11	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Characteristic:T12 has-Lesion-Assertion:T14

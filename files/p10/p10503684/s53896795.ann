@@ -1,0 +1,34 @@
+T1	Medical-Problem 192 204	pnenmothroax
+E1	Medical-Problem:T1
+T2	Lesion-Size-Trend 403 406	new
+A1	Lesion-Size-TrendValue T2 new
+T3	Lesion-Size 407 413	1.3 cm
+T4	Lesion-Description 415 421	nodule
+T5	Lesion-Anatomy 429 444	left lower lung
+T6	Medical-Problem 484 504	Mild dextroscoliosis
+T7	Medical-Anatomy 512 526	thoracic spine
+T8	Medical-Anatomy 542 547	Lungs
+T9	Medical-Assertion 569 576	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 577 589	pneumothorax
+T11	Medical-Problem 591 599	effusion
+T12	Medical-Problem 604 623	focal consolidation
+T13	Lesion-Size-Trend 647 650	New
+A3	Lesion-Size-TrendValue T13 new
+T14	Lesion-Size 651 657	1.3 cm
+T15	Lesion-Description 658 664	nodule
+T16	Lesion-Anatomy 672 687	left lower lung
+T17	Medical-Assertion 752 794	does not suggest nor exclude the diagnosis
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 799 817	pulmonary embolism
+T19	Medical-Assertion 826 828	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 829 841	pneumothorax
+E3	Lesion-Description:T4 has-Lesion-Size-Trend:T2 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E12	Lesion-Description:T15 has-Lesion-Size-Trend:T13 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

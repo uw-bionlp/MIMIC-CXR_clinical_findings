@@ -1,0 +1,17 @@
+T1	Medical-Assertion 244 255	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 259 268	pneumonia
+T3	Medical-Problem 272 308	other acute lung parenchymal disease
+T4	Lesion-Assertion 311 313	No
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 315 319	lung
+T6	Lesion-Description 320 327	nodules
+T7	Lesion-Description 331 337	masses
+T8	Medical-Assertion 340 342	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 343 358	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,27 @@
+T1	Medical-Problem 326 364	Heart size remains borderline enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 418 439	Pulmonary vasculature
+T3	Medical-Assertion 443 446	not
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 447 455	engorged
+T5	Medical-Anatomy 458 463	Lungs
+T6	Medical-Assertion 474 481	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 483 502	focal consolidation
+T8	Medical-Problem 504 520	pleural effusion
+T9	Medical-Problem 524 536	pneumothorax
+T10	Lesion-Characteristic 539 548	Calcified
+T11	Lesion-Description 549 558	granuloma
+T12	Lesion-Anatomy 586 638;640 650	posterior aspect of the superior segment of the left lower lobe
+T13	Medical-Problem 653 678	Mild degenerative changes
+T14	Medical-Anatomy 696 710	thoracic spine
+T15	Medical-Assertion 731 733	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 734 767	acute cardiopulmonary abnormality
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

@@ -1,0 +1,25 @@
+T1	Medical-Problem 161 185	Pulmonary edema is mild,
+E1	Medical-Problem:T1
+T2	Medical-Problem 197 218	moderate cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 227 232;234 253	right pleural effusion is
+E3	Medical-Problem:T3
+T4	Medical-Assertion 269 271	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 272 284	pneumothorax
+T6	Medical-Problem 326 346	Severe consolidation
+T7	Medical-Anatomy 354 369	left lower lobe
+T8	Medical-Assertion 429 437	could be
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 438 447	pneumonia
+T10	Medical-Problem 452 463	atelectasis
+T11	Medical-Problem 535 562	Small left pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Assertion 575 577	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 578 590	pneumothorax
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

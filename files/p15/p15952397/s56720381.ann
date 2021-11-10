@@ -1,0 +1,29 @@
+T1	Medical-Assertion 444 446	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 448 460	pneumothorax
+T3	Medical-Problem 566 579	opacification
+T4	Medical-Anatomy 587 597	right base
+T5	Medical-Problem 615 628	Focal opacity
+T6	Medical-Anatomy 636 690;692 699	left upper zone laterally, overlying the inferior left scapula
+T7	Medical-Problem 723 753	Faintbackground hazy opacities
+E6	Medical-Problem:T7
+T8	Medical-Assertion 775 804	would be difficult to exclude
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 807 838	component of interstitial edema
+T10	Medical-Problem 845 875	opacities related to infection
+T11	Medical-Assertion 876 898	might also account for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 919 935	Minimal blunting
+T13	Medical-Anatomy 940 964	right costophrenic angle
+T14	Medical-Problem 974 988	Gross effusion
+E11	Medical-Problem:T14
+T15	Medical-Problem 1021 1038	Worsening opacity
+T16	Medical-Anatomy 1046 1061	right lung base
+T17	Medical-Anatomy 1081 1096;1098 1107	left upper zone laterally
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8 has-Medical-Assertion:T11
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16 has-Medical-Anatomy:T17

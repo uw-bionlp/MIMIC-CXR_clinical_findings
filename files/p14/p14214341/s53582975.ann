@@ -1,0 +1,17 @@
+T1	Medical-Anatomy 165 170	Lungs
+T2	Medical-Problem 207 231	small airway obstruction
+T3	Medical-Problem 235 242;244 253	perhaps emphysema
+T4	Medical-Assertion 259 264	clear
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 272 289	focal abnormality
+T6	Medical-Assertion 301 303	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 304 320	pleural effusion
+T8	Lesion-Characteristic 325 333	evidence
+T9	Lesion-Characteristic 337 344	central
+T10	Lesion-Description 345 355	lymph node
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T9

@@ -1,0 +1,28 @@
+T1	Medical-Problem 597 611	Left-sided gas
+T2	Medical-Anatomy 685 696	azygos vein
+T3	Medical-Problem 858 887	mild left basilar atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Assertion 890 892	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 894 922	definite focal consolidation
+T6	Medical-Problem 933 947	Trace blunting
+T7	Medical-Anatomy 955 964;966 985	bilateral costophrenic angles
+T8	Medical-Assertion 989 1002	likely due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 1003 1026	trace pleural effusions
+T10	Lesion-Size 1031 1035	3-mm
+T11	Lesion-Anatomy 1036 1041;1043 1064	right middle lobe pulmonary
+T12	Lesion-Description 1065 1071	nodule
+T13	Lesion-Assertion 1093 1096	not
+A3	Lesion-AssertionValue T13 absent
+T14	Medical-Problem 1399 1428	Mild left basilar atelectasis
+E11	Medical-Problem:T14
+T15	Medical-Assertion 1434 1442	possible
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 1443 1476	trace bilateral pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T11 has-Lesion-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

@@ -1,0 +1,16 @@
+T1	Medical-Problem 433 458	reduction in lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 464 485;487 503	persistent multifocal patchy opacities
+T3	Medical-Anatomy 504 528	throughout the left lung
+T4	Medical-Anatomy 535 545	right lung
+T5	Medical-Problem 559 565;567 574	patchy opacity
+T6	Medical-Assertion 587 604	likely reflecting
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 605 616	atelectasis
+T8	Medical-Assertion 619 621	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 622 640	large pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

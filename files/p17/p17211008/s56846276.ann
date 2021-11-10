@@ -1,0 +1,37 @@
+T1	Medical-Problem 276 292	pneumoperitoneum
+E1	Medical-Problem:T1
+T2	Medical-Problem 321 338	heart is enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 395 410	minimal opacity
+T4	Medical-Anatomy 418 440	base of the right lung
+T5	Medical-Assertion 452 454	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 455 471	pleural effusion
+T7	Medical-Problem 476 488	pneumothorax
+T8	Medical-Problem 513 527	skin fold over
+E7	Medical-Problem:T8
+T9	Medical-Assertion 543 551;553 561	could be mistaken
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 568 586	large pneumothorax
+T11	Medical-Problem 615 622	opacity
+T12	Medical-Anatomy 630 652	base of the right lung
+T13	Medical-Assertion 683 698	likely reflects
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 699 719	residual atelectasis
+T15	Medical-Problem 724 740	Persistent large
+E12	Medical-Problem:T15
+T16	Medical-Problem 741 757	pneumoperitoneum
+E13	Medical-Problem:T16
+T17	Medical-Anatomy 842 853	gastrostomy
+T18	Medical-Assertion 858 866	possible
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 867 871	leak
+T20	Medical-Problem 883 916	persistent large pneumoperitoneum
+E16	Medical-Problem:T20
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E15	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

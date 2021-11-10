@@ -1,0 +1,40 @@
+T1	Medical-Problem 34 47	Focal opacity
+T2	Medical-Anatomy 55 76	lateral left mid lung
+T3	Medical-Assertion 106 111;113 123	could  be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 124 133	pneumonia
+T5	Lesion-Characteristic 185 195	underlying
+E4	Lesion-Characteristic:T5
+T6	Lesion-Characteristic 300 305	Focal
+T7	Lesion-Description 306 313	opacity
+T8	Lesion-Anatomy 321 342	lateral left mid lung
+T9	Lesion-Size 367 371	2 cm
+T10	Medical-Problem 390 399	pneumonia
+E9	Medical-Problem:T10
+T11	Medical-Problem 867 887	Subtle focal opacity
+E10	Medical-Problem:T11
+T12	Medical-Assertion 973 975	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 976 992	pleural effusion
+T14	Medical-Problem 996 1008	pneumothorax
+T15	Medical-Problem 1071 1086	mildly tortuous
+E13	Medical-Problem:T15
+T16	Medical-Problem 1107 1112	Focal
+E14	Medical-Problem:T16
+T17	Medical-Problem 1113 1120	opacity
+E15	Medical-Problem:T17
+T18	Medical-Anatomy 1128 1149	lateral left mid lung
+T19	Medical-Assertion 1179 1184;1186 1195	could be due to
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1196 1205	pneumonia
+T21	Medical-Assertion 1230 1251	resolution to exclude
+A4	Medical-AssertionValue T21 absent
+T22	Lesion-Characteristic 1256 1266	underlying
+T23	Lesion-Description 1277 1283	lesion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8 has-Lesion-Size-Present:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E17	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E19	Lesion-Description:T23 has-Lesion-Characteristic:T22

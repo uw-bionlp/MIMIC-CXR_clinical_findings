@@ -1,0 +1,47 @@
+T1	Medical-Problem 426 456	cardiac silhouette is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 475 512	mediastinal contours remain prominent
+E2	Medical-Problem:T2
+T3	Medical-Problem 518 528	tortuosity
+T4	Medical-Anatomy 536 550	thoracic aorta
+T5	Medical-Problem 556 569	calcification
+T6	Medical-Anatomy 577 588	aortic knob
+T7	Lesion-Characteristic 608 617	Reticular
+T8	Lesion-Description 618 625;627 636	nodular opacities
+T9	Lesion-Anatomy 637 704	predominantly in the lower lobes on the right greater than the left
+T10	Medical-Assertion 706 720	likely reflect
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Problem 721 749	chronic interstitial changes
+T12	Medical-Assertion 761 763	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 764 783	focal consolidation
+T14	Medical-Assertion 785 799	concerning for
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 800 809	pneumonia
+T16	Medical-Problem 811 827	pleural effusion
+T17	Medical-Problem 831 843	pneumothorax
+T18	Medical-Assertion 875 877	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 878 899	overt pulmonary edema
+T20	Medical-Assertion 929 931	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 932 961	acute cardiopulmonary process
+T22	Lesion-Anatomy 970 979	Bibasilar
+T23	Lesion-Characteristic 980 989	reticular
+T24	Lesion-Description 990 1007	nodular opacities
+T25	Lesion-Anatomy 1015 1042	right greater than the left
+T26	Medical-Assertion 1044 1064	may be reflective of
+A6	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1067 1095	chronic interstitial process
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T12 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T12 has-Medical-Assertion:T14
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Lesion-Description:T24 has-Lesion-Anatomy:T22 has-Lesion-Characteristic:T23 has-Lesion-Anatomy:T25
+E21	Medical-Problem:T27 has-Medical-Assertion:T26

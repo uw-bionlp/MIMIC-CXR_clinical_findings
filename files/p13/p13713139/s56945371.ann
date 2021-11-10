@@ -1,0 +1,28 @@
+T1	Medical-Assertion 297 299	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 300 312	pneumothorax
+T3	Medical-Problem 327 354	Large left pleural effusion
+E2	Medical-Problem:T3
+T4	Lesion-Anatomy 366 370;372 387	Left upper lobe lung
+T5	Lesion-Description 388 392	mass
+T6	Lesion-Anatomy 398 408	left hilar
+T7	Lesion-Description 409 413	mass
+T8	Medical-Problem 443 447;449 472	Left upper lobe and lingular
+E7	Medical-Problem:T8
+T9	Medical-Problem 473 487	consolidations
+E8	Medical-Problem:T9
+T10	Medical-Problem 584 622	Persistent large left pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Assertion 623 630	without
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 631 647	radiographically
+T13	Lesion-Anatomy 673 688	Left upper lobe
+T14	Lesion-Anatomy 693 698	hilar
+T15	Lesion-Description 699 705	masses
+T16	Medical-Problem 710 731;733 742	left-sided multifocal pneumonia
+E14	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T14

@@ -1,0 +1,22 @@
+T1	Medical-Assertion 233 235	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 237 253	pleural effusion
+T3	Medical-Problem 257 269	pneumothorax
+T4	Lesion-Size 283 288	small
+T5	Lesion-Description 289 298	granuloma
+T6	Lesion-Anatomy 306 311;313 317	right lung
+T7	Lesion-Assertion 324 332	possible
+A2	Lesion-AssertionValue T7 possible
+T8	Lesion-Characteristic 333 342	calcified
+T9	Lesion-Anatomy 343 354	right hilar
+T10	Lesion-Description 355 365	lymph node
+T11	Medical-Assertion 454 465	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 469 498	acute cardiopulmonary disease
+T13	Medical-Problem 525 553	prior granulomatous exposure
+E10	Medical-Problem:T13
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6
+E8	Lesion-Description:T10 has-Lesion-Assertion:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

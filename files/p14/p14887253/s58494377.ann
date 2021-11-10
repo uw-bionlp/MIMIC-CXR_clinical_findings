@@ -1,0 +1,25 @@
+T1	Medical-Problem 299 304;306 319	Small hiatal hernia
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 385 390	lungs
+E2	Medical-Anatomy:T2
+T3	Medical-Problem 453 459;461 480	patchy ill-defined opacity
+T4	Medical-Anatomy 492 507	left lower lobe
+T5	Medical-Problem 544 577	Additional minimal patchy opacity
+T6	Medical-Anatomy 597 608;610 614	right lower lobe
+T7	Medical-Assertion 637 639	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 640 656	pleural effusion
+T9	Medical-Problem 660 672	pneumothorax
+T10	Medical-Problem 739 764	left lower lobe pneumonia
+E9	Medical-Problem:T10
+T11	Medical-Anatomy 805 821	right lower lobe
+T12	Medical-Assertion 830 844	concerning for
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 848 855;857 866	area of infection
+T14	Medical-Problem 870 880	aspiration
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

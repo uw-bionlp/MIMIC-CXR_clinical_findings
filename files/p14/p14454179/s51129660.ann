@@ -1,0 +1,30 @@
+T1	Medical-Problem 289 298	Elevation
+T2	Medical-Anatomy 306 324	left hemidiaphragm
+T3	Medical-Problem 331 363	minimal subsegmental atelectasis
+T4	Medical-Assertion 411 413	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 414 431	confluent opacity
+T6	Medical-Problem 457 466	pneumonia
+T7	Medical-Assertion 478 480	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 482 494	pneumothorax
+T9	Lesion-Characteristic 499 508	calcified
+T10	Lesion-Description 509 518	granuloma
+T11	Lesion-Anatomy 526 542	right lower lobe
+T12	Lesion-Size-Trend 551 558;560 562	similar to
+A3	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Problem 586 603	Improved aeration
+T14	Medical-Anatomy 611 625	left lung base
+T15	Medical-Problem 632 647;649 660	mild persistent atelectasis
+E12	Medical-Problem:T15
+T16	Medical-Assertion 663 674	No evidence
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 678 693	acute pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T12
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

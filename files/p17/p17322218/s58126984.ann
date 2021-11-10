@@ -1,0 +1,43 @@
+T1	Medical-Problem 209 230	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Assertion 257 259	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 260 278;280 291	pulmonary vascular engorgement
+T4	Medical-Problem 293 298	edema
+T5	Medical-Problem 303 319	pleural effusion
+T6	Medical-Problem 341 348;350 364	cardiac decompensation
+T7	Medical-Assertion 380 388	suggests
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 389 391	at
+T9	Medical-Problem 400 418;420 433	moderate degree of calcification
+T10	Medical-Anatomy 441 453	aortic valve
+T11	Lesion-Size 519 523	9 mm
+T12	Medical-Anatomy 568 576	anterior
+T13	Medical-Assertion 608 616	could be
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 619 636	small skin growth
+T15	Medical-Problem 638 644	benign
+E12	Medical-Problem:T15
+T16	Lesion-Anatomy 662 665	rib
+T17	Lesion-Anatomy 687 691	lung
+T18	Lesion-Description 692 698	nodule
+T19	Lesion-Description 784 790	lesion
+T20	Lesion-Anatomy 798 809	left axilla
+T21	Medical-Problem 913 945	mild peribronchial opacification
+T22	Medical-Problem 950 961	volume loss
+T23	Medical-Anatomy 965 980;982 987	one of the lung bases
+T24	Medical-Assertion 989 997	probably
+A4	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1002 1029	residual of basal pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T2
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E15	Lesion-Description:T18 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T17
+E16	Lesion-Description:T19 has-Lesion-Anatomy:T20
+E18	Medical-Problem:T21 has-Medical-Anatomy:T23
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T25 has-Medical-Assertion:T24

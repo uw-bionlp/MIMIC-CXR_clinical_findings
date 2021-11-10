@@ -1,0 +1,17 @@
+T1	Medical-Assertion 284 286	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 287 303	pleural effusion
+T3	Medical-Problem 308 320	pneumothorax
+T4	Lesion-Description 336 342	nodule
+T5	Lesion-Anatomy 361 380;382 396	level of the aortic arch laterally
+T6	Medical-Assertion 397 424	might potentially represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 425 445	summation of shadows
+T8	Medical-Problem 454 463	pulmonary
+E6	Medical-Problem:T8
+T9	Lesion-Description 464 470	nodule
+E7	Lesion-Description:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6

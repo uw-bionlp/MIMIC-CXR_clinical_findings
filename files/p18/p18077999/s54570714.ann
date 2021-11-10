@@ -1,0 +1,46 @@
+T1	Medical-Anatomy 293 314	Pulmonary vascularity
+T2	Medical-Assertion 319 322	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 323 331	engorged
+T4	Medical-Anatomy 338 343	lungs
+E3	Medical-Anatomy:T4
+T5	Medical-Assertion 367 369	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 370 389	focal consolidation
+T7	Medical-Problem 392 408	pleural effusion
+T8	Medical-Problem 412 424	pneumothorax
+T9	Medical-Problem 441 468;470 479	Scattered ill-defined focal opacities
+T10	Medical-Anatomy 487 497	both lungs
+T11	Lesion-Characteristic 566 577	ill-defined
+T12	Lesion-Description 578 585	nodular
+E10	Lesion-Description:T12
+T13	Lesion-Description 586 593	opacity
+T14	Lesion-Anatomy 616 626;628 632	right lung base
+T15	Lesion-Size 656 671	1.9 centimeters
+T16	Lesion-Assertion 684 698	concerning for
+A3	Lesion-AssertionValue T16 possible
+T17	Lesion-Description 700 711	progression
+T18	Lesion-Characteristic 738 745	Diffuse
+T19	Lesion-Characteristic 746 753	osseous
+T20	Lesion-Characteristic 754 763	sclerotic
+T21	Lesion-Description 764 771	lesions
+T22	Lesion-Anatomy 855 871	ribs bilaterally
+T23	Lesion-Anatomy 887 901	thoracic spine
+T24	Lesion-Description 921 932	Progression
+T25	Lesion-Characteristic 936 943	osseous
+T26	Lesion-Characteristic 944 953	sclerotic
+T27	Lesion-Description 990 1000	metastases
+E24	Lesion-Description:T27
+T28	Medical-Assertion 1013 1015	no
+A4	Medical-AssertionValue T28 absent
+T29	Medical-Problem 1016 1049	acute cardiopulmonary abnormality
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T14 has-Lesion-Size-Present:T15
+E14	Lesion-Description:T17 has-Lesion-Assertion:T16
+E18	Lesion-Description:T21 has-Lesion-Characteristic:T18 has-Lesion-Characteristic:T19 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T22 has-Lesion-Anatomy:T23
+E21	Lesion-Description:T24 has-Lesion-Characteristic:T25 has-Lesion-Characteristic:T26
+E25	Medical-Problem:T29 has-Medical-Assertion:T28

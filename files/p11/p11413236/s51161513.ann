@@ -1,0 +1,35 @@
+T1	Medical-Anatomy 508 525	mediastinal hilar
+T2	Medical-Assertion 535 541	do not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 542 548	appear
+T4	Medical-Problem 549 556	widened
+T5	Lesion-Characteristic 559 568	Calcified
+T6	Lesion-Description 579 583	node
+T7	Medical-Anatomy 601 606	lungs
+T8	Medical-Problem 619 630;632 639	left bailar opacity
+T9	Medical-Assertion 710 712	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 713 729	pleural effusion
+T11	Medical-Problem 733 745	pneumothorax
+T12	Medical-Problem 763 811	Left costophrenic angle opacity, somewhat linear
+E10	Medical-Problem:T12
+T13	Medical-Assertion 834 852	more suggestive of
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 853 864	atelectasis
+T15	Medical-Problem 868 876	scarring
+T16	Medical-Assertion 878 889	less likely
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 890 904;906 919	small focus of consolidation
+T18	Medical-Assertion 922 924	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 925 941	pleural effusion
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T13 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

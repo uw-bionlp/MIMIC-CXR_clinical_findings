@@ -1,0 +1,20 @@
+T1	Medical-Assertion 325 327	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 328 352	appreciable pneumothorax
+T3	Medical-Problem 356 372	pleural effusion
+T4	Medical-Problem 410 424	Hyperinflation
+E3	Medical-Problem:T4
+T5	Medical-Problem 434 443	emphysema
+E4	Medical-Problem:T5
+T6	Medical-Problem 446 463	Septal thickening
+T7	Medical-Assertion 464 472	could be
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 489 502	alternatively
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 520 548	early cardiac decompensation
+T10	Medical-Problem 552 557;559 567	fluid overload
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8

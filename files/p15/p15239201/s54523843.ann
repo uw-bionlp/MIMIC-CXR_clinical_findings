@@ -1,0 +1,30 @@
+T1	Medical-Problem 68 105;107 119	left pleural effusion with associated  atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Problem 122 156	Mild pulmonary vascular congestion
+E2	Medical-Problem:T2
+T3	Medical-Problem 593 606	Opacification
+T4	Medical-Anatomy 614 635	base of the left lung
+T5	Medical-Problem 640 658	increased slightly
+E5	Medical-Problem:T5
+T6	Medical-Problem 686 694	at least
+E6	Medical-Problem:T6
+T7	Medical-Problem 697 736	small or moderate left pleural effusion
+T8	Medical-Anatomy 778 793	left lower lobe
+T9	Medical-Assertion 794 812	could be explained
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 817 828	atelectasis
+T11	Medical-Problem 834 843	pneumonia
+T12	Medical-Problem 888 910	engorgement is chronic
+E11	Medical-Problem:T12
+T13	Medical-Assertion 922 925	not
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 939 956	mediastinal veins
+T15	Medical-Assertion 961 964	not
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 966 974	engorged
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T4
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

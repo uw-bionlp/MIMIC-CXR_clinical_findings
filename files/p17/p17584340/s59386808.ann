@@ -1,0 +1,39 @@
+T1	Lesion-Size 229 234	large
+T2	Lesion-Anatomy 235 259	posterior left fifth rib
+T3	Lesion-Description 260 266	lesion
+T4	Lesion-Size-Trend 275 291	similar compared
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Assertion 356 358	no
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Size-Trend 360 363	new
+A3	Lesion-Size-TrendValue T6 new
+T7	Lesion-Characteristic 364 368	bone
+T8	Lesion-Description 369 376	lesions
+T9	Medical-Problem 389 409	degenerative changes
+T10	Medical-Anatomy 417 431	thoracic spine
+T11	Medical-Problem 445 461	low lung volumes
+E8	Medical-Problem:T11
+T12	Medical-Problem 468 499	crowd the pulmonary vasculature
+E9	Medical-Problem:T12
+T13	Medical-Problem 502 511;513 540	Bilateral linear areas of atelectasis
+E10	Medical-Problem:T13
+T14	Medical-Assertion 546 557	no evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 561 584	confluent consolidation
+T16	Medical-Assertion 597 599	no
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 600 616	pleural effusion
+T18	Medical-Problem 620 632	pneumothorax
+T19	Medical-Problem 654 682	Bibasilar linear atelectasis
+E14	Medical-Problem:T19
+T20	Lesion-Anatomy 689 718	Left fifth posterior rib bone
+T21	Lesion-Description 719 725	lesion
+T22	Lesion-Size-Trend 727 734	similar
+A6	Lesion-Size-TrendValue T22 no-change
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T4
+E5	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Size-Trend:T6 has-Lesion-Characteristic:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Lesion-Description:T21 has-Lesion-Anatomy:T20 has-Lesion-Size-Trend:T22

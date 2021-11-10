@@ -1,0 +1,22 @@
+T1	Medical-Problem 256 297	Severe end stage changes from sarcoidosis
+T2	Medical-Anatomy 308 324;326 341	predominantly in the upper lungs
+T3	Medical-Problem 344 367	Increased opacification
+T4	Medical-Anatomy 375 389	left lung base
+T5	Medical-Assertion 393 403	impossible
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 416 425	pneumonia
+T7	Medical-Assertion 471 473	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 474 481;483 491	pleural effusion
+T9	Medical-Problem 495 507	pneumothorax
+T10	Medical-Problem 577 618	Extensive end stage fibrosis from sarcoid
+E8	Medical-Problem:T10
+T11	Medical-Assertion 619 637	limits sensitivity
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 653 662	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

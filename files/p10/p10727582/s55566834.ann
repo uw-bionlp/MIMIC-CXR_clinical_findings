@@ -1,0 +1,19 @@
+T1	Medical-Assertion 30 32	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 33 47	acute findings
+T3	Medical-Problem 69 91	Acute aortic pathology
+T4	Medical-Assertion 92 101;103 112	cannot be  excluded
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 441 470	mild-to-moderate cardiomegaly
+E3	Medical-Problem:T5
+T6	Medical-Problem 488 504	near atelectasis
+T7	Medical-Anatomy 513 555	left lower lobe in the retrocardiac region
+T8	Medical-Assertion 589 591	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 592 604	pneumothorax
+T10	Medical-Problem 608 624	pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8

@@ -1,0 +1,47 @@
+T1	Medical-Problem 320 328	Widening
+T2	Medical-Anatomy 336 347	mediastinum
+T3	Medical-Problem 368 379	mediastinal
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 384 389	hilar
+T5	Lesion-Description 390 405	lymphadenopathy
+T6	Medical-Problem 428 448	Lung volumes are low
+T7	Medical-Problem 454 465	atelectasis
+T8	Medical-Anatomy 474 484	both bases
+T9	Medical-Problem 499 506	opacity
+T10	Medical-Anatomy 528 542	mid right lung
+T11	Medical-Assertion 593 612	possibly reflecting
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 613 623	hemorrhage
+T13	Medical-Anatomy 641 658	Neighboring hilar
+E12	Medical-Anatomy:T13
+T14	Lesion-Size-Trend 683 687	have
+A2	Lesion-Size-TrendValue T14 increasing
+T15	Lesion-Size-Trend 688 705	increased in size
+A3	Lesion-Size-TrendValue T15 increasing
+T16	Medical-Assertion 768 770	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 771 800	significant pleural effusions
+T18	Medical-Assertion 806 808	no
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 810 822	pneumothorax
+T20	Medical-Problem 844 863	Focal opacification
+T21	Medical-Anatomy 871 885	mid right lung
+T22	Medical-Assertion 886 902	likely represent
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 903 916;918 925	post-surgical changes
+T24	Medical-Problem 949 959	hemorrhage
+T25	Medical-Problem 967 978	atelectasis
+T26	Medical-Problem 985 1006	Bibasilar atelectasis
+E20	Medical-Problem:T26
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T21
+E17	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E18	Medical-Problem:T24 has-Medical-Anatomy:T21
+E19	Medical-Problem:T25 has-Medical-Anatomy:T21 has-Medical-Assertion:T22

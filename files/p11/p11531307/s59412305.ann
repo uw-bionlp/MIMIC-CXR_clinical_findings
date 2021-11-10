@@ -1,0 +1,19 @@
+T1	Medical-Problem 391 420	Pulmonary vascular congestion
+E1	Medical-Problem:T1
+T2	Medical-Problem 437 454	Mild cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 468 503	Greater peribronchial opacification
+T4	Medical-Anatomy 511 546;548 552	right upper lobe and the right lung base
+T5	Medical-Assertion 553 561	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 562 573	early edema
+T7	Medical-Problem 577 586	pneumonia
+T8	Medical-Problem 618 623;625 650	Right pleural effusion is small
+E7	Medical-Problem:T8
+T9	Medical-Assertion 653 655	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 656 668	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

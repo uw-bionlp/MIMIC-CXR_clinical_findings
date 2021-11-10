@@ -1,0 +1,25 @@
+T1	Medical-Problem 246 259	Opacification
+T2	Medical-Anatomy 264 280	right hemithorax
+T3	Medical-Problem 317 320;322 341	new right lung collapse
+E3	Medical-Problem:T3
+T4	Medical-Problem 344 371	Left lower lobe atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Problem 376 394;396 404	small left pleural effusion
+E5	Medical-Problem:T5
+T6	Medical-Problem 424 432	Previous
+E6	Medical-Problem:T6
+T7	Medical-Problem 433 452	vascular congestion
+T8	Medical-Anatomy 470 487	aerated left lung
+T9	Medical-Anatomy 506 513	cardiac
+T10	Medical-Problem 528 544	largely obscured
+T11	Medical-Assertion 547 555	probably
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 556 570	still enlarged
+T13	Medical-Assertion 597 599	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 600 612	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

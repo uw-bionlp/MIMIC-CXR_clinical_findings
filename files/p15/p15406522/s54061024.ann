@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 218 235	Left heart border
+T2	Medical-Problem 239 247	obscured
+T3	Medical-Problem 252 264	distorted by
+T4	Medical-Anatomy 287 294	lingula
+T5	Medical-Assertion 344 352	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 353 362	pneumonia
+T7	Medical-Problem 366 393	Peribronchial opacification
+T8	Medical-Anatomy 401 417	right lower lobe
+T9	Medical-Assertion 418 437	could be related to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 439 457	previous infection
+T11	Medical-Problem 461 478	recent aspiration
+T12	Medical-Assertion 527 529	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 530 546	pleural effusion
+T14	Lesion-Characteristic 550 558	evidence
+T15	Lesion-Characteristic 562 569	central
+T16	Lesion-Description 570 580	lymph node
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Lesion-Description:T16 has-Lesion-Characteristic:T14 has-Lesion-Characteristic:T15

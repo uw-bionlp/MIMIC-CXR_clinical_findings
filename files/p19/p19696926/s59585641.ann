@@ -1,0 +1,26 @@
+T1	Medical-Problem 204 220	Linear opacities
+T2	Medical-Anatomy 232 243;245 268	lung bases, left greater than right
+T3	Medical-Assertion 270 286	likely represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 287 320	areas of subsegmental atelectasis
+T5	Medical-Assertion 400 402	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 404 416	pneumothorax
+T7	Medical-Problem 419 432	Mild blunting
+T8	Medical-Anatomy 440 469	bilateral costophrenic angles
+T9	Medical-Problem 488 502	small effusion
+T10	Medical-Problem 603 622	small hiatal hernia
+E8	Medical-Problem:T10
+T11	Medical-Problem 644 670	Bibasilar linear opacities
+E9	Medical-Problem:T11
+T12	Medical-Assertion 671 689	most suggestive of
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 690 714	subsegmental atelectasis
+T14	Medical-Problem 721 754	Small bilateral pleural effusions
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

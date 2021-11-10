@@ -1,0 +1,34 @@
+T1	Medical-Anatomy 208 218	heart size
+T2	Medical-Problem 248 268;270 284	dense mitral annular calcifications
+T3	Medical-Problem 291 308	aorta is tortuous
+T4	Medical-Anatomy 346 371	descending thoracic aorta
+T5	Medical-Anatomy 394 415	upper abdominal aorta
+T6	Medical-Problem 418 424;426 450	Medial right upper lobe opacity
+E6	Medical-Problem:T6
+T7	Medical-Problem 470 491	postradiation changes
+E7	Medical-Problem:T7
+T8	Medical-Problem 544 575	Small right apical pneumothorax
+E8	Medical-Problem:T8
+T9	Medical-Problem 665 695	moderate size pleural effusion
+E9	Medical-Problem:T9
+T10	Medical-Problem 734 742;744 769	adjacent right basilar atelectasis
+E10	Medical-Problem:T10
+T11	Medical-Assertion 772 774	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 775 802	left-sided pleural effusion
+T13	Medical-Problem 806 818	pneumothorax
+T14	Medical-Problem 847 879	minimal left basilar atelectasis
+E13	Medical-Problem:T14
+T15	Medical-Assertion 882 884	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 885 900	pulmonary edema
+T17	Medical-Problem 1021 1052	Small right apical pneumothorax
+E15	Medical-Problem:T17
+T18	Medical-Problem 1072 1104	Unchanged post radiation changes
+T19	Medical-Anatomy 1116 1142;1144 1154	medial aspect of the right upper lobe
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19

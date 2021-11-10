@@ -1,0 +1,32 @@
+T1	Medical-Problem 326 358	interval increased opacification
+T2	Medical-Anatomy 366 383	entire right lung
+T3	Medical-Problem 443 471	now moderate pulmonary edema
+E3	Medical-Problem:T3
+T4	Lesion-Count 475 483	Multiple
+T5	Lesion-Characteristic 484 493	calcified
+T6	Lesion-Anatomy 494 503	pulmonary
+T7	Lesion-Description 504 511	nodules
+T8	Lesion-Size 525 529	1 cm
+T9	Lesion-Anatomy 530 546	right upper lobe
+T10	Lesion-Description 548 554	nodule
+T11	Lesion-Size-Trend 560 566	stable
+A1	Lesion-Size-TrendValue T11 no-change
+T12	Medical-Problem 594 618;620 629	Small, bilateral pleural effusions
+E11	Medical-Problem:T12
+T13	Medical-Problem 693 714	moderate cardiomegaly
+E12	Medical-Problem:T13
+T14	Medical-Problem 802 875;877 881	Interval progression of multifocal airspace opacities, right greater than left
+E13	Medical-Problem:T14
+T15	Medical-Assertion 883 897	concerning for
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 898 928	worsening multifocal pneumonia
+T17	Medical-Problem 934 955	Moderate cardiomegaly
+E15	Medical-Problem:T17
+T18	Medical-Problem 957 984	bilateral pleural effusions
+E16	Medical-Problem:T18
+T19	Medical-Problem 990 1008;1010 1015	moderate pulmonary edema
+E17	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E7	Lesion-Description:T7 has-Lesion-Count:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6
+E10	Lesion-Description:T10 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T11
+E14	Medical-Problem:T16 has-Medical-Assertion:T15

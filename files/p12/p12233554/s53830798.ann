@@ -1,0 +1,37 @@
+T1	Medical-Assertion 224 226	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 227 235;237 256	definite focal consolidation
+T3	Medical-Problem 275 286	eventration
+T4	Medical-Anatomy 294 313	right hemidiaphragm
+T5	Medical-Anatomy 321 339	right costophrenic
+T6	Medical-Problem 435 457	trace pleural effusion
+T7	Medical-Assertion 461 473	not excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 541 549;551 560	aorta is calcified
+E6	Medical-Problem:T8
+T9	Medical-Problem 611 623;625 640	retrocardiac air-fluid level
+E7	Medical-Problem:T9
+T10	Medical-Problem 690 696;698 704	hiatal hernia
+E8	Medical-Problem:T10
+T11	Medical-Problem 707 727	Degenerative changes
+E9	Medical-Problem:T11
+T12	Medical-Problem 770 783	Hiatal hernia
+E10	Medical-Problem:T12
+T13	Medical-Problem 786 801	Slight blunting
+T14	Medical-Anatomy 809 833	right costophrenic angle
+T15	Medical-Assertion 835 848	may relate to
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 853 864	eventration
+T17	Medical-Problem 873 906	very trace right pleural effusion
+T18	Medical-Assertion 910 913;915 923	not excluded
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Assertion 937 939	no
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 940 969	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

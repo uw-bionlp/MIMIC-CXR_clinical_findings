@@ -1,0 +1,32 @@
+T1	Medical-Problem 250 265	Pulmonary edema
+T2	Medical-Anatomy 351 360	left lung
+T3	Medical-Assertion 369 375	may be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 376 393	new consolidation
+T5	Medical-Anatomy 402 429	base of the left lower lobe
+T6	Medical-Problem 466 477	atelectasis
+T7	Medical-Problem 482 487	edema
+T8	Medical-Problem 491 504	new pneumonia
+T9	Medical-Problem 511 525	post-operative
+T10	Medical-Anatomy 526 536	right lung
+T11	Medical-Problem 541 547	small,
+E10	Medical-Problem:T11
+T12	Medical-Problem 548 559	compromised
+T13	Medical-Problem 565 590	large collection of fluid
+T14	Medical-Anatomy 598 602	apex
+T15	Medical-Problem 694 702	Heart is
+E14	Medical-Problem:T15
+T16	Medical-Problem 703 732	mildly to moderately enlarged
+E15	Medical-Problem:T16
+T17	Medical-Assertion 873 875	No
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 876 888	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T3
+E7	Medical-Problem:T8 has-Medical-Assertion:T3
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Anatomy:T14
+E16	Medical-Problem:T18 has-Medical-Assertion:T17

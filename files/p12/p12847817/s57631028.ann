@@ -1,0 +1,25 @@
+T1	Medical-Problem 167 182	rounded opacity
+T2	Medical-Anatomy 213 268;270 286	left retrocardiac region, to the left of the descending aortic interface
+T3	Medical-Anatomy 305 335	tenth left posterior rib level
+T4	Lesion-Characteristic 343 346;348 360	not definitively
+E4	Lesion-Characteristic:T4
+T5	Medical-Problem 375 391	overlap with rib
+T6	Medical-Problem 619 645	Minimal pleural thickening
+T7	Medical-Assertion 647 653	versus
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 654 668	small effusion
+T9	Medical-Anatomy 672 705	lateral right costophrenic sulcus
+T10	Medical-Assertion 708 710	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 711 725;727 735	acute skeletal findings
+T12	Lesion-Size 757 761	6 mm
+T13	Lesion-Anatomy 771 786	left lower lobe
+T14	Lesion-Description 787 794	opacity
+T15	Lesion-Size-Trend 798 807	unchanged
+A3	Lesion-Size-TrendValue T15 no-change
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Lesion-Description:T14 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T13 has-Lesion-Size-Trend:T15

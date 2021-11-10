@@ -1,0 +1,25 @@
+T1	Medical-Problem 293 310;312 348	minimal bibasilar atelectasis, left greater than right
+E1	Medical-Problem:T1
+T2	Medical-Assertion 350 352	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 353 377	new focal consolidations
+T4	Lesion-Assertion 388 390	No
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 392 410	intrathoracic lung
+T6	Lesion-Description 411 418	lesions
+T7	Medical-Assertion 444 446	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 447 463	pleural effusion
+T9	Medical-Problem 468 480	pneumothorax
+T10	Medical-Problem 635 688	Stable bibasilar atelectasis, left greater than right
+E7	Medical-Problem:T10
+T11	Lesion-Assertion 691 693	No
+A4	Lesion-AssertionValue T11 absent
+T12	Lesion-Characteristic 694 699	focal
+T13	Lesion-Anatomy 700 713	intrathoracic
+T14	Lesion-Description 715 722	lesions
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Lesion-Description:T14 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T13

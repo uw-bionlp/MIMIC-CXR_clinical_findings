@@ -1,0 +1,42 @@
+T1	Lesion-Count 210 218	Multiple
+T2	Lesion-Characteristic 219 228	calcified
+T3	Lesion-Anatomy 229 238	pulmonary
+T4	Lesion-Description 239 246	nodules
+T5	Lesion-Characteristic 259 268	calcified
+T6	Lesion-Anatomy 269 280	mediastinal
+T7	Lesion-Anatomy 285 296	right hilar
+T8	Lesion-Description 297 308	lymph nodes
+T9	Lesion-Size-Trend 313 322	unchanged
+A1	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Problem 326 334	Scarring
+T11	Medical-Anatomy 346 357	lung apices
+T12	Medical-Problem 363 380	upward retraction
+T13	Medical-Anatomy 388 398	left hilum
+T14	Medical-Problem 449 476	prior granulomatous disease
+E13	Medical-Problem:T14
+T15	Medical-Assertion 478 480	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 482 505	new focal consolidation
+T17	Medical-Problem 507 523	pleural effusion
+T18	Medical-Problem 528 540	pneumothorax
+T19	Medical-Anatomy 556 577	pulmonary vascularity
+T20	Medical-Assertion 581 584	not
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 585 593	engorged
+T22	Medical-Problem 606 626	degenerative changes
+T23	Medical-Anatomy 635 649	thoracic spine
+T24	Medical-Assertion 667 669	No
+A4	Medical-AssertionValue T24 absent
+T25	Medical-Problem 670 703	acute cardiopulmonary abnormality
+T26	Medical-Problem 732 759	prior granulomatous disease
+E22	Medical-Problem:T26
+E4	Lesion-Description:T4 has-Lesion-Count:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T3
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T15
+E16	Medical-Problem:T18 has-Medical-Assertion:T15
+E18	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T25 has-Medical-Assertion:T24

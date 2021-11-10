@@ -1,0 +1,19 @@
+T1	Medical-Problem 535 556	parenchymal opacities
+T2	Medical-Anatomy 565 580	right lung base
+T3	Medical-Assertion 581 612	have almost completely resolved
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 621 630;632 643	platelike atelectasis
+T5	Medical-Problem 686 707	left pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 714 743	left retrocardiac atelectasis
+E5	Medical-Problem:T6
+T7	Lesion-Characteristic 748 757	calcified
+T8	Lesion-Description 758 768	granulomas
+T9	Lesion-Anatomy 776 785	left lung
+T10	Lesion-Assertion 789 791	No
+A2	Lesion-AssertionValue T10 absent
+T11	Medical-Problem 796 817	parenchymal opacities
+E9	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9

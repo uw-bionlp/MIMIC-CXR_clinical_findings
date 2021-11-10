@@ -1,0 +1,30 @@
+T1	Medical-Problem 232 239	opacity
+T2	Medical-Anatomy 247 273	mid right perihilar region
+T3	Medical-Problem 338 353	Mild prominence
+T4	Medical-Anatomy 361 365	hila
+T5	Lesion-Assertion 371 381	suggestive
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 385 400	lymphadenopathy
+T7	Medical-Assertion 455 457	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 458 474	pleural effusion
+T9	Medical-Problem 478 490	pneumothorax
+T10	Medical-Problem 564 587	Right perihilar opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 591 610	likely secondary to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 611 622	atelectasis
+T13	Medical-Assertion 625 627	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 628 633;635 649	focal consolidations
+T15	Medical-Assertion 650 660	concerning
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 665 674	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Lesion-Description:T6 has-Lesion-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T13 has-Medical-Assertion:T15

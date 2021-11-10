@@ -1,0 +1,30 @@
+T1	Medical-Problem 191 220	heart appears mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 227 255	aorta is moderately tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 258 265;267 274	Streaky opacity
+T4	Medical-Anatomy 282 296	left lung base
+T5	Medical-Assertion 297 305	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 306 323	minor atelectasis
+T7	Medical-Assertion 372 374	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 375 400	definite pleural effusion
+T9	Medical-Assertion 403 405	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 406 418	pneumothorax
+T11	Medical-Problem 447 482	moderate rightward convex curvature
+T12	Medical-Anatomy 503 523	lower thoracic spine
+T13	Medical-Assertion 526 528	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 529 537	fracture
+T15	Medical-Assertion 572 583	No evidence
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 587 616	acute cardiopulmonary disease
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

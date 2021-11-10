@@ -1,0 +1,27 @@
+T1	Medical-Problem 326 335	elevation
+T2	Medical-Anatomy 343 361	left hemidiaphragm
+T3	Medical-Problem 366 381	slight blunting
+T4	Medical-Anatomy 389 393;395 413	left costophrenic angle
+T5	Medical-Assertion 420 433	may be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 436 458	small pleural effusion
+T7	Medical-Problem 464 473;475 486	overlying atelectasis
+T8	Medical-Problem 489 503	Calcifications
+T9	Medical-Anatomy 521 534	left mid lung
+T10	Medical-Assertion 537 539	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 540 553;555 563	right pleural effusion
+T12	Medical-Problem 615 632	Left base opacity
+E10	Medical-Problem:T12
+T13	Medical-Assertion 633 646	may be due to
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 662 678	pleural effusion
+T15	Medical-Problem 684 695	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

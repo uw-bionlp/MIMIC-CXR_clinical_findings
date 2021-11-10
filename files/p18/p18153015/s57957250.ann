@@ -1,0 +1,48 @@
+T1	Medical-Problem 269 282;284 303	Heart size is borderline enlarged
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 357 368	mediastinal
+T3	Lesion-Description 369 384	lymphadenopathy
+T4	Medical-Anatomy 431 452	pulmonary vascularity
+T5	Medical-Assertion 456 459	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 460 468	engorged
+T7	Lesion-Count 471 474	Two
+T8	Lesion-Characteristic 475 483	dominant
+T9	Lesion-Anatomy 484 499	left lower lobe
+T10	Lesion-Description 500 507	nodules
+T11	Lesion-Size-Trend 516 525	unchanged
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Description 594 601	nodules
+E10	Lesion-Description:T12
+T13	Medical-Assertion 657 659	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 661 677	pleural effusion
+T15	Medical-Problem 679 698	focal consolidation
+T16	Medical-Problem 702 714	pneumothorax
+T17	Medical-Assertion 725 727	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 728 733;735 756	acute osseous abnormalities
+T19	Medical-Assertion 787 789	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 790 823	acute cardiopulmonary abnormality
+T21	Lesion-Count 826 829	Two
+T22	Lesion-Anatomy 830 855	left lower lobe pulmonary
+T23	Lesion-Description 856 863	nodules
+T24	Lesion-Size-Trend 866 875	unchanged
+A6	Lesion-Size-TrendValue T24 no-change
+T25	Lesion-Count 884 892	multiple
+T26	Lesion-Anatomy 899 918	bilateral pulmonary
+T27	Lesion-Description 919 926	nodules
+T28	Lesion-Anatomy 931 942	mediastinal
+T29	Lesion-Description 944 959	lymphadenopathy
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Lesion-Description:T10 has-Lesion-Count:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T13
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Lesion-Description:T23 has-Lesion-Count:T21 has-Lesion-Anatomy:T22 has-Lesion-Size-Trend:T24
+E21	Lesion-Description:T27 has-Lesion-Count:T25 has-Lesion-Anatomy:T26
+E23	Lesion-Description:T29 has-Lesion-Anatomy:T26 has-Lesion-Anatomy:T28

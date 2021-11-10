@@ -1,0 +1,32 @@
+T1	Medical-Assertion 30 32	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 33 66	acute cardiopulmonary abnormality
+T3	Medical-Problem 499 523	aorta is mildly tortuous
+E2	Medical-Problem:T3
+T4	Medical-Problem 529 536	opacity
+T5	Medical-Anatomy 544 553	left lung
+T6	Medical-Assertion 611 628	likely represents
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 629 636;638 648	pleural thickening
+T8	Medical-Problem 653 669	mild atelectasis
+T9	Medical-Problem 672 693	Platelike atelectasis
+T10	Medical-Anatomy 701 713	left midlung
+T11	Medical-Assertion 739 741	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 742 766	intraperitoneal free air
+T13	Medical-Problem 780 790;792 799	small left pleural
+E10	Medical-Problem:T13
+T14	Medical-Problem 800 808	effusion
+E11	Medical-Problem:T14
+T15	Medical-Assertion 829 831	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 832 865	acute cardiopulmonary abnormality
+T17	Medical-Problem 877 904	small left pleural effusion
+E13	Medical-Problem:T17
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

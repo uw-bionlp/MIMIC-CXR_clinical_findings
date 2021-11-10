@@ -1,0 +1,18 @@
+T1	Medical-Assertion 214 235	potentially can be in
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 263 269	hernia
+T3	Medical-Problem 272 302	Left apical opacity is chronic
+E2	Medical-Problem:T3
+T4	Medical-Anatomy 320 341	Right lung assessment
+T5	Medical-Problem 355 363	interval
+E4	Medical-Problem:T5
+T6	Medical-Problem 379 387;389 400	vascular engorgement
+T7	Medical-Problem 420 458	increase in bilateral pleural effusion
+T8	Medical-Assertion 462 476	Concerning for
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 477 487	aspiration
+T10	Medical-Anatomy 495 511	right lower lobe
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10

@@ -1,0 +1,26 @@
+T1	Medical-Problem 248 255;257 278	mild to moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 291 327;329 340	persistent small to moderate pleural effusion on
+E2	Medical-Problem:T2
+T3	Medical-Problem 371 395	increased patchy opacity
+T4	Medical-Anatomy 403 407;409 428	left mid and lower lungs
+T5	Medical-Problem 439 479	background mild interstitial abnormality
+E5	Medical-Problem:T5
+T6	Medical-Assertion 481 491	suggesting
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 492 532	some degree of coinciding fluid overload
+T8	Medical-Problem 553 577	Increasing opacification
+T9	Medical-Anatomy 585 600	left lower lobe
+T10	Medical-Assertion 601 615	concerning for
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 616 625	pneumonia
+T12	Medical-Problem 634 678	waxing and waning, now increased atelectasis
+T13	Medical-Assertion 680 689	Suspected
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 690 705;707 721	mild coinciding fluid overload
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

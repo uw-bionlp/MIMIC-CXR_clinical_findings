@@ -1,0 +1,34 @@
+T1	Medical-Problem 274 296	Minimal linear opacity
+T2	Medical-Anatomy 308 317;319 323	left lung base
+T3	Medical-Assertion 324 339	likely reflects
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 340 364	subsegmental atelectasis
+T5	Medical-Assertion 367 369	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 370 389	focal consolidation
+T7	Medical-Problem 392 408	pleural effusion
+T8	Medical-Problem 412 424	pneumothorax
+T9	Lesion-Size 437 441	4 mm
+T10	Lesion-Description 442 449	nodular
+E8	Lesion-Description:T10
+T11	Lesion-Description 450 457	opacity
+T12	Lesion-Anatomy 470 484	left lung apex
+T13	Lesion-Characteristic 493 502	calcified
+T14	Lesion-Assertion 508 523	likely reflects
+A3	Lesion-AssertionValue T14 possible
+T15	Lesion-Description 526 535	granuloma
+T16	Medical-Assertion 549 551	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 552 579	acute osseous abnormalities
+T18	Medical-Assertion 599 601	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 602 635	acute cardiopulmonary abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T12 has-Lesion-Characteristic:T13
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T12 has-Lesion-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

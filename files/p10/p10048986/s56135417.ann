@@ -1,0 +1,37 @@
+T1	Medical-Problem 285 309	aorta is mildly tortuous
+E1	Medical-Problem:T1
+T2	Medical-Assertion 380 382	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 383 399	pleural effusion
+T4	Medical-Problem 404 416	pneumothorax
+T5	Medical-Assertion 419 421	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 422 442	focal consolidations
+T7	Lesion-Anatomy 526 548	right apical pulmonary
+T8	Lesion-Description 549 555	nodule
+T9	Lesion-Assertion 557 563	likely
+A3	Lesion-AssertionValue T9 possible
+T10	Lesion-Characteristic 573 582	calcified
+T11	Lesion-Description 584 593	granuloma
+T12	Lesion-Size-Trend 595 612	unchanged in size
+A4	Lesion-Size-TrendValue T12 no-change
+T13	Lesion-Assertion 625 627	No
+A5	Lesion-AssertionValue T13 absent
+T14	Lesion-Size-Trend 628 631	new
+A6	Lesion-Size-TrendValue T14 new
+T15	Lesion-Anatomy 632 641	pulmonary
+T16	Lesion-Description 642 649	nodules
+T17	Medical-Assertion 684 686	No
+A7	Medical-AssertionValue T17 absent
+T18	Medical-Problem 687 711	new focal consolidations
+T19	Medical-Assertion 712 725	suggestive of
+A8	Medical-AssertionValue T19 possible
+T20	Medical-Problem 726 735	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10 has-Lesion-Size-Trend:T12
+E10	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Size-Trend:T14 has-Lesion-Anatomy:T15
+E11	Medical-Problem:T18 has-Medical-Assertion:T17
+E12	Medical-Problem:T20 has-Medical-Assertion:T17 has-Medical-Assertion:T19

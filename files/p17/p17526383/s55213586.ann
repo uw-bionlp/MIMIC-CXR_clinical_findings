@@ -1,0 +1,28 @@
+T1	Medical-Problem 83 94	new opacity
+T2	Medical-Anatomy 102 117	left lower lobe
+T3	Lesion-Anatomy 147 168	right lower lobe lung
+T4	Lesion-Description 169 175	nodule
+T5	Lesion-Description 269 275	nodule
+T6	Lesion-Anatomy 283 293;295 299	left lower lobe
+T7	Medical-Anatomy 569 581	retrocardiac
+E7	Medical-Anatomy:T7
+T8	Medical-Assertion 697 708	No evidence
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 712 721	pneumonia
+T10	Medical-Problem 724 736	pneumothorax
+T11	Medical-Problem 740 756	pleural effusion
+T12	Medical-Problem 759 776	Mild degenerative
+E11	Medical-Problem:T12
+T13	Lesion-Description 881 888	nodular
+E12	Lesion-Description:T13
+T14	Medical-Problem 914 950	superimposition of normal structures
+E13	Medical-Problem:T14
+T15	Lesion-Anatomy 956 960	lung
+T16	Lesion-Description 961 967	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T8
+E15	Lesion-Description:T16 has-Lesion-Anatomy:T15

@@ -1,0 +1,20 @@
+T1	Medical-Problem 249 307	Asymmetrical lead distributed perihilar airspace opacities
+T2	Medical-Anatomy 309 347	predominantly involving the right lung
+T3	Medical-Assertion 375 386	may reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 388 406	asymmetrical edema
+T5	Medical-Problem 423 443	coexisting pneumonia
+T6	Lesion-Characteristic 446 456	Widespread
+T7	Lesion-Anatomy 457 466	pulmonary
+T8	Lesion-Description 468 475	nodules
+T9	Lesion-Description 480 486	masses
+T10	Lesion-Anatomy 507 520	intrathoracic
+T11	Lesion-Description 521 536	lymphadenopathy
+T12	Medical-Problem 576 609	Bilateral small pleural effusions
+E11	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T10

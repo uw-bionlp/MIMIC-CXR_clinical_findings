@@ -1,0 +1,24 @@
+T1	Medical-Assertion 307 309	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 310 322	pneumothorax
+T3	Medical-Problem 327 343	pleural effusion
+T4	Medical-Problem 354 371	irregular contour
+T5	Medical-Anatomy 379 401;403 407	right eighth and ninth ribs
+T6	Medical-Assertion 408 421	may represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 422 444	nondisplaced fractures
+T8	Medical-Problem 472 489	irregular contour
+T9	Medical-Anatomy 497 524	right eighth and ninth ribs
+T10	Medical-Assertion 525 538	may represent
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 540 562	nondisplaced fractures
+T12	Medical-Assertion 565 567	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 568 580	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

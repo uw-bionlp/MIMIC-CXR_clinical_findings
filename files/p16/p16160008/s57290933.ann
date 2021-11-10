@@ -1,0 +1,39 @@
+T1	Medical-Problem 296 313	Mild cardiomegaly
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 471 496	right pleural mediastinal
+T3	Lesion-Description 497 507	metastases
+T4	Medical-Anatomy 553 574	pulmonary vasculature
+T5	Medical-Assertion 578 581	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 582 590	engorged
+T7	Medical-Problem 592 608;610 613	Lung volumes are low
+E6	Medical-Problem:T7
+T8	Medical-Problem 619 661	crowding of the bronchovascular structures
+E7	Medical-Problem:T8
+T9	Medical-Assertion 663 665	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 666 685	focal consolidation
+T11	Medical-Problem 688 704	pleural effusion
+T12	Medical-Problem 708 720	pneumothorax
+T13	Medical-Problem 733 747	Linear opacity
+T14	Medical-Anatomy 755 759;761 779	left costophrenic angle
+T15	Medical-Assertion 780 791	may reflect
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 792 800	scarring
+T17	Medical-Problem 803 828	Mild degenerative changes
+T18	Medical-Anatomy 847 868	imaged thoracic spine
+T19	Medical-Assertion 889 891	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 892 925	acute cardiopulmonary abnormality
+T21	Lesion-Anatomy 933 958	right pleural mediastinal
+T22	Lesion-Description 960 970	metastases
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Lesion-Description:T22 has-Lesion-Anatomy:T21

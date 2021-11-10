@@ -1,0 +1,32 @@
+T1	Medical-Problem 314 336	Heart remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 437 450	calcification
+T3	Medical-Problem 455 464	unfolding
+T4	Medical-Anatomy 473 478	aorta
+T5	Medical-Problem 496 511	atherosclerosis
+E5	Medical-Problem:T5
+T6	Medical-Problem 514 542	Layering bilateral effusions
+E6	Medical-Problem:T6
+T7	Medical-Problem 549 575	patchy bibasilar opacities
+E7	Medical-Problem:T7
+T8	Medical-Assertion 577 599	likely consistent with
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 600 611;613 624	compressive atelectasis
+T10	Medical-Problem 635 644	pneumonia
+T11	Medical-Assertion 645 663	cannot be excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 666 687	Persistent prominence
+T13	Medical-Anatomy 696 723	right perihilar vasculature
+T14	Medical-Assertion 724 732	suggests
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 736 757	element of congestion
+T16	Medical-Assertion 760 762;764 772	No evidence
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 776 788	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

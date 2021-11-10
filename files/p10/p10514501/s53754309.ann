@@ -1,0 +1,22 @@
+T1	Medical-Problem 460 484	significant pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 506 521	focal lucencies
+T3	Medical-Anatomy 529 534;536 580	lower medial right lung base and at the right apex
+T4	Medical-Assertion 587 600	could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 601 610;612 615	loculated air
+T6	Medical-Problem 667 679	Hazy opacity
+T7	Medical-Anatomy 688 698	right base
+T8	Medical-Assertion 713 728	likely reflects
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 746 765	postsurgical change
+T10	Medical-Problem 771 782	atelectasis
+T11	Medical-Assertion 908 910	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 912 927	pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

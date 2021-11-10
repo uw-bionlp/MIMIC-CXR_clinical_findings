@@ -1,0 +1,34 @@
+T1	Medical-Problem 257 294	mild to moderate persistent elevation
+T2	Medical-Anatomy 302 307;309 343	right hemidiaphragm compared to the left
+T3	Medical-Assertion 499 501	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 502 515	focal opacity
+T5	Medical-Assertion 516 530	concerning for
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 531 540	pneumonia
+T7	Medical-Problem 543 559	pleural effusion
+T8	Medical-Problem 564 576	pneumothorax
+T9	Medical-Problem 581 596	streaky opacity
+T10	Medical-Anatomy 631 649	anterior lung base
+T11	Medical-Assertion 650 667	likely represents
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 668 685	minor atelectasis
+T13	Medical-Anatomy 693 714	pulmonary vasculature
+T14	Medical-Assertion 718 721	not
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 722 730	engorged
+T16	Medical-Anatomy 737 744	cardiac
+T17	Medical-Problem 759 765;767 775	mildly enlarged
+T18	Medical-Assertion 892 903	No evidence
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 907 936	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Anatomy:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

@@ -1,0 +1,29 @@
+T1	Medical-Assertion 275 277	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 278 294	pleural effusion
+T3	Medical-Problem 298 310	pneumothorax
+T4	Medical-Problem 325 343	patchy new opacity
+T5	Medical-Anatomy 351 367	right lower lobe
+T6	Medical-Assertion 368 378	suggesting
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 379 388	pneumonia
+T8	Medical-Problem 456 473;475 502	moderate anterior wedge compression deformity
+T9	Medical-Anatomy 508 535	mid thoracic vertebral body
+T10	Medical-Problem 630 644	loss in height
+T11	Medical-Anatomy 816 827	Right lower
+T12	Medical-Problem 833 840	opacity
+T13	Medical-Assertion 841 851	suggesting
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 852 861	pneumonia
+T15	Medical-Problem 870 927	New mild-to-moderate anterior wedge compression deformity
+E12	Medical-Problem:T15
+T16	Medical-Problem 995 1008	acute finding
+E13	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T13

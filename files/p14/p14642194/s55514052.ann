@@ -1,0 +1,22 @@
+T1	Medical-Problem 264 284	Mild pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 309 318	left lung
+T3	Medical-Problem 323 336;338 346	small pleural effusion
+T4	Medical-Anatomy 357 372	Left lower lobe
+T5	Medical-Problem 376 394	partially obscured
+T6	Medical-Problem 398 413;415 433	mildly enlarged cardiac silhouette
+T7	Medical-Assertion 438 451	could contain
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 454 483	small region of consolidation
+T9	Medical-Assertion 486 502	particularly due
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 506 516	aspiration
+T11	Medical-Assertion 519 521	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 522 534	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T4 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

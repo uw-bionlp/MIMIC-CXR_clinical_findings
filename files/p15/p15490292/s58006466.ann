@@ -1,0 +1,22 @@
+T1	Medical-Problem 306 329	somewhat linear opacity
+T2	Medical-Anatomy 338 393	retrocardiac region, along the left margin of the heart
+T3	Medical-Problem 431 438	opacity
+T4	Medical-Anatomy 446 480	retrocardiac region in the lateral
+T5	Medical-Assertion 552 554	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 555 562;564 572	pleural effusion
+T7	Medical-Problem 576 588	pneumothorax
+T8	Medical-Problem 609 636	Linear retrocardiac opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 638 649	potentially
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 650 661	atelectasis
+T11	Medical-Problem 671 680	infection
+T12	Medical-Assertion 681 687;689 709	cannot be entirely excluded
+A3	Medical-AssertionValue T12 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Assertion:T12

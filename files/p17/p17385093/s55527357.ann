@@ -1,0 +1,38 @@
+T1	Medical-Anatomy 273 278	lungs
+T2	Medical-Problem 283 307	relatively hyperinflated
+T3	Medical-Problem 317 347	left base atelectasis/scarring
+E3	Medical-Problem:T3
+T4	Medical-Problem 375 398	relative linear opacity
+T5	Medical-Anatomy 419 426;428 444	lateral right upper lung
+T6	Medical-Assertion 451 464	may be due to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 465 473	scarring
+T8	Medical-Assertion 549 551	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 552 568	pleural effusion
+T10	Medical-Problem 575 582;584 613	cardiac silhouette is mildly enlarged
+E8	Medical-Problem:T10
+T11	Medical-Problem 620 628	aorta is
+E9	Medical-Problem:T11
+T12	Medical-Problem 629 651	calcified and tortuous
+E10	Medical-Problem:T12
+T13	Medical-Assertion 654 656	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 670 678	free air
+T15	Medical-Anatomy 687 708	beneath the diaphragm
+T16	Medical-Problem 734 759	base atelectasis/scarring
+E13	Medical-Problem:T16
+T17	Medical-Problem 773 787	linear opacity
+T18	Medical-Anatomy 808 832	lateral right upper lung
+T19	Medical-Assertion 833 839;841 847	may be due to
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 848 856	scarring
+T21	Medical-Problem 940 970	free air beneath the diaphragm
+E17	Medical-Problem:T21
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19

@@ -1,0 +1,20 @@
+T1	Medical-Problem 162 165	PNA
+E1	Medical-Problem:T1
+T2	Medical-Assertion 329 331;333 341	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 345 364	vascular congestion
+T4	Medical-Problem 367 380	Opacification
+T5	Medical-Anatomy 388 398	right base
+T6	Medical-Problem 419 446	pleural fluid or thickening
+T7	Medical-Assertion 449 451	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 452 472;474 483	definite acute focal pneumonia
+T9	Lesion-Count 486 494	Multiple
+T10	Lesion-Anatomy 495 498	rib
+T11	Lesion-Description 499 506	lesions
+T12	Lesion-Anatomy 516 527	bilaterally
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Count:T9 has-Lesion-Anatomy:T10 has-Lesion-Anatomy:T12

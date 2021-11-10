@@ -1,0 +1,30 @@
+T1	Medical-Problem 160 174	Hyperinflation
+T2	Medical-Anatomy 182 187	lungs
+T3	Medical-Problem 203 219	Fibrotic changes
+T4	Medical-Anatomy 223 227;229 239	both lung bases
+T5	Medical-Anatomy 257 273	descending aorta
+T6	Medical-Problem 282 299	markedly tortuous
+T7	Medical-Problem 305 315	aneurysmal
+T8	Medical-Anatomy 317 357	particularly at the diaphragmatic hiatus
+T9	Medical-Assertion 370 372	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 373 376;378 419	new abnormal cardiac and mediastinal contours
+T11	Medical-Assertion 431 433	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 434 451	new consolidation
+T13	Medical-Problem 454 462	effusion
+T14	Medical-Problem 467 479	pneumothorax
+T15	Medical-Problem 497 518	Stable hyperinflation
+E13	Medical-Problem:T15
+T16	Medical-Problem 536 540	COPD
+E14	Medical-Problem:T16
+T17	Medical-Problem 543 558;560 576	Stable thoracic aorta tortuosity
+E15	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8
+E7	Medical-Problem:T7 has-Medical-Anatomy:T5
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T11

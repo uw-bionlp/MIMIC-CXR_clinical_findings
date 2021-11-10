@@ -1,0 +1,30 @@
+T1	Medical-Anatomy 499 513;515 525	bilateral lung parenchyma
+T2	Medical-Problem 538 548	distortion
+T3	Medical-Problem 553 587	scarring superimposed on emphysema
+T4	Medical-Problem 598 616	pleural thickening
+T5	Medical-Anatomy 624 630	apices
+T6	Medical-Assertion 633 644	No evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 648 660	pneumothorax
+T8	Medical-Assertion 673 679	likely
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 680 705	some mild pulmonary edema
+T10	Lesion-Anatomy 708 724	Right upper lobe
+E8	Lesion-Anatomy:T10
+T11	Lesion-Anatomy 726 749	right middle lower lobe
+E9	Lesion-Anatomy:T11
+T12	Lesion-Anatomy 756 771	left upper lobe
+E10	Lesion-Anatomy:T12
+T13	Lesion-Size-Trend 798 807	unchanged
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Problem 880 889;891 912	bilateral parenchymal opacities
+E11	Medical-Problem:T14
+T15	Medical-Assertion 915 921	Likely
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 933 963	overlying mild pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

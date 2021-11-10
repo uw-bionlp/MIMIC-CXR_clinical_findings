@@ -1,0 +1,14 @@
+T1	Medical-Anatomy 222 239;241 277	right paracentral thorax along the anterior chest wall
+T2	Medical-Problem 299 307	VP shunt
+T3	Lesion-Assertion 380 387;389 397	without evidence
+A1	Lesion-AssertionValue T3 absent
+T4	Lesion-Anatomy 401 422	posterior mediastinal
+T5	Lesion-Description 423 427	mass
+T6	Medical-Assertion 461 463	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 465 481	pleural effusion
+T8	Medical-Problem 485 497	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6

@@ -1,0 +1,33 @@
+T1	Medical-Anatomy 223 228	aorta
+T2	Medical-Problem 236 250	mild unfolding
+T3	Medical-Problem 255 268	calcification
+T4	Medical-Anatomy 269 283	along the arch
+T5	Medical-Problem 290 310	lung volumes are low
+E5	Medical-Problem:T5
+T6	Medical-Problem 314 342	Streaky left basilar opacity
+E6	Medical-Problem:T6
+T7	Medical-Assertion 343 351	suggests
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 352 369	minor atelectasis
+T9	Medical-Assertion 381 383	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 384 391;393 401	pleural effusion
+T11	Medical-Problem 405 417	pneumothorax
+T12	Medical-Problem 420 445	Mild degenerative changes
+T13	Medical-Anatomy 469 483	thoracic spine
+T14	Medical-Problem 501 529	Streaky left basilar opacity
+E12	Medical-Problem:T14
+T15	Medical-Assertion 542 550	probably
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 551 562	atelectasis
+T17	Medical-Assertion 565 587	without clear evidence
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 592 601	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

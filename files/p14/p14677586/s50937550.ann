@@ -1,0 +1,23 @@
+T1	Medical-Assertion 306 325	interval resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 329 348;350 358	large right pleural effusion
+T3	Medical-Problem 360 379	Small left effusion
+E2	Medical-Problem:T3
+T4	Medical-Assertion 391 393	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 394 406	pneumothorax
+T6	Medical-Problem 410 425	pulmonary edema
+T7	Medical-Problem 437 448	engorgement
+E5	Medical-Problem:T7
+T8	Lesion-Size 485 490	large
+T9	Lesion-Anatomy 491 500;502 508	pulmonary artery
+T10	Lesion-Anatomy 513 524	mediastinal
+T11	Lesion-Description 525 540	lymphadenopathy
+T12	Medical-Problem 829 849	large right effusion
+E10	Medical-Problem:T12
+T13	Medical-Problem 851 877	Stable small left effusion
+E11	Medical-Problem:T13
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T10

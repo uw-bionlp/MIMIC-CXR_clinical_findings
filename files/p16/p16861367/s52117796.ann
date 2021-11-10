@@ -1,0 +1,24 @@
+T1	Medical-Problem 226 253	heterogeneous opacification
+T2	Medical-Anatomy 261 271	lung bases
+T3	Medical-Problem 314 343	reticular quality of fibrosis
+E3	Medical-Problem:T3
+T4	Medical-Problem 348 362	bronchiectasis
+E4	Medical-Problem:T4
+T5	Medical-Assertion 372 379	absence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 416 426;428 447	variations in cardiac function
+T7	Medical-Problem 507 519	Hyperlucency
+T8	Medical-Anatomy 527 538	upper lungs
+T9	Medical-Assertion 539 547	suggests
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 548 557	emphysema
+T11	Medical-Problem 587 603	pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Assertion 693 695	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 696 708	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

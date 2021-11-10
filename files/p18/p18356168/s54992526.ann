@@ -1,0 +1,38 @@
+T1	Medical-Problem 310 326	stable elevation
+T2	Medical-Anatomy 334 353	right hemidiaphragm
+T3	Medical-Problem 367 378	volume loss
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 386 391	lungs
+T5	Medical-Assertion 402 409	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 410 423	consolidation
+T7	Medical-Problem 427 432	edema
+T8	Medical-Assertion 444 446	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 447 463	pleural effusion
+T10	Medical-Problem 468 480	pneumothorax
+T11	Medical-Problem 483 500	Mild cardiomegaly
+E9	Medical-Problem:T11
+T12	Medical-Problem 515 536	Aortic calcifications
+T13	Medical-Anatomy 555 566	aortic arch
+T14	Medical-Problem 581 612	unchanged compression deformity
+T15	Medical-Anatomy 616 618	T9
+T16	Medical-Assertion 662 664	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 665 690	new compression fractures
+T18	Medical-Assertion 728 730	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 731 760	acute cardiopulmonary process
+T20	Medical-Problem 767 791	Stable mild cardiomegaly
+E16	Medical-Problem:T20
+T21	Medical-Problem 798 819	Stable T9 compression
+E17	Medical-Problem:T21
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

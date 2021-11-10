@@ -1,0 +1,38 @@
+T1	Medical-Problem 230 238;240 255	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 258 263	Lungs
+T3	Medical-Problem 268 286	hyperinflated with
+E3	Medical-Problem:T3
+T4	Medical-Problem 287 307	flattened diaphragms
+T5	Medical-Assertion 310 323	suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 324 328	COPD
+T7	Medical-Assertion 331 333	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 334 353	focal consolidation
+T9	Medical-Problem 355 371	pleural effusion
+T10	Medical-Problem 377 389	pneumothorax
+T11	Medical-Assertion 392 394	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 395 418	radiopaque foreign body
+T13	Medical-Problem 421 442	Compression deformity
+T14	Medical-Anatomy 449 476	mid-thoracic vertebral body
+T15	Medical-Assertion 518 520	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 521 540	focal consolidation
+T17	Medical-Problem 549 568	Hyperinflated lungs
+E13	Medical-Problem:T17
+T18	Medical-Assertion 570 583	suggestive of
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 584 588	COPD
+T20	Medical-Problem 597 614	Mild cardiomegaly
+E15	Medical-Problem:T20
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

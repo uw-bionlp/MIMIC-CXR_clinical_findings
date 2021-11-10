@@ -1,0 +1,24 @@
+T1	Medical-Problem 33 79	Substantially decreased right pleural effusion
+T2	Medical-Anatomy 110 126	right lower lobe
+T3	Medical-Assertion 128 130	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 131 143	pneumothorax
+T5	Medical-Assertion 640 642	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 643 670	postprocedural pneumothorax
+T7	Medical-Problem 676 691;693 698	effusion on the right
+E5	Medical-Problem:T7
+T8	Medical-Problem 734 746	cardiomegaly
+E6	Medical-Problem:T8
+T9	Medical-Problem 751 763	disseminated
+E7	Medical-Problem:T9
+T10	Lesion-Anatomy 765 779	bilateral lung
+T11	Lesion-Description 780 787	nodules
+T12	Medical-Assertion 797 799	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 800 829	new focal parenchymal opacity
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

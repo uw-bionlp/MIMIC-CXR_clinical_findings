@@ -1,0 +1,22 @@
+T1	Medical-Problem 277 298;300 310	Considerable increase in caliber
+T2	Medical-Anatomy 318 336	cardiac silhouette
+T3	Medical-Assertion 337 352	could be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 353 370;372 384	mediastinal fluid accumulation
+T5	Medical-Problem 388 400	cardiomegaly
+T6	Medical-Anatomy 403 424	Pulmonary vasculature
+T7	Medical-Problem 428 443	mildly engorged
+T8	Medical-Assertion 458 460	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 461 476	pulmonary edema
+T10	Medical-Problem 479 504	Right pleural effusion is
+E8	Medical-Problem:T10
+T11	Medical-Assertion 520 522	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 524 536	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

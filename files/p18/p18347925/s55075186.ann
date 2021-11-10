@@ -1,0 +1,29 @@
+T1	Medical-Problem 692 720	small layering left effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 726 734	possibly
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 737 759	smaller right effusion
+T4	Medical-Problem 762 776	Patchy opacity
+T5	Medical-Anatomy 780 795	both lung bases
+T6	Medical-Assertion 796 800;802 816	most likely reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 817 828	atelectasis
+T8	Medical-Problem 839 849	aspiration
+T9	Medical-Problem 853 862	pneumonia
+T10	Medical-Assertion 863 872;874 891	cannot be entirely excluded
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 894 905	No evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 909 924	pulmonary edema
+T13	Medical-Assertion 927 929	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 930 942	pneumothorax
+T15	Medical-Problem 989 1021	stable postoperative cardiac and
+E10	Medical-Problem:T15
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T10
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

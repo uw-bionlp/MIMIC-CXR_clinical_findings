@@ -1,0 +1,28 @@
+T1	Medical-Problem 426 434;436 456	somewhat kyphotic in position
+E1	Medical-Problem:T1
+T2	Medical-Problem 469 485	low lung volumes
+E2	Medical-Problem:T2
+T3	Medical-Problem 487 496	Opacities
+T4	Medical-Anatomy 518 532	left lung base
+T5	Medical-Assertion 533 546	may relate to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 547 566	vascular congestion
+T7	Medical-Problem 576 589;591 607	consolidation due to infection
+T8	Medical-Problem 669 686	aorta is unfolded
+E7	Medical-Problem:T8
+T9	Medical-Assertion 688 690	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 691 713	large pleural effusion
+T11	Medical-Problem 732 745;747 755	trace pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Assertion 787 798	No evidence
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 802 814	pneumothorax
+T14	Medical-Problem 816 823;825 834	Chronic deformity
+T15	Medical-Anatomy 838 864	posterior right upper ribs
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15

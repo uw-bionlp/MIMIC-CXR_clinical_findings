@@ -1,0 +1,24 @@
+T1	Medical-Problem 298 330	subtle posterior basilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 396 415	which may be due to
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 416 427	atelectasis
+T4	Medical-Problem 441 465	early infectious process
+T5	Medical-Assertion 469 481	not excluded
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Anatomy 525 534	pulmonary
+T7	Medical-Problem 548 557	prominent
+T8	Medical-Problem 578 585	dilated
+T9	Medical-Problem 630 672	underlying pulmonary arterial hypertension
+E7	Medical-Problem:T9
+T10	Lesion-Assertion 686 696	to exclude
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Anatomy 697 713	left-sided hilar
+T12	Lesion-Description 714 724	adenopathy
+T13	Medical-Problem 808 829	overt pulmonary edema
+E10	Medical-Problem:T13
+E2	Medical-Problem:T3 has-Medical-Assertion:T2 has-Medical-Assertion:T5
+E3	Medical-Problem:T4 has-Medical-Assertion:T2 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6
+E9	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Anatomy:T11

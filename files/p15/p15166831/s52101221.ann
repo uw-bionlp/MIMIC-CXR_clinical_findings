@@ -1,0 +1,27 @@
+T1	Medical-Problem 248 263	mild tortuosity
+T2	Medical-Anatomy 271 285	thoracic aorta
+T3	Medical-Problem 298 313	mild prominence
+T4	Medical-Anatomy 321 350	central pulmonary vasculature
+T5	Medical-Assertion 351 358	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 359 364;366 384	frank interstitial edema
+T7	Medical-Problem 387 396	Elevation
+T8	Medical-Anatomy 404 408	left
+T9	Medical-Problem 458 487	Bibasilar atelectasis is mild
+E8	Medical-Problem:T9
+T10	Medical-Problem 490 506;508 547	Diffuse areas of increased bilateral parenchymal opacity
+E9	Medical-Problem:T10
+T11	Medical-Problem 570 584;586 611	numerous areas of ground-glass opacities
+E10	Medical-Problem:T11
+T12	Medical-Problem 653 717;719 736	Subtle areas of bilateral increased parenchymal opacities, right greater than left
+E11	Medical-Problem:T12
+T13	Medical-Assertion 737 757	likely corresponding
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 761 793;795 804	peribronchovascular ground-glass opacities
+T15	Medical-Problem 825 834	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13

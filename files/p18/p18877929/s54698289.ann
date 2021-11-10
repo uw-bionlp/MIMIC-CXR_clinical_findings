@@ -1,0 +1,22 @@
+T1	Medical-Problem 295 314	persistent blunting
+T2	Medical-Anatomy 322 335	left CP angle
+T3	Medical-Assertion 342 359	likely represents
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 362 367;369 394	small residual pleural effusion
+T5	Medical-Problem 397 411	Trace effusion
+E4	Medical-Problem:T5
+T6	Medical-Assertion 531 537	likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 538 570	residual compressive atelectasis
+T8	Medical-Anatomy 578 592	left lung base
+T9	Medical-Problem 761 780	lower lung aeration
+E7	Medical-Problem:T9
+T10	Medical-Problem 786 796;798 832	persistent effusions, left greater than right
+E8	Medical-Problem:T10
+T11	Medical-Assertion 839 847	probable
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 848 865;867 878	mild left basilar atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

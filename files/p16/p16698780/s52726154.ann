@@ -1,0 +1,17 @@
+T1	Medical-Problem 280 290	prominence
+T2	Medical-Anatomy 299 342	pulmonary interstitial markings bilaterally
+T3	Medical-Problem 354 373	focal consolidation
+T4	Medical-Anatomy 387 416	left mid to lower lung fields
+T5	Medical-Assertion 423 436	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 437 447;449 458	developing pneumonia
+T7	Medical-Problem 461 485	Subsegmental atelectasis
+T8	Medical-Anatomy 501 511	right base
+T9	Medical-Assertion 547 549	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 550 567	pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

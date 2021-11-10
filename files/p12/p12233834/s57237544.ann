@@ -1,0 +1,31 @@
+T1	Medical-Assertion 267 269	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 270 286	pleural effusion
+T3	Medical-Problem 290 302	pneumothorax
+T4	Medical-Problem 306 331	Mild degenerative changes
+T5	Medical-Anatomy 352 372	lower thoracic spine
+T6	Medical-Anatomy 386 416	right lower lateral chest wall
+T7	Medical-Problem 427 452	convex pleural thickening
+T8	Lesion-Assertion 532 538;540 551	raises concern for
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Anatomy 554 567	pleural-based
+T10	Lesion-Description 568 572	mass
+T11	Medical-Assertion 586 597	may reflect
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 598 616	loculated effusion
+T13	Medical-Problem 621 637	area of scarring
+T14	Medical-Assertion 886 897	No evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 901 930	acute cardiopulmonary disease
+T16	Medical-Problem 941 991	Substantial focal right lateral pleural thickening
+T17	Medical-Assertion 993 1005;1007 1021	differential considerations
+A5	Medical-AssertionValue T17 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T17

@@ -1,0 +1,40 @@
+T1	Medical-Anatomy 292 305;307 311	superior most wire
+T2	Medical-Problem 315 324	fractured
+T3	Medical-Problem 327 334	Lucency
+T4	Medical-Anatomy 342 353	upper lobes
+T5	Medical-Assertion 396 404	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 405 424	pulmonary emphysema
+T7	Medical-Problem 428 453;455 482	Increased bibasilar right greater than left opacities
+E6	Medical-Problem:T7
+T8	Medical-Assertion 483 496	may be due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 497 512	chronic changes
+T10	Medical-Problem 517 532	underlying COPD
+T11	Medical-Problem 544 553	infection
+T12	Medical-Assertion 557 569	not excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Anatomy 591 607	right lower lung
+T14	Medical-Assertion 620 622	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 623 639	pleural effusion
+T16	Medical-Problem 643 655	pneumothorax
+T17	Medical-Anatomy 723 730	cardiac
+T18	Medical-Assertion 745 748	not
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 749 757	enlarged
+T20	Medical-Problem 803 817	mediastinum is
+E15	Medical-Problem:T20
+T21	Medical-Assertion 818 821	not
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 822 829	widened
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E16	Medical-Problem:T22 has-Medical-Assertion:T21

@@ -1,0 +1,14 @@
+T1	Medical-Problem 301 309;311 334	Multiple displaced rib fractures
+T2	Medical-Anatomy 357 387	right posterolateral location,
+T3	Medical-Anatomy 403 445	fourth through ninth ribs posterolaterally
+T4	Medical-Problem 448 466;468 476	Small left pleural effusion
+E4	Medical-Problem:T4
+T5	Medical-Assertion 481 489	possibly
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 490 519	residual pulmonary laceration
+T7	Medical-Assertion 580 582	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 583 595	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

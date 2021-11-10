@@ -1,0 +1,44 @@
+T1	Medical-Assertion 387 389	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 390 402	pneumothorax
+T3	Medical-Anatomy 416 421	Heart
+T4	Medical-Problem 456 463	appears
+E3	Medical-Problem:T4
+T5	Medical-Problem 465 480	mildly enlarged
+T6	Medical-Problem 487 492	aorta
+E5	Medical-Problem:T6
+T7	Medical-Problem 496 511	mildly tortuous
+T8	Medical-Problem 517 532;534 548	atherosclerotic calcifications
+T9	Medical-Anatomy 562 573	aortic arch
+T10	Medical-Problem 576 596	Mild pulmonary edema
+E9	Medical-Problem:T10
+T11	Medical-Problem 643 662	Confluent opacities
+T12	Medical-Anatomy 683 687;689 703	left mid lung field
+T13	Medical-Anatomy 708 723	left lower lobe
+T14	Medical-Assertion 724 738	concerning for
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 739 748	pneumonia
+T16	Lesion-Characteristic 763 774	ill-defined
+T17	Lesion-Description 775 792	nodular opacities
+T18	Lesion-Anatomy 813 823	right lung
+T19	Medical-Problem 841 862	small airways disease
+E17	Medical-Problem:T19
+T20	Medical-Problem 901 919;921 929	Small left pleural effusion
+E18	Medical-Problem:T20
+T21	Medical-Assertion 1079 1081	No
+A3	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1083 1095	pneumothorax
+T23	Medical-Problem 1101 1125	New mild pulmonary edema
+E20	Medical-Problem:T23
+T24	Medical-Problem 1128 1155	Small left pleural effusion
+E21	Medical-Problem:T24
+T25	Medical-Problem 1161 1181	Multifocal pneumonia
+E22	Medical-Problem:T25
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T9
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E15	Lesion-Description:T17 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T18
+E19	Medical-Problem:T22 has-Medical-Assertion:T21

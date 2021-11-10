@@ -1,0 +1,14 @@
+T1	Medical-Assertion 241 243	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 244 268	significant pneumothorax
+T3	Medical-Problem 271 298	Bilateral pleural effusions
+E2	Medical-Problem:T3
+T4	Lesion-Count 333 341	Multiple
+T5	Lesion-Anatomy 342 356	bilateral lung
+T6	Lesion-Description 357 367	metastases
+T7	Medical-Assertion 437 439	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 440 452	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Count:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

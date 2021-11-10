@@ -1,0 +1,44 @@
+T1	Medical-Problem 283 299	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 359 385	minimal interstitial edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 388 405	Basilar opacities
+E3	Medical-Problem:T3
+T4	Medical-Assertion 479 492	may relate to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 493 514;516 550	bibasilar atelectasis with prominent vascular structures
+T6	Medical-Problem 561 581	underlying infection
+T7	Medical-Problem 586 596	aspiration
+T8	Medical-Assertion 600 612	not excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 705 713	aorta is
+E7	Medical-Problem:T9
+T10	Medical-Problem 714 722	tortuous
+E8	Medical-Problem:T10
+T11	Medical-Problem 727 736	calcified
+E9	Medical-Problem:T11
+T12	Medical-Problem 752 756	DISH
+T13	Medical-Anatomy 775 789	thoracic spine
+T14	Medical-Problem 839 863	bronchovascular markings
+E12	Medical-Problem:T14
+T15	Medical-Problem 866 870;872 882	Mild prominence
+T16	Medical-Anatomy 890 911	interstitial markings
+T17	Medical-Assertion 912 930	raises concern for
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 931 948;950 955	mild interstitial edema
+T19	Medical-Problem 958 1002	Bibasilar, right greater than left opacities
+E16	Medical-Problem:T19
+T20	Medical-Problem 1099 1123	underlying consolidation
+T21	Medical-Problem 1129 1138	infection
+T22	Medical-Problem 1142 1152	aspiration
+T23	Medical-Assertion 1156 1168	not excluded
+A4	Medical-AssertionValue T23 possible
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4 has-Medical-Assertion:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E17	Medical-Problem:T20 has-Medical-Assertion:T23
+E18	Medical-Problem:T21 has-Medical-Assertion:T23
+E19	Medical-Problem:T22 has-Medical-Assertion:T23

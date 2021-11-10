@@ -1,0 +1,23 @@
+T1	Medical-Assertion 402 412	suggestion
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 416 432	increase caliber
+T3	Medical-Anatomy 437 454	mediastinal veins
+T4	Medical-Assertion 455 465	suggesting
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 466 511	elevated central venous pressure or volume or
+T6	Medical-Problem 513 517	both
+T7	Medical-Assertion 529 531	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 532 547	pulmonary edema
+T9	Medical-Problem 576 583;585 594	Pleural effusions
+E6	Medical-Problem:T9
+T10	Medical-Problem 638 660;662 667	blunting the posterior sulci
+E7	Medical-Problem:T10
+T11	Medical-Assertion 670 672	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 673 685	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T1 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,32 @@
+T1	Medical-Problem 166 214	Increased interstitial opacity with septal lines
+E1	Medical-Problem:T1
+T2	Medical-Problem 232 252	mild pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 271 292	moderate cardiomegaly
+E3	Medical-Problem:T3
+T4	Medical-Problem 304 309;311 338	small bilateral pleural effusions
+E4	Medical-Problem:T4
+T5	Medical-Assertion 341 343	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 344 363	focal consolidation
+T7	Lesion-Size 375 378	6mm
+T8	Lesion-Description 379 385	nodule
+T9	Lesion-Anatomy 402 466;468 475	right upper lung between the first and second ribs overlying the scapula
+T10	Medical-Anatomy 481 486	lungs
+T11	Medical-Problem 491 504	hyperexpanded
+T12	Medical-Problem 521 540;542 559	chronic obstructive pulmonary disease
+T13	Medical-Problem 605 613;615 648	Multiple vertebral compression deformities
+T14	Medical-Anatomy 670 684	thoracic spine
+T15	Medical-Problem 702 725	Mild congestive failure
+E14	Medical-Problem:T15
+T16	Lesion-Assertion 727 735	Possible
+A2	Lesion-AssertionValue T16 possible
+T17	Lesion-Size 736 739	6mm
+T18	Lesion-Description 740 746	nodule
+T19	Lesion-Anatomy 754 765;767 771	right upper lung
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Lesion-Description:T8 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E16	Lesion-Description:T18 has-Lesion-Assertion:T16 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T19

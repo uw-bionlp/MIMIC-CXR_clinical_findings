@@ -1,0 +1,58 @@
+T1	Medical-Problem 350 373	size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 380 388	thoracic
+T3	Medical-Problem 398 417	diffusely calcified
+T4	Medical-Assertion 493 496	not
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 498 506	engorged
+T6	Medical-Problem 509 521	Subsegmental
+E5	Medical-Problem:T6
+T7	Medical-Problem 522 533	atelectasis
+T8	Medical-Anatomy 546 561	both lung bases
+T9	Medical-Assertion 562 569	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 570 575;577 590	focal consolidation
+T11	Medical-Assertion 593 595	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 596 612	pleural effusion
+T13	Medical-Problem 616 628	pneumothorax
+T14	Medical-Problem 649 669	degenerative changes
+T15	Medical-Anatomy 687 701	thoracic spine
+T16	Lesion-Anatomy 729 760	left proximal humeral diaphysis
+T17	Lesion-Characteristic 766 776	geographic
+T18	Lesion-Characteristic 777 786	sclerotic
+T19	Lesion-Description 787 793	lesion
+T20	Medical-Assertion 795 803	possibly
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 808 819	enchondroma
+E17	Medical-Problem:T21
+T22	Medical-Problem 823 835	bone infarct
+T23	Medical-Anatomy 878 884;886 899	distal left clavicle
+T24	Medical-Problem 930 944	prior fracture
+T25	Medical-Problem 975 999	subsegmental atelectasis
+E21	Medical-Problem:T25
+T26	Medical-Assertion 1002 1004	No
+A5	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1005 1033	definite focal consolidation
+T28	Lesion-Characteristic 1047 1053	imaged
+T29	Lesion-Characteristic 1054 1063	sclerotic
+T30	Lesion-Description 1064 1070	lesion
+T31	Lesion-Anatomy 1078 1109	left proximal humeral diaphysis
+T32	Medical-Assertion 1112 1120	possibly
+A6	Medical-AssertionValue T32 possible
+T33	Medical-Problem 1124 1135	enchondroma
+T34	Medical-Problem 1139 1151	bone infarct
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E16	Lesion-Description:T19 has-Lesion-Anatomy:T16 has-Lesion-Characteristic:T17 has-Lesion-Characteristic:T18
+E18	Medical-Problem:T22 has-Medical-Assertion:T20
+E20	Medical-Problem:T24 has-Medical-Anatomy:T23
+E22	Medical-Problem:T27 has-Medical-Assertion:T26
+E25	Lesion-Description:T30 has-Lesion-Characteristic:T28 has-Lesion-Characteristic:T29 has-Lesion-Anatomy:T31
+E27	Medical-Problem:T33 has-Medical-Assertion:T32
+E28	Medical-Problem:T34 has-Medical-Assertion:T32

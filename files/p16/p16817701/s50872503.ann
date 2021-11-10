@@ -1,0 +1,21 @@
+T1	Medical-Anatomy 206 216	Chest cage
+T2	Medical-Problem 222 266	severely deformed with marked kyphoscoliosis
+T3	Medical-Problem 310 319	Elevation
+T4	Medical-Anatomy 327 342	right lung base
+T5	Medical-Assertion 346 361	probably due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 362 381;383 391	substantial pleural effusion
+T7	Medical-Assertion 403 409	likely
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 410 423	consolidation
+T9	Medical-Anatomy 431 446	left lower lobe
+T10	Medical-Problem 451 468	Heart is enlarged
+E8	Medical-Problem:T10
+T11	Medical-Problem 488 500	cardiomegaly
+E9	Medical-Problem:T11
+T12	Medical-Problem 549 575	severe anatomic distortion
+E10	Medical-Problem:T12
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9

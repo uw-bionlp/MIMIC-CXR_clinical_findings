@@ -1,0 +1,21 @@
+T1	Medical-Assertion 321 332	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 336 340;342 365	post -procedure pneumothorax
+T3	Lesion-Anatomy 371 389	right paratracheal
+T4	Lesion-Description 390 394	mass
+T5	Lesion-Characteristic 398 416	somewhat irregular
+T6	Medical-Assertion 425 438	could reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 439 465	some procedural hemorrhage
+T8	Medical-Problem 467 481	Indistinctness
+E6	Medical-Problem:T8
+T9	Medical-Assertion 504 512	suggests
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 513 552	some elevated pulmonary venous pressure
+T11	Medical-Problem 609 623	apparent fluid
+T12	Medical-Anatomy 631 650;652 684	right pleural space extending into the minor fissure
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12

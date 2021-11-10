@@ -1,0 +1,39 @@
+T1	Medical-Problem 393 409	Mild enlargement
+T2	Medical-Anatomy 418 434	hila bilaterally
+T3	Lesion-Characteristic 454 464	underlying
+T4	Lesion-Description 465 480	lymphadenopathy
+T5	Medical-Anatomy 509 530	Pulmonary vasculature
+T6	Medical-Assertion 534 537	not
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 538 546	engorged
+T8	Medical-Problem 549 557;559 573	Traction bronchiectasis
+T9	Medical-Problem 578 610	increased interstitial opacities
+T10	Medical-Anatomy 614 634;636 641	both lung apices and bases
+T11	Medical-Assertion 698 712	likely reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 714 730	chronic findings
+T13	Medical-Assertion 733 735	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 736 759	new focal consolidation
+T15	Medical-Problem 761 777	pleural effusion
+T16	Medical-Problem 782 794	pneumothorax
+T17	Medical-Problem 829 856	Chronic appearing opacities
+T18	Medical-Anatomy 860 870	both bases
+T19	Medical-Problem 882 891	bilateral
+E16	Medical-Problem:T19
+T20	Lesion-Description 899 914	lymphadenopathy
+E17	Lesion-Description:T20
+T21	Medical-Assertion 957 959	No
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 960 969;971 984	new focal consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Medical-Problem:T22 has-Medical-Assertion:T21

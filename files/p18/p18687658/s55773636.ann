@@ -1,0 +1,18 @@
+T1	Medical-Problem 246 292	Moderate right and small left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 310 323	Consolidation
+T3	Medical-Anatomy 332 354	base of the right lung
+T4	Medical-Assertion 369 375	either
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 376 399	progressive atelectasis
+T6	Medical-Problem 404 425	conceivably pneumonia
+T7	Medical-Problem 428 456	Interstitial pulmonary edema
+T8	Medical-Anatomy 483 507	right lung than the left
+T9	Medical-Assertion 510 512	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 513 525	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

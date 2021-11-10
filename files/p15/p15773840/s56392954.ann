@@ -1,0 +1,21 @@
+T1	Medical-Assertion 57 59	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 60 72	pneumothorax
+T3	Medical-Problem 75 82	Opacity
+T4	Medical-Anatomy 90 102;104 116	right medial  lower lungs
+T5	Medical-Assertion 159 172	may represent
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 173 182	infection
+T7	Medical-Anatomy 482 498	right lower lobe
+T8	Medical-Problem 506 555	residual confluent area of airspace opacification
+T9	Medical-Anatomy 564 587	right infrahilar region
+T10	Medical-Problem 612 635;637 661	worsening perihilar and lower lung opacification
+E8	Medical-Problem:T10
+T11	Medical-Problem 675 714	small-to-moderate left pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 717 747	Small poorly defined opacities
+E10	Medical-Problem:T12
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T7 has-Medical-Anatomy:T9

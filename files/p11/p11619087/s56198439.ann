@@ -1,0 +1,28 @@
+T1	Medical-Problem 33 45	Hazy opacity
+T2	Medical-Anatomy 53 69	right lower lung
+T3	Medical-Assertion 76 89	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 90 106;108 120	overlapping soft  tissue that
+T5	Medical-Problem 124 141	layering effusion
+T6	Medical-Problem 420 454	mild pulmonary vascular congestion
+E5	Medical-Problem:T6
+T7	Medical-Problem 459 479;481 486	minimal interstitial edema
+E6	Medical-Problem:T7
+T8	Medical-Problem 489 511	Hazy increased opacity
+T9	Medical-Anatomy 515 520	right
+T10	Medical-Anatomy 521 539	mid and lower lung
+T11	Medical-Assertion 540 553	could reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 557 574	layering effusion
+T13	Medical-Assertion 613 633	difficult to exclude
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 635 659	underlying consolidation
+T15	Medical-Anatomy 667 682	right lung base
+T16	Medical-Problem 754 781	Small left pleural effusion
+E13	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15

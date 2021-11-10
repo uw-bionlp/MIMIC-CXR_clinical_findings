@@ -1,0 +1,21 @@
+T1	Medical-Problem 251 273	Moderate overinflation
+E1	Medical-Problem:T1
+T2	Medical-Problem 377 414	mild generalized interstitial pattern
+T3	Medical-Anatomy 416 453;455 477	predominantly in the lower and middle lung areas bilaterally
+T4	Medical-Problem 570 579	emphysema
+E4	Medical-Problem:T4
+T5	Medical-Problem 584 602	pulmonary fibrosis
+E5	Medical-Problem:T5
+T6	Lesion-Assertion 605 607	No
+A1	Lesion-AssertionValue T6 absent
+T7	Lesion-Characteristic 609 619	suspicious
+T8	Lesion-Anatomy 620 624	lung
+T9	Lesion-Description 625 632	nodules
+T10	Lesion-Description 636 642	masses
+T11	Medical-Assertion 676 678	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 680 695	pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E8	Lesion-Description:T9 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T10 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

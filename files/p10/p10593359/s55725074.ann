@@ -1,0 +1,17 @@
+T1	Medical-Problem 399 415	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 420 429;431 442	bibasilar atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 445 453	Blunting
+T4	Medical-Anatomy 461 480	costophrenic angles
+T5	Medical-Assertion 481 496	could relate to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 497 505;507 514	low lung volumes
+T7	Medical-Problem 518 541	small pleural effusions
+T8	Medical-Assertion 602 604	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 605 626	overt pulmonary edema
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

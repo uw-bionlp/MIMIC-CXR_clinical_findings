@@ -1,0 +1,28 @@
+T1	Lesion-Size 224 228	4 mm
+T2	Lesion-Characteristic 229 238	calcified
+T3	Lesion-Description 239 245	nodule
+T4	Lesion-Characteristic 269 288	calcified appearing
+T5	Lesion-Description 289 296	nodules
+T6	Lesion-Anatomy 318 341	right mid to lower lung
+T7	Lesion-Assertion 342 358	likely represent
+A1	Lesion-AssertionValue T7 possible
+T8	Lesion-Description 359 369	granulomas
+T9	Lesion-Assertion 371 373	No
+A2	Lesion-AssertionValue T9 absent
+T10	Medical-Problem 375 394	focal consolidation
+E8	Medical-Problem:T10
+T11	Medical-Assertion 413 415	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 416 432	pleural effusion
+T13	Medical-Problem 436 448	pneumothorax
+T14	Medical-Problem 532 547	pulmonary edema
+E11	Medical-Problem:T14
+T15	Medical-Assertion 576 578	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 579 608	acute cardiopulmonary process
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

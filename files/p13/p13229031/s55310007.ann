@@ -1,0 +1,39 @@
+T1	Medical-Problem 33 48	Vague opacities
+T2	Medical-Anatomy 65 80	each upper lung
+T3	Medical-Problem 90 99	pneumonia
+T4	Medical-Assertion 557 559	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 560 576	pleural effusion
+T6	Medical-Problem 580 592	pneumothorax
+T7	Medical-Problem 605 618	vague opacity
+T8	Medical-Anatomy 664 671;673 689	lateral right upper lung
+T9	Medical-Anatomy 712 731	upper mid left lung
+T10	Medical-Problem 737 748;750 757	more linear opacity
+T11	Medical-Problem 865 897	slight leftward convex curvature
+T12	Medical-Anatomy 918 938	lower thoracic spine
+T13	Medical-Problem 950 975;977 995	very mild exaggeration of kyphotic curvature
+T14	Medical-Anatomy 998 1022	Mid thoracic interspaces
+T15	Medical-Problem 1027 1042	mildly narrowed
+T16	Medical-Assertion 1060 1080	No definite evidence
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1084 1097	acute disease
+T18	Medical-Problem 1100 1116	Patchy opacities
+T19	Medical-Anatomy 1120 1124;1126 1136	each upper lung
+T20	Medical-Problem 1170 1190	scarring on the left
+E18	Medical-Problem:T20
+T21	Lesion-Assertion 1245 1256	potentially
+A3	Lesion-AssertionValue T21 possible
+T22	Lesion-Characteristic 1259 1270	substantial
+T23	Lesion-Description 1272 1278	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T13 has-Medical-Anatomy:T12
+E14	Medical-Problem:T15 has-Medical-Anatomy:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E20	Lesion-Description:T23 has-Lesion-Assertion:T21 has-Lesion-Characteristic:T22

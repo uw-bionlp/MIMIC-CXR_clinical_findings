@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 342 363	pulmonary vasculature
+T2	Medical-Assertion 367 370	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 371 379	engorged
+T4	Medical-Problem 382 397;399 408	Patchy airspace opacities
+T5	Medical-Anatomy 422 437	both lung bases
+T6	Medical-Assertion 438 452	concerning for
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 453 473	multifocal pneumonia
+T8	Medical-Assertion 477 479	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 480 496	pleural effusion
+T10	Medical-Problem 500 512	pneumothorax
+T11	Medical-Assertion 536 538	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 539 552;554 567	acute osseous abnormalities
+T13	Medical-Problem 673 708	Patchy bibasilar airspace opacities
+E9	Medical-Problem:T13
+T14	Medical-Assertion 709 723	concerning for
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 724 744	multifocal pneumonia
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

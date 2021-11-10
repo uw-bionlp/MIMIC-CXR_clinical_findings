@@ -1,0 +1,24 @@
+T1	Medical-Problem 308 319	Volume loss
+T2	Medical-Anatomy 327 337	right lung
+T3	Medical-Problem 344 359	suture material
+T4	Medical-Anatomy 425 430	lungs
+T5	Medical-Assertion 441 448	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 449 468	focal consolidation
+T7	Medical-Problem 470 484	large effusion
+T8	Medical-Problem 489 501	pneumothorax
+T9	Medical-Problem 545 560;562 571	Right upper rib deformity
+E8	Medical-Problem:T9
+T10	Medical-Assertion 626 628	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 629 639;641 654	acute bony abnormalities
+T12	Medical-Assertion 680 682	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 683 697	acute findings
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

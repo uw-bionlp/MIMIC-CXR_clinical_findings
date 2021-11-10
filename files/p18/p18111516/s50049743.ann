@@ -1,0 +1,38 @@
+T1	Medical-Problem 161 182	moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 200 211	aortic knob
+T3	Medical-Problem 215 224	calcified
+T4	Medical-Problem 278 302;304 325	Streaky retrocardiac and right basilar opacity
+E4	Medical-Problem:T4
+T5	Medical-Assertion 326 337	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 338 349	atelectasis
+T7	Medical-Problem 357 366	infection
+T8	Medical-Assertion 367 376;378 386	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 389 423	Mild pulmonary vascular congestion
+E7	Medical-Problem:T9
+T10	Medical-Problem 425 448;450 459	Small bilateral pleural effusions
+E8	Medical-Problem:T10
+T11	Medical-Assertion 513 515	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 517 529	pneumothorax
+T13	Medical-Problem 612 629	Streaky opacities
+T14	Medical-Anatomy 637 647	lung bases
+T15	Medical-Assertion 648 659	may reflect
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 660 671	atelectasis
+T17	Medical-Problem 679 688	infection
+T18	Medical-Assertion 690 708	cannot be excluded
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 711 756	Small bilateral pleural effusions posteriorly
+E14	Medical-Problem:T19
+T20	Medical-Problem 780 814	Mild pulmonary vascular congestion
+E15	Medical-Problem:T20
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T15 has-Medical-Assertion:T18

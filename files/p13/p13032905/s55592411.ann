@@ -1,0 +1,19 @@
+T1	Medical-Problem 200 203;205 232	new diffuse reticular opacities
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 256 266	right lung
+T3	Medical-Assertion 273 279;281 296	may be consistent with
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 300 318	atypical pneumonia
+T5	Medical-Problem 322 338	assymetric edema
+T6	Medical-Assertion 350 352	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 354 370	pleural effusion
+T8	Medical-Problem 374 386	pneumothorax
+T9	Medical-Problem 448 466	Atypical pneumonia
+E7	Medical-Problem:T9
+T10	Medical-Problem 470 486	assymetric edema
+E8	Medical-Problem:T10
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6

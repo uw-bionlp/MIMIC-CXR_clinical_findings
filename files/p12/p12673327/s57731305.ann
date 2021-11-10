@@ -1,0 +1,48 @@
+T1	Lesion-Description 166 172	masses
+T2	Lesion-Anatomy 180 191	right hilum
+T3	Lesion-Size-Trend 212 227	slightly larger
+A1	Lesion-Size-TrendValue T3 increasing
+T4	Lesion-Anatomy 266 277	right hilar
+T5	Lesion-Description 278 282	mass
+T6	Lesion-Size 293 299	4.3 cm
+T7	Lesion-Size 315 321	4.0 cm
+T8	Lesion-Description 328 332	mass
+T9	Lesion-Anatomy 340 350	right base
+T10	Lesion-Size 361 367	7.2 cm
+T11	Lesion-Size 383 389	7.0 cm
+T12	Medical-Problem 394 399	small
+E11	Medical-Problem:T12
+T13	Lesion-Characteristic 400 407	rounded
+T14	Lesion-Description 440 444	mass
+T15	Medical-Assertion 507 509	no
+A2	Medical-AssertionValue T15 absent
+T16	Lesion-Size-Trend 510 513	new
+A3	Lesion-Size-TrendValue T16 new
+T17	Lesion-Description 515 521	masses
+T18	Medical-Problem 525 539	consolidations
+T19	Medical-Assertion 551 553	no
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 554 559	edema
+T21	Medical-Problem 561 577	pleural effusion
+T22	Medical-Problem 583 595	pneumothorax
+T23	Medical-Problem 643 649;651 664	Stable calcification
+T24	Medical-Anatomy 672 683	aortic arch
+T25	Medical-Problem 697 717	compression fracture
+T26	Medical-Anatomy 725 728;730 744	mid thoracic spine
+T27	Lesion-Size-Trend 775 793	Slight enlargement
+A5	Lesion-Size-TrendValue T27 increasing
+T28	Lesion-Count 797 805	multiple
+T29	Lesion-Anatomy 806 815	pulmonary
+T30	Lesion-Description 816 822	masses
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T3
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Size-Present:T6 has-Lesion-Size-Past:T7
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T9 has-Lesion-Size-Present:T10 has-Lesion-Size-Past:T11
+E13	Lesion-Description:T14 has-Lesion-Characteristic:T13
+E14	Lesion-Description:T17 has-Lesion-Size-Trend:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T15
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T19
+E19	Medical-Problem:T23 has-Medical-Anatomy:T24
+E21	Medical-Problem:T25 has-Medical-Anatomy:T26
+E25	Lesion-Description:T30 has-Lesion-Size-Trend:T27 has-Lesion-Count:T28 has-Lesion-Anatomy:T29

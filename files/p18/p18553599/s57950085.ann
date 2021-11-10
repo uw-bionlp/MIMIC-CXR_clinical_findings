@@ -1,0 +1,27 @@
+T1	Medical-Problem 386 404	small pneumothorax
+T2	Medical-Anatomy 405 433;435 468	adjacent to the left cardiac border extending to the left apex
+T3	Medical-Problem 483 490	Opacity
+T4	Medical-Anatomy 505 509;511 529	left mediastinal border
+T5	Medical-Assertion 552 565	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 566 585;587 598	extensive left lung atelectasis
+T7	Medical-Problem 611 622	atelectasis
+T8	Medical-Anatomy 630 646	right lower lung
+T9	Medical-Problem 734 738;740 759	Left lower rib fractures
+E8	Medical-Problem:T9
+T10	Medical-Problem 764 780	subcutaneous air
+E9	Medical-Problem:T10
+T11	Medical-Problem 820 853	Unchanged small left pneumothorax
+T12	Medical-Anatomy 854 889;891 916	adjacent to the left cardiac border extends to the  left apex
+T13	Medical-Problem 925 932	Opacity
+T14	Medical-Anatomy 947 971	right mediastinal border
+T15	Medical-Assertion 972 986	may represents
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 987 996;998 1019	extensive left lung atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

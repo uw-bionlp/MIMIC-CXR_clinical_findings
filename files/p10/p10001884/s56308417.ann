@@ -1,0 +1,28 @@
+T1	Medical-Problem 320 325;327 338	aorta is tortuous
+E1	Medical-Problem:T1
+T2	Medical-Problem 350 387	bilateral apical bronchial thickening
+E2	Medical-Problem:T2
+T3	Medical-Problem 448 461	Focal opacity
+T4	Medical-Anatomy 476 481;483 493	right lower lobe
+T5	Medical-Assertion 494 509	could represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 513 532	area of atelectasis
+T7	Medical-Problem 536 545	infection
+T8	Medical-Assertion 557 559	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 561 569	effusion
+T10	Medical-Problem 573 585	pneumothorax
+T11	Medical-Problem 606 620	Subtle opacity
+T12	Medical-Anatomy 628 644	right lower lobe
+T13	Medical-Assertion 645 660	could represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 661 672	atelectasis
+T15	Medical-Problem 677 686	infection
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

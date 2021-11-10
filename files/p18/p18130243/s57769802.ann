@@ -1,0 +1,14 @@
+T1	Medical-Assertion 238 240	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 241 253	pneumothorax
+T3	Medical-Problem 260 289	large region of opacification
+T4	Medical-Anatomy 297 305;307 326	left mid and lower lung zone
+T5	Lesion-Description 351 355	mass
+T6	Lesion-Anatomy 363 378	left upper lobe
+T7	Medical-Problem 408 433	some localized hemorrhage
+E6	Medical-Problem:T7
+T8	Medical-Problem 458 463;465 483	Heart is mildly enlarged
+E7	Medical-Problem:T8
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6

@@ -1,0 +1,35 @@
+T1	Medical-Problem 406 424	triangular opacity
+T2	Medical-Anatomy 437 454	right middle lobe
+T3	Medical-Problem 476 505;507 515	progressive right middle lobe collapse
+T4	Lesion-Anatomy 592 609	right middle lobe
+T5	Lesion-Description 610 614	mass
+T6	Medical-Assertion 618 626	obscured
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 634 651;653 664	progressive lobar atelectasis
+T8	Lesion-Anatomy 667 682	Paramediastinal
+E7	Lesion-Anatomy:T8
+T9	Medical-Problem 683 690	density
+T10	Medical-Anatomy 712 723	right hilum
+T11	Medical-Problem 812 838	superimposed consolidation
+T12	Medical-Assertion 881 883	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 884 896	pneumothorax
+T14	Medical-Problem 910 938	small right pleural effusion
+E12	Medical-Problem:T14
+T15	Medical-Problem 972 998	right middle lobe collapse
+E13	Medical-Problem:T15
+T16	Medical-Problem 1077 1087	Increasing
+E14	Medical-Problem:T16
+T17	Medical-Problem 1088 1107	right hilar opacity
+E15	Medical-Problem:T17
+T18	Medical-Assertion 1121 1129	probable
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1130 1142;1144 1153	superimposed infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

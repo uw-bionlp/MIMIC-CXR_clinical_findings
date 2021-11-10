@@ -1,0 +1,34 @@
+T1	Medical-Problem 44 56	new fullness
+T2	Medical-Anatomy 64 75	right hilum
+T3	Medical-Problem 87 110	irregular opacification
+T4	Medical-Anatomy 120 142	right medial lung base
+T5	Medical-Assertion 149 162	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 163 183	developing pneumonia
+T7	Medical-Assertion 184 186	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 189 205	pleural effusion
+T9	Medical-Problem 209 221	pneumothorax
+T10	Medical-Problem 648 663	infrahilar lung
+E8	Medical-Problem:T10
+T11	Medical-Assertion 700 715	could be due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 717 726	pneumonia
+T13	Medical-Anatomy 729 738	Left lung
+E10	Medical-Anatomy:T13
+T14	Medical-Problem 850 856;858 866	Severe coronary
+E11	Medical-Problem:T14
+T15	Medical-Problem 867 882	atherosclerosis
+E12	Medical-Problem:T15
+T16	Medical-Problem 891 908	Pleural effusions
+E13	Medical-Problem:T16
+T17	Medical-Assertion 924 926	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 928 940	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

@@ -1,0 +1,32 @@
+T1	Medical-Problem 208 232	aorta is mildly tortuous
+E1	Medical-Problem:T1
+T2	Lesion-Size 274 278	6 mm
+T3	Lesion-Description 279 286	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 287 294	opacity
+T5	Lesion-Anatomy 316 336	right mid lung field
+T6	Lesion-Assertion 337 352	likely reflects
+A1	Lesion-AssertionValue T6 possible
+T7	Lesion-Description 355 364	granuloma
+T8	Medical-Anatomy 367 372	Lungs
+T9	Medical-Problem 377 390	hyperinflated
+T10	Medical-Problem 398 444	attenuation of the pulmonary vascular markings
+T11	Medical-Assertion 465 478	suggestive of
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 479 494	underlying COPD
+T13	Medical-Problem 497 505	Scarring
+T14	Medical-Anatomy 517 528	lung apices
+T15	Medical-Assertion 553 555	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 556 583	acute osseous abnormalities
+T17	Medical-Assertion 603 605	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 606 639	acute cardiopulmonary abnormality
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

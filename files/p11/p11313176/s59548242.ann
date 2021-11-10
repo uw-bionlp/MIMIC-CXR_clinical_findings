@@ -1,0 +1,23 @@
+T1	Medical-Problem 482 491;493 498	pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 538 552	patchy opacity
+T3	Medical-Anatomy 560 570	right base
+T4	Medical-Problem 580 608	associated probable effusion
+T5	Medical-Assertion 609 619	suggesting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 620 631	atelectasis
+T7	Medical-Problem 643 653	aspiration
+T8	Medical-Problem 658 667	pneumonia
+T9	Medical-Assertion 668 693	should also be considered
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Anatomy 696 703	Cardiac
+E8	Medical-Anatomy:T10
+T11	Medical-Assertion 756 758	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 759 771	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Anatomy:T3 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

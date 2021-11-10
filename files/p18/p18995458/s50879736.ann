@@ -1,0 +1,24 @@
+T1	Medical-Problem 215 241	borderline pulmonary edema
+T2	Medical-Assertion 242 254	has resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 257 275	Crescentic opacity
+T4	Medical-Anatomy 284 299	left lower lung
+T5	Lesion-Description 363 369	lesion
+T6	Lesion-Anatomy 401 423	base of the right lung
+T7	Lesion-Size-Trend 427 433;435 455	new or substantially larger
+A2	Lesion-Size-TrendValue T7 increasing
+T8	Medical-Problem 492 502;504 527	regions of large scale atelectasis
+E6	Medical-Problem:T8
+T9	Medical-Assertion 528 543	could be due to
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 544 558	airway disease
+T11	Medical-Problem 562 581;583 601	alternatively acute pulmonary embolism
+T12	Medical-Problem 640 659	vascular congestion
+E9	Medical-Problem:T12
+T13	Medical-Problem 756 782	extensive pulmonary emboli
+E10	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

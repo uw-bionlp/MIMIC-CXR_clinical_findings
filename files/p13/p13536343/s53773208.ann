@@ -1,0 +1,44 @@
+T1	Medical-Anatomy 32 47	Left lower lobe
+T2	Medical-Assertion 56 73	likely represents
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 89 105	pleural effusion
+T4	Medical-Problem 112 123	atelectasis
+T5	Medical-Assertion 128 136	possible
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 137 146	pneumonia
+T7	Medical-Problem 190 208	Hypoinflated lungs
+E5	Medical-Problem:T7
+T8	Medical-Problem 730 746	are hypoinflated
+E6	Medical-Problem:T8
+T9	Medical-Anatomy 748 758	Right lung
+E7	Medical-Anatomy:T9
+T10	Medical-Problem 769 784	Persistent left
+E8	Medical-Problem:T10
+T11	Medical-Problem 785 795;797 804	lower lobe opacity
+E9	Medical-Problem:T11
+T12	Lesion-Characteristic 820 827	rounded
+T13	Lesion-Size 828 840	2.3 x 1.7 cm
+T14	Lesion-Description 841 848	opacity
+T15	Lesion-Anatomy 864 872;874 885	left mid hemi thorax
+T16	Medical-Problem 888 908	Increased prominence
+E14	Medical-Problem:T16
+T17	Medical-Problem 1027 1047	Increased prominence
+E15	Medical-Problem:T17
+T18	Medical-Problem 1099 1111	lobe opacity
+E16	Medical-Problem:T18
+T19	Medical-Problem 1138 1154	pleural effusion
+E17	Medical-Problem:T19
+T20	Medical-Problem 1160 1184	left lower lobe collapse
+E18	Medical-Problem:T20
+T21	Medical-Problem 1264 1282	Hypoinflated lungs
+E19	Medical-Problem:T21
+T22	Lesion-Anatomy 1308 1321	left mid lung
+T23	Lesion-Assertion 1325 1336	most likely
+A3	Lesion-AssertionValue T23 possible
+T24	Lesion-Anatomy 1339 1343	lung
+T25	Lesion-Description 1344 1350	nodule
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Anatomy:T1 has-Medical-Assertion:T2 has-Medical-Assertion:T5
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T12 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T15
+E22	Lesion-Description:T25 has-Lesion-Anatomy:T22 has-Lesion-Assertion:T23 has-Lesion-Anatomy:T24

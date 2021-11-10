@@ -1,0 +1,22 @@
+T1	Medical-Problem 275 290;292 318	small bilateral layering pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 321 341	Lung volumes are low
+E2	Medical-Problem:T2
+T3	Medical-Assertion 344 352	Probable
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 353 364;366 377	compressive atelectasis
+T5	Medical-Anatomy 385 396	lower lungs
+T6	Medical-Assertion 443 450	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 451 463	pneumothorax
+T8	Medical-Problem 580 613	Small bilateral pleural effusions
+E6	Medical-Problem:T8
+T9	Medical-Problem 619 641;643 654	lower lung compressive atelectasis
+E7	Medical-Problem:T9
+T10	Medical-Problem 705 714	pneumonia
+T11	Medical-Anatomy 723 737	left lung base
+T12	Medical-Assertion 738 756	cannot be excluded
+A3	Medical-AssertionValue T12 possible
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

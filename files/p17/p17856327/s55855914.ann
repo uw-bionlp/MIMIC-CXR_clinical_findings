@@ -1,0 +1,29 @@
+T1	Medical-Problem 33 58	Right upper lobe collapse
+E1	Medical-Problem:T1
+T2	Medical-Assertion 102 104	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 107 119	pneumothorax
+T4	Medical-Problem 545 562	extensive opacity
+T5	Medical-Anatomy 571 587	right lower lung
+T6	Medical-Assertion 589 595	likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 623 646	diaphragmatic elevation
+T8	Medical-Problem 649 669	parenchymal collapse
+T9	Medical-Problem 675 691	pleural effusion
+T10	Medical-Assertion 708 723	could be caused
+A3	Medical-AssertionValue T10 possible
+T11	Lesion-Characteristic 730 741	soft tissue
+T12	Lesion-Description 742 746	mass
+T13	Lesion-Anatomy 754 778	level of the right hilus
+T14	Medical-Problem 795 801;803 808	entire right
+T15	Medical-Assertion 907 918	no evidence
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 923 935	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Assertion:T10
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

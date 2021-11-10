@@ -1,0 +1,28 @@
+T1	Medical-Problem 309 336	Peribronchial opacification
+T2	Medical-Anatomy 344 378	lower lungs, particularly the left
+T3	Medical-Assertion 380 385;387 389	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 390 398	scarring
+T5	Medical-Problem 404 413	pneumonia
+T6	Medical-Assertion 417 442	would be easy to overlook
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 465 492	region of previous scarring
+T8	Medical-Anatomy 507 538;540 553	subpleural right lung along the major fissure
+T9	Medical-Problem 564 607	larger region of roughly crescentic opacity
+E7	Medical-Problem:T9
+T10	Medical-Problem 635 672	new small bilateral pleural effusions
+E8	Medical-Problem:T10
+T11	Medical-Assertion 676 684	probably
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 685 693;695 700	fissural fluid
+T13	Medical-Assertion 739 749	suggesting
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 755 762;764 778	cardiac decompensation
+T15	Medical-Assertion 779 799	could be responsible
+A5	Medical-AssertionValue T15 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Assertion:T15

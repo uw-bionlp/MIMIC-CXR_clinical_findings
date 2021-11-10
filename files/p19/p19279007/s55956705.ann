@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 397 402	lungs
+T2	Medical-Assertion 412 414	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 415 434	focal consolidation
+T4	Medical-Problem 438 443	edema
+T5	Medical-Assertion 455 457	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 459 475	pleural effusion
+T7	Medical-Problem 479 491	pneumothorax
+T8	Medical-Problem 527 536;538 559	ovoid 1.5 cm calcific structure
+E6	Medical-Problem:T8
+T9	Lesion-Assertion 566 569	may
+A3	Lesion-AssertionValue T9 possible
+T10	Lesion-Characteristic 582 591	calcified
+T11	Lesion-Description 592 602	infrahilar
+E8	Lesion-Description:T11
+T12	Lesion-Description 603 607	node
+T13	Lesion-Characteristic 612 621	calcified
+T14	Lesion-Description 622 631	granuloma
+T15	Medical-Assertion 737 739	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 740 769	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Lesion-Description:T12 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10
+E11	Lesion-Description:T14 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

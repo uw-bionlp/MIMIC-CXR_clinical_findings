@@ -1,0 +1,16 @@
+T1	Medical-Problem 265 297;299 307	slight interval worsening of the aeration
+T2	Medical-Anatomy 315 325	right lung
+T3	Medical-Assertion 332 357	potentially may be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 358 377;379 387	increase in pleural effusion
+T5	Medical-Anatomy 416 433	cardiomediastinal
+T6	Medical-Problem 459 493	questionable left mid lung opacity
+T7	Medical-Assertion 500 525	might potentially reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 526 536;538 556	developing infectious process
+T9	Medical-Problem 559 586	Air in the right chest wall
+E7	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

@@ -1,0 +1,24 @@
+T1	Lesion-Characteristic 315 324	calcified
+T2	Lesion-Description 325 336	lymph nodes
+T3	Medical-Problem 400 420;422 463	persistent bilateral pleural effusions left greater than right
+E3	Medical-Problem:T3
+T4	Medical-Problem 469 498	left lower lung consolidation
+E4	Medical-Problem:T4
+T5	Medical-Assertion 506 521	could represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 522 533	atelectasis
+T7	Medical-Problem 537 546	pneumonia
+T8	Medical-Problem 784 836	bilateral pleural effusions, left greater than right
+E7	Medical-Problem:T8
+T9	Medical-Problem 843 856	consolidation
+T10	Medical-Anatomy 864 879	left lower lung
+T11	Medical-Assertion 880 894	concerning for
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 895 906	atelectasis
+T13	Medical-Problem 915 924	pneumonia
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

@@ -1,0 +1,30 @@
+T1	Medical-Problem 456 491	PLEURAL EFFUSION, LARGELY COLLECTED
+T2	Medical-Anatomy 502 515;517 521	LATERAL CHEST WALL
+T3	Medical-Problem 547 572	RIGHT BASAL CONSOLIDATION
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 629 650	RIGHT LOWER LOBE LUNG
+T5	Lesion-Description 651 655	MASS
+T6	Lesion-Size 709 714	SMALL
+E6	Lesion-Size:T6
+T7	Lesion-Anatomy 715 736	RIGHT LOWER LOBE LUNG
+E7	Lesion-Anatomy:T7
+T8	Medical-Assertion 749 751	NO
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 752 774	RIGHT PLEURAL EFFUSION
+T10	Medical-Problem 811 816;818 838	LOCAL PULMONARY HEMORRHAGE
+E9	Medical-Problem:T10
+T11	Medical-Problem 843 863	LOCULATED HEMOTHORAX
+E10	Medical-Problem:T11
+T12	Medical-Assertion 866 868	NO
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 869 881	PNEUMOTHORAX
+T14	Medical-Problem 886 896	SMALL LEFT
+E12	Medical-Problem:T14
+T15	Medical-Problem 897 913	PLEURAL EFFUSION
+E13	Medical-Problem:T15
+T16	Medical-Problem 917 935	PLEURAL THICKENING
+E14	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

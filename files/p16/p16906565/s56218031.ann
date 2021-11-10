@@ -1,0 +1,18 @@
+T1	Medical-Assertion 462 464	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 465 477	pneumothorax
+T3	Medical-Problem 480 504	Mild atelectatic changes
+E2	Medical-Problem:T3
+T4	Medical-Anatomy 517 530;532 554	bibasal areas (left more than right)
+E3	Medical-Anatomy:T4
+T5	Lesion-Characteristic 561 574	pleural based
+T6	Lesion-Description 575 579	mass
+T7	Lesion-Anatomy 587 610;612 616	mid aspect of the right lung
+T8	Lesion-Characteristic 628 637	extensive
+T9	Lesion-Characteristic 638 642	bony
+T10	Lesion-Description 643 650	lesions
+T11	Medical-Problem 704 731	significant interval change
+E10	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T9

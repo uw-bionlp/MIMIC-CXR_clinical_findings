@@ -1,0 +1,33 @@
+T1	Lesion-Description 88 102	Adenocarcinoma
+T2	Lesion-Anatomy 114 118	lung
+T3	Medical-Problem 395 418;420 436	Small-to-moderate right pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 490 497;499 509	pleural thickening
+T5	Medical-Anatomy 520 561	lateral and apical costal pleural margins
+T6	Medical-Problem 579 590	mediastinum
+E6	Medical-Problem:T6
+T7	Medical-Assertion 595 598	not
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 599 632	shifted from its midline position
+T9	Medical-Problem 635 653;655 663	Small left pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 667 690	left pleural thickening
+E9	Medical-Problem:T10
+T11	Medical-Problem 711 722	Atelectasis
+T12	Medical-Anatomy 740 750	right base
+T13	Lesion-Anatomy 815 831	right upper lobe
+T14	Lesion-Description 832 836	mass
+T15	Lesion-Anatomy 837 865	along the mediastinal border
+T16	Medical-Problem 953 958;960 976	right pleural effusion
+E15	Medical-Problem:T16
+T17	Lesion-Size 999 1006	smaller
+T18	Lesion-Anatomy 1007 1018	left apical
+T19	Lesion-Description 1019 1025	nodule
+T20	Lesion-Size-Trend 1035 1044	unchanged
+A2	Lesion-Size-TrendValue T20 no-change
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Lesion-Description:T14 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T15
+E18	Lesion-Description:T19 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T18 has-Lesion-Size-Trend:T20

@@ -1,0 +1,31 @@
+T1	Medical-Problem 325 345	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 409 438	Bronchial cuffing bilaterally
+E2	Medical-Problem:T2
+T3	Medical-Assertion 440 451	may suggest
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 452 473	underlying bronchitis
+T5	Medical-Anatomy 476 481	Lungs
+T6	Medical-Assertion 503 510	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 511 518;520 529	pleural effusions
+T8	Medical-Problem 531 550	focal consolidation
+T9	Medical-Problem 555 567	pneumothorax
+T10	Medical-Problem 615 657	crowding of the bronchovascular structures
+E8	Medical-Problem:T10
+T11	Medical-Problem 662 679	Bronchial cuffing
+E9	Medical-Problem:T11
+T12	Medical-Assertion 680 688	suggests
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 689 699	bronchitis
+T14	Medical-Assertion 701 703	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 704 723	focal consolidation
+T16	Medical-Problem 727 734;736 744	pleural effusion
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14

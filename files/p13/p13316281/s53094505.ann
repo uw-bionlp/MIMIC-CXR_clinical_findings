@@ -1,0 +1,58 @@
+T1	Medical-Problem 346 376	moderate left pleural effusion
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 453 463	Left hilar
+T3	Lesion-Anatomy 468 478	infrahilar
+T4	Lesion-Description 479 485	masses
+T5	Lesion-Anatomy 502 517	left upper lobe
+T6	Lesion-Description 518 522	mass
+T7	Lesion-Size-Trend 527 544	grossly unchanged
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Problem 579 599	Left basilar opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 600 611	may reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 612 635	compressive atelectasis
+T11	Medical-Problem 640 649	infection
+T12	Medical-Assertion 654 674	difficult to exclude
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 746 763	aorta is tortuous
+E10	Medical-Problem:T13
+T14	Medical-Anatomy 765 786	Pulmonary vasculature
+T15	Medical-Assertion 790 793	not
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 794 802	engorged
+T17	Medical-Assertion 804 806	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 808 820	pneumothorax
+T19	Medical-Problem 824 852	right-sided pleural effusion
+T20	Medical-Assertion 880 882	no
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 884 911	acute osseous abnormalities
+T22	Medical-Problem 932 985	Increased size of left pleural effusion, now moderate
+E16	Medical-Problem:T22
+T23	Medical-Problem 992 1004;1006 1013	left basilar opacity
+E17	Medical-Problem:T23
+T24	Medical-Assertion 1020 1031	may reflect
+A7	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1032 1055	compressive atelectasis
+T26	Medical-Problem 1057 1066	Infection
+T27	Medical-Anatomy 1078 1082;1084 1093	left lung base
+T28	Medical-Assertion 1094 1123	cannot be completely excluded
+A8	Medical-AssertionValue T28 possible
+T29	Lesion-Size-Trend 1125 1153	Grossly unchanged appearance
+A9	Lesion-Size-TrendValue T29 no-change
+T30	Lesion-Anatomy 1157 1161;1163 1173	left upper lobe
+T31	Lesion-Anatomy 1175 1185	left hilar
+T32	Lesion-Anatomy 1190 1205	left infrahilar
+T33	Lesion-Description 1206 1212	masses
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T19 has-Medical-Assertion:T17
+E15	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T25 has-Medical-Assertion:T24
+E19	Medical-Problem:T26 has-Medical-Anatomy:T27 has-Medical-Assertion:T28
+E24	Lesion-Description:T33 has-Lesion-Size-Trend:T29 has-Lesion-Anatomy:T30 has-Lesion-Anatomy:T31 has-Lesion-Anatomy:T32

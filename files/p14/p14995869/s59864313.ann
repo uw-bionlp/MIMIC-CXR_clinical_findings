@@ -1,0 +1,24 @@
+T1	Lesion-Anatomy 198 207	bilateral
+T2	Lesion-Size 208 213	small
+T3	Lesion-Anatomy 214 223	pulmonary
+T4	Lesion-Description 224 231	nodules
+T5	Medical-Problem 286 317	Linear left basilar atelectasis
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 350 355	lungs
+T7	Medical-Assertion 360 367	without
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 372 395	new focal consolidation
+T9	Medical-Problem 397 405	effusion
+T10	Medical-Problem 409 421	pneumothorax
+T11	Medical-Assertion 561 572	No evidence
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 576 585	pneumonia
+T13	Lesion-Size 594 599	small
+T14	Lesion-Anatomy 600 609	pulmonary
+T15	Lesion-Description 610 617	nodules
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T1 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T3
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Lesion-Description:T15 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T14

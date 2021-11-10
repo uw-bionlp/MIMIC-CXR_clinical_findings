@@ -1,0 +1,16 @@
+T1	Medical-Problem 188 205	aorta is tortuous
+E1	Medical-Problem:T1
+T2	Medical-Problem 208 223	Faint opacities
+T3	Medical-Anatomy 231 236;238 255	upper lobes bilaterally
+T4	Medical-Anatomy 267 283	right lower lobe
+T5	Medical-Assertion 288 301	worrisome for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 302 311	pneumonia
+T7	Medical-Assertion 324 326	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 327 339	pneumothorax
+T9	Medical-Problem 343 359	pleural effusion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

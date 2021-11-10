@@ -1,0 +1,22 @@
+T1	Medical-Problem 268 325	Continued progression of widespread pulmonary abnormality
+T2	Medical-Anatomy 409 420;422 426	right upper lobe
+T3	Medical-Problem 433 465	accompanying increase in caliber
+T4	Medical-Anatomy 473 484	mediastinum
+T5	Medical-Problem 492 499;501 521	greater vascular engorgement
+T6	Medical-Assertion 561 574	may be due to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 576 605	deposition of pulmonary edema
+T8	Medical-Problem 630 639	pneumonia
+T9	Medical-Problem 700 717	Pleural effusions
+T10	Medical-Assertion 737 746	not large
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Assertion 749 751	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 752 764	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

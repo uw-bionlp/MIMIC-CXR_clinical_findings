@@ -1,0 +1,48 @@
+T1	Medical-Problem 506 543	widened appearance to the mediastinum
+T2	Medical-Anatomy 570 595	right paratracheal region
+T3	Medical-Assertion 601 613	differential
+A1	Medical-AssertionValue T3 possible
+T4	Lesion-Description 623 638	lymphadenopathy
+E3	Lesion-Description:T4
+T5	Lesion-Description 640 645	large
+E4	Lesion-Description:T5
+T6	Lesion-Description 647 651	mass
+E5	Lesion-Description:T6
+T7	Medical-Problem 656 681	hemorrhage emanating from
+T8	Medical-Anatomy 684 708	mediastinal great vessel
+T9	Medical-Problem 723 739	low lung volumes
+E8	Medical-Problem:T9
+T10	Medical-Problem 750 776	retrocardiac opacification
+E9	Medical-Problem:T10
+T11	Medical-Problem 781 790	obscuring
+T12	Medical-Anatomy 799 817	left hemidiaphragm
+T13	Medical-Assertion 818 831	likely due to
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 832 859	left lower lobe atelectasis
+T15	Medical-Problem 871 906	right basilar platelike atelectasis
+E13	Medical-Problem:T15
+T16	Medical-Assertion 921 923	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 924 938	pneumothoraces
+T18	Medical-Problem 942 951	effusions
+T19	Medical-Problem 980 999	Widened mediastinum
+E16	Medical-Problem:T19
+T20	Medical-Assertion 1002 1023	Differential includes
+A4	Medical-AssertionValue T20 possible
+T21	Lesion-Description 1024 1039	lymphadenopathy
+E17	Lesion-Description:T21
+T22	Lesion-Description 1041 1046	large
+E18	Lesion-Description:T22
+T23	Lesion-Description 1047 1051	mass
+E19	Lesion-Description:T23
+T24	Medical-Problem 1057 1082	hemorrhage emanating from
+T25	Medical-Anatomy 1085 1109	mediastinal great vessel
+T26	Medical-Problem 1236 1257	Bibasilar atelectasis
+E22	Medical-Problem:T26
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Medical-Problem:T7 has-Medical-Assertion:T3 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E20	Medical-Problem:T24 has-Medical-Assertion:T20 has-Medical-Anatomy:T25

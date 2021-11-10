@@ -1,0 +1,20 @@
+T1	Medical-Problem 198 207	elevation
+T2	Medical-Anatomy 216 246	left hemidiaphragm posteriorly
+T3	Medical-Problem 257 290;292 303	gastric bubble protrudes into the lower chest
+E3	Medical-Problem:T3
+T4	Medical-Problem 309 339	minimal associated atelectasis
+T5	Medical-Problem 342 358;360 380	Mildly distended fluid-filled stomach
+E5	Medical-Problem:T5
+T6	Medical-Problem 532 541	Elevation
+T7	Medical-Anatomy 545 549	left
+T8	Medical-Problem 569 599	minimal associated atelectasis
+T9	Medical-Assertion 608 619	No evidence
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 623 632	pneumonia
+T11	Medical-Problem 642 680	Mildly distended, fluid-filled stomach
+E10	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9

@@ -1,0 +1,38 @@
+T1	Medical-Assertion 488 499	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 503 515	pneumothorax
+T3	Medical-Problem 518 528	Prominence
+T4	Medical-Anatomy 536 540	hila
+T5	Medical-Assertion 541 554	may relate to
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 556 586	pulmonary vascular engorgement
+T7	Medical-Assertion 592 600	possible
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 601 621;623 635	underlying pulmonary hypertension
+T9	Medical-Assertion 644 650	may be
+A4	Medical-AssertionValue T9 possible
+T10	Medical-Problem 653 681	small right pleural effusion
+T11	Medical-Problem 689 699;701 717	trace left pleural effusion
+T12	Medical-Problem 750 776;778 783	thickening/small amount of fluid
+T13	Medical-Anatomy 789 818	tracking in the minor fissure
+T14	Medical-Problem 821 844	Lungs are hyperinflated
+E10	Medical-Problem:T14
+T15	Medical-Problem 847 853;855 872	Patchy left base opacity
+E11	Medical-Problem:T15
+T16	Medical-Assertion 873 886	may relate to
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 887 898	atelectasis
+T18	Medical-Problem 909 933	underlying consolidation
+T19	Medical-Assertion 938 950	not excluded
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 981 1009;1011 1019	cardiac silhouette is mildly enlarged
+E14	Medical-Problem:T20
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Assertion:T19

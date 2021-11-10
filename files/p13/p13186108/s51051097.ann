@@ -1,0 +1,36 @@
+T1	Medical-Problem 250 254;256 265	mild unfolding
+T2	Medical-Anatomy 273 287	thoracic aorta
+T3	Lesion-Size 301 305	5 mm
+T4	Lesion-Description 306 313	nodular
+E4	Lesion-Description:T4
+T5	Lesion-Description 314 321	density
+T6	Lesion-Anatomy 343 373	left lower costophrenic sulcus
+T7	Lesion-Assertion 375 388	suggestive of
+A1	Lesion-AssertionValue T7 possible
+T8	Lesion-Characteristic 391 400	calcified
+T9	Lesion-Description 401 410	granuloma
+T10	Lesion-Description 425 432	nodular
+T11	Lesion-Characteristic 463 486	not fully characterized
+T12	Lesion-Size 492 497	small
+T13	Lesion-Characteristic 498 507	equivocal
+T14	Lesion-Description 508 514	nodule
+T15	Lesion-Anatomy 538 553	right lung base
+T16	Medical-Problem 593 618	Mild degenerative changes
+T17	Medical-Anatomy 639 644;646 660	lower thoracic spine
+T18	Medical-Assertion 686 697	No evidence
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 701 714	acute disease
+T20	Lesion-Description 725 738	Nodular focus
+T21	Lesion-Anatomy 759 783	left costophrenic sulcus
+T22	Lesion-Characteristic 792 801	equivocal
+T23	Lesion-Anatomy 802 815	right basilar
+T24	Lesion-Description 816 822	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T11
+E8	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Characteristic:T8
+E9	Lesion-Description:T10 has-Lesion-Assertion:T7
+E13	Lesion-Description:T14 has-Lesion-Size-Present:T12 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15
+E15	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Lesion-Description:T20 has-Lesion-Anatomy:T21
+E22	Lesion-Description:T24 has-Lesion-Characteristic:T22 has-Lesion-Anatomy:T23

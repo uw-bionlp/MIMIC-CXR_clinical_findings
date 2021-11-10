@@ -1,0 +1,20 @@
+T1	Medical-Problem 229 282	Moderate-to-severe infiltrative pulmonary abnormality
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 401 424	upper mediastinal veins
+T3	Medical-Problem 429 443	mildly dilated
+T4	Medical-Problem 449 490	central venous pressure might be elevated
+E4	Medical-Problem:T4
+T5	Medical-Assertion 525 533	unlikely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 539 554	volume overload
+T7	Medical-Problem 558 580	cardiac decompensation
+T8	Lesion-Anatomy 664 676	Left pleural
+T9	Lesion-Description 678 684	masses
+T10	Medical-Problem 686 694	effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 699 721	lower lobe atelectasis
+E10	Medical-Problem:T11
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T8

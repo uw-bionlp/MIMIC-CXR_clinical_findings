@@ -1,0 +1,31 @@
+T1	Medical-Problem 286 293;295 320	diffuse reticular nodular pattern
+T2	Medical-Anatomy 332 342	both lungs
+T3	Medical-Problem 358 372;374 379	mild pulmonary edema
+T4	Medical-Problem 388 442	some component of underlying interstitial lung disease
+T5	Medical-Assertion 446 449;451 459	not excluded
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 462 464	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 465 479	large effusion
+T8	Medical-Problem 483 495	pneumothorax
+T9	Medical-Problem 500 517	focal eventration
+T10	Medical-Anatomy 526 545	right hemidiaphragm
+T11	Medical-Problem 649 668;670 688	Old left clavicular midshaft deformity
+E9	Medical-Problem:T11
+T12	Medical-Problem 712 745	Diffuse reticular nodular pattern
+T13	Medical-Anatomy 753 758	lungs
+T14	Medical-Assertion 759 767	suggests
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 769 787	interstitial edema
+T16	Medical-Problem 796 827	underlying chronic lung disease
+T17	Medical-Assertion 828 840	not excluded
+A4	Medical-AssertionValue T17 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T17

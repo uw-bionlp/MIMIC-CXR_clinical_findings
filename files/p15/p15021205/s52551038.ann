@@ -1,0 +1,29 @@
+T1	Medical-Problem 190 205	Pulmonary edema
+T2	Medical-Anatomy 223 233	right lung
+T3	Medical-Problem 282 298	some reexpansion
+T4	Medical-Anatomy 306 310	apex
+T5	Medical-Problem 318 337;339 358	previously entirely collapsed left lung
+E5	Medical-Problem:T5
+T6	Lesion-Size 361 366	Large
+T7	Lesion-Anatomy 367 377	left hilar
+T8	Lesion-Description 378 382	mass
+T9	Medical-Problem 387 417	moderate left pleural effusion
+E9	Medical-Problem:T9
+T10	Medical-Problem 446 456	Distention
+T11	Medical-Anatomy 464 475	azygos vein
+T12	Medical-Assertion 476 488;490 492	could be due to
+A1	Medical-AssertionValue T12 possible
+T13	Medical-Problem 493 520	biventricular heart failure
+T14	Medical-Assertion 526 537	possibility
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 541 567;569 577	new concurrent pericardial effusion
+T16	Medical-Assertion 603 605	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 606 618	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7
+E10	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

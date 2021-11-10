@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 414 419	Lungs
+T2	Medical-Assertion 425 430	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 434 453	focal consolidation
+T4	Medical-Problem 456 478	Small calcific density
+T5	Medical-Anatomy 500 523	anterior left first rib
+T6	Lesion-Assertion 524 532	could be
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Characteristic 533 542	calcified
+T8	Lesion-Description 543 552	granuloma
+T9	Lesion-Assertion 556 567	potentially
+A3	Lesion-AssertionValue T9 possible
+T10	Lesion-Description 570 574;576 582	bone island
+T11	Medical-Problem 648 671	slightly tortuous aorta
+E8	Medical-Problem:T11
+T12	Medical-Problem 677 712	some atherosclerotic calcifications
+E9	Medical-Problem:T12
+T13	Medical-Assertion 830 832	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 833 847;849 872	definite acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7
+E7	Lesion-Description:T10 has-Lesion-Assertion:T6 has-Lesion-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

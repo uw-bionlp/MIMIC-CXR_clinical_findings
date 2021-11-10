@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 311 343	Inferior to left pulmonary hilum
+T2	Medical-Problem 350 367	irregular opacity
+T3	Medical-Assertion 374 379;381 390	could represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 393 431	confluence of bronchovascular markings
+T5	Lesion-Description 460 466	nodule
+T6	Lesion-Assertion 467 485	cannot be excluded
+A2	Lesion-AssertionValue T6 possible
+T7	Medical-Assertion 583 599	no definite sign
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 603 612	pneumonia
+T9	Medical-Problem 617 620	CHF
+T10	Medical-Assertion 623 625	No
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 626 634	effusion
+T12	Medical-Problem 638 650	pneumothorax
+T13	Medical-Problem 744 761	Irregular opacity
+T14	Medical-Anatomy 762 798	inferior to the left pulmonary hilum
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Lesion-Description:T5 has-Lesion-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14

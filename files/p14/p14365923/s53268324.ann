@@ -1,0 +1,39 @@
+T1	Medical-Problem 341 354	Opacification
+T2	Medical-Anatomy 362 377	right lung base
+T3	Medical-Problem 386 403	more consolidated
+T4	Lesion-Assertion 423 432	worrisome
+A1	Lesion-AssertionValue T4 possible
+T5	Medical-Anatomy 463 468	minor
+T6	Medical-Problem 481 495;497 507	been retracted inferiorly
+T7	Medical-Problem 520 531	volume loss
+T8	Medical-Problem 538 547	opacities
+E7	Medical-Problem:T8
+T9	Medical-Anatomy 555 569	left lung base
+T10	Medical-Assertion 575 588	worrisome for
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 589 598	pneumonia
+T12	Medical-Assertion 601 603	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 604 620	pleural effusion
+T14	Medical-Problem 624 636	pneumothorax
+T15	Medical-Problem 710 717	opacity
+E12	Medical-Problem:T15
+T16	Medical-Anatomy 725 739	left lung base
+T17	Medical-Assertion 743 756	worrisome for
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 757 766	pneumonia
+T19	Medical-Problem 783 796	consolidation
+T20	Medical-Anatomy 804 819	right lung base
+T21	Medical-Assertion 823 836	suggestive of
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 837 844;846 857	disease progression
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

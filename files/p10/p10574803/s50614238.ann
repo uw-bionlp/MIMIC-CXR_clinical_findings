@@ -1,0 +1,32 @@
+T1	Medical-Problem 190 202	pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 206 214	effusion
+E2	Medical-Problem:T2
+T3	Lesion-Description 369 373	mass
+T4	Lesion-Anatomy 385 403	right heart border
+T5	Lesion-Characteristic 418 427	satellite
+T6	Lesion-Description 428 434	nodule
+T7	Medical-Problem 482 490	Widening
+T8	Medical-Anatomy 498 517	peritracheal stripe
+T9	Lesion-Description 538 553	lymphadenopathy
+E9	Lesion-Description:T9
+T10	Medical-Assertion 587 589	No
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 590 602	pneumothorax
+T12	Medical-Problem 606 611;613 621	large effusion
+T13	Lesion-Anatomy 643 660	Right middle lobe
+T14	Lesion-Description 661 665	mass
+T15	Lesion-Description 670 687	satellite nodules
+T16	Medical-Assertion 735 746	No evidence
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 750 762	pneumothorax
+T18	Medical-Problem 766 780	large effusion
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T10
+E13	Lesion-Description:T14 has-Lesion-Anatomy:T13
+E14	Lesion-Description:T15 has-Lesion-Anatomy:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T18 has-Medical-Assertion:T16

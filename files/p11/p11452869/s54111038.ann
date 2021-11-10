@@ -1,0 +1,30 @@
+T1	Medical-Problem 484 491;493 520	several stable broken sternal wires
+E1	Medical-Problem:T1
+T2	Medical-Problem 649 677	stable left pleural effusion
+T3	Medical-Anatomy 713 717;719 723	left base
+T4	Medical-Problem 743 761	persistent opacity
+E4	Medical-Problem:T4
+T5	Medical-Assertion 763 780	likely reflecting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 781 792;794 805	compressive atelectasis
+T7	Medical-Problem 816 826	aspiration
+T8	Medical-Problem 830 839	pneumonia
+T9	Medical-Assertion 840 865	should also be considered
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 884 944	interval appearance of mild perihilar and interstitial edema
+E8	Medical-Problem:T10
+T11	Medical-Problem 948 972	Streaky linear opacities
+T12	Medical-Anatomy 980 990	right base
+T13	Medical-Assertion 991 1005	likely reflect
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1006 1017	atelectasis
+T15	Medical-Assertion 1020 1022	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1024 1036	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

@@ -1,0 +1,41 @@
+T1	Medical-Assertion 40 42	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 43 72	acute cardiopulmonary process
+T3	Medical-Problem 129 158	acute cardiopulmonary process
+E2	Medical-Problem:T3
+T4	Lesion-Characteristic 174 183	scattered
+T5	Lesion-Description 184 194	granulomas
+T6	Lesion-Characteristic 201 210	calcified
+T7	Lesion-Anatomy 211 222	mediastinal
+T8	Lesion-Description 223 233	lymph node
+T9	Medical-Assertion 234 240;242 250	likely  reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 251 303	prior granulomatous infection such as histoplasmosis
+T11	Medical-Problem 599 634	partially calcified rounded density
+T12	Medical-Anatomy 655 666;668 686	mediastinum near the AP window
+T13	Lesion-Characteristic 703 712	calcified
+T14	Lesion-Description 713 724	lymph nodes
+T15	Medical-Problem 727 744;746 754	Several scattered punctate
+E13	Medical-Problem:T15
+T16	Medical-Problem 755 776	parenchymal densities
+E14	Medical-Problem:T16
+T17	Medical-Assertion 778 784	may be
+A3	Medical-AssertionValue T17 possible
+T18	Lesion-Description 785 795	granulomas
+E15	Lesion-Description:T18
+T19	Medical-Problem 797 813;815 868	sequela of prior granulomatous infection such as histoplasmosis versus
+T20	Medical-Assertion 932 934	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 935 951	pleural effusion
+T22	Medical-Problem 955 967	pneumothorax
+T23	Medical-Assertion 1064 1066	No
+A5	Medical-AssertionValue T23 absent
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T4
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T13
+E16	Medical-Problem:T19 has-Medical-Assertion:T17
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T20

@@ -1,0 +1,44 @@
+T1	Medical-Problem 191 211	Postsurgical changes
+E1	Medical-Problem:T1
+T2	Medical-Problem 286 303	Radiation changes
+E2	Medical-Problem:T2
+T3	Medical-Problem 326 336;338 349	associated volume loss
+T4	Medical-Problem 355 368	elevation and
+E4	Medical-Problem:T4
+T5	Medical-Problem 369 376	tenting
+T6	Medical-Anatomy 384 403	right hemidiaphragm
+T7	Medical-Problem 416 427	atelectasis
+T8	Medical-Anatomy 435 452	right middle lobe
+T9	Lesion-Anatomy 504 520	right lower lobe
+T10	Lesion-Description 521 538	nodular opacities
+T11	Lesion-Size-Trend 544 552	improved
+A1	Lesion-Size-TrendValue T11 decreasing
+T12	Medical-Assertion 596 598	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 599 616	new opacification
+T14	Medical-Assertion 628 630	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 632 648	pleural effusion
+T16	Medical-Problem 652 664	pneumothorax
+T17	Medical-Problem 671 710;712 740	cardiomediastinal silhouette is shifted rightward due to volume loss
+E14	Medical-Problem:T17
+T18	Medical-Problem 848 895	Stable post-surgical and post-radiation changes
+T19	Medical-Anatomy 903 913	right lung
+T20	Medical-Problem 960 990	right lower lobe opacification
+E17	Medical-Problem:T20
+T21	Medical-Assertion 997 999	No
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1000 1011	new opacity
+T23	Medical-Problem 1013 1021	effusion
+T24	Medical-Problem 1026 1038	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T6
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Lesion-Description:T10 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Assertion:T21
+E20	Medical-Problem:T24 has-Medical-Assertion:T21

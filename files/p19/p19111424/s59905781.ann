@@ -1,0 +1,36 @@
+T1	Medical-Problem 184 218	Moderate-to-severe pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 235 259	Left lower lung collapse
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 276 292	Right lower lung
+T4	Medical-Problem 293 304	new opacity
+T5	Medical-Assertion 305 329	could be compatible with
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 330 339;341 346	dependent edema
+T7	Medical-Problem 349 371	Superimposed infection
+T8	Medical-Problem 375 385	aspiration
+T9	Medical-Assertion 386 407	could not be excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 477 485;487 499	Moderate cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Problem 596 641	Small-to-moderate bilateral pleural effusions
+E9	Medical-Problem:T11
+T12	Medical-Problem 681 715	Moderate-to-severe pulmonary edema
+E10	Medical-Problem:T12
+T13	Medical-Anatomy 738 743	Right
+T14	Medical-Problem 755 772	increased opacity
+T15	Medical-Assertion 773 797	could be compatible with
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 798 807;809 814	dependent edema
+T17	Medical-Problem 817 827	Aspiration
+T18	Medical-Problem 831 840	pneumonia
+T19	Medical-Assertion 841 859	cannot be excluded
+A4	Medical-AssertionValue T19 possible
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T19
+E15	Medical-Problem:T18 has-Medical-Assertion:T19

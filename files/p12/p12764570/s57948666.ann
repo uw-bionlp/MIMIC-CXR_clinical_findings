@@ -1,0 +1,30 @@
+T1	Medical-Assertion 352 354	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 355 379	appreciable pneumothorax
+T3	Medical-Problem 382 401;403 411	Small right pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 423 441	Peripheral opacity
+T5	Medical-Anatomy 449 470	right upper lung zone
+T6	Medical-Problem 477 492	central lucency
+T7	Medical-Problem 508 529	parenchymal opacities
+E6	Medical-Problem:T7
+T8	Lesion-Characteristic 535 541	cystic
+T9	Lesion-Description 542 548	lesion
+T10	Medical-Assertion 677 688	No evidence
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 692 704	pneumothorax
+T12	Medical-Problem 706 734	Small right pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Problem 741 760	Parenchymal opacity
+T14	Medical-Anatomy 768 784	right upper lung
+T15	Lesion-Characteristic 803 809	cystic
+T16	Lesion-Description 811 817	lesion
+T17	Medical-Problem 822 841	surrounding opacity
+E15	Medical-Problem:T17
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Lesion-Description:T16 has-Lesion-Characteristic:T15

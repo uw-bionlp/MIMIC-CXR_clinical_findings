@@ -1,0 +1,27 @@
+T1	Medical-Assertion 516 518	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 519 531	pneumothorax
+T3	Medical-Problem 535 551	pleural effusion
+T4	Lesion-Count 554 562	Numerous
+T5	Lesion-Anatomy 563 588	predominantly right-sided
+T6	Lesion-Description 590 597	nodular
+E5	Lesion-Description:T6
+T7	Lesion-Description 598 607	opacities
+T8	Lesion-Size-Trend 612 629	minimally changed
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Characteristic 716 726	Widespread
+T10	Lesion-Anatomy 727 732	right
+T11	Lesion-Description 733 750	nodular opacities
+T12	Medical-Assertion 751 762	may reflect
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 763 783	multifocal pneumonia
+T14	Lesion-Anatomy 881 890	pulmonary
+T15	Lesion-Description 891 898	nodules
+T16	Lesion-Description 902 908	masses
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Count:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T8
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T14

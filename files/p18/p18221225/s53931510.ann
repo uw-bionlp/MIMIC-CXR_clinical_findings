@@ -1,0 +1,32 @@
+T1	Medical-Problem 87 105	Right pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 193 211	right pneumothorax
+E2	Medical-Problem:T2
+T3	Medical-Assertion 238 240	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 241 258;260 276	appreciable right pleural effusion
+T5	Lesion-Size 328 333	small
+T6	Lesion-Description 335 341	lesion
+T7	Lesion-Anatomy 349 364	right lung base
+T8	Medical-Assertion 371 379	could be
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 382 392	laceration
+T10	Medical-Problem 396 405	contusion
+T11	Medical-Problem 434 477	Small region of heterogeneous opacification
+T12	Medical-Anatomy 485 489;491 495	left apex
+T13	Medical-Problem 508 543	unusual distribution of atelectasis
+T14	Medical-Assertion 551 566;568 571	more concerning for
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 572 581	pneumonia
+T16	Medical-Anatomy 584 599	Left lower lung
+T17	Medical-Assertion 622 624	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 625 637;639 647	left pleural effusion
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

@@ -1,0 +1,43 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Medical-Assertion 224 226	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 227 256	acute cardiopulmonary process
+T5	Lesion-Size 263 267	5 mm
+T6	Lesion-Description 268 274	nodule
+T7	Lesion-Anatomy 282 296	right mid lung
+T8	Lesion-Size 704 708	6 mm
+T9	Lesion-Description 709 715	nodule
+T10	Lesion-Anatomy 723 737	right mid lung
+T11	Lesion-Size-Trend 741 744	new
+A3	Lesion-Size-TrendValue T11 new
+T12	Medical-Assertion 770 772	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 773 798	corresponding abnormality
+T14	Medical-Assertion 845 847	no
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 848 865	new consolidation
+T16	Medical-Problem 867 875	effusion
+T17	Medical-Problem 880 892	pneumothorax
+T18	Medical-Problem 896 929	Bilateral apical fibrotic changes
+E13	Medical-Problem:T18
+T19	Medical-Anatomy 948 959	aortic arch
+T20	Medical-Problem 969 978	calcified
+T21	Medical-Assertion 991 993	no
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 994 1039	new abnormal cardiac and mediastinal contours
+T23	Medical-Assertion 1059 1061	No
+A7	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1062 1091	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Lesion-Description:T6 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T7
+E7	Lesion-Description:T9 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T14
+E15	Medical-Problem:T20 has-Medical-Anatomy:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T24 has-Medical-Assertion:T23

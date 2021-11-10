@@ -1,0 +1,32 @@
+T1	Lesion-Assertion 34 46	questionable
+A1	Lesion-AssertionValue T1 possible
+T2	Lesion-Size 47 51	1 cm
+T3	Lesion-Characteristic 52 59	rounded
+T4	Lesion-Description 60 67	opacity
+T5	Lesion-Anatomy 71 85	left lung base
+T6	Medical-Problem 532 542	relatively
+E5	Medical-Problem:T6
+T7	Medical-Anatomy 569 583	left lung base
+T8	Medical-Problem 596 607;609 624	subtle 1-cm rounded opacity
+T9	Lesion-Characteristic 676 686	underlying
+T10	Lesion-Anatomy 688 697	pulmonary
+T11	Lesion-Description 698 704	nodule
+T12	Lesion-Assertion 708 720	not excluded
+A2	Lesion-AssertionValue T12 possible
+T13	Medical-Assertion 755 757	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 758 765;767 775	pleural effusion
+T15	Medical-Problem 779 791	pneumothorax
+T16	Lesion-Assertion 867 879	Questionable
+A4	Lesion-AssertionValue T16 possible
+T17	Lesion-Size 880 884	1-cm
+T18	Lesion-Description 885 892	nodular
+E14	Lesion-Description:T18
+T19	Lesion-Description 893 900	opacity
+T20	Lesion-Anatomy 908 922	left lung base
+E3	Lesion-Description:T4 has-Lesion-Assertion:T1 has-Lesion-Size-Present:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E10	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10 has-Lesion-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Lesion-Description:T19 has-Lesion-Assertion:T16 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T20

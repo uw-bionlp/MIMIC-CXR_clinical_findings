@@ -1,0 +1,29 @@
+T1	Medical-Problem 314 344	Cardiac silhouette is enlarged
+E1	Medical-Problem:T1
+T2	Lesion-Size 367 373	1.5 cm
+T3	Lesion-Characteristic 374 378	oval
+T4	Lesion-Description 387 394	opacity
+T5	Lesion-Anatomy 413 433	left mid lung region
+T6	Medical-Problem 537 544;546 564	minimal linear atelectasis
+T7	Medical-Problem 568 576	scarring
+T8	Medical-Anatomy 584 589	bases
+T9	Medical-Assertion 602 604	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 605 622	pleural effusions
+T11	Lesion-Size 643 649	1.5 cm
+T12	Lesion-Description 650 657	opacity
+T13	Lesion-Anatomy 661 674	left mid lung
+T14	Medical-Assertion 685 707	differential diagnosis
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 718 740	focal atelectasis/scar
+T16	Lesion-Characteristic 742 749	primary
+T17	Lesion-Description 760 770	malignancy
+T18	Medical-Problem 778 794;796 805	nodular focus of infection
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Lesion-Description:T12 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Lesion-Description:T17 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T16
+E16	Medical-Problem:T18 has-Medical-Assertion:T14

@@ -1,0 +1,26 @@
+T1	Medical-Problem 239 266	Heterogeneous opacification
+T2	Medical-Anatomy 274 306	left lower lung in the left apex
+T3	Medical-Assertion 307 315	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 317 328	atelectasis
+T5	Medical-Assertion 336 355	more concerning for
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 356 365	pneumonia
+T7	Medical-Problem 368 393	Right upper lobe collapse
+E5	Medical-Problem:T7
+T8	Medical-Problem 410 434	Widespread opacification
+T9	Medical-Anatomy 442 458	right lower lobe
+T10	Medical-Assertion 474 482	probably
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 483 492	pneumonia
+T12	Medical-Problem 495 523	Small right pleural effusion
+E9	Medical-Problem:T12
+T13	Medical-Assertion 782 784	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 785 797	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

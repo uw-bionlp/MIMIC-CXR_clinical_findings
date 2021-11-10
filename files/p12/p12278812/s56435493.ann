@@ -1,0 +1,17 @@
+T1	Lesion-Size 238 243	small
+T2	Lesion-Description 244 250	nodule
+T3	Lesion-Anatomy 258 296;298 310	right lung, at the level of the fourth anterior rib
+T4	Medical-Problem 465 482	third rib anomaly
+E4	Medical-Problem:T4
+T5	Medical-Assertion 529 537	probably
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 538 548	congenital
+T7	Medical-Assertion 562 564	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 565 584	pleural abnormality
+T9	Lesion-Characteristic 600 607	central
+T10	Lesion-Description 608 618	lymph node
+E2	Lesion-Description:T2 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T9

@@ -1,0 +1,17 @@
+T1	Medical-Problem 334 361	Heterogeneous opacification
+T2	Medical-Anatomy 369 373;375 385	left lower lobe
+T3	Medical-Assertion 389 402	suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 403 413	aspiration
+T5	Medical-Assertion 415 423	probably
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 424 447	evolving into pneumonia
+T7	Medical-Assertion 513 515	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 516 527;529 545	appreciable pleural effusion
+T9	Lesion-Description 580 595	Bone metastasis
+E6	Lesion-Description:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7

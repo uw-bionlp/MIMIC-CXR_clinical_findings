@@ -1,0 +1,23 @@
+T1	Medical-Problem 233 267	Left mid lung atelectasis/scarring
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 290 310	Underlying calcified
+T3	Lesion-Description 312 321	granuloma
+T4	Medical-Assertion 338 340	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 341 364	new focal consolidation
+T6	Medical-Assertion 384 386	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 388 404	pleural effusion
+T8	Medical-Problem 408 420	pneumothorax
+T9	Medical-Problem 549 576	significant interval change
+E7	Medical-Problem:T9
+T10	Medical-Problem 596 616;618 638	left mid lung linear atelectasis/scarring
+E8	Medical-Problem:T10
+T11	Lesion-Characteristic 644 654	underlying
+T12	Lesion-Characteristic 655 664	calcified
+T13	Lesion-Description 665 674	granuloma
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12

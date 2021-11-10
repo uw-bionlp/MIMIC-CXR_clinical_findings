@@ -1,0 +1,19 @@
+T1	Medical-Problem 191 220	Mild-to-moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 324 346	Interstitial opacities
+T3	Medical-Anatomy 355 374	mid and lower lungs
+T4	Medical-Assertion 486 488	no
+A1	Medical-AssertionValue T4 absent
+T5	Lesion-Size-Trend 489 492	new
+A2	Lesion-Size-TrendValue T5 new
+T6	Lesion-Anatomy 493 497	lung
+T7	Lesion-Description 499 506	lesions
+T8	Medical-Problem 508 520	pneumothorax
+T9	Medical-Problem 524 540	pleural effusion
+T10	Medical-Problem 553 569;571 591	mild-to-moderate degenerative changes
+T11	Medical-Anatomy 599 613	thoracic spine
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T7 has-Lesion-Size-Trend:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T4
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11

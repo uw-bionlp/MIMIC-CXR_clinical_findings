@@ -1,0 +1,30 @@
+T1	Medical-Problem 285 296	eventration
+T2	Medical-Anatomy 304 309;311 324	right hemidiaphragm
+T3	Medical-Assertion 336 352	no definite sign
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 356 365	pneumonia
+T5	Medical-Problem 369 372	CHF
+T6	Medical-Problem 375 384;386 409	Minimally prominent lung markings
+T7	Medical-Anatomy 417 432	right lung base
+T8	Medical-Assertion 433 447	likely reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 448 459;461 479	crowding of bronchovasculature
+T10	Medical-Problem 505 520	early pneumonia
+T11	Medical-Assertion 536 552	thought unlikely
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 555 557	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 558 574	pleural effusion
+T14	Medical-Problem 578 590	pneumothorax
+T15	Medical-Assertion 691 693	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 703 712	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

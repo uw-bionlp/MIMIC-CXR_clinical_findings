@@ -1,0 +1,35 @@
+T1	Medical-Problem 165 184	faint consolidation
+T2	Medical-Anatomy 192 207	left lower lobe
+T3	Medical-Problem 304 321	increased density
+T4	Medical-Anatomy 329 360	anterior basal right lower lobe
+T5	Medical-Problem 398 412	linear opacity
+T6	Medical-Anatomy 421 428	lingula
+T7	Medical-Assertion 456 469	may represent
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 470 481	atelectasis
+T9	Medical-Problem 486 494	scarring
+T10	Medical-Assertion 506 517	no evidence
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 522 537	pulmonary edema
+T12	Medical-Problem 541 557	pleural effusion
+T13	Medical-Problem 649 682	degenerative changes in the spine
+E11	Medical-Problem:T13
+T14	Medical-Problem 703 722	Faint consolidation
+T15	Medical-Anatomy 730 745	left lower lobe
+T16	Medical-Problem 775 799	Persistent consolidation
+T17	Medical-Anatomy 807 838	anterior basal right lower lobe
+T18	Medical-Assertion 863 876	may represent
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 877 896	recurrent pneumonia
+T20	Medical-Assertion 1008 1020	not excluded
+A4	Medical-AssertionValue T20 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Assertion:T20

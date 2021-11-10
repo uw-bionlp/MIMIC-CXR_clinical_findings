@@ -1,0 +1,35 @@
+T1	Medical-Problem 358 392	large right-sided pleural effusion
+T2	Medical-Problem 398 408;410 428	concurrent severe atelectasis
+T3	Medical-Anatomy 436 464	right middle and lower lobes
+T4	Medical-Problem 467 475	Fluid is
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 517 551	left lung and the right upper lung
+T6	Medical-Assertion 557 559	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 561 581	significan opacities
+T8	Medical-Problem 595 617	trace pleural effusion
+E7	Medical-Problem:T8
+T9	Medical-Anatomy 694 705;707 713	right heart border
+T10	Medical-Anatomy 764 769	heart
+T11	Medical-Assertion 770 785	does not appear
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 787 789	to
+T13	Medical-Problem 790 801	be enlarged
+T14	Medical-Assertion 856 858	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 860 872	pneumothorax
+T16	Medical-Problem 938 972	large right-sided pleural effusion
+E13	Medical-Problem:T16
+T17	Medical-Problem 977 1006	concurrent severe atelectasis
+T18	Medical-Anatomy 1015 1043	right middle and lower lobes
+T19	Medical-Problem 1046 1055	Pneumonia
+T20	Medical-Assertion 1056 1085	cannot be completely excluded
+A4	Medical-AssertionValue T20 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Assertion:T20

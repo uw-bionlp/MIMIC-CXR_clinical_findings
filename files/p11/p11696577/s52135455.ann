@@ -1,0 +1,22 @@
+T1	Medical-Problem 219 234;236 247	newly developed atelectasis
+T2	Medical-Anatomy 255 285	right middle parts of the lung
+T3	Medical-Problem 288 310;312 333	Unchanged pre-existing signs of cardiomegaly
+E3	Medical-Problem:T3
+T4	Medical-Problem 339 361	minimal fluid overload
+E4	Medical-Problem:T4
+T5	Medical-Assertion 366 375	potential
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 376 387	enlargement
+T7	Medical-Anatomy 396 417	left pulmonary artery
+T8	Medical-Assertion 420 422	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 423 440	pleural effusions
+T10	Medical-Problem 452 468	low lung volumes
+E8	Medical-Problem:T10
+T11	Medical-Assertion 472 483	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 487 496	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

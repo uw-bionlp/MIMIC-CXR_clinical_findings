@@ -1,0 +1,23 @@
+T1	Lesion-Description 271 288	Nodular opacities
+T2	Lesion-Anatomy 307 318	upper chest
+T3	Lesion-Anatomy 367 371	lung
+T4	Lesion-Anatomy 377 384	pleural
+T5	Lesion-Description 385 395	metastases
+T6	Medical-Assertion 428 430	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 431 440	pneumonia
+T8	Medical-Problem 444 455;457 473	appreciable pleural effusion
+T9	Lesion-Anatomy 502 506	Lung
+T10	Lesion-Anatomy 511 518	pleural
+T11	Lesion-Description 519 529	metastases
+T12	Medical-Assertion 531 533	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 534 543	pneumonia
+T14	Medical-Problem 547 555	collapse
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12

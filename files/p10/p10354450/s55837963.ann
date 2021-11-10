@@ -1,0 +1,19 @@
+T1	Medical-Problem 248 261	Consolidation
+T2	Medical-Anatomy 269 284	left lower lobe
+T3	Medical-Assertion 328 336	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 337 348	atelectasis
+T5	Medical-Problem 353 362	pneumonia
+T6	Medical-Assertion 366 378	not excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 412 439	Small left pleural effusion
+E5	Medical-Problem:T7
+T8	Medical-Problem 452 468;470 482	Mild-to-moderate cardiomegaly
+E6	Medical-Problem:T8
+T9	Medical-Assertion 503 505	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 506 518	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

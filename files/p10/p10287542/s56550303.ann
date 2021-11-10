@@ -1,0 +1,37 @@
+T1	Medical-Problem 255 277	right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 292 316	persisting opacification
+T3	Medical-Anatomy 324 345	right lower lung zone
+T4	Medical-Assertion 352 363	may reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 365 393	re-expansion pulmonary edema
+T6	Medical-Problem 401 412	atelectasis
+T7	Medical-Assertion 415 417	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 418 436	right pneumothorax
+T9	Medical-Assertion 449 451	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 452 471	focal consolidation
+T11	Medical-Problem 473 489	pleural effusion
+T12	Medical-Problem 493 505	pneumothorax
+T13	Medical-Anatomy 513 517;519 523	left lung
+T14	Medical-Problem 713 742	Persisting airspace opacities
+T15	Medical-Anatomy 750 771	right lower lung zone
+T16	Medical-Assertion 773 784	may reflect
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 785 813	re-expansion pulmonary edema
+T18	Medical-Problem 821 832	atelectasis
+T19	Medical-Assertion 835 837	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 838 850	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Anatomy:T13
+E9	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

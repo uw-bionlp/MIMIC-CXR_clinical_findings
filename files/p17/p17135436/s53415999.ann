@@ -1,0 +1,21 @@
+T1	Medical-Problem 121 158	Cardiac silhouette is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 161 184;186 196	Mild pulmonary vascular congestion
+E2	Medical-Problem:T2
+T3	Medical-Assertion 208 215	without
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 216 252	frank interstitial or alveolar edema
+T5	Medical-Problem 255 261;263 281	Patchy and linear opacity
+T6	Medical-Anatomy 285 309	left retrocardiac region
+T7	Medical-Assertion 310 316	favors
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 317 328	atelectasis
+T9	Medical-Problem 335 345	aspiration
+T10	Medical-Problem 350 374	early focus of pneumonia
+T11	Medical-Assertion 375 388	could produce
+A3	Medical-AssertionValue T11 possible
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7 has-Medical-Assertion:T11
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T11

@@ -1,0 +1,19 @@
+T1	Medical-Problem 91 109;111 115	bilateral low lung  vol
+E1	Medical-Problem:T1
+T2	Medical-Problem 121 157	crowding of bronchovascular markings
+T3	Medical-Problem 162 187	bibasilar opacifications,
+T4	Medical-Anatomy 190 193	R>L
+T5	Medical-Assertion 194 200	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 201 212	atelectasis
+T7	Medical-Assertion 646 648	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 649 661	pneumothorax
+T9	Medical-Problem 688 704	pleural effusion
+T10	Medical-Assertion 706 724	cannot be excluded
+A3	Medical-AssertionValue T10 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T10

@@ -1,0 +1,26 @@
+T1	Medical-Assertion 323 325	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 326 338	pneumothorax
+T3	Medical-Problem 359 399	cardiomediastinal silhouette is enlarged
+E2	Medical-Problem:T3
+T4	Medical-Problem 437 462	diffuse vascular plethora
+T5	Medical-Problem 467 483	alveolar opacity
+T6	Medical-Anatomy 487 491;493 498	both lungs
+T7	Medical-Anatomy 532 547	left upper zone
+T8	Medical-Assertion 648 666	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 670 678	Probable
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 679 703	bilateral effusions with
+T11	Medical-Problem 704 714;716 724	underlying collapse
+T12	Medical-Problem 732 745	consolidation
+T13	Medical-Assertion 801 809	Possible
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 810 841;843 867	slight interval increase in the right upper zone opacity
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

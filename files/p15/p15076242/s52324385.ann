@@ -1,0 +1,43 @@
+T1	Medical-Problem 266 281	mild flattening
+T2	Medical-Anatomy 289 313	posterior hemidiaphragms
+T3	Medical-Problem 346 366	anterior eventration
+T4	Medical-Anatomy 374 396;398 416	right greater than the left hemidiaphragm
+T5	Medical-Anatomy 443 448	lungs
+T6	Medical-Assertion 459 466	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 467 472;474 487	focal consolidation
+T8	Medical-Assertion 488 502	concerning for
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 503 512	pneumonia
+T10	Medical-Problem 514 530	pleural effusion
+T11	Medical-Problem 535 547	pneumothorax
+T12	Medical-Anatomy 555 576	pulmonary vasculature
+T13	Medical-Assertion 580 583	not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 584 592	engorged
+T15	Medical-Anatomy 647 661	thoracic aorta
+T16	Medical-Problem 665 673	tortuous
+T17	Medical-Problem 678 694	mildly calcified
+T18	Medical-Anatomy 703 714	aortic knob
+T19	Medical-Problem 802 809	trachea
+E16	Medical-Problem:T19
+T20	Medical-Problem 813 843	slightly deviated to the right
+E17	Medical-Problem:T20
+T21	Medical-Problem 875 908	minimal biapical pleural scarring
+E18	Medical-Problem:T21
+T22	Medical-Problem 911 936	Mild degenerative changes
+T23	Medical-Anatomy 955 969	thoracic spine
+T24	Medical-Assertion 987 989	No
+A4	Medical-AssertionValue T24 absent
+T25	Medical-Problem 990 1019	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15 has-Medical-Anatomy:T18
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Anatomy:T18
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T25 has-Medical-Assertion:T24

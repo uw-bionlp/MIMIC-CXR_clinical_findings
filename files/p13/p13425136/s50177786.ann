@@ -1,0 +1,19 @@
+T1	Medical-Problem 199 221	pulmonary infiltrates?
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 304 309	Lungs
+T3	Medical-Assertion 345 347	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 348 356	scarring
+T5	Medical-Problem 360 373	consolidation
+T6	Medical-Problem 386 414	prior or active tuberculosis
+T7	Medical-Assertion 427 435	possible
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 436 449;451 464	granulomatous calcification
+T9	Medical-Anatomy 472 484	left midlung
+T10	Lesion-Anatomy 501 511	left hilar
+T11	Lesion-Description 512 523	lymph nodes
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T10

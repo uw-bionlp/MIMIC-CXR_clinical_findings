@@ -1,0 +1,18 @@
+T1	Medical-Anatomy 322 327	lungs
+T2	Medical-Assertion 332 337	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 341 350;352 365	confluent consolidation
+T4	Medical-Problem 381 410	pulmonary vascular congestion
+T5	Medical-Problem 413 427	Hazy opacities
+T6	Medical-Anatomy 443 465	lung bases bilaterally
+T7	Medical-Problem 517 547	Cardiac silhouette is enlarged
+E6	Medical-Problem:T7
+T8	Medical-Problem 577 589	Cardiomegaly
+E7	Medical-Problem:T8
+T9	Medical-Assertion 590 597	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 598 636	definite acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

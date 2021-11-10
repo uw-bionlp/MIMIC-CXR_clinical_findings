@@ -1,0 +1,17 @@
+T1	Medical-Problem 278 299	parenchymal opacities
+T2	Medical-Anatomy 304 319	both lung bases
+T3	Medical-Assertion 320 344	have completely resolved
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Assertion 378 380;382 390	no evidence
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 395 404	pneumonia
+T6	Medical-Problem 408 444	other pathologic parenchymal process
+T7	Medical-Problem 478 495	pleural effusions
+E5	Medical-Problem:T7
+T8	Medical-Assertion 498 500	No
+A3	Medical-AssertionValue T8 absent
+T9	Lesion-Description 501 516	lymphadenopathy
+E6	Lesion-Description:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4

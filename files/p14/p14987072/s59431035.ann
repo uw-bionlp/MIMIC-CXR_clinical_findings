@@ -1,0 +1,22 @@
+T1	Medical-Problem 254 261	opacity
+T2	Medical-Anatomy 280 303	lower right mediastinum
+T3	Medical-Problem 347 379	Minimal left basilar atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Assertion 383 385	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 386 402	pleural effusion
+T6	Medical-Problem 406 418	pneumothorax
+T7	Medical-Problem 509 526	Increased opacity
+T8	Medical-Anatomy 548 571	lower right mediastinum
+T9	Medical-Problem 617 641	underlying consolidation
+T10	Medical-Problem 645 656	atelectasis
+T11	Medical-Assertion 657 675	cannot be excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 680 712	Minimal left basilar atelectasis
+E10	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8 has-Medical-Assertion:T11
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T11

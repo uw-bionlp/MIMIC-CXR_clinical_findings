@@ -1,0 +1,34 @@
+T1	Medical-Problem 295 302;304 312	chronic collapse
+T2	Medical-Anatomy 320 335	left lower lobe
+T3	Medical-Problem 359 366	opacity
+T4	Medical-Anatomy 375 394	retrocardiac region
+T5	Medical-Problem 399 410	volume loss
+T6	Medical-Anatomy 418 427	left lung
+T7	Medical-Anatomy 451 456	lungs
+T8	Medical-Assertion 470 477	without
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 478 495	new consolidation
+T10	Medical-Problem 497 505	effusion
+T11	Medical-Problem 509 521	pneumothorax
+T12	Medical-Assertion 569 571	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 572 596	acute bony abnormalities
+T14	Medical-Problem 614 634	degenerative changes
+T15	Medical-Anatomy 663 677	right shoulder
+T16	Medical-Problem 698 730	Chronic left lower lobe collapse
+E14	Medical-Problem:T16
+T17	Medical-Problem 732 752	Degenerative changes
+T18	Medical-Anatomy 760 774	right shoulder
+T19	Medical-Assertion 777 779	No
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 780 794	acute findings
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T19

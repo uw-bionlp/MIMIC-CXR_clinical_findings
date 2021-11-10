@@ -1,0 +1,22 @@
+T1	Medical-Assertion 250 252	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 253 261	relevant
+T3	Medical-Problem 365 376	atelectasis
+T4	Medical-Anatomy 380 395	both lung bases
+T5	Medical-Problem 404 425	moderate cardiomegaly
+E4	Medical-Problem:T5
+T6	Medical-Problem 431 455	moderate pulmonary edema
+E5	Medical-Problem:T6
+T7	Medical-Problem 457 472	Mild tortuosity
+T8	Medical-Anatomy 481 497	descending aorta
+T9	Lesion-Anatomy 506 511	hilar
+T10	Lesion-Anatomy 516 527	mediastinal
+T11	Lesion-Description 528 538	lymph node
+T12	Medical-Assertion 556 558	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 560 591	new focal parenchymal opacities
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

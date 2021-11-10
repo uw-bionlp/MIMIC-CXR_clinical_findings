@@ -1,0 +1,38 @@
+T1	Medical-Problem 29 45	Low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 51 91	crowding of the bronchovascular markings
+E2	Medical-Problem:T2
+T3	Medical-Problem 93 106	Faint opacity
+T4	Medical-Anatomy 123 138	left lower lobe
+T5	Medical-Assertion 142 163	likely representative
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 167 178	atelectasis
+T7	Medical-Problem 191 200	pneumonia
+T8	Medical-Assertion 201 217	must be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 250 252	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 253 258;260 284	acute  cardiopulmonary process
+T11	Medical-Problem 637 655	Increasing opacity
+T12	Medical-Anatomy 663 678	left lower lobe
+T13	Medical-Assertion 679 694	could be due to
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 695 706	atelectasis
+T15	Medical-Problem 712 734	superimposed infection
+T16	Medical-Assertion 735 753	cannot be excluded
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Assertion 844 846	no
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 847 859	pneumothorax
+T19	Medical-Problem 863 870;872 880	pleural effusion
+T20	Medical-Problem 893 925	multiple bilateral rib fractures
+E14	Medical-Problem:T20
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13 has-Medical-Assertion:T16
+E12	Medical-Problem:T18 has-Medical-Assertion:T17
+E13	Medical-Problem:T19 has-Medical-Assertion:T17

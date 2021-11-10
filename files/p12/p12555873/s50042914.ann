@@ -1,0 +1,31 @@
+T1	Medical-Problem 215 228	faint opacity
+T2	Medical-Anatomy 243 259	right lower lobe
+T3	Medical-Assertion 269 275;277 284	likely present
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 288 299	atelectasis
+T5	Medical-Anatomy 317 322	lungs
+T6	Medical-Assertion 338 349	no evidence
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 356 369	consolidation
+T8	Medical-Problem 371 379	effusion
+T9	Medical-Problem 384 396	pneumothorax
+T10	Medical-Assertion 441 443	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 444 459	acute fractures
+T12	Medical-Problem 496 509	Faint opacity
+T13	Medical-Anatomy 524 540	right lower lobe
+T14	Medical-Assertion 550 574	likely representative of
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 576 587	atelectasis
+T16	Medical-Problem 599 608	pneumonia
+T17	Medical-Assertion 609 625	must be excluded
+A5	Medical-AssertionValue T17 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T17

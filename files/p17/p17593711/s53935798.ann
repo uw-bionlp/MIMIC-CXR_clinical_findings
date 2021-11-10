@@ -1,0 +1,55 @@
+T1	Medical-Problem 233 245	new fullness
+T2	Medical-Anatomy 253 262	AP window
+T3	Lesion-Assertion 263 273	concerning
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Description 279 294	lymphadenopathy
+T5	Medical-Assertion 306 308	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 309 325	pleural effusion
+T7	Medical-Problem 329 341	pneumothorax
+T8	Lesion-Characteristic 346 352;354 387	partly circumscribed soft tissue density
+T9	Lesion-Description 388 392	mass
+T10	Lesion-Size 417 423	2.8 cm
+T11	Lesion-Anatomy 452 472	left lower lung zone
+T12	Lesion-Size-Trend 476 479	new
+A3	Lesion-Size-TrendValue T12 new
+T13	Medical-Problem 505 531	Slightly increased opacity
+T14	Medical-Anatomy 539 555	right lower lung
+T15	Medical-Problem 626 686	Multiple new compression deformities with resultant kyphosis
+T16	Medical-Anatomy 706 720	thoracic spine
+T17	Lesion-Size-Trend 731 748	stable appearance
+A4	Lesion-Size-TrendValue T17 no-change
+T18	Lesion-Characteristic 755 760	ovoid
+T19	Lesion-Characteristic 761 778	densely calcified
+T20	Lesion-Characteristic 779 784	focal
+T21	Lesion-Description 786 792	lesion
+T22	Lesion-Anatomy 800 827	right humeral metadiaphysis
+T23	Lesion-Description 848 859	enchondroma
+E19	Lesion-Description:T23
+T24	Medical-Problem 881 893	New fullness
+T25	Medical-Anatomy 901 910	AP window
+T26	Lesion-Assertion 912 926	concerning for
+A5	Lesion-AssertionValue T26 possible
+T27	Lesion-Description 927 942	lymphadenopathy
+T28	Lesion-Size 957 962	large
+T29	Lesion-Description 963 969	nodule
+T30	Lesion-Anatomy 977 992	left lower lung
+T31	Medical-Problem 1049 1073	Slight increased opacity
+T32	Medical-Anatomy 1081 1097	right lower lobe
+T33	Medical-Problem 1120 1129	infection
+E28	Medical-Problem:T33
+T34	Medical-Problem 1135 1162	New compression deformities
+T35	Medical-Anatomy 1170 1184	thoracic spine
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Lesion-Description:T4 has-Lesion-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Characteristic:T8 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T12
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E17	Lesion-Description:T21 has-Lesion-Size-Trend:T17 has-Lesion-Characteristic:T18 has-Lesion-Characteristic:T19 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T22
+E20	Medical-Problem:T24 has-Medical-Anatomy:T25
+E22	Lesion-Description:T27 has-Lesion-Assertion:T26
+E24	Lesion-Description:T29 has-Lesion-Size-Present:T28 has-Lesion-Anatomy:T30
+E26	Medical-Problem:T31 has-Medical-Anatomy:T32
+E29	Medical-Problem:T34 has-Medical-Anatomy:T35

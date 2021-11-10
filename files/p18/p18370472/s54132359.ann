@@ -1,0 +1,21 @@
+T1	Medical-Problem 119 128	pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Assertion 184 186	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 187 200	consolidation
+T4	Medical-Problem 212 221	pneumonia
+T5	Lesion-Assertion 286 289	may
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Size 293 298	small
+T7	Lesion-Anatomy 299 303	lung
+T8	Lesion-Description 304 311	nodules
+T9	Lesion-Anatomy 334 398	left first and second interspaces and right third rib anteriorly
+T10	Medical-Assertion 566 568	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 569 585	pleural effusion
+T12	Medical-Problem 589 601	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E6	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10

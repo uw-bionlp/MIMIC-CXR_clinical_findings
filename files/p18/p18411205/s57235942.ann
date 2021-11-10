@@ -1,0 +1,32 @@
+T1	Medical-Problem 213 242	aorta remains mildly tortuous
+E1	Medical-Problem:T1
+T2	Medical-Assertion 277 279	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 280 309	pulmonary vascular congestion
+T4	Medical-Problem 321 336	Rounded opacity
+T5	Medical-Anatomy 349 364	right lung base
+T6	Medical-Assertion 445 447	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 448 464	pleural effusion
+T8	Medical-Problem 468 480	pneumothorax
+T9	Medical-Assertion 502 504	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 505 532	acute osseous abnormalities
+T11	Lesion-Size 552 557	19 mm
+T12	Lesion-Characteristic 558 565	rounded
+T13	Lesion-Description 566 573	opacity
+T14	Lesion-Anatomy 585 600	right lung base
+T15	Lesion-Assertion 601 614	could reflect
+A4	Lesion-AssertionValue T15 possible
+T16	Lesion-Description 617 625	neoplasm
+T17	Medical-Problem 635 644	infection
+T18	Medical-Assertion 648 660	not excluded
+A5	Medical-AssertionValue T18 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14
+E12	Lesion-Description:T16 has-Lesion-Anatomy:T14 has-Lesion-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T18

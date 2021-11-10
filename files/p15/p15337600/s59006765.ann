@@ -1,0 +1,17 @@
+T1	Medical-Problem 328 343	pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 365 376;378 391	large scale consolidation
+T3	Medical-Anatomy 395 411	both lower lobes
+T4	Medical-Assertion 441 447	likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 449 458	pneumonia
+T6	Medical-Assertion 470 472	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 473 478	edema
+T8	Medical-Assertion 494 496	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 497 516	pleural abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

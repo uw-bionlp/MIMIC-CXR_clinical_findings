@@ -1,0 +1,49 @@
+T1	Medical-Problem 60 66	Atrial
+E1	Medical-Problem:T1
+T2	Medical-Problem 263 311;313 320	widespread interstitial abnormality, potentially chronic
+E2	Medical-Problem:T2
+T3	Medical-Assertion 373 375	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 376 381;383 396	focal consolidation
+T5	Medical-Assertion 408 419	no evidence
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 423 438	pulmonary edema
+T7	Medical-Problem 441 460;462 487	Patchy mid-to-upper lung atelectasis/scarring
+T8	Medical-Anatomy 497 508	bilaterally
+T9	Medical-Problem 515 539	heart is mildly enlarged
+E7	Medical-Problem:T9
+T10	Lesion-Characteristic 598 607	calcified
+T11	Lesion-Description 608 618	lymph node
+T12	Lesion-Anatomy 627 648	aortopulmonary window
+T13	Medical-Assertion 661 663	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 664 681	pleural effusions
+T15	Medical-Assertion 684 686	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 688 700	pneumothorax
+T17	Medical-Problem 732 776	Widespread but mild interstitial abnormality
+E13	Medical-Problem:T17
+T18	Medical-Assertion 801 809	possibly
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 810 867	mild vascular congestion, although potential more chronic
+T20	Medical-Problem 885 901	patchy opacities
+E15	Medical-Problem:T20
+T21	Medical-Assertion 902 912	suggesting
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 913 921	scarring
+T23	Medical-Problem 925 936	atelectasis
+T24	Medical-Problem 945 962	Mild cardiomegaly
+E18	Medical-Problem:T24
+T25	Lesion-Characteristic 971 980	Calcified
+T26	Lesion-Anatomy 981 992	mediastinal
+T27	Lesion-Description 993 1004	lymph nodes
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T23 has-Medical-Assertion:T18 has-Medical-Assertion:T21
+E21	Lesion-Description:T27 has-Lesion-Characteristic:T25 has-Lesion-Anatomy:T26

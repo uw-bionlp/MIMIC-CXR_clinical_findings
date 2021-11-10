@@ -1,0 +1,27 @@
+T1	Medical-Problem 217 234	abnormal contours
+T2	Medical-Anatomy 242 251	AP window
+T3	Medical-Problem 257 278	increased soft tissue
+T4	Medical-Anatomy 296 308	azygous vein
+T5	Lesion-Anatomy 326 337	mediastinal
+T6	Lesion-Description 338 353	lymphadenopathy
+T7	Medical-Assertion 408 410	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 411 423	pneumothorax
+T9	Medical-Problem 425 444	focal consolidation
+T10	Medical-Problem 449 465	pleural effusion
+T11	Medical-Problem 469 490	Bibasilar atelectasis
+E10	Medical-Problem:T11
+T12	Medical-Problem 514 547;549 559	mottled appearance of the osseous structures
+E11	Medical-Problem:T12
+T13	Medical-Assertion 628 630	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 631 636	acute
+E12	Medical-Problem:T14
+T15	Medical-Problem 637 658	intrathoracic process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E13	Medical-Problem:T15 has-Medical-Assertion:T13

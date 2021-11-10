@@ -1,0 +1,34 @@
+T1	Medical-Problem 419 427;429 440	interval decrease in
+E1	Medical-Problem:T1
+T2	Medical-Problem 441 469	right-sided pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 536 559	new focal consolidation
+E3	Medical-Problem:T3
+T4	Lesion-Description 589 595	nodule
+T5	Lesion-Anatomy 603 617	right mid lung
+T6	Lesion-Size 638 642	3 cm
+T7	Lesion-Size-Trend 646 658	unchanged to
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Problem 721 726;728 741	dense calcification
+T9	Medical-Problem 746 756	tortuosity
+T10	Medical-Anatomy 764 778	thoracic aorta
+T11	Medical-Problem 791 797;799 829	severe bilateral degenerative changes
+T12	Medical-Anatomy 837 854	acromioclavicular
+T13	Medical-Anatomy 859 871;873 879	glenohumeral joints
+T14	Lesion-Description 956 962	nodule
+E13	Lesion-Description:T14
+T15	Medical-Assertion 1012 1027	could represent
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 1028 1037;1039 1058	loculated fluid (pseudotumor)
+T17	Lesion-Characteristic 1062 1067	solid
+T18	Lesion-Description 1068 1074	lesion
+T19	Lesion-Description 1089 1095	lesion
+T20	Lesion-Size-Trend 1100 1117	increased in size
+A3	Lesion-Size-TrendValue T20 increasing
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T6 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Lesion-Description:T18 has-Lesion-Characteristic:T17
+E17	Lesion-Description:T19 has-Lesion-Size-Trend:T20

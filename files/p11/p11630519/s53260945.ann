@@ -1,0 +1,34 @@
+T1	Medical-Assertion 123 131	Possible
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 132 147	volume overload
+T3	Medical-Assertion 215 217	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 249 281;283 308	pathophysiologically significant interstitial lung disease
+T5	Medical-Problem 311 334	Mild interstitial edema
+T6	Medical-Anatomy 379 394	left lower lobe
+T7	Medical-Problem 399 418	become consolidated
+T8	Medical-Problem 445 454	pneumonia
+E6	Medical-Problem:T8
+T9	Medical-Problem 458 469	atelectasis
+E7	Medical-Problem:T9
+T10	Medical-Problem 490 504	leftward shift
+T11	Medical-Anatomy 513 530	lower mediastinum
+T12	Medical-Problem 542 553	volume loss
+T13	Medical-Problem 589 616	small left pleural effusion
+E11	Medical-Problem:T13
+T14	Medical-Problem 637 658;660 668	persistent lower lobe collapse
+E12	Medical-Problem:T14
+T15	Medical-Problem 671 700	Pleural effusion on the right
+E13	Medical-Problem:T15
+T16	Medical-Assertion 721 723	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 724 736	pneumothorax
+T18	Medical-Problem 740 771	Moderate-to-severe cardiomegaly
+E15	Medical-Problem:T18
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T11
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

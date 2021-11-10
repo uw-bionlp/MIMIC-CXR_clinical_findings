@@ -1,0 +1,34 @@
+T1	Medical-Problem 345 354	appearing
+E1	Medical-Problem:T1
+T2	Medical-Problem 355 382	mild to moderately enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 447 462	pulmonary edema
+E3	Medical-Problem:T3
+T4	Medical-Problem 476 482	Patchy
+E4	Medical-Problem:T4
+T5	Medical-Problem 483 492	opacities
+T6	Medical-Anatomy 501 511	lung bases
+T7	Medical-Assertion 512 526	likely reflect
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 527 547	areas of atelectasis
+T9	Medical-Assertion 550 552	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 553 575	large pleural effusion
+T11	Medical-Problem 580 592	pneumothorax
+T12	Medical-Problem 818 824	Patchy
+E10	Medical-Problem:T12
+T13	Medical-Problem 825 834	opacities
+E11	Medical-Problem:T13
+T14	Medical-Anatomy 838 848	lung bases
+T15	Medical-Assertion 849 855;857 864	likely reflect
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 865 876	atelectasis
+T17	Medical-Problem 885 894	infection
+T18	Medical-Assertion 895 913	cannot be excluded
+A4	Medical-AssertionValue T18 possible
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T18

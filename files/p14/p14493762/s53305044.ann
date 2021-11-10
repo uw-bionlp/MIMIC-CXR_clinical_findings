@@ -1,0 +1,35 @@
+T1	Medical-Problem 263 283	mild pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 307 315;317 344	areas of heterogeneous opacification
+T3	Medical-Anatomy 352 362	right lung
+T4	Lesion-Assertion 367 375	possible
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Size 376 381	small
+T6	Lesion-Description 382 389	nodules
+T7	Medical-Problem 408 424	active pathology
+E6	Medical-Problem:T7
+T8	Medical-Problem 432 448	residual of what
+E7	Medical-Problem:T8
+T9	Medical-Assertion 636 646	suggestive
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 650 659	pneumonia
+T11	Medical-Problem 661 668	abscess
+T12	Medical-Problem 673 686	septic emboli
+T13	Medical-Problem 716 732	Mild enlargement
+T14	Medical-Anatomy 740 750	left hilus
+T15	Medical-Assertion 751 766	could be due to
+A3	Medical-AssertionValue T15 possible
+T16	Lesion-Description 768 778	adenopathy
+E13	Lesion-Description:T16
+T17	Medical-Problem 921 938;940 943	Pleural effusions are
+E14	Medical-Problem:T17
+T18	Medical-Assertion 968 970	no
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 971 983	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Size-Present:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

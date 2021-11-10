@@ -1,0 +1,29 @@
+T1	Medical-Problem 221 236	Minimal opacity
+T2	Medical-Anatomy 244 282	level of the right cardiophrenic angle
+T3	Medical-Assertion 285 307	potentially reflecting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 310 329	pericardial fat pad
+T5	Lesion-Characteristic 335 346	pericardial
+T6	Lesion-Description 347 351	cyst
+T7	Medical-Assertion 354 356	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 357 360;362 383	new parenchymal opacities
+T9	Medical-Anatomy 405 420	lung parenchyma
+T10	Medical-Problem 423 438;440 465	Borderline size of the cardiac silhouette
+E8	Medical-Problem:T10
+T11	Medical-Assertion 466 482	without evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 486 501	pulmonary edema
+T13	Medical-Assertion 504 506	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 507 514;516 525	pleural effusions
+T15	Medical-Assertion 528 530	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 531 543	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

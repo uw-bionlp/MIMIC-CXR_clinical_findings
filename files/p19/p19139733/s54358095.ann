@@ -1,0 +1,31 @@
+T1	Medical-Problem 363 392	Stable postoperative contours
+T2	Medical-Anatomy 400 433	right paramedian and hilar region
+T3	Medical-Problem 570 592	right pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 629 652	residual patchy opacity
+T5	Medical-Anatomy 660 672;674 683	right medial lung base
+T6	Medical-Assertion 690 703	may represent
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 707 747;749 760	area of partial middle and/or lower lobe atelectasis
+T8	Medical-Problem 769 783	patchy opacity
+T9	Medical-Anatomy 791 800	left base
+T10	Medical-Problem 861 893	worsening lower lobe atelectasis
+T11	Medical-Problem 905 914	pneumonia
+T12	Medical-Problem 918 928	aspiration
+T13	Medical-Assertion 929 954	should also be considered
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Assertion 1008 1010	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 1011 1023	pneumothorax
+T16	Medical-Assertion 1026 1028	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1029 1044	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T13
+E11	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

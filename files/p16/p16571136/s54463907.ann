@@ -1,0 +1,23 @@
+T1	Lesion-Anatomy 309 320	Right hilar
+T2	Lesion-Description 321 325	mass
+T3	Lesion-Characteristic 331 343	pleural tags
+T4	Lesion-Anatomy 350 360	chest wall
+T5	Lesion-Description 361 365	mass
+T6	Lesion-Characteristic 380 395	osseous/pleural
+T7	Lesion-Size-Trend 411 434	unchanged in appearance
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Problem 453 483	interlobular septal thickening
+T9	Medical-Anatomy 491 506	left upper lobe
+T10	Lesion-Description 521 533	lymphangitic
+E9	Lesion-Description:T10
+T11	Lesion-Description 534 548	carcinomatosis
+E10	Lesion-Description:T11
+T12	Medical-Assertion 559 561	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 562 574	pneumothorax
+T14	Medical-Problem 578 594	pleural effusion
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Characteristic:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T6 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12

@@ -1,0 +1,30 @@
+T1	Medical-Assertion 343 345	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 346 362	pleural effusion
+T3	Medical-Problem 366 378	pneumothorax
+T4	Medical-Problem 381 396	Rounded opacity
+T5	Medical-Anatomy 417 452;454 471	costovertebral junction of the left posterior 3rd rib
+T6	Medical-Assertion 472 485	may represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 486 509	summation of structures
+T8	Lesion-Anatomy 521 525	lung
+T9	Lesion-Characteristic 530 534	bony
+T10	Lesion-Description 535 541	lesion
+T11	Medical-Problem 675 690	Rounded opacity
+T12	Medical-Anatomy 711 737;739 765	costovertebral junction of the left posterior 3rd rib
+T13	Medical-Assertion 766 779	may represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 780 802	overlapping structures
+T15	Lesion-Anatomy 815 824	pulmonary
+T16	Lesion-Characteristic 828 832	bony
+T17	Lesion-Description 833 839	lesion
+T18	Lesion-Assertion 840 858	cannot be excluded
+A4	Lesion-AssertionValue T18 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T15 has-Lesion-Characteristic:T16 has-Lesion-Assertion:T18

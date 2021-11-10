@@ -1,0 +1,22 @@
+T1	Medical-Problem 284 309	Moderate pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 374 385;387 395	small right effusion
+E2	Medical-Problem:T2
+T3	Medical-Assertion 407 409	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 410 422	pneumothorax
+T5	Lesion-Characteristic 452 459	Diffuse
+T6	Lesion-Characteristic 461 470	sclerotic
+T7	Lesion-Characteristic 471 478	osseous
+T8	Lesion-Description 479 489	metastases
+T9	Lesion-Anatomy 514 529	proximal humeri
+T10	Lesion-Anatomy 532 541	clavicles
+T11	Lesion-Anatomy 546 559	right scapula
+T12	Medical-Problem 577 624	Moderate left and small right pleural effusions
+E11	Medical-Problem:T12
+T13	Medical-Problem 627 637;639 652	Underlying consolidation
+T14	Medical-Assertion 653 671	cannot be excluded
+A2	Medical-AssertionValue T14 possible
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T10 has-Lesion-Anatomy:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T14

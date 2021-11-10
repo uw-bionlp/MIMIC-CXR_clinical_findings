@@ -1,0 +1,26 @@
+T1	Medical-Problem 362 382	Mild pulmonary edema
+T2	Medical-Assertion 403 418	nearly resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 421 429;431 442	Residual abnormality
+T4	Medical-Anatomy 450 460	right lung
+T5	Medical-Assertion 461 476	could be due to
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 477 494	recent aspiration
+T7	Medical-Problem 506 521	small pneumonia
+T8	Medical-Problem 524 552	Small right pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Anatomy 565 572	Stomach
+T10	Medical-Problem 576 584;586 614	severely distended with air and fluid
+T11	Medical-Problem 642 654	cardiomegaly
+T12	Medical-Problem 666 698	Mediastinal vascular engorgement
+E10	Medical-Problem:T12
+T13	Medical-Assertion 699 707	suggests
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 708 743;745 763	persistent elevation central venous pressure or volume
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

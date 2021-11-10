@@ -1,0 +1,20 @@
+T1	Medical-Problem 233 250	New consolidation
+T2	Medical-Anatomy 258 285	right upper lobe anteriorly
+T3	Medical-Anatomy 294 309;311 321	infrahilar left lower lobe
+T4	Medical-Problem 338 348	pneumonia,
+E4	Medical-Problem:T4
+T5	Medical-Assertion 349 357	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 358 367	bacterial
+T7	Medical-Problem 371 379	atypical
+T8	Medical-Assertion 392 394	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 395 411	pleural effusion
+T10	Lesion-Characteristic 415 423	evidence
+T11	Lesion-Characteristic 427 434	central
+T12	Lesion-Description 435 445	adenopathy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11

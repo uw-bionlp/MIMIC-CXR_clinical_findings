@@ -1,0 +1,27 @@
+T1	Medical-Problem 218 245	Heterogeneous opacification
+T2	Medical-Anatomy 253 282	left mid and lower lung zones
+T3	Medical-Assertion 283 291	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 323 334	atelectasis
+T5	Medical-Problem 339 349	hemorrhage
+T6	Medical-Assertion 351 370;372 379	could alternatively reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 380 390	aspiration
+T8	Medical-Assertion 475 477	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 478 490	pneumothorax
+T10	Medical-Problem 494 510	pleural effusion
+T11	Medical-Problem 533 562	Cardiomegaly mild to moderate
+E8	Medical-Problem:T11
+T12	Medical-Assertion 568 570	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 571 586	pulmonary edema
+T14	Medical-Problem 590 600;602 622	particular vascular engorgement
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12

@@ -1,0 +1,34 @@
+T1	Medical-Problem 233 256	Lungs are hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Assertion 258 260	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 262 281	focal consolidation
+T4	Medical-Problem 283 297	large effusion
+T5	Medical-Problem 301 313	pneumothorax
+T6	Lesion-Characteristic 384 389	vague
+T7	Medical-Anatomy 431 458	right seventh posterior rib
+T8	Medical-Assertion 460 481	possibly representing
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 483 504	confluence of shadows
+T10	Lesion-Assertion 512 532	difficult to exclude
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 535 539	true
+T12	Lesion-Anatomy 540 549	pulmonary
+T13	Lesion-Description 550 556	nodule
+T14	Medical-Assertion 590 592	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 593 601	free air
+T16	Medical-Anatomy 612 631	right hemidiaphragm
+T17	Medical-Problem 652 671	Hyperinflated lungs
+E13	Medical-Problem:T17
+T18	Lesion-Assertion 673 681	Possible
+A5	Lesion-AssertionValue T18 possible
+T19	Lesion-Description 682 688	nodule
+T20	Lesion-Anatomy 696 710	right mid lung
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T2
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Lesion-Description:T13 has-Lesion-Characteristic:T6 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T16
+E14	Lesion-Description:T19 has-Lesion-Assertion:T18 has-Lesion-Anatomy:T20

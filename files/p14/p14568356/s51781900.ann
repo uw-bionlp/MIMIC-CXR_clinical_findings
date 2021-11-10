@@ -1,0 +1,18 @@
+T1	Medical-Problem 128 160	small right lateral pneumothorax
+T2	Medical-Assertion 195 198;200 215	not apparent on the
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 276 289	Consolidation
+T4	Medical-Anatomy 316 349	right middle and right lower lobe
+T5	Medical-Assertion 397 413	likely represent
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 414 423	contusion
+T7	Medical-Problem 467 477	aspiration
+T8	Medical-Anatomy 512 517	Lungs
+T9	Medical-Assertion 553 555	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 556 585	substantial pleural effusions
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

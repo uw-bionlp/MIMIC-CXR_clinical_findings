@@ -1,0 +1,31 @@
+T1	Medical-Problem 223 242	chronic atelectasis
+T2	Medical-Anatomy 251 261	lung bases
+T3	Medical-Problem 300 313;315 322	rounded dense opacity
+T4	Medical-Anatomy 330 345	right lung base
+T5	Medical-Problem 366 393	area of rounded atelectasis
+T6	Medical-Problem 412 440	right-sided pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Assertion 534 536	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 537 545;547 573	definite superimposed consolidation
+T9	Medical-Assertion 704 706	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 707 719	pneumothorax
+T11	Medical-Problem 726 764	heart size remains moderately enlarged
+E9	Medical-Problem:T11
+T12	Medical-Problem 786 822	Stable chronic bibasilar atelectasis
+T13	Medical-Problem 828 858	more focal rounded atelectasis
+T14	Medical-Anatomy 867 882	right lung base
+T15	Medical-Problem 889 936	Increasing right pleural effusion, now moderate
+E13	Medical-Problem:T15
+T16	Medical-Assertion 943 945	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 946 985	definite new superimposed consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T14
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

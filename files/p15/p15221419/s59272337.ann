@@ -1,0 +1,23 @@
+T1	Medical-Problem 235 261	diffuse airspace opacities
+T2	Medical-Anatomy 262 289	throughout both lung fields
+T3	Medical-Problem 302 324	mild improved aeration
+T4	Medical-Anatomy 332 342	right base
+T5	Medical-Problem 348 372;374 382	mild decrease in pleural effusion
+T6	Medical-Assertion 395 397	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 398 412	pneumothoraces
+T8	Medical-Assertion 507 509	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 510 518	widening
+T10	Medical-Anatomy 527 543	vascular pedicle
+T11	Medical-Problem 550 567	cardiogenic edema
+E9	Medical-Problem:T11
+T12	Medical-Assertion 571 593	felt less likely to be
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 614 632	airspace opacities
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

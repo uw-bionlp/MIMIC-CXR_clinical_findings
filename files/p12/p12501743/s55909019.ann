@@ -1,0 +1,33 @@
+T1	Medical-Assertion 380 382	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 383 395	pneumothorax
+T3	Lesion-Anatomy 439 448;450 460	Bilateral upper lobe
+T4	Lesion-Characteristic 494 522	irregularly shaped opacities
+T5	Lesion-Description 546 553	lesions
+T6	Medical-Assertion 556 558	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 559 572	new opacities
+T8	Medical-Problem 576 590	consolidations
+T9	Medical-Problem 609 630	Moderate cardiomegaly
+E7	Medical-Problem:T9
+T10	Medical-Problem 656 667;669 685	small right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 687 709	Generalized osteopenia
+E9	Medical-Problem:T11
+T12	Medical-Problem 714 739;741 764	multilevel thoracic spine compression deformities
+E10	Medical-Problem:T12
+T13	Medical-Assertion 836 838	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 839 851	pneumothorax
+T15	Medical-Problem 854 882	Small right pleural effusion
+E12	Medical-Problem:T15
+T16	Medical-Problem 885 913	Stable moderate cardiomegaly
+E13	Medical-Problem:T16
+T17	Lesion-Anatomy 916 936	Bilateral upper lobe
+T18	Lesion-Description 961 968	lesions
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T17

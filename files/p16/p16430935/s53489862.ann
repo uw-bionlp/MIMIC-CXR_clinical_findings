@@ -1,0 +1,36 @@
+T1	Medical-Problem 341 363	heart size is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 426 437	mediastinal
+T3	Medical-Problem 460 493	calcified atherosclerotic disease
+T4	Medical-Anatomy 501 506	aorta
+T5	Medical-Anatomy 513 518	lungs
+T6	Medical-Assertion 524 526	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 528 541	consolidation
+T8	Medical-Problem 552 571	vascular prominence
+T9	Medical-Problem 576 606	subtle diffuse hazy appearance
+T10	Medical-Anatomy 615 620	lungs
+T11	Medical-Assertion 621 629	suggests
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 630 660	some degree of pulmonary edema
+T13	Medical-Assertion 706 708	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 709 725	pleural effusion
+T15	Medical-Problem 729 741	pneumothorax
+T16	Medical-Problem 782 800	severe compression
+E13	Medical-Problem:T16
+T17	Medical-Problem 855 872	Mild cardiomegaly
+E14	Medical-Problem:T17
+T18	Medical-Problem 878 918	mild vascular congestion/pulmonary edema
+E15	Medical-Problem:T18
+T19	Medical-Assertion 980 991;993 1001	no definite evidence
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1005 1014	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

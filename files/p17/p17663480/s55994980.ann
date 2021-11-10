@@ -1,0 +1,23 @@
+T1	Medical-Assertion 272 274	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 275 294	vascular congestion
+T3	Medical-Problem 297 313	pleural effusion
+T4	Medical-Problem 318 339	acute focal pneumonia
+T5	Lesion-Assertion 355 366	no evidence
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Anatomy 370 375	hilar
+T7	Lesion-Anatomy 380 391	mediastinal
+T8	Lesion-Description 392 402	adenopathy
+T9	Medical-Assertion 418 428	suggestion
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 432 443;445 457	some medial displacement
+T11	Medical-Anatomy 465 486	fundus of the stomach
+T12	Medical-Assertion 492 519	could be a manifestation of
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 521 546	enlargement of the spleen
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E6	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11
+E9	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

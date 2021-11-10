@@ -1,0 +1,35 @@
+T1	Medical-Problem 327 355	Elevation left hemidiaphragm
+E1	Medical-Problem:T1
+T2	Medical-Problem 368 380;382 389	Retrocardiac opacity
+E2	Medical-Problem:T2
+T3	Medical-Assertion 409 422	could reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 423 434	atelectasis
+T5	Medical-Problem 436 445	pneumonia
+T6	Medical-Problem 449 459	aspiration
+T7	Medical-Assertion 462 464	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 465 487	large pleural effusion
+T9	Medical-Problem 491 503	pneumothorax
+T10	Medical-Problem 530 534;536 556	mild degenerative changes
+T11	Medical-Anatomy 564 578	thoracic spine
+T12	Medical-Problem 598 625	Elevated left hemidiaphragm
+E10	Medical-Problem:T12
+T13	Medical-Problem 631 660	adjacent retrocardiac opacity
+E11	Medical-Problem:T13
+T14	Medical-Assertion 661 667;669 679	likely reflecting
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 680 691	atelectasis
+T16	Medical-Problem 699 708	infection
+T17	Medical-Problem 712 722	aspiration
+T18	Medical-Assertion 723 741	cannot be excluded
+A4	Medical-AssertionValue T18 possible
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14 has-Medical-Assertion:T18
+E14	Medical-Problem:T17 has-Medical-Assertion:T14 has-Medical-Assertion:T18

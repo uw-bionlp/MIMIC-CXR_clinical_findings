@@ -1,0 +1,30 @@
+T1	Medical-Problem 334 354	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 359 392	pulmonary vasculature is engorged
+E2	Medical-Problem:T2
+T3	Medical-Problem 395 405;407 420	More focal abnormalities
+T4	Medical-Anatomy 428 438	right lung
+T5	Medical-Assertion 439 447	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 448 457	contusion
+T7	Medical-Problem 461 472	atelectasis
+T8	Medical-Assertion 485 487	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 488 502	lobar collapse
+T10	Medical-Problem 506 534	appreciable pleural effusion
+T11	Medical-Assertion 539 550	no evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 555 567	pneumothorax
+T13	Medical-Assertion 888 890	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 891 905	acute fracture
+T15	Lesion-Anatomy 915 925	chest wall
+T16	Lesion-Description 926 932	lesion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Lesion-Description:T16 has-Lesion-Anatomy:T15

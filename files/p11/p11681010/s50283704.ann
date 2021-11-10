@@ -1,0 +1,24 @@
+T1	Medical-Problem 345 360	volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 391 403;405 412	mild streaky opacity
+T3	Medical-Anatomy 420 435	left lower lung
+T4	Medical-Assertion 442 457	could represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 458 469	atelectasis
+T6	Medical-Problem 478 487	pneumonia
+T7	Medical-Assertion 616 618	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 619 629;631 644	acute bony abnormalities
+T9	Medical-Problem 673 680	opacity
+E7	Medical-Problem:T9
+T10	Medical-Anatomy 688 703	left lower lung
+T11	Medical-Assertion 704 719	could represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 720 731	atelectasis
+T13	Medical-Problem 740 749	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

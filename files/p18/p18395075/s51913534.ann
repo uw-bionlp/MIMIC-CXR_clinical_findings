@@ -1,0 +1,38 @@
+T1	Medical-Problem 249 262	Opacification
+T2	Medical-Anatomy 270 288	right hilar region
+T3	Medical-Anatomy 293 309	right upper lobe
+T4	Medical-Problem 391 401;403 426	associated postobstructive changes
+E4	Medical-Problem:T4
+T5	Medical-Problem 477 508	moderate right pleural effusion
+E5	Medical-Problem:T5
+T6	Medical-Problem 572 600	right-sided pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Problem 603 631;633 640	Abnormal widened mediastinal contour
+E7	Medical-Problem:T7
+T8	Lesion-Characteristic 674 684	underlying
+T9	Lesion-Description 685 700	lymphadenopathy
+T10	Medical-Anatomy 703 707;709 713	Left lung
+T11	Medical-Assertion 723 730	without
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 731 747	pleural effusion
+T13	Medical-Assertion 750 752	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 753 765	pneumothorax
+T15	Medical-Anatomy 783 804	Pulmonary vasculature
+T16	Medical-Assertion 808 811	not
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 812 820	engorged
+T18	Medical-Problem 865 901	moderate size right pleural effusion
+E15	Medical-Problem:T18
+T19	Medical-Anatomy 904 915;917 921	Right upper lobe
+T20	Medical-Problem 985 1008	postobstructive changes
+T21	Medical-Problem 1011 1022	Mediastinal
+E18	Medical-Problem:T21
+T22	Lesion-Description 1023 1038	lymphadenopathy
+E19	Lesion-Description:T22
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E9	Lesion-Description:T9 has-Lesion-Characteristic:T8
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E17	Medical-Problem:T20 has-Medical-Anatomy:T19

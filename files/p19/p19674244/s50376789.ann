@@ -1,0 +1,19 @@
+T1	Medical-Problem 330 356	unilateral pulmonary edema
+T2	Medical-Problem 361 372	atelectasis
+T3	Medical-Anatomy 380 395	left upper lobe
+T4	Medical-Assertion 401 416	largely cleared
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Anatomy 419 429	Lower lobe
+E4	Medical-Anatomy:T5
+T6	Medical-Problem 450 476;478 501	Moderate pleural effusions right greater than left
+E5	Medical-Problem:T6
+T7	Medical-Problem 514 554	Full extent right lower lobe atelectasis
+E6	Medical-Problem:T7
+T8	Medical-Problem 615 623;625 637	Moderate cardiomegaly
+E7	Medical-Problem:T8
+T9	Medical-Assertion 988 990	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 992 1004	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

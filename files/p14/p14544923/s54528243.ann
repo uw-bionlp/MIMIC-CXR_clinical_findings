@@ -1,0 +1,50 @@
+T1	Medical-Problem 251 276	Three ring-like densities
+T2	Medical-Anatomy 284 296	cardiac base
+T3	Medical-Problem 362 392	increase in reticular markings
+T4	Medical-Anatomy 401 425	right mid and lower lung
+T5	Medical-Anatomy 493 505	right middle
+T6	Medical-Problem 517 537	displaced inferiorly
+T7	Medical-Problem 552 563	volume loss
+T8	Medical-Problem 566 588	Increased radiolucency
+T9	Medical-Anatomy 596 606	right apex
+T10	Medical-Assertion 607 615	suggests
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 616 624	possible
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 626 635	emphysema
+T13	Lesion-Count 640 648	multiple
+T14	Lesion-Characteristic 649 658	calcified
+T15	Lesion-Description 659 669	granulomas
+T16	Lesion-Anatomy 677 703	left upper and lower lobes
+T17	Lesion-Characteristic 705 742	suggest prior granulomatous infection
+T18	Medical-Problem 813 841	small right pleural effusion
+E16	Medical-Problem:T18
+T19	Medical-Problem 892 924	healed right clavicular fracture
+E17	Medical-Problem:T19
+T20	Medical-Problem 962 991	reticulated appearance of the
+T21	Medical-Anatomy 992 1004	interstitium
+T22	Medical-Assertion 1005 1013	suggests
+A3	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1014 1032	interstitial edema
+T24	Medical-Problem 1037 1109;1111 1120	chronic interstitial lung disease superimposed on a component of chronic emphysema
+T25	Lesion-Characteristic 1232 1241	Calcified
+T26	Lesion-Description 1242 1252	granulomas
+T27	Medical-Assertion 1253 1260	suggest
+A4	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1261 1290	prior granulomatous infection
+T29	Medical-Problem 1328 1346	acute tuberculosis
+T30	Medical-Assertion 1350 1366	not demonstrated
+A5	Medical-AssertionValue T30 absent
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T5
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T10 has-Medical-Assertion:T11
+E13	Lesion-Description:T15 has-Lesion-Count:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T16 has-Lesion-Characteristic:T17
+E18	Medical-Problem:T20 has-Medical-Anatomy:T21
+E20	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E21	Medical-Problem:T24 has-Medical-Assertion:T22
+E23	Lesion-Description:T26 has-Lesion-Characteristic:T25
+E24	Medical-Problem:T28 has-Medical-Assertion:T27
+E25	Medical-Problem:T29 has-Medical-Assertion:T30

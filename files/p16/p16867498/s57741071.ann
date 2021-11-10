@@ -1,0 +1,21 @@
+T1	Medical-Problem 276 289	Consolidation
+T2	Medical-Anatomy 297 312	left lower lobe
+T3	Medical-Problem 360 386	leftward mediastinal shift
+E3	Medical-Problem:T3
+T4	Medical-Problem 402 413	atelectasis
+T5	Medical-Assertion 414 420	rather
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 427 436	pneumonia
+T7	Medical-Assertion 449 460	not cleared
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 463 494;496 504	Small accompanying left pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Assertion 545 547	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 548 560	pneumothorax
+T11	Medical-Problem 564 569;571 587	right pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T7
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

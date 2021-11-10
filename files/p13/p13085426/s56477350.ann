@@ -1,0 +1,27 @@
+T1	Medical-Problem 276 283;285 304	Minimal atelectatic changes
+T2	Medical-Anatomy 322 359	lower lungs, particularly on the left
+T3	Medical-Assertion 363 365	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 366 386	focal opacifications
+T5	Lesion-Characteristic 390 400	concerning
+T6	Lesion-Anatomy 401 410	pulmonary
+T7	Lesion-Description 411 417	nodule
+T8	Medical-Problem 431 435;437 455	Mild S-shaped scoliosis
+T9	Medical-Anatomy 459 478	thoracolumbar spine
+T10	Medical-Problem 484 514	associated degenerative change
+T11	Lesion-Assertion 517 519	No
+A2	Lesion-AssertionValue T11 absent
+T12	Lesion-Characteristic 520 530	suspicious
+T13	Lesion-Characteristic 531 536	lytic
+T14	Lesion-Characteristic 540 547	blastic
+T15	Lesion-Description 548 555	lesions
+T16	Medical-Assertion 588 590	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 591 618	acute intrathoracic process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E13	Lesion-Description:T15 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

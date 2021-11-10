@@ -1,0 +1,47 @@
+T1	Medical-Problem 30 39	Opacities
+T2	Medical-Anatomy 60 70	right lung
+T3	Medical-Problem 128 150	new regions of opacity
+T4	Medical-Anatomy 171 187	right upper lobe
+T5	Medical-Assertion 200 214	suspicious for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 215 237	superimposed infection
+T7	Lesion-Anatomy 624 629	hilar
+E6	Lesion-Anatomy:T7
+T8	Medical-Assertion 676 678	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 679 695	pleural effusion
+T10	Medical-Problem 699 711	pneumothorax
+T11	Medical-Problem 757 790	irregular increased density along
+T12	Medical-Anatomy 795 820	right lateral lower chest
+T13	Medical-Problem 839 864	calcified pleural plaques
+E11	Medical-Problem:T13
+T14	Medical-Problem 891 894	Two
+E12	Medical-Problem:T14
+T15	Lesion-Size-Trend 895 898	new
+A3	Lesion-Size-TrendValue T15 new
+T16	Lesion-Anatomy 913 929	right upper lung
+E13	Lesion-Anatomy:T16
+T17	Medical-Problem 974 981	opacity
+E14	Medical-Problem:T17
+T18	Medical-Anatomy 1003 1019	right upper lobe
+T19	Medical-Problem 1046 1057;1059 1066	parenchymal opacity
+T20	Medical-Assertion 1110 1112	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1113 1126	acute osseous
+T22	Medical-Problem 1162 1171	Opacities
+E18	Medical-Problem:T22
+T23	Medical-Problem 1259 1292	new regions of opacity projecting
+T24	Medical-Anatomy 1302 1318	right upper lobe
+T25	Medical-Assertion 1330 1344	suspicious for
+A5	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1345 1367	superimposed infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E16	Medical-Problem:T19 has-Medical-Anatomy:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T23 has-Medical-Anatomy:T24
+E21	Medical-Problem:T26 has-Medical-Anatomy:T24 has-Medical-Assertion:T25

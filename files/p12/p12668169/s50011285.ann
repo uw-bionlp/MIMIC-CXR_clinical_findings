@@ -1,0 +1,21 @@
+T1	Medical-Problem 80 108	Right-sided pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 221 243	right pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 294 302	effusion
+T4	Medical-Anatomy 337 353	right hemithorax
+T5	Medical-Problem 391 435;437 444	newly appeared relatively severe parenchymal opacity
+T6	Medical-Anatomy 467 476	left apex
+T7	Medical-Anatomy 481 506	left perihilar lung zones
+T8	Medical-Problem 514 553	opacity shows multiple air bronchograms
+E8	Medical-Problem:T8
+T9	Medical-Assertion 558 576	might be caused by
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 615 624	pneumonia
+T11	Medical-Assertion 636 638	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 639 660	left pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,18 @@
+T1	Medical-Assertion 208 219	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 223 235	pneumothorax
+T3	Medical-Problem 345 382	enlargement of the cardiac silhouette
+E2	Medical-Problem:T3
+T4	Medical-Problem 387 405;407 417	pulmonary vascular congestion
+E3	Medical-Problem:T4
+T5	Medical-Problem 420 437	Focal atelectasis
+T6	Medical-Anatomy 445 478	periphery of the right upper lobe
+T7	Medical-Problem 534 553	Atelectatic changes
+T8	Medical-Anatomy 570 575	bases
+T9	Medical-Assertion 581 589	probable
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 590 625	small pleural effusions bilaterally
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

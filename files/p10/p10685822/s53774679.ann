@@ -1,0 +1,53 @@
+T1	Lesion-Anatomy 390 394	lung
+T2	Lesion-Description 396 403	nodules
+T3	Lesion-Characteristic 408 415	blastic
+T4	Lesion-Characteristic 416 420	bone
+T5	Lesion-Description 421 428	lesions
+T6	Medical-Problem 462 503	severe interstitial pulmonary abnormality
+E6	Medical-Problem:T6
+T7	Medical-Problem 519 537;539 556	moderate bilateral pleural effusions
+E7	Medical-Problem:T7
+T8	Medical-Assertion 564 595	might have been due entirely to
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 596 611	pulmonary edema
+T10	Medical-Problem 618 631	heart failure
+T11	Medical-Problem 637 649	disseminated
+T12	Lesion-Description 650 659	carcinoma
+E11	Lesion-Description:T12
+T13	Medical-Assertion 660 687	could mimic this appearance
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 695 712	pulmonary process
+E12	Medical-Problem:T14
+T15	Medical-Problem 747 763;765 774	moderate pleural effusions
+E13	Medical-Problem:T15
+T16	Medical-Assertion 843 845	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 846 878	mediastinal vascular engorgement
+T18	Medical-Problem 903 921;923 929	small fluid-filled spaces
+T19	Medical-Anatomy 937 941	lung
+T20	Medical-Assertion 948 956	could be
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 957 981	bullae filled with fluid
+T22	Lesion-Characteristic 985 994	cavitated
+T23	Lesion-Description 996 1003	nodules
+T24	Lesion-Description 1039 1057	Blastic metastasis
+T25	Lesion-Characteristic 1061 1071	widespread
+T26	Lesion-Anatomy 1079 1089	chest cage
+T27	Medical-Problem 1153 1169	pleural effusion
+E23	Medical-Problem:T27
+T28	Medical-Problem 1211 1218	exudate
+E24	Medical-Problem:T28
+T29	Medical-Problem 1308 1324	lung abnormality
+E25	Medical-Problem:T29
+T30	Medical-Problem 1349 1357	cavities
+E26	Medical-Problem:T30
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T1 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E19	Lesion-Description:T23 has-Lesion-Characteristic:T22
+E20	Lesion-Description:T24 has-Lesion-Characteristic:T25 has-Lesion-Anatomy:T26

@@ -1,0 +1,41 @@
+T1	Medical-Anatomy 177 182	heart
+T2	Medical-Problem 192 225	mild-to-moderately enlarged.There
+T3	Medical-Problem 229 232;234 257	new confluent opacification
+T4	Medical-Anatomy 265 308;310 343	left upper lobe, particularly near the apex with lesser involvement elsewhere
+T5	Medical-Problem 380 383;385 411	new right apical opacification
+E5	Medical-Problem:T5
+T6	Medical-Problem 422 440	lower lung opacity
+E6	Medical-Problem:T6
+T7	Medical-Problem 486 503	are hyperinflated
+E7	Medical-Problem:T7
+T8	Medical-Assertion 515 517	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 518 534	pleural effusion
+T10	Medical-Problem 539 551	pneumothorax
+T11	Medical-Problem 614 642	extensive lung opacification
+E10	Medical-Problem:T11
+T12	Medical-Problem 683 718	confluent left apical opacification
+E11	Medical-Problem:T12
+T13	Medical-Problem 764 779	pulmonary edema
+E12	Medical-Problem:T13
+T14	Medical-Problem 785 795	infectious
+T15	Medical-Problem 796 803	process
+T16	Medical-Assertion 804 812;814 824	could be considered
+A2	Medical-AssertionValue T16 possible
+T17	Medical-Problem 834 872	process is widespread but heterogenous
+E15	Medical-Problem:T17
+T18	Medical-Problem 881 891;893 916	strikingly peripheral distribution
+T19	Medical-Anatomy 924 939	left upper lobe
+T20	Medical-Problem 969 991	eosinophilic pneumonia
+T21	Medical-Problem 1085 1113	component of pulmonary edema
+T22	Medical-Assertion 1123 1131	possible
+A3	Medical-AssertionValue T22 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E13	Medical-Problem:T14 has-Medical-Assertion:T16
+E14	Medical-Problem:T15 has-Medical-Assertion:T16 has-Medical-Anatomy:T19
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T20 has-Medical-Anatomy:T19
+E19	Medical-Problem:T21 has-Medical-Assertion:T22

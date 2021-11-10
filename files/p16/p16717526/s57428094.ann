@@ -1,0 +1,34 @@
+T1	Lesion-Size 33 37	3 mm
+T2	Lesion-Description 38 45	opacity
+T3	Lesion-Anatomy 60 81	left anterior 8th rib
+T4	Lesion-Assertion 82 97	could represent
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Anatomy 102 111	pulmonary
+T6	Lesion-Description 112 118	nodule
+T7	Medical-Assertion 226 228	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 229 256	acute intrathoracic process
+T9	Lesion-Size 583 587	3 mm
+T10	Lesion-Description 588 595	opacity
+T11	Medical-Anatomy 606 610	left
+E9	Medical-Anatomy:T11
+T12	Medical-Problem 640 648	effusion
+E10	Medical-Problem:T12
+T13	Medical-Problem 653 665	pneumothorax
+E11	Medical-Problem:T13
+T14	Medical-Assertion 751 753	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 754 778	free air below the right
+T16	Lesion-Description 830 837	opacity
+T17	Lesion-Anatomy 852 873	left anterior 8th rib
+T18	Lesion-Assertion 874 889	could represent
+A4	Lesion-AssertionValue T18 possible
+T19	Lesion-Anatomy 893 902	pulmonary
+T20	Lesion-Description 903 909	nodule
+E2	Lesion-Description:T2 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T3 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Size-Present:T9
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T17
+E16	Lesion-Description:T20 has-Lesion-Anatomy:T17 has-Lesion-Assertion:T18 has-Lesion-Anatomy:T19

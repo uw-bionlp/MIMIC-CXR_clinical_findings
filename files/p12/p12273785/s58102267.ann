@@ -1,0 +1,43 @@
+T1	Medical-Anatomy 314 329	left upper lobe
+T2	Medical-Problem 333 342	collapsed
+T3	Medical-Problem 349 363	hyperexpansion
+T4	Medical-Anatomy 371 387;389 411	superior segment of the left lower lobe
+T5	Lesion-Count 413 421	Numerous
+T6	Lesion-Anatomy 422 431	pulmonary
+T7	Lesion-Description 432 442	metastases
+T8	Lesion-Size-Trend 448 465	increased in size
+A1	Lesion-Size-TrendValue T8 increasing
+T9	Lesion-Description 508 518	metastases
+T10	Lesion-Anatomy 526 541	left lower lobe
+T11	Lesion-Size-Trend 550 562	unchanged or
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Medical-Assertion 667 669	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 670 689	focal consolidation
+T14	Medical-Problem 692 708	pleural effusion
+T15	Medical-Problem 710 722	pneumothorax
+T16	Medical-Problem 727 742	pulmonary edema
+T17	Medical-Problem 811 828	staghorn calculus
+T18	Medical-Anatomy 848 860	right kidney
+T19	Medical-Problem 895 914	upper lobe collapse
+E16	Medical-Problem:T19
+T20	Lesion-Assertion 916 929	likely due to
+A4	Lesion-AssertionValue T20 possible
+T21	Lesion-Characteristic 930 941	obstructing
+T22	Lesion-Anatomy 942 952	left hilar
+T23	Lesion-Description 953 959	lesion
+T24	Lesion-Anatomy 964 975	juxta hilar
+T25	Lesion-Description 976 986	metastasis
+T26	Medical-Problem 1115 1139	calcified renal calculus
+E22	Medical-Problem:T26
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T12
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E19	Lesion-Description:T23 has-Lesion-Assertion:T20 has-Lesion-Characteristic:T21 has-Lesion-Anatomy:T22
+E21	Lesion-Description:T25 has-Lesion-Assertion:T20 has-Lesion-Anatomy:T24

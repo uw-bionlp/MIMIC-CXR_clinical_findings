@@ -1,0 +1,20 @@
+T1	Medical-Problem 208 225	pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 230 240;242 253	associated atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 292 316;318 327	severe leftward thoracic scoliosis
+E3	Medical-Problem:T3
+T4	Medical-Problem 332 345	hiatal hernia
+E4	Medical-Problem:T4
+T5	Medical-Assertion 366 368	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 369 385	pleural effusion
+T7	Medical-Problem 390 402	pneumothorax
+T8	Lesion-Assertion 422 433	No evidence
+A2	Lesion-AssertionValue T8 absent
+T9	Lesion-Characteristic 434 444	suspicious
+T10	Lesion-Anatomy 449 462	intrathoracic
+T11	Lesion-Description 463 481	metastatic disease
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Lesion-Description:T11 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10

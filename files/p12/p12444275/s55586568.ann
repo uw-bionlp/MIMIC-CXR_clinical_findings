@@ -1,0 +1,58 @@
+T1	Medical-Problem 262 282	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 285 314	Heart size is mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 356 386	atherosclerotic calcifications
+T4	Medical-Anatomy 400 411	aortic knob
+T5	Medical-Problem 415 457	Crowding of the bronchovascular structures
+E5	Medical-Problem:T5
+T6	Medical-Problem 474 488;490 509	mild pulmonary vascular congestion
+E6	Medical-Problem:T6
+T7	Lesion-Characteristic 512 523	Ill-defined
+T8	Lesion-Description 524 528	mass
+T9	Lesion-Anatomy 540 555	left lower lobe
+T10	Lesion-Characteristic 582 597	poorly assessed
+T11	Medical-Problem 600 627	Patchy retrocardiac opacity
+E11	Medical-Problem:T11
+T12	Medical-Assertion 628 634;636 644	likely reflects
+A1	Medical-AssertionValue T12 possible
+T13	Medical-Problem 645 656	atelectasis
+T14	Medical-Assertion 659 661	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 662 684	large pleural effusion
+T16	Medical-Problem 688 700	pneumothorax
+T17	Medical-Problem 715 724	Deformity
+T18	Medical-Anatomy 732 753	left proximal humerus
+T19	Medical-Assertion 754 761	suggest
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 762 777	remote fracture
+T21	Medical-Problem 780 792	Irregularity
+T22	Medical-Anatomy 801 817	right-sided ribs
+T23	Lesion-Characteristic 881 888	osseous
+E20	Lesion-Characteristic:T23
+T24	Medical-Problem 920 954	Mild pulmonary vascular congestion
+E21	Medical-Problem:T24
+T25	Medical-Problem 959 975	low lung volumes
+E22	Medical-Problem:T25
+T26	Lesion-Anatomy 978 998	Left lower lobe lung
+T27	Lesion-Description 1000 1004	mass
+T28	Medical-Problem 1048 1075	Retrocardiac patchy opacity
+E25	Medical-Problem:T28
+T29	Medical-Assertion 1078 1084	likely
+A4	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1085 1096	atelectasis
+T31	Medical-Problem 1099 1111	Irregularity
+T32	Medical-Anatomy 1119 1135	right-sided ribs
+T33	Lesion-Characteristic 1152 1159	osseous
+E29	Lesion-Characteristic:T33
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E18	Medical-Problem:T21 has-Medical-Anatomy:T22
+E24	Lesion-Description:T27 has-Lesion-Anatomy:T26
+E26	Medical-Problem:T30 has-Medical-Assertion:T29
+E27	Medical-Problem:T31 has-Medical-Anatomy:T32

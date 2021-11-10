@@ -1,0 +1,23 @@
+T1	Medical-Assertion 34 36	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 37 65	acute cardipulmonary process
+T3	Lesion-Assertion 67 69	No
+A2	Lesion-AssertionValue T3 absent
+T4	Lesion-Size 70 75	large
+T5	Lesion-Description 76 83	nodules
+T6	Medical-Assertion 309 311	No
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Assertion 387 398	no evidence
+A4	Medical-AssertionValue T7 absent
+T8	Medical-Problem 402 421	vascular congestion
+T9	Medical-Problem 423 439	pleural effusion
+T10	Medical-Problem 444 455;457 466	acute focal pneumonia
+T11	Medical-Assertion 483 494	no evidence
+A5	Medical-AssertionValue T11 absent
+T12	Medical-Problem 498 511	septic emboli
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Size-Present:T4
+E4	Medical-Problem:T8 has-Medical-Assertion:T7
+E5	Medical-Problem:T9 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T7
+E7	Medical-Problem:T12 has-Medical-Assertion:T11

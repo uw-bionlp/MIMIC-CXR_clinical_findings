@@ -1,0 +1,22 @@
+T1	Medical-Problem 234 240;242 251	volume overload?
+E1	Medical-Problem:T1
+T2	Medical-Problem 379 403	some mild indistinctness
+T3	Medical-Anatomy 408 425	pulmonary vessels
+T4	Medical-Assertion 433 446	could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 447 477;479 487	some elevated pulmonary venous pressure
+T6	Medical-Problem 489 497	Blunting
+T7	Medical-Anatomy 505 529	right costophrenic angle
+T8	Medical-Assertion 530 538	could be
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 559 573	small effusion
+T10	Medical-Problem 577 604	previous pleural thickening
+T11	Medical-Assertion 606 608	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 621 632;634 643	acute focal pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

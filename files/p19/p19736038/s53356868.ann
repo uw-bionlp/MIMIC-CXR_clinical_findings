@@ -1,0 +1,40 @@
+T1	Medical-Problem 331 340;342 355	increased opacification
+T2	Medical-Anatomy 363 411	right lung base obscuring the right heart border
+T3	Medical-Problem 484 496;498 511	right middle lobe collapse
+E3	Medical-Problem:T3
+T4	Medical-Problem 514 530	Linear opacities
+T5	Medical-Anatomy 538 552	left lung base
+T6	Medical-Assertion 597 618	most likely represent
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 619 630	atelectasis
+T8	Medical-Problem 679 688	infection
+E7	Medical-Problem:T8
+T9	Medical-Assertion 691 693	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 694 710	pleural effusion
+T11	Medical-Problem 714 726	pneumothorax
+T12	Medical-Anatomy 745 766	pulmonary vasculature
+T13	Medical-Assertion 770 773	not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 774 782	engorged
+T15	Medical-Anatomy 905 910	heart
+E12	Medical-Anatomy:T15
+T16	Medical-Problem 971 997	Right middle lobe collapse
+T17	Medical-Problem 1002 1013	atelectasis
+T18	Medical-Anatomy 1021 1035	left lung base
+T19	Medical-Problem 1050 1056	asthma
+T20	Medical-Assertion 1058 1069	less likely
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1070 1079	pneumonia
+T22	Medical-Problem 1083 1098	other infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T18
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T18
+E17	Medical-Problem:T21 has-Medical-Anatomy:T18 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T18 has-Medical-Assertion:T20

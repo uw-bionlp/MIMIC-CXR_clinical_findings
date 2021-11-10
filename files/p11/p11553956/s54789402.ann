@@ -1,0 +1,26 @@
+T1	Medical-Problem 308 329	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Assertion 348 358	resolution
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 366 384;386 391	previous pulmonary edema
+T4	Medical-Problem 436 455	perihilar opacities
+T5	Medical-Anatomy 469 478	left lung
+T6	Medical-Problem 510 526	asymmetric edema
+T7	Medical-Anatomy 531 546	Left lower lobe
+T8	Medical-Problem 550 555	still
+E7	Medical-Problem:T8
+T9	Medical-Problem 556 576	densely consolidated
+T10	Medical-Problem 591 600	pneumonia
+T11	Medical-Assertion 601 609;611 618	could be present
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 620 646	leftward mediastinal shift
+T13	Medical-Problem 683 694	atelectasis
+T14	Medical-Problem 722 749	Small left pleural effusion
+E12	Medical-Problem:T14
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T7 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T7

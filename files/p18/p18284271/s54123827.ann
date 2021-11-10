@@ -1,0 +1,30 @@
+T1	Medical-Assertion 373 375	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 376 392	pleural effusion
+T3	Medical-Problem 396 408	pneumothorax
+T4	Medical-Problem 411 420;422 441	Pulmonary vascular congestion
+E3	Medical-Problem:T4
+T5	Medical-Problem 478 487	Deformity
+T6	Medical-Anatomy 495 499;501 509	left clavicle
+T7	Medical-Assertion 549 555	may be
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 556 573;575 581	sequela of an old trauma
+T9	Medical-Problem 584 597	Calcification
+T10	Medical-Anatomy 605 633	right proximal humeral shaft
+T11	Medical-Assertion 634 647	may represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 649 660	enchondroma
+T13	Medical-Problem 664 687	old healed bone infarct
+T14	Medical-Assertion 818 820	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 821 833	pneumothorax
+T16	Medical-Problem 851 866	pulmonary edema
+E12	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

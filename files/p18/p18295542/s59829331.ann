@@ -1,0 +1,18 @@
+T1	Medical-Problem 254 277	left-sided pneumothorax
+T2	Medical-Anatomy 297 314	base of the lungs
+T3	Medical-Problem 358 408	relatively extensive soft tissue air collection on
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 427 432;434 438	right base
+T5	Medical-Problem 440 452	hyperlucency
+T6	Medical-Assertion 453 466	could suggest
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 467 489	pleural air collection
+T8	Medical-Assertion 495 497	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 498 504;506 518	apical pneumothorax
+T10	Medical-Problem 575 599;601 612	Unchanged basal areas of atelectasis
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

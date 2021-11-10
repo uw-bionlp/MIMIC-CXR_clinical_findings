@@ -1,0 +1,30 @@
+T1	Medical-Problem 289 303	mild unfolding
+T2	Medical-Anatomy 311 330;332 337	descending thoracic aorta
+T3	Medical-Problem 343 356	calcification
+T4	Medical-Anatomy 367 371	arch
+T5	Medical-Assertion 436 438	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 439 456	pleural effusions
+T7	Medical-Problem 460 472	pneumothorax
+T8	Medical-Problem 475 481;483 504	Patchy opacities are streaky
+E7	Medical-Problem:T8
+T9	Medical-Problem 525 560	mild-to-moderate relative elevation
+T10	Medical-Anatomy 569 588	right hemidiaphragm
+T11	Medical-Assertion 590 600	suggesting
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 601 629	minor associated atelectasis
+T13	Medical-Problem 633 640;642 650	perhaps scarring
+T14	Medical-Problem 689 714	Mild degenerative changes
+T15	Medical-Anatomy 736 754	mid thoracic spine
+T16	Medical-Assertion 772 783	No evidence
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 787 800	acute disease
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

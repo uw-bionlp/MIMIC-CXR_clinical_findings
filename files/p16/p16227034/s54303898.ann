@@ -1,0 +1,28 @@
+T1	Medical-Problem 33 48	Slight blunting
+T2	Medical-Anatomy 52 75	left costophrenic angle
+T3	Medical-Assertion 76 89	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 90 109	trace pleural fluid
+T5	Medical-Assertion 114 116	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 117 132	pulmonary edema
+T7	Medical-Problem 136 155	focal consolidation
+T8	Medical-Problem 407 420	mild blunting
+T9	Medical-Anatomy 429 452	left costophrenic angle
+T10	Medical-Assertion 458 473	could represent
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 476 505	small amount of pleural fluid
+T12	Medical-Assertion 509 520	No evidence
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 524 539	pulmonary edema
+T14	Medical-Assertion 540 542	or
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 543 564	acute focal pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12 has-Medical-Assertion:T14
+E10	Medical-Problem:T15 has-Medical-Assertion:T12 has-Medical-Assertion:T14

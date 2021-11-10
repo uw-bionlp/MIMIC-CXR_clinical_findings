@@ -1,0 +1,15 @@
+T1	Medical-Assertion 200 207;209 217	lack of evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 222 231	pneumonia
+T3	Medical-Problem 290 305	rounded opacity
+T4	Medical-Anatomy 313 329	right upper lobe
+T5	Lesion-Description 424 432	neoplasm
+E4	Lesion-Description:T5
+T6	Medical-Assertion 437 439	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 440 455	pulmonary edema
+T8	Medical-Problem 458 475	Mild cardiomegaly
+E6	Medical-Problem:T8
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6

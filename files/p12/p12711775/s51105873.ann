@@ -1,0 +1,40 @@
+T1	Medical-Problem 89 94;96 120	acute  cardiopulmonary process
+E1	Medical-Problem:T1
+T2	Medical-Problem 122 138	Minimal blunting
+T3	Medical-Anatomy 146 172;174 183	costophrenic and posterior  recesses
+T4	Medical-Assertion 184 190	likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 191 209	pleural thickening
+T6	Medical-Problem 213 235	trace pleural effusion
+T7	Medical-Problem 423 430	seizure
+E6	Medical-Problem:T7
+T8	Medical-Problem 620 654	Eversion of the diaphragm contours
+E7	Medical-Problem:T8
+T9	Medical-Assertion 655 663	suggests
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 664 678	hyperinflation
+T11	Medical-Problem 686 691;693 712	small airways obstruction
+T12	Medical-Problem 720 729	emphysema
+T13	Medical-Assertion 732 734	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 735 740	focal
+E11	Medical-Problem:T14
+T15	Medical-Problem 741 762	pulmonary abnormality
+T16	Medical-Assertion 807 809	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 810 826	pleural effusion
+T18	Lesion-Characteristic 842 849	central
+T19	Lesion-Description 851 861	adenopathy
+T20	Medical-Assertion 902 905	not
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 906 928	particularly distended
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Lesion-Description:T19 has-Lesion-Characteristic:T18
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

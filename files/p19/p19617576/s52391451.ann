@@ -1,0 +1,16 @@
+T1	Medical-Assertion 263 265	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 266 286	pleural, mediastinal
+T3	Medical-Problem 367 375;377 382	tortuous aorta
+E2	Medical-Problem:T3
+T4	Lesion-Assertion 395 397	no
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Characteristic 398 406	cavitary
+T6	Lesion-Description 407 414	lesions
+T7	Lesion-Anatomy 426 431	lungs
+T8	Medical-Assertion 448 459	No evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 463 501	prior or current granulomatous disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

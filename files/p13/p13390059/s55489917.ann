@@ -1,0 +1,39 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 67	acute cardiac or pulmonary findings
+T3	Medical-Problem 615 621	subtle
+E2	Medical-Problem:T3
+T4	Medical-Problem 657 681	Somewhat diminished lung
+E3	Medical-Problem:T4
+T5	Medical-Problem 695 705	prominence
+T6	Medical-Anatomy 713 725	interstitium
+T7	Medical-Assertion 733 746	could reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 747 768	small airways disease
+T9	Medical-Problem 775 810	underlying interstitial abnormality
+T10	Medical-Problem 822 840	atypical infection
+T11	Medical-Problem 848 874	other interstitial disease
+T12	Medical-Assertion 877 879	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 880 885;887 909	focal airspace consolidation
+T14	Medical-Problem 931 946	focal pneumonia
+T15	Medical-Problem 949 957;959 975	Enlarged pulmonary artery
+E12	Medical-Problem:T15
+T16	Medical-Problem 1060 1075	acute infection
+E13	Medical-Problem:T16
+T17	Medical-Assertion 1258 1260	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1262 1279	pleural effusions
+T19	Medical-Problem 1281 1293	pneumothorax
+T20	Medical-Problem 1298 1313	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T17

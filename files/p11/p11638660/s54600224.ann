@@ -1,0 +1,25 @@
+T1	Medical-Problem 380 393	focal opacity
+T2	Medical-Anatomy 401 411;413 417	left upper lobe
+T3	Medical-Assertion 418 431	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 432 443	atelectasis
+T5	Medical-Problem 453 468	early infection
+T6	Medical-Assertion 497 499	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 500 516	pleural effusion
+T8	Medical-Problem 521 533	pneumothorax
+T9	Medical-Problem 535 566;568 583	Cardiomediastinal silhouette is mildly enlarged
+E7	Medical-Problem:T9
+T10	Medical-Problem 643 672	Focal left upper lobe opacity
+E8	Medical-Problem:T10
+T11	Medical-Problem 683 694	atelectasis
+E9	Medical-Problem:T11
+T12	Medical-Problem 708 732	early focus of infection
+T13	Medical-Assertion 733 751	cannot be excluded
+A3	Medical-AssertionValue T13 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T13

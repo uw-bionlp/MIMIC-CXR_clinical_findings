@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 369 383	left lung base
+T2	Medical-Problem 389 412	some persistent opacity
+T3	Medical-Problem 471 484	Mild blunting
+T4	Medical-Anatomy 492 497;499 517	right costophrenic angle
+T5	Medical-Assertion 518 533	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 534 545	atelectasis
+T7	Medical-Problem 547 569	overlying soft tissues
+T8	Medical-Problem 574 582	effusion
+T9	Medical-Problem 585 615	Cardiac silhouette is enlarged
+E8	Medical-Problem:T9
+T10	Medical-Problem 712 729	Improved aeration
+T11	Medical-Anatomy 737 752	left lower lung
+T12	Medical-Problem 777 798	some residual opacity
+T13	Medical-Assertion 799 817	potentially due to
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 818 829	atelectasis
+T15	Medical-Problem 834 847	consolidation
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T12 has-Medical-Anatomy:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T11 has-Medical-Assertion:T13

@@ -1,0 +1,19 @@
+T1	Medical-Anatomy 288 293	Lungs
+T2	Medical-Assertion 304 311	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 312 325	consolidation
+T4	Medical-Problem 327 343	pleural effusion
+T5	Medical-Problem 347 362	pulmonary edema
+T6	Lesion-Assertion 366 368	No
+A2	Lesion-AssertionValue T6 absent
+T7	Lesion-Description 369 375	masses
+T8	Lesion-Description 379 386	nodules
+T9	Medical-Assertion 474 485	No evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 489 523	acute cardiac or pulmonary disease
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T6
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

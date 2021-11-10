@@ -1,0 +1,40 @@
+T1	Medical-Problem 232 252	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 255 260	Heart
+T3	Medical-Problem 269 297	at least moderately enlarged
+T4	Medical-Problem 352 383;385 395	Crowding of the bronchovascular structures
+E4	Medical-Problem:T4
+T5	Medical-Assertion 412 419	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 420 441	overt pulmonary edema
+T7	Medical-Problem 444 460	Patchy opacities
+T8	Medical-Anatomy 479 495	lung bases, more
+T9	Medical-Assertion 524 530;532 542	likely reflecting
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 543 563	areas of atelectasis
+T11	Medical-Assertion 566 568	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 569 591	Large pleural effusion
+T13	Medical-Problem 595 607	pneumothorax
+T14	Medical-Problem 637 654	prior kyphoplasty
+T15	Medical-Anatomy 674 686;688 693	upper lumbar spine
+T16	Medical-Problem 714 730	Low lung volumes
+T17	Medical-Problem 736 762	patchy bibasilar opacities
+E14	Medical-Problem:T17
+T18	Medical-Anatomy 787 791;793 802	left lung base
+T19	Medical-Assertion 804 810	likely
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 811 822	atelectasis
+T21	Medical-Problem 850 859	infection
+T22	Medical-Assertion 860 869;871 890	cannot be completely excluded
+A5	Medical-AssertionValue T22 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T16 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T22

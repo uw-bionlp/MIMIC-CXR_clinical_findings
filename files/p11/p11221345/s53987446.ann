@@ -1,0 +1,32 @@
+T1	Medical-Problem 334 352	Pleural thickening
+T2	Medical-Problem 358 369	atelectasis
+T3	Medical-Anatomy 377 392	right lung base
+T4	Lesion-Characteristic 460 469	calcified
+T5	Lesion-Description 470 480	granulomas
+T6	Lesion-Anatomy 481 512	scattered throughout both lungs
+T7	Medical-Assertion 516 518	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 519 541	large pleural effusion
+T9	Medical-Problem 562 592;594 597	prominent right epicardial fat pad
+E8	Medical-Problem:T9
+T10	Medical-Problem 758 769	Mediastinal
+E9	Medical-Problem:T10
+T11	Medical-Assertion 778 793	likely reflects
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 794 810	vascular ectasia
+T13	Medical-Problem 863 888	Right basilar atelectasis
+E11	Medical-Problem:T13
+T14	Medical-Problem 893 911	pleural thickening
+E12	Medical-Problem:T14
+T15	Lesion-Characteristic 914 923	Calcified
+T16	Lesion-Description 925 935	granulomas
+T17	Medical-Assertion 938 940	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 941 977	definite acute intrathoracic process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E14	Lesion-Description:T16 has-Lesion-Characteristic:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

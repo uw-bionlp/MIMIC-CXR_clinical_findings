@@ -1,0 +1,24 @@
+T1	Medical-Problem 188 203	Streaky opacity
+T2	Medical-Anatomy 211 237	left base of hte left lung
+T3	Medical-Problem 250 261	atelectasis
+T4	Medical-Anatomy 278 283	lungs
+T5	Medical-Assertion 294 301	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 302 315	focal opacity
+T7	Medical-Problem 317 324;326 334	pleural effusion
+T8	Medical-Problem 338 350	pneumothorax
+T9	Medical-Problem 362 379	mild cardiomegaly
+E8	Medical-Problem:T9
+T10	Medical-Assertion 438 440	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 441 468	acute intrathoracic process
+T12	Medical-Problem 471 495	Left basilar atelectasis
+E10	Medical-Problem:T12
+T13	Medical-Problem 501 518	mild cardiomegaly
+E11	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

@@ -1,0 +1,33 @@
+T1	Medical-Problem 367 389	heart remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 396 407	may reflect
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 408 420	cardiomegaly
+T4	Medical-Problem 433 453	pericardial effusion
+T5	Medical-Assertion 454 472	cannot be excluded
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 574 583;585 639	Bilateral parenchymal process with more consolidative components
+T7	Medical-Anatomy 643 658	both lung bases
+T8	Medical-Assertion 660 675	likely reflects
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 693 708	pulmonary edema
+T10	Medical-Problem 710 719	pneumonia
+T11	Medical-Problem 727 736;738 748	pulmonary hemorrhage
+T12	Medical-Problem 764 769	edema
+E9	Medical-Problem:T12
+T13	Medical-Assertion 847 853	likely
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 856 878	layering left effusion
+T15	Medical-Assertion 881 883	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 885 903	large pneumothorax
+T17	Medical-Problem 948 963	pneumothorax is
+E12	Medical-Problem:T17
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

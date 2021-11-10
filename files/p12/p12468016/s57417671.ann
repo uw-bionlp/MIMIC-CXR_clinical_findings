@@ -1,0 +1,41 @@
+T1	Medical-Assertion 33 41	Probable
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 42 51	emphysema
+T3	Medical-Problem 57 82	hilar vascular prominence
+T4	Medical-Assertion 83 96	suggestive of
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 97 106;108 130	pulmonary  arterial hypertension
+T6	Medical-Anatomy 490 495	Lungs
+T7	Medical-Problem 500 513	hyperinflated
+T8	Medical-Problem 520 538	upper lung lucency
+T9	Medical-Assertion 539 552	suggestive of
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 553 573	underlying emphysema
+T11	Medical-Problem 575 596	Mild hilar prominence
+E8	Medical-Problem:T11
+T12	Medical-Assertion 598 618	suggests possibility
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 622 644	pulmonary hypertension
+T14	Medical-Assertion 676 678	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 679 707	focal consolidation effusion
+T16	Medical-Problem 711 723	pneumothorax
+T17	Medical-Assertion 833 841	Probable
+A6	Medical-AssertionValue T17 possible
+T18	Medical-Problem 842 851	emphysema
+T19	Medical-Problem 857 882	hilar vascular prominence
+E13	Medical-Problem:T19
+T20	Medical-Assertion 883 896	suggestive of
+A7	Medical-AssertionValue T20 possible
+T21	Medical-Problem 897 906;908 929	pulmonary arterial hypertension
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T1 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6
+E7	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T14
+E12	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T21 has-Medical-Assertion:T20

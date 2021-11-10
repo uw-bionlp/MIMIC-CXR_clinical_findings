@@ -1,0 +1,36 @@
+T1	Medical-Problem 118 122	2 cm
+E1	Medical-Problem:T1
+T2	Medical-Problem 123 142	ill-defined opacity
+T3	Medical-Anatomy 150 170	right mid/lower lung
+T4	Medical-Assertion 785 798	suggestion of
+A1	Medical-AssertionValue T4 possible
+T5	Lesion-Size 801 805	2 cm
+T6	Lesion-Characteristic 806 817	ill-defined
+T7	Lesion-Description 818 825	opacity
+T8	Lesion-Anatomy 833 853	right mid/lower lung
+T9	Medical-Problem 856 866	chronicity
+T10	Medical-Problem 892 922	mild interstitial irregularity
+E9	Medical-Problem:T10
+T11	Medical-Anatomy 945 955	lung bases
+T12	Medical-Assertion 963 974	may reflect
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 975 998;1000 1007	underlying chronic lung disease
+T14	Medical-Problem 1022 1038	pleural effusion
+E12	Medical-Problem:T14
+T15	Medical-Problem 1042 1054	pneumothorax
+E13	Medical-Problem:T15
+T16	Medical-Assertion 1112 1114	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1115 1120	acute
+E14	Medical-Problem:T17
+T18	Medical-Problem 1121 1142	osseous abnormalities
+T19	Lesion-Size 1244 1248	2 cm
+T20	Lesion-Characteristic 1249 1260	ill-defined
+T21	Lesion-Description 1261 1268	opacity
+T22	Lesion-Anatomy 1276 1296	right mid/lower lung
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Assertion:T4
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E18	Lesion-Description:T21 has-Lesion-Size-Present:T19 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T22

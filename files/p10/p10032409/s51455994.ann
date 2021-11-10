@@ -1,0 +1,41 @@
+T1	Medical-Assertion 204 206	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 207 220	focal opacity
+T3	Medical-Problem 232 241	pneumonia
+T4	Medical-Problem 261 269	blunting
+T5	Medical-Anatomy 278 297	costophrenic angles
+T6	Medical-Assertion 304 319	could represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 320 335	trace effusions
+T8	Medical-Problem 339 346;348 358	pleural thickening
+T9	Medical-Problem 361 371	Flattening
+T10	Medical-Anatomy 379 388	diaphragm
+T11	Medical-Problem 393 421;423 428	increased AP diameter of the chest
+E9	Medical-Problem:T11
+T12	Medical-Assertion 432 445	suggestive of
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 446 450	COPD
+T14	Medical-Problem 452 470	Relative elevation
+T15	Medical-Anatomy 478 497	left hemi-diaphragm
+T16	Medical-Problem 523 540	mild cardiomegaly
+T17	Medical-Problem 545 555	tortuosity
+T18	Medical-Anatomy 563 568	aorta
+T19	Medical-Problem 588 608	dense calcifications
+T20	Medical-Anatomy 616 627	aortic root
+T21	Medical-Assertion 630 632	No
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 633 648	pulmonary edema
+T23	Medical-Problem 653 665	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T16 has-Medical-Anatomy:T18
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Assertion:T21

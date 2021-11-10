@@ -1,0 +1,40 @@
+T1	Medical-Problem 265 275	tortuosity
+T2	Medical-Anatomy 284 298	thoracic aorta
+T3	Medical-Problem 310 351	diffuse pulmonary interstitial prominence
+E3	Medical-Problem:T3
+T4	Medical-Problem 356 361;363 390	areas of architectural distortion
+E4	Medical-Problem:T4
+T5	Medical-Problem 468 491	Increased opacification
+T6	Medical-Anatomy 499 511;513 528	retrocardiac left lower lobe
+T7	Medical-Assertion 555 568	may represent
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 569 580	atelectasis
+T9	Medical-Problem 583 596	consolidation
+T10	Lesion-Assertion 600 611	potentially
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 614 618	mass
+T12	Medical-Assertion 630 632	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 633 649	pleural effusion
+T14	Medical-Problem 654 666	pneumothorax
+T15	Medical-Problem 690 713	Increased opacification
+T16	Medical-Anatomy 721 736	left lower lobe
+T17	Medical-Assertion 805 818	may represent
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 819 830	atelectasis
+T19	Medical-Problem 835 848	consolidation
+T20	Lesion-Description 867 871	mass
+E16	Lesion-Description:T20
+T21	Medical-Problem 948 973	Interstitial lung disease
+T22	Medical-Anatomy 997 1007	right base
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T17
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22

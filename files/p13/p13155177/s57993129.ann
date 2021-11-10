@@ -1,0 +1,18 @@
+T1	Medical-Problem 281 308	Heterogeneous opacification
+T2	Medical-Anatomy 316 328;330 347	left midlung at the lung bases
+T3	Medical-Assertion 348 365	raise possibility
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 369 379	aspiration
+T5	Medical-Assertion 455 457	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 458 470	pneumothorax
+T7	Medical-Problem 473 478;480 508	Small degree of pleural thickening
+E5	Medical-Problem:T7
+T8	Medical-Problem 521 542	extrapleural hematoma
+E6	Medical-Problem:T8
+T9	Medical-Anatomy 557 600	left posterolateral fifth sixth and seventh
+T10	Medical-Problem 605 614	fractures
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9

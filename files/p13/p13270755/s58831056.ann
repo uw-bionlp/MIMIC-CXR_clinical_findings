@@ -1,0 +1,41 @@
+T1	Medical-Anatomy 202 217	left lower lobe
+T2	Medical-Problem 218 225	opacity
+T3	Medical-Assertion 230 247	partially cleared
+A1	Medical-AssertionValue T3 absent
+T4	Lesion-Characteristic 250 256;258 265	Poorly defined
+T5	Lesion-Size 266 279	subcentimeter
+T6	Lesion-Description 280 287	nodular
+E5	Lesion-Description:T6
+T7	Lesion-Description 288 297	opacities
+T8	Lesion-Anatomy 342 385	level of the fifth anterior rib bilaterally
+T9	Medical-Problem 488 521	focal area of peripheral scarring
+T10	Medical-Anatomy 529 539	right base
+T11	Medical-Problem 544 566;568 614	relatively symmetrical mild biapical pleural and parenchymal scarring
+E10	Medical-Problem:T11
+T12	Lesion-Assertion 653 664	no evidence
+A2	Lesion-AssertionValue T12 absent
+T13	Lesion-Anatomy 668 679	mediastinal
+T14	Lesion-Anatomy 683 688	hilar
+T15	Lesion-Description 689 704	lymphadenopathy
+T16	Medical-Assertion 716 718	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 720 736	pleural effusion
+T18	Medical-Anatomy 777 781	left
+T19	Medical-Assertion 803 816	likely due to
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 817 826;828 837	resolving pneumonia
+T21	Lesion-Characteristic 840 854	Poorly defined
+T22	Lesion-Description 855 872	nodular opacities
+T23	Medical-Assertion 873 884	potentially
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Anatomy 1027 1037	left lower
+E19	Medical-Anatomy:T24
+T25	Lesion-Size 1144 1157	subcentimeter
+E20	Lesion-Size:T25
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T4 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E13	Lesion-Description:T15 has-Lesion-Assertion:T12 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E18	Lesion-Description:T22 has-Lesion-Characteristic:T21

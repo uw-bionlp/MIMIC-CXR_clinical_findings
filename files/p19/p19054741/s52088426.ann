@@ -1,0 +1,21 @@
+T1	Medical-Assertion 239 241	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 242 264	large pleural effusion
+T3	Medical-Problem 268 280	pneumothorax
+T4	Medical-Problem 312 328	Linear opacities
+T5	Medical-Anatomy 336 358;360 364	left mid lung and left base
+T6	Medical-Problem 385 396	atelectasis
+T7	Medical-Problem 407 420	calcification
+T8	Medical-Anatomy 428 434;436 443	mitral annulus
+T9	Medical-Problem 464 473	Opacities
+T10	Medical-Anatomy 481 490	left base
+T11	Medical-Assertion 495 501	likely
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 502 513	atelectasis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

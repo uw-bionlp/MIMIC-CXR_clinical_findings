@@ -1,0 +1,35 @@
+T1	Medical-Anatomy 228 239	aortic knob
+T2	Medical-Problem 243 252	calcified
+T3	Lesion-Characteristic 363 368	Faint
+T4	Lesion-Description 369 384	nodular opacity
+T5	Lesion-Anatomy 396 411	right lung base
+T6	Lesion-Size-Trend 438 447	unchanged
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Problem 478 487;489 502	Lungs are hyperinflated
+E6	Medical-Problem:T7
+T8	Medical-Assertion 505 507	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 508 527	focal consolidation
+T10	Medical-Problem 529 545	pleural effusion
+T11	Medical-Problem 549 561	pneumothorax
+T12	Medical-Problem 576 584	Scarring
+T13	Medical-Anatomy 596 607	lung apices
+T14	Medical-Problem 621 638;640 646	Mild reduction of height
+T15	Medical-Anatomy 652 679	low thoracic vertebral body
+T16	Medical-Assertion 710 712	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 713 746	acute cardiopulmonary abnormality
+T18	Lesion-Description 749 764	Nodular opacity
+T19	Lesion-Anatomy 786 801	right lung base
+T20	Lesion-Size-Trend 805 814	unchanged
+A4	Lesion-Size-TrendValue T20 no-change
+T21	Lesion-Characteristic 852 863	unlikely to
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T19 has-Lesion-Size-Trend:T20 has-Lesion-Characteristic:T21

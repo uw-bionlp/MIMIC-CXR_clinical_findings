@@ -1,0 +1,17 @@
+T1	Medical-Problem 33 66	Mild interstitial pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 411 432	pulmonary vasculature
+T3	Medical-Problem 437 459;461 469	increased interstitial markings
+E3	Medical-Problem:T3
+T4	Medical-Problem 490 514	mild vascular congestion
+T5	Medical-Assertion 734 736	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 737 749	pneumothorax
+T7	Medical-Assertion 750 752	or
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 753 760;762 770	pleural effusion
+T9	Medical-Problem 805 815	congestion
+E7	Medical-Problem:T9
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E6	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7

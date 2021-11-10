@@ -1,0 +1,32 @@
+T1	Medical-Assertion 290 292	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 293 306	consolidation
+T3	Medical-Problem 308 324	pleural effusion
+T4	Medical-Problem 329 341	pneumothorax
+T5	Medical-Anatomy 344 349	Lungs
+T6	Medical-Problem 355 375	mildly hyperinflated
+T7	Medical-Problem 378 399	Cardiac silhouette is
+E6	Medical-Problem:T7
+T8	Medical-Problem 400 419	borderline enlarged
+E7	Medical-Problem:T8
+T9	Medical-Problem 499 511;513 520	Degenerative changes
+T10	Medical-Anatomy 528 542	thoracic spine
+T11	Medical-Problem 581 584;586 616	new anterior compression deformity
+T12	Medical-Anatomy 620 638	T11 vertebral body
+T13	Medical-Problem 686 720	new anterior compression deformity
+T14	Medical-Anatomy 724 742	T11 vertebral body
+T15	Lesion-Assertion 756 758	No
+A2	Lesion-AssertionValue T15 absent
+T16	Lesion-Characteristic 759 767	discrete
+T17	Lesion-Characteristic 768 778	underlying
+T18	Lesion-Description 779 783	mass
+T19	Medical-Problem 884 905	occult lung pathology
+E17	Medical-Problem:T19
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E16	Lesion-Description:T18 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16 has-Lesion-Characteristic:T17

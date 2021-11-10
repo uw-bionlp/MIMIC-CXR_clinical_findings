@@ -1,0 +1,33 @@
+T1	Lesion-Characteristic 248 256	dominant
+T2	Lesion-Size 258 264	2.8 cm
+T3	Lesion-Description 274 280	nodule
+T4	Lesion-Anatomy 288 304	right lower lobe
+T5	Lesion-Size-Trend 309 326	increased in size
+A1	Lesion-Size-TrendValue T5 increasing
+T6	Lesion-Characteristic 357 366	centrally
+T7	Lesion-Anatomy 375 390	left suprahilar
+T8	Lesion-Description 391 397	nodule
+T9	Lesion-Size-Trend 446 449	may
+A2	Lesion-Size-TrendValue T9 increasing
+T10	Medical-Problem 476 488	Hazy opacity
+T11	Medical-Anatomy 506 524	right heart border
+T12	Lesion-Description 566 570	mass
+E10	Lesion-Description:T12
+T13	Medical-Problem 590 610	Linear areas of scar
+T14	Medical-Problem 614 625	atelectasis
+T15	Medical-Anatomy 650 683	left lower and right middle lobes
+T16	Medical-Assertion 699 701	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 702 714;716 729	new areas of consolidation
+T18	Medical-Problem 757 766	pneumonia
+T19	Medical-Assertion 872 874	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 875 893	definite pneumonia
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

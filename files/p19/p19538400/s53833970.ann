@@ -1,0 +1,18 @@
+T1	Medical-Problem 182 193;195 205	substantial tortuosity
+T2	Medical-Anatomy 213 218	aorta
+T3	Medical-Assertion 275 286	No evidence
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 290 311	acute focal pneumonia
+T5	Medical-Problem 313 332	vascular congestion
+T6	Medical-Problem 337 344;346 354	pleural effusion
+T7	Medical-Problem 370 387	slight impression
+E6	Medical-Problem:T7
+T8	Lesion-Assertion 438 464	raising the possibility of
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Anatomy 467 474	thyroid
+T10	Lesion-Description 475 479	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E8	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T9

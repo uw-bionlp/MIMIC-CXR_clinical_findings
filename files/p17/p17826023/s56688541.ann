@@ -1,0 +1,36 @@
+T1	Medical-Assertion 287 289	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 290 309	focal consolidation
+T3	Medical-Assertion 310 320;322 325	concerning for
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 326 335	pneumonia
+T5	Lesion-Size 403 407	3 mm
+T6	Lesion-Characteristic 408 417	calcified
+T7	Lesion-Description 418 427	granuloma
+T8	Lesion-Anatomy 439 454	left lower lobe
+T9	Medical-Problem 550 584	bilateral pathologic rib fractures
+E7	Medical-Problem:T9
+T10	Lesion-Count 644 652	Numerous
+T11	Lesion-Characteristic 653 658	lytic
+T12	Lesion-Characteristic 663 668	mixed
+T13	Lesion-Characteristic 669 675;677 686	lytic/ sclerotic
+T14	Lesion-Description 687 694	lesions
+T15	Lesion-Anatomy 695 741	throughout the axial and appendicular skeleton
+T16	Medical-Problem 793 819;821 832	lower thoracic compression deformities
+E14	Medical-Problem:T16
+T17	Medical-Problem 837 859	vertebroplasty changes
+E15	Medical-Problem:T17
+T18	Medical-Problem 867 891	heart is mildly enlarged
+E16	Medical-Problem:T18
+T19	Medical-Assertion 986 988	No
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 989 1008	focal consolidation
+T21	Medical-Assertion 1009 1023	concerning for
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1024 1033	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E12	Lesion-Description:T14 has-Lesion-Count:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T21

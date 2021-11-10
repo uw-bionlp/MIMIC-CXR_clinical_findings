@@ -1,0 +1,34 @@
+T1	Medical-Anatomy 372 393	Left pulmonary artery
+T2	Medical-Problem 397 408	quite large
+T3	Medical-Problem 513 528;530 537	acute pulmonary embolus
+E3	Medical-Problem:T3
+T4	Medical-Problem 541 581	fluctuation in pulmonary artery pressure
+E4	Medical-Problem:T4
+T5	Medical-Problem 589 603	volume loading
+E5	Medical-Problem:T5
+T6	Medical-Problem 609 631	left heart dysfunction
+E6	Medical-Problem:T6
+T7	Medical-Assertion 643 645	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 646 653	embolus
+T9	Medical-Problem 704 733	considerable mucoid impaction
+T10	Medical-Anatomy 737 754;756 775	both lower lobes, especially the left
+T11	Medical-Assertion 783 803	may serve to explain
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 804 828	persistent consolidation
+T13	Medical-Anatomy 837 872	medial aspect of the left lung base
+T14	Medical-Problem 888 918	moderate left pleural effusion
+E12	Medical-Problem:T14
+T15	Medical-Assertion 968 970	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 971 983	pneumothorax
+T17	Medical-Anatomy 1134 1139;1141 1173	right paratracheal mediastinal tissues
+T18	Medical-Assertion 1174 1184	suggesting
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1185 1199	local bleeding
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

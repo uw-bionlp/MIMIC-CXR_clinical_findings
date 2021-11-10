@@ -1,0 +1,36 @@
+T1	Medical-Assertion 331 338	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 339 358	focal consolidation
+T3	Medical-Problem 360 376	pleural effusion
+T4	Medical-Problem 381 393	pneumothorax
+T5	Lesion-Assertion 405 415	suggestion
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Size 421 425	7-mm
+T7	Lesion-Description 426 432	nodule
+T8	Lesion-Anatomy 440 456	right upper lung
+T9	Medical-Assertion 539 541	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 542 581	upper abdominal and osseous abnormality
+T11	Medical-Assertion 598 600	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 601 614;616 624	displaced rib fracture
+T13	Medical-Assertion 654 656	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 657 666	pneumonia
+T15	Medical-Problem 668 673	edema
+T16	Medical-Problem 677 685	effusion
+T17	Lesion-Assertion 692 700	Possible
+A6	Lesion-AssertionValue T17 possible
+T18	Lesion-Size 701 704	7mm
+T19	Lesion-Anatomy 705 721	right upper lung
+T20	Lesion-Description 722 728	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T13
+E14	Lesion-Description:T20 has-Lesion-Assertion:T17 has-Lesion-Size-Present:T18 has-Lesion-Anatomy:T19

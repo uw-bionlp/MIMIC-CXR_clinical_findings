@@ -1,0 +1,22 @@
+T1	Medical-Assertion 235 237	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 239 255	pleural effusion
+T3	Medical-Problem 259 271	pneumothorax
+T4	Medical-Problem 283 296	vague opacity
+T5	Medical-Anatomy 311 315;317 331	left cardiac margin
+T6	Medical-Problem 400 423	Old remodeled fractures
+T7	Medical-Anatomy 436 467;469 496	posterior lateral third through fifth ribs on the left only
+T8	Medical-Problem 516 539	Patchy lingular opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 541 568	differential considerations
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 578 589	atelectasis
+T11	Medical-Problem 593 604	potentially
+E9	Medical-Problem:T11
+T12	Medical-Problem 605 614	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9

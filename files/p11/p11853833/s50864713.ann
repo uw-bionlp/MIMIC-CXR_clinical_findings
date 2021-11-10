@@ -1,0 +1,16 @@
+T1	Medical-Assertion 332 334	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 336 352	pleural effusion
+T3	Medical-Problem 356 368	pneumothorax
+T4	Lesion-Assertion 398 410	questionable
+A2	Lesion-AssertionValue T4 possible
+T5	Lesion-Characteristic 411 421	spiculated
+T6	Lesion-Description 422 428	nodule
+T7	Lesion-Size 430 434	8 mm
+T8	Medical-Assertion 542 553	No evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 557 587	active or chronic tuberculosis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5 has-Lesion-Size-Present:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,22 @@
+T1	Medical-Problem 210 215;217 243	Areas of irregular consolidation
+T2	Lesion-Size 248 253	small
+T3	Lesion-Description 254 261	nodules
+T4	Medical-Anatomy 271 281	throughout
+T5	Medical-Problem 322 342	multifocal infection
+E5	Medical-Problem:T5
+T6	Medical-Assertion 354 356	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 357 373	pleural effusion
+T8	Medical-Problem 378 390	pneumothorax
+T9	Medical-Problem 459 491	Areas of irregular consolidation
+E8	Medical-Problem:T9
+T10	Lesion-Size 496 501	small
+T11	Lesion-Description 502 509	nodules
+T12	Lesion-Anatomy 526 541	bilateral lungs
+T13	Medical-Problem 561 581	multifocal infection
+E12	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T2
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E10	Lesion-Description:T11 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T12

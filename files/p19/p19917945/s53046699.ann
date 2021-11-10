@@ -1,0 +1,18 @@
+T1	Medical-Problem 188 197	pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Assertion 345 356	No findings
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 360 369	pneumonia
+T4	Lesion-Size 389 394	small
+T5	Lesion-Anatomy 395 399	lung
+T6	Lesion-Description 400 406	nodule
+T7	Lesion-Anatomy 414 422;424 460	level of the right second anterior interspace
+T8	Lesion-Anatomy 474 500;502 538	above the left clavicle at the level of the third posterior rib
+T9	Lesion-Description 583 590	nodules
+E8	Lesion-Description:T9
+T10	Medical-Assertion 705 707	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 708 728;730 741	mediastinal or hilar abnormality
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

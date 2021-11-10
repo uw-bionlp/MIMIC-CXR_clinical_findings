@@ -1,0 +1,22 @@
+T1	Medical-Problem 239 275	New relatively uniform opacification
+T2	Medical-Anatomy 288 297	both hila
+T3	Medical-Assertion 298 306	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 308 345	posteriorly layering pleural effusion
+T5	Medical-Assertion 445 453	could be
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 454 459;461 480	large scale consolidation
+T7	Medical-Problem 484 489	edema
+T8	Medical-Problem 492 509	Mild cardiomegaly
+E6	Medical-Problem:T8
+T9	Medical-Problem 525 538	Consolidation
+T10	Medical-Anatomy 547 568	base of the left lung
+T11	Medical-Assertion 701 703	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 704 716	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

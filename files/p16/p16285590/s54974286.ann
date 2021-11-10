@@ -1,0 +1,23 @@
+T1	Medical-Assertion 60 62	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 63 66	PTX
+T3	Medical-Problem 132 163	Worsening parenchymal opacities
+T4	Medical-Anatomy 165 195	particularly in the right lung
+T5	Medical-Problem 244 262	infectious process
+E4	Medical-Problem:T5
+T6	Medical-Problem 665 700;702 710	interval decrease of a left pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Problem 762 780	periaortic opacity
+E6	Medical-Problem:T7
+T8	Medical-Assertion 825 850	might potentially reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 869 880	atelectasis
+T10	Medical-Problem 891 913	post-radiation changes
+T11	Medical-Problem 928 932;934 941	lung opacity
+E9	Medical-Problem:T11
+T12	Medical-Assertion 996 999	not
+A3	Medical-AssertionValue T12 absent
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

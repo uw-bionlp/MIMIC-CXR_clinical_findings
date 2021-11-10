@@ -1,0 +1,27 @@
+T1	Lesion-Anatomy 270 275	lungs
+T2	Lesion-Assertion 281 292	no evidence
+A1	Lesion-AssertionValue T2 absent
+T3	Lesion-Description 296 303	nodules
+T4	Medical-Problem 315 319;321 351	mild hyperinflation with flattening
+T5	Medical-Anatomy 359 369	diaphragms
+T6	Medical-Problem 387 399;401 408	chronic lung disease
+E5	Medical-Problem:T6
+T7	Medical-Problem 457 478;480 490	Mild bilateral apical thickening
+E6	Medical-Problem:T7
+T8	Medical-Assertion 501 503	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 504 516	pneumothorax
+T10	Medical-Problem 520 536	pleural effusion
+T11	Lesion-Assertion 562 573	No evidence
+A3	Lesion-AssertionValue T11 absent
+T12	Lesion-Anatomy 577 581	lung
+T13	Lesion-Description 582 589	nodules
+T14	Medical-Assertion 592 594	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 595 610	acute infection
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T1 has-Lesion-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

@@ -1,0 +1,32 @@
+T1	Medical-Anatomy 155 160	Lungs
+T2	Medical-Assertion 171 178	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 179 198	focal consolidation
+T4	Medical-Assertion 201 203	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 204 220	pleural effusion
+T6	Medical-Problem 225 237	pneumothorax
+T7	Medical-Assertion 304 306	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 307 328	overt pulmonary edema
+T9	Lesion-Size 425 437	1.5 x 0.8 cm
+T10	Lesion-Characteristic 438 442;444 450	soft tissue
+T11	Lesion-Description 451 458	nodular
+E8	Lesion-Description:T11
+T12	Lesion-Description 459 466	opacity
+T13	Lesion-Size-Trend 473 480	appears
+A4	Lesion-Size-TrendValue T13 no-change
+T14	Lesion-Size 536 548	0.8 x 0.2 cm
+T15	Medical-Assertion 631 633	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 634 663	acute cardiopulmonary process
+T17	Lesion-Size 670 676	1.5 cm
+T18	Lesion-Characteristic 677 694	ovoid soft tissue
+T19	Lesion-Description 695 710	nodular density
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T12 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10 has-Lesion-Size-Trend:T13 has-Lesion-Size-Past:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Lesion-Description:T19 has-Lesion-Size-Present:T17 has-Lesion-Characteristic:T18

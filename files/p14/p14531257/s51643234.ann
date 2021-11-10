@@ -1,0 +1,31 @@
+T1	Medical-Problem 310 334	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 341 352	aortic arch
+T3	Medical-Problem 356 365	calcified
+T4	Medical-Problem 423 432	Opacities
+T5	Medical-Anatomy 440 456	right upper lobe
+T6	Medical-Problem 512 539;541 563	Patchy right infrahilar and left basilar opacities
+E6	Medical-Problem:T6
+T7	Lesion-Characteristic 637 646	calcified
+T8	Lesion-Description 647 656	granuloma
+T9	Lesion-Anatomy 664 679	left lower lobe
+T10	Lesion-Size-Trend 693 702	unchanged
+A1	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 714 716	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 717 742	definite pleural effusion
+T13	Medical-Problem 746 758	pneumothorax
+T14	Medical-Problem 762 786	Minimal anterior wedging
+T15	Medical-Anatomy 792 821	lower thoracic vertebral body
+T16	Medical-Problem 826 830;832 852	mild degenerative changes
+T17	Medical-Assertion 905 920	nearly resolved
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 921 937;939 948	right upper lobe pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T16 has-Medical-Anatomy:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

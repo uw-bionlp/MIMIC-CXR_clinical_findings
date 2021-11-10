@@ -1,0 +1,19 @@
+T1	Medical-Problem 345 349;351 368	mild aortic tortuosity
+E1	Medical-Problem:T1
+T2	Medical-Problem 371 392	Post-surgical changes
+T3	Medical-Anatomy 400 416	right hemithorax
+T4	Medical-Problem 439 449	thickening
+T5	Medical-Anatomy 457 488	pleura along the costal surface
+T6	Medical-Problem 493 501	blunting
+E6	Medical-Problem:T6
+T7	Medical-Problem 536 569	right sixth rib surgical fracture
+E7	Medical-Problem:T7
+T8	Lesion-Assertion 601 603	no
+A1	Lesion-AssertionValue T8 absent
+T9	Lesion-Size-Trend 604 607	new
+A2	Lesion-Size-TrendValue T9 new
+T10	Lesion-Anatomy 608 612	lung
+T11	Lesion-Description 613 620	nodules
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E9	Lesion-Description:T11 has-Lesion-Assertion:T8 has-Lesion-Size-Trend:T9 has-Lesion-Anatomy:T10

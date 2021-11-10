@@ -1,0 +1,27 @@
+T1	Medical-Problem 280 302	Interstitial opacities
+T2	Medical-Anatomy 315 331	right upper lobe
+T3	Medical-Problem 357 376	recurrent pneumonia
+T4	Medical-Problem 379 388	Pneumonia
+E4	Medical-Problem:T4
+T5	Lesion-Anatomy 460 476	right lower lobe
+T6	Lesion-Description 477 483	nodule
+T7	Lesion-Size-Trend 487 504	unchanged in size
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 528 530	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 531 543	pneumothorax
+T10	Medical-Problem 548 576	small right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 581 586;588 603	right apical scarring
+E9	Medical-Problem:T11
+T12	Medical-Anatomy 619 632	neo esophagus
+T13	Medical-Assertion 636 639	not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 640 649	distended
+T15	Medical-Problem 718 754	Recurrent right upper lobe pneumonia
+E12	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

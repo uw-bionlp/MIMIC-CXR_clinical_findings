@@ -1,0 +1,26 @@
+T1	Medical-Problem 430 443	Pleural fluid
+T2	Medical-Anatomy 458 470;472 482	entire right hemithorax
+T3	Medical-Problem 530 546;548 559	right hemithorax volume loss
+E3	Medical-Problem:T3
+T4	Medical-Problem 565 592	rightward mediastinal shift
+E4	Medical-Problem:T4
+T5	Lesion-Count 617 625	Numerous
+T6	Lesion-Characteristic 627 634	rounded
+T7	Lesion-Description 635 645	metastases
+T8	Lesion-Anatomy 657 666	left lung
+T9	Lesion-Size-Trend 671 677	stable
+A1	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Assertion 695 697	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 699 750	interval reaccumulation of prior left pleural fluid
+T12	Medical-Assertion 805 807	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 808 820	pneumothorax
+T14	Medical-Assertion 910 912	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 914 950	reaccumulation of left pleural fluid
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E7	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

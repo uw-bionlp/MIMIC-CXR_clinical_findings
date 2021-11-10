@@ -1,0 +1,21 @@
+T1	Medical-Assertion 187 198	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 203 215	pneumothorax
+T3	Medical-Problem 218 240	Right pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 318 352	Multiple calcified pleural plaques
+T5	Medical-Anatomy 366 377	bilaterally
+T6	Medical-Problem 421 432;434 449	Patchy left basilar opacity
+E5	Medical-Problem:T6
+T7	Medical-Assertion 450 469	probably represents
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 470 481	atelectasis
+T9	Medical-Assertion 486 497	less likely
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 498 508	aspiration
+T11	Medical-Problem 513 533	infectious pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T7 has-Medical-Assertion:T9

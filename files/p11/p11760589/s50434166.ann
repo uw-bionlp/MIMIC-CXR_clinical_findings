@@ -1,0 +1,33 @@
+T1	Medical-Problem 165 199	Mild bibasilar atelectatic changes
+E1	Medical-Problem:T1
+T2	Medical-Problem 303 359	Cardiomediastinal silhouette remains moderately enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 374 404	Atherosclerotic calcifications
+T4	Medical-Anatomy 430 441	aortic arch
+T5	Medical-Anatomy 451 456	aorta
+T6	Medical-Problem 465 473	tortuous
+T7	Medical-Anatomy 502 507	lungs
+T8	Medical-Assertion 512 519	without
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 520 525;527 540	focal consolidation
+T10	Medical-Problem 544 556	pneumothorax
+T11	Medical-Assertion 559 561	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 562 577	acute fractures
+T13	Medical-Problem 614 640	Mild bibasilar atelectasis
+E11	Medical-Problem:T13
+T14	Medical-Assertion 646 648	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 649 678	acute cardiopulmonary process
+T16	Medical-Problem 697 724	Enlarged cardiac silhouette
+E13	Medical-Problem:T16
+T17	Medical-Problem 744 764	pericardial effusion
+T18	Medical-Assertion 765 769;771 793	must be clinically excluded
+A4	Medical-AssertionValue T18 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T18

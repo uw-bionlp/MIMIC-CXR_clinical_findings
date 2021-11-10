@@ -1,0 +1,45 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 56	new pleural effusion
+T3	Medical-Problem 74 90	pleural effusion
+E2	Medical-Problem:T3
+T4	Lesion-Size 191 195	1 cm
+T5	Lesion-Characteristic 196 201	round
+T6	Lesion-Description 202 209	opacity
+T7	Lesion-Anatomy 219 242	left costophrenic angle
+T8	Medical-Problem 301 316	Other opacities
+E7	Medical-Problem:T8
+T9	Medical-Problem 854 863;865 883	extensive central adenopathy
+E8	Medical-Problem:T9
+T10	Lesion-Anatomy 890 905	left suprahilar
+T11	Lesion-Description 906 910	mass
+T12	Medical-Problem 913 924	Volume loss
+T13	Medical-Anatomy 932 943;945 949	right upper lobe
+T14	Medical-Problem 954 973	vascular deficiency
+T15	Medical-Problem 985 994	emphysema
+T16	Medical-Assertion 1018 1020	no
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1022 1044	areas of consolidation
+T18	Medical-Problem 1056 1065	pneumonia
+T19	Medical-Problem 1073 1092;1094 1102	appreciable pleural effusion
+T20	Lesion-Size-Trend 1120 1123	new
+A3	Lesion-Size-TrendValue T20 new
+T21	Lesion-Size 1124 1129	small
+T22	Lesion-Anatomy 1130 1139	pulmonary
+T23	Lesion-Description 1140 1150	metastases
+T24	Medical-Problem 1202 1222	pericardial effusion
+E21	Medical-Problem:T24
+T25	Medical-Problem 1292 1327	acute or chronic pulmonary embolism
+T26	Medical-Assertion 1349 1351	no
+A4	Medical-AssertionValue T26 absent
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T14 has-Medical-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T18 has-Medical-Assertion:T16
+E17	Medical-Problem:T19 has-Medical-Assertion:T16
+E20	Lesion-Description:T23 has-Lesion-Size-Trend:T20 has-Lesion-Size-Present:T21 has-Lesion-Anatomy:T22
+E22	Medical-Problem:T25 has-Medical-Assertion:T26

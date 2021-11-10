@@ -1,0 +1,28 @@
+T1	Medical-Problem 161 172	air density
+T2	Medical-Anatomy 181 191	right apex
+T3	Medical-Assertion 211 229	more suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 230 234	lung
+T5	Medical-Problem 241 253	pneumothorax
+T6	Medical-Problem 260 269	remainder
+E5	Medical-Problem:T6
+T7	Medical-Problem 381 394;396 422	slightly less leftward mediastinal shift
+E6	Medical-Problem:T7
+T8	Medical-Assertion 423 433	suggesting
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 434 471	decreasing pleural fluid on the right
+T10	Lesion-Count 491 499	multiple
+T11	Lesion-Anatomy 500 509	pulmonary
+T12	Lesion-Description 510 517	nodules
+T13	Lesion-Anatomy 525 542	aerated left lung
+T14	Medical-Problem 577 607	massive right pleural effusion
+E12	Medical-Problem:T14
+T15	Medical-Problem 622 649	decreased mediastinal shift
+E13	Medical-Problem:T15
+T16	Medical-Problem 654 677	visible aerated lung at
+E14	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Count:T10 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T13

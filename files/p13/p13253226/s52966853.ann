@@ -1,0 +1,33 @@
+T1	Medical-Anatomy 355 376	pulmonary vasculature
+T2	Medical-Problem 380 402;404 417	mildly indistinct with cephalization
+T3	Medical-Anatomy 424 438	bilateral hila
+T4	Medical-Problem 443 459	mildly prominent
+T5	Medical-Assertion 468 470	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 471 479;481 494	definite consolidation
+T7	Medical-Assertion 686 688	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 689 705	pleural effusion
+T9	Medical-Problem 710 722	pneumothorax
+T10	Medical-Problem 725 743	Linear atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Problem 777 791	Indistinctness
+T12	Medical-Anatomy 799 820	pulmonary vasculature
+T13	Medical-Problem 826 839	cephalization
+T14	Medical-Assertion 844 857	suggestive of
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 858 878	mild pulmonary edema
+T16	Lesion-Assertion 885 887	No
+A4	Lesion-AssertionValue T16 absent
+T17	Lesion-Characteristic 888 896	definite
+T18	Lesion-Characteristic 897 904	osseous
+T19	Lesion-Description 905 915	metastases
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T14
+E15	Lesion-Description:T19 has-Lesion-Assertion:T16 has-Lesion-Characteristic:T17 has-Lesion-Characteristic:T18

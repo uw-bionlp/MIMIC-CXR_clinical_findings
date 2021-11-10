@@ -1,0 +1,45 @@
+T1	Lesion-Count 60 68	Multiple
+T2	Lesion-Anatomy 69 73	lung
+T3	Lesion-Description 74 81	nodules
+T4	Lesion-Anatomy 125 142	right middle lobe
+T5	Lesion-Description 143 149	nodule
+T6	Medical-Problem 280 297	Mild cardiomegaly
+E6	Medical-Problem:T6
+T7	Lesion-Count 369 377	Multiple
+T8	Lesion-Characteristic 378 387	scattered
+T9	Lesion-Anatomy 388 402	bilateral lung
+T10	Lesion-Description 403 410	nodules
+T11	Medical-Problem 448 472	Mildly increased opacity
+T12	Medical-Anatomy 480 496	right lower lung
+T13	Lesion-Description 514 520	nodule
+E13	Lesion-Description:T13
+T14	Medical-Problem 540 561	postprocedural change
+T15	Medical-Assertion 601 603	no
+A1	Medical-AssertionValue T15 absent
+T16	Medical-Problem 604 616	pneumothorax
+T17	Medical-Problem 620 637	pneumomediastinum
+T18	Medical-Assertion 650 652	no
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 653 669	pleural effusion
+T20	Medical-Problem 673 681	widening
+T21	Medical-Anatomy 689 700	mediastinum
+T22	Medical-Problem 718 746	Mild post-procedural changes
+T23	Medical-Anatomy 754 771	right middle lobe
+T24	Medical-Assertion 800 816	without evidence
+A3	Medical-AssertionValue T24 absent
+T25	Medical-Problem 820 832	pneumothorax
+T26	Medical-Problem 834 851	pneumomediastinum
+T27	Medical-Problem 856 864	effusion
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E10	Lesion-Description:T10 has-Lesion-Count:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9
+E11	Medical-Problem:T11 has-Medical-Anatomy:T12
+E14	Medical-Problem:T14 has-Medical-Anatomy:T12
+E15	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T17 has-Medical-Assertion:T15
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Medical-Problem:T20 has-Medical-Assertion:T18 has-Medical-Anatomy:T21
+E20	Medical-Problem:T22 has-Medical-Anatomy:T23
+E22	Medical-Problem:T25 has-Medical-Anatomy:T23 has-Medical-Assertion:T24
+E23	Medical-Problem:T26 has-Medical-Assertion:T24
+E24	Medical-Problem:T27 has-Medical-Anatomy:T23 has-Medical-Assertion:T24

@@ -1,0 +1,41 @@
+T1	Medical-Anatomy 303 308	lungs
+T2	Medical-Problem 313 326	hyperinflated
+T3	Medical-Problem 344 364	underlying emphysema
+T4	Medical-Problem 411 449	new bilateral diffuse linear opacities
+T5	Medical-Anatomy 492 502	right apex
+T6	Medical-Assertion 504 525	Differential includes
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 526 535;537 556	pulmonary vascular congestion
+T8	Medical-Problem 561 586	interstitial lung disease
+T9	Lesion-Assertion 602 608;610 617	cannot exclude
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Characteristic 618 628	underlying
+T11	Lesion-Description 629 639	malignancy
+T12	Lesion-Anatomy 647 657	right apex
+T13	Medical-Problem 713 723	flattening
+T14	Medical-Anatomy 731 750	right hemidiaphragm
+T15	Medical-Assertion 753 755	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 757 784	acute osseous abnormalities
+T17	Medical-Problem 805 843	New diffuse bilateral linear opacities
+E14	Medical-Problem:T17
+T18	Medical-Assertion 845 858	may be due to
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 859 877;879 889	pulmonary vascular congestion
+T20	Medical-Problem 892 893	.
+E16	Medical-Problem:T20
+T21	Medical-Problem 894 914	chronic lung disease
+T22	Lesion-Characteristic 932 942	underlying
+T23	Lesion-Anatomy 943 955	right apical
+T24	Lesion-Description 957 961	mass
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T18
+E20	Lesion-Description:T24 has-Lesion-Characteristic:T22 has-Lesion-Anatomy:T23

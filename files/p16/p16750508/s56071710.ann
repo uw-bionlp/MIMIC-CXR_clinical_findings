@@ -1,0 +1,36 @@
+T1	Medical-Problem 268 284	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 296 306	prominence
+T3	Medical-Anatomy 314 340;342 353	hila and central pulmonary vasculature
+T4	Lesion-Anatomy 365 416	posterior right eighth rib/anterior right third rib
+T5	Lesion-Size 430 434	5-mm
+T6	Lesion-Description 435 442	nodular
+T7	Lesion-Description 443 450	opacity
+T8	Lesion-Assertion 505 532	could potentially represent
+A1	Lesion-AssertionValue T8 possible
+T9	Lesion-Description 533 544	bone island
+T10	Medical-Assertion 628 630	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 631 638;640 648	pleural effusion
+T12	Medical-Problem 652 664	pneumothorax
+T13	Medical-Assertion 716 722	likely
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 723 766;768 783	moderate pulmonary vascular congestion/mild pulmonary edema
+T15	Lesion-Size 786 790	5-mm
+T16	Lesion-Description 791 798	nodular
+E13	Lesion-Description:T16
+T17	Lesion-Description 799 806	opacity
+T18	Lesion-Anatomy 827 845	right mid lung, at
+T19	Lesion-Assertion 917 922;924 942	could possibly represent
+A4	Lesion-AssertionValue T19 possible
+T20	Lesion-Description 945 956	bone island
+T21	Lesion-Anatomy 978 987	ninth rib
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Size-Present:T5
+E8	Lesion-Description:T9 has-Lesion-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Lesion-Description:T17 has-Lesion-Size-Present:T15 has-Lesion-Anatomy:T18
+E16	Lesion-Description:T20 has-Lesion-Assertion:T19 has-Lesion-Anatomy:T21

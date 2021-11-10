@@ -1,0 +1,26 @@
+T1	Medical-Problem 256 272;274 277	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 376 400	subtle increased opacity
+T3	Medical-Anatomy 408 419	lower lungs
+T4	Medical-Assertion 427 442	could represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 443 473	crowding of bronchovasculature
+T6	Medical-Problem 505 520	early pneumonia
+T7	Medical-Assertion 524 545	impossible to exclude
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 548 550	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 551 567	pleural effusion
+T10	Medical-Problem 572 584	pneumothorax
+T11	Medical-Problem 675 691	Subtle opacities
+T12	Medical-Anatomy 699 722	lower lungs bilaterally
+T13	Medical-Assertion 723 738	could represent
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 740 755	early pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

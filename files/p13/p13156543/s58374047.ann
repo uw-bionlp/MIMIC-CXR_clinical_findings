@@ -1,0 +1,16 @@
+T1	Medical-Assertion 197 199;201 209	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 213 218	large
+E1	Medical-Problem:T2
+T3	Lesion-Anatomy 219 224	hilar
+T4	Lesion-Anatomy 228 239	mediastinal
+T5	Lesion-Description 240 255	lymphadenopathy
+T6	Medical-Problem 257 266	pneumonia
+T7	Medical-Assertion 279 281	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 282 294	pneumothorax
+T9	Medical-Problem 298 314	pleural effusion
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T1
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

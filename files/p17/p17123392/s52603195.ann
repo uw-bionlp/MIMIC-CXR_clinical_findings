@@ -1,0 +1,36 @@
+T1	Medical-Anatomy 145 155	heart size
+E1	Medical-Anatomy:T1
+T2	Medical-Assertion 254 256	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 258 288	pulmonary vascular engorgement
+T4	Medical-Problem 291 316	Minimal streaky opacities
+T5	Medical-Anatomy 320 330	lung bases
+T6	Medical-Assertion 332 346	likely reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 347 358	atelectasis
+T8	Medical-Assertion 361 363	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 364 380	pleural effusion
+T10	Medical-Problem 384 396	pneumothorax
+T11	Medical-Assertion 407 409	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 411 419	free air
+T13	Medical-Anatomy 429 434	under
+T14	Medical-Assertion 461 463	no
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 464 477;479 490	acute osseous abnormality
+T16	Medical-Problem 508 530	Unchanged cardiomegaly
+E11	Medical-Problem:T16
+T17	Medical-Problem 536 562	mild bibasilar atelectasis
+E12	Medical-Problem:T17
+T18	Medical-Assertion 565 567;569 577	No evidence
+A6	Medical-AssertionValue T18 absent
+T19	Medical-Problem 581 605	free intraperitoneal air
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T19 has-Medical-Assertion:T18

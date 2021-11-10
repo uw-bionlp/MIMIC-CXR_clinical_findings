@@ -1,0 +1,28 @@
+T1	Medical-Problem 316 338	complete opacification
+T2	Medical-Anatomy 346 361	left hemithorax
+T3	Medical-Problem 394 416	large pleural effusion
+T4	Medical-Problem 421 432	atelectasis
+T5	Lesion-Description 437 442	tumor
+E5	Lesion-Description:T5
+T6	Lesion-Count 445 453	Multiple
+T7	Lesion-Description 455 462	nodules
+T8	Lesion-Anatomy 470 480	right lung
+T9	Medical-Assertion 518 520	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 522 534	pneumothorax
+T11	Medical-Problem 557 595;597 616	displacement of the cardiac silhouette shifted to the left
+E10	Medical-Problem:T11
+T12	Medical-Problem 738 760	Complete opacification
+T13	Medical-Anatomy 764 779	left hemithorax
+T14	Medical-Problem 811 816;818 834	large pleural effusion
+E13	Medical-Problem:T14
+T15	Medical-Problem 836 847	atelectasis
+E14	Medical-Problem:T15
+T16	Medical-Problem 849 854;856 856;858 879	tumor  Apparent displacement
+E15	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E7	Lesion-Description:T7 has-Lesion-Count:T6 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13

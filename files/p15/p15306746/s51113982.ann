@@ -1,0 +1,81 @@
+T1	Medical-Problem 34 50	Relative lucency
+T2	Medical-Anatomy 58 67	left apex
+T3	Medical-Assertion 116 129	indeterminate
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 134 146	pneumothorax
+T5	Medical-Problem 199 222	Stable severe scoliosis
+E4	Medical-Problem:T5
+T6	Medical-Problem 485 488	CHF
+E5	Medical-Problem:T6
+T7	Medical-Problem 673 693	mildly hyperinflated
+E6	Medical-Problem:T7
+T8	Medical-Assertion 698 723	free of any indication of
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 725 747	cardiac decompensation
+T10	Medical-Problem 751 760	pneumonia
+T11	Medical-Problem 771 790	focal abnormalities
+E9	Medical-Problem:T11
+T12	Lesion-Assertion 822 830	unlikely
+A3	Lesion-AssertionValue T12 absent
+T13	Lesion-Anatomy 860 864	lung
+T14	Lesion-Description 865 872	lesions
+T15	Medical-Problem 879 897	elliptical opacity
+T16	Medical-Anatomy 934 957;959 1002	left upper chest at the level of the second and third anterior ribs
+T17	Medical-Problem 1078 1104	vague superolateral margin
+E14	Medical-Problem:T17
+T18	Lesion-Assertion 1106 1114	suggests
+A4	Lesion-AssertionValue T18 possible
+T19	Lesion-Assertion 1123 1126	not
+A5	Lesion-AssertionValue T19 absent
+T20	Lesion-Anatomy 1129 1133	lung
+T21	Lesion-Description 1134 1140	lesion
+T22	Medical-Assertion 1146 1154	could be
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1157 1173;1175 1185	fissural pleural loculation
+T24	Medical-Problem 1190 1213	pleural or extrapleural
+E18	Medical-Problem:T24
+T25	Lesion-Description 1214 1220	lipoma
+E19	Lesion-Description:T25
+T26	Lesion-Characteristic 1226 1244	irregularly shaped
+T27	Lesion-Size 1245 1250	12 mm
+T28	Lesion-Characteristic 1252 1256	wide
+T29	Lesion-Characteristic 1257 1269	highly dense
+T30	Lesion-Description 1270 1276	lesion
+T31	Lesion-Anatomy 1297 1322	right fourth anterior rib
+T32	Medical-Assertion 1323 1328;1330 1332	could be
+A7	Medical-AssertionValue T32 possible
+T33	Medical-Problem 1333 1367	calcification in the rib or pleura
+T34	Medical-Assertion 1379 1381	no
+A8	Medical-AssertionValue T34 absent
+T35	Medical-Problem 1382 1398	pleural effusion
+T36	Medical-Problem 1403 1415	pneumothorax
+T37	Lesion-Description 1437 1444	nodular
+E29	Lesion-Description:T37
+T38	Lesion-Description 1445 1452	opacity
+T39	Lesion-Anatomy 1473 1477;1479 1505	left fourth anterior interspace
+T40	Lesion-Assertion 1506 1521	could be either
+A9	Lesion-AssertionValue T40 possible
+T41	Lesion-Anatomy 1524 1528	lung
+T42	Lesion-Anatomy 1532 1542	chest wall
+T43	Lesion-Description 1543 1549	lesion
+T44	Medical-Problem 1554 1564	Dystrophic
+T45	Medical-Problem 1565 1578	calcification
+T46	Medical-Anatomy 1586 1621	apical pleural surfaces bilaterally
+T47	Medical-Problem 1650 1662	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Lesion-Description:T14 has-Lesion-Assertion:T12 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Lesion-Description:T21 has-Lesion-Assertion:T18 has-Lesion-Assertion:T19 has-Lesion-Anatomy:T20
+E17	Medical-Problem:T23 has-Medical-Assertion:T22
+E24	Lesion-Description:T30 has-Lesion-Characteristic:T26 has-Lesion-Size-Present:T27 has-Lesion-Characteristic:T28 has-Lesion-Characteristic:T29 has-Lesion-Anatomy:T31
+E26	Medical-Problem:T33 has-Medical-Assertion:T32
+E27	Medical-Problem:T35 has-Medical-Assertion:T34
+E28	Medical-Problem:T36 has-Medical-Assertion:T34
+E30	Lesion-Description:T38 has-Lesion-Anatomy:T39
+E34	Lesion-Description:T43 has-Lesion-Assertion:T40 has-Lesion-Anatomy:T41 has-Lesion-Anatomy:T42
+E35	Medical-Problem:T44 has-Medical-Anatomy:T46
+E36	Medical-Problem:T45 has-Medical-Anatomy:T46
+E38	Medical-Problem:T47 has-Medical-Anatomy:T46

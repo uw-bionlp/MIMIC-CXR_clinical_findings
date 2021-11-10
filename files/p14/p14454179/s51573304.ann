@@ -1,0 +1,34 @@
+T1	Medical-Problem 359 383	persistent opacification
+T2	Medical-Anatomy 391 406	left hemithorax
+T3	Medical-Problem 412 416;418 435	some residual aeration
+T4	Medical-Anatomy 443 458	left lower lobe
+T5	Medical-Problem 475 486	volume loss
+T6	Medical-Problem 492 533	mediastinal and cardiac shift to the left
+T7	Medical-Assertion 981 997	without evidence
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 1001 1029	focal airspace consolidation
+T9	Medical-Problem 1031 1040;1042 1047	pulmonary edema
+T10	Medical-Problem 1052 1068	pleural effusion
+T11	Lesion-Size-Trend 1082 1088	stable
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Characteristic 1089 1098	calcified
+T13	Lesion-Description 1099 1105	nodule
+T14	Lesion-Size 1116 1119;1121 1123	1.3 cm
+T15	Lesion-Anatomy 1131 1149	seventh interspace
+T16	Lesion-Assertion 1157 1179	most likely represents
+A3	Lesion-AssertionValue T16 possible
+T17	Lesion-Characteristic 1182 1191	calcified
+T18	Lesion-Description 1193 1202	granuloma
+T19	Lesion-Assertion 1205 1207	No
+A4	Lesion-AssertionValue T19 absent
+T20	Medical-Problem 1208 1230	acute bony abnormality
+E16	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E11	Lesion-Description:T13 has-Lesion-Size-Trend:T11 has-Lesion-Characteristic:T12 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T15
+E15	Lesion-Description:T18 has-Lesion-Assertion:T16 has-Lesion-Characteristic:T17

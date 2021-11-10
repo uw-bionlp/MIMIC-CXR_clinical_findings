@@ -1,0 +1,21 @@
+T1	Medical-Problem 260 287	Heterogeneous opacification
+T2	Medical-Anatomy 295 336;338 345	left lower lung, including lower lobe and lingula
+T3	Medical-Problem 383 413;415 428	small regions of peribronchial consolidation
+T4	Lesion-Characteristic 436 461	nearly nodular appearance
+E4	Lesion-Characteristic:T4
+T5	Medical-Anatomy 469 483	right mid lung
+T6	Medical-Problem 512 531	bilateral pneumonia
+E6	Medical-Problem:T6
+T7	Lesion-Assertion 545 556	no evidence
+A1	Lesion-AssertionValue T7 absent
+T8	Lesion-Characteristic 560 567	central
+T9	Lesion-Description 568 578	adenopathy
+T10	Medical-Assertion 583 585	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 586 602	pleural effusion
+T12	Medical-Problem 840 850	mycoplasma
+E10	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T5
+E8	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Characteristic:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

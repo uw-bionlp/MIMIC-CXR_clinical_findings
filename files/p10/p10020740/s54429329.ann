@@ -1,0 +1,18 @@
+T1	Medical-Problem 323 344	Progressive elevation
+T2	Medical-Anatomy 352 367	right lung base
+T3	Medical-Problem 381 390;392 405	worsening consolidation
+T4	Medical-Anatomy 413 423	lower lung
+T5	Medical-Assertion 424 432	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 433 451	severe atelectasis
+T7	Medical-Problem 468 504	away moderate right pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Assertion 564 571	suggest
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 572 594	large scale aspiration
+T10	Medical-Problem 598 617;619 629	difficulty clearing secretions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

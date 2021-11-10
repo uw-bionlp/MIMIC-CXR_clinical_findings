@@ -1,0 +1,25 @@
+T1	Medical-Problem 195 234	Multifocal heterogeneous lung opacities
+T2	Medical-Anatomy 243 281	right upper lobes and both lower lobes
+T3	Medical-Problem 312 341	slight worsening at the bases
+T4	Medical-Assertion 359 372	may be due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 373 383;385 394	multifocal pneumonia
+T6	Medical-Assertion 396 411	probably on the
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 421 441	recurrent aspiration
+T8	Medical-Problem 448 459	similar but
+E6	Medical-Problem:T8
+T9	Lesion-Size 655 659	8 mm
+T10	Lesion-Characteristic 669 674	round
+T11	Lesion-Description 675 682	opacity
+T12	Lesion-Anatomy 691 730	periphery of the left upper hemi thorax
+T13	Lesion-Anatomy 881 890	pulmonary
+T14	Lesion-Description 891 897	nodule
+T15	Lesion-Assertion 901 913	not excluded
+A3	Lesion-AssertionValue T15 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T13 has-Lesion-Assertion:T15

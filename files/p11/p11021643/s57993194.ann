@@ -1,0 +1,23 @@
+T1	Medical-Problem 190 213	new focal consolidation
+T2	Medical-Anatomy 221 236	right lung base
+T3	Medical-Problem 250 254;256 277	hazy left mid lung opacity
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 284 289	lungs
+T5	Medical-Assertion 310 317	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 318 326	effusion
+T7	Medical-Problem 331 342	overt edema
+T8	Medical-Problem 345 373	Moderate cardiac enlargement
+E7	Medical-Problem:T8
+T9	Medical-Assertion 422 424	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 425 452	acute osseous abnormalities
+T11	Medical-Problem 570 594	Regions of consolidation
+T12	Medical-Anatomy 602 617	right lung base
+T13	Medical-Problem 659 668	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12

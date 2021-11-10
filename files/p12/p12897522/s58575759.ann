@@ -1,0 +1,17 @@
+T1	Medical-Problem 380 393	bolus changes
+T2	Medical-Anatomy 401 416	right lung base
+T3	Medical-Problem 454 457;459 467	new evidence
+E3	Medical-Problem:T3
+T4	Medical-Problem 471 502	new focal parenchymal opacities
+E4	Medical-Problem:T4
+T5	Medical-Assertion 503 513	suggesting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 514 527	new pneumonia
+T7	Medical-Problem 530 537;539 572	Minimal scarring around the bolus changes
+E6	Medical-Problem:T7
+T8	Medical-Assertion 594 596	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 597 614	pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

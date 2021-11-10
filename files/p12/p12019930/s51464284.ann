@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 300 305	lungs
+T2	Medical-Problem 311 324	hyperinflated
+T3	Medical-Assertion 334 347	suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 348 363	underlying COPD
+T5	Medical-Assertion 375 386;388 396	no definite evidence
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 400 409	pneumonia
+T7	Medical-Problem 413 422	overt CHF
+T8	Medical-Problem 434 459	mild left basilar opacity
+E6	Medical-Problem:T8
+T9	Medical-Assertion 467 482	could represent
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 483 494	atelectasis
+T11	Medical-Problem 501 529	heart is moderately enlarged
+E8	Medical-Problem:T11
+T12	Medical-Assertion 557 559	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 560 572	pneumothorax
+T14	Medical-Problem 619 647	COPD with left basal opacity
+E10	Medical-Problem:T14
+T15	Medical-Assertion 654 669	could represent
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 670 681	atelectasis
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

@@ -1,0 +1,15 @@
+T1	Medical-Problem 379 388	pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Assertion 391 393	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 394 401;403 412	pleural effusions
+T4	Medical-Assertion 415 417	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 418 433	pulmonary edema
+T6	Lesion-Assertion 435 437	no
+A3	Lesion-AssertionValue T6 absent
+T7	Lesion-Anatomy 438 447	pulmonary
+T8	Lesion-Description 448 455	nodules
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7

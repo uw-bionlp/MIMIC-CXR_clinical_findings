@@ -1,0 +1,27 @@
+T1	Medical-Problem 177 193	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 205 222	mild cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 278 302	mild vascular congestion
+E3	Medical-Problem:T3
+T4	Lesion-Description 305 320	Nodular opacity
+T5	Lesion-Anatomy 329 339	right base
+T6	Lesion-Assertion 343 349	likely
+A1	Lesion-AssertionValue T6 possible
+T7	Lesion-Characteristic 352 361	calcified
+T8	Lesion-Description 362 371	granuloma
+T9	Medical-Problem 391 398;400 421	smaller rounded dense opacity
+T10	Medical-Anatomy 433 477	between fifth and sixth right posterior ribs
+T11	Lesion-Assertion 485 491	likely
+A2	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 494 503	granuloma
+T13	Medical-Assertion 515 526	no evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 530 549	focal consolidation
+T15	Medical-Problem 565 574	pneumonia
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Lesion-Description:T12 has-Lesion-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

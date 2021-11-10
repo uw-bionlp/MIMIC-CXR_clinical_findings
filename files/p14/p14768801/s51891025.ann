@@ -1,0 +1,30 @@
+T1	Medical-Assertion 493 501	might be
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 505 518	discontinuity
+T3	Medical-Problem 642 655	discontinuity
+E2	Medical-Problem:T3
+T4	Medical-Problem 669 678	Lungs are
+E3	Medical-Problem:T4
+T5	Medical-Problem 679 692	hyperexpanded
+E4	Medical-Problem:T5
+T6	Medical-Assertion 693 703	suggesting
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 704 713	emphysema
+T8	Medical-Problem 717 742	small airways obstruction
+T9	Medical-Problem 746 762	Linear opacities
+T10	Medical-Anatomy 766 776	both lungs
+T11	Medical-Problem 781 792	atelectasis
+T12	Medical-Problem 796 804	scarring
+T13	Medical-Assertion 817 819	no
+A3	Medical-AssertionValue T13 absent
+T14	Lesion-Anatomy 820 824	lung
+T15	Lesion-Description 826 833	nodules
+T16	Medical-Problem 837 850	consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T13

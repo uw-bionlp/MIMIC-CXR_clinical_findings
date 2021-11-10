@@ -1,0 +1,22 @@
+T1	Medical-Problem 256 287	persistent linear consolidation
+T2	Medical-Anatomy 295 304	left lung
+T3	Medical-Problem 328 339	atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 346 351	lungs
+T5	Medical-Assertion 372 379	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 381 394	consolidation
+T7	Medical-Problem 398 403	edema
+T8	Medical-Assertion 415 417	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 418 434	pleural effusion
+T10	Medical-Problem 438 450	pneumothorax
+T11	Medical-Assertion 570 572	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 573 602	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

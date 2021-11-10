@@ -1,0 +1,38 @@
+T1	Medical-Anatomy 261 272	aortic knob
+T2	Medical-Problem 276 285	calcified
+T3	Medical-Assertion 288 290	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 291 320	pulmonary vascular congestion
+T5	Medical-Anatomy 335 340	Lungs
+T6	Medical-Problem 348 361	hyperinflated
+T7	Medical-Problem 448 457	emphysema
+T8	Medical-Problem 460 467;469 478	Streaky opacities
+T9	Medical-Anatomy 486 496	lung bases
+T10	Medical-Assertion 497 513	likely indicates
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 514 525	atelectasis
+T12	Medical-Assertion 528 530	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 531 547	pleural effusion
+T14	Medical-Problem 552 564	pneumothorax
+T15	Medical-Assertion 591 593	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 594 621	acute osseous abnormalities
+T17	Medical-Problem 641 658	Streaky opacities
+T18	Medical-Anatomy 666 676	lung bases
+T19	Medical-Assertion 677 697	likely reflective of
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 698 709	atelectasis
+T21	Medical-Problem 713 722	Emphysema
+E16	Medical-Problem:T21
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19

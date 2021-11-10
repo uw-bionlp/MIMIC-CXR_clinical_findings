@@ -1,0 +1,45 @@
+T1	Medical-Problem 33 70	Moderate interstitial pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 73 95	Heterogenous opacities
+T3	Medical-Anatomy 103 108;110 149	right  mid-to-lower lung and right upper lung
+T4	Medical-Assertion 150 165	could be due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 166 182	asymmetric edema
+T6	Medical-Problem 225 243	infectious process
+T7	Medical-Assertion 600 607	absence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 639 672	Moderately severe pulmonary edema
+T9	Medical-Problem 738 769	greater perihilar opacification
+T10	Medical-Anatomy 789 794;796 800	lower lobe
+T11	Medical-Assertion 807 815	could be
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 816 832	asymmetric edema
+T13	Medical-Problem 836 856	concurrent pneumonia
+T14	Lesion-Assertion 941 947;949 962	should be considered
+A4	Lesion-AssertionValue T14 possible
+T15	Lesion-Anatomy 965 969	lung
+T16	Lesion-Description 970 974	mass
+T17	Medical-Assertion 1011 1013	no
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1014 1042	appreciable pleural effusion
+T19	Medical-Problem 1079 1102	vasculature is engorged
+E14	Medical-Problem:T19
+T20	Medical-Anatomy 1118 1140	left lower mediastinal
+T21	Medical-Assertion 1153 1168	probably due to
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1169 1182	hiatus hernia
+T23	Lesion-Assertion 1188 1196	could be
+A7	Lesion-AssertionValue T23 possible
+T24	Lesion-Anatomy 1199 1209	paraspinal
+T25	Lesion-Description 1210 1216	lesion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Lesion-Description:T16 has-Lesion-Assertion:T14 has-Lesion-Anatomy:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E18	Lesion-Description:T25 has-Lesion-Assertion:T23 has-Lesion-Anatomy:T24

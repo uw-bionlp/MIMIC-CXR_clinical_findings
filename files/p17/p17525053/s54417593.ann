@@ -1,0 +1,31 @@
+T1	Medical-Problem 352 367	volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 379 394	streaky density
+T3	Medical-Anatomy 402 412	lung bases
+T4	Medical-Problem 430 454	subsegmental atelectasis
+T5	Medical-Problem 466 489	additional hazy density
+T6	Medical-Anatomy 497 502;504 513	right lung base
+T7	Medical-Assertion 514 527	suggestive of
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 528 541	pleural fluid
+T9	Medical-Problem 546 579	small focal area of consolidation
+T10	Medical-Anatomy 588 598	right base
+T11	Medical-Problem 784 795	atelectasis
+E10	Medical-Problem:T11
+T12	Medical-Problem 804 811	opacity
+E11	Medical-Problem:T12
+T13	Medical-Anatomy 819 829;831 835	right lung base
+T14	Medical-Assertion 836 855	likely representing
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 856 869	pleural fluid
+T16	Medical-Problem 889 908;910 923	small focal area of consolidation
+T17	Medical-Anatomy 931 941	right base
+T18	Medical-Assertion 942 969	cannot be excluded, however
+A3	Medical-AssertionValue T18 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

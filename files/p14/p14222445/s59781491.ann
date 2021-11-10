@@ -1,0 +1,20 @@
+T1	Medical-Problem 227 244	Complete collapse
+T2	Medical-Anatomy 252 261	left lung
+T3	Lesion-Anatomy 276 289	endobronchial
+T4	Lesion-Description 290 294	mass
+T5	Medical-Problem 340 356	Subsequent shift
+T6	Medical-Anatomy 365 397	mediastinum and the heart to the
+T7	Medical-Anatomy 408 418	right lung
+T8	Medical-Problem 422 443	slightly overinflated
+T9	Medical-Assertion 455 457	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 458 486	relevant acute abnormalities
+T11	Medical-Assertion 489 491	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 492 514	right pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

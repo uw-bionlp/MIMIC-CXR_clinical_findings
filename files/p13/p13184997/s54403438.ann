@@ -1,0 +1,39 @@
+T1	Medical-Problem 270 287	increased density
+T2	Medical-Anatomy 295 313	right hilar region
+T3	Medical-Problem 318 325;327 340	streaky opacification
+T4	Medical-Anatomy 348 363	right lung base
+T5	Medical-Problem 366 374	Blunting
+T6	Medical-Anatomy 382 400;402 407	right costophrenic angle
+T7	Medical-Assertion 408 416	suggests
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 419 441	small pleural effusion
+T9	Medical-Problem 444 455	Eventration
+T10	Medical-Anatomy 463 468;470 483	right hemidiaphragm
+T11	Medical-Assertion 499 501	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 502 514	pneumothorax
+T13	Medical-Anatomy 533 542	left lung
+T14	Medical-Problem 569 588	minimal atelectasis
+T15	Medical-Problem 704 733	Increased right hilar opacity
+E13	Medical-Problem:T15
+T16	Medical-Assertion 735 746	potentially
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 747 765;767 773	enlarged pulmonary artery
+T18	Medical-Problem 775 786	adenopathay
+E15	Medical-Problem:T18
+T19	Medical-Problem 802 830	Subtle right basilar opacity
+E16	Medical-Problem:T19
+T20	Medical-Assertion 831 844	may represent
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 848 859	atelectasis
+T22	Medical-Problem 863 883	developing pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T20

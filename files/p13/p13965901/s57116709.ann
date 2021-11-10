@@ -1,0 +1,35 @@
+T1	Medical-Problem 473 478;480 494	wedge shaped opacity
+T2	Medical-Anatomy 502 520	right hilar region
+T3	Medical-Problem 550 558	collapse
+T4	Medical-Anatomy 567 607	superior segment of the right lower lobe
+T5	Lesion-Characteristic 621 637	apparent central
+T6	Lesion-Anatomy 640 656	right juxtahilar
+T7	Lesion-Description 657 661	mass
+T8	Medical-Problem 663 692	Small amount of pleural fluid
+T9	Medical-Anatomy 712 717;719 732	right minor fissure
+T10	Medical-Assertion 849 860	No evidence
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 864 876	complication
+T12	Medical-Anatomy 965 1001	Superior segment of right lower lobe
+T13	Medical-Problem 1005 1014	collapsed
+T14	Medical-Problem 1024 1038;1040 1053	adjacent right hilar opacity
+E13	Medical-Problem:T14
+T15	Lesion-Assertion 1054 1072	raises concern for
+A2	Lesion-AssertionValue T15 possible
+T16	Lesion-Characteristic 1073 1083	underlying
+T17	Lesion-Description 1084 1088	mass
+T18	Lesion-Description 1154 1162	neoplasm
+E16	Lesion-Description:T18
+T19	Lesion-Description 1171 1180	carcinoid
+E17	Lesion-Description:T19
+T20	Lesion-Description 1184 1192	lymphoma
+E18	Lesion-Description:T20
+T21	Medical-Problem 1201 1220	agressive infection
+E19	Medical-Problem:T21
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T12
+E15	Lesion-Description:T17 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16

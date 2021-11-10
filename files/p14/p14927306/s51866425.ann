@@ -1,0 +1,23 @@
+T1	Medical-Problem 268 288	persistent elevation
+T2	Medical-Anatomy 296 315	right hemidiaphragm
+T3	Medical-Problem 347 357	Prominence
+T4	Medical-Anatomy 365 386	pulmonary vasculature
+T5	Medical-Assertion 393 401	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 402 406;408 436	mild interstitial pulmonary edema
+T7	Medical-Assertion 491 493	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 494 510	pleural effusion
+T9	Medical-Problem 514 526	pneumothorax
+T10	Medical-Problem 606 626	Degenerative changes
+E8	Medical-Problem:T10
+T11	Medical-Problem 673 717	Persistent mild interstitial pulmonary edema
+E9	Medical-Problem:T11
+T12	Medical-Problem 719 739	Persistent elevation
+T13	Medical-Anatomy 748 767	right hemidiaphragm
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13

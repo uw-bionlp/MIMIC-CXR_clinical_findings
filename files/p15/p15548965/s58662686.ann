@@ -1,0 +1,30 @@
+T1	Lesion-Count 385 393	multiple
+T2	Lesion-Anatomy 394 403	pulmonary
+T3	Lesion-Description 405 415	metastases
+T4	Lesion-Size-Trend 421 426	grown
+A1	Lesion-Size-TrendValue T4 increasing
+T5	Medical-Assertion 488 490	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 491 503	pneumothorax
+T7	Medical-Assertion 514 516	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 517 536	focal consolidation
+T9	Medical-Problem 538 554	pleural effusion
+T10	Medical-Problem 560 575	pulmonary edema
+T11	Medical-Problem 582 606	heart is stably enlarged
+E8	Medical-Problem:T11
+T12	Medical-Assertion 631 642	No evidence
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 646 675	acute cardiopulmonary process
+T14	Lesion-Size-Trend 681 696	Interval growth
+A5	Lesion-Size-TrendValue T14 increasing
+T15	Lesion-Count 700 708	multiple
+T16	Lesion-Anatomy 709 718	pulmonary
+T17	Lesion-Description 719 729	metastases
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Lesion-Description:T17 has-Lesion-Size-Trend:T14 has-Lesion-Count:T15 has-Lesion-Anatomy:T16

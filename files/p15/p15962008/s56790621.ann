@@ -1,0 +1,25 @@
+T1	Medical-Assertion 240 242	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 243 248;250 263	focal consolidation
+T3	Medical-Problem 265 273	effusion
+T4	Medical-Problem 277 289	pneumothorax
+T5	Medical-Anatomy 296 301	lungs
+T6	Medical-Problem 309 327;329 349	hyperinflated with flattened diaphragms
+T7	Medical-Assertion 350 363	suggestive of
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 364 384	underlying emphysema
+T9	Medical-Assertion 491 493	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 494 502	free air
+T11	Medical-Problem 550 569	Hyperinflated lungs
+E8	Medical-Problem:T11
+T12	Medical-Assertion 570 577	without
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 578 597	focal consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

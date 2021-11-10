@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 204 217	right humerus
+T2	Medical-Problem 221 240	superiorly subluxed
+T3	Medical-Problem 253 275	some increased opacity
+T4	Medical-Anatomy 283 303	right inferior hilum
+T5	Lesion-Assertion 309 324	could represent
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 328 337	calcified
+T7	Lesion-Description 338 342	node
+T8	Medical-Anatomy 349 374	right paratracheal stripe
+T9	Medical-Problem 383 392	prominent
+T10	Medical-Assertion 398 406;408 414	could be due to
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 415 431	vascular changes
+T12	Lesion-Description 435 445	adenopathy
+E10	Lesion-Description:T12
+T13	Medical-Problem 458 481	increased lung markings
+T14	Medical-Anatomy 490 500	right base
+T15	Medical-Assertion 506 508	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 509 528	definite infiltrate
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

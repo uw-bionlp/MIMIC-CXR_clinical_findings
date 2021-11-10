@@ -1,0 +1,35 @@
+T1	Medical-Problem 203 220;222 242	preexisting right lower lung pneumonia
+T2	Medical-Assertion 243 266	has completely resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Assertion 278 289	no evidence
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 293 300;302 359	remnant parenchymal opacities suggestive of an infectious process
+T5	Medical-Anatomy 367 372	chest
+T6	Lesion-Size-Trend 377 386	Unchanged
+A3	Lesion-Size-TrendValue T6 no-change
+T7	Lesion-Anatomy 387 396	bilateral
+T8	Lesion-Characteristic 397 406	calcified
+T9	Lesion-Anatomy 407 412	hilar
+T10	Lesion-Description 413 424	lymph nodes
+T11	Medical-Problem 429 455;457 467	bilateral calcified apical thickening
+E8	Medical-Problem:T11
+T12	Lesion-Size 472 477	small
+T13	Lesion-Characteristic 478 487	calcified
+T14	Lesion-Description 488 498	granulomas
+T15	Medical-Assertion 501 503	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 504 517	acute changes
+T17	Medical-Problem 520 530	Borderline
+E13	Medical-Problem:T17
+T18	Medical-Problem 564 574	tortuosity
+T19	Medical-Anatomy 582 596	thoracic aorta
+T20	Medical-Assertion 599 601	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 602 609;611 619	pleural effusion
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E7	Lesion-Description:T10 has-Lesion-Size-Trend:T6 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9
+E11	Lesion-Description:T14 has-Lesion-Size-Present:T12 has-Lesion-Characteristic:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

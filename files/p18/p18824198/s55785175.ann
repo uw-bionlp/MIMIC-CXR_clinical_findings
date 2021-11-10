@@ -1,0 +1,33 @@
+T1	Medical-Anatomy 325 346	pulmonary vascularity
+T2	Medical-Assertion 350 353	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 354 362	engorged
+T4	Medical-Problem 365 373	Blunting
+T5	Medical-Anatomy 382 413	costophrenic angles bilaterally
+T6	Medical-Problem 433 456;458 467	small bilateral pleural effusions
+T7	Medical-Problem 492 509	Streaky opacities
+T8	Medical-Anatomy 513 523	lung bases
+T9	Medical-Assertion 524 530;532 539	likely reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 540 551	atelectasis
+T11	Medical-Assertion 554 556	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 557 569	pneumothorax
+T13	Medical-Problem 596 600;602 622	mild degenerative changes
+T14	Medical-Anatomy 630 644	thoracic spine
+T15	Medical-Problem 664 681	Streaky opacities
+T16	Medical-Anatomy 693 703	lung bases
+T17	Medical-Assertion 704 718	likely reflect
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 719 740	bibasilar atelectasis
+T19	Medical-Problem 744 769	Small bilateral effusions
+E15	Medical-Problem:T19
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 292 297	lungs
+T2	Medical-Assertion 302 307	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 312 331	focal consolidation
+T4	Medical-Problem 333 341	effusion
+T5	Medical-Problem 346 375	pulmonary vascular congestion
+T6	Medical-Problem 382 389;391 401	cardiac silhouette
+E5	Medical-Problem:T6
+T7	Medical-Problem 421 436	lobular contour
+T8	Medical-Anatomy 444 462	right heart border
+T9	Medical-Problem 494 519	prominent mediastinal fat
+T10	Medical-Anatomy 546 564	Osseous structures
+T11	Medical-Assertion 577 579	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 580 605	acute osseous abnormality
+T13	Medical-Problem 608 619;621 644	Accentuated lower thoracic kyphosis
+E11	Medical-Problem:T13
+T14	Medical-Problem 660 695;697 701	mild anterior vertebral body height loss
+E12	Medical-Problem:T14
+T15	Medical-Assertion 719 721	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 722 751	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

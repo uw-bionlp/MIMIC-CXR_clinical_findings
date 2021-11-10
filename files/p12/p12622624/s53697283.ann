@@ -1,0 +1,34 @@
+T1	Medical-Assertion 73 75	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 76 94	large pneumothorax
+T3	Medical-Problem 96 107;109 138	Moderate to  large right pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 159 166;168 182	greater  opacification
+T5	Medical-Anatomy 190 212	base of the right lung
+T6	Medical-Problem 233 242	pneumonia
+T7	Medical-Problem 248 259	atelectasis
+T8	Medical-Problem 263 274	Atelectasis
+T9	Medical-Anatomy 296 322	infrahilar left lower lobe
+T10	Medical-Problem 344 369;371 379	unexplained  wide nodular  opacity
+E9	Medical-Problem:T10
+T11	Lesion-Anatomy 400 404;406 460	left  second rib anteriorly and left fourth rib posteriorly
+T12	Lesion-Assertion 467 470	may
+A2	Lesion-AssertionValue T12 possible
+T13	Lesion-Anatomy 476 480	lung
+T14	Lesion-Description 483 489	lesion
+T15	Medical-Problem 836 854	some pleural fluid
+E13	Medical-Problem:T15
+T16	Medical-Problem 867 886	continued elevation
+T17	Medical-Anatomy 894 925	right hemidiaphragmatic contour
+T18	Medical-Problem 931 935;937 956	some atelectatic changes
+T19	Medical-Problem 1027 1050	suggested opacification
+T20	Medical-Anatomy 1058 1073	left upper zone
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T11 has-Lesion-Assertion:T12 has-Lesion-Anatomy:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T18 has-Medical-Anatomy:T17
+E17	Medical-Problem:T19 has-Medical-Anatomy:T20

@@ -1,0 +1,52 @@
+T1	Medical-Problem 263 297	Heart size remains mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 300 330	Atherosclerotic calcifications
+T3	Medical-Anatomy 349 360	aortic knob
+T4	Medical-Anatomy 422 443	pulmonary vasculature
+T5	Medical-Assertion 447 450	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 451 459	engorged
+T7	Lesion-Characteristic 462 471	Calcified
+T8	Lesion-Description 472 478	nodule
+T9	Lesion-Anatomy 486 496;498 502	left upper lobe
+T10	Lesion-Characteristic 507 516	calcified
+T11	Lesion-Anatomy 517 527	left hilar
+T12	Lesion-Description 528 539	lymph nodes
+T13	Lesion-Characteristic 544 571;573 580	compatible prior granulomas disease
+T14	Lesion-Anatomy 583 599	Right lower lobe
+T15	Lesion-Description 600 604	mass
+T16	Lesion-Size-Trend 613 630	grossly unchanged
+A2	Lesion-Size-TrendValue T16 no-change
+T17	Medical-Assertion 678 680	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 681 704	new focal consolidation
+T19	Medical-Problem 706 722	pleural effusion
+T20	Medical-Problem 727 739	pneumothorax
+T21	Medical-Problem 777 797	ground-glass opacity
+T22	Medical-Anatomy 806 822	right lower lobe
+T23	Lesion-Description 827 833	nodule
+T24	Lesion-Anatomy 841 856	left upper lobe
+T25	Lesion-Assertion 876 879	not
+A4	Lesion-AssertionValue T25 absent
+T26	Medical-Problem 925 945	Hypertrophic changes
+T27	Medical-Anatomy 969 983	thoracic spine
+T28	Lesion-Size-Trend 1046 1072	Grossly similar appearance
+A5	Lesion-Size-TrendValue T28 no-change
+T29	Lesion-Anatomy 1076 1092	right lower lobe
+T30	Lesion-Description 1093 1097	mass
+T31	Medical-Assertion 1100 1102	No
+A6	Medical-AssertionValue T31 absent
+T32	Medical-Problem 1103 1112;1114 1127	new focal consolidation
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11 has-Lesion-Characteristic:T13
+E14	Lesion-Description:T15 has-Lesion-Anatomy:T14 has-Lesion-Size-Trend:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T17
+E17	Medical-Problem:T20 has-Medical-Assertion:T17
+E18	Medical-Problem:T21 has-Medical-Anatomy:T22
+E20	Lesion-Description:T23 has-Lesion-Anatomy:T24 has-Lesion-Assertion:T25
+E22	Medical-Problem:T26 has-Medical-Anatomy:T27
+E25	Lesion-Description:T30 has-Lesion-Size-Trend:T28 has-Lesion-Anatomy:T29
+E26	Medical-Problem:T32 has-Medical-Assertion:T31

@@ -1,0 +1,29 @@
+T1	Medical-Problem 108 124	reduced aeration
+T2	Medical-Anatomy 132 141	left lung
+T3	Medical-Assertion 150 156	likely
+A1	Medical-AssertionValue T3 possible
+T4	Lesion-Anatomy 187 202	left upper lobe
+T5	Lesion-Description 203 221	mass/consolidation
+T6	Medical-Problem 223 243	left lower atectasis
+T7	Medical-Problem 245 255	mild edema
+T8	Medical-Problem 265 292	elevated left hemidiaphgram
+T9	Medical-Problem 343 349	Barium
+E8	Medical-Problem:T9
+T10	Medical-Problem 685 700;702 723	parenchymal and mediastinal opacities
+E9	Medical-Problem:T10
+T11	Medical-Problem 775 805	elevation of the hemidiaphragm
+E10	Medical-Problem:T11
+T12	Medical-Problem 808 838	Right, peribronchial opacities
+T13	Medical-Anatomy 846 850;852 856	lung base
+T14	Medical-Problem 907 918	atelectasis
+E13	Medical-Problem:T14
+T15	Medical-Assertion 919 923	than
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 931 949	infectious process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T3
+E7	Medical-Problem:T8 has-Medical-Assertion:T3
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15

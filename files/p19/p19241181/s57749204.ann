@@ -1,0 +1,46 @@
+T1	Medical-Problem 29 53	Increasing consolidation
+T2	Medical-Anatomy 61 84	medial right lower lobe
+T3	Medical-Problem 87 98;100 127	Stable left  retrocardiac consolidation
+E3	Medical-Problem:T3
+T4	Medical-Problem 133 174	left greater than right pleural effusions
+E4	Medical-Problem:T4
+T5	Medical-Problem 454 486	Worsening aspiration pneumonitis
+E5	Medical-Problem:T5
+T6	Medical-Problem 545 566	Chronic consolidation
+T7	Medical-Anatomy 574 589	left lower lobe
+T8	Medical-Problem 644 658	lobar collapse
+T9	Medical-Problem 738 757	retained secretions
+E9	Medical-Problem:T9
+T10	Medical-Problem 761 770;772 782	continued aspiration
+E10	Medical-Problem:T10
+T11	Medical-Problem 785 823	Associated small left pleural effusion
+E11	Medical-Problem:T11
+T12	Medical-Problem 909 922	Opacification
+T13	Medical-Anatomy 930 945	right lung base
+T14	Medical-Problem 996 1033	posteriorly layering pleural effusion
+T15	Medical-Problem 1043 1063;1065 1073	new air bronchograms medially
+E15	Medical-Problem:T15
+T16	Medical-Assertion 1074 1081	suggest
+A1	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1082 1106	developing consolidation
+T18	Medical-Assertion 1114 1127	could also be
+A2	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1128 1139	atelectasis
+T20	Medical-Problem 1144 1153	pneumonia
+T21	Medical-Anatomy 1163 1174	upper lungs
+T22	Medical-Assertion 1184 1186	no
+A3	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1187 1196	pneumonia
+T24	Medical-Assertion 1202 1204	no
+A4	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1205 1220	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E12	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T14 has-Medical-Anatomy:T13
+E16	Medical-Problem:T17 has-Medical-Anatomy:T13 has-Medical-Assertion:T16
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Medical-Problem:T20 has-Medical-Assertion:T18
+E20	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E21	Medical-Problem:T25 has-Medical-Anatomy:T21 has-Medical-Assertion:T24

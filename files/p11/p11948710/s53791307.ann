@@ -1,0 +1,28 @@
+T1	Medical-Assertion 293 300	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 301 315	consolidations
+T3	Lesion-Characteristic 319 329	suspicious
+T4	Lesion-Anatomy 331 340	pulmonary
+T5	Lesion-Description 341 348	nodules
+T6	Medical-Problem 353 357	very
+E5	Medical-Problem:T6
+T7	Lesion-Description 373 380	opacity
+T8	Lesion-Anatomy 402 421	posterior third rib
+T9	Lesion-Assertion 425 431	likely
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Description 434 445	bone island
+T11	Medical-Assertion 524 526	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 527 548	pleural abnormalities
+T13	Medical-Assertion 569 593	No radiographic evidence
+A4	Medical-AssertionValue T13 absent
+T14	Lesion-Anatomy 597 606	pulmonary
+T15	Lesion-Description 607 613	masses
+T16	Medical-Problem 617 634;636 665	other significant cardiopulmonary abnormalities
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T8
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T13

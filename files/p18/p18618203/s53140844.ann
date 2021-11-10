@@ -1,0 +1,53 @@
+T1	Medical-Problem 314 337	Lung volumes remain low
+E1	Medical-Problem:T1
+T2	Medical-Problem 419 432	mild widening
+T3	Medical-Anatomy 440 465	right paratracheal stripe
+T4	Lesion-Assertion 466 476	suggestive
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Characteristic 480 490	underlying
+T6	Lesion-Description 492 507	lymphadenopathy
+T7	Medical-Anatomy 530 551	Pulmonary vasculature
+T8	Medical-Assertion 555 558	not
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 559 567	engorged
+T10	Medical-Problem 581 619	continued ill-defined patchy opacities
+T11	Medical-Anatomy 631 645	left lung base
+T12	Medical-Anatomy 669 700	right upper and mid lung fields
+T13	Medical-Problem 716 723;725 732	chronic changes
+E11	Medical-Problem:T13
+T14	Medical-Problem 735 774	Slightly increased patchy opacification
+T15	Medical-Anatomy 782 801	retrocardiac region
+T16	Medical-Assertion 803 816	could reflect
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 817 857	superimposed left lower lobe atelectasis
+T18	Medical-Problem 863 872	infection
+T19	Medical-Assertion 876 879;881 889	not excluded
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Assertion 892 894	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 895 917	large pleural effusion
+T22	Medical-Problem 921 933	pneumothorax
+T23	Medical-Problem 970 995	Continued chronic changes
+T24	Medical-Anatomy 1007 1038	right upper and mid lung fields
+T25	Medical-Anatomy 1052 1066	left lung base
+T26	Medical-Problem 1069 1101	Slightly increased opacification
+T27	Medical-Anatomy 1109 1121;1123 1129	retrocardiac region
+T28	Medical-Assertion 1130 1143	could reflect
+A6	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1144 1181	worsening left lower lobe atelectasis
+T30	Medical-Problem 1189 1198	infection
+T31	Medical-Assertion 1200 1229	cannot be completely excluded
+A7	Medical-AssertionValue T31 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E17	Medical-Problem:T22 has-Medical-Assertion:T20
+E18	Medical-Problem:T23 has-Medical-Anatomy:T24 has-Medical-Anatomy:T25
+E21	Medical-Problem:T26 has-Medical-Anatomy:T27
+E23	Medical-Problem:T29 has-Medical-Assertion:T28
+E24	Medical-Problem:T30 has-Medical-Anatomy:T27 has-Medical-Assertion:T28 has-Medical-Assertion:T31

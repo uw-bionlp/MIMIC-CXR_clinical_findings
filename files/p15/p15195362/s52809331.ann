@@ -1,0 +1,24 @@
+T1	Medical-Problem 296 315	Persistent widening
+T2	Medical-Anatomy 319 339	superior mediastinum
+T3	Medical-Problem 410 420;422 429	Persistent opacity
+T4	Medical-Anatomy 433 448	right lung base
+T5	Medical-Assertion 450 463	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 464 489	right lower lobe collapse
+T7	Medical-Problem 497 522	adjacent pleural effusion
+T8	Medical-Problem 525 565	Poorly defined left retrocardiac opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 566 574;576 582	could be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 590 601	atelectasis
+T11	Medical-Problem 605 625	infectious pneumonia
+T12	Lesion-Count 628 636	Numerous
+T13	Lesion-Anatomy 637 646;648 657	bilateral pulmonary
+T14	Lesion-Description 658 665	nodules
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E12	Lesion-Description:T14 has-Lesion-Count:T12 has-Lesion-Anatomy:T13

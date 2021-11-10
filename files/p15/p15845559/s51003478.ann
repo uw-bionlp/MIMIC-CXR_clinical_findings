@@ -1,0 +1,75 @@
+T1	Medical-Problem 185 209	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 216 233	aorta is tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 240 246	aortic
+E3	Medical-Problem:T3
+T4	Medical-Problem 256 273	heavily calcified
+E4	Medical-Problem:T4
+T5	Medical-Problem 287 301	convex contour
+T6	Medical-Anatomy 309 320;322 333	right upper mediastinum
+T7	Medical-Problem 396 427	tortuosity of the great vessels
+E7	Medical-Problem:T7
+T8	Medical-Problem 480 495	lymphadenopathy
+E8	Medical-Problem:T8
+T9	Lesion-Size 501 506	large
+T10	Lesion-Anatomy 507 514	thyroid
+T11	Lesion-Description 515 521	nodule
+T12	Medical-Problem 547 564	band-like opacity
+T13	Medical-Anatomy 572 579	lingula
+T14	Medical-Assertion 580 588	suggests
+A1	Medical-AssertionValue T14 possible
+T15	Medical-Problem 589 606	minor atelectasis
+T16	Medical-Problem 610 618	scarring
+T17	Medical-Problem 636 674	streaky posterior left basilar opacity
+E16	Medical-Problem:T17
+T18	Medical-Assertion 681 689	suggests
+A2	Medical-AssertionValue T18 possible
+T19	Medical-Problem 690 695;697 708	minor atelectasis
+T20	Medical-Problem 712 720	scarring
+T21	Medical-Problem 732 766;768 779	more generally a mild interstitial abnormality
+E19	Medical-Problem:T21
+T22	Medical-Assertion 780 790	suggesting
+A3	Medical-AssertionValue T22 possible
+T23	Medical-Problem 791 817	slight vascular congestion
+T24	Medical-Problem 829 842;844 851	peribronchial cuffing
+T25	Medical-Problem 871 890	airway inflammation
+T26	Medical-Assertion 891 904	could yield a
+A4	Medical-AssertionValue T26 possible
+T27	Medical-Assertion 936 938	no
+A5	Medical-AssertionValue T27 absent
+T28	Medical-Problem 939 955	pleural effusion
+T29	Medical-Problem 959 971	pneumothorax
+T30	Medical-Problem 978 990;992 1005	bones appear demineralized
+E25	Medical-Problem:T30
+T31	Medical-Problem 1008 1033	Mild degenerative changes
+T32	Medical-Anatomy 1054 1066;1068 1073	mid thoracic spine
+T33	Medical-Problem 1099 1130	mild rightward convex curvature
+E28	Medical-Problem:T33
+T34	Medical-Problem 1197 1226	Mild interstitial abnormality
+E29	Medical-Problem:T34
+T35	Medical-Assertion 1233 1251	could be seen with
+A6	Medical-AssertionValue T35 possible
+T36	Medical-Problem 1252 1265;1267 1277	mild vascular congestion
+T37	Medical-Problem 1313 1332	airway inflammation
+T38	Medical-Assertion 1333 1341;1343 1353	could be considered
+A7	Medical-AssertionValue T38 possible
+T39	Medical-Problem 1364 1404	Abnormal right upper mediastinal contour
+E32	Medical-Problem:T39
+T40	Medical-Problem 1456 1473	benign tortuosity
+E33	Medical-Problem:T40
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E11	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T10
+E12	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E15	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Medical-Problem:T20 has-Medical-Assertion:T18
+E20	Medical-Problem:T23 has-Medical-Assertion:T22
+E21	Medical-Problem:T24 has-Medical-Assertion:T22
+E22	Medical-Problem:T25 has-Medical-Assertion:T26
+E23	Medical-Problem:T28 has-Medical-Assertion:T27
+E24	Medical-Problem:T29 has-Medical-Assertion:T27
+E26	Medical-Problem:T31 has-Medical-Anatomy:T32
+E30	Medical-Problem:T36 has-Medical-Assertion:T35
+E31	Medical-Problem:T37 has-Medical-Assertion:T38

@@ -1,0 +1,19 @@
+T1	Medical-Assertion 306 308	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 309 325	pleural effusion
+T3	Medical-Problem 330 342	pneumothorax
+T4	Medical-Problem 374 382	Fibrosis
+T5	Medical-Anatomy 390 401;403 413	medial left upper lung
+T6	Medical-Problem 432 466	small area of subtle consolidation
+T7	Medical-Anatomy 474 479;481 489	right mid lung
+T8	Medical-Problem 586 620	Subtle small area of consolidation
+T9	Medical-Anatomy 628 642	right mid lung
+T10	Medical-Assertion 650 663	may represent
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 667 682	early pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10

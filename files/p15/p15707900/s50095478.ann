@@ -1,0 +1,30 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 63	acute intrathoracic abnormality
+T3	Medical-Problem 356 378	slightly hyperinflated
+E2	Medical-Problem:T3
+T4	Medical-Problem 460 491	Increased interstitial markings
+T5	Medical-Anatomy 502 516	throughout the
+T6	Medical-Anatomy 517 532	bilateral lungs
+T7	Medical-Assertion 566 572;574 584	may be related to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 587 615	chronic interstitial process
+T9	Medical-Assertion 618 620	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 621 640	focal consolidation
+T11	Medical-Assertion 667 669	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 670 686	pleural effusion
+T13	Medical-Problem 690 702	pneumothorax
+T14	Medical-Problem 705 715;717 740	Old healed bilateral rib fractures
+E10	Medical-Problem:T14
+T15	Medical-Assertion 771 773	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 774 805	acute intrathoracic abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

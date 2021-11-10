@@ -1,0 +1,17 @@
+T1	Medical-Assertion 298 300	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 301 318	left pneumothorax
+T3	Medical-Problem 321 355	Extensive left pleural abnormality
+E2	Medical-Problem:T3
+T4	Medical-Problem 429 442;444 465	pleural fluid collected posteriorly
+E3	Medical-Problem:T4
+T5	Medical-Problem 484 502	pleural thickening
+E4	Medical-Problem:T5
+T6	Medical-Anatomy 570 579	left lung
+T7	Medical-Problem 599 614	pulmonary edema
+T8	Medical-Assertion 615 634	has nearly resolved
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 637 675	Mild enlargement of cardiac silhouette
+E7	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6 has-Medical-Assertion:T8

@@ -1,0 +1,21 @@
+T1	Medical-Assertion 342 344	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 345 361	pleural effusion
+T3	Medical-Problem 365 377	pneumothorax
+T4	Medical-Assertion 402 404	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 405 432	acute osseous abnormalities
+T6	Lesion-Characteristic 435 444	Calcified
+T7	Lesion-Anatomy 445 456	mediastinal
+T8	Lesion-Anatomy 461 466	hilar
+T9	Lesion-Description 467 472;474 479	lymph nodes
+T10	Lesion-Size-Trend 484 493	unchanged
+A3	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 556 558	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 559 588	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E7	Lesion-Description:T9 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

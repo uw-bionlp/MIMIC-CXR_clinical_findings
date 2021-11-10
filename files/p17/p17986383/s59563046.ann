@@ -1,0 +1,52 @@
+T1	Medical-Problem 211 223	Cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 243 266	significant enlargement
+T3	Medical-Anatomy 274 295	main pulmonary artery
+T4	Medical-Problem 318 335	increased opacity
+T5	Medical-Anatomy 343 357	left lung base
+T6	Medical-Problem 374 390;392 400	moderate pleural effusion
+T7	Medical-Problem 405 416	atelectasis
+T8	Medical-Assertion 418 432	cannot exclude
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 433 442	pneumonia
+T10	Medical-Problem 446 465;467 475	small right pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 499 511	lung lucency
+E10	Medical-Problem:T11
+T12	Medical-Assertion 515 528	suggestive of
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 529 538	emphysema
+T14	Lesion-Description 543 558	nodular opacity
+T15	Lesion-Anatomy 577 593	right upper lung
+T16	Lesion-Assertion 642 644	No
+A3	Lesion-AssertionValue T16 absent
+T17	Medical-Problem 645 657	pneumothorax
+E14	Medical-Problem:T17
+T18	Medical-Anatomy 661 692	right proximal humeral hardware
+E15	Medical-Anatomy:T18
+T19	Medical-Problem 715 723	Widening
+T20	Medical-Anatomy 731 744	left AC joint
+T21	Medical-Problem 750 770;772 780	elevated left distal clavicle
+E18	Medical-Problem:T21
+T22	Medical-Problem 813 844	old grade 3 AC joint separation
+E19	Medical-Problem:T22
+T23	Medical-Problem 879 896	pleural effusions
+E20	Medical-Problem:T23
+T24	Medical-Problem 902 924	left basal atelectasis
+E21	Medical-Problem:T24
+T25	Medical-Assertion 926 940	cannot exclude
+A4	Medical-AssertionValue T25 possible
+T26	Medical-Problem 942 951	pneumonia
+T27	Medical-Problem 966 986	underlying emphysema
+E23	Medical-Problem:T27
+T28	Medical-Problem 1003 1018	chronic changes
+E24	Medical-Problem:T28
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T15
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E22	Medical-Problem:T26 has-Medical-Assertion:T25

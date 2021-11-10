@@ -1,0 +1,21 @@
+T1	Medical-Problem 273 294	increase in opacities
+T2	Medical-Anatomy 302 342;344 367	superior portion of the right lower lobe and the left lower lobe
+T3	Medical-Anatomy 396 417;419 435	medial portion of the right lower lobe
+T4	Medical-Assertion 438 440	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 441 457	pleural effusion
+T6	Medical-Problem 461 473	pneumothorax
+T7	Medical-Problem 542 563	Increase in opacities
+T8	Medical-Anatomy 571 597	right and left lower lobes
+T9	Medical-Assertion 598 604;606 615	likely represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 616 632	mucoid impaction
+T11	Medical-Problem 637 651	pneumonia on a
+T12	Medical-Problem 652 680;682 696	background of severe chronic bronchiectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

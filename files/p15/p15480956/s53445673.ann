@@ -1,0 +1,29 @@
+T1	Medical-Problem 192 210;212 225	Extensive airspace consolidation
+T2	Medical-Problem 231 247	air bronchograms
+T3	Medical-Anatomy 261 288	right upper and lower lobes
+T4	Lesion-Characteristic 309 319	underlying
+T5	Lesion-Description 320 324	mass
+T6	Medical-Assertion 336 338	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 339 347	effusion
+T8	Medical-Problem 351 363	pneumothorax
+T9	Medical-Problem 367 379	Cardiomegaly
+E8	Medical-Problem:T9
+T10	Medical-Problem 384 410	aortic arch calcifications
+E9	Medical-Problem:T10
+T11	Medical-Problem 439 492	New right upper and lower lobe airspace consolidation
+E10	Medical-Problem:T11
+T12	Lesion-Anatomy 511 516;518 523	right hilar
+T13	Lesion-Description 524 528	mass
+T14	Medical-Assertion 529 542	may represent
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 543 553	hemorrhage
+T16	Medical-Problem 557 566	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14

@@ -1,0 +1,16 @@
+T1	Medical-Assertion 258 260;262 270	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 274 286	pneumothorax
+T3	Medical-Problem 390 398;400 425	elevated pulmonary venous pressure
+E2	Medical-Problem:T3
+T4	Medical-Problem 428 441	Opacification
+T5	Medical-Anatomy 449 468	retrocardiac region
+T6	Medical-Problem 489 500	volume loss
+T7	Medical-Anatomy 508 523	left lower lobe
+T8	Medical-Assertion 528 536	possible
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 537 550;552 560	small pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

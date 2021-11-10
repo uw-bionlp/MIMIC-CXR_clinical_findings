@@ -1,0 +1,36 @@
+T1	Lesion-Count 252 260	Multiple
+T2	Lesion-Description 261 278	nodular opacities
+T3	Lesion-Anatomy 299 309	both lungs
+T4	Lesion-Size 328 334	2.6 cm
+T5	Lesion-Anatomy 342 357	left lower lobe
+T6	Medical-Assertion 492 496	None
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 506 515	opacities
+T8	Medical-Problem 647 664;666 677	lobulated contour abnormality
+T9	Medical-Anatomy 688 713	posterior pleural surface
+T10	Medical-Problem 729 739;741 769	left-sided pleural thickening and fluid
+E9	Medical-Problem:T10
+T11	Medical-Assertion 802 804	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 805 817	pneumothorax
+T13	Lesion-Characteristic 823 832	sclerotic
+T14	Lesion-Description 833 839	lesion
+T15	Lesion-Anatomy 859 895;897 901	anterior aspect of the T10 vertebral body
+T16	Medical-Assertion 969 971	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 972 1007	acute cardiac or pulmonary findings
+T18	Lesion-Count 1016 1024	Multiple
+T19	Lesion-Anatomy 1025 1034	bilateral
+T20	Lesion-Description 1035 1052	nodular opacities
+T21	Lesion-Anatomy 1102 1127	left lower lobe pulmonary
+T22	Lesion-Description 1128 1132	mass
+T23	Medical-Problem 1193 1232	Left posterior pleural fluid/thickening
+E20	Medical-Problem:T23
+E2	Lesion-Description:T2 has-Lesion-Count:T1 has-Lesion-Anatomy:T3 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Lesion-Description:T20 has-Lesion-Count:T18 has-Lesion-Anatomy:T19
+E19	Lesion-Description:T22 has-Lesion-Anatomy:T21

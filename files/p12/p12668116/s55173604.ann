@@ -1,0 +1,37 @@
+T1	Medical-Problem 337 374	moderate-sized right pleural effusion
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 376 387;389 402	Right sided pleural-based
+T3	Lesion-Description 403 413	nodularity
+T4	Lesion-Count 425 433	multiple
+T5	Lesion-Characteristic 434 443	scattered
+T6	Lesion-Description 444 451	nodules
+T7	Lesion-Anatomy 455 465	both lungs
+T8	Lesion-Description 526 532	nodule
+T9	Lesion-Anatomy 550 566	right lower lobe
+T10	Lesion-Size 580 584	2-cm
+T11	Medical-Assertion 586 588	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 589 616	left-sided pleural effusion
+T13	Medical-Problem 621 633	pneumothorax
+T14	Medical-Assertion 662 664	no
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 665 694	pulmonary vascular congestion
+T16	Medical-Assertion 708 710	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 711 738	acute osseous abnormalities
+T18	Medical-Problem 756 793	Moderate-sized right pleural effusion
+E15	Medical-Problem:T18
+T19	Lesion-Anatomy 795 820	Right sided pleural based
+T20	Lesion-Description 822 832	nodularity
+T21	Lesion-Count 837 845	multiple
+T22	Lesion-Anatomy 846 865	bilateral pulmonary
+T23	Lesion-Description 866 873	nodules
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Count:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T9 has-Lesion-Size-Present:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Lesion-Description:T20 has-Lesion-Anatomy:T19
+E20	Lesion-Description:T23 has-Lesion-Count:T21 has-Lesion-Anatomy:T22

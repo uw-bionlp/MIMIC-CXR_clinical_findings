@@ -1,0 +1,24 @@
+T1	Medical-Assertion 355 357	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 358 386	appreciable pleural effusion
+T3	Medical-Problem 389 399	Persistent
+E2	Medical-Problem:T3
+T4	Medical-Problem 400 411	atelectasis
+T5	Medical-Anatomy 419 424;426 435	right lung base
+T6	Medical-Problem 457 461	lung
+E5	Medical-Problem:T6
+T7	Medical-Problem 501 512	lucent line
+T8	Medical-Anatomy 520 558	superolateral aspect of the right lung
+T9	Medical-Assertion 562 573	most likely
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 577 586	skin fold
+T11	Medical-Assertion 591 613	should not be mistaken
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 620 632	pneumothorax
+T13	Medical-Assertion 713 715	No
+A4	Medical-AssertionValue T13 absent
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T11

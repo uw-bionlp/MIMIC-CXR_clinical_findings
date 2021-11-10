@@ -1,0 +1,28 @@
+T1	Medical-Assertion 255 270	raises question
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 274 283;285 308	platelike atelectaisis anteriorly
+T3	Medical-Anatomy 409 419	both lungs
+T4	Medical-Assertion 435 437	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 438 443;445 458	focal consolidation
+T6	Medical-Problem 462 478	pleural effusion
+T7	Medical-Problem 481 499	Continued fullness
+T8	Medical-Anatomy 503 512	both hila
+T9	Medical-Problem 531 540	prominent
+E7	Medical-Problem:T9
+T10	Lesion-Description 541 552	lymph nodes
+T11	Lesion-Size-Trend 567 576	unchanged
+A3	Lesion-Size-TrendValue T11 no-change
+T12	Medical-Assertion 606 608	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 609 628	focal consolidation
+T14	Medical-Problem 630 646	pleural effusion
+T15	Medical-Problem 650 662	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Lesion-Description:T10 has-Lesion-Size-Trend:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T12

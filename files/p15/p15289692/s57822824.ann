@@ -1,0 +1,36 @@
+T1	Medical-Assertion 43 45	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 46 75	acute cardiopulmonary process
+T3	Lesion-Size 81 87	1.3 cm
+T4	Lesion-Description 88 95	opacity
+T5	Lesion-Anatomy 116 146	infrahilar region on the right
+T6	Medical-Problem 228 248	superimposed shadows
+E5	Medical-Problem:T6
+T7	Lesion-Characteristic 259 269	underlying
+T8	Lesion-Description 270 276	nodule
+T9	Medical-Assertion 729 731	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 732 745	consolidation
+T11	Medical-Problem 749 757	effusion
+T12	Medical-Assertion 820 822	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 823 832;834 843	displaced fractures
+T14	Medical-Assertion 875 877	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 878 907	acute cardiopulmonary process
+T16	Lesion-Description 919 926	opacity
+E12	Lesion-Description:T16
+T17	Medical-Assertion 1043 1058	could represent
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1060 1080	superimposed shadows
+T19	Lesion-Characteristic 1091 1101	underlying
+T20	Lesion-Description 1102 1108	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Lesion-Description:T20 has-Lesion-Characteristic:T19

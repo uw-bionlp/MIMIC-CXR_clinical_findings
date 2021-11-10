@@ -1,0 +1,33 @@
+T1	Medical-Problem 219 246	size is borderline enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 333 340	opacity
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 348 362	left lung base
+T4	Medical-Assertion 363 366;368 375	may reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 376 387	atelectasis
+T6	Medical-Problem 392 401	infection
+T7	Medical-Assertion 405 417	not excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 419 421	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 422 438	pleural effusion
+T10	Medical-Problem 443 455	pneumothorax
+T11	Medical-Assertion 478 480	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 481 508	acute osseous abnormalities
+T13	Medical-Problem 542 562	left basilar opacity
+E9	Medical-Problem:T13
+T14	Medical-Assertion 563 576	could reflect
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 577 588	atelectasis
+T16	Medical-Problem 593 602	infection
+T17	Medical-Assertion 603 612;614 633	cannot be completely excluded
+A6	Medical-AssertionValue T17 possible
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T17

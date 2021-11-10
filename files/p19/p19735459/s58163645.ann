@@ -1,0 +1,22 @@
+T1	Medical-Problem 289 309	Mild pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 319 340	Moderate cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 350 366	Pleural effusion
+T4	Medical-Assertion 385 394	not large
+A1	Medical-AssertionValue T4 absent
+T5	Lesion-Anatomy 397 407	Left hilar
+T6	Lesion-Anatomy 412 422	suprahilar
+T7	Lesion-Description 423 427	mass
+T8	Lesion-Size-Trend 428 437	unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Assertion 440 442	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 444 456	pneumothorax
+T11	Medical-Assertion 608 610	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 611 623	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

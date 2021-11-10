@@ -1,0 +1,32 @@
+T1	Medical-Assertion 274 285	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 289 301	pneumothorax
+T3	Medical-Problem 306 323	pneumomediastinum
+T4	Medical-Assertion 335 337	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 338 346	free air
+T6	Medical-Anatomy 358 365	abdomen
+T7	Medical-Problem 423 441	Linear atelectasis
+T8	Medical-Anatomy 458 479	left perihilar region
+T9	Medical-Assertion 481 483	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 484 500	pleural effusion
+T11	Medical-Problem 504 523	focal consolidation
+T12	Medical-Assertion 535 537	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 538 566	free air below the diaphragm
+T14	Medical-Problem 584 625	Linear subsegmental left lung atelectasis
+E10	Medical-Problem:T14
+T15	Medical-Assertion 672 674	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 675 692	pneumomediastinum
+T17	Medical-Problem 696 710	free air below
+E12	Medical-Problem:T17
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

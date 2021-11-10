@@ -1,0 +1,25 @@
+T1	Medical-Assertion 80 82	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 83 95	pneumothorax
+T3	Medical-Problem 114 144	Left pleural effusion is small
+E2	Medical-Problem:T3
+T4	Medical-Problem 147 167	Low left lung volume
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 654 668	left lung base
+E4	Medical-Anatomy:T5
+T6	Medical-Assertion 670 672	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 673 685	pneumothorax
+T8	Medical-Problem 716 743	effusion is small. Low left
+E6	Medical-Problem:T8
+T9	Medical-Problem 805 819	Left perihilar
+E7	Medical-Problem:T9
+T10	Medical-Problem 820 833	consolidation
+E8	Medical-Problem:T10
+T11	Lesion-Anatomy 838 843;845 865	upper lung paramediastinal
+T12	Lesion-Description 866 870	mass
+T13	Lesion-Size-Trend 901 908	similar
+A3	Lesion-Size-TrendValue T13 no-change
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T13

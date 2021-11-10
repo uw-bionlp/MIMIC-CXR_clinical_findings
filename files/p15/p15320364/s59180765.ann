@@ -1,0 +1,28 @@
+T1	Medical-Problem 267 279;281 298	rounded left perihilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 343 353	suspicious
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 359 368	pneumonia
+T4	Lesion-Characteristic 428 433	round
+T5	Lesion-Characteristic 439 448	mass-like
+T6	Lesion-Description 452 463	mass lesion
+T7	Lesion-Assertion 467 479	not excluded
+A2	Lesion-AssertionValue T7 possible
+T8	Medical-Assertion 519 521	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 522 538	pleural effusion
+T10	Medical-Problem 540 555	pulmonary edema
+T11	Medical-Problem 557 569	pneumothorax
+T12	Medical-Problem 643 676	Left perihilar opacity is unusual
+E9	Medical-Problem:T12
+T13	Medical-Assertion 681 694	could be seen
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 700 705;707 716	round pneumonia
+T15	Lesion-Description 858 869	mass lesion
+E11	Lesion-Description:T15
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5 has-Lesion-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

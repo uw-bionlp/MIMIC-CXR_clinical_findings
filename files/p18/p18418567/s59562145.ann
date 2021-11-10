@@ -1,0 +1,14 @@
+T1	Medical-Assertion 170 172	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 173 185	pneumothorax
+T3	Medical-Assertion 259 271	suggests the
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 285 302	pneumomediastinum
+T5	Medical-Problem 314 342	small right pleural effusion
+E3	Medical-Problem:T5
+T6	Lesion-Anatomy 345 360	Right perihilar
+T7	Lesion-Anatomy 366 382	right lower lobe
+T8	Lesion-Description 383 389	masses
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7

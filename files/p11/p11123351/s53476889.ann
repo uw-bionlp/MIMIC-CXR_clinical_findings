@@ -1,0 +1,46 @@
+T1	Lesion-Anatomy 298 314	right upper lobe
+T2	Lesion-Size 320 326	0.5 cm
+T3	Lesion-Characteristic 327 336	calcified
+T4	Lesion-Description 337 343	nodule
+T5	Lesion-Assertion 345 351	likely
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 354 363	granuloma
+T7	Medical-Problem 376 405	minimal bibasilar atelectasis
+E6	Medical-Problem:T7
+T8	Medical-Assertion 408 410	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 411 430	focal consolidation
+T10	Medical-Problem 432 439;441 449	pleural effusion
+T11	Medical-Problem 454 462	evidence
+E9	Medical-Problem:T11
+T12	Medical-Problem 466 478	pneumothorax
+T13	Lesion-Anatomy 496 518	lateral left lung base
+T14	Lesion-Size 532 538	4-5 mm
+T15	Lesion-Characteristic 539 546	rounded
+T16	Lesion-Description 547 554	opacity
+T17	Lesion-Characteristic 561 592	could represent a vessel on end
+T18	Lesion-Characteristic 603 613	underlying
+T19	Lesion-Anatomy 614 623	pulmonary
+T20	Lesion-Description 624 630	nodule
+T21	Medical-Assertion 788 790	No
+A3	Medical-AssertionValue T21 absent
+T22	Medical-Problem 791 810	focal consolidation
+T23	Lesion-Size 813 817	4-mm
+T24	Lesion-Characteristic 818 825	rounded
+T25	Lesion-Description 826 841	nodular density
+T26	Lesion-Anatomy 850 872	lateral left lung base
+T27	Lesion-Characteristic 916 926	underlying
+T28	Lesion-Anatomy 928 937	pulmonary
+T29	Lesion-Description 938 944	nodule
+T30	Lesion-Assertion 945 963	cannot be excluded
+A4	Lesion-AssertionValue T30 possible
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T1 has-Lesion-Size-Present:T2 has-Lesion-Characteristic:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T1 has-Lesion-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T8
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T13 has-Lesion-Size-Present:T14 has-Lesion-Characteristic:T15 has-Lesion-Characteristic:T17
+E18	Lesion-Description:T20 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T19
+E19	Medical-Problem:T22 has-Medical-Assertion:T21
+E22	Lesion-Description:T25 has-Lesion-Size-Present:T23 has-Lesion-Characteristic:T24 has-Lesion-Anatomy:T26
+E26	Lesion-Description:T29 has-Lesion-Anatomy:T26 has-Lesion-Characteristic:T27 has-Lesion-Anatomy:T28 has-Lesion-Assertion:T30

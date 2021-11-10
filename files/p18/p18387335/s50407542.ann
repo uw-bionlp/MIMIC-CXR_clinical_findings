@@ -1,0 +1,27 @@
+T1	Medical-Problem 404 424	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Assertion 530 532	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 534 549	pulmonary edema
+T4	Medical-Problem 552 577	Minimal streaky opacities
+T5	Medical-Anatomy 585 595	lung bases
+T6	Medical-Assertion 596 610	likely reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 612 623	atelectasis
+T8	Medical-Assertion 626 628	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 629 648	focal consolidation
+T10	Medical-Problem 650 666	pleural effusion
+T11	Medical-Problem 670 682	pneumothorax
+T12	Medical-Problem 780 796	Low lung volumes
+E9	Medical-Problem:T12
+T13	Medical-Assertion 802 810	probable
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 811 837	mild bibasilar atelectasis
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

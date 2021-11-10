@@ -1,0 +1,32 @@
+T1	Medical-Problem 219 243	Left upper lobe collapse
+E1	Medical-Problem:T1
+T2	Medical-Problem 248 261	consolidation
+E2	Medical-Problem:T2
+T3	Medical-Problem 291 324	complete left upper lobe collapse
+E3	Medical-Problem:T3
+T4	Medical-Assertion 340 350	suggestion
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 354 363;365 376	bronchial indentation
+T6	Medical-Problem 384 398	distorted left
+E5	Medical-Problem:T6
+T7	Medical-Problem 437 446	occlusion
+T8	Medical-Anatomy 450 474	left upper lobe bronchus
+T9	Lesion-Size 480 485	large
+T10	Lesion-Anatomy 486 496	left hilar
+T11	Lesion-Description 497 501	mass
+T12	Medical-Problem 535 553	geographic opacity
+E11	Medical-Problem:T12
+T13	Lesion-Anatomy 561 575	right mid lung
+T14	Lesion-Description 591 598;600 613	nodular consolidation
+T15	Lesion-Anatomy 621 637	right lower lobe
+T16	Medical-Problem 664 675;677 693	Small right pleural effusion
+E15	Medical-Problem:T16
+T17	Medical-Anatomy 783 788	heart
+T18	Medical-Assertion 792 795	not
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 796 804	enlarged
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T10
+E13	Lesion-Description:T14 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T15
+E17	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

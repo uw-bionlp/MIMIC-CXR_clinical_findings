@@ -1,0 +1,30 @@
+T1	Medical-Assertion 273 284	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 288 297	pneumonia
+T3	Medical-Problem 302 331	other parenchymal abnormality
+T4	Medical-Assertion 379 381	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 382 397	pulmonary edema
+T6	Medical-Assertion 402 404	No
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 405 422	pleural effusions
+T8	Medical-Problem 427 446	Unchanged asymmetry
+T9	Medical-Anatomy 454 470	hilar structures
+T10	Medical-Anatomy 507 528	left pulmonary artery
+T11	Medical-Assertion 531 533	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 534 545	abnormality
+T13	Medical-Anatomy 553 573	mediastinal contours
+T14	Medical-Assertion 578 589	No evidence
+A5	Medical-AssertionValue T14 absent
+T15	Lesion-Anatomy 593 596	rib
+T16	Lesion-Description 597 604	lesions
+T17	Medical-Problem 608 631	vertebral abnormalities
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E11	Lesion-Description:T16 has-Lesion-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T14

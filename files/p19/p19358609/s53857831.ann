@@ -1,0 +1,45 @@
+T1	Medical-Problem 318 338	post-surgical change
+T2	Medical-Anatomy 346 360	left lung apex
+T3	Medical-Problem 366 377	volume loss
+T4	Medical-Problem 383 432	leftward retraction of the mediastinal structures
+T5	Medical-Problem 503 523	chest wall deformity
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 539 549	right lung
+T7	Medical-Problem 553 566	hyperinflated
+T8	Medical-Problem 572 590	upper lobe lucency
+T9	Medical-Assertion 592 609	likely reflecting
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 611 631	underlying emphysema
+T11	Medical-Problem 634 665	Coarsened interstitial markings
+T12	Medical-Problem 671 683;685 692	micronodular opacity
+T13	Medical-Anatomy 700 716	right lower lung
+T14	Medical-Assertion 717 731	likely reflect
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 732 740	scarring
+T16	Medical-Problem 783 796	left CP angle
+E14	Medical-Problem:T16
+T17	Medical-Problem 800 808	excluded
+E15	Medical-Problem:T17
+T18	Medical-Assertion 836 838	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 840 866	definite new consolidation
+T20	Medical-Anatomy 874 883	left lung
+T21	Medical-Problem 912 921	pneumonia
+T22	Medical-Problem 971 992	Post-surgical changes
+T23	Medical-Anatomy 1000 1016	left upper chest
+T24	Medical-Assertion 1023 1034	no definite
+A4	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1045 1054	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E16	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Anatomy:T20
+E18	Medical-Problem:T21 has-Medical-Anatomy:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T25 has-Medical-Assertion:T24

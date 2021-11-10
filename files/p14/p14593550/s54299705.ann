@@ -1,0 +1,31 @@
+T1	Medical-Problem 279 298	hyperinflated lungs
+E1	Medical-Problem:T1
+T2	Medical-Problem 305 329	flattened hemidiaphragms
+E2	Medical-Problem:T2
+T3	Medical-Problem 334 352	paucity of vessels
+T4	Medical-Anatomy 360 376	upper lung zones
+T5	Medical-Problem 394 403	emphysema
+T6	Medical-Problem 415 454	apical scarring right greater than left
+E6	Medical-Problem:T6
+T7	Medical-Problem 512 555	noncharacteristic symmetric apical scarring
+T8	Medical-Assertion 556 563	without
+A1	Medical-AssertionValue T8 absent
+T9	Lesion-Anatomy 564 580	apical pulmonary
+T10	Lesion-Description 582 588	nodule
+T11	Medical-Anatomy 591 596	Lungs
+T12	Medical-Assertion 607 614	without
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 615 634	focal consolidation
+T14	Medical-Problem 638 654	pleural effusion
+T15	Medical-Problem 782 791	Emphysema
+E13	Medical-Problem:T15
+T16	Medical-Assertion 794 796	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 797 806	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Assertion:T8
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

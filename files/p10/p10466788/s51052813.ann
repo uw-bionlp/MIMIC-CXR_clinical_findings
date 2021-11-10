@@ -1,0 +1,45 @@
+T1	Medical-Problem 536 557	Post-surgical changes
+T2	Medical-Anatomy 565 581	right hemithorax
+T3	Medical-Problem 588 599	volume loss
+T4	Medical-Problem 604 612	scarring
+T5	Medical-Anatomy 620 652;654 673	right upper lobe along the right paratracheal region
+T6	Lesion-Count 714 722	Multiple
+T7	Lesion-Anatomy 723 732	pulmonary
+T8	Lesion-Description 734 741	nodules
+T9	Medical-Assertion 812 814	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 815 831	pleural effusion
+T11	Medical-Problem 833 845	pneumothorax
+T12	Medical-Problem 850 869	focal consolidation
+T13	Medical-Anatomy 876 885;887 898	pulmonary vasculature
+T14	Medical-Assertion 902 905	not
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 906 914	engorged
+T16	Medical-Problem 917 925	Fullness
+T17	Medical-Anatomy 933 950	right mediastinum
+T18	Lesion-Anatomy 974 984	subcarinal
+T19	Lesion-Description 985 989	mass
+T20	Lesion-Assertion 1139 1141	No
+A3	Lesion-AssertionValue T20 absent
+T21	Lesion-Characteristic 1142 1153	appreciable
+T22	Lesion-Anatomy 1154 1163	pulmonary
+T23	Lesion-Description 1164 1171	lesions
+T24	Lesion-Count 1174 1182	Multiple
+T25	Lesion-Anatomy 1183 1192	pulmonary
+T26	Lesion-Description 1193 1200	nodules
+T27	Medical-Problem 1332 1358	Right mediastinal fullness
+E24	Medical-Problem:T27
+T28	Lesion-Anatomy 1372 1382	subcarinal
+E25	Lesion-Anatomy:T28
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E8	Lesion-Description:T8 has-Lesion-Count:T6 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T9
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Lesion-Description:T19 has-Lesion-Anatomy:T18
+E20	Lesion-Description:T23 has-Lesion-Assertion:T20 has-Lesion-Characteristic:T21 has-Lesion-Anatomy:T22
+E23	Lesion-Description:T26 has-Lesion-Count:T24 has-Lesion-Anatomy:T25

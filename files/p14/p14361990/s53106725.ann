@@ -1,0 +1,23 @@
+T1	Medical-Problem 243 258	pleural plaques
+T2	Medical-Anatomy 275 299	particularly on the left
+T3	Medical-Problem 302 306;308 323	Lung volumes are low
+E3	Medical-Problem:T3
+T4	Medical-Problem 326 345	Basilar atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Assertion 354 361	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 362 376;378 391	definite focal consolidation
+T7	Medical-Assertion 403 405	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 406 418	pneumothorax
+T9	Medical-Problem 422 438	pleural effusion
+T10	Medical-Problem 513 532	Basilar atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Assertion 533 540	without
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 541 569	definite focal consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

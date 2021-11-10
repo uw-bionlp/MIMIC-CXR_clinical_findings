@@ -1,0 +1,28 @@
+T1	Medical-Problem 187 225	new increased retrocardiac atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Problem 232 242;244 253	developing pneumonia
+T3	Medical-Assertion 254 272	cannot be excluded
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 286 305	large hiatal hernia
+E3	Medical-Problem:T4
+T5	Lesion-Description 371 378	nodular
+T6	Lesion-Anatomy 396 400;402 412	left upper lobe
+T7	Medical-Assertion 468 470	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 471 486	acute fractures
+T9	Medical-Problem 519 530	New opacity
+T10	Medical-Anatomy 538 553	left lower lobe
+T11	Medical-Assertion 557 577	likely suggestive of
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 579 590	atelectasis
+T13	Medical-Problem 604 624	developing pneumonia
+T14	Medical-Assertion 625 643	cannot be excluded
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 646 651;653 666	Large hiatal hernia
+E11	Medical-Problem:T15
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T14

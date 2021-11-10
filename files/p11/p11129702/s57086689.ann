@@ -1,0 +1,21 @@
+T1	Medical-Problem 193 220	Areas of linear atelectasis
+T2	Medical-Anatomy 236 251	both lung bases
+T3	Medical-Problem 266 297	slightly more confluent opacity
+T4	Medical-Anatomy 311 331;333 379	lower thoracic spine corresponding to the right retrocardiac region
+T5	Medical-Assertion 397 399	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 400 407;409 417	pleural effusion
+T7	Medical-Problem 421 433	pneumothorax
+T8	Medical-Problem 451 479	Bibasilar linear atelectasis
+E7	Medical-Problem:T8
+T9	Medical-Anatomy 511 516;518 540	right lower lobe posteriorly
+T10	Medical-Assertion 541 554	may represent
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 555 566	atelectasis
+T12	Medical-Problem 570 579	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T10

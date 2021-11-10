@@ -1,0 +1,32 @@
+T1	Medical-Problem 230 261	Moderate right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 286 297;299 312	large scale consolidation
+T3	Medical-Anatomy 320 335	right lung base
+T4	Medical-Anatomy 371 375;377 381	Left lung
+T5	Medical-Problem 385 398	low in volume
+T6	Medical-Problem 405 427	some basal atelectasis
+T7	Medical-Problem 432 452	vascular engorgement
+T8	Medical-Assertion 458 460	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 461 466	edema
+T10	Medical-Assertion 478 489	no evidence
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 493 514	left pleural effusion
+T12	Medical-Problem 517 526	Rightward
+E10	Medical-Problem:T12
+T13	Medical-Problem 653 678	right basal opacification
+E11	Medical-Problem:T13
+T14	Medical-Assertion 679 684;686 695	would be due to
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 696 707	atelectasis
+T16	Medical-Assertion 771 773	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 774 786	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

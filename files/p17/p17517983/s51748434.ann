@@ -1,0 +1,24 @@
+T1	Medical-Problem 385 409	more confluent opacities
+T2	Medical-Anatomy 417 422	bases
+T3	Medical-Problem 425 455	Prominent extrapleural density
+T4	Medical-Anatomy 469 484	right laterally
+T5	Medical-Assertion 485 499	suspicious for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 502 516	small effusion
+T7	Medical-Assertion 528 530	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 531 539;541 562	definite left pleural effusion
+T9	Medical-Problem 565 587	Degree of cardiomegaly
+E7	Medical-Problem:T9
+T10	Medical-Problem 618 665	Interval progression of the bilateral opacities
+E8	Medical-Problem:T10
+T11	Medical-Problem 688 703	pulmonary edema
+E9	Medical-Problem:T11
+T12	Medical-Problem 723 745	superimposed infection
+T13	Medical-Assertion 746 755;757 765	cannot be excluded
+A3	Medical-AssertionValue T13 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T13

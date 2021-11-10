@@ -1,0 +1,28 @@
+T1	Medical-Problem 210 214;216 225	mild elevation
+T2	Medical-Anatomy 233 251	left hemidiaphragm
+T3	Medical-Assertion 258 273	likely reflects
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 291 299	scarring
+T5	Medical-Anatomy 318 358	periphery of the left mid and lower lung
+T6	Medical-Assertion 416 418	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 428 437	pneumonia
+T8	Medical-Problem 439 442	CHF
+T9	Medical-Problem 445 461	pleural effusion
+T10	Medical-Problem 466 478	pneumothorax
+T11	Medical-Assertion 568 570	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 571 579	free air
+T13	Medical-Anatomy 590 595;597 610	right hemidiaphragm
+T14	Medical-Problem 742 759	Areas of scarring
+T15	Medical-Anatomy 767 800	left mid and lower lung periphery
+T16	Medical-Problem 807 845	slight elevation of left hemidiaphragm
+E13	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15

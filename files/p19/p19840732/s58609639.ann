@@ -1,0 +1,28 @@
+T1	Medical-Problem 255 284	linear left basilar opacities
+T2	Medical-Anatomy 300 305	hilum
+T3	Medical-Assertion 310 326	likely represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 327 338	atelectasis
+T5	Medical-Anatomy 345 355	right lung
+T6	Medical-Problem 369 375;377 402	linear right basilar atelectasis
+T7	Medical-Assertion 445 447	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 448 453;455 471	right pleural effusion
+T9	Medical-Problem 473 485	pneumothorax
+T10	Medical-Problem 490 511	frank pulmonary edema
+T11	Medical-Problem 630 673	and waning left lower lobe airspace opacity
+E9	Medical-Problem:T11
+T12	Medical-Problem 735 746	atelectasis
+E10	Medical-Problem:T12
+T13	Medical-Problem 757 769;771 780	superimposed infection
+T14	Medical-Problem 784 794	aspiration
+T15	Medical-Assertion 798 818	difficult to exclude
+A3	Medical-AssertionValue T15 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E11	Medical-Problem:T13 has-Medical-Assertion:T15
+E12	Medical-Problem:T14 has-Medical-Assertion:T15

@@ -1,0 +1,24 @@
+T1	Medical-Problem 355 375	mild pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 393 419;421 430	moderate bilateral pleural effusions
+E2	Medical-Problem:T2
+T3	Medical-Problem 447 477	Moderate to severe enlargement
+T4	Medical-Anatomy 485 492;494 504	cardiac silhouette
+T5	Medical-Assertion 517 540	could be due in part to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 541 561	pericardial effusion
+T7	Medical-Problem 566 571;573 591	focal triangular opacity
+T8	Medical-Anatomy 599 634	lateral aspect of the right midlung
+T9	Medical-Assertion 638 646	probably
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 648 670	fissural pleural fluid
+T11	Medical-Problem 672 707	Severe right lower lobe atelectasis
+E9	Medical-Problem:T11
+T12	Medical-Assertion 910 912	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 913 925	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,32 @@
+T1	Lesion-Description 33 50	Nodular opacities
+T2	Lesion-Anatomy 71 107	left upper lung and at the left base
+T3	Lesion-Characteristic 114 147	concerning for infectious process
+T4	Medical-Assertion 194 196	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 197 214	pleural effusions
+T6	Medical-Problem 218 230	pneumothorax
+T7	Lesion-Anatomy 767 782	lung parenchyma
+T8	Lesion-Count 796 804	multiple
+T9	Lesion-Description 805 812	nodular
+E8	Lesion-Description:T9
+T10	Lesion-Description 813 822	opacities
+T11	Lesion-Anatomy 844 858;860 875	left upper and left lower lobe
+T12	Lesion-Anatomy 897 913	right lower lobe
+T13	Medical-Assertion 929 937;939 949	might be consistent
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 955 964	infection
+T15	Lesion-Description 1008 1016	neoplasm
+E13	Lesion-Description:T15
+T16	Medical-Assertion 1090 1092	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1093 1109	pleural effusion
+T18	Medical-Assertion 1123 1125	no
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1126 1138	pneumothorax
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Characteristic:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T7 has-Lesion-Count:T8 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

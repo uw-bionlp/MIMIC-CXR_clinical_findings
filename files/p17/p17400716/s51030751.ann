@@ -1,0 +1,35 @@
+T1	Medical-Problem 42 65	Persistent cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 72 106	slightly increased pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 148 175	Bilateral pleural effusions
+E3	Medical-Problem:T3
+T4	Medical-Problem 275 298	Persistent cardiomegaly
+E4	Medical-Problem:T4
+T5	Medical-Problem 305 339	slightly increased pulmonary edema
+E5	Medical-Problem:T5
+T6	Medical-Problem 381 408	Bilateral pleural effusions
+E6	Medical-Problem:T6
+T7	Medical-Problem 930 978	persistent but improving mild interstitial edema
+E7	Medical-Problem:T7
+T8	Medical-Problem 991 998	opacity
+E8	Medical-Problem:T8
+T9	Medical-Anatomy 1007 1026	retrocardiac region
+T10	Medical-Problem 1043 1062	associated effusion
+T11	Medical-Assertion 1063 1074;1076 1086	most likely reflecting
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1087 1117	partial lower lobe atelectasis
+T13	Medical-Problem 1128 1137	pneumonia
+T14	Medical-Problem 1141 1151	aspiration
+T15	Medical-Assertion 1153 1178	should also be considered
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 1190 1204	right effusion
+E14	Medical-Problem:T16
+T17	Medical-Assertion 1222 1224	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1226 1238	pneumothorax
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11 has-Medical-Assertion:T15
+E13	Medical-Problem:T14 has-Medical-Anatomy:T9 has-Medical-Assertion:T11 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

@@ -1,0 +1,20 @@
+T1	Medical-Anatomy 235 240	lungs
+T2	Medical-Problem 245 258	hyperinflated
+T3	Medical-Assertion 263 268	clear
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 269 288	focal consolidation
+T5	Lesion-Characteristic 292 301	Calcified
+T6	Lesion-Description 302 311	granuloma
+T7	Lesion-Anatomy 336 361	right lung base laterally
+T8	Medical-Problem 365 373	Blunting
+T9	Medical-Anatomy 377 404	lateral costophrenic angles
+T10	Medical-Problem 550 564	Hyperinflation
+E9	Medical-Problem:T10
+T11	Medical-Assertion 565 581	without evidence
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 585 598	consolidation
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

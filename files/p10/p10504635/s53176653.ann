@@ -1,0 +1,31 @@
+T1	Medical-Problem 308 318;320 329	new slight elevation
+T2	Medical-Anatomy 337 355	left hemidiaphragm
+T3	Medical-Problem 361 375	linear opacity
+T4	Medical-Anatomy 383 397	left lung base
+T5	Medical-Problem 416 427	atelectasis
+E5	Medical-Problem:T5
+T6	Medical-Assertion 430 450	No definite evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 454 467	consolidation
+T8	Medical-Assertion 470 472	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 474 490	pleural effusion
+T10	Medical-Problem 515 527	pneumothorax
+T11	Medical-Problem 531 545	linear density
+T12	Medical-Anatomy 554 569	right lung apex
+T13	Medical-Assertion 570 584	likely relates
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 590 599	skin fold
+T15	Medical-Problem 667 695	New left basilar atelectasis
+E12	Medical-Problem:T15
+T16	Medical-Assertion 697 717	no definite evidence
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 722 735	consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

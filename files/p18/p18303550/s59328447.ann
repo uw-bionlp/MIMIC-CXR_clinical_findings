@@ -1,0 +1,41 @@
+T1	Medical-Problem 50 71	left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 118 120	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 121 145	significant pneumothorax
+T4	Medical-Problem 148 171	Heterogeneous opacities
+T5	Medical-Anatomy 185 194	left lung
+T6	Medical-Assertion 215 228	may represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 229 258	areas of residual atelectasis
+T8	Medical-Problem 269 287	re-expansion edema
+T9	Medical-Assertion 288 306	cannot be excluded
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 795 809	Small residual
+E7	Medical-Problem:T10
+T11	Medical-Problem 810 831	left pleural effusion
+E8	Medical-Problem:T11
+T12	Medical-Problem 905 947	explains leftward shift of the mediastinum
+E9	Medical-Problem:T12
+T13	Medical-Problem 960 1001	moderate right pleural effusion increased
+E10	Medical-Problem:T13
+T14	Medical-Anatomy 1024 1029	Right
+E11	Medical-Anatomy:T14
+T15	Medical-Problem 1054 1077	perihilar consolidation
+E12	Medical-Problem:T15
+T16	Medical-Assertion 1078 1086	could be
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1087 1105	re-expansion edema
+T18	Medical-Problem 1124 1153	negative drainage pressure is
+E14	Medical-Problem:T18
+T19	Medical-Problem 1164 1173	pneumonia
+T20	Medical-Problem 1178 1198	pulmonary hemorrhage
+T21	Medical-Assertion 1200 1221	need to be considered
+A5	Medical-AssertionValue T21 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T9
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T21
+E16	Medical-Problem:T20 has-Medical-Assertion:T21

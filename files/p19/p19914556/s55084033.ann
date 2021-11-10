@@ -1,0 +1,22 @@
+T1	Medical-Anatomy 279 295	right upper lobe
+T2	Medical-Problem 311 329	sclerotic reaction
+T3	Medical-Anatomy 345 354	first rib
+T4	Medical-Problem 601 627	mild bibasilar atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Assertion 641 643	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 644 664	focal consolidations
+T7	Medical-Assertion 685 687	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 688 704	pleural effusion
+T9	Medical-Problem 709 721	pneumothorax
+T10	Lesion-Characteristic 836 845	sclerotic
+T11	Lesion-Description 846 852	lesion
+T12	Lesion-Anatomy 860 876	right upper lobe
+T13	Lesion-Size-Trend 894 903;905 911	have been stable
+A3	Lesion-Size-TrendValue T13 no-change
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T13

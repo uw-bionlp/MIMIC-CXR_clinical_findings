@@ -1,0 +1,34 @@
+T1	Medical-Assertion 242 244	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 245 261	pleural effusion
+T3	Medical-Problem 263 275	pneumothorax
+T4	Medical-Problem 280 308	focal airspace consolidation
+T5	Medical-Assertion 309 322	worrisome for
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 323 332	pneumonia
+T7	Lesion-Characteristic 337 346	calcified
+T8	Lesion-Description 347 356	granuloma
+T9	Lesion-Anatomy 373 389	right upper lung
+T10	Medical-Problem 391 426	Retrosternal soft tissue prominence
+E8	Medical-Problem:T10
+T11	Medical-Problem 489 508;510 517	mediastinal fat and vessels
+E9	Medical-Problem:T11
+T12	Medical-Anatomy 523 531	thoracic
+E10	Medical-Anatomy:T12
+T13	Medical-Problem 589 597	Heart is
+E11	Medical-Problem:T13
+T14	Medical-Problem 598 613	mildly enlarged
+E12	Medical-Problem:T14
+T15	Medical-Assertion 638 640	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 641 656	pulmonary edema
+T17	Medical-Assertion 677 679	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 680 709	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T1 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

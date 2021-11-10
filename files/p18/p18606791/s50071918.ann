@@ -1,0 +1,35 @@
+T1	Lesion-Anatomy 283 302	Bilateral pulmonary
+T2	Lesion-Characteristic 304 313	calcified
+T3	Lesion-Description 314 324	granulomas
+T4	Lesion-Anatomy 329 340	mediastinal
+T5	Lesion-Characteristic 341 350	calcified
+T6	Lesion-Description 351 362	lymph nodes
+T7	Medical-Problem 422 451	Persistent upper displacement
+T8	Medical-Anatomy 460 464	hila
+T9	Medical-Problem 490 525	minimal biapical pleural thickening
+E9	Medical-Problem:T9
+T10	Medical-Assertion 528 530	No
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 531 534;536 555	new focal consolidation
+T12	Medical-Problem 557 574	pleural effusions
+T13	Medical-Problem 578 590	pneumothorax
+T14	Medical-Assertion 693 695	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 696 725	acute cardiopulmonary process
+T16	Lesion-Anatomy 734 743	Bilateral
+T17	Lesion-Characteristic 744 753	calcified
+T18	Lesion-Description 754 764	granulomas
+T19	Lesion-Characteristic 766 775	calcified
+T20	Lesion-Anatomy 776 787	mediastinal
+T21	Lesion-Description 788 799	lymph nodes
+T22	Medical-Problem 806 819	elevated hila
+E20	Medical-Problem:T22
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T1 has-Lesion-Characteristic:T2
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T1 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T10
+E12	Medical-Problem:T13 has-Medical-Assertion:T10
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E16	Lesion-Description:T18 has-Lesion-Anatomy:T16 has-Lesion-Characteristic:T17
+E19	Lesion-Description:T21 has-Lesion-Anatomy:T16 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T20

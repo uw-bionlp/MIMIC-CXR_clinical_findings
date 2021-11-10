@@ -1,0 +1,22 @@
+T1	Medical-Problem 329 350	increase in opacities
+T2	Medical-Anatomy 368 389	right lower lung base
+T3	Medical-Assertion 390 404	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 405 425	aspiration pneumonia
+T5	Medical-Problem 434 439;441 457	right pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 490 513;515 526	minimal left lower lung atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Problem 547 565	volumes appear low
+E6	Medical-Problem:T7
+T8	Medical-Problem 793 802	opacities
+E7	Medical-Problem:T8
+T9	Medical-Anatomy 810 831	right lower lung base
+T10	Medical-Problem 837 852;854 876	unchanged small right pleural effusion
+T11	Medical-Assertion 880 894	concerning for
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 895 915	aspiration pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11

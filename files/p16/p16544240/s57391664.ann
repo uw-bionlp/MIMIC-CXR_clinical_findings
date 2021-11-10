@@ -1,0 +1,42 @@
+T1	Medical-Problem 252 281	Lung volumes are slightly low
+E1	Medical-Problem:T1
+T2	Medical-Problem 302 323	Bibasilar atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Assertion 326 328	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 329 357	definite focal consolidation
+T5	Medical-Assertion 360 362	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 363 368	edema
+T7	Medical-Problem 372 379;381 389	pleural effusion
+T8	Medical-Problem 392 402	Prominence
+T9	Medical-Anatomy 410 431	left pulmonary artery
+T10	Medical-Problem 506 527	Moderate cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Assertion 544 546	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 547 559	pneumothorax
+T13	Lesion-Size 579 583	6 mm
+T14	Lesion-Characteristic 584 594	peripheral
+T15	Lesion-Description 595 602	opacity
+T16	Lesion-Anatomy 611 624	left mid lung
+T17	Lesion-Assertion 687 704	likely represents
+A4	Lesion-AssertionValue T17 possible
+T18	Lesion-Description 707 713	nodule
+T19	Medical-Assertion 716 718	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 719 744	acute osseous abnormality
+T21	Medical-Problem 773 794	Bibasilar atelectasis
+E16	Medical-Problem:T21
+T22	Lesion-Size 801 805	6 mm
+T23	Lesion-Description 806 812	nodule
+T24	Lesion-Anatomy 833 846	left mid lung
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Size-Present:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T16
+E14	Lesion-Description:T18 has-Lesion-Anatomy:T16 has-Lesion-Assertion:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Lesion-Description:T23 has-Lesion-Size-Present:T22 has-Lesion-Anatomy:T24

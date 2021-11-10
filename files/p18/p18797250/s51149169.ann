@@ -1,0 +1,53 @@
+T1	Medical-Problem 200 234	CLUSTER OF PERIBRONCHIAL OPACITIES
+T2	Medical-Assertion 240 248	POSSIBLE
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 249 268	MILD BRONCHIECTASIS
+T4	Medical-Anatomy 277 293	RIGHT UPPER LOBE
+T5	Medical-Assertion 294 302	COULD BE
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 306 321	ACUTE INFECTION
+T7	Medical-Problem 326 348	CHRONIC BRONCHIECTASIS
+T8	Medical-Problem 350 353;355 376	TWO SMALL OVOID OPACITIES
+E6	Medical-Problem:T8
+T9	Lesion-Anatomy 384 399	LEFT UPPER LUNG
+T10	Lesion-Size 404 409	11 MM
+T11	Lesion-Description 410 416	LESION
+T12	Lesion-Anatomy 438 463	FIRST ANTERIOR INTERSPACE
+T13	Lesion-Size 470 476	SUB CM
+T14	Lesion-Description 477 483	LESION
+T15	Lesion-Anatomy 504 510;512 531	SECOND ANTERIOR INTERSPACE
+T16	Medical-Assertion 532 547	COULD BE DUE TO
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 548 563	ACUTE INFECTION
+T18	Medical-Assertion 608 610	NO
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 611 630	PLEURAL ABNORMALITY
+T20	Lesion-Characteristic 646 653	CENTRAL
+T21	Lesion-Description 654 664	LYMPH NODE
+T22	Medical-Problem 722 741	HEAVY CALCIFICATION
+T23	Medical-Anatomy 749 780;782 786	PROXIMAL ARTERIES OF THE AORTIC ARCH
+T24	Medical-Problem 791 809	S shaped scoliosis
+T25	Medical-Anatomy 817 831	thoracic spine
+T26	Medical-Problem 846 865;867 887	moderate underlying degenerative changes
+T27	Medical-Problem 912 927	SMALL PNEUMONIA
+T28	Medical-Problem 931 953	CHRONIC BRONCHIECTASIS
+E24	Medical-Problem:T28
+T29	Medical-Anatomy 955 971	RIGHT UPPER LOBE
+T30	Lesion-Count 977 980	TWO
+T31	Lesion-Anatomy 981 1001	LEFT UPPER LOBE LUNG
+T32	Lesion-Description 1002 1009	NODULES
+T33	Lesion-Characteristic 1010 1029	COULD BE INFECTIOUS
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4
+E2	Medical-Problem:T3 has-Medical-Assertion:T2 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Size-Present:T10
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T12 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Lesion-Description:T21 has-Lesion-Characteristic:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T23
+E20	Medical-Problem:T24 has-Medical-Anatomy:T25
+E22	Medical-Problem:T26 has-Medical-Anatomy:T25
+E23	Medical-Problem:T27 has-Medical-Anatomy:T29
+E28	Lesion-Description:T32 has-Lesion-Count:T30 has-Lesion-Anatomy:T31 has-Lesion-Characteristic:T33

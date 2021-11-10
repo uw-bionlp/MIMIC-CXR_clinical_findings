@@ -1,0 +1,31 @@
+T1	Medical-Assertion 212 214	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 215 227	pneumothorax
+T3	Medical-Problem 230 253	Lung volumes remain low
+E2	Medical-Problem:T3
+T4	Medical-Problem 265 273	blunting
+T5	Medical-Anatomy 281 285;287 305	left costophrenic angle
+T6	Medical-Assertion 306 319	suggestive of
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 320 336	pleural effusion
+T8	Medical-Problem 339 358;360 368	Trace right pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Problem 381 410	Perihilar vascular congestion
+E7	Medical-Problem:T9
+T10	Medical-Problem 422 431;433 442	Bibasilar opacities
+E8	Medical-Problem:T10
+T11	Medical-Assertion 443 456	may represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 457 468	atelectasis
+T13	Medical-Problem 530 554	heart is mildly enlarged
+E10	Medical-Problem:T13
+T14	Medical-Problem 650 661;663 672	Curvilinear densities
+E11	Medical-Problem:T14
+T15	Medical-Assertion 841 843	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 845 857	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

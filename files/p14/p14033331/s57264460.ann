@@ -1,0 +1,36 @@
+T1	Medical-Problem 199 227	heart is moderately enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 235 240	hilar
+T3	Medical-Problem 276 284	obscured
+T4	Medical-Problem 288 313;315 324	bilateral linear and hazy opacities
+T5	Medical-Problem 376 390;392 397	multiple ___ B lines
+E5	Medical-Problem:T5
+T6	Medical-Problem 415 443	pulmonary interstitial edema
+E6	Medical-Problem:T6
+T7	Medical-Assertion 446 448	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 449 468	focal consolidation
+T9	Medical-Assertion 489 491	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 492 504	pneumothorax
+T11	Medical-Problem 508 522	large effusion
+T12	Lesion-Assertion 587 589	no
+A3	Lesion-AssertionValue T12 absent
+T13	Lesion-Characteristic 590 597	osseous
+T14	Lesion-Description 598 605	lesions
+T15	Medical-Problem 633 670	Hazy and linear parenchymal opacities
+E12	Medical-Problem:T15
+T16	Medical-Problem 692 730	increased central pulmonary congestion
+E13	Medical-Problem:T16
+T17	Medical-Problem 735 747	cardiomegaly
+E14	Medical-Problem:T17
+T18	Medical-Assertion 749 753;755 770	most compatible with
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 771 798	cardiogenic pulmonary edema
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Lesion-Description:T14 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

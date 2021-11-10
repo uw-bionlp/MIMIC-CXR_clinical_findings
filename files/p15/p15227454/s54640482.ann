@@ -1,0 +1,50 @@
+T1	Medical-Problem 241 271	lung volumes are hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Problem 288 297	emphysema
+E2	Medical-Problem:T2
+T3	Medical-Problem 317 325	Multiple
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 326 347	right-sided pulmonary
+T5	Lesion-Description 348 355	nodules
+T6	Medical-Problem 414 436	ground-glass opacities
+T7	Medical-Anatomy 444 454	right lung
+T8	Medical-Assertion 479 495	likely represent
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 499 518	element of fibrosis
+T10	Medical-Problem 530 540	congestion
+T11	Medical-Assertion 544 553;555 565	difficult to exclude
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 583 585	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 586 597	overt edema
+T14	Medical-Problem 608 620	cardiomegaly
+E11	Medical-Problem:T14
+T15	Medical-Problem 638 651	calcification
+T16	Medical-Anatomy 659 670	aortic arch
+T17	Medical-Problem 673 681	Blunting
+T18	Medical-Anatomy 689 707;709 714	right costophrenic angle
+T19	Medical-Problem 723 730	chronic
+E16	Medical-Problem:T19
+T20	Medical-Assertion 735 751	likely represent
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 752 760	scarring
+T22	Medical-Problem 890 924	mild pulmonary vascular congestion
+E18	Medical-Problem:T22
+T23	Medical-Assertion 925 932	without
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 933 938;940 945	overt edema
+T25	Lesion-Description 969 976	nodules
+T26	Lesion-Characteristic 981 999	solid ground-glass
+T27	Lesion-Anatomy 1017 1022;1024 1028	right lung
+T28	Medical-Problem 1059 1068	emphysema
+E23	Medical-Problem:T28
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T21 has-Medical-Anatomy:T18 has-Medical-Assertion:T20
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E20	Lesion-Description:T25 has-Lesion-Characteristic:T26 has-Lesion-Anatomy:T27

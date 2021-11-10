@@ -1,0 +1,22 @@
+T1	Medical-Anatomy 76 101	Lateral to the chest tube
+T2	Medical-Anatomy 103 107;109 120	lung  parenchyma
+T3	Medical-Problem 153 160	appears
+T4	Medical-Problem 161 185	somewhat somewhat lucent
+T5	Medical-Assertion 189 202	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 205 217	pneumothorax
+T7	Medical-Problem 264 300	persistent right basilar atelectasis
+E6	Medical-Problem:T7
+T8	Medical-Problem 306 340	small right-sided pleural effusion
+E7	Medical-Problem:T8
+T9	Medical-Problem 1038 1067	Small amount of right pleural
+E8	Medical-Problem:T9
+T10	Medical-Problem 1069 1077	effusion
+E9	Medical-Problem:T10
+T11	Medical-Assertion 1133 1135	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1136 1141;1143 1155	overt pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

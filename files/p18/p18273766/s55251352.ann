@@ -1,0 +1,22 @@
+T1	Medical-Problem 304 308;310 326	area of opacification
+T2	Medical-Anatomy 355 372	left heart border
+T3	Medical-Assertion 504 517	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 518 536	epicardial fat pad
+T5	Medical-Assertion 549 551	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 552 568	pleural effusion
+T7	Medical-Problem 570 585	pulmonary edema
+T8	Medical-Problem 590 602	pneumothorax
+T9	Medical-Problem 702 715	Opacification
+T10	Medical-Anatomy 740 757	left heart border
+T11	Medical-Assertion 758 761;763 772	may represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 773 791	epicardial fat pad
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

@@ -1,0 +1,17 @@
+T1	Medical-Problem 211 228	new consolidation
+T2	Medical-Anatomy 241 257	right lower lobe
+T3	Medical-Assertion 302 310;312 326	findings concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 327 340	new pneumonia
+T5	Medical-Assertion 370 372	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 373 384;386 413	significant associated pleural effusion
+T7	Medical-Assertion 529 531	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 533 545	pneumothorax
+T9	Medical-Problem 567 583	right lower lobe
+E6	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7

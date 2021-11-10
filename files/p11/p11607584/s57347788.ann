@@ -1,0 +1,26 @@
+T1	Medical-Problem 208 224	linear opacities
+T2	Medical-Anatomy 232 246	left lung base
+T3	Medical-Assertion 273 281	probably
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 282 293	atelectasis
+T5	Medical-Assertion 295 297	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 298 314	pleural effusion
+T7	Medical-Problem 318 330	pneumothorax
+T8	Medical-Problem 408 423;425 430	replaced mitral valve
+E6	Medical-Problem:T8
+T9	Medical-Anatomy 466 494	third median sternotomy wire
+T10	Medical-Problem 505 514	fractured
+T11	Medical-Problem 593 620	Mild left basal atelectasis
+E9	Medical-Problem:T11
+T12	Medical-Problem 624 639	linear scarring
+E10	Medical-Problem:T12
+T13	Medical-Assertion 641 643	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 644 653	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

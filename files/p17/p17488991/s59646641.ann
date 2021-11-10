@@ -1,0 +1,26 @@
+T1	Lesion-Description 414 421;423 432	nodular opacities
+T2	Lesion-Anatomy 436 461	both costophrenic sinuses
+T3	Lesion-Size-Trend 462 478	appear unchanged
+A1	Lesion-Size-TrendValue T3 no-change
+T4	Medical-Assertion 508 524	likely represent
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 525 553	minimal interstitial changes
+T6	Lesion-Assertion 628 630	No
+A3	Lesion-AssertionValue T6 absent
+T7	Lesion-Size-Trend 631 634	new
+A4	Lesion-Size-TrendValue T7 new
+T8	Lesion-Anatomy 636 645	pulmonary
+T9	Lesion-Description 646 653	nodules
+T10	Lesion-Description 655 661	masses
+T11	Medical-Problem 666 680	consolidations
+E7	Medical-Problem:T11
+T12	Medical-Assertion 716 727	no evidence
+A5	Medical-AssertionValue T12 absent
+T13	Medical-Problem 731 747	pleural effusion
+T14	Medical-Problem 751 763	pneumothorax
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Lesion-Description:T9 has-Lesion-Assertion:T6 has-Lesion-Size-Trend:T7 has-Lesion-Anatomy:T8
+E6	Lesion-Description:T10 has-Lesion-Assertion:T6 has-Lesion-Size-Trend:T7 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T13 has-Medical-Assertion:T12
+E9	Medical-Problem:T14 has-Medical-Assertion:T12

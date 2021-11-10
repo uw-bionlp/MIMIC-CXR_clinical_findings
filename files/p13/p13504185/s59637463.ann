@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 399 403	Left
+T2	Medical-Assertion 432 448	without evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 452 464	pneumothorax
+T4	Medical-Problem 468 481	Opacification
+T5	Medical-Anatomy 492 515	left lateral chest wall
+T6	Medical-Problem 535 542;544 549	pleural fluid
+T7	Medical-Problem 556 569	opacification
+T8	Medical-Anatomy 577 600	left mid and lower zone
+T9	Medical-Assertion 601 621	most likely reflects
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 623 641	re-expansion edema
+T11	Medical-Problem 656 678	residual pleural fluid
+T12	Medical-Problem 683 694;696 703	atelectatic changes
+T13	Medical-Assertion 746 768;770 777	would be impossible to exclude
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 778 800	superimposed pneumonia
+T15	Medical-Anatomy 803 810	Cardiac
+T16	Medical-Problem 854 881;883 898	mild elevation of pulmonary venous pressure
+T17	Medical-Problem 903 922	atelectatic changes
+T18	Medical-Anatomy 930 940	right base
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15 has-Medical-Anatomy:T18
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18

@@ -1,0 +1,26 @@
+T1	Medical-Problem 345 355;357 406	Large left pleural effusion with apical and basal components
+E1	Medical-Problem:T1
+T2	Medical-Problem 490 504;506 522	Moderate right pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 551 560	Pneumonia
+T4	Medical-Anatomy 568 573;575 585	right lower lobe
+T5	Medical-Problem 632 637;639 671	Upper mediastinal contour is distorted
+E5	Medical-Problem:T5
+T6	Lesion-Size 675 680	large
+T7	Lesion-Anatomy 681 696	left upper lobe
+T8	Lesion-Description 697 701	mass
+T9	Medical-Anatomy 704 709	Heart
+T10	Medical-Assertion 713 716	not
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 718 734	greatly enlarged
+T12	Medical-Problem 743 761	partially obscured
+T13	Medical-Problem 769 790	left pleural effusion
+E12	Medical-Problem:T13
+T14	Medical-Assertion 793 795	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 797 809	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7
+E10	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T9
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

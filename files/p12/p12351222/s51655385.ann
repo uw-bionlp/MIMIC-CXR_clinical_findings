@@ -1,0 +1,44 @@
+T1	Medical-Assertion 36 38	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 39 57	large pneumothorax
+T3	Medical-Problem 61 78	pneumomediastinum
+T4	Lesion-Anatomy 92 108	Right upper lobe
+T5	Lesion-Description 111 115	mass
+T6	Medical-Problem 135 185	Apical pleural thickening, right greater than left
+E5	Medical-Problem:T6
+T7	Medical-Problem 207 226	Hyperinflated lungs
+E6	Medical-Problem:T7
+T8	Medical-Problem 520 544	Hyperinflation is severe
+E7	Medical-Problem:T8
+T9	Medical-Problem 562 571	emphysema
+E8	Medical-Problem:T9
+T10	Medical-Problem 579 592;594 605	small airways obstruction
+E9	Medical-Problem:T10
+T11	Medical-Assertion 614 622	could be
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 625 660	miniscule right apical pneumothorax
+T13	Medical-Problem 678 691	mild widening
+T14	Medical-Anatomy 699 710	mediastinum
+T15	Medical-Problem 715 746	poor definition of its contours
+T16	Medical-Assertion 766 773	perhaps
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 779 808	very slight focal indentation
+T18	Lesion-Anatomy 905 930	right second anterior rib
+T19	Lesion-Assertion 938 948	suggestion
+A4	Lesion-AssertionValue T19 possible
+T20	Lesion-Size 956 960	3 cm
+T21	Lesion-Anatomy 967 971	lung
+T22	Lesion-Description 972 978	lesion
+T23	Medical-Anatomy 1068 1073	Lungs
+T24	Medical-Assertion 1107 1109	no
+A5	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1110 1126	pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T15 has-Medical-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E18	Lesion-Description:T22 has-Lesion-Anatomy:T18 has-Lesion-Assertion:T19 has-Lesion-Size-Present:T20 has-Lesion-Anatomy:T21
+E20	Medical-Problem:T25 has-Medical-Anatomy:T23 has-Medical-Assertion:T24

@@ -1,0 +1,32 @@
+T1	Medical-Problem 343 360	increased opacity
+T2	Medical-Anatomy 369 378	left base
+T3	Medical-Problem 384 392	blunting
+T4	Medical-Anatomy 400 428	posterior costophrenic angle
+T5	Medical-Assertion 435 440;442 451	could represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 452 463	atelectasis
+T7	Medical-Problem 468 495	small left pleural effusion
+T8	Medical-Problem 506 511;513 522	early pneumonia
+T9	Medical-Assertion 540 558	cannot be excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 625 627	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 628 640	pneumothorax
+T12	Medical-Problem 644 663	vascular congestion
+T13	Medical-Assertion 706 712	Likely
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 713 724	atelectasis
+T15	Medical-Problem 730 740;742 758	small left pleural effusion
+T16	Medical-Problem 765 780	early pneumonia
+T17	Medical-Assertion 781 793	not excluded
+A5	Medical-AssertionValue T17 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T2 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T13 has-Medical-Assertion:T17

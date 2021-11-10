@@ -1,0 +1,22 @@
+T1	Medical-Problem 252 271	stomach is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 278 336	Small bilateral pleural effusions, left greater than right
+E2	Medical-Problem:T2
+T3	Medical-Problem 357 379	wedge of consolidation
+T4	Medical-Anatomy 387 403	right lower lung
+T5	Medical-Anatomy 412 431;433 454	contiguous with the diaphragmatic surface
+T6	Medical-Problem 490 496	region
+E6	Medical-Problem:T6
+T7	Medical-Problem 500 511;513 524	right basal atelectasis
+E7	Medical-Problem:T7
+T8	Medical-Assertion 555 563	Could be
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 564 579	new atelectasis
+T10	Medical-Problem 584 593	pneumonia
+T11	Medical-Assertion 647 649	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 651 663	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

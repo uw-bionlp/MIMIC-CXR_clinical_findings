@@ -1,0 +1,31 @@
+T1	Medical-Assertion 317 319	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 320 325;327 340	focal consolidation
+T3	Medical-Problem 342 350	effusion
+T4	Medical-Problem 354 366	pneumothorax
+T5	Lesion-Characteristic 379 385	subtle
+T6	Lesion-Description 386 401	nodular opacity
+T7	Lesion-Anatomy 421 469	left lower lung between ribs 8 and 9 posteriorly
+T8	Medical-Assertion 476 481;483 492	could represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 495 508	nipple shadow
+T10	Lesion-Characteristic 519 523	true
+T11	Lesion-Anatomy 524 533	pulmonary
+T12	Lesion-Description 534 540	nodule
+T13	Lesion-Assertion 541 559	cannot be excluded
+A3	Lesion-AssertionValue T13 possible
+T14	Medical-Assertion 682 684	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 685 697	pneumothorax
+T16	Medical-Problem 701 709	effusion
+T17	Lesion-Description 757 772	Nodular opacity
+T18	Lesion-Anatomy 793 808	left lower lung
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11 has-Lesion-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E13	Lesion-Description:T17 has-Lesion-Anatomy:T18

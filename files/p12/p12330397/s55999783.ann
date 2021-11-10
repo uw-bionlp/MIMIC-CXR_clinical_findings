@@ -1,0 +1,31 @@
+T1	Medical-Problem 118 130	pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Assertion 344 346	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 348 360	pneumothorax
+T4	Medical-Problem 362 378	pleural effusion
+T5	Medical-Problem 382 415	attributable mediastinal widening
+T6	Medical-Problem 418 424;426 438	Severe cardiomegaly
+E5	Medical-Problem:T6
+T7	Medical-Anatomy 484 498	Thoracic aorta
+T8	Medical-Problem 503 531	generally large and tortuous
+T9	Medical-Assertion 536 539	not
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 540 560	obviously aneurysmal
+T11	Medical-Problem 563 572;574 594	Pulmonary vascular engorgement
+E9	Medical-Problem:T11
+T12	Medical-Problem 613 642	mild interstitial abnormality
+E10	Medical-Problem:T12
+T13	Medical-Assertion 647 655	probably
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 658 676	component of edema
+T15	Medical-Assertion 707 709	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 710 717;719 727	pleural effusion
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T2
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

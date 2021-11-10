@@ -1,0 +1,38 @@
+T1	Medical-Problem 404 410	Patchy
+E1	Medical-Problem:T1
+T2	Medical-Problem 411 420	opacities
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 428 453;455 461	left upper and lower lung fields
+T4	Medical-Assertion 482 493	may reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 494 512	areas of infection
+T6	Medical-Assertion 515 517	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 518 525;527 535	pleural effusion
+T8	Medical-Problem 539 551	pneumothorax
+T9	Medical-Assertion 565 567	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 568 595	acute osseous abnormalities
+T11	Medical-Problem 616 636	degenerative changes
+T12	Medical-Anatomy 654 674	lower thoracic spine
+T13	Lesion-Description 683 689	island
+T14	Lesion-Anatomy 697 726	right seventh rib posteriorly
+T15	Lesion-Size-Trend 730 739	unchanged
+A4	Lesion-Size-TrendValue T15 no-change
+T16	Medical-Problem 766 782	patchy opacities
+T17	Medical-Anatomy 790 822	left upper and lower lung fields
+T18	Medical-Assertion 823 834	may reflect
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 836 856	areas of atelectasis
+T20	Medical-Problem 864 873	infection
+T21	Medical-Assertion 877 900	not completely excluded
+A6	Medical-AssertionValue T21 possible
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Lesion-Description:T13 has-Lesion-Anatomy:T14 has-Lesion-Size-Trend:T15
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17
+E14	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T21

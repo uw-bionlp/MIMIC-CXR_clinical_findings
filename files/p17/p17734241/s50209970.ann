@@ -1,0 +1,32 @@
+T1	Medical-Problem 223 264	Borderline size of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Assertion 265 272	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 273 288	pulmonary edema
+T4	Medical-Problem 292 326	Hiatal hernia with air-fluid level
+E3	Medical-Problem:T4
+T5	Medical-Assertion 329 340	No evidence
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 344 362	acute lung disease
+T7	Medical-Assertion 379 381	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 382 391	pneumonia
+T9	Lesion-Assertion 396 398	no
+A4	Lesion-AssertionValue T9 absent
+T10	Lesion-Anatomy 399 408	pulmonary
+T11	Lesion-Description 409 416	nodules
+T12	Lesion-Description 420 426	masses
+T13	Medical-Assertion 429 431	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 432 439;441 449	pleural effusion
+T15	Medical-Problem 452 472	Unchanged tortuosity
+T16	Medical-Anatomy 480 494	thoracic aorta
+T17	Medical-Problem 496 512;514 523	unchanged severe scoliosis
+E12	Medical-Problem:T17
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Anatomy:T10
+E8	Lesion-Description:T12 has-Lesion-Assertion:T9 has-Lesion-Anatomy:T10
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Anatomy:T16

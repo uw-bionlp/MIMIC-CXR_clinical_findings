@@ -1,0 +1,29 @@
+T1	Medical-Problem 233 249	Chronic collapse
+T2	Medical-Anatomy 257 267;269 273	left lower lobe
+T3	Medical-Problem 288 311	persistent hazy opacity
+T4	Medical-Anatomy 319 334	left upper lobe
+T5	Medical-Assertion 350 364	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 365 375	pneumonia,
+T7	Medical-Problem 385 403	aspiration related
+T8	Medical-Assertion 490 492	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 493 498;500 508	large effusion
+T10	Medical-Problem 512 524	pneumothorax
+T11	Medical-Problem 656 672	Chronic collapse
+T12	Medical-Anatomy 680 695	left lower lobe
+T13	Medical-Problem 701 734	persistent left lung hazy opacity
+T14	Medical-Assertion 736 750	concerning for
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 751 760	pneumonia
+T16	Medical-Problem 762 772	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T12 has-Medical-Assertion:T14

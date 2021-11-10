@@ -1,0 +1,22 @@
+T1	Medical-Problem 278 297	Severe cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 302 348;350 358	recurrent severe distention of hilar pulmonary arteries
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 390 399	Left lung
+T4	Medical-Problem 411 416	edema
+T5	Medical-Problem 420 433	Opacification
+T6	Medical-Anatomy 441 460	base the right lung
+T7	Medical-Assertion 461 469	could be
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 470 484	residual edema
+T9	Medical-Problem 520 535	early pneumonia
+T10	Medical-Problem 538 576	Pleural effusion is small on the right
+E9	Medical-Problem:T10
+T11	Medical-Assertion 619 621	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 622 634	pneumothorax
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,44 @@
+T1	Medical-Assertion 182 193	Possibility
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 199 213;215 227	small residual pneumothorax
+T3	Medical-Assertion 228 246	cannot be excluded
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Assertion 258 260	no
+A3	Medical-AssertionValue T4 absent
+T5	Medical-Problem 261 285;287 299	well-defined area of the pneumothorax
+T6	Medical-Problem 332 339	lucency
+T7	Medical-Anatomy 350 361;363 369	right heart border
+T8	Medical-Problem 528 546	partially obscured
+E5	Medical-Problem:T8
+T9	Medical-Assertion 663 665	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 666 669	CHF
+T11	Medical-Problem 671 676;678 691	focal consolidation
+T12	Medical-Problem 696 704	effusion
+T13	Medical-Assertion 719 727	Possible
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 728 747	minimal atelectasis
+T15	Medical-Anatomy 756 766	lung bases
+T16	Medical-Problem 768 786	Multiple fractures
+E11	Medical-Problem:T16
+T17	Medical-Assertion 850 852	No
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 853 883	definite residual pneumothorax
+T19	Medical-Assertion 945 947	No
+A7	Medical-AssertionValue T19 absent
+T20	Medical-Problem 948 951	CHF
+T21	Medical-Problem 953 969	focal infiltrate
+T22	Medical-Problem 974 988	gross effusion
+T23	Medical-Problem 995 1013	Multiple fractures
+E16	Medical-Problem:T23
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Assertion:T3
+E2	Medical-Problem:T5 has-Medical-Assertion:T4
+E3	Medical-Problem:T6 has-Medical-Anatomy:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T9
+E9	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T18 has-Medical-Assertion:T17
+E13	Medical-Problem:T20 has-Medical-Assertion:T19
+E14	Medical-Problem:T21 has-Medical-Assertion:T19
+E15	Medical-Problem:T22 has-Medical-Assertion:T19

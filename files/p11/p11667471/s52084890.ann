@@ -1,0 +1,45 @@
+T1	Medical-Anatomy 392 412	mediastinal contours
+T2	Medical-Problem 425 446	mildly tortuous aorta
+T3	Medical-Problem 452 461;463 486	calcified atherosclerotic disease
+T4	Medical-Anatomy 494 505	aortic knob
+T5	Medical-Anatomy 512 517	lungs
+T6	Medical-Problem 530 539;541 552	bibasilar atelectasis
+T7	Medical-Problem 558 605	small right and moderate left pleural effusions
+T8	Medical-Assertion 612 615;617 626	may represent
+A1	Medical-AssertionValue T8 possible
+T9	Lesion-Anatomy 669 672	rib
+T10	Lesion-Description 673 680	lesions
+T11	Medical-Problem 689 708	pathologic fracture
+T12	Medical-Anatomy 721 744	left costophrenic angle
+T13	Medical-Problem 765 801	area of lentiform pleural thickening
+T14	Medical-Anatomy 820 840	right mid chest wall
+T15	Medical-Problem 849 856	area of
+E14	Medical-Problem:T15
+T16	Medical-Problem 859 875	rib irregularity
+T17	Medical-Assertion 876 895	either representing
+A2	Medical-AssertionValue T17 possible
+T18	Medical-Problem 898 906	fracture
+T19	Medical-Assertion 940 942	no
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 943 955	pneumothorax
+T21	Medical-Problem 973 1031	Persisting right small and left moderate pleural effusions
+E18	Medical-Problem:T21
+T22	Medical-Problem 1038 1060	associated atelectasis
+E19	Medical-Problem:T22
+T23	Medical-Problem 1072 1088	pleural reaction
+E20	Medical-Problem:T23
+T24	Lesion-Characteristic 1101 1112	destructive
+T25	Lesion-Description 1114 1118	bony
+E22	Lesion-Description:T25
+T26	Lesion-Description 1119 1126	lesions
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T5
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T8 has-Medical-Anatomy:T12
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E15	Medical-Problem:T16 has-Medical-Anatomy:T14
+E16	Medical-Problem:T18 has-Medical-Anatomy:T14 has-Medical-Assertion:T17
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E23	Lesion-Description:T26 has-Lesion-Characteristic:T24

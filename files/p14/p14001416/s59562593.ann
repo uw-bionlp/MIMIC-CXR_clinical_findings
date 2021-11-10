@@ -1,0 +1,28 @@
+T1	Medical-Assertion 622 629	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 630 649	focal consolidation
+T3	Medical-Problem 653 667	large effusion
+T4	Medical-Assertion 670 672	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 685 697	pneumothorax
+T6	Medical-Problem 720 733	Calcification
+E4	Medical-Problem:T6
+T7	Lesion-Anatomy 753 774	right clavicular head
+T8	Lesion-Assertion 776 787	potentially
+A3	Lesion-AssertionValue T8 possible
+T9	Lesion-Characteristic 788 797	calcified
+T10	Lesion-Anatomy 798 807	pulmonary
+T11	Lesion-Description 808 814	nodule
+T12	Lesion-Description 818 828	lymph node
+T13	Medical-Problem 832 845	Chronic right
+E10	Medical-Problem:T13
+T14	Medical-Problem 846 869	posterior rib fractures
+E11	Medical-Problem:T14
+T15	Medical-Problem 896 903;905 924	chronic appearing deformity
+T16	Medical-Anatomy 932 954	proximal right humerus
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E8	Lesion-Description:T11 has-Lesion-Anatomy:T7 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10
+E9	Lesion-Description:T12 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16

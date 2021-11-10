@@ -1,0 +1,30 @@
+T1	Medical-Problem 409 434	Bilateral perihilar edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 439 469	pulmonary vascular engorgement
+E2	Medical-Problem:T2
+T3	Medical-Problem 486 509	Small region of opacity
+T4	Medical-Anatomy 517 541	right lung base medially
+T5	Medical-Assertion 542 557	could represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 559 569	aspiration
+T7	Medical-Problem 580 595	early pneumonia
+T8	Medical-Assertion 615 617	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 618 634	pleural effusion
+T10	Medical-Problem 639 651	pneumothorax
+T11	Medical-Assertion 675 677	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 678 693	pulmonary edema
+T13	Medical-Problem 815 830	Improving edema
+E10	Medical-Problem:T13
+T14	Medical-Assertion 836 844	Possible
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 845 855	aspiration
+T16	Medical-Anatomy 859 875	Right Lower Lobe
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T16

@@ -1,0 +1,15 @@
+T1	Medical-Problem 599 625	residual streaky opacities
+T2	Medical-Anatomy 633 642	left base
+T3	Medical-Assertion 643 649;651 661	likely reflecting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 662 673	atelectasis
+T5	Medical-Anatomy 721 726;728 744	right medial lung base
+E4	Medical-Anatomy:T5
+T6	Medical-Assertion 747 749	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 750 765	pulmonary edema
+T8	Medical-Problem 769 781	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6

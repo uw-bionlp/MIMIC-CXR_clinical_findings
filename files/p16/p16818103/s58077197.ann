@@ -1,0 +1,24 @@
+T1	Medical-Problem 428 447	Borderline diameter
+T2	Medical-Anatomy 460 472;474 496	left and the right pulmonary artery
+T3	Medical-Assertion 498 505	without
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 506 515	correlate
+T5	Medical-Problem 519 540	at change in diameter
+T6	Medical-Anatomy 549 566	pulmonary vessels
+T7	Medical-Assertion 569 571	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 572 589	pleural effusions
+T9	Medical-Assertion 592 594	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 595 610	pulmonary edema
+T11	Medical-Assertion 612 614	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 615 624	pneumonia
+T13	Medical-Problem 857 883	coexisting lymphadenopathy
+E9	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

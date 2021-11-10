@@ -1,0 +1,28 @@
+T1	Lesion-Assertion 272 285	does not look
+A1	Lesion-AssertionValue T1 absent
+T2	Lesion-Anatomy 291 295	lung
+T3	Lesion-Description 296 303	nodules
+T4	Medical-Assertion 312 320	probably
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 323 332;334 345	region of atelectasis
+T6	Medical-Problem 349 363	bronchiectasis
+T7	Medical-Anatomy 371 387	right lower lobe
+T8	Medical-Problem 455 486;488 508	tiny volume of pleural effusion layering posteriorly
+E6	Medical-Problem:T8
+T9	Medical-Anatomy 531 545	Thoracic aorta
+T10	Medical-Problem 549 566;568 590	heavily calcified and somewhat irregular
+T11	Medical-Assertion 597 605	possible
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 606 627	mild focal dilatation
+T13	Medical-Anatomy 635 644;646 664	posterior aspect of the arch
+T14	Medical-Assertion 678 689	no evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 693 702	pneumonia
+T16	Medical-Problem 706 728	cardiac decompensation
+E2	Lesion-Description:T3 has-Lesion-Assertion:T1 has-Lesion-Anatomy:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T7
+E4	Medical-Problem:T6 has-Medical-Assertion:T4 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14

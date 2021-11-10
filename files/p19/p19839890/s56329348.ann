@@ -1,0 +1,40 @@
+T1	Medical-Problem 262 292	Multiple new rounded opacities
+T2	Medical-Anatomy 307 322;324 329	throughout both lungs
+T3	Medical-Anatomy 361 376	left lower lung
+T4	Lesion-Anatomy 416 431	right lung apex
+E4	Lesion-Anatomy:T4
+T5	Lesion-Anatomy 436 449	left mid lung
+E5	Lesion-Anatomy:T5
+T6	Lesion-Characteristic 498 503	rapid
+E6	Lesion-Characteristic:T6
+T7	Lesion-Description 652 659	lesions
+T8	Lesion-Size-Trend 679 699	relatively unchanged
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Assertion 712 714	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 715 734	vascular congestion
+T11	Medical-Problem 736 752	pleural effusion
+T12	Medical-Problem 757 769	pneumothorax
+T13	Medical-Assertion 771 773	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 774 782	definite
+E11	Medical-Problem:T14
+T15	Medical-Problem 783 786;788 796	rib fracture
+T16	Lesion-Count 815 823	Multiple
+T17	Lesion-Anatomy 824 833	bilateral
+T18	Lesion-Characteristic 834 839	round
+T19	Lesion-Description 840 849	opacities
+T20	Lesion-Size 853 866	varying sizes
+T21	Medical-Assertion 906 908	No
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 909 917	definite
+E18	Medical-Problem:T22
+T23	Medical-Problem 918 930	rib fracture
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E16	Lesion-Description:T19 has-Lesion-Count:T16 has-Lesion-Anatomy:T17 has-Lesion-Characteristic:T18 has-Lesion-Size-Present:T20
+E19	Medical-Problem:T23 has-Medical-Assertion:T21

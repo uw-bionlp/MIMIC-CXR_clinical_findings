@@ -1,0 +1,22 @@
+T1	Medical-Problem 498 506	Blunting
+T2	Medical-Anatomy 515 538	left costophrenic angle
+T3	Medical-Problem 544 565	increased obscuration
+T4	Medical-Anatomy 573 585;587 600	lateral left hemidiaphragm
+T5	Medical-Assertion 601 614	may be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 615 634	worsening infection
+T7	Medical-Problem 638 648	aspiration
+T8	Medical-Problem 651 664;666 698	Minimal right basilar subsegmental atelectasis
+E7	Medical-Problem:T8
+T9	Medical-Assertion 723 725	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 726 738	pneumothorax
+T11	Medical-Problem 820 853	Worsening left basilar aspiration
+E9	Medical-Problem:T11
+T12	Medical-Problem 857 866	infection
+E10	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

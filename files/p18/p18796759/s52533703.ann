@@ -1,0 +1,17 @@
+T1	Medical-Problem 179 205	subtle increase in opacity
+T2	Medical-Anatomy 213 235	medial right lung base
+T3	Medical-Assertion 302 321;323 325	most likely relates to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 326 337	atelectasis
+T5	Medical-Problem 350 374	early infectious process
+T6	Medical-Assertion 378 390	not excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 464 466	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 467 474;476 484	pleural effusion
+T9	Medical-Problem 488 500	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7

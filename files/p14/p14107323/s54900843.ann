@@ -1,0 +1,25 @@
+T1	Medical-Problem 231 235;237 246	mild unfolding
+T2	Medical-Anatomy 254 268	thoracic aorta
+T3	Medical-Anatomy 275 286	aortic arch
+T4	Medical-Problem 290 299	calcified
+T5	Medical-Problem 306 314;316 329	chest is hyperinflated
+E5	Medical-Problem:T5
+T6	Medical-Assertion 341 343	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 344 360	pleural effusion
+T8	Medical-Problem 364 376	pneumothorax
+T9	Lesion-Size 381 386	small
+T10	Lesion-Characteristic 388 397	calcified
+T11	Lesion-Description 398 407	granuloma
+T12	Lesion-Anatomy 426 440	left lung apex
+T13	Medical-Assertion 529 540	No evidence
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 544 573	acute cardiopulmonary disease
+T15	Medical-Problem 576 590	Hyperinflation
+E13	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E10	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

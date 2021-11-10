@@ -1,0 +1,26 @@
+T1	Medical-Assertion 237 239	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 240 245;247 260	focal consolidation
+T3	Medical-Problem 262 278	pleural effusion
+T4	Medical-Problem 283 291	evidence
+E3	Medical-Problem:T4
+T5	Medical-Problem 295 307	pneumothorax
+T6	Medical-Problem 380 396;398 405	punctate rounded density
+T7	Medical-Anatomy 426 441	left upper lobe
+T8	Medical-Assertion 442 455	may represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 458 471	vessel on end
+T10	Lesion-Characteristic 476 485	calcified
+T11	Lesion-Description 486 495	granuloma
+T12	Lesion-Size-Trend 503 512	unchanged
+A3	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 540 551	No evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 555 584	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Size-Trend:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,46 @@
+T1	Medical-Problem 364 386	heart remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 393 413	most likely reflects
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 414 426	cardiomegaly
+T4	Medical-Problem 438 458	pericardial effusion
+T5	Medical-Assertion 459 477	cannot be excluded
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 497 505;507 526	layering bilateral effusions
+E4	Medical-Problem:T6
+T7	Medical-Problem 532 570	associated bibasilar air-space disease
+E5	Medical-Problem:T7
+T8	Medical-Assertion 572 583;585 597	most likely representing
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 598 621	compressive atelectasis
+T10	Medical-Problem 632 641	pneumonia
+T11	Medical-Problem 645 655	aspiration
+T12	Medical-Assertion 656 662;664 675	cannot be excluded
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 687 698	no evidence
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 702 717	pulmonary edema
+T15	Lesion-Characteristic 725 734	calcified
+T16	Lesion-Anatomy 735 739	lung
+T17	Lesion-Description 741 748	nodules
+T18	Lesion-Anatomy 756 761	right
+T19	Medical-Assertion 762 776	likely reflect
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 846 863	pleural effusions
+E14	Medical-Problem:T20
+T21	Medical-Problem 868 895	bibasilar air-space process
+E15	Medical-Problem:T21
+T22	Medical-Problem 923 943	degenerative changes
+T23	Medical-Anatomy 947 971	both glenohumeral joints
+T24	Medical-Assertion 975 977	No
+A7	Medical-AssertionValue T24 absent
+T25	Medical-Problem 978 990	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8 has-Medical-Assertion:T12
+E8	Medical-Problem:T11 has-Medical-Assertion:T8 has-Medical-Assertion:T12
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Lesion-Description:T17 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T18
+E16	Medical-Problem:T22 has-Medical-Anatomy:T23
+E18	Medical-Problem:T25 has-Medical-Assertion:T24

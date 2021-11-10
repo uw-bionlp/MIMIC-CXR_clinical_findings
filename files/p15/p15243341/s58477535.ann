@@ -1,0 +1,27 @@
+T1	Medical-Assertion 394 396	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 397 409	pneumothorax
+T3	Medical-Problem 412 445	Tiny residual right pleural fluid
+E2	Medical-Problem:T3
+T4	Medical-Problem 448 460;462 470	Left pleural effusion
+E3	Medical-Problem:T4
+T5	Lesion-Size-Trend 490 496	Stable
+A2	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Anatomy 497 506	pulmonary
+T7	Lesion-Description 507 514	nodules
+T8	Medical-Problem 517 540;542 549	Increased right basilar opacity
+E6	Medical-Problem:T8
+T9	Medical-Assertion 551 557	likely
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 558 569	atelectasis
+T11	Medical-Problem 590 621	Increased right basilar opacity
+E8	Medical-Problem:T11
+T12	Medical-Assertion 623 629	likely
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 630 641	atelectasis
+T14	Medical-Assertion 644 648	Less
+A5	Medical-AssertionValue T14 absent
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T7 has-Lesion-Size-Trend:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

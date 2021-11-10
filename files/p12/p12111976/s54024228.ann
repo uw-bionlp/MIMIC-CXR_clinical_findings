@@ -1,0 +1,31 @@
+T1	Medical-Problem 499 541	Moderate enlargement of cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 570 590	mild pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 637 654	Streaky opacities
+T4	Medical-Anatomy 662 672	lung bases
+T5	Medical-Problem 693 701;703 714	areas of atelectasis
+T6	Medical-Assertion 716 723	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 724 747	new focal consolidation
+T8	Medical-Assertion 758 760	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 761 774;776 784	large pleural effusion
+T10	Medical-Problem 788 800	pneumothorax
+T11	Lesion-Anatomy 819 831	pleural base
+T12	Lesion-Description 832 836	mass
+T13	Lesion-Anatomy 848 852;854 858	left apex
+T14	Lesion-Characteristic 864 883	osseous involvement
+T15	Medical-Problem 888 907	pathologic fracture
+T16	Medical-Anatomy 915 929;931 940	left third rib laterally
+T17	Medical-Problem 981 1001	Mild pulmonary edema
+E15	Medical-Problem:T17
+T18	Medical-Problem 1006 1027	bibasilar atelectasis
+E16	Medical-Problem:T18
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T14
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16

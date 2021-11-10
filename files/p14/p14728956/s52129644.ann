@@ -1,0 +1,28 @@
+T1	Medical-Assertion 168 175	Suspect
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 176 191	pulmonary edema
+T3	Medical-Problem 265 296	improvement in bronchopneumonia
+T4	Medical-Anatomy 304 325;327 332	lower aspects of both lungs
+T5	Medical-Problem 345 378	Small bilateral pleural effusions
+E4	Medical-Problem:T5
+T6	Medical-Assertion 426 428	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 429 444	pulmonary edema
+T8	Medical-Anatomy 473 496	mediastinal vasculature
+T9	Medical-Assertion 500 503	not
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 504 511	dilated
+T11	Medical-Problem 523 544;546 566	mild cephalization of pulmonary blood flow
+E8	Medical-Problem:T11
+T12	Medical-Problem 581 613	intermittent cardiac dysfunction
+T13	Medical-Assertion 614 622;624 628	may have been
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Assertion 683 685	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 686 698	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

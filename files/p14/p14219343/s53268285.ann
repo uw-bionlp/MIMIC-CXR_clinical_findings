@@ -1,0 +1,21 @@
+T1	Medical-Problem 382 391	Pneumonia
+T2	Medical-Anatomy 399 415	right lower lung
+T3	Medical-Problem 448 459;461 492	increase in moderate right pleural effusion
+T4	Medical-Assertion 494 508	concerning for
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 509 516	empyema
+T6	Medical-Problem 519 539	Mild pulmonary edema
+E5	Medical-Problem:T6
+T7	Medical-Problem 557 584	Small left pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Assertion 603 605	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 606 618	pneumothorax
+T10	Medical-Problem 621 642	Moderate cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Problem 675 696;698 706	right heart border is obscured
+E9	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

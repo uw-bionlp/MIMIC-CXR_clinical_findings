@@ -1,0 +1,29 @@
+T1	Medical-Problem 301 311	tortuosity
+T2	Medical-Anatomy 320 334	thoracic aorta
+T3	Medical-Anatomy 341 377	posterior costophrenic sulcus on the
+T4	Medical-Problem 387 395	obscured
+T5	Medical-Assertion 403 411	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 414 436	small pleural effusion
+T7	Medical-Problem 441 458;460 467	patchy associated opacity
+T8	Medical-Anatomy 475 494	adjacent parenchyma
+T9	Medical-Problem 526 537	atelectasis
+E8	Medical-Problem:T9
+T10	Medical-Problem 687 718	Right posterior basilar density
+E9	Medical-Problem:T10
+T11	Medical-Assertion 719 729	suggesting
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 732 740	possible
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 741 748;750 758	pleural effusion
+T14	Medical-Problem 764 782	patchy atelectasis
+T15	Medical-Problem 793 802	pneumonia
+T16	Medical-Assertion 806 827	not entirely excluded
+A4	Medical-AssertionValue T16 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T11 has-Medical-Assertion:T16

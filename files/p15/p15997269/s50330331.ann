@@ -1,0 +1,36 @@
+T1	Medical-Problem 219 240	right basilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 262 275	may be due to
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 293 304	atelectasis
+T4	Medical-Problem 309 316;318 326	pleural effusion
+T5	Medical-Problem 337 347	aspiration
+T6	Medical-Problem 351 360	infection
+T7	Medical-Assertion 361 379	cannot be excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 382 396;398 428	At least right upper and middle lobe collapse
+E6	Medical-Problem:T8
+T9	Lesion-Anatomy 440 451	right hilar
+T10	Lesion-Description 452 456	mass
+T11	Medical-Problem 471 501	mediastinal shift to the right
+E9	Medical-Problem:T11
+T12	Medical-Problem 508 527	New small opacities
+T13	Medical-Anatomy 535 559	left mid and lower lungs
+T14	Medical-Assertion 564 578	concerning for
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 580 590	aspiration
+T16	Medical-Problem 594 603	infection
+T17	Medical-Problem 625 651	tiny left pleural effusion
+E14	Medical-Problem:T17
+T18	Medical-Assertion 653 655	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 657 669	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T2 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T2 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

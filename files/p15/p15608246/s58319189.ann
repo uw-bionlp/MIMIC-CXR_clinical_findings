@@ -1,0 +1,36 @@
+T1	Medical-Assertion 29 31	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 46	acute findings
+T3	Medical-Problem 48 84	stable mild to moderate cardiomegaly
+E2	Medical-Problem:T3
+T4	Medical-Problem 369 389	Mediastinal widening
+E3	Medical-Problem:T4
+T5	Medical-Problem 461 481	vascular engorgement
+E4	Medical-Problem:T5
+T6	Medical-Problem 483 497	fat deposition
+E5	Medical-Problem:T6
+T7	Lesion-Characteristic 502 506	mild
+T8	Lesion-Description 507 512;514 530	lymph node enlargement
+T9	Medical-Problem 605 628	region of consolidation
+T10	Medical-Anatomy 636 658;660 692	base of the right lung projecting over the spine on the
+T11	Medical-Assertion 709 726	more likely to be
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 727 738	atelectasis
+T13	Medical-Problem 745 754	pneumonia
+T14	Medical-Problem 757 778	Moderate cardiomegaly
+E12	Medical-Problem:T14
+T15	Medical-Problem 783 818	mild pulmonary vascular engorgement
+E13	Medical-Problem:T15
+T16	Medical-Assertion 869 871	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 872 884	pneumothorax
+T18	Medical-Assertion 885 887	or
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 889 917	appreciable pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E14	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Assertion:T18
+E15	Medical-Problem:T19 has-Medical-Assertion:T16 has-Medical-Assertion:T18

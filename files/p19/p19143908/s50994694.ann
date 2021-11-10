@@ -1,0 +1,26 @@
+T1	Medical-Assertion 433 435	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 436 448	pneumothorax
+T3	Medical-Problem 460 487;489 498	new left perihilar airspace opacities
+E2	Medical-Problem:T3
+T4	Lesion-Anatomy 521 558	superior segment left lower lobe lung
+T5	Lesion-Description 559 563	mass
+T6	Medical-Problem 580 616	increased retrocardiac opacification
+T7	Medical-Problem 622 633	obscuration
+T8	Medical-Anatomy 642 667	medial left hemidiaphragm
+T9	Medical-Problem 823 855	left lung postprocedural changes
+E8	Medical-Problem:T9
+T10	Medical-Assertion 860 862	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 864 876	pneumothorax
+T12	Medical-Problem 879 915	Increased retrocardiac opacification
+E10	Medical-Problem:T12
+T13	Medical-Assertion 919 932	likely due to
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 933 954	worsening atelectasis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,35 @@
+T1	Medical-Problem 460 476	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 479 520;522 545	Diffuse right greater than left increased interstitial prominence
+E2	Medical-Problem:T2
+T3	Medical-Assertion 555 559	most
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 576 591;593 608	asymmetric mild pulmonary edema
+T5	Medical-Problem 617 626	pneumonia
+T6	Medical-Assertion 627 658	could have a similar appearance
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 661 663	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 664 669;671 684	focal consolidation
+T9	Lesion-Description 688 692	mass
+E6	Lesion-Description:T9
+T10	Medical-Anatomy 707 736	bilateral costophrenic angles
+T11	Medical-Problem 741 748	blunted
+T12	Medical-Problem 767 800	small bilateral pleural effusions
+T13	Medical-Assertion 803 805	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 806 818	pneumothorax
+T15	Medical-Problem 834 874	cardiomediastinal silhouette is enlarged
+E11	Medical-Problem:T15
+T16	Medical-Problem 969 1034	Diffuse right greater than left increased interstitial prominence
+E12	Medical-Problem:T16
+T17	Medical-Problem 1058 1089	asymmetric mild pulmonary edema
+E13	Medical-Problem:T17
+T18	Medical-Problem 1100 1133	Bilateral small pleural effusions
+E14	Medical-Problem:T18
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

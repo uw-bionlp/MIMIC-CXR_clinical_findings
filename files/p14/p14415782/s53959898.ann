@@ -1,0 +1,23 @@
+T1	Medical-Problem 257 269;271 302	Mild diffuse increased interstitial markings
+E1	Medical-Problem:T1
+T2	Medical-Assertion 303 316	may be due to
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 317 343	minimal interstitial edema
+T4	Medical-Problem 347 361	Patchy opacity
+T5	Medical-Anatomy 369 386	right middle lobe
+T6	Medical-Assertion 387 402	could be due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 403 414	atelectasis
+T8	Medical-Problem 459 478	early consolidation
+T9	Medical-Assertion 479 497	cannot be excluded
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 500 502	No
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 504 520	pleural effusion
+T12	Medical-Problem 524 536	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T10

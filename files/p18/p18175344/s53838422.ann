@@ -1,0 +1,43 @@
+T1	Medical-Problem 428 441;443 465	heart size is significantly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 477 502	central hilar engorgement
+T3	Medical-Problem 507 521;523 533	redistribution of vessels
+T4	Medical-Anatomy 541 552	upper zones
+T5	Medical-Problem 569 584	pulmonary edema
+T6	Medical-Problem 587 592;594 614	Dense retrocardiac opacity
+E6	Medical-Problem:T6
+T7	Medical-Assertion 615 632	likely represents
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 633 660	left lower lobe atelectasis
+T9	Lesion-Characteristic 663 670	Rounded
+T10	Lesion-Description 672 689	mass-like opacity
+T11	Lesion-Anatomy 697 723	right middle or lower lobe
+T12	Medical-Assertion 724 737	may represent
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 738 749	atelectasis
+T14	Medical-Problem 754 763	infection
+T15	Medical-Problem 765 779	Calcifications
+E13	Medical-Problem:T15
+T16	Medical-Problem 876 904	New moderate pulmonary edema
+E14	Medical-Problem:T16
+T17	Medical-Problem 909 931	worsening cardiomegaly
+E15	Medical-Problem:T17
+T18	Medical-Problem 938 965	Bilateral pleural effusions
+E16	Medical-Problem:T18
+T19	Lesion-Characteristic 972 979	Rounded
+T20	Lesion-Description 980 984	mass
+T21	Lesion-Anatomy 1005 1031	right middle or lower lobe
+T22	Medical-Assertion 1038 1041;1043 1052	may represent
+A3	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1053 1063	atelecasis
+T24	Medical-Problem 1067 1076	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E18	Lesion-Description:T20 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T21
+E20	Medical-Problem:T23 has-Medical-Assertion:T22
+E21	Medical-Problem:T24 has-Medical-Assertion:T22

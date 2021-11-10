@@ -1,0 +1,22 @@
+T1	Medical-Problem 256 263	Pleural
+E1	Medical-Problem:T1
+T2	Medical-Problem 381 404	Bibasilar opacification
+E2	Medical-Problem:T2
+T3	Medical-Problem 492 514	lower lobe atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Problem 529 556	peribronchial opacification
+T5	Medical-Anatomy 564 588	mid and upper lung zones
+T6	Medical-Anatomy 625 649	left perihilar component
+T7	Medical-Assertion 650 660	looks like
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 661 670	pneumonia
+T9	Medical-Problem 693 703	mild edema
+T10	Medical-Problem 714 732	lung abnormalities
+T11	Medical-Assertion 733 744;746 759	do not look sufficient to
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 808 819	atelectasis
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

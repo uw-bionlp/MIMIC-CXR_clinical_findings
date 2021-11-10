@@ -1,0 +1,48 @@
+T1	Medical-Anatomy 326 331	lungs
+T2	Medical-Problem 336 349	hyperinflated
+T3	Medical-Problem 356 366	flattening
+T4	Medical-Anatomy 374 388	hemidiaphragms
+T5	Medical-Problem 394 434	enlargement of the retrosternal airspace
+E5	Medical-Problem:T5
+T6	Medical-Problem 452 458	asthma
+E6	Medical-Problem:T6
+T7	Medical-Problem 466 470	COPD
+T8	Medical-Problem 474 500	Very subtle hazy opacities
+T9	Medical-Anatomy 508 524	right lower lobe
+T10	Medical-Assertion 572 580	possibly
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Problem 581 592	atelectasis
+T12	Medical-Problem 598 608;610 619	very early pneumonia
+T13	Lesion-Characteristic 623 632	calcified
+T14	Lesion-Anatomy 633 642	left lung
+T15	Lesion-Description 643 652	granuloma
+T16	Medical-Problem 701 738	Enlargement of the cardiac silhouette
+E15	Medical-Problem:T16
+T17	Medical-Problem 818 832;834 844	unchanged mild tortuosity
+T18	Medical-Anatomy 852 877	descending thoracic aorta
+T19	Medical-Assertion 890 892	no
+A2	Medical-AssertionValue T19 absent
+T20	Medical-Problem 893 910	pleural effusions
+T21	Medical-Assertion 914 916	No
+A3	Medical-AssertionValue T21 absent
+T22	Medical-Problem 917 929	pneumothorax
+T23	Medical-Assertion 961 967	Likely
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 968 996	right lower lobe atelectasis
+T25	Medical-Problem 1009 1029	very early pneumonia
+T26	Medical-Assertion 1031 1049	cannot be excluded
+A5	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1081 1085	COPD
+E22	Medical-Problem:T27
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T1
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E14	Lesion-Description:T15 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14
+E16	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Medical-Problem:T20 has-Medical-Assertion:T19
+E19	Medical-Problem:T22 has-Medical-Assertion:T21
+E20	Medical-Problem:T24 has-Medical-Assertion:T23
+E21	Medical-Problem:T25 has-Medical-Assertion:T23 has-Medical-Assertion:T26

@@ -1,0 +1,16 @@
+T1	Medical-Problem 319 343	Moderate pulmonary edema
+T2	Medical-Anatomy 362 387	upper lungs and symmetric
+T3	Medical-Problem 403 433	much more severe consolidation
+T4	Medical-Anatomy 441 472;474 479	lung bases particular the right today
+T5	Medical-Assertion 496 515	raising concern for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 516 536	concurrent pneumonia
+T7	Medical-Problem 539 543;545 557	Mild cardiomegaly
+E6	Medical-Problem:T7
+T8	Medical-Assertion 696 698	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 699 711	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

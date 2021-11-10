@@ -1,0 +1,38 @@
+T1	Medical-Problem 227 257	overall increased radiodensity
+T2	Medical-Anatomy 265 290;292 312	lungs, most pronounced in the right upper lobe
+T3	Medical-Problem 325 353	areas of parenchymal opacity
+T4	Medical-Anatomy 359 370;372 389	adjacent to the minor fissure
+T5	Medical-Problem 396 421	minor fissure is elevated
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 430 448;450 466	apical part of the right upper lobe
+T7	Medical-Problem 473 489	air bronchograms
+T8	Medical-Problem 494 518	peribronchial thickening
+T9	Medical-Anatomy 549 558	lung apex
+T10	Medical-Anatomy 616 632	both lower lobes
+E10	Medical-Anatomy:T10
+T11	Medical-Assertion 635 637	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 638 651	complications
+T13	Medical-Problem 662 671	abscesses
+T14	Lesion-Description 676 686	adenopathy
+E13	Lesion-Description:T14
+T15	Medical-Problem 734 749;751 759	aorta is mildly tortuous
+E14	Medical-Problem:T15
+T16	Medical-Assertion 793 800	without
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 801 809	effusion
+T18	Medical-Problem 813 825	pneumothorax
+T19	Medical-Problem 847 879	Scattered, parenchymal opacities
+E17	Medical-Problem:T19
+T20	Medical-Assertion 880 897	highly suspicious
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 902 911	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T18 has-Medical-Assertion:T16
+E18	Medical-Problem:T21 has-Medical-Assertion:T20

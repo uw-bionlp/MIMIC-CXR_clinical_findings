@@ -1,0 +1,54 @@
+T1	Lesion-Assertion 91 99	Possible
+A1	Lesion-AssertionValue T1 possible
+T2	Lesion-Size-Trend 100 103	new
+A2	Lesion-Size-TrendValue T2 new
+T3	Lesion-Anatomy 104 109;111 120	right  mid lung
+T4	Lesion-Description 121 127	nodule
+T5	Medical-Problem 192 207	Streaky opacity
+T6	Medical-Anatomy 211 225	left lung base
+T7	Medical-Anatomy 809 814;816 829	right hemidiaphragm
+T8	Medical-Problem 836 871	mild-to-moderate relative elevation
+T9	Medical-Assertion 880 888	probably
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 906 925	hepatic enlargement
+T11	Medical-Problem 966 972	Patchy
+E8	Medical-Problem:T11
+T12	Medical-Problem 973 995	left basilar opacities
+E9	Medical-Problem:T12
+T13	Medical-Assertion 1034 1038;1040 1053	most suggestive of
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1054 1065	atelectasis
+T15	Lesion-Size-Trend 1079 1082	new
+A5	Lesion-Size-TrendValue T15 new
+T16	Lesion-Description 1083 1096	nodular focus
+T17	Lesion-Anatomy 1118 1132	right mid lung
+T18	Lesion-Assertion 1134 1144	suggesting
+A6	Lesion-AssertionValue T18 possible
+T19	Lesion-Size-Trend 1160 1163	new
+A7	Lesion-Size-TrendValue T19 new
+T20	Lesion-Description 1164 1170	nodule
+T21	Medical-Problem 1373 1380	opacity
+E14	Medical-Problem:T21
+T22	Medical-Problem 1574 1587	nodular focus
+E15	Medical-Problem:T22
+T23	Lesion-Anatomy 1608 1618	right lung
+E16	Lesion-Anatomy:T23
+T24	Medical-Problem 1748 1768	retrocardiac opacity
+E17	Medical-Problem:T24
+T25	Medical-Assertion 1770 1785	probably due to
+A8	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1786 1797	atelectasis
+T27	Medical-Problem 1831 1841	aspiration
+T28	Medical-Problem 1845 1854	pneumonia
+T29	Medical-Assertion 1859 1871	not excluded
+A9	Medical-AssertionValue T29 possible
+E2	Lesion-Description:T4 has-Lesion-Assertion:T1 has-Lesion-Size-Trend:T2 has-Lesion-Anatomy:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Lesion-Description:T16 has-Lesion-Size-Trend:T15 has-Lesion-Anatomy:T17
+E13	Lesion-Description:T20 has-Lesion-Assertion:T18 has-Lesion-Size-Trend:T19
+E18	Medical-Problem:T26 has-Medical-Assertion:T25
+E19	Medical-Problem:T27 has-Medical-Assertion:T29
+E20	Medical-Problem:T28 has-Medical-Assertion:T29

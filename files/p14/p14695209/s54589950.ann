@@ -1,0 +1,18 @@
+T1	Medical-Problem 313 330	increased opacity
+T2	Medical-Anatomy 352 361	left lung
+T3	Medical-Problem 442 472	superimpose underlying opacity
+T4	Medical-Anatomy 480 490	hemithorax
+T5	Medical-Assertion 497 502;504 513	could represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 517 531	layering fluid
+T7	Medical-Problem 539 564	parenchymal consolidation
+T8	Medical-Problem 636 662	Hazy left mid lung opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 664 670	likely
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 671 684	consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

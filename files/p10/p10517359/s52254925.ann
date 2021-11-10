@@ -1,0 +1,36 @@
+T1	Medical-Problem 388 416	Moderate cardiac enlargement
+T2	Medical-Problem 433 446;448 472	prominence of left ventricular contour
+T3	Medical-Anatomy 489 500	left atrium
+T4	Medical-Assertion 508 520;522 533	suggests the possibility
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 537 571	moderate mitral valve incompetence
+T6	Medical-Assertion 574 576	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 577 594;596 609	other significant abnormalities
+T8	Medical-Anatomy 630 635	lungs
+T9	Medical-Assertion 640 643	not
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 644 653	congested
+T11	Medical-Problem 683 710	bilateral pleural effusions
+T12	Medical-Assertion 711 727	have disappeared
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 759 771	hazy density
+T14	Medical-Anatomy 786 820;822 844	lateral and superior aspect of the right-sided hemithorax
+T15	Lesion-Characteristic 867 884	clearly prominent
+T16	Lesion-Characteristic 885 896	soft tissue
+T17	Lesion-Description 898 902	mass
+T18	Lesion-Anatomy 910 922	right axilla
+T19	Medical-Assertion 934 945	no evidence
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 949 976;978 1002	remaining pleural effusions laterally or posteriorly
+T21	Medical-Problem 1056 1088	new right-sided axillary density
+E16	Medical-Problem:T21
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T12
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Lesion-Description:T17 has-Lesion-Characteristic:T15 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

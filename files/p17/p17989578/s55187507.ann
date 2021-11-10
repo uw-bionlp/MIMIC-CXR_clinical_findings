@@ -1,0 +1,26 @@
+T1	Medical-Problem 195 207	pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 285 290;292 300	acute fracture
+T3	Medical-Anatomy 315 345	mid shaft of the left clavicle
+T4	Medical-Anatomy 389 394	lungs
+T5	Medical-Assertion 405 412	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 413 432	focal consolidation
+T7	Medical-Problem 434 442	effusion
+T8	Medical-Problem 447 459	pneumothorax
+T9	Medical-Assertion 507 509	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 510 518	free air
+T11	Medical-Problem 575 609	Left clavicular mid shaft fracture
+E9	Medical-Problem:T11
+T12	Medical-Assertion 681 683	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 684 706	definite rib fractures
+T14	Medical-Problem 711 723	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12

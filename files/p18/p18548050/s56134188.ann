@@ -1,0 +1,41 @@
+T1	Medical-Problem 488 495;497 519	Cardiac silhouette is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 539 569	pulmonary vascular engorgement
+E2	Medical-Problem:T2
+T3	Medical-Problem 575 603	asymmetrical perihilar edema
+E3	Medical-Problem:T3
+T4	Medical-Problem 642 646;648 665	more confluent opacity
+T5	Medical-Anatomy 673 689	right lower lobe
+T6	Medical-Assertion 690 703	could reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 704 723;725 730	dependent pulmonary edema
+T8	Medical-Problem 736 753	secondary process
+T9	Medical-Problem 762 771	infection
+T10	Medical-Problem 774 797;799 815	Moderate layering right pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 841 849	widening
+T12	Medical-Anatomy 857 868	mediastinum
+T13	Medical-Assertion 927 939	possibly due
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 943 949;951 961	venous distention
+T15	Medical-Problem 980 1004	congestive heart failure
+T16	Lesion-Description 1026 1041	lymphadenopathy
+T17	Lesion-Description 1045 1049	mass
+T18	Lesion-Assertion 1053 1065	not excluded
+A3	Lesion-AssertionValue T18 possible
+T19	Medical-Assertion 1470 1478	Probable
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1479 1507	asymmetrical pulmonary edema
+T21	Medical-Problem 1565 1595	secondary superimposed process
+T22	Medical-Anatomy 1603 1619	right lower lobe
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Lesion-Description:T16 has-Lesion-Assertion:T18
+E15	Lesion-Description:T17 has-Lesion-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22

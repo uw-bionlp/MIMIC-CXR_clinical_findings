@@ -1,0 +1,39 @@
+T1	Medical-Problem 232 290	mild diffuse increase in interstitial markings bilaterally
+E1	Medical-Problem:T1
+T2	Medical-Assertion 291 301	suggesting
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 303 326	mild interstitial edema
+T4	Lesion-Anatomy 336 353	left hilar region
+T5	Lesion-Size 360 364	7 mm
+T6	Lesion-Characteristic 365 372	rounded
+T7	Lesion-Description 373 380	opacity
+T8	Lesion-Assertion 412 414	No
+A2	Lesion-AssertionValue T8 absent
+T9	Lesion-Anatomy 415 424	pulmonary
+T10	Lesion-Description 425 431	nodule
+T11	Medical-Assertion 482 484	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 485 504	focal consolidation
+T13	Medical-Assertion 523 525	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 527 543	pleural effusion
+T15	Medical-Problem 547 559	pneumothorax
+T16	Medical-Problem 634 657	Mild interstitial edema
+E12	Medical-Problem:T16
+T17	Lesion-Size 660 664	7 mm
+E13	Lesion-Size:T17
+T18	Lesion-Assertion 718 720	No
+A5	Lesion-AssertionValue T18 absent
+T19	Lesion-Anatomy 721 730	pulmonary
+T20	Lesion-Description 731 737	nodule
+T21	Medical-Assertion 785 787	No
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 788 807	focal consolidation
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T4 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6
+E8	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Lesion-Description:T20 has-Lesion-Assertion:T18 has-Lesion-Anatomy:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21

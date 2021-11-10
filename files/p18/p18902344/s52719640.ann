@@ -1,0 +1,34 @@
+T1	Medical-Problem 244 259	Slight widening
+T2	Medical-Anatomy 268 294	cardiomediastinal contours
+T3	Medical-Assertion 329 331	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 332 337;339 351	large pneumothorax
+T5	Medical-Problem 355 371	pleural effusion
+T6	Medical-Problem 374 385	Obscuration
+T7	Medical-Anatomy 393 407	hemidiaphragms
+T8	Medical-Assertion 408 411;413 420	may reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 421 432	atelectasis
+T10	Medical-Problem 435 459	Mild vascular prominence
+E8	Medical-Problem:T10
+T11	Medical-Problem 509 519	mild edema
+E9	Medical-Problem:T11
+T12	Medical-Problem 521 545	Underlying consolidation
+T13	Medical-Assertion 549 561	not excluded
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 604 625	Bibasilar atelectasis
+E11	Medical-Problem:T14
+T15	Medical-Assertion 631 639	possible
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 640 654;656 661	mild pulmonary edema
+T17	Medical-Problem 664 688	Underlying consolidation
+T18	Medical-Assertion 692 704	not excluded
+A5	Medical-AssertionValue T18 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T18

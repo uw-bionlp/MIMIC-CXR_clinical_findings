@@ -1,0 +1,60 @@
+T1	Medical-Problem 208 234	Lung volumes are decreased
+E1	Medical-Problem:T1
+T2	Medical-Problem 264 284;286 297	Diffuse interstitial abnormality
+E2	Medical-Problem:T2
+T3	Lesion-Characteristic 304 315	ill-defined
+T4	Lesion-Size 316 321	small
+T5	Lesion-Description 322 329	nodules
+T6	Lesion-Anatomy 333 360;362 367	most pronounced in the lung bases
+T7	Medical-Problem 394 408	bronchiectasis
+E7	Medical-Problem:T7
+T8	Medical-Problem 414 435;437 449	chronic peribronchial inflammation
+E8	Medical-Problem:T8
+T9	Medical-Problem 452 490	Worsening bibasilar airspace opacities
+E9	Medical-Problem:T9
+T10	Medical-Assertion 491 504	could reflect
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Problem 506 534	superimposed acute infection
+T12	Medical-Problem 538 580	exacerbation of underlying airways disease
+T13	Medical-Assertion 593 595	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 596 608	pneumothorax
+T15	Medical-Problem 611 619	Blunting
+T16	Medical-Anatomy 627 651	right costophrenic angle
+T17	Medical-Assertion 652 658;660 668	likely reflects
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 669 695	chronic pleural thickening
+T19	Medical-Problem 739 785	Mediastinal and hilar contours remain enlarged
+E16	Medical-Problem:T19
+T20	Lesion-Description 828 843	lymphadenopathy
+E17	Lesion-Description:T20
+T21	Medical-Problem 887 895;897 930	crowding of the bronchovascular structures
+E18	Medical-Problem:T21
+T22	Medical-Assertion 933 935	No
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 936 961	acute osseous abnormality
+T24	Medical-Problem 1000 1070;1072 1125	Worsening bibasilar airspace opacities superimposed on a background of chronic bronchiectasis and peribronchial inflammation
+E20	Medical-Problem:T24
+T25	Medical-Assertion 1126 1132	likely
+A5	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1144 1181	superimposed acute infectious process
+T27	Medical-Problem 1192 1206	progression or
+E22	Medical-Problem:T27
+T28	Medical-Problem 1207 1222;1224 1256	exacerbation of underlying chronic ___ infection
+T29	Medical-Assertion 1257 1263	may be
+A6	Medical-AssertionValue T29 possible
+T30	Lesion-Size-Trend 1281 1290	Unchanged
+A7	Lesion-Size-TrendValue T30 no-change
+T31	Lesion-Anatomy 1291 1302	mediastinal
+T32	Lesion-Anatomy 1307 1312	hilar
+T33	Lesion-Description 1313 1328	lymphadenopathy
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E21	Medical-Problem:T26 has-Medical-Assertion:T25
+E23	Medical-Problem:T28 has-Medical-Assertion:T25 has-Medical-Assertion:T29
+E26	Lesion-Description:T33 has-Lesion-Size-Trend:T30 has-Lesion-Anatomy:T31 has-Lesion-Anatomy:T32

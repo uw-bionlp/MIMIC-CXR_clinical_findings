@@ -1,0 +1,36 @@
+T1	Medical-Problem 292 310;312 334	Borderline size of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 340 350	tortuosity
+T3	Medical-Anatomy 358 372	thoracic aorta
+T4	Medical-Problem 375 383;385 394	Moderate scoliosis
+E4	Medical-Problem:T4
+T5	Medical-Problem 402 416	mild asymmetry
+T6	Medical-Anatomy 424 432	rib cage
+T7	Medical-Problem 466 493	bilateral apical thickening
+E7	Medical-Problem:T7
+T8	Medical-Problem 502 535	substantially stronger thickening
+T9	Medical-Anatomy 544 559	right lung apex
+T10	Medical-Problem 574 609	decreased radiodensity in this area
+E10	Medical-Problem:T10
+T11	Lesion-Assertion 631 633	no
+A1	Lesion-AssertionValue T11 absent
+T12	Lesion-Characteristic 634 647	circumscribed
+T13	Lesion-Description 648 654	nodule
+T14	Lesion-Description 658 662	mass
+T15	Medical-Assertion 665 667	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 668 685	pleural effusions
+T17	Medical-Assertion 688 690;692 700	No evidence
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 704 722	acute lung changes
+T19	Medical-Problem 731 740	pneumonia
+T20	Medical-Problem 744 759	pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E12	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12
+E13	Lesion-Description:T14 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T17
+E17	Medical-Problem:T20 has-Medical-Assertion:T17

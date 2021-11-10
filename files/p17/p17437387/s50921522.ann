@@ -1,0 +1,29 @@
+T1	Medical-Assertion 268 270	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 271 291	focal consolidations
+T3	Medical-Assertion 312 314	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 315 327	pneumothorax
+T5	Medical-Problem 332 349	pleural effusions
+T6	Medical-Assertion 382 384	No
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 385 409;411 417	significant degenerative change
+T8	Medical-Anatomy 437 455	osseous structures
+T9	Medical-Assertion 467 480	suggestion of
+A4	Medical-AssertionValue T9 possible
+T10	Lesion-Size 483 488;490 496	4.6 x 2.4 cm
+T11	Lesion-Characteristic 497 501	soft
+T12	Lesion-Description 509 516	opacity
+T13	Lesion-Anatomy 531 553	mid-to-distal clavicle
+T14	Medical-Anatomy 581 608	second and third right ribs
+E10	Medical-Anatomy:T14
+T15	Medical-Assertion 670 672	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 673 690	remodeling of the
+T17	Medical-Anatomy 691 720	underlying osseous structures
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E4	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E8	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17

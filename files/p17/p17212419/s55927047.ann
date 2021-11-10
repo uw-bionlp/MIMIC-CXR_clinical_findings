@@ -1,0 +1,41 @@
+T1	Medical-Problem 112 169	Increased subtle right lower lung heterogeneous opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 170 178	could be
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 179 190	atelectasis
+T4	Medical-Problem 200 227	mild parenchymal hemorrhage
+T5	Lesion-Description 291 299	neoplasm
+T6	Lesion-Anatomy 307 342;344 349	superior segment of the right lower  lobe
+T7	Medical-Assertion 352 354	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 355 376	definite pneumothorax
+T9	Medical-Problem 734 751	aorta is tortuous
+E7	Medical-Problem:T9
+T10	Medical-Problem 754 773;775 783	Small right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 799 817	Residual opacities
+T12	Medical-Assertion 822 828	likely
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 829 840	atelectasis
+T14	Medical-Anatomy 848 853;855 865	right lower lobe
+T15	Medical-Assertion 913 923	no evident
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 925 937	pneumothorax
+T17	Medical-Problem 939 954	pulmonary edema
+T18	Medical-Problem 958 979	left pleural effusion
+T19	Lesion-Anatomy 982 993	Mediastinal
+T20	Lesion-Anatomy 995 1000	hilar
+T21	Lesion-Description 1002 1017	lymphadenopathy
+T22	Lesion-Anatomy 1022 1038	right lower lobe
+T23	Lesion-Description 1039 1043	mass
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T14
+E10	Medical-Problem:T13 has-Medical-Assertion:T12 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T15
+E17	Lesion-Description:T21 has-Lesion-Anatomy:T19 has-Lesion-Anatomy:T20
+E19	Lesion-Description:T23 has-Lesion-Anatomy:T22

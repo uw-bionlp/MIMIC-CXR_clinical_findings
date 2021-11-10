@@ -1,0 +1,40 @@
+T1	Medical-Assertion 338 340	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 341 362	overt pulmonary edema
+T3	Medical-Problem 366 414	Stable, somewhat linear bibasilar opacifications
+E2	Medical-Problem:T3
+T4	Medical-Assertion 448 462	likely reflect
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 463 474	atelectasis
+T6	Lesion-Anatomy 510 523	pleural-based
+T7	Lesion-Characteristic 525 540	well-marginated
+T8	Lesion-Description 541 545	mass
+T9	Lesion-Anatomy 564 580	right lower lung
+T10	Lesion-Description 604 610	lipoma
+E8	Lesion-Description:T10
+T11	Medical-Assertion 645 647	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 649 665	pleural effusion
+T13	Medical-Problem 669 681	pneumothorax
+T14	Medical-Assertion 710 712	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 713 734	overt pulmonary edema
+T16	Medical-Assertion 737 739	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 740 754	opacifications
+T18	Medical-Assertion 755 765	concerning
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 771 780	pneumonia
+T20	Lesion-Size-Trend 783 789	Stable
+A7	Lesion-Size-TrendValue T20 no-change
+T21	Lesion-Anatomy 790 803	right pleural
+T22	Lesion-Description 804 810	lipoma
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Lesion-Description:T22 has-Lesion-Size-Trend:T20 has-Lesion-Anatomy:T21

@@ -1,0 +1,17 @@
+T1	Medical-Problem 344 349	Lungs
+E1	Medical-Problem:T1
+T2	Medical-Problem 354 360;362 368	low in volume
+E2	Medical-Problem:T2
+T3	Medical-Problem 404 433;435 442	Moderate interval increase in caliber
+T4	Medical-Anatomy 450 498	mediastinum at the level of the vascular pedicle
+T5	Medical-Assertion 499 507	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 509 542	increased central venous pressure
+T7	Medical-Assertion 556 558	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 559 574	pulmonary edema
+T9	Medical-Problem 578 585;587 595	pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

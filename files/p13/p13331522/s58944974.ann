@@ -1,0 +1,24 @@
+T1	Medical-Anatomy 198 203	lungs
+T2	Medical-Problem 228 271	marked interstitial abnormality bilaterally
+T3	Medical-Problem 277 287;289 309	more focal coalescent opacities
+T4	Medical-Anatomy 317 359	right upper lung in retrocardiac positions
+T5	Medical-Assertion 360 365;367 380	which could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 381 390	pneumonia
+T7	Medical-Problem 393 444	Bilateral right greater than left pleural effusions
+E6	Medical-Problem:T7
+T8	Medical-Problem 658 678;680 688	heart remains mildly enlarged
+E7	Medical-Problem:T8
+T9	Medical-Problem 706 740	Moderate-to-severe pulmonary edema
+E8	Medical-Problem:T9
+T10	Medical-Problem 746 768;770 806	coalescent right upper lung and left retrocardiac opacities
+E9	Medical-Problem:T10
+T11	Medical-Assertion 813 826	could reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 827 847	multifocal pneumonia
+T13	Medical-Problem 853 865	accompanying
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11

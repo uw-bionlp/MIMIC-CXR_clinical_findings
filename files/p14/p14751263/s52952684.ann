@@ -1,0 +1,23 @@
+T1	Lesion-Characteristic 34 39	Bulky
+T2	Lesion-Description 62 77	lymphadenopathy
+T3	Medical-Problem 436 474	mediastinal and right hilar prominence
+E3	Medical-Problem:T3
+T4	Lesion-Assertion 491 505	concerning for
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Description 507 522	lymphadenopathy
+T6	Medical-Assertion 551 553	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 554 573	focal consolidation
+T8	Medical-Problem 575 582;584 592	pleural effusion
+T9	Medical-Problem 597 609	pneumothorax
+T10	Medical-Problem 629 667	Mediastinal and right hilar prominence
+E8	Medical-Problem:T10
+T11	Lesion-Assertion 684 697	worrisome for
+A3	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 698 713	lymphadenopathy
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1
+E4	Lesion-Description:T5 has-Lesion-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Lesion-Description:T12 has-Lesion-Assertion:T11

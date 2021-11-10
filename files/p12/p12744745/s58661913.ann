@@ -1,0 +1,41 @@
+T1	Medical-Problem 196 217	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 261 269;271 279	aorta is tortuous
+T3	Medical-Problem 285 315	atherosclerotic calcifications
+T4	Medical-Anatomy 329 340	aortic knob
+T5	Medical-Problem 438 454	Patchy opacities
+T6	Medical-Anatomy 472 488;490 512	lung bases, more pronounced on the left
+T7	Medical-Assertion 514 533	which could reflect
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 534 554	areas of atelectasis
+T9	Medical-Problem 560 570	aspiration
+T10	Medical-Problem 574 583	infection
+T11	Medical-Assertion 584 602	cannot be excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 604 606	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 607 623	pleural effusion
+T14	Medical-Problem 628 640	pneumothorax
+T15	Medical-Problem 676 701	mild degenerative changes
+T16	Medical-Anatomy 716 730	thoracic spine
+T17	Medical-Problem 751 786	Patchy bibasilar airspace opacities
+E14	Medical-Problem:T17
+T18	Medical-Assertion 823 826;828 835	may reflect
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 836 856	areas of atelectasis
+T20	Medical-Problem 861 870	infection
+T21	Medical-Problem 874 884	aspiration
+T22	Medical-Assertion 885 903	cannot be excluded
+A5	Medical-AssertionValue T22 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Assertion:T11
+E9	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T22
+E17	Medical-Problem:T21 has-Medical-Assertion:T22

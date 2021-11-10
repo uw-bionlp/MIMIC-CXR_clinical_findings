@@ -1,0 +1,19 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 69	acute cardiopulmonary abnormality
+T3	Medical-Assertion 551 553	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 554 570	pleural effusion
+T5	Medical-Problem 575 587	pneumothorax
+T6	Lesion-Size 589 593	6 mm
+T7	Lesion-Anatomy 594 609	left lower lobe
+T8	Lesion-Characteristic 610 622	ground-glass
+T9	Lesion-Description 623 630	opacity
+T10	Medical-Assertion 715 717	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 718 751	acute cardiopulmonary abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E7	Lesion-Description:T9 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

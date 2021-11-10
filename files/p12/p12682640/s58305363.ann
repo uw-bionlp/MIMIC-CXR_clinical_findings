@@ -1,0 +1,18 @@
+T1	Medical-Problem 170 195;197 204	patchy and linear area of opacity
+T2	Medical-Anatomy 223 230	lingula
+T3	Lesion-Assertion 358 369	no evidence
+A1	Lesion-AssertionValue T3 absent
+T4	Lesion-Characteristic 373 384	obstructing
+T5	Lesion-Characteristic 385 391	airway
+T6	Lesion-Description 392 399	lesions
+T7	Medical-Anatomy 402 407	Lungs
+T8	Medical-Assertion 444 446	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 447 464	pleural effusions
+T10	Medical-Problem 523 559	Patchy and linear lingular opacities
+E8	Medical-Problem:T10
+T11	Medical-Problem 584 595	atelectasis
+E9	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

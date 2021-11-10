@@ -1,0 +1,32 @@
+T1	Medical-Anatomy 218 239	left atrial appendage
+T2	Medical-Assertion 243 250	perhaps
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 252 270	somewhat prominent
+T4	Medical-Problem 281 302	mildly convex contour
+T5	Medical-Anatomy 310 318;320 331	left mid mediastinum
+T6	Medical-Assertion 343 345	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 346 362	pleural effusion
+T8	Medical-Problem 366 378	pneumothorax
+T9	Medical-Problem 417 431	patchy opacity
+E7	Medical-Problem:T9
+T10	Medical-Problem 715 747	Patchy posterior basilar opacity
+E8	Medical-Problem:T10
+T11	Medical-Anatomy 768 784	right lower lobe
+T12	Medical-Assertion 787 797	suggesting
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 798 807	pneumonia
+T14	Medical-Problem 861 904	Mildly bulging left mid mediastinal contour
+E11	Medical-Problem:T14
+T15	Medical-Assertion 906 916	suggesting
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 917 928	enlargement
+T17	Lesion-Anatomy 1019 1025	thymic
+T18	Lesion-Description 1026 1030	cyst
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Lesion-Description:T18 has-Lesion-Anatomy:T17

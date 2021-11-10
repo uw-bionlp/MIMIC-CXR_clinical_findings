@@ -1,0 +1,14 @@
+T1	Medical-Assertion 250 252	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 253 260;262 273	pleural abnormality
+T3	Medical-Problem 287 296	Scoliosis
+T4	Medical-Anatomy 304 324	upper thoracic spine
+T5	Lesion-Assertion 351 362	No evidence
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Anatomy 366 379	intrathoracic
+T7	Lesion-Description 380 390	malignancy
+T8	Medical-Problem 394 403	infection
+E6	Medical-Problem:T8
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6

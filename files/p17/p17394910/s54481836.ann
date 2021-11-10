@@ -1,0 +1,37 @@
+T1	Lesion-Anatomy 106 127	right upper lobe lung
+T2	Lesion-Description 129 135	nodule
+T3	Medical-Problem 168 179	abnormality
+E3	Medical-Problem:T3
+T4	Lesion-Assertion 253 256	not
+A1	Lesion-AssertionValue T4 absent
+T5	Lesion-Characteristic 316 326	infectious
+T6	Lesion-Description 327 333	nodule
+T7	Medical-Problem 872 885	low in volume
+E6	Medical-Problem:T7
+T8	Medical-Problem 891 915	retrocardiac atelectasis
+E7	Medical-Problem:T8
+T9	Lesion-Description 933 939	nodule
+T10	Lesion-Anatomy 947 1008;1010 1026	right upper lung laterally projecting in the second interface over the scapula
+T11	Medical-Assertion 1028 1030	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1031 1038	pleural
+E10	Medical-Problem:T12
+T13	Medical-Problem 1039 1047	effusion
+T14	Medical-Problem 1051 1063	pneumothorax
+T15	Medical-Assertion 1159 1161	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1162 1167	acute
+E13	Medical-Problem:T16
+T17	Medical-Problem 1168 1189	intrathoracic process
+T18	Medical-Assertion 1195 1203	possible
+A4	Medical-AssertionValue T18 possible
+T19	Lesion-Anatomy 1204 1208	lung
+T20	Lesion-Description 1209 1215	nodule
+T21	Lesion-Anatomy 1224 1240	right upper lung
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T11
+E14	Medical-Problem:T17 has-Medical-Assertion:T15 has-Medical-Assertion:T18
+E16	Lesion-Description:T20 has-Lesion-Anatomy:T19 has-Lesion-Anatomy:T21

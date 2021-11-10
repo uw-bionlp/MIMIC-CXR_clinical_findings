@@ -1,0 +1,58 @@
+T1	Medical-Problem 227 266	large, indistinctly marginated  opacity
+T2	Medical-Problem 277 288	originating
+T3	Medical-Anatomy 299 368;370 375	right upper lobe obscuring the upper and lateral borders of the right hilus
+T4	Medical-Problem 377 404	Rightward mediastinal shift
+E4	Medical-Problem:T4
+T5	Medical-Problem 409 432	diaphragmatic elevation
+T6	Medical-Anatomy 441 446;448 452	right lung
+T7	Lesion-Assertion 492 500	Probable
+A1	Lesion-AssertionValue T7 possible
+T8	Lesion-Description 501 511	adenopathy
+T9	Lesion-Anatomy 526 555	lower pole of the right hilus
+T10	Lesion-Anatomy 561 571	subcarinal
+T11	Lesion-Description 572 582	adenopathy
+T12	Medical-Anatomy 595 604;606 636	underside of the right mainstem bronchus
+T13	Medical-Problem 641 650	protrudes
+T14	Lesion-Characteristic 727 734	central
+T15	Lesion-Description 735 739	mass
+T16	Lesion-Anatomy 747 763;765 804	right upper lobe of right lung compromising the bronchus
+T17	Lesion-Characteristic 821 830	extensive
+T18	Lesion-Assertion 853 859	likely
+A2	Lesion-AssertionValue T18 possible
+T19	Lesion-Characteristic 860 867	primary
+T20	Lesion-Anatomy 868 880	bronchogenic
+T21	Lesion-Description 881 890	carcinoma
+T22	Lesion-Assertion 892 896	less
+A3	Lesion-AssertionValue T22 absent
+T23	Lesion-Description 906 914	lymphoma
+T24	Medical-Problem 917 926	Pneumonia
+E21	Medical-Problem:T24
+T25	Medical-Problem 931 955	reactive lymphadenopathy
+T26	Medical-Assertion 956 974	could also explain
+A4	Medical-AssertionValue T26 possible
+T27	Lesion-Assertion 1118 1126	Probable
+A5	Lesion-AssertionValue T27 possible
+T28	Lesion-Anatomy 1127 1143	right upper lobe
+T29	Lesion-Description 1144 1148	mass
+T30	Medical-Problem 1154 1181	postobstructive atelectasis
+E25	Medical-Problem:T30
+T31	Lesion-Anatomy 1186 1191	hilar
+T32	Lesion-Anatomy 1197 1207	subcarinal
+T33	Lesion-Description 1208 1218	adenopathy
+T34	Lesion-Characteristic 1220 1227	primary
+T35	Lesion-Description 1241 1250	carcinoma
+T36	Lesion-Description 1266 1274	lymphoma
+E31	Lesion-Description:T36
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Lesion-Description:T8 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T9
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T12
+E14	Lesion-Description:T15 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T16
+E19	Lesion-Description:T21 has-Lesion-Characteristic:T17 has-Lesion-Assertion:T18 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T20
+E20	Lesion-Description:T23 has-Lesion-Assertion:T18 has-Lesion-Assertion:T22
+E22	Medical-Problem:T25 has-Medical-Assertion:T26
+E24	Lesion-Description:T29 has-Lesion-Assertion:T27 has-Lesion-Anatomy:T28
+E28	Lesion-Description:T33 has-Lesion-Anatomy:T31 has-Lesion-Anatomy:T32
+E30	Lesion-Description:T35 has-Lesion-Characteristic:T34

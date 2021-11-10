@@ -1,0 +1,22 @@
+T1	Medical-Problem 245 270	irregular fluffy opacitis
+T2	Medical-Anatomy 278 293	left lower lobe
+T3	Medical-Assertion 305 318	likely due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 319 329	aspiration
+T5	Medical-Problem 372 376;378 393	Lung volumes are low
+E4	Medical-Problem:T5
+T6	Medical-Assertion 457 459	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 460 476	pleural effusion
+T8	Medical-Problem 480 492	pneumothorax
+T9	Medical-Problem 558 584	Irregular fluffy opacities
+T10	Medical-Anatomy 592 607	left lower lobe
+T11	Medical-Assertion 608 623;625 627	most likely due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 628 638	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

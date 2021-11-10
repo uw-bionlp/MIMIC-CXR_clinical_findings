@@ -1,0 +1,37 @@
+T1	Medical-Anatomy 282 291	pulmonary
+T2	Medical-Assertion 340 351	may reflect
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 352 392	underlying pulmonary obstructive disease
+T4	Medical-Problem 396 413	Streaky opacities
+T5	Medical-Anatomy 417 441	each costophrenic sulcus
+T6	Medical-Assertion 442 449	suggest
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 450 464	minor scarring
+T8	Medical-Problem 469 480	atelectasis
+T9	Medical-Assertion 529 531	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 532 539;541 550	pleural effusions
+T11	Medical-Problem 554 566	pneumothorax
+T12	Medical-Problem 572 619	expanded anteroposterior dimension of the chest
+E9	Medical-Problem:T12
+T13	Medical-Assertion 621 629	suggests
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 630 649	mild hyperinflation
+T15	Medical-Problem 652 669	Small osteophytes
+T16	Medical-Anatomy 690 698;700 705	thoracic spine
+T17	Medical-Assertion 739 750	may suggest
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 751 780	obstructive pulmonary disease
+T19	Medical-Assertion 786 788;790 798	no evidence
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 803 816	acute process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

@@ -1,0 +1,22 @@
+T1	Medical-Problem 233 242	Elevation
+T2	Medical-Anatomy 250 271	base of the left lung
+T3	Medical-Assertion 282 297	probably due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 299 327	subpulmonic pleural effusion
+T5	Medical-Problem 333 344	atelectasis
+T6	Medical-Problem 364 376;378 393	Interstitial pulmonary edema
+E5	Medical-Problem:T6
+T7	Medical-Problem 449 504	expected mediastinal and pulmonary vascular engorgement
+E6	Medical-Problem:T7
+T8	Medical-Assertion 544 555	no evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 559 568	pneumonia
+T10	Medical-Anatomy 576 604;606 610	left upper lung or the right lung
+T11	Medical-Assertion 613 615	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 616 628	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

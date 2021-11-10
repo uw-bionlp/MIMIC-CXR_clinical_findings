@@ -1,0 +1,19 @@
+T1	Medical-Assertion 393 395	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 396 412	pleural effusion
+T3	Medical-Problem 416 428	pneumothorax
+T4	Lesion-Characteristic 431 440	Scattered
+T5	Lesion-Characteristic 441 450	reticular
+T6	Lesion-Size 455 460	small
+T7	Lesion-Description 462 469	nodular
+E6	Lesion-Description:T7
+T8	Lesion-Description 470 479	opacities
+T9	Lesion-Anatomy 499 535	left upper lobe and both lower lobes
+T10	Lesion-Characteristic 601 610	Scattered
+T11	Lesion-Description 625 632	nodular
+E10	Lesion-Description:T11
+T12	Lesion-Description 633 642	opacities
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T9
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T10

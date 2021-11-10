@@ -1,0 +1,32 @@
+T1	Medical-Problem 266 279	Large opacity
+T2	Medical-Anatomy 287 300	right midlung
+T3	Lesion-Anatomy 373 377	lung
+T4	Lesion-Description 378 384	lesion
+T5	Medical-Problem 393 400	abscess
+E5	Medical-Problem:T5
+T6	Medical-Problem 404 413	pneumonia
+E6	Medical-Problem:T6
+T7	Lesion-Description 418 422	mass
+T8	Medical-Problem 441 467	loculated pleural effusion
+E8	Medical-Problem:T8
+T9	Medical-Problem 594 619	Mild mediastinal fullness
+T10	Medical-Anatomy 627 638;640 660	right lower paratracheal station
+T11	Medical-Assertion 661 676	could be due to
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 677 694	distended vessels
+T13	Lesion-Description 699 709	adenopathy
+E12	Lesion-Description:T13
+T14	Medical-Problem 760 783	mild linear atelectasis
+T15	Medical-Problem 788 796	scarring
+T16	Medical-Anatomy 804 819	left lower lung
+T17	Medical-Assertion 851 853	no
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 855 867	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T3
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Medical-Problem:T14 has-Medical-Anatomy:T16
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T18 has-Medical-Assertion:T17

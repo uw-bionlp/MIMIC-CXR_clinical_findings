@@ -1,0 +1,29 @@
+T1	Medical-Problem 559 591	cardiac and mediastinal contours
+E1	Medical-Problem:T1
+T2	Lesion-Size 786 790	4-mm
+T3	Lesion-Characteristic 791 800	calcified
+T4	Lesion-Description 801 808	nodular
+E4	Lesion-Description:T4
+T5	Lesion-Description 809 816	opacity
+T6	Lesion-Anatomy 825 874	right mid lung adjacent to the horizontal fissure
+T7	Lesion-Assertion 890 896;898 908	likely reflecting
+A1	Lesion-AssertionValue T7 possible
+T8	Lesion-Description 911 920	granuloma
+T9	Medical-Problem 923 946	Lung volumes remain low
+E8	Medical-Problem:T9
+T10	Medical-Assertion 952 963	no evidence
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 967 972;974 989	overt pulmonary edema
+T12	Medical-Problem 991 1008	pleural effusions
+T13	Medical-Problem 1012 1024	pneumothorax
+T14	Medical-Assertion 1027 1029	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 1030 1044;1046 1059	focal airspace consolidation
+T16	Medical-Problem 1071 1080	pneumonia
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T10
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14

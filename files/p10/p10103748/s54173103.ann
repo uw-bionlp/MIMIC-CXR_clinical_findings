@@ -1,0 +1,21 @@
+T1	Medical-Problem 1091 1104	Opacification
+T2	Medical-Anatomy 1112 1122	lung bases
+T3	Medical-Assertion 1126 1141	probably due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 1142 1153	atelectasis
+T5	Medical-Problem 1155 1163;1165 1185	complete collapse on the left
+T6	Medical-Problem 1253 1265	Cardiomegaly
+E5	Medical-Problem:T6
+T7	Medical-Problem 1300 1309	scoliosis
+E6	Medical-Problem:T7
+T8	Medical-Problem 1347 1355	probably
+E7	Medical-Problem:T8
+T9	Medical-Problem 1356 1376	mild pulmonary edema
+E8	Medical-Problem:T9
+T10	Medical-Assertion 1480 1482	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 1483 1495	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

@@ -1,0 +1,23 @@
+T1	Medical-Problem 283 315	minimal retrocardiac atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Assertion 356 358	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 371 380	pneumonia
+T4	Medical-Problem 384 400;402 426	other pathologic lung parenchymal process
+T5	Lesion-Characteristic 437 448	millimetric
+T6	Lesion-Description 449 464	nodular opacity
+T7	Lesion-Anatomy 486 557;559 562	right upper lung, between the posterior aspect of the sixth and seventh rib
+T8	Lesion-Size-Trend 657 666	Unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Problem 667 688	moderate cardiomegaly
+E7	Medical-Problem:T9
+T10	Medical-Assertion 689 696	without
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 697 712	pulmonary edema
+T12	Medical-Problem 715 725	elongation
+T13	Medical-Anatomy 733 749	descending aorta
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10 has-Medical-Anatomy:T13

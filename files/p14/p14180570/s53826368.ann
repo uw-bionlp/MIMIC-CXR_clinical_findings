@@ -1,0 +1,24 @@
+T1	Medical-Problem 464 493	pronounced alveolar opacities
+T2	Medical-Anatomy 500 547	perihilar distribution, right greater than left
+T3	Medical-Assertion 549 568	likely representing
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 569 578;580 585	pulmonary edema
+T5	Medical-Assertion 597 599	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 600 624	sizable pleural effusion
+T7	Medical-Assertion 627 629	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 630 642	pneumothorax
+T9	Medical-Problem 771 800	Pronounced alveolar opacities
+T10	Medical-Anatomy 806 828	perihilar distribution
+T11	Medical-Assertion 829 846	likely represents
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 848 863	pulmonary edema
+T13	Medical-Problem 904 919;921 936	non-cardiogenic pulmonary edema
+E9	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E8	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

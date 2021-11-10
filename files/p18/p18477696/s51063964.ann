@@ -1,0 +1,19 @@
+T1	Medical-Problem 294 314	mild pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 329 336;338 351	Greater opacification
+T3	Medical-Anatomy 359 372	postoperative
+T4	Medical-Anatomy 373 383	right lung
+T5	Medical-Assertion 392 407	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 409 424	dependent edema
+T7	Medical-Problem 485 505	developing pneumonia
+T8	Medical-Problem 525 535	aspiration
+T9	Medical-Problem 565 587	small pleural effusion
+T10	Medical-Anatomy 595 637	base of the postoperative right hemithorax
+T11	Medical-Problem 651 705	Air and fluid nearly fill the persistent pleural space
+E10	Medical-Problem:T11
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10

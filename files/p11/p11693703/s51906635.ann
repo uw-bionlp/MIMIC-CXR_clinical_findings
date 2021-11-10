@@ -1,0 +1,43 @@
+T1	Medical-Problem 349 358	unfolding
+T2	Medical-Anatomy 366 380	thoracic aorta
+T3	Medical-Problem 387 391;393 408	lung volumes are low
+E3	Medical-Problem:T3
+T4	Medical-Problem 415 447	interstitium is mildly prominent
+E4	Medical-Problem:T4
+T5	Medical-Assertion 448 458	suggesting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 459 465;467 477	slight congestion
+T7	Medical-Assertion 492 494	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 495 508	focal opacity
+T9	Medical-Problem 510 526	pleural effusion
+T10	Medical-Problem 530 542	pneumothorax
+T11	Lesion-Characteristic 548 553	vague
+T12	Lesion-Description 554 569	nodular opacity
+T13	Lesion-Anatomy 588 622;624 655	right mid lung along the course of teh right posterior seventh rib
+T14	Medical-Problem 658 685	Thin flowing syndesmophytes
+E12	Medical-Problem:T14
+T15	Medical-Problem 708 755	bones are probably demineralized to some degree
+E13	Medical-Problem:T15
+T16	Medical-Assertion 846 859	suggestive of
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 860 877	slight congestion
+T18	Medical-Assertion 883 885	no
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 886 904	definite pneumonia
+T20	Medical-Problem 915 928	Vague density
+T21	Medical-Anatomy 949 963	right mid lung
+T22	Medical-Problem 969 985;987 1006	overlapping with interstitial change
+T23	Medical-Anatomy 1014 1055	course of the right posterior seventh rib
+T24	Medical-Problem 1079 1086	density
+E20	Medical-Problem:T24
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21
+E18	Medical-Problem:T22 has-Medical-Anatomy:T21 has-Medical-Anatomy:T23

@@ -1,0 +1,20 @@
+T1	Medical-Anatomy 229 234	lungs
+T2	Medical-Problem 243 290	hyperinflated with flattening of the diaphragms
+T3	Medical-Problem 310 348	extensive fibrotic changes bilaterally
+T4	Medical-Anatomy 363 374	upper lungs
+T5	Medical-Anatomy 397 416	mid and lower lungs
+T6	Medical-Problem 434 453	superior retraction
+T7	Medical-Anatomy 461 465	hila
+T8	Medical-Problem 471 496	bilateral pleural plaques
+T9	Medical-Problem 550 574	right base consolidation
+E9	Medical-Problem:T9
+T10	Medical-Problem 671 686	Chronic changes
+E10	Medical-Problem:T10
+T11	Medical-Assertion 697 704	without
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 705 735;737 744	definite acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E11	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,41 @@
+T1	Medical-Problem 529 539	dilatation
+T2	Medical-Anatomy 548 557	esophagus
+T3	Medical-Problem 636 671	elevation of the left hemidiaphragm
+E3	Medical-Problem:T3
+T4	Medical-Problem 700 716	largely obscured
+E4	Medical-Problem:T4
+T5	Medical-Problem 719 732	Opacification
+T6	Medical-Anatomy 740 756	right hemithorax
+T7	Medical-Problem 785 796	obscuration
+T8	Medical-Anatomy 804 827	left costophrenic angle
+T9	Medical-Assertion 870 881	No evidence
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 887 909	large pleural effusion
+T11	Medical-Problem 912 931;933 952	Degree of pulmonary vascular congestion
+E10	Medical-Problem:T11
+T12	Medical-Anatomy 996 1003;1005 1015	Osseous structures
+T13	Medical-Assertion 1020 1027	without
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1031 1048	acute abnormality
+T15	Medical-Problem 1069 1082	Opacification
+T16	Medical-Anatomy 1090 1106	right hemithorax
+T17	Medical-Assertion 1154 1175	possibly secondary to
+A3	Medical-AssertionValue T17 possible
+T18	Lesion-Characteristic 1176 1186	progressed
+T19	Lesion-Description 1187 1202	lymphadenopathy
+T20	Lesion-Anatomy 1213 1222	pulmonary
+T21	Lesion-Description 1223 1227	mass
+T22	Medical-Problem 1231 1244	consolidation
+T23	Medical-Assertion 1245 1263	cannot be excluded
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1266 1272	Degree
+E20	Medical-Problem:T24
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Lesion-Description:T19 has-Lesion-Characteristic:T18
+E18	Lesion-Description:T21 has-Lesion-Anatomy:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T16 has-Medical-Assertion:T17 has-Medical-Assertion:T23

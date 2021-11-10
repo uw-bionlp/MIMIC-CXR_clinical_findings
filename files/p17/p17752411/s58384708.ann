@@ -1,0 +1,27 @@
+T1	Medical-Problem 290 310	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 313 329	Right suprahilar
+T3	Lesion-Anatomy 334 350	right upper lobe
+T4	Lesion-Description 352 359	nodules
+T5	Medical-Problem 377 409	Bibasilar and perihilar fullness
+E5	Medical-Problem:T5
+T6	Medical-Assertion 410 421;423 433	most likely represents
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 434 445	atelectasis
+T8	Medical-Assertion 483 485	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 486 493;495 503	pleural effusion
+T10	Medical-Problem 507 519	pneumothorax
+T11	Medical-Problem 578 595	Aortic tortuosity
+E9	Medical-Problem:T11
+T12	Medical-Assertion 680 682;684 705	no radiographic evidence
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 710 723	acute process
+T14	Lesion-Anatomy 746 750	Lung
+T15	Lesion-Description 751 758	nodules
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T14

@@ -1,0 +1,25 @@
+T1	Medical-Problem 329 349	large pseudoaneurysm
+T2	Medical-Anatomy 379 385;387 391	aortic arch
+T3	Medical-Problem 394 409	Streaky opacity
+T4	Medical-Anatomy 417 433	right lower lobe
+T5	Medical-Assertion 434 449	likely reflects
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 450 461	atelectasis
+T7	Medical-Anatomy 469 490	pulmonary vasculature
+T8	Medical-Assertion 494 497	not
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 498 506	engorged
+T10	Medical-Assertion 509 511	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 512 524	pneumothorax
+T12	Medical-Problem 528 535;537 545	pleural effusion
+T13	Medical-Problem 679 691	slightly low
+E10	Medical-Problem:T13
+T14	Medical-Problem 794 811;813 827	large aortic arch pseudoaneurysm
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10

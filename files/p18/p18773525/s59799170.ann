@@ -1,0 +1,26 @@
+T1	Medical-Assertion 473 475	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 476 483;485 493	pleural effusion
+T3	Medical-Problem 497 509	pneumothorax
+T4	Medical-Problem 512 528	Patchy opacities
+T5	Medical-Anatomy 536 557	right right lung apex
+T6	Medical-Anatomy 563 572	obscuring
+T7	Medical-Anatomy 577 596	left cardiac border
+T8	Medical-Assertion 597 604	suggest
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 605 622	minor atelectasis
+T10	Medical-Assertion 625 633	Possible
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 634 637;639 659	old healed rib fractures
+T12	Medical-Anatomy 679 705	left eighth and ninth ribs
+T13	Medical-Problem 804 813	Opacities
+E10	Medical-Problem:T13
+T14	Medical-Assertion 814 824	suggesting
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 825 842	minor atelectasis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10 has-Medical-Anatomy:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

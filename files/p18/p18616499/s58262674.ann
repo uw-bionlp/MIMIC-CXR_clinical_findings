@@ -1,0 +1,40 @@
+T1	Lesion-Anatomy 418 428	right lung
+T2	Lesion-Count 430 438	multiple
+T3	Lesion-Description 439 446	nodular
+T4	Medical-Problem 512 539	component of bronchiectasis
+E4	Medical-Problem:T4
+T5	Medical-Problem 593 613	multifocal pneumonia
+E5	Medical-Problem:T5
+T6	Medical-Problem 676 691	mild prominence
+T7	Medical-Anatomy 699 710;712 722	right hilar structures
+T8	Medical-Assertion 724 745	possibly representing
+A1	Medical-AssertionValue T8 possible
+T9	Lesion-Description 746 761	lymphadenopathy
+E8	Lesion-Description:T9
+T10	Medical-Problem 765 784	vascular structures
+T11	Medical-Assertion 797 799	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 800 816	pleural effusion
+T13	Medical-Problem 820 832	pneumothorax
+T14	Medical-Problem 850 890	Multiple nodular and branching opacities
+E12	Medical-Problem:T14
+T15	Medical-Anatomy 898 908	right lung
+T16	Medical-Assertion 909 914;916 925	could represent
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 926 946	multifocal pneumonia
+T18	Medical-Problem 990 1033	component of newly-developed bronchiectasis
+T19	Medical-Problem 1036 1058	Right hilar prominence
+E16	Medical-Problem:T19
+T20	Medical-Assertion 1080 1090	may due to
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1091 1106	lymphadenopathy
+E17	Medical-Problem:T21
+T22	Medical-Problem 1110 1129	vascular structures
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T1 has-Lesion-Count:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E18	Medical-Problem:T22 has-Medical-Assertion:T20

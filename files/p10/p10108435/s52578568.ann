@@ -1,0 +1,46 @@
+T1	Medical-Problem 300 321	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 341 363	aorta remains tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 366 377	Enlargement
+T4	Medical-Anatomy 386 390	hila
+T5	Medical-Problem 412 446	mild pulmonary vascular congestion
+T6	Lesion-Anatomy 484 495	right hilar
+T7	Lesion-Anatomy 500 511	mediastinal
+T8	Lesion-Description 512 527	lymphadenopathy
+T9	Medical-Problem 590 606	Patchy opacities
+T10	Medical-Anatomy 615 625	lung bases
+T11	Medical-Assertion 626 637	may reflect
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 638 649	atelectasis
+T13	Medical-Problem 654 663	infection
+T14	Medical-Assertion 667 679	not excluded
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Anatomy 688 703	left lower lobe
+T16	Medical-Assertion 738 740	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 741 757	pleural effusion
+T18	Medical-Problem 762 774	pneumothorax
+T19	Medical-Assertion 803 805	no
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 806 833	acute osseous abnormalities
+T21	Medical-Problem 923 944	Moderate cardiomegaly
+E17	Medical-Problem:T21
+T22	Medical-Problem 950 984	mild pulmonary vascular congestion
+E18	Medical-Problem:T22
+T23	Medical-Problem 987 993;995 1004	Patchy opacities
+T24	Medical-Anatomy 1016 1026	lung bases
+T25	Medical-Assertion 1027 1042	likely reflects
+A5	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1043 1054	atelectasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11 has-Medical-Assertion:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E19	Medical-Problem:T23 has-Medical-Anatomy:T24
+E21	Medical-Problem:T26 has-Medical-Anatomy:T24 has-Medical-Assertion:T25

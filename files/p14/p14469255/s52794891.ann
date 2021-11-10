@@ -1,0 +1,28 @@
+T1	Medical-Assertion 298 308	presumably
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 311 329	chronic stump leak
+T3	Medical-Problem 348 361	consolidation
+T4	Medical-Anatomy 369 388	remaining left lung
+T5	Medical-Problem 460 478;480 493	mild peribronchial opacification
+T6	Medical-Anatomy 501 516	lower lung zone
+T7	Medical-Assertion 518 533	could be due to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 534 544	aspiration
+T9	Medical-Problem 549 560	atelectasis
+T10	Medical-Problem 563 571	Scarring
+T11	Medical-Anatomy 579 594	left upper lobe
+T12	Medical-Assertion 595 617	should not be mistaken
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 662 689	Small left pleural effusion
+E10	Medical-Problem:T13
+T14	Medical-Problem 773 781	obscured
+T15	Medical-Problem 785 796	abnormality
+T16	Medical-Anatomy 804 820	right hemithorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T16
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16

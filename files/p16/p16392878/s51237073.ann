@@ -1,0 +1,20 @@
+T1	Medical-Assertion 343 345	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 347 363	pleural effusion
+T3	Medical-Problem 367 379	pneumothorax
+T4	Medical-Problem 382 409	Moderate sagittal narrowing
+T5	Medical-Anatomy 417 424	trachea
+T6	Medical-Problem 436 456	chronic lung disease
+T7	Medical-Problem 461 480	deviation rightward
+T8	Medical-Anatomy 495 502;504 513	arch of the aorta
+T9	Medical-Assertion 535 537	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 538 571	acute cardiopulmonary abnormality
+T11	Medical-Problem 578 633	Moderate tracheal narrowing due to chronic lung disease
+E9	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

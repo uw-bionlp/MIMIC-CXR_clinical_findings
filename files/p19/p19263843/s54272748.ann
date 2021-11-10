@@ -1,0 +1,51 @@
+T1	Medical-Problem 34 48	Hyperinflation
+T2	Medical-Anatomy 56 61	lungs
+T3	Medical-Assertion 62 72	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 73 82	emphysema
+T5	Lesion-Description 84 99	Nodular opacity
+T6	Lesion-Anatomy 122 138	right upper lung
+T7	Medical-Assertion 184 186	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 189 208	displaced fractures
+T9	Medical-Problem 601 618	are hyperinflated
+E7	Medical-Problem:T9
+T10	Lesion-Size 631 635	6 mm
+T11	Lesion-Description 636 643	nodular
+E9	Lesion-Description:T11
+T12	Lesion-Description 644 651	opacity
+T13	Lesion-Anatomy 673 689	right upper lung
+T14	Medical-Assertion 721 728	without
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 729 742	consolidation
+T16	Medical-Problem 745 753	effusion
+T17	Medical-Problem 758 770	pneumothorax
+T18	Medical-Assertion 831 833	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 834 843	displaced
+E15	Medical-Problem:T19
+T20	Medical-Problem 844 853	fractures
+T21	Medical-Problem 885 902	Hyperinflation of
+T22	Medical-Anatomy 907 912	lungs
+T23	Medical-Assertion 913 923	suggesting
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 924 933	emphysema
+T25	Lesion-Description 935 950	Nodular opacity
+E20	Lesion-Description:T25
+T26	Medical-Assertion 1034 1036	No
+A6	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1038 1047	displaced
+E21	Medical-Problem:T27
+T28	Medical-Problem 1048 1057	fractures
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T14
+E16	Medical-Problem:T20 has-Medical-Assertion:T18
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22
+E19	Medical-Problem:T24 has-Medical-Anatomy:T22 has-Medical-Assertion:T23
+E22	Medical-Problem:T28 has-Medical-Assertion:T26

@@ -1,0 +1,15 @@
+T1	Medical-Problem 171 192	Greater consolidation
+T2	Medical-Anatomy 200 210	lung bases
+T3	Medical-Assertion 211 226	could be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 227 238	atelectasis
+T5	Medical-Problem 249 269	concurrent pneumonia
+T6	Medical-Problem 280 307	Small left pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Assertion 372 374	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 375 387	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

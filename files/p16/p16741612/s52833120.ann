@@ -1,0 +1,18 @@
+T1	Medical-Problem 325 333;335 342	increase density
+T2	Medical-Anatomy 350 365	right lung base
+T3	Medical-Assertion 372 389	likely represents
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 390 406;408 416	right lower lobe collapse
+T5	Medical-Problem 418 425	Opacity
+T6	Medical-Anatomy 433 442	left base
+T7	Medical-Problem 467 478	atelectasis
+T8	Medical-Problem 483 504	developing infiltrate
+T9	Medical-Assertion 582 584	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 585 599	pneumothoraces
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

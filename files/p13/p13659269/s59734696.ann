@@ -1,0 +1,18 @@
+T1	Medical-Problem 293 300;302 313	Minimal atelectasis
+T2	Medical-Anatomy 321 337	right lung bases
+T3	Medical-Problem 339 360	Moderate cardiomegaly
+E3	Medical-Problem:T3
+T4	Medical-Problem 362 370;372 381	Moderate scoliosis
+E4	Medical-Problem:T4
+T5	Medical-Assertion 384 386	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 387 408	overt pulmonary edema
+T7	Medical-Assertion 411 413	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 414 438	larger pleural effusions
+T9	Medical-Problem 511 530;532 539	minimal increase in density
+T10	Medical-Anatomy 556 598	upper and lower aspects of the right hilus
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10

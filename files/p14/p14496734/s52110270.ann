@@ -1,0 +1,35 @@
+T1	Medical-Problem 289 293;295 307	Mild cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 327 332	aorta
+T3	Medical-Problem 341 364;366 374	diffusely calcified and tortuous
+T4	Medical-Anatomy 377 398	Pulmonary vasculature
+T5	Medical-Assertion 402 405	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 406 414	engorged
+T7	Medical-Problem 417 435;437 446	Patchy ill-defined opacities
+T8	Medical-Anatomy 467 488	left upper lung field
+T9	Medical-Anatomy 493 507	left lung base
+T10	Medical-Assertion 509 523	concerning for
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 524 533	infection
+T12	Medical-Assertion 579 581	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 583 599	pleural effusion
+T14	Medical-Problem 603 615	pneumothorax
+T15	Medical-Problem 636 661;663 670	mild diffuse degenerative changes
+T16	Medical-Anatomy 678 692	thoracic spine
+T17	Medical-Problem 713 741	Patchy ill-defined opacities
+T18	Medical-Anatomy 749 770	left upper lung field
+T19	Medical-Anatomy 775 789	left lung base
+T20	Medical-Assertion 791 805	concerning for
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 806 815	infection
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Anatomy:T18 has-Medical-Anatomy:T19 has-Medical-Assertion:T20

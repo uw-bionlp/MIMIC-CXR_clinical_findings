@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 194 199	lungs
+T2	Medical-Problem 204 217	hyperexpanded
+T3	Medical-Problem 226 250	right lower lobe opacity
+T4	Lesion-Description 255 264	granuloma
+T5	Lesion-Anatomy 282 291	left apex
+T6	Medical-Problem 307 318	atelectasis
+T7	Medical-Anatomy 326 341	left lower lobe
+T8	Medical-Assertion 429 431	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 432 448	pleural effusion
+T10	Medical-Problem 452 464	pneumothorax
+T11	Medical-Problem 493 519	Right lower lobe pneumonia
+E10	Medical-Problem:T11
+T12	Medical-Problem 522 541	Hyperexpanded lungs
+E11	Medical-Problem:T12
+T13	Medical-Assertion 542 558	likely secondary
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 562 566	COPD
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

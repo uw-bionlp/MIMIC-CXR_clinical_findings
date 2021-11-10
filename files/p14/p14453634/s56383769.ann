@@ -1,0 +1,26 @@
+T1	Medical-Problem 33 73	Slightly worsened left basal atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Problem 95 109;111 121	Mild rightward  deviation
+T3	Medical-Anatomy 129 136	trachea
+T4	Lesion-Size 190 195	large
+T5	Lesion-Anatomy 196 208	left thyroid
+T6	Lesion-Description 209 215	nodule
+T7	Medical-Problem 490 513	triangular-like opacity
+T8	Medical-Anatomy 542 550;552 565	left mid to lower lung
+T9	Medical-Assertion 572 585	may be due to
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 586 606	atelectasis/scarring
+T11	Medical-Problem 612 626;628 637	small focus of infection
+T12	Medical-Problem 667 702;704 738	slight increase in the left lateral basilar and retrocardiac opacities
+E11	Medical-Problem:T12
+T13	Medical-Assertion 740 759	which may be due to
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 760 769	infection
+T15	Medical-Problem 828 844	pleural effusion
+E13	Medical-Problem:T15
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

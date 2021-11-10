@@ -1,0 +1,35 @@
+T1	Medical-Problem 539 559	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 574 609;611 621	increased prominence of the cardiac silhouette
+E2	Medical-Problem:T2
+T3	Medical-Problem 626 650	bronchovascular crowding
+E3	Medical-Problem:T3
+T4	Medical-Problem 677 686;688 707	increased opacity bilaterally
+E4	Medical-Problem:T4
+T5	Medical-Problem 727 751	moderate pulmonary edema
+E5	Medical-Problem:T5
+T6	Medical-Problem 765 796	superimposed infectious process
+T7	Medical-Assertion 797 815	cannot be excluded
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 818 820	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 821 837	pleural effusion
+T10	Medical-Problem 842 854	pneumothorax
+T11	Medical-Anatomy 917 937	Right posterior ribs
+T12	Medical-Anatomy 939 959	bilateral clavicular
+T13	Medical-Anatomy 964 986	proximal right humerus
+T14	Medical-Problem 988 997	fractures
+T15	Medical-Problem 1097 1116	Bilateral opacities
+E13	Medical-Problem:T15
+T16	Medical-Assertion 1117 1133	likely represent
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1134 1158	moderate pulmonary edema
+T18	Medical-Problem 1172 1203	superimposed infectious process
+T19	Medical-Assertion 1204 1222	cannot be excluded
+A4	Medical-AssertionValue T19 possible
+E6	Medical-Problem:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E12	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T19

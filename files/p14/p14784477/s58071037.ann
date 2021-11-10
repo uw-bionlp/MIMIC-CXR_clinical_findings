@@ -1,0 +1,20 @@
+T1	Medical-Problem 492 511	band of atelectasis
+T2	Medical-Anatomy 523 538	lower left lung
+T3	Medical-Anatomy 541 546	Lungs
+T4	Medical-Assertion 587 594	without
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 595 609	consolidations
+T6	Medical-Problem 613 622	effusions
+T7	Medical-Problem 760 776;778 782	accessory azygos lobe
+E6	Medical-Problem:T7
+T8	Medical-Assertion 803 827	No radiographic evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 831 840	pneumonia
+T10	Medical-Problem 844 877;879 892	other significant cardiopulmonary abnormalities
+T11	Medical-Problem 925 946	accessory azygos lobe
+E9	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

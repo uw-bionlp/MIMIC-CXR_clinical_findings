@@ -1,0 +1,38 @@
+T1	Medical-Problem 212 229	aorta is tortuous
+E1	Medical-Problem:T1
+T2	Medical-Problem 242 261	Widened mediastinum
+E2	Medical-Problem:T2
+T3	Medical-Assertion 265 278	likely due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 280 295	lymphadenopathy
+T5	Lesion-Anatomy 322 333	right hilum
+T6	Lesion-Assertion 342 355	likely due to
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Description 357 372	lymphadenopathy
+T8	Lesion-Size-Trend 386 389	new
+A3	Lesion-Size-TrendValue T8 new
+T9	Lesion-Description 390 394	mass
+T10	Lesion-Anatomy 402 418	right upper lobe
+T11	Lesion-Size 444 451	2.5 cm,
+T12	Lesion-Size-Trend 480 483	new
+A4	Lesion-Size-TrendValue T12 new
+T13	Lesion-Count 484 492	multiple
+T14	Lesion-Anatomy 493 507	bilateral lung
+T15	Lesion-Description 509 516	nodules
+T16	Medical-Assertion 528 530	no
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 531 543	pneumothorax
+T18	Medical-Problem 565 579;581 590	tiny bilateral effusions
+E13	Medical-Problem:T18
+T19	Lesion-Assertion 621 639	most likely due to
+A6	Lesion-AssertionValue T19 possible
+T20	Lesion-Anatomy 640 644	lung
+T21	Lesion-Anatomy 661 670	bilateral
+T22	Lesion-Anatomy 687 698	mediastinal
+T23	Lesion-Description 699 714	lymphadenopathy
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T6
+E6	Lesion-Description:T9 has-Lesion-Size-Trend:T8 has-Lesion-Anatomy:T10 has-Lesion-Size-Present:T11
+E11	Lesion-Description:T15 has-Lesion-Size-Trend:T12 has-Lesion-Count:T13 has-Lesion-Anatomy:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Lesion-Description:T23 has-Lesion-Assertion:T19 has-Lesion-Anatomy:T20 has-Lesion-Anatomy:T21 has-Lesion-Anatomy:T22

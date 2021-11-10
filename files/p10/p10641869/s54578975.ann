@@ -1,0 +1,25 @@
+T1	Medical-Problem 235 255	Mediastinal widening
+T2	Medical-Assertion 260 284	almost entirely resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 304 313;315 344	worsening pulmonary vascular congestion
+E2	Medical-Problem:T3
+T4	Medical-Assertion 348 358	suggesting
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 359 374	volume overload
+T6	Medical-Anatomy 379 395	both lower lobes
+T7	Medical-Problem 401 415;417 430	large areas of consolidation
+T8	Medical-Assertion 431 437	either
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 438 449	atelectasis
+T10	Medical-Problem 453 462	pneumonia
+T11	Medical-Problem 465 488	Small pleural effusions
+E8	Medical-Problem:T11
+T12	Medical-Assertion 505 507	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 508 520	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

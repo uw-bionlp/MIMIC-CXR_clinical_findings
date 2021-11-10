@@ -1,0 +1,20 @@
+T1	Medical-Anatomy 343 359	ENTIRE LEFT LUNG
+T2	Medical-Problem 367 387	DENSELY CONSOLIDATED
+T3	Medical-Assertion 389 399	PRESUMABLY
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 415 433	AIRWAY OBSTRUCTION
+T5	Medical-Problem 437 456	PLEURAL RESTRICTION
+T6	Medical-Problem 494 525	VOLUME OF LEFT PLEURAL EFFUSION
+E5	Medical-Problem:T6
+T7	Medical-Problem 531 554	WORSENING CONSOLIDATION
+T8	Medical-Anatomy 562 567;569 573	RIGHT LUNG
+T9	Medical-Assertion 575 587	PERHAPS WITH
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 590 632	COMPONENT OF INCREASING INTERSTITIAL EDEMA
+T11	Medical-Problem 644 681	ENLARGEMENT OF THE CARDIAC SILHOUETTE
+E9	Medical-Problem:T11
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

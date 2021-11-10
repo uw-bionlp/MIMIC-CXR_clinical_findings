@@ -1,0 +1,29 @@
+T1	Medical-Assertion 311 313	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 314 326	pneumothorax
+T3	Lesion-Size 378 381	7mm
+T4	Lesion-Description 382 388	nodule
+T5	Lesion-Anatomy 396 407;409 413	right lower lobe
+T6	Lesion-Characteristic 418 436	surrounding linear
+T7	Medical-Problem 460 486	trace right-sided effusion
+E6	Medical-Problem:T7
+T8	Medical-Assertion 589 591	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 592 604	pneumothorax
+T10	Lesion-Size 663 667	7 mm
+T11	Lesion-Anatomy 668 677	pulmonary
+T12	Lesion-Description 678 684	nodule
+T13	Lesion-Anatomy 692 708	right lower lobe
+T14	Medical-Problem 742 755	consolidation
+E12	Medical-Problem:T14
+T15	Medical-Assertion 763 778	could represent
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 779 792	nipple shadow
+T17	Lesion-Anatomy 800 804	lung
+T18	Lesion-Description 805 811	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T17

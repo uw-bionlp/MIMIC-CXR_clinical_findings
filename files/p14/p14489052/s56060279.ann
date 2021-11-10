@@ -1,0 +1,32 @@
+T1	Medical-Problem 268 283	fully collapsed
+T2	Medical-Anatomy 304 315;317 327	lower right hemithorax
+T3	Medical-Problem 335 346	atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Problem 363 384;386 403	more severe rightward mediastinal shift
+E4	Medical-Problem:T4
+T5	Medical-Problem 489 525	persistent pleural space, air filled
+E5	Medical-Problem:T5
+T6	Medical-Problem 546 557	atelectasis
+E6	Medical-Problem:T6
+T7	Medical-Assertion 558 573	could be due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 578 592	mucus plugging
+T9	Medical-Problem 596 604	hematoma
+T10	Medical-Anatomy 613 627	bronchial tree
+T11	Medical-Assertion 636 653	could also be due
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 657 670	lobar torsion
+T13	Medical-Problem 674 679;681 702	other bronchial impingement
+T14	Medical-Anatomy 729 739	heart size
+T15	Medical-Assertion 743 751	probably
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 752 758;760 768	stably enlarged
+T17	Medical-Anatomy 781 792	right heart
+T18	Medical-Problem 808 828	adjacent atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E7	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T7 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Anatomy:T17

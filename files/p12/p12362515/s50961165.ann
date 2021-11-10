@@ -1,0 +1,22 @@
+T1	Medical-Problem 121 128	opacity
+T2	Medical-Anatomy 143 159	right lower lobe
+T3	Medical-Assertion 160 168	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 169 178	pneumonia
+T5	Medical-Problem 182 185;187 196	rib sclerosis
+T6	Medical-Problem 315 342	small left pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Assertion 370 372	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 373 385	pneumothorax
+T9	Medical-Problem 477 488;490 499	ribs appear sclerotic
+E7	Medical-Problem:T9
+T10	Medical-Problem 631 636;638 658	right lower lobe pneumonia
+E8	Medical-Problem:T10
+T11	Lesion-Characteristic 664 673	sclerotic
+T12	Lesion-Description 678 688	metastases
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11

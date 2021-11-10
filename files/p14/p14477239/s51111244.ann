@@ -1,0 +1,60 @@
+T1	Medical-Anatomy 264 269	lungs
+T2	Medical-Problem 274 325	hyperexpanded with flattening of the hemidiaphragms
+T3	Medical-Assertion 327 337	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 339 348	emphysema
+T5	Lesion-Size 380 386	sub-cm
+T6	Lesion-Description 394 401	opacity
+T7	Lesion-Anatomy 411 415;417 435	left anterior third rib
+T8	Lesion-Assertion 515 520	could
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Anatomy 533 542	pulmonary
+T10	Lesion-Description 543 549	nodule
+T11	Lesion-Anatomy 553 556	rib
+T12	Lesion-Description 557 563	lesion
+T13	Lesion-Characteristic 567 576	Calcified
+T14	Lesion-Description 577 587	granulomas
+T15	Lesion-Anatomy 595 611	right upper lobe
+T16	Lesion-Size-Trend 616 625	unchanged
+A3	Lesion-Size-TrendValue T16 no-change
+T17	Medical-Problem 628 642;644 653	Streaky linear opacities
+T18	Medical-Anatomy 661 678	right middle lobe
+T19	Medical-Assertion 747 753	likely
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 754 765	atelectasis
+T21	Medical-Assertion 768 770	No
+A5	Medical-AssertionValue T21 absent
+T22	Medical-Problem 771 787	pleural effusion
+T23	Medical-Problem 792 804	pneumothorax
+T24	Medical-Problem 824 860	extensive aortic knob calcifications
+E19	Medical-Problem:T24
+T25	Medical-Problem 879 909	Nonspecific gaseous distension
+T26	Medical-Anatomy 913 948	partially visualized loops of bowel
+T27	Medical-Problem 1004 1041	New right middle lobe streaky opacity
+E22	Medical-Problem:T27
+T28	Medical-Assertion 1045 1053	probably
+A6	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1054 1065	atelectasis
+T30	Medical-Problem 1074 1093	Hyperexpanded lungs
+E24	Medical-Problem:T30
+T31	Medical-Assertion 1094 1107	suggestive of
+A7	Medical-AssertionValue T31 possible
+T32	Medical-Problem 1108 1117	emphysema
+T33	Lesion-Size 1126 1140	Sub-centimeter
+T34	Lesion-Description 1141 1147	nodule
+T35	Lesion-Size-Trend 1151 1160	unchanged
+A8	Lesion-Size-TrendValue T35 no-change
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T9
+E10	Lesion-Description:T12 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T11
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15 has-Lesion-Size-Trend:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T21
+E20	Medical-Problem:T25 has-Medical-Anatomy:T26
+E23	Medical-Problem:T29 has-Medical-Assertion:T28
+E25	Medical-Problem:T32 has-Medical-Assertion:T31
+E27	Lesion-Description:T34 has-Lesion-Size-Present:T33 has-Lesion-Size-Trend:T35

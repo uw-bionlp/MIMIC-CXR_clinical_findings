@@ -1,0 +1,45 @@
+T1	Medical-Problem 311 340	Heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 398 413	mild tortuosity
+T3	Medical-Anatomy 421 435	thoracic aorta
+T4	Medical-Problem 460 490	atherosclerotic calcifications
+T5	Medical-Anatomy 498 509	aortic knob
+T6	Medical-Problem 512 526	Patchy opacity
+T7	Medical-Anatomy 539 554	right lung base
+T8	Medical-Assertion 574 587	could reflect
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 591 610	area of atelectasis
+T10	Medical-Problem 615 624	infection
+T11	Medical-Problem 627 646	Minimal atelectasis
+T12	Medical-Anatomy 672 687	left lower lobe
+T13	Medical-Problem 702 730	trace right pleural effusion
+E12	Medical-Problem:T13
+T14	Medical-Assertion 733 735	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 736 751	pulmonary edema
+T16	Medical-Problem 755 767	pneumothorax
+T17	Medical-Problem 792 817	mild degenerative changes
+T18	Medical-Anatomy 825 839	thoracic spine
+T19	Medical-Problem 859 887	Patchy right basilar opacity
+E17	Medical-Problem:T19
+T20	Medical-Assertion 904 915	potentially
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 916 927	atelectasis
+T22	Medical-Problem 936 945	infection
+T23	Medical-Assertion 949 972	not completely excluded
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 975 1003	Trace right pleural effusion
+E20	Medical-Problem:T24
+T25	Medical-Problem 1006 1013;1015 1039	Minimal left basilar atelectasis
+E21	Medical-Problem:T25
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T22 has-Medical-Assertion:T20 has-Medical-Assertion:T23

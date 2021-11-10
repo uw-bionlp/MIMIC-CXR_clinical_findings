@@ -1,0 +1,22 @@
+T1	Medical-Problem 374 403	heart appears mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 410 430	lung volumes are low
+E2	Medical-Problem:T2
+T3	Medical-Problem 433 440	Opacity
+T4	Medical-Anatomy 448 462	left lung base
+T5	Medical-Assertion 463 471	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 472 489	minor atelectasis
+T7	Medical-Anatomy 508 515	lingula
+T8	Medical-Problem 518 535	Pleural effusions
+T9	Medical-Assertion 540 560	difficult to exclude
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 565 585	not explicitly shown
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Assertion 597 599	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 600 612	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

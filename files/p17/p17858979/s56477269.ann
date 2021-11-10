@@ -1,0 +1,22 @@
+T1	Medical-Problem 208 221	Ornamentation
+T2	Medical-Anatomy 240 256	left upper chest
+T3	Medical-Assertion 365 367	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 368 384	pleural effusion
+T5	Medical-Problem 388 400	pneumothorax
+T6	Medical-Problem 414 423;425 442	small but confluent opacity
+T7	Medical-Anatomy 463 478	left lower lung
+T8	Medical-Assertion 535 549	concerning for
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 550 559	pneumonia
+T10	Medical-Problem 615 645	Patchy left lower lung opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 646 660	concerning for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 661 670	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,47 @@
+T1	Medical-Problem 241 273	Worsening areas of opacification
+T2	Medical-Anatomy 299 319	both mid lung fields
+T3	Medical-Anatomy 342 352;354 358	right lung base
+T4	Medical-Problem 384 404	multifocal pneumonia
+E4	Medical-Problem:T4
+T5	Lesion-Count 407 415	Multiple
+E5	Lesion-Count:T5
+T6	Medical-Problem 449 457	obscured
+E6	Medical-Problem:T6
+T7	Medical-Problem 470 493	new parenchymal process
+E7	Medical-Problem:T7
+T8	Medical-Problem 537 545	widening
+T9	Medical-Anatomy 553 566;568 587	left superior mediastinal contour
+T10	Medical-Problem 637 641;643 658	mild pulmonary edema
+E10	Medical-Problem:T10
+T11	Medical-Problem 663 696	small bilateral pleural effusions
+E11	Medical-Problem:T11
+T12	Medical-Assertion 699 701	No
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 702 714	pneumothorax
+T14	Medical-Problem 732 753	Emphysematous changes
+T15	Medical-Problem 758 772	hyperinflation
+T16	Medical-Anatomy 776 781	lungs
+T17	Medical-Problem 818 854	Worsening parenchymal opacifications
+T18	Medical-Anatomy 862 882	both mid lung fields
+T19	Medical-Assertion 905 919	concerning for
+A2	Medical-AssertionValue T19 possible
+T20	Medical-Problem 920 940	multifocal pneumonia
+T21	Lesion-Count 959 967	multiple
+T22	Lesion-Anatomy 969 988	bilateral pulmonary
+T23	Lesion-Description 989 996	nodules
+T24	Medical-Assertion 1001 1009	obscured
+A3	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1018 1041	acute pulmonary process
+T26	Medical-Problem 1045 1065	Mild pulmonary edema
+E23	Medical-Problem:T26
+T27	Medical-Problem 1070 1103	small bilateral pleural effusions
+E24	Medical-Problem:T27
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T14 has-Medical-Anatomy:T16
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E21	Lesion-Description:T23 has-Lesion-Count:T21 has-Lesion-Anatomy:T22
+E22	Medical-Problem:T25 has-Medical-Assertion:T24

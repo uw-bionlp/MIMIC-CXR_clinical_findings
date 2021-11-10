@@ -1,0 +1,17 @@
+T1	Medical-Problem 256 278	Airspace consolidation
+T2	Medical-Anatomy 300 317	right middle lobe
+T3	Medical-Anatomy 322 338	right lower lobe
+T4	Medical-Problem 340 354	Subtle opacity
+T5	Medical-Anatomy 362 366;368 377	left lung base
+T6	Medical-Assertion 378 396	may also represent
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 399 417	focus of pneumonia
+T8	Medical-Assertion 538 540	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 541 565	free air below the right
+T10	Medical-Problem 608 653	Multifocal pneumonia, right greater than left
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

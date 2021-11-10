@@ -1,0 +1,33 @@
+T1	Medical-Problem 147 168	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 217 239	aorta remains tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 244 253;255 264	diffusely calcified
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 267 272	Lungs
+T5	Medical-Problem 277 290	hyperinflated
+T6	Medical-Problem 297 314	streaky opacities
+T7	Medical-Anatomy 322 333;335 339	right upper lobe
+T8	Medical-Anatomy 354 369	both lung bases
+T9	Medical-Assertion 378 398	may be reflective of
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 399 410	atelectasis
+T11	Lesion-Size-Trend 424 442	relatively similar
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Medical-Assertion 477 479	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 480 487;489 497	pleural effusion
+T14	Medical-Problem 501 513	pneumothorax
+T15	Medical-Problem 586 603	Streaky opacities
+T16	Medical-Anatomy 611 621	lung bases
+T17	Medical-Anatomy 626 642	right upper lobe
+T18	Medical-Assertion 644 648;650 670	most likely reflective of
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 671 682	atelectasis
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T16 has-Medical-Assertion:T18

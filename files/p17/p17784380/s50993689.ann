@@ -1,0 +1,13 @@
+T1	Medical-Problem 237 260	heterogeneous opacities
+T2	Medical-Anatomy 269 288	mid and lower lungs
+T3	Medical-Problem 316 334;336 353	partially layering pleural effusions
+T4	Medical-Problem 390 407;409 430	severe upper lobe predominant emphysema
+E4	Medical-Problem:T4
+T5	Lesion-Anatomy 435 455	left upper lobe lung
+T6	Lesion-Description 456 462	nodule
+T7	Lesion-Anatomy 467 484	right middle lobe
+T8	Lesion-Description 486 490	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T7

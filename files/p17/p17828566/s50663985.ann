@@ -1,0 +1,18 @@
+T1	Medical-Assertion 270 272	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 273 282	pneumonia
+T3	Medical-Assertion 284 286	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 287 296;298 303	pulmonary edema
+T5	Lesion-Assertion 306 308	No
+A3	Lesion-AssertionValue T5 absent
+T6	Lesion-Anatomy 309 314	hilar
+T7	Lesion-Anatomy 318 329	mediastinal
+T8	Lesion-Description 330 340	adenopathy
+T9	Medical-Assertion 343 345	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 346 363	pleural effusions
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9

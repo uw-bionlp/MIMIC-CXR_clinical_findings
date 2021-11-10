@@ -1,0 +1,27 @@
+T1	Medical-Problem 493 511	Severe enlargement
+T2	Medical-Anatomy 520 548	cardiomediastinal silhouette
+T3	Medical-Assertion 566 579	suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 583 593;595 615	element of pericardial effusion
+T5	Medical-Problem 670 692	right pleural effusion
+T6	Medical-Problem 697 712	basilar opacity
+T7	Medical-Assertion 713 725	has resolved
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Assertion 736 738	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 740 752	pneumothorax
+T10	Medical-Problem 766 791	Left lower lung opacities
+E7	Medical-Problem:T10
+T11	Medical-Assertion 1045 1056	No evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1060 1072	complication
+T13	Medical-Assertion 1087 1089	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1090 1102	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

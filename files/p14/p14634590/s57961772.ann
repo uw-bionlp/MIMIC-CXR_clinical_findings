@@ -1,0 +1,22 @@
+T1	Medical-Assertion 364 366	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 367 376	pneumonia
+T3	Medical-Assertion 378 380	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 381 396	pulmonary edema
+T5	Medical-Assertion 398 400	no
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 401 408;410 419	pleural effusions
+T7	Lesion-Assertion 422 424	No
+A4	Lesion-AssertionValue T7 absent
+T8	Lesion-Anatomy 425 429	lung
+T9	Lesion-Description 430 437	nodules
+T10	Lesion-Description 441 447	masses
+T11	Medical-Problem 450 466	Subtle scoliosis
+T12	Medical-Anatomy 474 482;484 489	thoracic spine
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8
+E6	Lesion-Description:T10 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8
+E7	Medical-Problem:T11 has-Medical-Anatomy:T12

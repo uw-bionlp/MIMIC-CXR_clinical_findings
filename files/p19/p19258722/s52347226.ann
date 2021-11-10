@@ -1,0 +1,21 @@
+T1	Medical-Problem 230 239	elevation
+T2	Medical-Anatomy 247 266	right hemidiaphragm
+T3	Medical-Problem 288 308	areas of atelectasis
+T4	Medical-Anatomy 325 341	right lung bases
+T5	Medical-Assertion 405 407	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 408 424	air bronchograms
+T7	Medical-Problem 453 470	atelectatic areas
+E6	Medical-Problem:T7
+T8	Medical-Assertion 471 489	could also include
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 490 517	some component of infection
+T10	Lesion-Anatomy 522 526	Lung
+T11	Lesion-Description 527 534	nodules
+T12	Lesion-Assertion 539 550	not visible
+A3	Lesion-AssertionValue T12 absent
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T10 has-Lesion-Assertion:T12

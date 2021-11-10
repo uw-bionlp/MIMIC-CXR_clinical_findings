@@ -1,0 +1,17 @@
+T1	Medical-Problem 140 169	Minimal pleural air inclusion
+T2	Medical-Anatomy 177 203;205 238	ventral part of the apical lungs and at the right lung bases
+T3	Medical-Problem 241 262	Minimal pleural fluid
+E3	Medical-Problem:T3
+T4	Lesion-Size-Trend 418 427	Unchanged
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Characteristic 428 437	calcified
+T6	Lesion-Anatomy 438 442	lung
+T7	Lesion-Description 443 450	nodules
+T8	Medical-Problem 453 480	Unchanged mild cardiomegaly
+E7	Medical-Problem:T8
+T9	Medical-Assertion 483 485	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 486 496;498 507	left-sided effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Lesion-Description:T7 has-Lesion-Size-Trend:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

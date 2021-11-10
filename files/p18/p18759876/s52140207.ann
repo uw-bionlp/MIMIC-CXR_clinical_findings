@@ -1,0 +1,31 @@
+T1	Medical-Problem 439 455	Linear opacities
+T2	Medical-Anatomy 468 496	right upper and middle lobes
+T3	Medical-Problem 517 538;540 551	areas of subsegmental atelectasis
+T4	Medical-Problem 553 568	Streaky opacity
+T5	Medical-Anatomy 576 590	left lung base
+T6	Medical-Assertion 591 606	likely reflects
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 611 641	additional site of atelectasis
+T8	Medical-Assertion 643 645	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 646 665	focal consolidation
+T10	Medical-Problem 667 683	pleural effusion
+T11	Medical-Problem 688 700	pneumothorax
+T12	Medical-Problem 718 743	Mild degenerative changes
+T13	Medical-Anatomy 762 776	thoracic spine
+T14	Medical-Problem 797 808	Atelectasis
+T15	Medical-Anatomy 820 830	lung bases
+T16	Medical-Anatomy 835 851	right upper lobe
+T17	Medical-Assertion 857 859	no
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 860 865;867 880	focal consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T17

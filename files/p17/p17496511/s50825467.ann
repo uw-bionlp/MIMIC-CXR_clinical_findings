@@ -1,0 +1,19 @@
+T1	Medical-Problem 218 247	Several ill-defined opacities
+T2	Medical-Anatomy 255 269	right mid lung
+T3	Medical-Anatomy 272 288	right lower lung
+T4	Medical-Anatomy 294 309	left lower lung
+T5	Medical-Assertion 385 387	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 388 404	pleural effusion
+T7	Medical-Problem 408 420	pneumothorax
+T8	Medical-Problem 423 427;429 445	Left humerus fracture
+E7	Medical-Problem:T8
+T9	Medical-Problem 490 520	Multiple ill-defined opacities
+E8	Medical-Problem:T9
+T10	Medical-Assertion 521 536	could represent
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 537 552	early pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

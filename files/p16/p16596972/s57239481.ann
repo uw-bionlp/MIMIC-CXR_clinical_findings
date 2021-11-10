@@ -1,0 +1,29 @@
+T1	Medical-Problem 206 232	Multifocal lymphadenopathy
+T2	Medical-Anatomy 264 275	right hilar
+T3	Medical-Anatomy 330 359	mediastinum and left hilum to
+T4	Medical-Anatomy 382 387	lungs
+T5	Medical-Problem 392 412	mildly hyperexpanded
+T6	Medical-Problem 457 484	Small left pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Problem 519 545	Multifocal lymphadenopathy
+T8	Medical-Anatomy 566 577	right hilum
+T9	Medical-Anatomy 582 592;594 600	subcarinal region
+T10	Lesion-Assertion 654 666	Differential
+A1	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 711 719	lymphoma
+T12	Medical-Problem 721 723	TB
+E11	Medical-Problem:T12
+T13	Lesion-Description 729 739;741 748	metastatic disease
+T14	Medical-Assertion 754 756	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 757 766	pneumonia
+T16	Lesion-Description 791 806	Lymphadenopathy
+T17	Lesion-Anatomy 821 832	right hilum
+T18	Lesion-Anatomy 837 847;849 856	subcarinal regions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E10	Lesion-Description:T11 has-Lesion-Assertion:T10
+E12	Lesion-Description:T13 has-Lesion-Assertion:T10
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T17 has-Lesion-Anatomy:T18

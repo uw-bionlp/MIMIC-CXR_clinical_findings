@@ -1,0 +1,33 @@
+T1	Medical-Problem 239 255	Linear opacities
+T2	Medical-Anatomy 263 285	lung bases bilaterally
+T3	Medical-Assertion 286 300	likely reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 301 312	atelectasis
+T5	Medical-Problem 316 328	Hyperlucency
+T6	Medical-Anatomy 336 347	upper zones
+T7	Medical-Problem 365 374	emphysema
+T8	Medical-Assertion 377 379	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 380 385;387 400	focal consolidation
+T10	Medical-Problem 402 418	pleural effusion
+T11	Medical-Problem 423 435	pneumothorax
+T12	Medical-Problem 488 534	Osseous structures are demineralized diffusely
+E10	Medical-Problem:T12
+T13	Medical-Problem 543 564	compression deformity
+T14	Medical-Anatomy 572 590	mid thoracic spine
+T15	Medical-Problem 639 648	Emphysema
+E13	Medical-Problem:T15
+T16	Medical-Problem 653 674	bibasilar atelectasis
+E14	Medical-Problem:T16
+T17	Medical-Assertion 677 688	No evidence
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 692 701	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

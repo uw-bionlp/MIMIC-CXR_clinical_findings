@@ -1,0 +1,25 @@
+T1	Lesion-Count 233 241	Multiple
+T2	Lesion-Size 242 247	large
+T3	Lesion-Characteristic 248 257	calcified
+T4	Lesion-Anatomy 258 267	pulmonary
+T5	Lesion-Description 268 275	nodules
+T6	Medical-Assertion 333 344	no evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 348 370	reactivation infection
+T8	Medical-Problem 377 385;387 402	heart is mildly enlarged
+E7	Medical-Problem:T8
+T9	Medical-Assertion 405 407	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 408 424	pleural effusion
+T11	Lesion-Characteristic 428 439	evidence of
+T12	Lesion-Characteristic 440 447	central
+T13	Lesion-Description 448 458	adenopathy
+T14	Medical-Problem 462 497	Healed right posterior rib fracture
+E12	Medical-Problem:T14
+T15	Lesion-Anatomy 525 529	lung
+T16	Lesion-Description 530 537	nodules
+E5	Lesion-Description:T5 has-Lesion-Count:T1 has-Lesion-Size-Present:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T15

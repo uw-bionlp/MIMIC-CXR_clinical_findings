@@ -1,0 +1,22 @@
+T1	Medical-Assertion 282 284	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 285 292;294 302	pleural effusion
+T3	Medical-Problem 306 318	pneumothorax
+T4	Medical-Problem 349 367	new subtle opacity
+T5	Medical-Anatomy 376 398	right medial lung base
+T6	Medical-Problem 416 433	increased opacity
+T7	Medical-Anatomy 434 447;449 474	overlying the heart on the lateral view
+T8	Medical-Assertion 476 493	likely represents
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 494 503	pneumonia
+T10	Medical-Assertion 585 587	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 588 601;603 616	acute osseous abnormalities
+T12	Medical-Problem 637 664	Right middle lobe pneumonia
+E9	Medical-Problem:T12
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

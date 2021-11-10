@@ -1,0 +1,53 @@
+T1	Lesion-Size 275 287	7.7 x 3.5 cm
+T2	Lesion-Characteristic 288 305	elliptical-shaped
+T3	Lesion-Characteristic 306 314	cavitary
+T4	Lesion-Characteristic 318 324	cystic
+T5	Lesion-Description 325 331	lesion
+T6	Lesion-Anatomy 361 385	right juxta hilar region
+T7	Lesion-Anatomy 408 416;418 442	superior segment right lower lobe
+T8	Medical-Problem 584 605	superior wall is thin
+E8	Medical-Problem:T8
+T9	Medical-Problem 615 646	other wall portions are thicker
+E9	Medical-Problem:T9
+T10	Lesion-Size-Trend 719 722	new
+A1	Lesion-Size-TrendValue T10 new
+T11	Lesion-Size 723 726;728 730	1.9 cm
+T12	Lesion-Description 740 747	nodular
+E11	Lesion-Description:T12
+T13	Lesion-Description 748 755	opacity
+T14	Lesion-Anatomy 763 806;808 833	right mid to lower lung at the level of the sixth anterior right ribs
+T15	Medical-Problem 883 941	Bilateral lower lung predominant bronchial wall thickening
+E14	Medical-Problem:T15
+T16	Medical-Problem 946 954;956 973	adjacent streaky opacities
+E15	Medical-Problem:T16
+T17	Medical-Problem 993 1019	lungs remain hyperinflated
+E16	Medical-Problem:T17
+T18	Medical-Problem 1085 1109	aorta is mildly tortuous
+E17	Medical-Problem:T18
+T19	Medical-Problem 1112 1135	Small pleural effusions
+E18	Medical-Problem:T19
+T20	Lesion-Size-Trend 1213 1216	New
+A2	Lesion-Size-TrendValue T20 new
+T21	Lesion-Size 1217 1223	7.7 cm
+T22	Lesion-Characteristic 1224 1234	elliptical
+T23	Lesion-Characteristic 1235 1250	cavitary/cystic
+T24	Lesion-Description 1251 1257	lesion
+T25	Lesion-Anatomy 1261 1289;1291 1295	superior segment right lower lobe
+T26	Lesion-Anatomy 1319 1323	lung
+T27	Lesion-Description 1324 1330	nodule
+T28	Medical-Assertion 1342 1357	could be due to
+A3	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1358 1367	infection
+T30	Medical-Problem 1379 1412	tuberculosis and fungal organisms
+T31	Medical-Problem 1414 1446	complicated aspiration pneumonia
+T32	Lesion-Assertion 1453 1457	less
+A4	Lesion-AssertionValue T32 possible
+T33	Lesion-Characteristic 1468 1476	atypical
+E29	Lesion-Characteristic:T33
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7
+E12	Lesion-Description:T13 has-Lesion-Size-Trend:T10 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T14
+E22	Lesion-Description:T24 has-Lesion-Size-Trend:T20 has-Lesion-Size-Present:T21 has-Lesion-Characteristic:T22 has-Lesion-Characteristic:T23 has-Lesion-Anatomy:T25
+E25	Lesion-Description:T27 has-Lesion-Anatomy:T26
+E26	Medical-Problem:T29 has-Medical-Assertion:T28
+E27	Medical-Problem:T30 has-Medical-Assertion:T28
+E28	Medical-Problem:T31 has-Medical-Assertion:T28

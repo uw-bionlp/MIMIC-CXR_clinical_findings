@@ -1,0 +1,24 @@
+T1	Medical-Problem 214 244	massive right pleural effusion
+T2	Medical-Problem 251 276	associated leftward shift
+T3	Medical-Anatomy 284 295	mediastinum
+T4	Medical-Problem 359 378	small locule of air
+T5	Medical-Anatomy 398 403;405 413	right mid-lung
+T6	Medical-Assertion 420 433	could reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 436 446	cavitation
+T8	Lesion-Size 451 457	2.5 cm
+T9	Lesion-Description 458 464	nodule
+T10	Lesion-Anatomy 481 496	left lower lung
+T11	Medical-Assertion 660 662	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 663 684	left pleural effusion
+T13	Medical-Assertion 696 698	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 699 711	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

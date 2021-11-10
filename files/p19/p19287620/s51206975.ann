@@ -1,0 +1,25 @@
+T1	Medical-Problem 742 762;764 807	Persistent bibasilar airspace opacities, left greater than right
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 848 854	patchy
+T3	Lesion-Description 855 862	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 863 872	opacities
+T5	Lesion-Anatomy 880 903	right mid-to-lower lung
+T6	Lesion-Anatomy 915 919;921 938	left mid-to-lower lung
+T7	Medical-Assertion 956 969	could reflect
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 970 997	areas of patchy atelectasis
+T9	Medical-Assertion 1003 1024	raise the possibility
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 1030 1050	multifocal pneumonia
+T11	Medical-Problem 1058 1071	septic emboli
+T12	Medical-Problem 1108 1127	Small left effusion
+E10	Medical-Problem:T12
+T13	Medical-Assertion 1139 1141	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1143 1155	pneumothorax
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

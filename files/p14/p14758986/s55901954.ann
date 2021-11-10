@@ -1,0 +1,34 @@
+T1	Medical-Problem 319 341;343 361	region of indistinctly marginated opacity
+T2	Medical-Anatomy 369 385	right lower lung
+T3	Medical-Problem 387 400	triangulating
+T4	Medical-Anatomy 408 419;421 440	middle lobe on the lateral view
+T5	Medical-Problem 469 498;500 510	new sharply marginated region of opacity
+T6	Medical-Anatomy 525 560	left hemidiaphragm over the stomach
+T7	Medical-Problem 584 617	new region of irregular opacities
+T8	Medical-Anatomy 625 655;657 676	right apex projecting over the second anterior rib
+T9	Medical-Assertion 683 691	could be
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 755 768	constellation
+E9	Medical-Problem:T10
+T11	Medical-Problem 851 872	variety of conditions
+T12	Medical-Problem 884 904	multifocal pneumonia
+E11	Medical-Problem:T12
+T13	Medical-Problem 906 927	pulmonary infarctions
+T14	Medical-Problem 932 944	tuberculosis
+E13	Medical-Problem:T14
+T15	Medical-Anatomy 953 958;960 964	right apex
+T16	Medical-Assertion 1076 1078	no
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1079 1104	layering pleural effusion
+T18	Lesion-Assertion 1179 1195	no good evidence
+A3	Lesion-AssertionValue T18 absent
+T19	Lesion-Characteristic 1200 1207	central
+T20	Lesion-Description 1208 1218;1220 1231	lymph node enlargement
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T15
+E12	Medical-Problem:T13 has-Medical-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Lesion-Description:T20 has-Lesion-Assertion:T18 has-Lesion-Characteristic:T19

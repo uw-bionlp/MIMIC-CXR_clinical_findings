@@ -1,0 +1,28 @@
+T1	Medical-Problem 360 374	Patchy opacity
+T2	Medical-Anatomy 403 417	left lung base
+T3	Medical-Problem 424 447	minimal streaky opacity
+T4	Medical-Anatomy 455 470	right lung base
+T5	Medical-Assertion 472 474	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 476 488	pneumothorax
+T7	Medical-Problem 492 508	pleural effusion
+T8	Medical-Assertion 536 538	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 539 552;554 567	acute osseous abnormalities
+T10	Medical-Problem 588 615	Patchy left basilar opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 616 627	may reflect
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 628 639	atelectasis
+T13	Medical-Problem 647 656	infection
+T14	Medical-Assertion 660 663;665 673	not excluded
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 676 701	Right basilar atelectasis
+E11	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11 has-Medical-Assertion:T14

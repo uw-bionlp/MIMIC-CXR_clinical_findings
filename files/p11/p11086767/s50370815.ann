@@ -1,0 +1,22 @@
+T1	Medical-Problem 353 366	calcification
+T2	Medical-Anatomy 374 385	aortic arch
+T3	Medical-Problem 490 497	opacity
+T4	Medical-Anatomy 506 516	right base
+T5	Medical-Assertion 526 532	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 533 544	atelectasis
+T7	Medical-Assertion 547 549	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 550 566	pleural effusion
+T9	Medical-Problem 571 583	pneumothorax
+T10	Medical-Problem 612 644	Persistent right basilar opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 654 660	likely
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 661 672	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

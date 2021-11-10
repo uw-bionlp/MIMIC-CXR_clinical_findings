@@ -1,0 +1,17 @@
+T1	Medical-Problem 212 238	New complete opacification
+T2	Medical-Anatomy 242 258	right hemithorax
+T3	Medical-Problem 264 284;286 297	ipsilateral shift of mediastinum
+E3	Medical-Problem:T3
+T4	Medical-Problem 317 345	complete right lung collapse
+E4	Medical-Problem:T4
+T5	Medical-Assertion 347 360	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 362 377	mucous plugging
+T7	Medical-Anatomy 385 404	right main bronchus
+T8	Medical-Anatomy 491 505	left lung base
+T9	Medical-Assertion 510 518;520 530	apparent resolution
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 538 554	pneumoperitoneum
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

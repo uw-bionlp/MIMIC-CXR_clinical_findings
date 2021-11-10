@@ -1,0 +1,49 @@
+T1	Medical-Problem 256 272	Slight unfolding
+T2	Medical-Anatomy 280 288;290 295	thoracic aorta
+T3	Medical-Problem 311 315	arch
+E3	Medical-Problem:T3
+T4	Medical-Problem 319 335	partly calcified
+E4	Medical-Problem:T4
+T5	Medical-Problem 338 359	Subpleural thickening
+T6	Medical-Anatomy 372 386	each lung apex
+T7	Medical-Assertion 410 420	suggesting
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 421 435	minor scarring
+T9	Medical-Problem 450 453	new
+E8	Medical-Problem:T9
+T10	Lesion-Characteristic 454 466	fairly dense
+T11	Lesion-Description 467 474	nodular
+T12	Lesion-Anatomy 501 516	left upper lung
+T13	Medical-Problem 636 641	focus
+E12	Medical-Problem:T13
+T14	Medical-Problem 688 711	lungs are hyperinflated
+E13	Medical-Problem:T14
+T15	Medical-Assertion 723 725	no
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 726 742	pleural effusion
+T17	Medical-Problem 746 758	pneumothorax
+T18	Medical-Problem 771 790	extensive sclerosis
+T19	Medical-Anatomy 796 825	lower thoracic vertebral body
+T20	Medical-Assertion 931 942	No evidence
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 946 975	acute cardiopulmonary disease
+T22	Lesion-Size 1099 1104	Small
+T23	Lesion-Description 1105 1118	nodular focus
+T24	Lesion-Assertion 1202 1214	Differential
+A4	Lesion-AssertionValue T24 possible
+T25	Lesion-Characteristic 1238 1242	bony
+T26	Lesion-Anatomy 1270 1273	rib
+T27	Lesion-Size-Trend 1295 1298	new
+A5	Lesion-Size-TrendValue T27 new
+T28	Lesion-Anatomy 1299 1308	pulmonary
+T29	Lesion-Description 1309 1315	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T15
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E20	Lesion-Description:T23 has-Lesion-Size-Present:T22
+E24	Lesion-Description:T29 has-Lesion-Assertion:T24 has-Lesion-Characteristic:T25 has-Lesion-Anatomy:T26 has-Lesion-Size-Trend:T27 has-Lesion-Anatomy:T28

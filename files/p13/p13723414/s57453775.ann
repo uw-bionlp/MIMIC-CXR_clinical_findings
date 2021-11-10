@@ -1,0 +1,38 @@
+T1	Medical-Problem 167 184;186 228	interval decrease in size of loculated left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 354 372	Improved opacities
+T3	Medical-Anatomy 376 403	left lower lobe and lingula
+T4	Medical-Problem 417 433	pleural effusion
+T5	Medical-Assertion 435 453	most likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 454 465	atelectasis
+T7	Lesion-Characteristic 468 478	Peripheral
+T8	Lesion-Characteristic 480 494	poorly defined
+T9	Lesion-Anatomy 495 511	right upper lobe
+T10	Lesion-Description 512 518	nodule
+T11	Lesion-Size-Trend 527 534	similar
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Size 648 654	1.8 cm
+E10	Lesion-Size:T12
+T13	Lesion-Characteristic 663 680	irregular margins
+E11	Lesion-Characteristic:T13
+T14	Medical-Problem 685 699	Mild scoliosis
+E12	Medical-Problem:T14
+T15	Lesion-Anatomy 745 762	Right apical lung
+T16	Lesion-Description 763 769	nodule
+T17	Medical-Problem 820 851	Decreased left pleural effusion
+T18	Medical-Problem 857 881	residual loculated fluid
+T19	Medical-Problem 886 893;895 905	pleural thickening
+T20	Medical-Anatomy 909 924	left hemithorax
+T21	Medical-Problem 975 996	Improving atelectasis
+T22	Medical-Anatomy 1000 1007	lingula
+T23	Medical-Anatomy 1012 1039	left lower lobe and lingula
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T11
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T20
+E16	Medical-Problem:T18 has-Medical-Anatomy:T20
+E17	Medical-Problem:T19 has-Medical-Anatomy:T20
+E19	Medical-Problem:T21 has-Medical-Anatomy:T22 has-Medical-Anatomy:T23

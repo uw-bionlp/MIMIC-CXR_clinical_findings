@@ -1,0 +1,21 @@
+T1	Medical-Problem 143 146	ptx
+E1	Medical-Problem:T1
+T2	Medical-Problem 207 238	Moderate right pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Assertion 333 335	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 336 348	pneumothorax
+T5	Medical-Problem 351 358;360 373	Greater opacification
+T6	Medical-Anatomy 381 404	base of the right lung,
+T7	Medical-Anatomy 420 424	left
+T8	Medical-Assertion 429 437;439 445	probably due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 446 468	increasing atelectasis
+T10	Medical-Problem 474 489	other pathology
+T11	Medical-Anatomy 497 501	lung
+T12	Medical-Assertion 502 510;512 520	could be obscured
+A3	Medical-AssertionValue T12 possible
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

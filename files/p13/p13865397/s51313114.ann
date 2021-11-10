@@ -1,0 +1,28 @@
+T1	Medical-Problem 305 336	associated expected volume loss
+E1	Medical-Problem:T1
+T2	Medical-Problem 341 349	scarring
+E2	Medical-Problem:T2
+T3	Lesion-Characteristic 414 428	poorly defined
+T4	Lesion-Characteristic 431 453	relatively symmetrical
+T5	Lesion-Characteristic 454 461	nodular
+T6	Lesion-Description 462 471	opacities
+T7	Lesion-Anatomy 479 507;509 539	periphery of the lower lobes just above the diaphragm level
+T8	Medical-Assertion 696 698	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 699 722	acute skeletal findings
+T10	Lesion-Anatomy 740 749	Bibasilar
+T11	Lesion-Characteristic 750 764	poorly defined
+T12	Lesion-Description 765 772	nodular
+E11	Lesion-Description:T12
+T13	Lesion-Description 773 782	opacities
+T14	Medical-Assertion 784 799	possibly due to
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 804 836	atypical radiographic appearance
+T16	Medical-Assertion 860 882	differential diagnosis
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 893 919	focal infectious pneumonia
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T10 has-Lesion-Characteristic:T11
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,17 @@
+T1	Medical-Problem 257 267;269 291	Multifocal areas of consolidation
+T2	Medical-Anatomy 348 379	right mid and lower lung region
+T3	Medical-Assertion 384 395	may reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 398 405	history
+T5	Medical-Problem 409 419;421 430	multifocal pneumonia
+T6	Medical-Problem 433 468	More diffuse interstitial opacities
+E5	Medical-Problem:T6
+T7	Medical-Assertion 492 498;500 509	likely represent
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 510 527	co-existing edema
+T9	Medical-Problem 530 561	Bilateral pleural abnormalities
+E7	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

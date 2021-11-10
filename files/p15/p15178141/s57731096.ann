@@ -1,0 +1,28 @@
+T1	Medical-Problem 393 421	Lung volumes remain very low
+E1	Medical-Problem:T1
+T2	Medical-Problem 453 471;473 478	new mild pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 481 494	Abnormalities
+T4	Medical-Anatomy 502 512	lung bases
+T5	Medical-Problem 529 540	atelectasis
+T6	Medical-Problem 547 556	pneumonia
+T7	Medical-Problem 561 571	aspiration
+T8	Medical-Assertion 572 592	could be responsible
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Anatomy 595 600	Heart
+T10	Medical-Assertion 604 607	not
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 608 616	enlarged
+T12	Medical-Problem 620 637	Pleural effusions
+T13	Medical-Assertion 638 654	could be present
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Assertion 675 677	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 678 690	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

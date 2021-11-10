@@ -1,0 +1,29 @@
+T1	Medical-Assertion 259 261	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 262 279	pleural effusions
+T3	Lesion-Assertion 282 284	No
+A2	Lesion-AssertionValue T3 absent
+T4	Lesion-Anatomy 285 290	hilar
+T5	Lesion-Anatomy 295 306	mediastinal
+T6	Lesion-Description 307 317	adenopathy
+T7	Medical-Assertion 386 397	no evidence
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 401 417	fibrotic changes
+T9	Medical-Assertion 422 433	no evidence
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 438 447	infection
+T11	Lesion-Characteristic 452 462	triangular
+T12	Lesion-Description 463 470	density
+T13	Lesion-Anatomy 491 514;516 523	medial part of the left scapula
+T14	Lesion-Assertion 564 581	likely represents
+A5	Lesion-AssertionValue T14 possible
+T15	Lesion-Description 584 588;590 596	bone island
+T16	Medical-Problem 659 678	Moderate tortuosity
+T17	Medical-Anatomy 686 700	thoracic aorta
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E10	Lesion-Description:T15 has-Lesion-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Anatomy:T17

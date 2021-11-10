@@ -1,0 +1,20 @@
+T1	Lesion-Count 221 224	two
+T2	Lesion-Anatomy 225 245	right perihilar lung
+T3	Lesion-Description 246 252	masses
+T4	Lesion-Characteristic 257 269	less defined
+T5	Lesion-Characteristic 275 291;293 302	more surrounding opacities
+T6	Lesion-Description 314 320	lesion
+T7	Lesion-Characteristic 324 338	more cavitated
+T8	Medical-Assertion 379 381	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 382 398	pleural effusion
+T10	Medical-Problem 402 414	pneumothorax
+T11	Medical-Problem 494 516	Superimposed pneumonia
+E10	Medical-Problem:T11
+T12	Lesion-Anatomy 529 539	right lung
+T13	Lesion-Description 540 547	lesions
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T12

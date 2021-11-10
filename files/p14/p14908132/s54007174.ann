@@ -1,0 +1,31 @@
+T1	Medical-Problem 33 79	Increased size of large right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 96 118	underlying atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 630 639;641 654	increased opacification
+T4	Medical-Anatomy 662 692	right mid and lower lung zones
+T5	Medical-Problem 711 716;718 734	large pleural effusion
+T6	Lesion-Anatomy 743 748	hilar
+T7	Lesion-Anatomy 753 764	mediastinal
+T8	Lesion-Description 765 780	lymphadenopathy
+T9	Medical-Problem 865 901	stable areas of parenchymal scarring
+E9	Medical-Problem:T9
+T10	Medical-Problem 906 933;935 942	scattered calcified pleural plaques
+E10	Medical-Problem:T10
+T11	Medical-Assertion 945 947	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 948 960	pneumothorax
+T13	Medical-Problem 1094 1110	pleural effusion
+E12	Medical-Problem:T13
+T14	Medical-Problem 1116 1126;1128 1141	right lung opacification
+E13	Medical-Problem:T14
+T15	Medical-Assertion 1142 1152	suggesting
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 1153 1164	atelectasis
+T17	Medical-Problem 1168 1181	consolidation
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T15

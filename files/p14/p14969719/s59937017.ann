@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 396 406	right base
+T2	Medical-Problem 467 493	small basilar pneumothorax
+T3	Medical-Problem 509 559	moderate right pleural effusion with pleural fluid
+T4	Medical-Anatomy 593 597	apex
+T5	Medical-Anatomy 620 650;652 663	along medially adjacent to the mediastinum
+T6	Medical-Problem 675 710	persistent asymmetric opacification
+T7	Medical-Problem 716 725;727 759	increased asymmetric pulmonary vascularity
+T8	Medical-Anatomy 774 784	right lung
+T9	Medical-Problem 796 804;806 834	moderate right lower lobe atelectasis
+E9	Medical-Problem:T9
+T10	Medical-Problem 839 871	minimal left basilar atelectasis
+E10	Medical-Problem:T10
+T11	Medical-Assertion 884 895	no evidence
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 899 911	pneumothorax
+T13	Lesion-Characteristic 971 980	calcified
+T14	Lesion-Description 981 991	lymph node
+T15	Lesion-Anatomy 1030 1051	aortopulmonary window
+T16	Lesion-Size-Trend 1053 1059	stable
+A2	Lesion-Size-TrendValue T16 no-change
+T17	Medical-Problem 1131 1172	diffuse right-sided central opacification
+E15	Medical-Problem:T17
+T18	Medical-Problem 1225 1247;1249 1257	moderate right pleural effusion
+T19	Medical-Problem 1262 1286	asymmetric opacification
+T20	Medical-Anatomy 1301 1317	right hemithorax
+T21	Medical-Assertion 1321 1327;1329 1339	likely related to
+A3	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1340 1359	progressive changes
+T23	Medical-Problem 1407 1436	component of asymmetric edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15 has-Lesion-Size-Trend:T16
+E16	Medical-Problem:T18 has-Medical-Anatomy:T20
+E17	Medical-Problem:T19 has-Medical-Anatomy:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E20	Medical-Problem:T23 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

@@ -1,0 +1,30 @@
+T1	Medical-Assertion 421 423	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 424 436	pneumothorax
+T3	Medical-Assertion 481 489	Possible
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 490 520	mild bilateral pulmonary edema
+T5	Medical-Problem 532 541;543 550	increased opacity
+T6	Medical-Anatomy 558 582	left retrocardiac region
+T7	Medical-Assertion 592 606	concerning for
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 607 617	aspiration
+T9	Medical-Anatomy 626 641	left lower lobe
+T10	Medical-Assertion 644 646	No
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 647 664	pleural effusions
+T12	Medical-Problem 667 696	Cardiac size appears enlarged
+E8	Medical-Problem:T12
+T13	Medical-Problem 904 929	Left retrocardiac opacity
+E9	Medical-Problem:T13
+T14	Medical-Assertion 930 944	concerning for
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 945 955	aspiration
+T16	Medical-Assertion 1023 1031	Possible
+A6	Medical-AssertionValue T16 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

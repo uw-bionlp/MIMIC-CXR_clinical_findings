@@ -1,0 +1,71 @@
+T1	Medical-Problem 29 73	Persistent small bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 78 107;109 129	minimally increased pulmonary  vascular prominence
+E2	Medical-Problem:T2
+T3	Medical-Problem 131 147	Low lung volumes
+T4	Medical-Assertion 148 155	without
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 156 169	consolidation
+T6	Medical-Anatomy 177 184;186 198	aerated  upper lungs
+T7	Medical-Problem 204 213	infection
+T8	Medical-Anatomy 221 232	lower lungs
+T9	Medical-Assertion 233 251	cannot be excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 272 288	low lung volumes
+E8	Medical-Problem:T10
+T11	Medical-Problem 293 316	bibasilar opacification
+T12	Medical-Assertion 994 996	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 997 1009	pneumothorax
+T14	Medical-Problem 1038 1061	low inspiratory volumes
+E11	Medical-Problem:T14
+T15	Medical-Problem 1067 1077	prominence
+T16	Medical-Anatomy 1085 1102;1104 1114	cardiomediastinal silhouette
+T17	Medical-Problem 1136 1144	Splaying
+T18	Medical-Anatomy 1152 1158	carina
+T19	Medical-Problem 1178 1182;1184 1202	left atrial enlargement
+T20	Medical-Problem 1214 1239	upper zone redistribution
+E17	Medical-Problem:T20
+T21	Medical-Problem 1244 1260;1262 1270	diffuse vascular blurring
+E18	Medical-Problem:T21
+T22	Medical-Problem 1288 1291	CHF
+E19	Medical-Problem:T22
+T23	Medical-Problem 1321 1339	bibasilar collapse
+E20	Medical-Problem:T23
+T24	Medical-Problem 1348 1361	consolidation
+E21	Medical-Problem:T24
+T25	Medical-Problem 1368 1393	small bilateral effusions
+E22	Medical-Problem:T25
+T26	Lesion-Size 1437 1449	1.4 x 3.2 cm
+T27	Lesion-Characteristic 1450 1455	ovoid
+T28	Lesion-Description 1456 1463	density
+T29	Lesion-Anatomy 1480 1494;1496 1538	trachea on the left, near the left medial clavicular head
+T30	Medical-Problem 1541 1557	Slight narrowing
+T31	Medical-Anatomy 1565 1572	trachea
+T32	Medical-Assertion 1574 1588	may be present
+A4	Medical-AssertionValue T32 possible
+T33	Medical-Problem 1715 1728	Ovoid density
+T34	Medical-Anatomy 1745 1764	trachea on the left
+T35	Medical-Problem 1773 1789	slight narrowing
+T36	Medical-Anatomy 1798 1805	trachea
+T37	Lesion-Size 1849 1854	large
+T38	Lesion-Characteristic 1855 1864	calcified
+T39	Lesion-Anatomy 1866 1877	mediastinal
+T40	Lesion-Description 1879 1883	node
+T41	Lesion-Characteristic 1887 1896	calcified
+T42	Lesion-Anatomy 1897 1904	thyroid
+T43	Lesion-Description 1905 1911	nodule
+E3	Medical-Problem:T3 has-Medical-Anatomy:T6
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T18
+E25	Lesion-Description:T28 has-Lesion-Size-Present:T26 has-Lesion-Characteristic:T27 has-Lesion-Anatomy:T29
+E27	Medical-Problem:T30 has-Medical-Anatomy:T31 has-Medical-Assertion:T32
+E29	Medical-Problem:T33 has-Medical-Anatomy:T34
+E31	Medical-Problem:T35 has-Medical-Anatomy:T36
+E36	Lesion-Description:T40 has-Lesion-Size-Present:T37 has-Lesion-Characteristic:T38 has-Lesion-Anatomy:T39
+E39	Lesion-Description:T43 has-Lesion-Characteristic:T41 has-Lesion-Anatomy:T42

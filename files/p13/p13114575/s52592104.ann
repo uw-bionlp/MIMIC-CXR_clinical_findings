@@ -1,0 +1,32 @@
+T1	Medical-Assertion 255 257	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 258 270	pneumothorax
+T3	Medical-Problem 273 300	Streaky bibasilar opacities
+E2	Medical-Problem:T3
+T4	Medical-Assertion 348 369	likely representative
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 373 384	atelectasis
+T6	Medical-Anatomy 391 396	lungs
+T7	Medical-Assertion 402 409	without
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 414 437	new focal consolidation
+T9	Medical-Problem 441 449	effusion
+T10	Medical-Assertion 452 454	No
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 455 470	acute fractures
+T12	Medical-Anatomy 516 524	right IJ
+T13	Medical-Assertion 530 541	no evidence
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 545 557	pneumothorax
+T15	Medical-Problem 567 594	Bibasilar streaky opacities
+E10	Medical-Problem:T15
+T16	Medical-Assertion 615 639	likely representative of
+A6	Medical-AssertionValue T16 possible
+T17	Medical-Problem 641 652	atelectasis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T17 has-Medical-Assertion:T16

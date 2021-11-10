@@ -1,0 +1,43 @@
+T1	Medical-Problem 268 294	minimal pleural thickening
+T2	Medical-Anatomy 302 311	left apex
+T3	Lesion-Size 315 320	small
+T4	Lesion-Anatomy 321 330	pulmonary
+T5	Lesion-Description 331 337	nodule
+T6	Lesion-Anatomy 355 369	left lung base
+T7	Lesion-Size 380 392	9.0 x 5.0 mm
+T8	Medical-Problem 463 483;485 508	Bibasilar opacities, right greater than left
+E8	Medical-Problem:T8
+T9	Medical-Assertion 532 543	No evidence
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 547 556	pneumonia
+T11	Medical-Problem 559 574	pulmonary edema
+T12	Medical-Problem 578 590	pneumothorax
+T13	Medical-Assertion 648 650	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 651 678	acute osseous abnormalities
+T15	Medical-Problem 802 846	bibasilar opacities, right greater than left
+E13	Medical-Problem:T15
+T16	Medical-Assertion 848 867	which may be due to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 869 889	chronic lung disease
+T18	Medical-Problem 892 901	Pneumonia
+T19	Medical-Assertion 902 922	should be considered
+A4	Medical-AssertionValue T19 possible
+T20	Lesion-Size 966 971	Small
+T21	Lesion-Anatomy 972 997	left lower lobe pulmonary
+T22	Lesion-Description 998 1004	nodule
+T23	Lesion-Description 1089 1095	nodule
+E19	Lesion-Description:T23
+T24	Medical-Assertion 1108 1116	possible
+A5	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1118 1138	chronic lung disease
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T6 has-Lesion-Size-Present:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T19
+E18	Lesion-Description:T22 has-Lesion-Size-Present:T20 has-Lesion-Anatomy:T21
+E20	Medical-Problem:T25 has-Medical-Assertion:T24

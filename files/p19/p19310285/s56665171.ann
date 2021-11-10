@@ -1,0 +1,16 @@
+T1	Medical-Problem 140 145;147 159	large pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 216 259	small-to-moderate right apical pneumothorax
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 298 308	Upper lobe
+T4	Medical-Problem 312 337	significantly atelectatic
+T5	Medical-Problem 340 360	Mediastinal widening
+E5	Medical-Problem:T5
+T6	Medical-Problem 374 397	Irregular opacification
+T7	Medical-Anatomy 409 439;441 446	left hilus and inferior to the right
+T8	Medical-Assertion 450 458	probably
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 459 470	atelectasis
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

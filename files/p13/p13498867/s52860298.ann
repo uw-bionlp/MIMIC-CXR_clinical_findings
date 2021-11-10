@@ -1,0 +1,21 @@
+T1	Medical-Assertion 84 90	likely
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 93 110;112 125	tiny right apical  pneumothorax
+T3	Medical-Problem 128 184	Moderate-to-large left and small right pleural effusions
+E2	Medical-Problem:T3
+T4	Medical-Problem 495 514	apical pneumothorax
+E3	Medical-Problem:T4
+T5	Medical-Problem 544 566	right pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 585 608	right basal atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Problem 692 705;707 723	moderate left pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Assertion 779 787	suggests
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 795 828	pleural fluid collected along the
+E7	Medical-Problem:T9
+T10	Medical-Anatomy 829 847	right heart border
+T11	Medical-Problem 852 872	pericardial effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E9	Medical-Problem:T11 has-Medical-Assertion:T8 has-Medical-Anatomy:T10

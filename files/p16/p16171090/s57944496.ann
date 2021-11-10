@@ -1,0 +1,16 @@
+T1	Medical-Problem 347 372	Bilateral basal opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 416 427	atelectasis
+T3	Medical-Problem 444 456;458 477	small amount of pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 479 503	particularly on the left
+T5	Medical-Problem 506 524	Infectious process
+T6	Medical-Anatomy 533 538	bases
+T7	Medical-Assertion 539 557	cannot be excluded
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 560 562	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 563 575	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,21 @@
+T1	Medical-Problem 383 420	stable tiny right apical pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 423 446	Lung volumes remain low
+T3	Medical-Problem 452 459;461 470	streaky opacities
+T4	Medical-Anatomy 474 532	right mid-to-lower lung and to a lesser extent on the left
+T5	Medical-Assertion 534 538;540 553	most suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 554 565	atelectasis
+T7	Medical-Problem 576 586	aspiration
+T8	Medical-Problem 590 599	pneumonia
+T9	Medical-Assertion 600 614;616 626	should also be considered
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 629 631	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 632 647	large effusions
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

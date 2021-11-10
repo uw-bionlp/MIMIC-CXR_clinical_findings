@@ -1,0 +1,47 @@
+T1	Medical-Problem 37 53	Chronic collapse
+T2	Medical-Anatomy 61 88	left lower lobe and lingula
+T3	Medical-Problem 94 104;106 123	large left  pleural effusion
+T4	Lesion-Size 136 141	large
+T5	Lesion-Anatomy 142 157	left upper lobe
+T6	Lesion-Description 158 162	mass
+T7	Lesion-Characteristic 167 174	diffuse
+T8	Lesion-Anatomy 175 184	pulmonary
+T9	Lesion-Description 185 195	metastases
+T10	Medical-Problem 597 605;607 615	complete collapse
+T11	Medical-Anatomy 623 638	left lower lobe
+T12	Lesion-Size 656 661	large
+T13	Lesion-Description 662 666	mass
+T14	Lesion-Anatomy 674 681	lingula
+T15	Medical-Problem 685 697	Left pleural
+E15	Medical-Problem:T15
+T16	Medical-Problem 698 706	effusion
+E16	Medical-Problem:T16
+T17	Lesion-Count 800 808	multiple
+T18	Lesion-Anatomy 820 829;831 840	bilateral pulmonary
+T19	Lesion-Description 841 848	nodules
+T20	Medical-Assertion 887 889	No
+A1	Medical-AssertionValue T20 absent
+T21	Medical-Problem 890 902	pneumothorax
+T22	Medical-Problem 925 936	is enlarged
+E21	Medical-Problem:T22
+T23	Medical-Problem 961 975	Enlarging left
+E22	Medical-Problem:T23
+T24	Medical-Problem 976 992	pleural effusion
+E23	Medical-Problem:T24
+T25	Medical-Problem 995 1014	Persistent collapse
+E24	Medical-Problem:T25
+T26	Lesion-Anatomy 1052 1060	lingular
+T27	Lesion-Description 1061 1065	mass
+T28	Lesion-Characteristic 1070 1077	diffuse
+T29	Lesion-Anatomy 1078 1087	pulmonary
+T30	Lesion-Description 1088 1098	metastases
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5
+E9	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Anatomy:T11
+E13	Lesion-Description:T13 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T14
+E19	Lesion-Description:T19 has-Lesion-Count:T17 has-Lesion-Anatomy:T18
+E20	Medical-Problem:T21 has-Medical-Assertion:T20
+E26	Lesion-Description:T27 has-Lesion-Anatomy:T26
+E29	Lesion-Description:T30 has-Lesion-Characteristic:T28 has-Lesion-Anatomy:T29

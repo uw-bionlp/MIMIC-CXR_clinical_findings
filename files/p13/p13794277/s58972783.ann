@@ -1,0 +1,33 @@
+T1	Medical-Problem 34 48	Linear opacity
+T2	Medical-Anatomy 56 70	right mid lung
+T3	Medical-Assertion 71 77	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 78 89	atelectasis
+T5	Medical-Problem 91 110	Bibasilar opacities
+E4	Medical-Problem:T5
+T6	Medical-Assertion 113 119	likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 120 131	atelectasis
+T8	Medical-Problem 175 185;187 197	underlying  pneumonia
+T9	Medical-Assertion 201 209	possible
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 211 244	Small bilateral pleural effusions
+E7	Medical-Problem:T10
+T11	Medical-Problem 589 610	Moderate cardiomegaly
+T12	Medical-Problem 616 636	areas of atelectasis
+T13	Medical-Anatomy 641 656	both lung bases
+T14	Medical-Assertion 659 661	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 662 677	pulmonary edema
+T16	Medical-Problem 680 696	Minimal blunting
+T17	Medical-Anatomy 704 709;711 729	right costophrenic sinus
+T18	Medical-Problem 751 773	small pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T13
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17
+E14	Medical-Problem:T18 has-Medical-Anatomy:T17

@@ -1,0 +1,37 @@
+T1	Medical-Problem 236 260	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 274 299;301 332	mild diffuse interstitial abnormality with Kerley B lines
+E2	Medical-Problem:T2
+T3	Medical-Assertion 391 402	may reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 403 427	mild vascular congestion
+T5	Medical-Problem 433 445;447 471	mild chronic interstitial abnormality
+T6	Medical-Assertion 472 496	could also be considered
+A2	Medical-AssertionValue T6 possible
+T7	Lesion-Description 501 516	nodular density
+T8	Lesion-Anatomy 538 554	right lower lung
+T9	Medical-Assertion 600 602	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 603 619	pleural effusion
+T11	Medical-Problem 623 635	pneumothorax
+T12	Medical-Problem 642 668	bones appear demineralized
+E9	Medical-Problem:T12
+T13	Medical-Problem 671 675;677 697	Mild degenerative changes
+T14	Medical-Anatomy 708 737	throughout the thoracic spine
+T15	Medical-Problem 763 792	Mild interstitial abnormality
+E12	Medical-Problem:T15
+T16	Medical-Assertion 799 817	could be seen with
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 818 831;833 843	mild vascular congestion
+T18	Medical-Problem 851 865	chronic change
+T19	Lesion-Description 956 971	Nodular density
+T20	Lesion-Anatomy 992 1008	right lower lung
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16
+E15	Lesion-Description:T19 has-Lesion-Anatomy:T20

@@ -1,0 +1,28 @@
+T1	Medical-Problem 209 244	Cardiac silhouette remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 281 286;288 325	Right peritracheal and right hilar widening
+E2	Medical-Problem:T2
+T3	Lesion-Anatomy 341 357	right lower lobe
+T4	Lesion-Description 358 362	mass
+T5	Lesion-Description 384 394	neoplastic
+E5	Lesion-Description:T5
+T6	Medical-Problem 469 498	Pulmonary vascular congestion
+E6	Medical-Problem:T6
+T7	Medical-Problem 517 521;523 541	mild interstitial edema
+E7	Medical-Problem:T7
+T8	Medical-Problem 546 569	small pleural effusions
+E8	Medical-Problem:T8
+T9	Medical-Problem 582 594;596 622	asymmetrical bronchovascular thickening
+T10	Medical-Anatomy 623 639	right upper lobe
+T11	Lesion-Assertion 640 653	could reflect
+A1	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 654 666	lymphangitic
+E11	Lesion-Description:T12
+T13	Lesion-Description 668 682	carcinomatosis
+T14	Medical-Assertion 684 686	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 687 707	visible pneumothorax
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Lesion-Description:T13 has-Lesion-Assertion:T11
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

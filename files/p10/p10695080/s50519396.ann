@@ -1,0 +1,31 @@
+T1	Lesion-Description 268 278	Nodularity
+T2	Lesion-Anatomy 279 289	throughout
+T3	Lesion-Anatomy 290 300	both lungs
+T4	Lesion-Assertion 335 352	likely represents
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Characteristic 353 365	disseminated
+T6	Lesion-Description 366 375	carcinoma
+T7	Medical-Problem 417 430	Opacification
+T8	Medical-Anatomy 438 447;449 453	left lung base
+T9	Medical-Assertion 454 467	may represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 468 498	moderate left pleural effusion
+T11	Medical-Problem 504 515;517 528	compressive atelectasis
+T12	Lesion-Characteristic 538 559	underlying infectious
+T13	Lesion-Description 571 575	mass
+T14	Medical-Problem 661 673	disseminated
+E12	Medical-Problem:T14
+T15	Lesion-Description 674 683	carcinoma
+E13	Lesion-Description:T15
+T16	Medical-Problem 704 724	mild volume overload
+E14	Medical-Problem:T16
+T17	Lesion-Characteristic 728 737	worsening
+T18	Lesion-Description 739 757	neoplastic process
+T19	Lesion-Anatomy 769 779	right lung
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T12
+E16	Lesion-Description:T18 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T19

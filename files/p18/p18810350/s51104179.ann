@@ -1,0 +1,39 @@
+T1	Medical-Problem 221 237	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 249 259	prominence
+T3	Medical-Anatomy 267 288	pulmonary vasculature
+T4	Medical-Problem 336 359	increased consolidation
+T5	Medical-Anatomy 368 383	right lung base
+T6	Medical-Assertion 393 399	likely
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 400 411	atelectasis
+T8	Medical-Assertion 413 417	less
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 425 434	pneumonia
+T10	Medical-Problem 441 490	associated increased small right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 501 503	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 504 516;518 526	left pleural effusion
+T13	Medical-Problem 530 542	pneumothorax
+T14	Medical-Problem 553 589	Enlargement of the cardiomediastinal
+E11	Medical-Problem:T14
+T15	Medical-Problem 655 672	Increased opacity
+T16	Medical-Anatomy 680 695	right lung base
+T17	Medical-Problem 701 727;729 751	associated increased small right pleural effusion
+T18	Medical-Assertion 753 772	likely representing
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 773 784	atelectasis
+T20	Medical-Problem 799 808	pneumonia
+T21	Medical-Problem 889 908	Stable cardiomegaly
+E17	Medical-Problem:T21
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T16
+E15	Medical-Problem:T19 has-Medical-Anatomy:T16 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T16 has-Medical-Assertion:T18

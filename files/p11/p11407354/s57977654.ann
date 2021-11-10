@@ -1,0 +1,19 @@
+T1	Medical-Assertion 159 167	possible
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 168 178	aspiration
+T3	Medical-Assertion 244 246	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 247 252;254 267	focal consolidation
+T5	Medical-Problem 271 288	pleural effusions
+T6	Lesion-Size 301 306	small
+T7	Lesion-Description 307 317	granulomas
+T8	Lesion-Anatomy 325 332;334 345	mid and lower lungs
+T9	Lesion-Characteristic 402 411	calcified
+T10	Lesion-Description 413 423	granulomas
+T11	Medical-Problem 435 447	tuberculosis
+E9	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T8
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T9

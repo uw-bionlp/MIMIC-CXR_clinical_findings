@@ -1,0 +1,27 @@
+T1	Medical-Problem 160 172	pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Assertion 237 239	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 240 252	pneumothorax
+T4	Medical-Problem 263 277	Patchy opacity
+T5	Medical-Anatomy 298 303;305 328	right upper-to-mid hemithorax
+T6	Medical-Assertion 487 500	may be due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 501 510	infection
+T8	Medical-Problem 512 522	aspiration
+T9	Medical-Problem 524 533;535 545	pulmonary hemorrhage
+T10	Lesion-Assertion 549 552	not
+A3	Lesion-AssertionValue T10 possible
+T11	Medical-Assertion 593 595	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 596 612	pleural effusion
+T13	Medical-Assertion 689 691	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 692 704	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

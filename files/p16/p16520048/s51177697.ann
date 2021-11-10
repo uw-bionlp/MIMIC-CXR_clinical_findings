@@ -1,0 +1,29 @@
+T1	Medical-Problem 244 249;251 258	vague opacity
+T2	Medical-Anatomy 270 327;329 335	just above the right hemidiaphragm in the right lung base on the
+T3	Medical-Assertion 356 377	which could represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 381 392	abnormality
+T5	Medical-Anatomy 400 406	breast
+T6	Lesion-Description 451 457	nodule
+T7	Lesion-Anatomy 465 481	right lower lung
+T8	Lesion-Assertion 486 498	not excluded
+A2	Lesion-AssertionValue T8 possible
+T9	Medical-Problem 642 662	degenerative changes
+T10	Medical-Anatomy 676 690	right shoulder
+T11	Lesion-Characteristic 708 714	Subtle
+T12	Lesion-Description 715 730	nodular opacity
+T13	Lesion-Anatomy 751 766	right lung base
+T14	Medical-Assertion 795 808	may represent
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 809 848	overlapping structures in the body wall
+T16	Lesion-Characteristic 858 862	true
+T17	Lesion-Description 863 869	nodule
+T18	Lesion-Assertion 870 882	not excluded
+A4	Lesion-AssertionValue T18 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T7 has-Lesion-Assertion:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T16 has-Lesion-Assertion:T18

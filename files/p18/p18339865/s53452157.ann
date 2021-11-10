@@ -1,0 +1,31 @@
+T1	Medical-Problem 275 294	parenchymal opacity
+T2	Medical-Anatomy 302 319	right middle lobe
+T3	Medical-Problem 360 369	pneumonia
+T4	Medical-Problem 376 409	opacity is relatively ill-defined
+E4	Medical-Problem:T4
+T5	Medical-Problem 421 444	subtle air bronchograms
+E5	Medical-Problem:T5
+T6	Medical-Problem 451 458	opacity
+E6	Medical-Problem:T6
+T7	Medical-Assertion 502 504	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 505 524	other abnormalities
+T9	Medical-Assertion 527 529	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 530 547	pleural effusions
+T11	Medical-Assertion 550 552	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 553 578	other parenchymal changes
+T13	Lesion-Assertion 582 584	No
+A4	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 585 590	hilar
+T15	Lesion-Anatomy 594 605	mediastinal
+T16	Lesion-Description 606 616	adenopathy
+T17	Medical-Problem 674 701	Right middle lobe pneumonia
+E13	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T15

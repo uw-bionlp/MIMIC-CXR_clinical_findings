@@ -1,0 +1,31 @@
+T1	Medical-Problem 192 206	hyperexpansion
+T2	Medical-Anatomy 214 225	lung fields
+T3	Medical-Problem 237 247	prominence
+T4	Medical-Anatomy 256 287	pulmonary interstitial markings
+T5	Medical-Problem 307 318	atelectasis
+T6	Medical-Anatomy 326 330;332 337	lung bases
+T7	Medical-Problem 354 366	hazy opacity
+T8	Medical-Anatomy 374 384	right base
+T9	Medical-Assertion 391 404	may be due to
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 406 427	developing infiltrate
+T11	Medical-Problem 468 477;479 491	unchanged cardiomegaly
+E10	Medical-Problem:T11
+T12	Medical-Problem 500 525	right-sided rib fractures
+T13	Medical-Assertion 558 571	not well seen
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Assertion 584 586	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 587 601	pneumothoraces
+T16	Medical-Problem 613 633	extensive osteopenia
+T17	Medical-Problem 639 672	vertebral compression deformities
+T18	Medical-Anatomy 680 694	thoracic spine
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T18
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18

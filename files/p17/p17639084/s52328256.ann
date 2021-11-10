@@ -1,0 +1,18 @@
+T1	Medical-Problem 507 527	areas of atelectasis
+T2	Medical-Anatomy 536 546	lung bases
+T3	Medical-Problem 549 571	Minimal fluid overload
+E3	Medical-Problem:T3
+T4	Medical-Problem 591 599	Blunting
+T5	Medical-Anatomy 608 632	right costophrenic sinus
+T6	Medical-Assertion 633 651	might be caused by
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 654 684	minimal right pleural effusion
+T8	Medical-Problem 688 723	Increasing retrocardiac atelectasis
+E7	Medical-Problem:T8
+T9	Medical-Assertion 726 728	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 729 741	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

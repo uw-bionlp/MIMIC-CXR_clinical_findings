@@ -1,0 +1,45 @@
+T1	Medical-Problem 58 78	moderate compression
+T2	Medical-Anatomy 82 120;122 138	mid thoracic and mid to lower thoracic vertebral bodies
+T3	Lesion-Size-Trend 139 153	grossly stable
+A1	Lesion-Size-TrendValue T3 no-change
+T4	Medical-Problem 193 210	not well assessed
+E3	Medical-Problem:T4
+T5	Medical-Problem 211 225	loss of height
+T6	Medical-Anatomy 231 258	upper lumbar vertebral body
+T7	Medical-Problem 645 693	bibasilar and right middle lobe patchy opacities
+E6	Medical-Problem:T7
+T8	Medical-Assertion 750 752	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 753 769	pleural effusion
+T10	Medical-Problem 774 786	pneumothorax
+T11	Medical-Anatomy 793 800	cardiac
+T12	Medical-Assertion 815 818	not
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 819 827	enlarged
+T14	Lesion-Characteristic 872 881	Calcified
+T15	Lesion-Anatomy 882 892	left hilar
+T16	Lesion-Description 893 898	nodes
+T17	Medical-Assertion 927 929	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 930 942	pneumothorax
+T19	Medical-Problem 945 991	Patchy basilar and right middle lobe opacities
+E15	Medical-Problem:T19
+T20	Medical-Problem 994 998;1000 1021	Left basilar opacities may
+E16	Medical-Problem:T20
+T21	Medical-Problem 1025 1032	chronic
+E17	Medical-Problem:T21
+T22	Medical-Problem 1035 1068;1070 1079	Right middle lobe opacity appears increased
+E18	Medical-Problem:T22
+T23	Medical-Assertion 1081 1086	query
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1087 1094	acute (
+E19	Medical-Problem:T24
+T25	Medical-Problem 1142 1181	worsening of known chronic lung disease
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E13	Lesion-Description:T16 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E20	Medical-Problem:T25 has-Medical-Assertion:T23

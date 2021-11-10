@@ -1,0 +1,26 @@
+T1	Medical-Assertion 147 157	suggesting
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 158 189	developing pericardial effusion
+T3	Medical-Problem 377 429	Bilateral pleural effusions, right greater than left
+E2	Medical-Problem:T3
+T4	Medical-Problem 470 497	Slightly more focal opacity
+T5	Medical-Anatomy 505 520	right lung base
+T6	Medical-Problem 526 530	some
+E5	Medical-Problem:T6
+T7	Medical-Problem 533 546	opacification
+T8	Medical-Anatomy 554 578	right cardiac silhouette
+T9	Medical-Assertion 579 592	could reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 596 601;603 622	early  infectious process
+T11	Medical-Problem 1023 1035	CARDIOMEGALY
+E9	Medical-Problem:T11
+T12	Medical-Problem 1112 1134	BIBASAL CONSOLIDATIONS
+E10	Medical-Problem:T12
+T13	Medical-Assertion 1161 1163	NO
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1164 1176	PNEUMOTHORAX
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,22 @@
+T1	Medical-Problem 235 251	slight elevation
+T2	Medical-Anatomy 260 278	left hemidiaphragm
+T3	Medical-Problem 333 353	Left basilar opacity
+T4	Medical-Anatomy 368 391	left costophrenic angle
+T5	Medical-Problem 396 408;410 417	retrocardiac opacity
+E5	Medical-Problem:T5
+T6	Medical-Assertion 422 440	most likely due to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 441 452	atelectasis
+T8	Medical-Assertion 544 546	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 547 560;562 573	acute osseous abnormality
+T10	Medical-Problem 605 637	Streaky left basilar atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Assertion 650 652	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 653 658;660 683	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

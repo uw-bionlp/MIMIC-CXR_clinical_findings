@@ -1,0 +1,26 @@
+T1	Medical-Problem 259 264;266 287	large left pleural effusion
+T2	Medical-Problem 293 317	associated consolidation
+T3	Medical-Anatomy 325 340	left lower lung
+T4	Medical-Anatomy 370 392	lateral right CP angle
+T5	Medical-Assertion 427 435	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 438 466	small right pleural effusion
+T7	Medical-Problem 471 490	basilar atelectasis
+T8	Medical-Assertion 593 595	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 596 604	free air
+T10	Medical-Anatomy 615 634	right hemidiaphragm
+T11	Medical-Problem 652 704	Bilateral pleural effusions, left greater than right
+E9	Medical-Problem:T11
+T12	Medical-Problem 711 732	bibasilar atelectasis
+E10	Medical-Problem:T12
+T13	Medical-Problem 747 756	pneumonia
+T14	Medical-Assertion 760 781	impossible to exclude
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Anatomy 790 804	left lung base
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T14 has-Medical-Anatomy:T15

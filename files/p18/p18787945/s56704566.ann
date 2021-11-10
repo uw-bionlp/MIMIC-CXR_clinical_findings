@@ -1,0 +1,37 @@
+T1	Medical-Problem 215 239	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 323 345	moderate hiatal hernia
+E2	Medical-Problem:T2
+T3	Medical-Problem 407 416;418 431	Lungs are hyperexpanded
+E3	Medical-Problem:T3
+T4	Medical-Assertion 433 451	most likely due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 452 472	chronic lung disease
+T6	Medical-Assertion 484 486	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 487 496;498 517	pulmonary vascular congestion
+T8	Medical-Problem 520 559	Patchy bibasilar and airspace opacities
+E6	Medical-Problem:T8
+T9	Medical-Assertion 560 574	likely reflect
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 576 587	atelectasis
+T11	Medical-Assertion 599 601	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 602 618	pleural effusion
+T13	Medical-Problem 622 634	pneumothorax
+T14	Medical-Anatomy 698 716	mid thoracic spine
+E10	Medical-Anatomy:T14
+T15	Medical-Problem 719 722;724 737	Old rib fractures
+T16	Medical-Anatomy 754 759	right
+T17	Medical-Problem 777 803	Patchy bibasilar opacities
+E13	Medical-Problem:T17
+T18	Medical-Assertion 804 818	likely reflect
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 819 830	atelectasis
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

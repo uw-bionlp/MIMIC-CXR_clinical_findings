@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 287 292	Lungs
+T2	Medical-Assertion 297 302	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 306 319	consolidation
+T4	Medical-Problem 321 329	effusion
+T5	Medical-Problem 333 345	pneumothorax
+T6	Medical-Assertion 348 350	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 351 360;362 367	pulmonary edema
+T8	Medical-Problem 420 432	Irregularity
+T9	Medical-Anatomy 441 467	left first and second ribs
+T10	Medical-Problem 472 479	chronic
+E8	Medical-Problem:T10
+T11	Medical-Assertion 485 501	likely represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 502 518	healed fractures
+T13	Medical-Assertion 539 541	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 554 583	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

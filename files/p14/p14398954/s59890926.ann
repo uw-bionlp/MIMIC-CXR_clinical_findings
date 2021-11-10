@@ -1,0 +1,30 @@
+T1	Medical-Problem 173 193	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Lesion-Size-Trend 205 222	stable appearance
+A1	Lesion-Size-TrendValue T2 no-change
+T3	Lesion-Anatomy 228 239;241 245	right lower lobe
+T4	Lesion-Description 246 250	mass
+T5	Lesion-Anatomy 255 260	hilar
+T6	Lesion-Description 261 271	adenopathy
+T7	Medical-Problem 332 358	superimposed consolidation
+T8	Medical-Assertion 359 391	cannot be entirely excluded, but
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 414 416	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 417 438	obvious consolidation
+T11	Medical-Problem 440 448	effusion
+T12	Medical-Problem 453 465	pneumothorax
+T13	Lesion-Size-Trend 565 582	stable appearance
+A4	Lesion-Size-TrendValue T13 no-change
+T14	Lesion-Anatomy 586 602	right lower lobe
+T15	Lesion-Description 603 607	mass
+T16	Lesion-Characteristic 613 623	associated
+T17	Lesion-Description 624 634	adenopathy
+E3	Lesion-Description:T4 has-Lesion-Size-Trend:T2 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Lesion-Description:T15 has-Lesion-Size-Trend:T13 has-Lesion-Anatomy:T14
+E13	Lesion-Description:T17 has-Lesion-Characteristic:T16

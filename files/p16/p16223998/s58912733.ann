@@ -1,0 +1,42 @@
+T1	Lesion-Size 29 34	14 mm
+T2	Lesion-Characteristic 35 40	faint
+T3	Lesion-Characteristic 41 48	rounded
+T4	Lesion-Description 49 56	opacity
+T5	Lesion-Anatomy 68 82	left lung apex
+T6	Medical-Assertion 141 152	may reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 156 171	inflammatory or
+E6	Medical-Problem:T7
+T8	Medical-Problem 172 182;184 192	infectious  process
+T9	Lesion-Anatomy 774 788	left lung apex
+T10	Lesion-Size 801 806	14 mm
+T11	Lesion-Characteristic 808 813	faint
+T12	Lesion-Characteristic 814 821	rounded
+T13	Lesion-Description 822 829	opacity
+T14	Medical-Assertion 898 905	without
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 906 925	focal consolidation
+T16	Medical-Assertion 928 930	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 931 947	pleural effusion
+T18	Medical-Problem 951 963	pneumothorax
+T19	Medical-Assertion 988 990	no
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 991 1018	acute osseous abnormalities
+T21	Lesion-Size 1038 1043	14 mm
+E17	Lesion-Size:T21
+T22	Medical-Anatomy 1077 1091	left lung apex
+E18	Medical-Anatomy:T22
+T23	Medical-Assertion 1149 1160	may reflect
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1164 1179	inflammatory or
+E19	Medical-Problem:T24
+T25	Medical-Problem 1180 1190;1192 1199	infectious process
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T9 has-Lesion-Size-Present:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E20	Medical-Problem:T25 has-Medical-Assertion:T23

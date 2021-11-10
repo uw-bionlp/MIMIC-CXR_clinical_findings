@@ -1,0 +1,24 @@
+T1	Medical-Problem 220 236	Stable elevation
+T2	Medical-Anatomy 244 249	right
+T3	Medical-Anatomy 275 280	Lungs
+T4	Medical-Assertion 294 301	without
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 302 321	focal consolidation
+T6	Medical-Problem 324 332	effusion
+T7	Medical-Problem 336 348	pneumothorax
+T8	Lesion-Characteristic 352 358	subtle
+T9	Lesion-Description 359 374	nodular opacity
+T10	Lesion-Anatomy 393 397;399 443	left lower lung adjacent to the left heart border
+T11	Medical-Assertion 445 464	likely representing
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 465 475;477 487	confluence of shadows
+T13	Lesion-Characteristic 577 583	Subtle
+T14	Lesion-Description 584 599	nodular opacity
+T15	Lesion-Anatomy 613 630	left heart border
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15

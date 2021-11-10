@@ -1,0 +1,19 @@
+T1	Medical-Problem 292 309;311 330	minimal pulmonary vascular congestion
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 337 342	heart
+T3	Medical-Problem 346 361	stably enlarged
+T4	Medical-Assertion 362 369	without
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 370 381;383 402	significant vascular congestion
+T6	Medical-Assertion 404 414	suggesting
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 415 440	underlying cardiomyopathy
+T8	Medical-Problem 444 455;457 465	pericardial effusion
+T9	Medical-Anatomy 551 560	left lung
+E7	Medical-Anatomy:T9
+T10	Medical-Problem 604 612	Improved
+E8	Medical-Problem:T10
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T2 has-Medical-Assertion:T4 has-Medical-Assertion:T6

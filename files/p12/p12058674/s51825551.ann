@@ -1,0 +1,39 @@
+T1	Lesion-Description 187 204	Mass-like opacity
+T2	Lesion-Anatomy 212 228	right upper lobe
+T3	Medical-Problem 237 248	pleural tag
+E3	Medical-Problem:T3
+T4	Lesion-Assertion 252 266	concerning for
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Description 280 290	malignancy
+T6	Lesion-Description 304 319	nodular opacity
+T7	Lesion-Anatomy 337 357	left mid lung region
+T8	Medical-Problem 374 413	nonspecific patchy and linear opacities
+T9	Medical-Anatomy 417 433	both lower lungs
+T10	Medical-Problem 435 450;452 465	Atherosclerotic calcification
+T11	Medical-Anatomy 485 496	aortic arch
+T12	Medical-Problem 544 571	small left pleural effusion
+E11	Medical-Problem:T12
+T13	Lesion-Anatomy 602 618	Right upper lobe
+T14	Lesion-Description 619 623	mass
+T15	Lesion-Assertion 642 656	concerning for
+A2	Lesion-AssertionValue T15 possible
+T16	Lesion-Description 694 709	nodular opacity
+T17	Lesion-Anatomy 713 726	left mid lung
+T18	Lesion-Characteristic 730 743	indeterminate
+T19	Medical-Problem 882 901	Bibasilar opacities
+E17	Medical-Problem:T19
+T20	Medical-Assertion 902 913	may reflect
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 914 924	aspiration
+T22	Medical-Problem 926 937	atelectasis
+T23	Medical-Problem 941 951;953 962	infectious pneumonia
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T2 has-Lesion-Assertion:T4
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E13	Lesion-Description:T14 has-Lesion-Anatomy:T13 has-Lesion-Assertion:T15
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T17 has-Lesion-Characteristic:T18
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T22 has-Medical-Assertion:T20
+E20	Medical-Problem:T23 has-Medical-Assertion:T20

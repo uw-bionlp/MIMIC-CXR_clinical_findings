@@ -1,0 +1,54 @@
+T1	Medical-Assertion 33 57	No radiographic evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 62 71	pneumonia
+T3	Medical-Problem 74 102	Trace right pleural effusion
+E2	Medical-Problem:T3
+T4	Lesion-Size 105 109	6 mm
+T5	Lesion-Description 112 119	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 120 127	opacity
+T7	Lesion-Anatomy 148 167	left mid lung field
+T8	Medical-Assertion 199 212	could reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 235 255	summation of shadows
+T10	Medical-Problem 666 674	Blunting
+T11	Medical-Anatomy 683 714	costophrenic angle on the right
+T12	Medical-Assertion 715 726	may suggest
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 729 757	trace right pleural effusion
+T14	Medical-Assertion 761 763	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 764 783	focal consolidation
+T16	Medical-Problem 787 799	pneumothorax
+T17	Lesion-Size 816 820	6 mm
+T18	Lesion-Description 821 828	nodular
+E14	Lesion-Description:T18
+T19	Lesion-Description 829 836	opacity
+T20	Lesion-Anatomy 866 885	left mid lung field
+T21	Lesion-Anatomy 890 894	left
+T22	Medical-Problem 916 947	Remote left-sided rib fractures
+E18	Medical-Problem:T22
+T23	Medical-Assertion 977 1001	No radiographic evidence
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1006 1015	pneumonia
+T25	Medical-Problem 1018 1046	Trace right pleural effusion
+E20	Medical-Problem:T25
+T26	Lesion-Size 1049 1053	6 mm
+T27	Lesion-Description 1055 1062	nodular
+E22	Lesion-Description:T27
+T28	Lesion-Description 1063 1070	opacity
+T29	Lesion-Anatomy 1091 1110	left mid lung field
+T30	Medical-Assertion 1141 1154	could reflect
+A6	Medical-AssertionValue T30 possible
+T31	Medical-Problem 1177 1197	summation of shadows
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Lesion-Description:T19 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T20 has-Lesion-Anatomy:T21
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E23	Lesion-Description:T28 has-Lesion-Size-Present:T26 has-Lesion-Anatomy:T29
+E25	Medical-Problem:T31 has-Medical-Assertion:T30

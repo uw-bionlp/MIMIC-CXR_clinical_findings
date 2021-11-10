@@ -1,0 +1,29 @@
+T1	Medical-Assertion 332 334	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 335 351	pleural effusion
+T3	Medical-Problem 355 367	pneumothorax
+T4	Lesion-Anatomy 372 376	lung
+T5	Lesion-Description 377 383	nodule
+T6	Lesion-Anatomy 409 425	right lower lobe
+T7	Lesion-Size-Trend 427 452	probably unchanged to the
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Anatomy 524 563	superior contours of the hemidiaphragms
+T9	Medical-Problem 583 596	vague opacity
+T10	Medical-Assertion 705 714	Suspicion
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 719 728	pneumonia
+T12	Medical-Problem 740 771	vague anterior inferior opacity
+T13	Medical-Anatomy 824 841	lingula, although
+T14	Medical-Problem 874 885	atelectasis
+T15	Lesion-Size-Trend 933 951	Similar appearance
+A4	Lesion-Size-TrendValue T15 no-change
+T16	Lesion-Anatomy 955 978	right basilar pulmonary
+T17	Lesion-Description 979 985	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Lesion-Description:T17 has-Lesion-Size-Trend:T15 has-Lesion-Anatomy:T16

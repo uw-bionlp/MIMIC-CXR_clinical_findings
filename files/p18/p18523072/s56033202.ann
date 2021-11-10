@@ -1,0 +1,65 @@
+T1	Medical-Problem 73 82	opacities
+T2	Medical-Anatomy 86 95	bilateral
+T3	Lesion-Assertion 109 125	likely represent
+A1	Lesion-AssertionValue T3 possible
+T4	Medical-Problem 160 170	Flattening
+T5	Medical-Anatomy 180 202	diaphragms bilaterally
+T6	Medical-Assertion 249 256;258 267	No good  evidence
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 272 288	pleural effusion
+T8	Medical-Assertion 290 308	No strong evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 313 326	new pneumonia
+T10	Medical-Problem 407 416	opacities
+T11	Medical-Anatomy 420 429	bilateral
+T12	Lesion-Assertion 443 459	likely represent
+A4	Lesion-AssertionValue T12 possible
+T13	Medical-Problem 494 504	Flattening
+T14	Medical-Anatomy 514 536	diaphragms bilaterally
+T15	Medical-Assertion 583 590;592 601	No good  evidence
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 606 622	pleural effusion
+T17	Medical-Assertion 624 642	No strong evidence
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 647 660	new pneumonia
+T19	Lesion-Anatomy 1246 1267	right lower lobe lung
+T20	Lesion-Description 1268 1274	masses
+T21	Lesion-Size-Trend 1279 1285	stable
+A7	Lesion-Size-TrendValue T21 no-change
+T22	Medical-Problem 1298 1303;1305 1318	Large consolidative
+E15	Medical-Problem:T22
+T23	Medical-Problem 1319 1330	abnormality
+E16	Medical-Problem:T23
+T24	Lesion-Count 1335 1343	multiple
+T25	Lesion-Anatomy 1344 1348	lung
+T26	Lesion-Description 1349 1356	nodules
+T27	Lesion-Anatomy 1364 1379	left lower lobe
+T28	Lesion-Size-Trend 1387 1396	unchanged
+A8	Lesion-Size-TrendValue T28 no-change
+T29	Medical-Problem 1412 1436	peripheral consolidation
+T30	Medical-Anatomy 1444 1459	left lower lobe
+T31	Medical-Problem 1488 1497	pneumonia
+T32	Medical-Assertion 1616 1630	no findings to
+A9	Medical-AssertionValue T32 absent
+T33	Medical-Problem 1639 1654	acute pneumonia
+T34	Medical-Problem 1656 1667	Small right
+E25	Medical-Problem:T34
+T35	Medical-Problem 1716 1737	very severe emphysema
+E26	Medical-Problem:T35
+T36	Medical-Assertion 1774 1787	no indication
+A10	Medical-AssertionValue T36 absent
+T37	Medical-Problem 1791 1813	cardiac decompensation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T11
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Lesion-Description:T20 has-Lesion-Anatomy:T19 has-Lesion-Size-Trend:T21
+E19	Lesion-Description:T26 has-Lesion-Count:T24 has-Lesion-Anatomy:T25 has-Lesion-Anatomy:T27 has-Lesion-Size-Trend:T28
+E21	Medical-Problem:T29 has-Medical-Anatomy:T30
+E23	Medical-Problem:T31 has-Medical-Anatomy:T30
+E24	Medical-Problem:T33 has-Medical-Assertion:T32
+E27	Medical-Problem:T37 has-Medical-Assertion:T36

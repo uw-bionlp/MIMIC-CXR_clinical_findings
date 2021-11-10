@@ -1,0 +1,17 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 69	acute cardiopulmonary abnormality
+T3	Medical-Problem 458 466;468 476	aorta is tortuous
+E2	Medical-Problem:T3
+T4	Medical-Assertion 580 586	likely
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 587 603	mild volume loss
+T6	Medical-Anatomy 611 620;622 630	medial in the left
+T7	Lesion-Size-Trend 643 652	unchanged
+A3	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 716 718	No
+A4	Medical-AssertionValue T8 absent
+T9	Medical-Problem 719 752	acute cardiopulmonary abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T9 has-Medical-Assertion:T8

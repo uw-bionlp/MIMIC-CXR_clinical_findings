@@ -1,0 +1,28 @@
+T1	Medical-Assertion 391 393	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 394 401;403 411	pleural effusion
+T3	Medical-Problem 415 427	pneumothorax
+T4	Medical-Problem 429 457	Medial right basilar opacity
+T5	Medical-Assertion 458 477	has partly resolved
+A2	Medical-AssertionValue T5 absent
+T6	Lesion-Anatomy 494 519	medial right basilar lung
+T7	Lesion-Description 520 526	nodule
+T8	Medical-Problem 530 536	partly
+E6	Medical-Problem:T8
+T9	Medical-Problem 547 553;555 563	Patchy scarring
+E7	Medical-Problem:T9
+T10	Medical-Problem 568 606	right lower lateral pleural thickening
+E8	Medical-Problem:T10
+T11	Lesion-Anatomy 648 664	Right suprahilar
+T12	Lesion-Description 665 671	nodule
+T13	Medical-Assertion 844 855	No evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 859 888	acute cardiopulmonary disease
+T15	Lesion-Description 929 936	nodules
+E12	Lesion-Description:T15
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

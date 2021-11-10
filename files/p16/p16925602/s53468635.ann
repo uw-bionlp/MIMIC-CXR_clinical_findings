@@ -1,0 +1,37 @@
+T1	Medical-Problem 76 97	LARGE AREA OF LUCENCY
+T2	Medical-Anatomy 120 139	RIGHT UPPER ABDOMEN
+T3	Medical-Assertion 159 172	WORRISOME FOR
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 173 181	FREE AIR
+T5	Medical-Problem 263 279	PNEUMOPERITONEUM
+E4	Medical-Problem:T5
+T6	Medical-Problem 738 754	LOW LUNG VOLUMES
+E5	Medical-Problem:T6
+T7	Medical-Problem 759 771	MILD BASILAR
+E6	Medical-Problem:T7
+T8	Medical-Problem 772 783	ATELECTASIS
+E7	Medical-Problem:T8
+T9	Medical-Assertion 785 787	NO
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 788 793;795 808	FOCAL CONSOLIDATION
+T11	Medical-Problem 810 826	PLEURAL EFFUSION
+T12	Medical-Problem 830 838	EVIDENCE
+E10	Medical-Problem:T12
+T13	Medical-Problem 842 854	PNEUMOTHORAX
+T14	Medical-Problem 926 941	AREA OF LUCENCY
+E12	Medical-Problem:T14
+T15	Medical-Anatomy 971 991	RIGHT UPPER QUADRANT
+T16	Medical-Assertion 1015 1027;1029 1031	COULD BE DUE TO
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1032 1051	UNDERLYING FREE AIR
+T18	Medical-Anatomy 1160 1165	RIGHT
+T19	Medical-Assertion 1199 1208	WORRISOME
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1213 1221	FREE AIR
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T9
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19

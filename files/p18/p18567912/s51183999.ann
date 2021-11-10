@@ -1,0 +1,30 @@
+T1	Lesion-Characteristic 255 266	Ill-defined
+T2	Lesion-Description 268 275	nodular
+E2	Lesion-Description:T2
+T3	Lesion-Description 276 283	opacity
+T4	Lesion-Size 294 304	2 x 2.1 cm
+T5	Lesion-Anatomy 312 344	paramediastinal right upper lobe
+T6	Lesion-Description 365 369	mass
+T7	Lesion-Description 401 408	nodules
+T8	Lesion-Anatomy 429 445	right lower lobe
+T9	Medical-Assertion 511 513	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 514 539	large focal consolidation
+T11	Medical-Problem 541 557	pleural effusion
+T12	Medical-Problem 561 573	pneumothorax
+T13	Medical-Problem 623 637	tortuous aorta
+E12	Medical-Problem:T13
+T14	Lesion-Count 722 730	Multiple
+T15	Lesion-Anatomy 731 735	lung
+T16	Lesion-Description 736 743	nodules
+T17	Medical-Assertion 793 795	No
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 796 815	focal consolidation
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T9
+E15	Lesion-Description:T16 has-Lesion-Count:T14 has-Lesion-Anatomy:T15
+E16	Medical-Problem:T18 has-Medical-Assertion:T17

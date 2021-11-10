@@ -1,0 +1,28 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 51	focal consolidation
+T3	Medical-Problem 63 72	pneumonia
+T4	Medical-Problem 83 101;103 112	minimally improved  aeration
+T5	Medical-Anatomy 120 135	left lower lobe
+T6	Medical-Problem 504 529	rotated severely leftward
+E5	Medical-Problem:T6
+T7	Medical-Problem 617 622;624 653	large collection of mediastinal fat
+E6	Medical-Problem:T7
+T8	Medical-Assertion 665 667	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 668 677	pneumonia
+T10	Medical-Problem 681 696	pulmonary edema
+T11	Medical-Assertion 711 713	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 714 730	pleural effusion
+T13	Lesion-Anatomy 878 883;885 889	right lung
+T14	Lesion-Description 890 897	lesions
+T15	Medical-Problem 910 930	bronchial impactions
+E12	Medical-Problem:T15
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T14 has-Lesion-Anatomy:T13

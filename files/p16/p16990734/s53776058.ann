@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 329 344	right lung base
+T2	Medical-Problem 351 378	residual linear atelectasis
+T3	Medical-Problem 428 460	persistent moderate cardiomegaly
+E3	Medical-Problem:T3
+T4	Medical-Assertion 463 465	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 466 482	pleural effusion
+T6	Medical-Problem 486 499	consolidation
+T7	Medical-Problem 510 523	dense opacity
+T8	Medical-Anatomy 531 547	right upper lobe
+T9	Lesion-Assertion 551 557	likely
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Characteristic 560 569	calcified
+T11	Lesion-Description 570 579	granuloma
+T12	Medical-Problem 583 597	Calcifications
+T13	Medical-Anatomy 605 623	left upper abdomen
+T14	Lesion-Anatomy 644 651	splenic
+T15	Lesion-Description 653 663	granulomas
+T16	Medical-Problem 712 745	right lower lobe airspace opacity
+E14	Medical-Problem:T16
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T14

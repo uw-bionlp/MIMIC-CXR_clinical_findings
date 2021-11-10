@@ -1,0 +1,25 @@
+T1	Medical-Problem 236 258	near-complete collapse
+T2	Medical-Anatomy 267 284	entire right lung
+T3	Medical-Assertion 290 298	possible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 299 315	minimal aeration
+T5	Medical-Anatomy 323 334;336 340	right upper lobe
+T6	Medical-Problem 356 384	large right pleural effusion
+T7	Medical-Problem 436 475	Small-to-moderate left pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Problem 483 507	left basilar atelectasis
+E7	Medical-Problem:T8
+T9	Medical-Problem 594 623	extensive pleural effusion on
+E8	Medical-Problem:T9
+T10	Medical-Assertion 646 648	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 649 661	pneumothorax
+T12	Medical-Problem 679 707	Large right pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Problem 714 731	complete collapse
+T14	Medical-Anatomy 739 744;746 750	right lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14

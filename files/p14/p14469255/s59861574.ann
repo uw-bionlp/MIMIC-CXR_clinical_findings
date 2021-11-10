@@ -1,0 +1,38 @@
+T1	Medical-Problem 446 464	Marked volume loss
+T2	Medical-Anatomy 472 482	right lung
+T3	Medical-Problem 511 552	rightward shift of mediastinal structures
+T4	Medical-Anatomy 577 588;590 600	right upper hemithorax
+T5	Medical-Problem 606 636	large air and fluid collection
+T6	Medical-Problem 682 714	continued right basilar collapse
+T7	Medical-Problem 716 742	Worsening patchy opacities
+T8	Medical-Anatomy 764 773	left base
+T9	Medical-Anatomy 789 808	left mid lung field
+T10	Medical-Assertion 810 824	concerning for
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Problem 826 859	worsening small airways infection
+T12	Medical-Problem 863 875	inflammation
+T13	Medical-Assertion 877 879	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 880 892	pneumothorax
+T15	Medical-Problem 928 966	Worsening patchy ill-defined opacities
+T16	Medical-Anatomy 978 997	left mid lung field
+T17	Medical-Anatomy 1002 1006;1008 1017	left lung base
+T18	Medical-Assertion 1022 1036	concerning for
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1037 1070	worsening small airways infection
+T20	Medical-Problem 1075 1087	inflammation
+T21	Medical-Problem 1089 1137	Unchanged appearance of the right hemithorax and
+E18	Medical-Problem:T21
+T22	Medical-Problem 1138 1153;1155 1180	rightward shift of mediastinal structures
+E19	Medical-Problem:T22
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T16 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T16 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

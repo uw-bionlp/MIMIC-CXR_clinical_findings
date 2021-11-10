@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 211 216	lungs
+T2	Medical-Problem 222 242	mildly hyperinflated
+T3	Medical-Assertion 244 257	suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 258 262	COPD
+T5	Medical-Anatomy 269 274	lungs
+T6	Medical-Assertion 285 292	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 294 322	focal or diffuse abnormality
+T8	Medical-Assertion 325 327	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 328 344	pleural effusion
+T10	Medical-Problem 348 360	pneumothorax
+T11	Medical-Assertion 433 435	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 436 446;448 460	radiopaque foreign body
+T13	Medical-Problem 463 495	Thoracolumbar dextroscoliosis is
+E9	Medical-Problem:T13
+T14	Medical-Problem 522 541	Mild hyperinflation
+T15	Medical-Anatomy 549 554	lungs
+T16	Medical-Assertion 556 569	suggestive of
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 570 574	COPD
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

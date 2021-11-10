@@ -1,0 +1,23 @@
+T1	Medical-Assertion 148 150	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 152 171	vascular congestion
+T3	Medical-Problem 173 189	pleural effusion
+T4	Medical-Problem 194 215	acute focal pneumonia
+T5	Medical-Problem 218 222;224 232	Mild blunting
+T6	Medical-Anatomy 240 263	left costophrenic angle
+T7	Medical-Assertion 264 277	could reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 278 291	pleural fluid
+T9	Medical-Problem 293 300;302 310	pleural scarring
+T10	Medical-Problem 320 346	superimposed breast tissue
+T11	Medical-Assertion 351 362	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 366 387	acute focal pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

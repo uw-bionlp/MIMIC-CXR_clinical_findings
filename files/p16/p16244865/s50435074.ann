@@ -1,0 +1,42 @@
+T1	Medical-Anatomy 254 259	heart
+T2	Medical-Assertion 263 266	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 267 275	enlarged
+T4	Medical-Problem 286 295	elevation
+T5	Medical-Anatomy 303 322	right hemidiaphragm
+T6	Medical-Anatomy 356 361	heart
+T7	Medical-Assertion 365 368	not
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 369 377	enlarged
+T9	Lesion-Assertion 425 427	no
+A3	Lesion-AssertionValue T9 absent
+T10	Lesion-Anatomy 428 445	hilar mediastinal
+T11	Lesion-Description 446 461	lymphadenopathy
+T12	Medical-Assertion 476 478	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 479 482	CHF
+T14	Medical-Problem 484 500	focal infiltrate
+T15	Medical-Problem 502 510	effusion
+T16	Medical-Problem 515 527	pneumothorax
+T17	Medical-Problem 551 584	minimal biapical pleural scarring
+E13	Medical-Problem:T17
+T18	Medical-Problem 614 617;619 651	Old healed left seventh rib fracture
+E14	Medical-Problem:T18
+T19	Medical-Problem 686 714	Elevated right hemidiaphragm
+E15	Medical-Problem:T19
+T20	Medical-Assertion 754 756	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 757 762;764 781	acute pulmonary process
+T22	Lesion-Assertion 794 818	No radiographic evidence
+A6	Lesion-AssertionValue T22 absent
+T23	Lesion-Description 822 826	mass
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Anatomy:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T12
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E17	Lesion-Description:T23 has-Lesion-Assertion:T22

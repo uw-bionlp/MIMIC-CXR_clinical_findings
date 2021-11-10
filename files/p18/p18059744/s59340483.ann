@@ -1,0 +1,29 @@
+T1	Medical-Assertion 243 245	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 246 262	pleural effusion
+T3	Medical-Problem 266 278	pneumothorax
+T4	Medical-Problem 281 296	Faint opacities
+T5	Medical-Anatomy 304 308;310 320	left lower lobe
+T6	Medical-Assertion 321 333	may indicate
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 334 344	aspiration
+T8	Medical-Problem 356 377	bibasilar atelectasis
+E6	Medical-Problem:T8
+T9	Medical-Anatomy 406 411	aorta
+T10	Medical-Problem 415 437	calcified and tortuous
+T11	Medical-Assertion 488 490	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 491 513	displaced rib fracture
+T13	Medical-Problem 534 549	Faint opacities
+T14	Medical-Anatomy 557 572	left lower lobe
+T15	Medical-Assertion 573 585	may indicate
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 586 596	aspiration
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

@@ -1,0 +1,24 @@
+T1	Medical-Problem 413 442	pulmonary vascular congestion
+T2	Medical-Assertion 443 455	has resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Assertion 469 471	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 472 481;483 488	pulmonary edema
+T5	Medical-Assertion 525 527	no
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 528 544	pleural effusion
+T7	Medical-Problem 549 561;563 579	small region of consolidation
+T8	Medical-Anatomy 587 603	right lower lobe
+T9	Medical-Assertion 604 612	could be
+A4	Medical-AssertionValue T9 possible
+T10	Medical-Problem 613 622	pneumonia
+T11	Lesion-Assertion 670 688	no strong evidence
+A5	Lesion-AssertionValue T11 absent
+T12	Lesion-Anatomy 692 705	intrathoracic
+T13	Lesion-Description 707 717	malignancy
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T6 has-Medical-Assertion:T5
+E4	Medical-Problem:T7 has-Medical-Anatomy:T8
+E6	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T12

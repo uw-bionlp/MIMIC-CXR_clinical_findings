@@ -1,0 +1,37 @@
+T1	Medical-Assertion 30 32	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 33 45	pneumothorax
+T3	Medical-Problem 47 68	R>L basialr opaciites
+E2	Medical-Problem:T3
+T4	Medical-Assertion 70 76	likely
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 77 88	atelectasis
+T6	Lesion-Description 109 116	nodules
+E4	Lesion-Description:T6
+T7	Medical-Problem 419 431	pneumothorax
+E5	Medical-Problem:T7
+T8	Medical-Problem 456 468	cardiomegaly
+E6	Medical-Problem:T8
+T9	Medical-Assertion 498 500	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 502 516	pneumothoraces
+T11	Lesion-Anatomy 529 538	pulmonary
+T12	Lesion-Description 539 546	nodules
+T13	Medical-Problem 576 580;582 593	some atelectasis
+T14	Medical-Anatomy 601 636	bases, right side equal to the left
+T15	Medical-Problem 648 655;657 674	minimal prominence of the
+E12	Medical-Problem:T15
+T16	Medical-Anatomy 675 696	interstitial markings
+T17	Medical-Assertion 697 704	without
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 705 726	overt pulmonary edema
+T19	Medical-Assertion 729 731	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 733 747	pneumothoraces
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Lesion-Description:T12 has-Lesion-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

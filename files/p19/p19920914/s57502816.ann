@@ -1,0 +1,39 @@
+T1	Medical-Problem 252 291	Equivocal tiny left apical pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 312 347	persistent left upper lobe collapse
+E2	Medical-Problem:T2
+T3	Medical-Problem 350 371	Further opacification
+T4	Medical-Anatomy 379 388	left lung
+T5	Medical-Assertion 390 401	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 405 428	increase in atelectasis
+T7	Medical-Problem 439 461	associated volume loss
+T8	Medical-Problem 471 487	pleural effusion
+T9	Medical-Problem 492 520	more rounded area of lucency
+T10	Medical-Anatomy 532 547	left upper lung
+T11	Medical-Problem 708 747	Equivocal tiny left apical pneumothorax
+E10	Medical-Problem:T11
+T12	Medical-Problem 838 845	Lucency
+T13	Medical-Anatomy 857 870	left mid lung
+T14	Lesion-Assertion 871 884	may represent
+A2	Lesion-AssertionValue T14 possible
+T15	Lesion-Characteristic 887 895	necrotic
+T16	Lesion-Characteristic 897 907	air-filled
+T17	Lesion-Description 909 913	mass
+T18	Medical-Problem 982 1005	Increased opacification
+T19	Medical-Anatomy 1013 1022	left lung
+T20	Medical-Assertion 1023 1034	may reflect
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1035 1051	further collapse
+T22	Medical-Anatomy 1060 1069	left lung
+T23	Medical-Problem 1079 1095	pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E15	Lesion-Description:T17 has-Lesion-Assertion:T14 has-Lesion-Characteristic:T15 has-Lesion-Characteristic:T16
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T20 has-Medical-Anatomy:T22
+E20	Medical-Problem:T23 has-Medical-Assertion:T20 has-Medical-Anatomy:T22

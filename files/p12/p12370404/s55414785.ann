@@ -1,0 +1,27 @@
+T1	Medical-Problem 374 390	severe emphysema
+E1	Medical-Problem:T1
+T2	Medical-Problem 395 409;411 443	large areas of irregularly shaped consolidation
+T3	Medical-Problem 448 478	pleural parenchymal thickening
+T4	Medical-Anatomy 482 486;488 499	both lung apices
+T5	Lesion-Anatomy 506 516	right lung
+T6	Lesion-Description 517 523	lesion
+T7	Lesion-Characteristic 524 549	appears to have cavitated
+T8	Lesion-Assertion 551 565	concerning for
+A1	Lesion-AssertionValue T8 possible
+T9	Medical-Problem 610 622	tuberculosis
+E8	Medical-Problem:T9
+T10	Lesion-Anatomy 629 640	left apical
+T11	Lesion-Description 642 648	lesion
+T12	Medical-Problem 783 799	severe emphysema
+E11	Medical-Problem:T12
+T13	Medical-Problem 804 830;832 842	very severe bronchial wall thickening
+E12	Medical-Problem:T13
+T14	Medical-Anatomy 874 885	lower lungs
+T15	Medical-Problem 891 902;904 919	decrease in pulmonary edema
+T16	Medical-Problem 949 957	clearing
+E15	Medical-Problem:T16
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T7 has-Lesion-Assertion:T8
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E14	Medical-Problem:T15 has-Medical-Anatomy:T14

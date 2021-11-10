@@ -1,0 +1,47 @@
+T1	Medical-Assertion 485 487	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 488 500	pneumothorax
+T3	Medical-Problem 526 536	prominence
+T4	Medical-Anatomy 544 572	cardiomediastinal silhouette
+T5	Medical-Problem 595 620	upper zone redistribution
+E4	Medical-Problem:T5
+T6	Medical-Problem 625 650	diffuse vascular blurring
+E5	Medical-Problem:T6
+T7	Medical-Problem 668 671	CHF
+E6	Medical-Problem:T7
+T8	Medical-Problem 684 714	increased retrocardiac density
+E7	Medical-Problem:T8
+T9	Medical-Problem 732 747;749 757	left lower lobe collapse
+E8	Medical-Problem:T9
+T10	Medical-Problem 765 778	consolidation
+E9	Medical-Problem:T10
+T11	Medical-Problem 787 814	small left pleural effusion
+E10	Medical-Problem:T11
+T12	Medical-Problem 827 838	atelectasis
+T13	Medical-Anatomy 846 861	right lung base
+T14	Medical-Problem 868 892	equivocal small effusion
+E13	Medical-Problem:T14
+T15	Medical-Problem 1129 1144	Left lower lobe
+E14	Medical-Problem:T15
+T16	Medical-Problem 1145 1153	collapse
+E15	Medical-Problem:T16
+T17	Medical-Problem 1161 1174	consolidation
+E16	Medical-Problem:T17
+T18	Medical-Assertion 1181 1192	possibility
+A2	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1198 1202;1204 1229	left base pneumonic infiltrate
+T20	Medical-Assertion 1230 1248	cannot be excluded
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1268 1281	opacification
+E18	Medical-Problem:T21
+T22	Medical-Problem 1332 1354	Minimal patchy opacity
+T23	Medical-Anatomy 1362 1372	right base
+T24	Medical-Assertion 1373 1390	likely represents
+A4	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1391 1402	atelectasis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E17	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Assertion:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T25 has-Medical-Anatomy:T23 has-Medical-Assertion:T24

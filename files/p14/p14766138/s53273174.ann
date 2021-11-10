@@ -1,0 +1,40 @@
+T1	Medical-Problem 319 350	aorta appearing mildly tortuous
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 353 374	Pulmonary vasculature
+T3	Medical-Assertion 378 381	not
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 382 390	engorged
+T5	Medical-Problem 394 409	Streaky opacity
+T6	Medical-Anatomy 417 434	right middle lobe
+T7	Medical-Problem 497 521	subsegmental atelectasis
+T8	Medical-Assertion 545 547	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 549 568	focal consolidation
+T10	Medical-Problem 570 586	pleural effusion
+T11	Medical-Problem 590 602	pneumothorax
+T12	Lesion-Characteristic 613 622	Scattered
+T13	Lesion-Characteristic 624 633	calcified
+T14	Lesion-Description 634 644	granulomas
+T15	Lesion-Anatomy 668 678	lung bases
+T16	Medical-Assertion 690 692	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 693 700;702 710	pleural effusion
+T18	Medical-Problem 714 726	pneumothorax
+T19	Medical-Problem 807 821	Loss of height
+T20	Medical-Anatomy 828 856;858 862	upper/mid thoracic vertebral body
+T21	Medical-Problem 901 943	Increase streaky right middle lobe opacity
+E18	Medical-Problem:T21
+T22	Medical-Assertion 944 964	likely reflective of
+A4	Medical-AssertionValue T22 possible
+T23	Medical-Problem 965 977;979 990	subsegmental atelectasis
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E19	Medical-Problem:T23 has-Medical-Assertion:T22

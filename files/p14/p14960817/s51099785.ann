@@ -1,0 +1,37 @@
+T1	Medical-Anatomy 271 276	lungs
+T2	Medical-Assertion 301 303	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 304 319	focal opacities
+T4	Medical-Problem 335 344	pneumonia
+T5	Medical-Problem 356 367	engorgement
+T6	Medical-Anatomy 375 393	superior vena cava
+T7	Medical-Anatomy 398 409	azygos vein
+T8	Medical-Problem 423 447	right atrial enlargement
+E7	Medical-Problem:T8
+T9	Medical-Assertion 448 461	suggestive of
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 462 476	fluid overload
+T11	Medical-Problem 478 494;496 508	Mild to moderate cardiomegaly
+E9	Medical-Problem:T11
+T12	Medical-Assertion 530 532	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 533 549	pleural effusion
+T14	Medical-Problem 553 565	pneumothorax
+T15	Medical-Problem 586 610	Right atrial enlargement
+E12	Medical-Problem:T15
+T16	Medical-Problem 615 626	engorgement
+T17	Medical-Anatomy 634 652	superior vena cava
+T18	Medical-Anatomy 657 663;665 669	azygos vein
+T19	Medical-Problem 689 703	fluid overload
+T20	Medical-Assertion 705 716	No evidence
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 720 729	pneumonia
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

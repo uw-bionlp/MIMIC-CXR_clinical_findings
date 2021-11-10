@@ -1,0 +1,22 @@
+T1	Medical-Problem 261 266	aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 288 307	diffusely calcified
+E2	Medical-Problem:T2
+T3	Medical-Problem 356 375	minimal atelectasis
+T4	Medical-Anatomy 383 387;389 394	lung bases
+T5	Medical-Anatomy 400 405	lungs
+T6	Medical-Assertion 416 423	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 424 443	focal consolidation
+T8	Medical-Assertion 446 448	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 449 465	pleural effusion
+T10	Medical-Problem 470 482	pneumothorax
+T11	Medical-Assertion 605 629	No radiographic evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 634 643	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

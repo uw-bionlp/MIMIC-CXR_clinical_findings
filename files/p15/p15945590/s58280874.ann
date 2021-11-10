@@ -1,0 +1,29 @@
+T1	Medical-Problem 297 310	new white-out
+T2	Medical-Anatomy 318 333	left hemithorax
+T3	Medical-Problem 340 362;364 372	only minimal remaining aeration
+T4	Medical-Anatomy 380 395	left upper lobe
+T5	Medical-Assertion 404 411	absence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 415 432	mediastinal shift
+T7	Medical-Assertion 443 449	likely
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 467 494	increasing pleural effusion
+T9	Medical-Problem 499 507	collapse
+T10	Medical-Problem 513 521;523 554	moderate layering right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 763 776	New white-out
+T12	Medical-Anatomy 784 799	left hemithorax
+T13	Medical-Assertion 801 807	likely
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 825 832;834 842	pleural effusion
+T15	Medical-Problem 847 855	collapse
+T16	Medical-Problem 861 899	Stable moderate right pleural effusion
+E13	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

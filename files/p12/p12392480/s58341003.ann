@@ -1,0 +1,18 @@
+T1	Medical-Problem 187 210	Large left pneumothorax
+T2	Medical-Anatomy 222 238;240 262	mediastinum only minimally to the right
+T3	Medical-Assertion 267 275	does not
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 276 293	compress the left
+T5	Medical-Assertion 320 334	unlikely to be
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 335 342	causing
+E4	Medical-Problem:T6
+T7	Medical-Problem 343 362	hemodynamic tension
+T8	Medical-Anatomy 365 375	Right lung
+T9	Medical-Problem 379 390;392 400	mildly over perfused
+T10	Medical-Problem 530 542	pneumothorax
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T8

@@ -1,0 +1,35 @@
+T1	Medical-Problem 386 396	large left
+E1	Medical-Problem:T1
+T2	Medical-Problem 398 433	perihilar mid-to-lower lung opacity
+E2	Medical-Problem:T2
+T3	Lesion-Count 473 484	innumerable
+T4	Lesion-Anatomy 485 494	pulmonary
+T5	Lesion-Description 495 502	nodules
+T6	Medical-Problem 513 535	superimposed infection
+T7	Medical-Assertion 536 545;547 555	cannot be excluded
+A1	Medical-AssertionValue T7 possible
+T8	Lesion-Description 558 575	Nodular opacities
+T9	Lesion-Anatomy 583 624;626 631	right lung to a lesser extent than on the right
+T10	Medical-Problem 658 666	blunting
+T11	Medical-Anatomy 674 697	left costophrenic angle
+T12	Medical-Assertion 698 704;706 719	likely corresponding
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 723 739	pleural effusion
+T14	Medical-Problem 786 829	Left greater than right pulmonary opacities
+E12	Medical-Problem:T14
+T15	Medical-Problem 926 957	superimposed infectious process
+T16	Medical-Assertion 958 976	cannot be excluded
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 979 994	Slight blunting
+T18	Medical-Anatomy 1003 1026	left costophrenic angle
+T19	Medical-Assertion 1030 1043	likely due to
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1044 1071	small left pleural effusion
+E5	Lesion-Description:T5 has-Lesion-Count:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Assertion:T7
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19

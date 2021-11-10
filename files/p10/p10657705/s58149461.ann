@@ -1,0 +1,22 @@
+T1	Medical-Assertion 265 267	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 268 287	focal consolidation
+T3	Medical-Problem 289 305	pleural effusion
+T4	Medical-Problem 310 322	pneumothorax
+T5	Lesion-Size 367 372	10 mm
+T6	Lesion-Description 373 388	nodular density
+T7	Lesion-Anatomy 409 451	between the anterior fourth and fifth ribs
+T8	Medical-Assertion 532 543	No evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 547 556	pneumonia
+T10	Medical-Problem 559 574	Nodular density
+E8	Medical-Problem:T10
+T11	Medical-Assertion 575 590	could represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 592 613	aspergillus infection
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

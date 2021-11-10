@@ -1,0 +1,28 @@
+T1	Medical-Problem 301 321	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 327 377	mild relative elevation of the right hemidiaphragm
+E2	Medical-Problem:T2
+T3	Lesion-Anatomy 474 485	mediastinal
+T4	Lesion-Anatomy 490 500	left hilar
+T5	Lesion-Description 501 516	lymphadenopathy
+T6	Medical-Assertion 528 530	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 532 557	definite pleural effusion
+T8	Medical-Problem 561 573	pneumothorax
+T9	Medical-Problem 587 609;611 649	persistent medial left basilar opacity with a rounded contour
+E8	Medical-Problem:T9
+T10	Lesion-Assertion 651 661	suggesting
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 664 677	pleural-based
+T12	Lesion-Description 678 682	mass
+T13	Lesion-Description 720 727	nodules
+E11	Lesion-Description:T13
+T14	Lesion-Description 824 839	lymphadenopathy
+E12	Lesion-Description:T14
+T15	Lesion-Anatomy 847 862	left lower lobe
+T16	Lesion-Description 863 870	opacity
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E10	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T15

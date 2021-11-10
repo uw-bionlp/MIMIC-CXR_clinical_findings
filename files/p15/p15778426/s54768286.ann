@@ -1,0 +1,37 @@
+T1	Medical-Problem 260 286	Large cluster of opacities
+T2	Medical-Anatomy 294 309	left upper lobe
+T3	Lesion-Anatomy 330 334;336 346	left upper lobe
+T4	Lesion-Description 347 353	lesion
+T5	Lesion-Description 407 413	lesion
+E5	Lesion-Description:T5
+T6	Medical-Problem 550 554	COPD
+E6	Medical-Problem:T6
+T7	Medical-Problem 561 592	severe calcific aortic stenosis
+E7	Medical-Problem:T7
+T8	Medical-Assertion 612 614	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 615 633;635 646	pulmonary vascular engorgement
+T10	Medical-Problem 648 653	edema
+T11	Medical-Problem 657 678	even pleural effusion
+T12	Medical-Problem 688 713;715 730	most prominently enlarged cardiac chamber
+E11	Medical-Problem:T12
+T13	Medical-Anatomy 752 766	Thoracic aorta
+T14	Medical-Problem 770 787	heavily calcified
+T15	Medical-Assertion 793 796	not
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 797 815	focally aneurysmal
+T17	Medical-Problem 818 846	Pulmonary artery enlargement
+E15	Medical-Problem:T17
+T18	Medical-Problem 884 915	pulmonary arterial hypertension
+E16	Medical-Problem:T18
+T19	Medical-Problem 917 932	chronic finding
+E17	Medical-Problem:T19
+T20	Medical-Problem 949 976	other cardiovascular issues
+E18	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T8
+E13	Medical-Problem:T14 has-Medical-Anatomy:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T15

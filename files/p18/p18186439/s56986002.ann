@@ -1,0 +1,17 @@
+T1	Medical-Problem 235 252	Decreasing volume
+T2	Medical-Anatomy 260 276	left hemi thorax
+T3	Medical-Problem 283 303	increasing opacities
+T4	Medical-Problem 307 328	soft tissue densities
+T5	Medical-Anatomy 336 359	level of the left hilus
+T6	Lesion-Anatomy 435 439;441 446	left hilus
+T7	Lesion-Anatomy 464 475	mediastinal
+T8	Lesion-Description 476 491	lymphadenopathy
+T9	Medical-Problem 543 564	Moderate cardiomegaly
+E9	Medical-Problem:T9
+T10	Medical-Problem 595 620	Highly suspicious process
+T11	Medical-Anatomy 628 652;654 685	level of the left hilus, with extends to the left pleura
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Anatomy:T5
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7
+E10	Medical-Problem:T10 has-Medical-Anatomy:T11

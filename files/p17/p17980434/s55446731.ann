@@ -1,0 +1,28 @@
+T1	Medical-Problem 168 207	Small to moderate left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 275 281	may be
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 282 314	minimal right pleural thickening
+T4	Medical-Problem 318 323;325 341	trace pleural effusion
+T5	Medical-Anatomy 349 373	right costophrenic angle
+T6	Medical-Assertion 376 378	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 379 393;395 408	definite focal consolidation
+T8	Medical-Assertion 428 439	no evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 443 455	pneumothorax
+T10	Medical-Problem 521 552;554 565	mild central pulmonary vascular engorgement
+E7	Medical-Problem:T10
+T11	Medical-Problem 585 606	Left pleural effusion
+E8	Medical-Problem:T11
+T12	Medical-Problem 660 686	Minimal pleural thickening
+T13	Medical-Assertion 687 693	versus
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 694 716	trace pleural effusion
+T15	Medical-Anatomy 724 729;731 749	right costophrenic angle
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E10	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15

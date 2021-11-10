@@ -1,0 +1,21 @@
+T1	Medical-Problem 384 411;413 426	heterogeneous area of large opacification
+T2	Medical-Anatomy 448 464	right lower lobe
+T3	Medical-Problem 474 486;488 506	small, round interior lucencies
+T4	Medical-Assertion 508 510	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 511 527	pleural effusion
+T6	Medical-Problem 531 543	pneumothorax
+T7	Medical-Problem 564 597	Large right lower lobe pneumonia,
+T8	Medical-Assertion 598 606	possibly
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 887 898	atelectasis
+E7	Medical-Problem:T9
+T10	Lesion-Characteristic 904 915	discernible
+T11	Lesion-Anatomy 916 921	hilar
+T12	Lesion-Description 922 926	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11

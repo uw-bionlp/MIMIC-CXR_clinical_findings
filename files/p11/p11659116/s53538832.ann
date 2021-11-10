@@ -1,0 +1,17 @@
+T1	Medical-Problem 86 107	Left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 200 236	Residual small left pleural effusion
+T3	Medical-Problem 241 258	upward retraction
+T4	Medical-Anatomy 266 270;272 285	left hemidiaphragm
+T5	Medical-Problem 315 331	Pleural effusion
+E5	Medical-Problem:T5
+T6	Medical-Assertion 433 435	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 436 448	pneumothorax
+T8	Lesion-Anatomy 465 485	left upper lobe lung
+T9	Lesion-Description 486 492	nodule
+T10	Lesion-Anatomy 513 524;526 566	left second anterior and fifth posterior interspaces
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T10

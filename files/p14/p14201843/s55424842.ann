@@ -1,0 +1,28 @@
+T1	Medical-Assertion 450 452;454 462	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 466 485	focal consolidation
+T3	Medical-Problem 487 503	pleural effusion
+T4	Medical-Problem 508 520	pneumothorax
+T5	Lesion-Assertion 533 535	no
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Size 536 541	large
+T7	Lesion-Description 542 546	mass
+T8	Medical-Problem 549 556	Opacity
+T9	Medical-Anatomy 564 573	left base
+T10	Medical-Problem 623 630	fat pad
+E8	Medical-Problem:T10
+T11	Medical-Anatomy 638 666	cardiomediastinal silhouette
+T12	Medical-Problem 670 679;681 700	unchanged and mildly enlarged
+T13	Medical-Problem 738 750	mild wedging
+T14	Medical-Anatomy 756 759;761 778	mid thoracic vertebra
+T15	Medical-Assertion 817 819	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 820 849	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Size-Present:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

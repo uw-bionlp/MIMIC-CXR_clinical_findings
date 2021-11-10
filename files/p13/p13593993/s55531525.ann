@@ -1,0 +1,19 @@
+T1	Medical-Problem 182 185	PTX
+E1	Medical-Problem:T1
+T2	Medical-Problem 312 325	pleural fluid
+E2	Medical-Problem:T2
+T3	Medical-Assertion 328 339	No evidence
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 343 359;361 383	appreciable post procedure pneumothorax
+T5	Medical-Anatomy 435 439;441 458	left base silhouetting
+T6	Medical-Problem 494 505	volume loss
+T7	Medical-Anatomy 513 518;520 524	lower lobe
+T8	Medical-Problem 529 554	residual pleural effusion
+T9	Medical-Anatomy 561 573	left basilar
+T10	Medical-Assertion 619 621	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 622 630;632 644	definite pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10

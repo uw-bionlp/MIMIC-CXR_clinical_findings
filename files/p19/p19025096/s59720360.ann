@@ -1,0 +1,27 @@
+T1	Medical-Problem 258 272	Visceral fluid
+E1	Medical-Problem:T1
+T2	Medical-Assertion 292 300	possible
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 301 320;322 333	interlobular septal  thickening
+T4	Medical-Problem 349 382	more prominent, confluent opacity
+T5	Medical-Anatomy 400 422	right lower lung field
+T6	Medical-Assertion 424 447	which may be related to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 448 453	edema
+T8	Medical-Problem 462 472;474 485	underlying  aspiration
+T9	Medical-Problem 489 504	other infection
+T10	Medical-Assertion 508 520	not excluded
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 855 869	New mild edema
+E8	Medical-Problem:T11
+T12	Medical-Problem 915 942	Small left pleural effusion
+E9	Medical-Problem:T12
+T13	Medical-Assertion 1012 1014	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1015 1027	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T10
+E7	Medical-Problem:T9 has-Medical-Assertion:T6 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

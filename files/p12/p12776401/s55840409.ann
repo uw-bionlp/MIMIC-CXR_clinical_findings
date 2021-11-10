@@ -1,0 +1,21 @@
+T1	Lesion-Anatomy 301 310	Bilateral
+T2	Lesion-Count 311 319	multiple
+T3	Lesion-Anatomy 320 329	pulmonary
+T4	Lesion-Description 330 347	nodular opacities
+T5	Lesion-Anatomy 383 388	lungs
+T6	Medical-Problem 435 449	lung infection
+E6	Medical-Problem:T6
+T7	Medical-Assertion 594 596	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 597 606;608 624	bilateral pleural effusion
+T9	Lesion-Anatomy 642 651	Bilateral
+T10	Lesion-Description 661 678	nodular opacities
+T11	Lesion-Assertion 708 719	may reflect
+A2	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 733 740	nodular
+T13	Medical-Problem 828 837	opacities
+E11	Medical-Problem:T13
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T1 has-Lesion-Count:T2 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E10	Lesion-Description:T12 has-Lesion-Assertion:T11

@@ -1,0 +1,18 @@
+T1	Medical-Problem 267 274;276 305	cardiac silhouette is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 308 341	Perihilar and bibasilar opacities
+E2	Medical-Problem:T2
+T3	Medical-Assertion 353 366	worrisome for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 367 401	moderate-to-severe pulmonary edema
+T5	Medical-Problem 403 424;426 433	underlying infectious process
+T6	Medical-Assertion 437 449	not excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 452 454	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 455 471	pleural effusion
+T9	Medical-Problem 475 487	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7

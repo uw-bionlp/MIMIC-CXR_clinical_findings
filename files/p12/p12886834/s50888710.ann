@@ -1,0 +1,40 @@
+T1	Medical-Problem 87 111;113 122	Bilateral opacities have  worsened
+T2	Medical-Anatomy 143 153	right base
+T3	Medical-Problem 156 190	Background of mild pulmonary edema
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 388 398	right base
+E4	Medical-Anatomy:T4
+T5	Medical-Problem 401 411	Background
+E5	Medical-Problem:T5
+T6	Medical-Problem 415 435	mild pulmonary edema
+E6	Medical-Problem:T6
+T7	Medical-Problem 735 750	pulmonary edema
+E7	Medical-Problem:T7
+T8	Lesion-Description 788 805	nodular opacities
+T9	Lesion-Characteristic 811 831	basilar predominance
+T10	Medical-Problem 874 884	congestion
+E10	Medical-Problem:T10
+T11	Medical-Problem 897 901;903 915	Mild cardiomegaly
+E11	Medical-Problem:T11
+T12	Medical-Assertion 918 920	No
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 921 940	significant pleural
+E12	Medical-Problem:T13
+T14	Medical-Problem 941 950	effusions
+T15	Medical-Assertion 953 955	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 956 968	pneumothorax
+T17	Medical-Problem 1012 1043	nodular consolidative opacities
+E15	Medical-Problem:T17
+T18	Medical-Problem 1132 1142;1144 1153	aspiration pneumonia
+T19	Medical-Assertion 1157 1179	considered most likely
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Assertion 1181 1187	likely
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1188 1222;1224 1232	coexisting with interstitial edema from CHF
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T9
+E13	Medical-Problem:T14 has-Medical-Assertion:T12
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T18 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T19 has-Medical-Assertion:T20

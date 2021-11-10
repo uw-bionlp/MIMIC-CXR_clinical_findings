@@ -1,0 +1,31 @@
+T1	Lesion-Description 276 283	nodular
+E1	Lesion-Description:T1
+T2	Lesion-Description 284 291	opacity
+T3	Lesion-Anatomy 299 313	left lung apex
+T4	Lesion-Size-Trend 318 343	grossly unchanged in size
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Assertion 366 383	likely represents
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 386 395	calcified
+T7	Lesion-Description 397 406	granuloma
+T8	Medical-Assertion 418 420	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 421 440	focal consolidation
+T10	Medical-Problem 442 450	effusion
+T11	Medical-Problem 455 467	pneumothorax
+T12	Medical-Problem 564 591	acute intrathoracic process
+E9	Medical-Problem:T12
+T13	Lesion-Size 604 608	4 mm
+T14	Lesion-Description 609 616	opacity
+T15	Lesion-Anatomy 617 631	left lung apex
+T16	Lesion-Assertion 632 651	likely representing
+A4	Lesion-AssertionValue T16 possible
+T17	Lesion-Characteristic 654 663	calcified
+T18	Lesion-Description 665 674	granuloma
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T4
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T3 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E11	Lesion-Description:T14 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T15
+E14	Lesion-Description:T18 has-Lesion-Anatomy:T15 has-Lesion-Assertion:T16 has-Lesion-Characteristic:T17

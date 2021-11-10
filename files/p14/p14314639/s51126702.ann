@@ -1,0 +1,29 @@
+T1	Medical-Problem 311 328	scoliosis is mild
+E1	Medical-Problem:T1
+T2	Medical-Assertion 389 391	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 392 405	consolidation
+T4	Lesion-Size 410 423	subcentimeter
+T5	Lesion-Description 424 431	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 432 439	opacity
+T7	Lesion-Anatomy 458 488;490 509	right lung at the level of the anterior fourth rib
+T8	Lesion-Description 539 545	nodule
+T9	Lesion-Anatomy 565 611	anterior aspect of the anterior left sixth rib
+T10	Medical-Problem 769 796	aorta is extremely tortuous
+E9	Medical-Problem:T10
+T11	Medical-Problem 805 814	ascending
+E10	Medical-Problem:T11
+T12	Medical-Assertion 823 829	may be
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 830 837	dilated
+T14	Medical-Assertion 872 883	no evidence
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 887 905	central adenopathy
+T16	Medical-Problem 909 912;914 933	any pleural abnormality
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T7
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14

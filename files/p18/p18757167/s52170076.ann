@@ -1,0 +1,70 @@
+T1	Medical-Problem 165 185	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 192 221	heart size is mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 224 239;241 255	Atherosclerotic calcifications
+T4	Medical-Anatomy 273 284	aortic knob
+T5	Lesion-Size 289 301	3.5 x 5.7 cm
+T6	Lesion-Anatomy 302 307;309 321	right paratracheal
+T7	Lesion-Characteristic 322 340	well-circumscribed
+T8	Lesion-Description 341 345	mass
+T9	Lesion-Size 374 386	5.5 x 3.1 cm
+T10	Lesion-Anatomy 388 408	left paramediastinal
+T11	Lesion-Description 409 415	lesion
+T12	Medical-Anatomy 421 428	trachea
+T13	Medical-Assertion 429 436	appears
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Problem 437 454	slightly narrowed
+T15	Lesion-Description 477 483	masses
+E14	Lesion-Description:T15
+T16	Medical-Assertion 522 524	no
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 525 543;545 555	pulmonary vascular congestion
+T18	Medical-Problem 566 601	Patchy bibasilar airspace opacities
+E16	Medical-Problem:T18
+T19	Medical-Assertion 602 613	may reflect
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 615 626	atelectasis
+T21	Medical-Problem 630 639	infection
+T22	Medical-Assertion 642 644	No
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 645 661	pleural effusion
+T24	Medical-Problem 665 677	pneumothorax
+T25	Medical-Assertion 691 693	No
+A5	Medical-AssertionValue T25 absent
+T26	Medical-Problem 695 722	acute osseous abnormalities
+T27	Medical-Problem 738 756	S-shaped scoliosis
+T28	Medical-Anatomy 765 784	thoracolumbar spine
+T29	Lesion-Anatomy 815 840	Bilateral paramediastinal
+T30	Lesion-Description 841 847	masses
+T31	Medical-Assertion 849 866	likely reflecting
+A6	Medical-AssertionValue T31 possible
+T32	Medical-Problem 870 886;888 894	enlarged thyroid goiter
+T33	Medical-Problem 901 924	mild tracheal narrowing
+E27	Medical-Problem:T33
+T34	Medical-Problem 998 1014	Patchy opacities
+T35	Medical-Anatomy 1022 1032	lung bases
+T36	Medical-Assertion 1033 1039;1041 1048	likely reflect
+A7	Medical-AssertionValue T36 possible
+T37	Medical-Problem 1049 1060	atelectasis
+T38	Medical-Problem 1065 1074	infection
+T39	Medical-Problem 1078 1088	aspiration
+T40	Medical-Assertion 1093 1105	not excluded
+A8	Medical-AssertionValue T40 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Lesion-Description:T8 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T7
+E11	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T10
+E13	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T19
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T24 has-Medical-Assertion:T22
+E21	Medical-Problem:T26 has-Medical-Assertion:T25
+E22	Medical-Problem:T27 has-Medical-Anatomy:T28
+E25	Lesion-Description:T30 has-Lesion-Anatomy:T29
+E26	Medical-Problem:T32 has-Medical-Assertion:T31
+E28	Medical-Problem:T34 has-Medical-Anatomy:T35
+E30	Medical-Problem:T37 has-Medical-Anatomy:T35 has-Medical-Assertion:T36
+E31	Medical-Problem:T38 has-Medical-Anatomy:T35 has-Medical-Assertion:T36 has-Medical-Assertion:T40
+E32	Medical-Problem:T39 has-Medical-Anatomy:T35 has-Medical-Assertion:T40

@@ -1,0 +1,23 @@
+T1	Medical-Problem 101 110	pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 157 166	Left lung
+E2	Medical-Anatomy:T2
+T3	Medical-Problem 196 221	Progressive opacification
+T4	Medical-Anatomy 229 234;236 246	right lower lung
+T5	Medical-Assertion 247 255	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 256 278	fissural pleural fluid
+T7	Medical-Assertion 284 310	raises serious concern for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 312 321	pneumonia
+T9	Medical-Problem 327 354	solitary aerated right lung
+T10	Medical-Problem 396 424	volume of left pleural fluid
+E8	Medical-Problem:T10
+T11	Medical-Assertion 433 441	could be
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 444 463;465 473	small right pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

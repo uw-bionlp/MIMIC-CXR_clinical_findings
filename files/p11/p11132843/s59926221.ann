@@ -1,0 +1,21 @@
+T1	Medical-Problem 132 145;147 160	Elevated left hemidiaphragm
+E1	Medical-Problem:T1
+T2	Medical-Problem 202 211	Elevation
+T3	Medical-Anatomy 219 237	left hemidiaphragm
+T4	Medical-Problem 248 259	atelectasis
+T5	Medical-Anatomy 268 287	adjacent lower lobe
+T6	Lesion-Anatomy 627 640	endobronchial
+T7	Lesion-Description 641 647	lesion
+T8	Medical-Problem 656 678	aspirated foreign body
+E8	Medical-Problem:T8
+T9	Medical-Problem 696 717	continued atelectasis
+E9	Medical-Problem:T9
+T10	Medical-Problem 720 744	Left pleural effusion is
+E10	Medical-Problem:T10
+T11	Medical-Assertion 889 891	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 892 904	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E11	Medical-Problem:T12 has-Medical-Assertion:T11

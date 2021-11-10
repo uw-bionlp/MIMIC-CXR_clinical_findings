@@ -1,0 +1,27 @@
+T1	Medical-Problem 341 350	Emphysema
+T2	Medical-Anatomy 382 398	right upper lobe
+T3	Medical-Problem 401 419	Persistent opacity
+T4	Medical-Anatomy 427 444;446 459	base of the right lobe medially
+T5	Medical-Problem 465 507	region of chronic, unexplained atelectasis
+T6	Medical-Problem 527 559	region of relative increased ___
+T7	Medical-Anatomy 567 580	right midlung
+T8	Medical-Problem 665 671;673 682	subtle pneumonia
+E8	Medical-Problem:T8
+T9	Medical-Assertion 725 727	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 728 744	pleural effusion
+T11	Medical-Problem 749 761	pneumothorax
+T12	Medical-Problem 791 800	pneumonia
+E11	Medical-Problem:T12
+T13	Medical-Problem 847 883	Chronic right lower lobe atelectasis
+E12	Medical-Problem:T13
+T14	Medical-Assertion 888 896	Probable
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 897 906	emphysema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

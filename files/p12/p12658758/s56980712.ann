@@ -1,0 +1,30 @@
+T1	Lesion-Anatomy 287 296	lung base
+T2	Lesion-Description 297 301	mass
+T3	Lesion-Characteristic 307 315	fiducial
+T4	Medical-Problem 398 425	small left pleural effusion
+E4	Medical-Problem:T4
+T5	Medical-Problem 433 461	trace right pleural effusion
+E5	Medical-Problem:T5
+T6	Medical-Assertion 473 475	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 476 488	pneumothorax
+T8	Medical-Problem 496 506;508 515	lower lobe opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 635 637	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 638 662	free air below the right
+T11	Medical-Problem 711 729	lower lobe opacity
+E9	Medical-Problem:T11
+T12	Medical-Assertion 733 744	most likely
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 745 756	atelectasis
+T14	Medical-Problem 797 806	pneumonia
+T15	Medical-Assertion 807 825	cannot be excluded
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Assertion 839 857;859 865	thought to be less likely
+A5	Medical-AssertionValue T16 possible
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Characteristic:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T15 has-Medical-Assertion:T16

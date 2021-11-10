@@ -1,0 +1,18 @@
+T1	Medical-Problem 143 146	pna
+E1	Medical-Problem:T1
+T2	Medical-Problem 229 237	SCARRING
+T3	Medical-Problem 241 252	ATELECTASIS
+T4	Medical-Anatomy 260 267	LINGULA
+T5	Medical-Anatomy 358 385;387 427	K MEDIAL BORDER, PROJECTING OVER THE ANTERIOR LEFT FOURTH INTERSPACE
+T6	Medical-Assertion 428 436	COULD BE
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 439 454	SMALL PNEUMONIA
+T8	Medical-Problem 459 479	PULMONARY INFARCTION
+T9	Medical-Assertion 535 537	NO
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 539 582	OTHER ACUTE, FOCAL, PULMONARY ABNORMALITIES
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

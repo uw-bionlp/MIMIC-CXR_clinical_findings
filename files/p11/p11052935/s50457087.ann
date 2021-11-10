@@ -1,0 +1,22 @@
+T1	Medical-Problem 115 140	new area of consolidation
+T2	Medical-Anatomy 162 177	left lower lobe
+T3	Medical-Assertion 187 201	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 202 222	developing pneumonia
+T5	Medical-Anatomy 322 334;336 355	periphery of the right lung base
+T6	Medical-Assertion 356 369	could reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 370 387	focal atelectasis
+T8	Medical-Problem 395 413;415 424	additional site of infection
+T9	Medical-Problem 427 466	Severe upper lobe predominant emphysema
+E7	Medical-Problem:T9
+T10	Medical-Assertion 532 534	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 535 551	pleural effusion
+T12	Medical-Problem 555 567	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10

@@ -1,0 +1,36 @@
+T1	Medical-Problem 516 523;525 541	Stable, abnormal contour
+T2	Medical-Anatomy 549 565	left mediastinum
+T3	Lesion-Assertion 566 581	could represent
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Anatomy 584 595	mediastinal
+T5	Lesion-Description 596 600	mass
+T6	Medical-Assertion 699 706	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 707 729	associated volume loss
+T8	Medical-Assertion 730 745	likely reflects
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 746 759	consolidation
+T10	Medical-Assertion 772 774	no
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 775 787	pneumothorax
+T12	Medical-Problem 791 807	pleural effusion
+T13	Medical-Problem 832 863	Increased right basilar opacity
+E9	Medical-Problem:T13
+T14	Medical-Assertion 864 877	may represent
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 878 888	aspiration
+T16	Medical-Problem 895 911	Abnormal contour
+T17	Medical-Anatomy 919 935	left mediastinum
+T18	Lesion-Assertion 936 951	could represent
+A6	Lesion-AssertionValue T18 possible
+T19	Lesion-Anatomy 954 965	mediastinal
+T20	Lesion-Description 967 971	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Anatomy:T17
+E14	Lesion-Description:T20 has-Lesion-Assertion:T18 has-Lesion-Anatomy:T19

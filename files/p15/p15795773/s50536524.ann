@@ -1,0 +1,30 @@
+T1	Lesion-Characteristic 242 249	Rounded
+T2	Lesion-Size 250 262	2.3 x 2.7 cm
+T3	Lesion-Anatomy 263 273	right lung
+T4	Lesion-Description 274 280	nodule
+T5	Lesion-Size-Trend 321 330	unchanged
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Problem 333 354	Bibasilar atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Problem 359 367	fibrosis
+E6	Medical-Problem:T7
+T8	Medical-Assertion 447 449	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 450 466	pleural effusion
+T10	Medical-Problem 469 484	pulmonary edema
+T11	Medical-Problem 486 505	focal consolidation
+T12	Medical-Problem 509 521	pneumothorax
+T13	Medical-Assertion 554 556	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 557 566	pneumonia
+T15	Lesion-Size-Trend 572 589	Stable appearance
+A4	Lesion-Size-TrendValue T15 no-change
+T16	Lesion-Anatomy 593 597	lung
+T17	Lesion-Description 598 604	nodule
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T1 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Lesion-Description:T17 has-Lesion-Size-Trend:T15 has-Lesion-Anatomy:T16

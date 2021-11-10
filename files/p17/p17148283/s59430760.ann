@@ -1,0 +1,36 @@
+T1	Medical-Problem 399 428	heart remains stably enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 438 450	cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Assertion 451 462	rather than
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 464 484	pericardial effusion
+T5	Medical-Anatomy 487 492	Lungs
+T6	Medical-Problem 497 519	slightly low in volume
+T7	Medical-Problem 525 539	patchy opacity
+T8	Medical-Anatomy 548 558	right base
+T9	Medical-Assertion 559 567	favoring
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 568 579	atelectasis
+T11	Medical-Assertion 580 586	rather
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 592 601	pneumonia
+T13	Medical-Problem 613 617;619 648	mild pulmonary venous hypertension
+E10	Medical-Problem:T13
+T14	Medical-Assertion 653 655	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 656 671	pulmonary edema
+T16	Medical-Assertion 674 676	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 677 694	pleural effusions
+T18	Medical-Assertion 698 700	No
+A6	Medical-AssertionValue T18 absent
+T19	Medical-Problem 701 713	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T19 has-Medical-Assertion:T18

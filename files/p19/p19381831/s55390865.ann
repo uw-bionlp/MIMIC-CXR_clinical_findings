@@ -1,0 +1,35 @@
+T1	Medical-Problem 396 405;407 416	bilateral opacities
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 423 428	lungs
+T3	Medical-Problem 433 453	mildly hyperinflated
+T4	Medical-Problem 466 481;483 492	residual linear opacities
+T5	Medical-Anatomy 500 514	right mid lung
+T6	Medical-Assertion 516 529	may represent
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 530 546	impacted bronchi
+T8	Medical-Problem 551 562	atelectasis
+T9	Medical-Assertion 574 576	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 577 605	significant pleural effusion
+T11	Medical-Problem 692 697;699 714	small sclerotic focus
+T12	Medical-Anatomy 722 734	left humerus
+T13	Lesion-Characteristic 739 746	diffuse
+T14	Lesion-Characteristic 747 756	sclerotic
+T15	Lesion-Anatomy 757 760	rib
+T16	Lesion-Description 761 768	lesions
+T17	Medical-Problem 851 870	bilateral opacities
+T18	Medical-Problem 876 901	residual linear opacities
+T19	Medical-Anatomy 910 927	right middle lobe
+T20	Lesion-Characteristic 933 942	Sclerotic
+T21	Lesion-Characteristic 943 947	bone
+T22	Lesion-Description 948 955	lesions
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E14	Lesion-Description:T16 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T19
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E20	Lesion-Description:T22 has-Lesion-Characteristic:T20 has-Lesion-Characteristic:T21

@@ -1,0 +1,31 @@
+T1	Lesion-Size-Trend 359 362	new
+A1	Lesion-Size-TrendValue T1 new
+T2	Lesion-Characteristic 363 371	discrete
+T3	Lesion-Characteristic 372 390	sharply marginated
+T4	Lesion-Characteristic 391 397	almost
+T5	Lesion-Description 398 402	mass
+T6	Lesion-Size 408 416	4 x 8 cm
+T7	Lesion-Description 417 423	lesion
+T8	Lesion-Anatomy 431 435;437 444	left midlung
+T9	Medical-Assertion 448 458	presumably
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 459 468	infection
+T11	Medical-Problem 475 501	unusually large infarction
+T12	Medical-Problem 520 542	small pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Assertion 556 562	may be
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 563 587	infrahilar consolidation
+T15	Medical-Problem 591 599	Heart is
+E12	Medical-Problem:T15
+T16	Medical-Problem 600 615	mildly enlarged
+E13	Medical-Problem:T16
+T17	Medical-Assertion 640 642	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 643 658	pulmonary edema
+E4	Lesion-Description:T5 has-Lesion-Size-Trend:T1 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4
+E6	Lesion-Description:T7 has-Lesion-Size-Trend:T1 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T3 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

@@ -1,0 +1,19 @@
+T1	Medical-Assertion 299 301	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 302 314	pneumothorax
+T3	Medical-Problem 318 334	pleural effusion
+T4	Medical-Anatomy 381 400	left bronchial tree
+E3	Medical-Anatomy:T4
+T5	Medical-Anatomy 426 442;444 463	left main to the lower lobe bronchus
+E4	Medical-Anatomy:T5
+T6	Lesion-Anatomy 466 476	Left hilar
+T7	Lesion-Description 477 481	mass
+T8	Medical-Assertion 502 504	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 505 516;518 534	appreciable pleural effusion
+T10	Medical-Problem 537 574	Mediastinal shift to the left is mild
+E8	Medical-Problem:T10
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

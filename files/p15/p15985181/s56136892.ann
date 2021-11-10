@@ -1,0 +1,27 @@
+T1	Medical-Problem 409 419	Prominence
+T2	Medical-Anatomy 427 455	bilateral pulmonary arteries
+T3	Medical-Problem 457 466;468 481	Increased opacification
+T4	Medical-Anatomy 489 504	left lower lung
+T5	Medical-Assertion 508 522	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 523 533	infiltrate
+T7	Medical-Problem 561 593	sharply marginated opacification
+T8	Medical-Anatomy 601 617	right upper lung
+T9	Medical-Problem 735 750;752 765	Left lower lung opacification
+E8	Medical-Problem:T9
+T10	Medical-Assertion 766 780	concerning for
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 781 801	infection/aspiration
+T12	Medical-Problem 804 820;822 835	Right upper lung opacification
+E10	Medical-Problem:T12
+T13	Medical-Problem 866 894;896 904	Enlarged bilateral pulmonary arteries
+E11	Medical-Problem:T13
+T14	Medical-Assertion 905 913	suggests
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 914 945	pulmonary arterial hypertension
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

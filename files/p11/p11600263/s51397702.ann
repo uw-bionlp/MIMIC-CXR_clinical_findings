@@ -1,0 +1,50 @@
+T1	Lesion-Size 279 283	4-cm
+T2	Lesion-Characteristic 284 293	irregular
+T3	Lesion-Characteristic 294 301	central
+T4	Lesion-Description 313 317	mass
+T5	Medical-Problem 399 424	post-obstructive collapse
+T6	Medical-Anatomy 432 439	lingula
+T7	Medical-Problem 444 460	partial collapse
+T8	Medical-Anatomy 468 472;474 484	left upper lobe
+T9	Medical-Anatomy 498 536	aerated portion of the left upper lung
+T10	Medical-Problem 550 592	combined alveolar and interstitial pattern
+T11	Medical-Assertion 593 612	suggesting possible
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 613 625;627 632	re-expansion edema
+T13	Medical-Problem 638 664	post-obstructive pneumonia
+T14	Lesion-Description 692 704	lymphangitic
+E13	Lesion-Description:T14
+T15	Medical-Assertion 716 736	difficult to exclude
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 749 783;785 793	small quantity of residual pleural effusion
+E14	Medical-Problem:T16
+T17	Medical-Problem 822 861;863 874	cardiomediastinal silhouette is shifted to the left
+E15	Medical-Problem:T17
+T18	Lesion-Size 896 901	Large
+T19	Lesion-Anatomy 902 920	central left hilar
+T20	Lesion-Description 921 925	mass
+T21	Lesion-Assertion 926 940	concerning for
+A3	Lesion-AssertionValue T21 possible
+T22	Lesion-Characteristic 941 948	primary
+T23	Lesion-Description 954 964	malignancy
+T24	Medical-Problem 971 998	postobstructive atelectasis
+E21	Medical-Problem:T24
+T25	Medical-Problem 1005 1023	Re-expansion edema
+T26	Medical-Problem 1028 1054	post-obstructive pneumonia
+T27	Medical-Anatomy 1062 1077;1079 1085	left upper lung region
+T28	Medical-Problem 1092 1126	Small residual left-sided effusion
+E25	Medical-Problem:T28
+T29	Medical-Assertion 1133 1135	No
+A4	Medical-AssertionValue T29 absent
+T30	Medical-Problem 1136 1148	pneumothorax
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11
+E18	Lesion-Description:T20 has-Lesion-Size-Present:T18 has-Lesion-Anatomy:T19
+E20	Lesion-Description:T23 has-Lesion-Assertion:T21 has-Lesion-Characteristic:T22
+E22	Medical-Problem:T25 has-Medical-Anatomy:T27
+E23	Medical-Problem:T26 has-Medical-Anatomy:T27
+E26	Medical-Problem:T30 has-Medical-Assertion:T29

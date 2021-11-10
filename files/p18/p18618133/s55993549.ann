@@ -1,0 +1,25 @@
+T1	Medical-Problem 318 342	Moderate pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 380 395;397 408	Right perihilar abnormality
+E2	Medical-Problem:T2
+T3	Medical-Assertion 409 417	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 418 425	abscess
+T5	Lesion-Description 429 433	mass
+E4	Lesion-Description:T5
+T6	Medical-Problem 436 457	Greater opacification
+T7	Medical-Anatomy 465 474;476 480	left lung base
+T8	Medical-Assertion 503 511	suggests
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 530 539;541 552	worsening atelectasis
+T10	Medical-Problem 555 600	Small to moderate bilateral pleural effusions
+E8	Medical-Problem:T10
+T11	Medical-Problem 618 637	Severe cardiomegaly
+E9	Medical-Problem:T11
+T12	Medical-Assertion 820 822	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 823 835	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

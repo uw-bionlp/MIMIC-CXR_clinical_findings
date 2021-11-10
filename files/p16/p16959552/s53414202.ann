@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 200 218	left hemidiaphragm
+T2	Medical-Problem 222 236;238 246	now completely obscured
+T3	Medical-Problem 253 269	air bronchograms
+T4	Medical-Anatomy 282 301	retrocardiac region
+T5	Medical-Problem 320 354	worsening left lower lobe collapse
+E5	Medical-Problem:T5
+T6	Medical-Problem 362 375	consolidation
+E6	Medical-Problem:T6
+T7	Medical-Problem 378 387;389 406	Pulmonary vascular plethora
+E7	Medical-Problem:T7
+T8	Medical-Assertion 424 432	Possible
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 433 456	mild interstitial edema
+T10	Medical-Problem 468 476	blunting
+T11	Medical-Anatomy 484 508	right costophrenic angle
+T12	Medical-Problem 538 544;546 553	Patchy opacity
+T13	Medical-Anatomy 561 571	right base
+T14	Medical-Assertion 615 623	question
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 625 636	atelectasis
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

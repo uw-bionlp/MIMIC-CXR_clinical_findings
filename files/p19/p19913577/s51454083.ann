@@ -1,0 +1,15 @@
+T1	Medical-Anatomy 408 426	cardiac silhouette
+T2	Medical-Problem 430 448;450 458	mild to moderately enlarged
+T3	Lesion-Anatomy 509 524	Left lower lobe
+T4	Lesion-Characteristic 526 535	calcified
+T5	Lesion-Description 536 545	granuloma
+T6	Medical-Problem 556 579	Small pleural effusions
+E6	Medical-Problem:T6
+T7	Medical-Assertion 613 615	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 616 631	pulmonary edema
+T9	Medical-Problem 660 693	Small bilateral pleural effusions
+E8	Medical-Problem:T9
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7

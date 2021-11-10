@@ -1,0 +1,22 @@
+T1	Medical-Problem 255 277	areas of consolidation
+T2	Medical-Anatomy 281 297	both lower lobes
+T3	Medical-Assertion 298 312	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 313 322	pneumonia
+T5	Medical-Anatomy 325 350	particularly on the right
+T6	Medical-Assertion 352 360	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 361 384	atelectasis on the left
+T8	Medical-Problem 386 396	Small left
+E6	Medical-Problem:T8
+T9	Medical-Problem 398 415	pleural effusions
+E7	Medical-Problem:T9
+T10	Medical-Assertion 446 448	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 449 461	pneumothorax
+T12	Medical-Problem 463 467	Left
+E9	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

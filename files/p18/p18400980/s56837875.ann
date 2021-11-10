@@ -1,0 +1,36 @@
+T1	Medical-Problem 33 54	right basilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 56 62	likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 63 71	effusion
+T4	Medical-Problem 76 87	atelectasis
+T5	Medical-Assertion 147 149	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 150 162	pneumothorax
+T7	Medical-Problem 164 188	left basilar atelectasis
+T8	Medical-Problem 653 662	DVP shunt
+E6	Medical-Problem:T8
+T9	Medical-Problem 696 741	stable right mid and lower lung opacification
+E7	Medical-Problem:T9
+T10	Medical-Problem 767 780	consolidation
+E8	Medical-Problem:T10
+T11	Medical-Problem 785 801	pleural effusion
+E9	Medical-Problem:T11
+T12	Lesion-Size-Trend 889 895	Stable
+A3	Lesion-Size-TrendValue T12 no-change
+T13	Lesion-Anatomy 896 906;908 912	left upper lobe
+T14	Lesion-Size 913 919	1.5 cm
+T15	Lesion-Description 920 927	opacity
+T16	Medical-Assertion 991 993	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 994 1006	pneumothorax
+T18	Medical-Problem 1051 1070	Mild aortosclerosis
+E14	Medical-Problem:T18
+T19	Medical-Problem 1072 1094	Air stomach distension
+E15	Medical-Problem:T19
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E12	Lesion-Description:T15 has-Lesion-Size-Trend:T12 has-Lesion-Anatomy:T13 has-Lesion-Size-Present:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 199 219	right cardiac border
+T2	Medical-Problem 223 231;233 241	slightly obscured
+T3	Medical-Assertion 248 256	suggests
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 257 278	minimal opacification
+T5	Medical-Anatomy 286 303	right middle lobe
+T6	Medical-Problem 329 346	minor atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Anatomy 349 376	Central airways bilaterally
+T8	Medical-Assertion 382 395	suggestive of
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 396 415	airway inflammation
+T10	Medical-Assertion 501 503	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 504 520	pleural effusion
+T12	Medical-Problem 524 536	pneumothorax
+T13	Medical-Assertion 565 578	suggestive of
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 579 598	airway inflammation
+T15	Medical-Problem 620 656	slight right middle lobe atelectasis
+E11	Medical-Problem:T15
+T16	Medical-Assertion 659 661	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 662 680	definite pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

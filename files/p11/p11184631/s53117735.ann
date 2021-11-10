@@ -1,0 +1,25 @@
+T1	Medical-Problem 392 416	subsegmental atelectasis
+T2	Medical-Anatomy 424 438	right mid lung
+T3	Medical-Problem 445 456	volume loss
+T4	Medical-Anatomy 464 482	right heart border
+T5	Medical-Problem 495 505	infiltrate
+T6	Medical-Anatomy 513 518;520 530	right lower lobe
+T7	Medical-Assertion 531 549	cannot be excluded
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 565 595	increased retrocardiac opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 603 618	could be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 619 630	volume loss
+T11	Medical-Problem 634 644	infiltrate
+T12	Medical-Problem 655 669;671 694	mild pulmonary vascular redistribution
+E10	Medical-Problem:T12
+T13	Medical-Problem 700 733	heart size is moderately enlarged
+E11	Medical-Problem:T13
+T14	Medical-Problem 741 746;748 767	small bilateral effusions
+E12	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

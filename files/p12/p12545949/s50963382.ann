@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 386 390	left
+T2	Medical-Assertion 407 418	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 422 434	pneumothorax
+T4	Medical-Problem 495 504;506 519	Continued opacification
+T5	Medical-Anatomy 527 537	right base
+T6	Medical-Problem 557 580	substantial volume loss
+T7	Medical-Anatomy 589 605	right lower lobe
+T8	Medical-Assertion 610 618	probable
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 619 632	pleural fluid
+T10	Medical-Problem 681 703	superimposed pneumonia
+T11	Medical-Assertion 704 730;732 742	would have to be seriously considered
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 770 780	suggestion
+E9	Medical-Problem:T12
+T13	Medical-Problem 787 808;810 815	area of consolidation above
+E10	Medical-Problem:T13
+T14	Medical-Problem 848 872	Mild atelectatic changes
+E11	Medical-Problem:T14
+T15	Medical-Anatomy 890 900	left base.
+E12	Medical-Anatomy:T15
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T11

@@ -1,0 +1,17 @@
+T1	Medical-Problem 215 242	left-sided pleural effusion
+T2	Medical-Anatomy 264 273	left base
+T3	Medical-Problem 291 312	small amount of fluid
+T4	Medical-Anatomy 320 331;333 340	right minor fissure
+T5	Medical-Problem 351 369	minimal prominence
+T6	Medical-Anatomy 377 408	pulmonary interstitial markings
+T7	Medical-Assertion 410 417	without
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 418 439	overt pulmonary edema
+T9	Medical-Assertion 480 482	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 484 498	pneumothoraces
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

@@ -1,0 +1,56 @@
+T1	Medical-Problem 67 94	Worsened interstitial edema
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 121 136	Left lower lobe
+T3	Medical-Problem 137 144	opacity
+T4	Medical-Assertion 145 158	may represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 162 181	area of atelectasis
+T6	Medical-Problem 185 192;194 203	pleural  effusion
+T7	Medical-Problem 205 214	Pneumonia
+T8	Medical-Assertion 215 233	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 606 623;625 642	mild interstitial edema bilaterally
+E7	Medical-Problem:T9
+T10	Medical-Problem 736 765	silhouette is mildly enlarged
+E8	Medical-Problem:T10
+T11	Medical-Problem 789 805	patchy opacities
+T12	Medical-Anatomy 813 823	lung bases
+T13	Medical-Assertion 829 837	probable
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 838 853;855 872	small bilateral pleural effusions
+T15	Lesion-Anatomy 884 890	apical
+T16	Lesion-Characteristic 891 902	ill-defined
+T17	Lesion-Description 903 910	nodular
+E14	Lesion-Description:T17
+T18	Lesion-Description 911 918	opacity
+T19	Lesion-Size-Trend 922 929	similar
+A4	Lesion-Size-TrendValue T19 no-change
+T20	Medical-Problem 984 992	New mild
+E16	Medical-Problem:T20
+T21	Medical-Problem 993 1021	interstitial pulmonary edema
+E17	Medical-Problem:T21
+T22	Medical-Problem 1043 1048;1050 1077	small bilateral pleural effusions
+E18	Medical-Problem:T22
+T23	Medical-Problem 1083 1102	Bibasilar opacities
+E19	Medical-Problem:T23
+T24	Medical-Assertion 1103 1116	may represent
+A5	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1117 1128	atelectasis
+T26	Medical-Problem 1136 1145	pneumonia
+T27	Medical-Assertion 1146 1155;1157 1165	cannot be excluded
+A6	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1172 1186	Unchanged left
+E22	Medical-Problem:T28
+T29	Medical-Problem 1187 1193	apical
+E23	Medical-Problem:T29
+T30	Lesion-Characteristic 1194 1205	ill-defined
+E24	Lesion-Characteristic:T30
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T15 has-Lesion-Characteristic:T16 has-Lesion-Size-Trend:T19
+E20	Medical-Problem:T25 has-Medical-Assertion:T24
+E21	Medical-Problem:T26 has-Medical-Assertion:T24 has-Medical-Assertion:T27

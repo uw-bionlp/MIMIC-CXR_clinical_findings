@@ -1,0 +1,30 @@
+T1	Medical-Assertion 299 301	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 302 315	major changes
+T3	Medical-Anatomy 352 356;358 362	left lung
+T4	Medical-Problem 398 406	collapse
+T5	Medical-Problem 411 424	pleural fluid
+T6	Medical-Problem 431 460	mediastinal shift towards the
+E5	Medical-Problem:T6
+T7	Medical-Problem 461 475	opacified lung
+E6	Medical-Problem:T7
+T8	Medical-Assertion 490 500	likely for
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 501 505;507 522	more severe collapse
+T10	Medical-Anatomy 525 535	Right lung
+T11	Medical-Problem 563 580	parahilar opacity
+T12	Medical-Assertion 587 594	without
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 595 611	pleural effusion
+T14	Medical-Problem 827 859	Increased left mediastinal shift
+E11	Medical-Problem:T14
+T15	Medical-Problem 867 885;887 895	increasedleft lung collapse
+E12	Medical-Problem:T15
+T16	Medical-Problem 897 930	Unchanged the right hilar opacity
+E13	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T12

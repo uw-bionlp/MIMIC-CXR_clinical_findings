@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 211 216	lungs
+T2	Medical-Problem 221 234	hyperexpanded
+T3	Lesion-Anatomy 285 301	right upper lobe
+T4	Lesion-Description 302 308	nodule
+T5	Lesion-Size-Trend 318 327	unchanged
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Problem 330 337	Opacity
+T7	Medical-Anatomy 345 350;352 372	right paramediastinal lung
+T8	Medical-Assertion 393 395	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 396 412	pleural effusion
+T10	Medical-Problem 416 428	pneumothorax
+T11	Lesion-Size-Trend 548 557	Unchanged
+A3	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Anatomy 558 574	right upper lobe
+T13	Lesion-Description 575 581	nodule
+T14	Lesion-Anatomy 586 607	right paramediastinal
+T15	Lesion-Description 608 615	opacity
+T16	Medical-Assertion 618 620	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 622 634	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Lesion-Description:T13 has-Lesion-Size-Trend:T11 has-Lesion-Anatomy:T12
+E12	Lesion-Description:T15 has-Lesion-Size-Trend:T11 has-Lesion-Anatomy:T12 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

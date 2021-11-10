@@ -1,0 +1,55 @@
+T1	Medical-Problem 387 418;420 428	moderate to large right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 450 477	right basilar opacification
+E2	Medical-Problem:T2
+T3	Medical-Assertion 479 498;500 502	possibly reflective of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 503 526	compressive atelectasis
+T5	Medical-Problem 534 543	pneumonia
+T6	Medical-Assertion 547 567	difficult to exclude
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 630 653;655 671	moderate to large right pleural effusion
+E5	Medical-Problem:T7
+T8	Medical-Anatomy 678 683	aorta
+T9	Medical-Problem 692 711	diffusely calcified
+T10	Medical-Problem 714 728;730 755	Hazy perihilar opacification bilaterally
+E8	Medical-Problem:T10
+T11	Medical-Assertion 792 803	may reflect
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 805 831	asymmetric pulmonary edema
+T13	Medical-Problem 834 847	Mild widening
+T14	Medical-Anatomy 855 883	superior mediastinal contour
+T15	Lesion-Assertion 914 917	may
+A4	Lesion-AssertionValue T15 possible
+T16	Lesion-Characteristic 926 936	underlying
+T17	Lesion-Description 937 952	lymphadenopathy
+T18	Medical-Assertion 992 994	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 995 1022	left-sided pleural effusion
+T20	Medical-Problem 1027 1039	pneumothorax
+T21	Medical-Problem 1177 1217	Moderate to large right pleural effusion
+E16	Medical-Problem:T21
+T22	Medical-Problem 1223 1250	right basilar opacification
+E17	Medical-Problem:T22
+T23	Medical-Assertion 1253 1259	likely
+A6	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1260 1283	compressive atelectasis
+T25	Medical-Problem 1291 1300	infection
+T26	Medical-Assertion 1304 1324	difficult to exclude
+A7	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1330 1364	Bilateral perihilar hazy opacities
+E20	Medical-Problem:T27
+T28	Medical-Assertion 1397 1422	potentially reflective of
+A8	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1423 1449	asymmetric pulmonary edema
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Lesion-Description:T17 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T18
+E18	Medical-Problem:T24 has-Medical-Assertion:T23
+E19	Medical-Problem:T25 has-Medical-Assertion:T23 has-Medical-Assertion:T26
+E21	Medical-Problem:T29 has-Medical-Assertion:T28

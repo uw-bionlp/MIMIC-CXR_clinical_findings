@@ -1,0 +1,28 @@
+T1	Medical-Problem 179 195	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 200 219	basilar atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 232 240	blunting
+T4	Medical-Anatomy 257 281	right costophrenic angle
+T5	Medical-Assertion 282 292	suggesting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 295 308;310 318	trace pleural effusion
+T7	Medical-Problem 335 362	retrocardiac patchy opacity
+T8	Medical-Anatomy 370 382	lateral view
+T9	Medical-Assertion 385 398	worrisome for
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 399 412	consolidation
+T11	Medical-Problem 419 429	prominence
+T12	Medical-Anatomy 437 441	hila
+T13	Lesion-Description 515 532	Nodular opacities
+T14	Lesion-Anatomy 541 546	lungs
+T15	Lesion-Assertion 669 676	raising
+A3	Lesion-AssertionValue T15 possible
+T16	Lesion-Description 690 712	progression of disease
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Lesion-Description:T13 has-Lesion-Anatomy:T14
+E13	Lesion-Description:T16 has-Lesion-Assertion:T15

@@ -1,0 +1,27 @@
+T1	Medical-Problem 324 345	area of consolidation
+T2	Medical-Anatomy 354 364	right base
+T3	Medical-Problem 399 419;421 434	areas of parenchymal consolidation
+T4	Medical-Anatomy 446 462	right upper lobe
+T5	Medical-Assertion 474 476	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 477 493	definite density
+T7	Medical-Assertion 570 572	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 574 588	pneumothoraces
+T9	Medical-Assertion 601 603	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 614 635	overt pulmonary edema
+T11	Medical-Problem 639 646;648 656	pleural effusion
+T12	Medical-Anatomy 676 687	Right lower
+T13	Medical-Problem 693 706	consolidation
+T14	Medical-Assertion 707 721	suspicious for
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 722 731	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Anatomy:T12
+E11	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T14

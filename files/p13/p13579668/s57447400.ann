@@ -1,0 +1,41 @@
+T1	Medical-Problem 263 271;273 308	interval increase in right pleural effusion,
+T2	Medical-Anatomy 309 336	tracking along the fissures
+T3	Medical-Problem 351 379	right lower lobe atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Problem 401 424	super-imposed infection
+T5	Medical-Assertion 426 455	cannot be completely excluded
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 458 468	Multifocal
+E5	Medical-Problem:T6
+T7	Medical-Problem 469 483	consolidations
+T8	Medical-Anatomy 491 500	left lung
+T9	Medical-Assertion 511 525	concerning for
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 526 535	infection
+T11	Medical-Anatomy 542 547	right
+T12	Medical-Problem 587 610	slight deviation of the
+T13	Medical-Anatomy 611 633	mediastinal structures
+T14	Medical-Problem 648 656	Multiple
+E12	Medical-Problem:T14
+T15	Medical-Problem 747 790;792 810	right pleural effusion, with fluid tracking along the fissures
+E13	Medical-Problem:T15
+T16	Medical-Problem 819 841	lower lobe atelectasis
+E14	Medical-Problem:T16
+T17	Medical-Problem 853 863;865 874	underlying infection
+T18	Medical-Assertion 875 893	cannot be excluded
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 896 906	Multifocal
+E16	Medical-Problem:T19
+T20	Medical-Problem 907 916	opacities
+E17	Medical-Problem:T20
+T21	Medical-Anatomy 924 933	left lung
+T22	Medical-Assertion 944 958	concerning for
+A4	Medical-AssertionValue T22 possible
+T23	Medical-Problem 959 968	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T11 has-Medical-Anatomy:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T18
+E19	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22

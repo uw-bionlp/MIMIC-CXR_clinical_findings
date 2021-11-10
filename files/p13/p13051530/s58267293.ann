@@ -1,0 +1,65 @@
+T1	Medical-Assertion 210 212	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 214 226	pneumothorax
+T3	Medical-Problem 241 280	Left hemidiaphragm is slightly elevated
+E2	Medical-Problem:T3
+T4	Medical-Problem 287 291;293 312	left lower lobe collapse
+E3	Medical-Problem:T4
+T5	Medical-Problem 320 333	consolidation
+E4	Medical-Problem:T5
+T6	Medical-Problem 400 425	upper zone redistribution
+E5	Medical-Problem:T6
+T7	Medical-Problem 430 439;441 462	increased interstitial markings
+E6	Medical-Problem:T7
+T8	Medical-Assertion 503 511	possible
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 513 523	prominence
+T10	Medical-Anatomy 531 542	right hilum
+T11	Medical-Problem 581 584;586 602	new minimal blunting
+T12	Medical-Anatomy 610 634	right costophrenic angle
+T13	Medical-Problem 654 659;661 684	small amount of pleural fluid
+E11	Medical-Problem:T13
+T14	Medical-Assertion 689 697	Possible
+A3	Medical-AssertionValue T14 possible
+T15	Lesion-Size 698 703	small
+T16	Lesion-Anatomy 704 713	pulmonary
+T17	Lesion-Description 714 729	nodular density
+T18	Lesion-Anatomy 738 752	right mid zone
+T19	Medical-Problem 789 799	Small bleb
+T20	Medical-Anatomy 827 847	right mid chest wall
+T21	Medical-Problem 1064 1076;1078 1104	chronic left shoulder rotator cuff tear
+E18	Medical-Problem:T21
+T22	Medical-Problem 1109 1142	glenohumeral joint osteoarthritis
+E19	Medical-Problem:T22
+T23	Medical-Assertion 1208 1210	No
+A4	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1211 1231	obvious pneumothorax
+T25	Medical-Problem 1239 1254	Left lower lobe
+E21	Medical-Problem:T25
+T26	Medical-Problem 1255 1263	collapse
+E22	Medical-Problem:T26
+T27	Medical-Problem 1271 1284	consolidation
+E23	Medical-Problem:T27
+T28	Medical-Problem 1289 1302;1304 1317	elevated left hemidiaphragm
+E24	Medical-Problem:T28
+T29	Medical-Problem 1324 1349	Upper zone redistribution
+T30	Medical-Problem 1354 1385	increased interstitial markings
+T31	Medical-Anatomy 1414 1436	base in the right lung
+T32	Medical-Problem 1443 1464	prominent right hilum
+E28	Medical-Problem:T32
+T33	Medical-Problem 1479 1503	New small right effusion
+E29	Medical-Problem:T33
+T34	Lesion-Assertion 1510 1518	Possible
+A5	Lesion-AssertionValue T34 possible
+T35	Lesion-Size 1519 1524	small
+T36	Lesion-Anatomy 1525 1549	right mid-lung pulmonary
+T37	Lesion-Description 1550 1556	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E14	Lesion-Description:T17 has-Lesion-Size-Present:T15 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E20	Medical-Problem:T24 has-Medical-Assertion:T23
+E25	Medical-Problem:T29 has-Medical-Anatomy:T31
+E26	Medical-Problem:T30 has-Medical-Anatomy:T31
+E32	Lesion-Description:T37 has-Lesion-Assertion:T34 has-Lesion-Size-Present:T35 has-Lesion-Anatomy:T36

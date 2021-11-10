@@ -1,0 +1,35 @@
+T1	Medical-Problem 233 248	marked kyphosis
+T2	Medical-Anatomy 256 278	thoracolumbar junction
+T3	Medical-Problem 330 350	retrocardiac opacity
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 378 403	descending thoracic aorta
+T5	Medical-Problem 409 422	hiatal hernia
+T6	Medical-Anatomy 429 434	lungs
+T7	Medical-Assertion 461 468	without
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 469 488	focal consolidation
+T9	Medical-Problem 490 498	effusion
+T10	Medical-Problem 503 515	pneumothorax
+T11	Medical-Assertion 573 575	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 577 610	definite acute bony abnormalities
+T13	Medical-Problem 626 643	Streaky opacities
+T14	Medical-Anatomy 651 655;657 667	left lower lung
+T15	Medical-Assertion 672 692	likely reflective of
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 693 704	atelectasis
+T17	Medical-Assertion 722 724	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 725 739	acute findings
+T19	Medical-Problem 742 757	Severe kyphosis
+T20	Medical-Anatomy 765 778;780 788	thoracolumbar junction
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20

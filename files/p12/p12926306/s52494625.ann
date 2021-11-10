@@ -1,0 +1,36 @@
+T1	Medical-Problem 449 470	postoperative changes
+T2	Medical-Anatomy 479 503	right upper and mid lung
+T3	Medical-Anatomy 566 582	both lower lobes
+T4	Medical-Problem 599 614	pulmonary edema
+T5	Medical-Problem 641 671	persistent bibasilar opacities
+E5	Medical-Problem:T5
+T6	Medical-Assertion 688 702	either reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 704 730	persistent pulmonary edema
+T8	Medical-Problem 737 755	infectious process
+T9	Lesion-Count 758 766	Multiple
+T10	Lesion-Characteristic 767 776	calcified
+T11	Lesion-Anatomy 777 782	hilar
+T12	Lesion-Anatomy 788 799	mediastinal
+T13	Lesion-Description 800 811	lymph nodes
+T14	Medical-Problem 871 898	Biapical pleural thickening
+E13	Medical-Problem:T14
+T15	Medical-Problem 904 923;925 939	left apical pleural calcifications
+E14	Medical-Problem:T15
+T16	Medical-Problem 1059 1073;1075 1094	Small layering bilateral effusions
+E15	Medical-Problem:T16
+T17	Medical-Problem 1097 1116	Lung hyperinflation
+E16	Medical-Problem:T17
+T18	Medical-Problem 1133 1143;1145 1154	underlying emphysema
+E17	Medical-Problem:T18
+T19	Medical-Problem 1161 1183	heart remains enlarged
+E18	Medical-Problem:T19
+T20	Medical-Assertion 1186 1188	No
+A2	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1189 1213	appreciable pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E12	Lesion-Description:T13 has-Lesion-Count:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T12
+E19	Medical-Problem:T21 has-Medical-Assertion:T20

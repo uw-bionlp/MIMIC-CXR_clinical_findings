@@ -1,0 +1,50 @@
+T1	Medical-Anatomy 354 359	lungs
+T2	Medical-Problem 382 418;420 430	hyperinflated with flattening of the diaphragms
+T3	Medical-Problem 433 443	Persistent
+E3	Medical-Problem:T3
+T4	Medical-Problem 444 467	left lower lobe opacity
+E4	Medical-Problem:T4
+T5	Medical-Problem 473 496;498 522	interval progression of right lower lobe opacity
+E5	Medical-Problem:T5
+T6	Medical-Problem 540 554	calcifications
+T7	Medical-Anatomy 565 575;577 581	left chest wall
+T8	Medical-Assertion 620 639	can consistent with
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 640 649;651 658	calcified plaques
+T10	Medical-Problem 661 669	Scarring
+E9	Medical-Problem:T10
+T11	Medical-Problem 732 749	calcified plaques
+T12	Medical-Anatomy 760 778	right lateral lung
+T13	Medical-Assertion 815 817	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 818 830	pneumothorax
+T15	Medical-Anatomy 899 904	aorta
+T16	Medical-Problem 908 917	calcified
+T17	Medical-Problem 934 949	atherosclerosis
+T18	Medical-Problem 984 1007	left lower lobe opacity
+E16	Medical-Problem:T18
+T19	Medical-Problem 1013 1044;1046 1053	progression of right lower lobe opacity
+E17	Medical-Problem:T19
+T20	Medical-Problem 1070 1099	evolving multifocal pneumonia
+E18	Medical-Problem:T20
+T21	Medical-Assertion 1115 1128	suggestive of
+A3	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1129 1138	emphysema
+T23	Medical-Problem 1142 1146	COPD
+T24	Medical-Problem 1153 1162	Calcified
+E21	Medical-Problem:T24
+T25	Medical-Problem 1163 1178	pleural plaques
+E22	Medical-Problem:T25
+T26	Medical-Assertion 1185 1187	No
+A4	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1188 1203	pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T15
+E19	Medical-Problem:T22 has-Medical-Assertion:T21
+E20	Medical-Problem:T23 has-Medical-Assertion:T21
+E23	Medical-Problem:T27 has-Medical-Assertion:T26

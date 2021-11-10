@@ -1,0 +1,43 @@
+T1	Medical-Problem 33 58	new right basilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 62 68	likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 69 80	atelectasis
+T4	Medical-Assertion 82 86	less
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 94 104	aspiration
+T6	Medical-Assertion 106 108	no
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 111 116	edema
+T8	Medical-Problem 120 128	effusion
+T9	Medical-Assertion 130 132	no
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 133 145	pneumothorax
+T11	Medical-Problem 821 834;836 843	new bibasilar opacity
+E7	Medical-Problem:T11
+T12	Medical-Assertion 854 860	likely
+A5	Medical-AssertionValue T12 possible
+T13	Medical-Problem 861 872	atelectasis
+T14	Medical-Anatomy 880 891	lower lobes
+T15	Medical-Problem 937 946	pneumonia
+T16	Medical-Assertion 947 967	should be considered
+A6	Medical-AssertionValue T16 possible
+T17	Medical-Assertion 980 982	no
+A7	Medical-AssertionValue T17 absent
+T18	Medical-Problem 984 1012	signs of vascular congestion
+T19	Medical-Problem 1016 1031	pulmonary edema
+T20	Medical-Assertion 1043 1045	no
+A8	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1046 1062	pleural effusion
+T22	Medical-Problem 1067 1079	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T2 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T6
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T13 has-Medical-Assertion:T12 has-Medical-Anatomy:T14
+E10	Medical-Problem:T15 has-Medical-Assertion:T16
+E11	Medical-Problem:T18 has-Medical-Assertion:T17
+E12	Medical-Problem:T19 has-Medical-Assertion:T17
+E13	Medical-Problem:T21 has-Medical-Assertion:T20
+E14	Medical-Problem:T22 has-Medical-Assertion:T20

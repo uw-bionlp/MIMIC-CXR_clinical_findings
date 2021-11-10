@@ -1,0 +1,19 @@
+T1	Medical-Problem 285 318	regression of the pleural density
+T2	Medical-Anatomy 331 335;337 347	left lower lung
+T3	Medical-Problem 388 413;415 426	increase in the left lung ventilation
+E3	Medical-Problem:T3
+T4	Medical-Problem 432 479	corresponding decrease in amount of atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 556 566	right lung
+T6	Medical-Assertion 589 591	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 592 611	focal consolidation
+T8	Medical-Assertion 623 625	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 626 636;638 650	detectable pneumothorax
+T10	Medical-Problem 735 764	Regression of pleural density
+T11	Medical-Anatomy 773 782	left lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11

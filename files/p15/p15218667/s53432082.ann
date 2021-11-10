@@ -1,0 +1,24 @@
+T1	Medical-Problem 321 332	volume loss
+T2	Medical-Anatomy 340 355	left hemithorax
+T3	Medical-Problem 362 397	elevation of the left hemidiaphragm
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 436 440;442 446	left lung
+T5	Medical-Assertion 461 468	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 469 481	pneumothorax
+T7	Medical-Problem 483 502	focal consolidation
+T8	Medical-Problem 507 514;516 524	pleural effusion
+T9	Medical-Problem 622 658;660 670	slight leftward shift of mediastinal structures
+E8	Medical-Problem:T9
+T10	Medical-Problem 678 700	left-sided volume loss
+E9	Medical-Problem:T10
+T11	Medical-Assertion 765 767	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 768 782	acute findings
+T13	Medical-Problem 787 809	left-sided volume loss
+E11	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,28 @@
+T1	Lesion-Characteristic 451 460	calcified
+T2	Lesion-Description 461 478	nodular opacities
+T3	Lesion-Anatomy 486 497;499 503	right upper lobe
+T4	Lesion-Characteristic 504 541	suggest prior granulomatous infection
+T5	Lesion-Characteristic 544 553	Prominent
+E5	Lesion-Characteristic:T5
+T6	Medical-Problem 643 649	Patchy
+E6	Medical-Problem:T6
+T7	Medical-Problem 650 657	opacity
+E7	Medical-Problem:T7
+T8	Medical-Anatomy 665 689	left costophrenic sulcus
+T9	Medical-Assertion 690 705	likely reflects
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 706 717	atelectasis
+T11	Medical-Problem 729 739	aspiration
+T12	Medical-Assertion 740 765	should also be considered
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 768 770	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 771 786	pulmonary edema
+T15	Medical-Assertion 789 791	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 793 805	pneumothorax
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

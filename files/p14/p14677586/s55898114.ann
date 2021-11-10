@@ -1,0 +1,20 @@
+T1	Medical-Problem 371 381	prominence
+T2	Medical-Anatomy 389 393;395 411	main pulmonary artery
+T3	Medical-Assertion 412 426	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 427 449	pulmonary hypertension
+T5	Medical-Problem 483 498	pulmonary edema
+E4	Medical-Problem:T5
+T6	Medical-Problem 562 610	Bilateral pleural effusion, right more than left
+E5	Medical-Problem:T6
+T7	Medical-Assertion 627 649	Differential diagnosis
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 658 668	prominence
+T9	Medical-Anatomy 676 696	aortopulmonic window
+T10	Lesion-Description 712 727	lymphadenopathy
+E8	Lesion-Description:T10
+T11	Medical-Problem 731 752	aneurysmal dilatation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T7 has-Medical-Anatomy:T9

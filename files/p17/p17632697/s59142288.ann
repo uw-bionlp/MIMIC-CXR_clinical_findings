@@ -1,0 +1,21 @@
+T1	Medical-Problem 248 284	moderate bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 398 414	Airspace opacity
+T3	Medical-Anatomy 422 437	left lower lobe
+T4	Medical-Assertion 438 453	likely reflects
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 454 475;477 482	reexpansion pulmonary edema
+T6	Lesion-Anatomy 558 578	anterior mediastinal
+T7	Lesion-Description 579 583	mass
+T8	Medical-Assertion 595 597	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 598 610	pneumothorax
+T10	Medical-Problem 715 742	resultant reexpansion edema
+T11	Medical-Anatomy 750 765	left lower lobe
+T12	Medical-Problem 780 811	right moderate pleural effusion
+E10	Medical-Problem:T12
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11

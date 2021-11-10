@@ -1,0 +1,23 @@
+T1	Lesion-Anatomy 346 358	right apical
+T2	Lesion-Description 359 363	mass
+T3	Lesion-Description 389 393	mass
+E3	Lesion-Description:T3
+T4	Lesion-Description 410 414	mass
+E4	Lesion-Description:T4
+T5	Medical-Problem 417 434	Bibasal opacities
+E5	Medical-Problem:T5
+T6	Medical-Assertion 435 456	most likely represent
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 474 481;483 491	pleural effusion
+T8	Medical-Problem 496 507	atelectasis
+T9	Medical-Problem 510 530	Mild pulmonary edema
+T10	Medical-Assertion 531 549	cannot be excluded
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 562 564	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 565 577	pneumothorax
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

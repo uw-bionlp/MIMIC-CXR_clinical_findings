@@ -1,0 +1,21 @@
+T1	Medical-Problem 330 343	consolidation
+T2	Medical-Anatomy 355 371	right lower lobe
+T3	Lesion-Description 389 404	nodular density
+T4	Lesion-Anatomy 423 447	right mid lung laterally
+T5	Lesion-Size 473 477	1 cm
+T6	Medical-Problem 480 504	Patchy left base opacity
+E6	Medical-Problem:T6
+T7	Medical-Anatomy 656 661	Right
+T8	Medical-Problem 673 686	consolidation
+T9	Medical-Assertion 687 697	compatible
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 703 712	infection
+T11	Lesion-Description 827 834	nodular
+E10	Lesion-Description:T11
+T12	Lesion-Description 835 842	opacity
+T13	Lesion-Anatomy 850 864	right mid lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4 has-Lesion-Size-Present:T5
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E11	Lesion-Description:T12 has-Lesion-Anatomy:T13

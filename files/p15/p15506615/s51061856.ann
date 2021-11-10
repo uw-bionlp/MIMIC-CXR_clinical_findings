@@ -1,0 +1,38 @@
+T1	Medical-Problem 803 820	perihilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 839 849	mild edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 851 892	Left-sided parahilar opacities asymmetric
+T4	Medical-Anatomy 913 918	right
+T5	Medical-Problem 942 958	asymmetric edema
+E5	Medical-Problem:T5
+T6	Medical-Problem 968 989	underlying aspiration
+T7	Medical-Problem 994 1003	infection
+T8	Medical-Assertion 1004 1016	not excluded
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 1018 1020	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 1021 1037	pleural effusion
+T11	Medical-Problem 1041 1053	pneumothorax
+T12	Medical-Problem 1453 1482	Bilateral perihilar opacities
+E10	Medical-Problem:T12
+T13	Medical-Problem 1502 1507	edema
+E11	Medical-Problem:T13
+T14	Medical-Problem 1519 1539	perihilar opacity is
+T15	Medical-Anatomy 1564 1587;1589 1594	left as compared to the right
+T16	Medical-Assertion 1601 1614	may be due to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1615 1631	asymmetric edema
+T18	Medical-Problem 1641 1661	underlying infection
+T19	Medical-Problem 1666 1676	aspiration
+T20	Medical-Assertion 1677 1689	not excluded
+A4	Medical-AssertionValue T20 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Assertion:T8
+E7	Medical-Problem:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16 has-Medical-Assertion:T20
+E16	Medical-Problem:T19 has-Medical-Anatomy:T15 has-Medical-Assertion:T20

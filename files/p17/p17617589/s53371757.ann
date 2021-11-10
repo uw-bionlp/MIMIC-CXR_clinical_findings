@@ -1,0 +1,43 @@
+T1	Medical-Assertion 325 327	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 673 706	widespread interstitial opacities
+T3	Medical-Anatomy 707 727;729 733	throughout the right lung
+T4	Medical-Problem 741 761	basilar predominance
+T5	Medical-Anatomy 777 791	left lung base
+T6	Medical-Problem 803 807;809 838	mild pulmonary vascular congestion
+E5	Medical-Problem:T6
+T7	Medical-Problem 843 864	subtle Kerley B lines
+E6	Medical-Problem:T7
+T8	Medical-Assertion 865 875	suggesting
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 877 895	interstitial edema
+T10	Medical-Problem 900 928	small right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 950 952	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 954 966	pneumothorax
+T13	Medical-Problem 1074 1093	bibasilar opacities
+E10	Medical-Problem:T13
+T14	Medical-Problem 1101 1135	mediastinal contours are prominent
+E11	Medical-Problem:T14
+T15	Medical-Problem 1143 1153	tortuosity
+T16	Medical-Anatomy 1161 1175	thoracic aorta
+T17	Medical-Problem 1182 1203	partial calcification
+T18	Medical-Anatomy 1211 1217	aortic
+T19	Medical-Problem 1430 1458	pulmonary interstitial edema
+T20	Medical-Problem 1463 1482	vascular congestion
+T21	Medical-Anatomy 1491 1518	right greater than the left
+T22	Medical-Problem 1521 1533	Superimposed
+E19	Medical-Problem:T22
+T23	Medical-Problem 1534 1543	infection
+T24	Medical-Assertion 1544 1562	cannot be excluded
+A4	Medical-AssertionValue T24 possible
+E1	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T21
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21
+E20	Medical-Problem:T23 has-Medical-Assertion:T24

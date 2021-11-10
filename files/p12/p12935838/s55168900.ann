@@ -1,0 +1,21 @@
+T1	Medical-Assertion 192 194	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 195 202;204 222	visible right pneumothorax
+T3	Medical-Problem 319 337	Airspace opacities
+T4	Medical-Anatomy 361 395	left perihilar and basilar regions
+T5	Medical-Assertion 400 413	could reflect
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 414 432	asymmetrical edema
+T7	Medical-Problem 437 450	other process
+T8	Medical-Problem 459 469	aspiration
+T9	Medical-Problem 472 502	Moderate left pleural effusion
+E7	Medical-Problem:T9
+T10	Medical-Problem 528 553	Right basilar atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Problem 590 629	increasing small right pleural effusion
+E9	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5

@@ -1,0 +1,13 @@
+T1	Medical-Problem 185 215	Moderate left pleural effusion
+T2	Medical-Anatomy 268 293	right anterior chest wall
+T3	Medical-Anatomy 309 330	base of the left lung
+T4	Medical-Anatomy 333 337;339 344	Left hilus
+T5	Medical-Problem 348 360	distorted by
+E5	Medical-Problem:T5
+T6	Medical-Problem 361 379	radiation fibrosis
+T7	Medical-Assertion 401 403	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 404 416	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7

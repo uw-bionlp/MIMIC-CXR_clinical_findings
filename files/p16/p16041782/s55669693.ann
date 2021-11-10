@@ -1,0 +1,43 @@
+T1	Medical-Problem 33 43	Prominence
+T2	Medical-Anatomy 47 61	bilateral hila
+T3	Medical-Assertion 62 72	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 73 94	underlying adenopathy
+T5	Medical-Problem 98 105;107 121	central  consolidation
+T6	Medical-Problem 454 474	Mediastinal widening
+T7	Medical-Anatomy 482 528	right paratracheal and aorticopulmonary window
+T8	Medical-Problem 548 599	bilateral hilar enlargement with lobulated contours
+T9	Medical-Assertion 612 614	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 615 631	pleural effusion
+T11	Medical-Problem 633 648	pulmonary edema
+T12	Medical-Problem 653 665	pneumothorax
+T13	Medical-Assertion 681 684	not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 686 694	enlarged
+T15	Medical-Problem 739 786	mediastinal and bilateral hilar lymphadenopathy
+E12	Medical-Problem:T15
+T16	Medical-Assertion 789 807	potentially due to
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 808 815	sarcoid
+T18	Medical-Assertion 818 840	Differential diagnosis
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 867 892	lymphadenopathy infection
+T20	Medical-Problem 901 903	TB
+T21	Medical-Problem 929 939;941 952	prominent  vasculature
+E16	Medical-Problem:T21
+T22	Lesion-Characteristic 953 963	simulating
+T23	Lesion-Description 964 974	lymph node
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T18
+E18	Lesion-Description:T23 has-Lesion-Characteristic:T22

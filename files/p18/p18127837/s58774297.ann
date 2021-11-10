@@ -1,0 +1,30 @@
+T1	Medical-Anatomy 555 586	Right middle lobe on right base
+T2	Medical-Problem 587 594	opacity
+T3	Medical-Assertion 595 617	most likely relates to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 618 625;627 640	chronic consolidation
+T5	Lesion-Anatomy 668 685	Lateral left base
+T6	Lesion-Size 686 699	subcentimeter
+T7	Lesion-Characteristic 701 708	rounded
+T8	Lesion-Description 709 716	nodular
+E7	Lesion-Description:T8
+T9	Lesion-Description 717 724	opacity
+T10	Medical-Anatomy 782 786	left
+T11	Medical-Problem 798 820	ground-glass opacities
+T12	Medical-Assertion 850 852	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 853 869	pleural effusion
+T14	Medical-Problem 873 885	pneumothorax
+T15	Lesion-Anatomy 967 984	Right middle lobe
+T16	Lesion-Anatomy 986 1002	right lower lobe
+T17	Lesion-Anatomy 1008 1023	left lower lobe
+T18	Lesion-Description 1024 1033	opacities
+T19	Medical-Problem 1225 1259	New small underlying consolidation
+E17	Medical-Problem:T19
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E16	Lesion-Description:T18 has-Lesion-Anatomy:T15 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T17

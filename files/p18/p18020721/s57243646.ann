@@ -1,0 +1,29 @@
+T1	Medical-Assertion 198 200	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 201 223	displaced rib fracture
+T3	Medical-Assertion 235 237	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 238 254	pleural effusion
+T5	Medical-Problem 259 271	pneumothorax
+T6	Medical-Problem 273 288	Vague opacities
+T7	Medical-Anatomy 296 309	left low lung
+T8	Medical-Assertion 314 325	likely from
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 326 337	atelectasis
+T10	Medical-Problem 342 352	aspiration
+T11	Medical-Problem 355 369	Bronchiectasis
+E8	Medical-Problem:T11
+T12	Medical-Problem 402 417;419 427	Heart is mildly enlarged
+E9	Medical-Problem:T12
+T13	Medical-Assertion 503 505	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 506 518	rib fracture
+T15	Medical-Problem 522 534	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13

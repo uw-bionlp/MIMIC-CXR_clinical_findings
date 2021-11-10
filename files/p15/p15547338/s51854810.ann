@@ -1,0 +1,53 @@
+T1	Medical-Anatomy 275 280	right
+T2	Medical-Problem 290 315	right upper lobe scarring
+T3	Lesion-Anatomy 420 425	hilar
+T4	Lesion-Anatomy 430 441	mediastinal
+T5	Lesion-Description 442 452	adenopathy
+T6	Medical-Problem 522 529	opacity
+T7	Medical-Anatomy 551 591	left lung, centered in the left mid lung
+T8	Medical-Anatomy 615 619;621 664	left lower lung and the inferior left upper lung
+T9	Medical-Assertion 666 679	worrisome for
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 680 689	infection
+T11	Medical-Problem 694 704	aspiration
+T12	Medical-Problem 746 771;773 780	focal irregular appearing opacity
+T13	Medical-Anatomy 798 821	lateral left upper lobe
+T14	Medical-Assertion 858 864	may be
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 899 909	Persistent
+E13	Medical-Problem:T15
+T16	Medical-Problem 910 918	blunting
+T17	Medical-Anatomy 927 951	right costophrenic angle
+T18	Medical-Assertion 961 976	possibly due to
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 977 999	trace pleural effusion
+T20	Medical-Problem 1017 1032	slight blunting
+T21	Medical-Anatomy 1040 1063	left costophrenic angle
+T22	Lesion-Anatomy 1143 1152	pulmonary
+T23	Lesion-Description 1153 1160	nodules
+T24	Lesion-Anatomy 1162 1173	mediastinal
+T25	Lesion-Anatomy 1178 1183	hilar
+T26	Lesion-Description 1184 1194	adenopathy
+T27	Medical-Problem 1240 1285	large area of relatively ground-glass opacity
+E24	Medical-Problem:T27
+T28	Medical-Assertion 1317 1330	worrisome for
+A4	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1331 1340	infection
+T30	Medical-Problem 1344 1354	aspiration
+T31	Medical-Problem 1384 1404	pulmonary hemorrhage
+T32	Medical-Assertion 1408 1411	not
+A5	Medical-AssertionValue T32 absent
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21
+E20	Lesion-Description:T23 has-Lesion-Anatomy:T22
+E23	Lesion-Description:T26 has-Lesion-Anatomy:T24 has-Lesion-Anatomy:T25
+E25	Medical-Problem:T29 has-Medical-Assertion:T28
+E26	Medical-Problem:T30 has-Medical-Assertion:T28
+E27	Medical-Problem:T31 has-Medical-Assertion:T32

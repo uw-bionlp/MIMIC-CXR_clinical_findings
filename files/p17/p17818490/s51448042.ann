@@ -1,0 +1,22 @@
+T1	Medical-Problem 242 250	Widening
+T2	Medical-Anatomy 258 275	upper mediastinum
+T3	Medical-Assertion 279 294	probably due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 295 315	vascular engorgement
+T5	Medical-Anatomy 319 324	Lungs
+T6	Medical-Problem 329 348	quite low in volume
+T7	Medical-Assertion 353 370	clear of anything
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 371 376	focal
+T9	Medical-Problem 382 389;391 399	pleural effusion
+T10	Medical-Problem 418 448	Heart size borderline enlarged
+E8	Medical-Problem:T10
+T11	Medical-Assertion 631 633	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 634 646	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

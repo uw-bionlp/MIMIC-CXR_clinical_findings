@@ -1,0 +1,21 @@
+T1	Medical-Problem 114 122	Wheezing
+T2	Medical-Anatomy 127 143	right lower lung
+T3	Medical-Problem 262 272;274 281	asymmetric opacity
+T4	Medical-Anatomy 289 298	left base
+T5	Medical-Assertion 300 319	which may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 320 349	developing infectious process
+T7	Medical-Assertion 437 439	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 440 459	pleural abnormality
+T9	Medical-Problem 489 516	Subtle asymmetrical opacity
+T10	Medical-Anatomy 524 533	left base
+T11	Medical-Assertion 534 547	may represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 549 558	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

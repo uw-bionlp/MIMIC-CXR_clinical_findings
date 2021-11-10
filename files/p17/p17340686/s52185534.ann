@@ -1,0 +1,26 @@
+T1	Medical-Assertion 237 239	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 240 252	pneumothorax
+T3	Medical-Problem 255 285	Lung volumes are extremely low
+E2	Medical-Problem:T3
+T4	Medical-Problem 288 298	Prominence
+T5	Medical-Anatomy 307 328	interstitial markings
+T6	Medical-Assertion 332 345	likely due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 346 366	mild pulmonary edema
+T8	Medical-Problem 373 380;382 404	cardiac silhouette is enlarged
+E6	Medical-Problem:T8
+T9	Medical-Assertion 436 438	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 439 458;460 469	appreciable pleural effusions
+T11	Medical-Problem 472 492	Degenerative changes
+T12	Medical-Anatomy 514 532	right humeral head
+T13	Medical-Assertion 550 561	No evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 565 577	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

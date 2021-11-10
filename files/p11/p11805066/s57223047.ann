@@ -1,0 +1,17 @@
+T1	Medical-Anatomy 305 314	left lung
+T2	Medical-Problem 347 369	small pleural effusion
+T3	Lesion-Description 413 417	mass
+T4	Lesion-Anatomy 432 443;445 455	right upper hemithorax
+T5	Lesion-Size-Trend 464 473	unchanged
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Problem 478 506	large right pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Problem 770 814	Large right and small left pleural effusions
+E6	Medical-Problem:T7
+T8	Lesion-Description 846 850	mass
+T9	Lesion-Anatomy 864 886	right upper hemithorax
+T10	Lesion-Size-Trend 888 897	unchanged
+A2	Lesion-Size-TrendValue T10 no-change
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T5
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10

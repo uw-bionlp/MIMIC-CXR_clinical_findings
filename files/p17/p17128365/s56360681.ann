@@ -1,0 +1,17 @@
+T1	Medical-Anatomy 286 291;293 304	Upper mediastinum
+T2	Medical-Problem 308 313	still
+E2	Medical-Problem:T2
+T3	Medical-Problem 314 322	engorged
+T4	Medical-Problem 334 367;369 377	increased intravascular volume or pressure
+T5	Medical-Assertion 432 434	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 435 440	edema
+T7	Medical-Problem 445 461	pleural effusion
+T8	Medical-Assertion 502 504	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 505 517	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T1
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T1 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,32 @@
+T1	Lesion-Characteristic 29 40	Ill-defined
+T2	Lesion-Description 41 58	nodular opacities
+T3	Lesion-Anatomy 66 87	left perihilar region
+T4	Lesion-Characteristic 92 106;108 124	suspicious for  early infection
+T5	Lesion-Characteristic 548 554;556 567	Patchy ill-defined
+T6	Lesion-Description 568 575	nodular
+T7	Medical-Problem 576 585	opacities
+T8	Medical-Anatomy 606 627	left perihilar region
+T9	Medical-Anatomy 635 645	right lung
+E9	Medical-Anatomy:T9
+T10	Medical-Assertion 657 659	No
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 660 676	pleural effusion
+T12	Medical-Problem 680 692	pneumothorax
+T13	Medical-Assertion 703 705	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 706 711;713 720	acute osseous
+E12	Medical-Problem:T14
+T15	Medical-Problem 721 734	abnormalities
+T16	Medical-Problem 767 778	Ill-defined
+T17	Medical-Anatomy 804 825	left perihilar region
+T18	Medical-Assertion 830 844	suspicious for
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 846 861	early infection
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T10
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

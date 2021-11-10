@@ -1,0 +1,16 @@
+T1	Medical-Anatomy 232 242	heart size
+T2	Medical-Problem 247 274	left ventricular prominence
+T3	Medical-Problem 298 311	Opacification
+T4	Medical-Anatomy 328 343	right lung base
+T5	Medical-Assertion 350 353;355 364	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 365 384	resolving infection
+T7	Medical-Assertion 418 420	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 421 428;430 438	pleural effusion
+T9	Medical-Problem 442 454	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

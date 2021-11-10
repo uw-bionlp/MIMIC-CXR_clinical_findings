@@ -1,0 +1,22 @@
+T1	Medical-Problem 324 344	mild pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 384 389;391 400	right lung base
+T3	Medical-Problem 404 422	mildly atelectatic
+T4	Medical-Anatomy 428 443	left lower lobe
+T5	Medical-Problem 447 459;461 473	more densely consolidated
+T6	Medical-Assertion 474 488	which could be
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 489 497	collapse
+T8	Medical-Problem 501 510	pneumonia
+T9	Medical-Problem 513 538;540 558	Severe enlargement of the cardiac silhouette
+E8	Medical-Problem:T9
+T10	Medical-Problem 571 588	Pleural effusions
+E9	Medical-Problem:T10
+T11	Medical-Assertion 634 636	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 637 649	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

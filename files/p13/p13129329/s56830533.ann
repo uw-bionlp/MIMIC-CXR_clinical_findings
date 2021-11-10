@@ -1,0 +1,14 @@
+T1	Medical-Anatomy 322 326;328 333	left basal
+T2	Medical-Assertion 363 391	highly suggestive to reflect
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 392 401	pneumonia
+T4	Medical-Assertion 404 406	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 408 424	pleural effusion
+T6	Medical-Problem 438 461	Lung volumes remain low
+E4	Medical-Problem:T6
+T7	Medical-Problem 464 484	Areas of atelectasis
+T8	Medical-Anatomy 493 509	right lung bases
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8

@@ -1,0 +1,28 @@
+T1	Medical-Assertion 201 203	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 204 220	pleural effusion
+T3	Medical-Problem 224 236	pneumothorax
+T4	Medical-Assertion 291 293	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 294 308	acute fracture
+T6	Medical-Problem 331 352	small bony protrusion
+T7	Medical-Anatomy 363 398;400 408	superior aspect of the distal right clavicle
+T8	Medical-Assertion 489 491	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 492 506	acute fracture
+T10	Medical-Problem 563 576	rib fractures
+E7	Medical-Problem:T10
+T11	Medical-Assertion 727 729	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 730 759	acute cardiopulmonary process
+T13	Lesion-Size 770 774	Very
+T14	Lesion-Characteristic 781 787	likely
+T15	Lesion-Description 788 802	osteochondroma
+T16	Lesion-Anatomy 813 842;844 858	superior aspect of the distal right clavicle
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Size-Present:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T16

@@ -1,0 +1,39 @@
+T1	Medical-Problem 272 296;298 305	Persistent postoperative changes
+T2	Medical-Anatomy 313 324	right hilum
+T3	Medical-Assertion 426 430	most
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 443 459	fluid collection
+T5	Medical-Anatomy 462 467	Lungs
+T6	Medical-Assertion 493 495	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 496 509	focal opacity
+T8	Medical-Problem 526 535	pneumonia
+T9	Medical-Assertion 547 549	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 550 566	pleural effusion
+T11	Medical-Problem 570 586	pneumothorax.The
+T12	Medical-Problem 685 717	persistent postoperative changes
+T13	Medical-Anatomy 726 737	right hilum
+T14	Medical-Problem 740 747	Opacity
+E11	Medical-Problem:T14
+T15	Medical-Problem 755 766	right hilum
+E12	Medical-Problem:T15
+T16	Medical-Problem 770 779	decreased
+E13	Medical-Problem:T16
+T17	Medical-Assertion 804 823	probably reflective
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 829 845	fluid collection
+T19	Medical-Assertion 872 883	No evidence
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Assertion 884 894	to suggest
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Problem 895 904	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T21 has-Medical-Assertion:T19 has-Medical-Assertion:T20

@@ -1,0 +1,41 @@
+T1	Medical-Problem 246 254	Widening
+T2	Medical-Anatomy 262 286	right mediastinal stripe
+T3	Medical-Problem 324 348	heart is mildly enlarged
+E3	Medical-Problem:T3
+T4	Medical-Problem 359 372	new elevation
+T5	Medical-Anatomy 380 399	right hemidiaphragm
+T6	Medical-Problem 446 466	subpulmonic effusion
+E6	Medical-Problem:T6
+T7	Medical-Problem 541 559;561 569	very small pleural effusion
+T8	Medical-Anatomy 577 581	left
+T9	Medical-Problem 587 614	patchy retrocardiac opacity
+T10	Medical-Problem 651 662	atelectasis
+T11	Medical-Problem 664 684	Lung volumes are low
+E11	Medical-Problem:T11
+T12	Medical-Problem 705 736	Patchy new retrocardiac opacity
+E12	Medical-Problem:T12
+T13	Medical-Assertion 746 770	more likely to represent
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Problem 771 782	atelectasis
+T15	Medical-Problem 789 798	pneumonia
+T16	Medical-Assertion 800 808	Probable
+A2	Medical-AssertionValue T16 possible
+T17	Medical-Problem 809 835	small effusion on the left
+T18	Medical-Problem 837 850	New elevation
+T19	Medical-Anatomy 859 878	right hemidiaphragm
+T20	Medical-Problem 924 935;937 945	subpulmonic effusion
+T21	Medical-Assertion 946 957	could yield
+A3	Medical-AssertionValue T21 possible
+T22	Lesion-Anatomy 975 986	Mediastinal
+T23	Lesion-Description 987 1002	lymphadenopathy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Anatomy:T8
+E13	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T20 has-Medical-Assertion:T21
+E20	Lesion-Description:T23 has-Lesion-Anatomy:T22

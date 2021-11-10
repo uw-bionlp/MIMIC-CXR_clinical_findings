@@ -1,0 +1,24 @@
+T1	Medical-Assertion 454 456	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 457 469	pneumothorax
+T3	Medical-Problem 487 499;501 511	Lung volumes remain low
+T4	Medical-Problem 517 533	patchy opacities
+T5	Medical-Anatomy 537 547	both bases
+T6	Medical-Assertion 548 565	likely reflecting
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 566 577	atelectasis
+T8	Medical-Problem 589 611	superimposed infection
+T9	Medical-Assertion 612 639	cannot be entirely excluded
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Anatomy 645 654;656 684	pulmonary vasculature and interstitium
+T11	Medical-Problem 692 717	slightly more ill defined
+T12	Medical-Assertion 740 763	raising the possibility
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 769 805	component of mild interstitial edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T10
+E9	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T12

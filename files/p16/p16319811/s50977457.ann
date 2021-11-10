@@ -1,0 +1,16 @@
+T1	Medical-Problem 410 428;430 437	bilateral airspace process
+E1	Medical-Problem:T1
+T2	Medical-Problem 530 569	still residual moderate pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 572 581;583 601	Bilateral infectious process
+T4	Medical-Assertion 602 622	would be less likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Assertion 625 633	Probable
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 634 658	small layering effusions
+T7	Medical-Assertion 662 673	No evidence
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 677 689	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7

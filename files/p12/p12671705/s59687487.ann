@@ -1,0 +1,28 @@
+T1	Medical-Assertion 293 295	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 296 308	acute change
+T3	Medical-Problem 312 329	new consolidation
+T4	Medical-Problem 336 369;371 392	right subpleural wedge-shaped and right hilar opacities
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 433 438	hilar
+T6	Lesion-Description 440 455	lymphadenopathy
+T7	Lesion-Size-Trend 457 466	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Problem 478 510;512 554	Bilateral lower lobe predominant reticular nodular interstitial abnormality
+E6	Medical-Problem:T8
+T9	Medical-Anatomy 609 620	Right upper
+T10	Medical-Problem 674 694	underlying emphysema
+T11	Medical-Assertion 770 772	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 773 785	acute change
+T13	Medical-Problem 803 844	substantial underlying lung abnormalities
+E10	Medical-Problem:T13
+T14	Medical-Assertion 852 883	difficult to completely exclude
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 884 893	infection
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

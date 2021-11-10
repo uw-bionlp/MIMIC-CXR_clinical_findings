@@ -1,0 +1,31 @@
+T1	Medical-Assertion 387 390	not
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 391 399	engorged
+T3	Medical-Anatomy 429 444;446 461	left chest wall anterolaterally
+E2	Medical-Anatomy:T3
+T4	Medical-Problem 464 473	Calcified
+E3	Medical-Problem:T4
+T5	Lesion-Description 474 483	granuloma
+T6	Lesion-Anatomy 491 506	right lung base
+T7	Lesion-Size-Trend 510 519	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 539 546	without
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 547 566	focal consolidation
+T10	Medical-Assertion 569 571	No
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 572 588	pleural effusion
+T12	Medical-Problem 593 605	pneumothorax
+T13	Medical-Assertion 619 621	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 622 647	acute osseous abnormality
+T15	Medical-Assertion 680 682	No
+A6	Medical-AssertionValue T15 absent
+T16	Medical-Problem 683 716	acute cardiopulmonary abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T10
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T16 has-Medical-Assertion:T15

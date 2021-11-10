@@ -1,0 +1,27 @@
+T1	Medical-Assertion 406 408	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 409 426	new consolidation
+T3	Medical-Problem 429 451	Persistent atelectasis
+T4	Medical-Problem 459 472	consolidation
+T5	Medical-Anatomy 480 495	left lower lung
+T6	Medical-Assertion 497 499	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 500 507;509 517	pleural effusion
+T8	Medical-Anatomy 569 585	descending aorta
+T9	Medical-Problem 590 632	slightly distorted by adjacent atelectasis
+T10	Medical-Problem 653 675	Persistent atelectasis
+T11	Medical-Assertion 676 678	or
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 679 692	consolidation
+T13	Medical-Anatomy 700 715	left lower lung
+T14	Medical-Assertion 717 719	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 720 723;725 738	new consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

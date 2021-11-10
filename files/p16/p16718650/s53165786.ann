@@ -1,0 +1,19 @@
+T1	Medical-Problem 479 501	right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 518 520	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 521 545;547 555	appreciable left pleural effusion
+T4	Medical-Assertion 558 560	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 561 573	pneumothorax
+T6	Medical-Anatomy 576 585	Bilateral
+E4	Medical-Anatomy:T6
+T7	Medical-Problem 680 703	worsening opacification
+T8	Medical-Anatomy 712 729	right lower chest
+T9	Medical-Assertion 733 748	probably due to
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 749 781;783 789	concurrent atelectasis, possibly severe
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

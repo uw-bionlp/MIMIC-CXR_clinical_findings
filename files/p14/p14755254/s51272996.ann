@@ -1,0 +1,62 @@
+T1	Medical-Problem 324 339	pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 429 455	Retrocardiac opacification
+T3	Medical-Problem 460 473	opacification
+T4	Medical-Anatomy 481 493;495 505	right mid to lower lung
+T5	Medical-Assertion 534 548	likely reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 549 560	atelectasis
+T7	Medical-Problem 570 580	aspiration
+T8	Medical-Problem 584 593	infection
+T9	Medical-Assertion 594 612	cannot be excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 615 643	Small right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 655 664	Trace, if
+E9	Medical-Problem:T11
+T12	Medical-Assertion 693 695	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 696 719	new focal consolidation
+T14	Medical-Assertion 723 725	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 726 738	pneumothorax
+T16	Medical-Problem 741 773	Mild central vascular congestion
+E12	Medical-Problem:T16
+T17	Medical-Assertion 774 781	without
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 782 797;799 804	overt pulmonary edema
+T19	Medical-Problem 807 828	Moderate cardiomegaly
+E14	Medical-Problem:T19
+T20	Medical-Problem 958 1006;1008 1012	alveolar pulmonary edema, now right greater than left
+E15	Medical-Problem:T20
+T21	Medical-Problem 1047 1089	Mildly improved retrocardiac opacification
+E16	Medical-Problem:T21
+T22	Medical-Anatomy 1094 1099	right
+T23	Medical-Problem 1149 1160	atelectasis
+T24	Medical-Problem 1169 1178	infection
+T25	Medical-Problem 1182 1192	aspiration
+T26	Medical-Assertion 1193 1199;1201 1212	cannot be excluded
+A6	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1218 1256	Persistent small effusion on the right
+E21	Medical-Problem:T27
+T28	Medical-Problem 1259 1268	Trace, if
+E22	Medical-Problem:T28
+T29	Medical-Problem 1296 1324	Stable moderate cardiomegaly
+E23	Medical-Problem:T29
+T30	Medical-Problem 1327 1359	Mild central vascular congestion
+E24	Medical-Problem:T30
+T31	Medical-Assertion 1360 1367	without
+A7	Medical-AssertionValue T31 absent
+T32	Medical-Problem 1369 1390	overt pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E18	Medical-Problem:T23 has-Medical-Anatomy:T22
+E19	Medical-Problem:T24 has-Medical-Anatomy:T22 has-Medical-Assertion:T26
+E20	Medical-Problem:T25 has-Medical-Anatomy:T22 has-Medical-Assertion:T26
+E25	Medical-Problem:T32 has-Medical-Assertion:T31

@@ -1,0 +1,29 @@
+T1	Medical-Problem 560 568;570 589	heart is moderately enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 595 626	stable widening of the vascular
+E2	Medical-Problem:T2
+T3	Medical-Problem 637 646;648 671	Bilateral heterogeneous opacities
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 695 726	right upper and left lower lung
+T5	Medical-Problem 748 763	pulmonary edema
+T6	Medical-Problem 774 796	superimposed infection
+T7	Medical-Assertion 800 803;805 813	not excluded
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 816 818	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 819 847	substantial pleural effusion
+T10	Medical-Problem 851 863	pneumothorax
+T11	Medical-Problem 883 904	Moderate cardiomegaly
+E9	Medical-Problem:T11
+T12	Medical-Problem 910 943	heterogeneous bilateral opacities
+E10	Medical-Problem:T12
+T13	Medical-Problem 962 977	pulmonary edema
+E11	Medical-Problem:T13
+T14	Medical-Problem 980 1002	Superimposed infection
+T15	Medical-Assertion 1006 1018	not excluded
+A3	Medical-AssertionValue T15 possible
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E12	Medical-Problem:T14 has-Medical-Assertion:T15

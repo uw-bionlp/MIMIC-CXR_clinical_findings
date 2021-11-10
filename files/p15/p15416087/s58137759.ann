@@ -1,0 +1,31 @@
+T1	Medical-Problem 30 37	Lucency
+E1	Medical-Problem:T1
+T2	Medical-Problem 52 73	right apical scarring
+E2	Medical-Problem:T2
+T3	Medical-Assertion 74 80	may be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 92 102;104 124	tiny right  apical pneumothorax
+T5	Medical-Problem 195 217	Right basilar opacitiy
+E4	Medical-Problem:T5
+T6	Lesion-Assertion 248 254	likely
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Anatomy 274 283	pulmonary
+T8	Lesion-Description 284 291	nodules
+T9	Medical-Problem 296 307	atelectasis
+E7	Medical-Problem:T9
+T10	Lesion-Characteristic 316 325	scattered
+T11	Lesion-Anatomy 326 335	pulmonary
+T12	Lesion-Description 338 345	nodules
+T13	Lesion-Anatomy 984 997	right pleural
+T14	Lesion-Description 1014 1019	tumor
+T15	Medical-Assertion 1081 1089	could be
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 1092 1125	very small right pleural effusion
+T17	Lesion-Anatomy 1166 1185	bilateral pulmonary
+T18	Lesion-Description 1186 1193	nodules
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T17

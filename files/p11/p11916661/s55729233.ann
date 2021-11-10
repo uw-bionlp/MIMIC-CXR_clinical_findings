@@ -1,0 +1,32 @@
+T1	Medical-Problem 283 307	poorly defined opacities
+T2	Medical-Anatomy 329 350	bilateral upper lobes
+T3	Lesion-Characteristic 391 404	pleural-based
+T4	Lesion-Description 405 411	masses
+T5	Lesion-Size-Trend 422 425	new
+A1	Lesion-Size-TrendValue T5 new
+T6	Medical-Problem 471 480	pneumonia
+E5	Medical-Problem:T6
+T7	Lesion-Characteristic 518 527	calcified
+T8	Lesion-Description 528 537	granuloma
+T9	Lesion-Anatomy 561 577	right lower lung
+T10	Medical-Assertion 580 591	No definite
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 601 610	overt CHF
+T12	Medical-Problem 618 622;624 653	mild pulmonary vascular congestion
+E10	Medical-Problem:T12
+T13	Medical-Problem 658 676	interstitial edema
+E11	Medical-Problem:T13
+T14	Medical-Problem 740 769	top normal to mildly enlarged
+E12	Medical-Problem:T14
+T15	Medical-Problem 772 778;780 794	Aortic calcifications
+E13	Medical-Problem:T15
+T16	Medical-Problem 868 891	Pleural-based opacities
+E14	Medical-Problem:T16
+T17	Medical-Problem 942 951	pneumonia
+E15	Medical-Problem:T17
+T18	Medical-Problem 1077 1100	Mild interstitial edema
+E16	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Size-Trend:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

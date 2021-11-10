@@ -1,0 +1,38 @@
+T1	Lesion-Size-Trend 34 40	Stable
+A1	Lesion-Size-TrendValue T1 no-change
+T2	Lesion-Characteristic 41 49	cavitary
+T3	Lesion-Description 50 57	lesions
+T4	Lesion-Characteristic 63 86	worsening peribronchial
+T5	Lesion-Characteristic 97 111;113 133	concerning for  worsening infection
+T6	Lesion-Characteristic 632 640	cavitary
+T7	Lesion-Description 641 648	lesions
+T8	Lesion-Size-Trend 653 674	similar in appearance
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Characteristic 678 688	Widespread
+E7	Lesion-Characteristic:T9
+T10	Medical-Problem 703 726	abnormality is worsened
+E8	Medical-Problem:T10
+T11	Medical-Assertion 727 741	concerning for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 742 751;753 762	worsening infection
+T13	Medical-Assertion 765 767	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 768 780	pneumothorax
+T15	Medical-Assertion 781 783	or
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 784 800	pleural effusion
+T17	Medical-Problem 850 865	Stable cavitary
+E12	Medical-Problem:T17
+T18	Lesion-Description 866 873	lesions
+E13	Lesion-Description:T18
+T19	Medical-Problem 878 911	worsening peribronchial opacities
+E14	Medical-Problem:T19
+T20	Medical-Assertion 913 927	concerning for
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Problem 928 963	worsening airways-related infection
+E2	Lesion-Description:T3 has-Lesion-Size-Trend:T1 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T6 has-Lesion-Size-Trend:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Assertion:T15
+E11	Medical-Problem:T16 has-Medical-Assertion:T13 has-Medical-Assertion:T15
+E15	Medical-Problem:T21 has-Medical-Assertion:T20

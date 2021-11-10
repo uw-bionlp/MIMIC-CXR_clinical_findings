@@ -1,0 +1,23 @@
+T1	Medical-Problem 320 337	New consolidation
+T2	Medical-Anatomy 345 360	left lower lobe
+T3	Medical-Assertion 361 369	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 370 379	pneumonia
+T5	Medical-Problem 381 392	atelectasis
+T6	Medical-Problem 398 408	aspiration
+T7	Medical-Problem 411 428	Mild cardiomegaly
+E6	Medical-Problem:T7
+T8	Medical-Problem 442 471	pulmonary vascular congestion
+E7	Medical-Problem:T8
+T9	Medical-Assertion 500 502	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 503 518	pulmonary edema
+T11	Medical-Problem 522 528	direct
+E9	Medical-Problem:T11
+T12	Medical-Problem 541 548;550 558	pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9

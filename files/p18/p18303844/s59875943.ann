@@ -1,0 +1,38 @@
+T1	Medical-Problem 321 336	Pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 341 370	pulmonary vascular congestion
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 401 412	right hilum
+T4	Medical-Problem 416 430	less prominent
+T5	Medical-Problem 448 477	previous vascular engorgement
+T6	Lesion-Assertion 489 500	no evidence
+A1	Lesion-AssertionValue T6 absent
+T7	Lesion-Anatomy 507 512	hilar
+T8	Lesion-Description 513 517	mass
+T9	Medical-Assertion 546 556	concerning
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 562 590	pulmonary valvular pathology
+T11	Medical-Problem 687 705;707 719	unchanged moderate cardiomegaly
+E9	Medical-Problem:T11
+T12	Medical-Problem 740 773	small bilateral pleural effusions
+E10	Medical-Problem:T12
+T13	Medical-Assertion 785 787	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 788 800	pneumothorax
+T15	Medical-Problem 804 823	focal consolidation
+T16	Medical-Problem 918 942	Improved pulmonary edema
+E13	Medical-Problem:T16
+T17	Medical-Problem 947 986	pulmonary vascular congestion, now mild
+E14	Medical-Problem:T17
+T18	Medical-Problem 992 1013	Vascular distribution
+E15	Medical-Problem:T18
+T19	Medical-Assertion 1014 1022	suggests
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1023 1048	pulmonary valve pathology
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3
+E7	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

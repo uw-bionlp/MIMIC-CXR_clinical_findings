@@ -1,0 +1,24 @@
+T1	Medical-Assertion 438 440	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 441 453	pneumothorax
+T3	Medical-Problem 604 612	probable
+E2	Medical-Problem:T3
+T4	Medical-Problem 613 625	cardiomegaly
+E3	Medical-Problem:T4
+T5	Medical-Problem 691 709;711 729	diffuse relatively granular opacities
+T6	Medical-Anatomy 730 751	throughout both lungs
+T7	Medical-Problem 758 782	area of air bronchograms
+T8	Medical-Anatomy 791 806	left upper zone
+T9	Medical-Problem 888 916	remains at markedly abnormal
+T10	Medical-Problem 977 1003	dense retrocardiac opacity
+E9	Medical-Problem:T10
+T11	Medical-Assertion 1006 1017	Possibility
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1022 1037	small effusions
+T13	Medical-Assertion 1038 1056	cannot be excluded
+A3	Medical-AssertionValue T13 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Assertion:T13

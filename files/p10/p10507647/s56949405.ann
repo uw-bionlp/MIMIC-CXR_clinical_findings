@@ -1,0 +1,40 @@
+T1	Lesion-Anatomy 398 407	Pulmonary
+T2	Lesion-Description 408 415	nodules
+T3	Lesion-Anatomy 471 476;478 488	right lower lung
+T4	Lesion-Size 513 519	2.3 cm
+T5	Lesion-Description 602 609	nodules
+E5	Lesion-Description:T5
+T6	Medical-Assertion 628 630	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 641 650	pneumonia
+T8	Medical-Problem 652 660	effusion
+T9	Medical-Problem 664 676	pneumothorax
+T10	Medical-Problem 705 715	Prominence
+T11	Medical-Anatomy 723 734	mediastinum
+T12	Lesion-Anatomy 750 771	right paramediastinal
+T13	Lesion-Description 772 776	mass
+T14	Medical-Problem 778 783;785 796	Areas of scarring
+T15	Medical-Anatomy 804 842	left lung apex and the right lung apex
+T16	Medical-Assertion 887 889	No
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 890 898	free air
+T18	Medical-Anatomy 909 928	right hemidiaphragm
+T19	Lesion-Anatomy 973 982	pulmonary
+T20	Lesion-Description 983 990	nodules
+T21	Lesion-Size 995 1000	large
+T22	Lesion-Anatomy 1001 1022	right paramediastinal
+T23	Lesion-Description 1023 1027	mass
+T24	Medical-Assertion 1058 1060	No
+A3	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1061 1083	superimposed pneumonia
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Anatomy:T3 has-Lesion-Size-Present:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Anatomy:T18
+E18	Lesion-Description:T20 has-Lesion-Anatomy:T19
+E21	Lesion-Description:T23 has-Lesion-Size-Present:T21 has-Lesion-Anatomy:T22
+E22	Medical-Problem:T25 has-Medical-Assertion:T24

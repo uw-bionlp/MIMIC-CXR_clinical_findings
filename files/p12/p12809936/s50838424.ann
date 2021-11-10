@@ -1,0 +1,26 @@
+T1	Medical-Assertion 195 197	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 198 210	pneumothorax
+T3	Medical-Problem 223 239	low lung volumes
+E2	Medical-Problem:T3
+T4	Lesion-Characteristic 244 251	bilobed
+T5	Lesion-Description 252 256	mass
+T6	Lesion-Count 260 263	two
+T7	Lesion-Description 274 281	lesions
+T8	Lesion-Anatomy 289 303	right mid lung
+T9	Medical-Problem 371 396	mild mediastinal widening
+E8	Medical-Problem:T9
+T10	Medical-Assertion 397 407	suggesting
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 408 423	lymphadenopathy
+T12	Medical-Problem 426 435	Opacities
+T13	Medical-Anatomy 443 458	left lower lobe
+T14	Medical-Assertion 463 469	likely
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 470 481	atelectases
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T8
+E6	Lesion-Description:T7 has-Lesion-Count:T6 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

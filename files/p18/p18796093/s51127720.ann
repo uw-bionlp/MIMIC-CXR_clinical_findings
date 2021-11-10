@@ -1,0 +1,38 @@
+T1	Medical-Problem 378 383;385 406	small anterior pneumothorax
+T2	Medical-Assertion 410 440	not clearly identified on this
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 449 460;462 488	Small right loculated pleural effusion
+E2	Medical-Problem:T3
+T4	Lesion-Anatomy 542 561	Bilateral pulmonary
+T5	Lesion-Description 562 569	nodules
+T6	Medical-Assertion 593 595	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 596 613	new consolidation
+T8	Medical-Anatomy 617 624	Cardiac
+T9	Medical-Assertion 636 643	appears
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 644 661	stably prominence
+T11	Lesion-Characteristic 664 675	Destructive
+T12	Lesion-Characteristic 676 687	soft tissue
+T13	Lesion-Description 688 694	lesion
+T14	Lesion-Size-Trend 741 750	unchanged
+A4	Lesion-Size-TrendValue T14 no-change
+T15	Medical-Assertion 816 818	no
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 819 837	large pneumothorax
+T17	Medical-Problem 907 928;930 946	loculated small right pleural effusion
+E12	Medical-Problem:T17
+T18	Lesion-Characteristic 973 984	destructive
+T19	Lesion-Characteristic 985 992	osseous
+T20	Lesion-Description 993 999	lesion
+T21	Medical-Problem 1052 1061	bilateral
+E16	Medical-Problem:T21
+T22	Lesion-Description 1072 1079	nodules
+E17	Lesion-Description:T22
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Lesion-Description:T13 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12 has-Lesion-Size-Trend:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Lesion-Description:T20 has-Lesion-Characteristic:T18 has-Lesion-Characteristic:T19

@@ -1,0 +1,33 @@
+T1	Medical-Problem 85 105	minimal indisctiness
+T2	Medical-Anatomy 115 136	pulmonary vasculature
+T3	Medical-Assertion 137 147	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 148 171	minimal pulmonary edema
+T5	Medical-Problem 191 210	bilateral opacities
+T6	Medical-Anatomy 212 237	greatest at the left base
+T7	Medical-Assertion 239 264	which raise suspicion for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 269 298	multifocal infectious process
+T9	Medical-Problem 708 731	Heterogeneous opacities
+T10	Medical-Anatomy 740 744	left
+T11	Lesion-Characteristic 786 796	widespread
+T12	Lesion-Characteristic 797 811	poorly defined
+T13	Lesion-Characteristic 813 820	nodular
+T14	Lesion-Description 821 830	opacities
+T15	Medical-Problem 999 1029	worsening multifocal opacities
+E13	Medical-Problem:T15
+T16	Medical-Assertion 1056 1069	could reflect
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1109 1129	aspiration pneumonia
+T18	Medical-Problem 1211 1230	Chronic volume loss
+T19	Medical-Problem 1235 1249	bronchiectasis
+T20	Medical-Anatomy 1253 1258;1260 1283	right middle lobe and lingula
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T20
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20

@@ -1,0 +1,43 @@
+T1	Medical-Problem 160 179	Emphysema is severe
+E1	Medical-Problem:T1
+T2	Medical-Problem 185 199	subtle opacity
+T3	Medical-Anatomy 207 223;225 229	right suprahilar lung
+T4	Lesion-Description 237 241	mass
+E4	Lesion-Description:T4
+T5	Medical-Anatomy 312 333	pulmonary vasculature
+T6	Medical-Problem 337 353	mildly prominent
+T7	Medical-Anatomy 361 372	lower lobes
+T8	Medical-Problem 403 421	mild case of edema
+T9	Medical-Assertion 422 440	cannot be excluded
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Anatomy 447 452	lungs
+T11	Medical-Assertion 458 465	without
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 468 491	new focal consolidation
+T13	Medical-Problem 493 501	effusion
+T14	Medical-Problem 506 518	pneumothorax
+T15	Medical-Assertion 521 523	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 524 529;531 540	acute fractures
+T17	Medical-Assertion 573 584	No evidence
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 591 620	acute cardiopulmonary process
+T19	Medical-Problem 629 636	opacity
+T20	Medical-Anatomy 657 673	right upper lobe
+T21	Medical-Anatomy 733 754	pulmonary vasculature
+T22	Medical-Problem 758 774	mildly prominent
+T23	Medical-Anatomy 783 794	lower lobes
+T24	Medical-Problem 822 837	mild case edema
+T25	Medical-Assertion 838 856	cannot be excluded
+A5	Medical-AssertionValue T25 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17 has-Medical-Anatomy:T20
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T21 has-Medical-Anatomy:T23
+E20	Medical-Problem:T24 has-Medical-Anatomy:T21 has-Medical-Anatomy:T23 has-Medical-Assertion:T25

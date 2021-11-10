@@ -1,0 +1,30 @@
+T1	Medical-Problem 248 261	consolidation
+T2	Medical-Problem 266 277	volume loss
+T3	Medical-Anatomy 285 299	left lung base
+T4	Medical-Assertion 306 321	could represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 323 334	atelectasis
+T6	Medical-Problem 358 386	small component of pneumonia
+T7	Medical-Assertion 387 396;398 415	cannot be entirely excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 478 480	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 481 503	large pleural effusion
+T10	Medical-Problem 507 519	pneumothorax
+T11	Medical-Assertion 575 583	Probable
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 584 595	atelectasis
+T13	Medical-Problem 611 618	opacity
+T14	Medical-Anatomy 626 640	left lung base
+T15	Medical-Problem 652 685	early/mild component of pneumonia
+T16	Medical-Assertion 689 709	difficult to exclude
+A5	Medical-AssertionValue T16 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T14
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E11	Medical-Problem:T15 has-Medical-Anatomy:T14 has-Medical-Assertion:T16

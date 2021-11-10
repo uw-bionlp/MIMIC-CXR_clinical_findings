@@ -1,0 +1,41 @@
+T1	Medical-Problem 172 197	chronic postradic changes
+T2	Medical-Problem 202 227	pleural apical thickening
+T3	Medical-Anatomy 236 252	right upper lobe
+T4	Medical-Problem 259 278	bibasilar opacities
+E4	Medical-Problem:T4
+T5	Medical-Problem 283 308	moderate pleural effusion
+E5	Medical-Problem:T5
+T6	Medical-Problem 359 381	superimposed infection
+T7	Medical-Assertion 382 388;390 401	cannot be excluded
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 413 415	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 416 431	pulmonary edema
+T10	Lesion-Size-Trend 434 440	Stable
+A3	Lesion-Size-TrendValue T10 no-change
+T11	Lesion-Characteristic 441 450	calcified
+T12	Lesion-Description 451 461	lymph node
+T13	Lesion-Anatomy 470 494	left paratracheal region
+T14	Medical-Assertion 497 499	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 500 512	pneumothorax
+T16	Medical-Problem 515 534	Degenerative change
+E12	Medical-Problem:T16
+T17	Medical-Problem 631 672	Mild worsening of the bibasilar opacities
+E13	Medical-Problem:T17
+T18	Medical-Problem 677 693	pleural effusion
+E14	Medical-Problem:T18
+T19	Medical-Problem 699 721	superimposed infection
+T20	Medical-Assertion 722 740	cannot be excluded
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Assertion 743 745	No
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 746 761	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T12 has-Lesion-Size-Trend:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Medical-Problem:T19 has-Medical-Assertion:T20
+E16	Medical-Problem:T22 has-Medical-Assertion:T21

@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 239 244	lungs
+T2	Medical-Problem 250 263	hyperinflated
+T3	Medical-Assertion 265 275	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 276 313	chronic obstructive pulmonary disease
+T5	Medical-Problem 363 386	thoracolumbar scoliosis
+E4	Medical-Problem:T5
+T6	Medical-Problem 389 398;400 411	Bibasilar atelectasis
+E5	Medical-Problem:T6
+T7	Lesion-Description 431 441	nodularity
+T8	Lesion-Anatomy 452 475	lateral right lung base
+T9	Medical-Problem 790 808	aorta is calcified
+E8	Medical-Problem:T9
+T10	Medical-Problem 815 845	bones are diffusely osteopenic
+E9	Medical-Problem:T10
+T11	Medical-Problem 867 904	old-appearing posterior rib fractures
+T12	Medical-Anatomy 920 994;996 1024	multiple right-sided ribs from approximately levels of the posterior right fourth, fifth and sixth ribs
+T13	Medical-Problem 1042 1058	callus formation
+T14	Medical-Problem 1080 1099	Hyperinflated lungs
+E13	Medical-Problem:T14
+T15	Medical-Assertion 1100 1110	suggesting
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 1111 1148	chronic obstructive pulmonary disease
+T17	Medical-Assertion 1155 1161	likely
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1162 1183	bibasilar atelectasis
+T19	Lesion-Characteristic 1186 1197	Ill-defined
+T20	Lesion-Description 1198 1213	nodular opacity
+T21	Lesion-Anatomy 1235 1258	lateral right lung base
+T22	Medical-Problem 1499 1547	Multiple old posterior right-sided rib fractures
+E19	Medical-Problem:T22
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T13 has-Medical-Anatomy:T12
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T15 has-Medical-Assertion:T17
+E17	Lesion-Description:T20 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T21

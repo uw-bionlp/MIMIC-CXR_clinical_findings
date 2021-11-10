@@ -1,0 +1,29 @@
+T1	Medical-Assertion 334 336	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 337 344;346 354	pleural effusion
+T3	Medical-Problem 358 370	pneumothorax
+T4	Medical-Assertion 382 384	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 385 400	pulmonary edema
+T6	Medical-Problem 440 455	mildly enlarged
+E4	Medical-Problem:T6
+T7	Lesion-Size 458 462	7-mm
+T8	Lesion-Characteristic 463 472	sclerotic
+T9	Lesion-Anatomy 473 490	left humeral head
+T10	Lesion-Description 491 497	lesion
+T11	Lesion-Assertion 498 503;505 523	could be compatible with
+A3	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 526 537	bone island
+T13	Medical-Assertion 566 577	no evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 581 596	pulmonary edema
+T15	Medical-Problem 600 616	pleural effusion
+T16	Medical-Problem 656 673	slightly enlarged
+E12	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E8	Lesion-Description:T10 has-Lesion-Size-Present:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9
+E9	Lesion-Description:T12 has-Lesion-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13

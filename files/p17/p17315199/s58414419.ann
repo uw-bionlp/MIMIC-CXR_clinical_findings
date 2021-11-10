@@ -1,0 +1,28 @@
+T1	Medical-Problem 255 263;265 282	heart is markedly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 294 314	mild pulmonary edema
+T3	Medical-Problem 320 327	opacity
+T4	Medical-Anatomy 335 340;342 372	lower lungs, left greater than right
+T5	Medical-Problem 395 403	effusion
+E5	Medical-Problem:T5
+T6	Medical-Problem 413 426	consolidation
+E6	Medical-Problem:T6
+T7	Medical-Assertion 447 449	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 450 462	pneumothorax
+T9	Medical-Problem 480 500	Massive cardiomegaly
+E8	Medical-Problem:T9
+T10	Medical-Problem 539 559	pericardial effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 562 577	Small effusions
+E10	Medical-Problem:T11
+T12	Medical-Problem 579 589	mild edema
+T13	Medical-Assertion 594 602	possible
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 603 616	consolidation
+T15	Medical-Anatomy 625 639	left lung base
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E11	Medical-Problem:T12 has-Medical-Anatomy:T15
+E12	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15

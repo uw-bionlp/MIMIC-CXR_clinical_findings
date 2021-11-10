@@ -1,0 +1,24 @@
+T1	Medical-Problem 251 271;273 282	diffuse interstitial opacities
+T2	Medical-Anatomy 305 328	left mid and upper lung
+T3	Medical-Assertion 340 342	no
+A1	Medical-AssertionValue T3 absent
+T4	Lesion-Anatomy 343 348	hilar
+T5	Lesion-Description 350 365	lymphadenopathy
+T6	Medical-Problem 367 383	pleural effusion
+T7	Medical-Problem 387 399	pneumothorax
+T8	Medical-Problem 444 476	Left lung interstitial opacities
+E7	Medical-Problem:T8
+T9	Medical-Problem 572 579;581 593	primary tuberculosis
+T10	Medical-Assertion 594 612	cannot be excluded
+A2	Medical-AssertionValue T10 possible
+T11	Lesion-Description 615 627	Lymphangitic
+E9	Lesion-Description:T11
+T12	Lesion-Description 628 642	carcinomatosis
+T13	Lesion-Assertion 651 659;661 668	possible as well
+A3	Lesion-AssertionValue T13 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T3
+E8	Medical-Problem:T9 has-Medical-Assertion:T10
+E10	Lesion-Description:T12 has-Lesion-Assertion:T13

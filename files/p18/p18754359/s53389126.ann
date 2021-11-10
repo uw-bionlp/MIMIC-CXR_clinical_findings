@@ -1,0 +1,34 @@
+T1	Medical-Problem 46 70	New, faint, hazy opacity
+T2	Medical-Anatomy 78 93	left lower lung
+T3	Medical-Assertion 97 111	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 115 120;122 143	early  developing pneumonia
+T5	Medical-Anatomy 253 268	left lower lung
+T6	Medical-Assertion 272 286	concerning for
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 290 295;297 318	early  developing pneumonia
+T8	Medical-Problem 846 869	new faint, hazy opacity
+T9	Medical-Anatomy 877 910;912 924	left lower lung abutting the left heart border
+T10	Medical-Assertion 928 942	concerning for
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 945 965	developing pneumonia
+T12	Medical-Assertion 968 970	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 971 985;987 996	larger pleural effusions
+T14	Medical-Assertion 999 1001	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 1002 1014	pneumothorax
+T16	Medical-Problem 1108 1115	opacity
+E11	Medical-Problem:T16
+T17	Medical-Anatomy 1123 1169	left lower lung abutting the left heart border
+T18	Medical-Assertion 1174 1188	concerning for
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1191 1211	developing pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

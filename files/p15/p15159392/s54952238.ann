@@ -1,0 +1,51 @@
+T1	Medical-Problem 211 227	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 365 391	aortic knob calcifications
+E2	Medical-Problem:T2
+T3	Medical-Problem 403 417	Linear opacity
+T4	Medical-Anatomy 429 443	left lung base
+T5	Medical-Assertion 444 464	most likely reflects
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 466 477	atelectasis
+T7	Medical-Problem 489 521	more focal consolidative opacity
+T8	Medical-Anatomy 529 541;543 549	retrocardiac region
+T9	Medical-Assertion 569 584	could represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 585 596	atelectasis
+T11	Medical-Problem 600 609	infection
+T12	Medical-Problem 612 617;619 640	Small left pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Anatomy 682 697	Right lung base
+T14	Medical-Problem 717 741	mild atelectatic changes
+T15	Medical-Assertion 744 746	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 747 759	pneumothorax
+T17	Lesion-Characteristic 779 788	Expansile
+T18	Lesion-Description 789 795	lesion
+T19	Lesion-Anatomy 807 831	anterior right fifth rib
+T20	Lesion-Size-Trend 835 844	unchanged
+A4	Lesion-Size-TrendValue T20 no-change
+T21	Medical-Problem 865 883	subacute fractures
+T22	Medical-Anatomy 891 910	right inferior ribs
+T23	Medical-Assertion 915 926;928 947	not clearly demonstrated on the
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 982 1003	Bibasilar atelectasis
+T25	Medical-Problem 1009 1041	more focal consolidative opacity
+T26	Medical-Anatomy 1050 1069	retrocardiac region
+T27	Medical-Problem 1102 1111	infection
+E22	Medical-Problem:T27
+T28	Medical-Problem 1115 1126	atelectasis
+E23	Medical-Problem:T28
+T29	Medical-Problem 1133 1164	New trace left pleural effusion
+E24	Medical-Problem:T29
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Lesion-Description:T18 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T19 has-Lesion-Size-Trend:T20
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22 has-Medical-Assertion:T23
+E19	Medical-Problem:T24 has-Medical-Anatomy:T26
+E20	Medical-Problem:T25 has-Medical-Anatomy:T26

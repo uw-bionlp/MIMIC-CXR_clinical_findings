@@ -1,0 +1,41 @@
+T1	Medical-Assertion 73 75	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 76 85	pneumonia
+T3	Medical-Assertion 130 132	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 133 162	acute cardiopulmonary process
+T5	Medical-Assertion 178 180	no
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 181 190	pneumonia
+T7	Medical-Assertion 238 240	No
+A4	Medical-AssertionValue T7 absent
+T8	Medical-Problem 241 270	acute cardiopulmonary process
+T9	Medical-Assertion 286 288	no
+A5	Medical-AssertionValue T9 absent
+T10	Medical-Problem 289 298	pneumonia
+T11	Lesion-Size 308 314	1.6 cm
+T12	Lesion-Characteristic 315 322	rounded
+T13	Lesion-Description 323 330	opacity
+T14	Lesion-Anatomy 347 369	left lower hemi thorax
+T15	Medical-Assertion 371 377;379 390	likely  represents
+A6	Medical-AssertionValue T15 possible
+T16	Medical-Problem 391 404	nipple shadow
+T17	Medical-Assertion 893 895	No
+A7	Medical-AssertionValue T17 absent
+T18	Medical-Problem 896 903	pleural
+E11	Medical-Problem:T18
+T19	Medical-Problem 904 912	effusion
+T20	Medical-Problem 916 928	pneumothorax
+T21	Medical-Assertion 1051 1053	no
+A8	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1054 1063	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T6 has-Medical-Assertion:T5
+E4	Medical-Problem:T8 has-Medical-Assertion:T7
+E5	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14
+E10	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T19 has-Medical-Assertion:T17
+E13	Medical-Problem:T20 has-Medical-Assertion:T17
+E14	Medical-Problem:T22 has-Medical-Assertion:T21

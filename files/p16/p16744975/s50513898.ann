@@ -1,0 +1,40 @@
+T1	Medical-Assertion 613 621	unlikely
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Anatomy 656 673	pulmonary vessels
+T3	Medical-Problem 678 693	mildly engorged
+T4	Medical-Assertion 694 710	without evidence
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 715 730	pulmonary edema
+T6	Medical-Problem 745 762	rounded opacities
+T7	Medical-Anatomy 770 813;815 819	right lung partially overlying the anterior ribs
+T8	Medical-Assertion 821 840	which may represent
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 841 850	pneumonia
+T10	Medical-Problem 854 875	healing rib fractures
+T11	Medical-Problem 958 968;970 989	small left apical pneumothorax
+E8	Medical-Problem:T11
+T12	Medical-Problem 1002 1045	extra pleural or loculated pleural hematoma
+T13	Medical-Anatomy 1054 1070	left upper chest
+T14	Medical-Assertion 1094 1096	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 1097 1125	significant pleural effusion
+T16	Medical-Problem 1139 1147	Multiple
+E12	Medical-Problem:T16
+T17	Medical-Problem 1148 1166	left rib fractures
+E13	Medical-Problem:T17
+T18	Medical-Problem 1306 1323	rounded opacities
+T19	Medical-Anatomy 1331 1341	right lung
+T20	Medical-Assertion 1343 1349	may be
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1350 1359	pneumonia
+T22	Medical-Problem 1363 1370;1372 1385	healing rib fractures
+E2	Medical-Problem:T3 has-Medical-Anatomy:T2
+E3	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E17	Medical-Problem:T22 has-Medical-Assertion:T20

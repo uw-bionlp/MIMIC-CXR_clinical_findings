@@ -1,0 +1,42 @@
+T1	Medical-Problem 199 222	lungs are hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Assertion 234 236	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 237 256	focal consolidation
+T4	Medical-Problem 261 273	pneumothorax
+T5	Medical-Problem 276 284	Blunting
+T6	Medical-Anatomy 292 316	left costophrenic sulcus
+T7	Medical-Assertion 317 330	may be due to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 333 338;340 356	small pleural effusion
+T9	Medical-Assertion 396 407;409 420	raising the possibility
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 424 454	increased pericardial effusion
+T11	Medical-Assertion 456 467	less likely
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 468 482	cardiomyopathy
+T13	Medical-Problem 536 544	Scarring
+T14	Medical-Anatomy 552 557;559 567	right mid lung
+T15	Medical-Assertion 603 605	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 606 615	pneumonia
+T17	Medical-Assertion 617 625	Possible
+A6	Medical-AssertionValue T17 possible
+T18	Medical-Problem 626 644	tiny left effusion
+T19	Medical-Assertion 711 717;719 734	raises the possibility
+A7	Medical-AssertionValue T19 possible
+T20	Medical-Problem 738 768	increased pericardial effusion
+T21	Medical-Assertion 770 781	less likely
+A8	Medical-AssertionValue T21 possible
+T22	Medical-Problem 782 796	cardiomyopathy
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T18 has-Medical-Assertion:T17
+E13	Medical-Problem:T20 has-Medical-Assertion:T19
+E14	Medical-Problem:T22 has-Medical-Assertion:T19 has-Medical-Assertion:T21

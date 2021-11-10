@@ -1,0 +1,18 @@
+T1	Medical-Problem 124 160	moderate bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 237 258	moderate cardiomegaly
+T3	Medical-Problem 265 298	pulmonary vascular redistribution
+T4	Medical-Problem 303 323	alveolar infiltrates
+T5	Medical-Anatomy 344 380	lower lobes, right greater than left
+T6	Medical-Problem 400 413	Continued CHF
+E6	Medical-Problem:T6
+T7	Medical-Problem 419 455	moderate bilateral pleural effusions
+E7	Medical-Problem:T7
+T8	Medical-Problem 460 470;472 493	underlying infectious infiltrate
+T9	Medical-Assertion 494 511	can't be excluded
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Anatomy 513 525	particularly
+E2	Medical-Problem:T2 has-Medical-Anatomy:T5
+E3	Medical-Problem:T3 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E8	Medical-Problem:T8 has-Medical-Assertion:T9 has-Medical-Anatomy:T10

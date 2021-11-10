@@ -1,0 +1,26 @@
+T1	Lesion-Size 287 292	Large
+T2	Lesion-Anatomy 293 323	left perihilar and mediastinal
+T3	Lesion-Description 324 332	masslike
+T4	Lesion-Count 363 371	Multiple
+T5	Lesion-Anatomy 372 386	bilateral lung
+T6	Lesion-Description 387 394	nodules
+T7	Lesion-Size-Trend 399 403	less
+A1	Lesion-Size-TrendValue T7 decreasing
+T8	Medical-Problem 441 457	low lung volumes
+E7	Medical-Problem:T8
+T9	Medical-Problem 469 478	elevation
+T10	Medical-Anatomy 486 504	left hemidiaphragm
+T11	Medical-Assertion 516 518	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 520 532	pneumothorax
+T13	Medical-Problem 536 553	evident pneumonia
+T14	Lesion-Description 664 668	mass
+E12	Lesion-Description:T14
+T15	Lesion-Anatomy 670 681	mediastinal
+T16	Lesion-Description 682 697	lymphadenopathy
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Count:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T15

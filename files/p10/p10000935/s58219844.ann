@@ -1,0 +1,36 @@
+T1	Medical-Problem 214 234	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 253 284;286 296	crowding of the bronchovascular structures
+E2	Medical-Problem:T2
+T3	Medical-Problem 312 346	mild pulmonary vascular congestion
+E3	Medical-Problem:T3
+T4	Medical-Problem 353 363;365 387	heart size is borderline enlarged
+E4	Medical-Problem:T4
+T5	Lesion-Count 456 467	Innumerable
+T6	Lesion-Description 468 475	nodules
+T7	Lesion-Anatomy 496 506	both lungs
+T8	Lesion-Anatomy 532 564	left upper and lower lung fields
+T9	Medical-Assertion 603 605	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 606 629	new focal consolidation
+T11	Medical-Problem 631 647	pleural effusion
+T12	Medical-Problem 651 663	pneumothorax
+T13	Medical-Problem 679 719	chronic elevation of right hemidiaphragm
+E12	Medical-Problem:T13
+T14	Medical-Problem 785 800	Rib deformities
+T15	Medical-Anatomy 812 817;819 829	right hemithorax
+T16	Medical-Problem 849 875	prior postsurgical changes
+T17	Lesion-Count 895 906	Innumerable
+T18	Lesion-Anatomy 907 916	pulmonary
+T19	Lesion-Description 917 927	metastases
+T20	Medical-Assertion 930 938	Possible
+A2	Medical-AssertionValue T20 possible
+T21	Medical-Problem 939 962;964 974	mild pulmonary vascular congestion
+E6	Lesion-Description:T6 has-Lesion-Count:T5 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T9
+E13	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T16 has-Medical-Anatomy:T15
+E18	Lesion-Description:T19 has-Lesion-Count:T17 has-Lesion-Anatomy:T18
+E19	Medical-Problem:T21 has-Medical-Assertion:T20

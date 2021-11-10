@@ -1,0 +1,38 @@
+T1	Medical-Problem 221 247	ill-defined hazy opacities
+T2	Medical-Anatomy 256 278	right medial lung base
+T3	Medical-Problem 290 303	opacification
+T4	Medical-Anatomy 311 329;331 336	right costophrenic angle
+T5	Medical-Assertion 338 354	likely represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 357 385	small parapneumonic effusion
+T7	Medical-Problem 390 405;407 414	equivocal small opacity
+T8	Medical-Anatomy 422 445	left upper lateral lung
+T9	Lesion-Anatomy 520 534	left perihilar
+T10	Lesion-Description 535 542	nodular
+E9	Lesion-Description:T10
+T11	Lesion-Description 543 550	opacity
+T12	Medical-Assertion 618 620	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 621 636	pulmonary edema
+T14	Medical-Problem 641 653	pneumothorax
+T15	Medical-Problem 671 705	Right medial basilar consolidation
+E13	Medical-Problem:T15
+T16	Medical-Assertion 707 721	suspicious for
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 722 733;735 749	right lower lobe pneumonia
+T18	Medical-Problem 752 792	Adjacent small to right pleural effusion
+E15	Medical-Problem:T18
+T19	Medical-Problem 797 812	Rounded opacity
+T20	Medical-Anatomy 825 835	left hilum
+T21	Lesion-Anatomy 881 896	juxtahilar lung
+T22	Lesion-Description 897 903	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E19	Lesion-Description:T22 has-Lesion-Anatomy:T21

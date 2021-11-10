@@ -1,0 +1,21 @@
+T1	Medical-Problem 182 190	effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 192 205	consolidation
+E2	Medical-Problem:T2
+T3	Medical-Problem 207 210	ptx
+E3	Medical-Problem:T3
+T4	Medical-Problem 289 304	pulmonary edema
+E4	Medical-Problem:T4
+T5	Medical-Problem 319 332	consolidation
+T6	Medical-Anatomy 336 346	both lungs
+T7	Medical-Assertion 374 382	probably
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 383 392	pneumonia
+T9	Medical-Problem 395 424;426 434	Pleural effusions are small 2 moderate
+E8	Medical-Problem:T9
+T10	Medical-Assertion 483 485	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 486 498	pneumothorax
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

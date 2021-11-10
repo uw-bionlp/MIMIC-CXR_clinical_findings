@@ -1,0 +1,17 @@
+T1	Medical-Problem 314 336	right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 364 392	mild basal effusion persists
+E2	Medical-Problem:T2
+T3	Medical-Problem 395 414;416 427	Subsequent areas of atelectasis
+T4	Medical-Anatomy 431 446	both lung bases
+T5	Medical-Assertion 449 460	No evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 464 482	right pneumothorax
+T7	Medical-Problem 485 494;496 565	Unchanged moderate cardiomegaly with triangular shape of the cardiac silhouette
+E6	Medical-Problem:T7
+T8	Medical-Problem 585 605	pericardial effusion
+T9	Medical-Assertion 606 624	should be excluded
+A2	Medical-AssertionValue T9 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T9

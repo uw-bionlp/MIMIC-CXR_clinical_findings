@@ -1,0 +1,40 @@
+T1	Medical-Problem 230 251	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 271 276	aorta
+T3	Medical-Problem 290 297;299 313	diffuse calcifications
+T4	Medical-Anatomy 379 400	pulmonary vascularity
+T5	Medical-Assertion 404 407	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 408 416	engorged
+T7	Lesion-Characteristic 419 428	Calcified
+T8	Lesion-Anatomy 429 438	pulmonary
+T9	Lesion-Description 439 446	nodules
+T10	Lesion-Anatomy 450 454;456 461	both lungs
+T11	Lesion-Size-Trend 466 475	unchanged
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Description 491 501	granulomas
+T13	Medical-Assertion 504 506	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 507 526	focal consolidation
+T15	Medical-Problem 529 545	pleural effusion
+T16	Medical-Problem 549 561	pneumothorax
+T17	Medical-Anatomy 579 584	lungs
+T18	Medical-Problem 589 607;609 637	hyperinflated with flattening of the diaphragms
+T19	Medical-Assertion 638 651	suggestive of
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 652 667	underlying COPD
+T21	Medical-Problem 670 685;687 700	Old right-sided rib fractures
+E17	Medical-Problem:T21
+T22	Medical-Assertion 741 743	No
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 744 777	acute cardiopulmonary abnormality
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T11
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T13
+E15	Medical-Problem:T18 has-Medical-Anatomy:T17
+E16	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T19
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

@@ -1,0 +1,27 @@
+T1	Medical-Problem 363 372	Elevation
+T2	Medical-Anatomy 380 399	right hemidiaphragm
+T3	Medical-Problem 432 449	streaky opacities
+T4	Medical-Anatomy 457 467	lung bases
+T5	Medical-Problem 484 509	areas of chronic scarring
+T6	Medical-Assertion 512 514	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 515 534	focal consolidation
+T8	Medical-Problem 536 552	pleural effusion
+T9	Medical-Problem 556 568	pneumothorax
+T10	Medical-Problem 581 589;591 622	Moderate multilevel degenerative changes
+T11	Medical-Anatomy 639 653	thoracic spine
+T12	Medical-Problem 674 714	Chronically elevated right hemidiaphragm
+E11	Medical-Problem:T12
+T13	Medical-Problem 720 746	chronic bibasilar scarring
+E12	Medical-Problem:T13
+T14	Medical-Assertion 748 750	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 752 771	focal consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

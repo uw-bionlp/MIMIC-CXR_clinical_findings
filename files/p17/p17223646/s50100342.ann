@@ -1,0 +1,18 @@
+T1	Medical-Problem 345 350;352 364	right pneumothorax
+T2	Medical-Assertion 365 377	has resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Assertion 390 392	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 393 410	pleural effusions
+T5	Lesion-Size 414 419	large
+T6	Lesion-Anatomy 420 425;427 442	right paramediastinal
+T7	Lesion-Description 443 447	mass
+T8	Medical-Problem 479 496;498 527	decreased central pulmonary vascular congestion
+E6	Medical-Problem:T8
+T9	Medical-Problem 667 679	pneumothorax
+T10	Medical-Assertion 680 696	appears resolved
+A3	Medical-AssertionValue T10 absent
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T10

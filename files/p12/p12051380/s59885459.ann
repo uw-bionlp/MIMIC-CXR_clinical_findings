@@ -1,0 +1,40 @@
+T1	Medical-Problem 380 392	Postsurgical
+T2	Medical-Anatomy 433 448	right lung apex
+T3	Medical-Problem 461 474	opacification
+T4	Medical-Anatomy 482 497	right lung base
+T5	Medical-Assertion 499 516	likely reflecting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 517 528	combination
+T7	Medical-Problem 576 593	new consolidation
+T8	Medical-Anatomy 601 610;612 616	left lung base
+T9	Medical-Assertion 619 621	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 622 643	left pleural effusion
+T11	Medical-Problem 647 659	pneumothorax
+T12	Medical-Problem 679 741	size of the cardiomediastinal silhouette is widened, increased
+E10	Medical-Problem:T12
+T13	Medical-Assertion 756 776	likely reflective of
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 777 796	postsurgical change
+T15	Medical-Problem 801 824	increased volume status
+T16	Medical-Problem 829 845	Subcutaneous gas
+T17	Medical-Anatomy 864 888	right lateral chest wall
+T18	Medical-Problem 948 969	postoperative changes
+T19	Medical-Anatomy 984 1000	right hemithorax
+T20	Medical-Problem 1024 1035	New opacity
+T21	Medical-Anatomy 1043 1064	medial left lung base
+T22	Medical-Assertion 1065 1076	may reflect
+A4	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1079 1097	focus of infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21
+E19	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22

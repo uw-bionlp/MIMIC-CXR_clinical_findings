@@ -1,0 +1,23 @@
+T1	Medical-Problem 236 281	pulmonary vasculature is decreased in caliber
+E1	Medical-Problem:T1
+T2	Medical-Assertion 295 313	no strong findings
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 317 326	pneumonia
+T4	Medical-Assertion 403 405	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 406 418	pneumothorax
+T6	Medical-Problem 421 433;435 446	Left pleural effusion is
+E4	Medical-Problem:T6
+T7	Medical-Problem 462 491	Small region of opacification
+T8	Medical-Anatomy 499 510;512 521	base of the left lung
+T9	Medical-Assertion 522 530	could be
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 531 542	atelectasis
+T11	Medical-Assertion 548 573	bears watching to exclude
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 576 586;588 597	very early pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T11

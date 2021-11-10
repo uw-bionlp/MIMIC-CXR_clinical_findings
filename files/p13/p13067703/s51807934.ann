@@ -1,0 +1,34 @@
+T1	Medical-Problem 468 495	bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Assertion 503 506;508 510	may be
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 511 519	at least
+E2	Medical-Problem:T3
+T4	Medical-Problem 520 539	partially loculated
+T5	Medical-Anatomy 544 555	Right upper
+E4	Medical-Anatomy:T5
+T6	Lesion-Assertion 643 662	raising concern for
+A2	Lesion-AssertionValue T6 possible
+T7	Medical-Problem 691 698;700 749	Streaky right infrahilar opacity underlying chain sutures
+E5	Medical-Problem:T7
+T8	Medical-Assertion 751 764	may relate to
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 765 772;774 781	chronic changes
+T10	Lesion-Characteristic 915 924	Increased
+T11	Lesion-Description 925 940	nodular opacity
+T12	Lesion-Anatomy 948 989	medial right apex/right suprahilar region
+T13	Lesion-Assertion 1018 1027	worrisome
+A4	Lesion-AssertionValue T13 possible
+T14	Medical-Problem 1064 1114	Bilateral left greater than right pleural effusion
+E10	Medical-Problem:T14
+T15	Medical-Problem 1133 1142	loculated
+E11	Medical-Problem:T15
+T16	Medical-Problem 1170 1202	Right infrahilar streaky opacity
+E12	Medical-Problem:T16
+T17	Medical-Assertion 1203 1213	may relate
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1252 1272	more acute component
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12 has-Lesion-Assertion:T13
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

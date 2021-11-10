@@ -1,0 +1,17 @@
+T1	Medical-Problem 344 352	Widening
+T2	Medical-Anatomy 361 389	cardiomediastinal silhouette
+T3	Medical-Assertion 393 408	probably due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 409 432;434 452	increased intravascular volume or pressure
+T5	Medical-Assertion 464 466	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 467 482	pulmonary edema
+T7	Medical-Problem 485 508	Small pleural effusions
+E5	Medical-Problem:T7
+T8	Medical-Assertion 535 537	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 538 550	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

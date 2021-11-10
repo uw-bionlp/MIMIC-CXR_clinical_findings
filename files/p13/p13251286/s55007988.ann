@@ -1,0 +1,16 @@
+T1	Medical-Problem 312 328;330 348	worsening of the airspace opacities
+T2	Medical-Anatomy 356 366	right base
+T3	Medical-Problem 390 397;399 412	Diffuse consolidation
+T4	Medical-Anatomy 427 436	left lung
+T5	Medical-Assertion 463 465	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 467 481	pneumothoraces
+T7	Medical-Problem 521 530	pneumonia
+E6	Medical-Problem:T7
+T8	Medical-Problem 542 570	superimposed pulmonary edema
+T9	Medical-Assertion 579 585	likely
+A2	Medical-AssertionValue T9 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T9

@@ -1,0 +1,28 @@
+T1	Medical-Problem 380 418	Diffuse ill-defined airspace opacities
+T2	Medical-Anatomy 432 443;445 499	both lungs, more pronounced in the left lung compared to the right
+T3	Medical-Assertion 511 513	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 514 523;525 544	pulmonary vascular congestion
+T5	Medical-Problem 546 562	pleural effusion
+T6	Medical-Problem 566 578	pneumothorax
+T7	Medical-Assertion 581 583	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 584 597;599 610	acute osseous abnormality
+T9	Medical-Problem 639 668	Diffuse ill-defined opacities
+T10	Medical-Anatomy 672 682	both lungs
+T11	Medical-Assertion 728 742	concerning for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 750 770	multifocal pneumonia
+T13	Medical-Problem 774 778	PCP,
+T14	Medical-Problem 809 826	somewhat atypical
+E11	Medical-Problem:T14
+T15	Medical-Problem 837 869;871 896	somewhat asymmetric distribution of the airspace opacities
+E12	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

@@ -1,0 +1,36 @@
+T1	Medical-Problem 214 235;237 271	extensive, asymmetric interstitial opacities bilaterally
+T2	Medical-Anatomy 291 300	left lung
+T3	Medical-Problem 313 321	improved
+T4	Medical-Anatomy 338 354	right upper lung
+T5	Medical-Problem 366 389	degree of opacification
+T6	Medical-Anatomy 398 413	left upper lung
+T7	Medical-Problem 459 469;471 494	background of chronic lung disease
+E7	Medical-Problem:T7
+T8	Medical-Assertion 507 513	likely
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 514 547	small bilateral pleural effusions
+T10	Medical-Anatomy 555 562	cardiac
+T11	Medical-Problem 577 592	mildly enlarged
+T12	Medical-Problem 631 656	parenchymal abnormalities
+E11	Medical-Problem:T12
+T13	Medical-Problem 659 679	Dense calcifications
+T14	Medical-Anatomy 701 707;709 713	aortic arch
+T15	Medical-Anatomy 718 730	mitral valve
+T16	Medical-Assertion 733 735	No
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 736 748	pneumothorax
+T18	Medical-Problem 793 850	Bilateral asymmetric and extensive interstitial opacities
+E16	Medical-Problem:T18
+T19	Medical-Assertion 858 871	could reflect
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 872 892	multifocal pneumonia
+T21	Medical-Problem 896 922	asymmetric pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T19

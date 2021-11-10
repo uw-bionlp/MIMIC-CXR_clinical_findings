@@ -1,0 +1,33 @@
+T1	Medical-Assertion 459 461;463 471	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 475 487	pneumothorax
+T3	Medical-Assertion 489 491	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 492 500	free air
+T5	Medical-Problem 507 534	large pleural-based opacity
+T6	Medical-Anatomy 553 568	right lung apex
+T7	Lesion-Description 607 616	opacities
+E5	Lesion-Description:T7
+T8	Medical-Anatomy 647 657;659 663	left upper lobe
+E6	Medical-Anatomy:T8
+T9	Medical-Anatomy 675 690	left lower lobe
+E7	Medical-Anatomy:T9
+T10	Medical-Problem 692 724	Substantial right hilar fullness
+E8	Medical-Problem:T10
+T11	Medical-Assertion 725 731	may be
+A3	Medical-AssertionValue T11 possible
+T12	Lesion-Description 743 763	lymphadenopathy/mass
+E9	Lesion-Description:T12
+T13	Medical-Problem 775 790	pulmonary edema
+T14	Lesion-Count 855 863	Multiple
+T15	Lesion-Description 876 882	masses
+T16	Lesion-Size 895 900	large
+T17	Lesion-Characteristic 901 914	pleural-based
+T18	Lesion-Anatomy 915 930	right lung apex
+T19	Lesion-Description 932 936	mass
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Count:T14
+E16	Lesion-Description:T19 has-Lesion-Size-Present:T16 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T18

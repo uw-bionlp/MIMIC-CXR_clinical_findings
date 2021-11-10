@@ -1,0 +1,35 @@
+T1	Medical-Problem 225 230	Large
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 247 263	right upper lobe
+T3	Lesion-Characteristic 267 275	somewhat
+T4	Lesion-Description 276 284	masslike
+T5	Lesion-Characteristic 289 302	may represent
+T6	Medical-Problem 303 312	infection
+E6	Medical-Problem:T6
+T7	Lesion-Description 323 331	neoplasm
+T8	Lesion-Assertion 340 348	possible
+A1	Lesion-AssertionValue T8 possible
+T9	Lesion-Description 353 359	nodule
+T10	Lesion-Anatomy 371 400	superior to the large opacity
+T11	Medical-Problem 403 430	Patchy lower lobe opacities
+T12	Medical-Assertion 447 455	possibly
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 488 490	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 491 507	pleural effusion
+T15	Medical-Problem 511 523	pneumothorax
+T16	Lesion-Anatomy 587 603	Right upper lobe
+T17	Medical-Problem 604 617	consolidation
+E14	Medical-Problem:T17
+T18	Lesion-Description 632 638	nodule
+T19	Medical-Problem 655 681	patchy bibasilar opacities
+E16	Medical-Problem:T19
+T20	Medical-Assertion 694 700	may be
+A4	Medical-AssertionValue T20 possible
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T2 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T5
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T2 has-Lesion-Assertion:T8
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T16

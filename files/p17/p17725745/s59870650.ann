@@ -1,0 +1,27 @@
+T1	Medical-Problem 308 345	cardiac silhouette is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 353 364	aortic knob
+T3	Medical-Problem 368 377	calcified
+T4	Medical-Assertion 386 392	may be
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 393 427;429 439	minimal central pulmonary vascular congestion
+T6	Medical-Assertion 440 447	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 448 469	overt pulmonary edema
+T8	Medical-Problem 472 497	Mild degenerative changes
+E6	Medical-Problem:T8
+T9	Medical-Assertion 547 555	Possible
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 556 593	minimal pulmonary vascular congestion
+T11	Medical-Assertion 594 601	without
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 602 607;609 624	overt pulmonary edema
+T13	Lesion-Count 648 656	multiple
+T14	Lesion-Anatomy 657 666	pulmonary
+T15	Lesion-Description 667 674	nodules
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Count:T13 has-Lesion-Anatomy:T14

@@ -1,0 +1,43 @@
+T1	Medical-Problem 230 238;240 267	heart is mild to moderately enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 274 285	aortic arch
+T3	Medical-Problem 289 298	calcified
+T4	Medical-Problem 367 395;397 408	mild background interstitial abnormality
+E4	Medical-Problem:T4
+T5	Medical-Assertion 410 425	possibly due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 426 451	slight chronic congestion
+T7	Medical-Problem 508 533	new right basilar opacity
+E6	Medical-Problem:T7
+T8	Medical-Problem 551 578	increasing pleural effusion
+T9	Medical-Assertion 580 591	potentially
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Anatomy 638 643	right
+T11	Medical-Problem 701 729	increasing posterior opacity
+T12	Medical-Problem 734 756	trace pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Assertion 804 806	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 807 819	pneumothorax
+T15	Medical-Problem 822 851	Moderate degenerative changes
+T16	Medical-Anatomy 873 900	mid to lower thoracic spine
+T17	Medical-Problem 918 966	Somewhat improved background vascular congestion
+E14	Medical-Problem:T17
+T18	Medical-Problem 971 981;983 1017	increasing right basilar opacity and effusion
+E15	Medical-Problem:T18
+T19	Medical-Assertion 1020 1047	Differential considerations
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1060 1120	increasing effusion associated with congestive heart failure
+T21	Medical-Problem 1125 1135;1137 1148	associated atelectasis
+T22	Medical-Problem 1159 1168	pneumonia
+T23	Medical-Assertion 1169 1200	could also be considered in the
+A5	Medical-AssertionValue T23 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T19 has-Medical-Assertion:T23

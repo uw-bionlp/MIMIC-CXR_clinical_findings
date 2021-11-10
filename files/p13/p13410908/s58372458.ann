@@ -1,0 +1,23 @@
+T1	Medical-Problem 296 306	prominence
+T2	Medical-Anatomy 310 333	main pulmonary arteries
+T3	Medical-Assertion 340 364	might be consistent with
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 365 387	pulmonary hypertension
+T5	Medical-Anatomy 432 447	left upper lung
+T6	Medical-Problem 458 477	ill-defined opacity
+T7	Medical-Anatomy 499 514	left upper lobe
+T8	Medical-Assertion 560 565;567 576	might represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 577 605	potentially calcified plaque
+T10	Medical-Assertion 608 610	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 611 627	pleural effusion
+T12	Medical-Problem 631 643	pneumothorax
+T13	Medical-Problem 655 669	Hyperinflation
+E10	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10

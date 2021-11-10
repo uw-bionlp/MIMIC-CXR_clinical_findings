@@ -1,0 +1,43 @@
+T1	Medical-Problem 243 252;254 267	Lungs are hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Problem 285 289	COPD
+E2	Medical-Problem:T2
+T3	Lesion-Characteristic 294 299	vague
+T4	Lesion-Description 300 315	nodular opacity
+T5	Lesion-Anatomy 335 351	right lower lung
+T6	Medical-Assertion 358 373	could represent
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 374 404	suprasternal overlying density
+T8	Lesion-Characteristic 416 420	true
+T9	Lesion-Description 421 427	nodule
+T10	Lesion-Assertion 431 443	not excluded
+A2	Lesion-AssertionValue T10 possible
+T11	Medical-Assertion 446 448	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 458 467	pneumonia
+T13	Medical-Problem 471 474	CHF
+T14	Medical-Assertion 477 479	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 481 489	effusion
+T16	Medical-Problem 493 505	pneumothorax
+T17	Medical-Problem 508 542	Prominent retrosternal clear space
+E13	Medical-Problem:T17
+T18	Medical-Problem 575 579	COPD
+E14	Medical-Problem:T18
+T19	Medical-Assertion 657 659	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 660 668	free air
+T21	Medical-Problem 724 728	COPD
+E16	Medical-Problem:T21
+T22	Lesion-Size 734 738	tiny
+T23	Lesion-Description 739 754	nodular opacity
+T24	Lesion-Anatomy 762 778	right lower lung
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T8 has-Lesion-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Lesion-Description:T23 has-Lesion-Size-Present:T22 has-Lesion-Anatomy:T24

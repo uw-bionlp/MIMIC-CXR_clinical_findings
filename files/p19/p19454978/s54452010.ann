@@ -1,0 +1,36 @@
+T1	Medical-Problem 29 42	Mild fullness
+T2	Medical-Anatomy 50 60	right hila
+T3	Medical-Assertion 61 73	may indicate
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 74 100	early developing infection
+T5	Medical-Problem 486 499	Mild fullness
+T6	Medical-Anatomy 507 517	right hila
+T7	Medical-Assertion 518 530	may indicate
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 531 536;538 558	early developing infection
+T9	Medical-Problem 593 600	Opacity
+T10	Medical-Anatomy 608 612;614 618	left base
+T11	Medical-Problem 682 693	atelectasis
+T12	Medical-Problem 695 716	Moderate cardiomegaly
+E10	Medical-Problem:T12
+T13	Medical-Assertion 728 730	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 731 743	pneumothorax
+T15	Medical-Assertion 744 746	or
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 747 754;756 764	pleural effusion
+T17	Medical-Problem 785 798	Mild fullness
+T18	Medical-Anatomy 806 816	right hila
+T19	Medical-Assertion 817 829	may indicate
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 830 856	early developing infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Assertion:T15
+E12	Medical-Problem:T16 has-Medical-Assertion:T13 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19

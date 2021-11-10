@@ -1,0 +1,29 @@
+T1	Medical-Problem 283 318;320 338	Mild to moderate enlargement of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 407 437	atherosclerotic calcifications
+T3	Medical-Anatomy 451 462	aortic knob
+T4	Medical-Anatomy 470 491	pulmonary vasculature
+T5	Medical-Assertion 495 498	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 499 507	engorged
+T7	Medical-Problem 510 527	Streaky opacities
+T8	Medical-Anatomy 532 542	lung bases
+T9	Medical-Assertion 543 546;548 555	may reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 556 576	areas of atelectasis
+T11	Medical-Problem 579 612	Small bilateral pleural effusions
+E9	Medical-Problem:T11
+T12	Medical-Assertion 671 673	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 674 686	pneumothorax
+T14	Medical-Assertion 689 691	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 692 705;707 720	acute osseous abnormalities
+T16	Medical-Problem 750 776	Mild bibasilar atelectasis
+E12	Medical-Problem:T16
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

@@ -1,0 +1,34 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 61	acute cardiopulmonary process
+T3	Lesion-Count 754 757	two
+E2	Lesion-Count:T3
+T4	Lesion-Characteristic 777 788	ill-defined
+E3	Lesion-Characteristic:T4
+T5	Lesion-Anatomy 813 818;820 830	right upper lung
+E4	Lesion-Anatomy:T5
+T6	Medical-Problem 903 941	areas of early aspiration or infection
+E5	Medical-Problem:T6
+T7	Medical-Problem 987 993	emboli
+T8	Medical-Assertion 994 1019	should also be considered
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 1066 1074	blunting
+T10	Medical-Anatomy 1082 1105	left costophrenic angle
+T11	Medical-Assertion 1112 1125	may represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1127 1145	pleural thickening
+T13	Medical-Problem 1151 1165	small effusion
+T14	Medical-Assertion 1168 1170	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 1171 1183	pneumothorax
+T16	Medical-Problem 1250 1263	Calcification
+T17	Medical-Anatomy 1271 1276	aorta
+T18	Medical-Problem 1295 1310	atherosclerosis
+E14	Medical-Problem:T18
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17

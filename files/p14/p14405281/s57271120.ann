@@ -1,0 +1,46 @@
+T1	Medical-Assertion 425 427	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 428 465	typical configurational abnormalities
+T3	Medical-Problem 565 583	increased widening
+T4	Medical-Anatomy 591 611	superior mediastinum
+T5	Lesion-Characteristic 619 622;624 631	now bulging
+T6	Lesion-Description 632 636	mass
+T7	Lesion-Anatomy 644 683	left above the level of the aortic knob
+T8	Medical-Problem 715 735	increased thickening
+T9	Medical-Anatomy 743 782;784 793	pleural space in the apical area on the left side
+T10	Lesion-Description 844 851	nodular
+E9	Lesion-Description:T10
+T11	Lesion-Description 852 859	lesions
+T12	Lesion-Anatomy 868 877	left lung
+T13	Lesion-Size-Trend 897 920	appear rather unchanged
+A2	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Problem 927 942;944 961	left lower lobe plate atelectasis
+T15	Medical-Assertion 1004 1012	resolved
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1020 1044	pleural density persists
+E13	Medical-Problem:T16
+T17	Medical-Assertion 1108 1119	No evidence
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1123 1139	pleural effusion
+T19	Medical-Problem 1235 1248	mild blunting
+T20	Medical-Anatomy 1257 1296	posterior pleural sinuses on both sides
+T21	Medical-Problem 1299 1326;1328 1337	Demineralization of several vertebral
+E17	Medical-Problem:T21
+T22	Lesion-Description 1525 1534	carcinoma
+E18	Lesion-Description:T22
+T23	Lesion-Anatomy 1548 1565	left-sided breast
+T24	Lesion-Description 1566 1570	mass
+T25	Medical-Problem 1588 1652	Stable appearance of left-sided small amount of pleural effusion
+E21	Medical-Problem:T25
+T26	Medical-Problem 1673 1685	new widening
+T27	Medical-Anatomy 1689 1721	superior mediastinum to the left
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T13
+E12	Medical-Problem:T14 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E20	Lesion-Description:T24 has-Lesion-Anatomy:T23
+E22	Medical-Problem:T26 has-Medical-Anatomy:T27

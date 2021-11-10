@@ -1,0 +1,23 @@
+T1	Medical-Problem 525 542;544 554	bilateral pleural effusions,
+E1	Medical-Problem:T1
+T2	Medical-Problem 618 629	atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 634 656	superimposed infection
+T4	Medical-Assertion 657 675	cannot be excluded
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Assertion 678 680	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 681 693	pneumothorax
+T7	Medical-Problem 745 773;775 782	mild multilevel degenerative changes
+T8	Medical-Anatomy 790 804	thoracic spine
+T9	Medical-Problem 849 900;902 906	bilateral pleural effusions, right greater than the left
+E7	Medical-Problem:T9
+T10	Medical-Problem 918 940	associated atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Problem 942 964	superimposed infection
+T12	Medical-Assertion 965 974;976 984	cannot be excluded
+A3	Medical-AssertionValue T12 possible
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T12

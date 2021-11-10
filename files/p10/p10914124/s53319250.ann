@@ -1,0 +1,44 @@
+T1	Medical-Problem 225 251	right effusion is somewhat
+E1	Medical-Problem:T1
+T2	Medical-Problem 267 280	left effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 314 336	underlying atelectasis
+T4	Medical-Anatomy 345 350	right
+T5	Medical-Problem 355 374	underlying collapse
+T6	Medical-Problem 382 395	consolidation
+T7	Medical-Anatomy 403 407	left
+T8	Medical-Assertion 410 412	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 414 426	pneumothorax
+T10	Medical-Problem 489 529	cardiomediastinal silhouette is enlarged
+E9	Medical-Problem:T10
+T11	Medical-Assertion 547 549	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 550 553	CHF
+T13	Medical-Assertion 556 558	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 559 564;566 576	focal infiltrate
+T15	Medical-Anatomy 584 616	upper or mid zone on either side
+T16	Medical-Assertion 619 626	Suspect
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 627 637;639 653	background hyperinflation
+T18	Medical-Assertion 654 667	suggestive of
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 668 672	COPD
+T20	Medical-Problem 911 933	right pleural effusion
+E15	Medical-Problem:T20
+T21	Medical-Problem 936 940;942 958	Left pleural effusion
+E16	Medical-Problem:T21
+T22	Medical-Assertion 982 984	No
+A6	Medical-AssertionValue T22 absent
+T23	Medical-Problem 985 997	pneumothorax
+T24	Medical-Anatomy 1013 1019;1021 1030	either lung apex
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T7
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T16 has-Medical-Assertion:T18
+E17	Medical-Problem:T23 has-Medical-Assertion:T22 has-Medical-Anatomy:T24

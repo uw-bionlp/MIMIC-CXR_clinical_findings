@@ -1,0 +1,27 @@
+T1	Medical-Problem 261 275;277 288	minimal linear atelectasis
+T2	Medical-Anatomy 296 310	left lung base
+T3	Medical-Assertion 383 385	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 386 402	pleural effusion
+T5	Medical-Problem 406 418	pneumothorax
+T6	Lesion-Description 454 467	nodular focus
+T7	Lesion-Size 471 477	1.8 cm
+T8	Lesion-Anatomy 499 547	posteroinferior angle of a mid thoracic vertebra
+T9	Lesion-Anatomy 556 576;578 593	superior segments of the lower lobes
+T10	Lesion-Description 600 606	lesion
+E9	Lesion-Description:T10
+T11	Medical-Problem 677 699	Small hyperdense focus
+E10	Medical-Problem:T11
+T12	Medical-Assertion 750 765	might represent
+A2	Medical-AssertionValue T12 possible
+T13	Lesion-Characteristic 769 780	ill-defined
+T14	Lesion-Characteristic 781 790	sclerotic
+T15	Lesion-Characteristic 791 795	bony
+T16	Lesion-Description 796 802	lesion
+T17	Medical-Problem 812 816;818 831	lung consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E14	Lesion-Description:T16 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14 has-Lesion-Characteristic:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T12

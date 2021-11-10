@@ -1,0 +1,19 @@
+T1	Medical-Problem 307 327	Mild pulmonary edema
+T2	Medical-Anatomy 346 361	left lower lung
+T3	Medical-Problem 385 421	More severe interstitial abnormality
+T4	Medical-Anatomy 429 439	right lung
+T5	Medical-Problem 444 449;451 464	basal consolidation
+T6	Lesion-Assertion 489 499	suggestion
+A1	Lesion-AssertionValue T6 possible
+T7	Lesion-Anatomy 503 514	right hilar
+T8	Lesion-Description 515 525	adenopathy
+T9	Medical-Problem 559 565	simply
+E8	Medical-Problem:T9
+T10	Medical-Problem 566 582	asymmetric edema
+E9	Medical-Problem:T10
+T11	Medical-Problem 618 639	Moderate cardiomegaly
+E10	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7

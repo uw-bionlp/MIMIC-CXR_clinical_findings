@@ -1,0 +1,31 @@
+T1	Medical-Assertion 177 179	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 180 199	focal consolidation
+T3	Medical-Problem 201 208;210 218	pleural effusion
+T4	Medical-Problem 222 234	pneumothorax
+T5	Lesion-Size-Trend 239 242	new
+A2	Lesion-Size-TrendValue T5 new
+T6	Lesion-Size 243 247	8 mm
+T7	Lesion-Characteristic 248 253	round
+T8	Lesion-Description 254 261	opacity
+T9	Lesion-Anatomy 277 286;288 292	left lung apex
+T10	Medical-Problem 349 357;359 367	aorta is tortuous
+E8	Medical-Problem:T10
+T11	Lesion-Size-Trend 385 388	New
+A3	Lesion-Size-TrendValue T11 new
+T12	Lesion-Size 389 393	8 mm
+T13	Lesion-Characteristic 394 399	round
+T14	Lesion-Description 400 407	opacity
+T15	Lesion-Anatomy 423 437	left lung apex
+T16	Lesion-Assertion 439 442;444 453	may represent
+A4	Lesion-AssertionValue T16 possible
+T17	Lesion-Size-Trend 454 457	new
+A5	Lesion-Size-TrendValue T17 new
+T18	Lesion-Anatomy 458 467	pulmonary
+T19	Lesion-Description 468 474	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E6	Lesion-Description:T8 has-Lesion-Size-Trend:T5 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E11	Lesion-Description:T14 has-Lesion-Size-Trend:T11 has-Lesion-Size-Present:T12 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15
+E14	Lesion-Description:T19 has-Lesion-Assertion:T16 has-Lesion-Size-Trend:T17 has-Lesion-Anatomy:T18

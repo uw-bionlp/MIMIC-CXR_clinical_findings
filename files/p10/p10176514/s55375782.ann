@@ -1,0 +1,30 @@
+T1	Medical-Assertion 370 378	probable
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 379 397;399 411	small right apical pneumothorax
+T3	Medical-Problem 524 546	subcutaneous emphysema
+T4	Medical-Anatomy 555 583	right supraclavicular region
+T5	Medical-Problem 621 635	patchy opacity
+T6	Medical-Anatomy 643 653	right base
+T7	Medical-Problem 660 668	blunting
+T8	Medical-Anatomy 677 701	right costophrenic angle
+T9	Medical-Problem 706 715	elevation
+E8	Medical-Problem:T9
+T10	Medical-Anatomy 846 850;852 856	left lung
+T11	Medical-Assertion 875 882	without
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 883 886	CHF
+T13	Medical-Problem 888 904	focal infiltrate
+T14	Medical-Problem 908 916	effusion
+T15	Medical-Problem 935 956	left base atelectasis
+T16	Medical-Problem 961 969	blunting
+T17	Medical-Assertion 997 1000;1002 1010	has resolved
+A3	Medical-AssertionValue T17 absent
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Medical-Problem:T15 has-Medical-Assertion:T17
+E14	Medical-Problem:T16 has-Medical-Assertion:T17

@@ -1,0 +1,22 @@
+T1	Medical-Anatomy 417 421	lung
+T2	Medical-Problem 433 437	only
+T3	Medical-Problem 438 454;456 474	minimal residual linear atelectasis
+T4	Medical-Anatomy 488 503	left lower lobe
+T5	Medical-Assertion 506 508	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 509 528	focal consolidation
+T7	Medical-Problem 531 547	pleural effusion
+T8	Medical-Problem 551 563	pneumothorax
+T9	Medical-Assertion 587 589	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 590 603;605 618	acute osseous abnormalities
+T11	Medical-Problem 692 696	only
+E9	Medical-Problem:T11
+T12	Medical-Problem 698 733	minimal residual linear atelectasis
+E10	Medical-Problem:T12
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

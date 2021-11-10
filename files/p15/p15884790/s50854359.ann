@@ -1,0 +1,27 @@
+T1	Medical-Problem 391 409	increasing opacity
+T2	Medical-Anatomy 418 427	left base
+T3	Medical-Assertion 435 443	possible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 444 463	associated effusion
+T5	Medical-Assertion 490 503	could reflect
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 504 515	atelectasis
+T7	Medical-Problem 520 535	early pneumonia
+T8	Medical-Assertion 536 561	should also be considered
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 596 607	No evidence
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 611 626	pulmonary edema
+T11	Medical-Problem 630 642	pneumothorax
+T12	Medical-Problem 699 719;721 753	Apparent right sided superior mediastinal soft tissue
+E8	Medical-Problem:T12
+T13	Medical-Assertion 802 824	raises the possibility
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 828 845	substernal goiter
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E5	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

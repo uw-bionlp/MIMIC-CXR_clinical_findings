@@ -1,0 +1,32 @@
+T1	Medical-Problem 80 86	Stroke
+E1	Medical-Problem:T1
+T2	Medical-Problem 231 285	general increase in density of interstitial structures
+E2	Medical-Problem:T2
+T3	Medical-Problem 298 316	mild fluid marking
+T4	Medical-Anatomy 324 337	minor fissure
+T5	Medical-Problem 360 364;366 378	mild cardiomegaly
+E5	Medical-Problem:T5
+T6	Medical-Problem 383 409	mild peribronchial cuffing
+E6	Medical-Problem:T6
+T7	Medical-Assertion 423 436	could reflect
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 437 441;443 471	mild pulmonary interstitial edema
+T9	Medical-Assertion 476 478	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 479 511	focal lung parenchymal opacities
+T11	Medical-Problem 523 532	pneumonia
+T12	Medical-Assertion 535 537	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 538 545;547 556	pleural effusions
+T14	Lesion-Assertion 559 561	No
+A4	Lesion-AssertionValue T14 absent
+T15	Lesion-Anatomy 562 566	lung
+T16	Lesion-Description 567 574	nodules
+T17	Lesion-Description 578 584	masses
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Lesion-Description:T16 has-Lesion-Assertion:T14 has-Lesion-Anatomy:T15
+E13	Lesion-Description:T17 has-Lesion-Assertion:T14 has-Lesion-Anatomy:T15

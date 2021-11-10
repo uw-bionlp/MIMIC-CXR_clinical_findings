@@ -1,0 +1,16 @@
+T1	Medical-Problem 333 343;345 366	New patchy ill-defined opacities
+T2	Medical-Anatomy 389 404	left upper lobe
+T3	Medical-Assertion 449 467	most likely due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 468 485	focal atelectasis
+T5	Medical-Problem 490 500	aspiration
+T6	Lesion-Characteristic 529 543	poorly defined
+T7	Lesion-Size 544 557	subcentimeter
+T8	Lesion-Description 558 564	nodule
+T9	Lesion-Anatomy 587 624	level of the right third anterior rib
+T10	Medical-Problem 749 775	true pulmonary abnormality
+E9	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9

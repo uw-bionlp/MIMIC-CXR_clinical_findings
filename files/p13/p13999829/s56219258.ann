@@ -1,0 +1,32 @@
+T1	Medical-Problem 313 321;323 336	Complete consolidation
+T2	Medical-Anatomy 344 374	left lower lobe basal segments
+T3	Lesion-Description 411 418	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 419 426	opacity
+T5	Lesion-Anatomy 449 465	right lower lobe
+T6	Medical-Anatomy 498 503	Lungs
+T7	Medical-Problem 511 548	hyperinflated with upper lobe lucency
+T8	Medical-Problem 567 576	emphysema
+T9	Medical-Assertion 588 590	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 591 608	new consolidation
+T11	Medical-Problem 742 781	Unchanged left lower lobe consolidation
+E10	Medical-Problem:T11
+T12	Lesion-Description 786 793	nodular
+E11	Lesion-Description:T12
+T13	Lesion-Description 794 801	opacity
+T14	Lesion-Anatomy 810 826	right lower lobe
+T15	Medical-Assertion 829 831	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 832 849	new consolidation
+T17	Medical-Assertion 850 864	concerning for
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 865 874	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

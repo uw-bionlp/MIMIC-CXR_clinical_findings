@@ -1,0 +1,23 @@
+T1	Medical-Problem 208 267	Moderate to large right and moderate left pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 301 314	Pleural fluid
+T3	Medical-Problem 331 340;342 353	extent of abnormality
+T4	Medical-Anatomy 361 366	lungs
+T5	Medical-Problem 381 389	probably
+E5	Medical-Problem:T5
+T6	Medical-Problem 390 410	mild pulmonary edema
+E6	Medical-Problem:T6
+T7	Medical-Problem 413 426	Consolidation
+T8	Medical-Anatomy 443 474	lung bases particular the left,
+E8	Medical-Anatomy:T8
+T9	Medical-Anatomy 480 491;493 497	right lower lobe
+T10	Medical-Assertion 501 509	probably
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Problem 510 519	collapsed
+T12	Lesion-Size 529 534	small
+T13	Lesion-Description 535 542	nodules
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E12	Lesion-Description:T13 has-Lesion-Size-Present:T12

@@ -1,0 +1,55 @@
+T1	Medical-Assertion 321 323	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 324 336	pneumothorax
+T3	Medical-Problem 340 362	large pleural effusion
+T4	Medical-Problem 399 437	relative paucity of pulmonary markings
+E3	Medical-Problem:T4
+T5	Medical-Problem 469 478	emphysema
+E4	Medical-Problem:T5
+T6	Medical-Problem 481 495	Patchy opacity
+T7	Medical-Anatomy 503 518	right lung base
+T8	Medical-Assertion 572 584	may indicate
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 585 607	superimposed infection
+T10	Medical-Problem 612 622	aspiration
+T11	Medical-Assertion 634 636	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 637 653	pneumoperitoneum
+T13	Medical-Problem 656 688;690 702	Mildly displaced right posterior rib fracture
+E10	Medical-Problem:T13
+T14	Lesion-Description 791 798	nodular
+E11	Lesion-Description:T14
+T15	Lesion-Description 799 806	opacity
+T16	Lesion-Anatomy 815 831	right lower lobe
+T17	Lesion-Size 842 854	2.3 x 1.4 cm
+T18	Medical-Problem 883 892;894 909	ascending aortic aneurysm
+E15	Medical-Problem:T18
+T19	Medical-Problem 946 972;974 980	Coronary artery disease is severe
+E16	Medical-Problem:T19
+T20	Medical-Problem 1005 1052	Interval worsening of right base patchy opacity
+E17	Medical-Problem:T20
+T21	Medical-Problem 1070 1079	infection
+E18	Medical-Problem:T21
+T22	Medical-Problem 1084 1094	aspiration
+E19	Medical-Problem:T22
+T23	Lesion-Anatomy 1122 1137	right lung base
+E20	Lesion-Anatomy:T23
+T24	Medical-Assertion 1152 1169	which may reflect
+A4	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1171 1180	pneumonia
+T26	Medical-Problem 1184 1194	aspiration
+T27	Medical-Problem 1206 1210	lung
+E23	Medical-Problem:T27
+T28	Medical-Problem 1241 1266	Ascending aortic aneurysm
+E24	Medical-Problem:T28
+T29	Lesion-Anatomy 1449 1465	right lower lobe
+E25	Lesion-Anatomy:T29
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T16 has-Lesion-Size-Present:T17
+E21	Medical-Problem:T25 has-Medical-Assertion:T24
+E22	Medical-Problem:T26 has-Medical-Assertion:T24

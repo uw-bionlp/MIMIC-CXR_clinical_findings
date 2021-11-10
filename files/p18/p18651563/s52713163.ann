@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 251 256	lungs
+T2	Medical-Problem 270 290	subtle wispy opacity
+T3	Medical-Anatomy 298 313	left upper lobe
+T4	Medical-Problem 344 368	Flattened hemidiaphragms
+E4	Medical-Problem:T4
+T5	Medical-Assertion 369 376	suggest
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 377 404	chronic obstructive disease
+T7	Medical-Assertion 417 419	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 420 436	pleural effusion
+T9	Medical-Problem 440 452	pneumothorax
+T10	Medical-Problem 455 483;485 505	Bilateral glenohumeral joint degenerative changes
+E8	Medical-Problem:T10
+T11	Medical-Problem 533 553	Subtle wispy opacity
+T12	Medical-Anatomy 561 576	left upper lobe
+T13	Medical-Assertion 577 590	may represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 591 596;598 607	early pneumonia
+T15	Lesion-Characteristic 654 664	underlying
+T16	Lesion-Description 665 669	mass
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Lesion-Description:T16 has-Lesion-Characteristic:T15

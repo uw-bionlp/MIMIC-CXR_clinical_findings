@@ -1,0 +1,55 @@
+T1	Medical-Problem 317 325;327 382	fullness of the upper mediastinal contour to the left of midline
+E1	Medical-Problem:T1
+T2	Medical-Assertion 463 471	probably
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 472 482;484 492	borderline enlarged
+T4	Lesion-Description 534 544	malignancy
+E3	Lesion-Description:T4
+T5	Medical-Anatomy 574 581	trachea
+T6	Medical-Problem 587 633	appear splayed somewhat more towards the right
+T7	Medical-Problem 642 671	more horizontal configuration
+T8	Medical-Anatomy 679 702	left main stem bronchus
+T9	Medical-Assertion 706 714	Possibly
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 736 774	developing mediastinal lymphadenopathy
+T11	Lesion-Characteristic 781 790	irregular
+T12	Lesion-Description 791 795	mass
+T13	Lesion-Anatomy 803 817	left lung apex
+T14	Lesion-Size-Trend 826 835	unchanged
+A3	Lesion-Size-TrendValue T14 no-change
+T15	Medical-Problem 877 894	Streaky opacities
+T16	Medical-Anatomy 902 916	left lung base
+T17	Medical-Problem 928 945	minor atelectasis
+T18	Medical-Problem 949 957	scarring
+T19	Medical-Assertion 969 971	no
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 972 988	pleural effusion
+T21	Medical-Problem 992 1004	pneumothorax
+T22	Medical-Problem 1019 1057	three new mild compression deformities
+E18	Medical-Problem:T22
+T23	Medical-Assertion 1432 1443	No evidence
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1447 1476	acute cardiopulmonary disease
+T25	Medical-Problem 1485 1517	Mild change in the configuration
+T26	Medical-Anatomy 1525 1536	mediastinum
+T27	Medical-Assertion 1538 1558;1560 1563	which raises concern for
+A6	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1564 1574	developing
+T29	Lesion-Description 1575 1590	lymphadenopathy
+E23	Lesion-Description:T29
+T30	Medical-Problem 1599 1633	Several mild compression fractures
+T31	Medical-Anatomy 1641 1656	thoracic spine,
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13 has-Lesion-Size-Trend:T14
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T19
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E20	Medical-Problem:T25 has-Medical-Anatomy:T26
+E22	Medical-Problem:T28 has-Medical-Assertion:T27
+E24	Medical-Problem:T30 has-Medical-Anatomy:T31

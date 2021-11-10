@@ -1,0 +1,24 @@
+T1	Medical-Problem 181 208	Linear left basilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 212 223	most likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 224 235	atelectasis
+T4	Medical-Anatomy 241 246	lungs
+T5	Medical-Assertion 268 275	without
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 276 289	consolidation
+T7	Medical-Problem 293 312	vascular congestion
+T8	Lesion-Anatomy 314 323	Pulmonary
+T9	Lesion-Description 325 332	nodules
+T10	Lesion-Assertion 363 381	not as conspicuous
+A3	Lesion-AssertionValue T10 absent
+T11	Medical-Problem 480 504	Left basilar atelectasis
+E8	Medical-Problem:T11
+T12	Medical-Assertion 506 508	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 509 538	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,23 @@
+T1	Medical-Assertion 138 146	Probable
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 147 152;154 191	right lower lobe pneumonia after aspiration
+T3	Medical-Problem 250 266	Right lower lobe
+E2	Medical-Problem:T3
+T4	Medical-Problem 267 280	consolidation
+E3	Medical-Problem:T4
+T5	Medical-Problem 285 320	small accompanying pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 348 376	Mild-to-moderate enlargement
+T7	Medical-Anatomy 384 391;393 403	cardiac silhouette
+T8	Medical-Assertion 428 442	whether due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 443 452;454 466	decreased cardiomegaly
+T10	Medical-Problem 474 494	pericardial effusion
+T11	Medical-Assertion 660 662	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 663 675	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

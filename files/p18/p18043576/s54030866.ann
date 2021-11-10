@@ -1,0 +1,22 @@
+T1	Medical-Problem 354 378	mildly distended stomach
+E1	Medical-Problem:T1
+T2	Medical-Problem 405 432	Heterogeneous opacification
+T3	Medical-Anatomy 440 449	left Lung
+T4	Medical-Assertion 450 458;460 466	could be due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 467 484	recent aspiration
+T6	Medical-Problem 499 521	persistent atelectasis
+T7	Medical-Anatomy 530 556	infrahilar left lower lobe
+T8	Medical-Assertion 605 607	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 609 624	pulmonary edema
+T10	Medical-Problem 628 640	pneumothorax
+T11	Medical-Assertion 664 697	neither suggests nor excludes the
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 711 720;722 730	pulmonary embolism
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

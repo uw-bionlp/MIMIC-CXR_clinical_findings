@@ -1,0 +1,26 @@
+T1	Medical-Problem 234 254	increased prominence
+T2	Medical-Anatomy 262 295	bilateral lower lobe interstitium
+T3	Medical-Assertion 298 300	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 302 321	lobar consolidation
+T5	Medical-Assertion 347 349	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 350 366	pleural effusion
+T7	Medical-Problem 370 375;377 389	large pneumothorax
+T8	Medical-Problem 396 425	heart appears mildly enlarged
+E6	Medical-Problem:T8
+T9	Medical-Problem 534 557	interstitial prominence
+T10	Medical-Anatomy 569 590	bilateral lower lobes
+T11	Medical-Assertion 591 602	may reflect
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 607 635	atypical infectious etiology
+T13	Medical-Assertion 674 676	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 677 682;684 697	lobar consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,23 @@
+T1	Medical-Problem 77 100;102 110	persistent left basilar  opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 112 131	likely representing
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 134 156	small pleural effusion
+T4	Medical-Problem 675 694	vascular congestion
+E3	Medical-Problem:T4
+T5	Medical-Problem 711 722	Airlessness
+T6	Medical-Anatomy 730 745	left lower lobe
+T7	Medical-Problem 797 808	atelectasis
+T8	Medical-Problem 819 828	pneumonia
+T9	Medical-Assertion 832 844	not excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 853 857;859 875	left pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 920 922	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 923 935	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

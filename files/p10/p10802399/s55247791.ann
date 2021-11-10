@@ -1,0 +1,37 @@
+T1	Medical-Anatomy 206 215	Left lung
+T2	Medical-Problem 222 253	progressive vascular congestion
+T3	Medical-Problem 258 281	mild interstitial edema
+T4	Medical-Problem 317 339	large pleural effusion
+E4	Medical-Problem:T4
+T5	Medical-Problem 358 379	greater opacification
+T6	Medical-Anatomy 387 391	base
+T7	Medical-Assertion 393 403	presumably
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 404 422	recurring effusion
+T9	Medical-Problem 434 455	worsening atelectasis
+E8	Medical-Problem:T9
+T10	Medical-Problem 458 479	Greater opacification
+T11	Medical-Anatomy 487 503	right upper lung
+T12	Medical-Assertion 504 509;511 520	could represent
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 521 537	asymmetric edema
+T14	Medical-Problem 540 548	Heart is
+E12	Medical-Problem:T14
+T15	Medical-Problem 549 578	mildly to moderately enlarged
+E13	Medical-Problem:T15
+T16	Medical-Problem 594 630	more mediastinal vascular congestion
+E14	Medical-Problem:T16
+T17	Medical-Assertion 631 641	suggesting
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 642 664;666 707	worsening elevation of central venous pressure or volume or both
+T19	Medical-Assertion 821 823	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 825 837	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

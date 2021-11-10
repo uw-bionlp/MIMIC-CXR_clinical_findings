@@ -1,0 +1,27 @@
+T1	Medical-Assertion 34 36	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 37 50	acute process
+T3	Lesion-Size 52 57	small
+T4	Lesion-Description 58 64	nodule
+T5	Lesion-Anatomy 70 84	left lung base
+T6	Medical-Problem 95 111	shallow obliques
+E5	Medical-Problem:T6
+T7	Medical-Assertion 422 424	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Anatomy 437 442	lungs
+T9	Medical-Assertion 447 452	clear
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 457 470	consolidation
+T11	Medical-Problem 474 482	effusion
+T12	Lesion-Description 494 509	nodular opacity
+T13	Lesion-Anatomy 531 556	anterior left seventh rib
+T14	Medical-Assertion 696 698	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 739 746	density
+T16	Medical-Anatomy 754 758;760 769	left lung base
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Lesion-Description:T12 has-Lesion-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16

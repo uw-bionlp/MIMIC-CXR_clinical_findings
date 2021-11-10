@@ -1,0 +1,32 @@
+T1	Lesion-Anatomy 218 222	left
+T2	Medical-Problem 234 247	consolidation
+E2	Medical-Problem:T2
+T3	Lesion-Characteristic 264 274	underlying
+T4	Lesion-Description 275 279	mass
+T5	Medical-Problem 317 326	elevation
+T6	Medical-Anatomy 331 349	left hemidiaphragm
+T7	Medical-Assertion 390 398	probable
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 399 419	adjacent atelectasis
+T9	Medical-Assertion 443 448	clear
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 452 465	consolidation
+T11	Medical-Problem 469 483	large effusion
+T12	Medical-Assertion 532 534	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 535 540	acute
+E10	Medical-Problem:T13
+T14	Medical-Problem 541 562	osseous abnormalities
+T15	Lesion-Anatomy 594 598	lobe
+T16	Lesion-Description 599 603	mass
+T17	Lesion-Assertion 631 633	No
+A4	Lesion-AssertionValue T17 absent
+T18	Medical-Problem 643 661;663 686	superimposed acute cardiopulmonary process
+E14	Medical-Problem:T18
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T1 has-Lesion-Characteristic:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T15

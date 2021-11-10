@@ -1,0 +1,42 @@
+T1	Medical-Assertion 258 272	likely reflect
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 273 294	dependant atelectasis
+T3	Medical-Problem 305 314	pneumonia
+T4	Medical-Assertion 319 327	possible
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Assertion 423 425	no
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 426 438	pneumothorax
+T7	Lesion-Size 443 456	subcentimeter
+T8	Lesion-Characteristic 457 462	dense
+T9	Lesion-Description 463 469	nodule
+T10	Lesion-Anatomy 478 494	right upper lobe
+T11	Lesion-Characteristic 514 523	calcified
+T12	Lesion-Description 524 533	granuloma
+T13	Lesion-Assertion 565 567	No
+A4	Lesion-AssertionValue T13 absent
+T14	Medical-Problem 568 587	vascular congestion
+E10	Medical-Problem:T14
+T15	Medical-Problem 589 594	edema
+E11	Medical-Problem:T15
+T16	Medical-Problem 598 615	pleural effusions
+E12	Medical-Problem:T16
+T17	Medical-Problem 727 761	opacities, left greater than right
+E13	Medical-Problem:T17
+T18	Medical-Assertion 763 771	probable
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 772 781;783 794	dependent atelectasis
+T20	Medical-Problem 803 812	pneumonia
+T21	Medical-Assertion 816 835	in the differential
+A6	Medical-AssertionValue T21 possible
+T22	Lesion-Anatomy 891 907	right upper lobe
+T23	Lesion-Characteristic 908 917	calcified
+T24	Lesion-Description 918 927	granuloma
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T4
+E3	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T10
+E9	Lesion-Description:T12 has-Lesion-Anatomy:T10 has-Lesion-Characteristic:T11
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T18 has-Medical-Assertion:T21
+E18	Lesion-Description:T24 has-Lesion-Anatomy:T22 has-Lesion-Characteristic:T23

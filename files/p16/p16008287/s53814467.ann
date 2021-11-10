@@ -1,0 +1,26 @@
+T1	Medical-Problem 161 178;180 192	tiny right apical pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 307 327;329 355	Stable postoperative cardiomediastinal widening
+E2	Medical-Problem:T2
+T3	Medical-Problem 358 375	Worsening opacity
+T4	Medical-Anatomy 383 406;408 414	left mid and lower lung region
+T5	Medical-Assertion 418 431	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 449 479	layering left pleural effusion
+T7	Medical-Problem 485 522	adjacent lung parenchymal abnormality
+T8	Medical-Assertion 524 545	which could be due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 554 565	atelectasis
+T10	Medical-Problem 567 577	aspiration
+T11	Medical-Problem 581 605	infectious consolidation
+T12	Medical-Problem 608 627;629 637	Small right pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Problem 708 719	atelectasis
+T14	Medical-Anatomy 727 737	right base
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14

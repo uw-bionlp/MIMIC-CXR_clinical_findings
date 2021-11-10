@@ -1,0 +1,60 @@
+T1	Medical-Problem 154 159	lungs
+E1	Medical-Problem:T1
+T2	Medical-Problem 186 210	diaphragms are flattened
+E2	Medical-Problem:T2
+T3	Medical-Problem 229 233	COPD
+E3	Medical-Problem:T3
+T4	Medical-Problem 236 252	Mild eventration
+T5	Medical-Anatomy 260 279	right hemidiaphragm
+T6	Medical-Problem 284 298	mild elevation
+T7	Medical-Anatomy 307 325	left hemidiaphragm
+T8	Medical-Anatomy 338 343	heart
+T9	Medical-Assertion 347 350	not
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 351 359	enlarged
+T11	Medical-Anatomy 366 371	aorta
+T12	Medical-Problem 375 384;386 407	calcified and slightly tortuous
+T13	Medical-Assertion 410 412	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 413 416	CHF
+T15	Medical-Problem 418 437	frank consolidation
+T16	Medical-Problem 442 456	gross effusion
+T17	Medical-Anatomy 506 515	left base
+T18	Medical-Problem 522 539	increased density
+T19	Medical-Anatomy 541 583	superimposed over the spine on the lateral
+T20	Medical-Assertion 590 609	which could reflect
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 613 618;620 630	early infiltrate
+T22	Medical-Problem 642 661	minimal atelectasis
+T23	Medical-Anatomy 669 679	right base
+T24	Medical-Problem 682 686;688 708	Mild degenerative changes
+T25	Medical-Anatomy 716 730	thoracic spine
+T26	Lesion-Assertion 742 744	No
+A4	Lesion-AssertionValue T26 absent
+T27	Lesion-Characteristic 745 752	obvious
+T28	Lesion-Characteristic 753 758	focal
+T29	Lesion-Characteristic 759 764	lytic
+T30	Lesion-Characteristic 769 778	sclerotic
+T31	Lesion-Description 779 785	lesion
+T32	Medical-Problem 815 829	Patchy density
+T33	Medical-Anatomy 833 842	left base
+T34	Medical-Problem 849 866	increased density
+T35	Medical-Anatomy 867 879;881 902	superimposed over the spine on the
+T36	Medical-Assertion 917 936	which could reflect
+A5	Medical-AssertionValue T36 possible
+T37	Medical-Problem 940 956	early infiltrate
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T13
+E16	Medical-Problem:T18 has-Medical-Anatomy:T17 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T24 has-Medical-Anatomy:T25
+E27	Lesion-Description:T31 has-Lesion-Assertion:T26 has-Lesion-Characteristic:T27 has-Lesion-Characteristic:T28 has-Lesion-Characteristic:T29 has-Lesion-Characteristic:T30
+E28	Medical-Problem:T32 has-Medical-Anatomy:T33
+E30	Medical-Problem:T34 has-Medical-Anatomy:T35
+E32	Medical-Problem:T37 has-Medical-Anatomy:T35 has-Medical-Assertion:T36

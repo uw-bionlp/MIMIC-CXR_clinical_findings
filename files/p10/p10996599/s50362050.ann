@@ -1,0 +1,18 @@
+T1	Medical-Problem 249 271	subcutaneous emphysema
+T2	Medical-Anatomy 283 302;304 308	right lateral chest wall
+T3	Medical-Problem 323 330	opacity
+T4	Medical-Anatomy 338 348	lung bases
+T5	Medical-Assertion 354 367	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 368 379	atelectasis
+T7	Medical-Problem 388 404	early infiltrate
+T8	Medical-Assertion 417 419	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 420 425	signs
+T10	Medical-Problem 430 451	overt pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

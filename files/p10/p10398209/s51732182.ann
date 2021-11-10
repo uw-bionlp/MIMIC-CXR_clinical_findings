@@ -1,0 +1,23 @@
+T1	Medical-Problem 202 233	Moderate-to-severe cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 246 270	Moderate pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 287 321	Presumed small bilateral effusions
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 338 349;351 355	Right lower lobe
+T5	Medical-Problem 356 363	opacity
+T6	Medical-Assertion 364 372	could be
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 373 384	atelectasis
+T8	Medical-Problem 392 401	pneumonia
+T9	Medical-Problem 413 424;426 441	mild stable pulmonary edema
+E8	Medical-Problem:T9
+T10	Medical-Problem 444 469	Left lower lobe opacities
+E9	Medical-Problem:T10
+T11	Medical-Assertion 474 480	likely
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 481 492	atelectases
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

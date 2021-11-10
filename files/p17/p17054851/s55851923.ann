@@ -1,0 +1,25 @@
+T1	Medical-Problem 232 251	Thoracotomy changes
+T2	Medical-Anatomy 272 282	right lung
+T3	Medical-Problem 400 411	atelectasis
+T4	Medical-Anatomy 419 429	lung bases
+T5	Medical-Assertion 450 452	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 453 458	signs
+T7	Medical-Problem 464 485	overt pulmonary edema
+T8	Medical-Assertion 488 490	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 491 505	pneumothoraces
+T10	Medical-Problem 527 535;537 544	low lung volumes
+E8	Medical-Problem:T10
+T11	Medical-Problem 547 555	Blunting
+T12	Medical-Anatomy 563 577	right CP angle
+T13	Medical-Assertion 581 594	suggestive of
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 597 610;612 620	small pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

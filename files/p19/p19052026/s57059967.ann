@@ -1,0 +1,20 @@
+T1	Medical-Problem 378 397	Moderate tortuosity
+T2	Medical-Anatomy 405 419	thoracic aorta
+T3	Medical-Assertion 422 424	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 425 442	pleural effusions
+T5	Lesion-Assertion 445 447	No
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Anatomy 448 452	lung
+T7	Lesion-Description 454 461	nodules
+T8	Lesion-Description 465 471	masses
+T9	Medical-Assertion 474 476	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 477 489	pneumothorax
+T11	Medical-Problem 492 523;525 542	Unchanged moderate degenerative vertebral disease
+E8	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E6	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

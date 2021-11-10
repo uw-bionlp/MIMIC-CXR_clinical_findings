@@ -1,0 +1,30 @@
+T1	Lesion-Count 209 217	Multiple
+T2	Lesion-Characteristic 218 227	calcified
+T3	Lesion-Anatomy 229 240	mediastinal
+T4	Lesion-Anatomy 245 250	hilar
+T5	Lesion-Description 251 262	lymph nodes
+T6	Medical-Problem 280 306;308 316	Right mid to to lower lung scarring
+E6	Medical-Problem:T6
+T7	Medical-Problem 365 382	increased opacity
+T8	Medical-Anatomy 404 420	right lower lobe
+T9	Medical-Assertion 421 440	raising concern for
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 441 450	pneumonia
+T11	Medical-Assertion 453 455	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 457 473	pleural effusion
+T13	Medical-Problem 477 489	pneumothorax
+T14	Medical-Problem 500 526	Mild left base atelectasis
+E12	Medical-Problem:T14
+T15	Medical-Problem 552 569	Increased opacity
+T16	Medical-Anatomy 577 592	right lung base
+T17	Medical-Assertion 593 607	concerning for
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 608 624;626 635	right lower lobe pneumonia
+E5	Lesion-Description:T5 has-Lesion-Count:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

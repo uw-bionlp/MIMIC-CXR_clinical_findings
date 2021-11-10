@@ -1,0 +1,45 @@
+T1	Medical-Problem 684 701	Diffuse opacities
+T2	Medical-Anatomy 717 726	left lung
+T3	Medical-Assertion 773 790	highly concerning
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 795 804	infection
+T5	Medical-Problem 813 823;825 836	lower lung atelectasis
+E4	Medical-Problem:T5
+T6	Medical-Problem 843 868	right apical pneumothorax
+E5	Medical-Problem:T6
+T7	Medical-Problem 886 896;898 905	triangular opacity
+T8	Medical-Anatomy 913 965	right upper lung adjacent to he superior mediastinum
+T9	Medical-Assertion 984 999	could represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 1000 1005	fluid
+T11	Medical-Problem 1061 1082	aortic calcifications
+E9	Medical-Problem:T11
+T12	Medical-Assertion 1108 1110	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 1111 1127	pleural effusion
+T14	Medical-Problem 1143 1152	air along
+T15	Medical-Anatomy 1157 1162	right
+T16	Medical-Problem 1211 1222	rib defects
+E13	Medical-Problem:T16
+T17	Medical-Problem 1227 1238	deformiting
+E14	Medical-Problem:T17
+T18	Medical-Problem 1349 1384	increase in heterogeneous opacities
+T19	Medical-Anatomy 1392 1401	left lung
+T20	Medical-Assertion 1406 1420	concerning for
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1421 1430	infection
+T22	Medical-Anatomy 1449 1465	right upper lung
+T23	Medical-Assertion 1492 1506	could represet
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1510 1526	fluid collection
+T25	Medical-Problem 1546 1577	small right apical pneumothorax
+E20	Medical-Problem:T25
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E19	Medical-Problem:T24 has-Medical-Anatomy:T22 has-Medical-Assertion:T23

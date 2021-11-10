@@ -1,0 +1,39 @@
+T1	Medical-Assertion 163 173	resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 177 191	mucus plugging
+T3	Medical-Anatomy 339 344	Lungs
+T4	Medical-Problem 382 402	underlying emphysema
+T5	Medical-Problem 453 471	persistent opacity
+T6	Medical-Anatomy 479 489	right base
+T7	Medical-Problem 499 526	associated pleural effusion
+T8	Medical-Assertion 533 546	could reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 547 558	atelectasis
+T10	Medical-Problem 560 569	pneumonia
+T11	Medical-Problem 574 584	aspiration
+T12	Medical-Problem 748 772	heart is stably enlarged
+E10	Medical-Problem:T12
+T13	Medical-Problem 775 788	Calcification
+T14	Medical-Anatomy 796 801	aorta
+T15	Medical-Problem 819 834	atherosclerosis
+T16	Medical-Problem 837 864	Biapical pleural thickening
+E14	Medical-Problem:T16
+T17	Medical-Problem 874 903	post-inflammatory in etiology
+E15	Medical-Problem:T17
+T18	Medical-Assertion 906 908	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 909 921	pneumothorax
+T20	Medical-Assertion 936 938	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 939 948;950 955	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T15 has-Medical-Anatomy:T14
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

@@ -1,0 +1,15 @@
+T1	Medical-Problem 451 464	opacification
+T2	Medical-Anatomy 472 494	base of the right lung
+T3	Medical-Problem 513 525;527 538	subsegmental atelectasis
+T4	Medical-Problem 543 575	overlying small pleural effusion
+T5	Medical-Assertion 581 594	could include
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 595 600;602 611	early pneumonia
+T7	Medical-Assertion 652 654	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 655 670	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

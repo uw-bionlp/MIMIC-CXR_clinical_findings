@@ -1,0 +1,43 @@
+T1	Medical-Anatomy 334 339	lungs
+T2	Medical-Problem 344 357	underinflated
+T3	Medical-Problem 364 398	resultant bronchovascular crowding
+T4	Medical-Problem 410 433	increased opacification
+T5	Medical-Anatomy 442 457	right lung base
+T6	Medical-Assertion 467 480	likely due to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 481 492	atelectasis
+T8	Medical-Assertion 495 497	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 498 517;519 527	significant pleural effusion
+T10	Medical-Problem 531 543	pneumothorax
+T11	Medical-Anatomy 562 567	right
+T12	Medical-Assertion 574 581	appears
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 582 596;598 619	more dense and rounded than the left
+T14	Medical-Problem 797 804	trachea
+E11	Medical-Problem:T14
+T15	Medical-Problem 808 832;834 839	slightly deviated to the right
+E12	Medical-Problem:T15
+T16	Medical-Problem 993 1019	generalized loss of height
+T17	Medical-Anatomy 1023 1056	several thoracic vertebral bodies
+T18	Medical-Problem 1092 1113	Right basilar opacity
+E15	Medical-Problem:T18
+T19	Medical-Assertion 1117 1123	likely
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1124 1135	atelectasis
+T21	Medical-Problem 1139 1148	Asymmetry
+T22	Medical-Anatomy 1152 1174	right hilar structures
+T23	Lesion-Description 1249 1253	mass
+T24	Lesion-Assertion 1254 1289	cannot be excluded radiographically
+A5	Lesion-AssertionValue T24 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22
+E19	Lesion-Description:T23 has-Lesion-Assertion:T24

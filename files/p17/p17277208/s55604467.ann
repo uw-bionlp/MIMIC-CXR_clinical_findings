@@ -1,0 +1,17 @@
+T1	Medical-Assertion 220 222	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 223 231	relevant
+T3	Lesion-Count 285 293	multiple
+T4	Lesion-Anatomy 301 305	lung
+T5	Lesion-Description 306 313	nodules
+T6	Medical-Problem 329 370	Constant extensive right pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Problem 377 399	subsequent atelectasis
+E6	Medical-Problem:T7
+T8	Medical-Problem 404 416	displacement
+T9	Medical-Anatomy 424 447;449 453	mediastinum towards the left
+T10	Medical-Problem 456 487	Right paramediastinal opacities
+E9	Medical-Problem:T10
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Count:T3 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9

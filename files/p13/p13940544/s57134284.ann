@@ -1,0 +1,35 @@
+T1	Medical-Problem 514 541	near complete opacification
+T2	Medical-Anatomy 549 572	left mid and lower lung
+T3	Medical-Problem 578 590;592 599	some aerated lung at
+T4	Medical-Anatomy 604 613	left apex
+T5	Medical-Assertion 668 690	most likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 691 705	lobar collapse
+T7	Medical-Problem 716 738	superimposed pneumonia
+T8	Medical-Problem 741 761	pulmonary hemorrhage
+T9	Medical-Problem 765 775	aspiration
+T10	Medical-Assertion 776 801	should also be considered
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Anatomy 847 854	cardiac
+E9	Medical-Anatomy:T11
+T12	Medical-Assertion 903 911	Possible
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 912 941	tiny left apical pneumothorax
+T14	Medical-Assertion 944 955	No evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 959 968;970 975	pulmonary edema
+T16	Medical-Problem 978 998	Degenerative changes
+T17	Medical-Anatomy 1006 1024	mid thoracic spine
+T18	Medical-Assertion 1030 1032	no
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1033 1043;1045 1056	acute bony abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T10
+E7	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T10
+E8	Medical-Problem:T9 has-Medical-Assertion:T5 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17
+E14	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

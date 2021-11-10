@@ -1,0 +1,20 @@
+T1	Medical-Problem 179 184;186 213	large homogeneous area of opacity
+T2	Medical-Anatomy 230 252	upper right hemithorax
+T3	Medical-Assertion 257 260;262 271	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 274 300	loculated fluid collection
+T5	Medical-Anatomy 352 362	right base
+E4	Medical-Anatomy:T5
+T6	Medical-Anatomy 392 414;416 426	right middle and right lower lobe
+T7	Medical-Problem 435 454	partially opacified
+T8	Medical-Anatomy 520 541	right mid lung region
+T9	Medical-Anatomy 592 601	left lung
+T10	Medical-Problem 629 646;648 672	combined alveolar and interstitial pattern
+T11	Medical-Assertion 679 696	probably reflects
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 697 712	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

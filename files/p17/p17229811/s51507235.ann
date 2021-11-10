@@ -1,0 +1,37 @@
+T1	Medical-Problem 33 78	New right upper and middle lobe consolidation
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 84 95	ill-defined
+T3	Lesion-Description 96 103;105 115	nodular  opacities
+T4	Lesion-Anatomy 123 132	left lung
+T5	Medical-Assertion 134 148	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 149 169	multifocal pneumonia
+T7	Medical-Problem 684 701	new consolidation
+T8	Medical-Anatomy 717 745	right upper and middle lobes
+T9	Medical-Problem 764 779	new ill-defined
+E8	Medical-Problem:T9
+T10	Lesion-Description 780 787;789 798	nodular opacities
+T11	Lesion-Characteristic 804 813	bronchial
+T12	Lesion-Anatomy 837 860;862 868	left upper and mid lung fields
+T13	Medical-Assertion 880 882	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 883 895	pneumothorax
+T15	Medical-Problem 899 915	pleural effusion
+T16	Medical-Problem 964 982	lobe consolidation
+E14	Medical-Problem:T16
+T17	Lesion-Characteristic 988 999	ill-defined
+T18	Lesion-Description 1000 1007	nodular
+E16	Lesion-Description:T18
+T19	Lesion-Description 1009 1018	opacities
+T20	Lesion-Anatomy 1026 1035	left lung
+T21	Medical-Assertion 1037 1051	concerning for
+A3	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1052 1079	multifocal bronchopneumonia
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E17	Lesion-Description:T19 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T20
+E19	Medical-Problem:T22 has-Medical-Assertion:T21

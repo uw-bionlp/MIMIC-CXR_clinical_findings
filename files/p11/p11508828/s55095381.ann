@@ -1,0 +1,17 @@
+T1	Medical-Problem 288 309	bibasilar atelectasis
+T2	Medical-Problem 314 322;324 341	moderate pleural effusions
+T3	Medical-Assertion 347 361	nearly cleared
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Assertion 377 387	suggestion
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 391 394;396 409	new consolidation
+T6	Medical-Anatomy 417 433	right upper lung
+T7	Medical-Problem 451 462;464 477	substantial consolidation
+E5	Medical-Problem:T7
+T8	Medical-Assertion 485 504	raising possibility
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 508 534;536 553	recurrent pneumonia, often due to aspiration
+E1	Medical-Problem:T1 has-Medical-Assertion:T3
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

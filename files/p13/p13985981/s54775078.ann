@@ -1,0 +1,27 @@
+T1	Medical-Problem 234 246;248 311	right apical parenchymal opacities, partly fibrotic and partly consolidative
+E1	Medical-Problem:T1
+T2	Medical-Problem 319 328	elevation
+T3	Medical-Anatomy 336 347	right hilus
+T4	Lesion-Size-Trend 428 448	completely unchanged
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Size 454 459	small
+T6	Lesion-Anatomy 460 465;467 479	right apicolateral
+T7	Lesion-Characteristic 480 489	calcified
+T8	Lesion-Description 490 499	granuloma
+T9	Medical-Problem 506 521	minimal changes
+T10	Medical-Anatomy 529 543	left lung apex
+T11	Medical-Assertion 565 567	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 568 598	additional parenchymal changes
+T13	Medical-Assertion 608 610	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 611 619;621 662	interval appearance of infectious lung pathologies
+T15	Medical-Assertion 720 722	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 723 740	pleural effusions
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E7	Lesion-Description:T8 has-Lesion-Size-Trend:T4 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

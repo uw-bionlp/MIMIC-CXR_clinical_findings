@@ -1,0 +1,54 @@
+T1	Medical-Assertion 37 39	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 40 69	acute cardiopulmonary process
+T3	Medical-Problem 73 91	Leftward deviation
+T4	Medical-Anatomy 99 128	trachea at the thoracic inlet
+T5	Medical-Assertion 130 149;151 154	potentially related  to
+A2	Medical-AssertionValue T5 possible
+T6	Lesion-Anatomy 155 174	right-sided thyroid
+T7	Lesion-Description 175 193	enlargement/nodule
+T8	Medical-Problem 556 563	opacity
+T9	Medical-Anatomy 571 592	left perihilar region
+T10	Medical-Assertion 593 605	has resolved
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Assertion 643 645	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 646 665	focal consolidation
+T13	Medical-Problem 667 675	effusion
+T14	Medical-Problem 680 692	pneumothorax
+T15	Medical-Problem 705 730	slight leftward deviation
+T16	Medical-Anatomy 738 767	trachea at the thoracic inlet
+T17	Lesion-Assertion 769 780	potentially
+A5	Lesion-AssertionValue T17 possible
+T18	Lesion-Anatomy 792 811	right-sided thyroid
+T19	Lesion-Description 812 818	nodule
+T20	Medical-Assertion 902 904	No
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 905 910	acute
+E15	Medical-Problem:T21
+T22	Medical-Problem 911 918;920 933	osseous abnormalities
+T23	Medical-Assertion 954 956	No
+A7	Medical-AssertionValue T23 absent
+T24	Medical-Problem 957 962	acute
+E17	Medical-Problem:T24
+T25	Medical-Problem 963 986	cardiopulmonary process
+T26	Medical-Problem 989 1007	Leftward deviation
+T27	Medical-Anatomy 1015 1044	trachea at the thoracic inlet
+T28	Medical-Assertion 1046 1065	potentially related
+A8	Medical-AssertionValue T28 possible
+T29	Lesion-Anatomy 1070 1089	right-sided thyroid
+E21	Lesion-Anatomy:T29
+T30	Medical-Problem 1090 1108	enlargement/nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Lesion-Description:T19 has-Lesion-Assertion:T17 has-Lesion-Anatomy:T18
+E16	Medical-Problem:T22 has-Medical-Assertion:T20
+E18	Medical-Problem:T25 has-Medical-Assertion:T23
+E19	Medical-Problem:T26 has-Medical-Anatomy:T27
+E22	Medical-Problem:T30 has-Medical-Assertion:T28

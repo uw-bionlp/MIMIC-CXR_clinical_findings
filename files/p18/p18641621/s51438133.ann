@@ -1,0 +1,35 @@
+T1	Medical-Problem 312 330	right lung abscess
+E1	Medical-Problem:T1
+T2	Medical-Problem 406 428	residual pleural fluid
+E2	Medical-Problem:T2
+T3	Medical-Problem 442 455	Consolidation
+T4	Medical-Anatomy 463 484	base of the left lung
+T5	Medical-Problem 517 536	largely atelectasis
+E5	Medical-Problem:T5
+T6	Medical-Problem 561 587;589 598	extensive dissemination of infection
+E6	Medical-Problem:T6
+T7	Medical-Problem 638 658	residual abnormality
+T8	Medical-Anatomy 667 676	left base
+T9	Medical-Assertion 680 688	probably
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 697 715	focus of pneumonia
+T11	Medical-Problem 718 742;744 762	Pulmonary vasculature is generally engorged
+E10	Medical-Problem:T11
+T12	Medical-Assertion 770 776	may be
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 777 787	mild edema
+T14	Medical-Anatomy 795 805	right lung
+T15	Medical-Assertion 839 841	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 842 854	pneumothorax
+T17	Medical-Assertion 874 876	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 877 888;890 906	appreciable pleural effusion
+T19	Medical-Problem 925 949	heart is mildly enlarged
+E15	Medical-Problem:T19
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

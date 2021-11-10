@@ -1,0 +1,27 @@
+T1	Medical-Problem 355 374	cardiac enlargement
+E1	Medical-Problem:T1
+T2	Medical-Problem 416 420;422 440	mild interstitial edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 450 466	patchy opacities
+T4	Medical-Anatomy 470 480	both bases
+T5	Medical-Assertion 481 495	likely reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 497 515	patchy atelectasis
+T7	Medical-Assertion 516 522	rather
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 528 538	aspiration
+T9	Medical-Problem 542 551	pneumonia
+T10	Medical-Problem 595 607	pneumothorax
+E8	Medical-Problem:T10
+T11	Lesion-Size 630 634	6 mm
+T12	Lesion-Description 635 642	nodular
+E10	Lesion-Description:T12
+T13	Lesion-Description 643 650	opacity
+T14	Lesion-Anatomy 659 673	right mid lung
+T15	Lesion-Assertion 677 680	not
+A3	Lesion-AssertionValue T15 absent
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E11	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T14 has-Lesion-Assertion:T15

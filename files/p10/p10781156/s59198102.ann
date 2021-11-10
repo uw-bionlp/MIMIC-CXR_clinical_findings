@@ -1,0 +1,21 @@
+T1	Medical-Problem 240 260	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 394 397	not
+E2	Medical-Problem:T2
+T3	Medical-Problem 426 445	streaky atelectasis
+T4	Medical-Anatomy 453 467	left lung base
+T5	Lesion-Count 471 479	Multiple
+T6	Lesion-Anatomy 480 489	pulmonary
+T7	Lesion-Description 490 497	nodules
+T8	Medical-Assertion 554 565	No evidence
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 569 581	pneumothorax
+T10	Medical-Problem 585 609	sizable pleural effusion
+T11	Medical-Assertion 697 708	No evidence
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 713 734	pneumonia on the left
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,23 @@
+T1	Medical-Assertion 179 190	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 195 207	pneumothorax
+T3	Lesion-Anatomy 210 225	Left upper lobe
+T4	Lesion-Description 226 230	mass
+T5	Lesion-Anatomy 235 259	central left mediastinal
+T6	Lesion-Anatomy 264 269	hilar
+T7	Lesion-Description 271 286	lymphadenopathy
+T8	Lesion-Size-Trend 294 301	similar
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Problem 323 343;345 354	New patchy bibasilar opacities
+E7	Medical-Problem:T9
+T10	Medical-Assertion 355 366	may reflect
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 367 385	patchy atelectasis
+T12	Medical-Problem 389 399	aspiration
+T13	Medical-Problem 402 422;424 461	Unchanged small left and new small right pleural effusions
+E10	Medical-Problem:T13
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T8
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10

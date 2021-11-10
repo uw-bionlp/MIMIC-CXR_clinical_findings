@@ -1,0 +1,52 @@
+T1	Medical-Problem 253 263	Prominence
+T2	Medical-Anatomy 271 282	right hilum
+T3	Medical-Problem 325 344	bibasilar opacities
+E3	Medical-Problem:T3
+T4	Medical-Problem 350 358	blunting
+T5	Medical-Anatomy 366 385	costophrenic angles
+T6	Medical-Assertion 387 401	concerning for
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 402 413	atelectasis
+T8	Medical-Problem 419 434	small effusions
+T9	Lesion-Count 436 444	Multiple
+T10	Lesion-Size 445 450	large
+T11	Lesion-Anatomy 451 460	pulmonary
+T12	Lesion-Description 462 468	nodule
+T13	Lesion-Size-Trend 484 498	grossly stable
+A2	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Problem 583 608	left retrocardiac opacity
+E12	Medical-Problem:T14
+T15	Medical-Problem 652 661	obscuring
+E13	Medical-Problem:T15
+T16	Lesion-Assertion 700 717	likely represents
+A3	Lesion-AssertionValue T16 possible
+T17	Lesion-Description 720 724	mass
+T18	Medical-Problem 777 810	component of adjacent atelectasis
+E15	Medical-Problem:T18
+T19	Lesion-Size-Trend 831 837;839 855	slight increase in size
+A4	Lesion-Size-TrendValue T19 increasing
+T20	Medical-Problem 1004 1029	New bibasilar atelectasis
+E16	Medical-Problem:T20
+T21	Medical-Assertion 1034 1042	possible
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1043 1066	small pleural effusions
+T23	Lesion-Count 1077 1085	Multiple
+T24	Lesion-Anatomy 1086 1095	pulmonary
+T25	Lesion-Description 1096 1102	masses
+T26	Lesion-Description 1127 1131	mass
+T27	Lesion-Anatomy 1139 1149;1151 1155	left lower lobe
+T28	Lesion-Characteristic 1162 1170	may have
+T29	Medical-Problem 1171 1191	adjacent atelectasis
+E24	Medical-Problem:T29
+T30	Medical-Problem 1200 1210	Prominence
+T31	Medical-Anatomy 1218 1229	right hilum
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E11	Lesion-Description:T12 has-Lesion-Count:T9 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T13
+E14	Lesion-Description:T17 has-Lesion-Assertion:T16 has-Lesion-Size-Trend:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21
+E20	Lesion-Description:T25 has-Lesion-Count:T23 has-Lesion-Anatomy:T24
+E21	Lesion-Description:T26 has-Lesion-Anatomy:T27 has-Lesion-Characteristic:T28
+E25	Medical-Problem:T30 has-Medical-Anatomy:T31

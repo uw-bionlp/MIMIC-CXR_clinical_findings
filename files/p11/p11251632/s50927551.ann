@@ -1,0 +1,54 @@
+T1	Medical-Problem 231 271	Leftward shift of mediastinal structures
+T2	Medical-Problem 296 307	volume loss
+T3	Medical-Anatomy 316 331	left upper lobe
+T4	Medical-Problem 334 380;382 389	Left upper lobe and left upper paramediastinal opacity
+E4	Medical-Problem:T4
+T5	Medical-Problem 435 453;455 473	changes from prior radiation fibrosis
+E5	Medical-Problem:T5
+T6	Medical-Problem 476 515	Small to moderate left pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Problem 631 639	somewhat
+E7	Medical-Problem:T7
+T8	Medical-Problem 686 709	remains mildly enlarged
+E8	Medical-Problem:T8
+T9	Medical-Assertion 721 723	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 724 754	pulmonary vascular engorgement
+T11	Medical-Problem 759 771	pneumothorax
+T12	Medical-Problem 800 828	Streaky left basilar opacity
+E11	Medical-Problem:T12
+T13	Medical-Assertion 829 835;837 845	likely reflects
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 846 857	atelectasis
+T15	Medical-Problem 862 871	infection
+T16	Medical-Assertion 875 887	not excluded
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Assertion 900 902	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 903 908;910 931	acute osseous abnormalities
+T19	Medical-Problem 1020 1029;1031 1051	decreased pericardial effusion
+E15	Medical-Problem:T19
+T20	Medical-Problem 1054 1075	Left pleural effusion
+E16	Medical-Problem:T20
+T21	Medical-Problem 1148 1165	Unchanged opacity
+T22	Medical-Anatomy 1177 1192	left upper lobe
+T23	Medical-Problem 1269 1295	radiation fibrosis changes
+T24	Medical-Problem 1303 1331	Streaky left basilar opacity
+E20	Medical-Problem:T24
+T25	Medical-Assertion 1332 1347	likely reflects
+A5	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1348 1359	atelectasis
+T27	Medical-Problem 1367 1376	infection
+T28	Medical-Assertion 1378 1407	cannot be completely excluded
+A6	Medical-AssertionValue T28 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22
+E19	Medical-Problem:T23 has-Medical-Anatomy:T22
+E21	Medical-Problem:T26 has-Medical-Assertion:T25
+E22	Medical-Problem:T27 has-Medical-Assertion:T25 has-Medical-Assertion:T28

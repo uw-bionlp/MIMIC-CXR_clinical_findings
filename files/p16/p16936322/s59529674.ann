@@ -1,0 +1,23 @@
+T1	Medical-Assertion 204 217	suggestion of
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 221 244	left-sided pneumothorax
+T3	Medical-Problem 345 363;365 373	lack of clear lung markings
+E2	Medical-Problem:T3
+T4	Medical-Problem 498 515	increased opacity
+T5	Medical-Anatomy 524 538	left lung base
+T6	Medical-Assertion 539 557	potentially due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 558 569	atelectasis
+T8	Medical-Problem 580 589	infection
+T9	Medical-Assertion 590 596;598 618	cannot be entirely excluded
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 715 738	Tortuous thoracic aorta
+E7	Medical-Problem:T10
+T11	Medical-Assertion 779 793	suspicious for
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 794 817	left-sided pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

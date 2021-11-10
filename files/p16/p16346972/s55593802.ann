@@ -1,0 +1,21 @@
+T1	Medical-Problem 448 472	heart is stably enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 479 492	may represent
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 493 505	cardiomegaly
+T4	Medical-Problem 517 537	pericardial effusion
+T5	Medical-Assertion 538 563	should also be considered
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Anatomy 566 571	Lungs
+T7	Medical-Assertion 576 583;585 593	without evidence
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 597 625	focal airspace consolidation
+T9	Medical-Problem 627 642	pulmonary edema
+T10	Medical-Problem 644 660	pleural effusion
+T11	Medical-Problem 665 677	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Anatomy:T6 has-Medical-Assertion:T7

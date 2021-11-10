@@ -1,0 +1,26 @@
+T1	Medical-Problem 316 340;342 355	new essentially complete opacification
+T2	Medical-Anatomy 363 378	left hemithorax
+T3	Medical-Assertion 390 392	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 393 407	definite shift
+T5	Medical-Anatomy 416 427	mediastinum
+T6	Medical-Anatomy 430 440	Right lung
+T7	Medical-Problem 456 485	pulmonary vascular congestion
+T8	Medical-Problem 599 633	Essentially complete opacification
+T9	Medical-Anatomy 641 656	left hemithorax
+T10	Medical-Assertion 657 670	likely due to
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 687 698	atelectasis
+T12	Medical-Problem 703 722	underlying effusion
+T13	Medical-Problem 725 743;745 755	Pulmonary vascular congestion
+E11	Medical-Problem:T13
+T14	Medical-Assertion 756 763	without
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 764 777	consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

@@ -1,0 +1,25 @@
+T1	Medical-Problem 317 346	Coarse interstitial opacities
+T2	Medical-Anatomy 347 368	throughout both lungs
+T3	Lesion-Characteristic 396 401	Vague
+T4	Lesion-Description 402 419	nodular opacities
+T5	Lesion-Anatomy 431 441;443 463	left upper and right lower lung
+T6	Lesion-Size-Trend 468 477	unchanged
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Lesion-Assertion 483 485	no
+A2	Lesion-AssertionValue T7 absent
+T8	Lesion-Size-Trend 486 489	new
+A3	Lesion-Size-TrendValue T8 new
+T9	Lesion-Description 490 497	nodules
+T10	Medical-Assertion 523 525	no
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 526 538	pneumothorax
+T12	Medical-Problem 540 559	focal consolidation
+T13	Medical-Problem 564 580	pleural effusion
+T14	Medical-Problem 583 596;598 608	Mild biapical thickening
+E10	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T6
+E6	Lesion-Description:T9 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T7 has-Lesion-Size-Trend:T8
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T10

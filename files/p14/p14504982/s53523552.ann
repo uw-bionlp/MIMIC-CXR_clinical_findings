@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 181 186	lungs
+T2	Medical-Problem 191 205	hyper expanded
+T3	Medical-Problem 215 228	mild blunting
+T4	Medical-Anatomy 236 254;256 261	right costophrenic angle
+T5	Medical-Problem 401 414	Mild blunting
+T6	Medical-Anatomy 422 446	right costophrenic angle
+T7	Medical-Assertion 447 464	may be related to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 467 472;474 482	small effusion
+T9	Medical-Assertion 485 487	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 488 507	focal consolidation
+T11	Medical-Problem 510 529	Hyperexpanded lungs
+E9	Medical-Problem:T11
+T12	Medical-Assertion 530 546	could be related
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 551 555	COPD
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

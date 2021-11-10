@@ -1,0 +1,24 @@
+T1	Medical-Problem 211 230	very limited change
+E1	Medical-Problem:T1
+T2	Medical-Problem 290 322	triangular region of radiopacity
+T3	Medical-Anatomy 330 341;343 393	right upper lung at the level of the third anterior interspace
+T4	Lesion-Description 512 518	lesion
+E4	Lesion-Description:T4
+T5	Medical-Problem 581 591	infectious
+E5	Medical-Problem:T5
+T6	Lesion-Characteristic 859 868	irregular
+T7	Lesion-Description 869 876	nodules
+T8	Lesion-Anatomy 894 905	upper lungs
+T9	Lesion-Size-Trend 910 919	unchanged
+A1	Lesion-Size-TrendValue T9 no-change
+T10	Lesion-Assertion 932 934	no
+A2	Lesion-AssertionValue T10 absent
+T11	Lesion-Characteristic 935 946	substantial
+T12	Lesion-Characteristic 947 954	central
+T13	Lesion-Description 955 965	lymph node
+T14	Lesion-Characteristic 966 977	enlargement
+T15	Medical-Problem 981 1004	any pleural abnormality
+E13	Medical-Problem:T15
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E11	Lesion-Description:T13 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T14

@@ -1,0 +1,23 @@
+T1	Medical-Problem 377 405	large right pleural effusion
+T2	Medical-Anatomy 420 449	lower mediastinum to the left
+T3	Medical-Problem 453 468	Bulging contour
+T4	Medical-Anatomy 476 530	anterior aspect of the hilar structures on the lateral
+T5	Medical-Assertion 543 549	raises
+A1	Medical-AssertionValue T5 possible
+T6	Lesion-Characteristic 562 569	central
+T7	Lesion-Description 570 580	adenopathy
+T8	Medical-Assertion 643 645	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 646 658	pneumothorax
+T10	Medical-Problem 679 707	Large right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 715 726	may obscure
+A3	Medical-AssertionValue T11 possible
+T12	Lesion-Description 738 748	malignancy
+E9	Lesion-Description:T12
+T13	Medical-Problem 753 762	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

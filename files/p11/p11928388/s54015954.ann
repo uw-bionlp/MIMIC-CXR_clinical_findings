@@ -1,0 +1,21 @@
+T1	Medical-Problem 323 341	Continued widening
+T2	Medical-Anatomy 349 369	superior mediastinum
+T3	Medical-Assertion 370 377	without
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 378 395;397 402	definite tracheal shift
+T5	Lesion-Size 434 439	large
+T6	Lesion-Anatomy 440 453	right thyroid
+T7	Lesion-Description 454 458	mass
+T8	Medical-Problem 516 520	some
+E7	Medical-Problem:T8
+T9	Medical-Problem 521 541	mediastinal bleeding
+E8	Medical-Problem:T9
+T10	Medical-Problem 553 600	continued enlargement of the cardiac silhouette
+E9	Medical-Problem:T10
+T11	Medical-Assertion 601 608	without
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 609 629;631 641	appreciable vascular congestion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

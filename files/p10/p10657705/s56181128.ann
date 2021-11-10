@@ -1,0 +1,18 @@
+T1	Medical-Assertion 314 316	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 317 333	pleural effusion
+T3	Medical-Problem 337 349	pneumothorax
+T4	Medical-Problem 371 398	healing pathologic fracture
+E3	Medical-Problem:T4
+T5	Lesion-Characteristic 412 417	lytic
+T6	Lesion-Description 418 424	lesion
+T7	Lesion-Anatomy 432 448;450 472	posterior aspect of the right sixth rib
+T8	Medical-Problem 489 524	slightly increased callus formation
+E7	Medical-Problem:T8
+T9	Medical-Assertion 559 570	No evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 574 603	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

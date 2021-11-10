@@ -1,0 +1,32 @@
+T1	Medical-Problem 212 240	Coarse interstitial markings
+T2	Medical-Anatomy 262 267	lungs
+T3	Medical-Problem 333 336;338 361	new region of consolidation
+T4	Medical-Anatomy 369 384	right lung base
+T5	Medical-Problem 387 407;409 418	Streaky left basilar opacities
+E5	Medical-Problem:T5
+T6	Medical-Assertion 459 474	potentially due
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 475 486	atelectasis
+T8	Medical-Problem 494 527	eventration of left hemidiaphragm
+E7	Medical-Problem:T8
+T9	Medical-Assertion 611 624	suggestion of
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 627 640	hiatal hernia
+T11	Medical-Problem 647 664	increased lucency
+T12	Medical-Anatomy 679 684	heart
+T13	Medical-Assertion 687 689	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 690 715	acute osseous abnormality
+T15	Medical-Problem 794 820;822 835	new superimposed region of consolidation
+T16	Medical-Anatomy 843 858	right lung base
+T17	Medical-Assertion 866 879	may be due to
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 909 918	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T12
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

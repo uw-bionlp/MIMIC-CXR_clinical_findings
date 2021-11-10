@@ -1,0 +1,30 @@
+T1	Medical-Problem 208 236	Heart is moderately enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 242 275	pulmonary vasculature is engorged
+E2	Medical-Problem:T2
+T3	Medical-Problem 282 287	edema
+T4	Medical-Assertion 304 311	minimal
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 314 345	Right pleural effusion is small
+E4	Medical-Problem:T5
+T6	Medical-Assertion 348 350	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 351 355;357 373	left pleural effusion
+T8	Medical-Assertion 397 399	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 400 414	focal findings
+T10	Medical-Anatomy 422 427	lungs
+T11	Medical-Problem 440 449	pneumonia
+T12	Medical-Anatomy 452 470	Right humeral head
+T13	Medical-Problem 474 482	deformed
+T14	Medical-Assertion 484 492	could be
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 493 505	degenerative
+T16	Medical-Problem 510 523	posttraumatic
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Anatomy:T12
+E11	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T12 has-Medical-Assertion:T14

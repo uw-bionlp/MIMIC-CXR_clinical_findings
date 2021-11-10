@@ -1,0 +1,16 @@
+T1	Medical-Problem 347 358	volume loss
+T2	Medical-Anatomy 362 372	both bases
+T3	Medical-Problem 378 411	small bilateral pleural effusions
+T4	Medical-Problem 416 425;427 450	pulmonary vascular redistribution
+T5	Medical-Problem 464 503;505 514	hazy alveolar infiltrates right greater than left
+E5	Medical-Problem:T5
+T6	Medical-Problem 585 606	Worsened fluid status
+E6	Medical-Problem:T6
+T7	Medical-Problem 612 644	underlying infectious infiltrate
+T8	Medical-Anatomy 652 657;659 664	lower lobes
+T9	Medical-Assertion 665 682	can't be excluded
+A1	Medical-AssertionValue T9 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

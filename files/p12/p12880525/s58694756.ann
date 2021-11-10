@@ -1,0 +1,19 @@
+T1	Medical-Problem 33 50	Nodular structure
+T2	Medical-Anatomy 58 73	right lung base
+T3	Lesion-Description 702 717	nodular density
+T4	Lesion-Anatomy 725 740	right lung base
+T5	Medical-Assertion 785 787	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 788 813	definite pleural effusion
+T7	Medical-Problem 817 829	pneumothorax
+T8	Lesion-Description 900 907	Nodular
+E7	Lesion-Description:T8
+T9	Lesion-Anatomy 923 938	right lung base
+T10	Lesion-Assertion 942 956	concerning for
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 959 963	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Assertion:T10

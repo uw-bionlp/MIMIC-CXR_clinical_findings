@@ -1,0 +1,19 @@
+T1	Medical-Problem 268 284	airspace opacity
+T2	Medical-Anatomy 292 309	right middle lobe
+T3	Medical-Anatomy 325 338;340 346	right cardiac border
+T4	Medical-Anatomy 358 414	left lower lobe overlying the hemidiaphragmatic contour.
+E4	Medical-Anatomy:T4
+T5	Medical-Problem 430 462	small number of air bronchograms
+E5	Medical-Problem:T5
+T6	Medical-Assertion 504 506	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 507 519	pneumothorax
+T8	Medical-Problem 523 539	pleural effusion
+T9	Medical-Anatomy 592 597	Right
+T10	Medical-Assertion 650 664	concerning for
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 665 674	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10

@@ -1,0 +1,41 @@
+T1	Medical-Problem 206 227	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 282 295	calcification
+T3	Medical-Anatomy 303 308	aorta
+T4	Lesion-Anatomy 325 338	Right basilar
+T5	Lesion-Characteristic 339 348	calcified
+T6	Lesion-Description 350 357	nodules
+T7	Lesion-Characteristic 362 371	calcified
+T8	Lesion-Anatomy 372 383	mediastinal
+T9	Lesion-Anatomy 388 393	hilar
+T10	Lesion-Description 394 405	lymph nodes
+T11	Medical-Problem 481 499	perihilar haziness
+E11	Medical-Problem:T11
+T12	Medical-Problem 505 528	vascular indistinctness
+E12	Medical-Problem:T12
+T13	Medical-Problem 546 566	mild pulmonary edema
+E13	Medical-Problem:T13
+T14	Medical-Problem 608 643	small pleural effusion on the right
+E14	Medical-Problem:T14
+T15	Medical-Problem 660 698	component which is loculated laterally
+E15	Medical-Problem:T15
+T16	Medical-Problem 718 726	effusion
+E16	Medical-Problem:T16
+T17	Medical-Problem 769 785	Patchy opacities
+T18	Medical-Anatomy 789 799	lung bases
+T19	Medical-Assertion 800 806;808 815	likely reflect
+A1	Medical-AssertionValue T19 possible
+T20	Medical-Problem 816 827	atelectasis
+T21	Medical-Assertion 839 841	no
+A2	Medical-AssertionValue T21 absent
+T22	Medical-Problem 842 854	pneumothorax
+T23	Medical-Problem 874 903	Mild congestive heart failure
+E21	Medical-Problem:T23
+T24	Medical-Problem 943 1010	small right pleural effusion which is partially loculated laterally
+E22	Medical-Problem:T24
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5
+E10	Lesion-Description:T10 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E17	Medical-Problem:T17 has-Medical-Anatomy:T18
+E19	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E20	Medical-Problem:T22 has-Medical-Assertion:T21

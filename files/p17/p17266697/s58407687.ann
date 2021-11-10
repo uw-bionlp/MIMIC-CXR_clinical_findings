@@ -1,0 +1,21 @@
+T1	Medical-Problem 293 309	area of scarring
+T2	Medical-Anatomy 317 340	left anterior lung base
+T3	Medical-Problem 408 422	subtle opacity
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 443 448	lungs
+T5	Medical-Assertion 469 476	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 477 496	focal consolidation
+T7	Medical-Problem 499 507	effusion
+T8	Medical-Problem 512 524	pneumothorax
+T9	Medical-Problem 601 609	free air
+T10	Medical-Anatomy 620 639	right hemidiaphragm
+T11	Medical-Assertion 657 659	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 660 674	acute findings
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

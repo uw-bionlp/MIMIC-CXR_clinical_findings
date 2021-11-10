@@ -1,0 +1,39 @@
+T1	Medical-Problem 213 232	hyperinflated lungs
+E1	Medical-Problem:T1
+T2	Medical-Problem 250 271	emphysematous changes
+E2	Medical-Problem:T2
+T3	Medical-Problem 275 297	subtle streaky opacity
+T4	Medical-Anatomy 305 310;312 322	right lower lobe
+T5	Medical-Problem 349 358	pneumonia
+T6	Medical-Problem 465 484	Persistent blunting
+T7	Medical-Anatomy 492 516	right costophrenic angle
+T8	Medical-Problem 556 595	very small right sided pleural effusion
+T9	Medical-Assertion 608 610	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 612 624	pneumothorax
+T11	Medical-Anatomy 627 645	Osseous structures
+T12	Medical-Assertion 650 657	without
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 658 675	acute abnormality
+T14	Medical-Problem 700 739	Subtle right lower lobe streaky opacity
+E12	Medical-Problem:T14
+T15	Medical-Problem 753 771	infectious process
+T16	Medical-Assertion 776 791	possible versus
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 792 803	atelectasis
+T18	Medical-Problem 807 826	airway inflammation
+T19	Medical-Problem 834 853	Hyperinflated lungs
+E16	Medical-Problem:T19
+T20	Medical-Assertion 858 866	probable
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 867 888	emphysematous changes
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T16
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

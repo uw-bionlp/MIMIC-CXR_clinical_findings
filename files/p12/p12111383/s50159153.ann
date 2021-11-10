@@ -1,0 +1,20 @@
+T1	Medical-Assertion 382 384	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 386 402	pleural effusion
+T3	Medical-Problem 404 416	pneumothorax
+T4	Medical-Problem 421 429	evidence
+E3	Medical-Problem:T4
+T5	Medical-Problem 433 448	pulmonary edema
+T6	Medical-Assertion 509 511	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 512 543	acute intrathoracic abnormality
+T8	Medical-Assertion 546 548	No
+A3	Medical-AssertionValue T8 absent
+T9	Lesion-Anatomy 561 572	mediastinal
+T10	Lesion-Anatomy 576 581	hilar
+T11	Lesion-Description 583 593	adenopathy
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T10

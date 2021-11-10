@@ -1,0 +1,15 @@
+T1	Medical-Problem 329 350	Greater Opacification
+T2	Medical-Anatomy 358 377	base the right lung
+T3	Medical-Assertion 378 391	may be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 392 397;399 412	early consolidation
+T5	Medical-Problem 446 455	pneumonia
+E4	Medical-Problem:T5
+T6	Medical-Problem 483 499	Pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Assertion 533 535	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 536 548	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

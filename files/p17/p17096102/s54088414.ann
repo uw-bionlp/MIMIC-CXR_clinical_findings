@@ -1,0 +1,20 @@
+T1	Medical-Problem 206 233	Severe global consolidation
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 342 352;354 381	right lung particularly the upper lobe
+T3	Medical-Problem 405 431	consolidation has worsened
+T4	Medical-Anatomy 440 462	remainder of the lungs
+T5	Medical-Problem 483 502;504 512	substantial pleural effusion
+T6	Medical-Assertion 535 550	could be due to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 551 568	cardiogenic edema
+T8	Medical-Problem 581 601	concurrent pneumonia
+T9	Medical-Assertion 605 611	likely
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 715 717	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 718 730	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T2
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

@@ -1,0 +1,30 @@
+T1	Medical-Problem 272 278	Poorly
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 338 346	dominant
+T3	Lesion-Size 347 353	3.6 cm
+T4	Lesion-Characteristic 354 359	round
+T5	Lesion-Description 360 367	opacity
+T6	Lesion-Anatomy 376 417	left lower lobe posterior basilar segment
+T7	Medical-Assertion 434 442	possible
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 443 454	new opacity
+T9	Medical-Anatomy 472 520	right apex adjacent to the right clavicular head
+T10	Medical-Assertion 523 525	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 526 533;535 543	pleural effusion
+T12	Medical-Problem 547 559	pneumothorax
+T13	Medical-Problem 644 667	New bibasilar opacities
+E11	Medical-Problem:T13
+T14	Lesion-Size 690 696	3.6 cm
+T15	Lesion-Characteristic 697 702	round
+T16	Lesion-Anatomy 703 707;709 745	left lower lobe posterior basilar segment
+T17	Lesion-Description 746 753	opacity
+T18	Lesion-Description 828 834	lesion
+E16	Lesion-Description:T18
+T19	Lesion-Description 891 899	neoplasm
+E17	Lesion-Description:T19
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T2 has-Lesion-Size-Present:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E15	Lesion-Description:T17 has-Lesion-Size-Present:T14 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T16

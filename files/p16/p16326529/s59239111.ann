@@ -1,0 +1,27 @@
+T1	Medical-Problem 380 387;389 434	diffuse increase in interstitial markings bilaterally
+E1	Medical-Problem:T1
+T2	Medical-Problem 436 460	Right infrahilar opacity
+E2	Medical-Problem:T2
+T3	Medical-Problem 586 601	Rounded opacity
+T4	Medical-Anatomy 609 617	superior
+T5	Medical-Assertion 662 664	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 665 681	pleural effusion
+T7	Medical-Problem 685 697	pneumothorax
+T8	Medical-Problem 895 948	Diffuse increase in interstitial markings bilaterally
+E7	Medical-Problem:T8
+T9	Medical-Assertion 949 964	could be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 965 972;974 986	chronic lung disease
+T11	Medical-Problem 1020 1038	component of edema
+T12	Medical-Problem 1042 1051	infection
+T13	Medical-Assertion 1053 1065	not excluded
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1101 1127;1129 1141	Subtle superior left lower lobe opacity
+E11	Medical-Problem:T14
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Assertion:T13
+E10	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T13

@@ -1,0 +1,30 @@
+T1	Medical-Assertion 284 292;294 304	interval resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 312 354	right supraclavicular chest wall emphysema
+T3	Medical-Problem 405 427	Pleural fluid tracking
+T4	Medical-Anatomy 438 443;445 463	right lateral chest wall
+T5	Medical-Problem 479 501	Small pleural effusion
+T6	Medical-Assertion 502 508	versus
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 509 516;518 528	pleural thickening
+T8	Medical-Anatomy 536 551	right lung base
+T9	Medical-Assertion 567 569	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 570 582	pneumothorax
+T11	Medical-Problem 694 736	right supraclavicular chest wall emphysema
+E8	Medical-Problem:T11
+T12	Medical-Problem 742 755	Pleural fluid
+T13	Medical-Anatomy 766 782	right chest wall
+T14	Medical-Problem 801 823	Small pleural effusion
+T15	Medical-Assertion 824 830	versus
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 831 849	pleural thickening
+T17	Medical-Anatomy 860 875	right lung base
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Assertion:T15 has-Medical-Anatomy:T17
+E12	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17

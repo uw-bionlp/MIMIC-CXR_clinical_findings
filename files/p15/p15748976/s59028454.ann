@@ -1,0 +1,31 @@
+T1	Medical-Assertion 230 232	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 233 252	focal consolidation
+T3	Medical-Problem 264 273	pneumonia
+T4	Lesion-Size 278 290	1.2 x 1.2 cm
+T5	Lesion-Anatomy 291 295;297 307	left lower lobe
+T6	Lesion-Characteristic 308 317	calcified
+T7	Lesion-Description 318 327	granuloma
+T8	Lesion-Size-Trend 331 340	unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Problem 355 362;364 372	pleural effusion
+E7	Medical-Problem:T9
+T10	Medical-Problem 376 388	pneumothorax
+E8	Medical-Problem:T10
+T11	Medical-Problem 427 435;437 445	aorta is tortuous
+E9	Medical-Problem:T11
+T12	Medical-Problem 448 463	Atherosclerotic
+E10	Medical-Problem:T12
+T13	Medical-Problem 464 478	calcifications
+T14	Medical-Anatomy 486 497	aortic arch
+T15	Medical-Problem 537 558	compression deformity
+T16	Medical-Anatomy 571 595;597 601	lower thoracic vertebral body
+T17	Medical-Assertion 640 642	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 643 672	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6 has-Lesion-Size-Trend:T8
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

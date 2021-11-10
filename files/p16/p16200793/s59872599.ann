@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 262 280	pulmonary arteries
+T2	Medical-Problem 285 301	mildly prominent
+T3	Lesion-Anatomy 310 326	superior segment
+T4	Lesion-Description 350 354	mass
+T5	Medical-Anatomy 441 446	lungs
+T6	Medical-Problem 460 488	mild interstitial thickening
+T7	Medical-Problem 494 522	bilateral perihilar haziness
+T8	Medical-Problem 551 577	mild bibasilar atelectasis
+T9	Medical-Problem 582 601	mild bronchiectasis
+E9	Medical-Problem:T9
+T10	Medical-Anatomy 603 615;617 635	particularly in the lower lobes
+T11	Medical-Problem 638 647	Emphysema
+E11	Medical-Problem:T11
+T12	Medical-Assertion 674 676	no
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 677 693	pleural effusion
+T14	Medical-Problem 698 710	pneumothorax
+T15	Medical-Problem 713 746	Multiple left-sided rib fractures
+E14	Medical-Problem:T15
+T16	Medical-Assertion 815 817	No
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 818 838	focal consolidations
+T18	Medical-Assertion 839 849	concerning
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 854 863	pneumonia
+T20	Medical-Problem 881 911	Mild bilateral pulmonary edema
+E17	Medical-Problem:T20
+T21	Lesion-Anatomy 962 994	left lower lobe superior segment
+T22	Lesion-Description 995 999	mass
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T5
+E8	Medical-Problem:T8 has-Medical-Anatomy:T10
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T14 has-Medical-Assertion:T12
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T16 has-Medical-Assertion:T18
+E19	Lesion-Description:T22 has-Lesion-Anatomy:T21

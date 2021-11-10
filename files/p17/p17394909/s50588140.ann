@@ -1,0 +1,22 @@
+T1	Lesion-Count 293 301	multiple
+T2	Lesion-Anatomy 302 311;313 322	bilateral pulmonary
+T3	Lesion-Description 323 330	nodules
+T4	Lesion-Anatomy 372 387	left upper lobe
+T5	Medical-Assertion 425 427	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 428 444	pleural effusion
+T7	Medical-Problem 448 460	pneumothorax
+T8	Medical-Problem 464 510	Persistent rightward convex thoracic scoliosis
+E7	Medical-Problem:T8
+T9	Lesion-Anatomy 659 668	Bilateral
+T10	Lesion-Description 679 686	nodules
+T11	Medical-Assertion 695 697	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 698 713	pulmonary edema
+T13	Medical-Problem 717 726	pneumonia
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11

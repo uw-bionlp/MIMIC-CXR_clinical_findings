@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 465 469	Lung
+T2	Medical-Problem 492 530	bilateral patchy ill-defined opacities
+T3	Medical-Assertion 537 548	may reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 552 575	component of aspiration
+T5	Medical-Problem 632 642	contusions
+T6	Medical-Assertion 757 759	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 760 782	large pleural effusion
+T8	Medical-Assertion 835 837	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 838 850	pneumothorax
+T10	Medical-Anatomy 867 885	Osseous structures
+T11	Medical-Assertion 890 897	without
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 898 915	acute abnormality
+T13	Medical-Problem 1010 1036	Bilateral patchy opacities
+E9	Medical-Problem:T13
+T14	Medical-Assertion 1043 1054	may reflect
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1057 1080	component of aspiration
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

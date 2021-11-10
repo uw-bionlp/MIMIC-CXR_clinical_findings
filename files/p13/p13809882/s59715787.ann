@@ -1,0 +1,29 @@
+T1	Medical-Problem 282 317	Moderate bilateral pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 346 359	Opacification
+T3	Medical-Anatomy 368 383	left lower lung
+T4	Medical-Assertion 384 392	could be
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 393 404	atelectasis
+T6	Medical-Problem 416 425	pneumonia
+T7	Medical-Anatomy 461 484	right infrahilar region
+T8	Medical-Problem 526 535	pneumonia
+T9	Medical-Anatomy 537 548	Upper lungs
+T10	Medical-Problem 554 573	vascular congestion
+T11	Medical-Assertion 578 580	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 581 586	edema
+T13	Medical-Problem 610 626	pleural effusion
+E11	Medical-Problem:T13
+T14	Medical-Problem 659 671	cardiomegaly
+E12	Medical-Problem:T14
+T15	Medical-Assertion 827 829	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 830 842	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

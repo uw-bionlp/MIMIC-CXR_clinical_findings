@@ -1,0 +1,27 @@
+T1	Medical-Problem 180 213	Multifocal areas of consolidation
+T2	Medical-Anatomy 240 244;246 251	both lungs
+T3	Medical-Problem 260 292	relative upper lobe predominance
+E3	Medical-Problem:T3
+T4	Medical-Problem 345 396	opacities have a relatively peripheral predominance
+E4	Medical-Problem:T4
+T5	Medical-Problem 448 457	opacities
+T6	Medical-Anatomy 465 475	right lung
+T7	Medical-Anatomy 538 548	right base
+T8	Medical-Problem 553 559;561 570	slight worsening
+T9	Medical-Anatomy 578 597	right mid lung area
+T10	Medical-Anatomy 607 616	left lung
+T11	Medical-Problem 633 639;641 650	slight worsening
+T12	Medical-Anatomy 658 667	left base
+T13	Medical-Anatomy 700 715	left upper lobe
+T14	Medical-Assertion 737 750	may be due to
+A1	Medical-AssertionValue T14 possible
+T15	Medical-Problem 751 780	widespread atypical pneumonia
+T16	Medical-Problem 787 809	eosinophilic pneumonia
+T17	Medical-Problem 814 846	cryptogenic organizing pneumonia
+E16	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7 has-Medical-Anatomy:T9
+E11	Medical-Problem:T11 has-Medical-Anatomy:T10 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Medical-Problem:T16 has-Medical-Assertion:T14

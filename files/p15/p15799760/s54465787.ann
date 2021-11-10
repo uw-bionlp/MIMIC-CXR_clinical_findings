@@ -1,0 +1,16 @@
+T1	Medical-Problem 241 260	stable cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 274 304;306 325	persistent right-sided pleural effusion with fluid
+T3	Medical-Anatomy 333 346	minor fissure
+T4	Medical-Problem 358 373	mild prominence
+T5	Medical-Anatomy 382 400	pulmonary markings
+T6	Medical-Assertion 401 408	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 409 430	overt pulmonary edema
+T8	Medical-Assertion 433 435	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 436 450	pneumothoraces
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

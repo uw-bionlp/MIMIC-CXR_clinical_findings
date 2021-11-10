@@ -1,0 +1,18 @@
+T1	Medical-Assertion 503 505	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 506 511;513 525	large pneumothorax
+T3	Medical-Problem 542 569	Lung volumes are diminished
+E2	Medical-Problem:T3
+T4	Medical-Problem 585 612	bilateral streaky opacities
+E3	Medical-Problem:T4
+T5	Medical-Assertion 619 630	may reflect
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 631 651	areas of atelectasis
+T7	Medical-Problem 658 700	central pulmonary vessels remain prominent
+E5	Medical-Problem:T7
+T8	Medical-Assertion 707 718	may reflect
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 719 729;731 762	underlying pulmonary arterial hypertension
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

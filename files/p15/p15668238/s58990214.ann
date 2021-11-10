@@ -1,0 +1,32 @@
+T1	Medical-Problem 567 574	Opacity
+T2	Medical-Anatomy 582 597	left lower lobe
+T3	Medical-Problem 603 617	indistinctness
+T4	Medical-Anatomy 625 629;631 667	left hemidiaphragm and costophrenic angle
+T5	Medical-Assertion 668 681	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 700 711	atelectasis
+T7	Medical-Problem 713 726	consolidation
+T8	Medical-Problem 732 740	effusion
+T9	Medical-Problem 743 769	Right lower lung opacities
+E8	Medical-Problem:T9
+T10	Medical-Problem 834 842	heart is
+T11	Medical-Assertion 843 850	perhaps
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 872 910	Interstitial edema is mild to moderate
+E10	Medical-Problem:T12
+T13	Medical-Problem 1052 1072	Bilateral mild edema
+E11	Medical-Problem:T13
+T14	Medical-Problem 1077 1106	lower lung airspace opacities
+E12	Medical-Problem:T14
+T15	Medical-Problem 1114 1124;1126 1142	left small pleural effusion
+E13	Medical-Problem:T15
+T16	Medical-Assertion 1150 1165	could represent
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1166 1175	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

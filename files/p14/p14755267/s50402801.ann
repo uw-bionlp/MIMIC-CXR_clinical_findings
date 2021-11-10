@@ -1,0 +1,28 @@
+T1	Medical-Problem 246 258;260 277	vague subtle increased opacity
+T2	Medical-Anatomy 285 296	lower lungs
+T3	Medical-Assertion 303 316	could reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 317 332	bronchovascular
+T5	Medical-Problem 334 342	crowding
+E4	Medical-Problem:T5
+T6	Medical-Problem 346 358	gynecomastia
+E5	Medical-Problem:T6
+T7	Medical-Problem 360 369	Pneumonia
+T8	Medical-Assertion 373 393	difficult to exclude
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 495 497	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 498 514	pleural effusion
+T11	Medical-Problem 518 530	pneumothorax
+T12	Medical-Problem 533 542	Deformity
+T13	Medical-Anatomy 550 563;565 572	right lateral 2nd rib
+T14	Medical-Assertion 573 584	may be from
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 585 600	healed fracture
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

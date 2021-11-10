@@ -1,0 +1,26 @@
+T1	Lesion-Description 166 170	mass
+T2	Lesion-Anatomy 189 204	left upper lobe
+T3	Lesion-Size 230 242	6.4 x 7.1 cm
+T4	Lesion-Anatomy 373 383	Left hilum
+T5	Lesion-Description 442 446	mass
+T6	Medical-Problem 494 522;524 532	Left hemidiaphragm is mildly elevated
+E6	Medical-Problem:T6
+T7	Lesion-Size 550 555	Large
+T8	Lesion-Anatomy 556 576	left upper lobe lung
+T9	Lesion-Description 577 581	mass
+T10	Lesion-Assertion 583 604	highly concerning for
+A1	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 619 625	cancer
+T12	Medical-Assertion 632 638	may be
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 639 649	associated
+T14	Medical-Problem 655 673	airway involvement
+T15	Medical-Anatomy 702 707	hilum
+T16	Medical-Problem 730 755	postobstructive pneumonia
+E14	Medical-Problem:T16
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Present:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E9	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8
+E10	Lesion-Description:T11 has-Lesion-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12 has-Medical-Anatomy:T15

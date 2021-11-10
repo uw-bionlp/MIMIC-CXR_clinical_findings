@@ -1,0 +1,46 @@
+T1	Medical-Problem 176 192	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 201 236	accentuate bronchovascular markings
+E2	Medical-Problem:T2
+T3	Medical-Problem 248 256	widening
+T4	Medical-Anatomy 264 275;277 296	right upper mediastinal contour
+T5	Medical-Assertion 303 314	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 315 332	venous distention
+T7	Lesion-Assertion 337 348	less likely
+A2	Lesion-AssertionValue T7 possible
+T8	Lesion-Description 349 354;356 372	lymph node enlargement
+T9	Medical-Problem 375 383	Heart is
+E7	Medical-Problem:T9
+T10	Medical-Problem 384 399	mildly enlarged
+E8	Medical-Problem:T10
+T11	Medical-Problem 455 481	right upper lobe opacities
+E9	Medical-Problem:T11
+T12	Medical-Problem 498 507;509 528	Perihilar vascular congestion
+E10	Medical-Problem:T12
+T13	Medical-Problem 549 581	bilateral interstitial opacities
+E11	Medical-Problem:T13
+T14	Medical-Problem 584 621	Multifocal patchy air space opacities
+T15	Medical-Anatomy 651 662;664 689	right upper lobe and both lower lobes
+T16	Medical-Assertion 700 702	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 703 715	pneumothorax
+T18	Medical-Problem 718 741;743 752	Small bilateral pleural effusions
+E15	Medical-Problem:T18
+T19	Medical-Problem 834 874	Bibasilar and right upper lung opacities
+E16	Medical-Problem:T19
+T20	Medical-Problem 914 932	asymmetrical edema
+E17	Medical-Problem:T20
+T21	Medical-Problem 951 963	cardiomegaly
+E18	Medical-Problem:T21
+T22	Medical-Problem 968 988	coexisting infection
+T23	Medical-Assertion 990 1010	should be considered
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1113 1136;1138 1145	underlying chronic lung disease
+E20	Medical-Problem:T24
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Assertion:T7
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E19	Medical-Problem:T22 has-Medical-Assertion:T23

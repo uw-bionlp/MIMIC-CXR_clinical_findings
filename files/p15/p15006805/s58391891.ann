@@ -1,0 +1,41 @@
+T1	Medical-Problem 232 245	Heart size is
+E1	Medical-Problem:T1
+T2	Medical-Problem 246 265	moderately enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 273 302	left ventricular predominance
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 309 320	aortic knob
+T5	Medical-Problem 324 333	calcified
+T6	Medical-Problem 336 364	Patchy ill-defined opacities
+T7	Medical-Anatomy 386 406	right mid lung field
+T8	Medical-Anatomy 429 463;465 474	lung bases bilaterally, more so on the right
+T9	Medical-Anatomy 476 481	Lungs
+T10	Medical-Problem 486 529	hyperinflated with flattening of diaphragms
+T11	Medical-Assertion 530 543	suggestive of
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 545 549	COPD
+T13	Medical-Assertion 551 553	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 554 570	pleural effusion
+T15	Medical-Problem 574 586	pneumothorax
+T16	Medical-Assertion 600 602	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 603 618	pulmonary edema
+T18	Medical-Problem 638 658	Degenerative changes
+T19	Medical-Anatomy 676 690	thoracic spine
+T20	Medical-Problem 711 727	Patchy opacities
+T21	Medical-Anatomy 739 759	right mid lung field
+T22	Medical-Anatomy 764 779	both lung bases
+T23	Medical-Assertion 797 810	could reflect
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 811 829	areas of infection
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21 has-Medical-Anatomy:T22
+E20	Medical-Problem:T24 has-Medical-Assertion:T23

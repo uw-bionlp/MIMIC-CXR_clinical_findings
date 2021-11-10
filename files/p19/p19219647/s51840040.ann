@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 222 227	lungs
+T2	Medical-Problem 235 282	hyperinflated with flattening of the diaphragms
+T3	Medical-Problem 288 304	relative lucency
+T4	Medical-Anatomy 312 323	upper lobes
+T5	Medical-Problem 341 360;362 379	chronic obstructive pulmonary disease
+E5	Medical-Problem:T5
+T6	Medical-Problem 416 437;439 446	persistent right base opacity
+E6	Medical-Problem:T6
+T7	Medical-Problem 560 580	underlying pneumonia
+E7	Medical-Problem:T7
+T8	Medical-Problem 585 595	aspiration
+E8	Medical-Problem:T8
+T9	Medical-Assertion 598 600	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 601 623	large pleural effusion
+T11	Medical-Assertion 643 645	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 646 658	pneumothorax
+T13	Medical-Problem 723 740;742 751	Old bilateral rib fractures
+E11	Medical-Problem:T13
+T14	Medical-Problem 788 792	COPD
+E12	Medical-Problem:T14
+T15	Medical-Problem 798 817	pulmonary emphysema
+E13	Medical-Problem:T15
+T16	Medical-Problem 824 842	Right base opacity
+E14	Medical-Problem:T16
+T17	Medical-Problem 896 920	progression of pneumonia
+E15	Medical-Problem:T17
+T18	Lesion-Characteristic 931 941	underlying
+T19	Lesion-Description 952 958	lesion
+T20	Lesion-Assertion 962 965;967 975	not excluded
+A3	Lesion-AssertionValue T20 possible
+T21	Medical-Problem 996 1011	underlying COPD
+E18	Medical-Problem:T21
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E17	Lesion-Description:T19 has-Lesion-Characteristic:T18 has-Lesion-Assertion:T20

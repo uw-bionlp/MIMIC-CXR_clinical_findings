@@ -1,0 +1,36 @@
+T1	Medical-Problem 279 295	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 309 332	tortuous thoracic aorta
+E2	Medical-Problem:T2
+T3	Medical-Problem 399 415	Linear opacities
+T4	Medical-Anatomy 424 459	right mid lung and right lower lobe
+T5	Medical-Assertion 460 473	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 474 495	platelike atelectasis
+T7	Medical-Assertion 512 532	difficult to exclude
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 533 569	developing or interstitial pneumonia
+T9	Medical-Assertion 615 617	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 618 630	pneumothorax
+T11	Medical-Problem 634 650	pleural effusion
+T12	Medical-Problem 675 691	Linear opacities
+T13	Medical-Anatomy 699 727	right middle and lower lobes
+T14	Medical-Assertion 746 754	possibly
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 755 777	platelike atelectasis,
+T16	Medical-Problem 809 821;823 837	interstitial pneumonia (e.g
+T17	Medical-Assertion 869 874	could
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Assertion 905 916	No evidence
+A6	Medical-AssertionValue T18 absent
+T19	Medical-Problem 920 957	diffuse interstitial lung abnormality
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14 has-Medical-Assertion:T17
+E12	Medical-Problem:T16 has-Medical-Assertion:T17
+E13	Medical-Problem:T19 has-Medical-Assertion:T18

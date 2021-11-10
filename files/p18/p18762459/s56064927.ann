@@ -1,0 +1,26 @@
+T1	Medical-Problem 296 325	Large region of consolidation
+T2	Medical-Anatomy 333 349	right upper lobe
+T3	Medical-Problem 375 399	Component of volume loss
+E3	Medical-Problem:T3
+T4	Medical-Assertion 400 417	suggests possible
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 418 437	bronchial occlusion
+T6	Medical-Problem 467 509	Small areas of peribronchial opacification
+T7	Medical-Anatomy 517 528;530 534	right lower lung
+T8	Medical-Assertion 535 543	could be
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 544 559	aspirated blood
+T10	Medical-Problem 563 568	mucus
+T11	Medical-Assertion 591 593	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 594 605;607 623	appreciable pleural effusion
+T13	Medical-Assertion 626 628	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 629 641	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

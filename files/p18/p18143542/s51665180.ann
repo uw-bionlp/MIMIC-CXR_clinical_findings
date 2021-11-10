@@ -1,0 +1,43 @@
+T1	Medical-Assertion 500 502	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 503 515	pneumothorax
+T3	Medical-Problem 605 618	large lucency
+T4	Medical-Anatomy 626 639	upper abdomen
+T5	Medical-Anatomy 666 671	Lungs
+E4	Medical-Anatomy:T5
+T6	Medical-Problem 710 717	opacity
+T7	Medical-Anatomy 721 736	both lung bases
+T8	Medical-Problem 752 771	bilateral effusions
+T9	Medical-Problem 778 797	underlying collapse
+T10	Medical-Problem 806 819	consolidation
+T11	Medical-Problem 831 856	upper zone redistribution
+E10	Medical-Problem:T11
+T12	Medical-Assertion 858 865	without
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 866 875	overt CHF
+T14	Medical-Problem 1024 1045	improved expansion of
+E12	Medical-Problem:T14
+T15	Medical-Problem 1064 1081	Increased opacity
+T16	Medical-Anatomy 1085 1100	both lung bases
+T17	Medical-Assertion 1101 1114	suggestive of
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1115 1134	bilateral effusions
+T19	Medical-Problem 1141 1160	underlying collapse
+T20	Medical-Problem 1168 1181	consolidation
+T21	Medical-Problem 1186 1211	Upper zone redistribution
+E18	Medical-Problem:T21
+T22	Medical-Assertion 1213 1220	without
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1221 1230	overt CHF
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E17	Medical-Problem:T20 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E19	Medical-Problem:T23 has-Medical-Assertion:T22

@@ -1,0 +1,38 @@
+T1	Medical-Problem 34 64	Bilateral lower lobe opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 65 86	most likely represent
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 87 98	atelectasis
+T4	Medical-Problem 103 112	infection
+T5	Medical-Assertion 115 134	cannote be excluded
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 152 177	small bilateral effusions
+E4	Medical-Problem:T6
+T7	Medical-Problem 180 184;186 200	Mild  cardiomegally
+E5	Medical-Problem:T7
+T8	Medical-Problem 661 689	bibasilar airspace opacities
+E6	Medical-Problem:T8
+T9	Medical-Assertion 697 708	may reflect
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 710 721	atelectasis
+T11	Medical-Problem 730 740	aspiration
+T12	Medical-Problem 744 753	pneumonia
+T13	Medical-Assertion 754 785	could also have this appearance
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Assertion 833 839	likely
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 840 864;866 884	layering effusions, left greater than right
+T16	Medical-Assertion 887 898	No evidence
+A6	Medical-AssertionValue T16 absent
+T17	Medical-Problem 902 917	pulmonary edema
+T18	Medical-Assertion 920 922	No
+A7	Medical-AssertionValue T18 absent
+T19	Medical-Problem 923 935	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Assertion:T13
+E9	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T17 has-Medical-Assertion:T16
+E12	Medical-Problem:T19 has-Medical-Assertion:T18

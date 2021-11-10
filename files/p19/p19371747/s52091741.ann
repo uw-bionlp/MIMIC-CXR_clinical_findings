@@ -1,0 +1,24 @@
+T1	Medical-Problem 252 264	cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 346 372	vessels are mildly dilated
+E2	Medical-Problem:T2
+T3	Medical-Problem 375 382;384 400	Greater opacification at
+T4	Medical-Anatomy 405 415	lung bases
+T5	Medical-Assertion 416 424	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 425 436	atelectasis
+T7	Medical-Problem 441 452	early edema
+T8	Medical-Problem 459 469	aspiration
+T9	Medical-Anatomy 471 481	vertically
+T10	Medical-Problem 529 534;536 553	Small bilateral pleural
+E9	Medical-Problem:T10
+T11	Medical-Problem 554 563	effusions
+E10	Medical-Problem:T11
+T12	Medical-Assertion 577 579	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 580 592	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Anatomy:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

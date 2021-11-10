@@ -1,0 +1,21 @@
+T1	Medical-Problem 314 329	bulging contour
+T2	Medical-Anatomy 337 347;349 360	left lower mediastinum
+T3	Medical-Assertion 361 369	suggests
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 370 381	lipomatosis
+T5	Medical-Anatomy 389 406	lower mediastinum
+T6	Medical-Assertion 476 478	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 479 496	pleural effusions
+T8	Medical-Problem 501 513	pneumothorax
+T9	Medical-Problem 516 543	Slight degenerative changes
+T10	Medical-Anatomy 566 574;576 581	thoracic spine
+T11	Medical-Assertion 599 610	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 614 627	acute disease
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

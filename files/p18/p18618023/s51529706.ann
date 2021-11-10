@@ -1,0 +1,47 @@
+T1	Medical-Problem 31 48	Improved aeration
+T2	Medical-Anatomy 52 61	left apex
+T3	Medical-Problem 88 103;105 114	left upper lobe  colaapse
+E3	Medical-Problem:T3
+T4	Medical-Problem 117 136	Large consolidation
+T5	Medical-Anatomy 153 171	left mid lung zone
+T6	Medical-Assertion 179 187	probable
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 188 196	collaspe
+T8	Medical-Problem 200 208	effusion
+T9	Medical-Anatomy 216 236	left lower lung zone
+T10	Medical-Assertion 239 247	Probable
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 248 253;255 270	small  right effusion
+T12	Medical-Problem 556 577	flash pulmonary edema
+E10	Medical-Problem:T12
+T13	Medical-Problem 793 801	aeration
+T14	Medical-Anatomy 809 824	left upper lung
+T15	Lesion-Characteristic 830 840	persistent
+T16	Lesion-Description 861 875	mass-like area
+T17	Lesion-Anatomy 883 896	left mid lung
+T18	Medical-Assertion 901 914	suggestion of
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 918 935	layering effusion
+T20	Medical-Assertion 1022 1028	likely
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1031 1053	right pleural effusion
+T22	Medical-Problem 1070 1098	areas of ill-defined opacity
+T23	Medical-Anatomy 1106 1116	right lung
+T24	Medical-Problem 1164 1205	resolving superimposed interstitial edema
+T25	Medical-Problem 1300 1331	diffuse left hemithorax process
+E21	Medical-Problem:T25
+T26	Medical-Assertion 1334 1336	No
+A5	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1337 1349	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T6 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Lesion-Description:T16 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T23
+E20	Medical-Problem:T24 has-Medical-Anatomy:T23
+E22	Medical-Problem:T27 has-Medical-Assertion:T26

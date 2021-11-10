@@ -1,0 +1,22 @@
+T1	Medical-Problem 289 313	Mild vascular congestion
+E1	Medical-Problem:T1
+T2	Medical-Problem 367 386	widened mediastinum
+E2	Medical-Problem:T2
+T3	Lesion-Description 394 409	lymphadenopathy
+E3	Lesion-Description:T3
+T4	Medical-Problem 427 445;447 459	interval worsening of opacities
+T5	Medical-Problem 465 484	large consolidation
+T6	Medical-Anatomy 500 510	right lung
+T7	Medical-Problem 516 520;522 544	less compromise of the apex
+T8	Medical-Problem 574 595;597 605	increasing in pleural effusion
+E8	Medical-Problem:T8
+T9	Medical-Problem 611 631	adjacent atelectasis
+E9	Medical-Problem:T9
+T10	Lesion-Assertion 636 642	likely
+A1	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 643 652	worsening
+T12	Lesion-Description 653 670	tumor involvement
+E4	Medical-Problem:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E11	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11

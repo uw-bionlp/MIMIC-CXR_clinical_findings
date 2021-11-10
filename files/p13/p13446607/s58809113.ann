@@ -1,0 +1,32 @@
+T1	Lesion-Size 263 268	small
+T2	Lesion-Description 270 285	nodular opacity
+T3	Lesion-Anatomy 302 331	lower thoracic vertebral body
+T4	Lesion-Assertion 333 341	possibly
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Characteristic 345 354	calcified
+T6	Lesion-Description 355 364	granuloma
+T7	Lesion-Description 368 379	bone island
+T8	Medical-Assertion 456 458	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 459 475	pleural effusion
+T10	Medical-Problem 479 491	pneumothorax
+T11	Medical-Assertion 525 527	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 528 536	free air
+T13	Medical-Anatomy 547 566	right hemidiaphragm
+T14	Medical-Assertion 587 589	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 590 599	pneumonia
+T16	Lesion-Description 601 612	Bone island
+T17	Lesion-Characteristic 620 629	calcified
+T18	Lesion-Description 630 639	granuloma
+T19	Lesion-Anatomy 660 665;667 672	lower lungs
+E2	Lesion-Description:T2 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5
+E6	Lesion-Description:T7 has-Lesion-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Lesion-Description:T16 has-Lesion-Anatomy:T19
+E14	Lesion-Description:T18 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T19

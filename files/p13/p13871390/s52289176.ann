@@ -1,0 +1,34 @@
+T1	Medical-Assertion 498 506	possibly
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 507 535	flipped into the azygos vein
+T3	Medical-Problem 542 552;554 561	crescentic lucency
+T4	Medical-Anatomy 576 591	right lung apex
+T5	Medical-Problem 614 632;634 646	small right apical pneumothorax
+E4	Medical-Problem:T5
+T6	Medical-Problem 670 690	Postsurgical changes
+T7	Medical-Anatomy 698 708	right lung
+T8	Medical-Anatomy 719 735	bronchial valves
+T9	Medical-Problem 737 744;746 756	pleural thickening
+T10	Medical-Problem 762 775	pleural fluid
+T11	Medical-Problem 797 817	previous large bulla
+T12	Medical-Anatomy 826 865	superior segment of the left lower lobe
+T13	Medical-Problem 922 929	opacity
+T14	Medical-Anatomy 937 960	level of the left hilum
+T15	Medical-Anatomy 981 986	heart
+T16	Medical-Assertion 990 993	not
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 994 1002	enlarged
+T18	Medical-Assertion 1103 1111	possibly
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1112 1140	flipped into the azygos vein
+T20	Medical-Problem 1212 1253	Multiple postoperative right lung changes
+E17	Medical-Problem:T20
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E15	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

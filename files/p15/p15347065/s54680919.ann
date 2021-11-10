@@ -1,0 +1,43 @@
+T1	Medical-Assertion 267 269	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 270 282	pneumothorax
+T3	Medical-Problem 286 302	pleural effusion
+T4	Medical-Problem 314 333;335 348	partial right upper lobe collapse
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 362 377	left lower lobe
+T6	Lesion-Characteristic 392 403	ill-defined
+T7	Lesion-Description 404 411	nodular
+E6	Lesion-Description:T7
+T8	Lesion-Description 413 420	opacity
+T9	Lesion-Anatomy 486 497	mediastinal
+T10	Lesion-Description 498 508	adenopathy
+T11	Lesion-Assertion 512 520	not well
+A2	Lesion-AssertionValue T11 absent
+T12	Medical-Anatomy 563 568	heart
+T13	Medical-Assertion 572 575	not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 576 584	enlarged
+T15	Medical-Assertion 605 607	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 608 620	pneumothorax
+T17	Medical-Problem 625 658	Partial right upper lobe collapse
+E13	Medical-Problem:T17
+T18	Lesion-Size-Trend 663 666	new
+A5	Lesion-Size-TrendValue T18 new
+T19	Lesion-Anatomy 667 682	left lower lobe
+T20	Lesion-Description 683 698	nodular opacity
+T21	Medical-Assertion 700 703;705 712	can be from
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 713 723	aspiration
+T23	Medical-Problem 725 734	pneumonia
+T24	Lesion-Description 750 759	malignant
+E18	Lesion-Description:T24
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9 has-Lesion-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Lesion-Description:T20 has-Lesion-Size-Trend:T18 has-Lesion-Anatomy:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T23 has-Medical-Assertion:T21

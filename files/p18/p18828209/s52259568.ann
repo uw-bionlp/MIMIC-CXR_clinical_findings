@@ -1,0 +1,42 @@
+T1	Medical-Problem 175 184	opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 186 194	possibly
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 195 206	atelectasis
+T4	Medical-Problem 211 221	aspiration
+T5	Medical-Assertion 225 237	not excluded
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 824 830	Patchy
+E4	Medical-Problem:T6
+T7	Medical-Problem 831 840	opacities
+E5	Medical-Problem:T7
+T8	Medical-Anatomy 849 859	lung bases
+T9	Medical-Assertion 860 871	may reflect
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 872 883	atelectasis
+T11	Medical-Problem 891 901	aspiration
+T12	Medical-Assertion 905 917	not excluded
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 920 922	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 923 939	pleural effusion
+T15	Medical-Problem 943 955	pneumothorax
+T16	Medical-Problem 1022 1028	region
+T17	Medical-Anatomy 1080 1088	internal
+T18	Medical-Problem 1258 1284	Patchy bibasilar opacities
+E13	Medical-Problem:T18
+T19	Medical-Assertion 1286 1294	possibly
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1295 1306	atelectasis
+T21	Medical-Problem 1311 1321	aspiration
+T22	Medical-Assertion 1325 1328;1330 1338	not excluded
+A7	Medical-AssertionValue T22 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T12
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Anatomy:T17
+E14	Medical-Problem:T20 has-Medical-Assertion:T19
+E15	Medical-Problem:T21 has-Medical-Assertion:T19 has-Medical-Assertion:T22

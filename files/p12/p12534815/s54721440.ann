@@ -1,0 +1,16 @@
+T1	Medical-Anatomy 289 294	lungs
+T2	Medical-Problem 299 319	mildly hyperinflated
+T3	Lesion-Assertion 334 336	no
+A1	Lesion-AssertionValue T3 absent
+T4	Lesion-Characteristic 337 342	focal
+T5	Lesion-Description 343 349	lesion
+T6	Medical-Assertion 408 410	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 411 427	pleural effusion
+T8	Medical-Problem 432 444	pneumothorax
+T9	Medical-Problem 475 489	hyperinflation
+E7	Medical-Problem:T9
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Characteristic:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6

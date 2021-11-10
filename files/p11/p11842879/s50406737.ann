@@ -1,0 +1,31 @@
+T1	Medical-Problem 65 76	new opacity
+T2	Medical-Anatomy 77 86	obscuring
+T3	Medical-Anatomy 91 95;97 110	left  heart border
+T4	Medical-Problem 116 132	air bronchograms
+T5	Medical-Assertion 143 157	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 158 167	pneumonia
+T7	Medical-Assertion 219 221	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 222 238	pleural effusion
+T9	Medical-Problem 714 731	New large opacity
+T10	Medical-Anatomy 739 754	left hemithorax
+T11	Medical-Problem 760 771	obscuration
+T12	Medical-Anatomy 779 791;793 799	left cardiac border
+T13	Medical-Problem 821 863;865 877	large area of consolidation (pneumonia and atelectasis)
+E11	Medical-Problem:T13
+T14	Medical-Problem 915 929	mild elevation
+T15	Medical-Anatomy 937 941;943 956	left hemidiaphragm
+T16	Medical-Assertion 1000 1002	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1003 1015	pneumothorax
+T18	Medical-Problem 1020 1028	effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16

@@ -1,0 +1,20 @@
+T1	Medical-Problem 193 247	relatively mild infrahilar peribronchial opacification
+T2	Medical-Anatomy 256 271	left lower lobe
+T3	Medical-Problem 291 302	atelectasis
+T4	Medical-Problem 309 325	area is obscured
+E4	Medical-Problem:T4
+T5	Medical-Assertion 399 401	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 403 433	pulmonary vascular abnormality
+T7	Medical-Problem 437 445	effusion
+T8	Medical-Problem 448 463	Mild distension
+T9	Medical-Anatomy 471 477;479 483	azygos vein
+T10	Medical-Assertion 484 492	suggests
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 493 535	elevated central venous pressure or volume
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10

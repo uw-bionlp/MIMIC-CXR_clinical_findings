@@ -1,0 +1,82 @@
+T1	Medical-Anatomy 262 267	lungs
+T2	Medical-Problem 272 285	hyperinflated
+T3	Medical-Problem 303 307	COPD
+T4	Medical-Problem 319 327;329 341	moderate cardiomegaly
+E4	Medical-Problem:T4
+T5	Medical-Problem 348 353	aorta
+E5	Medical-Problem:T5
+T6	Medical-Problem 357 366	calcified
+E6	Medical-Problem:T6
+T7	Medical-Problem 372 395	only minimally unfolded
+E7	Medical-Problem:T7
+T8	Medical-Problem 408 418	prominence
+T9	Medical-Anatomy 426 430	hila
+T10	Medical-Problem 477 486;488 500	pulmonary hypertension
+E10	Medical-Problem:T10
+T11	Medical-Problem 512 537	upper zone redistribution
+E11	Medical-Problem:T11
+T12	Medical-Assertion 539 546	without
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 547 556	overt CHF
+T14	Medical-Problem 569 588	minimal atelectasis
+T15	Medical-Anatomy 596 619	right base peripherally
+T16	Medical-Problem 624 643	minimal atelectasis
+T17	Medical-Anatomy 652 661	left base
+T18	Medical-Assertion 664 672	Possible
+A2	Medical-AssertionValue T18 possible
+T19	Medical-Problem 673 692	trace pleural fluid
+T20	Medical-Anatomy 700 718;720 725	right costophrenic angle
+T21	Medical-Assertion 737 739	no
+A3	Medical-AssertionValue T21 absent
+T22	Medical-Problem 740 756	focal infiltrate
+T23	Medical-Problem 785 792;794 816	area of aspiration pneumonitis
+T24	Medical-Problem 820 829	pneumonia
+T25	Medical-Anatomy 869 880	immediately
+E22	Medical-Anatomy:T25
+T26	Lesion-Assertion 954 969	could represent
+A4	Lesion-AssertionValue T26 possible
+T27	Lesion-Characteristic 979 988	calcified
+T28	Lesion-Description 990 1000	lymph node
+T29	Lesion-Characteristic 1004 1013	calcified
+T30	Lesion-Anatomy 1014 1021	thyroid
+T31	Lesion-Description 1022 1028	nodule
+T32	Medical-Problem 1050 1054	COPD
+E28	Medical-Problem:T32
+T33	Medical-Problem 1056 1068	cardiomegaly
+E29	Medical-Problem:T33
+T34	Medical-Problem 1073 1098	upper zone redistribution
+E30	Medical-Problem:T34
+T35	Medical-Problem 1108 1137	Minimal bibasilar atelectasis
+E31	Medical-Problem:T35
+T36	Medical-Assertion 1142 1150	possible
+A5	Medical-AssertionValue T36 possible
+T37	Medical-Problem 1151 1176	trace right pleural fluid
+T38	Medical-Assertion 1179 1181	No
+A6	Medical-AssertionValue T38 absent
+T39	Medical-Problem 1183 1199	focal infiltrate
+T40	Medical-Problem 1211 1220	pneumonia
+T41	Medical-Problem 1224 1246	aspiration pneumonitis
+T42	Lesion-Description 1255 1276	Nodular calcification
+T43	Lesion-Anatomy 1284 1292	thoracic
+T44	Lesion-Description 1329 1339	lymph node
+E38	Lesion-Description:T44
+T45	Lesion-Anatomy 1343 1350	thyroid
+T46	Lesion-Description 1351 1357	nodule
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Anatomy:T20
+E19	Medical-Problem:T22 has-Medical-Assertion:T21
+E20	Medical-Problem:T23 has-Medical-Assertion:T21
+E21	Medical-Problem:T24 has-Medical-Assertion:T21
+E24	Lesion-Description:T28 has-Lesion-Assertion:T26 has-Lesion-Characteristic:T27
+E27	Lesion-Description:T31 has-Lesion-Assertion:T26 has-Lesion-Characteristic:T29 has-Lesion-Anatomy:T30
+E32	Medical-Problem:T37 has-Medical-Assertion:T36
+E33	Medical-Problem:T39 has-Medical-Assertion:T38
+E34	Medical-Problem:T40 has-Medical-Assertion:T38
+E35	Medical-Problem:T41 has-Medical-Assertion:T38
+E36	Lesion-Description:T42 has-Lesion-Anatomy:T43
+E40	Lesion-Description:T46 has-Lesion-Anatomy:T45

@@ -1,0 +1,26 @@
+T1	Medical-Assertion 372 374	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 375 387	pneumothorax
+T3	Medical-Problem 389 396;398 406	pleural effusion
+T4	Medical-Problem 411 426	pulmonary edema
+T5	Lesion-Characteristic 489 507	well-circumscribed
+T6	Lesion-Anatomy 508 524	right suprahilar
+T7	Lesion-Size 526 530	2-cm
+T8	Lesion-Description 531 537	nodule
+T9	Lesion-Description 624 633	hamartoma
+E8	Lesion-Description:T9
+T10	Medical-Assertion 655 666	No evidence
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 670 694	congestive heart failure
+T12	Lesion-Size-Trend 701 707	Stable
+A3	Lesion-Size-TrendValue T12 no-change
+T13	Lesion-Anatomy 708 734	right suprahilar pulmonary
+T14	Lesion-Description 735 741	nodule
+T15	Lesion-Description 759 768	hamartoma
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Present:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Lesion-Description:T14 has-Lesion-Size-Trend:T12 has-Lesion-Anatomy:T13
+E12	Lesion-Description:T15 has-Lesion-Size-Trend:T12 has-Lesion-Anatomy:T13

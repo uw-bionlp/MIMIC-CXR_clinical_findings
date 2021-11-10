@@ -1,0 +1,30 @@
+T1	Medical-Problem 170 190	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 205 229	bronchovascular crowding
+E2	Medical-Problem:T2
+T3	Medical-Problem 232 248	Linear opacities
+T4	Medical-Anatomy 256 266	lung bases
+T5	Medical-Assertion 267 281	likely reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 283 294	atelectasis
+T7	Medical-Assertion 306 308	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 309 330	overt pulmonary edema
+T9	Medical-Assertion 333 335	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 336 359	large pleural effusions
+T11	Medical-Assertion 387 389	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 390 413	confluent consolidation
+T13	Medical-Problem 417 429	pneumothorax
+T14	Medical-Problem 433 447	Calcifications
+T15	Medical-Anatomy 455 466	aortic knob
+T16	Medical-Problem 565 581	Low lung volumes
+E12	Medical-Problem:T16
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15

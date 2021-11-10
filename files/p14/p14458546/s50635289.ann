@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 335 344	Bilateral
+E1	Medical-Anatomy:T1
+T2	Lesion-Assertion 387 401	suspicious for
+A1	Lesion-AssertionValue T2 possible
+T3	Lesion-Description 403 418	lymphadenopathy
+T4	Lesion-Description 474 485	Soft tissue
+T5	Lesion-Anatomy 493 516	medial right upper lobe
+T6	Lesion-Anatomy 534 538	lung
+T7	Lesion-Description 539 543	mass
+T8	Medical-Problem 582 596	Patchy opacity
+T9	Medical-Anatomy 604 614	right base
+T10	Medical-Assertion 615 626	may reflect
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 627 632;634 648	areas of atelectasis
+T12	Medical-Assertion 651 653	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 654 666	pneumothorax
+T14	Medical-Assertion 669 671	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 672 687	pulmonary edema
+T16	Medical-Assertion 690 692	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 693 708	large effusions
+E2	Lesion-Description:T3 has-Lesion-Assertion:T2
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

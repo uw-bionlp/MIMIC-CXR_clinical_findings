@@ -1,0 +1,32 @@
+T1	Medical-Problem 203 222	Penetration is poor
+E1	Medical-Problem:T1
+T2	Medical-Problem 359 374	Pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 416 419;421 434	new consolidation
+T4	Medical-Anatomy 442 458	right lower lobe
+T5	Medical-Anatomy 460 475	Left lower lobe
+E5	Medical-Anatomy:T5
+T6	Medical-Anatomy 578 583	Heart
+T7	Medical-Assertion 587 595	probably
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 600 608	enlarged
+T9	Medical-Problem 614 633;635 649	upper lobe vascular redistribution
+T10	Medical-Problem 670 700	borderline cardiac dysfunction
+E9	Medical-Problem:T10
+T11	Medical-Problem 712 729	pleural effusions
+E10	Medical-Problem:T11
+T12	Medical-Assertion 769 777	Possible
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 778 804	right lower lobe pneumonia
+T14	Medical-Problem 844 874	Increased left atrial pressure
+E12	Medical-Problem:T14
+T15	Medical-Assertion 880 882	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 883 898	pulmonary edema
+T17	Medical-Problem 902 914	cardiomegaly
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15

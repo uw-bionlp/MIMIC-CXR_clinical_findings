@@ -1,0 +1,31 @@
+T1	Medical-Problem 337 348	enlargement
+T2	Medical-Anatomy 356 374	pulmonary arteries
+T3	Medical-Assertion 387 397	suggestive
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 398 408;410 441	underlying pulmonary arterial hypertension
+T5	Medical-Anatomy 444 465	Pulmonary vasculature
+T6	Medical-Assertion 469 472	not
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 473 481	engorged
+T8	Medical-Assertion 484 486	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 488 507	focal consolidation
+T10	Medical-Problem 509 525	pleural effusion
+T11	Medical-Problem 529 541	pneumothorax
+T12	Medical-Problem 609 626	Diffuse sclerosis
+T13	Medical-Anatomy 634 641;643 653	osseous structures
+T14	Medical-Assertion 723 725	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 726 759	acute cardiopulmonary abnormality
+T16	Lesion-Characteristic 762 772	Widespread
+T17	Lesion-Characteristic 773 780	osseous
+T18	Lesion-Description 781 791	metastases
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Lesion-Description:T18 has-Lesion-Characteristic:T16 has-Lesion-Characteristic:T17

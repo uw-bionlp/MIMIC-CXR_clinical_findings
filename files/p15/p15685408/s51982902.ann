@@ -1,0 +1,30 @@
+T1	Lesion-Anatomy 386 402	right lower base
+T2	Lesion-Description 403 409	nodule
+T3	Medical-Assertion 410 416	may be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 420 436	old rib fracture
+T5	Lesion-Description 465 471	nodule
+E4	Lesion-Description:T5
+T6	Medical-Problem 517 522;524 537	Large hiatal hernia
+E5	Medical-Problem:T6
+T7	Medical-Assertion 564 571	without
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 572 591	focal consolidation
+T9	Medical-Assertion 594 596	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 598 605	pleural
+E7	Medical-Problem:T10
+T11	Medical-Problem 606 614	effusion
+T12	Medical-Problem 618 630	pneumothorax
+T13	Medical-Problem 718 730	Large hiatal
+E10	Medical-Problem:T13
+T14	Medical-Assertion 759 767	possible
+A4	Medical-AssertionValue T14 possible
+T15	Lesion-Anatomy 768 778	right base
+T16	Lesion-Description 779 785	nodule
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9
+E12	Lesion-Description:T16 has-Lesion-Anatomy:T15

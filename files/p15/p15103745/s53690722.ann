@@ -1,0 +1,27 @@
+T1	Medical-Problem 1007 1035	bilateral layering effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 1041 1051;1053 1086	associated patchy bibasilar airspace disease
+E2	Medical-Problem:T2
+T3	Medical-Assertion 1087 1104	likely reflecting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 1105 1116	atelectasis
+T5	Medical-Problem 1128 1137	pneumonia
+T6	Medical-Assertion 1138 1156	cannot be excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 1184 1198	patchy opacity
+T8	Medical-Anatomy 1207 1221	right mid lung
+T9	Lesion-Size 1308 1312	3 mm
+T10	Lesion-Description 1313 1320	nodular
+E8	Lesion-Description:T10
+T11	Lesion-Description 1321 1328	opacity
+T12	Lesion-Anatomy 1336 1351	left upper lobe
+T13	Lesion-Size-Trend 1352 1361	unchanged
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Lesion-Assertion 1422 1424	No
+A4	Lesion-AssertionValue T14 absent
+T15	Medical-Problem 1425 1437	pneumothorax
+E11	Medical-Problem:T15
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T13

@@ -1,0 +1,40 @@
+T1	Medical-Problem 288 302	linear opacity
+T2	Medical-Anatomy 310 319	left base
+T3	Medical-Assertion 323 334	most likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 335 346	atelectasis
+T5	Medical-Problem 355 363	scarring
+T6	Medical-Problem 397 426;428 435	Subtle left midlung/perihilar opacity
+E5	Medical-Problem:T6
+T7	Medical-Assertion 460 462	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 463 484	overt pulmonary edema
+T9	Medical-Problem 487 495	Blunting
+T10	Medical-Anatomy 504 527	left costophrenic angle
+T11	Medical-Assertion 531 544	likely due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 547 574	small left pleural effusion
+T13	Medical-Assertion 587 589	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 590 618	large right pleural effusion
+T15	Medical-Assertion 630 632	no
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 633 645	pneumothorax
+T17	Medical-Problem 709 736	Small left pleural effusion
+E12	Medical-Problem:T17
+T18	Medical-Problem 739 760	Left mid lung opacity
+E13	Medical-Problem:T18
+T19	Medical-Assertion 761 767	may be
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 769 780	atelectasis
+T21	Medical-Problem 790 799	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T20 has-Medical-Assertion:T19
+E15	Medical-Problem:T21 has-Medical-Assertion:T19

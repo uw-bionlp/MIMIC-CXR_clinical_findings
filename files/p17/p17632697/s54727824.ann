@@ -1,0 +1,27 @@
+T1	Medical-Problem 260 276;278 282	unchanged volume loss
+T2	Medical-Anatomy 290 304	left lung base
+T3	Medical-Problem 311 351;353 369	remnant left greater than right moderate pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 372 383	Mediastinal
+E4	Medical-Problem:T4
+T5	Lesion-Description 384 394	adenopathy
+T6	Lesion-Size-Trend 398 407	unchanged
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Assertion 419 421	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 423 435	pneumothorax
+T9	Medical-Problem 449 464	air-fluid level
+T10	Medical-Anatomy 484 497	mid left lung
+T11	Medical-Problem 505 541	anterior loculated hydropneumothorax
+T12	Medical-Problem 558 585	Loculated hydropneumothorax
+E10	Medical-Problem:T12
+T13	Lesion-Size-Trend 629 638	unchanged
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Lesion-Anatomy 639 650	mediastinal
+T15	Lesion-Description 651 661	adenopathy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Trend:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E12	Lesion-Description:T15 has-Lesion-Size-Trend:T13 has-Lesion-Anatomy:T14

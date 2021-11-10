@@ -1,0 +1,25 @@
+T1	Medical-Problem 234 249	Mild prominence
+T2	Medical-Anatomy 257 275	cardiac silhouette
+T3	Medical-Assertion 474 481	without
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 482 501	focal consolidation
+T5	Lesion-Anatomy 520 535	left upper lung
+T6	Lesion-Characteristic 536 545	calcified
+T7	Lesion-Description 547 556	granuloma
+T8	Medical-Problem 568 597	pulmonary vascular congestion
+E7	Medical-Problem:T8
+T9	Medical-Assertion 598 611	suggestive of
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 612 625;627 641	early cardiac decompensation
+T11	Medical-Assertion 653 655	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 656 668	pneumothorax
+T13	Medical-Problem 672 688	pleural effusion
+T14	Medical-Problem 709 767	Pulmonary vascular congestion early cardiac decompensation
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

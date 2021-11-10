@@ -1,0 +1,24 @@
+T1	Medical-Problem 306 313	opacity
+T2	Medical-Anatomy 321 330;332 336	left lung base
+T3	Medical-Problem 342 360	pleural thickening
+T4	Medical-Anatomy 381 391	left hilus
+T5	Medical-Problem 452 479	small left pleural effusion
+E5	Medical-Problem:T5
+T6	Medical-Problem 540 560	Increased  opacities
+E6	Medical-Problem:T6
+T7	Medical-Assertion 588 601	could reflect
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 602 624	superimposed pneumonia
+T9	Medical-Problem 627 638	atelectasis
+T10	Lesion-Description 642 670	lymphangitic spread of tumor
+E9	Lesion-Description:T10
+T11	Medical-Problem 750 775	parenchymal abnormalities
+E10	Medical-Problem:T11
+T12	Medical-Assertion 787 798	no evidence
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 803 818	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

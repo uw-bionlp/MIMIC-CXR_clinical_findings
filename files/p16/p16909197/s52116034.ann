@@ -1,0 +1,29 @@
+T1	Medical-Problem 238 260	Relative opacification
+T2	Medical-Anatomy 268 302;304 309	left lateral chest compared to the right
+T3	Medical-Assertion 311 328	likely relates to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 329 352	soft tissue attenuation
+T5	Medical-Anatomy 359 364	lungs
+T6	Medical-Assertion 375 382	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 384 403	focal consolidation
+T8	Medical-Assertion 404 418	concerning for
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 419 428	pneumonia
+T10	Medical-Problem 430 446	pleural effusion
+T11	Medical-Problem 451 463	pneumothorax
+T12	Medical-Anatomy 470 491	pulmonary vasculature
+T13	Medical-Assertion 495 498	not
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 499 507	engorged
+T15	Medical-Assertion 634 636	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 637 666	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

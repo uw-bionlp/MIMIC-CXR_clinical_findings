@@ -1,0 +1,21 @@
+T1	Medical-Problem 480 509;511 534	Bilateral layering effusions, right greater than left
+E1	Medical-Problem:T1
+T2	Medical-Problem 617 650	Stable scattered patchy opacities
+T3	Medical-Anatomy 654 664	both lungs
+T4	Medical-Assertion 672 686	either reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 687 705	patchy atelectasis
+T6	Medical-Problem 712 730	infectious process
+T7	Medical-Assertion 733 735	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 737 770	developing airspace consolidation
+T9	Medical-Assertion 827 829	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 830 845	pulmonary edema
+T11	Medical-Problem 849 861	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

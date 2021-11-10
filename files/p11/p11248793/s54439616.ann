@@ -1,0 +1,17 @@
+T1	Medical-Assertion 392 394	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 395 407	pneumothorax
+T3	Medical-Problem 414 450	small residual left pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 461 483	Postoperative widening
+T5	Medical-Anatomy 491 509	cardiac silhouette
+T6	Medical-Problem 533 537;539 569	mild pulmonary vascular engorgement
+T7	Medical-Assertion 575 577	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 578 583	edema
+T9	Medical-Problem 586 614;616 627	Moderately severe left basal atelectasis
+E7	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7

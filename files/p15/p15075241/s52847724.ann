@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 124 129	lungs
+T2	Medical-Assertion 140 147	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 148 161	consolidation
+T4	Medical-Problem 165 170	edema
+T5	Medical-Assertion 182 184	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 186 202	pleural effusion
+T7	Medical-Problem 206 218	pneumothorax
+T8	Lesion-Description 277 284	density
+T9	Lesion-Anatomy 296 330	adjacent to the right heart border
+T10	Lesion-Characteristic 358 369	pericardial
+T11	Lesion-Description 370 374	cyst
+T12	Lesion-Size-Trend 383 392	unchanged
+A3	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 436 438	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 439 468	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T12
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

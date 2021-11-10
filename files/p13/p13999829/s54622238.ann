@@ -1,0 +1,40 @@
+T1	Medical-Problem 303 329	Left basilar opacification
+E1	Medical-Problem:T1
+T2	Medical-Assertion 396 415	which could reflect
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 416 437	worsening atelectasis
+T4	Medical-Problem 441 450	infection
+T5	Medical-Problem 504 526;528 546	unchanged left basilar pleural thickening
+E4	Medical-Problem:T5
+T6	Medical-Problem 553 580	small left pleural effusion
+E5	Medical-Problem:T6
+T7	Lesion-Anatomy 583 599	Right lower lobe
+T8	Lesion-Characteristic 601 612	ill-defined
+T9	Lesion-Description 613 620	nodular
+E8	Lesion-Description:T9
+T10	Lesion-Description 621 628	opacity
+T11	Lesion-Size-Trend 632 641	unchanged
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Description 667 674	nodules
+T13	Lesion-Anatomy 687 703	right lower lobe
+T14	Lesion-Assertion 708 711	not
+A3	Lesion-AssertionValue T14 absent
+T15	Medical-Assertion 805 807	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 808 820	pneumothorax
+T17	Medical-Problem 825 853	right-sided pleural effusion
+T18	Medical-Problem 889 930	Slight interval increase in opacification
+T19	Medical-Anatomy 942 956	left lung base
+T20	Medical-Assertion 964 977	could suggest
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 978 1015	worsening postobstructive atelectasis
+T22	Medical-Problem 1019 1028	infection
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8 has-Lesion-Size-Trend:T11
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T13 has-Lesion-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E17	Medical-Problem:T22 has-Medical-Anatomy:T19 has-Medical-Assertion:T20

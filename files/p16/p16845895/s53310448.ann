@@ -1,0 +1,44 @@
+T1	Medical-Problem 315 330	rounded opacity
+T2	Medical-Anatomy 349 363	right mid lung
+T3	Medical-Problem 370 398	additional increased opacity
+T4	Medical-Anatomy 406 443	right medial lower lung obscuring the
+T5	Medical-Problem 466 475	opacities
+E5	Medical-Problem:T5
+T6	Medical-Assertion 476 489	could reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 493 517	acute infectious process
+T8	Lesion-Characteristic 532 549	rounded character
+T9	Lesion-Anatomy 557 564	midlung
+T10	Lesion-Assertion 576 590	suspicious for
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 593 598	focal
+T12	Lesion-Description 600 606	lesion
+T13	Medical-Assertion 609 611	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 612 628	pleural effusion
+T15	Medical-Problem 632 644	pneumothorax
+T16	Medical-Problem 683 693	Prominence
+T17	Medical-Anatomy 701 715	hilar contours
+T18	Lesion-Assertion 746 752;754 762	likely reflects
+A4	Lesion-AssertionValue T18 possible
+T19	Lesion-Description 763 773	adenopathy
+T20	Medical-Problem 823 857	Right mid and lower lung opacities
+E16	Medical-Problem:T20
+T21	Medical-Assertion 858 871	could reflect
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 872 882;884 891	infectious process
+T23	Medical-Problem 920 959	rounded contours of the midlung opacity
+E18	Medical-Problem:T23
+T24	Medical-Problem 1014 1025	Mediastinal
+E19	Medical-Problem:T24
+T25	Lesion-Description 1026 1036	adenopathy
+E20	Lesion-Description:T25
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Lesion-Description:T19 has-Lesion-Assertion:T18
+E17	Medical-Problem:T22 has-Medical-Assertion:T21

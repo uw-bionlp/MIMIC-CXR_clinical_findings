@@ -1,0 +1,41 @@
+T1	Medical-Problem 456 465;467 487	left base retrocardiac opacity
+T2	Medical-Problem 492 516	subtle increased opacity
+T3	Medical-Anatomy 537 541;543 547	left lung
+T4	Medical-Problem 568 593	layering pleural effusion
+T5	Medical-Problem 596 617	Left base atelectasis
+T6	Medical-Problem 622 635	consolidation
+T7	Medical-Assertion 639 651	not excluded
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 654 665	No evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 669 681	pneumothorax
+T10	Medical-Problem 736 754	aorta is calcified
+E8	Medical-Problem:T10
+T11	Medical-Problem 761 770;772 782	bones are osteopenic
+E9	Medical-Problem:T11
+T12	Medical-Problem 785 805	Degenerative changes
+T13	Medical-Anatomy 822 837	shoulder joints
+T14	Medical-Problem 1046 1055	Low-lying
+E12	Medical-Problem:T14
+T15	Medical-Problem 1492 1517	Left retrocardiac opacity
+T16	Medical-Problem 1522 1540	increased haziness
+T17	Medical-Anatomy 1548 1563	left hemithorax
+T18	Medical-Assertion 1565 1578	may be due to
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1579 1604	layering pleural effusion
+T20	Medical-Problem 1607 1628	Left base atelectasis
+T21	Medical-Problem 1637 1650	consolidation
+T22	Medical-Assertion 1651 1663	not excluded
+A4	Medical-AssertionValue T22 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Assertion:T7
+E6	Medical-Problem:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T17
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T22
+E18	Medical-Problem:T21 has-Medical-Assertion:T22

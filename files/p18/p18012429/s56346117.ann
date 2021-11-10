@@ -1,0 +1,24 @@
+T1	Medical-Problem 257 280	Extensive consolidation
+T2	Medical-Anatomy 288 292;294 324	left upper lobe and left lower lobe
+T3	Medical-Problem 381 428	Right upper lobe and right lower lobe opacities
+E3	Medical-Problem:T3
+T4	Lesion-Assertion 453 458	could
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Description 479 489	malignancy
+T6	Medical-Problem 493 512	worsening pneumonia
+E5	Medical-Problem:T6
+T7	Lesion-Anatomy 515 520;522 537	Right lower lobe lung
+T8	Lesion-Description 538 544	nodule
+T9	Medical-Problem 574 589	Left lower lobe
+E8	Medical-Problem:T9
+T10	Medical-Problem 590 599	opacities
+E9	Medical-Problem:T10
+T11	Medical-Assertion 633 635	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 636 652	pleural effusion
+T13	Medical-Problem 656 668	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Assertion:T4
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11

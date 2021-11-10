@@ -1,0 +1,21 @@
+T1	Medical-Problem 550 593	increase in moderate right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 599 608;610 621	overlying atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 624 651	Trace left pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 669 685;687 708	Underlying right basilar consolidation
+T5	Medical-Assertion 712 724	not excluded
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 778 800	associated volume loss
+T7	Medical-Anatomy 808 830	right lung, hemithorax
+T8	Medical-Problem 836 857	post-surgical changes
+T9	Medical-Problem 924 933;935 946	overlying atelectasis
+E8	Medical-Problem:T9
+T10	Medical-Problem 948 972	underlying consolidation
+T11	Medical-Assertion 973 985	not excluded
+A2	Medical-AssertionValue T11 possible
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T11

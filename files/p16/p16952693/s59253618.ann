@@ -1,0 +1,23 @@
+T1	Medical-Problem 529 534;536 554	small layering effusions
+E1	Medical-Problem:T1
+T2	Medical-Assertion 603 613	suggesting
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 615 657	resolving mild-to-moderate pulmonary edema
+T4	Medical-Problem 680 690;692 725	persistent more focal airspace consolidation
+T5	Medical-Anatomy 733 758	right and mid lower lungs
+T6	Medical-Assertion 780 795	could represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 796 824	asymmetric clearing of edema
+T8	Medical-Assertion 825 839	raises concern
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 845 855	aspiration
+T10	Medical-Problem 860 869	pneumonia
+T11	Medical-Assertion 941 943	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 944 956	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

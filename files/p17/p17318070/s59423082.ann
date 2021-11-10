@@ -1,0 +1,44 @@
+T1	Medical-Problem 264 317	diffuse increase in interstitial markings bilaterally
+E1	Medical-Problem:T1
+T2	Medical-Assertion 329 341;343 345	could be due to
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 346 364	interstitial edema
+T4	Medical-Problem 372 390	atypical infection
+T5	Medical-Assertion 393 395	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 396 415	focal consolidation
+T7	Medical-Problem 419 454	Mild left base atelectasis/scarring
+E5	Medical-Problem:T7
+T8	Lesion-Description 516 523	nodular
+E6	Lesion-Description:T8
+T9	Lesion-Description 524 531	opacity
+T10	Lesion-Anatomy 552 564;566 576	medial right upper lung
+T11	Lesion-Size-Trend 587 609	grossly stable in size
+A3	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Anatomy 644 682	anterior aspect of the right first rib
+T13	Medical-Assertion 685 687	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 688 710	large pleural effusion
+T15	Medical-Problem 715 727	pneumothorax
+T16	Medical-Problem 781 789;791 799	aorta is tortuous
+E12	Medical-Problem:T16
+T17	Medical-Problem 802 822	Degenerative changes
+T18	Medical-Anatomy 835 857;859 883	bilateral shoulder and acromioclavicular joints
+T19	Medical-Problem 904 919	Small densities
+T20	Medical-Anatomy 944 973	humeral head and the acromion
+T21	Medical-Assertion 974 987	may represent
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 988 996;998 1017	calcific tendinosis/bursitis
+T23	Medical-Problem 1028 1054	intra-articular loose body
+T24	Medical-Assertion 1058 1070	not excluded
+A6	Medical-AssertionValue T24 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T11 has-Lesion-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E18	Medical-Problem:T23 has-Medical-Anatomy:T20 has-Medical-Assertion:T21 has-Medical-Assertion:T24

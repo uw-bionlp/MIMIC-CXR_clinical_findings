@@ -1,0 +1,26 @@
+T1	Medical-Problem 266 282	Opacity effacing
+T2	Medical-Anatomy 288 313	right cardiophrenic angle
+T3	Medical-Assertion 317 332	probably due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 333 350	minor atelectasis
+T5	Medical-Anatomy 360 375	left lower lobe
+T6	Medical-Problem 385 403	persistent opacity
+T7	Medical-Assertion 457 459	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 460 476	pleural effusion
+T9	Medical-Problem 480 492	pneumothorax
+T10	Medical-Problem 513 561	Persistent but decreased left lower lobe opacity
+E8	Medical-Problem:T10
+T11	Medical-Problem 572 584;586 613	recurrent or slowing resolving pneumonia
+T12	Medical-Assertion 617 629	not excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 642 655	may be due to
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 656 662;664 701	waxing and waning chronic atelectatic change
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

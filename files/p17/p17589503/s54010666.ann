@@ -1,0 +1,27 @@
+T1	Medical-Assertion 297 299	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 300 319	focal consolidation
+T3	Medical-Problem 331 340	pneumonia
+T4	Medical-Problem 344 355	atelectasis
+T5	Medical-Problem 377 389	septal lines
+T6	Medical-Anatomy 397 412	left lower lobe
+T7	Medical-Assertion 413 421	probably
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 422 427;429 444	early pulmonary edema
+T9	Medical-Problem 447 464	Mild cardiomegaly
+E7	Medical-Problem:T9
+T10	Medical-Problem 489 507;509 514	Ascending thoracic aorta
+E8	Medical-Problem:T10
+T11	Medical-Problem 518 536	extremely tortuous
+E9	Medical-Problem:T11
+T12	Medical-Assertion 563 565	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 566 572;574 582	aortic aneurysm
+T14	Medical-Problem 588 622	mild aortic valvular calcification
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12

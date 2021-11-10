@@ -1,0 +1,30 @@
+T1	Medical-Problem 404 412	scarring
+T2	Medical-Anatomy 424 440	right upper lobe
+T3	Lesion-Anatomy 533 550	right middle lobe
+T4	Lesion-Description 551 557	nodule
+T5	Lesion-Assertion 561 569	not well
+A1	Lesion-AssertionValue T5 absent
+T6	Medical-Assertion 613 615	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 616 635	focal consolidation
+T8	Medical-Problem 637 653	pleural effusion
+T9	Medical-Problem 655 667	pneumothorax
+T10	Medical-Problem 672 687;689 694	frank pulmonary edema
+T11	Medical-Assertion 780 804	No radiographic evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 809 838	acute cardiopulmonary process
+T13	Medical-Problem 849 881	Stable right upper lobe scarring
+E10	Medical-Problem:T13
+T14	Lesion-Size 959 963	7 mm
+T15	Lesion-Anatomy 964 981	right middle lobe
+T16	Lesion-Description 982 988	nodule
+T17	Lesion-Assertion 992 1000	not well
+A4	Lesion-AssertionValue T17 absent
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Lesion-Description:T16 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T15 has-Lesion-Assertion:T17

@@ -1,0 +1,24 @@
+T1	Medical-Problem 186 206	similar cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 277 282	chest
+E2	Medical-Problem:T2
+T3	Medical-Problem 291 304	hyperinflated
+E3	Medical-Problem:T3
+T4	Medical-Assertion 307 315	Probably
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 316 321;323 350	trace bilateral pleural effusions
+T6	Medical-Assertion 364 372	possible
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 373 391	developing opacity
+T8	Medical-Anatomy 400 449	right lung base, probably in the right lower lobe
+T9	Medical-Problem 497 526	Very vague asymmetric opacity
+T10	Medical-Anatomy 573 596	left lateral upper lung
+T11	Medical-Assertion 656 676	Concern for possible
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 677 697	developing opacities
+T13	Medical-Problem 718 727	pneumonia
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

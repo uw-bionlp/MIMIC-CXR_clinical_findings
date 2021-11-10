@@ -1,0 +1,25 @@
+T1	Lesion-Characteristic 312 323	Ill-defined
+T2	Lesion-Description 324 331	nodular
+E2	Lesion-Description:T2
+T3	Lesion-Description 332 341	opacities
+T4	Lesion-Anatomy 353 368	bilateral lungs
+T5	Lesion-Anatomy 404 426	anterior right 4th rib
+T6	Lesion-Anatomy 435 461	posterior left seventh rib
+T7	Lesion-Assertion 526 529;531 540	may represent
+A1	Lesion-AssertionValue T7 possible
+T8	Lesion-Characteristic 541 550	calcified
+T9	Lesion-Description 551 561	granulomas
+T10	Medical-Assertion 633 635	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 636 648	pneumothorax
+T12	Medical-Problem 650 666	pleural effusion
+T13	Medical-Problem 671 684	consolidation
+T14	Medical-Assertion 705 707	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 708 737	acute cardiopulmonary process
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E8	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Characteristic:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T10
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

@@ -1,0 +1,42 @@
+T1	Medical-Problem 343 369	Lung volumes are decreased
+E1	Medical-Problem:T1
+T2	Medical-Problem 432 447	mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 462 485	left lower lobe opacity
+E3	Medical-Problem:T3
+T4	Medical-Assertion 493 504	may reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 505 515	aspiration
+T6	Medical-Problem 519 528	pneumonia
+T7	Medical-Problem 576 586	prominence
+T8	Medical-Anatomy 594 605	right hilum
+T9	Medical-Problem 617 627	prominence
+T10	Medical-Anatomy 635 656	pulmonary vasculature
+T11	Medical-Assertion 658 660	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 661 683	large pleural effusion
+T13	Medical-Anatomy 733 756	left costophrenic angle
+T14	Medical-Anatomy 780 795	Left lower lobe
+T15	Medical-Problem 796 803	opacity
+T16	Medical-Assertion 810 823	could reflect
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 824 834	aspiration
+T18	Medical-Problem 838 847	pneumonia
+T19	Medical-Problem 884 901	Mild cardiomegaly
+E16	Medical-Problem:T19
+T20	Medical-Problem 907 941	mild pulmonary vascular congestion
+E17	Medical-Problem:T20
+T21	Medical-Problem 947 968	Prominent right hilum
+E18	Medical-Problem:T21
+T22	Lesion-Assertion 970 980	concerning
+A4	Lesion-AssertionValue T22 possible
+T23	Lesion-Description 985 1000	lymphadenopathy
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T14 has-Medical-Assertion:T16
+E19	Lesion-Description:T23 has-Lesion-Assertion:T22

@@ -1,0 +1,27 @@
+T1	Medical-Problem 178 206	heart is moderately enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 220 237;239 247	Central pulmonary arteries
+T3	Medical-Problem 260 276	mildly prominent
+T4	Lesion-Characteristic 281 290	calcified
+T5	Lesion-Description 291 300	granuloma
+T6	Lesion-Anatomy 320 342	right lateral mid lung
+T7	Medical-Assertion 365 367	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 368 384	pleural effusion
+T9	Medical-Problem 389 401	pneumothorax
+T10	Medical-Assertion 421 441	No definite evidence
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 446 459	acute process
+T12	Medical-Problem 462 483	Moderate cardiomegaly
+E10	Medical-Problem:T12
+T13	Lesion-Size-Trend 487 496	Unchanged
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Lesion-Characteristic 497 506	calcified
+T15	Lesion-Description 507 516	granuloma
+T16	Lesion-Anatomy 524 534	right lung
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Lesion-Description:T15 has-Lesion-Size-Trend:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T16

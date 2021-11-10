@@ -1,0 +1,13 @@
+T1	Medical-Assertion 412 414	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 415 426;428 440	appreciable pneumothorax
+T3	Medical-Problem 443 460	Left apical fluid
+E2	Medical-Problem:T3
+T4	Medical-Problem 501 505;507 519	part of the fluid
+T5	Medical-Anatomy 530 555	major fissure on the left
+T6	Medical-Assertion 558 560	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 561 584	definitive pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6

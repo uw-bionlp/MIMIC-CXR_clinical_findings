@@ -1,0 +1,30 @@
+T1	Medical-Problem 397 427	moderate left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 433 459;461 472	persistent left lower lobe atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 545 561	Airspace opacity
+T4	Medical-Anatomy 569 584	left lower lobe
+T5	Medical-Assertion 585 598	may be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 599 611;613 628	re-expansion pulmonary edema
+T7	Medical-Problem 632 654	residual a atelectasis
+T8	Medical-Assertion 657 659	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 660 672	pneumothorax
+T10	Medical-Problem 732 767	Moderate size left pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 770 786	Airspace opacity
+T12	Medical-Anatomy 794 808	left lung base
+T13	Medical-Assertion 810 821	may reflect
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 822 833	atelectasis
+T15	Medical-Problem 835 863	re-expansion pulmonary edema
+T16	Medical-Problem 867 876	infection
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

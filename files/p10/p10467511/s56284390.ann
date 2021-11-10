@@ -1,0 +1,18 @@
+T1	Medical-Problem 258 273	Streaky opacity
+T2	Medical-Anatomy 281 285;287 296	left lung base
+T3	Medical-Assertion 297 310	suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 311 322	atelectasis
+T5	Medical-Anatomy 329 334	lungs
+T6	Medical-Problem 359 372	consolidation
+T7	Medical-Problem 376 390	large effusion
+T8	Medical-Problem 457 486	mitral annular calcifications
+E7	Medical-Problem:T8
+T9	Medical-Assertion 559 561	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 562 600	definite acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

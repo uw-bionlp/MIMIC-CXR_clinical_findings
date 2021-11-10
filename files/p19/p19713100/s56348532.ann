@@ -1,0 +1,17 @@
+T1	Medical-Problem 33 53	persistent elevation
+T2	Medical-Anatomy 61 79	left hemidiaphragm
+T3	Medical-Problem 83 90	lucency
+T4	Medical-Anatomy 109 128	right upper abdomen
+T5	Medical-Problem 596 606;608 643	persistent elevation of the left hemidiaphragm
+E5	Medical-Problem:T5
+T6	Medical-Problem 648 655	lucency
+T7	Medical-Anatomy 676 681;683 696	right upper abdomen
+T8	Medical-Assertion 751 761	to exclude
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 763 772	potential
+E8	Medical-Problem:T9
+T10	Medical-Problem 773 791	small pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

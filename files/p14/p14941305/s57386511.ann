@@ -1,0 +1,31 @@
+T1	Medical-Problem 288 301	focal opacity
+T2	Medical-Anatomy 309 322	mid left lung
+T3	Medical-Problem 397 411;413 422	multiple small opacities
+T4	Medical-Anatomy 434 450	both lung fields
+T5	Medical-Assertion 457 475	possibly represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 478 488;490 508	multifocal infectious process
+T7	Medical-Problem 520 533	cephalization
+E6	Medical-Problem:T7
+T8	Medical-Assertion 616 618	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 619 627	effusion
+T10	Medical-Problem 631 643	pneumothorax
+T11	Medical-Problem 670 690	compression fracture
+T12	Medical-Anatomy 698 712	thoracic spine
+T13	Medical-Problem 796 820	Multiple small opacities
+T14	Medical-Anatomy 832 848	both lung fields
+T15	Medical-Assertion 854 862;864 873	possibly represent
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 876 905	multifocal infectious process
+T17	Medical-Problem 914 934	Compression fracture
+T18	Medical-Anatomy 942 956	thoracic spine
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18

@@ -1,0 +1,23 @@
+T1	Medical-Problem 229 245;247 250	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 256 275	basilar atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 288 295	opacity
+T4	Medical-Anatomy 303 314	lower lungs
+T5	Medical-Problem 316 325	pneumonia
+T6	Medical-Assertion 327 354	cannot be entirely excluded
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 430 432	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 433 445	pneumothorax
+T9	Medical-Problem 463 479	Low lung volumes
+E7	Medical-Problem:T9
+T10	Medical-Problem 485 506	bibasilar atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Problem 508 517	pneumonia
+T12	Medical-Assertion 518 527;529 537	cannot be excluded
+A3	Medical-AssertionValue T12 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T12

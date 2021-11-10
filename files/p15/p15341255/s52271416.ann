@@ -1,0 +1,32 @@
+T1	Medical-Problem 330 353;355 379	stably enlarged cardiac and mediastinal contours
+E1	Medical-Problem:T1
+T2	Medical-Problem 511 550	Stable left apical lateral pneumothorax
+E2	Medical-Problem:T2
+T3	Medical-Problem 690 704	patchy opacity
+T4	Medical-Anatomy 712 721	left base
+T5	Medical-Assertion 729 740	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 742 753	atelectasis
+T7	Medical-Problem 764 773	pneumonia
+T8	Medical-Assertion 774 792	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 805 811	likely
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 812 817;819 862	small layering effusions, left greater than right
+T11	Medical-Assertion 865 876	No evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 880 895	pulmonary edema
+T13	Medical-Problem 899 913	Linear opacity
+T14	Medical-Anatomy 917 930	left mid lung
+T15	Medical-Assertion 931 946	likely reflects
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 947 955	scarring
+T17	Medical-Problem 959 971;973 984	subsegmental atelectasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E11	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

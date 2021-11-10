@@ -1,0 +1,41 @@
+T1	Medical-Problem 162 186	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 196 213	aorta is tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 216 232	Patchy opacities
+T4	Medical-Anatomy 241 251	lung bases
+T5	Medical-Problem 267 278	atelectasis
+T6	Lesion-Count 281 284	Two
+T7	Lesion-Characteristic 285 294	calcified
+T8	Lesion-Description 295 302	nodular
+E8	Lesion-Description:T8
+T9	Lesion-Description 303 312	opacities
+T10	Lesion-Anatomy 321 332	upper lobes
+T11	Lesion-Size 343 347	4 mm
+T12	Lesion-Assertion 348 362	likely reflect
+A1	Lesion-AssertionValue T12 possible
+T13	Lesion-Characteristic 363 372	calcified
+T14	Lesion-Description 373 383	granulomas
+T15	Medical-Assertion 386 388	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 390 405	pulmonary edema
+T17	Medical-Assertion 431 433	no
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 434 450	pleural effusion
+T19	Medical-Problem 454 466	pneumothorax
+T20	Medical-Assertion 470 472	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 473 498	acute osseous abnormality
+T22	Medical-Problem 509 524	Dextroscoliosis
+T23	Medical-Anatomy 532 546	thoracic spine
+T24	Medical-Problem 578 599	Bibasilar atelectasis
+E20	Medical-Problem:T24
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E9	Lesion-Description:T9 has-Lesion-Count:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T10 has-Lesion-Size-Present:T11
+E13	Lesion-Description:T14 has-Lesion-Anatomy:T10 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T17
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T23

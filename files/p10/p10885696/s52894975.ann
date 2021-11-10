@@ -1,0 +1,24 @@
+T1	Medical-Problem 407 431	Postoperative appearance
+T2	Medical-Anatomy 435 450	left hemithorax
+T3	Medical-Problem 474 480;482 489	patchy opacity
+T4	Medical-Anatomy 497 507	right base
+T5	Medical-Assertion 514 527	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 547 555;557 565	layering effusion
+T7	Medical-Problem 571 582	atelectasis
+T8	Medical-Problem 596 620	acute infectious process
+T9	Medical-Assertion 621 630;632 640	cannot be excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 715 717	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 718 730	pneumothorax
+T12	Medical-Assertion 897 908	No evidence
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 912 927	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

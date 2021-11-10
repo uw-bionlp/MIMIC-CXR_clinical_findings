@@ -1,0 +1,48 @@
+T1	Medical-Problem 33 65	new large areas of consolidation
+T2	Medical-Anatomy 73 90	right middle lung
+T3	Medical-Problem 98 110;112 132	well defined  new rounded lucency
+T4	Medical-Anatomy 140 156	right upper lung
+T5	Medical-Assertion 157 170	suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 171 181	cavitation
+T7	Medical-Assertion 182 188;190 202	raises  concern for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 203 224	necrotizing pneumonia
+T9	Medical-Problem 681 712	less well-defined consolidation
+T10	Medical-Anatomy 720 730	right lung
+T11	Medical-Anatomy 756 764	mid lung
+T12	Lesion-Characteristic 766 770	more
+T13	Lesion-Description 771 780	mass-like
+T14	Lesion-Characteristic 785 794	extensive
+T15	Lesion-Anatomy 802 807	lower
+T16	Medical-Problem 817 826	cavitated
+T17	Medical-Anatomy 835 845	upper lung
+T18	Medical-Problem 867 900	progressive necrotizing pneumonia
+E16	Medical-Problem:T18
+T19	Medical-Problem 904 912	Fullness
+T20	Medical-Anatomy 920 946	right paratracheal station
+T21	Lesion-Description 977 987	adenopathy
+E19	Lesion-Description:T21
+T22	Medical-Anatomy 1032 1042	lower lung
+T23	Medical-Problem 1047 1054	contain
+E21	Medical-Problem:T23
+T24	Medical-Problem 1056 1070	small cavities
+T25	Medical-Problem 1120 1125;1127 1149	Small right pleural effusion
+E23	Medical-Problem:T25
+T26	Medical-Assertion 1164 1166	No
+A3	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1167 1179	pneumothorax
+T28	Medical-Assertion 1265 1267	No
+A4	Medical-AssertionValue T28 absent
+T29	Medical-Problem 1269 1281	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10 has-Medical-Anatomy:T11
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T19 has-Medical-Anatomy:T20
+E22	Medical-Problem:T24 has-Medical-Anatomy:T22
+E24	Medical-Problem:T27 has-Medical-Assertion:T26
+E25	Medical-Problem:T29 has-Medical-Assertion:T28

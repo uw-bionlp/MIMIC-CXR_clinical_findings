@@ -1,0 +1,32 @@
+T1	Lesion-Size 576 588	4.2 x 5.5 cm
+T2	Lesion-Characteristic 589 596	rounded
+T3	Lesion-Description 597 604	opacity
+T4	Lesion-Anatomy 612 623;625 629	right upper lung
+T5	Lesion-Assertion 652 666	concerning for
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 667 678	mass lesion
+T7	Medical-Problem 754 763	infection
+T8	Medical-Problem 767 777	aspiration
+T9	Medical-Assertion 779 797	cannot be excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 833 857	Left basilar atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Assertion 867 869	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 870 882	pneumothorax
+T13	Medical-Problem 886 902	pleural effusion
+T14	Medical-Problem 1095 1110	Rounded opacity
+T15	Medical-Anatomy 1118 1129;1131 1135	right upper lung
+T16	Lesion-Assertion 1145 1159	concerning for
+A4	Lesion-AssertionValue T16 possible
+T17	Lesion-Description 1160 1171	mass lesion
+T18	Medical-Problem 1179 1199	infection/aspiration
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E5	Lesion-Description:T6 has-Lesion-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Lesion-Description:T17 has-Lesion-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T15

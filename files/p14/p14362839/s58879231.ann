@@ -1,0 +1,32 @@
+T1	Medical-Assertion 33 53	No definite evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 57 66	pneumonia
+T3	Medical-Assertion 188 190	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 191 200	pneumonia
+T5	Medical-Problem 598 638	Multiple left-sided healed rib fractures
+E3	Medical-Problem:T5
+T6	Medical-Problem 650 678	Wedge-shaped area of density
+T7	Medical-Anatomy 686 690	left
+T8	Medical-Anatomy 691 703	lower thorax
+T9	Medical-Assertion 704 721	likely represents
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 723 741	pleural thickening
+T11	Medical-Problem 746 766	parenchymal scarring
+T12	Medical-Assertion 801 803	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 804 816	pneumothorax
+T14	Medical-Problem 818 834	pleural effusion
+T15	Medical-Problem 839 861	definite consolidation
+T16	Medical-Assertion 882 902	No definite evidence
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 906 915	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T12
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

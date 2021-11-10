@@ -1,0 +1,24 @@
+T1	Medical-Assertion 243 254	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 259 271	pneumothorax
+T3	Medical-Problem 275 292	pneumomediastinum
+T4	Medical-Problem 295 331;333 343	Continued enlargement of the cardiac silhouette
+E3	Medical-Problem:T4
+T5	Medical-Problem 349 392	mild elevation of pulmonary venous pressure
+E4	Medical-Problem:T5
+T6	Medical-Problem 395 407;409 422	Retrocardiac opacification
+E5	Medical-Problem:T6
+T7	Medical-Assertion 423 434	may reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 435 453	merely volume loss
+T9	Medical-Anatomy 461 476	left lower lobe
+T10	Medical-Problem 482 498	pleural effusion
+T11	Medical-Problem 538 559	supervening pneumonia
+E9	Medical-Problem:T11
+T12	Medical-Problem 593 601	Fracture
+T13	Medical-Anatomy 609 637	proximal humerus on the left
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13

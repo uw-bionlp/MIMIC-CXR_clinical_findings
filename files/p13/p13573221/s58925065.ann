@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 198 203	lungs
+T2	Medical-Assertion 214 221	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 222 235	consolidation
+T4	Medical-Problem 239 244	edema
+T5	Medical-Assertion 256 258	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 260 276	pleural effusion
+T7	Medical-Problem 280 292	pneumothorax
+T8	Medical-Problem 299 319	mediastinal contours
+E6	Medical-Problem:T8
+T9	Medical-Problem 324 337;339 348	slightly more prominent
+E7	Medical-Problem:T9
+T10	Medical-Problem 460 504	Slightly more prominent mediastinal contours
+E8	Medical-Problem:T10
+T11	Medical-Assertion 633 635	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 636 665	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

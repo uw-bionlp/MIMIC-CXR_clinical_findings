@@ -1,0 +1,33 @@
+T1	Medical-Assertion 236 238	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 239 258	focal consolidation
+T3	Medical-Problem 260 276	pleural effusion
+T4	Medical-Problem 278 290	pneumothorax
+T5	Medical-Problem 295 304;306 311	pulmonary edema
+T6	Medical-Problem 359 373	Hyperexpansion
+E5	Medical-Problem:T6
+T7	Lesion-Characteristic 449 458	calcified
+T8	Lesion-Anatomy 459 463;465 474	left AP window
+T9	Lesion-Description 475 485	lymph node
+T10	Lesion-Size-Trend 494 503	unchanged
+A2	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Problem 531 560	acute cardiopulmonary process
+E9	Medical-Problem:T11
+T12	Medical-Problem 576 590	hyperexpansion
+E10	Medical-Problem:T12
+T13	Medical-Assertion 591 601	suggesting
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 602 611	emphysema
+T15	Lesion-Characteristic 616 625	calcified
+T16	Lesion-Description 626 637	lymph nodes
+T17	Medical-Assertion 639 649	suggesting
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 650 671	granulomatous disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T1
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Lesion-Description:T16 has-Lesion-Characteristic:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

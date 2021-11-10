@@ -1,0 +1,31 @@
+T1	Medical-Problem 219 227;229 238	Apparent concavity
+T2	Medical-Anatomy 246 291	inferior aspect of the left mainstem bronchus
+T3	Medical-Assertion 292 305	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 307 330	superimposed structures
+T5	Lesion-Assertion 336 350	cannot exclude
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 354 367	endobronchial
+T7	Lesion-Description 368 374	lesion
+T8	Medical-Assertion 395 397	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 398 414	pleural effusion
+T10	Medical-Problem 418 430	pneumothorax
+T11	Medical-Problem 472 521	bifid right eighth rib fused with the seventh rib
+E8	Medical-Problem:T11
+T12	Medical-Assertion 539 550	No evidence
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 554 563	pneumonia
+T14	Medical-Assertion 565 573	Question
+A5	Medical-AssertionValue T14 possible
+T15	Lesion-Anatomy 577 590	left mainstem
+T16	Lesion-Description 606 612	lesion
+T17	Medical-Problem 620 643	superimposed structures
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Lesion-Description:T16 has-Lesion-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T14

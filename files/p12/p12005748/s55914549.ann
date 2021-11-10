@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 255 273	right heart border
+T2	Medical-Problem 277 298	partially obscured by
+E2	Medical-Problem:T2
+T3	Medical-Problem 302 320	diaphragmatic hump
+T4	Lesion-Size 323 328	Small
+T5	Lesion-Anatomy 329 345	right upper lobe
+T6	Lesion-Description 346 352	nodule
+T7	Lesion-Size-Trend 381 390	unchanged
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Problem 426 453	small left pleural effusion
+E7	Medical-Problem:T8
+T9	Medical-Assertion 466 468	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 469 481	pneumothorax
+T11	Medical-Problem 548 575	Small left pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Assertion 578 589	No evidence
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 593 612;614 627	acute decompensated heart failure
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E6	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,28 @@
+T1	Medical-Problem 114 140	Diffuse airspace opacities
+T2	Medical-Anatomy 148 164	right lower lobe
+T3	Medical-Assertion 215 221	likely
+A1	Medical-AssertionValue T3 possible
+T4	Lesion-Characteristic 230 240	underlying
+T5	Lesion-Characteristic 247 259	ground-glass
+T6	Lesion-Description 261 268	nodules
+T7	Medical-Problem 372 387	bronchoalveolar
+E6	Medical-Problem:T7
+T8	Medical-Problem 419 439	pulmonary hemorrhage
+E7	Medical-Problem:T8
+T9	Medical-Problem 441 459	massive aspiration
+T10	Medical-Problem 464 484	infectious pneumonia
+T11	Medical-Assertion 490 515	additional considerations
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Anatomy 538 543	Lungs
+T13	Medical-Problem 574 616	subtle multifocal poorly defined opacities
+T14	Medical-Assertion 695 706	no evidence
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 710 722	pneumothorax
+T16	Medical-Problem 727 744	pneumomediastinum
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5
+E8	Medical-Problem:T9 has-Medical-Assertion:T11
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14

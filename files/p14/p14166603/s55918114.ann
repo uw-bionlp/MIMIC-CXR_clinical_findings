@@ -1,0 +1,26 @@
+T1	Medical-Assertion 229 240	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 244 256	pneumothorax
+T3	Medical-Problem 263 296	discontinuation of the chest tube
+T4	Medical-Problem 309 328	increase in opacity
+T5	Medical-Anatomy 336 365	right lower and mid lung zone
+T6	Medical-Assertion 371 376;378 396	might be consistent with
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 397 424	diffuse parenchymal process
+T8	Medical-Anatomy 432 442	right lung
+T9	Medical-Assertion 444 455	potentially
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 457 466	pneumonia
+T11	Medical-Problem 499 531	left basal unchanged atelectasis
+E8	Medical-Problem:T11
+T12	Medical-Assertion 535 537	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 538 554	pleural effusion
+T14	Medical-Problem 558 570	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T6 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12

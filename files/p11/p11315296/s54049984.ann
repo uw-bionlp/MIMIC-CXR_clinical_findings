@@ -1,0 +1,20 @@
+T1	Medical-Assertion 43 45	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 46 79	acute cardiopulmonary abnormality
+T3	Medical-Assertion 124 126	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 127 160	acute cardiopulmonary abnormality
+T5	Lesion-Assertion 533 544	No evidence
+A3	Lesion-AssertionValue T5 absent
+T6	Lesion-Anatomy 548 561	intrathoracic
+T7	Lesion-Description 563 573	malignancy
+T8	Medical-Problem 577 586	infection
+E5	Medical-Problem:T8
+T9	Medical-Problem 588 615	Moderate gaseous distention
+T10	Medical-Anatomy 623 632	esophagus
+T11	Medical-Problem 715 737	swallowing abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E8	Medical-Problem:T11 has-Medical-Anatomy:T10

@@ -1,0 +1,15 @@
+T1	Medical-Problem 583 599	Abnormal opacity
+T2	Medical-Anatomy 607 624	left t lower lobe
+T3	Medical-Assertion 625 638	suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 639 654;656 665	left lower lobe pneumonia
+T5	Medical-Anatomy 672 682	right lung
+E4	Medical-Anatomy:T5
+T6	Medical-Assertion 693 695	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 696 713	pleural effusions
+T8	Medical-Problem 717 729	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6

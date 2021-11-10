@@ -1,0 +1,28 @@
+T1	Medical-Problem 409 420	atelectasis
+T2	Medical-Anatomy 428 443	bilateral bases
+T3	Lesion-Count 455 463	multiple
+T4	Lesion-Characteristic 464 473	scattered
+T5	Lesion-Description 474 481	nodular
+E5	Lesion-Description:T5
+T6	Lesion-Description 483 492	opacities
+T7	Lesion-Anatomy 493 504	bilaterally
+T8	Lesion-Size-Trend 506 526	relatively unchanged
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Characteristic 611 618	osseous
+T10	Lesion-Description 631 638	lesions
+T11	Medical-Assertion 752 754	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 755 767	pneumothorax
+T13	Medical-Problem 825 847	right pleural effusion
+E11	Medical-Problem:T13
+T14	Medical-Problem 856 867	Atelectasis
+T15	Medical-Anatomy 875 890	bilateral bases
+T16	Medical-Assertion 899 901	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 902 914	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Count:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T8
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

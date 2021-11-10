@@ -1,0 +1,27 @@
+T1	Lesion-Anatomy 286 301	left upper lobe
+T2	Lesion-Size 313 325	2.2 x 2.4 cm
+T3	Lesion-Description 326 333	opacity
+T4	Lesion-Assertion 335 349	concerning for
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Description 353 371	neoplastic process
+T6	Medical-Assertion 486 488	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 489 506	pleural effusions
+T8	Medical-Assertion 509 511	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 512 524	pneumothorax
+T10	Medical-Problem 535 566	Multilevel degenerative changes
+T11	Medical-Anatomy 574 587;589 594	thoracolumbar spine
+T12	Lesion-Anatomy 622 637	Left upper lobe
+T13	Lesion-Size 638 644	2.4 cm
+T14	Lesion-Description 645 652	opacity
+T15	Lesion-Assertion 654 667	worrisome for
+A4	Lesion-AssertionValue T15 possible
+T16	Lesion-Description 670 680;682 689	neoplastic process
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T1 has-Lesion-Size-Present:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T1 has-Lesion-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Lesion-Description:T14 has-Lesion-Anatomy:T12 has-Lesion-Size-Present:T13
+E12	Lesion-Description:T16 has-Lesion-Anatomy:T12 has-Lesion-Assertion:T15

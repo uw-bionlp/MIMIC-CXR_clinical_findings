@@ -1,0 +1,23 @@
+T1	Medical-Problem 275 286;288 325	substantial enlargement of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 331 354	tortuosity of the aorta
+E2	Medical-Problem:T2
+T3	Medical-Problem 358 372	Hyperexpansion
+T4	Medical-Anatomy 380 385	lungs
+T5	Medical-Problem 399 434	coarseness of interstitial markings
+T6	Medical-Assertion 441 454	could reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 455 480	interstitial lung disease
+T8	Medical-Problem 482 507;509 517	elevated pulmonary venous pressure
+T9	Medical-Problem 522 526	both
+T10	Medical-Problem 533 554	left pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Assertion 575 577	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 578 586;588 609	definite acute focal pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

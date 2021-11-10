@@ -1,0 +1,24 @@
+T1	Medical-Problem 443 453;455 462	increasing density
+T2	Medical-Anatomy 470 484	left lung base
+T3	Medical-Assertion 491 504	may be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 505 525	developing pneumonia
+T5	Medical-Problem 533 549	aspiration event
+T6	Medical-Assertion 552 554	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 555 570	pulmonary edema
+T8	Medical-Problem 574 596	large pleural effusion
+T9	Medical-Problem 827 851	Increasing opacification
+T10	Medical-Anatomy 859 873	left lung base
+T11	Medical-Assertion 874 889	possibly due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 890 900;902 911	developing infection
+T13	Medical-Problem 918 934	aspiration event
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

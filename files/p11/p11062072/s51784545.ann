@@ -1,0 +1,35 @@
+T1	Medical-Problem 29 46	New focal opacity
+T2	Medical-Anatomy 54 97	left upper lobe adjacent to the aortic knob
+T3	Medical-Assertion 99 104;106 120	which  could reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 121 130	pneumonia
+T5	Lesion-Anatomy 731 746	left lower lobe
+T6	Lesion-Description 747 751	mass
+T7	Medical-Anatomy 791 818	adjacent to the aortic knob
+T8	Medical-Assertion 819 834	could represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 836 845	pneumonia
+T10	Medical-Problem 849 883	fluid tracking up into the fissure
+T11	Medical-Assertion 895 897	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 898 909;911 927	appreciable pleural effusion
+T13	Medical-Problem 931 943	pneumothorax
+T14	Medical-Problem 1027 1052	left upper lobe pneumonia
+E11	Medical-Problem:T14
+T15	Medical-Problem 1056 1072	pleural effusion
+T16	Medical-Anatomy 1093 1106	major fissure
+T17	Medical-Problem 1111 1121	Large left
+E14	Medical-Problem:T17
+T18	Lesion-Anatomy 1122 1126	lung
+T19	Lesion-Description 1127 1131	mass
+T20	Lesion-Assertion 1133 1144	less likely
+A4	Lesion-AssertionValue T20 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Lesion-Description:T19 has-Lesion-Anatomy:T18 has-Lesion-Assertion:T20

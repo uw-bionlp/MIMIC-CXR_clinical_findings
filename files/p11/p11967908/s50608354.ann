@@ -1,0 +1,18 @@
+T1	Medical-Assertion 255 263;265 275	interval resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 313 331	Calcific densities
+T3	Medical-Anatomy 353 367	right mid lung
+T4	Medical-Problem 388 402	calcifications
+T5	Medical-Anatomy 410 419;421 447	region of the overlying soft tissues
+T6	Medical-Problem 450 471	Right apical scarring
+E5	Medical-Problem:T6
+T7	Medical-Assertion 499 501	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 502 525	new focal consolidation
+T9	Medical-Assertion 646 648	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 649 678	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Anatomy:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

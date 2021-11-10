@@ -1,0 +1,22 @@
+T1	Medical-Assertion 143 151;153 155	Question of
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 168 186	infectious process
+T3	Medical-Assertion 282 284	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 285 307	new lung consolidation
+T5	Lesion-Characteristic 310 319	Calcified
+T6	Lesion-Description 320 329	granuloma
+T7	Lesion-Anatomy 333 338;340 350	right upper lobe
+T8	Medical-Assertion 397 399	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 400 416	pleural effusion
+T10	Medical-Problem 421 433	pneumothorax
+T11	Medical-Assertion 496 507	No evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 511 520	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

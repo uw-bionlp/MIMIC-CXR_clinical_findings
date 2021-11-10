@@ -1,0 +1,18 @@
+T1	Medical-Problem 207 231	Moderate pulmonary edema
+T2	Medical-Anatomy 253 262	left lung
+T3	Medical-Problem 265 272;274 287	Greater opacification
+T4	Medical-Anatomy 295 310	right lung base
+T5	Medical-Assertion 311 319	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 320 336	asymmetric edema
+T7	Medical-Assertion 342 348;350 357	raises concern
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 362 371	pneumonia
+T9	Medical-Problem 378 406	heart is moderately enlarged
+E7	Medical-Problem:T9
+T10	Medical-Problem 411 428;430 444	mediastinal veins still engorged
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T7

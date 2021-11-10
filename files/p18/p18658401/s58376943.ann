@@ -1,0 +1,61 @@
+T1	Medical-Anatomy 216 221	heart
+T2	Medical-Assertion 225 228	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 229 237	enlarged
+T4	Lesion-Assertion 285 287	no
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 289 294	hilar
+T6	Lesion-Anatomy 298 309	mediastinal
+T7	Lesion-Description 310 325	lymphadenopathy
+T8	Medical-Assertion 340 342	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 343 346	CHF
+T10	Medical-Problem 348 364	focal infiltrate
+T11	Medical-Problem 369 383	gross effusion
+T12	Medical-Problem 409 424	slight blunting
+T13	Medical-Anatomy 432 446;448 498	right and left costophrenic angles both laterally and posteriorly
+T14	Medical-Assertion 591 614	cannot entirely exclude
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 617 640	tiny right pneumothorax
+T16	Medical-Assertion 672 686	not suggestive
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 690 693	fat
+T18	Medical-Problem 735 757	chronic appearance due
+E13	Medical-Problem:T18
+T19	Medical-Problem 761 777	chronic scarring
+E14	Medical-Problem:T19
+T20	Medical-Assertion 782 784	No
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 785 793	free air
+T22	Medical-Problem 843 859;861 869	subdiaphragmatic free air
+T23	Medical-Assertion 887 891	have
+A7	Medical-AssertionValue T23 absent
+T24	Medical-Assertion 892 900	resolved
+A8	Medical-AssertionValue T24 absent
+T25	Medical-Assertion 985 987	No
+A9	Medical-AssertionValue T25 absent
+T26	Medical-Problem 988 1004	focal infiltrate
+T27	Medical-Problem 1027 1036	pneumonia
+T28	Medical-Problem 1042 1073	Minimal bilateral pleural fluid
+E19	Medical-Problem:T28
+T29	Medical-Problem 1097 1116	Curvilinear lucency
+T30	Medical-Anatomy 1124 1139	right lung apex
+T31	Medical-Problem 1210 1223	subtle change
+E22	Medical-Problem:T31
+T32	Medical-Problem 1231 1247	chronic scarring
+E23	Medical-Problem:T32
+T33	Medical-Problem 1256 1291	true tiny right apical pneumothorax
+E24	Medical-Problem:T33
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T21 has-Medical-Assertion:T20
+E16	Medical-Problem:T22 has-Medical-Assertion:T23 has-Medical-Assertion:T24
+E17	Medical-Problem:T26 has-Medical-Assertion:T25
+E18	Medical-Problem:T27 has-Medical-Assertion:T25
+E20	Medical-Problem:T29 has-Medical-Anatomy:T30

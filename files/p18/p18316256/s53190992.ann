@@ -1,0 +1,19 @@
+T1	Medical-Problem 241 270	Pulmonary vascular congestion
+E1	Medical-Problem:T1
+T2	Medical-Problem 290 312	mild-to-moderate edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 315 337	More confluent opacity
+T4	Medical-Anatomy 341 345;347 366	left retrocardiac region
+T5	Medical-Assertion 393 406	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 407 418	atelectasis
+T7	Medical-Problem 427 451	infectious consolidation
+T8	Medical-Problem 454 503	Small-to-moderate layering right pleural effusion
+E7	Medical-Problem:T8
+T9	Medical-Assertion 525 527	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 528 548	visible pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

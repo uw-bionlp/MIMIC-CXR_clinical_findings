@@ -1,0 +1,49 @@
+T1	Medical-Problem 268 281	Small opacity
+T2	Medical-Anatomy 289 321	periperhy of the left lower lung
+T3	Medical-Problem 333 340;342 353	chronic atelectasis
+T4	Medical-Problem 356 377	Moderate cardiomegaly
+E4	Medical-Problem:T4
+T5	Medical-Assertion 451 453	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 454 469	pulmonary edema
+T7	Medical-Assertion 481 487	likely
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 488 492;494 521	tiny bilateral pleural effusions
+T9	Medical-Problem 524 550	Lung volumes are increased
+E7	Medical-Problem:T9
+T10	Medical-Problem 567 571	COPD
+E8	Medical-Problem:T10
+T11	Lesion-Characteristic 578 587	calcified
+T12	Lesion-Anatomy 588 601	right thyroid
+T13	Lesion-Description 602 608	nodule
+T14	Medical-Problem 633 641	aorta is
+E12	Medical-Problem:T14
+T15	Medical-Problem 642 650	tortuous
+E13	Medical-Problem:T15
+T16	Medical-Problem 656 665	calcified
+E14	Medical-Problem:T16
+T17	Medical-Assertion 677 679	no
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 680 692	pneumothorax
+T19	Medical-Problem 717 745	Stable moderate cardiomegaly
+E16	Medical-Problem:T19
+T20	Medical-Assertion 748 750	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 751 766	pulmonary edema
+T22	Medical-Problem 774 796	Increased lung volumes
+E18	Medical-Problem:T22
+T23	Medical-Problem 813 817	COPD
+E19	Medical-Problem:T23
+T24	Medical-Problem 825 865	Chronic mild left lower lobe atelectasis
+E20	Medical-Problem:T24
+T25	Medical-Assertion 873 881	Possibly
+A5	Medical-AssertionValue T25 possible
+T26	Medical-Problem 882 914	tiny bilateral pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E21	Medical-Problem:T26 has-Medical-Assertion:T25

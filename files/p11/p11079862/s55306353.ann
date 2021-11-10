@@ -1,0 +1,34 @@
+T1	Medical-Assertion 230 238	negative
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 243 245	PE
+T3	Medical-Problem 263 292	moderate pericardial effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 294 303;305 322	small L+R pleural effusions
+E3	Medical-Problem:T4
+T5	Medical-Problem 364 380	pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 437 465	Stable moderate cardiomegaly
+E5	Medical-Problem:T6
+T7	Medical-Problem 471 485;487 492	mild pulmonary edema
+E6	Medical-Problem:T7
+T8	Medical-Problem 495 534	Small to moderate left pleural effusion
+T9	Medical-Problem 540 562	subsequent atelectasis
+T10	Medical-Anatomy 571 586	left lung bases
+T11	Medical-Assertion 589 591	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 592 601	pneumonia
+T13	Medical-Assertion 603 605	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 606 621	pulmonary edema
+T15	Medical-Problem 623 639	mild enlargement
+T16	Medical-Anatomy 648 659	left atrium
+T17	Medical-Assertion 662 664	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 665 677	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E7	Medical-Problem:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

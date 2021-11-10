@@ -1,0 +1,27 @@
+T1	Medical-Problem 155 166;168 223	substantial decrease in the right lower lung opacification medially
+E1	Medical-Problem:T1
+T2	Medical-Problem 226 243;245 253	Moderate residual persists
+E2	Medical-Problem:T2
+T3	Lesion-Anatomy 260 283	right upper to mid lung
+T4	Lesion-Description 284 290	nodule
+T5	Lesion-Size-Trend 295 312	decreased in size
+A1	Lesion-Size-TrendValue T5 decreasing
+T6	Medical-Problem 316 334	Continued blunting
+T7	Medical-Anatomy 342 366	right costophrenic angle
+T8	Medical-Assertion 367 375	suggests
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 376 383;385 395	pleural thickening
+T10	Medical-Assertion 412 414	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 415 422	filling
+T12	Medical-Anatomy 430 459	posterior costophrenic sulcus
+T13	Lesion-Size-Trend 500 526	Decreased size and density
+A4	Lesion-Size-TrendValue T13 decreasing
+T14	Lesion-Description 555 559	mass
+T15	Lesion-Description 565 571	nodule
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10 has-Medical-Anatomy:T12
+E10	Lesion-Description:T14 has-Lesion-Size-Trend:T13
+E11	Lesion-Description:T15 has-Lesion-Size-Trend:T13

@@ -1,0 +1,16 @@
+T1	Medical-Problem 293 321	Small right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 357 366;368 373	pulmonary edema
+T3	Medical-Anatomy 386 396	both lungs
+T4	Lesion-Description 424 431	nodular
+E4	Lesion-Description:T4
+T5	Lesion-Description 432 441	opacities
+T6	Lesion-Anatomy 463 472	left lung
+T7	Medical-Problem 493 505	disseminated
+E7	Medical-Problem:T7
+T8	Medical-Assertion 595 597	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 599 611	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,28 @@
+T1	Medical-Problem 198 217	Marked cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 287 307	moderate enlargement
+T3	Medical-Anatomy 311 315;317 340	both main pulmonary arteries
+T4	Medical-Anatomy 347 352	lungs
+T5	Medical-Assertion 364 371	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 372 385	consolidation
+T7	Medical-Problem 388 403	pulmonary edema
+T8	Medical-Problem 405 421	pleural effusion
+T9	Medical-Problem 425 437	pneumothorax
+T10	Medical-Assertion 440 442	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 443 466	displaced rib fractures
+T12	Medical-Problem 535 538;540 549	rib fractures
+E10	Medical-Problem:T12
+T13	Medical-Problem 892 911	Marked cardiomegaly
+E11	Medical-Problem:T13
+T14	Medical-Assertion 925 927	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 928 959	acute cardiopulmonary pathology
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

@@ -1,0 +1,23 @@
+T1	Medical-Problem 258 266;268 280	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 301 314	Calcification
+T3	Medical-Anatomy 322 333	aortic knob
+T4	Lesion-Characteristic 348 357	Calcified
+T5	Lesion-Anatomy 358 374	right upper lung
+T6	Lesion-Description 375 381	nodule
+T7	Lesion-Size-Trend 385 392	similar
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 402 404	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 405 410;412 425	focal consolidation
+T10	Medical-Problem 427 443	pleural effusion
+T11	Medical-Problem 448 460	pneumothorax
+T12	Medical-Assertion 581 592	No evidence
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 597 626	acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

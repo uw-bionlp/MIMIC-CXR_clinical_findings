@@ -1,0 +1,32 @@
+T1	Medical-Problem 259 285	mild left base atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Assertion 288 290	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 291 310	focal consolidation
+T4	Medical-Problem 312 328	pleural effusion
+T5	Medical-Problem 334 342	evidence
+E4	Medical-Problem:T5
+T6	Medical-Problem 346 358	pneumothorax
+T7	Medical-Problem 431 451	osteophyte formation
+T8	Medical-Anatomy 470 481;483 497	right lower thoracic spine
+T9	Lesion-Size-Trend 531 537	stable
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Lesion-Size 538 551	subcentimeter
+T11	Lesion-Characteristic 561 568	rounded
+T12	Lesion-Characteristic 569 578	calcified
+T13	Lesion-Description 579 585	nodule
+T14	Lesion-Anatomy 593 608	right lung apex
+T15	Lesion-Characteristic 633 642	calcified
+T16	Lesion-Description 643 652	granuloma
+T17	Medical-Problem 670 689	Basilar atelectasis
+E15	Medical-Problem:T17
+T18	Medical-Assertion 703 705	no
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 706 727;729 736	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T2
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E11	Lesion-Description:T13 has-Lesion-Size-Trend:T9 has-Lesion-Size-Present:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T14 has-Lesion-Characteristic:T15
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

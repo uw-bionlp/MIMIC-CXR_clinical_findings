@@ -1,0 +1,44 @@
+T1	Medical-Problem 60 92	Sepsis from hepatobiliary source
+E1	Medical-Problem:T1
+T2	Medical-Problem 99 114	pulmonary edema
+T3	Medical-Problem 120 144	asymmetric opacification
+T4	Medical-Anatomy 152 168	right upper lobe
+T5	Medical-Problem 391 422	persistent mild pulmonary edema
+E5	Medical-Problem:T5
+T6	Medical-Problem 499 515	Linear opacities
+T7	Medical-Anatomy 525 530;532 537	lower lobes
+T8	Medical-Problem 549 590	obscuration of the diaphragmatic contours
+E8	Medical-Problem:T8
+T9	Medical-Problem 600 610;612 633	persistent bibasilar atelectasis
+E9	Medical-Problem:T9
+T10	Medical-Problem 638 676	left greater than right small effusion
+E10	Medical-Problem:T10
+T11	Medical-Problem 692 759	asymmetric heterogeneous opacities, at times with a nodular pattern
+E11	Medical-Problem:T11
+T12	Medical-Anatomy 778 794	right upper lobe
+T13	Medical-Assertion 796 815	raising concern for
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Problem 819 837	infectious process
+T15	Medical-Assertion 896 898	no
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 899 911	pneumothorax
+T17	Medical-Problem 933 943	Asymmetric
+E15	Medical-Problem:T17
+T18	Lesion-Description 944 965	nodular opacification
+T19	Lesion-Anatomy 973 978	right
+T20	Medical-Assertion 990 1004;1006 1009	raises concern for
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1012 1043	disseminated infectious process
+T22	Medical-Problem 1174 1194	Mild pulmonary edema
+E19	Medical-Problem:T22
+T23	Medical-Problem 1263 1322	Persistent, left greater than right small pleural effusions
+E20	Medical-Problem:T23
+T24	Medical-Problem 1335 1367	bilateral lower lobe atelectasis
+E21	Medical-Problem:T24
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E13	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Lesion-Description:T18 has-Lesion-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T20

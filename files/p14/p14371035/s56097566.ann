@@ -1,0 +1,30 @@
+T1	Medical-Problem 165 205	Severity of left perihilar consolidation
+E1	Medical-Problem:T1
+T2	Medical-Problem 246 271	resolving pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 274 301	Heterogeneous opacification
+T4	Medical-Anatomy 305 315	both lungs
+T5	Medical-Assertion 317 324	suggest
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 325 345	multifocal pneumonia
+T7	Medical-Anatomy 347 392;394 407	particularly right upper lobe marginating the minor fissure
+T8	Medical-Assertion 413 419	likely
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 420 442	cavitary consolidation
+T10	Medical-Anatomy 450 461	right lower
+T11	Medical-Problem 464 472;474 500	Moderate bilateral pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Anatomy 518 523	heart
+T13	Medical-Assertion 527 530	not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 531 539	enlarged
+T15	Medical-Problem 546 583	mediastinal veins only mildly dilated
+E12	Medical-Problem:T15
+T16	Medical-Assertion 739 741	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 742 754	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

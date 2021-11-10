@@ -1,0 +1,49 @@
+T1	Medical-Assertion 37 39	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 40 71	acute intrathoracic abnormality
+T3	Medical-Problem 79 122	Persistent, linear right upper lobe opacity
+E2	Medical-Problem:T3
+T4	Medical-Problem 614 631	are hyperinflated
+E3	Medical-Problem:T4
+T5	Lesion-Characteristic 652 669	linearly oriented
+T6	Lesion-Description 670 677	nodular
+E5	Lesion-Description:T6
+T7	Lesion-Description 679 686	opacity
+T8	Lesion-Anatomy 694 710	right upper lobe
+T9	Lesion-Size-Trend 712 721	unchanged
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Problem 739 778	associated right upper lobe volume loss
+E8	Medical-Problem:T10
+T11	Medical-Assertion 790 792	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 793 809	pleural effusion
+T13	Medical-Problem 814 826	pneumothorax
+T14	Medical-Assertion 829 831	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 832 840	definite
+E11	Medical-Problem:T15
+T16	Medical-Problem 841 854	consolidation
+T17	Medical-Assertion 893 895	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 896 901	acute
+E13	Medical-Problem:T18
+T19	Medical-Problem 902 927	intrathoracic abnormality
+T20	Lesion-Characteristic 946 963	linearly oriented
+T21	Lesion-Description 964 971	nodular
+T22	Lesion-Anatomy 972 988	right upper lobe
+T23	Lesion-Description 989 996	opacity
+T24	Medical-Problem 1028 1036	scarring
+E19	Medical-Problem:T24
+T25	Lesion-Characteristic 1100 1112	slow growing
+T26	Lesion-Description 1118 1132	adenocarcinoma
+T27	Medical-Problem 1136 1154	indolent infection
+E22	Medical-Problem:T27
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T19 has-Medical-Assertion:T17
+E16	Lesion-Description:T21 has-Lesion-Anatomy:T22
+E18	Lesion-Description:T23 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T22
+E21	Lesion-Description:T26 has-Lesion-Characteristic:T25

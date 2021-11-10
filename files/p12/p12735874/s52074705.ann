@@ -1,0 +1,22 @@
+T1	Medical-Problem 304 341	minimal atherosclerotic calcification
+T2	Medical-Anatomy 349 355;357 361	aortic knob
+T3	Medical-Problem 402 425	Minimal streaky opacity
+T4	Medical-Anatomy 434 448	left lung base
+T5	Medical-Problem 468 479	atelectasis
+T6	Medical-Assertion 482 484	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 485 504	focal consolidation
+T8	Medical-Problem 507 523	pleural effusion
+T9	Medical-Problem 527 539	pneumothorax
+T10	Medical-Assertion 563 565	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 566 579;581 594	acute osseous abnormalities
+T12	Medical-Problem 614 646	Minimal left basilar atelectasis
+E10	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

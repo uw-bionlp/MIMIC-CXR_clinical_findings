@@ -1,0 +1,23 @@
+T1	Medical-Problem 227 247	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 250 271	Ill-defined opacities
+T3	Medical-Anatomy 279 321;323 341	mid to lower lungs noted bilaterally, left greater than right
+T4	Medical-Assertion 342 356	concerning for
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 357 377	multifocal pneumonia
+T6	Medical-Assertion 380 382	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 383 397	large effusion
+T8	Medical-Problem 402 414	pneumothorax
+T9	Medical-Problem 465 470;472 482	Hilar congestion
+E7	Medical-Problem:T9
+T10	Medical-Problem 553 573	Multifocal pneumonia
+E8	Medical-Problem:T10
+T11	Medical-Assertion 575 583	possible
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 584 600	hilar congestion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

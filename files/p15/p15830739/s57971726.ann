@@ -1,0 +1,23 @@
+T1	Medical-Problem 308 325	Worsening opacity
+T2	Medical-Anatomy 333 347	left lung base
+T3	Medical-Assertion 349 362	may be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 380 391	atelectasis
+T5	Medical-Problem 396 404	effusion
+T6	Medical-Problem 410 420;422 446	coexisting infectious consolidation
+T7	Medical-Problem 523 544	worsening atelectasis
+T8	Medical-Anatomy 552 562	right base
+T9	Medical-Assertion 567 575	possible
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 594 622	small right pleural effusion
+T11	Medical-Problem 625 651;653 666	Moderate elevation of left hemidiaphragm
+E9	Medical-Problem:T11
+T12	Medical-Problem 683 717	adjacent marked gastric distension
+T13	Medical-Anatomy 725 729;731 760	left upper quadrant of the abdomen
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13

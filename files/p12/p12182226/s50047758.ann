@@ -1,0 +1,22 @@
+T1	Medical-Problem 217 231	mild elevation
+T2	Medical-Anatomy 239 243;245 258	left hemidiaphragm
+T3	Medical-Problem 272 314	slightly overinflated left colonic flexure
+E3	Medical-Problem:T3
+T4	Medical-Problem 322 355	diaphragm is elevated posteriorly
+E4	Medical-Problem:T4
+T5	Medical-Assertion 357 381	potentially representing
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 384 389;391 402	small eventration
+T7	Lesion-Assertion 504 515	no evidence
+A2	Lesion-AssertionValue T7 absent
+T8	Lesion-Anatomy 519 528	pulmonary
+T9	Lesion-Description 529 536	nodules
+T10	Lesion-Description 540 546	masses
+T11	Medical-Assertion 550 552	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 553 570	pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8
+E8	Lesion-Description:T10 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,27 @@
+T1	Medical-Assertion 247 249	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 251 267	pleural effusion
+T3	Medical-Problem 271 283	pneumothorax
+T4	Medical-Problem 285 304	Minor opacification
+T5	Medical-Anatomy 312 327	right lung base
+T6	Medical-Assertion 332 347	probably due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 348 359	atelectasis
+T8	Medical-Problem 362 382	Lung volumes are low
+E6	Medical-Problem:T8
+T9	Medical-Problem 403 428	Patchy right base opacity
+E7	Medical-Problem:T9
+T10	Medical-Assertion 430 438	probably
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 439 450	atelectasis
+T12	Medical-Problem 460 469	pneumonia
+T13	Medical-Assertion 473 480;482 498	hard to entirely exclude
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 595 615	developing pneumonia
+E10	Medical-Problem:T14
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10 has-Medical-Assertion:T13

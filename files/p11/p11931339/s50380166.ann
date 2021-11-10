@@ -1,0 +1,53 @@
+T1	Medical-Problem 180 209	heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 282 302	mediastinal contours
+T3	Medical-Problem 316 349	calcified atherosclerotic disease
+T4	Medical-Anatomy 357 368	aortic knob
+T5	Medical-Problem 375 390;392 397	mildly tortuous aorta
+E5	Medical-Problem:T5
+T6	Medical-Problem 485 499	right mid lung
+T7	Medical-Problem 500 507	opacity
+T8	Medical-Assertion 508 520	has resolved
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Anatomy 530 542;544 550	retrocardiac region
+T10	Medical-Problem 561 578	increased opacity
+T11	Medical-Assertion 590 592	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 593 615	large pleural effusion
+T13	Medical-Problem 620 632	pneumothorax
+T14	Medical-Problem 635 662	Severe degenerative changes
+T15	Medical-Anatomy 679 688;690 709	bilateral glenohumeral joints
+T16	Medical-Problem 712 721	Scoliosis
+E14	Medical-Problem:T16
+T17	Medical-Problem 726 749	compressive deformities
+E15	Medical-Problem:T17
+T18	Medical-Problem 800 820	Retrocardiac density
+E16	Medical-Problem:T18
+T19	Medical-Assertion 821 834	may represent
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 835 846	atelectasis
+T21	Medical-Problem 852 861	pneumonia
+T22	Medical-Assertion 865 868;870 878	not excluded
+A4	Medical-AssertionValue T22 possible
+T23	Medical-Problem 887 890	New
+E19	Medical-Problem:T23
+T24	Lesion-Characteristic 891 896	vague
+T25	Lesion-Description 897 904	nodular
+T26	Lesion-Anatomy 918 928	right lung
+T27	Lesion-Assertion 930 938	possibly
+A5	Lesion-AssertionValue T27 possible
+T28	Lesion-Anatomy 946 950	lung
+T29	Lesion-Description 951 957	nodule
+T30	Lesion-Description 975 984	carcinoma
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Assertion:T8
+E7	Medical-Problem:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T22
+E21	Lesion-Description:T25 has-Lesion-Characteristic:T24 has-Lesion-Anatomy:T26
+E24	Lesion-Description:T29 has-Lesion-Assertion:T27 has-Lesion-Anatomy:T28
+E25	Lesion-Description:T30 has-Lesion-Assertion:T27 has-Lesion-Anatomy:T28

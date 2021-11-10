@@ -1,0 +1,30 @@
+T1	Medical-Problem 302 326	Triangular opacification
+T2	Medical-Anatomy 334 349	left lower lobe
+T3	Medical-Problem 390 409	new slight blunting
+T4	Medical-Anatomy 417 451	adjacent left hemidiaphragm on the
+T5	Medical-Problem 465 478	opacification
+T6	Medical-Anatomy 486 519	retrocardiac space on the lateral
+T7	Medical-Assertion 527 529	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 531 547	pleural effusion
+T9	Medical-Problem 549 561	pneumothorax
+T10	Medical-Problem 566 581	pulmonary edema
+T11	Medical-Problem 584 596	Cardiomegaly
+E10	Medical-Problem:T11
+T12	Medical-Anatomy 748 752	Left
+T13	Medical-Assertion 780 786	likely
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 787 811	subsegmental atelectasis
+T15	Medical-Problem 818 827	pneumonia
+T16	Medical-Assertion 828 846	cannot be excluded
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 891 910	Stable cardiomegaly
+E14	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T16

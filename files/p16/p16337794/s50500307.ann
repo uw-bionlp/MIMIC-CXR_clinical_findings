@@ -1,0 +1,22 @@
+T1	Medical-Problem 532 564	stable postoperative cardiac and
+E1	Medical-Problem:T1
+T2	Medical-Problem 609 645	bilateral scattered patchy opacities
+T3	Medical-Anatomy 649 659	both lungs
+T4	Lesion-Description 709 716	nodular
+E4	Lesion-Description:T4
+T5	Lesion-Description 717 724	opacity
+T6	Lesion-Anatomy 728 732;734 753	both costophrenic angles
+T7	Medical-Assertion 756 764	Findings
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 765 776	may reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 777 786	pneumonia
+T10	Medical-Problem 822 838	pulmonary emboli
+T11	Medical-Assertion 839 864	should also be considered
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 902 931	Stable layering left effusion
+E9	Medical-Problem:T12
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8 has-Medical-Assertion:T11

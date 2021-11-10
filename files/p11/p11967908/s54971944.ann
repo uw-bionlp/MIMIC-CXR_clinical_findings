@@ -1,0 +1,29 @@
+T1	Medical-Problem 344 382	Extensive coarse breast calcifications
+T2	Medical-Anatomy 401 432	right upper and mid hemi thorax
+T3	Medical-Problem 437 452	Pulmonary edema
+E3	Medical-Problem:T3
+T4	Medical-Problem 478 494	residual opacity
+T5	Medical-Anatomy 502 514;516 529	periphery of the left base
+T6	Medical-Assertion 541 543	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 544 560	pleural effusion
+T8	Medical-Problem 564 576	pneumothorax
+T9	Medical-Problem 589 622	chronic apical pleural thickening
+E8	Medical-Problem:T9
+T10	Medical-Problem 627 635	scarring
+E9	Medical-Problem:T10
+T11	Medical-Problem 656 671	Pulmonary edema
+E10	Medical-Problem:T11
+T12	Medical-Problem 688 704	residual opacity
+T13	Medical-Anatomy 712 721	left base
+T14	Medical-Assertion 722 727;729 736	could reflect
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 737 761	residual pulmonary edema
+T16	Medical-Problem 765 778	pleural fluid
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

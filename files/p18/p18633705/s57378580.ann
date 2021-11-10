@@ -1,0 +1,45 @@
+T1	Medical-Problem 33 50	Partial obscuring
+T2	Medical-Anatomy 58 85	left hemidiaphragm medially
+T3	Medical-Problem 91 106	rounded opacity
+T4	Medical-Assertion 116 131	could represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 132 143	atelectasis
+T6	Lesion-Assertion 148 154	cannot
+A2	Lesion-AssertionValue T6 absent
+T7	Lesion-Description 165 176	mass lesion
+T8	Medical-Problem 647 672	hemidiaphragm is elevated
+E6	Medical-Problem:T8
+T9	Medical-Anatomy 686 704	left hemidiaphragm
+T10	Medical-Problem 709 727	partially obscured
+T11	Medical-Problem 733 748	rounded opacity
+T12	Medical-Problem 772 783	atelectasis
+T13	Lesion-Assertion 789 795	cannot
+A3	Lesion-AssertionValue T13 absent
+T14	Lesion-Description 806 817	mass lesion
+T15	Medical-Assertion 880 882	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 883 899	pleural effusion
+T17	Medical-Problem 903 915	pneumothorax
+T18	Medical-Problem 969 989	Degenerative changes
+E14	Medical-Problem:T18
+T19	Medical-Problem 1042 1061	Partial obscuration
+T20	Medical-Anatomy 1069 1096	left hemidiaphragm medially
+T21	Medical-Problem 1102 1117	rounded opacity
+T22	Medical-Assertion 1126 1141	could represent
+A5	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1142 1189;1191 1200	crowding of vessels from adjacent diaphragmatic elevation
+T24	Lesion-Description 1223 1234	mass lesion
+E19	Lesion-Description:T24
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Lesion-Description:T7 has-Lesion-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9
+E11	Lesion-Description:T14 has-Lesion-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T21 has-Medical-Anatomy:T20
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

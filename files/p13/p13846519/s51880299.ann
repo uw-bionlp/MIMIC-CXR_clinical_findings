@@ -1,0 +1,37 @@
+T1	Medical-Problem 352 365	calcification
+T2	Medical-Anatomy 374 385	aortic knob
+T3	Medical-Problem 388 415	Small right apical scarring
+E3	Medical-Problem:T3
+T4	Lesion-Characteristic 440 445	vague
+T5	Lesion-Anatomy 446 450;452 460	left mid lung
+T6	Lesion-Description 461 467	nodule
+T7	Lesion-Size-Trend 471 478	similar
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 507 509	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 510 526	pleural effusion
+T10	Medical-Problem 530 542	pneumothorax
+T11	Medical-Problem 545 554	Deformity
+T12	Medical-Anatomy 562 580	right humeral head
+T13	Medical-Problem 587 606	increased sclerosis
+T14	Medical-Problem 611 624	bony bridging
+T15	Medical-Problem 644 663	interval healing of
+E13	Medical-Problem:T15
+T16	Medical-Problem 758 781	radiopaque foreign body
+E14	Medical-Problem:T16
+T17	Lesion-Anatomy 811 824	left mid lung
+T18	Lesion-Description 825 831	nodule
+T19	Lesion-Size-Trend 833 840	similar
+A3	Lesion-Size-TrendValue T19 no-change
+T20	Lesion-Size-Trend 853 856	new
+A4	Lesion-Size-TrendValue T20 new
+T21	Medical-Problem 1028 1059	proximal right humeral fracture
+E17	Medical-Problem:T21
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12
+E16	Lesion-Description:T18 has-Lesion-Anatomy:T17 has-Lesion-Size-Trend:T19 has-Lesion-Size-Trend:T20

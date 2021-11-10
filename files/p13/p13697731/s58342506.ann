@@ -1,0 +1,17 @@
+T1	Medical-Problem 170 190	Mild pulmonary edema
+T2	Medical-Anatomy 219 228	left lung
+T3	Medical-Problem 252 293	Moderate right pleural effusion increased
+E3	Medical-Problem:T3
+T4	Medical-Problem 296 316;318 331	Bilateral infrahilar opacification
+E4	Medical-Problem:T4
+T5	Medical-Assertion 333 344	most likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 345 356	atelectasis
+T7	Medical-Assertion 358 372	cannot exclude
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 373 382	pneumonia
+T9	Medical-Problem 638 650	Pneumothorax
+E7	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

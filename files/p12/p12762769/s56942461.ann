@@ -1,0 +1,38 @@
+T1	Medical-Problem 224 250;252 265	persistent left upper lobe consolidation
+E1	Medical-Problem:T1
+T2	Medical-Problem 305 327	fibronodular opacities
+T3	Medical-Anatomy 332 343	both apices
+T4	Lesion-Size 390 403	subcentimeter
+T5	Lesion-Characteristic 405 414	calcified
+T6	Lesion-Characteristic 415 422	rounded
+T7	Lesion-Description 423 440	nodular opacities
+T8	Lesion-Anatomy 448 464	right upper lobe
+T9	Lesion-Anatomy 469 480;482 491	juxta-hilar left lung
+T10	Lesion-Size-Trend 496 505	unchanged
+A1	Lesion-Size-TrendValue T10 no-change
+T11	Lesion-Description 523 532	granuloma
+T12	Medical-Assertion 535 537	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 538 557	focal consolidation
+T14	Medical-Assertion 559 569	concerning
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 574 583	pneumonia
+T16	Medical-Assertion 608 610	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 611 627	pleural effusion
+T18	Medical-Problem 630 642	pneumothorax
+T19	Medical-Problem 646 661	pulmonary edema
+T20	Medical-Assertion 733 735	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 736 749	acute process
+T22	Medical-Problem 780 800	sequelae of prior TB
+E17	Medical-Problem:T22
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Size-Present:T4 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T12 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T16
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

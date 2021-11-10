@@ -1,0 +1,19 @@
+T1	Medical-Problem 268 288	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 349 370	bibasilar atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 373 387	Slight opacity
+T4	Medical-Anatomy 408 412;414 432	left costophrenic angle
+T5	Medical-Assertion 436 454	most likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 455 466	atelectasis
+T7	Medical-Problem 470 480	aspiration
+T8	Medical-Assertion 483 485	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 486 491;493 509	large pleural effusion
+T10	Medical-Problem 513 525	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

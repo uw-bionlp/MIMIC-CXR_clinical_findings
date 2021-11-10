@@ -1,0 +1,28 @@
+T1	Lesion-Description 218 233	nodular opacity
+T2	Lesion-Size 237 243	7.6 cm
+T3	Lesion-Anatomy 260 310	left lung base overlapping the anterior end of rib
+T4	Lesion-Description 318 325;327 334	nodular opacity
+T5	Lesion-Assertion 335 338	can
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Anatomy 368 372	lung
+T7	Lesion-Description 373 379	nodule
+T8	Medical-Problem 574 591	on lung opacities
+E7	Medical-Problem:T8
+T9	Medical-Assertion 592 606	concerning for
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 607 616	pneumonia
+T11	Lesion-Size 761 766	small
+T12	Lesion-Size 767 773	7.6-mm
+T13	Lesion-Description 774 781	nodular
+E11	Lesion-Description:T13
+T14	Lesion-Description 782 789	opacity
+T15	Lesion-Anatomy 797 821;823 852	left lung base overlying the anterior end of sixth rib
+T16	Lesion-Assertion 856 870	concerning for
+A3	Lesion-AssertionValue T16 possible
+T17	Lesion-Description 876 882	nodule
+E1	Lesion-Description:T1 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T3
+E4	Lesion-Description:T4 has-Lesion-Assertion:T5
+E6	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E12	Lesion-Description:T14 has-Lesion-Size-Present:T11 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T15
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T15 has-Lesion-Assertion:T16

@@ -1,0 +1,17 @@
+T1	Medical-Problem 209 232	Increased opacification
+T2	Medical-Anatomy 240 269	left mid and left lower lungs
+T3	Medical-Assertion 274 287	likely due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 289 299	hemorrhage
+T5	Lesion-Count 302 310	Multiple
+T6	Lesion-Anatomy 311 325	bilateral lung
+T7	Lesion-Description 326 333	nodules
+T8	Medical-Assertion 383 385	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 386 398	pneumothorax
+T10	Medical-Problem 401 426	Bilateral small effusions
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

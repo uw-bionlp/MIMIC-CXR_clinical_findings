@@ -1,0 +1,29 @@
+T1	Medical-Problem 258 278	severe opacification
+T2	Medical-Anatomy 286 313	mid lung fields bilaterally
+T3	Medical-Anatomy 316 321	right
+T4	Medical-Assertion 347 364	likely represents
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 365 392;394 399	severe asymmetric pulmonary edema
+T6	Medical-Problem 403 413	edema with
+T7	Medical-Problem 414 434	underlying pneumonia
+T8	Medical-Problem 437 459	Heart size is enlarged
+E7	Medical-Problem:T8
+T9	Medical-Assertion 462 464	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 466 478	pneumothorax
+T11	Medical-Assertion 501 503	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 504 526	large pleural effusion
+T13	Medical-Problem 553 586	Severe asymmetric pulmonary edema
+E10	Medical-Problem:T13
+T14	Medical-Problem 588 608	underlying pneumonia
+T15	Medical-Anatomy 617 627	right lung
+T16	Medical-Assertion 628 646	cannot be excluded
+A4	Medical-AssertionValue T16 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

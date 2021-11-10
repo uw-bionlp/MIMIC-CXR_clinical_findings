@@ -1,0 +1,23 @@
+T1	Medical-Problem 305 327	Lung volume is reduced
+E1	Medical-Problem:T1
+T2	Medical-Problem 333 356	new large opacification
+T3	Medical-Anatomy 365 388	mid and lower left lung
+T4	Medical-Problem 393 406	consolidation
+T5	Medical-Problem 411 431	new pleural effusion
+T6	Medical-Problem 494 507	consolidation
+E6	Medical-Problem:T6
+T7	Medical-Assertion 512 527	probably due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 528 539	atelectasis
+T9	Medical-Assertion 583 589;591 604	should be considered
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 616 634	pulmonary embolism
+T11	Medical-Assertion 669 671	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 672 684	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

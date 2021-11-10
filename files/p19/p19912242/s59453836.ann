@@ -1,0 +1,38 @@
+T1	Medical-Problem 268 282	Mild unfolding
+T2	Medical-Anatomy 290 295	aorta
+T3	Medical-Assertion 312 314	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 316 338	airspace consolidation
+T5	Medical-Assertion 341 343	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 344 359	pulmonary edema
+T7	Medical-Problem 362 382;384 408	Mild increase in the bronchovascular markings
+E5	Medical-Problem:T7
+T8	Lesion-Assertion 411 413	No
+A3	Lesion-AssertionValue T8 absent
+T9	Lesion-Characteristic 414 424	suspicious
+T10	Lesion-Anatomy 425 434	pulmonary
+T11	Lesion-Description 435 442	nodules
+T12	Lesion-Description 446 452	masses
+T13	Medical-Assertion 455 457	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 459 476	pleural effusions
+T15	Medical-Assertion 479 481	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 482 494	pneumothorax
+T17	Medical-Problem 497 516	Spondylotic changes
+T18	Medical-Anatomy 524 532;534 539	thoracic spine
+T19	Medical-Assertion 560 571	No features
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 575 597	cardiac decompensation
+T21	Medical-Problem 604 633	acute pleuropulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Lesion-Description:T11 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10
+E9	Lesion-Description:T12 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T18
+E14	Medical-Problem:T20 has-Medical-Assertion:T19
+E15	Medical-Problem:T21 has-Medical-Assertion:T19

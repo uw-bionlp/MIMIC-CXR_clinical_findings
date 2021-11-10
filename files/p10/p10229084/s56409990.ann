@@ -1,0 +1,42 @@
+T1	Medical-Problem 480 500	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 519 577	exaggeration of heart size and pulmonary vascular markings
+E2	Medical-Problem:T2
+T3	Lesion-Assertion 591 593	no
+A1	Lesion-AssertionValue T3 absent
+T4	Lesion-Description 594 603	opacities
+T5	Lesion-Assertion 604 607	nor
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Description 608 615	nodules
+T7	Medical-Assertion 623 625	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 626 642	pleural effusion
+T9	Medical-Assertion 643 646	nor
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 647 659	pneumothorax
+T11	Medical-Assertion 667 669	No
+A5	Medical-AssertionValue T11 absent
+T12	Medical-Problem 670 694	acute bony abnormalities
+T13	Medical-Assertion 720 722	No
+A6	Medical-AssertionValue T13 absent
+T14	Lesion-Description 723 732	opacities
+E8	Lesion-Description:T14
+T15	Lesion-Description 734 741	nodules
+E9	Lesion-Description:T15
+T16	Medical-Problem 743 760	pleural effusions
+T17	Medical-Assertion 762 765	nor
+A7	Medical-AssertionValue T17 absent
+T18	Medical-Problem 766 778	pneumothorax
+T19	Medical-Assertion 786 788;790 811	No radiographic evidence
+A8	Medical-AssertionValue T19 absent
+T20	Medical-Problem 815 824	pneumonia
+T21	Medical-Problem 828 837	infection
+E3	Lesion-Description:T4 has-Lesion-Assertion:T3
+E4	Lesion-Description:T6 has-Lesion-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E7	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T16 has-Medical-Assertion:T13
+E11	Medical-Problem:T18 has-Medical-Assertion:T17
+E12	Medical-Problem:T20 has-Medical-Assertion:T19
+E13	Medical-Problem:T21 has-Medical-Assertion:T19

@@ -1,0 +1,15 @@
+T1	Medical-Problem 190 197	opacity
+T2	Medical-Anatomy 218 250	lateral aspect of the left chest
+T3	Lesion-Assertion 271 276	might
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Description 287 294	pleural
+E3	Lesion-Description:T4
+T5	Lesion-Description 295 301	lipoma
+T6	Medical-Assertion 412 414	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 416 432	pleural effusion
+T8	Medical-Problem 436 448	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6

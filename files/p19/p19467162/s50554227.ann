@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 293 315	Medial right lung base
+T2	Medical-Problem 372 392	multifocal pneumonia
+T3	Lesion-Characteristic 397 407	spiculated
+T4	Lesion-Description 408 414	nodule
+T5	Lesion-Anatomy 422 432;434 438	left upper lobe
+T6	Lesion-Size-Trend 442 452	similar to
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Problem 518 539	Indistinct appearance
+T8	Medical-Anatomy 547 565	left hemidiaphragm
+T9	Medical-Assertion 566 578	suggests the
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 594 616	small pleural effusion
+T11	Medical-Assertion 619 621	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 622 634	pneumothorax
+T13	Medical-Problem 656 703	Symmetric right base and retrocardiac opacities
+E10	Medical-Problem:T13
+T14	Medical-Assertion 704 717	may represent
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 726 737	atelectasis
+T16	Medical-Problem 741 750	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14

@@ -1,0 +1,35 @@
+T1	Medical-Problem 148 167	Slight hyperlucency
+T2	Medical-Anatomy 172 183	lower lobes
+T3	Medical-Assertion 184 190	may be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 250 279	basilar predominant emphysema
+T5	Medical-Anatomy 336 341	Lungs
+T6	Medical-Assertion 346 350	free
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 354 367	consolidation
+T8	Medical-Problem 371 394	substantial atelectasis
+T9	Medical-Assertion 411 413	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 414 431	pleural effusions
+T11	Medical-Problem 435 458	acute skeletal findings
+T12	Medical-Problem 461 469;471 497	Apparent saber-sheath configuration
+T13	Medical-Anatomy 505 512	trachea
+T14	Medical-Problem 529 537;539 570	narrowed intrathoracic coronal dimension
+T15	Medical-Problem 697 730	prominence of the splenic contour
+E12	Medical-Problem:T15
+T16	Medical-Problem 753 769	diffuse haziness
+E13	Medical-Problem:T16
+T17	Medical-Problem 796 803	ascites
+E14	Medical-Problem:T17
+T18	Medical-Assertion 866 890	No radiographic evidence
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 894 903	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

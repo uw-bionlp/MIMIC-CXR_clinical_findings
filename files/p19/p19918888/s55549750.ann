@@ -1,0 +1,35 @@
+T1	Medical-Problem 57 65	Fracture
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 182 193	mediastinal
+T3	Lesion-Anatomy 198 203	hilar
+T4	Lesion-Characteristic 230 239	calcified
+T5	Lesion-Description 240 251	lymph nodes
+T6	Medical-Anatomy 290 299;301 312	pulmonary vascularity
+T7	Medical-Assertion 316 319	not
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 320 328	engorged
+T9	Medical-Assertion 351 358	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 359 378	focal consolidation
+T11	Medical-Assertion 381 383	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 384 400	pleural effusion
+T13	Medical-Problem 404 416	pneumothorax
+T14	Medical-Assertion 433 435	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 436 449;451 464	acute osseous abnormalities
+T16	Medical-Assertion 489 491	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 492 525	acute cardiopulmonary abnormality
+T18	Lesion-Characteristic 528 537	Calcified
+T19	Lesion-Anatomy 538 549	mediastinal
+T20	Lesion-Anatomy 554 559	hilar
+T21	Lesion-Description 560 565;567 572	lymph nodes
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Lesion-Description:T21 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T19 has-Lesion-Anatomy:T20

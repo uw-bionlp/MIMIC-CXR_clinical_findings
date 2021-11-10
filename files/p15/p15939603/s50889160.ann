@@ -1,0 +1,16 @@
+T1	Lesion-Assertion 362 369	absence
+A1	Lesion-AssertionValue T1 absent
+T2	Lesion-Anatomy 377 382	renal
+E1	Lesion-Anatomy:T2
+T3	Medical-Assertion 402 409	absence
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 417 433	cardiomegaly/CHF
+T5	Medical-Anatomy 504 508;510 520	lung parenchyma
+T6	Medical-Problem 546 584;586 593	slightly improved previous parenchymal opacity
+T7	Medical-Anatomy 601 617	right upper lobe
+T8	Medical-Assertion 691 702	no evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 706 723	pleural effusions
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

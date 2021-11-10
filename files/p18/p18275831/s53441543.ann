@@ -1,0 +1,34 @@
+T1	Medical-Problem 290 329	increased pulmonary vascular congestion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 337 339	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 340 361	frank pulmonary edema
+T4	Medical-Anatomy 402 407;409 418	right lung base
+T5	Medical-Assertion 420 434	concerning for
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 435 444	pneumonia
+T7	Medical-Assertion 447 449	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 450 466	pleural effusion
+T9	Medical-Problem 470 482	pneumothorax
+T10	Medical-Problem 486 498	Cardiomegaly
+E7	Medical-Problem:T10
+T11	Medical-Problem 679 691	Cardiomegaly
+E8	Medical-Problem:T11
+T12	Medical-Problem 698 737	worsening pulmonary vascular congestion
+E9	Medical-Problem:T12
+T13	Medical-Assertion 740 742	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 743 748;750 765	frank pulmonary edema
+T15	Medical-Problem 774 781	opacity
+T16	Medical-Anatomy 789 804	right lung base
+T17	Medical-Assertion 808 822	concerning for
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 823 832	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

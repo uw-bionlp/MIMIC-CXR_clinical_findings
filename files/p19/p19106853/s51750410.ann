@@ -1,0 +1,34 @@
+T1	Medical-Assertion 199 201	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 202 207	cough
+T3	Medical-Problem 211 214	f/c
+T4	Medical-Assertion 216 218	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 219 223	rash
+T6	Medical-Assertion 358 363	clear
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 367 375	airspace
+T8	Medical-Problem 379 399	interstitial opacity
+T9	Medical-Problem 454 463	unfolding
+T10	Medical-Anatomy 471 485	thoracic aorta
+T11	Medical-Problem 491 514	moderate calcifications
+T12	Medical-Anatomy 522 533	aortic arch
+T13	Medical-Assertion 536 538	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 539 546	pleural
+E10	Medical-Problem:T14
+T15	Medical-Problem 547 556	effusions
+T16	Medical-Problem 561 573	pneumothorax
+T17	Medical-Assertion 594 596	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 597 602	acute
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T1 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T13
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

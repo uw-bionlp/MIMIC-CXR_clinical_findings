@@ -1,0 +1,26 @@
+T1	Medical-Problem 391 422	Lung volumes are somewhat lower
+E1	Medical-Problem:T1
+T2	Medical-Problem 437 452;454 465	crowding of the vasculature
+E2	Medical-Problem:T2
+T3	Medical-Problem 478 504	patchy bibasilar opacities
+E3	Medical-Problem:T3
+T4	Medical-Assertion 511 522	may reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 523 529;531 542	patchy atelectasis
+T6	Medical-Problem 553 563	aspiration
+T7	Medical-Problem 567 576	pneumonia
+T8	Medical-Assertion 577 602	should also be considered
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 605 607	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 609 630	overt pulmonary edema
+T11	Medical-Assertion 633 635	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 636 654	large pneumothorax
+T13	Medical-Problem 702 717	pneumothorax is
+E9	Medical-Problem:T13
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

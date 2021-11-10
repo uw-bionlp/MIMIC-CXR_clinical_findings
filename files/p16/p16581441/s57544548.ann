@@ -1,0 +1,21 @@
+T1	Lesion-Anatomy 383 399	right upper lobe
+T2	Lesion-Size 406 412	2.4 cm
+T3	Lesion-Description 413 430	mass-like opacity
+T4	Lesion-Characteristic 483 501	rounded appearance
+T5	Medical-Assertion 543 556	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 558 575	rounded pneumonia
+T7	Medical-Problem 669 678	infection
+E6	Medical-Problem:T7
+T8	Medical-Assertion 833 844	No evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 849 861	pneumothorax
+T10	Medical-Problem 865 880	pulmonary edema
+T11	Medical-Assertion 883 885	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 886 903	pleural effusions
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T1 has-Lesion-Size-Present:T2 has-Lesion-Characteristic:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

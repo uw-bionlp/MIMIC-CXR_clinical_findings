@@ -1,0 +1,25 @@
+T1	Medical-Assertion 34 36	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 37 66	acute cardiopulmonary process
+T3	Medical-Problem 453 458;460 483	small region of consolidation
+T4	Medical-Anatomy 491 525	anterior aspect of the lower lobes
+T5	Lesion-Assertion 562 570	possible
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 571 577	nodule
+T7	Lesion-Anatomy 578 583	above
+T8	Lesion-Anatomy 588 599	aortic arch
+T9	Medical-Assertion 610 612	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 614 630	pleural effusion
+T11	Medical-Problem 634 646	pneumothorax
+T12	Medical-Problem 727 750	region of consolidation
+T13	Medical-Anatomy 758 792	anterior aspect of the lower lobes
+T14	Lesion-Description 809 815	nodule
+T15	Lesion-Anatomy 816 821	above
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Lesion-Description:T6 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Lesion-Description:T14 has-Lesion-Anatomy:T15

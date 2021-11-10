@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 244 260	right upper lobe
+T2	Medical-Problem 266 282;284 297	persistent dense consolidation
+T3	Medical-Problem 410 440	Atherosclerotic calcifications
+T4	Medical-Anatomy 455 466	aortic arch
+T5	Lesion-Anatomy 475 486	mediastinal
+T6	Lesion-Anatomy 491 496	hilar
+T7	Lesion-Description 497 507	adenopathy
+T8	Medical-Problem 556 584	Mid thoracic dextroscoliosis
+E8	Medical-Problem:T8
+T9	Medical-Problem 719 742	degree of consolidation
+T10	Medical-Anatomy 750 766	right upper lung
+T11	Medical-Problem 773 789	residual opacity
+T12	Lesion-Characteristic 815 825	underlying
+T13	Lesion-Description 826 830	mass
+T14	Lesion-Characteristic 836 846	additional
+T15	Medical-Problem 897 906	infection
+T16	Medical-Assertion 907 915	possible
+A1	Medical-AssertionValue T16 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T11 has-Medical-Anatomy:T10
+E13	Lesion-Description:T13 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T14
+E15	Medical-Problem:T15 has-Medical-Anatomy:T10 has-Medical-Assertion:T16

@@ -1,0 +1,47 @@
+T1	Medical-Problem 222 232	prominence
+T2	Medical-Anatomy 240 251	mediastinum
+T3	Medical-Assertion 259 274	could relate to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 293 316	mediastinal lipomatosis
+T5	Lesion-Characteristic 372 382	underlying
+T6	Lesion-Description 383 398	lymphadenopathy
+T7	Medical-Problem 402 427	other mediastinal process
+T8	Medical-Assertion 431 443	not excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 451 481	cardiac silhouette is enlarged
+E7	Medical-Problem:T9
+T10	Medical-Problem 494 510	low lung volumes
+E8	Medical-Problem:T10
+T11	Medical-Assertion 561 563	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 564 592	discrete focal consolidation
+T13	Medical-Assertion 613 615	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 616 632	pleural effusion
+T15	Medical-Problem 636 648	pneumothorax
+T16	Medical-Problem 655 675	degenerative changes
+E12	Medical-Problem:T16
+T17	Medical-Problem 719 729	Prominence
+T18	Medical-Anatomy 737 748	mediastinum
+T19	Medical-Assertion 749 759	may be due
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 789 823	underlying mediastinal lipomatosis
+T21	Lesion-Description 876 891	lymphadenopathy
+E16	Lesion-Description:T21
+T22	Medical-Problem 895 920	other mediastinal process
+T23	Medical-Assertion 921 933	not excluded
+A6	Medical-AssertionValue T23 possible
+T24	Medical-Assertion 936 938	No
+A7	Medical-AssertionValue T24 absent
+T25	Medical-Problem 940 968	definite focal consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T22 has-Medical-Anatomy:T18 has-Medical-Assertion:T19 has-Medical-Assertion:T23
+E18	Medical-Problem:T25 has-Medical-Assertion:T24

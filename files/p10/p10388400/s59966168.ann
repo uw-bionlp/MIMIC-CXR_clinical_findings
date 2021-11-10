@@ -1,0 +1,26 @@
+T1	Medical-Problem 584 592;594 625	small to moderate right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 647 665	Airspace opacities
+T3	Medical-Anatomy 674 684	right base
+T4	Medical-Problem 803 825;827 843	small to moderate left pleural effusion
+E4	Medical-Problem:T4
+T5	Medical-Problem 863 887	Left lower lobe collapse
+E5	Medical-Problem:T5
+T6	Medical-Problem 908 929	Moderate cardiomegaly
+E6	Medical-Problem:T6
+T7	Medical-Assertion 986 995	Suspected
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 996 1010	new aspiration
+T9	Medical-Problem 1014 1023	infection
+T10	Medical-Anatomy 1031 1046	right lung base
+T11	Medical-Assertion 1047 1055	possibly
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1065 1097	increased right pleural effusion
+T13	Medical-Problem 1102 1130	Stable left pleural effusion
+E11	Medical-Problem:T13
+T14	Medical-Problem 1136 1160	left lower lobe collapse
+E12	Medical-Problem:T14
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E7	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

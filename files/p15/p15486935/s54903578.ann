@@ -1,0 +1,23 @@
+T1	Medical-Problem 350 367	pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 371 379	Multiple
+E2	Medical-Problem:T2
+T3	Medical-Problem 380 410	anterior compression fractures
+T4	Medical-Anatomy 418 432	thoracic spine
+T5	Medical-Problem 438 444;446 464	slight increased kyphosis
+T6	Medical-Problem 491 504	Circumscribed
+E6	Medical-Problem:T6
+T7	Lesion-Characteristic 505 514	sclerotic
+T8	Lesion-Description 515 521	lesion
+T9	Lesion-Anatomy 530 543	right humerus
+T10	Lesion-Assertion 544 550	likely
+A1	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 553 564	bone island
+T12	Medical-Assertion 585 587	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 588 617	acute cardiopulmonary process
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

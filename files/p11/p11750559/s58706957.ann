@@ -1,0 +1,17 @@
+T1	Medical-Anatomy 316 325	left lung
+T2	Medical-Problem 336 367	chronically elevated, paralyzed
+T3	Medical-Problem 406 423	basal atelectasis
+T4	Medical-Anatomy 424 444;446 451	both on the left and right
+T5	Medical-Problem 456 464	worsened
+E5	Medical-Problem:T5
+T6	Medical-Problem 502 510	engorged
+E6	Medical-Problem:T6
+T7	Medical-Anatomy 533 543	right lung
+T8	Medical-Assertion 547 557	do not see
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 558 563	edema
+T10	Medical-Problem 626 653	elevated left hemidiaphragm
+E9	Medical-Problem:T10
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

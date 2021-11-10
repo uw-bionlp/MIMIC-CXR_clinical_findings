@@ -1,0 +1,17 @@
+T1	Medical-Problem 293 321	large right pleural effusion
+T2	Medical-Problem 327 349;351 362	associated compressive atelectasis
+T3	Medical-Anatomy 370 404	right middle and right lower lobes
+T4	Medical-Anatomy 413 429;431 451	lower portion of the right upper lobe
+T5	Medical-Problem 471 479	effusion
+E5	Medical-Problem:T5
+T6	Medical-Assertion 603 605	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 606 618	pneumothorax
+T8	Medical-Problem 675 707	New large right pleural effusion
+T9	Medical-Problem 713 747	associated compressive atelectasis
+T10	Medical-Anatomy 756 784	right middle and lower lobes
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10

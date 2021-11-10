@@ -1,0 +1,20 @@
+T1	Medical-Problem 299 308	Opacities
+T2	Medical-Anatomy 323 346	left mid and lower lung
+T3	Medical-Problem 413 423	aspiration
+T4	Medical-Problem 427 446;448 457	rapidly progressing pneumonia
+T5	Medical-Assertion 506 517	no evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 522 534	pneumothorax
+T7	Medical-Problem 555 572	Increased opacity
+T8	Medical-Anatomy 580 603	left mid and lower lung
+T9	Medical-Assertion 604 617	worrisome for
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 618 628	aspiration
+T11	Medical-Problem 633 662	rapidly progressing pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

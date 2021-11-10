@@ -1,0 +1,20 @@
+T1	Medical-Problem 202 243	Severe multifocal pulmonary consolidation
+T2	Medical-Anatomy 253 279;281 305	all lobes, most profoundly the left upper and lower
+T3	Medical-Anatomy 334 350	right upper lobe
+T4	Medical-Problem 357 381	worsened everywhere else
+E4	Medical-Problem:T4
+T5	Medical-Problem 384 412	Pleural effusion on the left
+E5	Medical-Problem:T5
+T6	Medical-Problem 485 505	adjacent abnormality
+T7	Medical-Anatomy 514 529	left hemithorax
+T8	Medical-Problem 535 579	similarly juxtahilar pulmonary consolidation
+E8	Medical-Problem:T8
+T9	Lesion-Anatomy 624 629	hilar
+T10	Lesion-Description 630 635	lymph
+T11	Medical-Assertion 644 646	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 647 659	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E10	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11

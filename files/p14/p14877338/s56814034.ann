@@ -1,0 +1,55 @@
+T1	Medical-Problem 113 125	intracranial
+E1	Medical-Problem:T1
+T2	Medical-Problem 142 150;152 164	vascular malformation
+T3	Medical-Anatomy 172 179	medulla
+T4	Medical-Assertion 457 459	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 460 472	pneumothorax
+T6	Medical-Problem 475 490;492 520	Small bilateral pleural effusions associated
+E5	Medical-Problem:T6
+T7	Medical-Problem 526 546	adjacent atelectases
+E6	Medical-Problem:T7
+T8	Medical-Problem 578 595	Extensive opacity
+T9	Medical-Anatomy 603 613	right lung
+T10	Medical-Anatomy 651 667	right lower lobe
+T11	Lesion-Description 672 679	nodular
+E10	Lesion-Description:T11
+T12	Lesion-Description 680 689	opacities
+T13	Lesion-Anatomy 697 724	periphery of the right lung
+T14	Medical-Problem 746 768	interstitial opacities
+E13	Medical-Problem:T14
+T15	Medical-Problem 773 796	haziness of the vessels
+E14	Medical-Problem:T15
+T16	Medical-Assertion 816 831	could be due to
+A2	Medical-AssertionValue T16 possible
+T17	Medical-Problem 832 858	asymmetric pulmonary edema
+T18	Medical-Assertion 864 883;885 889	could be associated with
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 890 901	atelectasis
+T20	Medical-Anatomy 909 925	right lower lobe
+T21	Medical-Problem 928 940	Hazy opacity
+T22	Medical-Anatomy 948 959;961 965	right upper lobe
+T23	Medical-Assertion 966 981	could be due to
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 982 992	aspiration
+T25	Medical-Problem 1022 1034	irregularity
+T26	Medical-Anatomy 1043 1064	left perihilar region
+T27	Medical-Problem 1079 1110	multiple plate-like atelectases
+T28	Medical-Problem 1115 1123	scarring
+T29	Medical-Anatomy 1131 1144	left mid lung
+T30	Medical-Problem 1192 1205	constellation
+E26	Medical-Problem:T30
+T31	Lesion-Description 1251 1258;1260 1269	nodular opacities
+T32	Lesion-Anatomy 1277 1287	right lung
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E11	Lesion-Description:T12 has-Lesion-Anatomy:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Anatomy:T20
+E16	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Anatomy:T20
+E18	Medical-Problem:T21 has-Medical-Anatomy:T22
+E20	Medical-Problem:T24 has-Medical-Anatomy:T22 has-Medical-Assertion:T23
+E21	Medical-Problem:T25 has-Medical-Anatomy:T26
+E23	Medical-Problem:T27 has-Medical-Anatomy:T29
+E24	Medical-Problem:T28 has-Medical-Anatomy:T29
+E27	Lesion-Description:T31 has-Lesion-Anatomy:T32

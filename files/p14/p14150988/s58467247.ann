@@ -1,0 +1,25 @@
+T1	Medical-Problem 289 324	new perihilar and basilar opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 329 342	worrisome for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 344 376	mild to moderate pulmonary edema
+T4	Medical-Problem 390 399	infection
+T5	Medical-Anatomy 470 485	left lower lobe
+T6	Medical-Assertion 494 497;499 506	may also be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 507 542	small pleural effusions posteriorly
+T8	Medical-Anatomy 613 622	Perihilar
+T9	Medical-Problem 623 644	and basilar opacities
+T10	Medical-Assertion 645 658	worrisome for
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 659 685;687 692	mild to moderate pulmonary edema
+T12	Medical-Problem 694 714	underlying infection
+T13	Medical-Assertion 715 727	not excluded
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Anatomy 786 801	left lower lobe
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T8 has-Medical-Anatomy:T14
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10 has-Medical-Assertion:T13 has-Medical-Anatomy:T14

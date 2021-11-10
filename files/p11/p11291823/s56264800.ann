@@ -1,0 +1,15 @@
+T1	Medical-Problem 401 420	persistent collapse
+T2	Medical-Anatomy 428 433;435 457	right middle and lower lobes
+T3	Medical-Problem 480 490	prominence
+T4	Medical-Anatomy 498 507;509 530	pulmonary interstitial markings
+T5	Medical-Assertion 531 544	suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 545 581	mild pulmonary edema, more confluent
+T7	Medical-Anatomy 594 613	left mid lung field
+T8	Medical-Assertion 626 628	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 629 643	pneumothoraces
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

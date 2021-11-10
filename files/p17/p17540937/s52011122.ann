@@ -1,0 +1,24 @@
+T1	Medical-Assertion 266 268	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 269 286	pleural effusions
+T3	Medical-Problem 290 302	pneumothorax
+T4	Medical-Problem 315 349	mild central peribronchial cuffing
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 371 381;383 390	suprahilar regions
+T6	Medical-Problem 405 430	streaky perihilar opacity
+T7	Medical-Anatomy 438 454	right upper lung
+T8	Medical-Assertion 461 463	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 464 492	definite focal consolidation
+T10	Medical-Assertion 558 568	suggesting
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 569 594	lower airway inflammation
+T12	Medical-Assertion 599 601	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 602 607;609 622	focal consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

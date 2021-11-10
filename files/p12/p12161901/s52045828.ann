@@ -1,0 +1,41 @@
+T1	Lesion-Description 196 203;205 214	Nodular opacities
+T2	Lesion-Anatomy 235 248	left apex and
+T3	Lesion-Anatomy 273 282;284 298	right mid and lower lung
+T4	Medical-Assertion 368 370	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 371 387	pleural effusion
+T6	Medical-Assertion 398 400	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 401 413	pneumothorax
+T8	Medical-Assertion 891 893	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 894 923	acute cardiopulmonary process
+T10	Lesion-Size 925 930	Small
+T11	Lesion-Description 931 938	nodular
+E8	Lesion-Description:T11
+T12	Lesion-Description 946 955	opacities
+T13	Lesion-Anatomy 978 1008	right peripheral lung and apex
+T14	Medical-Problem 1115 1121;1123 1137	linear  calcification
+T15	Medical-Anatomy 1156 1176	left cardiac contour
+T16	Medical-Assertion 1177 1190	may represent
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1191 1202;1204 1218	pericardial  calcification
+T18	Medical-Problem 1674 1683	opacities
+T19	Medical-Anatomy 1705 1718	left apex and
+T20	Medical-Anatomy 1743 1762;1764 1768	right mid and lower lung
+T21	Medical-Assertion 1836 1838	no
+A5	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1840 1856	pleural effusion
+T23	Medical-Assertion 1867 1869	no
+A6	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1870 1882	pneumothorax
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T22 has-Medical-Assertion:T21
+E18	Medical-Problem:T24 has-Medical-Assertion:T23

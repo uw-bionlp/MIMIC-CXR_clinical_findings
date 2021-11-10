@@ -1,0 +1,59 @@
+T1	Medical-Problem 276 310	Heart size remains mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 317 334	aorta is tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 340 351	enlargement
+T4	Medical-Anatomy 360 381	main pulmonary artery
+T5	Medical-Assertion 391 404	suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 405 434;436 448	underlying pulmonary arterial hypertension
+T7	Medical-Anatomy 451 456	Lungs
+T8	Medical-Problem 461 508	hyperinflated with severe emphysematous changes
+T9	Medical-Assertion 524 526	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 527 542	pulmonary edema
+T11	Medical-Problem 561 580	Patchy and somewhat
+E9	Medical-Problem:T11
+T12	Lesion-Description 590 599	opacities
+T13	Lesion-Anatomy 611 627	right upper lobe
+T14	Medical-Anatomy 646 650	both
+T15	Medical-Assertion 664 678	likely reflect
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 679 724	areas of bronchiectasis with mucoid impaction
+T17	Medical-Problem 726 740	bronchial wall
+T18	Medical-Problem 742 752	thickening
+E15	Medical-Problem:T18
+T19	Medical-Problem 758 770	inflammation
+E16	Medical-Problem:T19
+T20	Medical-Problem 885 894	opacities
+T21	Medical-Anatomy 903 913	lung bases
+T22	Medical-Assertion 939 941	No
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 942 964	large pleural effusion
+T24	Medical-Problem 969 981	pneumothorax
+T25	Medical-Problem 1013 1060	Worsening patchy and somewhat nodular opacities
+T26	Medical-Anatomy 1064 1079	both lung bases
+T27	Medical-Assertion 1086 1089;1091 1098	may reflect
+A5	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1099 1138	exacerbation of chronic airways disease
+T29	Lesion-Size-Trend 1161 1190	Relatively similar appearance
+A6	Lesion-Size-TrendValue T29 no-change
+T30	Lesion-Characteristic 1194 1200	patchy
+T31	Lesion-Characteristic 1205 1212	nodular
+T32	Lesion-Description 1213 1222	opacities
+T33	Lesion-Anatomy 1230 1235;1237 1247	right upper lobe
+T34	Medical-Problem 1250 1266	Severe emphysema
+E28	Medical-Problem:T34
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T24 has-Medical-Assertion:T22
+E21	Medical-Problem:T25 has-Medical-Anatomy:T26
+E23	Medical-Problem:T28 has-Medical-Anatomy:T26 has-Medical-Assertion:T27
+E26	Lesion-Description:T32 has-Lesion-Size-Trend:T29 has-Lesion-Characteristic:T30 has-Lesion-Characteristic:T31 has-Lesion-Anatomy:T33

@@ -1,0 +1,31 @@
+T1	Medical-Problem 257 278	Chronic consolidation
+T2	Medical-Anatomy 286 301	left lower lobe
+T3	Medical-Problem 317 325;327 344	leftward mediastinal shift
+T4	Medical-Assertion 368 376	probably
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 377 388	atelectasis
+T6	Medical-Problem 391 395;397 415	Less severe atelectasis
+T7	Medical-Anatomy 423 433	right base
+T8	Medical-Problem 491 516	Pleural effusion is small
+E7	Medical-Problem:T8
+T9	Medical-Assertion 541 543	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 544 556	pneumothorax
+T11	Medical-Problem 581 604	Heterogeneous opacities
+T12	Medical-Anatomy 612 628	right upper lobe
+T13	Medical-Assertion 674 682	could be
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 683 694	atelectasis
+T15	Medical-Problem 748 768	developing pneumonia
+E12	Medical-Problem:T15
+T16	Medical-Assertion 823 831	possible
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 832 847;849 863	new right upper lobe pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,24 @@
+T1	Medical-Problem 400 441	large distended, gas-filled loop of bowel
+E1	Medical-Problem:T1
+T2	Medical-Problem 564 579	mild dilatation
+T3	Medical-Anatomy 587 596	esophagus
+T4	Medical-Problem 599 608	Opacities
+T5	Medical-Anatomy 626 677	right upper lung and bases of the lungs bilaterally
+T6	Medical-Assertion 689 691	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 692 714	large pleural effusion
+T8	Medical-Problem 718 730	pneumothorax
+T9	Medical-Problem 873 882	Opacities
+T10	Medical-Anatomy 890 900	lung bases
+T11	Medical-Assertion 901 917	may be secondary
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 921 941	aspiration/pneumonia
+T13	Medical-Problem 949 983	Gas-filled distended loop of bowel
+T14	Medical-Anatomy 984 1013	traversing across the abdomen
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14

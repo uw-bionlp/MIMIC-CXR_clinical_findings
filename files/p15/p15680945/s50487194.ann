@@ -1,0 +1,14 @@
+T1	Medical-Problem 337 353	Severe pneumonia
+T2	Medical-Anatomy 362 371	left lung
+T3	Medical-Problem 410 431;433 471	Chronically collapsed right upper lung is still consolidated
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 479 506	Remainder of the right lung
+T5	Medical-Problem 514 524	mild edema
+T6	Medical-Assertion 627 629	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 630 642	pneumothorax
+T8	Medical-Problem 645 663;665 673	Small left pleural effusion
+E7	Medical-Problem:T8
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6

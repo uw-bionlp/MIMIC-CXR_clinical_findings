@@ -1,0 +1,19 @@
+T1	Medical-Problem 302 310;312 340	interval worsening of pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Assertion 783 785	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 786 798	pneumothorax
+T4	Medical-Problem 816 846	Interval increase in opacities
+T5	Medical-Anatomy 854 880	bilateral lower lung zones
+T6	Medical-Assertion 883 896	likely due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 897 922	worsening pulmonary edema
+T8	Medical-Problem 935 950	minimal, if any
+E6	Medical-Problem:T8
+T9	Medical-Assertion 995 997	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 998 1010	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

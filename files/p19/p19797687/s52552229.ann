@@ -1,0 +1,25 @@
+T1	Medical-Problem 281 292	new opacity
+T2	Medical-Anatomy 303 319	right upper lobe
+T3	Medical-Problem 325 333;335 354	adjacent fissural thickening
+T4	Lesion-Anatomy 361 370	pulmonary
+T5	Lesion-Description 371 378	nodules
+T6	Medical-Assertion 536 538	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 539 555	pleural effusion
+T8	Medical-Problem 560 572	pneumothorax
+T9	Medical-Problem 590 607	New small opacity
+T10	Medical-Anatomy 623 655;657 664	right upper lobe along the minor fissure
+T11	Medical-Assertion 675 689	concerning for
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 690 699	pneumonia
+T13	Lesion-Description 738 745	nodules
+T14	Lesion-Assertion 756 759	not
+A3	Lesion-AssertionValue T14 absent
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T13 has-Lesion-Assertion:T14

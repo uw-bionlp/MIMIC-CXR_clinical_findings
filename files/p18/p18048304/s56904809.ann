@@ -1,0 +1,34 @@
+T1	Medical-Problem 230 254	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 322 344	moderate calcification
+T3	Medical-Anatomy 353 364	aortic knob
+T4	Medical-Problem 367 399	Extensive interstitial opacities
+T5	Medical-Anatomy 412 423;425 482	both lungs, most extensively in the right lung base and left mid lung
+T6	Medical-Assertion 506 521	could represent
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 522 555	chronic interstitial lung disease
+T8	Medical-Problem 557 574;576 591	superimposed mild pulmonary edema
+T9	Medical-Assertion 659 661	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 662 685	large pleural effusions
+T11	Medical-Problem 689 701	pneumothorax
+T12	Medical-Problem 728 764	Extensive interstitial abnormalities
+T13	Medical-Anatomy 768 778	both lungs
+T14	Medical-Problem 785 789;791 808	more confluent opacity
+T15	Medical-Anatomy 816 845	right lower and left mid lung
+T16	Medical-Assertion 869 883	likely reflect
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 884 917	chronic interstitial lung disease
+T18	Medical-Problem 919 936;938 956	superimposed mild interstitial edema
+T19	Medical-Assertion 960 980	difficult to exclude
+A4	Medical-AssertionValue T19 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16 has-Medical-Assertion:T19

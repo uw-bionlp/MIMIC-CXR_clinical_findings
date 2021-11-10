@@ -1,0 +1,18 @@
+T1	Medical-Problem 214 231	New opacification
+T2	Medical-Anatomy 239 254	left lower lobe
+T3	Medical-Anatomy 270 288	left hemidiaphragm
+T4	Medical-Problem 306 340	mild leftward cardiac displacement
+T5	Medical-Problem 351 365;367 375	new lower lobe collapse
+T6	Medical-Problem 522 529;531 539	Pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Assertion 557 559	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 560 572	pneumothorax
+T9	Medical-Assertion 717 719	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 720 732	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

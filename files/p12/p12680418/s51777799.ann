@@ -1,0 +1,25 @@
+T1	Medical-Assertion 246 248	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 249 265	pleural effusion
+T3	Medical-Problem 269 281	pneumothorax
+T4	Medical-Problem 284 299	Minimal opacity
+T5	Medical-Anatomy 307 323	right lower lung
+T6	Medical-Assertion 347 369	potentially concerning
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 374 392	infectious process
+T8	Medical-Assertion 405 416	no evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 420 444	free intraperitoneal air
+T10	Medical-Problem 447 458	Atelectasis
+T11	Medical-Assertion 459 467	might be
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 505 521	right lower lobe
+E8	Medical-Problem:T12
+T13	Medical-Problem 522 529	opacity
+E9	Medical-Problem:T13
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T11

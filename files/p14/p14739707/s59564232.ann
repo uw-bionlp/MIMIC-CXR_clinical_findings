@@ -1,0 +1,46 @@
+T1	Medical-Anatomy 394 401	cardiac
+T2	Medical-Problem 417 434	somewhat obscured
+T3	Medical-Problem 440 484	moderate to large fluid-filled hiatal hernia
+E3	Medical-Problem:T3
+T4	Medical-Problem 497 506	elevation
+T5	Medical-Anatomy 514 533	right hemidiaphragm
+T6	Medical-Problem 588 617	Lung volumes are somewhat low
+E6	Medical-Problem:T6
+T7	Medical-Problem 620 627	Opacity
+T8	Medical-Anatomy 635 651;653 657	base of the left lung
+T9	Medical-Assertion 661 667	likely
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 668 691	compressive atelectasis
+T11	Medical-Problem 717 723	hernia
+T12	Medical-Problem 733 753	underlying infection
+T13	Medical-Assertion 754 774	should be considered
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Assertion 777 779	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 780 798	pneumothorax.There
+T16	Medical-Problem 802 808;810 822	marked levoscliosis
+T17	Medical-Anatomy 830 844	thoracic spine
+T18	Medical-Problem 883 902	large hiatal hernia
+E15	Medical-Problem:T18
+T19	Medical-Problem 907 933	adjacent pulmonary opacity
+E16	Medical-Problem:T19
+T20	Medical-Assertion 940 943;945 952	may reflect
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 953 976	compressive atelectasis
+T22	Medical-Problem 980 989	infection
+T23	Medical-Anatomy 1017 1036	right hemidiaphragm
+E19	Medical-Anatomy:T23
+T24	Medical-Assertion 1039 1041	No
+A5	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1042 1054	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T20
+E20	Medical-Problem:T25 has-Medical-Assertion:T24

@@ -1,0 +1,15 @@
+T1	Medical-Problem 398 418	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 428 440;442 468	minimal area of atelectasis bilaterally
+E2	Medical-Problem:T2
+T3	Medical-Assertion 471 493	No definitive evidence
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 497 506	infection
+T5	Medical-Anatomy 526 541	left lower lobe
+T6	Medical-Assertion 550 563	might reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 564 584	developing infection
+T8	Medical-Problem 591 602	atelectasis
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6

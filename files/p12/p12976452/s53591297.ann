@@ -1,0 +1,25 @@
+T1	Medical-Problem 248 256	widening
+T2	Medical-Anatomy 264 275	mediastinum
+T3	Medical-Problem 337 348	volume loss
+T4	Medical-Anatomy 356 372	right lower lobe
+T5	Medical-Problem 380 391;393 409	small right pleural effusion
+T6	Medical-Problem 414 436	associated atelectasis
+T7	Medical-Assertion 439 441	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 442 454	pneumothorax
+T9	Medical-Assertion 505 507	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 508 520	pneumothorax
+T11	Medical-Problem 525 553	Small right pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 558 566	Widening
+T13	Medical-Anatomy 574 585	mediastinum
+T14	Lesion-Description 593 608	lymphadenopathy
+E12	Lesion-Description:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13

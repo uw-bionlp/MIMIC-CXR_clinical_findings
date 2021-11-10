@@ -1,0 +1,35 @@
+T1	Medical-Problem 430 446	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Assertion 458 460	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 461 480	focal consolidation
+T4	Medical-Assertion 493 504	no evidence
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 508 537	pulmonary vascular congestion
+T6	Medical-Problem 541 556	pulmonary edema
+T7	Medical-Assertion 560 568	Possible
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 569 602	left lung base pleural thickening
+T9	Lesion-Size 617 622	small
+T10	Lesion-Characteristic 623 632	calcified
+T11	Lesion-Description 634 643	granuloma
+T12	Lesion-Anatomy 665 681	right upper lung
+T13	Medical-Assertion 692 694	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 695 707	pneumothorax
+T15	Medical-Problem 712 728	pleural effusion
+T16	Medical-Assertion 768 770	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 771 790	focal consolidation
+T18	Medical-Assertion 865 867	No
+A6	Medical-AssertionValue T18 absent
+T19	Medical-Problem 868 880	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T19 has-Medical-Assertion:T18

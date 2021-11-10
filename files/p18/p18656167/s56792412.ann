@@ -1,0 +1,21 @@
+T1	Medical-Problem 307 339	some peribronchial opacification
+T2	Medical-Anatomy 348 364	right lower lung
+T3	Lesion-Assertion 389 399	suggestion
+A1	Lesion-AssertionValue T3 possible
+T4	Medical-Problem 405 413;415 428	focus of consolidation
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 439 443	lung
+T6	Lesion-Description 444 450	nodule
+T7	Lesion-Anatomy 451 487	anterior to the lower thoracic spine
+T8	Medical-Anatomy 589 594	hilar
+E7	Medical-Anatomy:T8
+T9	Lesion-Assertion 673 679	not of
+A2	Lesion-AssertionValue T9 absent
+T10	Lesion-Description 699 709	adenopathy
+T11	Medical-Assertion 746 748	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 749 765	pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

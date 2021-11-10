@@ -1,0 +1,39 @@
+T1	Medical-Problem 270 293	increased opacification
+T2	Medical-Anatomy 301 323	left mid to lower lung
+T3	Medical-Assertion 324 334	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 335 344	pneumonia
+T5	Medical-Anatomy 403 422;424 443	superior segment of the left lower lobe
+T6	Medical-Problem 456 493	similar mild interstitial abnormality
+T7	Medical-Anatomy 505 515	both lungs
+T8	Medical-Assertion 522 544	alternatively suggests
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 545 565	mild pulmonary edema
+T10	Medical-Assertion 577 579	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 580 605	definite pleural effusion
+T12	Medical-Problem 609 621	pneumothorax
+T13	Medical-Problem 623 638	Sclerotic bones
+E10	Medical-Problem:T13
+T14	Medical-Assertion 639 646	suggest
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 647 652;654 668	renal osteodystrophy
+T16	Medical-Assertion 701 711	suggesting
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 712 721	pneumonia
+T18	Medical-Anatomy 729 738	left lung
+T19	Medical-Anatomy 797 836	superior segment of the left lower lobe
+T20	Medical-Problem 845 885	Persistent mild interstitial abnormality
+E15	Medical-Problem:T20
+T21	Medical-Assertion 886 896	suggesting
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 897 917	mild pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Anatomy:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21

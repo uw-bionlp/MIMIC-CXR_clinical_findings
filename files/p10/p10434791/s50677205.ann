@@ -1,0 +1,19 @@
+T1	Medical-Problem 760 787	small left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 934 941	disease
+T3	Lesion-Description 945 955	malignancy
+T4	Lesion-Anatomy 966 970	lung
+T5	Medical-Assertion 976 982;984 995	cannot be excluded
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 1007 1009	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 1010 1022	pneumothorax
+T8	Medical-Problem 1052 1093	increased moderate right pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Problem 1106 1116;1118 1134	small left pleural effusion
+E7	Medical-Problem:T9
+T10	Lesion-Description 1194 1204	malignancy
+E8	Lesion-Description:T10
+E2	Medical-Problem:T2 has-Medical-Assertion:T5
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6

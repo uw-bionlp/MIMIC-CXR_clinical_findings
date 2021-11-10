@@ -1,0 +1,25 @@
+T1	Medical-Problem 203 231	large right pleural effusion
+T2	Lesion-Description 243 252	mass-like
+E2	Lesion-Description:T2
+T3	Medical-Anatomy 285 301	right upper lobe
+T4	Lesion-Anatomy 342 349	Central
+T5	Lesion-Anatomy 366 381	right perihilar
+T6	Lesion-Description 382 388	lesion
+T7	Lesion-Assertion 389 397	could be
+A1	Lesion-AssertionValue T7 possible
+T8	Lesion-Description 398 402	mass
+T9	Medical-Assertion 463 467	most
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 475 485	infectious
+T11	Medical-Assertion 564 571	suggest
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 572 602	central bronchogenic carcinoma
+T13	Medical-Assertion 634 651	could also be due
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 655 676	progressive infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

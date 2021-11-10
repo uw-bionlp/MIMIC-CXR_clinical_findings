@@ -1,0 +1,27 @@
+T1	Medical-Problem 318 327	elevation
+T2	Medical-Anatomy 335 340;342 355	right hemidiaphragm
+T3	Medical-Problem 367 387	retrocardiac opacity
+E3	Medical-Problem:T3
+T4	Medical-Problem 392 402	additional
+E4	Medical-Problem:T4
+T5	Medical-Problem 403 415;417 432	streaky left basilar opacity
+E5	Medical-Problem:T5
+T6	Medical-Problem 573 600	midthoracic dextroscoliosis
+E6	Medical-Problem:T6
+T7	Medical-Problem 607 637	bones are diffusely osteopenic
+E7	Medical-Problem:T7
+T8	Medical-Assertion 652 654	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 655 680	acute osseous abnormality
+T10	Medical-Problem 709 746	Retrocardiac and left basilar opacity
+E9	Medical-Problem:T10
+T11	Medical-Assertion 747 760	suggestive of
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 761 772	atelectasis
+T13	Medical-Problem 781 790	infection
+T14	Medical-Assertion 791 809	cannot be excluded
+A3	Medical-AssertionValue T14 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11 has-Medical-Assertion:T14

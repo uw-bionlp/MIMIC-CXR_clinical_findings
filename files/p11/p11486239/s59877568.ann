@@ -1,0 +1,22 @@
+T1	Medical-Problem 143 159	subcutaneous gas
+T2	Medical-Anatomy 171 223	right lateral chest wall and extending into the neck
+T3	Medical-Problem 255 277	Post-operative changes
+T4	Medical-Anatomy 300 310	right base
+T5	Medical-Problem 317 325	blunting
+T6	Medical-Anatomy 333 345	costophrenic
+T7	Medical-Problem 368 381	pleural fluid
+T8	Medical-Problem 386 390;392 410	some atelectatic change
+T9	Medical-Problem 450 461;463 472	supervening pneumonia
+E9	Medical-Problem:T9
+T10	Medical-Problem 520 530	prominence
+T11	Medical-Anatomy 538 556	cardiac silhouette
+T12	Medical-Assertion 557 564	without
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 565 583;585 595	pulmonary vascular congestion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T4
+E10	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

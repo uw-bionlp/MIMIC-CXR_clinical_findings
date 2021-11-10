@@ -1,0 +1,22 @@
+T1	Medical-Problem 400 410	Prominence
+T2	Medical-Anatomy 419 430	right hilum
+T3	Medical-Problem 451 468	Subtle prominence
+T4	Medical-Anatomy 472 493	perihilar vasculature
+T5	Medical-Assertion 495 508	may be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 509 533	mild vascular congestion
+T7	Medical-Problem 540 561	right basilar opacity
+E6	Medical-Problem:T7
+T8	Medical-Problem 630 651	Right basilar opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 705 707	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 708 730	large pleural effusion
+T11	Medical-Assertion 733 741	Possible
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 742 755;757 767	mild vascular congestion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

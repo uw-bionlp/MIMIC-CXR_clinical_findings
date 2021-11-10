@@ -1,0 +1,36 @@
+T1	Medical-Problem 280 287	Opacity
+T2	Medical-Anatomy 299 318	left mid lung field
+T3	Medical-Problem 324 334;336 351	associated rib destruction
+T4	Lesion-Anatomy 388 398	chest wall
+T5	Lesion-Description 399 403	mass
+T6	Medical-Problem 440 468	Severe emphysematous changes
+E6	Medical-Problem:T6
+T7	Medical-Problem 495 503	Scarring
+T8	Medical-Anatomy 515 531	right upper lobe
+T9	Medical-Assertion 586 588	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 589 605	pleural effusion
+T11	Medical-Problem 609 621	pneumothorax
+T12	Medical-Assertion 639 641	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 642 662	subdiaphragmatic air
+T14	Lesion-Anatomy 800 815	left chest wall
+T15	Lesion-Description 816 820	mass
+T16	Medical-Problem 827 843	severe emphysema
+E14	Medical-Problem:T16
+T17	Medical-Assertion 846 848	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 849 867	areas of pneumonia
+T19	Medical-Assertion 883 885	no
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 886 890;892 911	free intraperitoneal air
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

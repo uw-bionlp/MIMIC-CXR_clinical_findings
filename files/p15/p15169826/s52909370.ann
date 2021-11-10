@@ -1,0 +1,28 @@
+T1	Medical-Assertion 473 484	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 488 515	new pulmonary abnormalities
+T3	Medical-Anatomy 522 527	lungs
+T4	Medical-Assertion 539 555	without evidence
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 559 583	congestive heart failure
+T6	Medical-Problem 585 598	consolidation
+T7	Medical-Problem 600 616	pleural effusion
+T8	Medical-Problem 622 634	pneumothorax
+T9	Lesion-Assertion 698 700	no
+A3	Lesion-AssertionValue T9 absent
+T10	Lesion-Characteristic 701 711	concerning
+T11	Lesion-Characteristic 712 719	osseous
+T12	Lesion-Characteristic 723 734	soft tissue
+T13	Lesion-Description 735 742	lesions
+T14	Medical-Assertion 760 784	No radiographic evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 788 797	pneumonia
+T16	Medical-Problem 801 814;816 829	new pulmonary abnormalities
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E10	Lesion-Description:T13 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14

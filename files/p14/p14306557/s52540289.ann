@@ -1,0 +1,23 @@
+T1	Medical-Assertion 179 187	Question
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 188 213	migration of the catheter
+T3	Medical-Problem 380 406	indwelling left subclavian
+E2	Medical-Problem:T3
+T4	Medical-Problem 427 439;441 457	Stellate and linear opacities
+T5	Medical-Anatomy 465 476	lower lungs
+T6	Medical-Assertion 481 489	probably
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 490 507	areas of scarring
+T8	Medical-Assertion 520 522	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 523 538	pulmonary edema
+T10	Medical-Problem 542 558	pleural effusion
+T11	Medical-Assertion 581 583	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 584 596	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

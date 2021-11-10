@@ -1,0 +1,31 @@
+T1	Medical-Assertion 230 232	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 234 253	focal consolidation
+T3	Medical-Problem 255 263	effusion
+T4	Medical-Problem 267 279	pneumothorax
+T5	Lesion-Characteristic 376 381	vague
+T6	Lesion-Description 383 398	nodular opacity
+T7	Lesion-Anatomy 415 457;459 480	left mid lung between the eighth and ninth posterolateral arches
+T8	Lesion-Assertion 482 497	could represent
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Description 500 511	bone island
+T10	Medical-Problem 515 527;529 539	superimposed structures
+E8	Medical-Problem:T10
+T11	Lesion-Characteristic 599 605	Subtle
+T12	Lesion-Description 606 621	nodular opacity
+T13	Lesion-Anatomy 629 642	left mid lung
+T14	Lesion-Assertion 736 741;743 752	could represent
+A3	Lesion-AssertionValue T14 possible
+T15	Lesion-Description 755 766	bone island
+T16	Lesion-Description 770 782	superimposed
+E13	Lesion-Description:T16
+T17	Lesion-Anatomy 809 813	lung
+T18	Lesion-Description 814 820	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E7	Lesion-Description:T9 has-Lesion-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E12	Lesion-Description:T15 has-Lesion-Assertion:T14
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T17

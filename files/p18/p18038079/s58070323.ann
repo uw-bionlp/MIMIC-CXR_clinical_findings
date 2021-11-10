@@ -1,0 +1,30 @@
+T1	Medical-Problem 234 250	Fibrotic changes
+T2	Medical-Anatomy 288 308;310 319	lungs, right greater than left
+T3	Medical-Problem 325 347	associated volume loss
+T4	Medical-Anatomy 355 371	right hemithorax
+T5	Medical-Assertion 382 384	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 386 427	definite superimposed acute consolidation
+T7	Medical-Assertion 470 472	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 473 489	pleural effusion
+T9	Medical-Problem 493 505	pneumothorax
+T10	Medical-Problem 516 533	mild cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Problem 536 551	Chronic changes
+T12	Medical-Anatomy 565 579	right shoulder
+T13	Medical-Problem 584 609;611 619	old proximal left humeral fracture
+E11	Medical-Problem:T13
+T14	Medical-Problem 654 670	Fibrotic changes
+T15	Medical-Anatomy 678 702	lungs bilaterally, right
+T16	Medical-Assertion 721 728	without
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 730 775	definite superimposed cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

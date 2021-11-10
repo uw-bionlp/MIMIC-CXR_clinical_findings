@@ -1,0 +1,48 @@
+T1	Medical-Assertion 37 39	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 40 49	pneumonia
+T3	Medical-Problem 57 66	Emphysema
+E2	Medical-Problem:T3
+T4	Medical-Problem 70 107	chronic obstructive pulmonary disease
+E3	Medical-Problem:T4
+T5	Medical-Assertion 155 157	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 158 187	acute cardiopulmonary process
+T7	Medical-Assertion 204 206	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 207 216	pneumonia
+T9	Lesion-Characteristic 578 597	partially calcified
+T10	Lesion-Characteristic 598 603	ovoid
+T11	Lesion-Description 604 610	lesion
+T12	Lesion-Anatomy 621 642;644 655	anterior medial right middle lobe
+T13	Lesion-Size-Trend 659 668	unchanged
+A4	Lesion-Size-TrendValue T13 no-change
+T14	Lesion-Characteristic 714 723	calcified
+T15	Lesion-Anatomy 724 740	internal mammary
+T16	Lesion-Description 741 751	lymph node
+T17	Medical-Anatomy 758 763	lungs
+T18	Medical-Problem 768 788;790 794	mildly hyperinflated with
+E14	Medical-Problem:T18
+T19	Medical-Problem 795 805	flattening
+T20	Medical-Assertion 846 848	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 849 865	pleural effusion
+T22	Medical-Problem 870 882	pneumothorax
+T23	Medical-Assertion 967 969	No
+A6	Medical-AssertionValue T23 absent
+T24	Medical-Problem 970 979	pneumonia
+T25	Medical-Problem 985 994	Emphysema
+E19	Medical-Problem:T25
+T26	Medical-Problem 998 1017	chronic obstructive
+E20	Medical-Problem:T26
+T27	Medical-Problem 1042 1075	Calcified prevascular or internal
+E21	Medical-Problem:T27
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E12	Lesion-Description:T16 has-Lesion-Size-Trend:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15
+E15	Medical-Problem:T19 has-Medical-Anatomy:T17
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E17	Medical-Problem:T22 has-Medical-Assertion:T20
+E18	Medical-Problem:T24 has-Medical-Assertion:T23

@@ -1,0 +1,15 @@
+T1	Medical-Problem 376 402;404 412	stable large right pleural effusion
+T2	Medical-Problem 418 438	adjacent atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 440 465	multifocal consolidations
+T4	Medical-Anatomy 473 478;480 518	right upper, left upper and left lower lobes
+T5	Medical-Assertion 530 532	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 533 545	pneumothorax
+T7	Medical-Problem 584 615	Cardiomediastinum is unchanged,
+E6	Medical-Problem:T7
+T8	Medical-Problem 616 635;637 641	shifted towards the left
+E7	Medical-Problem:T8
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5

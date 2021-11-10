@@ -1,0 +1,42 @@
+T1	Medical-Problem 192 196;198 201	free air
+E1	Medical-Problem:T1
+T2	Medical-Problem 343 355;357 364	lung volumes are low
+E2	Medical-Problem:T2
+T3	Medical-Assertion 376 387	no evidence
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 391 415	intraperitoneal free air
+T5	Medical-Problem 418 432;434 440	Some air-fluid levels
+T6	Medical-Anatomy 461 472	small bowel
+T7	Medical-Assertion 484 495	no evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 499 506;508 516	pleural effusion
+T9	Medical-Problem 518 530	pneumothorax
+T10	Medical-Problem 535 562	significant pulmonary edema
+T11	Medical-Problem 625 661	small rectangular-shaped radiopacity
+T12	Medical-Anatomy 677 707	mid thoracic spine posteriorly
+T13	Medical-Assertion 709 728	likely representing
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 732 741	overlying
+E11	Medical-Problem:T14
+T15	Medical-Problem 743 746	rib
+T16	Medical-Assertion 764 775	No evidence
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 779 803	intraperitoneal free air
+T18	Medical-Problem 806 824;826 832	Multiple air-fluid levels
+T19	Medical-Anatomy 849 860	small bowel
+T20	Medical-Problem 863 886	Rectangular radiopacity
+T21	Medical-Anatomy 902 926	posterior thoracic spine
+T22	Medical-Assertion 927 944	likely represents
+A5	Medical-AssertionValue T22 possible
+T23	Medical-Problem 947 957	rib shadow
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21
+E18	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22

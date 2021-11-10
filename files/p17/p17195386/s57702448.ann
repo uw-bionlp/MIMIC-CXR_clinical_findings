@@ -1,0 +1,41 @@
+T1	Lesion-Anatomy 220 236	Right upper lobe
+T2	Lesion-Description 237 246	opacities
+T3	Lesion-Size 256 262	2.6 cm
+T4	Lesion-Description 289 296	nodules
+T5	Medical-Assertion 356 358	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 359 364;366 380	focal consolidations
+T7	Medical-Assertion 391 401	concerning
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 406 415	pneumonia
+T9	Lesion-Description 455 462	nodules
+T10	Lesion-Anatomy 470 486	right upper lobe
+T11	Medical-Assertion 487 501	may be related
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 505 513	atypical
+T13	Medical-Assertion 542 548	may be
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 551 579	small right pleural effusion
+T15	Medical-Problem 641 658	aorta is tortuous
+E11	Medical-Problem:T15
+T16	Medical-Assertion 660 662	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 664 676	pneumothorax
+T18	Lesion-Characteristic 697 706	Clustered
+T19	Lesion-Description 707 714	nodules
+T20	Lesion-Anatomy 722 737	left upper lobe
+T21	Lesion-Size-Trend 745 762	relatively stable
+A6	Lesion-Size-TrendValue T21 no-change
+T22	Medical-Assertion 777 790	may represent
+A7	Medical-AssertionValue T22 possible
+T23	Medical-Problem 791 799	atypical
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Size-Present:T3
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T1
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Lesion-Description:T19 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T20 has-Lesion-Size-Trend:T21
+E16	Medical-Problem:T23 has-Medical-Assertion:T22

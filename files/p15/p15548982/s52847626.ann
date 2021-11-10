@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 191 196	lungs
+T2	Medical-Assertion 201 206	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 210 229	focal consolidation
+T4	Medical-Problem 241 249	blunting
+T5	Medical-Anatomy 257 261;263 291	left posterior costophrenic angle
+T6	Medical-Assertion 298 311	may be due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 312 326	small effusion
+T8	Medical-Problem 331 342	atelectasis
+T9	Medical-Problem 353 374	moderate cardiomegaly
+E7	Medical-Problem:T9
+T10	Medical-Problem 433 436	air
+T11	Medical-Anatomy 448 460	right breast
+T12	Medical-Assertion 509 511	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 512 539	acute osseous abnormalities
+T14	Medical-Problem 571 583	Cardiomegaly
+E11	Medical-Problem:T14
+T15	Medical-Assertion 585 593	Possible
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 594 615	left pleural effusion
+T17	Medical-Problem 619 630	atelectasis
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15

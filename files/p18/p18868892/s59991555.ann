@@ -1,0 +1,60 @@
+T1	Medical-Problem 33 69	Generally stable diffuse abnormality
+E1	Medical-Problem:T1
+T2	Medical-Problem 84 107;109 145	slight patchy increased  right basilar nodular opacification
+E2	Medical-Problem:T2
+T3	Medical-Assertion 147 155	question
+A1	Medical-AssertionValue T3 possible
+T4	Lesion-Characteristic 156 165	advancing
+T5	Lesion-Description 166 176	malignancy
+T6	Medical-Problem 180 191	atelectasis
+T7	Medical-Problem 195 206	potentially
+E6	Medical-Problem:T7
+T8	Medical-Problem 207 229	superimposed infection
+T9	Medical-Problem 232 257;259 270	Slight increased apparent  heart size
+E8	Medical-Problem:T9
+T10	Medical-Problem 274 294	pericardial effusion
+T11	Medical-Assertion 295 314	could be considered
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 689 699;701 766	widespread interstitial abnormality with both reticular and nodular features
+E10	Medical-Problem:T12
+T13	Lesion-Characteristic 952 968	patchy increased
+T14	Lesion-Description 969 979	nodularity
+T15	Lesion-Anatomy 990 1006	right lower lung
+T16	Medical-Assertion 1080 1082	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1083 1090;1092 1100	pleural effusion
+T18	Medical-Problem 1104 1116	pneumothorax
+T19	Medical-Problem 1163 1183	Degenerative changes
+T20	Medical-Anatomy 1206 1220	thoracic spine
+T21	Medical-Anatomy 1270 1275	chest
+T22	Medical-Problem 1281 1299;1301 1312	widespread diffuse abnormality
+T23	Lesion-Description 1362 1376	carcinomatosis
+E20	Lesion-Description:T23
+T24	Lesion-Description 1393 1400	nodules
+E21	Lesion-Description:T24
+T25	Medical-Problem 1442 1448;1450 1481	patchy increased nodular opacification
+T26	Medical-Anatomy 1489 1505	right lower lung
+T27	Medical-Problem 1508 1520;1522 1531	Superimposed infection
+E24	Medical-Problem:T27
+T28	Medical-Problem 1586 1597	atelectasis
+E25	Medical-Problem:T28
+T29	Lesion-Description 1612 1622	malignancy
+E26	Lesion-Description:T29
+T30	Medical-Problem 1629 1666	heart size is also increased somewhat
+E27	Medical-Problem:T30
+T31	Medical-Assertion 1672 1683	potentially
+A4	Medical-AssertionValue T31 possible
+T32	Medical-Problem 1686 1706	pericardial effusion
+T33	Medical-Assertion 1707 1726	could be considered
+A5	Medical-AssertionValue T33 possible
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E7	Medical-Problem:T8 has-Medical-Assertion:T3
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T21
+E22	Medical-Problem:T25 has-Medical-Anatomy:T26
+E28	Medical-Problem:T32 has-Medical-Assertion:T31 has-Medical-Assertion:T33

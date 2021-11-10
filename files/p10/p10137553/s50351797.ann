@@ -1,0 +1,30 @@
+T1	Medical-Problem 272 278;280 294	stable hyperinflation
+T2	Medical-Anatomy 302 307	lungs
+T3	Medical-Problem 313 329	relative lucency
+T4	Medical-Anatomy 337 358	bilateral upper lungs
+T5	Medical-Problem 376 385	emphysema
+T6	Medical-Assertion 388 390	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 391 410	focal opacification
+T8	Medical-Assertion 411 425	concerning for
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 426 435	pneumonia
+T10	Medical-Problem 495 515;517 531	Aortic arch vascular calcifications
+E8	Medical-Problem:T10
+T11	Medical-Assertion 542 544	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 545 561	pleural effusion
+T13	Medical-Problem 565 577	pneumothorax
+T14	Medical-Problem 606 644	Stable background changes of emphysema
+E11	Medical-Problem:T14
+T15	Medical-Assertion 645 652	without
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 653 658;660 683	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

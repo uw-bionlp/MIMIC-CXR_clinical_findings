@@ -1,0 +1,24 @@
+T1	Medical-Problem 228 243;245 266	Scattered small ill-defined opacities
+T2	Medical-Anatomy 284 289	lungs
+T3	Medical-Anatomy 311 322;324 328	right upper lung
+T4	Medical-Problem 403 429	early multifocal pneumonia
+E4	Medical-Problem:T4
+T5	Medical-Assertion 432 434	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 435 443	effusion
+T7	Medical-Problem 447 459	pneumothorax
+T8	Medical-Assertion 538 540	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 541 545;547 550	free air
+T10	Medical-Anatomy 561 580	right hemidiaphragm
+T11	Medical-Problem 598 623	Scattered foci of opacity
+T12	Medical-Anatomy 635 654	right and left lung
+T13	Medical-Assertion 656 670	concerning for
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 674 700	early multifocal pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

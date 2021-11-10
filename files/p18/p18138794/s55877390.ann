@@ -1,0 +1,30 @@
+T1	Medical-Problem 286 312	mildly displaced fractures
+T2	Medical-Anatomy 320 343;345 357	left lateral fourth and seventh ribs
+T3	Medical-Problem 363 393	subtle non-displaced fractures
+T4	Medical-Anatomy 401 423	left lateral sixth rib
+T5	Medical-Anatomy 429 447	left posterior ___
+T6	Medical-Assertion 473 495	no definitive evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 500 512	pneumothorax
+T8	Medical-Problem 517 539	focal airspace opacity
+T9	Medical-Anatomy 547 565	left mid lung zone
+T10	Medical-Problem 586 605	pulmonary contusion
+T11	Medical-Problem 619 648	small amount of pleural fluid
+T12	Medical-Anatomy 650 658	tracking
+T13	Medical-Anatomy 671 685	left lung apex
+T14	Medical-Problem 772 811	Multiple acute left-sided rib fractures
+E13	Medical-Problem:T14
+T15	Medical-Problem 836 860	left pulmonary contusion
+E14	Medical-Problem:T15
+T16	Medical-Problem 865 878	pleural fluid
+E15	Medical-Problem:T16
+T17	Medical-Assertion 884 886	no
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 887 908	definite pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13
+E16	Medical-Problem:T18 has-Medical-Assertion:T17

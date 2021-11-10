@@ -1,0 +1,23 @@
+T1	Medical-Assertion 34 36	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 37 70	acute cardiopulmonary abnormality
+T3	Lesion-Characteristic 526 535	Calcified
+T4	Lesion-Anatomy 536 547	mediastinal
+T5	Lesion-Anatomy 552 557	hilar
+T6	Lesion-Description 558 563;565 570	lymph nodes
+T7	Medical-Problem 631 687	unchanged mild biapical pleural and parenchymal scarring
+E6	Medical-Problem:T7
+T8	Medical-Assertion 698 700	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 702 714	pneumothorax
+T10	Medical-Problem 716 724	fracture
+T11	Medical-Problem 728 739	dislocation
+T12	Medical-Assertion 813 815	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 816 849	acute cardiopulmonary abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

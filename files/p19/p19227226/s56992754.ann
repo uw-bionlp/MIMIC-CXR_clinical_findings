@@ -1,0 +1,41 @@
+T1	Medical-Problem 384 401;403 411	aorta is slightly unfolded
+E1	Medical-Problem:T1
+T2	Medical-Problem 423 465	crowding of the bronchovascular structures
+E2	Medical-Problem:T2
+T3	Medical-Problem 493 510	Streaky opacities
+T4	Medical-Anatomy 522 532	lung bases
+T5	Medical-Assertion 533 547	likely reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 548 559	atelectasis
+T7	Medical-Assertion 563 565	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 566 584	large pneumothorax
+T9	Medical-Problem 633 638	trace
+E7	Medical-Problem:T9
+T10	Medical-Problem 640 662	right pleural effusion
+T11	Medical-Assertion 663 677	may be present
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Anatomy 685 709	right costophrenic angle
+T13	Medical-Problem 714 733	slightly indistinct
+T14	Medical-Assertion 736 738	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 739 766	acute osseous abnormalities
+T16	Medical-Problem 857 865;867 874	Low lung volumes
+T17	Medical-Problem 880 897	streaky opacities
+T18	Medical-Anatomy 905 915	lung bases
+T19	Medical-Assertion 917 923	likely
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 924 935	atelectasis
+T21	Medical-Assertion 939 947	Possible
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 948 976	trace right pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T13 has-Medical-Anatomy:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T18
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21

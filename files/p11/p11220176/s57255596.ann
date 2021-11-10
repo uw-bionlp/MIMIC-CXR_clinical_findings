@@ -1,0 +1,33 @@
+T1	Medical-Problem 238 255	marked prominence
+T2	Medical-Anatomy 263 267;269 285	main pulmonary artery
+T3	Medical-Anatomy 290 323	right descending pulmonary artery
+T4	Medical-Problem 332 341	opacities
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 350 384	left greater than right lung bases
+T6	Medical-Problem 405 416	atelectasis
+T7	Medical-Assertion 488 490	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 491 496;498 511	focal consolidation
+T9	Medical-Assertion 513 515	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 516 532	pleural effusion
+T11	Medical-Problem 536 548	pneumothorax
+T12	Medical-Problem 583 594	atelectasis
+E10	Medical-Problem:T12
+T13	Medical-Assertion 596 598	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 611 626	pulmonary edema
+T15	Medical-Anatomy 654 675	main pulmonary artery
+T16	Medical-Problem 680 690	prominence
+T17	Medical-Anatomy 698 703;705 732	right descending pulmonary artery
+T18	Medical-Assertion 733 740	suggest
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 741 763	pulmonary hypertension
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

@@ -1,0 +1,58 @@
+T1	Medical-Anatomy 165 175	heart size
+T2	Medical-Problem 179 206	mild to moderately enlarged
+T3	Medical-Problem 209 233	Aortic knob is prominent
+E3	Medical-Problem:T3
+T4	Medical-Assertion 236 246	suggesting
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 247 257	dilatation
+T6	Medical-Anatomy 265 279	thoracic aorta
+T7	Medical-Problem 282 311	Atherosclerotic calcification
+T8	Medical-Anatomy 320 331	aortic arch
+T9	Medical-Problem 345 358	Opacification
+T10	Medical-Anatomy 370 389	retrocardiac region
+T11	Medical-Assertion 390 393;395 402	may reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 422 444	small pleural effusion
+T13	Medical-Problem 450 470	adjacent atelectasis
+T14	Medical-Problem 474 492	Hazy opacification
+T15	Medical-Anatomy 504 519	mid lung fields
+T16	Medical-Assertion 540 542	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 544 585	right-sided pleural effusion pneumothorax
+T18	Medical-Assertion 588 590	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 591 616	acute osseous abnormality
+T20	Medical-Problem 645 671	Left basilar opacification
+E16	Medical-Problem:T20
+T21	Medical-Assertion 672 687	likely reflects
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 707 712;714 730	small pleural effusion
+T23	Medical-Problem 735 755	adjacent atelectasis
+T24	Medical-Problem 758 768	Infection,
+T25	Medical-Assertion 781 784;786 794	not excluded
+A6	Medical-AssertionValue T25 possible
+T26	Medical-Problem 803 821	Hazy opacification
+T27	Medical-Anatomy 833 860	mid lung fields bilaterally
+T28	Medical-Assertion 882 895	could reflect
+A7	Medical-AssertionValue T28 possible
+T29	Medical-Problem 899 912	infectious or
+E22	Medical-Problem:T29
+T30	Medical-Problem 913 933	inflammatory process
+T31	Medical-Problem 936 956	Mild pulmonary edema
+T32	Medical-Assertion 961 983	considered less likely
+A8	Medical-AssertionValue T32 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T22 has-Medical-Assertion:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T21
+E19	Medical-Problem:T24 has-Medical-Assertion:T25
+E20	Medical-Problem:T26 has-Medical-Anatomy:T27
+E23	Medical-Problem:T30 has-Medical-Anatomy:T27 has-Medical-Assertion:T28
+E24	Medical-Problem:T31 has-Medical-Assertion:T32

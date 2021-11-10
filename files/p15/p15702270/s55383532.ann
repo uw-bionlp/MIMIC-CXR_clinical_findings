@@ -1,0 +1,21 @@
+T1	Medical-Problem 193 208	focal opacities
+T2	Medical-Anatomy 217 249	right lower and left upper lobes
+T3	Medical-Assertion 258 266	possible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 267 274	opacity
+T5	Medical-Anatomy 282 292;294 298	left lower lobe
+T6	Medical-Assertion 364 366	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 368 384	pleural effusion
+T8	Medical-Problem 388 400	pneumothorax
+T9	Medical-Problem 458 478	Multifocal opacities
+T10	Medical-Anatomy 493 535;537 547	right lower, left upper, and possibly left lower lobe
+T11	Medical-Assertion 553 567	concerning for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 570 590	multifocal pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

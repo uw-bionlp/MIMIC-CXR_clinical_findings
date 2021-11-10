@@ -1,0 +1,55 @@
+T1	Medical-Problem 233 256	lungs are hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Problem 294 328	small right-sided pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 372 391	bibasilar opacities
+E3	Medical-Problem:T3
+T4	Medical-Assertion 392 399	suggest
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 400 421	bibasilar atelectasis
+T6	Medical-Assertion 422 428	versus
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 429 437	scarring
+T8	Lesion-Description 442 449;451 458	nodular opacity
+T9	Lesion-Anatomy 466 527	soft tissues of the lateral aspect of the right thoracic wall
+T10	Lesion-Characteristic 577 586	sclerotic
+T11	Lesion-Description 587 593	lesion
+T12	Lesion-Anatomy 606 618	scapular tip
+T13	Medical-Assertion 630 632	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 633 645	pneumothorax
+T15	Medical-Anatomy 652 673	upper sternotomy wire
+T16	Medical-Problem 678 687	fractured
+T17	Medical-Problem 737 745	Multiple
+E14	Medical-Problem:T17
+T18	Medical-Problem 819 827;829 837	aorta is tortuous
+E15	Medical-Problem:T18
+T19	Medical-Problem 844 874	atherosclerotic calcifications
+T20	Medical-Anatomy 882 893	aortic knob
+T21	Medical-Problem 917 945	right-sided pleural effusion
+E18	Medical-Problem:T21
+T22	Medical-Problem 947 956	Bibasilar
+E19	Medical-Problem:T22
+T23	Medical-Problem 957 966	opacities
+E20	Medical-Problem:T23
+T24	Medical-Assertion 967 970;972 981	may represent
+A4	Medical-AssertionValue T24 possible
+T25	Medical-Problem 982 993	atelectasis
+T26	Medical-Problem 1001 1009	scarring
+T27	Medical-Assertion 1011 1013	No
+A5	Medical-AssertionValue T27 absent
+T28	Medical-Problem 1014 1041	focal parenchymal opacities
+T29	Medical-Assertion 1043 1056	suggestive of
+A6	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1057 1066	pneumonia
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T9
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E21	Medical-Problem:T25 has-Medical-Assertion:T24
+E22	Medical-Problem:T26 has-Medical-Assertion:T24
+E23	Medical-Problem:T28 has-Medical-Assertion:T27
+E24	Medical-Problem:T30 has-Medical-Assertion:T27 has-Medical-Assertion:T29

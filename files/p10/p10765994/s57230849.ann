@@ -1,0 +1,36 @@
+T1	Medical-Problem 351 384	streaky left lower lung opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 386 397	most likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 398 409	atelectasis
+T4	Medical-Problem 418 426	scarring
+T5	Lesion-Assertion 469 486	likely represents
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Anatomy 490 499	pulmonary
+T7	Lesion-Description 500 506	nodule
+T8	Medical-Problem 541 559;561 569	small left pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Assertion 610 612	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 613 635	right pleural effusion
+T11	Medical-Assertion 639 641	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 642 654	pneumothorax
+T13	Medical-Assertion 754 756	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 757 781	radiographic explanation
+T15	Medical-Problem 817 827;829 854	Left lower lung atelectasis/scarring
+E10	Medical-Problem:T15
+T16	Lesion-Anatomy 861 870	pulmonary
+T17	Lesion-Description 871 877	nodule
+T18	Lesion-Size-Trend 882 903	similar in appearance
+A6	Lesion-Size-TrendValue T18 no-change
+T19	Medical-Problem 912 949	Unchanged small left pleural effusion
+E13	Medical-Problem:T19
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Lesion-Description:T17 has-Lesion-Anatomy:T16 has-Lesion-Size-Trend:T18

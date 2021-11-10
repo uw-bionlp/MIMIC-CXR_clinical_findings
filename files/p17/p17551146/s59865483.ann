@@ -1,0 +1,52 @@
+T1	Medical-Assertion 438 440	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 441 453	pneumothorax
+T3	Medical-Problem 467 505	Inspiratory volumes are relatively low
+E2	Medical-Problem:T3
+T4	Medical-Problem 580 607	increased perihilar opacity
+T5	Medical-Problem 612 623	atelectasis
+T6	Medical-Anatomy 628 643	both lung bases
+T7	Medical-Problem 655 672	vascular plethora
+E6	Medical-Problem:T7
+T8	Medical-Problem 675 697;699 706	Increased retrocardiac density
+E7	Medical-Problem:T8
+T9	Medical-Assertion 735 737	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 738 757	frank consolidation
+T11	Medical-Assertion 775 783	Possible
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 784 795	trace fluid
+T13	Medical-Anatomy 803 828	right cardiophrenic angle
+T14	Medical-Assertion 831 833	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 834 850;852 860	gross left-sided effusion
+T16	Medical-Problem 1273 1323	Interval increase in bilateral perihilar opacities
+E12	Medical-Problem:T16
+T17	Medical-Assertion 1331 1337	may be
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1354 1370	low lung volumes
+T19	Medical-Problem 1384 1405	increased atelectasis
+E14	Medical-Problem:T19
+T20	Medical-Assertion 1416 1427	possibility
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1431 1479	increased perihilar vascular plethora/ early CHF
+T22	Medical-Assertion 1480 1489;1491 1499	cannot be excluded
+A7	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1505 1535	Increased retrocardiac density
+E16	Medical-Problem:T23
+T24	Medical-Problem 1553 1577	left lower lobe collapse
+E17	Medical-Problem:T24
+T25	Medical-Problem 1586 1599	consolidation
+E18	Medical-Problem:T25
+T26	Medical-Assertion 1616 1624	Possible
+A8	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1625 1660	small right-sided pleural effusion,
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T6
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T21 has-Medical-Assertion:T20 has-Medical-Assertion:T22
+E19	Medical-Problem:T27 has-Medical-Assertion:T26

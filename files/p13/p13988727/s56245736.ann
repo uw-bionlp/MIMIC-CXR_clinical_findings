@@ -1,0 +1,37 @@
+T1	Medical-Problem 295 303;305 314	blunting densities
+T2	Medical-Anatomy 322 336	left lung base
+T3	Medical-Problem 339 370	Significant cardiac enlargement
+T4	Medical-Assertion 374 382	unlikely
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Anatomy 385 393	Thoracic
+T6	Medical-Assertion 424 431	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 432 459	local contour abnormalities
+T8	Medical-Assertion 492 495	not
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 496 505	congested
+T10	Medical-Anatomy 550 570	left upper lobe area
+T11	Medical-Assertion 603 614;616 625	most likely represent
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 626 641	scar formations
+T13	Medical-Anatomy 651 660	left base
+T14	Medical-Problem 664 690;692 712	moderate amount of pleural effusion obliterates
+T15	Medical-Anatomy 717 745	entire diaphragmatic contour
+T16	Medical-Problem 750 765;767 780	blunts the left pleural sinus
+E12	Medical-Problem:T16
+T17	Medical-Problem 876 891	pleural density
+E13	Medical-Problem:T17
+T18	Medical-Problem 1009 1036;1038 1043	left-sided linear pulmonary scars
+E14	Medical-Problem:T18
+T19	Medical-Problem 1048 1064	pleural effusion
+E15	Medical-Problem:T19
+T20	Medical-Assertion 1077 1079	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1080 1111;1113 1126	new pulmonary or cardiovascular abnormalities
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Anatomy:T13 has-Medical-Anatomy:T15
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

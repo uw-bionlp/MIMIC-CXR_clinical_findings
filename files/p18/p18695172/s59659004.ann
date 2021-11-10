@@ -1,0 +1,27 @@
+T1	Medical-Assertion 106 108	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 111 123	pneumothorax
+T3	Medical-Problem 128 155	small left pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Assertion 178 180	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 181 186;188 211	large  right pleural effusion
+T6	Medical-Anatomy 214 219	Lungs
+T7	Medical-Assertion 238 245	without
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 246 265	focal consolidation
+T9	Medical-Assertion 268 282	concerning for
+A4	Medical-AssertionValue T9 possible
+T10	Medical-Problem 283 292	pneumonia
+T11	Medical-Assertion 783 785	No
+A5	Medical-AssertionValue T11 absent
+T12	Medical-Problem 787 799	pneumothorax
+T13	Medical-Problem 811 821	Small left
+E8	Medical-Problem:T13
+T14	Medical-Problem 822 838	pleural effusion
+E9	Medical-Problem:T14
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T9
+E7	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,37 @@
+T1	Medical-Anatomy 308 313	aorta
+T2	Medical-Problem 317 356	diffusely calcified and mildly tortuous
+T3	Medical-Problem 445 451	Patchy
+E3	Medical-Problem:T3
+T4	Medical-Problem 452 461	opacities
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 469 479	right base
+T6	Medical-Assertion 484 490	likely
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 491 502	atelectasis
+T8	Medical-Problem 514 540	minimal pleural thickening
+T9	Medical-Anatomy 548 558	right base
+T10	Lesion-Description 607 616	granuloma
+T11	Lesion-Anatomy 624 645	apex of the left lung
+T12	Lesion-Size-Trend 649 658	unchanged
+A2	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 695 697	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 710 722	pneumothorax
+T15	Medical-Problem 726 733;735 743	pleural effusion
+T16	Medical-Problem 771 780	opacities
+E13	Medical-Problem:T16
+T17	Medical-Anatomy 788 798	right base
+T18	Medical-Assertion 799 820	most likely represent
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 821 833	atelectasis.
+T20	Medical-Problem 834 841	Chronic
+E16	Medical-Problem:T20
+T21	Medical-Problem 843 873	right basal pleural thickening
+E17	Medical-Problem:T21
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

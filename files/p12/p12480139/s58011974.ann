@@ -1,0 +1,29 @@
+T1	Medical-Problem 280 291	enlargement
+T2	Medical-Anatomy 299 329	pulmonary arteries bilaterally
+T3	Medical-Problem 382 395	consolidation
+T4	Medical-Anatomy 403 409;411 428	medial right middle lobe
+T5	Medical-Assertion 431 433	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 434 450	pleural effusion
+T7	Medical-Problem 454 466	pneumothorax
+T8	Medical-Problem 526 553	Enlarged pulmonary arteries
+E7	Medical-Problem:T8
+T9	Medical-Anatomy 601 618	Right middle lobe
+T10	Medical-Problem 619 632	consolidation
+T11	Medical-Assertion 640 653	may represent
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 654 671	pulmonary infarct
+T13	Medical-Problem 674 683	pneumonia
+T14	Medical-Problem 688 698	hemorrhage
+T15	Lesion-Assertion 701 713	Differential
+A3	Lesion-AssertionValue T15 possible
+T16	Lesion-Description 738 748	malignancy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E13	Lesion-Description:T16 has-Lesion-Assertion:T15

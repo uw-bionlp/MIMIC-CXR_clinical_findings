@@ -1,0 +1,42 @@
+T1	Medical-Problem 232 256	large hiatal hernia with
+E1	Medical-Problem:T1
+T2	Medical-Problem 303 325	chest is hyperinflated
+E2	Medical-Problem:T2
+T3	Medical-Problem 397 410	calcification
+T4	Medical-Anatomy 421 432	aortic arch
+T5	Lesion-Assertion 447 456	suspected
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 467 476	calcified
+T7	Lesion-Anatomy 477 488	right hilar
+T8	Lesion-Description 489 499	lymph node
+T9	Medical-Problem 502 517	Pulmonary edema
+E8	Medical-Problem:T9
+T10	Medical-Assertion 543 545	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 546 563	pleural effusions
+T12	Medical-Problem 567 579	pneumothorax
+T13	Medical-Problem 584 594;596 612	very small hyperdense focus
+T14	Medical-Anatomy 633 649	right upper lung
+T15	Lesion-Size-Trend 673 682	unchanged
+A3	Lesion-Size-TrendValue T15 no-change
+T16	Lesion-Description 683 692	granuloma
+T17	Medical-Problem 699 725	bones appear demineralized
+E14	Medical-Problem:T17
+T18	Medical-Problem 730 746;748 784	mild-to-moderate lower thoracic compression deformity
+E15	Medical-Problem:T18
+T19	Medical-Problem 815 820;822 850	upper lumbar compression fractures
+E16	Medical-Problem:T19
+T20	Medical-Assertion 912 923	No evidence
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 927 956	acute cardiopulmonary disease
+T22	Medical-Problem 959 973	Hyperinflation
+E18	Medical-Problem:T22
+T23	Medical-Problem 977 996	Large hiatal hernia
+E19	Medical-Problem:T23
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Lesion-Description:T16 has-Lesion-Size-Trend:T15
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

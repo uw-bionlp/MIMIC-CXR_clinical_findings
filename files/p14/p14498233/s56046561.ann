@@ -1,0 +1,19 @@
+T1	Medical-Problem 185 218	Mild interstitial pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 233 252	severe cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 264 291	Heterogeneous opacification
+T4	Medical-Anatomy 299 314	left lower lung
+T5	Medical-Assertion 370 378	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 379 393	some pneumonia
+T7	Medical-Problem 397 408	atelectasis
+T8	Medical-Problem 442 463	Pleural effusions are
+E7	Medical-Problem:T8
+T9	Medical-Assertion 479 481	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 483 495	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

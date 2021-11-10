@@ -1,0 +1,39 @@
+T1	Medical-Problem 88 116	Small right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 118 146	elevated right hemidiaphragm
+E2	Medical-Problem:T2
+T3	Medical-Problem 148 159;161 172	right basal atelectasis
+E3	Medical-Problem:T3
+T4	Lesion-Count 239 247	Multiple
+T5	Lesion-Anatomy 248 257	pulmonary
+T6	Lesion-Description 258 268	metastases
+T7	Medical-Problem 280 285;287 311	local interstitial abnormality
+T8	Medical-Anatomy 319 333	left lung base
+T9	Medical-Assertion 334 342	probably
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 343 355	lymphangitic
+T11	Lesion-Description 357 371	carcinomatosis
+T12	Lesion-Size-Trend 376 379	all
+A2	Lesion-Size-TrendValue T12 no-change
+T13	Lesion-Size-Trend 380 398	unchanged recently
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Assertion 433 435	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 437 458	left pleural effusion
+T16	Medical-Problem 462 474	pneumothorax
+T17	Lesion-Count 492 495	one
+T18	Lesion-Characteristic 496 501	lytic
+T19	Lesion-Anatomy 502 505	rib
+T20	Lesion-Description 506 512	lesion
+T21	Lesion-Anatomy 521 546	left eighth rib laterally
+T22	Medical-Assertion 557 565	probably
+A5	Medical-AssertionValue T22 possible
+T23	Medical-Problem 584 594	fracturing
+E6	Lesion-Description:T6 has-Lesion-Count:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T11 has-Lesion-Size-Trend:T12 has-Lesion-Size-Trend:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E16	Lesion-Description:T20 has-Lesion-Count:T17 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T19 has-Lesion-Anatomy:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

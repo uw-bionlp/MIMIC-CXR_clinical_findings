@@ -1,0 +1,37 @@
+T1	Medical-Problem 208 248	Small to moderate right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 272 284;286 314	large region of interstitial infiltration
+T3	Medical-Anatomy 322 338	right lower lung
+T4	Medical-Problem 344 351;353 380	growing heterogeneous opacification
+T5	Medical-Anatomy 388 408	left suprahilar lung
+T6	Medical-Assertion 426 431;433 435	could be
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 438 466	component of pulmonary edema
+T8	Medical-Assertion 474 480	likely
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 495 504;506 515	bilateral pneumonia
+T10	Medical-Problem 519 537	triangular opacity
+T11	Medical-Anatomy 545 577	periphery of the left upper lobe
+T12	Medical-Problem 619 628	infection
+E10	Medical-Problem:T12
+T13	Medical-Problem 632 642	infarction
+E11	Medical-Problem:T13
+T14	Medical-Problem 644 652	Fullness
+T15	Medical-Anatomy 657 714	both hila and the paratracheal regions of the mediastinum
+T16	Medical-Assertion 715 730	could be due to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 732 752	vascular engorgement
+T18	Lesion-Description 756 778	lymph node enlargement
+E15	Lesion-Description:T18
+T19	Lesion-Characteristic 781 794	Calcification
+T20	Lesion-Description 799 812	granulomatous
+E17	Lesion-Description:T20
+T21	Lesion-Description 813 824	lymph nodes
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E18	Lesion-Description:T21 has-Lesion-Characteristic:T19

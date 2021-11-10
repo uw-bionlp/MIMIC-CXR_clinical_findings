@@ -1,0 +1,23 @@
+T1	Medical-Problem 169 209	Pulmonary vascular congestion is chronic
+E1	Medical-Problem:T1
+T2	Medical-Problem 220 228	heart is
+T3	Medical-Assertion 229 232	not
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 244 247;249 276	New heterogeneous opacification
+T5	Medical-Anatomy 284 305	base of the left lung
+T6	Medical-Assertion 306 314	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 315 325;327 332	asymmetric edema
+T8	Medical-Assertion 338 349	may also be
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 381 391	aspiration
+T10	Medical-Problem 394 401;403 416	Pleural effusions are
+E7	Medical-Problem:T10
+T11	Medical-Assertion 433 435	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 436 448	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

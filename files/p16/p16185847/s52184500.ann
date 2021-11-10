@@ -1,0 +1,29 @@
+T1	Medical-Problem 341 363	unusual size and shape
+T2	Medical-Anatomy 371 381	left hilum
+T3	Medical-Problem 386 395;397 415	extensive pleural thickening
+T4	Medical-Anatomy 426 450	right lateral chest wall
+T5	Medical-Problem 457 474	stellate scarring
+T6	Medical-Anatomy 483 515	axillary region of the left lung
+T7	Medical-Assertion 544 557	suggestion of
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 558 586	some increased opacification
+T9	Medical-Anatomy 594 604	right base
+T10	Medical-Problem 611 646	poor definition of the heart border
+T11	Medical-Assertion 654 678	could possibly represent
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 682 689;691 704	area of consolidation
+T13	Medical-Anatomy 712 723	middle lobe
+T14	Lesion-Anatomy 826 837	mediastinal
+T15	Lesion-Anatomy 842 847	hilar
+T16	Lesion-Description 848 863	lymphadenopathy
+T17	Medical-Problem 876 904	chronic pulmonary thickening
+E15	Medical-Problem:T17
+T18	Medical-Problem 927 938	sarcoidosis
+E16	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T15

@@ -1,0 +1,32 @@
+T1	Medical-Anatomy 239 244	heart
+T2	Medical-Assertion 248 251	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 252 260	enlarged
+T4	Lesion-Assertion 308 310	no
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 312 317	hilar
+T6	Lesion-Anatomy 321 332	mediastinal
+T7	Lesion-Description 333 348	lymphadenopathy
+T8	Medical-Assertion 363 365	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 366 369	chf
+T10	Medical-Problem 371 387	focal infiltrate
+T11	Medical-Problem 393 401	effusion
+T12	Medical-Problem 406 414	effusion
+T13	Medical-Problem 435 460	small curvilinear lucency
+T14	Medical-Anatomy 470 499;501 514	immediately beneath the right hemidiaphragm
+T15	Medical-Problem 534 574	trace amount of free intraperitoneal air
+E12	Medical-Problem:T15
+T16	Medical-Problem 597 627	Trace free intraperitoneal air
+E13	Medical-Problem:T16
+T17	Medical-Assertion 789 800	No evidence
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 805 814	pneumonia
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

@@ -1,0 +1,17 @@
+T1	Medical-Problem 139 162	mild gaseous distention
+T2	Medical-Anatomy 166 183;185 207	multiple loops of  small and large bowel
+T3	Medical-Assertion 705 713	suggests
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 714 734;736 758	generalize large and small bowel distention
+T5	Medical-Assertion 760 767	perhaps
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 771 785	adynamic ileus
+T7	Medical-Assertion 931 933	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 935 942	pleural
+E5	Medical-Problem:T8
+T9	Medical-Problem 943 954	abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T7

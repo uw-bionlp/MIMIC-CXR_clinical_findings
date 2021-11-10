@@ -1,0 +1,33 @@
+T1	Medical-Assertion 377 380	not
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 382 390	engorged
+T3	Medical-Problem 393 401	Multiple
+E2	Medical-Problem:T3
+T4	Lesion-Anatomy 402 411	bilateral
+T5	Lesion-Description 412 429	nodular opacities
+T6	Lesion-Size-Trend 480 505	not substantially changed
+A2	Lesion-Size-TrendValue T6 no-change
+T7	Lesion-Assertion 529 531	No
+A3	Lesion-AssertionValue T7 absent
+T8	Medical-Problem 532 535;537 556	new focal consolidation
+E5	Medical-Problem:T8
+T9	Medical-Problem 558 574	pleural effusion
+E6	Medical-Problem:T9
+T10	Medical-Problem 578 590	pneumothorax
+E7	Medical-Problem:T10
+T11	Medical-Assertion 604 606	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 607 612;614 633	acute osseous abnormality
+T13	Lesion-Count 758 766	multiple
+T14	Lesion-Description 767 777	metastases
+T15	Lesion-Anatomy 789 794	lungs
+T16	Lesion-Assertion 797 799	No
+A5	Lesion-AssertionValue T16 absent
+T17	Medical-Assertion 800 812;814 822	radiographic evidence
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 827 836	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T6
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Lesion-Description:T14 has-Lesion-Count:T13 has-Lesion-Anatomy:T15
+E12	Medical-Problem:T18 has-Medical-Assertion:T17

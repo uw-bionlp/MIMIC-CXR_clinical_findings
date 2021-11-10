@@ -1,0 +1,56 @@
+T1	Medical-Assertion 385 388	not
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 390 398	engorged
+T3	Medical-Problem 401 415	Bronchiectasis
+T4	Medical-Problem 421 446	associated patchy opacity
+T5	Medical-Anatomy 454 465;467 471	right lower lobe
+T6	Lesion-Size-Trend 542 551	unchanged
+A2	Lesion-Size-TrendValue T6 no-change
+T7	Lesion-Anatomy 552 567	left upper lobe
+T8	Lesion-Size 568 572	8 mm
+T9	Lesion-Anatomy 573 582	pulmonary
+T10	Lesion-Description 583 589	nodule
+T11	Medical-Assertion 689 691	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 693 716	new focal consolidation
+T13	Medical-Problem 718 734	pleural effusion
+T14	Medical-Problem 738 750	pneumothorax
+T15	Medical-Anatomy 764 769	Right
+E12	Medical-Anatomy:T15
+T16	Lesion-Characteristic 771 779	eleventh
+T17	Lesion-Characteristic 780 789	expansile
+T18	Lesion-Characteristic 790 795	lytic
+T19	Lesion-Anatomy 796 799	rib
+T20	Lesion-Description 800 806	lesion
+T21	Lesion-Anatomy 829 842	Thoracolumbar
+E18	Lesion-Anatomy:T21
+T22	Medical-Problem 912 921;923 984	diffusely demineralized unchanged appearance of compression deformities
+T23	Medical-Anatomy 992 999;1001 1004	T10 and T11
+T24	Medical-Anatomy 1049 1065	right lower lobe
+T25	Medical-Problem 1066 1073	opacity
+T26	Medical-Problem 1079 1093	bronchiectasis
+T27	Medical-Assertion 1127 1138	may reflect
+A4	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1139 1160	post radiation change
+T29	Medical-Problem 1164 1176	inflammation
+T30	Medical-Assertion 1179 1181	No
+A5	Medical-AssertionValue T30 absent
+T31	Medical-Problem 1182 1191;1193 1206	new focal consolidation
+T32	Lesion-Anatomy 1231 1249	right eleventh rib
+T33	Lesion-Characteristic 1250 1255	lytic
+T34	Lesion-Description 1256 1266	metastasis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E8	Lesion-Description:T10 has-Lesion-Size-Trend:T6 has-Lesion-Anatomy:T7 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T11
+E17	Lesion-Description:T20 has-Lesion-Anatomy:T16 has-Lesion-Characteristic:T17 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T19
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E22	Medical-Problem:T25 has-Medical-Anatomy:T24
+E23	Medical-Problem:T26 has-Medical-Anatomy:T24
+E24	Medical-Problem:T28 has-Medical-Anatomy:T24 has-Medical-Assertion:T27
+E25	Medical-Problem:T29 has-Medical-Anatomy:T24 has-Medical-Assertion:T27
+E26	Medical-Problem:T31 has-Medical-Assertion:T30
+E29	Lesion-Description:T34 has-Lesion-Anatomy:T32 has-Lesion-Characteristic:T33

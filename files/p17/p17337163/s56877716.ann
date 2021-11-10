@@ -1,0 +1,17 @@
+T1	Medical-Assertion 217 219	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 220 232	pneumothorax
+T3	Medical-Problem 236 252	pleural effusion
+T4	Lesion-Anatomy 255 276	Right lower lobe lung
+T5	Lesion-Description 277 283	lesion
+T6	Medical-Problem 310 350	Moderate cardiomegaly increased slightly
+E5	Medical-Problem:T6
+T7	Medical-Problem 353 362;364 388	Pulmonary vasculature is congested
+E6	Medical-Problem:T7
+T8	Medical-Assertion 403 405	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 406 421	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

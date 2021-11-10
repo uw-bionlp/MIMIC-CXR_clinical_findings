@@ -1,0 +1,25 @@
+T1	Medical-Problem 259 290	Moderate right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 317 329;331 339	Left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 360 370	Thickening
+T4	Medical-Anatomy 378 403	right paratracheal stripe
+T5	Medical-Assertion 405 413	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 414 431	mediastinal fluid
+T7	Medical-Problem 435 443	bleeding
+T8	Medical-Problem 502 521	Atelectasis is mild
+T9	Medical-Anatomy 529 542;544 548	base the left lung
+T10	Medical-Problem 579 607	New peripheral opacification
+T11	Medical-Anatomy 616 661	left lung base medially and at the right base
+T12	Medical-Assertion 662 670	could be
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 671 682	atelectasis
+T14	Medical-Problem 689 698	infection
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

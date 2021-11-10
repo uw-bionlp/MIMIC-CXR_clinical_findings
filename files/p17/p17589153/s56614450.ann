@@ -1,0 +1,55 @@
+T1	Medical-Problem 37 46	Emphysema
+E1	Medical-Problem:T1
+T2	Medical-Problem 52 75	left lower lobe opacity
+E2	Medical-Problem:T2
+T3	Medical-Assertion 76 90	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 91 100	pneumonia
+T5	Lesion-Anatomy 108 124	Right upper lung
+T6	Lesion-Description 125 131	nodule
+T7	Lesion-Size 169 175	1.5 cm
+T8	Medical-Anatomy 542 547	Lungs
+T9	Medical-Problem 556 606	hyperinflated with coarsened interstitial markings
+T10	Medical-Assertion 607 617	suggesting
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 618 628;630 639	underlying emphysema
+T12	Medical-Problem 650 663	vague opacity
+T13	Medical-Anatomy 671 686	left lower lobe
+T14	Medical-Assertion 687 701	concerning for
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 703 712	pneumonia
+T16	Medical-Problem 714 752	Platelike right lower lung atelectasis
+E13	Medical-Problem:T16
+T17	Lesion-Characteristic 762 767	vague
+T18	Lesion-Description 768 775;777 784	nodular opacity
+T19	Lesion-Anatomy 813 829	right upper lung
+T20	Lesion-Size 891 903	1.5 x 1.5 cm
+T21	Medical-Assertion 905 907	No
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 908 922	large effusion
+T23	Medical-Problem 927 939	pneumothorax
+T24	Medical-Assertion 1033 1035	No
+A5	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1036 1060	free air below the right
+T26	Medical-Problem 1108 1117	Emphysema
+E21	Medical-Problem:T26
+T27	Medical-Problem 1123 1146	left lower lobe opacity
+E22	Medical-Problem:T27
+T28	Medical-Assertion 1147 1161	concerning for
+A6	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1162 1171	pneumonia
+T30	Lesion-Anatomy 1178 1194	Right upper lung
+T31	Lesion-Description 1195 1201	nodule
+T32	Lesion-Size 1239 1245	1.5 cm
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E15	Lesion-Description:T18 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T19 has-Lesion-Size-Present:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Assertion:T21
+E20	Medical-Problem:T25 has-Medical-Assertion:T24
+E23	Medical-Problem:T29 has-Medical-Assertion:T28
+E25	Lesion-Description:T31 has-Lesion-Anatomy:T30 has-Lesion-Size-Present:T32

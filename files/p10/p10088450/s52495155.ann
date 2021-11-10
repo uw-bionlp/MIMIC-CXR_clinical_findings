@@ -1,0 +1,26 @@
+T1	Medical-Problem 210 217	Opacity
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 225 240	left upper lobe
+T3	Lesion-Characteristic 254 258	bony
+T4	Lesion-Anatomy 271 274	rib
+T5	Lesion-Anatomy 278 282	lung
+T6	Lesion-Description 284 290	nodule
+T7	Medical-Assertion 405 407	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 408 417	pneumonia
+T9	Medical-Assertion 419 421	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 422 437	pulmonary edema
+T11	Medical-Assertion 440 442	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 443 460	pleural effusions
+T13	Lesion-Assertion 481 489	Possible
+A4	Lesion-AssertionValue T13 possible
+T14	Lesion-Anatomy 490 494	lung
+T15	Lesion-Description 495 501	nodule
+T16	Lesion-Anatomy 505 520	left upper lobe
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T16

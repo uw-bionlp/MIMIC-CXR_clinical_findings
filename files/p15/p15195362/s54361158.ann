@@ -1,0 +1,41 @@
+T1	Medical-Problem 424 444	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 472 481	Opacities
+T3	Medical-Anatomy 499 514	right lung base
+T4	Medical-Assertion 584 586	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 587 599	pneumothorax
+T6	Medical-Problem 603 628	definite pleural effusion
+T7	Medical-Problem 641 651	prominence
+T8	Medical-Anatomy 659 678	central vasculature
+T9	Medical-Assertion 679 695	without evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 700 715	pulmonary edema
+T11	Medical-Problem 751 761	Prominence
+T12	Medical-Anatomy 769 780	mediastinum
+T13	Medical-Assertion 781 792	may reflect
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 813 828	azygous fissure
+E11	Medical-Problem:T14
+T15	Medical-Problem 874 893	pathologic widening
+E12	Medical-Problem:T15
+T16	Medical-Problem 910 919	Opacities
+T17	Medical-Anatomy 927 942	right lung base
+T18	Medical-Assertion 947 970	at least in part due to
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 972 983	atelectasis
+T20	Medical-Problem 1021 1030	pneumonia
+T21	Medical-Assertion 1031 1049	cannot be excluded
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1127 1146	Apparent prominence
+T23	Medical-Anatomy 1154 1165	mediastinum
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T21
+E17	Medical-Problem:T22 has-Medical-Anatomy:T23

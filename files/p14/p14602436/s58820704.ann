@@ -1,0 +1,35 @@
+T1	Medical-Assertion 57 68	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 72 87	pulmonary edema
+T3	Medical-Problem 92 109	pleural effusions
+T4	Medical-Problem 121 128;130 140	chronic  elevation
+T5	Medical-Anatomy 148 167	right hemidiaphragm
+T6	Medical-Assertion 233 244	no evidence
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 248 263	pulmonary edema
+T8	Medical-Problem 268 285	pleural effusions
+T9	Medical-Problem 299 316	chronic elevation
+T10	Medical-Anatomy 324 343	right hemidiaphragm
+T11	Medical-Assertion 760 762	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 763 772	pulmonary
+E9	Medical-Problem:T12
+T13	Medical-Problem 774 779	edema
+T14	Medical-Problem 854 869	new abnormality
+E11	Medical-Problem:T14
+T15	Lesion-Assertion 875 883	possible
+A4	Lesion-AssertionValue T15 possible
+T16	Lesion-Size 884 890	sub cm
+T17	Lesion-Anatomy 891 907	right upper lobe
+T18	Lesion-Description 908 914	nodule
+T19	Lesion-Anatomy 1064 1080	right upper lobe
+T20	Lesion-Description 1081 1087	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E14	Lesion-Description:T18 has-Lesion-Assertion:T15 has-Lesion-Size-Present:T16 has-Lesion-Anatomy:T17
+E16	Lesion-Description:T20 has-Lesion-Anatomy:T19

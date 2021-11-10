@@ -1,0 +1,27 @@
+T1	Lesion-Assertion 249 251	no
+A1	Lesion-AssertionValue T1 absent
+T2	Lesion-Anatomy 252 258	apical
+T3	Lesion-Description 259 263	mass
+T4	Lesion-Characteristic 266 275	Calcified
+T5	Lesion-Description 276 286	lymph node
+T6	Lesion-Anatomy 294 303	AP window
+T7	Lesion-Size-Trend 307 316	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 400 402	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 403 419	pleural effusion
+T10	Medical-Problem 423 435	pneumothorax
+T11	Lesion-Assertion 464 466	no
+A4	Lesion-AssertionValue T11 absent
+T12	Lesion-Anatomy 467 473	apical
+T13	Lesion-Description 474 478	mass
+T14	Medical-Problem 481 498	Chronic AP window
+E10	Medical-Problem:T14
+T15	Lesion-Characteristic 499 508	calcified
+T16	Lesion-Description 509 519	lymph node
+E2	Lesion-Description:T3 has-Lesion-Assertion:T1 has-Lesion-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T12
+E12	Lesion-Description:T16 has-Lesion-Characteristic:T15

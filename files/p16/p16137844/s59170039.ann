@@ -1,0 +1,32 @@
+T1	Medical-Anatomy 174 179	lungs
+T2	Medical-Problem 184 197	hyperexpanded
+T3	Medical-Problem 253 257	COPD
+T4	Medical-Anatomy 264 269	lungs
+T5	Medical-Assertion 280 287	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 288 307	focal consolidation
+T7	Medical-Assertion 309 323	concerning for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 324 333	pneumonia
+T9	Medical-Problem 335 351	pleural effusion
+T10	Medical-Problem 355 367	pneumothorax
+T11	Medical-Anatomy 374 383;385 396	pulmonary vasculature
+T12	Medical-Assertion 400 403	not
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 404 412	engorged
+T14	Medical-Problem 484 515	Multilevel degenerative changes
+T15	Medical-Anatomy 523 537	thoracic spine
+T16	Medical-Assertion 566 568	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 569 598	acute cardiopulmonary process
+T18	Medical-Problem 613 617	COPD
+E14	Medical-Problem:T18
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

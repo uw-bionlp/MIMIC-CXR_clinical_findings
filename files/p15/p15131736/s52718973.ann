@@ -1,0 +1,29 @@
+T1	Medical-Problem 240 287	enlargement of the cardiomediastinal silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 300 309	elevation
+T3	Medical-Anatomy 317 336	right hemidiaphragm
+T4	Medical-Anatomy 357 371	left lung base
+T5	Medical-Assertion 456 458	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 459 487	definite focal consolidation
+T7	Medical-Problem 508 513	edema
+E6	Medical-Problem:T7
+T8	Medical-Assertion 525 527	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 528 533;535 551	large pleural effusion
+T10	Medical-Problem 587 592	edema
+T11	Medical-Problem 597 608	enlargement
+T12	Medical-Anatomy 616 623	cardiac
+T13	Medical-Assertion 637 639	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 640 654;656 669	definite focal consolidation
+T15	Medical-Assertion 670 680	to suggest
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 681 690	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T12
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T13 has-Medical-Assertion:T15

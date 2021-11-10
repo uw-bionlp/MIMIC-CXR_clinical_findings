@@ -1,0 +1,19 @@
+T1	Medical-Problem 400 423	increased opacification
+T2	Medical-Anatomy 432 441	left base
+T3	Medical-Anatomy 459 472	hemidiaphragm
+T4	Medical-Problem 513 526	pleural fluid
+T5	Medical-Problem 531 554	substantial volume loss
+T6	Medical-Anatomy 562 569	lingula
+T7	Medical-Anatomy 574 584;586 590	left lower lobe
+T8	Medical-Problem 681 722	appreciable mediastinal shift to the left
+E8	Medical-Problem:T8
+T9	Medical-Anatomy 729 746	pulmonary vessels
+T10	Medical-Problem 754 782	more engorged and indistinct
+T11	Medical-Assertion 784 794	suggesting
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 795 799;801 837	some increasing pulmonary venous pressure
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11

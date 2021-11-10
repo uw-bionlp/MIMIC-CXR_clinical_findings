@@ -1,0 +1,31 @@
+T1	Medical-Assertion 43 45	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 46 79	acute cardiopulmonary abnormality
+T3	Lesion-Size 86 90	4 mm
+T4	Lesion-Anatomy 91 117	right lower lobe pulmonary
+T5	Lesion-Description 118 124	nodule
+T6	Lesion-Anatomy 595 621	right lower lobe pulmonary
+T7	Lesion-Description 622 628	nodule
+T8	Medical-Assertion 664 666	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 667 674	pleural
+T10	Medical-Problem 675 683	effusion
+T11	Medical-Problem 687 699	pneumothorax
+T12	Medical-Assertion 712 714	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 715 720	acute
+E10	Medical-Problem:T13
+T14	Medical-Problem 721 728;730 741	osseous abnormality
+T15	Medical-Assertion 780 782	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 783 788	acute
+E12	Medical-Problem:T16
+T17	Medical-Problem 789 816	cardiopulmonary abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Medical-Problem:T17 has-Medical-Assertion:T15

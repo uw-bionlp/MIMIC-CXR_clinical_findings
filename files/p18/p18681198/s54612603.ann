@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 213 218	aorta
+T2	Medical-Problem 222 237	mildly tortuous
+T3	Medical-Problem 256 292	atherosclerotic mural calcifications
+T4	Medical-Anatomy 300 311	aortic arch
+T5	Medical-Problem 356 390	mild pulmonary vascular congestion
+E5	Medical-Problem:T5
+T6	Medical-Problem 393 401	Blunting
+T7	Medical-Anatomy 410 441	costophrenic angle on the right
+T8	Medical-Problem 463 485	trace pleural effusion
+T9	Medical-Problem 493 516	lungs are hyperinflated
+E9	Medical-Problem:T9
+T10	Medical-Problem 528 536	scarring
+T11	Medical-Anatomy 548 559	lung apices
+T12	Medical-Assertion 562 564	No
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 566 585	focal consolidation
+T14	Medical-Assertion 614 616	no
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 617 629	pneumothorax
+T16	Medical-Problem 632 639;641 683	Diffuse demineralization of the osseous structures
+E14	Medical-Problem:T16
+T17	Medical-Problem 712 746	Mild pulmonary vascular congestion
+E15	Medical-Problem:T17
+T18	Medical-Problem 751 779	small right pleural effusion
+E16	Medical-Problem:T18
+T19	Medical-Problem 783 797	Hyperinflation
+T20	Medical-Anatomy 805 810	lungs
+T21	Medical-Assertion 811 824	suggestive of
+A3	Medical-AssertionValue T21 possible
+T22	Medical-Problem 825 840	underlying COPD
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E10	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E17	Medical-Problem:T19 has-Medical-Anatomy:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

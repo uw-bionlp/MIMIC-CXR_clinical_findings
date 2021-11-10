@@ -1,0 +1,20 @@
+T1	Medical-Problem 210 237	Large left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 349 357	Aeration
+T3	Medical-Anatomy 366 375	left lung
+T4	Medical-Assertion 395 397	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 398 418	obvious pneumothorax
+T6	Lesion-Anatomy 429 441	interstitial
+T7	Lesion-Description 443 453	nodulation
+T8	Lesion-Anatomy 461 471	right lung
+T9	Lesion-Characteristic 501 513	disseminated
+T10	Lesion-Description 514 519	tumor
+T11	Medical-Problem 525 535	mild edema
+E10	Medical-Problem:T11
+T12	Medical-Problem 538 585	Cardiomediastinal silhouette partially obscured
+E11	Medical-Problem:T12
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T9

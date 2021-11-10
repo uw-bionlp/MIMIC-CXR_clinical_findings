@@ -1,0 +1,21 @@
+T1	Medical-Problem 206 243	Small-to-moderate right pneumothorax,
+T2	Medical-Anatomy 244 271	primarily lateral and basal
+T3	Medical-Problem 342 374	Extensive cavitary consolidation
+T4	Medical-Anatomy 378 394	right upper lobe
+T5	Medical-Problem 399 412;414 427	heterogeneous consolidation
+T6	Lesion-Anatomy 432 436	lung
+T7	Lesion-Description 437 444	nodules
+T8	Lesion-Anatomy 445 454	elsewhere
+T9	Lesion-Characteristic 456 463	chronic
+T10	Lesion-Size-Trend 468 477	unchanged
+A1	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Problem 553 563;565 581	Small left pleural effusion
+E10	Medical-Problem:T11
+T12	Medical-Assertion 594 596	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 597 614	left pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T9 has-Lesion-Size-Trend:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

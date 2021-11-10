@@ -1,0 +1,42 @@
+T1	Medical-Problem 368 377	Elevation
+T2	Medical-Anatomy 385 390	right
+T3	Medical-Problem 420 437	Streaky opacities
+T4	Medical-Anatomy 445 455	lung bases
+T5	Medical-Assertion 456 470	likely reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 471 479;481 492	areas of atelectasis
+T7	Medical-Problem 494 510	Minimal blunting
+T8	Medical-Anatomy 518 542	left costophrenic sulcus
+T9	Medical-Assertion 543 558;560 571	may suggest the presence of
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 574 600	tiny left pleural effusion
+T11	Medical-Assertion 602 604	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 605 617	pneumothorax
+T13	Medical-Assertion 641 643	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 644 671	acute osseous abnormalities
+T15	Medical-Problem 675 690	remote fracture
+T16	Medical-Anatomy 698 708;710 721	left fifth lateral rib
+T17	Medical-Problem 733 762	Left subdiaphragmatic lucency
+E13	Medical-Problem:T17
+T18	Medical-Assertion 766 780	concerning for
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 782 798	pneumoperitoneum
+T20	Medical-Problem 819 835	Pneumoperitoneum
+E15	Medical-Problem:T20
+T21	Medical-Problem 837 858	Bibasilar atelectasis
+E16	Medical-Problem:T21
+T22	Medical-Assertion 860 868	Possible
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 869 896	trace left pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T23 has-Medical-Assertion:T22

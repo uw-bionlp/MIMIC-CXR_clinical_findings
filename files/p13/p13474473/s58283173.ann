@@ -1,0 +1,35 @@
+T1	Medical-Anatomy 261 266	aorta
+T2	Medical-Problem 270 276;278 300	mildly calcified and tortuous
+T3	Medical-Problem 318 327	opacities
+T4	Medical-Anatomy 335 350	right lung base
+T5	Medical-Assertion 374 393	likely representing
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 394 405	atelectasis
+T7	Medical-Assertion 408 410	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 412 435	definite consolidations
+T9	Medical-Assertion 459 461	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 462 474	pneumothorax
+T11	Medical-Problem 478 485;487 495	pleural effusion
+T12	Medical-Problem 498 525	Relative upper zone lucency
+E9	Medical-Problem:T12
+T13	Lesion-Size 571 575	6 mm
+T14	Lesion-Anatomy 576 591	left upper lobe
+T15	Lesion-Description 592 598	nodule
+T16	Medical-Problem 632 660	Minimally changed appearance
+E13	Medical-Problem:T16
+T17	Medical-Problem 701 710	Opacities
+T18	Medical-Anatomy 718 733	right lung base
+T19	Medical-Assertion 738 744	likely
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 745 756	atelectasis
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E12	Lesion-Description:T15 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19

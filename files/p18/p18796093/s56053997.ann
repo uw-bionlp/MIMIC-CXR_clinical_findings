@@ -1,0 +1,18 @@
+T1	Lesion-Anatomy 243 256	Intrathoracic
+T2	Lesion-Description 257 272	lymphadenopathy
+T3	Lesion-Characteristic 277 284	diffuse
+T4	Lesion-Anatomy 285 304	bilateral pulmonary
+T5	Lesion-Description 305 312	nodules
+T6	Lesion-Size-Trend 321 328	similar
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Problem 350 379	Worsening partial atelectasis
+T8	Medical-Anatomy 387 398;400 404	right lower lobe
+T9	Medical-Problem 411 453	adjacent persistent right pleural effusion
+E8	Medical-Problem:T9
+T10	Lesion-Size 456 461	Large
+T11	Lesion-Anatomy 462 478	right paraspinal
+T12	Lesion-Description 480 484	mass
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E11	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T11

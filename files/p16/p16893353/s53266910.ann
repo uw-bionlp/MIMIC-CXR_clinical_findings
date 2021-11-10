@@ -1,0 +1,32 @@
+T1	Medical-Problem 340 360	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 363 380	Mild cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 403 418;420 434	Atherosclerotic calcifications
+T4	Medical-Anatomy 457 468	aortic knob
+T5	Medical-Problem 473 493;495 501	moderate size hiatal hernia
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 581 602	Pulmonary vasculature
+T7	Medical-Assertion 606 609	not
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 610 618	engorged
+T9	Medical-Problem 621 640	Streaky atelectasis
+T10	Medical-Anatomy 658 668	lung bases
+T11	Medical-Problem 671 688	Focal eventration
+T12	Medical-Anatomy 696 715	right hemidiaphragm
+T13	Medical-Assertion 734 736	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 737 756	focal consolidation
+T15	Medical-Problem 758 774	pleural effusion
+T16	Medical-Problem 778 790	pneumothorax
+T17	Medical-Assertion 826 828	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 829 862	acute cardiopulmonary abnormality
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T13
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

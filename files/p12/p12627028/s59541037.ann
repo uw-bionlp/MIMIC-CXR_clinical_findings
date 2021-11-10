@@ -1,0 +1,22 @@
+T1	Medical-Problem 253 289	region of peribronchial infiltration
+T2	Medical-Anatomy 297 312	right lung base
+T3	Medical-Problem 376 386;388 403	Milder but similar changes
+T4	Medical-Anatomy 411 426	left lower lobe
+T5	Medical-Assertion 473 480	suggest
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 484 518	episode of substantial aspiration,
+T7	Medical-Assertion 526 529	not
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 530 541;543 555	progressing to pneumonia
+T9	Medical-Assertion 653 655	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 656 684	appreciable pleural effusion
+T11	Medical-Assertion 687 689	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 691 703	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

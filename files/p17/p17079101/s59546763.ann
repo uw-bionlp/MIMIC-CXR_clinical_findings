@@ -1,0 +1,35 @@
+T1	Medical-Problem 353 361;363 371	improved aeration
+T2	Medical-Anatomy 379 394	right lung base
+T3	Medical-Problem 400 419	improved definition
+T4	Medical-Anatomy 427 432;434 447	right hemidiaphragm
+T5	Medical-Anatomy 452 470	right heart border
+T6	Medical-Assertion 471 481	suggesting
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 482 503	decreased atelectasis
+T8	Medical-Problem 509 522	pleural fluid
+T9	Medical-Anatomy 529 538	left lung
+T10	Medical-Assertion 553 560	without
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 561 577	pleural effusion
+T12	Medical-Problem 581 586;588 601	focal consolidation
+T13	Medical-Assertion 604 606	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 607 619	pneumothorax
+T15	Medical-Problem 637 664;666 674	right hemidiaphragm remains elevated
+E12	Medical-Problem:T15
+T16	Medical-Problem 796 813;815 854	cardiomediastinal silhouette remains prominently enlarged
+E13	Medical-Problem:T16
+T17	Medical-Problem 979 996	Improved aeration
+T18	Medical-Anatomy 1004 1019	right lung base
+T19	Medical-Problem 1036 1045;1047 1058	decreased atelectasis
+T20	Medical-Problem 1063 1076	pleural fluid
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T18

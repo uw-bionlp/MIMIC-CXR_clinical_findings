@@ -1,0 +1,22 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 61	acute cardiopulmonary process
+T3	Lesion-Description 64 79	Nodular opacity
+T4	Lesion-Anatomy 100 105;107 112	right  lung
+T5	Lesion-Anatomy 639 664	posterior right sixth rib
+T6	Lesion-Size 670 674	1 cm
+T7	Lesion-Characteristic 679 686	nodular
+T8	Lesion-Description 688 695	opacity
+T9	Medical-Assertion 790 792	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 793 798	acute
+E8	Medical-Problem:T10
+T11	Medical-Problem 799 820	osseous abnormalities
+T12	Medical-Assertion 841 843	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 844 849	acute
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,40 @@
+T1	Medical-Anatomy 187 192	lungs
+T2	Medical-Problem 197 210	hyperinflated
+T3	Medical-Anatomy 262 273	lung apices
+T4	Medical-Problem 345 381	heart size appearing mildly enlarged
+E4	Medical-Problem:T4
+T5	Medical-Problem 384 395	Enlargement
+T6	Medical-Anatomy 399 417	pulmonary arteries
+T7	Medical-Problem 456 485;487 499	underlying pulmonary arterial hypertension
+T8	Medical-Assertion 502 504	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 505 520	pulmonary edema
+T10	Medical-Problem 539 557;559 568	Bibasilar airspace opacities
+E9	Medical-Problem:T10
+T11	Medical-Assertion 623 625	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 626 633;635 643	pleural effusion
+T13	Medical-Problem 647 659	pneumothorax
+T14	Medical-Problem 812 840	bibasilar airspace opacities
+E12	Medical-Problem:T14
+T15	Medical-Assertion 841 852	may reflect
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 853 874	worsening atelectasis
+T17	Medical-Problem 879 888	infection
+T18	Medical-Problem 895 905	aspiration
+T19	Medical-Assertion 906 918	not excluded
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 921 930	Emphysema
+E16	Medical-Problem:T20
+T21	Medical-Anatomy 948 957;959 967	pulmonary arteries
+T22	Medical-Problem 984 1015	pulmonary arterial hypertension
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T15 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Anatomy:T21

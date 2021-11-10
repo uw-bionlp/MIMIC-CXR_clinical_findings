@@ -1,0 +1,33 @@
+T1	Lesion-Description 290 294	mass
+T2	Lesion-Anatomy 302 339	medial aspect of the right lower lobe
+T3	Medical-Problem 378 406	Right-sided pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 443 466	Interstitial thickening
+T5	Medical-Anatomy 481 511	right mid and lower lung zones
+T6	Medical-Problem 537 568	Right apical pleural thickening
+E6	Medical-Problem:T6
+T7	Medical-Problem 714 723	Unfolding
+T8	Medical-Anatomy 731 739;741 746	thoracic aorta
+T9	Medical-Assertion 749 751	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 752 779	left-sided pleural effusion
+T11	Medical-Problem 828 853	Background hyperinflation
+E10	Medical-Problem:T11
+T12	Lesion-Size-Trend 874 899	Interval decrease in size
+A2	Lesion-Size-TrendValue T12 decreasing
+T13	Lesion-Description 907 911	mass
+T14	Lesion-Anatomy 919 951;953 957	medial aspect of the right lower lobe
+T15	Medical-Problem 960 980	Right-sided effusion
+E13	Medical-Problem:T15
+T16	Medical-Problem 996 1019	Interstitial thickening
+T17	Medical-Anatomy 1028 1058	right mid and lower lung zones
+T18	Medical-Problem 1084 1102;1104 1112	left-sided pleural effusion
+T19	Medical-Assertion 1113 1125	has resolved
+A3	Medical-AssertionValue T19 absent
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Lesion-Description:T13 has-Lesion-Size-Trend:T12 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T18 has-Medical-Assertion:T19

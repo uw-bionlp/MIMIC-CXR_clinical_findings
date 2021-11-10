@@ -1,0 +1,18 @@
+T1	Medical-Problem 313 332	Minimal atelectasis
+T2	Medical-Anatomy 340 355	left lung bases
+T3	Medical-Anatomy 367 379;381 391	retrocardiac lung areas
+T4	Medical-Anatomy 410 421	middle lobe
+T5	Medical-Anatomy 467 482	right lung apex
+T6	Medical-Assertion 483 505	could suggest presence
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 509 535;537 546	right upper lobe pulmonary emphysema
+T8	Medical-Assertion 549 560	No evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 564 573	pneumonia
+T10	Medical-Assertion 576 578	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 579 596	pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

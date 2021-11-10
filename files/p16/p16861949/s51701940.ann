@@ -1,0 +1,18 @@
+T1	Medical-Assertion 190 192	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 194 206	pneumothorax
+T3	Medical-Problem 210 226	pleural effusion
+T4	Medical-Problem 229 266	Mild-to-moderate degenerative changes
+T5	Medical-Anatomy 279 293	thoracic spine
+T6	Medical-Problem 311 332	nodular dense opacity
+E5	Medical-Problem:T6
+T7	Lesion-Anatomy 344 372	medial to the right clavicle
+T8	Lesion-Characteristic 377 393	unknown etiology
+T9	Lesion-Anatomy 438 442	lung
+T10	Lesion-Description 443 449	nodule
+T11	Lesion-Assertion 451 469	cannot be excluded
+A2	Lesion-AssertionValue T11 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9 has-Lesion-Assertion:T11

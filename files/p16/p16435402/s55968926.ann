@@ -1,0 +1,47 @@
+T1	Medical-Assertion 33 44	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 48 60	pneumothorax
+T3	Lesion-Size-Trend 63 80	Stable appearance
+A2	Lesion-Size-TrendValue T3 no-change
+T4	Lesion-Size 88 93	large
+T5	Lesion-Anatomy 94 108	left pulmonary
+T6	Lesion-Description 111 115	mass
+T7	Medical-Assertion 118 120	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 121 138	new consolidation
+T9	Medical-Problem 150 160	hemorrhage
+T10	Medical-Problem 162 187;189 198	Stable small left pleural  effusion
+E7	Medical-Problem:T10
+T11	Medical-Problem 661 694	Small bilateral pleural effusions
+E8	Medical-Problem:T11
+T12	Medical-Problem 749 769	complications of the
+E9	Medical-Problem:T12
+T13	Medical-Assertion 791 793	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 794 806	pneumothorax
+T15	Medical-Problem 809 819;821 837	Large area of consolidation
+T16	Lesion-Description 845 854	mass-like
+E12	Lesion-Description:T16
+T17	Medical-Anatomy 870 877	lingula
+T18	Medical-Problem 930 940	hemorrhage
+E14	Medical-Problem:T18
+T19	Medical-Assertion 1077 1084	suggest
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1085 1108	granulomatous infection
+T21	Medical-Problem 1165 1183	coccidioidomycosis
+T22	Medical-Problem 1187 1201	cryptococcosis
+T23	Medical-Problem 1218 1241	mycobacterial infection
+T24	Medical-Problem 1243 1256	actinomycosis
+T25	Medical-Problem 1261 1269	Nocardia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Size-Trend:T3 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T19
+E18	Medical-Problem:T23 has-Medical-Assertion:T19
+E19	Medical-Problem:T24 has-Medical-Assertion:T19
+E20	Medical-Problem:T25 has-Medical-Assertion:T19

@@ -1,0 +1,27 @@
+T1	Lesion-Anatomy 227 237	left hilar
+T2	Lesion-Description 238 253	lymphadenopathy
+T3	Medical-Problem 256 265	Emphysema
+E3	Medical-Problem:T3
+T4	Lesion-Characteristic 267 277	spiculated
+T5	Lesion-Description 278 284	nodule
+T6	Lesion-Anatomy 293 309	right upper lobe
+T7	Lesion-Characteristic 311 319	cavitary
+T8	Lesion-Description 320 326	lesion
+T9	Lesion-Anatomy 334 349	left upper lobe
+T10	Lesion-Characteristic 351 359	alveolar
+T11	Lesion-Description 361 370	opacities
+T12	Lesion-Anatomy 378 393	left upper lobe
+T13	Lesion-Size-Trend 445 462	grossly unchanged
+A1	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Assertion 475 477	no
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 478 500	new lung abnormalities
+T16	Medical-Problem 503 515	pneumothorax
+T17	Medical-Problem 519 535	pleural effusion
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E11	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T14

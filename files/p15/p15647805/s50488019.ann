@@ -1,0 +1,19 @@
+T1	Medical-Assertion 170 181	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 188 200	pneumothorax
+T3	Lesion-Size 203 208	Large
+T4	Lesion-Anatomy 209 224	left juxtahilar
+T5	Lesion-Description 225 229	mass
+T6	Medical-Assertion 248 263	possibly due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 265 291	post-procedural hemorrhage
+T8	Medical-Problem 294 335	Persistent post-obstructive abnormalities
+T9	Medical-Anatomy 344 383	anterior segment of the left upper lobe
+T10	Medical-Assertion 386 394	Probable
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 395 413;415 423	small left pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

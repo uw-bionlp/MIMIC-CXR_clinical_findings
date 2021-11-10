@@ -1,0 +1,38 @@
+T1	Lesion-Characteristic 33 39	Oblong
+T2	Lesion-Size 40 52	1.6 x 0.7 cm
+T3	Lesion-Description 53 60	opacity
+T4	Lesion-Anatomy 81 95	right mid lung
+T5	Lesion-Characteristic 531 537	oblong
+T6	Lesion-Size 538 550	1.6 x 0.7 cm
+T7	Lesion-Description 551 558	opacity
+T8	Lesion-Anatomy 579 593	right mid lung
+T9	Medical-Assertion 601 616	could relate to
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 617 625	scarring
+T11	Lesion-Characteristic 634 644	underlying
+T12	Lesion-Anatomy 645 654	pulmonary
+T13	Lesion-Description 655 661	nodule
+T14	Lesion-Assertion 665 668;670 678	not excluded
+A2	Lesion-AssertionValue T14 possible
+T15	Medical-Assertion 772 774	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 775 791	pleural effusion
+T17	Medical-Problem 795 807	pneumothorax
+T18	Medical-Assertion 866 868	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 869 878	pulmonary
+E15	Medical-Problem:T19
+T20	Medical-Problem 879 884	edema
+T21	Lesion-Description 933 940	opacity
+T22	Lesion-Anatomy 961 975	right mid lung
+T23	Lesion-Description 1107 1114	opacity
+T24	Lesion-Anatomy 1135 1144;1146 1150	right mid lung
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12 has-Lesion-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E16	Medical-Problem:T20 has-Medical-Assertion:T18
+E17	Lesion-Description:T21 has-Lesion-Anatomy:T22
+E19	Lesion-Description:T23 has-Lesion-Anatomy:T24

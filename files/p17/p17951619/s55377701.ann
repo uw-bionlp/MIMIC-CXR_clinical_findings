@@ -1,0 +1,23 @@
+T1	Medical-Problem 338 367	minimal bibasilar atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Assertion 369 380	less likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 382 391	pneumonia
+T4	Medical-Anatomy 398 403	heart
+T5	Medical-Assertion 407 410	not
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 411 419	enlarged
+T7	Medical-Assertion 480 482	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 483 499	pleural effusion
+T9	Medical-Problem 503 515	pneumothorax
+T10	Medical-Problem 533 559	Mild bibasilar atelectasis
+E7	Medical-Problem:T10
+T11	Medical-Assertion 561 572	less likely
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 573 582	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

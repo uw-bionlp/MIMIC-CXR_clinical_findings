@@ -1,0 +1,16 @@
+T1	Medical-Problem 398 411;413 420	Large area of opacity
+T2	Medical-Anatomy 441 454	right midlung
+T3	Medical-Assertion 455 463	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 464 486	fissural pleural fluid
+T5	Medical-Problem 490 521	Moderate to severe cardiomegaly
+E4	Medical-Problem:T5
+T6	Medical-Problem 526 536	dilatation
+T7	Medical-Anatomy 540 561;563 570	mediastinal and hilar vessels
+T8	Medical-Assertion 628 630	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 632 644	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

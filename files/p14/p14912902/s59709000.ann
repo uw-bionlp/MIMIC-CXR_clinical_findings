@@ -1,0 +1,20 @@
+T1	Medical-Problem 400 409	elevation
+T2	Medical-Anatomy 418 437	right hemidiaphragm
+T3	Medical-Problem 440 451	Innumerable
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 452 461	pulmonary
+T5	Lesion-Description 473 480	lesions
+T6	Medical-Assertion 514 524	resolution
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 528 550	right pleural effusion
+T8	Medical-Assertion 553 555	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 556 564;566 580	definite signs of edema
+T10	Lesion-Characteristic 613 622	extensive
+T11	Lesion-Characteristic 623 633	background
+T12	Lesion-Description 634 644	metastatic
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11

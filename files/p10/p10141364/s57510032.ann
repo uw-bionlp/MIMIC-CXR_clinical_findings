@@ -1,0 +1,31 @@
+T1	Medical-Problem 226 258	extensive airspace opacification
+T2	Medical-Anatomy 273 279;281 291	entire right lung
+T3	Medical-Problem 339 358;360 373	patchy left basilar opacification
+E3	Medical-Problem:T3
+T4	Medical-Problem 396 412	mild volume loss
+T5	Medical-Anatomy 420 430	right lung
+T6	Medical-Problem 441 451	Thickening
+T7	Medical-Anatomy 459 484	right paratracheal stripe
+T8	Lesion-Characteristic 502 512	underlying
+T9	Lesion-Anatomy 514 525	mediastinal
+T10	Lesion-Description 526 541	lymphadenopathy
+T11	Medical-Problem 553 561	probable
+E11	Medical-Problem:T11
+T12	Medical-Problem 562 585;587 596	small bilateral pleural effusions
+E12	Medical-Problem:T12
+T13	Medical-Assertion 607 609	no
+A1	Medical-AssertionValue T13 absent
+T14	Medical-Problem 610 622	pneumothorax
+T15	Medical-Problem 671 705	Extensive right lung opacification
+E14	Medical-Problem:T15
+T16	Medical-Problem 710 737	patchy left basilar opacity
+E15	Medical-Problem:T16
+T17	Medical-Assertion 738 748;750 753	concerning for
+A2	Medical-AssertionValue T17 possible
+T18	Medical-Problem 754 774	multifocal pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E10	Lesion-Description:T10 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9
+E13	Medical-Problem:T14 has-Medical-Assertion:T13
+E16	Medical-Problem:T18 has-Medical-Assertion:T17

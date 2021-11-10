@@ -1,0 +1,22 @@
+T1	Medical-Assertion 531 533	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 534 546	pneumothorax
+T3	Medical-Anatomy 568 579	apical area
+T4	Medical-Problem 582 598	Mild obscuration
+T5	Medical-Anatomy 603 623	left-sided diaphragm
+T6	Medical-Assertion 624 637	suggestive of
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 638 680;682 690	some postoperative small amount of pleural effusion
+T8	Medical-Assertion 696 698	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 699 704	other
+E6	Medical-Problem:T9
+T10	Medical-Problem 705 722	new abnormalities
+T11	Medical-Assertion 975 986	No evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 990 1002	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

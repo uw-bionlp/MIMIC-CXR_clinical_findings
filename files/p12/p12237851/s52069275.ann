@@ -1,0 +1,20 @@
+T1	Lesion-Size 265 271	1.6 cm
+T2	Lesion-Characteristic 272 279	rounded
+T3	Lesion-Description 280 287	opacity
+T4	Medical-Anatomy 308 315	lateral
+T5	Medical-Assertion 331 334;336 345	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 346 359	nipple shadow
+T7	Medical-Assertion 464 466	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 467 474;476 484	pleural effusion
+T9	Medical-Problem 488 500	pneumothorax
+T10	Lesion-Characteristic 643 650	rounded
+T11	Lesion-Description 651 658	opacity
+T12	Medical-Anatomy 679 686	lateral
+E10	Medical-Anatomy:T12
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10

@@ -1,0 +1,29 @@
+T1	Medical-Problem 311 331	severe consolidation
+T2	Medical-Anatomy 339 344;346 356	right upper lobe
+T3	Medical-Problem 396 418	persistent obstruction
+T4	Medical-Anatomy 421 446	right upper lobe bronchus
+T5	Medical-Problem 449 476	Heterogeneous opacification
+T6	Medical-Anatomy 484 499	left lower lobe
+T7	Medical-Assertion 515 523	could be
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 524 535	atelectasis
+T9	Medical-Problem 539 566	aspiration of contents from
+T10	Medical-Anatomy 571 576;578 588	right upper lobe
+T11	Medical-Assertion 623 625	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 626 638	pneumothorax
+T13	Medical-Problem 642 653;655 671	appreciable pleural effusion
+T14	Medical-Problem 674 694	Cardiomegaly is mild
+E12	Medical-Problem:T14
+T15	Medical-Anatomy 697 710	Upper trachea
+T16	Medical-Problem 714 733	displaced rightward
+T17	Medical-Problem 740 770	chronic cervicothoracic goiter
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E14	Medical-Problem:T16 has-Medical-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T15

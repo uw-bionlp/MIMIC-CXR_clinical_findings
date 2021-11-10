@@ -1,0 +1,28 @@
+T1	Lesion-Description 212 218	nodule
+T2	Lesion-Anatomy 235 250	left lower lobe
+T3	Lesion-Size 260 264	7 mm
+T4	Medical-Assertion 338 349	no evidence
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 353 372	vascular congestion
+T6	Medical-Problem 374 381;383 391	pleural effusion
+T7	Medical-Problem 396 408	pneumothorax
+T8	Lesion-Assertion 411 413	No
+A2	Lesion-AssertionValue T8 absent
+T9	Lesion-Characteristic 414 424	concerning
+T10	Lesion-Characteristic 425 432	osseous
+T11	Lesion-Characteristic 436 447	soft tissue
+T12	Lesion-Description 448 455	lesions
+T13	Lesion-Anatomy 473 488	Left lower lobe
+T14	Lesion-Characteristic 489 501	ground-glass
+T15	Lesion-Description 502 508	nodule
+T16	Lesion-Size 519 523	7 mm
+T17	Lesion-Assertion 524 529;531 540	could represent
+A3	Lesion-AssertionValue T17 possible
+T18	Lesion-Description 543 552	granuloma
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Present:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T4
+E10	Lesion-Description:T12 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T14 has-Lesion-Size-Present:T16
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T13 has-Lesion-Assertion:T17

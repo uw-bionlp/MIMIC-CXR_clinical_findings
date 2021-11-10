@@ -1,0 +1,21 @@
+T1	Medical-Problem 432 460	Moderate cardiac enlargement
+E1	Medical-Problem:T1
+T2	Medical-Assertion 539 541	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 542 547	edema
+T4	Medical-Problem 550 568;570 583	Mild heterogeneous opacification
+T5	Medical-Anatomy 591 620	retro cardiac left lower lobe
+T6	Medical-Assertion 621 629	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 630 639	pneumonia
+T8	Medical-Problem 660 671	atelectasis
+T9	Medical-Problem 674 702	Pleural effusion on the left
+E7	Medical-Problem:T9
+T10	Medical-Assertion 721 723	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 725 737	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

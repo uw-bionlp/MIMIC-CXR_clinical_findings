@@ -1,0 +1,32 @@
+T1	Medical-Problem 267 278;280 293	increase in pleural fluid
+T2	Medical-Anatomy 294 302	tracking
+T3	Medical-Anatomy 313 339	major fissure on the right
+T4	Medical-Assertion 346 349;351 360	may represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 361 375	redistribution
+T6	Medical-Problem 382 408	total increase in effusion
+T7	Medical-Assertion 412 424	not excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 430 457	small amount of pleural air
+T9	Medical-Anatomy 474 484	right base
+T10	Medical-Problem 524 556	Bilateral lower lobe atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Problem 567 575;577 589	Moderate cardiomegaly
+E9	Medical-Problem:T11
+T12	Medical-Problem 672 703	Redistribution of pleural fluid
+T13	Medical-Anatomy 714 740	major fissure on the right
+T14	Medical-Assertion 748 756	possible
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 757 764	overall
+T16	Medical-Problem 765 799	increase in the extent of effusion
+T17	Medical-Problem 806 828	Persistent pleural air
+E14	Medical-Problem:T17
+T18	Medical-Problem 856 898	Unchanged bilateral lower lobe atelectasis
+E15	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14

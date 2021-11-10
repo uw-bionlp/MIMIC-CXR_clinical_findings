@@ -1,0 +1,17 @@
+T1	Medical-Problem 251 271	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 331 346	left lower lobe
+T3	Medical-Problem 350 368	new patchy opacity
+T4	Medical-Problem 399 406;408 436	minimal linear bibasilar atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Assertion 467 469	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 470 486	pleural effusion
+T7	Medical-Problem 491 503	pneumothorax
+T8	Medical-Assertion 524 532	Possible
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 533 570	early/focal left lower lobe pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

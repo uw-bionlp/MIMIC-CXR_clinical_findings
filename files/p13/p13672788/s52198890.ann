@@ -1,0 +1,44 @@
+T1	Medical-Problem 214 252	new interstitial pulmonary abnormality
+T2	Medical-Anatomy 253 279;281 285	predominantly in the right lung
+T3	Medical-Problem 290 315	little basal predominance
+T4	Medical-Problem 318 338	Increased prominence
+T5	Medical-Anatomy 346 355;357 368	pulmonary vasculature
+T6	Medical-Assertion 372 385	suggestive of
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 386 415	elevated left atrial pressure
+T8	Medical-Assertion 421 424	not
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 426 453	generalized volume overload
+T10	Medical-Problem 456 479	Right hilar enlargement
+E8	Medical-Problem:T10
+T11	Lesion-Assertion 480 485	could
+A3	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 489 494	nodal
+T13	Lesion-Description 499 507	vascular
+E10	Lesion-Description:T13
+T14	Medical-Problem 513 536	area of linear scarring
+T15	Medical-Anatomy 544 565	left lower hemithorax
+T16	Medical-Problem 627 656	Active interstitial pneumonia
+E13	Medical-Problem:T16
+T17	Medical-Problem 658 668	hemorrhage
+E14	Medical-Problem:T17
+T18	Medical-Problem 673 686	drug reaction
+E15	Medical-Problem:T18
+T19	Medical-Assertion 688 692;694 705	more likely than
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 706 711	edema
+T21	Lesion-Assertion 730 738	Possible
+A5	Lesion-AssertionValue T21 possible
+T22	Lesion-Anatomy 739 750	right hilar
+T23	Lesion-Description 751 761	adenopathy
+T24	Medical-Problem 797 809	pneumocystis
+E19	Medical-Problem:T24
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T12 has-Lesion-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Lesion-Description:T23 has-Lesion-Assertion:T21 has-Lesion-Anatomy:T22

@@ -1,0 +1,35 @@
+T1	Medical-Problem 291 324;326 335	persistent increased interstitial opacities
+T2	Medical-Anatomy 336 356	throughout the lungs
+T3	Medical-Problem 465 482	Increased opacity
+T4	Medical-Anatomy 490 521	costophrenic angles posteriorly
+T5	Medical-Problem 542 553	atelectasis
+T6	Medical-Assertion 558 566	possible
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 567 582	small effusions
+T8	Medical-Problem 584 607	Compression deformities
+T9	Medical-Anatomy 615 620;622 653	lower thoracic and upper lumbar spine
+T10	Medical-Problem 727 769	Increased interstitial markings throughout
+E9	Medical-Problem:T10
+T11	Medical-Assertion 786 804;806 808	may be in part due to
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 809 835	chronic underlying process
+T13	Medical-Problem 845 876	superimposed component of edema
+T14	Medical-Assertion 881 890	suspected
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 893 904	Atelectasis
+E12	Medical-Problem:T15
+T16	Medical-Assertion 909 917	probable
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 918 933	small effusions
+T18	Medical-Problem 935 944	infection
+T19	Medical-Assertion 945 966	not entirely excluded
+A5	Medical-AssertionValue T19 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16 has-Medical-Assertion:T19

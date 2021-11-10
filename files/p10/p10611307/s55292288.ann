@@ -1,0 +1,23 @@
+T1	Medical-Assertion 291 293	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 294 310	pleural effusion
+T3	Medical-Problem 314 326	pneumothorax
+T4	Lesion-Characteristic 332 339	cluster
+T5	Lesion-Characteristic 348 357	calcified
+T6	Lesion-Description 358 368	granulomas
+T7	Lesion-Size-Trend 377 386	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Lesion-Anatomy 394 403	left apex
+T9	Medical-Problem 407 435	Slight subpleural thickening
+T10	Medical-Anatomy 439 453	each lung apex
+T11	Medical-Problem 475 513	Small-to-moderate anterior osteophytes
+T12	Medical-Anatomy 536 550;552 557	lower thoracic spine
+T13	Medical-Assertion 575 586	No evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 590 603	acute disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5 has-Lesion-Size-Trend:T7 has-Lesion-Anatomy:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

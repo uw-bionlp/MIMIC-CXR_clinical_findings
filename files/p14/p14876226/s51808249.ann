@@ -1,0 +1,29 @@
+T1	Medical-Problem 67 70	PCP
+E1	Medical-Problem:T1
+T2	Medical-Problem 74 98	other atypical pneumonia
+E2	Medical-Problem:T2
+T3	Medical-Problem 184 211	new heterogeneous opacities
+T4	Medical-Anatomy 219 237;239 243	left mid and lower lung
+T5	Medical-Anatomy 255 271	right lower lung
+T6	Medical-Problem 307 315;317 340	biapical heterogeneous opacities
+E6	Medical-Problem:T6
+T7	Medical-Assertion 343 345	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 346 372	definite pleural effusions
+T9	Medical-Assertion 375 377	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 378 390	pneumothorax
+T11	Medical-Problem 477 503	biapical radiation changes
+E9	Medical-Problem:T11
+T12	Medical-Assertion 514 520	likely
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 522 531	overlying
+T14	Medical-Problem 532 559	atypical organism infection
+T15	Medical-Problem 578 596;598 610	drug toxicity from chemotherapy
+T16	Medical-Anatomy 638 675;677 688	left mid, left lower, and right lower lung fields
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T12 has-Medical-Anatomy:T16

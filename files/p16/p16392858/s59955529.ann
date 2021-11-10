@@ -1,0 +1,39 @@
+T1	Medical-Problem 314 352	Mild enlargement of cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 416 438	aorta remains tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 451 469	perihilar haziness
+T4	Medical-Problem 474 497	vascular indistinctness
+T5	Medical-Problem 503 511;513 522	alveolar opacities
+T6	Medical-Anatomy 546 561	right lung base
+T7	Medical-Assertion 577 591	concerning for
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 593 628	asymmetric moderate pulmonary edema
+T9	Medical-Problem 637 646	infection
+T10	Medical-Anatomy 654 669	right lung base
+T11	Medical-Assertion 671 695	cannot be fully excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 698 700	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 701 723	large pleural effusion
+T14	Medical-Problem 727 739	pneumothorax
+T15	Medical-Assertion 761 763	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 764 791	acute osseous abnormalities
+T17	Medical-Assertion 820 834	concerning for
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 835 888;890 894	moderate asymmetric pulmonary edema, right worse than left
+T19	Medical-Problem 900 909	infection
+T20	Medical-Assertion 910 939	cannot be completely excluded
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Anatomy 947 962	right lung base
+E3	Medical-Problem:T3 has-Medical-Anatomy:T6
+E4	Medical-Problem:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T19 has-Medical-Assertion:T17 has-Medical-Assertion:T20 has-Medical-Anatomy:T21

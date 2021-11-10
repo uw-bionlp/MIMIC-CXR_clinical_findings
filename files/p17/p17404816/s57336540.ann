@@ -1,0 +1,33 @@
+T1	Medical-Problem 319 341	heart remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 348 359	may reflect
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 360 372	cardiomegaly
+T4	Medical-Problem 384 404	pericardial effusion
+T5	Medical-Assertion 405 430	should also be considered
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Anatomy 437 453	pulmonary artery
+T7	Medical-Assertion 479 504	raises the possibility of
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 505 534;536 548	underlying pulmonary arterial hypertension
+T9	Medical-Problem 555 576	left hemidiaphragm is
+E6	Medical-Problem:T9
+T10	Medical-Problem 577 594	slightly elevated
+E7	Medical-Problem:T10
+T11	Medical-Assertion 634 645	No evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 649 664	pulmonary edema
+T13	Medical-Assertion 667 669	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 670 684;686 699	focal airspace consolidation
+T15	Medical-Problem 719 728	pneumonia
+T16	Medical-Assertion 731 733	No
+A6	Medical-AssertionValue T16 absent
+T17	Medical-Problem 734 746	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T13
+E11	Medical-Problem:T17 has-Medical-Assertion:T16

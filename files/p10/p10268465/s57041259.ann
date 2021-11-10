@@ -1,0 +1,22 @@
+T1	Medical-Problem 293 308	pulmonary edema
+T2	Medical-Assertion 313 327	almost cleared
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 338 342	only
+T4	Medical-Anatomy 396 412	right lower lobe
+T5	Medical-Problem 415 439	Persisting consolidation
+T6	Medical-Anatomy 448 463	left lower lobe
+T7	Medical-Assertion 464 472	could be
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 473 484	atelectasis
+T9	Medical-Problem 488 497	pneumonia
+T10	Medical-Problem 553 580	Small left pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 762 764	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 765 777	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

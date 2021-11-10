@@ -1,0 +1,34 @@
+T1	Medical-Problem 132 141	pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Problem 143 155	cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 157 163	pneumo
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 279 284	lungs
+T5	Medical-Problem 289 302	hyperinflated
+T6	Medical-Assertion 313 320	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 321 334	focal opacity
+T8	Medical-Problem 336 351	pulmonary edema
+T9	Medical-Problem 354 370	pleural effusion
+T10	Medical-Problem 374 386	pneumothorax
+T11	Medical-Assertion 449 451	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 452 460	free air
+T13	Medical-Anatomy 473 492	right hemidiaphragm
+T14	Lesion-Anatomy 506 522	right upper lung
+T15	Lesion-Characteristic 523 532	calcified
+T16	Lesion-Description 533 543	granulomas
+T17	Medical-Problem 545 568	Old right rib fractures
+E15	Medical-Problem:T17
+T18	Medical-Assertion 599 601	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 602 629	acute intrathoracic process
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T14 has-Lesion-Characteristic:T15
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

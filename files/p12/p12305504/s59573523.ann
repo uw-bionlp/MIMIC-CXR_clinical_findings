@@ -1,0 +1,32 @@
+T1	Medical-Assertion 111 113;115 124	no  evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 128 137	pneumonia
+T3	Medical-Assertion 300 302;304 313	no  evidence
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 317 326	pneumonia
+T5	Medical-Problem 824 838	patchy opacity
+T6	Medical-Anatomy 846 856	right base
+T7	Medical-Assertion 857 874	likely reflecting
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 875 886	atelectasis
+T9	Medical-Assertion 888 892;894 900	less likely
+A4	Medical-AssertionValue T9 possible
+T10	Medical-Problem 901 911	aspiration
+T11	Medical-Problem 915 924	pneumonia
+T12	Medical-Assertion 926 928	No
+A5	Medical-AssertionValue T12 absent
+T13	Medical-Problem 941 956	pulmonary edema
+T14	Medical-Problem 961 973	pneumothorax
+T15	Medical-Problem 1029 1037	Calcific
+E10	Medical-Problem:T15
+T16	Medical-Problem 1039 1046	density
+T17	Medical-Anatomy 1061 1085	body of the left scapula
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Anatomy:T6 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E8	Medical-Problem:T13 has-Medical-Assertion:T12
+E9	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Anatomy:T17

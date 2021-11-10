@@ -1,0 +1,35 @@
+T1	Medical-Assertion 38 40	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 41 74	acute cardiopulmonary abnormality
+T3	Medical-Problem 79 104	Interstitial lung disease
+E2	Medical-Problem:T3
+T4	Medical-Problem 755 775	Subpleural opacities
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 783 787	lung
+T6	Lesion-Anatomy 868 878	subpleural
+T7	Lesion-Description 879 884	cysts
+T8	Medical-Problem 890 908	pleural thickening
+E7	Medical-Problem:T8
+T9	Medical-Problem 914 921	opacity
+T10	Medical-Anatomy 929 938	lung base
+T11	Medical-Problem 984 1009	subpleural cyst formation
+T12	Medical-Problem 1014 1037	interstitial thickening
+T13	Medical-Assertion 1112 1114	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1115 1127	pneumothorax
+T15	Medical-Problem 1131 1139	definite
+E13	Medical-Problem:T15
+T16	Medical-Problem 1140 1156	pleural effusion
+T17	Medical-Assertion 1287 1298	No evidence
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1302 1311	pneumonia
+T19	Medical-Problem 1320 1355	Extensive interstitial lung disease
+E16	Medical-Problem:T19
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T13
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

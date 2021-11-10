@@ -1,0 +1,24 @@
+T1	Lesion-Size-Trend 228 243;245 260	increase in the size and number
+A1	Lesion-Size-TrendValue T1 increasing
+T2	Lesion-Anatomy 264 273	pulmonary
+T3	Lesion-Description 274 281	nodules
+T4	Medical-Problem 345 368	increased opacification
+T5	Medical-Anatomy 376 385	left base
+T6	Medical-Problem 391 395;397 451	poor definition of the hemidiaphragm and costophrenic angle
+T7	Medical-Assertion 467 472;474 488	could merely reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 489 500	volume loss
+T9	Medical-Problem 505 521	pleural effusion
+T10	Medical-Problem 560 582	superimposed pneumonia
+E8	Medical-Problem:T10
+T11	Medical-Problem 625 635	Prominence
+T12	Medical-Anatomy 643 668	right paratracheal region
+T13	Lesion-Anatomy 692 697	hilar
+T14	Lesion-Description 699 709	adenopathy
+E2	Lesion-Description:T3 has-Lesion-Size-Trend:T1 has-Lesion-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T13

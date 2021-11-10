@@ -1,0 +1,24 @@
+T1	Medical-Problem 405 418	Opacification
+T2	Medical-Anatomy 426 441	left hemithorax
+T3	Medical-Problem 512 526	Multiple bulla
+T4	Medical-Anatomy 592 606	left lung apex
+T5	Medical-Problem 612 617;619 629	right hemithorax
+E5	Medical-Problem:T5
+T6	Medical-Problem 630 639	opacities
+E6	Medical-Problem:T6
+T7	Medical-Assertion 667 673	likely
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 692 703	atelectasis
+T9	Medical-Problem 708 721	pleural fluid
+T10	Medical-Problem 724 749	Prior right rib fractures
+E9	Medical-Problem:T10
+T11	Medical-Problem 785 824	Increased left hemithorax opacification
+E10	Medical-Problem:T11
+T12	Medical-Problem 872 892	Concurrent pneumonia
+T13	Medical-Assertion 896 904	possible
+A2	Medical-AssertionValue T13 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E11	Medical-Problem:T12 has-Medical-Assertion:T13

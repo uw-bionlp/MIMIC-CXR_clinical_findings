@@ -1,0 +1,28 @@
+T1	Medical-Problem 189 194	aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 198 213	mildly tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 231 235;237 250	mild calcification
+T4	Medical-Anatomy 258 269	aortic arch
+T5	Lesion-Size 313 317	7-mm
+T6	Lesion-Characteristic 318 327	calcified
+T7	Lesion-Description 328 334	nodule
+T8	Lesion-Anatomy 346 361	left lower lobe
+T9	Lesion-Description 403 412	granuloma
+T10	Medical-Problem 415 429	Hyperinflation
+E10	Medical-Problem:T10
+T11	Medical-Assertion 452 462;464 466	suggestive of
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 467 482	underlying COPD
+T13	Medical-Assertion 495 497	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 498 525	acute osseous abnormalities
+T15	Medical-Assertion 654 656	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 657 690	acute cardiopulmonary abnormality
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T9 has-Lesion-Anatomy:T8
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

@@ -1,0 +1,40 @@
+T1	Medical-Problem 268 290	right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 332 342;344 352	associated blunting
+T3	Medical-Anatomy 360 385	right costophrenic sulcus
+T4	Medical-Problem 391 402	obscuration
+T5	Medical-Anatomy 410 417;419 438	lateral right hemidiaphragm
+T6	Medical-Assertion 477 479	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 480 485;487 500	focal consolidation
+T8	Medical-Problem 504 524	over pulmonary edema
+T9	Medical-Problem 529 541	pneumothorax
+T10	Lesion-Anatomy 697 735	posterior lateral right upper quadrant
+T11	Lesion-Characteristic 740 762	irregularly marginated
+T12	Lesion-Characteristic 764 781	densely calcified
+T13	Lesion-Description 782 786	mass
+T14	Lesion-Size 811 823	3.2 x 2.2 cm
+T15	Lesion-Size-Trend 834 837;839 860	not significantly changed
+A2	Lesion-Size-TrendValue T15 no-change
+T16	Medical-Problem 972 994	right pleural effusion
+E14	Medical-Problem:T16
+T17	Lesion-Characteristic 1013 1022	calcified
+T18	Lesion-Description 1023 1027	mass
+T19	Lesion-Size-Trend 1053 1062	stability
+A3	Lesion-Size-TrendValue T19 no-change
+T20	Lesion-Anatomy 1081 1109	posterior right hepatic lobe
+T21	Lesion-Characteristic 1124 1133	calcified
+T22	Lesion-Description 1135 1145	hemangioma
+T23	Lesion-Characteristic 1147 1159	echinococcal
+T24	Lesion-Description 1160 1164	cyst
+T25	Medical-Problem 1169 1187	old abscess cavity
+E22	Medical-Problem:T25
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12 has-Lesion-Size-Present:T14 has-Lesion-Size-Trend:T15
+E16	Lesion-Description:T18 has-Lesion-Characteristic:T17 has-Lesion-Size-Trend:T19
+E19	Lesion-Description:T22 has-Lesion-Anatomy:T20 has-Lesion-Characteristic:T21
+E21	Lesion-Description:T24 has-Lesion-Anatomy:T20 has-Lesion-Characteristic:T23

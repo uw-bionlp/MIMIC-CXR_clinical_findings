@@ -1,0 +1,23 @@
+T1	Medical-Problem 182 189	rhonchi
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 285 290	lungs
+T3	Medical-Problem 295 308	hyperinflated
+T4	Medical-Assertion 320 325	clear
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 330 353	confluent consolidation
+T6	Medical-Problem 357 373	pleural effusion
+T7	Lesion-Anatomy 376 386	Suprahilar
+T8	Lesion-Description 387 402	nodular opacity
+T9	Lesion-Anatomy 411 416	right
+T10	Lesion-Size-Trend 435 444	unchanged
+A2	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Problem 530 558;560 569	old, healed left lateral rib fractures
+E9	Medical-Problem:T11
+T12	Medical-Assertion 587 589	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 590 619	acute cardiopulmonary process
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,16 @@
+T1	Medical-Problem 222 235	consolidation
+T2	Medical-Anatomy 243 253	right base
+T3	Lesion-Anatomy 276 287;289 293	right lower lobe
+T4	Lesion-Description 294 298	mass
+T5	Medical-Assertion 348 350	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 351 365	pneumothoraces
+T7	Medical-Assertion 378 380	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 381 402	overt pulmonary edema
+T9	Medical-Problem 404 426	Heart size is enlarged
+E7	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 377 387;389 393	right lung base
+T2	Medical-Problem 394 408	linear opacity
+T3	Medical-Problem 469 493	chronic mucoid impaction
+T4	Lesion-Anatomy 502 518	right lower lobe
+T5	Lesion-Description 519 525	nodule
+T6	Medical-Problem 568 596	Small right pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Assertion 629 631	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 632 655	radiopaque foreign body
+T9	Medical-Problem 658 696;698 705	Multilevel thoracic spine degenerative changes
+E8	Medical-Problem:T9
+T10	Medical-Anatomy 723 734	Right lower
+T11	Medical-Assertion 777 783;785 793	likely reflects
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 794 818	chronic mucoid impaction
+T13	Medical-Problem 821 849	Small right pleural effusion
+E11	Medical-Problem:T13
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

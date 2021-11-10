@@ -1,0 +1,53 @@
+T1	Medical-Assertion 497 500	not
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 501 510	congested
+T3	Medical-Assertion 513 524	No evidence
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 528 533;535 568	acute pulmonary parenchymal infiltrates
+T5	Lesion-Description 662 669	nodular
+E3	Lesion-Description:T5
+T6	Medical-Anatomy 703 708	right
+E4	Medical-Anatomy:T6
+T7	Lesion-Anatomy 781 790	pulmonary
+T8	Lesion-Description 791 795	mass
+T9	Lesion-Anatomy 805 834;836 846	anterior segment of the right upper lobe
+T10	Medical-Assertion 948 959	no evidence
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 963 975	pneumothorax
+T12	Lesion-Assertion 980 982	no
+A4	Lesion-AssertionValue T12 absent
+T13	Lesion-Size-Trend 983 986	new
+A5	Lesion-Size-TrendValue T13 new
+T14	Lesion-Characteristic 988 998	suspicious
+T15	Lesion-Anatomy 999 1008	pulmonary
+T16	Lesion-Description 1034 1040	masses
+T17	Lesion-Description 1410 1421	mass lesion
+E12	Lesion-Description:T17
+T18	Medical-Problem 1515 1520;1522 1551	small prominent right-sided contour
+T19	Medical-Anatomy 1559 1599;1601 1612	superior mediastinum at the level of the aortic arch
+T20	Lesion-Size-Trend 1795 1801	Stable
+A6	Lesion-Size-TrendValue T20 no-change
+T21	Lesion-Anatomy 1802 1813	right-sided
+T22	Lesion-Description 1814 1818	mass
+T23	Lesion-Assertion 1832 1840	Possible
+A7	Lesion-AssertionValue T23 possible
+T24	Lesion-Size-Trend 1851 1854	new
+A8	Lesion-Size-TrendValue T24 new
+T25	Lesion-Description 1855 1859	mass
+T26	Lesion-Anatomy 1864 1884	superior mediastinum
+T27	Medical-Assertion 1887 1898	No evidence
+A9	Medical-AssertionValue T27 absent
+T28	Medical-Problem 1902 1933	new acute pulmonary infiltrates
+T29	Medical-Problem 1936 1955	cardiac enlargement
+T30	Medical-Problem 1959 1978	vascular congestion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Lesion-Description:T16 has-Lesion-Assertion:T12 has-Lesion-Size-Trend:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15
+E13	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Lesion-Description:T22 has-Lesion-Size-Trend:T20 has-Lesion-Anatomy:T21
+E17	Lesion-Description:T25 has-Lesion-Assertion:T23 has-Lesion-Size-Trend:T24 has-Lesion-Anatomy:T26
+E19	Medical-Problem:T28 has-Medical-Assertion:T27
+E20	Medical-Problem:T29 has-Medical-Assertion:T27
+E21	Medical-Problem:T30 has-Medical-Assertion:T27

@@ -1,0 +1,25 @@
+T1	Medical-Problem 202 215	Consolidation
+T2	Medical-Anatomy 226 259	right lower lobe and retrocardiac
+T3	Medical-Problem 312 325	consolidation
+T4	Medical-Anatomy 333 338;340 351	right middle lobe
+T5	Medical-Assertion 352 364	has resolved
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Assertion 387 389	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 390 406	pleural effusion
+T8	Medical-Problem 411 423	pneumothorax
+T9	Medical-Anatomy 444 455	Right lower
+T10	Medical-Assertion 492 505	could reflect
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 506 521;523 538	recurrent lower lobe pneumonias
+T12	Medical-Problem 627 642	chronic process
+E9	Medical-Problem:T12
+T13	Medical-Problem 653 669	lipoid pneumonia
+E10	Medical-Problem:T13
+T14	Medical-Problem 677 699	pneumonic presentation
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10

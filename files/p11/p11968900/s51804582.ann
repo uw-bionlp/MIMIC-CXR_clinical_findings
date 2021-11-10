@@ -1,0 +1,38 @@
+T1	Medical-Problem 364 411	diffuse widespread pulmonary airspace opacities
+T2	Medical-Anatomy 435 464	right middle lobe and lingula
+T3	Medical-Problem 497 532	small to moderate left pneumothorax
+E3	Medical-Problem:T3
+T4	Medical-Problem 600 622	Mild septal thickening
+E4	Medical-Problem:T4
+T5	Medical-Assertion 623 636	may be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 637 646;648 653	pulmonary edema
+T7	Medical-Problem 665 698	small bilateral pleural effusions
+E6	Medical-Problem:T7
+T8	Medical-Assertion 760 776	largely obscured
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 780 798	airspace opacities
+T10	Medical-Problem 873 908	Small to moderate left pneumothorax
+E8	Medical-Problem:T10
+T11	Medical-Problem 969 1005	Diffuse bilateral airspace opacities
+T12	Medical-Problem 1011 1035	more confluent opacities
+T13	Medical-Anatomy 1044 1073	right middle lobe and lingula
+T14	Medical-Assertion 1080 1093	may represent
+A3	Medical-AssertionValue T14 possible
+T15	Lesion-Size-Trend 1094 1109	rapid worsening
+A4	Lesion-Size-TrendValue T15 increasing
+T16	Medical-Problem 1128 1159	coexisting multifocal pneumonia
+T17	Medical-Problem 1165 1182	Septal thickening
+E13	Medical-Problem:T17
+T18	Medical-Assertion 1183 1196	likely due to
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1197 1217	mild pulmonary edema
+T20	Medical-Problem 1223 1238;1240 1257	small bilateral pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T13
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T18

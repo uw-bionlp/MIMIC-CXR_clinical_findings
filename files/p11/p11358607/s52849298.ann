@@ -1,0 +1,21 @@
+T1	Medical-Problem 337 341;343 361	Lung volumes remain low
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 381 411	right upper and left mid lungs
+T3	Medical-Problem 431 451	persistent opacities
+T4	Medical-Anatomy 459 489	left upper and right mid lungs
+T5	Medical-Problem 497 521	heart is mildly enlarged
+E5	Medical-Problem:T5
+T6	Medical-Assertion 533 535	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 536 558	large pleural effusion
+T8	Medical-Problem 562 574	pneumothorax
+T9	Medical-Problem 599 630	Scattered bilateral atelectasis
+E8	Medical-Problem:T9
+T10	Medical-Problem 655 663;665 676	residual atelectasis
+T11	Medical-Anatomy 680 710	left upper and right mid lungs
+T12	Medical-Problem 716 733	Mild cardiomegaly
+E11	Medical-Problem:T12
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11

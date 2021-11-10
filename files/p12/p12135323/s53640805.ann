@@ -1,0 +1,24 @@
+T1	Medical-Assertion 187 189	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 190 213	detectable pneumothorax
+T3	Medical-Problem 220 233	volume of air
+T4	Medical-Anatomy 241 252	pericardium
+T5	Medical-Anatomy 261 272	mediastinum
+T6	Medical-Problem 321 325;327 339	Mild cardiomegaly
+E5	Medical-Problem:T6
+T7	Medical-Problem 344 396	pulmonary vascular and mediastinal venous distention
+E6	Medical-Problem:T7
+T8	Medical-Assertion 418 426	probably
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Assertion 427 429	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 430 445	pulmonary edema
+T11	Medical-Problem 448 474;476 493	Right basal atelectasis is moderately severe
+E8	Medical-Problem:T11
+T12	Medical-Assertion 729 731	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 732 760	appreciable pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

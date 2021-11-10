@@ -1,0 +1,25 @@
+T1	Medical-Assertion 33 44	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 48 61	acute disease
+T3	Lesion-Description 64 77	Nodular focus
+E2	Lesion-Description:T3
+T4	Lesion-Description 133 139	nodule
+E3	Lesion-Description:T4
+T5	Lesion-Characteristic 651 659	discrete
+T6	Lesion-Description 660 673	nodular focus
+T7	Lesion-Anatomy 683 703;705 739	inferior to the left hilum near the left cardiac border
+T8	Lesion-Assertion 792 820	at least raises some concern
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Description 827 833	nodule
+T10	Medical-Assertion 970 981	No evidence
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 985 1014	acute cardiopulmonary disease
+T12	Medical-Assertion 1017 1025	Possible
+A4	Medical-AssertionValue T12 possible
+T13	Lesion-Anatomy 1026 1030;1032 1042	left infrahilar
+T14	Lesion-Description 1043 1049	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E7	Lesion-Description:T9 has-Lesion-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Lesion-Description:T14 has-Lesion-Anatomy:T13

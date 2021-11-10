@@ -1,0 +1,17 @@
+T1	Medical-Anatomy 388 400	Main bronchi
+T2	Medical-Problem 405 422	severely narrowed
+T3	Lesion-Characteristic 426 438	infiltrative
+T4	Lesion-Anatomy 440 451	mediastinal
+T5	Lesion-Description 452 457	tumor
+T6	Medical-Problem 459 487	Small right pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Assertion 576 578	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 579 590;592 604	appreciable pneumothorax
+T9	Medical-Problem 606 633	Mild left basal atelectasis
+E8	Medical-Problem:T9
+T10	Medical-Problem 638 665	small left pleural effusion
+E9	Medical-Problem:T10
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7

@@ -1,0 +1,23 @@
+T1	Medical-Assertion 326 328	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 329 345	pleural effusion
+T3	Medical-Problem 349 361	pneumothorax
+T4	Lesion-Description 372 378	nodule
+T5	Lesion-Size-Trend 396 402	stable
+A2	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Anatomy 422 473	right upper lobe and course of the right second rib
+T7	Lesion-Size-Trend 476 501	not significantly changed
+A3	Lesion-Size-TrendValue T7 no-change
+T8	Lesion-Size-Trend 555 561	Stable
+A4	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Anatomy 562 566	lung
+T10	Lesion-Description 567 573	nodule
+T11	Lesion-Anatomy 581 597	right upper lobe
+T12	Medical-Assertion 600 611	No evidence
+A5	Medical-AssertionValue T12 absent
+T13	Medical-Problem 615 620;622 629	acute disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Size-Trend:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E6	Lesion-Description:T10 has-Lesion-Size-Trend:T8 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T11
+E8	Medical-Problem:T13 has-Medical-Assertion:T12

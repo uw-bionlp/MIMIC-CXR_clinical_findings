@@ -1,0 +1,21 @@
+T1	Medical-Problem 305 333	Bilateral airspace opacities
+T2	Medical-Anatomy 341 359	mid and lower lung
+T3	Medical-Assertion 371 381;383 386	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 387 402	pulmonary edema
+T5	Medical-Problem 518 524;526 545	Mildly enlarged heart size
+E4	Medical-Problem:T5
+T6	Medical-Assertion 621 623	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 624 640	pleural effusion
+T8	Medical-Problem 643 672;674 681	Mildly increased retrocardiac opacity
+E6	Medical-Problem:T8
+T9	Medical-Assertion 685 696	likely from
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 697 708	atelectasis
+T11	Medical-Problem 716 729	consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

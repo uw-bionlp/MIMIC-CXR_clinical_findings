@@ -1,0 +1,25 @@
+T1	Medical-Problem 230 240	tortuosity
+T2	Medical-Anatomy 248 256;258 263	thoracic aorta
+T3	Medical-Problem 275 291	patchy opacities
+T4	Medical-Anatomy 303 319	both lung fields
+T5	Medical-Anatomy 347 376	left upper lobe and left base
+T6	Medical-Assertion 378 391	equivocal for
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 392 401	pneumonia
+T8	Medical-Problem 418 428	prominence
+E7	Medical-Problem:T8
+T9	Medical-Assertion 556 558	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 559 566;568 577	pleural effusions
+T11	Medical-Problem 581 590	signs for
+E9	Medical-Problem:T11
+T12	Medical-Problem 591 612	overt pulmonary edema
+T13	Medical-Assertion 632 634	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 636 650	pneumothoraces
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

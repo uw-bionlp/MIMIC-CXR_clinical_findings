@@ -1,0 +1,28 @@
+T1	Medical-Assertion 490 492	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 493 508	pulmonary edema
+T3	Medical-Problem 528 549	bibasilar atelectasis
+T4	Medical-Problem 555 572	pleural effusions
+T5	Medical-Assertion 573 586	have resolved
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Assertion 598 600	no
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 601 624	new focal consolidation
+T8	Medical-Assertion 637 639	no
+A4	Medical-AssertionValue T8 absent
+T9	Medical-Problem 640 652	pneumothorax
+T10	Medical-Problem 666 695	healing sixth rib fracture on
+E6	Medical-Problem:T10
+T11	Lesion-Characteristic 708 717	Expansile
+T12	Lesion-Description 718 724	lesion
+T13	Lesion-Anatomy 732 747	right fifth rib
+T14	Medical-Assertion 831 855	No radiographic evidence
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 862 891	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T5
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

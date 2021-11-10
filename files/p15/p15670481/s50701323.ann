@@ -1,0 +1,43 @@
+T1	Medical-Assertion 115 123	Question
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 125 137	rib fracture
+T3	Medical-Problem 141 153	pneumothorax
+T4	Medical-Problem 253 268;270 277	azygos lobe and fissure
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 284 289	lungs
+T6	Medical-Assertion 294 299	clear
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 303 316	consolidation
+T8	Medical-Problem 318 326	effusion
+T9	Medical-Problem 331 343	pneumothorax
+T10	Medical-Problem 420 445	Calcified pleural plaques
+T11	Medical-Anatomy 464 496	along the diaphragmatic surfaces
+T12	Medical-Problem 509 532	prior asbestos exposure
+T13	Medical-Problem 551 562	dislocation
+T14	Medical-Anatomy 570 575;577 595	right glenohumeral joint
+T15	Medical-Assertion 650 652	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 654 662	definite
+E13	Medical-Problem:T16
+T17	Medical-Problem 663 675	rib fracture
+T18	Medical-Problem 726 751	Calcified pleural plaques
+E15	Medical-Problem:T18
+T19	Medical-Assertion 752 762	suggesting
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 763 786	prior asbestos exposure
+T21	Medical-Problem 789 803	Right shoulder
+E17	Medical-Problem:T21
+T22	Medical-Assertion 860 862	No
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 863 876;878 887	displaced rib fractures
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

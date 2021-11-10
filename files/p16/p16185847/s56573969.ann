@@ -1,0 +1,34 @@
+T1	Medical-Problem 111 118;120 130	pleural thickening
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 389 394	Bulky
+T3	Lesion-Anatomy 395 410	bilateral hilar
+T4	Lesion-Description 411 426	lymphadenopathy
+T5	Medical-Problem 431 438;440 492	diffuse bilateral right-greater-than-left pleural thickening
+E5	Medical-Problem:T5
+T6	Medical-Problem 553 576	Heterogeneous opacities
+T7	Medical-Anatomy 584 589	right
+T8	Medical-Anatomy 591 609	mid and lower lung
+T9	Medical-Assertion 614 627	worrisome for
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 628 637	infection
+T11	Medical-Assertion 649 651	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 652 668	pleural effusion
+T13	Medical-Problem 673 685	pneumothorax
+T14	Medical-Problem 708 731	Heterogeneous opacities
+T15	Medical-Anatomy 739 763	right mid and lower lung
+T16	Medical-Assertion 764 777	worrisome for
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 779 788	infection
+T18	Lesion-Anatomy 851 866	Bilateral hilar
+T19	Lesion-Description 867 882	lymphadenopathy
+T20	Medical-Problem 887 905	pleural thickening
+E17	Medical-Problem:T20
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E16	Lesion-Description:T19 has-Lesion-Anatomy:T18

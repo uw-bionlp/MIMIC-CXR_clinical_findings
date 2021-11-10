@@ -1,0 +1,25 @@
+T1	Medical-Problem 398 437	Small to moderate left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 490 503	Opacification
+T3	Medical-Anatomy 511 532	base of the left lung
+T4	Medical-Assertion 533 538;540 542	could be
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 543 554	atelectasis
+T6	Medical-Problem 563 578	Small pneumonia
+T7	Medical-Assertion 582 594	not excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 606 617	no evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 622 641	pneumonia elsewhere
+T10	Medical-Problem 644 661	Mild cardiomegaly
+E7	Medical-Problem:T10
+T11	Medical-Problem 676 701	New left pleural effusion
+E8	Medical-Problem:T11
+T12	Medical-Assertion 729 747	raises possibility
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 752 780	post pericardiotomy syndrome
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

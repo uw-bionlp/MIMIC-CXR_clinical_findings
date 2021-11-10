@@ -1,0 +1,62 @@
+T1	Medical-Problem 32 59	Central perihilar opacities
+T2	Medical-Problem 64 92	reticular markings diffusely
+T3	Medical-Anatomy 103 107;109 115	both  lungs
+T4	Medical-Problem 147 162	pulmonary edema
+E4	Medical-Problem:T4
+T5	Medical-Problem 172 179	Opacity
+T6	Medical-Anatomy 194 203	left lung
+T7	Lesion-Anatomy 249 253	lung
+T8	Lesion-Description 254 258	mass
+T9	Medical-Problem 300 321	Bibasilar atelectasis
+E9	Medical-Problem:T9
+T10	Medical-Problem 642 671	bilateral perihilar opacities
+E10	Medical-Problem:T10
+T11	Medical-Problem 677 695	reticular markings
+E11	Medical-Problem:T11
+T12	Medical-Assertion 696 715	likely representing
+A1	Medical-AssertionValue T12 possible
+T13	Medical-Problem 716 733	septal thickening
+T14	Medical-Problem 769 784	pulmonary edema
+E13	Medical-Problem:T14
+T15	Lesion-Description 789 793	mass
+E14	Lesion-Description:T15
+T16	Medical-Problem 794 802	overlies
+T17	Medical-Anatomy 807 816	left lung
+T18	Medical-Problem 898 906	blunting
+T19	Medical-Anatomy 914 943	bilateral costophrenic angles
+T20	Medical-Assertion 950 972	may be compatible with
+A2	Medical-AssertionValue T20 possible
+T21	Medical-Problem 976 1009	trace bilateral pleural effusions
+T22	Medical-Problem 1010 1026	Linear opacities
+T23	Medical-Anatomy 1037 1053	both lower lobes
+T24	Medical-Assertion 1055 1071	likely represent
+A3	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1072 1096	subsegmental atelectasis
+T26	Medical-Problem 1138 1147	opacities
+T27	Medical-Problem 1152 1180	reticular markings diffusely
+T28	Medical-Anatomy 1191 1195;1197 1202	both lungs
+T29	Medical-Assertion 1204 1226	which likely represent
+A4	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1227 1242	pulmonary edema
+T31	Medical-Problem 1251 1258	Opacity
+E27	Medical-Problem:T31
+T32	Lesion-Assertion 1306 1312	likely
+A5	Lesion-AssertionValue T32 possible
+T33	Lesion-Anatomy 1325 1329	lung
+T34	Lesion-Description 1330 1334	mass
+T35	Medical-Problem 1375 1396	Bibasilar atelectasis
+E30	Medical-Problem:T35
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E15	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T18 has-Medical-Anatomy:T19
+E19	Medical-Problem:T21 has-Medical-Assertion:T20
+E20	Medical-Problem:T22 has-Medical-Assertion:T20 has-Medical-Anatomy:T23
+E22	Medical-Problem:T25 has-Medical-Anatomy:T23 has-Medical-Assertion:T24
+E23	Medical-Problem:T26 has-Medical-Anatomy:T28
+E24	Medical-Problem:T27 has-Medical-Anatomy:T28
+E26	Medical-Problem:T30 has-Medical-Assertion:T29
+E29	Lesion-Description:T34 has-Lesion-Assertion:T32 has-Lesion-Anatomy:T33

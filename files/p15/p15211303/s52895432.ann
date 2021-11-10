@@ -1,0 +1,27 @@
+T1	Medical-Problem 335 351;353 356	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 389 416	small left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Assertion 428 430;432 440	No definite
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 450 459	pneumonia
+T5	Medical-Problem 463 466	CHF
+T6	Lesion-Description 479 486	nodules
+E5	Lesion-Description:T6
+T7	Lesion-Assertion 536 538	No
+A2	Lesion-AssertionValue T7 absent
+T8	Lesion-Size 539 544	large
+T9	Lesion-Description 545 551	masses
+T10	Medical-Problem 703 719	Low lung volumes
+E8	Medical-Problem:T10
+T11	Medical-Problem 725 752	small left pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Assertion 755 766;768 772	No definite sign
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 776 785	pneumonia
+T14	Medical-Problem 789 798	overt CHF
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E7	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Size-Present:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12

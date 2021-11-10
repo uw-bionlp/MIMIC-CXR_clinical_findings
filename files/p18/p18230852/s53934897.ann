@@ -1,0 +1,24 @@
+T1	Medical-Problem 398 408;410 414	Left lower lobe
+E1	Medical-Problem:T1
+T2	Medical-Problem 415 422	opacity
+E2	Medical-Problem:T2
+T3	Medical-Assertion 426 432	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 433 442	pneumonia
+T5	Medical-Problem 485 495	aspiration
+T6	Medical-Assertion 499 507	possible
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 558 560	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 562 583	pleural abnormalities
+T9	Medical-Problem 587 599	pneumothorax
+T10	Medical-Problem 669 694	Left lower lobe pneumonia
+E7	Medical-Problem:T10
+T11	Medical-Assertion 696 711	possibly due to
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 712 722	aspiration
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

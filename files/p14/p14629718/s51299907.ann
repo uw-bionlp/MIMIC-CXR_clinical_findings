@@ -1,0 +1,25 @@
+T1	Medical-Problem 164 184	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 218 233;235 243	aorta is mildly tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 300 307;309 325	Minimal patchy opacities
+T4	Medical-Anatomy 333 343	lung bases
+T5	Medical-Assertion 344 358	likely reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 359 379	areas of atelectasis
+T7	Medical-Assertion 382 384	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 386 405	focal consolidation
+T9	Medical-Problem 407 423	pleural effusion
+T10	Medical-Problem 427 439	pneumothorax
+T11	Medical-Assertion 453 455	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 456 461;463 482	acute osseous abnormality
+T13	Medical-Problem 519 545	Mild bibasilar atelectasis
+E10	Medical-Problem:T13
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

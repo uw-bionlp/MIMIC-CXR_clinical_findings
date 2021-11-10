@@ -1,0 +1,34 @@
+T1	Medical-Problem 379 397	Marked volume loss
+T2	Medical-Anatomy 405 421	right upper lobe
+T3	Medical-Problem 454 524	similar mild-to-moderate relative elevation of the right hemidiaphragm
+E3	Medical-Problem:T3
+T4	Medical-Problem 542 559	much less density
+T5	Medical-Anatomy 580 591	right hilum
+T6	Medical-Problem 597 607;609 647	persistent streaky right infrahilar opacification
+E6	Medical-Problem:T6
+T7	Medical-Assertion 671 681	suggesting
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 683 703	residual atelectasis
+T9	Medical-Problem 707 715	scarring
+T10	Medical-Anatomy 723 740	right middle lobe
+T11	Medical-Problem 743 756;758 776	Mild biapical pleural thickening
+E10	Medical-Problem:T11
+T12	Medical-Assertion 803 805	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 806 831	definite pleural effusion
+T14	Medical-Problem 836 848	pneumothorax
+T15	Medical-Anatomy 923 928	right
+T16	Medical-Problem 940 953	opacification
+T17	Medical-Problem 958 964;966 970	volume loss
+T18	Medical-Assertion 977 997	no definite evidence
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1002 1011	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E14	Medical-Problem:T16 has-Medical-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T15
+E16	Medical-Problem:T19 has-Medical-Anatomy:T15 has-Medical-Assertion:T18

@@ -1,0 +1,24 @@
+T1	Medical-Problem 214 224	Prominence
+T2	Medical-Anatomy 228 243	ascending aorta
+T3	Medical-Problem 319 330;332 341	Substantial lucencies
+T4	Medical-Anatomy 345 361	both upper lungs
+T5	Medical-Problem 367 401	decreased architectural distortion
+T6	Medical-Assertion 407 421	concerning for
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 422 431	emphysema
+T8	Lesion-Assertion 434 436	No
+A2	Lesion-AssertionValue T8 absent
+T9	Lesion-Description 448 455	nodules
+T10	Medical-Problem 490 501	potentially
+E8	Medical-Problem:T10
+T11	Medical-Problem 502 533	confluence of pulmonary vessels
+E9	Medical-Problem:T11
+T12	Medical-Problem 568 577	pulmonary
+E10	Medical-Problem:T12
+T13	Lesion-Description 578 584	nodule
+E11	Lesion-Description:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Lesion-Description:T9 has-Lesion-Assertion:T8

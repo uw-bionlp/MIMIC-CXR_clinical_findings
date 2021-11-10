@@ -1,0 +1,65 @@
+T1	Medical-Problem 233 261	Worsening hazy opacification
+T2	Medical-Anatomy 276 306	left mid and lower lung fields
+T3	Medical-Assertion 308 323	likely reflects
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 327 363	increasing layering pleural effusion
+T5	Medical-Problem 420 456;458 463	continued mild to moderate pulmonary edema
+E4	Medical-Problem:T5
+T6	Medical-Problem 466 494	Small right pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Problem 506 534	Bibasilar airspace opacities
+E6	Medical-Problem:T7
+T8	Medical-Assertion 536 547	may reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 548 571	compressive atelectasis
+T10	Lesion-Characteristic 574 585	Ill-defined
+T11	Lesion-Characteristic 586 591	focal
+T12	Lesion-Description 592 609	nodular opacities
+T13	Lesion-Anatomy 618 634	both lung apices
+T14	Lesion-Size-Trend 639 659	relatively unchanged
+A3	Lesion-Size-TrendValue T14 no-change
+T15	Lesion-Size-Trend 662 665	New
+A4	Lesion-Size-TrendValue T15 new
+T16	Lesion-Characteristic 666 677	ill-defined
+T17	Lesion-Description 678 685;687 696	nodular opacities
+T18	Lesion-Anatomy 708 730	right upper lung field
+T19	Medical-Assertion 731 742	may reflect
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 743 765	superimposed infection
+T21	Medical-Problem 770 780	aspiration
+T22	Medical-Assertion 783 785	No
+A6	Medical-AssertionValue T22 absent
+T23	Medical-Problem 786 811	acute osseous abnormality
+T24	Medical-Problem 849 908	Increasing layering moderate to large left pleural effusion
+E18	Medical-Problem:T24
+T25	Medical-Problem 913 922;924 952	unchanged small right pleural effusion
+E19	Medical-Problem:T25
+T26	Medical-Problem 955 976	Bibasilar atelectasis
+E20	Medical-Problem:T26
+T27	Lesion-Size-Trend 988 991	New
+A7	Lesion-Size-TrendValue T27 new
+T28	Lesion-Characteristic 992 1003	ill-defined
+T29	Lesion-Description 1004 1011	nodular
+E22	Lesion-Description:T29
+T30	Lesion-Description 1012 1021	opacities
+T31	Lesion-Anatomy 1029 1044	right lung apex
+T32	Medical-Assertion 1045 1058	could reflect
+A8	Medical-AssertionValue T32 possible
+T33	Medical-Problem 1060 1069	infection
+T34	Medical-Problem 1073 1132	aspiration superimposed on mild to moderate pulmonary edema
+T35	Lesion-Size-Trend 1141 1150	Unchanged
+A9	Lesion-Size-TrendValue T35 no-change
+T36	Lesion-Anatomy 1151 1159	biapical
+T37	Lesion-Description 1160 1177	nodular opacities
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13 has-Lesion-Size-Trend:T14
+E13	Lesion-Description:T17 has-Lesion-Size-Trend:T15 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T19
+E17	Medical-Problem:T23 has-Medical-Assertion:T22
+E23	Lesion-Description:T30 has-Lesion-Size-Trend:T27 has-Lesion-Characteristic:T28 has-Lesion-Anatomy:T31
+E25	Medical-Problem:T33 has-Medical-Assertion:T32
+E26	Medical-Problem:T34 has-Medical-Assertion:T32
+E28	Lesion-Description:T37 has-Lesion-Size-Trend:T35 has-Lesion-Anatomy:T36

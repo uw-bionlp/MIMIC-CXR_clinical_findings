@@ -1,0 +1,67 @@
+T1	Medical-Problem 287 307	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 312 325	focal opacity
+T3	Medical-Anatomy 333 349;351 355	right lower lung zone
+T4	Medical-Assertion 356 369	may represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 370 381	atelectasis
+T6	Medical-Problem 390 399	pneumonia
+T7	Medical-Assertion 400 418	cannot be excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 431 455	mild vascular congestion
+E6	Medical-Problem:T8
+T9	Medical-Assertion 464 466	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 467 488	frank pulmonary edema
+T11	Lesion-Description 493 499	nodule
+T12	Lesion-Anatomy 508 529	right upper lung zone
+T13	Lesion-Size-Trend 538 560	grossly similar to the
+A4	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Problem 631 659;661 669	moderate-sized right pleural effusion
+E10	Medical-Problem:T14
+T15	Medical-Problem 676 703	small left pleural effusion
+E11	Medical-Problem:T15
+T16	Medical-Assertion 758 760	no
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 761 773	pneumothorax
+T18	Medical-Problem 780 797	aorta is tortuous
+E13	Medical-Problem:T18
+T19	Medical-Problem 856 876	Degenerative changes
+T20	Medical-Anatomy 895 900	spine
+T21	Medical-Problem 906 925	mild loss of height
+E16	Medical-Problem:T21
+T22	Medical-Problem 996 1023	severe compression fracture
+E17	Medical-Problem:T22
+T23	Medical-Problem 1109 1156	Moderate right and small left pleural effusions
+E18	Medical-Problem:T23
+T24	Medical-Anatomy 1197 1213	Right lower lobe
+T25	Medical-Problem 1214 1221	opacity
+T26	Medical-Assertion 1222 1228	may be
+A6	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1229 1252	compressive atelectasis
+T28	Medical-Problem 1262 1270;1272 1280	adjacent effusion
+T29	Medical-Problem 1289 1298	pneumonia
+T30	Medical-Assertion 1302 1322	difficult to exclude
+A7	Medical-AssertionValue T30 possible
+T31	Medical-Problem 1329 1348	Vascular congestion
+E24	Medical-Problem:T31
+T32	Medical-Assertion 1350 1357	without
+A8	Medical-AssertionValue T32 absent
+T33	Medical-Problem 1358 1379	frank pulmonary edema
+T34	Lesion-Size-Trend 1386 1395	Unchanged
+A9	Lesion-Size-TrendValue T34 no-change
+T35	Lesion-Anatomy 1396 1422	right upper lobe pulmonary
+T36	Lesion-Description 1423 1429	nodule
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Lesion-Description:T11 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Anatomy:T20
+E20	Medical-Problem:T25 has-Medical-Anatomy:T24
+E21	Medical-Problem:T27 has-Medical-Anatomy:T24 has-Medical-Assertion:T26
+E22	Medical-Problem:T28 has-Medical-Assertion:T26
+E23	Medical-Problem:T29 has-Medical-Anatomy:T24 has-Medical-Assertion:T30
+E25	Medical-Problem:T33 has-Medical-Assertion:T32
+E27	Lesion-Description:T36 has-Lesion-Size-Trend:T34 has-Lesion-Anatomy:T35

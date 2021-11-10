@@ -1,0 +1,40 @@
+T1	Lesion-Anatomy 310 320	left hilar
+T2	Lesion-Description 321 325	mass
+T3	Lesion-Anatomy 366 381;383 393	Peripheral left upper lobe
+T4	Lesion-Size 394 398	2 cm
+T5	Lesion-Anatomy 399 408	pulmonary
+T6	Lesion-Description 409 421	nodule/ mass
+T7	Lesion-Anatomy 499 508	pulmonary
+T8	Lesion-Description 509 516	nodules
+T9	Medical-Problem 546 589	Subtle reticular opacities bilaterally with
+E9	Medical-Problem:T9
+T10	Medical-Problem 632 665	chronic interstitial lung disease
+E10	Medical-Problem:T10
+T11	Medical-Problem 668 689	Mild biapical pleural
+E11	Medical-Problem:T11
+T12	Medical-Problem 691 701	thickening
+E12	Medical-Problem:T12
+T13	Medical-Assertion 733 739	likely
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Problem 742 760;762 770	small left pleural effusion
+T15	Medical-Assertion 773 775	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 776 788	pneumothorax
+T17	Lesion-Size 871 876	Large
+T18	Lesion-Anatomy 877 887	left hilar
+T19	Lesion-Description 888 892	mass
+T20	Lesion-Anatomy 897 933	peripheral left upper lobe pulmonary
+T21	Lesion-Description 934 945	nodule/mass
+T22	Medical-Problem 999 1024;1026 1033	Chronic interstitial lung disease
+E20	Medical-Problem:T22
+T23	Medical-Assertion 1036 1038	No
+A3	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1039 1050	new opacity
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T3 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E13	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E17	Lesion-Description:T19 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T18
+E19	Lesion-Description:T21 has-Lesion-Anatomy:T20
+E21	Medical-Problem:T24 has-Medical-Assertion:T23

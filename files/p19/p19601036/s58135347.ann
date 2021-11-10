@@ -1,0 +1,38 @@
+T1	Medical-Problem 483 519	Interval near-complete opacification
+T2	Medical-Anatomy 527 542	left hemithorax
+T3	Medical-Assertion 543 560	likely reflecting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 562 589	increasing pleural effusion
+T5	Medical-Problem 593 635	possibly hemorrhage into the pleural space
+T6	Medical-Problem 724 742	small pneumothorax
+E5	Medical-Problem:T6
+T7	Medical-Problem 846 851;853 889	small but stable right apical pneumothorax
+E6	Medical-Problem:T7
+T8	Medical-Problem 891 918	Stable small right effusion
+E7	Medical-Problem:T8
+T9	Medical-Problem 920 927;929 936	Rounded lucency
+T10	Medical-Anatomy 953 972	right hemidiaphragm
+T11	Medical-Assertion 995 1003;1005 1012	does not persist
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1132 1139	opacity
+T13	Medical-Anatomy 1147 1151;1153 1163	left hemithorax
+T14	Medical-Problem 1235 1249	Patchy opacity
+T15	Medical-Anatomy 1257 1272	right lung base
+T16	Medical-Assertion 1286 1299	may represent
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1304 1323	area of atelectasis
+T18	Medical-Problem 1327 1336	pneumonia
+T19	Medical-Problem 1350 1360	hemorrhage
+T20	Medical-Assertion 1397 1408	No evidence
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1412 1427	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

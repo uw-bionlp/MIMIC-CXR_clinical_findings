@@ -1,0 +1,37 @@
+T1	Medical-Problem 115 134	Stable cardiomegaly
+T2	Medical-Problem 139 149	tortuosity
+T3	Medical-Problem 154 167	calcification
+T4	Medical-Anatomy 176 190	thoracic aorta
+T5	Medical-Problem 197 217	lung volumes are low
+E5	Medical-Problem:T5
+T6	Medical-Problem 232 243;245 271	crowding of bronchovascular structures
+E6	Medical-Problem:T6
+T7	Medical-Problem 293 309	patchy opacities
+T8	Medical-Anatomy 313 322;324 329	both lung bases
+T9	Medical-Assertion 330 346	probably reflect
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 347 367	areas of atelectasis
+T11	Medical-Problem 370 386	Focal aspiration
+T12	Medical-Problem 391 396;398 407	early pneumonia
+T13	Medical-Assertion 412 437	additional considerations
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 439 462	Bones are demineralized
+E12	Medical-Problem:T14
+T15	Medical-Problem 484 499	marked kyphosis
+E13	Medical-Problem:T15
+T16	Medical-Problem 531 552	mild decreased height
+T17	Medical-Anatomy 557 595	upper-to-mid thoracic vertebral bodies
+T18	Medical-Problem 613 639	Patchy bibasilar opacities
+E16	Medical-Problem:T18
+T19	Medical-Assertion 640 656	probably reflect
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 657 668	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T13
+E11	Medical-Problem:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T20 has-Medical-Assertion:T19

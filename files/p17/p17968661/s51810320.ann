@@ -1,0 +1,31 @@
+T1	Medical-Problem 321 340	Stable cardiomegaly
+T2	Medical-Problem 345 355	tortuosity
+T3	Medical-Anatomy 363 377	thoracic aorta
+T4	Medical-Problem 380 394;396 415	Mild pulmonary vascular congestion
+E4	Medical-Problem:T4
+T5	Medical-Assertion 416 423	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 424 445	overt pulmonary edema
+T7	Medical-Problem 448 467	Subtle hazy opacity
+T8	Medical-Anatomy 472 496	right mid and lower lung
+T9	Medical-Assertion 552 571	Apparent resolution
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 575 597	right pleural effusion
+T11	Medical-Problem 600 620	Healed rib fractures
+E9	Medical-Problem:T11
+T12	Medical-Problem 665 677	Hazy opacity
+T13	Medical-Anatomy 681 712	right mid and lower hemi thorax
+T14	Medical-Assertion 713 740;742 749	could potentially be due in part to
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 750 768	pleural thickening
+T16	Medical-Problem 832 873	Coexisting right lower lobe consolidation
+T17	Medical-Assertion 882 890	possible
+A4	Medical-AssertionValue T17 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T17

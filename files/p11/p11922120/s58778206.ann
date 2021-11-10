@@ -1,0 +1,20 @@
+T1	Lesion-Anatomy 202 217	Left lower lung
+T2	Lesion-Description 218 224	nodule
+T3	Lesion-Assertion 229 239	completely
+A1	Lesion-AssertionValue T3 absent
+T4	Medical-Problem 273 280;282 305	minimal linear atelectatic band
+E3	Medical-Problem:T4
+T5	Medical-Assertion 396 398	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 399 411	pneumothorax
+T7	Medical-Problem 415 431	pleural effusion
+T8	Lesion-Anatomy 494 509	Left lower lung
+T9	Lesion-Description 510 516	nodule
+T10	Lesion-Assertion 521 531	completely
+A3	Lesion-AssertionValue T10 absent
+T11	Medical-Problem 562 569;571 582	area of atelectasis
+E8	Medical-Problem:T11
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T10

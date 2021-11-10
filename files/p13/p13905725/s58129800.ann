@@ -1,0 +1,42 @@
+T1	Medical-Problem 248 255	Opacity
+T2	Medical-Anatomy 263 279	right lower lobe
+T3	Medical-Assertion 351 362	most likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 363 374	atelectasis
+T5	Medical-Assertion 409 416	without
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 417 422	edema
+T7	Medical-Assertion 425 427	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 428 444	pleural effusion
+T9	Medical-Problem 448 460	pneumothorax
+T10	Medical-Problem 463 475;477 487	Lung volumes remain low
+E7	Medical-Problem:T10
+T11	Medical-Problem 521 535	mediastinum is
+E8	Medical-Problem:T11
+T12	Medical-Assertion 536 539	not
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 540 547	widened
+T14	Medical-Assertion 550 552	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 554 579	acute osseous abnormality
+T16	Medical-Problem 604 631	Persistent low lung volumes
+E11	Medical-Problem:T16
+T17	Medical-Anatomy 669 673;675 685	left lower lobe
+T18	Medical-Assertion 702 713	most likely
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 714 725	atelectasis
+T20	Medical-Assertion 734 745	No evidence
+A7	Medical-AssertionValue T20 absent
+T21	Medical-Problem 749 757	fracture
+T22	Medical-Problem 1009 1017	fracture
+E15	Medical-Problem:T22
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E14	Medical-Problem:T21 has-Medical-Assertion:T20

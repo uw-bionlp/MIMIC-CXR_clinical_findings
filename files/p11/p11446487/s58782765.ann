@@ -1,0 +1,34 @@
+T1	Medical-Problem 275 299;301 309	Heart size is borderline enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 366 375;377 388	pulmonary vascularity
+T3	Medical-Assertion 392 395	not
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 396 404	engorged
+T5	Medical-Problem 407 423	Linear opacities
+T6	Medical-Anatomy 431 445	left lung base
+T7	Medical-Assertion 446 452;454 461	likely reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 462 486	subsegmental atelectasis
+T9	Medical-Problem 489 497	Blunting
+T10	Medical-Anatomy 505 528	left costophrenic angle
+T11	Medical-Problem 556 578	small pleural effusion
+T12	Medical-Assertion 581 583	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 584 596	pneumothorax
+T14	Medical-Problem 600 611;613 629	right-sided pleural effusion
+T15	Medical-Assertion 643 645	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 646 673	acute osseous abnormalities
+T17	Medical-Problem 706 730	Subsegmental atelectasis
+T18	Medical-Anatomy 738 752	left lung base
+T19	Medical-Problem 755 782	Small left pleural effusion
+E15	Medical-Problem:T19
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18

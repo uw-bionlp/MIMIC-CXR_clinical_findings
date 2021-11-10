@@ -1,0 +1,25 @@
+T1	Medical-Problem 249 257;259 272	Airspace consolidation
+T2	Medical-Anatomy 292 330	right upper lobe and right middle lobe
+T3	Medical-Assertion 332 346	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 347 356	pneumonia
+T5	Medical-Anatomy 359 368	Left lung
+T6	Medical-Problem 390 405;407 414	mild lower lung opacity
+T7	Medical-Assertion 415 428	may represent
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 429 457	additional site of pneumonia
+T9	Medical-Assertion 460 462	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 463 477	large effusion
+T11	Medical-Problem 482 494	pneumothorax
+T12	Medical-Problem 616 635	Dense consolidation
+T13	Medical-Anatomy 647 663	right upper lobe
+T14	Medical-Problem 735 755	multifocal pneumonia
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13

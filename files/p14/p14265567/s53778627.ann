@@ -1,0 +1,26 @@
+T1	Medical-Problem 299 323	dense area consolidation
+T2	Medical-Anatomy 346 360	left lung base
+T3	Medical-Assertion 375 383	probably
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 384 404	aspiration pneumonia
+T5	Medical-Problem 413 434	region of abnormality
+T6	Medical-Anatomy 443 458	right lung base
+T7	Medical-Assertion 462 470	probably
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 473 497	second smaller pneumonia
+T9	Medical-Assertion 509 511	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 513 528	pulmonary edema
+T11	Medical-Problem 542 570	heart is moderately enlarged
+E8	Medical-Problem:T11
+T12	Medical-Problem 631 643	effusion, if
+E9	Medical-Problem:T12
+T13	Medical-Assertion 672 674	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 675 687	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

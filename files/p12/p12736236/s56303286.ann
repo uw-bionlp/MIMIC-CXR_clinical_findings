@@ -1,0 +1,24 @@
+T1	Medical-Problem 345 360	Chronic changes
+T2	Medical-Anatomy 377 395	mid thoracic spine
+T3	Medical-Problem 401 411;413 428	associated dextroscoliosis
+T4	Medical-Problem 433 440	changes
+T5	Medical-Anatomy 448 461	adjacent ribs
+T6	Medical-Problem 536 543	Opacity
+T7	Medical-Anatomy 551 563;565 593	retrocardiac region at the left lung base
+T8	Medical-Assertion 646 652	likely
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 668 679	volume loss
+T10	Medical-Problem 684 714	elevation of the hemidiaphragm
+T11	Medical-Problem 752 767	Chronic changes
+T12	Medical-Anatomy 785 798	left shoulder
+T13	Medical-Assertion 854 856	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 857 895	definite acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

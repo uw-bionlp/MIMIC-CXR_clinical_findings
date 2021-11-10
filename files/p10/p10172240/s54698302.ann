@@ -1,0 +1,24 @@
+T1	Medical-Problem 390 422	small, loculated air-fluid level
+E1	Medical-Problem:T1
+T2	Medical-Problem 454 483	resolving left-sided effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 486 512;514 534	Stable left-sided mid lung postsurgical changes
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 572 588	right upper lobe
+T5	Lesion-Description 590 596	nodule
+T6	Medical-Assertion 659 661	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 662 667;669 682	acute consolidation
+T8	Medical-Problem 684 696	pneumothorax
+T9	Medical-Problem 701 716	pulmonary edema
+T10	Medical-Problem 807 844	Resolving left-sided pleural effusion
+E9	Medical-Problem:T10
+T11	Lesion-Size-Trend 854 860	Stable
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Anatomy 861 877	right upper lobe
+T13	Lesion-Description 878 884	nodule
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E11	Lesion-Description:T13 has-Lesion-Size-Trend:T11 has-Lesion-Anatomy:T12

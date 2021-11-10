@@ -1,0 +1,26 @@
+T1	Medical-Problem 204 210;212 227	Severe dextroscoliosis
+E1	Medical-Problem:T1
+T2	Medical-Assertion 248 250	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 251 277	gross focal consolidations
+T4	Medical-Assertion 297 306	worrisome
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 314 332	infectious process
+T6	Lesion-Anatomy 337 351	left perihilar
+T7	Lesion-Description 352 359;361 368	nodular opacity
+T8	Medical-Assertion 428 430	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 431 438;440 456	obvious pleural effusion
+T10	Medical-Anatomy 459 464	Heart
+T11	Medical-Assertion 473 479	likely
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 480 488	enlarged
+T13	Medical-Assertion 506 517	No evidence
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 521 530	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

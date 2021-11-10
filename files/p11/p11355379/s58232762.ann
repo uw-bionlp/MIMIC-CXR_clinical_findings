@@ -1,0 +1,37 @@
+T1	Medical-Problem 243 249;251 266	subtle interval change
+E1	Medical-Problem:T1
+T2	Medical-Problem 514 540	patchy bibasilar opacities
+T3	Medical-Anatomy 552 561	left base
+T4	Medical-Problem 573 588	blunting of the
+T5	Medical-Anatomy 589 607	costophrenic angle
+T6	Medical-Assertion 614 634	most likely reflects
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 635 641;643 654	patchy atelectasis
+T8	Medical-Problem 676 684	effusion
+T9	Medical-Problem 695 705	aspiration
+T10	Medical-Problem 710 719	pneumonia
+T11	Medical-Assertion 721 765	could also have this radiographic appearance
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 890 903	consolidation
+T13	Medical-Anatomy 911 920	left base
+T14	Medical-Anatomy 934 944;946 952	left heart border
+T15	Medical-Problem 1060 1073	calcification
+T16	Medical-Anatomy 1081 1086	aorta
+T17	Medical-Problem 1105 1120	atherosclerosis
+E15	Medical-Problem:T17
+T18	Medical-Assertion 1123 1125	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1126 1138	pneumothorax
+T20	Medical-Assertion 1149 1160	No evidence
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1164 1173;1175 1180	pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6 has-Medical-Assertion:T11
+E9	Medical-Problem:T10 has-Medical-Assertion:T6 has-Medical-Assertion:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

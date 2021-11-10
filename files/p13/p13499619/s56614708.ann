@@ -1,0 +1,30 @@
+T1	Medical-Problem 262 277	Left lower lobe
+E1	Medical-Problem:T1
+T2	Medical-Problem 278 291	consolidation
+E2	Medical-Problem:T2
+T3	Medical-Assertion 295 308	worrisome for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 309 318	pneumonia
+T5	Medical-Problem 337 371	subtle additional focus of opacity
+T6	Medical-Anatomy 379 402	right upper to mid lung
+T7	Medical-Problem 426 454	additional site of infection
+T8	Medical-Assertion 457 459	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 460 476	pleural effusion
+T10	Medical-Problem 480 492	pneumothorax
+T11	Medical-Problem 580 605	Left lower lobe pneumonia
+E9	Medical-Problem:T11
+T12	Medical-Assertion 608 616	Possible
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 617 651	additional subtle focus of opacity
+T14	Medical-Anatomy 660 683	right upper to mid lung
+T15	Medical-Assertion 684 699	could represent
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 700 728	additional site of infection
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

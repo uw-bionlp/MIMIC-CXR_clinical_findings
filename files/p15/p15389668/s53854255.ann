@@ -1,0 +1,17 @@
+T1	Medical-Problem 287 315;317 325	cardiac silhouette is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 327 360	small bilateral pleural effusions
+E2	Medical-Problem:T2
+T3	Medical-Assertion 386 388;390 398	no evidence
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 402 417	pulmonary edema
+T5	Medical-Anatomy 427 450	basis of the right lung
+T6	Medical-Problem 454 461;463 485	zone of increased lung density
+T7	Medical-Problem 509 525	air bronchograms
+E6	Medical-Problem:T7
+T8	Medical-Assertion 530 536;538 548	likely reflecting
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 549 558	pneumonia
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

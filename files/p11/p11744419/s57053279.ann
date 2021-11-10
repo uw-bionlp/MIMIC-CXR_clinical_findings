@@ -1,0 +1,23 @@
+T1	Medical-Problem 297 317	interval improvement
+E1	Medical-Problem:T1
+T2	Medical-Problem 321 340	bibasilar opacities
+E2	Medical-Problem:T2
+T3	Medical-Assertion 343 345	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 346 351;353 375	focal areas of consolidation
+T5	Lesion-Assertion 453 455	No
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Anatomy 456 461	hilar
+T7	Lesion-Description 462 477	lymphadenopathy
+T8	Medical-Assertion 495 497	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 498 505;507 515	pleural effusion
+T10	Medical-Problem 519 531	pneumothorax
+T11	Medical-Assertion 557 568	No evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 572 581	pneumonia
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

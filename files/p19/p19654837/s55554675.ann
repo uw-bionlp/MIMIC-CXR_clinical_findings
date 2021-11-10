@@ -1,0 +1,37 @@
+T1	Medical-Problem 169 188	dense consolidation
+T2	Medical-Anatomy 196 206	right lung
+T3	Medical-Problem 225 251	ground-glass opacification
+E3	Medical-Problem:T3
+T4	Medical-Problem 338 355	new consolidation
+T5	Medical-Anatomy 363 373;375 379	right lung base
+T6	Medical-Assertion 432 440	probably
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 444 453;455 469	extension of the process
+T8	Medical-Anatomy 477 493	right lower lung
+T9	Medical-Assertion 522 529	Perhaps
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 536 559	pulmonary drug toxicity
+T11	Medical-Problem 563 598	desquamative interstitial pneumonia
+T12	Medical-Problem 602 620	Radiation fibrosis
+T13	Medical-Anatomy 628 643	left upper lung
+T14	Medical-Anatomy 655 675	left upper lobectomy
+T15	Medical-Problem 728 753	most severe consolidation
+E13	Medical-Problem:T15
+T16	Medical-Problem 1088 1112	Heart size indeterminate
+E14	Medical-Problem:T16
+T17	Medical-Assertion 1114 1122	probably
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1123 1126	not
+E15	Medical-Problem:T18
+T19	Medical-Problem 1127 1140;1142 1150	significantly enlarged
+T20	Medical-Assertion 1222 1224	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1225 1237	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13 has-Medical-Anatomy:T14
+E16	Medical-Problem:T19 has-Medical-Assertion:T17
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

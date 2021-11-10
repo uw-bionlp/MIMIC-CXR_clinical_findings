@@ -1,0 +1,55 @@
+T1	Medical-Problem 301 330	Heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 350 361	aortic knob
+T3	Medical-Problem 365 374	calcified
+T4	Medical-Problem 378 389	Enlargement
+T5	Medical-Anatomy 397 413	hila bilaterally
+T6	Medical-Problem 433 451;453 465	pulmonary arterial hypertension
+T7	Lesion-Characteristic 477 487	underlying
+T8	Lesion-Description 488 503	lymphadenopathy
+T9	Lesion-Characteristic 546 555	Scattered
+T10	Lesion-Characteristic 556 567	ill-defined
+T11	Lesion-Description 568 575	nodular
+E11	Lesion-Description:T11
+T12	Lesion-Description 576 585	opacities
+T13	Lesion-Size-Trend 590 608;610 618	relatively similar compared
+A1	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Problem 690 725	mild pulmonary vascular engorgement
+E13	Medical-Problem:T14
+T15	Medical-Assertion 727 729	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 730 746	pleural effusion
+T17	Medical-Problem 748 757;759 772	new focal consolidation
+T18	Medical-Problem 776 788	pneumothorax
+T19	Medical-Assertion 811 813	no
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 814 827;829 842	acute osseous abnormalities
+T21	Lesion-Characteristic 863 872	Scattered
+T22	Lesion-Characteristic 873 884	ill-defined
+T23	Lesion-Description 885 892	nodular
+E20	Lesion-Description:T23
+T24	Lesion-Description 893 902	opacities
+T25	Lesion-Size-Trend 946 966	relatively unchanged
+A4	Lesion-Size-TrendValue T25 no-change
+T26	Medical-Problem 997 1008	Enlargement
+T27	Medical-Anatomy 1017 1033	hila bilaterally
+T28	Medical-Assertion 1035 1055	likely reflective of
+A5	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1056 1087	pulmonary arterial hypertension
+T30	Lesion-Characteristic 1093 1103	underlying
+T31	Lesion-Description 1104 1119	lymphadenopathy
+T32	Medical-Problem 1122 1157	Mild pulmonary vascular engorgement
+E27	Medical-Problem:T32
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T7
+E12	Lesion-Description:T12 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Size-Trend:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T15
+E16	Medical-Problem:T18 has-Medical-Assertion:T15
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E21	Lesion-Description:T24 has-Lesion-Characteristic:T21 has-Lesion-Characteristic:T22 has-Lesion-Size-Trend:T25
+E22	Medical-Problem:T26 has-Medical-Anatomy:T27
+E24	Medical-Problem:T29 has-Medical-Assertion:T28
+E26	Lesion-Description:T31 has-Lesion-Characteristic:T30

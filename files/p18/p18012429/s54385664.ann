@@ -1,0 +1,34 @@
+T1	Medical-Problem 274 292	near opacification
+T2	Medical-Anatomy 300 309	left lung
+T3	Lesion-Anatomy 447 452;454 458	right lung
+T4	Lesion-Description 477 484	nodules
+T5	Medical-Problem 540 553	focal opacity
+T6	Medical-Anatomy 564 583	right minor fissure
+T7	Medical-Assertion 625 631	may be
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 634 661	focal consolidative process
+T9	Medical-Assertion 714 716	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 717 729	pneumothorax
+T11	Medical-Assertion 846 848	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 849 877	post-procedural pneumothorax
+T13	Medical-Anatomy 885 896	Right upper
+E10	Medical-Anatomy:T13
+T14	Medical-Anatomy 926 939	minor fissure
+E11	Medical-Anatomy:T14
+T15	Medical-Assertion 985 991	may be
+A4	Medical-AssertionValue T15 possible
+T16	Lesion-Description 1037 1047	malignancy
+T17	Lesion-Assertion 1048 1067	cannot be ruled out
+A5	Lesion-AssertionValue T17 possible
+T18	Lesion-Anatomy 1075 1085	Right lung
+T19	Lesion-Description 1086 1093	nodules
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T16 has-Lesion-Assertion:T17
+E14	Lesion-Description:T19 has-Lesion-Anatomy:T18

@@ -1,0 +1,26 @@
+T1	Medical-Problem 227 258	severe infiltrative abnormality
+T2	Medical-Anatomy 293 303	lung bases
+T3	Lesion-Count 315 319	many
+T4	Lesion-Size 320 325	small
+T5	Lesion-Characteristic 326 334	discrete
+T6	Lesion-Description 335 342	nodular
+E6	Lesion-Description:T6
+T7	Lesion-Description 343 352	opacities
+T8	Lesion-Size-Trend 366 371	grown
+A1	Lesion-Size-TrendValue T8 increasing
+T9	Medical-Assertion 438 455	strongly suggests
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 456 476	widespread infection
+T11	Medical-Problem 487 500	septic emboli
+T12	Medical-Problem 505 513	Heart is
+E10	Medical-Problem:T12
+T13	Medical-Problem 514 533	moderately enlarged
+E11	Medical-Problem:T13
+T14	Medical-Problem 547 549	At
+E12	Medical-Problem:T14
+T15	Medical-Problem 556 579;581 590	small bilateral pleural effusions
+E13	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E7	Lesion-Description:T7 has-Lesion-Count:T3 has-Lesion-Size-Present:T4 has-Lesion-Characteristic:T5 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

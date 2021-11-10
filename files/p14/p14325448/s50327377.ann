@@ -1,0 +1,34 @@
+T1	Medical-Problem 371 405	diffuse bilateral airspace process
+E1	Medical-Problem:T1
+T2	Medical-Assertion 413 426	could reflect
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 427 433;435 450	severe pulmonary edema
+T4	Medical-Problem 463 480	diffuse pneumonia
+T5	Medical-Assertion 481 506	should also be considered
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 534 559	lobulated pleural opacity
+T7	Medical-Anatomy 567 572	right
+T8	Medical-Problem 595 621	loculated pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Problem 624 647	Other pleural processes
+T10	Medical-Assertion 648 662;664 674	should also be considered
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 677 679	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 680 692	pneumothorax
+T13	Medical-Problem 707 729	heart remains enlarged
+E9	Medical-Problem:T13
+T14	Medical-Problem 733 765	Mediastinal contours are widened
+E10	Medical-Problem:T14
+T15	Medical-Problem 916 925	Asymmetry
+T16	Medical-Anatomy 933 952	ribcage on the left
+T17	Medical-Assertion 971 977	likely
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 981 994	developmental
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

@@ -1,0 +1,63 @@
+T1	Medical-Problem 302 335	increased right perihilar density
+E1	Medical-Problem:T1
+T2	Medical-Problem 341 358	lobular lucencies
+E2	Medical-Problem:T2
+T3	Medical-Problem 402 412	subpleural
+E3	Medical-Problem:T3
+T4	Medical-Problem 432 440;442 452	adjacent cavitation
+T5	Medical-Anatomy 460 486	posterior right lower lobe
+T6	Lesion-Size 491 497	2.8 cm
+T7	Lesion-Description 498 505	nodular
+E7	Lesion-Description:T7
+T8	Lesion-Description 506 513	opacity
+T9	Lesion-Anatomy 522 538	right lower lobe
+T10	Lesion-Size-Trend 539 564	appears increased in size
+A1	Lesion-Size-TrendValue T10 increasing
+T11	Lesion-Size 590 594	7-mm
+T12	Lesion-Description 596 602	nodule
+T13	Lesion-Anatomy 610 629	left mid lung field
+T14	Lesion-Size 642 646	8-mm
+T15	Lesion-Description 647 653	nodule
+T16	Lesion-Anatomy 661 670	AP window
+T17	Lesion-Description 686 693	nodules
+T18	Medical-Assertion 733 735	no
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 736 741;743 756	focal consolidation
+T20	Medical-Assertion 757 766	worrisome
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 771 780	pneumonia
+T22	Medical-Assertion 792 794	no
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 795 811	pleural effusion
+T24	Medical-Problem 816 828	pneumothorax
+T25	Medical-Problem 902 959	Irregular area of increased density with adjacent lucency
+T26	Medical-Anatomy 967 972	right
+T27	Lesion-Anatomy 974 989	perihilar space
+E23	Lesion-Anatomy:T27
+T28	Lesion-Characteristic 1031 1039	cavitary
+E24	Lesion-Characteristic:T28
+T29	Lesion-Size 1081 1087	2.8 cm
+T30	Lesion-Anatomy 1088 1104	right lower lobe
+T31	Lesion-Description 1105 1111	nodule
+T32	Lesion-Anatomy 1162 1171	Left lung
+T33	Lesion-Description 1172 1179	nodules
+T34	Medical-Assertion 1245 1247	No
+A5	Medical-AssertionValue T34 absent
+T35	Medical-Problem 1248 1271	new focal consolidation
+T36	Medical-Assertion 1272 1285	worrisome for
+A6	Medical-AssertionValue T36 possible
+T37	Medical-Problem 1286 1295	pneumonia
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E8	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E11	Lesion-Description:T12 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T13
+E14	Lesion-Description:T15 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T16
+E16	Lesion-Description:T17 has-Lesion-Anatomy:T16
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Medical-Problem:T21 has-Medical-Assertion:T18 has-Medical-Assertion:T20
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T24 has-Medical-Assertion:T22
+E21	Medical-Problem:T25 has-Medical-Anatomy:T26
+E27	Lesion-Description:T31 has-Lesion-Size-Present:T29 has-Lesion-Anatomy:T30
+E29	Lesion-Description:T33 has-Lesion-Anatomy:T32
+E30	Medical-Problem:T35 has-Medical-Assertion:T34
+E31	Medical-Problem:T37 has-Medical-Assertion:T34 has-Medical-Assertion:T36

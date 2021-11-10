@@ -1,0 +1,32 @@
+T1	Medical-Problem 218 225	opacity
+T2	Medical-Anatomy 233 243	right base
+T3	Medical-Problem 282 311	minimal bibasilar atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Problem 320 329	opacities
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 337 351	right mid lung
+T6	Medical-Assertion 374 388	likely reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 389 415	sequela of prior pneumonia
+T8	Medical-Assertion 514 516	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 517 533	pleural effusion
+T10	Medical-Problem 537 549	pneumothorax
+T11	Medical-Problem 562 582	degenerative changes
+T12	Medical-Anatomy 591 599	right AC
+T13	Medical-Anatomy 604 635	partially imaged left AC joints
+T14	Medical-Assertion 656 658	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 659 685	new focal airspace opacity
+T16	Medical-Problem 697 706	pneumonia
+T17	Medical-Problem 709 718	Bibasilar
+E14	Medical-Problem:T17
+T18	Medical-Problem 719 730	atelectasis
+E15	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14

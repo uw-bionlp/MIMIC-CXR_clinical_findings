@@ -1,0 +1,35 @@
+T1	Medical-Problem 245 265	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 277 296	minimal atelectasis
+T3	Medical-Anatomy 304 319	right lung base
+T4	Medical-Assertion 325 327	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 328 349	other focal opacities
+T6	Medical-Anatomy 359 373	left lung base
+T7	Medical-Problem 383 401;403 414	moderate to severe atelectasis
+T8	Medical-Anatomy 422 437	left lower lobe
+T9	Medical-Problem 446 479	associated small pleural effusion
+T10	Medical-Problem 580 596	atelectatic left
+E9	Medical-Problem:T10
+T11	Medical-Problem 610 627	Aorta is tortuous
+E10	Medical-Problem:T11
+T12	Medical-Assertion 640 642	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 643 655	pneumothorax
+T14	Medical-Problem 677 723	Moderate to severe left lower lobe atelectases
+E12	Medical-Problem:T14
+T15	Medical-Problem 728 749;751 762	mild right lower lobe atelectasis
+E13	Medical-Problem:T15
+T16	Medical-Assertion 765 767	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 768 783	focal opacities
+T18	Medical-Assertion 784 798	concerning for
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 799 808	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

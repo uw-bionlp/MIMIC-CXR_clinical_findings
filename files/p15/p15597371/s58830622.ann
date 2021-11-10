@@ -1,0 +1,24 @@
+T1	Medical-Problem 594 603	elevation
+T2	Medical-Anatomy 611 629	left hemidiaphragm
+T3	Medical-Problem 643 657	patchy opacity
+T4	Medical-Anatomy 665 669;671 675	left base
+T5	Medical-Assertion 682 693	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 694 724	partial lower lobe atelectasis
+T7	Medical-Problem 735 744	pneumonia
+T8	Medical-Problem 749 759	aspiration
+T9	Medical-Assertion 760 785	should also be considered
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 801 817;819 829	lung volumes are diminished
+E8	Medical-Problem:T10
+T11	Medical-Assertion 877 888	no evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 893 908	pulmonary edema
+T13	Medical-Problem 911 935	Heart is stably enlarged
+E10	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

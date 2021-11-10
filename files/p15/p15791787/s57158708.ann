@@ -1,0 +1,23 @@
+T1	Medical-Problem 215 245	cardiac silhouette is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 246 252;254 266	likely representing
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 267 279	cardiomegaly
+T4	Medical-Problem 290 310	pericardial effusion
+T5	Medical-Assertion 311 331;333 341	cannot be completely excluded
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 362 373	no evidence
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 384 404	pericardial effusion
+T8	Medical-Anatomy 439 449	Both lungs
+T9	Medical-Assertion 468 470	no
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 471 476;478 491	focal consolidation
+T11	Medical-Problem 493 509	pleural effusion
+T12	Medical-Problem 513 525	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

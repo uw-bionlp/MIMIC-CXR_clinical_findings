@@ -1,0 +1,24 @@
+T1	Medical-Anatomy 174 185	aortic knob
+T2	Medical-Problem 190 199	calcified
+T3	Medical-Problem 256 262;264 273	Linear opacities
+T4	Medical-Anatomy 281 301	right mid lung field
+T5	Medical-Anatomy 306 320	left lung base
+T6	Medical-Problem 342 366	subsegmental atelectasis
+T7	Medical-Assertion 369 371	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 372 391	focal consolidation
+T9	Medical-Problem 393 409	pleural effusion
+T10	Medical-Problem 414 426	pneumothorax
+T11	Medical-Problem 453 484	multilevel degenerative changes
+T12	Medical-Anatomy 503 517	thoracic spine
+T13	Medical-Assertion 535 537	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 538 571	acute cardiopulmonary abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

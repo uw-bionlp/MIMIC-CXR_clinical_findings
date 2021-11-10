@@ -1,0 +1,33 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Medical-Problem 68 93	Slight leftward deviation
+T4	Medical-Anatomy 101 111;113 132	trachea at  the thoracic inlet
+T5	Medical-Anatomy 499 504	lungs
+T6	Medical-Assertion 509 514	clear
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 515 528	consolidation
+T8	Medical-Problem 532 537;539 547	large effusion
+T9	Medical-Problem 554 564	trachea is
+E7	Medical-Problem:T9
+T10	Medical-Problem 565 595	mildly deviated to the left at
+E8	Medical-Problem:T10
+T11	Medical-Assertion 624 635	possibility
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 639 682	underlying thyroid enlargement on the right
+T13	Medical-Assertion 744 746	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 747 760;762 775	acute osseous abnormalities
+T15	Medical-Assertion 804 806	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 807 836	acute cardiopulmonary process
+T17	Medical-Problem 839 864	Slight leftward deviation
+T18	Medical-Anatomy 872 882;884 902	trachea at the thoracic inlet
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T18

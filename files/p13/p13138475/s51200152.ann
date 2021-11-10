@@ -1,0 +1,33 @@
+T1	Medical-Problem 225 246	Greater opacification
+T2	Medical-Anatomy 254 269	left lower lung
+T3	Medical-Assertion 270 285	could be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 286 295	pneumonia
+T5	Medical-Problem 306 330	combination of pneumonia
+T6	Medical-Problem 332 370	increased small right pleural effusion
+T7	Medical-Problem 378 400	juxtahilar abnormality
+T8	Medical-Anatomy 408 422	right mid lung
+T9	Medical-Problem 435 450	apparent cavity
+T10	Medical-Problem 504 513	pneumonia
+E9	Medical-Problem:T10
+T11	Medical-Problem 518 532	granulomatosis
+E10	Medical-Problem:T11
+T12	Medical-Problem 569 582	Opacification
+T13	Medical-Anatomy 590 594;596 619	left mid and lower lung zone
+T14	Medical-Problem 635 665	moderate left pleural effusion
+T15	Medical-Problem 741 752	atelectasis
+E14	Medical-Problem:T15
+T16	Medical-Problem 759 798	mild leftward displacement of the heart
+E15	Medical-Problem:T16
+T17	Medical-Assertion 801 803	No
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 805 817	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T14 has-Medical-Anatomy:T13
+E16	Medical-Problem:T18 has-Medical-Assertion:T17

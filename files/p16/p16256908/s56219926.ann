@@ -1,0 +1,33 @@
+T1	Medical-Problem 87 94	opacity
+T2	Medical-Anatomy 105 120	right lung base
+T3	Medical-Assertion 121 127	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 128 139	atelectasis
+T5	Medical-Problem 150 169	overlying pneumonia
+T6	Medical-Assertion 170 177;179 188	must be  excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 232 234	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 235 255	focal consolidations
+T9	Medical-Problem 259 287	Prominent epicardial fat pad
+E6	Medical-Problem:T9
+T10	Medical-Problem 449 463	Ventral hernia
+E7	Medical-Problem:T10
+T11	Medical-Problem 573 588	volumes are low
+E8	Medical-Problem:T11
+T12	Medical-Problem 633 654	Moderate cardiomegaly
+E9	Medical-Problem:T12
+T13	Medical-Assertion 655 662	without
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 663 684	overt pulmonary edema
+T15	Medical-Assertion 687 689	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 690 702	pneumothorax
+T17	Medical-Problem 716 733	pleural effusions
+E12	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

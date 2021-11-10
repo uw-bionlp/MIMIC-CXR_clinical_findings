@@ -1,0 +1,19 @@
+T1	Medical-Problem 194 214	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Assertion 220 222	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 223 250	focal pulmonary abnormality
+T4	Medical-Problem 279 296	mild cardiomegaly
+E3	Medical-Problem:T4
+T5	Lesion-Assertion 386 397	no evidence
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Characteristic 401 408	central
+T7	Lesion-Description 409 419	lymph node
+T8	Lesion-Characteristic 421 432	enlargement
+T9	Lesion-Description 533 539	lesion
+T10	Lesion-Anatomy 547 570;572 580	origin of the left main bronchus
+T11	Medical-Problem 602 650;652 675	superimposition of normal structures anterior or posterior to the carina
+E9	Medical-Problem:T11
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6 has-Lesion-Characteristic:T8
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T10

@@ -1,0 +1,45 @@
+T1	Medical-Problem 233 266	Heart size is moderately enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 362 377;379 393	atherosclerotic calcifications
+T3	Medical-Anatomy 413 424	aortic knob
+T4	Lesion-Characteristic 427 436	Calcified
+T5	Lesion-Anatomy 437 447	left hilar
+T6	Lesion-Description 448 453;455 460	lymph nodes
+T7	Lesion-Characteristic 472 481	calcified
+T8	Lesion-Description 482 492	granulomas
+T9	Lesion-Anatomy 500 514	left lung base
+T10	Lesion-Size-Trend 519 528	unchanged
+A1	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Anatomy 531 552	Pulmonary vasculature
+T12	Medical-Assertion 556 559	not
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 560 568	engorged
+T14	Medical-Problem 570 594	Subsegmental atelectasis
+T15	Medical-Anatomy 618 632	left lung base
+T16	Medical-Problem 638 684	elevation of the left hemidiaphragm is chronic
+E14	Medical-Problem:T16
+T17	Medical-Assertion 686 688	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 690 709	focal consolidation
+T19	Medical-Problem 711 727	pleural effusion
+T20	Medical-Problem 731 743	pneumothorax
+T21	Medical-Assertion 759 761	No
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 762 767;769 788	acute osseous abnormality
+T23	Medical-Problem 821 838	Chronic elevation
+T24	Medical-Anatomy 846 864	left hemidiaphragm
+T25	Medical-Problem 870 894	subsegmental atelectasis
+T26	Medical-Anatomy 903 917	left lung base
+T27	Medical-Problem 932 959	prior granulomatous disease
+E23	Medical-Problem:T27
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T17
+E17	Medical-Problem:T20 has-Medical-Assertion:T17
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Anatomy:T24
+E21	Medical-Problem:T25 has-Medical-Anatomy:T26

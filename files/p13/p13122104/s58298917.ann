@@ -1,0 +1,15 @@
+T1	Medical-Problem 429 460	Regions of ground-glass opacity
+T2	Medical-Anatomy 468 507	lung periphery, right greater than left
+T3	Medical-Assertion 509 517	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 518 523	edema
+T5	Medical-Problem 527 542	viral pneumonia
+T6	Medical-Problem 568 584	Pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Assertion 601 603	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 604 616	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

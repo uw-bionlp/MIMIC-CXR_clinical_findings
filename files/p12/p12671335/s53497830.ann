@@ -1,0 +1,38 @@
+T1	Medical-Problem 307 329	heart size is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 343 354	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 358 366;368 378	vascular congestion
+T4	Medical-Problem 428 437;439 452	Increased opacification
+T5	Medical-Anatomy 460 474	left lung base
+T6	Medical-Problem 494 505	volume loss
+T7	Medical-Anatomy 514 524	lower lobe
+T8	Medical-Problem 529 537	effusion
+T9	Medical-Problem 552 575	increased opacification
+T10	Medical-Anatomy 583 588;590 600	right lower lobe
+T11	Medical-Problem 680 708	small right pleural effusion
+E10	Medical-Problem:T11
+T12	Medical-Problem 732 744	Cardiomegaly
+E11	Medical-Problem:T12
+T13	Medical-Assertion 750 752	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 753 772	vascular congestion
+T15	Medical-Assertion 773 795	raises the possibility
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 800 825	underlying cardiomyopathy
+T17	Medical-Problem 829 849	pericardial effusion
+T18	Medical-Problem 858 875	Increased density
+T19	Medical-Anatomy 879 895	right lower lobe
+T20	Medical-Assertion 973 984	may suggest
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 985 994	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

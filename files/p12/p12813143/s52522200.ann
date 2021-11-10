@@ -1,0 +1,62 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 55	focal consolidation
+T3	Medical-Problem 67 76	pneumonia
+T4	Medical-Problem 78 98	Increased prominence
+T5	Medical-Anatomy 106 108;110 117	AP  window
+T6	Medical-Assertion 124 130	may be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 131 141	prominence
+T8	Medical-Anatomy 149 170	main pulmonary artery
+T9	Lesion-Characteristic 176 186	underlying
+T10	Lesion-Description 189 204	lymphadenopathy
+T11	Lesion-Assertion 208 211	not
+A3	Lesion-AssertionValue T11 possible
+T12	Medical-Assertion 625 632	without
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 633 652	focal consolidation
+T14	Medical-Assertion 655 657	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 658 674	pleural effusion
+T16	Medical-Problem 679 691	pneumothorax
+T17	Medical-Problem 753 762	increased
+E12	Medical-Problem:T17
+T18	Medical-Problem 763 773	prominence
+T19	Medical-Anatomy 781 790	AP window
+T20	Medical-Assertion 797 800	may
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Problem 817 827	underlying
+T22	Lesion-Description 829 844	lymphadenopathy
+E16	Lesion-Description:T22
+T23	Medical-Assertion 848 860	not excluded
+A7	Medical-AssertionValue T23 possible
+T24	Medical-Assertion 881 883	No
+A8	Medical-AssertionValue T24 absent
+T25	Medical-Problem 884 903	focal consolidation
+T26	Medical-Assertion 904 914	to suggest
+A9	Medical-AssertionValue T26 possible
+T27	Medical-Problem 915 924	pneumonia
+T28	Medical-Problem 926 946	Increased prominence
+E19	Medical-Problem:T28
+T29	Medical-Assertion 971 977	may be
+A10	Medical-AssertionValue T29 possible
+T30	Medical-Problem 978 988	prominence
+T31	Medical-Anatomy 996 1017	main pulmonary artery
+T32	Lesion-Characteristic 1023 1033	underlying
+T33	Lesion-Description 1035 1050	lymphadenopathy
+T34	Medical-Assertion 1054 1066	not excluded
+A11	Medical-AssertionValue T34 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T9 has-Lesion-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T14
+E13	Medical-Problem:T18 has-Medical-Anatomy:T19
+E15	Medical-Problem:T21 has-Medical-Assertion:T20 has-Medical-Assertion:T23
+E17	Medical-Problem:T25 has-Medical-Assertion:T24
+E18	Medical-Problem:T27 has-Medical-Assertion:T24 has-Medical-Assertion:T26
+E20	Medical-Problem:T30 has-Medical-Assertion:T29 has-Medical-Anatomy:T31 has-Medical-Assertion:T34
+E23	Lesion-Description:T33 has-Lesion-Characteristic:T32

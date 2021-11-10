@@ -1,0 +1,43 @@
+T1	Medical-Problem 46 66	Multifocal opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 67 80	worrisome for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 81 90	pneumonia
+T4	Lesion-Anatomy 114 127	left mid lung
+T5	Lesion-Description 128 137	opacities
+T6	Lesion-Characteristic 142 172	somewhat nodular in appearance
+T7	Medical-Problem 645 655;657 664	new patchy opacity
+T8	Medical-Anatomy 672 688	right lower lung
+T9	Medical-Problem 703 712	pneumonia
+T10	Medical-Problem 756 786	patchy left mid lung opacities
+E9	Medical-Problem:T10
+T11	Medical-Assertion 793 807	concerning for
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 809 818	pneumonia
+T13	Medical-Anatomy 857 873	right hemithorax
+T14	Medical-Problem 879 887	scarring
+T15	Medical-Anatomy 896 921	right costophrenic sulcus
+T16	Medical-Problem 952 954;956 969	is hyperinflated
+E14	Medical-Problem:T16
+T17	Medical-Problem 986 1023	probably demineralized to some degree
+E15	Medical-Problem:T17
+T18	Medical-Problem 1026 1030;1032 1044	Mild degenerative
+T19	Medical-Anatomy 1075 1089	thoracic spine
+T20	Medical-Problem 1107 1127	Multifocal opacities
+E18	Medical-Problem:T20
+T21	Medical-Assertion 1128 1137	worrisome
+A3	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1142 1151	pneumonia
+T23	Medical-Problem 1174 1178	left
+E20	Medical-Problem:T23
+T24	Lesion-Description 1188 1197	opacities
+T25	Lesion-Characteristic 1202 1232	somewhat nodular in appearance
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13 has-Medical-Anatomy:T15
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E19	Medical-Problem:T22 has-Medical-Assertion:T21
+E21	Lesion-Description:T24 has-Lesion-Characteristic:T25

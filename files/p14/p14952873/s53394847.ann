@@ -1,0 +1,37 @@
+T1	Medical-Problem 226 255	Lung volumes are somewhat low
+E1	Medical-Problem:T1
+T2	Medical-Problem 270 277	opacity
+T3	Medical-Anatomy 285 299	left lung base
+T4	Medical-Assertion 307 320	may represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 321 332	atelectasis
+T6	Medical-Problem 336 351	focal pneumonia
+T7	Medical-Problem 385 396	Atelectasis
+T8	Medical-Anatomy 412 427	right lung base
+T9	Medical-Assertion 430 432	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 433 446	focal opacity
+T11	Lesion-Description 451 455	mass
+E9	Lesion-Description:T11
+T12	Medical-Assertion 472 478	may be
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 481 509	small right pleural effusion
+T14	Medical-Assertion 521 523	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 524 528;530 546	left pleural effusion
+T16	Medical-Problem 550 562	pneumothorax
+T17	Medical-Anatomy 636 645	Left lung
+T18	Medical-Assertion 665 678	may represent
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 679 690	atelectasis
+T20	Medical-Problem 694 710;712 721	focal infectious pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

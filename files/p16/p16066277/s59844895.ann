@@ -1,0 +1,39 @@
+T1	Medical-Assertion 292 299	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 300 319	focal consolidation
+T3	Medical-Assertion 322 324	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 325 341	pleural effusion
+T5	Medical-Problem 346 358	pneumothorax
+T6	Lesion-Size 441 445	8 mm
+T7	Lesion-Characteristic 446 455	calcified
+T8	Lesion-Description 456 462	nodule
+T9	Lesion-Size-Trend 466 472	stable
+A3	Lesion-Size-TrendValue T9 no-change
+T10	Lesion-Assertion 480 486	likely
+A4	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 489 498	granuloma
+T12	Medical-Problem 501 509;511 522	Bridging osteophytes
+T13	Medical-Anatomy 530 544	thoracic spine
+T14	Medical-Assertion 624 626	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 636 655	latent or active TB
+T16	Lesion-Size-Trend 662 668	Stable
+A6	Lesion-Size-TrendValue T16 no-change
+T17	Lesion-Characteristic 669 678	calcified
+T18	Lesion-Description 679 685	nodule
+T19	Lesion-Assertion 689 695	likely
+A7	Lesion-AssertionValue T19 possible
+T20	Lesion-Description 698 707	granuloma
+T21	Medical-Problem 714 734	Bridging osteophytes
+T22	Medical-Anatomy 755 769	thoracic spine
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E6	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Size-Trend:T9
+E7	Lesion-Description:T11 has-Lesion-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Anatomy:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Lesion-Description:T18 has-Lesion-Size-Trend:T16 has-Lesion-Characteristic:T17
+E13	Lesion-Description:T20 has-Lesion-Size-Trend:T16 has-Lesion-Assertion:T19
+E14	Medical-Problem:T21 has-Medical-Anatomy:T22

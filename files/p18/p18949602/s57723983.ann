@@ -1,0 +1,40 @@
+T1	Medical-Problem 341 361;363 372	Streaky left basilar opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 373 391	most suggestive of
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 392 400	scarring
+T4	Medical-Problem 421 429	Blunting
+T5	Medical-Anatomy 438 467	posterior costophrenic angles
+T6	Medical-Assertion 468 475	suggest
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 476 491	small effusions
+T8	Medical-Anatomy 498 503	lungs
+T9	Medical-Assertion 508 513	clear
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 518 531	consolidation
+T11	Medical-Problem 535 547	pneumothorax
+T12	Medical-Problem 550 560	Prominence
+T13	Medical-Anatomy 568 594	hilar contour on the right
+T14	Lesion-Characteristic 640 649	prominent
+T15	Lesion-Description 650 661	lymph nodes
+T16	Medical-Problem 763 786	Left mastectomy changes
+E13	Medical-Problem:T16
+T17	Medical-Assertion 805 807	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 808 821;823 836	acute osseous abnormalities
+T19	Medical-Assertion 865 873	Probable
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 874 889	small effusions
+T21	Medical-Assertion 890 897	without
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 898 925;927 934	other acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Lesion-Description:T15 has-Lesion-Characteristic:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21

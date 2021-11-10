@@ -1,0 +1,54 @@
+T1	Medical-Problem 339 349	prominence
+T2	Medical-Anatomy 357 390	pulmonary vasculature bilaterally
+T3	Lesion-Assertion 392 402	suggesting
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Characteristic 404 423	vascular congestion
+T5	Lesion-Description 424 428	cyst
+T6	Medical-Problem 430 440	mild edema
+E5	Medical-Problem:T6
+T7	Medical-Assertion 442 444	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 445 473	definite focal consolidation
+T9	Medical-Anatomy 484 493	Bibasilar
+T10	Medical-Problem 494 503	opacities
+T11	Medical-Assertion 504 520	likely relate to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 521 535	fluid overload
+T13	Medical-Problem 601 619	infectious process
+T14	Medical-Assertion 620 632;634 642	not entirely excluded
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 669 674	lungs
+E11	Medical-Problem:T15
+T16	Medical-Problem 679 711;713 727	hyperinflated with flattening of the diaphragms
+E12	Medical-Problem:T16
+T17	Medical-Assertion 729 731	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 732 754	large pleural effusion
+T19	Medical-Problem 758 770	pneumothorax
+T20	Medical-Anatomy 895 916	pulmonary vasculature
+T21	Medical-Assertion 956 964	suggests
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 965 979	fluid overload
+T23	Medical-Problem 981 990	Bibasilar
+E17	Medical-Problem:T23
+T24	Medical-Problem 991 1000	opacities
+E18	Medical-Problem:T24
+T25	Medical-Problem 1050 1064	fluid overload
+E19	Medical-Problem:T25
+T26	Medical-Problem 1068 1088	chronic lung disease
+E20	Medical-Problem:T26
+T27	Medical-Problem 1101 1110	infection
+E21	Medical-Problem:T27
+T28	Medical-Problem 1121 1130	infection
+T29	Medical-Assertion 1131 1143	not excluded
+A7	Medical-AssertionValue T29 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Characteristic:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T19 has-Medical-Assertion:T17
+E16	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E22	Medical-Problem:T28 has-Medical-Assertion:T29

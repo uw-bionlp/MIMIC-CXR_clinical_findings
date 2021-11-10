@@ -1,0 +1,16 @@
+T1	Medical-Problem 162 197	Ill-defined peribronchial opacities
+T2	Medical-Anatomy 205 210;212 217	lower lobes
+T3	Medical-Anatomy 233 249	right lower lobe
+T4	Medical-Assertion 250 265	could be due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 266 277	atelectasis
+T6	Medical-Problem 282 292	aspiration
+T7	Medical-Assertion 332 334	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 335 347	pneumothorax
+T9	Medical-Problem 351 358;360 368	pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

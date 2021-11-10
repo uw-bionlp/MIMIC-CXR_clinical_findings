@@ -1,0 +1,23 @@
+T1	Medical-Problem 323 355	at least trace pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 358 379	Parenchymal opacities
+E2	Medical-Problem:T2
+T3	Lesion-Anatomy 450 455;457 467	right lower lung
+E3	Lesion-Anatomy:T3
+T4	Lesion-Anatomy 473 482	elsewhere
+E4	Lesion-Anatomy:T4
+T5	Medical-Assertion 484 499	likely etiology
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 503 518	pulmonary edema
+T7	Medical-Problem 539 570	Worsening parenchymal opacities
+E6	Medical-Problem:T7
+T8	Medical-Assertion 571 581	suggesting
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 582 606	moderate pulmonary edema
+T10	Medical-Problem 631 651	developing pneumonia
+T11	Medical-Anatomy 659 674	right lung base
+T12	Medical-Assertion 678 690	not excluded
+A3	Medical-AssertionValue T12 possible
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

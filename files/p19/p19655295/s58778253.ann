@@ -1,0 +1,25 @@
+T1	Medical-Problem 243 253;255 262	increasing density
+T2	Medical-Anatomy 270 280	left hilus
+T3	Medical-Problem 285 296	volume loss
+T4	Medical-Anatomy 304 313	left lung
+T5	Medical-Problem 340 378	increasing left-sided pleural effusion
+T6	Medical-Problem 383 402	atelectatic changes
+T7	Medical-Anatomy 411 420	left lung
+T8	Medical-Problem 441 454	overinflation
+T9	Medical-Anatomy 462 472	right lung
+T10	Medical-Problem 491 529	worsening volume loss of the left lung
+E10	Medical-Problem:T10
+T11	Medical-Anatomy 575 585	right lung
+T12	Medical-Assertion 587 589	no
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 590 606	pleural effusion
+T14	Medical-Problem 608 615	opacity
+T15	Medical-Problem 620 632	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T7
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E12	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E13	Medical-Problem:T14 has-Medical-Assertion:T12
+E14	Medical-Problem:T15 has-Medical-Assertion:T12

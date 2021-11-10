@@ -1,0 +1,23 @@
+T1	Medical-Problem 33 49	Low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 54 75	bibasilar atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 114 131	Increase blunting
+T4	Medical-Anatomy 139 162	left costophrenic angle
+T5	Medical-Assertion 163 176	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 177 187;189 201	increasing  atelectasis
+T7	Medical-Problem 209 231	trace pleural effusion
+T8	Medical-Problem 647 668	moderate cardiomegaly
+E7	Medical-Problem:T8
+T9	Medical-Problem 670 688;690 701	pulmonary vascular engorgement
+E8	Medical-Problem:T9
+T10	Medical-Problem 707 740	small bilateral pleural effusions
+E9	Medical-Problem:T10
+T11	Medical-Assertion 743 745	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 746 758	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

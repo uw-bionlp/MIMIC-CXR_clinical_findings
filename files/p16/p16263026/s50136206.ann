@@ -1,0 +1,37 @@
+T1	Medical-Problem 404 440	well-circumscribed irregular opacity
+T2	Medical-Anatomy 448 464	right upper lobe
+T3	Medical-Assertion 498 511	can represent
+A1	Medical-AssertionValue T3 possible
+T4	Lesion-Anatomy 514 523	pulmonary
+T5	Lesion-Description 524 530	nodule
+T6	Lesion-Anatomy 538 543;545 555	right upper lobe
+T7	Medical-Problem 559 585	right upper lobe pneumonia
+E6	Medical-Problem:T7
+T8	Medical-Problem 589 620	focal mediastinal calcification
+T9	Medical-Assertion 757 759	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 760 772	pneumothorax
+T11	Medical-Assertion 775 777	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 778 793	pulmonary edema
+T13	Medical-Assertion 795 797	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 798 815	pleural effusions
+T15	Medical-Problem 836 872	Well circumscribed irregular opacity
+T16	Medical-Anatomy 880 896	right upper lobe
+T17	Lesion-Assertion 922 925	can
+A5	Lesion-AssertionValue T17 possible
+T18	Lesion-Anatomy 938 942	lung
+T19	Lesion-Description 943 949	nodule
+T20	Medical-Problem 953 979	right upper lobe pneumonia
+E15	Medical-Problem:T20
+T21	Medical-Problem 984 1016	focal mediastinal calcifications
+E16	Medical-Problem:T21
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T3
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Lesion-Description:T19 has-Lesion-Assertion:T17 has-Lesion-Anatomy:T18

@@ -1,0 +1,29 @@
+T1	Medical-Assertion 235 237	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 238 243;245 266	acute intrathoracic process
+T3	Medical-Problem 330 350	band of hyperdensity
+T4	Medical-Anatomy 366 381	right lung base
+T5	Medical-Assertion 383 389;391 401	likely represents
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 402 426	subsegmental atelectasis
+T7	Medical-Assertion 438 440	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 441 454	consolidation
+T9	Medical-Problem 456 463;465 473	pleural effusion
+T10	Medical-Problem 477 489	pneumothorax
+T11	Lesion-Assertion 492 494	No
+A4	Lesion-AssertionValue T11 absent
+T12	Lesion-Characteristic 495 505	suspicious
+T13	Lesion-Characteristic 506 513	osseous
+T14	Lesion-Description 514 521	lesions
+T15	Medical-Assertion 548 550	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 551 578	acute intrathoracic process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T7
+E10	Lesion-Description:T14 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

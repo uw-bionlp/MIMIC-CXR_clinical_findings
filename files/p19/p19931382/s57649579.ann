@@ -1,0 +1,16 @@
+T1	Medical-Problem 216 256	Moderate to large right pleural effusion
+T2	Medical-Anatomy 289 294;296 306	right lower lung
+T3	Medical-Problem 323 344	right lower pneumonia
+E3	Medical-Problem:T3
+T4	Medical-Problem 398 429	substantial increase in caliber
+T5	Medical-Anatomy 433 444;446 453	mediastinal vessels
+T6	Medical-Assertion 454 464	suggesting
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 465 480	volume overload
+T8	Medical-Assertion 526 528	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 529 561	appreciable vascular engorgement
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

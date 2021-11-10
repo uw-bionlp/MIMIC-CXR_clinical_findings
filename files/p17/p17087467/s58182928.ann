@@ -1,0 +1,33 @@
+T1	Medical-Assertion 133 140	Suspect
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 141 153;155 163	left pleural effusion
+T3	Medical-Problem 168 181	consolidation
+T4	Medical-Problem 244 274	moderate left pleural effusion
+E3	Medical-Problem:T4
+T5	Medical-Problem 326 343	ipsilateral shift
+T6	Medical-Anatomy 351 368	lower mediastinum
+T7	Medical-Problem 400 410	associated
+T8	Medical-Anatomy 435 450	left lower lobe
+T9	Medical-Problem 453 470;472 483	Mild interstitial abnormality
+T10	Medical-Anatomy 502 524	base of the right lung
+T11	Medical-Problem 538 546;548 558	vascular distortion
+T12	Medical-Assertion 559 569	suggesting
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 570 579	emphysema
+T14	Medical-Problem 837 867	adjacent pleural abnormalities
+E12	Medical-Problem:T14
+T15	Medical-Problem 886 898	cardiomegaly
+E13	Medical-Problem:T15
+T16	Medical-Assertion 930 932	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 933 941;943 951	vascular findings
+T18	Medical-Problem 963 985	cardiac decompensation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T12
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16

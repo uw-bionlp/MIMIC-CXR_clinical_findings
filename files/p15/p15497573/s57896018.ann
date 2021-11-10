@@ -1,0 +1,16 @@
+T1	Medical-Assertion 73 84	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 88 100	pneumothorax
+T3	Medical-Problem 512 543	abnormal contours and interface
+T4	Medical-Anatomy 567 585;587 632	lateral left chest from the level of the AV cortical arch to the
+T5	Medical-Problem 661 690	abnormal soft tissue contours
+T6	Medical-Anatomy 698 713	left chest wall
+T7	Medical-Assertion 726 738	probably not
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 739 751	pneumothorax
+T9	Medical-Problem 756 780	Left lower lobe collapse
+E7	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7

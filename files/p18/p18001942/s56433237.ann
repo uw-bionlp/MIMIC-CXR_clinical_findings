@@ -1,0 +1,50 @@
+T1	Medical-Anatomy 236 243	Cardiac
+T2	Medical-Problem 291 307;309 321	left ventricular predominance
+T3	Medical-Problem 328 354	aorta is markedly tortuous
+E3	Medical-Problem:T3
+T4	Lesion-Characteristic 447 456	Calcified
+T5	Lesion-Description 458 465	nodules
+T6	Lesion-Anatomy 477 492	left lower lobe
+T7	Lesion-Size-Trend 500 509	unchanged
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Lesion-Assertion 511 517	likely
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Description 518 528	granulomas
+T10	Medical-Problem 533 552	Streaky atelectasis
+T11	Medical-Anatomy 568 582	left lung base
+T12	Medical-Assertion 585 587	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 588 607	focal consolidation
+T14	Medical-Problem 610 626	pleural effusion
+T15	Medical-Problem 630 642	pneumothorax
+T16	Medical-Problem 663 670	osseous
+E13	Medical-Problem:T16
+T17	Medical-Problem 687 710	diffusely demineralized
+E14	Medical-Problem:T17
+T18	Medical-Problem 716 742	mild compression deformity
+T19	Medical-Anatomy 749 765;767 796	vertebral bodies at the thoracolumbar junction
+T20	Medical-Problem 799 824	Soft tissue calcification
+E17	Medical-Problem:T20
+T21	Medical-Assertion 860 871	may reflect
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 872 893	calcific tendinopathy
+T23	Medical-Problem 895 904	Deformity
+T24	Medical-Anatomy 912 924;926 937	right eighth lateral rib
+T25	Medical-Assertion 973 979	likely
+A5	Medical-AssertionValue T25 possible
+T26	Medical-Problem 982 1002	chronic rib fracture
+T27	Medical-Assertion 1023 1025	No
+A6	Medical-AssertionValue T27 absent
+T28	Medical-Problem 1026 1059	acute cardiopulmonary abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T6 has-Lesion-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T12
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Anatomy:T24
+E21	Medical-Problem:T26 has-Medical-Anatomy:T24 has-Medical-Assertion:T25
+E22	Medical-Problem:T28 has-Medical-Assertion:T27

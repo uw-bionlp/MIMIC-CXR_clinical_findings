@@ -1,0 +1,27 @@
+T1	Medical-Problem 385 409	moderate right-sided and
+E1	Medical-Problem:T1
+T2	Medical-Assertion 410 418	probable
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 419 435;437 453	small left-sided pleural effusion
+T4	Medical-Problem 464 497	retrocardiac opacity silhouetting
+T5	Medical-Anatomy 502 512;514 528	descending thoracic aorta
+T6	Medical-Assertion 529 540	potentially
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 541 552	atelectasis
+T8	Medical-Problem 556 565	infection
+T9	Medical-Problem 648 668;670 684	Dense mitral annular calcifications
+E7	Medical-Problem:T9
+T10	Medical-Problem 798 840;842 851	Persistent right greater than left pleural effusions
+E8	Medical-Problem:T10
+T11	Medical-Assertion 853 861	Probable
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 862 889	left lower lobe atelectasis
+T13	Medical-Problem 902 911	infection
+T14	Medical-Assertion 912 918;920 931	cannot be excluded
+A4	Medical-AssertionValue T14 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11 has-Medical-Assertion:T14

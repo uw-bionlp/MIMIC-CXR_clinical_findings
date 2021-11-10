@@ -1,0 +1,38 @@
+T1	Medical-Problem 253 259;261 270	linear opacities
+T2	Medical-Anatomy 288 311	upper lungs bilaterally
+T3	Medical-Problem 317 327	retraction
+T4	Medical-Assertion 341 354	suggestive of
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 355 381	chronic underlying disease
+T6	Medical-Assertion 393 406	suggestion of
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 409 414;416 431	focal rounded opacity
+T8	Medical-Anatomy 452 490;492 517	anterior aspects of the lower thoracic spine on the lateral view
+T9	Medical-Anatomy 547 568;570 622	lateral aspect of the descending thoracic aorta in the retrocardiac region
+T10	Medical-Anatomy 629 634	lungs
+T11	Medical-Assertion 669 671	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 672 680	effusion
+T13	Medical-Problem 786 804	Diffuse osteopenia
+E10	Medical-Problem:T13
+T14	Medical-Assertion 836 838	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 839 877	definite acute cardiopulmonary process
+T16	Medical-Problem 880 894;896 903	Subtle rounded opacity
+T17	Medical-Anatomy 924 959	lower lobe, potentially on the left
+T18	Medical-Assertion 967 972;974 992	could potentially due to
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 993 1013	superimposed shadows
+T20	Medical-Anatomy 1045 1050	spine
+T21	Lesion-Description 1141 1145	mass
+E16	Lesion-Description:T21
+T22	Medical-Problem 1149 1176	thoracic aortic abnormality
+E17	Medical-Problem:T22
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17
+E14	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Anatomy:T20

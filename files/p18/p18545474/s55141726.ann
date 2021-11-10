@@ -1,0 +1,21 @@
+T1	Lesion-Description 335 342	opacity
+T2	Lesion-Anatomy 363 378	left lower lobe
+T3	Medical-Assertion 395 403	could be
+A1	Medical-AssertionValue T3 possible
+T4	Lesion-Anatomy 406 410	lung
+T5	Lesion-Description 411 415	mass
+T6	Medical-Problem 419 428	pneumonia
+T7	Medical-Assertion 434 447	could also be
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 450 458;460 478	fissural pleural collection
+T9	Medical-Assertion 490 501	no evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 505 518	pleural fluid
+T11	Medical-Anatomy 519 535;537 547	elsewhere in the left chest
+T12	Medical-Problem 627 638	volume loss
+E9	Medical-Problem:T12
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11

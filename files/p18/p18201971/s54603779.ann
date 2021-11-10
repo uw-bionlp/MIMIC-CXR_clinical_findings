@@ -1,0 +1,22 @@
+T1	Medical-Problem 300 315	mild prominence
+T2	Medical-Anatomy 319 334	central vessels
+T3	Medical-Assertion 342 355	could reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 356 369;371 396	some elevated pulmonary venous pressure
+T5	Medical-Problem 402 433	area of increased opacification
+T6	Medical-Anatomy 434 445;447 466	posteriorly overlying the spine
+T7	Medical-Assertion 467 489	raises the possibility
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 493 514	developing aspiration
+T9	Medical-Problem 519 539	infectious pneumonia
+T10	Medical-Problem 541 573	Mild basilar atelectatic changes
+E8	Medical-Problem:T10
+T11	Medical-Assertion 599 610	no evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 614 626	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

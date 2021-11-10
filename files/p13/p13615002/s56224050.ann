@@ -1,0 +1,27 @@
+T1	Medical-Problem 248 253;255 279	right lower lobe consolidation
+T2	Medical-Assertion 280 304	appears to have resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 326 347	persistent prominence
+T4	Medical-Anatomy 355 376	right pulmonary hilum
+T5	Lesion-Assertion 386 400	concerning for
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 402 412	underlying
+T7	Lesion-Description 413 417	mass
+T8	Medical-Assertion 438 440	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 441 455	large effusion
+T10	Medical-Problem 459 471	pneumothorax
+T11	Medical-Problem 577 610	Persistent right hilar prominence
+E8	Medical-Problem:T11
+T12	Lesion-Assertion 614 628	concerning for
+A4	Lesion-AssertionValue T12 possible
+T13	Lesion-Characteristic 629 639	underlying
+T14	Lesion-Description 640 644	mass
+T15	Medical-Problem 647 652;654 678	Right lower lobe consolidation
+E11	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Lesion-Description:T14 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13

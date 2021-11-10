@@ -1,0 +1,57 @@
+T1	Medical-Problem 289 309	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 312 347	Linear infrahilar streaky opacities
+E2	Medical-Problem:T2
+T3	Medical-Problem 374 385	atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Problem 396 406	aspiration
+T5	Medical-Assertion 410 418	possible
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 421 423	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 424 443	focal consolidation
+T8	Medical-Problem 446 451	edema
+T9	Medical-Problem 453 461	effusion
+T10	Medical-Problem 466 478	pneumothorax
+T11	Medical-Problem 481 498	Rounded opacities
+E9	Medical-Problem:T11
+T12	Lesion-Anatomy 519 523;525 543	left lateral hemithorax
+T13	Lesion-Assertion 564 589	could potentially reflect
+A3	Lesion-AssertionValue T13 possible
+T14	Lesion-Anatomy 590 599	pulmonary
+T15	Lesion-Description 601 608	nodules
+T16	Medical-Problem 617 641	heart is mildly enlarged
+E13	Medical-Problem:T16
+T17	Medical-Problem 713 744	osseous structures appear dense
+E14	Medical-Problem:T17
+T18	Medical-Problem 802 834	Multi-level degenerative changes
+T19	Medical-Anatomy 842 856	thoracic spine
+T20	Medical-Assertion 869 871	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 872 897	acute osseous abnormality
+T22	Medical-Problem 922 938	Low lung volumes
+E18	Medical-Problem:T22
+T23	Medical-Problem 943 954	atelectasis
+E19	Medical-Problem:T23
+T24	Medical-Problem 991 1008	Mild cardiomegaly
+E20	Medical-Problem:T24
+T25	Medical-Assertion 1009 1025	without evidence
+A5	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1029 1034	edema
+T27	Medical-Problem 1043 1054	Dense bones
+E22	Medical-Problem:T27
+T28	Medical-Assertion 1118 1126	Possible
+A6	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1127 1141	left pulmonary
+T30	Lesion-Description 1142 1149	nodules
+E24	Lesion-Description:T30
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T6
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T12 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E21	Medical-Problem:T26 has-Medical-Assertion:T25
+E23	Medical-Problem:T29 has-Medical-Assertion:T28

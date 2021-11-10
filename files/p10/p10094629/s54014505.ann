@@ -1,0 +1,57 @@
+T1	Medical-Problem 238 255	mild cardiomegaly
+T2	Medical-Problem 260 273	calcification
+T3	Medical-Anatomy 284 295	aortic arch
+T4	Medical-Anatomy 303 332	central pulmonary vascularity
+T5	Medical-Problem 339 378;380 401	upper zone redistribution with distinct but prominent vessels
+T6	Medical-Assertion 430 440	suggesting
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 441 457;459 471	pulmonary venous hypertension
+T8	Medical-Assertion 472 479	without
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 480 504	congestive heart failure
+T10	Lesion-Size 509 514	small
+T11	Lesion-Characteristic 515 525	hyperdense
+T12	Lesion-Description 526 532	nodule
+T13	Lesion-Anatomy 554 568	right mid lung
+T14	Lesion-Size-Trend 572 581	unchanged
+A3	Lesion-Size-TrendValue T14 no-change
+T15	Lesion-Assertion 586 594	suggests
+A4	Lesion-AssertionValue T15 possible
+T16	Lesion-Description 597 606	granuloma
+T17	Medical-Problem 619 677	similar mild relative elevation of the right hemidiaphragm
+E13	Medical-Problem:T17
+T18	Medical-Assertion 690 692	no
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 693 709	pleural effusion
+T20	Medical-Problem 713 725	pneumothorax
+T21	Medical-Problem 791 801	Flattening
+T22	Medical-Problem 806 815	sclerosis
+T23	Medical-Anatomy 843 860	left humeral head
+T24	Medical-Problem 866 905	corresponding effacement of the glenoid
+E19	Medical-Problem:T24
+T25	Medical-Assertion 1027 1038	No evidence
+A6	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1042 1071	acute cardiopulmonary disease
+T27	Medical-Problem 1074 1083;1085 1095	Increased flattening
+T28	Medical-Anatomy 1103 1120	left humeral head
+T29	Medical-Assertion 1131 1137	likely
+A7	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1140 1155	chronic process
+T31	Medical-Assertion 1158 1166	possibly
+A8	Medical-AssertionValue T31 possible
+T32	Medical-Problem 1167 1185	avascular necrosis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13 has-Lesion-Size-Trend:T14
+E12	Lesion-Description:T16 has-Lesion-Anatomy:T13 has-Lesion-Assertion:T15
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T18
+E16	Medical-Problem:T21 has-Medical-Anatomy:T23
+E17	Medical-Problem:T22 has-Medical-Anatomy:T23
+E20	Medical-Problem:T26 has-Medical-Assertion:T25
+E21	Medical-Problem:T27 has-Medical-Anatomy:T28
+E23	Medical-Problem:T30 has-Medical-Assertion:T29
+E24	Medical-Problem:T32 has-Medical-Assertion:T29 has-Medical-Assertion:T31

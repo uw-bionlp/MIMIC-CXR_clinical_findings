@@ -1,0 +1,32 @@
+T1	Medical-Assertion 227 229	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 231 247	pleural effusion
+T3	Medical-Problem 251 263	pneumothorax
+T4	Medical-Anatomy 270 275	lungs
+T5	Medical-Assertion 299 301	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 302 307;309 323	focal consolidations
+T7	Medical-Assertion 324 338	concerning for
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 339 348	pneumonia
+T9	Medical-Problem 350 373	Mild linear atelectasis
+T10	Medical-Anatomy 393 407	left lung base
+T11	Medical-Problem 533 536;538 568	old right clavicular fracture with
+E8	Medical-Problem:T11
+T12	Medical-Problem 569 600	nonunion of the distal fragment
+E9	Medical-Problem:T12
+T13	Medical-Problem 752 778	Mild left base atelectasis
+E10	Medical-Problem:T13
+T14	Medical-Assertion 784 786	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 787 806	focal consolidation
+T16	Medical-Assertion 807 817;819 822	concerning for
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 823 832	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,20 @@
+T1	Medical-Assertion 169 171	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 172 191	focal consolidation
+T3	Medical-Problem 193 209	pleural effusion
+T4	Medical-Problem 213 225	pneumothorax
+T5	Lesion-Size 240 245	small
+T6	Lesion-Description 246 261	nodular opacity
+T7	Lesion-Anatomy 276 302;304 309	ninth posterior rib on the right
+T8	Lesion-Size 425 430	Small
+T9	Lesion-Description 431 446	nodular density
+T10	Lesion-Anatomy 461 485	right ninth anterior rib
+T11	Medical-Assertion 563 565	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 567 586	focal consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

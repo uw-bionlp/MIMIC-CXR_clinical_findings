@@ -1,0 +1,17 @@
+T1	Medical-Assertion 33 44	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 48 60	pneumothorax
+T3	Medical-Assertion 431 433	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 434 446	pneumothorax
+T5	Medical-Problem 500 507;509 522	Greater opacification
+T6	Medical-Anatomy 543 560	right hemi thorax
+T7	Medical-Assertion 564 579	probably due to
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 580 584;586 602	soft tissue asymmetry
+T9	Medical-Problem 661 677	pleural effusion
+E6	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7

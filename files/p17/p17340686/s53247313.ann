@@ -1,0 +1,29 @@
+T1	Medical-Assertion 88 95	Suspect
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 96 121	left lower lobe pneumonia
+T3	Medical-Problem 258 291	More focal areas of opacification
+T4	Medical-Anatomy 299 315;317 347	lateral left mid lung and infrahilar right lung
+T5	Medical-Assertion 348 356	could be
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 357 368	atelectasis
+T7	Medical-Problem 373 378	edema
+T8	Medical-Problem 383 392	pneumonia
+T9	Medical-Problem 422 460	moderately enlarged cardiac silhouette
+E7	Medical-Problem:T9
+T10	Medical-Problem 465 472;474 492	dilated pulmonary arteries
+E8	Medical-Problem:T10
+T11	Medical-Problem 524 549;551 562	more mediastinal vascular engorgement
+E9	Medical-Problem:T11
+T12	Medical-Assertion 673 675	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 676 704	appreciable pleural effusion
+T14	Medical-Assertion 710 712	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 713 725	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

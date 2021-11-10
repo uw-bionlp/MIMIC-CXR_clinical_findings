@@ -1,0 +1,28 @@
+T1	Medical-Problem 414 443	Lung volumes are slightly low
+E1	Medical-Problem:T1
+T2	Lesion-Assertion 476 488	questionable
+A1	Lesion-AssertionValue T2 possible
+T3	Lesion-Size 489 493	1 cm
+T4	Lesion-Description 494 501	nodular
+T5	Lesion-Description 502 509	opacity
+T6	Lesion-Anatomy 510 533;535 566	just below the level of the seventh posterior right rib
+T7	Medical-Assertion 569 571	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 572 588	pleural effusion
+T9	Medical-Problem 592 604	pneumothorax
+T10	Medical-Problem 625 658	bilateral shoulder arthroplasties
+E8	Medical-Problem:T10
+T11	Medical-Assertion 710 721	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 725 749	congestive heart failure
+T13	Lesion-Size 752 756	1 cm
+T14	Lesion-Description 757 764	nodular
+E11	Lesion-Description:T14
+T15	Lesion-Description 765 772	opacity
+T16	Lesion-Anatomy 776 787;789 793	right upper lung
+E3	Lesion-Description:T4 has-Lesion-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T16

@@ -1,0 +1,24 @@
+T1	Medical-Assertion 311 317	may be
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 318 333;335 365	minimal central pulmonary vascular engorgement
+T3	Medical-Assertion 366 373	without
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 374 395	overt pulmonary edema
+T5	Medical-Assertion 398 400	No
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 401 406;408 421	focal consolidation
+T7	Medical-Problem 423 439	pleural effusion
+T8	Medical-Problem 444 452	evidence
+E5	Medical-Problem:T8
+T9	Medical-Problem 456 468	pneumothorax
+T10	Medical-Problem 548 555;557 595	minimal central pulmonary vascular engorgement
+E7	Medical-Problem:T10
+T11	Medical-Assertion 598 600	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 601 620	focal consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T1 has-Medical-Assertion:T3
+E3	Medical-Problem:T6 has-Medical-Assertion:T5
+E4	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T5
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

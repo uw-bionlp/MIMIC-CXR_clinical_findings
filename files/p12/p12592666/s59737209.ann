@@ -1,0 +1,33 @@
+T1	Medical-Problem 291 304	Configuration
+T2	Medical-Anatomy 312 319	trachea
+T3	Medical-Problem 340 360	chronic lung disease
+T4	Medical-Problem 365 392	Heterogeneous opacification
+T5	Medical-Anatomy 396 411	both lung bases
+T6	Medical-Assertion 412 423	may have an
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 424 431	element
+T8	Medical-Assertion 456 474	more suggestive of
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 475 494	bilateral pneumonia
+T10	Medical-Anatomy 497 502	Heart
+T11	Medical-Assertion 506 509	not
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 511 519	enlarged
+T13	Medical-Anatomy 522 543	Pulmonary vasculature
+T14	Medical-Problem 547 562	mildly engorged
+T15	Medical-Assertion 573 579	may be
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 586 607	element of mild edema
+T17	Medical-Anatomy 615 625	lung bases
+T18	Medical-Assertion 637 639	no
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 640 656	pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

@@ -1,0 +1,22 @@
+T1	Medical-Assertion 323 345	no findings to suggest
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 346 355	pneumonia
+T3	Lesion-Size 373 377	3 cm
+T4	Lesion-Description 383 390	opacity
+T5	Lesion-Anatomy 399 415	right upper lung
+T6	Lesion-Description 577 593	tumor recurrence
+E5	Lesion-Description:T6
+T7	Medical-Problem 622 641	Emphysema is severe
+E6	Medical-Problem:T7
+T8	Medical-Problem 673 688;690 704	extremely heavy mitral annulus
+E7	Medical-Problem:T8
+T9	Medical-Problem 709 752	moderately heavy aortic valve calcification
+E8	Medical-Problem:T9
+T10	Medical-Assertion 763 765	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 767 803	pulmonary vascular engorgement edema
+T12	Medical-Problem 807 815	effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10

@@ -1,0 +1,24 @@
+T1	Medical-Problem 247 262	slight blunting
+T2	Medical-Anatomy 270 299	posterior costophrenic angles
+T3	Medical-Problem 367 389	trace pleural effusion
+T4	Medical-Assertion 390 396;398 405	may be present
+A1	Medical-AssertionValue T4 possible
+T5	Lesion-Anatomy 414 430	right lower lobe
+T6	Lesion-Description 431 437	nodule
+T7	Lesion-Characteristic 482 491	Extensive
+E6	Lesion-Characteristic:T7
+T8	Lesion-Characteristic 492 499	blastic
+E7	Lesion-Characteristic:T8
+T9	Medical-Problem 563 587	Left basilar atelectasis
+E8	Medical-Problem:T9
+T10	Medical-Assertion 596 603	without
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 604 618;620 633	definite focal consolidation
+T12	Medical-Assertion 636 638	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 639 651	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

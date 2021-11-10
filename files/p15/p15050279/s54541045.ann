@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 277 319	right heart border and cardiophrenic angle
+T2	Medical-Problem 334 355	area of consolidation
+T3	Medical-Problem 361 377	air bronchograms
+T4	Medical-Anatomy 425 463	anterior superior portion of the heart
+T5	Medical-Problem 501 532	right middle lobe consolidation
+E5	Medical-Problem:T5
+T6	Medical-Problem 548 555	opacity
+T7	Medical-Anatomy 564 583	retrocardiac region
+T8	Medical-Problem 652 681	left lower lobe consolidation
+E8	Medical-Problem:T8
+T9	Medical-Problem 684 706	Trace pleural effusion
+E9	Medical-Problem:T9
+T10	Medical-Assertion 739 741	no
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 742 760	large pneumothorax
+T12	Medical-Problem 778 792	Consolidations
+T13	Medical-Anatomy 807 824	right middle lobe
+T14	Medical-Anatomy 829 839;841 845	left lower lobe
+T15	Medical-Assertion 846 860	concerning for
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 861 881	multifocal pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

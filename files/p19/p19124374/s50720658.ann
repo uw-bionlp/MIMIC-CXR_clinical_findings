@@ -1,0 +1,23 @@
+T1	Medical-Problem 327 344	Streaky opacities
+T2	Medical-Anatomy 353 363	lung bases
+T3	Medical-Problem 402 416;418 425	decreased lung volumes
+T4	Medical-Assertion 427 437	suggesting
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 438 467	waxing and waning atelectasis
+T6	Medical-Assertion 468 474	rather
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 480 489	pneumonia
+T8	Medical-Assertion 559 561	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 562 569;571 579	pleural effusion
+T10	Medical-Problem 583 595	pneumothorax
+T11	Medical-Assertion 613 624	No evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 628 641	acute disease
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

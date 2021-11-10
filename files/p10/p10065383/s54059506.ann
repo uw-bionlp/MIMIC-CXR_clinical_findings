@@ -1,0 +1,28 @@
+T1	Medical-Problem 72 96	Multifocal opacification
+T2	Medical-Anatomy 113 128	left lower lobe
+T3	Medical-Problem 131 154	Worsening opacification
+T4	Medical-Anatomy 162 190	right middle and lower lobes
+T5	Medical-Problem 210 219	pneumonia
+E5	Medical-Problem:T5
+T6	Medical-Problem 737 769	worsening airspace consolidation
+T7	Medical-Anatomy 777 789;791 819	right upper, right middle and lower lobes
+T8	Medical-Anatomy 842 868	left upper and lower lobes
+T9	Medical-Problem 886 905	worsening pneumonia
+T10	Medical-Assertion 907 918	less likely
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Problem 919 934	pulmonary edema
+T12	Medical-Problem 942 964	airspace consolidation
+T13	Medical-Anatomy 978 985	cardiac
+T14	Medical-Anatomy 1038 1045	stomach
+T15	Medical-Problem 1092 1110	distended with gas
+T16	Medical-Assertion 1122 1128	likely
+A2	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1131 1153	layering left effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T16

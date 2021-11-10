@@ -1,0 +1,23 @@
+T1	Medical-Problem 475 489	Severe changes
+T2	Medical-Anatomy 497 511	right shoulder
+T3	Medical-Problem 535 559	pulmonary hyperinflation
+E3	Medical-Problem:T3
+T4	Lesion-Size-Trend 623 632	unchanged
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Characteristic 633 638	dense
+T6	Lesion-Description 639 645	nodule
+T7	Lesion-Anatomy 656 680;682 737	below the right hilum or interlobar artery just adjacent to the vertebral column
+T8	Medical-Problem 868 913;915 919	unusually steeply entering inferior pulmonary vein
+E7	Medical-Problem:T8
+T9	Lesion-Assertion 932 934	no
+A2	Lesion-AssertionValue T9 absent
+T10	Lesion-Description 935 939	mass
+T11	Medical-Assertion 1020 1036	No good evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1040 1049	pneumonia
+T13	Medical-Problem 1054 1067	acute process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Size-Trend:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

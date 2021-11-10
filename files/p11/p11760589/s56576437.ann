@@ -1,0 +1,30 @@
+T1	Medical-Problem 161 177	Low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 182 191;193 204	bibasilar atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 219 233	Linear opacity
+T4	Medical-Anatomy 241 257	right upper lobe
+T5	Medical-Assertion 302 310	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 313 317	scar
+T7	Lesion-Characteristic 321 340	very slowly growing
+T8	Lesion-Description 342 352	malignancy
+T9	Medical-Assertion 424 426	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 427 443	pleural effusion
+T11	Medical-Problem 447 459	pneumothorax
+T12	Medical-Problem 523 540	aortic tortuosity
+E10	Medical-Problem:T12
+T13	Medical-Assertion 588 590	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 591 603	rib fracture
+T15	Medical-Problem 645 661	low lung volumes
+E12	Medical-Problem:T15
+T16	Medical-Problem 666 687	bibasilar atelectasis
+E13	Medical-Problem:T16
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

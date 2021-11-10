@@ -1,0 +1,35 @@
+T1	Medical-Problem 259 274	Chronic changes
+T2	Medical-Anatomy 298 303	lungs
+T3	Medical-Problem 314 337;339 350	opacity with associated volume loss
+T4	Medical-Anatomy 358 373	right lung apex
+T5	Medical-Problem 375 391	Calcific density
+T6	Medical-Anatomy 399 411	left midlung
+T7	Lesion-Characteristic 437 442	Vague
+T8	Lesion-Description 443 450	nodular
+E8	Lesion-Description:T8
+T9	Lesion-Description 451 460	opacities
+T10	Lesion-Anatomy 466 492;494 512	throughout the lungs, left greater than right
+T11	Lesion-Characteristic 657 666	Calcified
+T12	Lesion-Anatomy 667 677	subcarinal
+T13	Lesion-Description 678 688	lymph node
+T14	Medical-Problem 698 718	Radiopaque densities
+T15	Medical-Anatomy 727 754	left supraclavicular region
+T16	Medical-Problem 791 806	Chronic changes
+T17	Medical-Anatomy 814 819	lungs
+T18	Medical-Anatomy 840 864;866 873	right lung apex and left midlung
+T19	Lesion-Characteristic 881 890	scattered
+T20	Lesion-Description 891 908	nodular opacities
+T21	Medical-Assertion 968 981	could also be
+A1	Medical-AssertionValue T21 possible
+T22	Medical-Problem 982 989	chronic
+T23	Medical-Problem 998 1024	superimposed acute process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E9	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T10
+E13	Lesion-Description:T13 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12
+E14	Medical-Problem:T14 has-Medical-Anatomy:T15
+E16	Medical-Problem:T16 has-Medical-Anatomy:T17 has-Medical-Anatomy:T18
+E20	Lesion-Description:T20 has-Lesion-Characteristic:T19
+E21	Medical-Problem:T22 has-Medical-Assertion:T21
+E22	Medical-Problem:T23 has-Medical-Assertion:T21

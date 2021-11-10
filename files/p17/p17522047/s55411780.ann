@@ -1,0 +1,26 @@
+T1	Medical-Problem 198 226	heart is moderately enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 278 280	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 281 297	pleural effusion
+T4	Lesion-Description 300 307	Nodular
+T5	Lesion-Anatomy 323 334	right hilus
+T6	Lesion-Assertion 395 398	may
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Characteristic 403 411	enlarged
+T8	Lesion-Description 412 423	lymph nodes
+T9	Lesion-Anatomy 431 442	right hilus
+T10	Medical-Problem 530 543	Hiatus hernia
+E8	Medical-Problem:T10
+T11	Medical-Problem 618 631	vague opacity
+T12	Medical-Anatomy 651 701	right of the midline over the cardiophrenic sulcus
+T13	Medical-Assertion 756 758	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 759 771	pneumothorax
+T15	Medical-Problem 775 782;784 792	pleural effusion
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

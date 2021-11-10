@@ -1,0 +1,35 @@
+T1	Medical-Problem 312 332	Lung volumes are low
+T2	Medical-Problem 338 350;352 361	mild streaky opacities
+T3	Medical-Anatomy 369 379	lung bases
+T4	Medical-Assertion 380 400	likely reflective of
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 401 412	atelectasis
+T6	Medical-Assertion 415 417	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 418 423;425 438	focal consolidation
+T8	Medical-Assertion 449 451	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 452 468	pleural effusion
+T10	Medical-Problem 472 484	pneumothorax
+T11	Medical-Assertion 505 507	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 508 535	acute osseous abnormalities
+T13	Medical-Assertion 546 548	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 549 572	displaced rib fractures
+T15	Medical-Problem 593 609	Low lung volumes
+E10	Medical-Problem:T15
+T16	Medical-Problem 615 641	mild bibasilar atelectasis
+E11	Medical-Problem:T16
+T17	Medical-Assertion 644 646	No
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 647 670	displaced rib fractures
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T18 has-Medical-Assertion:T17

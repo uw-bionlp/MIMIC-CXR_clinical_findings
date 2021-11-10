@@ -1,0 +1,19 @@
+T1	Medical-Problem 383 392;394 401	Increased density
+T2	Medical-Anatomy 409 423	left lung base
+T3	Medical-Problem 443 452	pneumonia
+T4	Medical-Assertion 509 516	without
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 517 525	effusion
+T6	Medical-Problem 529 541	pneumothorax
+T7	Medical-Problem 562 594	Increased left lung base density
+E6	Medical-Problem:T7
+T8	Medical-Assertion 611 618	without
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Assertion 638 652	suspicious for
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 653 678	left lower lobe pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E7	Medical-Problem:T10 has-Medical-Assertion:T8 has-Medical-Assertion:T9

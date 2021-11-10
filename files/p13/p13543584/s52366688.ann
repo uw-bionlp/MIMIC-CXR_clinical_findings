@@ -1,0 +1,26 @@
+T1	Medical-Assertion 454 456	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 457 476	focal consolidation
+T3	Medical-Assertion 495 497	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 498 519	definite pneumothorax
+T5	Medical-Assertion 521 523	No
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 525 541	pleural effusion
+T7	Medical-Anatomy 555 576	main pulmonary artery
+T8	Medical-Assertion 577 583	may be
+A4	Medical-AssertionValue T8 possible
+T9	Medical-Problem 584 602	slightly prominent
+T10	Medical-Problem 608 654	underlying component of pulmonary hypertension
+T11	Medical-Assertion 658 670	not excluded
+A5	Medical-AssertionValue T11 possible
+T12	Medical-Anatomy 672 679;681 691	Cardiac silhouette
+T13	Medical-Assertion 695 698	not
+A6	Medical-AssertionValue T13 absent
+T14	Medical-Problem 699 707	enlarged
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E6	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8 has-Medical-Assertion:T11
+E8	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

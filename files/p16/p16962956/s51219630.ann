@@ -1,0 +1,23 @@
+T1	Medical-Problem 80 101	Left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 201 230	Minimal left pleural effusion
+T3	Medical-Anatomy 246 264	costophrenic sinus
+T4	Medical-Problem 267 277;279 290	Plate-like atelectasis
+T5	Medical-Anatomy 298 313	left lung bases
+T6	Medical-Assertion 316 327	No evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 331 348	left pneumothorax
+T8	Medical-Problem 352 393	Borderline size of the cardiac silhouette
+E7	Medical-Problem:T8
+T9	Medical-Assertion 394 401	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 402 417	pulmonary edema
+T11	Medical-Assertion 420 422	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 424 437	abnormalities
+T13	Medical-Anatomy 445 461	right hemithorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13

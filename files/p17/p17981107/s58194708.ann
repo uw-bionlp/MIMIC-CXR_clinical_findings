@@ -1,0 +1,32 @@
+T1	Medical-Assertion 223 225	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 226 238	pneumothorax
+T3	Medical-Problem 242 270	appreciable pleural effusion
+T4	Medical-Problem 273 289;291 328	Perfusion to the right lung is dramatically diminished
+E3	Medical-Problem:T4
+T5	Medical-Problem 339 356	mediastinal veins
+E4	Medical-Problem:T5
+T6	Medical-Assertion 390 412	raises the possibility
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 416 440	acute pulmonary embolism
+T8	Lesion-Anatomy 459 469	left hilar
+T9	Lesion-Description 470 474	mass
+T10	Lesion-Characteristic 475 481	nearly
+T11	Medical-Problem 549 566	6-cm wide opacity
+T12	Medical-Anatomy 578 587;589 620	left lung projected over the heart border
+T13	Medical-Assertion 621 635	which could be
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 636 649	consolidation
+T15	Medical-Problem 757 784	extensive pulmonary embolus
+E12	Medical-Problem:T15
+T16	Medical-Problem 789 812	cavitary lung infection
+E13	Medical-Problem:T16
+T17	Medical-Problem 922 941	Band of atelectasis
+T18	Medical-Anatomy 955 968	left mid lung
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18

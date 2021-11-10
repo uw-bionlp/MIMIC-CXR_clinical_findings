@@ -1,0 +1,33 @@
+T1	Medical-Anatomy 283 293	heart size
+T2	Medical-Assertion 294 301	appears
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 302 326	at least mildly enlarged
+T4	Medical-Problem 338 346	crowding
+T5	Medical-Anatomy 355 381	bronchovascular structures
+T6	Medical-Assertion 386 388	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 389 410	overt pulmonary edema
+T8	Medical-Problem 592 618	Patchy bibasilar opacities
+E6	Medical-Problem:T8
+T9	Medical-Assertion 619 633	likely reflect
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 634 645	atelectasis
+T11	Medical-Assertion 647 649	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 650 661;663 679	right-sided pleural effusion
+T13	Medical-Assertion 705 707	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 708 720	pneumothorax
+T15	Medical-Problem 780 796	Patchy opacities
+T16	Medical-Anatomy 804 814	lung bases
+T17	Medical-Assertion 816 830	likely reflect
+A6	Medical-AssertionValue T17 possible
+T18	Medical-Problem 831 842	atelectasis
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Anatomy:T16
+E12	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

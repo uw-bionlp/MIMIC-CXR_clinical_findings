@@ -1,0 +1,24 @@
+T1	Medical-Problem 212 230	mild new opacities
+T2	Medical-Anatomy 245 259	right mid lung
+T3	Medical-Assertion 266 279	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 284 302	infectious process
+T5	Lesion-Size 345 349	5 mm
+T6	Lesion-Anatomy 350 355;357 377	right lower lobe pulmonary
+T7	Lesion-Description 378 385	nodules
+T8	Medical-Problem 421 431;433 452	Mild right basilar atelectasis
+E7	Medical-Problem:T8
+T9	Medical-Problem 562 580	Mild new opacities
+T10	Medical-Anatomy 595 608	right midlung
+T11	Medical-Assertion 615 628	may represent
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 633 651	infectious process
+T13	Lesion-Size 754 758	5-mm
+T14	Lesion-Anatomy 759 775	right lower lobe
+T15	Lesion-Description 776 782	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Lesion-Description:T15 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T14

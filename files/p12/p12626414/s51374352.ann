@@ -1,0 +1,17 @@
+T1	Medical-Assertion 30 52	No convincing evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 56 65	pneumonia
+T3	Medical-Problem 557 582	apparent oval ring shadow
+T4	Medical-Anatomy 603 628	right lung base laterally
+T5	Medical-Problem 636 648	thicker wall
+T6	Medical-Problem 816 834	indolent infection
+E5	Medical-Problem:T6
+T7	Medical-Problem 838 852	superinfection
+E6	Medical-Problem:T7
+T8	Lesion-Characteristic 857 863	cystic
+T9	Lesion-Anatomy 864 885	right lower lobe lung
+T10	Lesion-Description 886 892	lesion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T4
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9

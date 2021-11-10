@@ -1,0 +1,16 @@
+T1	Medical-Problem 334 349	mild prominence
+T2	Medical-Anatomy 357 379;381 389	pulmonary interstitial markings
+T3	Medical-Problem 395 412	increased density
+T4	Medical-Anatomy 420 424	left
+T5	Medical-Problem 450 454;456 471	mild pulmonary edema
+T6	Medical-Problem 483 508	left retrocardiac opacity
+E6	Medical-Problem:T6
+T7	Medical-Problem 513 531;533 541	left-sided pleural effusion
+E7	Medical-Problem:T7
+T8	Medical-Assertion 554 556	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 557 571	pneumothoraces
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,27 @@
+T1	Medical-Problem 60 98	Exudative right-sided pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 325 327	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 328 368	recurrence of the right pleural effusion
+T4	Medical-Problem 385 406	left pleural effusion
+E3	Medical-Problem:T4
+T5	Medical-Problem 411 430	tiny linear density
+T6	Medical-Anatomy 438 448	right apex
+T7	Medical-Assertion 449 462	may represent
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 466 491	small apical pneumothorax
+T9	Medical-Problem 611 622	obscuration
+T10	Medical-Anatomy 630 648	right heart border
+T11	Medical-Assertion 654 676	most likely represents
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 677 688	atelectasis
+T13	Medical-Anatomy 697 714	right middle lobe
+T14	Medical-Problem 722 731	pneumonia
+T15	Medical-Assertion 732 761	cannot be completely excluded
+A4	Medical-AssertionValue T15 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13 has-Medical-Assertion:T15

@@ -1,0 +1,23 @@
+T1	Medical-Problem 277 301	Heart is mildly enlarged
+T2	Medical-Anatomy 303 312	pulmonary
+T3	Medical-Assertion 347 349	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 351 366	pulmonary edema
+T5	Medical-Assertion 383 385	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 386 402	pleural effusion
+T7	Medical-Problem 405 428	Thoracic scoliosis mild
+E5	Medical-Problem:T7
+T8	Lesion-Assertion 433 441	Possible
+A3	Lesion-AssertionValue T8 possible
+T9	Lesion-Characteristic 442 447	lytic
+T10	Lesion-Description 448 454	lesion
+T11	Lesion-Anatomy 455 495	medial aspect of the upper right scapula
+T12	Medical-Problem 621 642	osseous abnormalities
+E9	Medical-Problem:T12
+T13	Lesion-Characteristic 662 667	lytic
+E10	Lesion-Characteristic:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T11

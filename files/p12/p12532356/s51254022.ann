@@ -1,0 +1,36 @@
+T1	Medical-Problem 412 425	consolidation
+T2	Medical-Anatomy 434 448	mid right lung
+T3	Medical-Problem 451 465	Linear opacity
+T4	Medical-Anatomy 473 486	mid left lung
+T5	Medical-Assertion 487 506	may be secondary to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 508 519	atelectasis
+T7	Medical-Problem 629 653	aorta is mildly tortuous
+E6	Medical-Problem:T7
+T8	Medical-Assertion 666 668	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 669 691	large pleural effusion
+T10	Medical-Problem 695 707	pneumothorax
+T11	Medical-Problem 709 733	Improved pulmonary edema
+E9	Medical-Problem:T11
+T12	Medical-Problem 736 762	Improved pleural effusions
+E10	Medical-Problem:T12
+T13	Medical-Problem 868 896	mid right lung consolidation
+E11	Medical-Problem:T13
+T14	Medical-Problem 936 962	Mild bibasilar atelectasis
+E12	Medical-Problem:T14
+T15	Medical-Assertion 965 967	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 968 971;973 987	new consolidations
+T17	Medical-Assertion 988 998	concerning
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1003 1012	pneumonia
+T19	Medical-Problem 1031 1060	Improved mild pulmonary edema
+E15	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T15 has-Medical-Assertion:T17

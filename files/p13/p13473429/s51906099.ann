@@ -1,0 +1,28 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 69	acute cardiopulmonary abnormality
+T3	Lesion-Size 466 472	1.0 cm
+T4	Lesion-Description 473 480	nodular
+E3	Lesion-Description:T4
+T5	Lesion-Description 481 488	opacity
+T6	Medical-Anatomy 496 512	right upper lobe
+E5	Medical-Anatomy:T6
+T7	Medical-Assertion 544 555	no evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 559 568	pneumonia
+T9	Lesion-Characteristic 579 588	scattered
+T10	Lesion-Characteristic 589 598	calcified
+T11	Lesion-Description 600 610	granulomas
+T12	Lesion-Size-Trend 615 624	unchanged
+A3	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Problem 651 659;661 675	traction bronchiectasis
+E10	Medical-Problem:T13
+T14	Medical-Problem 677 697	parenchymal scarring
+T15	Medical-Problem 702 726	architectural distortion
+T16	Medical-Anatomy 734 738;740 749	left lung apex
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Size-Trend:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T16
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16

@@ -1,0 +1,25 @@
+T1	Medical-Problem 268 287;289 296	persistent low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 299 344	Moderate-to-large bilateral pleural effusions
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 375 391	Right lower lobe
+T4	Medical-Problem 392 399	opacity
+T5	Medical-Assertion 415 428	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 429 438;440 451	worsening atelectasis
+T7	Medical-Problem 454 478	Moderate pulmonary edema
+E6	Medical-Problem:T7
+T8	Medical-Problem 491 515;517 526	Irregular left perihilar opacities
+E7	Medical-Problem:T8
+T9	Medical-Assertion 542 557	could be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 558 569	atelectasis
+T11	Medical-Problem 573 582	pneumonia
+T12	Medical-Assertion 595 597	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 598 610	pneumothorax
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,29 @@
+T1	Lesion-Description 212 227	nodular opacity
+T2	Lesion-Anatomy 235 257	left juxtahilar region
+T3	Lesion-Characteristic 262 272	peripheral
+T4	Lesion-Description 274 281	opacity
+T5	Lesion-Anatomy 285 300	left upper lobe
+T6	Lesion-Assertion 305 322	no longer evident
+A1	Lesion-AssertionValue T6 absent
+T7	Medical-Anatomy 336 347;349 353	right lower lobe
+T8	Medical-Problem 370 375	rapid
+T9	Medical-Problem 391 407	opacity medially
+T10	Medical-Anatomy 415 425	right base
+T11	Medical-Problem 490 498;500 531	small to moderate right pleural effusion
+E10	Medical-Problem:T11
+T12	Medical-Problem 534 561	Small left pleural effusion
+E11	Medical-Problem:T12
+T13	Medical-Problem 595 637	Rapidly improving right lower lobe opacity
+E12	Medical-Problem:T13
+T14	Medical-Assertion 638 644	favors
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 645 656	atelectasis
+T16	Medical-Problem 661 671	aspiration
+T17	Medical-Problem 674 730	Small-to-moderate right and small left pleural effusions
+E15	Medical-Problem:T17
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Assertion:T6
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14

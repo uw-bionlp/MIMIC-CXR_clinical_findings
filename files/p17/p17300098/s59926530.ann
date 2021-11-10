@@ -1,0 +1,22 @@
+T1	Medical-Problem 114 137	Lung volumes remain low
+E1	Medical-Problem:T1
+T2	Medical-Problem 253 257;259 269	less distention
+T3	Medical-Anatomy 277 289	azygous vein
+T4	Medical-Anatomy 294 311	pulmonary vessels
+T5	Medical-Problem 338 356	interstitial edema
+E5	Medical-Problem:T5
+T6	Medical-Problem 379 395	Patchy opacities
+T7	Medical-Anatomy 411 416;418 423	lower lobes
+T8	Medical-Assertion 428 444	likely represent
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 445 463	patchy atelectasis
+T10	Lesion-Characteristic 466 496	Peripheral smoothly marginated
+T11	Lesion-Anatomy 498 508	chest wall
+T12	Lesion-Description 509 513	mass
+T13	Lesion-Anatomy 532 551	left mid hemithorax
+T14	Medical-Problem 557 571;573 584	associated rib destruction
+E13	Medical-Problem:T14
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T13

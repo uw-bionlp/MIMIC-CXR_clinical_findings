@@ -1,0 +1,23 @@
+T1	Medical-Problem 365 380	pulmonary edema
+T2	Medical-Assertion 385 400	largely cleared
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 407 427	concurrent pneumonia
+T4	Medical-Assertion 428 431	has
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Assertion 433 446	also resolved
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 460 505	small residual of peribronchial opacification
+T7	Medical-Anatomy 514 529	left lower lobe
+T8	Medical-Assertion 532 534	No
+A4	Medical-AssertionValue T8 absent
+T9	Medical-Problem 547 563	pleural effusion
+T10	Medical-Problem 574 601	cardiomediastinal and hilar
+E6	Medical-Problem:T10
+T11	Medical-Assertion 616 618	No
+A5	Medical-AssertionValue T11 absent
+T12	Medical-Problem 619 631	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Assertion:T4 has-Medical-Assertion:T5
+E3	Medical-Problem:T6 has-Medical-Assertion:T4 has-Medical-Anatomy:T7
+E5	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T12 has-Medical-Assertion:T11

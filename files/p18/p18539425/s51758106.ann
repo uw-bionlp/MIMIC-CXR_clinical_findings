@@ -1,0 +1,18 @@
+T1	Medical-Problem 223 252	Region of prior consolidation
+T2	Medical-Anatomy 276 299;301 323	posterior basal segment of the left lower lobe
+T3	Medical-Anatomy 434 451	right middle lobe
+E3	Medical-Anatomy:T3
+T4	Medical-Problem 510 519;521 547	Very mild peribronchial infiltration
+T5	Medical-Anatomy 555 596;598 641	axillary region of the left upper lung at the level of the second anterior interspace
+T6	Medical-Problem 679 708	multifocal infection, perhaps
+E6	Medical-Problem:T6
+T7	Medical-Assertion 865 867	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 868 884	pleural effusion
+T9	Lesion-Characteristic 888 896	evidence
+T10	Lesion-Characteristic 900 907	central
+T11	Lesion-Description 908 930	lymph node enlargement
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10

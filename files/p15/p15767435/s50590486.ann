@@ -1,0 +1,32 @@
+T1	Medical-Problem 70 86	Low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 91 99;101 114	moderate  cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 125 147	Medial right lung base
+T4	Medical-Problem 218 227	infection
+T5	Medical-Problem 268 275	Opacity
+T6	Medical-Anatomy 290 314	right costophrenic angle
+T7	Medical-Assertion 341 356	could represent
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 357 368	atelectasis
+T9	Medical-Problem 858 875	mild cardiomegaly
+E8	Medical-Problem:T9
+T10	Medical-Problem 910 930	mild pulmonary edema
+E9	Medical-Problem:T10
+T11	Medical-Problem 935 960	bilateral basal opacities
+E10	Medical-Problem:T11
+T12	Medical-Assertion 962 978	likely caused by
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 980 991	atelectasis
+T14	Medical-Assertion 994 996	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 997 1036	newly appeared lung parenchymal changes
+T16	Medical-Assertion 1039 1041	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1042 1054	pneumothorax
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

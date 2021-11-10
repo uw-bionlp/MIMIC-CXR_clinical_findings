@@ -1,0 +1,23 @@
+T1	Medical-Assertion 362 364	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 365 375	aspiration
+T3	Medical-Assertion 378 380	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 402 413	abnormality
+E2	Medical-Problem:T4
+T5	Medical-Problem 421 450	minimal platelike atelectasis
+E3	Medical-Problem:T5
+T6	Lesion-Size 526 532	2-3 mm
+T7	Lesion-Characteristic 534 543	calcified
+T8	Lesion-Description 544 553	granuloma
+T9	Lesion-Anatomy 561 576	right lung apex
+T10	Lesion-Assertion 579 581	No
+A3	Lesion-AssertionValue T10 absent
+T11	Medical-Problem 582 599	pleural effusions
+E8	Medical-Problem:T11
+T12	Medical-Assertion 602 604	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 606 618	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

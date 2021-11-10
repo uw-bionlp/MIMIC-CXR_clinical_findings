@@ -1,0 +1,21 @@
+T1	Medical-Problem 308 318;320 335	pleural or parenchymal abn
+E1	Medical-Problem:T1
+T2	Medical-Problem 445 454	Scoliosis
+T3	Medical-Problem 461 470	asymmetry
+T4	Medical-Anatomy 478 485	ribcage
+T5	Medical-Assertion 519 521	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 522 529;531 540	pleural effusions
+T7	Medical-Assertion 543 545	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 546 555	pneumonia
+T9	Medical-Assertion 557 559	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 560 575	pulmonary edema
+T11	Medical-Problem 577 587	Borderline
+E8	Medical-Problem:T11
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

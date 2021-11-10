@@ -1,0 +1,58 @@
+T1	Medical-Anatomy 312 317;319 329	right upper lobe
+T2	Medical-Assertion 331 341	suggesting
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 342 351	emphysema
+T4	Medical-Assertion 363 365	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 366 382	pleural effusion
+T6	Medical-Problem 387 399	pneumothorax
+T7	Medical-Problem 417 437	patchy new opacities
+T8	Medical-Anatomy 441 457	both lower lungs
+T9	Medical-Assertion 504 517	worrisome for
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 518 527	pneumonia
+T11	Lesion-Description 624 631	nodular
+E8	Lesion-Description:T11
+T12	Medical-Anatomy 659 675	right lower lung
+T13	Medical-Assertion 721 729	possibly
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 732 788	nipple shadow superimposed on a background opacification
+T15	Medical-Anatomy 797 808	lower lungs
+T16	Medical-Anatomy 835 856	medial left lung apex
+T17	Medical-Problem 862 884;886 896	newly apparent pleural thickening
+T18	Lesion-Assertion 928 934	raises
+A5	Lesion-AssertionValue T18 possible
+T19	Medical-Problem 1078 1085	opacity
+E14	Medical-Problem:T19
+T20	Medical-Problem 1115 1142	Patchy lower lung opacities
+E15	Medical-Problem:T20
+T21	Medical-Assertion 1143 1153	suggesting
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1154 1163	pneumonia
+T23	Lesion-Assertion 1176 1189	worrisome for
+A7	Lesion-AssertionValue T23 possible
+T24	Lesion-Size-Trend 1192 1195	new
+A8	Lesion-Size-TrendValue T24 new
+T25	Lesion-Characteristic 1196 1217	potentially malignant
+T26	Lesion-Description 1218 1224	nodule
+T27	Lesion-Anatomy 1232 1246	left lung apex
+T28	Lesion-Description 1365 1378	nodular focus
+T29	Lesion-Anatomy 1399 1410;1412 1416	right lower lung
+T30	Medical-Assertion 1459 1470	may reflect
+A9	Medical-AssertionValue T30 possible
+T31	Lesion-Characteristic 1473 1477	true
+T32	Lesion-Anatomy 1478 1482	lung
+T33	Lesion-Description 1483 1489	nodule
+T34	Medical-Problem 1498 1564	part of a suspected coinciding infectious process or nipple shadow
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T16
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E18	Lesion-Description:T26 has-Lesion-Assertion:T23 has-Lesion-Size-Trend:T24 has-Lesion-Characteristic:T25 has-Lesion-Anatomy:T27
+E20	Lesion-Description:T28 has-Lesion-Anatomy:T29
+E24	Lesion-Description:T33 has-Lesion-Characteristic:T31 has-Lesion-Anatomy:T32
+E25	Medical-Problem:T34 has-Medical-Assertion:T30

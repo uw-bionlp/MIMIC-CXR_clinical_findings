@@ -1,0 +1,22 @@
+T1	Medical-Assertion 288 300	Questionable
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 301 319	asymmetric opacity
+T3	Medical-Anatomy 328 344	right lower lung
+T4	Medical-Assertion 358 371	might reflect
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 372 389;391 400	residual of prior infection
+T6	Medical-Problem 456 463	Dynamic
+E4	Medical-Problem:T6
+T7	Medical-Assertion 540 542	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 544 563	other abnormalities
+T9	Medical-Anatomy 588 593	lungs
+T10	Medical-Assertion 607 609	no
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 610 617;619 627	pleural effusion
+T12	Medical-Problem 631 643	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E7	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T10

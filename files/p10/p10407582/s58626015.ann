@@ -1,0 +1,21 @@
+T1	Medical-Problem 261 277;279 298	Subtle increased scattered opacities
+T2	Medical-Anatomy 315 331	right upper lung
+T3	Medical-Anatomy 333 349	right lower lung
+T4	Medical-Anatomy 355 370	left lower lung
+T5	Medical-Problem 395 415	multifocal pneumonia
+T6	Medical-Assertion 418 420	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 421 426;428 436	large effusion
+T8	Medical-Assertion 447 449	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 450 462	pneumothorax
+T10	Medical-Problem 551 577	Subtle scattered opacities
+E8	Medical-Problem:T10
+T11	Medical-Assertion 578 593	could represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 594 614	multifocal pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,42 @@
+T1	Medical-Anatomy 276 281	lungs
+T2	Medical-Problem 286 299	hyperinflated
+T3	Medical-Assertion 307 321	likely reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 322 347	underlying COPD/emphysema
+T5	Medical-Problem 351 368	nodular structure
+E4	Medical-Problem:T5
+T6	Medical-Problem 422 454	left perihilar nodular structure
+E5	Medical-Problem:T6
+T7	Medical-Assertion 455 458;460 469	may represent
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 470 489	en face vasculature
+T9	Medical-Assertion 569 571	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 572 591	focal consolidation
+T11	Medical-Assertion 592 606	concerning for
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 607 616	pneumonia
+T13	Medical-Assertion 627 629	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 631 639	effusion
+T15	Medical-Problem 644 656	pneumothorax
+T16	Medical-Problem 742 773	Multilevel degenerative disease
+T17	Medical-Anatomy 791 805	thoracic spine
+T18	Medical-Problem 811 831	large anterior spurs
+T19	Medical-Assertion 833 835	No
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 836 860	free air below the right
+T21	Lesion-Anatomy 904 920	Right lower lung
+T22	Lesion-Anatomy 925 939	left perihilar
+T23	Lesion-Description 940 957	nodular opacities
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Anatomy:T17
+E13	Medical-Problem:T18 has-Medical-Anatomy:T17
+E14	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Lesion-Description:T23 has-Lesion-Anatomy:T21 has-Lesion-Anatomy:T22

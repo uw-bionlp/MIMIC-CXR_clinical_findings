@@ -1,0 +1,33 @@
+T1	Medical-Problem 58 82	right sided pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 534 589	Interval decrease in size of a right-sided pneumothorax
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 640 650	right lung
+T4	Medical-Problem 664 670	appear
+E4	Medical-Problem:T4
+T5	Medical-Problem 671 687;689 696	heterogeneous in opacity
+T6	Lesion-Anatomy 723 739	right upper lobe
+T7	Lesion-Description 740 744	mass
+T8	Lesion-Description 749 759	nodularity
+E8	Lesion-Description:T8
+T9	Lesion-Size-Trend 839 845	stable
+A1	Lesion-Size-TrendValue T9 no-change
+T10	Lesion-Characteristic 846 861	low-attenuation
+T11	Lesion-Size 862 866	5 mm
+T12	Lesion-Description 867 874	nodular
+E11	Lesion-Description:T12
+T13	Lesion-Description 875 882	opacity
+T14	Lesion-Anatomy 899 917;919 948	inferior aspect of the fourth left posterior rib
+T15	Medical-Assertion 986 988	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 989 993;995 1003	left effusion
+T17	Medical-Problem 1104 1124	entrapped right lung
+E15	Medical-Problem:T17
+T18	Medical-Assertion 1127 1129	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1130 1144;1146 1154	definite right effusion
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E12	Lesion-Description:T13 has-Lesion-Size-Trend:T9 has-Lesion-Characteristic:T10 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

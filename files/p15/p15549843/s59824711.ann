@@ -1,0 +1,36 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 74	definite acute cardiopulmonary process
+T3	Lesion-Description 76 93	Nodular opacities
+T4	Lesion-Anatomy 101 106	lungs
+T5	Lesion-Count 534 542	multiple
+T6	Lesion-Description 543 560	nodular opacities
+T7	Lesion-Anatomy 568 573	lungs
+T8	Medical-Problem 696 703	opacity
+E7	Medical-Problem:T8
+T9	Medical-Anatomy 711 721	lung bases
+T10	Medical-Assertion 722 732	suggestive
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 733 744	atelectasis
+T12	Medical-Assertion 794 796	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 797 824	acute osseous abnormalities
+T14	Medical-Problem 854 884	bones are diffusely osteopenic
+E11	Medical-Problem:T14
+T15	Medical-Problem 925 935	tortuosity
+T16	Medical-Anatomy 943 968	descending thoracic aorta
+T17	Medical-Assertion 989 991	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 992 1030	definite acute cardiopulmonary process
+T19	Lesion-Description 1032 1039	Nodular
+E15	Lesion-Description:T19
+T20	Medical-Problem 1040 1049	opacities
+T21	Medical-Anatomy 1057 1062	lungs
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E5	Lesion-Description:T6 has-Lesion-Count:T5 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21

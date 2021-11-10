@@ -1,0 +1,19 @@
+T1	Medical-Problem 396 427;429 437	moderate to large right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 449 471	loculated pneumothorax
+T3	Medical-Anatomy 481 506	right lung base laterally
+T4	Medical-Problem 514 521	opacity
+T5	Medical-Anatomy 529 553	right lung base medially
+T6	Medical-Assertion 554 569	could represent
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 570 581	combination
+T8	Medical-Problem 608 619	atelectasis
+T9	Medical-Problem 828 850	right pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 885 903	Small pneumothorax
+T11	Medical-Anatomy 911 936	right lung base laterally
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11

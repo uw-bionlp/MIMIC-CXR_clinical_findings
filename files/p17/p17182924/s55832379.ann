@@ -1,0 +1,30 @@
+T1	Medical-Problem 238 267	aorta remains mildly tortuous
+E1	Medical-Problem:T1
+T2	Medical-Problem 354 380	Lungs remain hyperinflated
+E2	Medical-Problem:T2
+T3	Medical-Problem 391 410	minimal atelectasis
+T4	Medical-Anatomy 418 422;424 433	left lung base
+T5	Medical-Assertion 436 438	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 439 458	focal consolidation
+T7	Medical-Problem 460 476	pleural effusion
+T8	Medical-Problem 480 492	pneumothorax
+T9	Lesion-Characteristic 506 515	Scattered
+T10	Lesion-Characteristic 516 525	calcified
+T11	Lesion-Description 526 536	granulomas
+T12	Lesion-Anatomy 560 565	lungs
+T13	Lesion-Size-Trend 568 577	unchanged
+A2	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Assertion 589 591	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 592 619	acute osseous abnormalities
+T16	Medical-Assertion 640 642	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 643 676	acute cardiopulmonary abnormality
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E10	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

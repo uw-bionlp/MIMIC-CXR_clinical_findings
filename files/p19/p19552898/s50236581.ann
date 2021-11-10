@@ -1,0 +1,18 @@
+T1	Medical-Problem 139 151	Cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 205 210;212 221	Large opacities
+T3	Medical-Anatomy 229 239	right lung
+T4	Medical-Problem 256 278	Right pleural effusion
+E4	Medical-Problem:T4
+T5	Medical-Assertion 325 327	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 328 340	pneumothorax
+T7	Medical-Assertion 353 355	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 356 361;363 379	other interval changes
+T9	Lesion-Description 390 397	opacity
+T10	Lesion-Anatomy 421 437	right lower lobe
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T10

@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 291 296	lungs
+T2	Medical-Problem 304 326	slightly hyperexpanded
+T3	Medical-Problem 328 348	Patchy opacification
+T4	Medical-Anatomy 356 360;362 372	left lower lobe
+T5	Medical-Problem 396 417	prominent aortic knob
+E5	Medical-Problem:T5
+T6	Medical-Problem 491 504;506 517	Postoperative mediastinal
+E6	Medical-Problem:T6
+T7	Medical-Assertion 559 561	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 562 578	pleural effusion
+T9	Medical-Problem 677 701	New patchy opacification
+T10	Medical-Anatomy 709 724	left lower lobe
+T11	Medical-Assertion 725 733	suggests
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 734 743	pneumonia
+T13	Medical-Assertion 745 749	less
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 758 777	amiodarone toxicity
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

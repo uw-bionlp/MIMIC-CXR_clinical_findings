@@ -1,0 +1,18 @@
+T1	Medical-Assertion 399 401	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 402 418	pleural effusion
+T3	Medical-Problem 422 434	pneumothorax
+T4	Lesion-Characteristic 440 444	oval
+T5	Medical-Anatomy 474 496	eighth rib posteriorly
+E4	Medical-Anatomy:T5
+T6	Lesion-Assertion 500 506	likely
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Characteristic 509 518	calcified
+T8	Lesion-Description 519 528	granuloma
+T9	Medical-Assertion 549 551	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 552 572	mediastinal widening
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T8 has-Lesion-Characteristic:T4 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

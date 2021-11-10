@@ -1,0 +1,40 @@
+T1	Medical-Problem 315 350	Slight asymmetric increased opacity
+T2	Medical-Anatomy 358 381	right infrahilar region
+T3	Medical-Assertion 382 393	may reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 398 420	early bronchopneumonia
+T5	Medical-Problem 428 439	atelectasis
+T6	Medical-Problem 442 472	Retrocardiac streaky opacities
+E5	Medical-Problem:T6
+T7	Medical-Problem 487 498	atelectasis
+E6	Medical-Problem:T7
+T8	Medical-Assertion 501 503	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 504 509	edema
+T10	Medical-Problem 511 527	pleural effusion
+T11	Medical-Problem 532 544	pneumothorax
+T12	Medical-Problem 582 596	mediastinum is
+E10	Medical-Problem:T12
+T13	Medical-Assertion 597 600	not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 601 608	widened
+T15	Medical-Assertion 611 613	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 614 627;629 640	acute osseous abnormality
+T17	Medical-Problem 751 786	Slight asymmetric increased opacity
+T18	Medical-Anatomy 794 817	right infrahilar region
+T19	Medical-Assertion 818 823;825 832	could reflect
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 836 858	early bronchopneumonia
+T21	Medical-Problem 866 877	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T18 has-Medical-Assertion:T19

@@ -1,0 +1,48 @@
+T1	Medical-Assertion 205 207	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 208 216	crackles
+T3	Medical-Problem 220 231	pleural rub
+T4	Lesion-Description 457 467	Adenopathy
+T5	Lesion-Anatomy 475 486	right hilus
+T6	Lesion-Anatomy 493 518	posterior lung or pleural
+T7	Lesion-Description 519 523	mass
+T8	Lesion-Size-Trend 611 614	new
+A2	Lesion-Size-TrendValue T8 new
+T9	Lesion-Description 642 648	lesion
+T10	Lesion-Size 661 669	3 x 6 cm
+T11	Lesion-Description 675 679	mass
+T12	Lesion-Anatomy 688 714	lower pole the right hilus
+T13	Lesion-Characteristic 763 790	greater than normal density
+T14	Lesion-Anatomy 798 824	upper portion of the hilus
+T15	Lesion-Assertion 825 835	may be due
+A3	Lesion-AssertionValue T15 possible
+T16	Lesion-Description 851 862	lymph nodes
+T17	Medical-Problem 876 912	4 healed right anterior rib fracture
+E14	Medical-Problem:T17
+T18	Lesion-Anatomy 952 956	lung
+T19	Lesion-Description 957 964	nodules
+T20	Lesion-Description 975 982	nodules
+E17	Lesion-Description:T20
+T21	Lesion-Anatomy 1047 1058	Mediastinal
+T22	Lesion-Description 1060 1070	adenopathy
+T23	Medical-Assertion 1100 1102	no
+A4	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1103 1119	pleural effusion
+T25	Lesion-Size-Trend 1164 1167	New
+A5	Lesion-Size-TrendValue T25 new
+T26	Lesion-Anatomy 1168 1179	right hilar
+T27	Lesion-Description 1180 1190	adenopathy
+T28	Lesion-Anatomy 1195 1227	peripheral right lung or pleural
+T29	Lesion-Description 1228 1232	mass
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E7	Lesion-Description:T9 has-Lesion-Size-Present:T10
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T12 has-Lesion-Characteristic:T13
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T14 has-Lesion-Assertion:T15
+E16	Lesion-Description:T19 has-Lesion-Anatomy:T18
+E19	Lesion-Description:T22 has-Lesion-Anatomy:T21
+E20	Medical-Problem:T24 has-Medical-Assertion:T23
+E22	Lesion-Description:T27 has-Lesion-Size-Trend:T25 has-Lesion-Anatomy:T26
+E24	Lesion-Description:T29 has-Lesion-Size-Trend:T25 has-Lesion-Anatomy:T28

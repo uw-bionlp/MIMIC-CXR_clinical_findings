@@ -1,0 +1,42 @@
+T1	Medical-Problem 319 336	Mild cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 363 380	aorta is tortuous
+T3	Medical-Problem 387 417	atherosclerotic calcifications
+T4	Medical-Anatomy 431 442	aortic knob
+T5	Medical-Problem 445 461;463 471	Ascending aortic aneurysm
+E5	Medical-Problem:T5
+T6	Medical-Problem 581 590	Elevation
+T7	Medical-Anatomy 598 603	right
+T8	Medical-Problem 634 667	Trace bilateral pleural effusions
+E8	Medical-Problem:T8
+T9	Medical-Problem 712 736	subsegmental atelectasis
+T10	Medical-Anatomy 750 765	right lung base
+T11	Lesion-Size 768 773	14 mm
+T12	Lesion-Anatomy 774 800	right upper lobe pulmonary
+T13	Lesion-Description 801 807	nodule
+T14	Lesion-Size-Trend 811 820	unchanged
+A1	Lesion-Size-TrendValue T14 no-change
+T15	Medical-Assertion 823 825	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 827 846	focal consolidation
+T17	Medical-Problem 850 862	pneumothorax
+T18	Medical-Problem 1003 1036	Small bilateral pleural effusions
+E16	Medical-Problem:T18
+T19	Medical-Assertion 1039 1041	No
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1042 1051	pneumonia
+T21	Lesion-Size-Trend 1057 1066	Unchanged
+A4	Lesion-Size-TrendValue T21 no-change
+T22	Lesion-Anatomy 1067 1093	right upper lobe pulmonary
+T23	Lesion-Description 1094 1100	nodule
+T24	Medical-Problem 1112 1137	ascending aortic aneurysm
+E20	Medical-Problem:T24
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E13	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T15
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E19	Lesion-Description:T23 has-Lesion-Size-Trend:T21 has-Lesion-Anatomy:T22

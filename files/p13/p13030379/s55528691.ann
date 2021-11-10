@@ -1,0 +1,38 @@
+T1	Medical-Problem 262 272	relatively
+E1	Medical-Problem:T1
+T2	Medical-Problem 311 331	retrocardiac opacity
+E2	Medical-Problem:T2
+T3	Medical-Problem 375 392	increased density
+T4	Medical-Anatomy 413 432	right hemidiaphragm
+T5	Medical-Assertion 501 514	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 515 526	atelectasis
+T7	Medical-Problem 535 544	pneumonia
+T8	Medical-Assertion 545 563	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Lesion-Anatomy 566 581	Left lower lung
+T10	Lesion-Characteristic 582 591	calcified
+T11	Lesion-Description 592 601	granuloma
+T12	Lesion-Anatomy 607 622	bilateral hilar
+T13	Lesion-Characteristic 623 632	calcified
+T14	Lesion-Description 633 638	nodes
+T15	Lesion-Characteristic 639 679	suggest previous granulomatous infection
+T16	Medical-Assertion 682 684	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 686 711	acute osseous abnormality
+T18	Medical-Problem 740 768	Streaky left basilar opacity
+E15	Medical-Problem:T18
+T19	Medical-Assertion 769 787	potentially due to
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 788 799	atelectasis
+T21	Medical-Problem 841 850	pneumonia
+T22	Medical-Assertion 851 869	cannot be excluded
+A5	Medical-AssertionValue T22 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T12 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T22

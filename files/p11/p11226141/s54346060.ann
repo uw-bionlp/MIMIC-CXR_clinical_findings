@@ -1,0 +1,35 @@
+T1	Lesion-Size-Trend 317 352	in increase in both size and number
+A1	Lesion-Size-TrendValue T1 increasing
+T2	Lesion-Count 356 364	multiple
+T3	Lesion-Anatomy 365 384	bilateral pulmonary
+T4	Lesion-Description 385 392	nodules
+T5	Medical-Anatomy 405 421	right upper lobe
+T6	Medical-Problem 480 532	new, confluent, consolidative left perihilar opacity
+T7	Medical-Problem 539 550	new opacity
+T8	Medical-Anatomy 571 578	lingula
+T9	Medical-Anatomy 601 616	left upper lobe
+T10	Medical-Problem 643 671	collapsed T11 vertebral body
+E9	Medical-Problem:T10
+T11	Lesion-Count 704 712	multiple
+T12	Lesion-Description 730 737	lesions
+T13	Medical-Problem 848 900	new, confluent, consolidative left perihilar opacity
+T14	Medical-Anatomy 901 912;914 965	centered in the lingula with involvement of the left upper lobe
+T15	Medical-Problem 972 979	opacity
+T16	Medical-Assertion 983 987	most
+A2	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1007 1025	lingular pneumonia
+T18	Lesion-Size 1042 1047	small
+T19	Lesion-Anatomy 1048 1067	bilateral pulmonary
+T20	Lesion-Description 1068 1075	nodules
+T21	Lesion-Size-Trend 1081 1107;1109 1115	increased in both size and number
+A3	Lesion-Size-TrendValue T21 increasing
+T22	Medical-Problem 1190 1212	upper lobe atelectasis
+E19	Medical-Problem:T22
+E3	Lesion-Description:T4 has-Lesion-Size-Trend:T1 has-Lesion-Count:T2 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E11	Lesion-Description:T12 has-Lesion-Count:T11
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E18	Lesion-Description:T20 has-Lesion-Size-Present:T18 has-Lesion-Anatomy:T19 has-Lesion-Size-Trend:T21

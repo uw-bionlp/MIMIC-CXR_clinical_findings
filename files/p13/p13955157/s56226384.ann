@@ -1,0 +1,18 @@
+T1	Medical-Problem 179 200	veil-like radiopacity
+T2	Medical-Anatomy 221 236	right lung base
+T3	Medical-Problem 276 316	large mediastinal pleural fat collection
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 364 369	Lungs
+T5	Medical-Assertion 398 406	possibly
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 407 420	hyperinflated
+T7	Medical-Assertion 428 450	raises the possibility
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 454 472;474 506	acute exacerbation of obstructive airways diseases,
+T9	Medical-Assertion 538 549	no evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 554 563	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

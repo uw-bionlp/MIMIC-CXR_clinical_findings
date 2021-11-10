@@ -1,0 +1,18 @@
+T1	Medical-Problem 276 288	cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 301 342;344 354	bilateral pleural effusions, left greater than right
+E2	Medical-Problem:T2
+T3	Medical-Problem 368 396	prominent gastric air bubble
+T4	Medical-Anatomy 404 413	left base
+T5	Medical-Problem 426 444	minimal prominence
+T6	Medical-Anatomy 452 483	pulmonary interstitial markings
+T7	Medical-Assertion 484 491	without
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 492 497;499 514	overt pulmonary edema
+T9	Medical-Assertion 527 529	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 530 550	focal pneumothoraces
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

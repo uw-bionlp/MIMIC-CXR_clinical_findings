@@ -1,0 +1,35 @@
+T1	Medical-Anatomy 298 302	left
+T2	Medical-Problem 335 348	subtle linear
+T3	Lesion-Characteristic 353 360	nodular
+E3	Lesion-Characteristic:T3
+T4	Medical-Assertion 375 390	could represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 394 399;401 410	early pneumonia
+T6	Medical-Problem 456 474;476 481	markedly torturous aorta
+E5	Medical-Problem:T6
+T7	Medical-Assertion 532 534	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 535 550	pulmonary edema
+T9	Medical-Assertion 554 556	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 557 569	pneumothorax
+T11	Medical-Assertion 572 574	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 575 597	large pleural effusion
+T13	Medical-Assertion 600 602	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 603 622;624 637	air under the right hemidiaphragm
+T15	Lesion-Characteristic 658 664	Subtle
+T16	Lesion-Description 676 683	nodular
+T17	Medical-Anatomy 710 714	left
+T18	Medical-Assertion 747 775	raises potential concern for
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 779 794	early pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Lesion-Description:T16 has-Lesion-Characteristic:T15
+E13	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

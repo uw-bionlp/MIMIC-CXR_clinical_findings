@@ -1,0 +1,30 @@
+T1	Medical-Problem 480 503	prominent calcification
+T2	Medical-Anatomy 511 522	aortic knob
+T3	Medical-Problem 561 576	atherosclerosis
+T4	Medical-Problem 583 612	heart remains stably enlarged
+E4	Medical-Problem:T4
+T5	Medical-Problem 625 690	persistent essentially unchanged layering and bilateral effusions
+T6	Medical-Problem 695 701;703 719	patchy airspace disease
+T7	Medical-Anatomy 723 733	both lungs
+T8	Medical-Assertion 734 747	suggestive of
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 748 772	moderate pulmonary edema
+T10	Medical-Problem 784 801	diffuse pneumonia
+T11	Medical-Assertion 802 833	could also have this appearance
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 881 903	left apical thickening
+E10	Medical-Problem:T12
+T13	Medical-Assertion 923 934	may reflect
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 935 950	loculated fluid
+T15	Medical-Assertion 952 954	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 955 967	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T7
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

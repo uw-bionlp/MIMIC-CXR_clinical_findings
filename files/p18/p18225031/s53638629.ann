@@ -1,0 +1,62 @@
+T1	Medical-Problem 306 331	Focal contour abnormality
+T2	Medical-Anatomy 339 358;360 364	level of the aortic arch
+T3	Lesion-Characteristic 453 462	Calcified
+T4	Lesion-Anatomy 463 468	hilar
+T5	Lesion-Description 469 480	lymph nodes
+T6	Medical-Problem 503 516;518 528	Architectural distortion
+T7	Medical-Problem 534 557	traction bronchiectasis
+T8	Medical-Problem 562 578	fibrotic changes
+T9	Medical-Anatomy 592 596;598 634	both upper lobes, right greater than left
+T10	Medical-Assertion 636 650	likely related
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Problem 654 673;675 684	prior granulomatous infection
+T12	Medical-Problem 687 701	Patchy opacity
+T13	Medical-Anatomy 709 738	right lower lobe peripherally
+T14	Medical-Problem 794 811	area of infection
+T15	Medical-Problem 814 833;835 842	Patchy retrocardiac opacity
+E14	Medical-Problem:T15
+T16	Medical-Assertion 843 854	may reflect
+A2	Medical-AssertionValue T16 possible
+T17	Medical-Problem 855 866	atelectasis
+T18	Medical-Problem 872 881	infection
+T19	Medical-Assertion 885 897	not excluded
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 914 947	small bilateral pleural effusions
+E17	Medical-Problem:T20
+T21	Medical-Assertion 950 952	No
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 953 968	pulmonary edema
+T23	Medical-Problem 972 984	pneumothorax
+T24	Medical-Problem 1019 1034	Chronic changes
+T25	Medical-Anatomy 1088 1093;1095 1100	upper lobes
+T26	Medical-Problem 1117 1144	prior granulomatous disease
+T27	Medical-Problem 1147 1170;1172 1181	Small bilateral pleural effusions
+E23	Medical-Problem:T27
+T28	Medical-Problem 1195 1223	Right basilar patchy opacity
+E24	Medical-Problem:T28
+T29	Medical-Assertion 1262 1273	may reflect
+A5	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1277 1294	area of infection
+T31	Medical-Problem 1297 1317	Retrocardiac opacity
+E26	Medical-Problem:T31
+T32	Medical-Assertion 1318 1323;1325 1332	could reflect
+A6	Medical-AssertionValue T32 possible
+T33	Medical-Problem 1333 1344	atelectasis
+T34	Medical-Problem 1352 1361	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T9
+E7	Medical-Problem:T7 has-Medical-Anatomy:T9
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T14 has-Medical-Anatomy:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T18 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Assertion:T21
+E20	Medical-Problem:T24 has-Medical-Anatomy:T25
+E22	Medical-Problem:T26 has-Medical-Anatomy:T25
+E25	Medical-Problem:T30 has-Medical-Assertion:T29
+E27	Medical-Problem:T33 has-Medical-Assertion:T32
+E28	Medical-Problem:T34 has-Medical-Assertion:T32

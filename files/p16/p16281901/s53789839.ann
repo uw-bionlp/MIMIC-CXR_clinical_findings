@@ -1,0 +1,30 @@
+T1	Medical-Assertion 306 317	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 324 336	pneumothorax
+T3	Medical-Problem 343 374	small right apical pneumothorax
+E2	Medical-Problem:T3
+T4	Medical-Problem 538 552;554 565	stable cardiac enlargement
+E3	Medical-Problem:T4
+T5	Medical-Problem 590 612	streaky patchy opacity
+T6	Medical-Anatomy 620 630	right base
+T7	Medical-Problem 643 667	increasing consolidation
+T8	Medical-Anatomy 675 684	left base
+T9	Medical-Assertion 685 702	likely reflecting
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 704 732	worsening patchy atelectasis
+T11	Medical-Assertion 744 750	likely
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 753 775	layering left effusion
+T13	Medical-Assertion 778 780	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 782 805	left-sided pneumothorax
+T15	Medical-Assertion 816 827	No evidence
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 831 846	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

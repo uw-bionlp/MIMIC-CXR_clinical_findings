@@ -1,0 +1,54 @@
+T1	Medical-Problem 382 402	persistent elevation
+T2	Medical-Anatomy 410 428	left hemidiaphragm
+T3	Medical-Problem 434 441	opacity
+T4	Medical-Anatomy 450 465	left hemithorax
+T5	Medical-Problem 470 479	elevation
+T6	Medical-Anatomy 487 509	left mainstem bronchus
+T7	Medical-Problem 516 522;524 539	stable Luftsichel sign
+E7	Medical-Problem:T7
+T8	Medical-Problem 557 591	continued left upper lobe collapse
+E8	Medical-Problem:T8
+T9	Medical-Problem 620 629	collapsed
+E9	Medical-Problem:T9
+T10	Lesion-Size 643 648	large
+T11	Lesion-Characteristic 649 656	central
+T12	Lesion-Description 657 661	mass
+T13	Medical-Problem 705 730	Right basilar atelectasis
+E13	Medical-Problem:T13
+T14	Lesion-Size 762 767	small
+T15	Lesion-Description 779 785	nodule
+T16	Medical-Assertion 797 821	no radiographic evidence
+A1	Medical-AssertionValue T16 absent
+T17	Medical-Problem 826 835	pneumonia
+T18	Medical-Assertion 1000 1002	No
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1003 1028	definite pleural effusion
+T20	Medical-Problem 1032 1044	pneumothorax
+T21	Medical-Problem 1076 1111	Persistent left upper lobe collapse
+E19	Medical-Problem:T21
+T22	Medical-Assertion 1112 1128	without evidence
+A3	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1132 1141	pneumonia
+T24	Lesion-Description 1156 1160	mass
+T25	Lesion-Anatomy 1162 1172	left hilus
+T26	Lesion-Anatomy 1177 1192	left upper lobe
+T27	Lesion-Assertion 1195 1203	Possible
+A4	Lesion-AssertionValue T27 possible
+T28	Lesion-Anatomy 1204 1213	pulmonary
+T29	Lesion-Description 1214 1224	metastasis
+T30	Lesion-Anatomy 1226 1231;1233 1243	right lower lobe
+T31	Medical-Assertion 1265 1298	neither suggests nor excludes the
+A5	Medical-AssertionValue T31 absent
+T32	Medical-Problem 1312 1321;1323 1331	pulmonary embolism
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E12	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Characteristic:T11
+E15	Lesion-Description:T15 has-Lesion-Size-Present:T14
+E16	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Medical-Problem:T20 has-Medical-Assertion:T18
+E20	Medical-Problem:T23 has-Medical-Assertion:T22
+E21	Lesion-Description:T24 has-Lesion-Anatomy:T25 has-Lesion-Anatomy:T26
+E25	Lesion-Description:T29 has-Lesion-Assertion:T27 has-Lesion-Anatomy:T28 has-Lesion-Anatomy:T30
+E27	Medical-Problem:T32 has-Medical-Assertion:T31

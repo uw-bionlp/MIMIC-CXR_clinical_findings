@@ -1,0 +1,38 @@
+T1	Medical-Problem 250 279	Lung volumes are slightly low
+E1	Medical-Problem:T1
+T2	Medical-Problem 291 322;324 334	crowding of the bronchovascular structures
+E2	Medical-Problem:T2
+T3	Medical-Problem 359 394	subtle increase in airspace opacity
+T4	Medical-Anatomy 403 418	right lung base
+T5	Medical-Assertion 425 436	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 437 455	patchy atelectasis
+T7	Medical-Problem 468 473;475 485	early infiltrate
+T8	Medical-Assertion 486 504	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 506 508	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 509 525	pleural effusion
+T11	Medical-Problem 529 541	pneumothorax
+T12	Medical-Problem 543 547;549 561	Mild cardiomegaly
+E9	Medical-Problem:T12
+T13	Medical-Problem 629 652	Mildly low lung volumes
+T14	Medical-Problem 658 681	subtle airspace opacity
+T15	Medical-Anatomy 695 705;707 711	right lung base
+T16	Medical-Assertion 722 741	may be secondary to
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 742 753	atelectasis
+T18	Medical-Problem 772 781;783 795	decreased lung volumes
+E14	Medical-Problem:T18
+T19	Medical-Problem 801 827	aspiration/early pneumonia
+T20	Medical-Assertion 828 846	cannot be excluded
+A5	Medical-AssertionValue T20 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Anatomy:T15
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T20

@@ -1,0 +1,32 @@
+T1	Medical-Problem 260 274;276 299	Heterogeneous, peribronchial densities
+T2	Medical-Anatomy 319 335	right upper lung
+T3	Lesion-Count 371 379	multiple
+T4	Lesion-Characteristic 381 390	scattered
+T5	Lesion-Characteristic 392 411	calcified appearing
+T6	Lesion-Description 412 419	nodules
+T7	Lesion-Anatomy 421 432	bilaterally
+T8	Medical-Problem 444 470	multiple areas of scarring
+E8	Medical-Problem:T8
+T9	Medical-Assertion 482 484	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 485 492;494 502	pleural effusion
+T11	Medical-Problem 506 518	pneumothorax
+T12	Medical-Problem 541 578	Heterogeneous peribronchial densities
+T13	Medical-Anatomy 586 602	right upper lung
+T14	Medical-Assertion 632 645	may represent
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 646 655	infection
+T16	Medical-Problem 661 685	chronic fibrotic process
+T17	Medical-Problem 855 885	Scattered parenchymal scarring
+E15	Medical-Problem:T17
+T18	Lesion-Characteristic 890 909	calcified appearing
+T19	Lesion-Description 910 917	nodules
+T20	Lesion-Size 921 928;930 935	varying sizes
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Count:T3 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E17	Lesion-Description:T19 has-Lesion-Characteristic:T18 has-Lesion-Size-Present:T20

@@ -1,0 +1,21 @@
+T1	Medical-Problem 317 325;327 352	increase in perihilar hazy density
+E1	Medical-Problem:T1
+T2	Medical-Problem 357 380	new partial obscuration
+T3	Medical-Anatomy 388 392;394 407	left hemidiaphragm
+T4	Medical-Problem 437 458	Baseline cardiomegaly
+E4	Medical-Problem:T4
+T5	Medical-Problem 480 514	Multiple right-sided rib fractures
+E5	Medical-Problem:T5
+T6	Medical-Problem 559 575	Hazy obscuration
+T7	Medical-Anatomy 583 612	central pulmonary vasculature
+T8	Medical-Anatomy 617 621;623 636	left hemidiaphragm
+T9	Medical-Assertion 637 647	suggesting
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 648 651	CHF
+T11	Medical-Assertion 660 662	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 663 681	interstitial lines
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

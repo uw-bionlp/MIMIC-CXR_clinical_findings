@@ -1,0 +1,58 @@
+T1	Medical-Problem 229 266	cardiac silhouette is enlarged due to
+E1	Medical-Problem:T1
+T2	Medical-Problem 267 281	cardiomyopathy
+E2	Medical-Problem:T2
+T3	Medical-Problem 289 300;302 310	pericardial effusion
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 502 516	hemidiaphragms
+T5	Medical-Problem 521 530;532 540	partially obscured
+T6	Medical-Assertion 545 560	could relate to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 561 577	underpenetration
+T8	Medical-Assertion 594 597	may
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 609 637	right-sided pleural effusion
+T10	Medical-Problem 643 665	underlying atelectasis
+T11	Medical-Problem 667 677;679 692	underlying consolidation
+T12	Medical-Assertion 693 711	cannot be excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 723 738	mild prominence
+T14	Medical-Anatomy 746 753;755 776	central pulmonary vasculature
+T15	Medical-Assertion 826 828	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 830 842	pneumothorax
+T17	Medical-Problem 868 884	Underpenetration
+T18	Medical-Anatomy 892 896	lung
+T19	Medical-Problem 1007 1014	opacity
+T20	Medical-Anatomy 1022 1037	right lung base
+T21	Medical-Assertion 1038 1053	could be due to
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1054 1070	pleural effusion
+T23	Medical-Problem 1076 1087	atelectasis
+T24	Medical-Problem 1089 1113	underlying consolidation
+T25	Medical-Assertion 1114 1126	not excluded
+A6	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1129 1151;1153 1160	Left base retrocardiac opacity
+E20	Medical-Problem:T26
+T27	Medical-Assertion 1166 1184	may also be due to
+A7	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1185 1196	atelectasis
+T29	Medical-Problem 1204 1217	consolidation
+T30	Medical-Problem 1219 1231;1233 1262	Mild central pulmonary vascular prominence
+E23	Medical-Problem:T30
+T31	Medical-Problem 1265 1292	Enlarged cardiac silhouette
+E24	Medical-Problem:T31
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T4 has-Medical-Assertion:T8 has-Medical-Assertion:T12
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E18	Medical-Problem:T23 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E19	Medical-Problem:T24 has-Medical-Anatomy:T20 has-Medical-Assertion:T21 has-Medical-Assertion:T25
+E21	Medical-Problem:T28 has-Medical-Assertion:T27
+E22	Medical-Problem:T29 has-Medical-Assertion:T27

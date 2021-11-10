@@ -1,0 +1,61 @@
+T1	Lesion-Size 273 276	9mm
+T2	Lesion-Anatomy 277 297	right lung pulmonary
+T3	Lesion-Description 298 304	nodule
+T4	Lesion-Size-Trend 314 320	stable
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Assertion 358 368	suggestion
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Size 372 380	8 x 12mm
+T7	Lesion-Anatomy 381 402	right suprahilar lung
+T8	Lesion-Description 403 409	nodule
+T9	Lesion-Size-Trend 414 417	new
+A3	Lesion-Size-TrendValue T9 new
+T10	Lesion-Size 418 421	8mm
+T11	Lesion-Description 422 428	nodule
+T12	Medical-Problem 470 485;487 497	new right hilar lobulation
+E9	Medical-Problem:T12
+T13	Medical-Problem 502 515	soft fullness
+T14	Medical-Anatomy 523 551	right tracheobronchial angle
+T15	Medical-Assertion 552 562	suggesting
+A4	Medical-AssertionValue T15 possible
+T16	Lesion-Anatomy 564 569	hilar
+T17	Lesion-Anatomy 574 585	mediastinal
+T18	Lesion-Description 587 602	lymphadenopathy
+T19	Medical-Assertion 627 629	no
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 630 635;637 653	focal airspace opacity
+T21	Medical-Problem 665 674	pneumonia
+T22	Medical-Assertion 686 688	no
+A6	Medical-AssertionValue T22 absent
+T23	Medical-Problem 689 705	pleural effusion
+T24	Medical-Problem 710 722	pneumothorax
+T25	Medical-Problem 750 761	Indentation
+T26	Medical-Anatomy 769 790	right cervical trache
+T27	Lesion-Anatomy 804 817	right thyroid
+T28	Lesion-Description 818 822	mass
+T29	Lesion-Assertion 887 895	Possible
+A7	Lesion-AssertionValue T29 possible
+T30	Lesion-Size-Trend 896 899	new
+A8	Lesion-Size-TrendValue T30 new
+T31	Lesion-Anatomy 900 904	lung
+T32	Lesion-Description 905 912	nodules
+T33	Lesion-Anatomy 914 919	hilar
+T34	Lesion-Anatomy 924 935	mediastinal
+T35	Lesion-Description 936 951	lymphadenopathy
+T36	Medical-Assertion 981 992	No evidence
+A9	Medical-AssertionValue T36 absent
+T37	Medical-Problem 996 1005	pneumonia
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T4
+E6	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T11 has-Lesion-Size-Trend:T9 has-Lesion-Size-Present:T10
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Lesion-Description:T18 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T19
+E17	Medical-Problem:T23 has-Medical-Assertion:T22
+E18	Medical-Problem:T24 has-Medical-Assertion:T22
+E19	Medical-Problem:T25 has-Medical-Anatomy:T26
+E22	Lesion-Description:T28 has-Lesion-Anatomy:T27
+E24	Lesion-Description:T32 has-Lesion-Assertion:T29 has-Lesion-Size-Trend:T30 has-Lesion-Anatomy:T31
+E27	Lesion-Description:T35 has-Lesion-Assertion:T29 has-Lesion-Anatomy:T33 has-Lesion-Anatomy:T34
+E28	Medical-Problem:T37 has-Medical-Assertion:T36

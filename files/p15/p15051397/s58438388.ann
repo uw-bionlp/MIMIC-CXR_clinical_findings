@@ -1,0 +1,45 @@
+T1	Medical-Problem 278 305	Heterogeneous opacification
+T2	Medical-Anatomy 326 342	right lower lobe
+T3	Medical-Problem 412 421;423 432	partially obscuring
+T4	Medical-Anatomy 437 481	adjacent right diaphragmatic pleural surface
+T5	Medical-Anatomy 494 499;501 536	right upper lobe, mostly anterior segment
+T6	Medical-Problem 757 766	Wegner or
+E6	Medical-Problem:T6
+T7	Medical-Problem 767 805	other large or intermediate vasculitis
+E7	Medical-Problem:T7
+T8	Medical-Assertion 812 820	suggests
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 829 838	infection
+T10	Medical-Problem 840 852	capillaritis
+T11	Medical-Problem 854 881	diffuse alveolar hemorrhage
+T12	Medical-Problem 886 890;892 901	drug reaction,
+T13	Medical-Problem 912 942	toxic, allergic, and vasogenic
+T14	Medical-Problem 1003 1008	Heart
+T15	Medical-Assertion 1012 1015	not
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1036 1048;1050 1081	right atrium is more prominent than expected
+E14	Medical-Problem:T16
+T17	Medical-Assertion 1127 1134	neither
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Anatomy 1139 1162	pulmonary outflow tract
+T19	Medical-Problem 1167 1196	mediastinal veins are dilated
+T20	Medical-Assertion 1209 1211	no
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1212 1228	pleural effusion
+T22	Medical-Problem 1237 1248	indentation
+T23	Medical-Anatomy 1256 1277	spleen on the stomach
+T24	Medical-Assertion 1278 1282;1284 1295	does not suggest
+A5	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1296 1308	splenomegaly
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T5
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T8
+E11	Medical-Problem:T12 has-Medical-Assertion:T8
+E12	Medical-Problem:T13 has-Medical-Assertion:T8
+E13	Medical-Problem:T14 has-Medical-Assertion:T15
+E16	Medical-Problem:T19 has-Medical-Assertion:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T23
+E20	Medical-Problem:T25 has-Medical-Anatomy:T23 has-Medical-Assertion:T24

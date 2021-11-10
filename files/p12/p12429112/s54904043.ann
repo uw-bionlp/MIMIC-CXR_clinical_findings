@@ -1,0 +1,38 @@
+T1	Lesion-Characteristic 327 332	bulky
+T2	Lesion-Anatomy 333 344	mediastinal
+T3	Lesion-Anatomy 349 354	hilar
+T4	Lesion-Description 356 366	lymph node
+T5	Lesion-Characteristic 367 378	enlargement
+T6	Lesion-Characteristic 425 431;433 440	poorly defined
+T7	Lesion-Description 441 445	mass
+T8	Lesion-Anatomy 453 468	left lower lung
+T9	Medical-Assertion 520 522	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 523 546	new focal consolidation
+T11	Medical-Problem 558 567	pneumonia
+T12	Medical-Assertion 594 596	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 597 608	appreciable
+E11	Medical-Problem:T13
+T14	Medical-Problem 609 630	flow pleural effusion
+T15	Medical-Problem 634 646	pneumothorax
+T16	Lesion-Assertion 719 721	No
+A3	Lesion-AssertionValue T16 absent
+T17	Lesion-Size-Trend 722 725	new
+A4	Lesion-Size-TrendValue T17 new
+T18	Lesion-Characteristic 726 731	focal
+T19	Lesion-Description 732 738	lesion
+T20	Lesion-Characteristic 775 780	Bulky
+T21	Lesion-Anatomy 781 794	intrathoracic
+T22	Lesion-Description 795 810	lymphadenopathy
+T23	Lesion-Anatomy 815 830	left lower lobe
+T24	Lesion-Description 831 835	mass
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T5
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T12
+E15	Lesion-Description:T19 has-Lesion-Assertion:T16 has-Lesion-Size-Trend:T17 has-Lesion-Characteristic:T18
+E18	Lesion-Description:T22 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T21
+E20	Lesion-Description:T24 has-Lesion-Anatomy:T23

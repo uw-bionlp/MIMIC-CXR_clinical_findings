@@ -1,0 +1,22 @@
+T1	Medical-Problem 194 203	infection
+E1	Medical-Problem:T1
+T2	Medical-Problem 250 293	Moderate-to-severe cardiomegaly is worsened
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 301 321	atrium and pulmonary
+T4	Medical-Problem 336 348	more dilated
+T5	Medical-Assertion 373 375	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 376 391	pulmonary edema
+T7	Medical-Problem 408 424	pleural effusion
+T8	Lesion-Size 488 493	small
+T9	Lesion-Anatomy 494 498	lung
+T10	Lesion-Description 499 506	nodules
+T11	Lesion-Anatomy 510 513	rib
+T12	Lesion-Description 514 524	metastases
+T13	Medical-Problem 607 619	pneumothorax
+E12	Medical-Problem:T13
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Lesion-Description:T10 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T9
+E11	Lesion-Description:T12 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T11

@@ -1,0 +1,26 @@
+T1	Medical-Problem 391 405	hyperinflation
+T2	Medical-Anatomy 409 424	bilateral lungs
+T3	Medical-Problem 430 448;450 464	flattening of both hemidiaphragms
+T4	Medical-Assertion 503 514	No evidence
+A1	Medical-AssertionValue T4 absent
+T5	Lesion-Characteristic 519 529	suspicious
+T6	Lesion-Description 530 536	masses
+T7	Medical-Problem 538 558	focal consolidations
+T8	Medical-Problem 560 577	pleural effusions
+T9	Medical-Problem 582 594	pneumothorax
+T10	Medical-Assertion 650 652	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 653 674	osseous abnormalities
+T12	Lesion-Assertion 695 697	No
+A3	Lesion-AssertionValue T12 absent
+T13	Lesion-Characteristic 698 708	suspicious
+T14	Lesion-Anatomy 709 713	lung
+T15	Lesion-Description 714 720	masses
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T4
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Lesion-Description:T15 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14

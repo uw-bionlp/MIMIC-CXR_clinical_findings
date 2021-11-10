@@ -1,0 +1,33 @@
+T1	Medical-Problem 250 283	increase in interstitial markings
+T2	Medical-Anatomy 289 313;315 339	predominantly peripheral and basilar distribution
+T3	Medical-Problem 476 495	Increased opacities
+T4	Medical-Anatomy 503 513	lung bases
+T5	Medical-Assertion 514 528	likely reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 535 555	progressive fibrosis
+T7	Medical-Assertion 622 629	without
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 630 642	cardiomegaly
+T9	Medical-Assertion 654 656	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 657 673	pleural effusion
+T11	Medical-Problem 677 689	pneumothorax
+T12	Medical-Problem 707 755	Progression of chronic interstitial lung disease
+E9	Medical-Problem:T12
+T13	Medical-Problem 758 777	Worsening opacities
+T14	Medical-Anatomy 786 796	lung bases
+T15	Medical-Assertion 797 811	likely reflect
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 812 834	progression of disease
+T17	Medical-Problem 843 863	underlying infection
+T18	Medical-Assertion 868 888	difficult to exclude
+A5	Medical-AssertionValue T18 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T15 has-Medical-Assertion:T18

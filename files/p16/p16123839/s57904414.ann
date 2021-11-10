@@ -1,0 +1,33 @@
+T1	Medical-Problem 444 462	punctate opacities
+T2	Medical-Anatomy 470 499	left-greater-than-right bases
+T3	Medical-Problem 618 649	chronic punctate calcifications
+T4	Medical-Anatomy 658 668	lung bases
+T5	Medical-Assertion 670 678	possibly
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 679 726	sequela of previous interstitial pneumonitis at
+T7	Medical-Assertion 834 836	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 837 840	CHF
+T9	Medical-Problem 842 858	focal infiltrate
+T10	Medical-Problem 863 876	consolidation
+T11	Medical-Problem 881 889	effusion
+T12	Lesion-Assertion 952 954	no
+A3	Lesion-AssertionValue T12 absent
+T13	Lesion-Anatomy 955 960	hilar
+T14	Lesion-Anatomy 964 975	mediastinal
+T15	Lesion-Description 976 991	lymphadenopathy
+T16	Medical-Assertion 1087 1089	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1090 1113	acute pulmonary process
+T18	Medical-Problem 1130 1153	Punctate calcifications
+T19	Medical-Anatomy 1161 1171	lung bases
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T7
+E12	Lesion-Description:T15 has-Lesion-Assertion:T12 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19

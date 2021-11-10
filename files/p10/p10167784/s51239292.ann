@@ -1,0 +1,22 @@
+T1	Medical-Problem 121 152	Subtle poorly defined opacities
+T2	Medical-Anatomy 175 184;186 197	right mid lung region
+T3	Medical-Problem 322 332;334 363	new subtle peribronchiolar opacification
+T4	Medical-Anatomy 375 399	left retrocardiac region
+T5	Medical-Problem 402 407;409 429	Lungs remain hyperexpanded
+E5	Medical-Problem:T5
+T6	Medical-Assertion 499 501	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 502 519	pleural effusions
+T8	Medical-Problem 522 555	Bones are diffusely demineralized
+E7	Medical-Problem:T8
+T9	Medical-Problem 573 589	Subtle opacities
+T10	Medical-Anatomy 597 630	superior segment right lower lobe
+T11	Medical-Anatomy 636 680	posterior basilar segment of left lower lobe
+T12	Medical-Assertion 682 696	concerning for
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 697 706	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

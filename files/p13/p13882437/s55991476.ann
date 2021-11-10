@@ -1,0 +1,31 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 48	pneumothorax
+T3	Medical-Problem 562 593	moderate-to-severe cardiomegaly
+E2	Medical-Problem:T3
+T4	Medical-Problem 713 735	left mediastinal shift
+E3	Medical-Problem:T4
+T5	Medical-Problem 781 799	pleural thickening
+T6	Medical-Problem 804 813	potential
+E5	Medical-Problem:T6
+T7	Medical-Problem 814 825	atelectasis
+T8	Medical-Anatomy 833 837;839 848	left lung base
+T9	Medical-Problem 865 900	mild pulmonary vascular engorgement
+E8	Medical-Problem:T9
+T10	Medical-Problem 906 910;912 937	mild bilateral pulmonary edema
+E9	Medical-Problem:T10
+T11	Medical-Assertion 1027 1040	appears to be
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1043 1060;1062 1078	stable small left pleural effusion
+T13	Medical-Assertion 1089 1091	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1092 1104	pneumothorax
+T15	Medical-Assertion 1126 1128	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1143 1155	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

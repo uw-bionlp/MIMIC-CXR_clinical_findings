@@ -1,0 +1,21 @@
+T1	Medical-Problem 259 286	Heterogeneous opacification
+T2	Medical-Anatomy 297 313	right lower lobe
+T3	Medical-Problem 352 382	chronicity of this abnormality
+T4	Medical-Assertion 492 514	Differential diagnosis
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 524 542	atypical pneumonia
+T6	Lesion-Anatomy 564 582	bronchioloalveolar
+E5	Lesion-Anatomy:T6
+T7	Medical-Problem 702 725	Borderline cardiomegaly
+E6	Medical-Problem:T7
+T8	Medical-Assertion 802 804	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 805 821	pleural effusion
+T10	Lesion-Characteristic 826 834	evidence
+T11	Lesion-Characteristic 838 845	central
+T12	Lesion-Description 846 851;853 869	lymph node enlargement
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11

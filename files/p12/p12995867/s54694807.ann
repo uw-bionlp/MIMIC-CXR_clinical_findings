@@ -1,0 +1,61 @@
+T1	Medical-Assertion 184 186	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 187 192	fever
+T3	Medical-Assertion 194 196	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 352 374	heart remains enlarged
+E2	Medical-Problem:T4
+T5	Medical-Assertion 382 393	may reflect
+A3	Medical-AssertionValue T5 possible
+T6	Medical-Problem 394 406	cardiomegaly
+T7	Medical-Problem 418 438	pericardial effusion
+T8	Medical-Assertion 439 457	cannot be excluded
+A4	Medical-AssertionValue T8 possible
+T9	Medical-Anatomy 460 464	Both
+T10	Medical-Problem 474 483	prominent
+T11	Medical-Assertion 518 531	may represent
+A5	Medical-AssertionValue T11 possible
+T12	Medical-Problem 532 560	prominent pulmonary arteries
+T13	Medical-Problem 580 611	pulmonary arterial hypertension
+T14	Lesion-Anatomy 652 657	hilar
+T15	Lesion-Description 658 662	mass
+T16	Medical-Problem 778 801;803 812	small bilateral pleural effusions
+E11	Medical-Problem:T16
+T17	Medical-Problem 818 844	patchy bibasilar opacities
+E12	Medical-Problem:T17
+T18	Medical-Assertion 845 862	likely reflecting
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 863 874	atelectasis
+T20	Medical-Problem 880 898	more focal opacity
+T21	Medical-Anatomy 906 923	right medial base
+T22	Medical-Assertion 937 954;956 963	which could again reflect
+A7	Medical-AssertionValue T22 possible
+T23	Medical-Problem 964 975	atelectasis
+T24	Medical-Problem 986 995	pneumonia
+T25	Medical-Problem 999 1009	aspiration
+T26	Medical-Assertion 1010 1024;1026 1036	should also be considered
+A8	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1039 1059	Lung volumes are low
+E19	Medical-Problem:T27
+T28	Medical-Problem 1065 1073	crowding
+E20	Medical-Problem:T28
+T29	Medical-Assertion 1098 1100;1102 1110	no evidence
+A9	Medical-AssertionValue T29 absent
+T30	Medical-Problem 1114 1129	pulmonary edema
+T31	Medical-Assertion 1132 1134	No
+A10	Medical-AssertionValue T31 absent
+T32	Medical-Problem 1135 1147	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Assertion:T3
+E3	Medical-Problem:T6 has-Medical-Assertion:T5
+E4	Medical-Problem:T7 has-Medical-Assertion:T8
+E6	Medical-Problem:T10 has-Medical-Anatomy:T9
+E7	Medical-Problem:T12 has-Medical-Assertion:T11
+E8	Medical-Problem:T13 has-Medical-Assertion:T11
+E10	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T19 has-Medical-Assertion:T18
+E14	Medical-Problem:T20 has-Medical-Anatomy:T21
+E16	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E17	Medical-Problem:T24 has-Medical-Anatomy:T21 has-Medical-Assertion:T26
+E18	Medical-Problem:T25 has-Medical-Anatomy:T21 has-Medical-Assertion:T22 has-Medical-Assertion:T26
+E21	Medical-Problem:T30 has-Medical-Assertion:T29
+E22	Medical-Problem:T32 has-Medical-Assertion:T31

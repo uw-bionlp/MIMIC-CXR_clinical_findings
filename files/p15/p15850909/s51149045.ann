@@ -1,0 +1,40 @@
+T1	Lesion-Description 483 493	nodularity
+T2	Lesion-Anatomy 512 537;539 545	distal right paratracheal stripe
+T3	Lesion-Assertion 547 566	which may be due to
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Description 567 582	lymphadenopathy
+T5	Lesion-Characteristic 592 603	soft tissue
+T6	Lesion-Description 604 610	lesion
+T7	Lesion-Size-Trend 620 629	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Problem 746 757;759 775	small right pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Problem 780 800	adjacent atelectasis
+E7	Medical-Problem:T9
+T10	Medical-Assertion 839 841	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 842 854	pneumothorax
+T12	Medical-Problem 858 875	pneumomediastinum
+T13	Medical-Assertion 915 917	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 919 948	free air under the diaphragms
+T15	Medical-Assertion 972 974	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 975 1003	significant interval changes
+T17	Medical-Problem 1010 1031	Unchanged obscuration
+T18	Medical-Anatomy 1035 1060	right paratracheal stripe
+T19	Lesion-Assertion 1062 1075	may be due to
+A6	Lesion-AssertionValue T19 possible
+T20	Lesion-Description 1077 1092	lymphadenopathy
+T21	Lesion-Characteristic 1102 1113	soft tissue
+T22	Lesion-Description 1114 1120	lesion
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E3	Lesion-Description:T4 has-Lesion-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Characteristic:T5
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T18
+E14	Lesion-Description:T20 has-Lesion-Assertion:T19
+E16	Lesion-Description:T22 has-Lesion-Assertion:T19 has-Lesion-Characteristic:T21

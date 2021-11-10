@@ -1,0 +1,23 @@
+T1	Medical-Assertion 222 238	without evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 242 254	pneumothorax
+T3	Medical-Problem 267 283;285 294	patchy bibasilar opacities
+E2	Medical-Problem:T3
+T4	Medical-Problem 316 336	atelectasis/scarring
+E3	Medical-Problem:T4
+T5	Medical-Problem 374 383	pneumonia
+T6	Medical-Assertion 384 402	cannot be excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 405 415	Prominence
+T8	Medical-Anatomy 423 441	pulmonary arteries
+T9	Medical-Assertion 444 457	suggestive of
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 458 500	underlying pulmonary arterial hypertension
+T11	Medical-Assertion 558 576	no strong evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 581 596	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

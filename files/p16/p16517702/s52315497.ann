@@ -1,0 +1,22 @@
+T1	Medical-Problem 32 67	Subtle increase in linear opacities
+T2	Medical-Anatomy 75 101	retrocardiac region on the
+T3	Medical-Assertion 120 139	likely secondary to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 140 151	atelectasis
+T5	Medical-Problem 153 186	Small bilateral pleural effusions
+E4	Medical-Problem:T5
+T6	Medical-Problem 674 681;683 701	minimal linear atelectasis
+T7	Medical-Anatomy 709 730	right lower lung zone
+T8	Medical-Assertion 796 798	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 799 815	pleural effusion
+T10	Medical-Problem 819 831	pneumothorax
+T11	Medical-Assertion 889 900	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 904 913	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

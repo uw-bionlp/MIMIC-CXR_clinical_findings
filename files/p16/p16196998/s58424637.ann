@@ -1,0 +1,27 @@
+T1	Medical-Problem 216 232	pulmonary edema?
+E1	Medical-Problem:T1
+T2	Medical-Problem 450 457;459 470	cardiac enlargement
+E2	Medical-Problem:T2
+T3	Medical-Problem 643 692	advanced interstitial edema with patchy densities
+T4	Medical-Anatomy 697 715	bilateral position
+T5	Medical-Assertion 740 742	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 743 771;773 796	new local discrete pulmonary parenchymal infiltrates
+T7	Medical-Problem 835 844;846 862	increased pleural effusion
+T8	Medical-Anatomy 873 909	lateral or posterior pleural sinuses
+T9	Medical-Assertion 912 923	No evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 928 940	pneumothorax
+T11	Medical-Anatomy 948 959	apical area
+T12	Medical-Problem 1014 1042	chronic pulmonary congestion
+E10	Medical-Problem:T12
+T13	Medical-Assertion 1044 1060	without evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1064 1090	increased pleural effusion
+T15	Medical-Problem 1109 1114;1116 1149	acute pulmonary parenchymal infiltrates
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

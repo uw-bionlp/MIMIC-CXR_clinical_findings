@@ -1,0 +1,19 @@
+T1	Medical-Assertion 30 41	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 45 54	pneumonia
+T3	Medical-Problem 425 452	Peribronchial opacification
+E2	Medical-Problem:T3
+T4	Medical-Problem 513 524	atelectasis
+T5	Medical-Anatomy 533 548	right lung base
+T6	Medical-Assertion 549 564	could be due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 565 584	bronchial infection
+T8	Medical-Problem 588 602;604 613	early atypical pneumonia
+T9	Medical-Assertion 615 623	probably
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 640 659	bacterial pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T6 has-Medical-Assertion:T9

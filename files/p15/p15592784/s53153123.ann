@@ -1,0 +1,21 @@
+T1	Medical-Problem 198 207	pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Problem 327 350	irregular opacification
+T3	Medical-Anatomy 358 379	base of the left lung
+T4	Medical-Assertion 383 391	probably
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 392 403	atelectasis
+T6	Medical-Problem 407 426	Vascular congestion
+T7	Medical-Anatomy 448 466	pulmonary arteries
+T8	Medical-Anatomy 471 482;484 489	mediastinal veins
+T9	Medical-Assertion 552 554	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 556 571	pulmonary edema
+T11	Medical-Problem 575 603	appreciable pleural effusion
+T12	Medical-Problem 606 626	Stomach is distended
+E10	Medical-Problem:T12
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

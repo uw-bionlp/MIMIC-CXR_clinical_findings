@@ -1,0 +1,30 @@
+T1	Lesion-Anatomy 182 235;237 247	posterior aspect of the superior segment of the right lower lobe
+T2	Lesion-Size 259 271	3.5 x 2.5 cm
+T3	Lesion-Characteristic 272 279	rounded
+T4	Lesion-Description 280 287	opacity
+T5	Medical-Assertion 322 324	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 325 341	pleural effusion
+T7	Medical-Problem 345 357	pneumothorax
+T8	Medical-Problem 364 387;389 404	main pulmonary arteries remain enlarged
+E7	Medical-Problem:T8
+T9	Medical-Problem 422 453	pulmonary arterial hypertension
+E8	Medical-Problem:T9
+T10	Medical-Problem 458 467;469 474	calcified aorta
+E9	Medical-Problem:T10
+T11	Lesion-Size 547 553	3.5 cm
+T12	Lesion-Characteristic 554 561	rounded
+T13	Lesion-Description 562 569	opacity
+T14	Lesion-Anatomy 581 610;612 622	superior segment of the right lower lobe
+T15	Lesion-Assertion 623 631	could be
+A2	Lesion-AssertionValue T15 possible
+T16	Lesion-Anatomy 634 638	lung
+T17	Lesion-Description 639 643	mass
+T18	Lesion-Anatomy 652 664	bronchogenic
+T19	Medical-Problem 678 682;684 691	lung abscess
+E17	Medical-Problem:T19
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T1 has-Lesion-Size-Present:T2 has-Lesion-Characteristic:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E12	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14
+E15	Lesion-Description:T17 has-Lesion-Anatomy:T14 has-Lesion-Assertion:T15 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T18

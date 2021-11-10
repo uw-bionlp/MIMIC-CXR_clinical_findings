@@ -1,0 +1,22 @@
+T1	Medical-Assertion 196 198	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 199 211	pneumothorax
+T3	Medical-Problem 215 243	appreciable pleural effusion
+T4	Lesion-Size 248 253	large
+T5	Lesion-Description 254 258	mass
+T6	Lesion-Anatomy 267 335	apex of the left hemithorax involves both the lung and pleural space
+T7	Lesion-Assertion 337 345	probably
+A2	Lesion-AssertionValue T7 possible
+T8	Lesion-Characteristic 347 359	bronchogenic
+T9	Lesion-Description 360 369	carcinoma
+T10	Medical-Problem 383 404	band-like atelectasis
+T11	Medical-Anatomy 412 421	left base
+T12	Medical-Assertion 486 488	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 489 496;498 506	pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Characteristic:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

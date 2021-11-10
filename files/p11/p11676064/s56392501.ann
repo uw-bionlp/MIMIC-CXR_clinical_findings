@@ -1,0 +1,24 @@
+T1	Lesion-Size 241 246	large
+T2	Lesion-Anatomy 247 262	cervicothoracic
+T3	Lesion-Description 263 267	mass
+T4	Lesion-Size 278 287	6 x 10 cm
+T5	Lesion-Anatomy 307 315;317 390	anterior left lateral aspects of the trachea to the aortic arch in the mediastinum
+T6	Medical-Anatomy 397 404	trachea
+T7	Medical-Problem 412 430	severely displaced
+T8	Medical-Anatomy 462 470;472 477	thoracic inlet
+T9	Lesion-Assertion 488 499	no evidence
+A1	Lesion-AssertionValue T9 absent
+T10	Lesion-Anatomy 503 508	hilar
+T11	Lesion-Description 509 519	adenopathy
+T12	Medical-Assertion 552 554	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 555 571	pleural effusion
+T14	Lesion-Anatomy 587 607	cervical mediastinal
+T15	Lesion-Description 608 614	lesion
+T16	Lesion-Description 681 689	lymphoma
+E14	Lesion-Description:T16
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6 has-Medical-Anatomy:T8
+E10	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T14

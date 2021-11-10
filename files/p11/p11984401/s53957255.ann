@@ -1,0 +1,31 @@
+T1	Medical-Assertion 346 348	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 349 366	pleural effusions
+T3	Lesion-Assertion 369 380	No evidence
+A2	Lesion-AssertionValue T3 absent
+T4	Lesion-Anatomy 384 388	lung
+T5	Lesion-Description 389 396	nodules
+T6	Lesion-Description 400 406	masses
+T7	Medical-Assertion 442 453	no evidence
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 457 488	vertebral compression fractures
+T9	Medical-Problem 496 519	apparent double contour
+T10	Medical-Anatomy 527 565;567 595	lower aspect of the fourth rib, in its lateral aspect, on the right
+T11	Lesion-Assertion 626 644	does not represent
+A4	Lesion-AssertionValue T11 absent
+T12	Lesion-Characteristic 650 654	bony
+T13	Lesion-Description 655 661	lesion
+T14	Medical-Assertion 664 666	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 667 680	rib fractures
+T16	Medical-Assertion 683 685	No
+A6	Medical-AssertionValue T16 absent
+T17	Medical-Problem 686 698	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T4
+E4	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,36 @@
+T1	Medical-Anatomy 564 569;571 573	right IJ
+T2	Medical-Problem 583 597	appears kinked
+T3	Medical-Problem 710 731	Moderate cardiomegaly
+E3	Medical-Problem:T3
+T4	Medical-Assertion 753 755	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 756 768	pneumothorax
+T6	Medical-Problem 771 785;787 792	Mild pulmonary edema
+E5	Medical-Problem:T6
+T7	Medical-Problem 835 865	Stable left lower lobe opacity
+E6	Medical-Problem:T7
+T8	Medical-Assertion 867 880	may represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 881 897	pleural effusion
+T10	Medical-Problem 903 923	adjacent atelectasis
+T11	Medical-Problem 934 944;946 953	infectious process
+T12	Medical-Problem 962 971	pneumonia
+T13	Medical-Assertion 972 1001	cannot be completely excluded
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1037 1058	Minimal opacification
+T15	Medical-Anatomy 1066 1081	right lung base
+T16	Medical-Assertion 1082 1090;1092 1101	may also represent
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1102 1113	atelectasis
+T18	Medical-Problem 1121 1143	aspiration pneumonitis
+T19	Medical-Problem 1147 1156	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T13
+E10	Medical-Problem:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

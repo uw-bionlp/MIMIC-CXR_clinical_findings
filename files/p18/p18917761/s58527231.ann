@@ -1,0 +1,24 @@
+T1	Medical-Problem 287 311	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 325 348;350 364	mild pulmonary vascular redistribution
+E2	Medical-Problem:T2
+T3	Medical-Problem 375 392	increased opacity
+T4	Medical-Anatomy 396 406	both bases
+T5	Medical-Assertion 407 420	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 421 427;429 433	volume loss
+T7	Medical-Assertion 443 445	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 446 462	early infiltrate
+T9	Medical-Assertion 463 480	can't be excluded
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 516 543	volume loss at the bases is
+E7	Medical-Problem:T10
+T11	Medical-Problem 573 584	Volume loss
+T12	Medical-Anatomy 592 597	bases
+T13	Medical-Problem 602 634	underlying infectious infiltrate
+E10	Medical-Problem:T13
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12

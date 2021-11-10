@@ -1,0 +1,16 @@
+T1	Medical-Assertion 360 362	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 363 379	pleural effusion
+T3	Medical-Problem 383 395	pneumothorax
+T4	Lesion-Characteristic 401 410	calcified
+T5	Lesion-Description 411 420	granuloma
+T6	Lesion-Anatomy 439 453	right mid lung
+T7	Medical-Problem 493 549;551 564	similar mild-to-moderate relative elevation of the right hemidiaphragm
+E6	Medical-Problem:T7
+T8	Medical-Assertion 617 628	No evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 632 661	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

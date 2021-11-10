@@ -1,0 +1,36 @@
+T1	Medical-Problem 278 288	prominence
+T2	Medical-Anatomy 296 300	hila
+T3	Medical-Assertion 301 320	raising concern for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 321 341	vascular engorgement
+T5	Lesion-Characteristic 353 363	underlying
+T6	Lesion-Description 364 379	lymphadenopathy
+T7	Medical-Assertion 380 394	may be present
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 445 447	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 448 467	focal consolidation
+T10	Medical-Problem 487 504;506 525	minimal pulmonary vascular congestion
+E7	Medical-Problem:T10
+T11	Medical-Assertion 597 599	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 600 616	pleural effusion
+T13	Medical-Problem 620 632	pneumothorax
+T14	Medical-Problem 650 660	Prominence
+T15	Medical-Anatomy 668 672	hila
+T16	Medical-Assertion 673 688	could be due to
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 689 709	vascular engorgement
+T18	Lesion-Characteristic 721 731	underlying
+T19	Lesion-Description 732 747	lymphadenopathy
+T20	Lesion-Assertion 748 751	not
+A6	Lesion-AssertionValue T20 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3 has-Medical-Assertion:T7
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E14	Lesion-Description:T19 has-Lesion-Characteristic:T18 has-Lesion-Assertion:T20

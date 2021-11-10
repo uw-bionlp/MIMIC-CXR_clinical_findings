@@ -1,0 +1,27 @@
+T1	Medical-Assertion 147 158	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 162 179	pneumomediastinum
+T3	Medical-Problem 183 195	pneumothorax
+T4	Lesion-Anatomy 241 246	Lungs
+T5	Lesion-Assertion 268 276	possible
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Size 277 281	1 cm
+T7	Lesion-Description 292 298	nodule
+T8	Lesion-Anatomy 306 322	right upper lobe
+T9	Lesion-Characteristic 324 349;351 363	difficult to localize and characterize
+T10	Medical-Problem 504 533	extensive pulmonary emphysema
+E8	Medical-Problem:T10
+T11	Medical-Assertion 555 566	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 570 587	pneumomediastinum
+T13	Medical-Problem 591 603	pneumothorax
+T14	Lesion-Assertion 610 618	Possible
+A4	Lesion-AssertionValue T14 possible
+T15	Lesion-Anatomy 619 640	right upper lobe lung
+T16	Lesion-Description 641 647	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Lesion-Description:T16 has-Lesion-Assertion:T14 has-Lesion-Anatomy:T15

@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 173 183;185 195	lower left hemithorax
+T2	Medical-Problem 201 235	decrease in adjacent pleural fluid
+T3	Medical-Problem 241 257;259 284	overall moderate pleural effusion persists
+T4	Medical-Problem 290 309	loculated component
+T5	Medical-Anatomy 317 335;337 347	left mid and upper hemithorax
+T6	Medical-Assertion 350 352	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 353 373	visible pneumothorax
+T8	Medical-Anatomy 414 424	lower lobe
+T9	Medical-Problem 425 434	opacities
+E8	Medical-Problem:T9
+T10	Medical-Problem 491 537	residual patchy and linear opacities remaining
+T11	Medical-Assertion 626 628	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 629 642;644 656	visible right pneumothorax
+T13	Medical-Assertion 662 664	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 665 693	substantial pleural effusion
+T15	Medical-Problem 704 722	linear atelectasis
+T16	Medical-Anatomy 740 750	right base
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16

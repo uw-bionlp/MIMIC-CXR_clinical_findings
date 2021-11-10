@@ -1,0 +1,30 @@
+T1	Medical-Problem 256 269	Opacification
+T2	Medical-Anatomy 277 299	right lower hemithorax
+T3	Medical-Problem 317 337	diaphragmatic hernia
+T4	Medical-Problem 342 385	remote (non-acute) diaphragmatic laceration
+T5	Medical-Anatomy 404 421	dome of the liver
+T6	Medical-Anatomy 476 500	aerated portions of lung
+T7	Medical-Assertion 513 515	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 516 535	focal consolidation
+T9	Medical-Problem 540 552	pneumothorax
+T10	Medical-Assertion 555 557	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 558 574	pleural effusion
+T12	Medical-Problem 589 613	Calcified tortuous aorta
+E10	Medical-Problem:T12
+T13	Medical-Assertion 647 658	No evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 663 675	pneumothorax
+T15	Medical-Problem 682 719	Large, anterior, diaphragmatic hernia
+E12	Medical-Problem:T15
+T16	Medical-Problem 744 751;753 757	partial tear
+T17	Medical-Anatomy 759 778	right hemidiaphragm
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17

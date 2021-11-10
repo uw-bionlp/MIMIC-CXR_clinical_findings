@@ -1,0 +1,18 @@
+T1	Medical-Assertion 280 282	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 283 295	pneumothorax
+T3	Medical-Problem 300 316	pleural effusion
+T4	Medical-Problem 318 350	New linear and rounded opacities
+T5	Medical-Anatomy 358 376;378 383	left mid and lower lungs
+T6	Medical-Assertion 417 432	could be due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 433 444	atelectasis
+T8	Medical-Problem 486 498	Irregularity
+T9	Medical-Anatomy 506 526	left 4, 5 and 6 ribs
+T10	Medical-Anatomy 651 667	left hemi thorax
+E8	Medical-Anatomy:T10
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9

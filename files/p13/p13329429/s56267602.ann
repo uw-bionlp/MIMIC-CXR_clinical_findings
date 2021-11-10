@@ -1,0 +1,27 @@
+T1	Medical-Assertion 245 252	appears
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 254 266	overinflated
+T3	Medical-Problem 272 302	widened upper tracheal caliber
+E2	Medical-Problem:T3
+T4	Medical-Problem 336 344	Widening
+T5	Medical-Anatomy 352 383	right lower paratracheal stripe
+T6	Medical-Assertion 523 525	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 526 529;531 548	new relevant findings
+T8	Medical-Anatomy 556 561	lungs
+T9	Medical-Problem 567 595	irregular spiculated opacity
+T10	Medical-Anatomy 603 608;610 619	right lung apex
+T11	Lesion-Characteristic 635 644	irregular
+T12	Lesion-Description 645 651	nodule
+T13	Lesion-Description 698 704	lesion
+T14	Lesion-Anatomy 712 727	right lung base
+T15	Medical-Assertion 833 835	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 836 843;845 853	pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11
+E11	Lesion-Description:T13 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

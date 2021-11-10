@@ -1,0 +1,44 @@
+T1	Medical-Problem 122 149	bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 271 288	mild cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 312 336;338 357	small- to moderate-sized bilateral effusions
+E3	Medical-Problem:T3
+T4	Medical-Problem 363 399	underlying collapse or consolidation
+E4	Medical-Problem:T4
+T5	Medical-Problem 463 470	opacity
+T6	Medical-Anatomy 480 485;487 497	right lower lung
+T7	Medical-Assertion 524 532	Possible
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 533 558	upper zone redistribution
+T9	Medical-Assertion 565 567	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 568 580	definite CHF
+T11	Medical-Problem 778 792	Patchy density
+T12	Medical-Anatomy 800 835	left greater than right upper zones
+T13	Medical-Assertion 836 849	may represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 851 894	post-radiation change.Curvilinear densities
+T15	Medical-Anatomy 904 929;931 951	left upper zone and right paratracheal regions
+E12	Medical-Anatomy:T15
+T16	Lesion-Count 1013 1021	multiple
+T17	Lesion-Characteristic 1050 1059	sclerotic
+T18	Lesion-Characteristic 1060 1064	bone
+T19	Lesion-Description 1066 1073	lesions
+T20	Lesion-Characteristic 1075 1095	not well appreciated
+T21	Medical-Problem 1189 1256	moderate bilateral effusions with underlying collapse/consolidation
+E18	Medical-Problem:T21
+T22	Medical-Assertion 1277 1279	No
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1280 1297	pneumomediastinum
+T24	Medical-Assertion 1298 1300	or
+A5	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1301 1304	ptx
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E16	Lesion-Description:T19 has-Lesion-Count:T16 has-Lesion-Characteristic:T17 has-Lesion-Characteristic:T18 has-Lesion-Characteristic:T20
+E19	Medical-Problem:T23 has-Medical-Assertion:T22 has-Medical-Assertion:T24
+E20	Medical-Problem:T25 has-Medical-Assertion:T22 has-Medical-Assertion:T24

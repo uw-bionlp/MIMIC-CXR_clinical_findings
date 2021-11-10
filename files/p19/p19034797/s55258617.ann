@@ -1,0 +1,21 @@
+T1	Medical-Problem 245 275	large right upper lung opacity
+E1	Medical-Problem:T1
+T2	Lesion-Size 394 398	6-cm
+T3	Lesion-Anatomy 399 415	right upper lobe
+T4	Lesion-Description 416 420	mass
+T5	Medical-Assertion 552 554	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 555 567	pneumothorax
+T7	Medical-Assertion 570 572	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 573 580;582 591	pleural effusions
+T9	Medical-Assertion 609 620	No evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 624 636	pneumothorax
+T11	Lesion-Anatomy 680 696	right upper lobe
+T12	Lesion-Description 697 701	mass
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Lesion-Description:T12 has-Lesion-Anatomy:T11

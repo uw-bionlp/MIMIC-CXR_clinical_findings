@@ -1,0 +1,33 @@
+T1	Lesion-Size 355 360	small
+T2	Lesion-Characteristic 361 370	calcified
+T3	Lesion-Description 371 380	granuloma
+T4	Lesion-Anatomy 403 419	right upper lobe
+T5	Medical-Problem 424 445	small area of opacity
+T6	Medical-Anatomy 453 458;460 518	right lower lung projects over the lower pole of the right hilus
+T7	Medical-Problem 521 532;534 550	Small right pleural effusion
+E7	Medical-Problem:T7
+T8	Medical-Problem 568 609	cardiac silhouette is moderately enlarged
+E8	Medical-Problem:T8
+T9	Medical-Assertion 665 667	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 668 680	pneumothorax
+T11	Medical-Problem 704 717	Focal opacity
+T12	Medical-Anatomy 721 737	right lower lung
+T13	Medical-Assertion 739 747	could be
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 748 757	pneumonia
+T15	Medical-Problem 761 766;768 791	other opportunistic infection
+T16	Medical-Problem 860 881	Moderate cardiomegaly
+E14	Medical-Problem:T16
+T17	Medical-Problem 886 914	small right pleural effusion
+E15	Medical-Problem:T17
+T18	Medical-Assertion 915 922	without
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 923 928;930 945	overt pulmonary edema
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

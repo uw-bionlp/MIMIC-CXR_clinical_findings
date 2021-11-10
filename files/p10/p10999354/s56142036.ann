@@ -1,0 +1,37 @@
+T1	Medical-Problem 30 42	cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 44 60	low lung volumes
+E2	Medical-Problem:T2
+T3	Medical-Problem 84 101	continued opacity
+T4	Medical-Anatomy 111 127	superior lingula
+T5	Medical-Assertion 134 147	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 148 167	chronic atelectasis
+T7	Medical-Problem 179 188	pneumonia
+T8	Medical-Problem 504 515	enlargement
+T9	Medical-Problem 520 530	thickening
+T10	Medical-Anatomy 538 564	left costal pleural margin
+T11	Medical-Problem 572 618	associated elevation of the left hemidiaphragm
+E10	Medical-Problem:T11
+T12	Medical-Assertion 652 654	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 655 670	pulmonary edema
+T14	Medical-Problem 673 687	Mild pulmonary
+E12	Medical-Problem:T14
+T15	Medical-Problem 688 708	vascular engorgement
+T16	Medical-Anatomy 716 721;723 728	upper lungs
+T17	Medical-Assertion 729 749	may be an indication
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 753 781	early cardiac decompensation
+T19	Medical-Assertion 1066 1068	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1069 1081	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

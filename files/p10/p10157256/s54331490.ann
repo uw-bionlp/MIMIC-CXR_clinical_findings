@@ -1,0 +1,22 @@
+T1	Medical-Problem 425 446	growing consolidation
+T2	Medical-Anatomy 454 469	right lung base
+T3	Medical-Assertion 564 566	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 568 580	pneumothorax
+T5	Lesion-Characteristic 652 662	widespread
+T6	Lesion-Characteristic 663 676	predominantly
+T7	Lesion-Characteristic 677 686	sclerotic
+T8	Lesion-Characteristic 687 691	bone
+T9	Lesion-Description 692 699	lesions
+T10	Medical-Problem 767 788	Growing consolidation
+T11	Medical-Anatomy 792 807	right lung base
+T12	Medical-Assertion 808 822	concerning for
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 823 832	infection
+T14	Medical-Problem 837 847	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6 has-Lesion-Characteristic:T7 has-Lesion-Characteristic:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

@@ -1,0 +1,21 @@
+T1	Medical-Problem 383 407	Subsegmental atelectasis
+T2	Medical-Anatomy 415 420;422 431	right lung base
+T3	Lesion-Size 458 463	small
+T4	Lesion-Description 464 470	nodule
+T5	Lesion-Anatomy 478 492	right mid lung
+T6	Medical-Assertion 533 535	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 536 557	other focal opacities
+T8	Medical-Assertion 694 696	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 697 713	pleural effusion
+T10	Medical-Problem 718 730	pneumothorax
+T11	Medical-Assertion 748 772	No radiographic evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 776 785	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

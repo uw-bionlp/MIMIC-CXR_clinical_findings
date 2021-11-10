@@ -1,0 +1,34 @@
+T1	Medical-Problem 234 254;256 269	Mildly elevated left hemidiaphragm
+E1	Medical-Problem:T1
+T2	Medical-Problem 311 333;335 346	Numerous left rib cage deformities
+E2	Medical-Problem:T2
+T3	Medical-Problem 365 400	Severe emphysema and hyperinflation
+E3	Medical-Problem:T3
+T4	Medical-Problem 415 444	Subtle micronodular opacities
+T5	Medical-Anatomy 452 466	right mid lung
+T6	Medical-Assertion 467 490;492 495	raise potential concern for
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 496 514	atypical infection
+T8	Medical-Problem 522 532	aspiration
+T9	Medical-Problem 537 568;570 577	similar cluster of micronodular opacity
+T10	Medical-Anatomy 594 609	left lower lung
+T11	Medical-Assertion 798 800	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 801 815	acute fracture
+T13	Lesion-Characteristic 836 842	Subtle
+T14	Lesion-Description 843 860	nodular opacities
+T15	Lesion-Anatomy 868 902	right mid lung and left lower lung
+T16	Medical-Assertion 903 908;910 921	raise concern for
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 922 940	atypical infection
+T18	Medical-Problem 948 966	chronic aspiration
+T19	Medical-Problem 969 986;988 997	Severe background emphysema
+E16	Medical-Problem:T19
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16

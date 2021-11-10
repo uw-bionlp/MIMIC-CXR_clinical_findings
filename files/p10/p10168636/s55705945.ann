@@ -1,0 +1,36 @@
+T1	Medical-Problem 480 488	widening
+T2	Medical-Anatomy 496 507	mediastinum
+T3	Medical-Problem 649 664	area of opacity
+T4	Medical-Anatomy 673 687	right mid lung
+T5	Medical-Assertion 688 703	likely reflects
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 704 728	subsegmental atelectasis
+T7	Medical-Problem 741 766	increasing patchy opacity
+T8	Medical-Anatomy 774 783	left base
+T9	Medical-Problem 791 809;811 821	more consolidative appearance
+T10	Medical-Anatomy 829 846	retrocardiac area
+T11	Medical-Assertion 847 860	suggestive of
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 861 884;886 897	worsening partial lobar atelectasis
+T13	Medical-Problem 915 923	probable
+E11	Medical-Problem:T13
+T14	Medical-Problem 924 947	mild interstitial edema
+E12	Medical-Problem:T14
+T15	Medical-Assertion 950 952	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 953 958;960 969	large effusions
+T17	Medical-Assertion 988 990	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 991 1003	pneumothorax
+T19	Medical-Problem 1025 1035;1037 1055	stomach is distended with gas
+E15	Medical-Problem:T19
+T20	Medical-Problem 1058 1066	Multiple
+E16	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

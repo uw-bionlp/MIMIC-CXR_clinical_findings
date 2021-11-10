@@ -1,0 +1,30 @@
+T1	Medical-Anatomy 212 217	lungs
+T2	Medical-Assertion 222 227	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 231 240;242 255	confluent consolidation
+T4	Medical-Problem 258 272	Linear opacity
+T5	Medical-Anatomy 280 295	left lower lung
+T6	Medical-Assertion 305 318	suggestive of
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 320 331	atelectasis
+T8	Medical-Assertion 343 345	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 346 354	effusion
+T10	Medical-Problem 358 363	edema
+T11	Medical-Problem 370 391;393 401	cardiac silhouette is enlarged
+E8	Medical-Problem:T11
+T12	Medical-Assertion 432 434	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 435 460	acute osseous abnormality
+T14	Medical-Problem 489 501	Cardiomegaly
+E10	Medical-Problem:T14
+T15	Medical-Assertion 502 509	without
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 510 539	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

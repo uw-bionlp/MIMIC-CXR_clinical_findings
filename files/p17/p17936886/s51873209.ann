@@ -1,0 +1,66 @@
+T1	Medical-Problem 407 436;438 446	Heart size remains moderately enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 449 469	Lung volumes are low
+E2	Medical-Problem:T2
+T3	Medical-Problem 517 530	calcification
+T4	Medical-Anatomy 538 552	thoracic aorta
+T5	Medical-Problem 581 589	crowding
+T6	Medical-Anatomy 598 613	bronchovascular
+T7	Medical-Problem 631 665	mild pulmonary vascular congestion
+E7	Medical-Problem:T7
+T8	Lesion-Characteristic 669 680	Ill-defined
+T9	Lesion-Description 681 696	nodular opacity
+T10	Lesion-Anatomy 708 728	right mid lung field
+T11	Lesion-Characteristic 740 743	may
+T12	Medical-Problem 789 817	bibasilar airspace opacities
+E12	Medical-Problem:T12
+T13	Medical-Assertion 871 884	could reflect
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Problem 885 896	atelectasis
+T15	Medical-Problem 902 911	infection
+T16	Medical-Problem 915 925	aspiration
+T17	Medical-Assertion 930 942	not excluded
+A2	Medical-AssertionValue T17 possible
+T18	Medical-Problem 945 972	Small left pleural effusion
+E16	Medical-Problem:T18
+T19	Medical-Problem 991 1020	component loculated laterally
+E17	Medical-Problem:T19
+T20	Medical-Problem 1095 1117	right pleural effusion
+E18	Medical-Problem:T20
+T21	Medical-Assertion 1161 1163	no
+A3	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1164 1176	pneumothorax
+T23	Medical-Problem 1199 1215	Low lung volumes
+E20	Medical-Problem:T23
+T24	Medical-Problem 1221 1255	mild pulmonary vascular congestion
+E21	Medical-Problem:T24
+T25	Medical-Problem 1263 1291	Bibasilar airspace opacities
+E22	Medical-Problem:T25
+T26	Medical-Assertion 1292 1305	could reflect
+A4	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1306 1317	atelectasis
+T28	Medical-Problem 1322 1332	aspiration
+T29	Medical-Problem 1337 1346	infection
+T30	Medical-Assertion 1351 1363	not excluded
+A5	Medical-AssertionValue T30 possible
+T31	Medical-Problem 1371 1398	Small left pleural effusion
+E26	Medical-Problem:T31
+T32	Medical-Assertion 1465 1475	resolution
+A6	Medical-AssertionValue T32 absent
+T33	Medical-Problem 1496 1518	right pleural effusion
+T34	Lesion-Characteristic 1526 1537	Ill defined
+T35	Lesion-Description 1538 1553	nodular opacity
+T36	Lesion-Anatomy 1561 1581	right mid lung field
+T37	Lesion-Characteristic 1590 1601;1603 1620	possibly an area of infection
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E9	Lesion-Description:T9 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T10 has-Lesion-Characteristic:T11
+E13	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T15 has-Medical-Assertion:T13 has-Medical-Assertion:T17
+E15	Medical-Problem:T16 has-Medical-Assertion:T13 has-Medical-Assertion:T17
+E19	Medical-Problem:T22 has-Medical-Assertion:T21
+E23	Medical-Problem:T27 has-Medical-Assertion:T26
+E24	Medical-Problem:T28 has-Medical-Assertion:T30
+E25	Medical-Problem:T29 has-Medical-Assertion:T26 has-Medical-Assertion:T30
+E27	Medical-Problem:T33 has-Medical-Assertion:T32
+E29	Lesion-Description:T35 has-Lesion-Characteristic:T34 has-Lesion-Anatomy:T36 has-Lesion-Characteristic:T37

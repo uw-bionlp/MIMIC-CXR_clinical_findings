@@ -1,0 +1,28 @@
+T1	Medical-Problem 237 240;242 275	new small bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Assertion 287 289	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 290 302	pneumothorax
+T4	Medical-Anatomy 309 314	lungs
+T5	Medical-Problem 326 339	hyperinflated
+T6	Medical-Assertion 355 357	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 358 378	focal consolidations
+T8	Medical-Assertion 379 389	concerning
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 395 404	pneumonia
+T10	Lesion-Description 422 437	nodular density
+T11	Lesion-Anatomy 445 455	right apex
+T12	Lesion-Assertion 459 462;464 475	not appreciated
+A4	Lesion-AssertionValue T12 absent
+T13	Medical-Assertion 514 516	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 517 529	radiographic
+E9	Medical-Problem:T14
+T15	Medical-Problem 554 563	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Lesion-Description:T10 has-Lesion-Anatomy:T11 has-Lesion-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T13

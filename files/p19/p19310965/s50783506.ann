@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 180 185	lungs
+T2	Medical-Problem 190 202	hypoinflated
+T3	Medical-Problem 207 240;242 250	exaggerate the pulmonary vascular markings
+T4	Medical-Anatomy 268 273	lungs
+T5	Medical-Assertion 289 300	no evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 304 317	consolidation
+T7	Medical-Problem 320 328	effusion
+T8	Medical-Problem 333 345	pneumothorax
+T9	Medical-Assertion 404 406	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 407 422	acute fractures
+T11	Medical-Assertion 440 442	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 443 451	free air
+T13	Medical-Anatomy 461 470;472 486	under the hemidiaphragms
+T14	Medical-Problem 550 568	Hypoinflated lungs
+E11	Medical-Problem:T14
+T15	Medical-Assertion 574 576	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 577 607	acute cardiopulmonary findings
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

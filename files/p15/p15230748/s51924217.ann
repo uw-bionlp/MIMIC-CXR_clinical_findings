@@ -1,0 +1,30 @@
+T1	Lesion-Assertion 300 302	no
+A1	Lesion-AssertionValue T1 absent
+T2	Lesion-Description 303 309	masses
+T3	Lesion-Description 314 321	lesions
+T4	Medical-Assertion 344 346	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 347 363	pleural effusion
+T6	Medical-Problem 367 379	pneumothorax
+T7	Medical-Problem 392 407	mild flattening
+T8	Medical-Anatomy 415 437	diaphragms bilaterally
+T9	Lesion-Assertion 499 501	no
+A3	Lesion-AssertionValue T9 absent
+T10	Lesion-Characteristic 502 509	osseous
+T11	Lesion-Characteristic 510 515	lytic
+T12	Lesion-Characteristic 519 526	blastic
+T13	Lesion-Description 527 534	lesions
+T14	Medical-Problem 588 609;611 619	old right lateral rib fracture
+E11	Medical-Problem:T14
+T15	Lesion-Assertion 637 648	No evidence
+A4	Lesion-AssertionValue T15 absent
+T16	Lesion-Description 652 662	malignancy
+T17	Medical-Problem 666 675	infection
+E13	Medical-Problem:T17
+E1	Lesion-Description:T2 has-Lesion-Assertion:T1
+E2	Lesion-Description:T3 has-Lesion-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Lesion-Description:T13 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12
+E12	Lesion-Description:T16 has-Lesion-Assertion:T15

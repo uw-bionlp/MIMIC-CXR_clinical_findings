@@ -1,0 +1,25 @@
+T1	Medical-Problem 132 140	Widening
+T2	Medical-Anatomy 144 170	right superior mediastinum
+T3	Lesion-Size 189 194	large
+T4	Lesion-Anatomy 196 209	right thyroid
+T5	Lesion-Description 210 216	lesion
+T6	Medical-Problem 254 259	Heart
+E6	Medical-Problem:T6
+T7	Medical-Problem 263 269;271 279	mildly enlarged
+E7	Medical-Problem:T7
+T8	Medical-Problem 315 344	pulmonary vascular congestion
+E8	Medical-Problem:T8
+T9	Medical-Problem 350 376	minimal interstitial edema
+E9	Medical-Problem:T9
+T10	Medical-Problem 379 425	Persistent nonspecific left lower lobe opacity
+E10	Medical-Problem:T10
+T11	Medical-Assertion 433 448	could be due to
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 456 467	atelectasis
+T13	Medical-Problem 471 480	pneumonia
+T14	Medical-Problem 483 498;500 523	Multiple healed bilateral rib fractures
+E13	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11

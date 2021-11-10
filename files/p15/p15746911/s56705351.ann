@@ -1,0 +1,44 @@
+T1	Medical-Problem 284 307	Mild leftward deviation
+T2	Medical-Anatomy 316 358	trachea at the level of the thoracic inlet
+T3	Medical-Problem 364 374	prominence
+T4	Medical-Anatomy 382 387;389 417	right superior mediastinal contour
+T5	Medical-Assertion 418 429	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 432 446	thyroid goiter
+T7	Medical-Anatomy 488 493	Lungs
+T8	Medical-Problem 498 511	hyperinflated
+T9	Medical-Assertion 522 529	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 530 535;537 550	focal consolidation
+T11	Medical-Assertion 553 555	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 556 585	pulmonary vascular congestion
+T13	Medical-Problem 589 601	pneumothorax
+T14	Medical-Problem 616 624	Blunting
+T15	Medical-Anatomy 632 655	left costophrenic angle
+T16	Medical-Problem 698 720	small pleural effusion
+T17	Medical-Assertion 723 725	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 726 753	acute osseous abnormalities
+T19	Medical-Problem 789 816	Small left pleural effusion
+E15	Medical-Problem:T19
+T20	Medical-Problem 822 840	Leftward deviation
+T21	Medical-Anatomy 848 855	trachea
+T22	Medical-Problem 861 871	prominence
+T23	Medical-Anatomy 879 893;895 914	right superior mediastinal contour
+T24	Medical-Assertion 915 930	could be due to
+A5	Medical-AssertionValue T24 possible
+T25	Medical-Problem 933 947	thyroid goiter
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21
+E18	Medical-Problem:T22 has-Medical-Anatomy:T23
+E20	Medical-Problem:T25 has-Medical-Anatomy:T23 has-Medical-Assertion:T24

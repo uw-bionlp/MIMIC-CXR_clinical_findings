@@ -1,0 +1,24 @@
+T1	Medical-Assertion 243 245	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 246 265	focal consolidation
+T3	Lesion-Characteristic 282 289	rounded
+T4	Lesion-Characteristic 290 299	calcified
+T5	Lesion-Description 300 306	nodule
+T6	Lesion-Anatomy 328 343	left lower lobe
+T7	Lesion-Assertion 344 366	most likely represents
+A2	Lesion-AssertionValue T7 possible
+T8	Lesion-Characteristic 369 378	calcified
+T9	Lesion-Description 379 388	granuloma
+T10	Lesion-Assertion 391 393	No
+A3	Lesion-AssertionValue T10 absent
+T11	Medical-Problem 395 411	pleural effusion
+E8	Medical-Problem:T11
+T12	Medical-Problem 415 427	pneumothorax
+E9	Medical-Problem:T12
+T13	Medical-Assertion 515 517	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 518 547	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T6 has-Lesion-Assertion:T7 has-Lesion-Characteristic:T8
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

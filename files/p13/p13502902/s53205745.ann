@@ -1,0 +1,22 @@
+T1	Medical-Problem 123 146	Intracranial hemorrhage
+E1	Medical-Problem:T1
+T2	Medical-Assertion 452 459	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 461 475	consolidations
+T4	Lesion-Characteristic 479 489	suspicious
+T5	Lesion-Anatomy 490 499	pulmonary
+T6	Lesion-Description 500 507	nodules
+T7	Medical-Assertion 509 511	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 512 533	pleural abnormalities
+T9	Medical-Assertion 758 760	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Assertion 761 782	radiographic evidence
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 786 795	pneumonia
+T12	Medical-Problem 799 832;834 847	other significant cardiopulmonary abnormalities
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T10

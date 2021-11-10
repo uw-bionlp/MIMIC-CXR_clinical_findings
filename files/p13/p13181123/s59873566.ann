@@ -1,0 +1,29 @@
+T1	Medical-Assertion 299 301	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 302 309;311 319	pleural effusion
+T3	Medical-Problem 323 335	pneumothorax
+T4	Medical-Problem 367 388;390 397	Ill-defined increased opacity
+T5	Medical-Anatomy 405 420	right lung base
+T6	Medical-Assertion 472 490	which may indicate
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 491 501	bronchitis
+T8	Medical-Problem 504 526	Mild bronchial cuffing
+E6	Medical-Problem:T8
+T9	Medical-Assertion 541 543	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 545 562	acute abnormality
+T11	Medical-Anatomy 570 583	upper abdomen
+T12	Medical-Problem 612 635	Vague increased density
+T13	Medical-Anatomy 643 658	right lung base
+T14	Medical-Problem 664 681	bronchial cuffing
+T15	Medical-Assertion 683 688;690 702	which may indicate
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 703 713	bronchitis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T15

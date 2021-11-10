@@ -1,0 +1,34 @@
+T1	Lesion-Description 96 111	Lymphadenopathy
+E1	Lesion-Description:T1
+T2	Medical-Assertion 311 313	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 315 331	pleural effusion
+T4	Medical-Problem 335 347	pneumothorax
+T5	Medical-Problem 349 374	Parenchymal abnormalities
+E4	Medical-Problem:T5
+T6	Medical-Problem 405 414	emphysema
+E5	Medical-Problem:T6
+T7	Medical-Problem 420 458	mild accompanying interstitial disease
+E6	Medical-Problem:T7
+T8	Medical-Problem 460 470;472 480	Subpleural scarring
+E7	Medical-Problem:T8
+T9	Lesion-Size 487 492	small
+T10	Lesion-Characteristic 493 503	hyperdense
+T11	Lesion-Description 504 511	nodules
+T12	Lesion-Anatomy 519 534	right lung apex
+T13	Lesion-Size-Trend 543 552	unchanged
+A2	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Problem 554 562	Scarring
+T15	Medical-Problem 567 582	bullous changes
+T16	Medical-Anatomy 606 617;619 629	base of the left chest
+T17	Medical-Problem 635 657	chest is hyperinflated
+E15	Medical-Problem:T17
+T18	Medical-Assertion 716 727	No evidence
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 731 760	acute cardiopulmonary disease
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E10	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T16
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

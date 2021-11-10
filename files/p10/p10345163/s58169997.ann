@@ -1,0 +1,14 @@
+T1	Medical-Assertion 206 208	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 209 229	obvious pneumothorax
+T3	Medical-Problem 369 379	prominence
+T4	Medical-Anatomy 387 415	cardiomediastinal silhouette
+T5	Medical-Anatomy 427 435;437 445	vascular markings
+T6	Medical-Assertion 502 513	possibility
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 518 532	background CHF
+T8	Medical-Assertion 533 554	cannot be excluded in
+A3	Medical-AssertionValue T8 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Assertion:T8

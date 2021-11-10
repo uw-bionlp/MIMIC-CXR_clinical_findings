@@ -1,0 +1,39 @@
+T1	Medical-Assertion 33 44	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 48 60	pneumothorax
+T3	Medical-Problem 93 110	Pleural effusions
+E2	Medical-Problem:T3
+T4	Medical-Problem 142 169	slightly increased aeration
+T5	Medical-Anatomy 177 186;188 194	bilateral  lungs
+T6	Medical-Problem 868 873	edema
+E5	Medical-Problem:T6
+T7	Medical-Problem 903 911;913 929	Residual opacification at
+T8	Medical-Anatomy 934 944	lung bases
+T9	Medical-Assertion 945 963	could be explained
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 967 983	persistent edema
+T11	Medical-Problem 989 1000	atelectasis
+T12	Medical-Problem 1006 1029	worsening opacification
+T13	Medical-Anatomy 1037 1052	left lower lobe
+T14	Medical-Assertion 1053 1067;1069 1072	raises concern for
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1073 1093	concurrent pneumonia
+T16	Medical-Problem 1097 1124	loose worsening atelectasis
+T17	Medical-Problem 1127 1140;1142 1151	Small pleural effusions
+E14	Medical-Problem:T17
+T18	Medical-Problem 1167 1184	Mild cardiomegaly
+E15	Medical-Problem:T18
+T19	Medical-Problem 1189 1197	worsened
+E16	Medical-Problem:T19
+T20	Medical-Assertion 1200 1202	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1203 1215	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T9 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

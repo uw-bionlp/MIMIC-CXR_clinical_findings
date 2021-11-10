@@ -1,0 +1,23 @@
+T1	Medical-Assertion 310 326	without evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 330 342	pneumothorax
+T3	Lesion-Size-Trend 360 380;382 390	interval significant decrease
+A2	Lesion-Size-TrendValue T3 decreasing
+T4	Lesion-Anatomy 394 411	right mediastinal
+T5	Lesion-Description 412 416	mass
+T6	Lesion-Assertion 419 421	No
+A3	Lesion-AssertionValue T6 absent
+T7	Medical-Problem 422 441	focal consolidation
+E4	Medical-Problem:T7
+T8	Medical-Assertion 462 464	no
+A4	Medical-AssertionValue T8 absent
+T9	Medical-Problem 465 481	pleural effusion
+T10	Medical-Problem 485 497	pneumothorax
+T11	Medical-Assertion 562 564	No
+A5	Medical-AssertionValue T11 absent
+T12	Medical-Problem 565 594	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T5 has-Lesion-Size-Trend:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T9 has-Medical-Assertion:T8
+E6	Medical-Problem:T10 has-Medical-Assertion:T8
+E7	Medical-Problem:T12 has-Medical-Assertion:T11

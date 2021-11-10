@@ -1,0 +1,60 @@
+T1	Medical-Problem 37 69	Interval worsening opacification
+T2	Medical-Anatomy 77 93	right upper lobe
+T3	Medical-Assertion 94 107	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 140 149	infection
+T5	Medical-Problem 558 581	increased opacification
+T6	Medical-Anatomy 585 601	right upper lobe
+T7	Medical-Assertion 608 614;616 622	may be due to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 640 648	collapse
+T9	Medical-Problem 653 662	infection
+T10	Medical-Problem 674 691;693 706	new right basilar opacification
+E8	Medical-Problem:T10
+T11	Medical-Assertion 708 721	likely due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 722 733	atelectasis
+T13	Medical-Problem 735 745	Tenting of
+T14	Medical-Anatomy 750 769	right hemidiaphragm
+T15	Medical-Problem 782 797	rightward shift
+T16	Medical-Anatomy 805 827	mediastinal structures
+T17	Medical-Problem 838 844;846 850	volume loss
+T18	Medical-Problem 853 868	Right perihilar
+E15	Medical-Problem:T18
+T19	Medical-Problem 869 877	fullness
+T20	Medical-Assertion 878 891	may be due to
+A4	Medical-AssertionValue T20 possible
+T21	Lesion-Characteristic 895 905	underlying
+T22	Lesion-Description 906 917	mass lesion
+T23	Medical-Problem 1155 1168	opacification
+T24	Medical-Anatomy 1176 1192	right upper lobe
+T25	Medical-Assertion 1193 1206	may represent
+A5	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1238 1247	infection
+T27	Medical-Problem 1259 1280	basilar opacification
+E22	Medical-Problem:T27
+T28	Medical-Assertion 1282 1288;1290 1296	likely due to
+A6	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1297 1308	atelectasis
+T30	Medical-Anatomy 1310 1325	Right perihilar
+T31	Medical-Problem 1326 1334	fullness
+T32	Medical-Assertion 1335 1348	could reflect
+A7	Medical-AssertionValue T32 possible
+T33	Lesion-Characteristic 1352 1362	underlying
+T34	Lesion-Description 1363 1367	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T20
+E18	Lesion-Description:T22 has-Lesion-Characteristic:T21
+E19	Medical-Problem:T23 has-Medical-Anatomy:T24
+E21	Medical-Problem:T26 has-Medical-Anatomy:T24 has-Medical-Assertion:T25
+E23	Medical-Problem:T29 has-Medical-Assertion:T28
+E25	Medical-Problem:T31 has-Medical-Anatomy:T30 has-Medical-Assertion:T32
+E27	Lesion-Description:T34 has-Lesion-Characteristic:T33

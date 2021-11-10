@@ -1,0 +1,47 @@
+T1	Medical-Anatomy 284 300	Right lower lobe
+T2	Medical-Problem 335 353	Nocardia infection
+T3	Medical-Problem 387 405	ongoing involution
+T4	Lesion-Characteristic 556 565	calcified
+T5	Lesion-Description 566 575	granuloma
+T6	Lesion-Anatomy 597 611	left lung base
+T7	Lesion-Characteristic 614 621	Rounded
+T8	Lesion-Description 622 629	density
+T9	Lesion-Anatomy 631 657	lateral to the azygos vein
+T10	Lesion-Assertion 658 664	likely
+A1	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 682 691	calcified
+T12	Lesion-Description 692 696	node
+T13	Medical-Problem 710 722	cardiomegaly
+E12	Medical-Problem:T13
+T14	Medical-Problem 750 768;770 783	marked enlargement of the atrium
+E13	Medical-Problem:T14
+T15	Medical-Problem 786 790	Mild
+E14	Medical-Problem:T15
+T16	Medical-Problem 791 801	prominence
+T17	Medical-Anatomy 809 831	right pulmonary artery
+T18	Medical-Assertion 864 866	No
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 879 882	CHF
+T20	Medical-Assertion 885 887	No
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 888 904	focal infiltrate
+T22	Medical-Problem 908 922	gross effusion
+T23	Medical-Problem 943 955	Cardiomegaly
+E20	Medical-Problem:T23
+T24	Medical-Assertion 969 971	No
+A4	Medical-AssertionValue T24 absent
+T25	Medical-Problem 972 975	CHF
+T26	Medical-Problem 979 1003	obvious pleural effusion
+T27	Lesion-Anatomy 1035 1040	right
+E23	Lesion-Anatomy:T27
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E11	Lesion-Description:T12 has-Lesion-Anatomy:T9 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11
+E15	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T22 has-Medical-Assertion:T20
+E21	Medical-Problem:T25 has-Medical-Assertion:T24
+E22	Medical-Problem:T26 has-Medical-Assertion:T24

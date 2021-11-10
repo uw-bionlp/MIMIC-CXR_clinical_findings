@@ -1,0 +1,15 @@
+T1	Medical-Problem 193 206	pneumothorax?
+E1	Medical-Problem:T1
+T2	Medical-Problem 277 308	Moderate right pleural effusion
+T3	Medical-Problem 315 348	very small locules of pleural air
+T4	Medical-Anatomy 357 376	base the right lung
+T5	Medical-Problem 432 460	Attendant severe atelectasis
+T6	Medical-Anatomy 468 484	right lower lobe
+T7	Medical-Anatomy 506 510;512 522	left lower lobe
+T8	Medical-Assertion 523 529	may be
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 530 539	collapsed
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

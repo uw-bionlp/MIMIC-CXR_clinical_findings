@@ -1,0 +1,21 @@
+T1	Medical-Assertion 358 369	NO EVIDENCE
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 373 385	PNEUMOTHORAX
+T3	Medical-Problem 388 418;420 438	SUBSTANTIAL ENLARGEMENT OF THE CARDIAC SILHOUETTE
+T4	Medical-Problem 453 464	VOLUME LOSS
+T5	Medical-Anatomy 472 487	LEFT LOWER LOBE
+T6	Medical-Problem 491 504	OPACIFICATION
+E5	Medical-Problem:T6
+T7	Medical-Anatomy 512 522	RIGHT BASE
+T8	Medical-Assertion 523 543	COULD WELL REPRESENT
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 544 555	VOLUME LOSS
+T10	Medical-Anatomy 563 568;570 580	LOWER RIGHT LUNG
+T11	Medical-Problem 625 647	SUPERIMPOSED PNEUMONIA
+T12	Medical-Assertion 649 676	WOULD HAVE TO BE CONSIDERED
+A3	Medical-AssertionValue T12 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T12

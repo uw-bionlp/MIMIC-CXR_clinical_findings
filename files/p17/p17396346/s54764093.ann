@@ -1,0 +1,18 @@
+T1	Medical-Problem 257 301	Marked enlargement of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 331 335;337 359	Left mid to lower lung zone
+T3	Medical-Anatomy 364 374	right lung
+T4	Medical-Problem 375 400	patchy airspace opacities
+T5	Medical-Assertion 432 451	most likely reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 452 467	pulmonary edema
+T7	Medical-Problem 470 493;495 504	Small bilateral pleural effusions
+E6	Medical-Problem:T7
+T8	Medical-Assertion 519 521	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 522 534	pneumothorax
+T10	Medical-Problem 588 603	Pulmonary edema
+E8	Medical-Problem:T10
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

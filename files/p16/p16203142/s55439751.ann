@@ -1,0 +1,29 @@
+T1	Medical-Problem 133 154;156 179	apparent shift of the mediastinum to the left
+T2	Medical-Assertion 183 209	not definitely appreciated
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 221 230;232 247	continued poor definition
+T4	Medical-Anatomy 255 273	left hemidiaphragm
+T5	Medical-Problem 291 302	volume loss
+T6	Medical-Anatomy 311 326	left lower lobe
+T7	Medical-Assertion 331 339	probable
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 340 356	pleural effusion
+T9	Medical-Problem 359 384;386 403	Engorgement of indistinct pulmonary vessels
+E7	Medical-Problem:T9
+T10	Medical-Problem 429 444	pulmonary edema
+E8	Medical-Problem:T10
+T11	Medical-Problem 447 464;466 479	Area of increased opacification
+T12	Medical-Anatomy 487 500	left mid zone
+T13	Medical-Assertion 501 514	could reflect
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 515 521	merely
+T15	Medical-Problem 522 543	some asymmetric edema
+T16	Medical-Problem 557 578	supervening pneumonia
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

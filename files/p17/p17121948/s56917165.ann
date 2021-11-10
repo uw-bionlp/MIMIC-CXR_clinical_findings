@@ -1,0 +1,33 @@
+T1	Lesion-Anatomy 218 233	Left upper lobe
+T2	Lesion-Description 234 240	lesion
+T3	Lesion-Size-Trend 271 295	appears similar to prior
+A1	Lesion-Size-TrendValue T3 no-change
+T4	Medical-Problem 307 333	slightly increased density
+T5	Medical-Anatomy 341 345;347 357	left lower lobe
+T6	Medical-Assertion 364 377	may represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 378 388	aspiration
+T8	Medical-Problem 392 412	developing pneumonia
+T9	Medical-Assertion 415 417	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 418 425;427 435	pleural effusion
+T11	Medical-Problem 439 451	pneumothorax
+T12	Medical-Problem 477 510	Increased left lower lobe density
+E9	Medical-Problem:T12
+T13	Medical-Assertion 512 524	representing
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 532 542	aspiration
+T15	Medical-Problem 547 567	developing pneumonia
+T16	Lesion-Size-Trend 574 604	Stable radiographic appearance
+A5	Lesion-Size-TrendValue T16 no-change
+T17	Lesion-Anatomy 608 623	left upper lobe
+T18	Lesion-Description 624 630	lesion
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Size-Trend:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Lesion-Description:T18 has-Lesion-Size-Trend:T16 has-Lesion-Anatomy:T17

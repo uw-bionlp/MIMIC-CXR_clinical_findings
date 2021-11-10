@@ -1,0 +1,41 @@
+T1	Medical-Problem 236 282	Moderate enlargement of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 355 370;372 386	atherosclerotic calcifications
+T3	Medical-Anatomy 406 417	aortic knob
+T4	Medical-Anatomy 420 441	Pulmonary vasculature
+T5	Medical-Assertion 445 448	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 450 458	engorged
+T7	Medical-Problem 461 477	Patchy opacities
+T8	Medical-Anatomy 485 495	lung bases
+T9	Medical-Assertion 496 510	likely reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 511 519;521 532	areas of atelectasis
+T11	Medical-Problem 542 551	infection
+T12	Medical-Assertion 552 570	cannot be excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 606 608	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 609 625	pleural effusion
+T15	Medical-Problem 629 641	pneumothorax
+T16	Medical-Assertion 658 660	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 661 674;676 687	acute osseous abnormality
+T18	Medical-Problem 716 742	Bibasilar patchy opacities
+E13	Medical-Problem:T18
+T19	Medical-Assertion 744 750	likely
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 751 762	atelectasis
+T21	Medical-Problem 765 774	Infection
+T22	Medical-Assertion 775 793	cannot be excluded
+A7	Medical-AssertionValue T22 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T20 has-Medical-Assertion:T19
+E15	Medical-Problem:T21 has-Medical-Assertion:T22

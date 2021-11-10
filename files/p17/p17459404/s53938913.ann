@@ -1,0 +1,25 @@
+T1	Medical-Problem 260 279	homogeneous opacity
+T2	Medical-Anatomy 287 302	left hemithorax
+T3	Medical-Problem 311 328	small area of air
+T4	Medical-Assertion 358 371	likely due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 372 385;387 416	complete left upper and lower lobe collapse
+T6	Medical-Problem 422 463	large pleural effusion replacing the area
+T7	Medical-Problem 467 496	Discontinuation of air column
+T8	Medical-Anatomy 512 543;545 564	left main bronchus, proximal to the bronchial stent
+T9	Medical-Problem 569 601	Shift of mediastinum to the left
+E8	Medical-Problem:T9
+T10	Medical-Assertion 699 701	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 702 713;715 737	significant right pleural effusion
+T12	Medical-Problem 874 891	Complete collapse
+T13	Medical-Anatomy 895 920	left upper and lower lobe
+T14	Medical-Problem 936 943;945 953	pleural effusion
+E12	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13

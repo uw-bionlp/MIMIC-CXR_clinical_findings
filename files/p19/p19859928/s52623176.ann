@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 281 299	right peritracheal
+T2	Medical-Problem 321 342	soft tissue densities
+T3	Lesion-Description 359 369	adenopathy
+E3	Lesion-Description:T3
+T4	Lesion-Description 462 472	adenopathy
+E4	Lesion-Description:T4
+T5	Medical-Problem 495 519	volumes are slightly low
+E5	Medical-Problem:T5
+T6	Medical-Assertion 532 534	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 535 551	pleural effusion
+T8	Medical-Problem 555 567	pneumothorax
+T9	Medical-Problem 579 603	subtle pulmonary opacity
+T10	Medical-Anatomy 619 633	mid right lung
+T11	Medical-Problem 645 662	increased density
+T12	Medical-Anatomy 672 677;679 693	lower thoracic spine
+T13	Medical-Problem 796 815	pulmonary opacities
+T14	Medical-Anatomy 830 863;865 894	mid right lung and over the lower thoracic spine on the lateral
+T15	Medical-Assertion 900 914	concerning for
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 915 933	areas of infection
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

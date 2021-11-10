@@ -1,0 +1,28 @@
+T1	Medical-Problem 151 160	Elevation
+T2	Medical-Anatomy 168 201	right lung base and hemidiaphragm
+T3	Medical-Problem 258 269	atelectasis
+T4	Medical-Anatomy 277 286	lung base
+T5	Medical-Anatomy 293 298;300 310	right upper lung
+T6	Medical-Anatomy 354 363	left lung
+T7	Medical-Problem 368 381	hyperinflated
+T8	Medical-Assertion 382 392	suggesting
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 393 411	airway obstruction
+T10	Medical-Problem 415 424	emphysema
+T11	Medical-Assertion 460 462	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 463 472	pneumonia
+T13	Medical-Problem 476 491	pulmonary edema
+T14	Medical-Assertion 494 496	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 497 513	pleural effusion
+T16	Medical-Problem 518 530	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14

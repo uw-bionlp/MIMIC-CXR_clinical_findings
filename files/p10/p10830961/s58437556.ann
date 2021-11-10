@@ -1,0 +1,29 @@
+T1	Medical-Assertion 121 140	Interval resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 144 175	patchy right upper lobe opacity
+T3	Medical-Assertion 177 186;188 204	which may have been due to
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 205 214	contusion
+T5	Medical-Problem 218 228	aspiration
+T6	Medical-Problem 259 264;266 298	Right hemidiaphragm is mildly elevated
+E4	Medical-Problem:T6
+T7	Medical-Assertion 310 312	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 313 329	pleural effusion
+T9	Medical-Problem 334 346	pneumothorax
+T10	Medical-Assertion 422 432	Resolution
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Anatomy 436 452	right upper lobe
+T12	Medical-Problem 453 460	opacity
+T13	Medical-Assertion 461 481	may have been due to
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 483 492	contusion
+T15	Medical-Problem 496 506	aspiration
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T1 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T1 has-Medical-Assertion:T3
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T12 has-Medical-Assertion:T10
+E9	Medical-Problem:T14 has-Medical-Assertion:T10 has-Medical-Anatomy:T11 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T10 has-Medical-Anatomy:T11 has-Medical-Assertion:T13

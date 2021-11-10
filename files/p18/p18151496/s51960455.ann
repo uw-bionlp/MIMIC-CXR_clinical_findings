@@ -1,0 +1,38 @@
+T1	Medical-Problem 315 343	Stable moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 541 546	aorta
+T3	Medical-Problem 550 582	diffusely calcified and tortuous
+T4	Medical-Anatomy 589 598;600 611	pulmonary vascularity
+T5	Medical-Assertion 615 618	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 619 627	engorged
+T7	Medical-Anatomy 634 639	lungs
+T8	Medical-Problem 647 672;674 702	mildly hyperinflated with flattening of the diaphragms
+T9	Medical-Assertion 703 716	suggestive of
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 717 746;748 755	chronic obstructive pulmonary disease
+T11	Medical-Problem 768 796	chronic interstitial changes
+E9	Medical-Problem:T11
+T12	Medical-Problem 831 854	increased consolidation
+T13	Medical-Anatomy 862 876	left lung base
+T14	Medical-Problem 893 901;903 924	punctate high-density material
+T15	Medical-Anatomy 936 951	right lung base
+T16	Medical-Assertion 971 973	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 974 981;983 991	pleural effusion
+T18	Medical-Problem 995 1007	pneumothorax
+T19	Medical-Problem 1028 1051	Increased consolidation
+T20	Medical-Anatomy 1059 1073	left lung base
+T21	Medical-Assertion 1074 1088	concerning for
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1089 1098	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

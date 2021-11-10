@@ -1,0 +1,31 @@
+T1	Medical-Assertion 322 324	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 325 341	pleural effusion
+T3	Medical-Problem 345 357	pneumothorax
+T4	Lesion-Description 360 366	Nodule
+T5	Lesion-Anatomy 374 389	left upper lobe
+T6	Lesion-Size 431 435	7 mm
+T7	Lesion-Size-Trend 449 458	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Lesion-Characteristic 502 511	calcified
+T9	Lesion-Description 512 521	granuloma
+T10	Lesion-Assertion 524 526	No
+A3	Lesion-AssertionValue T10 absent
+T11	Lesion-Size-Trend 527 530	new
+A4	Lesion-Size-TrendValue T11 new
+T12	Lesion-Description 532 539	nodules
+E8	Lesion-Description:T12
+T13	Lesion-Description 540 546	masses
+T14	Medical-Problem 551 565	consolidations
+E10	Medical-Problem:T14
+T15	Medical-Assertion 590 592	no
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 593 609	pleural effusion
+T17	Medical-Problem 614 626	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T6 has-Lesion-Size-Trend:T7
+E7	Lesion-Description:T9 has-Lesion-Characteristic:T8
+E9	Lesion-Description:T13 has-Lesion-Assertion:T10 has-Lesion-Size-Trend:T11
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T15

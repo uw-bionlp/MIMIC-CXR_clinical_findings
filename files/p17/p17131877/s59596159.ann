@@ -1,0 +1,25 @@
+T1	Medical-Problem 168 180	Cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 182 221	widened mediastinum and elongated aorta
+E2	Medical-Problem:T2
+T3	Medical-Problem 238 246	Aeration
+T4	Medical-Anatomy 255 270	left lower lobe
+T5	Medical-Problem 296 313	Diffuse opacities
+T6	Medical-Anatomy 321 326;328 388	right lung, worse in the lower lobe and medially in the upper lobe
+T7	Medical-Assertion 405 418	worrisome for
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 419 429	aspiration
+T9	Medical-Anatomy 438 448	right base
+T10	Medical-Problem 449 456	opacity
+T11	Medical-Problem 490 501	atelectasis
+T12	Medical-Problem 506 514	effusion
+T13	Medical-Assertion 526 528	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 529 541	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

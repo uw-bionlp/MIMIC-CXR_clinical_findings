@@ -1,0 +1,26 @@
+T1	Medical-Assertion 277 279	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 280 296	pleural effusion
+T3	Medical-Problem 301 313	pneumothorax
+T4	Medical-Assertion 354 361	without
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 362 367;369 382	focal consolidation
+T6	Medical-Assertion 383 397	concerning for
+A3	Medical-AssertionValue T6 possible
+T7	Medical-Problem 398 407	pneumonia
+T8	Lesion-Size 410 415	Small
+T9	Lesion-Description 416 433	nodular opacities
+T10	Lesion-Anatomy 455 478	lower lungs bilaterally
+T11	Medical-Assertion 596 598	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 599 628	acute cardiopulmonary process
+T13	Lesion-Size 635 640	Small
+T14	Lesion-Description 641 656	nodular opacity
+T15	Lesion-Anatomy 673 694	each lower hemithorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Lesion-Description:T9 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Lesion-Description:T14 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T15

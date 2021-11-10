@@ -1,0 +1,22 @@
+T1	Medical-Problem 164 180	pulmonary edema?
+E1	Medical-Problem:T1
+T2	Medical-Problem 226 264	Moderate-to-severe cardiac enlargement
+E2	Medical-Problem:T2
+T3	Medical-Problem 298 327	vasculature is still engorged
+T4	Medical-Anatomy 335 346	upper lobes
+T5	Medical-Problem 359 366;368 379	cardiac dysfunction
+E5	Medical-Problem:T5
+T6	Medical-Assertion 384 394	do not see
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 395 400	edema
+T8	Medical-Anatomy 408 435	upper lobes and lower lobes
+T9	Medical-Problem 511 523;525 556	small if not moderate right pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 571 598	small left pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Assertion 636 638	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 639 651	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

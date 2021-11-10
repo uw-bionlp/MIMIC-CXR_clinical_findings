@@ -1,0 +1,37 @@
+T1	Medical-Anatomy 326 331	Lungs
+T2	Medical-Assertion 347 349	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 350 364;366 379	focal areas of consolidation
+T4	Medical-Problem 391 400	pneumonia
+T5	Medical-Problem 403 408	Heart
+E4	Medical-Problem:T5
+T6	Medical-Assertion 409 416	appears
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 417 432	mildly enlarged
+T8	Medical-Problem 474 488	calcifications
+T9	Medical-Anatomy 500 517	arch of the aorta
+T10	Medical-Problem 567 590;592 601	Small bilateral pleural effusions
+E8	Medical-Problem:T10
+T11	Lesion-Size 625 629	3-mm
+T12	Lesion-Description 630 636	nodule
+T13	Lesion-Anatomy 657 663;665 690	second anterior rib on the right
+T14	Medical-Assertion 693 695	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 696 708	pneumothorax
+T16	Medical-Problem 730 748	Cardiac silhouette
+T17	Medical-Assertion 749 759	appears to
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 806 839	Small bilateral pleural effusions
+E14	Medical-Problem:T18
+T19	Lesion-Size 848 852	3-mm
+T20	Lesion-Anatomy 853 862	pulmonary
+T21	Lesion-Description 863 869	nodule
+T22	Lesion-Anatomy 896 918;920 929	second anterior rib on the right
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T17
+E17	Lesion-Description:T21 has-Lesion-Size-Present:T19 has-Lesion-Anatomy:T20 has-Lesion-Anatomy:T22

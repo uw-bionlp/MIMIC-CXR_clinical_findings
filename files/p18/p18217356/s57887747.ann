@@ -1,0 +1,29 @@
+T1	Medical-Problem 295 343	Substantial progression of pulmonary abnormality
+E1	Medical-Problem:T1
+T2	Medical-Problem 400 412	disseminated
+E2	Medical-Problem:T2
+T3	Lesion-Characteristic 442 457	rapidly growing
+T4	Lesion-Characteristic 458 464	global
+T5	Lesion-Characteristic 465 472	central
+T6	Lesion-Description 473 483	adenopathy
+T7	Lesion-Size 488 493	large
+T8	Lesion-Anatomy 494 503	pulmonary
+T9	Lesion-Description 505 511	masses
+T10	Lesion-Size-Trend 518 523	rapid
+A1	Lesion-Size-TrendValue T10 increasing
+T11	Lesion-Assertion 557 565	suggests
+A2	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 566 574	lymphoma
+T13	Medical-Assertion 641 656;658 660	more likely due to
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 661 677	concurrent edema
+T15	Medical-Problem 712 732	concurrent pneumonia
+E12	Medical-Problem:T15
+T16	Medical-Problem 734 750	pulmonary emboli
+E13	Medical-Problem:T16
+T17	Medical-Problem 760 775	septic infarcts
+E14	Medical-Problem:T17
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5
+E9	Lesion-Description:T9 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8
+E10	Lesion-Description:T12 has-Lesion-Size-Trend:T10 has-Lesion-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,23 @@
+T1	Medical-Problem 185 202	complete collapse
+T2	Medical-Anatomy 211 220	left lung
+T3	Medical-Problem 226 240	hyperexpansion
+T4	Medical-Anatomy 248 253	right
+T5	Medical-Problem 263 282;284 319	marked shift of the mediastinum and trachea to the left
+E5	Medical-Problem:T5
+T6	Medical-Assertion 331 333	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 334 346	pneumothorax
+T8	Medical-Assertion 349 351	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 352 359;361 369	pleural effusion
+T10	Medical-Problem 401 419	Left lung collapse
+E8	Medical-Problem:T10
+T11	Lesion-Assertion 421 442	highly suspicious for
+A3	Lesion-AssertionValue T11 possible
+T12	Lesion-Characteristic 446 457	obstructive
+T13	Lesion-Description 458 462	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12

@@ -1,0 +1,28 @@
+T1	Medical-Problem 299 321	aorta remains tortuous
+E1	Medical-Problem:T1
+T2	Medical-Problem 327 336	calcified
+E2	Medical-Problem:T2
+T3	Medical-Problem 362 378	fibrotic changes
+T4	Medical-Anatomy 390 405	right lung base
+T5	Medical-Assertion 477 483	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 485 504	minimal atelectasis
+T7	Medical-Anatomy 512 526	left lung base
+T8	Medical-Assertion 529 531	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 532 547	pulmonary edema
+T10	Medical-Problem 549 554;556 569	focal consolidation
+T11	Medical-Problem 571 587	pleural effusion
+T12	Medical-Problem 592 604	pneumothorax
+T13	Medical-Assertion 631 633	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 635 662	acute osseous abnormalities
+T15	Medical-Problem 738 778	continued right basilar fibrotic changes
+E12	Medical-Problem:T15
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

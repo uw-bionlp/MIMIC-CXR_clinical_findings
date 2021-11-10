@@ -1,0 +1,17 @@
+T1	Medical-Problem 221 265;267 276	extensive perihilar, mid lung and lower lobe opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 322 324	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 325 344;346 354	appreciable pleural effusion
+T4	Medical-Problem 378 393	pulmonary edema
+T5	Medical-Assertion 394 405	less likely
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 411 421;423 430	infectious process
+T7	Medical-Problem 460 501;503 511	extensive interstitial process of unclear etiology
+E5	Medical-Problem:T7
+T8	Lesion-Characteristic 537 556	lymphangitic spread
+T9	Lesion-Description 564 569	tumor
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E4	Medical-Problem:T6 has-Medical-Assertion:T2 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Characteristic:T8

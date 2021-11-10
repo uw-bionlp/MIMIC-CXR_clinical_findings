@@ -1,0 +1,39 @@
+T1	Medical-Problem 283 304	Left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 331 371	Slight increase in interstitial markings
+T3	Medical-Anatomy 379 383	left
+T4	Medical-Assertion 388 394	likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 395 423	re-expansion pulmonary edema
+T6	Medical-Problem 430 454	underlying consolidation
+E5	Medical-Problem:T6
+T7	Lesion-Count 472 480	Multiple
+T8	Lesion-Anatomy 481 490	left lung
+T9	Lesion-Description 491 497	masses
+T10	Lesion-Characteristic 508 528	only faintly visible
+T11	Lesion-Characteristic 531 549	partially obscured
+T12	Medical-Problem 557 573	pleural effusion
+E11	Medical-Problem:T12
+T13	Lesion-Anatomy 580 585	hilar
+T14	Lesion-Description 586 590	mass
+T15	Lesion-Size-Trend 594 603	unchanged
+A2	Lesion-Size-TrendValue T15 no-change
+T16	Medical-Assertion 643 645	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 646 658	pneumothorax
+T18	Medical-Problem 791 795;797 813	left pleural effusion
+E15	Medical-Problem:T18
+T19	Medical-Assertion 816 818	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 819 831	pneumothorax
+T21	Medical-Anatomy 889 893	left
+T22	Medical-Assertion 897 903	likely
+A5	Medical-AssertionValue T22 possible
+T23	Medical-Problem 905 933	re-expansion pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E8	Lesion-Description:T9 has-Lesion-Count:T7 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11
+E13	Lesion-Description:T14 has-Lesion-Anatomy:T13 has-Lesion-Size-Trend:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22

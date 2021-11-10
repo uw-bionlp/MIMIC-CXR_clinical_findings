@@ -1,0 +1,45 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 70	definite acute cardiopulmonary process
+T3	Lesion-Characteristic 74 79	Vague
+T4	Lesion-Description 80 95	nodular opacity
+T5	Lesion-Anatomy 116 129	left mid lung
+T6	Lesion-Characteristic 221 231	underlying
+T7	Lesion-Anatomy 234 243	pulmonary
+T8	Lesion-Description 244 250	nodule
+T9	Lesion-Assertion 254 262	possible
+A2	Lesion-AssertionValue T9 possible
+T10	Medical-Assertion 686 693	without
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 694 707	consolidation
+T12	Medical-Assertion 719 721	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 722 736	large effusion
+T14	Medical-Anatomy 739 743;745 750	Left chest
+E10	Medical-Anatomy:T14
+T15	Medical-Problem 817 822;824 839	vague rounded opacity
+T16	Medical-Anatomy 860 897;899 904	anterior left fifth-sixth intercostal space
+T17	Medical-Assertion 966 968	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 969 974;976 983	acute osseous
+T19	Medical-Problem 1000 1016	Mild height loss
+E14	Medical-Problem:T19
+T20	Medical-Problem 1103 1117	definite acute
+E15	Medical-Problem:T20
+T21	Medical-Problem 1118 1141	cardiopulmonary process
+E16	Medical-Problem:T21
+T22	Medical-Problem 1144 1165	Vague nodular opacity
+E17	Medical-Problem:T22
+T23	Lesion-Characteristic 1291 1301	underlying
+T24	Lesion-Anatomy 1302 1311	pulmonary
+T25	Lesion-Description 1312 1318	nodule
+T26	Lesion-Assertion 1322 1330	possible
+A6	Lesion-AssertionValue T26 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7 has-Lesion-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E20	Lesion-Description:T25 has-Lesion-Characteristic:T23 has-Lesion-Anatomy:T24 has-Lesion-Assertion:T26

@@ -1,0 +1,17 @@
+T1	Medical-Problem 209 219	prominence
+T2	Medical-Anatomy 227 238	mediastinum
+T3	Lesion-Anatomy 245 260	left upper lobe
+T4	Lesion-Description 261 266	mass/
+T5	Lesion-Size-Trend 291 300	unchanged
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Problem 312 334	mild improved aeration
+T7	Medical-Anatomy 343 353	right base
+T8	Medical-Problem 370 404	bibasilar subsegmental atelectasis
+E7	Medical-Problem:T8
+T9	Medical-Assertion 407 409	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 411 425	pneumothoraces
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

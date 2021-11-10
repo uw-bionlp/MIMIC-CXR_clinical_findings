@@ -1,0 +1,37 @@
+T1	Medical-Problem 445 453;455 463	improved aeration
+T2	Medical-Anatomy 498 513	left lower lobe
+T3	Medical-Problem 526 551	persistent linear density
+T4	Medical-Anatomy 559 574	left lower lobe
+T5	Medical-Assertion 575 594	likely representing
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 596 618	persistent atelectasis
+T7	Medical-Problem 630 649	lobar consolidation
+E6	Medical-Problem:T7
+T8	Medical-Problem 651 659	effusion
+E7	Medical-Problem:T8
+T9	Medical-Problem 661 673	pneumothorax
+E8	Medical-Problem:T9
+T10	Medical-Problem 676 705	Mild peribronchial thickening
+E9	Medical-Problem:T10
+T11	Medical-Assertion 706 719	could reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 720 740	airways inflammation
+T13	Medical-Assertion 814 816	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 817 821;823 826	free air
+T15	Medical-Anatomy 837 856	right hemidiaphragm
+T16	Medical-Assertion 874 876	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 877 896	lobar consolidation
+T18	Medical-Problem 899 919	Bronchial thickening
+E14	Medical-Problem:T18
+T19	Medical-Assertion 920 933	could reflect
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 935 963	airways inflammatory process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

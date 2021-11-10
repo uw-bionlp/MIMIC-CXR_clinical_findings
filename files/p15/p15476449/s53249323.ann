@@ -1,0 +1,30 @@
+T1	Medical-Assertion 229 231	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 232 237;239 252	focal consolidation
+T3	Medical-Problem 254 270	pleural effusion
+T4	Medical-Problem 275 287	pneumothorax
+T5	Medical-Problem 300 306	stable
+E4	Medical-Problem:T5
+T6	Lesion-Description 307 314	nodular
+T7	Lesion-Anatomy 336 346	right lung
+T8	Lesion-Assertion 348 354	likely
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Characteristic 357 366	calcified
+T10	Lesion-Description 367 376	granuloma
+T11	Medical-Assertion 444 446	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 447 463	bony abnormality
+T13	Medical-Assertion 466 468	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 469 473;475 498	free air under the diaphragm
+T15	Medical-Assertion 578 580	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 581 600	focal consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

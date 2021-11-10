@@ -1,0 +1,19 @@
+T1	Medical-Assertion 264 266	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 267 293	significant right effusion
+T3	Medical-Problem 297 309	pneumothorax
+T4	Lesion-Anatomy 312 322	Multifocal
+T5	Lesion-Description 324 343	nodular parenchymal
+E4	Lesion-Description:T5
+T6	Lesion-Description 344 353	opacities
+T7	Lesion-Size-Trend 358 367	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 405 407	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 408 440	reaccumulation of right effusion
+T10	Medical-Problem 444 468	significant pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8

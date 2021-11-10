@@ -1,0 +1,50 @@
+T1	Medical-Problem 231 242;244 251	clearing of opacity
+T2	Medical-Anatomy 259 321	left lung, particularly in the upper and lower zones laterally
+T3	Medical-Problem 340 363	rounded area of lucency
+T4	Medical-Anatomy 371 391	upper zone laterally
+T5	Medical-Problem 397 404	opacity
+T6	Medical-Anatomy 433 443	left hilum
+T7	Medical-Problem 465 472;474 493	pleural fluid or thickening
+T8	Medical-Anatomy 501 515	left lung apex
+T9	Medical-Problem 520 550	increased retrocardiac opacity
+E9	Medical-Problem:T9
+T10	Medical-Problem 557 568	obscuration
+E10	Medical-Problem:T10
+T11	Medical-Problem 611 628;630 637	diffuse increased opacity
+T12	Medical-Anatomy 645 697	right lung with a perihilar and basilar distribution
+T13	Medical-Assertion 700 702	No
+A1	Medical-AssertionValue T13 absent
+T14	Medical-Problem 703 708;710 724	gross right effusion
+T15	Medical-Assertion 727 735	Possible
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 736 752	minimal clearing
+T17	Medical-Anatomy 760 786	right cardiophrenic region
+T18	Medical-Problem 1135 1136;1138 1138;1140 1197	D  ense right greater than left carotid artery calcification
+E16	Medical-Problem:T18
+T19	Medical-Problem 1261 1274	opacification
+T20	Medical-Anatomy 1282 1295;1297 1312	left lung and right lung base
+T21	Medical-Problem 1315 1327	Cardiomegaly
+E19	Medical-Problem:T21
+T22	Medical-Assertion 1359 1374	could represent
+A3	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1393 1416	pneumonic consolidation
+T24	Medical-Problem 1421 1424	CHF
+T25	Medical-Problem 1447 1454;1456 1471	area of rounded lucency
+T26	Medical-Anatomy 1479 1494	left upper lung
+T27	Medical-Assertion 1534 1536	No
+A4	Medical-AssertionValue T27 absent
+T28	Medical-Problem 1537 1550	obvious bulla
+T29	Medical-Problem 1554 1561	abscess
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E11	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17
+E17	Medical-Problem:T19 has-Medical-Anatomy:T20
+E20	Medical-Problem:T23 has-Medical-Assertion:T22
+E21	Medical-Problem:T24 has-Medical-Assertion:T22
+E22	Medical-Problem:T25 has-Medical-Anatomy:T26
+E24	Medical-Problem:T28 has-Medical-Assertion:T27
+E25	Medical-Problem:T29 has-Medical-Assertion:T27

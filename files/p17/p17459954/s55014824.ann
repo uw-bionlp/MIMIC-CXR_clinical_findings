@@ -1,0 +1,32 @@
+T1	Medical-Assertion 30 32	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 33 58	subdiaphragmatic free air
+T3	Medical-Problem 60 72	Cardiomegaly
+E2	Medical-Problem:T3
+T4	Medical-Problem 74 91	Biapical scarring
+E3	Medical-Problem:T4
+T5	Medical-Problem 364 386	Heart size is enlarged
+E4	Medical-Problem:T5
+T6	Medical-Problem 398 408	tortuosity
+E5	Medical-Problem:T6
+T7	Medical-Problem 430 480	Some prominence of pulmonary interstitial markings
+E6	Medical-Problem:T7
+T8	Medical-Assertion 481 488	without
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 489 504;506 511	overt pulmonary edema
+T10	Medical-Problem 515 534	focal consolidation
+T11	Medical-Problem 547 570	patchy areas of density
+T12	Medical-Anatomy 583 594	upper lobes
+T13	Medical-Assertion 601 614	may represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 615 623	scarring
+T15	Medical-Assertion 626 628	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 629 653	free intra-abdominal air
+T17	Medical-Anatomy 663 691	underneath the hemidiaphragm
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17

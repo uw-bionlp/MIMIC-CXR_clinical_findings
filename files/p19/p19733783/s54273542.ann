@@ -1,0 +1,26 @@
+T1	Medical-Problem 342 356;358 374	moderate right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 413 415	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 416 428	pneumothorax
+T4	Lesion-Anatomy 431 436;438 442	Right lung
+T5	Lesion-Description 443 447	mass
+T6	Lesion-Anatomy 452 457	hilar
+T7	Lesion-Description 458 462	mass
+T8	Lesion-Size-Trend 467 476	unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Problem 483 508	interstitial infiltration
+T10	Medical-Anatomy 510 535	throughout the right lung
+T11	Medical-Assertion 539 547	probably
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 562 581	engorged lymphatics
+T13	Lesion-Description 587 605	tumor infiltration
+E10	Lesion-Description:T13
+T14	Medical-Anatomy 657 662;664 676	Right heart border
+T15	Medical-Problem 700 725	adjacent pleural effusion
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T8
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Anatomy:T14

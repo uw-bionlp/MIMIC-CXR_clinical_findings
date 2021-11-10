@@ -1,0 +1,17 @@
+T1	Medical-Problem 246 274	Small right pleural effusion
+T2	Medical-Anatomy 321 336	right lung base
+T3	Medical-Problem 338 363	Small region of pneumonia
+T4	Lesion-Size 374 379	small
+T5	Lesion-Anatomy 380 384	lung
+T6	Lesion-Description 385 389	mass
+T7	Medical-Assertion 390 398;400 407	could be present
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 598 600	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 601 622	left pleural effusion
+T10	Medical-Problem 624 664	Mild to moderate cardiomegaly is chronic
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Assertion:T7
+E6	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

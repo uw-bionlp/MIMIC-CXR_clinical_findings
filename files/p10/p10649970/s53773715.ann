@@ -1,0 +1,20 @@
+T1	Medical-Assertion 175 194	interval resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 198 226	interstitial pulmonary edema
+T3	Medical-Assertion 270 272	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 273 301	appreciable pleural effusion
+T5	Medical-Problem 305 317	pneumothorax
+T6	Lesion-Characteristic 329 338	Calcified
+T7	Lesion-Description 339 356	nodular opacities
+T8	Lesion-Anatomy 377 393	right lower lobe
+T9	Lesion-Assertion 415 439	most likely representing
+A3	Lesion-AssertionValue T9 possible
+T10	Lesion-Characteristic 440 449	calcified
+T11	Lesion-Anatomy 450 459	pulmonary
+T12	Lesion-Description 460 467	nodules
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T12 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11

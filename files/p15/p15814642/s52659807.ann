@@ -1,0 +1,45 @@
+T1	Medical-Problem 324 332	increase
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 393 398	right
+T3	Medical-Problem 435 462;464 476	postobstructive atelectasis lymphangitic
+T4	Medical-Problem 554 582	small right pleural effusion
+T5	Medical-Assertion 586 594	possible
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 597 599	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 600 612	pneumothorax
+T8	Lesion-Characteristic 627 647	somewhat ill-defined
+T9	Lesion-Size 648 652	7 mm
+T10	Lesion-Description 653 660	nodular
+E8	Lesion-Description:T10
+T11	Lesion-Description 661 668	density
+T12	Lesion-Anatomy 689 697;699 703	left mid lung
+T13	Lesion-Assertion 710 723	may represent
+A3	Lesion-AssertionValue T13 possible
+T14	Lesion-Size-Trend 733 736	new
+A4	Lesion-Size-TrendValue T14 new
+T15	Lesion-Description 737 747	metastasis
+T16	Lesion-Anatomy 833 849	right upper lung
+E12	Lesion-Anatomy:T16
+T17	Medical-Problem 877 903	drainable pleural effusion
+E13	Medical-Problem:T17
+T18	Lesion-Characteristic 918 929	ill-defined
+T19	Lesion-Size 930 934	7 mm
+T20	Lesion-Description 935 942	nodular
+E16	Lesion-Description:T20
+T21	Lesion-Description 943 950	density
+T22	Lesion-Anatomy 971 984	left mid lung
+T23	Medical-Assertion 986 999	may represent
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1007 1020	nipple shadow
+T25	Lesion-Size-Trend 1024 1027	new
+A6	Lesion-Size-TrendValue T25 new
+T26	Lesion-Description 1028 1038	metastasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T8 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T12
+E11	Lesion-Description:T15 has-Lesion-Anatomy:T12 has-Lesion-Assertion:T13 has-Lesion-Size-Trend:T14
+E17	Lesion-Description:T21 has-Lesion-Characteristic:T18 has-Lesion-Size-Present:T19 has-Lesion-Anatomy:T22
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E20	Lesion-Description:T26 has-Lesion-Anatomy:T22 has-Lesion-Size-Trend:T25

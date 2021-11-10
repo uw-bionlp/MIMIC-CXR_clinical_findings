@@ -1,0 +1,29 @@
+T1	Medical-Assertion 99 106	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 109 121	pneumothorax
+T3	Medical-Problem 123 162	slightly increased heterogenous opacity
+T4	Medical-Anatomy 170 185	right lung base
+T5	Medical-Assertion 188 201	may represent
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 202 212	aspiration
+T7	Lesion-Anatomy 438 453	right perihilar
+T8	Lesion-Description 454 459	tumor
+T9	Medical-Problem 480 512	some heterogeneous opacification
+T10	Medical-Anatomy 520 530	right base
+T11	Medical-Assertion 532 537;539 554	which could represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 555 565	aspiration
+T13	Medical-Assertion 568 570	No
+A4	Medical-AssertionValue T13 absent
+T14	Lesion-Characteristic 571 579	definite
+E10	Lesion-Characteristic:T14
+T15	Medical-Problem 592 604	pneumothorax
+T16	Medical-Problem 618 658	mild indistinctness of pulmonary vessels
+E12	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T4
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T13

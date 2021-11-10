@@ -1,0 +1,19 @@
+T1	Medical-Problem 296 310;312 318	right residual Cordis
+T2	Medical-Anatomy 326 328	IJ
+T3	Medical-Problem 341 345	kink
+T4	Medical-Anatomy 353 358	lower
+T5	Medical-Problem 378 387;389 401	unchanged cardiomegaly
+E5	Medical-Problem:T5
+T6	Medical-Assertion 517 519	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 520 534	pneumothoraces
+T8	Medical-Problem 548 575	bilateral pleural effusions
+T9	Medical-Problem 581 601	areas of atelectasis
+T10	Medical-Anatomy 609 619	lung bases
+T11	Medical-Problem 623 662	Left retrocardiac opacity is persistent
+E10	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10

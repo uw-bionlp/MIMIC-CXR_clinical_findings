@@ -1,0 +1,27 @@
+T1	Medical-Assertion 324 326	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 327 339	pneumothorax
+T3	Medical-Problem 343 371	appreciable pleural effusion
+T4	Medical-Problem 374 384;386 398	Borderline cardiomegaly
+E3	Medical-Problem:T4
+T5	Medical-Problem 403 432	pulmonary vascular congestion
+E4	Medical-Problem:T5
+T6	Medical-Problem 437 463	borderline pulmonary edema
+E5	Medical-Problem:T6
+T7	Medical-Problem 483 506	new band of atelectasis
+T8	Medical-Anatomy 510 532	base of the right lung
+T9	Medical-Assertion 533 541	could be
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 543 570	collapsed right middle lobe
+T11	Lesion-Size 573 578	Small
+T12	Lesion-Description 579 594	nodular opacity
+T13	Lesion-Anatomy 615 620;622 672	right upper lung at the level of the second anterior rib
+T14	Medical-Assertion 691 699	could be
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 700 718	focus of infection
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

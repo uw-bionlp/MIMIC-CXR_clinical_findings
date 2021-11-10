@@ -1,0 +1,27 @@
+T1	Medical-Problem 274 298	Mild, bilateral blunting
+T2	Medical-Anatomy 306 325	costophrenic angles
+T3	Medical-Assertion 326 341	likely suggests
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 342 349;351 359	pleural scarring
+T5	Lesion-Assertion 439 441	No
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Characteristic 442 452	visualized
+T7	Lesion-Anatomy 453 462	pulmonary
+T8	Lesion-Description 463 470	nodules
+T9	Lesion-Description 474 480	masses
+T10	Lesion-Assertion 501 503	No
+A3	Lesion-AssertionValue T10 absent
+T11	Lesion-Characteristic 504 514	visualized
+T12	Lesion-Anatomy 515 524	pulmonary
+T13	Lesion-Description 525 532	nodules
+T14	Lesion-Description 536 542	masses
+T15	Medical-Assertion 545 547	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 548 577	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E7	Lesion-Description:T9 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E10	Lesion-Description:T13 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12
+E11	Lesion-Description:T14 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

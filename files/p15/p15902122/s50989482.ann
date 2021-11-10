@@ -1,0 +1,34 @@
+T1	Medical-Anatomy 393 398	heart
+T2	Medical-Assertion 402 405	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 406 414	enlarged
+T4	Medical-Assertion 417 419	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 420 428	blunting
+T6	Medical-Anatomy 437 456	costophrenic angles
+T7	Medical-Problem 470 486	pleural effusion
+T8	Medical-Assertion 489 491	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 492 512;514 527	areas concerning for consolidation
+T10	Lesion-Assertion 535 537	No
+A4	Lesion-AssertionValue T10 absent
+T11	Lesion-Characteristic 538 549	destructive
+T12	Lesion-Characteristic 550 554	bony
+T13	Lesion-Description 555 562	lesions
+T14	Medical-Problem 572 584	tiny density
+T15	Medical-Anatomy 593 598	right
+T16	Lesion-Size 646 651	small
+T17	Lesion-Characteristic 652 661	calcified
+T18	Lesion-Description 663 672	granuloma
+T19	Lesion-Size 688 694	2-3 mm
+T20	Medical-Assertion 715 717	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 718 747	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T13 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Lesion-Description:T18 has-Lesion-Size-Present:T16 has-Lesion-Characteristic:T17 has-Lesion-Size-Present:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

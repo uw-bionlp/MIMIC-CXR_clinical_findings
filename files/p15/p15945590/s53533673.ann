@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 350 365	left hemithorax
+T2	Medical-Problem 374 392	some opacification
+T3	Medical-Anatomy 400 409	left base
+T4	Medical-Problem 430 441	volume loss
+T5	Medical-Anatomy 449 454	lower
+T6	Medical-Problem 464 480	pleural effusion
+T7	Medical-Problem 482 495	Opacification
+T8	Medical-Anatomy 504 514	right base
+T9	Medical-Problem 520 553	silhouetting of the hemidiaphragm
+E9	Medical-Problem:T9
+T10	Medical-Problem 573 580;582 590	pleural effusion
+T11	Medical-Problem 595 606	volume loss
+T12	Medical-Problem 634 651;653 670	indistinctness of pulmonary vessels
+E12	Medical-Problem:T12
+T13	Medical-Assertion 671 679	suggests
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Problem 680 684	some
+E13	Medical-Problem:T14
+T15	Medical-Problem 685 730	element of elevated pulmonary venous pressure
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Anatomy:T8
+E11	Medical-Problem:T11 has-Medical-Anatomy:T8
+E14	Medical-Problem:T15 has-Medical-Assertion:T13

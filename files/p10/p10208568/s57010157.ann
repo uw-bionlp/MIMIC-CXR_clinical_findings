@@ -1,0 +1,38 @@
+T1	Medical-Problem 247 271	near total opacification
+T2	Medical-Anatomy 280 295	left hemithorax
+T3	Medical-Problem 315 337	large pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 344 354;356 360	left lower lobe
+T5	Medical-Problem 364 384	completely collapsed
+T6	Medical-Problem 396 412	minimal aeration
+T7	Medical-Anatomy 420 431;433 443	apical left upper lobe
+T8	Medical-Anatomy 452 461	left lung
+T9	Medical-Problem 465 486	otherwise atelectatic
+T10	Medical-Problem 493 505;507 520	left pleural fusion exerts
+E10	Medical-Problem:T10
+T11	Medical-Problem 521 532	mass effect
+T12	Medical-Anatomy 542 553	mediastinum
+T13	Medical-Problem 560 578;580 602	rightward shift of mediastinal structures
+E13	Medical-Problem:T13
+T14	Medical-Assertion 634 641	without
+A1	Medical-AssertionValue T14 absent
+T15	Medical-Problem 642 655;657 665	right pleural effusion
+T16	Medical-Problem 669 681	pneumothorax
+T17	Medical-Problem 844 897	Large left pleural effusion near complete atelectasis
+T18	Medical-Anatomy 905 914	left lung
+T19	Medical-Problem 932 943	mass effect
+T20	Medical-Problem 949 990	rightward shift of mediastinal structures
+T21	Medical-Assertion 1012 1026	concerning for
+A2	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1027 1052	malignant pleural disease
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T8
+E11	Medical-Problem:T11 has-Medical-Anatomy:T12
+E14	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Medical-Problem:T16 has-Medical-Assertion:T14
+E16	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Medical-Problem:T19 has-Medical-Anatomy:T18
+E19	Medical-Problem:T20 has-Medical-Anatomy:T18
+E20	Medical-Problem:T22 has-Medical-Assertion:T21

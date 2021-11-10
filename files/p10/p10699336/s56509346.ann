@@ -1,0 +1,17 @@
+T1	Medical-Problem 590 620	moderate left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 631 641	subsequent
+E2	Medical-Problem:T2
+T3	Medical-Problem 642 670	relatively large atelectasis
+T4	Medical-Anatomy 679 703;705 730	location of the previous parenchymal consolidation
+T5	Medical-Assertion 732 747	suspected to be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 748 758	aspiration
+T7	Medical-Problem 762 771	pneumonia
+T8	Medical-Assertion 857 859	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 861 873	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

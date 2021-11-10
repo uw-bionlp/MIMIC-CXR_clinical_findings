@@ -1,0 +1,23 @@
+T1	Medical-Problem 33 48	Pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 101 111;113 123	Persistent  elevation
+E2	Medical-Problem:T2
+T3	Medical-Problem 480 513	elevation of an increased density
+T4	Medical-Anatomy 523 527;529 542	left hemidiaphragm
+T5	Medical-Problem 597 610	calcification
+T6	Medical-Anatomy 614 628	thoracic aorta
+T7	Medical-Problem 645 656	atelectasis
+T8	Medical-Assertion 657 663	versus
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 664 674;676 686	developing infiltrate
+T10	Medical-Anatomy 694 704	right base
+T11	Medical-Assertion 707 709	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 710 724	pneumothoraces
+T13	Medical-Problem 752 772	mild pulmonary edema
+E11	Medical-Problem:T13
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

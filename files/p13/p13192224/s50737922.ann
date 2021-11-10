@@ -1,0 +1,31 @@
+T1	Medical-Assertion 358 360	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 361 378	new focal opacity
+T3	Medical-Assertion 380 390	suggestive
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 394 403	pneumonia
+T5	Medical-Problem 406 422	Minimal blunting
+T6	Medical-Anatomy 430 453	left costophrenic angle
+T7	Medical-Assertion 497 499	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 500 522	large pleural effusion
+T9	Medical-Problem 527 539	pneumothorax
+T10	Medical-Assertion 610 612	no
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 613 638	acute osseous abnormality
+T12	Medical-Problem 656 672	Low lung volumes
+E8	Medical-Problem:T12
+T13	Medical-Assertion 678 680	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 681 694	new opacities
+T15	Medical-Assertion 695 705	suggestive
+A6	Medical-AssertionValue T15 possible
+T16	Medical-Problem 709 718	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T1 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T16 has-Medical-Assertion:T13 has-Medical-Assertion:T15

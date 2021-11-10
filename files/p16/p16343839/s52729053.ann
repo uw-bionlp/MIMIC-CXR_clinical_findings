@@ -1,0 +1,45 @@
+T1	Medical-Assertion 551 553	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 554 583	new mediastinal abnormalities
+T3	Medical-Problem 693 697;699 737	scar formations surrounding the apical area
+E2	Medical-Problem:T3
+T4	Medical-Problem 740 753	Pleural scars
+T5	Medical-Problem 759 764	blunt
+T6	Medical-Anatomy 769 774;776 797	right lateral pleural sinus
+T7	Medical-Anatomy 818 848	right lower lateral chest wall
+T8	Medical-Anatomy 859 874	left hemithorax
+T9	Medical-Assertion 876 878	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 879 908	pulmonary vascular congestion
+T11	Lesion-Size 954 958	7 mm
+T12	Lesion-Characteristic 968 975	rounded
+T13	Lesion-Description 976 982	lesion
+T14	Lesion-Anatomy 997 1003;1005 1041	second anterior intercostal space laterally
+T15	Lesion-Size-Trend 1050 1059	unchanged
+A3	Lesion-Size-TrendValue T15 no-change
+T16	Lesion-Assertion 1106 1108	no
+A4	Lesion-AssertionValue T16 absent
+T17	Lesion-Size-Trend 1109 1112	new
+A5	Lesion-Size-TrendValue T17 new
+T18	Lesion-Characteristic 1124 1129	round
+T19	Lesion-Description 1130 1137	lesions
+T20	Lesion-Assertion 1305 1307	no
+A6	Lesion-AssertionValue T20 absent
+T21	Lesion-Size-Trend 1308 1311	new
+A7	Lesion-Size-TrendValue T21 new
+T22	Lesion-Description 1312 1332	metastasis-suspected
+T23	Lesion-Description 1333 1340	lesions
+E16	Lesion-Description:T23
+T24	Medical-Assertion 1345 1347	no
+A8	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1349 1365	new signs of CHF
+T26	Medical-Problem 1369 1395	acute pulmonary infections
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14 has-Lesion-Size-Trend:T15
+E14	Lesion-Description:T19 has-Lesion-Assertion:T16 has-Lesion-Size-Trend:T17 has-Lesion-Characteristic:T18
+E15	Lesion-Description:T22 has-Lesion-Assertion:T20 has-Lesion-Size-Trend:T21
+E17	Medical-Problem:T25 has-Medical-Assertion:T24
+E18	Medical-Problem:T26 has-Medical-Assertion:T24

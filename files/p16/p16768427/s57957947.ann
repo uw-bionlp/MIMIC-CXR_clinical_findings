@@ -1,0 +1,33 @@
+T1	Lesion-Count 441 442	2
+T2	Lesion-Size 443 448	small
+T3	Lesion-Anatomy 449 459	right lung
+T4	Lesion-Description 460 467	nodules
+T5	Lesion-Anatomy 475 510;512 522	level of the third anterior rib and interspace
+T6	Lesion-Anatomy 665 668	rib
+T7	Lesion-Description 669 676	lesions
+T8	Medical-Problem 681 699	pleural thickening
+E8	Medical-Problem:T8
+T9	Medical-Assertion 726 737	no findings
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 742 751	pneumonia
+T11	Medical-Problem 753 768	pulmonary edema
+T12	Medical-Problem 773 789	pleural effusion
+T13	Medical-Assertion 813 815	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 817 829	pneumothorax
+T15	Medical-Assertion 848 858	To suggest
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 859 868	pneumonia
+T17	Medical-Assertion 905 907	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 908 920	pneumothorax
+T19	Medical-Problem 925 941	pleural effusion
+E4	Lesion-Description:T4 has-Lesion-Count:T1 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T5
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T17

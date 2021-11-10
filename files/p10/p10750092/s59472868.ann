@@ -1,0 +1,21 @@
+T1	Medical-Anatomy 344 349	lungs
+T2	Medical-Assertion 378 380	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 381 393	pneumothorax
+T4	Medical-Problem 397 413	pleural effusion
+T5	Medical-Anatomy 468 488	mediastinal contours
+T6	Medical-Problem 506 520	aortic ectasia
+T7	Medical-Problem 534 549	healed fracture
+T8	Medical-Anatomy 557 583;585 588	posterolateral right fifth rib
+T9	Medical-Problem 683 712	mitral annular calcifications
+E8	Medical-Problem:T9
+T10	Medical-Problem 832 846	Hyperexpansion
+E9	Medical-Problem:T10
+T11	Medical-Assertion 853 855	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 856 879	acute chest abnormality
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

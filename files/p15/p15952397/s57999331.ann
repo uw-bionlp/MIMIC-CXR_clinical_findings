@@ -1,0 +1,41 @@
+T1	Medical-Problem 223 247;249 282	Central vascular appears  engorged with airspace opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 335 350	volume overload
+E2	Medical-Problem:T2
+T3	Medical-Problem 355 376	early pulmonary edema
+E3	Medical-Problem:T3
+T4	Medical-Problem 380 388	Blunting
+T5	Medical-Anatomy 396 401;403 422	right  costophrenic angle
+T6	Medical-Assertion 423 431	suggests
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 432 460	right small pleural effusion
+T8	Medical-Assertion 472 474	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 477 489	pneumothorax
+T10	Medical-Problem 843 863	Diffuse interstitial
+E8	Medical-Problem:T10
+T11	Medical-Problem 864 875	abnormality
+T12	Medical-Problem 889 909	vascular engorgement
+T13	Medical-Anatomy 918 929	upper lobes
+T14	Medical-Assertion 934 942	probably
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 943 963	mild pulmonary edema
+T16	Medical-Problem 1004 1017	consolidation
+T17	Medical-Anatomy 1025 1040	right lung base
+T18	Medical-Assertion 1069 1077	probably
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1078 1087	pneumonia
+T20	Medical-Problem 1128 1144	pleural effusion
+E16	Medical-Problem:T20
+T21	Medical-Assertion 1148 1150	No
+A5	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1151 1163	pneumothorax
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T13
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E17	Medical-Problem:T22 has-Medical-Assertion:T21

@@ -1,0 +1,28 @@
+T1	Medical-Problem 255 286	subtle increased patchy opacity
+T2	Medical-Anatomy 307 330	right mid-to-lower lung
+T3	Medical-Problem 359 370	atelectasis
+T4	Medical-Problem 372 396	underlying consolidation
+T5	Medical-Assertion 400 403;405 413	not excluded
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 452 454	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 455 471	pleural effusion
+T8	Medical-Problem 476 488	pneumothorax
+T9	Medical-Problem 503 540	cardiac silhouette is mildly enlarged
+E7	Medical-Problem:T9
+T10	Medical-Problem 547 552;554 570	aorta remains tortuous
+E8	Medical-Problem:T10
+T11	Medical-Problem 648 669	Slight patchy opacity
+T12	Medical-Anatomy 690 713	right mid-to-lower lung
+T13	Medical-Assertion 715 730	could be due to
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 731 742	atelectasis
+T15	Medical-Problem 750 759	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 280 285	lungs
+T2	Medical-Problem 290 310	mildly hyperinflated
+T3	Medical-Problem 314 340	Pleuroparenchymal scarring
+T4	Medical-Anatomy 348 381	apices, greater on the right side
+T5	Lesion-Description 388 395	nodular
+E5	Lesion-Description:T5
+T6	Lesion-Description 396 405	opacities
+T7	Lesion-Anatomy 413 453	anterior segment of the right upper lobe
+T8	Lesion-Description 507 514	nodular
+E8	Lesion-Description:T8
+T9	Lesion-Description 515 524	opacities
+T10	Lesion-Anatomy 532 540;542 546	left mid lung
+T11	Medical-Problem 560 583	new ill-defined opacity
+T12	Medical-Anatomy 591 612	left perihilar region
+T13	Medical-Assertion 677 679	no
+A1	Medical-AssertionValue T13 absent
+T14	Medical-Problem 680 692	pneumothorax
+T15	Medical-Problem 697 713	pleural effusion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T7
+E9	Lesion-Description:T9 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T15 has-Medical-Assertion:T13

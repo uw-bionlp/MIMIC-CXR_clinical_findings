@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 575 584;586 597	pulmonary vasculature
+T2	Medical-Problem 606 615	distended
+T3	Medical-Problem 633 657	temporary fluid overload
+T4	Medical-Assertion 670 681	no evidence
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 685 715	interstitial or alveolar edema
+T6	Medical-Anatomy 724 739;741 748	lateral pleural sinuses
+T7	Medical-Assertion 760 762	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 763 775	pneumothorax
+T9	Medical-Anatomy 783 794	apical area
+T10	Medical-Assertion 799 810	No evidence
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 814 866	new acute discrete pulmonary parenchymal infiltrates
+T12	Medical-Problem 884 920	Prominent pulmonary vascular pattern
+E9	Medical-Problem:T12
+T13	Medical-Problem 937 942;944 952	fluid overload
+E10	Medical-Problem:T13
+T14	Medical-Assertion 958 969	no evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 973 988	cardiac failure
+T16	Medical-Problem 993 1013	pulmonary congestion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14

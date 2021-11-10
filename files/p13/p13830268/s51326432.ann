@@ -1,0 +1,25 @@
+T1	Medical-Assertion 216 223	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 224 240	pleural effusion
+T3	Medical-Problem 242 261	focal consolidation
+T4	Medical-Problem 265 277	pneumothorax
+T5	Lesion-Size 359 363	5 mm
+T6	Lesion-Characteristic 365 374	calcified
+T7	Lesion-Anatomy 375 387	retrocardiac
+T8	Lesion-Description 388 403	nodular opacity
+T9	Lesion-Size 425 430	small
+T10	Lesion-Characteristic 431 440	calcified
+T11	Lesion-Description 442 451	granuloma
+T12	Medical-Assertion 462 473	no evidence
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 477 492	pulmonary edema
+T14	Medical-Assertion 517 528	No evidence
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 532 561	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E7	Lesion-Description:T8 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T7 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

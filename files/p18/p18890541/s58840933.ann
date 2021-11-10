@@ -1,0 +1,47 @@
+T1	Medical-Anatomy 236 247	right hilum
+T2	Medical-Problem 258 267;269 276	increased density
+T3	Medical-Problem 304 311	opacity
+T4	Medical-Anatomy 326 344;346 358	upper mid thoracic spine on the
+T5	Medical-Assertion 397 411	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 412 421	pneumonia
+T7	Medical-Anatomy 430 470	superior segment of the right lower lobe
+T8	Lesion-Assertion 475 483	probable
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Characteristic 484 494	associated
+T10	Lesion-Description 496 506	adenopathy
+T11	Medical-Assertion 579 581	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 582 594	pneumothorax
+T13	Medical-Assertion 597 599	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 600 619	vascular congestion
+T15	Medical-Problem 621 626	edema
+T16	Medical-Problem 630 647	pleural effusions
+T17	Medical-Problem 677 700	right hilar abnormality
+E13	Medical-Problem:T17
+T18	Medical-Problem 791 810	Right hilar opacity
+T19	Medical-Assertion 811 825	concerning for
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 826 835	pneumonia
+T21	Medical-Anatomy 843 866;868 884	superior segment of the right lower lobe
+T22	Lesion-Characteristic 890 898	probable
+T23	Lesion-Characteristic 899 909	associated
+T24	Lesion-Description 910 920	adenopathy
+T25	Medical-Problem 1109 1135	post-obstructive pneumonia
+E20	Medical-Problem:T25
+T26	Lesion-Characteristic 1145 1156	obstructing
+T27	Lesion-Anatomy 1174 1179	hilar
+T28	Lesion-Description 1180 1191	mass lesion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T13
+E14	Medical-Problem:T18 has-Medical-Anatomy:T21
+E15	Medical-Problem:T20 has-Medical-Assertion:T19 has-Medical-Anatomy:T21
+E19	Lesion-Description:T24 has-Lesion-Characteristic:T22 has-Lesion-Characteristic:T23
+E23	Lesion-Description:T28 has-Lesion-Characteristic:T26 has-Lesion-Anatomy:T27

@@ -1,0 +1,21 @@
+T1	Lesion-Description 463 467	mass
+T2	Lesion-Anatomy 483 512	right upper lobe lateral area
+T3	Medical-Problem 651 677	increased pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 700 727	right lateral pleural sinus
+T5	Medical-Problem 732 773;775 785	obliterates the contours of the diaphragm completely
+T6	Medical-Problem 792 800	effusion
+T7	Medical-Anatomy 828 852;854 874	mid portion of the right posterior chest wall
+T8	Medical-Assertion 916 918	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 919 926;928 936	pleural effusion
+T10	Medical-Problem 940 952	pneumothorax
+T11	Medical-Problem 984 1014	Increasing pleural effusion on
+E10	Medical-Problem:T11
+T12	Medical-Problem 1120 1127	pleural
+E11	Medical-Problem:T12
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8

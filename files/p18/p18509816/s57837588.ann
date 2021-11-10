@@ -1,0 +1,27 @@
+T1	Medical-Problem 166 205	small to moderate left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 222 230;232 255	adjacent left lower lobe opacity
+E2	Medical-Problem:T2
+T3	Medical-Problem 257 277	Mild streaky opacity
+T4	Medical-Anatomy 285 299	righ lung base
+T5	Medical-Assertion 317 319	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 320 342	right pleural effusion
+T7	Medical-Problem 346 358	pneumothorax
+T8	Medical-Problem 431 475	Small to moderate size left pleural effusion
+E7	Medical-Problem:T8
+T9	Medical-Problem 481 494;496 514	adjacent left lower lobe opacity
+E8	Medical-Problem:T9
+T10	Medical-Assertion 516 524	possibly
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 525 548	compressive atelectasis
+T12	Medical-Problem 553 562	pneumonia
+T13	Medical-Assertion 566 569;571 579	not excluded
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 581 611	Mild right basilar atelectasis
+E11	Medical-Problem:T14
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10 has-Medical-Assertion:T13

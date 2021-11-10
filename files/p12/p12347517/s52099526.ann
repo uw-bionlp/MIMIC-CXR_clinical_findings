@@ -1,0 +1,46 @@
+T1	Medical-Anatomy 328 338	Heart size
+T2	Medical-Assertion 342 345	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 347 355	enlarged
+T4	Medical-Problem 409 423;425 444	unchanged left mediastinal opacity
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 452 475	region of the AP window
+T6	Lesion-Characteristic 499 526	chronic soft tissue density
+T7	Lesion-Description 527 533	lesion
+T8	Medical-Problem 548 562	Bronchiectasis
+T9	Medical-Anatomy 575 599	left upper lobe medially
+T10	Medical-Problem 626 642	cystic lucencies
+T11	Lesion-Characteristic 662 676	multi-septated
+T12	Lesion-Description 677 683	lesion
+T13	Medical-Assertion 737 744	without
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 745 768	new focal consolidation
+T15	Medical-Assertion 771 773	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 774 790	pleural effusion
+T17	Medical-Problem 795 807	pneumothorax
+T18	Medical-Assertion 890 892	no
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 893 920	acute osseous abnormalities
+T20	Medical-Problem 941 964	Similar chronic changes
+T21	Medical-Anatomy 976 1012;1014 1020	left upper lobe and left mediastinal region
+T22	Medical-Assertion 1050 1072	potentially reflective
+A5	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1076 1091	prior infection
+T24	Medical-Problem 1098 1122	congenital cystic lesion
+T25	Medical-Assertion 1125 1127	No
+A6	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1128 1161	new acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T22
+E19	Medical-Problem:T24 has-Medical-Assertion:T22
+E20	Medical-Problem:T26 has-Medical-Assertion:T25

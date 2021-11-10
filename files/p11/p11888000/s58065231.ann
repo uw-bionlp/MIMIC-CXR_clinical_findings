@@ -1,0 +1,16 @@
+T1	Medical-Problem 120 139	portal hypertension
+E1	Medical-Problem:T1
+T2	Medical-Assertion 236 238	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 239 255	pleural effusion
+T4	Medical-Problem 260 272	pneumothorax
+T5	Lesion-Size 275 279	Tiny
+T6	Lesion-Anatomy 280 284	lung
+T7	Lesion-Description 285 292	nodules
+T8	Medical-Assertion 385 396	no evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 400 409	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

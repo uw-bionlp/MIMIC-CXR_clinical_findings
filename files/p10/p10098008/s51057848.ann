@@ -1,0 +1,18 @@
+T1	Medical-Problem 301 328	large left pleural effusion
+T2	Medical-Anatomy 341 371;373 378	hemithorax to the level of the hilum
+T3	Medical-Problem 437 451;453 473	indistinctness of pulmonary vessels
+E3	Medical-Problem:T3
+T4	Medical-Assertion 474 487	could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 488 527	some elevated pulmonary venous pressure
+T6	Medical-Problem 531 552	Minimal opacification
+T7	Medical-Anatomy 560 570	right base
+T8	Medical-Assertion 571 586	could represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 587 601	small effusion
+T10	Medical-Problem 608 631	compressive atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

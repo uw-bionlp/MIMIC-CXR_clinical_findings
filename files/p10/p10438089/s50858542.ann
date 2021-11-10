@@ -1,0 +1,31 @@
+T1	Medical-Assertion 126 137	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 141 153	pneumothorax
+T3	Medical-Problem 156 169	Opacification
+T4	Medical-Anatomy 177 181;183 195	left  hemi thorax
+T5	Medical-Problem 233 256	worsening opacification
+T6	Medical-Anatomy 266 282	right upper lobe
+T7	Medical-Assertion 284 292	possibly
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 293 313	evolving volume loss
+T9	Medical-Problem 733 752	lower lobe collapse
+E7	Medical-Problem:T9
+T10	Medical-Problem 781 796	new pleural air
+E8	Medical-Problem:T10
+T11	Medical-Problem 811 844	some of previous nasal hemothorax
+E9	Medical-Problem:T11
+T12	Medical-Problem 849 866	New opacification
+T13	Medical-Anatomy 867 883	right upper lobe
+T14	Medical-Assertion 884 892	could be
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 893 923	developing upper lobe collapse
+T16	Medical-Problem 928 938	aspiration
+T17	Medical-Problem 957 972	pulmonary edema
+E14	Medical-Problem:T17
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

@@ -1,0 +1,22 @@
+T1	Medical-Problem 235 250;252 269	small bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Assertion 272 274	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 275 295	focal consolidations
+T4	Medical-Problem 299 311	pneumothorax
+T5	Medical-Anatomy 318 323	lungs
+T6	Medical-Problem 329 342	hyperinflated
+T7	Medical-Assertion 347 358	may reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 359 378	some degree of COPD
+T9	Lesion-Anatomy 381 390	Bilateral
+T10	Lesion-Characteristic 391 400	symmetric
+T11	Lesion-Description 402 419	nodular opacities
+T12	Lesion-Anatomy 434 445	lower chest
+T13	Medical-Assertion 524 526	No
+A3	Medical-AssertionValue T13 absent
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12

@@ -1,0 +1,21 @@
+T1	Medical-Problem 273 287	subtle opacity
+T2	Medical-Anatomy 293 322;324 339	posterior lung base, possibly left lower lobe
+T3	Medical-Assertion 361 363	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 364 394	additional focal consolidation
+T5	Medical-Assertion 406 408	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 409 425	pleural effusion
+T7	Medical-Problem 429 441	pneumothorax
+T8	Medical-Problem 548 585	Subtle patchy left lower lobe opacity
+E6	Medical-Problem:T8
+T9	Medical-Assertion 586 601	could be due to
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 602 611	infection
+T11	Medical-Problem 615 625	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

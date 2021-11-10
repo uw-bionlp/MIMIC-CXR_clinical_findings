@@ -1,0 +1,44 @@
+T1	Lesion-Size 33 42	4 to 5 mm
+T2	Lesion-Anatomy 43 56	left mid lung
+T3	Lesion-Description 57 64	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 65 72	opacity
+T5	Lesion-Characteristic 123 133	underlying
+T6	Lesion-Anatomy 134 138	pulm
+T7	Lesion-Description 139 145	nodule
+T8	Lesion-Assertion 146 158	not excluded
+A1	Lesion-AssertionValue T8 possible
+T9	Medical-Assertion 236 238	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 239 256	pneumomediastinum
+T11	Medical-Problem 628 638;640 642	subtle 4-5 mm
+T12	Lesion-Characteristic 643 651	somewhat
+T13	Lesion-Description 660 667	opacity
+T14	Medical-Anatomy 688 692	left
+T15	Lesion-Characteristic 732 742	underlying
+T16	Lesion-Anatomy 743 752	pulmonary
+T17	Lesion-Description 753 759	nodule
+T18	Lesion-Assertion 763 775	not excluded
+A3	Lesion-AssertionValue T18 possible
+T19	Medical-Assertion 814 816	no
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 817 836	focal consolidation
+T21	Medical-Problem 838 854	pleural effusion
+T22	Medical-Problem 860 872	pneumothorax
+T23	Medical-Problem 953 980	Subtle 4-5 mm focal opacity
+T24	Medical-Anatomy 1001 1009	left mid
+T25	Lesion-Characteristic 1074 1084	underlying
+T26	Lesion-Description 1096 1102	nodule
+T27	Medical-Assertion 1106 1118	not excluded
+A5	Medical-AssertionValue T27 possible
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6 has-Lesion-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T14
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T12
+E15	Lesion-Description:T17 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T16 has-Lesion-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T19
+E19	Medical-Problem:T23 has-Medical-Anatomy:T24
+E22	Lesion-Description:T26 has-Lesion-Characteristic:T25

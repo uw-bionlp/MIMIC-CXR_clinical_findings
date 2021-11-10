@@ -1,0 +1,16 @@
+T1	Medical-Assertion 329 331	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 332 349	pleural effusions
+T3	Medical-Anatomy 357 372	lung parenchyma
+T4	Medical-Problem 381 407	slight increase in density
+T5	Medical-Anatomy 415 425	lung bases
+T6	Medical-Assertion 444 459	might be caused
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 463 482	dense breast tissue
+T8	Lesion-Description 487 493	nodule
+T9	Lesion-Anatomy 515 556	lower anterior part of the sixth left rib
+T10	Lesion-Characteristic 560 578;580 586	likely caused by a vessel
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T6
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10

@@ -1,0 +1,24 @@
+T1	Medical-Assertion 378 380	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 381 397	pleural effusion
+T3	Medical-Problem 402 414	pneumothorax
+T4	Medical-Assertion 434 436	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 437 464	acute osseous abnormalities
+T6	Lesion-Characteristic 467 474	Rounded
+T7	Lesion-Size 475 479	6 mm
+T8	Lesion-Description 481 488	density
+T9	Lesion-Anatomy 507 558;560 580	right upper lung field between the right fourth and fifth posterior ribs
+T10	Lesion-Assertion 587 590	may
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 596 605	calcified
+T12	Lesion-Description 606 615	granuloma
+T13	Medical-Assertion 675 677	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 678 711	acute cardiopulmonary abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9
+E9	Lesion-Description:T12 has-Lesion-Anatomy:T9 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,30 @@
+T1	Medical-Assertion 33 44	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 48 57	pneumonia
+T3	Medical-Problem 60 73	Reticulations
+T4	Medical-Anatomy 87 109	lung bases bilaterally
+T5	Medical-Assertion 112 125	may represent
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 126 146	mild volume overload
+T7	Medical-Problem 677 681;683 696	Mild reticulations
+T8	Medical-Anatomy 714 736	lung bases bilaterally
+T9	Medical-Assertion 748 750	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 752 764	pneumothorax
+T11	Medical-Problem 766 774	fracture
+T12	Medical-Problem 778 789	dislocation
+T13	Medical-Assertion 863 874	No evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 890 909	Reticular opacities
+E10	Medical-Problem:T14
+T15	Medical-Assertion 955 968	may represent
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 969 989	mild volume overload
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

@@ -1,0 +1,29 @@
+T1	Medical-Problem 298 320	aorta remains tortuous
+E1	Medical-Problem:T1
+T2	Medical-Problem 414 433	minimal atelectasis
+T3	Medical-Anatomy 441 455	left lung base
+T4	Medical-Anatomy 457 462	lungs
+T5	Medical-Assertion 473 480	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 482 501	focal consolidation
+T7	Lesion-Characteristic 504 513	Calcified
+T8	Lesion-Description 514 523	granuloma
+T9	Lesion-Anatomy 531 546	left upper lobe
+T10	Lesion-Size-Trend 550 559	unchanged
+A2	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 562 564	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 565 581	pleural effusion
+T13	Medical-Problem 585 597	pneumothorax
+T14	Medical-Problem 618 637;639 659	multilevel moderate degenerative changes
+T15	Medical-Anatomy 671 685	thoracic spine
+T16	Medical-Assertion 705 729	No radiographic evidence
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 734 743	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

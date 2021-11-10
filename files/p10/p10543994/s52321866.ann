@@ -1,0 +1,20 @@
+T1	Medical-Problem 211 223	cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 243 272	pulmonary vascular congestion
+T3	Medical-Problem 277 321;323 343	worsening asymmetrical combined alveolar and interstitial pattern
+T4	Medical-Anatomy 377 396;398 402	right lung than the left
+T5	Medical-Assertion 422 433	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 434 452	asymmetrical edema
+T7	Medical-Assertion 495 520	may be helpful to exclude
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 521 543;545 552	secondary superimposed process
+T9	Medical-Anatomy 560 570	right lung
+T10	Medical-Problem 579 588	infection
+T11	Medical-Problem 590 613	Small pleural effusions
+E9	Medical-Problem:T11
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Anatomy:T9

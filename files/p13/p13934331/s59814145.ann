@@ -1,0 +1,30 @@
+T1	Medical-Anatomy 276 281	Lungs
+T2	Medical-Problem 286 299	hyperinflated
+T3	Medical-Problem 305 325	flattened diaphragms
+T4	Medical-Problem 330 351	increased AP diameter
+T5	Medical-Problem 370 374	COPD
+T6	Medical-Problem 376 425	Left greater than right apical pleural thickening
+E6	Medical-Problem:T6
+T7	Medical-Assertion 442 444	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 445 468	new focal consolidation
+T9	Medical-Assertion 469 483	concerning for
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 484 493	pneumonia
+T11	Medical-Problem 495 500;502 521	Small bilateral effusions
+E9	Medical-Problem:T11
+T12	Medical-Problem 542 566	pleural fluid thickening
+T13	Medical-Anatomy 571 576;578 591	right major fissure
+T14	Medical-Problem 656 679	Chronic changes of COPD
+E12	Medical-Problem:T14
+T15	Medical-Assertion 680 696	without evidence
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 700 713	new pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T1
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

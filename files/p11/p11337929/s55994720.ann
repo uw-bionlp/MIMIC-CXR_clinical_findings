@@ -1,0 +1,22 @@
+T1	Medical-Anatomy 243 250	Cardiac
+T2	Medical-Assertion 304 317	suggestive of
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 321 341	pericardial effusion
+T4	Medical-Problem 406 432	minimal linear atelectasis
+T5	Medical-Anatomy 440 445	bases
+T6	Medical-Assertion 446 448	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 449 465	pleural effusion
+T8	Medical-Problem 470 482	pneumothorax
+T9	Medical-Problem 506 546	Globular and enlarged cardiac silhouette
+T10	Medical-Assertion 550 564	suspicious for
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 570 584	not diagnostic
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 592 612	pericardial effusion
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T10 has-Medical-Assertion:T11

@@ -1,0 +1,32 @@
+T1	Medical-Problem 203 230	rounded parenchymal opacity
+T2	Medical-Anatomy 238 253	left upper lung
+T3	Medical-Problem 260 279	opacity has contact
+T4	Medical-Anatomy 288 294	pleura
+T5	Medical-Problem 327 346;348 377	opacity is slightly less dense than the periphery
+E5	Medical-Problem:T5
+T6	Medical-Assertion 379 401	potentially suggesting
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 402 420	central cavitation
+T8	Medical-Assertion 424 437	Theoretically
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 444 454	infectious
+T10	Medical-Assertion 484 492	possible
+A3	Medical-AssertionValue T10 possible
+T11	Lesion-Description 578 586	neoplasm
+E8	Lesion-Description:T11
+T12	Medical-Problem 591 607	Mild atelectasis
+T13	Medical-Anatomy 615 629	left lung base
+T14	Medical-Assertion 685 687	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 688 705	pleural effusions
+T16	Lesion-Assertion 707 718	no evidence
+A5	Lesion-AssertionValue T16 absent
+T17	Lesion-Anatomy 722 727	hilar
+T18	Lesion-Description 728 738	adenopathy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Lesion-Description:T18 has-Lesion-Assertion:T16 has-Lesion-Anatomy:T17

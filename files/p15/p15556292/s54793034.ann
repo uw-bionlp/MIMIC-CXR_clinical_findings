@@ -1,0 +1,46 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 74	definite acute cardiopulmonary process
+T3	Medical-Problem 77 92	Chronic changes
+E2	Medical-Problem:T3
+T4	Lesion-Description 114 129	Nodular opacity
+T5	Lesion-Anatomy 150 163	left mid lung
+T6	Medical-Problem 584 635	hyperinflation with increased interstitial markings
+T7	Medical-Anatomy 636 650;652 657	throughout the lungs
+T8	Medical-Assertion 668 686	most suggestive of
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 689 717	chronic interstitial process
+T10	Medical-Problem 734 749	basilar opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 767 780	likely due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 781 789	scarring
+T13	Medical-Problem 795 803;805 826	adjacent emphysematous changes
+T14	Lesion-Description 829 844	Nodular opacity
+E11	Lesion-Description:T14
+T15	Medical-Problem 912 917	Enlar
+E12	Medical-Problem:T15
+T16	Medical-Problem 926 948	silhouette is enlarged
+E13	Medical-Problem:T16
+T17	Medical-Assertion 962 964	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 965 970	acute
+E14	Medical-Problem:T18
+T19	Medical-Problem 971 992	osseous abnormalities
+T20	Medical-Assertion 1013 1015	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1016 1024	definite
+E16	Medical-Problem:T21
+T22	Medical-Problem 1025 1054	acute cardiopulmonary process
+T23	Medical-Problem 1057 1064	Chronic
+E18	Medical-Problem:T23
+T24	Lesion-Description 1093 1108	Nodular opacity
+E19	Lesion-Description:T24
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E15	Medical-Problem:T19 has-Medical-Assertion:T17
+E17	Medical-Problem:T22 has-Medical-Assertion:T20

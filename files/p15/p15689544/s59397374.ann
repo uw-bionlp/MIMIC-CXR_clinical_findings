@@ -1,0 +1,19 @@
+T1	Lesion-Size 179 184	Large
+T2	Lesion-Anatomy 185 195	left hilar
+T3	Lesion-Description 196 211	nodular opacity
+T4	Medical-Anatomy 277 282	lungs
+T5	Medical-Problem 328 350	minimal linear opacity
+T6	Medical-Anatomy 358 368	right base
+T7	Medical-Problem 411 442	minimal right basal atelectasis
+E7	Medical-Problem:T7
+T8	Medical-Assertion 454 456	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 457 473	pleural effusion
+T10	Medical-Problem 478 490	pneumothorax
+T11	Medical-Problem 523 537	Bony deformity
+T12	Medical-Anatomy 545 549;551 571	left posterior chest wall
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12

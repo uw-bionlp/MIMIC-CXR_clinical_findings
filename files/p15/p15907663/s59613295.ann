@@ -1,0 +1,31 @@
+T1	Medical-Assertion 280 282	no
+A1	Medical-AssertionValue T1 absent
+T2	Lesion-Anatomy 283 292	pulmonary
+T3	Lesion-Description 293 299	nodule
+T4	Lesion-Description 301 305	mass
+T5	Lesion-Anatomy 307 312	hilar
+T6	Lesion-Description 313 328	lymphadenopathy
+T7	Medical-Problem 334 350	pleural effusion
+T8	Medical-Problem 353 380	Enlarged pulmonary arteries
+E7	Medical-Problem:T8
+T9	Medical-Assertion 405 407	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 409 428	focal consolidation
+T11	Medical-Problem 430 449	vascular congestion
+T12	Medical-Problem 454 466	pneumothorax
+T13	Medical-Problem 469 479;481 501	Multilevel degenerative changes
+T14	Medical-Problem 506 529	compression deformities
+T15	Medical-Anatomy 537 551	thoracic spine
+T16	Lesion-Assertion 653 677	No radiographic evidence
+A3	Lesion-AssertionValue T16 absent
+T17	Lesion-Description 681 691	malignancy
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T2
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T1
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Lesion-Description:T17 has-Lesion-Assertion:T16

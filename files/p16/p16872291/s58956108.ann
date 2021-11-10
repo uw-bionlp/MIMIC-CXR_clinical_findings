@@ -1,0 +1,22 @@
+T1	Medical-Anatomy 348 361	left mid lung
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 374 383;385 403	suspected pleural effusions,
+E2	Medical-Problem:T2
+T3	Medical-Problem 465 483	Hazy opacification
+T4	Medical-Anatomy 487 496	each lung
+T5	Medical-Assertion 497 505	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 506 521	pulmonary edema
+T7	Medical-Problem 524 543	Vague opacification
+T8	Medical-Anatomy 563 585	lower than upper lungs
+T9	Medical-Problem 600 621;623 627	coinciding etiologies such
+T10	Medical-Problem 631 650	recent pneumonia or
+E9	Medical-Problem:T10
+T11	Medical-Problem 651 661	aspiration
+T12	Medical-Assertion 666 678	not excluded
+A2	Medical-AssertionValue T12 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Assertion:T12
+E10	Medical-Problem:T11 has-Medical-Assertion:T12

@@ -1,0 +1,25 @@
+T1	Medical-Assertion 347 358	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 362 370;372 383	catheter malfunction
+T3	Medical-Anatomy 388 393	Lungs
+E2	Medical-Anatomy:T3
+T4	Medical-Problem 424 443	Streaky atelectasis
+T5	Medical-Anatomy 451 465	right mid lung
+T6	Medical-Assertion 491 493	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 494 510	pleural effusion
+T8	Medical-Problem 512 524	pneumothorax
+T9	Medical-Problem 528 542;544 557	focal airspace consolidation
+T10	Medical-Assertion 558 571	worrisome for
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 572 581	pneumonia
+T12	Lesion-Size 586 591	small
+T13	Lesion-Anatomy 592 608	right lower lobe
+T14	Lesion-Description 609 615	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T6 has-Medical-Assertion:T10
+E11	Lesion-Description:T14 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T13

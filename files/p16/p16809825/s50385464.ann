@@ -1,0 +1,46 @@
+T1	Lesion-Characteristic 260 287	Rounded homogeneous density
+T2	Lesion-Size 298 313	0.5 cm x 0.5 cm
+T3	Lesion-Anatomy 321 325;327 337	left upper lobe
+T4	Lesion-Characteristic 343 352	calcified
+T5	Lesion-Description 353 362	granuloma
+T6	Lesion-Size 392 404;406 408	1.5 cm x 1.5 cm
+T7	Lesion-Characteristic 409 416	rounded
+T8	Lesion-Description 417 424	opacity
+T9	Lesion-Anatomy 425 435	projecting
+T10	Lesion-Anatomy 436 463	superior to the right hilus
+T11	Lesion-Assertion 470 483	may represent
+A1	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 487 493	nodule
+T13	Lesion-Description 497 507	lymph node
+T14	Medical-Assertion 510 512	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 513 537	additional focal opacity
+T16	Medical-Problem 539 551	pneumothorax
+T17	Medical-Problem 553 560;562 570	pleural effusion
+T18	Medical-Problem 574 589	pulmonary edema
+T19	Medical-Assertion 653 655	No
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 656 672	bony abnormality
+T21	Lesion-Characteristic 690 699	Calcified
+T22	Lesion-Description 700 709	granuloma
+T23	Medical-Problem 715 739	adjacent rounded opacity
+E20	Medical-Problem:T23
+T24	Lesion-Assertion 745 748;750 759	may represent
+A4	Lesion-AssertionValue T24 possible
+T25	Lesion-Description 760 770	lymph node
+T26	Medical-Problem 802 814	tuberculosis
+E22	Medical-Problem:T26
+T27	Lesion-Anatomy 839 843	lung
+T28	Lesion-Description 844 850	nodule
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T1 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4
+E8	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T10
+E11	Lesion-Description:T12 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T10 has-Lesion-Assertion:T11
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T10 has-Lesion-Assertion:T11
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T14
+E16	Medical-Problem:T18 has-Medical-Assertion:T14
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E19	Lesion-Description:T22 has-Lesion-Characteristic:T21
+E21	Lesion-Description:T25 has-Lesion-Assertion:T24
+E24	Lesion-Description:T28 has-Lesion-Assertion:T24 has-Lesion-Anatomy:T27

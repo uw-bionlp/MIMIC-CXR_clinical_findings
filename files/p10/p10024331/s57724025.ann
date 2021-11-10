@@ -1,0 +1,42 @@
+T1	Medical-Problem 310 328	Leftward deviation
+T2	Medical-Anatomy 336 341;343 350	upper trachea
+T3	Lesion-Anatomy 363 376	right thyroid
+T4	Lesion-Description 377 383	nodule
+T5	Lesion-Size-Trend 391 400	unchanged
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Problem 402 419	Streaky opacities
+T7	Medical-Anatomy 428 438	lung bases
+T8	Medical-Assertion 458 473	likely reflects
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 474 492	chronic aspiration
+T10	Medical-Problem 498 506	scarring
+T11	Medical-Problem 523 531	blunting
+T12	Medical-Anatomy 539 564	right costophrenic sulcus
+T13	Medical-Assertion 623 638	likely reflects
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 639 646;648 658	pleural thickening
+T15	Medical-Assertion 661 663	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 664 687	new focal consolidation
+T17	Medical-Problem 689 705	pleural effusion
+T18	Medical-Problem 709 721	pneumothorax
+T19	Medical-Assertion 746 748	no
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 749 776	acute osseous abnormalities
+T21	Medical-Assertion 837 839	No
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 840 859	new focal opacities
+T23	Medical-Problem 872 881	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T15
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T23 has-Medical-Assertion:T21

@@ -1,0 +1,27 @@
+T1	Medical-Assertion 409 411	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 413 440	configurational abnormality
+T3	Medical-Anatomy 475 489	thoracic aorta
+T4	Medical-Problem 496 528	few semi-linear calcium deposits
+T5	Medical-Anatomy 536 565	wall at the level of the arch
+T6	Medical-Anatomy 573 594	pulmonary vasculature
+T7	Medical-Problem 602 611	congested
+T8	Medical-Assertion 625 636	no evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 640 645;647 681	acute or chronic parenchymal infiltrates
+T10	Medical-Problem 736 800	relatively low positioned diaphragms that are somewhat flattened
+E8	Medical-Problem:T10
+T11	Medical-Problem 817 853	slightly hypertranslucent lung bases
+E9	Medical-Problem:T11
+T12	Medical-Assertion 873 886	suggestive of
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 887 891	COPD
+T14	Medical-Problem 954 968;970 999	Unchanged mild degree of findings consistent
+E11	Medical-Problem:T14
+T15	Medical-Problem 1005 1009	COPD
+E12	Medical-Problem:T15
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,34 @@
+T1	Medical-Assertion 230 241	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 246 258	pneumothorax
+T3	Medical-Assertion 270 272	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 273 292	focal consolidation
+T5	Medical-Problem 377 400	mild pleural thickening
+T6	Medical-Anatomy 409 419	right apex
+T7	Medical-Assertion 422 424	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 425 441	pleural effusion
+T9	Lesion-Size 454 467	subcentimeter
+T10	Lesion-Characteristic 468 475	rounded
+T11	Lesion-Characteristic 477 484	calcied
+T12	Lesion-Description 485 491	nodule
+T13	Lesion-Anatomy 499 519	right mid hemithorax
+T14	Lesion-Assertion 521 527	likley
+A4	Lesion-AssertionValue T14 possible
+T15	Lesion-Characteristic 530 539	calcified
+T16	Lesion-Description 540 549	granuloma
+T17	Medical-Assertion 567 578	No evidence
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 582 594	pneumothorax
+T19	Medical-Assertion 597 599	No
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 600 627;629 636	other acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T12 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E12	Lesion-Description:T16 has-Lesion-Assertion:T14 has-Lesion-Characteristic:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

@@ -1,0 +1,28 @@
+T1	Medical-Assertion 376 378	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 379 402	left-sided pneumothorax
+T3	Medical-Assertion 406 414	Possible
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 415 448	small left-sided pleural effusion
+T5	Medical-Assertion 451 453	No
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 454 476	airspace consolidation
+T7	Lesion-Characteristic 481 491	suspicious
+T8	Lesion-Anatomy 492 501	pulmonary
+T9	Lesion-Description 502 509	nodules
+T10	Lesion-Description 513 519	masses
+T11	Medical-Problem 656 675	Spondylotic changes
+T12	Medical-Anatomy 683 704;706 711	cervical and thoracic spine
+T13	Medical-Problem 714 734	Degenerative changes
+T14	Medical-Anatomy 742 758	shoulder girdles
+T15	Medical-Assertion 829 831	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 832 845	complications
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E7	Lesion-Description:T10 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

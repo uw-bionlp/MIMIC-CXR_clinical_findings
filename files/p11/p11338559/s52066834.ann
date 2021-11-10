@@ -1,0 +1,45 @@
+T1	Medical-Assertion 269 271	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 272 275	CHF
+T3	Medical-Problem 277 293	focal infiltrate
+T4	Medical-Problem 298 306	effusion
+T5	Medical-Assertion 321 323	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 324 333;335 356	increased interstitial markings
+T7	Medical-Problem 370 401	diffuse interstitial infiltrate
+T8	Medical-Assertion 417 425	Possible
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 426 445	minimal atelectasis
+T10	Medical-Anatomy 453 467	left lung base
+T11	Medical-Problem 470 484;486 492	Mild unfolding of the
+T12	Medical-Anatomy 493 498	aorta
+T13	Lesion-Assertion 559 561	no
+A4	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 563 568	hilar
+T15	Lesion-Anatomy 572 583	mediastinal
+T16	Lesion-Description 584 599	lymphadenopathy
+T17	Medical-Problem 614 624	Prominence
+T18	Medical-Anatomy 632 637;639 664	right paratracheal soft tissues
+T19	Medical-Assertion 712 714	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 716 728	pneumothorax
+T21	Medical-Assertion 758 760	No
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 761 784	acute pulmonary process
+T23	Medical-Assertion 813 815	no
+A7	Medical-AssertionValue T23 absent
+T24	Medical-Problem 816 821;823 833	focal infiltrate
+T25	Medical-Problem 837 876	diffuse increased interstitial markings
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T24 has-Medical-Assertion:T23
+E18	Medical-Problem:T25 has-Medical-Assertion:T23

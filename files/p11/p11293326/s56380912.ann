@@ -1,0 +1,19 @@
+T1	Medical-Problem 509 543	small layering bilateral effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 545 568	Patchy airspace disease
+T3	Medical-Anatomy 576 580;582 593	both lower lobes
+T4	Medical-Assertion 646 660	concerning for
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 662 671	pneumonia
+T6	Medical-Problem 675 685	aspiration
+T7	Medical-Assertion 722 724	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 725 734;736 741	pulmonary edema
+T9	Medical-Assertion 743 745	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 746 758	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

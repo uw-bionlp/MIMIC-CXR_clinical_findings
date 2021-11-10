@@ -1,0 +1,40 @@
+T1	Lesion-Size 30 36	1.5 cm
+T2	Lesion-Characteristic 37 44	rounded
+T3	Lesion-Description 45 52	opacity
+T4	Lesion-Anatomy 67 96	right mid to upper hemithorax
+T5	Lesion-Assertion 104 107;109 119	may  represent
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Anatomy 122 131	pulmonary
+T7	Lesion-Description 132 138	nodule
+T8	Lesion-Size 458 464	1.5 cm
+T9	Lesion-Characteristic 465 472	rounded
+T10	Lesion-Description 473 480	opacity
+T11	Lesion-Anatomy 488 506;508 518	right mid to upper hemithorax
+T12	Lesion-Anatomy 568 577	pulmonary
+T13	Lesion-Description 578 584	nodule
+T14	Medical-Assertion 597 599	no
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 600 619	focal consolidation
+T16	Medical-Anatomy 627 632	lungs
+T17	Medical-Assertion 690 692	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 693 705	pneumothorax
+T19	Medical-Assertion 706 708	or
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 709 725	pleural effusion
+T21	Lesion-Size 743 749	1.5 cm
+E17	Lesion-Size:T21
+T22	Medical-Problem 750 765	rounded opacity
+T23	Medical-Anatomy 780 798;800 810	right mid to upper hemithorax
+T24	Medical-Problem 834 843	pulmonary
+E20	Medical-Problem:T24
+T25	Lesion-Description 844 850	nodule
+E21	Lesion-Description:T25
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E9	Lesion-Description:T10 has-Lesion-Size-Present:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T11
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17 has-Medical-Assertion:T19
+E16	Medical-Problem:T20 has-Medical-Assertion:T17 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Anatomy:T23

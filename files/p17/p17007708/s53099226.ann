@@ -1,0 +1,32 @@
+T1	Lesion-Characteristic 240 247	lobular
+T2	Lesion-Description 248 255	opacity
+T3	Lesion-Anatomy 277 310	lateral aspect of the right hilus
+T4	Medical-Problem 409 424	Mild lobulation
+T5	Medical-Anatomy 432 454;456 461	upper pole of the left hilus
+T6	Medical-Problem 466 474	fullness
+T7	Medical-Anatomy 482 526	right lower paratracheal station mediastinum
+T8	Lesion-Assertion 527 532	could
+A1	Lesion-AssertionValue T8 possible
+T9	Lesion-Description 544 566	lymph node enlargement
+T10	Medical-Problem 657 685	second region of abnormality
+T11	Medical-Anatomy 692 710;712 717	2 2 lower thoracic spine
+T12	Medical-Assertion 719 727	Could be
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 728 739	atelectasis
+T14	Lesion-Anatomy 783 788;790 794	right lung
+T15	Lesion-Description 795 801	lesion
+T16	Lesion-Description 811 815	mass
+T17	Medical-Problem 984 1001	Mild cardiomegaly
+E15	Medical-Problem:T17
+T18	Medical-Assertion 1035 1037	no
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1038 1054	pleural effusion
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Lesion-Description:T9 has-Lesion-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T14
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

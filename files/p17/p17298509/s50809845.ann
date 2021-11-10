@@ -1,0 +1,32 @@
+T1	Medical-Anatomy 392 397	lungs
+T2	Medical-Assertion 428 435	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 436 455	focal consolidation
+T4	Medical-Anatomy 458 477	Costophrenic angles
+T5	Medical-Assertion 504 517	likely due to
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 518 541	soft tissue attenuation
+T7	Medical-Problem 554 571	pleural effusions
+T8	Medical-Problem 629 653;655 673	Large, retrocardiac soft tissue abnormality
+E6	Medical-Problem:T8
+T9	Medical-Assertion 753 755	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 756 791	acute cardiopulmonary abnormalities
+T11	Medical-Problem 817 860	large, retrocardiac soft tissue abnormality
+E8	Medical-Problem:T11
+T12	Medical-Assertion 864 868;870 876	most likely
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 879 892	hiatal hernia
+T14	Lesion-Size 929 934	large
+T15	Lesion-Anatomy 936 941;943 953	lower esophageal
+T16	Lesion-Description 954 958	mass
+T17	Medical-Problem 962 996	descending thoracic aorta aneurysm
+E13	Medical-Problem:T17
+T18	Medical-Problem 1165 1201	retrocardiac soft tissue abnormality
+E14	Medical-Problem:T18
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Lesion-Description:T16 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T15

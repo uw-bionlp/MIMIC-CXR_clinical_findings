@@ -1,0 +1,40 @@
+T1	Medical-Problem 654 684	Atherosclerotic calcifications
+T2	Medical-Anatomy 693 704	aortic knob
+T3	Medical-Problem 742 767;769 774	pattern of mild pulmonary edema
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 790 795	Lungs
+T5	Medical-Problem 803 838	hyperinflated with linear opacities
+T6	Medical-Anatomy 847 857	lung bases
+T7	Medical-Assertion 858 883	most likely reflective of
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 884 895	atelectasis
+T9	Medical-Assertion 904 910	may be
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 911 916;918 945	small bilateral pleural effusions
+T11	Medical-Assertion 951 953	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 954 966	pneumothorax
+T13	Medical-Assertion 989 991	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 992 995;997 1016	new focal consolidation
+T15	Medical-Problem 1019 1050	Multilevel degenerative changes
+T16	Medical-Anatomy 1069 1083	thoracic spine
+T17	Medical-Problem 1104 1125	Bibasilar atelectasis
+E13	Medical-Problem:T17
+T18	Medical-Problem 1131 1164	trace bilateral pleural effusions
+E14	Medical-Problem:T18
+T19	Medical-Problem 1185 1205	mild pulmonary edema
+T20	Medical-Assertion 1206 1230	has essentially resolved
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Assertion 1233 1235	No
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1236 1245;1247 1260	new focal consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T20
+E16	Medical-Problem:T22 has-Medical-Assertion:T21

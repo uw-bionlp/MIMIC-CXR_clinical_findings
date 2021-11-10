@@ -1,0 +1,33 @@
+T1	Medical-Problem 199 216;218 226	somewhat improved aeration
+T2	Medical-Anatomy 234 243	left lung
+T3	Medical-Problem 248 261	dense opacity
+T4	Medical-Anatomy 285 293;295 310	left mid and upper zones
+T5	Medical-Problem 321 337	partial aeration
+T6	Medical-Problem 343 366	residual patchy opacity
+T7	Medical-Anatomy 374 392	left hemidiaphragm
+E7	Medical-Anatomy:T7
+T8	Medical-Assertion 420 422	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 423 444	definite pneumothorax
+T10	Medical-Problem 462 484	Subcutaneous emphysema
+E9	Medical-Problem:T10
+T11	Medical-Problem 551 567	some atelectasis
+T12	Medical-Anatomy 575 585	right base
+T13	Medical-Assertion 590 598	possible
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 599 606;608 616	minimal blunting
+T15	Medical-Anatomy 624 648	right costophrenic angle
+T16	Medical-Problem 780 799	Partial reexpansion
+T17	Medical-Anatomy 807 816	left lung
+T18	Medical-Assertion 819 827	Probable
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 828 841;843 856	elevated left hemidiaphragm
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

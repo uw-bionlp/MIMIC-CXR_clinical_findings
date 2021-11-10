@@ -1,0 +1,56 @@
+T1	Medical-Assertion 495 506	potentially
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 512 525	hiatal hernia
+T3	Medical-Problem 623 673	diffuse right greater than left alveolar opacities
+E2	Medical-Problem:T3
+T4	Medical-Assertion 675 680	which
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Assertion 681 694	may be due to
+A3	Medical-AssertionValue T5 possible
+T6	Medical-Problem 696 721	extensive pulmonary edema
+T7	Medical-Problem 723 743	pulmonary hemorrhage
+T8	Medical-Problem 745 754	contusion
+T9	Medical-Problem 764 773	infection
+T10	Medical-Anatomy 817 841	right costophrenic angle
+T11	Medical-Problem 845 852	blunted
+T12	Medical-Assertion 864 870	may be
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 874 901	underlying pleural effusion
+T14	Medical-Anatomy 948 959	aortic arch
+T15	Medical-Problem 963 972	calcified
+T16	Medical-Anatomy 1194 1198;1200 1216	left lower hemithorax
+T17	Medical-Anatomy 1243 1258	left lower lung
+T18	Medical-Assertion 1260 1278;1280 1295	alternatively this could be within
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1298 1311	hiatal hernia
+T20	Medical-Problem 1366 1388	inappropriate position
+E15	Medical-Problem:T20
+T21	Medical-Problem 1583 1646	Extensive, right greater than left pulmonary alveolar opacities
+E16	Medical-Problem:T21
+T22	Medical-Anatomy 1665 1686	perihilar regions but
+T23	Medical-Assertion 1713 1728	could be due to
+A6	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1730 1746	asymmetric edema
+T25	Medical-Problem 1748 1778	pulmonary hemorrhage/contusion
+T26	Medical-Problem 1818 1838	underlying infection
+T27	Medical-Assertion 1839 1851	not excluded
+A7	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1858 1866	Blunting
+T29	Medical-Anatomy 1874 1898	right costophrenic angle
+T30	Medical-Assertion 1899 1912	may be due to
+A8	Medical-AssertionValue T30 possible
+T31	Medical-Problem 1915 1931	pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T6 has-Medical-Assertion:T4 has-Medical-Assertion:T5
+E4	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T11 has-Medical-Anatomy:T10
+E9	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Anatomy:T14
+E14	Medical-Problem:T19 has-Medical-Anatomy:T16 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E18	Medical-Problem:T24 has-Medical-Anatomy:T22 has-Medical-Assertion:T23
+E19	Medical-Problem:T25 has-Medical-Assertion:T23
+E20	Medical-Problem:T26 has-Medical-Assertion:T23 has-Medical-Assertion:T27
+E21	Medical-Problem:T28 has-Medical-Anatomy:T29
+E23	Medical-Problem:T31 has-Medical-Anatomy:T29 has-Medical-Assertion:T30

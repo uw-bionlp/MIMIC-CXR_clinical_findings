@@ -1,0 +1,40 @@
+T1	Medical-Problem 266 302	extensive nodular pleural thickening
+T2	Medical-Anatomy 317 327	right lung
+T3	Medical-Problem 374 398	Persistent opacification
+T4	Medical-Anatomy 418 423;425 434	right lung base
+T5	Lesion-Count 457 465	Multiple
+T6	Lesion-Description 466 483	nodular opacities
+T7	Lesion-Anatomy 492 501	left lung
+T8	Medical-Problem 600 617	left base opacity
+E8	Medical-Problem:T8
+T9	Medical-Problem 628 645	new opacification
+T10	Medical-Anatomy 654 668	left lung base
+T11	Medical-Assertion 670 695	which could be related to
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 696 704	effusion
+T13	Medical-Assertion 715 721;723 730	cannot exclude
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 731 744	consolidation
+T15	Medical-Assertion 820 822	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 823 835	pneumothorax
+T17	Medical-Problem 904 912	new left
+E14	Medical-Problem:T17
+T18	Medical-Problem 955 963	effusion
+E15	Medical-Problem:T18
+T19	Medical-Assertion 974 988	cannot exclude
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 990 1003	consolidation
+T21	Medical-Problem 1015 1063	stable appearance of the right lung base opacity
+E17	Medical-Problem:T21
+T22	Lesion-Anatomy 1073 1092	bilateral pulmonary
+T23	Lesion-Description 1093 1103	metastases
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Count:T5 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E19	Lesion-Description:T23 has-Lesion-Anatomy:T22

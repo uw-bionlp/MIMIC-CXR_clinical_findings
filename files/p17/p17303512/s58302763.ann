@@ -1,0 +1,20 @@
+T1	Medical-Problem 226 241	mild prominence
+T2	Medical-Anatomy 249 267	cardiac silhouette
+T3	Medical-Problem 274 293	mild indistinctness
+T4	Medical-Anatomy 297 314	pulmonary vessels
+T5	Medical-Assertion 320 333	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 334 347;349 374	some elevated pulmonary venous pressure
+T7	Medical-Assertion 448 461	could reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 467 481	small effusion
+T9	Medical-Problem 486 505	atelectatic changes
+T10	Medical-Assertion 563 574	No evidence
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 578 583;585 600	acute focal pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

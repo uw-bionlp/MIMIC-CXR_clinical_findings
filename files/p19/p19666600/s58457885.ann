@@ -1,0 +1,29 @@
+T1	Medical-Assertion 339 341	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 342 349;351 359	pleural effusion
+T3	Medical-Problem 363 375	pneumothorax
+T4	Medical-Problem 378 405	Right diaphragm eventration
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 416 421	Lungs
+T6	Medical-Problem 427 440	hyperinflated
+T7	Medical-Assertion 445 452	without
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 453 472	focal consolidation
+T9	Medical-Assertion 473 487	concerning for
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 488 497	pneumonia
+T11	Lesion-Characteristic 503 512	calcified
+T12	Lesion-Description 513 522	granuloma
+T13	Lesion-Anatomy 530 551	right upper the lungs
+T14	Medical-Problem 564 579;581 597	Left base plate like atelectasis
+E11	Medical-Problem:T14
+T15	Medical-Assertion 629 631	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 632 661	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E9	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

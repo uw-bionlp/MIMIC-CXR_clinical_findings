@@ -1,0 +1,33 @@
+T1	Medical-Anatomy 217 222	lungs
+T2	Medical-Problem 228 241	hyperinflated
+T3	Medical-Problem 248 275	flattening of the diaphragm
+T4	Medical-Assertion 277 287	suggesting
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 288 295;297 326	chronic obstructive pulmonary disease
+T6	Medical-Problem 338 369	minimal right mid lung scarring
+E5	Medical-Problem:T6
+T7	Medical-Assertion 372 374	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 376 395	focal consolidation
+T9	Medical-Problem 397 413	pleural effusion
+T10	Medical-Problem 418 426	evidence
+E8	Medical-Problem:T10
+T11	Medical-Problem 430 442	pneumothorax
+T12	Medical-Problem 458 495	cardiac silhouette is mildly enlarged
+E10	Medical-Problem:T12
+T13	Medical-Anatomy 502 507	aorta
+T14	Medical-Problem 511 524;526 534	calcified and tortuous
+T15	Medical-Problem 552 575	Mild enlargement of the
+E13	Medical-Problem:T15
+T16	Medical-Anatomy 576 583	cardiac
+T17	Medical-Assertion 595 602	without
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 603 608;610 625	overt pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T7
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E15	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

@@ -1,0 +1,34 @@
+T1	Medical-Problem 288 303	volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 358 384	bibasilar linear opacities
+E2	Medical-Problem:T2
+T3	Medical-Problem 406 417	atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Assertion 428 439	no evidence
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 443 458	pulmonary edema
+T6	Medical-Problem 469 477	blunting
+T7	Medical-Anatomy 485 516	costophrenic angles bilaterally
+T8	Medical-Assertion 517 530	may be due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 531 536;538 555	trace pleural effusions
+T10	Medical-Assertion 566 568	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 569 581	pneumothorax
+T12	Medical-Problem 662 670	blunting
+T13	Medical-Anatomy 678 697	costophrenic angles
+T14	Medical-Assertion 698 711	may be due to
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 712 725;727 736	trace pleural effusions
+T16	Medical-Problem 752 773	bibasilar atelectasis
+E12	Medical-Problem:T16
+T17	Medical-Assertion 798 800	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 814 823	pneumonia
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

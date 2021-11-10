@@ -1,0 +1,33 @@
+T1	Medical-Anatomy 344 351	cardiac
+T2	Medical-Problem 393 410	slightly enlarged
+T3	Medical-Problem 423 440	stable prominence
+T4	Medical-Anatomy 448 469	main pulmonary artery
+T5	Medical-Assertion 470 480	suggesting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 481 491;493 515	underlying pulmonary hypertension
+T7	Medical-Assertion 518 520	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 521 540	focal consolidation
+T9	Medical-Assertion 560 562	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 563 568;570 586	large pleural effusion
+T11	Medical-Problem 590 602	pneumothorax
+T12	Medical-Problem 699 709	prominence
+T13	Medical-Anatomy 717 731;733 739	main pulmonary artery
+T14	Medical-Assertion 741 751	suggesting
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 752 774	pulmonary hypertension
+T16	Medical-Problem 777 794	Mild cardiomegaly
+E12	Medical-Problem:T16
+T17	Medical-Assertion 797 799	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 800 805;807 820	focal consolidation
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

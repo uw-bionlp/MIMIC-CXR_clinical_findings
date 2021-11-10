@@ -1,0 +1,22 @@
+T1	Medical-Problem 169 190	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 252 270	interstitial edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 272 285	Opacification
+T4	Medical-Anatomy 293 309	right upper lung
+T5	Medical-Problem 312 327;329 346	Trace bilateral pleural effusions
+E5	Medical-Problem:T5
+T6	Medical-Assertion 349 351	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 352 364	pneumothorax
+T8	Medical-Problem 456 469	Opacification
+T9	Medical-Anatomy 473 489	right upper lung
+T10	Medical-Assertion 490 504	concerning for
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 505 514	pneumonia
+T12	Medical-Problem 520 558	Decreased interstitial pulmonary edema
+E10	Medical-Problem:T12
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10

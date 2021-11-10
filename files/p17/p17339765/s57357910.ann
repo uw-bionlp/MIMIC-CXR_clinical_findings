@@ -1,0 +1,16 @@
+T1	Medical-Problem 342 350;352 391	interval increase in bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 406 423;425 440	mild interstitial pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 443 465	Left perihilar opacity
+T4	Medical-Assertion 479 485	not as
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Assertion 497 502;504 511	might reflect
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 512 572	gradual decrease in left perihilar consolidation/atelectasis
+T7	Medical-Assertion 585 587	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 588 600	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7

@@ -1,0 +1,32 @@
+T1	Lesion-Size 233 236	2cm
+T2	Lesion-Description 237 243	nodule
+T3	Lesion-Anatomy 252 268	right upper lobe
+T4	Lesion-Anatomy 275 290	left lower lobe
+T5	Lesion-Description 291 295	mass
+T6	Medical-Assertion 394 396	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 397 400;402 415	new consolidation
+T8	Medical-Problem 417 433	pleural effusion
+T9	Medical-Problem 437 449	pneumothorax
+T10	Medical-Problem 452 474;476 484	Heart size is markedly enlarged
+E9	Medical-Problem:T10
+T11	Medical-Assertion 579 581	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 582 607	acute osseous abnormality
+T13	Medical-Assertion 634 636	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 637 665	free air under the diaphragm
+T15	Medical-Assertion 684 686	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 687 696	pneumonia
+T17	Lesion-Anatomy 698 707	Bilateral
+T18	Lesion-Description 708 714	masses
+E2	Lesion-Description:T2 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Lesion-Description:T18 has-Lesion-Anatomy:T17

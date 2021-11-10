@@ -1,0 +1,21 @@
+T1	Medical-Assertion 314 316	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 318 334	pleural effusion
+T3	Medical-Problem 338 350	pneumothorax
+T4	Medical-Problem 379 396;398 407	wedge compression deformity
+T5	Medical-Anatomy 415 444	lower thoracic vertebral body
+T6	Medical-Anatomy 454 471	retrocardiac area
+T7	Medical-Problem 485 502	semi-oval opacity
+T8	Medical-Assertion 582 595	might reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 596 609	hiatal hernia
+T10	Lesion-Anatomy 611 622	mediastinal
+T11	Lesion-Description 623 627	mass
+T12	Medical-Problem 740 754	hyperinflation
+E10	Medical-Problem:T12
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T10

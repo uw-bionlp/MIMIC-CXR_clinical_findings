@@ -1,0 +1,23 @@
+T1	Medical-Problem 88 101	opacification
+T2	Medical-Anatomy 105 115;117 146	right lung projecting over the fifth rib
+T3	Lesion-Characteristic 173 180	osseous
+T4	Lesion-Description 181 187	lesion
+T5	Medical-Problem 326 334;336 343	punctate opacity
+T6	Medical-Anatomy 351 367	right lower lung
+T7	Medical-Problem 475 484	partially
+E7	Medical-Problem:T7
+T8	Lesion-Description 496 505	granuloma
+E8	Lesion-Description:T8
+T9	Medical-Assertion 603 605	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 606 622	pleural effusion
+T11	Medical-Problem 626 638	pneumothorax
+T12	Medical-Assertion 665 667	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 668 695	acute intrathoracic process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

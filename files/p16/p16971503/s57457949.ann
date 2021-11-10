@@ -1,0 +1,17 @@
+T1	Medical-Assertion 276 278	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 279 291	pneumothorax
+T3	Medical-Problem 293 309	pleural effusion
+T4	Medical-Problem 314 334	mediastinal widening
+T5	Lesion-Description 348 354	lesion
+T6	Lesion-Anatomy 362 376	right mid lung
+T7	Lesion-Size-Trend 380 398	grossly comparable
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Problem 470 487;489 500	right middle lobe atelectasis
+E6	Medical-Problem:T8
+T9	Medical-Problem 550 561;563 574	right basal atelectasis
+E7	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7

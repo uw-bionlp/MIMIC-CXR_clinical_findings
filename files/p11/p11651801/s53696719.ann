@@ -1,0 +1,26 @@
+T1	Medical-Problem 352 370	interval elevation
+T2	Medical-Anatomy 378 397	right hemidiaphragm
+T3	Medical-Problem 403 409;411 438	slight costophrenic angle blunting
+T4	Medical-Anatomy 454 473	overlying the spine
+T5	Medical-Problem 481 517	wedge-shaped increased opacification
+T6	Medical-Problem 552 565	opacification
+E6	Medical-Problem:T6
+T7	Medical-Assertion 572 587	could represent
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 588 599	atelectasis
+T9	Medical-Problem 610 619	pneumonia
+T10	Medical-Assertion 623 643	difficult to exclude
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 681 714	right costophrenic angle blunting
+E9	Medical-Problem:T11
+T12	Medical-Assertion 715 732	likely represents
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 733 740;742 752	pleural thickening
+T14	Medical-Problem 760 774	small effusion
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

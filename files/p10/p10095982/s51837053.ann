@@ -1,0 +1,40 @@
+T1	Medical-Problem 411 441;443 452	small pleural effusion, partly loculated
+E1	Medical-Problem:T1
+T2	Medical-Problem 468 486	pleural thickening
+T3	Medical-Anatomy 497 516;518 527	lateral side of the chest are
+T4	Medical-Problem 557 567	new of air
+E4	Medical-Problem:T4
+T5	Medical-Problem 630 650	patchy new opacities
+E5	Medical-Problem:T5
+T6	Lesion-Anatomy 658 675	right middle lobe
+E6	Lesion-Anatomy:T6
+T7	Medical-Problem 703 735	Interstitium is mildly prominent
+E7	Medical-Problem:T7
+T8	Medical-Assertion 764 772	suggests
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 777 801	mild vascular congestion
+T10	Medical-Problem 834 859	Mild interstitial process
+E9	Medical-Problem:T10
+T11	Medical-Assertion 860 878	most suggestive of
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 879 898	vascular congestion
+T13	Medical-Problem 907 939	Small loculated pleural effusion
+T14	Medical-Anatomy 947 952	right
+T15	Medical-Problem 958 974	patchy densities
+T16	Medical-Assertion 982 995	may be due to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 996 1018	coinciding atelectasis
+T18	Medical-Assertion 1097 1103	may be
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1104 1129	subacute or more chronic,
+T20	Medical-Problem 1140 1176	recent or ongoing infectious process
+T21	Medical-Assertion 1180 1192	not excluded
+A5	Medical-AssertionValue T21 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T15 has-Medical-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T18 has-Medical-Assertion:T21

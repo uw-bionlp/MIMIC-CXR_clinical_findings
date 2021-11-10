@@ -1,0 +1,33 @@
+T1	Medical-Assertion 293 295	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 296 312	pleural effusion
+T3	Medical-Problem 316 328	pneumothorax
+T4	Lesion-Characteristic 331 349	Faintly visualized
+T5	Lesion-Description 350 363	nodular focus
+T6	Lesion-Anatomy 372 414	left mid lung, probably within the lingula
+T7	Medical-Assertion 525 536	potentially
+A2	Medical-AssertionValue T7 possible
+T8	Lesion-Description 546 552	nodule
+E6	Lesion-Description:T8
+T9	Medical-Problem 560 589;591 598	confluence of bronchovascular shadows
+T10	Medical-Assertion 703 705	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 706 728	definite acute process
+T12	Lesion-Count 731 734	One
+T13	Lesion-Count 746 749	two
+T14	Lesion-Description 750 757	nodular
+E11	Lesion-Description:T14
+T15	Lesion-Description 758 762	foci
+T16	Lesion-Size 765 778	small in size
+T17	Lesion-Anatomy 791 813	left mid-to-lower lung
+T18	Lesion-Characteristic 815 827	not specific
+T19	Lesion-Size-Trend 965 968	new
+A4	Lesion-Size-TrendValue T19 new
+T20	Lesion-Description 969 976	nodules
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Lesion-Description:T15 has-Lesion-Count:T12 has-Lesion-Count:T13 has-Lesion-Size-Present:T16 has-Lesion-Anatomy:T17 has-Lesion-Characteristic:T18
+E16	Lesion-Description:T20 has-Lesion-Size-Trend:T19

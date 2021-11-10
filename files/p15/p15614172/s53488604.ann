@@ -1,0 +1,37 @@
+T1	Medical-Anatomy 181 186	lungs
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 221 242	Subtle patchy opacity
+T3	Medical-Anatomy 264 317;319 352	lateral right mid-to-lower lung, approximately at the level of the posterior eighth rib
+T4	Medical-Problem 396 420	small focus of infection
+T5	Medical-Assertion 424 436	not excluded
+A1	Medical-AssertionValue T5 possible
+T6	Lesion-Characteristic 448 458	underlying
+T7	Lesion-Anatomy 459 468	pulmonary
+T8	Lesion-Description 470 476	nodule
+T9	Medical-Assertion 513 515	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 516 532	pleural effusion
+T11	Medical-Problem 537 549	pneumothorax
+T12	Medical-Anatomy 556 561	aorta
+T13	Medical-Problem 565 587	calcified and tortuous
+T14	Medical-Problem 594 615;617 632	cardiac silhouette is mildly enlarged
+E12	Medical-Problem:T14
+T15	Medical-Problem 650 671	Subtle patchy opacity
+T16	Medical-Anatomy 679 710	lateral right mid-to-lower lung
+T17	Medical-Assertion 712 727	could represent
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 730 748	focus of infection
+T19	Lesion-Characteristic 750 760	underlying
+T20	Lesion-Anatomy 761 770	pulmonary
+T21	Lesion-Description 771 777	lesion
+T22	Lesion-Assertion 778 781;783 791	not excluded
+A4	Lesion-AssertionValue T22 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E18	Lesion-Description:T21 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T20 has-Lesion-Assertion:T22

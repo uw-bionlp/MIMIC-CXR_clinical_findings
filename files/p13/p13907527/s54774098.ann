@@ -1,0 +1,19 @@
+T1	Medical-Anatomy 108 112;114 133	left  upper lung/reduced
+T2	Medical-Problem 165 189	persistent opacification
+T3	Medical-Anatomy 199 220	left lower lung field
+T4	Medical-Problem 263 273;275 287	persistent  atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Problem 292 308	pleural effusion
+E5	Medical-Problem:T5
+T6	Lesion-Anatomy 310 325	Left upper lung
+T7	Lesion-Characteristic 326 334	cavitary
+T8	Lesion-Description 335 341	lesion
+T9	Medical-Anatomy 968 973	right
+T10	Medical-Problem 986 995;997 1008	platelike atelectasis
+T11	Medical-Assertion 1011 1013	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1026 1038	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T7
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11

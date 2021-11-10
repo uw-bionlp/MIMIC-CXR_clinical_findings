@@ -1,0 +1,16 @@
+T1	Medical-Assertion 408 410	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 411 419;421 431	vascular congestion
+T3	Medical-Problem 433 449	pleural effusion
+T4	Medical-Problem 454 475	acute focal pneumonia
+T5	Medical-Assertion 492 494;496 504	no evidence
+A2	Medical-AssertionValue T5 absent
+T6	Lesion-Anatomy 508 513	hilar
+T7	Lesion-Anatomy 517 528	mediastinal
+T8	Lesion-Description 529 539	adenopathy
+T9	Medical-Problem 543 565;567 588	abnormal prominence of interstitial markings
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T5

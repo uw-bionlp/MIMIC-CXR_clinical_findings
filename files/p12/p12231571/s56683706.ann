@@ -1,0 +1,19 @@
+T1	Medical-Problem 145 148	PTX
+E1	Medical-Problem:T1
+T2	Medical-Problem 226 253	Heterogeneous opacification
+T3	Medical-Anatomy 262 278	right lower lobe
+T4	Lesion-Description 484 490	lesion
+T5	Lesion-Anatomy 498 517	left bronchial tree
+T6	Medical-Assertion 524 539	could be due to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 540 550	aspiration
+T8	Medical-Problem 578 588	hemoptysis
+E7	Medical-Problem:T8
+T9	Medical-Assertion 632 634	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 635 648	abnormalities
+T11	Medical-Anatomy 656 672	left hemi thorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11

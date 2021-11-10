@@ -1,0 +1,33 @@
+T1	Medical-Problem 446 454	mild DJD
+T2	Medical-Anatomy 462 476	thoracic spine
+T3	Medical-Problem 482 504	multilevel osteophytes
+T4	Medical-Problem 555 572	mild cardiomegaly
+E4	Medical-Problem:T4
+T5	Medical-Problem 617 619;621 636	no interval change
+E5	Medical-Problem:T5
+T6	Medical-Problem 686 704	paucity of vessels
+T7	Medical-Anatomy 717 740	upper lobes bilaterally
+T8	Medical-Problem 767 790	centrilobular emphysema
+T9	Medical-Assertion 829 831	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 832 853	parenchymal opacities
+T11	Medical-Assertion 873 875	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 876 890	pneumothoraces
+T13	Medical-Problem 894 903	effusions
+T14	Lesion-Assertion 924 926	No
+A3	Lesion-AssertionValue T14 absent
+T15	Lesion-Anatomy 927 931	lung
+T16	Lesion-Description 932 939	lesions
+T17	Medical-Assertion 954 956	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 957 985	significant interval changes
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Lesion-Description:T16 has-Lesion-Assertion:T14 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

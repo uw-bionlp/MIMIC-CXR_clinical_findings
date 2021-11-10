@@ -1,0 +1,29 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 74	definite acute cardiopulmonary process
+T3	Lesion-Characteristic 77 82	Focal
+T4	Lesion-Description 83 98	nodular opacity
+T5	Lesion-Anatomy 121 137	right upper lung
+T6	Lesion-Assertion 485 495	suggestion
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Description 499 514	nodular opacity
+T8	Medical-Assertion 691 693	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 694 702	effusion
+T10	Medical-Problem 706 735	pulmonary vascular congestion
+T11	Medical-Problem 872 887;889 903	atherosclerotic calcifications
+T12	Medical-Anatomy 911 922	aortic arch
+T13	Medical-Assertion 942 944	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 945 983	definite acute cardiopulmonary process
+T15	Lesion-Characteristic 986 991	Focal
+T16	Lesion-Description 992 1007	nodular opacity
+T17	Lesion-Anatomy 1029 1045	right upper lung
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E5	Lesion-Description:T7 has-Lesion-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Lesion-Description:T16 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T17

@@ -1,0 +1,46 @@
+T1	Medical-Assertion 161 163	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 164 180	cough / wheezing
+T3	Medical-Problem 184 189	fever
+T4	Lesion-Size 331 347	Tiny 3 mm x 3 mm
+T5	Lesion-Characteristic 348 359	homogeneous
+T6	Lesion-Description 360 367	nodular
+T7	Lesion-Characteristic 368 373	focal
+T8	Lesion-Anatomy 403 407;409 426	apex of the right lung
+T9	Lesion-Size-Trend 435 441	stable
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Lesion-Characteristic 539 548	calcified
+T11	Lesion-Description 550 559	granuloma
+T12	Medical-Problem 561 611	Stable intra-aortic atherosclerotic calcifications
+T13	Medical-Anatomy 635 665	ascending and descending aorta
+T14	Medical-Assertion 724 726	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 727 740	consolidation
+T16	Lesion-Description 742 751	opacities
+E13	Lesion-Description:T16
+T17	Lesion-Description 753 759	masses
+E14	Lesion-Description:T17
+T18	Medical-Problem 761 773	pneumothorax
+T19	Medical-Problem 778 785;787 795	pleural effusion
+T20	Medical-Assertion 918 920	no
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 921 943	acute bony abnormality
+T22	Medical-Assertion 945 957	nor evidence
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 961 975	acute fracture
+T24	Medical-Assertion 1001 1012	Nopneumonia
+A6	Medical-AssertionValue T24 absent
+T25	Medical-Assertion 1018 1020	No
+A7	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1021 1050	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Medical-Problem:T18 has-Medical-Assertion:T14
+E16	Medical-Problem:T19 has-Medical-Assertion:T14
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T23 has-Medical-Assertion:T22
+E19	Medical-Problem:T26 has-Medical-Assertion:T25

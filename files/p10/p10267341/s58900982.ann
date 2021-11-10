@@ -1,0 +1,47 @@
+T1	Medical-Problem 195 233	mild enlargement of cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 240 251	aortic knob
+T3	Medical-Problem 256 265	calcified
+T4	Medical-Problem 327 331;333 362	mild pulmonary vascular congestion
+E4	Medical-Problem:T4
+T5	Medical-Problem 365 378	Focal opacity
+T6	Medical-Anatomy 390 410	right mid lung field
+T7	Medical-Problem 451 483	minimal retrocardiac atelectasis
+T8	Medical-Assertion 505 507	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 508 524	pleural effusion
+T10	Medical-Problem 528 540	pneumothorax
+T11	Medical-Problem 551 565;567 580	Old left-sided rib fractures
+E10	Medical-Problem:T11
+T12	Medical-Problem 593 623	Extensive degenerative changes
+T13	Medical-Anatomy 642 656	right shoulder
+T14	Medical-Problem 659 698	Diffuse demineralization of the osseous
+E13	Medical-Problem:T14
+T15	Medical-Problem 732 766	loss of height of a vertebral body
+T16	Medical-Anatomy 774 787;789 797	thoracolumbar junction
+T17	Medical-Problem 828 852	Persistent focal opacity
+T18	Medical-Anatomy 864 884	right mid lung field
+T19	Medical-Assertion 885 899	concerning for
+A2	Medical-AssertionValue T19 possible
+T20	Medical-Problem 904 922	infectious process
+T21	Medical-Problem 946 950	sign
+E19	Medical-Problem:T21
+T22	Medical-Problem 954 963	infection
+E20	Medical-Problem:T22
+T23	Lesion-Description 967 975	neoplasm
+T24	Lesion-Assertion 979 982;984 992	not excluded
+A3	Lesion-AssertionValue T24 possible
+T25	Medical-Assertion 1040 1042	No
+A4	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1043 1070	acute traumatic abnormality
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Medical-Problem:T20 has-Medical-Assertion:T19
+E21	Lesion-Description:T23 has-Lesion-Assertion:T24
+E22	Medical-Problem:T26 has-Medical-Assertion:T25

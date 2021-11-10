@@ -1,0 +1,28 @@
+T1	Medical-Problem 310 324	Mild asymmetry
+T2	Medical-Anatomy 332 342	lung bases
+T3	Medical-Assertion 343 349;351 359	likely reflects
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 360 371	atelectasis
+T5	Lesion-Assertion 374 376	No
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Anatomy 377 386	pulmonary
+T7	Lesion-Description 387 394	nodules
+T8	Medical-Problem 408 426;428 436	Small left pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Assertion 444 446	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 447 459	pneumothorax
+T11	Medical-Problem 470 490	Mild dextroscoliosis
+T12	Medical-Anatomy 498 506;508 513	thoracic spine
+T13	Lesion-Assertion 539 541	No
+A4	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 542 551	pulmonary
+T15	Lesion-Description 552 559	nodules
+T16	Medical-Problem 561 588	Small left pleural effusion
+E12	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14

@@ -1,0 +1,21 @@
+T1	Medical-Assertion 373 375	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 376 392	pleural effusion
+T3	Medical-Problem 396 408	pneumothorax
+T4	Medical-Problem 422 445;447 454	subtle right suprahilar opacity
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 494 510	right upper lobe
+T6	Lesion-Description 511 517	nodule
+T7	Lesion-Description 532 542	lymph node
+T8	Medical-Assertion 684 686	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 687 696	pneumonia
+T10	Medical-Problem 703 738	Persistent right suprahilar opacity
+E8	Medical-Problem:T10
+T11	Lesion-Description 792 802	lymph node
+E9	Lesion-Description:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,21 @@
+T1	Medical-Problem 217 230	Opacification
+T2	Medical-Anatomy 238 243	bases
+T3	Medical-Assertion 244 248;250 265	most likely reflects
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 273 284	atelectasis
+T5	Medical-Problem 288 322	some crowding of pulmonary vessels
+T6	Medical-Assertion 325 327	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 329 353	discrete acute pneumonia
+T8	Medical-Problem 369 386	slight impression
+E6	Medical-Problem:T8
+T9	Lesion-Assertion 443 456	could reflect
+A3	Lesion-AssertionValue T9 possible
+T10	Lesion-Characteristic 460 470	underlying
+T11	Lesion-Anatomy 471 478	thyroid
+T12	Lesion-Description 479 483	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E9	Lesion-Description:T12 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11

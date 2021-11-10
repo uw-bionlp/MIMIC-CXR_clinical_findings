@@ -1,0 +1,22 @@
+T1	Medical-Problem 261 273	Cardiomegaly
+T2	Medical-Anatomy 299 311	all chambers
+T3	Medical-Problem 347 379	bilateral upper lobe predominant
+E3	Medical-Problem:T3
+T4	Medical-Problem 389 409	lower lobe opacities
+E4	Medical-Problem:T4
+T5	Medical-Assertion 456 473;475 484	might potentially represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 485 512	fluctuating pulmonary edema
+T7	Medical-Problem 522 540	infectious process
+T8	Medical-Problem 561 587	Bilateral pleural effusion
+E7	Medical-Problem:T8
+T9	Medical-Problem 606 624	Infectious process
+T10	Medical-Anatomy 647 663	right upper lobe
+T11	Medical-Assertion 722 737	might represent
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 738 758	mitral regurgitation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

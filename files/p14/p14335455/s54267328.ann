@@ -1,0 +1,49 @@
+T1	Medical-Problem 304 313	Deviation
+T2	Medical-Anatomy 321 341	trachea to the right
+T3	Lesion-Assertion 342 348;350 364	raises possibility of
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Anatomy 367 374	thyroid
+T5	Lesion-Description 375 379	mass
+T6	Medical-Problem 381 397	Lung volumes are
+E5	Medical-Problem:T6
+T7	Medical-Problem 398 419	significantly reduced
+E6	Medical-Problem:T7
+T8	Medical-Problem 455 482	Enlarged cardiac silhouette
+E7	Medical-Problem:T8
+T9	Medical-Problem 552 565	Opacification
+T10	Medical-Anatomy 579 589	right base
+T11	Medical-Problem 627 643	low lung volumes
+T12	Medical-Problem 645 656	atelectasis
+T13	Medical-Assertion 663 671	possibly
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 674 696	small pleural effusion
+T15	Medical-Problem 698 720	superimposed pneumonia
+T16	Medical-Assertion 724 736	not excluded
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 739 767	Free air under the diaphragm
+E14	Medical-Problem:T17
+T18	Medical-Assertion 836 838	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 889 910	Basilar opacification
+E15	Medical-Problem:T19
+T20	Medical-Assertion 912 929	likely represents
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 930 941	atelectasis
+T22	Medical-Problem 984 993	pneumonia
+E17	Medical-Problem:T22
+T23	Medical-Problem 1017 1026	Deviation
+T24	Medical-Anatomy 1034 1054	trachea to the right
+T25	Lesion-Assertion 1055 1080	raises the possibility of
+A6	Lesion-AssertionValue T25 possible
+T26	Lesion-Anatomy 1083 1090	thyroid
+T27	Lesion-Description 1092 1096	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10
+E12	Medical-Problem:T14 has-Medical-Anatomy:T10 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T10 has-Medical-Assertion:T13 has-Medical-Assertion:T16
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T23 has-Medical-Anatomy:T24
+E21	Lesion-Description:T27 has-Lesion-Assertion:T25 has-Lesion-Anatomy:T26

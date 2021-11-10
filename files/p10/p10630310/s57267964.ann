@@ -1,0 +1,18 @@
+T1	Medical-Problem 256 282;284 297	Right lower lobe pneumonic consolidation
+E1	Medical-Problem:T1
+T2	Medical-Problem 323 339	low lung volumes
+E2	Medical-Problem:T2
+T3	Medical-Problem 342 359	Minimal opacities
+T4	Medical-Anatomy 368 389	left perihilar region
+T5	Medical-Anatomy 394 409	left lower lobe
+T6	Medical-Assertion 410 425	could be due to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 431 441;443 450	infectious process
+T8	Medical-Assertion 462 464	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 465 477	pneumothorax
+T10	Medical-Problem 481 495	large effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

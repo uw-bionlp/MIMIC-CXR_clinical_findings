@@ -1,0 +1,31 @@
+T1	Medical-Problem 300 317	left hemithoracic
+E1	Medical-Problem:T1
+T2	Medical-Problem 319 330	volume loss
+T3	Medical-Problem 336 355	superior retraction
+T4	Medical-Anatomy 363 373	left hilum
+T5	Lesion-Anatomy 423 438	left upper lobe
+T6	Lesion-Description 439 445	nodule
+T7	Lesion-Size-Trend 449 470	similar in appearance
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 528 530	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 531 550	focal consolidation
+T10	Medical-Problem 553 569	pleural effusion
+T11	Medical-Problem 571 583	pneumothorax
+T12	Medical-Assertion 660 662	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 663 692	acute cardiopulmonary process
+T14	Lesion-Size-Trend 698 718	Unchanged appearance
+A4	Lesion-Size-TrendValue T14 no-change
+T15	Lesion-Size-Trend 753 771	Similar appearance
+A5	Lesion-Size-TrendValue T15 no-change
+T16	Lesion-Anatomy 778 803	left upper lobe pulmonary
+T17	Lesion-Description 804 810	nodule
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Lesion-Description:T17 has-Lesion-Size-Trend:T15 has-Lesion-Anatomy:T16

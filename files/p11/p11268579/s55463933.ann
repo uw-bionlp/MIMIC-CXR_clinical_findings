@@ -1,0 +1,27 @@
+T1	Medical-Problem 76 104	bilateral alveolar opacities
+T2	Medical-Anatomy 142 153	upper lobes
+T3	Medical-Problem 165 181;183 193	diffuse alveolar  opacities
+T4	Medical-Anatomy 252 259;261 273	lateral  lung apices
+T5	Medical-Assertion 277 296	most suspicious for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 297 322	worsening pulmonary edema
+T7	Medical-Problem 325 336;338 372	Moderate to  large bilateral pleural effusions
+E6	Medical-Problem:T7
+T8	Medical-Problem 774 809	crowding of the vascular structures
+E7	Medical-Problem:T8
+T9	Medical-Problem 860 891	Unchanged moderate cardiomegaly
+E8	Medical-Problem:T9
+T10	Medical-Problem 896 904;906 940	signs of moderate to severe pulmonary edema
+T11	Medical-Problem 946 973	bilateral pleural effusions
+T12	Medical-Problem 979 990	atelectasis
+T13	Medical-Anatomy 998 1008	lung bases
+T14	Medical-Assertion 1011 1013	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 1014 1026	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Medical-Problem:T10 has-Medical-Anatomy:T13
+E10	Medical-Problem:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

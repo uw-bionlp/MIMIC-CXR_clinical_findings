@@ -1,0 +1,20 @@
+T1	Medical-Anatomy 209 214	lungs
+T2	Medical-Problem 228 241	consolidation
+T3	Medical-Problem 245 253	effusion
+T4	Lesion-Anatomy 256 266	Right lung
+T5	Lesion-Characteristic 267 276	calcified
+T6	Lesion-Description 278 287	granuloma
+T7	Medical-Problem 305 322	Mild cardiomegaly
+E7	Medical-Problem:T7
+T8	Medical-Problem 393 416	Compression deformities
+T9	Medical-Anatomy 420 432;434 450	mid thoracic vertebral bodies
+T10	Medical-Problem 456 476	accentuated kyphosis
+T11	Medical-Assertion 568 570	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 571 600	acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11

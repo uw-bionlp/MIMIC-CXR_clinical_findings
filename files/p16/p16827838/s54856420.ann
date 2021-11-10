@@ -1,0 +1,31 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 70	definite acute cardiopulmonary process
+T3	Lesion-Characteristic 72 78	Subtle
+T4	Lesion-Size 79 83	8 mm
+T5	Lesion-Description 84 91	opacity
+T6	Lesion-Anatomy 114 137	left upper lateral lung
+T7	Medical-Assertion 700 702	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 703 719	pleural effusion
+T9	Medical-Assertion 720 731	or evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 736 748	pneumothorax
+T11	Lesion-Size 758 767	Subtly mm
+T12	Lesion-Description 768 775	opacity
+T13	Medical-Anatomy 783 806	lateral left upper lung
+E10	Medical-Anatomy:T13
+T14	Medical-Problem 881 885	DISH
+E11	Medical-Problem:T14
+T15	Medical-Assertion 940 942	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 943 957	definite acute
+T17	Medical-Problem 996 1003	opacity
+T18	Medical-Anatomy 1025 1048	lateral left upper lung
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E7	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E9	Lesion-Description:T12 has-Lesion-Size-Present:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18

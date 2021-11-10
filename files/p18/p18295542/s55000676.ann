@@ -1,0 +1,23 @@
+T1	Medical-Problem 302 331	Mild-to-moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 345 370	Emphysema bullous changes
+E2	Medical-Problem:T2
+T3	Medical-Problem 372 391	irregular opacities
+T4	Medical-Anatomy 399 414	left upper lobe
+T5	Medical-Problem 420 431	atelectasis
+T6	Medical-Anatomy 439 462	lower lobes bilaterally
+T7	Medical-Problem 479 488	Opacities
+T8	Medical-Anatomy 497 507	lower lobe
+T9	Medical-Assertion 508 523	could be due to
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 524 535	atelectasis
+T11	Medical-Problem 541 563	superimposed infection
+T12	Medical-Assertion 564 573;575 591	cannot be totally excluded
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Anatomy 594 604	Left chest
+E11	Medical-Anatomy:T13
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T12

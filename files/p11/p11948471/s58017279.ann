@@ -1,0 +1,32 @@
+T1	Medical-Anatomy 376 386	right lung
+T2	Medical-Problem 391 408;410 420	almost completely reexpanded
+T3	Medical-Problem 442 482	small residual apical right pneumothorax
+E3	Medical-Problem:T3
+T4	Medical-Assertion 484 500	without evidence
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 504 522	tension physiology
+T6	Medical-Problem 525 547	Subcutaneous emphysema
+E5	Medical-Problem:T6
+T7	Medical-Problem 610 635;637 655	Several regions of patchy airspace opacities
+T8	Medical-Anatomy 667 695	right middle and lower lobes
+T9	Medical-Assertion 696 709	may represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 711 722	atelectasis
+T11	Medical-Problem 730 752	post-reexpansion edema
+T12	Medical-Assertion 764 775	no evidence
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 779 786;788 796	pleural effusion
+T14	Medical-Problem 800 815	pulmonary edema
+T15	Medical-Problem 1105 1145	Small residual apical right pneumothorax
+E12	Medical-Problem:T15
+T16	Medical-Assertion 1146 1162	without evidence
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1166 1173	tension
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,44 @@
+T1	Lesion-Size 281 286	large
+T2	Lesion-Characteristic 287 294	central
+T3	Lesion-Description 295 299	mass
+T4	Lesion-Anatomy 314 325	right hilus
+T5	Lesion-Assertion 350 356	likely
+A1	Lesion-AssertionValue T5 possible
+T6	Medical-Problem 374 400	central venous obstruction
+E5	Medical-Problem:T6
+T7	Lesion-Description 407 411	mass
+T8	Lesion-Size 436 446	9 x 4.5 cm
+T9	Medical-Problem 453 462	lungs are
+E8	Medical-Problem:T9
+T10	Medical-Problem 463 476	hyperinflated
+E9	Medical-Problem:T10
+T11	Medical-Anatomy 508 513	heart
+T12	Medical-Assertion 517 520	not
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 521 529	enlarged
+T14	Medical-Assertion 532 534	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 535 552	pleural effusions
+T16	Medical-Problem 556 568	pneumothorax
+T17	Lesion-Anatomy 589 600	Right hilar
+T18	Lesion-Anatomy 605 616	mediastinal
+T19	Lesion-Description 617 627	adenopathy
+T20	Lesion-Assertion 629 640	most likely
+A4	Lesion-AssertionValue T20 possible
+T21	Lesion-Anatomy 659 671	bronchogenic
+T22	Lesion-Description 672 681	carcinoma
+T23	Lesion-Description 685 693	lymphoma
+T24	Medical-Problem 711 728;730 739	referenced venous occlusion
+E20	Medical-Problem:T24
+T25	Medical-Problem 752 783	superior vena caval obstruction
+E21	Medical-Problem:T25
+T26	Medical-Problem 830 835	rapid
+E22	Medical-Problem:T26
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T5
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T8
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E16	Lesion-Description:T19 has-Lesion-Anatomy:T17 has-Lesion-Anatomy:T18
+E18	Lesion-Description:T22 has-Lesion-Assertion:T20 has-Lesion-Anatomy:T21
+E19	Lesion-Description:T23 has-Lesion-Assertion:T20

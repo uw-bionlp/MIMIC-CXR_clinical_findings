@@ -1,0 +1,26 @@
+T1	Medical-Problem 274 283	opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 284 300	likely represent
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 301 308	scaring
+T4	Medical-Problem 325 334	skin fold
+T5	Medical-Anatomy 354 389	upper right lung and across midline
+T6	Medical-Anatomy 406 411	lungs
+T7	Medical-Assertion 423 430	without
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 431 444	focal opacity
+T9	Medical-Problem 446 461	pulmonary edema
+T10	Medical-Problem 463 479	pleural effusion
+T11	Medical-Problem 484 496	pneumothorax
+T12	Medical-Problem 553 562;564 577	bilateral rib fractures
+E10	Medical-Problem:T12
+T13	Medical-Assertion 598 600	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 601 628	acute intrathoracic process
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

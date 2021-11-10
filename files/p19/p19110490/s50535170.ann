@@ -1,0 +1,30 @@
+T1	Medical-Assertion 34 36	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 37 62	focal parenchymal opacity
+T3	Medical-Problem 65 105;107 118	Unilateral left sided pulmonary vascular  congestion
+T4	Medical-Assertion 119 124	raise
+A2	Medical-AssertionValue T4 possible
+T5	Lesion-Anatomy 137 147	left hilar
+T6	Lesion-Description 148 152	mass
+T7	Lesion-Characteristic 153 164	obstructing
+T8	Medical-Problem 468 487	Partial obscuration
+T9	Medical-Anatomy 495 528	left lower lateral pleural sulcus
+T10	Medical-Assertion 529 544	could be due to
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 548 575	small region of abnormality
+T12	Medical-Anatomy 583 598	left lower lobe
+T13	Medical-Problem 602 620;622 630	small left pleural effusion
+T14	Medical-Assertion 643 645	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 646 660	other findings
+T16	Medical-Problem 672 681	pneumonia
+T17	Medical-Problem 831 847	mildly increased
+E13	Medical-Problem:T17
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T4
+E4	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10 has-Medical-Anatomy:T12
+E10	Medical-Problem:T13 has-Medical-Assertion:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14

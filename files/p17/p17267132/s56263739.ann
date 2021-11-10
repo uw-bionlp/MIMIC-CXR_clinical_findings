@@ -1,0 +1,19 @@
+T1	Medical-Problem 376 383	density
+T2	Medical-Anatomy 392 402	left hilum
+T3	Lesion-Anatomy 428 438	left hilar
+T4	Lesion-Description 439 443	mass
+T5	Medical-Assertion 551 553	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 554 573	focal consolidation
+T7	Medical-Problem 575 591	pleural effusion
+T8	Medical-Problem 595 607	pneumothorax
+T9	Medical-Problem 635 664	acute cardiopulmonary process
+E8	Medical-Problem:T9
+T10	Lesion-Anatomy 678 688	left hilar
+T11	Lesion-Description 689 693	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T10

@@ -1,0 +1,28 @@
+T1	Medical-Problem 389 426	cardiac silhouette is stably enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 433 451	aorta is calcified
+E2	Medical-Problem:T2
+T3	Medical-Problem 453 457;459 474	Left basilar opacity
+T4	Medical-Anatomy 491 506	left lower lobe
+T5	Medical-Problem 553 562	pneumonia
+T6	Medical-Assertion 563 588	must be considered in the
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 654 659	edema
+E6	Medical-Problem:T7
+T8	Medical-Assertion 713 715	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 716 738	large pleural effusion
+T10	Medical-Problem 742 754	pneumothorax
+T11	Medical-Problem 791 815	Improved pulmonary edema
+E9	Medical-Problem:T11
+T12	Medical-Anatomy 849 853	Left
+T13	Medical-Problem 865 872	opacity
+E11	Medical-Problem:T13
+T14	Medical-Assertion 873 890	may be consistent
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 896 905	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T14

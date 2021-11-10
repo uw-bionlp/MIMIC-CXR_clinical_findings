@@ -1,0 +1,42 @@
+T1	Medical-Assertion 110 118	Question
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 120 129	pneumonia
+T3	Medical-Problem 133 147	fluid overload
+T4	Medical-Problem 436 465	Lung volumes are slightly low
+E3	Medical-Problem:T4
+T5	Medical-Assertion 478 480	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 481 500	focal consolidation
+T7	Medical-Problem 502 518	pleural effusion
+T8	Medical-Problem 522 534	pneumothorax
+T9	Medical-Assertion 548 559	no evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 563 578	pulmonary edema
+T11	Medical-Problem 581 612	Prominent interstitial markings
+T12	Medical-Anatomy 621 631	lung bases
+T13	Medical-Assertion 671 690	likely representing
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 691 695	NSIP
+T15	Medical-Anatomy 746 763	cardiomediastinal
+T16	Medical-Problem 793 821	tortuous and calcified aorta
+T17	Medical-Problem 828 846;848 856	heart is minimally enlarged
+E13	Medical-Problem:T17
+T18	Medical-Assertion 874 876	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 877 906	acute cardiopulmonary process
+T20	Medical-Problem 909 931;933 954	Prominent interstitial markings at the bases
+E15	Medical-Problem:T20
+T21	Medical-Assertion 955 969	likely reflect
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 970 974	NSIP
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T15
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T22 has-Medical-Assertion:T21

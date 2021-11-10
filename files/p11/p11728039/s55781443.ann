@@ -1,0 +1,32 @@
+T1	Medical-Problem 277 289	cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 308 326	lower lobe opacity
+E2	Medical-Problem:T2
+T3	Medical-Problem 420 451	moderate right pleural effusion
+E3	Medical-Problem:T3
+T4	Lesion-Characteristic 455 469	fat-containing
+T5	Lesion-Description 470 476	lesion
+T6	Lesion-Anatomy 485 515	right lower lateral hemithorax
+T7	Medical-Problem 520 540	increasing opacities
+T8	Medical-Anatomy 548 560;562 566	right middle lobe
+T9	Medical-Anatomy 571 587	right lower lobe
+T10	Medical-Problem 594 615	ill-defined opacities
+T11	Medical-Anatomy 623 640	right middle lobe
+T12	Medical-Anatomy 646 662	right lower lobe
+T13	Medical-Assertion 667 680	likely due to
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Problem 681 691	aspiration
+T15	Medical-Assertion 753 755	no
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 756 768	pneumothorax
+T17	Medical-Problem 772 785	left effusion
+T18	Lesion-Characteristic 794 808	fat-containing
+T19	Lesion-Description 809 815	lesion
+T20	Lesion-Anatomy 823 839	right hemithorax
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T15
+E17	Lesion-Description:T19 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T20

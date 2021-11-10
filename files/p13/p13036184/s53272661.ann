@@ -1,0 +1,23 @@
+T1	Medical-Problem 277 305	Small right pleural effusion
+T2	Medical-Assertion 306 314	may have
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 388 413	Right apical pneumothorax
+E2	Medical-Problem:T3
+T4	Medical-Problem 424 427;429 442	New consolidation
+T5	Medical-Anatomy 450 465	left lower lobe
+T6	Medical-Assertion 466 474	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 475 486	atelectasis
+T8	Medical-Assertion 488 506	raises concern for
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 508 517	pneumonia
+T10	Medical-Problem 522 551	Pulmonary vascular congestion
+E7	Medical-Problem:T10
+T11	Medical-Assertion 552 560	suggests
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 561 588	some cardiac decompensation
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

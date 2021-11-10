@@ -1,0 +1,16 @@
+T1	Lesion-Size 224 228	2 mm
+T2	Lesion-Description 229 236	nodular
+E2	Lesion-Description:T2
+T3	Lesion-Description 237 244	opacity
+T4	Lesion-Anatomy 252 256;258 268	left upper lung
+T5	Lesion-Assertion 269 286	likely represents
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 289 298	granuloma
+T7	Medical-Assertion 441 443	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 444 460	pleural effusion
+T9	Medical-Problem 464 476	pneumothorax
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T4
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

@@ -1,0 +1,17 @@
+T1	Medical-Problem 262 268;270 282	Severe cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 295 322	Heterogeneous opacification
+T3	Medical-Anatomy 330 346	lower lung zones
+T4	Medical-Assertion 348 356	could be
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 357 372	dependent edema
+T6	Medical-Problem 376 386	aspiration
+T7	Medical-Problem 440 463	Small pleural effusions
+E6	Medical-Problem:T7
+T8	Medical-Assertion 491 493	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 495 507	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,48 @@
+T1	Medical-Problem 232 252	postoperative change
+E1	Medical-Problem:T1
+T2	Medical-Problem 344 356;358 369	Very shallow inspiration
+E2	Medical-Problem:T2
+T3	Lesion-Anatomy 372 390	Right extrapleural
+T4	Lesion-Description 391 395	mass
+T5	Lesion-Characteristic 401 435	associated seventh rib destruction
+T6	Lesion-Size-Trend 438 445	similar
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Lesion-Anatomy 448 464	Left seventh rib
+T8	Lesion-Characteristic 465 476	destructive
+T9	Lesion-Description 477 481	mass
+T10	Lesion-Characteristic 488 512;514 523	soft tissue extrapleural component
+T11	Lesion-Size-Trend 525 532	similar
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Size 546 553	smaller
+T13	Lesion-Characteristic 554 559	lytic
+T14	Lesion-Characteristic 560 567	osseous
+T15	Lesion-Description 568 575	lesions
+T16	Medical-Problem 588 627	Increased bilateral perihilar opacities
+E14	Medical-Problem:T16
+T17	Medical-Problem 680 691	Pneumonitis
+T18	Medical-Anatomy 713 729	right upper lung
+T19	Medical-Problem 752 785	Improved left basilar atelectasis
+E17	Medical-Problem:T19
+T20	Lesion-Size-Trend 804 810	Stable
+A3	Lesion-Size-TrendValue T20 no-change
+T21	Lesion-Characteristic 811 818	osseous
+T22	Lesion-Description 819 826	lesions
+T23	Lesion-Count 828 829	2
+T24	Lesion-Anatomy 830 842	extrapleural
+T25	Lesion-Description 843 849	masses
+T26	Medical-Problem 852 881	Prominent perihilar opacities
+E23	Medical-Problem:T26
+T27	Medical-Assertion 882 893	may be from
+A4	Medical-AssertionValue T27 possible
+T28	Medical-Problem 894 913	shallow inspiration
+T29	Medical-Problem 915 926;928 943	right upper lung infiltrate
+T30	Medical-Assertion 944 962	cannot be excluded
+A5	Medical-AssertionValue T30 possible
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T5 has-Lesion-Size-Trend:T6
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T10 has-Lesion-Size-Trend:T11
+E13	Lesion-Description:T15 has-Lesion-Size-Present:T12 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E19	Lesion-Description:T22 has-Lesion-Size-Trend:T20 has-Lesion-Characteristic:T21
+E22	Lesion-Description:T25 has-Lesion-Count:T23 has-Lesion-Anatomy:T24
+E24	Medical-Problem:T28 has-Medical-Assertion:T27
+E25	Medical-Problem:T29 has-Medical-Assertion:T30

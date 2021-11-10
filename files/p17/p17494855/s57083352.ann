@@ -1,0 +1,16 @@
+T1	Medical-Problem 413 423	aspiration
+E1	Medical-Problem:T1
+T2	Medical-Problem 495 519	Persistent opacification
+T3	Medical-Anatomy 520 524	base
+T4	Medical-Anatomy 532 548	left hemi thorax
+T5	Medical-Problem 556 564;566 604	at least persistent small left pleural effusion
+T6	Medical-Assertion 605 616	possibly of
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 617 643;645 658	small region of unresolved consolidation
+T8	Medical-Assertion 782 784	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 786 798	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,21 @@
+T1	Medical-Assertion 672 674	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 675 687	pneumothorax
+T3	Medical-Problem 699 738	Lung volumes remain somewhat diminished
+E2	Medical-Problem:T3
+T4	Medical-Problem 744 752	crowding
+T5	Medical-Anatomy 760 769;771 782	pulmonary vasculature
+T6	Medical-Problem 787 813	patchy bibasilar opacities
+E5	Medical-Problem:T6
+T7	Medical-Assertion 814 827	suggestive of
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 828 839	atelectasis
+T9	Medical-Assertion 842 844	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 846 858	pneumothorax
+T11	Medical-Problem 912 924;926 928	pneumothorax is
+E8	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

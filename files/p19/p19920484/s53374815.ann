@@ -1,0 +1,45 @@
+T1	Medical-Problem 224 229;231 245	ovoid hyperintensity
+T2	Medical-Anatomy 253 267	anterior lungs
+T3	Medical-Assertion 273 286	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 287 301;303 316	pleural plaque calcification
+T5	Lesion-Characteristic 320 329	calcified
+T6	Lesion-Description 330 340	lymph node
+T7	Lesion-Size 345 349	5 mm
+T8	Lesion-Characteristic 350 355	round
+T9	Lesion-Description 356 363	opacity
+T10	Lesion-Anatomy 371 380;382 391	posterior left lobe
+T11	Lesion-Characteristic 405 414	calcified
+T12	Lesion-Description 415 424	granuloma
+T13	Medical-Assertion 436 447	no evidence
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 452 472	interstitial disease
+T15	Medical-Assertion 475 486	No evidence
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 490 499	pneumonia
+T17	Medical-Assertion 570 572	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 573 589	pleural effusion
+T19	Medical-Problem 594 606	pneumothorax
+T20	Medical-Assertion 628 639	No evidence
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 643 663	interstitial disease
+T22	Lesion-Characteristic 670 679	Calcified
+E17	Lesion-Characteristic:T22
+T23	Medical-Problem 694 708	pleural plaque
+T24	Medical-Anatomy 716 739;741 755	anterior mediastinum or anterior lungs
+T25	Lesion-Characteristic 762 771	Calcified
+T26	Lesion-Description 772 781	granuloma
+T27	Lesion-Anatomy 789 808	posterior left lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T10
+E11	Lesion-Description:T12 has-Lesion-Anatomy:T10 has-Lesion-Characteristic:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T17
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T23 has-Medical-Anatomy:T24
+E21	Lesion-Description:T26 has-Lesion-Characteristic:T25 has-Lesion-Anatomy:T27

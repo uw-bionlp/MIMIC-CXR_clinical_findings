@@ -1,0 +1,18 @@
+T1	Medical-Problem 168 187	very subtle opacity
+T2	Medical-Anatomy 207 263	left mid lung, just lateral to the left pulmonary artery
+T3	Medical-Assertion 266 268	No
+A1	Medical-AssertionValue T3 absent
+T4	Lesion-Description 269 275	nodule
+E3	Lesion-Description:T4
+T5	Medical-Problem 278 286	effusion
+T6	Medical-Problem 291 303	pneumothorax
+T7	Medical-Problem 381 395	Subtle opacity
+T8	Medical-Anatomy 403 416	left mid lung
+T9	Medical-Assertion 417 432	could represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 436 441;443 452	early pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

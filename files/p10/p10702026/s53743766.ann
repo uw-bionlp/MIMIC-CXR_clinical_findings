@@ -1,0 +1,29 @@
+T1	Medical-Problem 185 205	persistent elevation
+T2	Medical-Anatomy 213 217;219 232	left hemidiaphragm
+T3	Medical-Problem 235 243	Blunting
+T4	Medical-Anatomy 251 284	posterior left costophrenic angle
+T5	Medical-Assertion 285 295;297 299	suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 300 314	small effusion
+T7	Medical-Problem 322 333	atelectasis
+T8	Medical-Anatomy 369 374	lungs
+T9	Medical-Assertion 396 403	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 404 417	consolidation
+T11	Medical-Problem 421 450	pulmonary vascular congestion
+T12	Medical-Problem 458 512	trachea is deviated to the right at the thoracic inlet
+E10	Medical-Problem:T12
+T13	Medical-Assertion 513 526	suggestive of
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 528 569	underlying asymmetric thyroid enlargement
+T15	Medical-Assertion 696 698	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 699 728	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

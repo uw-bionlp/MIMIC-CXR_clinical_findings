@@ -1,0 +1,36 @@
+T1	Lesion-Size 345 349	3 mm
+T2	Lesion-Description 350 356	nodule
+T3	Lesion-Anatomy 377 402	right second anterior rib
+T4	Lesion-Assertion 403 421;423 425	likely corresponds to
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Characteristic 428 437	calcified
+T6	Lesion-Description 438 447	granuloma
+T7	Medical-Anatomy 454 459	lungs
+T8	Medical-Problem 464 477	hyperinflated
+T9	Medical-Assertion 509 511	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 512 524	pneumothorax
+T11	Medical-Problem 528 544	pleural effusion
+T12	Medical-Problem 546 575	Mild to moderate cardiomegaly
+E10	Medical-Problem:T12
+T13	Medical-Anatomy 596 621	descending thoracic aorta
+T14	Medical-Problem 625 633	tortuous
+T15	Medical-Problem 635 643;645 660	Moderate dextroscoliosis
+T16	Medical-Anatomy 668 688	lower thoracic spine
+T17	Medical-Assertion 722 724	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 725 748	acute pulmonary disease
+T19	Medical-Problem 751 787	Stable mild to moderate cardiomegaly
+E16	Medical-Problem:T19
+T20	Medical-Problem 790 821	Stable moderate dextroscoliosis
+E17	Medical-Problem:T20
+T21	Medical-Problem 830 856	mildly hyperinflated lungs
+E18	Medical-Problem:T21
+E2	Lesion-Description:T2 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T3 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

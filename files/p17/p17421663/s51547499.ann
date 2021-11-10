@@ -1,0 +1,33 @@
+T1	Medical-Problem 33 68	New interstitial airspace opacities
+T2	Medical-Anatomy 80 96	right upper lobe
+T3	Medical-Problem 192 219	acute multi focal pneumonia
+E3	Medical-Problem:T3
+T4	Medical-Problem 258 268	Aspiration
+T5	Medical-Problem 275 291	asymmetric edema
+T6	Medical-Assertion 301 314	possibilities
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 317 319	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 320 336	pleural effusion
+T9	Medical-Problem 342 354	pneumothorax
+T10	Medical-Problem 666 676;678 699	increasing parenchymal opacities
+T11	Medical-Anatomy 707 723	right upper lobe
+T12	Medical-Anatomy 761 776	left lower lobe
+T13	Medical-Problem 779 799	Multifocal pneumonia
+T14	Medical-Assertion 803 809	likely
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Assertion 873 875	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 876 893	pleural effusions
+T17	Medical-Assertion 898 900	no
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 901 913	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Assertion:T6
+E5	Medical-Problem:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

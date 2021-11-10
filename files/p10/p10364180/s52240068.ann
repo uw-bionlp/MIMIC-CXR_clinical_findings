@@ -1,0 +1,63 @@
+T1	Medical-Problem 308 340	Increased interstitial opacities
+T2	Medical-Problem 345 355	prominence
+T3	Medical-Anatomy 363 384	pulmonary vasculature
+T4	Medical-Problem 405 428	mild interstitial edema
+T5	Medical-Problem 431 464	Small bilateral pleural effusions
+E5	Medical-Problem:T5
+T6	Medical-Problem 488 501	left effusion
+E6	Medical-Problem:T6
+T7	Medical-Problem 533 542;544 561	Bibasilar streaky opacities
+E7	Medical-Problem:T7
+T8	Medical-Assertion 600 613	may represent
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 615 626	atelectasis
+T10	Medical-Problem 635 644	infection
+T11	Medical-Assertion 645 665	should be considered
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 704 725	Moderate cardiomegaly
+E10	Medical-Problem:T12
+T13	Medical-Problem 741 747	aortic
+E11	Medical-Problem:T13
+T14	Medical-Problem 773 804	Extensive emphysematous changes
+E12	Medical-Problem:T14
+T15	Lesion-Characteristic 832 837	focal
+T16	Lesion-Characteristic 838 849	ill-defined
+T17	Lesion-Description 851 858	nodular
+E15	Lesion-Description:T17
+T18	Lesion-Description 859 868	opacities
+T19	Lesion-Anatomy 891 925	most pronounced in the upper lobes
+T20	Lesion-Anatomy 967 983	right lower lobe
+T21	Lesion-Characteristic 984 994	spiculated
+T22	Lesion-Description 995 1001	nodule
+T23	Medical-Assertion 1036 1038	No
+A3	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1039 1066	acute osseous abnormalities
+T25	Medical-Problem 1099 1132	Mild interstitial pulmonary edema
+E22	Medical-Problem:T25
+T26	Medical-Problem 1154 1187	bilateral small pleural effusions
+E23	Medical-Problem:T26
+T27	Medical-Problem 1193 1220	Bibasilar streaky opacities
+E24	Medical-Problem:T27
+T28	Medical-Assertion 1221 1235	likely reflect
+A4	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1236 1247	atelectasis
+T30	Medical-Problem 1258 1267	infection
+T31	Medical-Assertion 1269 1289	should be considered
+A5	Medical-AssertionValue T31 possible
+T32	Medical-Problem 1331 1347	Severe emphysema
+E27	Medical-Problem:T32
+T33	Lesion-Characteristic 1349 1358	Scattered
+T34	Lesion-Characteristic 1359 1370	ill-defined
+T35	Lesion-Description 1371 1378	nodules
+T36	Lesion-Anatomy 1390 1395	lungs
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E16	Lesion-Description:T18 has-Lesion-Characteristic:T15 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T19
+E20	Lesion-Description:T22 has-Lesion-Anatomy:T20 has-Lesion-Characteristic:T21
+E21	Medical-Problem:T24 has-Medical-Assertion:T23
+E25	Medical-Problem:T29 has-Medical-Assertion:T28
+E26	Medical-Problem:T30 has-Medical-Assertion:T31
+E30	Lesion-Description:T35 has-Lesion-Characteristic:T33 has-Lesion-Characteristic:T34 has-Lesion-Anatomy:T36

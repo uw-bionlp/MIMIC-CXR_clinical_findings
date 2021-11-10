@@ -1,0 +1,25 @@
+T1	Medical-Problem 220 241	Greater opacification
+T2	Medical-Anatomy 249 259	lung bases
+T3	Medical-Problem 365 388	bibasilar consolidation
+E3	Medical-Problem:T3
+T4	Medical-Problem 393 419	moderate pleural effusions
+E4	Medical-Problem:T4
+T5	Medical-Assertion 435 439;441 454	very suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 455 475	aspiration pneumonia
+T7	Medical-Anatomy 478 489	Upper lobes
+T8	Medical-Assertion 494 499	clear
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 503 508	edema
+T10	Medical-Problem 529 553	mild vascular congestion
+T11	Medical-Problem 556 587	Mild-to-moderate enlargement of
+T12	Medical-Anatomy 593 611	cardiac silhouette
+T13	Medical-Assertion 647 649	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 650 662	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

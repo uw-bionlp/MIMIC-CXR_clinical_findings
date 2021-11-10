@@ -1,0 +1,42 @@
+T1	Medical-Problem 159 199	Heterogeneous right lower lobe opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 204 218	concerning for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 223 241	infectious process
+T4	Lesion-Description 253 268	nodular opacity
+T5	Lesion-Anatomy 289 298;300 304	right mid lung
+T6	Lesion-Characteristic 377 411	possibly also infectious in nature
+T7	Lesion-Anatomy 424 433	pulmonary
+T8	Lesion-Description 435 441	nodule
+T9	Lesion-Assertion 445 457	not excluded
+A2	Lesion-AssertionValue T9 possible
+T10	Medical-Problem 469 504	minimal left lower lung atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Problem 507 511	Mild
+E9	Medical-Problem:T11
+T12	Medical-Problem 513 525	cardiomegaly
+E10	Medical-Problem:T12
+T13	Medical-Problem 596 604	Blunting
+T14	Medical-Anatomy 612 636	right costophrenic angle
+T15	Medical-Assertion 637 652	could be due to
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 655 660;662 678	small pleural effusion
+T17	Medical-Assertion 690 692	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 693 705	pneumothorax
+T19	Medical-Problem 735 755	lower lobe pneumonia
+E15	Medical-Problem:T19
+T20	Lesion-Anatomy 760 774	right mid lung
+T21	Lesion-Description 775 790	nodular opacity
+T22	Lesion-Characteristic 791 796	could
+T23	Medical-Problem 960 977	mild cardiomegaly
+E19	Medical-Problem:T23
+T24	Medical-Problem 995 1023	small right pleural effusion
+E20	Medical-Problem:T24
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T7 has-Lesion-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Lesion-Description:T21 has-Lesion-Anatomy:T20 has-Lesion-Characteristic:T22

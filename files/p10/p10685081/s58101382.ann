@@ -1,0 +1,28 @@
+T1	Medical-Problem 232 245	Vague opacity
+T2	Medical-Anatomy 266 274;276 288	anterior left 1st rib
+T3	Lesion-Anatomy 336 351;353 362	Left lower lobe pulmonary
+T4	Lesion-Description 363 369	nodule
+T5	Lesion-Anatomy 387 406	retrocardiac region
+T6	Medical-Problem 441 452	new opacity
+T7	Medical-Anatomy 460 484	left lung base laterally
+T8	Medical-Assertion 616 618	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 619 644	acute osseous abnormality
+T10	Medical-Problem 673 699	Faint left basilar opacity
+E9	Medical-Problem:T10
+T11	Medical-Problem 777 788	atelectasis
+E10	Medical-Problem:T11
+T12	Medical-Problem 790 810	developing infection
+T13	Medical-Assertion 814 828;830 838	not completely excluded
+A2	Medical-AssertionValue T13 possible
+T14	Lesion-Anatomy 849 860	left apical
+T15	Lesion-Description 861 867	lesion
+T16	Lesion-Anatomy 872 887	left lower lobe
+T17	Lesion-Description 892 898	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E11	Medical-Problem:T12 has-Medical-Assertion:T13
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T16
+E15	Lesion-Description:T17 has-Lesion-Anatomy:T16

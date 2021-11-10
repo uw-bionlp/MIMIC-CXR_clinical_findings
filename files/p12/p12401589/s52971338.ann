@@ -1,0 +1,24 @@
+T1	Medical-Problem 220 242	Heart size is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 265 275	tortuosity
+T3	Medical-Problem 280 294	calcifications
+T4	Medical-Anatomy 303 317	thoracic aorta
+T5	Medical-Assertion 329 331	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 332 353	overt pulmonary edema
+T7	Medical-Problem 366 372;374 381	patchy opacity
+T8	Medical-Anatomy 389 408	left base laterally
+T9	Medical-Assertion 415 428	may represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 429 440	atelectasis
+T11	Medical-Problem 445 466	developing infiltrate
+T12	Medical-Assertion 479 481	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 482 496	pneumothoraces
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

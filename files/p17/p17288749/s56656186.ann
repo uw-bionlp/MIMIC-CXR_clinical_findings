@@ -1,0 +1,31 @@
+T1	Medical-Problem 496 516	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 682 703	persistent prominence
+T3	Medical-Anatomy 711 720;722 741	pulmonary vascular structures
+T4	Medical-Problem 746 758	cardiomegaly
+E4	Medical-Problem:T4
+T5	Medical-Problem 783 794;796 809	progressive opacification
+T6	Medical-Anatomy 817 832	right lung base
+T7	Medical-Problem 838 854	air bronchograms
+T8	Medical-Assertion 880 894	suspicious for
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 912 927	pulmonary edema
+T10	Medical-Problem 932 941	pneumonia
+T11	Medical-Assertion 944 952	Probable
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 954 982	right-sided pleural effusion
+T13	Medical-Assertion 1012 1026	likely reflect
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1044 1059	pulmonary edema
+T15	Medical-Problem 1064 1073	pneumonia
+T16	Medical-Problem 1080 1086	extent
+T17	Medical-Anatomy 1111 1126	right lung base
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17

@@ -1,0 +1,27 @@
+T1	Medical-Assertion 342 344	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 345 357	pneumothorax
+T3	Medical-Problem 385 414	pulmonary vascular congestion
+E2	Medical-Problem:T3
+T4	Medical-Assertion 417 419	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 420 435	pulmonary edema
+T6	Lesion-Size 438 443	Small
+T7	Lesion-Characteristic 445 455	peripheral
+T8	Lesion-Description 456 465	granuloma
+T9	Lesion-Anatomy 473 492	right mid lung zone
+T10	Lesion-Size-Trend 496 505	unchanged
+A3	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 544 546	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 547 573	new airspace consolidation
+T13	Medical-Assertion 648 650	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 651 663	pneumothorax
+T15	Medical-Problem 667 672;674 686	other complication
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T13

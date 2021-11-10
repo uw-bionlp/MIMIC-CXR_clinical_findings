@@ -1,0 +1,24 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 63	acute intrathoracic process
+T3	Medical-Assertion 514 516	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 517 538	definite pneumothorax
+T5	Medical-Problem 542 549;551 559	pleural effusion
+T6	Lesion-Size 579 583	5 mm
+T7	Lesion-Description 584 591	nodular
+E5	Lesion-Description:T7
+T8	Lesion-Description 592 599	opacity
+T9	Lesion-Anatomy 607 617	right apex
+T10	Lesion-Size-Trend 619 625	stable
+A3	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 657 659	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 660 665	acute
+E8	Medical-Problem:T12
+T13	Medical-Problem 666 687	intrathoracic process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E6	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T11

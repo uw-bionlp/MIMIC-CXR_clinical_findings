@@ -1,0 +1,17 @@
+T1	Medical-Assertion 323 334	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 338 354	pleural effusion
+T3	Medical-Problem 358 370	pneumothorax
+T4	Medical-Problem 373 380;382 395	Minimal opacification
+T5	Medical-Anatomy 403 418	right lung base
+T6	Medical-Assertion 419 441	most likely represents
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 442 453	atelectasis
+T8	Medical-Problem 465 483	infectious process
+T9	Medical-Assertion 484 504	should be considered
+A3	Medical-AssertionValue T9 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T9

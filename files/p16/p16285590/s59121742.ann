@@ -1,0 +1,42 @@
+T1	Medical-Problem 256 286	moderate left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 340 353	Consolidation
+T3	Medical-Anatomy 361 375	left lung base
+T4	Medical-Assertion 379 397;399 409	at least partially related to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 410 433	compressive atelectasis
+T6	Medical-Problem 446 476	concomitant infectious process
+T7	Medical-Assertion 481 499	certainly possible
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 502 527	Reticulonodular opacities
+T9	Medical-Anatomy 535 553;555 559	right mid-to-lower lung
+T10	Medical-Assertion 597 603	highly
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 692 705;707 715	moderate left effusion
+E8	Medical-Problem:T11
+T12	Medical-Assertion 789 791	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 792 804	pneumothorax
+T14	Medical-Problem 807 838	Multilevel degenerative changes
+T15	Medical-Anatomy 846 859;861 866	thoracolumbar spine
+T16	Medical-Problem 899 952	New reticulonodular right mid-to-lower lung opacities
+E12	Medical-Problem:T16
+T17	Medical-Assertion 954 968	concerning for
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 970 979	infection
+T19	Medical-Problem 988 1028	Increased moderate left pleural effusion
+E14	Medical-Problem:T19
+T20	Medical-Problem 1034 1057;1059 1070	dense left retrocardiac atelectasis
+E15	Medical-Problem:T20
+T21	Medical-Problem 1073 1094	Concomitant infection
+T22	Medical-Anatomy 1102 1116	left lung base
+T23	Medical-Assertion 1117 1135	cannot be excluded
+A6	Medical-AssertionValue T23 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T21 has-Medical-Anatomy:T22 has-Medical-Assertion:T23

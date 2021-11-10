@@ -1,0 +1,36 @@
+T1	Medical-Problem 323 363	Extensive right lower lobe opacification
+T2	Medical-Anatomy 380 395	left lower lobe
+T3	Medical-Problem 443 472	Left lower lobe opacification
+E3	Medical-Problem:T3
+T4	Medical-Assertion 519 530	No evidence
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 534 546	pneumothorax
+T6	Medical-Problem 551 561	hemothorax
+T7	Medical-Anatomy 568 573	heart
+T8	Medical-Problem 602 616	opacifications
+T9	Medical-Assertion 641 652	No evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 656 668	pneumothorax
+T11	Medical-Problem 672 682	hemothorax
+T12	Medical-Problem 741 764	increased opacification
+T13	Medical-Anatomy 773 782	left lung
+T14	Medical-Assertion 783 791	could be
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 794 820	progression of the process
+T16	Lesion-Description 865 869	mass
+T17	Lesion-Anatomy 877 884	lingula
+T18	Medical-Problem 908 918;920 933	left-sided opacification
+E15	Medical-Problem:T18
+T19	Medical-Assertion 934 947	may represent
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 948 968	resulting hemorrhage
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

@@ -1,0 +1,39 @@
+T1	Medical-Assertion 60 70	Resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 74 102	community-acquired pneumonia
+T3	Medical-Assertion 225 227	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 229 245	pleural effusion
+T5	Medical-Problem 249 261	pneumothorax
+T6	Medical-Problem 285 303	heterogeneous lung
+T7	Medical-Anatomy 312 327	left lower lung
+T8	Medical-Assertion 328 361	has resolved on the current study
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 364 375	Atelectasis
+T10	Medical-Anatomy 398 416	left hemidiaphragm
+T11	Medical-Assertion 467 469	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 470 493	new focal consolidation
+T13	Medical-Assertion 494 508	concerning for
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 509 518	pneumonia
+T15	Medical-Assertion 536 546	Resolution
+A6	Medical-AssertionValue T15 absent
+T16	Medical-Problem 566 579	heterogeneity
+T17	Medical-Anatomy 587 596	left lung
+T18	Medical-Assertion 603 605	no
+A7	Medical-AssertionValue T18 absent
+T19	Medical-Problem 606 629	new focal consolidation
+T20	Medical-Assertion 630 640	concerning
+A8	Medical-AssertionValue T20 possible
+T21	Medical-Problem 645 654	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17
+E12	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E13	Medical-Problem:T21 has-Medical-Anatomy:T17 has-Medical-Assertion:T18 has-Medical-Assertion:T20

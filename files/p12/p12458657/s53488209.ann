@@ -1,0 +1,23 @@
+T1	Medical-Problem 190 207	mild cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 211 232	Mildly tortuous aorta
+E2	Medical-Problem:T2
+T3	Medical-Assertion 269 271	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 272 277;279 292	focal consolidation
+T5	Medical-Assertion 293 303	to suggest
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 304 322	infectious process
+T7	Medical-Assertion 338 340	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 341 351;353 362	definitive pneumonia
+T9	Medical-Problem 375 396	Bilateral enlargement
+T10	Medical-Anatomy 404 422	pulmonary arteries
+T11	Medical-Assertion 426 450	suspected concerning for
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 452 474	pulmonary hypertension
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E8	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

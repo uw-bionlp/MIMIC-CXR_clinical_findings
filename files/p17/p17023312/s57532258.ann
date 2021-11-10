@@ -1,0 +1,37 @@
+T1	Medical-Assertion 458 460	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 462 483	definite pneumothorax
+T3	Medical-Problem 515 535;537 550	interval increase in consolidation
+T4	Medical-Anatomy 558 572	left lung base
+T5	Medical-Assertion 579 600	could be secondary to
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 601 612	atelectasis
+T7	Medical-Problem 627 651	acute infectious process
+T8	Medical-Assertion 652 670	cannot be excluded
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 684 690;692 745	stable moderate right and small left-sided pleural effusions
+E6	Medical-Problem:T9
+T10	Medical-Problem 763 793	pulmonary vascular engorgement
+E7	Medical-Problem:T10
+T11	Medical-Problem 799 836	stable mild bilateral pulmonary edema
+E8	Medical-Problem:T11
+T12	Medical-Assertion 910 926	without evidence
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 931 943	pneumothorax
+T14	Medical-Problem 952 1000	Interval worsening of left basilar consolidation
+E10	Medical-Problem:T14
+T15	Medical-Assertion 1007 1025;1027 1029	could be secondary to
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 1030 1041	atelectasis
+T17	Medical-Problem 1054 1072	infectious process
+T18	Medical-Assertion 1073 1091	cannot be excluded
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1100 1154	Stable moderate right and small left pleural effusions
+E13	Medical-Problem:T19
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T18

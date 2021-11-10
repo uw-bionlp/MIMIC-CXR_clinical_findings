@@ -1,0 +1,60 @@
+T1	Medical-Assertion 109 111	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 112 121;123 130	active TB history
+T3	Medical-Anatomy 171 176	heart
+T4	Medical-Assertion 180 183	not
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 184 192	enlarged
+T6	Lesion-Assertion 240 242	no
+A3	Lesion-AssertionValue T6 absent
+T7	Lesion-Anatomy 244 249	hilar
+T8	Lesion-Anatomy 253 264	mediastinal
+T9	Lesion-Description 265 280	lymphadenopathy
+T10	Lesion-Anatomy 284 293	pulmonary
+T11	Lesion-Description 294 301	nodules
+T12	Medical-Assertion 317 319	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 321 336	apical scarring
+T14	Medical-Problem 338 354	hilar retraction
+T15	Lesion-Characteristic 359 368	calcified
+T16	Lesion-Description 369 374	nodes
+T17	Medical-Problem 387 393;395 402	Slight tenting
+T18	Medical-Anatomy 410 428	left hemidiaphragm
+T19	Medical-Assertion 429 442	could reflect
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 443 458	subtle scarring
+T21	Medical-Assertion 464 466	no
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 467 472;474 500	gross focal parenchymal scarring
+T23	Medical-Assertion 514 516	No
+A7	Medical-AssertionValue T23 absent
+T24	Medical-Problem 517 520	CHF
+T25	Medical-Problem 522 538	focal infiltrate
+T26	Medical-Problem 542 550	effusion
+T27	Medical-Problem 639 646;648 668	minimal degenerative changes
+T28	Medical-Anatomy 676 690	thoracic spine
+T29	Medical-Problem 714 728	Slight tenting
+T30	Medical-Anatomy 736 754	left hemidiaphragm
+T31	Medical-Assertion 755 762	without
+A8	Medical-AssertionValue T31 absent
+T32	Medical-Problem 763 789	overt parenchymal scarring
+T33	Medical-Assertion 842 857	No radiographic
+A9	Medical-AssertionValue T33 absent
+T34	Medical-Problem 880 902	pulmonary tuberculosis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Lesion-Description:T9 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8
+E8	Lesion-Description:T11 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Lesion-Description:T16 has-Lesion-Characteristic:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T24 has-Medical-Assertion:T23
+E18	Medical-Problem:T25 has-Medical-Assertion:T23
+E19	Medical-Problem:T26 has-Medical-Assertion:T23
+E20	Medical-Problem:T27 has-Medical-Anatomy:T28
+E22	Medical-Problem:T29 has-Medical-Anatomy:T30
+E24	Medical-Problem:T32 has-Medical-Anatomy:T30 has-Medical-Assertion:T31
+E25	Medical-Problem:T34 has-Medical-Assertion:T33

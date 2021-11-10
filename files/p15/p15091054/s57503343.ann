@@ -1,0 +1,30 @@
+T1	Medical-Problem 311 321	tortuosity
+T2	Medical-Anatomy 329 334	aorta
+T3	Medical-Problem 346 355;357 371	irregular calcifications
+T4	Medical-Anatomy 379 403	level of the aortic arch
+T5	Medical-Problem 437 465	irregular nodular appearance
+T6	Medical-Anatomy 473 484	aortic arch
+T7	Medical-Problem 485 498	calcification
+T8	Medical-Assertion 504 509;511 520	might represent
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 521 553	focal area of calcified aneurysm
+T10	Medical-Anatomy 556 561	Lungs
+T11	Medical-Assertion 577 579	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 581 594	abnormalities
+T13	Lesion-Assertion 602 604	No
+A3	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 605 616	mediastinal
+T15	Lesion-Anatomy 620 625	hilar
+T16	Lesion-Description 626 641	lymphadenopathy
+T17	Medical-Assertion 655 657	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 659 675	pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

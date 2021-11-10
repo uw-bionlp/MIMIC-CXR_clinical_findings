@@ -1,0 +1,28 @@
+T1	Medical-Assertion 201 203	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 204 223	focal consolidation
+T3	Medical-Problem 228 240	pneumothorax
+T4	Lesion-Size 256 260	7-mm
+T5	Lesion-Characteristic 261 279	well-circumscribed
+T6	Lesion-Description 280 287	nodular
+E5	Lesion-Description:T6
+T7	Lesion-Description 288 295	opacity
+T8	Lesion-Anatomy 304 315	lower lungs
+T9	Lesion-Size-Trend 319 340	similar to appearance
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Assertion 365 367	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 368 397	acute cardiopulmonary process
+T12	Medical-Problem 399 425	Well-circumscribed opacity
+T13	Medical-Anatomy 447 463	right lower lung
+T14	Medical-Assertion 467 478	most likely
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 481 494	nipple shadow
+T16	Lesion-Description 510 516	nodule
+E12	Lesion-Description:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

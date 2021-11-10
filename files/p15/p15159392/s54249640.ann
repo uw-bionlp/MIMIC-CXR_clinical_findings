@@ -1,0 +1,27 @@
+T1	Medical-Assertion 33 44	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 49 58	pneumonia
+T3	Medical-Problem 61 82	Bibasilar atelectasis
+E2	Medical-Problem:T3
+T4	Lesion-Anatomy 85 107	Right anterior 5th rib
+T5	Lesion-Characteristic 110 119	expansile
+T6	Lesion-Characteristic 120 125	lytic
+T7	Lesion-Description 126 132	lesion
+T8	Medical-Problem 551 592	Bibasilar atelectasis much likely chronic
+E7	Medical-Problem:T8
+T9	Medical-Assertion 612 623	no evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 628 637	pneumonia
+T11	Lesion-Characteristic 690 699	Expansile
+T12	Lesion-Description 700 706	lesion
+T13	Lesion-Anatomy 722 727	right
+T14	Medical-Anatomy 728 746	anterior fifth rib
+E12	Medical-Anatomy:T14
+T15	Medical-Assertion 764 775	No evidence
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 779 788	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

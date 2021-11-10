@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 283 288	aorta
+T2	Medical-Problem 292 307	mildly tortuous
+T3	Medical-Problem 326 361	mild atherosclerotic calcifications
+T4	Medical-Anatomy 369 380	aortic knob
+T5	Medical-Problem 383 387;389 399	Mild prominence
+T6	Medical-Anatomy 407 437	pulmonary arteries bilaterally
+T7	Medical-Assertion 438 449	may suggest
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 450 464;466 486	mild pulmonary arterial enlargement
+T9	Medical-Assertion 523 525	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 526 531;533 546	focal consolidation
+T11	Medical-Problem 548 564	pleural effusion
+T12	Medical-Problem 568 580	pneumothorax
+T13	Medical-Problem 594 601;603 614	Minimal atelectasis
+T14	Medical-Anatomy 631 654	lower lobes bilaterally
+T15	Medical-Problem 666 673;675 698	diffuse demineralization of the
+T16	Medical-Anatomy 699 717	osseous structures
+T17	Medical-Assertion 738 740	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 741 774	acute cardiopulmonary abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

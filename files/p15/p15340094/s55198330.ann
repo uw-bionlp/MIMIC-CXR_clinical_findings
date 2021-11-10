@@ -1,0 +1,27 @@
+T1	Medical-Problem 340 355	stable blunting
+T2	Medical-Anatomy 364 388	right costophrenic angle
+T3	Medical-Problem 451 473	focal pleural scarring
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 480 485	lungs
+T5	Medical-Assertion 506 513	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 515 534	focal consolidation
+T7	Medical-Problem 536 552	pleural effusion
+T8	Medical-Problem 557 569	pneumothorax
+T9	Medical-Anatomy 576 585;587 598	pulmonary vasculature
+T10	Medical-Assertion 602 605	not
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 606 614	engorged
+T12	Medical-Assertion 756 758	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 759 788	acute cardiopulmonary process
+T14	Medical-Assertion 795 806	No evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 810 823	heart failure
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

@@ -1,0 +1,33 @@
+T1	Lesion-Size-Trend 29 50	Interval worsening in
+A1	Lesion-Size-TrendValue T1 increasing
+T2	Lesion-Description 65 82	nodular opacities
+T3	Lesion-Anatomy 95 104;106 112	bilateral  lungs
+T4	Medical-Problem 127 154	slightly lower lung volumes
+E3	Medical-Problem:T4
+T5	Medical-Problem 164 176;178 194	superimposed  pulmonary edema
+T6	Medical-Problem 198 207	infection
+T7	Medical-Assertion 208 232	could also be considered
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 846 857	abnormality
+E6	Medical-Problem:T8
+T9	Lesion-Count 904 912	multiple
+T10	Lesion-Anatomy 913 922	pulmonary
+T11	Lesion-Description 923 933	metastases
+T12	Medical-Assertion 935 946	most likely
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 947 952	edema
+T14	Medical-Problem 956 969;971 991	alternatively pulmonary hemorrhage
+T15	Medical-Problem 994 1013	Small right pleural
+E12	Medical-Problem:T15
+T16	Medical-Problem 1014 1022	effusion
+E13	Medical-Problem:T16
+T17	Medical-Assertion 1054 1056	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1057 1069	pneumothorax
+E1	Lesion-Description:T2 has-Lesion-Size-Trend:T1 has-Lesion-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Count:T9 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

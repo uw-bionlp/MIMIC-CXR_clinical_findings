@@ -1,0 +1,26 @@
+T1	Medical-Problem 326 335	elevation
+T2	Medical-Anatomy 344 363	right hemidiaphragm
+T3	Lesion-Size 436 441	large
+T4	Lesion-Anatomy 442 453	right-sided
+T5	Lesion-Description 454 458	mass
+T6	Lesion-Anatomy 496 522	mediastinum from the right
+T7	Medical-Assertion 525 527	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 528 550	large pleural effusion
+T9	Medical-Assertion 571 582	no evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 586 598	pneumothorax
+T11	Medical-Assertion 601 603	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 604 627	new focal consolidation
+T13	Medical-Problem 680 712	Lower right peritracheal opacity
+E10	Medical-Problem:T13
+T14	Lesion-Anatomy 736 747	right-sided
+T15	Lesion-Description 748 752	mass
+T16	Lesion-Anatomy 776 787	mediastinum
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T16

@@ -1,0 +1,53 @@
+T1	Medical-Problem 341 349	fullness
+T2	Medical-Anatomy 357 368	right hilum
+T3	Lesion-Characteristic 385 395	underlying
+T4	Lesion-Description 396 411	lymphadenopathy
+T5	Medical-Anatomy 440 461	Pulmonary vasculature
+T6	Medical-Assertion 465 468	not
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 469 477	engorged
+T8	Medical-Problem 480 487;489 503	Diffuse bronchiectasis
+E7	Medical-Problem:T8
+T9	Medical-Problem 509 534	bronchial wall thickening
+E8	Medical-Problem:T9
+T10	Lesion-Size 539 544	small
+T11	Lesion-Description 545 552	nodular
+E10	Lesion-Description:T11
+T12	Lesion-Description 553 562	opacities
+T13	Lesion-Anatomy 575 585	both lungs
+T14	Medical-Problem 688 706	More focal opacity
+T15	Medical-Anatomy 724 739	left lower lobe
+T16	Medical-Problem 804 821	area of pneumonia
+E15	Medical-Problem:T16
+T17	Medical-Assertion 824 826	No
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 827 843	pleural effusion
+T19	Medical-Problem 847 859	pneumothorax
+T20	Medical-Assertion 879 881	No
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 882 907	acute osseous abnormality
+T22	Lesion-Anatomy 956 961	right
+T23	Lesion-Characteristic 985 991	likely
+T24	Medical-Problem 1007 1014;1016 1030	diffuse bronchiectasis
+E21	Medical-Problem:T24
+T25	Medical-Problem 1032 1057	bronchial wall thickening
+E22	Medical-Problem:T25
+T26	Lesion-Size 1063 1068	small
+T27	Lesion-Description 1069 1086	nodular opacities
+T28	Lesion-Anatomy 1099 1109	both lungs
+T29	Lesion-Size-Trend 1154 1163	minimally
+A4	Lesion-Size-TrendValue T29 no-change
+T30	Medical-Problem 1207 1232	More focal patchy opacity
+T31	Medical-Anatomy 1240 1255	left lower lobe
+T32	Medical-Problem 1301 1318	area of pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E11	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T14 has-Medical-Anatomy:T15
+E16	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Medical-Problem:T19 has-Medical-Assertion:T17
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E24	Lesion-Description:T27 has-Lesion-Anatomy:T22 has-Lesion-Characteristic:T23 has-Lesion-Size-Present:T26 has-Lesion-Anatomy:T28 has-Lesion-Size-Trend:T29
+E26	Medical-Problem:T30 has-Medical-Anatomy:T31
+E28	Medical-Problem:T32 has-Medical-Anatomy:T31

@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 235 240	lungs
+T2	Medical-Problem 246 259	hyperinflated
+T3	Medical-Problem 276 280	COPD
+T4	Medical-Assertion 283 285	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 286 305	focal consolidation
+T6	Medical-Problem 307 314;316 324	pleural effusion
+T7	Medical-Problem 328 340	pneumothorax
+T8	Medical-Problem 343 368	Right upper lobe scarring
+E7	Medical-Problem:T8
+T9	Lesion-Anatomy 393 408	left upper lobe
+T10	Lesion-Characteristic 409 418	calcified
+T11	Lesion-Description 419 428	granuloma
+T12	Medical-Problem 505 509	COPD
+E11	Medical-Problem:T12
+T13	Medical-Assertion 512 514	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 515 544	acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T4
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

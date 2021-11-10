@@ -1,0 +1,45 @@
+T1	Medical-Problem 265 305	Severe bilateral pulmonary consolidation
+T2	Medical-Problem 310 328	generally worsened
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 386 402	right lower lobe
+T4	Medical-Assertion 421 431	suggestion
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 435 445	cavitation
+T6	Medical-Anatomy 495 511	right upper lobe
+T7	Medical-Problem 545 550	edema
+T8	Medical-Problem 572 585	consolidation
+T9	Medical-Assertion 589 597	probably
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 598 607	pneumonia
+T11	Medical-Problem 624 633;635 645	pulmonary hemorrhage
+T12	Medical-Assertion 677 688	against any
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 689 712;714 727	active component of per heart failure
+T14	Medical-Problem 732 772	Several foci of focal pleural thickening
+T15	Medical-Anatomy 783 809;811 832	right upper costal pleural margin and left lower
+T16	Lesion-Assertion 833 855	raises the possibility
+A4	Lesion-AssertionValue T16 possible
+T17	Lesion-Characteristic 859 864	local
+T18	Lesion-Anatomy 865 868	rib
+T19	Lesion-Description 869 876	lesions
+T20	Lesion-Characteristic 882 894	disseminated
+T21	Lesion-Description 895 905	malignancy
+T22	Medical-Problem 923 958	healed and possibly acute fractures
+T23	Medical-Anatomy 991 1029	right fifth and and left sixth ribs 's
+T24	Medical-Problem 1056 1096	Small to moderate right pleural effusion
+E20	Medical-Problem:T24
+T25	Medical-Assertion 1136 1138	no
+A5	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1139 1151	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T9
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Lesion-Description:T19 has-Lesion-Assertion:T16 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T18
+E17	Lesion-Description:T21 has-Lesion-Assertion:T16 has-Lesion-Anatomy:T18 has-Lesion-Characteristic:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T26 has-Medical-Assertion:T25

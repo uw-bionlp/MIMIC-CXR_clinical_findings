@@ -1,0 +1,14 @@
+T1	Medical-Problem 278 304	minimal linear atelectasis
+T2	Medical-Anatomy 312 321;323 327	left lung base
+T3	Medical-Assertion 339 341	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 342 366	free intraperitoneal air
+T5	Medical-Anatomy 407 442	right upper quadrant of the abdomen
+T6	Medical-Problem 451 468	relatively lucent
+T7	Medical-Problem 507 515	free air
+E6	Medical-Problem:T7
+T8	Medical-Problem 582 602	free intraperitoneal
+E7	Medical-Problem:T8
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5

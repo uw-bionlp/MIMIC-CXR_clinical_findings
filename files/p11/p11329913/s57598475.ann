@@ -1,0 +1,40 @@
+T1	Medical-Anatomy 247 252	lungs
+T2	Medical-Problem 257 270	hyperinflated
+T3	Medical-Problem 277 296	relative flattening
+T4	Medical-Anatomy 304 313;315 329	bilateral hemidiaphragms
+T5	Medical-Assertion 362 364	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 365 381	pleural effusion
+T7	Medical-Problem 383 392;394 399	pulmonary edema
+T8	Medical-Problem 401 413	pneumothorax
+T9	Medical-Problem 418 431	consolidation
+T10	Medical-Problem 447 456	pneumonia
+E9	Medical-Problem:T10
+T11	Lesion-Assertion 608 620	questionable
+A2	Lesion-AssertionValue T11 possible
+T12	Lesion-Characteristic 621 632	ill-defined
+T13	Lesion-Description 633 648	nodular density
+T14	Lesion-Anatomy 670 710	anterior aspect of the T9 vertebral body
+T15	Medical-Problem 737 751	Hyperinflation
+E13	Medical-Problem:T15
+T16	Medical-Problem 769 778	emphysema
+E14	Medical-Problem:T16
+T17	Medical-Assertion 784 795	No evidence
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 799 808	pneumonia
+T19	Lesion-Assertion 814 826	Questionable
+A4	Lesion-AssertionValue T19 possible
+T20	Lesion-Size 827 832	small
+T21	Lesion-Description 833 848	nodular opacity
+T22	Lesion-Anatomy 889 915	anterior T9 vertebral body
+T23	Medical-Assertion 962 972	Resolution
+A5	Medical-AssertionValue T23 absent
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Assertion:T5
+E11	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Lesion-Description:T21 has-Lesion-Assertion:T19 has-Lesion-Size-Present:T20 has-Lesion-Anatomy:T22

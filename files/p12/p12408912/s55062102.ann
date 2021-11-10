@@ -1,0 +1,18 @@
+T1	Medical-Problem 224 256	pre-existing parenchymal opacity
+T2	Medical-Anatomy 265 315	left lower lung and at the level of the left hilus
+T3	Medical-Problem 403 412	skin fold
+T4	Medical-Anatomy 423 462	lateral aspects of the left hemi thorax
+T5	Medical-Assertion 463 485	should not be mistaken
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 493 505	pneumothorax
+T7	Medical-Assertion 508 510	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 511 535	larger pleural effusions
+T9	Medical-Assertion 538 540	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 541 556	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

@@ -1,0 +1,21 @@
+T1	Medical-Problem 120 132	pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Assertion 235 237;239 247	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 251 263	pneumothorax
+T4	Lesion-Size 268 272	1-cm
+T5	Lesion-Anatomy 273 289	right upper lobe
+T6	Lesion-Description 290 296	nodule
+T7	Lesion-Anatomy 316 345	right fifth intercostal space
+T8	Medical-Problem 352 372	lung volumes are low
+E7	Medical-Problem:T8
+T9	Medical-Problem 374 386;388 412	accentuating bronchovascular markings
+E8	Medical-Problem:T9
+T10	Medical-Problem 512 526	thoracic aorta
+E9	Medical-Problem:T10
+T11	Medical-Assertion 568 570	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 571 595	post-biopsy pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

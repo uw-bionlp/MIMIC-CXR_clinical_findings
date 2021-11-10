@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 423 428	heart
+T2	Medical-Assertion 432 435	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 436 446;448 455	enlarged.  Chronic
+T4	Medical-Problem 456 465	elevation
+E3	Medical-Problem:T4
+T5	Medical-Assertion 518 520	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 521 526;528 541	focal consolidation
+T7	Medical-Problem 543 558	pulmonary edema
+T8	Medical-Problem 560 576	pleural effusion
+T9	Medical-Problem 581 593	pneumothorax
+T10	Medical-Problem 643 649	Severe
+E8	Medical-Problem:T10
+T11	Medical-Problem 650 658	kyphosis
+T12	Medical-Problem 666 673;675 696	chronic compression deformity
+T13	Medical-Anatomy 697 717	lower thoracic spine
+T14	Medical-Problem 937 944	opacity
+T15	Medical-Anatomy 955 973	right heart border
+T16	Medical-Assertion 977 985	not seen
+A3	Medical-AssertionValue T16 absent
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Anatomy:T13
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

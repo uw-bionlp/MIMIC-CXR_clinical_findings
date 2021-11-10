@@ -1,0 +1,39 @@
+T1	Medical-Assertion 208 210	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 211 219;221 234	definite consolidation
+T3	Medical-Problem 238 243	edema
+T4	Medical-Problem 272 291	ill-defined density
+T5	Medical-Anatomy 315 369	intersection of the anterior right third and posterior
+T6	Medical-Anatomy 370 375;377 388	right seventh rib
+E5	Medical-Anatomy:T6
+T7	Medical-Problem 505 527;529 537	aorta remains markedly tortuous
+E6	Medical-Problem:T7
+T8	Medical-Problem 544 574	cardiac silhouette is enlarged
+E7	Medical-Problem:T8
+T9	Medical-Assertion 655 657	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 658 675	definite effusion
+T11	Medical-Problem 680 692	pneumothorax
+T12	Medical-Problem 703 723	Degenerative changes
+E10	Medical-Problem:T12
+T13	Medical-Assertion 808 810	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 811 834	acute pulmonary process
+T15	Medical-Problem 837 867;869 882	Hypertensive cardiomediastinal configuration
+E12	Medical-Problem:T15
+T16	Medical-Problem 904 911	density
+T17	Medical-Anatomy 932 945;947 969	lateral right hemithorax tracts with
+T18	Medical-Problem 1008 1015	osseous
+E15	Medical-Problem:T18
+T19	Lesion-Anatomy 1038 1047	pulmonary
+T20	Lesion-Description 1048 1055	nodules
+T21	Lesion-Assertion 1056 1077	not entirely excluded
+A4	Lesion-AssertionValue T21 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Lesion-Description:T20 has-Lesion-Anatomy:T19 has-Lesion-Assertion:T21

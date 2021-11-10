@@ -1,0 +1,50 @@
+T1	Medical-Problem 280 301	Slight hyperexpansion
+T2	Medical-Anatomy 309 314	lungs
+T3	Medical-Assertion 317 319	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 320 339	focal consolidation
+T5	Medical-Problem 352 361	pneumonia
+T6	Medical-Assertion 363 365	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 366 378	pneumothorax
+T8	Medical-Problem 382 398	pleural effusion
+T9	Medical-Problem 400 420	Mild pulmonary edema
+E7	Medical-Problem:T9
+T10	Medical-Assertion 422 424	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 426 438	cardiomegaly
+T12	Medical-Problem 441 458	Slight tortuosity
+T13	Medical-Anatomy 466 482	descending aorta
+T14	Lesion-Count 525 528	Two
+T15	Lesion-Characteristic 529 539	asymmetric
+T16	Lesion-Size 540 554	sub-centimeter
+T17	Lesion-Description 555 562	nodules
+T18	Lesion-Anatomy 570 579;581 592	bilateral lower chest
+T19	Lesion-Anatomy 635 644	pulmonary
+T20	Lesion-Description 645 652	lesions
+T21	Medical-Assertion 772 774	No
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 775 800	acute osseous abnormality
+T23	Medical-Problem 824 844	Mild pulmonary edema
+E19	Medical-Problem:T23
+T24	Medical-Assertion 852 854	No
+A5	Medical-AssertionValue T24 absent
+T25	Medical-Problem 855 874	focal consolidation
+T26	Medical-Problem 886 895	pneumonia
+T27	Medical-Problem 903 939	Asymmetric, sub-centimeter opacities
+T28	Medical-Anatomy 947 968	bilateral lower chest
+T29	Medical-Problem 1111 1145	Slightly tortuous descending aorta
+E24	Medical-Problem:T29
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Lesion-Description:T17 has-Lesion-Count:T14 has-Lesion-Characteristic:T15 has-Lesion-Size-Present:T16 has-Lesion-Anatomy:T18
+E17	Lesion-Description:T20 has-Lesion-Anatomy:T18 has-Lesion-Anatomy:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E20	Medical-Problem:T25 has-Medical-Assertion:T24
+E21	Medical-Problem:T26 has-Medical-Assertion:T24
+E22	Medical-Problem:T27 has-Medical-Anatomy:T28

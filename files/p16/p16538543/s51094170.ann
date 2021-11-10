@@ -1,0 +1,27 @@
+T1	Medical-Problem 245 272	area of parenchymal density
+T2	Medical-Anatomy 280 294	right mid lung
+T3	Medical-Problem 305 318	pleural-based
+E3	Medical-Problem:T3
+T4	Medical-Problem 397 414	increased density
+T5	Medical-Anatomy 422 431	left base
+T6	Medical-Assertion 432 445	suggestive of
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 446 456;458 468	developing infiltrate
+T8	Medical-Problem 472 483	atelectasis
+T9	Medical-Assertion 563 565	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 566 580	pneumothoraces
+T11	Medical-Problem 587 609	heart size is enlarged
+E9	Medical-Problem:T11
+T12	Medical-Problem 622 637	some prominence
+T13	Medical-Anatomy 645 676	pulmonary interstitial markings
+T14	Medical-Assertion 677 690	suggestive of
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 692 715	minimal pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

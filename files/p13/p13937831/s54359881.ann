@@ -1,0 +1,21 @@
+T1	Medical-Problem 372 414	minimal worsening in parenchymal opacities
+T2	Medical-Anatomy 422 437	right lung base
+T3	Medical-Anatomy 470 507	left lung base mid and superior lungs
+T4	Medical-Problem 564 580	mild enlargement
+T5	Medical-Anatomy 588 597;599 610	pulmonary vasculature
+T6	Medical-Assertion 616 618	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 619 634	pulmonary edema
+T8	Medical-Assertion 637 639	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 640 661	pleural abnormalities
+T10	Medical-Problem 682 701	Bibasilar opacities
+E8	Medical-Problem:T10
+T11	Medical-Assertion 702 713	may reflect
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 714 734	underlying pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

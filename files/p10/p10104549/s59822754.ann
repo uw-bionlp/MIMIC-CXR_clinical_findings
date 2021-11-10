@@ -1,0 +1,30 @@
+T1	Medical-Anatomy 309 314	Heart
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 363 380	aorta is tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 490 509	minimal atelectasis
+T4	Medical-Anatomy 518 533	right lung base
+T5	Medical-Assertion 557 559	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 560 576	pleural effusion
+T7	Medical-Problem 578 583;585 598	focal consolidation
+T8	Medical-Problem 602 614	pneumothorax
+T9	Lesion-Assertion 625 627	No
+A2	Lesion-AssertionValue T9 absent
+T10	Lesion-Description 628 639	mass lesion
+T11	Medical-Assertion 675 677	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 678 705	acute osseous abnormalities
+T13	Lesion-Assertion 725 727	No
+A4	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 728 732	lung
+T15	Lesion-Description 733 737	mass
+T16	Medical-Problem 751 784	Minimal right basilar atelectasis
+E12	Medical-Problem:T16
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E8	Lesion-Description:T10 has-Lesion-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14

@@ -1,0 +1,34 @@
+T1	Medical-Problem 211 240	Mild to moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 355 359	left
+T3	Medical-Problem 372 379	opacity
+E3	Medical-Problem:T3
+T4	Medical-Assertion 380 391	may reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 392 403	atelectasis
+T6	Medical-Problem 408 417	infection
+T7	Medical-Assertion 418 436	cannot be excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 472 474	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 475 491	pleural effusion
+T10	Medical-Problem 495 507	pneumothorax
+T11	Medical-Assertion 537 539	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 540 567	acute osseous abnormalities
+T13	Medical-Anatomy 644 654	left lower
+T14	Medical-Problem 660 667	opacity
+E10	Medical-Problem:T14
+T15	Medical-Assertion 669 675	likely
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 676 687	atelectasis
+T17	Medical-Problem 693 702	infection
+T18	Medical-Assertion 706 709;711 719	not excluded
+A6	Medical-AssertionValue T18 possible
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T13 has-Medical-Assertion:T18

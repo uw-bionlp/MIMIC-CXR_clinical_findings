@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 314 319	lungs
+T2	Medical-Assertion 324 329	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 334 347	consolidation
+T4	Lesion-Description 350 367	Nodular opacities
+T5	Lesion-Anatomy 377 387	lung bases
+T6	Medical-Problem 435 451	calcific density
+T7	Medical-Anatomy 459 473	left lung base
+T8	Lesion-Assertion 477 483	likely
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Characteristic 485 494	calcified
+T10	Lesion-Description 495 504	granuloma
+T11	Medical-Anatomy 511 516	lungs
+T12	Medical-Assertion 537 544	without
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 545 553	effusion
+T14	Medical-Problem 618 627;629 659	scattered atherosclerotic calcifications
+T15	Medical-Anatomy 667 678	aortic arch
+T16	Medical-Assertion 809 811	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 812 841	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

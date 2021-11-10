@@ -1,0 +1,19 @@
+T1	Medical-Assertion 33 44	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 48 63	pulmonary edema
+T3	Medical-Problem 107 111;113 140	Left  superior perihilar opacity
+E2	Medical-Problem:T3
+T4	Lesion-Anatomy 608 616	AP hilar
+T5	Lesion-Description 617 621	mass
+T6	Medical-Problem 649 654	right
+E5	Medical-Problem:T6
+T7	Lesion-Description 655 665	adenopathy
+E6	Lesion-Description:T7
+T8	Medical-Assertion 668 670	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 671 680	pulmonary
+E7	Medical-Problem:T9
+T10	Medical-Problem 681 710	edema.  Moderate cardiomegaly
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

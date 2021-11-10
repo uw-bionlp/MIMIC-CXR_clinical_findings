@@ -1,0 +1,21 @@
+T1	Medical-Problem 235 250	mild tortuosity
+T2	Medical-Anatomy 258 266;268 273	thoracic aorta
+T3	Medical-Problem 310 334	Subtle increased density
+T4	Medical-Anatomy 342 346;348 357	left lung base
+T5	Medical-Problem 405 414	infection
+T6	Medical-Assertion 453 455	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 456 472	pleural effusion
+T8	Medical-Problem 476 488	pneumothorax
+T9	Medical-Problem 508 532	Subtle increased opacity
+T10	Medical-Anatomy 540 554	left lung base
+T11	Medical-Assertion 555 568	worrisome for
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 569 578	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

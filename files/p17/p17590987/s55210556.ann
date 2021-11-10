@@ -1,0 +1,26 @@
+T1	Medical-Problem 297 335	medial right posterior basilar opacity
+T2	Medical-Anatomy 343 348;350 360	right lower lobe
+T3	Medical-Problem 377 386	pneumonia
+T4	Medical-Problem 403 416	opacification
+T5	Medical-Anatomy 425 432	lingula
+T6	Medical-Assertion 433 443	suggesting
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 447 471	infectious consolidation
+T8	Medical-Assertion 483 485	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 486 502	pleural effusion
+T10	Medical-Problem 507 519	pneumothorax
+T11	Medical-Problem 572 581	Opacities
+T12	Medical-Anatomy 589 596	lingula
+T13	Medical-Anatomy 601 617	right lower lobe
+T14	Medical-Assertion 618 628	suggesting
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 630 639	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

@@ -1,0 +1,19 @@
+T1	Medical-Assertion 369 380	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 384 396	pneumothorax
+T3	Medical-Problem 455 486	prominent interstitial markings
+T4	Medical-Anatomy 494 499	bases
+T5	Medical-Assertion 506 530	could be consistent with
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 531 553	underlying sarcoidosis
+T7	Medical-Assertion 556 567	No evidence
+A3	Medical-AssertionValue T7 absent
+T8	Lesion-Anatomy 571 576	hilar
+T9	Lesion-Anatomy 581 592	mediastinal
+T10	Lesion-Description 593 603	adenopathy
+T11	Medical-Problem 607 628	acute focal pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T7

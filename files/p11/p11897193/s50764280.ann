@@ -1,0 +1,21 @@
+T1	Medical-Problem 304 331	Somewhat spiculated opacity
+T2	Medical-Anatomy 339 362	right infrahilar region
+T3	Medical-Problem 439 443;445 467	mild associated volume loss
+T4	Medical-Anatomy 472 488	right hemithorax
+T5	Medical-Assertion 489 496	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 497 515;517 525	visualized pleural effusion
+T7	Medical-Assertion 793 795	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 796 809;811 824	acute osseous abnormalities
+T9	Lesion-Anatomy 851 867	right infrahilar
+T10	Lesion-Description 868 879	mass lesion
+T11	Medical-Assertion 880 887	without
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 888 915;917 940	definite superimposed acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

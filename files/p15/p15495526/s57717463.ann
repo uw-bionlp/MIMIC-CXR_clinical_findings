@@ -1,0 +1,29 @@
+T1	Medical-Problem 256 273	Relative haziness
+T2	Medical-Anatomy 281 291	lung bases
+T3	Medical-Problem 406 420	patchy opacity
+T4	Medical-Anatomy 432 446	over the heart
+T5	Medical-Anatomy 510 527	right middle lobe
+T6	Lesion-Size-Trend 573 587	grossly stable
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Assertion 602 615	may represent
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 616 623;625 645	chronic atelectasis/scarring
+T9	Medical-Assertion 708 710	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 711 727	pleural effusion
+T11	Medical-Problem 731 743	pneumothorax
+T12	Medical-Problem 758 776;778 794	cardiac silhouette remains enlarged
+E9	Medical-Problem:T12
+T13	Medical-Problem 928 934	Patchy
+E10	Medical-Problem:T13
+T14	Medical-Problem 935 942	opacity
+E11	Medical-Problem:T14
+T15	Lesion-Size-Trend 1034 1048	grossly stable
+A4	Lesion-Size-TrendValue T15 no-change
+T16	Medical-Problem 1078 1106	chronic atelectasis/scarring
+E12	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

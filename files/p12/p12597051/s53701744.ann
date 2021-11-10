@@ -1,0 +1,21 @@
+T1	Medical-Problem 285 300	Pulmonary edema
+T2	Medical-Anatomy 308 318	right lung
+T3	Medical-Problem 338 359;361 374	severe left perihilar consolidation
+T4	Medical-Problem 379 407	less extensive consolidation
+T5	Medical-Anatomy 415 438;440 447	right lower lung in the midline
+T6	Medical-Problem 477 503	asymmetric pulmonary edema
+E6	Medical-Problem:T6
+T7	Medical-Problem 509 518;520 525	pulmonary edema
+T8	Medical-Problem 530 550	concurrent pneumonia
+T9	Medical-Assertion 551 571	should be considered
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Anatomy 573 578	Heart
+T11	Medical-Problem 582 591;593 601	partially obscured
+T12	Medical-Problem 609 631	elevated hemidiaphragm
+E11	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Assertion:T9
+E8	Medical-Problem:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10

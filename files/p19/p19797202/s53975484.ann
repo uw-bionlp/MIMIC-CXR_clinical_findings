@@ -1,0 +1,14 @@
+T1	Medical-Problem 294 309	pulmonary edema
+T2	Medical-Anatomy 340 349	left lung
+T3	Medical-Problem 354 362	worsened
+T4	Medical-Anatomy 370 380	right lung
+T5	Medical-Problem 401 421	lower lobe pneumonia
+T6	Medical-Problem 547 551;553 565	Mild cardiomegaly
+E6	Medical-Problem:T6
+T7	Medical-Assertion 582 584	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 585 597	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7

@@ -1,0 +1,38 @@
+T1	Medical-Problem 315 345	atherosclerotic calcifications
+T2	Medical-Anatomy 360 371	aortic knob
+T3	Medical-Problem 416 430;432 451	Mild pulmonary vascular congestion
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 462 467	Lungs
+T5	Medical-Problem 472 485	hyperinflated
+T6	Medical-Problem 515 524	emphysema
+T7	Medical-Problem 527 535	Blunting
+T8	Medical-Anatomy 543 566	left costophrenic angle
+T9	Medical-Assertion 567 582	likely reflects
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 585 590;592 613	trace left pleural effusion
+T11	Medical-Problem 616 635	Streaky atelectasis
+T12	Medical-Anatomy 652 664;666 672	retrocardiac region
+T13	Medical-Assertion 673 680	without
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 681 700	focal consolidation
+T15	Medical-Assertion 703 705	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 706 718	pneumothorax
+T17	Medical-Assertion 742 744	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 746 773	acute osseous abnormalities
+T19	Medical-Problem 794 818	Left basilar atelectasis
+E15	Medical-Problem:T19
+T20	Medical-Problem 824 851	trace left pleural effusion
+E16	Medical-Problem:T20
+T21	Medical-Problem 854 868;870 889	Mild pulmonary vascular congestion
+E17	Medical-Problem:T21
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

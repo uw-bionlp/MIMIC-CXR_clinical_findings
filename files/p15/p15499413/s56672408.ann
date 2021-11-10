@@ -1,0 +1,37 @@
+T1	Lesion-Description 248 252	mass
+T2	Lesion-Anatomy 267 283	right hemithorax
+T3	Lesion-Count 356 364	Mutliple
+T4	Lesion-Description 365 372	nodules
+T5	Medical-Assertion 423 425	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 426 451	acute focal consolidation
+T7	Medical-Problem 453 460;462 470	pleural effusion
+T8	Medical-Problem 474 486	pneumothorax
+T9	Medical-Anatomy 489 499	Heart size
+T10	Medical-Problem 514 531	slightly enlarged
+T11	Medical-Problem 612 638	Associated rib destruction
+T12	Medical-Anatomy 646 651	right
+T13	Lesion-Description 667 671	mass
+E12	Lesion-Description:T13
+T14	Lesion-Size 699 704	Large
+T15	Lesion-Description 705 709	mass
+T16	Lesion-Anatomy 717 733	right hemithorax
+T17	Lesion-Size-Trend 734 750	mostly unchanged
+A2	Lesion-Size-TrendValue T17 no-change
+T18	Lesion-Count 753 761	Multiple
+T19	Lesion-Description 763 770	nodules
+T20	Medical-Assertion 811 813	No
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 814 839	acute focal consolidation
+T22	Medical-Problem 844 860	pleural effusion
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Count:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E14	Lesion-Description:T15 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T16 has-Lesion-Size-Trend:T17
+E17	Lesion-Description:T19 has-Lesion-Count:T18
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T22 has-Medical-Assertion:T20

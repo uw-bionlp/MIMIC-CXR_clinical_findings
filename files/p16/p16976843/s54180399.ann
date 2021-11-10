@@ -1,0 +1,32 @@
+T1	Medical-Assertion 175 177	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 178 197	focal consolidation
+T3	Medical-Problem 199 215	pleural effusion
+T4	Medical-Problem 220 228	evidence
+E3	Medical-Problem:T4
+T5	Medical-Problem 232 244	pneumothorax
+T6	Medical-Assertion 356 358	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 359 374	pulmonary edema
+T8	Medical-Assertion 383 389	may be
+A3	Medical-AssertionValue T8 possible
+T9	Lesion-Characteristic 392 400	punctate
+T10	Lesion-Characteristic 401 410	calcified
+T11	Lesion-Description 412 421	granuloma
+T12	Lesion-Anatomy 429 445	right upper lobe
+T13	Medical-Assertion 488 499	No evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 503 522	active tuberculosis
+T15	Medical-Assertion 525 533	Possible
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 534 558	tiny calcified granuloma
+T17	Medical-Problem 567 573	vessel
+T18	Medical-Anatomy 584 600	right upper lung
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T18
+E12	Medical-Problem:T17 has-Medical-Assertion:T15 has-Medical-Anatomy:T18

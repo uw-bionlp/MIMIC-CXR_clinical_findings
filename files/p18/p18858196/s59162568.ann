@@ -1,0 +1,30 @@
+T1	Medical-Problem 211 234	Lungs are hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 291 307	right upper lung
+T3	Medical-Problem 320 334	subtle opacity
+T4	Medical-Anatomy 355 385	right sixth posterior rib arch
+T5	Medical-Assertion 387 393	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 395 428	overlapping os ossific structures
+T7	Lesion-Assertion 436 448	difficult to
+A2	Lesion-AssertionValue T7 possible
+T8	Lesion-Characteristic 460 470	underlying
+T9	Lesion-Description 472 478	nodule
+T10	Medical-Problem 481 518	Biapical pleural parenchymal scarring
+E8	Medical-Problem:T10
+T11	Medical-Problem 643 657	Subtle opacity
+T12	Medical-Anatomy 678 694	right upper lung
+T13	Medical-Assertion 696 702	likely
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 703 714;716 725	overlapping densities
+T15	Lesion-Assertion 733 753	difficult to exclude
+A4	Lesion-AssertionValue T15 possible
+T16	Lesion-Characteristic 756 760	true
+T17	Lesion-Anatomy 761 770	pulmonary
+T18	Lesion-Description 771 777	nodule
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Characteristic:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Lesion-Description:T18 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T17

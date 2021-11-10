@@ -1,0 +1,18 @@
+T1	Medical-Problem 222 262	Moderate-to-large right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 327 378	Right lower lobe atelectasis, more severe than left
+E2	Medical-Problem:T2
+T3	Medical-Problem 455 475	pericardial effusion
+T4	Medical-Assertion 476 496	difficult to exclude
+A1	Medical-AssertionValue T4 possible
+T5	Lesion-Anatomy 499 513	Bilateral lung
+T6	Lesion-Description 514 521	nodules
+T7	Lesion-Characteristic 526 533	central
+T8	Lesion-Description 535 545	adenopathy
+T9	Lesion-Size-Trend 549 567	essentially stable
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Problem 570 592	Small pneumoperitoneum
+E8	Medical-Problem:T10
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T9
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T7 has-Lesion-Size-Trend:T9

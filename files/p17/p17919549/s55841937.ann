@@ -1,0 +1,32 @@
+T1	Medical-Problem 185 202	Slight prominence
+T2	Medical-Anatomy 210 215	hilar
+T3	Medical-Problem 221 245	subtle lobulated contour
+T4	Lesion-Assertion 246 261	could be due to
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Characteristic 263 273	underlying
+T6	Lesion-Description 274 285	lymph nodes
+T7	Medical-Assertion 332 334	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 335 340;342 355	focal consolidation
+T9	Medical-Problem 357 373	pleural effusion
+T10	Medical-Problem 378 386	evidence
+E8	Medical-Problem:T10
+T11	Medical-Problem 390 402	pneumothorax
+T12	Medical-Assertion 489 491	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 492 521	acute cardiopulmonary process
+T14	Medical-Problem 524 546	Stable mild prominence
+T15	Medical-Anatomy 554 558	hila
+T16	Lesion-Assertion 559 562;564 573	may relate to
+A4	Lesion-AssertionValue T16 possible
+T17	Lesion-Characteristic 574 584	underlying
+T18	Lesion-Description 585 596	lymph nodes
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T7
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Lesion-Description:T18 has-Lesion-Assertion:T16 has-Lesion-Characteristic:T17

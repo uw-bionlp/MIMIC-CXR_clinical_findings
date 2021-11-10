@@ -1,0 +1,32 @@
+T1	Medical-Problem 293 317	persistent opacification
+T2	Medical-Anatomy 326 347	left lower hemithorax
+T3	Medical-Assertion 348 358	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 376 401	parenchymal opacification
+T5	Medical-Problem 407 423	pleural effusion
+T6	Medical-Assertion 426 445	Possible etiologies
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 454 463	pneumonia
+T8	Medical-Problem 467 477;479 490	widespread atelectasis
+T9	Medical-Anatomy 505 520	left lower lobe
+T10	Medical-Anatomy 525 556	perhaps portions of the lingula
+T11	Medical-Problem 563 613	degree of leftward shift of mediastinal structures
+E9	Medical-Problem:T11
+T12	Medical-Problem 650 657	opacity
+T13	Medical-Anatomy 678 693	left upper lobe
+T14	Medical-Problem 771 788;790 810	small-to-moderate subpulmonic effusion
+T15	Medical-Anatomy 818 823	right
+T16	Medical-Assertion 859 867	probably
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 874 896	associated atelectasis
+T18	Medical-Problem 901 910	deformity
+T19	Medical-Anatomy 918 938	left distal clavicle
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E6	Medical-Problem:T8 has-Medical-Assertion:T6 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19

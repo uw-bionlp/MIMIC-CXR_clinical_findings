@@ -1,0 +1,27 @@
+T1	Medical-Problem 296 319	Saccular bronchiectasis
+T2	Medical-Problem 324 350	peribronchial infiltration
+T3	Medical-Anatomy 358 370;372 376	right middle lobe
+T4	Medical-Problem 457 474	mild cardiomegaly
+T5	Medical-Assertion 475 487	has resolved
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 499 513	hyperinflation
+E5	Medical-Problem:T6
+T7	Medical-Problem 525 534	emphysema
+E6	Medical-Problem:T7
+T8	Medical-Assertion 547 561	no findings to
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 577 586	pneumonia
+T10	Medical-Problem 591 613	cardiac decompensation
+T11	Medical-Assertion 625 627	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 628 644	pleural effusion
+T13	Lesion-Characteristic 648 656	evidence
+T14	Lesion-Characteristic 660 667	central
+T15	Lesion-Description 669 679	lymph node
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14

@@ -1,0 +1,15 @@
+T1	Medical-Assertion 279 281	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 282 294	pneumothorax
+T3	Medical-Problem 312 343	new small left pleural effusion
+T4	Medical-Problem 348 359	atelectasis
+T5	Medical-Anatomy 367 378;380 389	base of the left lung
+T6	Medical-Problem 414 444	Heart size borderline enlarged
+E5	Medical-Problem:T6
+T7	Medical-Assertion 447 449	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 451 466	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

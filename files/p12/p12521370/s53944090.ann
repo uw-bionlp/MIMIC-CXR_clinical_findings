@@ -1,0 +1,22 @@
+T1	Medical-Problem 461 484	volumes remain very low
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 609 637	infra hilar right lower lobe
+T3	Medical-Problem 659 672	consolidation
+T4	Medical-Anatomy 715 736	pulmonary vasculature
+E4	Medical-Anatomy:T4
+T5	Medical-Anatomy 773 798	supra cardiac mediastinum
+T6	Medical-Assertion 799 807	suggests
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 808 825	venous distention
+T8	Medical-Assertion 827 835;837 843	probably due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 844 859	volume overload
+T10	Medical-Problem 897 906	effusions
+E8	Medical-Problem:T10
+T11	Medical-Assertion 930 932	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 933 945	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,27 @@
+T1	Medical-Assertion 583 585	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 586 598	pneumothorax
+T3	Medical-Assertion 601 603	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 604 621	pneumomediastinum
+T5	Medical-Problem 624 628;630 659	Mild pulmonary vascular congestion
+E3	Medical-Problem:T5
+T6	Medical-Problem 672 705	Small left-sided pleural effusion
+E4	Medical-Problem:T6
+T7	Medical-Problem 787 804	Post CABG changes
+E5	Medical-Problem:T7
+T8	Lesion-Characteristic 818 827	Calcified
+T9	Lesion-Description 828 837	granuloma
+T10	Lesion-Anatomy 858 863;865 878	right mid lung zone
+T11	Lesion-Characteristic 883 893	associated
+T12	Lesion-Characteristic 894 903	calcified
+T13	Lesion-Anatomy 904 922	right paratracheal
+T14	Lesion-Description 923 933	lymph node
+T15	Lesion-Size-Trend 935 944	unchanged
+A3	Lesion-Size-TrendValue T15 no-change
+T16	Medical-Problem 965 998	Small left-sided pleural effusion
+E13	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E7	Lesion-Description:T9 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T10
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T13 has-Lesion-Size-Trend:T15

@@ -1,0 +1,29 @@
+T1	Medical-Problem 334 369	multifocal bilateral lung opacities
+T2	Medical-Anatomy 385 400;402 408	right perihilar region
+T3	Medical-Problem 443 472	minimally increased opacities
+T4	Medical-Anatomy 481 505	left retrocardiac region
+T5	Medical-Problem 513 534	increase in opacities
+E5	Medical-Problem:T5
+T6	Medical-Assertion 535 550	could be due to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 552 574	increasing atelectasis
+T8	Medical-Problem 578 587	pneumonia
+T9	Medical-Problem 594 603	opacities
+T10	Medical-Anatomy 611 626;628 634	right perihilar region
+T11	Medical-Problem 667 676	opacities
+E10	Medical-Problem:T11
+T12	Medical-Problem 683 695;697 706	superimposed infection
+E11	Medical-Problem:T12
+T13	Medical-Problem 710 720	aspiration
+E12	Medical-Problem:T13
+T14	Medical-Problem 735 766	pre-existent lung abnormalities
+E13	Medical-Problem:T14
+T15	Medical-Problem 769 774;776 795	Right apical pneumothorax
+T16	Medical-Assertion 799 819	no longer visualized
+A2	Medical-AssertionValue T16 absent
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E14	Medical-Problem:T15 has-Medical-Assertion:T16

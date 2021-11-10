@@ -1,0 +1,23 @@
+T1	Lesion-Anatomy 266 281	right lung base
+T2	Lesion-Description 289 296	nodular
+E2	Lesion-Description:T2
+T3	Lesion-Description 297 304	opacity
+T4	Medical-Problem 367 378	atelectasis
+T5	Medical-Anatomy 386 391;393 413	right cardiophrenic region
+T6	Medical-Anatomy 425 439	left lung base
+T7	Medical-Problem 470 486	Minimal blunting
+T8	Medical-Anatomy 494 517	left costophrenic angle
+T9	Medical-Problem 536 541;543 551	small effusion
+T10	Medical-Problem 609 620	volume loss
+E10	Medical-Problem:T10
+T11	Medical-Problem 627 648	slight leftward shift
+T12	Medical-Anatomy 656 684	cardiomediastinal silhouette
+T13	Medical-Assertion 836 838	No
+A1	Medical-AssertionValue T13 absent
+T14	Medical-Problem 839 851	pneumothorax
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T8
+E11	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Assertion:T13

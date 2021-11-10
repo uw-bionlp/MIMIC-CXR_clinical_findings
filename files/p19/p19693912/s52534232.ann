@@ -1,0 +1,25 @@
+T1	Medical-Assertion 30 32	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 33 46	acute process
+T3	Lesion-Description 53 59	nodule
+T4	Lesion-Anatomy 63 85	right perihilar region
+T5	Medical-Anatomy 456 461	lungs
+T6	Medical-Assertion 466 471	clear
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 475 494	focal consolidation
+T8	Lesion-Assertion 517 527	suggestion
+A3	Lesion-AssertionValue T8 possible
+T9	Lesion-Description 533 540	nodular
+E6	Lesion-Description:T9
+T10	Lesion-Description 541 548	opacity
+T11	Lesion-Anatomy 549 580	just lateral to the right hilum
+T12	Lesion-Size 910 916	1.3-cm
+T13	Lesion-Description 917 924	nodular
+E10	Lesion-Description:T13
+T14	Lesion-Description 925 932	opacity
+T15	Lesion-Anatomy 940 962	right perihilar region
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T11
+E11	Lesion-Description:T14 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T15

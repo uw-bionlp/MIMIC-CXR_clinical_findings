@@ -1,0 +1,16 @@
+T1	Medical-Problem 340 357	complete collapse
+T2	Medical-Anatomy 358 373	left lower lobe
+T3	Medical-Anatomy 400 409;411 424	posterior basal segment
+T4	Medical-Problem 428 457	still substantially collapsed
+T5	Medical-Problem 460 488	Multifocal broncho pneumonia
+T6	Medical-Anatomy 510 526	right lower lobe
+T7	Medical-Anatomy 543 554	right upper
+T8	Medical-Problem 557 565;567 597	Small to moderate left pleural effusion
+E8	Medical-Problem:T8
+T9	Medical-Assertion 627 629	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 630 642	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9

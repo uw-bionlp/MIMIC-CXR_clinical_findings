@@ -1,0 +1,38 @@
+T1	Medical-Problem 33 65	stable post-operative appearance
+T2	Medical-Anatomy 69 78	left lung
+T3	Medical-Problem 80 99;101 115	minimally increased  opacification
+T4	Medical-Anatomy 119 135	right lower lung
+T5	Medical-Assertion 137 149	may reprsent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 206 240	uncgaged cardiomediastinal borders
+E5	Medical-Problem:T6
+T7	Medical-Anatomy 498 514	right lower lobe
+T8	Medical-Assertion 515 533	likely corresponds
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 540 550;552 559	infectious process
+T10	Medical-Problem 619 636	Mild cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Problem 641 655	tortuous aorta
+E9	Medical-Problem:T11
+T12	Medical-Problem 669 678	Opacities
+T13	Medical-Anatomy 686 690;692 702	left hemithorax
+T14	Medical-Problem 723 745	post-operative changes
+T15	Medical-Assertion 797 799	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 800 812	pneumothorax
+T17	Medical-Problem 816 834;836 845	increasing pleural effusions
+T18	Medical-Anatomy 848 866	Left hemidiaphragm
+E15	Medical-Anatomy:T18
+T19	Medical-Problem 891 905	Left perihilar
+E16	Medical-Problem:T19
+T20	Medical-Problem 907 916	opacities
+E17	Medical-Problem:T20
+T21	Lesion-Size-Trend 952 969	grossly unchanged
+A4	Lesion-Size-TrendValue T21 no-change
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15

@@ -1,0 +1,19 @@
+T1	Medical-Problem 247 279	Moderate cardiomegaly is chronic
+E1	Medical-Problem:T1
+T2	Medical-Problem 315 321;323 340	Mildly increased opacity
+T3	Medical-Anatomy 348 371	lower lungs bilaterally
+T4	Medical-Assertion 372 385	could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 389 399;401 416	element of pulmonary edema
+T6	Medical-Assertion 428 430	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 431 447	pleural effusion
+T8	Medical-Problem 451 463	pneumothorax
+T9	Medical-Problem 532 552	Mild pulmonary edema
+E7	Medical-Problem:T9
+T10	Medical-Problem 555 584	Chronic moderate cardiomegaly
+E8	Medical-Problem:T10
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6

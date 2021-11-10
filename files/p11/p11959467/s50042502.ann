@@ -1,0 +1,35 @@
+T1	Medical-Problem 366 386	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 455 470	mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 472 489	Apparent widening
+T4	Medical-Anatomy 498 526	superior mediastinal contour
+T5	Medical-Problem 577 585	crowding
+T6	Medical-Anatomy 593 619	bronchovascular structures
+T7	Medical-Assertion 620 627	without
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 628 649	overt pulmonary edema
+T9	Medical-Problem 652 679	Patchy and linear opacities
+T10	Medical-Anatomy 687 697	lung bases
+T11	Medical-Assertion 698 712	likely reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 713 721;723 734	areas of atelectasis
+T13	Medical-Assertion 736 738	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 739 761	large pleural effusion
+T15	Medical-Problem 765 777	pneumothorax
+T16	Medical-Assertion 790 792	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 793 798;800 821	acute osseous abnormalities
+T18	Medical-Problem 925 941	Low lung volumes
+E14	Medical-Problem:T18
+T19	Medical-Problem 947 968	bibasilar atelectasis
+E15	Medical-Problem:T19
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

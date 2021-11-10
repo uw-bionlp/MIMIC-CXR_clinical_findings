@@ -1,0 +1,27 @@
+T1	Medical-Problem 248 266	large pneumothorax
+T2	Medical-Anatomy 274 296	base of the right lung
+T3	Medical-Problem 324 352	lung is retracted superiorly
+T4	Medical-Anatomy 387 412	inferior edge of the lung
+T5	Medical-Problem 431 451	dense patchy opacity
+T6	Medical-Anatomy 459 464;466 476	right upper zone
+T7	Lesion-Size 564 569	small
+T8	Lesion-Description 570 585	nodular opacity
+T9	Lesion-Anatomy 593 613;615 635	lower portion of the retracted right lung
+T10	Lesion-Size-Trend 637 646	unchanged
+A1	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Problem 660 691	small-to-moderate left effusion
+E10	Medical-Problem:T11
+T12	Medical-Problem 716 730	patchy opacity
+T13	Medical-Anatomy 738 769;771 775	mid and lower zones of the left lung
+T14	Medical-Problem 782 803	parenchymal opacities
+E13	Medical-Problem:T14
+T15	Medical-Problem 933 961	Relatively largepneumothorax
+T16	Medical-Anatomy 969 991	base of the right lung
+T17	Medical-Problem 1143 1146	ptx
+E16	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Lesion-Description:T8 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16

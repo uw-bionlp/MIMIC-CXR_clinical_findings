@@ -1,0 +1,28 @@
+T1	Medical-Problem 33 72	Stable mild to moderate pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 74 102	Interval increase in opacity
+T3	Medical-Anatomy 112 126	left lung base
+T4	Medical-Assertion 128 147	may be secondary to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 148 157	pneumonia
+T6	Medical-Problem 159 185;187 205	Persistent small bilateral  pleural effusions
+E5	Medical-Problem:T6
+T7	Medical-Problem 591 606	pulmonary edema
+E6	Medical-Problem:T7
+T8	Medical-Problem 641 654;656 665	Small pleural effusions
+E7	Medical-Problem:T8
+T9	Medical-Anatomy 708 723	left lower lobe
+T10	Medical-Problem 728 740	consolidated
+T11	Medical-Assertion 751 759	could be
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 760 771	atelectasis
+T13	Medical-Assertion 773 788	possibly due to
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 789 799	aspiration
+T15	Medical-Problem 814 823	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T9 has-Medical-Assertion:T11 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T9 has-Medical-Assertion:T11 has-Medical-Assertion:T13

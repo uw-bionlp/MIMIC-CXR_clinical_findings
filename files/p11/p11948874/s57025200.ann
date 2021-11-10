@@ -1,0 +1,31 @@
+T1	Medical-Problem 240 256;258 273	Mild-to-moderate pulmonary edema
+T2	Medical-Anatomy 281 290	left lung
+T3	Medical-Problem 306 331	Very severe consolidation
+T4	Medical-Anatomy 340 350	right lung
+T5	Medical-Problem 388 404	asymmetric edema
+E5	Medical-Problem:T5
+T6	Medical-Problem 407 417	hemorrhage
+E6	Medical-Problem:T6
+T7	Medical-Problem 421 430	pneumonia
+E7	Medical-Problem:T7
+T8	Medical-Assertion 476 479	not
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 483 511	large right pleural effusion
+T10	Medical-Problem 516 540	some right pleural fluid
+E9	Medical-Problem:T10
+T11	Medical-Problem 601 609	Heart is
+E10	Medical-Problem:T11
+T12	Medical-Problem 610 629	moderately enlarged
+E11	Medical-Problem:T12
+T13	Medical-Anatomy 633 644	Mediastinal
+T14	Medical-Assertion 655 658	not
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 659 669	as dilated
+T16	Medical-Assertion 739 741	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 742 754	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

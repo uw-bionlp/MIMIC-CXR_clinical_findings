@@ -1,0 +1,15 @@
+T1	Medical-Problem 160 180	left basilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 203 214	atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 226 255	underlying infectious process
+T4	Medical-Assertion 257 275	cannot be excluded
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Anatomy 282 287	lungs
+T6	Medical-Assertion 321 323	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 324 331;333 341	pleural effusion
+T8	Medical-Problem 345 357	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6

@@ -1,0 +1,24 @@
+T1	Medical-Assertion 235 237	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 238 253	pulmonary edema
+T3	Medical-Problem 258 270	pneumothorax
+T4	Medical-Problem 292 312	small right effusion
+E3	Medical-Problem:T4
+T5	Lesion-Count 410 418	Multiple
+T6	Lesion-Anatomy 419 433	bilateral lung
+T7	Lesion-Description 434 441	nodules
+T8	Lesion-Description 446 463	mass-like opacity
+T9	Lesion-Anatomy 471 487	right lower lobe
+T10	Lesion-Size-Trend 493 507	increased size
+A2	Lesion-Size-TrendValue T10 increasing
+T11	Lesion-Anatomy 515 526	right hilum
+T12	Lesion-Assertion 527 540	likely due to
+A3	Lesion-AssertionValue T12 possible
+T13	Lesion-Description 541 556	lymphadenopathy
+T14	Lesion-Size-Trend 566 575	unchanged
+A4	Lesion-Size-TrendValue T14 no-change
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T9
+E10	Lesion-Description:T13 has-Lesion-Size-Trend:T10 has-Lesion-Anatomy:T11 has-Lesion-Assertion:T12 has-Lesion-Size-Trend:T14

@@ -1,0 +1,63 @@
+T1	Medical-Problem 154 195	Multifocal areas of consolidation rapidly
+E1	Medical-Problem:T1
+T2	Medical-Problem 279 299	multifocal pneumonia
+E2	Medical-Problem:T2
+T3	Medical-Problem 459 481	increasing volume loss
+T4	Medical-Anatomy 490 506	right upper lobe
+T5	Medical-Problem 522 531	elevation
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 560 576	right upper lobe
+T7	Medical-Problem 585 605	densely consolidated
+T8	Medical-Problem 640 662	more hazy ground-glass
+T9	Medical-Problem 689 705;707 737	area of combined consolidation and ground-glass
+T10	Medical-Anatomy 745 777	periphery of the left upper lobe
+T11	Medical-Problem 818 850	predominant ground-glass opacity
+T12	Medical-Anatomy 863 878	right lung base
+T13	Medical-Problem 896 933	new area of patchy and linear opacity
+T14	Medical-Anatomy 956 971	left lower lobe
+T15	Medical-Assertion 976 987	may reflect
+A1	Medical-AssertionValue T15 possible
+T16	Medical-Problem 988 1016	additional site of infection
+T17	Medical-Problem 1019 1043	Poorly defined opacities
+T18	Medical-Anatomy 1051 1069	juxtahilar regions
+T19	Medical-Problem 1086 1095;1097 1114	Bilateral pleural effusions
+E18	Medical-Problem:T19
+T20	Medical-Problem 1156 1164	Fullness
+T21	Medical-Anatomy 1173 1210	hilar and right paratracheal contours
+T22	Medical-Assertion 1211 1226	likely reflects
+A2	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1227 1235;1237 1252	reactive lymphadenopathy
+T24	Medical-Problem 1272 1307	Persistent multifocal consolidation
+T25	Medical-Problem 1312 1334	ground glass opacities
+E23	Medical-Problem:T25
+T26	Medical-Anatomy 1356 1372	right upper lobe
+T27	Medical-Problem 1374 1412	Worsening right upper lobe volume loss
+E25	Medical-Problem:T27
+T28	Lesion-Assertion 1418 1429	no evidence
+A3	Lesion-AssertionValue T28 absent
+T29	Lesion-Characteristic 1434 1453	obstructing central
+T30	Lesion-Description 1454 1460	lesion
+T31	Medical-Problem 1562 1582	multilobar pneumonia
+T32	Medical-Assertion 1586 1608	considered most likely
+A4	Medical-AssertionValue T32 possible
+T33	Medical-Assertion 1612 1634	Differential diagnosis
+A5	Medical-AssertionValue T33 possible
+T34	Medical-Problem 1644 1676	cryptogenic organizing pneumonia
+T35	Medical-Problem 1678 1690;1692 1701	eosinophilic pneumonia
+T36	Medical-Problem 1707 1738	pulmonary hemorrhage/vasculitis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T6
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T13 has-Medical-Anatomy:T14
+E15	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E16	Medical-Problem:T17 has-Medical-Anatomy:T18
+E19	Medical-Problem:T20 has-Medical-Anatomy:T21
+E21	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E22	Medical-Problem:T24 has-Medical-Anatomy:T26
+E27	Lesion-Description:T30 has-Lesion-Assertion:T28 has-Lesion-Characteristic:T29
+E28	Medical-Problem:T31 has-Medical-Assertion:T32
+E29	Medical-Problem:T34 has-Medical-Assertion:T33
+E30	Medical-Problem:T35 has-Medical-Assertion:T33
+E31	Medical-Problem:T36 has-Medical-Assertion:T33

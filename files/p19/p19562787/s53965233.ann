@@ -1,0 +1,22 @@
+T1	Lesion-Size 211 216	large
+T2	Lesion-Anatomy 217 232	left upper lobe
+T3	Lesion-Description 233 237	mass
+T4	Lesion-Size 295 308	7.5 cm in the
+T5	Lesion-Size-Trend 323 339;341 350	perhaps slightly increased
+A1	Lesion-Size-TrendValue T5 increasing
+T6	Medical-Assertion 387 389	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 390 407	pleural effusions
+T8	Medical-Problem 412 424	pneumothorax
+T9	Medical-Problem 565 581	stable elevation
+T10	Medical-Anatomy 589 607	left hemidiaphragm
+T11	Medical-Problem 610 643	Multiple old healed rib fractures
+E9	Medical-Problem:T11
+T12	Lesion-Size 678 683	Large
+T13	Lesion-Anatomy 684 699	left upper lobe
+T14	Lesion-Description 700 704	mass
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Present:T4 has-Lesion-Size-Trend:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Lesion-Description:T14 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T13

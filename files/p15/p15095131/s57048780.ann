@@ -1,0 +1,26 @@
+T1	Medical-Problem 214 252	irregularly shaped ___ mm wide opacity
+T2	Medical-Anatomy 273 288;290 339	intersection of the anterior right sixth and posterior ninth ribs
+T3	Medical-Problem 459 492	vague region of new opacification
+T4	Medical-Anatomy 500 530;532 561	left midlung the medial to the anterior end of the fifth rib
+T5	Medical-Assertion 562 577	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 580 610	superimposition of structures,
+T7	Medical-Anatomy 644 654	chest wall
+T8	Medical-Problem 680 685;687 696	early pneumonia
+T9	Medical-Problem 838 846	Fullness
+T10	Medical-Anatomy 854 898	right paratracheal region of the mediastinum
+T11	Lesion-Assertion 957 960	not
+A2	Lesion-AssertionValue T11 absent
+T12	Lesion-Characteristic 961 983	clinically significant
+T13	Lesion-Description 985 995	adenopathy
+T14	Medical-Problem 1016 1064	Small likelihood of early pneumonia left midlung
+E12	Medical-Problem:T14
+T15	Lesion-Anatomy 1078 1088	right lung
+T16	Lesion-Description 1090 1096	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T15

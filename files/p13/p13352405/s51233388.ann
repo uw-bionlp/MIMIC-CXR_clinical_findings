@@ -1,0 +1,22 @@
+T1	Medical-Problem 432 453	Moderate elevation of
+T2	Medical-Anatomy 454 465	right-sided
+T3	Medical-Problem 806 856	pleural density that forms a triangular thickening
+T4	Medical-Anatomy 864 881;883 906	right lateral and posterior pleural space
+T5	Medical-Assertion 985 996	no evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 1004 1018	new cavitation
+T7	Medical-Problem 1020 1029;1031 1043	loculated pneumothorax
+T8	Medical-Problem 1047 1082	other new parenchymal abnormalities
+T9	Medical-Problem 1183 1221	Mild regression of pleural thickenings
+E8	Medical-Problem:T9
+T10	Medical-Assertion 1223 1225	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Assertion 1245 1247	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1249 1261	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E9	Medical-Problem:T12 has-Medical-Assertion:T10 has-Medical-Assertion:T11

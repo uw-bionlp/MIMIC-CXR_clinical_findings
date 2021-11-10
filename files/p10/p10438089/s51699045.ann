@@ -1,0 +1,24 @@
+T1	Medical-Assertion 452 463	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 468 480	pneumothorax
+T3	Medical-Problem 483 496	Opacification
+T4	Medical-Anatomy 504 513	left base
+T5	Medical-Problem 571 620	some combination of pleural fluid and volume loss
+T6	Medical-Anatomy 629 644	left lower lobe
+T7	Medical-Problem 651 674	increased opacification
+T8	Medical-Anatomy 682 698	right upper zone
+T9	Medical-Assertion 699 724	has substantially cleared
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 727 746	Mild indistinctness
+E8	Medical-Problem:T10
+T11	Medical-Assertion 768 781	could reflect
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 782 799;801 826	some elevation of pulmonary venous pressure
+T13	Medical-Problem 841 860	atelectatic changes
+T14	Medical-Anatomy 868 878	right base
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14

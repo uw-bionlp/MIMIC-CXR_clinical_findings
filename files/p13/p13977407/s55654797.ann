@@ -1,0 +1,29 @@
+T1	Medical-Problem 184 210	right lower lobe pneumonia
+T2	Medical-Assertion 211 214;216 224	has resolved
+A1	Medical-AssertionValue T2 absent
+T3	Lesion-Anatomy 233 249	right lower lobe
+T4	Lesion-Size 253 257	6-mm
+T5	Lesion-Description 258 264	nodule
+T6	Lesion-Anatomy 344 348	lung
+T7	Lesion-Description 349 355	nodule
+T8	Medical-Problem 446 467	Moderate cardiomegaly
+E7	Medical-Problem:T8
+T9	Medical-Assertion 520 522	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 524 540	pleural effusion
+T11	Medical-Problem 544 556	pneumothorax
+T12	Medical-Problem 578 604	Right lower lobe pneumonia
+T13	Medical-Assertion 605 613	resolved
+A3	Medical-AssertionValue T13 absent
+T14	Lesion-Assertion 620 628	Possible
+A4	Lesion-AssertionValue T14 possible
+T15	Lesion-Size 629 634	small
+T16	Lesion-Anatomy 635 651	right lower lobe
+T17	Lesion-Description 652 658	nodule
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Size-Present:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T13
+E13	Lesion-Description:T17 has-Lesion-Assertion:T14 has-Lesion-Size-Present:T15 has-Lesion-Anatomy:T16

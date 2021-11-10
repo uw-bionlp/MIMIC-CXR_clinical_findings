@@ -1,0 +1,34 @@
+T1	Medical-Problem 238 262	areas of subtle scarring
+T2	Medical-Anatomy 270 295	left and right lung bases
+T3	Medical-Problem 310 328	small pleural scar
+T4	Medical-Anatomy 336 341	right
+T5	Medical-Anatomy 349 375;377 382	region of the costophrenic sinus
+T6	Medical-Assertion 385 387	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 388 401	acute changes
+T8	Medical-Assertion 403 405	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 406 442	focal parenchymal opacity suggesting
+E7	Medical-Problem:T9
+T10	Medical-Problem 443 452	pneumonia
+T11	Medical-Assertion 456 458	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 459 474	pulmonary edema
+T13	Lesion-Assertion 477 479	No
+A4	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 480 484	lung
+T15	Lesion-Description 485 492	nodules
+T16	Lesion-Description 496 502	masses
+T17	Medical-Assertion 529 531;533 541	no evidence
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 545 562	pleural effusions
+T19	Medical-Problem 565 575	Borderline
+E14	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14
+E12	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

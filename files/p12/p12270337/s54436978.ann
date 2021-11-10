@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 224 229	lungs
+T2	Medical-Problem 235 255	mildly hyperexpanded
+T3	Medical-Problem 258 284	Slightly increased density
+T4	Medical-Anatomy 294 308;310 324	inferior spine on the lateral
+T5	Medical-Assertion 368 381	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 383 394	atelectasis
+T7	Medical-Problem 400 429	early or developing infection
+T8	Medical-Assertion 430 448	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 450 452	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 453 460;462 470	pleural effusion
+T11	Medical-Problem 474 486	pneumothorax
+T12	Medical-Problem 583 607	Mildly increased opacity
+E9	Medical-Problem:T12
+T13	Medical-Assertion 655 668	may represent
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 669 698	early or developing infection
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

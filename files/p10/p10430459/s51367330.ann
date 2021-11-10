@@ -1,0 +1,37 @@
+T1	Lesion-Anatomy 304 317	left perhilar
+T2	Lesion-Description 318 322	mass
+T3	Lesion-Assertion 393 395	No
+A1	Lesion-AssertionValue T3 absent
+T4	Lesion-Description 407 419	mass lesions
+T5	Medical-Anatomy 436 441	lungs
+T6	Medical-Assertion 481 500	without evidence of
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 502 514	pneumothorax
+T8	Medical-Problem 518 535	pleural effusions
+T9	Medical-Problem 568 572;574 593	Mild degenerative change
+T10	Medical-Anatomy 617 631	thoracic spine
+T11	Medical-Problem 637 645	spurring
+T12	Medical-Assertion 658 669	no evidence
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 673 689	pneumoperitoneum
+T14	Lesion-Size 707 712	Large
+T15	Lesion-Anatomy 713 727	left perihilar
+T16	Lesion-Description 728 732	mass
+T17	Lesion-Assertion 734 765	differential diagnosis includes
+A4	Lesion-AssertionValue T17 possible
+T18	Lesion-Description 767 777	malignancy
+T19	Lesion-Characteristic 782 796	smooth borders
+T20	Lesion-Assertion 797 809	may indicate
+A5	Lesion-AssertionValue T20 possible
+T21	Lesion-Characteristic 812 818	cystic
+T22	Lesion-Description 829 835	lesion
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Lesion-Description:T4 has-Lesion-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Lesion-Description:T16 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T15
+E14	Lesion-Description:T18 has-Lesion-Assertion:T17 has-Lesion-Characteristic:T19
+E17	Lesion-Description:T22 has-Lesion-Assertion:T17 has-Lesion-Characteristic:T19 has-Lesion-Assertion:T20 has-Lesion-Characteristic:T21

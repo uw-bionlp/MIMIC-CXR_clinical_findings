@@ -1,0 +1,21 @@
+T1	Medical-Problem 258 285	Heterogeneous opacification
+T2	Medical-Anatomy 289 304	both lung bases
+T3	Medical-Assertion 305 313	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 314 328	residual edema
+T5	Medical-Problem 333 354	recurrent aspiration,
+T6	Medical-Problem 373 387	worsened right
+T7	Medical-Assertion 415 417	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 418 430	pneumothorax
+T9	Medical-Assertion 497 499	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 500 512	pneumothorax
+T11	Medical-Problem 515 536	Pleural effusions are
+E8	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

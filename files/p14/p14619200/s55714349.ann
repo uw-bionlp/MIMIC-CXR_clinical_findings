@@ -1,0 +1,25 @@
+T1	Medical-Problem 411 417	coiled
+T2	Medical-Anatomy 425 433;435 442	proximal stomach
+T3	Medical-Problem 447 464	veil like opacity
+T4	Medical-Anatomy 472 482	right lung
+T5	Medical-Assertion 483 498	likely reflects
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 501 509;511 527	layering pleural effusion
+T7	Medical-Problem 530 557	Small left pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Assertion 563 578	near resolution
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 587 614	left lower lobe atelectasis
+T10	Medical-Problem 636 652	pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 663 669	likely
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 670 683	consolidation
+T13	Medical-Anatomy 695 705	right lung
+T14	Medical-Problem 769 796	significant interval change
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13

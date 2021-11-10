@@ -1,0 +1,21 @@
+T1	Medical-Problem 245 300	Small-to-moderate residual right-sided pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 311 327	without evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 331 343	pneumothorax
+T4	Medical-Problem 346 365	Trace left effusion
+E3	Medical-Problem:T4
+T5	Medical-Problem 459 483	Asymmetric opacification
+T6	Medical-Anatomy 491 501	right base
+T7	Medical-Assertion 502 517	could be due to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 518 528;530 541	incomplete reexpansion
+T9	Medical-Assertion 559 561	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 562 574	pneumothorax
+T11	Medical-Problem 579 617;619 635	small-to-moderate residual right-sided pleural effusion
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

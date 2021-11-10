@@ -1,0 +1,22 @@
+T1	Medical-Problem 278 303	multifocal consolidations
+T2	Medical-Assertion 304 317	have resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Assertion 334 338	most
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 361 379	infectious process
+T5	Medical-Assertion 440 442	no
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 443 464	current abnormalities
+T7	Lesion-Characteristic 484 495	prevascular
+T8	Lesion-Characteristic 496 507	soft tissue
+T9	Lesion-Description 509 515	lesion
+T10	Medical-Assertion 685 687	no
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 688 704	pleural effusion
+T12	Medical-Problem 708 720	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T4 has-Medical-Assertion:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Lesion-Description:T9 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T10

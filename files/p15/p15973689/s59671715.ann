@@ -1,0 +1,21 @@
+T1	Medical-Problem 255 279	Widespread consolidation
+T2	Medical-Anatomy 281 311	right mid and both lower lungs
+T3	Lesion-Count 333 341	multiple
+T4	Lesion-Characteristic 342 351	cavitated
+T5	Lesion-Description 352 359	nodules
+T6	Medical-Assertion 361 369	probably
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 370 383	septic emboli
+T8	Medical-Problem 385 403;405 415	Pulmonary vascular congestion
+E7	Medical-Problem:T8
+T9	Medical-Problem 420 440	mild pulmonary edema
+E8	Medical-Problem:T9
+T10	Medical-Problem 512 533	Pleural effusions are
+E9	Medical-Problem:T10
+T11	Medical-Assertion 548 550	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 552 564	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Count:T3 has-Lesion-Characteristic:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

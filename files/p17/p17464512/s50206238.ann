@@ -1,0 +1,30 @@
+T1	Medical-Anatomy 259 264	lungs
+T2	Medical-Problem 269 279;281 294	relatively hyperinflated
+T3	Medical-Assertion 300 305	clear
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 309 332	confluent consolidation
+T5	Medical-Assertion 344 346	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 347 352;354 362	large effusion
+T7	Lesion-Characteristic 365 374	Calcified
+T8	Lesion-Description 375 384	granuloma
+T9	Lesion-Anatomy 403 418	right lung base
+T10	Medical-Problem 511 540	Old right clavicular fracture
+E8	Medical-Problem:T10
+T11	Medical-Problem 561 580;582 592	bones are diffusely osteopenic
+E9	Medical-Problem:T11
+T12	Medical-Assertion 594 613	limiting evaluation
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 618 633	subtle fracture
+T14	Medical-Problem 636 655	Kyphoplasty changes
+T15	Medical-Anatomy 669 681	lumbar spine
+T16	Medical-Assertion 699 701	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 702 740	definite acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,46 @@
+T1	Medical-Problem 389 394	aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 399 407	tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 412 431	diffusely calcified
+E3	Medical-Problem:T3
+T4	Medical-Problem 434 444	Prominence
+T5	Medical-Anatomy 452 471	mediastinal contour
+T6	Medical-Problem 543 547;549 564	mild pulmonary edema
+E6	Medical-Problem:T6
+T7	Medical-Problem 570 626;628 632	moderate bilateral pleural effusions, right greater than left
+E7	Medical-Problem:T7
+T8	Medical-Problem 686 705	Bibasilar opacities
+E8	Medical-Problem:T8
+T9	Medical-Assertion 707 721	likely reflect
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 722 745	compressive atelectasis
+T11	Medical-Problem 750 759	infection
+T12	Medical-Problem 763 773	aspiration
+T13	Medical-Assertion 778 798	difficult to exclude
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Assertion 801 803	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 804 816	pneumothorax
+T16	Medical-Assertion 897 899	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 900 927	acute osseous abnormalities
+T18	Medical-Problem 957 977	Mild pulmonary edema
+E14	Medical-Problem:T18
+T19	Medical-Problem 983 1024	moderate size bilateral pleural effusions
+E15	Medical-Problem:T19
+T20	Medical-Problem 1052 1085	bibasilar compressive atelectasis
+E16	Medical-Problem:T20
+T21	Medical-Problem 1088 1097	Infection
+T22	Medical-Problem 1101 1111	aspiration
+T23	Medical-Anatomy 1120 1130	lung bases
+T24	Medical-Assertion 1134 1154	difficult to exclude
+A5	Medical-AssertionValue T24 possible
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Assertion:T13
+E11	Medical-Problem:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Medical-Problem:T21 has-Medical-Anatomy:T23 has-Medical-Assertion:T24
+E18	Medical-Problem:T22 has-Medical-Anatomy:T23 has-Medical-Assertion:T24

@@ -1,0 +1,18 @@
+T1	Medical-Problem 356 373	new opacification
+T2	Medical-Anatomy 381 391;393 397	left lower lobe
+T3	Medical-Problem 403 414	obscuration
+T4	Medical-Anatomy 422 440	left hemidiaphragm
+T5	Medical-Assertion 447 460	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 461 469;471 481	interval aspiration
+T7	Medical-Problem 485 505	developing pneumonia
+T8	Medical-Assertion 544 546	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 548 570	large pleural effusion
+T10	Medical-Problem 574 586	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

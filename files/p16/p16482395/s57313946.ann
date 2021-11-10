@@ -1,0 +1,27 @@
+T1	Medical-Problem 244 263	Hyperinflated lungs
+T2	Medical-Problem 273 295	area of bronchiectasis
+T3	Medical-Problem 300 308	scarring
+T4	Medical-Anatomy 309 317	adjacent
+T5	Medical-Anatomy 326 370	right heart border, in the right middle lobe
+T6	Medical-Assertion 395 397;399 407	No evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 411 420	pneumonia
+T8	Medical-Problem 424 440	pleural effusion
+T9	Medical-Problem 489 511	Mild biapical scarring
+E8	Medical-Problem:T9
+T10	Medical-Problem 532 551	Hyperinflated lungs
+T11	Medical-Problem 557 571	bronchiectasis
+T12	Medical-Problem 576 584	scarring
+T13	Medical-Anatomy 592 609	right middle lobe
+T14	Medical-Assertion 616 627	no evidence
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 631 640	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T13
+E10	Medical-Problem:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

@@ -1,0 +1,51 @@
+T1	Medical-Problem 473 486	Mild widening
+T2	Medical-Problem 491 501	elongation
+T3	Medical-Anatomy 510 524	thoracic aorta
+T4	Lesion-Assertion 540 542	No
+A1	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 543 554	mediastinal
+T6	Lesion-Description 555 561	masses
+T7	Medical-Anatomy 591 596	lungs
+T8	Medical-Problem 611 659;661 671	rather irregular pulmonary vascular distribution coinciding
+T9	Medical-Problem 677 717	multiple areas of increased translucency
+T10	Medical-Anatomy 738 748	lung bases
+T11	Medical-Problem 774 788	low positioned
+T12	Medical-Problem 793 813	flattened diaphragms
+T13	Medical-Problem 856 886	rather advanced COPD/emphysema
+E12	Medical-Problem:T13
+T14	Medical-Problem 944 968	increased local markings
+T15	Medical-Anatomy 977 991	left lung base
+T16	Medical-Problem 1110 1121	infiltrates
+T17	Medical-Anatomy 1130 1165	periphery of the upper lobe lingula
+T18	Medical-Assertion 1168 1170	No
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1171 1191	new pleural effusion
+T20	Medical-Anatomy 1218 1247	lateral and posterior pleural
+T21	Medical-Assertion 1279 1290	no evidence
+A3	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1294 1306	pneumothorax
+T23	Medical-Anatomy 1314 1325	apical area
+T24	Medical-Assertion 1343 1354	No evidence
+A4	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1358 1377	cardiac enlargement
+T26	Medical-Problem 1381 1399;1401 1411	pulmonary vascular congestion
+T27	Medical-Problem 1457 1470	advanced COPD
+E23	Medical-Problem:T27
+T28	Medical-Problem 1486 1502	new hazy density
+T29	Medical-Anatomy 1506 1518	lingula area
+T30	Medical-Problem 1533 1553;1555 1559	exacerbation in this area
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T7 has-Medical-Anatomy:T10
+E13	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Anatomy:T20
+E19	Medical-Problem:T22 has-Medical-Assertion:T21 has-Medical-Anatomy:T23
+E21	Medical-Problem:T25 has-Medical-Assertion:T24
+E22	Medical-Problem:T26 has-Medical-Assertion:T24
+E24	Medical-Problem:T28 has-Medical-Anatomy:T29
+E26	Medical-Problem:T30 has-Medical-Anatomy:T29

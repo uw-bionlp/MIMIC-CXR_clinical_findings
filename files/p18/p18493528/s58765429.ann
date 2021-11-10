@@ -1,0 +1,22 @@
+T1	Medical-Problem 343 351	interval
+E1	Medical-Problem:T1
+T2	Medical-Problem 368 396	mid right lung consolidation
+E2	Medical-Problem:T2
+T3	Medical-Assertion 435 442	without
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 443 457	consolidations
+T5	Lesion-Characteristic 461 471	suspicious
+T6	Lesion-Anatomy 472 481	pulmonary
+T7	Lesion-Description 482 489	nodules
+T8	Medical-Assertion 491 493	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 495 516	pleural abnormalities
+T10	Medical-Assertion 612 636	No radiographic evidence
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 640 649	pneumonia
+T12	Medical-Problem 653 686;688 701	other significant cardiopulmonary abnormalities
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10

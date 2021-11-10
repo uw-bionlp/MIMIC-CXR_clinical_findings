@@ -1,0 +1,24 @@
+T1	Medical-Assertion 320 322	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 323 339	pleural effusion
+T3	Medical-Problem 343 355	pneumothorax
+T4	Medical-Assertion 367 369	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 370 380;382 407	concerning parenchymal consolidation
+T6	Lesion-Description 426 443	nodular densities
+T7	Lesion-Anatomy 451 456;458 468	right upper lung
+T8	Lesion-Assertion 470 476	likely
+A3	Lesion-AssertionValue T8 possible
+T9	Lesion-Characteristic 484 493	calcified
+T10	Lesion-Description 494 504	granulomas
+T11	Lesion-Description 508 515	vessels
+E8	Lesion-Description:T11
+T12	Medical-Assertion 543 545	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 546 560	acute findings
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Lesion-Description:T6 has-Lesion-Anatomy:T7
+E7	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

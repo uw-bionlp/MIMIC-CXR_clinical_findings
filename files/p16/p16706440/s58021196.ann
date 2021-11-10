@@ -1,0 +1,29 @@
+T1	Lesion-Anatomy 33 42	Bilateral
+T2	Lesion-Description 43 50	nodules
+T3	Medical-Problem 67 107	Increased right basal likely atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Problem 111 148	Vague left peripheral midlung opacity
+E4	Medical-Problem:T4
+T5	Medical-Problem 660 672	pre-existing
+E5	Medical-Problem:T5
+T6	Lesion-Description 673 683	metastatic
+T7	Lesion-Anatomy 695 710	both lung bases
+T8	Medical-Problem 917 956	subtle peribronchial pattern of opacity
+T9	Medical-Anatomy 964 974;976 981	right lung bases
+T10	Medical-Problem 988 1025	opacity shows subtle air bronchograms
+E10	Medical-Problem:T10
+T11	Medical-Assertion 1043 1051;1053 1063	could be suggestive
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1067 1076	pneumonia
+T13	Medical-Assertion 1081 1092	No evidence
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1096 1113	pleural effusions
+T15	Medical-Assertion 1116 1118	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1119 1131	pneumothorax
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

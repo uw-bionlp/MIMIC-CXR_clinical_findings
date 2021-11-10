@@ -1,0 +1,31 @@
+T1	Medical-Problem 315 343	Small right pleural effusion
+T2	Medical-Assertion 344 350	may be
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Assertion 434 436	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 437 449	pneumothorax
+T5	Medical-Problem 452 459;461 474	Greater opacification
+T6	Medical-Anatomy 482 498	right lower lung
+T7	Medical-Assertion 502 510	probably
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 511 526	pulmonary edema
+T9	Medical-Problem 538 560	previous consolidation
+T10	Medical-Anatomy 568 583	left lower lobe
+T11	Medical-Problem 631 640	pneumonia
+T12	Medical-Anatomy 642 647	Heart
+T13	Medical-Assertion 651 654	not
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 655 663	enlarged
+T15	Medical-Problem 668 685	mediastinal veins
+E11	Medical-Problem:T15
+T16	Medical-Assertion 690 693	not
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 695 702	dilated
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E8	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Anatomy:T12 has-Medical-Assertion:T16

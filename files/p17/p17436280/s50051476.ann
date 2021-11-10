@@ -1,0 +1,57 @@
+T1	Medical-Anatomy 290 313	cardiac silhouette size
+T2	Medical-Assertion 314 321	appears
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 322 341	moderately enlarged
+T4	Medical-Problem 350 379	left ventricular predominance
+T5	Medical-Anatomy 386 397	aortic knob
+T6	Medical-Problem 401 410	calcified
+T7	Medical-Problem 423 426;428 440	low lung volumes
+E6	Medical-Problem:T7
+T8	Medical-Problem 502 506;508 525	mild apparent widening
+T9	Medical-Anatomy 533 553	superior mediastinum
+T10	Medical-Problem 556 572	Fibrotic changes
+E9	Medical-Problem:T10
+T11	Medical-Problem 673 701	coarse interstitial markings
+E10	Medical-Problem:T11
+T12	Medical-Problem 724 732	blunting
+T13	Medical-Anatomy 741 772	costophrenic angles bilaterally
+T14	Medical-Problem 796 811;813 823	chronic pleural thickening
+E13	Medical-Problem:T14
+T15	Medical-Problem 832 847	small effusions
+T16	Medical-Assertion 848 867	can not be excluded
+A2	Medical-AssertionValue T16 possible
+T17	Medical-Assertion 879 881	no
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 882 887;889 904	overt pulmonary edema
+T19	Medical-Problem 908 920	pneumothorax
+T20	Medical-Problem 923 941	More focal opacity
+T21	Medical-Anatomy 949 963	left lung base
+T22	Medical-Problem 984 1013	underlying infectious process
+T23	Medical-Assertion 1014 1043	cannot be completely excluded
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1047 1065	Leftward deviation
+T25	Medical-Anatomy 1073 1114	superior trachea above the thoracic inlet
+T26	Medical-Assertion 1129 1142	may be due to
+A5	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1143 1159	tortuous vessels
+T28	Medical-Problem 1204 1237	chronic interstitial lung disease
+E23	Medical-Problem:T28
+T29	Medical-Problem 1240 1250;1252 1259	More focal opacity
+T30	Medical-Anatomy 1263 1277	left lung base
+T31	Medical-Problem 1295 1324	underlying infectious process
+T32	Medical-Assertion 1326 1344	cannot be excluded
+A6	Medical-AssertionValue T32 possible
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T17
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21
+E19	Medical-Problem:T22 has-Medical-Anatomy:T21 has-Medical-Assertion:T23
+E20	Medical-Problem:T24 has-Medical-Anatomy:T25
+E22	Medical-Problem:T27 has-Medical-Anatomy:T25 has-Medical-Assertion:T26
+E24	Medical-Problem:T29 has-Medical-Anatomy:T30
+E26	Medical-Problem:T31 has-Medical-Anatomy:T30 has-Medical-Assertion:T32

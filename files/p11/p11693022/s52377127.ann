@@ -1,0 +1,48 @@
+T1	Medical-Problem 330 350	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 458 462	left
+T3	Lesion-Description 463 469	lesion
+T4	Lesion-Assertion 491 494	not
+A1	Lesion-AssertionValue T4 absent
+T5	Medical-Anatomy 527 548	Pulmonary vasculature
+T6	Medical-Assertion 552 555	not
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 557 565	engorged
+T8	Medical-Problem 568 604	Continued streaky and patchy opacity
+T9	Medical-Anatomy 616 630	left lung base
+T10	Medical-Assertion 632 647	likely reflects
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 648 688	mild postobstructive atelectatic changes
+T12	Medical-Assertion 744 746	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 747 769	large pleural effusion
+T14	Medical-Problem 773 785	pneumothorax
+T15	Medical-Problem 789 810	Emphysematous changes
+T16	Medical-Anatomy 838 849	lung apices
+T17	Medical-Problem 862 881	minimal atelectasis
+T18	Medical-Anatomy 889 904	right lung base
+T19	Medical-Problem 907 927	Degenerative changes
+T20	Medical-Anatomy 950 971	imaged thoracic spine
+T21	Medical-Problem 974 997	Amorphous calcification
+E17	Medical-Problem:T21
+T22	Medical-Assertion 1056 1067	may reflect
+A5	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1068 1089	calcific tendinopathy
+T24	Lesion-Anatomy 1116 1126	left hilar
+T25	Lesion-Description 1127 1133	lesion
+T26	Lesion-Assertion 1154 1162	not well
+A6	Lesion-AssertionValue T26 absent
+T27	Medical-Problem 1203 1248	Continued postobstructive atelectatic changes
+T28	Medical-Anatomy 1256 1265;1267 1271	left lung base
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T2 has-Lesion-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Lesion-Description:T25 has-Lesion-Anatomy:T24 has-Lesion-Assertion:T26
+E21	Medical-Problem:T27 has-Medical-Anatomy:T28

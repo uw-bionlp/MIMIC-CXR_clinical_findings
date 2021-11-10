@@ -1,0 +1,52 @@
+T1	Lesion-Count 250 253	two
+T2	Lesion-Characteristic 254 262	cavitary
+T3	Lesion-Description 263 270	lesions
+T4	Lesion-Anatomy 279 289	right lung
+T5	Lesion-Anatomy 315 337	right perihilar region
+T6	Lesion-Size 363 384	14 cm in craniocaudal
+T7	Lesion-Description 395 401	lesion
+T8	Lesion-Size-Trend 405 420	slightly larger
+A1	Lesion-Size-TrendValue T8 increasing
+T9	Lesion-Size 462 467	11 cm
+T10	Lesion-Characteristic 472 486	airfluid level
+T11	Lesion-Description 504 510	lesion
+T12	Lesion-Characteristic 524 532	cavitary
+T13	Lesion-Description 533 539	lesion
+T14	Lesion-Anatomy 547 563	right upper lobe
+T15	Lesion-Size-Trend 567 573	stable
+A2	Lesion-Size-TrendValue T15 no-change
+T16	Lesion-Assertion 575 577	No
+A3	Lesion-AssertionValue T16 absent
+T17	Lesion-Size-Trend 578 581	new
+A4	Lesion-Size-TrendValue T17 new
+T18	Lesion-Characteristic 583 591	cavitary
+T19	Lesion-Description 592 598	lesion
+T20	Medical-Problem 608 648	Multiple areas of ground glass opacities
+E16	Medical-Problem:T20
+T21	Medical-Problem 655 659;661 684	more confluent consolidation
+T22	Medical-Anatomy 692 707	left upper lobe
+T23	Medical-Assertion 737 739	No
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 741 758	pleural effusions
+T25	Medical-Problem 762 774	pneumothorax
+T26	Lesion-Characteristic 803 811	Cavitary
+T27	Lesion-Description 812 819	lesions
+T28	Lesion-Anatomy 827 837	right lung
+T29	Lesion-Size-Trend 882 911	interval increase in the size
+A6	Lesion-Size-TrendValue T29 increasing
+T30	Lesion-Description 927 933	lesion
+T31	Medical-Problem 949 989	Stable multifocal ground glass opacities
+E25	Medical-Problem:T31
+T32	Medical-Problem 996 1024	more confluent consolidation
+T33	Medical-Anatomy 1033 1048	left upper lobe
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T6
+E7	Lesion-Description:T7 has-Lesion-Size-Trend:T8 has-Lesion-Size-Past:T9
+E10	Lesion-Description:T11 has-Lesion-Characteristic:T10
+E12	Lesion-Description:T13 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14 has-Lesion-Size-Trend:T15
+E15	Lesion-Description:T19 has-Lesion-Assertion:T16 has-Lesion-Size-Trend:T17 has-Lesion-Characteristic:T18
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E20	Medical-Problem:T25 has-Medical-Assertion:T23
+E22	Lesion-Description:T27 has-Lesion-Characteristic:T26 has-Lesion-Anatomy:T28
+E24	Lesion-Description:T30 has-Lesion-Size-Trend:T29
+E26	Medical-Problem:T32 has-Medical-Anatomy:T33

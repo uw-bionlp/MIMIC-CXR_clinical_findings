@@ -1,0 +1,17 @@
+T1	Medical-Anatomy 200 205	Lungs
+T2	Medical-Problem 210 223	low in volume
+T3	Medical-Problem 228 245	severely affected
+T4	Medical-Problem 249 269;271 282	diffuse infiltrative abnormality
+T5	Medical-Problem 347 352	edema
+T6	Medical-Problem 358 371	anything else
+E6	Medical-Problem:T6
+T7	Medical-Problem 409 421	Heart shadow
+E7	Medical-Problem:T7
+T8	Medical-Problem 487 504	Pleural effusions
+T9	Medical-Assertion 525 528	not
+A1	Medical-AssertionValue T9 absent
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T1
+E8	Medical-Problem:T8 has-Medical-Assertion:T9

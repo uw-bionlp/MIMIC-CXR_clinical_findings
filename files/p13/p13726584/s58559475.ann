@@ -1,0 +1,49 @@
+T1	Medical-Assertion 367 369	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 371 406	typical configurational abnormality
+T3	Medical-Assertion 476 479	not
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 480 489	congested
+T5	Medical-Problem 494 506	hazy density
+T6	Medical-Anatomy 520 525;527 536	right lung base
+T7	Medical-Problem 577 587	infiltrate
+T8	Medical-Anatomy 595 604;606 665	posterior portion of the right middle lobe abutting the minor fissure
+T9	Medical-Anatomy 682 695	large fissure
+T10	Medical-Problem 715 734	some hazy densities
+T11	Medical-Anatomy 742 751	left base
+T12	Medical-Assertion 799 813	suspicious for
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 814 821;823 834	similar infiltrates
+T14	Medical-Anatomy 842 865	left upper lobe lingula
+T15	Medical-Problem 889 899	prominence
+T16	Medical-Anatomy 907 930	right upper mediastinum
+T17	Medical-Problem 960 995	right tracheal bronchial angulation
+E14	Medical-Problem:T17
+T18	Lesion-Assertion 1028 1033	could
+A4	Lesion-AssertionValue T18 possible
+T19	Lesion-Characteristic 1041 1049	enlarged
+T20	Lesion-Description 1050 1060	lymph node
+T21	Medical-Problem 1076 1097	pneumonic infiltrates
+E17	Medical-Problem:T21
+T22	Lesion-Assertion 1133 1145	Differential
+A5	Lesion-AssertionValue T22 possible
+T23	Lesion-Anatomy 1186 1191	hilar
+T24	Lesion-Description 1192 1196	mass
+T25	Medical-Problem 1331 1352	Pneumonic infiltrates
+T26	Medical-Anatomy 1356 1373	right middle lobe
+T27	Medical-Anatomy 1378 1393;1395 1402	left upper lobe lingula
+T28	Medical-Problem 1405 1426	Coinciding prominence
+E23	Medical-Problem:T28
+T29	Lesion-Anatomy 1430 1450	superior mediastinal
+T30	Lesion-Description 1451 1455	node
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12 has-Medical-Anatomy:T14
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Lesion-Description:T20 has-Lesion-Assertion:T18 has-Lesion-Characteristic:T19
+E19	Lesion-Description:T24 has-Lesion-Assertion:T22 has-Lesion-Anatomy:T23
+E20	Medical-Problem:T25 has-Medical-Anatomy:T26 has-Medical-Anatomy:T27
+E25	Lesion-Description:T30 has-Lesion-Anatomy:T29

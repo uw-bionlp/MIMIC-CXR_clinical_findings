@@ -1,0 +1,19 @@
+T1	Medical-Problem 292 320	Improving linear atelectasis
+T2	Medical-Anatomy 340 373	periphery of the right lower lobe
+T3	Medical-Problem 381 401;403 417	worsening patchy and linear opacity
+T4	Medical-Anatomy 441 479;481 485	retrocardiac portion of the left lower lobe
+T5	Medical-Anatomy 488 493	Lungs
+T6	Medical-Assertion 529 531	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 532 549	pleural effusions
+T8	Medical-Problem 567 618	Worsening patchy and linear left lower lobe opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 619 625	favors
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 627 638	atelectasis
+T11	Medical-Problem 644 664	coexisting pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

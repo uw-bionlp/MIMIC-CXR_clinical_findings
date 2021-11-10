@@ -1,0 +1,18 @@
+T1	Medical-Problem 321 339;341 373	slight increase in thickness of paratracheal tissue
+E1	Medical-Problem:T1
+T2	Medical-Problem 400 408;410 421	vascular engorgement
+E2	Medical-Problem:T2
+T3	Medical-Problem 424 434	Separation
+T4	Medical-Anatomy 442 488;490 519	presumed internal jugular portion of the pacer lead from the midline trachea
+T5	Medical-Assertion 526 535	suggested
+A1	Medical-AssertionValue T5 possible
+T6	Lesion-Anatomy 543 550	thyroid
+T7	Lesion-Description 560 564	mass
+T8	Lesion-Description 569 577	hematoma
+T9	Medical-Assertion 607 609	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 610 622	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

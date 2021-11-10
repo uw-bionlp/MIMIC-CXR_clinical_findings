@@ -1,0 +1,28 @@
+T1	Medical-Problem 226 245	Severe cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 250 280	pulmonary vascular engorgement
+E2	Medical-Problem:T2
+T3	Medical-Problem 295 300;302 315	Focal opacification
+T4	Medical-Anatomy 323 333	lung bases
+T5	Medical-Assertion 334 342	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 358 369	atelectasis
+T7	Medical-Problem 374 379;381 386	early edema
+T8	Medical-Problem 421 431	aspiration
+T9	Medical-Problem 440 455	early pneumonia
+T10	Medical-Problem 458 486	Small right pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 498 509	Enlargement
+E10	Medical-Problem:T11
+T12	Medical-Problem 580 589	deviation
+T13	Medical-Anatomy 597 611;613 645	trachea in the lower neck and upper mediastinum
+T14	Medical-Assertion 647 649	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 650 662	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

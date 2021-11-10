@@ -1,0 +1,29 @@
+T1	Medical-Problem 384 407	large left pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 451 476	small apical pneumothorax
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 498 507	left lung
+T4	Medical-Problem 529 546	streaky opacities
+T5	Medical-Anatomy 554 558;560 569	left lung base
+T6	Medical-Assertion 570 590	likely reflective of
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 591 602	atelectasis
+T8	Medical-Assertion 757 768	no evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 772 790;792 802	pulmonary vascular congestion
+T10	Medical-Problem 806 822	pleural effusion
+T11	Medical-Assertion 825 827	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 828 855	acute osseous abnormalities
+T13	Medical-Problem 936 964;966 989	decreased size of left-sided pneumothorax, now small
+E10	Medical-Problem:T13
+T14	Medical-Problem 996 1008	re-expansion
+T15	Medical-Anatomy 1016 1025	left lung
+T16	Medical-Problem 1027 1039;1041 1060	Streaky left basilar atelectasis
+E13	Medical-Problem:T16
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15

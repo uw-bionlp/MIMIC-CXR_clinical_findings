@@ -1,0 +1,24 @@
+T1	Medical-Problem 172 188	pulmonary edema?
+E1	Medical-Problem:T1
+T2	Medical-Problem 234 255	Moderate cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 274 307	mild interstitial pulmonary edema
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 325 335	right lung
+T5	Medical-Problem 346 370	more focal consolidation
+T6	Medical-Anatomy 378 388;390 409	infrahilar and midlung portion
+T7	Medical-Assertion 434 442	could be
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 443 459	asymmetric edema
+T9	Medical-Problem 464 484	concurrent pneumonia
+T10	Medical-Problem 487 509	Small pleural effusion
+T11	Medical-Assertion 536 540;542 553	none appreciable
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Assertion 577 579	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 580 592	pneumothorax
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

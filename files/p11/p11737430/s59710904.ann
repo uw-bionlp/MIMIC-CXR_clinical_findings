@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 252 259	cardiac
+T2	Medical-Problem 274 301	mild-to-moderately enlarged
+T3	Medical-Problem 307 311;313 323	mild tortuosity
+T4	Medical-Anatomy 331 345	thoracic aorta
+T5	Medical-Problem 387 397	prominence
+T6	Medical-Anatomy 405 434	central pulmonary vasculature
+T7	Medical-Problem 440 444;446 474	mild interstitial pulmonary edema
+T8	Medical-Assertion 533 540	without
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 541 549	effusion
+T10	Medical-Problem 553 565	pneumothorax
+T11	Medical-Assertion 568 570	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 571 588	definite fracture
+T13	Medical-Problem 625 646	Moderate cardiomegaly
+E11	Medical-Problem:T13
+T14	Medical-Problem 652 672	mild pulmonary edema
+E12	Medical-Problem:T14
+T15	Medical-Assertion 678 680	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 681 698	definite fracture
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

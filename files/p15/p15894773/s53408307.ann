@@ -1,0 +1,25 @@
+T1	Medical-Assertion 359 361	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 362 391	pneumothorax pleural effusion
+T3	Medical-Problem 395 427	evidence of pulmonary hemorrhage
+T4	Lesion-Count 429 433	Many
+T5	Lesion-Size 435 439	tiny
+T6	Lesion-Anatomy 440 444	lung
+T7	Lesion-Description 445 452	nodules
+T8	Lesion-Size-Trend 458 489	decreased in size substantially
+A2	Lesion-Size-TrendValue T8 decreasing
+T9	Lesion-Anatomy 502 518	Right upper lobe
+T10	Lesion-Characteristic 519 531	infiltrative
+T11	Lesion-Description 532 538	lesion
+T12	Lesion-Anatomy 550 554	lung
+T13	Lesion-Description 555 562	nodules
+T14	Lesion-Anatomy 570 575;577 582	lower lungs
+T15	Lesion-Assertion 587 597	presumably
+A3	Lesion-AssertionValue T15 possible
+T16	Lesion-Description 623 632	carcinoma
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Count:T4 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10
+E11	Lesion-Description:T13 has-Lesion-Anatomy:T12 has-Lesion-Anatomy:T14
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T14 has-Lesion-Assertion:T15

@@ -1,0 +1,34 @@
+T1	Medical-Assertion 68 79	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 83 95	tuberculosis
+T3	Medical-Problem 523 553	Degree of inspiration is small
+E2	Medical-Problem:T3
+T4	Medical-Problem 570 597;599 607	crowding of bronchovascular markings
+T5	Medical-Anatomy 615 620	bases
+T6	Medical-Problem 680 684	some
+E5	Medical-Problem:T6
+T7	Medical-Problem 685 735	streaky left retrocardiac subsegmental atelectasis
+E6	Medical-Problem:T7
+T8	Lesion-Assertion 737 739	No
+A2	Lesion-AssertionValue T8 absent
+T9	Lesion-Characteristic 741 752	parenchymal
+T10	Lesion-Anatomy 756 761	hilar
+T11	Lesion-Description 762 766	mass
+T12	Medical-Assertion 779 781	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 782 795	pleural fluid
+T14	Medical-Assertion 808 810	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 811 818;820 849	central pulmonary vascular congestion
+T16	Medical-Problem 853 858	edema
+T17	Medical-Anatomy 914 939	Thoracic vertebral bodies
+T18	Medical-Problem 947 976;978 997	demineralized from maintained in height alignment
+T19	Medical-Problem 1018 1060	Left retrocardiac subsegmental atelectasis
+E15	Medical-Problem:T19
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E9	Lesion-Description:T11 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Anatomy:T17

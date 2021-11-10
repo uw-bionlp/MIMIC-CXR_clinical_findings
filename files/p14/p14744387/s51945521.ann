@@ -1,0 +1,19 @@
+T1	Medical-Problem 187 197	Prominence
+T2	Medical-Anatomy 205 246	right upper and lower paratracheal region
+T3	Lesion-Assertion 251 262	likely from
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Characteristic 263 271	enlarged
+T5	Lesion-Anatomy 272 296	mediastinal paratracheal
+T6	Lesion-Description 297 308	lymph nodes
+T7	Medical-Assertion 398 400	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 401 426	lung opacities concerning
+T9	Medical-Problem 431 440	pneumonia
+E7	Medical-Problem:T9
+T10	Medical-Assertion 452 454	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 455 474	pleural abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

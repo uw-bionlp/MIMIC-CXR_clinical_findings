@@ -1,0 +1,19 @@
+T1	Medical-Assertion 330 332	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 333 352	focal consolidation
+T3	Medical-Problem 355 371	pleural effusion
+T4	Medical-Problem 376 388	pneumothorax
+T5	Lesion-Size 424 433;435 437	1.7 x 1.4 cm
+T6	Lesion-Description 438 444	nodule
+T7	Medical-Assertion 596 598	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 599 628	acute cardiopulmonary process
+T9	Lesion-Size 636 642	1.7 cm
+T10	Lesion-Description 643 649	nodule
+T11	Lesion-Anatomy 724 746	abutting the diaphragm
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T11

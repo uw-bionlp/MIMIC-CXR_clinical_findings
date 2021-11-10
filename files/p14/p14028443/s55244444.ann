@@ -1,0 +1,38 @@
+T1	Medical-Problem 348 387	Extensive bullous emphysematous disease
+E1	Medical-Problem:T1
+T2	Medical-Assertion 447 453	may be
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 456 492	tiny residual right pleural effusion
+T4	Medical-Problem 495 511	Patchy opacities
+T5	Medical-Anatomy 519 529	lung bases
+T6	Medical-Assertion 530 541	may reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 542 553	atelectasis
+T8	Medical-Problem 561 570	infection
+T9	Medical-Assertion 572 601	cannot be completely excluded
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 603 605	No
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 606 627	definite pneumothorax
+T12	Medical-Assertion 654 656	no
+A5	Medical-AssertionValue T12 absent
+T13	Medical-Problem 657 678	acute osseous changes
+T14	Medical-Problem 699 726	Extensive bullous emphysema
+E9	Medical-Problem:T14
+T15	Medical-Assertion 728 736	Probable
+A6	Medical-AssertionValue T15 possible
+T16	Medical-Problem 737 758	bibasilar atelectasis
+T17	Medical-Problem 763 771;773 809	residual minimal trace right pleural effusion
+T18	Medical-Problem 811 820	Infection
+T19	Medical-Anatomy 828 838	lung bases
+T20	Medical-Assertion 839 848;850 869	cannot be completely excluded
+A7	Medical-AssertionValue T20 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T16 has-Medical-Assertion:T15
+E11	Medical-Problem:T17 has-Medical-Assertion:T15
+E12	Medical-Problem:T18 has-Medical-Anatomy:T19 has-Medical-Assertion:T20

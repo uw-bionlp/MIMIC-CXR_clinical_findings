@@ -1,0 +1,36 @@
+T1	Medical-Problem 225 254	Aorta remains mildly tortuous
+E1	Medical-Problem:T1
+T2	Medical-Assertion 326 328	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 329 358	pulmonary vascular congestion
+T4	Lesion-Count 380 381	3
+T5	Lesion-Description 382 389	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 390 399	opacities
+T7	Lesion-Count 410 411	2
+T8	Lesion-Anatomy 423 434;436 440	right upper lobe
+T9	Lesion-Anatomy 461 476	left upper lobe
+T10	Lesion-Anatomy 536 545	pulmonary
+T11	Lesion-Description 546 553	nodules
+T12	Medical-Problem 621 629	Blunting
+T13	Medical-Anatomy 637 662;664 680	costophrenic angle on the left posteriorly
+T14	Medical-Assertion 681 689	suggests
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 692 719	small left pleural effusion
+T16	Medical-Assertion 748 750	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 751 763	pneumothorax
+T18	Medical-Problem 789 816;818 821	diffuse demineralization of the
+T19	Medical-Anatomy 822 840	osseous structures
+T20	Medical-Problem 863 890	Small left pleural effusion
+E17	Medical-Problem:T20
+T21	Lesion-Anatomy 898 917	Bilateral pulmonary
+T22	Lesion-Description 918 925	nodules
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Count:T4 has-Lesion-Count:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E19	Lesion-Description:T22 has-Lesion-Anatomy:T21

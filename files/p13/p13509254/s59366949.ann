@@ -1,0 +1,27 @@
+T1	Medical-Problem 348 356	Fullness
+T2	Medical-Problem 361 373	irregularity
+T3	Medical-Anatomy 382 386	hila
+T4	Medical-Anatomy 388 411	aorticopulmonary window
+T5	Medical-Problem 416 422	azygos
+E5	Medical-Problem:T5
+T6	Medical-Problem 473 494	Bibasilar atelectasis
+E6	Medical-Problem:T6
+T7	Medical-Problem 511 525;527 534	New triangluar opacity
+T8	Medical-Anatomy 542 552	right base
+T9	Medical-Assertion 553 564	may reflect
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 565 591	fluid in the major fissure
+T11	Medical-Problem 596 607	atelectasis
+T12	Medical-Assertion 610 612	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 613 630	new consolidation
+T14	Medical-Problem 634 646	pneumothorax
+T15	Medical-Problem 708 760	Persistent mediastinal and hilar contour abnormality
+E13	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12

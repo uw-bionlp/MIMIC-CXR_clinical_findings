@@ -1,0 +1,29 @@
+T1	Medical-Problem 407 424	bullous emphysema
+E1	Medical-Problem:T1
+T2	Medical-Problem 480 513	subsegmental atelectasis/scarring
+T3	Medical-Anatomy 521 533	left lingula
+T4	Lesion-Size-Trend 548 554	stable
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Anatomy 555 570	left lower lobe
+T6	Lesion-Description 571 577	nodule
+T7	Lesion-Size-Trend 579 588	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Lesion-Size-Trend 621 624	new
+A3	Lesion-Size-TrendValue T8 new
+T9	Lesion-Anatomy 626 637	left apical
+T10	Lesion-Size 638 643	small
+T11	Lesion-Description 644 659	nodular opacity
+T12	Medical-Problem 714 731	pleural effusions
+E9	Medical-Problem:T12
+T13	Medical-Problem 735 749	pneumothoraces
+E10	Medical-Problem:T13
+T14	Medical-Assertion 781 783	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 784 801	acute abnormality
+T16	Lesion-Anatomy 851 862	left apical
+T17	Lesion-Description 863 869	nodule
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Size-Trend:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E8	Lesion-Description:T11 has-Lesion-Size-Trend:T8 has-Lesion-Anatomy:T9 has-Lesion-Size-Present:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Lesion-Description:T17 has-Lesion-Anatomy:T16

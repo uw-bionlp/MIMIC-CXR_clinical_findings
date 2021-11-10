@@ -1,0 +1,16 @@
+T1	Lesion-Anatomy 80 95	Left upper lobe
+T2	Lesion-Description 96 102	nodule
+T3	Medical-Problem 251 264	postoperative
+E3	Medical-Problem:T3
+T4	Medical-Problem 304 311;313 349	minimal millimetric apical left pneumothorax
+E4	Medical-Problem:T4
+T5	Medical-Problem 402 438	expected area of parenchymal opacity
+E5	Medical-Problem:T5
+T6	Medical-Assertion 441 443	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 444 451	tension
+T8	Medical-Problem 454 461;463 474	Minimal atelectasis
+T9	Medical-Anatomy 482 497	left lung bases
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9

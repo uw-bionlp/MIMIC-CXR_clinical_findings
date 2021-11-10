@@ -1,0 +1,44 @@
+T1	Lesion-Size 138 142	2 cm
+T2	Lesion-Anatomy 143 153;155 159	left lower lobe
+T3	Lesion-Description 160 166	lesion
+T4	Lesion-Description 329 336	opacity
+T5	Lesion-Anatomy 357 369	cardiac apex
+T6	Lesion-Anatomy 404 408	lung
+T7	Lesion-Description 409 415	nodule
+T8	Medical-Problem 468 482	Loss of volume
+T9	Medical-Anatomy 490 500	right lung
+T10	Medical-Problem 547 558	obscuration
+T11	Medical-Anatomy 566 584	right heart border
+T12	Medical-Anatomy 589 611;613 632	anterior aspect of the right hemidiaphragm
+T13	Medical-Assertion 633 648	could be due to
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Problem 649 685;687 694	anatomic rearrangement stemming from surgery
+T15	Medical-Anatomy 748 762	Thoracic aorta
+T16	Medical-Problem 767 781	mildly dilated
+T17	Medical-Problem 786 799	very tortuous
+T18	Medical-Assertion 811 813	no
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 814 830	pleural effusion
+T20	Medical-Assertion 839 841	no
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 859 882	decreased breath sounds
+T22	Medical-Anatomy 890 906	left lower chest
+T23	Medical-Problem 932 972	moderately extensive emphysema generally
+E20	Medical-Problem:T23
+T24	Lesion-Assertion 986 999	suggestion of
+A4	Lesion-AssertionValue T24 possible
+T25	Lesion-Size 1011 1016	small
+T26	Lesion-Anatomy 1017 1021	lung
+T27	Lesion-Description 1022 1029	nodules
+T28	Lesion-Anatomy 1037 1053;1055 1100	left lower lobe, projecting over the descending thoracic aorta
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E15	Medical-Problem:T16 has-Medical-Anatomy:T15
+E16	Medical-Problem:T17 has-Medical-Anatomy:T15
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Medical-Problem:T21 has-Medical-Assertion:T20 has-Medical-Anatomy:T22
+E23	Lesion-Description:T27 has-Lesion-Assertion:T24 has-Lesion-Size-Present:T25 has-Lesion-Anatomy:T26 has-Lesion-Anatomy:T28

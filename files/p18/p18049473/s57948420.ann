@@ -1,0 +1,20 @@
+T1	Medical-Problem 295 325	increased ground-glass opacity
+T2	Medical-Anatomy 333 343	both lungs
+T3	Medical-Assertion 344 358	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 360 365	edema
+T5	Medical-Anatomy 368 389	Pulmonary vasculature
+E4	Medical-Anatomy:T5
+T6	Medical-Assertion 417 419	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 420 432	pneumothorax
+T8	Medical-Problem 437 453	pleural effusion
+T9	Lesion-Anatomy 492 501	left lung
+T10	Lesion-Description 502 506	mass
+T11	Medical-Problem 618 642	Moderate pulmonary edema
+E9	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9

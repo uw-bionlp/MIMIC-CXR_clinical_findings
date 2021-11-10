@@ -1,0 +1,30 @@
+T1	Medical-Problem 344 363	heart size is large
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 397 408	mediastinal
+T3	Medical-Problem 430 455;457 464	calcified atherosclerotic disease
+T4	Medical-Anatomy 472 483	aortic knob
+T5	Lesion-Size 488 493	large
+T6	Lesion-Characteristic 494 503	calcified
+T7	Lesion-Description 504 514	lymph node
+T8	Lesion-Anatomy 524 534;536 546	just right of midline
+T9	Medical-Anatomy 553 574	interstitial markings
+T10	Medical-Anatomy 582 587	lungs
+T11	Medical-Problem 593 612;614 624	minimally increased prominence
+T12	Medical-Problem 636 646	prominence
+T13	Medical-Anatomy 654 675	pulmonary vasculature
+T14	Medical-Problem 694 729	mildly increased interstitial edema
+E14	Medical-Problem:T14
+T15	Medical-Assertion 741 743	no
+A1	Medical-AssertionValue T15 absent
+T16	Medical-Problem 744 756	pneumothorax
+T17	Medical-Assertion 759 761	No
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 762 771;773 785	displaced rib fracture
+T19	Medical-Problem 815 838	Mild interstitial edema
+E17	Medical-Problem:T19
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E11	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E12	Medical-Problem:T12 has-Medical-Anatomy:T13
+E15	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T18 has-Medical-Assertion:T17

@@ -1,0 +1,27 @@
+T1	Medical-Problem 580 610	Layering left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 625 658	Left mid and upper lung opacities
+E2	Medical-Problem:T2
+T3	Medical-Problem 676 705	Diffuse interstitial markings
+T4	Medical-Anatomy 721 736	remaining lungs
+T5	Medical-Anatomy 754 764	Heart size
+T6	Medical-Assertion 768 771	not
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 772 780	enlarged
+T8	Medical-Problem 782 804	Mediastinal silhouette
+E7	Medical-Problem:T8
+T9	Medical-Assertion 808 811	not
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 813 820	widened
+T11	Medical-Problem 841 864	Increased opacification
+T12	Medical-Anatomy 872 900	left upper and left mid lung
+T13	Medical-Assertion 901 917;919 921	may be secondary to
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 922 937	pulmonary edema
+T15	Medical-Problem 941 961	developing pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

@@ -1,0 +1,35 @@
+T1	Medical-Problem 286 305	Patient is kyphotic
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 341 346	Heart
+T3	Medical-Problem 360 364;366 388	mild to moderately enlarged
+T4	Medical-Problem 478 505;507 517	crowding of bronchovascular structures
+E4	Medical-Problem:T4
+T5	Medical-Assertion 518 525	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 526 541	pulmonary edema
+T7	Medical-Problem 544 568	Minimal patchy opacities
+T8	Medical-Anatomy 576 580;582 587	lung bases
+T9	Medical-Assertion 588 602	likely reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 603 620	areas atelectasis
+T11	Medical-Assertion 621 628	without
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 629 648	focal consolidation
+T13	Medical-Assertion 651 653	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 655 671	pleural effusion
+T15	Medical-Problem 675 687	pneumothorax
+T16	Medical-Problem 708 733	mild degenerative changes
+T17	Medical-Anatomy 742 756	thoracic spine
+T18	Medical-Problem 777 793	Low lung volumes
+E14	Medical-Problem:T18
+T19	Medical-Problem 799 825	mild bibasilar atelectasis
+E15	Medical-Problem:T19
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17

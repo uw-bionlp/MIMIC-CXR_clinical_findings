@@ -1,0 +1,26 @@
+T1	Medical-Problem 338 378	increase in a roughly elliptical opacity
+T2	Medical-Anatomy 386 391;393 400	right midlung
+T3	Medical-Assertion 406 414	suggests
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 415 443	pleural fluid reaccumulating
+T5	Medical-Anatomy 451 470	right major fissure
+T6	Medical-Problem 532 540;542 554	Moderate cardiomegaly
+E5	Medical-Problem:T6
+T7	Medical-Problem 570 606	small residual left pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Anatomy 684 695;697 701	Right lower lobe
+T9	Medical-Problem 708 732	persistently atelectatic
+T10	Medical-Problem 734 775	Generalized pulmonary vascular congestion
+E9	Medical-Problem:T10
+T11	Medical-Assertion 801 807	may be
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 808 825	new consolidation
+T13	Medical-Anatomy 833 855;857 864	right upper lobe minor fissure
+T14	Medical-Assertion 1057 1059	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 1060 1072	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

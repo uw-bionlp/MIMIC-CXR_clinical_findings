@@ -1,0 +1,30 @@
+T1	Medical-Problem 183 207	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 273 287	mild unfolding
+T3	Medical-Anatomy 295 309	thoracic aorta
+T4	Medical-Anatomy 375 386;388 398	medial left hemithorax
+T5	Medical-Assertion 399 406	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 407 420	discontinuity
+T7	Lesion-Characteristic 423 432	Calcified
+T8	Lesion-Anatomy 433 437	lung
+T9	Lesion-Description 438 445	nodules
+T10	Lesion-Assertion 446 456	suggesting
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 458 468	granulomas
+T12	Lesion-Size-Trend 476 485	unchanged
+A3	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 534 536	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 538 555	pleural effusions
+T15	Medical-Problem 559 571	pneumothorax
+T16	Medical-Assertion 631 642	No evidence
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 646 659	acute disease
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T12
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T10 has-Lesion-Size-Trend:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

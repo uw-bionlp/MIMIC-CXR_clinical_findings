@@ -1,0 +1,22 @@
+T1	Medical-Assertion 269 276	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 277 296	focal consolidation
+T3	Medical-Problem 308 322;324 335	mild bibasilar atelectasis
+E2	Medical-Problem:T3
+T4	Lesion-Size 340 353	subcentimeter
+T5	Lesion-Description 354 361	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 362 369	opacity
+T7	Lesion-Anatomy 384 398	left lung base
+T8	Medical-Assertion 438 440	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 441 457	pleural effusion
+T10	Medical-Problem 462 474	pneumothorax
+T11	Medical-Assertion 547 549	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 550 579	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

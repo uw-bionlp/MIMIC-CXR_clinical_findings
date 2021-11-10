@@ -1,0 +1,24 @@
+T1	Lesion-Size 194 198	5-mm
+T2	Lesion-Description 200 207	opacity
+T3	Lesion-Anatomy 228 267	posterior aspect of the right ninth rib
+T4	Lesion-Assertion 268 276	could be
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Description 280 291	bone island
+T6	Lesion-Characteristic 301 310	calcified
+T7	Lesion-Description 311 320	granuloma
+T8	Lesion-Anatomy 332 347	lung parenchyma
+T9	Medical-Assertion 459 461	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 462 479	pleural effusions
+T11	Medical-Assertion 482 484	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 485 497	pneumothorax
+T13	Medical-Assertion 524 526	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 527 561	acute cardiac or pulmonary process
+E2	Lesion-Description:T2 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T3
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Assertion:T4
+E6	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

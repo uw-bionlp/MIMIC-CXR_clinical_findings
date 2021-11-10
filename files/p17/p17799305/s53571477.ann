@@ -1,0 +1,24 @@
+T1	Medical-Problem 124 132	Crackles
+T2	Medical-Anatomy 140 156	right lower lung
+T3	Medical-Problem 262 277	left lower lobe
+E3	Medical-Problem:T3
+T4	Medical-Problem 278 285	opacity
+E4	Medical-Problem:T4
+T5	Medical-Problem 364 375	atelectasis
+E5	Medical-Problem:T5
+T6	Medical-Problem 388 397	pneumonia
+E6	Medical-Problem:T6
+T7	Lesion-Anatomy 411 416;418 422	right lung
+T8	Lesion-Characteristic 434 443	scattered
+T9	Lesion-Characteristic 444 449	vague
+T10	Lesion-Description 450 457	nodular
+T11	Lesion-Description 458 467	opacities
+T12	Medical-Problem 490 499	pneumonia
+T13	Medical-Assertion 500 518	must be considered
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Problem 525 562	mediastinal contour remains prominent
+E13	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E10	Lesion-Description:T10 has-Lesion-Anatomy:T7
+E11	Lesion-Description:T11 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T9
+E12	Medical-Problem:T12 has-Medical-Assertion:T13

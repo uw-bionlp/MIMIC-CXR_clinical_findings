@@ -1,0 +1,26 @@
+T1	Medical-Problem 746 775	pulmonary vascular congestion
+T2	Medical-Problem 780 798;800 805	moderate pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 832 841	left lung
+T4	Medical-Problem 888 913	stable pleural thickening
+T5	Medical-Anatomy 934 943	left apex
+T6	Medical-Problem 955 957;959 1007	at least small bilateral layering pleural effusions
+E6	Medical-Problem:T6
+T7	Lesion-Size-Trend 1035 1055	unchanged appearance
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Lesion-Count 1059 1067	multiple
+T9	Lesion-Anatomy 1068 1077	bilateral
+T10	Lesion-Characteristic 1078 1087	calcified
+T11	Lesion-Description 1088 1099	lymph nodes
+T12	Medical-Problem 1112 1150	pleural and parenchymal calcifications
+E11	Medical-Problem:T12
+T13	Medical-Assertion 1164 1166	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1167 1179	pneumothorax
+T15	Medical-Problem 1200 1224	Moderate pulmonary edema
+T16	Medical-Anatomy 1248 1262	left lung most
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E10	Lesion-Description:T11 has-Lesion-Size-Trend:T7 has-Lesion-Count:T8 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16

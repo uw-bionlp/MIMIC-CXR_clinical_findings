@@ -1,0 +1,30 @@
+T1	Medical-Problem 556 560;562 608	mild regression of the right-sided pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 670 684	fluid effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 765 777;779 790	new shift of mediastinum
+E3	Medical-Problem:T3
+T4	Medical-Assertion 809 811	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 812 824	pneumothorax
+T6	Medical-Assertion 835 837	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 838 857;859 870	significant cardiac enlargement
+T8	Medical-Anatomy 894 926	accessible pulmonary vasculature
+T9	Medical-Assertion 928 930;932 940	no evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 944 974	interstitial or alveolar edema
+T11	Medical-Problem 1007 1039	small amount of pleural effusion
+T12	Medical-Anatomy 1062 1071	left base
+T13	Medical-Assertion 1236 1257	radiographic evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1261 1264	CHF
+T15	Medical-Problem 1266 1273;1275 1286	cardiac enlargement
+T16	Medical-Problem 1290 1304	fluid overload
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T13

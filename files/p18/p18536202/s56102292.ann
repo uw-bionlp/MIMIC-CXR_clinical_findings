@@ -1,0 +1,19 @@
+T1	Medical-Problem 201 222	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 353 357;359 381	Left lower lobe atelectases
+E2	Medical-Problem:T2
+T3	Medical-Problem 392 412	Increasing opacities
+T4	Medical-Anatomy 420 436	right lower lobe
+T5	Medical-Assertion 438 453	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 454 465	atelectasis
+T7	Medical-Problem 471 493	superimposed infection
+T8	Medical-Assertion 494 512	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 525 535	no evident
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 605 633	small right pleural effusion
+E7	Medical-Problem:T10
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8

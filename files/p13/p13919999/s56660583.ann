@@ -1,0 +1,25 @@
+T1	Medical-Problem 210 229	band of atelectasis
+T2	Medical-Anatomy 237 246	left base
+T3	Medical-Problem 301 327	Small retrocardiac opacity
+T4	Medical-Anatomy 328 336	abutting
+T5	Medical-Anatomy 341 351;353 367	descending thoracic aorta
+T6	Medical-Assertion 404 412	could be
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 413 424	atelectasis
+T8	Lesion-Description 431 435	mass
+E7	Lesion-Description:T8
+T9	Medical-Assertion 444 452	unlikely
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 459 468	pneumonia
+T11	Medical-Problem 600 619	Other abnormalities
+E9	Medical-Problem:T11
+T12	Medical-Problem 636 655;657 665	small right pleural effusion
+E10	Medical-Problem:T12
+T13	Lesion-Size 691 696	10 mm
+T14	Lesion-Description 702 708	nodule
+T15	Lesion-Anatomy 729 734;736 762	right second anterior interspace
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E12	Lesion-Description:T14 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T15

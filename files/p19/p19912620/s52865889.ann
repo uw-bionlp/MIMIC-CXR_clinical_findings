@@ -1,0 +1,22 @@
+T1	Medical-Problem 186 203	heart is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 209 211	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 212 219	failure
+T4	Medical-Problem 237 248	Atelectasis
+T5	Medical-Anatomy 256 273	right middle lobe
+T6	Medical-Problem 305 321	some volume loss
+T7	Medical-Anatomy 329 345	right lower lobe
+T8	Medical-Assertion 351 357	likely
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 358 366	effusion
+T10	Medical-Problem 415 426	Atelectasis
+T11	Medical-Anatomy 434 451	right middle lobe
+T12	Medical-Anatomy 465 476;478 482	right lower lobe
+T13	Medical-Problem 491 505	right effusion
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12

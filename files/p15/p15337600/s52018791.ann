@@ -1,0 +1,21 @@
+T1	Medical-Assertion 238 247	no longer
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 252 258	curled
+T3	Medical-Anatomy 270 282	right atrium
+T4	Medical-Problem 390 399	elevation
+T5	Medical-Anatomy 408 427	right hemidiaphragm
+T6	Medical-Problem 459 473	Consolidations
+T7	Medical-Anatomy 481 485;487 492	lung bases
+T8	Medical-Assertion 508 521	may represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 522 531	pneumonia
+T10	Medical-Problem 539 549	aspiration
+T11	Medical-Assertion 561 563	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 565 579	pneumothoraces
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

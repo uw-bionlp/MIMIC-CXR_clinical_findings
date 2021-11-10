@@ -1,0 +1,36 @@
+T1	Lesion-Size 231 236	large
+T2	Lesion-Anatomy 237 252	left upper lobe
+T3	Lesion-Characteristic 253 261	cavitary
+T4	Lesion-Description 262 266	mass
+T5	Lesion-Size-Trend 276 286;288 299	similar in size to the
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Problem 326 348	associated destruction
+T7	Medical-Anatomy 356 364;366 383	adjacent ribs, most marked
+T8	Medical-Anatomy 391 425	lateral left second and third ribs
+T9	Medical-Problem 460 483	worsening opacification
+T10	Medical-Anatomy 491 512	bilateral bases, more
+T11	Medical-Assertion 562 564	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 565 580	pulmonary edema
+T13	Medical-Problem 582 598	pleural effusion
+T14	Medical-Problem 604 616	pneumothorax
+T15	Medical-Problem 683 711	Increasing basilar opacities
+E13	Medical-Problem:T15
+T16	Lesion-Characteristic 773 785	nonspecific,
+E14	Lesion-Characteristic:T16
+T17	Lesion-Size-Trend 827 844	Grossly unchanged
+A3	Lesion-Size-TrendValue T17 no-change
+T18	Lesion-Size 845 850	large
+T19	Lesion-Anatomy 851 866	left upper lobe
+T20	Lesion-Characteristic 867 875	cavitary
+T21	Lesion-Description 876 880	mass
+T22	Lesion-Characteristic 886 897	destruction
+T23	Medical-Anatomy 906 914	adjacent
+E20	Medical-Anatomy:T23
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Characteristic:T3 has-Lesion-Size-Trend:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T11
+E18	Lesion-Description:T21 has-Lesion-Size-Trend:T17 has-Lesion-Size-Present:T18 has-Lesion-Anatomy:T19 has-Lesion-Characteristic:T20 has-Lesion-Characteristic:T22

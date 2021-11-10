@@ -1,0 +1,44 @@
+T1	Medical-Problem 330 364	large right-sided pleural effusion
+T2	Medical-Problem 371 390	dense consolidation
+T3	Medical-Anatomy 398 414	right lower lobe
+T4	Medical-Anatomy 431 443;445 449	right middle lobe
+T5	Medical-Assertion 457 472	could represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 475 499	component of atelectasis
+T7	Medical-Problem 505 515;517 526	concurrent infection
+T8	Medical-Assertion 527 545	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 558 586;588 612	several more linear areas of subsegmental atelectasis
+T10	Medical-Anatomy 620 636	right upper lung
+T11	Medical-Assertion 692 694	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 695 722	large left pleural effusion
+T13	Medical-Problem 729 737	heart is
+T14	Medical-Assertion 738 744	likely
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Anatomy 787 801	thoracic aorta
+T16	Medical-Problem 805 820	mildly unfolded
+T17	Medical-Problem 828 847	arch calcifications
+T18	Medical-Problem 850 879	Multilevel lumbar spondylosis
+E14	Medical-Problem:T18
+T19	Medical-Problem 908 953	New right middle and lower lobe consolidation
+E15	Medical-Problem:T19
+T20	Medical-Problem 958 973;975 991	enlarging right pleural effusion
+E16	Medical-Problem:T20
+T21	Medical-Assertion 1013 1028	could represent
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1029 1052	compressive atelectasis
+T23	Medical-Problem 1055 1075	concurrent pneumonia
+T24	Medical-Assertion 1076 1094	cannot be excluded
+A6	Medical-AssertionValue T24 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T15
+E17	Medical-Problem:T22 has-Medical-Assertion:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T21 has-Medical-Assertion:T24

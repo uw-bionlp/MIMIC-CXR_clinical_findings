@@ -1,0 +1,35 @@
+T1	Medical-Problem 229 273	Unilateral interstitial and alveolar pattern
+T2	Medical-Anatomy 281 290	left lung
+T3	Medical-Problem 310 332	left-sided volume loss
+T4	Medical-Problem 339 369	moderate left pleural effusion
+T5	Lesion-Assertion 384 394	suggestion
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Assertion 400 408	possible
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Anatomy 409 419	left hilar
+T8	Lesion-Description 420 424	mass
+T9	Medical-Problem 538 591	Unilateral combined alveolar and interstitial pattern
+T10	Medical-Anatomy 599 608	left lung
+T11	Medical-Problem 615 637	associated volume loss
+T12	Medical-Problem 642 663	left pleural effusion
+T13	Lesion-Assertion 680 689;691 702	raise the possibility
+A3	Lesion-AssertionValue T13 possible
+T14	Lesion-Description 716 726	malignancy
+T15	Lesion-Description 743 755	lymphangitic
+E12	Lesion-Description:T15
+T16	Lesion-Description 757 771	carcinomatosis
+T17	Medical-Assertion 776 784	possible
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 785 814	postobstructive pneumonia and
+T19	Medical-Problem 815 826	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E6	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10
+E11	Lesion-Description:T14 has-Lesion-Assertion:T13
+E13	Lesion-Description:T16 has-Lesion-Assertion:T13
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T17

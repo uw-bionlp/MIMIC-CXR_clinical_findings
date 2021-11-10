@@ -1,0 +1,37 @@
+T1	Medical-Assertion 508 510	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 511 523	pneumothorax
+T3	Medical-Problem 639 647	stenting
+T4	Medical-Anatomy 655 660	aorta
+T5	Medical-Anatomy 733 738	heart
+T6	Medical-Assertion 742 745	not
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 746 754	enlarged
+T8	Medical-Problem 757 761;763 773	Mild prominence
+T9	Medical-Anatomy 781 802	main pulmonary artery
+T10	Medical-Problem 848 873	upper zone redistribution
+E8	Medical-Problem:T10
+T11	Medical-Assertion 875 897	without other evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 901 904	CHF
+T13	Medical-Assertion 907 909	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 910 915;917 927	focal infiltrate
+T15	Medical-Problem 931 945	gross effusion
+T16	Medical-Problem 948 977	Minimal bibasilar atelectasis
+E12	Medical-Problem:T16
+T17	Medical-Problem 1104 1129	Upper zone redistribution
+E13	Medical-Problem:T17
+T18	Medical-Problem 1134 1155	bibasilar atelectasis
+E14	Medical-Problem:T18
+T19	Medical-Assertion 1157 1179	without other evidence
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1184 1207	acute pulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

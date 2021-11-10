@@ -1,0 +1,17 @@
+T1	Medical-Problem 234 271	Extensive heterogeneous opacification
+T2	Medical-Anatomy 289 312;314 374	both lungs, most severe in the left upper lobe, particularly the lingula, much lower
+T3	Medical-Problem 407 436	Minimal left pleural effusion
+E3	Medical-Problem:T3
+T4	Lesion-Assertion 486 488	no
+A1	Lesion-AssertionValue T4 absent
+T5	Lesion-Characteristic 507 514	central
+T6	Lesion-Description 515 525	adenopathy
+T7	Medical-Problem 648 665	atypical organism
+E6	Medical-Problem:T7
+T8	Medical-Assertion 706 716	suggestion
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 720 730	cavitation
+T10	Medical-Anatomy 738 776	upper aspect of the lingular component
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10

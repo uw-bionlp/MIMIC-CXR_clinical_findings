@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 249 254	Lungs
+T2	Medical-Problem 259 279	mildly hyperinflated
+T3	Medical-Assertion 284 292	clear of
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 297 314	focal abnormality
+T5	Medical-Anatomy 342 350	Thoracic
+T6	Medical-Problem 357 375	extremely tortuous
+T7	Medical-Assertion 380 391	not clearly
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 392 399	dilated
+T9	Lesion-Assertion 402 404;406 414	No evidence
+A3	Lesion-AssertionValue T9 absent
+T10	Lesion-Characteristic 418 425	central
+T11	Lesion-Description 426 436	adenopathy
+T12	Medical-Assertion 439 441	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 442 461	pleural abnormality
+T14	Medical-Problem 464 483;485 499	Mild compression of osteopenic mid
+E10	Medical-Problem:T14
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E8	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

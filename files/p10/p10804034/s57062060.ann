@@ -1,0 +1,23 @@
+T1	Medical-Problem 205 214	pneumonia
+E1	Medical-Problem:T1
+T2	Lesion-Description 220 232	mass lesion?
+E2	Lesion-Description:T2
+T3	Medical-Problem 272 313;315 325	Bilateral hilar enlargement, left greater than right
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 416 421	hilar
+T5	Lesion-Description 422 444	lymph node enlargement
+T6	Medical-Problem 450 478	mild-to-moderate enlargement
+T7	Medical-Anatomy 486 504	pulmonary arteries
+T8	Medical-Anatomy 507 512	Lungs
+T9	Medical-Problem 517 528;530 543	chronically low in volume
+T10	Medical-Assertion 548 556	clear of
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 557 574	focal abnormality
+T12	Medical-Assertion 611 613	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 614 630	pleural findings
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

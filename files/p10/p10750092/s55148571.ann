@@ -1,0 +1,33 @@
+T1	Medical-Assertion 199 201	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 202 221	focal consolidation
+T3	Medical-Problem 234 243	pneumonia
+T4	Medical-Assertion 255 257	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 258 274	pleural effusion
+T6	Medical-Problem 278 290	pneumothorax
+T7	Lesion-Anatomy 312 328	right upper lobe
+T8	Lesion-Characteristic 334 343	calcified
+T9	Lesion-Description 344 353	granuloma
+T10	Lesion-Count 381 389	multiple
+T11	Lesion-Anatomy 391 395	lung
+T12	Lesion-Description 396 403	nodules
+T13	Lesion-Assertion 408 411	not
+A3	Lesion-AssertionValue T13 absent
+T14	Medical-Problem 501 531	old right seventh rib fracture
+E11	Medical-Problem:T14
+T15	Medical-Problem 548 574	wedge compression fracture
+T16	Medical-Anatomy 582 600	mid thoracic spine
+T17	Medical-Problem 644 665	Aortic calcifications
+E14	Medical-Problem:T17
+T18	Medical-Assertion 728 730	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 731 760	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8
+E10	Lesion-Description:T12 has-Lesion-Count:T10 has-Lesion-Anatomy:T11 has-Lesion-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

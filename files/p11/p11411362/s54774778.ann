@@ -1,0 +1,37 @@
+T1	Medical-Problem 290 298	heart is
+E1	Medical-Problem:T1
+T2	Medical-Problem 299 321	significantly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 397 415	airspace opacities
+T4	Medical-Anatomy 421 441;443 448	predominantly at the bases
+T5	Medical-Assertion 449 465	likely represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 466 498	mild to moderate pulmonary edema
+T7	Medical-Problem 507 516	infection
+T8	Medical-Assertion 518 538	should be considered
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 582 588	may be
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 591 596;598 620	small right pleural effusion
+T11	Medical-Assertion 632 643	no evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 647 659	pneumothorax
+T13	Medical-Problem 689 703	enlarged heart
+E9	Medical-Problem:T13
+T14	Medical-Assertion 709 715	likely
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 716 736	mild pulmonary edema
+T16	Medical-Problem 743 754;756 772	small right pleural effusion
+T17	Medical-Problem 781 794	basal opacity
+E12	Medical-Problem:T17
+T18	Medical-Assertion 795 815	could also represent
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 816 825	infection
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T14
+E13	Medical-Problem:T19 has-Medical-Assertion:T18

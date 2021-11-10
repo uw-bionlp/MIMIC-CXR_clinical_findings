@@ -1,0 +1,15 @@
+T1	Medical-Problem 289 320	Mild peribronchial infiltration
+T2	Medical-Anatomy 321 365;367 380	right lower lung, predominantly anteromedial basal segment
+T3	Medical-Assertion 382 400	more suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 401 423	bronchial inflammation
+T5	Medical-Assertion 424 431	perhaps
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 432 436;438 452	mild bronchiectasis
+T7	Medical-Assertion 470 481	rather than
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 482 491	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7

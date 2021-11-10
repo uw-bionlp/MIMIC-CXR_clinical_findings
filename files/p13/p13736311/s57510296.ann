@@ -1,0 +1,34 @@
+T1	Medical-Anatomy 308 313	lungs
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 337 365	Increased reticular markings
+T3	Medical-Anatomy 372 397	particularly at the bases
+T4	Lesion-Characteristic 429 438	Lobulated
+T5	Lesion-Anatomy 439 449;451 455	right lung base
+T6	Lesion-Description 456 460	mass
+T7	Medical-Problem 478 491	Faint opacity
+T8	Medical-Anatomy 512 528	right upper lobe
+T9	Medical-Assertion 564 575	potentially
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 576 584	scarring
+T11	Medical-Problem 629 660	Old right lateral rib fractures
+E10	Medical-Problem:T11
+T12	Medical-Assertion 673 675	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 676 681;683 704	acute osseous abnormalities
+T14	Medical-Problem 750 759	emphysema
+E12	Medical-Problem:T14
+T15	Medical-Problem 761 794	chronic interstitial lung process
+E13	Medical-Problem:T15
+T16	Lesion-Characteristic 801 811	spiculated
+T17	Lesion-Anatomy 812 828	right lower lobe
+T18	Lesion-Description 829 833	mass
+T19	Medical-Assertion 836 838	No
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 839 873;875 882	superimposed acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E16	Lesion-Description:T18 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T17
+E17	Medical-Problem:T20 has-Medical-Assertion:T19

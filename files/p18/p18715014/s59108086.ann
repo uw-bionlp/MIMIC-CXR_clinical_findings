@@ -1,0 +1,40 @@
+T1	Lesion-Anatomy 251 267	Right upper lung
+T2	Lesion-Description 268 272	mass
+T3	Lesion-Anatomy 292 296	lung
+T4	Lesion-Description 297 304	nodules
+T5	Medical-Problem 334 361	Small left pleural effusion
+E5	Medical-Problem:T5
+T6	Medical-Assertion 380 382	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 383 395	pneumothorax
+T8	Medical-Problem 397 416	Bibasilar opacities
+E7	Medical-Problem:T8
+T9	Medical-Assertion 421 427	likely
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 428 439	atelectasis
+T11	Medical-Problem 445 467	superimposed infection
+T12	Medical-Assertion 468 486	cannot be excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 525 554	Right middle lobe atelectasis
+E10	Medical-Problem:T13
+T14	Medical-Problem 583 602	Small left effusion
+E11	Medical-Problem:T14
+T15	Medical-Problem 604 623	Bibasilar opacities
+E12	Medical-Problem:T15
+T16	Medical-Assertion 624 632	could be
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 633 644	atelectasis
+T18	Medical-Problem 648 657	pneumonia
+T19	Lesion-Anatomy 696 717	Right upper lobe lung
+T20	Lesion-Description 718 722	mass
+T21	Lesion-Anatomy 735 739	lung
+T22	Lesion-Description 740 747	nodules
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Assertion:T12
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Lesion-Description:T20 has-Lesion-Anatomy:T19
+E18	Lesion-Description:T22 has-Lesion-Anatomy:T21

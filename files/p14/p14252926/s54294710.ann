@@ -1,0 +1,29 @@
+T1	Lesion-Size 423 429	1.6 cm
+T2	Lesion-Characteristic 431 442	ill-defined
+T3	Lesion-Characteristic 444 459	somewhat oblong
+T4	Lesion-Description 460 467	opacity
+T5	Lesion-Anatomy 479 495	right upper lobe
+T6	Lesion-Size-Trend 521 535	stable in size
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Lesion-Assertion 570 578	could be
+A2	Lesion-AssertionValue T7 possible
+T8	Lesion-Description 597 607	malignancy
+T9	Medical-Problem 611 625	bronchiectasis
+E7	Medical-Problem:T9
+T10	Lesion-Assertion 627 634	perhaps
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 648 656	mycetoma
+T12	Medical-Assertion 668 670	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 671 687	pleural effusion
+T14	Medical-Problem 691 703	pneumothorax
+T15	Lesion-Size 779 785	1.6 cm
+T16	Lesion-Characteristic 786 792	oblong
+T17	Lesion-Description 793 800	opacity
+T18	Lesion-Anatomy 808 824	right upper lobe
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E6	Lesion-Description:T8 has-Lesion-Size-Trend:T6 has-Lesion-Assertion:T7
+E8	Lesion-Description:T11 has-Lesion-Assertion:T7 has-Lesion-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Lesion-Description:T17 has-Lesion-Size-Present:T15 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T18

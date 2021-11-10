@@ -1,0 +1,41 @@
+T1	Medical-Problem 204 224	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Assertion 229 236	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 237 259	focal airspace opacity
+T4	Medical-Problem 272 281	pneumonia
+T5	Medical-Anatomy 288 293	heart
+T6	Medical-Assertion 297 300	not
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 301 309	enlarged
+T8	Lesion-Characteristic 328 337	calcified
+T9	Lesion-Anatomy 339 350	mediastinal
+T10	Lesion-Description 351 362	lymph nodes
+T11	Medical-Problem 369 387	aorta is calcified
+E9	Medical-Problem:T11
+T12	Medical-Assertion 399 401	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 402 409;411 419	pleural effusion
+T14	Medical-Problem 423 435	pneumothorax
+T15	Medical-Assertion 437 439	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 440 462	displaced rib fracture
+T17	Medical-Assertion 489 491	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 492 525	acute cardiopulmonary abnormality
+T19	Medical-Assertion 527 529	No
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 530 552	displaced rib fracture
+T21	Medical-Assertion 587 606	limited sensitivity
+A7	Medical-AssertionValue T21 possible
+T22	Medical-Problem 611 623	rib fracture
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T20 has-Medical-Assertion:T19
+E15	Medical-Problem:T22 has-Medical-Assertion:T21

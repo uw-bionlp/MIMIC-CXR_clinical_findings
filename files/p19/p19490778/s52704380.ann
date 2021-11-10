@@ -1,0 +1,47 @@
+T1	Medical-Problem 82 105	decreased breath sounds
+T2	Medical-Anatomy 113 122	left base
+T3	Medical-Problem 348 357	Elevation
+T4	Medical-Anatomy 366 370	left
+T5	Medical-Problem 437 470	Streaky left lower lung opacities
+E5	Medical-Problem:T5
+T6	Medical-Assertion 475 481	likely
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 482 493	atelectases
+T8	Medical-Assertion 505 513	could be
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 514 524	aspiration
+T10	Medical-Problem 528 537	pneumonia
+T11	Medical-Assertion 587 589	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 590 616	definite pleural effusions
+T13	Medical-Assertion 619 621	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 622 634	pneumothorax
+T15	Medical-Problem 721 739;741 761	multilevel flowing anterior osteophytes
+E11	Medical-Problem:T15
+T16	Medical-Assertion 763 776	suggestive of
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 777 781	DISH
+T18	Medical-Problem 799 818	Increased elevation
+T19	Medical-Anatomy 826 844	left hemidiaphragm
+T20	Medical-Problem 926 939;941 961	Adjacent left lower lobe opacities
+E15	Medical-Problem:T20
+T21	Medical-Assertion 962 970	could be
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 971 982	atelectasis
+T23	Medical-Problem 993 1003	aspiration
+T24	Medical-Problem 1007 1016	pneumonia
+T25	Medical-Assertion 1018 1037	could be considered
+A7	Medical-AssertionValue T25 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T23 has-Medical-Assertion:T21 has-Medical-Assertion:T25
+E18	Medical-Problem:T24 has-Medical-Assertion:T21 has-Medical-Assertion:T25

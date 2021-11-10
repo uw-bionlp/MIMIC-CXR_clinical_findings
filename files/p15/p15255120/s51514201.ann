@@ -1,0 +1,23 @@
+T1	Medical-Problem 254 261;263 274	Minimal atelectasis
+T2	Medical-Anatomy 282 297	left lung bases
+T3	Medical-Problem 300 317	Mild cardiomegaly
+E3	Medical-Problem:T3
+T4	Medical-Assertion 365 367	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 368 377	pneumonia
+T6	Medical-Assertion 379 381	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 382 397	pulmonary edema
+T8	Medical-Assertion 399 401	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 402 409;411 420	pleural effusions
+T10	Lesion-Characteristic 425 434	calcified
+T11	Lesion-Anatomy 435 451	right upper lobe
+T12	Lesion-Description 452 461	granuloma
+T13	Lesion-Size-Trend 465 471	stable
+A4	Lesion-Size-TrendValue T13 no-change
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T13

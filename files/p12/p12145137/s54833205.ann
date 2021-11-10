@@ -1,0 +1,32 @@
+T1	Lesion-Anatomy 226 242	left juxta-hilar
+T2	Lesion-Description 243 247	mass
+T3	Lesion-Anatomy 283 294	right hilar
+T4	Lesion-Description 295 299	mass
+T5	Lesion-Count 302 310	Multiple
+T6	Lesion-Description 317 324	nodules
+T7	Medical-Anatomy 397 402	lungs
+T8	Medical-Assertion 407 414	without
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 417 422;424 437	focal consolidation
+T10	Medical-Problem 441 453	pneumothorax
+T11	Medical-Problem 458 486	small right pleural effusion
+E10	Medical-Problem:T11
+T12	Medical-Problem 574 580;582 591	stable elevation
+T13	Medical-Anatomy 599 617	left hemidiaphragm
+T14	Medical-Assertion 619 621	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 622 630	free air
+T16	Medical-Anatomy 647 654	abdomen
+T17	Medical-Assertion 730 732;734 742	No evidence
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 746 755	infection
+T19	Medical-Problem 759 778	other acute process
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Count:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T17

@@ -1,0 +1,22 @@
+T1	Medical-Assertion 288 290	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 291 310	focal consolidation
+T3	Medical-Problem 312 328	pleural effusion
+T4	Medical-Problem 333 345	pneumothorax
+T5	Medical-Assertion 461 463	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 464 472	free air
+T7	Medical-Anatomy 483 502	right hemidiaphragm
+T8	Medical-Assertion 525 527	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 528 541	acute process
+T10	Lesion-Anatomy 560 564	lung
+T11	Lesion-Description 565 572	nodules
+T12	Lesion-Assertion 577 592;594 610	not appreciated radiographically
+A4	Lesion-AssertionValue T12 absent
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Lesion-Description:T11 has-Lesion-Anatomy:T10 has-Lesion-Assertion:T12

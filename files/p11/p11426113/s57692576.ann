@@ -1,0 +1,37 @@
+T1	Medical-Anatomy 405 410	aorta
+T2	Medical-Problem 415 424	calcified
+T3	Medical-Problem 437 452	atherosclerosis
+T4	Medical-Anatomy 457 462	Lungs
+T5	Medical-Problem 467 480	hyperinflated
+T6	Medical-Problem 496 519	background of emphysema
+T7	Medical-Problem 633 655	right pleural effusion
+E7	Medical-Problem:T7
+T8	Lesion-Count 673 681	multiple
+T9	Lesion-Description 683 690	lesions
+T10	Lesion-Anatomy 691 701	throughout
+T11	Lesion-Size-Trend 745 752;754 763	grossly unchanged
+A1	Lesion-Size-TrendValue T11 no-change
+T12	Medical-Problem 854 873	persistent blunting
+T13	Medical-Anatomy 881 905	left costophrenic sulcus
+T14	Medical-Assertion 907 913;915 927	likely representing
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 930 952	small pleural effusion
+T16	Medical-Problem 956 974	pleural thickening
+T17	Medical-Assertion 979 981	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 982 994	pneumothorax
+T19	Medical-Assertion 999 1001	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1002 1027	acute osseous abnormality
+T21	Medical-Problem 1057 1113	slight interval increase in small right pleural effusion
+E17	Medical-Problem:T21
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E9	Lesion-Description:T9 has-Lesion-Count:T8 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T11
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

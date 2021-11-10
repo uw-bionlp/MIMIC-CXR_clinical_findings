@@ -1,0 +1,37 @@
+T1	Medical-Problem 314 332	slightly retracted
+E1	Medical-Problem:T1
+T2	Medical-Problem 371 398	near-complete opacification
+T3	Medical-Anatomy 406 421	left hemithorax
+T4	Medical-Problem 427 431;433 454	some residual aerated lung
+T5	Medical-Anatomy 462 476	left lung apex
+T6	Medical-Anatomy 483 493	right lung
+T7	Medical-Problem 507 511;513 549	more significant consolidation superiorly
+T8	Lesion-Count 570 578	Multiple
+T9	Lesion-Anatomy 579 590;592 601	right-sided pulmonary
+T10	Lesion-Description 602 609	nodules
+T11	Medical-Problem 637 666	calcification left suprahilar
+E11	Medical-Problem:T11
+T12	Lesion-Assertion 849 851	No
+A1	Lesion-AssertionValue T12 absent
+T13	Lesion-Characteristic 852 862	suspicious
+T14	Lesion-Characteristic 863 870	osseous
+T15	Lesion-Description 871 878	lesions
+T16	Medical-Problem 1046 1073	Near complete opacification
+T17	Medical-Anatomy 1081 1090	left lung
+T18	Medical-Problem 1107 1120;1122 1148	components of both secondary atelectasis
+T19	Medical-Problem 1160 1179	underlying effusion
+T20	Medical-Problem 1186 1203	Increased opacity
+T21	Medical-Anatomy 1211 1227	right upper lung
+T22	Medical-Assertion 1228 1243	could represent
+A2	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1244 1258;1260 1281	progression of obstructive pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E10	Lesion-Description:T10 has-Lesion-Count:T8 has-Lesion-Anatomy:T9
+E14	Lesion-Description:T15 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14
+E15	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T18 has-Medical-Anatomy:T17
+E18	Medical-Problem:T19 has-Medical-Anatomy:T17
+E19	Medical-Problem:T20 has-Medical-Anatomy:T21
+E21	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22

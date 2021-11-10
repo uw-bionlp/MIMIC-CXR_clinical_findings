@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 240 245	aorta
+T2	Medical-Problem 249 272;274 282	diffusely calcified and tortuous
+T3	Medical-Problem 398 412	Hyperinflation
+T4	Medical-Anatomy 420 425	lungs
+T5	Medical-Problem 432 473	relative attenuation of vascular markings
+T6	Medical-Anatomy 486 497	lung apices
+T7	Medical-Assertion 498 509	may suggest
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 511 531	underlying emphysema
+T9	Medical-Assertion 534 536	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 537 553	pleural effusion
+T11	Medical-Problem 557 569	pneumothorax
+T12	Medical-Assertion 688 690	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 691 724	acute cardiopulmonary abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

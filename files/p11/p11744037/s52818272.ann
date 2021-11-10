@@ -1,0 +1,28 @@
+T1	Medical-Problem 413 432	vague focal opacity
+T2	Medical-Anatomy 440 455	left lower lung
+T3	Medical-Assertion 498 500	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 501 522	other focal opacities
+T5	Lesion-Characteristic 539 548	Calcified
+T6	Lesion-Description 549 560	lymph nodes
+T7	Lesion-Anatomy 578 588	left hilum
+T8	Medical-Assertion 655 657	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 658 674	pleural effusion
+T10	Medical-Problem 678 690	pneumothorax
+T11	Medical-Problem 758 766	fracture
+E9	Medical-Problem:T11
+T12	Medical-Problem 817 834	New vague opacity
+T13	Medical-Anatomy 842 857	left lower lung
+T14	Medical-Assertion 920 933	may represent
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 936 955	focus of aspiration
+T16	Medical-Problem 964 975	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

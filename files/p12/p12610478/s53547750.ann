@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 273 288	left upper lung
+T2	Medical-Assertion 307 317	resolution
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 321 340	post biopsy changes
+T4	Lesion-Anatomy 343 358	Left upper lobe
+T5	Lesion-Description 359 363	mass
+T6	Medical-Problem 412 439	Small left pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Assertion 451 453	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 455 467	pneumothorax
+T9	Medical-Problem 478 486	Dilation
+T10	Medical-Anatomy 494 510	descending aorta
+T11	Medical-Assertion 573 583	resolution
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 587 602	left upper lung
+E9	Medical-Problem:T12
+T13	Medical-Problem 603 622	post biopsy changes
+T14	Medical-Problem 628 638;640 667	persistent small left pleural effusion
+E11	Medical-Problem:T14
+T15	Lesion-Anatomy 672 687	left upper lobe
+T16	Lesion-Description 688 692	mass
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T15

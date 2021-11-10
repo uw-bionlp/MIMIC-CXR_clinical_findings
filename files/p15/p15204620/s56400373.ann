@@ -1,0 +1,30 @@
+T1	Medical-Problem 33 62	new right apical pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 415 458	Persistently consolidated right middle lobe
+T3	Medical-Assertion 459 462	may
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Assertion 499 518	raising concern for
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 519 544	postobstructive infection
+T6	Medical-Assertion 552 557	could
+A3	Medical-AssertionValue T6 possible
+T7	Lesion-Characteristic 630 639	Extensive
+T8	Lesion-Anatomy 640 645;647 652	right hilar
+T9	Lesion-Anatomy 657 668	mediastinal
+T10	Lesion-Description 669 679	adenopathy
+T11	Medical-Assertion 776 798	should not be mistaken
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 804 816	pneumothorax
+T13	Medical-Problem 941 977	substantial increase in shortness of
+E9	Medical-Problem:T13
+T14	Medical-Assertion 985 1000	could be due to
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1001 1016;1018 1026	acute pulmonary embolism
+T16	Lesion-Anatomy 1048 1061	intrathoracic
+T17	Lesion-Description 1062 1072	malignancy
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E7	Lesion-Description:T10 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Lesion-Description:T17 has-Lesion-Anatomy:T16

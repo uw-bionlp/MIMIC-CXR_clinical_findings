@@ -1,0 +1,24 @@
+T1	Medical-Problem 255 278	Region of consolidation
+T2	Medical-Anatomy 294 330;332 353	right infrahilar region extending to the right middle lobe
+T3	Medical-Problem 432 457	postobstructive pneumonia
+E3	Medical-Problem:T3
+T4	Lesion-Description 539 554	nodular opacity
+T5	Lesion-Anatomy 576 631;633 643	left lung base in the anterior left fifth and sixth rib interspace
+T6	Medical-Assertion 719 721	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 722 749	acute osseous abnormalities
+T8	Medical-Anatomy 857 874	Right middle lobe
+T9	Medical-Problem 875 888	consolidation
+T10	Medical-Assertion 946 954	possible
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 955 993	superimposed postobstructive infection
+T12	Medical-Problem 997 1008	atelectasis
+T13	Lesion-Description 1011 1026	Nodular opacity
+T14	Lesion-Anatomy 1047 1061	left lung base
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T10
+E11	Lesion-Description:T13 has-Lesion-Anatomy:T14

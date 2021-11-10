@@ -1,0 +1,22 @@
+T1	Medical-Problem 229 251	airspace consolidation
+T2	Medical-Anatomy 273 311	medial aspect of the right middle lobe
+T3	Medical-Assertion 312 326	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 328 337	pneumonia
+T5	Medical-Problem 340 360	Background emphysema
+E4	Medical-Problem:T5
+T6	Lesion-Size-Trend 383 401	similar appearance
+A2	Lesion-Size-TrendValue T6 no-change
+T7	Lesion-Characteristic 406 415	calcified
+T8	Lesion-Description 416 425	granuloma
+T9	Medical-Assertion 506 508	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 509 523	large effusion
+T11	Medical-Problem 527 539	pneumothorax
+T12	Medical-Problem 615 642	right middle lobe pneumonia
+E9	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Lesion-Description:T8 has-Lesion-Size-Trend:T6 has-Lesion-Characteristic:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

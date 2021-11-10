@@ -1,0 +1,44 @@
+T1	Medical-Problem 33 68	New moderate right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 73 84	atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Assertion 96 98	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 99 111;113 122	left pleural  effusion
+T5	Medical-Problem 125 154	Mild to moderate cardiomegaly
+E4	Medical-Problem:T5
+T6	Medical-Problem 426 429;431 462	new moderate right pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Problem 468 488	adjacent atelectasis
+E6	Medical-Problem:T7
+T8	Medical-Assertion 500 502	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 503 507;509 525	left pleural effusion
+T10	Medical-Problem 528 545	Mild cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Problem 567 583	focus of opacity
+T12	Medical-Anatomy 592 607	left upper lobe
+T13	Medical-Assertion 647 660	may represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 662 671	pneumonia
+T15	Lesion-Characteristic 709 718	Calcified
+T16	Lesion-Description 719 728	granuloma
+T17	Lesion-Anatomy 737 754	right middle lung
+T18	Lesion-Size-Trend 764 770	stable
+A4	Lesion-Size-TrendValue T18 no-change
+T19	Medical-Assertion 841 843	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 844 856	pneumothorax
+T21	Medical-Problem 882 917	New moderate right pleural effusion
+T22	Medical-Problem 923 934	new opacity
+T23	Medical-Anatomy 942 946;948 958	left upper lobe
+T24	Medical-Problem 979 988	pneumonia
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Lesion-Description:T16 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T17 has-Lesion-Size-Trend:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T23
+E17	Medical-Problem:T22 has-Medical-Anatomy:T23
+E19	Medical-Problem:T24 has-Medical-Anatomy:T23

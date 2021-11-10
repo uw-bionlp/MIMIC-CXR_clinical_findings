@@ -1,0 +1,34 @@
+T1	Medical-Problem 269 275;277 292	severe dextroscoliosis
+T2	Medical-Problem 297 319	structural abnormality
+T3	Medical-Anatomy 327 342	left hemithorax
+T4	Medical-Anatomy 412 427	left lower lobe
+T5	Medical-Problem 487 508;510 532	minimal residual left lower lobe atelectasis
+T6	Lesion-Anatomy 560 574	left perihilar
+T7	Lesion-Description 575 582;584 591	nodular opacity
+T8	Lesion-Size-Trend 595 601	stable
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Assertion 651 653	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 654 661;663 671	pleural effusion
+T11	Medical-Problem 675 687	pneumothorax
+T12	Medical-Anatomy 705 726	pulmonary vasculature
+T13	Medical-Assertion 730 733	not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 735 743	engorged
+T15	Medical-Anatomy 750 757	cardiac
+T16	Medical-Problem 772 787	mildly enlarged
+T17	Lesion-Anatomy 868 882	Left perihilar
+T18	Lesion-Description 883 890	nodular
+E15	Lesion-Description:T18
+T19	Lesion-Description 891 898	opacity
+T20	Lesion-Size-Trend 908 914	stable
+A4	Lesion-Size-TrendValue T20 no-change
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15
+E16	Lesion-Description:T19 has-Lesion-Anatomy:T17 has-Lesion-Size-Trend:T20

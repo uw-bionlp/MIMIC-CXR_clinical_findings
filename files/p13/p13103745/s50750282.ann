@@ -1,0 +1,14 @@
+T1	Medical-Problem 445 462;464 486	Minimal amount of right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 494 512	pleural thickening
+E2	Medical-Problem:T2
+T3	Medical-Assertion 586 588	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 589 601	pneumothorax
+T5	Medical-Problem 615 631	fluid collection
+T6	Medical-Anatomy 650 660	right apex
+T7	Lesion-Description 665 682	Nodular opacities
+T8	Lesion-Anatomy 707 723	needs right lung
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Anatomy:T6
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T8

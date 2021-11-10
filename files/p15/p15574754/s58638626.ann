@@ -1,0 +1,23 @@
+T1	Medical-Problem 205 208;210 239	new pulmonary vascular congestion
+E1	Medical-Problem:T1
+T2	Medical-Problem 244 261	mild cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 287 310	heterogeneous opacities
+T4	Medical-Anatomy 318 339	bilateral lower lobes
+T5	Medical-Assertion 351 353	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 355 367	pneumothorax
+T7	Medical-Problem 371 387	pleural effusion
+T8	Medical-Problem 410 448	Mild/early decompensated heart failure
+E7	Medical-Problem:T8
+T9	Medical-Problem 491 521	bilateral lower lobe opacities
+E8	Medical-Problem:T9
+T10	Medical-Assertion 522 530;532 544	could be secondary to
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 545 554	pneumonia
+T12	Medical-Problem 558 568	aspiration
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10

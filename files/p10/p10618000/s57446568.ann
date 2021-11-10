@@ -1,0 +1,41 @@
+T1	Medical-Problem 144 151	Opacity
+T2	Medical-Anatomy 159 184	right cardiophrenic angle
+T3	Medical-Assertion 188 194	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 196 211	pericardial fat
+T5	Medical-Assertion 214 236	Differential diagnosis
+A2	Medical-AssertionValue T5 possible
+T6	Lesion-Anatomy 246 257	pericardial
+T7	Lesion-Description 258 262	cyst
+T8	Medical-Problem 279 285	hernia
+T9	Lesion-Description 289 304	lymphadenopathy
+E7	Lesion-Description:T9
+T10	Lesion-Characteristic 317 326	calcified
+T11	Lesion-Description 327 337	granulomas
+T12	Lesion-Anatomy 346 362	right upper lobe
+T13	Lesion-Assertion 367 375	probably
+A3	Lesion-AssertionValue T13 possible
+T14	Lesion-Characteristic 376 385	calcified
+T15	Lesion-Description 386 397	lymph nodes
+T16	Lesion-Anatomy 405 415	left hilum
+T17	Medical-Assertion 428 439	no evidence
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 443 462	lung consolidations
+T19	Medical-Problem 464 476	pneumothorax
+T20	Medical-Problem 481 497	pleural effusion
+T21	Medical-Problem 501 526	Mild degenerative changes
+T22	Medical-Anatomy 538 552	thoracic spine
+T23	Medical-Assertion 570 581	No evidence
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 585 593	acute TB
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E12	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T17
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22
+E19	Medical-Problem:T24 has-Medical-Assertion:T23

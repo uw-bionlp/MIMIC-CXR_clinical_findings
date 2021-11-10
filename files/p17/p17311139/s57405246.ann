@@ -1,0 +1,41 @@
+T1	Medical-Problem 95 105;107 124	left-sided  pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 127 170	Residual left lower lobe lung opacification
+E2	Medical-Problem:T2
+T3	Medical-Assertion 171 177;179 190	likely  represents
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 206 220	trace effusion
+T5	Medical-Problem 225 236	atelectasis
+T6	Medical-Problem 244 254;256 264	infectious  process
+T7	Medical-Assertion 265 277	not excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 280 282	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 283 295	pneumothorax
+T10	Medical-Problem 313 324;326 339	tiny apical  pneumothorax
+E7	Medical-Problem:T10
+T11	Medical-Assertion 893 903	suggesting
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 904 940	significant decrease in fluid status
+T13	Medical-Assertion 965 967	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 968 980	pneumothorax
+T15	Medical-Problem 991 1027	Mild, streaky interstitial opacities
+T16	Medical-Anatomy 1037 1077	both upper lobes and the right lung base
+T17	Medical-Anatomy 1084 1109	descending thoracic aorta
+T18	Medical-Problem 1114 1136	tortuous and calcified
+T19	Medical-Problem 1162 1187;1189 1194	expanded abdominal aortic stent
+E14	Medical-Problem:T19
+T20	Medical-Assertion 1280 1282	No
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1283 1295	pneumothorax
+T22	Medical-Anatomy 1353 1367	left lung base
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Anatomy:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T17
+E15	Medical-Problem:T21 has-Medical-Assertion:T20 has-Medical-Anatomy:T22

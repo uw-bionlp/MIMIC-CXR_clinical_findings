@@ -1,0 +1,15 @@
+T1	Medical-Problem 514 536	persistent volume loss
+T2	Medical-Anatomy 544 559	left lower lung
+T3	Medical-Problem 568 573;575 601	right lung remains hyperexpanded
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 662 671	left base
+E4	Medical-Anatomy:T4
+T5	Medical-Assertion 674 676	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 677 692	pulmonary edema
+T7	Medical-Assertion 695 697	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 698 710	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

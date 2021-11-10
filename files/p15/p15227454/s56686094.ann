@@ -1,0 +1,27 @@
+T1	Medical-Assertion 307 309	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 310 322	pneumothorax
+T3	Medical-Assertion 337 339	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 340 354	gross effusion
+T5	Medical-Problem 421 440	Extensive opacities
+T6	Medical-Anatomy 444 448;450 455	both lungs
+T7	Medical-Assertion 477 499	differential diagnosis
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 509 512	CHF
+T9	Medical-Problem 519 546	interstitial alveolar edema
+T10	Medical-Problem 571 591;593 604	associated pneumonic infiltrates
+T11	Medical-Assertion 605 632	cannot be entirely excluded
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 691 693	No
+A5	Medical-AssertionValue T12 absent
+T13	Medical-Problem 694 706	pneumothorax
+T14	Medical-Problem 717 726;728 747	Extensive bilateral opacities
+E9	Medical-Problem:T14
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T11
+E8	Medical-Problem:T13 has-Medical-Assertion:T12

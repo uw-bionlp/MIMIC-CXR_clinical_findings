@@ -1,0 +1,18 @@
+T1	Medical-Problem 202 238	new large area of near consolidation
+T2	Medical-Anatomy 246 275;277 312	left lung, involving at least the lingula and possibly lower lobe
+T3	Medical-Assertion 343 348;350 352	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 356 374	area of hemorrhage
+T5	Medical-Assertion 411 413	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 414 426	pneumothorax
+T7	Medical-Problem 443 459	pleural effusion
+T8	Medical-Problem 506 530	extent of fat deposition
+E6	Medical-Problem:T8
+T9	Lesion-Characteristic 535 539	mild
+T10	Lesion-Description 540 562	lymph node enlargement
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T9

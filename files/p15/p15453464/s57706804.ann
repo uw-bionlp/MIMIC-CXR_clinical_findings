@@ -1,0 +1,18 @@
+T1	Medical-Problem 305 335	minimal right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 438 455;457 462	retrocardiac lung areas
+T3	Medical-Problem 474 494	constant atelectasis
+T4	Medical-Anatomy 502 525	left basal lung regions
+T5	Medical-Assertion 528 550	potentially aggravated
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 556 569	hiatal hernia
+T7	Medical-Assertion 572 574	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 575 596	overt pulmonary edema
+T9	Medical-Assertion 599 601	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 603 612	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

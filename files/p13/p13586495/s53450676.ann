@@ -1,0 +1,25 @@
+T1	Medical-Problem 277 305	large left lung base opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 343 348;350 378	small right-sided pleural effusion
+T3	Medical-Problem 383 420	minimal peribronchovascular opacities
+T4	Medical-Anatomy 429 444	right lung base
+T5	Medical-Anatomy 465 470	lungs
+E5	Medical-Anatomy:T5
+T6	Medical-Assertion 565 567	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 569 581	pneumothorax
+T8	Medical-Problem 646 656;658 685	left lower lobe collapse/consolidation
+E7	Medical-Problem:T8
+T9	Medical-Problem 690 706	pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 712 731;733 741	trace right pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 746 772	trace right base opacities
+E10	Medical-Problem:T11
+T12	Medical-Problem 775 784	Infection
+T13	Medical-Assertion 785 803	cannot be excluded
+A2	Medical-AssertionValue T13 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E11	Medical-Problem:T12 has-Medical-Assertion:T13

@@ -1,0 +1,31 @@
+T1	Medical-Problem 162 179	heart is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 186 207	hilar and mediastinal
+T3	Medical-Problem 222 239	somewhat obscured
+T4	Medical-Problem 243 264	hazy patchy opacities
+T5	Medical-Anatomy 278 284;286 324	across both lungs, predominantly at the bases
+T6	Medical-Anatomy 331 356	central pulmonary vessels
+T7	Medical-Problem 362 379	engorged and hazy
+T8	Medical-Problem 387 412	constellation of findings
+E8	Medical-Problem:T8
+T9	Medical-Problem 438 475	moderate-to-severe interstitial edema
+E9	Medical-Problem:T9
+T10	Medical-Problem 478 511	Small bilateral pleural effusions
+E10	Medical-Problem:T10
+T11	Medical-Assertion 543 545	no
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 546 558	pneumothorax
+T13	Medical-Problem 576 623	Moderate-to-severe pulmonary interstitial edema
+E12	Medical-Problem:T13
+T14	Medical-Assertion 628 634	likely
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 636 653	pleural effusions
+T16	Medical-Assertion 655 669	concerning for
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 670 692	cardiac decompensation
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

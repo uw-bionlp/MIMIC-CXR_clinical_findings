@@ -1,0 +1,29 @@
+T1	Medical-Problem 54 64	aspiration
+E1	Medical-Problem:T1
+T2	Medical-Assertion 454 460	likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 461 508	exaggerating the size of the cardiac silhouette
+T4	Medical-Assertion 517 523	may be
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 524 543	borderline enlarged
+T6	Medical-Problem 564 572	crowding
+T7	Medical-Anatomy 580 585;587 604	right infrahilar region
+T8	Medical-Problem 656 661;663 677	Small fissural fluid
+E6	Medical-Problem:T8
+T9	Medical-Problem 701 722	Right basilar opacity
+E7	Medical-Problem:T9
+T10	Medical-Assertion 778 797	could be related to
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 798 808	aspiration
+T12	Medical-Assertion 820 822	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 823 839	pleural effusion
+T14	Medical-Problem 843 855	pneumothorax
+T15	Medical-Problem 901 911	aspiration
+E11	Medical-Problem:T15
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T2 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12

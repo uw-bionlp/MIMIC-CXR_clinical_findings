@@ -1,0 +1,49 @@
+T1	Medical-Problem 302 326	aortic knob is calcified
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 386 401	bilateral hilar
+T3	Lesion-Anatomy 406 417	mediastinal
+T4	Lesion-Description 419 434	lymphadenopathy
+T5	Medical-Problem 500 525	calcified pleural plaques
+T6	Medical-Problem 541 568	mild superimposed opacities
+T7	Medical-Anatomy 577 587	lung bases
+T8	Medical-Assertion 588 610	possibly reflective of
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 611 622	atelectasis
+T10	Medical-Problem 631 648;650 659	bilateral pleural effusions
+E9	Medical-Problem:T10
+T11	Lesion-Size 732 736	1 cm
+T12	Lesion-Anatomy 737 749	right apical
+T13	Lesion-Description 750 756	nodule
+T14	Lesion-Assertion 814 816	No
+A2	Lesion-AssertionValue T14 absent
+T15	Medical-Problem 817 829	pneumothorax
+E13	Medical-Problem:T15
+T16	Medical-Problem 833 862	pulmonary vascular congestion
+E14	Medical-Problem:T16
+T17	Medical-Assertion 882 884	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 885 910	acute osseous abnormality
+T19	Medical-Problem 955 964	opacities
+T20	Medical-Anatomy 972 982	lung bases
+T21	Medical-Problem 1001 1014;1016 1041	background of calcified pleural plaques
+T22	Medical-Assertion 1042 1053	may reflect
+A4	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1054 1065	atelectasis
+T24	Medical-Problem 1077 1104	bilateral pleural effusions
+E20	Medical-Problem:T24
+T25	Lesion-Anatomy 1127 1133	apical
+T26	Lesion-Description 1134 1140	nodule
+T27	Lesion-Anatomy 1145 1160	bilateral hilar
+T28	Lesion-Anatomy 1165 1176	mediastinal
+T29	Lesion-Description 1177 1192	lymphadenopathy
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T7
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E12	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T12
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T21 has-Medical-Anatomy:T20
+E19	Medical-Problem:T23 has-Medical-Anatomy:T20 has-Medical-Assertion:T22
+E22	Lesion-Description:T26 has-Lesion-Anatomy:T25
+E25	Lesion-Description:T29 has-Lesion-Anatomy:T27 has-Lesion-Anatomy:T28

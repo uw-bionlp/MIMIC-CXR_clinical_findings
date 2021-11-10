@@ -1,0 +1,14 @@
+T1	Medical-Assertion 278 280	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 281 288;290 301	pleural abnormality
+T3	Medical-Problem 304 321	Scoliosis is mild
+E2	Medical-Problem:T3
+T4	Lesion-Characteristic 399 427	granulomatous calcifications
+T5	Lesion-Anatomy 431 436	hilar
+T6	Lesion-Description 437 442;444 449	lymph nodes
+T7	Medical-Assertion 461 472	no evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 476 492	active infection
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

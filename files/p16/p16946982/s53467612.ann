@@ -1,0 +1,44 @@
+T1	Medical-Assertion 33 41	Possible
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 42 70	trace right pleural effusion
+T3	Medical-Assertion 73 75	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 76 104	definite focal consolidation
+T5	Medical-Problem 108 128	Interval height loss
+T6	Medical-Anatomy 136 153	T8 vertebral body
+T7	Medical-Anatomy 468 473	lungs
+T8	Medical-Problem 502 519	biapical scarring
+T9	Medical-Problem 522 530	Blunting
+T10	Medical-Anatomy 539 565	right lateral costophrenic
+T11	Medical-Assertion 572 587	could represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 590 604	small effusion
+T13	Lesion-Characteristic 669 676	diffuse
+T14	Lesion-Characteristic 677 682	lytic
+T15	Lesion-Description 684 691	lesions
+T16	Medical-Problem 759 782	Compression deformities
+T17	Medical-Anatomy 789 818	mid thoracic vertebral bodies
+T18	Medical-Problem 835 864	apparent interval height loss
+T19	Medical-Anatomy 872 880	T8 level
+T20	Medical-Assertion 901 909	Possible
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 910 929	trace right pleural
+E17	Medical-Problem:T21
+T22	Medical-Problem 930 938	effusion
+T23	Medical-Assertion 941 943	No
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 944 972	definite focal consolidation
+T25	Medical-Problem 984 995	height loss
+T26	Medical-Anatomy 1003 1005	T8
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T18 has-Medical-Anatomy:T17 has-Medical-Anatomy:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T20
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E20	Medical-Problem:T25 has-Medical-Anatomy:T26

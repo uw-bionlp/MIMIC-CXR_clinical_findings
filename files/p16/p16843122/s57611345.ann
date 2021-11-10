@@ -1,0 +1,32 @@
+T1	Medical-Problem 294 307	Consolidation
+T2	Medical-Anatomy 315 322	lingula
+T3	Medical-Assertion 338 350	has resolved
+A1	Medical-AssertionValue T3 absent
+T4	Lesion-Anatomy 366 381	left upper lobe
+T5	Lesion-Description 382 388	nodule
+T6	Lesion-Anatomy 397 438;440 459	periphery of the lung at the level of the fourth anterior rib
+T7	Lesion-Size-Trend 464 469	grown
+A2	Lesion-Size-TrendValue T7 increasing
+T8	Lesion-Size 512 516	4-mm
+T9	Lesion-Description 518 524	nodule
+T10	Lesion-Anatomy 532 547	left upper lobe
+T11	Lesion-Assertion 588 590	no
+A3	Lesion-AssertionValue T11 absent
+T12	Lesion-Anatomy 597 601	lung
+T13	Lesion-Description 602 609	nodules
+T14	Medical-Assertion 614 616	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 617 633	pleural effusion
+T16	Lesion-Characteristic 637 645	evidence
+T17	Lesion-Characteristic 649 656	central
+T18	Lesion-Description 658 668	adenopathy
+T19	Lesion-Description 680 692	glioblastoma
+E15	Lesion-Description:T19
+T20	Medical-Problem 778 795	nodular infection
+E16	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T9 has-Lesion-Size-Trend:T7 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T10
+E10	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Lesion-Description:T18 has-Lesion-Characteristic:T16 has-Lesion-Characteristic:T17

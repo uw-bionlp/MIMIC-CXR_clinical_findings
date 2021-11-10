@@ -1,0 +1,24 @@
+T1	Medical-Problem 338 357;359 366	soft tissue density opacity
+T2	Medical-Anatomy 387 398	right hilum
+T3	Medical-Assertion 473 475	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 476 505	pulmonary vascular congestion
+T5	Medical-Problem 510 525	pulmonary edema
+T6	Medical-Assertion 565 567	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 568 585	pleural effusions
+T8	Medical-Problem 590 602	pneumothorax
+T9	Lesion-Assertion 623 631	Possible
+A3	Lesion-AssertionValue T9 possible
+T10	Lesion-Anatomy 632 643	right hilar
+T11	Lesion-Description 644 648	mass
+T12	Lesion-Description 652 667	lymphadenopathy
+T13	Medical-Problem 827 838	soft tissue
+E10	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Anatomy:T10
+E9	Lesion-Description:T12 has-Lesion-Assertion:T9

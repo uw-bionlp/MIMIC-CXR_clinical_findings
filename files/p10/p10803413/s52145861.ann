@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 357 366;368 379	pulmonary vasculature
+T2	Medical-Assertion 383 386	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 387 395	engorged
+T4	Medical-Problem 398 422	Streaky linear opacities
+T5	Medical-Anatomy 444 458	left lung base
+T6	Medical-Problem 475 499	subsegmental atelectasis
+T7	Medical-Assertion 502 504	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 505 510;512 525	focal consolidation
+T9	Medical-Problem 527 543	pleural effusion
+T10	Medical-Problem 547 559	pneumothorax
+T11	Lesion-Assertion 570 572	No
+A3	Lesion-AssertionValue T11 absent
+T12	Lesion-Description 573 580	nodules
+T13	Lesion-Description 584 590	masses
+T14	Medical-Problem 609 640	Multilevel degenerative changes
+T15	Medical-Anatomy 661 667;669 674	imaged spine
+T16	Medical-Problem 694 718	Subsegmental atelectasis
+T17	Medical-Anatomy 726 740	left lung base
+T18	Medical-Assertion 743 745	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 746 767;769 780	acute cardiopulmonary abnormality
+T20	Lesion-Assertion 809 820	no evidence
+A5	Lesion-AssertionValue T20 absent
+T21	Lesion-Anatomy 824 837	intrathoracic
+T22	Lesion-Description 839 857	metastatic disease
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Lesion-Description:T12 has-Lesion-Assertion:T11
+E10	Lesion-Description:T13 has-Lesion-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Lesion-Description:T22 has-Lesion-Assertion:T20 has-Lesion-Anatomy:T21

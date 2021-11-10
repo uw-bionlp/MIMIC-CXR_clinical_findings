@@ -1,0 +1,14 @@
+T1	Lesion-Anatomy 209 219	multifocal
+T2	Lesion-Anatomy 220 229	bilateral
+T3	Lesion-Description 230 237	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 252 261	opacities
+T5	Medical-Assertion 371 373	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 374 390	pleural effusion
+T7	Medical-Assertion 392 394	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 396 408	pneumothorax
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T1 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

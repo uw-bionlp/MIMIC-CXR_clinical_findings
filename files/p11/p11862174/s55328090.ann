@@ -1,0 +1,24 @@
+T1	Medical-Problem 319 334;336 350	chronic pleural calcifications
+E1	Medical-Problem:T1
+T2	Medical-Problem 408 420	obliteration
+E2	Medical-Problem:T2
+T3	Medical-Problem 458 477	persistent blunting
+T4	Medical-Anatomy 486 509	left costophrenic angle
+T5	Medical-Problem 530 541	mediastinal
+E5	Medical-Problem:T5
+T6	Medical-Problem 561 591	Persistent atelectatic changes
+T7	Medical-Anatomy 607 621	left lung base
+T8	Lesion-Count 624 632	Multiple
+T9	Lesion-Anatomy 634 644	left-sided
+T10	Lesion-Description 645 652	nodules
+T11	Medical-Assertion 790 792	no
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 793 815	large pleural effusion
+T13	Medical-Problem 819 831	pneumothorax
+T14	Medical-Problem 902 924	Left basal atelectasis
+E13	Medical-Problem:T14
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E10	Lesion-Description:T10 has-Lesion-Count:T8 has-Lesion-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11

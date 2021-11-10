@@ -1,0 +1,30 @@
+T1	Medical-Problem 299 322	extensive opacification
+T2	Medical-Anatomy 330 351	majority of left lung
+T3	Lesion-Description 371 381	malignancy
+E3	Lesion-Description:T3
+T4	Medical-Problem 433 460	left-sided pleural effusion
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 509 519	right lung
+T6	Medical-Assertion 545 547	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 548 568	large consolidations
+T8	Medical-Problem 571 580	effusions
+T9	Medical-Problem 584 596	pneumothorax
+T10	Medical-Problem 638 648;650 672	left-sided subcutaneous emphysema
+T11	Medical-Assertion 673 691	have both resolved
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Assertion 741 743	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 744 771	acute osseous abnormalities
+T14	Medical-Problem 795 832	Worsening left sided pleural effusion
+E11	Medical-Problem:T14
+T15	Lesion-Anatomy 861 886	majority of the left lung
+E12	Lesion-Anatomy:T15
+T16	Lesion-Size-Trend 890 907;909 916	not significantly changed
+A4	Lesion-Size-TrendValue T16 no-change
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

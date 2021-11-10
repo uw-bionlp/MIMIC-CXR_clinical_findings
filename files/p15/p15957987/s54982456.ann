@@ -1,0 +1,35 @@
+T1	Medical-Problem 339 361	mediastinum is widened
+E1	Medical-Problem:T1
+T2	Medical-Problem 407 442	large pleural effusions bilaterally
+T3	Medical-Problem 448 459	atelectasis
+T4	Medical-Anatomy 468 478	lung bases
+T5	Medical-Problem 491 504	consolidation
+T6	Medical-Anatomy 512 533	left perihilar region
+T7	Medical-Problem 620 639	worsening pneumonia
+T8	Medical-Problem 641 650	Opacities
+T9	Medical-Anatomy 658 663	right
+T10	Lesion-Size-Trend 679 696	grossly unchanged
+A1	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Problem 701 713	questionable
+E10	Medical-Problem:T11
+T12	Medical-Problem 714 732	small pneumothorax
+T13	Medical-Anatomy 748 757	left apex
+T14	Medical-Problem 937 960	Large pleural effusions
+E13	Medical-Problem:T14
+T15	Medical-Problem 966 990;992 1005	worsening left perihilar consolidation
+E14	Medical-Problem:T15
+T16	Medical-Assertion 1007 1020	likely due to
+A2	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1021 1040	worsening pneumonia
+T18	Medical-Assertion 1043 1055	Questionable
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1056 1061;1063 1075	small pneumothorax
+T20	Medical-Anatomy 1083 1092	left apex
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Anatomy:T20

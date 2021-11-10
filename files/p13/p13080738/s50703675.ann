@@ -1,0 +1,18 @@
+T1	Medical-Assertion 659 661	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 662 674	pneumothorax
+T3	Medical-Assertion 677 679	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 680 699	appreciable pleural
+T5	Medical-Problem 700 710;712 716	effusion.  Mild
+E3	Medical-Problem:T5
+T6	Medical-Problem 717 741	interstitial abnormality
+T7	Medical-Anatomy 749 753	base
+T8	Medical-Anatomy 761 771	right lung
+T9	Medical-Assertion 772 780	could be
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 781 786;788 793	early edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

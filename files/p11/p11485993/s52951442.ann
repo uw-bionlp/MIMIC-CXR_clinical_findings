@@ -1,0 +1,31 @@
+T1	Medical-Problem 352 384	Areas of increased opacification
+T2	Medical-Anatomy 399 409	right lung
+T3	Medical-Assertion 412 420	Could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 422 434	postsurgical
+T5	Medical-Assertion 437 440	Not
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 467 476	pneumonia
+T7	Medical-Problem 497 544	significant underlying architectural distortion
+T8	Medical-Anatomy 552 562	right lung
+T9	Medical-Assertion 568 571;573 582	may represent
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 586 604	infectious process
+T11	Medical-Assertion 647 649	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 651 667	pleural effusion
+T13	Medical-Problem 671 683	pneumothorax
+T14	Medical-Problem 749 793	Interval increase in irregular opacification
+T15	Medical-Anatomy 801 811	right lung
+T16	Medical-Assertion 818 821;823 832	may represent
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 836 899;901 918	infectious process superimposed on markedly abnormal underlying lung architecture
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

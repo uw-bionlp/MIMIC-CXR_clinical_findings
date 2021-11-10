@@ -1,0 +1,26 @@
+T1	Medical-Problem 199 218	Ill-defined opacity
+T2	Medical-Anatomy 226 242	right upper lobe
+T3	Medical-Assertion 272 277;279 288	could be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 289 296	pleural
+T5	Medical-Problem 316 339	parenchymal abnormality
+T6	Medical-Assertion 394 396	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 397 407	definitive
+E5	Medical-Problem:T7
+T8	Medical-Problem 408 425	new consolidation
+T9	Medical-Problem 428 444	pleural effusion
+T10	Medical-Problem 448 463	pulmonary edema
+T11	Medical-Assertion 475 477	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 478 490	pneumothorax
+T13	Medical-Problem 493 501;503 523	Moderate degenerative changes
+T14	Medical-Anatomy 535 549	thoracic spine
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14

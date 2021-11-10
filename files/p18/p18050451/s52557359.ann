@@ -1,0 +1,30 @@
+T1	Lesion-Anatomy 277 293	right upper lobe
+T2	Lesion-Description 294 298	mass
+T3	Medical-Problem 304 324;326 345	subsequent extensive parenchymal opacity
+E3	Medical-Problem:T3
+T4	Medical-Problem 348 379	Loss of the paratracheal stripe
+T5	Medical-Assertion 380 388	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Lesion-Anatomy 391 402	mediastinal
+T7	Lesion-Description 404 414	adenopathy
+T8	Medical-Assertion 448 470	no convincing evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 475 487	pneumothorax
+T10	Medical-Problem 492 509	Loss of structure
+T11	Medical-Anatomy 517 532	left upper lobe
+T12	Medical-Assertion 533 541	suggests
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 542 561	pulmonary emphysema
+T14	Medical-Assertion 608 610	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 611 628	pleural effusions
+T16	Medical-Problem 631 639;641 651	Moderate tortuosity
+T17	Medical-Anatomy 659 673	thoracic aorta
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17

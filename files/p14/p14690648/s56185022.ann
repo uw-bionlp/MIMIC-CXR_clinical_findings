@@ -1,0 +1,34 @@
+T1	Medical-Problem 191 220	Heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 278 293	mild tortuosity
+T3	Medical-Anatomy 301 315	thoracic aorta
+T4	Medical-Problem 338 368	Atherosclerotic calcifications
+T5	Medical-Anatomy 386 397	aortic knob
+T6	Medical-Problem 450 481	subsegmental linear atelectasis
+T7	Medical-Anatomy 489 493;495 509	left mid lung field
+T8	Medical-Assertion 531 538	without
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 539 558	focal consolidation
+T10	Lesion-Characteristic 561 570	Scattered
+T11	Lesion-Characteristic 572 581	calcified
+T12	Lesion-Description 582 592	granulomas
+T13	Lesion-Anatomy 610 624	left lung base
+T14	Medical-Assertion 627 629	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 630 646	pleural effusion
+T16	Medical-Problem 651 663	pneumothorax
+T17	Medical-Assertion 692 694	no
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 695 722	acute osseous abnormalities
+T19	Medical-Assertion 742 744	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 745 778	acute cardiopulmonary abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

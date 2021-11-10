@@ -1,0 +1,38 @@
+T1	Medical-Anatomy 238 248	Each hilum
+T2	Medical-Problem 257 272	mildly enlarged
+T3	Medical-Assertion 292 305	may be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 306 321	lymphadenopathy
+E3	Medical-Problem:T4
+T5	Medical-Problem 325 352	enlarged pulmonary arteries
+T6	Medical-Problem 372 383	enlargement
+T7	Lesion-Description 448 463	lymphadenopathy
+E6	Lesion-Description:T7
+T8	Medical-Assertion 464 483	perhaps more likely
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 501 507;509 541	patchy lower lung opacities bilaterally
+T10	Medical-Anatomy 559 579;581 588	right lower lobe and lingula
+T11	Medical-Problem 591 625	Posterior lower lung opacification
+E9	Medical-Problem:T11
+T12	Medical-Problem 693 720	Bilateral hilar enlargement
+E10	Medical-Problem:T12
+T13	Lesion-Assertion 722 731	suspected
+A3	Lesion-AssertionValue T13 possible
+T14	Lesion-Description 743 758	lymphadenopathy
+T15	Medical-Problem 824 832;834 852	enlarged pulmonary arteries
+E12	Medical-Problem:T15
+T16	Medical-Assertion 853 864	may explain
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 865 878	enlarged hila
+T18	Medical-Problem 887 907	Lower lung opacities
+E14	Medical-Problem:T18
+T19	Medical-Assertion 909 922	worrisome for
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 923 932	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Lesion-Description:T14 has-Lesion-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

@@ -1,0 +1,39 @@
+T1	Lesion-Anatomy 266 287	right apical dominant
+T2	Lesion-Description 288 292	mass
+T3	Lesion-Assertion 317 320	not
+A1	Lesion-AssertionValue T3 absent
+T4	Medical-Problem 364 375	Volume loss
+T5	Medical-Anatomy 383 399	right upper lobe
+T6	Medical-Problem 404 412	scarring
+T7	Medical-Problem 434 453	perihilar opacities
+E6	Medical-Problem:T7
+T8	Medical-Problem 473 492;494 517	interlobular septal thickening ground-glass
+E7	Medical-Problem:T8
+T9	Medical-Problem 556 570;572 598	moderate right pleural effusion, layering
+E8	Medical-Problem:T9
+T10	Medical-Assertion 719 721	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 722 726;728 744	left pleural effusion
+T12	Medical-Assertion 769 771	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 772 784	pneumothorax
+T14	Medical-Problem 805 836	Moderate right pleural effusion
+E11	Medical-Problem:T14
+T15	Medical-Problem 841 849	Scarring
+T16	Medical-Problem 854 865	volume loss
+T17	Medical-Anatomy 873 889	right upper lobe
+T18	Medical-Problem 894 918	Right perihilar fullness
+E15	Medical-Problem:T18
+T19	Lesion-Assertion 934 942	possible
+A4	Lesion-AssertionValue T19 possible
+T20	Medical-Problem 943 955	lymphangitic
+E16	Medical-Problem:T20
+T21	Lesion-Description 966 971	tumor
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T17
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Lesion-Description:T21 has-Lesion-Assertion:T19

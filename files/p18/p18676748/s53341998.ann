@@ -1,0 +1,22 @@
+T1	Medical-Assertion 35 37	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 38 41	ptx
+T3	Medical-Assertion 568 570	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 571 583	pneumothorax
+T5	Medical-Problem 586 626	Some nonspecific increased lung markings
+T6	Medical-Anatomy 630 634;636 642	both apices
+T7	Medical-Problem 672 693	fibrocalcific changes
+T8	Medical-Problem 713 729	minimal blunting
+T9	Medical-Anatomy 737 762	right costophrenic sulcus
+T10	Medical-Assertion 763 771	suggests
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 774 788	small effusion
+T12	Medical-Assertion 808 810	No
+A4	Medical-AssertionValue T12 absent
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10

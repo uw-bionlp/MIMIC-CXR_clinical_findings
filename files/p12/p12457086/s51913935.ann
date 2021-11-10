@@ -1,0 +1,27 @@
+T1	Medical-Problem 313 317;319 340	Lung volumes are decreased
+E1	Medical-Problem:T1
+T2	Medical-Problem 425 461	patchy left lower lobe consolidation
+E2	Medical-Problem:T2
+T3	Medical-Assertion 462 468;470 480	likely reflecting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 481 492	atelectasis
+T5	Medical-Problem 494 503	infection
+T6	Medical-Assertion 504 522	cannot be excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 634 636	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 637 649	pneumothorax
+T9	Medical-Assertion 657 659	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 660 685	definite pleural effusion
+T11	Medical-Problem 711 731	Patchy consolidation
+T12	Medical-Anatomy 739 754	left lower lobe
+T13	Medical-Assertion 755 770	likely reflects
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 771 781;783 794	residual a atelectasis
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Anatomy:T12
+E9	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

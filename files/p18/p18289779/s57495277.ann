@@ -1,0 +1,30 @@
+T1	Medical-Problem 288 305	Streaky bibasilar
+E1	Medical-Problem:T1
+T2	Medical-Problem 306 315	opacities
+E2	Medical-Problem:T2
+T3	Medical-Assertion 336 338	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 339 347	effusion
+T5	Lesion-Size-Trend 401 418	relatively stable
+A2	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Size 419 423	8 mm
+T7	Lesion-Description 424 430	nodule
+T8	Lesion-Anatomy 452 478	right upper lung laterally
+T9	Medical-Problem 493 506;508 516	silhouette is enlarged
+E7	Medical-Problem:T9
+T10	Medical-Assertion 562 564	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 565 570	acute
+E8	Medical-Problem:T11
+T12	Medical-Problem 571 578;580 591	osseous abnormality
+T13	Medical-Problem 728 735	volumes
+E10	Medical-Problem:T13
+T14	Medical-Problem 741 760	bibasilar opacities
+E11	Medical-Problem:T14
+T15	Medical-Assertion 767 784;786 795	could potentially be due to
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 796 807	atelectasis
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Size-Trend:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

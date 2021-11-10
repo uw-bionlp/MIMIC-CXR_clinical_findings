@@ -1,0 +1,36 @@
+T1	Medical-Problem 238 263	Rounded calcified density
+T2	Medical-Anatomy 292 303;305 333	adjacent to the right main stem bronchus
+T3	Medical-Anatomy 338 365	superior to the right hilus
+T4	Medical-Assertion 387 389	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 390 407	new focal opacity
+T6	Medical-Problem 409 425	pleural effusion
+T7	Medical-Problem 427 439	pneumothorax
+T8	Medical-Problem 444 453;455 460	pulmonary edema
+T9	Medical-Assertion 528 530	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 532 548	bony abnormality
+T11	Lesion-Size-Trend 566 572	Stable
+A3	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Size 573 586	3 cm x 3.5 cm
+T13	Lesion-Characteristic 587 594	rounded
+T14	Lesion-Anatomy 613 631;633 638	superior to  right hilus
+T15	Medical-Assertion 639 652	may represent
+A4	Medical-AssertionValue T15 possible
+T16	Lesion-Characteristic 653 662	calcified
+T17	Lesion-Description 663 673	lymph node
+T18	Lesion-Description 675 684	granuloma
+T19	Medical-Problem 689 703	old site of TB
+T20	Medical-Assertion 706 708;710 731	No radiographic evidence
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 735 754	active tuberculosis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T4
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E13	Lesion-Description:T17 has-Lesion-Size-Trend:T11 has-Lesion-Size-Present:T12 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14 has-Lesion-Characteristic:T16
+E14	Lesion-Description:T18 has-Lesion-Anatomy:T14
+E15	Medical-Problem:T19 has-Medical-Assertion:T15
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

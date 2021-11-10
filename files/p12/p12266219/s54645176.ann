@@ -1,0 +1,25 @@
+T1	Medical-Problem 298 345	slight interval increase in focal consolidation
+T2	Medical-Anatomy 354 371	right middle lobe
+T3	Medical-Assertion 372 386	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 387 396	pneumonia
+T5	Medical-Assertion 408 410	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 411 418;420 428	pleural effusion
+T7	Medical-Problem 432 444	pneumothorax
+T8	Medical-Assertion 500 508	Could be
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 509 514	edema
+T10	Medical-Anatomy 518 534	right lower lobe
+T11	Medical-Problem 556 597	Slight interval increase in consolidation
+T12	Medical-Anatomy 605 622	right middle lobe
+T13	Medical-Assertion 623 633;635 638	concerning for
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 639 648	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

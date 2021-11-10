@@ -1,0 +1,43 @@
+T1	Medical-Problem 337 351	Enlarged heart
+E1	Medical-Problem:T1
+T2	Medical-Problem 365 391	High-positioned diaphragms
+E2	Medical-Problem:T2
+T3	Medical-Problem 474 483;485 502	bilateral pleural densities
+T4	Medical-Anatomy 518 555	lateral and posterior pleural sinuses
+T5	Medical-Problem 559 595	Mostly linear densities on the bases
+E5	Medical-Problem:T5
+T6	Medical-Problem 605 634	crowded pulmonary vasculature
+E6	Medical-Problem:T6
+T7	Medical-Problem 663 690	bilateral pleural effusions
+E7	Medical-Problem:T7
+T8	Medical-Anatomy 693 714	Pulmonary vasculature
+T9	Medical-Problem 728 745	perivascular haze
+T10	Medical-Anatomy 753 758	bases
+T11	Medical-Problem 775 791;793 803	marked pulmonary congestion
+T12	Medical-Problem 835 860	marked S-shaped scoliosis
+T13	Medical-Anatomy 869 888	thoracolumbar spine
+T14	Medical-Problem 894 923	advanced degenerative changes
+T15	Medical-Problem 1017 1041	left-sided heart failure
+E15	Medical-Problem:T15
+T16	Medical-Problem 1047 1067	dilated heart shadow
+E16	Medical-Problem:T16
+T17	Medical-Problem 1072 1081;1083 1100	bilateral pleural effusions
+E17	Medical-Problem:T17
+T18	Medical-Assertion 1103 1105	No
+A1	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1106 1142	new discrete parenchymal infiltrates
+T20	Medical-Assertion 1171 1182	possibility
+A2	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1186 1200	some processes
+T22	Medical-Anatomy 1208 1218	lung bases
+T23	Medical-Problem 1228 1235;1237 1258	crowded pulmonary vasculature
+T24	Medical-Problem 1263 1282	partial atelectasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E9	Medical-Problem:T9 has-Medical-Anatomy:T8 has-Medical-Anatomy:T10
+E11	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Anatomy:T10
+E12	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T14 has-Medical-Anatomy:T13
+E18	Medical-Problem:T19 has-Medical-Assertion:T18
+E19	Medical-Problem:T21 has-Medical-Assertion:T20 has-Medical-Anatomy:T22
+E21	Medical-Problem:T23 has-Medical-Anatomy:T22
+E22	Medical-Problem:T24 has-Medical-Assertion:T20 has-Medical-Anatomy:T22

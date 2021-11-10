@@ -1,0 +1,50 @@
+T1	Medical-Assertion 33 35	NO
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 48	PNEUMOTHORAX
+T3	Medical-Problem 50 72	COMPLETE OPACIFICATION
+T4	Medical-Anatomy 80 89	LEFT LUNG
+T5	Medical-Problem 145 158	OPACIFICATION
+T6	Medical-Anatomy 166 182	RIGHT LOWER LOBE
+T7	Medical-Problem 219 230	ATELECTASIS
+E6	Medical-Problem:T7
+T8	Medical-Problem 235 243	EFFUSION
+E7	Medical-Problem:T8
+T9	Medical-Problem 266 279	OPACIFICATION
+T10	Medical-Anatomy 287 297	RIGHT LUNG
+T11	Medical-Assertion 304 329	RAISES THE POSSIBILITY OF
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 332 342	HEMOTHORAX
+T13	Medical-Problem 698 710	left pleural
+E11	Medical-Problem:T13
+T14	Medical-Problem 711 719	effusion
+E12	Medical-Problem:T14
+T15	Medical-Problem 787 814	Large left pleural effusion
+E13	Medical-Problem:T15
+T16	Medical-Problem 819 833	worsening left
+E14	Medical-Problem:T16
+T17	Medical-Problem 834 850	lung atelectasis
+T18	Medical-Anatomy 871 904	nearly all of the left hemithorax
+T19	Medical-Problem 911 924	less aeration
+E17	Medical-Problem:T19
+T20	Medical-Problem 984 1002	more pleural fluid
+E18	Medical-Problem:T20
+T21	Medical-Assertion 1027 1035	does not
+A3	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1036 1042	appear
+T23	Medical-Problem 1046 1083;1085 1095	have been shifted more into the right hemithorax
+T24	Medical-Problem 1104 1142	worsening right lower lobe atelectasis
+E21	Medical-Problem:T24
+T25	Medical-Problem 1160 1214	increase in a small-to-moderate right pleural effusion
+E22	Medical-Problem:T25
+T26	Medical-Assertion 1258 1260	No
+A4	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1261 1273	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E19	Medical-Problem:T22 has-Medical-Assertion:T21
+E20	Medical-Problem:T23 has-Medical-Assertion:T21
+E23	Medical-Problem:T27 has-Medical-Assertion:T26

@@ -1,0 +1,23 @@
+T1	Medical-Problem 283 307	Moderate pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 342 357;359 376	Small bilateral pleural effusions
+E2	Medical-Problem:T2
+T3	Medical-Problem 435 453	more focal opacity
+T4	Medical-Anatomy 461 476	right lung base
+T5	Medical-Assertion 477 485	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 486 512	asymmetric pulmonary edema
+T7	Medical-Problem 524 534	aspiration
+T8	Medical-Assertion 535 569	should also be given consideration
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 581 583	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 585 597	pneumothorax
+T11	Medical-Assertion 674 676	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 677 689	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

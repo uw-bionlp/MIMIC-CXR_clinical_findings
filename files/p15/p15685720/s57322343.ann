@@ -1,0 +1,36 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 48	pneumothorax
+T3	Lesion-Anatomy 65 80	right lung base
+E2	Lesion-Anatomy:T3
+T4	Medical-Problem 155 183	small right pleural effusion
+E3	Medical-Problem:T4
+T5	Medical-Problem 695 733	small amount of right pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 745 750;752 771	right basal consolidation
+E5	Medical-Problem:T6
+T7	Medical-Assertion 777 796	potentially reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 797 818;820 843	areas of re-expanding atelectasis.  Opacities
+T9	Lesion-Anatomy 851 868	right lower chest
+T10	Lesion-Assertion 869 884	might be due to
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 894 900	masses
+T12	Medical-Assertion 938 940	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 941 953	pneumothorax
+T14	Lesion-Description 965 980	Nodular opacity
+T15	Lesion-Anatomy 988 1003	left upper lung
+T16	Lesion-Assertion 1024 1035	most likely
+A5	Lesion-AssertionValue T16 possible
+T17	Lesion-Anatomy 1046 1055	pulmonary
+T18	Lesion-Description 1056 1062	nodule
+T19	Lesion-Description 1085 1092	nodules
+T20	Lesion-Anatomy 1100 1114	right mid lung
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Lesion-Description:T14 has-Lesion-Anatomy:T15
+E13	Lesion-Description:T18 has-Lesion-Assertion:T16 has-Lesion-Anatomy:T17
+E14	Lesion-Description:T19 has-Lesion-Anatomy:T20

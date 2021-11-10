@@ -1,0 +1,40 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 69	acute cardiopulmonary abnormality
+T3	Medical-Problem 390 395	heart
+T4	Medical-Assertion 396 399	not
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 420 436	slight unfolding
+T6	Medical-Anatomy 444 449	aorta
+T7	Medical-Assertion 494 496	no
+A3	Medical-AssertionValue T7 absent
+T8	Lesion-Anatomy 497 502	hilar
+T9	Lesion-Anatomy 506 517	mediastinal
+T10	Lesion-Description 518 533	lymphadenopathy
+T11	Medical-Assertion 549 551	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 552 555	CHF
+T13	Medical-Problem 557 573	focal infiltrate
+T14	Medical-Problem 575 583	effusion
+T15	Medical-Problem 588 600	pneumothorax
+T16	Medical-Problem 625 644	minimal atelectasis
+T17	Medical-Anatomy 652 657	right
+T18	Medical-Assertion 688 690	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 691 714	acute pulmonary process
+T20	Medical-Assertion 728 730	No
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Assertion 731 752	radiographic evidence
+A7	Medical-AssertionValue T21 absent
+T22	Medical-Problem 756 765	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T4
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T22 has-Medical-Assertion:T20 has-Medical-Assertion:T21

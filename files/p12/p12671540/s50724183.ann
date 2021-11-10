@@ -1,0 +1,32 @@
+T1	Medical-Problem 142 159	complete collapse
+T2	Medical-Anatomy 167 176	left lung
+T3	Medical-Problem 183 194;196 217	co-existing left pleural effusion
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 258 270	Central left
+T5	Lesion-Description 271 275	mass
+T6	Lesion-Anatomy 280 301	bilateral mediastinal
+T7	Lesion-Anatomy 306 311	hilar
+T8	Lesion-Description 312 327	lymphadenopathy
+T9	Medical-Problem 380 409	Pulmonary vascular congestion
+T10	Medical-Problem 429 452	mild interstitial edema
+T11	Medical-Anatomy 460 470	right lung
+T12	Medical-Problem 484 511	nonspecific area of opacity
+T13	Medical-Anatomy 519 529	right base
+T14	Medical-Assertion 531 546	probably due to
+A1	Medical-AssertionValue T14 possible
+T15	Medical-Problem 547 556;558 569	localized atelectasis
+T16	Medical-Problem 590 618	small right pleural effusion
+T17	Medical-Problem 621 630;632 647	Calcified pleural plaques
+E16	Medical-Problem:T17
+T18	Lesion-Characteristic 652 661	calcified
+T19	Lesion-Description 662 672	granulomas
+T20	Lesion-Anatomy 695 700	right
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T11
+E10	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Medical-Problem:T16 has-Medical-Assertion:T14
+E18	Lesion-Description:T19 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T20

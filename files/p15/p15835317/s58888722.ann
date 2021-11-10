@@ -1,0 +1,21 @@
+T1	Medical-Problem 171 181;183 197	Persistent calcifications
+T2	Medical-Anatomy 201 227	right superior mediastinum
+T3	Medical-Problem 243 251;253 267	vascular calcifications
+T4	Medical-Problem 290 307	Worsening opacity
+T5	Medical-Anatomy 311 328;330 334	left retrocardiac area
+T6	Medical-Assertion 335 348	could reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 356 367	atelectasis
+T8	Medical-Problem 371 402	developing infectious pneumonia
+T9	Medical-Problem 406 423	Minor atelectasis
+T10	Medical-Anatomy 442 458	right upper lobe
+T11	Medical-Problem 464 481;483 513	associated slight elevation of the minor fissure
+T12	Medical-Problem 516 549	Small bilateral pleural effusions
+E11	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10

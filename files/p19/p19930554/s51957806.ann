@@ -1,0 +1,28 @@
+T1	Medical-Assertion 187 194	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 195 214	focal consolidation
+T3	Medical-Assertion 217 219	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 220 236	pleural effusion
+T5	Medical-Problem 241 253	pneumothorax
+T6	Lesion-Anatomy 366 371	hilar
+T7	Lesion-Assertion 386 389	not
+A3	Lesion-AssertionValue T7 absent
+T8	Medical-Problem 390 398	enlarged
+E5	Medical-Problem:T8
+T9	Lesion-Anatomy 410 415	hilar
+T10	Lesion-Description 416 431	lymphadenopathy
+T11	Medical-Assertion 451 453	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 454 466	radiographic
+E8	Medical-Problem:T12
+T13	Medical-Problem 487 498	sarcoidosis
+T14	Medical-Assertion 501 503	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 504 525;527 534	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E7	Lesion-Description:T10 has-Lesion-Anatomy:T6 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

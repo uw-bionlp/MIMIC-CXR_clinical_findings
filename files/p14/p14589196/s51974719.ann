@@ -1,0 +1,16 @@
+T1	Medical-Problem 241 250	elevation
+T2	Medical-Anatomy 258 276	left hemidiaphragm
+T3	Medical-Problem 302 312;314 337	vertically oriented linear density
+T4	Medical-Anatomy 345 361	right lower lung
+T5	Medical-Assertion 385 391;393 403	likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 406 423	focus of scarring
+T7	Medical-Assertion 426 428	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 429 443	large effusion
+T9	Medical-Problem 447 459	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

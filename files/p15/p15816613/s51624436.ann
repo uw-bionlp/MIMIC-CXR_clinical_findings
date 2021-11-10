@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 448 458	both lungs
+T2	Medical-Problem 505 510;512 530	upper lobe opacification
+T3	Medical-Problem 566 590;592 600	vague rounded opacity of moderate
+T4	Medical-Anatomy 613 629	right upper lung
+T5	Medical-Problem 635 663	heart is moderately enlarged
+E5	Medical-Problem:T5
+T6	Medical-Problem 675 699	mild vascular congestion
+E6	Medical-Problem:T6
+T7	Medical-Problem 708 722	main pulmonary
+E7	Medical-Problem:T7
+T8	Medical-Problem 749 772	Small pleural effusions
+E8	Medical-Problem:T8
+T9	Medical-Problem 809 821;823 833	left basilar atelectais
+E9	Medical-Problem:T9
+T10	Medical-Assertion 845 847	no
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 848 860	pneumothorax
+T12	Medical-Problem 885 905	Upper lobe opacities
+E11	Medical-Problem:T12
+T13	Medical-Problem 918 953;955 962	somewhat a rounded right upper lobe opacity
+E12	Medical-Problem:T13
+T14	Medical-Assertion 983 998	probably due to
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1001 1010	pneumonia
+T16	Medical-Problem 1014 1032;1034 1045	recent substantial atelectasis
+T17	Lesion-Description 1125 1129	mass
+T18	Lesion-Anatomy 1137 1153	right upper lobe
+T19	Medical-Problem 1162 1185	Small pleural effusions
+E17	Medical-Problem:T19
+T20	Medical-Assertion 1190 1198	probable
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1199 1223	left basilar atelectasis
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Lesion-Description:T17 has-Lesion-Anatomy:T18
+E18	Medical-Problem:T21 has-Medical-Assertion:T20

@@ -1,0 +1,28 @@
+T1	Medical-Assertion 223 225	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 226 236	infiltrate
+T3	Medical-Problem 239 260	Postoperative changes
+T4	Medical-Anatomy 285 299	thoracic spine
+T5	Lesion-Size 355 359	6 mm
+T6	Lesion-Description 360 367	nodular
+E5	Lesion-Description:T6
+T7	Lesion-Description 368 375	opacity
+T8	Medical-Problem 400 409	posterior
+E7	Medical-Problem:T8
+T9	Medical-Problem 620 637	increased opacity
+E8	Medical-Problem:T9
+T10	Medical-Assertion 742 744	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 745 761	focal infiltrate
+T12	Medical-Problem 767 795	2 areas of increased opacity
+T13	Medical-Anatomy 796 817	projecting over bones
+T14	Lesion-Assertion 824 839	could represent
+A3	Lesion-AssertionValue T14 possible
+T15	Lesion-Characteristic 840 849	sclerotic
+T16	Lesion-Description 850 857	lesions
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Lesion-Description:T16 has-Lesion-Assertion:T14 has-Lesion-Characteristic:T15

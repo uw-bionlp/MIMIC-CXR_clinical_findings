@@ -1,0 +1,30 @@
+T1	Medical-Problem 410 428;430 446	cardiac silhouette remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 495 501	may be
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 503 549	minimal central pulmonary vascular engorgement
+T4	Medical-Assertion 550 557	without
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 558 579	overt pulmonary edema
+T6	Medical-Assertion 582 584	No
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 585 604	focal consolidation
+T8	Medical-Problem 606 622	pleural effusion
+T9	Medical-Problem 627 635	evidence
+E6	Medical-Problem:T9
+T10	Medical-Problem 639 651	pneumothorax
+T11	Medical-Assertion 680 688	Possible
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 689 735	minimal central pulmonary vascular engorgement
+T13	Medical-Assertion 736 743	without
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 744 749;751 766	overt pulmonary edema
+T15	Medical-Problem 769 817	Persistent enlargement of the cardiac silhouette
+E10	Medical-Problem:T15
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T2 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T6
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T11 has-Medical-Assertion:T13

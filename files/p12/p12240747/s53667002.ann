@@ -1,0 +1,27 @@
+T1	Medical-Problem 289 297;299 306	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 309 366	Moderate right and small left bilateral pleural effusions
+E2	Medical-Problem:T2
+T3	Medical-Problem 386 408	right pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Assertion 455 461	likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 464 498	component of bibasilar atelectasis
+T6	Medical-Problem 501 521	Underlying infection
+T7	Medical-Assertion 542 561	cannot be ruled out
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 624 626	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 627 639	pneumothorax
+T10	Medical-Problem 731 778	Moderate right and small left pleural effusions
+E7	Medical-Problem:T10
+T11	Medical-Problem 784 794;796 807	associated atelectasis
+E8	Medical-Problem:T11
+T12	Medical-Problem 810 830	Underlying infection
+T13	Medical-Anatomy 838 849	lower lobes
+T14	Medical-Assertion 850 868	cannot be excluded
+A4	Medical-AssertionValue T14 possible
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

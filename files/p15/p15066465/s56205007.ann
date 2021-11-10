@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 218 223	lungs
+T2	Medical-Assertion 228 233	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 237 260	confluent consolidation
+T4	Medical-Problem 335 346	enlargement
+T5	Medical-Anatomy 354 380	pulmonary hila bilaterally
+T6	Medical-Assertion 385 395	suggestion
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 399 411	cardiomegaly
+T8	Medical-Problem 481 504	Enlarged pulmonary hila
+E6	Medical-Problem:T8
+T9	Medical-Assertion 506 524	potentially due to
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 525 543;545 553	enlarged pulmonary arteries
+T11	Lesion-Description 561 571	adenopathy
+E8	Lesion-Description:T11
+T12	Medical-Problem 574 586	Cardiomegaly
+E9	Medical-Problem:T12
+T13	Medical-Assertion 589 600	No evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 604 609;611 634	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

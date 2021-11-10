@@ -1,0 +1,29 @@
+T1	Medical-Assertion 251 259	possible
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 260 272;274 287	retrocardiac opacification
+T3	Medical-Assertion 299 301	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 302 321	vascular congestion
+T5	Medical-Problem 326 338	pneumothorax
+T6	Lesion-Assertion 419 421	no
+A3	Lesion-AssertionValue T6 absent
+T7	Lesion-Characteristic 423 433	concerning
+T8	Lesion-Characteristic 434 441	osseous
+T9	Lesion-Characteristic 445 456	soft tissue
+T10	Lesion-Description 457 464	lesions
+T11	Medical-Assertion 483 491	possible
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 492 518	retrocardiac opacification
+T13	Medical-Assertion 519 534	could represent
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 535 546	atelectasis
+T15	Medical-Problem 595 604	pneumonia
+T16	Medical-Assertion 605 625	has to be considered
+A6	Medical-AssertionValue T16 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E7	Lesion-Description:T10 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T11 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T16

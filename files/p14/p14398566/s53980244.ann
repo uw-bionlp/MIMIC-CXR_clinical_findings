@@ -1,0 +1,21 @@
+T1	Medical-Problem 339 377	minimal atherosclerotic calcifications
+T2	Medical-Anatomy 391 397;399 403	aortic knob
+T3	Medical-Problem 406 422	Patchy opacities
+T4	Medical-Anatomy 443 475	left upper and lower lung fields
+T5	Medical-Assertion 503 514	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 515 533	areas of infection
+T7	Medical-Assertion 569 571	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 572 588	pleural effusion
+T9	Medical-Problem 592 604	pneumothorax
+T10	Medical-Problem 694 710	Patchy opacities
+T11	Medical-Anatomy 718 750	left upper and lower lung fields
+T12	Medical-Problem 785 794	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T11

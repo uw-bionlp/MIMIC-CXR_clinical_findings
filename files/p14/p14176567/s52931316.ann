@@ -1,0 +1,23 @@
+T1	Medical-Problem 401 427	interval increased opacity
+T2	Medical-Anatomy 439 457;459 474	right greater than left upper lung
+T3	Medical-Problem 477 491	Bronchiectasis
+T4	Medical-Anatomy 499 514	left upper lobe
+T5	Medical-Assertion 558 569	no evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 573 585	pneumothorax
+T7	Medical-Assertion 597 599	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 600 613;615 623	large pleural effusion
+T9	Medical-Problem 644 670	Interval increased opacity
+T10	Medical-Anatomy 678 712	right greater than left upper lung
+T11	Medical-Assertion 713 719;721 733	likely secondary to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 734 749	pulmonary edema
+T13	Medical-Problem 759 768	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

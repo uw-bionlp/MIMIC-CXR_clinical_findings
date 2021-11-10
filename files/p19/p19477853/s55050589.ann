@@ -1,0 +1,26 @@
+T1	Medical-Problem 326 338;340 367	stable right moderate-sized pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 374 384	right lung
+T3	Medical-Problem 393 400	encased
+T4	Medical-Problem 411 415;417 442	very heterogeneous attenuation
+T5	Lesion-Assertion 449 455	likely
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Anatomy 490 495;497 507	right upper lobe
+T7	Lesion-Description 508 512	mass
+T8	Lesion-Description 517 527	nodularity
+T9	Lesion-Size 632 636	5 mm
+T10	Lesion-Description 637 644	nodular
+E9	Lesion-Description:T10
+T11	Lesion-Description 645 652	opacity
+T12	Lesion-Anatomy 674 699	left fourth posterior rib
+T13	Medical-Assertion 702 704	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 705 718	left effusion
+T15	Medical-Problem 722 726;728 740	left pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T8 has-Lesion-Assertion:T5
+E10	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13

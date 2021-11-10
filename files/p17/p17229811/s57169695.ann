@@ -1,0 +1,24 @@
+T1	Medical-Problem 122 151	New bronchial wall thickening
+T2	Medical-Anatomy 177 187;189 193	left lower lobe
+T3	Medical-Problem 205 263;265 288	subtle bibasilar poorly defined peribronchiolar opacities, left greater than right
+T4	Medical-Assertion 344 354	suggestion
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 360 381	new localized opacity
+T6	Medical-Anatomy 396 414	mid thoracic spine
+T7	Medical-Anatomy 445 487	superior segment of one of the lower lobes
+T8	Medical-Assertion 507 517	suggestion
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 521 546	underlying bronchiectasis
+T10	Medical-Anatomy 554 570	right lower lobe
+T11	Medical-Assertion 721 723	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 724 741	pleural effusions
+T13	Medical-Problem 745 768	acute skeletal findings
+T14	Medical-Problem 786 848	Bilateral lower lobe bronchopneumonia, left greater than right
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

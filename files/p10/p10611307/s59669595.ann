@@ -1,0 +1,33 @@
+T1	Medical-Problem 377 397	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 400 415;417 425	Bronchovascular crowding
+E2	Medical-Problem:T2
+T3	Medical-Problem 446 471	mild left basilar opacity
+E3	Medical-Problem:T3
+T4	Medical-Problem 480 491	atelectasis
+T5	Medical-Assertion 493 499	versus
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 500 515	mild aspiration
+T7	Medical-Assertion 516 536	difficult to exclude
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 576 598	aorta appears unfolded
+E6	Medical-Problem:T8
+T9	Medical-Assertion 628 630	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 631 644;646 652	definite bony injury
+T11	Medical-Problem 721 735	subtle opacity
+T12	Medical-Anatomy 744 758	left lung base
+T13	Medical-Assertion 759 778	likely representing
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 779 790	atelectasis
+T15	Medical-Problem 794 818	bronchovascular crowding
+T16	Medical-Problem 828 845	subtle aspiration
+T17	Medical-Assertion 846 866	difficult to exclude
+A5	Medical-AssertionValue T17 possible
+E4	Medical-Problem:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T12 has-Medical-Assertion:T13 has-Medical-Assertion:T17

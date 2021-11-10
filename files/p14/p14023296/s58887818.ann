@@ -1,0 +1,32 @@
+T1	Lesion-Size 290 296	1.7-cm
+T2	Lesion-Anatomy 297 313	right suprahilar
+T3	Lesion-Description 314 321	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 322 329	opacity
+T5	Lesion-Size-Trend 363 369	stable
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Anatomy 395 406	lung fields
+T7	Medical-Assertion 418 425	without
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 427 450	new focal consolidation
+T9	Medical-Problem 452 468	pleural effusion
+T10	Medical-Problem 473 481	evidence
+E8	Medical-Problem:T10
+T11	Medical-Problem 485 497	pneumothorax
+T12	Medical-Problem 555 575;577 595	Multiple old lateral left rib fractures
+E10	Medical-Problem:T12
+T13	Medical-Problem 613 633	Degenerative changes
+E11	Medical-Problem:T13
+T14	Medical-Problem 668 685	apparent widening
+T15	Medical-Anatomy 689 731	one to two lower thoracic vertebral bodies
+T16	Medical-Assertion 760 762	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 763 792	acute cardiopulmonary process
+T18	Medical-Problem 798 818;820 826	significant interval change
+E15	Medical-Problem:T18
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

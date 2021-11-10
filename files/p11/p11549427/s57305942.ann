@@ -1,0 +1,18 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 69	acute cardiopulmonary abnormality
+T3	Medical-Problem 445 451;453 462	Subtle opacities
+T4	Medical-Anatomy 479 483	lung
+T5	Medical-Anatomy 484 501	bases bilaterally
+T6	Medical-Assertion 513 515	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 516 528	pneumothorax
+T8	Medical-Problem 531 539	fracture
+T9	Medical-Problem 626 652	Subtle bibasilar opacities
+E7	Medical-Problem:T9
+T10	Medical-Problem 680 690	aspiration
+E8	Medical-Problem:T10
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6

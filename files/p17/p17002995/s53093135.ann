@@ -1,0 +1,34 @@
+T1	Lesion-Size 32 37	12 mm
+T2	Lesion-Anatomy 38 47	pulmonary
+T3	Lesion-Description 48 54	nodule
+T4	Lesion-Anatomy 75 90	left upper lobe
+T5	Lesion-Size 230 235	12 mm
+T6	Lesion-Anatomy 236 245	pulmonary
+T7	Lesion-Description 246 252	nodule
+T8	Lesion-Anatomy 273 288	left upper lobe
+T9	Lesion-Description 788 794	nodule
+T10	Lesion-Anatomy 832 847	left upper lobe
+T11	Medical-Anatomy 866 871	lungs
+T12	Medical-Assertion 882 889	without
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 891 910	focal consolidation
+T14	Medical-Assertion 912 914	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 915 922	pleural
+E13	Medical-Problem:T15
+T16	Medical-Problem 923 931	effusion
+T17	Medical-Problem 935 947	pneumothorax
+T18	Medical-Assertion 969 971	no
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 972 999	acute osseous abnormalities
+T20	Lesion-Anatomy 1026 1035	pulmonary
+T21	Lesion-Description 1036 1042	nodule
+T22	Lesion-Anatomy 1063 1078	left upper lobe
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T9 has-Lesion-Anatomy:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T14
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Lesion-Description:T21 has-Lesion-Anatomy:T20 has-Lesion-Anatomy:T22

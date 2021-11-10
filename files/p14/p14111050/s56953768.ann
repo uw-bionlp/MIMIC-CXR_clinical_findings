@@ -1,0 +1,22 @@
+T1	Medical-Assertion 175 177;179 187	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 191 203	pneumothorax
+T3	Medical-Problem 316 333;335 355	Multifocal patchy and linear opacities
+T4	Medical-Anatomy 378 411;413 420	right juxtahilar and left basilar regions
+T5	Medical-Anatomy 453 468	left lower lobe
+T6	Medical-Assertion 486 490;492 508	most likely represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 509 520	atelectasis
+T8	Medical-Problem 526 546	coexisting pneumonia
+T9	Medical-Assertion 550 562	not excluded
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 565 570;572 593	Small left pleural effusion
+E7	Medical-Problem:T10
+T11	Medical-Assertion 619 621	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 622 642	visible pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

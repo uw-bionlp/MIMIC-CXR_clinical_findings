@@ -1,0 +1,19 @@
+T1	Medical-Problem 215 246	New small area of consolidation
+T2	Medical-Anatomy 250 266	right lower lobe
+T3	Medical-Assertion 336 357	highly concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 358 367	pneumonia
+T5	Medical-Assertion 501 503	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 504 520	pleural effusion
+T7	Medical-Problem 525 537	pneumothorax
+T8	Medical-Problem 557 574	New consolidation
+E6	Medical-Problem:T8
+T9	Medical-Assertion 664 677	worrisome for
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 678 687	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

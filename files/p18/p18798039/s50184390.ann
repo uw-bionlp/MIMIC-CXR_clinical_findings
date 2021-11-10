@@ -1,0 +1,17 @@
+T1	Medical-Assertion 277 279	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 280 287;289 297	pleural effusion
+T3	Medical-Problem 301 313	pneumothorax
+T4	Medical-Problem 351 364	vague opacity
+T5	Medical-Anatomy 373 388	right lung base
+T6	Medical-Problem 412 431	evolving aspiration
+T7	Medical-Problem 449 479	Vague right lower lobe opacity
+E6	Medical-Problem:T7
+T8	Medical-Assertion 487 500	may represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 501 511	aspiration
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

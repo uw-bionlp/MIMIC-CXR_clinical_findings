@@ -1,0 +1,18 @@
+T1	Medical-Assertion 353 355	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 356 392	interval progression of pneumothorax
+T3	Medical-Problem 396 410;412 428	development of pleural effusion
+T4	Medical-Anatomy 431 452	Right lung assessment
+T5	Medical-Problem 466 484	mild opacification
+T6	Medical-Problem 534 542	interval
+E5	Medical-Problem:T6
+T7	Medical-Problem 575 603	Small right pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Assertion 615 617	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 618 623;625 640	overt pneumothorax on
+T10	Medical-Anatomy 645 650	right
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10

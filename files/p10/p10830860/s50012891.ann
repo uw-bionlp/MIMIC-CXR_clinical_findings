@@ -1,0 +1,42 @@
+T1	Medical-Assertion 272 274	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 275 294	focal consolidation
+T3	Lesion-Assertion 306 316	suggestion
+A2	Lesion-AssertionValue T3 possible
+T4	Lesion-Size 322 328	sub-cm
+T5	Lesion-Description 329 336	nodular
+E3	Lesion-Description:T5
+T6	Lesion-Description 338 345	opacity
+T7	Lesion-Anatomy 353 368	left upper lobe
+T8	Medical-Problem 471 483;485 505	Streaky left retrocardiac opacity
+E6	Medical-Problem:T8
+T9	Medical-Assertion 506 528	most likely represents
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 529 540	atelectasis
+T11	Medical-Assertion 543 545	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 546 562	pleural effusion
+T13	Medical-Problem 567 579	pneumothorax
+T14	Medical-Problem 582 595	Intrathoracic
+E10	Medical-Problem:T14
+T15	Lesion-Description 596 611	lymphadenopathy
+E11	Lesion-Description:T15
+T16	Lesion-Anatomy 615 632	right juxta hilar
+T17	Lesion-Description 633 637	mass
+T18	Medical-Problem 644 667	postobstructive changes
+T19	Medical-Anatomy 675 703	right middle and lower lobes
+T20	Medical-Problem 770 789;791 809	residual patchy and linear atelectasis
+E16	Medical-Problem:T20
+T21	Medical-Problem 821 846	bronchial wall thickening
+E17	Medical-Problem:T21
+T22	Medical-Assertion 932 934	No
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 935 964	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Lesion-Description:T17 has-Lesion-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

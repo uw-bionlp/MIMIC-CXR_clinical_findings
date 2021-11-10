@@ -1,0 +1,27 @@
+T1	Medical-Assertion 572 574	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 575 587	pneumothorax
+T3	Medical-Assertion 819 821	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 822 853	significant cardiac enlargement
+T5	Medical-Problem 939 960	soft tissue densities
+T6	Medical-Anatomy 975 980	chest
+T7	Medical-Problem 1035 1051	pleural effusion
+T8	Medical-Anatomy 1058 1079	lateral pleural sinus
+T9	Medical-Assertion 1122 1133	no evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 1137 1161	massive pleural effusion
+T11	Medical-Assertion 1164 1166	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1168 1180	pneumothorax
+T13	Medical-Anatomy 1199 1210	apical area
+T14	Medical-Problem 1278 1287;1289 1297	pulmonary embolism
+E10	Medical-Problem:T14
+T15	Medical-Problem 1305 1307	MI
+E11	Medical-Problem:T15
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13

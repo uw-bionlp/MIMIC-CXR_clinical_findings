@@ -1,0 +1,23 @@
+T1	Medical-Problem 295 330	cardiac silhouette remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 348 358	resolution
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 362 371;373 390	bilateral pleural effusions
+T4	Lesion-Count 414 417	two
+T5	Lesion-Characteristic 418 427	calcified
+T6	Lesion-Anatomy 428 443	left upper lobe
+T7	Lesion-Description 445 455	granulomas
+T8	Medical-Assertion 477 487	Resolution
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 491 518	bilateral pleural effusions
+T10	Medical-Problem 525 552	Heart size remains enlarged
+E8	Medical-Problem:T10
+T11	Medical-Assertion 560 582	could be indicative of
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 583 597	cardiomyopathy
+T13	Medical-Problem 604 624	pericardial effusion
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Count:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

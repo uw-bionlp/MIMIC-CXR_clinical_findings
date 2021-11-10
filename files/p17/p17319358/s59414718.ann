@@ -1,0 +1,33 @@
+T1	Medical-Problem 263 277	mild unfolding
+T2	Medical-Anatomy 285 299	thoracic aorta
+T3	Medical-Problem 333 350	Pleural effusions
+E3	Medical-Problem:T3
+T4	Medical-Problem 367 387	Lung volumes are low
+E4	Medical-Problem:T4
+T5	Medical-Problem 410 449	predominantly streaky basilar opacities
+E5	Medical-Problem:T5
+T6	Medical-Assertion 450 466	may be seen with
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 467 478	atelectasis
+T8	Medical-Problem 482 502	Developing pneumonia
+T9	Medical-Assertion 506 514	possible
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Anatomy 545 559	left lung base
+T11	Medical-Problem 567 594	opacity is more ill-defined
+T12	Medical-Assertion 606 608	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 609 621	pneumothorax
+T14	Medical-Assertion 639 647	Possible
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 648 666	developing opacity
+T16	Medical-Anatomy 674 688	left lung base
+T17	Medical-Problem 799 811	silhouetting
+E13	Medical-Problem:T17
+T18	Medical-Problem 843 856;858 873	streaky right basilar opacity
+E14	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T16

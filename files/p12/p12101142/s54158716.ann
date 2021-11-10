@@ -1,0 +1,33 @@
+T1	Medical-Problem 278 320	Streaky lower lung and perihilar opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 321 334	may represent
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 336 347	atelectasis
+T4	Medical-Problem 350 364	Mild elevation
+T5	Medical-Anatomy 372 391	right hemidiaphragm
+T6	Medical-Assertion 408 428	Difficult to exclude
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 431 440	pneumonia
+T8	Medical-Anatomy 448 459	lower lungs
+T9	Medical-Assertion 498 500	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 501 513	pneumothorax
+T11	Medical-Problem 517 531	large effusion
+T12	Medical-Problem 623 643;645 654	old right clavicular deformity
+E9	Medical-Problem:T12
+T13	Medical-Anatomy 675 704	Perihilar and lower lung lobe
+T14	Medical-Problem 705 727	linear/streaky opacity
+T15	Medical-Assertion 728 734	likely
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 735 746	atelectasis
+T17	Medical-Assertion 749 769	difficult to exclude
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 770 779	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Anatomy:T13 has-Medical-Assertion:T17

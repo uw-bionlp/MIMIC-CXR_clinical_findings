@@ -1,0 +1,24 @@
+T1	Medical-Problem 244 279	bilateral apical pleural thickening
+E1	Medical-Problem:T1
+T2	Medical-Assertion 321 340	without evidence of
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 341 360	vascular congestion
+T4	Medical-Problem 362 369;371 379	pleural effusion
+T5	Medical-Problem 384 396	pneumothorax
+T6	Medical-Problem 408 418	flattening
+T7	Medical-Anatomy 426 440	hemidiaphragms
+T8	Lesion-Assertion 493 495	No
+A2	Lesion-AssertionValue T8 absent
+T9	Lesion-Characteristic 496 506	concerning
+T10	Lesion-Characteristic 507 514	osseous
+T11	Lesion-Characteristic 518 522;524 530	soft tissue
+T12	Lesion-Description 531 538	lesions
+T13	Medical-Assertion 556 580	No radiographic evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 584 593	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E10	Lesion-Description:T12 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

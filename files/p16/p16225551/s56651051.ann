@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 241 245;247 254	left contour
+T2	Lesion-Size 281 286	large
+T3	Lesion-Anatomy 287 299	retrocardiac
+T4	Lesion-Characteristic 300 307	rounded
+T5	Lesion-Description 308 312	mass
+T6	Lesion-Characteristic 318 325	lucency
+T7	Medical-Assertion 338 358	most compatible with
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 361 380	large hiatal hernia
+T9	Medical-Assertion 476 478	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 480 496	pleural effusion
+T11	Medical-Problem 500 512	pneumothorax
+T12	Medical-Assertion 524 526	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 527 552	subdiaphragmatic free air
+T14	Medical-Problem 665 684	Large hiatal hernia
+E11	Medical-Problem:T14
+T15	Medical-Assertion 690 692	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 693 722	acute cardiopulmonary process
+T17	Medical-Assertion 727 729	no
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 731 756	subdiaphragmatic free air
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T1 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

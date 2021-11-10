@@ -1,0 +1,27 @@
+T1	Medical-Problem 250 277	heterogeneous opacification
+T2	Medical-Anatomy 281 297	both lower lungs
+T3	Medical-Assertion 298 310;312 322	has resolved completely
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Assertion 330 345	could have been
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 346 356	aspiration
+T6	Medical-Assertion 369 372	not
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 373 382	pneumonia
+T8	Medical-Problem 386 425	Moderate cardiomegaly worsened slightly
+E5	Medical-Problem:T8
+T9	Medical-Assertion 428 430	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 431 461	pulmonary vascular engorgement
+T11	Medical-Problem 474 479	edema
+T12	Medical-Problem 483 503	any pleural effusion
+T13	Medical-Assertion 506 508	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 509 521	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T9
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

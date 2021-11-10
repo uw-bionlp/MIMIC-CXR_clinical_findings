@@ -1,0 +1,21 @@
+T1	Medical-Problem 255 284	Right lung volume remains low
+E1	Medical-Problem:T1
+T2	Medical-Assertion 299 301	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 302 324	focal lung abnormality
+T4	Medical-Problem 343 372	Mediastinal fat is interposed
+T5	Medical-Anatomy 385 397	cardiac apex
+T6	Medical-Assertion 476 478	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 479 486;488 493	pleural fluid
+T8	Lesion-Characteristic 497 505	evidence
+T9	Lesion-Characteristic 509 516	central
+T10	Lesion-Description 517 539	lymph node enlargement
+T11	Medical-Assertion 562 564	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 566 575	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

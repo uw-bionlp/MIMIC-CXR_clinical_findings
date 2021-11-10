@@ -1,0 +1,21 @@
+T1	Medical-Problem 302 319	complete collapse
+T2	Medical-Anatomy 327 342	left lower lobe
+T3	Medical-Problem 384 398	expanded lungs
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 437 442;444 448	right lung
+T5	Medical-Problem 474 494	mild pulmonary edema
+T6	Medical-Problem 503 521;523 531	associated pleural effusion
+T7	Medical-Problem 536 555	small left effusion
+E7	Medical-Problem:T7
+T8	Medical-Anatomy 572 582	heart size
+T9	Medical-Assertion 583 596	appears to be
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 598 615	slightly enlarged
+T11	Medical-Assertion 753 755	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 756 779	associated pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

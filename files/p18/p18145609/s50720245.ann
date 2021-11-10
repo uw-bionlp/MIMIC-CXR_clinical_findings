@@ -1,0 +1,18 @@
+T1	Medical-Assertion 447 458	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 462 479	pleural effusions
+T3	Medical-Problem 483 487;489 508	free intra-abdominal air
+T4	Medical-Problem 542 565;567 591	bilaterally, relatively widespread opacities and
+E3	Medical-Problem:T4
+T5	Medical-Problem 592 636	consolidations of various sizes, ill-defined
+E4	Medical-Problem:T5
+T6	Medical-Problem 648 664	air bronchograms
+E5	Medical-Problem:T6
+T7	Medical-Problem 715 735	multifocal pneumonia
+E6	Medical-Problem:T7
+T8	Medical-Problem 738 742	ARDS
+T9	Medical-Assertion 743 783;785 798	could be another differential diagnostic consideration
+A2	Medical-AssertionValue T9 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E7	Medical-Problem:T8 has-Medical-Assertion:T9

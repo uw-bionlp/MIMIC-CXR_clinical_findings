@@ -1,0 +1,25 @@
+T1	Medical-Problem 373 412	increasing layering bilateral effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 418 446	bibasilar airspace opacities
+E2	Medical-Problem:T2
+T3	Medical-Assertion 448 465	likely reflecting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 466 496	partial lower lobe atelectasis
+T5	Medical-Problem 507 516	pneumonia
+T6	Medical-Assertion 517 526;528 536	cannot be excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 539 564	Increasing indistinctness
+T8	Medical-Anatomy 572 593	perihilar vasculature
+T9	Medical-Assertion 594 600;602 613	raises concern for
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 614 629	worsening edema
+T11	Medical-Assertion 632 634	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 635 647	pneumothorax
+T13	Medical-Problem 650 676	Stable cardiac enlargement
+E9	Medical-Problem:T13
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

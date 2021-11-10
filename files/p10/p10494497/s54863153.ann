@@ -1,0 +1,42 @@
+T1	Medical-Problem 34 65	Right middle lobe consolidation
+E1	Medical-Problem:T1
+T2	Medical-Problem 459 485	middle lobe patchy opacity
+T3	Medical-Anatomy 499 517	right heart border
+T4	Medical-Assertion 646 675	felt to more likely represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 677 686	pneumonia
+T6	Lesion-Characteristic 696 706	underlying
+T7	Lesion-Description 707 717	neoplastic
+T8	Medical-Assertion 729 732	not
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 744 746	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 747 754	pleural
+E7	Medical-Problem:T10
+T11	Medical-Problem 756 764	effusion
+T12	Medical-Problem 768 780	pneumothorax
+T13	Medical-Assertion 861 872	No evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 873 875	of
+E10	Medical-Problem:T14
+T15	Medical-Problem 876 884	free air
+T16	Medical-Problem 950 968	lobe consolidation
+E12	Medical-Problem:T16
+T17	Medical-Assertion 969 982	worrisome for
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 983 992	pneumonia
+T19	Lesion-Description 1042 1060	neoplastic process
+E14	Lesion-Description:T19
+T20	Medical-Assertion 1064 1076	not excluded
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Assertion 1157 1164;1166 1187	felt to more likely represent
+A7	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1188 1197	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Assertion:T8
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T22 has-Medical-Assertion:T20 has-Medical-Assertion:T21

@@ -1,0 +1,28 @@
+T1	Medical-Problem 140 147	opacity
+T2	Medical-Anatomy 155 169	right mid lung
+T3	Medical-Assertion 173 182;184 191	no longer evident
+A1	Medical-AssertionValue T3 absent
+T4	Lesion-Size 196 201	small
+T5	Lesion-Characteristic 202 207	dense
+T6	Lesion-Description 208 223	nodular opacity
+T7	Lesion-Anatomy 231 246	right lung base
+T8	Lesion-Size-Trend 250 259	unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Assertion 262 270	probably
+A3	Lesion-AssertionValue T9 possible
+T10	Lesion-Description 273 282	granuloma
+T11	Medical-Assertion 371 373	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 374 390	pleural effusion
+T13	Medical-Problem 394 408;410 418	acute skeletal findings
+T14	Medical-Assertion 436 446	Resolution
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 450 472	right mid lung opacity
+T16	Medical-Problem 504 523	localized pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T8
+E7	Lesion-Description:T10 has-Lesion-Anatomy:T7 has-Lesion-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T14

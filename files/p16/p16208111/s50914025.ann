@@ -1,0 +1,19 @@
+T1	Medical-Problem 270 292	Poorly defined opacity
+T2	Medical-Anatomy 301 315	left lung base
+T3	Medical-Problem 321 343	associated obscuration
+T4	Medical-Anatomy 347 372;374 379	left lateral costophrenic angle
+T5	Medical-Assertion 380 393	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 394 411	focal atelectasis
+T7	Medical-Problem 415 428	consolidation
+T8	Medical-Problem 443 448;450 466	small pleural effusion
+T9	Medical-Problem 506 520;522 533	minimal linear atelectasis
+T10	Medical-Anatomy 541 551	right base
+T11	Medical-Problem 556 593	biapical pleural parenchymal scarring
+E10	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10

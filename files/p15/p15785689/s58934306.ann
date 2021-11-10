@@ -1,0 +1,27 @@
+T1	Lesion-Characteristic 162 185	incompletely marginated
+T2	Lesion-Characteristic 187 192	round
+T3	Lesion-Size 193 199	1.2 cm
+T4	Lesion-Description 209 216	opacity
+T5	Lesion-Anatomy 235 263;265 277	periphery of the right upper lung, at the
+T6	Medical-Assertion 404 406	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 407 414;416 425	pleural effusions
+T8	Medical-Problem 429 452	acute skeletal findings
+T9	Medical-Assertion 474 499	No CT findings to suggest
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 516 525	pneumonia
+T11	Lesion-Size 534 540	1.2 cm
+T12	Lesion-Description 541 548	opacity
+T13	Medical-Anatomy 552 563	right upper
+E11	Medical-Anatomy:T13
+T14	Lesion-Assertion 583 604	possibly representing
+A3	Lesion-AssertionValue T14 possible
+T15	Lesion-Description 608 612	skin
+E12	Lesion-Description:T15
+T16	Lesion-Description 613 619	lesion
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T1 has-Lesion-Characteristic:T2 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T11
+E13	Lesion-Description:T16 has-Lesion-Assertion:T14

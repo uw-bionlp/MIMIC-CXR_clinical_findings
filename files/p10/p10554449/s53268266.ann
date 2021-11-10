@@ -1,0 +1,19 @@
+T1	Medical-Anatomy 173 178	lungs
+T2	Medical-Problem 183 203	mildly hyperinflated
+T3	Lesion-Characteristic 217 226	calcified
+T4	Lesion-Description 227 237	granulomas
+T5	Lesion-Anatomy 245 281	left lower lobe and right upper lobe
+T6	Medical-Assertion 294 305	no evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 309 318	pneumonia
+T8	Lesion-Description 320 326	masses
+E7	Lesion-Description:T8
+T9	Medical-Problem 328 331	CHF
+T10	Medical-Problem 333 345	pneumothorax
+T11	Medical-Problem 349 356;358 366	pleural effusion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T6
+E10	Medical-Problem:T11 has-Medical-Assertion:T6

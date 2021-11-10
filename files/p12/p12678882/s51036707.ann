@@ -1,0 +1,29 @@
+T1	Medical-Assertion 298 300	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 301 310	pneumonia
+T3	Medical-Problem 313 341	Moderate cardiac enlargement
+E2	Medical-Problem:T3
+T4	Medical-Problem 413 437	right atrial enlargement
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 441 459	Pulmonary arteries
+T6	Medical-Problem 464 487	slightly more prominent
+T7	Medical-Problem 495 507;509 523	mild cardiac decompensation
+T8	Medical-Assertion 524 531	without
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 532 547	pulmonary edema
+T10	Medical-Assertion 559 561	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 562 578	pleural effusion
+T12	Medical-Problem 583 595	pneumothorax
+T13	Medical-Assertion 628 630	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 631 640	pneumonia
+T15	Medical-Problem 647 678	Progressive cardiac enlargement
+E11	Medical-Problem:T15
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

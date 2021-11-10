@@ -1,0 +1,44 @@
+T1	Medical-Problem 275 301	Lung volumes are decreased
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 417 428;430 455	right upper lobe and perihilar region
+T3	Medical-Problem 466 487	chronic opacification
+T4	Medical-Problem 505 523	radiation fibrosis
+E4	Medical-Problem:T4
+T5	Medical-Problem 526 546	Mild pulmonary edema
+E5	Medical-Problem:T5
+T6	Medical-Problem 576 582;584 656;658 691	slight enlargement of a moderate size right pleural effusion which is partially loculated superiorly and medially
+E6	Medical-Problem:T6
+T7	Medical-Problem 693 720	Right basilar opacification
+E7	Medical-Problem:T7
+T8	Medical-Assertion 721 732	may reflect
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 734 745	atelectasis
+T10	Medical-Problem 750 759	infection
+T11	Medical-Assertion 763 775	not excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 777 779	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 780 792	pneumothorax
+T14	Medical-Problem 821 841	Mild pulmonary edema
+E11	Medical-Problem:T14
+T15	Medical-Problem 847 878	moderate right pleural effusion
+E12	Medical-Problem:T15
+T16	Medical-Problem 937 952	Chronic opacity
+T17	Medical-Anatomy 964 975;977 1002	right upper lobe and perihilar region
+T18	Medical-Problem 1022 1040	radiation fibrosis
+T19	Medical-Problem 1042 1055;1057 1064	Right basilar opacity
+E16	Medical-Problem:T19
+T20	Medical-Assertion 1065 1076	may reflect
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1077 1088	atelectasis
+T22	Medical-Problem 1093 1102	infection
+T23	Medical-Assertion 1106 1129	not completely excluded
+A5	Medical-AssertionValue T23 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T18 has-Medical-Anatomy:T17
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T20 has-Medical-Assertion:T23

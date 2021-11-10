@@ -1,0 +1,21 @@
+T1	Medical-Assertion 296 298	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 299 315	pleural effusion
+T3	Medical-Problem 319 331	pneumothorax
+T4	Medical-Problem 346 357	new opacity
+T5	Medical-Anatomy 365 381	right lower lobe
+T6	Medical-Assertion 382 392	concerning
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 397 406	pneumonia
+T8	Medical-Problem 409 487;489 509	superimposed on preexisting patchy medial right middle lobe opacification that appears more chronic
+E6	Medical-Problem:T8
+T9	Medical-Problem 618 650	Increasing right basilar opacity
+E7	Medical-Problem:T9
+T10	Medical-Assertion 651 664	worrisome for
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 665 674	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

@@ -1,0 +1,26 @@
+T1	Medical-Problem 371 387	more volume loss
+T2	Medical-Anatomy 395 411	right upper lobe
+T3	Medical-Problem 417 425;427 439	superior displacement
+T4	Medical-Anatomy 447 460	minor fissure
+T5	Medical-Problem 462 473	Atelectasis
+T6	Medical-Anatomy 481 490	left base
+T7	Medical-Problem 521 543	retrocardiac opacities
+T8	Medical-Assertion 563 582	which may represent
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 584 594	aspiration
+T10	Medical-Problem 598 609	atelectasis
+T11	Medical-Assertion 612 614	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 615 627	pneumothorax
+T13	Medical-Problem 631 654	large pleural effusions
+T14	Medical-Problem 712 733	Increased volume loss
+T15	Medical-Anatomy 741 757	right upper lobe
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15

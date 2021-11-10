@@ -1,0 +1,21 @@
+T1	Medical-Problem 232 249;251 260	Widespread patchy opacities
+T2	Medical-Anatomy 273 294	throughout both lungs
+T3	Medical-Problem 312 322;324 333	multifocal pneumonia
+E3	Medical-Problem:T3
+T4	Medical-Problem 336 371	Underlying congestive heart failure
+T5	Medical-Assertion 372 390	cannot be excluded
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 393 395	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 397 425	substantial pleural effusion
+T8	Medical-Problem 429 441	pneumothorax
+T9	Medical-Assertion 479 481	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 482 505	radiopaque foreign body
+T11	Medical-Problem 523 543	Multifocal pneumonia
+E8	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

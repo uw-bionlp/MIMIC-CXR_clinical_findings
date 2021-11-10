@@ -1,0 +1,22 @@
+T1	Medical-Assertion 184 200	without evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 204 216	pneumothorax
+T3	Medical-Problem 221 238	pneumomediastinum
+T4	Medical-Problem 246 260	indistinctness
+T5	Medical-Anatomy 264 281	pulmonary vessels
+T6	Medical-Problem 302 336	elevated pulmonary venous pressure
+T7	Medical-Problem 358 374;376 401	some enlargement of the cardiac silhouette
+E6	Medical-Problem:T7
+T8	Medical-Problem 408 441	left hemidiaphragm is poorly seen
+E7	Medical-Problem:T8
+T9	Medical-Problem 460 471	volume loss
+T10	Medical-Anatomy 479 489	lower lobe
+T11	Medical-Assertion 494 502	possible
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 503 525	small pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

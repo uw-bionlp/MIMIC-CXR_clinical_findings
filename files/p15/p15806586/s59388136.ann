@@ -1,0 +1,48 @@
+T1	Lesion-Size 33 37	4-mm
+T2	Lesion-Characteristic 38 43	round
+T3	Lesion-Description 44 51	opacity
+T4	Lesion-Anatomy 72 80	anterior
+T5	Lesion-Anatomy 85 94	right rib
+T6	Lesion-Assertion 96 104	possibly
+A1	Lesion-AssertionValue T6 possible
+T7	Lesion-Description 107 111;113 120	bone  island
+T8	Lesion-Anatomy 128 137	pulmonary
+T9	Lesion-Description 138 144	nodule
+T10	Medical-Problem 533 540	opacity
+E9	Medical-Problem:T10
+T11	Medical-Anatomy 561 601	posterior aspect of the right fourth rib
+T12	Lesion-Assertion 603 611	could be
+A2	Lesion-AssertionValue T12 possible
+T13	Lesion-Size 614 619	small
+T14	Lesion-Description 620 631	bone island
+T15	Lesion-Anatomy 633 642	pulmonary
+T16	Lesion-Description 643 649	nodule
+T17	Medical-Problem 654 670;672 682	focus of pleural thickening
+T18	Medical-Problem 800 818	pleural thickening
+T19	Medical-Anatomy 822 826;828 834	both apices
+T20	Medical-Assertion 837 839	No
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 840 857	pleural effusions
+T22	Medical-Assertion 878 880	no
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 881 893	pneumothorax
+T24	Medical-Assertion 917 919	No
+A5	Medical-AssertionValue T24 absent
+T25	Medical-Problem 920 933	acute cardiac
+T26	Medical-Problem 937 954	pulmonary process
+T27	Lesion-Description 968 975	nodular
+E22	Lesion-Description:T27
+T28	Medical-Problem 976 983	opacity
+T29	Medical-Anatomy 1004 1029	anterior fourth right rib
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T6
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T8
+E12	Lesion-Description:T14 has-Lesion-Assertion:T12 has-Lesion-Size-Present:T13
+E14	Lesion-Description:T16 has-Lesion-Assertion:T12 has-Lesion-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T11
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T25 has-Medical-Assertion:T24
+E21	Medical-Problem:T26 has-Medical-Assertion:T24
+E23	Medical-Problem:T28 has-Medical-Anatomy:T29

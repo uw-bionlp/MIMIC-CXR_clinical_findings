@@ -1,0 +1,30 @@
+T1	Medical-Problem 468 495	Small left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 501 518	mild cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Assertion 534 536	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 537 566	pulmonary vascular congestion
+T5	Medical-Problem 570 579;581 586	pulmonary edema
+T6	Medical-Anatomy 588 593	Lungs
+T7	Medical-Assertion 633 640	without
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 641 646;648 662	focal consolidations
+T9	Lesion-Anatomy 679 690	left breast
+T10	Lesion-Description 691 698	implant
+T11	Lesion-Characteristic 702 711	calcified
+T12	Medical-Problem 713 722;724 731	Increased density
+T13	Medical-Anatomy 741 752	right chest
+T14	Lesion-Assertion 753 759	likely
+A3	Lesion-AssertionValue T14 possible
+T15	Lesion-Anatomy 769 781	right breast
+T16	Lesion-Description 782 789	implant
+T17	Lesion-Characteristic 790 799;801 817	without a calcified margin
+T18	Medical-Problem 927 967	persistent, small, left pleural effusion
+E15	Medical-Problem:T18
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Lesion-Description:T16 has-Lesion-Assertion:T14 has-Lesion-Anatomy:T15 has-Lesion-Characteristic:T17

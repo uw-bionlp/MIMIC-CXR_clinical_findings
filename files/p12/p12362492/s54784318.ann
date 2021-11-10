@@ -1,0 +1,16 @@
+T1	Medical-Assertion 498 500	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 501 513	pneumothorax
+T3	Medical-Problem 530 558	Moderate cardiac enlargement
+E2	Medical-Problem:T3
+T4	Medical-Problem 680 719	bilateral diffuse parenchymal densities
+E3	Medical-Problem:T4
+T5	Medical-Assertion 755 777	differential diagnosis
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 787 794;796 816	massive bilateral aspiration
+T7	Medical-Problem 822 845	central pulmonary edema
+T8	Medical-Assertion 846 864;866 876	cannot be excluded completely
+A3	Medical-AssertionValue T8 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T8

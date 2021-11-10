@@ -1,0 +1,23 @@
+T1	Medical-Problem 260 275	new abnormality
+T2	Medical-Anatomy 283 318;320 378	left upper lobe projecting over and extending just beyond the anterior aspect of the first rib
+T3	Medical-Problem 415 425	thickening
+T4	Medical-Anatomy 433 454	apical pleural margin
+T5	Medical-Problem 479 511	very unusual place for pneumonia
+E5	Medical-Problem:T5
+T6	Lesion-Assertion 519 538	more concerning for
+A1	Lesion-AssertionValue T6 possible
+T7	Lesion-Description 552 556	mass
+T8	Medical-Problem 585 601	Breast asymmetry
+E7	Medical-Problem:T8
+T9	Medical-Anatomy 711 721	Left hilus
+T10	Medical-Assertion 722 728	may be
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 729 744	mildly elevated
+T12	Medical-Assertion 767 778;780 782	perhaps due to
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 783 802	upper lobe scarring
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

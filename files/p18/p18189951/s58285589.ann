@@ -1,0 +1,32 @@
+T1	Medical-Problem 391 414	Atherosclerotic disease
+T2	Medical-Anatomy 434 445	aortic arch
+T3	Medical-Problem 448 467	Minimal atelectasis
+T4	Medical-Anatomy 483 492;494 505	bilateral lower lungs
+T5	Medical-Problem 540 548	Blunting
+T6	Medical-Anatomy 556 561;563 581	right costophrenic angle
+T7	Medical-Assertion 582 597	likely reflects
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 600 638;640 649	small right pleural effusion, possibly loculated
+T9	Medical-Assertion 652 654	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 655 667	pneumothorax
+T11	Medical-Problem 678 702	Multiple radiopaque foci
+T12	Medical-Anatomy 726 760	right lateral subcutaneous tissues
+T13	Medical-Assertion 761 782	possibly representing
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 783 787;789 802	skin calcifcations
+T15	Medical-Problem 805 835	Multilevel degenerative change
+E12	Medical-Problem:T15
+T16	Medical-Assertion 861 863	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 864 893	acute cardiopulmonary process
+T18	Medical-Problem 896 917;919 946	Small right, possibly loculated, pleural effusion
+E14	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

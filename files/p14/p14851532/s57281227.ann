@@ -1,0 +1,26 @@
+T1	Medical-Problem 298 329	moderate right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 334 342	probable
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 343 359;361 380	right middle and lower lobe collapse
+T4	Medical-Problem 423 430;432 454	Chronic cardiomegaly is severe
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 457 478	Pulmonary vasculature
+T6	Medical-Problem 482 500	minimally engorged
+T7	Medical-Anatomy 509 524	left upper lobe
+T8	Medical-Assertion 538 540	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 541 556	pulmonary edema
+T10	Medical-Problem 559 583;585 590	Left pleural effusion is small
+E8	Medical-Problem:T10
+T11	Medical-Assertion 593 595	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 596 608	pneumothorax
+T13	Medical-Assertion 712 714	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 715 727	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

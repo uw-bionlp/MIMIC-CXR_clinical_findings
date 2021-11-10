@@ -1,0 +1,23 @@
+T1	Medical-Problem 191 203;205 218	Lungs remain hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Problem 223 255	subtle area of increased opacity
+T3	Medical-Anatomy 277 281;283 292	left lung base
+T4	Medical-Assertion 297 310	could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 311 327	acute aspiration
+T6	Medical-Problem 329 349	developing pneumonia
+T7	Medical-Problem 355 366	atelectasis
+T8	Medical-Problem 395 419	postoperative appearance
+T9	Medical-Anatomy 427 432;434 444	right hemithorax
+T10	Medical-Problem 449 474	enlarged hilar structures
+E9	Medical-Problem:T10
+T11	Medical-Problem 499 507;509 527	enlarged pulmonary arteries
+E10	Medical-Problem:T11
+T12	Lesion-Anatomy 532 543	right hilar
+T13	Lesion-Description 544 559	lymphadenopathy
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T12

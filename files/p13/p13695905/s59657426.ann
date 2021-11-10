@@ -1,0 +1,34 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 48	pneumothorax
+T3	Lesion-Size-Trend 51 57	Stable
+A2	Lesion-Size-TrendValue T3 no-change
+T4	Lesion-Anatomy 58 79	right upper lobe lung
+T5	Lesion-Description 80 84	mass
+T6	Medical-Problem 87 103;105 133	Stable bilateral  costophrenic angle blunting
+E4	Medical-Problem:T6
+T7	Medical-Problem 138 162	left basilar atelectasis
+E5	Medical-Problem:T7
+T8	Lesion-Size-Trend 570 576	stable
+A3	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Anatomy 577 593	right upper lobe
+T10	Lesion-Description 594 598	mass
+T11	Medical-Problem 610 619	bilateral
+E8	Medical-Problem:T11
+T12	Medical-Problem 640 648	blunting
+E9	Medical-Problem:T12
+T13	Medical-Assertion 649 662	likely due to
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 663 686	small pleural effusions
+T15	Medical-Problem 699 723	left basilar atelectasis
+E11	Medical-Problem:T15
+T16	Medical-Assertion 726 728	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 729 743	pneumothoraces
+T18	Medical-Problem 835 848	right basilar
+E13	Medical-Problem:T18
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T5 has-Lesion-Size-Trend:T3 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T10 has-Lesion-Size-Trend:T8 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

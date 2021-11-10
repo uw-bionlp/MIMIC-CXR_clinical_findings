@@ -1,0 +1,39 @@
+T1	Lesion-Anatomy 246 265	bilateral pulmonary
+T2	Lesion-Description 266 273	nodules
+T3	Lesion-Description 290 296	masses
+T4	Lesion-Anatomy 320 330	lung bases
+T5	Medical-Problem 336 368	largest conglomerate abnormality
+T6	Medical-Anatomy 388 428	superior segment of the right lower lobe
+T7	Medical-Problem 430 438	Blunting
+T8	Medical-Anatomy 443 466	left costophrenic angle
+T9	Medical-Assertion 468 483	could be due to
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 484 495	atelectasis
+T11	Medical-Problem 499 513	small effusion
+T12	Medical-Assertion 576 578	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 579 613	definite focal osseous abnormality
+T14	Medical-Problem 627 636	Deformity
+T15	Medical-Anatomy 644 661	mid left clavicle
+T16	Medical-Assertion 662 670	suggests
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 671 692	prior healed fracture
+T18	Lesion-Characteristic 713 720	Diffuse
+T19	Lesion-Anatomy 721 730	bilateral
+T20	Lesion-Description 731 745	nodules/masses
+T21	Lesion-Anatomy 753 758	lungs
+T22	Lesion-Anatomy 781 791	lung bases
+T23	Medical-Problem 844 866	superimposed infection
+E20	Medical-Problem:T23
+T24	Medical-Problem 943 957	disease burden
+E21	Medical-Problem:T24
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Anatomy:T4
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E17	Lesion-Description:T20 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T19 has-Lesion-Anatomy:T21 has-Lesion-Anatomy:T22

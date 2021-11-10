@@ -1,0 +1,28 @@
+T1	Medical-Problem 264 284	Postsurgical changes
+T2	Medical-Anatomy 302 324	right upper hemithorax
+T3	Medical-Assertion 363 371	possible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 373 405	slight increase in opacification
+T5	Medical-Anatomy 413 441	right upper upper hemithorax
+T6	Medical-Problem 467 478	Volume loss
+E5	Medical-Problem:T6
+T7	Medical-Problem 525 534	elevation
+T8	Medical-Anatomy 542 561	right hemidiaphragm
+T9	Medical-Assertion 610 612	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 613 629	pleural effusion
+T11	Medical-Problem 633 645	pneumothorax
+T12	Medical-Problem 685 705	Postsurgical changes
+T13	Medical-Anatomy 713 735	right upper hemithorax
+T14	Medical-Problem 750 756;758 777	slight increase in opacity
+T15	Medical-Assertion 802 816	Cannot exclude
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 817 829;831 840	superimposed infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

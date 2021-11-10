@@ -1,0 +1,45 @@
+T1	Medical-Problem 337 342;344 355	Heart is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 361 399	diffuse mediastinal and hilar widening
+E2	Medical-Problem:T2
+T3	Medical-Assertion 413 419;421 427	likely due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 445 462	distended vessels
+T5	Lesion-Description 467 489	lymph node enlargement
+E4	Lesion-Description:T5
+T6	Lesion-Anatomy 493 502	Pulmonary
+T7	Lesion-Description 503 510	nodules
+T8	Lesion-Description 515 521	masses
+T9	Lesion-Size-Trend 527 540	rapidly grown
+A2	Lesion-Size-TrendValue T9 increasing
+T10	Lesion-Characteristic 572 580	dominant
+T11	Lesion-Description 581 585	mass
+T12	Lesion-Anatomy 593 608	left lower lobe
+T13	Lesion-Size 637 644	9 cm in
+T14	Medical-Problem 657 680	New confluent opacities
+T15	Medical-Anatomy 688 722	right perihilar and basilar region
+T16	Medical-Assertion 724 742	probably represent
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 760 776	airspace disease
+T18	Lesion-Characteristic 781 786	solid
+T19	Lesion-Description 787 793	masses
+T20	Medical-Problem 821 854	small bilateral pleural effusions
+E17	Medical-Problem:T20
+T21	Lesion-Anatomy 947 960	intrathoracic
+T22	Lesion-Description 961 971	metastatic
+T23	Medical-Assertion 985 991	likely
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 993 1019	superimposed acute process
+T25	Medical-Problem 1028 1046	asymmetrical edema
+T26	Medical-Problem 1050 1070	infectious pneumonia
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T9
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T9
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12 has-Lesion-Size-Present:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E16	Lesion-Description:T19 has-Lesion-Characteristic:T18
+E19	Lesion-Description:T22 has-Lesion-Anatomy:T21
+E20	Medical-Problem:T24 has-Medical-Assertion:T23
+E21	Medical-Problem:T25 has-Medical-Assertion:T23
+E22	Medical-Problem:T26 has-Medical-Assertion:T23

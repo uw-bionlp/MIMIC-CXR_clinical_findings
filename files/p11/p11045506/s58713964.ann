@@ -1,0 +1,30 @@
+T1	Medical-Problem 262 294	Diffuse interstitial abnormality
+T2	Medical-Anatomy 302 329;331 342	lungs, predominantly in the upper lobes
+T3	Medical-Problem 424 438	Patchy opacity
+T4	Medical-Anatomy 446 455	left base
+T5	Medical-Assertion 456 469	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 470 481	soft tissue
+T7	Medical-Assertion 493 504	can also be
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 505 551	infection superimposed on chronic lung disease
+T9	Medical-Assertion 646 648	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 649 665	pleural effusion
+T11	Medical-Problem 669 681	pneumothorax
+T12	Medical-Problem 740 772	Diffuse interstitial abnormality
+T13	Medical-Anatomy 794 810	upper lung zones
+T14	Medical-Problem 853 860	Opacity
+T15	Medical-Anatomy 868 877	left base
+T16	Medical-Assertion 878 884	may be
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 885 907	superimposed infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

@@ -1,0 +1,35 @@
+T1	Medical-Problem 216 245	Lung volumes are slightly low
+E1	Medical-Problem:T1
+T2	Medical-Problem 255 279	bronchovascular crowding
+E2	Medical-Problem:T2
+T3	Medical-Problem 282 289;291 300	Streaky opacities
+T4	Medical-Anatomy 304 319	both lung bases
+T5	Medical-Assertion 324 330	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 331 342	atelectasis
+T7	Medical-Problem 353 368	early infection
+T8	Medical-Assertion 370 390	could have a similar
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 480 482	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 483 500	pleural effusions
+T11	Medical-Assertion 503 505	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 506 518	pneumothorax
+T13	Medical-Problem 545 561	Low lung volumes
+E9	Medical-Problem:T13
+T14	Medical-Problem 567 605	streaky bilateral lower lung opacities
+E10	Medical-Problem:T14
+T15	Medical-Assertion 608 616	possibly
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 617 628	atelectasis
+T17	Medical-Problem 639 648	infection
+T18	Medical-Assertion 649 667	cannot be excluded
+A6	Medical-AssertionValue T18 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T18

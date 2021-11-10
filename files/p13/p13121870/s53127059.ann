@@ -1,0 +1,41 @@
+T1	Medical-Problem 42 68	dense retrocardiac opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 85 103;105 122	moderate size left  pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 127 135	collapse
+T4	Medical-Anatomy 143 158	left lower lobe
+T5	Medical-Problem 160 182	Superimposed pneumonia
+T6	Medical-Assertion 185 203	cannot be excluded
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Anatomy 218 228	right lung
+T8	Medical-Problem 237 250	hyperinflated
+T9	Medical-Problem 898 913	lobe is airless
+E8	Medical-Problem:T9
+T10	Medical-Problem 923 961	mediastinum shifted mildly to the left
+E9	Medical-Problem:T10
+T11	Medical-Problem 982 1012	large component of atelectasis
+E10	Medical-Problem:T11
+T12	Medical-Problem 1023 1032	pneumonia
+T13	Medical-Assertion 1036 1039;1041 1049	not excluded
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1051 1063	Left pleural
+E12	Medical-Problem:T14
+T15	Medical-Problem 1064 1082	effusion is small.
+E13	Medical-Problem:T15
+T16	Medical-Problem 1092 1115;1117 1130	region of peribronchial opacification
+T17	Medical-Anatomy 1138 1154	right lower lobe
+T18	Medical-Assertion 1155 1170	could be due to
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1171 1181	aspiration
+T20	Medical-Problem 1185 1190;1192 1201	early pneumonia
+T21	Medical-Assertion 1225 1227	No
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1228 1240	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E11	Medical-Problem:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E18	Medical-Problem:T22 has-Medical-Assertion:T21

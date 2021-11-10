@@ -1,0 +1,56 @@
+T1	Medical-Problem 352 367	mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 431 469	crowding of bronchovascular structures
+E2	Medical-Problem:T2
+T3	Medical-Assertion 475 483	possible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 485 519	mild pulmonary vascular congestion
+T5	Lesion-Anatomy 522 537	Left upper lobe
+T6	Lesion-Characteristic 538 547	lobulated
+T7	Lesion-Description 548 552	mass
+T8	Lesion-Size-Trend 556 559;561 582	not substantially changed
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Problem 601 617	Patchy opacities
+T10	Medical-Anatomy 625 635	lung bases
+T11	Medical-Assertion 637 651	likely reflect
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 652 672	areas of atelectasis
+T13	Medical-Assertion 710 712	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 714 730	pleural effusion
+T15	Medical-Problem 734 746	pneumothorax
+T16	Medical-Assertion 760 762	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 763 788	acute osseous abnormality
+T18	Medical-Problem 828 844	Low lung volumes
+E13	Medical-Problem:T18
+T19	Medical-Assertion 850 858	possible
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 859 893	mild pulmonary vascular congestion
+T21	Medical-Problem 899 915	patchy opacities
+T22	Medical-Anatomy 919 929	lung bases
+T23	Medical-Assertion 931 937	likely
+A7	Medical-AssertionValue T23 possible
+T24	Medical-Problem 938 949	atelectasis
+T25	Medical-Assertion 952 958	Please
+A8	Medical-AssertionValue T25 possible
+T26	Medical-Problem 970 979	infection
+T27	Medical-Assertion 980 1009	cannot be completely excluded
+A9	Medical-AssertionValue T27 possible
+T28	Lesion-Size-Trend 1015 1035	Unchanged appearance
+A10	Lesion-Size-TrendValue T28 no-change
+T29	Lesion-Anatomy 1039 1054	left upper lobe
+T30	Lesion-Characteristic 1055 1064	lobulated
+T31	Lesion-Description 1065 1069	mass
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6 has-Lesion-Size-Trend:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T20 has-Medical-Assertion:T19 has-Medical-Anatomy:T22
+E15	Medical-Problem:T21 has-Medical-Assertion:T19 has-Medical-Anatomy:T22
+E17	Medical-Problem:T24 has-Medical-Assertion:T23
+E18	Medical-Problem:T26 has-Medical-Assertion:T25 has-Medical-Assertion:T27
+E21	Lesion-Description:T31 has-Lesion-Size-Trend:T28 has-Lesion-Anatomy:T29 has-Lesion-Characteristic:T30

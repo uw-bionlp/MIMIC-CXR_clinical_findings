@@ -1,0 +1,24 @@
+T1	Medical-Problem 342 347;349 367	Heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 519 569	bilateral pleural effusions, now small on the left
+E2	Medical-Problem:T2
+T3	Medical-Assertion 599 601	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 602 621	apical pneumothorax
+T5	Medical-Anatomy 633 644	either lung
+T6	Medical-Problem 647 659	Septal lines
+T7	Medical-Anatomy 668 682	left lung base
+T8	Medical-Assertion 686 699	likely due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 700 723	mild interstitial edema
+T10	Medical-Problem 929 978	interval decrease in bilateral pleural effusions,
+E8	Medical-Problem:T10
+T11	Medical-Assertion 1030 1032	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1033 1045	pneumothorax
+T13	Medical-Problem 1065 1088	Mild interstitial edema
+E10	Medical-Problem:T13
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,18 @@
+T1	Medical-Anatomy 198 215	Right middle lobe
+T2	Medical-Problem 219 228	collapsed
+T3	Medical-Problem 233 246	consolidation
+T4	Medical-Anatomy 254 276	base of the right lung
+T5	Medical-Problem 325 334	pneumonia
+E5	Medical-Problem:T5
+T6	Medical-Problem 338 347;349 360	bronchial obstruction
+E6	Medical-Problem:T6
+T7	Medical-Assertion 362 376	perhaps due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 377 387	aspiration
+T9	Medical-Assertion 466 468	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 469 485	pleural effusion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

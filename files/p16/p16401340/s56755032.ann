@@ -1,0 +1,24 @@
+T1	Medical-Problem 139 153	linear opacity
+T2	Medical-Anatomy 161 183	left suprahilar region
+T3	Medical-Problem 257 270;272 291	subtle slight increase in opacity
+T4	Medical-Anatomy 299 318	adjacent left hilum
+T5	Medical-Assertion 413 415	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 416 421;423 456	acute pleural or skeletal abnormalities
+T7	Medical-Problem 474 500	Nonspecific linear opacity
+T8	Medical-Anatomy 504 526	left juxtahilar region
+T9	Medical-Assertion 533 536;538 545	may reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 549 574	area of focal atelectasis
+T11	Medical-Problem 578 586	scarring
+T12	Medical-Problem 601 616;618 628	slight increase in opacity
+T13	Medical-Anatomy 632 651	adjacent left hilum
+T14	Medical-Problem 774 793	obstructive process
+E12	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13

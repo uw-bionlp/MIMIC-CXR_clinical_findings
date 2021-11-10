@@ -1,0 +1,18 @@
+T1	Medical-Assertion 434 436	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 437 466	pneumothorax pleural effusion
+T3	Medical-Problem 470 481;483 491	mediastinal widening
+T4	Medical-Problem 494 511	Mild cardiomegaly
+E3	Medical-Problem:T4
+T5	Lesion-Characteristic 561 570	calcified
+T6	Lesion-Anatomy 571 587	right upper lobe
+T7	Lesion-Description 588 597	granuloma
+T8	Medical-Assertion 633 635	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 637 653	pleural effusion
+T10	Medical-Problem 657 669	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

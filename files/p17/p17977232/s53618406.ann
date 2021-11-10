@@ -1,0 +1,23 @@
+T1	Medical-Assertion 196 198	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 199 219	discrete abnormality
+T3	Medical-Problem 261 287	vague retrocardiac opacity
+E2	Medical-Problem:T3
+T4	Medical-Anatomy 344 365	posterior lower lungs
+T5	Medical-Assertion 366 374	suggests
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 376 401	left lower lobe pneumonia
+T7	Medical-Assertion 413 415	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 416 432	pleural effusion
+T9	Medical-Problem 436 448	pneumothorax
+T10	Medical-Problem 543 556	Vague opacity
+E7	Medical-Problem:T10
+T11	Medical-Assertion 577 590	could reflect
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 591 606;608 617	left lower lobe pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

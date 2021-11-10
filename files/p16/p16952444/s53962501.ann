@@ -1,0 +1,27 @@
+T1	Medical-Problem 211 242	streaky linear areas of opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 286 294	suggests
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 295 306	atelectasis
+T4	Medical-Assertion 636 647	no evidence
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 654 676	large pleural effusion
+T6	Medical-Assertion 719 721	No
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 723 735	pneumothorax
+T8	Lesion-Size-Trend 832 847	Stable findings
+A4	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Anatomy 851 862	right hilar
+T10	Lesion-Description 863 867	mass
+T11	Medical-Problem 881 895;897 922	areas of right base atelectasis/scarring
+E7	Medical-Problem:T11
+T12	Medical-Assertion 991 1004	likely due to
+A5	Medical-AssertionValue T12 possible
+T13	Medical-Problem 1005 1016	potentially
+T14	Medical-Problem 1017 1052;1054 1065	minimally worsened right lower lobe atelectasis
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Lesion-Description:T10 has-Lesion-Size-Trend:T8 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T13 has-Medical-Assertion:T12
+E9	Medical-Problem:T14 has-Medical-Assertion:T12

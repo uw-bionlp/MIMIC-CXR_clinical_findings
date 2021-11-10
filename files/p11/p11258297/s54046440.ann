@@ -1,0 +1,45 @@
+T1	Medical-Problem 265 275	Prominence
+T2	Medical-Anatomy 283 304	interstitial markings
+T3	Medical-Problem 316 337	peribronchial cuffing
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 340 352	particularly
+T5	Medical-Assertion 377 396	could be reflective
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 402 417	viral infection
+T7	Medical-Problem 422 440	atypical pneumonia
+T8	Medical-Assertion 452 454	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 455 475	focal consolidations
+T10	Lesion-Count 530 538	multiple
+T11	Lesion-Description 539 544	cysts
+T12	Lesion-Anatomy 556 571	lung parenchyma
+T13	Medical-Assertion 693 695	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 696 711	pulmonary edema
+T15	Medical-Problem 715 722;724 733	pleural effusions
+T16	Medical-Assertion 735 737	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 738 747	fractures
+T18	Medical-Problem 805 821	severe scoliosis
+E14	Medical-Problem:T18
+T19	Medical-Problem 884 955	Prominence of interstitial markings and peribronchial cuffing diffusely
+E15	Medical-Problem:T19
+T20	Medical-Assertion 957 970	could reflect
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 973 1000	viral or atypical pneumonia
+T22	Lesion-Count 1005 1013	Numerous
+T23	Lesion-Description 1014 1019	cysts
+T24	Medical-Problem 1074 1098	interstitial abnormality
+E19	Medical-Problem:T24
+T25	Lesion-Size-Trend 1154 1182	increased in size and number
+A6	Lesion-Size-TrendValue T25 increasing
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Count:T10 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Lesion-Description:T23 has-Lesion-Count:T22 has-Lesion-Size-Trend:T25

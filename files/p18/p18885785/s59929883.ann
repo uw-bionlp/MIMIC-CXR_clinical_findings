@@ -1,0 +1,45 @@
+T1	Medical-Problem 86 109;111 125	interval increased hazy  opacification
+T2	Medical-Anatomy 133 154	right lower lung zone
+T3	Medical-Problem 175 189;191 208	reaccumulation  of pleural fluid
+T4	Medical-Problem 212 248	dependent asymmetric pulmonary edema
+T5	Medical-Problem 251 270;272 285	Large rounded right  lung opacity
+E5	Medical-Problem:T5
+T6	Medical-Problem 373 392	trace pleural fluid
+T7	Medical-Assertion 396 408	not excluded
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 411 417;419 457	Stable  enlargement of the cardiac silhouette
+E7	Medical-Problem:T8
+T9	Lesion-Anatomy 797 801	lung
+T10	Lesion-Description 802 806	mass
+T11	Lesion-Size 817 823	6.6 cm
+T12	Lesion-Size-Trend 827 836	unchanged
+A2	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Problem 845 861;863 889	moderate pleural effusion is reaccumulating
+E11	Medical-Problem:T13
+T14	Medical-Problem 947 951	Mild
+E12	Medical-Problem:T14
+T15	Medical-Problem 952 978	left basilar opacification
+E13	Medical-Problem:T15
+T16	Medical-Assertion 1007 1025	could only reflect
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1026 1037	atelectasis
+T18	Medical-Assertion 1049 1051	no
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1052 1064	pneumothorax
+T20	Medical-Problem 1084 1108	cardiac mild enlargement
+E16	Medical-Problem:T20
+T21	Medical-Problem 1154 1194	right pleural effusion is reaccumulating
+E17	Medical-Problem:T21
+T22	Medical-Problem 1211 1240	mild left basal opacification
+E18	Medical-Problem:T22
+T23	Medical-Assertion 1241 1254	likely due to
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1255 1266	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Assertion:T7
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9 has-Lesion-Size-Present:T11 has-Lesion-Size-Trend:T12
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E19	Medical-Problem:T24 has-Medical-Assertion:T23

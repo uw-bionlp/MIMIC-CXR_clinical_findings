@@ -1,0 +1,21 @@
+T1	Medical-Problem 278 285;287 308	Diffuse parenchymal opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 369 371	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 372 397	definite pleural effusion
+T4	Medical-Problem 401 413	pneumothorax
+T5	Medical-Problem 489 510;512 521	extensive parenchymal opacities
+E4	Medical-Problem:T5
+T6	Lesion-Description 581 587	lesion
+T7	Lesion-Anatomy 600 612	T11 vertebra
+T8	Medical-Problem 676 705	Worsening opacities diffusely
+T9	Medical-Anatomy 717 722	lungs
+T10	Medical-Problem 820 832;834 843	superimposed infection
+T11	Medical-Assertion 847 856	suspected
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Anatomy 858 870	particularly
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Assertion:T11 has-Medical-Anatomy:T12

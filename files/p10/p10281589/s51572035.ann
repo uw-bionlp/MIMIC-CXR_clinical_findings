@@ -1,0 +1,19 @@
+T1	Medical-Problem 200 220	mild pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 225 257	mediastinal vascular engorgement
+E2	Medical-Problem:T2
+T3	Medical-Problem 274 323	New or newly apparent heterogeneous opacification
+T4	Medical-Anatomy 331 340;342 346	right mid lung
+T5	Medical-Assertion 347 355	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 356 369	new pneumonia
+T7	Medical-Assertion 381 383	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 384 400	pleural effusion
+T9	Lesion-Characteristic 404 412	evidence
+T10	Lesion-Characteristic 417 424	central
+T11	Lesion-Description 425 435	adenopathy
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10

@@ -1,0 +1,23 @@
+T1	Medical-Problem 391 402;404 420	small, left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 445 447	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 448 460	pneumothorax
+T4	Lesion-Size 499 507	2 x 3 cm
+T5	Lesion-Anatomy 508 526	right paratracheal
+T6	Lesion-Description 527 533	nodule
+T7	Lesion-Characteristic 603 611	FDG avid
+T8	Lesion-Anatomy 612 624	peritracheal
+T9	Lesion-Description 625 635	lymph node
+T10	Lesion-Anatomy 645 665	adjacent azygos vein
+T11	Lesion-Assertion 668 670	No
+A2	Lesion-AssertionValue T11 absent
+T12	Medical-Problem 671 688	other significant
+E10	Medical-Problem:T12
+T13	Medical-Assertion 801 808	without
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 809 828;830 846	acute complications of thoracentesis
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

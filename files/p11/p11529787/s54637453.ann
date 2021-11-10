@@ -1,0 +1,20 @@
+T1	Medical-Assertion 193 195	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 196 212	pleural effusion
+T3	Medical-Problem 216 228	pneumothorax
+T4	Medical-Problem 300 319	Rightward deviation
+T5	Medical-Anatomy 327 332;334 341	upper trachea
+T6	Lesion-Size 351 356	large
+T7	Lesion-Characteristic 357 365	dominant
+T8	Lesion-Anatomy 366 378	left thyroid
+T9	Lesion-Description 379 385	nodule
+T10	Lesion-Size-Trend 389 398	unchanged
+A2	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 418 420	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 421 448	acute intrathoracic process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

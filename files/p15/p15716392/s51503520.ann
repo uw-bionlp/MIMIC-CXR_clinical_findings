@@ -1,0 +1,44 @@
+T1	Medical-Assertion 205 207	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 208 224	pleural effusion
+T3	Medical-Problem 228 240	pneumothorax
+T4	Medical-Anatomy 248 276	cardiomediastinal silhouette
+T5	Medical-Problem 280 306	mild to moderatly enlarged
+T6	Medical-Problem 325 337	cardiomegaly
+T7	Medical-Problem 345 365	pericardial effusion
+T8	Medical-Assertion 368 370	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 371 386	plumonary edema
+T10	Medical-Problem 390 397;399 407	pleural effusion
+T11	Medical-Problem 427 440	heart failure
+T12	Medical-Problem 447 464	mediastinal veins
+E10	Medical-Problem:T12
+T13	Medical-Problem 469 472;474 481	not dilated
+E11	Medical-Problem:T13
+T14	Medical-Problem 513 529	pleural effusion
+E12	Medical-Problem:T14
+T15	Medical-Assertion 650 652	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 653 682	acute cardiopulmonary process
+T17	Medical-Anatomy 693 721	Cardiomediastinal silhouette
+T18	Medical-Problem 725 751	mild to moderatly enlarged
+T19	Medical-Assertion 777 792	could represent
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 793 805	cardiomegaly
+T21	Medical-Assertion 806 813	without
+A5	Medical-AssertionValue T21 absent
+T22	Medical-Problem 814 827	heart failure
+T23	Medical-Problem 834 886	non-hemodynamically significant pericardial effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Anatomy:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T19 has-Medical-Assertion:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T19 has-Medical-Assertion:T21

@@ -1,0 +1,36 @@
+T1	Lesion-Characteristic 182 191	calcified
+T2	Lesion-Description 192 198	nodule
+T3	Lesion-Anatomy 219 246	adjacent to the right hilum
+T4	Medical-Problem 249 269	Dense calcified foci
+T5	Medical-Anatomy 294 316;318 328	right hilar structures themselves
+T6	Medical-Problem 341 363	linear reticular lines
+T7	Medical-Anatomy 379 390;392 399	both apical regions
+T8	Medical-Problem 435 457	slight upward traction
+E8	Medical-Problem:T8
+T9	Medical-Assertion 479 481	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 482 495	consolidation
+T11	Medical-Problem 499 504	edema
+T12	Medical-Assertion 611 613	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 614 622	effusion
+T14	Medical-Problem 627 639	pneumothorax
+T15	Medical-Problem 708 724	Fibrotic changes
+T16	Medical-Anatomy 728 744	both lung apices
+T17	Lesion-Characteristic 760 769	calcified
+T18	Lesion-Description 771 778	nodules
+T19	Lesion-Description 783 794	lymph nodes
+T20	Medical-Assertion 795 810	likely indicate
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 811 841;843 864	prior granulomatous infection, possibly tuberculosis
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Lesion-Description:T18 has-Lesion-Characteristic:T17
+E17	Lesion-Description:T19 has-Lesion-Characteristic:T17
+E18	Medical-Problem:T21 has-Medical-Assertion:T20

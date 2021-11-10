@@ -1,0 +1,27 @@
+T1	Medical-Problem 309 336;338 345	zone of minimally increased density
+T2	Medical-Anatomy 361 376	ight lower lobe
+T3	Medical-Assertion 378 392	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 405 418	consolidation
+T5	Lesion-Anatomy 420 429	Bilateral
+T6	Lesion-Description 441 456	lymphadenopathy
+T7	Lesion-Size-Trend 467 479;481 491	unchanged in appearance
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 525 527	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 528 544	pleural effusion
+T10	Medical-Problem 546 558	pneumothorax
+T11	Medical-Problem 564 579	pulmonary edema
+T12	Medical-Anatomy 661 677	Right lower lobe
+T13	Medical-Problem 678 691	consolidation
+T14	Medical-Assertion 693 707	concerning for
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 708 723	early pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Anatomy:T12
+E11	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T14

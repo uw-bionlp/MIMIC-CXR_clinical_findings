@@ -1,0 +1,32 @@
+T1	Medical-Anatomy 285 290	heart
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 325 335	Prominence
+T3	Medical-Anatomy 343 353	right hila
+T4	Lesion-Assertion 354 357	may
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Description 367 382	lymphadenopathy
+T6	Lesion-Anatomy 390 399	pulmonary
+T7	Lesion-Description 400 406	nodule
+T8	Lesion-Anatomy 426 430;432 439	left midlung
+T9	Medical-Assertion 441 443	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 444 474	focal pulmonary consolidations
+T11	Medical-Problem 476 493	pleural effusions
+T12	Medical-Problem 497 509	pneumothorax
+T13	Medical-Problem 540 550	Prominence
+T14	Medical-Anatomy 558 569	right hilus
+T15	Lesion-Assertion 570 573	may
+A3	Lesion-AssertionValue T15 possible
+T16	Lesion-Description 582 597	lymphadenopathy
+T17	Lesion-Anatomy 605 614	pulmonary
+T18	Lesion-Description 616 622	nodule
+T19	Lesion-Anatomy 642 654	left midlung
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Lesion-Description:T5 has-Lesion-Assertion:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Lesion-Description:T16 has-Lesion-Assertion:T15
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T17 has-Lesion-Anatomy:T19

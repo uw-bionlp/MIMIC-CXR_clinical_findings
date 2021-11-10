@@ -1,0 +1,22 @@
+T1	Medical-Problem 299 311;313 320	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 326 347	bibasilar atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 369 378	pneumonia
+T4	Medical-Anatomy 386 391;393 398	lower lungs
+T5	Medical-Assertion 412 433	suboptimally assessed
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 653 655	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 656 664	free air
+T8	Medical-Anatomy 675 694	right hemidiaphragm
+T9	Medical-Problem 742 761	Bibasilar opacities
+T10	Medical-Problem 766 777	atelectasis
+T11	Medical-Problem 779 788	pneumonia
+T12	Medical-Assertion 789 801;803 810	difficult to exclude
+A3	Medical-AssertionValue T12 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T9 has-Medical-Assertion:T12
+E8	Medical-Problem:T10 has-Medical-Assertion:T12
+E9	Medical-Problem:T11 has-Medical-Assertion:T12

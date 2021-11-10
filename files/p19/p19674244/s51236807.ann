@@ -1,0 +1,37 @@
+T1	Medical-Problem 433 452	kyphotic angulation
+T2	Medical-Anatomy 460 467	T-spine
+T3	Medical-Problem 475 488;490 502	distortion of the chest on
+E3	Medical-Problem:T3
+T4	Medical-Assertion 565 567	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 569 591	definite consolidation
+T6	Medical-Problem 595 607	pneumothorax
+T7	Medical-Problem 610 618	Blunting
+T8	Medical-Anatomy 626 639	left CP angle
+T9	Medical-Assertion 655 670	could represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 673 687	small effusion
+T11	Medical-Assertion 699 705	likely
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 706 715;717 728	bibasilar atelectasis
+T13	Medical-Assertion 731 733	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 734 758	signs of pulmonary edema
+T15	Medical-Assertion 861 863	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 864 872	free air
+T17	Medical-Anatomy 884 903	right hemidiaphragm
+T18	Medical-Problem 947 966	small left effusion
+E13	Medical-Problem:T18
+T19	Medical-Assertion 971 979	probable
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 981 1002	bibasilar atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

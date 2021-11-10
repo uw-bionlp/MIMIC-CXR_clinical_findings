@@ -1,0 +1,20 @@
+T1	Medical-Problem 176 193	mild cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 197 206	Opacities
+T3	Medical-Anatomy 214 230	right lower lobe
+T4	Medical-Anatomy 242 260	retrocardiac areas
+T5	Medical-Assertion 265 271	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 273 284	atelectasis
+T7	Medical-Assertion 287 289	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 290 312	large pleural effusion
+T9	Medical-Problem 316 328	pneumothorax
+T10	Medical-Problem 331 350	Old rib deformities
+E8	Medical-Problem:T10
+T11	Medical-Assertion 391 393	No
+A3	Medical-AssertionValue T11 absent
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

@@ -1,0 +1,28 @@
+T1	Medical-Assertion 728 730	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 731 743	pneumothorax
+T3	Medical-Problem 756 776	patchy opacification
+T4	Medical-Anatomy 784 815	right lung compared to the left
+T5	Medical-Problem 823 851	small right pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 869 900;902 922	right hemidiaphragm is elevated compared to the left
+E5	Medical-Problem:T6
+T7	Medical-Problem 929 964	cardiac silhouette remains enlarged
+E6	Medical-Problem:T7
+T8	Medical-Problem 1349 1362	Opacification
+T9	Medical-Anatomy 1370 1380	right lung
+T10	Medical-Problem 1386 1414	elevated right hemidiaphragm
+E9	Medical-Problem:T10
+T11	Medical-Assertion 1415 1421;1423 1431	likely reflects
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1449 1462	pleural fluid
+T13	Medical-Problem 1464 1475	atelectasis
+T14	Medical-Assertion 1480 1488	possible
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1489 1499;1501 1516	asymmetric pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Anatomy:T9 has-Medical-Assertion:T11 has-Medical-Assertion:T14

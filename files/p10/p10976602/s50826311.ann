@@ -1,0 +1,57 @@
+T1	Medical-Problem 349 370	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 392 427	dense mitral annular calcifications
+E2	Medical-Problem:T2
+T3	Medical-Problem 430 460	Atherosclerotic calcifications
+T4	Medical-Anatomy 469 480	aortic arch
+T5	Medical-Problem 498 538	unchanged mediastinal and hilar contours
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 542 563	Pulmonary vasculature
+T7	Medical-Assertion 567 570	not
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 571 579	engorged
+T9	Medical-Problem 584 611	small left pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 680 699;701 709	small right pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 712 725	Opacification
+T12	Medical-Anatomy 733 747	left lung base
+T13	Medical-Assertion 767 778	may reflect
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 803 812	infection
+T15	Medical-Problem 816 826	aspiration
+T16	Medical-Assertion 830 842	not excluded
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Assertion 845 847	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 849 861	pneumothorax
+T19	Medical-Problem 875 890	Dextroscoliosis
+T20	Medical-Anatomy 898 912	thoracic spine
+T21	Medical-Problem 919 939	degenerative changes
+T22	Medical-Problem 980 1007	Small left pleural effusion
+E18	Medical-Problem:T22
+T23	Medical-Problem 1036 1049	opacification
+T24	Medical-Anatomy 1058 1072	left lung base
+T25	Medical-Assertion 1074 1085	potentially
+A5	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1086 1097	atelectasis
+T27	Medical-Problem 1102 1111	infection
+T28	Medical-Problem 1115 1125	aspiration
+T29	Medical-Assertion 1126 1135;1137 1145	cannot be excluded
+A6	Medical-AssertionValue T29 possible
+T30	Medical-Assertion 1148 1172	Near complete resolution
+A7	Medical-AssertionValue T30 absent
+T31	Medical-Problem 1180 1208	small right pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13 has-Medical-Assertion:T16
+E13	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T21 has-Medical-Anatomy:T20
+E19	Medical-Problem:T23 has-Medical-Anatomy:T24
+E21	Medical-Problem:T26 has-Medical-Assertion:T25
+E22	Medical-Problem:T27 has-Medical-Assertion:T25 has-Medical-Assertion:T29
+E23	Medical-Problem:T28 has-Medical-Assertion:T25 has-Medical-Assertion:T29
+E24	Medical-Problem:T31 has-Medical-Assertion:T30

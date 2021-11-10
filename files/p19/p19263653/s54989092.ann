@@ -1,0 +1,49 @@
+T1	Medical-Problem 274 286	cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 342 358	remains tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 371 380	deviation
+T4	Medical-Anatomy 388 395	trachea
+T5	Lesion-Characteristic 425 435	underlying
+T6	Lesion-Size 436 441	large
+T7	Lesion-Anatomy 442 449	thyroid
+T8	Lesion-Description 450 456	nodule
+T9	Medical-Problem 500 529	pulmonary vascular congestion
+E9	Medical-Problem:T9
+T10	Medical-Problem 552 570	perihilar haziness
+E10	Medical-Problem:T10
+T11	Medical-Assertion 576 584	probable
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 585 618	trace right pleural effusion with
+T13	Medical-Problem 619 640	small amount of fluid
+T14	Medical-Anatomy 648 653;655 668	right minor fissure
+T15	Medical-Problem 671 677	Patchy
+E14	Medical-Problem:T15
+T16	Medical-Problem 678 689	atelectasis
+T17	Medical-Anatomy 705 715	lung bases
+T18	Medical-Assertion 716 723	without
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 724 729;731 744	focal consolidation
+T20	Medical-Assertion 747 749	No
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 750 762	pneumothorax
+T22	Medical-Problem 798 810	cardiomegaly
+E19	Medical-Problem:T22
+T23	Medical-Problem 816 853	central pulmonary vascular congestion
+E20	Medical-Problem:T23
+T24	Medical-Assertion 858 866	probable
+A4	Medical-AssertionValue T24 possible
+T25	Medical-Problem 868 896	trace right pleural effusion
+T26	Medical-Problem 899 905	Patchy
+E22	Medical-Problem:T26
+T27	Medical-Problem 906 917	atelectasis
+T28	Medical-Anatomy 925 935	lung bases
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11 has-Medical-Anatomy:T14
+E15	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E21	Medical-Problem:T25 has-Medical-Assertion:T24
+E23	Medical-Problem:T27 has-Medical-Anatomy:T28

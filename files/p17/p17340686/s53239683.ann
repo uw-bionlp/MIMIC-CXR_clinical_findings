@@ -1,0 +1,31 @@
+T1	Medical-Problem 358 379	increased radiodensiy
+T2	Medical-Anatomy 387 408	right lower lung zone
+T3	Medical-Assertion 472 479	unclear
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 494 512	unilateral process
+T5	Medical-Problem 519 550	heart remains severely enlarged
+E4	Medical-Problem:T5
+T6	Lesion-Count 553 561	Multiple
+T7	Lesion-Anatomy 562 571	pulmonary
+T8	Lesion-Description 573 580	nodules
+T9	Medical-Assertion 630 632	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 633 645	pneumothorax
+T11	Medical-Problem 650 666	pleural effusion
+T12	Medical-Problem 669 696	Severe degenerative changes
+T13	Medical-Anatomy 708 722	right shoulder
+T14	Medical-Problem 751 773	Increased radiodensity
+T15	Medical-Anatomy 781 802	right lower lung zone
+T16	Medical-Assertion 809 812;814 823	may represent
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 824 850	asymmetric pulmonary edema
+T18	Medical-Problem 854 863	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E7	Lesion-Description:T8 has-Lesion-Count:T6 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

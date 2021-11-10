@@ -1,0 +1,20 @@
+T1	Medical-Assertion 267 269	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 270 286	pleural effusion
+T3	Medical-Problem 290 302	pneumothorax
+T4	Medical-Assertion 315 317	no
+A2	Medical-AssertionValue T4 absent
+T5	Lesion-Anatomy 319 332	diaphragmatic
+T6	Lesion-Description 333 340	lesions
+T7	Medical-Problem 344 369	subdiaphragmatic free air
+T8	Lesion-Assertion 427 438	no evidence
+A3	Lesion-AssertionValue T8 absent
+T9	Lesion-Anatomy 443 456	diaphragmatic
+T10	Lesion-Description 457 464	lesions
+T11	Medical-Problem 468 493	subdiaphragmatic free air
+E8	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T4
+E7	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T9

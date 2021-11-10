@@ -1,0 +1,19 @@
+T1	Medical-Problem 296 305;307 318	increased abnormality
+T2	Medical-Anatomy 326 341	right lung base
+T3	Medical-Assertion 379 382;384 393	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 394 407	consolidation
+T5	Medical-Anatomy 415 447	right middle or right lower lobe
+T6	Medical-Assertion 450 452	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 454 466	pneumothorax
+T8	Medical-Problem 540 559	small hiatal hernia
+E6	Medical-Problem:T8
+T9	Medical-Assertion 589 597	Possible
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 598 611	consolidation
+T11	Medical-Anatomy 619 651	right middle or right lower lobe
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11

@@ -1,0 +1,66 @@
+T1	Medical-Problem 57 80	Small left pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 110 115	lungs
+T3	Medical-Problem 120 133	hyperinflated
+T4	Medical-Problem 151 155	COPD
+T5	Medical-Problem 167 180;182 212	moderately to moderately severe cardiomegaly
+E5	Medical-Problem:T5
+T6	Medical-Problem 220 244	calcified unfolded aorta
+E6	Medical-Problem:T6
+T7	Medical-Problem 247 257	Prominence
+T8	Medical-Anatomy 266 280	pulmonary hila
+T9	Medical-Assertion 305 323	raises question of
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 324 333;335 347	pulmonary hypertension
+T11	Medical-Assertion 350 352	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 353 361	widening
+T13	Medical-Anatomy 369 380	mediastinum
+T14	Medical-Problem 408 451	small amount of pleural fluid or thickening
+T15	Medical-Anatomy 459 473	left lung apex
+T16	Lesion-Size 481 486	small
+T17	Lesion-Description 487 494	nodular
+E15	Lesion-Description:T17
+T18	Lesion-Description 495 502	opacity
+T19	Lesion-Size 527 533	4.9 mm
+T20	Lesion-Anatomy 539 556;558 593	laterally between the posterior fourth and fifth ribs
+T21	Medical-Problem 598 632	very tiny left apical pneumothorax
+E19	Medical-Problem:T21
+T22	Medical-Assertion 653 661	Probable
+A3	Medical-AssertionValue T22 possible
+T23	Medical-Problem 662 680	pleural thickening
+T24	Medical-Anatomy 691 706	right lung apex
+T25	Medical-Problem 726 745	minimal atelectasis
+T26	Medical-Anatomy 753 787	left greater than right lung bases
+T27	Medical-Problem 790 795;797 820	Small posterior left effusion
+E24	Medical-Problem:T27
+T28	Medical-Problem 852 885	Multiple left-sided rib fractures
+E25	Medical-Problem:T28
+T29	Medical-Problem 891 918	left midclavicualr fracture
+E26	Medical-Problem:T29
+T30	Medical-Assertion 937 944	without
+A4	Medical-AssertionValue T30 absent
+T31	Medical-Problem 945 969	appreciable displacement
+T32	Medical-Problem 984 1001;1003 1021	chronic bilateral rotator cuff tears
+E28	Medical-Problem:T32
+T33	Medical-Problem 1084 1107	new minimal atelectasis
+T34	Medical-Anatomy 1115 1124	left base
+T35	Medical-Problem 1127 1154	Trace left pleural effusion
+E31	Medical-Problem:T35
+T36	Medical-Problem 1231 1260	Tiny left apical pneumothorax
+E32	Medical-Problem:T36
+T37	Medical-Assertion 1286 1288	No
+A5	Medical-AssertionValue T37 absent
+T38	Medical-Problem 1289 1292	CHF
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E16	Lesion-Description:T18 has-Lesion-Size-Present:T16 has-Lesion-Size-Present:T19 has-Lesion-Anatomy:T20
+E20	Medical-Problem:T23 has-Medical-Assertion:T22 has-Medical-Anatomy:T24
+E22	Medical-Problem:T25 has-Medical-Anatomy:T26
+E27	Medical-Problem:T31 has-Medical-Assertion:T30
+E29	Medical-Problem:T33 has-Medical-Anatomy:T34
+E33	Medical-Problem:T38 has-Medical-Assertion:T37

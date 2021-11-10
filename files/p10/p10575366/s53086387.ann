@@ -1,0 +1,26 @@
+T1	Medical-Problem 254 262	Scarring
+T2	Medical-Problem 266 285	chronic atelectasis
+T3	Medical-Anatomy 293 300	lingula
+T4	Lesion-Size-Trend 345 348	new
+A1	Lesion-Size-TrendValue T4 new
+T5	Lesion-Characteristic 349 354	micro
+T6	Lesion-Description 355 365	nodularity
+T7	Medical-Assertion 387 399	could be due
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 408 422	bronchiectasis
+T9	Medical-Assertion 451 463	which can be
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 466 471	cause
+T11	Medical-Assertion 518 520	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 521 537	pleural effusion
+T13	Lesion-Characteristic 541 549	evidence
+T14	Lesion-Characteristic 554 561	central
+T15	Lesion-Description 562 572	lymph node
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Size-Trend:T4 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14

@@ -1,0 +1,40 @@
+T1	Medical-Anatomy 248 261	lower trachea
+T2	Medical-Problem 265 286	deviated to the right
+T3	Medical-Problem 302 320;322 343	possibly enlarged, calcified aortic arch
+T4	Medical-Anatomy 350 355	lungs
+T5	Medical-Problem 384 397	consolidation
+T6	Medical-Problem 402 407	other
+E6	Medical-Problem:T6
+T7	Medical-Problem 420 429	pneumonia
+T8	Lesion-Size 433 437	9 mm
+T9	Lesion-Description 438 444	nodule
+T10	Lesion-Anatomy 452 476	left of the cardiac apex
+T11	Lesion-Characteristic 478 496	might be calcified
+T12	Medical-Assertion 508 510	no
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 511 523	pneumothorax
+T14	Medical-Problem 527 543	pleural effusion
+T15	Medical-Anatomy 602 609	Cardiac
+T16	Medical-Problem 624 634;636 644	moderately enlarged
+T17	Medical-Problem 655 691	particularly dilated right ventricle
+E16	Medical-Problem:T17
+T18	Medical-Assertion 712 723	No evidence
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 727 736	pneumonia
+T20	Lesion-Assertion 738 746	Possible
+A3	Lesion-AssertionValue T20 possible
+T21	Lesion-Size 747 751	9 mm
+T22	Lesion-Anatomy 752 761	left lung
+T23	Lesion-Description 762 768	nodule
+T24	Medical-Problem 770 778;780 824	Moderate cardiomegaly predominantly right ventricular
+E21	Medical-Problem:T24
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T4
+E9	Lesion-Description:T9 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T10 has-Lesion-Characteristic:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T14 has-Medical-Assertion:T12
+E15	Medical-Problem:T16 has-Medical-Anatomy:T15
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E20	Lesion-Description:T23 has-Lesion-Assertion:T20 has-Lesion-Size-Present:T21 has-Lesion-Anatomy:T22

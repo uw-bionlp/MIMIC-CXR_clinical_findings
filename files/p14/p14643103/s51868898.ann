@@ -1,0 +1,16 @@
+T1	Medical-Problem 238 253	pulmonary edema
+T2	Medical-Anatomy 255 265	right lung
+T3	Medical-Problem 393 414	leftward displacement
+T4	Medical-Anatomy 422 433	mediastinum
+T5	Medical-Assertion 501 503	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 504 516	pneumothorax
+T7	Medical-Problem 520 527;529 537	pleural effusion
+T8	Medical-Anatomy 545 556	right chest
+T9	Medical-Problem 560 584	abnormal gas collections
+T10	Medical-Anatomy 592 605;607 612	pneumonectomy space
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8 has-Medical-Anatomy:T10

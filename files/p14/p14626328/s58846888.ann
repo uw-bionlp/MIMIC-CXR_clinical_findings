@@ -1,0 +1,17 @@
+T1	Medical-Assertion 227 229	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 231 259	definite vascular congestion
+T3	Medical-Problem 263 279	pleural effusion
+T4	Medical-Problem 282 305	Increased opacification
+T5	Medical-Anatomy 315 348	adjacent to the left heart border
+T6	Medical-Problem 357 383;385 396	associated dense streak of atelectasis
+T7	Medical-Assertion 420 428	could be
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 495 530	developing infrahilar consolidation
+T9	Medical-Assertion 531 541;543 559	would have to be considered
+A3	Medical-AssertionValue T9 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Assertion:T9

@@ -1,0 +1,22 @@
+T1	Medical-Problem 242 282	Moderate-to-large right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 299 319;321 346	Moderate enlargement of the cardiac silhouette
+E2	Medical-Problem:T2
+T3	Medical-Problem 409 436	small left pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 459 479	mild pulmonary edema
+E4	Medical-Problem:T4
+T5	Medical-Assertion 514 530;532 534	could all be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 535 550	volume overload
+T7	Medical-Problem 555 577	cardiac decompensation
+T8	Medical-Problem 598 607	serositis
+T9	Medical-Assertion 609 630	should be entertained
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 646 685;687 702	disproportion of increasing effusion to pulmonary edema
+T11	Medical-Problem 762 774	pneumothorax
+E9	Medical-Problem:T11
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

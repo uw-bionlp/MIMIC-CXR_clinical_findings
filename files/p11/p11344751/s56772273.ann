@@ -1,0 +1,22 @@
+T1	Medical-Problem 260 273	consolidation
+T2	Medical-Anatomy 281 296	right lung base
+T3	Medical-Assertion 321 330	therefore
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Assertion 331 343	likely to be
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 344 353	pneumonia
+T6	Medical-Assertion 355 361	rather
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 368 394	asymmetric pulmonary edema
+T8	Medical-Problem 396 425	Pulmonary vascular congestion
+T9	Medical-Anatomy 433 444	upper lobes
+T10	Medical-Problem 456 475	Pleural effusion is
+E7	Medical-Problem:T10
+T11	Medical-Assertion 573 575	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 576 588	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T3 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

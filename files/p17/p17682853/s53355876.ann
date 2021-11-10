@@ -1,0 +1,24 @@
+T1	Medical-Problem 307 316	Opacities
+T2	Medical-Anatomy 324 353	right middle lobe and lingula
+T3	Medical-Problem 439 446	opacity
+T4	Medical-Anatomy 455 471	right upper lobe
+T5	Medical-Assertion 472 484	has resolved
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Assertion 582 584	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 585 601	pleural effusion
+T8	Medical-Problem 606 618	pneumothorax
+T9	Medical-Problem 644 655	Improvement
+T10	Medical-Problem 659 668	opacities
+T11	Medical-Anatomy 676 705	right middle lobe and lingula
+T12	Medical-Assertion 757 776	Complete resolution
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Anatomy 780 785;787 797	right upper lobe
+T14	Medical-Problem 798 805	opacity
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T11
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T12 has-Medical-Anatomy:T13

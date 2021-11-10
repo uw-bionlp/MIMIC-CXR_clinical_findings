@@ -1,0 +1,35 @@
+T1	Medical-Problem 265 285	traumatic herniation
+T2	Medical-Anatomy 293 322	stomach through the diaphragm
+T3	Medical-Assertion 326 340	no longer seen
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 393 421	Small left lung base opacity
+E3	Medical-Problem:T4
+T5	Medical-Assertion 424 439	could represent
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 440 451	atelectasis
+T7	Medical-Problem 455 465	hemorrhage
+T8	Medical-Problem 468 494;496 506	Small left chest wall subq  emphysema
+E6	Medical-Problem:T8
+T9	Medical-Problem 1092 1099	Lucency
+T10	Medical-Anatomy 1120 1136	left lower chest
+T11	Medical-Problem 1177 1189	pneumothorax
+T12	Medical-Problem 1222 1259	lower mediastinal contour abnormality
+T13	Medical-Assertion 1260 1276	has been reduced
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1371 1383	Streaky left
+E11	Medical-Problem:T14
+T15	Medical-Anatomy 1384 1394	lower lobe
+T16	Medical-Problem 1395 1402	opacity
+T17	Medical-Assertion 1406 1419	worrisome for
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1422 1431	contusion
+T19	Medical-Problem 1586 1590;1592 1643	left anterior sixth and seventh and eighth rib fractures
+E15	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15
+E14	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T17

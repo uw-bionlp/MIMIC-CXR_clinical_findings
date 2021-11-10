@@ -1,0 +1,18 @@
+T1	Lesion-Anatomy 268 278	subpleural
+T2	Lesion-Description 279 286	nodular
+T3	Medical-Problem 344 363	right hilar opacity
+T4	Medical-Anatomy 364 408	extending to the periphery of the right lung
+T5	Medical-Assertion 465 467	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 468 493	acute focal consolidation
+T7	Medical-Problem 608 652	Interval increase in the right hilar opacity
+E6	Medical-Problem:T7
+T8	Medical-Problem 654 677;679 723	superimposed on chronic peripheral, upper lobe predominant opacities
+E7	Medical-Problem:T8
+T9	Medical-Assertion 729 747	differential could
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 757 779	eosinophilic pneumonia
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

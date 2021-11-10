@@ -1,0 +1,33 @@
+T1	Medical-Problem 259 300	Borderline size of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Assertion 301 308	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 309 324	pulmonary edema
+T4	Medical-Problem 328 338	Tortuosity
+T5	Medical-Anatomy 346 360	thoracic aorta
+T6	Lesion-Characteristic 363 372	Calcified
+T7	Lesion-Anatomy 373 388	left lower lung
+T8	Lesion-Description 389 398	granuloma
+T9	Lesion-Anatomy 402 418	Bilateral apical
+T10	Lesion-Characteristic 419 428	calcified
+T11	Lesion-Description 429 439	granulomas
+T12	Medical-Problem 457 472;474 504	minor degree of scarring, right more than left
+E11	Medical-Problem:T12
+T13	Medical-Assertion 551 562	no evidence
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 566 581;583 590	new parenchymal changes
+T15	Lesion-Description 610 618	neoplasm
+E13	Lesion-Description:T15
+T16	Medical-Assertion 621 623	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 624 658	hilar or mediastinal abnormalities
+T18	Medical-Assertion 662 664	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 665 682	pleural effusions
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

@@ -1,0 +1,36 @@
+T1	Medical-Problem 289 320	Extensive pulmonary abnormality
+E1	Medical-Problem:T1
+T2	Medical-Problem 379 392	consolidation
+T3	Medical-Anatomy 400 407	lingula
+T4	Lesion-Description 413 420	nodules
+E4	Lesion-Description:T4
+T5	Medical-Problem 425 440;442 451	small irregular opacities
+E5	Medical-Problem:T5
+T6	Medical-Assertion 514 524	presumably
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 525 553	largely multifocal infection
+T8	Medical-Problem 603 615	Pneumocystis
+T9	Medical-Problem 698 719	Cardiac silhouette is
+E8	Medical-Problem:T9
+T10	Medical-Problem 720 735	mildly enlarged
+E9	Medical-Problem:T10
+T11	Medical-Problem 749 772;774 784	mild pulmonary vascular congestion
+E10	Medical-Problem:T11
+T12	Lesion-Anatomy 787 792	Hilar
+T13	Medical-Assertion 830 845	could be due to
+A2	Medical-AssertionValue T13 possible
+T14	Lesion-Characteristic 852 860	vascular
+T15	Lesion-Description 865 882	nodal enlargement
+T16	Lesion-Anatomy 910 920;922 933	subcarinal mediastinal
+T17	Lesion-Description 934 944	adenopathy
+T18	Medical-Assertion 1187 1189	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1190 1202	pneumothorax
+T20	Medical-Problem 1205 1234	Minimal left pleural effusion
+E17	Medical-Problem:T20
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T12 has-Lesion-Characteristic:T14
+E15	Lesion-Description:T17 has-Lesion-Anatomy:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

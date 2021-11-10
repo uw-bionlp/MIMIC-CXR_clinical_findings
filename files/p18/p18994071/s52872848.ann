@@ -1,0 +1,24 @@
+T1	Medical-Problem 406 423	ovoid radiopacity
+T2	Medical-Anatomy 432 453	upper left lung field
+T3	Medical-Problem 502 515	calcification
+T4	Medical-Anatomy 523 545	sternoclavicular joint
+T5	Lesion-Anatomy 630 641	Right hilar
+T6	Lesion-Characteristic 642 651	calcified
+T7	Lesion-Description 653 664	lymph nodes
+T8	Lesion-Size-Trend 669 678	unchanged
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Assertion 739 741	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 742 758	pleural effusion
+T11	Medical-Problem 762 774	pneumothorax
+T12	Medical-Problem 777 799	Mild aortic tortuosity
+E10	Medical-Problem:T12
+T13	Medical-Assertion 829 840	No evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 844 873	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

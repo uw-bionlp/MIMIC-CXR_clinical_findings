@@ -1,0 +1,32 @@
+T1	Medical-Anatomy 183 201	left hemidiaphragm
+T2	Medical-Problem 210 230	chronically elevated
+T3	Medical-Problem 243 257;259 279	increased left lower lobe opacities
+E3	Medical-Problem:T3
+T4	Medical-Assertion 281 298	likely reflecting
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 314 337;339 359	worsening of known left lower lobe pneumonia
+T6	Medical-Problem 367 388	radiation pneumonitis
+T7	Medical-Problem 403 411;413 429	adjacent pleural effusion
+T8	Medical-Problem 504 532	subpleural radiation changes
+E7	Medical-Problem:T8
+T9	Medical-Assertion 574 576	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 577 592	acute fractures
+T11	Medical-Problem 629 648	Increased opacities
+T12	Medical-Anatomy 656 670	left lung base
+T13	Medical-Assertion 671 688	likely reflecting
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 705 733	worsening infectious process
+T15	Medical-Problem 747 776	new adjacent pleural effusion
+T16	Medical-Problem 835 856	radiation pneumonitis
+E13	Medical-Problem:T16
+T17	Medical-Problem 866 891	adjacent pleural effusion
+E14	Medical-Problem:T17
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T4
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

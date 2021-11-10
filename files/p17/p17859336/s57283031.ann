@@ -1,0 +1,32 @@
+T1	Medical-Assertion 118 120	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 121 137	pleural effusion
+T3	Medical-Problem 141 153	pneumothorax
+T4	Medical-Assertion 166 168	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 170 184	consolidations
+T6	Lesion-Count 197 200	two
+T7	Lesion-Size 201 206	small
+T8	Lesion-Characteristic 207 212	dense
+T9	Lesion-Anatomy 227 236	pulmonary
+T10	Lesion-Description 237 244	nodules
+T11	Lesion-Anatomy 258 268	right base
+T12	Lesion-Anatomy 284 310	periphery of the left lung
+T13	Medical-Problem 461 468;470 490	flowing anterior osteophytes
+T14	Medical-Anatomy 498 512	thoracic spine
+T15	Medical-Problem 529 533	DISH
+T16	Lesion-Count 555 558	Two
+T17	Lesion-Size 559 572	subcentimeter
+T18	Lesion-Anatomy 573 582	pulmonary
+T19	Lesion-Description 583 590	nodules
+T20	Medical-Assertion 698 709	No evidence
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 713 722	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E8	Lesion-Description:T10 has-Lesion-Count:T6 has-Lesion-Size-Present:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T15 has-Medical-Anatomy:T14
+E17	Lesion-Description:T19 has-Lesion-Count:T16 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T18
+E18	Medical-Problem:T21 has-Medical-Assertion:T20

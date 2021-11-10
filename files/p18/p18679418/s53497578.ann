@@ -1,0 +1,17 @@
+T1	Medical-Anatomy 242 247	Lungs
+T2	Medical-Assertion 293 295	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 296 303;305 313	pleural effusion
+T4	Lesion-Description 315 321	masses
+E3	Lesion-Description:T4
+T5	Lesion-Description 323 330	lesions
+E4	Lesion-Description:T5
+T6	Medical-Problem 335 347	pneumothorax
+T7	Lesion-Assertion 492 503	No evidence
+A2	Lesion-AssertionValue T7 absent
+T8	Lesion-Description 507 517	malignancy
+T9	Medical-Problem 521 530	pneumonia
+E7	Medical-Problem:T9
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Lesion-Description:T8 has-Lesion-Assertion:T7

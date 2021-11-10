@@ -1,0 +1,36 @@
+T1	Medical-Problem 518 524	kinked
+E1	Medical-Problem:T1
+T2	Medical-Assertion 526 528	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 529 541	pneumothorax
+T4	Medical-Problem 578 593	pneumothorax is
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 635 658	Right mid to lower lung
+T6	Lesion-Description 659 666;668 675	nodular opacity
+T7	Medical-Problem 680 706	lateral pleural thickening
+E6	Medical-Problem:T7
+T8	Medical-Assertion 707 727	likely correspond to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 746 769	loculated pleural fluid
+T10	Medical-Problem 774 785	atelectasis
+T11	Medical-Assertion 848 850	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 851 866	pulmonary edema
+T13	Medical-Problem 869 885	Low lung volumes
+E10	Medical-Problem:T13
+T14	Medical-Problem 892 900	crowding
+E11	Medical-Problem:T14
+T15	Medical-Problem 932 946	Linear opacity
+T16	Medical-Anatomy 954 962;964 968	left mid lung
+T17	Medical-Assertion 969 984	either reflects
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 985 1009	subsegmental atelectasis
+T19	Medical-Problem 1013 1021	scarring
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

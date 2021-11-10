@@ -1,0 +1,39 @@
+T1	Medical-Problem 204 214;216 223	left hilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 251 269	hazy opacification
+E2	Medical-Problem:T2
+T3	Medical-Problem 274 285	volume loss
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 294 309	left upper lobe
+T5	Lesion-Assertion 313 327	concerning for
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Anatomy 330 340	left hilar
+T7	Lesion-Description 341 345	mass
+T8	Medical-Problem 351 357;359 370	distal obstruction
+E7	Medical-Problem:T8
+T9	Medical-Problem 373 382	Elevation
+T10	Medical-Anatomy 390 408	left hemidiaphragm
+T11	Medical-Anatomy 435 457	left juxtaphrenic peak
+T12	Medical-Assertion 461 475	suspicious for
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 476 508;510 514	extensive left upper lobe volume loss
+T14	Medical-Assertion 552 554	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 555 571	pleural effusion
+T16	Medical-Problem 575 587	pneumothorax
+T17	Medical-Assertion 651 653	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 654 659;661 699	upper abdominal or acute osseous abnormality
+T19	Medical-Problem 731 749	Left hilar opacity
+E15	Medical-Problem:T19
+T20	Medical-Problem 775 795;797 813	extensive left upper lobe atelectasis
+E16	Medical-Problem:T20
+T21	Lesion-Characteristic 833 844	obstructing
+T22	Lesion-Description 845 849	mass
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E18	Lesion-Description:T22 has-Lesion-Characteristic:T21

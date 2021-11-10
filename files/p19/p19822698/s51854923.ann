@@ -1,0 +1,26 @@
+T1	Lesion-Size 398 403	small
+T2	Lesion-Anatomy 404 413	pulmonary
+T3	Lesion-Description 414 418	mass
+T4	Lesion-Anatomy 426 441	left lower lobe
+T5	Medical-Problem 446 456;458 477	small left apical pneumothorax
+E5	Medical-Problem:T5
+T6	Lesion-Size 534 539	large
+T7	Lesion-Characteristic 540 550	spiculated
+T8	Lesion-Description 551 555	mass
+T9	Lesion-Anatomy 598 609;611 615	right upper lung
+T10	Medical-Assertion 618 620	No
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 621 643	large pleural effusion
+T12	Medical-Problem 647 666	focal consolidation
+T13	Medical-Problem 681 694	Opacification
+T14	Medical-Anatomy 715 732	right mediastinum
+T15	Medical-Problem 976 1006	Small left apical pneumothorax
+E14	Medical-Problem:T15
+T16	Lesion-Anatomy 1047 1072	left lower lobe pulmonary
+T17	Lesion-Description 1073 1077	mass
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T4
+E8	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E16	Lesion-Description:T17 has-Lesion-Anatomy:T16

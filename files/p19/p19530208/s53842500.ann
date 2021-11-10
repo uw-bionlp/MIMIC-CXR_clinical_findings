@@ -1,0 +1,27 @@
+T1	Medical-Assertion 348 350	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 351 369	interstitial edema
+T3	Medical-Problem 373 390	pleural effusions
+T4	Medical-Assertion 392 394	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 396 408	pneumothorax
+T6	Medical-Problem 411 420	Sclerotic
+E4	Medical-Problem:T6
+T7	Lesion-Description 421 425	bony
+E5	Lesion-Description:T7
+T8	Lesion-Description 426 432	lesion
+T9	Lesion-Anatomy 447 474;476 485	seventh right rib posterior laterally
+T10	Lesion-Size-Trend 489 495	stable
+A3	Lesion-Size-TrendValue T10 no-change
+T11	Lesion-Assertion 513 519	likely
+A4	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 522 533	bone island
+T13	Medical-Assertion 590 592	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 593 622	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E8	Lesion-Description:T12 has-Lesion-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

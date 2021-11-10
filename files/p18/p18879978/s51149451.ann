@@ -1,0 +1,22 @@
+T1	Medical-Problem 232 262	Small regions of consolidation
+E1	Medical-Problem:T1
+T2	Medical-Problem 264 272	scarring
+T3	Medical-Problem 276 287	atelectasis
+T4	Medical-Anatomy 295 310;312 325	right lower and left mid lung
+T5	Medical-Assertion 394 396	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 397 416	findings to suggest
+E5	Medical-Problem:T6
+T7	Medical-Problem 417 430	new infection
+T8	Medical-Anatomy 438 443	lungs
+T9	Medical-Problem 445 461	pleural effusion
+T10	Lesion-Description 467 477	adenopathy
+E9	Lesion-Description:T10
+T11	Medical-Assertion 556 558	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 559 571	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Assertion:T5
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

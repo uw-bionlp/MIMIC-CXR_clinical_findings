@@ -1,0 +1,35 @@
+T1	Medical-Problem 293 322	significant mediastinal shift
+E1	Medical-Problem:T1
+T2	Medical-Problem 370 400	proximal bronchial compression
+E2	Medical-Problem:T2
+T3	Medical-Problem 402 413	atelectasis
+T4	Medical-Anatomy 422 431	left lung
+T5	Medical-Problem 439 466	associated pleural effusion
+T6	Medical-Problem 770 794	right-sided pneumothorax
+E6	Medical-Problem:T6
+T7	Medical-Problem 811 828	vascular shunting
+E7	Medical-Problem:T7
+T8	Lesion-Anatomy 861 865	left
+T9	Lesion-Anatomy 867 882	supraclavicular
+T10	Lesion-Description 883 887	soft
+E10	Lesion-Description:T10
+T11	Lesion-Description 906 916	adenopathy
+T12	Lesion-Assertion 919 921	No
+A1	Lesion-AssertionValue T12 absent
+T13	Lesion-Characteristic 922 933	destructive
+T14	Lesion-Characteristic 934 938	bone
+T15	Lesion-Description 940 947	lesions
+T16	Medical-Problem 980 1005	left bronchial compromise
+T17	Medical-Problem 1011 1031	complete atelectasis
+T18	Medical-Anatomy 1039 1043;1045 1049	left lung
+T19	Medical-Problem 1057 1076	associated effusion
+T20	Lesion-Anatomy 1103 1123	left supraclavicular
+T21	Lesion-Description 1149 1159	adenopathy
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E11	Lesion-Description:T11 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E14	Lesion-Description:T15 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14
+E15	Medical-Problem:T16 has-Medical-Anatomy:T18
+E16	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Medical-Problem:T19 has-Medical-Anatomy:T18
+E20	Lesion-Description:T21 has-Lesion-Anatomy:T20

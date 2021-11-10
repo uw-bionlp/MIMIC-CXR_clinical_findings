@@ -1,0 +1,28 @@
+T1	Medical-Assertion 432 434	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 435 443	signs of
+E1	Medical-Problem:T2
+T3	Medical-Problem 444 456	pneumothorax
+T4	Medical-Problem 499 512	pleural fluid
+T5	Medical-Anatomy 520 529	left base
+T6	Medical-Problem 613 630	increased opacity
+T7	Medical-Anatomy 638 661	contralateral lung base
+T8	Medical-Assertion 667 677;679 681	can be due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 682 703	mild pleural effusion
+T10	Medical-Problem 707 728	dependant atelectasis
+T11	Medical-Assertion 748 755	No sign
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 759 771	pneumothorax
+T13	Medical-Problem 833 846	pleural fluid
+T14	Medical-Anatomy 854 863	left base
+T15	Medical-Problem 884 903	new pleural opacity
+T16	Medical-Anatomy 912 927	right lung base
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16

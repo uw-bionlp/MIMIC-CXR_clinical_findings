@@ -1,0 +1,35 @@
+T1	Medical-Assertion 81 83	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 84 89;91 105	focal  consolidation
+T3	Medical-Problem 117 126	pneumonia
+T4	Medical-Problem 660 670	prominence
+T5	Medical-Anatomy 678 694	descending aorta
+T6	Medical-Anatomy 715 730	lung parenchyma
+T7	Medical-Problem 757 773	linear opacities
+T8	Medical-Anatomy 794 807;809 820	predominately lower lungs
+T9	Medical-Assertion 826 841	might represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 842 870	chronic parenchymal scarring
+T11	Medical-Problem 878 885;887 900	pleural abnormalities
+T12	Medical-Problem 937 953	Unchanged apical
+E10	Medical-Problem:T12
+T13	Medical-Problem 954 963;965 973	bilateral scarring
+E11	Medical-Problem:T13
+T14	Medical-Assertion 986 988	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 993 1006	consolidation
+T16	Medical-Problem 1018 1041	interval development of
+E13	Medical-Problem:T16
+T17	Medical-Problem 1043 1056	acute process
+T18	Medical-Assertion 1072 1074	no
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1075 1091	pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T6 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T14
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

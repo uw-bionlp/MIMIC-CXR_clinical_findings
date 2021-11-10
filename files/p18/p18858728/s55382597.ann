@@ -1,0 +1,27 @@
+T1	Medical-Problem 248 277	Unchanged focal calcification
+T2	Medical-Anatomy 292 308;310 320	right second rib anteriorly
+T3	Medical-Anatomy 329 355	left sixth rib posteriorly
+T4	Lesion-Assertion 360 366	likely
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Description 367 377	granulomas
+T6	Medical-Assertion 412 419	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 420 435	pulmonary edema
+T8	Medical-Problem 437 445	effusion
+T9	Medical-Problem 451 463	pneumothorax
+T10	Medical-Problem 466 483	Mild cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Problem 662 682	Degenerative changes
+T12	Medical-Anatomy 691 705	thoracic spine
+T13	Medical-Assertion 737 739	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 740 769	acute cardiopulmonary disease
+T15	Medical-Problem 772 790;792 804	Unchanged moderate cardiomegaly
+E12	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Lesion-Description:T5 has-Lesion-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,28 @@
+T1	Medical-Problem 302 318	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 325 349	bronchovascular crowding
+E2	Medical-Problem:T2
+T3	Medical-Problem 361 398	increased heterogeneous opacification
+T4	Medical-Anatomy 412 443	mid and lower right lung fields
+T5	Medical-Problem 460 470;472 487	asymmetric pulmonary edema
+T6	Medical-Assertion 488 494	versus
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 495 505	aspiration
+T8	Medical-Problem 508 542	Small right-sided pleural effusion
+E7	Medical-Problem:T8
+T9	Medical-Assertion 608 610	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 611 623	pneumothorax
+T11	Medical-Problem 641 668	Heterogeneous opacification
+T12	Medical-Anatomy 676 700;702 708	right mid and lower lung fields
+T13	Medical-Assertion 712 726	concerning for
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 727 753	asymmetric pulmonary edema
+T15	Medical-Problem 761 771	aspiration
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

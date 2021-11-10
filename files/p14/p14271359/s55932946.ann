@@ -1,0 +1,17 @@
+T1	Medical-Problem 238 259	moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Assertion 300 302	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 303 312	pneumonia
+T4	Medical-Assertion 314 316	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 317 341	larger pleural effusions
+T6	Lesion-Assertion 344 346	No
+A3	Lesion-AssertionValue T6 absent
+T7	Lesion-Anatomy 347 351	lung
+T8	Lesion-Description 352 359	nodules
+T9	Lesion-Description 364 370	masses
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7
+E6	Lesion-Description:T9 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7

@@ -1,0 +1,39 @@
+T1	Medical-Assertion 29 40	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 44 57	acute disease
+T3	Lesion-Description 60 73	Nodular focus
+T4	Lesion-Anatomy 81 102	left lower hemithorax
+T5	Lesion-Characteristic 127 131	true
+T6	Lesion-Anatomy 132 141	pulmonary
+T7	Lesion-Description 142 148	nodule
+T8	Medical-Assertion 622 624	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 625 641	pleural effusion
+T10	Medical-Problem 645 657	pneumothorax
+T11	Lesion-Description 672 685	nodular focus
+T12	Lesion-Anatomy 733 737;739 749	left lower lung
+T13	Medical-Assertion 751 759	possibly
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 762 775	nipple shadow
+T15	Lesion-Assertion 780 791	potentially
+A4	Lesion-AssertionValue T15 possible
+T16	Lesion-Characteristic 794 798	true
+T17	Lesion-Anatomy 799 808	pulmonary
+T18	Lesion-Description 809 815	nodule
+T19	Lesion-Description 926 939	Nodular focus
+T20	Lesion-Anatomy 960 975	left lower lung
+T21	Lesion-Characteristic 1109 1113	true
+T22	Lesion-Anatomy 1114 1123	pulmonary
+T23	Lesion-Description 1124 1130	nodule
+T24	Medical-Assertion 1191 1206;1208 1216	which should be excluded
+A5	Medical-AssertionValue T24 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Lesion-Description:T18 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T17
+E15	Lesion-Description:T19 has-Lesion-Anatomy:T20
+E19	Lesion-Description:T23 has-Lesion-Characteristic:T21 has-Lesion-Anatomy:T22

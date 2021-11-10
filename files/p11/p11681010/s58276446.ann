@@ -1,0 +1,17 @@
+T1	Medical-Problem 461 509	Moderate right  and small left pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 527 534;536 564	Minimal interstitial pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 575 592	Mild cardiomegaly
+E3	Medical-Problem:T3
+T4	Medical-Assertion 605 607	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 609 621	pneumothorax
+T6	Medical-Problem 624 637	Opacification
+T7	Medical-Anatomy 645 663	base the left lung
+T8	Medical-Assertion 667 675	probably
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 712 723	atelectasis
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

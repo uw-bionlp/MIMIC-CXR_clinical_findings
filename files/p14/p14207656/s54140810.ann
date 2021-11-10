@@ -1,0 +1,69 @@
+T1	Medical-Anatomy 390 400	Heart size
+T2	Medical-Assertion 404 407	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 408 416	enlarged
+T4	Medical-Assertion 419 421	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 422 449	configurational abnormality
+T6	Medical-Anatomy 468 489	entire thoracic aorta
+T7	Medical-Problem 493 521	rather widened and elongated
+T8	Medical-Problem 532 540;542 558	advanced calcium deposits
+T9	Medical-Assertion 628 631	not
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 632 641	congested
+T11	Medical-Problem 664 682;684 696	markedly irregular distribution
+T12	Medical-Anatomy 704 736	peripheral pulmonary vasculature
+T13	Medical-Problem 756 761;763 785	local streaky scar densities
+T14	Medical-Problem 790 833	localized areas of increased translucencies
+T15	Medical-Problem 874 912;914 924	generally low positioned and flattened diaphragms
+E12	Medical-Problem:T15
+T16	Medical-Problem 1059 1070;1072 1090	accentuated kyphotic curvature
+T17	Medical-Anatomy 1098 1112	thoracic spine
+T18	Lesion-Count 1146 1154	multiple
+T19	Lesion-Characteristic 1155 1170	well-demarcated
+T20	Lesion-Characteristic 1181 1209	partially of calcium density
+T21	Lesion-Anatomy 1236 1247	mediastinal
+T22	Lesion-Description 1248 1253	nodes
+T23	Medical-Problem 1475 1488	small density
+T24	Medical-Anatomy 1496 1509;1511 1515	left mid lung zone
+T25	Medical-Problem 1656 1666	very small
+E22	Medical-Problem:T25
+T26	Lesion-Description 1694 1701	density
+E23	Lesion-Description:T26
+T27	Medical-Problem 1821 1836	chronic changes
+T28	Medical-Assertion 1842 1855	not undergone
+A4	Medical-AssertionValue T28 absent
+T29	Medical-Assertion 1894 1896;1898 1906	no evidence
+A5	Medical-AssertionValue T29 absent
+T30	Medical-Problem 1910 1932	acute pleural effusion
+T31	Medical-Assertion 1937 1939	no
+A6	Medical-AssertionValue T31 absent
+T32	Medical-Problem 1940 1952	pneumothorax
+T33	Medical-Anatomy 1968 1974;1976 1980	apical area
+T34	Medical-Problem 2023 2027	COPD
+E28	Medical-Problem:T34
+T35	Medical-Assertion 2030 2032	No
+A7	Medical-AssertionValue T35 absent
+T36	Medical-Problem 2033 2062	acute parenchymal infiltrates
+T37	Medical-Problem 2067 2070	CHF
+T38	Lesion-Size 2073 2078	Small
+T39	Lesion-Anatomy 2079 2083	left
+T40	Lesion-Description 2084 2090	lesion
+T41	Lesion-Anatomy 2094 2107	mid lung zone
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T13 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E19	Lesion-Description:T22 has-Lesion-Count:T18 has-Lesion-Characteristic:T19 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T21
+E20	Medical-Problem:T23 has-Medical-Anatomy:T24
+E24	Medical-Problem:T27 has-Medical-Assertion:T28
+E25	Medical-Problem:T30 has-Medical-Assertion:T29
+E26	Medical-Problem:T32 has-Medical-Assertion:T31 has-Medical-Anatomy:T33
+E29	Medical-Problem:T36 has-Medical-Assertion:T35
+E30	Medical-Problem:T37 has-Medical-Assertion:T35
+E33	Lesion-Description:T40 has-Lesion-Size-Present:T38 has-Lesion-Anatomy:T39 has-Lesion-Anatomy:T41

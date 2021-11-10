@@ -1,0 +1,20 @@
+T1	Medical-Assertion 521 532	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 536 547;549 561	parenchymal lung disease
+T3	Medical-Assertion 564 572	No signs
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Assertion 573 583	suggesting
+A3	Medical-AssertionValue T4 possible
+T5	Medical-Problem 584 593	infection
+T6	Medical-Problem 597 612	pulmonary edema
+T7	Medical-Anatomy 681 686	hilar
+E4	Medical-Anatomy:T7
+T8	Medical-Assertion 717 719	No
+A4	Medical-AssertionValue T8 absent
+T9	Medical-Problem 720 727	pleural
+E5	Medical-Problem:T9
+T10	Medical-Problem 728 737	effusions
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T4
+E3	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T10 has-Medical-Assertion:T8

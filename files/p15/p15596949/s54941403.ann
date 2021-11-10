@@ -1,0 +1,34 @@
+T1	Medical-Problem 293 310	Mild cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 330 338	previous
+T3	Medical-Problem 339 363	left lower lobe collapse
+T4	Medical-Assertion 365 377	has resolved
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 399 421	small pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Anatomy 494 515	Pulmonary vasculature
+T7	Medical-Assertion 520 523	not
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 524 532	engorged
+T9	Medical-Assertion 546 548	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 549 565	pleural effusion
+T11	Lesion-Size 568 572	9 mm
+T12	Lesion-Description 573 580	nodular
+E9	Lesion-Description:T12
+T13	Lesion-Description 581 588	opacity
+T14	Lesion-Anatomy 610 636	right sixth rib anteriorly
+T15	Medical-Anatomy 995 1000	aorta
+T16	Medical-Problem 1004 1033	heavily calcified at the knob
+T17	Medical-Problem 1038 1053	mildly tortuous
+T18	Medical-Assertion 1058 1061	not
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1063 1073	aneurysmal
+E2	Medical-Problem:T2 has-Medical-Assertion:T4
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T9
+E10	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15
+E15	Medical-Problem:T19 has-Medical-Anatomy:T15 has-Medical-Assertion:T18

@@ -1,0 +1,43 @@
+T1	Medical-Problem 208 228	Lordotic positioning
+E1	Medical-Problem:T1
+T2	Medical-Problem 240 261	Right basilar opacity
+E2	Medical-Problem:T2
+T3	Medical-Problem 281 283;285 290	at least
+E3	Medical-Problem:T3
+T4	Medical-Problem 291 325	some component of pleural effusion
+E4	Medical-Problem:T4
+T5	Medical-Problem 328 338	Distortion
+T6	Medical-Anatomy 346 356;358 368	underlying parenchyma
+T7	Medical-Assertion 369 382	may be due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 383 391	scarring
+T9	Medical-Problem 403 414	atelectasis
+T10	Medical-Problem 417 429;431 440	Superimposed infection
+E9	Medical-Problem:T10
+T11	Lesion-Assertion 480 490	suggestion
+A2	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 496 503;505 512	nodular density
+T13	Lesion-Anatomy 520 535	right lung base
+T14	Medical-Assertion 555 563	Possible
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 564 582;584 592	small left pleural effusion
+T16	Medical-Problem 613 641	Moderate cardiac enlargement
+E13	Medical-Problem:T16
+T17	Medical-Problem 724 743	Bibasilar opacities
+E14	Medical-Problem:T17
+T18	Medical-Assertion 744 765	likely in part due to
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 766 783	pleural effusions
+T20	Medical-Problem 788 799	atelectasis
+T21	Medical-Problem 813 835	superimposed infection
+E17	Medical-Problem:T21
+T22	Lesion-Description 859 874	Nodular opacity
+T23	Lesion-Anatomy 896 911	right lung base
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Lesion-Description:T12 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T18
+E18	Lesion-Description:T22 has-Lesion-Anatomy:T23

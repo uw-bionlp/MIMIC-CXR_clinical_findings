@@ -1,0 +1,44 @@
+T1	Medical-Problem 33 68	Regions of consolidation throughout
+E1	Medical-Problem:T1
+T2	Medical-Assertion 84 94	compatible
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 95 104	pneumonia
+T4	Lesion-Anatomy 230 245	left upper lung
+T5	Lesion-Description 246 261	nodular opacity
+T6	Medical-Problem 595 626	patchy regions of consolidation
+E5	Medical-Problem:T6
+T7	Lesion-Description 672 687	nodular opacity
+T8	Lesion-Anatomy 708 739;741 751	left mid clavicle over the left upper lung
+T9	Medical-Problem 754 765	Linear left
+E8	Medical-Problem:T9
+T10	Medical-Problem 766 781	basilar opacity
+E9	Medical-Problem:T10
+T11	Medical-Assertion 785 796	most likely
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 797 808	atelectasis
+T13	Medical-Assertion 821 823	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 824 840	pleural effusion
+T15	Medical-Anatomy 847 864	cardiomediastinal
+E12	Medical-Anatomy:T15
+T16	Medical-Assertion 903 905	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 906 911	acute
+E13	Medical-Problem:T17
+T18	Medical-Problem 912 933	osseous abnormalities
+T19	Medical-Problem 965 978	consolidation
+T20	Medical-Anatomy 994 1004	right lung
+T21	Medical-Assertion 1005 1015	compatible
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1016 1025	pneumonia
+T23	Lesion-Anatomy 1149 1164	left upper lung
+T24	Lesion-Description 1165 1180	nodular opacity
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T18 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E19	Lesion-Description:T24 has-Lesion-Anatomy:T23

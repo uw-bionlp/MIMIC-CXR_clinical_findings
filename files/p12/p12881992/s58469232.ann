@@ -1,0 +1,33 @@
+T1	Medical-Assertion 330 332	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 333 349	pleural effusion
+T3	Medical-Problem 353 365	pneumothorax
+T4	Medical-Problem 389 406	somewhat obscured
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 522 536	right mid lung
+T6	Lesion-Description 543 550	nodular
+E5	Lesion-Description:T6
+T7	Lesion-Description 551 556	focus
+T8	Lesion-Characteristic 558 566	possibly
+T9	Lesion-Description 569 580	bone island
+E8	Lesion-Description:T9
+T10	Medical-Problem 584 597	nipple shadow
+E9	Medical-Problem:T10
+T11	Medical-Assertion 657 668	No evidence
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 672 701	acute cardiopulmonary disease
+T13	Lesion-Size 710 715	Small
+T14	Lesion-Description 716 729	nodular focus
+T15	Lesion-Characteristic 791 804	nipple shadow
+T16	Lesion-Description 812 823	bone island
+T17	Lesion-Anatomy 836 845	pulmonary
+T18	Lesion-Description 846 852	nodule
+T19	Lesion-Assertion 856 859;861 869	not excluded
+A3	Lesion-AssertionValue T19 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T14 has-Lesion-Size-Present:T13
+E14	Lesion-Description:T16 has-Lesion-Characteristic:T15
+E16	Lesion-Description:T18 has-Lesion-Anatomy:T17 has-Lesion-Assertion:T19

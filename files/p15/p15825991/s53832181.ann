@@ -1,0 +1,38 @@
+T1	Medical-Problem 281 284;286 305	Two linear lucent areas
+T2	Medical-Anatomy 332 346	right breastan
+T3	Medical-Problem 363 400	some layering of fluid within the air
+E3	Medical-Problem:T3
+T4	Medical-Problem 405 423	third focus of air
+T5	Medical-Anatomy 450 461	left breast
+T6	Medical-Anatomy 497 502	lungs
+T7	Medical-Assertion 513 520	without
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 521 534	consolidation
+T9	Medical-Problem 538 543	edema
+T10	Medical-Problem 566 571;573 588	right basilar opacity
+E9	Medical-Problem:T10
+T11	Medical-Assertion 613 615	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 616 632	pleural effusion
+T13	Medical-Problem 636 648	pneumothorax
+T14	Medical-Problem 716 732	Areas of lucency
+T15	Medical-Anatomy 747 768	right and left breast
+T16	Medical-Problem 789 805	subcutaneous air
+E14	Medical-Problem:T16
+T17	Medical-Problem 865 874	infection
+T18	Medical-Assertion 875 893	cannot be excluded
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Assertion 900 911	No evidence
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 915 924	pneumonia
+T21	Medical-Problem 928 943	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T19

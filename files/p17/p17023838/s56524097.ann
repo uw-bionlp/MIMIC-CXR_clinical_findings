@@ -1,0 +1,18 @@
+T1	Medical-Problem 583 598;600 617	Small bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 683 712	heart size is mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 715 728	Calcification
+T4	Medical-Anatomy 736 742;744 751	mitral annulus
+T5	Medical-Assertion 778 794	could predispose
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 810 818;820 833	valvular regurgitation
+T7	Medical-Anatomy 840 854	thoracic aorta
+T8	Medical-Problem 858 875	heavily calcified
+T9	Medical-Assertion 880 883	not
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 884 891;893 900	focally dilated
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9

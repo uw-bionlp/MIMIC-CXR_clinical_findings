@@ -1,0 +1,26 @@
+T1	Medical-Problem 352 358;360 381	Severe emphysematous changes
+E1	Medical-Problem:T1
+T2	Medical-Problem 427 436;438 460	increased interstitial opacities
+T3	Medical-Anatomy 468 483	both lung bases
+T4	Medical-Anatomy 506 511;513 529	right upper lung field
+T5	Medical-Assertion 574 576	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 577 584;586 594	pleural effusion
+T7	Medical-Problem 598 610	pneumothorax
+T8	Medical-Problem 623 639	Ossific fragment
+T9	Medical-Anatomy 640 658;660 675	distal to the left distal clavicle
+T10	Medical-Assertion 676 682	likely
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 686 699	posttraumatic
+T12	Medical-Problem 761 793	increased interstitial opacities
+T13	Medical-Anatomy 801 815;817 831	right lung and left lung base
+T14	Medical-Assertion 833 856	findings concerning for
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 857 866	infection
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

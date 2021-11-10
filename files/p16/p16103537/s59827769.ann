@@ -1,0 +1,33 @@
+T1	Medical-Problem 284 303	large hiatal hernia
+E1	Medical-Problem:T1
+T2	Medical-Problem 324 344	adjacent atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 355 363	blunting
+T4	Medical-Anatomy 371 380;382 400	posterior costophrenic angle
+T5	Medical-Assertion 401 411	suggesting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 412 435	small pleural effusions
+T7	Medical-Problem 437 447;449 462	underlying consolidation
+T8	Medical-Assertion 463 475	not excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 477 479	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 480 492	pneumothorax
+T11	Medical-Assertion 555 557	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 558 579	overt pulmonary edema
+T13	Medical-Problem 652 671;673 682	Old right-sided rib fractures
+E9	Medical-Problem:T13
+T14	Medical-Problem 787 806	Large hiatal hernia
+E10	Medical-Problem:T14
+T15	Medical-Problem 809 842	Small bilateral pleural effusions
+T16	Medical-Problem 844 854;856 869	underlying consolidation
+T17	Medical-Assertion 870 882	not excluded
+A5	Medical-AssertionValue T17 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T17
+E12	Medical-Problem:T16 has-Medical-Assertion:T17

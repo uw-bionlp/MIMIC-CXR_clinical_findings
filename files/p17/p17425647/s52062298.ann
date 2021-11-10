@@ -1,0 +1,20 @@
+T1	Medical-Anatomy 225 235	right lung
+T2	Medical-Assertion 240 255	probably due to
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 257 287	recurrent aspiration pneumonia
+T4	Medical-Assertion 292 306	nearly cleared
+A2	Medical-AssertionValue T4 absent
+T5	Lesion-Anatomy 315 319	lung
+T6	Lesion-Description 320 327	lesions
+T7	Medical-Problem 419 429	Distortion
+T8	Medical-Anatomy 433 458	right upper posterior rib
+T9	Medical-Problem 469 481;483 491	surgical rib fracture
+T10	Medical-Anatomy 496 505	Left lung
+T11	Medical-Problem 509 522	hyperinflated
+T12	Medical-Problem 535 565	Severe cardiomegaly is chronic
+E10	Medical-Problem:T12
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2 has-Medical-Assertion:T4
+E4	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10

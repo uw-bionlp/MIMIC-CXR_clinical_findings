@@ -1,0 +1,29 @@
+T1	Medical-Problem 366 389	Moderate hyperexpansion
+T2	Medical-Anatomy 397 402	lungs
+T3	Medical-Assertion 447 460	suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 461 482	small airways disease
+T5	Medical-Assertion 493 495	no
+A2	Medical-AssertionValue T5 absent
+T6	Lesion-Characteristic 496 506	suspicious
+T7	Lesion-Description 507 511	mass
+T8	Medical-Problem 514 533	focal consolidation
+T9	Medical-Problem 535 551	pleural effusion
+T10	Medical-Problem 553 565	pneumothorax
+T11	Medical-Problem 570 585	pulmonary edema
+T12	Lesion-Assertion 669 671	No
+A3	Lesion-AssertionValue T12 absent
+T13	Lesion-Characteristic 672 682	suspicious
+T14	Lesion-Description 683 690	nodules
+T15	Lesion-Description 694 700	masses
+T16	Medical-Problem 706 729	Moderate hyperexpansion
+E13	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Characteristic:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T5
+E11	Lesion-Description:T14 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13
+E12	Lesion-Description:T15 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13

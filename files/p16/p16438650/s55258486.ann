@@ -1,0 +1,37 @@
+T1	Medical-Problem 379 383;385 395	mild prominence
+T2	Medical-Anatomy 403 432	central pulmonary vasculature
+T3	Medical-Problem 450 460	congestion
+E3	Medical-Problem:T3
+T4	Medical-Assertion 463 470	without
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 471 482	frank edema
+T6	Medical-Problem 484 500	Patchy opacities
+T7	Medical-Anatomy 508 541	right upper and lower lung fields
+T8	Medical-Assertion 543 554	may reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 555 573	areas of pneumonia
+T10	Medical-Problem 575 599	Left basilar atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Assertion 619 621	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 623 639	pleural effusion
+T13	Medical-Problem 643 655	pneumothorax
+T14	Medical-Problem 673 715	Mild central pulmonary vascular congestion
+E11	Medical-Problem:T14
+T15	Medical-Assertion 716 723	without
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 724 735	frank edema
+T17	Medical-Problem 739 755	Patchy opacities
+T18	Medical-Anatomy 763 795	right upper and lower lung field
+T19	Medical-Assertion 796 807	may reflect
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 808 816;818 827	areas of infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19

@@ -1,0 +1,27 @@
+T1	Medical-Problem 290 300;302 318	small left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 335 346	Lower lungs
+T3	Medical-Problem 351 371	generally more dense
+T4	Medical-Anatomy 382 393	upper lungs
+T5	Medical-Problem 426 456	dependent vascular engorgement
+T6	Medical-Problem 461 477	microatelectasis
+T7	Medical-Anatomy 480 495	Left lower lobe
+T8	Medical-Assertion 499 502	not
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 503 515	as opacified
+T10	Medical-Problem 565 585	mild pulmonary edema
+T11	Medical-Assertion 593 601	resolved
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 635 665	engorgement of mediastinal and
+E10	Medical-Problem:T12
+T13	Medical-Problem 824 846;848 858	inadvertent unilateral intubation
+E11	Medical-Problem:T13
+T14	Medical-Assertion 1029 1031	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 1032 1044	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T2
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

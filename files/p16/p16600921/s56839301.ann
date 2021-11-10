@@ -1,0 +1,23 @@
+T1	Medical-Problem 395 409	patchy opacity
+T2	Medical-Anatomy 417 440	right mid-to-lower lung
+T3	Medical-Assertion 460 470	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 472 493	worsening atelectasis
+T5	Medical-Problem 507 534	evolving infectious process
+T6	Medical-Problem 539 549;551 566	asymmetric pulmonary edema
+T7	Medical-Assertion 567 600	would also be in the differential
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 603 625	Heart remains enlarged
+E6	Medical-Problem:T8
+T9	Medical-Assertion 695 703	Possible
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 705 734	layering small right effusion
+T11	Medical-Assertion 737 739	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 740 752	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,20 @@
+T1	Medical-Assertion 199 201	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 202 207;209 230	acute intrathoracic process
+T3	Medical-Assertion 318 320	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 321 333	pneumothorax
+T5	Medical-Problem 337 353	pleural effusion
+T6	Lesion-Assertion 367 369	no
+A3	Lesion-AssertionValue T6 absent
+T7	Lesion-Characteristic 370 380	suspicious
+T8	Lesion-Characteristic 381 388	osseous
+T9	Lesion-Description 389 396	lesions
+T10	Medical-Assertion 414 416	No
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 417 444	acute intrathoracic process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E6	Lesion-Description:T9 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7 has-Lesion-Characteristic:T8
+E7	Medical-Problem:T11 has-Medical-Assertion:T10

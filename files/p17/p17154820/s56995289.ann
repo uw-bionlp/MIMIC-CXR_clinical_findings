@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 202 211	Left lung
+T2	Medical-Problem 226 270	large pleural effusion is entirely collapsed
+T3	Medical-Anatomy 284 289	Heart
+T4	Medical-Problem 316 341	opacified left hemithorax
+T5	Medical-Problem 344 348;350 365	Mild pulmonary edema
+E5	Medical-Problem:T5
+T6	Medical-Assertion 403 409	likely
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 410 423;425 433	small pleural effusion
+T8	Medical-Problem 453 489	nodular and oval branching opacities
+E7	Medical-Problem:T8
+T9	Medical-Anatomy 497 502	right
+T10	Medical-Problem 528 554	extensive mucoid impaction
+T11	Lesion-Assertion 608 613	might
+A2	Lesion-AssertionValue T11 possible
+T12	Lesion-Anatomy 622 626	lung
+T13	Lesion-Description 627 634	nodules
+T14	Medical-Anatomy 639 653	Thoracic aorta
+T15	Medical-Problem 657 684	extremely heavily calcified
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T12
+E13	Medical-Problem:T15 has-Medical-Anatomy:T14

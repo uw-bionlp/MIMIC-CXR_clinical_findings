@@ -1,0 +1,27 @@
+T1	Medical-Problem 280 312	Patchy reticulonodular opacities
+T2	Medical-Anatomy 335 345	both lungs
+T3	Lesion-Anatomy 384 395	right basal
+T4	Lesion-Description 396 403	nodular
+E4	Lesion-Description:T4
+T5	Lesion-Description 404 413	opacities
+T6	Lesion-Size-Trend 418 426;428 432	slightly more
+A1	Lesion-Size-TrendValue T6 increasing
+T7	Medical-Problem 445 470	Calcified pleural plaques
+E6	Medical-Problem:T7
+T8	Medical-Assertion 487 489	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 490 495;497 510	focal consolidation
+T10	Medical-Problem 514 530	pleural effusion
+T11	Medical-Problem 612 626	tortuous aorta
+E9	Medical-Problem:T11
+T12	Medical-Problem 716 741	Reticulonodular opacities
+T13	Medical-Anatomy 745 755	both lungs
+T14	Medical-Problem 818 839	chronic MAC infection
+T15	Medical-Problem 842 884	Asbestos related calcified pleural plaques
+E13	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13

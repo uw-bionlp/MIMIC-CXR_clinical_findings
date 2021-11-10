@@ -1,0 +1,30 @@
+T1	Medical-Problem 349 369	interstitial process
+T2	Medical-Anatomy 387 397	both lungs
+T3	Medical-Problem 411 447	more confluent area of consolidation
+T4	Medical-Anatomy 463 485	right lower lobe chest
+T5	Medical-Problem 492 501	infection
+T6	Medical-Assertion 503 511	possibly
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 512 520	atypical
+T8	Medical-Assertion 523 525	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 527 543	pleural effusion
+T10	Medical-Problem 547 559	pneumothorax
+T11	Medical-Problem 588 619	Diffuse interstitial prominence
+T12	Medical-Anatomy 636 646	both lungs
+T13	Medical-Problem 660 664;666 682	area of consolidation
+T14	Medical-Anatomy 697 713	right lower lobe
+T15	Medical-Assertion 714 728	concerning for
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 729 739;741 749	infection, possibly
+E13	Medical-Problem:T16
+T17	Medical-Problem 750 758	atypical
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

@@ -1,0 +1,29 @@
+T1	Medical-Problem 398 433	mild-to-moderate relative elevation
+T2	Medical-Anatomy 441 460	right hemidiaphragm
+T3	Medical-Problem 466 473;475 488	streaky opacification
+T4	Medical-Anatomy 504 541	apex of the diaphragm and posteriorly
+T5	Medical-Assertion 543 547;549 562	most suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 563 574	atelectasis
+T7	Medical-Assertion 661 663	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 664 680	pleural effusion
+T9	Medical-Problem 685 697	pneumothorax
+T10	Medical-Problem 715 753	Increasing right basilar opacification
+E8	Medical-Problem:T10
+T11	Medical-Problem 758 769	volume loss
+E9	Medical-Problem:T11
+T12	Medical-Problem 782 791	pneumonia
+T13	Medical-Assertion 795 815	difficult to exclude
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 854 866	atelectasis,
+E11	Medical-Problem:T14
+T15	Medical-Problem 953 989	increasing right-sided opacification
+T16	Medical-Anatomy 997 1008;1010 1014	right lower lobe
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16

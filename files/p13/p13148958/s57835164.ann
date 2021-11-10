@@ -1,0 +1,34 @@
+T1	Medical-Problem 343 365	subtle interval change
+E1	Medical-Problem:T1
+T2	Medical-Problem 524 540	Lung volumes are
+E2	Medical-Problem:T2
+T3	Medical-Problem 542 561	slightly diminished
+T4	Medical-Problem 567 583	patchy opacities
+T5	Medical-Anatomy 591 596	bases
+T6	Medical-Assertion 597 614	likely reflecting
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 616 627	atelectasis
+T8	Medical-Problem 638 648	aspiration
+T9	Medical-Assertion 649 674	should also be considered
+A2	Medical-AssertionValue T9 possible
+T10	Lesion-Count 677 684	Several
+T11	Lesion-Size 685 690	small
+T12	Lesion-Description 692 709	nodular opacities
+T13	Lesion-Anatomy 717 744	periphery of the right lung
+T14	Medical-Assertion 745 759	likely reflect
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Assertion 858 860	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 861 873	pneumothorax
+T17	Medical-Problem 877 892	pulmonary edema
+T18	Medical-Assertion 895 897	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 898 913	large effusions
+E3	Medical-Problem:T3 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E10	Lesion-Description:T12 has-Lesion-Count:T10 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

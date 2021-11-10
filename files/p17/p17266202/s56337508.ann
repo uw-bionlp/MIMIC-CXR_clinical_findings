@@ -1,0 +1,19 @@
+T1	Medical-Assertion 267 269	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 271 287	pleural effusion
+T3	Medical-Problem 291 303	pneumothorax
+T4	Medical-Assertion 340 347	suggest
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 349 371	non-displaced fracture
+T6	Medical-Anatomy 379 402	right lateral ninth rib
+T7	Medical-Problem 408 414	callus
+T8	Medical-Problem 417 424;426 450	Seventh and eighth rib fractures
+E6	Medical-Problem:T8
+T9	Medical-Problem 598 637	Non-displaced right-sided rib fractures
+E7	Medical-Problem:T9
+T10	Medical-Assertion 676 687	No evidence
+A3	Medical-AssertionValue T10 absent
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6

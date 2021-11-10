@@ -1,0 +1,37 @@
+T1	Lesion-Count 512 520	Multiple
+T2	Lesion-Characteristic 521 530	calcified
+T3	Lesion-Anatomy 531 540	pulmonary
+T4	Lesion-Description 541 548	nodules
+T5	Lesion-Characteristic 553 562	calcified
+T6	Lesion-Description 563 574	lymph nodes
+T7	Lesion-Anatomy 587 591	neck
+T8	Medical-Problem 593 620	Severe degenerative changes
+T9	Medical-Anatomy 628 647	glenohumeral joints
+T10	Medical-Problem 649 658;660 677	Bilateral pleural effusions
+E10	Medical-Problem:T10
+T11	Medical-Problem 683 704	bibasilar atelectasis
+E11	Medical-Problem:T11
+T12	Medical-Problem 706 726;728 741	Developing bibasilar consolidation
+T13	Medical-Assertion 745 765	difficult to exclude
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Assertion 767 769	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 770 782	pneumothorax
+T16	Medical-Problem 803 836	Small bilateral pleural effusions
+E14	Medical-Problem:T16
+T17	Medical-Problem 842 861	passive atelectasis
+E15	Medical-Problem:T17
+T18	Medical-Problem 863 873;875 899	Developing bibasilar consolidations
+T19	Medical-Assertion 904 924	difficult to exclude
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Anatomy 965 989	lung parenchyma and neck
+T21	Medical-Assertion 991 999;1001 1013	possibly secondary to
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1014 1041	prior granulomatous disease
+E4	Lesion-Description:T4 has-Lesion-Count:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T7
+E6	Lesion-Description:T6 has-Lesion-Count:T1 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E12	Medical-Problem:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E16	Medical-Problem:T18 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

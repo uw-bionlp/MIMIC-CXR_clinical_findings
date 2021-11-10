@@ -1,0 +1,31 @@
+T1	Medical-Problem 520 549	large layering right effusion
+T2	Medical-Problem 555 589	associated patchy airspace disease
+T3	Medical-Anatomy 598 622	right mid and lower lung
+T4	Medical-Assertion 623 645	most likely reflecting
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 646 657	atelectasis
+T6	Medical-Problem 669 679	aspiration
+T7	Medical-Problem 683 692	pneumonia
+T8	Medical-Assertion 693 711	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 718 740;742 750	heart remains markedly enlarged
+E7	Medical-Problem:T9
+T10	Medical-Problem 760 772	cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Problem 783 803	pericardial effusion
+T12	Medical-Assertion 804 818;820 830	should also be considered
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 866 868	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 869 881	pneumothorax
+T15	Medical-Assertion 884 886	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 887 896;898 903	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

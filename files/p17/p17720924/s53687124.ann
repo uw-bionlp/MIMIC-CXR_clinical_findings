@@ -1,0 +1,22 @@
+T1	Medical-Problem 258 262;264 271	mild opacity
+T2	Medical-Anatomy 272 281	obscuring
+T3	Medical-Anatomy 286 303	left heart border
+T4	Medical-Assertion 313 324	most likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 325 336	atelectasis
+T6	Medical-Assertion 342 353	less likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 354 366	attributable
+T8	Medical-Assertion 382 384	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 385 399	large effusion
+T10	Medical-Problem 403 415	pneumothorax
+T11	Medical-Assertion 465 467	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 468 486	bony abnormalities
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

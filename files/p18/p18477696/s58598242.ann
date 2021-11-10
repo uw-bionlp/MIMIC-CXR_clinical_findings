@@ -1,0 +1,28 @@
+T1	Medical-Problem 395 415;417 430	stable post-surgical opacification
+T2	Medical-Anatomy 438 448	right apex
+T3	Medical-Problem 460 473	some scarring
+T4	Medical-Anatomy 481 492;494 498	right lower lobe
+T5	Medical-Assertion 499 506	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 507 526	focal consolidation
+T7	Medical-Anatomy 532 541	left lung
+T8	Medical-Problem 545 558	hyperinflated
+T9	Medical-Assertion 615 617	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 618 634	pleural effusion
+T11	Medical-Problem 639 651	pneumothorax
+T12	Medical-Problem 695 715	Degenerative changes
+T13	Medical-Anatomy 733 747	thoracic spine
+T14	Medical-Problem 887 907	postsurgical changes
+E12	Medical-Problem:T14
+T15	Medical-Assertion 909 911	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 912 917;919 932	focal consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

@@ -1,0 +1,25 @@
+T1	Medical-Problem 274 294;296 304	heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 310 318	probable
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 319 342	left atrial enlargement
+T4	Medical-Problem 345 358	Small opacity
+T5	Medical-Anatomy 366 370;372 390	left costophrenic angle
+T6	Medical-Problem 415 426	atelectasis
+T7	Medical-Assertion 429 431	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 432 448	pleural effusion
+T9	Medical-Problem 453 465	pneumothorax
+T10	Medical-Problem 490 527	Small left costophrenic angle opacity
+E8	Medical-Problem:T10
+T11	Medical-Problem 544 555	atelectasis
+E9	Medical-Problem:T11
+T12	Medical-Assertion 564 572	Probable
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 573 596	left atrial enlargement
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

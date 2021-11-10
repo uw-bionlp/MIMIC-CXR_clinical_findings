@@ -1,0 +1,40 @@
+T1	Medical-Problem 334 363	Left lower lobe consolidation
+E1	Medical-Problem:T1
+T2	Medical-Problem 386 398;400 415	New moderate loculated fluid
+T3	Medical-Anatomy 422 441	right minor fissure
+T4	Medical-Problem 460 471;473 490	new area of increased density
+T5	Medical-Anatomy 498 514	right lower lung
+T6	Medical-Problem 522 550	focal radiolucency centrally
+T7	Medical-Problem 584 609	atypical pleural effusion
+E7	Medical-Problem:T7
+T8	Medical-Problem 619 628	pneumonia
+E8	Medical-Problem:T8
+T9	Medical-Problem 633 643	aspiration
+E9	Medical-Problem:T9
+T10	Medical-Problem 646 654	Cavitary
+T11	Medical-Problem 658 677	necrotizing process
+T12	Medical-Assertion 678 696	cannot be excluded
+A1	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 708 710	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 712 724	pneumothorax
+T15	Medical-Problem 827 869	New moderate right loculated pleural fluid
+T16	Medical-Anatomy 880 893	minor fissure
+T17	Medical-Problem 900 921	New increased density
+T18	Medical-Anatomy 925 941	right lower lung
+T19	Medical-Assertion 973 981	could be
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 985 1026	atypical distribution of pleural effusion
+T21	Medical-Problem 1039 1050;1052 1061	necrotizing pneumonia
+T22	Medical-Assertion 1065 1077	not excluded
+A4	Medical-AssertionValue T22 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E10	Medical-Problem:T10 has-Medical-Assertion:T12
+E11	Medical-Problem:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T19 has-Medical-Assertion:T22

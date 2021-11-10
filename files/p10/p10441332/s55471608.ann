@@ -1,0 +1,53 @@
+T1	Medical-Problem 326 356	Cardiac silhouette is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 379 406	Aorta is diffusely tortuous
+T3	Medical-Anatomy 420 433;435 453	ascending and descending regions
+T4	Medical-Problem 456 500	Enlargement of central pulmonary vasculature
+E4	Medical-Problem:T4
+T5	Medical-Assertion 501 511;513 515	suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 516 547	pulmonary arterial hypertension
+T7	Medical-Problem 591 617	cardiomediastinal widening
+E6	Medical-Problem:T7
+T8	Medical-Problem 636 661;663 673	excessive mediastinal fat deposition
+E7	Medical-Problem:T8
+T9	Medical-Problem 675 698	mediastinal lipomatosis
+E8	Medical-Problem:T9
+T10	Lesion-Assertion 701 709	Apparent
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Size 710 716	sub cm
+T12	Lesion-Description 717 724	nodular
+E10	Lesion-Description:T12
+T13	Lesion-Description 725 732	opacity
+T14	Lesion-Anatomy 752 807;809 844	right upper lung at the intersection of the right third anterior and seventh posterior ribs
+T15	Lesion-Description 866 872	nodule
+E13	Lesion-Description:T15
+T16	Medical-Anatomy 929 934	Lungs
+T17	Medical-Problem 939 952	hyperexpanded
+T18	Medical-Problem 983 998	linear scarring
+T19	Medical-Anatomy 1006 1011	bases
+T20	Medical-Problem 1014 1033;1035 1048	Bones are diffusely demineralized
+E18	Medical-Problem:T20
+T21	Medical-Problem 1051 1077	Healed right rib fractures
+E19	Medical-Problem:T21
+T22	Medical-Problem 1146 1150	COPD
+E20	Medical-Problem:T22
+T23	Medical-Problem 1155 1195	probable pulmonary arterial hypertension
+E21	Medical-Problem:T23
+T24	Medical-Problem 1199 1225	Stable cardiac enlargement
+E22	Medical-Problem:T24
+T25	Medical-Assertion 1226 1242	without evidence
+A3	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1246 1270	congestive heart failure
+T27	Medical-Assertion 1275 1283	Possible
+A4	Medical-AssertionValue T27 possible
+T28	Lesion-Size 1284 1289	small
+T29	Lesion-Anatomy 1290 1311	right upper lobe lung
+T30	Lesion-Description 1312 1318	nodule
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E11	Lesion-Description:T13 has-Lesion-Assertion:T10 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T14
+E15	Medical-Problem:T17 has-Medical-Anatomy:T16
+E16	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Anatomy:T19
+E23	Medical-Problem:T26 has-Medical-Assertion:T25
+E26	Lesion-Description:T30 has-Lesion-Size-Present:T28 has-Lesion-Anatomy:T29

@@ -1,0 +1,77 @@
+T1	Lesion-Size 275 280	large
+T2	Lesion-Characteristic 281 288	rounded
+T3	Lesion-Anatomy 289 298;300 315	posterior left upper lobe
+T4	Lesion-Description 316 320	mass
+T5	Lesion-Size 357 369	9.1 x 7.0 cm
+T6	Lesion-Characteristic 370 377	rounded
+T7	Lesion-Description 379 386	opacity
+T8	Medical-Problem 452 456;458 501	left paratracheal soft tissue thickening/opacity
+E8	Medical-Problem:T8
+T9	Medical-Problem 507 531;533 539	rightward deviation/mass effect
+T10	Medical-Anatomy 549 556	trachea
+T11	Medical-Problem 559 583	Right infrahilar opacity
+E11	Medical-Problem:T11
+T12	Medical-Anatomy 626 631	lungs
+T13	Medical-Problem 669 688;690 707	chronic obstructive pulmonary disease
+T14	Medical-Problem 729 758	large left upper lobe opacity
+E14	Medical-Problem:T14
+T15	Medical-Problem 771 812	areas of multiple reticulonodular opacity
+T16	Medical-Anatomy 820 842	left mid-to-lower lung
+T17	Medical-Problem 927 936	infection
+T18	Lesion-Assertion 940 952	not excluded
+A1	Lesion-AssertionValue T18 possible
+T19	Medical-Problem 955 974	Left apical opacity
+E18	Medical-Problem:T19
+T20	Medical-Problem 985 1000	rounded opacity
+E19	Medical-Problem:T20
+T21	Lesion-Assertion 1002 1008	may be
+A2	Lesion-AssertionValue T21 possible
+T22	Medical-Assertion 1036 1044	possible
+A3	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1045 1067	small pleural effusion
+T24	Medical-Assertion 1070 1072	No
+A4	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1074 1086	pneumothorax
+T26	Medical-Anatomy 1101 1108	cardiac
+T27	Medical-Assertion 1123 1126	not
+A5	Medical-AssertionValue T27 absent
+T28	Medical-Problem 1127 1135	enlarged
+T29	Lesion-Assertion 1146 1149	may
+A6	Lesion-AssertionValue T29 possible
+T30	Lesion-Size 1155 1165	very small
+T31	Lesion-Description 1166 1181	nodular opacity
+T32	Lesion-Anatomy 1202 1217;1219 1228	posterior right sixth rib
+T33	Medical-Problem 1319 1358;1360 1367	large posterior left upper lobe rounded opacity
+E27	Medical-Problem:T33
+T34	Medical-Problem 1373 1401	left paratracheal thickening
+E28	Medical-Problem:T34
+T35	Medical-Problem 1411 1422	mass effect
+E29	Medical-Problem:T35
+T36	Medical-Problem 1427 1436;1438 1447	rightward deviation
+T37	Medical-Anatomy 1455 1462	trachea
+T38	Lesion-Characteristic 1570 1576	subtle
+T39	Lesion-Characteristic 1577 1586	reticular
+T40	Lesion-Description 1587 1604	nodular opacities
+T41	Lesion-Anatomy 1625 1647	left mid-to-lower lung
+T42	Medical-Problem 1693 1718	underlying disease spread
+T43	Medical-Problem 1723 1732	infection
+T44	Medical-Assertion 1737 1749	not excluded
+A7	Medical-AssertionValue T44 possible
+T45	Medical-Assertion 1763 1771	Possible
+A8	Medical-AssertionValue T45 possible
+T46	Medical-Problem 1772 1806	small left apical pleural effusion
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E13	Medical-Problem:T13 has-Medical-Anatomy:T12
+E15	Medical-Problem:T15 has-Medical-Anatomy:T16
+E17	Medical-Problem:T17 has-Medical-Anatomy:T16
+E20	Medical-Problem:T23 has-Medical-Assertion:T22
+E21	Medical-Problem:T25 has-Medical-Assertion:T24
+E23	Medical-Problem:T28 has-Medical-Anatomy:T26 has-Medical-Assertion:T27
+E25	Lesion-Description:T31 has-Lesion-Assertion:T29 has-Lesion-Size-Present:T30 has-Lesion-Anatomy:T32
+E30	Medical-Problem:T36 has-Medical-Anatomy:T37
+E34	Lesion-Description:T40 has-Lesion-Characteristic:T38 has-Lesion-Characteristic:T39 has-Lesion-Anatomy:T41
+E36	Medical-Problem:T42 has-Medical-Assertion:T44
+E37	Medical-Problem:T43 has-Medical-Assertion:T44
+E38	Medical-Problem:T46 has-Medical-Assertion:T45

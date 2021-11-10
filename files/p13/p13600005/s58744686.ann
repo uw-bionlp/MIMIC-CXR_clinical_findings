@@ -1,0 +1,49 @@
+T1	Medical-Problem 455 470	air-fluid level
+T2	Medical-Anatomy 482 498	right lower lobe
+T3	Lesion-Characteristic 517 525	cavitary
+T4	Lesion-Description 526 532	lesion
+T5	Medical-Problem 568 573;575 591	right pleural effusion
+E5	Medical-Problem:T5
+T6	Lesion-Size 620 625	large
+T7	Lesion-Anatomy 626 641	right perihilar
+T8	Lesion-Description 642 646	mass
+T9	Medical-Problem 653 691	resultant right lower lobe atelectasis
+E9	Medical-Problem:T9
+T10	Lesion-Description 706 721	lymphadenopathy
+E10	Lesion-Description:T10
+T11	Medical-Problem 728 736	widening
+T12	Medical-Anatomy 744 769	right paratracheal stripe
+T13	Medical-Problem 895 922	moderate size hiatal hernia
+E13	Medical-Problem:T13
+T14	Medical-Assertion 960 962	No
+A1	Medical-AssertionValue T14 absent
+T15	Medical-Problem 964 976	pneumothorax
+T16	Medical-Assertion 992 994	No
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 995 1014	displaced fractures
+T18	Medical-Assertion 1025 1027	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1028 1036	free air
+T20	Medical-Problem 1097 1106	Air-fluid
+E17	Medical-Problem:T20
+T21	Lesion-Anatomy 1120 1136	right lower lobe
+E18	Lesion-Anatomy:T21
+T22	Lesion-Characteristic 1158 1166	cavitary
+E19	Lesion-Characteristic:T22
+T23	Medical-Problem 1216 1238	right pleural effusion
+E20	Medical-Problem:T23
+T24	Lesion-Anatomy 1240 1255	right perihilar
+T25	Lesion-Description 1256 1260	mass
+T26	Medical-Problem 1266 1282;1284 1295	right lower lobe atelectasis
+E23	Medical-Problem:T26
+T27	Lesion-Anatomy 1360 1371	mediastinal
+T28	Lesion-Description 1372 1387	lymphadenopathy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3
+E8	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7
+E11	Medical-Problem:T11 has-Medical-Anatomy:T12
+E14	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E22	Lesion-Description:T25 has-Lesion-Anatomy:T24
+E25	Lesion-Description:T28 has-Lesion-Anatomy:T27

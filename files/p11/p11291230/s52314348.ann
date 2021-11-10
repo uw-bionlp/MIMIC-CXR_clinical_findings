@@ -1,0 +1,36 @@
+T1	Medical-Problem 500 521	Central consolidation
+T2	Medical-Anatomy 529 539	right lung
+T3	Medical-Problem 582 602	little consolidation
+T4	Medical-Anatomy 610 619	left lung
+T5	Medical-Problem 648 656;658 680	increase in vascular congestion
+T6	Medical-Anatomy 688 708	suprahilar left lung
+T7	Medical-Problem 740 756	pleural effusion
+E7	Medical-Problem:T7
+T8	Medical-Problem 808 823	pulmonary edema
+E8	Medical-Problem:T8
+T9	Medical-Problem 833 853	extremely asymmetric
+E9	Medical-Problem:T9
+T10	Medical-Problem 865 884	worsening pneumonia
+T11	Medical-Problem 890 910	pulmonary hemorrhage
+T12	Medical-Assertion 911 931	should be considered
+A1	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 943 945	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 946 958	pneumothorax
+T15	Medical-Anatomy 985 990	Right
+T16	Medical-Assertion 1066 1074	could be
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1075 1111	unusually asymmetric pulmonary edema
+T18	Medical-Problem 1115 1134	worsening pneumonia
+T19	Medical-Problem 1139 1159	pulmonary hemorrhage
+T20	Medical-Problem 1327 1341	Hemorrahge pna
+E17	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E10	Medical-Problem:T10 has-Medical-Assertion:T12
+E11	Medical-Problem:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

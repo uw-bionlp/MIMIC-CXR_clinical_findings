@@ -1,0 +1,37 @@
+T1	Medical-Problem 225 242	complete collapse
+T2	Medical-Anatomy 250 266	right upper lobe
+T3	Medical-Problem 279 315	elevation of the right hemidiaphragm
+E3	Medical-Problem:T3
+T4	Medical-Problem 320 350	rightward shift of mediastinum
+E4	Medical-Problem:T4
+T5	Medical-Problem 373 396	significant volume loss
+T6	Medical-Problem 410 432;434 441	very dense right hilar opacity
+E6	Medical-Problem:T6
+T7	Medical-Assertion 502 504	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 506 518	pneumothorax
+T9	Medical-Assertion 521 523	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 524 540	pleural effusion
+T11	Medical-Problem 616 650	Complete right upper lobe collapse
+E9	Medical-Problem:T11
+T12	Medical-Problem 658 675	perihilar opacity
+E10	Medical-Problem:T12
+T13	Lesion-Assertion 682 695	may represent
+A3	Lesion-AssertionValue T13 possible
+T14	Lesion-Characteristic 698 705	shifted
+T15	Lesion-Anatomy 706 711	hilar
+T16	Lesion-Description 712 716	mass
+T17	Medical-Problem 722 751	underlying infectious process
+T18	Medical-Assertion 752 758;760 771	cannot be excluded
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Assertion 774 776	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 777 789	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T2
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E13	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

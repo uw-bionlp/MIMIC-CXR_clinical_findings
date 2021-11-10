@@ -1,0 +1,37 @@
+T1	Medical-Assertion 215 217	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 307 322	volumes are low
+E1	Medical-Problem:T2
+T3	Medical-Problem 328 352	bronchovascular crowding
+E2	Medical-Problem:T3
+T4	Medical-Problem 368 375	opacity
+T5	Medical-Anatomy 402 420	left hemidiaphragm
+T6	Medical-Anatomy 425 448	left costophrenic angle
+T7	Medical-Assertion 449 460	may reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 462 473	atelectasis
+T9	Medical-Problem 481 490	infection
+T10	Medical-Problem 533 537;539 565	left pleural effusion is small.
+E8	Medical-Problem:T10
+T11	Medical-Problem 598 615	minor atelectasis
+E9	Medical-Problem:T11
+T12	Medical-Problem 638 670	knob calcifications are moderate
+E10	Medical-Problem:T12
+T13	Medical-Assertion 673 675	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 676 688	pneumothorax
+T15	Medical-Anatomy 748 758	lower lobe
+T16	Medical-Assertion 767 782	likely reflects
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 784 795	atelectasis
+T18	Medical-Problem 800 808	effusion
+T19	Medical-Problem 818 838	concurrent pneumonia
+T20	Medical-Assertion 839 857	cannot be excluded
+A5	Medical-AssertionValue T20 possible
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Anatomy:T15 has-Medical-Assertion:T20

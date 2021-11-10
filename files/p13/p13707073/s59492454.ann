@@ -1,0 +1,21 @@
+T1	Medical-Assertion 372 374	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 375 391	pleural effusion
+T3	Medical-Problem 412 428	subtle opacities
+T4	Medical-Anatomy 450 464	right mid lung
+T5	Medical-Assertion 538 556	which could be due
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 560 578	infectious process
+T7	Lesion-Characteristic 589 599	underlying
+T8	Lesion-Anatomy 601 610	pulmonary
+T9	Lesion-Description 611 618	nodules
+T10	Lesion-Assertion 623 635	not excluded
+A3	Lesion-AssertionValue T10 possible
+T11	Medical-Assertion 647 649	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 650 662	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

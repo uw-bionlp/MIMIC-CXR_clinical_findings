@@ -1,0 +1,48 @@
+T1	Medical-Problem 262 286	moderate pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 295 326	moderate right pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 343 373	focal somewhat rounded opacity
+T4	Medical-Anatomy 381 404	lateral right lung base
+T5	Medical-Assertion 406 419	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 420 431	combination
+T7	Medical-Problem 456 467	atelectasis
+T8	Medical-Problem 479 503	underlying consolidation
+T9	Lesion-Anatomy 507 516	pulmonary
+T10	Lesion-Description 517 523	lesion
+T11	Medical-Assertion 524 536	not excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 545 557;559 567	left pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Problem 594 629	cardiac silhouette remains enlarged
+E11	Medical-Problem:T13
+T14	Medical-Problem 686 704	displaced fracture
+E12	Medical-Problem:T14
+T15	Medical-Problem 749 764	pulmonary edema
+E13	Medical-Problem:T15
+T16	Medical-Problem 766 778	cardiomegaly
+E14	Medical-Problem:T16
+T17	Medical-Problem 784 818;820 837	bilateral pleural effusions, right greater than left
+E15	Medical-Problem:T17
+T18	Medical-Problem 844 874	focal somewhat rounded opacity
+T19	Medical-Anatomy 882 895;897 906	lateral right lung base
+T20	Medical-Assertion 907 920	may represent
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 957 968	atelectasis
+T22	Medical-Problem 980 1004	underlying consolidation
+T23	Medical-Problem 1006 1015	contusion
+E20	Medical-Problem:T23
+T24	Lesion-Anatomy 1025 1034	pulmonary
+T25	Lesion-Description 1035 1041	lesion
+T26	Lesion-Assertion 1042 1045;1047 1055	not excluded
+A4	Lesion-AssertionValue T26 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T11
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E19	Medical-Problem:T22 has-Medical-Assertion:T20
+E22	Lesion-Description:T25 has-Lesion-Anatomy:T24 has-Lesion-Assertion:T26

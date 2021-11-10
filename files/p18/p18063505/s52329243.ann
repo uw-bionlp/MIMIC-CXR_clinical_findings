@@ -1,0 +1,71 @@
+T1	Medical-Problem 319 326;328 343	size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 346 354	Widening
+T3	Medical-Anatomy 362 382	superior mediastinum
+T4	Lesion-Assertion 383 390	appears
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Anatomy 405 416	mediastinal
+T6	Lesion-Description 417 432	lymphadenopathy
+T7	Medical-Problem 486 503	hilar enlargement
+E6	Medical-Problem:T7
+T8	Medical-Assertion 509 522	may be due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 523 533	underlying
+T10	Lesion-Description 534 549	lymphadenopathy
+E8	Lesion-Description:T10
+T11	Medical-Problem 552 556	Mild
+E9	Medical-Problem:T11
+T12	Medical-Problem 557 572	pulmonary edema
+E10	Medical-Problem:T12
+T13	Lesion-Characteristic 608 617	scattered
+T14	Lesion-Characteristic 618 629	ill-defined
+T15	Lesion-Description 631 638	nodular
+E13	Lesion-Description:T15
+T16	Lesion-Description 639 648	opacities
+T17	Lesion-Anatomy 649 679	throughout the lungs diffusely
+T18	Medical-Problem 683 701;703 711	trace left pleural effusion
+E16	Medical-Problem:T18
+T19	Medical-Assertion 732 734	no
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 735 763	large right pleural effusion
+T21	Medical-Assertion 856 858	no
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 860 872	pneumothorax
+T23	Medical-Assertion 874 876	No
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 877 902	acute osseous abnormality
+T25	Medical-Problem 926 934	fracture
+T26	Medical-Anatomy 943 957	right clavicle
+T27	Medical-Problem 1000 1015	pulmonary edema
+E22	Medical-Problem:T27
+T28	Medical-Problem 1023 1044	left pleural effusion
+E23	Medical-Problem:T28
+T29	Medical-Anatomy 1058 1078	superior mediastinum
+T30	Medical-Problem 1099 1110	enlargement
+T31	Medical-Assertion 1111 1124	likely due to
+A6	Medical-AssertionValue T31 possible
+T32	Lesion-Characteristic 1126 1136	underlying
+T33	Lesion-Description 1137 1152	lymphadenopathy
+T34	Lesion-Description 1166 1183	nodular opacities
+T35	Lesion-Characteristic 1216 1232;1234 1244	not clearly well visualized
+T36	Medical-Assertion 1261 1274	could suggest
+A7	Medical-AssertionValue T36 possible
+T37	Medical-Problem 1275 1298	small airways infection
+T38	Medical-Problem 1301 1313	inflammation
+T39	Medical-Problem 1318 1328	aspiration
+T40	Medical-Assertion 1353 1376	not completely excluded
+A8	Medical-AssertionValue T40 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E14	Lesion-Description:T16 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T17
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E20	Medical-Problem:T25 has-Medical-Anatomy:T26
+E25	Medical-Problem:T30 has-Medical-Anatomy:T29 has-Medical-Assertion:T31
+E27	Lesion-Description:T33 has-Lesion-Characteristic:T32
+E28	Lesion-Description:T34 has-Lesion-Characteristic:T35
+E30	Medical-Problem:T37 has-Medical-Assertion:T36
+E31	Medical-Problem:T38 has-Medical-Assertion:T36
+E32	Medical-Problem:T39 has-Medical-Assertion:T36

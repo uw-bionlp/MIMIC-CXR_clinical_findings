@@ -1,0 +1,43 @@
+T1	Medical-Problem 199 208;210 223	lungs are hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Problem 234 255	right apical scarring
+E2	Medical-Problem:T2
+T3	Medical-Problem 257 284	Large, peripheral opacities
+T4	Medical-Anatomy 293 318	lung apices, right larger
+T5	Medical-Problem 334 354	focal calcifications
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 362 367;369 376	right opacity
+T7	Medical-Problem 381 403	right hilar retraction
+T8	Lesion-Size 407 412	large
+T9	Lesion-Characteristic 413 421	apparent
+T10	Lesion-Anatomy 422 426	lung
+T11	Lesion-Description 427 433	nodule
+T12	Lesion-Anatomy 441 446;448 471	upper pole of the right hilus
+T13	Medical-Assertion 472 480	could be
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Problem 483 502	healed rib fracture
+T15	Medical-Problem 538 570	diffuse interstitial abnormality
+T16	Medical-Problem 576 598	more confluent opacity
+T17	Medical-Anatomy 607 622	right lung base
+T18	Medical-Assertion 633 635	no
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 636 652	pleural effusion
+T20	Medical-Problem 656 668	pneumothorax
+T21	Medical-Assertion 749 762	may represent
+A3	Medical-AssertionValue T21 possible
+T22	Medical-Problem 763 774;776 792	progressive massive fibrosis
+T23	Medical-Problem 819 830	pneumocosis
+E20	Medical-Problem:T23
+T24	Medical-Problem 848 857	silicosis
+E21	Medical-Problem:T24
+T25	Medical-Problem 869 880	sarcoidosis
+E22	Medical-Problem:T25
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E11	Lesion-Description:T11 has-Lesion-Size-Present:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10 has-Lesion-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T17
+E15	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Medical-Problem:T20 has-Medical-Assertion:T18
+E19	Medical-Problem:T22 has-Medical-Assertion:T21

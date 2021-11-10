@@ -1,0 +1,33 @@
+T1	Medical-Anatomy 244 249	lungs
+T2	Medical-Assertion 254 259	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 263 282	focal consolidation
+T4	Medical-Problem 301 311;313 320	persistent opacity
+E3	Medical-Problem:T4
+T5	Lesion-Assertion 380 386;388 398	likely correlates
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 413 417	mass
+T7	Lesion-Anatomy 432 447	right tenth rib
+T8	Medical-Problem 453 461;463 474	adjacent atelectasis
+E6	Medical-Problem:T8
+T9	Medical-Assertion 539 541	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 543 570	acute osseous abnormalities
+T11	Medical-Assertion 602 604	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 605 634	acute cardiopulmonary process
+T13	Medical-Problem 636 649	Focal opacity
+T14	Medical-Anatomy 670 679;681 694	posterior lung bases on
+T15	Lesion-Assertion 715 729	likely related
+A5	Lesion-AssertionValue T15 possible
+T16	Lesion-Characteristic 733 744	destructive
+T17	Lesion-Description 745 756	mass lesion
+T18	Lesion-Anatomy 772 791	posterior right rib
+T19	Medical-Problem 797 817	adjacent atelectasis
+E14	Medical-Problem:T19
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Lesion-Description:T6 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Lesion-Description:T17 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T18

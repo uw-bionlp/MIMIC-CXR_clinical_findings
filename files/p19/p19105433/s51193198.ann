@@ -1,0 +1,19 @@
+T1	Medical-Problem 178 200	subtle rounded opacity
+T2	Medical-Anatomy 208 218	right apex
+T3	Lesion-Description 223 230;232 241	nodular opacities
+T4	Lesion-Anatomy 249 269	left upper lung zone
+T5	Medical-Assertion 272 274	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 275 292	pleural effusions
+T7	Medical-Problem 296 308	pneumothorax
+T8	Medical-Problem 357 374	Wedge deformities
+T9	Medical-Anatomy 382 390;392 397	thoracic spine
+T10	Lesion-Anatomy 492 508	Right upper lobe
+T11	Lesion-Description 521 538	nodular opacities
+T12	Lesion-Anatomy 546 556;558 562	left upper lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T10 has-Lesion-Anatomy:T12

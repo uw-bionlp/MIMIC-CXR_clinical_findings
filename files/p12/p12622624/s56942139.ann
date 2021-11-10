@@ -1,0 +1,36 @@
+T1	Medical-Problem 68 92	diminished breath sounds
+T2	Medical-Anatomy 100 110	right base
+T3	Medical-Problem 352 380	Small right pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 387 408	right basilar opacity
+E4	Medical-Problem:T4
+T5	Medical-Assertion 409 426	likely reflecting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 427 438	atelectasis
+T7	Lesion-Anatomy 468 483	left upper lobe
+T8	Lesion-Characteristic 484 491	rounded
+T9	Lesion-Description 492 498	lesion
+T10	Lesion-Size 523 527	2 cm
+T11	Lesion-Size-Trend 531 540	unchanged
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Medical-Assertion 617 619	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 620 647	left-sided pleural effusion
+T14	Medical-Assertion 670 672	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 673 685	pneumothorax
+T16	Medical-Problem 862 890	Small right pleural effusion
+E12	Medical-Problem:T16
+T17	Medical-Problem 896 917	right basilar opacity
+E13	Medical-Problem:T17
+T18	Medical-Assertion 919 925	likely
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 927 938	atelectasis
+T20	Medical-Problem 946 977	Left upper lobe rounded opacity
+E15	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8 has-Lesion-Size-Present:T10 has-Lesion-Size-Trend:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

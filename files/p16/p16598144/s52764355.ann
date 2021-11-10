@@ -1,0 +1,32 @@
+T1	Medical-Problem 277 304	Streaky bibasilar opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 305 321	likely represent
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 323 334	atelectasis
+T4	Medical-Assertion 336 338	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 339 358	focal consolidation
+T6	Medical-Assertion 384 386	no
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 387 399	pneumothorax
+T8	Medical-Problem 404 420	pleural effusion
+T9	Medical-Problem 438 453	rounded opacity
+T10	Medical-Anatomy 468 479;481 484	left eighth rib
+T11	Lesion-Assertion 522 541	likely representing
+A4	Lesion-AssertionValue T11 possible
+T12	Lesion-Characteristic 544 553	calcified
+T13	Lesion-Description 555 564	granuloma
+T14	Medical-Problem 585 604	Basilar atelectasis
+E10	Medical-Problem:T14
+T15	Medical-Assertion 607 609	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 610 629	focal consolidation
+T17	Medical-Problem 660 680	pneumonic infiltrate
+E12	Medical-Problem:T17
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

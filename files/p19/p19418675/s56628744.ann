@@ -1,0 +1,35 @@
+T1	Medical-Problem 412 425	Consolidation
+T2	Medical-Anatomy 437 447	right base
+T3	Medical-Assertion 449 460	may reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 461 471	aspiration
+T5	Medical-Problem 475 484	pneumonia
+T6	Medical-Problem 534 546	Silhouetting
+T7	Medical-Anatomy 554 572	left hemidiaphragm
+T8	Medical-Assertion 573 581	suggests
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 582 590	probable
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 591 598;600 611	basilar atelectasis
+T11	Medical-Problem 705 735	Moderately severe cardiomegaly
+E8	Medical-Problem:T11
+T12	Medical-Problem 810 833	Bibasilar consolidation
+E9	Medical-Problem:T12
+T13	Medical-Assertion 840 848	suggests
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 849 860	atelectasis
+T15	Medical-Anatomy 869 879	right base
+T16	Medical-Assertion 881 904	concerning for possible
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 905 915	aspiration
+T18	Medical-Problem 919 928	pneumonia
+T19	Medical-Problem 952 989	Stable moderately severe cardiomegaly
+E14	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

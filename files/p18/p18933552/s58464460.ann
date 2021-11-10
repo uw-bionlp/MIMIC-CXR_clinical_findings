@@ -1,0 +1,26 @@
+T1	Medical-Assertion 920 922	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 992 1004	pneumothorax
+E1	Medical-Problem:T2
+T3	Medical-Problem 1043 1063	Patchy opacification
+E2	Medical-Problem:T3
+T4	Medical-Assertion 1081 1089	possibly
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 1090 1116	minimally worse in disease
+T6	Medical-Anatomy 1124 1140	right lower lobe
+T7	Medical-Problem 1142 1163	diffuse opacification
+T8	Medical-Problem 1212 1219;1221 1231	pleural thickening
+T9	Medical-Problem 1236 1247	atelectasis
+T10	Medical-Assertion 1271 1273	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Assertion 1326 1334	Probable
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1335 1345	developing
+E8	Medical-Problem:T12
+T13	Medical-Problem 1347 1354	opacity
+T14	Medical-Anatomy 1362 1377	right lung base
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6
+E9	Medical-Problem:T13 has-Medical-Assertion:T11 has-Medical-Anatomy:T14

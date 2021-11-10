@@ -1,0 +1,25 @@
+T1	Medical-Problem 255 283	Right upper lobe volume loss
+T2	Medical-Problem 289 303	bronchiectasis
+T3	Medical-Problem 308 329	pleural calcification
+T4	Medical-Anatomy 334 349	right lung base
+T5	Medical-Problem 365 394	prior granulomatous infection
+T6	Medical-Problem 396 411;413 452	Bilateral lower lobe predominant interstitial opacities
+E6	Medical-Problem:T6
+T7	Medical-Problem 462 477	progressive UIP
+E7	Medical-Problem:T7
+T8	Medical-Problem 549 553;555 581	Mild asymmetric pulmonary edema
+T9	Medical-Anatomy 585 594	left lung
+T10	Medical-Problem 609 631	Few discrete opacities
+T11	Medical-Anatomy 640 649	left lung
+T12	Medical-Assertion 654 668	concerning for
+A1	Medical-AssertionValue T12 possible
+T13	Medical-Problem 669 678	infection
+T14	Medical-Problem 683 699	Pleural effusion
+E13	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

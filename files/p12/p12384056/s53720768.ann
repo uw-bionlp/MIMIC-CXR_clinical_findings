@@ -1,0 +1,45 @@
+T1	Medical-Problem 33 55	Increase in prominence
+T2	Medical-Anatomy 63 67	hila
+T3	Lesion-Characteristic 124 134	underlying
+T4	Lesion-Description 135 150	lymphadenopathy
+T5	Lesion-Assertion 154 166	not excluded
+A1	Lesion-AssertionValue T5 possible
+T6	Medical-Assertion 201 203	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 204 223	focal consolidation
+T8	Medical-Problem 691 701	prominence
+T9	Medical-Anatomy 709 713	hila
+T10	Lesion-Description 779 794	lymphadenopathy
+T11	Lesion-Assertion 799 811	not excluded
+A3	Lesion-AssertionValue T11 possible
+T12	Medical-Assertion 840 842	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 843 851	definite
+E9	Medical-Problem:T13
+T14	Medical-Problem 852 871	focal consolidation
+T15	Medical-Assertion 892 894	no
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 895 911	pleural effusion
+T17	Medical-Problem 915 927	pneumothorax
+T18	Medical-Problem 1048 1058	prominence
+T19	Medical-Anatomy 1066 1070	hila
+T20	Lesion-Characteristic 1126 1136	underlying
+T21	Lesion-Description 1137 1152	lymphadenopathy
+T22	Lesion-Assertion 1156 1168	not excluded
+A6	Lesion-AssertionValue T22 possible
+T23	Medical-Assertion 1200 1202	No
+A7	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1203 1208	focal
+E17	Medical-Problem:T24
+T25	Medical-Problem 1209 1222	consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Lesion-Description:T10 has-Lesion-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Lesion-Description:T21 has-Lesion-Characteristic:T20 has-Lesion-Assertion:T22
+E18	Medical-Problem:T25 has-Medical-Assertion:T23

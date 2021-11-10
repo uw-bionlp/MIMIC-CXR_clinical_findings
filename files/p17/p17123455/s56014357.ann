@@ -1,0 +1,18 @@
+T1	Medical-Anatomy 359 375	right middle rib
+T2	Medical-Problem 380 396	abnormal contour
+T3	Medical-Anatomy 404 409;411 440	right diaphragmatic pleural surface
+T4	Medical-Problem 526 548	right pleural effusion
+T5	Medical-Assertion 549 565	could be present
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 584 596	could all be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 597 613	chronic scarring
+T8	Medical-Assertion 645 647	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 648 657	pneumonia
+T10	Medical-Problem 689 718;720 737	mediastinal and postoperative hilar silhouettes
+E7	Medical-Problem:T10
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

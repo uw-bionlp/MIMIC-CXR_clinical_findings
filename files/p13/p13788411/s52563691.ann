@@ -1,0 +1,40 @@
+T1	Lesion-Size 34 40	2.2 cm
+T2	Lesion-Characteristic 41 48	nodular
+T3	Lesion-Description 49 56	opacity
+T4	Lesion-Anatomy 75 110;112 122	left lung base just superior to the  diaphragm
+T5	Lesion-Characteristic 189 199	underlying
+T6	Lesion-Anatomy 200 209	pulmonary
+T7	Lesion-Description 210 216	nodule
+T8	Lesion-Assertion 220 232	not excluded
+A1	Lesion-AssertionValue T8 possible
+T9	Medical-Problem 544 568	left maxillary contusion
+E8	Medical-Problem:T9
+T10	Lesion-Size 923 929	2.2 cm
+E9	Lesion-Size:T10
+T11	Medical-Anatomy 964 999;1001 1010	left lung base just superior to the diaphragm
+E10	Medical-Anatomy:T11
+T12	Lesion-Characteristic 1077 1087	underlying
+T13	Lesion-Description 1098 1104	nodule
+T14	Medical-Assertion 1108 1120	not excluded
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Assertion 1163 1165	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1166 1173	pleural
+E13	Medical-Problem:T16
+T17	Medical-Problem 1174 1182	effusion
+T18	Medical-Problem 1186 1198	pneumothorax
+T19	Lesion-Size 1287 1293	2.2 cm
+T20	Lesion-Description 1294 1301	nodular
+E17	Lesion-Description:T20
+T21	Lesion-Description 1302 1309	opacity
+T22	Lesion-Characteristic 1440 1450	underlying
+T23	Lesion-Description 1461 1467	nodule
+T24	Medical-Assertion 1471 1483	not excluded
+A4	Medical-AssertionValue T24 possible
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6 has-Lesion-Assertion:T8
+E12	Lesion-Description:T13 has-Lesion-Characteristic:T12
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T15
+E18	Lesion-Description:T21 has-Lesion-Size-Present:T19
+E20	Lesion-Description:T23 has-Lesion-Characteristic:T22

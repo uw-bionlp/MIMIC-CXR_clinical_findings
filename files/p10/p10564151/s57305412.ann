@@ -1,0 +1,27 @@
+T1	Medical-Problem 331 346	linear scarring
+T2	Medical-Problem 351 368	upward retraction
+T3	Medical-Anatomy 376 390	bilateral hila
+T4	Medical-Assertion 596 598	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 599 614	focal pneumonia
+T6	Medical-Problem 616 632	pleural effusion
+T7	Medical-Problem 638 653	pulmonary edema
+T8	Medical-Assertion 665 667	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 668 680	pneumothorax
+T10	Lesion-Characteristic 701 710	calcified
+T11	Lesion-Description 711 716;718 722	lymph node
+T12	Lesion-Anatomy 730 742	right axilla
+T13	Lesion-Size-Trend 744 769	not significantly changed
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Assertion 883 885	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 886 891	acute
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

@@ -1,0 +1,39 @@
+T1	Lesion-Count 456 459	two
+T2	Lesion-Anatomy 469 484	left upper lobe
+T3	Lesion-Description 486 493	lesions
+T4	Lesion-Size-Trend 516 527	not changed
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Medical-Assertion 545 547	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 548 557;559 572	new focal consolidation
+T7	Medical-Problem 574 590	pleural effusion
+T8	Medical-Problem 594 606	pneumothorax
+T9	Medical-Anatomy 622 627	Lungs
+E7	Medical-Anatomy:T9
+T10	Medical-Anatomy 701 705;707 736	most pronounced in the upper lobes
+E8	Medical-Anatomy:T10
+T11	Medical-Anatomy 738 759	Pulmonary vasculature
+T12	Medical-Assertion 763 766	not
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 767 775	engorged
+T14	Medical-Problem 777 781;783 814	Mild multilevel degenerative changes
+T15	Medical-Anatomy 831 845	thoracic spine
+T16	Lesion-Size-Trend 866 896	No substantial interval change
+A4	Lesion-Size-TrendValue T16 no-change
+T17	Lesion-Count 923 926	two
+T18	Lesion-Anatomy 936 940;942 952	left upper lobe
+T19	Lesion-Description 953 960	lesions
+T20	Lesion-Characteristic 972 988	fiducial markers
+T21	Medical-Problem 990 999	Emphysema
+E17	Medical-Problem:T21
+T22	Medical-Assertion 1002 1004	No
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1005 1014	pneumonia
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Lesion-Description:T19 has-Lesion-Size-Trend:T16 has-Lesion-Count:T17 has-Lesion-Anatomy:T18 has-Lesion-Characteristic:T20
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

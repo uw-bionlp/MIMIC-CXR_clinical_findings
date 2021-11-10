@@ -1,0 +1,32 @@
+T1	Medical-Problem 34 50	Low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 65 89	bronchovascular crowding
+E2	Medical-Problem:T2
+T3	Medical-Problem 92 111;113 123	Worsening bibasilar  opacities
+E3	Medical-Problem:T3
+T4	Medical-Assertion 124 139	likely reflects
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 157 185;187 205	increasing size of bilateral  pleural effusions
+T6	Medical-Problem 210 240	worsening adjacent atelectasis
+T7	Medical-Problem 250 259	pneumonia
+T8	Medical-Assertion 260 266;268 291	cannot  be completely excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 294 302	Probable
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 303 323	mild pulmonary edema
+T11	Medical-Problem 923 946	acute pulmonary process
+E8	Medical-Problem:T11
+T12	Medical-Problem 1015 1032;1034 1043	bilateral pleural effusions
+E9	Medical-Problem:T12
+T13	Medical-Problem 1050 1110	subsequent increase in severity of the bilateral atelectasis
+E10	Medical-Problem:T13
+T14	Medical-Problem 1173 1181;1183 1195	Moderate cardiomegaly
+E11	Medical-Problem:T14
+T15	Medical-Assertion 1207 1209	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1210 1222	pneumothorax
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

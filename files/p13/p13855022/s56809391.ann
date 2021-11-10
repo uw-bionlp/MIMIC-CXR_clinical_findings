@@ -1,0 +1,32 @@
+T1	Medical-Assertion 35 46	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 50 79	acute cardiopulmonary process
+T3	Lesion-Anatomy 86 95	Pulmonary
+T4	Lesion-Description 96 106	metastases
+T5	Lesion-Characteristic 579 588	Scattered
+T6	Lesion-Description 589 606	nodular densities
+T7	Lesion-Anatomy 612 627	throughout both
+T8	Medical-Problem 754 768	Hyperinflation
+E7	Medical-Problem:T8
+T9	Medical-Assertion 769 777	suggests
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 778 788;790 794	underlying COPD
+T11	Medical-Assertion 806 808	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 809 828	focal consolidation
+T13	Medical-Problem 830 846	pleural effusion
+T14	Medical-Problem 848 863	pulmonary edema
+T15	Medical-Problem 869 881	pneumothorax
+T16	Medical-Assertion 951 962	No evidence
+A4	Medical-AssertionValue T16 absent
+T17	Lesion-Anatomy 1001 1010	Pulmonary
+T18	Lesion-Description 1011 1021	metastases
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T11
+E14	Lesion-Description:T18 has-Lesion-Anatomy:T17

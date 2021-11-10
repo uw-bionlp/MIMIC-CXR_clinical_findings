@@ -1,0 +1,22 @@
+T1	Medical-Anatomy 216 221	Lungs
+T2	Medical-Assertion 226 234	clear of
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 235 248	consolidation
+T4	Medical-Problem 250 258	effusion
+T5	Medical-Problem 262 274	pneumothorax
+T6	Medical-Problem 277 290;292 307	Heart size is mildly enlarged
+E5	Medical-Problem:T6
+T7	Medical-Assertion 354 356	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 357 365;367 372	free air under
+T9	Medical-Anatomy 377 396	right hemidiaphragm
+T10	Medical-Problem 399 444	Several right-sided rib fractures are chronic
+E8	Medical-Problem:T10
+T11	Medical-Assertion 465 476	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 480 509	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

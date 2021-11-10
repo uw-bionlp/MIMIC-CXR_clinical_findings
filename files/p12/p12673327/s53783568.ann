@@ -1,0 +1,38 @@
+T1	Lesion-Anatomy 212 222	right lung
+T2	Lesion-Description 223 229	masses
+T3	Lesion-Size-Trend 236 253	increased in size
+A1	Lesion-Size-TrendValue T3 increasing
+T4	Lesion-Anatomy 273 289	central superior
+T5	Lesion-Description 290 294	mass
+T6	Lesion-Size 316 322	5.1 cm
+T7	Lesion-Size 352 357	large
+T8	Lesion-Description 358 362	mass
+T9	Lesion-Anatomy 370 380	right base
+T10	Lesion-Size-Trend 390 407	increased in size
+A2	Lesion-Size-TrendValue T10 increasing
+T11	Lesion-Size 433 439	7.1 cm
+E9	Lesion-Size:T11
+T12	Lesion-Description 477 481	mass
+T13	Lesion-Anatomy 489 508	right mid lung zone
+T14	Lesion-Size-Trend 517 523	stable
+A3	Lesion-Size-TrendValue T14 no-change
+T15	Medical-Assertion 573 575	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 576 597	left pleural effusion
+T17	Medical-Problem 602 615;617 625	right pleural effusion
+E13	Medical-Problem:T17
+T18	Lesion-Description 666 670	mass
+E14	Lesion-Description:T18
+T19	Medical-Assertion 682 684	no
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 686 698	pneumothorax
+T21	Lesion-Count 795 803	multiple
+T22	Lesion-Anatomy 804 814	right lung
+T23	Lesion-Description 815 821	masses
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Size-Trend:T3
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Size-Past:T6
+E7	Lesion-Description:T8 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T13 has-Lesion-Size-Trend:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Lesion-Description:T23 has-Lesion-Count:T21 has-Lesion-Anatomy:T22

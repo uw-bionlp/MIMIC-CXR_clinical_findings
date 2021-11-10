@@ -1,0 +1,38 @@
+T1	Medical-Anatomy 234 239	lungs
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 271 300	persistent to slight blunting
+T3	Medical-Anatomy 309 333	right costophrenic angle
+T4	Medical-Assertion 340 355	could be due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 358 380	trace pleural effusion
+T6	Medical-Problem 389 420	pleural thickening/ atelectasis
+T7	Medical-Problem 431 457;459 491	subtle diffuse increase in interstitial opacity bilaterally
+E6	Medical-Problem:T7
+T8	Medical-Assertion 498 513	could be due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 514 533	mild fluid overload
+T10	Medical-Problem 542 560	atypical infection
+T11	Medical-Assertion 562 564	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 565 584	lobar consolidation
+T13	Medical-Anatomy 647 652	Aorta
+T14	Medical-Problem 661 683	calcified and tortuous
+T15	Medical-Problem 704 723	Hyperinflated lungs
+E12	Medical-Problem:T15
+T16	Medical-Problem 741 760	pulmonary emphysema
+E13	Medical-Problem:T16
+T17	Medical-Problem 774 782;784 820	Increase in interstitial markings bilaterally
+E14	Medical-Problem:T17
+T18	Medical-Assertion 821 836	could be due to
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 837 855;857 865	superimposed fluid overload
+T20	Medical-Problem 873 891	atypical infection
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T18

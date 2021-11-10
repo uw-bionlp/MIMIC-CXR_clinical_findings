@@ -1,0 +1,23 @@
+T1	Medical-Problem 363 371	bronchus
+E1	Medical-Problem:T1
+T2	Medical-Problem 394 416	parenchymal infiltrate
+T3	Medical-Anatomy 424 438	left lung base
+T4	Medical-Assertion 480 497	likely represents
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 498 509	atelectasis
+T6	Medical-Assertion 516 524	possibly
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 525 543	some pleural fluid
+T8	Medical-Problem 555 594;596 606	bilateral pulmonary edema, left greater than right
+E6	Medical-Problem:T8
+T9	Medical-Problem 793 828	Unchanged bilateral pulmonary edema
+E7	Medical-Problem:T9
+T10	Medical-Problem 833 860	left lower lung atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Assertion 867 875	possible
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 876 889	pleural fluid
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

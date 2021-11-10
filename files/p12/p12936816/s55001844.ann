@@ -1,0 +1,40 @@
+T1	Medical-Assertion 36 47	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 48 60	pneumothorax
+T3	Medical-Problem 136 144	fracture
+T4	Medical-Anatomy 152 185;187 196	right humerus through the greater  tubercle
+T5	Medical-Assertion 678 680	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 693 705	pneumothorax
+T7	Medical-Problem 710 721	new opacity
+T8	Medical-Anatomy 729 743	left lung base
+T9	Medical-Assertion 745 760	could represent
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 761 772	atelectasis
+T11	Medical-Problem 776 786	aspiration
+T12	Medical-Problem 800 808	fracture
+T13	Medical-Anatomy 816 821;823 859	right humeral through the greater tubercle
+T14	Medical-Problem 864 873	deformity
+E11	Medical-Problem:T14
+T15	Medical-Assertion 933 944	No evidence
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 948 960	pneumothorax
+T17	Medical-Problem 1042 1050	fracture
+E13	Medical-Problem:T17
+T18	Medical-Problem 1110 1121	new opacity
+T19	Medical-Anatomy 1129 1143	left lung base
+T20	Medical-Assertion 1144 1159	could represent
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1160 1171	atelectasis
+T22	Medical-Problem 1176 1186	aspiration
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E17	Medical-Problem:T22 has-Medical-Anatomy:T19 has-Medical-Assertion:T20

@@ -1,0 +1,47 @@
+T1	Medical-Assertion 393 395	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 397 409	pneumothorax
+T3	Medical-Anatomy 432 437	heart
+T4	Medical-Assertion 441 444	not
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 445 453	enlarged
+T6	Medical-Assertion 465 467	no
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 468 471	CHF
+T8	Medical-Problem 473 489	focal infiltrate
+T9	Medical-Problem 493 501	effusion
+T10	Medical-Anatomy 525 545	left lung upper zone
+T11	Medical-Problem 561 577	linear opacities
+T12	Medical-Assertion 587 589	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 590 598	effusion
+T14	Lesion-Assertion 646 648	no
+A5	Lesion-AssertionValue T14 absent
+T15	Lesion-Anatomy 649 654	hilar
+T16	Lesion-Anatomy 659 670	mediastinal
+T17	Lesion-Description 671 686	lymphadenopathy
+T18	Lesion-Anatomy 690 699	pulmonary
+T19	Lesion-Description 700 706	nodule
+T20	Lesion-Assertion 725 727	No
+A6	Lesion-AssertionValue T20 absent
+T21	Lesion-Characteristic 728 735	obvious
+T22	Lesion-Characteristic 736 741	focal
+T23	Lesion-Characteristic 742 747	lytic
+T24	Lesion-Characteristic 751 760	sclerotic
+T25	Lesion-Description 761 767	lesion
+T26	Medical-Assertion 923 925	No
+A7	Medical-AssertionValue T26 absent
+T27	Medical-Problem 926 931;933 943	focal infiltrate
+T28	Medical-Problem 974 989	early infection
+E21	Medical-Problem:T28
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Anatomy:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Lesion-Description:T17 has-Lesion-Assertion:T14 has-Lesion-Anatomy:T15 has-Lesion-Anatomy:T16
+E14	Lesion-Description:T19 has-Lesion-Assertion:T14 has-Lesion-Anatomy:T15 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T18
+E19	Lesion-Description:T25 has-Lesion-Assertion:T20 has-Lesion-Characteristic:T21 has-Lesion-Characteristic:T22 has-Lesion-Characteristic:T23 has-Lesion-Characteristic:T24
+E20	Medical-Problem:T27 has-Medical-Assertion:T26

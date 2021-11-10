@@ -1,0 +1,39 @@
+T1	Medical-Problem 257 281	more conspicuous opacity
+T2	Medical-Anatomy 289 294;296 314	right lung base medially
+T3	Medical-Problem 373 422	Increased less well the found surrounding opacity
+T4	Medical-Anatomy 444 449;451 460	right lung base
+T5	Medical-Problem 482 510	small right pleural effusion
+E5	Medical-Problem:T5
+T6	Medical-Problem 513 521;523 531	Biapical scarring
+E6	Medical-Problem:T6
+T7	Medical-Problem 594 623	pulmonary vascular congestion
+E7	Medical-Problem:T7
+T8	Medical-Assertion 624 631	without
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 632 643	overt edema
+T10	Medical-Assertion 688 690	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 691 718	acute osseous abnormalities
+T12	Medical-Problem 780 814	Mid thoracic compression deformity
+E10	Medical-Problem:T12
+T13	Medical-Problem 863 885	Progression of opacity
+T14	Medical-Anatomy 893 908	right lung base
+T15	Medical-Assertion 909 935	potentially in part due to
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 936 940;942 965	post obstructive atelectasis
+T17	Medical-Problem 1032 1054	Superimposed infection
+E14	Medical-Problem:T17
+T18	Lesion-Description 1088 1094	nodule
+T19	Lesion-Anatomy 1103 1118	right lung base
+T20	Lesion-Assertion 1119 1134	could represent
+A4	Lesion-AssertionValue T20 possible
+T21	Lesion-Anatomy 1137 1146	pulmonary
+T22	Lesion-Description 1147 1153	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T19
+E18	Lesion-Description:T22 has-Lesion-Anatomy:T19 has-Lesion-Assertion:T20 has-Lesion-Anatomy:T21

@@ -1,0 +1,25 @@
+T1	Medical-Assertion 263 265	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 266 286	focal consolidations
+T3	Medical-Assertion 287 297	concerning
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 302 311	pneumonia
+T5	Lesion-Size 364 368	9 mm
+E3	Lesion-Size:T5
+T6	Medical-Anatomy 407 412	third
+E4	Medical-Anatomy:T6
+T7	Lesion-Size 487 493	1.7 cm
+T8	Lesion-Anatomy 502 512;514 522	projecting over the
+T9	Lesion-Size 591 597	1.1 cm
+T10	Lesion-Characteristic 598 605	rounded
+T11	Lesion-Description 606 613	opacity
+T12	Lesion-Anatomy 614 631	posterior to this
+T13	Medical-Problem 669 688	Three new opacities
+E11	Medical-Problem:T13
+T14	Medical-Assertion 852 863	No evidence
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 867 876	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

@@ -1,0 +1,35 @@
+T1	Lesion-Characteristic 389 405	slightly rounded
+T2	Lesion-Description 406 413	nodular
+T3	Lesion-Anatomy 449 459	lower lobe
+T4	Lesion-Characteristic 485 520	may represent an infectious process
+T5	Medical-Problem 523 542	Rounded atelectasis
+T6	Medical-Assertion 547 559	not excluded
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 599 625;627 638	Trace pleural fluid layers posteriorly
+E6	Medical-Problem:T7
+T8	Medical-Assertion 661 663	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 664 676	pneumothorax
+T10	Medical-Anatomy 695 704;706 717	pulmonary vasculature
+T11	Medical-Assertion 721 724	not
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 725 733	engorged
+T13	Medical-Problem 740 770	cardiac silhouette is enlarged
+E10	Medical-Problem:T13
+T14	Medical-Problem 794 804	prominence
+T15	Medical-Anatomy 812 823	mediastinum
+T16	Medical-Problem 831 840	unfolding
+T17	Medical-Anatomy 848 856	thoracic
+T18	Lesion-Characteristic 930 937	Rounded
+T19	Lesion-Description 938 962	nodular airspace opacity
+T20	Lesion-Anatomy 970 980	lower lobe
+T21	Lesion-Characteristic 981 995;997 1015	concerning for infectious process
+T22	Medical-Problem 1151 1170	Stable cardiomegaly
+E19	Medical-Problem:T22
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4
+E5	Medical-Problem:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15 has-Medical-Anatomy:T17
+E16	Lesion-Description:T19 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T20 has-Lesion-Characteristic:T21

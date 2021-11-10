@@ -1,0 +1,32 @@
+T1	Medical-Problem 204 223	very subtle opacity
+T2	Medical-Anatomy 245 284	region of the posterior right fifth rib
+T3	Medical-Problem 294 319;321 350	overlaps with the scapula and anterior right second rib
+E3	Medical-Problem:T3
+T4	Medical-Assertion 352 364	maybe due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 365 386	overlap of structures
+T6	Medical-Assertion 461 463	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 464 469;471 484	focal consolidation
+T8	Medical-Anatomy 493 502	elsewhere
+T9	Medical-Assertion 505 507	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 508 530	large pleural effusion
+T11	Medical-Problem 534 546	pneumothorax
+T12	Medical-Problem 620 634	Subtle opacity
+T13	Medical-Anatomy 655 677	right upper hemithorax
+T14	Medical-Anatomy 703 764;766 785	posterior fifth rib overlies with the anterior second rib and part of the scapula
+T15	Medical-Assertion 787 797	may be due
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 801 823	overlapping structures
+T17	Medical-Assertion 910 912	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 913 918;920 933	focal consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

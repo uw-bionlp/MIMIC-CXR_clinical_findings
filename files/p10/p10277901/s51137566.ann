@@ -1,0 +1,41 @@
+T1	Medical-Problem 242 289;291 301	Bilateral large pleural effusions, left greater than right
+E1	Medical-Problem:T1
+T2	Medical-Problem 307 329	associated atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 391 414	increased opacification
+T4	Medical-Anatomy 422 438	right upper lung
+T5	Medical-Assertion 440 454	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 455 477	new infectious process
+T7	Medical-Problem 489 507	leftward deviation
+T8	Medical-Anatomy 516 529	upper trachea
+T9	Lesion-Anatomy 535 561	right superior mediastinal
+T10	Lesion-Description 562 566	mass
+T11	Lesion-Characteristic 593 602	calcified
+T12	Medical-Anatomy 676 683	trachea
+E11	Medical-Anatomy:T12
+T13	Medical-Assertion 754 756	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 757 769	pneumothorax
+T15	Medical-Problem 772 793	Moderate cardiomegaly
+E13	Medical-Problem:T15
+T16	Medical-Problem 901 928	bilateral pleural effusions
+E14	Medical-Problem:T16
+T17	Medical-Problem 950 977	New increased opacification
+T18	Medical-Anatomy 985 1001	right upper lung
+T19	Medical-Assertion 1002 1016	concerning for
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1017 1020;1022 1040	new infectious process
+T21	Medical-Problem 1048 1068	Mild pulmonary edema
+E18	Medical-Problem:T21
+T22	Medical-Problem 1074 1107	bilateral large pleural effusions
+E19	Medical-Problem:T22
+T23	Medical-Problem 1112 1122;1124 1160	associated atelectasis, left greater than right
+E20	Medical-Problem:T23
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T19

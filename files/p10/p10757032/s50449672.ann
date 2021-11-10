@@ -1,0 +1,29 @@
+T1	Medical-Problem 180 195	large pneumonia
+T2	Medical-Anatomy 203 219	right lower lobe
+T3	Medical-Problem 237 242;244 260	small pleural effusion
+T4	Medical-Problem 274 283	pneumonia
+E4	Medical-Problem:T4
+T5	Medical-Problem 324 368	large region of right lower lobe atelectasis
+E5	Medical-Problem:T5
+T6	Medical-Problem 386 397;399 415	Small right pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Assertion 446 461	could be due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 467 489	persistent atelectasis
+T9	Medical-Problem 492 500	Heart is
+E8	Medical-Problem:T9
+T10	Medical-Problem 501 532	chronically moderately enlarged
+E9	Medical-Problem:T10
+T11	Medical-Assertion 548 550	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 551 566	pulmonary edema
+T13	Medical-Problem 590 617	small left pleural effusion
+E11	Medical-Problem:T13
+T14	Medical-Assertion 788 808	no findings strongly
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 823 832	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

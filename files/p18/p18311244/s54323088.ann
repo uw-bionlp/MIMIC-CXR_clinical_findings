@@ -1,0 +1,27 @@
+T1	Medical-Problem 312 334	mild upward retraction
+T2	Medical-Anatomy 342 353	right hilum
+T3	Medical-Problem 370 382;384 391	postsurgical changes
+T4	Medical-Problem 405 429	subsegmental atelectasis
+T5	Medical-Anatomy 437 451	left lung base
+T6	Medical-Assertion 476 478	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 479 498	focal consolidation
+T8	Medical-Problem 500 516	pleural effusion
+T9	Medical-Problem 520 532	pneumothorax
+T10	Lesion-Characteristic 547 556	Sclerotic
+T11	Lesion-Characteristic 557 564	osseous
+T12	Lesion-Description 576 583	lesions
+T13	Lesion-Characteristic 589 595	remote
+T14	Medical-Anatomy 637 641	ribs
+E13	Medical-Anatomy:T14
+T15	Medical-Assertion 675 677	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 678 707	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15

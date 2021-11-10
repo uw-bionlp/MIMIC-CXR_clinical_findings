@@ -1,0 +1,27 @@
+T1	Medical-Problem 523 543	mild pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 545 559;561 581	Increased left retrocardiac opacity
+E2	Medical-Problem:T2
+T3	Medical-Assertion 591 597	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 615 626	atelectasis
+T5	Medical-Problem 631 638;640 648	pleural effusion
+T6	Medical-Problem 650 669	Increased opacities
+T7	Medical-Anatomy 677 710;712 743	right upper lobe, above the minor fissure, at the right lung base
+T8	Medical-Anatomy 755 776	left perihilar region
+T9	Medical-Assertion 782 796	concerning for
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 797 817	multifocal pneumonia
+T11	Medical-Problem 835 854	Worsening opacities
+T12	Medical-Anatomy 866 882	right upper lobe
+T13	Medical-Anatomy 884 899	right lung base
+T14	Medical-Anatomy 905 926	left perihilar region
+T15	Medical-Assertion 931 945	concerning for
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 946 966	multifocal pneumonia
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

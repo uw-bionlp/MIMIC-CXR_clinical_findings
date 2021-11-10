@@ -1,0 +1,43 @@
+T1	Medical-Assertion 256 258	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 259 284	subdiaphragmatic free air
+T3	Medical-Problem 287 308	Moderate cardiomegaly
+E2	Medical-Problem:T3
+T4	Medical-Problem 325 336	Eventration
+T5	Medical-Anatomy 344 363	right hemidiaphragm
+T6	Medical-Problem 381 398;400 435	Bilateral pleural thickening, right greater than left
+E5	Medical-Problem:T6
+T7	Medical-Assertion 460 462	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 463 475	pneumothorax
+T9	Medical-Problem 478 499	overt pulmonary edema
+T10	Medical-Problem 504 523	focal consolidation
+T11	Medical-Assertion 524 533	worrisome
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 538 547	pneumonia
+T13	Medical-Problem 551 559	Scarring
+T14	Medical-Anatomy 567 583	right lower lobe
+T15	Medical-Assertion 584 595	may be from
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 596 614	chronic aspiration
+T17	Medical-Assertion 635 637	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 638 667	acute cardiopulmonary process
+T19	Medical-Problem 669 690	Moderate cardiomegaly
+E14	Medical-Problem:T19
+T20	Medical-Problem 695 713	pleural thickening
+E15	Medical-Problem:T20
+T21	Medical-Anatomy 744 760	right lower lobe
+T22	Medical-Assertion 761 772	may be from
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 773 791	chronic aspiration
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T7 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22

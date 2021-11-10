@@ -1,0 +1,31 @@
+T1	Medical-Assertion 216 218	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 219 224;226 239	focal consolidation
+T3	Medical-Assertion 259 261	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 262 278	pleural effusion
+T5	Medical-Problem 282 294	pneumothorax
+T6	Lesion-Anatomy 318 333	left lower lung
+T7	Lesion-Size 346 355	4 to 5 mm
+T8	Lesion-Characteristic 356 363	rounded
+T9	Lesion-Characteristic 364 373	calcified
+T10	Lesion-Description 375 381	nodule
+T11	Lesion-Assertion 388 401	may represent
+A3	Lesion-AssertionValue T11 possible
+T12	Lesion-Characteristic 404 413	calcified
+T13	Lesion-Description 414 423	granuloma
+T14	Medical-Problem 430 447;449 457	aorta is slightly tortuous
+E11	Medical-Problem:T14
+T15	Medical-Assertion 508 510	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 511 526;528 533	overt pulmonary edema
+T17	Medical-Assertion 581 588	without
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 589 610	overt pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T6 has-Lesion-Size-Present:T7 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T9
+E10	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

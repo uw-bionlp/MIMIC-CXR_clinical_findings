@@ -1,0 +1,29 @@
+T1	Medical-Problem 250 276	Lung volumes are decreased
+E1	Medical-Problem:T1
+T2	Medical-Problem 321 331	tortuosity
+T3	Medical-Anatomy 339 355	descending aorta
+T4	Medical-Problem 357 371	Linear opacity
+T5	Medical-Anatomy 379 394	right lung base
+T6	Medical-Assertion 396 411	likely reflects
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 412 423	atelectasis
+T8	Medical-Assertion 445 447	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 448 467	focal consolidation
+T10	Medical-Problem 470 486	pleural effusion
+T11	Medical-Problem 490 502	pneumothorax
+T12	Medical-Problem 526 544	Linear atelectasis
+T13	Medical-Anatomy 552 567	right lung base
+T14	Medical-Assertion 570 572	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 573 592	focal consolidation
+T16	Medical-Assertion 593 603;605 608	concerning for
+A4	Medical-AssertionValue T16 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Assertion:T16

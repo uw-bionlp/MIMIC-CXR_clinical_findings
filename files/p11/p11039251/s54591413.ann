@@ -1,0 +1,32 @@
+T1	Lesion-Size 198 204	1.8 cm
+T2	Lesion-Anatomy 205 221	right lower lobe
+T3	Lesion-Description 222 228	nodule
+T4	Lesion-Assertion 270 272	No
+A1	Lesion-AssertionValue T4 absent
+T5	Lesion-Size-Trend 273 276	new
+A2	Lesion-Size-TrendValue T5 new
+T6	Lesion-Anatomy 277 286	pulmonary
+T7	Lesion-Description 287 294	nodules
+T8	Medical-Problem 398 410;412 429	chronic left perihilar opacity
+E6	Medical-Problem:T8
+T9	Medical-Assertion 454 456	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 457 474	pleural effusions
+T11	Medical-Assertion 477 479	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 481 493	pneumothorax
+T13	Medical-Assertion 574 576	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 577 612	acute cardiac or pulmonary findings
+T15	Lesion-Size-Trend 621 630	Unchanged
+A6	Lesion-Size-TrendValue T15 no-change
+T16	Lesion-Characteristic 631 640	calcified
+T17	Lesion-Size 641 647	1.8 cm
+T18	Lesion-Anatomy 648 664	right lower lobe
+T19	Lesion-Description 665 671	nodule
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Size-Trend:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Lesion-Description:T19 has-Lesion-Size-Trend:T15 has-Lesion-Characteristic:T16 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T18

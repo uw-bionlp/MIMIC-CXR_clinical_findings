@@ -1,0 +1,29 @@
+T1	Medical-Assertion 201 207	may be
+A1	Medical-AssertionValue T1 possible
+T2	Lesion-Anatomy 208 218	left hilar
+T3	Lesion-Description 219 234	lymphadenopathy
+T4	Medical-Problem 236 247	Obscuration
+T5	Medical-Anatomy 255 259;261 273	left heart border
+T6	Lesion-Characteristic 281 286	focal
+T7	Lesion-Description 295 312	mass-like opacity
+T8	Lesion-Anatomy 320 327	lingula
+T9	Lesion-Characteristic 337 347	suggestion
+T10	Lesion-Characteristic 371 396	concerning for cavitation
+T11	Medical-Problem 398 410;412 443	More diffuse increased interstitial markings
+T12	Medical-Anatomy 451 466	left upper lobe
+T13	Medical-Assertion 520 522	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 523 539	pleural effusion
+T15	Medical-Problem 543 555	pneumothorax
+T16	Medical-Problem 573 610	Lingula and left upper lobe opacities
+E14	Medical-Problem:T16
+T17	Medical-Assertion 611 625	concerning for
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 626 635	pneumonia
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

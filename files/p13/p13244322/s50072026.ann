@@ -1,0 +1,17 @@
+T1	Medical-Problem 243 270;272 281	bilateral diffuse pulmonary opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 313 349;351 358	residual more confluent asymmetrical opacity
+T3	Medical-Anatomy 366 382	right upper lobe
+T4	Medical-Assertion 383 416	which could potentially represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 417 429;431 436	asymmetrical edema
+T6	Medical-Problem 440 482	infectious pneumonia coexisting with edema
+T7	Medical-Problem 485 507	Right pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Assertion 538 540	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 541 578	other relevant Short interval changes
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

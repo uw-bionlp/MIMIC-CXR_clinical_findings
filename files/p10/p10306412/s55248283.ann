@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 120 127	Cardiac
+T2	Medical-Problem 142 157	mildly enlarged
+T3	Medical-Problem 178 186	widening
+T4	Medical-Anatomy 195 206	azygos vein
+T5	Medical-Problem 211 240	pulmonary vascular congestion
+E5	Medical-Problem:T5
+T6	Medical-Problem 243 262;264 289	Multifocal areas of patchy and linear opacity
+T7	Medical-Anatomy 309 337;339 346	left mid and both lower lung regions
+T8	Medical-Problem 353 359	slight
+E8	Medical-Problem:T8
+T9	Medical-Assertion 415 420	favor
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 423 445	multifocal atelectasis
+T11	Medical-Problem 451 473	co-existing aspiration
+T12	Medical-Problem 477 486	pneumonia
+T13	Medical-Assertion 491 499	possible
+A2	Medical-AssertionValue T13 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Assertion:T13
+E11	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T13

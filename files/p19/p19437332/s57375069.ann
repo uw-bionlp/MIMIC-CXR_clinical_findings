@@ -1,0 +1,38 @@
+T1	Medical-Problem 345 364	Hyperinflated lungs
+E1	Medical-Problem:T1
+T2	Medical-Problem 385 389	COPD
+E2	Medical-Problem:T2
+T3	Medical-Problem 450 462	Opacifiation
+T4	Medical-Anatomy 470 474;476 485	left lung base
+T5	Medical-Assertion 489 503	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 504 529	left lower lobe pneumonia
+T7	Lesion-Size 531 535	Tiny
+T8	Lesion-Anatomy 536 552;554 558	right upper lobe lung
+T9	Lesion-Description 559 565	nodule
+T10	Lesion-Size-Trend 569 575	stable
+A2	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Anatomy 603 613	Right lung
+T12	Medical-Assertion 629 631	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 632 651	focal consolidation
+T14	Medical-Problem 653 669	pleural effusion
+T15	Medical-Problem 674 686	pneumothorax
+T16	Medical-Problem 689 706;708 717	Old right 6th rib deformity
+E13	Medical-Problem:T16
+T17	Medical-Problem 728 780	Changes related to degenerative changes such as DISH
+T18	Medical-Anatomy 803 819	visualized spine
+T19	Medical-Problem 842 854	Opacifiation
+T20	Medical-Anatomy 862 876	left lung base
+T21	Medical-Assertion 880 894	concerning for
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 895 910;912 921	left lower lobe pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T10
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T21

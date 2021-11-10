@@ -1,0 +1,22 @@
+T1	Medical-Problem 204 245	New moderate right-sided pleural effusion
+T2	Medical-Problem 251 280;282 286	associated substantial volume loss
+T3	Medical-Anatomy 294 327	right middle and right lower lobe
+T4	Medical-Assertion 355 357	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 359 380	overt pulmonary edema
+T6	Medical-Problem 383 400	Mild cardiomegaly
+E5	Medical-Problem:T6
+T7	Medical-Problem 422 436	azygos fissure
+E6	Medical-Problem:T7
+T8	Medical-Problem 457 490	New moderate right-sided effusion
+T9	Medical-Problem 496 519	substantial volume loss
+T10	Medical-Anatomy 527 532;534 555	right middle and lower lobe
+T11	Medical-Problem 558 580	Superimposed infection
+T12	Medical-Assertion 581 599	cannot be excluded
+A2	Medical-AssertionValue T12 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Assertion:T12

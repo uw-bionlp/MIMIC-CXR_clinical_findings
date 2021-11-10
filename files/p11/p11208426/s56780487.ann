@@ -1,0 +1,41 @@
+T1	Medical-Problem 262 269	opacity
+T2	Medical-Anatomy 277 295	left mid lung zone
+T3	Medical-Problem 301 315;317 330	associated rib abnormalities
+T4	Lesion-Characteristic 337 348	soft tissue
+T5	Lesion-Description 349 353	mass
+T6	Lesion-Size-Trend 357 382	not significantly changed
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Lesion-Anatomy 458 468	chest wall
+T8	Lesion-Description 470 474	mass
+T9	Medical-Problem 590 614;616 629	new right patchy basilar consolidation
+E8	Medical-Problem:T9
+T10	Medical-Problem 632 653	Emphysematous changes
+E9	Medical-Problem:T10
+T11	Medical-Assertion 676 678	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 679 688;690 695	pulmonary edema
+T13	Medical-Problem 697 713	pleural effusion
+T14	Medical-Problem 718 730	pneumothorax
+T15	Medical-Problem 798 822	New patchy opacification
+T16	Medical-Anatomy 830 840	right base
+T17	Medical-Assertion 842 857	possibly due to
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 860 863;865 874	new pneumonia
+T19	Medical-Problem 953 973	Stable appearance of
+E16	Medical-Problem:T19
+T20	Medical-Problem 978 1004	left mid lung zone opacity
+E17	Medical-Problem:T20
+T21	Medical-Problem 1009 1019;1021 1030	chest wall deformity
+E18	Medical-Problem:T21
+T22	Lesion-Anatomy 1064 1074	chest wall
+T23	Lesion-Description 1075 1079	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Size-Trend:T6
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T11
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E20	Lesion-Description:T23 has-Lesion-Anatomy:T22

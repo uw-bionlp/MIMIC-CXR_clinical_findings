@@ -1,0 +1,16 @@
+T1	Medical-Anatomy 334 344	lung bases
+T2	Medical-Problem 399 417	infectious process
+T3	Lesion-Anatomy 420 429	Pulmonary
+T4	Lesion-Description 430 436	nodule
+T5	Lesion-Assertion 471 474	not
+A1	Lesion-AssertionValue T5 absent
+T6	Medical-Problem 628 647	Mild hyperinflation
+E5	Medical-Problem:T6
+T7	Medical-Assertion 659 661	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 662 678	pleural effusion
+T9	Medical-Problem 683 695	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

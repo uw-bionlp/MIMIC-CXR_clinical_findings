@@ -1,0 +1,20 @@
+T1	Medical-Problem 407 413;415 424	stable elevation
+T2	Medical-Anatomy 432 450	left hemidiaphragm
+T3	Medical-Problem 456 484;486 497	mild left basilar plate-like atelectasis
+T4	Medical-Assertion 500 516	No definite sign
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 520 529	pneumonia
+T6	Medical-Problem 531 534	CHF
+T7	Medical-Problem 536 552	pleural effusion
+T8	Medical-Problem 590 613	unfolded thoracic aorta
+E7	Medical-Problem:T8
+T9	Medical-Assertion 667 669	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 670 684	acute findings
+T11	Medical-Anatomy 692 697	chest
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T4
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11

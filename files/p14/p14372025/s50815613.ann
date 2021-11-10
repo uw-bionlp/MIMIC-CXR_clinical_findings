@@ -1,0 +1,58 @@
+T1	Medical-Problem 160 165	right
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 178 185	rounded
+T3	Lesion-Size 186 192	3.5 cm
+T4	Lesion-Description 193 200	opacity
+T5	Medical-Assertion 208 221	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 223 232	pneumonia
+T7	Lesion-Description 247 251	mass
+E6	Lesion-Description:T7
+T8	Medical-Problem 254 263	Opacities
+T9	Medical-Assertion 264 283	likely representing
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 284 293	pneumonia
+T11	Medical-Anatomy 311 344	right middle lobe and the lingula
+T12	Medical-Assertion 356 358	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 359 372;374 382	right pleural effusion
+T14	Medical-Assertion 453 455	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 456 468	pneumothorax
+T16	Medical-Anatomy 525 531	spleen
+T17	Medical-Assertion 533 543	appears to
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 547 564	slightly enlarged
+T19	Medical-Problem 588 597	Opacities
+T20	Medical-Anatomy 605 634	right middle lobe and lingula
+T21	Medical-Assertion 636 655	likely representing
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 659 679	multifocal pneumonia
+T23	Lesion-Anatomy 688 704	Right juxtahilar
+T24	Lesion-Characteristic 705 710	round
+T25	Lesion-Description 718 725	opacity
+T26	Medical-Assertion 733 746	may represent
+A7	Medical-AssertionValue T26 possible
+T27	Medical-Problem 786 811	round bacterial pneumonia
+T28	Medical-Problem 813 829	fungal infection
+T29	Medical-Problem 834 842	nocardia
+T30	Lesion-Description 858 868	neoplastic
+E23	Lesion-Description:T30
+T31	Lesion-Description 869 873	mass
+E24	Lesion-Description:T31
+T32	Lesion-Anatomy 987 997	right lung
+T33	Lesion-Description 998 1006	neoplasm
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T2 has-Lesion-Size-Present:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T11
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E14	Medical-Problem:T19 has-Medical-Anatomy:T20
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Lesion-Description:T25 has-Lesion-Anatomy:T23 has-Lesion-Characteristic:T24
+E20	Medical-Problem:T27 has-Medical-Assertion:T26
+E21	Medical-Problem:T28 has-Medical-Assertion:T26
+E22	Medical-Problem:T29 has-Medical-Assertion:T26
+E26	Lesion-Description:T33 has-Lesion-Anatomy:T32

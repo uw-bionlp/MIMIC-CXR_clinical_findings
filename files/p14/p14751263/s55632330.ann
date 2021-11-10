@@ -1,0 +1,30 @@
+T1	Medical-Problem 225 236	enlargement
+T2	Medical-Anatomy 244 255	mediastinum
+T3	Lesion-Anatomy 261 270	bilateral
+T4	Lesion-Size 271 276	large
+T5	Lesion-Anatomy 277 282	hilar
+T6	Lesion-Anatomy 286 295	perihilar
+T7	Lesion-Description 296 302	masses
+T8	Medical-Problem 358 378;380 401	background increased interstitial markings
+E8	Medical-Problem:T8
+T9	Medical-Problem 408 425	some hazy density
+T10	Medical-Anatomy 433 454	left perihilar region
+T11	Medical-Problem 462 492	left hemidiaphragm is elevated
+E11	Medical-Problem:T11
+T12	Medical-Assertion 495 497	No
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 498 512	gross effusion
+T14	Medical-Assertion 524 526	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 528 540	pneumothorax
+T16	Medical-Assertion 554 556	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 557 560	CHF
+T18	Medical-Problem 581 608	significant interval change
+E15	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T3 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,31 @@
+T1	Medical-Problem 218 235	Biapical scarring
+T2	Medical-Assertion 240 248	possible
+A1	Medical-AssertionValue T2 possible
+T3	Lesion-Anatomy 249 261	right apical
+T4	Lesion-Size 262 267	small
+T5	Lesion-Description 268 275	nodules
+T6	Medical-Problem 277 287	Prominence
+T7	Medical-Anatomy 292 306	bilateral hila
+T8	Medical-Problem 317 335	somewhat lobulated
+E7	Medical-Problem:T8
+T9	Lesion-Assertion 336 343	suggest
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Characteristic 344 354	underlying
+T11	Lesion-Description 356 371	lymphadenopathy
+T12	Medical-Problem 374 401	Trace left pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Assertion 432 434	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 436 455	focal consolidation
+T15	Medical-Problem 459 471	pneumothorax
+T16	Lesion-Assertion 499 509	suggesting
+A4	Lesion-AssertionValue T16 possible
+T17	Lesion-Anatomy 510 515	hilar
+T18	Lesion-Description 516 526	adenopathy
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Size-Present:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Lesion-Description:T18 has-Lesion-Assertion:T16 has-Lesion-Anatomy:T17

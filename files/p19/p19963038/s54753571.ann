@@ -1,0 +1,23 @@
+T1	Medical-Problem 360 382	Subcutaneous emphysema
+T2	Medical-Anatomy 390 436	right chest wall extending into the right neck
+T3	Medical-Problem 485 505;507 524	Very small volume of intrathoracic air
+T4	Medical-Anatomy 525 544	outside of the lung
+T5	Medical-Assertion 548 558	either any
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 559 578	stable pneumothorax
+T7	Medical-Problem 583 619	extra pleural subcutaneous emphysema
+T8	Medical-Problem 622 637	New atelectasis
+T9	Medical-Problem 641 654	consolidation
+T10	Medical-Anatomy 677 692	right lung base
+T11	Medical-Assertion 700 708	could be
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 716 726	infectious
+T13	Medical-Problem 731 760	bleomycin induced pneumonitis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11

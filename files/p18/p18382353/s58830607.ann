@@ -1,0 +1,21 @@
+T1	Medical-Assertion 285 287	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 289 305	pleural effusion
+T3	Medical-Problem 309 321	pneumothorax
+T4	Lesion-Size 326 331	small
+T5	Lesion-Characteristic 332 342	hyperdense
+T6	Lesion-Description 343 349	nodule
+T7	Lesion-Anatomy 371 387	right upper lung
+T8	Lesion-Size-Trend 391 400	unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Assertion 401 420	likely representing
+A3	Lesion-AssertionValue T9 possible
+T10	Lesion-Description 423 432	granuloma
+T11	Medical-Assertion 485 496	No evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 500 509	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T8
+E7	Lesion-Description:T10 has-Lesion-Anatomy:T7 has-Lesion-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

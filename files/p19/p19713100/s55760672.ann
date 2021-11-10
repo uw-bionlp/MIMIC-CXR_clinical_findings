@@ -1,0 +1,20 @@
+T1	Medical-Problem 213 240	Elevated left hemidiaphragm
+E1	Medical-Problem:T1
+T2	Medical-Assertion 261 263	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 264 282	definitive opacity
+T4	Medical-Problem 295 324	minimal bibasilar atelectasis
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 343 352	Pulmonary
+T6	Lesion-Description 353 360	nodules
+T7	Lesion-Anatomy 374 393	left mid lower lung
+T8	Medical-Assertion 415 430	might represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 431 439	at least
+T10	Medical-Assertion 474 476	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 477 489	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

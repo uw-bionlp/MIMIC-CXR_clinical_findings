@@ -1,0 +1,26 @@
+T1	Medical-Problem 200 214	consolidations
+E1	Medical-Problem:T1
+T2	Medical-Problem 218 228	aspiration
+E2	Medical-Problem:T2
+T3	Medical-Problem 371 399	Large areas of consolidation
+T4	Medical-Anatomy 418 434	both lower lungs
+T5	Medical-Problem 461 491	extent of mild pulmonary edema
+E5	Medical-Problem:T5
+T6	Medical-Assertion 522 529	suggest
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 530 556	severe bilateral pneumonia
+T8	Medical-Problem 561 584	secondary heart failure
+T9	Medical-Problem 587 595;597 627	Small to moderate left pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Anatomy 640 650	Heart size
+T11	Medical-Assertion 679 681	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 682 711	more than moderately enlarged
+T13	Medical-Assertion 714 716	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 717 729	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

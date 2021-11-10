@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 318 339	pulmonary vasculature
+T2	Medical-Assertion 343 346	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 347 355	engorged
+T4	Medical-Problem 365 374	opacities
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 378 382;384 394	both lung bases
+T6	Medical-Problem 415 448	areas of subsegmental atelectasis
+T7	Medical-Assertion 451 453	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 454 459;461 474	focal consolidation
+T9	Medical-Problem 476 492	pleural effusion
+T10	Medical-Problem 496 508	pneumothorax
+T11	Medical-Problem 536 556	degenerative changes
+T12	Medical-Anatomy 574 588	thoracic spine
+T13	Medical-Problem 619 643	subsegmental atelectasis
+E11	Medical-Problem:T13
+T14	Medical-Assertion 646 648	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 649 668	focal consolidation
+T16	Medical-Assertion 669 671	to
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 682 691	pneumonia
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T14 has-Medical-Assertion:T16

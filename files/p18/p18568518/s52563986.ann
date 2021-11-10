@@ -1,0 +1,25 @@
+T1	Medical-Problem 79 103	Right upper zone density
+E1	Medical-Problem:T1
+T2	Medical-Assertion 125 127	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 128 147	focal consolidation
+T4	Medical-Problem 151 165	large effusion
+T5	Lesion-Anatomy 524 538	RO mediastinal
+T6	Lesion-Anatomy 543 548	hilar
+T7	Lesion-Description 550 556	masses
+T8	Lesion-Size-Trend 562 601	overall substantially decreased in size
+A2	Lesion-Size-TrendValue T8 decreasing
+T9	Medical-Problem 660 698;700 710	crowding of the vascular and bronchial structures
+T10	Medical-Anatomy 727 737	lung bases
+T11	Medical-Problem 763 766;768 792	new retrocardiac atelectasis
+E9	Medical-Problem:T11
+T12	Medical-Problem 807 845	overall increase in vascular diameters
+E10	Medical-Problem:T12
+T13	Medical-Assertion 848 865	likely reflecting
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 866 886	mild pulmonary edema
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

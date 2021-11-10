@@ -1,0 +1,27 @@
+T1	Medical-Problem 402 415;417 430	Near complete opacification
+T2	Medical-Anatomy 438 447	left lung
+T3	Medical-Problem 476 487	atelectasis
+T4	Medical-Problem 495 524	small amount of pleural fluid
+T5	Medical-Assertion 526 528	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 529 541	pneumothorax
+T7	Medical-Assertion 566 568	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 569 573;575 578	free air
+T9	Medical-Anatomy 591 610	right hemidiaphragm
+T10	Medical-Problem 685 711	partial left lung collapse
+E8	Medical-Problem:T10
+T11	Medical-Problem 855 882	Near complete opacification
+T12	Medical-Anatomy 890 899	left lung
+T13	Medical-Assertion 900 916	likely represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 917 928	atelectasis
+T15	Medical-Problem 936 958	small pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

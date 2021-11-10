@@ -1,0 +1,19 @@
+T1	Medical-Problem 484 502	Large cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 523 559;561 592	Persistent presumably mild pulmonary edema with vascular engorgement
+E2	Medical-Problem:T2
+T3	Medical-Problem 594 618	Persistent opacification
+T4	Medical-Anatomy 626 636;638 642	right lung base
+T5	Medical-Assertion 643 662	could be related to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 663 695	moderate amount of pleural fluid
+T7	Medical-Problem 705 715;717 726	underlying infection
+T8	Medical-Problem 730 740	aspiration
+T9	Medical-Assertion 741 759	cannot be excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 789 821	continued cardiac decompensation
+E8	Medical-Problem:T10
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T9

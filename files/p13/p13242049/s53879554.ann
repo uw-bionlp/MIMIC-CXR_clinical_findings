@@ -1,0 +1,18 @@
+T1	Medical-Problem 174 191	Left base opacity
+T2	Medical-Anatomy 218 222;224 237	left hemidiaphragm
+T3	Medical-Anatomy 244 249	lungs
+T4	Medical-Assertion 270 277	without
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 278 291	consolidation
+T6	Medical-Problem 296 325	pulmonary vascular congestion
+T7	Medical-Problem 433 453	Left basilar opacity
+E6	Medical-Problem:T7
+T8	Medical-Assertion 454 472	potentially due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 473 484	atelectasis
+T10	Medical-Problem 525 534	pneumonia
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

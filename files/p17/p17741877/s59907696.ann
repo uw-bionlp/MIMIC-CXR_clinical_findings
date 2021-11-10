@@ -1,0 +1,29 @@
+T1	Medical-Problem 309 320	Obscuration
+T2	Medical-Anatomy 328 346	left hemidiaphragm
+T3	Medical-Assertion 347 364	may be related to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 365 376	atelectasis
+T5	Medical-Anatomy 385 394	left base
+T6	Medical-Problem 403 412	infection
+T7	Medical-Assertion 413 433	should be considered
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 442 448	may be
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 451 456;458 466	small effusion
+T10	Medical-Anatomy 474 483	left base
+T11	Medical-Assertion 486 488	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 489 501	pneumothorax
+T13	Medical-Problem 522 540	Left basal opacity
+E9	Medical-Problem:T13
+T14	Medical-Assertion 541 552	may reflect
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 553 564	atelectasis
+T16	Medical-Problem 568 577	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T14

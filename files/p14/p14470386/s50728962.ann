@@ -1,0 +1,37 @@
+T1	Medical-Problem 329 369	Bilateral multifocal pulmonary opacities
+T2	Medical-Anatomy 370 406	primarily in the bases, left greater
+T3	Medical-Problem 424 436	obscuring of
+E3	Medical-Problem:T3
+T4	Medical-Problem 468 486;488 496	Small left pleural effusion
+E4	Medical-Problem:T4
+T5	Medical-Problem 502 533	left retrocardiac consolidation
+E5	Medical-Problem:T5
+T6	Medical-Problem 546 556	Distention
+T7	Medical-Anatomy 565 576	azygos vein
+T8	Medical-Assertion 577 599	raises the possibility
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 603 618	volume overload
+T10	Medical-Problem 623 638;640 671	pulmonary edema superimposed on known infection
+T11	Medical-Assertion 683 685	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 686 698	pneumothorax
+T13	Medical-Problem 833 863	Bilateral multifocal opacities
+T14	Medical-Problem 869 889	increasing opacities
+T15	Medical-Anatomy 897 906;908 912	left lung base
+T16	Medical-Problem 914 941	small left pleural effusion
+E14	Medical-Problem:T16
+T17	Medical-Problem 947 978	left retrocardiac consolidation
+E15	Medical-Problem:T17
+T18	Medical-Problem 1018 1047	distention of the azygos vein
+E16	Medical-Problem:T18
+T19	Medical-Assertion 1048 1058;1060 1071	raises the possibility
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1075 1122	volume overload superimposed on known infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E17	Medical-Problem:T20 has-Medical-Assertion:T19

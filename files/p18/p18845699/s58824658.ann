@@ -1,0 +1,18 @@
+T1	Medical-Assertion 272 276	free
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 280 293	consolidation
+T3	Medical-Assertion 315 317	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 318 334	pleural effusion
+T5	Lesion-Assertion 352 354	No
+A3	Lesion-AssertionValue T5 absent
+T6	Lesion-Anatomy 355 366	mediastinal
+T7	Lesion-Description 367 371	mass
+T8	Medical-Anatomy 419 424	heart
+T9	Medical-Assertion 428 431	not
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 432 440	enlarged
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

@@ -1,0 +1,28 @@
+T1	Medical-Problem 169 194	postoperative alterations
+T2	Medical-Anatomy 202 207;209 220	right hemi thorax
+T3	Medical-Problem 307 328	Fibrotic lung disease
+E3	Medical-Problem:T3
+T4	Lesion-Characteristic 397 405	dominant
+T5	Lesion-Anatomy 406 421	left upper lobe
+T6	Lesion-Description 422 428	nodule
+T7	Lesion-Size 439 445	2.3 cm
+T8	Medical-Problem 568 585	worsening opacity
+T9	Medical-Anatomy 594 618	left retrocardiac region
+T10	Lesion-Anatomy 646 659	intrathoracic
+T11	Lesion-Description 661 676	lymphadenopathy
+T12	Lesion-Size-Trend 680 689	stable in
+A1	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 721 741	No definite evidence
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 745 769	congestive heart failure
+T15	Medical-Problem 772 797	Left retrocardiac opacity
+E13	Medical-Problem:T15
+T16	Medical-Assertion 799 826	could potentially represent
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 829 860	developing infectious pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E11	Lesion-Description:T11 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,38 @@
+T1	Medical-Problem 219 251	Diffuse hazy bilateral opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 252 265	may be due to
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 266 270;272 287	mild pulmonary edema
+T4	Medical-Problem 293 319	heart is slightly enlarged
+E3	Medical-Problem:T4
+T5	Medical-Problem 330 348;350 361	mild right basilar atelectasis
+E4	Medical-Problem:T5
+T6	Medical-Assertion 364 366	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 367 380	consolidation
+T8	Medical-Problem 382 398	pleural effusion
+T9	Medical-Problem 402 414	pneumothorax
+T10	Lesion-Characteristic 419 428	calcified
+T11	Lesion-Anatomy 430 446	right upper lobe
+T12	Lesion-Description 447 453	nodule
+T13	Lesion-Size-Trend 457 466	unchanged
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Assertion 538 540	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 541 566	acute osseous abnormality
+T16	Medical-Assertion 593 595	no
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 596 624	free air under the diaphragm
+T18	Medical-Problem 642 654	Cardiomegaly
+E13	Medical-Problem:T18
+T19	Medical-Assertion 656 664	Possible
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 665 688	mild interstitial edema
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

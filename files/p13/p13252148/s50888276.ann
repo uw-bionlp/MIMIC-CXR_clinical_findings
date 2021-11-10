@@ -1,0 +1,22 @@
+T1	Medical-Problem 378 390	Hyperlucency
+T2	Medical-Anatomy 398 409	upper lungs
+T3	Medical-Assertion 413 421	probably
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 422 431	emphysema
+T5	Medical-Problem 439 450	atelectasis
+T6	Medical-Assertion 451 453	or
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 455 466	early edema
+T8	Medical-Anatomy 485 496	lower lungs
+T9	Medical-Problem 499 506	Pleural
+E7	Medical-Problem:T9
+T10	Medical-Problem 507 533	effusion small on the left
+E8	Medical-Problem:T10
+T11	Medical-Assertion 544 546	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 547 559	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

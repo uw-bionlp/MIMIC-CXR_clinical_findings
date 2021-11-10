@@ -1,0 +1,23 @@
+T1	Medical-Assertion 290 292	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 293 309	pleural effusion
+T3	Medical-Problem 313 325	pneumothorax
+T4	Medical-Anatomy 332 337	lungs
+T5	Medical-Problem 365 388	patchy lingular opacity
+T6	Medical-Problem 426 431;433 444	minor atelectasis
+T7	Medical-Problem 474 497	mild relative elevation
+E6	Medical-Problem:T7
+T8	Medical-Problem 577 604	Patchy left basilar opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 606 621	probably due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 622 639	minor atelectasis
+T11	Medical-Assertion 647 649	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 650 672	definite acute disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

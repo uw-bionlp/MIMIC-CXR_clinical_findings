@@ -1,0 +1,29 @@
+T1	Medical-Problem 337 347;349 358	multifocal opacities
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 372 388	right upper lobe
+T3	Lesion-Description 389 395	lesion
+T4	Medical-Anatomy 415 422	scapula
+T5	Medical-Assertion 454 465	may obscure
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 466 482	local hemorrhage
+T7	Medical-Assertion 514 516	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 517 529	pneumothorax
+T9	Medical-Problem 533 549	pleural effusion
+T10	Medical-Problem 556 580	aorta is stably tortuous
+E8	Medical-Problem:T10
+T11	Medical-Assertion 704 715	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 719 756	immediate post-procedure complication
+T13	Medical-Problem 810 827	occult hemorrhage
+T14	Medical-Anatomy 842 847;849 856	right scapula
+T15	Lesion-Count 863 871	Multiple
+T16	Lesion-Anatomy 872 876	lung
+T17	Lesion-Description 877 884	nodules
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Lesion-Description:T17 has-Lesion-Count:T15 has-Lesion-Anatomy:T16

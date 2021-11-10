@@ -1,0 +1,35 @@
+T1	Medical-Assertion 36 47	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 48 57	pneumonia
+T3	Medical-Problem 67 101	Mild pulmonary vascular congestion
+E2	Medical-Problem:T3
+T4	Medical-Problem 111 130	Stable cardiomegaly
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 505 530	central perihilar vessels
+T6	Medical-Assertion 531 548	likely represents
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 549 558;560 579	pulmonary vascular congestion
+T8	Medical-Assertion 590 592	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 593 612	focal consolidation
+T10	Medical-Problem 614 622	effusion
+T11	Medical-Problem 628 640	pneumothorax
+T12	Medical-Problem 643 655	Cardiomegaly
+E9	Medical-Problem:T12
+T13	Medical-Assertion 669 671	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 672 696	free air below the right
+T15	Medical-Assertion 810 818	evidence
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 819 828	pneumonia
+T17	Medical-Problem 842 871	pulmonary vascular congestion
+E12	Medical-Problem:T17
+T18	Medical-Problem 887 899	cardiomegaly
+E13	Medical-Problem:T18
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

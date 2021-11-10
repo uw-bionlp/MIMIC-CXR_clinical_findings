@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 199 210	aortic knob
+T2	Medical-Problem 214 233	minimally calcified
+T3	Medical-Problem 323 337	Patchy opacity
+T4	Medical-Anatomy 349 364	right lung base
+T5	Medical-Assertion 365 376	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 377 388	atelectasis
+T7	Medical-Problem 397 407	aspiration
+T8	Medical-Assertion 411 423	not excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 426 428	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 429 445	pleural effusion
+T11	Medical-Problem 449 461	pneumothorax
+T12	Medical-Assertion 483 485	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 486 513	acute osseous abnormalities
+T14	Medical-Problem 516 536	Degenerative changes
+T15	Medical-Anatomy 565 585	lower thoracic spine
+T16	Medical-Problem 588 613	Remote right rib fracture
+E12	Medical-Problem:T16
+T17	Medical-Problem 655 683	Patchy right basilar opacity
+E13	Medical-Problem:T17
+T18	Medical-Assertion 684 695	may reflect
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 696 707	atelectasis
+T20	Medical-Problem 712 722	aspiration
+T21	Medical-Assertion 726 729;731 739	not excluded
+A6	Medical-AssertionValue T21 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T21

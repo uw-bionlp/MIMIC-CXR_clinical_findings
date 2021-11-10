@@ -1,0 +1,19 @@
+T1	Medical-Problem 257 274	Change in contour
+T2	Medical-Anatomy 283 293	left hilus
+T3	Medical-Problem 359 376	bands of fibrosis
+T4	Medical-Anatomy 384 429	left lung anterior and posterior to the hilus
+T5	Medical-Assertion 494 496	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 497 508;510 526	appreciable pleural effusion
+T7	Medical-Problem 529 541	Slight bulge
+T8	Medical-Anatomy 549 587;589 603	pleural reflection over the descending thoracic aorta
+T9	Medical-Assertion 604 619	could be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 620 634	residual fluid
+T11	Medical-Problem 641 658;660 683	small residual of loculated pleural fluid
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

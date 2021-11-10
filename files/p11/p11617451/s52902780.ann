@@ -1,0 +1,22 @@
+T1	Medical-Problem 300 318	increasing opacity
+T2	Medical-Anatomy 326 350	right mid and lower lung
+T3	Medical-Problem 357 363;365 372	stable opacity
+T4	Medical-Anatomy 380 389	left lung
+T5	Medical-Problem 395 438	associated cephalization of the vasculature
+T6	Medical-Assertion 477 488	would favor
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 489 504	pulmonary edema
+T8	Medical-Problem 518 527	pneumonia
+T9	Medical-Assertion 564 566	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 567 574	pleural
+E8	Medical-Problem:T10
+T11	Medical-Problem 575 584	effusions
+T12	Medical-Problem 589 601	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9

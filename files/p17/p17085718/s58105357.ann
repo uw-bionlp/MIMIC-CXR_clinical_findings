@@ -1,0 +1,22 @@
+T1	Medical-Assertion 491 493	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 514 526	pneumothorax
+T3	Medical-Problem 529 541;543 556	Retrocardiac consolidation
+E2	Medical-Problem:T3
+T4	Medical-Problem 573 589	air bronchograms
+E3	Medical-Problem:T4
+T5	Medical-Problem 712 728	osseous injuries
+T6	Medical-Anatomy 743 752	manubrium
+T7	Medical-Anatomy 754 764	right ribs
+T8	Medical-Assertion 879 881	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 883 904	definite pneumothorax
+T10	Medical-Problem 972 992	retrocardiac opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 999 1020	could be secondary to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1021 1031	aspiration
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,31 @@
+T1	Medical-Assertion 201 203	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 205 221	pleural effusion
+T3	Medical-Problem 225 237	pneumothorax
+T4	Medical-Problem 240 261	Chain suture material
+T5	Medical-Anatomy 272 276;278 289	left mediastinum
+T6	Medical-Problem 334 353	soft tissue density
+T7	Medical-Anatomy 362 378	right upper lobe
+T8	Medical-Problem 520 551	Increased interstitial markings
+E7	Medical-Problem:T8
+T9	Medical-Problem 556 580	background emphysematous
+E8	Medical-Problem:T9
+T10	Medical-Assertion 617 619	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 620 643	new focal consolidation
+T12	Lesion-Characteristic 646 655	Sclerotic
+T13	Lesion-Description 657 664	lesions
+T14	Lesion-Anatomy 672 696	left glenoid and humerus
+T15	Lesion-Characteristic 713 727;729 738	not completely evaluated
+T16	Medical-Assertion 777 779	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 780 809	acute cardiopulmonary process
+T18	Medical-Problem 812 836	Right upper lobe density
+E15	Medical-Problem:T18
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14 has-Lesion-Characteristic:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

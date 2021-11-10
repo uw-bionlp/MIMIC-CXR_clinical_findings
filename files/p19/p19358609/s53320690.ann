@@ -1,0 +1,45 @@
+T1	Medical-Problem 356 386	multifocal bilateral opacities
+T2	Medical-Assertion 387 423	have essentially completely resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 437 458	Left pleural effusion
+T4	Medical-Assertion 459 487	has also completely resolved
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 490 498;500 532	Residual background emphysematous changes
+T6	Medical-Anatomy 555 571	right upper lung
+T7	Medical-Problem 578 586	scarring
+T8	Medical-Problem 591 609	pleural thickening
+T9	Medical-Problem 621 647;649 666	background post-left upper lobectomy changes
+E7	Medical-Problem:T9
+T10	Medical-Problem 672 707	elevation of the left hemidiaphragm
+E8	Medical-Problem:T10
+T11	Medical-Problem 742 750	Blunting
+T12	Medical-Anatomy 758 781	left costophrenic angle
+T13	Medical-Problem 792 811	thickening/scarring
+T14	Lesion-Characteristic 816 825	calcified
+T15	Lesion-Anatomy 826 835	perihilar
+T16	Lesion-Description 836 840	node
+T17	Lesion-Size-Trend 844 853	unchanged
+A3	Lesion-Size-TrendValue T17 no-change
+T18	Medical-Anatomy 891 916	descending thoracic aorta
+T19	Medical-Problem 920 937	slightly tortuous
+T20	Medical-Problem 952 974	Dextroconvex scoliosis
+T21	Medical-Anatomy 978 992	thoracic spine
+T22	Medical-Problem 1018 1053	similar distortion of thoracic cage
+T23	Medical-Problem 1056 1086	Prominent degenerative changes
+T24	Medical-Anatomy 1095 1109	thoracic spine
+T25	Medical-Assertion 1157 1176	Interval resolution
+A4	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1180 1189	pneumonia
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Assertion:T4
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E14	Lesion-Description:T16 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15 has-Lesion-Size-Trend:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21
+E19	Medical-Problem:T22 has-Medical-Anatomy:T21
+E20	Medical-Problem:T23 has-Medical-Anatomy:T24
+E22	Medical-Problem:T26 has-Medical-Assertion:T25

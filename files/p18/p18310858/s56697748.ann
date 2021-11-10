@@ -1,0 +1,37 @@
+T1	Medical-Problem 267 296	Bilateral hyperinflated lungs
+E1	Medical-Problem:T1
+T2	Medical-Assertion 297 304	suggest
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 305 314	emphysema
+T4	Medical-Assertion 317 319	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 320 343	discrete lung opacities
+T6	Medical-Assertion 345 359	concerning for
+A3	Medical-AssertionValue T6 possible
+T7	Medical-Problem 360 369	pneumonia
+T8	Medical-Problem 372 401	Biapical and minimal scarring
+T9	Medical-Anatomy 409 423	left lung base
+T10	Lesion-Assertion 449 451	no
+A4	Lesion-AssertionValue T10 absent
+T11	Medical-Problem 464 480	central or hilar
+E7	Medical-Problem:T11
+T12	Lesion-Description 481 496	lymphadenopathy
+T13	Medical-Problem 523 540	Biapical scarring
+E9	Medical-Problem:T13
+T14	Medical-Problem 569 598	Bilateral hyperexpanded lungs
+T15	Medical-Assertion 599 608	suggestsf
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Assertion 616 618	No
+A6	Medical-AssertionValue T16 absent
+T17	Medical-Problem 619 632;634 643	discrete lung opacities
+T18	Medical-Assertion 644 657	worrisome for
+A7	Medical-AssertionValue T18 possible
+T19	Medical-Problem 658 667	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Lesion-Description:T12 has-Lesion-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T15
+E11	Medical-Problem:T17 has-Medical-Assertion:T16
+E12	Medical-Problem:T19 has-Medical-Assertion:T16 has-Medical-Assertion:T18

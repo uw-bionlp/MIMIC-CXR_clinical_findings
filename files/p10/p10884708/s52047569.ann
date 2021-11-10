@@ -1,0 +1,20 @@
+T1	Medical-Problem 332 350	right pneumothorax
+T2	Medical-Assertion 351 354;356 364	has resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 373 395	right pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 420 436	Mild atelectasis
+T5	Medical-Anatomy 456 472	right lower lung
+T6	Lesion-Count 527 535	Multiple
+T7	Lesion-Description 536 542	masses
+T8	Lesion-Description 547 554	nodules
+T9	Lesion-Anatomy 558 562	both
+T10	Lesion-Anatomy 563 582	left and right lung
+T11	Lesion-Size-Trend 587 596	unchanged
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Medical-Problem 645 667	right pleural effusion
+E10	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Count:T6 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T11
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T11

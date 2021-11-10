@@ -1,0 +1,19 @@
+T1	Medical-Assertion 57 68	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 72 84	pneumothorax
+T3	Medical-Problem 619 635	size is enlarged
+E2	Medical-Problem:T3
+T4	Medical-Problem 650 686	persistent left retrocardiac opacity
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 722 726;728 733	lung bases
+T6	Medical-Assertion 738 744	likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 747 774	left-sided pleural effusion
+T8	Medical-Assertion 803 805	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 817 838	overt pulmonary edema
+T10	Medical-Problem 842 856	pneumothoraces
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8

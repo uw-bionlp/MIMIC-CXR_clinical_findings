@@ -1,0 +1,42 @@
+T1	Medical-Assertion 38 40	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 41 63	focal airspace opacity
+T3	Medical-Problem 75 95	aspiration pneumonia
+T4	Medical-Problem 99 110	Enlargement
+T5	Medical-Anatomy 118 129	right hilum
+T6	Lesion-Assertion 130 133	may
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Description 171 186	lymphadenopathy
+T8	Medical-Problem 199 248;250 254	small amount of pneumoperitoneum and subcutaneous  air
+T9	Medical-Anatomy 262 267	chest
+T10	Medical-Assertion 324 326	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 329 341	pneumothorax
+T12	Medical-Problem 343 359	pleural effusion
+T13	Medical-Problem 364 379	pulmonary edema
+T14	Medical-Assertion 795 797;799 807	no evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 811 830	vascular congestion
+T16	Medical-Problem 834 855	acute focal pneumonia
+T17	Lesion-Anatomy 858 869	Right hilar
+T18	Medical-Problem 871 882	enlargement
+T19	Medical-Assertion 884 888	most
+A5	Medical-AssertionValue T19 possible
+T20	Lesion-Description 931 946	lymphadenopathy
+T21	Medical-Problem 999 1002	Gas
+T22	Medical-Anatomy 1013 1026;1028 1033	lateral chest walls
+T23	Medical-Problem 1038 1070	small amount of pneumoperitoneum
+E18	Medical-Problem:T23
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Lesion-Description:T7 has-Lesion-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T19
+E15	Lesion-Description:T20 has-Lesion-Anatomy:T17
+E16	Medical-Problem:T21 has-Medical-Anatomy:T22

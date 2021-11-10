@@ -1,0 +1,23 @@
+T1	Medical-Problem 275 280;282 293	focal eventration
+T2	Medical-Anatomy 301 319	left hemidiaphragm
+T3	Medical-Problem 347 353;355 375	subtle retrocardiac opacity
+E3	Medical-Problem:T3
+T4	Lesion-Characteristic 380 386	subtle
+T5	Lesion-Description 387 402	nodular opacity
+T6	Lesion-Anatomy 410 425	right lung base
+T7	Lesion-Characteristic 481 494	indeterminate
+T8	Medical-Assertion 497 508	No definite
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 519 528	pneumonia
+T10	Medical-Problem 532 535	CHF
+T11	Medical-Problem 645 666;668 676	degenerative anterior spurring
+T12	Medical-Anatomy 684 698	thoracic spine
+T13	Lesion-Characteristic 716 722	Subtle
+T14	Lesion-Description 723 738	nodular opacity
+T15	Lesion-Anatomy 746 761	right lung base
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15

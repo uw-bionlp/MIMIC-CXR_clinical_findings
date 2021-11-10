@@ -1,0 +1,30 @@
+T1	Lesion-Description 384 391;393 402	Nodular opacities
+T2	Lesion-Anatomy 410 424	left lung base
+T3	Medical-Problem 491 500	opacities
+T4	Medical-Anatomy 515 530	right lung base
+T5	Medical-Assertion 535 538;540 549	not well seen
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 588 603	mild thickening
+T7	Medical-Anatomy 612 630	horizontal fissure
+T8	Medical-Assertion 642 644	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 645 667	large pleural effusion
+T10	Medical-Problem 671 683	pneumothorax
+T11	Medical-Assertion 692 698	may be
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 701 729	trace right pleural effusion
+T13	Lesion-Anatomy 750 765	Left lower lobe
+T14	Lesion-Description 766 783	nodular densities
+T15	Medical-Problem 852 878	Right lower lobe densities
+E12	Medical-Problem:T15
+T16	Medical-Assertion 934 936	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 937 946	pneumonia
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T14 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

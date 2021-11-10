@@ -1,0 +1,33 @@
+T1	Medical-Problem 274 301	diffuse bilateral opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 306 345	prominence of the interstitial markings
+E2	Medical-Problem:T2
+T3	Medical-Problem 353 381	areas of more patchy opacity
+T4	Medical-Anatomy 399 408	left base
+T5	Medical-Assertion 411 413	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 414 421;423 431	pleural effusion
+T7	Medical-Problem 435 447	septal lines
+T8	Lesion-Anatomy 490 501	mediastinal
+T9	Lesion-Description 503 509	masses
+T10	Medical-Problem 537 556	degenerative change
+T11	Medical-Anatomy 564 578	thoracic spine
+T12	Medical-Assertion 582 584	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 585 597	pneumothorax
+T14	Medical-Problem 656 674	atypical pneumonia
+E12	Medical-Problem:T14
+T15	Medical-Problem 689 704	pulmonary edema
+T16	Medical-Assertion 705 716	could cause
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Assertion 769 773	lack
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 777 794	pleural effusions
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

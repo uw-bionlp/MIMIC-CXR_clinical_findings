@@ -1,0 +1,63 @@
+T1	Lesion-Count 301 309	Multiple
+T2	Lesion-Anatomy 310 329	bilateral pulmonary
+T3	Lesion-Description 330 337	nodules
+T4	Lesion-Anatomy 386 397	left apical
+T5	Lesion-Characteristic 398 409	soft tissue
+T6	Lesion-Description 410 414	mass
+T7	Lesion-Size-Trend 418 435;437 452	not significantly changed in size
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Lesion-Description 508 512	mass
+E7	Lesion-Description:T8
+T9	Medical-Problem 521 539	marked destruction
+T10	Medical-Anatomy 547 589;591 605	posterolateral portions of the left second and third ribs
+T11	Lesion-Size 619 626	Smaller
+T12	Lesion-Anatomy 627 639	right apical
+T13	Lesion-Description 640 646	nodule
+T14	Lesion-Anatomy 672 689	posterior 4th rib
+T15	Medical-Problem 715 746	moderate right pleural effusion
+E14	Medical-Problem:T15
+T16	Medical-Problem 899 907	effusion
+E15	Medical-Problem:T16
+T17	Medical-Problem 942 955;957 966	Heterogeneous opacities
+T18	Medical-Anatomy 974 989	right lung base
+T19	Medical-Assertion 994 1013	likely secondary to
+A2	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1014 1025;1027 1038	compressive atelectasis
+T21	Medical-Problem 1051 1073	concomitant infiltrate
+T22	Medical-Assertion 1074 1092	cannot be excluded
+A3	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1105 1140	minimal left lower lung atelectasis
+E20	Medical-Problem:T23
+T24	Medical-Assertion 1152 1154	no
+A4	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1155 1176;1178 1186	definite left pleural effusion
+T26	Medical-Assertion 1264 1266	no
+A5	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1267 1279	pneumothorax
+T28	Medical-Problem 1301 1332	Moderate right pleural effusion
+E23	Medical-Problem:T28
+T29	Medical-Problem 1409 1449	Right lower lung compressive atelectasis
+E24	Medical-Problem:T29
+T30	Medical-Problem 1452 1473	Concomitant infection
+T31	Medical-Anatomy 1482 1497	right lung base
+T32	Medical-Assertion 1498 1516	cannot be excluded
+A6	Medical-AssertionValue T32 possible
+T33	Lesion-Anatomy 1525 1544	Bilateral pulmonary
+T34	Lesion-Description 1545 1552	nodules
+T35	Lesion-Size 1557 1562	large
+T36	Lesion-Anatomy 1563 1574	left apical
+T37	Lesion-Characteristic 1575 1586	soft tissue
+T38	Lesion-Description 1587 1591	mass
+T39	Lesion-Characteristic 1598 1622	adjacent rib destruction
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5 has-Lesion-Size-Trend:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T12 has-Lesion-Anatomy:T14
+E16	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E19	Medical-Problem:T21 has-Medical-Anatomy:T18 has-Medical-Assertion:T22
+E21	Medical-Problem:T25 has-Medical-Assertion:T24
+E22	Medical-Problem:T27 has-Medical-Assertion:T26
+E25	Medical-Problem:T30 has-Medical-Anatomy:T31 has-Medical-Assertion:T32
+E28	Lesion-Description:T34 has-Lesion-Anatomy:T33
+E32	Lesion-Description:T38 has-Lesion-Size-Present:T35 has-Lesion-Anatomy:T36 has-Lesion-Characteristic:T37 has-Lesion-Characteristic:T39

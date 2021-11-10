@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 390 395	lungs
+T2	Medical-Problem 400 420	mildly hyperinflated
+T3	Medical-Problem 432 448	minimal scarring
+T4	Medical-Anatomy 456 463;465 479	base of the right lung
+T5	Medical-Assertion 491 502	no evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 506 515	pneumonia
+T7	Lesion-Size 534 539	small
+T8	Lesion-Anatomy 541 557	right lower lobe
+T9	Lesion-Description 558 564	nodule
+T10	Lesion-Size-Trend 566 589	unchanged in appearance
+A2	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 722 729	without
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 730 738	effusion
+T13	Medical-Problem 742 754	pneumothorax
+T14	Medical-Assertion 778 789	No evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 793 802	pneumonia
+T16	Medical-Problem 806 821	pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14

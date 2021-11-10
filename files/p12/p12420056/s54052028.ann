@@ -1,0 +1,39 @@
+T1	Medical-Problem 211 239	lung volumes are overall low
+E1	Medical-Problem:T1
+T2	Medical-Problem 250 283;285 298	persistent elevation of the right hemidiaphragm
+E2	Medical-Problem:T2
+T3	Medical-Problem 333 350	increased opacity
+T4	Medical-Anatomy 358 362;364 383	left lower lobe/ lingula
+T5	Medical-Assertion 478 491	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 492 503	atelectasis
+T7	Medical-Assertion 516 518	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 519 538	lobar consolidation
+T9	Medical-Assertion 541 543	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 544 561	pleural effusions
+T11	Medical-Problem 609 621	Degenerative
+E8	Medical-Problem:T11
+T12	Medical-Problem 622 629	changes
+T13	Medical-Anatomy 637 651	thoracic spine
+T14	Medical-Problem 710 757	persistent elevation of the right hemidiaphragm
+E11	Medical-Problem:T14
+T15	Medical-Assertion 787 789	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 790 807	new consolidation
+T17	Medical-Problem 811 826	pulmonary edema
+T18	Medical-Problem 836 850	linear opacity
+T19	Medical-Anatomy 858 882	left lower lobe/ lingula
+T20	Medical-Assertion 905 911;913 923	likely represents
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 924 935	atelectasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20

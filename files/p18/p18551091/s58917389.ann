@@ -1,0 +1,32 @@
+T1	Medical-Problem 280 300	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 333 350	streaky opacities
+T3	Medical-Anatomy 354 370	both lower lungs
+T4	Medical-Assertion 375 393	most suggestive of
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 395 428	minor vague bibasilar atelectasis
+T6	Medical-Problem 437 446	opacities
+T7	Medical-Assertion 456 467	not present
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 563 591	hemidiaphragms are flattened
+E6	Medical-Problem:T8
+T9	Medical-Problem 594 614	Degenerative changes
+T10	Medical-Anatomy 625 628;630 644	mid thoracic spine
+T11	Medical-Problem 650 688	small-to-moderate anterior osteophytes
+T12	Medical-Problem 716 771	similar mild rightward convex thoracic spinal curvature
+E10	Medical-Problem:T12
+T13	Medical-Problem 789 816	Streaky bibasilar opacities
+E11	Medical-Problem:T13
+T14	Medical-Assertion 839 854;856 858	most suggestive of
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 859 876	minor atelectasis
+T16	Medical-Problem 887 905	infectious process
+T17	Medical-Assertion 909 932;934 941	difficult to completely exclude
+A4	Medical-AssertionValue T17 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T17

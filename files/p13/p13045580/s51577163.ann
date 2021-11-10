@@ -1,0 +1,26 @@
+T1	Medical-Problem 333 372	diffuse bilateral parenchymal opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 378 389	engorgement
+T3	Medical-Anatomy 397 401	hila
+T4	Medical-Assertion 403 416	suggestive of
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 417 432	pulmonary edema
+T6	Medical-Problem 450 454	ARDS
+E5	Medical-Problem:T6
+T7	Medical-Problem 458 477	bilateral infection
+T8	Medical-Problem 497 515	Layering effusions
+T9	Medical-Assertion 522 530	possible
+A2	Medical-AssertionValue T9 possible
+T10	Lesion-Description 544 559	nodular opacity
+T11	Lesion-Anatomy 572 586	right mid lung
+T12	Lesion-Characteristic 590 595	dense
+T13	Lesion-Characteristic 598 619	potentially calcified
+T14	Medical-Assertion 665 667	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 668 673;675 694	acute osseous abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T11 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

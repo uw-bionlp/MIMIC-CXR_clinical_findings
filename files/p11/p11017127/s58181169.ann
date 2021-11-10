@@ -1,0 +1,26 @@
+T1	Medical-Problem 367 376	elevation
+T2	Medical-Anatomy 384 402	left hemidiaphragm
+T3	Medical-Problem 425 432	opacity
+T4	Medical-Anatomy 440 455	left lower lung
+T5	Medical-Assertion 462 479	likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 480 491	atelectasis
+T7	Medical-Problem 503 525	associated volume loss
+T8	Medical-Assertion 533 553	difficult to exclude
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 556 565	pneumonia
+T10	Medical-Problem 705 718	basal opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 719 725	likely
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 726 737	atelectasis
+T13	Medical-Assertion 745 765	difficult to exclude
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 766 775	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

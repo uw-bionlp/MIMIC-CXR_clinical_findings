@@ -1,0 +1,30 @@
+T1	Lesion-Size 33 38	large
+T2	Lesion-Anatomy 39 49	right lung
+T3	Lesion-Description 50 54	mass
+T4	Lesion-Size-Trend 56 74	probably unchanged
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Medical-Problem 171 181;183 193	right lung  pneumonia
+E4	Medical-Problem:T5
+T6	Medical-Assertion 199 201	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 202 213	new opacity
+T8	Lesion-Anatomy 566 571	right
+T9	Lesion-Description 572 576	mass
+T10	Lesion-Characteristic 582 592	associated
+T11	Medical-Problem 621 637	pleural effusion
+E9	Medical-Problem:T11
+T12	Lesion-Size-Trend 641 650	unchanged
+A3	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 713 724	no evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 728 753	new parenchymal opacities
+T15	Medical-Problem 769 778	pneumonia
+T16	Medical-Assertion 874 876	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 877 889	pneumothorax
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T10 has-Lesion-Size-Trend:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

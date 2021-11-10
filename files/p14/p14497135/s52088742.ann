@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 73 102;104 115	cardiac silhouette left lower  hemithorax
+T2	Medical-Assertion 117 125	could be
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 178 183	tooth
+T4	Medical-Problem 784 799;801 808	3-mm radiopaque density
+T5	Medical-Anatomy 829 852	left cardiac silhouette
+T6	Medical-Assertion 924 937	may represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 976 981	tooth
+T8	Medical-Assertion 985 988	not
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 1049 1051	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 1052 1071	focal consolidation
+T11	Medical-Problem 1073 1089	pleural effusion
+T12	Medical-Problem 1094 1106	pneumothorax
+T13	Medical-Anatomy 1122 1129	cardiac
+T14	Medical-Problem 1144 1171	mild-to-moderately enlarged
+T15	Medical-Problem 1178 1186;1188 1197	aorta is calcified
+E11	Medical-Problem:T15
+T16	Medical-Assertion 1357 1365	could be
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1406 1411	tooth
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Anatomy:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,21 @@
+T1	Medical-Problem 173 186	New opacities
+T2	Medical-Anatomy 194 199;201 216	right midlung opacity
+T3	Medical-Anatomy 235 278;280 321	superior segment of the right lower lobe or posterior segment of the right upper lobe
+T4	Medical-Assertion 326 340	concerning for
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 341 350	pneumonia
+T6	Medical-Assertion 363 365	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 366 382	pleural effusion
+T8	Medical-Problem 386 398	pneumothorax
+T9	Medical-Problem 405 429	heart is stably enlarged
+E7	Medical-Problem:T9
+T10	Medical-Problem 436 453	post CABG changes
+E8	Medical-Problem:T10
+T11	Medical-Problem 470 479	Pneumonia
+T12	Medical-Anatomy 494 535;537 580	posterior segment of the right upper lobe or superior segment of the right lower lobe
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12

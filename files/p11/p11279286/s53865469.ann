@@ -1,0 +1,32 @@
+T1	Medical-Problem 42 80	Subtle peripheral wedge-shaped density
+T2	Medical-Anatomy 88 105	right middle lobe
+T3	Lesion-Description 125 129	mass
+E3	Lesion-Description:T3
+T4	Lesion-Description 185 192	nodules
+E4	Lesion-Description:T4
+T5	Medical-Assertion 224 226	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 227 239	pneumothorax
+T7	Medical-Problem 280 318	Subtle peripheral wedge-shaped density
+T8	Medical-Anatomy 326 343	right middle lobe
+T9	Lesion-Description 363 367	mass
+E8	Lesion-Description:T9
+T10	Lesion-Description 423 430	nodules
+E9	Lesion-Description:T10
+T11	Medical-Assertion 462 464	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 465 477	pneumothorax
+T13	Medical-Assertion 798 809	no evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 813 827;829 841	post procedure pneumothorax
+T15	Medical-Problem 844 867	Increased opacification
+E12	Medical-Problem:T15
+T16	Lesion-Anatomy 875 898	right infrahilar region
+T17	Lesion-Anatomy 929 940	middle lobe
+T18	Lesion-Description 941 945	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T17

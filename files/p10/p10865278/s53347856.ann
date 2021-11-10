@@ -1,0 +1,27 @@
+T1	Medical-Problem 558 585;587 597	moderate pulmonary vascular congestion
+E1	Medical-Problem:T1
+T2	Medical-Problem 600 616	Minimal blunting
+T3	Medical-Anatomy 624 648	right costophrenic angle
+T4	Medical-Assertion 649 662	may be due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 666 680	trace effusion
+T6	Medical-Problem 683 713	Left base retrocardiac opacity
+E5	Medical-Problem:T6
+T7	Medical-Assertion 714 736	most likely represents
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 738 749	atelectasis
+T9	Medical-Assertion 751 762	less likely
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 763 776	consolidation
+T11	Medical-Assertion 790 792	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 793 807;809 822	definite focal consolidation
+T13	Medical-Assertion 842 844	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 845 857	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

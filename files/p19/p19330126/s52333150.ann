@@ -1,0 +1,42 @@
+T1	Lesion-Count 294 301	several
+T2	Lesion-Anatomy 302 311	pulmonary
+T3	Lesion-Description 312 319	nodules
+T4	Lesion-Anatomy 397 408	right hilar
+T5	Lesion-Description 409 413	mass
+T6	Lesion-Description 419 425	lesion
+T7	Lesion-Anatomy 433 457	left posterior fifth rib
+T8	Lesion-Size-Trend 471 486	grossly similar
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Assertion 489 491	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 492 495;497 510	new focal opacity
+T11	Medical-Problem 522 531	pneumonia
+T12	Medical-Assertion 542 544	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 545 561	pleural effusion
+T14	Medical-Problem 563 572;574 579	pulmonary edema
+T15	Medical-Problem 584 596	pneumothorax
+T16	Medical-Problem 612 639	small amount of atelectasis
+T17	Medical-Problem 643 651	scarring
+T18	Medical-Anatomy 671 681	right base
+T19	Lesion-Description 781 785	mass
+E16	Lesion-Description:T19
+T20	Lesion-Anatomy 790 804	left-sided rib
+T21	Lesion-Description 806 812	lesion
+T22	Medical-Assertion 815 817	No
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 818 835	new focal opacity
+T24	Medical-Problem 847 873	superimposed acute process
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Anatomy:T18
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Lesion-Description:T21 has-Lesion-Anatomy:T20
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T24 has-Medical-Assertion:T22

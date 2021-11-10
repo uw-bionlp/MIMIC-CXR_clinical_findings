@@ -1,0 +1,28 @@
+T1	Medical-Problem 301 323	subtle interval change
+E1	Medical-Problem:T1
+T2	Medical-Problem 432 448	minimal blunting
+T3	Medical-Anatomy 452 475	left costophrenic angle
+T4	Medical-Problem 480 494	patchy opacity
+T5	Medical-Anatomy 503 512	left base
+T6	Medical-Assertion 519 530	may reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 548 559	atelectasis
+T8	Medical-Problem 567 575	scarring
+T9	Medical-Problem 597 611	small effusion
+T10	Medical-Problem 615 641	chronic pleural thickening
+T11	Medical-Problem 647 652;654 672	early infectious process
+T12	Medical-Assertion 673 698	should also be considered
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 740 742	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 743 758	pulmonary edema
+T15	Medical-Problem 762 774	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E10	Medical-Problem:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

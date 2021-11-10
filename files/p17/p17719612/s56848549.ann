@@ -1,0 +1,39 @@
+T1	Medical-Problem 100 110	pneumonia?
+E1	Medical-Problem:T1
+T2	Medical-Problem 243 269	aorta is slightly tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 333 357	Heart is mildly enlarged
+E3	Medical-Problem:T3
+T4	Medical-Problem 365 375	background
+E4	Medical-Problem:T4
+T5	Medical-Problem 379 393;395 400	mild pulmonary edema
+E5	Medical-Problem:T5
+T6	Medical-Problem 405 421	low lung volumes
+E6	Medical-Problem:T6
+T7	Medical-Problem 433 472;474 483	bibasilar opacifications, right greater than left
+E7	Medical-Problem:T7
+T8	Medical-Assertion 485 491	likely
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 492 503	atelectasis
+T10	Medical-Problem 513 522	pneumonia
+T11	Medical-Assertion 523 542	can not be excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 544 548;550 570	Mild degenerative changes
+T13	Medical-Anatomy 574 588	thoracic spine
+T14	Medical-Problem 610 630	Mild pulmonary edema
+E12	Medical-Problem:T14
+T15	Medical-Problem 633 654	Basilar opacification
+E13	Medical-Problem:T15
+T16	Medical-Assertion 656 669	may be due to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 670 681	atelectasis
+T18	Medical-Problem 684 697	consolidation
+T19	Medical-Assertion 698 710	not excluded
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 713 733	Elevated/eventration
+E16	Medical-Problem:T20
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8 has-Medical-Assertion:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16 has-Medical-Assertion:T19

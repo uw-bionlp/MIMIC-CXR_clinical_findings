@@ -1,0 +1,50 @@
+T1	Lesion-Size 204 209	12 mm
+T2	Lesion-Description 211 218	nodular
+T3	Lesion-Description 219 226	opacity
+T4	Lesion-Anatomy 234 281;283 307	medial aspect of right lower lung overlying the posterior end of 8th rib
+T5	Lesion-Assertion 311 325	concerning for
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 331 337	nodule
+T7	Lesion-Description 418 424	lesion
+E6	Lesion-Description:T7
+T8	Medical-Problem 485 501	Mild atelectasis
+T9	Medical-Anatomy 521 535	left lung base
+T10	Lesion-Count 538 541	Few
+T11	Lesion-Size 542 546	tiny
+T12	Lesion-Characteristic 548 560	well-defined
+T13	Lesion-Description 562 569	nodular
+T14	Lesion-Description 570 579	opacities
+T15	Lesion-Anatomy 588 604	right upper lung
+T16	Lesion-Assertion 609 615	likely
+A2	Lesion-AssertionValue T16 possible
+T17	Lesion-Characteristic 616 625	calcified
+T18	Lesion-Description 626 636	granulomas
+T19	Medical-Assertion 649 651	no
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 652 656;658 678	lung opacities concerning
+T21	Medical-Problem 683 692	pneumonia
+E18	Medical-Problem:T21
+T22	Lesion-Size 773 778	12 mm
+T23	Lesion-Description 779 786	nodular
+E20	Lesion-Description:T23
+T24	Lesion-Description 787 794	opacity
+T25	Lesion-Anatomy 802 846	right lower lung overlying posterior 8th rib
+T26	Lesion-Description 943 949	nodule
+E23	Lesion-Description:T26
+T27	Lesion-Anatomy 953 956	rib
+T28	Lesion-Description 957 963	lesion
+T29	Lesion-Count 972 980	Multiple
+T30	Lesion-Characteristic 981 990	calcified
+T31	Lesion-Description 991 1001	granulomas
+T32	Lesion-Anatomy 1005 1021	right upper lung
+E2	Lesion-Description:T2 has-Lesion-Size-Present:T1
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E12	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Characteristic:T12
+E13	Lesion-Description:T14 has-Lesion-Count:T10 has-Lesion-Anatomy:T15
+E16	Lesion-Description:T18 has-Lesion-Anatomy:T15 has-Lesion-Assertion:T16 has-Lesion-Characteristic:T17
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E21	Lesion-Description:T24 has-Lesion-Size-Present:T22 has-Lesion-Anatomy:T25
+E25	Lesion-Description:T28 has-Lesion-Anatomy:T27
+E28	Lesion-Description:T31 has-Lesion-Count:T29 has-Lesion-Characteristic:T30 has-Lesion-Anatomy:T32

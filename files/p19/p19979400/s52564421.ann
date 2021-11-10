@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 281 286	lungs
+T2	Medical-Assertion 291 296	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 300 313	consolidation
+T4	Medical-Problem 315 323	effusion
+T5	Medical-Problem 328 333	edema
+T6	Lesion-Count 336 339	Two
+T7	Lesion-Characteristic 340 349	calcified
+T8	Lesion-Description 351 358	nodules
+T9	Lesion-Anatomy 376 420	left mid lung and right upper lung laterally
+T10	Lesion-Assertion 426 432	likely
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 433 442	calcified
+T12	Lesion-Description 443 453	granulomas
+T13	Medical-Assertion 516 518	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 519 546	acute osseous abnormalities
+T15	Medical-Assertion 567 569	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 570 599	acute cardiopulmonary process
+T17	Medical-Problem 602 624	Two calcific densities
+T18	Medical-Anatomy 646 651	lungs
+T19	Medical-Anatomy 662 677	right lung apex
+T20	Medical-Anatomy 693 706	left mid lung
+T21	Medical-Assertion 707 720	suggestive of
+A5	Medical-AssertionValue T21 possible
+T22	Lesion-Characteristic 722 731	calcified
+T23	Lesion-Description 732 742	granulomas
+T24	Medical-Problem 761 788	prior granulomatous disease
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E7	Lesion-Description:T8 has-Lesion-Count:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T9 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18 has-Medical-Anatomy:T19
+E18	Lesion-Description:T23 has-Lesion-Characteristic:T22
+E19	Medical-Problem:T24 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

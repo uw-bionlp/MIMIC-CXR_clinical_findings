@@ -1,0 +1,23 @@
+T1	Lesion-Anatomy 248 263	Right perihilar
+T2	Lesion-Description 264 268	mass
+T3	Medical-Problem 273 295	peripheral atelectasis
+T4	Medical-Anatomy 304 320	right upper lobe
+T5	Lesion-Description 390 394	mass
+E5	Lesion-Description:T5
+T6	Medical-Assertion 406 408	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 409 421	pneumothorax
+T8	Medical-Problem 425 441	pleural effusion
+T9	Medical-Problem 454 462	scarring
+T10	Medical-Problem 466 477	atelectasis
+T11	Medical-Anatomy 485 501	right lower lobe
+T12	Lesion-Count 504 512	multiple
+T13	Lesion-Anatomy 513 527	bilateral lung
+T14	Lesion-Description 529 536	nodules
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T11
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E13	Lesion-Description:T14 has-Lesion-Count:T12 has-Lesion-Anatomy:T13

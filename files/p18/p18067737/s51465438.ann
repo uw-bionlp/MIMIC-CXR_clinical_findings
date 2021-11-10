@@ -1,0 +1,13 @@
+T1	Medical-Anatomy 678 704	left lateral pleural sinus
+T2	Medical-Problem 722 747	blunting pleural effusion
+T3	Medical-Problem 751 790	Volume of left hemithorax still remains
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 922 937	paramediastinal
+T5	Lesion-Description 938 942	mass
+T6	Lesion-Anatomy 950 965	left hilar area
+T7	Medical-Assertion 1098 1100	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 1101 1113	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7

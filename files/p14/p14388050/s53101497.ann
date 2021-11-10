@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 307 316	LEFT LUNG
+T2	Medical-Problem 320 335	NEWLY COLLAPSED
+T3	Medical-Problem 348 374	LEFTWARD MEDIASTINAL SHIFT
+T4	Medical-Assertion 382 397	COULD BE DUE TO
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 398 417	RETAINED SECRETIONS
+T6	Medical-Problem 421 438	RECENT ASPIRATION
+T7	Medical-Assertion 449 451	NO
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 453 486	APPRECIABLE LEFT PLEURAL EFFUSION
+T9	Medical-Problem 488 498	MILD EDEMA
+T10	Medical-Anatomy 519 530	RIGHT LOWER
+T11	Medical-Problem 558 566	FINDINGS
+E9	Medical-Problem:T11
+T12	Medical-Problem 590 601	SMALL RIGHT
+E10	Medical-Problem:T12
+T13	Medical-Problem 602 609;611 619	PLEURAL EFFUSION
+E11	Medical-Problem:T13
+T14	Medical-Assertion 631 633	NO
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 634 646	PNEUMOTHORAX
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

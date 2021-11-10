@@ -1,0 +1,25 @@
+T1	Medical-Problem 193 228	cardiac silhouette remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 231 249	Right base opacity
+T3	Medical-Assertion 250 261;263 273	most likely represents
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 274 285	atelectasis
+T5	Medical-Anatomy 286 320	adjacent to the cardiac silhouette
+T6	Medical-Assertion 326 334	possible
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 336 352	adjacent fat pad
+T8	Medical-Assertion 370 372	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 373 396	new focal consolidation
+T10	Medical-Assertion 417 419	no
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 420 442	large pleural effusion
+T12	Medical-Problem 446 458	pneumothorax
+T13	Medical-Problem 465 491;493 501	cardiac silhouette remains enlarged
+E9	Medical-Problem:T13
+E2	Medical-Problem:T2 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T10

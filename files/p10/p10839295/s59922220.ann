@@ -1,0 +1,35 @@
+T1	Medical-Assertion 317 325	resolved
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 326 341;343 352	left lower lobe pneumonia
+T3	Medical-Problem 363 401	diffuse reticular interstitial pattern
+E2	Medical-Problem:T3
+T4	Lesion-Count 426 434	multiple
+T5	Lesion-Anatomy 435 439	lung
+T6	Lesion-Description 440 447	nodules
+T7	Medical-Problem 450 481	Tracheal deviation to the right
+T8	Medical-Assertion 482 488	may be
+A2	Medical-AssertionValue T8 possible
+T9	Lesion-Anatomy 502 509	thyroid
+T10	Lesion-Description 510 516	nodule
+T11	Medical-Assertion 581 583	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 584 600	pleural effusion
+T13	Medical-Problem 604 616	pneumothorax
+T14	Medical-Assertion 641 649	Resolved
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 650 675	left lower lobe pneumonia
+T16	Medical-Problem 683 715	Diffuse interstitial abnormality
+T17	Medical-Assertion 721 731	suggestion
+A5	Medical-AssertionValue T17 possible
+T18	Lesion-Count 735 743	multiple
+T19	Lesion-Anatomy 744 753	pulmonary
+T20	Lesion-Description 755 762	nodules
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Count:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T17
+E15	Lesion-Description:T20 has-Lesion-Count:T18 has-Lesion-Anatomy:T19

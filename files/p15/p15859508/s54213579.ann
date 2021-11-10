@@ -1,0 +1,52 @@
+T1	Medical-Problem 297 303;305 312	linear opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 328 345	either represents
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 346 357	atelectasis
+T4	Lesion-Description 361 377	tumor recurrence
+E3	Lesion-Description:T4
+T5	Lesion-Assertion 433 435	No
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Size-Trend 436 439	new
+A3	Lesion-Size-TrendValue T6 new
+T7	Lesion-Description 440 447	opacity
+T8	Lesion-Description 451 457	nodule
+T9	Medical-Assertion 484 486	no
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 487 502	pulmonary edema
+T11	Medical-Problem 527 537;539 555	left-sided pleural effusion
+E7	Medical-Problem:T11
+T12	Medical-Problem 582 604	small pleural effusion
+E8	Medical-Problem:T12
+T13	Medical-Assertion 626 628	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 629 651	right pleural effusion
+T15	Medical-Assertion 663 665	no
+A6	Medical-AssertionValue T15 absent
+T16	Medical-Problem 666 678	pneumothorax
+T17	Medical-Problem 691 709	stable volume loss
+T18	Medical-Anatomy 717 733	right hemithorax
+T19	Medical-Problem 739 744	shift
+T20	Medical-Problem 917 930;932 940	small pleural effusion
+E14	Medical-Problem:T20
+T21	Medical-Assertion 952 954	No
+A7	Medical-AssertionValue T21 absent
+T22	Medical-Problem 955 967	pneumothorax
+T23	Medical-Problem 974 981	Opacity
+E16	Medical-Problem:T23
+T24	Medical-Anatomy 989 993	left
+T25	Lesion-Assertion 1088 1105	likely represents
+A8	Lesion-AssertionValue T25 possible
+T26	Lesion-Description 1124 1129	tumor
+T27	Medical-Problem 1137 1148	atelectasis
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Size-Trend:T6
+E5	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Size-Trend:T6
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T16 has-Medical-Assertion:T15
+E11	Medical-Problem:T17 has-Medical-Anatomy:T18
+E13	Medical-Problem:T19 has-Medical-Anatomy:T18
+E15	Medical-Problem:T22 has-Medical-Assertion:T21
+E18	Lesion-Description:T26 has-Lesion-Assertion:T25
+E19	Medical-Problem:T27 has-Medical-Anatomy:T24

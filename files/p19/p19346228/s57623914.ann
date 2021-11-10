@@ -1,0 +1,30 @@
+T1	Medical-Anatomy 290 297	Cardiac
+T2	Medical-Problem 357 362;364 377	large hiatal hernia
+T3	Medical-Problem 396 418	aorta remains tortuous
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 484 505	Pulmonary vasculature
+T5	Medical-Assertion 509 512	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 514 522	engorged
+T7	Medical-Problem 552 571	minimal atelectasis
+T8	Medical-Anatomy 579 589	lung bases
+T9	Medical-Assertion 593 595	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 596 612	pleural effusion
+T11	Medical-Problem 616 628	pneumothorax
+T12	Medical-Problem 642 662	Degenerative changes
+T13	Medical-Anatomy 671 697	imaged thoracolumbar spine
+T14	Medical-Problem 719 739	bridging osteophytes
+T15	Medical-Problem 760 779	Large hiatal hernia
+E13	Medical-Problem:T15
+T16	Medical-Assertion 782 784	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 785 814	acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

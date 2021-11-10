@@ -1,0 +1,35 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Medical-Assertion 356 358	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 359 378	focal consolidation
+T5	Medical-Problem 380 396	pleural effusion
+T6	Medical-Problem 400 412	pneumothorax
+T7	Medical-Anatomy 415 424	Left lung
+T8	Medical-Problem 426 438	base opacity
+T9	Medical-Assertion 439 461	most likely represents
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 462 473	atelectasis
+T11	Medical-Assertion 499 501	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 503 508	acute
+E8	Medical-Problem:T12
+T13	Medical-Problem 509 530	osseous abnormalities
+T14	Medical-Assertion 548 550	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 551 555	free
+T16	Medical-Problem 556 575;577 590	air under the right hemidiaphragm
+E11	Medical-Problem:T16
+T17	Medical-Assertion 611 613	No
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 614 619	acute
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T18 has-Medical-Assertion:T17

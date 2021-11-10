@@ -1,0 +1,23 @@
+T1	Medical-Problem 255 270	trace unfolding
+T2	Medical-Anatomy 278 298	thoracic aortic arch
+T3	Medical-Assertion 362 374	Questionable
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 375 379;381 394	3 cm ovoid density
+T5	Medical-Anatomy 402 416	left lung base
+T6	Medical-Problem 431 453	retrocardiac correlate
+E5	Medical-Problem:T6
+T7	Medical-Assertion 510 517	without
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 518 526	effusion
+T9	Medical-Problem 531 543	pneumothorax
+T10	Medical-Problem 546 579	Bones are diffusely demineralized
+E8	Medical-Problem:T10
+T11	Medical-Problem 600 632	Indeterminate 3 cm ovoid density
+T12	Medical-Anatomy 640 654	left lung base
+T13	Medical-Problem 670 682	retrocardiac
+E11	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12

@@ -1,0 +1,37 @@
+T1	Medical-Assertion 33 44	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 48 61	acute process
+T3	Lesion-Description 64 77	Nodular focus
+T4	Lesion-Anatomy 88 106	lateral right lung
+T5	Lesion-Assertion 123 131	possibly
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 132 136	true
+T7	Lesion-Description 137 143	nodule
+T8	Medical-Assertion 569 571	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 572 588	pleural effusion
+T10	Medical-Problem 592 604	pneumothorax
+T11	Medical-Problem 751 756	small
+E8	Medical-Problem:T11
+T12	Lesion-Description 757 764	nodular
+T13	Lesion-Anatomy 795 818	lateral right mid chest
+T14	Medical-Problem 847 868	true pulmonary nodule
+E11	Medical-Problem:T14
+T15	Medical-Problem 911 917;919 942	Patchy vascular calcifications
+T16	Medical-Anatomy 963 984	upper abdominal aorta
+T17	Medical-Problem 1031 1063;1065 1110	slight loss among lower thoracic vertebral body heights, which appears chronic
+E14	Medical-Problem:T17
+T18	Medical-Assertion 1130 1141	No evidence
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1145 1158	acute disease
+T20	Lesion-Anatomy 1170 1174	lung
+T21	Lesion-Description 1175 1181	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Lesion-Description:T12 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Lesion-Description:T21 has-Lesion-Anatomy:T20

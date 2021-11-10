@@ -1,0 +1,56 @@
+T1	Medical-Problem 208 223	volume overload
+T2	Medical-Assertion 224 230	versus
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 231 240	pneumonia
+T4	Medical-Problem 619 646	bilateral pleural densities
+E3	Medical-Problem:T4
+T5	Medical-Problem 705 741	increased pulmonary vascular pattern
+E4	Medical-Problem:T5
+T6	Medical-Problem 774 799	high positioned diaphragm
+E5	Medical-Problem:T6
+T7	Medical-Problem 800 851	very crowded appearance of the pulmonary structures
+E6	Medical-Problem:T7
+T8	Medical-Problem 867 893	Bilateral linear densities
+T9	Medical-Assertion 894 901	suggest
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 902 922	atelectatic portions
+T11	Medical-Anatomy 931 960	right base and mid lung field
+T12	Medical-Problem 994 1003;1005 1035	bilateral pleural effusions accumulating
+T13	Medical-Anatomy 1043 1061	posterior portions
+T14	Medical-Problem 1066 1074	blunting
+T15	Medical-Anatomy 1080 1089	dependent
+T16	Medical-Assertion 1199 1201	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1202 1214	pneumothorax
+T18	Medical-Anatomy 1237 1248	apical area
+T19	Medical-Problem 1420 1451	Deterioration of chest findings
+E16	Medical-Problem:T19
+T20	Medical-Problem 1467 1484;1486 1495	bilateral pleural effusions
+E17	Medical-Problem:T20
+T21	Medical-Problem 1596 1611	high-positioned
+E18	Medical-Problem:T21
+T22	Medical-Problem 1632 1636;1638 1663	poor inspirational performance
+E19	Medical-Problem:T22
+T23	Medical-Problem 1681 1712	Increasing pulmonary congestion
+E20	Medical-Problem:T23
+T24	Medical-Problem 1733 1742;1744 1760	bilateral pleural effusion
+E21	Medical-Problem:T24
+T25	Medical-Assertion 1761 1783	most likely related to
+A4	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1784 1787	CHF
+T27	Medical-Problem 1790 1815	Non-distended azygos vein
+E23	Medical-Problem:T27
+T28	Medical-Problem 1832 1854	general fluid overload
+E24	Medical-Problem:T28
+T29	Medical-Assertion 1859 1876	favors assumption
+A5	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1880 1894	left-sided CHF
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E7	Medical-Problem:T8 has-Medical-Anatomy:T11
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Anatomy:T18
+E22	Medical-Problem:T26 has-Medical-Assertion:T25
+E25	Medical-Problem:T30 has-Medical-Assertion:T29

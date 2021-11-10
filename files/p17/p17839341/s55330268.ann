@@ -1,0 +1,17 @@
+T1	Medical-Assertion 67 83	without evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 87 99	pneumothorax
+T3	Medical-Problem 598 613	Pulmonary edema
+T4	Medical-Assertion 614 626	has resolved
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 699 710	Atelectasis
+T6	Medical-Anatomy 718 728	lung bases
+T7	Medical-Problem 732 748;750 773	relatively mild, left greater than right
+E5	Medical-Problem:T7
+T8	Medical-Assertion 806 808	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 809 821	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T4
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

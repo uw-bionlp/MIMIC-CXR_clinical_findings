@@ -1,0 +1,34 @@
+T1	Medical-Anatomy 193 210	cardiomediastinal
+T2	Medical-Assertion 234 237	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 238 246	enlarged
+T4	Medical-Problem 259 280	bibasilar atelectasis
+E3	Medical-Problem:T4
+T5	Medical-Assertion 286 288	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 289 308	focal consolidation
+T7	Medical-Problem 312 333;335 342	pulmonary edema/heart failure
+T8	Medical-Assertion 354 356	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 357 373	pleural effusion
+T10	Medical-Problem 377 389	pneumothorax
+T11	Lesion-Characteristic 392 399	Rounded
+T12	Lesion-Size 400 406	5.5 mm
+T13	Lesion-Description 408 415	density
+T14	Lesion-Anatomy 421 447	left upper chest laterally
+T15	Lesion-Assertion 448 461	may represent
+A4	Lesion-AssertionValue T15 possible
+T16	Lesion-Description 464 475	bone island
+T17	Lesion-Description 480 489	granuloma
+T18	Medical-Assertion 530 532	no
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 533 562	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Lesion-Description:T13 has-Lesion-Characteristic:T11 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T14
+E12	Lesion-Description:T16 has-Lesion-Anatomy:T14 has-Lesion-Assertion:T15
+E13	Lesion-Description:T17 has-Lesion-Anatomy:T14 has-Lesion-Assertion:T15
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

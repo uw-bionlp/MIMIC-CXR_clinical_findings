@@ -1,0 +1,45 @@
+T1	Medical-Problem 192 216	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 231 255;257 271	prominent mitral annular calcifications
+E2	Medical-Problem:T2
+T3	Medical-Problem 274 303	Prominent soft tissue density
+T4	Medical-Anatomy 314 325;327 338	upper right mediastinum
+T5	Medical-Problem 341 359	Small hazy opacity
+T6	Medical-Anatomy 378 392	left lung base
+T7	Medical-Problem 394 400;402 443	Coarse interstitial lung markings appear chronic
+E7	Medical-Problem:T7
+T8	Medical-Assertion 445 447	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 448 464	pleural effusion
+T10	Medical-Problem 469 481	pneumothorax
+T11	Medical-Problem 483 529	Distal right clavicle fracture appears chronic
+E10	Medical-Problem:T11
+T12	Medical-Problem 553 576	Small left base opacity
+E11	Medical-Problem:T12
+T13	Medical-Assertion 577 590	may represent
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 591 600	pneumonia
+T15	Medical-Problem 604 614	aspiration
+T16	Medical-Problem 622 651	Prominent soft tissue density
+T17	Medical-Anatomy 665 688	upper right mediastinum
+T18	Medical-Assertion 689 692;694 703	may represent
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 704 725	tortuosity of vessels
+T20	Lesion-Anatomy 729 736	thyroid
+T21	Lesion-Description 737 743	lesion
+T22	Lesion-Anatomy 747 762	paramediastinal
+T23	Lesion-Description 763 767	mass
+T24	Lesion-Assertion 772 791	thought less likely
+A4	Lesion-AssertionValue T24 possible
+T25	Medical-Problem 861 878	Mild cardiomegaly
+E21	Medical-Problem:T25
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E18	Lesion-Description:T21 has-Lesion-Anatomy:T20
+E20	Lesion-Description:T23 has-Lesion-Anatomy:T22 has-Lesion-Assertion:T24

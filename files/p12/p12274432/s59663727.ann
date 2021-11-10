@@ -1,0 +1,28 @@
+T1	Medical-Problem 333 346;348 353	hyperexpanded lungs
+E1	Medical-Problem:T1
+T2	Medical-Problem 367 401	persistent increased opacification
+T3	Medical-Anatomy 409 424	bilateral bases
+T4	Medical-Problem 451 462	atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Problem 466 476	aspiration
+E5	Medical-Problem:T5
+T6	Medical-Problem 478 500	Superimposed infection
+T7	Medical-Assertion 502 520	cannot be excluded
+A1	Medical-AssertionValue T7 possible
+T8	Lesion-Count 740 748	multiple
+T9	Lesion-Characteristic 749 758	calcified
+T10	Lesion-Anatomy 759 772	left axillary
+T11	Lesion-Description 773 784	lymph nodes
+T12	Medical-Problem 789 809	degenerative changes
+T13	Medical-Anatomy 818 837	glenohumeral joints
+T14	Medical-Assertion 839 847	possibly
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 848 870	AVN right humeral head
+T16	Medical-Problem 873 889	Calcified plaque
+T17	Medical-Anatomy 906 930	left carotid bifurcation
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Assertion:T7
+E10	Lesion-Description:T11 has-Lesion-Count:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17

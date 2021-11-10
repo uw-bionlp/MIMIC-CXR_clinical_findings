@@ -1,0 +1,32 @@
+T1	Medical-Problem 33 54	Heterogeneous opacity
+T2	Medical-Anatomy 55 64	obscuring
+T3	Medical-Anatomy 65 82	left heart border
+T4	Medical-Assertion 83 96	may represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 97 108;110 123	overlapping  soft tissues
+T6	Medical-Problem 169 190	Heterogeneous opacity
+T7	Medical-Anatomy 191 200	obscuring
+T8	Medical-Anatomy 201 218	left heart border
+T9	Medical-Assertion 219 232	may represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 233 244;246 259	overlapping  soft tissues
+T11	Medical-Assertion 268 289	differential includes
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 290 308	lingular pneumonia
+T13	Medical-Assertion 743 745	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 746 762	pleural effusion
+T15	Medical-Problem 764 776	pneumothorax
+T16	Medical-Problem 781 786;788 801	focal consolidation
+T17	Medical-Assertion 882 884	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 885 918	acute cardiopulmonary abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T13
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

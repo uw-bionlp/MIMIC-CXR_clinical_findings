@@ -1,0 +1,19 @@
+T1	Medical-Problem 285 298	New opacities
+T2	Medical-Anatomy 306 331;333 342	lower lobes right greater than left
+T3	Medical-Assertion 343 351	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 352 363	atelectasis
+T5	Medical-Problem 368 390	superimposed infection
+T6	Medical-Assertion 391 409	cannot be excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 457 459	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 460 472	pneumothorax
+T9	Medical-Problem 492 517	small bilateral effusions
+E6	Medical-Problem:T9
+T10	Medical-Problem 528 552	mild vascular congestion
+E7	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7

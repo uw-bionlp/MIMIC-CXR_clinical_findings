@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 202 207	lungs
+T2	Medical-Problem 212 225	hyperinflated
+T3	Lesion-Anatomy 249 265	right lower lobe
+T4	Lesion-Description 266 272	nodule
+T5	Lesion-Size-Trend 310 327	increased in size
+A1	Lesion-Size-TrendValue T5 increasing
+T6	Medical-Problem 361 381	interval increase in
+E5	Medical-Problem:T6
+T7	Lesion-Anatomy 383 400	lower paratrachal
+E6	Lesion-Anatomy:T7
+T8	Lesion-Anatomy 419 430	mediastinum
+E7	Lesion-Anatomy:T8
+T9	Medical-Assertion 442 444	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 445 461	pleural effusion
+T11	Medical-Problem 466 478	pneumothorax
+T12	Medical-Problem 573 602	acute cardiopulmonary process
+E10	Medical-Problem:T12
+T13	Lesion-Anatomy 635 661	right lower lobe pulmonary
+T14	Lesion-Description 662 668	nodule
+T15	Lesion-Size-Trend 686 697	increase in
+A3	Lesion-Size-TrendValue T15 increasing
+T16	Lesion-Anatomy 698 715	lower paratrachal
+T17	Lesion-Description 716 726	adenopathy
+T18	Lesion-Anatomy 734 745	mediastinum
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T13
+E14	Lesion-Description:T17 has-Lesion-Size-Trend:T15 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T18

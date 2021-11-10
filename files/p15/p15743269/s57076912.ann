@@ -1,0 +1,21 @@
+T1	Medical-Problem 224 241	Pneumomediastinum
+E1	Medical-Problem:T1
+T2	Medical-Problem 269 290;292 300	Moderate left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 328 335	opacity
+T4	Medical-Anatomy 352 364;366 372	left cardiac border
+T5	Medical-Assertion 373 390	likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 391 402	atelectasis
+T7	Medical-Problem 408 421	consolidation
+T8	Medical-Assertion 425 437	not excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 442 462	Small pneumothoraces
+E7	Medical-Problem:T9
+T10	Medical-Problem 545 571	Improved pneumomediastinum
+E8	Medical-Problem:T10
+T11	Medical-Problem 578 608	Moderate left pleural effusion
+E9	Medical-Problem:T11
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8

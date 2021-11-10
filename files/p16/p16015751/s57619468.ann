@@ -1,0 +1,27 @@
+T1	Medical-Assertion 33 44	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 48 61	acute disease
+T3	Lesion-Description 64 77	Nodular focus
+T4	Lesion-Anatomy 98 107;109 114	right mid  lung
+T5	Medical-Assertion 586 588	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 589 605	pleural effusion
+T7	Medical-Problem 609 621	pneumothorax
+T8	Lesion-Characteristic 636 641	vague
+E6	Lesion-Characteristic:T8
+T9	Medical-Anatomy 676 689	right lateral
+E7	Medical-Anatomy:T9
+T10	Lesion-Characteristic 783 788	Vague
+T11	Lesion-Description 789 796	nodular
+E9	Lesion-Description:T11
+T12	Lesion-Description 797 804	opacity
+T13	Lesion-Anatomy 825 839	right mid lung
+T14	Medical-Assertion 971 982	No evidence
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 986 999	acute disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

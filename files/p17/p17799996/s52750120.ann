@@ -1,0 +1,42 @@
+T1	Medical-Assertion 350 352	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 353 372	displaced fractures
+T3	Medical-Problem 383 397	mild scoliosis
+T4	Medical-Anatomy 405 413;415 420	thoracic spine
+T5	Lesion-Assertion 423 425	No
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Characteristic 426 436	suspicious
+T7	Lesion-Characteristic 437 442	lytic
+T8	Lesion-Characteristic 446 455	sclerotic
+T9	Lesion-Description 456 463	lesions
+T10	Medical-Problem 475 490;492 509	small bilateral pleural effusions
+E8	Medical-Problem:T10
+T11	Medical-Problem 512 524	Hazy opacity
+T12	Medical-Anatomy 532 564	periphery of the left lower lung
+T13	Medical-Assertion 565 568;570 572	may be
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 573 584	atelectasis
+T15	Medical-Problem 588 596	scarring
+T16	Medical-Problem 599 620	Soft tissue densities
+T17	Medical-Anatomy 628 647;649 672	lateral chest wall, right greater than left
+T18	Lesion-Count 696 704	multiple
+T19	Lesion-Characteristic 705 713	enlarged
+T20	Lesion-Description 714 725	lymph nodes
+T21	Medical-Assertion 770 772	No
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 773 787	acute fracture
+T23	Medical-Problem 794 821	Bilateral pleural effusions
+E19	Medical-Problem:T23
+T24	Lesion-Description 828 842	Lymphadenopthy
+E20	Lesion-Description:T24
+T25	Medical-Anatomy 853 875	chest wall bilaterally
+E21	Medical-Anatomy:T25
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T9 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6 has-Lesion-Characteristic:T7 has-Lesion-Characteristic:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Lesion-Description:T20 has-Lesion-Count:T18 has-Lesion-Characteristic:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T21

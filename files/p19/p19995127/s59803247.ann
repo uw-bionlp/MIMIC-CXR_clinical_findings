@@ -1,0 +1,61 @@
+T1	Medical-Problem 34 57	Increased opacification
+T2	Medical-Anatomy 65 87	medial right lung base
+T3	Medical-Assertion 88 103	could represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 107 112;114 135	early  developing pneumonia
+T5	Medical-Problem 138 173	Unchanged calcified pleural plaques
+E4	Medical-Problem:T5
+T6	Lesion-Characteristic 176 183	Rounded
+T7	Lesion-Description 184 188	mass
+T8	Lesion-Anatomy 209 231	left suprahilar region
+T9	Medical-Problem 744 753;755 768	increased opacification
+T10	Medical-Anatomy 776 798	medial right lung base
+T11	Medical-Assertion 805 818	may represent
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 822 827;829 849	early developing pneumonia
+T13	Medical-Problem 912 923	atelectasis
+T14	Lesion-Size 928 933	large
+T15	Lesion-Anatomy 934 949	left juxtahilar
+T16	Lesion-Description 950 954	mass
+T17	Lesion-Size-Trend 958 967	unchanged
+A3	Lesion-Size-TrendValue T17 no-change
+T18	Medical-Problem 1097 1122	calcified pleural plaques
+E15	Medical-Problem:T18
+T19	Medical-Assertion 1138 1140	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1141 1169	significant pleural effusion
+T21	Medical-Problem 1173 1185	pneumothorax
+T22	Medical-Anatomy 1205 1226	pulmonary vasculature
+T23	Medical-Assertion 1230 1233	not
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1234 1242	engorged
+T25	Medical-Problem 1308 1334	thoracic aorta is tortuous
+E20	Medical-Problem:T25
+T26	Medical-Problem 1391 1414	increased opacification
+T27	Medical-Anatomy 1422 1444	medial right lung base
+T28	Medical-Assertion 1445 1450;1452 1461	could represent
+A6	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1465 1491	early developing pneumonia
+T30	Medical-Problem 1548 1559	atelectasis
+T31	Lesion-Anatomy 1571 1581	juxtahilar
+T32	Lesion-Description 1582 1586	mass
+T33	Medical-Problem 1680 1689	Calcified
+E27	Medical-Problem:T33
+T34	Medical-Problem 1690 1705	pleural plaques
+E28	Medical-Problem:T34
+T35	Medical-Problem 1722 1745	prior asbestos exposure
+E29	Medical-Problem:T35
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10
+E14	Lesion-Description:T16 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T15 has-Lesion-Size-Trend:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T19
+E19	Medical-Problem:T24 has-Medical-Anatomy:T22 has-Medical-Assertion:T23
+E21	Medical-Problem:T26 has-Medical-Anatomy:T27
+E23	Medical-Problem:T29 has-Medical-Anatomy:T27 has-Medical-Assertion:T28
+E24	Medical-Problem:T30 has-Medical-Anatomy:T27 has-Medical-Assertion:T28
+E26	Lesion-Description:T32 has-Lesion-Anatomy:T31

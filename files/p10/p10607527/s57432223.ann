@@ -1,0 +1,32 @@
+T1	Medical-Problem 258 288	Diffuse interstitial opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 426 443;445 467	overall increased interstitial opacities
+E2	Medical-Problem:T2
+T3	Medical-Problem 493 511	enlargement of the
+T4	Medical-Anatomy 512 517;519 527	hilar contours
+T5	Medical-Anatomy 532 550	cardiac silhouette
+T6	Medical-Assertion 586 593	suggest
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 595 632	superimposed moderate pulmonary edema
+T8	Medical-Assertion 635 643	Probable
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 644 667;669 678	small bilateral pleural effusions
+T10	Medical-Assertion 698 700	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 701 713	pneumothorax
+T12	Medical-Assertion 742 750	Probable
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 751 806;808 837	moderate interstitial pulmonary edema superimposed upon background pulmonary fibrosis
+T14	Medical-Assertion 843 860	ddx could include
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 861 869	fibrosis
+T16	Medical-Problem 876 910	superimposed interstital pneumonia
+T17	Medical-Assertion 927 949	considered less likely
+A6	Medical-AssertionValue T17 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Assertion:T17
+E11	Medical-Problem:T16 has-Medical-Assertion:T14 has-Medical-Assertion:T17

@@ -1,0 +1,22 @@
+T1	Medical-Problem 228 249	Greater opacification
+T2	Medical-Anatomy 257 268;270 280	base of the right lung
+T3	Medical-Assertion 281 303	could be due either to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 304 341	posteriorly layering pleural effusion
+T5	Medical-Problem 346 369	parenchymal abnormality
+T6	Medical-Anatomy 377 393	right lower lobe
+T7	Medical-Problem 405 415	aspiration
+T8	Medical-Problem 419 449	Mediastinal venous engorgement
+E7	Medical-Problem:T8
+T9	Medical-Assertion 450 458	suggests
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 466 489;491 499	elevated central venous pressure
+T11	Medical-Assertion 658 671	No indication
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 675 687	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3 has-Medical-Anatomy:T6
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

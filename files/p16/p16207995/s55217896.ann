@@ -1,0 +1,19 @@
+T1	Medical-Problem 313 318;320 338	right upper lung opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 376 395;397 418	Moderate left hilar contour abnormalities
+E2	Medical-Problem:T2
+T3	Lesion-Description 443 454	lymph nodes
+E3	Lesion-Description:T3
+T4	Lesion-Anatomy 515 524	pulmonary
+T5	Lesion-Description 525 532	nodules
+T6	Lesion-Assertion 580 583	not
+A1	Lesion-AssertionValue T6 absent
+T7	Medical-Assertion 620 622	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 623 640	pleural effusions
+T9	Medical-Assertion 643 645	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 646 670	other acute lung changes
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

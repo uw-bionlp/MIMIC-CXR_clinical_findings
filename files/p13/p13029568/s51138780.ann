@@ -1,0 +1,21 @@
+T1	Medical-Problem 218 236	Mild overinflation
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 239 248	Calcified
+T3	Lesion-Description 249 259	granulomas
+T4	Lesion-Anatomy 267 291	left and right lung apex
+T5	Medical-Assertion 294 296;298 306	No evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 310 319	pneumonia
+T7	Medical-Problem 321 336	pulmonary edema
+T8	Lesion-Characteristic 340 350	suspicious
+T9	Lesion-Description 351 358	nodules
+T10	Lesion-Description 362 368	masses
+T11	Medical-Assertion 412 414	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 415 432	pleural effusions
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T8
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,16 @@
+T1	Medical-Problem 286 310	subsegmental atelectasis
+T2	Medical-Anatomy 319 354	lung bases, left greater than right
+T3	Medical-Problem 409 432	acute pulmonary embolus
+E3	Medical-Problem:T3
+T4	Medical-Problem 435 465	Pulmonary vascular engorgement
+T5	Medical-Problem 471 486	very mild edema
+T6	Medical-Anatomy 494 519	perihilar and lower lungs
+T7	Medical-Assertion 520 527	suggest
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 528 535;537 551	cardiac decompensation
+T9	Medical-Problem 554 570	Pleural effusion
+E8	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7

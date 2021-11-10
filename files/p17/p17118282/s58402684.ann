@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 238 259	Pulmonary vascularity
+T2	Medical-Assertion 263 266	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 267 275	engorged
+T4	Lesion-Characteristic 278 288	Widespread
+T5	Lesion-Characteristic 289 307	patchy ill-defined
+T6	Lesion-Description 308 315	nodular
+E5	Lesion-Description:T6
+T7	Lesion-Description 317 326	opacities
+T8	Lesion-Anatomy 368 383	both lung bases
+T9	Lesion-Anatomy 409 425	right upper lobe
+T10	Lesion-Characteristic 427 471;473 480	findings concerning for a diffuse infectious process
+T11	Medical-Assertion 483 485	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 486 502	pleural effusion
+T13	Medical-Problem 506 518	pneumothorax
+T14	Medical-Assertion 545 547	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 549 576	acute osseous abnormalities
+T16	Medical-Problem 596 616	Multifocal pneumonia
+E13	Medical-Problem:T16
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

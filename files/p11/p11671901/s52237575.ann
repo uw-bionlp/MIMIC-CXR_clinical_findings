@@ -1,0 +1,65 @@
+T1	Medical-Problem 110 124;126 139	elevated right hemidiaphragm
+E1	Medical-Problem:T1
+T2	Medical-Problem 161 187	large subpulmonic effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 552 572	Lung volumes are low
+E3	Medical-Problem:T3
+T4	Medical-Problem 583 592	elevation
+T5	Medical-Anatomy 600 619	right hemidiaphragm
+T6	Medical-Anatomy 702 720	right heart border
+T7	Medical-Problem 727 755	elevated right hemidiaphragm
+T8	Medical-Problem 760 773;775 782	right basilar opacity
+T9	Medical-Assertion 841 843	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 844 853;855 874	pulmonary vascular congestion
+T11	Medical-Problem 877 910	Small bilateral pleural effusions
+E10	Medical-Problem:T11
+T12	Medical-Problem 922 928;930 939	Linear opacities
+T13	Medical-Anatomy 951 965	left lung base
+T14	Medical-Assertion 966 980	likely reflect
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 981 992	atelectasis
+T16	Medical-Problem 994 1006;1008 1023	Medial right basilar opacity
+E14	Medical-Problem:T16
+T17	Medical-Assertion 1024 1037	could reflect
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1038 1049	atelectasis
+T19	Medical-Problem 1057 1066	infection
+E16	Medical-Problem:T19
+T20	Lesion-Characteristic 1070 1080	underlying
+T21	Lesion-Description 1081 1085	mass
+T22	Medical-Assertion 1111 1113	no
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1114 1126	pneumothorax
+T24	Medical-Assertion 1142 1144	No
+A5	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1145 1158;1160 1171	acute osseous abnormality
+T26	Medical-Problem 1203 1236	Small bilateral pleural effusions
+E21	Medical-Problem:T26
+T27	Medical-Problem 1243 1271	Elevated right hemidiaphragm
+E22	Medical-Problem:T27
+T28	Medical-Problem 1277 1305	Right medial basilar opacity
+E23	Medical-Problem:T28
+T29	Medical-Assertion 1306 1319	could reflect
+A6	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1320 1331	atelectasis
+T31	Medical-Problem 1336 1345	infection
+E25	Medical-Problem:T31
+T32	Lesion-Characteristic 1350 1360	underlying
+T33	Lesion-Description 1361 1365	mass
+T34	Lesion-Assertion 1369 1381	not excluded
+A7	Lesion-AssertionValue T34 possible
+T35	Medical-Problem 1438 1475	Subsegmental left basilar atelectasis
+E28	Medical-Problem:T35
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E18	Lesion-Description:T21 has-Lesion-Characteristic:T20
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T25 has-Medical-Assertion:T24
+E24	Medical-Problem:T30 has-Medical-Assertion:T29
+E27	Lesion-Description:T33 has-Lesion-Characteristic:T32 has-Lesion-Assertion:T34

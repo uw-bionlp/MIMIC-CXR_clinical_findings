@@ -1,0 +1,18 @@
+T1	Medical-Assertion 88 90	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 91 94	PTX
+T3	Medical-Problem 97 101;103 116	Mild  cardiomegaly
+E2	Medical-Problem:T3
+T4	Medical-Problem 432 457;459 467	Cardiac size is minimally enlarged
+E3	Medical-Problem:T4
+T5	Medical-Problem 480 501	Bibasilar atelectases
+E4	Medical-Problem:T5
+T6	Medical-Assertion 553 555	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 556 568	pneumothorax
+T8	Medical-Problem 572 588	pleural effusion
+T9	Medical-Problem 595 605;607 616	stomach is distended
+E7	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6

@@ -1,0 +1,23 @@
+T1	Medical-Problem 306 319	Opacification
+T2	Medical-Anatomy 327 342	right lung base
+T3	Medical-Assertion 343 346;348 357	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 375 406	moderate right pleural effusion
+T5	Medical-Problem 412 420;422 445	adjacent compressive atelectasis
+T6	Medical-Problem 448 479	Superimposed infectious process
+T7	Medical-Problem 488 497	pneumonia
+T8	Medical-Assertion 499 517	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 567 579	cardiomegaly
+E7	Medical-Problem:T9
+T10	Medical-Problem 645 676	moderate right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 679 681	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 682 694	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

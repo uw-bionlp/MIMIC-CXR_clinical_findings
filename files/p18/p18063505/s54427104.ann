@@ -1,0 +1,20 @@
+T1	Medical-Problem 293 310	Mild interstitial
+E1	Medical-Problem:T1
+T2	Medical-Problem 311 326	pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 391 422	consistently more opacification
+T4	Medical-Anatomy 430 440;442 446	left lower lobe
+T5	Medical-Assertion 453 469	can be explained
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 473 492	lymphatic occlusion
+T7	Lesion-Anatomy 500 510	left hilar
+T8	Lesion-Description 512 522	adenopathy
+T9	Medical-Assertion 581 586;588 595	can't exclude
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 596 616	concurrent pneumonia
+T11	Medical-Problem 656 664	effusion
+E9	Medical-Problem:T11
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

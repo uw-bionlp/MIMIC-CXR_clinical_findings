@@ -1,0 +1,51 @@
+T1	Medical-Assertion 172 180	Question
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 201 216	pulmonary edema
+T3	Medical-Problem 221 235	lung opacities
+T4	Medical-Problem 579 590;592 622	significant improvement of pulmonary edema
+E3	Medical-Problem:T4
+T5	Medical-Problem 629 667	interval decrease of pleural effusions
+E4	Medical-Problem:T5
+T6	Medical-Problem 690 720	persistent severe cardiomegaly
+E5	Medical-Problem:T6
+T7	Medical-Problem 732 742;744 757	persistent consolidation
+T8	Medical-Anatomy 765 780	left lower lobe
+T9	Medical-Problem 785 802	confluent opacity
+T10	Medical-Anatomy 810 821;823 827	right upper lung
+T11	Lesion-Characteristic 859 869	underlying
+T12	Lesion-Description 877 888	mass lesion
+T13	Lesion-Characteristic 895 909	calcifications
+T14	Medical-Assertion 949 951	no
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 952 964	pneumothorax
+T16	Medical-Assertion 1019 1021	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1022 1039	new acute process
+T18	Medical-Problem 1085 1100	pulmonary edema
+E15	Medical-Problem:T18
+T19	Medical-Problem 1105 1122	pleural effusions
+E16	Medical-Problem:T19
+T20	Medical-Problem 1131 1154	Persistent cardiomegaly
+E17	Medical-Problem:T20
+T21	Medical-Assertion 1168 1183	could represent
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1184 1191;1193 1207	cardiac decompensation
+T23	Medical-Problem 1209 1252	rapid course of development of cardiomegaly
+E19	Medical-Problem:T23
+T24	Medical-Assertion 1253 1271	raises question of
+A5	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1275 1295	pericardial effusion
+T26	Medical-Problem 1338 1378	Persistent left lower lobe consolidation
+E21	Medical-Problem:T26
+T27	Lesion-Anatomy 1383 1409	right upper lobe pulmonary
+T28	Lesion-Description 1411 1417	lesion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E20	Medical-Problem:T25 has-Medical-Assertion:T24
+E23	Lesion-Description:T28 has-Lesion-Anatomy:T27

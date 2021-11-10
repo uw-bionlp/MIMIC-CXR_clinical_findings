@@ -1,0 +1,32 @@
+T1	Medical-Problem 297 320	decreased opacification
+T2	Medical-Anatomy 328 344	right upper lobe
+T3	Medical-Problem 360 397	persistent coarse reticular opacities
+T4	Medical-Anatomy 405 410;412 434	right upper and middle lobes
+T5	Medical-Assertion 436 455	which may represent
+A1	Medical-AssertionValue T5 possible
+T6	Lesion-Characteristic 456 475	lymphangitic spread
+T7	Lesion-Description 479 484	tumor
+T8	Medical-Problem 493 529	resolving post-obstructive pneumonia
+T9	Medical-Assertion 541 543	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 544 563;565 573	significant pleural effusion
+T11	Medical-Problem 577 589	pneumothorax
+T12	Medical-Problem 797 836	Improved right upper lobe opacification
+E10	Medical-Problem:T12
+T13	Medical-Problem 852 889	Persistent coarse reticular opacities
+T14	Medical-Anatomy 897 925	right upper and middle lobes
+T15	Medical-Assertion 927 940	may represent
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 941 977	resolving post-obstructive pneumonia
+T17	Lesion-Description 987 1003	tumor infiltrate
+E14	Lesion-Description:T17
+T18	Medical-Assertion 1008 1020	not excluded
+A4	Medical-AssertionValue T18 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15 has-Medical-Assertion:T18

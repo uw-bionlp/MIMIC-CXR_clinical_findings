@@ -1,0 +1,35 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 48	pneumothorax
+T3	Medical-Problem 99 110;112 152	significant  right pleural effusion densely layering
+T4	Medical-Problem 157 168	compressing
+T5	Medical-Anatomy 173 189	right lower lobe
+T6	Medical-Problem 194 225	Increased heterogeneous opacity
+T7	Medical-Anatomy 233 240	lingula
+T8	Medical-Assertion 241 254	may represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 255 266	atelectasis
+T10	Medical-Problem 273 283	aspiration
+T11	Medical-Problem 608 615	removal
+E9	Medical-Problem:T11
+T12	Medical-Problem 622 649	substantial amount of fluid
+T13	Medical-Anatomy 659 678	right pleural space
+T14	Medical-Problem 719 753	substantial residual opacification
+T15	Medical-Anatomy 761 771	right base
+T16	Medical-Problem 792 797	fluid
+T17	Medical-Problem 802 820	continued collapse
+T18	Medical-Anatomy 828 844	right lower lobe
+T19	Medical-Assertion 849 860	No evidence
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 864 876	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T16 has-Medical-Anatomy:T15 has-Medical-Anatomy:T18
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T19

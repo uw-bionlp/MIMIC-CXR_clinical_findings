@@ -1,0 +1,20 @@
+T1	Medical-Problem 208 211	PTX
+E1	Medical-Problem:T1
+T2	Medical-Problem 307 335	Small right pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 368 384;386 399	small persistent pleural space
+T4	Medical-Anatomy 407 429	base of the right lung
+T5	Medical-Problem 492 505	Opacification
+T6	Medical-Anatomy 513 529	right lower lung
+T7	Medical-Assertion 530 537;539 547	has not resolved
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Assertion 555 563	could be
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 564 575	atelectasis
+T10	Medical-Problem 585 594	pneumonia
+T11	Medical-Problem 627 648	Moderate cardiomegaly
+E9	Medical-Problem:T11
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

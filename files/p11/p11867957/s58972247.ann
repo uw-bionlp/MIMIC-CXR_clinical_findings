@@ -1,0 +1,22 @@
+T1	Medical-Problem 245 262;264 285	bilateral pleural effusion, moderate on
+E1	Medical-Problem:T1
+T2	Medical-Problem 322 330;332 344	moderate cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 347 358	Enlargement
+T4	Medical-Problem 363 373	lobulation
+T5	Medical-Anatomy 381 392	right hilus
+T6	Medical-Problem 418 437	Dense consolidation
+T7	Medical-Anatomy 445 461	right lower lobe
+T8	Medical-Problem 472 483	atelectasis
+T9	Medical-Assertion 489 500	less likely
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 501 510	pneumonia
+T11	Medical-Assertion 840 842	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 843 855	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

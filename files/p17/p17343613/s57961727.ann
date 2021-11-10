@@ -1,0 +1,22 @@
+T1	Lesion-Characteristic 309 314	faint
+T2	Lesion-Anatomy 315 325	left upper
+T3	Lesion-Description 327 334	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 335 342	opacity
+T5	Lesion-Description 360 366	nodule
+T6	Medical-Assertion 432 434	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 435 447	pneumothorax
+T8	Medical-Problem 451 458;460 468	pleural effusion
+T9	Medical-Problem 471 499	Linear bibasilar atelectasis
+E8	Medical-Problem:T9
+T10	Medical-Problem 531 549	Left upper opacity
+E9	Medical-Problem:T10
+T11	Medical-Assertion 598 600	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 601 627	acute superimposed process
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T2
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

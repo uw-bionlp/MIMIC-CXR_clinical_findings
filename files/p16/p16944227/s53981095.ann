@@ -1,0 +1,15 @@
+T1	Medical-Assertion 280 282	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 284 296	pneumothorax
+T3	Medical-Problem 340 355;357 364	left upper lobe opacity
+E2	Medical-Problem:T3
+T4	Medical-Problem 370 395	post-obstructive collapse
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 405 426	left hilar/upper lobe
+T6	Lesion-Description 427 431	mass
+T7	Lesion-Size-Trend 436 459	unchanged in appearance
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Problem 615 650	Mild residual left pleural effusion
+E6	Medical-Problem:T8
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7

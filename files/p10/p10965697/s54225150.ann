@@ -1,0 +1,18 @@
+T1	Medical-Problem 209 223;225 234	newly appeared opacities
+T2	Medical-Anatomy 247 275	left and the right lung base
+T3	Medical-Problem 282 291	opacities
+T4	Medical-Anatomy 325 354	peribronchial lung parenchyma
+T5	Medical-Assertion 359 374	could represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 376 385	pneumonia
+T7	Medical-Problem 525 545	Unchanged borderline
+E6	Medical-Problem:T7
+T8	Medical-Problem 582 601;603 611	signs of mild fluid overload
+E7	Medical-Problem:T8
+T9	Medical-Assertion 624 631	absence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 635 652	pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

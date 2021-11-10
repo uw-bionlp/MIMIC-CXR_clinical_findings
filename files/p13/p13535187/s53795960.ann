@@ -1,0 +1,19 @@
+T1	Medical-Problem 255 282	Small left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 320 322	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 324 336	pneumothorax
+T4	Medical-Problem 339 360	Greater opacification
+T5	Medical-Anatomy 368 389	base of the left lung
+T6	Medical-Assertion 390 398	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 400 411	atelectasis
+T8	Medical-Problem 415 424	pneumonia
+T9	Lesion-Count 427 435	Multiple
+T10	Lesion-Anatomy 436 440	lung
+T11	Lesion-Description 441 448	nodules
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Lesion-Description:T11 has-Lesion-Count:T9 has-Lesion-Anatomy:T10

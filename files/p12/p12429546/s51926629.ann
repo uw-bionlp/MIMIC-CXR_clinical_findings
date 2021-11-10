@@ -1,0 +1,23 @@
+T1	Medical-Problem 222 266	Large area of right lower lung consolidation
+E1	Medical-Problem:T1
+T2	Medical-Problem 291 300;302 309	left base opacity
+E2	Medical-Problem:T2
+T3	Medical-Assertion 310 323	worrisome for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 324 337	consolidation
+T5	Medical-Assertion 342 350	possible
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 351 367	pleural effusion
+T7	Medical-Assertion 470 472	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 473 494	overt pulmonary edema
+T9	Medical-Anatomy 523 546	Right mid to lower lung
+T10	Medical-Problem 566 580	consolidations
+T11	Medical-Assertion 581 594	worrisome for
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 596 616	multifocal pneumonia
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T9
+E8	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11

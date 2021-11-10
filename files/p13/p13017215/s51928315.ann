@@ -1,0 +1,23 @@
+T1	Medical-Problem 244 258;260 280	Worsening left retrocardiac opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 310 321	atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 326 334	effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 338 380	Patchy and linear right lower lobe opacity
+E4	Medical-Problem:T4
+T5	Medical-Assertion 389 402	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 403 414	atelectasis
+T7	Medical-Problem 421 442	coexisting aspiration
+T8	Medical-Assertion 446 454	possible
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Anatomy 458 474	both lower lobes
+T10	Medical-Problem 477 488;490 506	Small right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 534 536	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 537 557	visible pneumothorax
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

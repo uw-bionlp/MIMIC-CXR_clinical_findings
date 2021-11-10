@@ -1,0 +1,21 @@
+T1	Medical-Problem 308 338	Small regions of opacification
+T2	Medical-Anatomy 346 362	right upper lung
+T3	Medical-Anatomy 371 372	2
+T4	Medical-Anatomy 373 385;387 391	right middle lobe
+T5	Medical-Assertion 396 404	probably
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 405 425	multifocal pneumonia
+T7	Medical-Assertion 465 467	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 468 473	edema
+T9	Medical-Problem 477 493	pleural effusion
+T10	Medical-Problem 496 510	Hyperinflation
+E8	Medical-Problem:T10
+T11	Medical-Assertion 511 519	suggests
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 520 539;541 553	chronic obstructive lung disease
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

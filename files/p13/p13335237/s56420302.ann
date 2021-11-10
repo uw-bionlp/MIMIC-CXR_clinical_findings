@@ -1,0 +1,31 @@
+T1	Medical-Assertion 57 63	Likely
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 64 69	TRALI
+T3	Medical-Problem 89 119	changing pulmonary infiltrates
+T4	Medical-Problem 359 395	Multiple diffuse pulmonary opacities
+T5	Medical-Anatomy 408 417	diffusely
+T6	Medical-Assertion 435 443	Probable
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 444 463	bilateral effusions
+T8	Medical-Problem 466 481	Left lower lobe
+E6	Medical-Problem:T8
+T9	Medical-Problem 482 490	collapse
+E7	Medical-Problem:T9
+T10	Medical-Problem 498 511	consolidation
+E8	Medical-Problem:T10
+T11	Medical-Assertion 592 614	differential diagnosis
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 624 627	CHF
+T13	Medical-Problem 633 664	interstitial and alveolar edema
+T14	Medical-Assertion 675 686	possibility
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 693 741	underlying infectious or inflammatory infiltrate
+T16	Medical-Assertion 742 748;750 761	cannot be excluded
+A5	Medical-AssertionValue T16 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Assertion:T16

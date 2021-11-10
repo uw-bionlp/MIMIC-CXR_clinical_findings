@@ -1,0 +1,54 @@
+T1	Medical-Problem 321 340	persistent blunting
+T2	Medical-Anatomy 348 371	left costophrenic angle
+T3	Medical-Assertion 379 392	may be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 393 409	pleural effusion
+T5	Medical-Problem 417 435	pleural thickening
+T6	Medical-Problem 441 450;452 463	overlying atelectasis
+T7	Medical-Problem 477 497	small patchy opacity
+T8	Medical-Anatomy 505 526;528 547	lateral aspect of the right mid lung zone
+T9	Medical-Assertion 554 567	may represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 568 604;606 612	focus of contusion in the setting of trauma
+T11	Medical-Problem 616 625	infection
+T12	Medical-Problem 755 774	Persistent blunting
+T13	Medical-Anatomy 782 806	right costophrenic angle
+T14	Medical-Problem 811 830	right base scarring
+E12	Medical-Problem:T14
+T15	Medical-Problem 848 871	Multiple calcifications
+T16	Medical-Anatomy 892 911	left upper quadrant
+T17	Medical-Problem 992 1020	splenic artery calcification
+E15	Medical-Problem:T17
+T18	Medical-Assertion 1038 1049	No evidence
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1053 1077	acute displaced fracture
+T20	Medical-Problem 1107 1146	New small focus of patchy opacification
+T21	Medical-Anatomy 1154 1176	lateral right mid lung
+T22	Medical-Assertion 1179 1200	which could represent
+A4	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1201 1245	pulmonary contusion in the setting of trauma
+T24	Medical-Problem 1250 1270	underlying infection
+T25	Lesion-Description 1376 1382	lesion
+E21	Lesion-Description:T25
+T26	Medical-Problem 1389 1408	Persistent blunting
+T27	Medical-Anatomy 1416 1462;1464 1470	left greater than right bilateral costophrenic angles
+T28	Medical-Assertion 1471 1484	likely due to
+A5	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1485 1502	pleural effusions
+T30	Medical-Problem 1510 1528	pleural thickening
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T24 has-Medical-Assertion:T22
+E22	Medical-Problem:T26 has-Medical-Anatomy:T27
+E24	Medical-Problem:T29 has-Medical-Anatomy:T27 has-Medical-Assertion:T28
+E25	Medical-Problem:T30 has-Medical-Anatomy:T27 has-Medical-Assertion:T28

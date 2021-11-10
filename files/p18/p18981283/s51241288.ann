@@ -1,0 +1,16 @@
+T1	Medical-Problem 382 403	left pleural effusion
+T2	Medical-Assertion 404 407;409 428	has completely resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 448 456	effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 502 533	Subsequent areas of atelectasis
+E3	Medical-Problem:T4
+T5	Medical-Assertion 590 592	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 593 618	new parenchymal opacities
+T7	Medical-Assertion 619 629	suggesting
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 630 643;645 662	infectious or malignant disease
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7

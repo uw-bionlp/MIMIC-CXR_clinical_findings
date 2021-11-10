@@ -1,0 +1,44 @@
+T1	Medical-Problem 291 311;313 321	Heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 324 337	Mild widening
+T3	Medical-Anatomy 345 370	right paratracheal stripe
+T4	Lesion-Characteristic 391 401	underlying
+T5	Lesion-Description 402 417	lymphadenopathy
+T6	Medical-Problem 488 515	minimal asymmetric fullness
+T7	Medical-Anatomy 523 546;548 556	right hilum compared to the left
+T8	Medical-Assertion 563 580	likely reflective
+A1	Medical-AssertionValue T8 possible
+T9	Lesion-Description 584 594	underlying
+E8	Lesion-Description:T9
+T10	Lesion-Description 595 610	lymphadenopathy
+E9	Lesion-Description:T10
+T11	Medical-Assertion 687 689	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 690 695;697 710	focal consolidation
+T13	Medical-Problem 712 728	pleural effusion
+T14	Medical-Problem 732 744	pneumothorax
+T15	Medical-Assertion 755 757	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 758 771;773 784	acute osseous abnormality
+T17	Medical-Problem 816 829	Mild widening
+T18	Medical-Anatomy 837 862	right paratracheal stripe
+T19	Medical-Problem 867 875	fullness
+T20	Medical-Anatomy 883 894	right hilum
+T21	Medical-Assertion 896 910	likely reflect
+A4	Medical-AssertionValue T21 possible
+T22	Lesion-Characteristic 911 921	underlying
+T23	Lesion-Description 922 937	lymphadenopathy
+T24	Medical-Assertion 1022 1024	No
+A5	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1025 1046;1048 1059	acute cardiopulmonary abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E19	Lesion-Description:T23 has-Lesion-Characteristic:T22
+E20	Medical-Problem:T25 has-Medical-Assertion:T24

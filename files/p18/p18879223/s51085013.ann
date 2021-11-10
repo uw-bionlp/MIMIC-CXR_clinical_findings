@@ -1,0 +1,14 @@
+T1	Medical-Problem 682 712	Severe pulmonary opacification
+T2	Medical-Anatomy 720 730	right lung
+T3	Medical-Problem 828 831;833 873	any interval decrease in the volume of fluid
+T4	Medical-Anatomy 881 905	left pneumonectomy space
+T5	Medical-Problem 920 930	stump leak
+T6	Medical-Assertion 942 944	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 945 963	right pneumothorax
+T8	Medical-Problem 966 986;988 1028	Mediastinum is still shifted mildly into the left hemi thorax
+E7	Medical-Problem:T8
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6

@@ -1,0 +1,24 @@
+T1	Medical-Problem 237 284	Bilateral extensive heterogeneous opacification
+T2	Medical-Anatomy 292 301;303 318	right mid and lower lungs
+T3	Medical-Problem 392 426	Bilateral confluent lung opacities
+T4	Medical-Anatomy 430 443;445 477	mid and lower lungs, right side more than left
+T5	Medical-Assertion 478 492	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 493 513	multifocal pneumonia
+T7	Medical-Assertion 552 554	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 555 568	new opacities
+T9	Medical-Assertion 591 593	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 595 614	pleural abnormality
+T11	Medical-Problem 688 708	Multifocal pneumonia
+E8	Medical-Problem:T11
+T12	Medical-Assertion 746 748	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 749 762	new opacities
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

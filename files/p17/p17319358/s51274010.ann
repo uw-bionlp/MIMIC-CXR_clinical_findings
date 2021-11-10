@@ -1,0 +1,21 @@
+T1	Medical-Assertion 209 217	Consider
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 218 227	pneumonia
+T3	Medical-Problem 298 331	Small bilateral pleural effusions
+E2	Medical-Problem:T3
+T4	Medical-Problem 375 402	areas of linear atelectasis
+T5	Medical-Anatomy 410 419	lung base
+T6	Medical-Assertion 432 443	possibility
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 450 493	small regions of peribronchial infiltration
+T8	Medical-Assertion 494 509	could represent
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 510 519	pneumonia
+T10	Medical-Problem 523 525;527 550	at least recent aspiration
+T11	Medical-Problem 619 657	very mild interstitial pulmonary edema
+E8	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T6 has-Medical-Assertion:T8

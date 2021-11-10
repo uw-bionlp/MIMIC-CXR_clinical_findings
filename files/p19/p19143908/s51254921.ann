@@ -1,0 +1,30 @@
+T1	Medical-Anatomy 250 303;305 320	medial posterior basilar end superior segments of the left lower lobe
+T2	Medical-Problem 326 354	more extensive consolidation
+T3	Medical-Problem 414 444	Areas of new perihilar opacity
+E3	Medical-Problem:T3
+T4	Lesion-Description 456 460	mass
+T5	Lesion-Anatomy 468 478	left hilum
+T6	Lesion-Description 509 524	lymphadenopathy
+E6	Lesion-Description:T6
+T7	Lesion-Description 565 578	nodular focus
+T8	Lesion-Anatomy 599 610;612 616	right lower lung
+T9	Medical-Problem 655 686;688 704	persistent partial right middle lobe atelectasis
+E9	Medical-Problem:T9
+T10	Medical-Assertion 716 718	no
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 719 744	definite pleural effusion
+T12	Medical-Problem 835 865	Increasing perihilar opacities
+T13	Medical-Anatomy 873 882	left lung
+T14	Medical-Problem 894 904	aspiration
+E13	Medical-Problem:T14
+T15	Lesion-Anatomy 952 962	left hilar
+E14	Lesion-Anatomy:T15
+T16	Medical-Problem 996 1024	post-obstructive pneumonitis
+T17	Medical-Assertion 1025 1049	could also be considered
+A2	Medical-AssertionValue T17 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E15	Medical-Problem:T16 has-Medical-Assertion:T17

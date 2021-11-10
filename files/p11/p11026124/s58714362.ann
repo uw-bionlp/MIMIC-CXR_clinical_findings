@@ -1,0 +1,25 @@
+T1	Medical-Problem 250 266	callus formation
+T2	Medical-Anatomy 274 298	posterior left third rib
+T3	Medical-Problem 324 353	minimally displaced fractures
+T4	Medical-Anatomy 379 383;385 389	left ribs
+T5	Medical-Anatomy 396 401	lungs
+T6	Medical-Problem 406 419	hyperinflated
+T7	Medical-Problem 436 445	emphysema
+T8	Medical-Problem 482 514	Bilateral multifocal atelectasis
+E8	Medical-Problem:T8
+T9	Medical-Problem 554 576	lower lobe atelectasis
+E9	Medical-Problem:T9
+T10	Lesion-Assertion 613 615	no
+A1	Lesion-AssertionValue T10 absent
+T11	Lesion-Size-Trend 616 619	new
+A2	Lesion-Size-TrendValue T11 new
+T12	Lesion-Anatomy 621 625	lung
+T13	Lesion-Description 626 633	lesions
+T14	Medical-Problem 635 664	Wedge compression deformities
+T15	Medical-Anatomy 668 699	lower thoracic vertebral bodies
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T5
+E11	Lesion-Description:T13 has-Lesion-Assertion:T10 has-Lesion-Size-Trend:T11 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15

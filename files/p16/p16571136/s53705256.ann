@@ -1,0 +1,21 @@
+T1	Medical-Assertion 216 218	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 219 231	pneumothorax
+T3	Medical-Problem 233 249	pleural effusion
+T4	Medical-Problem 254 257;259 272	new lung collapse
+T5	Lesion-Size 275 280	Large
+T6	Lesion-Anatomy 281 296	right perihilar
+T7	Lesion-Description 297 301	mass
+T8	Lesion-Characteristic 307 320	fiducial seed
+T9	Lesion-Count 322 330	multiple
+T10	Lesion-Anatomy 332 346	bilateral lung
+T11	Lesion-Description 347 354	nodules
+T12	Lesion-Description 359 371	lymphangitic
+E11	Lesion-Description:T12
+T13	Lesion-Description 372 386	carcinomatosis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T8
+E10	Lesion-Description:T11 has-Lesion-Count:T9 has-Lesion-Anatomy:T10
+E12	Lesion-Description:T13 has-Lesion-Count:T9 has-Lesion-Anatomy:T10

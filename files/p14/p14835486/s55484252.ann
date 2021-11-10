@@ -1,0 +1,17 @@
+T1	Medical-Problem 240 250;252 260	persistent blunting
+T2	Medical-Anatomy 268 292	right costophrenic angle
+T3	Medical-Assertion 319 329;331 333	may be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 334 348	small effusion
+T5	Medical-Problem 356 374	pleural thickening
+T6	Medical-Problem 377 409;411 418	Overlying subtle mild right base opacity
+E5	Medical-Problem:T6
+T7	Medical-Assertion 419 432	may be due to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 433 444	atelectasis
+T9	Medical-Problem 452 460	scarring
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

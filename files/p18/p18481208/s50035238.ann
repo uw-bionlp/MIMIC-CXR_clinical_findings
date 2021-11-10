@@ -1,0 +1,27 @@
+T1	Medical-Problem 342 355	opacification
+T2	Medical-Anatomy 364 381	entire right lung
+T3	Medical-Assertion 383 399	likely secondary
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 403 413	aspiration
+T5	Medical-Problem 421 430	pneumonia
+T6	Medical-Anatomy 452 461	left lung
+T7	Medical-Problem 475 491	airspace disease
+T8	Medical-Assertion 492 505	suggestive of
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 507 535	interstitial pulmonary edema
+T10	Medical-Problem 571 578;580 608	Mild to moderate stable cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Problem 742 752	aspiration
+E9	Medical-Problem:T11
+T12	Medical-Problem 760 769	pneumonia
+T13	Medical-Anatomy 790 807	entire right lung
+T14	Medical-Assertion 817 825	Probable
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 826 858	mild to moderate pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

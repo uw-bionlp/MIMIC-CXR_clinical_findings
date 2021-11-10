@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 317 336	right hemidiaphragm
+T2	Medical-Problem 366 397	aortic continues to be tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 403 420	mild cardiomegaly
+T4	Medical-Problem 448 457	elevation
+E4	Medical-Problem:T4
+T5	Medical-Problem 491 510	small left effusion
+E5	Medical-Problem:T5
+T6	Medical-Problem 566 576	infiltrate
+T7	Medical-Anatomy 584 588;590 600	left lower lobe
+T8	Medical-Assertion 601 619	cannot be excluded
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 644 653	elevation
+T10	Medical-Anatomy 661 679	left hemidiaphragm
+T11	Medical-Problem 685 698	left effusion
+T12	Medical-Problem 717 743	left lower lobe infiltrate
+T13	Medical-Assertion 747 754	limited
+A2	Medical-AssertionValue T13 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T13

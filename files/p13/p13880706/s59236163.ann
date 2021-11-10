@@ -1,0 +1,20 @@
+T1	Lesion-Size 206 211	Small
+T2	Lesion-Characteristic 212 217	faint
+T3	Lesion-Anatomy 218 222	lung
+T4	Lesion-Description 223 230	nodules
+T5	Lesion-Anatomy 238 265	periphery of the right lung
+T6	Medical-Assertion 266 281	could represent
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 283 319	early pneumonia, particularly viral,
+T8	Medical-Assertion 330 332	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 333 357	sufficient consolidation
+T10	Medical-Problem 382 401	bacterial infection
+T11	Medical-Problem 458 467	Emphysema
+E9	Medical-Problem:T11
+T12	Medical-Problem 484 498	hyperinflation
+E10	Medical-Problem:T12
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

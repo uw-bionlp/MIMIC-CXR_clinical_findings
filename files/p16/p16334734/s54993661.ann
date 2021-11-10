@@ -1,0 +1,24 @@
+T1	Medical-Problem 459 477	airspace opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 525 553	trace right pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Assertion 556 558	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 571 583	pneumothorax
+T5	Medical-Problem 587 602;604 609	frank pulmonary edema
+T6	Medical-Problem 617 629	cardiomegaly
+E5	Medical-Problem:T6
+T7	Medical-Problem 651 665	calcifications
+T8	Medical-Anatomy 673 679;681 685	aortic arch
+T9	Medical-Problem 711 723	cardiomegaly
+E8	Medical-Problem:T9
+T10	Medical-Problem 728 781	bibasilar airspace opacities, right greater than left
+E9	Medical-Problem:T10
+T11	Medical-Assertion 795 808	worrisome for
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 809 819	pneumonia,
+T13	Medical-Anatomy 820 845	particularly on the right
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13

@@ -1,0 +1,31 @@
+T1	Medical-Assertion 334 336	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 337 348	abnormality
+T3	Medical-Anatomy 360 371	mediastinum
+T4	Medical-Problem 433 440	opacity
+T5	Medical-Anatomy 462 491	superior anterior mediastinum
+T6	Medical-Assertion 497 522	might potentially reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 523 531	hematoma
+T8	Medical-Problem 533 538;540 553	Other abnormalities
+T9	Medical-Assertion 554 572	cannot be excluded
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 606 608	no
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 609 625	pleural effusion
+T12	Medical-Problem 629 641	pneumothorax
+T13	Medical-Problem 643 649;651 660	Linear opacities
+T14	Medical-Anatomy 679 697	cardiac silhouette
+T15	Medical-Assertion 702 717	might represent
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 718 725;727 738	area of atelectasis
+T17	Medical-Anatomy 746 753	lingula
+T18	Medical-Anatomy 757 774	right middle lobe
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17 has-Medical-Anatomy:T18

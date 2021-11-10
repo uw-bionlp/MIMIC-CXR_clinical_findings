@@ -1,0 +1,28 @@
+T1	Medical-Assertion 266 268	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 269 285	pleural effusion
+T3	Medical-Problem 289 301	pneumothorax
+T4	Medical-Anatomy 324 338	thoracic spine
+T5	Medical-Assertion 345 347	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 348 369	compression deformity
+T7	Medical-Problem 439 468	subtle contour irregularities
+T8	Medical-Anatomy 477 549	costovertebral junctions of the posterior aspect of the right upper ribs
+T9	Medical-Assertion 551 558	suggest
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 559 576	old healed injury
+T11	Medical-Assertion 636 638	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 639 668	acute cardiopulmonary process
+T13	Medical-Assertion 670 681	no evidence
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 685 699;701 709	acute thoracic spine or
+E9	Medical-Problem:T14
+T15	Medical-Problem 710 722	rib fracture
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T13

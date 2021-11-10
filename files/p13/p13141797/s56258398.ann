@@ -1,0 +1,17 @@
+T1	Medical-Anatomy 315 325	left hilus
+T2	Medical-Assertion 326 341	could be due to
+A1	Medical-AssertionValue T2 possible
+T3	Lesion-Description 342 352;354 365	lymph node enlargement
+E2	Lesion-Description:T3
+T4	Medical-Problem 369 385	tortuous vessels
+T5	Lesion-Assertion 429 431;433 441	no evidence
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Description 445 455	lymph node
+T7	Lesion-Characteristic 456 467	enlargement
+T8	Lesion-Anatomy 468 490	elsewhere in the chest
+T9	Medical-Assertion 766 768	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 769 788	pleural abnormality
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Lesion-Description:T6 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

@@ -1,0 +1,35 @@
+T1	Medical-Problem 225 246	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Assertion 273 284	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 288 317	pulmonary vascular congestion
+T4	Medical-Problem 323 351	pulmonary interstitial edema
+T5	Medical-Assertion 363 365	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 366 385	focal consolidation
+T7	Medical-Assertion 397 399	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 401 423	large pleural effusion
+T9	Medical-Problem 427 439	pneumothorax
+T10	Medical-Problem 444 465	left mid lung opacity
+E7	Medical-Problem:T10
+T11	Lesion-Assertion 466 479	may represent
+A4	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 483 487	mass
+T13	Medical-Problem 507 526	Marked cardiomegaly
+E9	Medical-Problem:T13
+T14	Medical-Problem 531 559	pulmonary interstitial edema
+E10	Medical-Problem:T14
+T15	Medical-Problem 562 570;572 584	Left mid lung opacity
+E11	Medical-Problem:T15
+T16	Lesion-Assertion 585 598	may represent
+A5	Lesion-AssertionValue T16 possible
+T17	Lesion-Size 599 604	small
+T18	Lesion-Description 605 609	mass
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Lesion-Description:T12 has-Lesion-Assertion:T11
+E13	Lesion-Description:T18 has-Lesion-Assertion:T16 has-Lesion-Size-Present:T17

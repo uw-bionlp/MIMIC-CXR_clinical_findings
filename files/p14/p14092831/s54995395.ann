@@ -1,0 +1,24 @@
+T1	Medical-Problem 566 584;586 595	heart is enlarged, increased
+E1	Medical-Problem:T1
+T2	Medical-Problem 610 630	Retrocardiac opacity
+T3	Medical-Problem 635 643	blunting
+T4	Medical-Anatomy 651 655;657 675	left costophrenic angle
+T5	Medical-Assertion 676 691	could relate to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 709 720	atelectasis
+T7	Medical-Problem 725 732;734 739	pleural fluid
+T8	Medical-Assertion 741 743	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 744 763	focal consolidation
+T10	Medical-Problem 858 871	Cardiomegaly,
+E8	Medical-Problem:T10
+T11	Medical-Problem 907 918	Atelectasis
+T12	Medical-Problem 923 936	pleural fluid
+T13	Medical-Anatomy 944 959	left lower lobe
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T13
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13

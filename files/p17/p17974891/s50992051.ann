@@ -1,0 +1,18 @@
+T1	Medical-Problem 158 167	pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Problem 279 290;292 308	Small right pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 333 352	Major abnormalities
+T4	Medical-Anatomy 360 370;372 382	left lower hemithorax
+T5	Medical-Problem 398 413	substantial, if
+E5	Medical-Problem:T5
+T6	Medical-Problem 418 438	complete atelectasis
+T7	Medical-Anatomy 446 450;452 462	left lower lobe
+T8	Medical-Problem 469 513	pleural effusion at least moderate in volume
+T9	Medical-Assertion 609 611	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 612 624	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9

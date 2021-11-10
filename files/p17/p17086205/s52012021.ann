@@ -1,0 +1,37 @@
+T1	Medical-Problem 195 210	Mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 222 253	increased interstitial markings
+E2	Medical-Problem:T2
+T3	Medical-Problem 271 289	interstitial edema
+E3	Medical-Problem:T3
+T4	Medical-Problem 306 323	streaky opacities
+T5	Medical-Anatomy 331 341	lung bases
+T6	Medical-Assertion 349 362	could reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 363 372	infection
+T8	Medical-Problem 376 387	atelectasis
+T9	Medical-Problem 399 413	calcifications
+T10	Medical-Anatomy 421 426;428 437	right lung base
+T11	Lesion-Assertion 444 457	could reflect
+A2	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 458 468	granulomas
+T13	Medical-Assertion 479 481	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 482 494	pneumothorax
+T15	Medical-Problem 518 536	Interstitial edema
+E12	Medical-Problem:T15
+T16	Medical-Problem 545 563	Increased markings
+T17	Medical-Anatomy 571 581	lung bases
+T18	Medical-Assertion 588 601	could reflect
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 602 613	atelectasis
+T20	Medical-Problem 618 627	infection
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Lesion-Description:T12 has-Lesion-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

@@ -1,0 +1,26 @@
+T1	Medical-Problem 422 442	persistent elevation
+T2	Medical-Anatomy 450 466	right hemithorax
+T3	Medical-Problem 469 486	New opacification
+T4	Medical-Anatomy 495 510	right lung base
+T5	Medical-Assertion 511 522	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 523 534	atelectasis
+T7	Medical-Problem 542 555	consolidation
+T8	Medical-Assertion 558 560	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 561 568;570 578	pleural effusion
+T10	Medical-Problem 582 594	pneumothorax
+T11	Medical-Problem 727 754	New right basilar opacities
+E9	Medical-Problem:T11
+T12	Medical-Assertion 755 766	may reflect
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 767 778	atelectasis
+T14	Medical-Problem 786 799	consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12

@@ -1,0 +1,35 @@
+T1	Medical-Problem 349 366	new consolidation
+T2	Medical-Anatomy 374 378;380 388	left mid lung
+T3	Medical-Assertion 395 408	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 409 418	infection
+T5	Medical-Problem 422 442	aspiration pneumonia
+T6	Medical-Problem 455 481	increased patchy opacities
+T7	Medical-Anatomy 489 499	right lung
+T8	Medical-Problem 516 525;527 542	worsening pulmonary edema
+T9	Medical-Problem 549 601	cardiomediastinal silhouette remains mildly enlarged
+E8	Medical-Problem:T9
+T10	Medical-Problem 615 659	increasing small bilateral pleural effusions
+E9	Medical-Problem:T10
+T11	Medical-Assertion 662 664	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 665 677	pneumothorax
+T13	Medical-Problem 711 728	New focal opacity
+T14	Medical-Anatomy 736 749	left mid lung
+T15	Medical-Assertion 756 769	may represent
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 770 779	pneumonia
+T17	Medical-Problem 788 798	aspiration
+T18	Medical-Problem 807 832	Worsening pulmonary edema
+E15	Medical-Problem:T18
+T19	Medical-Problem 837 870	small bilateral pleural effusions
+E16	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

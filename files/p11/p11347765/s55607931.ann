@@ -1,0 +1,31 @@
+T1	Medical-Problem 292 324	persistent left pleural effusion
+T2	Medical-Anatomy 405 414	left lung
+T3	Medical-Problem 432 459	persistent airspace opacity
+T4	Medical-Anatomy 467 482	left upper lobe
+T5	Lesion-Anatomy 541 551	left hilar
+T6	Lesion-Description 552 556	mass
+T7	Lesion-Characteristic 560 578	partially obscured
+T8	Lesion-Size-Trend 609 616	appears
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Size-Trend 617 634	grossly unchanged
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Assertion 677 679	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 680 708	right-sided pleural effusion
+T12	Medical-Problem 711 738	Severe degenerative changes
+T13	Medical-Anatomy 747 761	right shoulder
+T14	Medical-Problem 785 817	Persistent left pleural effusion
+E11	Medical-Problem:T14
+T15	Lesion-Size-Trend 820 829	Unchanged
+A4	Lesion-Size-TrendValue T15 no-change
+T16	Lesion-Anatomy 830 840	left hilar
+T17	Lesion-Description 841 845	mass
+T18	Medical-Problem 848 856;858 884	Slightly increased airspace opacity
+T19	Medical-Anatomy 892 907	left upper lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T7 has-Lesion-Size-Trend:T8 has-Lesion-Size-Trend:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Lesion-Description:T17 has-Lesion-Size-Trend:T15 has-Lesion-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19

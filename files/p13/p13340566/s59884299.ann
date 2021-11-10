@@ -1,0 +1,26 @@
+T1	Medical-Assertion 233 235	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 237 249	pneumothorax
+T3	Medical-Problem 277 303	upper zone re-distribution
+E2	Medical-Problem:T3
+T4	Medical-Problem 310 323	resolving CHF
+E3	Medical-Problem:T4
+T5	Medical-Problem 326 340;342 349	Minimal patchy opacity
+T6	Medical-Anatomy 353 368	both lung bases
+T7	Medical-Problem 425 441	Minimal blunting
+T8	Medical-Anatomy 449 468	costophrenic angles
+T9	Medical-Assertion 483 490	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 492 506	gross effusion
+T11	Medical-Problem 640 664	Slight change in caliber
+T12	Medical-Anatomy 672 688	proximal trachea
+T13	Medical-Problem 723 748	area of relative widening
+T14	Medical-Assertion 752 761	suggested
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Anatomy 769 785	proximal trachea
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Assertion:T14 has-Medical-Anatomy:T15

@@ -1,0 +1,18 @@
+T1	Medical-Problem 226 239	postoperative
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 290 312	bases of the left lung
+E2	Medical-Anatomy:T2
+T3	Medical-Assertion 315 317	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 318 337	parenchymal changes
+T5	Medical-Assertion 338 352	suspicious for
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 353 358;360 367	acute disease
+T7	Medical-Problem 371 386	pulmonary edema
+T8	Medical-Assertion 432 434	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 436 453	pleural effusions
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

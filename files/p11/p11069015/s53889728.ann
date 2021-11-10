@@ -1,0 +1,26 @@
+T1	Medical-Problem 384 410	lung volumes are decreased
+E1	Medical-Problem:T1
+T2	Medical-Problem 414 423;425 444	Increased lung base opacities
+T3	Medical-Assertion 445 459	likely reflect
+A1	Medical-AssertionValue T3 possible
+T4	Lesion-Anatomy 475 485	multifocal
+T5	Lesion-Anatomy 486 501	bronchoalveolar
+T6	Lesion-Description 503 512	carcinoma
+T7	Medical-Problem 523 574	substantial increase of bilateral pleural effusions
+E6	Medical-Problem:T7
+T8	Medical-Problem 638 647;649 658	overlying opacities
+E7	Medical-Problem:T8
+T9	Medical-Assertion 733 735	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 736 748	pneumothorax
+T11	Medical-Problem 774 803	Increased lung base opacities
+T12	Medical-Assertion 804 818	likely reflect
+A3	Medical-AssertionValue T12 possible
+T13	Lesion-Anatomy 834 844	multifocal
+T14	Lesion-Anatomy 846 861	bronchoalveolar
+T15	Lesion-Description 862 871	carcinoma
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T12
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T14

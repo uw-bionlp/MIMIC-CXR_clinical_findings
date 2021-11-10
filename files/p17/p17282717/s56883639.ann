@@ -1,0 +1,27 @@
+T1	Medical-Problem 182 214	Persistent lower lobes opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 265 280	pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Assertion 284 298	suspicious for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 299 308	pneumonia
+T5	Medical-Problem 311 332	Moderate cardiomegaly
+E4	Medical-Problem:T5
+T6	Medical-Problem 346 379	Upper mediastinum appears widened
+E5	Medical-Problem:T6
+T7	Medical-Problem 590 608	Residual opacities
+T8	Medical-Anatomy 612 651	lower lobes more prominent on the right
+T9	Medical-Assertion 656 670	suspicious for
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 671 680	pneumonia
+T11	Medical-Problem 687 721	Upper mediastinum is still widened
+T12	Medical-Assertion 722 730	possibly
+A3	Medical-AssertionValue T12 possible
+T13	Lesion-Assertion 763 771	rule out
+A4	Lesion-AssertionValue T13 possible
+T14	Lesion-Description 772 787	lymphadenopathy
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T12
+E10	Lesion-Description:T14 has-Lesion-Assertion:T13

@@ -1,0 +1,46 @@
+T1	Medical-Problem 229 233;235 259	Lung volumes are slightly low
+E1	Medical-Problem:T1
+T2	Medical-Problem 273 297	new wedge-shaped opacity
+T3	Medical-Anatomy 310 383;385 392	posterior aspect of the left lower lobe, projecting over the spine on the lateral
+T4	Medical-Assertion 405 426	possibly representing
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 429 449	pulmonary infarction
+T6	Medical-Problem 528 557	Band-like parenchymal opacity
+T7	Medical-Anatomy 577 595;597 625	left hilum, at the level of the left upper lobe
+T8	Lesion-Description 675 682	nodular
+T9	Lesion-Anatomy 683 699	right upper lung
+T10	Lesion-Description 700 707	opacity
+T11	Lesion-Size-Trend 764 790	slightly decreased in size
+A2	Lesion-Size-TrendValue T11 decreasing
+T12	Medical-Problem 900 927	small left pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Assertion 958 960	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 962 974	pneumothorax
+T15	Medical-Problem 998 1034	Wedge-shaped left lower lobe opacity
+E12	Medical-Problem:T15
+T16	Medical-Assertion 1036 1050	concerning for
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1053 1062;1064 1074	pulmonary infarction
+T18	Lesion-Size-Trend 1111 1125	Decreased size
+A5	Lesion-Size-TrendValue T18 decreasing
+T19	Lesion-Anatomy 1129 1145	right upper lung
+T20	Lesion-Description 1146 1153	nodular
+E15	Lesion-Description:T20
+T21	Lesion-Description 1154 1161	opacity
+T22	Lesion-Characteristic 1163 1171;1173 1206	possibly infectious/inflammatory in nature
+T23	Lesion-Description 1219 1237	neoplastic process
+T24	Lesion-Assertion 1241 1250;1252 1264	certainly not excluded
+A6	Lesion-AssertionValue T24 possible
+T25	Medical-Problem 1267 1296	Unchanged band-like opacities
+T26	Medical-Anatomy 1316 1326	left hilum
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T9
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Lesion-Description:T21 has-Lesion-Size-Trend:T18 has-Lesion-Anatomy:T19 has-Lesion-Characteristic:T22
+E18	Lesion-Description:T23 has-Lesion-Anatomy:T19 has-Lesion-Assertion:T24
+E19	Medical-Problem:T25 has-Medical-Anatomy:T26

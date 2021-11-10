@@ -1,0 +1,17 @@
+T1	Medical-Problem 285 312	Heterogeneous opacification
+T2	Medical-Anatomy 320 331	lower lungs
+T3	Medical-Assertion 346 361	could be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 363 403	aspirated material producing atelectasis
+T5	Medical-Assertion 405 424	raising concern for
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 425 440	early pneumonia
+T7	Medical-Assertion 542 544	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 546 558	pneumothorax
+T9	Medical-Problem 561 577	Pleural effusion
+E6	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7

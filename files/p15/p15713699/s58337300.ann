@@ -1,0 +1,24 @@
+T1	Medical-Problem 214 240	Diffuse airspace opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 242 263	highly concerning for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 264 284	multifocal pneumonia
+T4	Medical-Assertion 287 289	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 290 304	large effusion
+T6	Medical-Problem 309 321	pneumothorax
+T7	Medical-Problem 328 366	heart size appears borderline enlarged
+E5	Medical-Problem:T7
+T8	Medical-Anatomy 407 411	Hila
+T9	Medical-Assertion 435 450	could be due to
+A3	Medical-AssertionValue T9 possible
+T10	Lesion-Characteristic 451 459	enlarged
+T11	Lesion-Description 461 472	lymph nodes
+T12	Medical-Problem 476 492	hilar congestion
+T13	Medical-Problem 566 586	multifocal pneumonia
+E10	Medical-Problem:T13
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E8	Lesion-Description:T11 has-Lesion-Characteristic:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

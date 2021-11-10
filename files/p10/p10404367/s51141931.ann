@@ -1,0 +1,30 @@
+T1	Medical-Problem 366 383	mild cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Assertion 395 404	no longer
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 407 444	mild diffuse interstitial abnormality
+T4	Medical-Problem 450 470	persistent opacities
+T5	Medical-Anatomy 488 498	lung bases
+T6	Medical-Problem 504 516	reticulation
+T7	Medical-Problem 519 527	scarring
+T8	Medical-Problem 531 556	interstitial lung disease
+T9	Medical-Assertion 557 576	could be considered
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 594 596	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 597 619	definite acute process
+T12	Medical-Assertion 631 659	raising concern for possible
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 661 697	underlying mild interstitial disease
+T14	Medical-Anatomy 705 715	lung bases
+T15	Medical-Problem 723 733;735 743	persistent scarring
+T16	Medical-Problem 747 758	atelectasis
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12 has-Medical-Anatomy:T14
+E11	Medical-Problem:T15 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T12

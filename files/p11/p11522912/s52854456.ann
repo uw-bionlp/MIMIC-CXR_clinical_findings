@@ -1,0 +1,25 @@
+T1	Medical-Problem 260 281	moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 293 320	bilateral pleural effusions
+E2	Medical-Problem:T2
+T3	Medical-Problem 358 367;369 392	pulmonary vascular redistribution
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 405 439	left upper lobe and right mid lung
+T5	Medical-Problem 440 444;446 465	hazy alveolar infiltrate
+T6	Medical-Assertion 471 496	could be partially due to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 497 508	volume loss
+T8	Medical-Problem 513 521;523 528	alveolar edema
+T9	Medical-Problem 536 568	underlying infectious infiltrate
+T10	Medical-Assertion 569 586	can't be excluded
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 606 631	Increased pulmonary edema
+E9	Medical-Problem:T11
+T12	Medical-Problem 636 668	underlying infectious infiltrate
+T13	Medical-Assertion 669 677;679 687	can't be excluded
+A3	Medical-AssertionValue T13 possible
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T13

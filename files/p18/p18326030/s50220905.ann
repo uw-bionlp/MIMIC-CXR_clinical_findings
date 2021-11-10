@@ -1,0 +1,21 @@
+T1	Medical-Problem 558 594	stable small layering right effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 602 630	likely smaller left effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 634 657	Patchy linear opacities
+T4	Medical-Anatomy 661 671	both bases
+T5	Medical-Assertion 688 705	likely reflecting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 706 712;714 725	patchy atelectasis
+T7	Medical-Problem 736 745	pneumonia
+T8	Medical-Problem 749 759	aspiration
+T9	Medical-Assertion 760 787	cannot be entirely excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 819 821	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 822 834	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

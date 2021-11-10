@@ -1,0 +1,33 @@
+T1	Medical-Problem 374 411;413 421	moderate right and small left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 427 449	right pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 510 545	Overlying right basilar atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Problem 556 561	Right
+E4	Medical-Problem:T4
+T5	Medical-Assertion 576 598	most likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 614 630	pleural effusion
+T7	Medical-Problem 636 647	atelectasis
+T8	Medical-Problem 653 677	underlying consolidation
+T9	Medical-Assertion 681 697	not excluded.The
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 802 829	small left pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Anatomy 875 885	Right base
+T12	Medical-Problem 886 893	opacity
+T13	Medical-Assertion 894 909	likely presents
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 925 941	pleural effusion
+T15	Medical-Problem 947 958	atelectasis
+T16	Medical-Problem 964 988	underlying consolidation
+T17	Medical-Assertion 989 1007	cannot be excluded
+A4	Medical-AssertionValue T17 possible
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T11 has-Medical-Assertion:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T11 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T11 has-Medical-Assertion:T17

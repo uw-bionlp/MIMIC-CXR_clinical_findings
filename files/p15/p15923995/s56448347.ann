@@ -1,0 +1,22 @@
+T1	Medical-Problem 302 309	opacity
+T2	Medical-Anatomy 317 359;361 367	left lower lung obscuring the left cardiac border
+T3	Medical-Assertion 409 428	probably represents
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 429 438	pneumonia
+T5	Medical-Anatomy 451 458	lingula
+T6	Medical-Assertion 501 503	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 504 511;513 522	pleural effusions
+T8	Medical-Problem 526 538	pneumothorax
+T9	Medical-Problem 559 566	Opacity
+T10	Medical-Anatomy 574 589	left lower lung
+T11	Medical-Assertion 590 600	suggesting
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 601 610	pneumonia
+T13	Medical-Anatomy 627 634	lingula
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11 has-Medical-Anatomy:T13

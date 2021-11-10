@@ -1,0 +1,26 @@
+T1	Lesion-Characteristic 335 344	Extensive
+T2	Lesion-Anatomy 345 354	pulmonary
+T3	Lesion-Description 355 365	metastases
+T4	Medical-Assertion 406 416	suggestion
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 420 437	new cavitation in
+T6	Medical-Problem 500 506	sepsis
+T7	Medical-Problem 511 525	superinfection
+T8	Medical-Assertion 526 544	may have developed
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 572 595	Small pleural effusions
+E7	Medical-Problem:T9
+T10	Lesion-Characteristic 628 637	Extensive
+T11	Lesion-Characteristic 638 643	lytic
+T12	Lesion-Characteristic 648 655	blastic
+T13	Lesion-Anatomy 656 665	pulmonary
+T14	Lesion-Description 666 676	metastases
+T15	Medical-Assertion 726 728	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 729 758	definite compression fracture
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

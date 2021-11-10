@@ -1,0 +1,19 @@
+T1	Medical-Assertion 261 263	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 264 283	pleural abnormality
+T3	Lesion-Anatomy 286 290	Hila
+T4	Lesion-Assertion 317 319	do
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Description 332 342	adenopathy
+T6	Medical-Problem 356 374;376 385	rightward tracheal deviation
+T7	Medical-Anatomy 393 419	neck to the thoracic inlet
+T8	Lesion-Assertion 426 441	could be due to
+A3	Lesion-AssertionValue T8 possible
+T9	Lesion-Description 442 452;454 465	lymph node enlargement
+T10	Lesion-Anatomy 471 478	thyroid
+T11	Lesion-Description 479 483	mass
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E6	Lesion-Description:T9 has-Lesion-Assertion:T8
+E8	Lesion-Description:T11 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T10

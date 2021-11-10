@@ -1,0 +1,20 @@
+T1	Medical-Assertion 430 437	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 439 453	consolidations
+T3	Lesion-Characteristic 457 467	suspicious
+T4	Lesion-Anatomy 468 477	pulmonary
+T5	Lesion-Description 478 485	nodules
+T6	Medical-Assertion 487 489	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 490 511	pleural abnormalities
+T8	Medical-Assertion 607 609	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Assertion 610 631	radiographic evidence
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 635 644	pneumonia
+T11	Medical-Problem 648 681;683 696	other significant cardiopulmonary abnormalities
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T10 has-Medical-Assertion:T8 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T8 has-Medical-Assertion:T9

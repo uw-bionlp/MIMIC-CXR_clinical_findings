@@ -1,0 +1,23 @@
+T1	Medical-Problem 341 388	interval increase in the subcutaneous emphysema
+T2	Medical-Anatomy 404 450	right lateral chest wall and neck soft tissues
+T3	Medical-Problem 501 529	stable postoperative changes
+T4	Medical-Anatomy 537 553	right hemithorax
+T5	Medical-Problem 560 582	associated volume loss
+T6	Medical-Assertion 585 587	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 588 600	pneumothorax
+T8	Medical-Assertion 702 704	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 705 714;716 721	pulmonary edema
+T10	Medical-Problem 726 738	tiny lucency
+T11	Medical-Anatomy 762 781	right hemidiaphragm
+T12	Medical-Assertion 782 785;787 796	may represent
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 797 813	pneumoperitoneum
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

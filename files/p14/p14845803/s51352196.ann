@@ -1,0 +1,29 @@
+T1	Medical-Assertion 29 40	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 44 57	acute disease
+T3	Lesion-Anatomy 81 92	left apical
+T4	Lesion-Description 93 99	nodule
+T5	Medical-Assertion 692 694	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 695 702;704 713	pleural effusions
+T7	Medical-Problem 717 729	pneumothorax
+T8	Lesion-Description 743 750	nodular
+E6	Lesion-Description:T8
+T9	Lesion-Description 751 758	opacity
+T10	Lesion-Anatomy 780 789	left apex
+T11	Medical-Problem 984 1015;1017 1027	apparent change in radiographic appearance
+E9	Medical-Problem:T11
+T12	Medical-Assertion 1138 1149	No evidence
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 1153 1166	acute disease
+T14	Lesion-Size-Trend 1177 1197	Apparent increase in
+A4	Lesion-Size-TrendValue T14 increasing
+T15	Lesion-Anatomy 1198 1209	left apical
+T16	Lesion-Description 1210 1225	nodular opacity
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Lesion-Description:T16 has-Lesion-Size-Trend:T14 has-Lesion-Anatomy:T15

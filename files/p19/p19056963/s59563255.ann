@@ -1,0 +1,44 @@
+T1	Medical-Assertion 119 121	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 122 145	radiopaque foreign body
+T3	Medical-Problem 416 428	foreign body
+E2	Medical-Problem:T3
+T4	Medical-Problem 495 553	two partially imaged cylindrical radiodense foreign bodies
+T5	Medical-Anatomy 582 613	inferior aspect of the mandible
+T6	Lesion-Characteristic 865 877	asymmetrical
+T7	Lesion-Size 878 893	1.6 cm diameter
+T8	Lesion-Description 895 902	opacity
+T9	Lesion-Anatomy 918 966;968 1008	right apex above the level of the right clavicle overlying the fourth posterior rib level
+T10	Lesion-Anatomy 1066 1070	lung
+T11	Lesion-Description 1071 1077	nodule
+T12	Medical-Problem 1084 1095	abnormality
+T13	Medical-Anatomy 1103 1106	rib
+T14	Medical-Problem 1109 1117;1119 1131	Moderate cardiomegaly
+E13	Medical-Problem:T14
+T15	Medical-Problem 1150 1184	mild pulmonary vascular congestion
+E14	Medical-Problem:T15
+T16	Medical-Problem 1189 1196;1198 1216	minimal interstitial edema
+E15	Medical-Problem:T16
+T17	Medical-Problem 1238 1243	Right
+E16	Medical-Problem:T17
+T18	Lesion-Description 1251 1258	nodular
+E17	Lesion-Description:T18
+T19	Medical-Assertion 1273 1290	may be related to
+A2	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1293 1304;1306 1317	rib or lung abnormality
+T21	Medical-Problem 1511 1523	Cardiomegaly
+E19	Medical-Problem:T21
+T22	Medical-Problem 1528 1551	mild interstitial edema
+E20	Medical-Problem:T22
+T23	Medical-Assertion 1558 1569	No evidence
+A3	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1573 1594	ingested foreign body
+T25	Medical-Anatomy 1602 1620	thoracic esophagus
+T26	Medical-Anatomy 1624 1631	stomach
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E18	Medical-Problem:T20 has-Medical-Assertion:T19
+E21	Medical-Problem:T24 has-Medical-Assertion:T23 has-Medical-Anatomy:T25 has-Medical-Anatomy:T26

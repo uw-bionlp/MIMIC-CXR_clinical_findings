@@ -1,0 +1,17 @@
+T1	Medical-Problem 240 250;252 275	multifocal heterogeneous opacities
+T2	Medical-Anatomy 283 298	left lower lobe
+T3	Medical-Anatomy 300 316	right lower lobe
+T4	Medical-Anatomy 322 329	lingula
+T5	Medical-Assertion 331 345	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 346 355	pneumonia
+T7	Medical-Assertion 444 446	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 447 463	pleural effusion
+T9	Medical-Problem 467 479	pneumothorax
+T10	Medical-Problem 497 517	Multifocal pneumonia
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

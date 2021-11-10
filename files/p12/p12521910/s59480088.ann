@@ -1,0 +1,28 @@
+T1	Lesion-Characteristic 436 445	calcified
+T2	Lesion-Anatomy 446 457	right hilar
+T3	Lesion-Description 458 469	lymph nodes
+T4	Lesion-Characteristic 470 489;491 514	suggestive of prior granulomatous infection
+T5	Medical-Problem 517 533	Lung volumes are
+E5	Medical-Problem:T5
+T6	Medical-Problem 534 546	slightly low
+T7	Medical-Problem 552 568	patchy opacities
+T8	Medical-Anatomy 573 608	both bases, left greater than right
+T9	Medical-Problem 628 639	atelectasis
+E9	Medical-Problem:T9
+T10	Medical-Problem 651 660	pneumonia
+T11	Medical-Problem 664 674	aspiration
+T12	Medical-Assertion 675 700	should also be considered
+A1	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 702 713	No evidence
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 718 733	pulmonary edema
+T15	Medical-Assertion 735 737	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 738 750	pneumothorax
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2 has-Lesion-Characteristic:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Assertion:T12
+E11	Medical-Problem:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

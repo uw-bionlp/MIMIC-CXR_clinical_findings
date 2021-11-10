@@ -1,0 +1,39 @@
+T1	Medical-Problem 511 530	rightward deviation
+T2	Medical-Anatomy 538 545	trachea
+T3	Lesion-Anatomy 551 564;566 577	left superior mediastinal
+T4	Lesion-Description 578 582	mass
+T5	Lesion-Anatomy 636 641	Hilar
+E5	Lesion-Anatomy:T5
+T6	Medical-Assertion 693 696	not
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 697 705	engorged
+T8	Medical-Problem 708 720	Subsegmental
+E7	Medical-Problem:T8
+T9	Medical-Problem 722 733	atelectasis
+T10	Medical-Anatomy 750 760	lung bases
+T11	Medical-Assertion 761 768	without
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 769 788	focal consolidation
+T13	Medical-Assertion 791 793	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 795 811	pleural effusion
+T15	Medical-Problem 815 827	pneumothorax
+T16	Medical-Problem 846 852	Marked
+E13	Medical-Problem:T16
+T17	Medical-Problem 853 873	degenerative changes
+T18	Medical-Anatomy 882 906	left glenohumeral joints
+T19	Medical-Anatomy 911 937	remote right posterior rib
+T20	Medical-Assertion 980 982	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 983 998	pulmonary edema
+T22	Medical-Problem 1002 1011	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T20

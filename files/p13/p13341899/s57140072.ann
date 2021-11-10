@@ -1,0 +1,27 @@
+T1	Medical-Assertion 268 270	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 271 287	pleural effusion
+T3	Medical-Problem 289 308	focal consolidation
+T4	Medical-Problem 312 324	pneumothorax
+T5	Lesion-Anatomy 404 411;413 423	Osseous structures
+T6	Lesion-Count 436 444	numerous
+T7	Lesion-Characteristic 445 450	lytic
+T8	Lesion-Description 451 458	lesions
+T9	Medical-Problem 523 555	multiple compression deformities
+T10	Medical-Anatomy 568 598	T9-T10 and L1 vertebral bodies
+T11	Medical-Assertion 647 658	No evidence
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 662 691	acute cardiopulmonary process
+T13	Lesion-Count 700 708	Numerous
+T14	Lesion-Characteristic 709 716	osseous
+T15	Lesion-Characteristic 717 722	lytic
+T16	Lesion-Description 723 730	lesions
+T17	Medical-Problem 794 850	Multiple compression deformities of uncertain chronicity
+E15	Medical-Problem:T17
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T5 has-Lesion-Count:T6 has-Lesion-Characteristic:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E14	Lesion-Description:T16 has-Lesion-Count:T13 has-Lesion-Characteristic:T14 has-Lesion-Characteristic:T15

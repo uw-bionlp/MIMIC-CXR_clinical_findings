@@ -1,0 +1,24 @@
+T1	Medical-Problem 280 285;287 300	dense consolidation
+T2	Medical-Anatomy 308 361;363 376	anterior segment of the right upper lobe abutting the minor fissure
+T3	Medical-Assertion 378 388	compatible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 394 403	pneumonia
+T5	Medical-Problem 428 441	vague opacity
+T6	Medical-Anatomy 457 519	left heart border projecting anteriorly in the left lower lung
+T7	Medical-Assertion 521 534	suggestive of
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 535 544	pneumonia
+T9	Medical-Anatomy 561 568	lingula
+T10	Medical-Problem 593 598;600 622	small right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 661 672;674 707	Mediastinal contour is also somewhat obscured
+E9	Medical-Problem:T11
+T12	Medical-Problem 864 884	Multifocal pneumonia
+E10	Medical-Problem:T12
+T13	Lesion-Characteristic 932 942	underlying
+T14	Lesion-Description 943 949	lesion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T13

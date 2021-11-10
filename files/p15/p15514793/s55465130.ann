@@ -1,0 +1,42 @@
+T1	Medical-Problem 203 223	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 226 249	Cardiac silhouette size
+T3	Medical-Assertion 250 257	appears
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 258 276;278 286	mild to moderately enlarged
+T5	Medical-Anatomy 339 348;350 361	Pulmonary vasculature
+T6	Medical-Assertion 365 368	not
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 369 377	engorged
+T8	Medical-Problem 380 407	Patchy and linear opacities
+T9	Medical-Anatomy 426 436	lung bases
+T10	Medical-Problem 449 482	small bilateral pleural effusions
+E8	Medical-Problem:T10
+T11	Medical-Assertion 485 487	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 488 500	pneumothorax
+T13	Medical-Assertion 516 518	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 519 544	acute osseous abnormality
+T15	Medical-Problem 558 579;581 603	Gaseous distention of colonic loops of bowel
+T16	Medical-Anatomy 620 654	left upper quadrant of the abdomen
+T17	Medical-Problem 675 712	Bibasilar patchy and linear opacities
+E13	Medical-Problem:T17
+T18	Medical-Assertion 713 724	may reflect
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 725 745	areas of atelectasis
+T20	Medical-Problem 754 763	infection
+T21	Medical-Problem 767 777	aspiration
+T22	Medical-Assertion 778 796	cannot be excluded
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 799 822;824 833	Small bilateral pleural effusions
+E17	Medical-Problem:T23
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T18 has-Medical-Assertion:T22
+E16	Medical-Problem:T21 has-Medical-Assertion:T18 has-Medical-Assertion:T22

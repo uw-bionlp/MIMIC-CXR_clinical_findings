@@ -1,0 +1,29 @@
+T1	Medical-Problem 373 383	prominence
+T2	Medical-Anatomy 391 400;402 407	ascending aorta
+T3	Medical-Problem 445 459	Linear opacity
+T4	Medical-Anatomy 467 476;478 482	left lung base
+T5	Medical-Assertion 483 495	has resolved
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Assertion 508 510	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 511 535	new focal consolidations
+T8	Lesion-Anatomy 568 582	left lung base
+T9	Lesion-Description 583 590	nodular
+E7	Lesion-Description:T9
+T10	Lesion-Description 591 598	opacity
+T11	Lesion-Assertion 602 622	no longer identified
+A3	Lesion-AssertionValue T11 absent
+T12	Medical-Assertion 730 732	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 733 750	pleural effusions
+T14	Medical-Problem 754 766	pneumothorax
+T15	Medical-Assertion 824 848	No radiographic evidence
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 855 884	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

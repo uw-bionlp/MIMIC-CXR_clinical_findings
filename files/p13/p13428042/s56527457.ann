@@ -1,0 +1,22 @@
+T1	Medical-Assertion 317 319	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 320 327;329 337	pleural effusion
+T3	Medical-Problem 341 353	pneumothorax
+T4	Medical-Problem 360 365	chest
+E3	Medical-Problem:T4
+T5	Medical-Problem 369 389	mildly hyperinflated
+E4	Medical-Problem:T5
+T6	Medical-Problem 394 403;405 424	prominent anterior osteophyte
+T7	Medical-Anatomy 442 467	lower thoracic interspace
+T8	Medical-Anatomy 469 481;483 494	mid thoracic interspaces
+T9	Medical-Assertion 495 501	appear
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 502 517	mildly narrowed
+T11	Medical-Assertion 535 546	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 550 563	acute disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

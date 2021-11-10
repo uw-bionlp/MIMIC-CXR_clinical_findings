@@ -1,0 +1,19 @@
+T1	Medical-Assertion 354 356	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Assertion 408 419	no evidence
+A2	Medical-AssertionValue T2 absent
+T3	Medical-Problem 423 442	active tuberculosis
+T4	Medical-Problem 445 453	Scarring
+T5	Medical-Anatomy 461 477	right lower lobe
+T6	Medical-Anatomy 497 506	left apex
+T7	Medical-Problem 539 550	Enlargement
+T8	Medical-Anatomy 558 563;565 581	right pulmonary artery
+T9	Medical-Assertion 585 603	most likely due to
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 604 626	pulmonary hypertension
+T11	Medical-Problem 628 643;645 653	Cardiomegaly is moderate
+E8	Medical-Problem:T11
+E1	Medical-Problem:T3 has-Medical-Assertion:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

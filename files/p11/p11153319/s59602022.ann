@@ -1,0 +1,34 @@
+T1	Medical-Problem 298 320	subtle interval change
+E1	Medical-Problem:T1
+T2	Medical-Problem 577 601	heart is mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Assertion 608 628	most likely reflects
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 629 641	cardiomegaly
+T5	Medical-Problem 653 673	pericardial effusion
+T6	Medical-Assertion 674 692	cannot be excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Anatomy 699 704	lungs
+T8	Medical-Problem 709 722	hyperinflated
+T9	Medical-Assertion 724 734	suggesting
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 735 755	underlying emphysema
+T11	Medical-Problem 758 766	Blunting
+T12	Medical-Anatomy 770 797;799 805	both posterior costophrenic angles
+T13	Medical-Assertion 806 821	likely reflects
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 822 837	small effusions
+T15	Medical-Assertion 840 851	No evidence
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 855 870	pulmonary edema
+T17	Medical-Assertion 873 875	No
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 877 889	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T18 has-Medical-Assertion:T17

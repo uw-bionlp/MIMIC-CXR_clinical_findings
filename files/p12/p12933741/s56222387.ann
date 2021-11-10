@@ -1,0 +1,23 @@
+T1	Medical-Problem 546 566	pericardial effusion
+T2	Medical-Assertion 568 579	less likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 591 615	diffuse airspace process
+E2	Medical-Problem:T3
+T4	Medical-Assertion 622 635	may represent
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 636 642;644 659	severe pulmonary edema
+T6	Medical-Problem 670 680	aspiration
+T7	Medical-Problem 684 694	hemorrhage
+T8	Medical-Assertion 695 715;717 727	could also have this appearance
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 730 737	Lucency
+T10	Medical-Anatomy 745 774	left deep costophrenic sulcus
+T11	Medical-Assertion 873 875;877 885	no evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 891 903	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T8
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T8
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

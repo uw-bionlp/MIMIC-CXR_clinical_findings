@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 249 259	Both lungs
+T2	Medical-Assertion 265 267	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 268 273;275 288	focal consolidation
+T4	Medical-Problem 290 306	pleural effusion
+T5	Medical-Problem 310 322	pneumothorax
+T6	Medical-Problem 325 345;347 358	Minimal left basilar atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Problem 370 400	Slightly prominent right hilum
+E6	Medical-Problem:T7
+T8	Lesion-Count 441 444	Two
+T9	Lesion-Size 445 450	small
+T10	Lesion-Characteristic 451 460	calcified
+T11	Lesion-Description 461 468	nodules
+T12	Lesion-Anatomy 486 501	left upper lobe
+T13	Lesion-Assertion 504 516	which may be
+A2	Lesion-AssertionValue T13 possible
+T14	Lesion-Description 517 527	granulomas
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E10	Lesion-Description:T11 has-Lesion-Count:T8 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E12	Lesion-Description:T14 has-Lesion-Assertion:T13

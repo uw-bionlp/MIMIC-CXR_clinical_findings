@@ -1,0 +1,29 @@
+T1	Medical-Problem 351 373	right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 430 432	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 433 445	pneumothorax
+T4	Medical-Problem 447 465	Linear atelectasis
+T5	Medical-Anatomy 482 497	right lung base
+T6	Medical-Problem 516 540;542 553	left retrocardiac linear atelectasis
+T7	Medical-Assertion 554 573	has mostly resolved
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 576 602	New subtle focal opacities
+T9	Medical-Anatomy 610 615;617 635	right upper and mid lung
+T10	Medical-Problem 669 702	Decreased right pleural effusion,
+E8	Medical-Problem:T10
+T11	Medical-Problem 719 738	New focal opacities
+T12	Medical-Anatomy 746 770	right upper and mid lung
+T13	Medical-Assertion 781 792;794 806	less likely to represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 807 818	atelectasis
+T15	Medical-Problem 820 829	Infection
+T16	Medical-Assertion 830 848	cannot be excluded
+A4	Medical-AssertionValue T16 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T16

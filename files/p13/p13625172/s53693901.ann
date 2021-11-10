@@ -1,0 +1,36 @@
+T1	Lesion-Characteristic 272 281	Irregular
+T2	Lesion-Characteristic 282 292	spiculated
+T3	Lesion-Description 293 297	mass
+T4	Lesion-Anatomy 310 323	left mid lung
+T5	Lesion-Size-Trend 327 343	similar to prior
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Description 451 455	mass
+E5	Lesion-Description:T6
+T7	Lesion-Assertion 458 460	No
+A2	Lesion-AssertionValue T7 absent
+T8	Lesion-Description 468 479	mass lesion
+T9	Lesion-Characteristic 483 493	suspicious
+T10	Lesion-Anatomy 494 503	pulmonary
+T11	Lesion-Description 504 510	nodule
+T12	Medical-Assertion 536 538	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 540 556	pleural effusion
+T14	Medical-Problem 617 638	Moderate cardiomegaly
+E11	Medical-Problem:T14
+T15	Medical-Assertion 663 665	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 666 678	pneumothorax
+T17	Lesion-Size-Trend 696 713	Stable appearance
+A5	Lesion-Size-TrendValue T17 no-change
+T18	Lesion-Anatomy 723 727	left
+T19	Lesion-Description 748 757	carcinoma
+T20	Medical-Assertion 761 763	No
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 764 790	superimposed acute process
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T5
+E6	Lesion-Description:T8 has-Lesion-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Assertion:T7 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Lesion-Description:T19 has-Lesion-Size-Trend:T17 has-Lesion-Anatomy:T18
+E15	Medical-Problem:T21 has-Medical-Assertion:T20

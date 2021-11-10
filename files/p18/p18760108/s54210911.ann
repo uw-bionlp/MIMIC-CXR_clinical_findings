@@ -1,0 +1,16 @@
+T1	Medical-Assertion 131 142	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 146 173	post-procedure pneumothorax
+T3	Lesion-Characteristic 182 196	indistinctness
+T4	Lesion-Anatomy 204 220	right upper lobe
+T5	Lesion-Description 221 225	mass
+T6	Medical-Assertion 226 239	could reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 240 255;257 265	some procedural bleeding
+T8	Medical-Assertion 270 272	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 273 297	definite acute pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

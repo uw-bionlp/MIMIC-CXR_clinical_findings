@@ -1,0 +1,23 @@
+T1	Medical-Problem 220 244	Left lower lobe collapse
+E1	Medical-Problem:T1
+T2	Medical-Problem 258 288	new leftward mediastinal shift
+E2	Medical-Problem:T2
+T3	Medical-Assertion 321 332	may also be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 333 366	small bilateral pleural effusions
+T5	Medical-Anatomy 406 411	heart
+T6	Medical-Assertion 415 418	not
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 419 427	enlarged
+T8	Medical-Assertion 584 586	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 587 599	pneumothorax
+T10	Medical-Problem 604 614	Aspiration
+E7	Medical-Problem:T10
+T11	Medical-Assertion 615 636	could be contributing
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 640 664	left lower lobe collapse
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

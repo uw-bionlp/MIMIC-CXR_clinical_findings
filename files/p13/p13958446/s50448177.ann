@@ -1,0 +1,35 @@
+T1	Medical-Problem 252 285	slight diffuse hazy opacification
+T2	Medical-Anatomy 293 298	lungs
+T3	Medical-Problem 311 326	mild prominence
+T4	Medical-Anatomy 334 355	pulmonary vasculature
+T5	Medical-Problem 360 372	cardiomegaly
+E5	Medical-Problem:T5
+T6	Medical-Assertion 391 398	suggest
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 399 455	mild pulmonary edema secondary to cardiac decompensation
+T8	Medical-Problem 462 467;469 486	lungs are hyperinflated
+E7	Medical-Problem:T8
+T9	Medical-Assertion 498 500	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 501 517	pleural effusion
+T11	Lesion-Size 523 526	8mm
+T12	Lesion-Anatomy 527 543	right upper lobe
+T13	Lesion-Description 545 552	opacity
+T14	Lesion-Assertion 553 558	could
+A3	Lesion-AssertionValue T14 possible
+T15	Medical-Problem 564 568	lung
+E12	Medical-Problem:T15
+T16	Lesion-Description 569 574	nodue
+T17	Medical-Problem 674 730	Mild pulmonary edema secondary to cardiac decompensation
+E14	Medical-Problem:T17
+T18	Lesion-Assertion 734 742	Possible
+A4	Lesion-AssertionValue T18 possible
+T19	Lesion-Anatomy 743 764	right upper lobe lung
+T20	Lesion-Description 765 771	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T12
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T12 has-Lesion-Assertion:T14
+E16	Lesion-Description:T20 has-Lesion-Assertion:T18 has-Lesion-Anatomy:T19

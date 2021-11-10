@@ -1,0 +1,57 @@
+T1	Medical-Problem 91 110;112 130	new small bilateral  pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 137 180	Slightly more confluent bibasilar opacities
+E2	Medical-Problem:T2
+T3	Medical-Assertion 181 192	potentially
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 193 204	atelectasis
+T5	Medical-Problem 210 215	edema
+T6	Medical-Assertion 217 248	clinically correlate to exclude
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 249 258	pneumonia
+T8	Lesion-Anatomy 271 294	right basilar pulmonary
+T9	Lesion-Description 295 301	nodule
+T10	Medical-Problem 654 679	degree of pulmonary edema
+E8	Medical-Problem:T10
+T11	Medical-Problem 698 721	Bibasilar opacities are
+E9	Medical-Problem:T11
+T12	Lesion-Description 794 800	nodule
+E10	Lesion-Description:T12
+T13	Lesion-Size-Trend 863 866	new
+A3	Lesion-Size-TrendValue T13 new
+T14	Lesion-Size 867 872	small
+E11	Lesion-Size:T14
+T15	Medical-Problem 873 900	bilateral pleural effusions
+E12	Medical-Problem:T15
+T16	Medical-Problem 903 927	Mild cardiac enlargement
+E13	Medical-Problem:T16
+T17	Medical-Problem 934 969	dense mitral annular calcifications
+E14	Medical-Problem:T17
+T18	Medical-Assertion 986 988	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 989 1002;1004 1017	acute osseous abnormalities
+T20	Medical-Problem 1020 1043	Oblong calcific density
+E16	Medical-Problem:T20
+T21	Medical-Problem 1145 1160	pulmonary edema
+E17	Medical-Problem:T21
+T22	Medical-Problem 1166 1185;1187 1204	new small bilateral pleural effusions
+E18	Medical-Problem:T22
+T23	Medical-Problem 1224 1253	confluent bibasilar opacities
+E19	Medical-Problem:T23
+T24	Medical-Assertion 1254 1265	potentially
+A5	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1266 1277	atelectasis
+T26	Medical-Problem 1282 1287	edema
+T27	Medical-Problem 1321 1330	pneumonia
+T28	Lesion-Description 1366 1372	nodule
+T29	Lesion-Assertion 1376 1387	not clearly
+A6	Lesion-AssertionValue T29 absent
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T8
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E20	Medical-Problem:T25 has-Medical-Assertion:T24
+E21	Medical-Problem:T26 has-Medical-Assertion:T24
+E22	Medical-Problem:T27 has-Medical-Assertion:T24
+E23	Lesion-Description:T28 has-Lesion-Assertion:T29

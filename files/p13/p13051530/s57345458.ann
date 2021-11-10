@@ -1,0 +1,22 @@
+T1	Medical-Problem 322 340	reticular markings
+T2	Medical-Anatomy 367 382	right lung base
+T3	Lesion-Anatomy 471 486	left lower lobe
+T4	Lesion-Description 487 503	masslike opacity
+T5	Lesion-Characteristic 519 527	Enlarged
+E5	Lesion-Characteristic:T5
+T6	Medical-Anatomy 528 533	right
+T7	Medical-Problem 570 601	enlarged right pulmonary artery
+T8	Medical-Assertion 612 614	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 615 622;624 632	pleural effusion
+T10	Medical-Problem 636 648	pneumothorax
+T11	Medical-Problem 654 701	cardiomediastinal silhouette is mildly enlarged
+E10	Medical-Problem:T11
+T12	Medical-Problem 794 812	reticular markings
+T13	Medical-Anatomy 820 835	right lung base
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13

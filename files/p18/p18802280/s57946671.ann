@@ -1,0 +1,42 @@
+T1	Medical-Problem 315 325;327 332	persistent bulla
+T2	Medical-Anatomy 340 366	posterior right lower lobe
+T3	Medical-Problem 413 440	Persistent linear opacities
+T4	Medical-Anatomy 448 463	right lung base
+T5	Medical-Assertion 464 470;472 481	likely represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 482 490	scarring
+T7	Medical-Assertion 531 538	without
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 539 546;548 556	pleural effusion
+T9	Medical-Assertion 559 561	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 562 574	pneumothorax
+T11	Medical-Anatomy 592 597	lungs
+T12	Medical-Problem 602 620;622 650	hyperinflated with coarse interstitial markings
+T13	Medical-Problem 667 692	background COPD/emphysema
+T14	Medical-Assertion 824 831	without
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 832 855	new focal consolidation
+T16	Medical-Anatomy 969 983	thoracic aorta
+T17	Medical-Problem 987 1002	mildly tortuous
+T18	Medical-Problem 1005 1015;1017 1026	Healed rib fractures
+E14	Medical-Problem:T18
+T19	Medical-Problem 1083 1097	COPD/emphysema
+E15	Medical-Problem:T19
+T20	Medical-Problem 1103 1118	stable scarring
+T21	Medical-Anatomy 1127 1142	right lung base
+T22	Medical-Anatomy 1149 1181	posterior right lower lobe bulla
+T23	Medical-Assertion 1182 1198	without evidence
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1203 1218	acute infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Anatomy:T16
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21 has-Medical-Anatomy:T22
+E19	Medical-Problem:T24 has-Medical-Anatomy:T21 has-Medical-Anatomy:T22 has-Medical-Assertion:T23

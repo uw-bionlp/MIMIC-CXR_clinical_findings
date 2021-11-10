@@ -1,0 +1,29 @@
+T1	Medical-Problem 347 403	Multifocal pulmonary opacities with basilar predominance
+T2	Medical-Anatomy 435 450	left lower lobe
+T3	Lesion-Count 483 491	multiple
+T4	Lesion-Characteristic 493 507	poorly defined
+T5	Lesion-Description 508 515	nodular
+E5	Lesion-Description:T5
+T6	Lesion-Description 516 525	opacities
+T7	Lesion-Anatomy 534 545	bilaterally
+T8	Medical-Assertion 562 565;567 574	may reflect
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 592 601	infection
+T10	Medical-Problem 606 616	hemorrhage
+T11	Medical-Problem 662 690	Small right pleural effusion
+E10	Medical-Problem:T11
+T12	Medical-Problem 711 724;726 742	moderate left pleural effusion
+E11	Medical-Problem:T12
+T13	Lesion-Characteristic 768 778	Multifocal
+T14	Lesion-Characteristic 779 788	sclerotic
+T15	Lesion-Characteristic 789 797	skeletal
+T16	Lesion-Description 799 806	lesions
+T17	Lesion-Size-Trend 811 820	unchanged
+A2	Lesion-Size-TrendValue T17 no-change
+T18	Medical-Problem 858 868;870 879	Healed rib fractures
+E16	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Count:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E15	Lesion-Description:T16 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T14 has-Lesion-Characteristic:T15 has-Lesion-Size-Trend:T17

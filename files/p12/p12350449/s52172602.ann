@@ -1,0 +1,18 @@
+T1	Medical-Problem 204 217	New opacities
+T2	Medical-Anatomy 225 256	right apex and right lower lobe
+T3	Medical-Assertion 261 274	worrisome for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 276 286	aspiration
+T5	Medical-Assertion 298 300	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 301 313	pneumothorax
+T7	Medical-Problem 317 333	pleural effusion
+T8	Medical-Problem 336 343;345 356	Minimal atelectases
+T9	Medical-Anatomy 376 391	left lower lobe
+T10	Medical-Problem 394 406	Cardiomegaly
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9

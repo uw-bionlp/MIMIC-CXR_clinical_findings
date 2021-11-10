@@ -1,0 +1,23 @@
+T1	Medical-Problem 300 324;326 330	right apical hyperlucent zone
+E1	Medical-Problem:T1
+T2	Medical-Problem 381 393	pneumothorax
+E2	Medical-Problem:T2
+T3	Medical-Problem 414 436	Right pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 461 470;472 485	increased opacification
+T5	Medical-Anatomy 493 508	left lower lung
+T6	Medical-Assertion 509 526	likely related to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 545 561	pleural effusion
+T8	Medical-Problem 566 577	atelectasis
+T9	Medical-Problem 641 675	Right apical hyperlucent zone with
+E8	Medical-Problem:T9
+T10	Medical-Problem 676 700	no definite pleural line
+E9	Medical-Problem:T10
+T11	Medical-Assertion 703 717	concerning for
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 720 736	new pneumothorax
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

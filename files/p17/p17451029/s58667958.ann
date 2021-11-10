@@ -1,0 +1,46 @@
+T1	Medical-Problem 29 59	Moderate left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 65 85	adjacent atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 87 97;99 113	underlying  consolidation
+T4	Medical-Assertion 114 126	not excluded
+A1	Medical-AssertionValue T4 possible
+T5	Lesion-Size 128 133	Small
+T6	Lesion-Description 134 151	nodular opacities
+T7	Lesion-Anatomy 159 174	right lung base
+T8	Medical-Assertion 175 178;180 193	may  also reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 882 898	appears enlarged
+E7	Medical-Problem:T9
+T10	Medical-Anatomy 913 930	left heart border
+T11	Medical-Problem 961 988	elevated left hemidiaphragm
+T12	Medical-Problem 994 1021;1023 1031	moderate-sized left pleural effusion
+T13	Medical-Problem 1037 1078	associated partial lower lobe atelectasis
+T14	Medical-Problem 1083 1093	underlying
+E12	Medical-Problem:T14
+T15	Lesion-Description 1094 1098	mass
+T16	Lesion-Assertion 1113 1131	cannot be excluded
+A3	Lesion-AssertionValue T16 possible
+T17	Lesion-Count 1135 1138	few
+T18	Lesion-Description 1145 1162	nodular opacities
+T19	Lesion-Anatomy 1170 1179	left apex
+T20	Lesion-Anatomy 1278 1287	pulmonary
+T21	Lesion-Description 1288 1295	nodules
+T22	Medical-Assertion 1345 1356	no evidence
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1360 1375	pulmonary edema
+T24	Medical-Assertion 1378 1380	No
+A5	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1381 1393	pneumothorax
+T26	Medical-Problem 1415 1442	subtle ground-glass opacity
+E21	Medical-Problem:T26
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10
+E13	Lesion-Description:T15 has-Lesion-Assertion:T16
+E15	Lesion-Description:T18 has-Lesion-Count:T17 has-Lesion-Anatomy:T19
+E18	Lesion-Description:T21 has-Lesion-Anatomy:T20
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T25 has-Medical-Assertion:T24

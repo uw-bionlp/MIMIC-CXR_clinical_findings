@@ -1,0 +1,29 @@
+T1	Medical-Problem 276 297	Platelike atelectasis
+T2	Medical-Anatomy 305 322;324 334	bases of the left lower lobe
+T3	Medical-Problem 336 355	Moderate tortuosity
+T4	Medical-Anatomy 363 377	thoracic aorta
+T5	Medical-Problem 379 401;403 421	Borderline size of the cardiac silhouette
+E5	Medical-Problem:T5
+T6	Medical-Assertion 422 429	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 430 445	pulmonary edema
+T8	Medical-Problem 449 465	pleural effusion
+T9	Medical-Assertion 468 470	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 471 480	pneumonia
+T11	Lesion-Assertion 483 485	no
+A3	Lesion-AssertionValue T11 absent
+T12	Lesion-Anatomy 486 490	lung
+T13	Lesion-Description 491 498	nodules
+T14	Lesion-Description 502 508	masses
+T15	Medical-Assertion 510 512	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 513 525	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T12
+E11	Lesion-Description:T14 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

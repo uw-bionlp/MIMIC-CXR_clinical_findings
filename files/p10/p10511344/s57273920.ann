@@ -1,0 +1,23 @@
+T1	Medical-Assertion 314 316	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 395 417	mildly enlarged.  Mild
+E1	Medical-Problem:T2
+T3	Medical-Problem 418 453	indistinctness of pulmonary vessels
+E2	Medical-Problem:T3
+T4	Medical-Assertion 454 467	could reflect
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 469 512	some elevation of pulmonary venous pressure
+T6	Medical-Anatomy 519 538	right hemidiaphragm
+T7	Medical-Problem 542 545;547 556	not well seen
+T8	Medical-Assertion 558 581	raising the possibility
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 585 616;618 629	small pleural fluid compressive atelectasis
+T10	Medical-Problem 649 668	atelectatic changes
+E7	Medical-Problem:T10
+T11	Medical-Assertion 692 694	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 707 728	acute focal pneumonia
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

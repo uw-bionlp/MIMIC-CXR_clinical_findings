@@ -1,0 +1,18 @@
+T1	Medical-Problem 170 180;182 224	associated decrease in size of right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 230 232	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 233 247;249 261	visible apical pneumothorax
+T4	Medical-Anatomy 294 321;323 365	lower right hemithorax just medial to the site of the pleural catheter
+T5	Medical-Assertion 366 379	could reflect
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 382 399;401 418	loculated basilar hydropneumothorax
+T7	Lesion-Anatomy 503 527	Bilateral pulmonary lung
+T8	Lesion-Description 528 535	nodules
+T9	Lesion-Characteristic 596 607	Destructive
+T10	Lesion-Anatomy 608 617	right rib
+T11	Lesion-Description 618 625	lesions
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10

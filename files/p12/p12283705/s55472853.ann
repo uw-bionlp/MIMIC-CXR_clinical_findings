@@ -1,0 +1,30 @@
+T1	Medical-Assertion 324 326	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 327 339	pneumothorax
+T3	Medical-Assertion 342 344	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 346 368	airspace consolidation
+T5	Lesion-Assertion 371 373	No
+A3	Lesion-AssertionValue T5 absent
+T6	Lesion-Characteristic 374 384	suspicious
+T7	Lesion-Anatomy 385 394	pulmonary
+T8	Lesion-Description 395 402	nodules
+T9	Lesion-Description 406 412	masses
+T10	Medical-Assertion 415 417	No
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 419 436	pleural effusions
+T12	Lesion-Assertion 474 476	No
+A5	Lesion-AssertionValue T12 absent
+T13	Lesion-Characteristic 477 485	sinister
+T14	Lesion-Characteristic 486 490	bony
+T15	Lesion-Description 492 499	lesions
+T16	Medical-Assertion 520 531	No features
+A6	Medical-AssertionValue T16 absent
+T17	Medical-Problem 535 544	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E6	Lesion-Description:T9 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Lesion-Description:T15 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14
+E11	Medical-Problem:T17 has-Medical-Assertion:T16

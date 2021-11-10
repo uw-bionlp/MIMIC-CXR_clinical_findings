@@ -1,0 +1,45 @@
+T1	Medical-Anatomy 265 270	lungs
+T2	Medical-Problem 275 288	hyperinflated
+T3	Medical-Problem 306 315	emphysema
+T4	Lesion-Size 350 356	1.2 cm
+T5	Lesion-Description 357 364	nodular
+E5	Lesion-Description:T5
+T6	Lesion-Description 365 372	opacity
+T7	Lesion-Anatomy 394 410	right upper lobe
+T8	Lesion-Size-Trend 412 445	not significantly changed in size
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Size 479 485	2.5 cm
+T10	Lesion-Description 486 492	nodule
+T11	Lesion-Size-Trend 569 578	unchanged
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Medical-Problem 617 624	density
+T13	Medical-Anatomy 632 649	apex of the right
+T14	Lesion-Size 676 681	large
+T15	Lesion-Characteristic 683 695	consolidated
+T16	Lesion-Description 696 707	mass lesion
+T17	Lesion-Characteristic 713 735	punctate calcification
+T18	Medical-Assertion 783 794	no evidence
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 798 810	pneumothorax
+T20	Medical-Problem 814 830	pleural effusion
+T21	Medical-Assertion 833 835	No
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 836 839;841 860	new focal consolidation
+T23	Lesion-Anatomy 904 913	pulmonary
+T24	Lesion-Description 914 921	nodules
+T25	Lesion-Size-Trend 945 959	grossly stable
+A5	Lesion-Size-TrendValue T25 no-change
+T26	Medical-Assertion 1100 1102	No
+A6	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1103 1131	acute intra thoracic process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E6	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T8
+E9	Lesion-Description:T10 has-Lesion-Size-Present:T9 has-Lesion-Size-Trend:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Lesion-Description:T16 has-Lesion-Size-Present:T14 has-Lesion-Characteristic:T15 has-Lesion-Characteristic:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T18
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E20	Lesion-Description:T24 has-Lesion-Anatomy:T23 has-Lesion-Size-Trend:T25
+E21	Medical-Problem:T27 has-Medical-Assertion:T26

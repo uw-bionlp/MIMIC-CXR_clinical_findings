@@ -1,0 +1,22 @@
+T1	Medical-Problem 495 505;507 516	persistent elevation
+T2	Medical-Anatomy 524 543	right hemidiaphragm
+T3	Medical-Problem 549 562	opacification
+T4	Medical-Anatomy 570 580	right base
+T5	Medical-Assertion 607 624	likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 642 658;660 679	right middle and lower lobe collapse
+T7	Lesion-Description 693 697	mass
+E6	Lesion-Description:T7
+T8	Medical-Problem 705 727	small pleural effusion
+E7	Medical-Problem:T8
+T9	Medical-Assertion 971 973	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 974 986	pneumothorax
+T11	Medical-Assertion 989 1000	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1004 1019	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

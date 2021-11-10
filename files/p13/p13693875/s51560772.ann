@@ -1,0 +1,28 @@
+T1	Medical-Problem 269 277;279 288	calcific densities
+T2	Medical-Anatomy 309 320	upper lungs
+T3	Lesion-Count 345 353	numerous
+T4	Lesion-Characteristic 355 364	calcified
+T5	Lesion-Description 365 374	granuloma
+T6	Medical-Problem 410 427;429 435	calcified pleural plaque
+E6	Medical-Problem:T6
+T7	Medical-Problem 479 503	subtle increased density
+T8	Medical-Anatomy 525 540	right lung apex
+T9	Medical-Problem 598 611	ovoid density
+T10	Medical-Anatomy 625 643	right heart border
+T11	Medical-Problem 660 687	costochondral calcification
+T12	Medical-Problem 778 802;804 809	mildly unfolded thoracic aorta
+E12	Medical-Problem:T12
+T13	Medical-Assertion 812 814	No
+A1	Medical-AssertionValue T13 absent
+T14	Medical-Problem 815 831	pleural effusion
+T15	Medical-Problem 835 847	pneumothorax
+T16	Medical-Problem 883 891	free air
+T17	Medical-Anatomy 902 921	right hemidiaphragm
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Count:T3 has-Lesion-Characteristic:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T11 has-Medical-Anatomy:T10
+E13	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Medical-Problem:T16 has-Medical-Anatomy:T17

@@ -1,0 +1,47 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 55	focal consolidation
+T3	Medical-Problem 58 68	Prominence
+T4	Medical-Anatomy 76 85	AP window
+T5	Medical-Problem 87 97;99 115	underlying  lymphadenopathy
+T6	Medical-Assertion 116 128	not excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 545 552	without
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 553 572	focal consolidation
+T9	Medical-Assertion 575 577	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 578 585	pleural
+E6	Medical-Problem:T10
+T11	Medical-Problem 586 594	effusion
+T12	Medical-Problem 599 611	pneumothorax
+T13	Medical-Problem 670 680	prominence
+T14	Medical-Anatomy 688 710	level of the AP window
+T15	Medical-Problem 715 741	underlying lymphadenopathy
+T16	Medical-Assertion 745 748;750 758	not excluded
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Anatomy 779 800	main pulmonary artery
+T18	Medical-Assertion 801 809	could be
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 810 817	dilated
+T20	Lesion-Assertion 838 840	No
+A7	Lesion-AssertionValue T20 absent
+T21	Lesion-Characteristic 841 846	focal
+E14	Lesion-Characteristic:T21
+T22	Medical-Problem 847 860	consolidation
+E15	Medical-Problem:T22
+T23	Medical-Problem 863 873	Prominence
+E16	Medical-Problem:T23
+T24	Medical-Problem 892 902;904 919	underlying lymphadenopathy
+T25	Medical-Assertion 920 932	not excluded
+A8	Medical-AssertionValue T25 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T11 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E11	Medical-Problem:T15 has-Medical-Anatomy:T14 has-Medical-Assertion:T16
+E13	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E17	Medical-Problem:T24 has-Medical-Assertion:T25

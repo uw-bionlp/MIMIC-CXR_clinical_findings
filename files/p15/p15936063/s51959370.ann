@@ -1,0 +1,19 @@
+T1	Medical-Problem 852 865	Consolidation
+T2	Medical-Anatomy 874 888	left lung base
+T3	Medical-Assertion 889 902	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 906 923	area of pneumonia
+T5	Medical-Problem 929 947;949 957	associated pleural effusion
+T6	Medical-Assertion 959 970	less likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 971 982	atelectasis
+T8	Medical-Problem 1029 1058	pulmonary venous hypertension
+E6	Medical-Problem:T8
+T9	Medical-Assertion 1066 1079	suggestion of
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 1080 1102;1104 1122	some superimposed mild interstitial edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

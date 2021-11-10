@@ -1,0 +1,23 @@
+T1	Medical-Problem 258 269	volume loss
+T2	Medical-Anatomy 277 291	left lung base
+T3	Medical-Problem 297 318	area of focal opacity
+T4	Medical-Assertion 320 326;328 334	likely due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 335 346	atelectasis
+T6	Medical-Problem 353 394	cardiac silhouette is moderately enlarged
+E5	Medical-Problem:T6
+T7	Medical-Assertion 450 452	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 453 469	pleural effusion
+T9	Medical-Problem 473 485	pneumothorax
+T10	Medical-Problem 507 533	Left lung base atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Problem 535 544	pneumonia
+T12	Medical-Assertion 545 563	cannot be excluded
+A3	Medical-AssertionValue T12 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T12

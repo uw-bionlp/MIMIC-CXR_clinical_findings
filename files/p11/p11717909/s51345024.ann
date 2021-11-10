@@ -1,0 +1,17 @@
+T1	Medical-Assertion 311 330	interval resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 334 357	right pleural effusion,
+T3	Medical-Problem 380 385;387 410	right middle lobe atelectasis
+E2	Medical-Problem:T3
+T4	Medical-Problem 424 432	Effusion
+T5	Medical-Anatomy 443 464;466 473	distal portion of the fissure
+T6	Medical-Assertion 501 503	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 504 523	focal consolidation
+T8	Medical-Assertion 524 534	to suggest
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 536 554	infectious process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T6 has-Medical-Assertion:T8

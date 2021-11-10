@@ -1,0 +1,18 @@
+T1	Medical-Assertion 201 203	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 204 216	pneumothorax
+T3	Medical-Problem 220 236	pleural effusion
+T4	Lesion-Size 239 244	Large
+T5	Lesion-Characteristic 245 254	cavitated
+T6	Lesion-Characteristic 255 265	infrahilar
+T7	Lesion-Anatomy 266 276;278 282	left lower lobe
+T8	Lesion-Description 283 287	mass
+T9	Lesion-Size 352 357	small
+T10	Lesion-Description 358 365	nodules
+T11	Lesion-Anatomy 373 383	right lung
+T12	Medical-Problem 425 446	Moderate cardiomegaly
+E11	Medical-Problem:T12
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E7	Lesion-Description:T8 has-Lesion-Size-Present:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7
+E9	Lesion-Description:T10 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T11

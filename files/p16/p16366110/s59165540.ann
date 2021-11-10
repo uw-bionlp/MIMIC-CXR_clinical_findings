@@ -1,0 +1,43 @@
+T1	Medical-Problem 388 419	Increased interstitial markings
+T2	Medical-Anatomy 429 449	throughout the lungs
+T3	Medical-Problem 462 493	slightly more confluent opacity
+T4	Medical-Anatomy 521 537;539 548	right upper lung laterally
+T5	Medical-Problem 551 559	Blunting
+T6	Medical-Anatomy 567 596	posterior costophrenic angles
+T7	Medical-Assertion 602 610	suggests
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 611 616;618 627	small effusions
+T9	Medical-Problem 685 695	Tortuosity
+T10	Medical-Anatomy 704 729	descending thoracic aorta
+T11	Medical-Problem 741 754	Hiatal hernia
+E10	Medical-Problem:T11
+T12	Medical-Assertion 791 793	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 794 821	acute osseous abnormalities
+T14	Medical-Problem 823 845;847 856	chronic left sided rib fractures
+T15	Medical-Problem 901 922;924 944	chronic left shoulder degenerative changes
+E13	Medical-Problem:T15
+T16	Medical-Problem 975 1006	Increased interstitial markings
+E14	Medical-Problem:T16
+T17	Medical-Problem 1029 1047	interstitial edema
+E15	Medical-Problem:T17
+T18	Medical-Problem 1051 1073	More confluent opacity
+T19	Medical-Anatomy 1081 1101	right lung laterally
+T20	Medical-Assertion 1102 1110	could be
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1111 1127;1129 1159	more conspicuous underlying parenchymal disease
+T22	Medical-Problem 1169 1191	superimposed infection
+T23	Medical-Assertion 1192 1200;1202 1222	would be difficult to exclude
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1225 1258	Small bilateral pleural effusions
+E20	Medical-Problem:T24
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T19 has-Medical-Assertion:T20 has-Medical-Assertion:T23

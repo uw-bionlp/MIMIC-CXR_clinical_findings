@@ -1,0 +1,17 @@
+T1	Medical-Assertion 285 287	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 288 300	pneumothorax
+T3	Medical-Problem 303 307	Post
+E2	Medical-Problem:T3
+T4	Lesion-Anatomy 343 359	right upper lobe
+T5	Lesion-Description 360 366	lesion
+T6	Medical-Assertion 512 514	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 515 522;524 535	pleural abnormality
+T8	Medical-Assertion 624 626;628 636	no evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 642 654	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

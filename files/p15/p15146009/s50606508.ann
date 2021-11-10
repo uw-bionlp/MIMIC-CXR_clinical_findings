@@ -1,0 +1,24 @@
+T1	Medical-Problem 229 280	Lung volumes are low accentuating vascular crowding
+E1	Medical-Problem:T1
+T2	Medical-Problem 315 354	Diffuse prominent interstitial markings
+E2	Medical-Problem:T2
+T3	Medical-Problem 399 406	Opacity
+T4	Medical-Anatomy 414 449	right lower lung overlies the spine
+T5	Medical-Assertion 552 554	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 555 567	pneumothorax
+T7	Medical-Problem 571 587	pleural effusion
+T8	Medical-Anatomy 608 619	Right lower
+T9	Medical-Problem 625 632	opacity
+E8	Medical-Problem:T9
+T10	Medical-Assertion 633 655	most likely represents
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 656 667	atelectasis
+T12	Medical-Assertion 700 711	less likely
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 712 721	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T10 has-Medical-Assertion:T12

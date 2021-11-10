@@ -1,0 +1,27 @@
+T1	Medical-Problem 144 149;151 163	Small pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Assertion 230 232	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 233 256	detectable pneumothorax
+T4	Medical-Problem 259 272	Opacification
+T5	Medical-Anatomy 276 291	both lung bases
+T6	Medical-Assertion 292 300	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 302 341	posteriorly collected pleural effusions
+T8	Medical-Assertion 347 362	differentiating
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 374 387	consolidation
+T10	Medical-Problem 391 402	atelectasis
+T11	Medical-Problem 463 478	Pulmonary edema
+T12	Medical-Assertion 483 486	not
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 522 536	Hyperinflation
+E9	Medical-Problem:T13
+T14	Medical-Problem 547 558	severe COPD
+E10	Medical-Problem:T14
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T12

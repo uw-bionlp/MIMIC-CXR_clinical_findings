@@ -1,0 +1,43 @@
+T1	Medical-Problem 186 202	Linear opacities
+T2	Medical-Anatomy 210 220	lung bases
+T3	Medical-Problem 226 240	hyperexpansion
+T4	Medical-Problem 276 301;303 332	stable underlying chronic obstructive pulmonary disease
+T5	Lesion-Characteristic 337 346	calcified
+T6	Lesion-Description 347 356	granuloma
+T7	Lesion-Anatomy 364 379	left upper lobe
+T8	Lesion-Assertion 402 404	no
+A1	Lesion-AssertionValue T8 absent
+T9	Lesion-Size-Trend 405 408	new
+A2	Lesion-Size-TrendValue T9 new
+T10	Lesion-Anatomy 409 418	pulmonary
+T11	Lesion-Description 419 425	nodule
+T12	Lesion-Description 429 433	mass
+T13	Medical-Assertion 436 438	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 439 452	consolidation
+T15	Medical-Problem 457 469	pneumothorax
+T16	Medical-Problem 483 498	Stable blunting
+T17	Medical-Anatomy 506 534;536 541	posterior right costophrenic angle
+T18	Medical-Assertion 542 559	likely represents
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 560 568	scarring
+T20	Medical-Assertion 580 582	no
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 583 605	large pleural effusion
+T22	Medical-Problem 708 745	chronic obstructive pulmonary disease
+E17	Medical-Problem:T22
+T23	Medical-Assertion 746 753	without
+A6	Medical-AssertionValue T23 absent
+T24	Medical-Problem 755 768	acute process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E9	Lesion-Description:T11 has-Lesion-Assertion:T8 has-Lesion-Size-Trend:T9 has-Lesion-Anatomy:T10
+E10	Lesion-Description:T12 has-Lesion-Assertion:T8 has-Lesion-Size-Trend:T9 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T24 has-Medical-Assertion:T23

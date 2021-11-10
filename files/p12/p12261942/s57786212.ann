@@ -1,0 +1,22 @@
+T1	Medical-Problem 172 196	Moderate pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 234 248;250 262	persistent low lung volumes
+E2	Medical-Problem:T2
+T3	Medical-Problem 265 274	Elevation
+E3	Medical-Problem:T3
+T4	Medical-Problem 314 323;325 336	Bibasilar atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 352 367	left lower lobe
+T6	Medical-Problem 385 400;402 419	small bilateral pleural effusions
+T7	Medical-Problem 436 447	New opacity
+T8	Medical-Anatomy 455 474	left mid hemithorax
+T9	Medical-Assertion 479 492	likely due to
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 493 508	pulmonary edema
+T11	Medical-Problem 511 533	Superimposed infection
+T12	Medical-Assertion 534 552	cannot be excluded
+A2	Medical-AssertionValue T12 possible
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T12

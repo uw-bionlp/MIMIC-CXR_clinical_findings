@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 247 252	lungs
+T2	Medical-Assertion 263 270	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 271 290	focal consolidation
+T4	Medical-Problem 292 300	effusion
+T5	Medical-Problem 306 318	pneumothorax
+T6	Lesion-Size 323 327	4-mm
+T7	Lesion-Description 328 335	nodular
+E6	Lesion-Description:T7
+T8	Lesion-Description 336 343	opacity
+T9	Lesion-Anatomy 351 367	right lower lobe
+T10	Lesion-Characteristic 409 415	subtle
+T11	Lesion-Description 416 423	nodular
+E10	Lesion-Description:T11
+T12	Lesion-Description 424 433	opacities
+T13	Lesion-Anatomy 441 456	left lower lobe
+T14	Medical-Assertion 626 628	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 629 658	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E7	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T9
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

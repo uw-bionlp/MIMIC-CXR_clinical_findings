@@ -1,0 +1,37 @@
+T1	Medical-Problem 355 386	Lung volumes are moderately low
+E1	Medical-Problem:T1
+T2	Medical-Problem 488 507;509 533	tortuous or dilated ascending thoracic aorta
+T3	Medical-Assertion 550 556	raises
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 591 629	Pulmonary vasculature remains engorged
+E3	Medical-Problem:T4
+T5	Medical-Assertion 643 651	probably
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 652 656;658 690	mild edema asymmetrically distributed
+T7	Medical-Anatomy 698 707	left lung
+T8	Medical-Anatomy 712 727	Left lower lobe
+T9	Medical-Problem 728 738	previously
+E7	Medical-Problem:T9
+T10	Medical-Problem 739 759	densely consolidated
+T11	Medical-Assertion 761 776	probably due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 777 785	collapse
+T13	Medical-Problem 787 790	has
+E10	Medical-Problem:T13
+T14	Medical-Problem 792 813	partially re-expanded
+T15	Medical-Problem 816 851	Milder right lower lobe atelectasis
+E12	Medical-Problem:T15
+T16	Medical-Anatomy 875 894	right main bronchus
+T17	Medical-Problem 898 926	now occluded with secretions
+T18	Medical-Problem 929 942;944 953	Small pleural effusions
+E15	Medical-Problem:T18
+T19	Medical-Assertion 979 981	no
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 982 994	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T8
+E14	Medical-Problem:T17 has-Medical-Anatomy:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

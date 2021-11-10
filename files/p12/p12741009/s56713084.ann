@@ -1,0 +1,62 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 69	acute cardiopulmonary abnormality
+T3	Lesion-Size 73 77	4 mm
+T4	Lesion-Description 78 93	nodular opacity
+T5	Lesion-Anatomy 114 141	left eighth rib posteriorly
+T6	Medical-Assertion 150 163	could reflect
+A2	Medical-AssertionValue T6 possible
+T7	Lesion-Anatomy 166 175	pulmonary
+T8	Lesion-Description 176 182	nodule
+T9	Medical-Problem 188 203	sclerotic focus
+T10	Medical-Assertion 760 763	not
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 764 772	engorged
+T12	Medical-Problem 783 794;796 804	parenchymal scarring
+T13	Medical-Anatomy 824 857	lung apices, more so on the right
+T14	Medical-Assertion 859 861	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 862 867;869 882	focal consolidation
+T16	Medical-Problem 884 900	pleural effusion
+T17	Medical-Problem 904 916	pneumothorax
+T18	Lesion-Description 940 947;949 956	nodular opacity
+T19	Lesion-Anatomy 977 1009	eighth posterior rib on the left
+T20	Lesion-Assertion 1010 1023	could reflect
+A5	Lesion-AssertionValue T20 possible
+T21	Lesion-Anatomy 1027 1036	pulmonary
+T22	Lesion-Description 1037 1043	nodule
+T23	Lesion-Characteristic 1047 1054	osseous
+T24	Lesion-Description 1055 1061	lesion
+T25	Medical-Problem 1068 1083	dextroscoliosis
+T26	Medical-Anatomy 1091 1105	thoracic spine
+T27	Medical-Assertion 1119 1121	No
+A6	Medical-AssertionValue T27 absent
+T28	Medical-Problem 1122 1149	acute osseous abnormalities
+T29	Medical-Problem 1186 1219	acute cardiopulmonary abnormality
+E23	Medical-Problem:T29
+T30	Lesion-Description 1230 1237	nodular
+E24	Lesion-Description:T30
+T31	Lesion-Description 1238 1245	opacity
+T32	Lesion-Anatomy 1266 1293	left eighth rib posteriorly
+T33	Medical-Assertion 1302 1315	could reflect
+A7	Medical-AssertionValue T33 possible
+T34	Lesion-Anatomy 1318 1327	pulmonary
+T35	Lesion-Description 1328 1334	nodule
+T36	Medical-Problem 1340 1355	sclerotic focus
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T5
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T14
+E14	Lesion-Description:T18 has-Lesion-Anatomy:T19
+E17	Lesion-Description:T22 has-Lesion-Assertion:T20 has-Lesion-Anatomy:T21
+E19	Lesion-Description:T24 has-Lesion-Anatomy:T19 has-Lesion-Assertion:T20 has-Lesion-Anatomy:T21 has-Lesion-Characteristic:T23
+E20	Medical-Problem:T25 has-Medical-Anatomy:T26
+E22	Medical-Problem:T28 has-Medical-Assertion:T27
+E25	Lesion-Description:T31 has-Lesion-Anatomy:T32
+E28	Lesion-Description:T35 has-Lesion-Anatomy:T34
+E29	Medical-Problem:T36 has-Medical-Assertion:T33

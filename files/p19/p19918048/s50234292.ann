@@ -1,0 +1,17 @@
+T1	Medical-Problem 165 169;171 185	mild hyperexpansion
+T2	Medical-Anatomy 193 198	lungs
+T3	Medical-Assertion 199 209	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 210 214	some
+E3	Medical-Problem:T4
+T5	Medical-Problem 215 243;245 252	underlying chronic pulmonary disease
+T6	Lesion-Assertion 264 275	no evidence
+A2	Lesion-AssertionValue T6 absent
+T7	Lesion-Anatomy 279 290	parenchymal
+T8	Lesion-Anatomy 294 302	skeletal
+T9	Lesion-Description 303 313	metastasis
+T10	Medical-Problem 317 322;324 353	other acute cardiopulmonary disease
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Lesion-Description:T9 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8

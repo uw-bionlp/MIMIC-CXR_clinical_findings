@@ -1,0 +1,35 @@
+T1	Medical-Problem 258 278	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 284 318	heart size remains mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 451 467	Patchy opacities
+T4	Medical-Anatomy 475 485	lung bases
+T5	Medical-Assertion 486 492;494 501	likely reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 502 513	atelectasis
+T7	Medical-Assertion 550 552	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 553 567;569 582	definite focal consolidation
+T9	Medical-Problem 584 600	pleural effusion
+T10	Medical-Problem 604 616	pneumothorax
+T11	Medical-Assertion 633 635	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 636 641;643 664	acute osseous abnormalities
+T13	Medical-Assertion 690 701	No evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 705 720	pulmonary edema
+T15	Medical-Problem 722 738	Low lung volumes
+E11	Medical-Problem:T15
+T16	Medical-Problem 744 760;762 771	patchy bibasilar opacities
+E12	Medical-Problem:T16
+T17	Medical-Assertion 772 792	likely reflective of
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 793 804	atelectasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

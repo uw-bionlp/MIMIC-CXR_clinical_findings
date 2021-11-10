@@ -1,0 +1,41 @@
+T1	Medical-Problem 347 356;358 375	Bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 394 426	partially loculated on the right
+E2	Medical-Problem:T2
+T3	Medical-Problem 445 460	tracks of fluid
+T4	Medical-Anatomy 471 486	right lung apex
+T5	Medical-Problem 489 503	Patchy opacity
+T6	Medical-Anatomy 512 527	left upper lung
+T7	Medical-Assertion 593 615	differential diagnosis
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 642 652	mycoplasma
+E7	Medical-Problem:T8
+T9	Medical-Problem 656 661;663 672	viral infection
+T10	Medical-Problem 675 697	Post-radiation changes
+T11	Medical-Anatomy 705 715	right lung
+T12	Lesion-Anatomy 738 769	paramediastinal left upper lung
+T13	Lesion-Characteristic 770 775	solid
+T14	Lesion-Description 776 782	lesion
+T15	Lesion-Count 833 841	multiple
+T16	Lesion-Anatomy 842 851	pulmonary
+T17	Lesion-Description 852 859	nodules
+T18	Medical-Problem 1015 1040;1042 1053	stable moderate-to-severe compression
+T19	Medical-Anatomy 1059 1088	lower thoracic vertebral body
+T20	Medical-Problem 1094 1112	adjacent sclerosis
+T21	Medical-Assertion 1262 1270	possible
+A2	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1271 1296	new left pleural effusion
+T23	Medical-Problem 1302 1323	overlying atelectasis
+T24	Medical-Problem 1331 1335;1337 1350	mild consolidation
+T25	Medical-Anatomy 1358 1372	left lung base
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E13	Lesion-Description:T14 has-Lesion-Anatomy:T12 has-Lesion-Characteristic:T13
+E16	Lesion-Description:T17 has-Lesion-Count:T15 has-Lesion-Anatomy:T16
+E17	Medical-Problem:T18 has-Medical-Anatomy:T19
+E19	Medical-Problem:T20 has-Medical-Anatomy:T19
+E20	Medical-Problem:T22 has-Medical-Assertion:T21 has-Medical-Anatomy:T25
+E21	Medical-Problem:T23 has-Medical-Assertion:T21 has-Medical-Anatomy:T25
+E22	Medical-Problem:T24 has-Medical-Assertion:T21 has-Medical-Anatomy:T25

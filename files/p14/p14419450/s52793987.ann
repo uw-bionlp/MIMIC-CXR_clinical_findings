@@ -1,0 +1,41 @@
+T1	Medical-Assertion 322 324	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 325 338	consolidation
+T3	Medical-Problem 341 360	Chronic atelectasis
+T4	Medical-Anatomy 384 395	aortic knob
+T5	Medical-Problem 401 409	retracts
+T6	Medical-Anatomy 414 433	left hilus cephalad
+T7	Medical-Problem 440 473;475 483	left hemidiaphragm is chronically elevated
+E6	Medical-Problem:T7
+T8	Lesion-Count 496 504	multiple
+T9	Lesion-Size 505 510	small
+T10	Lesion-Anatomy 512 527	right pulmonary
+T11	Lesion-Description 528 535	nodules
+T12	Lesion-Size-Trend 536 545	unchanged
+A2	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 581 583	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 584 600	pleural effusion
+T15	Medical-Problem 604 616	pneumothorax
+T16	Medical-Anatomy 623 630	cardiac
+T17	Medical-Problem 646 661	mildly enlarged
+T18	Medical-Assertion 706 708	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 710 719	fractures
+T20	Medical-Assertion 740 742	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 743 752	pneumonia
+T22	Lesion-Count 757 765	Multiple
+T23	Lesion-Size 766 771	small
+T24	Lesion-Anatomy 772 782	right lung
+T25	Lesion-Description 783 790	nodules
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E10	Lesion-Description:T11 has-Lesion-Count:T8 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E20	Lesion-Description:T25 has-Lesion-Count:T22 has-Lesion-Size-Present:T23 has-Lesion-Anatomy:T24

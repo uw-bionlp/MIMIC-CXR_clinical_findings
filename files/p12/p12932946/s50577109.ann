@@ -1,0 +1,46 @@
+T1	Lesion-Anatomy 260 278	left mid lung zone
+T2	Lesion-Size 291 296	13 mm
+T3	Lesion-Characteristic 297 302	round
+T4	Lesion-Description 303 310	opacity
+T5	Lesion-Anatomy 319 324;326 338	right midlung zone
+T6	Lesion-Size-Trend 351 358	similar
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Lesion-Size 359 363	8 mm
+T8	Lesion-Characteristic 364 369	round
+T9	Lesion-Description 370 377	opacity
+T10	Medical-Anatomy 423 428	lungs
+T11	Medical-Assertion 449 456	without
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 457 470	consolidation
+T13	Medical-Problem 474 479	edema
+T14	Medical-Problem 493 519	tiny left pleural effusion
+E12	Medical-Problem:T14
+T15	Medical-Assertion 521 523	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 524 546	right pleural effusion
+T17	Medical-Assertion 572 574	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 575 587	pneumothorax
+T19	Medical-Problem 645 682	mild-to-moderate degenerative changes
+T20	Medical-Anatomy 690 698;700 705	thoracic spine
+T21	Medical-Problem 743 765	Old left rib fractures
+E17	Medical-Problem:T21
+T22	Medical-Problem 852 878	Tiny left pleural effusion
+E18	Medical-Problem:T22
+T23	Medical-Assertion 881 892	No evidence
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 896 905	pneumonia
+T25	Medical-Problem 912 939	Bilateral rounded opacities
+E20	Medical-Problem:T25
+T26	Medical-Assertion 944 950	likely
+A6	Medical-AssertionValue T26 possible
+T27	Medical-Problem 951 965	nipple shadows
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T1 has-Lesion-Size-Present:T2 has-Lesion-Characteristic:T3
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T6 has-Lesion-Size-Present:T7 has-Lesion-Characteristic:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E21	Medical-Problem:T27 has-Medical-Assertion:T26

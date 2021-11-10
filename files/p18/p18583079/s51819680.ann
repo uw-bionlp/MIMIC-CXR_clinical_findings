@@ -1,0 +1,30 @@
+T1	Medical-Problem 396 404	Fracture
+T2	Medical-Anatomy 412 447	proximal shaft of the right humerus
+T3	Medical-Problem 485 513	subtle cortical irregularity
+T4	Medical-Anatomy 524 554	right seventh lateral rib arch
+T5	Medical-Assertion 562 576	could indicate
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 580 598	acute rib fracture
+T7	Medical-Problem 601 621	Lung volumes are low
+E6	Medical-Problem:T7
+T8	Medical-Assertion 624 626	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 627 632;634 647	focal consolidation
+T10	Medical-Problem 651 657	supine
+E8	Medical-Problem:T10
+T11	Medical-Problem 671 679	effusion
+T12	Medical-Problem 683 695	pneumothorax
+T13	Medical-Problem 765 773	Fracture
+T14	Medical-Anatomy 781 809	right proximal humeral shaft
+T15	Medical-Assertion 812 820	Possible
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 821 829	fracture
+T17	Medical-Anatomy 845 875	right seventh lateral rib arch
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T8
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17

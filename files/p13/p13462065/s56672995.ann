@@ -1,0 +1,33 @@
+T1	Medical-Problem 399 457	left-sided pneumothorax with loculated components medially
+T2	Medical-Anatomy 469 473;475 479	left base
+T3	Medical-Problem 556 570	Linear lucency
+T4	Medical-Anatomy 587 603	descending aorta
+T5	Medical-Assertion 604 607;609 616	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 731 753	linear basilar lucency
+E5	Medical-Problem:T6
+T7	Medical-Assertion 754 767	suggestive of
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 770 783	loculated air
+T9	Medical-Problem 788 795	Opacity
+T10	Medical-Anatomy 803 822	retrocardiac region
+T11	Medical-Assertion 840 851	may reflect
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 852 863	atelectasis
+T13	Medical-Problem 875 884	pneumonia
+T14	Medical-Assertion 885 903	cannot be excluded
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Anatomy 1155 1160	Lungs
+T16	Medical-Problem 1168 1189	overall hyperinflated
+T17	Medical-Problem 1206 1226	underlying emphysema
+T18	Medical-Problem 1230 1244	Patchy opacity
+T19	Medical-Anatomy 1252 1276	right costophrenic angle
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T15
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19

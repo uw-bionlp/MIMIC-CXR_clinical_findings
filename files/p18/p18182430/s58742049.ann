@@ -1,0 +1,53 @@
+T1	Medical-Problem 302 315	Large opacity
+T2	Medical-Anatomy 336 365	left mid to lower hemi thorax
+T3	Medical-Assertion 382 395	worrisome for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 396 412	pleural effusion
+T5	Medical-Problem 417 438	overlying atelectasis
+T6	Medical-Problem 441 455;457 462	Mild pulmonary edema
+E5	Medical-Problem:T6
+T7	Medical-Problem 478 516	Increased patchy right basilar opacity
+E6	Medical-Problem:T7
+T8	Medical-Assertion 517 530	may be due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 532 543	atelectasis
+T10	Medical-Problem 547 557	aspiration
+T11	Medical-Problem 612 640	small right pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 646 676	cardiac silhouette is enlarged
+E10	Medical-Problem:T12
+T13	Medical-Problem 728 752	large left-sided opacity
+E11	Medical-Problem:T13
+T14	Medical-Assertion 755 757	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 759 771	pneumothorax
+T16	Medical-Problem 797 840	Large left mid to lower hemi thorax opacity
+E13	Medical-Problem:T16
+T17	Medical-Assertion 841 859	raises concern for
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 860 873;875 883	large pleural effusion
+T19	Medical-Problem 888 899	atelectasis
+T20	Medical-Problem 901 925	underlying consolidation
+T21	Medical-Assertion 929 941	not excluded
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 960 973	midline shift
+E17	Medical-Problem:T22
+T23	Medical-Problem 1007 1033;1035 1040	Mild to moderate pulmonary edema
+E18	Medical-Problem:T23
+T24	Medical-Problem 1042 1084	Interval increase in right basilar opacity
+E19	Medical-Problem:T24
+T25	Medical-Assertion 1085 1098	may be due to
+A6	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1099 1110	atelectasis
+T27	Medical-Problem 1115 1125	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T17 has-Medical-Assertion:T21
+E16	Medical-Problem:T20 has-Medical-Assertion:T17 has-Medical-Assertion:T21
+E20	Medical-Problem:T26 has-Medical-Assertion:T25
+E21	Medical-Problem:T27 has-Medical-Assertion:T25

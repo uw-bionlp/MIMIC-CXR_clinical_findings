@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 350 368	Cardiac silhouette
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 401 419	Symmetric fullness
+T3	Medical-Anatomy 427 447	superior mediastinum
+T4	Medical-Problem 459 485	enlargement of the thyroid
+T5	Medical-Assertion 561 567	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 568 592	retrocardiac atelectasis
+T7	Medical-Assertion 595 597	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 598 603;605 618	focal consolidation
+T9	Medical-Problem 620 636	pleural effusion
+T10	Medical-Problem 640 652	pneumothorax
+T11	Lesion-Count 670 678	Multiple
+T12	Lesion-Anatomy 680 689	pulmonary
+T13	Lesion-Description 701 708	nodules
+T14	Medical-Assertion 787 789	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 790 819	pulmonary vascular congestion
+T16	Medical-Problem 822 832;834 854	Multilevel degenerative changes
+T17	Medical-Anatomy 872 886	thoracic spine
+T18	Medical-Assertion 951 959	Probable
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 960 984	retrocardiac atelectasis
+T20	Lesion-Size-Trend 988 1005	Grossly unchanged
+A5	Lesion-Size-TrendValue T20 no-change
+T21	Lesion-Anatomy 1006 1025	bilateral pulmonary
+T22	Lesion-Description 1026 1033	nodules
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E11	Lesion-Description:T13 has-Lesion-Count:T11 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Lesion-Description:T22 has-Lesion-Size-Trend:T20 has-Lesion-Anatomy:T21

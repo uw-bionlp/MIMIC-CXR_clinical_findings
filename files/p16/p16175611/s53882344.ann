@@ -1,0 +1,42 @@
+T1	Medical-Assertion 154 156	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 157 185	definite focal consolidation
+T3	Medical-Problem 197 206	pneumonia
+T4	Medical-Problem 218 235	Streaky opacities
+T5	Medical-Anatomy 243 255	retrocardiac
+T6	Medical-Anatomy 260 283	right infrahilar region
+T7	Medical-Assertion 284 290;292 301	likely represent
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 302 313	atelectasis
+T9	Medical-Assertion 316 318	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 319 331	pneumothorax
+T11	Medical-Problem 335 350	pulmonary edema
+T12	Medical-Problem 365 382	Pleural effusions
+E9	Medical-Problem:T12
+T13	Medical-Problem 445 455	tortuosity
+T14	Medical-Anatomy 463 468	aorta
+T15	Medical-Problem 473 486	calcification
+T16	Medical-Anatomy 494 505	aortic root
+T17	Medical-Problem 567 594	chronic-appearing deformity
+T18	Medical-Anatomy 603 624	right distal clavicle
+T19	Medical-Assertion 646 648	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 649 666	acute abnormality
+T21	Medical-Problem 673 687	Calcifications
+T22	Medical-Anatomy 695 706	aortic root
+T23	Medical-Assertion 707 721	could indicate
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 722 737	aortic stenosis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22
+E19	Medical-Problem:T24 has-Medical-Anatomy:T22 has-Medical-Assertion:T23

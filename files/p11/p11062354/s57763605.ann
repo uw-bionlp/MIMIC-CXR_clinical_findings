@@ -1,0 +1,27 @@
+T1	Medical-Problem 180 191;193 208	subtle left basilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 210 221	potentially
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 222 233	atelectasis
+T4	Medical-Problem 244 254	infiltrate
+T5	Medical-Assertion 258 270	not excluded
+A2	Medical-AssertionValue T5 possible
+T6	Lesion-Size 297 301	7-mm
+T7	Lesion-Description 302 309	nodular
+E5	Lesion-Description:T7
+T8	Lesion-Description 310 317	opacity
+T9	Lesion-Anatomy 336 346;348 366	suprahilar region on the left
+T10	Medical-Problem 571 595	Left basilar atelectasis
+T11	Medical-Assertion 596 602	versus
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 603 613	infiltrate
+T13	Lesion-Assertion 616 624	Possible
+A4	Lesion-AssertionValue T13 possible
+T14	Lesion-Anatomy 625 629;631 641	left suprahilar
+T15	Lesion-Description 642 648	nodule
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Assertion:T11
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14

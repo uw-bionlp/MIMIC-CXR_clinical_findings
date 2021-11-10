@@ -1,0 +1,48 @@
+T1	Medical-Assertion 43 45	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 46 75	acute cardiopulmonary process
+T3	Lesion-Characteristic 81 88	rounded
+T4	Lesion-Size 89 93	8 mm
+T5	Lesion-Description 94 101	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 102 109	opacity
+T7	Lesion-Anatomy 130 143	left mid lung
+T8	Lesion-Characteristic 198 208	underlying
+T9	Lesion-Description 219 225	nodule
+T10	Medical-Assertion 231 239	possible
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 546 555	cirrhosis
+E9	Medical-Problem:T11
+T12	Medical-Assertion 735 742	without
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 743 756	consolidation
+T14	Medical-Problem 771 776	edema
+T15	Lesion-Characteristic 789 804	somewhat oblong
+T16	Lesion-Size 805 809	8 mm
+T17	Lesion-Description 810 817	nodular
+E14	Lesion-Description:T17
+T18	Lesion-Description 818 825	density
+T19	Medical-Anatomy 846 867;869 903	left mid lung between the anterior second and third ribs
+E16	Medical-Anatomy:T19
+T20	Medical-Assertion 966 968	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 969 974	acute
+E17	Medical-Problem:T21
+T22	Medical-Problem 975 996	osseous abnormalities
+T23	Medical-Assertion 1017 1019	No
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1020 1041	acute cardiopulmonary
+T25	Lesion-Description 1067 1074	nodular
+E20	Lesion-Description:T25
+T26	Medical-Problem 1075 1082	opacity
+E21	Medical-Problem:T26
+T27	Medical-Assertion 1124 1129;1131 1140	could be due to
+A6	Medical-AssertionValue T27 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T3 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E15	Lesion-Description:T18 has-Lesion-Characteristic:T15 has-Lesion-Size-Present:T16
+E18	Medical-Problem:T22 has-Medical-Assertion:T20
+E19	Medical-Problem:T24 has-Medical-Assertion:T23

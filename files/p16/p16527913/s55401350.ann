@@ -1,0 +1,31 @@
+T1	Medical-Assertion 218 220	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 222 238	pleural effusion
+T3	Medical-Problem 242 254	pneumothorax
+T4	Medical-Problem 260 283	lungs are hyperinflated
+E3	Medical-Problem:T4
+T5	Medical-Problem 303 321	right base opacity
+E4	Medical-Problem:T5
+T6	Medical-Problem 340 362	some atelectasis still
+E5	Medical-Problem:T6
+T7	Lesion-Description 375 390	Nodular opacity
+T8	Lesion-Anatomy 398 407	left apex
+T9	Lesion-Size-Trend 430 439	unchanged
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Problem 518 545	Improved right base opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 551 553	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 554 572	new focal findings
+T13	Medical-Assertion 573 587	concerning for
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 589 598	pneumonia
+T15	Medical-Problem 605 645	Persistent unchanged left apical opacity
+E11	Medical-Problem:T15
+T16	Medical-Problem 665 674	pneumonia
+E12	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

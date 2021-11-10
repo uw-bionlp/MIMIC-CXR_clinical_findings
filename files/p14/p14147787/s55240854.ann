@@ -1,0 +1,32 @@
+T1	Medical-Problem 400 438	clear peribronchovascular infiltration
+T2	Medical-Problem 443 451	fibrosis
+T3	Medical-Anatomy 460 471	upper lungs
+T4	Medical-Problem 473 501	less severe micro nodulation
+T5	Medical-Problem 506 520	early fibrosis
+T6	Medical-Anatomy 540 561	lower lungs laterally
+T7	Medical-Assertion 617 625	could be
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 628 661	community acquired lung infection
+T9	Medical-Problem 673 680	sarcoid
+E8	Medical-Problem:T9
+T10	Medical-Problem 684 689;691 714	other granulomatous infection
+T11	Lesion-Assertion 726 728	no
+A2	Lesion-AssertionValue T11 absent
+T12	Medical-Problem 729 745	pleural effusion
+E10	Medical-Problem:T12
+T13	Lesion-Characteristic 749 757	evidence
+T14	Lesion-Characteristic 761 768	central
+T15	Lesion-Description 770 792	lymph node enlargement
+T16	Medical-Assertion 827 837	do not see
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 840 853	focal opacity
+T18	Lesion-Description 885 891	lesion
+E15	Lesion-Description:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E13	Lesion-Description:T15 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

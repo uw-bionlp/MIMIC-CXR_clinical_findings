@@ -1,0 +1,17 @@
+T1	Medical-Problem 194 214	Severe consolidation
+T2	Medical-Anatomy 218 228	both lungs
+T3	Medical-Problem 274 290	Pleural effusion
+T4	Medical-Assertion 305 320	not appreciable
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 323 347	Heart is mildly enlarged
+E4	Medical-Problem:T5
+T6	Medical-Problem 399 415;417 430	severe pulmonary opacification
+E5	Medical-Problem:T6
+T7	Medical-Problem 440 475	edema due to cardiac decompensation
+E6	Medical-Problem:T7
+T8	Medical-Assertion 515 517	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 518 530	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

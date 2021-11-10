@@ -1,0 +1,22 @@
+T1	Medical-Problem 168 181	consolidation
+T2	Medical-Anatomy 189 200;202 212	medial left upper lobe
+T3	Medical-Assertion 216 222	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 223 232	pneumonia
+T5	Medical-Assertion 277 279	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 281 297	pleural effusion
+T7	Medical-Problem 301 313	pneumothorax
+T8	Medical-Problem 316 341	Mild degenerative changes
+T9	Medical-Anatomy 349 357;359 364	thoracic spine
+T10	Medical-Problem 382 411	Left upper lobe consolidation
+E8	Medical-Problem:T10
+T11	Medical-Assertion 412 418	likely
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 419 428	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

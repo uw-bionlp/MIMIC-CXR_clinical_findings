@@ -1,0 +1,66 @@
+T1	Medical-Problem 507 532;534 542	Heart size remains mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 579 597	Hazy opacification
+T3	Medical-Anatomy 605 610;612 616	right lung
+T4	Medical-Assertion 655 668	could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 669 689;691 696	asymmetric pulmonary edema
+T6	Medical-Problem 700 709	infection
+T7	Medical-Problem 712 734	Increased interstitial
+E6	Medical-Problem:T7
+T8	Lesion-Characteristic 739 746	nodular
+T9	Lesion-Anatomy 769 778	left lung
+T10	Lesion-Size-Trend 824 833	unchanged
+A2	Lesion-Size-TrendValue T10 no-change
+T11	Lesion-Characteristic 834 842	dominant
+T12	Lesion-Description 844 850	lesion
+T13	Lesion-Anatomy 858 877	left mid lung field
+T14	Medical-Problem 944 979	Moderate size left pleural effusion
+E12	Medical-Problem:T14
+T15	Medical-Assertion 995 997	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 999 1027	right-sided pleural effusion
+T17	Medical-Problem 1031 1043	pneumothorax
+T18	Lesion-Description 1060 1077	nodular opacities
+T19	Lesion-Anatomy 1090 1100	right lung
+T20	Medical-Assertion 1152 1154	no
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1156 1168	pneumothorax
+T22	Medical-Assertion 1248 1250	no
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1251 1278	acute osseous abnormalities
+T24	Medical-Problem 1301 1323	New hazy opacification
+T25	Medical-Anatomy 1331 1341	right lung
+T26	Medical-Assertion 1348 1361	could reflect
+A6	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1362 1372;1374 1389	asymmetric pulmonary edema
+T28	Medical-Problem 1396 1423	atypical infectious process
+T29	Lesion-Description 1431 1437	Lesion
+T30	Lesion-Anatomy 1448 1466	left major fissure
+T31	Lesion-Count 1478 1486	multiple
+T32	Lesion-Description 1502 1509	nodules
+T33	Lesion-Anatomy 1513 1523	both lungs
+T34	Lesion-Size-Trend 1528 1548	relatively unchanged
+A7	Lesion-Size-TrendValue T34 no-change
+T35	Medical-Problem 1588 1610	Interstitial opacities
+T36	Medical-Anatomy 1618 1627	left lung
+T37	Lesion-Characteristic 1649 1668	lymphangitic spread
+T38	Lesion-Description 1676 1681	tumor
+T39	Medical-Problem 1689 1724	Moderate size left pleural effusion
+E32	Medical-Problem:T39
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T23 has-Medical-Assertion:T22
+E19	Medical-Problem:T24 has-Medical-Anatomy:T25
+E21	Medical-Problem:T27 has-Medical-Anatomy:T25 has-Medical-Assertion:T26
+E22	Medical-Problem:T28 has-Medical-Anatomy:T25 has-Medical-Assertion:T26
+E23	Lesion-Description:T29 has-Lesion-Anatomy:T30
+E26	Lesion-Description:T32 has-Lesion-Count:T31 has-Lesion-Anatomy:T33 has-Lesion-Size-Trend:T34
+E28	Medical-Problem:T35 has-Medical-Anatomy:T36
+E31	Lesion-Description:T38 has-Lesion-Characteristic:T37

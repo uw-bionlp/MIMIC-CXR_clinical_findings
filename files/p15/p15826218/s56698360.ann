@@ -1,0 +1,52 @@
+T1	Medical-Problem 29 71	Increased left basilar ill-defined opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 98 120	Differential diagnosis
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 130 139	pneumonia
+T4	Medical-Assertion 141 152	No evidence
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 157 176;178 184	worsening pulmonary  edema
+T6	Medical-Problem 545 564	other abnormalities
+E4	Medical-Problem:T6
+T7	Medical-Problem 617 634	Mild cardiomegaly
+E5	Medical-Problem:T7
+T8	Medical-Problem 678 706	Bilateral interstitial edema
+E6	Medical-Problem:T8
+T9	Lesion-Size-Trend 720 723	New
+A3	Lesion-Size-TrendValue T9 new
+T10	Lesion-Characteristic 724 729	focal
+T11	Lesion-Description 730 740	nodularity
+T12	Medical-Anatomy 766 775	left lung
+T13	Medical-Assertion 780 794	concerning for
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 795 817	disseminated infection
+T15	Medical-Problem 820 830	Prominence
+T16	Medical-Problem 835 861	some minimal opacification
+T17	Medical-Anatomy 869 884	right lung base
+T18	Medical-Assertion 885 898	may represent
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 900 911	atelectasis
+T20	Medical-Problem 915 940	worsening pulmonary edema
+T21	Medical-Problem 951 960	infection
+T22	Medical-Assertion 961 970;972 989	cannot be entirely excluded
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1042 1060	Interstitial edema
+E17	Medical-Problem:T23
+T24	Medical-Problem 1105 1125	Mild cardiomegaly is
+E18	Medical-Problem:T24
+T25	Lesion-Characteristic 1168 1173	Focal
+T26	Lesion-Description 1174 1184	nodularity
+T27	Medical-Assertion 1243 1257	concerning for
+A7	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1258 1280	disseminated infection
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E8	Lesion-Description:T11 has-Lesion-Size-Trend:T9 has-Lesion-Characteristic:T10
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T17
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17
+E14	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E16	Medical-Problem:T21 has-Medical-Anatomy:T17 has-Medical-Assertion:T22
+E20	Lesion-Description:T26 has-Lesion-Characteristic:T25
+E21	Medical-Problem:T28 has-Medical-Assertion:T27

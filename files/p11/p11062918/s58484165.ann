@@ -1,0 +1,30 @@
+T1	Lesion-Size-Trend 189 192	new
+A1	Lesion-Size-TrendValue T1 new
+T2	Lesion-Description 193 202	mass-like
+T3	Lesion-Anatomy 221 231	left hilum
+T4	Lesion-Description 258 266	neoplasm
+T5	Medical-Anatomy 287 318	left upper mediastinal contours
+T6	Medical-Problem 323 328;330 351	newly thickened and lobular
+T7	Medical-Problem 377 387	coinciding
+E6	Medical-Problem:T7
+T8	Lesion-Description 388 403	lymphadenopathy
+E7	Lesion-Description:T8
+T9	Medical-Assertion 416 418	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 419 435	pleural effusion
+T11	Medical-Problem 439 451	pneumothorax
+T12	Lesion-Assertion 517 530	worrisome for
+A3	Lesion-AssertionValue T12 possible
+T13	Lesion-Size-Trend 531 534	new
+A4	Lesion-Size-TrendValue T13 new
+T14	Lesion-Anatomy 535 549	left perihilar
+T15	Lesion-Description 550 554	mass
+T16	Lesion-Anatomy 566 577	mediastinal
+T17	Lesion-Description 579 594	lymphadenopathy
+E1	Lesion-Description:T2 has-Lesion-Size-Trend:T1 has-Lesion-Anatomy:T3
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Lesion-Description:T15 has-Lesion-Assertion:T12 has-Lesion-Size-Trend:T13 has-Lesion-Anatomy:T14
+E13	Lesion-Description:T17 has-Lesion-Anatomy:T16

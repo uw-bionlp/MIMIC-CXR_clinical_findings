@@ -1,0 +1,31 @@
+T1	Medical-Problem 252 269	Increased density
+T2	Medical-Anatomy 277 303	mid lung zones bilaterally
+T3	Medical-Assertion 307 317;319 321	likely due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 322 345	soft tissue attenuation
+T5	Medical-Anatomy 352 357	lungs
+T6	Medical-Assertion 368 375	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 376 395	focal consolidation
+T8	Medical-Problem 398 414	pleural effusion
+T9	Medical-Problem 418 430	pneumothorax
+T10	Medical-Anatomy 437 458	pulmonary vasculature
+T11	Medical-Assertion 462 465	not
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 466 474	engorged
+T13	Medical-Assertion 546 548	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 549 554;556 575	acute osseous abnormality
+T15	Medical-Problem 599 625	pectus excavatum deformity
+E11	Medical-Problem:T15
+T16	Medical-Assertion 643 645	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 646 675	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

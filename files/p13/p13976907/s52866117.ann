@@ -1,0 +1,31 @@
+T1	Medical-Problem 380 409	Dense coronary calcifications
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 453 473	mid right lung field
+T3	Medical-Problem 527 564	subtle increase in hazy opacification
+T4	Medical-Anatomy 580 596	right lower lung
+T5	Medical-Problem 624 635;637 647	interstital thickening
+E5	Medical-Problem:T5
+T6	Medical-Problem 662 680	interstitial edema
+E6	Medical-Problem:T6
+T7	Medical-Problem 683 708	Calcified pleural plaques
+E7	Medical-Problem:T7
+T8	Medical-Assertion 746 748	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 749 771	large pleural effusion
+T10	Medical-Problem 775 787	pneumothorax
+T11	Medical-Assertion 790 792	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 794 815	osseous abnormalities
+T13	Medical-Problem 846 872	Subtle increase in opacity
+T14	Medical-Anatomy 882 904	right lower lung field
+T15	Medical-Problem 910 933	interstitial thickening
+T16	Medical-Assertion 934 953	may be secondary to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 954 969	pulmonary edema
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T15 has-Medical-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T16

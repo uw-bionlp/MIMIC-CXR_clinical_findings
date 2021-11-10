@@ -1,0 +1,31 @@
+T1	Medical-Assertion 36 47	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 51 60	pneumonia
+T3	Medical-Problem 67 90	Hyperdense foreign body
+T4	Medical-Anatomy 111 130	left upper quadrant
+T5	Medical-Problem 501 530	hyperinflated with flattening
+E4	Medical-Problem:T5
+T6	Medical-Problem 554 575	increased AP diameter
+T7	Medical-Anatomy 583 607	retrocardiac clear space
+T8	Medical-Assertion 660 662	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 663 670	pleural
+E7	Medical-Problem:T9
+T10	Medical-Problem 671 679	effusion
+T11	Medical-Problem 683 695	pneumothorax
+T12	Medical-Problem 757 769	hyperdensity
+T13	Medical-Anatomy 791 810	left upper quadrant
+T14	Medical-Assertion 817 830	appears to be
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 833 845	foreign body
+T16	Medical-Assertion 909 920	No evidence
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 924 933	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

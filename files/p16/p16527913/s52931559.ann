@@ -1,0 +1,30 @@
+T1	Medical-Problem 153 188	Interval worsening of consolidation
+T2	Medical-Anatomy 196 218;220 231	right middle and right lower lobes
+T3	Medical-Problem 259 276	new consolidation
+T4	Medical-Anatomy 284 294;296 300	left lower lobe
+T5	Medical-Problem 323 336	focal opacity
+T6	Medical-Anatomy 344 359	left upper lobe
+T7	Medical-Problem 454 477	Small pleural effusions
+E7	Medical-Problem:T7
+T8	Medical-Problem 488 528;530 538	Increased lung volumes with increased AP diameter
+E8	Medical-Problem:T8
+T9	Medical-Assertion 539 562	suggest the possibility
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 566 586	underlying emphysema
+T11	Medical-Problem 604 638	Worsening multifocal consolidation
+E10	Medical-Problem:T11
+T12	Medical-Problem 657 667;669 678	multifocal pneumonia
+E11	Medical-Problem:T12
+T13	Medical-Assertion 680 695	possibly due to
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 717 727	aspiration
+T15	Medical-Problem 879 889;891 898	more focal opacity
+E13	Medical-Problem:T15
+T16	Lesion-Anatomy 906 910	left
+T17	Lesion-Description 975 983	neoplasm
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E15	Lesion-Description:T17 has-Lesion-Anatomy:T16

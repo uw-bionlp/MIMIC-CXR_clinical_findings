@@ -1,0 +1,32 @@
+T1	Medical-Problem 217 238	consolidative opacity
+T2	Medical-Anatomy 247 263	right lower lobe
+T3	Medical-Problem 281 290	pneumonia
+E3	Medical-Problem:T3
+T4	Medical-Problem 295 309	patchy opacity
+T5	Medical-Anatomy 326 343	retrocardiac area
+T6	Medical-Assertion 350 367	likely represents
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 368 376	scarring
+T8	Medical-Problem 380 391	atelectasis
+T9	Medical-Assertion 398 418	could also represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 448 476;478 498	Cardiomediastinal silhouette is slightly enlarged
+E8	Medical-Problem:T10
+T11	Medical-Assertion 510 512	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 513 525	pneumothorax
+T13	Medical-Problem 529 545	pleural effusion
+T14	Medical-Problem 676 702	Right lower lobe pneumonia
+E11	Medical-Problem:T14
+T15	Medical-Problem 704 731	Patchy retrocardiac opacity
+E12	Medical-Problem:T15
+T16	Medical-Problem 743 754	atelectasis
+E13	Medical-Problem:T16
+T17	Medical-Problem 760 784	second site of infection
+E14	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

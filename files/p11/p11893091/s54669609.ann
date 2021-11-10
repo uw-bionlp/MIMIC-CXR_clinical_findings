@@ -1,0 +1,23 @@
+T1	Medical-Problem 374 404	bilateral interstitial process
+E1	Medical-Problem:T1
+T2	Medical-Assertion 504 521	likely reflecting
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 522 566	chronic age-related or small airways changes
+T4	Medical-Problem 570 595	More focal patchy opacity
+T5	Medical-Anatomy 603 612	left base
+T6	Medical-Assertion 613 628	likely reflects
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 629 640;642 653	compressive atelectasis
+T8	Medical-Problem 664 680	pleural effusion
+T9	Medical-Problem 691 700	pneumonia
+T10	Medical-Assertion 701 711;713 721	can not be excluded
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 724 726	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 727 739	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

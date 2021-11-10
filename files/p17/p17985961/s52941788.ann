@@ -1,0 +1,22 @@
+T1	Medical-Assertion 348 350	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 351 363	pneumothorax
+T3	Medical-Problem 367 378;380 388	mediastinal widening
+T4	Medical-Problem 393 416	Substantial atelectasis
+T5	Medical-Anatomy 433 448	right lung base
+T6	Medical-Problem 518 535	vascular crowding
+T7	Medical-Problem 540 549;551 562	platelike atelectasis
+T8	Medical-Anatomy 570 579	left base
+T9	Medical-Problem 647 677	pulmonary vascular engorgement
+E8	Medical-Problem:T9
+T10	Medical-Assertion 678 686	suggests
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 687 702	volume overload
+T12	Medical-Problem 707 735	early cardiac decompensation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10

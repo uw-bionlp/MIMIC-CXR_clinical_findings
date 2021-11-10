@@ -1,0 +1,25 @@
+T1	Medical-Problem 296 303	Opacity
+T2	Medical-Anatomy 311 325	left lung base
+T3	Medical-Problem 345 362	prominent fat pad
+T4	Medical-Anatomy 370 375	lungs
+T5	Medical-Assertion 396 403	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 404 417	consolidation
+T7	Medical-Problem 419 427	effusion
+T8	Medical-Problem 432 437	edema
+T9	Lesion-Description 456 463	nodules
+E8	Lesion-Description:T9
+T10	Medical-Problem 570 591;593 614	Multiple healed right lateral rib fractures
+E9	Medical-Problem:T10
+T11	Medical-Problem 636 656	hypertrophic changes
+T12	Medical-Anatomy 664 669	spine
+T13	Medical-Assertion 690 692	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 693 722	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,30 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Medical-Problem 67 94	Stable lingular atelectasis
+E2	Medical-Problem:T3
+T4	Medical-Problem 99 110;112 138	right lower  lobe atelectasis/scarring
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 146 156	right lung
+T6	Lesion-Description 157 164	nodules
+T7	Medical-Problem 515 538	Minimal linear scarring
+T8	Medical-Anatomy 546 550	lung
+T9	Medical-Assertion 648 650	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 651 666;668 675	new parenchymal opacity
+T11	Medical-Assertion 678 680	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 681 690	pneumonia
+T13	Medical-Assertion 692 694	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 695 710	pulmonary edema
+T15	Medical-Assertion 713 715	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 716 733	pleural effusions
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

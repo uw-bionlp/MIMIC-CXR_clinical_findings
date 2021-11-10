@@ -1,0 +1,40 @@
+T1	Lesion-Size 44 48	9 mm
+T2	Lesion-Characteristic 49 60	ill-defined
+T3	Lesion-Characteristic 62 81	possibly spiculated
+T4	Lesion-Description 82 89	opacity
+T5	Lesion-Anatomy 110 121;123 128	right upper  lung
+T6	Medical-Problem 608 621	hyperinflated
+E6	Medical-Problem:T6
+T7	Medical-Problem 628 638	flattening
+T8	Medical-Anatomy 646 656	diaphragms
+T9	Medical-Problem 662 683	increased AP diameter
+E9	Medical-Problem:T9
+T10	Medical-Problem 711 726	mildly enlarged
+E10	Medical-Problem:T10
+T11	Medical-Anatomy 732 737	aorta
+T12	Medical-Problem 742 751	calcified
+T13	Medical-Assertion 792 794	No
+A1	Medical-AssertionValue T13 absent
+T14	Medical-Problem 795 811	pleural effusion
+T15	Medical-Problem 816 828	pneumothorax
+T16	Medical-Anatomy 858 874	right upper lung
+T17	Medical-Problem 889 900	ill-defined
+T18	Medical-Assertion 902 910	possibly
+A2	Medical-AssertionValue T18 possible
+T19	Medical-Assertion 1083 1085	No
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1086 1105	focal consolidation
+T21	Medical-Problem 1142 1146	COPD
+E18	Medical-Problem:T21
+T22	Medical-Assertion 1169 1177	possibly
+A4	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1178 1196	spiculated opacity
+T24	Medical-Anatomy 1217 1228;1230 1234	right upper lung
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E12	Medical-Problem:T12 has-Medical-Anatomy:T11
+E13	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T15 has-Medical-Assertion:T13
+E16	Medical-Problem:T17 has-Medical-Anatomy:T16 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E19	Medical-Problem:T23 has-Medical-Assertion:T22 has-Medical-Anatomy:T24

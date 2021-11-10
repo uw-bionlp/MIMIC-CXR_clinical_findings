@@ -1,0 +1,32 @@
+T1	Medical-Problem 34 57	Left lung opacification
+E1	Medical-Problem:T1
+T2	Medical-Assertion 61 75	concerning for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 76 104;106 115	lingular and left lower lobe  collapse
+T4	Medical-Assertion 117 128	less likely
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 129 138	pneumonia
+T6	Medical-Problem 438 461	Extensive opacification
+T7	Medical-Anatomy 469 473;475 479	left lung
+T8	Medical-Problem 480 488	obscures
+T9	Medical-Anatomy 493 510	left heart border
+T10	Medical-Problem 528 544	air bronchograms
+T11	Medical-Problem 551 604	only mild ipsilateral shift of mediastinal structures
+T12	Medical-Assertion 607 609	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 610 622	pneumothorax
+T14	Medical-Problem 627 649	right pleural effusion
+T15	Medical-Problem 670 693	Left lung opacification
+E12	Medical-Problem:T15
+T16	Medical-Problem 712 740;742 751	lingular and left lower lobe pneumonia
+E13	Medical-Problem:T16
+T17	Medical-Problem 758 782	some element of collapse
+E14	Medical-Problem:T17
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T2 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12

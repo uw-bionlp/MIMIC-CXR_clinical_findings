@@ -1,0 +1,35 @@
+T1	Medical-Problem 366 370;372 379	hazy opacity
+T2	Medical-Anatomy 387 407	right lung periphery
+T3	Medical-Problem 423 438	loculated fluid
+T4	Lesion-Anatomy 492 508	right lower lobe
+T5	Lesion-Characteristic 509 519	spiculated
+T6	Lesion-Description 520 524	mass
+T7	Medical-Problem 530 552	right base atelectasis
+E7	Medical-Problem:T7
+T8	Medical-Problem 558 585	rightward mediastinal shift
+E8	Medical-Problem:T8
+T9	Medical-Assertion 648 650	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 651 663	pneumothorax
+T11	Medical-Problem 683 704	emphysematous changes
+E10	Medical-Problem:T11
+T12	Medical-Assertion 738 740	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 741 753	pneumothorax
+T14	Lesion-Size-Trend 809 826	Stable appearance
+A3	Lesion-Size-TrendValue T14 no-change
+T15	Lesion-Anatomy 834 844	right lung
+T16	Lesion-Description 845 849	mass
+T17	Medical-Problem 855 874	basilar atelectasis
+E14	Medical-Problem:T17
+T18	Medical-Problem 880 897	mediastinal shift
+E15	Medical-Problem:T18
+T19	Medical-Problem 904 926	Stable loculated fluid
+T20	Medical-Anatomy 934 949	right lung base
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Lesion-Description:T16 has-Lesion-Size-Trend:T14 has-Lesion-Anatomy:T15
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20

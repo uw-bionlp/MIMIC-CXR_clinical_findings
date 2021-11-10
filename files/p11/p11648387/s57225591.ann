@@ -1,0 +1,40 @@
+T1	Medical-Problem 393 406	hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Assertion 407 414	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 415 434	focal consolidation
+T4	Medical-Problem 438 452	Bronchiectasis
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 464 474	lung bases
+T6	Lesion-Characteristic 495 504	scattered
+T7	Lesion-Characteristic 506 518	inflammatory
+T8	Lesion-Anatomy 519 528	pulmonary
+T9	Lesion-Description 529 536	nodules
+T10	Medical-Problem 578 584	Patchy
+E9	Medical-Problem:T10
+T11	Medical-Problem 586 597	atelectasis
+T12	Medical-Problem 601 609	scarring
+T13	Medical-Anatomy 622 637	both lung bases
+T14	Medical-Assertion 638 645	without
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 646 651;653 666	focal consolidation
+T16	Medical-Assertion 669 671	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 672 688	pleural effusion
+T18	Medical-Problem 692 704	pneumothorax
+T19	Medical-Problem 718 722	Mild
+E16	Medical-Problem:T19
+T20	Medical-Problem 724 744	degenerative changes
+T21	Medical-Anatomy 761 775	thoracic spine
+T22	Medical-Assertion 796 798	No
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 799 832	acute cardiopulmonary abnormality
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21
+E19	Medical-Problem:T23 has-Medical-Assertion:T22

@@ -1,0 +1,19 @@
+T1	Medical-Assertion 344 346	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 347 352;354 367	focal consolidation
+T3	Medical-Problem 369 377	effusion
+T4	Medical-Problem 382 394	pneumothorax
+T5	Lesion-Size-Trend 439 448	Unchanged
+A2	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Size 449 454	small
+T7	Lesion-Characteristic 455 464	calcified
+T8	Lesion-Description 465 474	granuloma
+T9	Lesion-Anatomy 482 503;505 519	lateral aspect of the right mid lung
+T10	Medical-Assertion 540 542	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 543 572	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E6	Lesion-Description:T8 has-Lesion-Size-Trend:T5 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

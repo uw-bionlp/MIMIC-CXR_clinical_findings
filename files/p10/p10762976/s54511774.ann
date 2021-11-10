@@ -1,0 +1,41 @@
+T1	Medical-Problem 412 436	diffuse alveolar opacity
+T2	Medical-Problem 441 457	air bronchograms
+T3	Medical-Anatomy 473 478;480 484	right lung
+T4	Medical-Anatomy 515 525	right lung
+T5	Medical-Problem 535 551;553 560	minimal residual lucency
+T6	Medical-Anatomy 568 578	right base
+T7	Medical-Problem 640 659	associated effusion
+T8	Medical-Assertion 660 678	cannot be excluded
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 699 749	prominent  focal interstitial and alveolar opacity
+T10	Medical-Anatomy 757 761;763 773	left upper zone
+T11	Medical-Problem 841 871	increased retrocardiac density
+E10	Medical-Problem:T11
+T12	Medical-Problem 878 889	obscuration
+T13	Medical-Anatomy 897 915	left hemidiaphragm
+T14	Medical-Problem 934 953	small left effusion
+E13	Medical-Problem:T14
+T15	Medical-Problem 1005 1021	relative lucency
+T16	Medical-Anatomy 1029 1043	left lung apex
+T17	Medical-Assertion 1057 1062	doubt
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1082 1094	pneumothorax
+T19	Medical-Problem 1116 1151	Interstitial and alveolar opacities
+T20	Medical-Anatomy 1155 1165	both lungs
+T21	Medical-Assertion 1212 1234	Differential diagnosis
+A3	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1244 1264;1266 1277	multifocal pneumonic infiltrates
+T23	Medical-Problem 1279 1283	ARDS
+T24	Medical-Problem 1288 1291	CHF
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Medical-Problem:T19 has-Medical-Anatomy:T20
+E19	Medical-Problem:T22 has-Medical-Assertion:T21
+E20	Medical-Problem:T23 has-Medical-Assertion:T21
+E21	Medical-Problem:T24 has-Medical-Assertion:T21

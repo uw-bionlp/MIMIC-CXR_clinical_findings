@@ -1,0 +1,14 @@
+T1	Medical-Assertion 228 230	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 231 248	pleural effusions
+T3	Medical-Problem 252 280	concerning skeletal findings
+T4	Lesion-Assertion 298 313	No radiographic
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 326 331	hilar
+T6	Lesion-Description 332 342	lymph node
+T7	Lesion-Characteristic 343 354	enlargement
+T8	Medical-Problem 367 378	sarcoidosis
+E6	Medical-Problem:T8
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T7

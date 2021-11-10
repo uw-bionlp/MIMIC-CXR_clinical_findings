@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 341 346	Lungs
+T2	Medical-Problem 384 404	underlying emphysema
+T3	Medical-Problem 406 416;418 425	Increasing opacity
+T4	Medical-Anatomy 433 448	right lung base
+T5	Medical-Problem 479 489	aspiration
+T6	Medical-Problem 494 503	pneumonia
+T7	Medical-Problem 517 528	atelectasis
+T8	Medical-Problem 563 569;571 580	Linear opacities
+T9	Medical-Anatomy 588 597	left base
+T10	Medical-Assertion 598 613	likely reflects
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Problem 614 622	scarring
+T12	Medical-Assertion 625 627	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 628 643	pulmonary edema
+T14	Medical-Problem 726 746	Small right effusion
+E12	Medical-Problem:T14
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T4
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

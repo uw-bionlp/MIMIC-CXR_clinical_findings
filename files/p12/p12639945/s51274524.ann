@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 229 236	cardiac
+T2	Medical-Problem 251 266	mildly enlarged
+T3	Medical-Problem 328 341	calcification
+T4	Medical-Anatomy 349 360	aortic knob
+T5	Medical-Problem 372 376;378 407	mild pulmonary vascular congestion
+E5	Medical-Problem:T5
+T6	Medical-Assertion 412 420	possible
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 421 443	trace pleural effusion
+T8	Medical-Assertion 468 470	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 471 490	focal consolidation
+T10	Medical-Problem 494 506	pneumothorax
+T11	Medical-Problem 509 531;533 556	Severe kyphosis due to compression deformities
+T12	Medical-Anatomy 579 593	thoracic spine
+T13	Medical-Problem 612 636	Mild stable cardiomegaly
+E11	Medical-Problem:T13
+T14	Medical-Problem 642 676	mild pulmonary vascular congestion
+E12	Medical-Problem:T14
+T15	Medical-Assertion 680 688	Possible
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 689 717	trace right pleural effusion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

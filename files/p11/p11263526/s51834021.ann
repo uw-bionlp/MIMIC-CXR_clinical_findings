@@ -1,0 +1,37 @@
+T1	Medical-Problem 172 188	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 195 216	bibasilar atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Assertion 223 234	no evidence
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 238 260	large pleural effusion
+T5	Medical-Problem 263 275	pneumothorax
+T6	Medical-Problem 277 292	pulmonary edema
+T7	Medical-Problem 296 315	focal consolidation
+T8	Medical-Problem 317 335;337 353	Focal rounded 4 mm calcific density
+T9	Medical-Anatomy 374 388	right mid lung
+T10	Lesion-Assertion 389 402	may represent
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 405 414	granuloma
+T12	Medical-Problem 522 551	pronounced kyphotic curvature
+T13	Medical-Anatomy 559 573	thoracic spine
+T14	Medical-Assertion 580 588	possible
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 589 637	loss of vertebral body height at multiple levels
+T16	Medical-Problem 716 732	Low lung volumes
+E13	Medical-Problem:T16
+T17	Medical-Problem 738 759	bibasilar atelectasis
+E14	Medical-Problem:T17
+T18	Medical-Assertion 766 774	Possible
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 775 804	loss of vertebral body height
+T20	Medical-Anatomy 808 832	multiple thoracic levels
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T3
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Lesion-Description:T11 has-Lesion-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E15	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Anatomy:T20

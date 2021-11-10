@@ -1,0 +1,40 @@
+T1	Medical-Problem 219 241	subcutaneous emphysema
+T2	Medical-Anatomy 253 268	left chest wall
+T3	Medical-Problem 327 354	probable small pneumothorax
+T4	Medical-Anatomy 358 372	left lung apex
+T5	Medical-Problem 384 396;398 405	retrocardiac density
+T6	Medical-Problem 411 422	obscuration
+T7	Medical-Anatomy 430 448	left hemidiaphragm
+T8	Medical-Assertion 497 514	likely represents
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 532 545;547 560	elevated left hemidiaphragm
+T10	Medical-Problem 562 600	left lower lobe collapse/consolidation
+T11	Medical-Problem 608 618;620 628	small left effusion
+T12	Medical-Anatomy 635 645	right lung
+T13	Medical-Assertion 664 671	without
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 672 684	pneumothorax
+T15	Medical-Problem 686 691;693 706	frank consolidation
+T16	Medical-Problem 710 724	gross effusion
+T17	Medical-Problem 727 753	Minimal linear atelectasis
+T18	Medical-Anatomy 761 770;772 776	right mid zone
+T19	Medical-Assertion 797 805	possible
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 806 839	minimal upper zone redistribution
+T21	Medical-Problem 936 940;942 959	tiny left pneumothorax
+E18	Medical-Problem:T21
+T22	Medical-Problem 988 1001	opacification
+T23	Medical-Anatomy 1009 1018	left base
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T7
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T8
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23

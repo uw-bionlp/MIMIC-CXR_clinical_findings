@@ -1,0 +1,24 @@
+T1	Medical-Problem 261 277	Linear opacities
+T2	Medical-Anatomy 285 290	bases
+T3	Medical-Assertion 291 310	may be secondary to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 312 323	atelectasis
+T5	Medical-Assertion 334 336	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 337 345	effusion
+T7	Medical-Problem 349 368	vascular congestion
+T8	Medical-Problem 491 502	Height loss
+T9	Medical-Anatomy 508 522;524 538	lower thoracic vertebral body
+T10	Medical-Problem 588 604	Low lung volumes
+E8	Medical-Problem:T10
+T11	Medical-Problem 610 636	linear bibasilar opacities
+E9	Medical-Problem:T11
+T12	Medical-Assertion 637 648	most likely
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 649 660	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

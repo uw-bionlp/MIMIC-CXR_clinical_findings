@@ -1,0 +1,26 @@
+T1	Medical-Problem 279 285;287 314	severe chronic pulmonary emphysema
+E1	Medical-Problem:T1
+T2	Medical-Problem 320 355	coarseness of interstitial markings
+E2	Medical-Problem:T2
+T3	Medical-Problem 365 374	asymmetry
+T4	Medical-Anatomy 382 391	left base
+T5	Medical-Assertion 392 405	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 409 437	area of developing pneumonia
+T7	Medical-Problem 442 452	aspiration
+T8	Lesion-Characteristic 475 483	cavitary
+T9	Lesion-Anatomy 484 496	right apical
+T10	Lesion-Description 497 503	lesion
+T11	Lesion-Anatomy 508 530;532 536	superior segment lower lobe
+T12	Lesion-Description 537 544	nodular
+E11	Lesion-Description:T12
+T13	Lesion-Description 545 552	opacity
+T14	Medical-Assertion 625 636	no evidence
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 640 658	acute pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T11
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

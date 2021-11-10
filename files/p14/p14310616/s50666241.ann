@@ -1,0 +1,32 @@
+T1	Medical-Anatomy 389 410	pulmonary vasculature
+T2	Medical-Assertion 414 417	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 418 426	engorged
+T4	Medical-Anatomy 433 438	lungs
+T5	Medical-Assertion 449 456	without
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 457 462;464 477	focal consolidation
+T7	Medical-Problem 479 495	pleural effusion
+T8	Medical-Problem 500 512	pneumothorax
+T9	Lesion-Assertion 515 517	No
+A3	Lesion-AssertionValue T9 absent
+T10	Lesion-Anatomy 518 527	pulmonary
+T11	Lesion-Description 528 535	lesions
+T12	Medical-Problem 558 581	pleura is not thickened
+E9	Medical-Problem:T12
+T13	Medical-Problem 632 648	Breast asymmetry
+E10	Medical-Problem:T13
+T14	Medical-Assertion 676 678	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 679 701	intrathoracic  process
+T16	Lesion-Assertion 703 711	no clear
+A5	Lesion-AssertionValue T16 absent
+T17	Lesion-Description 721 731	metastasis
+T18	Lesion-Anatomy 740 745	chest
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Lesion-Description:T17 has-Lesion-Assertion:T16 has-Lesion-Anatomy:T18

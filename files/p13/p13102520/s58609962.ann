@@ -1,0 +1,32 @@
+T1	Medical-Assertion 100 108	MIGHT BE
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 111 129	INTERSTITIAL EDEMA
+T3	Medical-Problem 132 145	VAGUE OPACITY
+T4	Medical-Anatomy 153 178	RIGHT CARDIOPHRENIC ANGLE
+T5	Medical-Assertion 186 204	RAISES CONCERN FOR
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 205 218	CONSOLIDATION
+T7	Medical-Assertion 292 311	RAISING CONCERN FOR
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 312 322	ASPIRATION
+T9	Medical-Problem 332 343	ATELECTASIS
+T10	Medical-Problem 353 373	PULMONARY INFILTRATE
+T11	Medical-Assertion 374 392	CANNOT BE EXCLUDED
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 919 956;958 963	persistent mild-to-moderate pulmonary edema
+E8	Medical-Problem:T12
+T13	Medical-Problem 1002 1022;1024 1044	left mid lung linear atelectasis/scarring
+E9	Medical-Problem:T13
+T14	Medical-Problem 1064 1095	relative more confluent opacity
+T15	Medical-Anatomy 1104 1119	right lung base
+T16	Medical-Assertion 1169 1179;1181 1192	appears to possibly be
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1193 1218	left retrocardiac opacity
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

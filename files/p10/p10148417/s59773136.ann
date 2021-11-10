@@ -1,0 +1,22 @@
+T1	Medical-Problem 280 305	Severe pulmonary fibrosis
+E1	Medical-Problem:T1
+T2	Medical-Problem 421 430;432 437	pulmonary edema
+E2	Medical-Problem:T2
+T3	Lesion-Size 457 462	Small
+T4	Lesion-Anatomy 463 467	lung
+T5	Lesion-Description 468 475	nodules
+T6	Lesion-Anatomy 500 505	lungs
+T7	Lesion-Assertion 522 524	no
+A1	Lesion-AssertionValue T7 absent
+T8	Lesion-Size 525 530	large
+T9	Lesion-Description 531 538	lesions
+T10	Medical-Problem 623 638	pulmonary edema
+E9	Medical-Problem:T10
+T11	Medical-Problem 1190 1211	Pleural effusions are
+E10	Medical-Problem:T11
+T12	Medical-Assertion 1227 1229	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 1230 1242	pneumothorax
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T6
+E8	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Size-Present:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,46 @@
+T1	Medical-Problem 330 345	pulmonary edema
+T2	Medical-Assertion 346 349;351 359	has resolved
+A1	Medical-AssertionValue T2 absent
+T3	Lesion-Characteristic 364 369	focal
+T4	Lesion-Description 370 385	nodular opacity
+T5	Lesion-Anatomy 406 429	anterior left fifth rib
+T6	Medical-Problem 459 473	Hyperinflation
+T7	Medical-Anatomy 481 486	lungs
+T8	Medical-Assertion 487 495	suggests
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 496 503;505 534	chronic obstructive pulmonary disease
+T10	Medical-Problem 537 563	Moderate biapical scarring
+E8	Medical-Problem:T10
+T11	Medical-Problem 584 597	focal opacity
+T12	Medical-Anatomy 609 619	right apex
+T13	Medical-Assertion 664 690	does therefore not reflect
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 691 707	active infection
+T15	Medical-Assertion 710 712	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 713 729	pleural effusion
+T17	Medical-Problem 734 747	pneumothorax.
+E13	Medical-Problem:T17
+T18	Medical-Problem 828 864	vertebral body compression deformity
+T19	Medical-Anatomy 872 884;886 900	mid to upper thoracic spine
+T20	Medical-Assertion 953 955	No
+A5	Medical-AssertionValue T20 absent
+T21	Lesion-Anatomy 981 994	intrathoracic
+T22	Lesion-Description 995 1005	malignancy
+T23	Medical-Problem 1009 1025	active infection
+T24	Medical-Problem 1046 1061	pulmonary edema
+T25	Medical-Assertion 1062 1074	has resolved
+A6	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1079 1095	Severe emphysema
+E20	Medical-Problem:T26
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E3	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Lesion-Description:T22 has-Lesion-Anatomy:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T20
+E19	Medical-Problem:T24 has-Medical-Assertion:T25

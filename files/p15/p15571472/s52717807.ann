@@ -1,0 +1,20 @@
+T1	Medical-Problem 198 222	Persistent opacification
+T2	Medical-Anatomy 230 246	right hemithorax
+T3	Medical-Problem 252 262;264 275	associated volume loss
+T4	Medical-Anatomy 343 352	left lung
+T5	Medical-Assertion 362 369	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 370 389	focal consolidation
+T7	Medical-Problem 391 407	pleural effusion
+T8	Medical-Problem 412 424	pneumothorax
+T9	Medical-Assertion 535 537	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 538 565	acute intrathoracic process
+T11	Medical-Problem 571 593;595 602	unchanged postsurgical changes
+E9	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

@@ -1,0 +1,20 @@
+T1	Medical-Problem 230 262	Only focal pulmonary abnormality
+E1	Medical-Problem:T1
+T2	Medical-Problem 321 362	very small cluster of irregular opacities
+E2	Medical-Problem:T2
+T3	Medical-Assertion 441 451	doubt that
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 464 479	acute pneumonia
+T5	Medical-Problem 533 537;539 547	Mild fullness
+T6	Medical-Anatomy 555 587	right lower paratracheal station
+T7	Medical-Problem 600 616;618 629	mildly distended azygos vein
+T8	Lesion-Assertion 669 671	no
+A2	Lesion-AssertionValue T8 absent
+T9	Lesion-Characteristic 691 698	central
+T10	Lesion-Description 699 721	lymph node enlargement
+T11	Medical-Problem 725 737	splenomegaly
+E9	Medical-Problem:T11
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9

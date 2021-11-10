@@ -1,0 +1,33 @@
+T1	Medical-Problem 222 230	aorta is
+E1	Medical-Problem:T1
+T2	Medical-Problem 231 239	tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 244 253	calcified
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 290 295	lungs
+T5	Medical-Problem 309 323	patchy opacity
+T6	Medical-Anatomy 331 347	right upper lobe
+T7	Medical-Assertion 466 477	may reflect
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 478 512	areas of increased mucous plugging
+T9	Medical-Problem 530 562	suspected lower airway infection
+E8	Medical-Problem:T9
+T10	Medical-Problem 566 584	atypical infection
+T11	Medical-Assertion 596 598	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 599 606;608 616	pleural effusion
+T13	Medical-Problem 620 632	pneumothorax
+T14	Medical-Problem 653 676	Vague increased opacity
+T15	Medical-Anatomy 684 700	right upper lobe
+T16	Medical-Assertion 701 711	suggesting
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 712 731	airway inflammation
+T18	Medical-Problem 736 745	infection
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

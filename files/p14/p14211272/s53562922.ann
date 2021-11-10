@@ -1,0 +1,35 @@
+T1	Medical-Problem 217 224;226 240	massive hyperinflation
+T2	Medical-Anatomy 244 254	both lungs
+T3	Medical-Problem 260 272	large bullae
+T4	Medical-Anatomy 288 300;302 326	lower lungs, right more than the left
+T5	Medical-Assertion 338 345	no sign
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 349 361	pneumothorax
+T7	Medical-Problem 366 380;382 394	definite signs of pneumonia
+T8	Medical-Problem 397 405	Blunting
+T9	Medical-Anatomy 413 437	CP angles bilaterally on
+T10	Medical-Assertion 462 475	could reflect
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 480 502	massive hyperinflation
+T12	Medical-Problem 529 537	effusion
+T13	Medical-Problem 556 600	Cardiomediastinal silhouette appears tubular
+E11	Medical-Problem:T13
+T14	Medical-Problem 659 684	underlying emphysema/COPD
+E12	Medical-Problem:T14
+T15	Medical-Problem 735 759	Severe bullous emphysema
+E13	Medical-Problem:T15
+T16	Medical-Assertion 762 770	Possible
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 771 796	small bilateral effusions
+T18	Medical-Assertion 800 811	No evidence
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 815 837	superimposed pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

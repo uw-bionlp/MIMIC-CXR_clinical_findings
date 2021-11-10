@@ -1,0 +1,19 @@
+T1	Medical-Assertion 257 259	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 260 275	relevant change
+T3	Medical-Problem 316 332;334 356	partly organized right pleural effusion
+E2	Medical-Problem:T3
+T4	Lesion-Anatomy 381 401	perihilar left-sided
+T5	Lesion-Description 402 406	mass
+T6	Medical-Problem 411 447	hidden behind the cardiac silhouette
+E5	Medical-Problem:T6
+T7	Lesion-Characteristic 512 521	Calcified
+T8	Lesion-Anatomy 522 532	left hilar
+T9	Lesion-Description 533 543	lymph node
+T10	Medical-Assertion 546 557	No evidence
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 561 564;566 593	new focal parenchymal opacities
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

@@ -1,0 +1,16 @@
+T1	Medical-Problem 332 358	slight increase in opacity
+T2	Medical-Anatomy 366 380	left lung base
+T3	Medical-Problem 486 510	Slight increased opacity
+T4	Medical-Anatomy 518 532	left lung base
+T5	Medical-Problem 563 587	underlying consolidation
+T6	Medical-Assertion 591 603	not excluded
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 707 709	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 710 731	definite pneumothorax
+T9	Medical-Problem 759 781;783 795	questionable sliver of pneumothorax
+E7	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

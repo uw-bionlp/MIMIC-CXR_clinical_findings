@@ -1,0 +1,26 @@
+T1	Medical-Problem 166 194	small right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 201 219;221 229	trace left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 232 250	Hazy opacification
+T4	Medical-Anatomy 258 267	left base
+T5	Medical-Problem 293 304	atelectasis
+T6	Medical-Assertion 316 318	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 319 331	pneumothorax
+T8	Medical-Problem 333 346	consolidation
+T9	Medical-Problem 350 365	pulmonary edema
+T10	Lesion-Assertion 368 370	No
+A2	Lesion-AssertionValue T10 absent
+T11	Lesion-Anatomy 372 381	pulmonary
+T12	Lesion-Description 382 389	nodules
+T13	Medical-Problem 471 504	Small bilateral pleural effusions
+E11	Medical-Problem:T13
+T14	Medical-Problem 511 535	Left basilar atelectasis
+E12	Medical-Problem:T14
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Anatomy:T11

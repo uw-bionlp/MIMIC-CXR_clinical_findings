@@ -1,0 +1,42 @@
+T1	Medical-Problem 319 333	Mild unfolding
+T2	Medical-Anatomy 353 367	thoracic aorta
+T3	Medical-Problem 373 386	calcification
+T4	Medical-Problem 390 417	Heterogeneous opacification
+T5	Medical-Anatomy 433 448	each lower lung
+T6	Medical-Problem 451 460	Opacities
+T7	Medical-Anatomy 475 514	both infrahilar regions, more extensive
+T8	Medical-Problem 566 618	patchy mid and peripheral right lower lung opacities
+E8	Medical-Problem:T8
+T9	Medical-Problem 650 675	small pleural effusion on
+E9	Medical-Problem:T9
+T10	Medical-Problem 718 730	costophrenic
+E10	Medical-Problem:T10
+T11	Medical-Problem 740 748	Blunting
+T12	Medical-Anatomy 756 773;775 781	left costophrenic sulcus
+T13	Medical-Assertion 782 795	may be due to
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Problem 798 812	small effusion
+T15	Medical-Problem 816 834	chronic thickening
+T16	Medical-Assertion 845 847	no
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 849 861	pneumothorax
+T18	Medical-Problem 879 906	Heterogeneous opacification
+T19	Medical-Anatomy 914 932	mid-to-lower lungs
+T20	Medical-Problem 944 966	right mid lung opacity
+T21	Medical-Problem 1076 1085	pneumonia
+T22	Medical-Anatomy 1093 1098;1100 1104	right lung
+T23	Medical-Problem 1107 1156	superimposed on background pulmonary architecture
+T24	Medical-Assertion 1176 1187	potentially
+A3	Medical-AssertionValue T24 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E11	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T20 has-Medical-Anatomy:T19
+E19	Medical-Problem:T21 has-Medical-Anatomy:T22
+E21	Medical-Problem:T23 has-Medical-Assertion:T24

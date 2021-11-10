@@ -1,0 +1,17 @@
+T1	Medical-Anatomy 331 346	left lower lobe
+T2	Medical-Problem 359 366;368 379	largely atelectatic
+T3	Medical-Problem 399 430	less leftward mediastinal shift
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 461 479	Pulmonary arteries
+T5	Medical-Problem 484 502	cardiac silhouette
+T6	Medical-Anatomy 517 526;528 539	Pulmonary vasculature
+T7	Medical-Problem 543 558	mildly engorged
+T8	Medical-Assertion 572 574	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 575 580	edema
+T10	Medical-Problem 609 617	at least
+E9	Medical-Problem:T10
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8

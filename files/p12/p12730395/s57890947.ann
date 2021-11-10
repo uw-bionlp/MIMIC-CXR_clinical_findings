@@ -1,0 +1,19 @@
+T1	Medical-Problem 543 565;567 579	persistent right basal pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 646 680	small right-sided pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 693 709	airspace opacity
+T4	Medical-Anatomy 717 722;724 732	right mid lung
+T5	Medical-Assertion 733 748	likely reflects
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 749 760	atelectasis
+T7	Medical-Problem 765 787	superimposed infection
+T8	Medical-Assertion 788 797;799 807	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 966 968	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 969 996	significant interval change
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

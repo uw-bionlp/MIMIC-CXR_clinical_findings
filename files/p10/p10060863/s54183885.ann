@@ -1,0 +1,17 @@
+T1	Medical-Assertion 192 199	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 200 210;212 232	pleural or pericardial effusion
+T3	Medical-Problem 278 284;286 295	Pectus deformity
+T4	Medical-Anatomy 309 327	right heart border
+T5	Lesion-Anatomy 413 432;434 444	left sixth anterior interspace
+T6	Lesion-Size 456 459	9mm
+T7	Lesion-Description 460 467	nodular
+E6	Lesion-Description:T7
+T8	Lesion-Description 468 475	opacity
+T9	Medical-Assertion 493 495	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 496 519	acute chest abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

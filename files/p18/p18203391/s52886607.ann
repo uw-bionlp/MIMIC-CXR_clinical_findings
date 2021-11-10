@@ -1,0 +1,21 @@
+T1	Medical-Problem 170 197	persistent low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 242 270	Right lower lobe atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 297 307;309 318	Increasing opacities
+T4	Medical-Anatomy 326 341	left lower lobe
+T5	Medical-Assertion 342 350	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 351 362	atelectasis
+T7	Medical-Problem 367 379;381 390	superimposed infection
+T8	Medical-Assertion 391 409	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 421 423	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 424 436	pneumothorax
+T11	Medical-Problem 440 456	pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

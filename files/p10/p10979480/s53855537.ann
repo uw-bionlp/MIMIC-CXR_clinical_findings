@@ -1,0 +1,30 @@
+T1	Medical-Problem 407 426	Bibasilar opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 493 501	possible
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 502 528	minimal residual remaining
+T4	Medical-Anatomy 537 551	left lung base
+T5	Medical-Assertion 554 556	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 557 573	pleural effusion
+T7	Medical-Problem 577 589	pneumothorax
+T8	Medical-Problem 592 611	Mild loss of height
+T9	Medical-Anatomy 618 651	mid lower thoracic vertebral body
+T10	Medical-Problem 744 767	Interval improvement in
+E8	Medical-Problem:T10
+T11	Medical-Problem 768 787	bibasilar opacities
+T12	Medical-Anatomy 797 807;809 813	right lung base
+T13	Medical-Anatomy 828 842	left lung base
+T14	Medical-Problem 848 873	minimal residua remaining
+T15	Medical-Assertion 875 886;888 890	which could be
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 891 902	atelectasis
+T17	Medical-Problem 910 935	aspiration/mild infection
+E2	Medical-Problem:T3 has-Medical-Assertion:T2 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13 has-Medical-Assertion:T15

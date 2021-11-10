@@ -1,0 +1,25 @@
+T1	Medical-Problem 396 404	Aeration
+T2	Medical-Anatomy 412 421	left lung
+T3	Medical-Problem 445 466	left pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 496 516;518 561	Mild persistent left basilar retrocardiac airspace opacification
+E4	Medical-Problem:T4
+T5	Medical-Assertion 565 578	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 579 588;590 610	resolving aspiration pneumonia
+T7	Medical-Problem 612 642	Mildly increased opacification
+T8	Medical-Anatomy 650 667;669 673	medial right lung base
+T9	Medical-Assertion 674 692	may also be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 693 720	new or worsening aspiration
+T11	Medical-Problem 777 807	bilateral aspiration pneumonia
+E9	Medical-Problem:T11
+T12	Medical-Assertion 837 843	may be
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 844 871	new or worsening aspiration
+T14	Medical-Anatomy 879 884;886 890	right base
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12 has-Medical-Anatomy:T14

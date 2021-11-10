@@ -1,0 +1,61 @@
+T1	Medical-Problem 34 42	Scarring
+T2	Medical-Problem 47 61	bronchiectasis
+T3	Medical-Anatomy 69 85	right upper lobe
+T4	Medical-Problem 91 109;111 116	right sided volume  loss
+T5	Medical-Problem 119 145	Superimposed acute process
+E5	Medical-Problem:T5
+T6	Lesion-Characteristic 149 159	underlying
+T7	Lesion-Description 160 171	mass lesion
+T8	Medical-Problem 552 556	loss
+E8	Medical-Problem:T8
+T9	Medical-Problem 567 583	Linear opacities
+T10	Medical-Anatomy 591 607	right upper lobe
+T11	Medical-Assertion 608 611;613 622	may represent
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 623 631	scarring
+T13	Medical-Problem 639 653	bronchiectasis
+T14	Medical-Problem 655 671	Linear opacities
+T15	Medical-Anatomy 679 689;691 695	right lung base
+T16	Medical-Assertion 696 709	may represent
+A2	Medical-AssertionValue T16 possible
+T17	Medical-Problem 710 721	atelectasis
+T18	Medical-Problem 725 729	scar
+T19	Medical-Problem 740 758	pleural thickening
+T20	Medical-Anatomy 770 800	right lung apex and lower lung
+T21	Medical-Assertion 807 815	could be
+A3	Medical-AssertionValue T21 possible
+T22	Medical-Problem 816 825	calcified
+T23	Medical-Problem 837 846;848 864	prominent extrapleural fat
+T24	Medical-Assertion 875 877	no
+A4	Medical-AssertionValue T24 absent
+T25	Medical-Problem 878 890	pneumothorax
+T26	Medical-Problem 902 913	is tortuous
+E22	Medical-Problem:T26
+T27	Medical-Anatomy 920 937	cardiomediastinal
+E23	Medical-Anatomy:T27
+T28	Medical-Problem 995 1003	Scarring
+T29	Medical-Problem 1008 1022	bronchiectasis
+T30	Medical-Anatomy 1030 1046	right upper lobe
+T31	Medical-Problem 1052 1070;1072 1076	right sided volume loss
+T32	Medical-Problem 1079 1097	Superimposed acute
+E28	Medical-Problem:T32
+T33	Lesion-Characteristic 1109 1119	underlying
+T34	Lesion-Description 1120 1131	mass lesion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T6
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E16	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E17	Medical-Problem:T19 has-Medical-Anatomy:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E20	Medical-Problem:T23 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E21	Medical-Problem:T25 has-Medical-Assertion:T24
+E24	Medical-Problem:T28 has-Medical-Anatomy:T30
+E25	Medical-Problem:T29 has-Medical-Anatomy:T30
+E27	Medical-Problem:T31 has-Medical-Anatomy:T30
+E30	Lesion-Description:T34 has-Lesion-Characteristic:T33

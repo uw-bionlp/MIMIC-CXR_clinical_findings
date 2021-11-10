@@ -1,0 +1,42 @@
+T1	Medical-Problem 326 346;348 356	Heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 363 389	aorta is slightly tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 401 424	mild perihilar haziness
+E3	Medical-Problem:T3
+T4	Medical-Problem 430 453	vascular indistinctness
+E4	Medical-Problem:T4
+T5	Medical-Problem 470 493;495 505	mild pulmonary vascular congestion
+E5	Medical-Problem:T5
+T6	Medical-Problem 508 524	Patchy opacities
+T7	Medical-Anatomy 528 543	both lung bases
+T8	Medical-Anatomy 562 572;574 578	left upper lobe
+T9	Medical-Assertion 579 592	could reflect
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 593 613	coexisting infection
+T11	Medical-Problem 617 627	aspiration
+T12	Medical-Assertion 630 632	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 633 649	pleural effusion
+T14	Medical-Problem 654 666	pneumothorax
+T15	Medical-Assertion 711 713	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 714 723;725 734	displaced fractures
+T17	Medical-Problem 803 837	Mild pulmonary vascular congestion
+E14	Medical-Problem:T17
+T18	Medical-Problem 843 859	Patchy opacities
+T19	Medical-Anatomy 863 878	both lung bases
+T20	Medical-Anatomy 883 898	left upper lobe
+T21	Medical-Assertion 905 916	may reflect
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 918 927	infection
+T23	Medical-Problem 931 941	aspiration
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T19 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Anatomy:T19 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

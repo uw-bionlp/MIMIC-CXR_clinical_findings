@@ -1,0 +1,16 @@
+T1	Medical-Problem 334 363	Severe subcutaneous emphysema
+T2	Medical-Anatomy 371 395	left chest wall and neck
+T3	Medical-Problem 415 430	Large opacities
+T4	Medical-Anatomy 448 478	lower left pneumonectomy space
+T5	Medical-Assertion 484 492	probably
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 493 499	fibrin
+T7	Medical-Problem 503 513	blood clot
+T8	Medical-Anatomy 547 557	Right lung
+E7	Medical-Anatomy:T8
+T9	Medical-Problem 577 606	Mild to moderate cardiomegaly
+E8	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5

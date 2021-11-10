@@ -1,0 +1,37 @@
+T1	Medical-Problem 289 305;307 319	Lung volumes are somewhat low
+E1	Medical-Problem:T1
+T2	Medical-Problem 322 341	Mild linear opacity
+T3	Medical-Anatomy 349 363	left lung base
+T4	Medical-Problem 389 400	atelectasis
+T5	Medical-Anatomy 407 412	lungs
+T6	Medical-Assertion 436 443	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 453 462	pneumonia
+T8	Medical-Problem 467 470	CHF
+T9	Medical-Assertion 473 475	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 476 492	pleural effusion
+T11	Medical-Problem 496 508	pneumothorax
+T12	Medical-Problem 568 573	Aorta
+E10	Medical-Problem:T12
+T13	Medical-Problem 577 594	slightly unfolded
+T14	Medical-Problem 600 615;617 631	atherosclerotic calcifications
+T15	Medical-Anatomy 632 646	along the knob
+T16	Medical-Assertion 681 683	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 684 692	free air
+T18	Medical-Anatomy 704 723	right hemidiaphragm
+T19	Medical-Assertion 741 743	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 744 758	acute findings
+T21	Medical-Anatomy 766 771	chest
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19 has-Medical-Anatomy:T21

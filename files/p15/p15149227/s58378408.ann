@@ -1,0 +1,21 @@
+T1	Medical-Anatomy 276 283	Cardiac
+T2	Medical-Problem 298 310	prominent in
+T3	Medical-Problem 375 397;399 409	new pulmonary vascular congestion
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 414 423	bilateral
+T5	Lesion-Characteristic 424 438	poorly-defined
+T6	Lesion-Description 453 460	nodular
+E6	Lesion-Description:T6
+T7	Lesion-Description 461 470	opacities
+T8	Medical-Assertion 483 498	possibly due to
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 499 514	pulmonary edema
+T10	Medical-Assertion 534 552	more suggestive of
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 554 575	multifocal aspiration
+T12	Medical-Problem 579 604	evolving bronchopneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T8 has-Medical-Assertion:T10

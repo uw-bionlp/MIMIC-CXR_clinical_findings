@@ -1,0 +1,29 @@
+T1	Medical-Problem 367 388	Persistent flattening
+T2	Medical-Anatomy 396 406	diaphragms
+T3	Medical-Problem 411 434	increase in AP diameter
+E3	Medical-Problem:T3
+T4	Medical-Problem 453 478	chronic pulmonary disease
+T5	Medical-Problem 481 492	New opacity
+T6	Medical-Anatomy 500 511;513 517	right upper lobe
+T7	Medical-Problem 519 568	Stable appearance of the right lower lobe opacity
+E7	Medical-Problem:T7
+T8	Lesion-Characteristic 570 579	Scattered
+T9	Lesion-Anatomy 580 589	bilateral
+T10	Lesion-Description 591 598	nodules
+T11	Medical-Assertion 669 671	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 672 688	pleural effusion
+T13	Medical-Problem 690 705	pulmonary edema
+T14	Medical-Problem 707 719	pneumothorax
+T15	Medical-Problem 721 738	Stable tortuosity
+T16	Medical-Anatomy 747 763	descending aorta
+T17	Medical-Problem 849 879	New right upper lobe pneumonia
+E16	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E10	Lesion-Description:T10 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T14 has-Medical-Assertion:T11
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16

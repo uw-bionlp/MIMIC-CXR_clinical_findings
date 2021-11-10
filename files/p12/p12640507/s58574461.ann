@@ -1,0 +1,41 @@
+T1	Medical-Problem 303 325	aorta remains tortuous
+E1	Medical-Problem:T1
+T2	Medical-Problem 430 437	Streaky
+E2	Medical-Problem:T2
+T3	Medical-Problem 438 447	opacities
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 469 479	lung bases
+T5	Medical-Assertion 481 492	potentially
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 494 505	atelectasis
+T7	Medical-Problem 513 522	infection
+T8	Medical-Problem 526 536	aspiration
+T9	Medical-Assertion 537 566	cannot be completely excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 578 580	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 581 593	pneumothorax
+T12	Medical-Problem 597 613	pleural effusion
+T13	Medical-Assertion 615 617	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 618 645	acute osseous abnormalities
+T15	Medical-Problem 664 690	right seventh rib fracture
+E11	Medical-Problem:T15
+T16	Medical-Problem 737 754	streaky opacities
+E12	Medical-Problem:T16
+T17	Medical-Assertion 756 762	likely
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 763 774	atelectasis
+T19	Medical-Problem 782 791	infection
+T20	Medical-Problem 795 805	aspiration
+T21	Medical-Assertion 807 825	cannot be excluded
+A6	Medical-AssertionValue T21 possible
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T19 has-Medical-Assertion:T17 has-Medical-Assertion:T21
+E15	Medical-Problem:T20 has-Medical-Assertion:T21

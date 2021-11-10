@@ -1,0 +1,27 @@
+T1	Lesion-Characteristic 229 236	Diffuse
+T2	Lesion-Anatomy 237 256	bilateral pulmonary
+T3	Lesion-Description 257 264	nodules
+T4	Lesion-Anatomy 274 304;306 317	scattered throughout the lungs bilaterally
+T5	Medical-Assertion 329 331	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 332 383	definite superimposed large confluent consolidation
+T7	Medical-Problem 388 396	effusion
+T8	Lesion-Description 668 686	metastatic disease
+E7	Lesion-Description:T8
+T9	Lesion-Count 692 703	innumerable
+T10	Lesion-Anatomy 704 723	bilateral pulmonary
+T11	Lesion-Description 725 732	nodules
+T12	Medical-Assertion 744 746	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 747 782	definite superimposed consolidation
+T14	Medical-Problem 798 803;805 822	small area of infection
+T15	Medical-Assertion 823 852	would be difficult to exclude
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 859 876	burden of disease
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E10	Lesion-Description:T11 has-Lesion-Count:T9 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T12 has-Medical-Assertion:T15

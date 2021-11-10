@@ -1,0 +1,28 @@
+T1	Medical-Problem 33 58	Left lower lobe pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Problem 466 505	Progressive peribronchial opacification
+T3	Medical-Anatomy 509 543;545 550	both lower lobes, particularly the right
+T4	Medical-Assertion 552 563	most likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 564 573	pneumonia
+T6	Medical-Assertion 575 583	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 591 601	aspiration
+T8	Medical-Problem 605 619;621 636	progression of viral pneumonia
+T9	Medical-Problem 640 690	superimposition of superseding bacterial pneumonia
+T10	Medical-Problem 693 697;699 720	Tiny left pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 763 765	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 766 774;776 796	right or pericardial effusion
+T13	Lesion-Assertion 799 801	No
+A4	Lesion-AssertionValue T13 absent
+T14	Lesion-Characteristic 802 809	central
+T15	Lesion-Description 810 820	adenopathy
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Characteristic:T14

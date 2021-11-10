@@ -1,0 +1,21 @@
+T1	Medical-Problem 317 334	increased opacity
+T2	Medical-Anatomy 342 366	right lower lung, likely
+T3	Medical-Anatomy 372 389	right middle lobe
+T4	Medical-Anatomy 404 419	left lower lung
+T5	Medical-Assertion 420 434	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 435 443;445 452	lingular process
+T7	Medical-Assertion 455 457	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 458 474	pleural effusion
+T9	Medical-Problem 478 490	pneumothorax
+T10	Medical-Problem 567 612	Right middle lobe and lingular consolidations
+E8	Medical-Problem:T10
+T11	Medical-Assertion 613 627	concerning for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 628 638;640 649	multifocal pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

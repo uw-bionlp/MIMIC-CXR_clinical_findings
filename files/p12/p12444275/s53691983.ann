@@ -1,0 +1,39 @@
+T1	Medical-Problem 369 387	Lung volume is low
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 390 400	Right lung
+T3	Medical-Assertion 438 452	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 453 472	worsening pneumonia
+T5	Medical-Problem 476 485;487 492	pulmonary edema
+T6	Medical-Problem 495 530	Left base atelectasis is persistent
+E5	Medical-Problem:T6
+T7	Medical-Problem 533 554	Left mid lung opacity
+E6	Medical-Problem:T7
+T8	Lesion-Anatomy 581 596	left lower lobe
+T9	Lesion-Description 597 601	mass
+T10	Medical-Problem 622 637;639 656	bilateral small pleural effusions
+E9	Medical-Problem:T10
+T11	Medical-Assertion 659 661	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 662 679	new consolidation
+T13	Medical-Problem 696 713;715 733	Severely enlarged cardiac silhouette
+E11	Medical-Problem:T13
+T14	Medical-Problem 749 772	Pulmonary edema is mild
+E12	Medical-Problem:T14
+T15	Medical-Anatomy 793 809	Right lower lobe
+T16	Medical-Assertion 841 855	concerning for
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 856 865;867 876	worsening pneumonia
+T18	Medical-Problem 880 895	pulmonary edema
+T19	Medical-Problem 898 919	Left base atelectasis
+E16	Medical-Problem:T19
+T20	Medical-Assertion 924 932	probable
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 933 942;944 967	bilateral small pleural effusions
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

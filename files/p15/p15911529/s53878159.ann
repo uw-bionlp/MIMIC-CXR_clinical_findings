@@ -1,0 +1,31 @@
+T1	Medical-Problem 468 478;480 499	tiny right apical pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 506 528	heart remains enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 611 625	patchy opacity
+T4	Medical-Anatomy 634 644	right base
+T5	Medical-Assertion 651 662	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 663 691	re-expansion pulmonary edema
+T7	Medical-Problem 702 708;710 722	patchy ateclectasis
+T8	Medical-Problem 726 735	pneumonia
+T9	Medical-Assertion 736 761	should also be considered
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 766 781	rounded contour
+T11	Medical-Anatomy 790 812	right medial lung base
+T12	Medical-Assertion 813 824	may reflect
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 825 849	prominent epicardial fat
+T14	Lesion-Anatomy 922 933	medial lung
+T15	Lesion-Description 934 940	nodule
+T16	Medical-Assertion 1018 1020	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1022 1037	large effusions
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

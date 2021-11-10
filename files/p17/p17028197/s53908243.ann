@@ -1,0 +1,38 @@
+T1	Medical-Problem 249 264	relevant change
+E1	Medical-Problem:T1
+T2	Medical-Problem 275 283;285 297	Moderate cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 300 315	Mild elongation
+T4	Medical-Anatomy 323 339	descending aorta
+T5	Medical-Assertion 342 344	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 345 362	pleural effusions
+T7	Lesion-Anatomy 407 422	lung parenchyma
+T8	Lesion-Count 429 436	several
+T9	Lesion-Characteristic 438 449	potentially
+T10	Lesion-Characteristic 450 459	calcified
+T11	Lesion-Description 460 470	granulomas
+T12	Lesion-Anatomy 486 491	right
+T13	Lesion-Anatomy 503 512;514 518	left lung apex
+T14	Medical-Assertion 532 543	no evidence
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 548 566	acute lung disease
+T16	Medical-Problem 575 584	pneumonia
+T17	Medical-Problem 589 604	pulmonary edema
+T18	Lesion-Assertion 607 609	No
+A3	Lesion-AssertionValue T18 absent
+T19	Lesion-Characteristic 610 620	suspicious
+T20	Lesion-Anatomy 621 625	lung
+T21	Lesion-Description 626 633	nodules
+T22	Lesion-Description 637 643	masses
+T23	Medical-Anatomy 678 692	thoracic spine
+T24	Medical-Problem 699 734	mild degenerative vertebral disease
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T7 has-Lesion-Count:T8 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T14
+E18	Lesion-Description:T21 has-Lesion-Assertion:T18 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T20
+E19	Lesion-Description:T22 has-Lesion-Assertion:T18 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T20
+E21	Medical-Problem:T24 has-Medical-Anatomy:T23

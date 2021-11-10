@@ -1,0 +1,30 @@
+T1	Medical-Assertion 227 229	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 231 243	pneumothorax
+T3	Medical-Problem 247 275	focal airspace consolidation
+T4	Lesion-Characteristic 280 289	calcified
+T5	Lesion-Description 290 299	granuloma
+T6	Lesion-Anatomy 308 324	right lower lobe
+T7	Lesion-Characteristic 329 338	calcified
+T8	Lesion-Anatomy 339 344	hilar
+T9	Lesion-Description 345 356	lymph nodes
+T10	Medical-Anatomy 378 385;387 397	cardiac silhouette
+E9	Medical-Anatomy:T10
+T11	Medical-Assertion 449 460	no evidence
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 466 481	pulmonary edema
+T13	Medical-Assertion 549 551	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 552 579	acute osseous abnormalities
+T15	Medical-Assertion 640 642	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 643 672	acute cardiopulmonary process
+T17	Medical-Problem 678 699;701 720	unchanged moderate to severe cardiomegaly
+E13	Medical-Problem:T17
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

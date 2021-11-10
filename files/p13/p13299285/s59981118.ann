@@ -1,0 +1,34 @@
+T1	Medical-Problem 213 236	new vascular congestion
+E1	Medical-Problem:T1
+T2	Medical-Problem 239 254	Left lower lobe
+E2	Medical-Problem:T2
+T3	Medical-Problem 255 264	opacities
+E3	Medical-Problem:T3
+T4	Medical-Assertion 269 275	likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 277 288	atelectases
+T6	Medical-Problem 297 319	superimposed infection
+T7	Medical-Assertion 320 338	cannot be excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 350 352	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 354 366	pneumothorax
+T10	Medical-Problem 370 393	large pleural effusions
+T11	Medical-Problem 396 413	Biapical fibrosis
+E8	Medical-Problem:T11
+T12	Medical-Problem 444 473	Subpleural peripheral opacity
+T13	Medical-Anatomy 481 495	right mid lung
+T14	Medical-Assertion 496 511	could be due to
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 513 524	atelectasis
+T16	Medical-Problem 528 538	aspiration
+T17	Medical-Problem 551 587	multiple areas of linear atelectases
+T18	Medical-Anatomy 592 607	bilateral lungs
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18

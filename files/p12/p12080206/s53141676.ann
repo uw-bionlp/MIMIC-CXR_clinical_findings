@@ -1,0 +1,20 @@
+T1	Medical-Problem 338 347	Pneumonia
+T2	Medical-Anatomy 355 365	right lung
+T3	Medical-Problem 406 410;412 467	some re-expansion of previously atelectatic right lower lobe
+E3	Medical-Problem:T3
+T4	Medical-Problem 492 514	large scale aspiration
+E4	Medical-Problem:T4
+T5	Medical-Problem 544 562;564 574	new basal vascular congestion
+T6	Medical-Problem 578 616	developing peribronchial opacification
+T7	Medical-Anatomy 624 634	lower lung
+T8	Medical-Problem 687 707	developing pneumonia
+T9	Medical-Assertion 718 720	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 722 734	pneumothorax
+T11	Medical-Problem 738 766	substantial pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T7
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9

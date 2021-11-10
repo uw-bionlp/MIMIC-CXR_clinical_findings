@@ -1,0 +1,19 @@
+T1	Medical-Assertion 174 176	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 177 189	pneumothorax
+T3	Medical-Assertion 194 196	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 197 213	pleural effusion
+T5	Medical-Problem 216 230;232 243	Mild bibasilar atelectasis
+E3	Medical-Problem:T5
+T6	Lesion-Anatomy 309 324	left upper lobe
+T7	Lesion-Description 325 329	mass
+T8	Medical-Assertion 396 398	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 399 411	pneumothorax
+T10	Medical-Problem 415 427	complication
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8

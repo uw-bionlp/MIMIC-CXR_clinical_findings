@@ -1,0 +1,45 @@
+T1	Medical-Problem 447 459	cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 475 488	Air overlying
+T3	Medical-Anatomy 493 526	right inferior cardiac silhouette
+T4	Medical-Problem 540 550;552 567	very large pulmonary bulla
+T5	Medical-Problem 596 625	Lobulated calcified densities
+T6	Medical-Anatomy 633 644	lung apices
+T7	Lesion-Description 690 705	nodular density
+T8	Lesion-Anatomy 721 737	right upper zone
+T9	Medical-Assertion 807 812	doubt
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 813 832	focal consolidation
+T11	Medical-Problem 834 843	overt CHF
+T12	Medical-Problem 848 862	gross effusion
+T13	Medical-Problem 874 882	blunting
+T14	Medical-Anatomy 890 914	right costophrenic angle
+T15	Medical-Assertion 915 933	cannot be excluded
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 938 975	Old, healed right-sided rib fractures
+E14	Medical-Problem:T16
+T17	Medical-Anatomy 1148 1164	distal esophagus
+E15	Medical-Anatomy:T17
+T18	Lesion-Description 1468 1483	Nodular density
+T19	Lesion-Anatomy 1491 1507	right upper zone
+T20	Medical-Problem 1527 1535;1537 1546	biapical densities
+E18	Medical-Problem:T20
+T21	Medical-Assertion 1553 1575	differential diagnosis
+A3	Medical-AssertionValue T21 possible
+T22	Lesion-Characteristic 1587 1600	non calcified
+T23	Lesion-Description 1601 1610	granuloma
+T24	Lesion-Anatomy 1624 1633	pulmonary
+T25	Lesion-Description 1634 1640	nodule
+T26	Lesion-Description 1644 1654	metastasis
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T9
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E16	Lesion-Description:T18 has-Lesion-Anatomy:T19
+E20	Lesion-Description:T23 has-Lesion-Characteristic:T22
+E22	Lesion-Description:T25 has-Lesion-Anatomy:T24
+E23	Lesion-Description:T26 has-Lesion-Anatomy:T24

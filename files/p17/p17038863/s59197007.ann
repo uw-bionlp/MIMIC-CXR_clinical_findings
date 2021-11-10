@@ -1,0 +1,59 @@
+T1	Medical-Problem 235 261	Severe cardiac enlargement
+E1	Medical-Problem:T1
+T2	Medical-Problem 359 372;374 382	aorta remains tortuous
+T3	Medical-Problem 388 418	atherosclerotic calcifications
+T4	Medical-Anatomy 432 443	aortic arch
+T5	Medical-Problem 447 475	Bilateral perihilar haziness
+E5	Medical-Problem:T5
+T6	Medical-Problem 481 504	vascular indistinctness
+E6	Medical-Problem:T6
+T7	Medical-Problem 509 518;520 529	bibasilar opacities
+E7	Medical-Problem:T7
+T8	Medical-Assertion 530 544	likely reflect
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 545 577	mild to moderate pulmonary edema
+T10	Medical-Problem 583 598;600 617	small bilateral pleural effusions
+T11	Medical-Assertion 655 661	likely
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 662 671;673 684	bibasilar atelectasis
+T13	Medical-Problem 690 699	infection
+T14	Medical-Assertion 700 729	cannot be completely excluded
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 732 746	Mild elevation
+T16	Medical-Anatomy 755 774	right hemidiaphragm
+T17	Medical-Assertion 799 801	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 802 814	pneumothorax
+T19	Medical-Problem 817 826;828 851	Extensive vascular calcifications
+T20	Medical-Anatomy 875 888	upper abdomen
+T21	Medical-Problem 894 902;904 918	multiple calcifications
+T22	Medical-Anatomy 950 976;978 985	left upper quadrant of the abdomen
+T23	Lesion-Anatomy 1002 1009	splenic
+T24	Lesion-Description 1010 1020	granulomas
+T25	Medical-Problem 1023 1053	Remote bilateral rib fractures
+E21	Medical-Problem:T25
+T26	Medical-Problem 1097 1129	Mild to moderate pulmonary edema
+E22	Medical-Problem:T26
+T27	Medical-Problem 1135 1168	small bilateral pleural effusions
+E23	Medical-Problem:T27
+T28	Medical-Problem 1172 1200	Bibasilar airspace opacities
+E24	Medical-Problem:T28
+T29	Medical-Assertion 1201 1214	could reflect
+A5	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1215 1226	atelectasis
+T31	Medical-Problem 1231 1240	infection
+T32	Medical-Assertion 1245 1265	difficult to exclude
+A6	Medical-AssertionValue T32 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11 has-Medical-Assertion:T14
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22
+E20	Lesion-Description:T24 has-Lesion-Anatomy:T23
+E25	Medical-Problem:T30 has-Medical-Assertion:T29
+E26	Medical-Problem:T31 has-Medical-Assertion:T29 has-Medical-Assertion:T32

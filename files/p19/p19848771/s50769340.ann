@@ -1,0 +1,22 @@
+T1	Medical-Assertion 198 205	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 206 211;213 226	focal consolidation
+T3	Medical-Assertion 238 240	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 241 253	pneumothorax
+T5	Medical-Problem 257 273	pleural effusion
+T6	Lesion-Characteristic 282 291	calcified
+T7	Lesion-Description 293 302	granuloma
+T8	Lesion-Anatomy 318 333	right lung base
+T9	Medical-Problem 404 424	Paucity of bowel gas
+E7	Medical-Problem:T9
+T10	Medical-Problem 451 458	ascites
+E8	Medical-Problem:T10
+T11	Medical-Assertion 476 478	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 479 508	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,29 @@
+T1	Medical-Problem 396 463;465 473	Interval re-accumulation of a small-to-moderate sized right pleural effusion
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 485 495	persistent
+T3	Lesion-Description 496 506	nodularity
+T4	Lesion-Anatomy 514 524	right apex
+T5	Medical-Anatomy 581 590	left lung
+T6	Medical-Assertion 618 625	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 628 644	pleural effusion
+T8	Medical-Anatomy 721 739	right heart border
+T9	Medical-Problem 759 766;768 776	pleural effusion
+T10	Medical-Problem 781 806	probable airspace opacity
+T11	Medical-Assertion 807 824	likely related to
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 825 836;838 849	compressive atelectasis
+T13	Medical-Anatomy 857 873	right lower lobe
+T14	Medical-Assertion 876 887	No evidence
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 891 906	pulmonary edema
+T16	Medical-Assertion 909 911	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 913 925	pneumothorax
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Anatomy:T13
+E10	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

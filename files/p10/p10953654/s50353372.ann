@@ -1,0 +1,31 @@
+T1	Medical-Problem 409 414;416 436	dense retrocardiac opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 443 458	could be due to
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 459 470	atelectasis
+T4	Medical-Problem 477 493	decreased volume
+T5	Medical-Anatomy 502 517	left hemithorax
+T6	Medical-Problem 527 546	underlying effusion
+T7	Medical-Problem 550 563	consolidation
+T8	Medical-Assertion 573 581	possible
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 712 732	Left basilar opacity
+E7	Medical-Problem:T9
+T10	Medical-Assertion 733 742;744 755	likely in part due to
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 756 767	atelectasis
+T12	Medical-Problem 774 785	volume loss
+E9	Medical-Problem:T12
+T13	Medical-Assertion 803 811	possible
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 812 822;824 832	underlying effusion
+T15	Medical-Problem 836 849	consolidation
+T16	Medical-Assertion 855 863	possible
+A5	Medical-AssertionValue T16 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Assertion:T16
+E11	Medical-Problem:T15 has-Medical-Assertion:T13 has-Medical-Assertion:T16

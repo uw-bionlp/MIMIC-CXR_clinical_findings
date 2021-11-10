@@ -1,0 +1,26 @@
+T1	Medical-Assertion 276 278	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 280 296	pleural effusion
+T3	Medical-Problem 300 312	pneumothorax
+T4	Lesion-Description 317 332	nodular density
+T5	Lesion-Anatomy 360 403	right lower lobe abutting the hemidiaphragm
+T6	Medical-Assertion 518 531	may represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 534 561	resolving pulmonary infarct
+T8	Medical-Assertion 668 679	No evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 683 712	acute cardiopulmonary disease
+T10	Medical-Problem 720 746	Persistent nodular density
+E7	Medical-Problem:T10
+T11	Lesion-Anatomy 757 776	right hemidiaphragm
+T12	Lesion-Assertion 778 790;792 801	suspected to represent
+A4	Lesion-AssertionValue T12 possible
+T13	Lesion-Size 804 809	small
+T14	Lesion-Characteristic 810 820	cavitating
+T15	Lesion-Description 821 827	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E11	Lesion-Description:T15 has-Lesion-Anatomy:T11 has-Lesion-Assertion:T12 has-Lesion-Size-Present:T13 has-Lesion-Characteristic:T14

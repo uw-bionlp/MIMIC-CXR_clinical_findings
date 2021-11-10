@@ -1,0 +1,27 @@
+T1	Medical-Problem 245 267	chronic mild elevation
+T2	Medical-Anatomy 275 280;282 295	right hemidiaphragm
+T3	Medical-Problem 298 306	Blunting
+T4	Medical-Anatomy 314 338	right costophrenic angle
+T5	Medical-Problem 348 355;357 368	basilar atelectasis
+T6	Medical-Assertion 373 381	possible
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 382 396	small effusion
+T8	Medical-Assertion 399 401	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 402 421	focal consolidation
+T10	Lesion-Anatomy 425 434	pulmonary
+T11	Lesion-Description 436 450	nodules/masses
+T12	Lesion-Characteristic 525 534	calcified
+T13	Lesion-Anatomy 535 553	right paratracheal
+T14	Lesion-Description 554 564	lymph node
+T15	Medical-Assertion 633 635	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 636 665	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

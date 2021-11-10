@@ -1,0 +1,20 @@
+T1	Medical-Problem 355 391;393 405	stable small-to-moderate right-sided pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 458 466	some gas
+T3	Medical-Anatomy 479 516	right lateral chest wall soft tissues
+T4	Medical-Problem 531 538	opacity
+T5	Medical-Anatomy 547 580	right upper and medial hemithorax
+T6	Medical-Problem 671 699	small right pleural effusion
+T7	Medical-Assertion 706 714	possible
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 715 725	loculation
+T9	Medical-Anatomy 733 743	right apex
+T10	Medical-Anatomy 781 790	left base
+T11	Medical-Assertion 796 807	no evidence
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 811 826	pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

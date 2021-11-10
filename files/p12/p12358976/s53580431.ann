@@ -1,0 +1,19 @@
+T1	Medical-Problem 270 286;288 295	right infrahilar opacity
+T2	Medical-Assertion 296 319	has completely resolved
+A1	Medical-AssertionValue T2 absent
+T3	Lesion-Assertion 322 324	No
+A2	Lesion-AssertionValue T3 absent
+T4	Lesion-Size-Trend 325 328	new
+A3	Lesion-Size-TrendValue T4 new
+T5	Lesion-Characteristic 332 341	recurrent
+T6	Lesion-Description 342 351	opacities
+T7	Medical-Assertion 354 365	No evidence
+A4	Medical-AssertionValue T7 absent
+T8	Medical-Problem 370 383	complications
+T9	Medical-Problem 392 399	abscess
+T10	Medical-Problem 406 423	pleural effusions
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E3	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Size-Trend:T4 has-Lesion-Characteristic:T5
+E4	Medical-Problem:T8 has-Medical-Assertion:T7
+E5	Medical-Problem:T9 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T7

@@ -1,0 +1,19 @@
+T1	Medical-Problem 142 152	aspiration
+E1	Medical-Problem:T1
+T2	Medical-Problem 156 165	pneumonia
+E2	Medical-Problem:T2
+T3	Medical-Problem 248 276	new infrahilar consolidation
+T4	Medical-Anatomy 284 288;290 300	left lower lobe
+T5	Medical-Assertion 301 309	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 310 318	collapse
+T7	Medical-Problem 322 331	pneumonia
+T8	Medical-Assertion 378 380	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 381 396	pulmonary edema
+T10	Medical-Problem 401 417	pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

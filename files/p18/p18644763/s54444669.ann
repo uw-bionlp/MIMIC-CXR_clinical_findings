@@ -1,0 +1,33 @@
+T1	Medical-Problem 30 65	Stable small right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 110 137	small left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Assertion 140 142	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 143 154	new opacity
+T5	Medical-Assertion 157 159	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 160 165	edema
+T7	Medical-Problem 169 181	pneumothorax
+T8	Medical-Problem 556 583	bilateral pleural effusions
+E6	Medical-Problem:T8
+T9	Medical-Problem 611 624;626 649	Effusions are left greater than right
+E7	Medical-Problem:T9
+T10	Medical-Problem 668 693	left retrocardiac opacity
+E8	Medical-Problem:T10
+T11	Medical-Anatomy 701 725	mid-to-upper lung fields
+T12	Medical-Assertion 739 746	without
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 747 761	pneumothoraces
+T14	Medical-Problem 765 770;772 785	focal consolidation
+T15	Medical-Problem 792 806	mediastinum is
+E12	Medical-Problem:T15
+T16	Medical-Assertion 807 810	not
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 811 818	widened
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

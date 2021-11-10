@@ -1,0 +1,19 @@
+T1	Medical-Assertion 339 341	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 342 387	pneumothorax pleural effusion pulmonary edema
+T3	Medical-Problem 391 402	evidence of
+E2	Medical-Problem:T3
+T4	Medical-Problem 403 412	pneumonia
+T5	Lesion-Size 498 503	Large
+T6	Lesion-Anatomy 504 508	lung
+T7	Lesion-Description 509 515	masses
+T8	Lesion-Size-Trend 516 525	unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Size-Trend 528 550	Slight interval change
+A3	Lesion-Size-TrendValue T9 no-change
+T10	Lesion-Characteristic 558 561	sub
+T11	Lesion-Description 577 581	mass
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E8	Lesion-Description:T11 has-Lesion-Size-Trend:T9 has-Lesion-Characteristic:T10

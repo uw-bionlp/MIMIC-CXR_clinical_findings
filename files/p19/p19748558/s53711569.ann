@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 252 280	mid portion fo the left lung
+T2	Medical-Problem 284 321	focus of ill-defined linear opacities
+T3	Medical-Assertion 323 340	likely represents
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 341 384	scarring from prior left lower lobe abscess
+T5	Medical-Anatomy 403 408	lungs
+T6	Medical-Assertion 431 438	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 439 458	vascular congestion
+T8	Medical-Problem 460 476	pleural effusion
+T9	Medical-Problem 482 494	pneumothorax
+T10	Lesion-Assertion 506 508	no
+A3	Lesion-AssertionValue T10 absent
+T11	Lesion-Characteristic 509 519	concerning
+T12	Lesion-Characteristic 520 524	bone
+T13	Lesion-Description 540 547	lesions
+T14	Medical-Assertion 564 588	No radiographic evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 592 621	acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E10	Lesion-Description:T13 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

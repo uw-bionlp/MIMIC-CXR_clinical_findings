@@ -1,0 +1,27 @@
+T1	Medical-Assertion 290 292	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 293 305	pneumothorax
+T3	Medical-Problem 310 332	large pleural effusion
+T4	Medical-Problem 368 379;381 404	increase in interstitial prominence
+T5	Medical-Anatomy 412 444	lung bases, greater on the right
+T6	Lesion-Size 462 467	small
+T7	Lesion-Description 468 485	nodular opacities
+T8	Lesion-Anatomy 493 531	lateral aspect of the right upper lung
+T9	Medical-Problem 698 715	streaky opacities
+E8	Medical-Problem:T9
+T10	Lesion-Size 744 749	small
+T11	Lesion-Description 750 757	nodular
+E10	Lesion-Description:T11
+T12	Lesion-Description 759 768	opacities
+T13	Lesion-Anatomy 776 792	right upper lung
+T14	Medical-Assertion 794 814	most consistent with
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 815 825	aspiration
+T16	Medical-Problem 832 850	infectious process
+E14	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T8
+E11	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

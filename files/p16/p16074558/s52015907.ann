@@ -1,0 +1,33 @@
+T1	Medical-Problem 342 358	airspace opacity
+T2	Medical-Anatomy 366 379	left mid lung
+T3	Medical-Assertion 380 395	likely reflects
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 396 408	re-expansion
+T5	Medical-Problem 441 462	platelike atelectasis
+T6	Medical-Problem 469 487;489 497	left-sided pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Problem 571 604	loculated interstitial portion is
+E6	Medical-Problem:T7
+T8	Medical-Problem 621 642;644 660	persistent left lower lobe atelectasis
+E7	Medical-Problem:T8
+T9	Medical-Assertion 694 696	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 697 709	pneumothorax
+T11	Medical-Problem 865 868;870 886	old healed fractures
+T12	Medical-Anatomy 894 908	left fifth rib
+T13	Medical-Problem 990 1017	loculated pleural effusions
+T14	Medical-Problem 1023 1026;1028 1044	new airspace opacity
+T15	Medical-Anatomy 1052 1061	left lung
+T16	Medical-Assertion 1062 1075	likely due to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1091 1100	Infection
+T18	Medical-Assertion 1102 1120	cannot be excluded
+A4	Medical-AssertionValue T18 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E14	Medical-Problem:T17 has-Medical-Assertion:T18

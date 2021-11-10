@@ -1,0 +1,15 @@
+T1	Medical-Problem 185 254	Small-to-moderate bilateral pleural effusion, right greater than left
+E1	Medical-Problem:T1
+T2	Medical-Assertion 293 295	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 296 308	pneumothorax
+T4	Medical-Problem 332 350	Irregular aeration
+T5	Medical-Anatomy 358 374	right lower lung
+T6	Medical-Assertion 375 383	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 384 395	atelectasis
+T8	Medical-Problem 414 422	effusion
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6

@@ -1,0 +1,43 @@
+T1	Medical-Anatomy 276 281	lungs
+T2	Medical-Problem 286 299	hyperinflated
+T3	Medical-Problem 305 322	slight flattening
+T4	Medical-Anatomy 330 350	bilateral diaphragms
+T5	Medical-Assertion 352 362	suggesting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 363 393	underlying mild COPD/emphysema
+T7	Medical-Anatomy 399 404	lungs
+T8	Medical-Assertion 415 422	without
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 423 428;430 443	focal consolidation
+T10	Medical-Problem 445 461	pleural effusion
+T11	Medical-Problem 465 477	pneumothorax
+T12	Medical-Anatomy 483 504	pulmonary vasculature
+T13	Medical-Assertion 509 512	not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 513 521	engorged
+T15	Medical-Problem 600 618	mild calcification
+T16	Medical-Anatomy 626 637	aortic knob
+T17	Medical-Problem 639 656;658 667	Levoconvex lumbar scoliosis
+E14	Medical-Problem:T17
+T18	Medical-Problem 708 727	Hyperinflated lungs
+E15	Medical-Problem:T18
+T19	Medical-Assertion 728 735	without
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 736 755	focal consolidation
+T21	Medical-Assertion 756 770	concerning for
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 771 780	pneumonia
+T23	Medical-Assertion 782 784	No
+A6	Medical-AssertionValue T23 absent
+T24	Medical-Problem 786 798	cardiomegaly
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21
+E18	Medical-Problem:T24 has-Medical-Assertion:T23

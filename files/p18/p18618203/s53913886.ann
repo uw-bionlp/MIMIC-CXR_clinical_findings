@@ -1,0 +1,21 @@
+T1	Medical-Problem 352 362;364 385	asymmetric pulmonary abnormality
+T2	Medical-Problem 400 408	fibrosis
+T3	Medical-Problem 413 439	intermittent consolidation
+T4	Medical-Anatomy 444 458	large parts of
+T5	Medical-Anatomy 524 539	left upper lobe
+T6	Medical-Problem 578 587;589 612	component of mild pulmonary edema
+E6	Medical-Problem:T6
+T7	Medical-Assertion 670 672	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 673 685	pneumothorax
+T9	Medical-Problem 689 717	appreciable pleural effusion
+T10	Medical-Problem 724 743	chronic abnormality
+T11	Medical-Anatomy 752 762	right lung
+T12	Medical-Problem 811 820	alignment
+E11	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11

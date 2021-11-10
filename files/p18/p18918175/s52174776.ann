@@ -1,0 +1,27 @@
+T1	Medical-Problem 278 298	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Lesion-Description 316 333	nodular opacities
+T3	Lesion-Anatomy 334 354	throughout the lungs
+T4	Lesion-Anatomy 379 394	left lower lobe
+T5	Lesion-Size-Trend 396 415	otherwise unchanged
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Assertion 491 493	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 494 503;505 518	new focal consolidation
+T8	Medical-Problem 520 536	pleural effusion
+T9	Medical-Problem 540 552	pneumothorax
+T10	Medical-Problem 682 689	gasless
+E8	Medical-Problem:T10
+T11	Lesion-Description 730 737	nodular
+E9	Lesion-Description:T11
+T12	Lesion-Description 738 747	opacities
+T13	Lesion-Anatomy 748 768	throughout the lungs
+T14	Medical-Assertion 771 773	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 774 783;785 798	new focal consolidation
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

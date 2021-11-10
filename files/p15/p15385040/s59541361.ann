@@ -1,0 +1,28 @@
+T1	Medical-Problem 408 427	large left effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 430 432	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 433 454	definite pneumothorax
+T4	Medical-Problem 472 495	Increased opacification
+T5	Medical-Anatomy 503 527	left mid and lower zones
+T6	Medical-Assertion 528 533;535 542	could reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 543 561	re-expansion edema
+T8	Medical-Problem 603 625	superimposed pneumonia
+T9	Medical-Problem 628 643	Poor definition
+T10	Medical-Anatomy 647 665	lower lung vessels
+T11	Medical-Assertion 666 676;678 689	raises the possibility
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 693 728	increased pulmonary venous pressure
+T13	Medical-Problem 748 762	hyperexpansion
+E10	Medical-Problem:T13
+T14	Medical-Problem 791 816	chronic pulmonary disease
+E11	Medical-Problem:T14
+T15	Medical-Problem 822 837	bullous changes
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T11

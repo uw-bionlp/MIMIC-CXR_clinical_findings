@@ -1,0 +1,48 @@
+T1	Medical-Problem 220 238	fan-shaped opacity
+T2	Medical-Anatomy 246 273;275 295	apical posterior segment of the right upper lobe
+T3	Medical-Assertion 296 310	suspicious for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 311 320	pneumonia
+T5	Medical-Assertion 333 335	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 336 350;352 371	other areas of focal consolidation
+T7	Medical-Problem 375 384	opacities
+T8	Medical-Assertion 396 398	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 399 415	pleural effusion
+T10	Medical-Problem 419 427	evidence
+E7	Medical-Problem:T10
+T11	Medical-Problem 432 444	pneumothorax
+T12	Medical-Problem 492 497	aorta
+E9	Medical-Problem:T12
+T13	Medical-Problem 501 507;509 518	mildly calcified
+E10	Medical-Problem:T13
+T14	Medical-Problem 525 552	mediastinum appears widened
+E11	Medical-Problem:T14
+T15	Lesion-Anatomy 560 580	right thoracic inlet
+T16	Lesion-Description 581 585	mass
+T17	Medical-Problem 606 638	slightly compressing the trachea
+E14	Medical-Problem:T17
+T18	Medical-Assertion 649 660;662 672	most likely represents
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 676 692	enlarged thyroid
+T20	Medical-Problem 695 715	Degenerative changes
+T21	Medical-Anatomy 723 737	thoracic spine
+T22	Medical-Problem 805 848	Right apical/posterior upper lobe pneumonia
+E18	Medical-Problem:T22
+T23	Lesion-Anatomy 908 934	Right-sided thoracic inlet
+T24	Lesion-Description 935 939	mass
+T25	Medical-Problem 953 972	thyroid enlargement
+E21	Medical-Problem:T25
+T26	Medical-Problem 975 994	compressing trachea
+E22	Medical-Problem:T26
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T15
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21
+E20	Lesion-Description:T24 has-Lesion-Anatomy:T23

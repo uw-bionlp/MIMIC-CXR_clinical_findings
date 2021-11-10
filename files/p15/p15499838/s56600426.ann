@@ -1,0 +1,34 @@
+T1	Medical-Anatomy 401 406	lungs
+T2	Medical-Problem 436 459	pneumonic consolidation
+T3	Medical-Problem 461 469	effusion
+T4	Medical-Problem 473 485	pneumothorax
+T5	Lesion-Characteristic 489 495	Subtle
+T6	Lesion-Description 496 506	nodularity
+T7	Lesion-Anatomy 514 536	left mid-to-upper lung
+T8	Lesion-Size-Trend 545 551	stable
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Assertion 568 570	No
+A2	Lesion-AssertionValue T9 absent
+T10	Lesion-Size-Trend 571 574	new
+A3	Lesion-Size-TrendValue T10 new
+T11	Lesion-Description 575 592	nodular opacities
+T12	Medical-Problem 629 645;647 665	Tracheobronchial tree calcification
+E9	Medical-Problem:T12
+T13	Medical-Problem 733 763	Atherosclerotic calcifications
+T14	Medical-Anatomy 774 788	thoracic aorta
+T15	Medical-Assertion 797 799	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 801 825	acute bony abnormalities
+T17	Lesion-Characteristic 931 937	Subtle
+T18	Lesion-Description 938 945	nodules
+T19	Lesion-Anatomy 953 968	left upper lung
+T20	Lesion-Size-Trend 976 982	stable
+A5	Lesion-Size-TrendValue T20 no-change
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T1
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T8
+E8	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Size-Trend:T10
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Lesion-Description:T18 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T19 has-Lesion-Size-Trend:T20

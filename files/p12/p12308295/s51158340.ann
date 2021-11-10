@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 222 243	right upper lung zone
+T2	Medical-Problem 257 282	ill-defined dense opacity
+T3	Lesion-Description 308 315	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 316 323	opacity
+E4	Lesion-Description:T4
+T5	Medical-Assertion 607 609	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 610 626	pleural effusion
+T7	Medical-Problem 630 642	pneumothorax
+T8	Medical-Assertion 655 657	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 658 673	pulmonary edema
+T10	Medical-Problem 736 747	Right upper
+E8	Medical-Problem:T10
+T11	Lesion-Assertion 797 811	concerning for
+A3	Lesion-AssertionValue T11 possible
+T12	Lesion-Assertion 814 822	possible
+A4	Lesion-AssertionValue T12 possible
+T13	Lesion-Description 823 827	mass
+T14	Medical-Problem 864 873;875 884	continued infection
+E10	Medical-Problem:T14
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Assertion:T12

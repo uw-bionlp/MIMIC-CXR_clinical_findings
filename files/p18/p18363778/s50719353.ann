@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 251 256	lungs
+T2	Medical-Problem 261 287	hyperinflated with lucency
+T3	Medical-Anatomy 304 324;326 362	regions of the lungs particularly upper to mid lung zones
+T4	Medical-Assertion 378 391	suggestive of
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 392 402;404 413	underlying emphysema
+T6	Medical-Assertion 425 427	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 428 447	focal consolidation
+T8	Medical-Problem 449 457	effusion
+T9	Medical-Problem 462 467	edema
+T10	Lesion-Characteristic 470 479	Calcified
+T11	Lesion-Description 481 487	nodule
+T12	Lesion-Anatomy 506 520	left first rib
+T13	Medical-Problem 610 625;627 641	Atherosclerotic calcifications
+T14	Medical-Anatomy 649 654	aorta
+T15	Medical-Assertion 667 669	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 670 697	acute osseous abnormalities
+T17	Medical-Problem 718 737	Hyperinflation with
+E14	Medical-Problem:T17
+T18	Medical-Problem 761 765	COPD
+E15	Medical-Problem:T18
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

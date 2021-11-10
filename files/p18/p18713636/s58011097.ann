@@ -1,0 +1,17 @@
+T1	Medical-Problem 260 273	Opacification
+T2	Medical-Anatomy 281 291	right base
+T3	Medical-Problem 317 323;325 329	volume loss
+T4	Medical-Anatomy 337 372	lower and probably also middle lobe
+T5	Medical-Assertion 378 386	possible
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 387 397;399 415	associated pleural effusion
+T7	Medical-Problem 418 437	Atelectatic changes
+T8	Medical-Anatomy 460 469	left base
+T9	Medical-Assertion 523 534	no evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 539 551	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

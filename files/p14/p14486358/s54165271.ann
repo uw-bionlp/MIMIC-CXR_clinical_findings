@@ -1,0 +1,42 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Medical-Assertion 67 69	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 70 79	pneumonia
+T5	Medical-Problem 403 426	Tiny punctate opacities
+T6	Medical-Anatomy 434 445	lower lungs
+T7	Medical-Assertion 450 458	probably
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 459 480	pulmonary granulomata
+T9	Medical-Problem 505 533	granulomatous calcifications
+T10	Medical-Anatomy 541 551	left hilus
+T11	Lesion-Assertion 565 567	no
+A4	Lesion-AssertionValue T11 absent
+T12	Lesion-Characteristic 575 586	soft tissue
+T13	Lesion-Description 587 594	nodules
+T14	Lesion-Anatomy 628 633	lungs
+T15	Lesion-Assertion 759 761	no
+A5	Lesion-AssertionValue T15 absent
+T16	Lesion-Characteristic 774 781	central
+T17	Lesion-Description 782 787;789 805	lymph node enlargement
+T18	Medical-Problem 809 822	consolidation
+E13	Medical-Problem:T18
+T19	Medical-Problem 846 865;867 875	small right pleural effusion
+E14	Medical-Problem:T19
+T20	Medical-Problem 897 908	indentation
+T21	Medical-Anatomy 916 933;935 951	right side of the cervical trachea
+T22	Medical-Problem 979 995	enlarged thyroid
+T23	Lesion-Description 1002 1017	lymphadenopathy
+E18	Lesion-Description:T23
+T24	Medical-Assertion 1024 1047	alternative explanation
+A6	Medical-AssertionValue T24 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14
+E12	Lesion-Description:T17 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16
+E15	Medical-Problem:T20 has-Medical-Anatomy:T21
+E17	Medical-Problem:T22 has-Medical-Anatomy:T21 has-Medical-Assertion:T24

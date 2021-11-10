@@ -1,0 +1,31 @@
+T1	Medical-Problem 413 443	Right middle lobe is collapsed
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 445 461	right lower lobe
+T3	Medical-Problem 465 476	infiltrated
+T4	Lesion-Size 482 487	large
+T5	Lesion-Description 489 503	tumor deposits
+T6	Medical-Anatomy 506 522	Right upper lobe
+T7	Medical-Problem 529 553	Lymphovenous engorgement
+T8	Lesion-Assertion 558 566	possible
+A1	Lesion-AssertionValue T8 possible
+T9	Lesion-Description 568 596	lymphangitic tumor extension
+T10	Medical-Anatomy 599 608	Left lung
+T11	Medical-Problem 612 630	similarly affected
+T12	Medical-Problem 633 642;644 661	Bilateral hilar enlargement
+E11	Medical-Problem:T12
+T13	Medical-Anatomy 670 680	Heart size
+T14	Medical-Assertion 681 684	not
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 685 701	grossly enlarged
+T16	Medical-Problem 710 715;717 737	large pericardial effusion
+E14	Medical-Problem:T16
+T17	Medical-Assertion 761 763	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 764 776	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Lesion-Description:T9 has-Lesion-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

@@ -1,0 +1,20 @@
+T1	Medical-Problem 240 247;249 260	Minimal atelectasis
+T2	Medical-Anatomy 268 283	left lung bases
+T3	Medical-Problem 285 301	Minimal blunting
+T4	Medical-Anatomy 309 315;317 337	dorsal costophrenic sinuses
+T5	Medical-Problem 356 381	minimal pleural effusions
+E5	Medical-Problem:T5
+T6	Medical-Assertion 384 395	No evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 400 409	pneumonia
+T8	Medical-Assertion 412 414	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 415 430	pulmonary edema
+T10	Medical-Assertion 433 435	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 436 448	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

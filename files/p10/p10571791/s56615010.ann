@@ -1,0 +1,38 @@
+T1	Medical-Problem 273 303	Atherosclerotic calcifications
+T2	Medical-Anatomy 321 327;329 333	aortic knob
+T3	Medical-Problem 386 403;405 414	Ill-defined focal opacities
+T4	Medical-Anatomy 435 451	right upper lobe
+T5	Medical-Anatomy 453 468	right lung base
+T6	Medical-Anatomy 474 483;485 511	periphery of the left mid lung field
+T7	Medical-Problem 514 530	Minimal blunting
+T8	Medical-Anatomy 538 561;563 574	left costophrenic angle posteriorly
+T9	Medical-Assertion 575 583	suggests
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 586 608	trace pleural effusion
+T11	Medical-Assertion 611 613	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 614 626	pneumothorax
+T13	Medical-Problem 630 639;641 660	pulmonary vascular congestion
+T14	Medical-Problem 684 704	degenerative changes
+T15	Medical-Anatomy 717 743	imaged thoracolumbar spine
+T16	Medical-Problem 768 807	Bilateral multifocal airspace opacities
+E14	Medical-Problem:T16
+T17	Medical-Assertion 809 820	potentially
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 821 841	multifocal pneumonia
+T19	Medical-Problem 1066 1093	Small left pleural effusion
+E16	Medical-Problem:T19
+T20	Medical-Problem 1118 1157	Bilateral multifocal airspace opacities
+E17	Medical-Problem:T20
+T21	Medical-Assertion 1159 1170	potentially
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1172 1192	multifocal pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E18	Medical-Problem:T22 has-Medical-Assertion:T21

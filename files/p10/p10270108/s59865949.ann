@@ -1,0 +1,27 @@
+T1	Medical-Problem 175 179	some
+T2	Medical-Anatomy 241 259;261 286	mid portion of the right lung and lower zone
+T3	Medical-Problem 289 310	Small area of lucency
+T4	Medical-Anatomy 318 336	right hilar region
+T5	Medical-Assertion 338 365	could conceivably represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 366 376	cavitation
+T7	Medical-Assertion 390 410	could also merely be
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 412 459	superimposed interstitial and vascular markings
+T9	Medical-Problem 462 470	Blunting
+T10	Medical-Anatomy 478 490;492 497	costophrenic angle
+T11	Medical-Assertion 557 570	suggestion of
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 574 605	lenticular area of pneumothorax
+T13	Medical-Anatomy 606 615	laterally
+T14	Medical-Anatomy 616 645	just adjacent to the mid lung
+T15	Medical-Problem 647 660	opacification
+T16	Medical-Problem 732 741;743 762	pulmonary vascular congestion
+E13	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Anatomy:T14

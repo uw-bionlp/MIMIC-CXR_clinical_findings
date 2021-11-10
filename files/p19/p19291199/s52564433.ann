@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 429 439	both lungs
+T2	Medical-Assertion 441 451	suggesting
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 453 478	resolving pulmonary edema
+T4	Medical-Problem 505 528	layering right effusion
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 536 545	left lung
+E4	Medical-Anatomy:T5
+T6	Medical-Problem 565 589	More focal consolidation
+T7	Medical-Anatomy 597 607	right base
+T8	Medical-Assertion 624 635	may reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 636 659	compressive atelectasis
+T10	Medical-Problem 668 680;682 691	superimposed pneumonia
+T11	Medical-Assertion 692 710	cannot be excluded
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 713 742	Heart remains stably enlarged
+E9	Medical-Problem:T12
+T13	Medical-Assertion 839 841	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 842 854	pneumothorax
+T15	Medical-Problem 916 941	degree of pulmonary edema
+E11	Medical-Problem:T15
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

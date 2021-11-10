@@ -1,0 +1,19 @@
+T1	Medical-Assertion 274 281;283 294	without evidence of
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 295 314	vascular congestion
+T3	Medical-Problem 316 332	pleural effusion
+T4	Medical-Problem 337 349	pneumothorax
+T5	Lesion-Assertion 430 432	no
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Characteristic 434 444	concerning
+T7	Lesion-Characteristic 445 452	osseous
+T8	Lesion-Characteristic 456 467	soft tissue
+T9	Lesion-Description 468 475	lesions
+T10	Medical-Assertion 493 517	No radiographic evidence
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 521 530	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E7	Lesion-Description:T9 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6 has-Lesion-Characteristic:T7 has-Lesion-Characteristic:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

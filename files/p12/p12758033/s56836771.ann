@@ -1,0 +1,24 @@
+T1	Medical-Assertion 33 35	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 50	acute findings
+T3	Medical-Problem 364 377	Lungs are low
+E2	Medical-Problem:T3
+T4	Medical-Assertion 411 413	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 415 434	pleural abnormality
+T6	Lesion-Characteristic 450 457	central
+T7	Lesion-Description 458 468	adenopathy
+T8	Medical-Problem 471 487	Mild fullness of
+T9	Medical-Anatomy 493 505	azygous vein
+T10	Medical-Assertion 506 521	could be due to
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 522 542	mild volume overload
+T12	Medical-Assertion 557 559	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 560 569;571 576	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Lesion-Description:T7 has-Lesion-Characteristic:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,21 @@
+T1	Medical-Problem 399 428	Heart remains stably enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 480 494	patchy opacity
+T3	Medical-Anatomy 502 511	left base
+T4	Medical-Assertion 518 533	likely reflects
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 534 552;554 565	partial lower lobe atelectasis
+T6	Medical-Problem 576 586	aspiration
+T7	Medical-Problem 590 599	pneumonia
+T8	Medical-Assertion 600 626	could have this appearance
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 664 675	No evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 679 694	pulmonary edema
+T11	Medical-Problem 698 705;707 716	pleural effusions
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

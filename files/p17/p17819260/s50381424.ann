@@ -1,0 +1,30 @@
+T1	Medical-Assertion 211 213	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 214 233	focal consolidation
+T3	Medical-Problem 235 243	effusion
+T4	Medical-Problem 248 260	pneumothorax
+T5	Lesion-Characteristic 265 270	vague
+T6	Lesion-Size 271 274	1.5
+T7	Lesion-Description 276 282	nodule
+T8	Lesion-Anatomy 301 315	right clavicle
+T9	Medical-Problem 345 366	Moderate cardiomegaly
+E8	Medical-Problem:T9
+T10	Medical-Problem 384 421;423 457	large hiatal hernia contains multiple loops of bowel and air fluid level
+E9	Medical-Problem:T10
+T11	Medical-Problem 477 483	hernia
+E10	Medical-Problem:T11
+T12	Medical-Assertion 543 545	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 546 575	acute cardiopulmonary process
+T14	Medical-Problem 583 602	Large hiatal hernia
+E12	Medical-Problem:T14
+T15	Medical-Assertion 611 619	Possible
+A3	Medical-AssertionValue T15 possible
+T16	Lesion-Anatomy 620 637	right apical lung
+T17	Lesion-Description 638 644	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T16

@@ -1,0 +1,30 @@
+T1	Medical-Assertion 265 267	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 268 284	pleural effusion
+T3	Medical-Problem 289 301	pneumothorax
+T4	Medical-Problem 314 340	new interstitial opacities
+T5	Medical-Anatomy 348 365;367 403	bilateral mid and lower lungs, right greater than left
+T6	Medical-Problem 535 557	Post radiation changes
+T7	Medical-Anatomy 565 576	upper lungs
+T8	Medical-Problem 608 634	New interstitial opacities
+E7	Medical-Problem:T8
+T9	Medical-Assertion 635 648	may be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 670 685	pulmonary edema
+T11	Medical-Assertion 704 711	absence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 715 734	cardiac enlargement
+T13	Medical-Assertion 736 761	additional considerations
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 771 789	atypical pneumonia
+T15	Medical-Problem 791 826	noninfectious causes of pneumonitis
+T16	Medical-Problem 831 840;842 854	malignant lung disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T11 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T11 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T11 has-Medical-Assertion:T13

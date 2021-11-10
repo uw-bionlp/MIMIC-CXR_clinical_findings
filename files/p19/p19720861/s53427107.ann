@@ -1,0 +1,24 @@
+T1	Medical-Problem 208 227	prominent convexity
+T2	Medical-Anatomy 235 266	lower right mediastinal contour
+T3	Medical-Assertion 293 306	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 309 333	tortuous ascending aorta
+T5	Lesion-Description 337 352	lymphadenopathy
+E4	Lesion-Description:T5
+T6	Medical-Assertion 398 405	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 406 425	focal consolidation
+T8	Medical-Problem 427 434;436 444	pleural effusion
+T9	Medical-Problem 449 461	pneumothorax
+T10	Medical-Problem 501 510	pneumonia
+E8	Medical-Problem:T10
+T11	Medical-Anatomy 537 568	lower right mediastinal contour
+T12	Medical-Problem 635 643	tortuous
+T13	Medical-Problem 647 670	dilated ascending aorta
+E11	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Anatomy:T11

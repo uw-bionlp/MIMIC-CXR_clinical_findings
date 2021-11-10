@@ -1,0 +1,31 @@
+T1	Medical-Problem 40 90	Perihilar prominence of interstitial lung markings
+E1	Medical-Problem:T1
+T2	Medical-Problem 125 149	acute infectious process
+E2	Medical-Problem:T2
+T3	Medical-Problem 153 177	reactive airways disease
+E3	Medical-Problem:T3
+T4	Medical-Problem 589 596;598 628	central peribronchovascular prominence
+E4	Medical-Problem:T4
+T5	Medical-Assertion 667 672;674 681	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 682 710	central airways inflammation
+T7	Medical-Anatomy 716 721	lungs
+T8	Medical-Assertion 732 739	without
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 740 745;747 760	lobar consolidation
+T10	Medical-Problem 762 778	pleural effusion
+T11	Medical-Problem 782 794	pneumothorax
+T12	Medical-Assertion 865 867	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 868 893	acute osseous abnormality
+T14	Medical-Problem 965 977	inflammation
+E11	Medical-Problem:T14
+T15	Medical-Assertion 979 981	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 982 1001	lobar consolidation
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

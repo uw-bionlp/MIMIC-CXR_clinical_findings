@@ -1,0 +1,36 @@
+T1	Lesion-Size 29 35	1.1 cm
+T2	Lesion-Description 36 43	nodular
+E2	Lesion-Description:T2
+T3	Lesion-Description 44 51	opacity
+T4	Lesion-Anatomy 72 85	left mid lung
+T5	Medical-Problem 530 550	remain hyperinflated
+E5	Medical-Problem:T5
+T6	Medical-Problem 561 576	slight blunting
+T7	Medical-Anatomy 584 598;600 618	posterior left costophrenic angle
+T8	Medical-Problem 625 647	trace pleural effusion
+T9	Medical-Assertion 651 663	not excluded
+A1	Medical-AssertionValue T9 possible
+T10	Lesion-Description 677 684	nodular
+E9	Lesion-Description:T10
+T11	Lesion-Description 685 692	opacity
+T12	Lesion-Anatomy 713 726	left mid lung
+T13	Lesion-Size 752 755;757 759	1.1 cm
+T14	Lesion-Size 864 870	1.1 cm
+T15	Lesion-Description 871 886	nodular opacity
+T16	Lesion-Anatomy 907 920	left mid lung
+T17	Medical-Problem 1039 1054	Slight blunting
+T18	Medical-Anatomy 1062 1095	posterior left costophrenic angle
+T19	Medical-Assertion 1096 1109	may relate to
+A2	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1111 1125	hyperinflation
+T21	Medical-Problem 1130 1152	trace pleural effusion
+T22	Medical-Assertion 1153 1165	not excluded
+A3	Medical-AssertionValue T22 possible
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T12 has-Lesion-Size-Present:T13
+E14	Lesion-Description:T15 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T16
+E16	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E19	Medical-Problem:T21 has-Medical-Anatomy:T18 has-Medical-Assertion:T22

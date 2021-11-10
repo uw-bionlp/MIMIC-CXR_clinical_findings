@@ -1,0 +1,67 @@
+T1	Medical-Assertion 120 122	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 124 129	fever
+T3	Medical-Problem 299 319	lung volumes are low
+E2	Medical-Problem:T3
+T4	Medical-Problem 352 373	missing short segment
+T5	Medical-Anatomy 382 407	right posterior fifth rib
+T6	Medical-Problem 410 414	left
+E5	Medical-Problem:T6
+T7	Medical-Problem 460 498	bilateral glenohumeral joint arthritis
+E6	Medical-Problem:T7
+T8	Medical-Problem 534 551	increased lucency
+T9	Medical-Problem 556 564	thinning
+T10	Medical-Anatomy 572 593	posterior seventh rib
+T11	Medical-Assertion 650 663	may represent
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 665 687	worsening osteoporosis
+T13	Lesion-Assertion 755 757	no
+A3	Lesion-AssertionValue T13 absent
+T14	Lesion-Characteristic 758 767	sclerotic
+T15	Lesion-Characteristic 768 772	bone
+T16	Lesion-Description 773 780	lesions
+T17	Medical-Problem 798 815	mild cardiomegaly
+E14	Medical-Problem:T17
+T18	Medical-Problem 821 855	mild pulmonary vascular congestion
+E15	Medical-Problem:T18
+T19	Medical-Problem 861 895	cephalization of pulmonary vessels
+E16	Medical-Problem:T19
+T20	Medical-Assertion 896 903	without
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 904 925	overt pulmonary edema
+T22	Medical-Problem 928 937;939 963	Bibasilar subsegmental atelectasis
+E18	Medical-Problem:T22
+T23	Medical-Assertion 981 983	No
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 984 996	pneumothorax
+T25	Medical-Problem 1004 1016	Old fracture
+T26	Medical-Anatomy 1025 1050	right fifth posterior rib
+T27	Medical-Problem 1114 1131	Mild cardiomegaly
+E22	Medical-Problem:T27
+T28	Medical-Problem 1133 1147	fluid overload
+E23	Medical-Problem:T28
+T29	Medical-Assertion 1150 1157	without
+A6	Medical-AssertionValue T29 absent
+T30	Medical-Problem 1158 1179	overt pulmonary edema
+T31	Medical-Problem 1185 1206	Stable osteoarthritis
+T32	Medical-Anatomy 1214 1242	bilateral glenohumeral joint
+T33	Medical-Problem 1244 1255;1257 1295	severe left acromioclavicular joint osteoarthritis
+E27	Medical-Problem:T33
+T34	Medical-Problem 1297 1314	increased lucency
+T35	Medical-Anatomy 1323 1372	ribs(particularly the right seventh posterior rib
+T36	Medical-Assertion 1379 1392	may represent
+A7	Medical-AssertionValue T36 possible
+T37	Medical-Problem 1394 1416	worsening osteoporosis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Characteristic:T14 has-Lesion-Characteristic:T15
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E20	Medical-Problem:T25 has-Medical-Anatomy:T26
+E24	Medical-Problem:T30 has-Medical-Assertion:T29
+E25	Medical-Problem:T31 has-Medical-Anatomy:T32
+E28	Medical-Problem:T34 has-Medical-Anatomy:T35
+E30	Medical-Problem:T37 has-Medical-Assertion:T36

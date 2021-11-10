@@ -1,0 +1,19 @@
+T1	Medical-Problem 200 229	Small elliptical ring shadows
+E1	Medical-Problem:T1
+T2	Medical-Assertion 333 335	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 336 352	pleural effusion
+T4	Medical-Problem 355 368	Consolidation
+T5	Lesion-Characteristic 373 381	evidence
+T6	Lesion-Characteristic 385 392	central
+T7	Lesion-Description 393 403	adenopathy
+T8	Medical-Problem 406 431	Bronchial wall thickening
+T9	Medical-Anatomy 440 456	right upper lung
+T10	Medical-Assertion 532 538	may be
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 539 553	bronchiectasis
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

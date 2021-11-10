@@ -1,0 +1,30 @@
+T1	Medical-Problem 272 285	Large opacity
+T2	Medical-Anatomy 293 308	left lower lobe
+T3	Medical-Problem 313 320;322 331	smaller opacities
+T4	Medical-Anatomy 339 355	right lower lobe
+T5	Medical-Assertion 360 373	worrisome for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 374 384	aspiration
+T7	Medical-Assertion 396 398	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 400 412	pneumothorax
+T9	Medical-Problem 416 438	right pleural effusion
+T10	Medical-Problem 459 469;471 479	small left effusion
+E8	Medical-Problem:T10
+T11	Medical-Anatomy 593 615	left lower hemi thorax
+E9	Medical-Anatomy:T11
+T12	Medical-Problem 688 707	Bibasilar opacities
+E10	Medical-Problem:T12
+T13	Medical-Assertion 708 721	worrisome for
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 722 732	aspiration
+T15	Medical-Problem 741 754	Hiatal hernia
+E12	Medical-Problem:T15
+T16	Medical-Assertion 756 758	No
+A4	Medical-AssertionValue T16 absent
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,19 @@
+T1	Lesion-Size 267 271;273 278	very large
+T2	Lesion-Characteristic 279 288	calcified
+T3	Lesion-Description 289 299	granulomas
+T4	Lesion-Anatomy 307 322	right lung apex
+T5	Lesion-Assertion 334 336	no
+A1	Lesion-AssertionValue T5 absent
+T6	Lesion-Anatomy 350 363	intrathoracic
+T7	Lesion-Description 364 374	malignancy
+T8	Medical-Problem 378 387	infection
+E7	Medical-Problem:T8
+T9	Medical-Problem 410 426	Mild enlargement
+T10	Medical-Anatomy 435 449	thoracic aorta
+T11	Medical-Assertion 468 470	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 471 487	pleural effusion
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

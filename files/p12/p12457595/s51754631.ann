@@ -1,0 +1,21 @@
+T1	Medical-Assertion 328 330	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 331 334	CHF
+T3	Medical-Problem 337 353	focal infiltrate
+T4	Medical-Problem 358 366	effusion
+T5	Lesion-Assertion 429 431	no
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Anatomy 432 437	hilar
+T7	Lesion-Anatomy 441 452	mediastinal
+T8	Lesion-Description 453 468	lymphadenopathy
+T9	Lesion-Anatomy 472 481	pulmonary
+T10	Lesion-Description 482 488	nodule
+T11	Medical-Assertion 526 528	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 529 552	acute pulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E6	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

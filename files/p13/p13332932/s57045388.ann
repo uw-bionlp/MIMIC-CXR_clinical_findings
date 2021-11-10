@@ -1,0 +1,20 @@
+T1	Medical-Problem 245 257;259 303	Cardiomegaly is severe with a large right heart component
+E1	Medical-Problem:T1
+T2	Medical-Problem 306 329	Perihilar opacification
+T3	Medical-Anatomy 352 363	upper lungs
+T4	Medical-Anatomy 398 403;405 410	lower lungs
+T5	Medical-Assertion 429 437	probably
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 438 453	pulmonary edema
+T7	Medical-Problem 470 482;484 511	accompanying small left pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Anatomy 590 598	Thoracic
+T9	Medical-Problem 608 625	heavily calcified
+T10	Medical-Anatomy 647 663;665 672	upper descending portion
+T11	Medical-Assertion 674 677	not
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 678 685	dilated
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

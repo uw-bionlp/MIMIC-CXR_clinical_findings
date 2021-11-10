@@ -1,0 +1,20 @@
+T1	Medical-Problem 190 214	new patchy consolidation
+T2	Medical-Anatomy 234 249	right lung base
+T3	Medical-Problem 252 268	Linear opacities
+T4	Medical-Anatomy 276 290	left lung base
+T5	Medical-Assertion 321 332	potentially
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 333 344	atelectasis
+T7	Medical-Problem 393 415	Moderate hiatal hernia
+E6	Medical-Problem:T7
+T8	Medical-Assertion 433 435	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 436 441;443 462	acute osseous abnormality
+T10	Medical-Problem 494 521	New right lung base opacity
+E8	Medical-Problem:T10
+T11	Medical-Problem 538 547	pneumonia
+E9	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

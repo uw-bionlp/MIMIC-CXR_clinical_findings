@@ -1,0 +1,22 @@
+T1	Medical-Problem 405 428	Increased opacification
+T2	Medical-Anatomy 436 451	right lung base
+T3	Medical-Assertion 452 458	may be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 473 481;483 499	layering pleural effusion
+T5	Medical-Problem 501 528	Small left pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 544 553;555 574	Bilateral perihilar opacities
+E5	Medical-Problem:T6
+T7	Medical-Assertion 591 605	concerning for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 606 626	widespread pneumonia
+T9	Medical-Problem 647 671	Increasing opacification
+T10	Medical-Anatomy 679 706	lung parenchyma bilaterally
+T11	Medical-Assertion 707 721	concerning for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 723 743	widespread pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

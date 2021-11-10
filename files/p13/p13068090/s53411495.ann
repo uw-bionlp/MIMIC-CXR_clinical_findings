@@ -1,0 +1,31 @@
+T1	Medical-Problem 199 219	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 221 254	Heart size is borderline enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 336 350;352 359	Minimal patchy opacity
+T4	Medical-Anatomy 367 381	left lung base
+T5	Medical-Assertion 382 397	likely reflects
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 398 409	atelectasis
+T7	Medical-Assertion 411 413	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 414 419;421 434	focal consolidation
+T9	Medical-Problem 436 452	pleural effusion
+T10	Medical-Problem 456 468	pneumothorax
+T11	Medical-Problem 481 498;500 511	Anterior bridging osteophytes
+T12	Medical-Anatomy 529 549	lower thoracic spine
+T13	Medical-Problem 570 586	Low lung volumes
+T14	Medical-Problem 592 606	patchy opacity
+T15	Medical-Anatomy 614 628	left lung base
+T16	Medical-Assertion 630 636	likely
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 638 649	atelectasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

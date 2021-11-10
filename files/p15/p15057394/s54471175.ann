@@ -1,0 +1,27 @@
+T1	Medical-Assertion 330 332	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 334 350	pleural effusion
+T3	Medical-Problem 354 366	pneumothorax
+T4	Medical-Problem 380 411	mild increase in patchy opacity
+T5	Medical-Anatomy 420 435	left lower lobe
+T6	Medical-Assertion 442 450	suggests
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 451 468	minor atelectasis
+T8	Medical-Problem 507 516	Deformity
+T9	Medical-Anatomy 524 560	left anterior lateral left fifth rib
+T10	Medical-Problem 600 624	Mild increase in opacity
+T11	Medical-Anatomy 632 646	left lung base
+T12	Medical-Assertion 647 657	suggesting
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 658 674;676 700	mild increase in pre-existing atelectasis
+T14	Medical-Assertion 702 722	no definite evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 726 733	disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Anatomy:T11 has-Medical-Assertion:T14

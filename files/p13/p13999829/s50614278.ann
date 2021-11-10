@@ -1,0 +1,22 @@
+T1	Medical-Problem 215 238	Left lower lobe opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 399 421	superimposed infection
+T3	Medical-Assertion 425 437;439 447	not entirely excluded
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 494 513	blunting/thickening
+T5	Medical-Anatomy 522 545	left costophrenic angle
+T6	Medical-Assertion 552 565	may be due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 566 593	underlying pleural effusion
+T8	Medical-Problem 602 620	pleural thickening
+T9	Lesion-Anatomy 627 651	lateral right lower lobe
+T10	Lesion-Description 652 658	nodule
+T11	Medical-Assertion 724 726	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 727 739	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,51 @@
+T1	Medical-Assertion 390 400	may due to
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 401 410	deviation
+T3	Medical-Anatomy 418 427	esophagus
+T4	Medical-Anatomy 452 466;468 476	left main stem bronchus
+T5	Medical-Anatomy 488 521	posterior left lower lobe bronchi
+T6	Medical-Problem 535 557	complete opacification
+T7	Medical-Anatomy 565 580	left hemithorax
+T8	Medical-Problem 635 666	cardiomediastinal silhouette is
+E7	Medical-Problem:T8
+T9	Medical-Problem 667 675;677 685	deviated leftward
+E8	Medical-Problem:T9
+T10	Medical-Problem 690 716	component of consolidation
+T11	Medical-Problem 720 725	fluid
+T12	Medical-Assertion 729 749	difficult to exclude
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Anatomy 757 767	right lung
+T14	Medical-Assertion 777 784	without
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 787 800	consolidation
+T16	Medical-Problem 804 819	pulmonary edema
+T17	Medical-Assertion 831 833	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 835 857	right pleural effusion
+T19	Medical-Problem 861 873	pneumothorax
+T20	Medical-Assertion 885 887	no
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 888 901;903 915	definite left pneumothorax
+T22	Medical-Problem 918 937	Old rib deformities
+E17	Medical-Problem:T22
+T23	Medical-Assertion 1031 1033	No
+A6	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1034 1058	definite acute fractures
+T25	Medical-Problem 1092 1114	Complete opacification
+T26	Medical-Anatomy 1122 1137	left hemithorax
+T27	Medical-Assertion 1219 1228	may be in
+A7	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1231 1239;1241 1250	deviated esophagus
+T29	Medical-Anatomy 1275 1298	left main stem bronchus
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T12
+E10	Medical-Problem:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T17
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T24 has-Medical-Assertion:T23
+E19	Medical-Problem:T25 has-Medical-Anatomy:T26
+E21	Medical-Problem:T28 has-Medical-Assertion:T27 has-Medical-Anatomy:T29

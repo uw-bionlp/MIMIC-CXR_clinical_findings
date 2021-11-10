@@ -1,0 +1,19 @@
+T1	Medical-Assertion 260 262	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 263 270;272 280	pleural effusion
+T3	Medical-Problem 284 296	pneumothorax
+T4	Medical-Problem 331 349;351 362	mild peribronchial infiltrates
+T5	Medical-Anatomy 370 381	lower lungs
+T6	Medical-Assertion 383 400	which may be seen
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 404 414	bronchitis
+T8	Medical-Problem 519 555	Lower lung peribronchial infiltrates
+E6	Medical-Problem:T8
+T9	Medical-Assertion 562 575	may be due to
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 576 586	bronchitis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

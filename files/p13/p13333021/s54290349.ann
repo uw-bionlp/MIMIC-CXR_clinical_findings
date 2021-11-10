@@ -1,0 +1,21 @@
+T1	Medical-Problem 145 165	mild pulmonary edema
+T2	Medical-Anatomy 184 194	right lung
+T3	Medical-Assertion 196 213;215 222	has substantially cleared
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 225 261	Volume loss in the consolidated left
+E3	Medical-Problem:T4
+T5	Medical-Problem 295 306	atelectasis
+E4	Medical-Problem:T5
+T6	Medical-Assertion 308 327	raising question of
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 328 349	bronchial obstruction
+T8	Lesion-Characteristic 407 415	cavitary
+T9	Lesion-Description 416 422	lesion
+T10	Lesion-Anatomy 424 440	right upper lobe
+T11	Medical-Assertion 552 554	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 555 567	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Lesion-Description:T9 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,19 @@
+T1	Medical-Assertion 293 295	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 296 321	definite pleural effusion
+T3	Medical-Problem 325 337	pneumothorax
+T4	Medical-Problem 351 359;361 369	improved aeration
+T5	Medical-Anatomy 377 401	lateral right lower lung
+T6	Medical-Problem 419 429;431 440	multifocal opacities
+T7	Medical-Anatomy 494 508;510 547	left upper and retrocardiac regions of the left lung
+T8	Medical-Problem 597 623	Right upper lobe opacities
+E7	Medical-Problem:T8
+T9	Medical-Problem 738 769	Persistent multifocal opacities
+E8	Medical-Problem:T9
+T10	Lesion-Description 941 947	nodule
+T11	Lesion-Anatomy 955 965	right lung
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T11

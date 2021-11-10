@@ -1,0 +1,27 @@
+T1	Medical-Problem 279 322	Mild interstitial markings and cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 344 364	mild pulmonary edema
+E2	Medical-Problem:T2
+T3	Lesion-Anatomy 397 401;403 413	left upper lobe
+T4	Lesion-Description 420 424	mass
+T5	Lesion-Assertion 487 489	No
+A1	Lesion-AssertionValue T5 absent
+T6	Lesion-Characteristic 496 501	focal
+T7	Lesion-Anatomy 502 511	pulmonary
+T8	Lesion-Description 512 518	lesion
+T9	Medical-Assertion 538 540	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 541 553;555 563	left pleural effusion
+T11	Medical-Assertion 572 578	may be
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 581 609	small right pleural effusion
+T13	Medical-Assertion 621 623	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 625 637	pneumothorax
+T15	Medical-Problem 659 691	Minimal residual pulmonary edema
+E11	Medical-Problem:T15
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E7	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,19 @@
+T1	Medical-Problem 179 216	Widening of right mediastinal contour
+E1	Medical-Problem:T1
+T2	Medical-Problem 315 330	air-fluid level
+E2	Medical-Problem:T2
+T3	Medical-Problem 374 399	Adjacent patchy opacities
+T4	Medical-Anatomy 407 412;414 424	right lower lobe
+T5	Medical-Assertion 438 451	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 452 463	atelectasis
+T7	Medical-Problem 467 477	aspiration
+T8	Medical-Assertion 534 545	no evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 549 561	pneumothorax
+T10	Medical-Problem 566 583	pneumomediastinum
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

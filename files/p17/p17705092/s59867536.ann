@@ -1,0 +1,31 @@
+T1	Medical-Problem 323 354	Ill-defined bilateral opacities
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 379 409	left lower lobe and right apex
+T3	Medical-Problem 441 455	consolidations
+T4	Medical-Assertion 482 484	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 485 511	new dominant consolidation
+T6	Medical-Assertion 529 531	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 532 544	cardiomegaly
+T8	Medical-Problem 558 580	Right hilar prominence
+E6	Medical-Problem:T8
+T9	Lesion-Size 598 603	large
+T10	Lesion-Anatomy 604 609	hilar
+T11	Lesion-Description 610 615	nodal
+E9	Lesion-Description:T11
+T12	Lesion-Description 616 620	mass
+T13	Medical-Assertion 839 841	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 842 878	new dominant pulmonary consolidation
+T15	Lesion-Characteristic 881 890	Scattered
+T16	Lesion-Characteristic 891 902	ill-defined
+T17	Lesion-Description 904 911	nodular
+E14	Lesion-Description:T17
+T18	Lesion-Description 912 921	opacities
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E15	Lesion-Description:T18 has-Lesion-Characteristic:T15 has-Lesion-Characteristic:T16

@@ -1,0 +1,42 @@
+T1	Medical-Problem 234 249;251 259	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 269 274	aorta
+E2	Medical-Problem:T2
+T3	Medical-Problem 288 303	mild tortuosity
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 310 319;321 332	pulmonary vascularity
+T5	Medical-Assertion 336 339	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 340 348	engorged
+T7	Medical-Problem 351 359	Blunting
+T8	Medical-Anatomy 367 392	right costophrenic sulcus
+T9	Medical-Assertion 393 399;401 409	likely reflects
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 412 440	small right pleural effusion
+T11	Medical-Problem 443 467	Minimal linear opacities
+T12	Medical-Anatomy 475 479;481 486	lung bases
+T13	Medical-Assertion 487 501	likely reflect
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 502 513	atelectasis
+T15	Medical-Assertion 525 527	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 528 547	focal consolidation
+T17	Medical-Problem 552 564	pneumothorax
+T18	Medical-Problem 567 581	Hyperinflation
+T19	Medical-Anatomy 589 594	lungs
+T20	Medical-Assertion 595 612	possibly reflects
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 613 628	underlying COPD
+T22	Medical-Problem 648 676	Trace right pleural effusion
+E17	Medical-Problem:T22
+T23	Medical-Problem 681 707	mild bibasilar atelectasis
+E18	Medical-Problem:T23
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20

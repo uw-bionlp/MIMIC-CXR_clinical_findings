@@ -1,0 +1,25 @@
+T1	Medical-Problem 315 337;339 375	moderate right pleural effusion, some of which is loculated
+E1	Medical-Problem:T1
+T2	Medical-Problem 386 408	associated volume loss
+T3	Medical-Anatomy 417 433	right lower lobe
+T4	Medical-Problem 441 473	underlying infectious infiltrate
+T5	Medical-Assertion 474 491	can't be excluded
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 519 538	small left effusion
+T7	Medical-Problem 550 573;575 589	mild pulmonary vascular redistribution
+E6	Medical-Problem:T7
+T8	Medical-Assertion 590 592	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 593 610	pneumomediastinum
+T10	Medical-Problem 644 664	Right-sided effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 669 680	volume loss
+E9	Medical-Problem:T11
+T12	Medical-Problem 685 717	underlying infectious infiltrate
+T13	Medical-Assertion 719 736	can't be excluded
+A3	Medical-AssertionValue T13 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T13

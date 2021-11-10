@@ -1,0 +1,56 @@
+T1	Medical-Problem 200 219	Severe cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 244 254	tortuosity
+T3	Medical-Anatomy 263 277	thoracic aorta
+T4	Medical-Anatomy 284 302	pulmonary arteries
+E4	Medical-Anatomy:T4
+T5	Medical-Problem 322 340;342 352	Pulmonary vascular congestion
+T6	Medical-Assertion 356 370	not visualized
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 373 400	Bilateral pleural effusions
+E6	Medical-Problem:T7
+T8	Lesion-Characteristic 434 443	scattered
+T9	Lesion-Anatomy 444 453	pulmonary
+T10	Lesion-Description 454 461	nodules
+T11	Lesion-Characteristic 474 484	spiculated
+T12	Lesion-Description 485 491	nodule
+T13	Lesion-Anatomy 500 515	left upper lobe
+T14	Medical-Problem 564 569;571 598	Small bilateral pleural effusions
+E13	Medical-Problem:T14
+T15	Medical-Assertion 625 627	no
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 628 640	pneumothorax
+T17	Medical-Problem 658 668	herniation
+T18	Medical-Anatomy 676 694	left inferior lung
+T19	Medical-Problem 705 723;725 742	left inferolateral chest wall defect
+E17	Medical-Problem:T19
+T20	Medical-Assertion 790 792	no
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 793 798;800 821	acute osseous abnormalities
+T22	Medical-Problem 824 833	Deformity
+T23	Medical-Anatomy 841 861	left distal clavicle
+T24	Medical-Problem 963 969;971 983	Severe cardiomegaly
+E21	Medical-Problem:T24
+T25	Medical-Problem 989 1022	small bilateral pleural effusions
+E22	Medical-Problem:T25
+T26	Medical-Problem 1045 1055	herniation
+T27	Medical-Anatomy 1063 1072	left lung
+T28	Medical-Problem 1084 1120	inferolateral left chest wall defect
+E25	Medical-Problem:T28
+T29	Lesion-Characteristic 1124 1133	Scattered
+T30	Lesion-Anatomy 1134 1143	pulmonary
+T31	Lesion-Description 1144 1151	nodules
+T32	Lesion-Characteristic 1164 1174	spiculated
+T33	Lesion-Description 1175 1181	nodule
+T34	Lesion-Anatomy 1189 1199;1201 1205	left upper lobe
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Assertion:T6
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T13
+E11	Lesion-Description:T12 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E23	Medical-Problem:T26 has-Medical-Anatomy:T27
+E28	Lesion-Description:T31 has-Lesion-Characteristic:T29 has-Lesion-Anatomy:T30 has-Lesion-Anatomy:T34
+E30	Lesion-Description:T33 has-Lesion-Characteristic:T32 has-Lesion-Anatomy:T34

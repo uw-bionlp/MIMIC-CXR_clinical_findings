@@ -1,0 +1,60 @@
+T1	Medical-Problem 231 264	marked enlargement of the cardiac
+E1	Medical-Problem:T1
+T2	Medical-Assertion 275 289	concerning for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 290 310	pericardial effusion
+T4	Medical-Problem 314 333	marked cardiomegaly
+T5	Medical-Assertion 346 348	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 349 379	mediastinal venous engorgement
+T7	Medical-Problem 391 400	tamponade
+T8	Medical-Problem 418 457	moderate to large left pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Problem 464 475	atelectasis
+T10	Medical-Anatomy 481 494;496 518	major portion of the left lower lobe
+T11	Medical-Problem 521 535	Subtle opacity
+T12	Medical-Anatomy 551 571;573 576	right anterior third rib
+T13	Lesion-Assertion 578 591	may represent
+A3	Lesion-AssertionValue T13 possible
+T14	Lesion-Anatomy 594 597	rib
+T15	Lesion-Description 598 604	lesion
+T16	Lesion-Anatomy 610 619	pulmonary
+T17	Lesion-Description 620 626	nodule
+T18	Medical-Assertion 638 640	no
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 642 654	pneumothorax
+T20	Medical-Problem 678 698	Pericardial effusion
+E16	Medical-Problem:T20
+T21	Medical-Problem 702 721	marked cardiomegaly
+E17	Medical-Problem:T21
+T22	Medical-Assertion 723 725	No
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 726 735	tamponade
+T24	Medical-Problem 744 771	Large left pleural effusion
+T25	Medical-Problem 777 800	compressive atelectasis
+T26	Medical-Anatomy 804 817;819 841	major portion of the left lower lobe
+T27	Lesion-Size 848 853	10 mm
+T28	Lesion-Characteristic 854 859	round
+T29	Lesion-Description 860 867	opacity
+T30	Lesion-Anatomy 882 906	right anterior third rib
+T31	Lesion-Assertion 908 921	may represent
+A6	Lesion-AssertionValue T31 possible
+T32	Lesion-Anatomy 925 928	rib
+T33	Lesion-Description 929 935	lesion
+T34	Lesion-Anatomy 941 950	pulmonary
+T35	Lesion-Description 951 957	nodule
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14
+E14	Lesion-Description:T17 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Medical-Problem:T23 has-Medical-Assertion:T22
+E19	Medical-Problem:T24 has-Medical-Anatomy:T26
+E20	Medical-Problem:T25 has-Medical-Anatomy:T26
+E24	Lesion-Description:T29 has-Lesion-Size-Present:T27 has-Lesion-Characteristic:T28 has-Lesion-Anatomy:T30
+E27	Lesion-Description:T33 has-Lesion-Assertion:T31 has-Lesion-Anatomy:T32
+E29	Lesion-Description:T35 has-Lesion-Assertion:T31 has-Lesion-Anatomy:T34

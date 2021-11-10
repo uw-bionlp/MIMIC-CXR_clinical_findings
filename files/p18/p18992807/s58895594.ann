@@ -1,0 +1,21 @@
+T1	Medical-Problem 355 359;361 399	Left greater than right pulmonary opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 518 554	increased loculated pleural effusion
+T3	Medical-Anatomy 572 587	left upper lobe
+T4	Medical-Problem 594 617	compressive atelectasis
+T5	Medical-Anatomy 625 649	adjacent lung parenchyma
+T6	Medical-Assertion 661 663	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 665 677	pneumothorax
+T8	Lesion-Description 822 829	lesions
+E7	Lesion-Description:T8
+T9	Medical-Problem 831 850;852 867	Increased loculated fluid component
+T10	Medical-Anatomy 875 890	left upper lobe
+T11	Medical-Problem 892 912	Concurrent pneumonia
+T12	Medical-Assertion 913 922;924 932	cannot be excluded
+A2	Medical-AssertionValue T12 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Assertion:T12

@@ -1,0 +1,40 @@
+T1	Lesion-Size 267 272	15 mm
+T2	Lesion-Characteristic 273 291	well-circumscribed
+T3	Lesion-Description 292 299	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 300 307	density
+T5	Lesion-Anatomy 325 340	left lower lobe
+T6	Medical-Assertion 402 404	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 405 421	pleural effusion
+T8	Medical-Problem 423 435	pneumothorax
+T9	Medical-Problem 437 456	focal consolidation
+T10	Medical-Problem 462 477	pulmonary edema
+T11	Medical-Problem 479 510	Mild aortic arch calcifications
+E10	Medical-Problem:T11
+T12	Medical-Problem 524 534;536 556	Multilevel degenerative changes
+E11	Medical-Problem:T12
+T13	Medical-Problem 605 609;611 626	disc space narrowing
+T14	Medical-Problem 631 659	anterior flowing osteophytes
+T15	Medical-Anatomy 660 684;686 692	contiguous over multiple levels
+T16	Medical-Problem 710 757	diffuse idiopathic skeletal hyperostosis (DISH)
+E15	Medical-Problem:T16
+T17	Medical-Assertion 784 795	No evidence
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 799 808	pneumonia
+T19	Lesion-Characteristic 814 832	Well-circumscribed
+T20	Lesion-Description 833 848	nodular density
+T21	Lesion-Anatomy 856 871	left lower lobe
+T22	Lesion-Assertion 872 885	may represent
+A3	Lesion-AssertionValue T22 possible
+T23	Lesion-Description 889 898	granuloma
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T6
+E12	Medical-Problem:T13 has-Medical-Anatomy:T15
+E13	Medical-Problem:T14 has-Medical-Anatomy:T15
+E16	Medical-Problem:T18 has-Medical-Assertion:T17
+E18	Lesion-Description:T20 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T21
+E20	Lesion-Description:T23 has-Lesion-Anatomy:T21 has-Lesion-Assertion:T22

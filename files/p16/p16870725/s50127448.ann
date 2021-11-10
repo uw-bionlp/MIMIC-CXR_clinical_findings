@@ -1,0 +1,51 @@
+T1	Medical-Anatomy 182 187	heart
+T2	Medical-Assertion 191 194	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 195 203	enlarged
+T4	Lesion-Assertion 251 253	no
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 255 260	hilar
+T6	Lesion-Anatomy 264 275	mediastinal
+T7	Lesion-Description 276 291	lymphadenopathy
+T8	Lesion-Assertion 296 298	no
+A3	Lesion-AssertionValue T8 absent
+T9	Lesion-Characteristic 299 306	obvious
+T10	Lesion-Anatomy 307 316	pulmonary
+T11	Lesion-Description 317 324	nodules
+T12	Medical-Assertion 341 343	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 344 347	CHF
+T14	Medical-Problem 349 365	focal infiltrate
+T15	Medical-Problem 369 377	effusion
+T16	Medical-Assertion 380 382	No
+A5	Medical-AssertionValue T16 absent
+T17	Lesion-Characteristic 383 392	calcified
+T18	Lesion-Description 393 404	lymph nodes
+T19	Medical-Problem 410 431	fibronodular scarring
+T20	Medical-Assertion 450 458	Probable
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Problem 459 491	very mild right convex curvature
+T22	Medical-Anatomy 499 528	thoracic spine centered at T5
+T23	Medical-Problem 534 559	mild degenerative changes
+T24	Medical-Anatomy 567 581	thoracic spine
+T25	Medical-Problem 644 669	Mild degenerative changes
+T26	Medical-Problem 674 683	scoliosis
+T27	Medical-Anatomy 691 705	thoracic spine
+T28	Medical-Assertion 772 783;785 795	No findings to confirm
+A7	Medical-AssertionValue T28 absent
+T29	Medical-Problem 812 824	pulmonary TB
+T30	Medical-Problem 828 837	pneumonia
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E8	Lesion-Description:T11 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T12
+E13	Lesion-Description:T18 has-Lesion-Characteristic:T17
+E14	Medical-Problem:T19 has-Medical-Assertion:T16
+E15	Medical-Problem:T21 has-Medical-Assertion:T20 has-Medical-Anatomy:T22
+E17	Medical-Problem:T23 has-Medical-Anatomy:T24
+E19	Medical-Problem:T25 has-Medical-Anatomy:T27
+E20	Medical-Problem:T26 has-Medical-Anatomy:T27
+E22	Medical-Problem:T29 has-Medical-Assertion:T28
+E23	Medical-Problem:T30 has-Medical-Assertion:T28

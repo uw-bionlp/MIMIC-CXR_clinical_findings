@@ -1,0 +1,32 @@
+T1	Medical-Problem 256 287	increased interstitial markings
+T2	Medical-Anatomy 295 331	mid-to-lower lung fields bilaterally
+T3	Medical-Assertion 334 355	which could relate to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 356 370	fluid overload
+T5	Medical-Problem 399 408	pneumonia
+E4	Medical-Problem:T5
+T6	Medical-Problem 413 444	superimposed infectious process
+T7	Medical-Assertion 445 463	cannot be excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 466 468	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 469 485	pleural effusion
+T10	Medical-Problem 490 502	pneumothorax
+T11	Medical-Problem 588 631	Increased interstitial markings bilaterally
+T12	Medical-Anatomy 635 652;654 660	mid to lower lung fields
+T13	Medical-Assertion 661 676	could relate to
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 677 691	fluid overload
+T15	Medical-Problem 720 729	pneumonia
+T16	Medical-Problem 732 750	infectious process
+T17	Medical-Assertion 754 766	not excluded
+A5	Medical-AssertionValue T17 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T17
+E12	Medical-Problem:T16 has-Medical-Anatomy:T12 has-Medical-Assertion:T17

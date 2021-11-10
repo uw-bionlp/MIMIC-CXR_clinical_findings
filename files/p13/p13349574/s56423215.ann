@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 231 236	lungs
+T2	Medical-Problem 242 289	hyperinflated with flattening of the diaphragms
+T3	Medical-Assertion 291 301	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 302 309;311 340	chronic obstructive pulmonary disease
+T5	Lesion-Count 345 348	few
+T6	Lesion-Characteristic 349 358	scattered
+T7	Lesion-Characteristic 359 368	calcified
+T8	Lesion-Description 369 379	granulomas
+T9	Medical-Assertion 455 457	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 458 463;465 480	overt pulmonary edema
+T11	Medical-Problem 492 527	mild left base scarring/atelectasis
+E9	Medical-Problem:T11
+T12	Medical-Problem 545 549	COPD
+E10	Medical-Problem:T12
+T13	Medical-Assertion 552 554	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 555 584	acute cardiopulmonary process
+T15	Medical-Problem 590 610;612 618	significant interval change
+E12	Medical-Problem:T15
+T16	Lesion-Anatomy 685 694	pulmonary
+T17	Lesion-Description 695 702	nodules
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E7	Lesion-Description:T8 has-Lesion-Count:T5 has-Lesion-Characteristic:T6 has-Lesion-Characteristic:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T16

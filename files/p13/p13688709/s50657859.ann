@@ -1,0 +1,27 @@
+T1	Medical-Problem 269 286	New consolidation
+T2	Medical-Anatomy 294 327	axillary region of the right lung
+T3	Medical-Assertion 331 342	most likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 344 353	pneumonia
+T5	Lesion-Characteristic 371 382	obstructing
+T6	Lesion-Description 383 387	mass
+T7	Lesion-Anatomy 395 406	right hilus
+T8	Lesion-Assertion 439 450	most likely
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Anatomy 451 455	lung
+T10	Lesion-Description 456 465	carcinoma
+T11	Lesion-Characteristic 480 488	cavitary
+T12	Lesion-Description 489 493	mass
+T13	Lesion-Anatomy 501 558;560 575	right lower lobe extending to the pleura and to the hilus and mediastinum
+T14	Medical-Assertion 586 592	may be
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 601 625	small focus of pneumonia
+T16	Medical-Anatomy 633 647	left lung base
+T17	Medical-Problem 657 693	auto-aspiration of purulent material
+E14	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T9
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T16

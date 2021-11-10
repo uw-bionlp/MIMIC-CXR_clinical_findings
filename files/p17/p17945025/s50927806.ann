@@ -1,0 +1,22 @@
+T1	Lesion-Description 365 369	mass
+T2	Lesion-Anatomy 377 393	right lower lobe
+T3	Medical-Problem 455 472	increased opacity
+E3	Medical-Problem:T3
+T4	Medical-Assertion 500 502	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 503 528	definite pleural effusion
+T6	Medical-Problem 532 544	pneumothorax
+T7	Lesion-Anatomy 565 581	Right lower lobe
+T8	Lesion-Description 582 586	mass
+T9	Medical-Problem 592 626	increased right lower lung opacity
+E8	Medical-Problem:T9
+T10	Medical-Problem 629 641;643 654	Superimposed atalectasis
+T11	Medical-Problem 658 667	pneumonia
+T12	Medical-Assertion 671 683	not excluded
+A2	Medical-AssertionValue T12 possible
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T12
+E10	Medical-Problem:T11 has-Medical-Assertion:T12

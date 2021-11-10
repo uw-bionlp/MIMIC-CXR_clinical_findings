@@ -1,0 +1,20 @@
+T1	Medical-Anatomy 290 301	aortic arch
+T2	Medical-Problem 305 311;313 322	partly calcified
+T3	Lesion-Anatomy 325 334	Bilateral
+T4	Lesion-Characteristic 335 344	calcified
+T5	Lesion-Description 352 360	implants
+T6	Medical-Assertion 414 416	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 417 434	pleural effusions
+T8	Medical-Problem 438 450	pneumothorax
+T9	Medical-Problem 453 457;459 479	Mild degenerative changes
+T10	Medical-Anatomy 502 516	thoracic spine
+T11	Medical-Assertion 534 545	No evidence
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 549 562	acute disease
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

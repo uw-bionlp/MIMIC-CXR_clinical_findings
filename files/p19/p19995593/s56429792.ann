@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 235 245	Heart size
+T2	Medical-Problem 250 265	mediastinum are
+E2	Medical-Problem:T2
+T3	Medical-Problem 266 281	mildly enlarged
+T4	Medical-Problem 364 389	Mild interstitial changes
+T5	Medical-Anatomy 401 412	bilaterally
+T6	Medical-Assertion 414 438	potentially representing
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 439 454	chronic changes
+T8	Medical-Problem 459 463;465 483	mild interstitial edema
+T9	Medical-Assertion 503 505	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 506 537	definitive focal consolidations
+T11	Medical-Assertion 538 540;542 549	to suggest
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 550 568	infectious process
+T13	Medical-Assertion 584 586	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 587 603	pleural effusion
+T15	Medical-Problem 607 619	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13

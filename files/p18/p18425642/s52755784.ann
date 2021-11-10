@@ -1,0 +1,44 @@
+T1	Medical-Problem 282 290;292 314	tracheal deviation to the right
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 323 330	thyroid
+T3	Lesion-Description 331 335	mass
+T4	Lesion-Anatomy 429 433	lung
+T5	Lesion-Assertion 461 463	no
+A1	Lesion-AssertionValue T5 absent
+T6	Lesion-Characteristic 464 471	obvious
+T7	Lesion-Description 472 478	masses
+T8	Medical-Problem 543 564	Bibasilar atelectasis
+E7	Medical-Problem:T8
+T9	Medical-Assertion 576 578	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 579 593;595 608	focal areas of consolidation
+T11	Lesion-Anatomy 717 724	thyroid
+T12	Lesion-Description 725 729	mass
+T13	Medical-Problem 765 797	retrocardiac soft tissue density
+E11	Medical-Problem:T13
+T14	Medical-Problem 821 826;828 888	focal area of liver parenchyma protruding through the caval hiatus
+E12	Medical-Problem:T14
+T15	Medical-Assertion 890 892	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 893 905	pneumothorax
+T17	Medical-Problem 910 926	pleural effusion
+T18	Lesion-Assertion 957 959	No
+A4	Lesion-AssertionValue T18 absent
+T19	Lesion-Characteristic 960 967	obvious
+T20	Lesion-Anatomy 968 972	lung
+T21	Lesion-Description 973 980	nodules
+T22	Lesion-Anatomy 1066 1082	Left mediastinal
+T23	Lesion-Description 1083 1087	mass
+T24	Lesion-Anatomy 1111 1118	thyroid
+T25	Lesion-Description 1119 1125	lesion
+T26	Medical-Problem 1136 1167	tracheal deviation to the right
+E22	Medical-Problem:T26
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T2
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T11
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E17	Lesion-Description:T21 has-Lesion-Assertion:T18 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T20
+E19	Lesion-Description:T23 has-Lesion-Anatomy:T22
+E21	Lesion-Description:T25 has-Lesion-Anatomy:T24

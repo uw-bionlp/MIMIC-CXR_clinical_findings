@@ -1,0 +1,24 @@
+T1	Medical-Problem 60 79	Cerebral hemorrhage
+E1	Medical-Problem:T1
+T2	Medical-Assertion 202 204	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 205 224	focal consolidation
+T4	Medical-Problem 226 233;235 243	pleural effusion
+T5	Medical-Problem 247 259	pneumothorax
+T6	Lesion-Assertion 262 264	No
+A2	Lesion-AssertionValue T6 absent
+T7	Lesion-Anatomy 271 280	pulmonary
+T8	Lesion-Description 281 288	nodules
+T9	Medical-Assertion 315 317	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 318 347	acute cardiopulmonary process
+T11	Lesion-Assertion 350 361	No evidence
+A4	Lesion-AssertionValue T11 absent
+T12	Lesion-Description 365 375	malignancy
+T13	Lesion-Anatomy 384 389	chest
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T2
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Lesion-Description:T12 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T13

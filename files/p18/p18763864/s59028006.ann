@@ -1,0 +1,25 @@
+T1	Lesion-Anatomy 385 395	left hilar
+T2	Lesion-Description 396 400	mass
+T3	Lesion-Description 418 433	lymphadenopathy
+E3	Lesion-Description:T3
+T4	Medical-Problem 438 453	paramediastinal
+E4	Medical-Problem:T4
+T5	Medical-Problem 454 462	fibrosis
+E5	Medical-Problem:T5
+T6	Lesion-Count 488 496	multiple
+T7	Lesion-Description 497 504	nodules
+T8	Lesion-Anatomy 512 522	right lung
+T9	Medical-Assertion 607 609	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 611 627	pleural effusion
+T11	Lesion-Description 678 693	lymphadenopathy
+E10	Lesion-Description:T11
+T12	Lesion-Assertion 698 706	probable
+A2	Lesion-AssertionValue T12 possible
+T13	Lesion-Characteristic 707 719	hematogenous
+T14	Lesion-Description 721 731	metastases
+T15	Lesion-Anatomy 739 749	right lung
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E7	Lesion-Description:T7 has-Lesion-Count:T6 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E12	Lesion-Description:T14 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15

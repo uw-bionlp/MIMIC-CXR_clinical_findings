@@ -1,0 +1,16 @@
+T1	Medical-Problem 398 413	Severe widening
+T2	Medical-Anatomy 422 462	upper mediastinum and cardiac silhouette
+T3	Lesion-Anatomy 488 492;494 504	Left lower lobe
+T4	Lesion-Description 505 509	mass
+T5	Lesion-Characteristic 513 521	obscured
+T6	Medical-Problem 537 558	Greater opacification
+T7	Medical-Anatomy 566 571;573 582	right lung base
+T8	Medical-Problem 653 686	worsening right basal atelectasis
+T9	Medical-Assertion 689 691	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 692 704	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9

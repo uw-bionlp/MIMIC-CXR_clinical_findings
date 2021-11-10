@@ -1,0 +1,70 @@
+T1	Medical-Problem 243 266	size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 272 277	aorta
+E2	Medical-Problem:T2
+T3	Medical-Problem 281 313	diffusely calcified and tortuous
+E3	Medical-Problem:T3
+T4	Medical-Problem 409 420	volume loss
+T5	Medical-Anatomy 434 443	left lung
+T6	Medical-Problem 448 465;467 489	leftward shift of mediastinal structures
+E6	Medical-Problem:T6
+T7	Medical-Problem 501 521	postsurgical changes
+T8	Medical-Anatomy 534 544;546 550	left chest wall
+T9	Medical-Problem 584 597	opacification
+T10	Medical-Anatomy 608 618;620 626	left hilar region
+T11	Medical-Problem 693 701	Blunting
+T12	Medical-Anatomy 709 732	left costophrenic angle
+T13	Medical-Assertion 733 748	likely reflects
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Problem 749 767	pleural thickening
+T15	Medical-Problem 792 798	Patchy
+E14	Medical-Problem:T15
+T16	Medical-Problem 799 806	opacity
+E15	Medical-Problem:T16
+T17	Medical-Anatomy 818 833	right lung base
+T18	Medical-Assertion 846 851;853 860	could reflect
+A2	Medical-AssertionValue T18 possible
+T19	Medical-Problem 861 870	infection
+T20	Medical-Problem 874 884	aspiration
+T21	Medical-Assertion 888 900	not excluded
+A3	Medical-AssertionValue T21 possible
+T22	Lesion-Anatomy 908 925	right middle lobe
+T23	Lesion-Description 927 942	nodular opacity
+T24	Medical-Problem 1051 1059	probable
+E21	Medical-Problem:T24
+T25	Medical-Problem 1060 1083;1085 1095	mild pulmonary vascular congestion
+E22	Medical-Problem:T25
+T26	Medical-Assertion 1097 1099	No
+A4	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1100 1112	pneumothorax
+T28	Medical-Problem 1218 1232	patchy opacity
+T29	Medical-Anatomy 1244 1259	right lung base
+T30	Medical-Assertion 1263 1277	concerning for
+A5	Medical-AssertionValue T30 possible
+T31	Medical-Problem 1278 1287	infection
+T32	Medical-Problem 1292 1302	aspiration
+T33	Medical-Problem 1330 1352	left perihilar opacity
+E28	Medical-Problem:T33
+T34	Medical-Problem 1442 1458	residual disease
+T35	Medical-Assertion 1463 1475	not excluded
+A6	Medical-AssertionValue T35 possible
+T36	Medical-Problem 1524 1553	pulmonary vascular congestion
+E30	Medical-Problem:T36
+T37	Lesion-Anatomy 1565 1582	right middle lobe
+T38	Lesion-Description 1583 1590	nodular
+E32	Lesion-Description:T38
+T39	Lesion-Description 1591 1598	opacity
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E17	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18 has-Medical-Assertion:T21
+E18	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T18 has-Medical-Assertion:T21
+E20	Lesion-Description:T23 has-Lesion-Anatomy:T22
+E23	Medical-Problem:T27 has-Medical-Assertion:T26
+E24	Medical-Problem:T28 has-Medical-Anatomy:T29
+E26	Medical-Problem:T31 has-Medical-Anatomy:T29 has-Medical-Assertion:T30
+E27	Medical-Problem:T32 has-Medical-Anatomy:T29 has-Medical-Assertion:T30
+E29	Medical-Problem:T34 has-Medical-Assertion:T35
+E33	Lesion-Description:T39 has-Lesion-Anatomy:T37

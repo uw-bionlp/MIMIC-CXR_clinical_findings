@@ -1,0 +1,43 @@
+T1	Medical-Problem 230 246	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 254 283	heart size is mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 302 325;327 335	aorta remains diffusely tortuous
+E3	Medical-Problem:T3
+T4	Medical-Problem 347 355	crowding
+T5	Medical-Anatomy 363 389	bronchovascular structures
+T6	Medical-Assertion 394 396	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 397 402;404 419	overt pulmonary edema
+T8	Medical-Problem 433 472	Persistent bibasilar airspace opacities
+E7	Medical-Problem:T8
+T9	Medical-Assertion 491 511	likely reflective of
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 512 523	atelectasis
+T11	Medical-Problem 528 537	infection
+T12	Medical-Assertion 538 556;558 566	cannot be is fully excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 569 571	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 572 588	pleural effusion
+T15	Medical-Problem 592 604	pneumothorax
+T16	Medical-Problem 675 691	Low lung volumes
+E12	Medical-Problem:T16
+T17	Medical-Problem 697 725	bibasilar airspace opacities
+E13	Medical-Problem:T17
+T18	Medical-Assertion 727 744	likely reflecting
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 746 757	atelectasis
+T20	Medical-Problem 762 771	infection
+T21	Medical-Problem 775 785	aspiration
+T22	Medical-Assertion 786 804	cannot be excluded
+A6	Medical-AssertionValue T22 possible
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T18 has-Medical-Assertion:T22
+E16	Medical-Problem:T21 has-Medical-Assertion:T18 has-Medical-Assertion:T22

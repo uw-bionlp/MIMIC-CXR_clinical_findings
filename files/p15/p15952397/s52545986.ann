@@ -1,0 +1,39 @@
+T1	Medical-Assertion 502 505	not
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 506 514	engorged
+T3	Medical-Problem 517 523	Patchy
+E2	Medical-Problem:T3
+T4	Lesion-Characteristic 524 535	ill-defined
+T5	Lesion-Description 536 543;545 554	nodular opacities
+T6	Lesion-Anatomy 558 574	both lower lobes
+T7	Medical-Assertion 609 623	concerning for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 625 648	worsening bronchiolitis
+T9	Medical-Problem 657 701;703 710	additional patchy areas of focal ill-defined opacity
+T10	Medical-Anatomy 718 741	upper lobes bilaterally
+T11	Medical-Assertion 770 772	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 773 780;782 790	pleural effusion
+T13	Medical-Problem 794 806	pneumothorax
+T14	Medical-Assertion 820 822	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 823 848	acute osseous abnormality
+T16	Medical-Problem 887 923	ill-defined patchy nodular opacities
+T17	Medical-Anatomy 927 942	both lung bases
+T18	Medical-Assertion 943 953;955 958	concerning for
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 959 993	worsening infectious bronchiolitis
+T20	Medical-Problem 1002 1025;1027 1036	additional focal patchy opacities
+T21	Medical-Anatomy 1044 1067	upper lobes bilaterally
+T22	Medical-Problem 1087 1103;1105 1129	additional sites of small airways disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17
+E14	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T21
+E17	Medical-Problem:T22 has-Medical-Anatomy:T21

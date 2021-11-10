@@ -1,0 +1,26 @@
+T1	Medical-Assertion 257 259	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 260 265;267 280	focal consolidation
+T3	Medical-Problem 284 296	pneumothorax
+T4	Medical-Problem 299 311	Hazy opacity
+T5	Medical-Anatomy 319 334	right lung base
+T6	Medical-Assertion 338 344	likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 346 363	layering effusion
+T8	Medical-Problem 366 386	Mild pulmonary edema
+E6	Medical-Problem:T8
+T9	Medical-Problem 420 439	Thoracotomy changes
+T10	Medical-Anatomy 457 473	right upper ribs
+T11	Medical-Problem 480 493;495 503	heart remains enlarged
+E9	Medical-Problem:T11
+T12	Medical-Problem 521 541	Mild pulmonary edema
+E10	Medical-Problem:T12
+T13	Medical-Assertion 546 554	probable
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 555 575	small right effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

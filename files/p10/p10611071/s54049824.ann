@@ -1,0 +1,35 @@
+T1	Medical-Problem 271 302;304 318	Atelectasis due to longstanding bronchiectasis
+T2	Medical-Anatomy 326 343	right middle lobe
+T3	Medical-Problem 404 432	granulomatous calcifications
+T4	Lesion-Anatomy 436 441;443 448	right hilar
+T5	Lesion-Description 449 460	lymph nodes
+T6	Medical-Anatomy 472 482	right lung
+T7	Medical-Problem 487 514;516 523	small impactions in dilated bronchi
+T8	Medical-Problem 564 574	impactions
+E8	Medical-Problem:T8
+T9	Medical-Problem 579 590	granulomata
+E9	Medical-Problem:T9
+T10	Lesion-Count 631 634	two
+T11	Lesion-Size 635 639	tiny
+T12	Lesion-Anatomy 640 644	lung
+T13	Lesion-Description 645 652	nodules
+T14	Lesion-Anatomy 674 714	anterior aspect of the right seventh rib
+T15	Lesion-Description 917 924	nodules
+E15	Lesion-Description:T15
+T16	Medical-Assertion 992 994	no
+A1	Medical-AssertionValue T16 absent
+T17	Medical-Problem 995 1014	pleural abnormality
+T18	Lesion-Anatomy 1030 1035	hilar
+T19	Lesion-Description 1036 1046	adenopathy
+T20	Medical-Assertion 1073 1075	No
+A2	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1076 1093	focal abnormality
+T22	Medical-Anatomy 1109 1118	left lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T6
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E13	Lesion-Description:T13 has-Lesion-Count:T10 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T12 has-Lesion-Anatomy:T14
+E16	Medical-Problem:T17 has-Medical-Assertion:T16
+E18	Lesion-Description:T19 has-Lesion-Anatomy:T18
+E19	Medical-Problem:T21 has-Medical-Assertion:T20 has-Medical-Anatomy:T22

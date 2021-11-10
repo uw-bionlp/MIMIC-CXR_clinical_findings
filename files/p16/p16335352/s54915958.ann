@@ -1,0 +1,18 @@
+T1	Medical-Problem 365 388;390 400	mild pulmonary vascular congestion
+E1	Medical-Problem:T1
+T2	Medical-Problem 412 438	subtle new area of opacity
+T3	Medical-Anatomy 453 457;459 478	left retrocardiac region
+T4	Medical-Anatomy 504 530;532 541	descending thoracic aortic interface
+T5	Medical-Assertion 557 570	may be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 571 582	atelectasis
+T7	Medical-Problem 584 594	aspiration
+T8	Medical-Problem 601 606;608 637	early focus of infectious pneumonia
+T9	Medical-Problem 708 720	pneumothorax
+E8	Medical-Problem:T9
+T10	Medical-Problem 738 742	lung
+E9	Medical-Problem:T10
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5

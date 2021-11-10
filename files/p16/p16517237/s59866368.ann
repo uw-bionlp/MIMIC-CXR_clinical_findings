@@ -1,0 +1,17 @@
+T1	Medical-Problem 216 246	Severe cardiomegaly is chronic
+E1	Medical-Problem:T1
+T2	Medical-Problem 297 337	persistence small right pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 365 368;370 383	new opacification
+T4	Medical-Anatomy 391 413	base of the right lung
+T5	Medical-Assertion 420 428	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 429 440;442 451	substantial pneumonia
+T7	Medical-Problem 489 508	focal consolidation
+E6	Medical-Problem:T7
+T8	Medical-Problem 511 520;522 541	Pulmonary vascular congestion
+T9	Medical-Assertion 542 558	has not resolved
+A2	Medical-AssertionValue T9 absent
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T9

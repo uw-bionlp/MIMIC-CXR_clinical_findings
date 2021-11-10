@@ -1,0 +1,23 @@
+T1	Medical-Problem 364 380;382 385	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 390 413	small right atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 427 432	Lungs
+T4	Medical-Assertion 453 460	without
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 462 490	focal or diffuse abnormality
+T6	Medical-Assertion 493 495	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 496 512	pleural effusion
+T8	Medical-Problem 516 528	pneumothorax
+T9	Medical-Problem 703 719	Low lung volumes
+E7	Medical-Problem:T9
+T10	Medical-Problem 725 736	atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Assertion 739 741	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 742 758	pleural effusion
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

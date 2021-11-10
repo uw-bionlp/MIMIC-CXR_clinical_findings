@@ -1,0 +1,18 @@
+T1	Medical-Problem 211 239	Large right pleural effusion
+T2	Medical-Anatomy 261 271	right lung
+T3	Medical-Assertion 278 288	may not be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 316 336	mild pulmonary edema
+T5	Medical-Assertion 379 387	could be
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 388 407	focal consolidation
+T7	Medical-Anatomy 415 425	right lung
+T8	Medical-Problem 428 442;444 481	Post-operative enlargement of the cardiac silhouette
+E6	Medical-Problem:T8
+T9	Medical-Assertion 654 656	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 657 669	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

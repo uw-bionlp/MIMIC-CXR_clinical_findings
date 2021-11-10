@@ -1,0 +1,46 @@
+T1	Medical-Problem 329 337	Haziness
+T2	Medical-Anatomy 345 349	hila
+T3	Medical-Problem 355 374	perihilar opacities
+T4	Medical-Assertion 419 438	which may be due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 439 454	pulmonary edema
+T6	Medical-Problem 494 513	amiodarone toxicity
+E5	Medical-Problem:T6
+T7	Medical-Problem 545 606;608 622	Bibasilar and peripheral right mid lung and left mid to lower lung opacities
+E6	Medical-Problem:T7
+T8	Lesion-Anatomy 682 693	Mediastinal
+T9	Lesion-Anatomy 698 703	hilar
+T10	Lesion-Description 704 715	lymph nodes
+T11	Medical-Assertion 790 792	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 793 815	large pleural effusion
+T13	Medical-Problem 819 827	evidence
+E11	Medical-Problem:T13
+T14	Medical-Problem 831 843	pneumothorax
+T15	Medical-Assertion 855 858;860 862	may be
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 863 899	trace fluid tracking along a fissure
+T17	Medical-Assertion 977 984	perhaps
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 985 1002	increased opacity
+T19	Medical-Anatomy 1013 1043	left lateral mid to lower lung
+T20	Medical-Problem 1046 1053;1055 1064	Central opacities
+E16	Medical-Problem:T20
+T21	Medical-Assertion 1065 1086	may be in part due to
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1087 1113	underlying pulmonary edema
+T23	Medical-Assertion 1130 1133	may
+A6	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1145 1177	component of amiodarone toxicity
+T25	Medical-Problem 1181 1213	cryptogenic organizing pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17 has-Medical-Anatomy:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21
+E18	Medical-Problem:T24 has-Medical-Assertion:T23
+E19	Medical-Problem:T25 has-Medical-Assertion:T23

@@ -1,0 +1,46 @@
+T1	Medical-Problem 403 463;465 476	Rightward shift of mediastinal structures due to right-sided volume loss
+E1	Medical-Problem:T1
+T2	Medical-Problem 498 527	similar appearance of opacity
+T3	Medical-Anatomy 535 540;542 552	right upper lobe
+T4	Medical-Anatomy 557 576	superior segment of
+T5	Lesion-Description 616 623	opacity
+E5	Lesion-Description:T5
+T6	Medical-Problem 661 680	associated collapse
+E6	Medical-Problem:T6
+T7	Medical-Assertion 718 720	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 721 742	overt pulmonary edema
+T9	Medical-Problem 760 767;769 778	Streaky opacities
+T10	Medical-Anatomy 795 809	left lung base
+T11	Medical-Assertion 811 822	potentially
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 823 843	areas of atelectasis
+T13	Medical-Assertion 855 857	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 858 874	pleural effusion
+T15	Medical-Problem 878 890	pneumothorax
+T16	Medical-Problem 892 923	Multilevel degenerative changes
+T17	Medical-Anatomy 948 962	thoracic spine
+T18	Medical-Problem 1039 1060;1062 1069	Similar appearance of opacity
+T19	Medical-Anatomy 1077 1138	right upper lobe and superior segment of the right lower lobe
+T20	Medical-Problem 1177 1196	associated collapse
+T21	Medical-Problem 1198 1215	Streaky opacities
+T22	Medical-Anatomy 1224 1238	left lung base
+T23	Medical-Assertion 1239 1250	may reflect
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1251 1271	areas of atelectasis
+T25	Medical-Problem 1279 1288	infection
+T26	Medical-Assertion 1289 1298;1300 1319	cannot be completely excluded
+A5	Medical-AssertionValue T26 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T20 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Anatomy:T22
+E20	Medical-Problem:T24 has-Medical-Anatomy:T22 has-Medical-Assertion:T23
+E21	Medical-Problem:T25 has-Medical-Anatomy:T22 has-Medical-Assertion:T26

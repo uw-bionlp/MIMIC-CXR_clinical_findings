@@ -1,0 +1,20 @@
+T1	Medical-Assertion 318 320	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 322 339	pleural effusions
+T3	Medical-Assertion 342 344	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 345 354	pneumonia
+T5	Medical-Assertion 356 358	no
+A3	Medical-AssertionValue T5 absent
+T6	Lesion-Anatomy 359 363	lung
+T7	Lesion-Description 364 371	nodules
+T8	Lesion-Description 375 381	masses
+T9	Medical-Assertion 386 388	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 389 402	abnormalities
+T11	Medical-Anatomy 410 420	chest wall
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E4	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E5	Lesion-Description:T8 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11

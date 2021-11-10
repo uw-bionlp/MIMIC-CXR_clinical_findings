@@ -1,0 +1,14 @@
+T1	Medical-Problem 349 360	atelectasis
+T2	Medical-Anatomy 368 384	right lung bases
+T3	Medical-Problem 392 414	small pleural effusion
+T4	Medical-Anatomy 422 426	left
+T5	Medical-Assertion 427 443	might combine to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 446 463;465 476	larger left basal atelectasis
+T7	Medical-Assertion 479 481	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 482 494	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

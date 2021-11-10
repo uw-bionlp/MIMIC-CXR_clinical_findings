@@ -1,0 +1,25 @@
+T1	Lesion-Description 34 41	nodular
+E1	Lesion-Description:T1
+T2	Lesion-Description 42 49	opacity
+T3	Lesion-Anatomy 66 104	medial right clavicle/right upper lung
+T4	Lesion-Description 575 590	nodular opacity
+T5	Lesion-Anatomy 591 601	projecting
+T6	Lesion-Anatomy 602 651;653 678	posterior to the medial right clavicle projecting over the right upper lung
+T7	Medical-Problem 681 700	Basilar atelectasis
+E7	Medical-Problem:T7
+T8	Medical-Assertion 720 722	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 723 730;732 740	pleural effusion
+T10	Medical-Problem 744 756	pneumothorax
+T11	Medical-Problem 834 841	Opacity
+T12	Medical-Anatomy 862 878	medial right rib
+T13	Lesion-Assertion 882 896	concerning for
+A2	Lesion-AssertionValue T13 possible
+T14	Lesion-Anatomy 898 914	right upper lobe
+T15	Lesion-Description 915 921	lesion
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T3
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14

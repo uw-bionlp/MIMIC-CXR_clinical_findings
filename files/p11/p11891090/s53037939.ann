@@ -1,0 +1,35 @@
+T1	Lesion-Anatomy 33 49	Right upper lobe
+T2	Lesion-Description 50 54	mass
+T3	Lesion-Anatomy 59 92	right middle and right lower lung
+T4	Lesion-Description 93 100	nodules
+T5	Lesion-Description 123 132	carcinoma
+E5	Lesion-Description:T5
+T6	Medical-Problem 462 477;479 492	large confluent opacification
+T7	Medical-Anatomy 500 516	right upper lobe
+T8	Lesion-Description 542 546	mass
+E8	Lesion-Description:T8
+T9	Lesion-Description 571 577	nodule
+E9	Lesion-Description:T9
+T10	Lesion-Anatomy 615 631;633 643	right middle and lower lung
+T11	Lesion-Count 654 657	two
+T12	Lesion-Characteristic 658 665	rounded
+T13	Lesion-Characteristic 667 686	slightly spiculated
+T14	Lesion-Description 687 694	nodules
+T15	Medical-Assertion 780 782	no
+A1	Medical-AssertionValue T15 absent
+T16	Medical-Problem 784 800	pleural effusion
+T17	Medical-Problem 804 816	pneumothorax
+T18	Lesion-Anatomy 886 902	Right upper lobe
+T19	Lesion-Description 903 907	mass
+T20	Lesion-Anatomy 912 945	right middle and right lower lung
+T21	Lesion-Description 947 954	nodules
+T22	Lesion-Description 975 984	carcinoma
+E21	Lesion-Description:T22
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E14	Lesion-Description:T14 has-Lesion-Anatomy:T10 has-Lesion-Count:T11 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T13
+E15	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T17 has-Medical-Assertion:T15
+E18	Lesion-Description:T19 has-Lesion-Anatomy:T18
+E20	Lesion-Description:T21 has-Lesion-Anatomy:T20

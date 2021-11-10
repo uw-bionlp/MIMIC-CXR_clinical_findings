@@ -1,0 +1,32 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Lesion-Characteristic 69 74	Focal
+T4	Lesion-Description 75 90	nodular opacity
+T5	Lesion-Anatomy 111 141	right mid lung and rights ribs
+T6	Medical-Assertion 514 519	clear
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 523 536	consolidation
+T8	Medical-Problem 538 546	effusion
+T9	Medical-Problem 551 563	pneumothorax
+T10	Lesion-Size 578 581	8mm
+T11	Lesion-Description 582 589	nodular
+E9	Lesion-Description:T11
+T12	Lesion-Description 590 597	opacity
+T13	Lesion-Anatomy 618 655;657 693	right mid lung and the anterior right third and posterior right sixth ribs
+T14	Medical-Assertion 754 756	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 757 770	acute osseous
+E12	Medical-Problem:T15
+T16	Medical-Problem 771 784	abnormalities
+T17	Medical-Assertion 805 807	No
+A4	Medical-AssertionValue T17 absent
+T18	Lesion-Description 846 853	nodular
+E14	Lesion-Description:T18
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T14

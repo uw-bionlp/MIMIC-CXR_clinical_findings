@@ -1,0 +1,28 @@
+T1	Medical-Problem 465 482	new opacification
+T2	Medical-Anatomy 490 501;503 507	right lower lobe
+T3	Medical-Problem 513 524	obscuration
+T4	Medical-Anatomy 532 551	right hemidiaphragm
+T5	Medical-Assertion 558 571	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 573 584	atelectasis
+T7	Medical-Problem 588 598	aspiration
+T8	Medical-Assertion 609 611	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 612 624	pneumothorax
+T10	Medical-Problem 629 651	right pleural effusion
+T11	Medical-Assertion 653 671	cannot be excluded
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 746 780	New large right lower lung opacity
+E9	Medical-Problem:T12
+T13	Medical-Assertion 781 794	may represent
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 795 806	atelectasis
+T15	Medical-Problem 811 821	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13

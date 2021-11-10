@@ -1,0 +1,31 @@
+T1	Medical-Problem 400 410	prominence
+T2	Medical-Anatomy 419 429	left hilum
+T3	Lesion-Characteristic 444 454	underlying
+T4	Lesion-Description 455 470	lymphadenopathy
+T5	Medical-Problem 518 531	hyperinflated
+E5	Medical-Problem:T5
+T6	Medical-Assertion 532 539	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 540 559	focal consolidation
+T8	Lesion-Description 569 576	nodules
+T9	Lesion-Anatomy 588 603	left upper lobe
+T10	Lesion-Assertion 669 671	No
+A2	Lesion-AssertionValue T10 absent
+T11	Medical-Problem 672 688	pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 692 704	pneumothorax
+E10	Medical-Problem:T12
+T13	Medical-Assertion 729 731	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 732 759	acute osseous abnormalities
+T15	Lesion-Description 822 829	nodules
+T16	Lesion-Anatomy 841 855;857 868	left upper and lower lobes
+T17	Lesion-Anatomy 916 926	left hilar
+T18	Lesion-Description 928 943	lymphadenopathy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T16
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T17

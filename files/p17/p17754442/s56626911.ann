@@ -1,0 +1,46 @@
+T1	Medical-Problem 302 315	large opacity
+T2	Medical-Anatomy 323 338	right lung base
+T3	Medical-Assertion 349 362	likely due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 364 373	elevation
+T5	Lesion-Count 406 414	numerous
+T6	Lesion-Characteristic 415 420	bulky
+T7	Lesion-Anatomy 421 428	hepatic
+T8	Lesion-Description 429 435	masses
+T9	Medical-Problem 500 513;515 535	small pleural effusion on the left
+E8	Medical-Problem:T9
+T10	Medical-Problem 538 560	Left lung base opacity
+E9	Medical-Problem:T10
+T11	Medical-Assertion 561 574	may represent
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 575 583;585 596	adjacent atelectasis
+T13	Medical-Problem 607 616	infection
+T14	Medical-Assertion 617 643	could be considered in the
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Assertion 676 678	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 679 703	pneumothorax bilaterally
+T17	Medical-Assertion 706 708	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 709 722;724 737	acute osseous abnormalities
+T19	Medical-Problem 838 867	Large right lung base opacity
+E14	Medical-Problem:T19
+T20	Lesion-Count 927 935	numerous
+T21	Lesion-Anatomy 936 943	hepatic
+T22	Lesion-Description 944 950	masses
+T23	Medical-Problem 957 984	Small left pleural effusion
+E18	Medical-Problem:T23
+T24	Medical-Problem 991 995	left
+E19	Medical-Problem:T24
+T25	Medical-Assertion 1014 1025;1027 1039	most likely representing
+A6	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1040 1051	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E7	Lesion-Description:T8 has-Lesion-Count:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Lesion-Description:T22 has-Lesion-Count:T20 has-Lesion-Anatomy:T21
+E20	Medical-Problem:T26 has-Medical-Assertion:T25

@@ -1,0 +1,30 @@
+T1	Medical-Problem 204 222	Moderate asymmetry
+T2	Medical-Anatomy 230 238	rib cage
+T3	Medical-Problem 247 267	healed rib fractures
+E3	Medical-Problem:T3
+T4	Medical-Problem 273 289	marked scoliosis
+E4	Medical-Problem:T4
+T5	Medical-Problem 332 349	Marked tortuosity
+T6	Medical-Anatomy 358 372	thoracic aorta
+T7	Lesion-Assertion 375 386	No evidence
+A1	Lesion-AssertionValue T7 absent
+T8	Lesion-Anatomy 390 395	hilar
+T9	Lesion-Anatomy 399 410	mediastinal
+T10	Lesion-Description 411 426	lymphadenopathy
+T11	Medical-Assertion 462 469	without
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 479 486	nodular
+E10	Medical-Problem:T12
+T13	Medical-Problem 490 506	fibrotic changes
+T14	Medical-Assertion 510 512	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 513 530	pleural effusions
+T16	Medical-Assertion 548 559	No evidence
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 563 570	sarcoid
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E9	Lesion-Description:T10 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

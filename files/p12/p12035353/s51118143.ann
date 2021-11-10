@@ -1,0 +1,43 @@
+T1	Medical-Anatomy 57 71	left lung base
+T2	Medical-Problem 72 85	consolidation
+T3	Medical-Problem 87 99	atelecatasis
+T4	Medical-Assertion 100 102	vs
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 102 103	.
+T6	Medical-Problem 106 115	infection
+T7	Medical-Assertion 122 128	likely
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 129 163	associated small pleurfal effusion
+T9	Medical-Problem 167 196	diffuse BL airspace opaciteis
+E7	Medical-Problem:T9
+T10	Medical-Anatomy 198 201	R>L
+T11	Medical-Assertion 203 216	may represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 218 223	edema
+T13	Medical-Problem 225 234	infection
+T14	Medical-Problem 241 251	hemorrhage
+T15	Medical-Problem 606 639	Moderately severe pulmonary edema
+T16	Medical-Anatomy 654 664	right lung
+T17	Medical-Problem 710 740	effusion is small on the right
+E14	Medical-Problem:T17
+T18	Medical-Assertion 755 762	absence
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 767 779	cardiomegaly
+T20	Medical-Assertion 780 802	raises the possibility
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 806 841;843 845	non-cardiogenic pulmonary edema due to
+E16	Medical-Problem:T21
+T22	Medical-Problem 846 877	increased intracranial pressure
+T23	Medical-Problem 950 955;957 973	right pleural effusion
+E18	Medical-Problem:T23
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T4
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T1 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Anatomy:T1 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T22 has-Medical-Assertion:T20

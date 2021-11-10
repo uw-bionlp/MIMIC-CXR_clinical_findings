@@ -1,0 +1,32 @@
+T1	Medical-Assertion 400 402	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 403 415	pneumothorax
+T3	Medical-Problem 426 447	Left basilar effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 453 464	atelectasis
+E3	Medical-Problem:T4
+T5	Medical-Problem 489 506	increased opacity
+T6	Medical-Anatomy 514 525;527 531	right upper lobe
+T7	Medical-Assertion 532 546	concerning for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 549 558	pneumonia
+T9	Medical-Problem 561 586	Bilateral pulmonary edema
+E7	Medical-Problem:T9
+T10	Medical-Problem 600 621	Moderate cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Problem 656 673	Worsening opacity
+T12	Medical-Anatomy 681 697	right upper lobe
+T13	Medical-Assertion 698 712	concerning for
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 713 722	pneumonia
+T15	Medical-Problem 729 780	Bilateral pulmonary edema and moderate cardiomegaly
+E12	Medical-Problem:T15
+T16	Medical-Assertion 841 843	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 844 856	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

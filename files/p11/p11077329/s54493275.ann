@@ -1,0 +1,54 @@
+T1	Medical-Anatomy 288 293	lungs
+T2	Medical-Problem 298 311	hyperinflated
+T3	Medical-Problem 317 334	slight flattening
+T4	Medical-Anatomy 342 351;353 367	bilateral hemidiaphragms
+T5	Medical-Problem 373 415	attenuation of pulmonary vascular markings
+T6	Medical-Anatomy 428 439	upper lobes
+T7	Medical-Problem 456 470	mild emphysema
+T8	Medical-Anatomy 477 482	lungs
+T9	Medical-Assertion 501 508	without
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 509 528	focal consolidation
+T11	Medical-Assertion 529 543	concerning for
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 544 553	pneumonia
+T13	Medical-Problem 555 571	pleural effusion
+T14	Medical-Problem 576 588	pneumothorax
+T15	Lesion-Size 593 597	7 mm
+T16	Lesion-Description 598 605	density
+T17	Medical-Problem 714 722;724 732	biapical scarring
+E15	Medical-Problem:T17
+T18	Medical-Anatomy 759 780	pulmonary vasculature
+T19	Medical-Assertion 784 787	not
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 788 796	engorged
+T21	Medical-Problem 836 854	slightly prominent
+E18	Medical-Problem:T21
+T22	Medical-Problem 963 985	dextroconvex scoliosis
+T23	Medical-Anatomy 993 1020	mid-to-lower thoracic spine
+T24	Medical-Problem 1023 1035	Irregularity
+T25	Medical-Anatomy 1044 1071	right posterior seventh rib
+T26	Medical-Assertion 1089 1106	likely represents
+A4	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1109 1114;1116 1124	prior fracture
+T28	Medical-Assertion 1127 1129	No
+A5	Medical-AssertionValue T28 absent
+T29	Medical-Problem 1130 1155	acute osseous abnormality
+T30	Medical-Assertion 1185 1187	No
+A6	Medical-AssertionValue T30 absent
+T31	Medical-Problem 1188 1217	acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T8 has-Medical-Assertion:T11
+E14	Lesion-Description:T16 has-Lesion-Size-Present:T15
+E17	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T24 has-Medical-Anatomy:T25
+E23	Medical-Problem:T27 has-Medical-Anatomy:T25 has-Medical-Assertion:T26
+E24	Medical-Problem:T29 has-Medical-Assertion:T28
+E25	Medical-Problem:T31 has-Medical-Assertion:T30

@@ -1,0 +1,27 @@
+T1	Medical-Problem 217 226	Elevation
+T2	Medical-Anatomy 234 239	right
+T3	Medical-Assertion 289 295	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 298 317;319 327	small right pleural effusion
+T5	Lesion-Description 332 347	nodular opacity
+T6	Lesion-Anatomy 368 383	left lower lung
+T7	Medical-Assertion 384 390	likely
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 425 449	heart is mildly enlarged
+E6	Medical-Problem:T8
+T9	Medical-Problem 456 464;466 474	aorta is unfolded
+E7	Medical-Problem:T9
+T10	Medical-Assertion 477 479	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 480 492	pneumothorax
+T12	Medical-Problem 542 551	Elevation
+T13	Medical-Anatomy 559 578	right hemidiaphragm
+T14	Medical-Problem 591 618	tiny right pleural effusion
+T15	Medical-Problem 622 639	Mild cardiomegaly
+E12	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13

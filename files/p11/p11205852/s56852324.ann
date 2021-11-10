@@ -1,0 +1,39 @@
+T1	Medical-Problem 369 389	apparent enlargement
+T2	Medical-Anatomy 397 425	cardiomediastinal silhouette
+T3	Medical-Problem 468 496	diffuse mild pulmonary edema
+E3	Medical-Problem:T3
+T4	Medical-Problem 510 523	consolidation
+T5	Medical-Anatomy 532 547	right lung base
+T6	Medical-Assertion 548 567	likely secondary to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 568 579	atelectasis
+T8	Medical-Problem 588 598	aspiration
+T9	Medical-Assertion 600 618	cannot be excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 630 656	mild bibasilar atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Problem 670 675;677 698	small left pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Assertion 710 712	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 713 725	pneumothorax
+T14	Medical-Problem 818 838	Subtle consolidation
+T15	Medical-Anatomy 846 861	right lung base
+T16	Medical-Assertion 865 884	likely secondary to
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 886 897	atelectasis
+T18	Medical-Problem 906 916	aspiration
+T19	Medical-Assertion 917 935	cannot be excluded
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 945 983	Diffuse mild bilateral pulmonary edema
+E15	Medical-Problem:T20
+T21	Medical-Problem 986 1013	Small left pleural effusion
+E16	Medical-Problem:T21
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T19

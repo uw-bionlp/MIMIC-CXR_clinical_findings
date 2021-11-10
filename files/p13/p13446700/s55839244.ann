@@ -1,0 +1,51 @@
+T1	Medical-Problem 33 61	Retrocardiac air fluid level
+E1	Medical-Problem:T1
+T2	Medical-Assertion 64 77	may represent
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 80 93	hiatal hernia
+T4	Medical-Assertion 133 153	could also represent
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 154 159	fluid
+T6	Medical-Problem 166 185;187 200	enlarged esophageal  diverticulum
+T7	Medical-Assertion 261 263	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 266 283	pneumomediastinum
+T9	Medical-Assertion 288 290	no
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 291 303	pneumothorax
+T11	Medical-Problem 306 325	Bibasilar opacities
+E7	Medical-Problem:T11
+T12	Medical-Assertion 326 340	likely reflect
+A5	Medical-AssertionValue T12 possible
+T13	Medical-Problem 343 354	atelectasis
+T14	Medical-Problem 357 384	Unchanged mild cardiomegaly
+E9	Medical-Problem:T14
+T15	Medical-Assertion 388 390	No
+A6	Medical-AssertionValue T15 absent
+T16	Medical-Problem 391 396	edema
+T17	Medical-Problem 400 417	pleural effusions
+T18	Medical-Problem 817 830	hiatal hernia
+E12	Medical-Problem:T18
+T19	Medical-Problem 839 854	air-fluid level
+E13	Medical-Problem:T19
+T20	Medical-Problem 908 925	areas of scarring
+T21	Medical-Anatomy 933 947	left lung base
+T22	Lesion-Anatomy 961 964	rib
+T23	Lesion-Description 965 972	lesions
+T24	Lesion-Anatomy 980 985	right
+T25	Lesion-Size-Trend 990 999	unchanged
+A7	Lesion-Size-TrendValue T25 no-change
+T26	Medical-Assertion 1002 1004	No
+A8	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1005 1027	other relevant changes
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T16 has-Medical-Assertion:T15
+E11	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T20 has-Medical-Anatomy:T21
+E17	Lesion-Description:T23 has-Lesion-Anatomy:T22 has-Lesion-Anatomy:T24 has-Lesion-Size-Trend:T25
+E19	Medical-Problem:T27 has-Medical-Assertion:T26

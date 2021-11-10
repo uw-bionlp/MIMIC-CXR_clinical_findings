@@ -1,0 +1,37 @@
+T1	Medical-Problem 231 260	mediastinal shift to the left
+E1	Medical-Problem:T1
+T2	Medical-Problem 277 288	volume loss
+E2	Medical-Problem:T2
+T3	Medical-Problem 338 346	Blunting
+T4	Medical-Anatomy 354 358;360 378	left costophrenic angle
+T5	Medical-Assertion 394 407	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 408 418	thickening
+T7	Medical-Problem 422 437;439 445	scarring of the pleura
+T8	Medical-Assertion 471 473	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 474 490	pleural effusion
+T10	Medical-Problem 494 506	pneumothorax
+T11	Lesion-Anatomy 516 525	pulmonary
+T12	Lesion-Description 526 533	nodular
+T13	Lesion-Anatomy 551 567	right lower lobe
+T14	Medical-Problem 694 719	Aortic valve is calcified
+E12	Medical-Problem:T14
+T15	Lesion-Anatomy 745 771	Right lower lobe pulmonary
+T16	Lesion-Description 772 779	nodular
+E14	Lesion-Description:T16
+T17	Lesion-Description 780 789	opacities
+T18	Lesion-Characteristic 840 875	suggestive of an infectious process
+T19	Medical-Assertion 877 879	No
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 880 893;895 904	new pulmonary opacities
+T21	Medical-Problem 960 990	expected left lung volume loss
+E18	Medical-Problem:T21
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T13
+E15	Lesion-Description:T17 has-Lesion-Anatomy:T15 has-Lesion-Characteristic:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T19

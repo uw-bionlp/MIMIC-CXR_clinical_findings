@@ -1,0 +1,17 @@
+T1	Medical-Problem 270 290	Mild pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 306 337	Residual areas of consolidation
+T3	Medical-Anatomy 341 345;347 352	both lungs
+T4	Medical-Assertion 353 361	could be
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 362 378	persistent edema
+T6	Medical-Problem 382 402	concurrent pneumonia
+T7	Medical-Problem 425 444	Severe cardiomegaly
+E6	Medical-Problem:T7
+T8	Medical-Problem 457 474	Pleural effusions
+T9	Medical-Assertion 493 496;498 509	not substantial
+A2	Medical-AssertionValue T9 absent
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T9

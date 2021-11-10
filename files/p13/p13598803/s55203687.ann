@@ -1,0 +1,27 @@
+T1	Medical-Problem 298 327	Severe retraction of the hila
+T2	Medical-Problem 332 353	cystic transformation
+T3	Medical-Anatomy 361 372	lung apices
+T4	Medical-Problem 411 450	gross appearance of the bullous complex
+T5	Medical-Anatomy 459 469	right apex
+T6	Medical-Problem 588 610	new triangular opacity
+T7	Medical-Anatomy 619 668	right lung projecting inferior to the right hilus
+T8	Medical-Anatomy 673 688;690 708	adjacent to the right heart border
+T9	Medical-Assertion 709 717	could be
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 720 736	mucoid impaction
+T11	Medical-Problem 777 785	scarring
+T12	Medical-Problem 790 804	bronchiectasis
+T13	Medical-Anatomy 812 823	upper lobes
+T14	Medical-Assertion 858 860	no
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 861 877	pleural effusion
+T16	Medical-Problem 880 913	Severe generalized hyperinflation
+E14	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

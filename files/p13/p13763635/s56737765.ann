@@ -1,0 +1,26 @@
+T1	Medical-Assertion 115 125	Evaluation
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 143 155	tuberculosis
+T3	Medical-Assertion 239 241	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 242 247;249 262	focal consolidation
+T5	Lesion-Anatomy 264 273	pulmonary
+T6	Lesion-Description 274 280	nodule
+T7	Lesion-Anatomy 282 287	hilar
+T8	Lesion-Description 288 303	lymphadenopathy
+T9	Medical-Problem 307 319	pneumothorax
+T10	Lesion-Assertion 434 442	probable
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 443 452	calcified
+T12	Lesion-Description 453 462	granuloma
+T13	Lesion-Anatomy 470 480;482 487	left lower hilum
+T14	Medical-Assertion 505 529	No radiographic evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 533 562	active pulmonary tuberculosis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T3
+E9	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

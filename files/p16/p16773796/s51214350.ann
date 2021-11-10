@@ -1,0 +1,24 @@
+T1	Lesion-Anatomy 447 451	lung
+T2	Lesion-Description 452 459	nodules
+T3	Lesion-Characteristic 481 491	widespread
+T4	Lesion-Anatomy 493 502	pulmonary
+T5	Lesion-Description 503 513	metastases
+T6	Medical-Assertion 556 558	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 559 568	pneumonia
+T8	Medical-Problem 570 585	pulmonary edema
+T9	Medical-Problem 587 603	pleural effusion
+T10	Medical-Problem 608 620	pneumothorax
+T11	Medical-Problem 633 652	increase in caliber
+T12	Medical-Anatomy 660 685	right paratracheal stripe
+T13	Medical-Assertion 689 704	probably due to
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 705 711;713 724	venous engorgement
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T1 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T6
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

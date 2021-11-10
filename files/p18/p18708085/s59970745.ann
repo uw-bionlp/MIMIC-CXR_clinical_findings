@@ -1,0 +1,31 @@
+T1	Medical-Problem 286 317	trachea is deviated to the left
+E1	Medical-Problem:T1
+T2	Medical-Assertion 338 351	suggestive of
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 352 356;358 364	mass effect
+T4	Medical-Problem 405 417	Incidentally
+E3	Medical-Problem:T4
+T5	Medical-Problem 424 430;432 439	azygos fissure
+E4	Medical-Problem:T5
+T6	Medical-Assertion 505 507	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 509 525	pleural effusion
+T8	Medical-Problem 529 541	pneumothorax
+T9	Medical-Problem 565 583	Leftward deviation
+T10	Medical-Anatomy 591 598	trachea
+T11	Medical-Assertion 599 612	may be due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 613 619	goiter
+T13	Lesion-Characteristic 623 634	soft tissue
+T14	Lesion-Description 635 639	mass
+T15	Lesion-Anatomy 648 652	neck
+T16	Medical-Assertion 735 746	No evidence
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 750 779	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

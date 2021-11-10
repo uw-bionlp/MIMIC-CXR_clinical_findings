@@ -1,0 +1,41 @@
+T1	Medical-Problem 323 349	volumes are diffusely low.
+E1	Medical-Problem:T1
+T2	Medical-Problem 358 382	interstitial abnormality
+T3	Medical-Problem 409 427	increased haziness
+T4	Medical-Anatomy 435 452	lungs bilaterally
+T5	Medical-Assertion 459 471;473 475	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 476 487	atelectasis
+T7	Medical-Problem 492 508	low lung volumes
+T8	Medical-Assertion 592 604	not excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 606 608	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 609 614;616 629	focal consolidation
+T11	Medical-Problem 631 647	pleural effusion
+T12	Medical-Problem 651 663	pneumothorax
+T13	Medical-Problem 697 734	enlargement of the cardiac silhouette
+E10	Medical-Problem:T13
+T14	Medical-Problem 801 810	deformity
+T15	Medical-Anatomy 816 837;839 861	vertebral body at the thoracolumbar junction
+T16	Medical-Problem 903 938	fibrosing interstitial lung disease
+T17	Medical-Problem 944 968	increased hazy opacities
+T18	Medical-Anatomy 973 983	both lungs
+T19	Medical-Assertion 985 1000	possibly due to
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1001 1012	atelectasis
+T21	Medical-Assertion 1096 1098	No
+A5	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1099 1124	gross focal consolidation
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T16 has-Medical-Anatomy:T18
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21

@@ -1,0 +1,19 @@
+T1	Medical-Assertion 549 565	no good evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 570 582	pneumothorax
+T3	Medical-Problem 587 594;596 604	pleural effusion
+T4	Medical-Problem 643 670	heterogeneous opacification
+T5	Medical-Anatomy 678 693	left lower lung
+T6	Medical-Assertion 708 713;715 717	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 718 727	pneumonia
+T8	Medical-Problem 740 788	pulmonary hemorrhage related to pleural drainage
+T9	Medical-Problem 797 843	generalized pulmonary interstitial abnormality
+T10	Medical-Assertion 845 855	presumably
+A3	Medical-AssertionValue T10 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T10

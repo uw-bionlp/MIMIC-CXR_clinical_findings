@@ -1,0 +1,22 @@
+T1	Medical-Problem 199 214	mild tortuosity
+T2	Medical-Anatomy 222 230;232 237	thoracic aorta
+T3	Medical-Problem 291 303;305 312	retrocardiac opacity
+T4	Medical-Anatomy 358 383	posterior left lower lobe
+T5	Medical-Assertion 385 399	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 400 409	pneumonia
+T7	Medical-Assertion 468 470	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 471 487	pleural effusion
+T9	Medical-Problem 491 503	pneumothorax
+T10	Medical-Problem 521 557	Increasing left lower lobe opacities
+E8	Medical-Problem:T10
+T11	Medical-Assertion 558 571	worrisome for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 572 581	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

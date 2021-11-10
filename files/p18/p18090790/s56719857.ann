@@ -1,0 +1,33 @@
+T1	Medical-Assertion 306 308	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 309 321	pneumothorax
+T3	Medical-Problem 324 332;334 366	Moderate diffuse interstitial abnormality
+E2	Medical-Problem:T3
+T4	Medical-Problem 390 407;409 416	persistent patchy opacity
+T5	Medical-Anatomy 424 446	left retrocardiac area
+T6	Medical-Problem 452 468	air bronchograms
+T7	Medical-Assertion 480 486	likely
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 490 515	small pleural effusion on
+T9	Medical-Assertion 530 552	no convincing evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 557 563;565 574	one on the right
+T11	Medical-Problem 665 710	New mild-to-moderate interstitial abnormality
+E8	Medical-Problem:T11
+T12	Medical-Assertion 712 720	probably
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 721 735;737 742	mild pulmonary edema
+T14	Medical-Problem 745 783	Persistent patchy retrocardiac opacity
+E10	Medical-Problem:T14
+T15	Medical-Problem 785 796	atelectasis
+T16	Medical-Problem 800 810;812 821	developing pneumonia
+T17	Medical-Assertion 822 841	could be considered
+A5	Medical-AssertionValue T17 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T17
+E12	Medical-Problem:T16 has-Medical-Assertion:T17

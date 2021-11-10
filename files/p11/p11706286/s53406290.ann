@@ -1,0 +1,19 @@
+T1	Lesion-Size 254 258	tiny
+T2	Lesion-Characteristic 259 268	calcified
+T3	Lesion-Description 269 278	granuloma
+T4	Lesion-Anatomy 286 301	left lower lobe
+T5	Lesion-Size-Trend 303 312	unchanged
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Assertion 350 352	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 353 370	pleural effusions
+T8	Medical-Problem 374 388	pneumothoraces
+T9	Medical-Problem 392 413	Post-surgical changes
+E7	Medical-Problem:T9
+T10	Medical-Assertion 537 539	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 540 548	findings
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

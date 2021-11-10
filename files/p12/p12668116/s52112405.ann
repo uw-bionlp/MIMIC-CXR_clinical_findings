@@ -1,0 +1,51 @@
+T1	Medical-Problem 255 291	extensive nodular pleural thickening
+T2	Medical-Anatomy 306 311;313 317	right lung
+T3	Medical-Problem 363 387	Persistent opacification
+T4	Medical-Anatomy 400 415	right lung base
+T5	Medical-Problem 454 467;469 480	right basilar atelectasis
+T6	Medical-Problem 485 505	small right effusion
+T7	Medical-Problem 586 593	disease
+T8	Medical-Anatomy 605 615	right lung
+T9	Lesion-Count 746 754	Multiple
+T10	Lesion-Description 755 762	nodules
+T11	Lesion-Anatomy 774 778;780 784	left lung
+T12	Lesion-Size-Trend 795 823	increased in size and number
+A1	Lesion-Size-TrendValue T12 increasing
+T13	Medical-Problem 866 893	Small left pleural effusion
+E12	Medical-Problem:T13
+T14	Medical-Assertion 1053 1055	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 1056 1068	pneumothorax
+T16	Lesion-Assertion 1071 1073	No
+A3	Lesion-AssertionValue T16 absent
+T17	Lesion-Characteristic 1074 1079	acute
+T18	Lesion-Characteristic 1081 1088	osseous
+T19	Lesion-Description 1089 1095	lesion
+T20	Lesion-Size-Trend 1192 1215;1217 1224	interval progression of disease
+A4	Lesion-Size-TrendValue T20 increasing
+T21	Lesion-Size-Trend 1230 1255	increased size and number
+A5	Lesion-Size-TrendValue T21 increasing
+T22	Lesion-Anatomy 1259 1268	pulmonary
+T23	Lesion-Description 1269 1276	nodules
+T24	Lesion-Description 1293 1311	metastatic disease
+T25	Lesion-Anatomy 1323 1339	right hemithorax
+T26	Medical-Problem 1342 1369	Small left pleural effusion
+E21	Medical-Problem:T26
+T27	Medical-Problem 1373 1411	Persistent right basilar opacification
+E22	Medical-Problem:T27
+T28	Medical-Problem 1440 1447;1449 1457	pleural effusion
+E23	Medical-Problem:T28
+T29	Medical-Problem 1459 1484	right basilar atelectasis
+E24	Medical-Problem:T29
+T30	Medical-Problem 1490 1511	pleural based disease
+E25	Medical-Problem:T30
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Lesion-Description:T10 has-Lesion-Count:T9 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E16	Lesion-Description:T19 has-Lesion-Assertion:T16 has-Lesion-Characteristic:T17 has-Lesion-Characteristic:T18
+E18	Lesion-Description:T23 has-Lesion-Size-Trend:T20 has-Lesion-Size-Trend:T21 has-Lesion-Anatomy:T22
+E19	Lesion-Description:T24 has-Lesion-Anatomy:T25

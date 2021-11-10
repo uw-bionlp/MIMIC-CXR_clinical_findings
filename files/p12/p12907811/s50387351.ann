@@ -1,0 +1,34 @@
+T1	Medical-Assertion 411 414	not
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 415 424	congested
+T3	Medical-Problem 438 467;469 477	large density in retrocardiac position
+T4	Medical-Anatomy 485 506	left lower hemithorax
+T5	Medical-Problem 512 536	atypical air-fluid level
+T6	Medical-Assertion 545 558	appears to be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 561 581	pulmonary cavitation
+T8	Medical-Problem 722 749	cavity with air-fluid level
+E6	Medical-Problem:T8
+T9	Lesion-Characteristic 846 854	necrotic
+T10	Lesion-Anatomy 855 870	left lower lobe
+T11	Lesion-Description 872 876	mass
+T12	Lesion-Characteristic 955 970	Air-fluid level
+T13	Lesion-Characteristic 974 982	necrotic
+T14	Lesion-Anatomy 983 998	left lower lobe
+T15	Lesion-Description 999 1003	mass
+T16	Medical-Assertion 1040 1042	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1043 1062	cardiac enlargement
+T18	Medical-Problem 1066 1086	pulmonary congestion
+T19	Medical-Assertion 1091 1093;1095 1103	no evidence
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1107 1135	secondary pulmonary deposits
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10
+E13	Lesion-Description:T15 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

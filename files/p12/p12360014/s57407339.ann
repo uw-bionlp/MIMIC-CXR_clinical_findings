@@ -1,0 +1,26 @@
+T1	Medical-Problem 337 350;352 359	very low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 378 402	bronchovascular crowding
+E2	Medical-Problem:T2
+T3	Medical-Problem 414 423;425 432	increased density
+T4	Medical-Anatomy 440 455	right lung base
+T5	Medical-Problem 482 496	lobar collapse
+E5	Medical-Problem:T5
+T6	Medical-Assertion 502 510	probable
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 511 533	small pleural effusion
+T8	Medical-Assertion 616 618	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 619 631	pneumothorax
+T10	Medical-Problem 730 747	Increased density
+T11	Medical-Anatomy 755 765	right base
+T12	Medical-Problem 785 790;792 800	lobar collapse
+T13	Medical-Assertion 805 813	probable
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 814 836	small pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T13

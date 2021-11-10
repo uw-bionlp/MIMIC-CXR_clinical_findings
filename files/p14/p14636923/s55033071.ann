@@ -1,0 +1,22 @@
+T1	Medical-Problem 288 293;295 314	vague ill-defined opacity
+T2	Medical-Anatomy 322 336	right mid lung
+T3	Medical-Anatomy 445 450	lungs
+T4	Medical-Problem 455 468	hyperinflated
+T5	Medical-Problem 474 494	flattened diaphragms
+T6	Medical-Assertion 501 514	could reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 516 541	underlying emphysema/COPD
+T8	Medical-Assertion 544 546	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 547 563	pleural effusion
+T10	Medical-Problem 567 579	pneumothorax
+T11	Lesion-Characteristic 699 710	Ill defined
+E9	Lesion-Characteristic:T11
+T12	Lesion-Anatomy 741 755	right mid lung
+E10	Lesion-Anatomy:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

@@ -1,0 +1,42 @@
+T1	Medical-Problem 304 322	biapical opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 356 371	could represent
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 372 380	scarring
+T4	Lesion-Description 401 411	malignancy
+T5	Lesion-Assertion 415 418;420 428	not excluded
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Anatomy 439 475	inferior to the right apical opacity
+T7	Lesion-Count 487 492	three
+T8	Lesion-Size-Trend 493 496	new
+A3	Lesion-Size-TrendValue T8 new
+T9	Lesion-Description 498 505	nodules
+T10	Lesion-Anatomy 555 573;575 605	right clavicle and the posterior right fourth rib
+T11	Medical-Problem 608 637	Unchanged mild hyperinflation
+T12	Medical-Anatomy 645 650	lungs
+T13	Medical-Problem 656 683	flattening of the diaphragm
+E10	Medical-Problem:T13
+T14	Medical-Assertion 684 692	suggests
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 693 697	COPD
+T16	Medical-Problem 734 751	aorta is tortuous
+E12	Medical-Problem:T16
+T17	Medical-Assertion 785 787	no
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 788 804	pleural effusion
+T19	Medical-Problem 809 821	pneumothorax
+T20	Medical-Problem 839 871	Increase in right apical opacity
+E15	Medical-Problem:T20
+T21	Medical-Problem 876 902;904 913	three new right upper lung opacities
+E16	Medical-Problem:T21
+T22	Medical-Assertion 933 941	could be
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 942 950	scarring
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Lesion-Description:T4 has-Lesion-Assertion:T5
+E6	Lesion-Description:T9 has-Lesion-Anatomy:T6 has-Lesion-Count:T7 has-Lesion-Size-Trend:T8 has-Lesion-Anatomy:T10
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T19 has-Medical-Assertion:T17
+E17	Medical-Problem:T23 has-Medical-Assertion:T22

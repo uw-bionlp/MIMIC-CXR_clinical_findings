@@ -1,0 +1,26 @@
+T1	Lesion-Size 422 427	large
+T2	Lesion-Anatomy 428 438	right lung
+T3	Lesion-Description 439 443	mass
+T4	Lesion-Characteristic 449 472	central fiducial marker
+T5	Medical-Assertion 611 613;615 623	no evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 627 642	pulmonary edema
+T7	Medical-Problem 644 660	pleural effusion
+T8	Medical-Problem 665 677	pneumothorax
+T9	Lesion-Anatomy 704 714	right lung
+T10	Lesion-Description 715 719	mass
+T11	Lesion-Characteristic 725 748	central fiducial marker
+T12	Lesion-Characteristic 766 779	biopsy-proven
+T13	Lesion-Assertion 792 794	No
+A2	Lesion-AssertionValue T13 absent
+T14	Medical-Problem 795 806	new opacity
+E12	Medical-Problem:T14
+T15	Medical-Assertion 807 821	convincing for
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 822 831	pneumonia
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Characteristic:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

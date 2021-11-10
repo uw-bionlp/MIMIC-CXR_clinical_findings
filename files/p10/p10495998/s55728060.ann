@@ -1,0 +1,20 @@
+T1	Medical-Problem 236 253	Mild cardiomegaly
+T2	Medical-Problem 260 270	elongation
+T3	Medical-Anatomy 278 294	descending aorta
+T4	Medical-Anatomy 300 337	both lung bases, left more than right
+T5	Medical-Problem 340 361	parenchymal opacities
+T6	Medical-Problem 367 383	air bronchograms
+E6	Medical-Problem:T6
+T7	Medical-Assertion 453 466	could reflect
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 467 476	pneumonia
+T9	Medical-Assertion 479 481	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 483 498	pulmonary edema
+T11	Medical-Problem 552 559;561 597	Mild to moderate bilateral pleural effusions
+E9	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

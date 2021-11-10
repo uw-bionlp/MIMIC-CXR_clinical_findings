@@ -1,0 +1,60 @@
+T1	Lesion-Size 372 378	2.6 cm
+T2	Lesion-Characteristic 379 386	rounded
+T3	Lesion-Description 387 394	opacity
+T4	Lesion-Anatomy 410 426	right lower lung
+T5	Medical-Problem 429 446	Increased opacity
+T6	Medical-Anatomy 455 503	right lower lung abutting the right heart border
+T7	Medical-Assertion 507 521	concerning for
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 523 536	consolidation
+T9	Medical-Problem 539 559	Increased heart size
+E8	Medical-Problem:T9
+T10	Medical-Assertion 560 572	may indicate
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 573 585	cardiomegaly
+T12	Medical-Problem 594 614	pericardial effusion
+T13	Medical-Problem 617 640	Small pleural effusions
+E11	Medical-Problem:T13
+T14	Lesion-Size 653 657	6 mm
+T15	Lesion-Characteristic 658 667	calcified
+T16	Lesion-Description 668 677	granuloma
+T17	Lesion-Anatomy 685 700	left lower lung
+T18	Lesion-Size-Trend 704 710	stable
+A3	Lesion-Size-TrendValue T18 no-change
+T19	Lesion-Size 715 721	1.2 cm
+T20	Lesion-Characteristic 723 732	calcified
+T21	Lesion-Description 733 743	lymph node
+T22	Medical-Assertion 774 776	No
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 777 789	pneumothorax
+T24	Lesion-Size-Trend 878 881	New
+A5	Lesion-Size-TrendValue T24 new
+T25	Lesion-Characteristic 882 892	infectious
+T26	Lesion-Description 893 899	nodule
+T27	Lesion-Anatomy 901 913	R lower lung
+T28	Medical-Problem 919 926	Opacity
+T29	Medical-Anatomy 934 949	right lung base
+T30	Medical-Assertion 953 967	concerning for
+A6	Medical-AssertionValue T30 possible
+T31	Medical-Problem 968 981	consolidation
+T32	Medical-Problem 988 1008	Increased heart size
+E26	Medical-Problem:T32
+T33	Medical-Assertion 1009 1021	may indicate
+A7	Medical-AssertionValue T33 possible
+T34	Medical-Problem 1022 1034	cardiomegaly
+T35	Medical-Problem 1042 1053;1055 1063	pericardial effusion
+T36	Medical-Problem 1069 1092	Small pleural effusions
+E29	Medical-Problem:T36
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E14	Lesion-Description:T16 has-Lesion-Size-Present:T14 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T17 has-Lesion-Size-Trend:T18
+E18	Lesion-Description:T21 has-Lesion-Size-Present:T19 has-Lesion-Characteristic:T20
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E21	Lesion-Description:T26 has-Lesion-Size-Trend:T24 has-Lesion-Characteristic:T25 has-Lesion-Anatomy:T27
+E23	Medical-Problem:T28 has-Medical-Anatomy:T29
+E25	Medical-Problem:T31 has-Medical-Anatomy:T29 has-Medical-Assertion:T30
+E27	Medical-Problem:T34 has-Medical-Assertion:T33
+E28	Medical-Problem:T35 has-Medical-Assertion:T33

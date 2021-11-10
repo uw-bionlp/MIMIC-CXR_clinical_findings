@@ -1,0 +1,26 @@
+T1	Medical-Problem 300 312;314 327	Mild streaky opacification
+T2	Medical-Anatomy 335 355	bilateral lung bases
+T3	Medical-Problem 380 391	atelectasis
+T4	Medical-Assertion 394 396	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 397 416	focal consolidation
+T6	Medical-Assertion 417 431	concerning for
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 432 441	pneumonia
+T8	Medical-Problem 443 459	pleural effusion
+T9	Medical-Problem 464 476	pneumothorax
+T10	Medical-Anatomy 495 516	pulmonary vasculature
+T11	Medical-Assertion 520 523	not
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 524 532	engorged
+T13	Medical-Assertion 675 677	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 678 707	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

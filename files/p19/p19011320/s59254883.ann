@@ -1,0 +1,45 @@
+T1	Medical-Assertion 339 349	suggestion
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 353 369	greater fullness
+T3	Medical-Anatomy 378 422	right paratracheal region of the mediastinum
+T4	Medical-Problem 427 452;454 464	increase in previous mild lobulation
+T5	Medical-Anatomy 472 483	right hilus
+T6	Lesion-Assertion 489 499	suggesting
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Characteristic 500 508	interval
+T8	Lesion-Description 509 519	lymph node
+T9	Medical-Problem 534 558	Two small calcifications
+T10	Medical-Anatomy 566 576	left hilus
+T11	Lesion-Anatomy 665 669	lung
+T12	Lesion-Description 670 676	nodule
+T13	Lesion-Characteristic 682 695	oval in shape
+T14	Medical-Problem 779 798	Mild loss of height
+T15	Medical-Anatomy 813 847	multiple thoracic vertebral bodies
+T16	Medical-Assertion 898 900	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 901 917	pleural effusion
+T18	Lesion-Count 1024 1025	2
+T19	Lesion-Size-Trend 1026 1029	new
+A4	Lesion-Size-TrendValue T19 new
+T20	Lesion-Anatomy 1030 1034	lung
+T21	Lesion-Description 1035 1042	nodules
+T22	Lesion-Description 1132 1142	lymph node
+T23	Lesion-Anatomy 1163 1208	right paratracheal station of the mediastinum
+T24	Medical-Problem 1249 1263	calcifications
+T25	Medical-Anatomy 1271 1281	left hilus
+T26	Lesion-Description 1308 1323	lymphadenopathy
+E22	Lesion-Description:T26
+T27	Lesion-Description 1382 1389	nodules
+E23	Lesion-Description:T27
+T28	Medical-Problem 1398 1409	sarcoidosis
+E24	Medical-Problem:T28
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T11 has-Lesion-Characteristic:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Lesion-Description:T21 has-Lesion-Count:T18 has-Lesion-Size-Trend:T19 has-Lesion-Anatomy:T20
+E18	Lesion-Description:T22 has-Lesion-Anatomy:T23
+E20	Medical-Problem:T24 has-Medical-Anatomy:T25

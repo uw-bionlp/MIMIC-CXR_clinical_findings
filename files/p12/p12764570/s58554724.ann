@@ -1,0 +1,14 @@
+T1	Medical-Problem 218 245	Moderate right pneumothorax
+T2	Medical-Anatomy 281 292;294 332	base of the right lung, anterior component visible
+T3	Medical-Assertion 440 445;447 454	could explain
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 455 465	suboptimal
+T5	Medical-Anatomy 543 552	Left lung
+T6	Medical-Problem 556 570	fully expanded
+T7	Medical-Assertion 584 586	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 587 591;593 609	left pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7

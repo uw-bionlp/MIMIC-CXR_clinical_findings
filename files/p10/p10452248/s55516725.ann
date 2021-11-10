@@ -1,0 +1,47 @@
+T1	Medical-Problem 215 229	hyperinflation
+T2	Medical-Anatomy 237 242	lungs
+T3	Medical-Assertion 243 253	suggestive
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 257 282	chronic pulmonary disease
+T5	Lesion-Anatomy 297 307	right lung
+T6	Lesion-Count 309 317	multiple
+T7	Lesion-Characteristic 318 323	dense
+T8	Lesion-Anatomy 324 333	pulmonary
+T9	Lesion-Description 334 341	nodules
+T10	Lesion-Characteristic 352 362	suggestive
+T11	Medical-Problem 407 417	thickening
+T12	Medical-Problem 422 439	increased opacity
+T13	Medical-Anatomy 448 461	major fissure
+T14	Medical-Assertion 495 497	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 498 509;511 524	acute focal consolidation
+T16	Medical-Problem 536 544	blunting
+T17	Medical-Anatomy 552 575	left costophrenic angle
+T18	Medical-Problem 582 589;591 613	cardiac silhouette is enlarged
+E16	Medical-Problem:T18
+T19	Medical-Assertion 616 618	No
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 619 640	significant effusions
+T21	Medical-Problem 644 656	pneumothorax
+T22	Medical-Problem 677 691	Hyperinflation
+E19	Medical-Problem:T22
+T23	Medical-Assertion 692 705	suggestive of
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 706 731	chronic pulmonary disease
+T25	Lesion-Count 734 742	Multiple
+T26	Lesion-Characteristic 743 752	calcified
+T27	Lesion-Anatomy 754 763	pulmonary
+T28	Lesion-Description 764 770	nodule
+T29	Lesion-Anatomy 782 792	right lung
+T30	Lesion-Characteristic 794 829	likely prior granulomatous exposure
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T5 has-Lesion-Count:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T19
+E20	Medical-Problem:T24 has-Medical-Assertion:T23
+E24	Lesion-Description:T28 has-Lesion-Count:T25 has-Lesion-Characteristic:T26 has-Lesion-Anatomy:T27 has-Lesion-Anatomy:T29 has-Lesion-Characteristic:T30

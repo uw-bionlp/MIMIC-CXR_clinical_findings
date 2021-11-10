@@ -1,0 +1,26 @@
+T1	Medical-Problem 146 156	Prominence
+T2	Medical-Anatomy 164 189	right paratracheal stripe
+T3	Medical-Assertion 193 215	undoubtedly related to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 216 224;226 237	tortuous vascularity
+T5	Lesion-Assertion 249 251	no
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Anatomy 252 256	lung
+T7	Lesion-Description 257 261	mass
+T8	Medical-Assertion 273 275	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 276 292	pleural effusion
+T10	Medical-Problem 295 307	pneumothorax
+T11	Medical-Problem 311 339	focal airspace consolidation
+T12	Medical-Assertion 340 353	worrisome for
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 354 363	pneumonia
+T14	Medical-Problem 396 410	aorta tortuous
+E10	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T8 has-Medical-Assertion:T12

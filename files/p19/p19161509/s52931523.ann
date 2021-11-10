@@ -1,0 +1,23 @@
+T1	Medical-Problem 383 390	Several
+T2	Lesion-Description 391 407	masslike regions
+E2	Lesion-Description:T2
+T3	Medical-Anatomy 438 448	both lungs
+T4	Medical-Anatomy 758 785	right middle lobe component
+T5	Medical-Problem 823 831	scarring
+T6	Medical-Assertion 927 929	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 930 947	new abnormalities
+T8	Medical-Anatomy 955 960	lungs
+T9	Medical-Problem 979 997	central adenopathy
+E8	Medical-Problem:T9
+T10	Lesion-Description 1102 1112	adenopathy
+E9	Lesion-Description:T10
+T11	Medical-Assertion 1166 1168	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1169 1185	pleural effusion
+T13	Medical-Problem 1288 1310	cryptogenic organizing
+E11	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

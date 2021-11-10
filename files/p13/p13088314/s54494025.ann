@@ -1,0 +1,20 @@
+T1	Medical-Problem 414 429;431 447	slight decrease in pleural fluid
+T2	Medical-Problem 452 469	improved aeration
+T3	Medical-Anatomy 477 492	right lung base
+T4	Lesion-Characteristic 509 518	extensive
+T5	Lesion-Anatomy 519 526	pleural
+T6	Lesion-Description 527 532	tumor
+T7	Lesion-Characteristic 537 544	central
+T8	Lesion-Description 545 555	adenopathy
+T9	Lesion-Anatomy 563 579	right hemithorax
+T10	Lesion-Assertion 582 584	No
+A1	Lesion-AssertionValue T10 absent
+T11	Medical-Problem 586 598	pneumothorax
+E10	Medical-Problem:T11
+T12	Medical-Problem 760 777	improved aeration
+T13	Medical-Anatomy 785 800	right lung base
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T9
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13

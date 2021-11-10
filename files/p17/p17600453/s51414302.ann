@@ -1,0 +1,33 @@
+T1	Medical-Problem 259 283	Moderate pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 339 395	persistent relative elevation of the right hemidiaphragm
+E2	Medical-Problem:T2
+T3	Medical-Assertion 404 415	may explain
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 416 437	greater consolidation
+T5	Medical-Anatomy 445 460	right lung base
+T6	Medical-Problem 486 501	dependent edema
+T7	Medical-Problem 506 517	atelectasis
+T8	Medical-Problem 528 537	pneumonia
+T9	Medical-Assertion 541 553	not excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 558 589	Moderate to severe cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Problem 634 664	Pulmonary arteries are dilated
+E9	Medical-Problem:T11
+T12	Medical-Assertion 665 680	probably due to
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 681 699;701 713	pulmonary arterial hypertension
+T14	Medical-Problem 716 733	Pleural effusions
+T15	Medical-Assertion 752 761	not large
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Assertion 764 766	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 768 780	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T3 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

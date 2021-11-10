@@ -1,0 +1,55 @@
+T1	Medical-Problem 388 391;393 425	new moderate-sized left pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Assertion 437 453	without evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 457 464	tension
+T4	Medical-Problem 468 497	Generalized increased opacity
+T5	Medical-Anatomy 505 514	left lung
+T6	Medical-Assertion 570 583	may represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 584 596	lavage fluid
+T8	Medical-Problem 607 622;624 634	post-procedural hemorrhage
+T9	Medical-Assertion 638 650	not excluded
+A3	Medical-AssertionValue T9 possible
+T10	Lesion-Size 655 660	large
+T11	Lesion-Anatomy 661 671	left hilar
+T12	Lesion-Description 672 676	mass
+T13	Lesion-Size-Trend 680 695	similar in size
+A4	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Problem 744 760	Linear opacities
+T15	Medical-Anatomy 769 784	right lung base
+T16	Medical-Problem 805 816	atelectasis
+T17	Medical-Assertion 819 821	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 822 838	pleural effusion
+T19	Medical-Assertion 895 897	No
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 898 916;918 922	radiopaque foreign body
+T21	Medical-Problem 946 982	New moderate-sized left pneumothorax
+E15	Medical-Problem:T21
+T22	Medical-Assertion 983 1015	without radiographic evidence of
+A7	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1017 1024	tension
+T24	Medical-Problem 1033 1060	Diffusely increased opacity
+T25	Medical-Anatomy 1068 1077	left lung
+T26	Medical-Assertion 1139 1152	may represent
+A8	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1153 1181	bronchoalveolar lavage fluid
+T28	Medical-Problem 1186 1212	post-procedural hemorrhage
+T29	Lesion-Size 1221 1226	Large
+T30	Lesion-Anatomy 1227 1237	left hilar
+T31	Lesion-Description 1238 1242	mass
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T9
+E9	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T13
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E12	Medical-Problem:T16 has-Medical-Anatomy:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T23 has-Medical-Assertion:T22
+E17	Medical-Problem:T24 has-Medical-Anatomy:T25
+E19	Medical-Problem:T27 has-Medical-Anatomy:T25 has-Medical-Assertion:T26
+E20	Medical-Problem:T28 has-Medical-Anatomy:T25 has-Medical-Assertion:T26
+E23	Lesion-Description:T31 has-Lesion-Size-Present:T29 has-Lesion-Anatomy:T30

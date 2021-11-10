@@ -1,0 +1,52 @@
+T1	Medical-Problem 38 65	Large left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 98 108;110 120	underlying  pneumonia
+T3	Medical-Assertion 121 139	cannot be excluded
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 142 163	Minimal opacification
+T5	Medical-Anatomy 171 181	right base
+T6	Medical-Assertion 198 204	likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 205 216	atelectasis
+T8	Medical-Assertion 228 230	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 231 243	pneumothorax
+T10	Medical-Problem 286 313	Large left pleural effusion
+E7	Medical-Problem:T10
+T11	Medical-Problem 346 356;358 368	underlying  pneumonia
+T12	Medical-Assertion 369 387	cannot be excluded
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 398 411	opacification
+T14	Medical-Anatomy 419 429	right base
+T15	Medical-Assertion 446 452	likely
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 453 464	atelectasis
+T17	Medical-Assertion 476 478	no
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 479 491	pneumothorax
+T19	Medical-Problem 777 804	large left pleural effusion
+E13	Medical-Problem:T19
+T20	Medical-Problem 894 903;905 925	worsening adjacent atelectasis
+T21	Medical-Problem 933 946	consolidation
+T22	Medical-Anatomy 954 963	left lung
+T23	Medical-Problem 967 977;979 1012	Associated rightward shift cardiomediastinal
+E17	Medical-Problem:T23
+T24	Medical-Problem 1049 1056;1058 1069	basilar atelectasis
+E18	Medical-Problem:T24
+T25	Medical-Assertion 1114 1125	no evidence
+A7	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1131 1136;1138 1160	right pleural effusion.Known
+T27	Lesion-Anatomy 1192 1200	thoracic
+T28	Lesion-Description 1201 1211	lymph node
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T12
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E11	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E12	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T20 has-Medical-Anatomy:T22
+E15	Medical-Problem:T21 has-Medical-Anatomy:T22
+E19	Medical-Problem:T26 has-Medical-Assertion:T25
+E21	Lesion-Description:T28 has-Lesion-Anatomy:T27

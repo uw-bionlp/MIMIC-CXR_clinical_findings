@@ -1,0 +1,21 @@
+T1	Medical-Problem 385 402;404 416	Small medial left pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 424 441	pneumomediastinum
+E2	Medical-Problem:T2
+T3	Medical-Problem 453 475	Subcutaneous emphysema
+T4	Medical-Anatomy 498 530	left neck and lateral chest wall
+T5	Medical-Problem 535 548	Opacification
+T6	Medical-Anatomy 556 577	base of the left lung
+T7	Medical-Assertion 581 589	probably
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 590 601	atelectasis
+T9	Medical-Problem 610 624	small effusion
+T10	Medical-Assertion 625 633	could be
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 651 670	Vascular deficiency
+T12	Medical-Anatomy 678 694	right lower lung
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12

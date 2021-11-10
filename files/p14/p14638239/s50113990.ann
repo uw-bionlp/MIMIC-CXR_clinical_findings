@@ -1,0 +1,23 @@
+T1	Medical-Assertion 63 65	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 66 95	acute cardiopulmonary process
+T3	Medical-Problem 530 534;536 559	Mild increased opacification
+T4	Medical-Anatomy 567 582	right lung base
+T5	Medical-Assertion 583 591	could be
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 592 608	early aspiration
+T7	Medical-Problem 613 634	just mild atelectasis
+T8	Medical-Problem 637 660	Borderline cardiomegaly
+E6	Medical-Problem:T8
+T9	Medical-Assertion 673 675	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 676 685;687 692	pulmonary edema
+T11	Medical-Assertion 695 697	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 698 714	pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

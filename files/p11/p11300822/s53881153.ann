@@ -1,0 +1,34 @@
+T1	Medical-Problem 190 194;196 206	mild tortuosity
+T2	Medical-Anatomy 214 230	descending aorta
+T3	Medical-Assertion 242 244	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 245 261	pleural effusion
+T5	Medical-Problem 266 278	pneumothorax
+T6	Medical-Problem 281 295	Hyperinflation
+E5	Medical-Problem:T6
+T7	Medical-Problem 300 324	flattened hemidiaphragms
+E6	Medical-Problem:T7
+T8	Medical-Assertion 325 342;344 346	may be indicative of
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 349 374	chronic pulmonary process
+T10	Lesion-Size 379 383	5 mm
+T11	Lesion-Description 384 391	density
+T12	Lesion-Anatomy 407 417;419 423	left lower lung
+T13	Lesion-Size-Trend 425 431	stable
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Lesion-Assertion 458 466	probably
+A4	Lesion-AssertionValue T14 possible
+T15	Lesion-Characteristic 469 478	calcified
+T16	Lesion-Description 479 488	granuloma
+T17	Medical-Problem 550 570;572 580	old right clavicular fracture
+E13	Medical-Problem:T17
+T18	Medical-Assertion 598 600	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 601 634	acute cardiopulmonary abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T13
+E12	Lesion-Description:T16 has-Lesion-Assertion:T14 has-Lesion-Characteristic:T15
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

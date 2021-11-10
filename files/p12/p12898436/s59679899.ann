@@ -1,0 +1,34 @@
+T1	Medical-Problem 218 227;229 242	lungs are hyperinflated
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 247 256	calcified
+T3	Lesion-Description 257 263	nodule
+T4	Lesion-Anatomy 271 287	right upper lobe
+T5	Lesion-Characteristic 305 336	possibly surrounded by a cavity
+T6	Medical-Assertion 343 360	likely represents
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 361 377;379 401	sequela of prior tuberculosis infection
+T8	Medical-Assertion 414 416	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 417 447	definite signs of reactivation
+T10	Medical-Assertion 451 453	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 455 474	focal consolidation
+T12	Medical-Problem 476 492	pleural effusion
+T13	Medical-Problem 496 508	pneumothorax
+T14	Medical-Assertion 612 631	likely representing
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 632 661	prior granulomatous infection
+T16	Medical-Anatomy 669 674;676 686	right upper lobe
+T17	Medical-Assertion 687 710	without strong evidence
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 714 736	reactivation infection
+T19	Medical-Problem 885 889	COPD
+E14	Medical-Problem:T19
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T8 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

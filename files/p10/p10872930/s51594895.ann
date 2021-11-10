@@ -1,0 +1,29 @@
+T1	Medical-Assertion 437 448	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 453 465	pneumothorax
+T3	Medical-Problem 528 531;533 545	Low lung volumes
+E2	Medical-Problem:T3
+T4	Medical-Problem 613 630	mild cardiomegaly
+E3	Medical-Problem:T4
+T5	Medical-Problem 633 653	Retrocardiac opacity
+E4	Medical-Problem:T5
+T6	Medical-Assertion 670 672	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 673 678;680 693	large consolidation
+T8	Medical-Anatomy 709 719	lung bases
+T9	Medical-Assertion 728 730	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 731 753	large pleural effusion
+T11	Medical-Problem 767 793	severe degenerative change
+T12	Medical-Anatomy 801 820	left shoulder joint
+T13	Medical-Anatomy 830 834	left
+T14	Medical-Problem 870 905	flattening of the adjacent acromion
+T15	Medical-Assertion 959 961	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 962 974	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

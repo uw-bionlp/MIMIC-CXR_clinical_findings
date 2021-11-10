@@ -1,0 +1,21 @@
+T1	Medical-Problem 232 243	obscuration
+T2	Medical-Anatomy 251 262;264 270	right heart border
+T3	Medical-Problem 278 299	thin wedge of opacity
+T4	Medical-Anatomy 307 314	lateral
+T5	Medical-Problem 331 336;338 361	right middle lobe atelectasis
+T6	Medical-Assertion 454 456	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 457 482	acute osseous abnormality
+T8	Medical-Anatomy 511 516	Right
+T9	Medical-Problem 529 536	opacity
+E8	Medical-Problem:T9
+T10	Medical-Problem 553 564	atelectasis
+T11	Medical-Problem 577 586;588 597	component infection
+T12	Medical-Assertion 601 609	possible
+A2	Medical-AssertionValue T12 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T12

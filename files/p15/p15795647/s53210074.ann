@@ -1,0 +1,22 @@
+T1	Medical-Problem 572 614	interval increase in an elliptical opacity
+T2	Medical-Anatomy 622 626	apex
+T3	Medical-Assertion 633 639;641 651	likely represents
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 652 678	loculated effusion/empyema
+T5	Medical-Problem 695 713	increasing opacity
+T6	Medical-Anatomy 722 745	left mid and lower lung
+T7	Medical-Assertion 752 767	could represent
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 768 796;798 803	reaccumulation of additional fluid
+T9	Medical-Problem 805 825	developing pneumonia
+T10	Medical-Problem 829 839	hemorrhage
+T11	Medical-Assertion 916 918	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 919 931	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

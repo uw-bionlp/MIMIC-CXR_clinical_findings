@@ -1,0 +1,42 @@
+T1	Medical-Anatomy 199 215	right lower lobe
+T2	Medical-Problem 260 269	pneumonia
+T3	Medical-Problem 282 328	extensive right upper lobe parenchymal changes
+E3	Medical-Problem:T3
+T4	Lesion-Characteristic 343 350	diffuse
+T5	Lesion-Characteristic 351 360	reticular
+T6	Lesion-Description 361 368	nodular
+E6	Lesion-Description:T6
+T7	Lesion-Description 369 378	opacities
+T8	Lesion-Anatomy 392 408	right upper lobe
+T9	Lesion-Anatomy 425 441	right lower lobe
+T10	Medical-Problem 514 546	paraseptal emphysematous changes
+E10	Medical-Problem:T10
+T11	Medical-Anatomy 595 605	right lung
+T12	Medical-Problem 632 643;645 675	chronic but worsening interstitial process
+T13	Medical-Problem 681 703	superimposed pneumonia
+T14	Medical-Assertion 744 746	no
+A1	Medical-AssertionValue T14 absent
+T15	Medical-Problem 747 763	pleural effusion
+T16	Medical-Problem 767 779	pneumothorax
+T17	Medical-Problem 785 814	old right clavicular fracture
+E16	Medical-Problem:T17
+T18	Medical-Anatomy 840 856	Right lower lobe
+T19	Medical-Problem 857 870	consolidation
+T20	Medical-Problem 887 896	pneumonia
+T21	Lesion-Characteristic 914 921	diffuse
+T22	Lesion-Anatomy 922 932	right lung
+T23	Lesion-Characteristic 933 942	reticular
+T24	Lesion-Description 943 960	nodular opacities
+T25	Medical-Assertion 965 974;976 979	worrisome for
+A2	Medical-AssertionValue T25 possible
+T26	Medical-Problem 983 1029	overall worsening chronic interstitial process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E12	Medical-Problem:T12 has-Medical-Anatomy:T11
+E13	Medical-Problem:T13 has-Medical-Anatomy:T11
+E14	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Medical-Problem:T16 has-Medical-Assertion:T14
+E18	Medical-Problem:T19 has-Medical-Anatomy:T18
+E19	Medical-Problem:T20 has-Medical-Anatomy:T18
+E23	Lesion-Description:T24 has-Lesion-Characteristic:T21 has-Lesion-Anatomy:T22 has-Lesion-Characteristic:T23
+E24	Medical-Problem:T26 has-Medical-Anatomy:T18 has-Medical-Assertion:T25

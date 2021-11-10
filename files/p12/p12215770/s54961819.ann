@@ -1,0 +1,22 @@
+T1	Medical-Problem 284 317	Small bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Assertion 373 375	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 376 406	pulmonary vascular engorgement
+T4	Lesion-Assertion 422 432	suggestion
+A2	Lesion-AssertionValue T4 possible
+T5	Lesion-Size 439 444	small
+T6	Lesion-Description 445 451	lesion
+T7	Lesion-Anatomy 459 512;514 524	right lung projecting over the anterior aspect of the fourth rib
+T8	Medical-Problem 527 549	Previous consolidation
+T9	Medical-Anatomy 557 588;590 594	medial aspect of the right lung base
+T10	Medical-Problem 694 727	new small region of consolidation
+T11	Medical-Anatomy 735 746;748 758	middle lobe or lingula
+T12	Medical-Problem 798 815	minimal infection
+E10	Medical-Problem:T12
+T13	Medical-Problem 819 839	return of vasculitis
+E11	Medical-Problem:T13
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11

@@ -1,0 +1,24 @@
+T1	Medical-Problem 34 74	Right basilar and retrocardiac opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 75 91	may be secondary
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 95 106	atelectasis
+T4	Medical-Problem 120 151	superimposed infectious process
+T5	Medical-Assertion 152 170	cannot be excluded
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Anatomy 579 611	right lower paratracheal station
+T7	Medical-Assertion 612 617;619 621	could be
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 622 641	dilated azygos vein
+T9	Medical-Problem 653 674	convex upward contour
+T10	Medical-Anatomy 682 696;698 740	lateral aspect of the right diaphragmatic pleural surface
+T11	Lesion-Size 760 765	small
+T12	Lesion-Description 766 770	mass
+T13	Medical-Problem 775 782	abscess
+T14	Medical-Anatomy 790 797	base of
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Lesion-Description:T12 has-Lesion-Size-Present:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14

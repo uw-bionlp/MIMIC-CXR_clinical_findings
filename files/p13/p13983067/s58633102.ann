@@ -1,0 +1,32 @@
+T1	Medical-Problem 482 510	Small right pleural effusion
+T2	Medical-Assertion 511 525	may be present
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Assertion 540 542	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 543 555	pneumothorax
+T5	Medical-Problem 560 581	left pleural effusion
+T6	Medical-Problem 584 609	Substantial consolidation
+T7	Medical-Anatomy 626 637;639 665	right lower lobe particularly medially
+T8	Medical-Problem 672 676	lobe
+E6	Medical-Problem:T8
+T9	Medical-Problem 684 693	collapsed
+E7	Medical-Problem:T9
+T10	Medical-Anatomy 696 700	Hila
+T11	Medical-Problem 705 717;719 727	persistently enlarged
+T12	Medical-Assertion 768 785	presumably due to
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 786 795;797 826	decreased pulmonary vascular resistance
+T14	Medical-Problem 830 849	left heart pressure
+T15	Medical-Assertion 948 958	presumably
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 976 994	clearing infection
+T17	Medical-Problem 999 1025;1027 1032	asymmetrically distributed edema
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T10 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15

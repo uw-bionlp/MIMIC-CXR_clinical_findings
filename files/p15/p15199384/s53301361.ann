@@ -1,0 +1,22 @@
+T1	Medical-Assertion 482 484	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 485 497	pneumothorax
+T3	Medical-Assertion 500 502	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 503 510;512 520	pleural effusion
+T5	Medical-Problem 523 549	Mild bibasilar atelectasis
+E3	Medical-Problem:T5
+T6	Medical-Anatomy 552 569	Pulmonary vessels
+T7	Medical-Problem 574 582;584 593	slightly prominent
+T8	Medical-Assertion 600 624	could be compatible with
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 625 645	mild volume overload
+T10	Medical-Anatomy 858 875	pulmonary vessels
+T11	Medical-Problem 880 898	slightly prominent
+T12	Medical-Problem 924 928;930 945	mild volume overload
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10

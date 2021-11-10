@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 33 49	Right lower lobe
+T2	Medical-Problem 50 57	opacity
+T3	Medical-Problem 75 84	pneumonia
+T4	Medical-Problem 593 618	new platelike atelectasis
+T5	Medical-Anatomy 627 647	right mid lung field
+T6	Medical-Problem 659 690;692 701	new right perihilar and basilar opacities
+E6	Medical-Problem:T6
+T7	Medical-Assertion 751 753	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 754 770	pleural effusion
+T9	Medical-Problem 774 786	pneumothorax
+T10	Medical-Problem 820 859	Increased caliber of pulmonary arteries
+E9	Medical-Problem:T10
+T11	Medical-Assertion 860 867	implies
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 868 883	volume overload
+T13	Medical-Problem 904 924	Increasing opacities
+T14	Medical-Anatomy 932 964	right perihilar and basilar lung
+T15	Medical-Assertion 965 979	concerning for
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 981 990	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

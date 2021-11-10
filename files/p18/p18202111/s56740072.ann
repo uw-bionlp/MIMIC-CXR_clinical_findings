@@ -1,0 +1,34 @@
+T1	Lesion-Description 350 357	Nodular
+T2	Medical-Problem 358 367	opacities
+T3	Medical-Anatomy 379 386	lingula
+T4	Medical-Anatomy 391 401;403 407	left lower lobe
+T5	Lesion-Size-Trend 412 433	similar in appearance
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Problem 531 545	patchy opacity
+T7	Medical-Anatomy 558 572	left lung base
+T8	Medical-Assertion 623 634	may reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 653 664	atelectasis
+T10	Medical-Problem 672 680	scarring
+T11	Medical-Assertion 682 684	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 685 708	new focal consolidation
+T13	Medical-Problem 711 727	pleural effusion
+T14	Medical-Problem 731 743	pneumothorax
+T15	Lesion-Size-Trend 845 863	similar appearance
+A4	Lesion-Size-TrendValue T15 no-change
+T16	Lesion-Anatomy 867 879	left basilar
+T17	Lesion-Description 891 898	nodules
+T18	Lesion-Assertion 900 902	No
+A5	Lesion-AssertionValue T18 absent
+T19	Medical-Problem 903 912;914 927	new focal consolidation
+E14	Medical-Problem:T19
+E1	Lesion-Description:T1 has-Lesion-Size-Trend:T5
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T11
+E13	Lesion-Description:T17 has-Lesion-Size-Trend:T15 has-Lesion-Anatomy:T16

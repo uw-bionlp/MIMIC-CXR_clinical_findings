@@ -1,0 +1,40 @@
+T1	Medical-Problem 456 474	airspace opacities
+T2	Medical-Anatomy 475 484	obscuring
+T3	Medical-Anatomy 489 506	left heart border
+T4	Medical-Assertion 507 520	may represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 521 530;532 543	worsening atelectasis
+T6	Medical-Problem 549 558	infection
+T7	Medical-Problem 562 572	aspiration
+T8	Medical-Assertion 577 589	not excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 592 605;607 618	Right basilar atelectasis
+E7	Medical-Problem:T9
+T10	Medical-Problem 635 655	Mild pulmonary edema
+E8	Medical-Problem:T10
+T11	Medical-Problem 686 708	Old left rib fractures
+E9	Medical-Problem:T11
+T12	Medical-Problem 726 746	Minimal irregularity
+T13	Medical-Anatomy 754 762;764 795	inferior glenoid rim of the left scapula
+T14	Medical-Problem 799 812	calcification
+T15	Medical-Problem 942 962	Mild pulmonary edema
+E13	Medical-Problem:T15
+T16	Medical-Problem 998 1011	New opacities
+T17	Medical-Anatomy 1019 1026	lingula
+T18	Medical-Assertion 1027 1038	may reflect
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1039 1048;1050 1061	worsening atelectasis
+T20	Medical-Problem 1066 1076	aspiration
+T21	Medical-Problem 1080 1089	infection
+T22	Medical-Assertion 1094 1106	not excluded
+A4	Medical-AssertionValue T22 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T22
+E18	Medical-Problem:T21 has-Medical-Anatomy:T17 has-Medical-Assertion:T22

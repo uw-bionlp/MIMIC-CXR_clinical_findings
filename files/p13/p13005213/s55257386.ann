@@ -1,0 +1,29 @@
+T1	Medical-Problem 759 764;766 779	large opacification
+T2	Medical-Anatomy 787 801	left lung base
+T3	Medical-Problem 807 843;845 853	mild shift of mediastinal structures leftward
+E3	Medical-Problem:T3
+T4	Medical-Problem 867 891	component of volume loss
+T5	Medical-Assertion 957 959	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 960 978	large pneumothorax
+T7	Medical-Problem 1098 1115	Improved aeration
+T8	Medical-Anatomy 1123 1138	left hemithorax
+T9	Medical-Assertion 1139 1149	suggesting
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 1150 1170	improved atelectasis
+T11	Medical-Problem 1177 1213	persistent significant opacification
+T12	Medical-Anatomy 1221 1235	left lung base
+T13	Medical-Assertion 1238 1246;1248 1258	Possible etiologies
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1267 1286	underlying effusion
+T15	Medical-Problem 1291 1302	atelectasis
+T16	Medical-Problem 1310 1319	infection
+E13	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Anatomy:T12
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

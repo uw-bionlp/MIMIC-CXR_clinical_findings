@@ -1,0 +1,31 @@
+T1	Medical-Assertion 131 139	Question
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 141 153	cardiomegaly
+T3	Medical-Problem 157 166	pneumonia
+T4	Medical-Anatomy 264 269	lungs
+T5	Medical-Assertion 274 279	clear
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 283 302	focal consolidation
+T7	Medical-Problem 324 334;336 364	small, new right-sided pleural effusion
+E5	Medical-Problem:T7
+T8	Medical-Problem 387 413;415 425	enlargement of the cardiac silhouette
+E6	Medical-Problem:T8
+T9	Lesion-Assertion 439 449	suggestion
+A3	Lesion-AssertionValue T9 possible
+T10	Lesion-Anatomy 455 467	right apical
+T11	Lesion-Description 468 474	nodule
+T12	Lesion-Assertion 485 493;495 507	unlikely to represent
+A4	Lesion-AssertionValue T12 possible
+T13	Lesion-Description 510 521	bone island
+T14	Medical-Problem 655 693	New small right-sided pleural effusion
+E10	Medical-Problem:T14
+T15	Medical-Problem 700 746	Interval enlargement of the cardiac silhouette
+E11	Medical-Problem:T15
+T16	Lesion-Anatomy 753 765	Right apical
+T17	Lesion-Description 766 772	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Anatomy:T10
+E9	Lesion-Description:T13 has-Lesion-Assertion:T12
+E13	Lesion-Description:T17 has-Lesion-Anatomy:T16

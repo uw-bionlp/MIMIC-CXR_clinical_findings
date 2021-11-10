@@ -1,0 +1,51 @@
+T1	Medical-Problem 195 214	severe cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Assertion 264 280	without evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 284 303	vascular congestion
+T4	Medical-Problem 307 325	interstitial edema
+T5	Lesion-Anatomy 329 338	Bilateral
+T6	Lesion-Characteristic 339 348	scattered
+T7	Lesion-Description 349 366	nodular opacities
+T8	Medical-Problem 379 392	Mild blunting
+T9	Medical-Anatomy 401 420	costophrenic angles
+T10	Medical-Assertion 424 437	likely due to
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 438 456	pleural thickening
+T12	Medical-Assertion 468 470	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 471 478;480 488	pleural effusion
+T14	Medical-Problem 492 504	pneumothorax
+T15	Medical-Problem 507 524	Severe osteopenia
+E12	Medical-Problem:T15
+T16	Medical-Problem 539 550;552 561	compression fractures
+T17	Medical-Anatomy 565 599	multiple thoracic vertebral bodies
+T18	Medical-Problem 605 625	significant kyphosis
+T19	Medical-Anatomy 634 648	thoracic spine
+T20	Medical-Problem 668 687	Severe cardiomegaly
+E17	Medical-Problem:T20
+T21	Medical-Assertion 688 695	without
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 696 711	pulmonary edema
+T23	Medical-Assertion 714 731	No clear evidence
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 735 744	pneumonia
+T25	Lesion-Count 748 756	Multiple
+T26	Lesion-Characteristic 757 766	scattered
+T27	Lesion-Description 767 784	nodular opacities
+T28	Medical-Assertion 791 804	may represent
+A6	Medical-AssertionValue T28 possible
+T29	Medical-Problem 805 825;827 837	overlapping vascular structures
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E22	Lesion-Description:T27 has-Lesion-Count:T25 has-Lesion-Characteristic:T26
+E23	Medical-Problem:T29 has-Medical-Assertion:T28

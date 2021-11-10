@@ -1,0 +1,35 @@
+T1	Medical-Problem 279 313	Heart size remains mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 321 326	aorta
+T3	Medical-Problem 330 345	mildly tortuous
+T4	Medical-Problem 350 359	calcified
+T5	Medical-Problem 362 389;391 401	Crowding of bronchovascular structures
+E5	Medical-Problem:T5
+T6	Medical-Problem 454 463;465 481	Increased patchy opacities
+T7	Medical-Anatomy 503 535	lung bases, more so on the right
+T8	Medical-Assertion 538 540	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 542 558	pleural effusion
+T10	Medical-Problem 562 574	pneumothorax
+T11	Medical-Problem 598 619;621 628	moderate degenerative changes
+E10	Medical-Problem:T11
+T12	Medical-Anatomy 761 768;770 780	osseous structures
+T13	Medical-Problem 785 808	diffusely demineralized
+T14	Medical-Problem 829 865	Increased patchy bibasilar opacities
+E13	Medical-Problem:T14
+T15	Medical-Assertion 900 903;905 912	may reflect
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 913 934	worsening atelectasis
+T17	Medical-Problem 978 988	aspiration
+T18	Medical-Problem 992 1001	infection
+T19	Medical-Assertion 1002 1020	cannot be excluded
+A3	Medical-AssertionValue T19 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E12	Medical-Problem:T13 has-Medical-Anatomy:T12
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T19
+E16	Medical-Problem:T18 has-Medical-Assertion:T19

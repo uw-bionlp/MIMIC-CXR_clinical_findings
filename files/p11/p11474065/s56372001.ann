@@ -1,0 +1,22 @@
+T1	Medical-Problem 178 191	opacification
+T2	Medical-Anatomy 199 214	right lung base
+T3	Medical-Problem 255 290	slight worsening of pulmonary edema
+T4	Medical-Problem 393 417	right pleural thickening
+E4	Medical-Problem:T4
+T5	Medical-Problem 421 436	loculated fluid
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 501 529	mid portion of the left lung
+T7	Medical-Problem 535 565	flame-shaped region of opacity
+T8	Medical-Assertion 572 580	could be
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 584 599	early pneumonia
+T10	Medical-Problem 608 642;644 656	left pleural effusion and moderate cardiomegaly
+E9	Medical-Problem:T10
+T11	Medical-Assertion 670 672	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 673 685	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

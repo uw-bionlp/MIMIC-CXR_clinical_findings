@@ -1,0 +1,14 @@
+T1	Medical-Anatomy 382 399	right lower chest
+T2	Medical-Problem 422 441;443 465	persistent moderate right pleural effusion
+T3	Medical-Problem 470 487	basal atelectasis
+T4	Lesion-Description 498 502	mass
+T5	Lesion-Anatomy 531 542	right hilus
+T6	Medical-Problem 556 572	air bronchograms
+E6	Medical-Problem:T6
+T7	Medical-Assertion 573 581	could be
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 582 593	atelectasis
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7

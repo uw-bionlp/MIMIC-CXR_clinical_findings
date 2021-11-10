@@ -1,0 +1,24 @@
+T1	Medical-Assertion 416 418	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 419 431	pneumothorax
+T3	Medical-Problem 436 454	other complication
+T4	Medical-Problem 496 506;508 529	Increasing parenchymal opacities
+T5	Medical-Anatomy 537 551	left lung base
+T6	Medical-Assertion 553 567	suspicious for
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 586 596	aspiration
+T8	Medical-Problem 617 626	pneumonia
+T9	Medical-Problem 629 646	Small atelectasis
+T10	Medical-Anatomy 654 664;666 671	right lung bases
+T11	Medical-Problem 700 741	Borderline size of the cardiac silhouette
+E9	Medical-Problem:T11
+T12	Medical-Assertion 743 750	without
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 751 766	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

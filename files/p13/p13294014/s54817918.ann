@@ -1,0 +1,51 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 51	focal consolidation
+T3	Medical-Problem 67 89	large pleural effusion
+T4	Medical-Problem 96 106	Prominence
+T5	Medical-Anatomy 114 129	ascending aorta
+T6	Medical-Problem 131 168	ascending aortic dilatation/ aneurysm
+T7	Medical-Assertion 169 172;174 183	not  excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 583 605	calcified and unfolded
+E6	Medical-Problem:T8
+T9	Medical-Problem 608 621	Prominence of
+T10	Medical-Anatomy 626 641	ascending aorta
+T11	Medical-Problem 655 681	underlying aortic aneurysm
+T12	Medical-Assertion 685 697	not excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 784 786	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 787 792	focal
+E10	Medical-Problem:T14
+T15	Medical-Problem 794 807	consolidation
+T16	Medical-Assertion 827 829	no
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 830 846	pleural effusion
+T18	Medical-Problem 850 862	pneumothorax
+T19	Lesion-Assertion 942 944	No
+A6	Lesion-AssertionValue T19 absent
+T20	Lesion-Characteristic 945 950	focal
+E14	Lesion-Characteristic:T20
+T21	Medical-Problem 951 964	consolidation
+T22	Medical-Assertion 965 967	or
+A7	Medical-AssertionValue T22 absent
+T23	Medical-Problem 980 1002	large pleural effusion
+T24	Medical-Problem 1007 1020	Prominence of
+T25	Medical-Anatomy 1025 1040	ascending aorta
+T26	Medical-Problem 1042 1079	ascending aortic dilatation/ aneurysm
+T27	Medical-Assertion 1080 1083;1085 1093	not excluded
+A8	Medical-AssertionValue T27 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Assertion:T16
+E15	Medical-Problem:T21 has-Medical-Assertion:T22
+E16	Medical-Problem:T23 has-Medical-Assertion:T22
+E17	Medical-Problem:T24 has-Medical-Anatomy:T25
+E19	Medical-Problem:T26 has-Medical-Assertion:T27

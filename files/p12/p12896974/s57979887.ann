@@ -1,0 +1,19 @@
+T1	Medical-Assertion 233 235	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 236 253	pneumomediastinum
+T3	Medical-Problem 281 304	increased lung markings
+T4	Medical-Anatomy 313 318	bases
+T5	Medical-Assertion 323 325	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 326 345	definite infiltrate
+T7	Lesion-Count 358 366	multiple
+T8	Lesion-Size 367 372	small
+T9	Lesion-Description 373 390	nodular opacities
+T10	Lesion-Characteristic 401 411	very dense
+T11	Lesion-Anatomy 427 467;469 473	left upper lobe greater than right upper lobe
+T12	Medical-Assertion 479 492	may represent
+A3	Medical-AssertionValue T12 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Count:T7 has-Lesion-Size-Present:T8 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11

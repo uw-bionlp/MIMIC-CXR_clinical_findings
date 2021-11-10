@@ -1,0 +1,17 @@
+T1	Lesion-Description 350 356	masses
+E1	Lesion-Description:T1
+T2	Medical-Problem 361 386	consolidation most severe
+T3	Medical-Anatomy 387 412;414 440	throughout the right lung and in the left lower lung
+T4	Medical-Problem 469 487;489 506	Heart is enlarged, probably severely
+E4	Medical-Problem:T4
+T5	Medical-Problem 534 551	Pleural effusions
+T6	Medical-Assertion 552 561;563 571	cannot be excluded
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 580 589	not large
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Assertion 591 593	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 594 606	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

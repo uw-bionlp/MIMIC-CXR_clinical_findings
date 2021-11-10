@@ -1,0 +1,27 @@
+T1	Medical-Assertion 350 352	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 353 365	pneumothorax
+T3	Medical-Problem 369 376;378 386	pleural effusion
+T4	Medical-Assertion 423 425	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 426 448	displaced rib fracture
+T6	Lesion-Count 485 492	several
+T7	Lesion-Size 493 497	tiny
+T8	Lesion-Characteristic 498 507	calcified
+T9	Lesion-Description 508 518	granulomas
+T10	Lesion-Size-Trend 520 526	stable
+A3	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 553 555	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 556 578	displaced rib fracture
+T13	Medical-Problem 661 684;686 695	small non-displaced rib fractures
+E9	Medical-Problem:T13
+T14	Medical-Assertion 836 838	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 839 868	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E7	Lesion-Description:T9 has-Lesion-Count:T6 has-Lesion-Size-Present:T7 has-Lesion-Characteristic:T8 has-Lesion-Size-Trend:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

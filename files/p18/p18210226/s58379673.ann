@@ -1,0 +1,43 @@
+T1	Medical-Problem 77 94	New focal opacity
+E1	Medical-Problem:T1
+T2	Lesion-Count 154 157	two
+T3	Lesion-Description 158 165	nodules
+T4	Lesion-Anatomy 173 196	left upper and mid lung
+T5	Lesion-Description 258 264	nodule
+T6	Lesion-Size 274 279	12 mm
+T7	Lesion-Description 298 304	nodule
+T8	Lesion-Size 314 319	13 mm
+T9	Medical-Problem 334 341	opacity
+T10	Medical-Anatomy 349 358	left base
+T11	Medical-Problem 364 374;376 387	associated volume loss
+T12	Medical-Assertion 394 409	could represent
+A1	Medical-AssertionValue T12 possible
+T13	Medical-Problem 410 421	atelectasis
+T14	Medical-Problem 425 438	consolidation
+T15	Medical-Assertion 450 452	no
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 454 466	pneumothorax
+T17	Medical-Problem 470 486	pleural effusion
+T18	Lesion-Count 554 557	Two
+T19	Lesion-Anatomy 558 567	left lung
+T20	Lesion-Description 568 575	nodules
+T21	Lesion-Assertion 576 590	concerning for
+A3	Lesion-AssertionValue T21 possible
+T22	Medical-Problem 617 637	Left basilar opacity
+E19	Medical-Problem:T22
+T23	Medical-Assertion 638 653	could represent
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 654 665	atelectasis
+T25	Medical-Problem 669 682	consolidation
+E3	Lesion-Description:T3 has-Lesion-Count:T2 has-Lesion-Anatomy:T4
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T6
+E7	Lesion-Description:T7 has-Lesion-Size-Present:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T11 has-Medical-Anatomy:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T12
+E13	Medical-Problem:T14 has-Medical-Anatomy:T10 has-Medical-Assertion:T12
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T15
+E18	Lesion-Description:T20 has-Lesion-Count:T18 has-Lesion-Anatomy:T19 has-Lesion-Assertion:T21
+E20	Medical-Problem:T24 has-Medical-Assertion:T23
+E21	Medical-Problem:T25 has-Medical-Assertion:T23

@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 262 267	aorta
+T2	Medical-Problem 271 286	mildly tortuous
+T3	Medical-Problem 304 322;324 338	diffuse mild mural calcifications
+T4	Medical-Anatomy 345 366	pulmonary vascularity
+T5	Medical-Assertion 370 373	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 374 382	engorged
+T7	Medical-Problem 427 459	minimal linear streaky opacities
+T8	Medical-Anatomy 467 477	lung bases
+T9	Medical-Assertion 479 499	likely reflective of
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 500 511	atelectasis
+T11	Medical-Assertion 514 516	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 517 533	pleural effusion
+T13	Medical-Problem 537 549	pneumothorax
+T14	Medical-Assertion 667 669	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 670 697	acute osseous abnormalities
+T16	Medical-Problem 717 746	Minimal bibasilar atelectasis
+E12	Medical-Problem:T16
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

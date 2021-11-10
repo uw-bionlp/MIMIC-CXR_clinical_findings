@@ -1,0 +1,43 @@
+T1	Medical-Problem 89 106	increased opacity
+T2	Medical-Anatomy 117 126;128 138	posterior lower lung
+T3	Medical-Assertion 196 204;206 212	could be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 213 235	underlying atelectasis
+T5	Medical-Problem 249 278	early/mild infectious process
+T6	Medical-Assertion 283 295	not excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 661 664	low
+E5	Medical-Problem:T7
+T8	Medical-Problem 743 753	prominence
+T9	Medical-Anatomy 761 765	hila
+T10	Lesion-Description 787 802	lymphadenopathy
+E8	Lesion-Description:T10
+T11	Medical-Assertion 845 847	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 848 876	definite focal consolidation
+T13	Medical-Assertion 887 889	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 890 895;897 913	large pleural effusion
+T15	Medical-Problem 917 928	evidence of
+E11	Medical-Problem:T15
+T16	Medical-Problem 929 941	pneumothorax
+T17	Medical-Problem 1040 1061	Persistent prominence
+T18	Medical-Anatomy 1069 1073	hila
+T19	Medical-Assertion 1074 1084;1086 1088	may relate to
+A5	Medical-AssertionValue T19 possible
+T20	Lesion-Description 1089 1104	lymphadenopathy
+E15	Lesion-Description:T20
+T21	Medical-Assertion 1149 1151	No
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1152 1157;1159 1172	focal consolidation
+T23	Medical-Problem 1188 1200	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T23 has-Medical-Assertion:T21

@@ -1,0 +1,51 @@
+T1	Lesion-Count 386 389	Two
+T2	Lesion-Characteristic 390 402	thick-walled
+T3	Lesion-Characteristic 403 411	cavitary
+T4	Lesion-Description 412 419	lesions
+T5	Lesion-Anatomy 427 443	right upper lobe
+T6	Lesion-Characteristic 463 479	less dense walls
+T7	Lesion-Assertion 515 517	No
+A1	Lesion-AssertionValue T7 absent
+T8	Lesion-Size-Trend 518 521	new
+A2	Lesion-Size-TrendValue T8 new
+T9	Lesion-Description 522 528	lesion
+T10	Medical-Problem 545 553	Scarring
+T11	Medical-Problem 558 569	atelectasis
+T12	Medical-Anatomy 577 592	right lung base
+T13	Medical-Problem 624 646	right lung volume loss
+T14	Medical-Problem 648 679	Right apical pleural thickening
+E12	Medical-Problem:T14
+T15	Medical-Problem 685 693	scarring
+E13	Medical-Problem:T15
+T16	Medical-Assertion 713 715	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 716 733	new consolidation
+T18	Lesion-Characteristic 735 743	cavitary
+T19	Lesion-Description 744 750	lesion
+T20	Medical-Problem 752 759;761 769	pleural effusion
+T21	Medical-Problem 774 786	pneumothorax
+T22	Lesion-Size-Trend 904 938;940 949	interval decrease in size and wall thickness
+A4	Lesion-Size-TrendValue T22 decreasing
+T23	Lesion-Count 957 958	2
+T24	Lesion-Characteristic 959 967	cavitary
+T25	Lesion-Description 968 975	lesions
+T26	Lesion-Anatomy 983 999	right upper lobe
+T27	Medical-Assertion 1001 1003	No
+A5	Medical-AssertionValue T27 absent
+T28	Lesion-Size-Trend 1004 1007	new
+A6	Lesion-Size-TrendValue T28 new
+T29	Medical-Problem 1009 1022	consolidation
+T30	Lesion-Characteristic 1026 1034	cavitary
+T31	Lesion-Description 1035 1041	lesion
+E4	Lesion-Description:T4 has-Lesion-Count:T1 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6
+E7	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T12
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Lesion-Description:T19 has-Lesion-Characteristic:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T16
+E18	Medical-Problem:T21 has-Medical-Assertion:T16
+E21	Lesion-Description:T25 has-Lesion-Size-Trend:T22 has-Lesion-Count:T23 has-Lesion-Characteristic:T24 has-Lesion-Anatomy:T26
+E23	Medical-Problem:T29 has-Medical-Assertion:T27
+E25	Lesion-Description:T31 has-Lesion-Size-Trend:T28 has-Lesion-Characteristic:T30

@@ -1,0 +1,19 @@
+T1	Medical-Problem 267 275	Scarring
+T2	Medical-Anatomy 283 292	left apex
+T3	Medical-Problem 345 353	scarring
+E3	Medical-Problem:T3
+T4	Lesion-Description 355 370	nodular opacity
+T5	Lesion-Anatomy 379 389	very lower
+T6	Lesion-Size 460 464	9-mm
+T7	Lesion-Assertion 513 515	no
+A1	Lesion-AssertionValue T7 absent
+T8	Lesion-Description 522 529	nodules
+T9	Lesion-Description 535 541	masses
+T10	Medical-Problem 557 587	Pleural thickening on the left
+E9	Medical-Problem:T10
+T11	Medical-Problem 595 612;614 630	minimal amount of pleural effusion
+E10	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T6
+E7	Lesion-Description:T8 has-Lesion-Assertion:T7
+E8	Lesion-Description:T9 has-Lesion-Assertion:T7

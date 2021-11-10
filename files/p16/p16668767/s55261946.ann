@@ -1,0 +1,28 @@
+T1	Lesion-Anatomy 353 364	left axilla
+T2	Lesion-Description 366 370	mass
+T3	Lesion-Anatomy 451 462	left axilla
+T4	Lesion-Description 464 468	mass
+T5	Medical-Problem 616 639	lung volumes remain low
+E5	Medical-Problem:T5
+T6	Medical-Assertion 651 662	no evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 666 675	pneumonia
+T8	Medical-Problem 678 693	pulmonary edema
+T9	Medical-Problem 697 714	pleural effusions
+T10	Medical-Problem 717 727	Borderline
+E9	Medical-Problem:T10
+T11	Lesion-Assertion 802 813	No evidence
+A2	Lesion-AssertionValue T11 absent
+T12	Lesion-Anatomy 817 822	hilar
+T13	Lesion-Anatomy 827 838	mediastinal
+T14	Lesion-Description 839 854	lymphadenopathy
+T15	Lesion-Characteristic 962 968	subtle
+T16	Lesion-Anatomy 986 997	mediastinal
+T17	Lesion-Description 998 1005	lesions
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E12	Lesion-Description:T14 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T12 has-Lesion-Anatomy:T13
+E15	Lesion-Description:T17 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T16

@@ -1,0 +1,36 @@
+T1	Medical-Problem 217 236	vascular congestion
+T2	Medical-Anatomy 244 265	lungs and mediastinum
+T3	Medical-Assertion 266 278	has resolved
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 322 347	fine granular abnormality
+T5	Medical-Anatomy 355 368	right midlung
+T6	Medical-Anatomy 407 447	superior segment of the right lower lobe
+T7	Medical-Problem 644 649	acute
+E6	Medical-Problem:T7
+T8	Medical-Assertion 666 679	could well be
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 680 712	pneumonia, especially vertically
+T10	Medical-Problem 720 730	aspiration
+T11	Medical-Problem 745 756	Atelectasis
+T12	Medical-Anatomy 764 771	lingula
+T13	Medical-Assertion 772 785	could also be
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 786 798	contributing
+T15	Medical-Problem 827 832	fever
+T16	Medical-Assertion 892 894	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 895 914	pleural abnormality
+T18	Medical-Problem 944 970	right lower lobe pneumonia
+E14	Medical-Problem:T18
+T19	Medical-Assertion 973 975	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 988 1010	cardiac decompensation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

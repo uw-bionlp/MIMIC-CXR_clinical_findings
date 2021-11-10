@@ -1,0 +1,33 @@
+T1	Medical-Assertion 205 215	resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 219 223	pna?
+T3	Medical-Problem 265 274	lungs are
+E2	Medical-Problem:T3
+T4	Medical-Problem 275 289	hyper inflated
+E3	Medical-Problem:T4
+T5	Lesion-Description 295 310	nodular density
+T6	Lesion-Anatomy 318 333	left upper lobe
+T7	Medical-Assertion 334 337;339 346	has cleared
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 348 366	Increased markings
+T9	Medical-Anatomy 399 408	left base
+T10	Medical-Problem 432 452	left basilar disease
+E8	Medical-Problem:T10
+T11	Medical-Assertion 503 505	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 506 522	pleural effusion
+T13	Lesion-Description 645 660	nodular density
+T14	Lesion-Anatomy 668 683	left upper lobe
+T15	Medical-Problem 714 717;719 770	new left infrahilar left lower lobe parenchymal disease
+E12	Medical-Problem:T15
+T16	Medical-Assertion 771 777	likely
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 778 787	pneumonia
+T18	Medical-Problem 792 803	atelectasis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Lesion-Description:T13 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16

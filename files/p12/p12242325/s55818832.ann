@@ -1,0 +1,23 @@
+T1	Medical-Problem 267 276;278 299	bilateral parenchymal opacities
+T2	Medical-Problem 305 329	most dense consolidation
+T3	Medical-Anatomy 337 351	left lung base
+T4	Medical-Anatomy 357 370	left mid lung
+T5	Medical-Anatomy 392 407	right lung base
+T6	Medical-Assertion 415 421	may be
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 424 433;435 459	component of left pleural effusion
+T8	Medical-Problem 608 654	parenchymal opacities, left greater than right
+E7	Medical-Problem:T8
+T9	Medical-Assertion 656 671	could represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 673 704	multifocal infection/aspiration
+T11	Medical-Problem 706 711	edema
+T12	Medical-Problem 715 725	hemorrhage
+T13	Medical-Problem 781 802	left pleural effusion
+E11	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9

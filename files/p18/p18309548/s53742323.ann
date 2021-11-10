@@ -1,0 +1,26 @@
+T1	Medical-Problem 216 242	mild left base atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Assertion 243 250	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 251 279	definite focal consolidation
+T4	Medical-Assertion 282 284	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 286 302	pleural effusion
+T6	Medical-Problem 306 318	pneumothorax
+T7	Medical-Problem 456 486	Punctate rounded calcification
+T8	Medical-Anatomy 508 560	left upper lung over the posterior left lung 5th rib
+T9	Lesion-Assertion 561 574	may represent
+A3	Lesion-AssertionValue T9 possible
+T10	Lesion-Characteristic 577 586	calcified
+T11	Lesion-Description 588 597	granuloma
+T12	Lesion-Description 603 614	bone island
+T13	Medical-Assertion 635 637	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 638 667	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10
+E9	Lesion-Description:T12 has-Lesion-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

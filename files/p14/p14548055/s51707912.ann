@@ -1,0 +1,45 @@
+T1	Medical-Problem 206 235	pulmonary vascular congestion
+T2	Medical-Problem 240 272	bilateral interstitial opacities
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 274 278;280 334	most pronounced in the periphery of the mid and lower lungs
+T4	Medical-Problem 362 401	more confluent poorly defined opacities
+T5	Medical-Anatomy 409 434;436 441	left upper and left lower lobes
+T6	Lesion-Anatomy 447 462	left upper lobe
+T7	Lesion-Description 463 472	opacities
+T8	Lesion-Characteristic 480 501	nodular configuration
+T9	Medical-Problem 504 509;511 528	Small pleural effusions
+E9	Medical-Problem:T9
+T10	Medical-Problem 555 581	Lung volumes are increased
+E10	Medical-Problem:T10
+T11	Medical-Assertion 583 593	suggesting
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 594 609	underlying COPD
+T13	Lesion-Assertion 626 634	probable
+A2	Lesion-AssertionValue T13 possible
+T14	Lesion-Size 635 640	small
+T15	Lesion-Characteristic 641 650	calcified
+T16	Lesion-Description 651 660	granuloma
+T17	Lesion-Anatomy 669 679	right apex
+T18	Medical-Problem 701 729	Poorly defined consolidation
+T19	Medical-Anatomy 733 764	left upper and left lower lobes
+T20	Medical-Assertion 765 775;777 780	concerning for
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 781 801	multifocal pneumonia
+T22	Lesion-Description 922 930	neoplasm
+E19	Lesion-Description:T22
+T23	Lesion-Anatomy 954 969	left upper lobe
+T24	Lesion-Description 970 979	opacities
+T25	Lesion-Description 987 994	nodular
+E22	Lesion-Description:T25
+T26	Medical-Problem 1120 1153	Small bilateral pleural effusions
+E23	Medical-Problem:T26
+T27	Medical-Problem 1166 1190;1192 1222	component of co-existing pleural thickening on the left
+E24	Medical-Problem:T27
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T8
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E14	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Size-Present:T14 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T17
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E21	Lesion-Description:T24 has-Lesion-Anatomy:T23

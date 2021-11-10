@@ -1,0 +1,25 @@
+T1	Medical-Problem 271 312	Substantial left lower lobe consolidation
+E1	Medical-Problem:T1
+T2	Medical-Assertion 315 323	probably
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 324 335	atelectasis
+T4	Medical-Problem 393 411	more consolidation
+T5	Medical-Anatomy 419 428	periphery
+T6	Medical-Assertion 435 445	suggesting
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 462 480	adjacent pneumonia
+T8	Medical-Problem 483 510	Small left pleural effusion
+E6	Medical-Problem:T8
+T9	Lesion-Count 527 535	Multiple
+T10	Lesion-Anatomy 536 540	lung
+T11	Lesion-Description 542 549	nodules
+T12	Medical-Problem 558 575	Mild cardiomegaly
+E10	Medical-Problem:T12
+T13	Medical-Assertion 585 587	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 588 600	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Lesion-Description:T11 has-Lesion-Count:T9 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

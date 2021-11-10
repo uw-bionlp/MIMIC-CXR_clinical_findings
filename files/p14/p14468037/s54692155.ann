@@ -1,0 +1,27 @@
+T1	Medical-Problem 367 381	Linear opacity
+T2	Medical-Anatomy 389 403	left lung base
+T3	Medical-Assertion 407 413	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 414 425	atelectasis
+T5	Lesion-Size 439 443	1 cm
+T6	Lesion-Description 445 451	nodule
+T7	Lesion-Anatomy 472 486	left lung apex
+T8	Medical-Assertion 527 529	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 530 542	pneumothorax
+T10	Medical-Problem 601 633	Lateral left clavicular fracture
+E8	Medical-Problem:T10
+T11	Medical-Assertion 721 723	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 724 753	acute cardiopulmonary process
+T13	Lesion-Size 758 762	1 cm
+T14	Lesion-Anatomy 763 778	left upper lobe
+T15	Lesion-Description 779 786	nodular
+E12	Lesion-Description:T15
+T16	Lesion-Description 787 794	opacity
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Lesion-Description:T16 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T14

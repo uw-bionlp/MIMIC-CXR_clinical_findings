@@ -1,0 +1,33 @@
+T1	Medical-Problem 383 412	expected postsurgical changes
+T2	Medical-Anatomy 426 437	right hilum
+T3	Medical-Problem 441 452	Volume loss
+T4	Medical-Anatomy 467 477	right lung
+T5	Medical-Problem 483 513;515 525	rightward shift of mediastinal structures
+T6	Medical-Problem 528 556	Small right pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Assertion 601 603	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 604 636	new areas of focal consolidation
+T9	Medical-Assertion 665 667	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 669 681	pneumothorax
+T11	Medical-Assertion 775 777	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 825 845	postsurgical changes
+T13	Medical-Anatomy 858 880	right upper and middle
+T14	Medical-Problem 922 927;929 951	small right pleural effusion
+T15	Medical-Assertion 954 956	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 957 989	new areas of focal consolidation
+T17	Medical-Assertion 1007 1009	no
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1010 1025	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

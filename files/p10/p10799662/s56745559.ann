@@ -1,0 +1,19 @@
+T1	Medical-Problem 200 246	Moderate right and small left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 270 288	Interstitial edema
+T3	Medical-Assertion 289 301	has resolved
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 304 317	Opacification
+T5	Medical-Anatomy 325 348	left lung base medially
+T6	Medical-Assertion 350 373	could be due in part to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 374 396	persistent atelectasis
+T8	Medical-Problem 403 412	pneumonia
+T9	Medical-Assertion 532 534	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 535 547	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

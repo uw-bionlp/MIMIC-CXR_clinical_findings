@@ -1,0 +1,30 @@
+T1	Medical-Anatomy 346 353	stomach
+T2	Medical-Problem 363 381	distended with air
+T3	Medical-Anatomy 388 402;404 411	right internal jugular
+T4	Medical-Anatomy 433 440	mid SVC
+T5	Medical-Problem 445 459	appears kinked
+T6	Medical-Problem 512 536	bronchovascular crowding
+E6	Medical-Problem:T6
+T7	Medical-Problem 542 555;557 568	right basilar atelectasis
+E7	Medical-Problem:T7
+T8	Medical-Problem 570 590	Retrocardiac opacity
+E8	Medical-Problem:T8
+T9	Medical-Assertion 594 607	likely due to
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 608 619	atelectasis
+T11	Medical-Assertion 631 633	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 635 655	substantial effusion
+T13	Medical-Problem 659 671	pneumothorax
+T14	Medical-Anatomy 817 848	Right internal jugular catheter
+T15	Medical-Assertion 849 856	appears
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 857 863	kinked
+T17	Medical-Problem 928 947	Dilated small bowel
+E14	Medical-Problem:T17
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

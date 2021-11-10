@@ -1,0 +1,20 @@
+T1	Lesion-Anatomy 255 271	para-mediastinal
+T2	Lesion-Description 285 291	masses
+T3	Medical-Problem 312 331	partial volume loss
+T4	Medical-Anatomy 339 355	right upper lobe
+T5	Medical-Problem 358 385;387 409	Moderate increasing size of the cardiac silhouette
+E5	Medical-Problem:T5
+T6	Medical-Assertion 412 414	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 415 432	pleural effusions
+T8	Medical-Assertion 435 437	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 438 458;460 481	newly appeared focal parenchymal opacities
+T10	Medical-Assertion 484 495	No evidence
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 499 514	pulmonary edema
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

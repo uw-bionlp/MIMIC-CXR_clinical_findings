@@ -1,0 +1,40 @@
+T1	Medical-Anatomy 385 390	heart
+T2	Medical-Assertion 394 397	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 398 406	enlarged
+T4	Medical-Assertion 409 411	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 412 420	blunting
+T6	Medical-Anatomy 429 448	costophrenic angles
+T7	Medical-Problem 462 478	pleural effusion
+T8	Medical-Problem 481 498	Increased density
+T9	Medical-Anatomy 507 521	bilateral hila
+T10	Lesion-Assertion 522 535	likely due to
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 536 545	calcified
+T12	Lesion-Description 546 557	lymph nodes
+T13	Medical-Assertion 620 622	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 623 657	areas concerning for consolidation
+T15	Lesion-Assertion 666 668	No
+A5	Lesion-AssertionValue T15 absent
+T16	Lesion-Characteristic 669 680	destructive
+T17	Lesion-Characteristic 681 685	bony
+T18	Lesion-Description 686 693	lesions
+T19	Lesion-Assertion 719 727	Probable
+A6	Lesion-AssertionValue T19 possible
+T20	Lesion-Characteristic 728 737	calcified
+T21	Lesion-Description 738 749	lymph nodes
+T22	Lesion-Anatomy 757 761	hila
+T23	Medical-Assertion 764 766	No
+A7	Medical-AssertionValue T23 absent
+T24	Medical-Problem 767 796	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Lesion-Description:T18 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16 has-Lesion-Characteristic:T17
+E15	Lesion-Description:T21 has-Lesion-Assertion:T19 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T22
+E17	Medical-Problem:T24 has-Medical-Assertion:T23

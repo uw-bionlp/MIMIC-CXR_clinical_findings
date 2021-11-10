@@ -1,0 +1,20 @@
+T1	Lesion-Anatomy 330 346	right upper lobe
+T2	Lesion-Description 347 351	mass
+T3	Lesion-Anatomy 397 402;404 413	right perihilar
+T4	Lesion-Description 414 418	mass
+T5	Medical-Problem 501 547	small right and moderate left pleural effusion
+E5	Medical-Problem:T5
+T6	Medical-Problem 555 612	considerable left lower lobe atelectasis or consolidation
+E6	Medical-Problem:T6
+T7	Medical-Assertion 812 814	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 815 827	pneumothorax
+T9	Medical-Assertion 880 891	No evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 895 904	pneumonia
+T11	Medical-Problem 908 938;940 947	decompensated congestive heart failure
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

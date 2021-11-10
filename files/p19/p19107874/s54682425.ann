@@ -1,0 +1,52 @@
+T1	Medical-Problem 287 305;307 322	Heart size appears mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 391 401	tortuosity
+T3	Medical-Anatomy 409 417	thoracic
+T4	Medical-Anatomy 438 459	Pulmonary vasculature
+T5	Medical-Assertion 464 467	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 468 476	engorged
+T7	Medical-Problem 478 493	Streaky opacity
+T8	Medical-Anatomy 509 528	retrocardiac region
+T9	Medical-Assertion 530 538	possibly
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 540 551	atelectasis
+T11	Medical-Problem 559 568	infection
+T12	Medical-Assertion 572 584	not excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 586 588	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 589 605	pleural effusion
+T15	Medical-Problem 610 622	pneumothorax
+T16	Medical-Problem 640 648	Scarring
+T17	Medical-Anatomy 660 671	lung apices
+T18	Medical-Problem 693 718	curvilinear calcification
+T19	Medical-Anatomy 726 759	region of the subclavian arteries
+T20	Medical-Problem 824 841	somewhat obscured
+E16	Medical-Problem:T20
+T21	Medical-Problem 901 924;926 933	Multilevel degenerative changes
+T22	Medical-Anatomy 951 965	thoracic spine
+T23	Medical-Problem 987 995;997 1006	leftward curvature
+T24	Medical-Problem 1008 1038	Remote left-sided rib fracture
+E20	Medical-Problem:T24
+T25	Medical-Problem 1121 1141;1143 1150	Streaky retrocardiac opacity
+E21	Medical-Problem:T25
+T26	Medical-Assertion 1152 1160	possibly
+A5	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1161 1172	atelectasis
+T28	Medical-Problem 1180 1189	infection
+T29	Medical-Assertion 1190 1208	cannot be excluded
+A6	Medical-AssertionValue T29 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17
+E14	Medical-Problem:T18 has-Medical-Anatomy:T17 has-Medical-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22
+E19	Medical-Problem:T23 has-Medical-Anatomy:T22
+E22	Medical-Problem:T27 has-Medical-Assertion:T26
+E23	Medical-Problem:T28 has-Medical-Assertion:T26 has-Medical-Assertion:T29

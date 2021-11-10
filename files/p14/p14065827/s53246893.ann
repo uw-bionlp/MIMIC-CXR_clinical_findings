@@ -1,0 +1,30 @@
+T1	Medical-Problem 300 322	subtle interval change
+E1	Medical-Problem:T1
+T2	Medical-Problem 485 501;503 525	Prominent mitral valvular calcification
+E2	Medical-Problem:T2
+T3	Medical-Problem 537 550	calcification
+T4	Medical-Anatomy 558 563	aorta
+T5	Medical-Problem 581 596	atherosclerosis
+T6	Medical-Problem 603 621	left hemidiaphragm
+E6	Medical-Problem:T6
+T7	Medical-Problem 658 675	streaky opacities
+T8	Medical-Anatomy 691 714	left mid and lower lung
+T9	Medical-Assertion 715 723	favoring
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 724 735	atelectasis
+T11	Medical-Assertion 737 748	rather than
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 752 770	infectious process
+T13	Medical-Assertion 811 813;815 823	No evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 827 842	pulmonary edema
+T15	Medical-Assertion 845 847	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 848 860	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

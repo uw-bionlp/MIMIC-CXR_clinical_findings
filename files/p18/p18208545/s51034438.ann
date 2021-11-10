@@ -1,0 +1,23 @@
+T1	Medical-Problem 293 325	bilateral lower lobe volume loss
+E1	Medical-Problem:T1
+T2	Medical-Problem 330 345;347 356	small bilateral effusions
+E2	Medical-Problem:T2
+T3	Medical-Assertion 359 361	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 362 374	pneumothorax
+T5	Medical-Problem 400 423;425 439	mild pulmonary vascular redistribution
+E4	Medical-Problem:T5
+T6	Medical-Problem 447 471	hazy alveolar infiltrate
+T7	Medical-Anatomy 475 496	bilateral lower lobes
+T8	Medical-Assertion 499 512	likely due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 513 524	volume loss
+T10	Medical-Problem 532 548	early infiltrate
+T11	Medical-Assertion 549 567	cannot be excluded
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 570 575;577 585	Fluid overload
+E9	Medical-Problem:T12
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T11

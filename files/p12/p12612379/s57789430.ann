@@ -1,0 +1,27 @@
+T1	Medical-Problem 197 237	small to moderate right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 310 312	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 313 334	left pleural effusion
+T4	Medical-Assertion 350 352	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 353 365	pneumothorax
+T6	Lesion-Description 384 391	nodular
+E4	Lesion-Description:T6
+T7	Lesion-Description 392 399	opacity
+T8	Lesion-Anatomy 407 425;427 448	lateral segment of the right middle lobe
+T9	Lesion-Size-Trend 491 497	stable
+A3	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Assertion 539 541	no
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 542 565	new focal consolidation
+T12	Medical-Assertion 566 576;578 581	concerning for
+A5	Medical-AssertionValue T12 possible
+T13	Medical-Problem 582 591	pneumonia
+T14	Medical-Problem 657 697	Small to moderate right pleural effusion
+E9	Medical-Problem:T14
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,19 @@
+T1	Medical-Problem 331 359	pre-existing pulmonary edema
+T2	Medical-Assertion 360 363;365 384	has completely resolved
+A1	Medical-AssertionValue T2 absent
+T3	Lesion-Characteristic 393 402	calcified
+T4	Lesion-Description 403 413	granulomas
+T5	Lesion-Anatomy 421 437	right lung bases
+T6	Medical-Problem 450 462	cardiomegaly
+T7	Medical-Problem 468 478	elongation
+T8	Medical-Anatomy 486 502	descending aorta
+T9	Medical-Assertion 504 506	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 507 514;516 525	pleural effusions
+T11	Medical-Assertion 527 529	No
+A3	Medical-AssertionValue T11 absent
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E3	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

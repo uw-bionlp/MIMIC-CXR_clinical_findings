@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 226 231	right
+T2	Medical-Problem 256 263;265 280	unusual cephalad course
+T3	Medical-Problem 394 412	Moderate elevation
+T4	Medical-Anatomy 421 440	right hemidiaphragm
+T5	Medical-Problem 501 529	adjacent basilar atelectasis
+T6	Medical-Problem 532 549	Focal atelectasis
+T7	Medical-Anatomy 574 588	left lung base
+T8	Medical-Problem 591 619	Small right pleural effusion
+E8	Medical-Problem:T8
+T9	Medical-Problem 709 737	Small right pleural effusion
+E9	Medical-Problem:T9
+T10	Medical-Problem 740 756	Linear opacities
+T11	Medical-Anatomy 760 769;771 776	both lung bases
+T12	Medical-Assertion 777 782	favor
+A1	Medical-AssertionValue T12 possible
+T13	Medical-Problem 783 794	atelectasis
+T14	Medical-Problem 800 820	infectious pneumonia
+T15	Medical-Problem 874 904	early infectious consolidation
+E14	Medical-Problem:T15
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E10	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T14 has-Medical-Assertion:T12

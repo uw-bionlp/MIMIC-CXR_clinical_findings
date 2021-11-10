@@ -1,0 +1,24 @@
+T1	Medical-Anatomy 202 207	Lungs
+T2	Medical-Assertion 212 217	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 222 245	confluent consolidation
+T4	Medical-Problem 257 271	indistinctness
+T5	Medical-Anatomy 279 288;290 301	pulmonary vasculature
+T6	Medical-Problem 304 317	Calcification
+T7	Medical-Anatomy 336 351	right lung apex
+T8	Medical-Assertion 353 364	potentially
+A2	Medical-AssertionValue T8 possible
+T9	Lesion-Characteristic 366 375	calcified
+T10	Lesion-Description 376 385	granuloma
+T11	Medical-Problem 389 400	potentially
+T12	Medical-Problem 548 582	Mild pulmonary vascular congestion
+E10	Medical-Problem:T12
+T13	Medical-Assertion 583 590	without
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 591 602;604 627	other acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

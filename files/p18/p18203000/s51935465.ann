@@ -1,0 +1,31 @@
+T1	Medical-Problem 319 328	opacities
+T2	Medical-Anatomy 350 373	left mid and lower lung
+T3	Medical-Assertion 375 388	suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 390 410	multifocal pneumonia
+T5	Medical-Problem 412 423	atelectasis
+T6	Medical-Problem 431 448	pulmonary embolus
+T7	Medical-Assertion 452 463	less likely
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 475 477	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 478 500	large pleural effusion
+T10	Medical-Problem 504 516	pneumothorax
+T11	Medical-Problem 616 654	multi focal peribronchial infiltration
+E8	Medical-Problem:T11
+T12	Medical-Assertion 658 669	more likely
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 670 682	inflammatory
+T14	Medical-Problem 685 709	chronic pulmonary emboli
+T15	Medical-Assertion 710 721	could leave
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 727 743	kind of scarring
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T12 has-Medical-Assertion:T15

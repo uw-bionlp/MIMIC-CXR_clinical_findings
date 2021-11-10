@@ -1,0 +1,26 @@
+T1	Lesion-Count 210 213	two
+T2	Lesion-Anatomy 214 223	pulmonary
+T3	Lesion-Description 224 231	nodules
+T4	Lesion-Size-Trend 249 263	stable in size
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Assertion 298 300	No
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Size-Trend 301 304	new
+A3	Lesion-Size-TrendValue T6 new
+T7	Lesion-Description 305 311	nodule
+T8	Medical-Assertion 337 339	no
+A4	Medical-AssertionValue T8 absent
+T9	Medical-Problem 341 360	focal consolidation
+T10	Medical-Problem 362 378	pleural effusion
+T11	Medical-Problem 383 395	pneumothorax
+T12	Lesion-Size-Trend 473 479	Stable
+A5	Lesion-Size-TrendValue T12 no-change
+T13	Lesion-Size 480 484	tiny
+T14	Lesion-Anatomy 485 494	pulmonary
+T15	Lesion-Description 495 502	nodules
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T4
+E4	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Size-Trend:T6
+E5	Medical-Problem:T9 has-Medical-Assertion:T8
+E6	Medical-Problem:T10 has-Medical-Assertion:T8
+E7	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Lesion-Description:T15 has-Lesion-Size-Trend:T12 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T14

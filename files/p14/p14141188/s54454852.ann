@@ -1,0 +1,36 @@
+T1	Medical-Problem 274 304	Cardiac silhouette is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 307 316;318 335	Bilateral pleural effusions
+E2	Medical-Problem:T2
+T3	Medical-Assertion 341 349	possible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 350 382	adjacent compressive atelectasis
+T5	Medical-Problem 395 424	Underlying infectious process
+T6	Medical-Assertion 425 454	cannot be completely excluded
+A2	Medical-AssertionValue T6 possible
+T7	Lesion-Size 516 528	3.3 x 3.5 cm
+T8	Lesion-Description 529 533	mass
+T9	Lesion-Anatomy 541 549;551 571	level of the right lower lobe
+T10	Lesion-Size 585 589	2-cm
+T11	Lesion-Characteristic 590 601	soft tissue
+T12	Lesion-Description 602 609	density
+T13	Lesion-Anatomy 621 626;628 638	right upper lobe
+T14	Medical-Problem 642 657	Mild prominence
+T15	Medical-Anatomy 665 676	azygos vein
+T16	Lesion-Size 709 715	3.5-cm
+T17	Lesion-Description 716 720	mass
+T18	Lesion-Anatomy 728 744	right lower lobe
+T19	Lesion-Characteristic 765 776;778 785	soft tissue density
+T20	Lesion-Anatomy 817 833	right upper lobe
+T21	Medical-Problem 1010 1022	Cardiomegaly
+E19	Medical-Problem:T21
+T22	Medical-Problem 1028 1055	bilateral pleural effusions
+E20	Medical-Problem:T22
+T23	Medical-Problem 1060 1080;1082 1093	adjacent compressive atelectasis
+E21	Medical-Problem:T23
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E6	Lesion-Description:T8 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Lesion-Description:T17 has-Lesion-Size-Present:T16 has-Lesion-Anatomy:T18 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T20

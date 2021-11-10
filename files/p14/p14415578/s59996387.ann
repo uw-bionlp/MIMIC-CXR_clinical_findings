@@ -1,0 +1,23 @@
+T1	Medical-Assertion 307 323	without evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 328 340	pneumothorax
+T3	Lesion-Anatomy 426 437	mediastinal
+T4	Lesion-Description 438 453	adenopathy/soft
+T5	Medical-Problem 474 478;480 498	left upper lobe opacity
+E4	Medical-Problem:T5
+T6	Medical-Assertion 640 642	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 643 675	definite new focal consolidation
+T8	Medical-Assertion 695 697	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 699 715	pleural effusion
+T10	Medical-Problem 719 731	pneumothorax
+T11	Medical-Problem 825 852	mediastinal lymphadenopathy
+E8	Medical-Problem:T11
+T12	Medical-Problem 863 867;869 879	left upper lobe
+E9	Medical-Problem:T12
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8

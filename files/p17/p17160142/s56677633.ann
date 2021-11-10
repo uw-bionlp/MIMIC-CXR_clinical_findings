@@ -1,0 +1,37 @@
+T1	Medical-Anatomy 218 223	aorta
+T2	Medical-Problem 230 244	mild unfolding
+T3	Medical-Problem 247 253;255 268	Patchy calcification
+T4	Medical-Anatomy 278 292	along the arch
+T5	Medical-Problem 304 318	mild elevation
+T6	Medical-Anatomy 326 330;332 345	left hemidiaphragm
+T7	Medical-Assertion 346 361	probably due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 362 378	mild volume loss
+T9	Medical-Anatomy 386 400	left lung base
+T10	Medical-Problem 408 432	prominent gastric bubble
+T11	Medical-Assertion 444 446	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 447 463	pleural effusion
+T13	Medical-Problem 467 479	pneumothorax
+T14	Medical-Problem 482 486;488 513	Mild leftward convex curvature
+E12	Medical-Problem:T14
+T15	Medical-Problem 563 610	bones are probably demineralized to some degree
+E13	Medical-Problem:T15
+T16	Medical-Assertion 640 650	suggesting
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 651 662	atelectasis
+T18	Medical-Anatomy 670 684	left lung base
+T19	Medical-Assertion 690 703;705 713	no convincing evidence
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 718 727	pneumonia
+T21	Medical-Problem 731 755	congestive heart failure
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E14	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T19

@@ -1,0 +1,53 @@
+T1	Medical-Anatomy 311 324	hemidiaphragm
+T2	Medical-Problem 328 336	obscured
+T3	Medical-Problem 342 370;372 380	moderate sized right pleural effusion
+T4	Medical-Problem 404 417	opacification
+T5	Medical-Anatomy 425 450;452 471	lung parenchyma below the right minor fissure
+T6	Medical-Problem 479 521	right middle and right lower lobe collapse
+T7	Medical-Problem 544 555	vascularity
+T8	Medical-Anatomy 563 579	right upper lung
+T9	Medical-Anatomy 618 633	right perihilar
+T10	Medical-Problem 634 663	region also appears more full
+T11	Lesion-Assertion 673 678;680 689	could represent
+A1	Lesion-AssertionValue T11 possible
+T12	Lesion-Characteristic 693 700	central
+T13	Lesion-Description 701 705	mass
+T14	Lesion-Anatomy 722 737	right pulmonary
+T15	Lesion-Anatomy 755 762	bronchi
+T16	Medical-Problem 776 789	hypoperfusion
+T17	Medical-Anatomy 797 813	right upper lung
+T18	Medical-Problem 818 826	collapse
+T19	Medical-Anatomy 835 863	right middle and lower lobes
+T20	Medical-Anatomy 871 880	left lung
+T21	Medical-Problem 912 933	increased vascularity
+T22	Medical-Anatomy 941 956	left lower lung
+T23	Medical-Assertion 1124 1126	no
+A2	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1128 1140	pneumothorax
+T25	Medical-Problem 1188 1213	right lower lobe collapse
+T26	Medical-Assertion 1214 1229	could be due to
+A3	Medical-AssertionValue T26 possible
+T27	Lesion-Characteristic 1233 1244	obstructing
+T28	Lesion-Anatomy 1246 1257	right hilar
+T29	Lesion-Description 1258 1262	mass
+T30	Medical-Problem 1340 1350	Persistent
+E27	Medical-Problem:T30
+T31	Medical-Problem 1365 1387	right pleural effusion
+E28	Medical-Problem:T31
+T32	Medical-Assertion 1393 1395	No
+A4	Medical-AssertionValue T32 absent
+T33	Medical-Assertion 1410 1413	nor
+A5	Medical-AssertionValue T33 absent
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9
+E12	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T15
+E15	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T18 has-Medical-Anatomy:T19
+E20	Medical-Problem:T21 has-Medical-Anatomy:T20 has-Medical-Anatomy:T22
+E22	Medical-Problem:T24 has-Medical-Assertion:T23
+E23	Medical-Problem:T25 has-Medical-Assertion:T26
+E26	Lesion-Description:T29 has-Lesion-Characteristic:T27 has-Lesion-Anatomy:T28

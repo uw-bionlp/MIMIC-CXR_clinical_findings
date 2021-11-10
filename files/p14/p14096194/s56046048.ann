@@ -1,0 +1,26 @@
+T1	Medical-Assertion 659 661	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 662 674	pneumothorax
+T3	Medical-Problem 824 839	left lower lobe
+E2	Medical-Problem:T3
+T4	Medical-Problem 841 849	collapse
+E3	Medical-Problem:T4
+T5	Medical-Problem 857 870	consolidation
+E4	Medical-Problem:T5
+T6	Medical-Problem 876 906	increased retrocardiac density
+T7	Medical-Problem 912 923	obscuration
+T8	Medical-Anatomy 931 949	left hemidiaphragm
+T9	Medical-Problem 971 985;987 994	minimal patchy opacity
+T10	Medical-Anatomy 1002 1028	right cardiophrenic region
+T11	Medical-Assertion 1033 1041	probable
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1042 1057	small effusions
+T13	Medical-Assertion 1060 1062	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1064 1073	overt CHF
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

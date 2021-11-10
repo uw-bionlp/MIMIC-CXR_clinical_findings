@@ -1,0 +1,25 @@
+T1	Medical-Problem 287 322	New moderate right pleural effusion
+T2	Medical-Anatomy 336 354	right heart border
+T3	Medical-Anatomy 462 473	Right hilus
+T4	Medical-Problem 515 533	infrahilar opacity
+T5	Medical-Anatomy 541 551	lower lobe
+T6	Medical-Problem 555 576	segmental atelectasis
+T7	Medical-Assertion 628 630	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 631 646	pulmonary edema
+T9	Medical-Problem 650 669	vascular congestion
+T10	Medical-Problem 693 728	New moderate right pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 734 759;761 779	at least right lower lobe segmental collapse
+E10	Medical-Problem:T11
+T12	Medical-Assertion 784 786	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 787 803	findings suggest
+E11	Medical-Problem:T13
+T14	Medical-Problem 804 826	cardiac decompensation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E12	Medical-Problem:T14 has-Medical-Assertion:T12

@@ -1,0 +1,41 @@
+T1	Medical-Anatomy 275 280	heart
+T2	Medical-Assertion 284 287	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 288 296	enlarged
+T4	Lesion-Assertion 345 347	no
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 348 353	hilar
+T6	Lesion-Anatomy 357 368	mediastinal
+T7	Lesion-Description 369 384	lymphadenopathy
+T8	Lesion-Assertion 400 402	No
+A3	Lesion-AssertionValue T8 absent
+T9	Lesion-Anatomy 403 409	apical
+T10	Lesion-Description 410 414	mass
+T11	Medical-Assertion 431 433	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 434 437	CHF
+T13	Medical-Problem 439 455	focal infiltrate
+T14	Medical-Problem 457 465	effusion
+T15	Medical-Problem 470 482	pneumothorax
+T16	Medical-Assertion 497 505	Possible
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 506 525	minimal atelectasis
+T18	Medical-Anatomy 533 538;540 560	right cardiophrenic region
+T19	Medical-Problem 562 578	Slight asymmetry
+T20	Medical-Anatomy 586 616;618 644	soft tissues of the right neck and supraclavicular region
+T21	Medical-Problem 727 756	Minimal degenerative spurring
+T22	Medical-Anatomy 764 767;769 783	mid thoracic spine
+T23	Medical-Assertion 823 825	No
+A6	Medical-AssertionValue T23 absent
+T24	Medical-Problem 826 847	radiographic findings
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T11
+E12	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Anatomy:T18
+E14	Medical-Problem:T19 has-Medical-Anatomy:T20
+E16	Medical-Problem:T21 has-Medical-Anatomy:T22
+E18	Medical-Problem:T24 has-Medical-Assertion:T23

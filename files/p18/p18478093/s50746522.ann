@@ -1,0 +1,21 @@
+T1	Medical-Problem 282 300	new patchy opacity
+T2	Medical-Anatomy 308 324	right lower lobe
+T3	Medical-Assertion 356 358	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 360 376	pleural effusion
+T5	Medical-Problem 380 392	pneumothorax
+T6	Medical-Problem 399 421	chest is hyperinflated
+E5	Medical-Problem:T6
+T7	Medical-Problem 441 473	Developing right basilar opacity
+E6	Medical-Problem:T7
+T8	Medical-Assertion 481 494	may represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 499 517	infectious process
+T10	Medical-Problem 564 575	atelectasis
+T11	Medical-Assertion 577 601	could also be considered
+A3	Medical-AssertionValue T11 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8 has-Medical-Assertion:T11

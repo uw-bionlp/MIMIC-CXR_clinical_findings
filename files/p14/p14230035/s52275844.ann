@@ -1,0 +1,39 @@
+T1	Medical-Assertion 218 225	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 226 231;233 243	focal infiltrate
+T3	Medical-Problem 245 257	pneumothorax
+T4	Medical-Problem 261 277	pleural effusion
+T5	Medical-Problem 289 310	stable loss of volume
+T6	Medical-Anatomy 323 332	left lung
+T7	Lesion-Count 360 371	innumerable
+T8	Lesion-Description 372 379	nodules
+T9	Lesion-Anatomy 467 483	right upper lobe
+T10	Lesion-Size 484 488	4 mm
+T11	Lesion-Description 489 495	nodule
+T12	Lesion-Size 500 507	smaller
+T13	Lesion-Anatomy 508 524	right lower lung
+T14	Lesion-Description 525 531	nodule
+T15	Medical-Problem 603 613	Prominence
+T16	Medical-Anatomy 622 632	interstium
+T17	Medical-Assertion 633 646	may relate to
+A2	Medical-AssertionValue T17 possible
+T18	Medical-Problem 647 657	mild edema
+T19	Medical-Problem 677 694	Apparent widening
+T20	Medical-Anatomy 703 714	mediastinum
+T21	Medical-Problem 737 757	persistent occlusion
+T22	Medical-Anatomy 765 770;772 810	basal segment bronchi of the left lower lobe
+T23	Medical-Assertion 854 856	No
+A3	Medical-AssertionValue T23 absent
+T24	Medical-Problem 857 886	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Lesion-Description:T8 has-Lesion-Count:T7
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Size-Present:T10 has-Lesion-Size-Present:T12
+E13	Lesion-Description:T14 has-Lesion-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E17	Medical-Problem:T19 has-Medical-Anatomy:T20
+E19	Medical-Problem:T21 has-Medical-Anatomy:T22
+E21	Medical-Problem:T24 has-Medical-Assertion:T23

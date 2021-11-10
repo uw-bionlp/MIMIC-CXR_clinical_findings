@@ -1,0 +1,45 @@
+T1	Medical-Problem 273 293	persistent elevation
+T2	Medical-Anatomy 301 320	right hemidiaphragm
+T3	Medical-Problem 332 338;340 353	subtle opacification
+T4	Medical-Anatomy 361 386	lateral right middle lobe
+T5	Medical-Problem 408 413;415 436	early developing pneumonia.
+E5	Medical-Problem:T5
+T6	Medical-Problem 445 471	retrocardiac opacification
+E6	Medical-Problem:T6
+T7	Medical-Assertion 472 489	likely represents
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 491 502	atelectasis
+T9	Medical-Assertion 505 507	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 508 523	pulmonary edema
+T11	Medical-Problem 563 574	enlargement
+T12	Medical-Anatomy 582 612	pulmonary arteries bilaterally
+T13	Medical-Assertion 613 623	suggesting
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 624 633;635 656	pulmonary arterial hypertension
+T15	Medical-Assertion 659 661	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 662 678	pleural effusion
+T17	Medical-Problem 682 694	pneumothorax
+T18	Medical-Assertion 715 717	no
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 718 745	acute osseous abnormalities
+T20	Medical-Problem 777 784	opacity
+T21	Medical-Anatomy 792 817	lateral right middle lobe
+T22	Medical-Problem 839 845;847 867	early/ developing pneumonia
+E17	Medical-Problem:T22
+T23	Medical-Anatomy 892 922	pulmonary arteries bilaterally
+T24	Medical-Assertion 924 934	suggesting
+A6	Medical-AssertionValue T24 possible
+T25	Medical-Problem 935 944;946 967	pulmonary arterial hypertension
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T21
+E19	Medical-Problem:T25 has-Medical-Anatomy:T23 has-Medical-Assertion:T24

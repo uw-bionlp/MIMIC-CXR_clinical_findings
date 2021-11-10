@@ -1,0 +1,23 @@
+T1	Medical-Problem 195 202	Opacity
+T2	Medical-Anatomy 210 240	inferior right upper lung zone
+T3	Medical-Anatomy 259 267;269 304	superior segment of the low right lower lobe
+T4	Medical-Assertion 319 322	may
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Anatomy 351 367	right upper lobe
+T6	Medical-Assertion 369 378	worrisome
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 383 392	pneumonia
+T8	Medical-Assertion 404 406	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 407 423	pleural effusion
+T10	Medical-Problem 522 543	Right-sided pneumonia
+T11	Medical-Assertion 544 552	possibly
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Anatomy 567 596;598 608	superior segment of the right lower lobe
+T13	Medical-Assertion 614 622	possible
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Anatomy 642 667	inferior right upper lobe
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T11 has-Medical-Anatomy:T12 has-Medical-Assertion:T13 has-Medical-Anatomy:T14

@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 349 365	right upper lobe
+T2	Medical-Problem 371 379	probably
+T3	Medical-Problem 380 396	redistributed to
+T4	Medical-Anatomy 401 406	right
+T5	Medical-Problem 423 443	Moderate atelectasis
+T6	Medical-Anatomy 465 480	left upper lobe
+T7	Medical-Problem 488 499	volume loss
+T8	Medical-Assertion 501 512	may explain
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Anatomy 548 558	left hilus
+T10	Medical-Problem 564 569;571 582	acute enlargement
+T11	Medical-Assertion 612 620	possible
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 655 674	Severe cardiomegaly
+E10	Medical-Problem:T12
+T13	Medical-Assertion 743 745	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 746 758	pneumothorax
+T15	Medical-Problem 766 796	moderate left pleural effusion
+E12	Medical-Problem:T15
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

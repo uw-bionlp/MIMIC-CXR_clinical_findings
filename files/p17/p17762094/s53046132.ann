@@ -1,0 +1,18 @@
+T1	Medical-Assertion 251 253	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 254 266	pneumothorax
+T3	Medical-Problem 270 298	appreciable pleural effusion
+T4	Lesion-Characteristic 339 349	peripheral
+T5	Lesion-Characteristic 350 363	consolidative
+T6	Lesion-Characteristic 364 374	subpleural
+T7	Lesion-Description 375 381	lesion
+T8	Lesion-Anatomy 389 404	left upper lobe
+T9	Medical-Assertion 406 414	could be
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 415 435	residual atelectasis
+T11	Medical-Problem 488 508	bands of atelectasis
+E9	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

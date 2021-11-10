@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 101 111	left hilum
+T2	Medical-Problem 126 133	dilated
+T3	Medical-Problem 261 269	fullness
+T4	Medical-Anatomy 278 288	left hilum
+T5	Medical-Assertion 293 306	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 307 341;343 353	superimposition of normal vascular structures
+T7	Medical-Problem 360 388	abnormal mediastinal contour
+E6	Medical-Problem:T7
+T8	Medical-Assertion 402 413;415 425	most likely represents
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 428 442	tortuous aorta
+T10	Medical-Anatomy 445 450	Lungs
+T11	Medical-Assertion 461 468	without
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 469 482	consolidation
+T13	Medical-Problem 486 491	edema
+T14	Medical-Assertion 504 506	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 507 523	pleural effusion
+T16	Medical-Problem 527 539	pneumothorax
+T17	Medical-Problem 561 585	Tortuous ascending aorta
+E13	Medical-Problem:T17
+T18	Medical-Problem 604 625	component of dilation
+E14	Medical-Problem:T18
+T19	Medical-Problem 714 733	left hilar fullness
+E15	Medical-Problem:T19
+T20	Medical-Assertion 737 750	likely due to
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 751 769;771 790	superimposition of vascular structures
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

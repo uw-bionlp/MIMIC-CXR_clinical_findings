@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 37 58	pulmonary vasculature
+T2	Medical-Assertion 76 86	suggesting
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 87 106;108 128	increased pulmonary  interstitial edema,
+T4	Medical-Problem 129 152	somewhat asymmetric L>R
+E3	Medical-Problem:T4
+T5	Lesion-Size 536 542	1.5 cm
+T6	Lesion-Anatomy 543 554;556 560	right upper lobe
+T7	Lesion-Description 561 567	nodule
+T8	Medical-Problem 639 695	linea opacities, predominantly interstitial in structure
+T9	Medical-Anatomy 724 734	lung bases
+T10	Medical-Problem 806 815	opacities
+E9	Medical-Problem:T10
+T11	Medical-Assertion 820 837	likely reflecting
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 838 847	pneumonia
+T13	Medical-Problem 850 858;860 872	Moderate cardiomegaly
+T14	Medical-Problem 877 887	elongation
+T15	Medical-Anatomy 895 911	descending aorta
+T16	Medical-Assertion 945 947	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 948 961	new opacities
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

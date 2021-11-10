@@ -1,0 +1,39 @@
+T1	Medical-Problem 259 267	Scarring
+T2	Medical-Anatomy 275 313	lung apices bilaterally, right greater
+T3	Lesion-Description 339 346	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 347 354	opacity
+T5	Lesion-Anatomy 366 382	right lower lung
+T6	Medical-Assertion 419 421	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 422 442	focal consolidations
+T8	Medical-Problem 454 463	pneumonia
+T9	Medical-Assertion 466 468	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 469 484	pulmonary edema
+T11	Medical-Problem 541 555	calcifications
+T12	Medical-Anatomy 563 569;571 575	aortic knob
+T13	Medical-Assertion 578 580	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 581 597	pleural effusion
+T15	Medical-Assertion 600 602	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 603 615	pneumothorax
+T17	Lesion-Size 640 645	13 mm
+T18	Lesion-Description 646 653	nodular
+E14	Lesion-Description:T18
+T19	Lesion-Description 654 661	opacity
+T20	Lesion-Anatomy 673 689	right lower lung
+T21	Medical-Assertion 791 793	no
+A5	Medical-AssertionValue T21 absent
+T22	Medical-Problem 794 821	acute intrathoracic process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Lesion-Description:T19 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T20
+E17	Medical-Problem:T22 has-Medical-Assertion:T21

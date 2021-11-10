@@ -1,0 +1,17 @@
+T1	Medical-Assertion 211 213	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 214 230	pleural effusion
+T3	Medical-Problem 234 246	pneumothorax
+T4	Medical-Problem 253 268;270 278	heart is stably enlarged
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 370 381	right sided
+T6	Lesion-Description 382 388	nodule
+T7	Lesion-Assertion 392 403	not evident
+A2	Lesion-AssertionValue T7 absent
+T8	Medical-Assertion 448 450	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 451 478	acute intrathoracic process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

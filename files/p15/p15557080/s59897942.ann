@@ -1,0 +1,34 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 44	pneumothorax
+T3	Medical-Problem 46 66	Mild pulmonary edema
+E2	Medical-Problem:T3
+T4	Medical-Problem 100 104;106 137	left  pleural effusion, now moderate
+E3	Medical-Problem:T4
+T5	Medical-Problem 442 481	Small-to-moderate left pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 519 529	aspiration
+E5	Medical-Problem:T6
+T7	Medical-Problem 574 595;597 605	Left hemidiaphragm is elevated
+E6	Medical-Problem:T7
+T8	Medical-Assertion 635 654	raising possibility
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 665 672;674 685	primary atelectasis
+T10	Medical-Anatomy 693 708	left lower lobe
+T11	Medical-Problem 712 731	pleural restriction
+T12	Medical-Problem 760 806	posterior loculation of residual pleural fluid
+E10	Medical-Problem:T12
+T13	Medical-Problem 817 821;823 841	Mild interstitial edema
+E11	Medical-Problem:T13
+T14	Medical-Assertion 895 908	suggestion of
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 911 938	new region of consolidation
+T16	Medical-Anatomy 946 956	right apex
+T17	Medical-Problem 1036 1044	Heart is
+E14	Medical-Problem:T17
+T18	Medical-Problem 1045 1064	moderately enlarged
+E15	Medical-Problem:T18
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E12	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T16

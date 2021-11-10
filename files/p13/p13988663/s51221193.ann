@@ -1,0 +1,28 @@
+T1	Medical-Problem 59 66	opacity
+T2	Medical-Anatomy 74 88	left lung base
+T3	Medical-Problem 107 127	infection/aspiration
+T4	Medical-Problem 579 618	substantial region of new consolidation
+T5	Medical-Anatomy 626 656;658 663	left lung base, less so on the right
+T6	Medical-Assertion 665 687	most readily explained
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 691 701	aspiration
+T8	Medical-Problem 706 726	developing pneumonia
+T9	Medical-Problem 806 816	very small
+E8	Medical-Problem:T9
+T10	Medical-Problem 817 858	component of interstitial pulmonary edema
+E9	Medical-Problem:T10
+T11	Medical-Problem 864 872;874 886	moderate cardiomegaly
+E10	Medical-Problem:T11
+T12	Medical-Problem 903 920	Pleural effusions
+T13	Medical-Assertion 938 941	not
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Assertion 969 971	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 972 984	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E11	Medical-Problem:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

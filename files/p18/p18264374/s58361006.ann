@@ -1,0 +1,19 @@
+T1	Medical-Problem 60 72	Pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 238 244;246 282	stable size of the left apical pneumothorax
+E2	Medical-Problem:T2
+T3	Medical-Problem 448 459	Atelectasis
+T4	Medical-Anatomy 467 471;473 482	left lung base
+T5	Medical-Problem 490 512	small pleural effusion
+T6	Medical-Assertion 534 536	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 537 542;544 557	focal consolidation
+T8	Medical-Assertion 558 572	concerning for
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 573 582	pneumonia
+T10	Medical-Problem 600 619	Stable pneumothorax
+E8	Medical-Problem:T10
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,35 @@
+T1	Medical-Assertion 406 408	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 409 421	pneumothorax
+T3	Medical-Assertion 547 549	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 550 553	CHF
+T5	Medical-Problem 555 571	focal infiltrate
+T6	Medical-Problem 575 583	effusion
+T7	Medical-Problem 630 644	patchy density
+T8	Medical-Anatomy 679 700	left proximal humerus
+T9	Medical-Assertion 761 763	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 764 787	acute pulmonary process
+T11	Medical-Problem 803 831	Mixed lucent sclerotic focus
+T12	Medical-Anatomy 839 860	left proximal humerus
+T13	Lesion-Assertion 906 911	could
+A4	Lesion-AssertionValue T13 possible
+T14	Medical-Problem 925 936	enchondroma
+E10	Medical-Problem:T14
+T15	Lesion-Characteristic 947 956	chondroid
+T16	Lesion-Description 957 963	lesion
+T17	Lesion-Description 1113 1119	lesion
+E13	Lesion-Description:T17
+T18	Medical-Assertion 1172 1174	no
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1175 1185	concerning
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Characteristic:T15
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

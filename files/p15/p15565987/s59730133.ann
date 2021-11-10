@@ -1,0 +1,22 @@
+T1	Medical-Problem 68 78	pleurisity
+E1	Medical-Problem:T1
+T2	Medical-Problem 84 91	rhonchi
+T3	Medical-Anatomy 99 113	left lung base
+T4	Medical-Anatomy 180 185	lungs
+T5	Medical-Assertion 201 212	no evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 218 231	consolidation
+T7	Medical-Problem 233 241	effusion
+T8	Medical-Problem 247 259	pneumothorax
+T9	Medical-Assertion 311 313	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 314 319;321 330	acute fractures
+T11	Medical-Assertion 367 369	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 370 399	acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

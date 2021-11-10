@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 208 213	lungs
+T2	Medical-Assertion 224 231	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 232 245	consolidation
+T4	Medical-Problem 249 254	edema
+T5	Lesion-Assertion 267 269	no
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Characteristic 271 280	worrisome
+T7	Lesion-Description 281 288	nodules
+T8	Medical-Assertion 300 302	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 303 319	pleural effusion
+T10	Medical-Problem 323 335	pneumothorax
+T11	Medical-Problem 381 410	heart size is mildly enlarged
+E8	Medical-Problem:T11
+T12	Medical-Assertion 582 584	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 585 614	acute cardiopulmonary process
+T14	Medical-Problem 621 645	Stable mild cardiomegaly
+E10	Medical-Problem:T14
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

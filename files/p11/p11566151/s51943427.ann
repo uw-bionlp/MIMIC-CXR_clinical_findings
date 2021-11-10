@@ -1,0 +1,32 @@
+T1	Lesion-Characteristic 388 401;403 409	Rounded, soft tissue
+T2	Lesion-Description 410 417	density
+T3	Lesion-Anatomy 425 451	right cardiophrenic sulcus
+T4	Lesion-Size-Trend 455 461	stable
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Assertion 494 509	likely reflects
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 512 523	pericardial
+T7	Lesion-Description 524 528	cyst
+T8	Medical-Problem 531 553;555 568	Multiple, healed, left rib fractures
+E6	Medical-Problem:T8
+T9	Medical-Assertion 586 597	No evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 601 615	acute fracture
+T11	Medical-Assertion 637 639	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 640 652	pneumothorax
+T13	Medical-Problem 665 700	stable, severe degenerative changes
+T14	Medical-Anatomy 716 739	left glenohumeral joint
+T15	Medical-Assertion 742 761	Interval resolution
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 765 776;778 794	small, left pleural effusion
+T17	Medical-Assertion 815 826	No evidence
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 830 839	pneumonia
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T4
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T3 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T18 has-Medical-Assertion:T17

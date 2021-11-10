@@ -1,0 +1,39 @@
+T1	Medical-Problem 29 61	New larger area of consolidation
+T2	Medical-Anatomy 76 86	right lung
+T3	Medical-Problem 91 106;108 116	smaller area of  opacity
+T4	Medical-Anatomy 124 138	left lung base
+T5	Medical-Assertion 139 153	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 154 174	multifocal pneumonia
+T7	Medical-Problem 612 625;627 640	large area of consolidation
+T8	Medical-Anatomy 655 682	right upper and lower lobes
+T9	Medical-Problem 698 704;706 718	patchy lateral left
+E8	Medical-Problem:T9
+T10	Medical-Problem 719 731	base opacity
+E9	Medical-Problem:T10
+T11	Medical-Assertion 733 735	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 736 759	large pleural effusions
+T13	Medical-Assertion 779 781;783 791	no evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 795 807	pneumothorax
+T15	Medical-Problem 849 855;857 865	mildly enlarged
+E12	Medical-Problem:T15
+T16	Medical-Anatomy 871 876	aorta
+E13	Medical-Anatomy:T16
+T17	Medical-Problem 928 941	consolidation
+T18	Medical-Anatomy 956 966	right lung
+T19	Medical-Problem 971 986;988 995	smaller area of opacity
+T20	Medical-Anatomy 1003 1017	left lung base
+T21	Medical-Assertion 1018 1032	concerning for
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1033 1053	multifocal pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

@@ -1,0 +1,15 @@
+T1	Medical-Assertion 217 219	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 220 232	pneumothorax
+T3	Medical-Problem 236 252	pleural effusion
+T4	Medical-Problem 279 292;294 306	Small opacity left midlung
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 322 337	left upper lobe
+T6	Lesion-Description 338 345	lesions
+T7	Medical-Assertion 371 382	No evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 386 418	appreciable pulmonary hemorrhage
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

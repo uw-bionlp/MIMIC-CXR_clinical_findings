@@ -1,0 +1,35 @@
+T1	Medical-Assertion 41 52	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 56 62	injury
+T3	Medical-Problem 75 83	Widening
+T4	Medical-Anatomy 91 108	right mediastinum
+T5	Lesion-Assertion 110 129	probably reflecting
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 132 138	cystic
+T7	Lesion-Description 139 145	lesion
+T8	Medical-Problem 733 775	right upper mediastinal contour is bulging
+E6	Medical-Problem:T8
+T9	Lesion-Characteristic 877 883	cystic
+T10	Lesion-Description 884 890	lesion
+T11	Medical-Assertion 1116 1118	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1119 1135	pleural effusion
+T13	Medical-Problem 1139 1151	pneumothorax
+T14	Medical-Assertion 1177 1188	No evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 1192 1198	injury
+T16	Medical-Problem 1209 1217	Widening
+T17	Medical-Anatomy 1225 1242	right mediastinum
+T18	Lesion-Assertion 1244 1263	probably reflecting
+A5	Lesion-AssertionValue T18 possible
+T19	Lesion-Characteristic 1266 1272	cystic
+T20	Lesion-Description 1273 1279	lesion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Lesion-Description:T20 has-Lesion-Assertion:T18 has-Lesion-Characteristic:T19

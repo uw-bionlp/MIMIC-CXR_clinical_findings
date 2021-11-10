@@ -1,0 +1,36 @@
+T1	Medical-Problem 106 110;112 129	Left  pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 147 171	left basilar atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 173 180	Opacity
+T4	Medical-Anatomy 193 210	left heart border
+T5	Medical-Assertion 231 244	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 245 256	atelectasis
+T7	Medical-Problem 263 272	infection
+T8	Medical-Assertion 276 288	not excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 450 470	Pericardial effusion
+E7	Medical-Problem:T9
+T10	Lesion-Size 601 607	5.9 cm
+E8	Lesion-Size:T10
+T11	Medical-Problem 725 746	left pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Assertion 784 786;788 796	no evidence
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 800 812	pneumothorax
+T14	Medical-Problem 815 834	Minimal atelectasis
+T15	Medical-Anatomy 842 851	left lung
+T16	Medical-Problem 859 863;865 876	Mild atelectasis
+T17	Medical-Anatomy 887 900	medial aspect
+T18	Medical-Anatomy 908 918	left hilus
+T19	Medical-Assertion 963 982	No current evidence
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 986 1001	pulmonary edema
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

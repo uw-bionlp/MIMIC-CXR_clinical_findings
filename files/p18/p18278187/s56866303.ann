@@ -1,0 +1,41 @@
+T1	Medical-Assertion 338 340	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 341 348;350 358	pleural effusion
+T3	Medical-Problem 360 372	pneumothorax
+T4	Medical-Problem 374 395	overt pulmonary edema
+T5	Medical-Problem 400 419	focal consolidation
+T6	Medical-Problem 456 473	thoracic aorta is
+E5	Medical-Problem:T6
+T7	Medical-Problem 474 482	tortuous
+E6	Medical-Problem:T7
+T8	Medical-Problem 488 500;502 522	deviates the trachea to the right
+E7	Medical-Problem:T8
+T9	Lesion-Anatomy 548 567	bilateral pulmonary
+T10	Lesion-Description 568 575	nodules
+T11	Lesion-Characteristic 577 586	calcified
+T12	Lesion-Anatomy 587 603	infrahilar right
+T13	Lesion-Description 605 615	lymph node
+T14	Medical-Problem 621 639	multiple fractures
+T15	Medical-Anatomy 650 677;679 718	many mid thoracic vertebral bodies and posterior lateral right ribs
+T16	Lesion-Size-Trend 723 732	unchanged
+A2	Lesion-Size-TrendValue T16 no-change
+T17	Medical-Problem 773 780	Chronic
+E15	Medical-Problem:T17
+T18	Medical-Problem 781 790	deformity
+T19	Medical-Anatomy 798 820	proximal right humerus
+T20	Medical-Assertion 822 830	suggests
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 831 845	prior fracture
+T22	Medical-Assertion 866 868	No
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 869 898	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T1
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E12	Lesion-Description:T13 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T16
+E13	Medical-Problem:T14 has-Medical-Anatomy:T15
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E19	Medical-Problem:T23 has-Medical-Assertion:T22

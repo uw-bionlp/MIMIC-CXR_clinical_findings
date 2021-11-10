@@ -1,0 +1,33 @@
+T1	Medical-Problem 246 259	calcification
+T2	Medical-Anatomy 268 279	aortic knob
+T3	Medical-Problem 304 328	minimal patchy opacities
+T4	Medical-Anatomy 337 347	lung bases
+T5	Medical-Assertion 354 365	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 366 377	atelectasis
+T7	Medical-Assertion 380 382	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 383 413	pulmonary vascular engorgement
+T9	Medical-Problem 439 472	Small bilateral pleural effusions
+T10	Medical-Assertion 473 487	may be present
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 494 496	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 497 509	pneumothorax
+T13	Medical-Problem 541 560	Minimal atelectasis
+T14	Medical-Anatomy 568 578	lung bases
+T15	Medical-Assertion 584 592	possible
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 593 606;608 617	small pleural effusions
+T17	Medical-Assertion 620 631	No evidence
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 636 651	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E11	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E12	Medical-Problem:T18 has-Medical-Assertion:T17

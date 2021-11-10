@@ -1,0 +1,34 @@
+T1	Medical-Problem 243 263	persistent elevation
+T2	Medical-Anatomy 271 290	right hemidiaphragm
+T3	Medical-Anatomy 293 311;313 317	Cardiac silhouette size
+E3	Medical-Anatomy:T3
+T4	Medical-Anatomy 355 360	Aorta
+T5	Medical-Problem 364 372	tortuous
+T6	Medical-Problem 391 421	atherosclerotic calcifications
+T7	Medical-Anatomy 429 433	arch
+T8	Medical-Problem 483 504	Bibasilar atelectasis
+E8	Medical-Problem:T8
+T9	Medical-Assertion 514 521	without
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 522 541	focal consolidation
+T11	Medical-Problem 544 586	Crowding of the bronchovascular structures
+E10	Medical-Problem:T11
+T12	Medical-Assertion 596 603	without
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 604 619;621 626	overt pulmonary edema
+T14	Medical-Assertion 628 630	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 631 647	pleural effusion
+T16	Medical-Problem 651 663	pneumothorax
+T17	Medical-Problem 698 719	Bibasilar atelectasis
+E14	Medical-Problem:T17
+T18	Medical-Problem 724 741	chronic elevation
+T19	Medical-Anatomy 749 768	right hemidiaphragm
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Anatomy:T7
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19

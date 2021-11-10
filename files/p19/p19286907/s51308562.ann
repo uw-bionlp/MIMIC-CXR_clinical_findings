@@ -1,0 +1,35 @@
+T1	Medical-Problem 57 69	Pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Assertion 256 258	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 259 267;269 281	definite pneumothorax
+T4	Medical-Problem 292 314	Subcutaneous emphysema
+T5	Medical-Anatomy 326 344;346 378	left neck and left lateral chest and abdominal wall
+T6	Medical-Problem 436 454	Hazy opacification
+T7	Medical-Anatomy 466 480	left lung base
+T8	Medical-Assertion 481 496	likely reflects
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 517 539	small pleural effusion
+T10	Medical-Problem 545 569	left basilar atelectasis
+T11	Medical-Problem 572 578;580 605	Patchy right basilar atelectasis
+E9	Medical-Problem:T11
+T12	Medical-Assertion 638 640	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 641 656	pulmonary edema
+T14	Medical-Assertion 737 739	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 740 752	pneumothorax
+T16	Medical-Problem 793 811;813 845	Slightly increased amount of subcutaneous emphysema
+T17	Medical-Anatomy 856 888;890 908	left neck and left lateral chest and abdominal wall
+T18	Medical-Problem 911 938	Small left pleural effusion
+E14	Medical-Problem:T18
+T19	Medical-Problem 943 964	bibasilar atelectasis
+E15	Medical-Problem:T19
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17

@@ -1,0 +1,28 @@
+T1	Medical-Problem 284 320	moderate sized left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 326 353	left lower lobe atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 369 394	left lower lobe pneumonia
+T4	Medical-Assertion 395 413	cannot be excluded
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Anatomy 420 430	right lung
+T6	Medical-Assertion 446 453	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 454 462	effusion
+T8	Medical-Problem 466 478	pneumothorax
+T9	Medical-Problem 522 533	obscuration
+T10	Medical-Anatomy 541 558	left heart border
+T11	Medical-Problem 641 671	Moderate left pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 677 698;700 713	associated lower lobe consolidation
+E10	Medical-Problem:T12
+T13	Medical-Assertion 720 733	may represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 734 745	atelectasis
+T15	Medical-Problem 753 762	pneumonia
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

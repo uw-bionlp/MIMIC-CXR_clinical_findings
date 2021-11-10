@@ -1,0 +1,29 @@
+T1	Medical-Assertion 239 241	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 242 254	pneumothorax
+T3	Medical-Problem 258 274	pleural effusion
+T4	Medical-Problem 283 307;309 328	slight increase in upper mediastinal caliber
+E3	Medical-Problem:T4
+T5	Medical-Assertion 390 393	not
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 394 414	mediastinal bleeding
+T7	Medical-Problem 417 434	Mild cardiomegaly
+E5	Medical-Problem:T7
+T8	Medical-Anatomy 454 463	both hila
+T9	Medical-Assertion 483 495	attesting to
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 496 511	volume overload
+T11	Medical-Problem 515 528;530 557	mild relative biventricular heart failure
+T12	Medical-Problem 560 576	Pleural effusion
+T13	Medical-Assertion 580 595	not appreciable
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Assertion 610 612	no
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 613 628	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

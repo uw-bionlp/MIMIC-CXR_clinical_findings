@@ -1,0 +1,27 @@
+T1	Medical-Problem 363 400	layering, large left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 425 457	mid lung field loculated portion
+E2	Medical-Problem:T2
+T3	Medical-Problem 569 576	opacity
+T4	Medical-Anatomy 591 607	right lower lobe
+T5	Lesion-Anatomy 624 634	chest wall
+T6	Lesion-Description 635 639	mass
+T7	Lesion-Size-Trend 664 673	unchanged
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 743 745	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 746 758	pneumothorax
+T10	Medical-Problem 762 777	pulmonary edema
+T11	Medical-Problem 780 788	Multiple
+E9	Medical-Problem:T11
+T12	Lesion-Size-Trend 1024 1041	stable appearance
+A3	Lesion-Size-TrendValue T12 no-change
+T13	Lesion-Anatomy 1050 1081	right lower thoracic chest wall
+T14	Lesion-Description 1082 1086	mass
+T15	Medical-Problem 1091 1126;1128 1136	loculated component of left pleural effusion
+E12	Medical-Problem:T15
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Lesion-Description:T14 has-Lesion-Size-Trend:T12 has-Lesion-Anatomy:T13

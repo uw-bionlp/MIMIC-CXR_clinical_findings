@@ -1,0 +1,24 @@
+T1	Medical-Problem 39 62	worsening consolidation
+T2	Medical-Anatomy 70 85	right lung base
+T3	Medical-Assertion 86 94	possibly
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 95 104;106 123	worsening  pleural effusion
+T5	Medical-Anatomy 126 135	Left lung
+T6	Medical-Problem 159 177;179 188	small left pleural  effusion
+T7	Medical-Assertion 200 202	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 203 224	frank pulmonary edema
+T9	Medical-Problem 569 587	decrease in volume
+T10	Medical-Anatomy 595 605;607 613	right hemi thorax
+T11	Medical-Problem 619 671	slight increase of the pre-existing pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 676 684;686 696	constant appearance
+E10	Medical-Problem:T12
+T13	Medical-Problem 704 723	reticular opacities
+T14	Medical-Anatomy 731 742	right lung.
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14

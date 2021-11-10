@@ -1,0 +1,65 @@
+T1	Medical-Problem 290 318	size remains mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 325 330	aorta
+E2	Medical-Problem:T2
+T3	Medical-Problem 334 343	calcified
+T4	Medical-Anatomy 351 357;359 363	aortic knob
+T5	Medical-Problem 416 437;439 442	similar prominence of the
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 443 472	main pulmonary artery contour
+T7	Medical-Assertion 473 486	suggestive of
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 487 498	enlargement
+T9	Medical-Assertion 501 503	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 504 513;515 520	pulmonary edema
+T11	Lesion-Characteristic 544 551	rounded
+T12	Lesion-Description 552 559	opacity
+T13	Lesion-Anatomy 580 591;593 597	right upper lobe
+T14	Lesion-Size-Trend 601 610	unchanged
+A3	Lesion-Size-TrendValue T14 no-change
+T15	Lesion-Assertion 612 618	likely
+A4	Lesion-AssertionValue T15 possible
+T16	Lesion-Size 621 625	tiny
+T17	Lesion-Description 626 635	granuloma
+T18	Lesion-Size-Trend 637 646	unchanged
+A5	Lesion-Size-TrendValue T18 no-change
+T19	Medical-Problem 649 656	Streaky
+E14	Medical-Problem:T19
+T20	Medical-Problem 657 664	opacity
+E15	Medical-Problem:T20
+T21	Medical-Anatomy 673 688	left lower lobe
+T22	Medical-Assertion 689 704	likely reflects
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 705 716	atelectasis
+T24	Medical-Assertion 719 721	No
+A7	Medical-AssertionValue T24 absent
+T25	Medical-Problem 722 741	focal consolidation
+T26	Medical-Problem 743 750;752 760	pleural effusion
+T27	Medical-Problem 764 776	pneumothorax
+T28	Medical-Assertion 800 802	no
+A8	Medical-AssertionValue T28 absent
+T29	Medical-Problem 803 816;818 831	acute osseous abnormalities
+T30	Medical-Problem 860 883	left lower lobe opacity
+E22	Medical-Problem:T30
+T31	Medical-Assertion 885 891	likely
+A9	Medical-AssertionValue T31 possible
+T32	Medical-Problem 892 903	atelectasis
+T33	Medical-Problem 916 926	prominence
+T34	Medical-Anatomy 935 964	main pulmonary artery contour
+T35	Medical-Assertion 965 978	suggestive of
+A10	Medical-AssertionValue T35 possible
+T36	Medical-Problem 979 990	enlargement
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13 has-Lesion-Size-Trend:T14
+E13	Lesion-Description:T17 has-Lesion-Anatomy:T13 has-Lesion-Assertion:T15 has-Lesion-Size-Present:T16 has-Lesion-Size-Trend:T18
+E17	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E18	Medical-Problem:T25 has-Medical-Assertion:T24
+E19	Medical-Problem:T26 has-Medical-Assertion:T24
+E20	Medical-Problem:T27 has-Medical-Assertion:T24
+E21	Medical-Problem:T29 has-Medical-Assertion:T28
+E23	Medical-Problem:T32 has-Medical-Assertion:T31
+E24	Medical-Problem:T33 has-Medical-Anatomy:T34
+E26	Medical-Problem:T36 has-Medical-Anatomy:T34 has-Medical-Assertion:T35

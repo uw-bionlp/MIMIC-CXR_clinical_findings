@@ -1,0 +1,38 @@
+T1	Medical-Assertion 83 106	raises the suspicion of
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 112 142	enlarging pericardial effusion
+T3	Medical-Problem 152 198	Bibasilar atelectasis, left greater than right
+E2	Medical-Problem:T3
+T4	Medical-Problem 200 216;218 229	Central vascular  congestion
+E3	Medical-Problem:T4
+T5	Lesion-Size 239 244	Large
+T6	Lesion-Anatomy 245 265	anterior mediastinal
+T7	Lesion-Description 266 270	mass
+T8	Medical-Assertion 670 680;682 694	raises the suspicion of
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 698 728	enlarging pericardial effusion
+T10	Lesion-Anatomy 743 754	mediastinal
+T11	Lesion-Description 755 759	mass
+T12	Medical-Problem 830 839;841 877	bibasilar atelectasis, left greater than right
+E10	Medical-Problem:T12
+T13	Medical-Assertion 880 882	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 883 890	pleural
+E11	Medical-Problem:T14
+T15	Medical-Problem 891 899	effusion
+T16	Medical-Problem 903 915	pneumothorax
+T17	Medical-Assertion 996 1019	raises the suspicion of
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1024 1054	enlarging pericardial effusion
+T19	Medical-Problem 1063 1109	Bibasilar atelectasis, left greater than right
+E15	Medical-Problem:T19
+T20	Lesion-Anatomy 1133 1144	mediastinal
+T21	Lesion-Description 1145 1149	mass
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T13
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Lesion-Description:T21 has-Lesion-Anatomy:T20

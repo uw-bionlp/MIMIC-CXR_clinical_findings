@@ -1,0 +1,26 @@
+T1	Medical-Problem 257 264;266 274	old rib fracture
+T2	Medical-Anatomy 282 307	left fourth posterior rib
+T3	Medical-Assertion 319 321	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 322 341	focal consolidation
+T5	Medical-Problem 344 360	pleural effusion
+T6	Medical-Problem 365 377	pneumothorax
+T7	Medical-Problem 389 409	persistent elevation
+T8	Medical-Anatomy 417 422;424 437	right hemidiaphragm
+T9	Lesion-Anatomy 450 475	left lower lobe pulmonary
+T10	Lesion-Description 476 482	nodule
+T11	Lesion-Assertion 486 489	not
+A2	Lesion-AssertionValue T11 absent
+T12	Medical-Problem 650 666	fibrotic changes
+T13	Medical-Anatomy 674 707	paramediastinal lungs bilaterally
+T14	Medical-Assertion 737 739	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 740 769	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9 has-Lesion-Assertion:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

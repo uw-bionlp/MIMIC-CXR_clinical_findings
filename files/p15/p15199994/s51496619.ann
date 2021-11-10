@@ -1,0 +1,29 @@
+T1	Medical-Problem 279 323	Left inferior lateral pleural thickening and
+E1	Medical-Problem:T1
+T2	Medical-Problem 324 332	scarring
+E2	Medical-Problem:T2
+T3	Medical-Problem 350 367	Streaky opacities
+T4	Medical-Anatomy 375 385	lung bases
+T5	Medical-Assertion 386 400	likely reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 401 412	atelectasis
+T7	Medical-Assertion 415 417	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 418 427;429 442	new focal consolidation
+T9	Medical-Problem 444 460	pleural effusion
+T10	Medical-Problem 464 476	pneumothorax
+T11	Medical-Assertion 500 502	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 504 531	acute osseous abnormalities
+T13	Medical-Problem 551 578	Streaky bibasilar opacities
+E10	Medical-Problem:T13
+T14	Medical-Assertion 580 586	likely
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 587 598	atelectasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

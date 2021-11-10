@@ -1,0 +1,29 @@
+T1	Medical-Problem 36 72	New bilateral parenchymal opacities,
+E1	Medical-Problem:T1
+T2	Medical-Problem 163 172	Infection
+T3	Medical-Assertion 176 184	possible
+A1	Medical-AssertionValue T3 possible
+T4	Lesion-Description 231 241	malignancy
+T5	Lesion-Assertion 245 257	not excluded
+A2	Lesion-AssertionValue T5 possible
+T6	Medical-Problem 819 856	parenchymal opacities, more confluent
+T7	Medical-Anatomy 864 878;880 896	left lung base posterolaterally
+T8	Medical-Anatomy 918 940	right perihilar region
+E6	Medical-Anatomy:T8
+T9	Medical-Anatomy 945 955;957 961	right lung base
+E7	Medical-Anatomy:T9
+T10	Lesion-Characteristic 1054 1060	Lucent
+T11	Lesion-Description 1061 1067	lesion
+T12	Medical-Problem 1073 1080	erosion
+T13	Medical-Anatomy 1088 1101;1103 1128	inferior left glenoid and scapular body
+T14	Medical-Problem 1224 1245	parenchymal opacities
+E12	Medical-Problem:T14
+T15	Medical-Assertion 1417 1429	not excluded
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 1572 1581	infection
+E13	Medical-Problem:T16
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Lesion-Description:T4 has-Lesion-Assertion:T5
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13

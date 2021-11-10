@@ -1,0 +1,36 @@
+T1	Lesion-Anatomy 390 400	left hilar
+T2	Lesion-Anatomy 406 417	mediastinal
+T3	Lesion-Description 418 433	lymphadenopathy
+T4	Medical-Anatomy 480 501	pulmonary vasculature
+T5	Medical-Assertion 505 508	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 509 517	engorged
+T7	Medical-Problem 529 546	chronic elevation
+T8	Medical-Anatomy 555 574	right hemidiaphragm
+T9	Medical-Problem 580 626	adjacent compressive right basilar atelectasis
+T10	Lesion-Anatomy 629 633;635 645	Left lower lobe
+T11	Lesion-Description 646 650	mass
+T12	Medical-Assertion 673 675	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 676 698	large pleural effusion
+T14	Medical-Problem 703 715	pneumothorax
+T15	Medical-Assertion 726 728	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 729 754	acute osseous abnormality
+T17	Lesion-Size-Trend 787 805	Similar appearance
+A4	Lesion-Size-TrendValue T17 no-change
+T18	Lesion-Anatomy 809 824	left lower lobe
+T19	Lesion-Description 825 829	mass
+T20	Medical-Problem 832 863;865 874	Chronic right hemidiaphragmatic elevation
+E16	Medical-Problem:T20
+T21	Medical-Problem 880 914	adjacent right basilar atelectasis
+E17	Medical-Problem:T21
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T1 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Lesion-Description:T19 has-Lesion-Size-Trend:T17 has-Lesion-Anatomy:T18

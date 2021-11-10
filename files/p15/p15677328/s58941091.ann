@@ -1,0 +1,22 @@
+T1	Medical-Problem 279 307	relative increase in opacity
+T2	Medical-Anatomy 317 339	left mid to lower lung
+T3	Medical-Problem 363 384	overlying soft tissue
+T4	Medical-Assertion 395 409	raises concern
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 414 423	pneumonia
+T6	Medical-Assertion 486 488	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 489 505	pleural effusion
+T8	Medical-Problem 510 522	pneumothorax
+T9	Medical-Problem 590 611	Subtle patchy opacity
+T10	Medical-Anatomy 632 654	left mid to lower lung
+T11	Medical-Assertion 655 667;669 671	could be due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 672 681	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

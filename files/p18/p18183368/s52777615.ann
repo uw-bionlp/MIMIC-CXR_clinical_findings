@@ -1,0 +1,22 @@
+T1	Medical-Assertion 202 204	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 205 221	pleural effusion
+T3	Medical-Problem 226 238	pneumothorax
+T4	Medical-Assertion 308 310	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 311 319	free air
+T6	Medical-Anatomy 327 338	mediastinum
+T7	Medical-Anatomy 342 361	under the diaphragm
+T8	Medical-Assertion 383 385	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 386 415	acute cardiopulmonary process
+T10	Medical-Assertion 418 429	No evidence
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 433 452	pneumoperitoneum or
+E7	Medical-Problem:T11
+T12	Medical-Problem 454 471	pneumomediastinum
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T10

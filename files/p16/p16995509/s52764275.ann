@@ -1,0 +1,37 @@
+T1	Medical-Problem 359 367;369 415	interval increase in size of the right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 511 516;518 534	right pleural effusion
+E2	Medical-Problem:T2
+T3	Lesion-Anatomy 614 629	right perihilar
+T4	Lesion-Description 630 634	mass
+T5	Medical-Anatomy 637 658	Pulmonary vasculature
+T6	Medical-Assertion 662 665	not
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 667 675	engorged
+T8	Medical-Problem 678 696	Patchy atelectasis
+T9	Medical-Anatomy 713 728	right lung base
+T10	Medical-Anatomy 735 744	left lung
+T11	Medical-Assertion 755 762	without
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 763 782	focal consolidation
+T13	Medical-Assertion 785 787	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 788 800	pneumothorax
+T15	Medical-Assertion 814 816	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 817 822;824 843	acute osseous abnormality
+T17	Medical-Problem 878 927	Increased size of moderate right pleural effusion
+E13	Medical-Problem:T17
+T18	Medical-Problem 933 949;951 970	associated right basilar atelectasis
+E14	Medical-Problem:T18
+T19	Lesion-Size-Trend 973 991	Similar appearance
+A5	Lesion-Size-TrendValue T19 no-change
+T20	Lesion-Anatomy 999 1014	right perihilar
+T21	Lesion-Description 1015 1019	mass
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Lesion-Description:T21 has-Lesion-Size-Trend:T19 has-Lesion-Anatomy:T20

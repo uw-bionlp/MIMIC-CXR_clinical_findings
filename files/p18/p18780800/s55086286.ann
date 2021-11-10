@@ -1,0 +1,44 @@
+T1	Medical-Problem 30 37	Opacity
+T2	Medical-Anatomy 45 55	right base
+T3	Medical-Problem 63 74	atelectasis
+T4	Medical-Problem 116 125	pneumonia
+T5	Medical-Assertion 126 144	cannot be excluded
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 155 157	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 158 174	pleural effusion
+T8	Medical-Problem 180 192	pneumothorax
+T9	Medical-Assertion 232 234	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 235 250	pulmonary edema
+T11	Medical-Problem 254 273	Hyperdense material
+T12	Medical-Anatomy 279 308	lower thoracic vertebral body
+T13	Lesion-Description 821 828	nodules
+T14	Lesion-Anatomy 855 869	left lower ___
+T15	Lesion-Anatomy 871 882	Right lower
+E12	Lesion-Anatomy:T15
+T16	Medical-Assertion 901 917	likely represent
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 918 929	atelectasis
+T18	Medical-Assertion 931 933	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 934 950	pleural effusion
+T20	Medical-Problem 955 967	pneumothorax
+T21	Medical-Anatomy 1145 1155	left lower
+T22	Medical-Problem 1179 1197	indolent infection
+T23	Medical-Problem 1206 1226	miliary tuberculosis
+E18	Medical-Problem:T23
+T24	Medical-Problem 1230 1243;1245 1267	other chronic inflammatory condition
+E19	Medical-Problem:T24
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Lesion-Description:T13 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T18
+E17	Medical-Problem:T22 has-Medical-Anatomy:T21

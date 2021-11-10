@@ -1,0 +1,46 @@
+T1	Medical-Problem 168 185	Confluent opacity
+T2	Medical-Anatomy 193 233;235 253	right perihilar region extends nearly to the lung periphery
+T3	Medical-Problem 277 295	marked volume loss
+E3	Medical-Problem:T3
+T4	Medical-Problem 301 309;311 352	shift of cardiomediastinal structures to the right
+E4	Medical-Problem:T4
+T5	Medical-Problem 364 389;391 404	marked elevation of right hemidiaphragm
+E5	Medical-Problem:T5
+T6	Medical-Problem 486 507	degree of volume loss
+E6	Medical-Problem:T6
+T7	Medical-Problem 570 586	Cystic lucencies
+T8	Medical-Anatomy 602 612	right apex
+T9	Medical-Problem 616 640	Smaller cystic lucencies
+T10	Medical-Anatomy 670 693;695 730	anterior portion of the right lung in the retrosternal area
+T11	Medical-Problem 825 847;849 890	Moderate right pleural effusion is partially loculated laterally
+E11	Medical-Problem:T11
+T12	Medical-Problem 927 937	loculation
+E12	Medical-Problem:T12
+T13	Medical-Assertion 1000 1002	No
+A1	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1003 1026	acute skeletal findings
+T15	Medical-Problem 1048 1074	Large conglomerate opacity
+T16	Medical-Anatomy 1078 1101	right juxtahilar region
+T17	Medical-Problem 1107 1124;1126 1130	associated volume loss
+T18	Medical-Assertion 1134 1148	concerning for
+A2	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1151 1174	postobstructive process
+T20	Medical-Assertion 1176 1182	likely
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1201 1209	collapse
+T22	Medical-Problem 1214 1227	consolidation
+T23	Medical-Problem 1346 1355;1357 1368	radiation pneumonitis
+T24	Medical-Assertion 1377 1385	possible
+A4	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1628 1660	loculated right pleural effusion
+E21	Medical-Problem:T25
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E13	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T17 has-Medical-Anatomy:T16
+E17	Medical-Problem:T19 has-Medical-Anatomy:T16 has-Medical-Assertion:T18
+E18	Medical-Problem:T21 has-Medical-Anatomy:T16 has-Medical-Assertion:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T16 has-Medical-Assertion:T18 has-Medical-Assertion:T20
+E20	Medical-Problem:T23 has-Medical-Assertion:T24

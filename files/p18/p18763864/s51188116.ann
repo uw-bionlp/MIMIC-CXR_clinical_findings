@@ -1,0 +1,28 @@
+T1	Medical-Problem 106 125	Dense consolidation
+T2	Medical-Anatomy 133 147	right mid lung
+T3	Medical-Assertion 176 193	likely represents
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 194 214	resolving hemorrhage
+T5	Medical-Problem 271 293	More diffuse opacities
+T6	Medical-Anatomy 301 311	right lung
+T7	Medical-Anatomy 343 358	right lung base
+T8	Medical-Problem 412 449	Stable mediastinal and hilar widening
+E7	Medical-Problem:T8
+T9	Lesion-Description 467 482	lymphadenopathy
+E8	Lesion-Description:T9
+T10	Medical-Problem 489 521	adjacent post-radiation fibrosis
+E9	Medical-Problem:T10
+T11	Medical-Problem 524 540	Subtle opacities
+T12	Medical-Anatomy 545 559	left lung base
+T13	Medical-Assertion 606 623;625 634	could potentially represent
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 635 663	additional site of infection
+T15	Medical-Problem 667 684	secondary process
+T16	Medical-Problem 693 702;704 714	localized aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

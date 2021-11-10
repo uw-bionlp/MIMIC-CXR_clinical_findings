@@ -1,0 +1,16 @@
+T1	Medical-Anatomy 205 209	Left
+T2	Medical-Assertion 258 269	can reflect
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 270 280	aspiration
+T4	Medical-Problem 283 309	Dense retrocardiac opacity
+E3	Medical-Problem:T4
+T5	Medical-Problem 337 345	collapse
+E4	Medical-Problem:T5
+T6	Medical-Anatomy 371 376	Lungs
+T7	Medical-Problem 382 405	otherwise hyperinflated
+T8	Medical-Assertion 441 443	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 444 451;453 464	pleural abnormality
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,23 @@
+T1	Medical-Problem 202 231	pulmonary vascular congestion
+T2	Medical-Problem 236 244;246 259	areas of consolidation
+T3	Medical-Assertion 260 286	have substantially cleared
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 298 311;313 326	some residual opacification
+T5	Medical-Anatomy 334 348	right mid zone
+T6	Medical-Anatomy 367 384	retrocardiac area
+T7	Medical-Assertion 397 410	could reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 411 422	atelectasis
+T9	Medical-Problem 426 447	supervening pneumonia
+T10	Medical-Problem 454 466;468 481	retrocardiac opacification
+E8	Medical-Problem:T10
+T11	Medical-Assertion 482 502	most likely reflects
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 503 526	substantial volume loss
+T13	Medical-Anatomy 534 544;546 550	left lower lobe
+E1	Medical-Problem:T1 has-Medical-Assertion:T3
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13

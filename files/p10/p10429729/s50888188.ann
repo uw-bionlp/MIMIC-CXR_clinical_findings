@@ -1,0 +1,26 @@
+T1	Medical-Problem 410 439	increased soft tissue density
+T2	Medical-Anatomy 448 459	right hilar
+T3	Medical-Anatomy 464 482	suprahilar regions
+T4	Medical-Anatomy 489 494	lungs
+T5	Medical-Assertion 515 522	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 524 543	focal consolidation
+T7	Medical-Problem 545 553	effusion
+T8	Medical-Problem 557 586	pulmonary vascular congestion
+T9	Medical-Assertion 647 649	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 650 663;665 676	acute osseous abnormality
+T11	Medical-Problem 708 737	Increased soft tissue density
+T12	Medical-Anatomy 745 771;773 795	right suprahilar and right paramediastinal region
+T13	Medical-Problem 897 919;921 928	underlying parenchymal changes
+E11	Medical-Problem:T13
+T14	Medical-Problem 932 940	adjacent
+E12	Medical-Problem:T14
+T15	Lesion-Description 941 951	adenopathy
+E13	Lesion-Description:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12

@@ -1,0 +1,38 @@
+T1	Medical-Problem 378 400	subcutaneous emphysema
+T2	Medical-Anatomy 408 442;444 448	soft tissues of the chest wall and neck
+T3	Medical-Assertion 459 470	no evidence
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 474 491	pneumomediastinum
+T5	Medical-Problem 495 507	pneumothorax
+T6	Medical-Problem 509 518	Bibasilar
+E5	Medical-Problem:T6
+T7	Medical-Problem 520 538	airspace opacities
+E6	Medical-Problem:T7
+T8	Medical-Assertion 539 560	most likely represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 561 572	atelectasis
+T10	Medical-Problem 583 593	aspiration
+T11	Medical-Problem 598 607	pneumonia
+T12	Medical-Assertion 608 633	should also be considered
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 645 653	possibly
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 656 675	small left effusion
+T15	Medical-Assertion 678 680	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 681 696	pulmonary edema
+T17	Medical-Problem 754 767	Calcification
+T18	Medical-Anatomy 775 780	aorta
+T19	Medical-Problem 797 812	atherosclerosis
+T20	Medical-Problem 815 822	Several
+E15	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T12
+E9	Medical-Problem:T11 has-Medical-Assertion:T8 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T18
+E14	Medical-Problem:T19 has-Medical-Anatomy:T18

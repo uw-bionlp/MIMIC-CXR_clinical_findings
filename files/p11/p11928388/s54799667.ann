@@ -1,0 +1,41 @@
+T1	Medical-Problem 374 383	Fractures
+T2	Medical-Anatomy 391 420	left fifth through seven ribs
+T3	Medical-Problem 437 454	increased lucency
+T4	Medical-Anatomy 469 483	left lung base
+T5	Medical-Assertion 484 498	suspicious for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 502 514	pneumothorax
+T7	Medical-Assertion 516 518	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 519 538	contralateral shift
+T9	Medical-Anatomy 546 568	mediastinal structures
+T10	Medical-Problem 593 600	tension
+T11	Medical-Problem 602 621	Minimal atelectasis
+T12	Medical-Anatomy 638 652	left lung base
+T13	Medical-Assertion 654 656	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 658 680	large pleural effusion
+T15	Medical-Problem 698 716	Leftward deviation
+T16	Medical-Anatomy 724 734;736 763	trachea at the level of thoracic inlet
+T17	Medical-Assertion 764 781	may be due to the
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 796 810	thyroid goiter
+T19	Medical-Problem 814 822	Fracture
+T20	Medical-Anatomy 830 855	right seventh lateral rib
+T21	Medical-Problem 889 937	Left fifth through seventh lateral rib fractures
+E17	Medical-Problem:T21
+T22	Medical-Problem 970 993	left-sided pneumothorax
+E18	Medical-Problem:T22
+T23	Medical-Problem 996 1004	Fracture
+T24	Medical-Anatomy 1012 1037	right seventh lateral rib
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E19	Medical-Problem:T23 has-Medical-Anatomy:T24

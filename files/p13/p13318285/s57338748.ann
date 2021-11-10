@@ -1,0 +1,17 @@
+T1	Medical-Problem 310 325;327 355	mildly enlarged cardiomediastinal silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 360 381	slightly hypoinflated
+T3	Medical-Anatomy 382 387	lungs
+T4	Medical-Assertion 388 395	without
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 396 401;403 416	focal consolidation
+T6	Medical-Problem 418 434	pleural effusion
+T7	Medical-Problem 439 451	pneumothorax
+T8	Medical-Assertion 520 522	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 523 552	acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

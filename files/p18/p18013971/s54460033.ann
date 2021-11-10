@@ -1,0 +1,28 @@
+T1	Medical-Problem 230 235;237 244	vague opacity
+T2	Medical-Anatomy 263 286	right mid-to-upper lung
+T3	Medical-Assertion 367 394	differential considerations
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 404 413	pneumonia
+T5	Medical-Problem 421 439	overlying artifact
+T6	Medical-Assertion 453 455	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 456 464;466 479	definite consolidation
+T8	Medical-Problem 481 489	effusion
+T9	Medical-Problem 491 503	pneumothorax
+T10	Medical-Problem 577 599	Interposition of bowel
+E8	Medical-Problem:T10
+T11	Medical-Problem 618 655	lucency below the right hemidiaphragm
+E9	Medical-Problem:T11
+T12	Medical-Problem 673 686	Vague opacity
+T13	Medical-Anatomy 694 717	right mid-to-upper lung
+T14	Medical-Assertion 719 727	question
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 728 733;735 744	early pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

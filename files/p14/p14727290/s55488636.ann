@@ -1,0 +1,44 @@
+T1	Medical-Assertion 192 194	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 195 214	focal consolidation
+T3	Medical-Problem 216 232	pleural effusion
+T4	Medical-Problem 237 245	evidence
+E3	Medical-Problem:T4
+T5	Medical-Problem 250 262	pneumothorax
+T6	Lesion-Size 273 292	Small subcentimeter
+T7	Lesion-Characteristic 293 298	dense
+T8	Lesion-Description 299 314	nodular opacity
+T9	Lesion-Anatomy 336 359	right mid-to-lower lung
+T10	Lesion-Characteristic 360 363	may
+T11	Lesion-Characteristic 398 407	calcified
+T12	Lesion-Description 408 417	granuloma
+T13	Medical-Problem 482 499	aorta is tortuous
+E12	Medical-Problem:T13
+T14	Medical-Anatomy 502 520	Right paratracheal
+T15	Medical-Problem 521 540	soft tissue density
+T16	Medical-Assertion 541 548	without
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 550 561	indentation
+T18	Medical-Anatomy 569 574	aorta
+T19	Medical-Assertion 575 588	may represent
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 589 617	prominent vascular structure
+T21	Medical-Problem 622 637	mediastinal fat
+T22	Medical-Assertion 640 642	No
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 643 664	overt pulmonary edema
+T24	Medical-Problem 675 695	Degenerative changes
+T25	Medical-Anatomy 716 721	spine
+T26	Medical-Problem 732 752	osteophyte formation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T1
+E7	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E11	Lesion-Description:T12 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11
+E14	Medical-Problem:T15 has-Medical-Anatomy:T14
+E15	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T16 has-Medical-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T14 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E18	Medical-Problem:T21 has-Medical-Anatomy:T14 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T24 has-Medical-Anatomy:T25
+E22	Medical-Problem:T26 has-Medical-Anatomy:T25

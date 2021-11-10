@@ -1,0 +1,37 @@
+T1	Medical-Problem 205 224;226 242	small residual left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 247 258	atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Assertion 260 279	likely representing
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 280 302	post-operative changes
+T5	Medical-Assertion 352 354	no
+A2	Medical-AssertionValue T5 absent
+T6	Lesion-Size-Trend 355 358	new
+A3	Lesion-Size-TrendValue T6 new
+T7	Lesion-Characteristic 359 364	focal
+T8	Lesion-Description 365 369	mass
+T9	Medical-Problem 372 385	consolidation
+T10	Medical-Problem 390 395	edema
+T11	Medical-Problem 402 444;446 454	cardiomediastinal silhouette is moderately enlarged
+E8	Medical-Problem:T11
+T12	Medical-Assertion 493 495	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 496 508	pneumothorax
+T14	Medical-Assertion 571 573	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 574 603	acute cardiopulmonary process
+T16	Medical-Problem 610 657	Stable small residual left pleural effusion and
+E11	Medical-Problem:T16
+T17	Medical-Problem 658 669	atelectasis
+E12	Medical-Problem:T17
+T18	Medical-Assertion 671 677;679 691	likely representing
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 692 714	post-operative changes
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T8 has-Lesion-Size-Trend:T6 has-Lesion-Characteristic:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T5
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T19 has-Medical-Assertion:T18

@@ -1,0 +1,41 @@
+T1	Medical-Problem 324 346	moderate hiatal hernia
+T2	Medical-Problem 352 369	streaky opacities
+T3	Medical-Assertion 370 380	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 381 397;399 410	minor associated atelectasis
+T5	Medical-Anatomy 443 458	left lower lobe
+T6	Medical-Anatomy 468 473;475 485	right upper lobe
+T7	Medical-Problem 497 518	vague streaky opacity
+T8	Medical-Problem 540 553;555 586	previous site of more extensive opacification
+T9	Medical-Assertion 588 595	perhaps
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 596 624;626 635	residual scarring from prior infection
+T11	Medical-Assertion 646 648	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 649 661	pneumothorax
+T13	Medical-Problem 665 681	pleural effusion
+T14	Medical-Problem 685 696;698 718	moderate L1 compression fracture
+E11	Medical-Problem:T14
+T15	Medical-Problem 755 775;777 808	new mild to moderate biconcave loss in height of T12
+E12	Medical-Problem:T15
+T16	Medical-Problem 833 845;847 860	bones appear demineralized
+E13	Medical-Problem:T16
+T17	Medical-Assertion 885 896	No evidence
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 900 929	acute cardiopulmonary disease
+T19	Medical-Problem 933 953	intrathoracic injury
+T20	Medical-Problem 962 985	Compression deformities
+T21	Medical-Anatomy 989 999	T12 and L1
+T22	Medical-Problem 1109 1131	Moderate hiatal hernia
+E18	Medical-Problem:T22
+E1	Medical-Problem:T1 has-Medical-Anatomy:T5
+E2	Medical-Problem:T2 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21

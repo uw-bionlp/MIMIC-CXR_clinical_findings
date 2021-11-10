@@ -1,0 +1,31 @@
+T1	Medical-Problem 313 343	atherosclerotic calcifications
+T2	Medical-Anatomy 361 372	aortic arch
+T3	Medical-Problem 413 427	Patchy opacity
+T4	Medical-Anatomy 439 465;467 476	lateral aspect of the left lung base
+T5	Medical-Assertion 477 492	likely reflects
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 534 542	scarring
+T7	Medical-Problem 547 555	fibrosis
+T8	Medical-Assertion 558 560	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 561 584	new focal consolidation
+T10	Medical-Problem 586 602	pleural effusion
+T11	Medical-Problem 606 618	pneumothorax
+T12	Medical-Problem 728 753	mild degenerative changes
+T13	Medical-Anatomy 761 775	thoracic spine
+T14	Medical-Assertion 796 798	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 799 832	acute cardiopulmonary abnormality
+T16	Lesion-Description 859 866	nodules
+T17	Lesion-Assertion 878 886	not well
+A4	Lesion-AssertionValue T17 absent
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Lesion-Description:T16 has-Lesion-Assertion:T17

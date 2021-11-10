@@ -1,0 +1,35 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Lesion-Characteristic 68 81	Rounded dense
+T4	Lesion-Description 82 89	nodular
+T5	Lesion-Anatomy 122 137	right lung base
+T6	Lesion-Description 186 190;192 199	bone  island
+E5	Lesion-Description:T6
+T7	Medical-Problem 227 243	Shallow obliques
+E6	Medical-Problem:T7
+T8	Lesion-Description 609 616;618 625	nodular opacity
+T9	Lesion-Anatomy 646 661	right lung base
+T10	Medical-Assertion 702 704	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 705 713	effusion
+T12	Medical-Problem 717 746	pulmonary vascular congestion
+T13	Medical-Assertion 881 883	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 884 913	acute cardiopulmonary process
+T15	Lesion-Characteristic 916 929	Rounded dense
+T16	Lesion-Description 930 937	nodular
+T17	Lesion-Anatomy 969 984	right lung base
+T18	Lesion-Description 1033 1037;1039 1045	bone island
+E15	Lesion-Description:T18
+T19	Medical-Problem 1073 1089	Shallow obliques
+T20	Medical-Assertion 1090 1099	suggested
+A4	Medical-AssertionValue T20 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Lesion-Description:T16 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T20

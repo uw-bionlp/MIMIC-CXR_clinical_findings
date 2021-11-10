@@ -1,0 +1,39 @@
+T1	Lesion-Characteristic 283 292	calcified
+T2	Lesion-Description 300 308	implants
+T3	Medical-Problem 353 383	Perihilar opacity on the right
+E3	Medical-Problem:T3
+T4	Lesion-Assertion 414 417	not
+A1	Lesion-AssertionValue T4 absent
+T5	Lesion-Description 432 441	mass-like
+T6	Medical-Assertion 449 462	may represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 466 486	inflammatory process
+T8	Medical-Problem 490 501	atelectasis
+T9	Medical-Anatomy 513 524	right hilum
+T10	Medical-Anatomy 546 561	both lung bases
+T11	Medical-Problem 573 578;580 589	vague opacities
+T12	Medical-Assertion 596 609	may represent
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 610 621	atelectasis
+T14	Medical-Anatomy 679 686	stomach
+E11	Medical-Anatomy:T14
+T15	Medical-Problem 727 744	Basilar opacities
+E12	Medical-Problem:T15
+T16	Medical-Assertion 751 764	may represent
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 768 779	atelectasis
+T18	Medical-Problem 781 798	pleural effusions
+T19	Medical-Assertion 804 824	difficult to exclude
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 827 850	Right perihilar opacity
+T21	Medical-Assertion 859 868	suspected
+A6	Medical-AssertionValue T21 possible
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1
+E4	Lesion-Description:T5 has-Lesion-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T9
+E6	Medical-Problem:T8 has-Medical-Assertion:T6 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16 has-Medical-Assertion:T19
+E15	Medical-Problem:T20 has-Medical-Assertion:T21

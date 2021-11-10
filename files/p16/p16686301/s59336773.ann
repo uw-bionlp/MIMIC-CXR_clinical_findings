@@ -1,0 +1,16 @@
+T1	Medical-Problem 600 643	layering effusions, right greater than left
+E1	Medical-Problem:T1
+T2	Medical-Problem 650 672;674 681	consolidative airspace opacity
+T3	Medical-Anatomy 689 722	right upper lung and hilar region
+T4	Medical-Anatomy 741 751;753 779	right base and in the left lower lung
+T5	Medical-Problem 810 830	multifocal pneumonia
+E5	Medical-Problem:T5
+T6	Medical-Assertion 876 878	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 879 891	pneumothorax
+T8	Medical-Assertion 893 895	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 897 912	pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

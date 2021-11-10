@@ -1,0 +1,38 @@
+T1	Medical-Problem 133 183	Right upper and perhaps right middle lobe collapse
+E1	Medical-Problem:T1
+T2	Lesion-Size 192 197	large
+T3	Lesion-Anatomy 198 211	central hilar
+T4	Lesion-Description 213 217	mass
+T5	Lesion-Characteristic 293 312	local dissemination
+T6	Lesion-Description 316 321	tumor
+T7	Medical-Anatomy 324 343	Right main bronchus
+T8	Medical-Problem 345 359	poorly defined
+T9	Medical-Assertion 361 367	may be
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 368 381	more narrowed
+T11	Medical-Problem 396 414;416 427	New left perihilar abnormality
+E10	Medical-Problem:T11
+T12	Medical-Assertion 428 436	could be
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 437 445	vascular
+T14	Medical-Problem 449 469	lymphatic congestion
+T15	Medical-Assertion 542 544	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 545 554	pneumonia
+T17	Medical-Assertion 581 583	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 584 605	left pleural effusion
+T19	Medical-Problem 628 647;649 657	small right pleural effusion
+E15	Medical-Problem:T19
+T20	Medical-Assertion 660 662	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 663 675	pneumothorax
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T5
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

@@ -1,0 +1,24 @@
+T1	Medical-Assertion 313 315	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 317 336	pleural abnormality
+T3	Medical-Problem 350 366	marked asymmetry
+T4	Medical-Anatomy 386 404	pulmonary arteries
+T5	Medical-Problem 406 414;416 431	right is mildly enlarged
+E4	Medical-Problem:T5
+T6	Medical-Problem 440 458	left is very small
+E5	Medical-Problem:T6
+T7	Medical-Assertion 460 479	raising possibility
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 483 493;495 519	congenital pulmonary artery atresia
+T9	Medical-Anatomy 589 603	Thoracic aorta
+T10	Medical-Problem 607 615	tortuous
+T11	Medical-Problem 620 635	mildly enlarged
+T12	Medical-Assertion 640 643	not
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 644 662	focally aneurysmal
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9
+E10	Medical-Problem:T13 has-Medical-Anatomy:T9 has-Medical-Assertion:T12

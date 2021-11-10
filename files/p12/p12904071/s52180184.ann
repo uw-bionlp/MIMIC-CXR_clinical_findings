@@ -1,0 +1,22 @@
+T1	Medical-Problem 257 275	moderate elevation
+T2	Medical-Anatomy 283 302	right hemidiaphragm
+T3	Medical-Problem 307 317;319 330	associated atelectasis
+T4	Medical-Anatomy 338 353	right lung base
+T5	Medical-Problem 384 392;394 406	Moderate cardiomegaly
+E5	Medical-Problem:T5
+T6	Medical-Assertion 428 430	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 431 443	pneumothorax
+T8	Medical-Problem 446 456	Prominence
+T9	Medical-Anatomy 465 486	pulmonary vasculature
+T10	Medical-Problem 567 587	Increased prominence
+T11	Medical-Anatomy 595 616	pulmonary vasculature
+T12	Medical-Assertion 620 633	suggestive of
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 634 644;646 654	mild fluid overload
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

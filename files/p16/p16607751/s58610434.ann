@@ -1,0 +1,37 @@
+T1	Medical-Assertion 42 44	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 45 78	acute cardiopulmonary abnormality
+T3	Medical-Problem 81 98	Chronic elevation
+T4	Medical-Anatomy 106 110;112 126	left  hemidiaphragm
+T5	Lesion-Characteristic 129 133	Bony
+T6	Lesion-Description 134 141	lesions
+T7	Lesion-Characteristic 146 159	not well seen
+T8	Medical-Assertion 388 390	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 391 424	acute cardiopulmonary abnormality
+T10	Medical-Problem 427 444	Chronic elevation
+T11	Medical-Anatomy 452 456;458 472	left  hemidiaphragm
+T12	Lesion-Characteristic 475 479	Bony
+T13	Lesion-Description 480 487	lesions
+T14	Lesion-Characteristic 492 505	not well seen
+T15	Medical-Problem 1118 1165	elevation of the left hemidiaphragmatic contour
+E13	Medical-Problem:T15
+T16	Medical-Problem 1168 1183	Minimal basilar
+E14	Medical-Problem:T16
+T17	Medical-Problem 1184 1195;1197 1204	atelectatic changes
+E15	Medical-Problem:T17
+T18	Medical-Assertion 1210 1221	no evidence
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1225 1240	acute pneumonia
+T20	Medical-Problem 1244 1263	vascular congestion
+T21	Lesion-Description 1280 1287	lesions
+T22	Lesion-Anatomy 1298 1322	multiple bony structures
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T14
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T18
+E18	Lesion-Description:T21 has-Lesion-Anatomy:T22

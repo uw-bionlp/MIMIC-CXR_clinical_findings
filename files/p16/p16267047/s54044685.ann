@@ -1,0 +1,22 @@
+T1	Medical-Assertion 161 163	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 164 183	focal consolidation
+T3	Medical-Problem 186 202	pleural effusion
+T4	Medical-Problem 207 219	pneumothorax
+T5	Lesion-Size 282 286	4-mm
+T6	Lesion-Description 287 302	nodular opacity
+T7	Lesion-Anatomy 317 338	anterior left 4th rib
+T8	Lesion-Assertion 339 342;344 346	may be
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Description 349 360	bone island
+T10	Lesion-Description 366 375	prominent
+E8	Lesion-Description:T10
+T11	Medical-Assertion 400 402	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 403 432	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T7
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T7 has-Lesion-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

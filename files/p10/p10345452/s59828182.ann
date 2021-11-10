@@ -1,0 +1,55 @@
+T1	Medical-Problem 290 310	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 313 318	Heart
+T3	Medical-Problem 327 351	at least mildly enlarged
+T4	Medical-Problem 358 366;368 376	aorta is unfolded
+E4	Medical-Problem:T4
+T5	Medical-Problem 388 396	crowding
+T6	Medical-Anatomy 404 430	bronchovascular structures
+T7	Medical-Assertion 436 444	possible
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 446 480	mild pulmonary vascular congestion
+T9	Medical-Assertion 486 488	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 489 510	overt pulmonary edema
+T11	Medical-Problem 525 553	Bibasilar airspace opacities
+E9	Medical-Problem:T11
+T12	Medical-Problem 641 649	Blunting
+T13	Medical-Anatomy 657 680	left costophrenic angle
+T14	Medical-Assertion 682 695	could suggest
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 698 725	small left pleural effusion
+T16	Medical-Assertion 728 730	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 731 743	pneumothorax
+T18	Medical-Assertion 761 763	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 764 791	acute osseous abnormalities
+T20	Medical-Problem 826 842	Low lung volumes
+E15	Medical-Problem:T20
+T21	Medical-Problem 848 876	bibasilar airspace opacities
+E16	Medical-Problem:T21
+T22	Medical-Problem 936 944	Blunting
+T23	Medical-Anatomy 952 975	left costophrenic angle
+T24	Medical-Assertion 977 985	suggests
+A6	Medical-AssertionValue T24 possible
+T25	Medical-Problem 988 1002	small effusion
+T26	Medical-Problem 1005 1025	Superimposed process
+T27	Medical-Anatomy 1033 1043	lung bases
+T28	Medical-Assertion 1048 1068	difficult to exclude
+A7	Medical-AssertionValue T28 possible
+T29	Medical-Assertion 1071 1079	Possible
+A8	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1080 1114	mild pulmonary vascular congestion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T22 has-Medical-Anatomy:T23
+E19	Medical-Problem:T25 has-Medical-Anatomy:T23 has-Medical-Assertion:T24
+E20	Medical-Problem:T26 has-Medical-Anatomy:T27 has-Medical-Assertion:T28
+E22	Medical-Problem:T30 has-Medical-Assertion:T29

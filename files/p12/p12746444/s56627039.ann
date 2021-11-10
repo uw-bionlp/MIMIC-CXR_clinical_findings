@@ -1,0 +1,29 @@
+T1	Medical-Problem 124 141	Increased opacity
+T2	Medical-Anatomy 149 165	right lower lung
+T3	Medical-Assertion 166 179	could reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 182 193	atelectasis
+T5	Medical-Problem 206 230	early infectious process
+T6	Medical-Assertion 231 258	cannot be entirely excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 299 307	Probable
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 308 331;333 343	small bilateral pleural  effusions
+T9	Medical-Problem 845 850;852 879	small left-sided pleural effusion
+E6	Medical-Problem:T9
+T10	Medical-Problem 885 905	adjacent atelectasis
+E7	Medical-Problem:T10
+T11	Medical-Assertion 1006 1008	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1010 1022	pneumothorax
+T13	Medical-Problem 1040 1058	Small left pleural
+E9	Medical-Problem:T13
+T14	Medical-Problem 1059 1067	effusion
+E10	Medical-Problem:T14
+T15	Medical-Problem 1073 1093	adjacent atelectasis
+E11	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

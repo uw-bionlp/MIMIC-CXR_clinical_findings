@@ -1,0 +1,21 @@
+T1	Medical-Assertion 257 259	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 260 276	pleural effusion
+T3	Medical-Problem 280 292	pneumothorax
+T4	Medical-Problem 295 312	Minimal elevation
+T5	Medical-Anatomy 321 339	left hemidiaphragm
+T6	Medical-Problem 355 392	Mild anterior compression deformities
+T7	Medical-Anatomy 397 398	2
+T8	Medical-Anatomy 406 431	thoracic vertebral bodies
+T9	Medical-Assertion 474 476	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 477 496	focal consolidation
+T11	Medical-Assertion 497 510	worrisome for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 511 520	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T11

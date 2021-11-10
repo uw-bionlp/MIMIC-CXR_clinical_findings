@@ -1,0 +1,21 @@
+T1	Medical-Problem 230 250	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 253 274	Moderate cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 280 290;292 300	mild fluid overload
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 307 323	right upper lobe
+T5	Medical-Problem 324 331	opacity
+T6	Medical-Problem 337 353	air bronchograms
+T7	Medical-Assertion 355 361;363 373	likely reflecting
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 374 383	pneumonia
+T9	Medical-Assertion 498 509	no evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 516 533	left pneumothorax
+T11	Medical-Problem 536 563	Bilateral basal atelectasis
+E9	Medical-Problem:T11
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

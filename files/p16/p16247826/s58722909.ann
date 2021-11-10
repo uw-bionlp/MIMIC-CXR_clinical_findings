@@ -1,0 +1,26 @@
+T1	Medical-Problem 236 261;263 278	apparent severity of mild pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 321 331	lung bases
+T3	Medical-Problem 343 381	at least moderately severe atelectasis
+T4	Medical-Anatomy 389 393	left
+T5	Medical-Anatomy 406 411;413 417	right lung
+T6	Medical-Assertion 419 433	cannot exclude
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 434 443	pneumonia
+T8	Medical-Problem 464 472	at least
+E7	Medical-Problem:T8
+T9	Medical-Problem 476 516	small-to-moderate right pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 519 540	Moderate cardiomegaly
+E9	Medical-Problem:T10
+T11	Medical-Problem 555 578	Unexplained is widening
+T12	Medical-Anatomy 586 631;633 646	mediastinum to the right of midline extending into the neck
+T13	Medical-Assertion 705 715	suggestion
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 726 742	widening narrows
+T15	Medical-Anatomy 747 754	trachea
+T16	Medical-Anatomy 759 769;771 779	right main bronchus
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15 has-Medical-Anatomy:T16

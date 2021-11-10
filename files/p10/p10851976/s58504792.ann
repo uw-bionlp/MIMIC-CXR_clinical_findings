@@ -1,0 +1,28 @@
+T1	Medical-Problem 282 304	right convex scoliosis
+T2	Medical-Anatomy 312 326	thoracic spine
+T3	Medical-Assertion 383 385	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 386 402	pleural effusion
+T5	Medical-Problem 406 418	pneumothorax
+T6	Medical-Assertion 431 433	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 434 458	focal lung consolidation
+T8	Lesion-Characteristic 463 472	calcified
+T9	Lesion-Description 473 479	nodule
+T10	Lesion-Anatomy 498 502;504 513	left lung base
+T11	Lesion-Size-Trend 515 524	unchanged
+A3	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Assertion 554 560	likely
+A4	Lesion-AssertionValue T12 possible
+T13	Lesion-Characteristic 563 572	calcified
+T14	Lesion-Description 574 583	granuloma
+T15	Medical-Assertion 604 615	No evidence
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 619 628	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Lesion-Description:T9 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T11
+E10	Lesion-Description:T14 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

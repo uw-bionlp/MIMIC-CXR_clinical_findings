@@ -1,0 +1,30 @@
+T1	Medical-Assertion 318 320	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 321 337	pleural effusion
+T3	Medical-Problem 342 354	pneumothorax
+T4	Lesion-Size 357 361	7 mm
+T5	Lesion-Description 362 368	nodule
+T6	Lesion-Anatomy 376 389	left mid lung
+T7	Lesion-Description 431 437	nodule
+E6	Lesion-Description:T7
+T8	Lesion-Anatomy 458 474	right upper lobe
+T9	Lesion-Description 475 481	nodule
+T10	Lesion-Assertion 485 488	not
+A2	Lesion-AssertionValue T10 absent
+T11	Lesion-Anatomy 569 584	Left upper lobe
+T12	Lesion-Description 585 591	nodule
+T13	Lesion-Anatomy 598 614	right upper lobe
+T14	Lesion-Description 615 622	nodules
+T15	Lesion-Assertion 717 719	no
+A3	Lesion-AssertionValue T15 absent
+T16	Lesion-Characteristic 721 729	definite
+T17	Lesion-Size-Trend 730 733	new
+A4	Lesion-Size-TrendValue T17 new
+T18	Lesion-Description 734 741	nodules
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T10
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T11
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T13
+E14	Lesion-Description:T18 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16 has-Lesion-Size-Trend:T17

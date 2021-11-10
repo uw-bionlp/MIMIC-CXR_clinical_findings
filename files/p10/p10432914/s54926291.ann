@@ -1,0 +1,35 @@
+T1	Medical-Problem 229 245;247 259	unchanged marked cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 265 282	marked tortuosity
+T3	Medical-Anatomy 290 304	thoracic aorta
+T4	Medical-Problem 370 403	Areas of retrocardiac atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Problem 440 447;449 465	minimal parenchymal scar
+T6	Medical-Anatomy 473 482	left lung
+T7	Medical-Problem 495 516;518 528	mild bilateral apical thickening
+E7	Medical-Problem:T7
+T8	Medical-Anatomy 535 550	lung parenchyma
+T9	Medical-Assertion 557 568	no evidence
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 572 585	acute disease
+T11	Medical-Problem 595 604	pneumonia
+T12	Medical-Problem 608 623	pulmonary edema
+T13	Lesion-Assertion 626 628	No
+A2	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 629 633	lung
+T15	Lesion-Description 634 641	nodules
+T16	Lesion-Description 645 651	masses
+T17	Medical-Problem 687 709	wedge-shaped deformity
+T18	Medical-Anatomy 715 733;735 739	thoracic vertebral body
+T19	Medical-Assertion 741 758	likely reflecting
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 759 785	vertebral body compression
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E13	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14
+E14	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T19

@@ -1,0 +1,43 @@
+T1	Medical-Problem 467 505	crowding of bronchovascular structures
+E1	Medical-Problem:T1
+T2	Medical-Problem 511 525;527 546	mild pulmonary vascular congestion
+E2	Medical-Problem:T2
+T3	Medical-Problem 549 581	New small right pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 639 655	Patchy opacities
+T5	Medical-Anatomy 663 679;681 704	lung bases, more pronounced on the right
+T6	Medical-Assertion 758 772	likely reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 773 793	areas of atelectasis
+T8	Medical-Problem 796 805	Infection
+T9	Medical-Problem 809 819	aspiration
+T10	Medical-Anatomy 827 832;834 843	right lung base
+T11	Medical-Assertion 884 886	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 887 899	pneumothorax
+T13	Medical-Problem 914 930	Radiopaque focus
+T14	Medical-Anatomy 949 972	right dome of the liver
+T15	Medical-Problem 1021 1049	Small right pleural effusion
+E13	Medical-Problem:T15
+T16	Medical-Problem 1097 1131	mild pulmonary vascular congestion
+E14	Medical-Problem:T16
+T17	Medical-Problem 1134 1150	Patchy opacities
+T18	Medical-Anatomy 1158 1168	lung bases
+T19	Medical-Assertion 1169 1172;1174 1181	may reflect
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1182 1193	atelectasis
+T21	Medical-Problem 1199 1209	aspiration
+T22	Medical-Problem 1213 1222	infection
+T23	Medical-Assertion 1223 1252	cannot be completely excluded
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Anatomy 1261 1276	right lung base
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T23 has-Medical-Anatomy:T24
+E19	Medical-Problem:T22 has-Medical-Anatomy:T18 has-Medical-Assertion:T23 has-Medical-Anatomy:T24

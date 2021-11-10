@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 176 181	Lungs
+T2	Medical-Assertion 186 191	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 196 209	consolidation
+T4	Medical-Problem 213 221	effusion
+T5	Lesion-Assertion 243 253	suggestion
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 260 266	nodule
+T7	Lesion-Anatomy 275 316	retrocardiac region at the left lung base
+T8	Lesion-Size 341 345	1 cm
+T9	Medical-Problem 380 418	Cardiac silhouette is slighly enlarged
+E7	Medical-Problem:T9
+T10	Medical-Problem 425 430	aorta
+E8	Medical-Problem:T10
+T11	Medical-Problem 450 479	atherosclerotic calcification
+T12	Medical-Anatomy 487 491	arch
+T13	Medical-Assertion 564 566	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 567 596	acute cardiopulmonary process
+T15	Medical-Problem 599 611	Cardiomegaly
+E12	Medical-Problem:T15
+T16	Lesion-Description 625 631	nodule
+T17	Lesion-Anatomy 639 658	retrocardiac region
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Lesion-Description:T6 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T7 has-Lesion-Size-Present:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T17

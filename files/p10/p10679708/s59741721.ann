@@ -1,0 +1,21 @@
+T1	Medical-Problem 289 328	chronic moderate right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 333 350	basal atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 382 399	Mild cardiomegaly
+E3	Medical-Problem:T3
+T4	Medical-Assertion 409 411	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 412 421;423 428	pulmonary edema
+T6	Medical-Problem 431 458	Minimal lobe bronchiectasis
+E5	Medical-Problem:T6
+T7	Lesion-Size 463 468	small
+T8	Lesion-Anatomy 469 480	bronchiolar
+T9	Lesion-Description 481 488	nodules
+T10	Lesion-Anatomy 496 500;502 521	left lung base laterally
+T11	Medical-Assertion 547 553	may be
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 554 579;581 599	progression of relatively mild MAC infection
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

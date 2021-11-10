@@ -1,0 +1,28 @@
+T1	Medical-Problem 337 345	material
+T2	Medical-Anatomy 369 385	right upper lung
+T3	Medical-Problem 397 410	pleural fluid
+T4	Medical-Anatomy 422 436;438 454	lateral to the right upper lobe
+T5	Medical-Problem 464 471	opacity
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 488 510	right medial lung base
+T7	Medical-Assertion 540 555	could represent
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 558 583	small area of atelectasis
+T9	Medical-Assertion 608 610	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 611 629	large pneumothorax
+T11	Medical-Problem 733 741	material
+T12	Medical-Anatomy 749 765	right upper lung
+T13	Medical-Problem 771 800	small amount of pleural fluid
+T14	Medical-Assertion 804 806	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 807 825	large pneumothorax
+T16	Medical-Problem 837 865	mild right basal atelectasis
+E13	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

@@ -1,0 +1,46 @@
+T1	Medical-Assertion 344 346	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 347 362;364 375	configurational abnormality
+T3	Medical-Assertion 442 445	not
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 446 455	congested
+T5	Lesion-Anatomy 484 499	bilateral hilar
+T6	Lesion-Description 500 510	adenopathy
+T7	Medical-Problem 517 552	well-demarcated rounded prominences
+E5	Medical-Problem:T7
+T8	Lesion-Characteristic 567 575	enlarged
+T9	Lesion-Anatomy 576 581	hilar
+T10	Lesion-Description 582 587	nodes
+T11	Medical-Problem 590 594;596 621	Most prominent rounded density
+T12	Medical-Anatomy 637 669	lower portion of the right hilum
+T13	Medical-Problem 675 710	two rather equals sized prominences
+T14	Medical-Anatomy 727 737	left hilum
+T15	Medical-Assertion 749 751;753 761	no evidence
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 769 815	interstitial or alveolar pulmonary infiltrates
+T17	Medical-Anatomy 824 846	periphery of the lungs
+T18	Medical-Anatomy 849 886	Lateral and posterior pleural sinuses
+T19	Medical-Assertion 900 902	no
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 904 916	pneumothorax
+T21	Medical-Anatomy 931 942	apical area
+T22	Medical-Problem 1179 1188	Bilateral
+E18	Medical-Problem:T22
+T23	Lesion-Description 1196 1206	adenopathy
+E19	Lesion-Description:T23
+T24	Lesion-Description 1511 1521	adenopathy
+E20	Lesion-Description:T24
+T25	Lesion-Description 1522 1529	nodules
+E21	Lesion-Description:T25
+T26	Medical-Assertion 1612 1623	no evidence
+A5	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1627 1642;1644 1676	interstitial or peripheral pulmonary involvement
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17
+E16	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19 has-Medical-Anatomy:T21
+E22	Medical-Problem:T27 has-Medical-Assertion:T26

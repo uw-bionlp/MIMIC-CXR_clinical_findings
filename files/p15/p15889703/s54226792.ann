@@ -1,0 +1,16 @@
+T1	Medical-Anatomy 548 557	left lung
+T2	Medical-Assertion 580 596	without evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 604 616	pneumothorax
+T4	Medical-Problem 620 635;637 648	new parenchymal infiltrates
+T5	Medical-Anatomy 655 678	lateral pleural sinuses
+T6	Medical-Problem 693 696	any
+E5	Medical-Problem:T6
+T7	Medical-Problem 697 714;716 728	significant fluid accumulation
+T8	Medical-Assertion 866 868	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 869 881	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

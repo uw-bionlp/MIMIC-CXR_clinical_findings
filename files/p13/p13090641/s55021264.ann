@@ -1,0 +1,27 @@
+T1	Medical-Assertion 370 372	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 373 397	appreciable pneumothorax
+T3	Medical-Problem 415 427;429 438	Multiple rib fractures
+E2	Medical-Problem:T3
+T4	Medical-Problem 491 499	fracture
+T5	Medical-Anatomy 508 521	right scapula
+T6	Medical-Problem 581 598	increased opacity
+T7	Medical-Anatomy 606 616	right lung
+T8	Medical-Assertion 637 650	might suggest
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 677 702	layering pleural effusion
+T10	Medical-Problem 722 730;732 745	multiple rib fractures
+E8	Medical-Problem:T10
+T11	Medical-Problem 762 785	small loculated lucency
+T12	Medical-Anatomy 807 842	mid-lower portion of the right lung
+T13	Medical-Assertion 847 860	might reflect
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 861 883	loculated pneumothorax
+T15	Medical-Problem 974 1002	small amount of pneumothorax
+E12	Medical-Problem:T15
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

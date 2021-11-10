@@ -1,0 +1,37 @@
+T1	Lesion-Count 175 183	Multiple
+T2	Lesion-Anatomy 184 188	lung
+T3	Lesion-Description 189 195	masses
+T4	Lesion-Size 230 242	3.1 x 2.5 cm
+T5	Lesion-Description 244 248	mass
+T6	Lesion-Anatomy 256 272	right upper lobe
+T7	Lesion-Size 276 288	1.8 x 1.8 cm
+T8	Lesion-Description 289 293	mass
+T9	Lesion-Anatomy 301 319	lateral right lung
+T10	Lesion-Size 334 346	3.5 x 1.9 cm
+T11	Lesion-Description 347 351	mass
+T12	Lesion-Anatomy 359 374	left lower lobe
+T13	Medical-Problem 395 412	increased density
+T14	Medical-Anatomy 420 450	infrahilar area on the lateral
+T15	Medical-Assertion 466 468	no
+A1	Medical-AssertionValue T15 absent
+T16	Medical-Problem 470 486	pleural effusion
+T17	Medical-Problem 488 497	pneumonia
+T18	Medical-Problem 501 516	pulmonary edema
+T19	Medical-Assertion 528 530	no
+A2	Medical-AssertionValue T19 absent
+T20	Medical-Problem 531 543	pneumothorax
+T21	Medical-Problem 551 577	aorta is slightly tortuous
+E19	Medical-Problem:T21
+T22	Lesion-Count 634 642	Multiple
+T23	Lesion-Anatomy 643 656	intrathoracic
+T24	Lesion-Description 657 663	masses
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6
+E8	Lesion-Description:T8 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9
+E11	Lesion-Description:T11 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T12
+E13	Medical-Problem:T13 has-Medical-Anatomy:T14
+E15	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T17 has-Medical-Assertion:T15
+E17	Medical-Problem:T18 has-Medical-Assertion:T15
+E18	Medical-Problem:T20 has-Medical-Assertion:T19
+E22	Lesion-Description:T24 has-Lesion-Count:T22 has-Lesion-Anatomy:T23

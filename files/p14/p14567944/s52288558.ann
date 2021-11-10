@@ -1,0 +1,35 @@
+T1	Medical-Problem 212 241	dense left upper lobe opacity
+T2	Medical-Anatomy 242 266	extending from the hilum
+T3	Medical-Assertion 275 278;280 282	may be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 283 307	accompanying volume loss
+T5	Medical-Anatomy 315 330	left upper lobe
+T6	Medical-Assertion 340 348	possibly
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 363 428	mild relative elevation of the left hemidiaphragm compared to the
+T8	Medical-Assertion 452 454	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 455 471	pleural effusion
+T10	Medical-Problem 475 487	pneumothorax
+T11	Medical-Problem 542 571	Dense left upper lobe opacity
+E8	Medical-Problem:T11
+T12	Medical-Problem 577 598	suspected volume loss
+E9	Medical-Problem:T12
+T13	Medical-Assertion 616 627	may reflect
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 628 657	dense consolidative pneumonia
+T15	Medical-Assertion 668 676;678 691	at least raise concern
+A5	Medical-AssertionValue T15 possible
+T16	Lesion-Characteristic 718 728	underlying
+T17	Lesion-Description 729 733	mass
+T18	Medical-Problem 739 749;751 762	associated pneumonitis
+T19	Medical-Problem 1023 1032	pneumonia
+E14	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Lesion-Description:T17 has-Lesion-Characteristic:T16
+E13	Medical-Problem:T18 has-Medical-Assertion:T15

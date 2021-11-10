@@ -1,0 +1,19 @@
+T1	Medical-Assertion 300 302;304 312	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 316 329	complications
+T3	Medical-Assertion 339 341	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 342 354	pneumothorax
+T5	Lesion-Count 408 416	multiple
+T6	Lesion-Characteristic 417 424	nodular
+T7	Lesion-Anatomy 429 441	interstitial
+T8	Lesion-Description 442 449	lesions
+T9	Lesion-Anatomy 464 475	mediastinal
+T10	Lesion-Description 476 482	lesion
+T11	Lesion-Anatomy 490 514	level of the azygos vein
+T12	Medical-Problem 534 561	small left pleural effusion
+E10	Medical-Problem:T12
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T8 has-Lesion-Count:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T11

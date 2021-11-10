@@ -1,0 +1,26 @@
+T1	Medical-Problem 343 390	size of the cardiac silhouette remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 405 429	retrocardiac atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 432 457	Mild increase in diameter
+T4	Medical-Anatomy 465 474;476 487	pulmonary vasculature
+T5	Medical-Assertion 488 501	could suggest
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 502 522	mild pulmonary edema
+T7	Medical-Problem 525 533	Blunting
+T8	Medical-Anatomy 541 545;547 565	left costophrenic sinus
+T9	Medical-Problem 591 618	small left pleural effusion
+T10	Medical-Assertion 620 626	likely
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 629 640	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 644 653	pneumonia
+T13	Medical-Assertion 656 658	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 659 671	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,33 @@
+T1	Medical-Anatomy 143 182	medial segment of the right middle lobe
+T2	Medical-Problem 186 195	collapsed
+T3	Medical-Assertion 198 213	possibly due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 214 235	bronchial obstruction
+T5	Medical-Problem 241 246	mucus
+T6	Lesion-Description 250 254	mass
+E5	Lesion-Description:T6
+T7	Lesion-Assertion 266 268	no
+A2	Lesion-AssertionValue T7 absent
+T8	Lesion-Anatomy 270 285	peripheral lung
+T9	Lesion-Description 286 292	nodule
+T10	Lesion-Characteristic 308 319	substantial
+T11	Lesion-Description 320 335	lymphadenopathy
+T12	Lesion-Anatomy 343 348;350 355	right hilus
+T13	Lesion-Anatomy 359 368	elsewhere
+T14	Medical-Assertion 380 382	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 383 396	consolidation
+T16	Medical-Problem 398 403	edema
+T17	Medical-Problem 405 421	pleural effusion
+T18	Medical-Problem 427 439	pneumothorax
+T19	Medical-Problem 502 546	Right middle lobe or medial segment collapse
+E16	Medical-Problem:T19
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E7	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T13
+E9	Lesion-Description:T11 has-Lesion-Assertion:T7 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T14
+E15	Medical-Problem:T18 has-Medical-Assertion:T14

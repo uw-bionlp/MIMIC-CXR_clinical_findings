@@ -1,0 +1,32 @@
+T1	Lesion-Anatomy 211 231	Left upper lobe lung
+T2	Lesion-Description 232 236	mass
+T3	Medical-Problem 291 311	Lung volumes are low
+E3	Medical-Problem:T3
+T4	Medical-Problem 323 351;353 366	decreased right paratracheal opacification
+T5	Medical-Assertion 386 405	likely representing
+A1	Medical-AssertionValue T5 possible
+T6	Lesion-Size-Trend 406 415	decreased
+A2	Lesion-Size-TrendValue T6 decreasing
+T7	Lesion-Anatomy 423 435	paratracheal
+T8	Lesion-Description 436 451	lymphadenopathy
+T9	Medical-Assertion 572 574	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 575 594	focal consolidation
+T11	Medical-Problem 596 612	pleural effusion
+T12	Medical-Problem 614 626	pneumothorax
+T13	Medical-Problem 630 645	pulmonary edema
+T14	Lesion-Anatomy 726 746	left upper lobe lung
+E11	Lesion-Anatomy:T14
+T15	Medical-Problem 804 857	interval decrease in right paratracheal opacification
+E12	Medical-Problem:T15
+T16	Medical-Assertion 907 940	without radiographic evidence for
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 942 971	acute cardiopulmonary process
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Size-Trend:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T9
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

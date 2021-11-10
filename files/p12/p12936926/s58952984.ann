@@ -1,0 +1,21 @@
+T1	Medical-Problem 341 364	lungs are hyperinflated
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 369 374	dense
+T3	Lesion-Description 375 381	nodule
+T4	Lesion-Anatomy 389 404	left upper lung
+T5	Lesion-Assertion 409 415	likely
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 418 427	calcified
+T7	Lesion-Description 428 437	granuloma
+T8	Medical-Assertion 449 460	no evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 464 476	pneumothorax
+T10	Medical-Problem 481 497	pleural effusion
+T11	Medical-Assertion 586 588	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 598 610	pneumothorax
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

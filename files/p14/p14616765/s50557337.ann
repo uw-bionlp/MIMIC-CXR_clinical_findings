@@ -1,0 +1,48 @@
+T1	Medical-Problem 288 313	Bilateral pleural plaques
+T2	Medical-Problem 318 354;356 370	irregular, densely calcified pleural calcifications
+T3	Medical-Anatomy 378 387	left lung
+T4	Medical-Problem 447 471	Right upper lobe opacity
+E4	Medical-Problem:T4
+T5	Medical-Problem 477 498	right hilar elevation
+E5	Medical-Problem:T5
+T6	Medical-Problem 503 509;511 546	linear arrays of bronchial wall thickening
+E6	Medical-Problem:T6
+T7	Medical-Problem 551 565	bronchiectasis
+E7	Medical-Problem:T7
+T8	Medical-Problem 608 631	post-radiation fibrosis
+E8	Medical-Problem:T8
+T9	Medical-Anatomy 727 732	lungs
+T10	Medical-Problem 737 750	hyperexpanded
+T11	Medical-Problem 756 776	flattened diaphragms
+T12	Medical-Problem 786 795	emphysema
+T13	Medical-Problem 808 835	preexisting pleural plaques
+E13	Medical-Problem:T13
+T14	Medical-Problem 924 929;931 944	focal consolidation
+T15	Medical-Problem 960 969	pneumonia
+T16	Medical-Anatomy 977 992	mid lung fields
+T17	Medical-Assertion 995 997	No
+A1	Medical-AssertionValue T17 absent
+T18	Medical-Problem 998 1005;1007 1016	pleural effusions
+T19	Medical-Problem 1041 1069	Pre-existing pleural plaques
+E18	Medical-Problem:T19
+T20	Medical-Problem 1131 1160	focal consolidation/pneumonia
+T21	Medical-Anatomy 1168 1183	mid lung fields
+T22	Medical-Problem 1249 1283	Worsened right upper lobe scarring
+E21	Medical-Problem:T22
+T23	Medical-Problem 1289 1310	right hilar elevation
+E22	Medical-Problem:T23
+T24	Medical-Problem 1316 1356	bronchial wall thickening/bronchiectasis
+E23	Medical-Problem:T24
+T25	Medical-Assertion 1357 1370	may be due to
+A2	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1371 1393	postradiation fibrosis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Medical-Problem:T11 has-Medical-Anatomy:T9
+E12	Medical-Problem:T12 has-Medical-Anatomy:T9
+E14	Medical-Problem:T14 has-Medical-Anatomy:T16
+E15	Medical-Problem:T15 has-Medical-Anatomy:T16
+E17	Medical-Problem:T18 has-Medical-Assertion:T17
+E19	Medical-Problem:T20 has-Medical-Anatomy:T21
+E24	Medical-Problem:T26 has-Medical-Assertion:T25

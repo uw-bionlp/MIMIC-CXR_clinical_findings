@@ -1,0 +1,41 @@
+T1	Medical-Assertion 326 336	suggestion
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 340 363	left atrial enlargement
+T3	Medical-Assertion 364 371	without
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 373 397	significant cardiomegaly
+T5	Medical-Problem 399 425	Thoracic aorta is tortuous
+E3	Medical-Problem:T5
+T6	Medical-Assertion 444 451;453 461	without evidence
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 465 486	overt pulmonary edema
+T8	Lesion-Anatomy 489 505	Right lower lobe
+T9	Lesion-Characteristic 506 515	calcified
+T10	Lesion-Description 516 525	granuloma
+T11	Lesion-Anatomy 531 540	bilateral
+T12	Lesion-Characteristic 541 550	calcified
+T13	Lesion-Anatomy 551 556	hilar
+T14	Lesion-Description 557 568	lymph nodes
+T15	Medical-Assertion 569 576	suggest
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 607 634	Small left pleural effusion
+E12	Medical-Problem:T16
+T17	Medical-Problem 647 683;685 708	multiple age-indeterminate vertebral compression deformities
+E13	Medical-Problem:T17
+T18	Medical-Assertion 726 732	Likely
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 733 756	left atrial enlargement
+T20	Medical-Assertion 759 761	No
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 762 783	overt pulmonary edema
+T22	Medical-Problem 785 790;792 813	Small left pleural effusion
+E16	Medical-Problem:T22
+T23	Medical-Problem 815 863;865 874	Multiple age-indeterminate vertebral compression fractures
+E17	Medical-Problem:T23
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T9
+E11	Lesion-Description:T14 has-Lesion-Anatomy:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T13
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T21 has-Medical-Assertion:T20

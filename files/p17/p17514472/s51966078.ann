@@ -1,0 +1,36 @@
+T1	Medical-Problem 197 214	mild cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 286 323	crowding of the pulmonary vasculature
+E2	Medical-Problem:T2
+T3	Medical-Assertion 332 338	may be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 342 369	small left pleural effusion
+T5	Medical-Assertion 381 392	no evidence
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 396 408	pneumothorax
+T7	Medical-Problem 430 437	opacity
+T8	Medical-Anatomy 445 486	left lung base and medial right lung base
+T9	Medical-Assertion 493 496;498 507	may represent
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 508 519	atelectasis
+T11	Medical-Problem 530 540	aspiration
+T12	Medical-Problem 544 553	pneumonia
+T13	Medical-Assertion 554 574	should be considered
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 648 655	Opacity
+T15	Medical-Anatomy 663 704	left lung base and medial right lung base
+T16	Medical-Assertion 706 725	may be secondary to
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 727 738	atelectasis
+T18	Medical-Problem 751 775	acute infectious process
+T19	Medical-Assertion 776 794	cannot be excluded
+A6	Medical-AssertionValue T19 possible
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T13
+E9	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T13
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Assertion:T19

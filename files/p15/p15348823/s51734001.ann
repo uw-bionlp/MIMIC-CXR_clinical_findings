@@ -1,0 +1,31 @@
+T1	Medical-Problem 229 253	Stable post CABG changes
+E1	Medical-Problem:T1
+T2	Medical-Assertion 256 267	No features
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 271 293	cardiac decompensation
+T4	Medical-Assertion 296 298	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 299 307;309 322	airspace consolidation
+T6	Lesion-Assertion 325 327	No
+A3	Lesion-AssertionValue T6 absent
+T7	Lesion-Characteristic 328 338	suspicious
+T8	Lesion-Anatomy 339 348	pulmonary
+T9	Lesion-Description 349 356	nodules
+T10	Lesion-Description 360 366	masses
+T11	Medical-Assertion 429 431	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 432 444	pneumothorax
+T13	Medical-Problem 447 466	Spondylotic changes
+T14	Medical-Anatomy 475 489	thoracic spine
+T15	Medical-Problem 492 535	Mild background of pulmonary hyperinflation
+E11	Medical-Problem:T15
+T16	Medical-Assertion 607 609	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 610 622	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Lesion-Description:T9 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E7	Lesion-Description:T10 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,32 @@
+T1	Medical-Anatomy 261 266	lungs
+T2	Medical-Problem 271 298	appreciably lower in volume
+T3	Medical-Problem 310 326;328 364	greater relative elevation of the right hemidiaphragm
+E3	Medical-Problem:T3
+T4	Medical-Assertion 365 373	suggests
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 374 385	abnormality
+T6	Medical-Anatomy 393 404;406 416	base of the right lung
+T7	Medical-Assertion 417 425	could be
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 426 437	atelectasis
+T9	Medical-Problem 449 466	recent aspiration
+T10	Medical-Problem 471 476;478 487	early pneumonia
+T11	Medical-Assertion 488 518	should certainly be considered
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 530 532	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 533 548	pulmonary edema
+T14	Medical-Problem 560 596	mediastinal veins are more distended
+E10	Medical-Problem:T14
+T15	Medical-Problem 611 627;629 631	Pleural effusion is
+E11	Medical-Problem:T15
+T16	Medical-Assertion 690 692	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 693 705	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T11
+E8	Medical-Problem:T10 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

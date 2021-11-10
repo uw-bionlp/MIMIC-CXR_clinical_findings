@@ -1,0 +1,19 @@
+T1	Medical-Problem 389 420	Moderate right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 526 536;538 573	persistent severe right lower lobe atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 576 603	Greater mediastinal caliber
+T4	Medical-Anatomy 611 616;618 644	right lower paratracheal station
+T5	Medical-Assertion 648 663	probably due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 664 690	greater venous engorgement
+T7	Lesion-Characteristic 706 716	persistent
+E6	Lesion-Characteristic:T7
+T8	Medical-Problem 804 826	mild basal atelectasis
+E7	Medical-Problem:T8
+T9	Medical-Assertion 960 962	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 963 975	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

@@ -1,0 +1,23 @@
+T1	Lesion-Size 258 264	2.1 cm
+T2	Lesion-Anatomy 265 274	pulmonary
+T3	Lesion-Description 275 281	nodule
+T4	Lesion-Anatomy 289 304	left lower lung
+T5	Lesion-Size-Trend 306 315	unchanged
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Anatomy 354 359	lungs
+T7	Medical-Assertion 370 377	without
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 378 397	focal consolidation
+T9	Medical-Assertion 400 402	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 404 411	pleural
+E7	Medical-Problem:T10
+T11	Medical-Problem 412 420	effusion
+T12	Medical-Problem 424 436	pneumothorax
+T13	Lesion-Anatomy 719 739	lower lung pulmonary
+T14	Lesion-Description 740 746	nodule
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Lesion-Description:T14 has-Lesion-Anatomy:T13

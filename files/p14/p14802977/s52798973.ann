@@ -1,0 +1,21 @@
+T1	Medical-Problem 288 342	interval increase in size of the consolidative process
+T2	Medical-Anatomy 350 361;363 367	right lower lobe
+T3	Medical-Problem 444 469	postobstructive infection
+T4	Medical-Problem 473 484	atelectasis
+T5	Medical-Assertion 493 501	possible
+A1	Medical-AssertionValue T5 possible
+T6	Lesion-Count 504 512	Multiple
+T7	Lesion-Anatomy 514 528	bilateral lung
+T8	Lesion-Description 529 536	nodules
+T9	Medical-Assertion 606 608	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 609 634	acute osseous abnormality
+T11	Medical-Problem 666 726	Interval enlargement of the right lung consolidative process
+E9	Medical-Problem:T11
+T12	Medical-Problem 793 815	superimposed infection
+E10	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Assertion:T5
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E7	Lesion-Description:T8 has-Lesion-Count:T6 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

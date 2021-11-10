@@ -1,0 +1,38 @@
+T1	Medical-Anatomy 290 299;301 312	Pulmonary vascularity
+T2	Medical-Assertion 316 319	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 320 328	engorged
+T4	Lesion-Anatomy 331 346	Left upper lobe
+T5	Lesion-Description 347 351	mass
+T6	Medical-Problem 376 392	right upper lobe
+E5	Medical-Problem:T6
+T7	Medical-Problem 393 412	ill-defined opacity
+E6	Medical-Problem:T7
+T8	Lesion-Size-Trend 421 441	relatively unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Problem 541 562	Emphysematous changes
+E7	Medical-Problem:T9
+T10	Medical-Assertion 580 582	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 583 599	pleural effusion
+T12	Medical-Problem 604 616	pneumothorax
+T13	Medical-Assertion 640 642	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 643 670	acute osseous abnormalities
+T15	Lesion-Size-Trend 688 697	Unchanged
+A5	Lesion-Size-TrendValue T15 no-change
+T16	Lesion-Anatomy 698 713	left upper lobe
+T17	Lesion-Description 714 718	mass
+T18	Medical-Problem 754 765;767 774	ill-defined opacity
+T19	Medical-Anatomy 782 798	right upper lobe
+T20	Medical-Assertion 967 969	No
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 970 985;987 996	new abnormality otherwise
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Lesion-Description:T17 has-Lesion-Size-Trend:T15 has-Lesion-Anatomy:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T19
+E15	Medical-Problem:T21 has-Medical-Assertion:T20

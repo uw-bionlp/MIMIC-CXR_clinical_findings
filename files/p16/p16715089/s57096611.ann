@@ -1,0 +1,16 @@
+T1	Medical-Problem 181 202	moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 301 321	asymmetric opacities
+T3	Medical-Anatomy 323 343	throughout the lungs
+T4	Medical-Anatomy 359 399;401 422	right lung mainly in the right perihilar and right lower lobes
+T5	Medical-Assertion 470 478;480 486	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 487 513	asymmetric worsening edema
+T7	Medical-Problem 519 541	superimposed infection
+T8	Medical-Assertion 545 551;553 560	likely present
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 573 590	pleural effusions
+E7	Medical-Problem:T9
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T8

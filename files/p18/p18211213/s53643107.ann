@@ -1,0 +1,26 @@
+T1	Medical-Assertion 302 304	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 305 321	pleural effusion
+T3	Medical-Problem 325 337	pneumothorax
+T4	Medical-Problem 340 346;348 357	Linear opacities
+T5	Medical-Anatomy 361 401	both lung bases, left greater than right
+T6	Medical-Assertion 403 416	may represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 418 429	atelectasis
+T8	Medical-Anatomy 440 461	pulmonary vasculature
+T9	Medical-Problem 465 481	mildly prominent
+T10	Medical-Problem 489 495;497 506	linear opacities
+T11	Medical-Assertion 507 525	may also represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 528 549	small amount of edema
+T13	Medical-Problem 618 639	Bibasilar atelectasis
+E10	Medical-Problem:T13
+T14	Medical-Problem 643 659	developing edema
+E11	Medical-Problem:T14
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T11

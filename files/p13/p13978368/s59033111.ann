@@ -1,0 +1,22 @@
+T1	Medical-Problem 378 391	vague opacity
+T2	Medical-Anatomy 403 408;410 418	right mid lung
+T3	Medical-Anatomy 420 435	right lung apex
+T4	Medical-Anatomy 440 455	right lung base
+T5	Medical-Problem 462 477	suture material
+T6	Medical-Anatomy 511 527	right upper lung
+T7	Lesion-Size-Trend 584 593	unchanged
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Lesion-Description 733 740	Opacity
+T9	Medical-Anatomy 752 757	right
+E8	Medical-Anatomy:T9
+T10	Lesion-Size-Trend 772 786	overall stable
+A2	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 835 846	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 850 867	new consolidation
+T13	Medical-Problem 880 889	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Anatomy:T6
+E7	Lesion-Description:T8 has-Lesion-Size-Trend:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

@@ -1,0 +1,25 @@
+T1	Medical-Problem 700 732	Several left-sided rib fractures
+E1	Medical-Problem:T1
+T2	Medical-Assertion 748 750	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 752 764	pneumothorax
+T4	Medical-Assertion 777 779	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 780 799	focal consolidation
+T6	Medical-Assertion 800 810	convincing
+A3	Medical-AssertionValue T6 possible
+T7	Medical-Problem 815 824	pneumonia
+T8	Medical-Problem 841 850	Elevation
+T9	Medical-Anatomy 858 869	right minor
+T10	Medical-Problem 886 902;904 915	right upper lobe atelectasis
+T11	Lesion-Anatomy 920 944	right paratracheal hilar
+T12	Medical-Problem 945 958	calcification
+E9	Medical-Problem:T12
+T13	Lesion-Characteristic 993 1002	calcified
+T14	Lesion-Description 1003 1007	node
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Anatomy:T9
+E7	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Lesion-Description:T14 has-Lesion-Anatomy:T11 has-Lesion-Characteristic:T13

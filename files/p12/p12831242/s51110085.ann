@@ -1,0 +1,18 @@
+T1	Medical-Problem 310 337	Bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 357 385	associated bibasilar opacity
+E2	Medical-Problem:T2
+T3	Medical-Assertion 388 394	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 395 406	atelectasis
+T5	Medical-Assertion 493 495	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 496 508	pneumothorax
+T7	Medical-Problem 617 638	bibasilar atelectasis
+E5	Medical-Problem:T7
+T8	Medical-Assertion 640 654	cannot exclude
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 655 664	pneumonia
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

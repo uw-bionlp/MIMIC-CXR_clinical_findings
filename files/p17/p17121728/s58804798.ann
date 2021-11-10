@@ -1,0 +1,47 @@
+T1	Medical-Problem 320 341	mildly tortuous aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 344 352	Fullness
+T3	Medical-Anatomy 361 372	right hilum
+T4	Lesion-Anatomy 388 399	right hilar
+T5	Lesion-Description 400 415	lymphadenopathy
+T6	Medical-Problem 447 458	compression
+T7	Medical-Anatomy 466 490	right main stem bronchus
+T8	Lesion-Size 495 500	large
+T9	Lesion-Anatomy 501 506;508 517	right lung base
+T10	Lesion-Description 518 522	mass
+T11	Lesion-Characteristic 528 547	associated effusion
+T12	Lesion-Size-Trend 551 575	similar in appearance to
+A1	Lesion-Size-TrendValue T12 no-change
+T13	Lesion-Count 600 608	Multiple
+T14	Lesion-Anatomy 609 619	left-sided
+T15	Lesion-Description 620 627	nodules
+T16	Lesion-Size-Trend 653 662;664 671	increased in size
+A2	Lesion-Size-TrendValue T16 increasing
+T17	Lesion-Anatomy 712 726	left lung base
+T18	Lesion-Description 727 733	nodule
+T19	Lesion-Size-Trend 735 753	increasing in size
+A3	Lesion-Size-TrendValue T19 increasing
+T20	Lesion-Size 773 788	1 cm to 2 cm in
+T21	Medical-Assertion 821 823	no
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 824 836	pneumothorax
+T23	Lesion-Size 856 861	large
+T24	Lesion-Anatomy 862 877	right lung base
+T25	Lesion-Description 878 882	mass
+T26	Lesion-Size-Trend 936 951	interval growth
+A5	Lesion-Size-TrendValue T26 increasing
+T27	Lesion-Anatomy 955 965	left-sided
+T28	Lesion-Description 966 973	nodules
+T29	Medical-Assertion 1037 1053	without evidence
+A6	Medical-AssertionValue T29 absent
+T30	Medical-Problem 1057 1067;1069 1078	concurrent pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E10	Lesion-Description:T10 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T11 has-Lesion-Size-Trend:T12
+E14	Lesion-Description:T15 has-Lesion-Count:T13 has-Lesion-Anatomy:T14 has-Lesion-Size-Trend:T16
+E16	Lesion-Description:T18 has-Lesion-Anatomy:T17 has-Lesion-Size-Trend:T19 has-Lesion-Size-Present:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E21	Lesion-Description:T25 has-Lesion-Size-Present:T23 has-Lesion-Anatomy:T24
+E23	Lesion-Description:T28 has-Lesion-Size-Trend:T26 has-Lesion-Anatomy:T27
+E24	Medical-Problem:T30 has-Medical-Assertion:T29

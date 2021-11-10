@@ -1,0 +1,19 @@
+T1	Lesion-Description 252 269	nodular opacities
+T2	Lesion-Anatomy 279 313	projecting over the right mid lung
+T3	Lesion-Characteristic 319 323;325 344	some reticular component
+T4	Lesion-Characteristic 353 385	query chronic infectious process
+T5	Lesion-Assertion 388 390	No
+A1	Lesion-AssertionValue T5 absent
+T6	Medical-Problem 391 398;400 408	pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Problem 412 424	pneumothorax
+E6	Medical-Problem:T7
+T8	Lesion-Characteristic 562 571	reticular
+T9	Lesion-Description 572 587	nodular opacity
+T10	Lesion-Anatomy 608 622	right mid lung
+T11	Medical-Assertion 641 656	could be due to
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 692 695	not
+A3	Medical-AssertionValue T12 possible
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T10

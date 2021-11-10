@@ -1,0 +1,43 @@
+T1	Medical-Problem 556 583	bilateral pleural effusions
+T2	Medical-Anatomy 601 633;635 658	lateral pleural sinuses, more on the right than the left
+T3	Medical-Problem 766 789;791 800	small amount of pleural effusions
+T4	Medical-Anatomy 829 854	posterior pleural sinuses
+T5	Medical-Problem 914 931	perivascular haze
+T6	Medical-Anatomy 939 944	lungs
+T7	Medical-Problem 985 1008	small plate atelectasis
+T8	Medical-Anatomy 1016 1026;1028 1032	right lung base
+T9	Medical-Assertion 1044 1055	no evidence
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 1063 1099;1101 1112	discrete local pulmonary parenchymal infiltrates
+T11	Medical-Assertion 1118 1138	can be identified as
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1141 1152	pneumonitis
+T13	Medical-Assertion 1155 1157	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1158 1170	pneumothorax
+T15	Medical-Anatomy 1186 1197	apical area
+T16	Medical-Problem 1279 1298	cardiac enlargement
+E13	Medical-Problem:T16
+T17	Medical-Problem 1496 1506	borderline
+E14	Medical-Problem:T17
+T18	Medical-Assertion 1522 1529	absence
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1533 1544;1546 1575	significant pulmonary vascular congestion
+T20	Medical-Assertion 1580 1587	not too
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1637 1657	pulmonary congestion
+E16	Medical-Problem:T21
+T22	Medical-Problem 1744 1758;1760 1777	Mild amount of pleural effusions
+E17	Medical-Problem:T22
+T23	Medical-Assertion 1793 1804	no evidence
+A6	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1808 1823	acute pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E15	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Assertion:T20
+E18	Medical-Problem:T24 has-Medical-Assertion:T23

@@ -1,0 +1,41 @@
+T1	Medical-Assertion 39 41	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 42 71	acute cardiopulmonary process
+T3	Medical-Problem 78 94	Air-fluid levels
+T4	Medical-Anatomy 102 115	upper abdomen
+T5	Medical-Assertion 116 130	concerning for
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 131 142	obstruction
+T7	Medical-Assertion 523 525	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 526 545	focal consolidation
+T9	Medical-Problem 547 563	pleural effusion
+T10	Medical-Problem 565 580	pulmonary edema
+T11	Medical-Problem 586 598	pneumothorax
+T12	Medical-Problem 680 698	Multiple air-fluid
+T13	Medical-Anatomy 722 741;743 769	nondilated loops of bowel in the upper abdomen
+T14	Medical-Assertion 771 785	concerning for
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 786 797	obstruction
+T16	Medical-Assertion 885 887	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 888 893	acute
+E12	Medical-Problem:T17
+T18	Medical-Problem 894 917	cardiopulmonary process
+T19	Medical-Problem 923 939	Air-fluid levels
+T20	Medical-Anatomy 947 960	upper abdomen
+T21	Medical-Assertion 961 971	concerning
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 976 987	obstruction
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T18 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Anatomy:T20
+E16	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

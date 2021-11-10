@@ -1,0 +1,21 @@
+T1	Medical-Problem 333 345	pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 348 357	Bilateral
+T3	Medical-Problem 358 375	pleural effusions
+T4	Medical-Problem 417 437	adjacent atelectasis
+T5	Lesion-Count 458 466	numerous
+T6	Lesion-Anatomy 467 476;478 487	bilateral pulmonary
+T7	Lesion-Description 488 495	nodules
+T8	Lesion-Size-Trend 499 506	similar
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Problem 581 610	increased bilateral effusions
+E8	Medical-Problem:T9
+T10	Medical-Problem 616 636	adjacent atelectasis
+E9	Medical-Problem:T10
+T11	Lesion-Count 660 668	numerous
+T12	Lesion-Anatomy 669 688	bilateral pulmonary
+T13	Lesion-Description 690 697	nodules
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E7	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E12	Lesion-Description:T13 has-Lesion-Count:T11 has-Lesion-Anatomy:T12

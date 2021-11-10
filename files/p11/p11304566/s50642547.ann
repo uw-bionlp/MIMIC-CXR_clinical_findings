@@ -1,0 +1,31 @@
+T1	Medical-Problem 310 329	Large right pleural
+E1	Medical-Problem:T1
+T2	Medical-Problem 330 338	effusion
+T3	Medical-Anatomy 390 406	right lower lung
+T4	Medical-Assertion 411 419	probably
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 420 447	produces severe atelectasis
+T6	Medical-Anatomy 455 461;463 478	middle and lower lobes
+T7	Medical-Anatomy 481 491	Left lower
+T8	Medical-Problem 500 531	progressively more consolidated
+T9	Medical-Assertion 533 539	either
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 541 552	atelectasis
+T11	Medical-Problem 556 565	pneumonia
+T12	Medical-Problem 568 588	Mild pulmonary edema
+T13	Medical-Anatomy 596 605	left lung
+T14	Medical-Assertion 606 619	may be due to
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 621 680	redirection of blood flow from the hypoxic right hemithorax
+T16	Medical-Problem 828 860	increased trans pleural pressure
+T17	Medical-Anatomy 869 880	right chest
+T18	Medical-Problem 893 912	mild tracheomalacia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T18 has-Medical-Anatomy:T17

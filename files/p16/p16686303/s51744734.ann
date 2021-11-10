@@ -1,0 +1,33 @@
+T1	Medical-Problem 214 234	Lower lobe opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 235 248	may represent
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 249 260	atelectasis
+T4	Medical-Problem 265 278	consolidation
+T5	Lesion-Assertion 300 308	possible
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Size 309 313	15mm
+T7	Lesion-Anatomy 314 318	lung
+T8	Lesion-Description 319 325	nodule
+T9	Lesion-Anatomy 333 338;340 411	right middle lobe or lingula, projecting over the heart about a major fissure
+T10	Medical-Problem 414 438	Congestive heart failure
+T11	Medical-Assertion 442 448	likely
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 465 482	mild cardiomegaly
+T13	Medical-Problem 484 491;493 510	central venous congestion
+T14	Medical-Problem 512 530	interstitial edema
+T15	Medical-Problem 532 559	bilateral pleural effusions
+T16	Medical-Problem 612 620	aorta is
+E13	Medical-Problem:T16
+T17	Medical-Problem 621 642	tortuous and unfolded
+E14	Medical-Problem:T17
+T18	Medical-Problem 664 693	Mild congestive heart failure
+E15	Medical-Problem:T18
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E6	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Assertion:T11
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T11

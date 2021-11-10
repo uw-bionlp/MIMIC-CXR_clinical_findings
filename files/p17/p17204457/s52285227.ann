@@ -1,0 +1,36 @@
+T1	Medical-Anatomy 286 291	lungs
+T2	Medical-Problem 296 316	mildly hyperinflated
+T3	Medical-Problem 319 339	Left basilar opacity
+E3	Medical-Problem:T3
+T4	Medical-Assertion 340 357	likely represents
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 359 370	atelectasis
+T6	Medical-Assertion 382 384	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 385 394	pneumonia
+T8	Medical-Problem 400 429;431 439	azygos vein is distended with fullness
+T9	Medical-Anatomy 447 464	perihilar regions
+T10	Medical-Problem 483 504	moderate cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Assertion 507 517	suggesting
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 518 531	heart failure
+T13	Medical-Assertion 561 563	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 564 580	pleural effusion
+T15	Medical-Problem 585 597	pneumothorax
+T16	Medical-Assertion 614 616	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 617 626	pneumonia
+T18	Medical-Problem 628 649	Chronic heart failure
+E13	Medical-Problem:T18
+T19	Medical-Problem 655 671;673 685	chronic moderate cardiomegaly
+E14	Medical-Problem:T19
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

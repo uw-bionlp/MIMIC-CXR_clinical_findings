@@ -1,0 +1,25 @@
+T1	Medical-Problem 230 254	new 7 cm rounded opacity
+T2	Medical-Anatomy 266 296;298 302	just to the left of the aortic arch
+T3	Medical-Problem 445 478	Linear left basilar consolidation
+E3	Medical-Problem:T3
+T4	Medical-Problem 550 572	moderate hiatal hernia
+E4	Medical-Problem:T4
+T5	Medical-Problem 688 703	Rounded opacity
+T6	Medical-Anatomy 715 746	just lateral to the aortic arch
+T7	Lesion-Assertion 777 788	potentially
+A1	Lesion-AssertionValue T7 possible
+T8	Lesion-Characteristic 789 799	underlying
+T9	Lesion-Description 800 811	mass lesion
+T10	Medical-Problem 821 829	aneurysm
+T11	Medical-Assertion 830 843;845 855	could also be considered
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 858 889	Additional left basilar opacity
+E10	Medical-Problem:T12
+T13	Medical-Assertion 890 899	likely in
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 910 922;924 935	component of volume loss
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Characteristic:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

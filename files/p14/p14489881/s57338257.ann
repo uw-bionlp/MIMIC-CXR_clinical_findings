@@ -1,0 +1,58 @@
+T1	Medical-Problem 42 45	NEW
+E1	Medical-Problem:T1
+T2	Lesion-Description 46 51	FOCAL
+T3	Lesion-Anatomy 74 108	RIGHT LOWER LOBE/RIGHT MIDDLE LOBE
+T4	Medical-Problem 116 168	ADDITIONAL INCREASE IN PULMONARY VASCULAR CONGESTION
+E4	Medical-Problem:T4
+T5	Medical-Assertion 220 235	COULD RELATE TO
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 236 262	ASYMMETRIC PULMONARY EDEMA
+T7	Medical-Problem 269 287	INFECTIOUS PROCESS
+T8	Medical-Problem 296 305	ASPRATION
+T9	Medical-Assertion 306 333	CANNOT BE ENTIRELY EXCLUDED
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 438 441	NEW
+E8	Medical-Problem:T10
+T11	Lesion-Characteristic 442 447	FOCAL
+E9	Lesion-Characteristic:T11
+T12	Lesion-Anatomy 470 504	RIGHT LOWER LOBE/RIGHT MIDDLE LOBE
+E10	Lesion-Anatomy:T12
+T13	Medical-Problem 512 564	ADDITIONAL INCREASE IN PULMONARY VASCULAR CONGESTION
+E11	Medical-Problem:T13
+T14	Medical-Assertion 616 631	COULD RELATE TO
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 632 658	ASYMMETRIC PULMONARY EDEMA
+T16	Medical-Problem 665 683	INFECTIOUS PROCESS
+T17	Medical-Problem 692 701	ASPRATION
+T18	Medical-Problem 1134 1147	consolidation
+T19	Medical-Anatomy 1155 1171	right lower lung
+T20	Medical-Problem 1175 1184	pneumonia
+T21	Medical-Problem 1188 1193;1195 1205	large infarction
+T22	Medical-Assertion 1208 1219	No evidence
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1224 1239	pulmonary edema
+T24	Medical-Anatomy 1242 1257	Left lower lobe
+E20	Medical-Anatomy:T24
+T25	Lesion-Description 1258 1264	lesion
+E21	Lesion-Description:T25
+T26	Lesion-Assertion 1300 1313	could also be
+A5	Lesion-AssertionValue T26 possible
+T27	Lesion-Description 1316 1320	mass
+T28	Medical-Problem 1323 1337;1339 1346	Mediastinum is widened
+E23	Medical-Problem:T28
+T29	Medical-Problem 1352 1375	tortuous thoracic aorta
+E24	Medical-Problem:T29
+T30	Medical-Problem 1396 1412;1414 1419	Pleural effusion small
+E25	Medical-Problem:T30
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T14
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T20 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Anatomy:T19
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E22	Lesion-Description:T27 has-Lesion-Assertion:T26

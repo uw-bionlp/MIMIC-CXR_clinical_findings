@@ -1,0 +1,35 @@
+T1	Medical-Assertion 30 41	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 45 58	acute disease
+T3	Medical-Problem 65 72	Nodular
+E2	Medical-Problem:T3
+T4	Lesion-Anatomy 86 108	right lower lung field
+T5	Lesion-Description 110 116	nodule
+T6	Medical-Problem 611 631	Patchy calcification
+T7	Medical-Anatomy 651 657;659 663	aortic arch
+T8	Medical-Assertion 675 677	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 678 694	pleural effusion
+T10	Medical-Problem 698 710	pneumothorax
+T11	Lesion-Anatomy 734 750	right lower lung
+T12	Medical-Problem 756 771	nodular density
+E10	Medical-Problem:T12
+T13	Lesion-Assertion 861 880	raising concern for
+A3	Lesion-AssertionValue T13 possible
+T14	Lesion-Description 884 890	nodule
+T15	Medical-Problem 932 959	Slight degenerative changes
+T16	Medical-Anatomy 981 1001	lower thoracic spine
+T17	Medical-Assertion 1029 1040	No evidence
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1044 1057	acute disease
+T19	Lesion-Description 1068 1081	Nodular focus
+T20	Lesion-Anatomy 1102 1118	right lower lung
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Lesion-Description:T14 has-Lesion-Anatomy:T11 has-Lesion-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Lesion-Description:T19 has-Lesion-Anatomy:T20

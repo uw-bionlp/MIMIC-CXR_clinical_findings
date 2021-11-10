@@ -1,0 +1,29 @@
+T1	Medical-Problem 373 405;407 428	area of chronic right upper lobe bronchiectatic change
+E1	Medical-Problem:T1
+T2	Medical-Problem 481 528	interval increase in the right pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Assertion 547 549	No
+A1	Medical-AssertionValue T3 absent
+T4	Lesion-Size-Trend 550 553	new
+A2	Lesion-Size-TrendValue T4 new
+T5	Lesion-Description 554 558	mass
+T6	Medical-Problem 563 576	consolidation
+T7	Medical-Assertion 595 597	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 598 611	left effusion
+T9	Medical-Problem 615 627	pneumothorax
+T10	Medical-Problem 752 805	Stable right upper lobe area of bronchiectatic change
+E7	Medical-Problem:T10
+T11	Medical-Problem 819 846	increasing pleural effusion
+E8	Medical-Problem:T11
+T12	Medical-Problem 851 872	bronchiectatic change
+E9	Medical-Problem:T12
+T13	Lesion-Assertion 879 896;898 900	raises a question of
+A4	Lesion-AssertionValue T13 possible
+T14	Lesion-Characteristic 912 922	underlying
+T15	Lesion-Description 923 933	malignancy
+E3	Lesion-Description:T5 has-Lesion-Size-Trend:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T3
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E11	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Characteristic:T14

@@ -1,0 +1,29 @@
+T1	Medical-Assertion 34 36	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 37 54	obvious pneumonia
+T3	Medical-Problem 56 75	small left effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 80 91	atelectasis
+E3	Medical-Problem:T4
+T5	Medical-Problem 156 170	right effusion
+T6	Medical-Problem 175 186	atelectasis
+T7	Medical-Assertion 189 206	has resolved with
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 207 249	minimal remaining right infrahilar opacity
+T9	Medical-Problem 476 489	opacification
+T10	Medical-Anatomy 497 506	left base
+T11	Medical-Assertion 507 520	suggestive of
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 521 526;528 536	small effusion
+T13	Medical-Problem 541 552	atelectasis
+T14	Medical-Assertion 555 566	No evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 570 591	acute focal pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

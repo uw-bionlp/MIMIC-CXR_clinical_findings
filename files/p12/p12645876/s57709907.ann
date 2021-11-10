@@ -1,0 +1,42 @@
+T1	Medical-Anatomy 318 323	lungs
+T2	Medical-Problem 359 363	COPD
+T3	Medical-Problem 366 370	Mild
+E3	Medical-Problem:T3
+T4	Medical-Problem 371 392	bibasilar atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Problem 407 416	Calcified
+E5	Medical-Problem:T5
+T6	Medical-Problem 417 442	apical pleural thickening
+E6	Medical-Problem:T6
+T7	Lesion-Characteristic 447 456	scattered
+T8	Lesion-Characteristic 457 466	calcified
+T9	Lesion-Anatomy 468 477	pulmonary
+T10	Lesion-Description 478 485	nodules
+T11	Lesion-Size-Trend 490 496	stable
+A1	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Characteristic 513 542	prior granulomatous infection
+T13	Medical-Assertion 555 557	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 558 574	pleural effusion
+T15	Medical-Problem 576 591	pulmonary edema
+T16	Medical-Problem 596 610;612 625	focal airspace consolidation
+T17	Medical-Problem 746 754	Multiple
+E15	Medical-Problem:T17
+T18	Medical-Problem 755 761;763 790	healed right-sided rib deformities
+E16	Medical-Problem:T18
+T19	Medical-Problem 795 818	compression deformities
+T20	Medical-Anatomy 826 840	thoracic spine
+T21	Medical-Problem 885 900	chronic changes
+E19	Medical-Problem:T21
+T22	Medical-Assertion 922 924	No
+A3	Medical-AssertionValue T22 absent
+T23	Medical-Problem 925 934	pneumonia
+T24	Medical-Problem 938 953;955 967	acute displaced rib fracture
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E10	Lesion-Description:T10 has-Lesion-Characteristic:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T11 has-Lesion-Characteristic:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T13
+E17	Medical-Problem:T19 has-Medical-Anatomy:T20
+E20	Medical-Problem:T23 has-Medical-Assertion:T22
+E21	Medical-Problem:T24 has-Medical-Assertion:T22

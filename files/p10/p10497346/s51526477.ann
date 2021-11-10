@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 395 400	lungs
+T2	Medical-Problem 408 421	hyperinflated
+T3	Lesion-Count 430 431	2
+T4	Lesion-Assertion 432 440	possible
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Description 441 448	nodules
+T6	Lesion-Anatomy 470 483	right midlung
+T7	Medical-Problem 499 514	pleural plaques
+T8	Medical-Anatomy 536 559	right lower hemi thorax
+T9	Medical-Assertion 562 564	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 565 590	acute osseous abnormality
+T11	Medical-Assertion 593 595	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 597 609	pneumothorax
+T13	Medical-Problem 611 627	pleural effusion
+T14	Medical-Problem 632 651	focal consolidation
+T15	Medical-Problem 689 703	mediastinum is
+E12	Medical-Problem:T15
+T16	Medical-Assertion 704 707	not
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 708 715	widened
+T18	Medical-Assertion 827 835	Possible
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 836 851	pleural plaques
+T20	Medical-Assertion 858 866	Possible
+A6	Medical-AssertionValue T20 possible
+T21	Lesion-Anatomy 867 882	right pulmonary
+T22	Lesion-Description 883 890	nodules
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Lesion-Description:T5 has-Lesion-Count:T3 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T11
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Lesion-Description:T22 has-Lesion-Anatomy:T21

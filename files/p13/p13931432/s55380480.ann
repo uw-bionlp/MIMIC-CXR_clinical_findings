@@ -1,0 +1,29 @@
+T1	Medical-Problem 417 442	increasing patchy opacity
+T2	Medical-Anatomy 450 460	right base
+T3	Medical-Assertion 467 482	likely reflects
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 486 503	layering effusion
+T5	Medical-Problem 509 543	associated compressive atelectasis
+T6	Medical-Anatomy 551 561	lower lobe
+T7	Medical-Problem 566 588	superimposed infection
+T8	Medical-Assertion 589 616	cannot be entirely excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 674 688	linear opacity
+T10	Medical-Anatomy 696 718	left mid to lower lung
+T11	Medical-Assertion 726 741	likely reflects
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 742 766	subsegmental atelectasis
+T13	Medical-Assertion 768 770	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 771 786	pulmonary edema
+T15	Medical-Assertion 788 790	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 792 804	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3 has-Medical-Anatomy:T6
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

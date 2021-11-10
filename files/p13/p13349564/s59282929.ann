@@ -1,0 +1,22 @@
+T1	Medical-Problem 278 293	Linear markings
+T2	Medical-Anatomy 305 338	left lower lobe and left mid lung
+T3	Medical-Assertion 344 363	likely secondary to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 364 372	scarring
+T5	Medical-Anatomy 379 384	lungs
+T6	Medical-Assertion 405 412	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 417 422;424 433	focal opacities
+T8	Medical-Problem 435 452	pleural effusions
+T9	Medical-Problem 454 469	pulmonary edema
+T10	Medical-Problem 474 486	pneumothorax
+T11	Medical-Assertion 553 555	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 556 585	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

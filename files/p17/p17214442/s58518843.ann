@@ -1,0 +1,14 @@
+T1	Medical-Problem 231 251	mild pulmonary edema
+T2	Medical-Anatomy 267 276	left lung
+T3	Medical-Problem 278 291	Consolidation
+T4	Medical-Anatomy 299 304;306 311	right lower
+T5	Medical-Assertion 312 320	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 321 332	atelectasis
+T7	Medical-Problem 336 345	pneumonia
+T8	Medical-Problem 375 391	Pneumoperitoneum
+E7	Medical-Problem:T8
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5

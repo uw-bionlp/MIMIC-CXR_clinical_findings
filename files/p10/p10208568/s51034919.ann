@@ -1,0 +1,18 @@
+T1	Medical-Problem 481 491;493 508	persistent rounded opacity
+T2	Medical-Anatomy 516 539	left mid lung periphery
+T3	Lesion-Assertion 540 549	worrisome
+A1	Lesion-AssertionValue T3 possible
+T4	Medical-Problem 624 634;636 649	persistent consolidation
+T5	Medical-Anatomy 657 666	left base
+T6	Medical-Assertion 695 697	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 698 710;712 733	reaccumulate left pleural effusion
+T8	Medical-Problem 816 851	residual left asymmetric mild edema
+E6	Medical-Problem:T8
+T9	Medical-Assertion 854 856	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 858 870	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

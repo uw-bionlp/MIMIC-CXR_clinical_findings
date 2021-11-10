@@ -1,0 +1,19 @@
+T1	Medical-Assertion 362 364	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 365 377	pneumothorax
+T3	Medical-Problem 380 410	Severe cardiomegaly is chronic
+E2	Medical-Problem:T3
+T4	Medical-Problem 413 453	Moderate to severe bibasilar atelectasis
+T5	Medical-Anatomy 513 517;519 530	both lower lobes
+T6	Medical-Problem 531 560	accompanying pleural effusion
+T7	Medical-Problem 632 643	atelectasis
+T8	Medical-Problem 645 672;674 679	Mild interstitial pulmonary edema
+E7	Medical-Problem:T8
+T9	Medical-Assertion 741 743	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 745 757	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

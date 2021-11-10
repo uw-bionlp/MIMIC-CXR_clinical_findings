@@ -1,0 +1,42 @@
+T1	Medical-Problem 346 392	Moderate enlargement of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 454 463;465 476	Pulmonary vasculature
+T3	Medical-Assertion 480 483	not
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 484 492	engorged
+T5	Medical-Anatomy 495 500	Lungs
+T6	Medical-Problem 505 537;539 546	hyperinflated with emphysematous changes
+T7	Medical-Problem 561 577	Patchy opacities
+T8	Medical-Anatomy 589 599	lung bases
+T9	Medical-Assertion 638 644	likely
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 645 656	atelectasis
+T11	Medical-Assertion 658 665	without
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 666 685	focal consolidation
+T13	Medical-Assertion 689 691	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 692 708	pleural effusion
+T15	Medical-Problem 712 724	pneumothorax
+T16	Medical-Problem 743 759;761 781	Mild to moderate degenerative changes
+T17	Medical-Anatomy 798 812	thoracic spine
+T18	Medical-Problem 898 907;909 918	continued emphysema
+E14	Medical-Problem:T18
+T19	Medical-Problem 923 949	patchy bibasilar opacities
+E15	Medical-Problem:T19
+T20	Medical-Assertion 951 957	likely
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 958 969	atelectasis
+T22	Medical-Assertion 971 978	without
+A6	Medical-AssertionValue T22 absent
+T23	Medical-Problem 979 984;986 999	focal consolidation
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E17	Medical-Problem:T23 has-Medical-Assertion:T20 has-Medical-Assertion:T22

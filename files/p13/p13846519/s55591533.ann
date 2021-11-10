@@ -1,0 +1,19 @@
+T1	Lesion-Anatomy 250 276	left upper lobe subpleural
+T2	Lesion-Description 277 281	mass
+T3	Lesion-Characteristic 287 303	fiducial markers
+T4	Lesion-Size-Trend 304 311;313 333	appears increased in density
+A1	Lesion-Size-TrendValue T4 increasing
+T5	Medical-Assertion 421 423	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 424 449	definite pleural effusion
+T7	Medical-Problem 453 465	pneumothorax
+T8	Medical-Problem 513 530	mild cardiomegaly
+E6	Medical-Problem:T8
+T9	Medical-Problem 533 540;542 572	Chronic changes proximal right humerus
+E7	Medical-Problem:T9
+T10	Lesion-Anatomy 684 694;696 711	subpleural left upper lobe
+T11	Lesion-Description 712 716	mass
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Characteristic:T3 has-Lesion-Size-Trend:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T10

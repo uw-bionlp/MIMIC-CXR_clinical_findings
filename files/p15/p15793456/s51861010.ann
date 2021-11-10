@@ -1,0 +1,21 @@
+T1	Medical-Problem 352 369;371 376	Right mediastinal shift
+E1	Medical-Problem:T1
+T2	Medical-Problem 416 442;444 457	transient right lower lobe consolidation
+E2	Medical-Problem:T2
+T3	Medical-Assertion 459 469	presumably
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 470 481	atelectasis
+T5	Medical-Assertion 487 502	might be due to
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 503 508;510 524	acute hyperinflation
+T7	Medical-Problem 532 555	already dominant bullae
+T8	Medical-Anatomy 563 586;588 605	left lung, particularly in the lower lobe
+T9	Medical-Assertion 608 610	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 611 623	pneumothorax
+T11	Medical-Problem 627 643	pleural effusion
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

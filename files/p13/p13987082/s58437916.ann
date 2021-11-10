@@ -1,0 +1,23 @@
+T1	Medical-Problem 196 205	lungs are
+E1	Medical-Problem:T1
+T2	Medical-Problem 206 220	hyper inflated
+E2	Medical-Problem:T2
+T3	Medical-Problem 223 241	Linear atelectasis
+T4	Medical-Anatomy 257 262;264 268	right base
+T5	Medical-Assertion 282 284	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 285 301	pleural effusion
+T7	Lesion-Assertion 382 384	no
+A2	Lesion-AssertionValue T7 absent
+T8	Lesion-Anatomy 385 396	mediastinal
+T9	Lesion-Description 397 401	mass
+T10	Medical-Problem 426 446	Hypertrophic changes
+T11	Medical-Anatomy 463 475	dorsal spine
+T12	Medical-Assertion 568 570	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 571 584	acute disease
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

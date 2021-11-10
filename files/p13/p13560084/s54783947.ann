@@ -1,0 +1,21 @@
+T1	Medical-Problem 196 202;204 213	patchy opacities
+T2	Medical-Anatomy 236 241	lungs
+T3	Medical-Problem 243 257	more confluent
+T4	Medical-Anatomy 265 279;281 292	left upper and lower lobes
+T5	Medical-Anatomy 309 323	right mid lung
+T6	Medical-Assertion 343 345	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 346 354	effusion
+T8	Medical-Problem 358 370	Cardiomegaly
+E7	Medical-Problem:T8
+T9	Medical-Assertion 383 385	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 386 413	acute osseous abnormalities
+T11	Medical-Problem 444 468	Bilateral consolidations
+E9	Medical-Problem:T11
+T12	Medical-Problem 485 495	pneumonia,
+E10	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

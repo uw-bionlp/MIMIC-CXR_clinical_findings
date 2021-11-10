@@ -1,0 +1,27 @@
+T1	Medical-Assertion 36 38	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 39 72	acute cardiopulmonary abnormality
+T3	Lesion-Count 83 91	Numerous
+T4	Lesion-Anatomy 92 101	pulmonary
+T5	Lesion-Description 102 109	nodules
+T6	Lesion-Count 515 523	Numerous
+T7	Lesion-Anatomy 524 533	bilateral
+T8	Lesion-Characteristic 534 541	rounded
+T9	Lesion-Description 542 549	lesions
+T10	Medical-Problem 652 685	small bilateral pleural effusions
+E9	Medical-Problem:T10
+T11	Medical-Assertion 697 699	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 700 712	pneumothorax
+T13	Lesion-Count 776 784	Numerous
+T14	Lesion-Anatomy 785 794	pulmonary
+T15	Lesion-Description 795 802	nodules
+T16	Medical-Assertion 842 855	may represent
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 858 868	vasculitis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Count:T3 has-Lesion-Anatomy:T4
+E8	Lesion-Description:T9 has-Lesion-Count:T6 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Lesion-Description:T15 has-Lesion-Count:T13 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

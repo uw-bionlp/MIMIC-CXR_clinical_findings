@@ -1,0 +1,24 @@
+T1	Medical-Assertion 170 172	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 173 190	pneumomediastinum
+T3	Medical-Problem 194 206	pneumothorax
+T4	Lesion-Anatomy 235 256	juxtahilar right lung
+T5	Lesion-Description 257 261	mass
+T6	Medical-Problem 266 274	somewhat
+E5	Medical-Problem:T6
+T7	Medical-Assertion 296 302	may be
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 303 306;308 321	new consolidation
+T9	Medical-Anatomy 322 336	inferior to it
+T10	Medical-Assertion 338 352	which could be
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 353 363	hemorrhage
+T12	Medical-Problem 367 378	atelectasis
+T13	Medical-Problem 381 386;388 407	Right pleural effusion is
+E10	Medical-Problem:T13
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10

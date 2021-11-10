@@ -1,0 +1,36 @@
+T1	Medical-Problem 343 360	mild cardiomegaly
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 484 493	pulmonary
+T3	Lesion-Description 494 501	nodules
+T4	Lesion-Anatomy 574 589	left lower lung
+T5	Lesion-Description 590 596	nodule
+T6	Medical-Assertion 665 680;682 691	could likely be secondary
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 699 715	pleural effusion
+T8	Medical-Assertion 718 720	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 721 745	new focal consolidations
+T10	Medical-Assertion 746 756	concerning
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 762 771	pneumonia
+T12	Medical-Assertion 789 791	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 792 818	definite pleural effusions
+T14	Medical-Problem 822 836	pneumothoraces
+T15	Medical-Assertion 870 872	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 873 897	new focal consolidations
+T17	Medical-Assertion 898 908	concerning
+A6	Medical-AssertionValue T17 possible
+T18	Medical-Problem 913 922	pneumonia
+T19	Medical-Problem 941 956	Persistent left
+E13	Medical-Problem:T19
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T18 has-Medical-Assertion:T15 has-Medical-Assertion:T17

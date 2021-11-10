@@ -1,0 +1,33 @@
+T1	Lesion-Characteristic 221 226	ovoid
+T2	Lesion-Characteristic 227 235	calcific
+T3	Lesion-Description 236 240	mass
+T4	Lesion-Anatomy 249 273	level of the aortic arch
+T5	Medical-Problem 291 300	partially
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 350 373	left costophrenic angle
+T7	Medical-Problem 378 387	elevation
+T8	Medical-Anatomy 396 414	left hemidiaphragm
+T9	Medical-Problem 419 437	pleural thickening
+T10	Medical-Problem 589 600	obscuration
+T11	Medical-Anatomy 608 613;615 628	right hemidiaphragm
+T12	Medical-Assertion 635 653	appears related to
+A1	Medical-AssertionValue T12 possible
+T13	Medical-Problem 659 677	some pleural fluid
+T14	Medical-Problem 682 686;688 701	some consolidation
+T15	Medical-Anatomy 709 726	right middle lobe
+T16	Medical-Problem 744 762	New right effusion
+E15	Medical-Problem:T16
+T17	Medical-Problem 767 806	right basilar/middle lobe consolidation
+E16	Medical-Problem:T17
+T18	Medical-Assertion 814 829	could represent
+A2	Medical-AssertionValue T18 possible
+T19	Medical-Problem 837 848	atelectasis
+T20	Medical-Problem 852 861	pneumonia
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T12 has-Medical-Anatomy:T15
+E13	Medical-Problem:T14 has-Medical-Assertion:T12 has-Medical-Anatomy:T15
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Medical-Problem:T20 has-Medical-Assertion:T18

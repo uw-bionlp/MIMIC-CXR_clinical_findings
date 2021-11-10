@@ -1,0 +1,21 @@
+T1	Medical-Problem 294 298;300 315	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Assertion 327 329	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 330 346	pleural effusion
+T4	Medical-Problem 350 362	pneumothorax
+T5	Medical-Problem 365 374	Opacities
+T6	Medical-Anatomy 383 393	lung bases
+T7	Medical-Problem 492 509	Basilar opacities
+E6	Medical-Problem:T7
+T8	Medical-Assertion 511 535	probably compatible with
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 536 547	atelectasis
+T10	Medical-Problem 558 568;570 579	developing pneumonia
+T11	Medical-Assertion 583 595	not excluded
+A3	Medical-AssertionValue T11 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T11

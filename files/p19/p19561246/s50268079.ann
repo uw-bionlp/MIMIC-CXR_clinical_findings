@@ -1,0 +1,35 @@
+T1	Medical-Problem 291 313	subtle interval change
+E1	Medical-Problem:T1
+T2	Medical-Problem 404 431	consolidative opacification
+T3	Medical-Anatomy 439 466;468 483	right upper lobe and in the left lower lobe
+T4	Medical-Assertion 485 514	which would be concerning for
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 515 524	pneumonia
+T6	Medical-Problem 528 538	aspiration
+T7	Medical-Assertion 564 570	likely
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 571 587	airspace opacity
+T9	Medical-Anatomy 599 616	right middle lobe
+T10	Medical-Anatomy 625 636	right heart
+T11	Medical-Problem 702 717	pulmonary edema
+E9	Medical-Problem:T11
+T12	Medical-Problem 764 780	Radiopaque areas
+E10	Medical-Problem:T12
+T13	Lesion-Anatomy 793 805	paratracheal
+T14	Lesion-Assertion 819 832	may represent
+A3	Lesion-AssertionValue T14 possible
+T15	Lesion-Characteristic 833 842	calcified
+T16	Lesion-Description 843 854	lymph nodes
+T17	Medical-Assertion 1025 1027	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1028 1040	pneumothorax
+T19	Medical-Assertion 1051 1059	Possible
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1060 1079;1081 1104	layering effusions, left greater than right
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T13 has-Lesion-Assertion:T14 has-Lesion-Characteristic:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

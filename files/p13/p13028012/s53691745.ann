@@ -1,0 +1,30 @@
+T1	Medical-Problem 679 701	heart remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 713 737;739 747	persistent layering left effusion
+T3	Medical-Problem 753 777	associated consolidation
+T4	Medical-Anatomy 785 804	retrocardiac region
+T5	Medical-Assertion 805 811;813 825	likely representing
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 826 861	partial left lower lobe atelectasis
+T7	Medical-Problem 877 889;891 901	lung volumes remain low
+E6	Medical-Problem:T7
+T8	Medical-Problem 911 926	pulmonary edema
+T9	Medical-Assertion 927 939	has resolved
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 965 978	cavitary area
+T11	Medical-Anatomy 986 1007	suprahilar right lung
+T12	Medical-Assertion 1011 1032	no longer appreciated
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Assertion 1048 1059	did in fact
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1070 1090	superimposed shadows
+T15	Medical-Assertion 1093 1095	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1096 1108	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

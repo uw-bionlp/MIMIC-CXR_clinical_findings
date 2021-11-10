@@ -1,0 +1,56 @@
+T1	Medical-Problem 437 445	blunting
+T2	Medical-Anatomy 453 501;503 508	bilateral costophrenic angles, left greater than right
+T3	Medical-Problem 526 553	bilateral pleural effusions
+E3	Medical-Problem:T3
+T4	Medical-Problem 556 566	Prominence
+E4	Medical-Problem:T4
+T5	Medical-Problem 616 645	pulmonary vascular congestion
+E5	Medical-Problem:T5
+T6	Medical-Problem 648 652;654 674	Left retrocardiac opacity
+E6	Medical-Problem:T6
+T7	Medical-Assertion 675 688	may relate to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 708 719	atelectasis
+T9	Medical-Problem 725 733	effusion
+T10	Medical-Problem 744 768	underlying consolidation
+T11	Medical-Assertion 769 787	cannot be excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 794 801;803 825	cardiac silhouette is enlarged
+E10	Medical-Problem:T12
+T13	Medical-Anatomy 832 843	aortic knob
+T14	Medical-Problem 847 856	calcified
+T15	Medical-Problem 859 878;880 887	Marked degenerative changes
+T16	Medical-Anatomy 904 917	right humerus
+T17	Medical-Problem 957 986	underlying avascular necrosis
+T18	Medical-Assertion 987 1005	cannot be excluded
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1017 1024;1026 1036	diffuse osteopenia
+E16	Medical-Problem:T19
+T20	Medical-Problem 1058 1085	Enlarged cardiac silhouette
+E17	Medical-Problem:T20
+T21	Medical-Problem 1087 1114	bilateral pleural effusions
+E18	Medical-Problem:T21
+T22	Medical-Problem 1119 1128;1130 1149	pulmonary vascular congestion
+E19	Medical-Problem:T22
+T23	Medical-Assertion 1150 1158	suggests
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1159 1162	CHF
+T25	Medical-Problem 1171 1183	Irregularity
+T26	Medical-Anatomy 1191 1209	right humeral head
+T27	Medical-Assertion 1210 1216	may be
+A5	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1217 1229	degenerative
+T29	Medical-Problem 1241 1270	underlying avascular necrosis
+T30	Medical-Assertion 1271 1289	cannot be excluded
+A6	Medical-AssertionValue T30 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T17 has-Medical-Anatomy:T16 has-Medical-Assertion:T18
+E20	Medical-Problem:T24 has-Medical-Assertion:T23
+E21	Medical-Problem:T25 has-Medical-Anatomy:T26
+E23	Medical-Problem:T28 has-Medical-Anatomy:T26 has-Medical-Assertion:T27
+E24	Medical-Problem:T29 has-Medical-Anatomy:T26 has-Medical-Assertion:T30

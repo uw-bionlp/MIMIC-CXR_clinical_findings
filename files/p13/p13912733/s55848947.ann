@@ -1,0 +1,40 @@
+T1	Medical-Problem 209 246	streaky bilateral perihilar opacities
+T2	Medical-Anatomy 269 274;276 287	right middle lobe
+T3	Medical-Anatomy 289 296	lingula
+T4	Medical-Assertion 325 338	may be due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 339 347;349 358	atypical infection
+T6	Medical-Problem 366 373	related
+E5	Medical-Problem:T6
+T7	Medical-Problem 374 376	to
+E6	Medical-Problem:T7
+T8	Medical-Problem 377 387	mild edema
+T9	Lesion-Count 405 406	2
+T10	Lesion-Characteristic 407 416	calcified
+T11	Lesion-Characteristic 417 424	rounded
+T12	Lesion-Size 426 439	subcentimeter
+T13	Lesion-Description 440 449	opacities
+T14	Lesion-Anatomy 470 485	right lung apex
+T15	Lesion-Assertion 492 503;505 514	most likely represent
+A2	Lesion-AssertionValue T15 possible
+T16	Lesion-Characteristic 515 524	calcified
+T17	Lesion-Description 525 534	granuloma
+T18	Medical-Assertion 537 539	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 540 556	pleural effusion
+T20	Medical-Problem 560 572	pneumothorax
+T21	Medical-Anatomy 588 595	cardiac
+T22	Medical-Assertion 610 613	not
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 614 622	enlarged
+T24	Medical-Anatomy 629 640	aortic knob
+T25	Medical-Problem 644 653	calcified
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T4
+E12	Lesion-Description:T13 has-Lesion-Count:T9 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T14
+E15	Lesion-Description:T17 has-Lesion-Anatomy:T14 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T18
+E19	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E21	Medical-Problem:T25 has-Medical-Anatomy:T24

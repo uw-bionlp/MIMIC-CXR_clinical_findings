@@ -1,0 +1,19 @@
+T1	Medical-Problem 644 650;652 694	marked lobular circumferential pleural thickening
+T2	Medical-Anatomy 702 718	right hemithorax
+T3	Medical-Anatomy 738 748	right lung
+T4	Medical-Problem 765 781	mildly decreased
+E4	Medical-Problem:T4
+T5	Medical-Assertion 783 808	probably corresponding to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 810 831	increased volume loss
+T7	Medical-Problem 844 864	superimposed process
+T8	Medical-Problem 868 888;890 897	rapid progression of disease
+T9	Medical-Assertion 898 909	may explain
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 987 1000	opacification
+T11	Medical-Anatomy 1008 1018	right lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3
+E7	Medical-Problem:T8 has-Medical-Anatomy:T3 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11

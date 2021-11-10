@@ -1,0 +1,36 @@
+T1	Medical-Problem 257 280	extensive opacification
+T2	Medical-Anatomy 295 311	right hemithorax
+T3	Medical-Problem 327 340	Opacification
+E3	Medical-Problem:T3
+T4	Medical-Problem 411 426	basilar opacity
+E4	Medical-Problem:T4
+T5	Medical-Assertion 445 451;453 463	likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 481 492	atelectasis
+T7	Medical-Problem 497 505	effusion
+T8	Medical-Problem 507 514	Opacity
+E7	Medical-Problem:T8
+T9	Lesion-Anatomy 522 526;528 538	left medial mid
+E8	Lesion-Anatomy:T9
+T10	Lesion-Size 564 569	large
+E9	Lesion-Size:T10
+T11	Medical-Assertion 653 655	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 734 747	opacification
+T13	Medical-Anatomy 762 778	right hemithorax
+T14	Medical-Problem 807 847	persistent left upper lung opacification
+E12	Medical-Problem:T14
+T15	Medical-Assertion 848 863	could represent
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 864 873	infection
+T17	Medical-Problem 908 913	edema
+T18	Medical-Assertion 917 928	less likely
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 935 944	asymmetry
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15 has-Medical-Assertion:T18
+E15	Medical-Problem:T19 has-Medical-Assertion:T15 has-Medical-Assertion:T18

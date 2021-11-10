@@ -1,0 +1,26 @@
+T1	Medical-Assertion 199 209	no evident
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 210 222	pneumothorax
+T3	Medical-Problem 226 242	pleural effusion
+T4	Medical-Problem 270 296	New ground-glass opacities
+E3	Medical-Problem:T4
+T5	Lesion-Description 324 328	mass
+T6	Lesion-Anatomy 336 346;348 352	left upper lobe
+T7	Medical-Problem 373 383	hemorrhage
+E6	Medical-Problem:T7
+T8	Medical-Problem 391 419	psot obstructive atelectasis
+E7	Medical-Problem:T8
+T9	Lesion-Anatomy 423 434	Mediastinal
+T10	Lesion-Description 435 450	lymphadenopathy
+T11	Lesion-Anatomy 452 465	peribronchial
+T12	Lesion-Description 466 475	opacities
+T13	Lesion-Description 480 487	nodular
+E12	Lesion-Description:T13
+T14	Lesion-Description 488 497	opacities
+T15	Lesion-Anatomy 506 516	right lung
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E11	Lesion-Description:T12 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T15
+E13	Lesion-Description:T14 has-Lesion-Anatomy:T15

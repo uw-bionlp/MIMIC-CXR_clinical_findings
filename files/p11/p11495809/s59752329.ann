@@ -1,0 +1,26 @@
+T1	Medical-Problem 395 425	moderate left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 430 441;443 459	small right pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 470 503	bibasilar compression atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Assertion 505 507	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 508 520	pneumothorax
+T6	Lesion-Assertion 523 525	No
+A2	Lesion-AssertionValue T6 absent
+T7	Lesion-Anatomy 526 531	hilar
+T8	Lesion-Description 532 547	lymphadenopathy
+T9	Medical-Problem 549 568	Stable cardiomegaly
+E7	Medical-Problem:T9
+T10	Medical-Problem 670 707;709 717	moderate left and small right pleural effusion
+E8	Medical-Problem:T10
+T11	Lesion-Assertion 734 736	no
+A3	Lesion-AssertionValue T11 absent
+T12	Lesion-Description 737 744	nodules
+T13	Lesion-Description 748 754	masses
+T14	Lesion-Anatomy 789 794	lungs
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7
+E9	Lesion-Description:T12 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T14
+E10	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T14

@@ -1,0 +1,43 @@
+T1	Medical-Problem 240 248;250 269	interval increase in opacity
+T2	Medical-Anatomy 277 293	right lower lung
+T3	Medical-Assertion 295 302	without
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 303 319	air bronchograms
+T5	Medical-Problem 324 344	signal consolidation
+T6	Lesion-Size 349 354	small
+T7	Lesion-Description 355 370	nodular opacity
+T8	Lesion-Anatomy 385 395;397 410	left third posterior rib
+T9	Medical-Problem 448 467	Emphysema is severe
+E8	Medical-Problem:T9
+T10	Medical-Problem 476 499	cluster of ring shadows
+T11	Medical-Anatomy 507 517	right apex
+T12	Medical-Problem 522 543;545 550	bullae with thickened walls
+T13	Medical-Anatomy 574 612	peripheral and hilar pulmonary vessels
+T14	Medical-Assertion 617 620	not
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 622 630	engorged
+T16	Medical-Assertion 685 687	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 688 696	effusion
+T18	Medical-Problem 701 713	pneumothorax
+T19	Medical-Problem 737 753	Severe emphysema
+E16	Medical-Problem:T19
+T20	Medical-Problem 763 809	Interval increase in the right basilar opacity
+E17	Medical-Problem:T20
+T21	Medical-Assertion 811 819	unlikely
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 826 835	pneumonia
+T23	Medical-Assertion 838 846	could be
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 847 857	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T12 has-Medical-Anatomy:T11
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T24 has-Medical-Assertion:T23

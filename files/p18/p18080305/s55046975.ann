@@ -1,0 +1,22 @@
+T1	Medical-Anatomy 171 189	cardiac silhouette
+T2	Medical-Assertion 190 197	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 198 226	definite vascular congestion
+T4	Medical-Problem 229 236;238 261	Area of increased opacification
+T5	Medical-Anatomy 269 279	right base
+T6	Medical-Assertion 280 293	could reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 294 309	crowded vessels
+T8	Medical-Problem 312 323	atelectasis
+T9	Medical-Problem 366 387	supervening pneumonia
+T10	Medical-Problem 391 417	Retrocardiac opacification
+E8	Medical-Problem:T10
+T11	Medical-Assertion 418 429	most likely
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 452 463	atelectasis
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

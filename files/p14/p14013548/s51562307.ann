@@ -1,0 +1,23 @@
+T1	Medical-Problem 218 231;233 249	moderate left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 283 294	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 298 310	pneumothorax
+T4	Medical-Problem 332 359	calcified coronary arteries
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 400 410	right lung
+T6	Medical-Assertion 425 427	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 428 436	effusion
+T8	Medical-Assertion 445 451	may be
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 454 464;466 496	tiny small residual left pleural effusion
+T10	Medical-Problem 574 595	left pleural effusion
+E7	Medical-Problem:T10
+T11	Medical-Assertion 631 633	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 634 646	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

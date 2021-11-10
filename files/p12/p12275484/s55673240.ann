@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 231 236	Lungs
+T2	Medical-Assertion 263 279	without definite
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 289 298	pneumonia
+T4	Medical-Problem 302 305	CHF
+T5	Lesion-Anatomy 336 355	retrocardiac region
+T6	Lesion-Characteristic 366 380	subtle nodular
+T7	Lesion-Description 381 388	opacity
+T8	Medical-Problem 444 453	pneumonia
+E7	Medical-Problem:T8
+T9	Medical-Problem 470 482;484 491	retrocardiac opacity
+E8	Medical-Problem:T9
+T10	Medical-Assertion 513 537	which raises concern for
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 540 553	hiatal hernia
+T12	Medical-Problem 569 605	old right clavicular shaft deformity
+E10	Medical-Problem:T12
+T13	Lesion-Characteristic 663 669	Subtle
+T14	Lesion-Description 670 685	nodular opacity
+T15	Lesion-Anatomy 693 712	retrocardiac region
+T16	Medical-Problem 792 801	pneumonia
+E14	Medical-Problem:T16
+T17	Medical-Assertion 805 813	Possible
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 814 827	hiatal hernia
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

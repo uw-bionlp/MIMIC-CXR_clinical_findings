@@ -1,0 +1,27 @@
+T1	Lesion-Description 389 393	mass
+T2	Lesion-Anatomy 401 424	right juxtahilar region
+T3	Medical-Problem 432 450	localized collapse
+T4	Medical-Anatomy 458 491	superior segment right lower lobe
+T5	Lesion-Assertion 499 505	raises
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 525 543	neoplastic process
+T7	Lesion-Description 552 561	carcinoid
+T8	Lesion-Description 565 573	lymphoma
+T9	Medical-Problem 594 614	aggressive infection
+E8	Medical-Problem:T9
+T10	Medical-Problem 663 666;668 698	New patchy left lower lobe opacity
+E9	Medical-Problem:T10
+T11	Medical-Assertion 699 712	may be due to
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 713 731	patchy atelectasis
+T13	Medical-Problem 735 745	aspiration
+T14	Lesion-Anatomy 805 816	right hilar
+T15	Lesion-Description 817 821	mass
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Lesion-Description:T6 has-Lesion-Assertion:T5
+E6	Lesion-Description:T7 has-Lesion-Assertion:T5
+E7	Lesion-Description:T8 has-Lesion-Assertion:T5
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T14

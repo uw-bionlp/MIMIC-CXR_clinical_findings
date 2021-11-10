@@ -1,0 +1,27 @@
+T1	Medical-Problem 252 276	peripheral consolidation
+T2	Medical-Anatomy 334 349	left lower lobe
+T3	Medical-Problem 381 392;394 407	new similar opacification
+T4	Medical-Anatomy 415 431	right upper lobe
+T5	Medical-Assertion 439 456	either represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 459 468	pneumonia
+T7	Medical-Problem 473 483	hemorrhage
+T8	Medical-Problem 516 528	coagulopathy
+E7	Medical-Problem:T8
+T9	Medical-Problem 532 548	acute vasculitis
+T10	Medical-Problem 617 622;624 651	Small bilateral pleural effusions
+E9	Medical-Problem:T10
+T11	Medical-Problem 811 834	Contrast agent retained
+T12	Medical-Anatomy 842 849	kidneys
+T13	Medical-Assertion 851 859	suggests
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 862 897	severe compromise of renal function
+T15	Medical-Problem 905 922	ureteral drainage
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Assertion:T5
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13

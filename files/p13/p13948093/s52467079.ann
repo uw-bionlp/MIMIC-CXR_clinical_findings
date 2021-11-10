@@ -1,0 +1,26 @@
+T1	Medical-Problem 276 312	Moderate bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 325 351;353 376	Mild to moderate pulmonary edema worsened slightly
+E2	Medical-Problem:T2
+T3	Medical-Problem 378 391	Consolidation
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 393 409	right upper lobe
+T5	Medical-Assertion 421 429	probably
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 431 440	pneumonia
+T7	Medical-Anatomy 442 457	Left lower lobe
+T8	Medical-Problem 458 479	consolidation severe,
+T9	Medical-Assertion 491 499	could be
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 501 512	atelectasis
+T11	Medical-Problem 522 533	atelectasis
+T12	Medical-Problem 538 547	pneumonia
+T13	Medical-Assertion 572 574	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 576 588	pneumothorax
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,24 @@
+T1	Medical-Problem 308 340	increased airspace opacification
+T2	Medical-Anatomy 348 358	right base
+T3	Medical-Problem 362 375;377 384	new band-like opacity
+T4	Medical-Anatomy 392 401	left base
+T5	Medical-Assertion 405 418	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 419 438	worsening infection
+T7	Medical-Problem 442 453	atelectasis
+T8	Medical-Problem 475 520	fine reticular nodular pattern of abnormality
+E7	Medical-Problem:T8
+T9	Medical-Assertion 596 598	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 599 602;604 620	new pleural effusion
+T11	Medical-Problem 624 636	pneumothorax
+T12	Medical-Problem 720 740	multifocal pneumonia
+E10	Medical-Problem:T12
+T13	Medical-Problem 744 754	aspiration
+E11	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

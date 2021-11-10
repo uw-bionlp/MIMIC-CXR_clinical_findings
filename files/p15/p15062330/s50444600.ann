@@ -1,0 +1,17 @@
+T1	Medical-Problem 395 404	pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Assertion 442 450	could be
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 455 493	accompanying new left pleural effusion
+T4	Medical-Problem 555 574	minimal atelectasis
+T5	Medical-Anatomy 582 598	right lung bases
+T6	Medical-Assertion 603 605;607 615	no evidence
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 619 634	pulmonary edema
+T8	Medical-Assertion 637 639	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 640 652	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

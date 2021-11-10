@@ -1,0 +1,20 @@
+T1	Medical-Assertion 201 203	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 205 233	large right pleural effusion
+T3	Medical-Assertion 245 247	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 248 260	pneumothorax
+T5	Medical-Problem 279 334	bilateral lower lung opacities, left greater than right
+E3	Medical-Problem:T5
+T6	Medical-Problem 535 544;546 580	bibasilar opacities, left greater than right
+E4	Medical-Problem:T6
+T7	Medical-Assertion 587 600	may represent
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 601 612	atelectasis
+T9	Medical-Problem 615 625	aspiration
+T10	Medical-Problem 630 639	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T7

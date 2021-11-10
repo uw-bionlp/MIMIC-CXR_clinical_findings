@@ -1,0 +1,23 @@
+T1	Medical-Assertion 243 245	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 246 253;255 263	pleural effusion
+T3	Medical-Problem 265 277	pneumothorax
+T4	Medical-Problem 282 310	focal airspace consolidation
+T5	Medical-Problem 322 331	pneumonia
+T6	Lesion-Anatomy 360 376	right upper lung
+T7	Lesion-Description 377 392	nodular density
+T8	Lesion-Assertion 396 399	not
+A2	Lesion-AssertionValue T8 absent
+T9	Medical-Problem 548 552;554 579	mild amount of atherosclerosis
+E7	Medical-Problem:T9
+T10	Medical-Problem 597 620	somewhat tortuous aorta
+E8	Medical-Problem:T10
+T11	Medical-Assertion 638 640	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 641 670	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6 has-Lesion-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

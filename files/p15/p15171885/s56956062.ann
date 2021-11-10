@@ -1,0 +1,41 @@
+T1	Medical-Problem 192 216	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 223 249	aorta is heavily calcified
+E2	Medical-Problem:T2
+T3	Lesion-Size 332 337	small
+T4	Lesion-Characteristic 338 347	calcified
+T5	Lesion-Description 348 357	granuloma
+T6	Lesion-Anatomy 376 392	right upper lobe
+T7	Medical-Problem 404 410;412 420	slight blunting
+T8	Medical-Anatomy 428 452	left costophrenic sulcus
+T9	Medical-Assertion 453 463	suggesting
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 464 481	minor atelectasis
+T11	Medical-Assertion 490 498	possible
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 499 532	trace left-sided pleural effusion
+T13	Medical-Assertion 544 546	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 547 559	pneumothorax
+T15	Medical-Problem 567 593	bones appear demineralized
+E12	Medical-Problem:T15
+T16	Medical-Problem 598 639	mild upper thoracic compression deformity
+E13	Medical-Problem:T16
+T17	Medical-Problem 678 686	Blunting
+T18	Medical-Anatomy 694 718	left costophrenic sulcus
+T19	Medical-Assertion 719 729	suggesting
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 730 741	atelectasis
+T21	Medical-Assertion 747 755	possible
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 756 770	trace effusion
+T23	Medical-Assertion 786 808	no findings suggestive
+A6	Medical-AssertionValue T23 absent
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E17	Medical-Problem:T22 has-Medical-Anatomy:T18 has-Medical-Assertion:T19 has-Medical-Assertion:T21 has-Medical-Assertion:T23

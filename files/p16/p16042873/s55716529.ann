@@ -1,0 +1,18 @@
+T1	Medical-Problem 218 225	opacity
+T2	Medical-Anatomy 233 248	right lung base
+T3	Medical-Assertion 249 252;254 273	has completely resolved
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Assertion 294 305	no evidence
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 326 331;333 354	focal parenchymal opacities
+T6	Medical-Anatomy 362 377	lung parenchyma
+T7	Medical-Assertion 379 381	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 382 399	pleural effusions
+T9	Medical-Problem 411 435	retrocardiac atelectasis
+E6	Medical-Problem:T9
+T10	Medical-Problem 437 447	Borderline
+E7	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7

@@ -1,0 +1,19 @@
+T1	Medical-Assertion 158 164	Likely
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 165 185	aspiration pneumonia
+T3	Medical-Assertion 232 242	Nearly all
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 255 288	extensive pulmonary consolidation
+T5	Medical-Assertion 296 299;301 309	has resolved
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 316 330	small residual
+T7	Medical-Anatomy 338 361	perihilar left mid lung
+T8	Medical-Assertion 362 370	could be
+A4	Medical-AssertionValue T8 possible
+T9	Medical-Problem 373 378;380 389	small pneumonia
+T10	Medical-Problem 392 415	Small pleural effusions
+E6	Medical-Problem:T10
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E3	Medical-Problem:T6 has-Medical-Anatomy:T7
+E5	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

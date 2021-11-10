@@ -1,0 +1,16 @@
+T1	Medical-Problem 234 261	elevated left hemidiaphragm
+T2	Medical-Problem 268 279	volume loss
+T3	Medical-Anatomy 287 302	left lower lobe
+T4	Medical-Problem 306 338	underlying infectious infiltrate
+T5	Medical-Assertion 355 372	can't be excluded
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 389 411	some increased opacity
+T7	Medical-Anatomy 419 424;426 436	right lower lobe
+T8	Medical-Assertion 437 447	suggesting
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 451 484	area volume loss/early infiltrate
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

@@ -1,0 +1,30 @@
+T1	Medical-Problem 209 216	opacity
+T2	Medical-Anatomy 224 239	right lung base
+T3	Medical-Problem 245 257	silhouetting
+T4	Medical-Anatomy 266 285	right hemidiaphragm
+T5	Medical-Assertion 286 305	likely representing
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 306 337;339 347	small-to-moderate right pleural effusion
+T7	Medical-Problem 353 373	adjacent atelectasis
+T8	Medical-Problem 387 407	developing pneumonia
+E7	Medical-Problem:T8
+T9	Medical-Problem 470 488;490 498	small left pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Assertion 586 588	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 589 604	acute fractures
+T12	Medical-Problem 633 679	Bilateral pleural effusions, small to moderate
+E10	Medical-Problem:T12
+T13	Medical-Problem 698 706	small on
+E11	Medical-Problem:T13
+T14	Medical-Problem 722 751	adjacent airspace atelectasis
+E12	Medical-Problem:T14
+T15	Medical-Problem 753 762	Pnuemonia
+T16	Medical-Assertion 763 770;772 780	must be excluded
+A3	Medical-AssertionValue T16 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E13	Medical-Problem:T15 has-Medical-Assertion:T16

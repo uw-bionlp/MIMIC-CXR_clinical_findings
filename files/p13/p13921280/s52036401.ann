@@ -1,0 +1,22 @@
+T1	Medical-Problem 257 280	symmetrical atelectasis
+T2	Medical-Anatomy 284 299	both lung bases
+T3	Medical-Assertion 306 308	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 309 334	focal parenchymal opacity
+T5	Medical-Assertion 335 345	suggesting
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 346 366	aspiration pneumonia
+T7	Medical-Problem 369 382;384 392	Minimal fluid overload
+E5	Medical-Problem:T7
+T8	Medical-Problem 412 433	Moderate cardiomegaly
+T9	Medical-Problem 438 448	tortuosity
+T10	Medical-Anatomy 457 471	thoracic aorta
+T11	Medical-Assertion 474 476	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 477 494	pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T10
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

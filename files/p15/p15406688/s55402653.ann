@@ -1,0 +1,37 @@
+T1	Medical-Anatomy 176 183	Cardiac
+T2	Medical-Problem 198 213	mildly enlarged
+T3	Medical-Problem 262 290	central vascular engorgement
+E3	Medical-Problem:T3
+T4	Medical-Problem 295 309	right effusion
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 317 321	left
+T6	Medical-Problem 327 340	consolidation
+T7	Medical-Problem 346 372	small to moderate effusion
+T8	Medical-Assertion 399 405	likely
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 406 417	atelectasis
+T10	Medical-Problem 428 437	infection
+T11	Medical-Assertion 438 456	cannot be excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 586 588	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 589 601	pneumothorax
+T14	Medical-Problem 619 647	Improved vascular congestion
+E11	Medical-Problem:T14
+T15	Medical-Problem 652 666	right effusion
+E12	Medical-Problem:T15
+T16	Medical-Anatomy 669 673	Left
+T17	Medical-Assertion 719 725	likely
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 726 737	atelectatic
+T19	Medical-Problem 748 757	infection
+T20	Medical-Assertion 758 767;769 777	cannot be excluded
+A5	Medical-AssertionValue T20 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T16 has-Medical-Assertion:T20

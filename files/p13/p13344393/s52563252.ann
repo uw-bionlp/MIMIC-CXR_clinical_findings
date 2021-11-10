@@ -1,0 +1,30 @@
+T1	Lesion-Count 403 411	Numerous
+T2	Lesion-Anatomy 413 422	pulmonary
+T3	Lesion-Description 423 433	metastatic
+E3	Lesion-Description:T3
+T4	Lesion-Description 434 441	lesions
+T5	Medical-Problem 473 486;488 496	right pleural effusion
+E5	Medical-Problem:T5
+T6	Medical-Problem 522 561	associated right lower lobe atelectasis
+E6	Medical-Problem:T6
+T7	Medical-Problem 580 600	underlying pneumonia
+T8	Medical-Assertion 604 611	limited
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 614 616	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 617 629	pneumothorax
+T11	Medical-Problem 776 817	Increasing size of right pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 823 834;836 847	right basal atelectasis
+E10	Medical-Problem:T12
+T13	Medical-Assertion 849 863	cannot exclude
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 864 873	pneumonia
+T15	Lesion-Characteristic 876 885	Extensive
+T16	Lesion-Anatomy 886 895	pulmonary
+T17	Lesion-Description 896 906;908 915	metastatic disease
+E4	Lesion-Description:T4 has-Lesion-Count:T1 has-Lesion-Anatomy:T2
+E7	Medical-Problem:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Lesion-Description:T17 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T16

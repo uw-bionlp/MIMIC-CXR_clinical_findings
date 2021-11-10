@@ -1,0 +1,19 @@
+T1	Medical-Assertion 310 312	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 313 328	pulmonary edema
+T3	Medical-Problem 341 357	low lung volumes
+E2	Medical-Problem:T3
+T4	Medical-Problem 360 369	Opacities
+T5	Medical-Anatomy 378 387	left base
+T6	Medical-Problem 409 425	pleural effusion
+T7	Medical-Problem 430 441	atelectasis
+T8	Medical-Problem 444 455;457 473	Right lower lobe atelectasis
+E7	Medical-Problem:T8
+T9	Medical-Problem 478 483	edema
+E8	Medical-Problem:T9
+T10	Medical-Assertion 504 514	no evident
+A2	Medical-AssertionValue T10 absent
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5

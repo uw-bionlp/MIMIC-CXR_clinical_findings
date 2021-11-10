@@ -1,0 +1,26 @@
+T1	Medical-Problem 356 379	minimal interval change
+E1	Medical-Problem:T1
+T2	Medical-Problem 383 395	cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 398 418	mediastinal contours
+E3	Medical-Problem:T3
+T4	Medical-Problem 420 425	lines
+E4	Medical-Problem:T4
+T5	Medical-Problem 437 458	parenchymal opacities
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 464 474	right lung
+T7	Medical-Problem 490 513	more involved than left
+T8	Medical-Problem 519 532	consolidation
+E8	Medical-Problem:T8
+T9	Medical-Assertion 590 594	does
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 595 601	either
+E9	Medical-Problem:T10
+T11	Medical-Problem 602 627;629 636	worsening of interstitial process
+T12	Medical-Problem 640 662	superimposed infection
+T13	Medical-Anatomy 670 680	right lung
+T14	Medical-Assertion 685 696	possibility
+A2	Medical-AssertionValue T14 possible
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E10	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E11	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

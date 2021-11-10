@@ -1,0 +1,44 @@
+T1	Medical-Problem 43 74	Left retrocardiac consolidation
+E1	Medical-Problem:T1
+T2	Medical-Assertion 75 99	would be compatible with
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 100 109	pneumonia
+T4	Lesion-Anatomy 221 232	mediastinal
+T5	Lesion-Description 233 248	lymphadenopathy
+T6	Medical-Problem 657 683	retrocardiac consolidation
+E5	Medical-Problem:T6
+T7	Medical-Problem 709 712;714 726	air bronchograms
+E6	Medical-Problem:T7
+T8	Medical-Anatomy 755 765	right lung
+T9	Medical-Assertion 767 788	which could represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 790 799	pneumonia
+T11	Medical-Assertion 810 812	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 813 838	definite pleural effusion
+T13	Medical-Assertion 840 842	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 843 855	pneumothorax
+T15	Medical-Problem 902 933	ongoing parenchymal abnormality
+E11	Medical-Problem:T15
+T16	Medical-Problem 935 943	Splaying
+T17	Medical-Anatomy 952 958	carina
+T18	Medical-Problem 964 980	narrowing of the
+E14	Medical-Problem:T18
+T19	Medical-Problem 1153 1179	Retrocardiac consolidation
+E15	Medical-Problem:T19
+T20	Medical-Problem 1205 1214	pneumonia
+E16	Medical-Problem:T20
+T21	Medical-Problem 1217 1228;1230 1240	Progression of disease
+E17	Medical-Problem:T21
+T22	Lesion-Size-Trend 1276 1285	Unchanged
+A5	Lesion-Size-TrendValue T22 no-change
+T23	Lesion-Anatomy 1286 1297	mediastinal
+T24	Lesion-Description 1298 1313	lymphadenopathy
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17
+E19	Lesion-Description:T24 has-Lesion-Size-Trend:T22 has-Lesion-Anatomy:T23

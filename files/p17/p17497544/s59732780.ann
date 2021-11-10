@@ -1,0 +1,22 @@
+T1	Medical-Anatomy 408 432	hilar pulmonary arterial
+T2	Medical-Assertion 464 471	suggest
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 472 478;480 488	volume overload
+T4	Medical-Problem 496 538	early biventricular cardiac decompensation
+T5	Medical-Problem 540 553	Opacification
+T6	Medical-Anatomy 562 585	right infrahilar region
+T7	Medical-Assertion 586 601	could be due to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 602 621	vascular congestion
+T9	Medical-Problem 666 686	aspiration pneumonia
+T10	Medical-Problem 726 743	Pleural effusions
+E8	Medical-Problem:T10
+T11	Medical-Assertion 762 764	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 766 778	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,36 @@
+T1	Medical-Problem 502 522	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 539 563	bronchovascular crowding
+E2	Medical-Problem:T2
+T3	Medical-Problem 565 573;575 587	Moderate cardiomegaly
+E3	Medical-Problem:T3
+T4	Medical-Assertion 648 650;652 660	No evidence
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 664 679	pulmonary edema
+T6	Medical-Problem 683 692	effusions
+T7	Medical-Assertion 694 696	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 697 716	focal consolidation
+T9	Medical-Assertion 717 727;729 732	concerning for
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 733 742	pneumonia
+T11	Lesion-Characteristic 776 785	Calcified
+T12	Lesion-Description 786 796	granulomas
+T13	Lesion-Anatomy 805 821	right upper lung
+T14	Medical-Assertion 859 870	No evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 874 889	pulmonary edema
+T16	Medical-Problem 891 900	effusions
+T17	Medical-Problem 905 924	focal consolidation
+T18	Medical-Assertion 925 935;937 940	concerning for
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 941 950	pneumonia
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T14
+E14	Medical-Problem:T19 has-Medical-Assertion:T14 has-Medical-Assertion:T18

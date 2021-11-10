@@ -1,0 +1,42 @@
+T1	Medical-Anatomy 162 167	lungs
+T2	Medical-Problem 175 188	hyperexpanded
+T3	Medical-Assertion 189 202	suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 203 222;224 241	chronic obstructive pulmonary disease
+T5	Lesion-Characteristic 245 250	focal
+T6	Lesion-Description 251 257	nodule
+T7	Lesion-Anatomy 267 291	posterior to the sternum
+T8	Medical-Problem 317 328	enlargement
+T9	Medical-Anatomy 336 362	left main pulmonary artery
+T10	Medical-Problem 397 416	Bibasilar opacities
+E9	Medical-Problem:T10
+T11	Medical-Assertion 432 438;440 454	likely representative
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 458 472	bronchiectasis
+T13	Medical-Problem 477 485	fibrosis
+T14	Medical-Problem 488 502	Calcifications
+T15	Medical-Anatomy 510 516;518 538	origin of the great vessels
+T16	Medical-Problem 582 613	bibasilar parenchymal opacities
+E14	Medical-Problem:T16
+T17	Medical-Assertion 614 638	likely representative of
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 639 646;648 656	chronic scarring
+T19	Lesion-Size 674 679	small
+T20	Lesion-Anatomy 680 692	retrosternal
+T21	Lesion-Description 693 699	nodule
+T22	Medical-Anatomy 740 761	Left pulmonary artery
+T23	Medical-Assertion 780 793	suggestive of
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 794 810;812 824	pulmonary artery hypertension
+T25	Medical-Problem 828 845	pulmonic stenosis
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E18	Lesion-Description:T21 has-Lesion-Size-Present:T19 has-Lesion-Anatomy:T20
+E20	Medical-Problem:T24 has-Medical-Anatomy:T22 has-Medical-Assertion:T23
+E21	Medical-Problem:T25 has-Medical-Anatomy:T22 has-Medical-Assertion:T23

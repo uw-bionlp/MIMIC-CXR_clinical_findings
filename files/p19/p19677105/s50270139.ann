@@ -1,0 +1,21 @@
+T1	Lesion-Size 341 346	12 mm
+T2	Lesion-Description 352 358	nodule
+T3	Lesion-Anatomy 366 374;376 426	right of the right heart border and lower pole of the hilus
+T4	Medical-Problem 575 602;604 632	residual abnormality in the region of previous infection
+E4	Medical-Problem:T4
+T5	Medical-Problem 713 730	Mild cardiomegaly
+E5	Medical-Problem:T5
+T6	Medical-Assertion 762 764	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 765 774;776 795	pulmonary vascular congestion
+T8	Medical-Problem 797 802	edema
+T9	Medical-Problem 806 822	pleural effusion
+T10	Lesion-Assertion 823 839	nor any evidence
+A2	Lesion-AssertionValue T10 absent
+T11	Lesion-Characteristic 843 850	central
+T12	Lesion-Description 852 874	lymph node enlargement
+E2	Lesion-Description:T2 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11

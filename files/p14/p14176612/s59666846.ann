@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 138 143	lungs
+T2	Medical-Assertion 154 161	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 162 175	consolidation
+T4	Medical-Problem 179 184	edema
+T5	Lesion-Size 199 203	tiny
+T6	Lesion-Characteristic 204 214	hyperdense
+T7	Lesion-Description 215 221	lesion
+T8	Lesion-Anatomy 229 244	right lung base
+T9	Lesion-Assertion 276 289	may represent
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Size 292 297	small
+T11	Lesion-Description 298 309	bone island
+T12	Lesion-Anatomy 321 324	rib
+T13	Lesion-Characteristic 348 357	calcified
+T14	Lesion-Description 358 367	granuloma
+T15	Medical-Assertion 379 381	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 382 398	pleural effusion
+T17	Medical-Problem 402 414	pneumothorax
+T18	Medical-Assertion 478 480	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 481 510	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T12
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

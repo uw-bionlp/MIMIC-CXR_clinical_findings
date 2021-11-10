@@ -1,0 +1,33 @@
+T1	Medical-Problem 265 282	aorta is tortuous
+E1	Medical-Problem:T1
+T2	Medical-Assertion 293 301	probably
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 304 309;311 324	small hiatal hernia
+T4	Medical-Problem 337 354	minimal opacities
+T5	Medical-Anatomy 362 372	right base
+T6	Medical-Assertion 437 439	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 440 452	pneumothorax
+T8	Medical-Problem 456 463;465 473	pleural effusion
+T9	Medical-Problem 486 511	mild degenerative changes
+T10	Medical-Anatomy 519 533	thoracic spine
+T11	Medical-Problem 553 562	Opacities
+T12	Medical-Anatomy 570 580	right base
+T13	Medical-Assertion 581 596	could represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 597 608	atelectasis
+T15	Medical-Problem 610 619	pneumonia
+T16	Medical-Assertion 620 626;628 638	can be considered
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Assertion 676 684	Probable
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 685 698	Hiatal hernia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

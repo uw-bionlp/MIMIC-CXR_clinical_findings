@@ -1,0 +1,32 @@
+T1	Medical-Problem 267 276	Opacities
+T2	Medical-Anatomy 284 313	right mid lung and right base
+T3	Lesion-Count 351 359	Multiple
+T4	Lesion-Characteristic 366 374	cavitary
+T5	Lesion-Description 375 382	nodules
+T6	Lesion-Anatomy 386 396	both lobes
+T7	Lesion-Size-Trend 443 468	grossly similar in number
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 481 487	likely
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 488 516	small right pleural effusion
+T10	Medical-Assertion 528 530	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 531 543	cardiomegaly
+T12	Medical-Problem 546 555;557 571	Bilateral hilar fullness
+E9	Medical-Problem:T12
+T13	Medical-Assertion 637 639	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 640 652	pneumothorax
+T15	Medical-Problem 672 691	Worsening opacities
+T16	Medical-Anatomy 699 709	right lung
+T17	Lesion-Characteristic 733 745	conglomerate
+T18	Lesion-Description 746 752	masses
+T19	Medical-Problem 858 871	new pneumonia
+E15	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Count:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Lesion-Description:T18 has-Lesion-Characteristic:T17

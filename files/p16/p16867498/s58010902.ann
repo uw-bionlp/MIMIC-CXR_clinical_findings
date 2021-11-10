@@ -1,0 +1,22 @@
+T1	Medical-Assertion 259 261	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 262 274	pneumothorax
+T3	Medical-Problem 278 295	pneumomediastinum
+T4	Medical-Problem 307 325	linear atelectasis
+T5	Medical-Problem 330 338	scarring
+T6	Medical-Anatomy 342 357	both lung bases
+T7	Medical-Problem 364 385	left hemidiaphragm is
+E6	Medical-Problem:T7
+T8	Medical-Problem 386 394	obscured
+E7	Medical-Problem:T8
+T9	Medical-Assertion 406 414	could be
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 415 441	atelectasis/ consolidation
+T11	Medical-Anatomy 449 458	left base
+T12	Medical-Problem 461 482	Postoperative changes
+E10	Medical-Problem:T12
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T6
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11

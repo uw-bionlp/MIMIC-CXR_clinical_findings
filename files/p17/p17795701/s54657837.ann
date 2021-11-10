@@ -1,0 +1,15 @@
+T1	Medical-Problem 199 231	large amount of subcutaneous gas
+T2	Medical-Anatomy 242 255;257 279	right lateral chest and abdomen wall
+T3	Medical-Anatomy 304 320	pectoral muscles
+T4	Medical-Anatomy 340 367	cervical region bilaterally
+T5	Medical-Assertion 375 383	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 384 404	substantial air leak
+T7	Medical-Assertion 460 473	little if any
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 474 486	pneumothorax
+T9	Medical-Problem 494 523	bibasilar atelectatic changes
+E7	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

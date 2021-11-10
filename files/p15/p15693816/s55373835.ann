@@ -1,0 +1,40 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Medical-Problem 68 96	Moderate-sized hiatal hernia
+E2	Medical-Problem:T3
+T4	Lesion-Characteristic 310 317	rounded
+T5	Lesion-Anatomy 318 329	mediastinal
+T6	Lesion-Description 330 334	mass
+T7	Lesion-Anatomy 368 393	thoracoabdominal junction
+T8	Lesion-Size 410 419	6.6 cm in
+T9	Lesion-Characteristic 433 443;445 481	apparently containing peripheral calcifications
+T10	Medical-Assertion 596 609	suggestive of
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 612 637	calcified aortic aneurysm
+T12	Lesion-Description 642 646	mass
+T13	Lesion-Anatomy 662 667;669 678	lower esophagus
+T14	Lesion-Assertion 682 693	less likely
+A3	Lesion-AssertionValue T14 possible
+T15	Medical-Problem 774 792	linear atelectasis
+T16	Medical-Anatomy 800 815	left lower lobe
+T17	Lesion-Size 833 839	6.6 cm
+T18	Lesion-Anatomy 849 866	lower mediastinal
+T19	Lesion-Description 867 871	mass
+T20	Lesion-Characteristic 877 896;898 918	apparent peripheral rim of calcification
+T21	Medical-Assertion 962 976	concerning for
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 980 998	localized aneurysm
+T23	Medical-Anatomy 1006 1028	thoracoabdominal aorta
+T24	Lesion-Description 1033 1037	mass
+T25	Lesion-Anatomy 1056 1071	lower esophagus
+T26	Lesion-Assertion 1075 1086	less likely
+A5	Lesion-AssertionValue T26 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T7 has-Lesion-Size-Present:T8 has-Lesion-Characteristic:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T13 has-Lesion-Assertion:T14
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Lesion-Description:T19 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T18 has-Lesion-Characteristic:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T21 has-Medical-Anatomy:T23
+E20	Lesion-Description:T24 has-Lesion-Anatomy:T25 has-Lesion-Assertion:T26

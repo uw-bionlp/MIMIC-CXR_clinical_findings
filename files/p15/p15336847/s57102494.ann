@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 281 295	left lung base
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 421 453;455 464	Diffusely increased interstitial opacities
+T3	Medical-Anatomy 485 490	lungs
+T4	Medical-Assertion 491 510	which could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 511 516	edema
+T6	Medical-Assertion 583 585	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 586 601	large effusions
+T8	Medical-Problem 606 618	pneumothorax
+T9	Medical-Problem 685 702	mild cardiomegaly
+E7	Medical-Problem:T9
+T10	Medical-Problem 758 790	Bilateral interstitial opacities
+E8	Medical-Problem:T10
+T11	Medical-Assertion 791 805	concerning for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 806 811	edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

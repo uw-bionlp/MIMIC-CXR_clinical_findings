@@ -1,0 +1,30 @@
+T1	Medical-Assertion 450 452	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 453 478	mediastinal abnormalities
+T3	Medical-Problem 535 574	low positioned and flattened diaphragms
+E2	Medical-Problem:T3
+T4	Medical-Problem 590 615	emphysematic translucency
+T5	Medical-Anatomy 623 633	lung bases
+T6	Medical-Anatomy 636 657	Pulmonary vasculature
+T7	Medical-Problem 664 709	central prominence and peripheral attenuation
+T8	Medical-Problem 722 737;739 743	rather advanced COPD
+T9	Medical-Assertion 787 805	does not establish
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 810 813;815 847	new pulmonary parenchymal infiltrate
+T11	Medical-Assertion 853 868	might represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 872 887;889 898	overlying acute pneumonia
+T13	Medical-Problem 916 937	Stable chest findings
+E10	Medical-Problem:T13
+T14	Medical-Problem 943 956	advanced COPD
+E11	Medical-Problem:T14
+T15	Medical-Assertion 962 964	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 965 974;976 986	new acute infiltrate
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

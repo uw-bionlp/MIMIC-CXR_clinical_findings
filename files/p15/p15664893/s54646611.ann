@@ -1,0 +1,27 @@
+T1	Medical-Problem 171 188	Minimal opacities
+T2	Medical-Anatomy 192 207	left lower lung
+T3	Medical-Assertion 223 243	could only be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 245 256	atelectasis
+T5	Medical-Problem 267 277	aspiration
+T6	Medical-Assertion 278 318;320 329	can also be included in the differential diagnosis
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 373 375	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 376 392	pleural effusion
+T9	Medical-Problem 397 409	pneumothorax
+T10	Medical-Problem 475 508	Minimal left lower lung opacities
+E7	Medical-Problem:T10
+T11	Medical-Assertion 524 544	could only be due to
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 546 557	atelectasis
+T13	Medical-Problem 568 578	aspiration
+T14	Medical-Assertion 579 601	can also be considered
+A5	Medical-AssertionValue T14 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T14

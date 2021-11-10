@@ -1,0 +1,16 @@
+T1	Medical-Problem 170 186	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Assertion 220 222	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 223 230;232 240	pleural effusion
+T4	Medical-Problem 244 256	pneumothorax
+T5	Lesion-Characteristic 423 432	calcified
+T6	Lesion-Description 433 443	lymph node
+T7	Lesion-Anatomy 460 462;464 470	AP window
+T8	Medical-Assertion 490 492	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 493 522	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,20 @@
+T1	Medical-Problem 302 310;312 324	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 351 362	aortic knob
+T3	Medical-Problem 366 375	calcified
+T4	Medical-Anatomy 383 388	lungs
+T5	Medical-Assertion 399 406	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 407 420	focal opacity
+T7	Medical-Problem 422 438	pleural effusion
+T8	Medical-Problem 442 454	pneumothorax
+T9	Medical-Assertion 528 530	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 531 560	acute cardiopulmonary process
+T11	Medical-Problem 563 584	Moderate cardiomegaly
+E9	Medical-Problem:T11
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

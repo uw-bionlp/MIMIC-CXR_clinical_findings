@@ -1,0 +1,26 @@
+T1	Medical-Problem 308 329	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 375 408	Pulmonary vasculature is engorged
+E2	Medical-Problem:T2
+T3	Medical-Problem 417 446	mediastinal veins are dilated
+E3	Medical-Problem:T3
+T4	Medical-Assertion 448 458	suggesting
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 459 474	volume overload
+T6	Medical-Anatomy 477 486	Left lung
+T7	Medical-Problem 498 503;505 505;507 520	edema  Consolidation
+T8	Medical-Anatomy 528 544	right upper lobe
+T9	Medical-Assertion 545 556	may reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 557 582	recent bronchial plugging
+T11	Medical-Problem 587 611	contralateral intubation
+T12	Medical-Assertion 614 616	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 617 633	pleural effusion
+T14	Medical-Problem 637 649	pneumothorax
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12

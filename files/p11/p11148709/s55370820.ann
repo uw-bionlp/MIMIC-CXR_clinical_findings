@@ -1,0 +1,38 @@
+T1	Medical-Problem 29 38	Emphysema
+E1	Medical-Problem:T1
+T2	Medical-Assertion 40 51	No evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 55 64	pneumonia
+T4	Lesion-Anatomy 66 69	RUL
+T5	Lesion-Characteristic 70 79	calcified
+T6	Lesion-Description 80 89	granuloma
+T7	Medical-Problem 94 101;103 112	bibasal  scarring
+E6	Medical-Problem:T7
+T8	Medical-Assertion 509 511	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 512 534	new lung consolidation
+T10	Medical-Anatomy 537 553	Right upper lobe
+E8	Medical-Anatomy:T10
+T11	Lesion-Characteristic 554 563	calcified
+T12	Lesion-Description 564 570	nodule
+T13	Lesion-Characteristic 591 620	prior granulomatous infection
+T14	Medical-Problem 623 642	Mild bronchiectasis
+E12	Medical-Problem:T14
+T15	Medical-Problem 649 670	bronchiolar opacities
+E13	Medical-Problem:T15
+T16	Medical-Problem 705 727;729 738	atypical Mycobacterium infection
+E14	Medical-Problem:T16
+T17	Medical-Problem 843 856	hyperinflated
+E15	Medical-Problem:T17
+T18	Medical-Assertion 868 870	no
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 871 883	pneumothorax
+T20	Medical-Problem 888 904	pleural effusion
+T21	Medical-Problem 948 957	pneumonia
+E18	Medical-Problem:T21
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T13
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T18

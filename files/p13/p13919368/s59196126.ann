@@ -1,0 +1,19 @@
+T1	Medical-Problem 242 250;252 265	Airspace consolidation
+T2	Medical-Anatomy 282 306	right mid and lower lung
+T3	Medical-Assertion 308 327	likely representing
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 329 338	pneumonia
+T5	Medical-Anatomy 346 386	superior segment of the right lower lobe
+T6	Medical-Anatomy 413 430	right middle lobe
+T7	Medical-Assertion 514 516	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 517 526	effusions
+T9	Medical-Assertion 529 531	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 532 544	pneumothorax
+T11	Medical-Problem 616 653	right middle and lower lobe pneumonia
+E8	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

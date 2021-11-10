@@ -1,0 +1,21 @@
+T1	Medical-Assertion 173 184	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 188 200	pneumothorax
+T3	Medical-Problem 204 221	pneumomediastinum
+T4	Medical-Problem 312 358	multifocal airspace and interstitial opacities
+T5	Medical-Anatomy 393 403	right lung
+T6	Medical-Problem 414 420	slight
+T7	Medical-Anatomy 438 463;465 469	periphery of the left mid lung
+T8	Medical-Anatomy 508 531	left juxta hilar region
+T9	Medical-Problem 539 565	apparent area of worsening
+E8	Medical-Problem:T9
+T10	Medical-Assertion 566 593	could potentially represent
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 594 611;613 620	post bronchoscopy changes
+T12	Medical-Problem 691 724	Small bilateral pleural effusions
+E10	Medical-Problem:T12
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

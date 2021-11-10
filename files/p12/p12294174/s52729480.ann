@@ -1,0 +1,28 @@
+T1	Medical-Assertion 326 328	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 329 334;336 349	focal consolidation
+T3	Medical-Problem 351 359	effusion
+T4	Medical-Problem 363 375	pneumothorax
+T5	Medical-Anatomy 437 457	left sixth posterior
+T6	Medical-Problem 462 479	appears irregular
+T7	Medical-Problem 557 578	pathological fracture
+E6	Medical-Problem:T7
+T8	Lesion-Description 654 660	lesion
+T9	Lesion-Anatomy 668 704	left lateral arch of the seventh rib
+T10	Lesion-Characteristic 725 742	bulbous expansion
+T11	Lesion-Size-Trend 767 784	grossly unchanged
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Characteristic 813 820	osseous
+T13	Lesion-Description 832 839	lesions
+T14	Lesion-Anatomy 910 913	Rib
+T15	Lesion-Description 914 921	lesions
+T16	Medical-Problem 1003 1032	chronic pathological fracture
+T17	Medical-Anatomy 1047 1051;1053 1062	left sixth rib
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10 has-Lesion-Size-Trend:T11
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T12
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17

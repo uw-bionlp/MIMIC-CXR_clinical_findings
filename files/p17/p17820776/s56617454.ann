@@ -1,0 +1,30 @@
+T1	Medical-Problem 227 255	small right pleural effusion
+T2	Medical-Problem 260 265;267 286	right basilar atelectasis
+T3	Medical-Assertion 291 299	resolved
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 306 328	left perihilar opacity
+E3	Medical-Problem:T4
+T5	Medical-Assertion 405 407	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 408 419	new opacity
+T7	Medical-Assertion 432 434	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 435 450	pulmonary edema
+T9	Medical-Problem 454 466	pneumothorax
+T10	Lesion-Characteristic 547 556	calcified
+T11	Lesion-Description 557 566	granuloma
+T12	Lesion-Anatomy 574 578;580 593	left mid lung zone
+T13	Medical-Assertion 615 625	Resolution
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 629 651	right pleural effusion
+T15	Medical-Problem 656 667	atelectasis
+T16	Medical-Problem 674 703	Stable left perihilar opacity
+E12	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Assertion:T3
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13

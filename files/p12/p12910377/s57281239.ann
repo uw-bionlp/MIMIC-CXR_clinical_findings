@@ -1,0 +1,38 @@
+T1	Lesion-Anatomy 347 367	anterior mediastinal
+T2	Lesion-Description 368 372	mass
+T3	Medical-Assertion 497 500	not
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 501 509	engorged
+T5	Medical-Problem 511 517	Patchy
+E4	Medical-Problem:T5
+T6	Medical-Problem 518 527	opacities
+T7	Medical-Anatomy 546 581	both upper lobes and left lung base
+T8	Medical-Problem 600 609	infection
+T9	Medical-Assertion 613 616;618 626	not excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 628 630	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 631 647	pleural effusion
+T12	Medical-Problem 651 663	pneumothorax
+T13	Medical-Assertion 673 675	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 676 689;691 704	acute osseous abnormalities
+T15	Lesion-Anatomy 744 764	anterior mediastinal
+T16	Lesion-Description 765 769	mass
+T17	Lesion-Characteristic 817 823	Patchy
+E13	Lesion-Characteristic:T17
+T18	Medical-Problem 824 833	opacities
+E14	Medical-Problem:T18
+T19	Medical-Anatomy 837 853	both upper lobes
+T20	Medical-Assertion 894 905	may reflect
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 906 924	areas of infection
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Lesion-Description:T16 has-Lesion-Anatomy:T15
+E16	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20

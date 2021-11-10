@@ -1,0 +1,32 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Lesion-Description 68 74	Nodule
+T4	Lesion-Anatomy 95 109	left lung apex
+T5	Lesion-Anatomy 116 134	left first rib.Non
+T6	Medical-Problem 182 186;188 211	left  apical nodular opacity
+T7	Medical-Anatomy 213 224	potentially
+T8	Lesion-Description 597 603	nodule
+T9	Lesion-Anatomy 624 655;657 666	left lung apex and lateral left first rib
+T10	Medical-Problem 757 787	Lower thoracic dextroscoliosis
+E9	Medical-Problem:T10
+T11	Medical-Assertion 799 801	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 802 807;809 830	acute osseous abnormalities
+T13	Medical-Assertion 842 844	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 845 849	free
+T15	Medical-Problem 850 869	intraperitoneal air
+T16	Medical-Assertion 890 892	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 893 898	acute
+T18	Medical-Problem 1020 1035	apical lordotic
+E14	Medical-Problem:T18
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

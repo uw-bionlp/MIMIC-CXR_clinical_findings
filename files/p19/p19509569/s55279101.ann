@@ -1,0 +1,24 @@
+T1	Medical-Problem 485 499	expected fluid
+T2	Medical-Anatomy 514 524	right apex
+T3	Medical-Problem 584 600	Patchy opacities
+T4	Medical-Anatomy 613 635	right perihilar region
+T5	Medical-Anatomy 637 652	right lung base
+T6	Medical-Anatomy 658 672	left lung base
+T7	Medical-Assertion 783 785	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 786 801	pulmonary edema
+T9	Medical-Problem 804 827;829 838	Small bilateral pleural effusions
+E8	Medical-Problem:T9
+T10	Medical-Assertion 851 853	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 854 866	pneumothorax
+T12	Medical-Assertion 1049 1052;1054 1061	may reflect
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 1062 1080	areas of infection
+T14	Medical-Problem 1083 1116	Small bilateral pleural effusions
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

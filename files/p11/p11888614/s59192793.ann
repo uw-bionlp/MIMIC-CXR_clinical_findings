@@ -1,0 +1,22 @@
+T1	Medical-Problem 200 215	low lung volume
+E1	Medical-Problem:T1
+T2	Medical-Problem 221 228;230 241	widened mediastinum
+E2	Medical-Problem:T2
+T3	Medical-Problem 249 274	distention of the vessels
+E3	Medical-Problem:T3
+T4	Medical-Problem 277 296	Bibasilar opacities
+E4	Medical-Problem:T4
+T5	Medical-Assertion 332 347	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 348 370	increasing atelectasis
+T7	Medical-Problem 379 389	aspiration
+T8	Medical-Problem 401 425	mild vascular congestion
+E7	Medical-Problem:T8
+T9	Medical-Assertion 437 439	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 440 452	pneumothorax
+T11	Medical-Problem 457 473	pleural effusion
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

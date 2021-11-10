@@ -1,0 +1,33 @@
+T1	Medical-Problem 492 502	relatively
+E1	Medical-Problem:T1
+T2	Medical-Problem 521 527	Patchy
+E2	Medical-Problem:T2
+T3	Medical-Problem 528 536;538 545	airspace opacity
+T4	Medical-Anatomy 553 574	lateral left mid lung
+T5	Medical-Assertion 575 590	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 591 600	infection
+T7	Medical-Problem 604 613;615 624	pulmonary contusion
+T8	Medical-Assertion 626 628	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 629 651	overlying rib fracture
+T10	Medical-Assertion 702 704	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 705 721	pleural effusion
+T12	Medical-Problem 725 737	pneumothorax
+T13	Medical-Problem 765 785	airspace opacity(ies
+E10	Medical-Problem:T13
+T14	Medical-Assertion 821 834	may be due to
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 836 855	infection/pneumonia
+T16	Medical-Problem 865 884	pulmonary contusion
+T17	Medical-Assertion 885 897	not excluded
+A5	Medical-AssertionValue T17 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14 has-Medical-Assertion:T17

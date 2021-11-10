@@ -1,0 +1,32 @@
+T1	Lesion-Count 272 280	multiple
+T2	Lesion-Characteristic 281 290	scattered
+T3	Lesion-Anatomy 291 300	pulmonary
+T4	Lesion-Description 301 311	metastases
+T5	Lesion-Anatomy 312 323	bilaterally
+T6	Medical-Problem 326 396	Small-to-moderate bilateral pleural effusions, left greater than right
+E6	Medical-Problem:T6
+T7	Medical-Problem 441 463	slight pulmonary edema
+T8	Medical-Anatomy 471 476;478 488	right lower lung
+T9	Medical-Assertion 500 511	no evidence
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 515 524	pneumonia
+T11	Medical-Problem 580 597	pleural effusions
+E10	Medical-Problem:T11
+T12	Medical-Assertion 660 662	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 663 675	pneumothorax
+T14	Lesion-Size-Trend 693 702	Unchanged
+A3	Lesion-Size-TrendValue T14 no-change
+T15	Lesion-Count 703 711	multiple
+T16	Lesion-Anatomy 712 721	pulmonary
+T17	Lesion-Description 722 732	metastases
+T18	Medical-Problem 735 752;754 783	Small-to-moderate pleural effusions bilaterally
+E15	Medical-Problem:T18
+T19	Medical-Problem 786 808	Slight pulmonary edema
+T20	Medical-Anatomy 812 828	right lower lung
+E4	Lesion-Description:T4 has-Lesion-Count:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E14	Lesion-Description:T17 has-Lesion-Size-Trend:T14 has-Lesion-Count:T15 has-Lesion-Anatomy:T16
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20

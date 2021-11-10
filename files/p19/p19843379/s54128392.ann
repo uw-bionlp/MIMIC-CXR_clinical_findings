@@ -1,0 +1,19 @@
+T1	Medical-Problem 158 167	pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Problem 223 245	left basal atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 268 284;286 313	Mild increase in peribronchial opacification
+T4	Medical-Anatomy 321 337	right lower lobe
+T5	Medical-Assertion 341 361	barely sufficient to
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 381 390	pneumonia
+T7	Medical-Assertion 392 407	could be due to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 408 419	atelectasis
+T9	Medical-Problem 423 440	recent aspiration
+T10	Medical-Problem 487 503	Pleural effusion
+E8	Medical-Problem:T10
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T7

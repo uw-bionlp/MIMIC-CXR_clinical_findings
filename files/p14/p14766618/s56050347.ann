@@ -1,0 +1,26 @@
+T1	Medical-Problem 295 307;309 331	oval shaped, poorly defined opacity
+T2	Medical-Anatomy 343 359	right lower lobe
+T3	Medical-Problem 410 434	Minor linear atelectasis
+T4	Medical-Anatomy 454 468	left lung base
+T5	Medical-Assertion 545 547	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 548 564	pleural effusion
+T7	Medical-Problem 566 578	pneumothorax
+T8	Medical-Problem 583 591;593 611	evidence of pulmonary edema
+T9	Medical-Problem 671 678	Opacity
+T10	Medical-Anatomy 690 706	right lower lobe
+T11	Medical-Assertion 713 740	could potentially represent
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 744 765	early/focal pneumonia
+T13	Lesion-Anatomy 888 892	lung
+T14	Lesion-Description 894 902	neoplasm
+T15	Medical-Problem 1028 1033	focal
+E13	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T13

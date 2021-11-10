@@ -1,0 +1,18 @@
+T1	Medical-Problem 341 362;364 375	Pre-existing areas of atelectasis
+T2	Medical-Anatomy 383 393	lung bases
+T3	Medical-Assertion 394 418	have completely resolved
+A1	Medical-AssertionValue T3 absent
+T4	Lesion-Anatomy 431 440	left lung
+T5	Lesion-Description 442 448	lesion
+T6	Lesion-Size-Trend 452 461	unchanged
+A2	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Assertion 464 466	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 467 482	pulmonary edema
+T9	Medical-Assertion 485 487	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 488 500	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9

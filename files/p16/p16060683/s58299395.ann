@@ -1,0 +1,36 @@
+T1	Medical-Problem 236 256	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 259 279	Areas of atelectasis
+T3	Medical-Anatomy 283 298	both lung bases
+T4	Medical-Problem 347 358	atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Problem 369 378	pneumonia
+T6	Medical-Assertion 380 413	cannot be excluded with certainty
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 487 489	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 491 506	pulmonary edema
+T9	Medical-Problem 558 565;567 577	Minimal tortuosity
+T10	Medical-Anatomy 585 599	thoracic aorta
+T11	Medical-Assertion 602 604	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 605 625	mediastinal blunting
+T13	Medical-Problem 629 637	widening
+T14	Medical-Assertion 640 642	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 644 654	apical cap
+T16	Medical-Assertion 657 659	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 660 674	other findings
+T18	Medical-Assertion 675 688	suggestive of
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 689 703	aortic disease
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T19 has-Medical-Assertion:T16 has-Medical-Assertion:T18

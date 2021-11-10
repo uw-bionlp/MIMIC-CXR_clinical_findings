@@ -1,0 +1,50 @@
+T1	Medical-Assertion 634 636	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 637 649	pneumothorax
+T3	Medical-Problem 670 698	cardiomediastinal silhouette
+E2	Medical-Problem:T3
+T4	Medical-Problem 702 720	slightly prominent
+E3	Medical-Problem:T4
+T5	Medical-Problem 738 742;744 751	Hazy density
+T6	Medical-Anatomy 755 770	both lung bases
+T7	Medical-Assertion 771 792	suggests the presence
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 796 821;823 846	bilateral effusions, with some degree of layering
+T9	Medical-Assertion 858 864	likely
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 865 884	underlying collapse
+T11	Medical-Problem 893 906	consolidation
+T12	Medical-Anatomy 927 946	right hemidiaphragm
+T13	Medical-Problem 980 1010	increased retrocardiac density
+E10	Medical-Problem:T13
+T14	Medical-Problem 1028 1043;1045 1053	left lower lobe collapse
+E11	Medical-Problem:T14
+T15	Medical-Problem 1061 1074	consolidation
+E12	Medical-Problem:T15
+T16	Medical-Problem 1086 1111	upper zone redistribution
+E13	Medical-Problem:T16
+T17	Medical-Problem 1116 1120;1122 1139	mild vascular plethora
+E14	Medical-Problem:T17
+T18	Medical-Problem 1157 1165	mild CHF
+E15	Medical-Problem:T18
+T19	Medical-Problem 1168 1183	Rounded density
+T20	Medical-Anatomy 1199 1223	left lung base laterally
+T21	Medical-Assertion 1278 1295	likely represents
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1437 1454	Mild cardiomegaly
+T23	Medical-Problem 1456 1473	vascular plethora
+E19	Medical-Problem:T23
+T24	Medical-Problem 1475 1494	bibasilar effusions
+E20	Medical-Problem:T24
+T25	Medical-Anatomy 1501 1511;1513 1519	left great around
+T26	Medical-Problem 1524 1543	underlying collapse
+T27	Medical-Problem 1551 1564	consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Anatomy:T12
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E18	Medical-Problem:T22 has-Medical-Anatomy:T25
+E22	Medical-Problem:T26 has-Medical-Anatomy:T25
+E23	Medical-Problem:T27 has-Medical-Anatomy:T25

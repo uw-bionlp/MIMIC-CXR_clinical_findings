@@ -1,0 +1,22 @@
+T1	Lesion-Description 256 278	Masslike consolidation
+T2	Lesion-Anatomy 286 318	axillary region of the left lung
+T3	Lesion-Anatomy 382 386	lung
+T4	Lesion-Description 387 396	carcinoma
+T5	Medical-Anatomy 399 408;410 421	Pulmonary vasculature
+T6	Medical-Assertion 459 461	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 462 467	edema
+T8	Medical-Problem 470 485;487 491	Cardiomegaly is mild
+E7	Medical-Problem:T8
+T9	Medical-Assertion 517 519	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 520 548	appreciable pleural effusion
+T11	Medical-Problem 552 564	pneumothorax
+T12	Medical-Problem 602 632	Remnant catheter fragments end
+T13	Medical-Anatomy 640 645;647 673	right atrium and left lower lobe
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13

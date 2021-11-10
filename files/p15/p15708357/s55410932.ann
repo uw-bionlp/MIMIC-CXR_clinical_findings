@@ -1,0 +1,18 @@
+T1	Medical-Problem 255 260;262 275	Dense consolidation
+T2	Medical-Anatomy 295 321	left upper and lower lungs
+T3	Medical-Assertion 322 336	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 338 347	pneumonia
+T5	Medical-Problem 364 390	underlying pulmonary edema
+E4	Medical-Problem:T5
+T6	Medical-Problem 393 405	Cardiomegaly
+E5	Medical-Problem:T6
+T7	Medical-Problem 520 535	Pulmonary edema
+T8	Medical-Assertion 541 549	probable
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 550 572	superimposed pneumonia
+T10	Medical-Anatomy 580 584;586 606	left upper and lower lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T10
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10

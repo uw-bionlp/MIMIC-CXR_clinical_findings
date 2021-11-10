@@ -1,0 +1,17 @@
+T1	Medical-Problem 350 367	irregular opacity
+T2	Medical-Anatomy 388 403	left upper lung
+T3	Medical-Problem 410 426	adjacent lucency
+T4	Lesion-Characteristic 446 462	cystic and solid
+T5	Lesion-Description 463 469	lesion
+T6	Lesion-Characteristic 471 481;483 505	containing areas of calcification
+T7	Lesion-Anatomy 513 517	left
+T8	Medical-Problem 604 628	acute bony abnormalities
+E8	Medical-Problem:T8
+T9	Lesion-Description 667 673	lesion
+T10	Lesion-Anatomy 681 696	left upper lobe
+T11	Medical-Problem 702 710;712 729	adjacent pneumatocele/bleb
+E11	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E9	Lesion-Description:T9 has-Lesion-Anatomy:T10

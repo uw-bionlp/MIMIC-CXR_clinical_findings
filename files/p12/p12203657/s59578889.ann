@@ -1,0 +1,28 @@
+T1	Medical-Assertion 158 166	Question
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 167 179	pneumothorax
+T3	Medical-Problem 183 193	hemorrhage
+T4	Lesion-Count 292 299	Several
+T5	Lesion-Description 307 314	nodules
+T6	Lesion-Anatomy 322 346	right mid lung laterally
+T7	Medical-Assertion 391 399	probably
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 400 425	areas of local hemorrhage
+T9	Medical-Problem 447 469	large pleural effusion
+E7	Medical-Problem:T9
+T10	Medical-Problem 471 487	any pneumothorax
+E8	Medical-Problem:T10
+T11	Medical-Problem 491 495	even
+E9	Medical-Problem:T11
+T12	Medical-Problem 496 507;509 546	appreciable intraparenchymal pulmonary hemorrhage
+E10	Medical-Problem:T12
+T13	Lesion-Count 612 620	multiple
+T14	Lesion-Anatomy 621 625	lung
+T15	Lesion-Description 626 633	nodules
+T16	Lesion-Size-Trend 635 644	unchanged
+A3	Lesion-Size-TrendValue T16 no-change
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Count:T4 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E13	Lesion-Description:T15 has-Lesion-Count:T13 has-Lesion-Anatomy:T14 has-Lesion-Size-Trend:T16

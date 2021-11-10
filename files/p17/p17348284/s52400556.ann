@@ -1,0 +1,17 @@
+T1	Medical-Problem 183 209	scattered patchy opacities
+T2	Medical-Anatomy 224 249;251 268	mid to lower lungs, right greater than left
+T3	Medical-Problem 291 311	multifocal pneumonia
+T4	Medical-Problem 323 341	component of edema
+T5	Medical-Assertion 342 361	may also be present
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 364 366	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 367 383	pleural effusion
+T8	Medical-Problem 387 399	pneumothorax
+T9	Medical-Problem 454 471;473 481	aorta is slightly tortuous
+E7	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6

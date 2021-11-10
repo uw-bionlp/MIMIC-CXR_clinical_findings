@@ -1,0 +1,33 @@
+T1	Medical-Anatomy 249 254	lungs
+T2	Medical-Problem 259 281	slightly hyperinflated
+T3	Medical-Problem 287 307	focal subtle opacity
+T4	Medical-Anatomy 316 334	left mid lung zone
+T5	Medical-Assertion 373 386	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 390 408	infectious process
+T7	Medical-Assertion 420 422	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 423 457	other areas of focal consolidation
+T9	Medical-Problem 459 466;468 476	pleural effusion
+T10	Lesion-Description 478 482	mass
+E8	Lesion-Description:T10
+T11	Medical-Problem 486 497	evidence of
+E9	Medical-Problem:T11
+T12	Medical-Problem 498 510	pneumothorax
+T13	Lesion-Assertion 513 515	No
+A3	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 516 521	hilar
+T15	Lesion-Description 522 532	adenopathy
+T16	Medical-Problem 647 658	Left middle
+E13	Medical-Problem:T16
+T17	Medical-Assertion 683 696	may represent
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 700 710;712 719	infectious process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T7
+E12	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

@@ -1,0 +1,18 @@
+T1	Medical-Problem 297 311	linear opacity
+T2	Medical-Anatomy 335 347;349 353	lateral left lung
+T3	Medical-Assertion 368 374	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 375 396	platelike atelectasis
+T5	Medical-Problem 401 412	new opacity
+T6	Medical-Anatomy 434 458	anterior right third rib
+T7	Medical-Problem 470 497	small left pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Problem 514 533	Severe cardiomegaly
+E7	Medical-Problem:T8
+T9	Medical-Assertion 670 678	Probable
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 679 705	right upper lung pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

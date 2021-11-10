@@ -1,0 +1,19 @@
+T1	Medical-Problem 231 255	asymmetric opacification
+T2	Medical-Anatomy 273 288	left hemithorax
+T3	Medical-Problem 302 332	moderate left pleural effusion
+T4	Medical-Anatomy 342 363	base of the left lung
+T5	Medical-Assertion 370 373;375 377	may be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 380 399	region of pneumonia
+T7	Medical-Problem 402 448	Pulmonary and mediastinal vascular engorgement
+E6	Medical-Problem:T7
+T8	Medical-Assertion 450 457	suggest
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 458 491	concurrent cardiac decompensation
+T10	Medical-Problem 831 842	abnormality
+T11	Medical-Anatomy 850 865	left hemithorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11

@@ -1,0 +1,23 @@
+T1	Medical-Assertion 219 221	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 222 237	relevant change
+T3	Medical-Problem 314 324	Borderline
+E2	Medical-Problem:T3
+T4	Medical-Problem 382 402	pre-existing opacity
+T5	Medical-Anatomy 410 425	right lung base
+T6	Medical-Assertion 426 440;442 450	has completely resolved
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Assertion 453 464	No evidence
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 468 481	new opacities
+T9	Medical-Assertion 484 486	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 487 502	pulmonary edema
+T11	Medical-Assertion 504 506	no
+A5	Medical-AssertionValue T11 absent
+T12	Medical-Problem 507 516	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T12 has-Medical-Assertion:T11

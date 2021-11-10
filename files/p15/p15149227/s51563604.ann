@@ -1,0 +1,37 @@
+T1	Medical-Problem 268 291	Lung volumes remain low
+E1	Medical-Problem:T1
+T2	Medical-Problem 381 394;396 411	residual mild pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 423 442	focal consolidation
+T4	Medical-Anatomy 450 473	extreme right lung base
+T5	Medical-Assertion 481 500	may be secondary to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 501 512	atelectasis
+T7	Medical-Problem 521 530	infection
+T8	Medical-Assertion 531 549	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 562 564	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 565 587	large pleural effusion
+T11	Medical-Assertion 599 601	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 602 614	pneumothorax
+T13	Medical-Problem 714 730	Low lung volumes
+E9	Medical-Problem:T13
+T14	Medical-Problem 732 766	persistent mild interstitial edema
+E10	Medical-Problem:T14
+T15	Medical-Problem 771 790;792 805	new right lung base consolidation
+E11	Medical-Problem:T15
+T16	Medical-Assertion 812 831	may be secondary to
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 832 843	atelectasis
+T18	Medical-Problem 852 861	infection
+T19	Medical-Assertion 862 868;870 881	cannot be excluded
+A6	Medical-AssertionValue T19 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Assertion:T19

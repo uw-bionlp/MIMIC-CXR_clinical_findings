@@ -1,0 +1,29 @@
+T1	Medical-Problem 367 393	lung volumes are quite low
+E1	Medical-Problem:T1
+T2	Medical-Problem 459 483	bronchovascular crowding
+T3	Medical-Assertion 488 496	probable
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 498 514	mild atelectasis
+T5	Medical-Anatomy 522 532	lung bases
+T6	Medical-Problem 560 574	subtle opacity
+E5	Medical-Problem:T6
+T7	Medical-Assertion 599 618	No obvious evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 622 631	pneumonia
+T9	Medical-Anatomy 639 650	lower lungs
+T10	Medical-Assertion 654 656	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 657 665	effusion
+T12	Medical-Problem 669 681	pneumothorax
+T13	Medical-Anatomy 812 823	Lower lungs
+T14	Medical-Assertion 840 853	without clear
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 863 872	pneumonia
+T16	Medical-Problem 877 880	CHF
+E2	Medical-Problem:T2 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

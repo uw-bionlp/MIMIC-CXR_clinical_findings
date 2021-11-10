@@ -1,0 +1,31 @@
+T1	Medical-Problem 170 190	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 197 230	heart size is borderline enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 291 306	mild tortuosity
+T4	Medical-Anatomy 314 328	thoracic aorta
+T5	Medical-Anatomy 338 343	Lungs
+T6	Medical-Assertion 354 361	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 362 381	focal consolidation
+T8	Lesion-Anatomy 384 395	Left apical
+T9	Lesion-Description 396 400	cyst
+T10	Lesion-Size-Trend 405 414	unchanged
+A2	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 417 419	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 420 436	pleural effusion
+T13	Medical-Problem 440 452	pneumothorax
+T14	Medical-Assertion 463 465	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 466 475;477 486	displaced fractures
+T16	Medical-Assertion 521 523	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 524 557	acute cardiopulmonary abnormality
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

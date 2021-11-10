@@ -1,0 +1,29 @@
+T1	Medical-Problem 228 237	Calcified
+E1	Medical-Problem:T1
+T2	Lesion-Description 238 249	lymph nodes
+T3	Lesion-Anatomy 266 283	left hilar region
+T4	Lesion-Characteristic 296 305	calcified
+T5	Lesion-Description 306 313	nodules
+T6	Lesion-Anatomy 321 336	right lung base
+T7	Lesion-Anatomy 385 396	Mediastinal
+E7	Lesion-Anatomy:T7
+T8	Medical-Assertion 496 503	without
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 504 509;511 524	focal consolidation
+T10	Medical-Assertion 527 529	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 530 546	pleural effusion
+T12	Medical-Problem 550 562	pneumothorax
+T13	Medical-Assertion 576 578	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 579 584;586 605	acute osseous abnormality
+T15	Medical-Assertion 640 642	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 643 676	acute cardiopulmonary abnormality
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

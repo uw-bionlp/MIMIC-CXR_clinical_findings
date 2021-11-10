@@ -1,0 +1,33 @@
+T1	Medical-Problem 284 317	Heart size is borderline enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 383 401	linear atelectasis
+T3	Medical-Anatomy 413 422;424 434	right mid lung field
+T4	Medical-Anatomy 439 453	left lung base
+T5	Medical-Assertion 455 457	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 458 477	focal consolidation
+T7	Medical-Problem 494 502	Blunting
+T8	Medical-Anatomy 511 535	right costophrenic angle
+T9	Medical-Assertion 551 562	may reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 563 578;580 590	chronic pleural thickening
+T11	Medical-Problem 594 602	effusion
+T12	Medical-Assertion 605 607	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 608 620	pneumothorax
+T14	Medical-Problem 624 646	large pleural effusion
+T15	Medical-Assertion 676 678	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 679 706	acute osseous abnormalities
+T17	Medical-Assertion 726 728	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 729 758	acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 395 410;412 416	perihilar right lung
+T2	Medical-Problem 481 490;492 510	localized radiation fibrosis
+T3	Medical-Problem 513 522	Elevation
+T4	Medical-Anatomy 530 565	right diaphragmatic pleural surface
+T5	Medical-Assertion 567 582	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 583 594	volume loss
+T7	Medical-Assertion 618 626	suggests
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 629 642;644 652	small pleural effusion
+T9	Medical-Problem 670 688	pleural thickening
+T10	Medical-Anatomy 779 783	hila
+T11	Medical-Assertion 788 791	not
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 793 801	enlarged
+T13	Medical-Problem 833 848	mild prominence
+T14	Medical-Anatomy 856 869;871 899	retrotracheal hilar region, usually formed
+T15	Medical-Problem 959 1014	summation of both hila and perihilar radiation fibrosis
+E12	Medical-Problem:T15
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14

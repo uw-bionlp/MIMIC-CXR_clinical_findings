@@ -1,0 +1,38 @@
+T1	Medical-Problem 309 346	increased heterogeneous opacification
+T2	Medical-Anatomy 354 364;366 382	left lower lobe and lingula
+T3	Medical-Problem 399 408	pneumonia
+T4	Lesion-Description 433 440;442 449	nodular opacity
+T5	Lesion-Anatomy 457 473	right lower lung
+T6	Lesion-Description 529 546	nodular opacities
+T7	Lesion-Anatomy 563 579	right lower lung
+T8	Lesion-Anatomy 588 592;594 604	left upper lung
+T9	Medical-Problem 715 746	Severe background emphysematous
+E9	Medical-Problem:T9
+T10	Medical-Problem 824 838	Tortuous aorta
+T11	Medical-Problem 844 873	atherosclerotic calcification
+T12	Medical-Anatomy 881 892	aortic knob
+T13	Medical-Assertion 909 911	No
+A1	Medical-AssertionValue T13 absent
+T14	Medical-Problem 912 924	pneumothorax
+T15	Medical-Problem 928 944	pleural effusion
+T16	Medical-Problem 966 1004	Left lower lobe and lingular pneumonia
+E15	Medical-Problem:T16
+T17	Lesion-Description 1033 1048	nodular opacity
+T18	Lesion-Anatomy 1056 1072	right lower lung
+T19	Medical-Assertion 1073 1076;1078 1087	may represent
+A2	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1090 1103	nipple shadow
+T21	Lesion-Description 1120 1137	nodular opacities
+T22	Lesion-Anatomy 1145 1156;1158 1162	right lower lung
+T23	Lesion-Anatomy 1171 1186	left upper lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Anatomy:T12
+E11	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T15 has-Medical-Assertion:T13
+E16	Lesion-Description:T17 has-Lesion-Anatomy:T18
+E18	Medical-Problem:T20 has-Medical-Assertion:T19
+E19	Lesion-Description:T21 has-Lesion-Anatomy:T22 has-Lesion-Anatomy:T23

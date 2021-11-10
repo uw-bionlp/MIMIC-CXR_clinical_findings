@@ -1,0 +1,28 @@
+T1	Medical-Problem 547 576;578 600	Diffuse increase in opacities bilaterally suggesting
+E1	Medical-Problem:T1
+T2	Medical-Problem 601 621	interstitial pattern
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 623 649;651 664	Left medial portion of the hemidiaphragm
+T4	Medical-Problem 682 705	increased opacification
+T5	Medical-Anatomy 706 728	posterior to the heart
+T6	Medical-Problem 735 751	air bronchograms
+T7	Medical-Assertion 752 762	suggesting
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 763 790	left lower lobe volume loss
+T9	Medical-Assertion 792 794	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 795 807	pneumothorax
+T11	Medical-Assertion 810 812	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 813 829	bony abnormality
+T13	Medical-Problem 860 884	Diffuse pulmonary change
+E10	Medical-Problem:T13
+T14	Medical-Assertion 914 927	may represent
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 928 937	pneumonia
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

@@ -1,0 +1,34 @@
+T1	Medical-Problem 350 373	Lungs are hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Problem 412 421	emphysema
+E2	Medical-Problem:T2
+T3	Medical-Assertion 431 448	presumably due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 449 473	small airway obstruction
+T5	Medical-Problem 480 490;492 503	only focal abnormality
+T6	Medical-Anatomy 511 516	lungs
+T7	Lesion-Size 522 527	14 mm
+T8	Lesion-Characteristic 533 538	round
+T9	Lesion-Description 539 546	nodular
+E8	Lesion-Description:T9
+T10	Lesion-Description 547 554	opacity
+T11	Medical-Assertion 646 648	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 649 674	corresponding abnormality
+T13	Medical-Anatomy 869 881;883 889	retrosternal region
+T14	Medical-Problem 913 924	abnormality
+T15	Medical-Assertion 971 982	no evidence
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 986 1020	interstitial pulmonary abnormality
+T17	Medical-Problem 1024 1033	pneumonia
+T18	Medical-Assertion 1103 1105	no
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1106 1113;1115 1126	pleural abnormality
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E9	Lesion-Description:T10 has-Lesion-Size-Present:T7 has-Lesion-Characteristic:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

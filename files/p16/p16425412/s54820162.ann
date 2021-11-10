@@ -1,0 +1,29 @@
+T1	Medical-Problem 183 188	aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 192 211	diffusely calcified
+E2	Medical-Problem:T2
+T3	Lesion-Anatomy 298 314	right upper lobe
+T4	Lesion-Characteristic 327 337	spiculated
+T5	Lesion-Description 339 345	lesion
+T6	Lesion-Size 370 374	6 mm
+T7	Medical-Assertion 458 460	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 461 477	pleural effusion
+T9	Medical-Problem 481 493	pneumothorax
+T10	Medical-Assertion 515 517	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 518 545	acute osseous abnormalities
+T12	Lesion-Size 563 567	6 mm
+T13	Lesion-Description 568 578	spiculated
+E11	Lesion-Description:T13
+T14	Lesion-Description 579 586	opacity
+T15	Lesion-Anatomy 598 614	right upper lobe
+T16	Medical-Assertion 670 672	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 673 695	acute traumatic injury
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4 has-Lesion-Size-Present:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Lesion-Description:T14 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,36 @@
+T1	Medical-Problem 299 332	mild interstitial pulmonary edema
+E1	Medical-Problem:T1
+T2	Lesion-Description 335 352	Nodular opacities
+T3	Lesion-Anatomy 360 365;367 376	right lung base
+T4	Medical-Assertion 436 445;447 456	which may represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 457 473	more focal edema
+T6	Medical-Problem 477 488	atelectasis
+T7	Medical-Assertion 491 493	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 494 518	sizable pleural effusion
+T9	Medical-Problem 523 535	pneumothorax
+T10	Medical-Problem 538 549	Mediastinum
+E8	Medical-Problem:T10
+T11	Medical-Assertion 553 556	not
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 557 575	abnormally widened
+T13	Medical-Problem 665 698	Mild interstitial pulmonary edema
+E10	Medical-Problem:T13
+T14	Lesion-Anatomy 704 719	Right lung base
+T15	Lesion-Description 720 737	nodular opacities
+T16	Medical-Assertion 791 804	may represent
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 805 821	more focal edema
+T18	Medical-Problem 842 854;856 865	superimposed infection
+T19	Medical-Assertion 866 886	should be considered
+A5	Medical-AssertionValue T19 possible
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16 has-Medical-Assertion:T19

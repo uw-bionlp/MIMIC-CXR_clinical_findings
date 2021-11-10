@@ -1,0 +1,22 @@
+T1	Medical-Problem 375 397;399 427	interval increase of a small right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 431 461	moderate left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Assertion 543 545	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 547 559	pneumothorax
+T5	Lesion-Count 562 570	Multiple
+T6	Lesion-Anatomy 571 590	bilateral pulmonary
+T7	Lesion-Description 591 598	nodules
+T8	Lesion-Size-Trend 635 644	unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Problem 669 707	Increased small right pleural effusion
+E7	Medical-Problem:T9
+T10	Medical-Problem 714 754	Unchanged moderate left pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 761 763	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 764 776	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

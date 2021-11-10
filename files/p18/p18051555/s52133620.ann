@@ -1,0 +1,22 @@
+T1	Medical-Problem 362 387	right apical pneumothorax
+T2	Medical-Assertion 391 400;402 425	no longer definitively identified
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 438 470	right-sided postsurgical changes
+E2	Medical-Problem:T3
+T4	Lesion-Count 486 494	Multiple
+T5	Lesion-Anatomy 495 509	bilateral lung
+T6	Lesion-Description 510 517	nodules
+T7	Medical-Assertion 579 581	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 582 601	focal consolidation
+T9	Medical-Problem 603 619	pleural effusion
+T10	Medical-Problem 624 633;635 640	pulmonary edema
+T11	Medical-Assertion 736 750	Fully resolved
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 751 776	right apical pneumothorax
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Count:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

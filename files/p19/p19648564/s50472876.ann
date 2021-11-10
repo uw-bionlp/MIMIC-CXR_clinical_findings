@@ -1,0 +1,39 @@
+T1	Medical-Problem 157 179	right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 228 249	overlying atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 251 275	underlying consolidation
+T4	Medical-Assertion 276 294	cannot be excluded
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Assertion 303 306;308 310	may be
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 313 345	very trace left pleural effusion
+T7	Medical-Problem 388 423	cardiac silhouette remains enlarged
+E5	Medical-Problem:T7
+T8	Medical-Anatomy 430 435	aorta
+T9	Medical-Problem 439 461	calcified and tortuous
+T10	Medical-Problem 477 490	hiatal hernia
+E8	Medical-Problem:T10
+T11	Medical-Problem 578 605	few punctate calcifications
+T12	Medical-Anatomy 613 617;619 625	lung apices
+T13	Medical-Assertion 626 639	may represent
+A3	Medical-AssertionValue T13 possible
+T14	Lesion-Characteristic 640 649	calcified
+T15	Lesion-Description 650 660	granulomas
+T16	Medical-Assertion 664 678	may be related
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 682 690	scarring
+T18	Medical-Problem 710 742	Increased right pleural effusion
+E14	Medical-Problem:T18
+T19	Medical-Problem 771 780;782 793	overlying atelectasis
+E15	Medical-Problem:T19
+T20	Medical-Problem 795 819	underlying consolidation
+E16	Medical-Problem:T20
+T21	Medical-Problem 841 859;861 869	Trace left pleural effusion
+E17	Medical-Problem:T21
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Lesion-Description:T15 has-Lesion-Characteristic:T14
+E13	Medical-Problem:T17 has-Medical-Anatomy:T12 has-Medical-Assertion:T13 has-Medical-Assertion:T16

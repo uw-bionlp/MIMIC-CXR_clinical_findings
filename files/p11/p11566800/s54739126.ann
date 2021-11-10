@@ -1,0 +1,34 @@
+T1	Medical-Problem 246 260	multi-fragment
+E1	Medical-Problem:T1
+T2	Medical-Assertion 308 310	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 311 323	pneumothorax
+T4	Medical-Problem 328 353;355 377	increase in the extent of subcutaneous emphysema
+T5	Medical-Anatomy 385 431;433 453	left chest wall extending from the axilla down to the upper abdomen
+T6	Medical-Problem 472 509	Multiple displaced left rib fractures
+E5	Medical-Problem:T6
+T7	Medical-Problem 521 544	substantially displaced
+E6	Medical-Problem:T7
+T8	Medical-Problem 600 629	Left lower lobe consolidation
+E7	Medical-Problem:T8
+T9	Medical-Assertion 685 700	could be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 701 712	atelectasis
+T11	Medical-Problem 724 733	pneumonia
+T12	Medical-Assertion 734 743;745 770	cannot be excluded radiographically
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 773 791	Milder atelectasis
+T14	Medical-Anatomy 799 814	right lung base
+T15	Medical-Assertion 849 851	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 852 870	right pneumothorax
+T17	Medical-Problem 873 882;884 923	Extent of small-to-moderate left pleural effusion
+E13	Medical-Problem:T17
+T18	Medical-Problem 1004 1027	Mild thoracic scoliosis
+E14	Medical-Problem:T18
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2 has-Medical-Anatomy:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

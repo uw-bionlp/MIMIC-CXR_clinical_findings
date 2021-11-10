@@ -1,0 +1,41 @@
+T1	Medical-Anatomy 290 297	cardiac
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 340 356	lung volumes are
+E2	Medical-Problem:T2
+T3	Medical-Problem 357 363;365 374	mildly decreased
+E3	Medical-Problem:T3
+T4	Medical-Problem 380 441	associated crowding of the central bronchovascular structures
+E4	Medical-Problem:T4
+T5	Medical-Assertion 445 447	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 448 467	focal consolidation
+T7	Medical-Assertion 488 490	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 491 503	pneumothorax
+T9	Medical-Assertion 512 518	may be
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 520 553	trace bilateral pleural effusions
+T11	Medical-Problem 556 569	Calcification
+T12	Medical-Anatomy 577 595;597 603	right paratracheal region
+T13	Lesion-Assertion 604 615	may be from
+A4	Lesion-AssertionValue T13 possible
+T14	Lesion-Characteristic 618 627	calcified
+T15	Lesion-Anatomy 628 639	mediastinal
+T16	Lesion-Description 640 650	lymph node
+T17	Medical-Problem 653 670;672 681	Right lateral rib fractures
+E13	Medical-Problem:T17
+T18	Medical-Problem 718 745	Enlarged cardiac silhouette
+E14	Medical-Problem:T18
+T19	Medical-Assertion 775 777	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 778 791	consolidation
+T21	Medical-Problem 804 813	pneumonia
+T22	Medical-Problem 816 849	Trace bilateral pleural effusions
+E17	Medical-Problem:T22
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T19

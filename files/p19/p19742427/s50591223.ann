@@ -1,0 +1,38 @@
+T1	Medical-Problem 275 330	bilateral lower lobe opacities, right greater than left
+E1	Medical-Problem:T1
+T2	Medical-Assertion 337 348;350 359	may  either represent
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 360 369	pneumonia
+T4	Medical-Problem 373 384	atelectasis
+T5	Medical-Problem 387 421;423 440	Bilateral pleural effusions, right greater than left
+E4	Medical-Problem:T5
+T6	Lesion-Size 445 449	tiny
+T7	Lesion-Description 450 456	nodule
+T8	Lesion-Anatomy 475 497;499 533	right upper hemithorax over the second anterior right rib
+T9	Lesion-Assertion 539 561	most likely represents
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Size 564 568	tiny
+T11	Lesion-Description 570 579	granuloma
+T12	Medical-Problem 651 681	Bilateral lower lobe opacities
+E10	Medical-Problem:T12
+T13	Medical-Assertion 682 702	may either represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 703 712	pneumonia
+T15	Medical-Problem 717 728	atelectasis
+T16	Medical-Problem 731 783	Bilateral pleural effusions, right greater than left
+E13	Medical-Problem:T16
+T17	Lesion-Size 792 796	Tiny
+T18	Lesion-Description 797 803	nodule
+T19	Lesion-Anatomy 824 846	right upper hemithorax
+T20	Lesion-Assertion 852 863;865 875	most likely represents
+A4	Lesion-AssertionValue T20 possible
+T21	Lesion-Size 878 882	tiny
+T22	Lesion-Description 883 892	granuloma
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T9 has-Lesion-Size-Present:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Lesion-Description:T18 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T19
+E18	Lesion-Description:T22 has-Lesion-Anatomy:T19 has-Lesion-Assertion:T20 has-Lesion-Size-Present:T21

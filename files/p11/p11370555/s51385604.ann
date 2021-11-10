@@ -1,0 +1,41 @@
+T1	Medical-Anatomy 324 335	aortic arch
+T2	Medical-Problem 339 348	calcified
+T3	Medical-Anatomy 420 432;434 453	extreme left costophrenic sulcus
+T4	Medical-Problem 457 472	partly excluded
+T5	Medical-Assertion 487 498	no evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 504 516	pneumothorax
+T7	Medical-Problem 520 536	pleural effusion
+T8	Medical-Problem 548 575	patchy left basilar opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 586 610	most likely to represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 611 628	minor atelectasis
+T11	Medical-Problem 631 657;659 668	Two small apparent nodular densities
+E9	Medical-Problem:T11
+T12	Lesion-Anatomy 686 699	left mid lung
+T13	Lesion-Anatomy 760 764	lung
+T14	Lesion-Description 765 772	nodules
+T15	Medical-Assertion 793 795	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 796 812	pleural effusion
+T17	Medical-Problem 817 829	pneumothorax
+T18	Medical-Problem 832 842	Gallstones
+T19	Medical-Anatomy 860 887;889 896	right upper quadrant of the abdomen
+T20	Lesion-Assertion 976 988	Questionable
+A4	Lesion-AssertionValue T20 possible
+T21	Lesion-Size 989 994	small
+T22	Lesion-Description 995 1012	nodular densities
+T23	Lesion-Anatomy 1033 1046	left mid lung
+T24	Medical-Problem 1138 1152	Cholelithiasis
+E20	Medical-Problem:T24
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T12 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Lesion-Description:T22 has-Lesion-Assertion:T20 has-Lesion-Size-Present:T21 has-Lesion-Anatomy:T23

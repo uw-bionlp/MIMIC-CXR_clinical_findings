@@ -1,0 +1,35 @@
+T1	Medical-Problem 320 340	massive cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Assertion 370 372	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 373 392	focal consolidation
+T4	Medical-Assertion 393 402	worrisome
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 407 416	infection
+T6	Medical-Anatomy 424 431	trachea
+T7	Medical-Problem 435 456	deviated to the right
+T8	Medical-Problem 484 498;500 514	increased soft tissue density
+T9	Medical-Anatomy 522 550	midline and just to the left
+T10	Medical-Problem 575 594	thyroid enlargement
+T11	Medical-Assertion 644 646	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 647 652;654 675	acute osseous abnormalities
+T13	Medical-Problem 693 713	Massive cardiomegaly
+T14	Medical-Problem 718 746	rightward tracheal deviation
+T15	Medical-Anatomy 755 769	thoracic inlet
+T16	Medical-Assertion 771 784	likely due to
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 785 801	enlarged thyroid
+T18	Medical-Assertion 804 806	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 807 825;827 834	superimposed acute process
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T15
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

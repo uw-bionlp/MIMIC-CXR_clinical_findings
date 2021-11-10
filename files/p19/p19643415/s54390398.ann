@@ -1,0 +1,21 @@
+T1	Medical-Assertion 481 488	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 489 492	any
+E1	Medical-Problem:T2
+T3	Medical-Problem 493 498	kinks
+T4	Medical-Problem 502 515	abnormalities
+T5	Medical-Anatomy 519 524	Lungs
+T6	Medical-Assertion 554 561	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 562 576	consolidations
+T8	Medical-Problem 580 589	effusions
+T9	Medical-Problem 697 714	Old rib fractures
+E7	Medical-Problem:T9
+T10	Medical-Assertion 807 809	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 810 821;823 858	significant acute cardiopulmonary abnormalities
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

@@ -1,0 +1,20 @@
+T1	Medical-Problem 302 339	small right layering pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 355 377;379 390	Bibasilar subsegmental atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 403 425	Airspace opacification
+T4	Medical-Anatomy 433 448	right lung base
+T5	Medical-Assertion 484 486	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 487 499	pneumothorax
+T7	Medical-Problem 596 640	Stable small layering right pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Problem 646 668;670 681	bibasilar subsegmental atelectasis
+E7	Medical-Problem:T8
+T9	Medical-Problem 684 693	Infection
+T10	Medical-Anatomy 701 711	right base
+T11	Medical-Assertion 712 730	cannot be excluded
+A2	Medical-AssertionValue T11 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

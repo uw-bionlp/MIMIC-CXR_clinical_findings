@@ -1,0 +1,20 @@
+T1	Medical-Problem 301 318;320 333	area of increased opacification
+T2	Medical-Anatomy 341 391	right middle lobe obscuring the right heart border
+T3	Medical-Problem 410 437	right middle lobe pneumonia
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 483 498	left upper lobe
+E4	Medical-Anatomy:T4
+T5	Medical-Assertion 509 511	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 512 528	pleural effusion
+T7	Medical-Problem 532 544	pneumothorax
+T8	Medical-Anatomy 551 556	heart
+T9	Medical-Assertion 560 563	not
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 564 572	enlarged
+T11	Medical-Problem 593 640	Right middle lobe and left upper lobe pneumonia
+E9	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

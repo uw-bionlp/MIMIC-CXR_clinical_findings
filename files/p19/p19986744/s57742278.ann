@@ -1,0 +1,19 @@
+T1	Medical-Problem 154 158;160 169	lung pathology
+E1	Medical-Problem:T1
+T2	Medical-Problem 217 231	lung pathology
+E2	Medical-Problem:T2
+T3	Medical-Problem 421 425;427 439	some irregularity
+T4	Medical-Anatomy 447 461	lateral border
+T5	Medical-Assertion 468 481	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 482 503;505 534	fibrotic changes from previous inflammatory disease
+T7	Medical-Assertion 537 548	No evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 552 571	vascular congestion
+T9	Medical-Problem 573 580;582 590	pleural effusion
+T10	Medical-Problem 595 616	acute focal pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7

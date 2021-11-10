@@ -1,0 +1,55 @@
+T1	Medical-Problem 55 76	interstitial markings
+E1	Medical-Problem:T1
+T2	Medical-Problem 85 100	pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 106 124	atypical pneumonia
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 439 444	lungs
+T5	Medical-Problem 449 462	hyperinflated
+T6	Medical-Problem 480 484	COPD
+T7	Medical-Problem 496 504;506 518	moderate cardiomegaly
+E7	Medical-Problem:T7
+T8	Medical-Assertion 521 532	Possibility
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 536 553	hilar enlargement
+T10	Medical-Assertion 554 572	cannot be excluded
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 591 620	diffuse interstitial markings
+T12	Medical-Anatomy 624 634	both lungs
+T13	Medical-Problem 754 783	some increased patchy opacity
+T14	Medical-Anatomy 791 810	retrocardiac region
+T15	Medical-Assertion 814 816	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 817 831	gross effusion
+T17	Medical-Problem 840 856	minimal blunting
+E14	Medical-Problem:T17
+T18	Medical-Problem 919 954	large dense lobulated calcification
+E15	Medical-Problem:T18
+T19	Medical-Problem 1079 1120	Asymmetric left apical pleural thickening
+E16	Medical-Problem:T19
+T20	Medical-Problem 1187 1191	COPD
+E17	Medical-Problem:T20
+T21	Medical-Problem 1196 1208	cardiomegaly
+E18	Medical-Problem:T21
+T22	Medical-Problem 1217 1256	Diffuse increased interstitial markings
+E19	Medical-Problem:T22
+T23	Medical-Assertion 1321 1343	Differential diagnosis
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1353 1356	CHF
+T25	Medical-Problem 1364 1396	atypical interstitial infiltrate
+T26	Medical-Problem 1409 1438	atypical pneumonic infiltrate
+T27	Medical-Problem 1449 1496	Slight worsening of patchy retrocardiac density
+E23	Medical-Problem:T27
+T28	Medical-Problem 1514 1518;1520 1539	left lower lobe collapse
+E24	Medical-Problem:T28
+T29	Medical-Problem 1547 1560	consolidation
+E25	Medical-Problem:T29
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Assertion:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E20	Medical-Problem:T24 has-Medical-Assertion:T23
+E21	Medical-Problem:T25 has-Medical-Assertion:T23
+E22	Medical-Problem:T26 has-Medical-Assertion:T23

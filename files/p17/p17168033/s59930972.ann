@@ -1,0 +1,25 @@
+T1	Medical-Problem 265 280	stable blunting
+T2	Medical-Anatomy 289 312	left costophrenic sinus
+T3	Medical-Problem 318 329	atelectasis
+T4	Medical-Anatomy 337 360	retrocardiac lung areas
+T5	Medical-Assertion 363 369	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 382 409	small left pleural effusion
+T7	Medical-Problem 426 441;443 466	increasing loss of lung transparency on
+E6	Medical-Problem:T7
+T8	Medical-Problem 483 491	blunting
+T9	Medical-Anatomy 499 517;519 524	right costophrenic sinus
+T10	Medical-Assertion 526 542	likely caused by
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 545 567	right pleural effusion
+T12	Medical-Problem 599 618	minimally increased
+E10	Medical-Problem:T12
+T13	Medical-Assertion 620 637	likely indicating
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 638 657	mild fluid overload
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

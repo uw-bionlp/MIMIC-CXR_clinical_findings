@@ -1,0 +1,19 @@
+T1	Medical-Problem 139 170;172 182	huge enlargement of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 344 369	ill-defined opacification
+T3	Medical-Anatomy 377 387	right base
+T4	Medical-Assertion 388 396	suggests
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 397 401;403 421	some atelectatic change
+T6	Medical-Problem 573 592	vascular congestion
+E5	Medical-Problem:T6
+T7	Medical-Assertion 593 615	raises the possibility
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 620 634	cardiomyopathy
+T9	Medical-Assertion 638 646	possibly
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 652 672	pericardial effusion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Assertion:T9

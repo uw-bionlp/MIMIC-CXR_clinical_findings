@@ -1,0 +1,39 @@
+T1	Medical-Problem 224 247	Heterogeneous opacities
+T2	Medical-Anatomy 256 272	right lower lung
+T3	Medical-Problem 322 331	pneumonia
+T4	Lesion-Size-Trend 358 361	new
+A1	Lesion-Size-TrendValue T4 new
+T5	Lesion-Description 362 377	nodular opacity
+T6	Lesion-Anatomy 385 390;392 409	right mid-to-upper lung
+T7	Medical-Assertion 410 423	could reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 426 448	new focus of infection
+T9	Medical-Problem 461 503	subsegmental left retrocardiac atelectasis
+E7	Medical-Problem:T9
+T10	Medical-Assertion 517 519	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 520 536;538 547	definite pleural effusions
+T12	Medical-Problem 588 611;613 646	small bilateral pleural effusion, right greater than left
+E9	Medical-Problem:T12
+T13	Medical-Assertion 758 760	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 761 773	pneumothorax
+T15	Medical-Anatomy 794 809	left lower lung
+T16	Medical-Problem 811 832	band-like atelectasis
+T17	Medical-Assertion 833 845	has resolved
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 869 889	Persistent infection
+T19	Medical-Anatomy 897 913	right lower lobe
+T20	Medical-Assertion 921 929	possible
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Problem 930 942;944 953	new focus of infection
+T22	Medical-Anatomy 961 984	right mid-to-upper lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Size-Trend:T4 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T15 has-Medical-Assertion:T17
+E13	Medical-Problem:T18 has-Medical-Anatomy:T19
+E15	Medical-Problem:T21 has-Medical-Assertion:T20 has-Medical-Anatomy:T22

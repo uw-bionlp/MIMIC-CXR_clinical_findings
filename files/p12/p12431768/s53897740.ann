@@ -1,0 +1,31 @@
+T1	Medical-Problem 164 192	increased cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Assertion 295 297	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 299 315	pleural effusion
+T4	Medical-Problem 319 331	pneumothorax
+T5	Medical-Problem 342 370	Right lower lung atelectasis
+E4	Medical-Problem:T5
+T6	Medical-Assertion 387 389	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 390 408	new consolidations
+T8	Medical-Assertion 409 432	demonstrated to suggest
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 433 451	infectious process
+T10	Medical-Problem 479 490	new opacity
+T11	Medical-Anatomy 491 501	projecting
+T12	Medical-Anatomy 502 532;534 552	behind the carina at the level of the aortic arch
+T13	Medical-Assertion 557 564	unclear
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 579 599	summation of shadows
+T15	Lesion-Size-Trend 603 606	new
+A5	Lesion-Size-TrendValue T15 new
+T16	Lesion-Anatomy 608 617	pulmonary
+T17	Lesion-Description 618 624	lesion
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Lesion-Description:T17 has-Lesion-Size-Trend:T15 has-Lesion-Anatomy:T16

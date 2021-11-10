@@ -1,0 +1,30 @@
+T1	Medical-Assertion 340 343	not
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 344 352	engorged
+T3	Medical-Problem 355 361	Patchy
+E2	Medical-Problem:T3
+T4	Medical-Problem 362 369	opacity
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 394 409	left lower lobe
+T6	Medical-Assertion 410 424	concerning for
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 425 434	pneumonia
+T8	Medical-Assertion 437 439	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 440 456	pleural effusion
+T10	Medical-Problem 460 472	pneumothorax
+T11	Medical-Assertion 500 502	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 503 530	acute osseous abnormalities
+T13	Medical-Anatomy 558 562	left
+T14	Medical-Problem 574 581	opacity
+E10	Medical-Problem:T14
+T15	Medical-Assertion 582 596	concerning for
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 597 606	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T15

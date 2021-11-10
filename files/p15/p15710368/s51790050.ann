@@ -1,0 +1,18 @@
+T1	Medical-Assertion 202 213	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 217 229	pneumothorax
+T3	Medical-Problem 232 269	Widespread parenchymal consolidations
+E2	Medical-Problem:T3
+T4	Lesion-Anatomy 318 329	right hilar
+T5	Lesion-Description 330 334	mass
+T6	Medical-Problem 356 408	Slight worsening of the right lower lobe atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Assertion 450 463	might reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 464 492;494 502	interval increase in pleural effusion
+T9	Medical-Problem 506 528	additional compression
+T10	Medical-Anatomy 536 560	right lower lobe airways
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Anatomy:T10

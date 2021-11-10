@@ -1,0 +1,16 @@
+T1	Medical-Assertion 412 414	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 415 424	pneumonia
+T3	Lesion-Size 427 432	Large
+T4	Lesion-Anatomy 433 454	right lower lobe lung
+T5	Lesion-Description 455 459	mass
+T6	Medical-Problem 462 488	Heart size mildly enlarged
+E5	Medical-Problem:T6
+T7	Medical-Assertion 492 494	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 495 510	pulmonary edema
+T9	Medical-Problem 514 530	pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

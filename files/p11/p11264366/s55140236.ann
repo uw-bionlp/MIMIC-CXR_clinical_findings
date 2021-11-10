@@ -1,0 +1,35 @@
+T1	Medical-Problem 381 393	cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 398 416	diffusely tortuous
+E2	Medical-Problem:T2
+T3	Medical-Assertion 422 428	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 429 451	dilated thoracic aorta
+T5	Medical-Problem 472 489;491 500	New heterogeneous opacities
+T6	Medical-Anatomy 523 553	right mid and both lower lungs
+T7	Medical-Assertion 558 569	may reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 571 593	multifocal atelectasis
+T9	Medical-Problem 611 632	coexisting aspiration
+T10	Medical-Problem 636 646;648 657	developing infection
+T11	Medical-Problem 659 687	Small right pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 697 721;723 754	Smoothly marginated left pleural or extrapleural opacity
+E10	Medical-Problem:T12
+T13	Lesion-Size-Trend 758 765	grossly
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Lesion-Assertion 791 802	may reflect
+A4	Lesion-AssertionValue T14 possible
+T15	Lesion-Characteristic 806 818	extrapleural
+T16	Lesion-Description 819 825	lipoma
+T17	Lesion-Description 829 836	fibrous
+E13	Lesion-Description:T17
+T18	Lesion-Description 837 843	lesion
+T19	Lesion-Anatomy 851 857	pleura
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E12	Lesion-Description:T16 has-Lesion-Size-Trend:T13 has-Lesion-Assertion:T14 has-Lesion-Anatomy:T15 has-Lesion-Anatomy:T19
+E14	Lesion-Description:T18 has-Lesion-Assertion:T14 has-Lesion-Anatomy:T19

@@ -1,0 +1,25 @@
+T1	Lesion-Size 351 356	17 mm
+T2	Lesion-Anatomy 357 366	left lung
+T3	Lesion-Description 367 373	nodule
+T4	Lesion-Description 403 409	nodule
+E4	Lesion-Description:T4
+T5	Medical-Anatomy 453 458	lungs
+T6	Medical-Problem 482 487;489 502	focal consolidation
+T7	Medical-Problem 504 520	pleural effusion
+T8	Medical-Problem 524 536	pneumothorax
+T9	Medical-Assertion 620 622	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 623 638	pulmonary edema
+T11	Medical-Assertion 727 729	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 730 759	acute cardiopulmonary process
+T13	Lesion-Size 789 794	17 mm
+T14	Lesion-Anatomy 795 809	left pulmonary
+T15	Lesion-Description 810 816	nodule
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T5
+E8	Medical-Problem:T8 has-Medical-Anatomy:T5
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Lesion-Description:T15 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T14

@@ -1,0 +1,25 @@
+T1	Lesion-Size 212 217	16 mm
+T2	Lesion-Anatomy 218 234	right upper lung
+T3	Lesion-Description 235 241	nodule
+T4	Lesion-Count 302 310	Multiple
+T5	Lesion-Description 322 329	nodules
+T6	Lesion-Size 334 347	varying sizes
+T7	Lesion-Anatomy 381 396	left upper lung
+T8	Medical-Problem 476 488;490 504	accompanying bronchiectasis
+E8	Medical-Problem:T8
+T9	Medical-Problem 537 546	infection
+E9	Medical-Problem:T9
+T10	Medical-Assertion 549 551	No
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 552 557;559 572	focal consolidation
+T12	Medical-Problem 576 592	pleural effusion
+T13	Lesion-Description 676 683	nodules
+T14	Lesion-Anatomy 709 725	right upper lung
+T15	Lesion-Anatomy 755 770	left upper lung
+T16	Lesion-Size-Trend 776 789	likely stable
+A2	Lesion-Size-TrendValue T16 no-change
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Count:T4 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T10
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T15 has-Lesion-Size-Trend:T16

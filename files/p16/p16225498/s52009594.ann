@@ -1,0 +1,25 @@
+T1	Medical-Problem 242 279	Large region of necrotizing pneumonia
+T2	Medical-Anatomy 287 303	right lower lung
+T3	Lesion-Size 366 371	Small
+T4	Lesion-Anatomy 372 376	lung
+T5	Lesion-Description 377 384	nodules
+T6	Lesion-Anatomy 409 419	both lungs
+T7	Medical-Problem 433 438	still
+E7	Medical-Problem:T7
+T8	Medical-Problem 439 452	consolidation
+T9	Medical-Anatomy 460 464;466 484	left lung base medially
+T10	Medical-Problem 487 512	Constellation of findings
+E10	Medical-Problem:T10
+T11	Medical-Assertion 516 530	concerning for
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 531 539;541 570	internal aspiration of purulent sputum
+T13	Lesion-Characteristic 663 697	soft tissue and lipids attenuation
+T14	Lesion-Anatomy 698 707	pulmonary
+T15	Lesion-Description 709 716	nodules
+T16	Lesion-Description 757 768	liposarcoma
+E15	Lesion-Description:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E14	Lesion-Description:T15 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14

@@ -1,0 +1,18 @@
+T1	Medical-Problem 285 304;306 314	small right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 320 340	adjacent atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 372 381;383 396	Increased opacification
+T4	Medical-Anatomy 404 414	left chest
+T5	Medical-Problem 441 454;456 464	large pleural effusion
+T6	Medical-Anatomy 491 508	Mediastinal veins
+T7	Medical-Assertion 513 516	not
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 517 526	distended
+T9	Medical-Assertion 577 579	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 580 592	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

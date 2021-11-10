@@ -1,0 +1,29 @@
+T1	Medical-Assertion 215 222	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 224 240	pleural effusion
+T3	Medical-Problem 242 261	focal consolidation
+T4	Medical-Problem 265 277	pneumothorax
+T5	Medical-Assertion 366 368	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 369 378;380 385	pulmonary edema
+T7	Lesion-Size 390 394	3 mm
+T8	Lesion-Description 395 402	nodular
+E6	Lesion-Description:T8
+T9	Lesion-Description 403 410	opacity
+T10	Lesion-Anatomy 429 447	left mid lung zone
+T11	Medical-Assertion 521 532	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 536 565	acute cardiopulmonary process
+T13	Lesion-Size 576 580	3 mm
+T14	Lesion-Description 581 588	nodular
+E11	Lesion-Description:T14
+T15	Lesion-Description 589 596	opacity
+T16	Lesion-Anatomy 613 631	left mid lung zone
+T17	Lesion-Characteristic 635 648;650 660	indeterminate chronicity
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T16 has-Lesion-Characteristic:T17

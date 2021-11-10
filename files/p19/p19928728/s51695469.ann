@@ -1,0 +1,17 @@
+T1	Medical-Assertion 295 297	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 299 311	pneumothorax
+T3	Medical-Problem 333 360	small left pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 363 367;369 381	Mild cardiomegaly
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 394 410	Right lower lobe
+T6	Medical-Problem 411 420	opacities
+E5	Medical-Problem:T6
+T7	Medical-Assertion 437 446;448 451	worrisome for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 452 462	aspiration
+T9	Medical-Problem 474 498	mild vascular congestion
+E7	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7

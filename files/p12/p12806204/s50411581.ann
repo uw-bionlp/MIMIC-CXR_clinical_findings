@@ -1,0 +1,52 @@
+T1	Medical-Problem 444 474	moderate left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 487 495	blunting
+T3	Medical-Anatomy 503 521;523 528	right costophrenic angle
+T4	Medical-Problem 544 566	small pleural effusion
+T5	Medical-Problem 637 666	persistence of curved opacity
+T6	Medical-Anatomy 678 707	lateral right pleural surface
+T7	Medical-Assertion 754 769	could be due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 772 798	loculated pleural effusion
+T9	Medical-Problem 802 820	pleural thickening
+T10	Medical-Problem 850 879	pulmonary vascular congestion
+E9	Medical-Problem:T10
+T11	Medical-Problem 884 898	fluid overload
+E10	Medical-Problem:T11
+T12	Medical-Problem 905 920	pulmonary edema
+E11	Medical-Problem:T12
+T13	Medical-Assertion 961 963	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 964 976	pneumothorax
+T15	Medical-Problem 989 1000	atelectasis
+T16	Medical-Anatomy 1008 1022	left lung base
+T17	Medical-Problem 1035 1055	infectious component
+T18	Medical-Assertion 1057 1086	cannot be completely excluded
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1111 1128	Bilateral pleural
+E16	Medical-Problem:T19
+T20	Medical-Problem 1129 1160	effusions, moderate on the left
+E17	Medical-Problem:T20
+T21	Medical-Problem 1165 1183	trace on the right
+E18	Medical-Problem:T21
+T22	Medical-Assertion 1190 1196	likely
+A4	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1199 1218	loculated component
+T24	Medical-Anatomy 1226 1255	lateral right pleural surface
+T25	Medical-Problem 1265 1280	Pulmonary edema
+E21	Medical-Problem:T25
+T26	Medical-Problem 1317 1329	Left basilar
+E22	Medical-Problem:T26
+T27	Medical-Problem 1330 1341	atelectasis
+E23	Medical-Problem:T27
+T28	Medical-Problem 1344 1365	Underlying infectious
+E24	Medical-Problem:T28
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T17 has-Medical-Assertion:T18
+E19	Medical-Problem:T23 has-Medical-Assertion:T22 has-Medical-Anatomy:T24

@@ -1,0 +1,23 @@
+T1	Medical-Problem 346 352;354 371	marked increased opacity
+T2	Medical-Anatomy 379 395	right upper lobe
+T3	Medical-Assertion 396 406	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 407 432;434 470	pneumonia superimposed on background abnormalities of the lobe
+T5	Medical-Problem 481 492	volume loss
+T6	Medical-Problem 498 523	treatment-related changes
+T7	Medical-Assertion 571 573	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 575 592	pleural effusions
+T9	Medical-Problem 596 608	pneumothorax
+T10	Medical-Problem 629 664	Increasing right upper lobe opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 665 675	suggesting
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 676 685	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

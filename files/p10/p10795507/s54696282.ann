@@ -1,0 +1,21 @@
+T1	Medical-Problem 304 318	convex opacity
+T2	Medical-Anatomy 371 402	lower thoracic vertebral bodies
+T3	Lesion-Anatomy 458 479	posterior mediastinal
+T4	Lesion-Description 480 484	mass
+T5	Medical-Assertion 593 595	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 597 605	free air
+T7	Medical-Anatomy 616 635	right hemidiaphragm
+T8	Medical-Problem 638 659	Degenerative spurring
+T9	Medical-Anatomy 688 702	thoracic spine
+T10	Lesion-Assertion 729 743	concerning for
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Anatomy 746 767	posterior mediastinal
+T12	Lesion-Description 768 772	mass
+T13	Lesion-Characteristic 778 784;786 805	convex opacity overlapping
+T14	Lesion-Anatomy 815 835	mid-to-lower T-spine
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Anatomy:T11 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14

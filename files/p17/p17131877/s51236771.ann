@@ -1,0 +1,23 @@
+T1	Medical-Assertion 221 223	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 224 243	focal consolidation
+T3	Medical-Problem 255 264	pneumonia
+T4	Medical-Problem 278 282;284 302	mild interstitial edema
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 341 355	Thoracic aorta
+T6	Medical-Problem 360 388	generally large and tortuous
+T7	Medical-Assertion 393 396	not
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 397 415	focally aneurysmal
+T9	Medical-Assertion 565 567	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 568 580	pneumothorax
+T11	Medical-Assertion 583 585	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 587 615	appreciable pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

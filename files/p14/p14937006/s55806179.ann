@@ -1,0 +1,26 @@
+T1	Medical-Problem 319 350	Moderate right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 380 387;389 402	greater opacification
+T3	Medical-Anatomy 410 425	right lung base
+T4	Medical-Problem 493 518	preexisting consolidation
+T5	Medical-Anatomy 522 537	both lung bases
+T6	Medical-Assertion 539 547	could be
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 548 563	dependent edema
+T8	Medical-Assertion 568 588	should be considered
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 589 598	pneumonia
+T10	Medical-Problem 692 717	moderate pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 733 741	Heart is
+E9	Medical-Problem:T11
+T12	Medical-Problem 742 761	moderately enlarged
+E10	Medical-Problem:T12
+T13	Medical-Assertion 881 894	no indication
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 899 911	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

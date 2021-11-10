@@ -1,0 +1,14 @@
+T1	Medical-Anatomy 95 111	right lower lobe
+T2	Medical-Assertion 113 121	question
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 123 132	pneumonia
+T4	Medical-Problem 221 232;234 241	ill-defined opacity
+T5	Medical-Anatomy 249 287	left lower zone of well-expanded lungs
+T6	Medical-Problem 401 426	Left lower lung opacities
+E5	Medical-Problem:T6
+T7	Medical-Assertion 427 441	likely reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 442 451	pneumonia
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

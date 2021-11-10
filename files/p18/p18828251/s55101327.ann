@@ -1,0 +1,25 @@
+T1	Medical-Assertion 233 235	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 236 248	pneumothorax
+T3	Medical-Problem 252 260;262 278	definite pleural effusion
+T4	Medical-Assertion 290 292	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 293 321	focal airspace consolidation
+T6	Medical-Problem 328 340;342 349	lung volumes are low
+E4	Medical-Problem:T6
+T7	Medical-Problem 361 376	mild prominence
+T8	Medical-Anatomy 384 405	pulmonary vasculature
+T9	Medical-Problem 461 483	heart size is enlarged
+E7	Medical-Problem:T9
+T10	Lesion-Size 557 562	Small
+T11	Lesion-Description 563 573	granulomas
+T12	Lesion-Anatomy 597 612	right lung base
+T13	Medical-Problem 630 642	Cardiomegaly
+E11	Medical-Problem:T13
+T14	Medical-Problem 648 668	mild volume overload
+E12	Medical-Problem:T14
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T12

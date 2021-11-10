@@ -1,0 +1,39 @@
+T1	Medical-Problem 29 53	Subtle increased density
+T2	Medical-Anatomy 68 86	right heart border
+T3	Medical-Problem 92 101;103 111	increased  density
+T4	Medical-Anatomy 119 133	lower zones on
+T5	Medical-Assertion 147 161	suspicious for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 162 171	infection
+T7	Medical-Problem 454 476	mild increased density
+T8	Medical-Anatomy 492 510	right heart border
+T9	Medical-Problem 516 544	increased lower zone density
+T10	Medical-Problem 571 597	some peribronchial cuffing
+T11	Medical-Assertion 598 608	suspicious
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 613 622	infection
+T13	Medical-Assertion 634 636	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 637 644;646 654	pleural effusion
+T15	Medical-Problem 658 670	pneumothorax
+T16	Medical-Problem 738 754	Subtle increased
+E13	Medical-Problem:T16
+T17	Medical-Problem 755 762	density
+T18	Medical-Anatomy 777 795	right heart border
+T19	Medical-Problem 802 819	increased density
+T20	Medical-Anatomy 827 838	lower lungs
+T21	Medical-Assertion 855 869	suspicious for
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 870 879	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

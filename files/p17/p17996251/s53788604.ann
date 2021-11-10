@@ -1,0 +1,16 @@
+T1	Medical-Assertion 293 295	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 296 308	pneumothorax
+T3	Medical-Problem 312 328	pleural effusion
+T4	Medical-Problem 333 364	persistent retrocardiac density
+E3	Medical-Problem:T4
+T5	Medical-Assertion 365 380	likely reflects
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 381 403;405 416	severe left lower lobe atelectasis
+T7	Medical-Problem 449 465;467 480	small underlying consolidation
+T8	Medical-Assertion 481 508	cannot be entirely excluded
+A3	Medical-AssertionValue T8 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T8

@@ -1,0 +1,27 @@
+T1	Medical-Problem 92 102;104 119	associated  indistinctness
+T2	Medical-Anatomy 127 143	right upper lung
+T3	Medical-Assertion 152 172	likely corresponding
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 176 181;183 194	local  hemorrhage
+T5	Medical-Problem 209 246	Multiple bilateral airspace opacities
+E4	Medical-Problem:T5
+T6	Medical-Assertion 300 302	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 303 315	pneumothorax
+T8	Lesion-Anatomy 612 628	right upper lobe
+T9	Lesion-Description 629 635	lesion
+T10	Medical-Problem 638 654	Local hemorrhage
+E8	Medical-Problem:T10
+T11	Medical-Assertion 672 674	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 675 687	pneumothorax
+T13	Medical-Problem 690 706	Mild atelectasis
+T14	Medical-Anatomy 714 731;733 740	retrocardiac lung regions
+T15	Medical-Problem 812 829	pleural effusions
+E12	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14

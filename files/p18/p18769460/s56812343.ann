@@ -1,0 +1,45 @@
+T1	Medical-Assertion 414 420	may be
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 423 464	small loculated left basilar pneumothorax
+T3	Medical-Assertion 521 523	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 524 542	right pneumothorax
+T5	Medical-Problem 563 585	streaky patchy opacity
+T6	Medical-Anatomy 593 617	left mid peripheral lung
+T7	Medical-Problem 629 633;635 648	more focal opacity
+T8	Medical-Anatomy 656 679	right mid-to-lower lung
+T9	Medical-Assertion 686 699	may represent
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 718 729	atelectasis
+T11	Medical-Problem 731 739	scarring
+T12	Medical-Problem 747 770	loculated pleural fluid
+T13	Medical-Assertion 808 819	No evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 823 838	pulmonary edema
+T15	Medical-Anatomy 896 901	Lungs
+T16	Medical-Problem 906 919	hyperinflated
+T17	Medical-Problem 936 946;948 957	underlying emphysema
+T18	Medical-Problem 972 980	blunting
+E14	Medical-Problem:T18
+T19	Medical-Assertion 1009 1026	likely reflecting
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1028 1054	chronic pleural thickening
+T21	Medical-Problem 1058 1073	small effusions
+T22	Medical-Problem 1076 1104	Prominent pulmonary arteries
+E17	Medical-Problem:T22
+T23	Medical-Assertion 1106 1130	raise the possibility of
+A6	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1131 1173	underlying pulmonary arterial hypertension
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T15
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T19
+E18	Medical-Problem:T24 has-Medical-Assertion:T23

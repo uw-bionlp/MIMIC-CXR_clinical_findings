@@ -1,0 +1,22 @@
+T1	Medical-Problem 283 299	Patchy opacities
+T2	Medical-Anatomy 320 349	right greater than left lungs
+T3	Medical-Assertion 395 403	Possible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 404 420	minimal blunting
+T5	Medical-Anatomy 429 453	right costophrenic angle
+T6	Medical-Assertion 459 461	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 462 476	gross effusion
+T8	Medical-Assertion 502 504	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 506 518	pneumothorax
+T10	Medical-Assertion 563 571	possible
+A4	Medical-AssertionValue T10 possible
+T11	Lesion-Characteristic 572 583	subchondral
+T12	Lesion-Description 584 588	cyst
+T13	Lesion-Anatomy 599 613;615 639	right superior glenoid, at the shoulder
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13

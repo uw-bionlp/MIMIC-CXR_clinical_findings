@@ -1,0 +1,27 @@
+T1	Medical-Problem 357 373	Mild atelectasis
+T2	Medical-Anatomy 389 405	lower lung bases
+T3	Medical-Assertion 411 419	possible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 420 434;436 444	small residual scarring
+T5	Medical-Anatomy 452 467	left lower lung
+T6	Medical-Assertion 470 472	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 473 482	pneumonia
+T8	Medical-Problem 484 499	pulmonary edema
+T9	Medical-Problem 505 517	pneumothorax
+T10	Medical-Problem 622 648	Mild bibasilar atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Assertion 654 662	possible
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 663 686	small residual scarring
+T13	Medical-Anatomy 700 715	left lower lung
+T14	Medical-Assertion 718 720	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 721 730	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

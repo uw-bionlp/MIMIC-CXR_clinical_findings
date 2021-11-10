@@ -1,0 +1,35 @@
+T1	Medical-Assertion 251 267	do not see clear
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 269 291	subcutaneous emphysema
+T3	Medical-Assertion 353 370	could indeed have
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 376 393	pneumomediastinum
+T5	Medical-Problem 397 414	alternatively air
+T6	Medical-Anatomy 423 432	esophagus
+T7	Medical-Anatomy 444 464	right piriform sinus
+T8	Medical-Problem 542 588	Moderate enlargement of the cardiac silhouette
+E6	Medical-Problem:T8
+T9	Medical-Problem 629 655	mediastinal fat deposition
+E7	Medical-Problem:T9
+T10	Medical-Problem 713 726	central veins
+E8	Medical-Problem:T10
+T11	Medical-Problem 745 752	dilated
+E9	Medical-Problem:T11
+T12	Medical-Anatomy 755 764;766 777	Pulmonary circulation
+T13	Medical-Problem 781 796	mildly engorged
+T14	Medical-Assertion 844 866	no convincing evidence
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 871 893	cardiac decompensation
+T16	Medical-Problem 897 906	pneumonia
+T17	Medical-Problem 909 916;918 929	Pleural effusion is
+E14	Medical-Problem:T17
+T18	Medical-Assertion 945 947	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 948 960	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

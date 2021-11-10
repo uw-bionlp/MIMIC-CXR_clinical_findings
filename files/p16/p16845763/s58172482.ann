@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 321 326	lungs
+T2	Medical-Problem 331 344	hyperinflated
+T3	Medical-Problem 350 376	mild emphysematous changes
+T4	Medical-Problem 397 424	Focal ill-defined opacities
+T5	Medical-Anatomy 448 455;457 478	lingula and right middle lobe
+T6	Medical-Problem 547 565	infectious process
+E6	Medical-Problem:T6
+T7	Lesion-Size 574 578	tiny
+T8	Lesion-Description 579 596	nodular opacities
+T9	Lesion-Anatomy 609 669	right upper lobe and superior segment of the left lower lobe
+T10	Medical-Assertion 727 729	no
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 730 746	pleural effusion
+T12	Medical-Problem 751 763	pneumothorax
+T13	Medical-Assertion 766 768	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 769 798	pulmonary vascular congestion
+T15	Medical-Assertion 815 817	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 818 823;825 846	acute osseous abnormalities
+T17	Medical-Anatomy 875 880	Right
+T18	Medical-Problem 906 915	opacities
+E15	Medical-Problem:T18
+T19	Medical-Assertion 916 930	concerning for
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 931 940	infection
+T21	Lesion-Size 949 953	tiny
+T22	Lesion-Description 955 972	nodular opacities
+T23	Lesion-Anatomy 984 999	left lower lobe
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E8	Lesion-Description:T8 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T19
+E18	Lesion-Description:T22 has-Lesion-Size-Present:T21 has-Lesion-Anatomy:T23

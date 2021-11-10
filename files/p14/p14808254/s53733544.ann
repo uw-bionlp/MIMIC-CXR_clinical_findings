@@ -1,0 +1,32 @@
+T1	Medical-Problem 187 206	Band-like opacities
+T2	Medical-Anatomy 210 220	both lungs
+T3	Medical-Problem 245 256	atelectasis
+T4	Medical-Assertion 270 272	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 273 282	opacities
+T6	Medical-Assertion 283 292	worrisome
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 297 306	pneumonia
+T8	Medical-Problem 309 329	Lung volumes are low
+E6	Medical-Problem:T8
+T9	Medical-Assertion 341 343	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 345 361	pleural effusion
+T11	Medical-Problem 365 377	pneumothorax
+T12	Medical-Problem 429 450	New atelectatic bands
+T13	Medical-Anatomy 463 473	both lungs
+T14	Medical-Assertion 488 490	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 491 500	opacities
+T16	Medical-Assertion 501 510	worrisome
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 515 524	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T14 has-Medical-Assertion:T16

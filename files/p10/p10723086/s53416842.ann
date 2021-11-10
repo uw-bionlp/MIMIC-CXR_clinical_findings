@@ -1,0 +1,46 @@
+T1	Medical-Problem 187 216	Diffuse increased attenuation
+T2	Medical-Anatomy 225 230	lungs
+T3	Medical-Problem 257 280	soft tissue attenuation
+T4	Medical-Problem 376 396	mild pulmonary edema
+E4	Medical-Problem:T4
+T5	Medical-Problem 474 505	Moderate-to-severe cardiomegaly
+E5	Medical-Problem:T5
+T6	Medical-Problem 531 554	increased opacification
+T7	Medical-Anatomy 562 576	left lung base
+T8	Medical-Assertion 619 632	could reflect
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 633 642;644 655	worsening atelectasis
+T10	Medical-Problem 669 678	pneumonia
+T11	Medical-Problem 682 692	aspiration
+T12	Medical-Assertion 695 697	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 698 710	pneumothorax
+T14	Medical-Problem 724 751	Bilateral pleural effusions
+T15	Medical-Assertion 756 764	possible
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 795 802;804 821	diffuse basilar densities
+E13	Medical-Problem:T16
+T17	Medical-Problem 843 877	Recurrence of mild pulmonary edema
+E14	Medical-Problem:T17
+T18	Medical-Assertion 883 891	possible
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 892 909;911 920	bilateral pleural effusions
+T20	Medical-Problem 927 957	Increased retrocardiac density
+E16	Medical-Problem:T20
+T21	Medical-Assertion 958 966	possible
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 967 988	worsening atelectasis
+T23	Medical-Problem 997 1017	pneumonia aspiration
+T24	Medical-Assertion 1018 1038	should be considered
+A6	Medical-AssertionValue T24 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T15
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T22 has-Medical-Assertion:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T21 has-Medical-Assertion:T24

@@ -1,0 +1,33 @@
+T1	Medical-Problem 244 263	increased opacities
+T2	Medical-Anatomy 271 293;295 341	perihilar distribution bilaterally but particularly on the right side
+T3	Medical-Problem 373 381	evidence
+E3	Medical-Problem:T3
+T4	Medical-Problem 385 406	peribronchial cuffing
+E4	Medical-Problem:T4
+T5	Medical-Problem 492 517	constellation of findings
+E5	Medical-Problem:T5
+T6	Medical-Assertion 518 526;528 532	could be seen
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 536 551	cardiac failure
+T8	Medical-Problem 556 605;607 630	pulmonary edema process leading towards infection such as viral pneumonia
+T9	Medical-Assertion 634 647	not ruled out
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 659 682;684 695	minimal left lower lobe atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Assertion 708 710	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 711 728	pleural effusions
+T13	Medical-Problem 775 819	Perihilar opacities, right greater than left
+E10	Medical-Problem:T13
+T14	Medical-Problem 857 872	Pulmonary edema
+T15	Medical-Problem 883 901	infectious process
+T16	Medical-Problem 911 926	viral pneumonia
+T17	Medical-Assertion 931 945	considerations
+A4	Medical-AssertionValue T17 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T6 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T17
+E12	Medical-Problem:T15 has-Medical-Assertion:T17
+E13	Medical-Problem:T16 has-Medical-Assertion:T17

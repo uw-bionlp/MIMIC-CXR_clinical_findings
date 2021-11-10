@@ -1,0 +1,46 @@
+T1	Medical-Assertion 363 365	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 366 385	focal consolidation
+T3	Medical-Problem 387 395	effusion
+T4	Medical-Problem 398 403	edema
+T5	Medical-Problem 408 420	pneumothorax
+T6	Lesion-Size 423 427	3 mm
+T7	Lesion-Characteristic 429 434	round
+T8	Lesion-Description 435 442	opacity
+T9	Lesion-Anatomy 463 473	right apex
+T10	Lesion-Characteristic 483 492	calcified
+T11	Lesion-Characteristic 512 521	calcified
+T12	Lesion-Description 522 531	granuloma
+T13	Lesion-Size-Trend 533 542	unchanged
+A2	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Problem 565 592	Enlarged cardiac silhouette
+E12	Medical-Problem:T14
+T15	Medical-Problem 625 637	cardiomegaly
+E13	Medical-Problem:T15
+T16	Medical-Problem 657 667	descending
+E14	Medical-Problem:T16
+T17	Medical-Problem 688 699;701 724	Aortic knob calcifications are mild
+E15	Medical-Problem:T17
+T18	Medical-Problem 729 759	Anterior compression deformity
+T19	Medical-Anatomy 767 784	L1 vertebral body
+T20	Medical-Problem 847 878	Multilevel degenerative changes
+T21	Medical-Anatomy 912 926	thoracic spine
+T22	Medical-Problem 932 950;952 963	prominent anterior osteophytes
+T23	Medical-Assertion 988 990	No
+A3	Medical-AssertionValue T23 absent
+T24	Medical-Problem 991 1022	acute intrathoracic abnormality
+T25	Medical-Problem 1031 1073	Persistent moderate-to-severe cardiomegaly
+E22	Medical-Problem:T25
+T26	Medical-Problem 1082 1112	Anterior compression deformity
+T27	Medical-Anatomy 1120 1137	L1 vertebral body
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T1
+E7	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10
+E11	Lesion-Description:T12 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T11 has-Lesion-Size-Trend:T13
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T20 has-Medical-Anatomy:T21
+E20	Medical-Problem:T22 has-Medical-Anatomy:T21
+E21	Medical-Problem:T24 has-Medical-Assertion:T23
+E23	Medical-Problem:T26 has-Medical-Anatomy:T27

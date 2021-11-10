@@ -1,0 +1,39 @@
+T1	Medical-Assertion 30 32	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 33 62	acute cardiopulmonary process
+T3	Medical-Problem 105 131	Faint retrocardiac opacity
+E2	Medical-Problem:T3
+T4	Medical-Assertion 132 147	likely reflects
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 148 159	atelectasis
+T6	Medical-Assertion 165 179	cannot exclude
+A3	Medical-AssertionValue T6 possible
+T7	Medical-Problem 182 192	aspiration
+T8	Medical-Problem 196 205	pneumonia
+T9	Medical-Assertion 249 251	no
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 252 257;259 283	acute  cardiopulmonary process
+T11	Medical-Problem 673 685	somewhat low
+E7	Medical-Problem:T11
+T12	Medical-Assertion 719 721	no
+A5	Medical-AssertionValue T12 absent
+T13	Medical-Problem 723 735	pneumothorax
+T14	Medical-Assertion 738 740	No
+A6	Medical-AssertionValue T14 absent
+T15	Medical-Problem 741 766	definite pleural effusion
+T16	Lesion-Characteristic 835 844	calcified
+T17	Lesion-Anatomy 845 856	mediastinal
+T18	Lesion-Anatomy 861 866	hilar
+T19	Lesion-Description 867 872	nodes
+T20	Medical-Assertion 893 895	No
+A7	Medical-AssertionValue T20 absent
+T21	Medical-Problem 896 901	acute
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T6
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T13 has-Medical-Assertion:T12
+E9	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Lesion-Description:T19 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T17 has-Lesion-Anatomy:T18
+E14	Medical-Problem:T21 has-Medical-Assertion:T20

@@ -1,0 +1,22 @@
+T1	Medical-Assertion 297 299	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 300 322	new lung consolidation
+T3	Medical-Problem 341 366	calcified pleural plaques
+E2	Medical-Problem:T3
+T4	Medical-Problem 372 391	rounded atelectasis
+E3	Medical-Problem:T4
+T5	Lesion-Characteristic 446 454	Residual
+T6	Lesion-Anatomy 455 471	right upper lobe
+T7	Lesion-Description 472 482	malignancy
+T8	Medical-Assertion 582 584	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 585 592;594 602	pleural effusion
+T10	Medical-Problem 606 618	pneumothorax
+T11	Medical-Assertion 647 658	no evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 662 671	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

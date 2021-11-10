@@ -1,0 +1,32 @@
+T1	Medical-Assertion 370 381	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 385 405	aspiration pneumonia
+T3	Medical-Problem 407 423	pleural effusion
+T4	Medical-Problem 427 439	pneumothorax
+T5	Medical-Anatomy 443 464	Pulmonary vasculature
+T6	Medical-Problem 468 483	mildly engorged
+T7	Medical-Assertion 497 499	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 500 505	edema
+T9	Medical-Problem 508 517;519 549	Elevation right hemidiaphragm is chronic
+E7	Medical-Problem:T9
+T10	Medical-Problem 552 576	Heart is mildly enlarged
+E8	Medical-Problem:T10
+T11	Medical-Assertion 579 581	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 582 593;595 611	appreciable pleural effusion
+T13	Medical-Problem 615 623	evidence
+E10	Medical-Problem:T13
+T14	Medical-Problem 627 639	pneumothorax
+T15	Medical-Problem 644 658	Bony coalition
+T16	Medical-Anatomy 660 687	posterior right middle ribs
+T17	Lesion-Description 723 729	lesion
+E14	Lesion-Description:T17
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16

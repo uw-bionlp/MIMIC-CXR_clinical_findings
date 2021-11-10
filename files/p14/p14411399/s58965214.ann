@@ -1,0 +1,30 @@
+T1	Medical-Problem 265 301	multifocal regions of bronchiectasis
+E1	Medical-Problem:T1
+T2	Medical-Problem 306 326	patchy consolidation
+E2	Medical-Problem:T2
+T3	Lesion-Characteristic 339 347	cavitary
+T4	Lesion-Description 348 355	lesions
+T5	Lesion-Anatomy 377 387	right lung
+T6	Medical-Assertion 396 402	may be
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 403 415;417 430	new areas of consolidation
+T8	Medical-Anatomy 438 454	right upper lung
+T9	Medical-Problem 518 545	superimposed active disease
+T10	Medical-Assertion 557 559	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 560 567;569 577	pleural effusion
+T12	Medical-Problem 708 725	chronic infection
+E10	Medical-Problem:T12
+T13	Medical-Assertion 740 748	possible
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 750 780	component of new consolidation
+T15	Medical-Anatomy 788 804	right upper lung
+T16	Medical-Assertion 806 828	raising possibility of
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 832 859	component of active disease
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,33 @@
+T1	Medical-Assertion 286 288	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 289 301	pneumothorax
+T3	Medical-Problem 358 369	atelectasis
+T4	Medical-Problem 373 393	other patchy opacity
+T5	Medical-Anatomy 402 428	right cardiophrenic region
+T6	Medical-Problem 453 468;470 480	early pneumonic infiltrate
+E5	Medical-Problem:T6
+T7	Medical-Assertion 528 536	probably
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 543 562	minimal atelectasis
+T9	Medical-Anatomy 570 584	left lung base
+T10	Medical-Assertion 587 589	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 590 609	frank consolidation
+T12	Medical-Assertion 677 679	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 680 688	effusion
+T14	Medical-Problem 709 723	Patchy opacity
+T15	Medical-Anatomy 724 750	right cardiophrenic region
+T16	Medical-Problem 782 793	atelectasis
+T17	Medical-Assertion 794 800	versus
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 801 827	early pneumonic infiltrate
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E12	Medical-Problem:T16 has-Medical-Assertion:T17
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

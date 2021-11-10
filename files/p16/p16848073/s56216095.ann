@@ -1,0 +1,26 @@
+T1	Medical-Assertion 55 57	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 58 70	pneumothorax
+T3	Medical-Problem 72 96	Moderate pulmonary edema
+T4	Medical-Problem 100 120	Mediastinal widening
+E3	Medical-Problem:T4
+T5	Medical-Problem 126 148	subcutaneous emphysema
+E4	Medical-Problem:T5
+T6	Medical-Problem 561 569	Widening
+T7	Medical-Anatomy 577 622	upper mediastinum to the right of the midline
+T8	Medical-Assertion 623 638	could be due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 640 653	fluid filling
+T10	Medical-Anatomy 661 670	esophagus
+T11	Medical-Problem 836 851	Pulmonary edema
+E9	Medical-Problem:T11
+T12	Medical-Problem 862 871;873 885	Extensive subcutaneous
+E10	Medical-Problem:T12
+T13	Medical-Assertion 970 972	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 973 985	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

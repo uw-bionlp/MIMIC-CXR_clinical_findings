@@ -1,0 +1,28 @@
+T1	Medical-Problem 771 776;778 806	small bilateral layering effusions
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 809 818	Calcified
+T3	Lesion-Description 819 825	nodule
+T4	Lesion-Anatomy 833 848	right lung base
+T5	Lesion-Assertion 849 855;857 867	likely represents
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 870 879	granuloma
+T7	Medical-Anatomy 895 916	pulmonary vasculature
+T8	Medical-Problem 957 976	increase in opacity
+T9	Medical-Anatomy 984 1010;1012 1016	right side relative to the left
+T10	Medical-Assertion 1034 1047	would suggest
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 1048 1073	worsening pulmonary edema
+T12	Medical-Problem 1088 1106	infectious process
+T13	Medical-Assertion 1107 1132	should also be considered
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1143 1152	asymmetry
+T15	Medical-Assertion 1196 1198	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1199 1217	large pneumothorax
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10 has-Medical-Assertion:T13
+E10	Medical-Problem:T12 has-Medical-Assertion:T10 has-Medical-Assertion:T13
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

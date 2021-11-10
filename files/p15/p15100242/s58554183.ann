@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 218 229	aortic knob
+T2	Medical-Problem 233 242	calcified
+T3	Medical-Assertion 295 297	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 298 313	pulmonary edema
+T5	Medical-Problem 316 337	Ill-defined opacities
+T6	Medical-Anatomy 345 349;351 361	both lung bases
+T7	Medical-Assertion 366 380	concerning for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 381 390	pneumonia
+T9	Medical-Problem 394 404	aspiration
+T10	Medical-Assertion 407 409	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 410 426	pleural effusion
+T12	Medical-Problem 431 443	pneumothorax
+T13	Medical-Problem 478 509	multilevel degenerative changes
+T14	Medical-Anatomy 518 532	thoracic spine
+T15	Medical-Problem 535 555	Degenerative changes
+T16	Medical-Anatomy 582 587;589 597	right shoulder
+T17	Medical-Problem 603 612	narrowing
+T18	Medical-Anatomy 620 643	acromiohumeral interval
+T19	Medical-Assertion 644 657	suggestive of
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 658 665;667 679	rotator cuff disease
+T21	Medical-Problem 699 718	Bibasilar pneumonia
+E17	Medical-Problem:T21
+T22	Medical-Problem 722 732	aspiration
+E18	Medical-Problem:T22
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T16 has-Medical-Anatomy:T18 has-Medical-Assertion:T19

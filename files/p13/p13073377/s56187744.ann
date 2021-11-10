@@ -1,0 +1,24 @@
+T1	Medical-Problem 161 187	Borderline pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 203 224	Moderate cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 235 248	Opacification
+T4	Medical-Anatomy 256 271	right lung base
+T5	Medical-Assertion 272 280	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 298 312	small effusion
+T7	Medical-Problem 319 342	parenchymal abnormality
+T8	Medical-Anatomy 350 354	lung
+T9	Medical-Problem 365 375	aspiration
+T10	Medical-Problem 379 388;390 401	dependent atelectasis
+T11	Medical-Problem 405 410	edema
+T12	Medical-Assertion 574 576	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 577 589	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

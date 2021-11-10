@@ -1,0 +1,20 @@
+T1	Medical-Problem 178 199;201 220	persistent small left apical pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 311 334	Worsening opacification
+T3	Medical-Anatomy 342 354;356 366	left mid and lower lung
+T4	Medical-Problem 385 418	leftward shift of the mediastinum
+T5	Medical-Assertion 424 430;432 442	likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 460 482	developing atelectasis
+T7	Medical-Problem 487 499;501 514	pre-existing consolidation
+T8	Medical-Problem 549 567	improving aeration
+T9	Medical-Anatomy 576 591	right lung base
+T10	Medical-Problem 597 648	persistent small to moderate right pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 652 674	Moderate left effusion
+E10	Medical-Problem:T11
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9

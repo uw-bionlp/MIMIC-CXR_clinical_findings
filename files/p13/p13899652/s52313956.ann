@@ -1,0 +1,34 @@
+T1	Medical-Problem 288 307	Minimal atelectasis
+T2	Medical-Anatomy 324 334	lung bases
+T3	Medical-Problem 345 353	scarring
+T4	Medical-Anatomy 365 376	lung apices
+T5	Medical-Assertion 426 428	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 429 441	pneumothorax
+T7	Medical-Problem 458 465;467 475	Minimal blunting
+T8	Medical-Anatomy 483 519	left costophrenic sulcus posteriorly
+T9	Medical-Assertion 520 533	may be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 538 545;547 557	pleural thickening
+T11	Medical-Problem 561 583	trace pleural effusion
+T12	Medical-Problem 586 624	Multiple old right-sided rib fractures
+E10	Medical-Problem:T12
+T13	Medical-Assertion 713 737	No radiographic evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 742 751	pneumonia
+T15	Medical-Problem 754 762	Blunting
+T16	Medical-Anatomy 770 787;789 807	left costophrenic sulcus posteriorly
+T17	Medical-Assertion 808 821	may be due to
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 822 840	pleural thickening
+T19	Medical-Problem 844 866	trace pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

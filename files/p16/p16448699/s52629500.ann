@@ -1,0 +1,23 @@
+T1	Medical-Problem 212 228	Linear opacities
+T2	Medical-Anatomy 236 250	left lung base
+T3	Medical-Assertion 255 259;261 274	most suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 275 286	atelectasis
+T5	Medical-Anatomy 324 329	Lungs
+T6	Medical-Problem 344 373	large confluent consolidation
+T7	Medical-Problem 375 383	effusion
+T8	Medical-Problem 388 400	pneumothorax
+T9	Lesion-Characteristic 550 559	calcified
+T10	Lesion-Anatomy 561 572	left breast
+T11	Lesion-Characteristic 573 584	soft tissue
+T12	Lesion-Description 585 592	lesions
+T13	Medical-Assertion 597 605	possible
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 606 636	left lateral 11th rib fracture
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10 has-Lesion-Characteristic:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

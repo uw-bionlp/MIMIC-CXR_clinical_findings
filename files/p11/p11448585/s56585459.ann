@@ -1,0 +1,20 @@
+T1	Medical-Problem 203 235	Mild bilateral apical thickening
+E1	Medical-Problem:T1
+T2	Medical-Assertion 260 262	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 264 273	pneumonia
+T4	Medical-Assertion 275 277	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 278 293	pulmonary edema
+T6	Lesion-Assertion 296 298	No
+A3	Lesion-AssertionValue T6 absent
+T7	Lesion-Anatomy 299 303	lung
+T8	Lesion-Description 304 311	nodules
+T9	Lesion-Description 315 321	masses
+T10	Medical-Problem 365 384	Moderate tortuosity
+T11	Medical-Anatomy 392 406	thoracic aorta
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7
+E6	Lesion-Description:T9 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T11

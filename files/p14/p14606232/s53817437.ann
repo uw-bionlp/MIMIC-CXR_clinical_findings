@@ -1,0 +1,19 @@
+T1	Medical-Problem 192 214	Heart size is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 228 242	Tortuous aorta
+E2	Medical-Problem:T2
+T3	Medical-Assertion 258 269;271 279	potentially might be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 280 304	dilated to the extent of
+T5	Lesion-Anatomy 439 449	Left hilar
+T6	Lesion-Description 450 454	mass
+T7	Medical-Assertion 455 486	can potentially also be present
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 520 522	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 523 539	pleural effusion
+T10	Medical-Problem 543 555	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8

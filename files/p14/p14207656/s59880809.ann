@@ -1,0 +1,23 @@
+T1	Medical-Problem 271 279	Blunting
+T2	Medical-Anatomy 287 316	posterior costophrenic angles
+T3	Medical-Problem 331 346;348 357	small bilateral effusions
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 441 446	lungs
+T5	Medical-Assertion 451 456	clear
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 460 473	consolidation
+T7	Lesion-Characteristic 520 529	Calcified
+T8	Lesion-Anatomy 530 541	mediastinal
+T9	Lesion-Anatomy 546 551	hilar
+T10	Lesion-Description 552 557	nodes
+T11	Medical-Problem 579 599	bones are osteopenic
+E10	Medical-Problem:T11
+T12	Medical-Problem 640 673	Small bilateral pleural effusions
+E11	Medical-Problem:T12
+T13	Medical-Assertion 713 715	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 717 768	definite superimposed acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

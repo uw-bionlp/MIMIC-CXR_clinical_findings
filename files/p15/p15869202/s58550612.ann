@@ -1,0 +1,14 @@
+T1	Medical-Problem 238 251	Consolidation
+T2	Medical-Anatomy 278 294	right upper lobe
+T3	Medical-Problem 309 312;314 327	new consolidation
+T4	Medical-Anatomy 335 351	right lower lung
+T5	Medical-Problem 357 390;392 400	mild pulmonary edema has worsened slightly
+E5	Medical-Problem:T5
+T6	Medical-Problem 427 463	Pleural effusion, small on the right
+E6	Medical-Problem:T6
+T7	Medical-Assertion 466 468	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 470 482	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7

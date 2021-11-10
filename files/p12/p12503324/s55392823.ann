@@ -1,0 +1,30 @@
+T1	Medical-Problem 276 290;292 314	new widespread interstitial opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 328 335	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 336 355	focal consolidation
+T4	Medical-Assertion 357 365;367 379	possibly representing
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 382 409	viral or atypical infection
+T6	Medical-Problem 412 438	Moderate tortuosity of the
+T7	Medical-Anatomy 439 444	aorta
+T8	Medical-Assertion 470 472	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 473 485	pneumothorax
+T10	Medical-Problem 489 505	pleural effusion
+T11	Lesion-Size 510 515	small
+T12	Lesion-Anatomy 516 521;523 530	right midzone
+T13	Lesion-Characteristic 531 540	calcified
+T14	Lesion-Description 541 550	granuloma
+T15	Medical-Problem 581 615	New diffuse interstitial opacities
+E12	Medical-Problem:T15
+T16	Medical-Assertion 616 629	may represent
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 630 640;642 668	pneumonia, possibly viral or atypical
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Lesion-Description:T14 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T12 has-Lesion-Characteristic:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

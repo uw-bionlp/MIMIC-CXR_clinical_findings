@@ -1,0 +1,19 @@
+T1	Medical-Problem 266 281	Pulmonary edema
+T2	Medical-Assertion 304 330	almost completely resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 332 343	Atelectasis
+T4	Medical-Anatomy 352 373	mid lungs bilaterally
+T5	Medical-Problem 390 421;423 428	Bilateral pleural effusions are small
+E4	Medical-Problem:T5
+T6	Medical-Problem 445 465	adjacent atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Problem 468 487	Severe cardiomegaly
+E6	Medical-Problem:T7
+T8	Medical-Problem 503 523	Widening mediastinum
+E7	Medical-Problem:T8
+T9	Medical-Assertion 548 550	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 551 563	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

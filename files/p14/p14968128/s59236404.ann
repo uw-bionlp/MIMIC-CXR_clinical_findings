@@ -1,0 +1,32 @@
+T1	Medical-Problem 226 263	mild bilateral lower lobe atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Problem 301 332	right apical pleural thickening
+E2	Medical-Problem:T2
+T3	Medical-Problem 335 358	Relative patchy opacity
+T4	Medical-Anatomy 366 376;378 382	right lung apex
+T5	Medical-Problem 428 436	scarring
+T6	Medical-Problem 486 504	infectious process
+T7	Medical-Assertion 508 520	not excluded
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 532 534	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 536 552	pleural effusion
+T10	Medical-Problem 556 568	pneumothorax
+T11	Medical-Problem 646 679	Right biapical pleural thickening
+E9	Medical-Problem:T11
+T12	Medical-Problem 682 697	Streaky opacity
+T13	Medical-Anatomy 705 710;712 722	right upper lung
+T14	Medical-Assertion 757 772	possibly due to
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 773 781	scarring
+T16	Medical-Problem 831 849	infectious process
+T17	Medical-Assertion 850 859;861 869	cannot be excluded
+A4	Medical-AssertionValue T17 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T17

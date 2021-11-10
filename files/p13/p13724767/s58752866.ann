@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 558 573	right lung apex
+T2	Medical-Problem 578 588;590 603	persistent consolidation
+T3	Medical-Anatomy 611 635	right mid and lower lung
+T4	Medical-Assertion 641 649	probable
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 650 660;662 679	associated layering effusion
+T6	Medical-Problem 704 727;729 742	persistent retrocardiac consolidation
+E5	Medical-Problem:T6
+T7	Medical-Problem 751 770	associated effusion
+E6	Medical-Problem:T7
+T8	Medical-Problem 777 792	pulmonary edema
+E7	Medical-Problem:T8
+T9	Medical-Problem 843 854	atelectasis
+E8	Medical-Problem:T9
+T10	Medical-Problem 856 866	aspiration
+E9	Medical-Problem:T10
+T11	Medical-Problem 870 879	pneumonia
+E10	Medical-Problem:T11
+T12	Medical-Problem 915 944	Heart remains stably enlarged
+E11	Medical-Problem:T12
+T13	Medical-Assertion 947 949	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 951 963	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

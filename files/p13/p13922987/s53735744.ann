@@ -1,0 +1,24 @@
+T1	Medical-Problem 186 207	Chronic consolidation
+T2	Medical-Anatomy 215 231	right upper lobe
+T3	Medical-Problem 292 300	scarring
+T4	Medical-Anatomy 349 366	ipsilateral hilus
+T5	Medical-Anatomy 371 388	upper mediastinum
+T6	Medical-Problem 391 410;412 420	Small right pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Assertion 463 465	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 466 487	left pleural effusion
+T9	Medical-Assertion 524 546	no findings to suggest
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 547 556	pneumonia
+T11	Medical-Problem 567 586	recurrence of fever
+E9	Medical-Problem:T11
+T12	Medical-Problem 619 632	consolidation
+E10	Medical-Problem:T12
+T13	Medical-Anatomy 680 710	right upper abdominal quadrant
+T14	Medical-Problem 717 724;726 743	air and fluid collections
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T9 has-Medical-Anatomy:T13

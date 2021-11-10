@@ -1,0 +1,22 @@
+T1	Medical-Problem 304 337	moderately severe pulmonary edema
+T2	Medical-Assertion 338 366	has almost entirely resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Anatomy 373 410	pulmonary and mediastinal vasculature
+T4	Medical-Assertion 415 418	not
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 419 428	distended
+T6	Medical-Problem 431 449	Mild consolidation
+T7	Medical-Anatomy 458 477	base the right lung
+T8	Medical-Assertion 478 486	could be
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 487 501	residual edema
+T10	Medical-Problem 551 571	concurrent pneumonia
+T11	Medical-Problem 574 597	Small pleural effusions
+E8	Medical-Problem:T11
+T12	Medical-Problem 609 635	Heart is severely enlarged
+E9	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7

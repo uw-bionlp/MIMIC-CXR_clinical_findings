@@ -1,0 +1,28 @@
+T1	Medical-Assertion 285 287	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 288 300	pneumothorax
+T3	Medical-Problem 302 329	Small left pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 379 398	Rectangular opacity
+T5	Medical-Anatomy 406 442;444 467	left upper chest lateral to vascular clips at the left hilus
+T6	Medical-Assertion 468 476	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 477 488	atelectasis
+T8	Medical-Problem 490 516	intra pulmonary hemorrhage
+T9	Medical-Problem 522 546	pleural fluid loculation
+T10	Medical-Anatomy 548 586	particularly in the left major fissure
+T11	Medical-Problem 588 599;601 628	Mediastinal contours are mildly widened
+E9	Medical-Problem:T11
+T12	Medical-Assertion 671 689	most likely due to
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 690 720	increased intravascular volume
+T14	Medical-Problem 793 808	active bleeding
+E11	Medical-Problem:T14
+T15	Medical-Problem 817 845	upper esophagus is distended
+E12	Medical-Problem:T15
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

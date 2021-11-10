@@ -1,0 +1,21 @@
+T1	Medical-Assertion 185 196	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 200 209	pneumonia
+T3	Medical-Assertion 212 214	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 216 231	pulmonary edema
+T5	Medical-Assertion 233 235	no
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 236 252	pleural effusion
+T7	Lesion-Assertion 254 256	no
+A4	Lesion-AssertionValue T7 absent
+T8	Lesion-Anatomy 257 261	lung
+T9	Lesion-Description 262 269	nodules
+T10	Lesion-Description 273 279	masses
+T11	Medical-Problem 282 286;288 327	Mild bilateral symmetrical apical thickening
+E7	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8
+E6	Lesion-Description:T10 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8

@@ -1,0 +1,27 @@
+T1	Medical-Problem 130 134	left
+E1	Medical-Problem:T1
+T2	Medical-Problem 280 309	heart size is mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Assertion 410 412	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 414 426	pneumothorax
+T5	Medical-Problem 430 446	pleural effusion
+T6	Medical-Assertion 449 451	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 452 469	definite fracture
+T8	Medical-Anatomy 492 508	ribs bilaterally
+T9	Lesion-Characteristic 528 537	expansile
+T10	Lesion-Anatomy 538 559	right lateral 7th rib
+T11	Lesion-Description 560 566	lesion
+T12	Medical-Assertion 675 695	No definite evidence
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 701 713	rib fracture
+T14	Lesion-Characteristic 733 742	expansile
+T15	Lesion-Anatomy 743 748;750 765	right lateral 7th rib
+T16	Lesion-Description 766 772	lesion
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Lesion-Description:T16 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15

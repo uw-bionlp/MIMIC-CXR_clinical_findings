@@ -1,0 +1,41 @@
+T1	Medical-Assertion 33 44	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 48 61	acute process
+T3	Medical-Assertion 64 72	Possible
+A2	Medical-AssertionValue T3 possible
+T4	Lesion-Size-Trend 73 76	new
+A3	Lesion-Size-TrendValue T4 new
+T5	Lesion-Anatomy 77 81	lung
+T6	Lesion-Description 82 88	nodule
+T7	Lesion-Anatomy 105 110;112 121	right  mid lung
+T8	Medical-Assertion 568 570	no
+A4	Medical-AssertionValue T8 absent
+T9	Medical-Problem 571 587	pleural effusion
+T10	Medical-Problem 591 603	pneumothorax
+T11	Medical-Problem 606 619;621 630	Mild relative elevation
+T12	Medical-Anatomy 638 657	right hemidiaphragm
+T13	Medical-Problem 673 694;696 717	New streaky posterior basilar opacification
+E9	Medical-Problem:T13
+T14	Medical-Anatomy 740 769	posterior right hemidiaphragm
+T15	Medical-Assertion 774 787	suggestive of
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 788 805	minor atelectasis
+T17	Medical-Problem 848 851;853 876	new irregular nodular focus
+E12	Medical-Problem:T17
+T18	Medical-Assertion 878 886	possibly
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 889 910	confluence of shadows
+T20	Lesion-Characteristic 917 927	developing
+T21	Lesion-Description 939 945	nodule
+T22	Medical-Assertion 1038 1049	No evidence
+A7	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1053 1066	acute disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T6 has-Lesion-Size-Trend:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T7
+E5	Medical-Problem:T9 has-Medical-Assertion:T8
+E6	Medical-Problem:T10 has-Medical-Assertion:T8
+E7	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E13	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Lesion-Description:T21 has-Lesion-Characteristic:T20
+E16	Medical-Problem:T23 has-Medical-Assertion:T22

@@ -1,0 +1,48 @@
+T1	Medical-Problem 215 276	moderate bilateral pleural effusions, left greater than right
+E1	Medical-Problem:T1
+T2	Medical-Problem 280 290	Prominence
+T3	Medical-Problem 295 309	indistinctness
+T4	Medical-Anatomy 317 321	hila
+T5	Medical-Problem 341 349;351 366	moderate pulmonary edema
+T6	Medical-Problem 373 408	cardiac silhouette remains enlarged
+E6	Medical-Problem:T6
+T7	Medical-Problem 411 428	Increased opacity
+T8	Medical-Anatomy 440 458	right heart border
+T9	Medical-Assertion 459 474	could be due to
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 475 505;507 532	increase in cardiac silhouette size/pericardial effusion
+T11	Medical-Problem 543 561	loculated effusion
+T12	Medical-Assertion 562 578	without possible
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 580 596	partial collapse
+T14	Medical-Assertion 600 612	not excluded
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 624 634	prominence
+T16	Medical-Anatomy 642 650;652 663	superior mediastinum
+T17	Medical-Problem 683 720	Increased bilateral pleural effusions
+E14	Medical-Problem:T17
+T18	Medical-Problem 765 780	pulmonary edema
+T19	Medical-Assertion 784 788	most
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 805 808	CHF
+T21	Medical-Problem 811 828	Increased opacity
+T22	Medical-Anatomy 837 855	right heart border
+T23	Medical-Assertion 856 887	unclear whether could relate to
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 888 915;917 925	partially loculated pleural effusion
+T25	Medical-Problem 927 943	partial collapse
+T26	Medical-Problem 951 983	enlarged cardiac silhouette size
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Assertion:T14
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T14
+E11	Medical-Problem:T13 has-Medical-Anatomy:T8 has-Medical-Assertion:T12 has-Medical-Assertion:T14
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T19
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22
+E19	Medical-Problem:T24 has-Medical-Anatomy:T22 has-Medical-Assertion:T23
+E20	Medical-Problem:T25 has-Medical-Anatomy:T22 has-Medical-Assertion:T23
+E21	Medical-Problem:T26 has-Medical-Anatomy:T22 has-Medical-Assertion:T23

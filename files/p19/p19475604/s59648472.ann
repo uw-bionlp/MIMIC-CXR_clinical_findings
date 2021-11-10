@@ -1,0 +1,39 @@
+T1	Medical-Assertion 29 37	Probable
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 38 58	mild pulmonary edema
+T3	Medical-Assertion 60 62	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 63 82	focal consolidation
+T5	Medical-Problem 403 444	Minimally increased interstitial markings
+T6	Medical-Anatomy 452 462	lung bases
+T7	Medical-Assertion 463 479	likely represent
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 481 514	mild interstitial pulmonary edema
+T9	Medical-Assertion 526 528	no
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 529 548	focal consolidation
+T11	Medical-Problem 550 557;559 567	pleural effusion
+T12	Medical-Problem 572 584	pneumothorax
+T13	Medical-Anatomy 591 595	left
+E9	Medical-Anatomy:T13
+T14	Medical-Problem 662 676	Hyperinflation
+E10	Medical-Problem:T14
+T15	Medical-Problem 688 703	underlying COPD
+E11	Medical-Problem:T15
+T16	Medical-Problem 764 781	mild cardiomegaly
+E12	Medical-Problem:T16
+T17	Medical-Problem 831 846	pulmonary edema
+E13	Medical-Problem:T17
+T18	Medical-Assertion 849 851	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 852 857	focal
+E14	Medical-Problem:T19
+T20	Medical-Problem 858 871	consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T9
+E15	Medical-Problem:T20 has-Medical-Assertion:T18

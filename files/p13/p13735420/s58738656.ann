@@ -1,0 +1,18 @@
+T1	Medical-Assertion 234 245	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 249 258	pneumonia
+T3	Medical-Problem 261 280	Minimal atelectasis
+T4	Medical-Anatomy 288 298;300 304	right lung base
+T5	Medical-Assertion 307 309	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 310 327	pleural effusions
+T7	Lesion-Assertion 330 332	No
+A3	Lesion-AssertionValue T7 absent
+T8	Lesion-Anatomy 333 337	lung
+T9	Lesion-Description 338 345	nodules
+T10	Lesion-Description 349 355	masses
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8
+E7	Lesion-Description:T10 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8

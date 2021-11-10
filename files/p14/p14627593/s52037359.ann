@@ -1,0 +1,28 @@
+T1	Medical-Problem 513 541	Interstitial pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 578 586;588 605	somewhat nodular character
+T3	Medical-Problem 613 650	most severe consolidative abnormality
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 659 664;666 676	right lower lobe
+T5	Lesion-Description 688 695	nodules
+T6	Lesion-Anatomy 703 712	left lung
+T7	Medical-Assertion 733 740	suggest
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 742 778	extensive right lower lobe pneumonia
+T9	Medical-Assertion 783 791	possible
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 792 798	sepsis
+T11	Medical-Assertion 857 871	do not suggest
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 872 888;890 915	elevated central venous pressure or volume
+T13	Medical-Assertion 918 920	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 921 933	pneumothorax
+T15	Medical-Problem 936 960	Pleural effusion minimal
+E11	Medical-Problem:T15
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

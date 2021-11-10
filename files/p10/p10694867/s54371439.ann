@@ -1,0 +1,30 @@
+T1	Medical-Assertion 279 281	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 282 298	pleural effusion
+T3	Medical-Problem 302 314	pneumothorax
+T4	Medical-Problem 329 350	small nodular density
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 371 375	left
+T6	Medical-Assertion 388 396;398 404	probably due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 405 413	scarring
+T8	Medical-Problem 417 428	potentially
+T9	Medical-Problem 431 444	nipple shadow
+T10	Lesion-Characteristic 452 456	true
+T11	Lesion-Anatomy 457 466	pulmonary
+T12	Lesion-Description 467 473	nodule
+T13	Lesion-Assertion 478 490	not excluded
+A3	Lesion-AssertionValue T13 possible
+T14	Medical-Assertion 580 591	No evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 595 608	acute disease
+T16	Lesion-Description 611 624	Nodular focus
+T17	Lesion-Anatomy 646 661	left lower lung
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11 has-Lesion-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Lesion-Description:T16 has-Lesion-Anatomy:T17

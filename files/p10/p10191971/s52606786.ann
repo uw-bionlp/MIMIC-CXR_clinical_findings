@@ -1,0 +1,23 @@
+T1	Medical-Problem 411 424;426 433	very low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 439 473	resulting bronchovascular crowding
+E2	Medical-Problem:T2
+T3	Medical-Problem 486 496;498 543	persistent bilateral parenchymal peribronchial opacities
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 710 715	hilar
+T5	Lesion-Description 717 732	lymphadenopathy
+T6	Medical-Assertion 744 746	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 747 759	pneumothorax
+T8	Medical-Problem 761 777	pleural effusion
+T9	Medical-Problem 782 791;793 798	pulmonary edema
+T10	Medical-Problem 899 930	bilateral parenchymal opacities
+E9	Medical-Problem:T10
+T11	Medical-Assertion 933 935	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 936 951	pulmonary edema
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

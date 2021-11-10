@@ -1,0 +1,38 @@
+T1	Lesion-Anatomy 438 449	Right hilar
+T2	Lesion-Anatomy 454 465	mediastinal
+T3	Lesion-Description 466 481	lymphadenopathy
+T4	Medical-Problem 490 512;514 526	associated right upper lobe opacity
+E4	Medical-Problem:T4
+T5	Medical-Assertion 581 583	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 584 589;591 613	focal airspace consolidation
+T7	Medical-Problem 633 642	pneumonia
+T8	Medical-Problem 654 664;666 675	persistent elevation
+T9	Medical-Anatomy 683 702	right hemidiaphragm
+T10	Medical-Anatomy 720 729	left lung
+T11	Medical-Problem 770 780	underlying
+T12	Medical-Anatomy 793 798	Heart
+T13	Medical-Problem 808 831	somewhat prominent with
+E12	Medical-Problem:T13
+T14	Medical-Assertion 865 878	suggestive of
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 879 883;885 908	left ventricular hypertrophy
+T16	Medical-Assertion 911 922	No evidence
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 926 941	pulmonary edema
+T18	Medical-Problem 945 957	pneumothorax
+T19	Medical-Problem 961 991	Scattered degenerative changes
+T20	Medical-Anatomy 999 1013	thoracic spine
+T21	Medical-Assertion 1019 1021	no
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1022 1032;1034 1045	acute bony abnormality
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T1 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E13	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

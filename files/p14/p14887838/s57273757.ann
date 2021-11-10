@@ -1,0 +1,53 @@
+T1	Lesion-Size 269 274	10 mm
+T2	Lesion-Characteristic 275 284	calcified
+T3	Lesion-Description 285 300	nodular density
+T4	Lesion-Anatomy 308 312;314 324	left lower lobe
+T5	Lesion-Assertion 325 349	most likely representing
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 352 361	calcified
+T7	Lesion-Description 362 371	granuloma
+T8	Medical-Anatomy 378 383	lungs
+T9	Medical-Assertion 405 412	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 413 432	focal consolidation
+T11	Medical-Assertion 433 447	concerning for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 448 457	pneumonia
+T13	Medical-Problem 459 466;468 476	pleural effusion
+T14	Medical-Problem 480 492	pneumothorax
+T15	Medical-Anatomy 499 520	pulmonary vasculature
+T16	Medical-Assertion 524 527	not
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 528 536	engorged
+T18	Medical-Assertion 617 619	no
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 621 629	free air
+T20	Medical-Anatomy 642 661	right hemidiaphragm
+T21	Medical-Assertion 664 666	No
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 667 692	acute osseous abnormality
+T23	Medical-Assertion 727 729	No
+A7	Medical-AssertionValue T23 absent
+T24	Medical-Problem 730 749	focal consolidation
+T25	Medical-Assertion 750 764	concerning for
+A8	Medical-AssertionValue T25 possible
+T26	Medical-Problem 765 774	pneumonia
+T27	Lesion-Size-Trend 781 787	Stable
+A9	Lesion-Size-TrendValue T27 no-change
+T28	Lesion-Anatomy 788 803	left lower lobe
+T29	Lesion-Characteristic 804 813	calcified
+T30	Lesion-Description 814 820	nodule
+T31	Lesion-Description 839 848	granuloma
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T8 has-Medical-Assertion:T11
+E13	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Anatomy:T20
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T24 has-Medical-Assertion:T23
+E18	Medical-Problem:T26 has-Medical-Assertion:T25
+E21	Lesion-Description:T30 has-Lesion-Size-Trend:T27 has-Lesion-Anatomy:T28 has-Lesion-Characteristic:T29
+E22	Lesion-Description:T31 has-Lesion-Anatomy:T28

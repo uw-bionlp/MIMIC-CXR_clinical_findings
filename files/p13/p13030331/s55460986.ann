@@ -1,0 +1,38 @@
+T1	Medical-Assertion 230 237	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 238 254	pleural effusion
+T3	Medical-Problem 258 270	pneumothorax
+T4	Medical-Problem 282 286;288 300	mild cardiomegaly
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 306 325	mediastinal contour
+T6	Medical-Problem 341 351	tortuosity
+T7	Medical-Problem 356 366	dilatation
+T8	Medical-Anatomy 375 380	aorta
+T9	Medical-Anatomy 397 422	right paratracheal stripe
+E8	Medical-Anatomy:T9
+T10	Medical-Problem 454 503	Minimal right infrahilar peribronchial thickening
+E9	Medical-Problem:T10
+T11	Medical-Assertion 504 515	may reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 517 535	chronic aspiration
+T13	Medical-Problem 547 577	multilevel degenerative change
+T14	Medical-Anatomy 585 593;595 600	thoracic spine
+T15	Medical-Assertion 612 614	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 615 646	vertebral compression deformity
+T17	Medical-Assertion 668 670	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 671 694	acute chest abnormality
+T19	Medical-Problem 703 717	Tortuous aorta
+E15	Medical-Problem:T19
+T20	Medical-Problem 724 732	dilation
+T21	Medical-Anatomy 740 755	ascending aorta
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21

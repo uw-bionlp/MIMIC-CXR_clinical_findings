@@ -1,0 +1,20 @@
+T1	Medical-Problem 157 187	marked increase in the opacity
+T2	Medical-Anatomy 195 214;216 220	right mid and lower lung
+T3	Medical-Problem 246 257	volume loss
+E3	Medical-Problem:T3
+T4	Medical-Assertion 259 277	part may be due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 281 291	infiltrate
+T6	Medical-Problem 346 363	increased opacity
+T7	Medical-Anatomy 372 387	left lower lung
+T8	Medical-Problem 405 427	volume loss/infiltrate
+E7	Medical-Problem:T8
+T9	Lesion-Anatomy 434 443	pulmonary
+T10	Lesion-Description 445 452	nodules
+T11	Lesion-Anatomy 468 479	bilaterally
+T12	Medical-Anatomy 482 492	Left-sided
+E11	Medical-Anatomy:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T11

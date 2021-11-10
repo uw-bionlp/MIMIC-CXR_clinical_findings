@@ -1,0 +1,38 @@
+T1	Medical-Problem 208 228	lung volumes are low
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 230 235	Faint
+T3	Lesion-Anatomy 236 245	bilateral
+T4	Lesion-Description 246 253	nodules
+T5	Lesion-Anatomy 258 271	peribronchial
+T6	Medical-Problem 273 286	opacification
+E6	Medical-Problem:T6
+T7	Medical-Problem 368 397	Bibasilar atelectasis is mild
+E7	Medical-Problem:T7
+T8	Lesion-Description 410 420	adenopathy
+T9	Lesion-Anatomy 429 462	paratracheal mediastinal stations
+T10	Medical-Problem 469 474	heart
+T11	Medical-Assertion 478 481	not
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 556 564	crowding
+T13	Medical-Anatomy 572 581;583 594	pulmonary vasculature
+T14	Medical-Assertion 599 601	no
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 602 617	pulmonary edema
+T16	Medical-Assertion 629 631	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 632 654	large pleural effusion
+T18	Medical-Problem 659 671	pneumothorax
+T19	Medical-Problem 689 709	Multifocal pneumonia
+E16	Medical-Problem:T19
+T20	Lesion-Assertion 711 719	Possible
+A4	Lesion-AssertionValue T20 possible
+T21	Lesion-Anatomy 720 731	mediastinal
+T22	Lesion-Description 732 742	adenopathy
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T5
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E18	Lesion-Description:T22 has-Lesion-Assertion:T20 has-Lesion-Anatomy:T21

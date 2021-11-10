@@ -1,0 +1,36 @@
+T1	Medical-Problem 465 487	Heart size is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 544 555	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 559 574	pulmonary edema
+T4	Medical-Anatomy 577 582	Lungs
+T5	Medical-Problem 591 599;601 614	slightly hyperinflated
+T6	Medical-Problem 626 658	underlying emphysematous changes
+T7	Lesion-Description 663 669	nodule
+T8	Lesion-Anatomy 678 699	right upper lung zone
+T9	Lesion-Size-Trend 703 712	unchanged
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Lesion-Assertion 724 744	most compatible with
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 745 754	granuloma
+T12	Medical-Assertion 766 768	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 769 785	pleural effusion
+T14	Medical-Problem 789 801	pneumothorax
+T15	Medical-Assertion 822 824	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 825 856	acute intrathoracic abnormality
+T17	Medical-Problem 859 871	Cardiomegaly
+E12	Medical-Problem:T17
+T18	Medical-Assertion 872 879	without
+A6	Medical-AssertionValue T18 absent
+T19	Medical-Problem 880 895	pulmonary edema
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E8	Lesion-Description:T11 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T19 has-Medical-Assertion:T18

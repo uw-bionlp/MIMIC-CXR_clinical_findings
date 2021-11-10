@@ -1,0 +1,33 @@
+T1	Medical-Problem 178 195	Increased opacity
+T2	Medical-Anatomy 203 233	right lung base on the frontal
+T3	Medical-Problem 328 336	blunting
+T4	Medical-Anatomy 344 373	posterior costophrenic angles
+T5	Medical-Problem 378 390	silhouetting
+T6	Medical-Anatomy 398 402;404 417	left hemidiaphragm
+T7	Medical-Assertion 418 428	suggesting
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 429 460	effusions with adjacent opacity
+T9	Medical-Assertion 461 467	likely
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 468 480;482 504	component of associated atelectasis
+T11	Medical-Assertion 613 615	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 616 629;631 644	acute osseous abnormalities
+T13	Medical-Assertion 665 673	Probable
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 674 723	bilateral pleural effusions with adjacent opacity
+T15	Medical-Assertion 724 735	potentially
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 737 748	atelectasis
+T17	Medical-Problem 761 770	infection
+T18	Medical-Assertion 774 786	not excluded
+A6	Medical-AssertionValue T18 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T13 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T13 has-Medical-Assertion:T15 has-Medical-Assertion:T18

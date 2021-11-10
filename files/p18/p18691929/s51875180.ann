@@ -1,0 +1,37 @@
+T1	Lesion-Description 311 328	nodular opacities
+T2	Lesion-Anatomy 337 347	right lung
+T3	Medical-Problem 438 453	suture material
+T4	Medical-Anatomy 474 478;480 489	left lung base
+T5	Medical-Problem 494 521	mild left basal atelectasis
+E5	Medical-Problem:T5
+T6	Medical-Assertion 533 555	no convincing evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 561 570	pneumonia
+T8	Medical-Problem 574 579	edema
+T9	Medical-Assertion 582 584	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 585 599	large effusion
+T11	Medical-Problem 603 615	pneumothorax
+T12	Medical-Problem 691 720	atherosclerotic calcification
+T13	Medical-Anatomy 728 739	aortic knob
+T14	Medical-Assertion 783 785	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 786 794	free air
+T16	Medical-Anatomy 805 824	right hemidiaphragm
+T17	Medical-Problem 876 885	opacities
+T18	Medical-Anatomy 893 903	right lung
+T19	Lesion-Assertion 904 914	concerning
+A4	Lesion-AssertionValue T19 possible
+T20	Medical-Problem 941 945	Mild
+E16	Medical-Problem:T20
+T21	Medical-Problem 946 968	left basal atelectasis
+E17	Medical-Problem:T21
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18

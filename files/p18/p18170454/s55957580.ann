@@ -1,0 +1,65 @@
+T1	Lesion-Characteristic 411 418	Diffuse
+T2	Lesion-Characteristic 419 430	ill-defined
+T3	Lesion-Description 431 438	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 439 448	opacities
+T5	Medical-Problem 574 601	Bibasilar streaky opacities
+E5	Medical-Problem:T5
+T6	Medical-Assertion 602 615	could reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 617 628	atelectasis
+T8	Medical-Problem 633 642	infection
+T9	Medical-Problem 646 656	aspiration
+T10	Medical-Assertion 660 672	not excluded
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 684 686	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 688 703	pulmonary edema
+T13	Medical-Problem 706 714	Blunting
+T14	Medical-Anatomy 722 753	costophrenic angles bilaterally
+T15	Medical-Assertion 754 766	may indicate
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 768 799	pleural trace pleural effusions
+T17	Medical-Assertion 811 813	no
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 814 826	pneumothorax
+T19	Medical-Assertion 829 831	No
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 832 845;847 860	acute osseous abnormalities
+T21	Lesion-Characteristic 893 900	Diffuse
+T22	Lesion-Characteristic 901 912	ill-defined
+T23	Lesion-Description 913 920	nodular
+E17	Lesion-Description:T23
+T24	Lesion-Description 921 930	opacities
+T25	Lesion-Size-Trend 932 940	slightly
+A7	Lesion-Size-TrendValue T25 no-change
+T26	Medical-Assertion 998 1025	Differential considerations
+A8	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1034 1044;1046 1064	Langerhans cell histiocytosis
+T28	Medical-Problem 1093 1119;1121 1130	infection including fungal organisms
+T29	Medical-Problem 1135 1161	other inflammatory process
+T30	Medical-Problem 1342 1370	Bibasilar airspace opacities
+E22	Medical-Problem:T30
+T31	Medical-Assertion 1419 1432	could reflect
+A9	Medical-AssertionValue T31 possible
+T32	Medical-Problem 1433 1444	atelectasis
+T33	Medical-Problem 1450 1459	infection
+T34	Medical-Problem 1463 1473	aspiration
+T35	Medical-Assertion 1474 1492	cannot be excluded
+A10	Medical-AssertionValue T35 possible
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T1 has-Lesion-Characteristic:T2
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6 has-Medical-Assertion:T10
+E8	Medical-Problem:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Lesion-Description:T24 has-Lesion-Characteristic:T21 has-Lesion-Characteristic:T22 has-Lesion-Size-Trend:T25
+E19	Medical-Problem:T27 has-Medical-Assertion:T26
+E20	Medical-Problem:T28 has-Medical-Assertion:T26
+E21	Medical-Problem:T29 has-Medical-Assertion:T26
+E23	Medical-Problem:T32 has-Medical-Assertion:T31
+E24	Medical-Problem:T33 has-Medical-Assertion:T35
+E25	Medical-Problem:T34 has-Medical-Assertion:T35

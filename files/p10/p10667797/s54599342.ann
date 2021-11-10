@@ -1,0 +1,22 @@
+T1	Medical-Assertion 264 271	perhaps
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 272 293	increased conspicuity
+T3	Lesion-Anatomy 297 306	bilateral
+T4	Lesion-Characteristic 307 324	nodular appearing
+T5	Lesion-Description 325 334	opacities
+T6	Lesion-Count 786 794	multiple
+T7	Lesion-Description 795 808	nodular areas
+T8	Medical-Problem 831 851	small lung abscesses
+T9	Medical-Anatomy 860 870	both lungs
+T10	Medical-Problem 873 883	Small left
+E9	Medical-Problem:T10
+T11	Medical-Problem 884 891;893 901	pleural effusion
+E10	Medical-Problem:T11
+T12	Medical-Assertion 950 952	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 953 965	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4
+E6	Lesion-Description:T7 has-Lesion-Count:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

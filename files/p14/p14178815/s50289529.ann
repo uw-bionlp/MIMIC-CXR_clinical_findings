@@ -1,0 +1,42 @@
+T1	Medical-Problem 267 296	heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 299 307	Widening
+T3	Medical-Anatomy 316 336	superior mediastinum
+T4	Medical-Problem 396 411	mediastinal fat
+T5	Medical-Problem 438 453;455 481	Crowding of the bronchovascular structures
+E5	Medical-Problem:T5
+T6	Medical-Problem 496 530	mild pulmonary vascular congestion
+E6	Medical-Problem:T6
+T7	Medical-Problem 563 590	small left pleural effusion
+E7	Medical-Problem:T7
+T8	Medical-Problem 593 613	Retrocardiac opacity
+E8	Medical-Problem:T8
+T9	Medical-Assertion 629 642	could reflect
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 643 654	atelectasis
+T11	Medical-Problem 662 672	aspiration
+T12	Medical-Problem 676 685	infection
+T13	Medical-Assertion 686 692;694 705	cannot be excluded
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 708 739	Multilevel degenerative changes
+T15	Medical-Anatomy 760 768;770 775	thoracic spine
+T16	Medical-Problem 814 848	Mild pulmonary vascular congestion
+E14	Medical-Problem:T16
+T17	Medical-Problem 851 869;871 879	Small left pleural effusion
+E15	Medical-Problem:T17
+T18	Medical-Problem 885 916	persistent left basilar opacity
+E16	Medical-Problem:T18
+T19	Medical-Problem 938 949	atelectasis
+E17	Medical-Problem:T19
+T20	Medical-Problem 958 967	infection
+T21	Medical-Problem 971 981	aspiration
+T22	Medical-Assertion 985 997	not excluded
+A3	Medical-AssertionValue T22 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T13
+E11	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E18	Medical-Problem:T20 has-Medical-Assertion:T22
+E19	Medical-Problem:T21 has-Medical-Assertion:T22

@@ -1,0 +1,31 @@
+T1	Medical-Problem 359 367;369 384	moderate cardiomegaly is
+E1	Medical-Problem:T1
+T2	Medical-Problem 396 413	Increased density
+T3	Medical-Anatomy 421 436	left lower lung
+T4	Medical-Assertion 437 445;447 457	could be related to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 458 471	lung collapse
+T6	Medical-Assertion 475 490	could represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 493 506	consolidation
+T8	Medical-Problem 519 539	vascular engorgement
+E6	Medical-Problem:T8
+T9	Medical-Assertion 552 554	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 555 572	pleural effusions
+T11	Medical-Problem 576 588	pneumothorax
+T12	Medical-Problem 612 643	Worsening moderate cardiomegaly
+E9	Medical-Problem:T12
+T13	Medical-Problem 652 685	Increased left lower lung density
+E10	Medical-Problem:T13
+T14	Medical-Assertion 687 708	which could represent
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 709 722	lung collapse
+T16	Medical-Problem 781 790	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14

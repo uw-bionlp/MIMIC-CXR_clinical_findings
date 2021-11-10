@@ -1,0 +1,38 @@
+T1	Medical-Assertion 451 453	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 454 466	pneumothorax
+T3	Medical-Problem 531 547	Patchy increased
+E2	Medical-Problem:T3
+T4	Medical-Problem 548 560;562 569	retrocardiac opacity
+E3	Medical-Problem:T4
+T5	Medical-Problem 621 629	blunting
+T6	Medical-Anatomy 634 638;640 658	left costophrenic angle
+T7	Medical-Assertion 665 678	could reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 693 712	small left effusion
+T9	Medical-Problem 726 738	hazy opacity
+T10	Medical-Anatomy 746 761	right lung base
+T11	Medical-Assertion 763 787	most likely representing
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 789 800	atelectasis
+T13	Medical-Anatomy 807 812	right
+T14	Medical-Problem 888 910	small pleural effusion
+T15	Medical-Assertion 915 920	Doubt
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 921 924	CHF
+T17	Medical-Problem 1043 1057	Patchy opacity
+T18	Medical-Anatomy 1061 1080	retrocardiac region
+T19	Medical-Problem 1097 1121	left lower lobe collapse
+T20	Medical-Problem 1130 1143	consolidation
+T21	Medical-Problem 1181 1194	left effusion
+E17	Medical-Problem:T21
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T19 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T18

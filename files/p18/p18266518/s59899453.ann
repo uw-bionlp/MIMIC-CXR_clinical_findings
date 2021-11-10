@@ -1,0 +1,30 @@
+T1	Medical-Problem 292 312;314 327	Interval increase in opacification
+T2	Medical-Anatomy 335 364	right mid to lower lung field
+T3	Medical-Assertion 365 375	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 376 384;386 394	layering effusion
+T5	Medical-Assertion 399 407	probable
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 408 432	underlying consolidation
+T7	Medical-Problem 438 457;459 467	heart is moderately enlarged
+E5	Medical-Problem:T7
+T8	Medical-Problem 469 498	Mitral annular calcifications
+E6	Medical-Problem:T8
+T9	Medical-Assertion 550 552	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 553 577	free air below the right
+T11	Medical-Problem 684 718	Interval increase in opacification
+T12	Medical-Anatomy 726 755	right mid to lower lung field
+T13	Medical-Assertion 757 767	suggesting
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 768 785	layering effusion
+T15	Medical-Assertion 790 798	probable
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 799 823	underlying consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Anatomy:T12 has-Medical-Assertion:T13 has-Medical-Assertion:T15

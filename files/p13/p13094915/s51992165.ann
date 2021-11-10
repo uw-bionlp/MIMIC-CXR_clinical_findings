@@ -1,0 +1,35 @@
+T1	Medical-Assertion 33 41	Possible
+A1	Medical-AssertionValue T1 possible
+T2	Lesion-Size 42 47	15 mm
+T3	Lesion-Description 48 55	nodular
+E2	Lesion-Description:T3
+T4	Lesion-Description 56 63	density
+T5	Lesion-Anatomy 71 92	right upper lung zone
+T6	Medical-Problem 111 155	overlapping shadows at the edge of the first
+T7	Medical-Assertion 306 317	No evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 321 330	pneumonia
+T9	Medical-Problem 332 336;338 349	Mild  prominence
+T10	Medical-Anatomy 357 368	vasculature
+T11	Medical-Assertion 369 376	without
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 377 398	overt pulmonary edema
+T13	Medical-Problem 881 901	mm wide oval opacity
+T14	Medical-Anatomy 922 938	right upper lung
+T15	Medical-Assertion 939 947	could be
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 953 963	osteophyte
+T17	Medical-Anatomy 971 998	first costosternal junction
+T18	Lesion-Anatomy 1012 1016	lung
+T19	Lesion-Description 1017 1023	lesion
+T20	Lesion-Characteristic 1031 1040	calcified
+T21	Medical-Problem 1137 1156	pleural abnormality
+E17	Medical-Problem:T21
+E3	Lesion-Description:T4 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Assertion:T1
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15 has-Medical-Anatomy:T17
+E15	Lesion-Description:T19 has-Lesion-Anatomy:T18 has-Lesion-Characteristic:T20

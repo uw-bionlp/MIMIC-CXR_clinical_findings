@@ -1,0 +1,42 @@
+T1	Medical-Problem 193 210	New opacification
+T2	Medical-Anatomy 218 234	right lower lobe
+T3	Medical-Problem 240 265;267 281	silhouetting of the right  hemidiaphgram
+T4	Medical-Problem 287 321	acute presentation of this finding
+E4	Medical-Problem:T4
+T5	Medical-Assertion 325 338	suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 341 361	collapse/atelectasis
+T7	Medical-Anatomy 369 385	right lower lobe
+T8	Medical-Problem 392 415	Left hilar irregularity
+E7	Medical-Problem:T8
+T9	Medical-Problem 420 443	left lower lobe opacity
+E8	Medical-Problem:T9
+T10	Medical-Problem 1390 1406	Low lung volumes
+T11	Medical-Problem 1412 1436	increasing opacification
+T12	Medical-Anatomy 1444 1454	right base
+T13	Medical-Assertion 1459 1473	concerning for
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1474 1499	right lower lobe collapse
+T15	Medical-Problem 1507 1530	worsening consolidation
+T16	Medical-Problem 1557 1573	air bronchograms
+T17	Medical-Anatomy 1589 1598	left base
+T18	Medical-Assertion 1605 1610;1612 1619	could reflect
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1623 1642	evolving aspiration
+T20	Medical-Problem 1646 1655	pneumonia
+T21	Medical-Problem 1660 1686	left hilar rounded opacity
+E18	Medical-Problem:T21
+T22	Medical-Assertion 1718 1729	No evidence
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1733 1748	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T12
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E19	Medical-Problem:T23 has-Medical-Assertion:T22

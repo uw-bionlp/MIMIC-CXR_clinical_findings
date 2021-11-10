@@ -1,0 +1,28 @@
+T1	Medical-Problem 200 207	density
+T2	Medical-Anatomy 229 240	right hilus
+T3	Medical-Problem 252 272	moderate atelectasis
+T4	Medical-Anatomy 276 285;287 292	both lung bases
+T5	Medical-Assertion 304 306	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 307 319	pneumothorax
+T7	Medical-Assertion 328 334	may be
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 337 364	small left pleural effusion
+T9	Medical-Problem 371 381	descending
+E7	Medical-Problem:T9
+T10	Medical-Assertion 412 414	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 415 440;442 462	other abnormal cardiac or mediastinal contours
+T12	Medical-Problem 484 491	Density
+T13	Medical-Anatomy 512 523	right hilus
+T14	Lesion-Anatomy 540 551	right hilar
+T15	Lesion-Description 552 562	adenopathy
+T16	Medical-Problem 568 588	bronchial thickening
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T13

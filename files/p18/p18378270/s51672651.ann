@@ -1,0 +1,36 @@
+T1	Medical-Problem 348 370	patchy streaky opacity
+T2	Medical-Anatomy 391 406;408 413	lower posterior lungs
+T3	Medical-Problem 464 475	atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Problem 480 488	scarring
+E4	Medical-Problem:T4
+T5	Medical-Assertion 530 551	could also be related
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 564 584	adjacent osteophytes
+T7	Medical-Assertion 587 589	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 590 618	definite focal consolidation
+T9	Medical-Assertion 621 623	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 624 631;633 641	pleural effusion
+T11	Medical-Problem 645 657	pneumothorax
+T12	Medical-Assertion 722 724	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 725 746	overt pulmonary edema
+T14	Medical-Problem 774 789	Streaky opacity
+T15	Medical-Anatomy 810 834	lower lung fields on the
+T16	Medical-Assertion 930 943	may relate to
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 944 964	atelectasis/scarring
+T18	Medical-Assertion 969 977	possibly
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 978 986;988 999	adjacent osteophytes
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E13	Medical-Problem:T19 has-Medical-Anatomy:T15 has-Medical-Assertion:T16 has-Medical-Assertion:T18

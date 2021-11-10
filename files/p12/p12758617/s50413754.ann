@@ -1,0 +1,32 @@
+T1	Lesion-Characteristic 153 165	infiltrating
+T2	Lesion-Description 166 172	lesion
+T3	Lesion-Anatomy 180 185	lungs
+T4	Lesion-Size 414 418	7 mm
+T5	Lesion-Characteristic 419 429	radiopaque
+T6	Lesion-Description 430 436	nodule
+T7	Lesion-Anatomy 445 456	lower lobes
+T8	Lesion-Assertion 466 472	likely
+A1	Lesion-AssertionValue T8 possible
+T9	Lesion-Size 475 480	small
+T10	Lesion-Description 481 490	granuloma
+T11	Medical-Assertion 502 504	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 505 512;514 522	pleural effusion
+T13	Medical-Assertion 534 536	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 537 549	pneumothorax
+T15	Medical-Assertion 618 620	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 630 643	consolidation
+T17	Medical-Problem 647 669;671 680	occult cardiopulmonary processes
+T18	Lesion-Size 685 690	small
+T19	Lesion-Description 691 700	granuloma
+T20	Lesion-Anatomy 708 719	lower lobes
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T7 has-Lesion-Assertion:T8 has-Lesion-Size-Present:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Lesion-Description:T19 has-Lesion-Size-Present:T18 has-Lesion-Anatomy:T20

@@ -1,0 +1,32 @@
+T1	Medical-Problem 347 352;354 390	right paramediastinal /right hilar opacity
+T2	Medical-Assertion 391 403	has resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 420 440	postsurgical changes
+T4	Medical-Assertion 462 481	interval resolution
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 489 493;495 511	left pleural effusion
+T6	Medical-Anatomy 531 546	Bilateral lungs
+T7	Medical-Problem 551 569;571 581	hyperinflated with flattening
+T8	Medical-Problem 651 659	scarring
+T9	Medical-Anatomy 667 677	right apex
+T10	Medical-Problem 712 719;721 729	pleural effusion
+T11	Medical-Problem 733 745	pneumothorax
+T12	Medical-Problem 883 903	postsurgical changes
+E10	Medical-Problem:T12
+T13	Medical-Assertion 909 919	resolution
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 923 959	right paramediastinal/ hilar opacity
+T15	Medical-Assertion 962 964	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 965 986;988 995	acute cardiopulmonary process
+T17	Medical-Problem 1000 1037	Severe emphysema with apical scarring
+E13	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T6 has-Medical-Anatomy:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

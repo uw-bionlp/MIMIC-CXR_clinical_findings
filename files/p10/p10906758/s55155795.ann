@@ -1,0 +1,22 @@
+T1	Medical-Problem 312 327	streaky opacity
+T2	Medical-Anatomy 335 350	left lower lobe
+T3	Medical-Assertion 351 362;364 374	most likely reflective
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 378 389	atelectasis
+T5	Medical-Anatomy 395 400	lungs
+T6	Medical-Assertion 411 418	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 419 438	focal consolidation
+T8	Medical-Problem 441 457	pleural effusion
+T9	Medical-Problem 461 473	pneumothorax
+T10	Medical-Assertion 476 478	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 479 504	acute osseous abnormality
+T12	Medical-Problem 547 574	left lower lobe atelectasis
+E9	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T2 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

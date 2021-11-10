@@ -1,0 +1,28 @@
+T1	Medical-Assertion 161 166	Query
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 167 187	subtle focal opacity
+T3	Medical-Anatomy 208 238;240 248	right upper lobe medial to the EKG lead
+T4	Medical-Problem 304 314;316 334	underlying focus of infection
+T5	Medical-Assertion 338 350	not excluded
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 364 366	no
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 367 386	focal consolidation
+T8	Medical-Problem 407 433	mild left base atelectasis
+E5	Medical-Problem:T8
+T9	Medical-Assertion 516 518	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 519 535	pleural effusion
+T11	Medical-Problem 540 552	pneumothorax
+T12	Medical-Problem 572 592	Subtle focal opacity
+T13	Medical-Anatomy 613 650;652 674	right upper lung, projecting over the right anterior 2nd rib
+T14	Medical-Problem 720 728;730 739	focus of infection
+T15	Medical-Assertion 740 752	not excluded
+A5	Medical-AssertionValue T15 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Anatomy:T13
+E10	Medical-Problem:T14 has-Medical-Anatomy:T13 has-Medical-Assertion:T15

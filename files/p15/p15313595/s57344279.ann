@@ -1,0 +1,44 @@
+T1	Medical-Problem 186 220	heart size remains mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 227 232	aorta
+E2	Medical-Problem:T2
+T3	Medical-Problem 236 244	tortuous
+T4	Medical-Problem 249 258	calcified
+T5	Medical-Anatomy 267 278	aortic knob
+T6	Medical-Anatomy 296 317	pulmonary vascularity
+T7	Medical-Assertion 321 324	not
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 325 333	engorged
+T9	Medical-Problem 348 364	mild atelectasis
+T10	Medical-Anatomy 372 382	lung bases
+T11	Medical-Assertion 384 386	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 387 406	focal consolidation
+T13	Medical-Problem 408 415;417 425	pleural effusion
+T14	Medical-Problem 429 441	pneumothorax
+T15	Lesion-Characteristic 452 461	Calcified
+T16	Lesion-Description 462 468	nodule
+T17	Lesion-Anatomy 480 493;495 500	left mid lung field
+T18	Lesion-Size 511 515	9 mm
+T19	Lesion-Size-Trend 519 525	stable
+A3	Lesion-Size-TrendValue T19 no-change
+T20	Medical-Problem 547 571	calcified pleural plaque
+E17	Medical-Problem:T20
+T21	Medical-Assertion 596 598	No
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 599 626	acute osseous abnormalities
+T23	Medical-Assertion 634 636	No
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 638 650	pneumothorax
+T25	Medical-Problem 681 707	Mild bibasilar atelectasis
+E20	Medical-Problem:T25
+E3	Medical-Problem:T3 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T11
+E14	Lesion-Description:T16 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T17 has-Lesion-Size-Present:T18 has-Lesion-Size-Trend:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T24 has-Medical-Assertion:T23

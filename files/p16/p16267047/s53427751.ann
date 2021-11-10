@@ -1,0 +1,36 @@
+T1	Medical-Problem 241 273	asymmetric right basilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 347 360	may be due to
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 361 372	atelectasis
+T4	Medical-Problem 384 393	infection
+T5	Medical-Assertion 398 421	not completely excluded
+A2	Medical-AssertionValue T5 possible
+T6	Lesion-Anatomy 428 441	right midlung
+T7	Lesion-Description 442 457	nodular opacity
+T8	Lesion-Assertion 561 574	may represent
+A3	Lesion-AssertionValue T8 possible
+T9	Lesion-Characteristic 577 586	calcified
+T10	Lesion-Description 587 596	granuloma
+T11	Medical-Assertion 643 645	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 646 654	effusion
+T13	Medical-Assertion 717 719	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 720 745	acute osseous abnormality
+T15	Medical-Problem 779 806	Faint right basilar opacity
+E10	Medical-Problem:T15
+T16	Medical-Assertion 807 825	potentially due to
+A6	Medical-AssertionValue T16 possible
+T17	Medical-Problem 826 837	atelectasis
+T18	Medical-Problem 878 887	infection
+T19	Medical-Assertion 891 903	not excluded
+A7	Medical-AssertionValue T19 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T17 has-Medical-Assertion:T16
+E12	Medical-Problem:T18 has-Medical-Assertion:T19

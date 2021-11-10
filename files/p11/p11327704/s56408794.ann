@@ -1,0 +1,29 @@
+T1	Medical-Problem 246 250;252 273	Thin curvilinear opacities
+T2	Medical-Anatomy 288 325	either side of the cardiac silhouette
+T3	Medical-Problem 347 364	pneumomediastinum
+E3	Medical-Problem:T3
+T4	Medical-Problem 388 391	air
+T5	Medical-Anatomy 411 447	anterior aspect of the upper abdomen
+T6	Medical-Anatomy 522 527	lungs
+T7	Medical-Assertion 538 545	without
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 546 562;564 575	focal or diffuse abnormality
+T9	Medical-Assertion 578 580	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 581 590	emphysema
+T11	Medical-Assertion 602 604	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 605 621	pleural effusion
+T13	Medical-Problem 625 637	pneumothorax
+T14	Medical-Assertion 640 642	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 644 669	radiopaque foreign bodies
+T16	Medical-Problem 725 742	Pneumomediastinum
+E12	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

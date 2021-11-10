@@ -1,0 +1,20 @@
+T1	Medical-Problem 33 44	Atelectasis
+T2	Medical-Anatomy 48 57	left base
+T3	Medical-Problem 71 80	splinting
+E3	Medical-Problem:T3
+T4	Medical-Problem 451 465;467 494	newly occurred area of atelectatic changes
+T5	Medical-Anatomy 502 516	left lung base
+T6	Medical-Anatomy 528 545;547 552	retrocardiac lung areas
+T7	Medical-Problem 555 571	Minimal blunting
+T8	Medical-Anatomy 579 602	left costophrenic sinus
+T9	Medical-Assertion 624 642	potentially caused
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 648 677	minimal left pleural effusion
+T11	Medical-Assertion 901 903	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 904 916	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,25 @@
+T1	Medical-Assertion 34 36	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 37 51	acute findings
+T3	Lesion-Characteristic 439 457	well-circumscribed
+T4	Lesion-Description 458 465	nodular
+E3	Lesion-Description:T4
+T5	Lesion-Description 466 473	opacity
+T6	Lesion-Anatomy 488 517	sixth left anterior rib level
+T7	Lesion-Size 619 624	small
+T8	Lesion-Description 626 641	nodular opacity
+T9	Lesion-Anatomy 666 692	retrosternal region on the
+T10	Lesion-Assertion 708 731	raising the concern for
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Anatomy 743 756	lingular lung
+T12	Lesion-Description 757 763	nodule
+T13	Medical-Assertion 808 810	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 811 828	pleural effusions
+T15	Medical-Problem 831 852	Postoperative changes
+E12	Medical-Problem:T15
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T8 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9
+E10	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Anatomy:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

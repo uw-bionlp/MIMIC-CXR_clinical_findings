@@ -1,0 +1,35 @@
+T1	Lesion-Size 222 228	1.0 cm
+T2	Lesion-Characteristic 229 234	round
+T3	Lesion-Description 235 242	opacity
+T4	Lesion-Anatomy 250 265	left upper lobe
+T5	Lesion-Size 274 280	1.0 cm
+T6	Lesion-Characteristic 281 286	round
+T7	Lesion-Description 288 295	opacity
+T8	Lesion-Anatomy 303 325	right lower lung field
+T9	Medical-Assertion 337 339	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 340 359	focal consolidation
+T11	Medical-Problem 362 378	pleural effusion
+T12	Medical-Problem 382 394	pneumothorax
+T13	Medical-Problem 460 468	scarring
+T14	Medical-Anatomy 476 491	right lung base
+T15	Medical-Problem 493 510	Mild cardiomegaly
+E14	Medical-Problem:T15
+T16	Medical-Assertion 590 592	No
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 593 622	acute cardiopulmonary process
+T18	Medical-Problem 625 642	Mild cardiomegaly
+E16	Medical-Problem:T18
+T19	Lesion-Count 651 654	Two
+T20	Lesion-Assertion 655 663	possible
+A3	Lesion-AssertionValue T20 possible
+T21	Lesion-Anatomy 664 673	pulmonary
+T22	Lesion-Description 674 681	nodules
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T9
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E19	Lesion-Description:T22 has-Lesion-Count:T19 has-Lesion-Assertion:T20 has-Lesion-Anatomy:T21

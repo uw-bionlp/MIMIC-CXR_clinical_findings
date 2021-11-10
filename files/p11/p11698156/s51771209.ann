@@ -1,0 +1,23 @@
+T1	Medical-Problem 327 359	worsening airspace consolidation
+T2	Medical-Anatomy 364 386	left mid to lower lung
+T3	Medical-Assertion 394 417	would be concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 418 427	pneumonia
+T5	Medical-Problem 438 464	slightly improved aeration
+T6	Medical-Anatomy 473 483	right base
+T7	Medical-Problem 503 508	still
+E6	Medical-Problem:T7
+T8	Medical-Problem 509 532	residual patchy opacity
+E7	Medical-Problem:T8
+T9	Medical-Problem 583 599	subtle opacities
+T10	Medical-Anatomy 619 629;631 636	both upper lobes
+T11	Medical-Assertion 637 666	which would be concerning for
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 667 676	pneumonia
+T13	Medical-Problem 680 690	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

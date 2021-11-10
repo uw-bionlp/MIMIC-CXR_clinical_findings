@@ -1,0 +1,22 @@
+T1	Medical-Assertion 204 214	no evident
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 230 258	Right lower lobe atelectasis
+E1	Medical-Problem:T2
+T3	Medical-Assertion 330 332	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 333 340;342 350	pleural effusion
+T5	Medical-Problem 353 376	Minimal faint opacities
+T6	Medical-Anatomy 384 400	right upper lobe
+T7	Medical-Assertion 405 420;422 424	most likely due to
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 425 435	hemorrhage
+T9	Lesion-Count 488 491	two
+T10	Lesion-Anatomy 492 497;499 509	right upper lobe
+T11	Lesion-Anatomy 518 534	right lower lobe
+T12	Lesion-Description 551 558	lesions
+T13	Medical-Problem 563 572	emphysema
+E10	Medical-Problem:T13
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Lesion-Description:T12 has-Lesion-Count:T9 has-Lesion-Anatomy:T10 has-Lesion-Anatomy:T11

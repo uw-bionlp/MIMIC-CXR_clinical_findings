@@ -1,0 +1,34 @@
+T1	Medical-Problem 228 246	Mild calcification
+T2	Medical-Anatomy 254 265	aortic knob
+T3	Medical-Problem 277 282;284 305	Small area of consolidation
+T4	Medical-Anatomy 321 359;361 365	retrocardiac portion of the left lower lobe
+T5	Medical-Problem 367 397	Mild bronchial wall thickening
+E5	Medical-Problem:T5
+T6	Lesion-Characteristic 402 411	scattered
+T7	Lesion-Anatomy 412 428	right lower lobe
+T8	Lesion-Description 429 436;438 447	nodular opacities
+T9	Medical-Assertion 477 493	likely represent
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 494 504	aspiration
+T11	Medical-Problem 509 529	developing infection
+T12	Medical-Problem 540 562	dextroconvex scoliosis
+T13	Medical-Anatomy 570 583;585 590	thoracolumbar spine
+T14	Medical-Problem 592 611	Extensive emphysema
+T15	Medical-Anatomy 623 633	both lungs
+T16	Medical-Assertion 644 646	no
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 647 662	pulmonary edema
+T18	Medical-Problem 684 705	Bibasal lung findings
+E16	Medical-Problem:T18
+T19	Medical-Assertion 707 725	most likely due to
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 726 736	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Medical-Problem:T20 has-Medical-Assertion:T19

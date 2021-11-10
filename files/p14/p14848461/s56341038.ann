@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 341 363	left mid to upper lung
+E1	Medical-Anatomy:T1
+T2	Lesion-Characteristic 370 380	persistent
+T3	Lesion-Description 381 387	masses
+T4	Lesion-Anatomy 395 404	left lung
+T5	Medical-Assertion 434 446;448 455	Difficult to exclude
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 458 480	superimposed pneumonia
+T7	Lesion-Anatomy 515 526;528 532	right upper lung
+T8	Lesion-Characteristic 538 557	partially calcified
+T9	Lesion-Characteristic 558 565	nodular
+T10	Lesion-Description 566 572	lesion
+T11	Medical-Assertion 575 577	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 578 600	right pleural effusion
+T13	Medical-Assertion 603 605;607 617	No convincing
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 627 632	edema
+T15	Medical-Assertion 667 669	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 670 680;682 688	acute bony injury
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

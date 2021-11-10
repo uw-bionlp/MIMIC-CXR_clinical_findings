@@ -1,0 +1,27 @@
+T1	Medical-Problem 253 268	Stable scarring
+T2	Medical-Anatomy 277 300	right mid to lower lung
+T3	Medical-Problem 312 337	Mild ground-glass opacity
+T4	Medical-Anatomy 346 351	lungs
+T5	Medical-Assertion 352 365	could suggest
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 368 396	component of pulmonary edema
+T7	Medical-Problem 400 418	atypical infection
+T8	Medical-Assertion 421 423	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 425 448	large pleural effusions
+T10	Medical-Problem 564 579	Stable scarring
+T11	Medical-Anatomy 587 610	right mid-to-lower lung
+T12	Medical-Problem 613 618;620 640	Vague ground-glass opacity
+E10	Medical-Problem:T12
+T13	Medical-Assertion 642 650	question
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 651 666	pulmonary edema
+T15	Medical-Problem 670 688	atypical infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

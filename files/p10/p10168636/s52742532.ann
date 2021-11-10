@@ -1,0 +1,33 @@
+T1	Medical-Problem 396 411	stable widening
+T2	Medical-Anatomy 420 452	cardiac and mediastinal contours
+T3	Medical-Problem 695 704;706 720	improving linear opacity
+T4	Medical-Anatomy 728 742	right mid lung
+T5	Medical-Assertion 744 761	likely reflecting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 762 783	resolving atelectasis
+T7	Medical-Assertion 786 788	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 801 816	pulmonary edema
+T9	Medical-Assertion 819 821	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 822 834	pneumothorax
+T11	Medical-Problem 847 855	aeration
+T12	Medical-Anatomy 864 873	left base
+T13	Medical-Assertion 874 891	likely reflecting
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 892 901	resolving
+T15	Medical-Problem 906 940	some persistent patchy atelectasis
+T16	Medical-Anatomy 991 998	stomach
+E12	Medical-Anatomy:T16
+T17	Medical-Assertion 1001 1003	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1004 1019	large effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

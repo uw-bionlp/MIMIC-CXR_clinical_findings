@@ -1,0 +1,31 @@
+T1	Medical-Problem 283 303;305 313	Heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 367 378;380 406	Crowding of bronchovascular structures
+E2	Medical-Problem:T2
+T3	Medical-Problem 447 454;456 465	Streaky opacities
+T4	Medical-Anatomy 473 483	lung bases
+T5	Medical-Assertion 484 498	likely reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 499 519	areas of atelectasis
+T7	Medical-Assertion 522 524	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 525 530;532 548	large pleural effusion
+T9	Medical-Problem 552 564	pneumothorax
+T10	Medical-Assertion 588 590	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 591 604;606 619	acute osseous abnormalities
+T12	Medical-Problem 640 667	Bibasilar streaky opacities
+E9	Medical-Problem:T12
+T13	Medical-Assertion 669 675	likely
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 676 687	atelectasis
+T15	Medical-Problem 726 735	Infection
+T16	Medical-Assertion 739 762	not completely excluded
+A5	Medical-AssertionValue T16 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T16

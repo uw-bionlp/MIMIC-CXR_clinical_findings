@@ -1,0 +1,19 @@
+T1	Medical-Problem 209 253	small to moderate amount of pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 301 303	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 304 325	definite pneumothorax
+T4	Medical-Problem 328 337;339 352	Increased opacification
+T5	Medical-Anatomy 360 370	right base
+T6	Medical-Assertion 371 384	could reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 405 416	atelectasis
+T8	Medical-Problem 419 441	superimposed pneumonia
+T9	Medical-Problem 451 469	re-expansion edema
+T10	Medical-Problem 498 521	larger pleural effusion
+E8	Medical-Problem:T10
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6

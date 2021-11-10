@@ -1,0 +1,27 @@
+T1	Medical-Problem 340 376	increase in right infrahilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 403 414;416 434	focal right lower lobe opacity
+E2	Medical-Problem:T2
+T3	Medical-Problem 463 484;486 510	probably more chronic interstitial abnormality
+T4	Medical-Anatomy 518 528	lung bases
+T5	Medical-Assertion 582 584	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 585 610	definite pleural effusion
+T7	Medical-Problem 614 626	pneumothorax
+T8	Medical-Anatomy 647 663	Right lower lobe
+T9	Medical-Problem 664 671	opacity
+T10	Medical-Assertion 672 682	suggesting
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 683 692	pneumonia
+T12	Medical-Problem 696 706	aspiration
+T13	Medical-Assertion 709 718	Suspected
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 720 749	moderate interstitial disease
+T15	Medical-Anatomy 757 767	lung bases
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15

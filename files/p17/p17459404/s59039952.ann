@@ -1,0 +1,20 @@
+T1	Medical-Problem 351 387	large residual left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 392 397;399 411	small pneumothorax
+E2	Medical-Problem:T2
+T3	Medical-Problem 459 469;471 487	Small foci of consolidation
+T4	Medical-Anatomy 495 505	right lung
+T5	Medical-Assertion 525 540	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 542 551	pneumonia
+T7	Medical-Anatomy 554 569	Left lower lobe
+T8	Medical-Problem 578 593	largely airless
+T9	Medical-Anatomy 596 614;616 634	Left border of the cardiac silhouette
+T10	Medical-Problem 638 646	obscured
+T11	Medical-Problem 650 681	pleural parenchymal abnormality
+T12	Medical-Anatomy 689 693;695 700	left chest
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9 has-Medical-Anatomy:T12
+E10	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Anatomy:T12

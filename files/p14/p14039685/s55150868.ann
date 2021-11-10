@@ -1,0 +1,22 @@
+T1	Medical-Assertion 443 454	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 458 470	pneumothorax
+T3	Medical-Problem 484 535	patchy bibasilar opacities, left greater than right
+E2	Medical-Problem:T3
+T4	Medical-Problem 554 565	atelectasis
+E3	Medical-Problem:T4
+T5	Medical-Problem 576 585	pneumonia
+T6	Medical-Assertion 586 604	cannot be excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 616 622	likely
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 626 648	layering left effusion
+T9	Medical-Assertion 651 653	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 654 669	pulmonary edema
+T11	Medical-Problem 672 701	Heart remains stably enlarged
+E7	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9

@@ -1,0 +1,31 @@
+T1	Medical-Problem 253 269	fibrotic changes
+T2	Medical-Anatomy 292 303	lung apices
+T3	Lesion-Anatomy 386 401	left upper lobe
+T4	Lesion-Description 402 408	nodule
+T5	Medical-Problem 521 528	changes
+T6	Medical-Anatomy 552 567	left hemithorax
+T7	Medical-Anatomy 585 590	lungs
+T8	Medical-Assertion 606 608;610 618	no evidence
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 622 635	consolidation
+T10	Medical-Problem 637 645	effusion
+T11	Medical-Problem 650 662	pneumothorax
+T12	Medical-Problem 717 742	right clavicular fracture
+E11	Medical-Problem:T12
+T13	Medical-Assertion 772 774	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 775 790	acute fractures
+T15	Medical-Problem 822 829	changes
+T16	Medical-Anatomy 853 871	left upper abdomen
+T17	Medical-Assertion 889 891	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 892 921	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

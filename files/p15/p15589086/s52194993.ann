@@ -1,0 +1,44 @@
+T1	Medical-Problem 34 62	New right lower lobe opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 64 78	suspicious for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 79 88	pneumonia
+T4	Medical-Problem 441 448	opacity
+T5	Medical-Anatomy 456 461	right
+T6	Medical-Anatomy 462 472	lower lobe
+T7	Medical-Assertion 502 516	suspicious for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 517 526	pneumonia
+T9	Medical-Assertion 529 531	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 532 551	other consolidation
+T11	Medical-Problem 577 599	lower lobe atelectasis
+T12	Medical-Assertion 604 612	resolved
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 615 644	Mild interstitial abnormality
+E9	Medical-Problem:T13
+T14	Medical-Assertion 676 678	no
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 679 695	pleural effusion
+T16	Medical-Problem 699 711	pneumothorax
+T17	Medical-Problem 753 762	densities
+T18	Medical-Anatomy 783 794	mediastinum
+T19	Lesion-Assertion 803 812	represent
+A6	Lesion-AssertionValue T19 possible
+T20	Lesion-Characteristic 813 822	calcified
+T21	Lesion-Description 823 834	lymph nodes
+T22	Medical-Assertion 846 848	no
+A7	Medical-AssertionValue T22 absent
+T23	Medical-Problem 849 874	subdiaphragmatic free air
+T24	Medical-Problem 895 923	New right lower lobe opacity
+E17	Medical-Problem:T24
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Lesion-Description:T21 has-Lesion-Assertion:T19 has-Lesion-Characteristic:T20
+E16	Medical-Problem:T23 has-Medical-Assertion:T22

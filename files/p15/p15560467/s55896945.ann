@@ -1,0 +1,31 @@
+T1	Medical-Problem 298 314	Marked elevation
+T2	Medical-Anatomy 323 341	left hemidiaphragm
+T3	Medical-Problem 373 396	Heterogeneous opacities
+T4	Medical-Anatomy 405 428	right mid to lower lung
+T5	Medical-Assertion 497 503	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 504 515	atelectasis
+T7	Medical-Problem 532 543	volume loss
+T8	Medical-Anatomy 552 566	left lung base
+T9	Medical-Problem 710 741	Multilevel degenerative changes
+T10	Medical-Anatomy 749 763	thoracic spine
+T11	Medical-Assertion 841 847	may be
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 848 853;855 882	small bilateral pleural effusions
+T13	Medical-Problem 993 1036	Decreased right mid-to-lower lung opacities
+E11	Medical-Problem:T13
+T14	Medical-Problem 1054 1063;1065 1076	improving atelectasis
+E12	Medical-Problem:T14
+T15	Medical-Problem 1079 1100	Unchanged volume loss
+T16	Medical-Anatomy 1108 1122	left lung base
+T17	Medical-Problem 1131 1166	Marked left hemidiaphragm elevation
+E15	Medical-Problem:T17
+T18	Medical-Problem 1202 1235	Small bilateral pleural effusions
+E16	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16

@@ -1,0 +1,43 @@
+T1	Medical-Problem 432 442	Prominence
+T2	Medical-Anatomy 450 466	hila bilaterally
+T3	Medical-Problem 476 486;488 515	borderline enlarged pulmonary arteries
+T4	Medical-Anatomy 518 523	Lungs
+T5	Medical-Problem 528 553;555 576	hyperinflated with severe emphysematous changes
+T6	Medical-Problem 591 599	Scarring
+T7	Medical-Anatomy 611 622	lung apices
+T8	Medical-Assertion 658 660	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 661 676	pulmonary edema
+T10	Medical-Assertion 695 697	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 698 703;705 718	focal consolidation
+T12	Medical-Problem 720 736	pleural effusion
+T13	Medical-Problem 740 752	pneumothorax
+T14	Lesion-Description 790 797	nodules
+T15	Lesion-Assertion 808 811	not
+A3	Lesion-AssertionValue T15 absent
+T16	Lesion-Size 852 856	5 cm
+T17	Lesion-Characteristic 858 865	rounded
+T18	Lesion-Description 866 873	opacity
+T19	Lesion-Anatomy 894 913	left mid lung field
+T20	Lesion-Anatomy 966 981	left fourth rib
+T21	Lesion-Characteristic 1022 1029	osseous
+E18	Lesion-Characteristic:T21
+T22	Medical-Assertion 1078 1080	No
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1082 1101	focal consolidation
+T24	Medical-Problem 1113 1122	pneumonia
+T25	Medical-Problem 1124 1140	Severe emphysema
+E21	Medical-Problem:T25
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T10
+E12	Lesion-Description:T14 has-Lesion-Assertion:T15
+E15	Lesion-Description:T18 has-Lesion-Size-Present:T16 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T19 has-Lesion-Anatomy:T20
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T24 has-Medical-Assertion:T22

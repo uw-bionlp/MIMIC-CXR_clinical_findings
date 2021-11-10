@@ -1,0 +1,21 @@
+T1	Medical-Problem 265 289	increasing opacification
+T2	Medical-Anatomy 298 307	left base
+T3	Medical-Assertion 309 336	most likely consistent with
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 337 350	pleural fluid
+T5	Medical-Problem 355 366	volume loss
+T6	Medical-Anatomy 375 390	left lower lobe
+T7	Medical-Problem 393 427	Less prominent atelectatic changes
+T8	Medical-Assertion 432 440	probable
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 441 446;448 459	small effusion on
+T10	Medical-Anatomy 464 469	right
+T11	Medical-Assertion 512 520;522 542	would be difficult to exclude
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 543 565	superimposed pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T6
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T10
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

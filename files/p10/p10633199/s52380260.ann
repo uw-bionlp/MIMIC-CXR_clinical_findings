@@ -1,0 +1,33 @@
+T1	Medical-Problem 171 200	Heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 267 269	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 270 285	pulmonary edema
+T4	Medical-Problem 288 304	Patchy opacities
+T5	Medical-Anatomy 312 316;318 323	lung bases
+T6	Medical-Assertion 324 335	may reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 336 347	atelectasis
+T8	Medical-Problem 355 364	infection
+T9	Medical-Assertion 365 394	cannot be completely excluded
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 398 400	No
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 401 417	pleural effusion
+T12	Medical-Problem 421 433	pneumothorax
+T13	Medical-Problem 533 559	Patchy bibasilar opacities
+E9	Medical-Problem:T13
+T14	Medical-Assertion 560 574	likely reflect
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 575 586	atelectasis
+T16	Medical-Problem 594 603	infection
+T17	Medical-Assertion 604 610;612 634	cannot be completely excluded
+A6	Medical-AssertionValue T17 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T14 has-Medical-Assertion:T17

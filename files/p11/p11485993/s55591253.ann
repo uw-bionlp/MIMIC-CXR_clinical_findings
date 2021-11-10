@@ -1,0 +1,27 @@
+T1	Medical-Problem 292 315	lungs are hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Problem 318 358	Right greater than left fibrotic changes
+T3	Medical-Anatomy 380 389	lung apex
+T4	Medical-Problem 411 433	superior retraction of
+E4	Medical-Problem:T4
+T5	Lesion-Characteristic 453 463	Spiculated
+T6	Lesion-Anatomy 464 476	right apical
+T7	Lesion-Description 477 483	nodule
+T8	Lesion-Size-Trend 487 504	grossly unchanged
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Problem 552 569	increased opacity
+T10	Medical-Anatomy 570 589;591 607	projecting over the spine inferiorly
+T11	Medical-Problem 624 637	consolidation
+T12	Medical-Assertion 764 766	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 767 794	acute osseous abnormalities
+T14	Medical-Problem 815 830	Chronic changes
+T15	Medical-Anatomy 838 843	lungs
+T16	Medical-Problem 871 892;894 907	Persistent lower lobe consolidation
+E14	Medical-Problem:T16
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15

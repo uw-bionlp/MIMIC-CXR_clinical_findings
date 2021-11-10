@@ -1,0 +1,16 @@
+T1	Medical-Assertion 312 314	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 315 336	pleural abnormalities
+T3	Medical-Problem 418 421;423 462	old posterolateral right fifth rib fracture
+E2	Medical-Problem:T3
+T4	Lesion-Assertion 496 507	No evidence
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 511 516	hilar
+T6	Lesion-Anatomy 520 531	mediastinal
+T7	Lesion-Description 532 547	lymphadenopathy
+T8	Medical-Assertion 549 551	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 552 573;575 586	acute cardiopulmonary abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

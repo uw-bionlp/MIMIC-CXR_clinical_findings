@@ -1,0 +1,36 @@
+T1	Medical-Problem 283 293;295 315	Persistent retrocardiac opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 341 372	increased interstitial markings
+T3	Medical-Anatomy 389 394	lungs
+T4	Lesion-Anatomy 443 452	Pulmonary
+E4	Lesion-Anatomy:T4
+T5	Lesion-Characteristic 496 505	Expansile
+T6	Lesion-Characteristic 506 511	lytic
+T7	Lesion-Description 512 518	lesion
+T8	Lesion-Anatomy 526 530;532 550	left lateral fourth rib
+T9	Medical-Problem 658 678	Retrocardiac opacity
+E9	Medical-Problem:T9
+T10	Medical-Assertion 679 690	potentially
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Problem 691 702	atelectasis
+T12	Medical-Problem 712 721	infection
+T13	Medical-Problem 741 772	Increased interstitial markings
+T14	Medical-Anatomy 788 793	lungs
+T15	Medical-Assertion 794 807	could be from
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 809 837	chronic interstitial process
+T17	Medical-Assertion 838 849	potentially
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 855 886	superimposed interstitial edema
+T19	Lesion-Characteristic 889 894	Lytic
+T20	Lesion-Characteristic 895 904	expansile
+T21	Lesion-Description 905 911	lesion
+T22	Lesion-Anatomy 919 930	left fourth
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Anatomy:T14 has-Medical-Assertion:T15 has-Medical-Assertion:T17
+E18	Lesion-Description:T21 has-Lesion-Characteristic:T19 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T22

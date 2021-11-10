@@ -1,0 +1,28 @@
+T1	Medical-Problem 233 253	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 260 300	superior segment of the right lower lobe
+T3	Medical-Problem 305 314	collapsed
+T4	Medical-Anatomy 321 336	left lower lobe
+T5	Medical-Problem 340 360	completely opacified
+T6	Medical-Assertion 367 377;379 388	may likely represent
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 389 409	atelectatic collapse
+T8	Medical-Problem 428 441	consolidation
+T9	Medical-Problem 448 452;454 483	mild pulmonary vascular congestion
+E8	Medical-Problem:T9
+T10	Medical-Problem 499 530	Moderate to severe cardiomegaly
+E9	Medical-Problem:T10
+T11	Medical-Problem 592 607;609 626	Small bilateral pleural effusions
+E10	Medical-Problem:T11
+T12	Medical-Problem 889 909	retrocardiac opacity
+E11	Medical-Problem:T12
+T13	Medical-Assertion 910 923	may represent
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 924 951	left lower lobe atelectasis
+T15	Medical-Problem 971 980	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13

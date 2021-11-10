@@ -1,0 +1,23 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Medical-Problem 67 92	Multiple air-fluid levels
+E2	Medical-Problem:T3
+T4	Medical-Problem 550 578	heart is moderately enlarged
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 588 609	pulmonary vasculature
+T6	Medical-Assertion 613 616	not
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 617 625	engorged
+T8	Medical-Problem 722 740;742 750	small left pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Problem 755 758	Air
+E7	Medical-Problem:T9
+T10	Medical-Problem 763 792	fluid in the intestinal tract
+E8	Medical-Problem:T10
+T11	Medical-Assertion 835 843	suggests
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 844 850	stasis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,26 @@
+T1	Medical-Problem 372 377;379 394	small amount of fluid
+T2	Medical-Anatomy 402 421	right major fissure
+T3	Medical-Problem 424 454;456 465	Peribronchial and interstitial opacities
+T4	Medical-Anatomy 473 483	right base
+T5	Medical-Problem 499 531;533 542	Persistent elevation of the left diaphragm
+E5	Medical-Problem:T5
+T6	Medical-Problem 553 575	Heart size is enlarged
+E6	Medical-Problem:T6
+T7	Medical-Assertion 636 647	no evidence
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 652 667	pulmonary edema
+T9	Medical-Problem 669 678;680 693	pulmonary consolidation
+T10	Medical-Problem 695 711	pleural effusion
+T11	Medical-Problem 716 728	pneumothorax
+T12	Medical-Assertion 842 844	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 845 857	pneumothorax
+T14	Medical-Problem 861 879	other complication
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E10	Medical-Problem:T11 has-Medical-Assertion:T7
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12

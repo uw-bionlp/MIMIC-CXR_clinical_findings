@@ -1,0 +1,16 @@
+T1	Medical-Problem 206 226	Multifocal pneumonia
+T2	Medical-Anatomy 247 257	right lung
+T3	Medical-Problem 263 271	worsened
+T4	Medical-Anatomy 279 283;285 295	left lower lobe
+T5	Medical-Problem 298 315	Mild cardiomegaly
+E5	Medical-Problem:T5
+T6	Medical-Problem 332 356;358 366	Pulmonary vasculature is engorged
+E6	Medical-Problem:T6
+T7	Medical-Problem 369 385	Pleural effusion
+E7	Medical-Problem:T7
+T8	Medical-Assertion 401 403	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 404 416	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8

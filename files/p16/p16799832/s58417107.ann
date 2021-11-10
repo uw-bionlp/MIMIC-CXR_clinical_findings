@@ -1,0 +1,19 @@
+T1	Medical-Assertion 371 373	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 374 389	pulmonary edema
+T3	Medical-Problem 392 439	Moderate right and small left pleural effusions
+E2	Medical-Problem:T3
+T4	Medical-Problem 489 498	Elevation
+T5	Medical-Anatomy 506 511;513 526	right hemidiaphragm
+T6	Medical-Assertion 527 542	probably due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 543 562	phrenic nerve palsy
+T8	Lesion-Anatomy 570 581	right hilar
+T9	Lesion-Anatomy 587 607	adjacent mediastinal
+T10	Lesion-Description 608 612	mass
+T11	Medical-Problem 626 654	mild to moderate atelectasis
+E9	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9

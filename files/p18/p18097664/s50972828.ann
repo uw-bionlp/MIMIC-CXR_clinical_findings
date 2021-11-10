@@ -1,0 +1,53 @@
+T1	Medical-Assertion 185 195	resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 199 208	pneumonia
+T3	Medical-Problem 542 550;552 594	relative prominence of the left ventricular contour
+E2	Medical-Problem:T3
+T4	Medical-Problem 619 627;629 647	moderate degree of widening
+T5	Medical-Problem 652 667	mild elongation
+T6	Medical-Anatomy 675 689	thoracic aorta
+T7	Medical-Assertion 690 703	suggestive of
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 705 726	systemic hypertension
+T9	Medical-Assertion 764 767	not
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 768 777	congested
+T11	Medical-Problem 832 841;843 866	pulmonary parenchymal infiltrates
+T12	Medical-Anatomy 885 902	right middle lobe
+T13	Medical-Problem 950 990	some small linear densities in this area
+E10	Medical-Problem:T13
+T14	Medical-Assertion 992 1005	suggestive of
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1006 1021	scar formations
+T16	Medical-Problem 1025 1059	peripheral remnants of atelectasis
+T17	Medical-Assertion 1062 1064	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1123 1130	density
+E13	Medical-Problem:T18
+T19	Medical-Anatomy 1138 1148;1150 1186	left upper lobe area reaching the apical pleura
+T20	Medical-Problem 1193 1216	local thickening exists
+T21	Medical-Assertion 1217 1227;1229 1231	appears to be
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1244 1271	old probably specific scars
+T23	Medical-Problem 1457 1467	prominence
+E17	Medical-Problem:T23
+T24	Lesion-Anatomy 1475 1480	right
+T25	Lesion-Assertion 1487 1506	did not demonstrate
+A7	Lesion-AssertionValue T25 absent
+T26	Lesion-Description 1511 1515	mass
+T27	Medical-Problem 1577 1586	pneumonia
+T28	Medical-Anatomy 1590 1595;1597 1613	right middle lobe area
+T29	Medical-Problem 1616 1626	Minor scar
+E22	Medical-Problem:T29
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T6
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T20 has-Medical-Anatomy:T19 has-Medical-Assertion:T21
+E16	Medical-Problem:T22 has-Medical-Anatomy:T19 has-Medical-Assertion:T21
+E19	Lesion-Description:T26 has-Lesion-Anatomy:T24 has-Lesion-Assertion:T25
+E20	Medical-Problem:T27 has-Medical-Anatomy:T28

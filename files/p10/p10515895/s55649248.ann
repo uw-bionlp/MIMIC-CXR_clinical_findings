@@ -1,0 +1,28 @@
+T1	Lesion-Description 286 300	nodule opacity
+T2	Lesion-Anatomy 321 329;331 353	anterior lateral left fifth rib
+T3	Lesion-Size-Trend 357 363	stable
+A1	Lesion-Size-TrendValue T3 no-change
+T4	Lesion-Size 425 427	mm
+T5	Lesion-Size 428 432	tiny
+T6	Lesion-Description 433 440	rounded
+E5	Lesion-Description:T6
+T7	Lesion-Description 441 448	opacity
+T8	Lesion-Anatomy 469 500	anterior lateral left fifth rib
+T9	Lesion-Size-Trend 505 511	stable
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Lesion-Assertion 554 556	No
+A3	Lesion-AssertionValue T10 absent
+T11	Medical-Problem 557 562;564 577	focal consolidation
+E8	Medical-Problem:T11
+T12	Medical-Assertion 588 590	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 591 607	pleural effusion
+T14	Medical-Problem 611 623	pneumothorax
+T15	Medical-Assertion 711 713	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 714 743	acute cardiopulmonary process
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T3
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T4 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

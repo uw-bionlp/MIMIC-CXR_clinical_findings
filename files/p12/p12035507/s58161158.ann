@@ -1,0 +1,30 @@
+T1	Medical-Problem 286 306	Stable appearance of
+E1	Medical-Problem:T1
+T2	Medical-Problem 310 337	elevated left hemidiaphragm
+E2	Medical-Problem:T2
+T3	Medical-Problem 340 353	Consolidation
+T4	Medical-Anatomy 362 383	base of the left lung
+T5	Medical-Assertion 404 415	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 416 427	atelectasis
+T7	Medical-Problem 442 451	infection
+T8	Medical-Problem 454 482	Stable moderate cardiomegaly
+E7	Medical-Problem:T8
+T9	Medical-Assertion 511 513	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 515 527	pneumothorax
+T11	Medical-Problem 531 547	pleural effusion
+T12	Medical-Problem 569 603	Stable elevated left hemidiaphragm
+E10	Medical-Problem:T12
+T13	Medical-Problem 609 622	consolidation
+T14	Medical-Anatomy 630 646;648 652	base of the left lung
+T15	Medical-Assertion 659 674	likely reflects
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 675 686	atelectasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

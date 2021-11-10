@@ -1,0 +1,17 @@
+T1	Medical-Anatomy 319 343	left pneumonectomy space
+T2	Medical-Problem 349 376	partially filled with fluid
+T3	Medical-Problem 395 415	expected volume loss
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 450 460	right lung
+T5	Medical-Problem 466 490	interstitial abnormality
+T6	Medical-Assertion 491 501;503 515	has nearly resolved and
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Assertion 519 532	likely due to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 533 558	improving pulmonary edema
+T9	Medical-Problem 560 572;574 583	Subcutaneous emphysema
+T10	Medical-Anatomy 587 602	left chest wall
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10

@@ -1,0 +1,31 @@
+T1	Medical-Problem 133 173	Large amount of free intraperitoneal air
+T2	Medical-Anatomy 185 200;202 215	below the right hemidiaphragm
+T3	Lesion-Size 236 241	small
+T4	Lesion-Characteristic 242 251	calcified
+T5	Lesion-Description 252 262	granulomas
+T6	Lesion-Anatomy 283 293	right apex
+T7	Medical-Problem 332 355;357 364	New patchy left basilar opacity
+E7	Medical-Problem:T7
+T8	Medical-Assertion 365 380	likely reflects
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 381 392	atelectasis
+T10	Medical-Problem 403 413	aspiration
+E9	Medical-Problem:T10
+T11	Lesion-Count 485 492	Several
+T12	Lesion-Characteristic 493 502	sclerotic
+T13	Lesion-Anatomy 503 507;509 512	left rib
+T14	Lesion-Description 513 520	lesions
+T15	Lesion-Assertion 535 552	may be related to
+A2	Lesion-AssertionValue T15 possible
+T16	Medical-Problem 633 673	Large amount of free intraperitoneal air
+E14	Medical-Problem:T16
+T17	Medical-Problem 741 772	Patchy left basilar atelectasis
+T18	Medical-Assertion 773 779	versus
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 780 790	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E13	Lesion-Description:T14 has-Lesion-Count:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T13 has-Lesion-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T18
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

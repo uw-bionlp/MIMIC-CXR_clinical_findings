@@ -1,0 +1,38 @@
+T1	Medical-Problem 347 369;371 378	persistently increased opacity
+T2	Medical-Anatomy 386 406	left mid to low lung
+T3	Medical-Problem 413 424	obscuration
+T4	Medical-Anatomy 432 436;438 473	left hemidiaphragm and left heart border
+T5	Medical-Assertion 475 492	likely reflecting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 511 527	pleural effusion
+T7	Medical-Problem 532 543	atelectasis
+T8	Lesion-Characteristic 602 612	spiculated
+T9	Lesion-Description 613 617	mass
+T10	Lesion-Assertion 661 664	not
+A2	Lesion-AssertionValue T10 absent
+T11	Medical-Problem 740 762	superimposed pneumonia
+T12	Medical-Assertion 763 781	cannot be excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 834 861	left mid-lower lung opacity
+E10	Medical-Problem:T13
+T14	Medical-Assertion 863 869	likely
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 885 901	pleural effusion
+T16	Medical-Problem 907 918	atelectasis
+T17	Lesion-Characteristic 927 934	unknown
+T18	Lesion-Characteristic 935 945	spiculated
+T19	Lesion-Anatomy 946 950	lung
+T20	Lesion-Description 951 955	mass
+T21	Medical-Problem 966 978;980 989	superimposed pneumonia
+T22	Medical-Assertion 990 1008	cannot be excluded
+A5	Medical-AssertionValue T22 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T8 has-Lesion-Assertion:T10
+E9	Medical-Problem:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E16	Lesion-Description:T20 has-Lesion-Characteristic:T17 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T22

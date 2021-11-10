@@ -1,0 +1,29 @@
+T1	Medical-Problem 589 608	stable hazy opacity
+T2	Medical-Anatomy 617 627	right apex
+T3	Medical-Problem 630 668	Unchanged patchy and streaky opacities
+T4	Medical-Anatomy 672 687	both lung bases
+T5	Medical-Assertion 688 693;695 702	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 703 723	areas of atelectasis
+T7	Medical-Problem 734 743	pneumonia
+T8	Medical-Assertion 744 771	cannot be entirely excluded
+A2	Medical-AssertionValue T8 possible
+T9	Lesion-Description 785 800	nodular opacity
+T10	Lesion-Anatomy 808 822	right mid lung
+T11	Medical-Problem 850 878	presumed pulmonary contusion
+E9	Medical-Problem:T11
+T12	Medical-Assertion 906 908	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 910 922	pneumothorax
+T14	Medical-Assertion 924 926	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 927 942	pulmonary edema
+T16	Medical-Problem 999 1027	Old left-sided rib fractures
+E12	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

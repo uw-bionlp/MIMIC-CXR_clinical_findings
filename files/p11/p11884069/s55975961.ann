@@ -1,0 +1,44 @@
+T1	Lesion-Size 216 221	large
+T2	Lesion-Anatomy 222 238	right upper lobe
+T3	Lesion-Description 240 244	mass
+T4	Medical-Problem 250 283	elevation the right hemidiaphragm
+E4	Medical-Problem:T4
+T5	Lesion-Count 296 297	3
+T6	Lesion-Size 298 303	large
+T7	Lesion-Anatomy 304 313	pulmonary
+T8	Lesion-Description 315 322	nodules
+T9	Lesion-Anatomy 330 339	left lung
+T10	Lesion-Size-Trend 341 357	similar prior CT
+A1	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Problem 360 384;386 395	New diffuse ground glass opacities
+T12	Medical-Anatomy 405 426	throughout both lungs
+T13	Medical-Assertion 478 480	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 481 497	pleural effusion
+T15	Medical-Assertion 500 502	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 503 515	pneumothorax
+T17	Medical-Problem 518 537;539 547	Small right pleural effusion
+E14	Medical-Problem:T17
+T18	Lesion-Anatomy 579 595	right upper lung
+T19	Lesion-Description 596 600	mass
+T20	Lesion-Count 605 606	3
+T21	Lesion-Size 607 612	large
+T22	Lesion-Anatomy 613 627	left pulmonary
+T23	Lesion-Description 628 635	nodules
+T24	Medical-Problem 638 641;643 673	New diffuse ground glass opacities
+T25	Medical-Anatomy 681 709	right middle and lower lobes
+T26	Medical-Assertion 710 713;715 724	may represent
+A4	Medical-AssertionValue T26 possible
+T27	Medical-Problem 725 751	post-obstructive pneumonia
+T28	Lesion-Description 755 777	metastatic progression
+E24	Lesion-Description:T28
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E8	Lesion-Description:T8 has-Lesion-Count:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Lesion-Description:T19 has-Lesion-Anatomy:T18
+E20	Lesion-Description:T23 has-Lesion-Count:T20 has-Lesion-Size-Present:T21 has-Lesion-Anatomy:T22
+E21	Medical-Problem:T24 has-Medical-Anatomy:T25
+E23	Medical-Problem:T27 has-Medical-Anatomy:T25 has-Medical-Assertion:T26

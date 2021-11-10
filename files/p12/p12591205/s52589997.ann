@@ -1,0 +1,39 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 74	definite acute cardiopulmonary process
+T3	Medical-Problem 76 89	Vague opacity
+T4	Medical-Anatomy 112 126	right mid lung
+T5	Medical-Assertion 127 140	may be due to
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 141 162	confluence of shadows
+T7	Medical-Problem 622 650	vague right mid lung opacity
+T8	Medical-Anatomy 672 696	anterior right fifth rib
+T9	Medical-Assertion 738 740	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 742 754	pneumothorax
+T11	Medical-Problem 758 766	effusion
+T12	Medical-Problem 827 844	Increased opacity
+T13	Medical-Anatomy 865 885	lower thoracic spine
+T14	Medical-Problem 917 971	significant lower thoracic/ upper lumbar levoscoliosis
+E11	Medical-Problem:T14
+T15	Medical-Problem 977 1008	associated hypertrophic changes
+E12	Medical-Problem:T15
+T16	Medical-Assertion 1032 1034	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1035 1043	definite
+E13	Medical-Problem:T17
+T18	Medical-Problem 1044 1073	acute cardiopulmonary process
+T19	Medical-Problem 1075 1088	Vague opacity
+E15	Medical-Problem:T19
+T20	Medical-Assertion 1125 1138	may be due to
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1139 1149	confluence
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

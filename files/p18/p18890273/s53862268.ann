@@ -1,0 +1,30 @@
+T1	Medical-Problem 87 95	Aneurysm
+T2	Medical-Anatomy 103 108	aorta
+T3	Medical-Anatomy 110 121	reimplanted
+T4	Medical-Anatomy 122 132	innominate
+T5	Medical-Anatomy 137 149;151 159	left carotid arteries
+T6	Medical-Problem 206 234	Small right pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Problem 244 271	Mild left basal atelectasis
+E7	Medical-Problem:T7
+T8	Medical-Problem 276 281;283 304	small left pleural effusion
+E8	Medical-Problem:T8
+T9	Medical-Problem 318 344	Localized fluid collection
+T10	Medical-Anatomy 352 360;362 367	left mid chest
+T11	Medical-Assertion 368 376	could be
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 377 402	fissural pleural effusion
+T13	Medical-Assertion 408 421	could also be
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 422 430	hematoma
+T15	Medical-Problem 434 442	Standard
+T16	Medical-Anatomy 473 510;512 516	trachea and esophagus from the aortic arch
+T17	Medical-Assertion 608 610	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 611 623	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

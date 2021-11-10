@@ -1,0 +1,33 @@
+T1	Medical-Problem 89 108	linear hyperdensity
+T2	Medical-Anatomy 122 137	left upper lung
+T3	Medical-Assertion 138 149	may reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 152 168	soft tissue fold
+T5	Medical-Problem 181 189;191 205	apparent  lung markings
+E4	Medical-Problem:T5
+T6	Medical-Problem 232 244	pneumothorax
+T7	Medical-Assertion 245 256	less likely
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 313 334	Postoperative changes
+T9	Medical-Anatomy 353 371	left hemidiaphragm
+T10	Medical-Problem 385 416	small left basilar pneumothorax
+E8	Medical-Problem:T10
+T11	Medical-Assertion 419 421	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 422 427	shift
+T13	Medical-Anatomy 441 452	mediastinum
+T14	Medical-Problem 511 543	Left chest wall subcutaneous air
+E11	Medical-Problem:T14
+T15	Medical-Problem 1134 1145;1147 1159	small basal pneumothorax
+E12	Medical-Problem:T15
+T16	Medical-Assertion 1161 1163	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1164 1183	apical pneumothorax
+T18	Medical-Problem 1289 1299;1301 1309	healed rib fracture
+E14	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

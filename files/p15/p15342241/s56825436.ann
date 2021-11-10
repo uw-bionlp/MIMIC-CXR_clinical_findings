@@ -1,0 +1,22 @@
+T1	Medical-Assertion 346 365	No current evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 370 379	pneumonia
+T3	Medical-Problem 383 409	other pathological changes
+T4	Medical-Problem 415 439	increase in radiodensity
+T5	Medical-Anatomy 448 484	medial aspect of the right lung base
+T6	Medical-Assertion 488 494	likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 495 515	defect of projection
+T8	Lesion-Assertion 518 520	No
+A3	Lesion-AssertionValue T8 absent
+T9	Lesion-Anatomy 521 525	lung
+T10	Lesion-Description 527 534	nodules
+T11	Medical-Assertion 537 539	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 540 552	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

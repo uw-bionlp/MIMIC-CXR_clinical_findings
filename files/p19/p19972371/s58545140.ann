@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 298 303	aorta
+T2	Medical-Problem 310 324	mild unfolding
+T3	Lesion-Assertion 378 380	no
+A1	Lesion-AssertionValue T3 absent
+T4	Lesion-Anatomy 381 392	mediastinal
+T5	Lesion-Anatomy 396 401	hilar
+T6	Lesion-Description 402 417	lymphadenopathy
+T7	Medical-Assertion 429 431	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 432 444	pneumothorax
+T9	Medical-Problem 447 453;455 467	Slight new blunting
+T10	Medical-Anatomy 471 495	each costophrenic sulcus
+T11	Medical-Assertion 496 517	potentially indicates
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 518 523;525 534	trace effusions
+T13	Medical-Problem 568 597	Moderate degenerative changes
+T14	Medical-Anatomy 621 639	mid thoracic spine
+T15	Medical-Assertion 657 668	No evidence
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 672 685	acute disease
+T17	Medical-Problem 697 718;720 729	perhaps trace pleural effusions
+E13	Medical-Problem:T17
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

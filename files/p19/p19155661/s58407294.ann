@@ -1,0 +1,20 @@
+T1	Medical-Problem 295 304	Skin fold
+T2	Medical-Anatomy 325 342	right upper chest
+T3	Medical-Assertion 344 366	should not be mistaken
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 371 383	pneumothorax
+T5	Medical-Problem 385 404	Partial obscuration
+T6	Medical-Anatomy 412 417;419 431	right heart border
+T7	Medical-Assertion 435 450	probably due to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 451 466	mediastinal fat
+T9	Medical-Assertion 468 470	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 471 486;488 499	focal pulmonary abnormality
+T11	Medical-Problem 551 561;563 576	Very small hiatus hernia
+E8	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

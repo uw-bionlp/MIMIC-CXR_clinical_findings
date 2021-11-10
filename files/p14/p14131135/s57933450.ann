@@ -1,0 +1,40 @@
+T1	Medical-Anatomy 353 358	lungs
+T2	Medical-Problem 363 376	hyperinflated
+T3	Medical-Problem 395 418	background of emphysema
+T4	Medical-Problem 430 444	focal scarring
+E4	Medical-Problem:T4
+T5	Lesion-Description 449 459	nodularity
+T6	Lesion-Anatomy 467 471;473 483	left upper lobe
+T7	Medical-Problem 534 542	fibrosis
+T8	Medical-Anatomy 554 588	left mediastinal and hilar contour
+T9	Medical-Assertion 609 611	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 612 621;623 636	new focal consolidation
+T11	Medical-Assertion 639 641	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 642 658	pleural effusion
+T13	Medical-Problem 662 674	pneumothorax
+T14	Medical-Assertion 694 696	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 698 725	acute osseous abnormalities
+T16	Medical-Problem 738 772;774 779	degenerative changes of visualized spine
+E13	Medical-Problem:T16
+T17	Medical-Assertion 854 856	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 857 914	new focal consolidation.Unchanged post-radiation fibrosis
+T19	Medical-Anatomy 922 926;928 957	left mediastinal and hilar contour
+E15	Medical-Anatomy:T19
+T20	Medical-Problem 960 974	Focal scarring
+E16	Medical-Problem:T20
+T21	Lesion-Description 979 989	nodularity
+T22	Lesion-Anatomy 997 1001;1003 1013	left upper lobe
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Lesion-Description:T21 has-Lesion-Anatomy:T22

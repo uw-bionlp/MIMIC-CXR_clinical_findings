@@ -1,0 +1,23 @@
+T1	Lesion-Count 255 263	Multiple
+T2	Lesion-Anatomy 264 273	pulmonary
+T3	Lesion-Description 275 282	nodules
+T4	Lesion-Description 403 410	nodules
+E4	Lesion-Description:T4
+T5	Medical-Assertion 411 418	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 420 432	pneumothorax
+T7	Medical-Assertion 435 437	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 438 457	focal consolidation
+T9	Medical-Problem 461 477	pleural effusion
+T10	Medical-Problem 612 642	Extensive degenerative changes
+T11	Medical-Anatomy 660 669	shoulders
+T12	Medical-Assertion 697 708	No evidence
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 712 724	pneumothorax
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

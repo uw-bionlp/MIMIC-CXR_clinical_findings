@@ -1,0 +1,22 @@
+T1	Medical-Problem 30 45	New radiopacity
+T2	Medical-Anatomy 53 107;109 124	anterior mediastinum, posterior to the xiphoid process  of the sternum
+T3	Medical-Anatomy 129 172	projecting over the anterior cardiac margin
+T4	Lesion-Description 385 395	neoplastic
+E4	Lesion-Description:T4
+T5	Medical-Assertion 873 875	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 877 893	pleural effusion
+T7	Medical-Problem 897 909	pneumothorax
+T8	Medical-Problem 921 934	opacification
+T9	Medical-Anatomy 949 954;956 1000	lower portion of the cardiac silhouette anteriorly
+T10	Medical-Assertion 1008 1020	could merely
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 1323 1331	possible
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1332 1354	anterior opacification
+T13	Medical-Anatomy 1363 1382	base on the lateral
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13

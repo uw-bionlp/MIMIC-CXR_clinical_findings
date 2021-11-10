@@ -1,0 +1,21 @@
+T1	Medical-Assertion 374 376	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 377 384;386 394	pleural effusion
+T3	Medical-Problem 398 410	pneumothorax
+T4	Medical-Assertion 413 424	No evidence
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 428 443	pulmonary edema
+T6	Lesion-Description 470 476	Nodule
+T7	Lesion-Anatomy 480 499	projecting over the
+T8	Lesion-Anatomy 500 516	right upper lung
+T9	Lesion-Assertion 518 542	potentially representing
+A3	Lesion-AssertionValue T9 possible
+T10	Lesion-Characteristic 544 553	calcified
+T11	Lesion-Description 554 563	granuloma
+T12	Lesion-Size-Trend 565 574	unchanged
+A4	Lesion-Size-TrendValue T12 no-change
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Lesion-Description:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8
+E8	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10 has-Lesion-Size-Trend:T12

@@ -1,0 +1,19 @@
+T1	Medical-Problem 118 148	Cardiac silhouette is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 171 180;182 201	pulmonary vascular congestion
+E2	Medical-Problem:T2
+T3	Medical-Problem 206 241	apparent area of asymmetrical edema
+T4	Medical-Anatomy 249 254;256 272	right perihilar region
+T5	Medical-Assertion 275 297	Differential diagnosis
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 307 327	localized aspiration
+T7	Medical-Problem 332 359	early, developing pneumonia
+T8	Lesion-Characteristic 407 416	calcified
+T9	Lesion-Description 417 427	granulomas
+T10	Lesion-Anatomy 435 444	left lung
+T11	Medical-Problem 451 479	small right pleural effusion
+E10	Medical-Problem:T11
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T10

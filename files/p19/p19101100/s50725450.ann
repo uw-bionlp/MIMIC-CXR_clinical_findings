@@ -1,0 +1,28 @@
+T1	Medical-Problem 323 345	right pleural effusion
+T2	Medical-Problem 350 368	increased aeration
+T3	Medical-Anatomy 385 395	right lung
+T4	Medical-Problem 407 440	persistent airspace consolidation
+T5	Medical-Anatomy 448 453;455 465	right lower lung
+T6	Medical-Assertion 466 485	likely representing
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 486 522	residual partial lower lobe collapse
+T8	Medical-Assertion 525 527	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 529 541	pneumothorax
+T10	Medical-Problem 679 684;686 702	heart remains enlarged
+E8	Medical-Problem:T10
+T11	Medical-Assertion 752 754	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 755 764;766 771	pulmonary edema
+T13	Medical-Problem 853 870;872 911	interval decrease in size of right-sided pleural effusion
+E10	Medical-Problem:T13
+T14	Medical-Assertion 955 957	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 958 970	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

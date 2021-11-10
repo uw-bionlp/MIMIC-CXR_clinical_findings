@@ -1,0 +1,22 @@
+T1	Medical-Assertion 48 59	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 63 75	pneumothorax
+T3	Medical-Problem 78 103;105 118	Stable moderate to severe  cardiomegaly
+E2	Medical-Problem:T3
+T4	Medical-Problem 121 145	Abandoned fractured lead
+T5	Medical-Anatomy 164 175	mediastinum
+T6	Medical-Problem 742 766	abandoned fractured lead
+T7	Medical-Anatomy 781 803	left upper mediastinum
+T8	Medical-Assertion 892 894	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 896 908	pneumothorax
+T10	Medical-Problem 911 930	Stable cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Assertion 937 956	interval resolution
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 960 972;974 979	interstitial edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

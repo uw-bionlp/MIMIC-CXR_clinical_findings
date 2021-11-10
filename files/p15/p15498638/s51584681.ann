@@ -1,0 +1,23 @@
+T1	Medical-Problem 328 343;345 354	Similar streaky opacities
+T2	Medical-Anatomy 362 377	left lower lobe
+T3	Medical-Problem 383 399	mild volume loss
+T4	Medical-Assertion 400 407	suggest
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 408 419	atelectasis
+T6	Medical-Assertion 467 469	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 470 486	pleural effusion
+T8	Medical-Problem 491 503	pneumothorax
+T9	Medical-Problem 521 523	no
+E7	Medical-Problem:T9
+T10	Medical-Problem 524 539	definite change
+E8	Medical-Problem:T10
+T11	Medical-Assertion 560 571	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 575 604	acute cardiopulmonary disease
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

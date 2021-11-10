@@ -1,0 +1,44 @@
+T1	Medical-Problem 226 243	pneumomediastinum
+T2	Medical-Assertion 244 259;261 269	appears to have resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Assertion 339 341	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 342 371	pulmonary vascular congestion
+T5	Medical-Problem 374 409	Calcified bilateral pleural plaques
+E3	Medical-Problem:T5
+T6	Medical-Problem 431 459	unchanged pleural thickening
+T7	Medical-Problem 464 489;491 499	chronic loculated pleural effusion
+T8	Medical-Anatomy 511 526	right lung base
+T9	Medical-Anatomy 531 541	right apex
+T10	Medical-Problem 544 564	Multifocal opacities
+T11	Medical-Anatomy 577 609	left mid lung field peripherally
+T12	Medical-Anatomy 629 644;646 652	both lower lung fields
+T13	Medical-Problem 719 728	opacities
+T14	Medical-Anatomy 736 745	left lung
+T15	Medical-Assertion 804 806	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 807 819	pneumothorax
+T17	Medical-Problem 920 940	Multifocal opacities
+T18	Medical-Anatomy 1030 1039	left lung
+T19	Medical-Problem 1099 1119	multifocal pneumonia
+E16	Medical-Problem:T19
+T20	Medical-Problem 1129 1172	Chronic calcified bilateral pleural plaques
+E17	Medical-Problem:T20
+T21	Medical-Problem 1177 1200;1202 1210	loculated right pleural effusion
+E18	Medical-Problem:T21
+T22	Medical-Problem 1228 1238	asbestosis
+E19	Medical-Problem:T22
+T23	Medical-Assertion 1284 1294	Resolution
+A4	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1302 1312	previously
+T25	Medical-Problem 1319 1336	pneumomediastinum
+E21	Medical-Problem:T25
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E20	Medical-Problem:T24 has-Medical-Assertion:T23

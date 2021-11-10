@@ -1,0 +1,42 @@
+T1	Medical-Assertion 35 37	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 38 67	acute cardiopulmonary process
+T3	Medical-Assertion 149 162	may represent
+A2	Medical-AssertionValue T3 possible
+T4	Lesion-Characteristic 163 173	asymmetric
+T5	Lesion-Characteristic 190 201	soft tissue
+T6	Lesion-Description 202 206	mass
+T7	Medical-Assertion 481 483	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 484 513	acute cardiopulmonary process
+T9	Medical-Assertion 1040 1043	may
+A4	Medical-AssertionValue T9 possible
+T10	Lesion-Characteristic 1054 1064	asymmetric
+T11	Lesion-Characteristic 1081 1092	soft tissue
+T12	Lesion-Description 1093 1097	mass
+T13	Lesion-Anatomy 1104 1121	cardiomediastinal
+E9	Lesion-Anatomy:T13
+T14	Medical-Assertion 1168 1170	no
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 1172 1184	pneumothorax
+T16	Medical-Problem 1186 1202	pleural effusion
+T17	Medical-Problem 1207 1220	consolidation
+T18	Medical-Assertion 1247 1249	No
+A6	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1250 1255	acute
+E13	Medical-Problem:T19
+T20	Medical-Problem 1256 1279	cardiopulmonary process
+T21	Medical-Assertion 1358 1371	may represent
+A7	Medical-AssertionValue T21 possible
+T22	Lesion-Characteristic 1372 1382	asymmetric
+T23	Lesion-Characteristic 1399 1410	soft tissue
+T24	Lesion-Description 1411 1415	mass
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T14
+E14	Medical-Problem:T20 has-Medical-Assertion:T18
+E17	Lesion-Description:T24 has-Lesion-Characteristic:T22 has-Lesion-Characteristic:T23

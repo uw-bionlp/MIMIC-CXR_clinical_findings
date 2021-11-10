@@ -1,0 +1,30 @@
+T1	Medical-Assertion 235 237	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 238 259	definite pneumothorax
+T3	Medical-Assertion 279 281	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 283 299	pleural effusion
+T5	Medical-Problem 302 321	Right hilar opacity
+E3	Medical-Problem:T5
+T6	Lesion-Anatomy 355 360;362 367	right hilar
+T7	Lesion-Description 368 372	mass
+T8	Medical-Assertion 587 589	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 590 613	new focal consolidation
+T10	Medical-Problem 713 737;739 748	apical bullous pulmonary emphysema
+E7	Medical-Problem:T10
+T11	Lesion-Anatomy 774 785	right hilar
+T12	Lesion-Description 786 790	mass
+T13	Lesion-Size-Trend 791 814	slightly more prominent
+A4	Lesion-Size-TrendValue T13 increasing
+T14	Lesion-Size-Trend 856 877	similar in appearance
+A5	Lesion-Size-TrendValue T14 no-change
+T15	Medical-Assertion 923 925	No
+A6	Medical-AssertionValue T15 absent
+T16	Medical-Problem 926 949	new focal consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T12 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T13 has-Lesion-Size-Trend:T14
+E10	Medical-Problem:T16 has-Medical-Assertion:T15

@@ -1,0 +1,30 @@
+T1	Medical-Problem 323 345	right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 351 359	probable
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 360 387	small left pleural effusion
+T4	Medical-Problem 390 409	Right hilar opacity
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 422 434	retrocardiac
+T6	Lesion-Description 435 442	nodular
+E5	Lesion-Description:T6
+T7	Lesion-Description 443 452	opacities
+T8	Lesion-Size-Trend 457 460	new
+A2	Lesion-Size-TrendValue T8 new
+T9	Medical-Problem 495 520	Overall increased opacity
+T10	Medical-Anatomy 541 563	right lower lung field
+T11	Medical-Problem 607 659	Bilateral pleural effusions, right greater than left
+E9	Medical-Problem:T11
+T12	Medical-Problem 666 682;684 694	central vascular prominence
+E10	Medical-Problem:T12
+T13	Medical-Assertion 698 711	suggestive of
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 712 732	mild pulmonary edema
+T15	Medical-Problem 735 761	New retrocardiac opacities
+E12	Medical-Problem:T15
+T16	Medical-Problem 783 801	infectious process
+E13	Medical-Problem:T16
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,22 @@
+T1	Medical-Problem 251 257;259 272	slight opacification
+T2	Medical-Anatomy 283 296	minor fissure
+T3	Medical-Assertion 303 311	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 314 324;326 339	developing consolidation
+T5	Medical-Assertion 427 429	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 430 442	pneumothorax
+T7	Medical-Problem 446 462	pleural effusion
+T8	Medical-Problem 635 654	Mild hyperinflation
+E6	Medical-Problem:T8
+T9	Medical-Problem 686 700	Slight opacity
+T10	Medical-Anatomy 711 724	minor fissure
+T11	Medical-Assertion 731 739	could be
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 743 767	developing consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

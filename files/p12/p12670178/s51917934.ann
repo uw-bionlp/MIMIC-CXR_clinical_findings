@@ -1,0 +1,32 @@
+T1	Medical-Problem 158 174	pleural effusion
+T2	Medical-Problem 179 201	adjacent consolidation
+T3	Medical-Anatomy 209 213	left
+T4	Lesion-Anatomy 276 287	mediastinal
+T5	Lesion-Description 288 293	lymph
+T6	Medical-Problem 331 344	New opacities
+T7	Medical-Anatomy 352 369	right middle lobe
+T8	Medical-Assertion 370 385	could be due to
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 386 397	atelectasis
+T10	Medical-Problem 402 424	superimposed infection
+T11	Medical-Assertion 425 443	cannot be excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 446 469;471 480	Small bilateral pleural effusions
+E10	Medical-Problem:T12
+T13	Medical-Problem 557 588	increasing adjacent atelectasis
+E11	Medical-Problem:T13
+T14	Medical-Assertion 655 657	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 658 670	pneumothorax
+T16	Lesion-Description 696 702	nodule
+T17	Lesion-Anatomy 710 725	left lower lobe
+T18	Medical-Problem 778 811	pleural parenchymal abnormalities
+E15	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T17

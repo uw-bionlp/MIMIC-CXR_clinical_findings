@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 163 178	Left lower lobe
+T2	Medical-Problem 179 186	opacity
+T3	Medical-Problem 222 238	pleural effusion
+T4	Medical-Problem 244 266	adjacent consolidation
+T5	Medical-Problem 273 295	adjacent consolidation
+E5	Medical-Problem:T5
+T6	Medical-Assertion 296 304	could be
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 305 316	atelectasis
+T8	Medical-Problem 321 330	pneumonia
+T9	Medical-Problem 372 393;395 403	left hemidiaphragm is elevated
+E8	Medical-Problem:T9
+T10	Medical-Problem 425 452	stable mild pulmonary edema
+E9	Medical-Problem:T10
+T11	Medical-Assertion 464 466	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 468 480	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T1
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

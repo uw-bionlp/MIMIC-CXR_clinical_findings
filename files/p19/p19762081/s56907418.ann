@@ -1,0 +1,19 @@
+T1	Medical-Problem 287 301	hyperexpansion
+T2	Medical-Anatomy 309 314	lungs
+T3	Medical-Problem 331 335	COPD
+T4	Lesion-Size 338 343	Large
+T5	Lesion-Anatomy 345 356	mediastinal
+T6	Lesion-Description 357 361	mass
+T7	Medical-Assertion 376 392	without evidence
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 396 411	stent migration
+T9	Medical-Problem 414 423;425 444	Bibasilar atelectatic changes
+E8	Medical-Problem:T9
+T10	Medical-Assertion 450 458	probable
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 459 474	small effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

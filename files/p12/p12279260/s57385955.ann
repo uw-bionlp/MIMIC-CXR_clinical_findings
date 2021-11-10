@@ -1,0 +1,30 @@
+T1	Medical-Problem 231 252	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 332 357;359 379	mild interval increase in retrocardiac opacity
+E2	Medical-Problem:T2
+T3	Medical-Problem 430 463	Small bilateral pleural effusions
+E3	Medical-Problem:T3
+T4	Medical-Problem 480 493;495 503	Mild vascular plethora
+E4	Medical-Problem:T4
+T5	Medical-Problem 511 533	Plate-like atelectasis
+T6	Medical-Anatomy 549 563	mid right lung
+T7	Lesion-Characteristic 567 576	Calcified
+T8	Lesion-Description 577 587	granulomas
+T9	Lesion-Characteristic 602 611	calcified
+T10	Lesion-Description 623 627	node
+T11	Medical-Assertion 660 671	no evidence
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 677 689	pneumothorax
+T13	Medical-Problem 775 809	Interval increase in consolidation
+T14	Medical-Anatomy 817 836	retrocardiac region
+T15	Medical-Assertion 841 855	concerning for
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 856 865	pneumonia
+T17	Medical-Problem 874 918	Persistent small bilateral pleural effusions
+E15	Medical-Problem:T17
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T7
+E10	Lesion-Description:T10 has-Lesion-Characteristic:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

@@ -1,0 +1,48 @@
+T1	Medical-Problem 262 275	Heart remains
+E1	Medical-Problem:T1
+T2	Medical-Problem 276 282;284 297	mildly enlarged with
+E2	Medical-Problem:T2
+T3	Medical-Problem 298 327	left ventricular predominance
+E3	Medical-Problem:T3
+T4	Medical-Problem 430 434;436 449	mild calcification
+T5	Medical-Anatomy 457 468	aortic knob
+T6	Medical-Problem 501 507;509 524	mildly tortuous course
+T7	Medical-Anatomy 532 540	thoracic
+T8	Medical-Anatomy 553 574	pulmonary vascularity
+T9	Medical-Assertion 578 581	not
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 583 591	engorged
+T11	Medical-Problem 594 611	Streaky opacities
+T12	Medical-Anatomy 619 629	lung bases
+T13	Medical-Assertion 647 655;657 667	possibly reflecting
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 668 679	atelectasis
+T15	Medical-Problem 687 696	infection
+T16	Medical-Assertion 697 715	cannot be excluded
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Assertion 718 720	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 721 728;730 738	pleural effusion
+T19	Medical-Problem 742 754	pneumothorax
+T20	Medical-Assertion 781 783	no
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 784 797;799 812	acute osseous abnormalities
+T22	Medical-Problem 832 859	Streaky bibasilar opacities
+E17	Medical-Problem:T22
+T23	Medical-Assertion 867 880	could reflect
+A6	Medical-AssertionValue T23 possible
+T24	Medical-Problem 881 892	atelectasis
+T25	Medical-Problem 900 909	infection
+T26	Medical-Assertion 911 940	cannot be completely excluded
+A7	Medical-AssertionValue T26 possible
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T17
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T24 has-Medical-Assertion:T23
+E19	Medical-Problem:T25 has-Medical-Assertion:T23 has-Medical-Assertion:T26

@@ -1,0 +1,27 @@
+T1	Medical-Problem 254 267	rib fractures
+E1	Medical-Problem:T1
+T2	Medical-Assertion 381 392	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 397 410	rib fractures
+T4	Lesion-Count 432 440	Multiple
+T5	Lesion-Anatomy 441 450	pulmonary
+T6	Lesion-Description 452 459	nodules
+T7	Lesion-Anatomy 472 488	right upper lung
+T8	Lesion-Anatomy 510 527;529 533	left lower to mid lung
+T9	Lesion-Size-Trend 572 595	unchanged in appearance
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Problem 666 687	left pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 784 795	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 799 812	rib fractures
+T13	Lesion-Size-Trend 818 824	Stable
+A4	Lesion-Size-TrendValue T13 no-change
+T14	Lesion-Anatomy 825 834	pulmonary
+T15	Lesion-Description 835 842	nodules
+T16	Medical-Problem 844 875	Decreased left pleural effusion
+E12	Medical-Problem:T16
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Count:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Size-Trend:T13 has-Lesion-Anatomy:T14

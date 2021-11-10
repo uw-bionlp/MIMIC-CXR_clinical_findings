@@ -1,0 +1,23 @@
+T1	Lesion-Count 491 499	multiple
+T2	Lesion-Anatomy 500 519	bilateral pulmonary
+T3	Lesion-Description 520 527	nodules
+T4	Medical-Problem 586 611	more focal patchy opacity
+T5	Medical-Anatomy 619 628	left base
+T6	Medical-Problem 651 659	effusion
+T7	Medical-Assertion 667 678	may reflect
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 679 702	compressive atelectasis
+T9	Medical-Problem 714 736	superimposed pneumonia
+T10	Medical-Problem 740 750	aspiration
+T11	Medical-Assertion 751 771	should be considered
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 861 863	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 864 876	pneumothorax
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T7 has-Medical-Assertion:T11
+E9	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T7 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

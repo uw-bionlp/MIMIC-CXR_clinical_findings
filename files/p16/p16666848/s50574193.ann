@@ -1,0 +1,38 @@
+T1	Medical-Problem 286 313	Bilateral hilar enlargement
+E1	Medical-Problem:T1
+T2	Lesion-Description 340 355	lymphadenopathy
+E2	Lesion-Description:T2
+T3	Medical-Problem 362 391	unchanged mediastinal contour
+E3	Medical-Problem:T3
+T4	Lesion-Description 410 425	lymphadenopathy
+E4	Lesion-Description:T4
+T5	Medical-Anatomy 461 466	Lungs
+T6	Medical-Problem 471 484	hyperinflated
+T7	Medical-Anatomy 515 526	lung apices
+T8	Medical-Problem 531 559;561 578	attenuation of the pulmonary vascular markings
+E8	Medical-Problem:T8
+T9	Medical-Assertion 613 615	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 616 635	focal consolidation
+T11	Medical-Problem 638 654	pleural effusion
+T12	Medical-Problem 658 670	pneumothorax
+T13	Medical-Assertion 697 699	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 700 713;715 728	acute osseous abnormalities
+T15	Lesion-Size-Trend 748 757	Unchanged
+A3	Lesion-Size-TrendValue T15 no-change
+T16	Lesion-Anatomy 758 769	mediastinal
+T17	Lesion-Anatomy 774 779	hilar
+T18	Lesion-Description 780 795	lymphadenopathy
+T19	Medical-Problem 798 807	Emphysema
+E16	Medical-Problem:T19
+T20	Medical-Assertion 810 825;827 846	No radiographic findings to suggest
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 847 856	pneumonia
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E15	Lesion-Description:T18 has-Lesion-Size-Trend:T15 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T17
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

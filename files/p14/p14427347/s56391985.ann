@@ -1,0 +1,40 @@
+T1	Medical-Problem 236 257	Severe hyperinflation
+E1	Medical-Problem:T1
+T2	Medical-Problem 267 283	marked emphysema
+E2	Medical-Problem:T2
+T3	Medical-Problem 286 305	Coarse reticulation
+T4	Medical-Anatomy 314 325	lower lungs
+T5	Medical-Assertion 329 337	probably
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 338 359	severe bronchiectasis
+T7	Lesion-Anatomy 455 467;469 481	right fourth anterior rib
+T8	Medical-Problem 496 512	mucoid impaction
+T9	Lesion-Anatomy 531 535	lung
+T10	Lesion-Description 536 543	nodules
+T11	Medical-Anatomy 596 624	left fourth anterior rib and
+T12	Lesion-Anatomy 660 702	right third and fifth anterior interspaces
+T13	Medical-Problem 727 741	bronchiectasis
+E12	Medical-Problem:T13
+T14	Lesion-Assertion 743 751	could be
+A2	Lesion-AssertionValue T14 possible
+T15	Lesion-Anatomy 760 764	lung
+T16	Lesion-Description 765 772	nodules
+T17	Medical-Problem 783 824	mild generalized interstitial abnormality
+E15	Medical-Problem:T17
+T18	Medical-Assertion 825 840	could be due to
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 841 846	edema
+T20	Medical-Problem 861 893	inflammation from bronchiectasis
+T21	Medical-Problem 928 934;936 951	severe hyperinflation)
+E18	Medical-Problem:T21
+T22	Medical-Assertion 963 965	no
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 966 994	appreciable pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T11
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T9
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T12 has-Lesion-Assertion:T14 has-Lesion-Anatomy:T15
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T18
+E19	Medical-Problem:T23 has-Medical-Assertion:T22

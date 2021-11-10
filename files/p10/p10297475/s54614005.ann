@@ -1,0 +1,31 @@
+T1	Medical-Problem 143 166	intra-pulmonary process
+E1	Medical-Problem:T1
+T2	Lesion-Size-Trend 201 231	no significant interval change
+A1	Lesion-Size-TrendValue T2 no-change
+T3	Lesion-Anatomy 239 244;246 266	right lower lobe and hilar
+T4	Lesion-Description 267 271	mass
+T5	Lesion-Characteristic 277 289	lymphangitic
+T6	Lesion-Description 290 304	carcinomatosis
+T7	Lesion-Anatomy 312 322	right lung
+T8	Lesion-Assertion 326 328	No
+A2	Lesion-AssertionValue T8 absent
+T9	Medical-Problem 329 365	significant pleural effusions.  Mild
+E7	Medical-Problem:T9
+T10	Medical-Problem 366 378	cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Assertion 380 382	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 383 395	pneumothorax
+T13	Lesion-Anatomy 441 451	right lung
+T14	Lesion-Anatomy 461 477	right lower lobe
+T15	Lesion-Anatomy 482 487	hilar
+T16	Lesion-Description 488 492	mass
+T17	Lesion-Characteristic 498 508	asymmetric
+T18	Lesion-Description 509 521	lymphangitic
+E15	Lesion-Description:T18
+T19	Lesion-Description 522 536	carcinomatosis
+E3	Lesion-Description:T4 has-Lesion-Size-Trend:T2 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T15
+E16	Lesion-Description:T19 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T17

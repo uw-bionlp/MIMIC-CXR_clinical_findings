@@ -1,0 +1,22 @@
+T1	Medical-Assertion 33 35	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 58	definite acute process
+T3	Lesion-Size 60 66	1.2 cm
+T4	Lesion-Anatomy 67 83	right upper lobe
+T5	Lesion-Description 84 90	nodule
+T6	Lesion-Characteristic 451 456	vague
+T7	Lesion-Description 457 464	nodular
+E6	Lesion-Description:T7
+T8	Lesion-Description 465 472	opacity
+T9	Lesion-Anatomy 493 504	aortic arch
+T10	Medical-Assertion 696 698	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 699 737	definite acute cardiopulmonary process
+T12	Lesion-Description 740 747	Nodular
+E10	Lesion-Description:T12
+T13	Medical-Problem 748 755	opacity
+E11	Medical-Problem:T13
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

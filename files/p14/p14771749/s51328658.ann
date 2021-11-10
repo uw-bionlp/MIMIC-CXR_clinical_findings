@@ -1,0 +1,60 @@
+T1	Medical-Problem 347 400	Increased retrocardiac opacity with less distinctness
+T2	Medical-Anatomy 409 445	lateral border of the thoracic aorta
+T3	Medical-Problem 475 497	increasing atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Problem 516 529	new elevation
+T5	Medical-Anatomy 537 541;543 556	left hemidiaphragm
+T6	Medical-Problem 572 583	volume loss
+T7	Medical-Problem 595 615	underlying infection
+T8	Medical-Assertion 654 683	cannot be completely excluded
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 686 694;696 713	Slightly increased opacity
+T10	Medical-Anatomy 721 743	right lower hemithorax
+T11	Medical-Assertion 764 767;769 776	may reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 777 795	positional changes
+T13	Lesion-Anatomy 800 827	right lower lobe subpleural
+T14	Lesion-Description 828 834	nodule
+T15	Medical-Problem 883 917;919 927	heart remains moderate to severely enlarged
+E13	Medical-Problem:T15
+T16	Medical-Assertion 1072 1074	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1075 1087	pneumothorax
+T18	Medical-Problem 1091 1107	pleural effusion
+T19	Medical-Assertion 1110 1112	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1113 1134	frank pulmonary edema
+T21	Medical-Problem 1137 1149;1151 1158	Degenerative changes
+T22	Medical-Anatomy 1166 1180	thoracic spine
+T23	Medical-Problem 1202 1225;1227 1240	bones appear relatively demineralized
+T24	Medical-Problem 1390 1420	Increased retrocardiac opacity
+E20	Medical-Problem:T24
+T25	Medical-Anatomy 1447 1451;1453 1466	left hemidiaphragm
+T26	Medical-Assertion 1470 1478	probably
+A5	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1479 1501	increasing atelectasis
+T28	Medical-Problem 1512 1522;1524 1533	underlying pneumonia
+T29	Medical-Assertion 1534 1563	cannot be completely excluded
+A6	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1610 1641	Moderate to severe cardiomegaly
+E24	Medical-Problem:T30
+T31	Medical-Assertion 1655 1657	No
+A7	Medical-AssertionValue T31 absent
+T32	Medical-Problem 1658 1673	pulmonary edema
+T33	Medical-Problem 1678 1686	effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22
+E19	Medical-Problem:T23 has-Medical-Anatomy:T22
+E22	Medical-Problem:T27 has-Medical-Anatomy:T25 has-Medical-Assertion:T26
+E23	Medical-Problem:T28 has-Medical-Anatomy:T25 has-Medical-Assertion:T29
+E25	Medical-Problem:T32 has-Medical-Assertion:T31
+E26	Medical-Problem:T33 has-Medical-Assertion:T31

@@ -1,0 +1,33 @@
+T1	Medical-Problem 468 499	extensive parenchymal densities
+T2	Medical-Anatomy 507 521;523 534	left-sided mid lung fields
+T3	Medical-Problem 574 600	some peribronchial density
+T4	Medical-Anatomy 609 624	lower lobe area
+T5	Medical-Assertion 630 632	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 633 650	new abnormalities
+T7	Medical-Problem 662 675	Mild blunting
+T8	Medical-Anatomy 684 716	left-sided lateral pleural sinus
+T9	Medical-Anatomy 735 751	right hemithorax
+T10	Medical-Problem 754 769	diffuse density
+T11	Medical-Anatomy 777 787	lower area
+T12	Medical-Problem 801 827;829 836	conceals the diaphragmatic contour
+E11	Medical-Problem:T12
+T13	Medical-Assertion 837 850	suggestive of
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 851 886	larger right-sided pleural effusion
+T15	Lesion-Size 912 922	large size
+T16	Lesion-Characteristic 923 932	calcified
+T17	Lesion-Description 933 942	granuloma
+T18	Lesion-Size-Trend 959 968	unchanged
+A3	Lesion-Size-TrendValue T18 no-change
+T19	Medical-Problem 1081 1113	left-sided parenchymal densities
+E16	Medical-Problem:T19
+T20	Medical-Problem 1169 1191;1193 1213	extensive intracardiac valve calcifications
+E17	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9 has-Medical-Anatomy:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T13
+E15	Lesion-Description:T17 has-Lesion-Size-Present:T15 has-Lesion-Characteristic:T16 has-Lesion-Size-Trend:T18

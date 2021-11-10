@@ -1,0 +1,50 @@
+T1	Medical-Problem 231 245	patchy opacity
+T2	Medical-Anatomy 253 267	left lung base
+T3	Medical-Assertion 268 283	could be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 285 296	atelectasis
+T5	Medical-Problem 305 329	underlying consolidation
+T6	Medical-Assertion 333 345	not excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 360 375	rounded opacity
+T8	Medical-Anatomy 383 398	right lung base
+T9	Medical-Problem 503 511	Blunting
+T10	Medical-Anatomy 520 539	costophrenic angles
+T11	Medical-Assertion 540 553	may be due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 554 577	trace pleural effusions
+T13	Medical-Anatomy 584 591	cardiac
+E10	Medical-Anatomy:T13
+T14	Lesion-Characteristic 630 639	Calcified
+T15	Lesion-Anatomy 640 650	left hilar
+T16	Lesion-Description 651 656	nodes
+T17	Medical-Problem 724 757	Small bilateral pleural effusions
+E14	Medical-Problem:T17
+T18	Medical-Problem 760 779	Bibasilar opacities
+E15	Medical-Problem:T18
+T19	Medical-Assertion 780 783;785 794	may represent
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 810 818	effusion
+T21	Medical-Problem 823 834	atelectasis
+T22	Medical-Problem 845 861;863 876	underlying early consolidation
+T23	Medical-Assertion 877 895	cannot be excluded
+A5	Medical-AssertionValue T23 possible
+T24	Lesion-Size 898 904	1.3-cm
+T25	Lesion-Description 905 912	nodular
+E20	Lesion-Description:T25
+T26	Lesion-Description 913 920	opacity
+T27	Lesion-Characteristic 1077 1086	Calcified
+T28	Lesion-Anatomy 1087 1097	left hilar
+T29	Lesion-Description 1099 1103	node
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Lesion-Description:T16 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T23
+E21	Lesion-Description:T26 has-Lesion-Size-Present:T24
+E24	Lesion-Description:T29 has-Lesion-Characteristic:T27 has-Lesion-Anatomy:T28

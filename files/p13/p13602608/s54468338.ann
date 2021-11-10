@@ -1,0 +1,23 @@
+T1	Medical-Assertion 438 440	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 441 453	pneumothorax
+T3	Medical-Problem 456 482	Increased linear opacities
+T4	Medical-Anatomy 500 515	right lung base
+T5	Medical-Problem 533 576;578 619	atelectasis superimposed on a background of diffuse chronic interstitial lung disease
+E4	Medical-Problem:T5
+T6	Medical-Problem 687 698	Enlarged on
+T7	Medical-Anatomy 703 714	right hilum
+T8	Lesion-Characteristic 735 745	underlying
+T9	Lesion-Description 746 761	lymphadenopathy
+T10	Medical-Anatomy 802 815	Left internal
+T11	Medical-Problem 848 861	malpositioned
+T12	Medical-Anatomy 885 906	right subclavian vein
+T13	Medical-Assertion 909 911	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 912 924	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

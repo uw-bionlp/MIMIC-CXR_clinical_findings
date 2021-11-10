@@ -1,0 +1,36 @@
+T1	Medical-Problem 60 73	Left clavicle
+E1	Medical-Problem:T1
+T2	Medical-Problem 333 340	tenting
+T3	Medical-Problem 346 354	scarring
+T4	Medical-Anatomy 362 370	residual
+T5	Medical-Anatomy 371 387	right upper lobe
+T6	Medical-Problem 396 407	apical bleb
+T7	Medical-Problem 419 423;425 448	more opacification that what
+T8	Medical-Anatomy 468 497;499 504	particularly around the right hilum
+T9	Medical-Problem 507 540	Ground-glass micronodular opacity
+T10	Medical-Anatomy 548 565	right middle lobe
+T11	Medical-Assertion 602 613	may reflect
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 617 630	infectious or
+E11	Medical-Problem:T12
+T13	Medical-Problem 631 643;645 652	inflammatory process
+T14	Medical-Assertion 689 691	no
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 692 708	pleural effusion
+T16	Medical-Problem 818 835;837 895	more opacity than what would be expected for the usual post-operative change
+E14	Medical-Problem:T16
+T17	Lesion-Characteristic 913 925	ground-glass
+T18	Lesion-Description 926 933	nodular
+E16	Lesion-Description:T18
+T19	Lesion-Description 934 943	opacities
+T20	Lesion-Anatomy 951 977	superior right middle lobe
+T21	Medical-Assertion 1023 1036	may represent
+A3	Medical-AssertionValue T21 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T5
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E17	Lesion-Description:T19 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T20

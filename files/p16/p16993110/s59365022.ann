@@ -1,0 +1,34 @@
+T1	Medical-Problem 314 330	Severe emphysema
+E1	Medical-Problem:T1
+T2	Medical-Problem 363 392	Increased reticular opacities
+T3	Medical-Anatomy 404 425	lungs most notable in
+T4	Medical-Anatomy 430 441;443 457	right upper and lower lung
+T5	Medical-Assertion 458 471	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 475 493	atypical pneumonia
+T7	Medical-Problem 496 503	Opacity
+T8	Medical-Anatomy 511 516;518 535	right lateral lung base
+T9	Medical-Assertion 567 580	may represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 583 594;596 608	small focus of pneumonia
+T11	Medical-Assertion 611 613	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 614 628	large effusion
+T13	Medical-Assertion 681 683	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 684 696	pneumothorax
+T15	Medical-Problem 746 767	Severe emphysema with
+E11	Medical-Problem:T15
+T16	Medical-Problem 768 796	increased reticular markings
+T17	Medical-Anatomy 817 822;824 828	right lung
+T18	Medical-Assertion 829 843	concerning for
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 844 862	atypical pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17
+E14	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

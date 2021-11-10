@@ -1,0 +1,33 @@
+T1	Medical-Problem 64 106;108 116	Moderate bilateral  perihilar ground glass  opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 156 171	pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Assertion 192 194	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 195 203	effusion
+T5	Medical-Problem 207 218	pnumothorax
+T6	Medical-Problem 405 410	edema
+E5	Medical-Problem:T6
+T7	Medical-Problem 557 583	Ground-glass opacification
+T8	Medical-Anatomy 587 612	both lungs, right greater
+T9	Medical-Problem 653 668	pulmonary edema
+T10	Medical-Assertion 721 729	suggests
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 730 753	left atrial enlargement
+T12	Medical-Problem 758 775;777 800	central pulmonary vasculature is engorged
+T13	Medical-Assertion 801 811	suggesting
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 812 841	elevated left atrial pressure
+T15	Medical-Problem 844 851;853 884	Pleural effusion is small, on the right
+E12	Medical-Problem:T15
+T16	Medical-Assertion 887 889	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 890 902	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T10 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

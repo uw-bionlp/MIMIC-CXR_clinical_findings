@@ -1,0 +1,31 @@
+T1	Medical-Problem 167 187	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 190 234;236 249	Substantial right upper and right lower lobe consolidation
+E2	Medical-Problem:T2
+T3	Medical-Problem 272 306;308 332	asymmetrically distributed diffuse interstitial abnormality
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 391 396	Right
+T5	Medical-Problem 460 482	adjacent consolidation
+T6	Medical-Problem 484 521	Tracheoesophageal stripe is thickened
+E6	Medical-Problem:T6
+T7	Medical-Problem 550 578	Small right pleural effusion
+E7	Medical-Problem:T7
+T8	Medical-Anatomy 609 635	Right upper and lower lobe
+T9	Medical-Problem 636 649	consolidation
+T10	Medical-Problem 655 667;669 692	asymmetrical interstitial thickening
+T11	Medical-Assertion 693 706	could reflect
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 707 727	widespread pneumonia
+T13	Medical-Problem 731 741	aspiration
+T14	Medical-Problem 748 764	coexisting edema
+T15	Lesion-Anatomy 770 774	lung
+T16	Lesion-Description 775 789	adenocarcinoma
+T17	Lesion-Assertion 790 795	could
+A2	Lesion-AssertionValue T17 possible
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E9	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Anatomy:T8
+E11	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Anatomy:T8 has-Medical-Assertion:T11
+E13	Medical-Problem:T14 has-Medical-Anatomy:T8 has-Medical-Assertion:T11
+E15	Lesion-Description:T16 has-Lesion-Anatomy:T15 has-Lesion-Assertion:T17

@@ -1,0 +1,16 @@
+T1	Medical-Problem 260 287	bilateral pleural effusions
+T2	Medical-Anatomy 329 340	lower lungs
+T3	Medical-Problem 355 382	heterogeneous consolidation
+T4	Medical-Anatomy 386 398;400 441	both mid and lower lung zones, left greater than right
+T5	Medical-Assertion 443 469	which should be considered
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 471 480	pneumonia
+T7	Medical-Problem 484 504	pulmonary hemorrhage
+T8	Medical-Problem 540 562	silhouette is obscured
+E7	Medical-Problem:T8
+T9	Medical-Problem 581 593	cardiomegaly
+E8	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5

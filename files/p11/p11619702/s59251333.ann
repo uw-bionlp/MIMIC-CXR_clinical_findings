@@ -1,0 +1,24 @@
+T1	Medical-Anatomy 231 246	Right lung base
+T2	Medical-Problem 247 263	linear opacities
+T3	Medical-Problem 268 276	blunting
+T4	Medical-Anatomy 285 309	right costophrenic angle
+T5	Medical-Anatomy 342 347	lungs
+T6	Medical-Problem 352 360;362 375	slightly hyperinflated
+T7	Medical-Anatomy 400 405	lungs
+T8	Medical-Assertion 426 433	without
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 434 439;441 454	focal consolidation
+T10	Medical-Problem 456 472	pleural effusion
+T11	Medical-Problem 477 489	pneumothorax
+T12	Medical-Problem 511 525	Hyperinflation
+E11	Medical-Problem:T12
+T13	Medical-Assertion 526 533	without
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 534 553	focal consolidation
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

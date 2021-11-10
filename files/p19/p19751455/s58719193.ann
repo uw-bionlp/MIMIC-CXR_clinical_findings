@@ -1,0 +1,43 @@
+T1	Medical-Problem 337 364	Heterogeneous consolidation
+T2	Medical-Anatomy 365 380	left lower lung
+T3	Medical-Assertion 397 405	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 407 416	pneumonia
+T5	Medical-Problem 418 428	aspiration
+T6	Medical-Problem 433 461	procedure related hemoptysis
+T7	Medical-Problem 463 482	Emphysema is severe
+E6	Medical-Problem:T7
+T8	Medical-Assertion 495 497	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 498 513	obvious effects
+T10	Medical-Problem 521 557	right upper lobe bronchial occlusion
+E8	Medical-Problem:T10
+T11	Lesion-Size 596 601	15 mm
+T12	Lesion-Anatomy 602 622	left lower lobe lung
+T13	Lesion-Description 623 629	nodule
+T14	Lesion-Description 654 663	carcinoma
+T15	Medical-Assertion 756 758	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 759 771	pneumothorax
+T17	Medical-Problem 775 791	pleural effusion
+T18	Medical-Problem 794 818	Left upper lobe scarring
+E15	Medical-Problem:T18
+T19	Medical-Problem 823 855	marked apical pleural thickening
+E16	Medical-Problem:T19
+T20	Medical-Assertion 874 889	could be due to
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 890 911	previous tuberculosis
+T22	Medical-Assertion 1000 1002	no
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1003 1018	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E11	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T12
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

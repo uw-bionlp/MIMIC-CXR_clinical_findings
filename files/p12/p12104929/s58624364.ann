@@ -1,0 +1,26 @@
+T1	Medical-Problem 261 280	extensive unfolding
+T2	Medical-Anatomy 288 296;298 303	thoracic aorta
+T3	Medical-Problem 309 322	calcification
+T4	Medical-Anatomy 334 339	aorta
+T5	Medical-Anatomy 341 362	tracheobronchial tree
+T6	Lesion-Anatomy 371 376;378 390	right paratracheal
+T7	Lesion-Description 391 395	node
+T8	Medical-Problem 404 422	patchy atelectasis
+E8	Medical-Problem:T8
+T9	Medical-Problem 460 477	pleural effusions
+E9	Medical-Problem:T9
+T10	Medical-Assertion 616 618	no
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 619 630;632 641	significant worsening
+T12	Medical-Assertion 653 669	no good evidence
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 676 692	acute infiltrate
+T14	Medical-Assertion 712 714	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 715 740	definitive acute findings
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

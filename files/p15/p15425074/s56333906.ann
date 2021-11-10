@@ -1,0 +1,40 @@
+T1	Medical-Problem 244 276	bilateral moderate consolidation
+T2	Medical-Problem 283 299	pleural effusion
+T3	Medical-Anatomy 307 318	lower lungs
+T4	Medical-Problem 321 331	Aspiration
+T5	Medical-Problem 335 344	pneumonia
+T6	Medical-Assertion 345 354;356 364	cannot be excluded
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 384 401	post-radic change
+T8	Medical-Problem 406 430;432 440	loculated apical pleural effusion
+T9	Medical-Anatomy 448 464	right upper lobe
+T10	Lesion-Characteristic 471 480	calcified
+T11	Lesion-Anatomy 481 492	mediastinal
+T12	Lesion-Description 493 504	lymph nodes
+T13	Lesion-Size-Trend 510 519	unchanged
+A2	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Problem 676 705	Unchanged degenerative change
+T15	Medical-Anatomy 713 722	shoulders
+T16	Medical-Assertion 734 736	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 738 750	pneumothorax
+T18	Medical-Problem 827 849	moderate consolidation
+T19	Medical-Problem 854 870	pleural effusion
+T20	Medical-Anatomy 878 889	lower lungs
+T21	Medical-Problem 933 955	superimposed infection
+T22	Medical-Problem 959 969	aspiration
+T23	Medical-Assertion 971 989	cannot be excluded
+A4	Medical-AssertionValue T23 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Assertion:T6
+E5	Medical-Problem:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T9
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T20
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T21 has-Medical-Assertion:T23
+E19	Medical-Problem:T22 has-Medical-Assertion:T23

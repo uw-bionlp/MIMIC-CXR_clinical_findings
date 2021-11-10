@@ -1,0 +1,30 @@
+T1	Lesion-Characteristic 261 270	calcified
+T2	Lesion-Description 271 277	nodule
+T3	Lesion-Anatomy 298 338	superior segment of the right upper lobe
+T4	Lesion-Assertion 340 350	suggesting
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Description 353 362	granuloma
+T6	Lesion-Assertion 370 373	may
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Size 379 384	small
+T8	Lesion-Characteristic 385 394	calcified
+T9	Lesion-Description 395 405	lymph node
+T10	Lesion-Anatomy 414 419	right
+T11	Medical-Problem 421 438	Streaky opacities
+T12	Medical-Anatomy 446 460	left lung base
+T13	Medical-Problem 487 491;493 507	very minor scarring
+T14	Medical-Assertion 552 554	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 555 571	pleural effusion
+T16	Medical-Problem 576 588	pneumothorax
+T17	Medical-Assertion 609 620	No evidence
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 624 653	acute cardiopulmonary disease
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Assertion:T4
+E7	Lesion-Description:T9 has-Lesion-Assertion:T6 has-Lesion-Size-Present:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

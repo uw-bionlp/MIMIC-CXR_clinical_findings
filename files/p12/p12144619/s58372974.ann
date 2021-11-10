@@ -1,0 +1,34 @@
+T1	Medical-Problem 470 502	large loculated pleural effusion
+T2	Medical-Anatomy 521 540	right major fissure
+T3	Medical-Problem 543 550	Streaky
+E3	Medical-Problem:T3
+T4	Medical-Problem 551 578	left retrocardiac opacities
+E4	Medical-Problem:T4
+T5	Medical-Assertion 579 595	likely represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 597 608	atelectasis
+T7	Medical-Problem 619 628	infection
+T8	Medical-Assertion 632 652	difficult to exclude
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 663 665	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 667 691	appreciable pneumothorax
+T11	Medical-Problem 708 730	right hemidiaphragm is
+E8	Medical-Problem:T11
+T12	Medical-Problem 731 737;739 768	mildly elevated relative to the left
+E9	Medical-Problem:T12
+T13	Medical-Assertion 935 951	likely represent
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 952 963	atelectasis
+T15	Medical-Problem 974 984;986 995	underlying infection
+T16	Medical-Assertion 999 1030	difficult to exclude completely
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1059 1091	loculated right pleural effusion
+T18	Medical-Anatomy 1103 1108;1110 1117	major fissure
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T16
+E12	Medical-Problem:T17 has-Medical-Anatomy:T18

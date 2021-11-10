@@ -1,0 +1,19 @@
+T1	Medical-Assertion 426 428	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 429 441	pneumothorax
+T3	Medical-Problem 445 465	mediastinal widening
+T4	Medical-Problem 468 479;481 521	Moderate to severe enlargement of cardiac silhouette
+E3	Medical-Problem:T4
+T5	Medical-Problem 585 614	Pulmonary vascular congestion
+E4	Medical-Problem:T5
+T6	Medical-Problem 634 662	small right pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Problem 667 677	minimal if
+T8	Medical-Anatomy 706 722	right lower lung
+T9	Medical-Assertion 739 741	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 742 754	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

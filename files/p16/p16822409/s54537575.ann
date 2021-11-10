@@ -1,0 +1,42 @@
+T1	Medical-Problem 204 217	large opacity
+T2	Medical-Anatomy 225 280;282 291	left lower paratracheal region extending up to the left lung apex
+T3	Lesion-Anatomy 309 323	left neck base
+T4	Lesion-Description 324 328	mass
+T5	Lesion-Count 430 438	Multiple
+T6	Lesion-Description 439 446	nodular
+E6	Lesion-Description:T6
+T7	Lesion-Description 447 454	lesions
+T8	Lesion-Anatomy 462 472	right lung
+T9	Lesion-Assertion 473 487	concerning for
+A1	Lesion-AssertionValue T9 possible
+T10	Lesion-Description 500 508	deposits
+T11	Lesion-Size-Trend 510 515	which
+A2	Lesion-Size-TrendValue T11 increasing
+T12	Lesion-Size-Trend 516 530	have increased
+A3	Lesion-Size-TrendValue T12 increasing
+T13	Medical-Assertion 585 587	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 588 604	pleural effusion
+T15	Medical-Assertion 673 675	no
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 676 694	finding concerning
+T17	Medical-Problem 699 708	pneumonia
+E12	Medical-Problem:T17
+T18	Medical-Problem 712 724	Mild opacity
+T19	Medical-Anatomy 732 756	right paracardiac region
+T20	Medical-Anatomy 771 784;786 792	right cardiac margin
+T21	Medical-Assertion 796 802	likely
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 803 822	middle lobe process
+T23	Medical-Assertion 846 858	could be due
+A7	Medical-AssertionValue T23 possible
+T24	Medical-Problem 863 873	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T9 has-Lesion-Size-Trend:T11 has-Lesion-Size-Trend:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Anatomy:T19 has-Medical-Anatomy:T20
+E16	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E17	Medical-Problem:T24 has-Medical-Anatomy:T20 has-Medical-Assertion:T23

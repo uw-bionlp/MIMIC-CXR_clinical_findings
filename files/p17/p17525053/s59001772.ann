@@ -1,0 +1,16 @@
+T1	Medical-Problem 320 350	Minimally improved ventilation
+T2	Medical-Anatomy 359 375	right lung bases
+T3	Medical-Problem 377 398	Unchanged atelectasis
+T4	Medical-Anatomy 406 421	left lung bases
+T5	Medical-Problem 423 432;434 455	Unchanged moderate cardiomegaly
+E5	Medical-Problem:T5
+T6	Medical-Assertion 456 463	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 464 485	overt pulmonary edema
+T8	Medical-Assertion 487 489	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 490 502	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

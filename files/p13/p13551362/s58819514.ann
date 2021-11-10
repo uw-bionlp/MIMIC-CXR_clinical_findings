@@ -1,0 +1,19 @@
+T1	Medical-Assertion 302 313	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 322 330	presence
+E1	Medical-Problem:T2
+T3	Medical-Problem 336 348	pneumothorax
+T4	Medical-Problem 351 369;371 412	Mild postoperative bilateral opacities, right more than left
+E3	Medical-Problem:T4
+T5	Medical-Assertion 414 428	likely reflect
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 429 440	atelectasis
+T7	Medical-Assertion 503 505	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 506 523	pleural effusions
+T9	Lesion-Anatomy 531 542	mediastinal
+T10	Lesion-Description 543 547	mass
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Lesion-Description:T10 has-Lesion-Anatomy:T9

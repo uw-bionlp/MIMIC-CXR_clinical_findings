@@ -1,0 +1,41 @@
+T1	Lesion-Characteristic 344 353	calcified
+T2	Lesion-Description 354 360	lesion
+T3	Lesion-Anatomy 368 388	right upper quadrant
+T4	Lesion-Characteristic 421 430	calcified
+T5	Lesion-Description 431 437	lesion
+T6	Lesion-Anatomy 445 467	right renal upper pole
+T7	Medical-Assertion 523 530	without
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 540 549	pneumonia
+T9	Medical-Problem 553 558	edema
+T10	Medical-Problem 565 578;580 595	heart remains mildly enlarged
+E9	Medical-Problem:T10
+T11	Medical-Problem 601 618	subtle prominence
+T12	Medical-Anatomy 626 655	main pulmonary artery contour
+T13	Medical-Problem 704 722;724 736	pulmonary arterial hypertension
+T14	Medical-Assertion 739 741	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 742 756	large effusion
+T16	Medical-Problem 760 772	pneumothorax
+T17	Medical-Assertion 848 850	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 851 859	free air
+T19	Medical-Anatomy 870 875;877 890	right hemidiaphragm
+T20	Medical-Problem 911 928	Mild cardiomegaly
+T21	Medical-Problem 934 944	prominence
+T22	Medical-Anatomy 952 981	main pulmonary artery contour
+T23	Medical-Assertion 984 997	correlate for
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 998 1029	pulmonary arterial hypertension
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T13 has-Medical-Anatomy:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T18 has-Medical-Assertion:T17 has-Medical-Anatomy:T19
+E17	Medical-Problem:T20 has-Medical-Anatomy:T22
+E18	Medical-Problem:T21 has-Medical-Anatomy:T22
+E20	Medical-Problem:T24 has-Medical-Assertion:T23

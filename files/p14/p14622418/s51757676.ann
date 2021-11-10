@@ -1,0 +1,40 @@
+T1	Medical-Problem 225 239	enlarged heart
+E1	Medical-Problem:T1
+T2	Medical-Assertion 242 253	No evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 258 273	pulmonary edema
+T4	Medical-Problem 275 285	Prominence
+T5	Medical-Anatomy 293 303	left hilus
+T6	Medical-Assertion 337 339	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 340 356	pleural effusion
+T8	Medical-Problem 360 372	pneumothorax
+T9	Medical-Assertion 374 376	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 377 396	focal consolidation
+T11	Medical-Assertion 397 407	convincing
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 413 422	pneumonia
+T13	Medical-Assertion 441 443	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 444 469	acute osseous abnormality
+T15	Medical-Problem 490 504	Enlarged heart
+E10	Medical-Problem:T15
+T16	Medical-Problem 554 565;567 575	pericardial effusion
+T17	Medical-Assertion 576 594	cannot be excluded
+A6	Medical-AssertionValue T17 possible
+T18	Medical-Problem 599 609	Prominence
+T19	Medical-Anatomy 617 627	left hilus
+T20	Lesion-Assertion 638 646	question
+A7	Lesion-AssertionValue T20 possible
+T21	Lesion-Description 647 657	adenopathy
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T17
+E12	Medical-Problem:T18 has-Medical-Anatomy:T19
+E14	Lesion-Description:T21 has-Lesion-Assertion:T20

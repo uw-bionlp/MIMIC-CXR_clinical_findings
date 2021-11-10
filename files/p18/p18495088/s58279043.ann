@@ -1,0 +1,18 @@
+T1	Medical-Problem 606 629	region of consolidation
+T2	Medical-Anatomy 637 652	left lower lobe
+T3	Lesion-Anatomy 702 706	lung
+T4	Lesion-Description 707 714	lesions
+T5	Lesion-Assertion 719 730	not visible
+A1	Lesion-AssertionValue T5 absent
+T6	Medical-Problem 744 756	cardiomegaly
+E5	Medical-Problem:T6
+T7	Medical-Assertion 768 770	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 771 815	pulmonary or mediastinal vascular congestion
+T9	Medical-Problem 828 850	cardiac decompensation
+T10	Medical-Problem 862 889	bilateral pleural effusions
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

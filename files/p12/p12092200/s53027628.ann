@@ -1,0 +1,34 @@
+T1	Medical-Anatomy 413 433	mediastinal contours
+T2	Medical-Problem 446 453;455 475	central vascular engorgement
+T3	Medical-Problem 489 529;531 540	lobulated contour with areas of tracheal narrowing
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 547 552	lungs
+T5	Medical-Problem 565 595	diffuse interstial abnormality
+T6	Medical-Problem 635 682	worsening of the right lower lung consolidation
+E6	Medical-Problem:T6
+T7	Medical-Assertion 694 696	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 697 713	pleural effusion
+T9	Medical-Problem 717 729	pneumothorax
+T10	Medical-Problem 775 815	Worsening right lower lung consolidation
+E9	Medical-Problem:T10
+T11	Medical-Assertion 816 830	concerning for
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 831 842	pneumonia (
+T13	Medical-Problem 852 863	aspiration)
+T14	Medical-Problem 867 877	hemorrhage
+T15	Medical-Problem 883 913	Lobulated mediastinal contours
+E13	Medical-Problem:T15
+T16	Medical-Problem 919 937	tracheal narrowing
+E14	Medical-Problem:T16
+T17	Lesion-Assertion 938 957	raise suspicion for
+A3	Lesion-AssertionValue T17 possible
+T18	Lesion-Description 959 974	lymphadenopathy
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T11
+E15	Lesion-Description:T18 has-Lesion-Assertion:T17

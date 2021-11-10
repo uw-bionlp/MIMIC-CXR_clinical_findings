@@ -1,0 +1,30 @@
+T1	Medical-Assertion 242 244	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 245 250;252 265	lobar consolidation
+T3	Medical-Problem 269 298	convincing signs of pneumonia
+T4	Medical-Problem 311 327	linear densities
+T5	Medical-Anatomy 336 347	lower lungs
+T6	Medical-Assertion 348 370	likely compatible with
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 371 382	atelectasis
+T8	Medical-Assertion 385 387	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 388 402	large effusion
+T10	Medical-Problem 407 419	pneumothorax
+T11	Medical-Problem 489 509	Apparent enlargement
+T12	Medical-Anatomy 517 535	pulmonary arteries
+T13	Medical-Assertion 536 549	could reflect
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 551 582	pulmonary arterial hypertension
+T15	Medical-Assertion 585 587	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 588 600	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

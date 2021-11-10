@@ -1,0 +1,42 @@
+T1	Medical-Problem 189 216	small left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 292 320	small right pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 354 387	Increased consolidative opacities
+T4	Medical-Anatomy 395 404;406 411	left lung  base
+T5	Medical-Assertion 412 420	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 421 444	compressive atelectasis
+T7	Medical-Problem 455 477	aspiration pneumonitis
+T8	Medical-Problem 483 503	developing infection
+T9	Medical-Assertion 504 522	cannot be excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 536 560;562 584	minimal right lower lung  dependent atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Assertion 587 589	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 590 602	pneumothorax
+T13	Medical-Anatomy 1119 1128	bilateral
+T14	Medical-Problem 1143 1165	large pleural effusion
+T15	Medical-Problem 1235 1255	vascular engorgement
+E12	Medical-Problem:T15
+T16	Medical-Problem 1258 1277	Bibasal atelectasis
+E13	Medical-Problem:T16
+T17	Medical-Problem 1282 1289;1291 1299	pleural effusion
+E14	Medical-Problem:T17
+T18	Medical-Assertion 1300 1325	might potentially obscure
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1326 1342	pleural effusion
+T20	Medical-Assertion 1354 1356	no
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1358 1370	pneumothorax
+T22	Medical-Problem 1373 1405	Apical calcified pleural plaques
+E17	Medical-Problem:T22
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

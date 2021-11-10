@@ -1,0 +1,30 @@
+T1	Medical-Problem 236 249	large density
+T2	Medical-Anatomy 269 286	lower mediastinum
+T3	Medical-Problem 292 300	splaying
+T4	Medical-Anatomy 321 339;341 358	visualized aerated portions of lungs
+T5	Medical-Assertion 371 373	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 374 387	consolidation
+T7	Medical-Problem 389 405	pleural effusion
+T8	Medical-Problem 408 420	pneumothorax
+T9	Medical-Problem 425 440	pulmonary edema
+T10	Medical-Problem 503 520	overlying density
+E9	Medical-Problem:T10
+T11	Medical-Problem 538 551	Large density
+T12	Medical-Anatomy 559 574	mid lower chest
+T13	Medical-Assertion 605 618	may represent
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 621 640	dilated left atrium
+T15	Medical-Problem 644 657	hiatal hernia
+T16	Lesion-Anatomy 661 672	mediastinal
+T17	Lesion-Description 673 677	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Lesion-Description:T17 has-Lesion-Anatomy:T16

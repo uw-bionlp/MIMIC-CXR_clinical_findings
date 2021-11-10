@@ -1,0 +1,39 @@
+T1	Medical-Problem 363 395	left cardiophrenic angle opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 397 415	most likely due to
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 418 439;441 448	prominent pericardial fat pad
+T4	Lesion-Assertion 453 464	less likely
+A2	Lesion-AssertionValue T4 possible
+T5	Lesion-Description 467 471	cyst
+T6	Lesion-Description 475 481	lipoma
+T7	Medical-Problem 524 547	Lungs are hyperexpanded
+E5	Medical-Problem:T7
+T8	Medical-Problem 613 630	focal linear scar
+T9	Medical-Problem 634 645	atelectasis
+T10	Medical-Anatomy 653 660	lingula
+T11	Medical-Assertion 663 665	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 666 673;675 683	pleural effusion
+T13	Medical-Problem 687 699	pneumothorax
+T14	Medical-Assertion 719 721	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 722 749	acute osseous abnormalities
+T16	Medical-Assertion 774 798	No radiographic evidence
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 802 811	pneumonia
+T18	Medical-Problem 820 824	Left
+E13	Medical-Problem:T18
+T19	Medical-Assertion 856 874	most likely due to
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 877 886;888 907	prominent pericardial fat pad
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Lesion-Description:T5 has-Lesion-Assertion:T4
+E4	Lesion-Description:T6 has-Lesion-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Anatomy:T10
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

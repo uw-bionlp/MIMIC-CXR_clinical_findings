@@ -1,0 +1,16 @@
+T1	Medical-Problem 309 340	Small right apical pneumothorax
+T2	Medical-Problem 345 367	subcutaneous emphysema
+T3	Medical-Anatomy 375 386;388 402	right neck, apical pleural
+T4	Medical-Problem 420 453	Very small right pleural effusion
+E4	Medical-Problem:T4
+T5	Medical-Problem 456 469	Opacification
+T6	Medical-Anatomy 470 485	right lung apex
+T7	Medical-Assertion 486 494	probably
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 495 503	hematoma
+T9	Medical-Problem 508 519	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7

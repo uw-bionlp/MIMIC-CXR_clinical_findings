@@ -1,0 +1,23 @@
+T1	Medical-Problem 403 437	Bilateral calcified pleural plaque
+T2	Medical-Problem 452 461	opacities
+T3	Medical-Anatomy 483 494	lower lungs
+T4	Medical-Assertion 501 522	appear concerning for
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 523 532	pneumonia
+T6	Medical-Assertion 535 537	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 539 553	large effusion
+T8	Medical-Assertion 564 566	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 567 579	pneumothorax
+T10	Medical-Problem 730 747	Basilar opacities
+E7	Medical-Problem:T10
+T11	Medical-Assertion 755 769	concerning for
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 771 780	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

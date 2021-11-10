@@ -1,0 +1,30 @@
+T1	Medical-Problem 248 269	new increased density
+T2	Medical-Anatomy 277 292	right lung base
+T3	Medical-Assertion 303 317	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 319 328	pneumonia
+T5	Medical-Anatomy 350 366	right lower lobe
+T6	Lesion-Size 369 374	Small
+T7	Lesion-Characteristic 375 384	calcified
+T8	Lesion-Anatomy 385 397	right apical
+T9	Lesion-Anatomy 403 418	left lower lobe
+T10	Lesion-Description 419 426	nodules
+T11	Lesion-Description 447 461	granulomas.The
+E10	Lesion-Description:T11
+T12	Medical-Problem 471 477;479 492	mildly hyperinflated
+E11	Medical-Problem:T12
+T13	Medical-Assertion 504 506	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 507 523	pleural effusion
+T15	Medical-Problem 527 539	pneumothorax
+T16	Medical-Problem 703 724	right basilar density
+E14	Medical-Problem:T16
+T17	Medical-Assertion 726 745	raising concern for
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 746 755	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E9	Lesion-Description:T10 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

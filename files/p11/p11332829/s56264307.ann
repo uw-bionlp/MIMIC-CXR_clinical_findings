@@ -1,0 +1,43 @@
+T1	Medical-Problem 441 457	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 529 552;554 564	mild pulmonary vascular congestion
+E2	Medical-Problem:T2
+T3	Medical-Assertion 567 569	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 570 589	focal consolidation
+T5	Medical-Problem 593 609	pleural effusion
+T6	Medical-Assertion 629 631;633 641	no evidence
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 645 657	pneumothorax
+T8	Medical-Problem 713 735	Old fracture deformity
+T9	Medical-Anatomy 743 770	posterior right seventh rib
+T10	Medical-Problem 788 802	Slight opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 842 859	likely relates to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 861 878	osseous deformity
+T13	Medical-Problem 881 917	Underlying pulmonary nodular opacity
+E10	Medical-Problem:T13
+T14	Medical-Problem 1074 1090	Low lung volumes
+E11	Medical-Problem:T14
+T15	Medical-Problem 1095 1129	mild pulmonary vascular congestion
+E12	Medical-Problem:T15
+T16	Medical-Problem 1136 1186	Old posterior right seventh rib fracture deformity
+E13	Medical-Problem:T16
+T17	Medical-Problem 1192 1206	slight opacity
+E14	Medical-Problem:T17
+T18	Medical-Assertion 1239 1254	likely relating
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1262 1279	osseous deformity
+T20	Lesion-Characteristic 1291 1301	underlying
+T21	Lesion-Anatomy 1302 1311	pulmonary
+T22	Lesion-Description 1312 1318	nodule
+T23	Lesion-Assertion 1319 1346	cannot be entirely excluded
+A5	Lesion-AssertionValue T23 possible
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Lesion-Description:T22 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T21 has-Lesion-Assertion:T23

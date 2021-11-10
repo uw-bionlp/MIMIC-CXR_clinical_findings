@@ -1,0 +1,20 @@
+T1	Medical-Problem 338 359	Ill-defined opacities
+T2	Medical-Anatomy 367 381	left lung base
+T3	Lesion-Assertion 382 390	possibly
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Count 406 414	multiple
+T5	Lesion-Description 416 423	nodules
+T6	Medical-Assertion 496 498	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 499 507	effusion
+T8	Medical-Problem 511 523	pneumothorax
+T9	Medical-Problem 543 579	Ill-defined left lung base opacities
+E7	Medical-Problem:T9
+T10	Lesion-Assertion 586 594	possibly
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 610 617	nodules
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Count:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Lesion-Description:T11 has-Lesion-Assertion:T10

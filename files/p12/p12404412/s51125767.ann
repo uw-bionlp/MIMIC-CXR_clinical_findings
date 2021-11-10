@@ -1,0 +1,30 @@
+T1	Medical-Assertion 336 338	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 340 356	pleural effusion
+T3	Medical-Problem 360 372	pneumothorax
+T4	Medical-Problem 375 398	Patchy areas of opacity
+T5	Medical-Anatomy 406 417;419 445	lingula and probably right middle lobe
+T6	Medical-Problem 465 493	Right mid lung opacification
+E5	Medical-Problem:T6
+T7	Medical-Problem 551 570	streaky new opacity
+T8	Medical-Anatomy 579 595	right upper lobe
+T9	Medical-Problem 598 656	Reverse S shaped moderate S shaped thoracolumbar curvature
+E8	Medical-Problem:T9
+T10	Medical-Problem 690 724	Vague new right upper lobe opacity
+E9	Medical-Problem:T10
+T11	Medical-Assertion 726 741	possibly due to
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 742 753	atelectasis
+T13	Medical-Problem 757 763;765 777	airway inflammation
+T14	Medical-Problem 810 840	early development of pneumonia
+T15	Medical-Assertion 845 857	not excluded
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 860 892	Decreased right mid lung opacity
+E13	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T11 has-Medical-Assertion:T15

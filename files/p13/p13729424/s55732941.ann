@@ -1,0 +1,23 @@
+T1	Medical-Problem 215 231	Minimal blunting
+T2	Medical-Anatomy 235 267	left lateral costophrenic sulcus
+T3	Medical-Assertion 291 308	probably reflects
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 309 327	pleural thickening
+T5	Medical-Problem 340 353;355 363	small pleural effusion
+T6	Medical-Assertion 364 369	could
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 433 444	No evidence
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 448 457	pneumonia
+T9	Medical-Problem 464 504	Lateral left costophrenic angle blunting
+E6	Medical-Problem:T9
+T10	Medical-Assertion 512 529	likely represents
+A4	Medical-AssertionValue T10 possible
+T11	Medical-Problem 530 537;539 549	pleural thickening
+T12	Medical-Problem 568 590	small pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T10

@@ -1,0 +1,23 @@
+T1	Medical-Assertion 389 391	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 392 420	post-procedural pneumothorax
+T3	Medical-Problem 434 438;440 448	Mild blunting
+T4	Medical-Anatomy 456 485	bilateral costophrenic angles
+T5	Medical-Problem 502 517;519 536	small bilateral pleural effusions
+T6	Medical-Problem 539 569	Associated basilar atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Problem 641 662	Moderate cardiomegaly
+E6	Medical-Problem:T7
+T8	Medical-Assertion 765 767	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 768 780	pneumothorax
+T10	Medical-Problem 787 820	Small bilateral pleural effusions
+E8	Medical-Problem:T10
+T11	Medical-Assertion 825 833	probable
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 834 845	atelectasis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

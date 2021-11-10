@@ -1,0 +1,31 @@
+T1	Medical-Assertion 460 462	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 464 491	configurational abnormality
+T3	Medical-Assertion 561 564	not
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 565 574	congested
+T5	Medical-Problem 603 633	postoperative vascular changes
+T6	Medical-Problem 638 654	linear densities
+T7	Medical-Anatomy 670 680	left upper
+T8	Medical-Problem 733 756;758 768	some regression of scar formations
+E6	Medical-Problem:T8
+T9	Medical-Assertion 773 775	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 776 803	new pulmonary abnormalities
+T11	Medical-Anatomy 815 836;838 853	Lateral and posterior pleural sinuses
+T12	Medical-Problem 875 891	pleural effusion
+T13	Medical-Assertion 896 898	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 899 911	pneumothorax
+T15	Lesion-Assertion 972 974	no
+A5	Lesion-AssertionValue T15 absent
+T16	Lesion-Description 975 982	lesions
+T17	Lesion-Characteristic 983 993;995 1017	suspicious for secondary deposits
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T7
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Lesion-Description:T16 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T17

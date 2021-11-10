@@ -1,0 +1,22 @@
+T1	Medical-Problem 283 293	Flattening
+T2	Medical-Anatomy 301 332	right hemidiaphragmatic contour
+T3	Medical-Problem 334 342	blunting
+T4	Medical-Anatomy 351 381	right posterior pleural sulcus
+T5	Medical-Problem 387 422	healed right posterior rib fracture
+E5	Medical-Problem:T5
+T6	Medical-Problem 540 556;558 569	mild right basal atelectasis
+E6	Medical-Problem:T6
+T7	Medical-Assertion 581 594	no indication
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 598 620	acute pleural effusion
+T9	Medical-Assertion 626 628	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 630 643	consolidation
+T11	Medical-Assertion 646 648	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 649 661	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,39 @@
+T1	Medical-Problem 248 263	rounded opacity
+T2	Medical-Anatomy 271 297	upper anterior mediastinum
+T3	Medical-Problem 433 446	opacification
+T4	Medical-Anatomy 454 479	right cardiophrenic angle
+T5	Medical-Assertion 487 500	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 503 531	prominent epicardial fat pad
+T7	Medical-Assertion 534 536	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 537 558	other focal opacities
+T9	Medical-Assertion 647 649	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 650 666	pleural effusion
+T11	Medical-Problem 670 682	pneumothorax
+T12	Medical-Problem 706 721	Rounded opacity
+T13	Medical-Anatomy 729 755	anterior upper mediastinum
+T14	Medical-Problem 796 815	ill-defined opacity
+T15	Medical-Anatomy 828 858;860 881	posterior portion of the right sixth and seventh rib
+T16	Medical-Assertion 901 914	may represent
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 915 934	focal consolidation
+T18	Lesion-Description 939 945	nodule
+E14	Lesion-Description:T18
+T19	Medical-Problem 1004 1029	Ill-defined opacification
+T20	Medical-Anatomy 1037 1062	right cardiophrenic angle
+T21	Medical-Assertion 1105 1122	likely represents
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1125 1149;1151 1154	prominent epicardial fat pad
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

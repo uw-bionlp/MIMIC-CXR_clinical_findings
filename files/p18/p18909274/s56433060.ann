@@ -1,0 +1,15 @@
+T1	Medical-Problem 223 257	pre-existing parenchymal opacities
+T2	Medical-Assertion 258 270	have cleared
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 281 289;291 299	areas of scarring
+T4	Medical-Problem 304 325	platelike atelectasis
+T5	Medical-Anatomy 353 365;367 383	left and the right lung bases
+T6	Lesion-Assertion 386 388	No
+A2	Lesion-AssertionValue T6 absent
+T7	Lesion-Description 389 396	lesions
+T8	Medical-Problem 433 437;439 452	Mild overinflation
+E6	Medical-Problem:T8
+E1	Medical-Problem:T1 has-Medical-Assertion:T2 has-Medical-Anatomy:T5
+E2	Medical-Problem:T3 has-Medical-Assertion:T2 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Lesion-Description:T7 has-Lesion-Assertion:T6

@@ -1,0 +1,37 @@
+T1	Medical-Problem 304 332	extensive hazy consolidation
+T2	Medical-Anatomy 340 367;369 379	central portion of the left hemithorax
+T3	Medical-Anatomy 408 435	left upper lobe and lingula
+T4	Medical-Anatomy 514 524	right lung
+T5	Medical-Assertion 546 562	without evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 566 575	pneumonia
+T7	Medical-Problem 577 592	pulmonary edema
+T8	Medical-Problem 599 611	pneumothorax
+T9	Medical-Assertion 613 624	No evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 628 645	pleural effusions
+T11	Medical-Problem 651 668	heart is enlarged
+E9	Medical-Problem:T11
+T12	Medical-Assertion 672 674	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 675 702	acute osseous abnormalities
+T14	Medical-Problem 726 749	Extensive consolidation
+T15	Medical-Anatomy 757 784	left upper lobe and lingula
+T16	Medical-Assertion 855 857	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 859 886	appreciable interval change
+T18	Medical-Assertion 893 895	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 896 913	pleural effusions
+T20	Lesion-Characteristic 917 925	cavitary
+T21	Lesion-Description 926 933	lesions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Lesion-Description:T21 has-Lesion-Characteristic:T20

@@ -1,0 +1,49 @@
+T1	Medical-Assertion 37 39	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 40 67	acute intrathoracic process
+T3	Medical-Problem 75 105	Distended loops of large bowel
+E2	Medical-Problem:T3
+T4	Lesion-Anatomy 429 434	hilar
+E3	Lesion-Anatomy:T4
+T5	Medical-Assertion 497 499	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 500 512	pneumothorax
+T7	Medical-Problem 514 533	focal consolidation
+T8	Medical-Problem 538 545;547 555	pleural effusion
+T9	Lesion-Description 565 580	nodular opacity
+T10	Lesion-Anatomy 588 603	right lung base
+T11	Lesion-Size-Trend 607 616	unchanged
+A3	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Assertion 645 660	most compatible
+A4	Lesion-AssertionValue T12 possible
+T13	Lesion-Characteristic 668 677	calcified
+T14	Lesion-Description 678 687	granuloma
+T15	Lesion-Anatomy 691 708	Anterior cervical
+E11	Lesion-Anatomy:T15
+T16	Medical-Assertion 765 767;769 777	no evidence
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 781 799	hardware loosening
+T18	Medical-Problem 833 848	mild distension
+T19	Medical-Anatomy 856 867	large bowel
+T20	Medical-Assertion 917 919	No
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 920 924	free
+T22	Medical-Problem 925 928	air
+T23	Medical-Assertion 961 963	No
+A7	Medical-AssertionValue T23 absent
+T24	Medical-Problem 964 969	acute
+E17	Medical-Problem:T24
+T25	Medical-Problem 970 991	intrathoracic process
+T26	Medical-Problem 998 1013	Distended loops
+E19	Medical-Problem:T26
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T11
+E10	Lesion-Description:T14 has-Lesion-Anatomy:T10 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T19
+E15	Medical-Problem:T21 has-Medical-Assertion:T20
+E16	Medical-Problem:T22 has-Medical-Assertion:T20
+E18	Medical-Problem:T25 has-Medical-Assertion:T23

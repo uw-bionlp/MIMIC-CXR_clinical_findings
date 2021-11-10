@@ -1,0 +1,20 @@
+T1	Medical-Problem 246 266	mild pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 282 307;309 317	Heart is still moderately enlarged
+T3	Medical-Anatomy 326 331	hilar
+T4	Medical-Problem 402 419	pleural effusions
+E4	Medical-Problem:T4
+T5	Medical-Assertion 462 472	suggestion
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 476 490	bronchiectasis
+T7	Medical-Anatomy 498 528	right mid and lower lung zones
+T8	Medical-Assertion 583 585	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 586 599	consolidation
+T10	Lesion-Characteristic 603 611	evidence
+T11	Lesion-Characteristic 616 623	central
+T12	Lesion-Description 624 646	lymph node enlargement
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11

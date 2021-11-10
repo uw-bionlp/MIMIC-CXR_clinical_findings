@@ -1,0 +1,36 @@
+T1	Medical-Problem 355 366	Innumerable
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 367 376	pulmonary
+T3	Lesion-Description 377 384	nodules
+T4	Lesion-Anatomy 385 415	scattered throughout the lungs
+T5	Lesion-Assertion 417 427	concerning
+A1	Lesion-AssertionValue T5 possible
+T6	Medical-Problem 455 477	more confluent opacity
+T7	Medical-Anatomy 485 496	right lower
+T8	Medical-Problem 517 526	infection
+T9	Medical-Assertion 607 609	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 610 632	large pleural effusion
+T11	Medical-Problem 636 648	pneumothorax
+T12	Medical-Problem 669 680	Innumerable
+E10	Medical-Problem:T12
+T13	Lesion-Anatomy 681 690	pulmonary
+T14	Lesion-Description 691 698	nodules
+T15	Lesion-Anatomy 699 729	scattered throughout the lungs
+T16	Medical-Problem 768 790	more confluent opacity
+T17	Medical-Anatomy 798 809	right lower
+T18	Medical-Assertion 814 820;822 832	likely represents
+A3	Medical-AssertionValue T18 possible
+T19	Lesion-Characteristic 852 857	focal
+T20	Lesion-Characteristic 858 866	dominant
+T21	Lesion-Description 878 884	lesion
+T22	Medical-Problem 889 899;901 910	developing pneumonia
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E18	Lesion-Description:T21 has-Lesion-Characteristic:T19 has-Lesion-Characteristic:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

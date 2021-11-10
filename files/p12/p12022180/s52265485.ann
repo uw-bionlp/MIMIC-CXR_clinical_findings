@@ -1,0 +1,35 @@
+T1	Lesion-Anatomy 133 143	left hilum
+T2	Medical-Problem 147 176	slightly larger than expected
+E2	Medical-Problem:T2
+T3	Lesion-Assertion 181 194	may be due to
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Description 196 207	lymph nodes
+T5	Lesion-Assertion 209 211	No
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Description 227 242	lymphadenopathy
+T7	Medical-Anatomy 258 263	lungs
+T8	Medical-Assertion 280 291	no evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 295 308	consolidation
+T10	Medical-Problem 310 318	effusion
+T11	Medical-Problem 323 335	pneumothorax
+T12	Medical-Assertion 380 382	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 383 398	acute fractures
+T14	Medical-Assertion 431 433	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 434 463	acute cardiopulmonary process
+T16	Lesion-Anatomy 469 479	left hilum
+T17	Medical-Problem 483 491;493 513	slightly larger than expected
+E12	Medical-Problem:T17
+T18	Lesion-Assertion 518 531	may be due to
+A6	Lesion-AssertionValue T18 possible
+T19	Lesion-Description 532 543	lymph nodes
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T1 has-Lesion-Assertion:T3
+E4	Lesion-Description:T6 has-Lesion-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Lesion-Description:T19 has-Lesion-Anatomy:T16 has-Lesion-Assertion:T18

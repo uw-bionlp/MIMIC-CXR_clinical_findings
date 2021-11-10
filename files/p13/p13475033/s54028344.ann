@@ -1,0 +1,39 @@
+T1	Medical-Assertion 361 363	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 364 383	focal consolidation
+T3	Medical-Problem 387 399	pneumothorax
+T4	Medical-Assertion 411 413	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 415 434	vascular congestion
+T6	Medical-Problem 438 455	pleural effusions
+T7	Medical-Anatomy 521 528	cardiac
+T8	Medical-Problem 543 558	mildly enlarged
+T9	Medical-Problem 579 595	Mild indentation
+T10	Medical-Anatomy 603 645	left trachea at the level of the clavicles
+T11	Medical-Assertion 700 715	likely reflects
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 720 749	underlying tracheal deformity
+T13	Lesion-Assertion 753 755	no
+A4	Lesion-AssertionValue T13 absent
+T14	Lesion-Characteristic 756 767	compressive
+T15	Lesion-Description 768 779	mass lesion
+T16	Medical-Assertion 831 833	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 834 863	acute cardiopulmonary process
+T18	Medical-Problem 879 896	mild cardiomegaly
+E13	Medical-Problem:T18
+T19	Medical-Problem 915 942	proximal tracheal deformity
+E14	Medical-Problem:T19
+T20	Medical-Assertion 943 956	suggestive of
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Problem 957 967;969 983	underlying tracheomalacia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Characteristic:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T21 has-Medical-Assertion:T20

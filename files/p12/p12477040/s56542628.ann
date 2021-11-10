@@ -1,0 +1,34 @@
+T1	Medical-Problem 187 219	Lactate is rising despite fluids
+E1	Medical-Problem:T1
+T2	Medical-Problem 226 244	increasing hypoxia
+E2	Medical-Problem:T2
+T3	Medical-Assertion 259 279	raise possibility of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 280 295	pulmonary edema
+T5	Medical-Problem 377 403	Lung volumes are quite low
+E4	Medical-Problem:T5
+T6	Medical-Problem 405 433	small right pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Problem 448 468	Mediastinal widening
+T8	Medical-Anatomy 476 509	level of the thoracic aortic arch
+T9	Medical-Assertion 510 525	could be either
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 527 545	venous engorgement
+T11	Lesion-Description 549 559	adenopathy
+E9	Lesion-Description:T11
+T12	Medical-Problem 562 575	Focal opacity
+T13	Medical-Anatomy 583 604	base of the left lung
+T14	Medical-Problem 616 627	atelectasis
+T15	Medical-Problem 631 640	pneumonia
+T16	Medical-Assertion 652 654	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 655 670	pulmonary edema
+T18	Medical-Problem 675 679;681 697	left pleural effusion
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16

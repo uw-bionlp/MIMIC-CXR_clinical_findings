@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 317 322	lungs
+T2	Medical-Problem 336 353	new consolidation
+T3	Medical-Problem 361 367;369 384	stable streaky opacity
+T4	Medical-Anatomy 392 407	left lower lung
+T5	Medical-Problem 421 432	atelectasis
+T6	Medical-Problem 436 444	scarring
+T7	Lesion-Assertion 448 450	No
+A1	Lesion-AssertionValue T7 absent
+T8	Lesion-Size 451 456	large
+T9	Lesion-Anatomy 457 466	pulmonary
+T10	Lesion-Description 467 473	masses
+T11	Medical-Assertion 497 499	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 500 516	pleural effusion
+T13	Medical-Problem 521 533	pneumothorax
+T14	Medical-Assertion 722 724	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 725 754	acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E9	Lesion-Description:T10 has-Lesion-Assertion:T7 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

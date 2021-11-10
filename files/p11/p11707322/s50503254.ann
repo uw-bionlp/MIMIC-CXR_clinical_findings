@@ -1,0 +1,19 @@
+T1	Medical-Problem 612 632	persistent elevation
+T2	Medical-Anatomy 640 658	left hemidiaphragm
+T3	Medical-Problem 660 671	Atelectasis
+T4	Medical-Anatomy 679 688;690 694	left lung base
+T5	Medical-Assertion 748 750	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 752 768	pleural effusion
+T7	Medical-Problem 772 784	pneumothorax
+T8	Medical-Assertion 1002 1010;1012 1022	could be related to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 1023 1043	thrombus development
+T10	Medical-Anatomy 1051 1063	right atrium
+T11	Medical-Problem 1067 1089;1091 1107	clot propagating along the catheter tip
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Assertion:T8 has-Medical-Anatomy:T10

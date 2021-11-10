@@ -1,0 +1,22 @@
+T1	Medical-Problem 302 328	slight increase in caliber
+T2	Medical-Anatomy 332 342;344 384	upper lobe pulmonary vessels and in the right hilus
+T3	Medical-Problem 390 407	mild cardiomegaly
+E3	Medical-Problem:T3
+T4	Medical-Assertion 432 434	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 435 450	pulmonary edema
+T6	Medical-Problem 454 470	pleural effusion
+T7	Medical-Assertion 473 475	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 476 488	pneumothorax
+T9	Medical-Problem 491 498;500 510	Minimal thickening
+T10	Medical-Anatomy 518 531	minor fissure
+T11	Medical-Assertion 532 547	could be due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 548 576;578 594	deposition of a small amount of pleural fluid
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

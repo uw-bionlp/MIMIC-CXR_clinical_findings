@@ -1,0 +1,19 @@
+T1	Medical-Assertion 350 352	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 354 374	visible pneumothorax
+T3	Medical-Problem 377 411	Mild pulmonary vascular congestion
+E2	Medical-Problem:T3
+T4	Medical-Problem 421 429;431 447	Interval improved opacity
+T5	Medical-Anatomy 455 469	left lung base
+T6	Medical-Assertion 473 486	likely due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 505 526	improving atelectasis
+T8	Medical-Problem 531 547	pleural effusion
+T9	Medical-Assertion 550 552	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 553 575	other relevant changes
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

@@ -1,0 +1,32 @@
+T1	Medical-Problem 160 182	Heart size is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 252 263	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 267 282	pulmonary edema
+T4	Medical-Problem 294 312	more focal opacity
+T5	Medical-Anatomy 321 344	left mid and lower lung
+T6	Medical-Assertion 350 373	might be concerning for
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 374 384;386 404	developing infectious process
+T8	Medical-Problem 408 430	potentially aspiration
+T9	Medical-Assertion 433 435	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 436 464	appreciable pleural effusion
+T11	Medical-Assertion 530 532	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 534 546	pneumothorax
+T13	Medical-Problem 564 582	Asymmetric opacity
+T14	Medical-Anatomy 590 605	left lower lung
+T15	Medical-Assertion 614 628	concerning for
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 630 640	aspiration
+T17	Medical-Problem 644 653	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E11	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

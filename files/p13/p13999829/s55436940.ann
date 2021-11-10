@@ -1,0 +1,49 @@
+T1	Lesion-Description 255 270	Nodular opacity
+T2	Lesion-Anatomy 278 302	lateral right lower lobe
+T3	Lesion-Size-Trend 322 345	appears slightly larger
+A1	Lesion-Size-TrendValue T3 increasing
+T4	Lesion-Anatomy 379 397;399 403	Medial right lower lobe
+T5	Lesion-Description 404 411	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 412 419	opacity
+T7	Medical-Problem 456 477;479 489	persistent large area of opacity
+T8	Medical-Anatomy 497 525	left mid to lower hemithorax
+T9	Lesion-Characteristic 553 560	chronic
+T10	Lesion-Description 561 584	mass-like consolidation
+T11	Medical-Problem 590 617	adjacent pleural thickening
+T12	Medical-Assertion 622 630	possible
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 632 640	necrosis
+T14	Lesion-Anatomy 666 675	pulmonary
+T15	Lesion-Description 676 683	nodules
+T16	Lesion-Anatomy 691 709	left mid lung zone
+T17	Medical-Problem 738 757	persistent blunting
+T18	Medical-Anatomy 765 788	left costophrenic angle
+T19	Medical-Assertion 790 807	likely related to
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 808 838	atelectasis/pleural thickening
+T21	Medical-Assertion 844 852	possible
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 853 866;868 876	small pleural effusion
+T23	Medical-Problem 879 900	Postoperative changes
+T24	Medical-Anatomy 913 942	right upper to mid hemithorax
+T25	Medical-Problem 966 1019	Grossly stable left mid to lower hemithorax opacities
+E21	Medical-Problem:T25
+T26	Lesion-Anatomy 1022 1035;1037 1047	Lateral right lower lobe
+T27	Lesion-Description 1048 1055	nodular
+E23	Lesion-Description:T27
+T28	Lesion-Description 1056 1063	opacity
+T29	Lesion-Size-Trend 1076 1106	may be slightly larger in size
+A5	Lesion-Size-TrendValue T29 increasing
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8
+E11	Medical-Problem:T13 has-Medical-Anatomy:T8 has-Medical-Assertion:T12
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T16
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Anatomy:T18 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Anatomy:T24
+E24	Lesion-Description:T28 has-Lesion-Anatomy:T26 has-Lesion-Size-Trend:T29

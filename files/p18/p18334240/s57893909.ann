@@ -1,0 +1,25 @@
+T1	Medical-Assertion 35 37	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 38 41	PNA
+T3	Lesion-Size 46 50	5 mm
+T4	Lesion-Anatomy 51 67	right upper lobe
+T5	Lesion-Description 68 74	nodule
+T6	Medical-Anatomy 507 512	lungs
+T7	Medical-Problem 527 547	opacities concerning
+T8	Medical-Problem 555 573	infectious process
+E7	Medical-Problem:T8
+T9	Medical-Problem 635 649	tortuous aorta
+E8	Medical-Problem:T9
+T10	Lesion-Size 654 658	5 mm
+T11	Lesion-Description 659 665	nodule
+T12	Lesion-Anatomy 674 713	left hemithorax overlying the sixth rib
+T13	Medical-Assertion 836 838	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 839 855	pleural effusion
+T15	Medical-Problem 859 871	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E10	Lesion-Description:T11 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13

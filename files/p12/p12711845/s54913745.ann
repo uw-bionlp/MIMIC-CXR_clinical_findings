@@ -1,0 +1,41 @@
+T1	Lesion-Anatomy 350 365	left upper lobe
+T2	Lesion-Characteristic 366 376	spiculated
+T3	Lesion-Description 377 383	nodule
+T4	Medical-Anatomy 432 453	Pulmonary vasculature
+T5	Medical-Assertion 457 460	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 461 469	engorged
+T7	Medical-Problem 472 478;480 489	Patchy opacities
+T8	Medical-Anatomy 506 516	lung bases
+T9	Medical-Assertion 589 609	likely reflective of
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 610 621	atelectasis
+T11	Medical-Problem 624 633;635 648	Lungs are hyperinflated
+E9	Medical-Problem:T11
+T12	Medical-Assertion 651 653	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 654 673	focal consolidation
+T14	Medical-Problem 675 691	pleural effusion
+T15	Medical-Problem 695 707	pneumothorax
+T16	Medical-Assertion 798 800	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 801 828	acute osseous abnormalities
+T18	Medical-Problem 849 865	Patchy opacities
+T19	Medical-Anatomy 873 900	lung bases, more pronounced
+T20	Medical-Assertion 915 927;929 942	which may be reflective of
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 943 954	atelectasis
+T22	Lesion-Characteristic 980 990	spiculated
+T23	Lesion-Description 991 997	nodule
+T24	Lesion-Anatomy 1006 1021	left upper lobe
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T1 has-Lesion-Characteristic:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T12
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E18	Lesion-Description:T23 has-Lesion-Characteristic:T22 has-Lesion-Anatomy:T24

@@ -1,0 +1,22 @@
+T1	Medical-Problem 332 347;349 356	34 mm wide oval opacity
+T2	Medical-Anatomy 377 392	right first rib
+T3	Medical-Assertion 393 401	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 404 426	region of sclerosis in
+T5	Medical-Anatomy 432 453	costo sternal process
+T6	Lesion-Assertion 462 475	could also be
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Size 478 483	small
+T8	Lesion-Anatomy 484 488	lung
+T9	Lesion-Description 489 493	mass
+T10	Medical-Assertion 583 585	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 586 602	pleural effusion
+T12	Lesion-Characteristic 606 614	evidence
+T13	Lesion-Characteristic 618 625	central
+T14	Lesion-Description 626 636	lymph node
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E7	Lesion-Description:T9 has-Lesion-Assertion:T6 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Lesion-Description:T14 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T13

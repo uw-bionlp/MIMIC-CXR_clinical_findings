@@ -1,0 +1,22 @@
+T1	Medical-Problem 266 304	persistent near complete opacification
+T2	Medical-Anatomy 312 327	left hemithorax
+T3	Medical-Problem 336 353	small lucent area
+T4	Medical-Anatomy 361 376	upper left lung
+T5	Medical-Anatomy 383 393	right lung
+T6	Medical-Assertion 414 416	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 417 439	right pleural effusion
+T8	Medical-Problem 443 455	pneumothorax
+T9	Medical-Problem 670 680;682 709	persistent near complete opacification
+T10	Medical-Anatomy 717 732	left hemithorax
+T11	Medical-Assertion 733 739	likely
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 758 766	effusion
+T13	Medical-Problem 771 782	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

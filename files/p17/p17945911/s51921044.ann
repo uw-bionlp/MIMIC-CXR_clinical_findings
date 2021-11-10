@@ -1,0 +1,30 @@
+T1	Medical-Problem 365 388	Lung volumes remain low
+E1	Medical-Problem:T1
+T2	Medical-Problem 401 442;444 453	patchy bibasilar opacities, right greater than left
+E2	Medical-Problem:T2
+T3	Medical-Assertion 455 474	likely representing
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 475 505	partial lower lobe atelectasis
+T5	Medical-Problem 517 526	pneumonia
+T6	Medical-Problem 530 540	aspiration
+T7	Medical-Assertion 541 568	cannot be entirely excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 582 590;592 606	layering right effusion
+E6	Medical-Problem:T8
+T9	Medical-Problem 609 622	Mild crowding
+T10	Medical-Anatomy 630 641	vasculature
+T11	Medical-Assertion 655 657	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 658 663;665 680	overt pulmonary edema
+T13	Medical-Problem 736 742;744 752	stable widening
+T14	Medical-Anatomy 760 790	mediastinal and hilar contours
+T15	Medical-Assertion 877 879	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 881 893	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

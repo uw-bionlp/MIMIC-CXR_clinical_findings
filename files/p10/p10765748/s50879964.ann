@@ -1,0 +1,27 @@
+T1	Lesion-Size 209 213	8 mm
+T2	Lesion-Anatomy 214 231	right middle lung
+T3	Lesion-Description 232 238	nodule
+T4	Lesion-Assertion 323 331	could be
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Characteristic 334 338	bone
+T6	Lesion-Description 339 345	lesion
+T7	Medical-Assertion 449 451	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 452 468	pleural effusion
+T9	Medical-Problem 472 484	pneumothorax
+T10	Medical-Problem 502 527	moderate pectus excavatum
+E8	Medical-Problem:T10
+T11	Lesion-Size 547 551	8 mm
+E9	Lesion-Size:T11
+T12	Lesion-Anatomy 552 569	right middle lung
+E10	Lesion-Anatomy:T12
+T13	Lesion-Anatomy 646 650	lung
+T14	Lesion-Description 651 657	lesion
+T15	Lesion-Characteristic 663 667	bone
+T16	Lesion-Description 668 674	lesion
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T13
+E14	Lesion-Description:T16 has-Lesion-Characteristic:T15

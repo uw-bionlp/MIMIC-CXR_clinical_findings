@@ -1,0 +1,22 @@
+T1	Medical-Problem 403 414;416 420	right lower lobe
+E1	Medical-Problem:T1
+T2	Medical-Problem 421 440	partial atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 495 525	moderate left pleural effusion
+T4	Medical-Problem 533 569	relatively large parenchymal opacity
+T5	Medical-Anatomy 578 593	left lung bases
+T6	Medical-Assertion 600 622	differential diagnosis
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 637 648	atelectasis
+T8	Medical-Problem 654 663	pneumonia
+T9	Medical-Assertion 787 789	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 790 802	pneumothorax
+T11	Medical-Problem 808 829	changes in appearance
+T12	Medical-Anatomy 837 848	mediastinum
+E3	Medical-Problem:T3 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12

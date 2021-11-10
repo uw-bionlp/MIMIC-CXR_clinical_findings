@@ -1,0 +1,44 @@
+T1	Medical-Problem 384 424;426 434	re-accumulation of a small right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 448 474	tiny left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Assertion 486 488	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 489 501	pneumothorax
+T5	Medical-Problem 507 521	linear opacity
+T6	Medical-Anatomy 529 547	right midlung zone
+T7	Medical-Assertion 548 565	likely represents
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 566 577	atelectasis
+T9	Lesion-Size 590 595	small
+T10	Lesion-Anatomy 596 605	pulmonary
+T11	Lesion-Description 606 616	metastases
+T12	Lesion-Assertion 667 669	No
+A3	Lesion-AssertionValue T12 absent
+T13	Lesion-Size 670 675	large
+T14	Lesion-Description 676 682	nodule
+T15	Lesion-Description 686 693	opacity
+T16	Medical-Assertion 718 720	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 721 730;732 737	pulmonary edema
+T18	Medical-Problem 739 762	Compression deformities
+T19	Medical-Anatomy 770 801	upper thoracic vertebral bodies
+T20	Lesion-Characteristic 832 839	Diffuse
+T21	Lesion-Characteristic 840 849	sclerotic
+T22	Lesion-Characteristic 850 857	osseous
+T23	Lesion-Description 858 868	metastases
+T24	Medical-Problem 914 957	Small right and tiny left pleural effusions
+E20	Medical-Problem:T24
+T25	Medical-Assertion 959 961	No
+A5	Medical-AssertionValue T25 absent
+T26	Medical-Problem 962 974	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T10
+E11	Lesion-Description:T14 has-Lesion-Assertion:T12 has-Lesion-Size-Present:T13
+E12	Lesion-Description:T15 has-Lesion-Assertion:T12 has-Lesion-Size-Present:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E19	Lesion-Description:T23 has-Lesion-Characteristic:T20 has-Lesion-Characteristic:T21 has-Lesion-Characteristic:T22
+E21	Medical-Problem:T26 has-Medical-Assertion:T25

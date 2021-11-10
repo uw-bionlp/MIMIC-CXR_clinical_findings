@@ -1,0 +1,34 @@
+T1	Medical-Problem 278 294	relative opacity
+T2	Medical-Anatomy 316 363	left mid-to-lower lung, possibly in the lingula
+T3	Medical-Problem 408 432	underlying consolidation
+T4	Medical-Problem 444 453	infection
+T5	Medical-Problem 457 466	contusion
+T6	Medical-Assertion 473 485	not excluded
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Assertion 488 490	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 491 507	pleural effusion
+T9	Medical-Assertion 528 539	no evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 543 555	pneumothorax
+T11	Medical-Problem 618 636	Thoracic scoliosis
+E8	Medical-Problem:T11
+T12	Medical-Problem 663 670	Opacity
+T13	Medical-Anatomy 691 713	left mid-to-lower lung
+T14	Medical-Assertion 740 753	may represent
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 754 767	consolidation
+T16	Medical-Assertion 774 789	could be due to
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 791 800	infection
+T18	Medical-Problem 825 851	trauma pulmonary contusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Assertion:T6
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T6
+E5	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T13 has-Medical-Assertion:T14 has-Medical-Assertion:T16

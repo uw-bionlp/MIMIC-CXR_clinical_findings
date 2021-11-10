@@ -1,0 +1,17 @@
+T1	Medical-Assertion 408 419	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 424 437	complications
+T3	Medical-Problem 446 458	pneumothorax
+T4	Lesion-Size-Trend 547 567	Unchanged appearance
+A2	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Anatomy 575 586	right-sided
+T6	Lesion-Description 587 593	masses
+T7	Medical-Problem 599 610	atelectasis
+E5	Medical-Problem:T7
+T8	Medical-Problem 615 622;624 633	pleural effusions
+E6	Medical-Problem:T8
+T9	Medical-Problem 635 655	Unchanged appearance
+E7	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Size-Trend:T4 has-Lesion-Anatomy:T5

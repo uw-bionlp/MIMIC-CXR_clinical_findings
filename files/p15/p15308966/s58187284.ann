@@ -1,0 +1,28 @@
+T1	Medical-Problem 195 232	Residual small right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 277 279	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 280 292	pneumothorax
+T4	Medical-Problem 295 312	New round opacity
+T5	Medical-Anatomy 320 337	right middle lung
+T6	Medical-Assertion 341 349;351 357	probably due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 358 377	rounded atelectasis
+T8	Medical-Problem 390 399	infection
+T9	Medical-Problem 513 535	right pleural effusion
+E7	Medical-Problem:T9
+T10	Medical-Problem 564 587	New focal round opacity
+T11	Medical-Anatomy 595 610	right lung base
+T12	Medical-Assertion 614 622	probably
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 623 630;632 643	rounded atelectasis
+T14	Medical-Assertion 644 650	rather
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 656 665	infection
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12 has-Medical-Assertion:T14
+E11	Medical-Problem:T15 has-Medical-Anatomy:T11 has-Medical-Assertion:T12 has-Medical-Assertion:T14

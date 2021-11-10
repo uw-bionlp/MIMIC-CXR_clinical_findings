@@ -1,0 +1,39 @@
+T1	Medical-Problem 256 268	Reticulation
+T2	Medical-Anatomy 276 291	right lung base
+T3	Medical-Assertion 292 300	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 301 315	bronchiectasis
+T5	Medical-Problem 319 328;330 338	pulmonary fibrosis
+T6	Medical-Assertion 343 353	do not see
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 354 367	consolidation
+T8	Medical-Problem 379 396	recent aspiration
+T9	Medical-Problem 401 410	pneumonia
+T10	Medical-Problem 413 437	Heart is mildly enlarged
+E8	Medical-Problem:T10
+T11	Medical-Problem 440 461	Pleural effusions are
+E9	Medical-Problem:T11
+T12	Medical-Problem 502 513	Deformities
+T13	Medical-Anatomy 521 548;550 559	right upper and middle ribs laterally
+T14	Medical-Assertion 560 572	could be all
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 573 587	chronic trauma
+T16	Medical-Problem 593 607	acute fracture
+T17	Lesion-Characteristic 611 622	destructive
+T18	Lesion-Description 624 631	lesions
+T19	Lesion-Anatomy 639 643	ribs
+T20	Lesion-Assertion 771 773;775 783	no evidence
+A4	Lesion-AssertionValue T20 absent
+T21	Lesion-Characteristic 787 794	central
+T22	Lesion-Description 795 817	lymph node enlargement
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Lesion-Description:T18 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T19
+E18	Lesion-Description:T22 has-Lesion-Assertion:T20 has-Lesion-Characteristic:T21

@@ -1,0 +1,38 @@
+T1	Medical-Anatomy 170 180	Right lung
+T2	Medical-Problem 184 201	reduced in volume
+T3	Medical-Problem 232 240;242 267	complete consolidation/atelectasis
+T4	Medical-Anatomy 275 303	right middle and lower lobes
+T5	Medical-Problem 359 381	increasing volume loss
+E5	Medical-Problem:T5
+T6	Medical-Problem 388 405	Streaky opacities
+T7	Medical-Anatomy 422 460	left mid lung, probably in the lingula
+T8	Medical-Assertion 479 486	suggest
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 487 504	minor atelectasis
+T10	Medical-Problem 513 529	pleural effusion
+T11	Medical-Assertion 533 542	suspected
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 602 615	opacification
+E10	Medical-Problem:T12
+T13	Medical-Assertion 648 650	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 651 658;660 680	pleural effusion on the left
+T15	Medical-Problem 705 735	Increasing dense opacification
+T16	Medical-Problem 740 751	volume loss
+T17	Medical-Anatomy 766 782;784 795	right middle and lower lobes
+T18	Medical-Assertion 797 807	suggesting
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 808 861	worsening extensive atelectasis - infectious etiology
+T20	Medical-Assertion 866 878	not excluded
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 882 909	coinciding pleural effusion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T17
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Assertion:T20
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 240 245	lungs
+T2	Medical-Assertion 250 255	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 259 278	focal consolidation
+T4	Lesion-Size 283 288	small
+T5	Lesion-Description 290 296	nodule
+T6	Lesion-Anatomy 311 335	anterior left fourth rib
+T7	Lesion-Assertion 337 348	potentially
+A2	Lesion-AssertionValue T7 possible
+T8	Lesion-Characteristic 349 358	calcified
+T9	Lesion-Description 359 365	nodule
+T10	Lesion-Description 374 385	bone island
+T11	Lesion-Anatomy 397 400	rib
+T12	Lesion-Size-Trend 408 417	unchanged
+A3	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 499 501	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 502 510	effusion
+T15	Medical-Assertion 625 627	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 628 657	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Characteristic:T8 has-Lesion-Size-Trend:T12
+E8	Lesion-Description:T10 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

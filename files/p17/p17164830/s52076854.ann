@@ -1,0 +1,44 @@
+T1	Lesion-Description 137 162	Mass-like area of opacity
+T2	Lesion-Anatomy 170 187	right middle lobe
+T3	Lesion-Size-Trend 192 204;206 210	increased in size
+A1	Lesion-Size-TrendValue T3 increasing
+T4	Lesion-Size 232 244	4.6 x 4.6 cm
+T5	Lesion-Size 270 282	4.6 x 2.2 cm
+T6	Medical-Assertion 301 309	possible
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 310 320	cavitation
+T8	Medical-Problem 323 353	Diffuse interstitial opacities
+E6	Medical-Problem:T8
+T9	Medical-Problem 404 435	mid and lower lung predominance
+E7	Medical-Problem:T9
+T10	Medical-Anatomy 438 443	Heart
+T11	Medical-Assertion 448 451	not
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 452 460	enlarged
+T13	Medical-Assertion 532 534	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 535 552	pleural effusions
+T15	Medical-Problem 629 681	Marked worsening of bilateral interstitial opacities
+E11	Medical-Problem:T15
+T16	Lesion-Assertion 689 702	could reflect
+A5	Lesion-AssertionValue T16 possible
+T17	Lesion-Description 704 716	lymphangitic
+E12	Lesion-Description:T17
+T18	Lesion-Description 717 731	carcinomatosis
+T19	Medical-Assertion 734 756	Differential diagnosis
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 766 781;783 798	non-cardiogenic pulmonary edema
+T21	Medical-Problem 803 821	atypical pneumonia
+T22	Lesion-Size-Trend 830 844	Increased size
+A7	Lesion-Size-TrendValue T22 increasing
+T23	Lesion-Description 848 865	mass-like opacity
+T24	Lesion-Anatomy 869 886	right middle lobe
+T25	Lesion-Characteristic 892 900;902 912	possible cavitation
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T3 has-Lesion-Size-Present:T4 has-Lesion-Size-Past:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Lesion-Description:T18 has-Lesion-Assertion:T16
+E14	Medical-Problem:T20 has-Medical-Assertion:T19
+E15	Medical-Problem:T21 has-Medical-Assertion:T19
+E16	Lesion-Description:T23 has-Lesion-Size-Trend:T22 has-Lesion-Anatomy:T24 has-Lesion-Characteristic:T25

@@ -1,0 +1,25 @@
+T1	Medical-Problem 579 608	small layering right effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 614 616	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 617 622;624 646	focal airspace consolidation
+T4	Medical-Problem 658 667	pneumonia
+T5	Medical-Assertion 670 672	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 673 688	pulmonary edema
+T7	Medical-Assertion 691 693	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 695 707	pneumothorax
+T9	Lesion-Size 717 723	2-3 mm
+T10	Lesion-Characteristic 724 733	calcified
+T11	Lesion-Description 734 740	nodule
+T12	Lesion-Anatomy 748 764	right upper lobe
+T13	Lesion-Assertion 765 771;773 785	likely representing
+A4	Lesion-AssertionValue T13 possible
+T14	Lesion-Description 788 797	granuloma
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E10	Lesion-Description:T14 has-Lesion-Anatomy:T12 has-Lesion-Assertion:T13

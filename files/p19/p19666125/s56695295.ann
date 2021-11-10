@@ -1,0 +1,43 @@
+T1	Medical-Assertion 271 273	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 274 293	focal consolidation
+T3	Medical-Problem 295 311	pleural effusion
+T4	Medical-Problem 315 327	pneumothorax
+T5	Medical-Assertion 330 332	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 334 349	pulmonary edema
+T7	Medical-Problem 356 390	interstitium is slightly prominent
+E5	Medical-Problem:T7
+T8	Medical-Assertion 400 406;408 416	likely reflects
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 417 435	age related change
+T10	Medical-Problem 439 460	small airways disease
+T11	Medical-Problem 495 528	several calcified rounded opacity
+E8	Medical-Problem:T11
+T12	Lesion-Anatomy 582 602	anterior mediastinum
+T13	Lesion-Characteristic 661 670	calcified
+T14	Lesion-Description 671 682	lymph nodes
+T15	Medical-Problem 850 865;867 875	Heart is mildly enlarged
+E12	Medical-Problem:T15
+T16	Medical-Problem 878 905	Aorta unfolded and tortuous
+E13	Medical-Problem:T16
+T17	Medical-Assertion 930 941	No evidence
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 945 966	acute focal pneumonia
+T19	Medical-Problem 972 1011	Nonspecific rounded calcified opacities
+E15	Medical-Problem:T19
+T20	Lesion-Assertion 1038 1041	may
+A5	Lesion-AssertionValue T20 possible
+T21	Lesion-Characteristic 1053 1062	calcified
+T22	Lesion-Anatomy 1063 1074	mediastinal
+T23	Lesion-Description 1075 1080	nodes
+T24	Lesion-Characteristic 1081 1111;1113 1122	suggesting prior granulomatous infection
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Lesion-Description:T14 has-Lesion-Anatomy:T12 has-Lesion-Characteristic:T13
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E18	Lesion-Description:T23 has-Lesion-Assertion:T20 has-Lesion-Characteristic:T21 has-Lesion-Anatomy:T22 has-Lesion-Characteristic:T24

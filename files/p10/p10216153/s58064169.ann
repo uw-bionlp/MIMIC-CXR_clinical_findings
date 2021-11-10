@@ -1,0 +1,43 @@
+T1	Medical-Problem 404 422	Persistent opacity
+T2	Medical-Anatomy 430 448	right heart border
+T3	Lesion-Anatomy 488 504	internal mammary
+T4	Lesion-Description 514 525	lymph nodes
+T5	Medical-Anatomy 557 561	Left
+E5	Medical-Anatomy:T5
+T6	Medical-Assertion 618 620	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 621 642	new pulmonary opacity
+T8	Medical-Problem 645 655	Thickening
+T9	Medical-Anatomy 663 687	left paratracheal stripe
+T10	Medical-Problem 694 703	narrowing
+T11	Medical-Problem 708 727	rightward deviation
+T12	Medical-Anatomy 735 742	trachea
+T13	Lesion-Anatomy 758 762;764 769	Left hilar
+T14	Lesion-Description 770 785	lymphadenopathy
+T15	Lesion-Size-Trend 794 808	grossly stable
+A2	Lesion-Size-TrendValue T15 no-change
+T16	Medical-Assertion 820 822	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 823 839	pleural effusion
+T18	Medical-Problem 844 856	pneumothorax
+T19	Medical-Problem 900 907	Opacity
+T20	Medical-Anatomy 908 912	over
+T21	Medical-Anatomy 917 929	heart border
+T22	Lesion-Characteristic 960 968	necrotic
+T23	Lesion-Anatomy 969 977;979 986	internal mammary
+T24	Lesion-Description 987 998	lymph nodes
+T25	Medical-Assertion 1035 1046	no evidence
+A4	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1051 1060	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9 has-Medical-Anatomy:T12
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Lesion-Description:T14 has-Lesion-Anatomy:T13 has-Lesion-Size-Trend:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20 has-Medical-Anatomy:T21
+E21	Lesion-Description:T24 has-Lesion-Characteristic:T22 has-Lesion-Anatomy:T23
+E22	Medical-Problem:T26 has-Medical-Assertion:T25

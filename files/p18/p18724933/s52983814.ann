@@ -1,0 +1,27 @@
+T1	Medical-Assertion 208 210	NO
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 281 299	wide round opacity
+T3	Medical-Anatomy 311 350	superior to the anterior left fifth rib
+T4	Medical-Assertion 352 360	could be
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 363 376	vessel on end
+T6	Lesion-Characteristic 380 389	calcified
+T7	Lesion-Description 390 399	granuloma
+T8	Lesion-Characteristic 415 428	non calcified
+T9	Lesion-Anatomy 430 434	lung
+T10	Lesion-Description 435 441	nodule
+T11	Lesion-Assertion 585 595	suggestion
+A3	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 599 612	granulomatous
+E9	Lesion-Description:T12
+T13	Lesion-Anatomy 613 618	hilar
+T14	Lesion-Description 620 630	lymph node
+T15	Medical-Assertion 714 716	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 717 738	pleural abnormalities
+E1	Medical-Problem:T2 has-Medical-Anatomy:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Lesion-Description:T7 has-Lesion-Characteristic:T6
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9
+E11	Lesion-Description:T14 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

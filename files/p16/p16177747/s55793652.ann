@@ -1,0 +1,33 @@
+T1	Medical-Problem 264 276	CARDIOMEGALY
+E1	Medical-Problem:T1
+T2	Medical-Assertion 300 302	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 303 318	PULMONARY EDEMA
+T4	Medical-Problem 329 352	CHANGE IN CONFIGURATION
+T5	Medical-Anatomy 360 395	RIGHT DIAPHRAGMATIC PLEURAL SURFACE
+T6	Medical-Assertion 396 404	SUGGESTS
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 408 431	NEW SMALL RIGHT PLEURAL
+T8	Medical-Problem 432 440	EFFUSION
+E6	Medical-Problem:T8
+T9	Medical-Problem 446 459	CONSOLIDATION
+T10	Medical-Anatomy 467 483	RIGHT LOWER LUNG
+T11	Medical-Assertion 527 535	PROBABLY
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 536 545	PNEUMONIA
+T13	Medical-Anatomy 553 558;560 564	LOWER LOBE
+T14	Medical-Problem 589 615	RIGHT LOWER LOBE PNEUMONIA
+E11	Medical-Problem:T14
+T15	Medical-Assertion 617 634	MAY CONTRIBUTE TO
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 635 663	EARLY CARDIAC DECOMPENSATION
+T17	Medical-Problem 678 711	PROGRESSIVE MODERATE CARDIOMEGALY
+T18	Medical-Problem 716 739;741 749	NEW SMALL RIGHT PLEURAL EFFUSION
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T15

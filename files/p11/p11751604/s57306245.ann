@@ -1,0 +1,28 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 44	pneumothorax
+T3	Medical-Problem 117 157	Small to moderate right pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 163 174	atelectasis
+E3	Medical-Problem:T4
+T5	Medical-Problem 178 202	Underlying consolidation
+T6	Medical-Assertion 206 218	not excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 841 843	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 844 856	pneumothorax
+T9	Medical-Problem 858 869;871 879	mediastinal widening
+T10	Medical-Problem 884 916	associated left pleural effusion
+T11	Medical-Problem 919 933	Moderate right
+E8	Medical-Problem:T11
+T12	Medical-Problem 934 941;943 951	pleural effusion
+E9	Medical-Problem:T12
+T13	Medical-Assertion 1034 1036	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1037 1052	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T7
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

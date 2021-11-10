@@ -1,0 +1,17 @@
+T1	Medical-Assertion 295 306	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 313 325	pneumothorax
+T3	Medical-Problem 328 349	Mild pleural effusion
+T4	Medical-Problem 354 365	atelectasis
+T5	Medical-Anatomy 373 388	left lung bases
+T6	Medical-Problem 460 468;470 482	Moderate cardiomegaly
+E5	Medical-Problem:T6
+T7	Medical-Assertion 488 490	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 491 499	signs of
+E6	Medical-Problem:T8
+T9	Medical-Problem 500 521	overt pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

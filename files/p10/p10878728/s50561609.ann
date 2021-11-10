@@ -1,0 +1,33 @@
+T1	Medical-Problem 315 331	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 338 367	heart size is mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 370 387	Apparent widening
+T4	Medical-Anatomy 395 403;405 416	superior mediastinum
+T5	Medical-Problem 484 492	crowding
+T6	Medical-Anatomy 500 515	bronchovascular
+T7	Medical-Assertion 535 543	possible
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 544 559;561 590	element of mild pulmonary vascular congestion
+T9	Medical-Problem 593 618	Minimal streaky opacities
+T10	Medical-Anatomy 626 636	lung bases
+T11	Medical-Assertion 638 652	likely reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 653 664	atelectasis
+T13	Medical-Assertion 667 669	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 670 686	pleural effusion
+T15	Medical-Problem 690 702	pneumothorax
+T16	Medical-Assertion 926 934	probable
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 935 969	mild pulmonary vascular congestion
+T18	Medical-Problem 975 996	bibasilar atelectasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16

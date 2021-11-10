@@ -1,0 +1,15 @@
+T1	Medical-Problem 305 330	left lower lung pneumonia
+T2	Medical-Assertion 332 343	has cleared
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Assertion 346 357	No evidence
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 361 390	acute cardiopulmonary disease
+T5	Lesion-Description 392 399;401 414	Nodular opacification
+T6	Lesion-Anatomy 422 436	right mid zone
+T7	Lesion-Assertion 437 459	most likely represents
+A3	Lesion-AssertionValue T7 possible
+T8	Lesion-Description 462 471	granuloma
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E5	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Assertion:T7

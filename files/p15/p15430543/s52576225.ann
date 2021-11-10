@@ -1,0 +1,36 @@
+T1	Medical-Problem 477 493	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 507 530	areas of patchy opacity
+T3	Medical-Anatomy 534 573	left perihilar and left basilar regions
+T4	Medical-Anatomy 593 651	right paratracheal right upper lobe/paramediastinal region
+T5	Medical-Assertion 653 674	which could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 675 685	aspiration
+T7	Medical-Problem 693 702	infection
+T8	Medical-Problem 732 769	underlying trauma/pulmonary contusion
+T9	Medical-Assertion 770 791	not entirely excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 809 838	minimal right basilar opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 845 860	could be due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 861 879;881 894	additional site of consolidation
+T13	Medical-Assertion 897 899	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 900 922	large pleural effusion
+T15	Medical-Problem 941 954;956 964	small pleural effusion
+E11	Medical-Problem:T15
+T16	Medical-Assertion 1006 1017	no evidence
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1021 1033	pneumothorax
+T18	Medical-Assertion 1178 1180	No
+A6	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1181 1190;1192 1200	displaced fracture
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T19 has-Medical-Assertion:T18

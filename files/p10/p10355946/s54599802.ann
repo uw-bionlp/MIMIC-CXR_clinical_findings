@@ -1,0 +1,42 @@
+T1	Medical-Problem 154 170	micro-nodularity
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 178 193	lung parenchyma
+E2	Lesion-Anatomy:T2
+T3	Lesion-Size-Trend 195 201	stable
+A1	Lesion-Size-TrendValue T3 no-change
+T4	Medical-Problem 306 331	increased rounded opacity
+T5	Medical-Anatomy 339 350	right hilum
+T6	Medical-Assertion 358 378	raises suspicion for
+A2	Medical-AssertionValue T6 possible
+T7	Lesion-Size-Trend 379 388	increased
+A3	Lesion-Size-TrendValue T7 increasing
+T8	Lesion-Anatomy 389 400	right hilar
+T9	Lesion-Description 401 411	adenopathy
+T10	Medical-Anatomy 428 433	lungs
+T11	Medical-Assertion 449 456	without
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 459 478	focal consolidation
+T13	Medical-Problem 480 488	effusion
+T14	Medical-Problem 493 505	pneumothorax
+T15	Medical-Assertion 578 580	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 581 586;588 597	acute fractures
+T17	Medical-Problem 630 660	Increasing right hilar opacity
+E12	Medical-Problem:T17
+T18	Medical-Assertion 661 681	raises suspicion for
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 682 691	increased
+T20	Lesion-Anatomy 693 704	right hilar
+T21	Lesion-Description 705 715	adenopathy
+T22	Medical-Assertion 757 759	no
+A7	Medical-AssertionValue T22 absent
+T23	Medical-Problem 760 765;767 790	acute cardiopulmonary process
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Lesion-Description:T9 has-Lesion-Size-Trend:T7 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Lesion-Description:T21 has-Lesion-Anatomy:T20
+E16	Medical-Problem:T23 has-Medical-Assertion:T22

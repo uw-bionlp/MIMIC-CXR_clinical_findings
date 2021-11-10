@@ -1,0 +1,52 @@
+T1	Medical-Problem 402 413	right-sided
+E1	Medical-Problem:T1
+T2	Medical-Problem 468 471	TB?
+E2	Medical-Problem:T2
+T3	Medical-Assertion 711 713	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 714 743	configurational abnormalities
+T5	Medical-Assertion 791 794	not
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 795 804	congested
+T7	Medical-Anatomy 814 829	right lung base
+T8	Medical-Anatomy 850 891	posterior segment of the right lower lobe
+T9	Medical-Problem 904 924;926 933	discrete parenchymal density
+T10	Medical-Problem 950 970	pneumonic infiltrate
+T11	Medical-Assertion 982 984	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 985 1001	pleural reaction
+T13	Medical-Anatomy 1011 1024	right lateral
+T14	Medical-Anatomy 1036 1059	posterior pleural sinus
+T15	Medical-Anatomy 1183 1200	right apical area
+T16	Medical-Problem 1202 1234;1236 1247	some scattered small parenchymal infiltrates
+T17	Medical-Anatomy 1342 1358	left apical area
+T18	Medical-Assertion 1377 1379	no
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1380 1392	pneumothorax
+T20	Medical-Problem 1506 1522	right lower lobe
+E16	Medical-Problem:T20
+T21	Medical-Problem 1523 1532	pneumonia
+E17	Medical-Problem:T21
+T22	Medical-Problem 1656 1677	some linear densities
+T23	Medical-Anatomy 1687 1717;1719 1743	right hilum into the direction of the right apical area
+T24	Lesion-Description 1768 1774	lesion
+E20	Lesion-Description:T24
+T25	Medical-Assertion 1799 1821	raised the possibility
+A5	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1825 1855	specific tuberculous infection
+T27	Medical-Problem 2043 2064	New acute infiltrates
+T28	Medical-Anatomy 2068 2102	right lower lobe posterior segment
+T29	Lesion-Anatomy 2119 2131	right apical
+T30	Lesion-Description 2132 2138	lesion
+T31	Lesion-Characteristic 2139 2184	raising the possibility of specific infection
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15
+E15	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E18	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T26 has-Medical-Assertion:T25
+E22	Medical-Problem:T27 has-Medical-Anatomy:T28
+E25	Lesion-Description:T30 has-Lesion-Anatomy:T29 has-Lesion-Characteristic:T31

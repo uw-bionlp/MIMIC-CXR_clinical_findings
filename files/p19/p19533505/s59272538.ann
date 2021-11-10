@@ -1,0 +1,29 @@
+T1	Medical-Problem 308 323	slight blunting
+T2	Medical-Anatomy 331 356	right costophrenic sulcus
+T3	Medical-Assertion 365 378	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 410 437	very small pleural effusion
+T5	Medical-Anatomy 454 495	lateral aspect of the right hemidiaphragm
+T6	Medical-Problem 499 514;516 531	apparent slight focal concavity
+T7	Medical-Problem 535 545	lobulation
+T8	Medical-Anatomy 553 562	diaphragm
+T9	Medical-Assertion 570 583	may represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 584 592;594 610	adjacent airspace opacity
+T11	Medical-Problem 663 691	Small right pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Assertion 697 708	question of
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 709 717	possible
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 718 728;730 754	peripheral right lower lobe opacity
+T15	Medical-Assertion 756 775	which may represent
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 776 785	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

@@ -1,0 +1,21 @@
+T1	Medical-Problem 300 336	small to moderate right pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 522 535	Opacification
+T3	Medical-Anatomy 543 566	right mid to lower lung
+T4	Medical-Anatomy 604 613	left lung
+T5	Medical-Problem 644 655	hyperlucent
+T6	Medical-Assertion 656 666	suggesting
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 667 677;679 688	underlying emphysema
+T8	Medical-Problem 811 838	Moderate right pneumothorax
+E7	Medical-Problem:T8
+T9	Medical-Problem 934 951	Increased opacity
+T10	Medical-Anatomy 959 982	right mid to lower lung
+T11	Medical-Assertion 984 998	concerning for
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 999 1008;1010 1019	worsening pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

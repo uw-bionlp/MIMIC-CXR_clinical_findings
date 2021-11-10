@@ -1,0 +1,29 @@
+T1	Medical-Problem 245 274	subtle with pneumomediastinum
+T2	Medical-Anatomy 298 312;314 390	right superior mediastinal region extending superiorly into the lower right cervical region
+T3	Medical-Problem 396 408	hazy opacity
+T4	Medical-Anatomy 416 431	right lung base
+T5	Medical-Assertion 432 445	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 446 461	early pneumonia
+T7	Medical-Assertion 464 466	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 468 484	pleural effusion
+T9	Medical-Problem 488 500	pneumothorax
+T10	Medical-Problem 588 605	Pneumomediastinum
+E8	Medical-Problem:T10
+T11	Medical-Assertion 608 610	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 611 623	pneumothorax
+T13	Medical-Problem 628 640	hazy opacity
+T14	Medical-Anatomy 648 663	right lung base
+T15	Medical-Assertion 664 677	may represent
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 678 693	early pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

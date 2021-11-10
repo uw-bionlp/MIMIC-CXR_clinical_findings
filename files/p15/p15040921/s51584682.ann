@@ -1,0 +1,15 @@
+T1	Medical-Assertion 296 298	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 299 306;308 317	pleural effusions
+T3	Medical-Problem 321 333	pneumothorax
+T4	Medical-Problem 347 378;380 404	mild anterior wedge compression fracture, likely chronic
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 419 448	upper thoracic vertebral body
+T6	Medical-Problem 454 458;460 480	mild degenerative changes
+T7	Medical-Assertion 498 509	No evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 513 526	acute disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

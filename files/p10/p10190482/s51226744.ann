@@ -1,0 +1,38 @@
+T1	Medical-Anatomy 231 249	Cardiac silhouette
+T2	Medical-Problem 254 283	mildly to moderately enlarged
+T3	Medical-Problem 291 303	cardiomegaly
+T4	Medical-Problem 311 322;324 332	pericardial effusion
+T5	Medical-Assertion 352 363	no evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 367 399	elevated central venous pressure
+T7	Medical-Problem 427 475	hemodynamically significant pericardial effusion
+T8	Medical-Assertion 493 495	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 496 526	pulmonary vascular engorgement
+T10	Medical-Problem 528 533	edema
+T11	Medical-Problem 538 554	pleural effusion
+T12	Lesion-Assertion 568 589	no radiographic signs
+A3	Lesion-AssertionValue T12 absent
+T13	Lesion-Description 593 615	lymph node enlargement
+T14	Medical-Problem 630 634;636 647	mild indentation
+T15	Medical-Anatomy 651 696	both sides of the trachea above the clavicles
+T16	Medical-Assertion 697 712	could be due to
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 717 739	enlarged thyroid gland
+T18	Medical-Assertion 790 792	no
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 793 801	findings
+T20	Medical-Problem 813 842	active or latent tuberculosis
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T1
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T1 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Lesion-Description:T13 has-Lesion-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T18

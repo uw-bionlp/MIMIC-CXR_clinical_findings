@@ -1,0 +1,36 @@
+T1	Medical-Problem 372 400	Ill-defined airspace opacity
+T2	Medical-Anatomy 408 433	right mid and lower lungs
+T3	Lesion-Anatomy 454 469	right perihilar
+T4	Lesion-Description 470 474	mass
+T5	Medical-Assertion 507 520	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 522 547	postobstructive pneumonia
+T7	Medical-Anatomy 559 576	right middle lobe
+T8	Medical-Problem 579 589	Prominence
+T9	Medical-Anatomy 598 629	right middle mediastinal border
+T10	Medical-Assertion 630 638	suggests
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 639 650	enlargement
+T12	Medical-Problem 698 731	Right lower lung airspace opacity
+E10	Medical-Problem:T12
+T13	Medical-Assertion 732 745	may represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 748 773	postobstructive pneumonia
+T15	Medical-Anatomy 782 799	right middle lobe
+T16	Lesion-Anatomy 815 826	right hilar
+T17	Lesion-Description 827 831	mass
+T18	Medical-Problem 837 847	Prominence
+T19	Medical-Anatomy 855 880	right mediastinal contour
+T20	Medical-Assertion 881 889	suggests
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 890 901	enlargement
+T22	Medical-Anatomy 910 925	ascending aorta
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T20 has-Medical-Anatomy:T22

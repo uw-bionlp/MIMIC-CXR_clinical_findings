@@ -1,0 +1,25 @@
+T1	Medical-Problem 481 489	blunting
+T2	Medical-Anatomy 497 521	right costophrenic angle
+T3	Medical-Problem 527 540	opacification
+T4	Medical-Anatomy 549 568	right minor fissure
+T5	Medical-Assertion 569 579	suggesting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 580 593	pleural fluid
+T7	Medical-Assertion 596 598	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 599 618	focal consolidation
+T9	Medical-Assertion 620 634	concerning for
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 635 644	pneumonia
+T11	Medical-Problem 648 672	significant pneumothorax
+T12	Medical-Anatomy 833 849;851 858	visualized upper abdomen
+T13	Medical-Problem 862 869	gasless
+T14	Medical-Problem 886 931	New or increased small right pleural effusion
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Anatomy:T12

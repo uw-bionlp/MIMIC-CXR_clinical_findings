@@ -1,0 +1,24 @@
+T1	Medical-Assertion 349 351	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 352 368	pleural effusion
+T3	Medical-Problem 373 385	pneumothorax
+T4	Medical-Assertion 397 399	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 400 424	focal lung consolidation
+T6	Lesion-Characteristic 427 436	Calcified
+T7	Lesion-Anatomy 437 447	left hilar
+T8	Lesion-Anatomy 453 473	adjacent mediastinal
+T9	Lesion-Anatomy 478 493	cervicothoracic
+T10	Lesion-Description 494 505	lymph nodes
+T11	Medical-Problem 604 616	tuberculosis
+E9	Medical-Problem:T11
+T12	Medical-Problem 620 634	histoplasmosis
+E10	Medical-Problem:T12
+T13	Medical-Assertion 655 666	No evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 670 679	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

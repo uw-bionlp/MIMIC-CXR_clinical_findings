@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 303 308	heart
+T2	Medical-Assertion 312 315	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 316 324	enlarged
+T4	Medical-Problem 399 413	mild unfolding
+T5	Medical-Anatomy 421 436	ascending aorta
+T6	Medical-Assertion 439 441	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 442 451;453 463	CHF focal infiltrate
+T8	Medical-Problem 467 475	effusion
+T9	Lesion-Assertion 536 538	no
+A3	Lesion-AssertionValue T9 absent
+T10	Lesion-Anatomy 539 556	hilar mediastinal
+T11	Lesion-Description 557 572	lymphadenopathy
+T12	Lesion-Anatomy 576 585	pulmonary
+T13	Lesion-Description 586 592	nodule
+T14	Lesion-Characteristic 608 617	Calcified
+T15	Lesion-Description 618 628	granulomas
+T16	Medical-Problem 718 746	Equivocal minimal prominence
+T17	Medical-Anatomy 754 769	ascending aorta
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Anatomy:T10
+E10	Lesion-Description:T13 has-Lesion-Assertion:T9 has-Lesion-Anatomy:T10 has-Lesion-Anatomy:T12
+E12	Lesion-Description:T15 has-Lesion-Characteristic:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17

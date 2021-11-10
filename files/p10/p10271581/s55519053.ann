@@ -1,0 +1,28 @@
+T1	Medical-Problem 265 309	large regions of heterogeneous opacification
+T2	Medical-Anatomy 333 355	lingula and lower lobe
+T3	Medical-Assertion 377 387	suggestion
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 393 411;413 435	new smaller region of similar abnormality
+T5	Medical-Anatomy 443 482	anterior segment of the left upper lobe
+T6	Medical-Problem 501 511	pneumonia,
+E5	Medical-Problem:T6
+T7	Lesion-Size 545 551	sub cm
+T8	Lesion-Description 552 558	nodule
+T9	Lesion-Anatomy 580 619	second anterior right second interspace
+T10	Medical-Problem 691 721	Emphysema is moderately severe
+E9	Medical-Problem:T10
+T11	Medical-Assertion 758 760	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 761 768;770 778	pleural effusion
+T13	Lesion-Characteristic 794 801	central
+T14	Lesion-Description 802 824	lymph node enlargement
+T15	Medical-Problem 918 959	small region of left upper lobe pneumonia
+E13	Medical-Problem:T15
+T16	Lesion-Anatomy 993 1009	right upper lobe
+T17	Lesion-Description 1010 1016	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E7	Lesion-Description:T8 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T13
+E15	Lesion-Description:T17 has-Lesion-Anatomy:T16

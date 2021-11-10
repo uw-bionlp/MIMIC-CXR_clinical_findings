@@ -1,0 +1,21 @@
+T1	Medical-Assertion 356 358	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 359 371	cardiomegaly
+T3	Medical-Problem 388 426	displaced micronodules miliary changes
+T4	Medical-Anatomy 434 449	lung parenchyma
+T5	Medical-Problem 468 484	larger opacities
+E4	Medical-Problem:T5
+T6	Medical-Anatomy 501 516	right lung base
+T7	Medical-Problem 531 538	nodular
+T8	Medical-Anatomy 585 609;611 621	mid and peripheral right lung zones
+T9	Medical-Assertion 795 797	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 798 822	larger pleural effusions
+T11	Medical-Assertion 825 827	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 829 841	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

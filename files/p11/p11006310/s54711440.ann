@@ -1,0 +1,21 @@
+T1	Medical-Problem 181 187;189 200	Linear atelectasis
+T2	Medical-Anatomy 219 234	left lower lobe
+T3	Medical-Problem 251 267	patchy opacities
+T4	Medical-Anatomy 288 340;342 359	right mid and lower lung most prominent in the right infrahilar region
+T5	Medical-Assertion 372 378	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 379 414	small pleural effusions bilaterally
+T7	Medical-Problem 523 550	Patchy and linear opacities
+T8	Medical-Anatomy 558 582	right mid and lower lung
+T9	Medical-Assertion 587 591;593 606	most likely due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 607 618	atelectasis
+T11	Medical-Assertion 711 719	Probable
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 720 753	small bilateral pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

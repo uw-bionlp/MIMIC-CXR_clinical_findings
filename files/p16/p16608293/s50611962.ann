@@ -1,0 +1,42 @@
+T1	Medical-Problem 355 384	aortic valvular calcification
+E1	Medical-Problem:T1
+T2	Medical-Problem 396 415	heavy calcification
+T3	Medical-Anatomy 424 438	aortic annulus
+T4	Lesion-Description 469 476	nodular
+E4	Lesion-Description:T4
+T5	Lesion-Description 477 483	lesion
+T6	Lesion-Characteristic 533 556	different configuration
+T7	Lesion-Assertion 591 599	could be
+A1	Lesion-AssertionValue T7 possible
+T8	Lesion-Anatomy 602 606	lung
+T9	Lesion-Description 607 613	lesion
+T10	Lesion-Size 633 639	2.5 cm
+T11	Lesion-Description 645 652	nodular
+E10	Lesion-Description:T11
+T12	Lesion-Description 654 661	opacity
+T13	Lesion-Anatomy 673 700	lateral to the cardiac apex
+T14	Lesion-Description 758 768	adenopathy
+E13	Lesion-Description:T14
+T15	Medical-Problem 894 904	thickening
+T16	Medical-Anatomy 912 937	right paratracheal stripe
+T17	Medical-Problem 961 968;970 984	cardiac decompensation
+T18	Medical-Problem 987 1011	Left pleural abnormality
+E17	Medical-Problem:T18
+T19	Medical-Assertion 1045 1053	probably
+A2	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1054 1062	scarring
+T21	Medical-Assertion 1074 1076	no
+A3	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1077 1099	right pleural effusion
+T23	Medical-Assertion 1104 1106	no
+A4	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1107 1122	pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T6
+E8	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8
+E11	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T17 has-Medical-Anatomy:T16
+E18	Medical-Problem:T20 has-Medical-Assertion:T19
+E19	Medical-Problem:T22 has-Medical-Assertion:T21
+E20	Medical-Problem:T24 has-Medical-Assertion:T23

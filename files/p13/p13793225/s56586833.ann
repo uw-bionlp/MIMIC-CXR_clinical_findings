@@ -1,0 +1,26 @@
+T1	Medical-Problem 322 338	Mild atelectasis
+T2	Medical-Anatomy 354 381	retrocardiac left lung base
+T3	Medical-Problem 384 388;390 398	Mild blunting
+T4	Medical-Anatomy 406 438	left lateral costophrenic sulcus
+T5	Medical-Assertion 439 458	may be secondary to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 461 466;468 484	small pleural effusion
+T7	Medical-Problem 492 508	pleural scarring
+T8	Medical-Assertion 511 513	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 514 527	consolidation
+T10	Medical-Problem 529 544	pulmonary edema
+T11	Medical-Problem 550 562	pneumothorax
+T12	Medical-Problem 722 753	Left basal atelectasis/scarring
+E10	Medical-Problem:T12
+T13	Medical-Assertion 756 758	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 759 780;782 791	acute cardiopulmonary pathology
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

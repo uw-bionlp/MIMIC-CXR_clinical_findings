@@ -1,0 +1,24 @@
+T1	Medical-Problem 243 246	2.6
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 307 318	right upper
+E2	Lesion-Anatomy:T2
+T3	Medical-Anatomy 447 452	lungs
+T4	Medical-Problem 483 510	patchy and linear opacities
+T5	Medical-Anatomy 518 527	left base
+T6	Medical-Assertion 528 541	suggestive of
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 543 554	atelectasis
+T8	Medical-Problem 558 566	scarring
+T9	Medical-Assertion 711 713	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 714 731	pleural effusions
+T11	Medical-Problem 735 758	acute skeletal findings
+T12	Lesion-Size 776 782	2.6 cm
+T13	Lesion-Anatomy 792 808	right upper lobe
+T14	Lesion-Description 809 815	nodule
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E12	Lesion-Description:T14 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T13

@@ -1,0 +1,40 @@
+T1	Medical-Problem 254 264	prominence
+T2	Medical-Anatomy 272 286;288 294	bilateral hila region
+T3	Lesion-Characteristic 313 321	enlarged
+T4	Lesion-Description 322 333	lymph nodes
+T5	Lesion-Characteristic 385 392	diffuse
+T6	Lesion-Description 393 400	nodular
+E6	Lesion-Description:T6
+T7	Lesion-Description 401 410	opacities
+T8	Lesion-Anatomy 418 433	bilateral lungs
+T9	Lesion-Characteristic 442 450	dominant
+T10	Lesion-Description 451 457	lesion
+T11	Lesion-Anatomy 470 479	left apex
+T12	Medical-Problem 484 516;518 527	increased intersitial marking on the right
+E12	Medical-Problem:T12
+T13	Lesion-Description 578 585	lesions
+E13	Lesion-Description:T13
+T14	Medical-Assertion 657 659	no
+A1	Medical-AssertionValue T14 absent
+T15	Medical-Problem 660 673;675 683	large pleural effusion
+T16	Medical-Problem 687 699	pneumothorax
+T17	Medical-Problem 721 736	Hilar adenoathy
+E16	Medical-Problem:T17
+T18	Lesion-Size-Trend 741 744	new
+A2	Lesion-Size-TrendValue T18 new
+T19	Lesion-Characteristic 745 752	diffuse
+T20	Lesion-Description 753 760	nodular
+E18	Lesion-Description:T20
+T21	Lesion-Description 761 770	opacities
+T22	Lesion-Anatomy 778 793	bilateral lungs
+T23	Lesion-Characteristic 802 810	dominant
+T24	Lesion-Description 811 817	lesion
+T25	Lesion-Anatomy 825 834	left apex
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T8
+E10	Lesion-Description:T10 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T11
+E14	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Medical-Problem:T16 has-Medical-Assertion:T14
+E19	Lesion-Description:T21 has-Lesion-Size-Trend:T18 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T22
+E22	Lesion-Description:T24 has-Lesion-Characteristic:T23 has-Lesion-Anatomy:T25

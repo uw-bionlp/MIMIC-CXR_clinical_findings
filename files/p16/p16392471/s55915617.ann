@@ -1,0 +1,22 @@
+T1	Lesion-Anatomy 253 268	Left upper lobe
+T2	Lesion-Description 269 273	mass
+T3	Lesion-Description 305 312	nodules
+E3	Lesion-Description:T3
+T4	Medical-Assertion 353 355	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 356 372	pleural effusion
+T6	Medical-Problem 376 388	pneumothorax
+T7	Medical-Assertion 401 403	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 404 427	new focal consolidation
+T9	Medical-Problem 430 470	Retrocardiac left lower lobe atelectasis
+E7	Medical-Problem:T9
+T10	Lesion-Anatomy 545 555	Upper lobe
+T11	Lesion-Description 556 560	mass
+T12	Lesion-Size-Trend 593 610	interval increase
+A3	Lesion-Size-TrendValue T12 increasing
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T12

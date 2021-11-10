@@ -1,0 +1,41 @@
+T1	Medical-Problem 181 192	Obscuration
+T2	Medical-Anatomy 200 227	left hemidiaphragm medially
+T3	Medical-Assertion 228 239	may reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 240 252;254 268	retrocardiac  consolidation
+T5	Medical-Problem 272 297	alternatively atelectasis
+T6	Medical-Assertion 300 302	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 303 325;327 340	large pleural effusion  pneumothorax
+T8	Medical-Problem 344 364	over pulmonary edema
+T9	Medical-Problem 999 1031	mild left lower lobe atelectasis
+E7	Medical-Problem:T9
+T10	Medical-Problem 1034 1046	Superimposed
+E8	Medical-Problem:T10
+T11	Medical-Problem 1047 1056	infection
+T12	Medical-Assertion 1057 1066;1068 1076	cannot be excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 1079 1081	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1082 1095	consolidation
+T15	Medical-Problem 1099 1111	pneumothorax
+T16	Medical-Assertion 1119 1121	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1122 1143	frank pulmonary edema
+T18	Medical-Problem 1157 1176	vascular congestion
+E13	Medical-Problem:T18
+T19	Medical-Problem 1215 1237	lower lobe atelectasis
+E14	Medical-Problem:T19
+T20	Medical-Problem 1239 1261	superimposed infection
+T21	Medical-Assertion 1262 1280	cannot be excluded
+A6	Medical-AssertionValue T21 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T20 has-Medical-Assertion:T21

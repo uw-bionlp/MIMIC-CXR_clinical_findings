@@ -1,0 +1,27 @@
+T1	Medical-Problem 227 261	essentially complete opacification
+T2	Medical-Anatomy 270 285	left hemithorax
+T3	Medical-Problem 290 326	small faint area of residual lucency
+T4	Medical-Anatomy 342 347;349 353	upper zone
+T5	Medical-Problem 465 490;492 503	slight rightward shift of mediastinum
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 540 550	right lung
+T7	Medical-Assertion 575 582	without
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 583 586	CHF
+T9	Medical-Problem 588 604	focal infiltrate
+T10	Medical-Problem 608 616	effusion
+T11	Medical-Assertion 619 627	Possible
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 628 635;637 648	minimal atelectasis
+T13	Medical-Anatomy 652 667	right lung base
+T14	Medical-Problem 687 710	Worsening opacification
+T15	Medical-Anatomy 718 733	left hemithorax
+T16	Medical-Problem 736 748;750 767	Only minimal residual aeration
+E14	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15

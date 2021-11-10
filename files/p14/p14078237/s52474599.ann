@@ -1,0 +1,30 @@
+T1	Lesion-Characteristic 243 254	ill-defined
+T2	Lesion-Description 255 261	nodule
+T3	Lesion-Anatomy 269 285	right lower lobe
+T4	Lesion-Description 326 332	nodule
+T5	Medical-Assertion 405 407	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 408 419	new opacity
+T7	Medical-Problem 421 436	pulmonary edema
+T8	Medical-Problem 438 454	pleural effusion
+T9	Medical-Problem 460 472	pneumothorax
+T10	Medical-Problem 475 501	Interstitial abnormalities
+E9	Medical-Problem:T10
+T11	Medical-Problem 506 520	hyperinflation
+E10	Medical-Problem:T11
+T12	Medical-Problem 544 553	emphysema
+E11	Medical-Problem:T12
+T13	Lesion-Anatomy 632 648	right lower lobe
+T14	Lesion-Characteristic 649 659	spiculated
+T15	Lesion-Description 660 666	nodule
+T16	Medical-Assertion 669 680	No evidence
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 685 697	pneumothorax
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Assertion:T5
+E14	Lesion-Description:T15 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T16

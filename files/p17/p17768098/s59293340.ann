@@ -1,0 +1,27 @@
+T1	Medical-Problem 144 160	aspirated barium
+T2	Medical-Anatomy 173 194	tracheobronchial tree
+T3	Medical-Assertion 199 213	mostly cleared
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 230 236	barium
+T5	Medical-Anatomy 249 261	neoesophagus
+T6	Medical-Problem 264 295	Moderate right pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Problem 341 386	increasing right mid and lower lung opacities
+E6	Medical-Problem:T7
+T8	Medical-Assertion 388 404;406 408	which may be due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 409 420	atelectasis
+T10	Medical-Problem 437 459	co-existing aspiration
+T11	Medical-Problem 463 483	infectious pneumonia
+T12	Medical-Problem 486 515	Patchy and linear atelectasis
+T13	Medical-Anatomy 523 537	left lung base
+T14	Medical-Assertion 574 576	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 577 592	relevant change
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

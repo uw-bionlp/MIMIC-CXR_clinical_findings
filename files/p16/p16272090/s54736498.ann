@@ -1,0 +1,26 @@
+T1	Medical-Problem 265 306	Borderline size of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Assertion 307 323	without evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 327 342	pulmonary edema
+T4	Medical-Problem 345 364	Minimal atelectasis
+T5	Medical-Anatomy 368 383	both lung bases
+T6	Medical-Assertion 386 388	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 389 421	pathological parenchymal process
+T8	Medical-Assertion 438 440	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 441 450	pneumonia
+T10	Medical-Problem 454 469	pulmonary edema
+T11	Lesion-Assertion 472 474	No
+A4	Lesion-AssertionValue T11 absent
+T12	Lesion-Anatomy 475 479	lung
+T13	Lesion-Description 480 487	nodules
+T14	Lesion-Description 491 497	masses
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T12
+E10	Lesion-Description:T14 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T12

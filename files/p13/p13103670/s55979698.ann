@@ -1,0 +1,36 @@
+T1	Medical-Anatomy 254 259	LUNGS
+T2	Medical-Problem 264 277	HYPERINFLATED
+T3	Medical-Assertion 288 294	MAY BE
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 295 318;320 329	TRACE BILATERAL PLEURAL EFFUSIONS
+T5	Medical-Problem 345 368	RELATIVE INDISTINCTNESS
+T6	Medical-Anatomy 376 380	HILA
+T7	Medical-Anatomy 382 398	PERIHILAR REGION
+T8	Medical-Assertion 400 407	SUGGEST
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 408 428	VASCULAR ENGORGEMENT
+T10	Medical-Problem 444 454	PROMINENCE
+T11	Medical-Anatomy 462 476	UPPER VESICLES
+T12	Medical-Assertion 479 481	NO
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 482 494	PNEUMOTHORAX
+T14	Medical-Anatomy 508 515	CARDIAC
+T15	Medical-Assertion 530 533	NOT
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 534 542	ENLARGED
+T17	Medical-Problem 584 596	DEGENERATIVE
+E13	Medical-Problem:T17
+T18	Medical-Problem 659 672	HYPERINFLATED
+T19	Medical-Anatomy 673 678	LUNGS
+T20	Medical-Assertion 684 692	POSSIBLE
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 693 716	TRACE PLEURAL EFFUSIONS
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20

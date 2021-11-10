@@ -1,0 +1,20 @@
+T1	Medical-Problem 129 150	pleural effusions and
+E1	Medical-Problem:T1
+T2	Medical-Problem 151 165	consolidations
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 265 270	lungs
+T4	Medical-Problem 276 306	bilateral lower lobe opacities
+T5	Medical-Problem 312 331;333 342	moderate associated effusions
+T6	Lesion-Description 345 362	Nodular opacities
+T7	Lesion-Anatomy 370 380	right lung
+T8	Medical-Problem 429 459	cardiac silhouette is enlarged
+E8	Medical-Problem:T8
+T9	Medical-Assertion 522 524	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 525 537	pneumothorax
+T11	Medical-Problem 568 634	Unchanged moderate bilateral effusions with associated atelectasis
+E10	Medical-Problem:T11
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9

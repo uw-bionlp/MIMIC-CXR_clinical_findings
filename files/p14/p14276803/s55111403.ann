@@ -1,0 +1,21 @@
+T1	Medical-Assertion 305 307	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 308 325	pleural effusions
+T3	Medical-Problem 329 341	pneumothorax
+T4	Medical-Problem 384 399	nodular density
+E3	Medical-Problem:T4
+T5	Lesion-Assertion 425 433	possible
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Anatomy 435 439	lung
+T7	Lesion-Description 440 446	nodule
+T8	Medical-Assertion 599 610	No evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 614 643	acute cardiopulmonary disease
+T10	Medical-Assertion 646 657	Possibility
+A4	Medical-AssertionValue T10 possible
+T11	Medical-Problem 661 676	anterior nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T11 has-Medical-Assertion:T10

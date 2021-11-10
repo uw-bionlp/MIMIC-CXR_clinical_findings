@@ -1,0 +1,27 @@
+T1	Medical-Problem 29 37	free air
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 561 566	lungs
+T3	Medical-Assertion 571 576	clear
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 580 593	consolidation
+T5	Medical-Problem 597 605	effusion
+T6	Medical-Problem 664 672	Tortuous
+E5	Medical-Problem:T6
+T7	Medical-Problem 755 772	increased lucency
+T8	Medical-Anatomy 780 827	right lung base, likely below the hemidiaphragm
+T9	Medical-Assertion 829 843	suspicious for
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 844 863	intraperitoneal air
+T11	Medical-Problem 894 901	lucency
+T12	Medical-Anatomy 909 924	right lung base
+T13	Medical-Assertion 976 986	suspicious
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 991 1015	free intraperitoneal air
+T15	Medical-Problem 1060 1095	amount of air is more than expected
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12

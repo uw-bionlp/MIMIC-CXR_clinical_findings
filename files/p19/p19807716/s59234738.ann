@@ -1,0 +1,35 @@
+T1	Medical-Assertion 30 32	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 33 62	acute cardiopulmonary process
+T3	Lesion-Size 66 70	9 mm
+T4	Lesion-Description 71 78	nodular
+E3	Lesion-Description:T4
+T5	Lesion-Description 79 86	opacity
+T6	Lesion-Anatomy 103 117	left lung apex
+T7	Medical-Problem 614 633	focal consolidation
+E6	Medical-Problem:T7
+T8	Medical-Problem 635 640	edema
+E7	Medical-Problem:T8
+T9	Medical-Problem 645 653	effusion
+E8	Medical-Problem:T9
+T10	Lesion-Size 667 671	9 mm
+T11	Lesion-Description 672 679	nodular
+E10	Lesion-Description:T11
+T12	Lesion-Description 681 688	opacity
+T13	Lesion-Anatomy 709 723	left lung apex
+T14	Medical-Problem 804 819	mildly enlarged
+E13	Medical-Problem:T14
+T15	Medical-Problem 822 835;837 855	Thoracolumbar S-shaped scoliosis
+E14	Medical-Problem:T15
+T16	Medical-Assertion 865 872	without
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 873 900	acute osseous abnormalities
+T18	Medical-Assertion 965 967	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1013 1020	opacity
+T20	Medical-Anatomy 1037 1051	left lung apex
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T6
+E11	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20

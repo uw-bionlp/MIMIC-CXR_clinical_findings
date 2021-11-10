@@ -1,0 +1,17 @@
+T1	Medical-Problem 398 431	moderate right hydro pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 442 448;450 500	global more air displaying progressive pleural thickening
+E2	Medical-Problem:T2
+T3	Medical-Problem 503 516	Opacification
+T4	Medical-Anatomy 525 540	right lung base
+T5	Medical-Assertion 541 549	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 550 561	atelectasis
+T7	Medical-Problem 570 589	Severe cardiomegaly
+E6	Medical-Problem:T7
+T8	Medical-Assertion 607 609	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 610 634	left pleural abnormality
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

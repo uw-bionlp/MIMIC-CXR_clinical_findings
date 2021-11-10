@@ -1,0 +1,30 @@
+T1	Medical-Problem 340 359	minimal improvement
+E1	Medical-Problem:T1
+T2	Medical-Problem 367 395	right-sided pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 407 418	atelectasis
+T4	Medical-Anatomy 427 449	base of the right lung
+T5	Medical-Assertion 461 463	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 464 476	pneumothorax
+T7	Medical-Problem 478 491;493 500	Posttreatment changes
+E6	Medical-Problem:T7
+T8	Lesion-Anatomy 508 525	right middle lobe
+T9	Lesion-Description 526 530	mass
+T10	Lesion-Size-Trend 535 544	unchanged
+A2	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 547 549	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 550 569	vascular congestion
+T13	Medical-Problem 574 600	acute focal consolidations
+T14	Medical-Problem 652 680	right-sided pleural effusion
+E11	Medical-Problem:T14
+T15	Medical-Assertion 686 688	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 690 702	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

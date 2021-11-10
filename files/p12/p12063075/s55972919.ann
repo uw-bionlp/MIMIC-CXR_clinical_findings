@@ -1,0 +1,32 @@
+T1	Medical-Assertion 876 878	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 879 891	pneumothorax
+T3	Medical-Problem 938 965	bilateral pleural effusions
+E2	Medical-Problem:T3
+T4	Medical-Problem 988 995;997 1007	crowded appearance
+T5	Medical-Anatomy 1015 1042	basal pulmonary vasculature
+T6	Medical-Problem 1062 1072;1074 1091	element of perivascular haze
+T7	Medical-Problem 1096 1106	prominence
+T8	Medical-Anatomy 1114 1125	vasculature
+T9	Medical-Anatomy 1133 1144	upper zones
+T10	Medical-Assertion 1146 1159	suggestive of
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 1160 1204	markedly increased pulmonary venous pressure
+T12	Medical-Problem 1251 1277	hazy parenchymal densities
+T13	Medical-Anatomy 1285 1294	periphery
+T14	Medical-Assertion 1498 1500	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 1501 1513	pneumothorax
+T16	Medical-Problem 1521 1551	placement-related complication
+T17	Medical-Assertion 1554 1562	Possibly
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1564 1613	slight regression of pulmonary congestive pattern
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T9
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

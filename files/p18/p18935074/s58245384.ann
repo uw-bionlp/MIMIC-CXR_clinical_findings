@@ -1,0 +1,19 @@
+T1	Medical-Problem 306 310;312 327	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 329 370	Borderline size of the cardiac silhouette
+E2	Medical-Problem:T2
+T3	Medical-Assertion 371 378	without
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 379 388;390 395	pulmonary edema
+T5	Medical-Anatomy 463 478	lung parenchyma
+T6	Medical-Assertion 485 496	no evidence
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 500 509	pneumonia
+T8	Medical-Problem 513 531;533 540	other pathological process
+T9	Medical-Assertion 543 545	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 546 563	pleural effusions
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

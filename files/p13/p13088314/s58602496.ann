@@ -1,0 +1,19 @@
+T1	Medical-Assertion 397 399	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 400 412	pneumothorax
+T3	Medical-Anatomy 415 420;422 432	Right upper lobe
+T4	Medical-Problem 433 454	less scar volume loss
+T5	Medical-Anatomy 463 481	right paratracheal
+T6	Lesion-Anatomy 491 502	mediastinum
+T7	Lesion-Description 503 513	adenopathy
+T8	Lesion-Size-Trend 514 523	unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Assertion 569 571	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 572 602	rib small pericardial effusion
+T11	Medical-Problem 627 640	liver dilated
+E8	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

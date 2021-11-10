@@ -1,0 +1,17 @@
+T1	Medical-Problem 241 283	Diffuse bilateral pulmonary opacifications
+T2	Medical-Anatomy 294 305	bilaterally
+T3	Medical-Problem 386 401	pulmonary edema
+E3	Medical-Problem:T3
+T4	Medical-Assertion 407 414	absence
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 418 437	cardiac enlargement
+T6	Medical-Assertion 438 448;450 461	raises the possibility
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 467 487	noncardiogenic cause
+T8	Medical-Problem 528 548	widespread pneumonia
+E6	Medical-Problem:T8
+T9	Medical-Problem 589 593	ARDS
+E7	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T6

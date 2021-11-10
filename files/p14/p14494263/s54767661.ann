@@ -1,0 +1,18 @@
+T1	Medical-Anatomy 324 339	right lung base
+T2	Medical-Problem 360 390	relative area of basal opacity
+T3	Medical-Assertion 392 398	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 400 425	postoperative atelectasis
+T5	Medical-Assertion 437 439	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 440 452	pneumothorax
+T7	Medical-Problem 467 474;476 513	minimal postoperative mediastinal enlargement
+E5	Medical-Problem:T7
+T8	Medical-Problem 535 554	increased opacities
+T9	Medical-Anatomy 563 577	left lung base
+T10	Medical-Assertion 578 602	have completely resolved
+A3	Medical-AssertionValue T10 absent
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9 has-Medical-Assertion:T10

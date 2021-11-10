@@ -1,0 +1,52 @@
+T1	Medical-Assertion 79 90	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 94 106	pneumothorax
+T3	Lesion-Description 108 115;117 125	Nodular  opacity
+T4	Lesion-Anatomy 133 148	right lung base
+T5	Medical-Assertion 156 171	could represent
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 172 183	atelectasis
+T7	Medical-Assertion 188 194;196 204	cannot  exclude
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 205 214	pneumonia
+T9	Medical-Problem 346 358	pneumothorax
+E6	Medical-Problem:T9
+T10	Lesion-Description 360 367	Nodular
+E7	Lesion-Description:T10
+T11	Medical-Problem 370 377	opacity
+T12	Medical-Anatomy 385 400	right lung base
+T13	Medical-Assertion 408 423	could represent
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 424 435	atelectasis
+T15	Medical-Problem 457 466	pneumonia
+E11	Medical-Problem:T15
+T16	Medical-Problem 860 881;883 886	Moderate subcutaneous gas
+T17	Medical-Problem 887 897	collection
+T18	Medical-Anatomy 914 924	right neck
+T19	Medical-Assertion 935 937	no
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 938 950	pneumothorax
+T21	Medical-Problem 952 961;963 972	Bibasilar opacities
+E16	Medical-Problem:T21
+T22	Medical-Assertion 1006 1012	likely
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1013 1027	atelectasis on
+T24	Medical-Problem 1039 1052	Faint opacity
+T25	Medical-Anatomy 1060 1070	right apex
+T26	Medical-Assertion 1092 1100	could be
+A7	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1101 1112	atelectasis
+T28	Medical-Problem 1117 1127	aspiration
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T18
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T23 has-Medical-Assertion:T22
+E18	Medical-Problem:T24 has-Medical-Anatomy:T25
+E20	Medical-Problem:T27 has-Medical-Anatomy:T25 has-Medical-Assertion:T26
+E21	Medical-Problem:T28 has-Medical-Anatomy:T25 has-Medical-Assertion:T26

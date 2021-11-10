@@ -1,0 +1,26 @@
+T1	Medical-Problem 215 232	slightly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 245 277	slight upper zone redistribution
+E2	Medical-Problem:T2
+T3	Medical-Problem 280 307	Slight crowding of markings
+T4	Medical-Anatomy 315 319;321 326	lung bases
+T5	Medical-Anatomy 363 397	lingula/middle lobe and lower lobe
+T6	Medical-Assertion 412 425	may represent
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 426 437	atelectasis
+T8	Medical-Assertion 467 478	possibility
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 486 502	early infiltrate
+T10	Medical-Assertion 503 530	cannot be entirely excluded
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 533 535	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 536 555	frank consolidation
+T13	Medical-Assertion 561 563	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 564 572	effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T11 has-Medical-Assertion:T13

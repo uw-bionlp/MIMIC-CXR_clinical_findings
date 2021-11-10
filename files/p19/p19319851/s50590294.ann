@@ -1,0 +1,30 @@
+T1	Medical-Assertion 374 376	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 377 392	air-fluid level
+T3	Medical-Problem 485 497	pneumothorax
+E2	Medical-Problem:T3
+T4	Medical-Problem 562 585	residual patchy opacity
+T5	Medical-Anatomy 594 603	left base
+T6	Medical-Assertion 610 627	likely represents
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 628 639	atelectasis
+T8	Medical-Assertion 677 679	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 680 698	large pneumothorax
+T10	Medical-Problem 923 929	Patchy
+E7	Medical-Problem:T10
+T11	Medical-Problem 930 944	linear opacity
+T12	Medical-Anatomy 966 976	right base
+T13	Medical-Assertion 978 991	suggestive of
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 992 1003	atelectasis
+T15	Medical-Assertion 1006 1008	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1021 1036	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

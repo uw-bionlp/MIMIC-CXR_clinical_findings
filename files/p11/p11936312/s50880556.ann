@@ -1,0 +1,52 @@
+T1	Medical-Problem 302 322	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 329 350	bibasilar atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 353 367	Linear density
+T4	Medical-Anatomy 388 400;402 414	lateral left heart border
+T5	Medical-Assertion 415 426	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 429 462	dense focus of linear atelectasis
+T7	Medical-Problem 466 473;475 481	pleural plaque
+T8	Lesion-Size 505 511	1.5 cm
+T9	Lesion-Characteristic 512 520	cavitary
+T10	Lesion-Description 521 527	lesion
+T11	Lesion-Characteristic 535 551;553 556	relatively thick rim
+T12	Lesion-Anatomy 564 585	lateral mid left lung
+T13	Medical-Problem 588 605	Mild cardiomegaly
+E12	Medical-Problem:T13
+T14	Medical-Problem 611 629;631 641	pulmonary vascular congestion
+E13	Medical-Problem:T14
+T15	Medical-Anatomy 648 687	2 most superior median sternotomy wires
+T16	Medical-Problem 692 704;706 721	fractured in multiple places
+T17	Medical-Problem 724 745	Pleural effusions are
+E16	Medical-Problem:T17
+T18	Medical-Problem 826 859	Fractured median sternotomy wires
+E17	Medical-Problem:T18
+T19	Medical-Problem 865 882	Mild cardiomegaly
+E18	Medical-Problem:T19
+T20	Medical-Problem 888 917	pulmonary vascular congestion
+E19	Medical-Problem:T20
+T21	Medical-Assertion 923 925	no
+A2	Medical-AssertionValue T21 absent
+T22	Medical-Problem 926 937	overt edema
+T23	Lesion-Assertion 943 951	Apparent
+A3	Lesion-AssertionValue T23 possible
+T24	Lesion-Size 952 958	1.5 cm
+T25	Lesion-Characteristic 959 967	cavitary
+T26	Lesion-Description 968 974	lesion
+T27	Lesion-Anatomy 982 1003	lateral mid left lung
+T28	Lesion-Assertion 1115 1123	Apparent
+A4	Lesion-AssertionValue T28 possible
+T29	Lesion-Size 1124 1130	1.5 cm
+T30	Lesion-Characteristic 1131 1139	cavitary
+T31	Lesion-Description 1140 1146	lesion
+T32	Lesion-Anatomy 1154 1170;1172 1176	lateral mid left lung
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Lesion-Description:T10 has-Lesion-Size-Present:T8 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12
+E15	Medical-Problem:T16 has-Medical-Anatomy:T15
+E20	Medical-Problem:T22 has-Medical-Assertion:T21
+E23	Lesion-Description:T26 has-Lesion-Assertion:T23 has-Lesion-Size-Present:T24 has-Lesion-Characteristic:T25 has-Lesion-Anatomy:T27
+E27	Lesion-Description:T31 has-Lesion-Assertion:T28 has-Lesion-Size-Present:T29 has-Lesion-Characteristic:T30 has-Lesion-Anatomy:T32

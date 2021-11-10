@@ -1,0 +1,31 @@
+T1	Medical-Problem 600 618	improving aeration
+E1	Medical-Problem:T1
+T2	Medical-Assertion 648 654	likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 657 690	persistent layering left effusion
+T4	Lesion-Size-Trend 752 758	stable
+A2	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Anatomy 759 776	right mediastinal
+T6	Lesion-Description 777 781	mass
+T7	Medical-Assertion 794 800	likely
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 801 847	persistent partial left lower lobe atelectasis
+T9	Medical-Problem 852 861;863 881	resolving patchy atelectasis
+T10	Medical-Anatomy 889 899	right base
+T11	Medical-Problem 911 921	prominence
+T12	Medical-Anatomy 929 938;940 951	pulmonary vascularity
+T13	Medical-Problem 1027 1065	component of a mild interstitial edema
+T14	Medical-Assertion 1066 1093	cannot be entirely excluded
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Assertion 1096 1098	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1099 1111	pneumothorax
+T17	Medical-Problem 1176 1202	overlying airspace disease
+E12	Medical-Problem:T17
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Lesion-Description:T6 has-Lesion-Size-Trend:T4 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T10
+E6	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Anatomy:T10
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T13 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

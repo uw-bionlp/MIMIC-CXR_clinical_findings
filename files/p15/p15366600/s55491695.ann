@@ -1,0 +1,43 @@
+T1	Medical-Anatomy 237 242	Lungs
+T2	Medical-Problem 247 265	hyperinflated with
+E2	Medical-Problem:T2
+T3	Medical-Problem 266 291	coarse reticular markings
+T4	Medical-Assertion 292 298	can be
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 299 314;316 328	smoking related lung disease
+T6	Lesion-Description 331 348	Nodular opacities
+T7	Lesion-Anatomy 349 359	right apex
+T8	Lesion-Characteristic 365 378	slight volume
+T9	Lesion-Description 424 439	nodular opacity
+T10	Lesion-Anatomy 447 464	right middle lobe
+T11	Lesion-Assertion 466 472	likely
+A2	Lesion-AssertionValue T11 possible
+T12	Lesion-Characteristic 473 482	calcified
+T13	Lesion-Description 483 492	granuloma
+T14	Medical-Problem 495 527	Mild bilateral apical thickening
+E12	Medical-Problem:T14
+T15	Medical-Assertion 554 556	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 557 573	pleural effusion
+T17	Medical-Problem 577 589	pneumothorax
+T18	Lesion-Description 610 627	Nodular opacities
+T19	Lesion-Anatomy 635 651	right upper lobe
+T20	Medical-Assertion 674 679;681 690	could represent
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 691 708	impacted bronchus
+T22	Medical-Problem 710 721	apical scar
+T23	Lesion-Anatomy 725 729	lung
+T24	Lesion-Description 730 740	malignancy
+T25	Medical-Problem 862 871	Emphysema
+E21	Medical-Problem:T25
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T4
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T10
+E11	Lesion-Description:T13 has-Lesion-Anatomy:T10 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T20
+E20	Lesion-Description:T24 has-Lesion-Anatomy:T19 has-Lesion-Anatomy:T23

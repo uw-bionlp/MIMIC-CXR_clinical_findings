@@ -1,0 +1,22 @@
+T1	Medical-Problem 220 236	Minimal blunting
+T2	Medical-Anatomy 244 267	left costophrenic sinus
+T3	Medical-Problem 273 293	loss of radiodensity
+T4	Medical-Anatomy 301 316	left lower lobe
+T5	Medical-Assertion 318 331	likely caused
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 337 342;344 368	small retrocardiac atelectasis
+T7	Medical-Assertion 371 382	No evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 386 404	acute lung changes
+T9	Medical-Assertion 420 422;424 432	no evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 436 445	pneumonia
+T11	Medical-Problem 449 464	pulmonary edema
+T12	Medical-Problem 466 476	Borderline
+E9	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

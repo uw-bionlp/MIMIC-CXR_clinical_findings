@@ -1,0 +1,45 @@
+T1	Medical-Problem 65 82	focal atelectasis
+T2	Medical-Anatomy 90 112;114 119	right middle and lower  lobe
+T3	Medical-Problem 126 142	right lower lobe
+E3	Medical-Problem:T3
+T4	Medical-Problem 143 154	atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Problem 181 189;191 210	somewhat  nodular appearance
+E5	Medical-Problem:T5
+T6	Lesion-Assertion 327 329	no
+A1	Lesion-AssertionValue T6 absent
+T7	Lesion-Description 358 364	lesion
+T8	Medical-Assertion 651 662	no evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 666 681	pulmonary edema
+T10	Medical-Problem 685 702	pleural effusions
+T11	Medical-Problem 705 717;719 726	Lung volumes are low
+E9	Medical-Problem:T11
+T12	Medical-Problem 735 761	areas of focal atelectasis
+T13	Medical-Anatomy 777 793;795 805	right middle and lower lobe
+T14	Medical-Problem 812 840	right lower lobe atelectasis
+E12	Medical-Problem:T14
+T15	Medical-Problem 876 892	slightly nodular
+E13	Medical-Problem:T15
+T16	Medical-Assertion 904 915	no evidence
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 919 928	pneumonia
+T18	Medical-Problem 1021 1038	focal atelectasis
+T19	Medical-Anatomy 1046 1068;1070 1074	right middle and lower lobe
+T20	Medical-Problem 1081 1097	right lower lobe
+E17	Medical-Problem:T20
+T21	Medical-Problem 1098 1109	atelectasis
+E18	Medical-Problem:T21
+T22	Medical-Problem 1136 1144;1146 1164	somewhat nodular appearance
+E19	Medical-Problem:T22
+T23	Lesion-Assertion 1280 1282	no
+A4	Lesion-AssertionValue T23 absent
+T24	Lesion-Description 1310 1321	lesion/mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Lesion-Description:T7 has-Lesion-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E20	Lesion-Description:T24 has-Lesion-Assertion:T23

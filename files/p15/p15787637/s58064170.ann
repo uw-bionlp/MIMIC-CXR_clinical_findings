@@ -1,0 +1,30 @@
+T1	Medical-Problem 250 257	opacity
+T2	Medical-Anatomy 265 283	right heart border
+T3	Medical-Assertion 284 297	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 298 321;323 333	crowding of mediastinal structures
+T5	Medical-Problem 378 387	pneumonia
+T6	Medical-Assertion 388 397;399 407	cannot be excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 419 421	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 422 434	pneumothorax
+T9	Medical-Problem 436 444	fracture
+T10	Medical-Problem 448 459	dislocation
+T11	Medical-Problem 533 550	Equivocal opacity
+T12	Medical-Anatomy 558 576	right heart border
+T13	Medical-Assertion 577 590	may represent
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 591 602;604 650	crowding of mediastinal structures due to low lung volumes
+T15	Medical-Problem 660 669	pneumonia
+T16	Medical-Assertion 670 679;681 689	cannot be excluded
+A5	Medical-AssertionValue T16 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T16

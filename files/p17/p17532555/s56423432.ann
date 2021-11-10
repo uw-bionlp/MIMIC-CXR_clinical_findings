@@ -1,0 +1,63 @@
+T1	Medical-Problem 57 88	Bilateral lower extremity edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 192 243	interval enlargement of the cardiac silhouette size
+E2	Medical-Problem:T2
+T3	Medical-Problem 258 287	moderate to severely enlarged
+E3	Medical-Problem:T3
+T4	Medical-Problem 294 322;324 355	configuration of the cardiac silhouette is somewhat globular
+E4	Medical-Problem:T4
+T5	Medical-Problem 363 383	pericardial effusion
+T6	Medical-Assertion 387 399	not excluded
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 403 424	Aortic calcifications
+E6	Medical-Problem:T7
+T8	Medical-Problem 501 519	perihilar haziness
+E7	Medical-Problem:T8
+T9	Medical-Problem 524 547	vascular indistinctness
+E8	Medical-Problem:T9
+T10	Medical-Problem 618 632;634 639	mild pulmonary edema
+E9	Medical-Problem:T10
+T11	Medical-Problem 642 667	More focal patchy opacity
+T12	Medical-Anatomy 679 694	right lung base
+T13	Medical-Problem 712 741	underlying infectious process
+T14	Medical-Assertion 760 783	not completely excluded
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Anatomy 791 796	lungs
+T16	Medical-Problem 801 814	hyperinflated
+T17	Medical-Problem 820 836	relative lucency
+T18	Medical-Anatomy 844 855	lung apices
+T19	Medical-Problem 873 882	emphysema
+T20	Medical-Assertion 885 887	No
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 888 913	definite pleural effusion
+T22	Medical-Assertion 934 936	no
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 938 950	pneumothorax
+T24	Medical-Problem 1067 1119	Worsening congestive heart failure, mild to moderate
+E20	Medical-Problem:T24
+T25	Medical-Problem 1132 1140;1142 1155	Globular configuration
+T26	Medical-Anatomy 1163 1181	cardiac silhouette
+T27	Medical-Assertion 1182 1204	raises the possibility
+A5	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1208 1218;1220 1240	underlying pericardial effusion
+T29	Medical-Problem 1243 1261	More focal opacity
+T30	Medical-Anatomy 1269 1284	right lung base
+T31	Medical-Assertion 1285 1291	likely
+A6	Medical-AssertionValue T31 possible
+T32	Medical-Problem 1321 1336	pulmonary edema
+T33	Medical-Problem 1345 1365	underlying infection
+T34	Medical-Assertion 1369 1372;1374 1382	not excluded
+A7	Medical-AssertionValue T34 possible
+E5	Medical-Problem:T5 has-Medical-Assertion:T6
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T13 has-Medical-Anatomy:T12 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T15 has-Medical-Anatomy:T18
+E15	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Anatomy:T18
+E17	Medical-Problem:T19 has-Medical-Anatomy:T18
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E21	Medical-Problem:T25 has-Medical-Anatomy:T26
+E23	Medical-Problem:T28 has-Medical-Anatomy:T26 has-Medical-Assertion:T27
+E24	Medical-Problem:T29 has-Medical-Anatomy:T30
+E26	Medical-Problem:T32 has-Medical-Assertion:T31
+E27	Medical-Problem:T33 has-Medical-Anatomy:T30 has-Medical-Assertion:T31 has-Medical-Assertion:T34

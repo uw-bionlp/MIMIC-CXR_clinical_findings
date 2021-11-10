@@ -1,0 +1,17 @@
+T1	Medical-Problem 220 238;240 250	Pulmonary vascular congestion
+E1	Medical-Problem:T1
+T2	Medical-Problem 269 279	mild edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 282 302	New patchy opacities
+T4	Medical-Anatomy 306 315;317 322	both lung bases
+T5	Medical-Assertion 323 334	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 335 353	patchy atelectasis
+T7	Medical-Problem 355 365	aspiration
+T8	Medical-Assertion 371 382	less likely
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 385 395;397 417	developing infectious pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8

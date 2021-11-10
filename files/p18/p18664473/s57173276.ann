@@ -1,0 +1,17 @@
+T1	Medical-Assertion 348 350	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 351 367	pleural effusion
+T3	Medical-Problem 371 383	pneumothorax
+T4	Medical-Problem 386 394	Fullness
+T5	Medical-Anatomy 402 420;422 428	right costophrenic sulcus
+T6	Medical-Assertion 446 467	most likely represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 468 475	fat pad
+T8	Medical-Assertion 486 488	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 489 494;496 507	acute abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

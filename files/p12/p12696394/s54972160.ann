@@ -1,0 +1,43 @@
+T1	Lesion-Anatomy 279 289;291 295	left lower lobe
+T2	Lesion-Description 296 300	mass
+T3	Medical-Problem 388 414	subtle increase in opacity
+T4	Medical-Anatomy 429 433;435 452	left mid to lower lung
+T5	Medical-Assertion 454 468	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 471 502	superimposed infectious process
+T7	Medical-Assertion 514 516	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 517 533	pleural effusion
+T9	Medical-Problem 537 549	pneumothorax
+T10	Medical-Problem 552 578	Bibasilar fibrotic changes
+E8	Medical-Problem:T10
+T11	Medical-Problem 592 636	Interval increase in interstitial thickening
+T12	Medical-Anatomy 644 654	right lung
+T13	Lesion-Assertion 656 659	may
+A3	Lesion-AssertionValue T13 possible
+T14	Lesion-Description 679 691	lymphangitic
+T15	Medical-Problem 775 784	Opacities
+T16	Medical-Anatomy 799 815	mid to left lung
+T17	Medical-Assertion 819 833	concerning for
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 834 843	pneumonia
+T19	Lesion-Size-Trend 852 869	Interval increase
+A5	Lesion-Size-TrendValue T19 increasing
+T20	Lesion-Anatomy 877 892	left lower lobe
+T21	Lesion-Description 893 897	mass
+T22	Medical-Problem 938 965	new interstitial thickening
+T23	Medical-Anatomy 973 983	right lung
+T24	Lesion-Characteristic 985 995	concerning
+T25	Lesion-Description 1001 1031	lymphangitic spread of disease
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Lesion-Description:T14 has-Lesion-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E16	Lesion-Description:T21 has-Lesion-Size-Trend:T19 has-Lesion-Anatomy:T20
+E17	Medical-Problem:T22 has-Medical-Anatomy:T23
+E20	Lesion-Description:T25 has-Lesion-Characteristic:T24

@@ -1,0 +1,29 @@
+T1	Medical-Problem 377 434	moderate, loculated right and small left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 515 532	Pulmonary opacity
+T3	Medical-Anatomy 540 562	base of the right lung
+T4	Medical-Problem 591 616	minimal pulmonary opacity
+T5	Medical-Anatomy 624 645	base of the left lung
+T6	Medical-Assertion 652 660	suggests
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 662 673	atelectasis
+T8	Medical-Assertion 676 678	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 679 691	pneumothorax
+T10	Medical-Problem 712 745	Moderate loculated right effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 805 812	Opacity
+T12	Medical-Anatomy 820 842	base of the right lung
+T13	Medical-Assertion 843 856	may represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 857 868	atelectasis
+T15	Medical-Problem 873 882	infection
+T16	Medical-Problem 885 912	Small left pleural effusion
+E13	Medical-Problem:T16
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

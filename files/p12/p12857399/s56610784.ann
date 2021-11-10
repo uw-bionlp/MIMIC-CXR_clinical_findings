@@ -1,0 +1,53 @@
+T1	Lesion-Characteristic 29 38	Calcified
+T2	Lesion-Anatomy 48 59	mediastinal
+T3	Lesion-Anatomy 64 69	hilar
+T4	Lesion-Description 70 75	nodes
+T5	Medical-Assertion 76 99	raising the possibility
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 124 135	sarcoidosis
+T7	Medical-Problem 139 166	prior granulomatous disease
+T8	Medical-Assertion 168 170	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 171 176;178 202	acute  cardiopulmonary process
+T10	Medical-Assertion 489 494	clear
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 498 517	focal consolidation
+T12	Medical-Problem 519 527	effusion
+T13	Medical-Problem 532 544	pneumothorax
+T14	Medical-Problem 605 614	calcified
+E11	Medical-Problem:T14
+T15	Lesion-Anatomy 615 624;626 631	bilateral hilar
+T16	Lesion-Anatomy 636 654	right paratracheal
+T17	Lesion-Description 655 660	nodes
+T18	Lesion-Characteristic 671 679	enlarged
+T19	Medical-Assertion 681 683	No
+A4	Medical-AssertionValue T19 absent
+T20	Lesion-Characteristic 684 689	acute
+E16	Lesion-Characteristic:T20
+T21	Medical-Problem 699 712	abnormalities
+T22	Medical-Problem 744 753	Calcified
+E18	Medical-Problem:T22
+T23	Medical-Problem 754 774	enlarged mediastinal
+E19	Medical-Problem:T23
+T24	Lesion-Anatomy 779 784	hilar
+T25	Lesion-Description 785 790	nodes
+T26	Medical-Assertion 791 814	raising the possibility
+A5	Medical-AssertionValue T26 possible
+T27	Medical-Problem 838 849	sarcoidosis
+T28	Medical-Problem 853 880	prior granulomatous disease
+T29	Medical-Assertion 883 885	No
+A6	Medical-AssertionValue T29 absent
+T30	Medical-Problem 886 891;893 908	acute cardiopulmonary
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T10
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T15 has-Lesion-Anatomy:T16 has-Lesion-Characteristic:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T19
+E21	Lesion-Description:T25 has-Lesion-Anatomy:T24
+E22	Medical-Problem:T27 has-Medical-Assertion:T26
+E23	Medical-Problem:T28 has-Medical-Assertion:T26
+E24	Medical-Problem:T30 has-Medical-Assertion:T29

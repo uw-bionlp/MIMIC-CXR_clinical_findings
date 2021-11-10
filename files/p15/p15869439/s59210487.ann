@@ -1,0 +1,24 @@
+T1	Medical-Problem 60 72	Pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 167 184;186 215	moderate-to-large right-sided hydropneumothorax
+E2	Medical-Problem:T2
+T3	Medical-Problem 279 295	mild atelectasis
+T4	Medical-Anatomy 303 313	right lung
+T5	Medical-Anatomy 320 331;333 343	mediastinal structures
+T6	Medical-Assertion 348 351	not
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 352 390	significantly shifted towards the left
+T8	Medical-Assertion 449 451	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 452 479	left-sided pleural effusion
+T10	Medical-Problem 484 496	pneumothorax
+T11	Medical-Assertion 520 522	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 523 550	acute osseous abnormalities
+T13	Medical-Problem 602 625;627 644	moderate-to-large right hydropneumothorax
+E10	Medical-Problem:T13
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,53 @@
+T1	Medical-Problem 253 261	Widening
+E1	Medical-Problem:T1
+T2	Lesion-Size 338 343	large
+T3	Lesion-Characteristic 344 356	infiltrative
+T4	Lesion-Anatomy 357 368	mediastinal
+T5	Lesion-Description 369 373	mass
+T6	Lesion-Anatomy 434 446	right apical
+T7	Lesion-Description 447 451	mass
+T8	Medical-Problem 476 481;483 505	large right pleural effusion
+E8	Medical-Problem:T8
+T9	Medical-Problem 511 532	right basilar opacity
+E9	Medical-Problem:T9
+T10	Medical-Problem 549 560	atelectasis
+E10	Medical-Problem:T10
+T11	Medical-Problem 584 605	left pleural effusion
+E11	Medical-Problem:T11
+T12	Medical-Problem 625 640	mild prominence
+T13	Medical-Anatomy 649 691	interstitial markings within the left lung
+T14	Medical-Assertion 698 711	could suggest
+A1	Medical-AssertionValue T14 possible
+T15	Medical-Problem 712 716;718 733	mild volume overload
+T16	Medical-Assertion 736 738	No
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 739 751	pneumothorax
+T18	Medical-Problem 829 857	large right pleural effusion
+E16	Medical-Problem:T18
+T19	Medical-Problem 870 893	compression deformities
+T20	Medical-Anatomy 914 940	imaged thoracolumbar spine
+T21	Medical-Problem 978 1003	right-sided rib fractures
+E19	Medical-Problem:T21
+T22	Lesion-Anatomy 1042 1053	mediastinal
+T23	Lesion-Description 1054 1058	mass
+T24	Lesion-Anatomy 1063 1075	right apical
+T25	Lesion-Description 1076 1080	mass
+T26	Medical-Problem 1117 1139	right pleural effusion
+E24	Medical-Problem:T26
+T27	Medical-Problem 1144 1171	small left pleural effusion
+E25	Medical-Problem:T27
+T28	Medical-Problem 1177 1187;1189 1214	associated right basilar atelectasis
+E26	Medical-Problem:T28
+T29	Medical-Problem 1226 1245	mild fluid overload
+E27	Medical-Problem:T29
+T30	Medical-Problem 1256 1267;1269 1278	compression fractures
+T31	Medical-Anatomy 1290 1316	imaged thoracolumbar spine
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E12	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Medical-Problem:T19 has-Medical-Anatomy:T20
+E21	Lesion-Description:T23 has-Lesion-Anatomy:T22
+E23	Lesion-Description:T25 has-Lesion-Anatomy:T24
+E28	Medical-Problem:T30 has-Medical-Anatomy:T31

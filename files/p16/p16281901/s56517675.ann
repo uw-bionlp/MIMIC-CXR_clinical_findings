@@ -1,0 +1,24 @@
+T1	Medical-Problem 247 271	Substantial cardiomegaly
+T2	Medical-Anatomy 293 322	both left and right ventricle
+T3	Medical-Problem 387 404;406 413	tortuosity of the vessels
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 416 421	Lungs
+T5	Medical-Problem 426 448	slightly hyperinflated
+T6	Medical-Problem 469 483;485 510	Minimal amount of right pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Problem 526 537	Atelectasis
+T8	Medical-Anatomy 545 560	right lung base
+T9	Medical-Assertion 562 568	versus
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 569 577	scarring
+T11	Lesion-Description 589 606	Nodular opacities
+T12	Lesion-Anatomy 627 636;638 642	right mid lung
+T13	Medical-Assertion 737 739	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 740 752	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

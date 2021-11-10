@@ -1,0 +1,22 @@
+T1	Medical-Problem 304 339	to large bilateral pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 431 435;437 442	both lungs
+T3	Medical-Assertion 490 498	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 499 515	asymmetric edema
+T5	Medical-Problem 528 537	pneumonia
+T6	Medical-Assertion 538 554	could be present
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Anatomy 609 656	right tracheobronchial angle of the mediastinum
+T8	Medical-Assertion 657 669;671 673	could be due to
+A3	Medical-AssertionValue T8 possible
+T9	Lesion-Description 674 684	adenopathy
+E6	Lesion-Description:T9
+T10	Medical-Problem 688 718	mediastinal venous engorgement
+T11	Medical-Assertion 778 786	negative
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 791 811	pericardial effusion
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

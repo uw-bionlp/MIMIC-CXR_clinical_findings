@@ -1,0 +1,19 @@
+T1	Medical-Problem 233 257	focal airspace opacities
+T2	Medical-Anatomy 276 291	bilateral lungs
+T3	Medical-Assertion 293 303;305 308	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 309 330	multi focal pneumonia
+T5	Medical-Assertion 368 370	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 371 378;380 388	pleural effusion
+T7	Medical-Problem 392 404	pneumothorax
+T8	Medical-Problem 477 501	focal airspace opacities
+E6	Medical-Problem:T8
+T9	Medical-Assertion 506 520	concerning for
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 521 542	multi focal pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

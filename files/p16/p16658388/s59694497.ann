@@ -1,0 +1,20 @@
+T1	Medical-Assertion 289 291	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 292 308	pleural effusion
+T3	Medical-Problem 312 324	pneumothorax
+T4	Lesion-Size 329 334	small
+T5	Lesion-Characteristic 336 345	calcified
+T6	Lesion-Description 346 352	nodule
+T7	Lesion-Anatomy 373 399	anterior right middle lobe
+T8	Lesion-Description 427 436	granuloma
+T9	Medical-Problem 484 518	minimal rightward convex curvature
+T10	Medical-Anatomy 526 540	thoracic spine
+T11	Medical-Assertion 561 572	No evidence
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 576 605	acute cardiopulmonary disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

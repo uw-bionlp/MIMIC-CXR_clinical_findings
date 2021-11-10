@@ -1,0 +1,42 @@
+T1	Medical-Problem 349 367;369 388	Heart size remains moderately enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 395 412	aorta is tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 415 423	Dilation
+T4	Medical-Anatomy 431 440;442 456	ascending thoracic aorta
+T5	Medical-Problem 557 568	atelectasis
+T6	Medical-Anatomy 582 592	lung bases
+T7	Medical-Assertion 605 607	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 608 627	focal consolidation
+T9	Medical-Problem 629 645	pleural effusion
+T10	Medical-Problem 649 661	pneumothorax
+T11	Medical-Assertion 676 678	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 679 703	definite pulmonary edema
+T13	Lesion-Characteristic 717 724	Diffuse
+T14	Lesion-Characteristic 725 732	osseous
+T15	Lesion-Description 733 751	metastatic disease
+T16	Medical-Problem 778 810	multiple compression deformities
+T17	Medical-Anatomy 823 831;833 838	thoracic spine
+T18	Medical-Problem 900 908;910 924	multiple calcifications
+T19	Medical-Anatomy 941 957	right chest wall
+T20	Medical-Problem 978 999	Bibasilar atelectasis
+E18	Medical-Problem:T20
+T21	Medical-Assertion 1002 1004	No
+A3	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1005 1024	focal consolidation
+T23	Lesion-Characteristic 1027 1034	Diffuse
+T24	Lesion-Characteristic 1035 1042	osseous
+T25	Lesion-Description 1043 1053;1055 1062	metastatic disease
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Lesion-Description:T15 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E19	Medical-Problem:T22 has-Medical-Assertion:T21
+E22	Lesion-Description:T25 has-Lesion-Characteristic:T23 has-Lesion-Characteristic:T24

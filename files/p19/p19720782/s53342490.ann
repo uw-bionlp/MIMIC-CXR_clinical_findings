@@ -1,0 +1,75 @@
+T1	Medical-Anatomy 270 290;292 308	right upper lobe and perihilar region
+T2	Medical-Problem 314 343	chronic area of opacification
+T3	Medical-Problem 360 369;371 379	radiation fibrosis
+T4	Medical-Problem 382 389	Streaky
+T5	Medical-Anatomy 390 395	right
+T6	Medical-Problem 407 428	consolidative opacity
+T7	Medical-Problem 487 517	atherosclerotic calcifications
+T8	Medical-Anatomy 532 543	aortic arch
+T9	Medical-Problem 546 550	Mild
+E9	Medical-Problem:T9
+T10	Medical-Problem 551 581	pulmonary vascular engorgement
+E10	Medical-Problem:T10
+T11	Medical-Problem 611 663	bilateral pleural effusions, right greater than left
+E11	Medical-Problem:T11
+T12	Medical-Problem 683 690	Streaky
+E12	Medical-Problem:T12
+T13	Medical-Problem 691 711	left basilar opacity
+E13	Medical-Problem:T13
+T14	Medical-Assertion 712 723	may reflect
+A1	Medical-AssertionValue T14 possible
+T15	Medical-Problem 724 735	atelectasis
+T16	Medical-Problem 740 749	infection
+T17	Medical-Assertion 753 756;758 766	not excluded
+A2	Medical-AssertionValue T17 possible
+T18	Lesion-Characteristic 774 784	spiculated
+T19	Lesion-Description 785 791	nodule
+T20	Lesion-Anatomy 799 814	left upper lobe
+T21	Lesion-Assertion 855 857	No
+A3	Lesion-AssertionValue T21 absent
+T22	Medical-Problem 858 870	pneumothorax
+E19	Medical-Problem:T22
+T23	Medical-Problem 883 893	Multilevel
+E20	Medical-Problem:T23
+T24	Medical-Problem 894 914	degenerative changes
+T25	Medical-Anatomy 938 952	thoracic spine
+T26	Medical-Assertion 955 957	No
+A4	Medical-AssertionValue T26 absent
+T27	Medical-Problem 958 981	radiopaque foreign body
+T28	Medical-Problem 1018 1047	pulmonary vascular congestion
+E24	Medical-Problem:T28
+T29	Medical-Problem 1053 1087;1089 1112	small bilateral pleural effusions, right greater than left
+E25	Medical-Problem:T29
+T30	Medical-Problem 1124 1132	fibrosis
+T31	Medical-Anatomy 1140 1156	right upper lobe
+T32	Medical-Anatomy 1161 1166;1168 1177	right perihilar
+T33	Medical-Problem 1178 1218	region and chronic consolidative opacity
+T34	Medical-Anatomy 1226 1242	right lower lobe
+T35	Medical-Problem 1245 1252	Streaky
+E31	Medical-Problem:T35
+T36	Medical-Problem 1253 1273	left basilar opacity
+E32	Medical-Problem:T36
+T37	Medical-Assertion 1274 1285	may reflect
+A5	Medical-AssertionValue T37 possible
+T38	Medical-Problem 1286 1297	atelectasis
+T39	Medical-Problem 1305 1314	infection
+T40	Medical-Assertion 1315 1321;1323 1345	cannot be completely excluded
+A6	Medical-AssertionValue T40 possible
+T41	Medical-Assertion 1348 1350	No
+A7	Medical-AssertionValue T41 absent
+T42	Medical-Problem 1351 1374	radiopaque foreign body
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E14	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Medical-Problem:T16 has-Medical-Assertion:T14 has-Medical-Assertion:T17
+E17	Lesion-Description:T19 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T20
+E21	Medical-Problem:T24 has-Medical-Anatomy:T25
+E23	Medical-Problem:T27 has-Medical-Assertion:T26
+E26	Medical-Problem:T30 has-Medical-Anatomy:T31 has-Medical-Anatomy:T32
+E29	Medical-Problem:T33 has-Medical-Anatomy:T34
+E33	Medical-Problem:T38 has-Medical-Assertion:T37
+E34	Medical-Problem:T39 has-Medical-Assertion:T37 has-Medical-Assertion:T40
+E35	Medical-Problem:T42 has-Medical-Assertion:T41

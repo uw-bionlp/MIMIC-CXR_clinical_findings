@@ -1,0 +1,30 @@
+T1	Medical-Problem 380 388;390 412	Moderate subcutaneous emphysema
+T2	Medical-Anatomy 423 439	right chest wall
+T3	Lesion-Size 459 464	large
+T4	Lesion-Anatomy 465 480	left upper lobe
+T5	Lesion-Description 481 485	mass
+T6	Lesion-Size-Trend 494 503	unchanged
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Lesion-Size 567 571	5 mm
+T8	Lesion-Anatomy 572 597	left lower lobe pulmonary
+T9	Lesion-Description 599 605	nodule
+T10	Lesion-Assertion 609 617	not seen
+A2	Lesion-AssertionValue T10 absent
+T11	Medical-Problem 624 654	tiny right apical pneumothorax
+E9	Medical-Problem:T11
+T12	Medical-Problem 705 722	Mild cardiomegaly
+E10	Medical-Problem:T12
+T13	Medical-Problem 761 791	tiny right apical pneumothorax
+E11	Medical-Problem:T13
+T14	Medical-Problem 868 899	Moderate subcutaneous emphysema
+T15	Medical-Anatomy 925 941	right chest wall
+T16	Lesion-Size 951 956	large
+T17	Lesion-Anatomy 957 972	left upper lobe
+T18	Lesion-Description 973 977	mass
+T19	Lesion-Size-Trend 986 1003	grossly unchanged
+A3	Lesion-Size-TrendValue T19 no-change
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T6
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T10
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E16	Lesion-Description:T18 has-Lesion-Size-Present:T16 has-Lesion-Anatomy:T17 has-Lesion-Size-Trend:T19

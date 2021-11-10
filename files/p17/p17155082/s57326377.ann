@@ -1,0 +1,43 @@
+T1	Medical-Problem 661 676	mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 716 731	some prominence
+T3	Medical-Anatomy 735 753	both hilar regions
+T4	Medical-Assertion 762 775	could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 776 804	prominent pulmonary arteries
+T6	Medical-Assertion 806 829	raising the possibility
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 834 865	pulmonary arterial hypertension
+T8	Lesion-Description 869 884	lymphadenopathy
+E6	Lesion-Description:T8
+T9	Medical-Problem 1244 1251	Streaky
+E7	Medical-Problem:T9
+T10	Medical-Problem 1252 1261	opacities
+E8	Medical-Problem:T10
+T11	Medical-Anatomy 1265 1280	both lung bases
+T12	Medical-Assertion 1282 1296	likely reflect
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 1297 1321	subsegmental atelectasis
+T14	Medical-Assertion 1333 1339	likely
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1342 1355;1357 1365	layering left effusion
+T16	Medical-Problem 1371 1396	more focal patchy opacity
+T17	Medical-Anatomy 1404 1413	left base
+T18	Medical-Assertion 1420 1433	could reflect
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1435 1458	compressive atelectasis
+T20	Medical-Problem 1469 1500	superimposed infectious process
+T21	Medical-Assertion 1501 1512;1514 1527	should also be considered
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Assertion 1530 1532	No
+A7	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1545 1557	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T17 has-Medical-Assertion:T21
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17 has-Medical-Assertion:T21
+E14	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T14 has-Medical-Anatomy:T17 has-Medical-Assertion:T18 has-Medical-Assertion:T21
+E16	Medical-Problem:T23 has-Medical-Assertion:T22

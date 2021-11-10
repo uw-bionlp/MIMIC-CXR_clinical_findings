@@ -1,0 +1,34 @@
+T1	Medical-Problem 254 273	persistent blunting
+T2	Medical-Anatomy 281 304	left costophrenic angle
+T3	Medical-Problem 314 322	blunting
+T4	Medical-Anatomy 331 355	right costophrenic angle
+T5	Medical-Problem 381 398	of bronchiectasis
+T6	Medical-Anatomy 414 450	bilaterally, right greater than left
+T7	Medical-Problem 509 524	mucous plugging
+T8	Medical-Anatomy 532 548	right lower lobe
+T9	Medical-Assertion 563 565	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 566 574	definite
+E9	Medical-Problem:T10
+T11	Medical-Problem 575 598	new focal consolidation
+T12	Medical-Assertion 601 603	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 616 628	pneumothorax
+T14	Medical-Problem 693 698	Hilar
+E12	Medical-Problem:T14
+T15	Medical-Problem 751 759	blunting
+T16	Medical-Anatomy 767 815;817 822	bilateral costophrenic angles, left greater than right
+T17	Medical-Problem 839 873	extensive bilateral bronchiectasis
+T18	Medical-Assertion 879 887	possible
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 888 903	mucous plugging
+T20	Medical-Anatomy 912 928	right lower lobe
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T17 has-Medical-Anatomy:T20
+E16	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Anatomy:T20

@@ -1,0 +1,15 @@
+T1	Medical-Problem 287 323	roughly 5 mm wide triangular opacity
+T2	Medical-Anatomy 344 359;361 371	left fourth rib anteriorly
+T3	Lesion-Assertion 372 380	could be
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Anatomy 383 387	lung
+T5	Lesion-Description 388 394	nodule
+T6	Medical-Problem 397 420	Other smaller opacities
+E5	Medical-Problem:T6
+T7	Lesion-Anatomy 474 478	lung
+T8	Lesion-Description 479 486	nodules
+T9	Lesion-Description 561 571	metastases
+E8	Lesion-Description:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T7

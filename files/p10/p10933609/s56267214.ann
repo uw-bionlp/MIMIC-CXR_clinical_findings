@@ -1,0 +1,15 @@
+T1	Medical-Problem 128 144	Severe pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Problem 233 268	mild but asymmetric pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 297 319	residual opacification
+T4	Medical-Anatomy 327 343	right upper lobe
+T5	Medical-Assertion 344 362	raises concern for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 363 372	pneumonia
+T7	Medical-Assertion 408 410	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 411 427	pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

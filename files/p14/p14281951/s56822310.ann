@@ -1,0 +1,20 @@
+T1	Lesion-Characteristic 280 284	more
+T2	Lesion-Description 285 294	mass-like
+T3	Lesion-Description 299 306	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 307 316	opacities
+T5	Lesion-Anatomy 324 329;331 335	right lung
+T6	Lesion-Characteristic 344 354	widespread
+T7	Lesion-Anatomy 384 388	left
+T8	Medical-Assertion 427 429	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 430 458	appreciable pleural effusion
+T10	Medical-Problem 462 474	pneumothorax
+T11	Medical-Assertion 551 553	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 555 567	pneumothorax
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T5
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

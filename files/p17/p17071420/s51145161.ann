@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 240 244;246 250	left lung
+T2	Medical-Problem 278 295	extensive opacity
+T3	Medical-Anatomy 297 319	most pronounced in the
+T4	Medical-Anatomy 320 323;325 340	mid and lower zones
+T5	Medical-Problem 347 358	obscuration
+T6	Medical-Assertion 386 388	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 389 392	ptx
+T8	Medical-Problem 409 437	cardiomediastinal silhouette
+E7	Medical-Problem:T8
+T9	Medical-Problem 441 459	partially obscured
+E8	Medical-Problem:T9
+T10	Medical-Problem 472 481	prominent
+E9	Medical-Problem:T10
+T11	Medical-Problem 508 543	mild diffuse prominence of markings
+T12	Medical-Anatomy 551 561	right lung
+T13	Lesion-Characteristic 615 622	diffuse
+T14	Lesion-Characteristic 623 632	sclerotic
+T15	Lesion-Description 634 644	metastasis
+T16	Lesion-Anatomy 665 675	right lung
+T17	Medical-Assertion 678 680	No
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 681 701	right-sided effusion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E14	Lesion-Description:T15 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T16
+E16	Medical-Problem:T18 has-Medical-Assertion:T17

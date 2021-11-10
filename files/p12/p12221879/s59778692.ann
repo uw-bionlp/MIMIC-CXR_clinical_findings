@@ -1,0 +1,42 @@
+T1	Medical-Problem 299 310	Innumerable
+E1	Medical-Problem:T1
+T2	Medical-Problem 311 340	bilateral pulmonary opacities
+E2	Medical-Problem:T2
+T3	Lesion-Characteristic 372 381	extensive
+E3	Lesion-Characteristic:T3
+T4	Lesion-Anatomy 382 401	bilateral pulmonary
+E4	Lesion-Anatomy:T4
+T5	Medical-Problem 420 434	confluent area
+T6	Medical-Anatomy 442 450;452 472	left mid to lower hemi thorax
+T7	Medical-Problem 529 537	blunting
+T8	Medical-Anatomy 545 569	right costophrenic angle
+T9	Medical-Assertion 570 583	may be due to
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 586 599;601 609	trace pleural effusion
+T11	Medical-Problem 617 628	atelectasis
+T12	Medical-Assertion 631 633	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 634 646	pneumothorax
+T14	Medical-Problem 815 826	Innumerable
+E12	Medical-Problem:T14
+T15	Medical-Problem 827 856	bilateral pulmonary opacities
+E13	Medical-Problem:T15
+T16	Medical-Assertion 938 948	to exclude
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 952 968;970 988	underlying acute infectious process
+T18	Medical-Anatomy 1010 1040	lateral left mid to lower lung
+T19	Medical-Problem 1052 1060	blunting
+T20	Medical-Anatomy 1068 1092	right costophrenic angle
+T21	Medical-Assertion 1093 1106	may be due to
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1107 1118	atelectasis
+T23	Medical-Problem 1129 1151	trace pleural effusion
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E14	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

@@ -1,0 +1,21 @@
+T1	Medical-Problem 432 459	pleural effusion collapsing
+T2	Medical-Anatomy 464 474	right lung
+T3	Medical-Problem 479 491;493 504	shifting the mediastinum
+E3	Medical-Problem:T3
+T4	Medical-Assertion 555 557	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 558 570	pneumothorax
+T6	Medical-Anatomy 573 582	Left lung
+T7	Medical-Assertion 618 620	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 621 645	left pleural abnormality
+T9	Medical-Anatomy 649 671	Right internal jugular
+E7	Medical-Anatomy:T9
+T10	Medical-Anatomy 794 799;801 816	right clavicular head
+T11	Medical-Assertion 867 875;877 888	could be responsible
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 904 917	discontinuity
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

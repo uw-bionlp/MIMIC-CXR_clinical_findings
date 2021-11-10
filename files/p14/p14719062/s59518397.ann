@@ -1,0 +1,31 @@
+T1	Medical-Problem 356 376	Bilateral prominence
+T2	Medical-Anatomy 384 388	hila
+T3	Medical-Assertion 389 399	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Lesion-Anatomy 400 405	hilar
+T5	Lesion-Description 406 416	adenopathy
+T6	Medical-Problem 421 427;429 436	subtle opacity
+T7	Medical-Anatomy 454 505;507 517	medial aspect of the posterior segment of the right lower lobe
+T8	Medical-Problem 534 543	pneumonia
+T9	Medical-Assertion 546 548	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 549 566	pleural effusions
+T11	Medical-Problem 570 582	pneumothorax
+T12	Medical-Problem 617 643	Right lower lobe pneumonia
+E10	Medical-Problem:T12
+T13	Medical-Problem 649 669	Bilateral prominence
+T14	Medical-Anatomy 677 681	hila
+T15	Medical-Assertion 682 692	suggesting
+A3	Medical-AssertionValue T15 possible
+T16	Lesion-Anatomy 693 698	hilar
+T17	Lesion-Description 699 709	adenopathy
+T18	Lesion-Anatomy 946 951	hilar
+E15	Lesion-Anatomy:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T16

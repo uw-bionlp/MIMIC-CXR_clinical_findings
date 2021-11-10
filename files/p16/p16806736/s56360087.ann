@@ -1,0 +1,45 @@
+T1	Medical-Problem 323 373	interval increase in small amount of pleural fluid
+T2	Medical-Anatomy 382 404	lower right hemithorax
+T3	Medical-Problem 406 448	Minimal increase in the interstitial lines
+T4	Medical-Anatomy 457 466	left base
+T5	Medical-Assertion 467 477	could be a
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 478 511	sign of very mild pulmonary edema
+T7	Medical-Problem 581 587;589 616	Stable rightward mediastinal shift
+T8	Medical-Problem 621 649	stable post-surgical changes
+T9	Medical-Anatomy 666 677	right hilum
+T10	Medical-Assertion 715 717	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 718 738;740 768	focal consolidations clearly infectious in nature
+T12	Medical-Problem 785 809	postoperative distortion
+E10	Medical-Problem:T12
+T13	Medical-Problem 812 825	consolidation
+T14	Medical-Anatomy 833 849	basal right lung
+T15	Medical-Assertion 850 868	cannot be excluded
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 916 949	shifted into the right hemithorax
+E13	Medical-Problem:T16
+T17	Medical-Assertion 1025 1033	possible
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1034 1048;1050 1055	mild pulmonary edema
+T19	Medical-Assertion 1079 1096	no clear evidence
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1100 1109	infection
+T21	Medical-Problem 1117 1130;1132 1142	postoperative distortion
+E16	Medical-Problem:T21
+T22	Medical-Assertion 1150 1158	might be
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1162 1183	area of consolidation
+T24	Medical-Anatomy 1191 1207	right lower lung
+T25	Medical-Problem 1216 1225	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T9
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T23 has-Medical-Assertion:T22 has-Medical-Anatomy:T24
+E19	Medical-Problem:T25 has-Medical-Assertion:T22 has-Medical-Anatomy:T24

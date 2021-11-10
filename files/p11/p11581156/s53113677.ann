@@ -1,0 +1,30 @@
+T1	Medical-Problem 389 420	interval increase in distention
+T2	Medical-Anatomy 428 454	region of the neoesophagus
+T3	Medical-Problem 460 464;466 469	less air
+T4	Medical-Problem 539 543;545 575	very tiny right apical pneumothorax
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 646 655	left lung
+T6	Medical-Problem 700 714	linear opacity
+T7	Medical-Anatomy 722 745	left costophrenic angle
+T8	Medical-Assertion 752 767	likely reflects
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 768 776	scarring
+T10	Medical-Problem 781 805	subsegmental atelectasis
+T11	Medical-Assertion 808 810	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 823 838	pulmonary edema
+T13	Medical-Anatomy 882 892	right base
+T14	Medical-Assertion 893 903	suggesting
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 904 925	resolving atelectasis
+T16	Medical-Problem 929 937	Residual
+E13	Medical-Problem:T16
+T17	Medical-Problem 942 991	improving right chest wall subcutaneous emphysema
+E14	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

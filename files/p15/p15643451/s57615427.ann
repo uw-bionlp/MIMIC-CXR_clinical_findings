@@ -1,0 +1,23 @@
+T1	Medical-Assertion 238 240	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 241 263	airspace opacification
+T3	Medical-Assertion 265 267	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 268 275;277 286	pleural effusions
+T5	Lesion-Assertion 289 291	No
+A3	Lesion-AssertionValue T5 absent
+T6	Lesion-Characteristic 292 302	suspicious
+T7	Lesion-Anatomy 303 312	pulmonary
+T8	Lesion-Description 313 320	nodules
+T9	Lesion-Description 324 330	masses
+T10	Medical-Problem 333 352	Spondylotic changes
+T11	Medical-Anatomy 361 375	thoracic spine
+T12	Medical-Assertion 449 451	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 452 474	airspace consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E6	Lesion-Description:T9 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

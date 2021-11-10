@@ -1,0 +1,19 @@
+T1	Medical-Anatomy 180 185	heart
+T2	Medical-Problem 223 241;243 254	bilateral alveolar infiltrates
+T3	Medical-Anatomy 256 290	upper lobe greater than lower lobe
+T4	Medical-Anatomy 297 314	pulmonary vessels
+T5	Medical-Problem 320 331	ill-defined
+T6	Medical-Problem 336 354	few Kerley B lines
+E6	Medical-Problem:T6
+T7	Medical-Assertion 376 378	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 379 397	definite effusions
+T9	Medical-Assertion 406 413	unclear
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 432 447	pulmonary edema
+T11	Medical-Problem 451 471	underlying infection
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

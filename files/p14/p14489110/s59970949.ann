@@ -1,0 +1,40 @@
+T1	Medical-Problem 204 222	Pleural thickening
+T2	Medical-Anatomy 234 244;246 250	right lung apex
+T3	Lesion-Characteristic 338 344	subtle
+T4	Lesion-Anatomy 345 361	right upper lobe
+T5	Lesion-Characteristic 362 372	peripheral
+T6	Lesion-Description 373 390	nodular opacities
+T7	Lesion-Size-Trend 397 406	increased
+A1	Lesion-Size-TrendValue T7 increasing
+T8	Lesion-Anatomy 432 447	left upper lobe
+T9	Medical-Problem 483 506	increased bronchiolitis
+E8	Medical-Problem:T9
+T10	Medical-Anatomy 509 514	Lungs
+T11	Medical-Problem 519 532	hyperexpanded
+T12	Medical-Assertion 541 548	without
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 549 572	confluent consolidation
+T14	Medical-Assertion 584 586	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 587 602	pulmonary edema
+T16	Medical-Problem 606 613;615 624	pleural effusions
+T17	Medical-Assertion 701 703	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 704 716	pneumothorax
+T19	Medical-Problem 738 770	Increased biapical bronchiolitis
+E15	Medical-Problem:T19
+T20	Medical-Assertion 772 782	concerning
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 790 809	infectious etiology
+T22	Medical-Problem 816 857	Unchanged right apical pleural thickening
+E17	Medical-Problem:T22
+T23	Medical-Problem 933 952	Hyperexpanded lungs
+E18	Medical-Problem:T23
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5 has-Lesion-Size-Trend:T7 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

@@ -1,0 +1,25 @@
+T1	Medical-Problem 211 237	New left lung base opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 241 255	suspicious for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 256 265	pneumonia
+T4	Medical-Problem 268 283;285 312	Small region of peribronchial opacification
+T5	Medical-Anatomy 320 341	infrahilar right lung
+T6	Medical-Assertion 342 348	may be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 351 357	second
+E5	Medical-Problem:T7
+T8	Medical-Problem 358 363;365 377	focus of infection
+T9	Medical-Assertion 389 391	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 392 408	pleural effusion
+T11	Medical-Problem 412 424	pneumothorax
+T12	Medical-Assertion 504 512	Probable
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 513 522	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

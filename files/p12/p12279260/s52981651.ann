@@ -1,0 +1,48 @@
+T1	Lesion-Characteristic 274 283	Calcified
+T2	Lesion-Characteristic 286 293	rounded
+T3	Lesion-Description 294 311	nodular opacities
+T4	Lesion-Anatomy 332 345	left mid lung
+T5	Lesion-Characteristic 372 381	calcified
+T6	Lesion-Description 382 391	granuloma
+T7	Lesion-Anatomy 422 426;428 433	Left hilar
+T8	Lesion-Characteristic 434 443	calcified
+T9	Lesion-Description 444 454	lymph node
+T10	Lesion-Characteristic 460 495	suggest prior granulomatous disease
+T11	Medical-Assertion 503 506;508 510	may be
+A1	Medical-AssertionValue T11 possible
+T12	Lesion-Characteristic 511 519	punctate
+T13	Lesion-Anatomy 520 531	right-sided
+T14	Lesion-Characteristic 532 541	calcified
+T15	Lesion-Description 542 552	granulomas
+T16	Medical-Problem 615 649;651 665	Right diaphragmatic pleural linear calcifications
+E15	Medical-Problem:T16
+T17	Medical-Assertion 709 711	No
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 712 724	pneumothorax
+T19	Medical-Problem 735 765	Mild right basilar atelectasis
+E17	Medical-Problem:T19
+T20	Medical-Problem 767 782	Slight blunting
+T21	Medical-Anatomy 790 807;809 814	left costophrenic angle
+T22	Medical-Problem 861 879;881 889	very trace pleural effusion
+T23	Medical-Assertion 893 905	not excluded
+A3	Medical-AssertionValue T23 possible
+T24	Medical-Problem 926 947	Bibasilar atelectasis
+E21	Medical-Problem:T24
+T25	Medical-Assertion 948 955	without
+A4	Medical-AssertionValue T25 absent
+T26	Medical-Problem 956 984	definite focal consolidation
+T27	Medical-Problem 986 1001	Slight blunting
+T28	Medical-Anatomy 1010 1033	left costophrenic angle
+T29	Medical-Problem 1035 1049	trace effusion
+T30	Medical-Assertion 1050 1062	not excluded
+A5	Medical-AssertionValue T30 possible
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5
+E9	Lesion-Description:T9 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T10
+E14	Lesion-Description:T15 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T14
+E16	Medical-Problem:T18 has-Medical-Assertion:T17
+E18	Medical-Problem:T20 has-Medical-Anatomy:T21
+E20	Medical-Problem:T22 has-Medical-Anatomy:T21 has-Medical-Assertion:T23
+E22	Medical-Problem:T26 has-Medical-Assertion:T25
+E23	Medical-Problem:T27 has-Medical-Anatomy:T28
+E25	Medical-Problem:T29 has-Medical-Assertion:T30

@@ -1,0 +1,36 @@
+T1	Medical-Problem 287 316	expected postsurgical changes
+E1	Medical-Problem:T1
+T2	Medical-Problem 322 344	right lung volume loss
+E2	Medical-Problem:T2
+T3	Medical-Problem 356 380	subtle increased density
+T4	Medical-Anatomy 388 399;401 405	right lower lung
+T5	Medical-Assertion 412 431	may in part reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 448 456	scarring
+T7	Medical-Anatomy 461 466	right
+T8	Medical-Problem 495 510	early pneumonia
+T9	Medical-Assertion 511 531	difficult to exclude
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 567 587	Underlying emphysema
+E8	Medical-Problem:T10
+T11	Medical-Assertion 627 629	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 630 642	pneumothorax
+T13	Medical-Problem 699 723	Subtle increased opacity
+T14	Medical-Anatomy 731 736;738 748	right lower lung
+T15	Medical-Assertion 749 761	maybe due to
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 762 770	scarring
+T17	Lesion-Anatomy 775 787	right breast
+T18	Lesion-Description 788 795	implant
+T19	Medical-Assertion 803 815;817 824	difficult to exclude
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 828 848	underlying pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Lesion-Description:T18 has-Lesion-Anatomy:T17
+E15	Medical-Problem:T20 has-Medical-Anatomy:T14 has-Medical-Assertion:T19

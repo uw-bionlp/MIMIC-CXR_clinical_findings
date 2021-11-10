@@ -1,0 +1,45 @@
+T1	Medical-Problem 304 322;324 339	heart size remains mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 346 370	aorta is mildly tortuous
+E2	Medical-Problem:T2
+T3	Medical-Assertion 435 437	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 438 467	pulmonary vascular congestion
+T5	Lesion-Count 492 500	multiple
+T6	Lesion-Description 501 507	masses
+T7	Lesion-Anatomy 519 529	right lung
+T8	Lesion-Anatomy 555 571	right upper lobe
+T9	Lesion-Count 619 620	2
+T10	Lesion-Description 630 637	lesions
+T11	Lesion-Anatomy 666 706	superior segment of the right lower lobe
+T12	Lesion-Size 718 730	2.7 x 2.0 cm
+T13	Lesion-Anatomy 749 766	right middle lobe
+T14	Lesion-Size 777 786;788 790	5.1 x 3.6 cm
+T15	Medical-Problem 793 824	Left lateral pleural thickening
+E14	Medical-Problem:T15
+T16	Medical-Problem 841 857;859 869	extrapleural fat deposition
+E15	Medical-Problem:T16
+T17	Medical-Assertion 892 894	No
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 895 914	focal consolidation
+T19	Medical-Problem 916 932	pleural effusion
+T20	Medical-Problem 937 949	pneumothorax
+T21	Medical-Problem 966 991	Mild degenerative changes
+T22	Medical-Anatomy 1010 1024	thoracic spine
+T23	Lesion-Size-Trend 1044 1074	No significant interval change
+A3	Lesion-Size-TrendValue T23 no-change
+T24	Lesion-Count 1078 1086	multiple
+T25	Lesion-Description 1087 1093	masses
+T26	Lesion-Anatomy 1101 1111	right lung
+T27	Medical-Assertion 1183 1185	No
+A4	Medical-AssertionValue T27 absent
+T28	Medical-Problem 1186 1191;1193 1220	acute cardiopulmonary abnormality
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Count:T5 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T10 has-Lesion-Count:T9 has-Lesion-Anatomy:T11 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T13 has-Lesion-Size-Present:T14
+E16	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Medical-Problem:T19 has-Medical-Assertion:T17
+E18	Medical-Problem:T20 has-Medical-Assertion:T17
+E19	Medical-Problem:T21 has-Medical-Anatomy:T22
+E22	Lesion-Description:T25 has-Lesion-Size-Trend:T23 has-Lesion-Count:T24 has-Lesion-Anatomy:T26
+E24	Medical-Problem:T28 has-Medical-Assertion:T27

@@ -1,0 +1,34 @@
+T1	Medical-Problem 307 337	left hemidiaphragm is elevated
+E1	Medical-Problem:T1
+T2	Medical-Problem 356 377	overlying atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 381 394	hiatal hernia
+E3	Medical-Problem:T3
+T4	Medical-Assertion 426 432	likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 433 441	at least
+T6	Medical-Problem 444 471	small left pleural effusion
+T7	Medical-Problem 515 532	left pneumothorax
+T8	Medical-Assertion 536 566;568 573	not appreciated on the current study
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Anatomy 575 582	Cardiac
+E7	Medical-Anatomy:T9
+T10	Medical-Problem 678 689	Volume loss
+T11	Medical-Anatomy 697 711	left lung base
+T12	Medical-Problem 716 725	elevation
+T13	Medical-Anatomy 733 751	left hemidiaphragm
+T14	Medical-Problem 758 779	overlying atelectasis
+T15	Medical-Assertion 784 790	likely
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 791 812	left pleural effusion
+T17	Medical-Assertion 815 820	Query
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 821 834	hiatal hernia
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

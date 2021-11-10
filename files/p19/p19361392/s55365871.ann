@@ -1,0 +1,33 @@
+T1	Medical-Problem 369 393	new, ill-defined opacity
+T2	Medical-Anatomy 401 423	right upper lung field
+T3	Medical-Assertion 426 447	Differential includes
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 448 472	small focus of pneumonia
+T5	Lesion-Description 488 496	neoplasm
+E4	Lesion-Description:T5
+T6	Medical-Problem 503 522	ill-defined margins
+E5	Medical-Problem:T6
+T7	Medical-Assertion 523 528	favor
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 532 550	infectious process
+T9	Medical-Problem 593 602	pneumonia
+E7	Medical-Problem:T9
+T10	Lesion-Assertion 763 765	No
+A3	Lesion-AssertionValue T10 absent
+T11	Lesion-Characteristic 772 782	suspicious
+T12	Lesion-Description 783 789	lesion
+T13	Medical-Assertion 809 811	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 812 828	pleural effusion
+T15	Medical-Problem 830 842	pneumothorax
+T16	Medical-Problem 847 862	pulmonary edema
+T17	Medical-Problem 942 965	New ill-defined opacity
+T18	Medical-Anatomy 973 995	right upper lung field
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18

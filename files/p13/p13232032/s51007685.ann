@@ -1,0 +1,34 @@
+T1	Lesion-Characteristic 215 224	Calcified
+T2	Lesion-Anatomy 225 236	mediastinal
+T3	Lesion-Description 237 248	lymph nodes
+T4	Lesion-Characteristic 251 260	Calcified
+T5	Lesion-Description 261 271	granulomas
+T6	Lesion-Anatomy 279 289;291 296	left upper zones
+T7	Medical-Assertion 321 323	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 324 337	consolidation
+T9	Medical-Assertion 339 341	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 342 358	pleural effusion
+T11	Medical-Assertion 360 362	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 364 376	pneumothorax
+T13	Lesion-Characteristic 456 465	Calcified
+T14	Lesion-Anatomy 466 477	mediastinal
+T15	Lesion-Description 478 489	lymph nodes
+T16	Lesion-Characteristic 495 504	calcified
+T17	Lesion-Description 505 515	granulomas
+T18	Lesion-Anatomy 523 532	left lung
+T19	Lesion-Size-Trend 534 540	stable
+A4	Lesion-Size-TrendValue T19 no-change
+T20	Medical-Assertion 551 562	No evidence
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 566 575	pneumonia
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T18 has-Lesion-Size-Trend:T19
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T14 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T18 has-Lesion-Size-Trend:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

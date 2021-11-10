@@ -1,0 +1,24 @@
+T1	Medical-Problem 226 248	Minimal hyperlucencies
+T2	Medical-Anatomy 256 271	left upper lobe
+T3	Medical-Assertion 273 291	potentially caused
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 296 320	mild pulmonary emphysema
+T5	Lesion-Count 323 326	Two
+T6	Lesion-Size 327 338	millimetric
+T7	Lesion-Characteristic 339 348	calcified
+T8	Lesion-Description 349 359	granulomas
+T9	Lesion-Anatomy 367 371;373 383	left upper lobe
+T10	Medical-Assertion 459 470	no evidence
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 474 483	pneumonia
+T12	Medical-Problem 595 604	scoliosis
+T13	Medical-Anatomy 612 626	thoracic spine
+T14	Medical-Assertion 631 633	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 634 651	pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E7	Lesion-Description:T8 has-Lesion-Count:T5 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

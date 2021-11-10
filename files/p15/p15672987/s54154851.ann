@@ -1,0 +1,23 @@
+T1	Medical-Problem 196 210	Hyperinflation
+E1	Medical-Problem:T1
+T2	Medical-Problem 221 237	severe emphysema
+E2	Medical-Problem:T2
+T3	Lesion-Description 249 264	nodular opacity
+T4	Lesion-Anatomy 268 272;274 284	left upper lung
+T5	Lesion-Anatomy 289 315	peribronchial infiltration
+T6	Lesion-Anatomy 316 339	left mid and lower lung
+T7	Lesion-Assertion 345 348	all
+A1	Lesion-AssertionValue T7 absent
+T8	Medical-Problem 361 380	Emphysema is severe
+E7	Medical-Problem:T8
+T9	Lesion-Description 442 448	nodule
+E8	Lesion-Description:T9
+T10	Medical-Problem 451 473	Hiatus hernia is small
+E9	Medical-Problem:T10
+T11	Medical-Assertion 476 478	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 479 488	pneumonia
+T13	Medical-Problem 492 503;505 520	evidence of pulmonary edema
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6 has-Lesion-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11

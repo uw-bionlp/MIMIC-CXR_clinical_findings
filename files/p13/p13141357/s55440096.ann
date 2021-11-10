@@ -1,0 +1,43 @@
+T1	Medical-Assertion 296 315	interval resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 319 323;325 353	mild interstitial pulmonary edema
+T3	Lesion-Size 358 370	5.8 x 4.6 cm
+T4	Lesion-Characteristic 371 396	fairly well circumscribed
+T5	Lesion-Description 398 405	opacity
+T6	Lesion-Anatomy 413 428	left upper lung
+T7	Medical-Assertion 483 491	possibly
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 492 512	pulmonary hemorrhage
+T9	Medical-Problem 514 523	infection
+T10	Medical-Problem 528 538;540 554	asymmetric residual edema
+T11	Medical-Problem 559 600	less conspicuous right upper lung opacity
+E9	Medical-Problem:T11
+T12	Medical-Assertion 710 712	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 713 730	pleural effusions
+T14	Medical-Assertion 733 735	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 736 748	pneumothorax
+T16	Medical-Problem 774 777	New
+E12	Medical-Problem:T16
+T17	Lesion-Size 778 784	5.8 cm
+T18	Lesion-Description 785 792	opacity
+T19	Lesion-Anatomy 800 815	left upper lung
+T20	Medical-Problem 820 836;838 862	less conspicious right upper lung opacity
+E16	Medical-Problem:T20
+T21	Medical-Assertion 864 872	possibly
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 873 893	pulmonary hemorrhage
+T23	Medical-Problem 895 904	infection
+T24	Medical-Problem 910 924	residual edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Lesion-Description:T18 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T21
+E19	Medical-Problem:T24 has-Medical-Assertion:T21

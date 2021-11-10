@@ -1,0 +1,32 @@
+T1	Medical-Problem 238 283	multiple bilateral patchy pulmonary opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 284 297	worrisome for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 298 308;310 319	multifocal pneumonia
+T4	Medical-Problem 322 336	Trace blunting
+T5	Medical-Anatomy 344 368	right costophrenic angle
+T6	Medical-Assertion 369 384	could be due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 388 416	trace right pleural effusion
+T8	Medical-Assertion 419 421	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 422 434	pneumothorax
+T10	Medical-Anatomy 449 456	cardiac
+E7	Medical-Anatomy:T10
+T11	Medical-Anatomy 536 547	aortic knob
+E8	Medical-Anatomy:T11
+T12	Medical-Problem 578 614	Patchy bilateral pulmonary opacities
+E9	Medical-Problem:T12
+T13	Medical-Anatomy 641 664	mid-to-lower lung zones
+T14	Medical-Assertion 666 679	worrisome for
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 680 700	multifocal pneumonia
+T16	Medical-Problem 705 717;719 747	component of superimposed pulmonary edema
+T17	Medical-Assertion 748 762	may be present
+A5	Medical-AssertionValue T17 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T17

@@ -1,0 +1,35 @@
+T1	Medical-Problem 234 267	small bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 288 300;302 317	Streaky left basilar opacity
+E2	Medical-Problem:T2
+T3	Medical-Assertion 321 339	most suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 340 351	atelectasis
+T5	Medical-Anatomy 358 363	lungs
+T6	Medical-Assertion 385 392	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 393 406	consolidation
+T8	Medical-Assertion 407 420	worrisome for
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 421 430	pneumonia
+T10	Medical-Problem 442 456;458 477	mild pulmonary vascular congestion
+E7	Medical-Problem:T10
+T11	Medical-Assertion 478 485	without
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 486 497	overt edema
+T13	Medical-Problem 618 654	Persistent small bilateral effusions
+E9	Medical-Problem:T13
+T14	Medical-Assertion 655 662	without
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 663 684	overt pulmonary edema
+T16	Medical-Problem 688 693;695 708	focal consolidation
+T17	Medical-Assertion 709 722	worrisome for
+A6	Medical-AssertionValue T17 possible
+T18	Medical-Problem 723 732	infection
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T14
+E12	Medical-Problem:T18 has-Medical-Assertion:T14 has-Medical-Assertion:T17

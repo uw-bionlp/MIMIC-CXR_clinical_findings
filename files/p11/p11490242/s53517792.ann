@@ -1,0 +1,16 @@
+T1	Medical-Assertion 408 410	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 411 427	pleural effusion
+T3	Medical-Problem 432 444	pneumothorax
+T4	Lesion-Anatomy 457 472	left upper lobe
+T5	Lesion-Characteristic 473 482	calcified
+T6	Lesion-Description 483 492	granuloma
+T7	Lesion-Size-Trend 496 508;510 514	unchanged in size
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 535 537	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 538 571	acute cardiopulmonary abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5 has-Lesion-Size-Trend:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

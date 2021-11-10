@@ -1,0 +1,44 @@
+T1	Medical-Problem 395 413	interval worsening
+E1	Medical-Problem:T1
+T2	Medical-Problem 424 447	increased opacification
+T3	Medical-Anatomy 455 473	right heart border
+T4	Medical-Anatomy 479 498	right hemidiaphragm
+T5	Medical-Assertion 500 514	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 515 534	worsening pneumonia
+T7	Medical-Anatomy 551 579	right middle and lower lobes
+T8	Medical-Problem 592 625	new right perihilar consolidation
+E7	Medical-Problem:T8
+T9	Medical-Assertion 637 639	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 640 656	pleural effusion
+T11	Medical-Problem 660 672	pneumothorax
+T12	Medical-Problem 674 686	Cardiomegaly
+E10	Medical-Problem:T12
+T13	Lesion-Anatomy 779 844;846 859	intersection of the right second anterior rib and the right fifth posterior rib
+T14	Lesion-Characteristic 871 877	linear
+T15	Lesion-Characteristic 882 889	nodular
+T16	Lesion-Description 890 897	opacity
+T17	Medical-Problem 1050 1059	pneumonia
+E15	Medical-Problem:T17
+T18	Medical-Anatomy 1075 1103	right middle and lower lobes
+T19	Medical-Problem 1111 1114;1116 1151	new focal right perihilar consolidation
+T20	Lesion-Characteristic 1195 1220	apparently slowly growing
+T21	Lesion-Description 1221 1227	nodule
+T22	Lesion-Anatomy 1236 1252	right upper lobe
+T23	Medical-Assertion 1337 1347	resolution
+A3	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1371 1389	right middle/lower
+T25	Lesion-Size-Trend 1411 1419	increase
+A4	Lesion-Size-TrendValue T25 increasing
+T26	Lesion-Anatomy 1423 1439	right upper lobe
+T27	Lesion-Description 1440 1446	nodule
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T14 has-Lesion-Characteristic:T15
+E17	Medical-Problem:T19 has-Medical-Anatomy:T18
+E19	Lesion-Description:T21 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T22
+E21	Medical-Problem:T24 has-Medical-Assertion:T23
+E23	Lesion-Description:T27 has-Lesion-Size-Trend:T25 has-Lesion-Anatomy:T26

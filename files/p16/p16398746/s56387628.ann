@@ -1,0 +1,38 @@
+T1	Medical-Problem 159 176;178 189	central pulmonary vasculature
+E1	Medical-Problem:T1
+T2	Medical-Problem 193 217	slightly more pronounced
+E2	Medical-Problem:T2
+T3	Medical-Problem 256 272	Linear opacities
+T4	Medical-Anatomy 280 290	right base
+T5	Medical-Problem 316 327	atelectasis
+T6	Medical-Problem 330 334;336 348	Mild cardiomegaly
+E6	Medical-Problem:T6
+T7	Medical-Assertion 373 375	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 376 393	new consolidation
+T9	Medical-Problem 395 403	effusion
+T10	Medical-Problem 408 420	pneumothorax
+T11	Lesion-Characteristic 425 438	rim calcified
+T12	Lesion-Description 439 445	lesion
+T13	Lesion-Anatomy 453 473	right upper quadrant
+T14	Lesion-Characteristic 510 519	calcified
+T15	Lesion-Anatomy 520 525	liver
+T16	Lesion-Description 526 530	cyst
+T17	Medical-Problem 548 565	Slight prominence
+T18	Medical-Anatomy 573 602	central pulmonary vasculature
+T19	Medical-Problem 623 652	pulmonary venous hypertension
+T20	Medical-Assertion 655 657	No
+A2	Medical-AssertionValue T20 absent
+T21	Medical-Problem 658 679	overt pulmonary edema
+T22	Medical-Problem 684 719	other acute cardiopulmonary process
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E15	Lesion-Description:T16 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15
+E16	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Medical-Problem:T19 has-Medical-Anatomy:T18
+E19	Medical-Problem:T21 has-Medical-Assertion:T20
+E20	Medical-Problem:T22 has-Medical-Assertion:T20

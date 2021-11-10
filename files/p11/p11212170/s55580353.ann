@@ -1,0 +1,21 @@
+T1	Medical-Anatomy 326 334	Thoracic
+T2	Medical-Problem 344 350;352 360	mildly tortuous
+T3	Lesion-Assertion 397 403	likely
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Characteristic 404 413	calcified
+T5	Lesion-Description 414 420	nodule
+T6	Lesion-Anatomy 429 450	right lower lung zone
+T7	Lesion-Size-Trend 454 463	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 475 477	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 478 490	pneumothorax
+T10	Medical-Problem 494 501;503 511	pleural effusion
+T11	Medical-Assertion 532 543	No evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 547 556	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

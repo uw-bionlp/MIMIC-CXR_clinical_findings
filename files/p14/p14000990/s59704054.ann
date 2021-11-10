@@ -1,0 +1,19 @@
+T1	Medical-Problem 419 425;427 434	patchy opacity
+T2	Medical-Anatomy 442 465	right mid to lower lung
+T3	Medical-Assertion 466 479	could reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 483 502	area of atelectasis
+T5	Medical-Problem 517 541	early infectious process
+T6	Medical-Problem 610 627	pleural effusions
+E5	Medical-Problem:T6
+T7	Medical-Problem 629 644	pulmonary edema
+E6	Medical-Problem:T7
+T8	Medical-Problem 650 662	pneumothorax
+E7	Medical-Problem:T8
+T9	Medical-Assertion 665 667	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 668 690	acute bony abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

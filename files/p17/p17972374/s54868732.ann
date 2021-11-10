@@ -1,0 +1,23 @@
+T1	Medical-Problem 86 103	Non-healing ulcer
+E1	Medical-Problem:T1
+T2	Medical-Problem 180 200	Mild pulmonary edema
+T3	Medical-Assertion 212 226	nearly cleared
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 229 245	Residual opacity
+T5	Medical-Anatomy 247 252;254 263	right lung base
+T6	Medical-Assertion 265 280	could be due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 281 289	residual
+T8	Medical-Problem 293 314	early recurrent edema
+T9	Medical-Problem 317 325;327 339	Moderate cardiomegaly
+E7	Medical-Problem:T9
+T10	Medical-Problem 358 374	Pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 390 392	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 394 406	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

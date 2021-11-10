@@ -1,0 +1,27 @@
+T1	Medical-Problem 442 451;453 481	perihilar and upper lobe consolidation
+E1	Medical-Problem:T1
+T2	Medical-Assertion 491 504	worrisome for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 505 514	pneumonia
+T4	Medical-Problem 516 526;528 538	underlying aspiration
+T5	Medical-Problem 540 551	atelectasis
+T6	Medical-Problem 553 572	pulmonary contusion
+T7	Medical-Assertion 573 585	not excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 624 654	perihilar wedge-shaped density
+E6	Medical-Problem:T8
+T9	Medical-Assertion 655 668	may be due to
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 669 680	atelectasis
+T11	Medical-Problem 748 755;757 766	pleural effusions
+T12	Medical-Assertion 771 791	difficult to exclude
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Anatomy 798 805	cardiac
+T14	Medical-Problem 820 827;829 848	mild to moderately enlarged
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2 has-Medical-Assertion:T7
+E4	Medical-Problem:T5 has-Medical-Assertion:T2 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T2 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T13

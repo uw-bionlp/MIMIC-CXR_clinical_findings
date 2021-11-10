@@ -1,0 +1,28 @@
+T1	Medical-Problem 474 487	heterogeneous
+T2	Medical-Problem 492 501	calcified
+T3	Medical-Anatomy 502 507;509 519	right lower lobe
+T4	Lesion-Characteristic 546 559	pleural based
+T5	Lesion-Description 560 564	mass
+T6	Lesion-Size-Trend 579 585	stable
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Problem 616 634	cardiac silhouette
+E6	Medical-Problem:T7
+T8	Medical-Problem 666 689	increased opacification
+T9	Medical-Anatomy 698 707	left base
+T10	Medical-Problem 713 749	poor definition of the hemidiaphragm
+T11	Medical-Problem 772 785	pleural fluid
+T12	Medical-Problem 790 801	volume loss
+T13	Medical-Anatomy 809 819	lower lobe
+T14	Medical-Problem 822 830	Blunting
+E13	Medical-Problem:T14
+T15	Medical-Assertion 942 948	may be
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 949 953;955 993	mild elevation of pulmonary venous pressure
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Size-Trend:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15

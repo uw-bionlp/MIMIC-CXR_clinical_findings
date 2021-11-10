@@ -1,0 +1,24 @@
+T1	Medical-Problem 257 281	bronchovascular crowding
+E1	Medical-Problem:T1
+T2	Medical-Problem 293 312;314 332	diffusely increased pulmonary markings
+T3	Medical-Problem 338 356	more focal opacity
+T4	Medical-Anatomy 364 388	left base and right apex
+T5	Medical-Assertion 418 431	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 432 460;462 482	infection on a background of mild pulmonary edema
+T7	Medical-Problem 503 526	small pleural effusions
+E6	Medical-Problem:T7
+T8	Lesion-Characteristic 768 777	calcified
+T9	Lesion-Description 778 787	granuloma
+T10	Lesion-Anatomy 809 825	right lower lung
+T11	Medical-Problem 860 867	Opacity
+T12	Medical-Anatomy 875 899	left base and right apex
+T13	Medical-Assertion 900 903;905 914	may represent
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 915 964	infection on a background of mild pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

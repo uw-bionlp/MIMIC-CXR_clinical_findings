@@ -1,0 +1,19 @@
+T1	Medical-Problem 448 492	several wires superiorly being discontinuous
+E1	Medical-Problem:T1
+T2	Medical-Problem 529 553	diffuse airspace process
+T3	Medical-Anatomy 581 585;587 597	both lung bases
+T4	Medical-Problem 606 621	pulmonary edema
+T5	Medical-Problem 625 651	diffuse infectious process
+T6	Medical-Problem 722 738;740 750	Biapical pleural thickening
+E6	Medical-Problem:T6
+T7	Medical-Assertion 771 777	likely
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 778 806	bilateral layering effusions
+T9	Medical-Assertion 809 811	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 813 825	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

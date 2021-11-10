@@ -1,0 +1,32 @@
+T1	Medical-Assertion 363 369	may be
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 370 395	minimal increased opacity
+T3	Medical-Anatomy 403 408;410 442	right heart border/cardiophrenic angle
+T4	Medical-Assertion 444 463	likely secondary to
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 464 475;477 503	crowding of bronchovascular structures
+T6	Medical-Anatomy 510 515	lungs
+T7	Medical-Assertion 536 552	without evidence
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 557 576	focal consolidation
+T9	Medical-Problem 578 584	nodule
+E6	Medical-Problem:T9
+T10	Lesion-Description 589 593	mass
+E7	Lesion-Description:T10
+T11	Medical-Assertion 605 616	no evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 620 629;631 650	pulmonary vascular congestion
+T13	Medical-Assertion 662 664	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 665 677	pneumothorax
+T15	Medical-Problem 681 697	pleural effusion
+T16	Medical-Assertion 718 720	No
+A6	Medical-AssertionValue T16 absent
+T17	Medical-Problem 721 750	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T13
+E11	Medical-Problem:T17 has-Medical-Assertion:T16

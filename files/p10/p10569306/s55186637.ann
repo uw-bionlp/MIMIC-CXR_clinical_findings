@@ -1,0 +1,30 @@
+T1	Medical-Problem 253 261;263 278	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 281 301	Lung volumes are low
+E2	Medical-Problem:T2
+T3	Medical-Problem 338 353	subtle haziness
+T4	Medical-Anatomy 361 377	right lower lung
+T5	Medical-Problem 456 489	partially layering right effusion
+T6	Medical-Assertion 494 506	not excluded
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 518 520	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 521 533	pneumothorax
+T9	Medical-Problem 668 695	calcified rounded structure
+T10	Medical-Anatomy 715 720;722 736	right upper quadrant
+T11	Lesion-Anatomy 753 760	hepatic
+T12	Lesion-Description 761 767	lesion
+T13	Medical-Problem 803 820	mild cardiomegaly
+E11	Medical-Problem:T13
+T14	Medical-Problem 822 837	subtle haziness
+T15	Medical-Anatomy 845 850;852 862	right lower lung
+T16	Medical-Assertion 869 882	may represent
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 885 918	partially layering right effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

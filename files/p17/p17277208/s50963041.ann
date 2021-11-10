@@ -1,0 +1,30 @@
+T1	Medical-Problem 304 324	Widening mediastinum
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 368 379	mediastinal
+E2	Lesion-Anatomy:T2
+T3	Lesion-Anatomy 384 389	hilar
+E3	Lesion-Anatomy:T3
+T4	Lesion-Count 407 415	Multiple
+T5	Lesion-Anatomy 416 425;427 431	Bilateral lung
+T6	Lesion-Description 432 439	nodules
+T7	Lesion-Description 444 450	masses
+T8	Lesion-Size-Trend 455 473	probably unchanged
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Assertion 522 524	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 525 537	pneumothorax
+T11	Medical-Problem 539 571	Small to moderate right effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 645 677	Small to moderate right effusion
+E10	Medical-Problem:T12
+T13	Lesion-Anatomy 680 694	Bilateral lung
+T14	Lesion-Description 695 702	nodules
+T15	Lesion-Characteristic 707 716	extensive
+T16	Lesion-Anatomy 717 728	mediastinal
+T17	Lesion-Anatomy 733 738	hilar
+T18	Lesion-Description 739 754	lymphadenopathy
+E6	Lesion-Description:T6 has-Lesion-Count:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T8
+E7	Lesion-Description:T7 has-Lesion-Count:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T13
+E16	Lesion-Description:T18 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T17

@@ -1,0 +1,17 @@
+T1	Medical-Assertion 270 272	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 273 280;282 290	pleural effusion
+T3	Medical-Problem 294 306	pneumothorax
+T4	Medical-Problem 308 323	Slight blunting
+T5	Medical-Anatomy 331 354	left costophrenic angle
+T6	Medical-Assertion 387 402	probably due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 403 417	minor scarring
+T8	Medical-Assertion 463 474	No evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 478 507	acute cardiopulmonary disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

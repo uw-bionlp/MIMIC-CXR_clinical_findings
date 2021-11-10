@@ -1,0 +1,39 @@
+T1	Medical-Assertion 130 132	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 133 145	pneumothorax
+T3	Medical-Problem 148 173	Linear luncency obliquely
+T4	Medical-Anatomy 194 208	right mid lung
+T5	Medical-Assertion 212 218	likely
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 221 230	skin fold
+T7	Medical-Problem 233 257	Increasing opacification
+T8	Medical-Anatomy 265 270;272 277	right  base
+T9	Medical-Assertion 278 289	may be from
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 290 321	reaccumulation of pleural fluid
+T11	Medical-Problem 323 334	atelectasis
+T12	Medical-Problem 338 347;349 374	some mild  focal reexapansion edema
+T13	Medical-Assertion 781 792	No evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 796 808	pneumothorax
+T15	Medical-Problem 812 825	Opacification
+T16	Medical-Anatomy 833 843	right base
+T17	Medical-Problem 863 876	pleural fluid
+T18	Medical-Problem 882 893	atelectasis
+T19	Medical-Assertion 898 906	possibly
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 907 911	some
+E15	Medical-Problem:T20
+T21	Medical-Problem 912 941	mild focal re-expansion edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E13	Medical-Problem:T17 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16
+E16	Medical-Problem:T21 has-Medical-Anatomy:T16 has-Medical-Assertion:T19

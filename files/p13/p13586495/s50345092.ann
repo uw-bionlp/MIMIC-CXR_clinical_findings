@@ -1,0 +1,38 @@
+T1	Medical-Assertion 575 577	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 579 608	pulmonary vascular congestion
+T3	Medical-Anatomy 626 648	right-sided hemithorax
+T4	Medical-Assertion 667 691	does not demonstrate any
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 692 707	new infiltrates
+T6	Lesion-Description 709 715	masses
+E4	Lesion-Description:T6
+T7	Medical-Problem 719 726;728 736	pleural effusion
+T8	Lesion-Description 783 794	mass lesion
+T9	Lesion-Anatomy 803 842	proximal portion of the left lower lobe
+T10	Lesion-Size-Trend 847 864	increased in size
+A3	Lesion-Size-TrendValue T10 increasing
+T11	Medical-Problem 999 1034	moderate amount of pleural effusion
+E8	Medical-Problem:T11
+T12	Lesion-Description 1052 1056	mass
+E9	Lesion-Description:T12
+T13	Lesion-Assertion 1068 1079	no evidence
+A4	Lesion-AssertionValue T13 absent
+T14	Lesion-Description 1087 1096	secondary
+E10	Lesion-Description:T14
+T15	Lesion-Description 1097 1107	metastases
+T16	Medical-Assertion 1112 1114	no
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1116 1128	pneumothorax
+T18	Medical-Anatomy 1150 1161	apical area
+T19	Lesion-Anatomy 1194 1209	left lower lobe
+T20	Lesion-Description 1210 1214	mass
+T21	Medical-Problem 1278 1313	moderate amount of pleural effusion
+E16	Medical-Problem:T21
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E11	Lesion-Description:T15 has-Lesion-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Anatomy:T18
+E15	Lesion-Description:T20 has-Lesion-Anatomy:T19

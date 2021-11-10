@@ -1,0 +1,29 @@
+T1	Medical-Problem 301 314	opacification
+T2	Medical-Anatomy 322 355	right hilar and suprahilar region
+T3	Lesion-Description 410 425	lymphadenopathy
+E3	Lesion-Description:T3
+T4	Medical-Problem 428 441	Opacification
+T5	Medical-Anatomy 449 459	right base
+T6	Medical-Problem 465 495	elevation of the hemidiaphragm
+T7	Medical-Assertion 496 504	suggests
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 506 530	sequela of prior surgery
+T9	Medical-Problem 533 552	Mild indistinctness
+T10	Medical-Anatomy 556 580;582 591	pulmonary vessels at the left base
+T11	Medical-Assertion 592 607	could represent
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 608 637	pulmonary vascular congestion
+T13	Medical-Problem 677 699	superimposed pneumonia
+T14	Medical-Assertion 700 719	could be considered
+A3	Medical-AssertionValue T14 possible
+T15	Lesion-Count 732 740	multiple
+T16	Lesion-Description 741 763	nodular opacifications
+T17	Lesion-Anatomy 771 780	left lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T14
+E13	Lesion-Description:T16 has-Lesion-Count:T15 has-Lesion-Anatomy:T17

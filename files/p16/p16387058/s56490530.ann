@@ -1,0 +1,43 @@
+T1	Medical-Assertion 35 37	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 38 67	acute cardiopulmonary process
+T3	Medical-Problem 74 88	Cholelithiasis
+E2	Medical-Problem:T3
+T4	Medical-Problem 403 424	interstitial markings
+T5	Medical-Anatomy 428 448	bilateral lung bases
+T6	Medical-Assertion 513 515	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 516 535	focal consolidation
+T8	Medical-Problem 537 544;546 554	pleural effusion
+T9	Medical-Problem 556 571	pulmonary edema
+T10	Medical-Problem 576 588	pneumothorax
+T11	Medical-Problem 591 600	Calcified
+E9	Medical-Problem:T11
+T12	Lesion-Anatomy 601 611	right base
+T13	Lesion-Description 612 621	granuloma
+T14	Lesion-Characteristic 627 636	calcified
+T15	Lesion-Description 637 646	granuloma
+T16	Lesion-Anatomy 647 680	posterior to the descending aorta
+T17	Lesion-Size-Trend 685 694	unchanged
+A3	Lesion-Size-TrendValue T17 no-change
+T18	Medical-Problem 743 753	Gallstones
+E15	Medical-Problem:T18
+T19	Medical-Problem 812 826	mild scoliosis
+T20	Medical-Anatomy 834 848	thoracic spine
+T21	Medical-Problem 876 899	acute pulmonary process
+E18	Medical-Problem:T21
+T22	Medical-Problem 902 911	Calcified
+E19	Medical-Problem:T22
+T23	Lesion-Description 912 922	granulomas
+E20	Lesion-Description:T23
+T24	Medical-Problem 940 954	Cholelithiasis
+E21	Medical-Problem:T24
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T6
+E11	Lesion-Description:T13 has-Lesion-Anatomy:T12 has-Lesion-Anatomy:T16 has-Lesion-Size-Trend:T17
+E13	Lesion-Description:T15 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T16 has-Lesion-Size-Trend:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20

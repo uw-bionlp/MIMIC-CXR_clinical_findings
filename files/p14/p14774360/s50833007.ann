@@ -1,0 +1,29 @@
+T1	Medical-Problem 205 223	alveolar opacities
+T2	Medical-Anatomy 227 242	both lung bases
+T3	Medical-Problem 249 253	hila
+E3	Medical-Problem:T3
+T4	Medical-Problem 259 269	indistinct
+E4	Medical-Problem:T4
+T5	Medical-Problem 281 299	mild cephalization
+T6	Medical-Anatomy 307 328	pulmonary vasculature
+T7	Medical-Problem 332 356	Cardiomegaly is moderate
+E7	Medical-Problem:T7
+T8	Medical-Assertion 368 370	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 371 379	effusion
+T10	Medical-Problem 383 395	pneumothorax
+T11	Medical-Problem 413 446	Moderate alveolar pulmonary edema
+E10	Medical-Problem:T11
+T12	Medical-Problem 464 492	Bilateral airspace opacities
+T13	Medical-Problem 497 511	indistinctness
+T14	Medical-Anatomy 519 523	hila
+T15	Medical-Assertion 524 528;530 545	most compatible with
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 546 561	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Medical-Problem:T12 has-Medical-Anatomy:T14
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

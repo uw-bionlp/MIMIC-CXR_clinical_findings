@@ -1,0 +1,47 @@
+T1	Medical-Assertion 101 109	Question
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 110 119	pneumonia
+T3	Medical-Problem 123 131	widening
+T4	Medical-Problem 227 263	heart is mild to moderately enlarged
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 270 284;286 292	main pulmonary artery
+E4	Medical-Anatomy:T5
+T6	Medical-Anatomy 326 337	aortic arch
+T7	Medical-Problem 346 355	calcified
+T8	Medical-Problem 412 432;434 462	increased indistinct bilateral perihilar fullness
+E7	Medical-Problem:T8
+T9	Medical-Problem 470 502	widespread peribronchial cuffing
+E8	Medical-Problem:T9
+T10	Medical-Problem 505 528	interstitial prominence
+E9	Medical-Problem:T10
+T11	Lesion-Size 533 538	small
+T12	Lesion-Description 539 546	nodular
+T13	Medical-Assertion 557 567	suggesting
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 568 576;578 585	airspace disease
+T15	Medical-Problem 590 605	streaky opacity
+T16	Medical-Anatomy 613 620	lingula
+T17	Medical-Assertion 621 629	suggests
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 630 649	underlying scarring
+T19	Medical-Problem 664 702	new small right-sided pleural effusion
+E16	Medical-Problem:T19
+T20	Medical-Problem 709 730;732 748	very small left-sided pleural effusion
+E17	Medical-Problem:T20
+T21	Medical-Problem 830 867	Moderate widespread new opacification
+E18	Medical-Problem:T21
+T22	Medical-Problem 875 892;894 910	small right-sided pleural effusion
+E19	Medical-Problem:T22
+T23	Medical-Problem 915 927	cardiomegaly
+E20	Medical-Problem:T23
+T24	Medical-Assertion 929 947	most suggestive of
+A4	Medical-AssertionValue T24 possible
+T25	Medical-Problem 948 966;968 973	moderate pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E11	Lesion-Description:T12 has-Lesion-Size-Present:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E21	Medical-Problem:T25 has-Medical-Assertion:T24

@@ -1,0 +1,22 @@
+T1	Medical-Assertion 379 381	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 382 398	pleural effusion
+T3	Medical-Problem 402 414	pneumothorax
+T4	Lesion-Characteristic 438 444	lucent
+T5	Lesion-Description 445 451	lesion
+T6	Lesion-Anatomy 459 484	mid left clavicular shaft
+T7	Medical-Problem 491 501	scalloping
+E6	Medical-Problem:T7
+T8	Lesion-Characteristic 520 541	no marginal sclerosis
+T9	Medical-Assertion 559 561	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 562 589	acute intrathoracic process
+T11	Lesion-Characteristic 594 600	lucent
+T12	Lesion-Description 601 607	lesion
+T13	Lesion-Characteristic 613 621;623 633	cortical scalloping
+T14	Lesion-Anatomy 641 654	left clavicle
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14

@@ -1,0 +1,33 @@
+T1	Medical-Problem 238 267	fluid has begun to accumulate
+T2	Medical-Anatomy 275 290	left hemithorax
+T3	Medical-Problem 390 424	lobulated left mediastinal contour
+E3	Medical-Problem:T3
+T4	Medical-Assertion 460 475	could be due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 476 488	augmentation
+T6	Medical-Anatomy 496 516	left bronchial stump
+T7	Medical-Problem 521 588	relatively large volume of tissue such as omentum or subphrenic fat
+T8	Medical-Problem 613 633	large burden of clot
+T9	Medical-Problem 712 722	right lung
+E8	Medical-Problem:T9
+T10	Medical-Problem 726 739	low in volume
+E9	Medical-Problem:T10
+T11	Medical-Problem 752 774	Subcutaneous emphysema
+T12	Medical-Anatomy 782 786;788 798	left chest wall
+T13	Medical-Assertion 807 815	probably
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 830 860	accumulating fluid in the left
+E12	Medical-Problem:T14
+T15	Medical-Problem 877 891	displacing air
+T16	Medical-Problem 974 997	mediastinal abnormality
+E14	Medical-Problem:T16
+T17	Medical-Assertion 1023 1034	no evidence
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1038 1050	cardiomegaly
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

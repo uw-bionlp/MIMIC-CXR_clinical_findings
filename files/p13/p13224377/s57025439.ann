@@ -1,0 +1,16 @@
+T1	Medical-Problem 300 309;311 316	pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 366 385	remaining opacities
+T3	Medical-Anatomy 390 400	both lungs
+T4	Medical-Problem 492 508	Minimal blunting
+T5	Medical-Anatomy 516 520;522 540	left costophrenic sinus
+T6	Medical-Assertion 542 567	potentially indicative of
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 568 597	minimal left pleural effusion
+T8	Medical-Assertion 600 602	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 603 615	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

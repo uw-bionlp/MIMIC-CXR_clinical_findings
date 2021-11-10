@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 248 253	lungs
+T2	Medical-Assertion 277 279	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 280 301	obvious consolidation
+T4	Medical-Assertion 324 334	suggestion
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 338 365	peribronchial opacification
+T6	Medical-Anatomy 373 390;392 402	retrocardiac left lower lobe
+T7	Medical-Problem 490 509	small round opacity
+T8	Medical-Anatomy 517 522	right
+T9	Medical-Problem 538 544	vessel
+E7	Medical-Problem:T9
+T10	Lesion-Characteristic 556 565	calcified
+T11	Lesion-Description 566 575	granuloma
+T12	Medical-Anatomy 582 587	lungs
+T13	Medical-Assertion 621 623	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 625 644	pleural abnormality
+T15	Medical-Assertion 720 728	Possible
+A4	Medical-AssertionValue T15 possible
+T16	Lesion-Anatomy 729 746	retrocardiac lung
+T17	Lesion-Description 747 753	lesion
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Lesion-Description:T17 has-Lesion-Anatomy:T16

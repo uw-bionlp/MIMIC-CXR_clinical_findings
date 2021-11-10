@@ -1,0 +1,25 @@
+T1	Medical-Problem 222 231	Elevation
+T2	Medical-Anatomy 239 254	right lung base
+T3	Medical-Problem 283 294	atelectasis
+T4	Medical-Anatomy 298 307	Left lung
+T5	Medical-Problem 311 324	low in volume
+T6	Medical-Assertion 329 334	clear
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 342 371	significant focal abnormality
+T8	Medical-Assertion 384 386	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 387 415	appreciable pleural effusion
+T10	Medical-Problem 441 452;454 466	Azygos vein is distended
+E8	Medical-Problem:T10
+T11	Medical-Assertion 537 559	differential diagnosis
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 589 604;606 614	acute pulmonary embolism
+T13	Medical-Problem 617 642	Widely separated fracture
+T14	Medical-Anatomy 644 659	distal clavicle
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14

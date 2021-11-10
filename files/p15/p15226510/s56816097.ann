@@ -1,0 +1,30 @@
+T1	Medical-Anatomy 400 420	Bilateral lung bases
+T2	Medical-Problem 440 444;446 453	mild opacity
+T3	Medical-Problem 459 470	obscuration
+T4	Medical-Anatomy 478 496	costophrenic angle
+T5	Medical-Assertion 497 507	suggesting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 508 523;525 534	minimal pleural effusions
+T7	Medical-Problem 539 558	bibasal atelectasis
+T8	Medical-Assertion 600 602	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 603 626	discrete lung opacities
+T10	Medical-Problem 642 651	pneumonia
+E8	Medical-Problem:T10
+T11	Medical-Problem 734 761	Minimal bibasal atelectasis
+E9	Medical-Problem:T11
+T12	Medical-Problem 766 798	mild bilateral pleural effusions
+E10	Medical-Problem:T12
+T13	Medical-Assertion 820 822	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 823 846	discrete lung opacities
+T15	Medical-Assertion 847 861	concerning for
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 863 872	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T1 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

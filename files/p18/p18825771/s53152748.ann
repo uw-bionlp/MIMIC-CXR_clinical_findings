@@ -1,0 +1,27 @@
+T1	Lesion-Characteristic 252 259	grossly
+T2	Lesion-Anatomy 270 286	right upper lobe
+T3	Lesion-Description 287 291	mass
+T4	Lesion-Size-Trend 304 319	slight increase
+A1	Lesion-Size-TrendValue T4 increasing
+T5	Lesion-Anatomy 323 328	right
+T6	Lesion-Assertion 349 366	likely reflecting
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Description 367 372	tumor
+T8	Medical-Assertion 435 437	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 438 446	effusion
+T10	Medical-Problem 451 463	pneumothorax
+T11	Medical-Problem 508 528	mediastinal widening
+E8	Medical-Problem:T11
+T12	Lesion-Size 560 565	Large
+T13	Lesion-Anatomy 566 582	right upper lobe
+T14	Lesion-Description 583 587	mass
+T15	Medical-Assertion 594 596	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 597 620	acute chest abnormality
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2
+E5	Lesion-Description:T7 has-Lesion-Size-Trend:T4 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Lesion-Description:T14 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

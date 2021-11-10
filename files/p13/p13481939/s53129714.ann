@@ -1,0 +1,79 @@
+T1	Medical-Problem 33 49	Calcific density
+T2	Medical-Anatomy 57 79	left suprahilar region
+T3	Lesion-Assertion 81 92	potentially
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Characteristic 93 102	calcified
+T5	Lesion-Description 105 114	granuloma
+T6	Lesion-Characteristic 140 149	calcified
+T7	Lesion-Anatomy 150 155	hilar
+T8	Lesion-Description 156 166	lymph node
+T9	Lesion-Assertion 171 180	suspected
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Characteristic 194 203	calcified
+T11	Lesion-Anatomy 204 214	left hilar
+T12	Lesion-Description 215 220	nodes
+T13	Lesion-Characteristic 221 255;257 265	suspicious for prior granulomatous  disease
+T14	Medical-Problem 269 281	Hazy opacity
+T15	Medical-Anatomy 289 312	right suprahilar region
+T16	Medical-Assertion 313 333	could also be due to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 336 343;345 353	chronic  process
+T18	Medical-Problem 363 378	acute infection
+T19	Lesion-Characteristic 687 707	apparently calcified
+T20	Lesion-Description 708 714	nodule
+T21	Lesion-Anatomy 722 744	left suprahilar region
+T22	Medical-Anatomy 792 809	left hilar region
+E19	Medical-Anatomy:T22
+T23	Lesion-Assertion 811 822	potentially
+A4	Lesion-AssertionValue T23 possible
+T24	Lesion-Characteristic 824 833	calcified
+T25	Lesion-Description 834 845	lymph nodes
+T26	Medical-Problem 862 874	hazy opacity
+T27	Medical-Anatomy 882 898	right upper lung
+T28	Medical-Assertion 995 997	No
+A5	Medical-AssertionValue T28 absent
+T29	Medical-Problem 998 1003	acute
+E24	Medical-Problem:T29
+T30	Medical-Problem 1004 1025	osseous abnormalities
+T31	Medical-Problem 1046 1062	Calcific density
+T32	Lesion-Anatomy 1070 1092	left suprahilar region
+T33	Medical-Assertion 1094 1105	potentially
+A6	Medical-AssertionValue T33 possible
+T34	Lesion-Characteristic 1106 1115	calcified
+T35	Lesion-Description 1117 1126	granuloma
+T36	Lesion-Anatomy 1134 1144	parenchyma
+T37	Lesion-Characteristic 1152 1161	calcified
+T38	Lesion-Anatomy 1162 1167	hilar
+T39	Lesion-Description 1168 1178	lymph node
+T40	Medical-Assertion 1183 1192	suspected
+A7	Medical-AssertionValue T40 possible
+T41	Lesion-Characteristic 1205 1214	calcified
+T42	Lesion-Anatomy 1215 1225	left hilar
+T43	Lesion-Description 1226 1231	nodes
+T44	Lesion-Characteristic 1232 1266;1268 1275	suspicious for prior granulomatous disease
+T45	Medical-Problem 1278 1290	Hazy opacity
+T46	Medical-Anatomy 1298 1321	right suprahilar region
+T47	Medical-Assertion 1322 1342	could also be due to
+A8	Medical-AssertionValue T47 possible
+T48	Medical-Problem 1345 1352;1354 1361	chronic process
+T49	Medical-Problem 1371 1386	acute infection
+T50	Medical-Assertion 1387 1416	would be difficult to exclude
+A9	Medical-AssertionValue T50 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Characteristic:T4
+E7	Lesion-Description:T8 has-Lesion-Assertion:T3 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E10	Lesion-Description:T12 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11 has-Lesion-Characteristic:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E17	Lesion-Description:T20 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T21
+E21	Lesion-Description:T25 has-Lesion-Assertion:T23 has-Lesion-Characteristic:T24
+E22	Medical-Problem:T26 has-Medical-Anatomy:T27
+E25	Medical-Problem:T30 has-Medical-Assertion:T28
+E26	Medical-Problem:T31 has-Medical-Assertion:T33 has-Medical-Assertion:T40
+E29	Lesion-Description:T35 has-Lesion-Anatomy:T32 has-Lesion-Characteristic:T34 has-Lesion-Anatomy:T36
+E33	Lesion-Description:T39 has-Lesion-Characteristic:T37 has-Lesion-Anatomy:T38
+E36	Lesion-Description:T43 has-Lesion-Characteristic:T41 has-Lesion-Anatomy:T42 has-Lesion-Characteristic:T44
+E38	Medical-Problem:T45 has-Medical-Anatomy:T46
+E40	Medical-Problem:T48 has-Medical-Anatomy:T46 has-Medical-Assertion:T47
+E41	Medical-Problem:T49 has-Medical-Anatomy:T46 has-Medical-Assertion:T47 has-Medical-Assertion:T50

@@ -1,0 +1,43 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 48	pneumothorax
+T3	Medical-Problem 51 88	Diffuse patchy heterogenous opacities
+T4	Medical-Anatomy 89 109	throughout the lungs
+T5	Medical-Assertion 165 178	suggestive of
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 179 187;189 205	alveolar  pulmonary edema
+T7	Medical-Problem 218 247	multifocal infectious process
+T8	Medical-Problem 438 450	Left pleural
+E6	Medical-Problem:T8
+T9	Medical-Problem 572 595	Widespread infiltrative
+E7	Medical-Problem:T9
+T10	Medical-Problem 596 617	pulmonary abnormality
+E8	Medical-Problem:T10
+T11	Medical-Problem 623 639;641 690	areas of nodular coalescence in a generalized interstitial quality
+E9	Medical-Problem:T11
+T12	Medical-Problem 708 718;720 763	relatively focal area of left lower lobe consolidation
+E10	Medical-Problem:T12
+T13	Medical-Problem 774 789;791 802	more widespread abnormality
+E11	Medical-Problem:T13
+T14	Medical-Assertion 834 856	Differential diagnosis
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 868 886	atypical pneumonia
+T16	Medical-Problem 910 920	mycoplasma
+T17	Medical-Problem 922 931;933 943	pulmonary hemorrhage
+T18	Medical-Problem 948 979	non-cardiogenic pulmonary edema
+T19	Medical-Assertion 1022 1024	no
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1025 1041	pleural effusion
+T21	Lesion-Characteristic 1045 1053	evidence
+T22	Lesion-Characteristic 1057 1064	central
+T23	Lesion-Description 1065 1075	adenopathy
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T14
+E15	Medical-Problem:T18 has-Medical-Assertion:T14
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E19	Lesion-Description:T23 has-Lesion-Characteristic:T21 has-Lesion-Characteristic:T22

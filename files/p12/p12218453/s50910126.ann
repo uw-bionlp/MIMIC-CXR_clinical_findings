@@ -1,0 +1,35 @@
+T1	Medical-Problem 512 530	necrotic processes
+T2	Medical-Anatomy 539 546	sternum
+T3	Medical-Problem 714 743	very mild cardiac enlargement
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 859 880	pulmonary vasculature
+T5	Medical-Problem 888 897	congested
+T6	Medical-Assertion 912 923	no evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 931 957	acute pulmonary infiltrate
+T8	Medical-Problem 960 969;971 979	Very mild blunting
+T9	Medical-Anatomy 987 1010	lateral pleural sinuses
+T10	Medical-Problem 1157 1190	few linear and patchy infiltrates
+T11	Medical-Anatomy 1198 1202;1204 1244	left lower lung base, lateral and posteriorly
+T12	Medical-Problem 1363 1378	scar formations
+E11	Medical-Problem:T12
+T13	Medical-Problem 1407 1427	infectious processes
+E12	Medical-Problem:T13
+T14	Medical-Problem 1586 1618	Grossly unchanged chest findings
+E13	Medical-Problem:T14
+T15	Medical-Assertion 1621 1629	probably
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 1630 1649	old scar formations
+T17	Medical-Assertion 1652 1660	possibly
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1666 1670	some
+E15	Medical-Problem:T18
+T19	Medical-Problem 1671 1693	subtle new infiltrates
+T20	Medical-Anatomy 1701 1710	left base
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T19 has-Medical-Assertion:T17 has-Medical-Anatomy:T20

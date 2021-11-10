@@ -1,0 +1,31 @@
+T1	Medical-Assertion 34 36	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 37 49	pneumothorax
+T3	Medical-Problem 53 92	other acute cardiopulmonary abnormality
+T4	Medical-Problem 94 112	Unchanged widening
+T5	Medical-Anatomy 122 138	left mediastinum
+T6	Medical-Assertion 596 598	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 599 611	pneumothorax
+T8	Medical-Problem 615 631	pleural effusion
+T9	Medical-Problem 658 673	Marked widening
+T10	Medical-Anatomy 681 697	left mediastinum
+T11	Medical-Problem 778 801	Cardiomediastinal hilar
+E9	Medical-Problem:T11
+T12	Medical-Assertion 899 901	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 902 914	pneumothorax
+T14	Medical-Assertion 915 917	or
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 918 957	other acute cardiopulmonary abnormality
+T16	Medical-Problem 959 977	Unchanged widening
+T17	Medical-Anatomy 986 1002	left mediastinum
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12 has-Medical-Assertion:T14
+E11	Medical-Problem:T15 has-Medical-Assertion:T12 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17

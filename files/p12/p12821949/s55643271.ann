@@ -1,0 +1,20 @@
+T1	Medical-Assertion 334 336	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 337 349	pneumothorax
+T3	Medical-Problem 354 367	complications
+T4	Medical-Problem 421 431	large left
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 433 442	perihilar
+T6	Lesion-Description 443 447	mass
+T7	Lesion-Size-Trend 458 467	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 480 482	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 483 500	pleural effusions
+T10	Medical-Problem 513 534	significant scoliosis
+T11	Medical-Anatomy 542 561	thoracolumbar spine
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T11

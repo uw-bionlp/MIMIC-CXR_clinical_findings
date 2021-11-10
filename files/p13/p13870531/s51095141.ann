@@ -1,0 +1,17 @@
+T1	Medical-Assertion 340 350	resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 354 385	bilateral parenchymal opacities
+T3	Medical-Problem 398 414	minimal scarring
+T4	Medical-Problem 418 429	atelectasis
+T5	Medical-Anatomy 437 458	left upper lung field
+T6	Medical-Assertion 464 466	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 467 475;477 497	areas of residual opacity.The
+T8	Medical-Problem 553 572	pleural abnormality
+E6	Medical-Problem:T8
+T9	Medical-Problem 634 655	parenchymal opacities
+E7	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6

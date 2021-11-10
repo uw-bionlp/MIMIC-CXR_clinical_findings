@@ -1,0 +1,17 @@
+T1	Lesion-Description 239 246;248 255	nodular opacity
+T2	Lesion-Anatomy 263 298	lower mid portion of the right lung
+T3	Medical-Assertion 377 390	might reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 391 401;403 412	developing infection
+T5	Medical-Problem 416 425	resolving
+E4	Medical-Problem:T5
+T6	Medical-Problem 482 496	Hyperinflation
+E5	Medical-Problem:T6
+T7	Medical-Assertion 510 512	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 513 529	pleural effusion
+T9	Medical-Problem 533 545	pneumothorax
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

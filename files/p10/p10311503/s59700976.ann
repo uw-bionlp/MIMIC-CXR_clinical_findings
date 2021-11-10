@@ -1,0 +1,16 @@
+T1	Medical-Problem 278 299	increased atelectasis
+T2	Medical-Anatomy 308 340	right upper and right lower lung
+T3	Medical-Anatomy 359 376	right middle lobe
+T4	Medical-Problem 442 446;448 474	Left retrocardiac consolidation
+E4	Medical-Problem:T4
+T5	Medical-Assertion 501 503	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 504 516	pneumothorax
+T7	Medical-Assertion 529 531	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 532 560	appreciable pleural effusion
+T9	Medical-Problem 586 601;603 608	effusion on the right
+E7	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

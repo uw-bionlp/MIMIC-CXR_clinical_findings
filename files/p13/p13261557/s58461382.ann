@@ -1,0 +1,22 @@
+T1	Medical-Problem 317 348	Emphysema is moderate to severe
+E1	Medical-Problem:T1
+T2	Medical-Problem 362 392;394 402	pleural effusions, moderate on the left
+E2	Medical-Problem:T2
+T3	Medical-Problem 442 471	Left infrahilar consolidation
+E3	Medical-Problem:T3
+T4	Medical-Assertion 473 481	could be
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 482 502	residual atelectasis
+T6	Medical-Assertion 542 544	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 546 561	pulmonary edema
+T8	Lesion-Count 564 572	Multiple
+T9	Lesion-Anatomy 573 577	lung
+T10	Lesion-Description 578 585	nodules
+T11	Medical-Assertion 629 631	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 632 644	pneumothorax
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Lesion-Description:T10 has-Lesion-Count:T8 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,32 @@
+T1	Medical-Problem 257 281	moderate pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 284 304	More focal opacities
+T3	Medical-Anatomy 316 328;330 339	right medial lung base
+T4	Medical-Anatomy 341 360	retrocardiac region
+T5	Medical-Anatomy 366 387	left upper lung field
+T6	Medical-Assertion 388 401	could reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 402 407;409 421	areas of infection
+T8	Medical-Problem 424 457	Small bilateral pleural effusions
+E7	Medical-Problem:T8
+T9	Medical-Assertion 479 481	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 483 495	pneumothorax
+T11	Medical-Assertion 498 500	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 501 528	acute osseous abnormalities
+T13	Medical-Problem 563 587	Moderate pulmonary edema
+E10	Medical-Problem:T13
+T14	Medical-Problem 593 626	small bilateral pleural effusions
+E11	Medical-Problem:T14
+T15	Medical-Problem 629 639;641 663	More focal areas of opacification
+T16	Medical-Anatomy 671 712	left upper lung field and both lung bases
+T17	Medical-Assertion 713 718;720 727	could reflect
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 728 746	areas of pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

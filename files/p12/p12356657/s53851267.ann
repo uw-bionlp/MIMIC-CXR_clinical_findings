@@ -1,0 +1,17 @@
+T1	Medical-Assertion 321 332	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 336 349	complications
+T3	Medical-Assertion 359 361	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 362 374	pneumothorax
+T5	Lesion-Characteristic 494 502	Constant
+T6	Lesion-Characteristic 503 510	bullous
+T7	Lesion-Description 511 517	lesion
+T8	Lesion-Anatomy 525 543;545 549	right lateral lung base
+T9	Medical-Problem 569 596	area of parenchymal opacity
+E7	Medical-Problem:T9
+T10	Medical-Problem 599 618;620 642	Signs indicative of pulmonary hypertension
+E8	Medical-Problem:T10
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8

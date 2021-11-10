@@ -1,0 +1,27 @@
+T1	Medical-Problem 279 298	Large consolidation
+T2	Medical-Anatomy 306 316	right lung
+T3	Lesion-Description 322 335	nodular areas
+T4	Lesion-Anatomy 344 354	upper lobe
+T5	Lesion-Size-Trend 362 383	essentially unchanged
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Problem 386 400	Consolidations
+T7	Medical-Problem 408 417;419 439	two large regions of pneumonia
+T8	Medical-Anatomy 443 479	mid level and lower lobe on the left
+T9	Medical-Assertion 540 542	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 543 555	pneumothorax
+T11	Medical-Problem 558 572;574 590	Moderate right pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 640 666	Stable large consolidation
+T13	Medical-Anatomy 674 684	right lung
+T14	Medical-Problem 690 711;713 722	slight improvement of pneumonia
+T15	Medical-Anatomy 730 769	left lung mid level and left lower lobe
+T16	Medical-Problem 777 815	Stable moderate right pleural effusion
+E14	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15

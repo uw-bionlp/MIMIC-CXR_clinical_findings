@@ -1,0 +1,26 @@
+T1	Medical-Problem 257 270	Opacification
+T2	Medical-Anatomy 271 287	both lower lobes
+T3	Medical-Assertion 288 296	probably
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 297 308	atelectasis
+T5	Lesion-Anatomy 353 368	Left lower lobe
+T6	Lesion-Description 369 373	mass
+T7	Medical-Problem 382 403	Moderate cardiomegaly
+E6	Medical-Problem:T7
+T8	Medical-Assertion 414 416	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 417 432	pulmonary edema
+T10	Medical-Problem 436 458	large pleural effusion
+T11	Medical-Problem 461 481	Large tortuous aorta
+E9	Medical-Problem:T11
+T12	Medical-Problem 499 526	stable mediastinal widening
+E10	Medical-Problem:T12
+T13	Medical-Assertion 596 598	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 600 612	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

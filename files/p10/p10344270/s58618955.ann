@@ -1,0 +1,37 @@
+T1	Lesion-Size 170 174	5 mm
+T2	Lesion-Characteristic 179 184	round
+T3	Lesion-Characteristic 185 203	well-circumscribed
+T4	Medical-Anatomy 219 224	right
+E4	Medical-Anatomy:T4
+T5	Lesion-Assertion 244 257	may represent
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Anatomy 260 269	pulmonary
+T7	Lesion-Description 270 276	nodule
+T8	Medical-Assertion 287 293	may be
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 297 312	enlarged vessel
+T10	Medical-Problem 317 347	superimposed normal structures
+T11	Medical-Assertion 436 438	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 439 452	consolidation
+T13	Medical-Problem 456 465;467 472	pulmonary edema
+T14	Medical-Assertion 484 486	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 487 503	pleural effusion
+T16	Medical-Problem 507 519	pneumothorax
+T17	Medical-Problem 585 615	Small right suprahilar density
+E13	Medical-Problem:T17
+T18	Lesion-Assertion 619 627	possibly
+A5	Lesion-AssertionValue T18 possible
+T19	Lesion-Size-Trend 630 633	new
+A6	Lesion-Size-TrendValue T19 new
+T20	Lesion-Anatomy 636 645	pulmonary
+T21	Lesion-Description 646 652	nodule
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T3 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Lesion-Description:T21 has-Lesion-Assertion:T18 has-Lesion-Size-Trend:T19 has-Lesion-Anatomy:T20

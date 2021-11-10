@@ -1,0 +1,31 @@
+T1	Lesion-Anatomy 353 384	left upper lobe paramediastinal
+T2	Lesion-Description 386 390	mass
+T3	Medical-Problem 393 406	Opacification
+T4	Medical-Anatomy 414 428	left lung base
+T5	Medical-Assertion 429 444	likely reflects
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 465 499	moderate-to-large pleural effusion
+T7	Medical-Problem 504 524	adjacent atelectasis
+T8	Medical-Assertion 571 573	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 574 603	pulmonary vascular congestion
+T10	Medical-Assertion 674 685	No evidence
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 690 714	congestive heart failure
+T12	Medical-Problem 717 749	Persistent left pleural effusion
+E9	Medical-Problem:T12
+T13	Medical-Problem 754 758;760 775	left basilar opacity
+E10	Medical-Problem:T13
+T14	Medical-Assertion 776 796	likely reflective of
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 797 808	atelectasis
+T16	Lesion-Anatomy 811 826;828 843	Left upper lobe paramediastinal
+T17	Lesion-Description 844 848	mass
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Lesion-Description:T17 has-Lesion-Anatomy:T16

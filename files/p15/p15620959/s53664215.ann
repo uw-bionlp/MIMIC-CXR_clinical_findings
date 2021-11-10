@@ -1,0 +1,20 @@
+T1	Medical-Assertion 459 461	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 462 474	pneumothorax
+T3	Medical-Problem 500 509	elevation
+T4	Medical-Problem 515 536	new irregular contour
+T5	Medical-Anatomy 544 562	left hemidiaphragm
+T6	Lesion-Anatomy 589 593;595 610	left lobulated hilar
+T7	Lesion-Description 611 615	mass
+T8	Lesion-Characteristic 625 670	indistinct from the contours of the AP window
+T9	Medical-Problem 866 905	Irregularly elevated left hemidiaphragm
+E8	Medical-Problem:T9
+T10	Lesion-Anatomy 910 920	left hilar
+T11	Lesion-Description 921 925	mass
+T12	Lesion-Description 942 950	neoplasm
+E11	Lesion-Description:T12
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T8
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T10

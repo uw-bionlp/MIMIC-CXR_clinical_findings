@@ -1,0 +1,43 @@
+T1	Medical-Problem 120 132	pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 255 273	increased haziness
+T3	Medical-Anatomy 281 291	right lung
+T4	Medical-Problem 297 306	opacities
+T5	Medical-Anatomy 314 319;321 343	right greater than left base
+T6	Medical-Assertion 345 369	appearance suggestive of
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 370 386	asymmetric edema
+T8	Medical-Problem 396 406	aspiration
+T9	Medical-Problem 410 419	infection
+T10	Medical-Assertion 431 433	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 434 446	pneumothorax
+T12	Medical-Problem 508 530	Post-operative changes
+E10	Medical-Problem:T12
+T13	Medical-Problem 584 625;627 647	Moderate right greater than left shoulder degenerative disease
+E11	Medical-Problem:T13
+T14	Medical-Assertion 661 663	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 664 697	definite displaced osseous injury
+T16	Medical-Problem 727 749	Increased hazy opacity
+T17	Medical-Anatomy 757 789;791 819	right lung, predominantly in the right greater than left base
+T18	Medical-Assertion 821 842	which could represent
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 843 859	asymmetric edema
+T20	Medical-Problem 868 878	aspiration
+T21	Medical-Problem 882 891	infection
+T22	Medical-Assertion 894 896	No
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 897 909	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T3 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T3 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T18
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

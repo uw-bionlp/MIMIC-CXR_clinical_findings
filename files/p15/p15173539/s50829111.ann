@@ -1,0 +1,25 @@
+T1	Medical-Assertion 138 145	Suspect
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 146 155;157 165	right rib fracture
+T3	Lesion-Count 237 244	handful
+T4	Lesion-Characteristic 248 257	calcified
+T5	Lesion-Description 258 268	granulomas
+T6	Lesion-Assertion 357 365	probable
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Anatomy 367 378	right hilar
+T8	Lesion-Description 379 390	lymph nodes
+T9	Medical-Assertion 403 405	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 406 414	findings
+T11	Medical-Problem 426 442	active infection
+T12	Lesion-Description 447 457	malignancy
+E9	Lesion-Description:T12
+T13	Medical-Assertion 497 499	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 500 519	pleural abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Count:T3 has-Lesion-Characteristic:T4
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

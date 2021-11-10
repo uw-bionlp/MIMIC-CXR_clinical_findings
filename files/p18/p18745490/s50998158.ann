@@ -1,0 +1,41 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Lesion-Assertion 81 83	no
+A2	Lesion-AssertionValue T3 absent
+T4	Lesion-Size 84 89	large
+T5	Lesion-Anatomy 90 103	intrathoracic
+T6	Lesion-Description 104 108	mass
+T7	Medical-Assertion 153 155	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 156 185	acute cardiopulmonary process
+T9	Lesion-Assertion 201 203	no
+A4	Lesion-AssertionValue T9 absent
+T10	Lesion-Size 204 209	large
+T11	Lesion-Anatomy 210 223	intrathoracic
+T12	Lesion-Anatomy 229 240	mediastinal
+T13	Lesion-Description 241 245	mass
+T14	Medical-Assertion 648 650	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 651 658	pleural
+E10	Medical-Problem:T15
+T16	Medical-Problem 659 667	effusion
+T17	Medical-Problem 671 683	pneumothorax
+T18	Medical-Problem 762 777	mildly tortuous
+E13	Medical-Problem:T18
+T19	Medical-Assertion 798 800	No
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 801 806	acute
+E14	Medical-Problem:T20
+T21	Medical-Problem 807 830	cardiopulmonary process
+T22	Medical-Assertion 846 848	no
+A7	Medical-AssertionValue T22 absent
+T23	Lesion-Anatomy 855 868	intrathoracic
+E16	Lesion-Anatomy:T23
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T13 has-Lesion-Assertion:T9 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T14
+E15	Medical-Problem:T21 has-Medical-Assertion:T19

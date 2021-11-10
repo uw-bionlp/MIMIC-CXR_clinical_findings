@@ -1,0 +1,33 @@
+T1	Medical-Assertion 95 103	Question
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 104 117	consolidation
+T3	Medical-Problem 122 130	effusion
+T4	Medical-Problem 259 275	low lung volumes
+E3	Medical-Problem:T4
+T5	Medical-Problem 282 316	bibasilar bronchovascular crowding
+E4	Medical-Problem:T5
+T6	Medical-Problem 328 351;353 372	left greater than right basilar atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Assertion 427 429	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 431 443	pneumothorax
+T9	Medical-Problem 445 464	vascular congestion
+T10	Medical-Problem 469 491	gross pleural effusion
+T11	Medical-Problem 493 506;508 513	Trace pleural fluid
+E9	Medical-Problem:T11
+T12	Medical-Problem 545 581	Mild multilevel thoracic spondylosis
+E10	Medical-Problem:T12
+T13	Medical-Anatomy 600 605	heart
+T14	Medical-Assertion 609 612	not
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 613 621	enlarged
+T16	Medical-Problem 659 690	Bibasilar dependent atelectasis
+E13	Medical-Problem:T16
+T17	Medical-Problem 695 703	low lung
+E14	Medical-Problem:T17
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

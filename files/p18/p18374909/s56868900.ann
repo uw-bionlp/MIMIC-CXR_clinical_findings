@@ -1,0 +1,20 @@
+T1	Medical-Problem 268 302	Stable massive pulmonary emphysema
+E1	Medical-Problem:T1
+T2	Medical-Problem 309 327	extensive scarring
+T3	Medical-Anatomy 335 345	right lung
+T4	Lesion-Count 350 358	multiple
+T5	Lesion-Characteristic 359 368	calcified
+T6	Lesion-Description 369 379	granulomas
+T7	Lesion-Anatomy 388 397	left lung
+T8	Medical-Problem 492 509	Mild cardiomegaly
+E8	Medical-Problem:T8
+T9	Medical-Assertion 510 517	without
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 518 533	pulmonary edema
+T11	Medical-Assertion 536 538;540 548	No evidence
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 552 561	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Count:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

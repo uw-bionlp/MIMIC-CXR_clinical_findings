@@ -1,0 +1,19 @@
+T1	Medical-Assertion 481 483	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 485 501	pleural effusion
+T3	Medical-Problem 505 517	pneumothorax
+T4	Lesion-Size 538 542	7 mm
+T5	Lesion-Description 543 550	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 551 558	opacity
+T7	Lesion-Anatomy 579 601	base of the right lung
+T8	Lesion-Characteristic 605 614	calcified
+T9	Lesion-Description 638 647	granuloma
+T10	Medical-Assertion 668 670	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 671 704	acute cardiopulmonary abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

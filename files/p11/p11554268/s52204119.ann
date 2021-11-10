@@ -1,0 +1,48 @@
+T1	Medical-Problem 234 276	Cardiac silhouette size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 283 300	aorta is tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 302 312	Prominence
+T4	Medical-Anatomy 321 337	hila bilaterally
+T5	Medical-Assertion 338 350	may indicate
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 351 380;382 393	underlying pulmonary arterial enlargement
+T7	Medical-Problem 405 419	hyperinflation
+T8	Medical-Anatomy 427 432	lungs
+T9	Medical-Problem 438 456;458 467	patchy ill-defined opacities
+T10	Medical-Anatomy 477 517	both lung bases and both mid lung fields
+T11	Medical-Assertion 519 527;529 543	findings concerning for
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 544 553	infection
+T13	Medical-Problem 557 567	aspiration
+T14	Medical-Problem 575 605	pulmonary vascular engorgement
+E12	Medical-Problem:T14
+T15	Medical-Problem 643 670	small left pleural effusion
+E13	Medical-Problem:T15
+T16	Medical-Assertion 673 675	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 677 689	pneumothorax
+T18	Medical-Assertion 706 708	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 709 736	acute osseous abnormalities
+T20	Medical-Problem 773 794	ill-defined opacities
+T21	Medical-Anatomy 806 835;837 848	lung bases and midlung fields bilaterally
+T22	Medical-Assertion 849 863	concerning for
+A5	Medical-AssertionValue T22 possible
+T23	Medical-Problem 864 874	aspiration
+T24	Medical-Problem 878 887	infection
+T25	Medical-Problem 894 908;910 930	mild pulmonary vascular engorgement
+T26	Medical-Problem 939 960	left pleural effusion
+E21	Medical-Problem:T26
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21
+E18	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E19	Medical-Problem:T24 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E20	Medical-Problem:T25 has-Medical-Anatomy:T21

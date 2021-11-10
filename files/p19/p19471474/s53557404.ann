@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 204 209	lungs
+T2	Medical-Assertion 220 227	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 228 247	focal consolidation
+T4	Medical-Problem 249 257	effusion
+T5	Medical-Problem 262 267	edema
+T6	Lesion-Description 282 297	nodular density
+T7	Lesion-Anatomy 318 341	left cardiac silhouette
+T8	Lesion-Anatomy 350 358;360 374	anterior left sixth rib
+T9	Lesion-Size 385 389	6 mm
+T10	Lesion-Description 408 414	nodule
+T11	Lesion-Characteristic 436 445	calcified
+T12	Medical-Assertion 503 505	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 506 511;513 534	acute osseous abnormalities
+T14	Medical-Assertion 555 557	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 558 587	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Present:T9
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

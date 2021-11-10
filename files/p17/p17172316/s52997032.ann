@@ -1,0 +1,20 @@
+T1	Medical-Anatomy 423 433	both bases
+T2	Medical-Assertion 439 450	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 455 467	pneumothorax
+T4	Medical-Problem 470 478	Haziness
+T5	Medical-Anatomy 482 492	both bases
+T6	Medical-Assertion 493 501	suggests
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 502 528	layering pleural effusions
+T8	Medical-Problem 535 564	underlying atelectatic change
+T9	Medical-Problem 576 605;607 615	elevation of pulmonary venous pressure
+E7	Medical-Problem:T9
+T10	Medical-Problem 763 785	areas of opacification
+E8	Medical-Problem:T10
+T11	Medical-Problem 796 822	superimposed consolidation
+E9	Medical-Problem:T11
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6

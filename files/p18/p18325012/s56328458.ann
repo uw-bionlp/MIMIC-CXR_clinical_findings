@@ -1,0 +1,24 @@
+T1	Medical-Problem 152 160;162 175	Interval change in PNA
+E1	Medical-Problem:T1
+T2	Medical-Problem 243 282	Increase in extent of the consolidation
+T3	Medical-Anatomy 291 306	left lung bases
+T4	Lesion-Size-Trend 309 326	Stable appearance
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Description 334 356	masslike consolidation
+T6	Lesion-Anatomy 364 369;371 394	bases of the right upper lobe
+T7	Medical-Assertion 397 399	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 400 431	new focal parenchymal opacities
+T9	Medical-Problem 436 450	consolidations
+T10	Medical-Problem 453 472	Mild fluid overload
+E8	Medical-Problem:T10
+T11	Medical-Assertion 477 479	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 480 501	overt pulmonary edema
+T13	Medical-Problem 504 508;510 522	Mild cardiomegaly
+E10	Medical-Problem:T13
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Lesion-Description:T5 has-Lesion-Size-Trend:T4 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

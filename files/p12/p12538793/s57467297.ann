@@ -1,0 +1,26 @@
+T1	Medical-Problem 106 111;113 135	small  left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 140 142	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 143 172	acute cardiopulmonary process
+T4	Medical-Problem 174 180;182 204	Subtle  heterogeneous opacity
+T5	Medical-Anatomy 212 245	periphery of the right upper lung
+T6	Medical-Problem 265 288	superimposed structures
+T7	Medical-Problem 673 693;695 702	persistent increased opacity
+T8	Medical-Anatomy 710 743	periphery of the right upper lobe
+T9	Medical-Assertion 744 758	concerning for
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 759 768	pneumonia
+T11	Medical-Problem 797 823	new right pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 828 845;847 874	increased size of small left pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Assertion 930 932	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 933 945	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

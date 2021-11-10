@@ -1,0 +1,21 @@
+T1	Medical-Anatomy 207 212	lungs
+T2	Medical-Problem 217 230	hyperinflated
+T3	Medical-Assertion 235 240	clear
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 244 257	consolidation
+T5	Lesion-Description 259 276	Nodular opacities
+T6	Lesion-Anatomy 285 295	lung bases
+T7	Lesion-Anatomy 345 354	pulmonary
+T8	Lesion-Description 356 363	nodules
+T9	Medical-Problem 400 429	Mitral annular calcifications
+E8	Medical-Problem:T9
+T10	Medical-Problem 448 483	Old healed left lower rib fractures
+E9	Medical-Problem:T10
+T11	Medical-Assertion 519 521	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 522 551	acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

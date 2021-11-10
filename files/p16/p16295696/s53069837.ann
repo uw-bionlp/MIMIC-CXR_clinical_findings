@@ -1,0 +1,18 @@
+T1	Medical-Problem 336 346	tortuosity
+T2	Medical-Anatomy 354 362	thoracic
+T3	Medical-Problem 392 399;401 418	minimal streaky opacities
+T4	Medical-Anatomy 426 449	lower lungs bilaterally
+T5	Medical-Assertion 461 463	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 464 471;473 481	pleural effusion
+T7	Medical-Problem 485 497	pneumothorax
+T8	Medical-Problem 568 595	Bibasilar streaky opacities
+E7	Medical-Problem:T8
+T9	Medical-Assertion 597 603	likely
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 604 615	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

@@ -1,0 +1,28 @@
+T1	Medical-Problem 521 540	pulmonary pathology
+T2	Medical-Assertion 544 551	limited
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 651 660;662 671	bilateral opacities
+T4	Medical-Anatomy 679 696	perihilar regions
+T5	Medical-Anatomy 701 734;736 742	projecting over the cardiophrenic angles
+T6	Medical-Problem 794 805	obscuration
+T7	Medical-Anatomy 814 839	left hemidiaphragm margin
+T8	Medical-Assertion 847 853	may be
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 856 887	small layering pleural effusion
+T10	Medical-Anatomy 896 900	left
+T11	Medical-Assertion 919 930	no evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 934 946	pneumothorax
+T13	Medical-Problem 1088 1130	Bilateral opacities, left worse than right
+E10	Medical-Problem:T13
+T14	Medical-Assertion 1132 1145	may represent
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1146 1155	infection
+T16	Medical-Problem 1164 1174	aspiration
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14

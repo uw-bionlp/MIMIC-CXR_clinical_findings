@@ -1,0 +1,19 @@
+T1	Medical-Problem 298 312	hyperexpansion
+T2	Medical-Anatomy 320 325	lungs
+T3	Medical-Assertion 330 341	no evidence
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 346 361	acute pneumonia
+T5	Medical-Problem 363 382	vascular congestion
+T6	Medical-Problem 387 403	pleural effusion
+T7	Medical-Assertion 420 422	no
+A2	Medical-AssertionValue T7 absent
+T8	Lesion-Anatomy 424 429	hilar
+T9	Lesion-Anatomy 433 444	mediastinal
+T10	Lesion-Description 445 460	lymphadenopathy
+T11	Medical-Problem 489 500	sarcoidosis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T7

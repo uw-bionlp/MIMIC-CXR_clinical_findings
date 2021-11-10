@@ -1,0 +1,35 @@
+T1	Medical-Assertion 236 238	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 240 258	symptoms active tb
+T3	Medical-Problem 294 312	atypical pneumonia
+E2	Medical-Problem:T3
+T4	Medical-Problem 471 493;495 510	interstitial pulmonary opacification (
+E3	Medical-Problem:T4
+T5	Lesion-Count 544 547	few
+T6	Lesion-Characteristic 548 556	punctate
+T7	Lesion-Characteristic 557 566	calcified
+T8	Lesion-Description 568 578	granulomas
+T9	Lesion-Anatomy 586 605	right mid lung zone
+T10	Lesion-Size-Trend 609 618	unchanged
+A2	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 664 666	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 667 688;690 703	new areas of airspace consolidation
+T13	Medical-Assertion 706 708	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 709 726	pleural effusions
+T15	Lesion-Assertion 729 731	No
+A5	Lesion-AssertionValue T15 absent
+T16	Lesion-Anatomy 732 737	hilar
+T17	Lesion-Description 738 748	adenopathy
+T18	Medical-Problem 797 837	previous interstitial pulmonary fibrosis
+E13	Medical-Problem:T18
+T19	Medical-Assertion 840 842;844 863	No findings to suggest
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 864 883	active pulmonary TB
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E7	Lesion-Description:T8 has-Lesion-Count:T5 has-Lesion-Characteristic:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Lesion-Description:T17 has-Lesion-Assertion:T15 has-Lesion-Anatomy:T16
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

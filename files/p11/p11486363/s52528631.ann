@@ -1,0 +1,19 @@
+T1	Medical-Problem 229 263;265 281	interval progression of multifocal bronchopneumonia
+E1	Medical-Problem:T1
+T2	Medical-Problem 288 302	hazy opacities
+T3	Medical-Anatomy 318 336	perihilar regions,
+T4	Medical-Anatomy 342 360	middle/lower lobes
+T5	Medical-Problem 368 395	bilateral pleural effusions
+E5	Medical-Problem:T5
+T6	Medical-Problem 481 514	worsening of multifocal opacities
+E6	Medical-Problem:T6
+T7	Medical-Assertion 516 527	most likely
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 529 545	bronchopneumonia
+T9	Lesion-Characteristic 554 563	recurrent
+T10	Lesion-Description 564 572	lymphoma
+T11	Lesion-Assertion 573 576	can
+A2	Lesion-AssertionValue T11 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T10 has-Lesion-Characteristic:T9 has-Lesion-Assertion:T11

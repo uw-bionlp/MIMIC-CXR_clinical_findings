@@ -1,0 +1,48 @@
+T1	Medical-Problem 239 258	Ill-defined opacity
+T2	Medical-Anatomy 266 282;284 291	left base on the frontal
+T3	Medical-Assertion 339 350	may reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 354 373	pericardial fat pad
+T5	Medical-Anatomy 379 384	heart
+T6	Medical-Assertion 388 391	not
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 392 400	enlarged
+T8	Medical-Problem 446 459	Mild blunting
+T9	Medical-Anatomy 467 496	posterior costophrenic sulcus
+T10	Medical-Assertion 497 508	may reflect
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 512 545	small pleural effusion of unclear
+T12	Medical-Assertion 567 569	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 570 582	pneumothorax
+T14	Medical-Problem 589 608	curvilinear opacity
+T15	Medical-Anatomy 609 650	just under the medial right hemidiaphragm
+T16	Medical-Problem 662 671	contained
+E12	Medical-Problem:T16
+T17	Medical-Problem 709 722	Faint opacity
+T18	Medical-Anatomy 730 739	left base
+T19	Medical-Assertion 740 755	likely reflects
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 756 775	pericardial fat pad
+T21	Medical-Assertion 777 781;783 789	less likely
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 790 799	pneumonia
+T23	Medical-Problem 805 824	Curvilinear opacity
+T24	Medical-Anatomy 832 858	medial right hemidiaphragm
+T25	Medical-Problem 869 878	contained
+E19	Medical-Problem:T25
+T26	Medical-Problem 894 918	Intraperitoneal free air
+T27	Medical-Assertion 922 942	difficult to exclude
+A7	Medical-AssertionValue T27 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E16	Medical-Problem:T22 has-Medical-Anatomy:T18 has-Medical-Assertion:T19 has-Medical-Assertion:T21
+E17	Medical-Problem:T23 has-Medical-Anatomy:T24
+E20	Medical-Problem:T26 has-Medical-Assertion:T27

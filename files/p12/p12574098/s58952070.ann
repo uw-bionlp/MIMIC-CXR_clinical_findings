@@ -1,0 +1,15 @@
+T1	Medical-Assertion 218 220	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 221 233	pneumothorax
+T3	Medical-Problem 237 254	pneumomediastinum
+T4	Medical-Problem 270 279;281 292	Bibasilar atelectasis
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 357 368	upper lobes
+T6	Lesion-Description 369 376	nodules
+T7	Medical-Assertion 444 446	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 447 465	complication after
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

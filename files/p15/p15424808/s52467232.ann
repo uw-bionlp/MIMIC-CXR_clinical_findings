@@ -1,0 +1,41 @@
+T1	Lesion-Characteristic 215 225	spiculated
+T2	Lesion-Description 226 232	lesion
+T3	Lesion-Anatomy 241 261	left upper lung zone
+T4	Lesion-Characteristic 269 282	fiducial seed
+T5	Lesion-Description 289 295	lesion
+T6	Lesion-Size 320 332	3.7 x 1.4 cm
+T7	Lesion-Size-Trend 341 374	not significantly changed in size
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 411 413	No
+A2	Medical-AssertionValue T8 absent
+T9	Lesion-Size-Trend 414 417	new
+A3	Lesion-Size-TrendValue T9 new
+T10	Lesion-Description 418 422	mass
+T11	Medical-Problem 426 439	consolidation
+T12	Medical-Assertion 466 468	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 469 484	pulmonary edema
+T14	Medical-Problem 486 502	pleural effusion
+T15	Medical-Problem 507 519	pneumothorax
+T16	Medical-Problem 526 534;536 555	heart is moderately enlarged
+E12	Medical-Problem:T16
+T17	Lesion-Size-Trend 736 742	Stable
+A5	Lesion-Size-TrendValue T17 no-change
+T18	Lesion-Anatomy 743 758	left upper lobe
+T19	Lesion-Description 759 763	mass
+T20	Medical-Assertion 770 781	No evidence
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 785 794	pneumonia
+T22	Medical-Problem 798 813	pulmonary edema
+T23	Medical-Problem 820 848	Stable moderate cardiomegaly
+E17	Medical-Problem:T23
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T6
+E7	Lesion-Description:T10 has-Lesion-Size-Trend:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T12
+E14	Lesion-Description:T19 has-Lesion-Size-Trend:T17 has-Lesion-Anatomy:T18
+E15	Medical-Problem:T21 has-Medical-Assertion:T20
+E16	Medical-Problem:T22 has-Medical-Assertion:T20

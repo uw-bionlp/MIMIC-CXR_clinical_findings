@@ -1,0 +1,30 @@
+T1	Medical-Problem 581 598	confluent opacity
+T2	Medical-Anatomy 610 625	right lung base
+T3	Medical-Assertion 639 642;644 659	may be secondary to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 660 686	asymmetric pulmonary edema
+T5	Medical-Problem 690 710	aspiration/infection
+T6	Medical-Assertion 723 725	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 726 748	large pleural effusion
+T8	Medical-Assertion 753 755	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 756 768	pneumothorax
+T10	Medical-Problem 941 976	Improved lung parenchymal opacities
+E7	Medical-Problem:T10
+T11	Medical-Problem 982 997	decreased edema
+E8	Medical-Problem:T11
+T12	Medical-Problem 1000 1010;1012 1025	Persistent consolidation
+T13	Medical-Anatomy 1033 1049	right lower lobe
+T14	Medical-Assertion 1050 1061	may reflect
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1062 1078	asymmetric edema
+T16	Medical-Problem 1087 1107	aspiration/infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

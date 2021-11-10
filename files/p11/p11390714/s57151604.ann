@@ -1,0 +1,26 @@
+T1	Medical-Problem 200 206;208 239	subtle increased heterogeneous opacity
+T2	Medical-Anatomy 240 284;286 322	near the left costophrenic angle, projecting over the lower thoracic spine on the
+T3	Medical-Assertion 344 352	possibly
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 353 364	atelectasis
+T5	Medical-Problem 376 391	early pneumonia
+T6	Medical-Assertion 395 407	not excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 514 516	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 518 535	pleural effusions
+T9	Medical-Assertion 538 540	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 541 553	pneumothorax
+T11	Medical-Anatomy 571 586	Left lower lobe
+T12	Medical-Problem 587 606	minimal atelectasis
+T13	Medical-Assertion 607 613	versus
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 614 629	early pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Anatomy:T11 has-Medical-Assertion:T13
+E9	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T13

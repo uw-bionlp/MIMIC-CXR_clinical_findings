@@ -1,0 +1,31 @@
+T1	Medical-Problem 302 324	heart remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 337 355	new patchy opacity
+T3	Medical-Anatomy 363 378	right lung base
+T4	Medical-Anatomy 397 411	left lung base
+T5	Medical-Assertion 419 434	could represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 435 446	atelectasis
+T7	Medical-Problem 456 477	developing infiltrate
+T8	Medical-Assertion 478 487;489 497	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 509 511	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 512 528	pleural effusion
+T11	Medical-Problem 532 544	pneumothorax
+T12	Medical-Problem 565 574	Opacities
+T13	Medical-Anatomy 578 613	both lung bases greater on the left
+T14	Medical-Assertion 620 635	could represent
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 637 648	atelectasis
+T16	Medical-Problem 658 671	consolidation
+T17	Medical-Assertion 672 690	cannot be excluded
+A5	Medical-AssertionValue T17 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14 has-Medical-Assertion:T17

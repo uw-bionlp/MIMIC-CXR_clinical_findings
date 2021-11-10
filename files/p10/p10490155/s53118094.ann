@@ -1,0 +1,36 @@
+T1	Medical-Assertion 244 246	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 247 273	additional interval change
+T3	Medical-Assertion 340 342	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 343 355	pneumothorax
+T5	Medical-Problem 942 949	opacity
+T6	Medical-Anatomy 957 968;970 974	right lower lobe
+T7	Medical-Assertion 978 984	likely
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 985 1001	pleural effusion
+T9	Medical-Problem 1006 1019	consolidation
+T10	Medical-Problem 1026 1038	interstitial
+E7	Medical-Problem:T10
+T11	Medical-Problem 1039 1044	edema
+E8	Medical-Problem:T11
+T12	Medical-Problem 1050 1077	left lower lobe atelectasis
+E9	Medical-Problem:T12
+T13	Medical-Assertion 1101 1103	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1104 1116	pneumothorax
+T15	Medical-Problem 1304 1311	opacity
+T16	Medical-Anatomy 1319 1335	right lower lobe
+T17	Medical-Assertion 1339 1345	likely
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1346 1362	pleural effusion
+T19	Medical-Problem 1368 1381	consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E14	Medical-Problem:T19 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

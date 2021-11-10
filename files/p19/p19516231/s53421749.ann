@@ -1,0 +1,19 @@
+T1	Medical-Problem 80 97	Pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 210 231;233 240	perihilar parenchymal opacity
+T3	Medical-Anatomy 248 253	right
+T4	Medical-Problem 267 278	atelectasis
+T5	Medical-Anatomy 286 301	right lung apex
+T6	Medical-Assertion 372 374	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 375 381;383 391	larger effusion
+T8	Medical-Anatomy 451 455;457 479	lung parenchyma on the left
+T9	Medical-Assertion 582 584	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 585 600;602 611	new parenchymal opacities
+T11	Medical-Problem 614 672	Unchanged dimension of the apical pleural fluid collection
+E9	Medical-Problem:T11
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

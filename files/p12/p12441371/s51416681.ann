@@ -1,0 +1,31 @@
+T1	Medical-Problem 263 278	Pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 309 330	greater opacification
+T3	Medical-Anatomy 359 372	left mid lung
+T4	Medical-Anatomy 410 427	mediastinal veins
+T5	Medical-Problem 436 444	engorged
+T6	Medical-Problem 470 480;482 491	increasing infection
+T7	Medical-Problem 513 528	recurrent edema
+T8	Lesion-Count 532 540	Multiple
+T9	Lesion-Size 541 546	small
+T10	Lesion-Anatomy 547 551	lung
+T11	Lesion-Description 552 559	nodules
+T12	Medical-Assertion 577 580	not
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 581 588	abscess
+T14	Medical-Problem 595 603	evidence
+E13	Medical-Problem:T14
+T15	Medical-Problem 607 620	septic emboli
+T16	Medical-Problem 622 635;637 653	Moderate left pleural effusion
+E15	Medical-Problem:T16
+T17	Medical-Assertion 674 676	No
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 677 689	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T4
+E11	Lesion-Description:T11 has-Lesion-Count:T8 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T10
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E14	Medical-Problem:T15 has-Medical-Assertion:T12
+E16	Medical-Problem:T18 has-Medical-Assertion:T17

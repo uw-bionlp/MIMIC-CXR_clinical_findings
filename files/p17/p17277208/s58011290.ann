@@ -1,0 +1,28 @@
+T1	Medical-Assertion 234 236	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 237 283	re-accumulation of bilateral pleural effusions
+T3	Lesion-Count 338 346	Multiple
+T4	Lesion-Anatomy 347 356	bilateral
+T5	Lesion-Description 357 364	nodules
+T6	Lesion-Size-Trend 405 443	overall similar in size and appearance
+A2	Lesion-Size-TrendValue T6 no-change
+T7	Lesion-Anatomy 471 492	right paramediastinal
+T8	Lesion-Description 493 499	lesion
+T9	Medical-Assertion 566 568	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 569 581	pneumothorax
+T11	Medical-Problem 585 604	focal consolidation
+T12	Medical-Assertion 660 662	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 663 709	re-accumulation of bilateral pleural effusions
+T14	Lesion-Count 716 724	Multiple
+T15	Lesion-Anatomy 725 734	bilateral
+T16	Lesion-Anatomy 746 755	pulmonary
+T17	Lesion-Description 756 763	nodules
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Count:T3 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T6
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Lesion-Description:T17 has-Lesion-Count:T14 has-Lesion-Anatomy:T15 has-Lesion-Anatomy:T16

@@ -1,0 +1,27 @@
+T1	Medical-Problem 174 203	heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 273 294	pulmonary vascularity
+T3	Medical-Assertion 298 301	not
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 302 310	engorged
+T5	Medical-Assertion 313 315	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 316 321;323 336	focal consolidation
+T7	Medical-Problem 338 354	pleural effusion
+T8	Medical-Problem 358 370	pneumothorax
+T9	Medical-Anatomy 388 399;401 409	distal left clavicle
+T10	Medical-Anatomy 414 437	several left-sided ribs
+T11	Medical-Problem 450 469	increased sclerosis
+T12	Medical-Assertion 532 534	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 535 568	acute cardiopulmonary abnormality
+T14	Lesion-Characteristic 571 580	Sclerotic
+T15	Lesion-Description 581 588	lesions
+T16	Lesion-Anatomy 600 606	thorax
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Lesion-Description:T15 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T16

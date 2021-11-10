@@ -1,0 +1,24 @@
+T1	Medical-Problem 393 411	New leftward shift
+T2	Medical-Anatomy 419 430	mediastinum
+T3	Medical-Assertion 431 439	suggests
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 440 465	progressive consolidation
+T5	Medical-Anatomy 474 488	left lung base
+T6	Medical-Problem 516 527	atelectasis
+T7	Medical-Problem 554 564	aspiration
+T8	Medical-Problem 568 587	retained secretions
+T9	Medical-Problem 592 625	Moderately severe pulmonary edema
+T10	Medical-Anatomy 633 651	right lung, milder
+T11	Medical-Anatomy 659 668	left lung
+T12	Medical-Problem 686 743	moderate right and slightly smaller left pleural effusion
+E11	Medical-Problem:T12
+T13	Medical-Assertion 760 762	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 763 775	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,33 @@
+T1	Medical-Problem 300 308;310 318	aorta is tortuous
+E1	Medical-Problem:T1
+T2	Lesion-Size 323 329	2.9 cm
+T3	Lesion-Description 330 337	opacity
+T4	Lesion-Anatomy 345 355	right apex
+T5	Medical-Problem 361 383	associated volume loss
+E5	Medical-Problem:T5
+T6	Lesion-Size-Trend 388 397	unchanged
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Assertion 402 415	attributed to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 416 456	scarring from previous radiation therapy
+T9	Medical-Problem 462 476	patchy opacity
+T10	Medical-Anatomy 484 493	left base
+T11	Medical-Assertion 512 514	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 515 531	pleural effusion
+T13	Medical-Problem 535 540;542 562	acute skeletal abnormality
+T14	Medical-Problem 583 614	New patchy left basilar opacity
+E11	Medical-Problem:T14
+T15	Medical-Assertion 618 632	suspicious for
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 633 648	early pneumonia
+T17	Medical-Problem 706 718	focal nature
+E13	Medical-Problem:T17
+T18	Lesion-Description 877 885	neoplasm
+E14	Lesion-Description:T18
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

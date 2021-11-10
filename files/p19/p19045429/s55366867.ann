@@ -1,0 +1,25 @@
+T1	Medical-Problem 268 288	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Assertion 300 302	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 303 322	focal consolidation
+T4	Medical-Assertion 325 327	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 328 335;337 345	pleural effusion
+T6	Medical-Problem 349 361	pneumothorax
+T7	Medical-Problem 371 375	Mild
+E5	Medical-Problem:T7
+T8	Medical-Problem 376 388	cardiomegaly
+E6	Medical-Problem:T8
+T9	Medical-Problem 417 425	Multiple
+E7	Medical-Problem:T9
+T10	Lesion-Characteristic 426 435	calcified
+T11	Lesion-Description 436 446	granulomas
+T12	Medical-Assertion 510 512	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 513 532	focal consolidation
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

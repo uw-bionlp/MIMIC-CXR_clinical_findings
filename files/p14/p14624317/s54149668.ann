@@ -1,0 +1,16 @@
+T1	Medical-Problem 291 313;315 319	small amount of volume loss
+T2	Medical-Anatomy 327 332	bases
+T3	Medical-Anatomy 405 414	left lung
+E3	Medical-Anatomy:T3
+T4	Lesion-Assertion 430 447	likely represents
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Size 450 455	small
+T6	Lesion-Description 457 466	granuloma
+T7	Medical-Problem 530 545	pulmonary edema
+T8	Medical-Assertion 546 558	has resolved
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 567 591	tiny bilateral effusions
+E7	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Size-Present:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T8

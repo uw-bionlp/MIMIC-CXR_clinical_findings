@@ -1,0 +1,29 @@
+T1	Medical-Problem 164 181	area of pneumonia
+T2	Medical-Anatomy 190 200	right base
+T3	Medical-Assertion 201 212	has cleared
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 225 252	mild areas of opacification
+T5	Medical-Anatomy 256 266	both bases
+T6	Medical-Assertion 275 296	most likely represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 317 328	atelectasis
+T8	Medical-Problem 333 341	scarring
+T9	Medical-Problem 345 353	Blunting
+T10	Medical-Anatomy 361 384	left costophrenic angle
+T11	Medical-Assertion 395 415	possibly relating to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 416 423;425 433	pleural scarring
+T13	Medical-Problem 473 494	supervening pneumonia
+E10	Medical-Problem:T13
+T14	Medical-Assertion 537 548	no evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 552 581	pulmonary vascular congestion
+T16	Medical-Problem 585 597	cardiomegaly
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14

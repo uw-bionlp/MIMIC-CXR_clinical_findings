@@ -1,0 +1,41 @@
+T1	Medical-Problem 148 177;179 187	extensive left -sided pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 193 216	compressive atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 221 241	underlying pneumonia
+T4	Medical-Assertion 242 251;253 261	cannot be excluded
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 265 292	tiny right pleural effusion
+T6	Medical-Assertion 293 312	may also be present
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 318 325;327 337	cardiac silhouette
+E5	Medical-Problem:T7
+T8	Medical-Problem 343 359	appears enlarged
+E6	Medical-Problem:T8
+T9	Medical-Problem 429 451	large pleural effusion
+E7	Medical-Problem:T9
+T10	Medical-Anatomy 458 468	right lung
+T11	Medical-Problem 482 497	focal opacities
+T12	Medical-Assertion 498 507	worrisome
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 512 521	pneumonia
+T14	Medical-Assertion 532 534	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 535 547	pneumothorax
+T16	Medical-Problem 570 603	Large left-sided pleural effusion
+E12	Medical-Problem:T16
+T17	Medical-Problem 609 631	underlying atelectasis
+T18	Medical-Problem 633 643;645 658	underlying consolidation
+T19	Medical-Assertion 662 674	not excluded
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 717 745	enlarging cardiac silhouette
+T21	Medical-Assertion 747 752	query
+A6	Medical-AssertionValue T21 possible
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T19
+E14	Medical-Problem:T18 has-Medical-Assertion:T19
+E15	Medical-Problem:T20 has-Medical-Assertion:T21

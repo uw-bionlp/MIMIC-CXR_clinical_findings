@@ -1,0 +1,22 @@
+T1	Medical-Problem 528 551	Increasing hazy opacity
+T2	Medical-Anatomy 559 573	left lung base
+T3	Medical-Problem 579 590	obscuration
+T4	Medical-Anatomy 598 602;604 617	left hemidiaphragm
+T5	Medical-Assertion 618 629	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 632 657	layering pleural effusion
+T7	Medical-Problem 663 672;674 685	subjacent atelectasis
+T8	Medical-Assertion 736 738	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 739 751	pneumothorax
+T10	Medical-Problem 784 825	Increasing left layering pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 831 852	subjacent atelectasis
+E9	Medical-Problem:T11
+T12	Medical-Problem 869 884	interval change
+E10	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

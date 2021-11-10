@@ -1,0 +1,33 @@
+T1	Medical-Assertion 273 280	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 281 297	pleural effusion
+T3	Medical-Problem 299 318	focal consolidation
+T4	Medical-Problem 322 334	pneumothorax
+T5	Medical-Assertion 347 349	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 350 365	pulmonary edema
+T7	Medical-Problem 422 446	Heart is mildly enlarged
+E5	Medical-Problem:T7
+T8	Medical-Problem 472 495	Small rounded densities
+T9	Medical-Anatomy 513 528	right lung base
+T10	Lesion-Assertion 530 538	presumed
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 539 549	granulomas
+T12	Lesion-Size-Trend 551 560	unchanged
+A4	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 582 593	No evidence
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 597 626	acute cardiopulmonary process
+T15	Medical-Assertion 638 640	no
+A6	Medical-AssertionValue T15 absent
+T16	Medical-Problem 641 650;652 657	pulmonary edema
+T17	Medical-Problem 664 681	Mild cardiomegaly
+E11	Medical-Problem:T17
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Lesion-Description:T11 has-Lesion-Assertion:T10 has-Lesion-Size-Trend:T12
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T16 has-Medical-Assertion:T15

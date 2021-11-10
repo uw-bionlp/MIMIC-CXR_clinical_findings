@@ -1,0 +1,30 @@
+T1	Medical-Problem 271 299	Lung volumes are still small
+E1	Medical-Problem:T1
+T2	Medical-Problem 311 314;316 340	new peripheral consolidation
+T3	Medical-Anatomy 348 371	mid and lower left lung
+T4	Medical-Assertion 419 427	could be
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 428 439	atelectasis
+T6	Medical-Problem 447 464;466 476	poor clearance of secretions
+T7	Medical-Assertion 482 500	raises concern for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 508 528	aspiration pneumonia
+T9	Medical-Problem 532 543;545 565	spontaneous pulmonary hemorrhage
+T10	Medical-Problem 585 614;616 624	associated small left pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 790 817	Retention of contrast agent
+T12	Medical-Anatomy 825 832	kidneys
+T13	Medical-Assertion 851 859	suggests
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 861 885	decreased renal function
+T15	Medical-Assertion 890 898	possible
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 899 919	ureteral obstruction
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T4 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T13 has-Medical-Assertion:T15

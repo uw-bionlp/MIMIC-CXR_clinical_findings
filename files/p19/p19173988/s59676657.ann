@@ -1,0 +1,54 @@
+T1	Medical-Assertion 398 400	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 401 416;418 429	configurational abnormality
+T3	Medical-Assertion 531 534	not
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 535 544	congested
+T5	Medical-Problem 621 628;630 647	pleural effusion blunting
+T6	Medical-Anatomy 652 673	lateral pleural sinus
+T7	Medical-Problem 678 708;710 718	obliterating the diaphragmatic contours
+E5	Medical-Problem:T7
+T8	Medical-Problem 725 732	density
+T9	Medical-Anatomy 753 771	lateral chest wall
+T10	Medical-Problem 821 844	minor 2 mm wide density
+E8	Medical-Problem:T10
+T11	Medical-Assertion 859 861;863 871	no evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 879 894	air-fluid level
+T13	Medical-Anatomy 902 922	pleural space at any
+T14	Medical-Problem 932 935;937 949	new pneumothorax
+T15	Medical-Assertion 950 965	can be excluded
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Anatomy 972 1004	accessible pulmonary vasculature
+T17	Medical-Assertion 1005 1013;1015 1019	does not show
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1020 1042	any congestive pattern
+T19	Medical-Assertion 1047 1049	no
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1050 1071	new acute infiltrates
+T21	Medical-Problem 1158 1165;1167 1174	pleural density
+E15	Medical-Problem:T21
+T22	Medical-Problem 1504 1520	pleural effusion
+E16	Medical-Problem:T22
+T23	Medical-Problem 1721 1744	parenchymal abnormality
+T24	Medical-Anatomy 1752 1767	left lower lobe
+T25	Lesion-Anatomy 1830 1843	central liver
+T26	Lesion-Description 1844 1848	mass
+T27	Medical-Problem 1903 1912	Reduction
+E21	Medical-Problem:T27
+T28	Medical-Problem 1916 1943	left-sided pleural effusion
+E22	Medical-Problem:T28
+T29	Medical-Problem 1949 1954	still
+E23	Medical-Problem:T29
+T30	Medical-Problem 1955 1963;1965 2001	moderate degree of remaining pleural effusion
+E24	Medical-Problem:T30
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Assertion:T11 has-Medical-Anatomy:T13 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E14	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T23 has-Medical-Anatomy:T24
+E20	Lesion-Description:T26 has-Lesion-Anatomy:T25

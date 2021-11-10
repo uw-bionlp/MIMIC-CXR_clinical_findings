@@ -1,0 +1,35 @@
+T1	Lesion-Size 300 306	1.0 cm
+T2	Lesion-Anatomy 307 323	right upper lobe
+T3	Lesion-Size 326 332	1.3 cm
+T4	Lesion-Anatomy 333 349	right lower lobe
+T5	Lesion-Size 356 362	1.6 cm
+T6	Lesion-Anatomy 364 379	left infrahilar
+T7	Lesion-Description 380 387	nodules
+T8	Lesion-Size-Trend 399 406	similar
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Anatomy 477 487	lower lobe
+T10	Lesion-Description 488 495	nodules
+T11	Lesion-Size-Trend 500 503	new
+A2	Lesion-Size-TrendValue T11 new
+T12	Medical-Assertion 506 508	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 510 526	pleural effusion
+T14	Medical-Problem 530 542	pneumothorax
+T15	Lesion-Assertion 553 555	No
+A4	Lesion-AssertionValue T15 absent
+T16	Lesion-Size-Trend 556 559	new
+A5	Lesion-Size-TrendValue T16 new
+T17	Lesion-Anatomy 560 564	lung
+T18	Lesion-Description 565 572	nodules
+T19	Lesion-Count 603 608	Three
+T20	Lesion-Description 609 616	nodules
+T21	Lesion-Anatomy 624 658	right upper lobe and left mid lung
+T22	Lesion-Characteristic 665 741	concerning for an infectious process including fungal and nocardia infection
+T23	Lesion-Description 745 755	Malignancy
+E18	Lesion-Description:T23
+E7	Lesion-Description:T7 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Lesion-Description:T18 has-Lesion-Assertion:T15 has-Lesion-Size-Trend:T16 has-Lesion-Anatomy:T17
+E15	Lesion-Description:T20 has-Lesion-Count:T19 has-Lesion-Anatomy:T21 has-Lesion-Characteristic:T22

@@ -1,0 +1,22 @@
+T1	Lesion-Count 436 437	2
+T2	Lesion-Anatomy 438 448;450 454	left lower lobe
+T3	Lesion-Description 455 462	nodules
+T4	Lesion-Size 473 502	2.9 x 3.2 cm and 1.4 x 1.5 cm
+T5	Lesion-Anatomy 533 542	posterior
+T6	Lesion-Description 543 549	nodule
+T7	Lesion-Size 560 572	1.7 x 1.3 cm
+T8	Lesion-Description 622 628	nodule
+E8	Lesion-Description:T8
+T9	Medical-Assertion 682 684	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 685 704	focal consolidation
+T11	Medical-Problem 706 722	pleural effusion
+T12	Medical-Problem 727 739	pneumothorax
+T13	Lesion-Anatomy 770 779	bilateral
+T14	Lesion-Description 790 797	nodules
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Present:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T9
+E13	Lesion-Description:T14 has-Lesion-Anatomy:T13

@@ -1,0 +1,49 @@
+T1	Medical-Problem 317 330	Opacification
+T2	Medical-Anatomy 339 349	right lung
+T3	Medical-Assertion 350 362	has resolved
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 373 403;405 418	vague increase in interstitial opacification
+T5	Medical-Anatomy 426 435	left lung
+T6	Lesion-Size 446 451	small
+T7	Lesion-Description 452 459	nodular
+E6	Lesion-Description:T7
+T8	Lesion-Description 460 464	foci
+T9	Lesion-Anatomy 472 482;484 488	left upper lobe
+T10	Lesion-Characteristic 489 531	worrisome for a reurrent/chronic infection
+T11	Lesion-Size-Trend 533 536	new
+A2	Lesion-Size-TrendValue T11 new
+T12	Lesion-Count 584 587	few
+T13	Lesion-Description 588 595	nodular
+E11	Lesion-Description:T13
+T14	Lesion-Description 596 600	foci
+T15	Lesion-Anatomy 608 621	left mid lung
+T16	Medical-Assertion 652 654	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 655 671	pleural effusion
+T18	Medical-Problem 675 687	pneumothorax
+T19	Medical-Problem 708 724	Patchy opacities
+T20	Medical-Anatomy 732 741	left lung
+T21	Lesion-Anatomy 758 773	left upper lobe
+T22	Lesion-Description 779 786	nodular
+T23	Medical-Problem 804 828	distribution has shifted
+E20	Medical-Problem:T23
+T24	Medical-Problem 859 866;868 884	type of opacification is
+E21	Medical-Problem:T24
+T25	Medical-Assertion 908 920	may indicate
+A4	Medical-AssertionValue T25 possible
+T26	Medical-Problem 921 941	recurring aspiration
+T27	Medical-Assertion 982 994	possibilitiy
+A5	Medical-AssertionValue T27 possible
+T28	Medical-Problem 998 1016;1018 1034	community-acquired bronchopneumonia
+T29	Medical-Problem 1038 1056	atypical infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10 has-Lesion-Size-Trend:T11
+E12	Lesion-Description:T14 has-Lesion-Count:T12 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E19	Lesion-Description:T22 has-Lesion-Anatomy:T21
+E22	Medical-Problem:T26 has-Medical-Assertion:T25
+E23	Medical-Problem:T28 has-Medical-Assertion:T27
+E24	Medical-Problem:T29 has-Medical-Assertion:T27

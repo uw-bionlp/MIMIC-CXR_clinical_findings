@@ -1,0 +1,23 @@
+T1	Medical-Problem 103 126	Splenic vein thrombosis
+E1	Medical-Problem:T1
+T2	Medical-Assertion 141 149	Possible
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 151 168	volume overloaded
+T4	Medical-Problem 227 247	Mild pulmonary edema
+T5	Medical-Anatomy 268 295	left lung, not in the right
+T6	Medical-Problem 299 312	Opacification
+T7	Medical-Anatomy 316 355	both lung bases, particularly the right
+T8	Medical-Assertion 359 373	suspicious for
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 375 384	pneumonia
+T10	Medical-Assertion 386 393	perhaps
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 394 402	cavitary
+T12	Medical-Anatomy 410 452	infrahilar portion of the right lower lobe
+T13	Medical-Problem 592 609;611 614	Pleural effusions are
+E10	Medical-Problem:T13
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8 has-Medical-Assertion:T10 has-Medical-Anatomy:T12

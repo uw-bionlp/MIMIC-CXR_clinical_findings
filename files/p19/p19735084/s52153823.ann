@@ -1,0 +1,25 @@
+T1	Medical-Problem 246 263	Hydropneumothorax
+T2	Medical-Anatomy 284 304	upper lateral margin
+T3	Medical-Problem 312 317;319 329	fluid collection
+T4	Lesion-Anatomy 364 380	Right juxtahilar
+T5	Lesion-Description 381 390;392 399	mass-like opacity
+T6	Medical-Problem 449 452	now
+E6	Medical-Problem:T6
+T7	Medical-Problem 453 470	worsening opacity
+T8	Medical-Anatomy 479 495	right lower lobe
+T9	Medical-Assertion 497 518	which could be due to
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 519 529	aspiration
+T11	Medical-Problem 533 543;545 565	developing infectious pneumonia
+T12	Medical-Assertion 646 657	no evidence
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 661 682	left pleural effusion
+T14	Medical-Problem 686 690;692 704	left pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12

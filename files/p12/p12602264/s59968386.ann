@@ -1,0 +1,32 @@
+T1	Medical-Assertion 194 196	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 198 214	pleural effusion
+T3	Medical-Problem 218 230	pneumothorax
+T4	Medical-Problem 233 259	Bibasilar linear opacities
+E3	Medical-Problem:T4
+T5	Medical-Problem 281 292	atelectasis
+E4	Medical-Problem:T5
+T6	Medical-Problem 296 304	fibrosis
+E5	Medical-Problem:T6
+T7	Medical-Assertion 316 318	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 319 338	focal consolidation
+T9	Medical-Assertion 339 353	concerning for
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 355 364	pneumonia
+T11	Medical-Problem 385 404	small hiatal hernia
+E8	Medical-Problem:T11
+T12	Medical-Problem 409 424;426 436	severe kyphotic angulation
+T13	Medical-Anatomy 444 462	mid thoracic spine
+T14	Medical-Anatomy 530 550	lower thoracic spine
+T15	Medical-Problem 553 570;572 583	Right lateral rib deformities
+E12	Medical-Problem:T15
+T16	Medical-Assertion 617 619	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 620 649	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

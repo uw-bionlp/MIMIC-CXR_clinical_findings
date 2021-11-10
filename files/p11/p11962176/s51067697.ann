@@ -1,0 +1,27 @@
+T1	Medical-Problem 280 297	Mild cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Assertion 319 321	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 322 337	pulmonary edema
+T4	Medical-Problem 340 355;357 370	Small region of opacification
+T5	Medical-Anatomy 378 399	base of the left lung
+T6	Medical-Assertion 400 408	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 409 420	atelectasis
+T8	Lesion-Assertion 435 445	suggestion
+A3	Lesion-AssertionValue T8 possible
+T9	Lesion-Size-Trend 451 454	new
+A4	Lesion-Size-TrendValue T9 new
+T10	Lesion-Size 455 460	18 mm
+T11	Lesion-Description 466 472	nodule
+T12	Lesion-Anatomy 480 495	right lung base
+T13	Medical-Problem 620 636	Pleural effusion
+E9	Medical-Problem:T13
+T14	Medical-Assertion 654 656	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 657 669	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Lesion-Description:T11 has-Lesion-Assertion:T8 has-Lesion-Size-Trend:T9 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

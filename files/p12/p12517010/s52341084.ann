@@ -1,0 +1,37 @@
+T1	Medical-Problem 335 344	Elevation
+T2	Medical-Anatomy 352 370	left hemidiaphragm
+T3	Medical-Problem 389 404;406 417	mild left basal atelectasis
+T4	Lesion-Size 422 426	tiny
+T5	Lesion-Description 427 442	nodular opacity
+T6	Lesion-Anatomy 450 465	right lung base
+T7	Lesion-Assertion 466 471	could
+A1	Lesion-AssertionValue T7 possible
+T8	Lesion-Size 485 490	small
+T9	Lesion-Characteristic 491 500	calcified
+T10	Lesion-Description 501 510	granuloma
+T11	Medical-Assertion 513 535	No convincing evidence
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 540 549	pneumonia
+T13	Medical-Problem 553 558	edema
+T14	Medical-Problem 571 594	mild central congestion
+E12	Medical-Problem:T14
+T15	Medical-Assertion 597 599	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 600 614	large effusion
+T17	Medical-Problem 618 630	pneumothorax
+T18	Medical-Problem 659 677	Central congestion
+E15	Medical-Problem:T18
+T19	Medical-Problem 679 697	left basal opacity
+E16	Medical-Problem:T19
+T20	Medical-Assertion 698 704	likely
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 705 725	scarring atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T6 has-Lesion-Assertion:T7 has-Lesion-Size-Present:T8 has-Lesion-Characteristic:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

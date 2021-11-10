@@ -1,0 +1,42 @@
+T1	Medical-Problem 313 342	Bilateral air space opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 411 433;435 452	pulmonary edema, right greater than left
+E2	Medical-Problem:T2
+T3	Medical-Problem 493 512;514 532	extensive bilateral airspace opacities
+E3	Medical-Problem:T3
+T4	Lesion-Assertion 547 550	may
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Assertion 554 562	possible
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Size 563 568	small
+T7	Lesion-Characteristic 569 577	cavitary
+T8	Lesion-Description 578 585	lesions
+T9	Lesion-Anatomy 601 611	right lung
+T10	Medical-Problem 614 634	Underlying infection
+T11	Medical-Assertion 635 655	should be considered
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 704 706	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 707 723	pleural effusion
+T14	Medical-Problem 727 739	pneumothorax
+T15	Medical-Problem 772 825	Bilateral airspace opacities, right greater than left
+E11	Medical-Problem:T15
+T16	Medical-Assertion 826 833	suggest
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 834 845;847 869	moderate to severe pulmonary edema
+T18	Medical-Problem 872 892	Underlying infection
+T19	Medical-Assertion 893 913	should be considered
+A6	Medical-AssertionValue T19 possible
+T20	Lesion-Assertion 953 961	Possible
+A7	Lesion-AssertionValue T20 possible
+T21	Lesion-Size 962 967	small
+T22	Lesion-Characteristic 968 976	cavitary
+T23	Lesion-Description 977 984	lesions
+T24	Lesion-Anatomy 1000 1016	right upper lobe
+E6	Lesion-Description:T8 has-Lesion-Assertion:T4 has-Lesion-Assertion:T5 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Assertion:T19
+E16	Lesion-Description:T23 has-Lesion-Assertion:T20 has-Lesion-Size-Present:T21 has-Lesion-Characteristic:T22 has-Lesion-Anatomy:T24

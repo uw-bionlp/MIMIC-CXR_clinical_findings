@@ -1,0 +1,37 @@
+T1	Lesion-Characteristic 71 76	vague
+T2	Lesion-Description 77 84	nodular
+E2	Lesion-Description:T2
+T3	Lesion-Description 85 92	opacity
+T4	Lesion-Anatomy 113 123;125 129	left upper lobe
+T5	Lesion-Size 158 163	10 mm
+T6	Medical-Problem 183 190	opacity
+T7	Medical-Assertion 191 202;204 214	potentially represents
+A1	Medical-AssertionValue T7 possible
+T8	Lesion-Anatomy 222 226	lung
+T9	Lesion-Description 227 233	nodule
+T10	Medical-Problem 782 810	large right pleural effusion
+T11	Medical-Problem 816 838;840 851	associated compressive atelectasis
+T12	Medical-Anatomy 859 874	right lung base
+T13	Medical-Problem 880 888	effusion
+E12	Medical-Problem:T13
+T14	Medical-Problem 922 949	small left pleural effusion
+E13	Medical-Problem:T14
+T15	Medical-Problem 977 997;999 1010	minimal left basilar atelectasis
+E14	Medical-Problem:T15
+T16	Medical-Assertion 1145 1147	no
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1149 1161	pneumothorax
+T18	Medical-Problem 1246 1290	Large right and small left pleural effusions
+E16	Medical-Problem:T18
+T19	Medical-Problem 1299 1337	Moderate right and mild left opacities
+E17	Medical-Problem:T19
+T20	Medical-Assertion 1366 1371;1373 1380	could be seen
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1386 1428	associated compressive basilar atelectasis
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T4 has-Lesion-Size-Present:T5
+E6	Medical-Problem:T6 has-Medical-Assertion:T7
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T12
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E18	Medical-Problem:T21 has-Medical-Assertion:T20

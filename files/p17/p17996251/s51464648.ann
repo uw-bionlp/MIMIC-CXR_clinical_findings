@@ -1,0 +1,24 @@
+T1	Medical-Problem 278 287	Skin fold
+T2	Medical-Anatomy 308 323	left hemithorax
+T3	Medical-Assertion 324 346	should not be mistaken
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 352 364	pneumothorax
+T5	Medical-Anatomy 367 382	Left lower lobe
+T6	Medical-Problem 386 412	still densely consolidated
+T7	Medical-Problem 415 426;428 441	Less severe consolidation
+T8	Medical-Anatomy 449 464	right lung base
+T9	Medical-Assertion 489 495	likely
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 497 508	atelectasis
+T11	Medical-Problem 570 578	Widening
+T12	Medical-Anatomy 586 603	upper mediastinum
+T13	Medical-Problem 631 641	adenopathy
+E11	Medical-Problem:T13
+T14	Medical-Problem 647 662	mediastinal fat
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12

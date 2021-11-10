@@ -1,0 +1,30 @@
+T1	Medical-Assertion 344 346	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 347 366	focal consolidation
+T3	Medical-Problem 379 394	lobar pneumonia
+T4	Medical-Problem 397 428	Streaky right lung base opacity
+E3	Medical-Problem:T4
+T5	Medical-Assertion 429 446	likely represents
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 448 459	atelectasis
+T7	Medical-Problem 480 510	lobulated hyperdense structure
+T8	Medical-Anatomy 532 567	lower thoracic spine on the lateral
+T9	Medical-Anatomy 587 604;606 608	left heart border on
+T10	Medical-Problem 650 674	calcified pleural plaque
+T11	Medical-Assertion 718 720	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 721 746	subdiaphragmatic free air
+T13	Medical-Assertion 749 751	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 753 780	acute osseous abnormalities
+T15	Medical-Assertion 812 823	No evidence
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 827 842	focal pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

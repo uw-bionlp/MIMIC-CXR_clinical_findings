@@ -1,0 +1,42 @@
+T1	Medical-Problem 340 356	linear opacities
+T2	Medical-Anatomy 364 379	right lung base
+T3	Medical-Problem 386 403	streaky opacities
+T4	Medical-Anatomy 421 447	retrocardiac region on the
+T5	Medical-Problem 482 493	atelectasis
+T6	Medical-Problem 495 503	scarring
+T7	Medical-Problem 508 517	infection
+T8	Medical-Problem 519 536	Increased density
+T9	Medical-Anatomy 545 583	inferolateral aspect of the right lung
+T10	Medical-Anatomy 588 619;621 634	potentially posterior aspect of the left lung
+T11	Medical-Assertion 635 650	could relate to
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 651 669	pleural thickening
+T13	Medical-Assertion 681 683	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 684 691;693 701	pleural effusion
+T15	Medical-Assertion 706 708	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 709 721	pneumothorax
+T17	Medical-Problem 840 858	Pleural thickening
+T18	Medical-Anatomy 869 915;917 926	lateral aspect of the right lung and posterior left lung
+T19	Medical-Problem 932 960	underlying streaky opacities
+T20	Medical-Anatomy 968 978	right base
+T21	Medical-Assertion 979 992	could reflect
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 994 1002	scarring
+T23	Medical-Problem 1004 1015	atelectasis
+T24	Medical-Problem 1019 1028	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E20	Medical-Problem:T24 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

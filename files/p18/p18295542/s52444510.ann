@@ -1,0 +1,37 @@
+T1	Medical-Problem 213 243	Bilateral lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 246 259	Large opacity
+T3	Medical-Anatomy 267 282	left upper lung
+T4	Medical-Assertion 287 301	concerning for
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 302 311	pneumonia
+T6	Lesion-Description 337 348	mass lesion
+T7	Lesion-Assertion 349 364;366 369	cannot be ruled out
+A2	Lesion-AssertionValue T7 possible
+T8	Medical-Problem 372 399	Left-sided pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Problem 470 485	Minimal opacity
+T10	Medical-Anatomy 493 508	right lung base
+T11	Medical-Assertion 512 518	likely
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 520 531	atelectasis
+T13	Medical-Problem 556 591	Large left upper lung consolidation
+E10	Medical-Problem:T13
+T14	Medical-Assertion 595 601	likely
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 602 611	pneumonia
+T16	Lesion-Assertion 625 636	possibility
+A5	Lesion-AssertionValue T16 possible
+T17	Lesion-Anatomy 640 644	lung
+T18	Lesion-Description 645 649	mass
+T19	Medical-Problem 807 834	Small left pleural effusion
+E14	Medical-Problem:T19
+T20	Medical-Problem 839 872	mild right lower lung atelectasis
+E15	Medical-Problem:T20
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Lesion-Description:T6 has-Lesion-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Lesion-Description:T18 has-Lesion-Assertion:T16 has-Lesion-Anatomy:T17

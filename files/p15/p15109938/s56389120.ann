@@ -1,0 +1,27 @@
+T1	Medical-Problem 245 260	new indentation
+T2	Medical-Anatomy 268 292	left side of the trachea
+T3	Lesion-Description 304 308	mass
+T4	Lesion-Anatomy 326 343	left thyroid lobe
+T5	Medical-Assertion 355 357	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 358 365;367 380	pleural abnormalities
+T7	Medical-Problem 383 419	Mild multilevel degenerative changes
+T8	Medical-Anatomy 427 440;442 447	thoracolumbar spine
+T9	Medical-Assertion 474 476	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 477 511	acute cardiac or pulmonary process
+T11	Lesion-Size-Trend 513 516	New
+A3	Lesion-Size-TrendValue T11 new
+T12	Lesion-Anatomy 517 526	left neck
+T13	Lesion-Description 527 531	mass
+T14	Medical-Assertion 533 538;540 542	could be
+A4	Medical-AssertionValue T14 possible
+T15	Lesion-Anatomy 543 550	thyroid
+T16	Lesion-Description 551 557	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T13 has-Lesion-Size-Trend:T11 has-Lesion-Anatomy:T12
+E12	Lesion-Description:T16 has-Lesion-Anatomy:T15

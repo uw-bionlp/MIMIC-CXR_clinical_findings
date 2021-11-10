@@ -1,0 +1,30 @@
+T1	Medical-Assertion 253 255	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 256 268	pneumothorax
+T3	Medical-Problem 272 288	pleural effusion
+T4	Medical-Problem 302 306;308 325	hazy veil-like opacity
+T5	Medical-Anatomy 333 354	right upper lung zone
+T6	Medical-Assertion 361 367	may be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 368 381	consolidation
+T8	Medical-Problem 384 395	atelectasis
+T9	Medical-Problem 399 407	artifact
+T10	Medical-Problem 410 437	Heart size appears enlarged
+E8	Medical-Problem:T10
+T11	Medical-Problem 550 562	hazy opacity
+T12	Medical-Anatomy 570 595	right upper and mid lungs
+T13	Medical-Assertion 603 609	may be
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 610 632	infectious in etiology
+T15	Medical-Problem 634 645	atelectasis
+T16	Medical-Problem 649 657	artifact
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

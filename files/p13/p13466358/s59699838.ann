@@ -1,0 +1,43 @@
+T1	Medical-Assertion 60 68	Possible
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 69 78	pneumonia
+T3	Medical-Assertion 80 90	limited on
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 106 124	infectious process
+T5	Medical-Problem 269 310	asymmetric prominence of the interstitial
+E3	Medical-Problem:T5
+T6	Medical-Anatomy 340 356	lower lung zones
+T7	Medical-Problem 386 395;397 402	pulmonary edema
+T8	Medical-Assertion 417 432	may also be due
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 436 445	infection
+T10	Medical-Problem 505 514	opacities
+E7	Medical-Problem:T10
+T11	Lesion-Description 594 598	mass
+T12	Lesion-Anatomy 606 626;628 633	lower pole of either hilum
+T13	Lesion-Assertion 634 652	cannot be excluded
+A4	Lesion-AssertionValue T13 possible
+T14	Medical-Problem 663 680	mild cardiomegaly
+E10	Medical-Problem:T14
+T15	Medical-Assertion 683 685	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 686 698	pneumothorax
+T17	Medical-Problem 754 789	Asymmetric interstitial abnormality
+E12	Medical-Problem:T17
+T18	Medical-Assertion 796 809	may be due to
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 810 825	pulmonary edema
+T20	Medical-Problem 837 846	infection
+T21	Medical-Problem 850 876	other interstitial process
+T22	Lesion-Description 922 926	mass
+T23	Lesion-Anatomy 934 954;956 961	lower pole of either hilum
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Assertion:T3
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E8	Lesion-Description:T11 has-Lesion-Anatomy:T12 has-Lesion-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T19 has-Medical-Assertion:T18
+E14	Medical-Problem:T20 has-Medical-Assertion:T18
+E15	Medical-Problem:T21 has-Medical-Assertion:T18
+E16	Lesion-Description:T22 has-Lesion-Anatomy:T23

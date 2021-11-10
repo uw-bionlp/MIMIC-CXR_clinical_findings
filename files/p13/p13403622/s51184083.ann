@@ -1,0 +1,19 @@
+T1	Medical-Assertion 237 239	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 240 255	pulmonary edema
+T3	Medical-Problem 259 278	vascular congestion
+T4	Medical-Problem 280 291	atelectasis
+T5	Medical-Anatomy 299 304;306 315	right lung base
+T6	Medical-Problem 341 362	Moderate cardiomegaly
+E5	Medical-Problem:T6
+T7	Medical-Problem 369 374;376 400	large thoracic aortic aneurysm
+E6	Medical-Problem:T7
+T8	Medical-Assertion 425 427	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 428 440	pneumothorax
+T10	Medical-Problem 444 451;453 461	pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T5
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

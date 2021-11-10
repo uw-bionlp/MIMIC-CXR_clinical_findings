@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 337 342	Lungs
+T2	Medical-Assertion 343 361	do not demonstrate
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 363 382	significant changes
+T4	Medical-Problem 418 431	Opacification
+T5	Medical-Anatomy 440 449	left base
+T6	Medical-Problem 461 472	atelectasis
+T7	Medical-Problem 476 489	consolidation
+T8	Medical-Problem 492 514;516 532	Persistent small right pleural effusion
+E7	Medical-Problem:T8
+T9	Medical-Problem 538 575	increased small left pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Assertion 578 580	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 581 593	pneumothorax
+T12	Medical-Problem 615 661	Persistent small pleural effusions bilaterally
+E10	Medical-Problem:T12
+T13	Medical-Problem 668 695	Left lower lobe atelectasis
+T14	Medical-Assertion 696 698	or
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 699 712	consolidation
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

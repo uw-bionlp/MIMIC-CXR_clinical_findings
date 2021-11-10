@@ -1,0 +1,18 @@
+T1	Medical-Assertion 354 356	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 357 369	pneumothorax
+T3	Medical-Problem 388 410	right pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 413 433	Mild pulmonary edema
+T5	Medical-Anatomy 449 458	left lung
+T6	Medical-Problem 461 481	Severe consolidation
+T7	Medical-Anatomy 489 505	right upper lobe
+T8	Medical-Problem 555 576	Continued volume loss
+E7	Medical-Problem:T8
+T9	Medical-Assertion 577 592	could be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 593 599;601 632	severe right-sided bronchial impaction
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

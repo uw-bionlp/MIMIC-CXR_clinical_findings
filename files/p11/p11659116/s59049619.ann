@@ -1,0 +1,32 @@
+T1	Medical-Problem 120 151	Loculated left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 179 183	only
+E2	Medical-Problem:T2
+T3	Medical-Problem 223 243	Adjacent atelectasis
+T4	Medical-Anatomy 251 261;263 279	left lower lobe and lingula
+T5	Lesion-Size 300 305	Small
+T6	Lesion-Description 306 321	nodular opacity
+T7	Lesion-Anatomy 339 375	level of the third left anterior rib
+T8	Lesion-Description 446 455	granuloma
+E8	Lesion-Description:T8
+T9	Lesion-Description 459 468	hamartoma
+E9	Lesion-Description:T9
+T10	Lesion-Size 473 479	sub-cm
+T11	Lesion-Description 480 486	nodule
+T12	Lesion-Anatomy 516 570;572 586	junction of the right third anterior and right seventh posterior ribs
+T13	Lesion-Description 613 622	granuloma
+E13	Lesion-Description:T13
+T14	Medical-Assertion 643 645	No
+A1	Medical-AssertionValue T14 absent
+T15	Medical-Problem 647 663	pleural effusion
+T16	Medical-Problem 667 690	acute skeletal findings
+T17	Medical-Problem 767 784	improved aeration
+T18	Medical-Anatomy 789 803	left lung base
+T19	Lesion-Anatomy 815 840	bilateral upper lobe lung
+E18	Lesion-Anatomy:T19
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T7
+E11	Lesion-Description:T11 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T12
+E14	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Medical-Problem:T16 has-Medical-Assertion:T14
+E16	Medical-Problem:T17 has-Medical-Anatomy:T18

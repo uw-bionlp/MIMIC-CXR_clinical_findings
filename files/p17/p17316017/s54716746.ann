@@ -1,0 +1,35 @@
+T1	Medical-Problem 45 79	Suspected patchy posterior opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 125 136	atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 138 147	pneumonia
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 158 162	lung
+T5	Lesion-Description 163 169	nodule
+T6	Lesion-Assertion 173 176	not
+A1	Lesion-AssertionValue T6 possible
+T7	Medical-Assertion 624 626	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 627 643	pleural effusion
+T9	Medical-Problem 647 659	pneumothorax
+T10	Medical-Problem 674 707	vague suspected posterior opacity
+T11	Medical-Anatomy 724 739	left lower lobe
+T12	Medical-Anatomy 745 795	superimposed over the spine and left hemidiaphgram
+T13	Medical-Problem 833 858	Mild degenerative changes
+T14	Medical-Anatomy 879 893	thoracic spine
+T15	Medical-Problem 910 944	Suspected patchy posterior opacity
+E13	Medical-Problem:T15
+T16	Medical-Problem 989 1000	atelectasis
+E14	Medical-Problem:T16
+T17	Medical-Problem 1002 1011	pneumonia
+E15	Medical-Problem:T17
+T18	Lesion-Anatomy 1022 1026	lung
+T19	Lesion-Description 1027 1033	nodule
+T20	Lesion-Assertion 1037 1040	not
+A3	Lesion-AssertionValue T20 possible
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E17	Lesion-Description:T19 has-Lesion-Anatomy:T18 has-Lesion-Assertion:T20

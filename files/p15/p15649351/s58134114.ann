@@ -1,0 +1,20 @@
+T1	Medical-Assertion 151 153	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 154 162	effusion
+T3	Medical-Problem 166 178	pneumothorax
+T4	Lesion-Size 195 199	1-cm
+T5	Medical-Anatomy 224 248	right anterior first rib
+T6	Medical-Assertion 252 263	most likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 265 292	costochondral calcification
+T8	Lesion-Anatomy 315 324	pulmonary
+T9	Lesion-Description 325 331	nodule
+T10	Lesion-Anatomy 438 454	right upper lung
+T11	Lesion-Description 455 461	nodule
+T12	Medical-Problem 486 513	costochondral calcification
+E10	Medical-Problem:T12
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Lesion-Description:T9 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T10

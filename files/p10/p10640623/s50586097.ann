@@ -1,0 +1,29 @@
+T1	Medical-Assertion 338 365	without definitive evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 370 379	pneumonia
+T3	Medical-Problem 451 469	Focal irregularity
+T4	Medical-Problem 474 491	increased opacity
+T5	Medical-Anatomy 506 512;514 540	eighth posterior rib on the right
+T6	Medical-Assertion 541 558	likely represents
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 559 579	healing rib fracture
+T8	Medical-Assertion 592 594	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 595 611	pleural effusion
+T10	Medical-Problem 615 627	pneumothorax
+T11	Medical-Problem 724 747;749 751	compression fracture of L1
+E8	Medical-Problem:T11
+T12	Lesion-Characteristic 756 761	lytic
+T13	Lesion-Description 762 768	lesion
+T14	Lesion-Anatomy 776 796	vertebral body of T9
+T15	Medical-Assertion 823 845	no definitive evidence
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 849 858	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Lesion-Description:T13 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

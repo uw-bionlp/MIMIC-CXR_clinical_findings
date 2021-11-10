@@ -1,0 +1,15 @@
+T1	Medical-Problem 480 499;501 513	minimal increase in radiodensity
+T2	Medical-Anatomy 536 546	right lung
+T3	Medical-Problem 586 618	pre-existing parenchymal changes
+E3	Medical-Problem:T3
+T4	Medical-Problem 659 680	Moderate cardiomegaly
+E4	Medical-Problem:T4
+T5	Medical-Assertion 692 694	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 695 719	larger pleural effusions
+T7	Medical-Assertion 722 724	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 726 738	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

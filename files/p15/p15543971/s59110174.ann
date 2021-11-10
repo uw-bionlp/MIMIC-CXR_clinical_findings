@@ -1,0 +1,16 @@
+T1	Medical-Problem 234 277	interval decrease in right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 306 317	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 321 333	pneumothorax
+T4	Medical-Problem 389 411	Right pleural effusion
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 442 457;459 468	left lower lobe pulmonary
+T6	Lesion-Description 469 475	nodule
+T7	Lesion-Size 491 496	13 mm
+T8	Medical-Assertion 511 513	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 514 531	left pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

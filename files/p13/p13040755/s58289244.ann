@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 328 357	medial left lower hemi thorax
+T2	Medical-Assertion 358 365	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 366 376;378 390	increasing pneumothorax
+T4	Medical-Problem 471 498	slight increase in blunting
+T5	Medical-Anatomy 506 529	left costophrenic angle
+T6	Medical-Assertion 531 534;536 545	may be due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 546 557	atelectasis
+T8	Medical-Problem 561 583	small pleural effusion
+T9	Medical-Problem 599 610;612 627	significant interval change
+E7	Medical-Problem:T9
+T10	Medical-Assertion 648 656	Possible
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 657 688	slight the increase in blunting
+T12	Medical-Anatomy 696 719	left costophrenic angle
+T13	Medical-Assertion 727 740	may be due to
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 743 765	small pleural effusion
+T15	Medical-Problem 769 780	atelectasis
+T16	Medical-Assertion 782 784	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 785 802;804 810	other significant change
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

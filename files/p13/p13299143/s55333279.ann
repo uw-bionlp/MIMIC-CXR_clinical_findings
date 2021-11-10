@@ -1,0 +1,26 @@
+T1	Medical-Problem 217 253	small-to-moderate right pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Assertion 309 311	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 312 334	large pleural effusion
+T4	Lesion-Anatomy 337 353	Right lower lobe
+T5	Lesion-Description 354 358	mass
+T6	Lesion-Count 364 372	multiple
+T7	Lesion-Anatomy 373 386	peribronchial
+T8	Lesion-Characteristic 387 399	ground glass
+T9	Lesion-Characteristic 404 414	semi solid
+T10	Lesion-Description 415 422	nodules
+T11	Lesion-Anatomy 426 441	bilateral lungs
+T12	Lesion-Anatomy 486 502	right upper lobe
+T13	Lesion-Anatomy 508 524	right lower lobe
+T14	Lesion-Characteristic 525 536	ill-defined
+T15	Lesion-Characteristic 537 549	ground glass
+T16	Lesion-Description 550 559	opacities
+T17	Medical-Assertion 564 570	likely
+A2	Medical-AssertionValue T17 possible
+T18	Medical-Problem 571 581	hemorrhage
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T11
+E9	Lesion-Description:T10 has-Lesion-Count:T6 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T11
+E15	Lesion-Description:T16 has-Lesion-Anatomy:T12 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T14 has-Lesion-Characteristic:T15
+E16	Medical-Problem:T18 has-Medical-Assertion:T17

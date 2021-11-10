@@ -1,0 +1,54 @@
+T1	Medical-Assertion 614 616	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 617 629	pneumothorax
+T3	Medical-Problem 644 669	Background hyperinflation
+E2	Medical-Problem:T3
+T4	Medical-Problem 689 693	COPD
+E3	Medical-Problem:T4
+T5	Medical-Problem 763 780	increased opacity
+T6	Medical-Anatomy 788 797;799 803	left lung base
+T7	Medical-Problem 809 824	new obscuration
+T8	Medical-Anatomy 832 850	left hemidiaphragm
+T9	Medical-Problem 867 877;879 892	left lower lobe collapse
+E8	Medical-Problem:T9
+T10	Medical-Problem 900 913	consolidation
+E9	Medical-Problem:T10
+T11	Medical-Problem 918 932	small effusion
+E10	Medical-Problem:T11
+T12	Medical-Problem 989 1001	rib fracture
+E11	Medical-Problem:T12
+T13	Medical-Problem 1026 1030;1032 1046	some patchy opacity
+T14	Medical-Anatomy 1054 1076	left suprahilar region
+T15	Lesion-Characteristic 1125 1141	chronic fibrotic
+T16	Lesion-Description 1142 1148	lesion
+T17	Lesion-Anatomy 1156 1165	left lobe
+T18	Medical-Problem 1212 1234	Mild vascular plethora
+E17	Medical-Problem:T18
+T19	Medical-Assertion 1236 1243	without
+A2	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1244 1253	overt CHF
+T21	Medical-Problem 1257 1268	Atelectasis
+T22	Medical-Anatomy 1273 1288	right lung base
+T23	Medical-Problem 1300 1316	minimal blunting
+T24	Medical-Anatomy 1324 1329;1331 1349	right costophrenic angle
+T25	Medical-Problem 1372 1389	Increased opacity
+T26	Medical-Anatomy 1397 1411	left lung base
+T27	Medical-Problem 1428 1442;1444 1463	small effusion underlying collapse
+T28	Medical-Problem 1471 1484	consolidation
+T29	Medical-Assertion 1491 1512	differential includes
+A3	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1516 1536	pneumonic infiltrate
+T31	Medical-Problem 1561 1573	rib fracture
+E28	Medical-Problem:T31
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E15	Lesion-Description:T16 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T17
+E18	Medical-Problem:T20 has-Medical-Assertion:T19
+E19	Medical-Problem:T21 has-Medical-Anatomy:T22
+E21	Medical-Problem:T23 has-Medical-Anatomy:T24
+E23	Medical-Problem:T25 has-Medical-Anatomy:T26
+E25	Medical-Problem:T27 has-Medical-Anatomy:T26
+E26	Medical-Problem:T28 has-Medical-Anatomy:T26
+E27	Medical-Problem:T30 has-Medical-Assertion:T29

@@ -1,0 +1,31 @@
+T1	Medical-Problem 33 91	Small right greater than left subpulmonic pleural effusion
+T2	Medical-Problem 97 106;108 116	increased  density
+T3	Medical-Anatomy 120 135	both lung bases
+T4	Medical-Assertion 136 155	likely representing
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 156 167	atelectasis
+T6	Medical-Problem 177 186	infection
+T7	Medical-Assertion 192 204	not excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 695 712	new consolidation
+T9	Medical-Anatomy 720 727;729 742	base of the left lung
+T10	Medical-Problem 751 762	atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Problem 766 775	pneumonia
+E9	Medical-Problem:T11
+T12	Medical-Problem 780 807;809 868	new small-to-moderate right pleural effusion, partially fissural, partially subpulmonic
+E10	Medical-Problem:T12
+T13	Medical-Assertion 955 957	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 959 974	pulmonary edema
+T15	Medical-Problem 978 990	pneumothorax
+T16	Medical-Problem 1006 1016	distention
+T17	Medical-Anatomy 1024 1037	upper abdomen
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17

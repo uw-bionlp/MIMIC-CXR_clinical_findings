@@ -1,0 +1,23 @@
+T1	Medical-Assertion 328 330	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 331 343	pneumothorax
+T3	Medical-Problem 348 364	pleural effusion
+T4	Lesion-Size 411 416	small
+T5	Lesion-Description 427 436	opacities
+T6	Medical-Assertion 476 491	could represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 492 501	scattered
+E5	Medical-Problem:T7
+T8	Lesion-Description 503 514	grandulomas
+E6	Lesion-Description:T8
+T9	Medical-Problem 518 523	scars
+T10	Lesion-Characteristic 536 545	dense for
+E8	Lesion-Characteristic:T10
+T11	Medical-Assertion 654 656	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 657 667	infiltrate
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

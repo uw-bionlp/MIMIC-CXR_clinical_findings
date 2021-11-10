@@ -1,0 +1,34 @@
+T1	Medical-Anatomy 37 46	bilateral
+T2	Medical-Assertion 109 111	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 114 136	large pleural effusion
+T4	Medical-Problem 139 156	Mild cardiomegaly
+E3	Medical-Problem:T4
+T5	Medical-Problem 161 190	bilateral perihilar opacities
+E4	Medical-Problem:T5
+T6	Medical-Problem 198 215	bronchial cuffing
+E5	Medical-Problem:T6
+T7	Medical-Assertion 219 232	suggestive of
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 233 261;263 275	mild pulmonary edema, likely  cardiogenic
+T9	Medical-Assertion 278 280	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 281 303	airspace consolidation
+T11	Medical-Problem 307 319	pneumothorax
+T12	Medical-Problem 590 598;600 607	low lung volumes
+E9	Medical-Problem:T12
+T13	Medical-Problem 619 663	stable enlargement of the cardiac silhouette
+E10	Medical-Problem:T13
+T14	Medical-Problem 672 686	indistinctness
+T15	Medical-Anatomy 690 699	pulmonary
+T16	Medical-Problem 727 745;747 762	elevated pulmonary venous pressure
+T17	Medical-Assertion 765 776	No evidence
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 780 801	acute focal pneumonia
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

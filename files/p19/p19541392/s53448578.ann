@@ -1,0 +1,20 @@
+T1	Medical-Problem 474 506	Persistent moderate cardiomegaly
+T2	Medical-Problem 513 523	prominence
+T3	Medical-Anatomy 531 567	bilateral hila and pulmonary vessels
+T4	Medical-Problem 585 614	pulmonary vascular congestion
+T5	Medical-Problem 617 644	Left lower lobe atelectasis
+E5	Medical-Problem:T5
+T6	Medical-Problem 647 663	Airspace opacity
+T7	Medical-Anatomy 672 687	right lung base
+T8	Medical-Assertion 688 703	likely reflects
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 704 719	pulmonary edema
+T10	Medical-Problem 724 733	infection
+T11	Medical-Assertion 734 743;745 753	cannot be excluded
+A2	Medical-AssertionValue T11 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8 has-Medical-Assertion:T11

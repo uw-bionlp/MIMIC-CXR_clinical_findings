@@ -1,0 +1,35 @@
+T1	Medical-Problem 289 319	right-sided pleural thickening
+E1	Medical-Problem:T1
+T2	Medical-Assertion 415 417	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 418 426;428 440	definite pneumothorax
+T4	Lesion-Anatomy 453 479	right upper lobe pulmonary
+T5	Lesion-Description 480 486	nodule
+T6	Lesion-Anatomy 529 542	right pleural
+T7	Lesion-Description 543 547	mass
+T8	Lesion-Anatomy 552 571	bilateral pulmonary
+T9	Lesion-Description 572 579	nodules
+T10	Medical-Assertion 691 693	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 694 713	focal consolidation
+T12	Medical-Problem 715 727	pneumothorax
+T13	Medical-Problem 731 736;738 753	overt pulmonary edema
+T14	Medical-Anatomy 774 790	Right chest tube
+T15	Medical-Anatomy 801 816	right lung base
+T16	Medical-Assertion 817 824	without
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 825 845;847 859	definite appreciable pneumothorax
+T18	Lesion-Anatomy 879 888	pulmonary
+T19	Lesion-Description 889 896	nodules
+T20	Lesion-Anatomy 901 908	pleural
+T21	Lesion-Description 909 913	mass
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T10
+E14	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E16	Lesion-Description:T19 has-Lesion-Anatomy:T18
+E18	Lesion-Description:T21 has-Lesion-Anatomy:T18 has-Lesion-Anatomy:T20

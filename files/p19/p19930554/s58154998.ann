@@ -1,0 +1,36 @@
+T1	Medical-Assertion 378 380	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 381 404	confluent consolidation
+T3	Medical-Problem 408 423	pulmonary edema
+T4	Lesion-Anatomy 432 436	lung
+T5	Lesion-Description 437 444	nodules
+T6	Lesion-Size-Trend 453 469	similar to prior
+A2	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Problem 481 494	mild blunting
+T8	Medical-Anatomy 502 524;526 532	bilateral costophrenic angles
+T9	Medical-Assertion 540 548	suggests
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 549 576	new trace pleural effusions
+T11	Medical-Assertion 588 590	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 591 603	pneumothorax
+T13	Medical-Assertion 691 693	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 694 707	consolidation
+T15	Medical-Problem 711 726	pulmonary edema
+T16	Lesion-Size-Trend 729 749	Unchanged appearance
+A6	Lesion-Size-TrendValue T16 no-change
+T17	Lesion-Count 753 761	multiple
+T18	Lesion-Anatomy 763 767	lung
+T19	Lesion-Description 768 775	nodules
+T20	Medical-Assertion 784 792	Probable
+A7	Medical-AssertionValue T20 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Lesion-Description:T19 has-Lesion-Size-Trend:T16 has-Lesion-Count:T17 has-Lesion-Anatomy:T18

@@ -1,0 +1,44 @@
+T1	Medical-Problem 524 533	densities
+T2	Medical-Anatomy 551 566	left-sided lung
+T3	Medical-Problem 586 624;626 636	aeration of the remaining left lung is diminished
+E3	Medical-Problem:T3
+T4	Medical-Problem 652 694	further mediastinal shift towards the left
+E4	Medical-Problem:T4
+T5	Lesion-Anatomy 706 722	right hemithorax
+T6	Lesion-Count 752 760	multiple
+T7	Lesion-Description 761 768;770 779	nodular densities
+T8	Lesion-Size-Trend 820 829	increased
+A1	Lesion-Size-TrendValue T8 increasing
+T9	Medical-Problem 851 864	mild blunting
+T10	Medical-Anatomy 872 905	right-sided lateral pleural sinus
+T11	Medical-Assertion 959 961	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 962 974	pneumothorax
+T13	Medical-Assertion 1175 1186	no evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1190 1219	pulmonary vascular congestion
+T15	Lesion-Size-Trend 1237 1248	Progression
+A4	Lesion-Size-TrendValue T15 increasing
+T16	Lesion-Anatomy 1252 1267	left-sided lung
+T17	Lesion-Description 1268 1274	masses
+T18	Medical-Problem 1276 1294	decreased aeration
+T19	Medical-Anatomy 1298 1302;1304 1314	left hemithorax
+T20	Lesion-Anatomy 1380 1384	lung
+E16	Lesion-Anatomy:T20
+T21	Medical-Assertion 1386 1388	no
+A5	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1389 1401	pneumothorax
+T23	Medical-Assertion 1403 1405	no
+A6	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1406 1431	massive pleural effusions
+T25	Medical-Problem 1577 1598;1600 1625	overlying pleural and parenchymal abnormalities
+E19	Medical-Problem:T25
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Count:T6 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Lesion-Description:T17 has-Lesion-Size-Trend:T15 has-Lesion-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21
+E18	Medical-Problem:T24 has-Medical-Assertion:T23

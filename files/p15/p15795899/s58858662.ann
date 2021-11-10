@@ -1,0 +1,18 @@
+T1	Medical-Problem 171 192	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 205 228	Faint increased opacity
+T3	Medical-Anatomy 236 247;249 253	right upper lobe
+T4	Medical-Problem 258 267	opacities
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 275 290	left lower lobe
+T6	Medical-Assertion 295 309	concerning for
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 310 320;322 331	multifocal pneumonia
+T8	Medical-Assertion 343 345	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 346 358	pneumothorax
+T10	Medical-Problem 362 378	pleural effusion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

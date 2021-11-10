@@ -1,0 +1,36 @@
+T1	Medical-Problem 197 248	moderate partially loculated right pleural effusion
+T2	Medical-Anatomy 269 282	minor fissure
+T3	Medical-Problem 285 304	Curvilinear lucency
+T4	Medical-Anatomy 308 323	right lung base
+T5	Medical-Assertion 325 352	could potentially represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 355 382	loculated hydropneumothorax
+T7	Medical-Assertion 397 399;401 409	no evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 413 432	apical pneumothorax
+T9	Lesion-Anatomy 498 519	right upper lobe lung
+T10	Lesion-Description 520 524	mass
+T11	Medical-Problem 526 557	adjacent interstitial opacities
+E9	Medical-Problem:T11
+T12	Medical-Problem 563 594	apicolateral pleural thickening
+E10	Medical-Problem:T12
+T13	Medical-Problem 598 603	fluid
+E11	Medical-Problem:T13
+T14	Medical-Problem 606 628	Poorly defined opacity
+T15	Medical-Anatomy 632 636;638 657	left retrocardiac region
+T16	Medical-Assertion 658 671	may be due to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 679 690	atelectasis
+T18	Medical-Problem 694 714	developing pneumonia
+T19	Lesion-Characteristic 718 732	Poorly defined
+T20	Lesion-Anatomy 733 748	left upper lobe
+T21	Lesion-Description 749 755	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E18	Lesion-Description:T21 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T20

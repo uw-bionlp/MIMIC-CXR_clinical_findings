@@ -1,0 +1,28 @@
+T1	Medical-Problem 248 266	minimal tortuosity
+T2	Medical-Anatomy 274 282;284 289	thoracic aorta
+T3	Lesion-Characteristic 328 337	calcified
+T4	Lesion-Description 338 347	granuloma
+T5	Lesion-Anatomy 355 360;362 378	right upper lung field
+T6	Lesion-Size 389 393	4 mm
+T7	Lesion-Size-Trend 397 406	unchanged
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 427 429	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 430 437;439 447	pleural effusion
+T10	Medical-Problem 451 463	pneumothorax
+T11	Medical-Assertion 487 489	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 490 503;505 518	acute osseous abnormalities
+T13	Medical-Assertion 530 532	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 533 562	free air under the diaphragms
+T15	Medical-Assertion 580 582	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 583 616	acute cardiopulmonary abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T6 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

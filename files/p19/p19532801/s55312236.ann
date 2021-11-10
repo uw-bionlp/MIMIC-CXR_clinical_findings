@@ -1,0 +1,16 @@
+T1	Medical-Problem 237 246	elevation
+T2	Medical-Anatomy 254 273	right hemidiaphragm
+T3	Medical-Problem 277 285	Blunting
+T4	Medical-Anatomy 293 325	right lateral costophrenic angle
+T5	Medical-Assertion 326 339	may be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 340 351	atelectasis
+T7	Medical-Problem 360 374	small effusion
+T8	Medical-Assertion 479 481	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 482 494	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

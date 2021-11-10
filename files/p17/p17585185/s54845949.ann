@@ -1,0 +1,20 @@
+T1	Medical-Assertion 303 305	NO
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 306 318	PNEUMOTHORAX
+T3	Medical-Problem 323 339	PLEURAL EFFUSION
+T4	Medical-Problem 342 365	BORDERLINE CARDIOMEGALY
+E3	Medical-Problem:T4
+T5	Medical-Problem 370 393	RIGHT HILAR ENLARGEMENT
+E4	Medical-Problem:T5
+T6	Lesion-Size 413 418	SMALL
+T7	Lesion-Description 419 434	NODULAR OPACITY
+T8	Lesion-Anatomy 442 488	RIGHT UPPER LUNG PROJECTING OVER THE FIRST RIB
+T9	Medical-Assertion 490 498	COULD BE
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 499 517	PLEURAL THICKENING
+T11	Medical-Problem 529 550	ADJACENT RIB FRACTURE
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

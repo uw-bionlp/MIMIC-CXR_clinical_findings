@@ -1,0 +1,27 @@
+T1	Medical-Problem 380 402	severe pulmonary edema
+T2	Medical-Anatomy 424 434	right lung
+T3	Medical-Problem 474 494	Residual abnormality
+T4	Medical-Anatomy 502 517	left lower lung
+T5	Medical-Assertion 522 533	most likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 534 548	residual edema
+T7	Medical-Problem 554 563	pneumonia
+T8	Medical-Assertion 567 579	not excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 653 669	air bronchograms
+T10	Medical-Anatomy 672 677	Heart
+T11	Medical-Assertion 682 684	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 685 714	more than moderately enlarged
+T13	Medical-Assertion 862 864	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 865 877	pneumothorax
+T15	Medical-Problem 882 910	Small right pleural effusion
+E11	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

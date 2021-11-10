@@ -1,0 +1,29 @@
+T1	Medical-Problem 227 232	aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 236 255	diffusely calcified
+E2	Medical-Problem:T2
+T3	Medical-Problem 303 326	Lungs are hyperinflated
+E3	Medical-Problem:T3
+T4	Medical-Problem 329 335;337 346	Linear opacities
+T5	Medical-Anatomy 354 364	lung bases
+T6	Medical-Assertion 365 379	either reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 380 388	scarring
+T8	Medical-Problem 392 403	atelectasis
+T9	Medical-Assertion 406 408	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 409 414;416 432	large pleural effusion
+T11	Medical-Problem 436 448	pneumothorax
+T12	Medical-Assertion 559 561	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 562 567;569 590	acute osseous abnormalities
+T14	Medical-Assertion 608 610	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 611 644	acute cardiopulmonary abnormality
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

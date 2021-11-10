@@ -1,0 +1,35 @@
+T1	Lesion-Anatomy 309 320	mediastinal
+T2	Lesion-Anatomy 325 330	hilar
+T3	Lesion-Characteristic 332 341	calcified
+T4	Lesion-Description 342 353	lymph nodes
+T5	Medical-Assertion 463 465	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 466 489	new focal consolidation
+T7	Medical-Assertion 510 512	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 513 529	pleural effusion
+T9	Medical-Problem 533 545	pneumothorax
+T10	Medical-Assertion 548 550	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 551 566;568 573	overt pulmonary edema
+T12	Medical-Assertion 602 604	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 635 644	Calcified
+E9	Medical-Problem:T13
+T14	Lesion-Anatomy 645 650	hilar
+T15	Lesion-Anatomy 655 666	mediastinal
+T16	Lesion-Description 667 678	lymph nodes
+T17	Lesion-Assertion 726 728	No
+A5	Lesion-AssertionValue T17 absent
+T18	Medical-Problem 729 752	new focal consolidation
+E13	Medical-Problem:T18
+T19	Medical-Assertion 753 755;757 764	to suggest
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 765 774	pneumonia
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T1 has-Lesion-Anatomy:T2 has-Lesion-Characteristic:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Lesion-Description:T16 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

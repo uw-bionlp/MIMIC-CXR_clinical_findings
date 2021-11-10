@@ -1,0 +1,39 @@
+T1	Lesion-Anatomy 398 403	lungs
+T2	Lesion-Characteristic 416 423	diffuse
+T3	Lesion-Characteristic 425 436	innumerable
+T4	Lesion-Characteristic 437 444	rounded
+T5	Lesion-Description 445 452	lesions
+T6	Lesion-Characteristic 471 480	calcified
+T7	Lesion-Anatomy 486 495;497 544	perihilar distribution greater on the left than the right
+T8	Medical-Assertion 643 645	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 647 663	pleural effusion
+T10	Medical-Problem 667 679	pneumothorax
+T11	Lesion-Characteristic 804 811	diffuse
+T12	Lesion-Anatomy 812 821	pulmonary
+T13	Lesion-Description 822 829	lesions
+T14	Medical-Problem 874 887	calcification
+T15	Medical-Anatomy 895 906	aortic knob
+T16	Medical-Assertion 908 910	No
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 911 936	acute osseous abnormality
+T18	Medical-Problem 969 980	Innumerable
+E16	Medical-Problem:T18
+T19	Lesion-Anatomy 981 990	pulmonary
+T20	Lesion-Description 991 998	lesions
+T21	Lesion-Characteristic 1017 1026	calcified
+T22	Lesion-Description 1050 1060	hamartomas
+T23	Medical-Problem 1108 1120	Superimposed
+E21	Medical-Problem:T23
+T24	Medical-Problem 1122 1131	infection
+T25	Medical-Assertion 1135 1163	difficult to exclude in this
+A3	Medical-AssertionValue T25 possible
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T1 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E12	Lesion-Description:T13 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E18	Lesion-Description:T20 has-Lesion-Anatomy:T19 has-Lesion-Characteristic:T21
+E20	Lesion-Description:T22 has-Lesion-Anatomy:T19
+E22	Medical-Problem:T24 has-Medical-Assertion:T25

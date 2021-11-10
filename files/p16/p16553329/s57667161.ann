@@ -1,0 +1,19 @@
+T1	Medical-Problem 282 308	tiny left pleural effusion
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 310 319	Calcified
+T3	Lesion-Description 320 327	nodular
+T4	Lesion-Anatomy 346 350;352 390	left upper lung and right mid to lower lung
+T5	Lesion-Assertion 391 407	likely represent
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 408 417	calcified
+T7	Lesion-Description 418 428	granulomas
+T8	Medical-Assertion 440 451	no evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 455 464	pneumonia
+T10	Medical-Problem 468 471	CHF
+T11	Medical-Problem 568 586	tiny left effusion
+E9	Medical-Problem:T11
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T2
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

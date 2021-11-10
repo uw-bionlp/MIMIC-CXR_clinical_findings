@@ -1,0 +1,35 @@
+T1	Medical-Problem 266 286	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 300 327	linear left midlung opacity
+E2	Medical-Problem:T2
+T3	Medical-Problem 344 352	scarring
+E3	Medical-Problem:T3
+T4	Lesion-Characteristic 379 386	Rounded
+T5	Lesion-Description 387 394	nodular
+T6	Lesion-Anatomy 430 443	left mid lung
+T7	Lesion-Characteristic 461 470	calcified
+T8	Lesion-Description 471 481	granulomas
+T9	Medical-Assertion 483 505	No convincing evidence
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 510 519	pneumonia
+T11	Medical-Problem 523 526	CHF
+T12	Medical-Assertion 528 530	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 532 546	large effusion
+T14	Medical-Problem 550 562	pneumothorax
+T15	Medical-Problem 624 645	moderate cardiomegaly
+E13	Medical-Problem:T15
+T16	Medical-Problem 717 736	Stable cardiomegaly
+E14	Medical-Problem:T16
+T17	Medical-Assertion 738 749	No evidence
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 753 762	pneumonia
+T19	Medical-Problem 766 769	CHF
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T17

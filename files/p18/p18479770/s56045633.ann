@@ -1,0 +1,35 @@
+T1	Medical-Problem 195 228	large left-sided pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 244 255	atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 316 340	underlying consolidation
+T4	Medical-Assertion 344 356	not excluded
+A1	Medical-AssertionValue T4 possible
+T5	Lesion-Anatomy 375 390	left upper lobe
+T6	Lesion-Description 392 396	mass
+T7	Lesion-Size-Trend 421 435	largely stable
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Problem 502 532	cardiac size is again enlarged
+T9	Medical-Anatomy 544 555	mediastinal
+T10	Lesion-Assertion 564 585	perhaps reflective of
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 586 596	adenopathy
+T12	Medical-Problem 674 685	atelectasis
+E9	Medical-Problem:T12
+T13	Medical-Problem 687 711	underlying consolidation
+T14	Medical-Assertion 712 724	not excluded
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 727 746	Stable cardiomegaly
+E11	Medical-Problem:T15
+T16	Medical-Problem 752 771	widened mediastinum
+E12	Medical-Problem:T16
+T17	Lesion-Size-Trend 776 782	stable
+A5	Lesion-Size-TrendValue T17 no-change
+T18	Lesion-Anatomy 783 798	left upper lobe
+T19	Lesion-Description 799 803	mass
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Lesion-Description:T11 has-Lesion-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T14
+E14	Lesion-Description:T19 has-Lesion-Size-Trend:T17 has-Lesion-Anatomy:T18

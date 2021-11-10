@@ -1,0 +1,40 @@
+T1	Medical-Problem 207 218	new opacity
+T2	Medical-Anatomy 222 238	right upper lobe
+T3	Medical-Assertion 239 253	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 254 263	pneumonia
+T5	Medical-Problem 267 301	Unchanged significant cardiomegaly
+E4	Medical-Problem:T5
+T6	Medical-Problem 304 343;345 352	Chronic elevation of left diaphragmatic surface
+E5	Medical-Problem:T6
+T7	Medical-Problem 355 373	Unchanged collapse
+T8	Medical-Anatomy 381 396	left lower lobe
+T9	Medical-Problem 399 419;421 437	Unchanged small left pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 439 468	Mild left basilar atelectasis
+E9	Medical-Problem:T10
+T11	Medical-Problem 470 489	Rightward deviation
+T12	Medical-Anatomy 494 501	trachea
+T13	Lesion-Assertion 541 543	no
+A2	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 544 555	mediastinal
+T15	Lesion-Description 556 560	mass
+T16	Medical-Assertion 586 588	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 589 601	pneumothorax
+T18	Medical-Assertion 637 645	possible
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 646 672	right upper lobe pneumonia
+T20	Medical-Problem 675 695;697 715	Chronic elevation of left hemidiaphragm
+E16	Medical-Problem:T20
+T21	Medical-Problem 718 750	Chronic left lower lobe collapse
+E17	Medical-Problem:T21
+T22	Medical-Problem 753 773;775 791	Unchanged small left pleural effusion
+E18	Medical-Problem:T22
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

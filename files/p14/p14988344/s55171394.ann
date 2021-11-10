@@ -1,0 +1,21 @@
+T1	Medical-Assertion 255 262	Suggest
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 263 288	infiltrative lung disease
+T3	Medical-Assertion 297 300	may
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 309 324;326 337	dilated bronchi bilaterally
+T5	Lesion-Assertion 348 361	no suggestion
+A3	Lesion-AssertionValue T5 absent
+T6	Lesion-Characteristic 365 372	central
+T7	Lesion-Description 373 383	adenopathy
+T8	Medical-Assertion 438 440	no
+A4	Medical-AssertionValue T8 absent
+T9	Medical-Problem 441 458	pleural effusions
+T10	Medical-Problem 505 527	interstitial opacities
+E6	Medical-Problem:T10
+T11	Medical-Problem 532 551;553 563	perihilar bronchial dilatation
+E7	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E5	Medical-Problem:T9 has-Medical-Assertion:T8

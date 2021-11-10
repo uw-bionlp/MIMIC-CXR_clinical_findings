@@ -1,0 +1,23 @@
+T1	Lesion-Count 325 330	dozen
+T2	Lesion-Size 331 337	sub cm
+T3	Lesion-Anatomy 338 347	pulmonary
+T4	Lesion-Description 349 356	nodules
+T5	Lesion-Size-Trend 362 373	not changed
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Size-Trend 471 474	new
+A2	Lesion-Size-TrendValue T6 new
+T7	Lesion-Size 475 483	4 or 5cm
+T8	Lesion-Anatomy 489 493	lung
+T9	Lesion-Description 495 501	nodule
+T10	Medical-Assertion 512 514	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 515 531	pleural effusion
+T12	Medical-Anatomy 549 564	paraspinal left
+E9	Medical-Anatomy:T12
+T13	Medical-Assertion 640 642;644 652	no evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 656 665	pneumonia
+E4	Lesion-Description:T4 has-Lesion-Count:T1 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T5
+E7	Lesion-Description:T9 has-Lesion-Size-Trend:T6 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

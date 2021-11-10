@@ -1,0 +1,19 @@
+T1	Medical-Problem 272 310	interval increase in the left effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 401 409	effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 422 446	hazy alveolar infiltrate
+T4	Medical-Anatomy 454 491	right lower lung in the left mid lung
+T5	Medical-Assertion 498 513	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 514 528	fluid overload
+T7	Medical-Problem 620 645	Worsened pulmonary status
+E6	Medical-Problem:T7
+T8	Medical-Problem 681 695	fluid overload
+E7	Medical-Problem:T8
+T9	Medical-Problem 701 733	underlying infectious infiltrate
+T10	Medical-Assertion 734 752	cannot be excluded
+A2	Medical-AssertionValue T10 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Assertion:T10

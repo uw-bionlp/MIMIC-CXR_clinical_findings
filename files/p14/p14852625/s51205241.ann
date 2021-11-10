@@ -1,0 +1,22 @@
+T1	Medical-Problem 97 117	Pulmonary contusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 333 353	Peripheral opacities
+T3	Medical-Anatomy 381 403	base of the right lung
+T4	Medical-Anatomy 422 443	base of the left lung
+T5	Medical-Problem 479 499	pulmonary contusions
+T6	Medical-Assertion 537 539	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 540 556	pleural effusion
+T8	Medical-Problem 560 572	pneumothorax
+T9	Medical-Problem 601 632	Bilateral, peripheral opacities
+E8	Medical-Problem:T9
+T10	Medical-Problem 649 669	pulmonary contusions
+E9	Medical-Problem:T10
+T11	Medical-Problem 700 717	Tiny pneumothorax
+T12	Medical-Assertion 746 749;751 758	not visible
+A2	Medical-AssertionValue T12 absent
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E10	Medical-Problem:T11 has-Medical-Assertion:T12

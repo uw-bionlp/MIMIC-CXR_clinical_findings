@@ -1,0 +1,33 @@
+T1	Medical-Assertion 430 432	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 433 461	focal airspace consolidation
+T3	Medical-Problem 474 483	pneumonia
+T4	Medical-Problem 501 525	streaky linear opacities
+T5	Medical-Anatomy 533 537;539 558	left costophrenic sulcus
+T6	Medical-Assertion 565 576	may reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 577 601	subsegmental atelectasis
+T8	Medical-Problem 606 632	post-inflammatory scarring
+T9	Medical-Assertion 644 655	no evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 659 674	pulmonary edema
+T11	Lesion-Characteristic 683 688	focal
+T12	Lesion-Description 689 707	nodular appearance
+T13	Lesion-Anatomy 715 726	right hilum
+T14	Medical-Assertion 727 738	may reflect
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 739 750	vascularity
+T16	Medical-Problem 756 775	overlapping shadows
+T17	Medical-Assertion 878 880	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 881 903	acute bony abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

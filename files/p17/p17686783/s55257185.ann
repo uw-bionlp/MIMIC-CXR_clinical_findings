@@ -1,0 +1,18 @@
+T1	Medical-Problem 192 229	bilateral widespread airspace process
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 321 330	left lung
+T3	Medical-Problem 336 343;345 354	overall worsening
+T4	Medical-Anatomy 362 410	right lung, particularly in the right lower lobe
+T5	Medical-Problem 418 436	shifting opacities
+T6	Medical-Assertion 441 445	most
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 462 477	pulmonary edema
+T8	Medical-Problem 488 513	non-fluctuating opacities
+E7	Medical-Problem:T8
+T9	Medical-Assertion 514 536	could likely represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 537 557	multifocal pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

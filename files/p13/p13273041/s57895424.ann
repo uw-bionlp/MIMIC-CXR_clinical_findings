@@ -1,0 +1,30 @@
+T1	Medical-Problem 349 376	large left pleural effusion
+T2	Medical-Anatomy 405 414;416 473	lung from the level of the third intercostal space to the diaphragm
+T3	Medical-Problem 493 511	free pleural fluid
+T4	Medical-Anatomy 535 569;571 575	left apex on the lateral decubitus view
+T5	Medical-Problem 591 636	pleural effusion has an unusual configuration
+T6	Medical-Anatomy 663 680	left heart border
+T7	Medical-Problem 716 744	partially loculated effusion
+T8	Medical-Assertion 813 815	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 816 828	pneumothorax
+T10	Medical-Problem 900 920	Degenerative changes
+T11	Medical-Anatomy 944 958	thoracic spine
+T12	Medical-Problem 961 976;978 1002	Underlying left lower lobe consolidation
+T13	Medical-Assertion 1003 1021	cannot be excluded
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1039 1066	Large left pleural effusion
+E12	Medical-Problem:T14
+T15	Medical-Problem 1070 1098	partially free pleural fluid
+E13	Medical-Problem:T15
+T16	Medical-Assertion 1105 1111	may be
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1112 1131	partially loculated
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

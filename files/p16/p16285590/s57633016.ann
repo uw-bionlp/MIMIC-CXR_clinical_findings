@@ -1,0 +1,16 @@
+T1	Medical-Problem 205 273	interval slight increase in the amount of pleural fluid on the left,
+T2	Medical-Anatomy 308 349	collecting posterior to the left mid lung
+T3	Medical-Problem 362 373	volume loss
+T4	Medical-Anatomy 377 387	both bases
+T5	Medical-Problem 392 423	bilateral parenchymal opacities
+E5	Medical-Problem:T5
+T6	Medical-Assertion 424 430;432 444	likely representing
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 445 454	pneumonia
+T8	Medical-Assertion 594 596	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 597 609	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

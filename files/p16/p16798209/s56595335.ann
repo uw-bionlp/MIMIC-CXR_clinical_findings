@@ -1,0 +1,27 @@
+T1	Medical-Assertion 211 213	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 214 230	pleural effusion
+T3	Medical-Problem 234 246	pneumothorax
+T4	Medical-Assertion 285 287	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 289 308	focal consolidation
+T6	Lesion-Characteristic 311 318	Diffuse
+T7	Lesion-Description 349 358	opacities
+T8	Medical-Problem 462 492	Diffuse interstitial opacities
+E6	Medical-Problem:T8
+T9	Medical-Assertion 544 558	concerning for
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 562 580	atypical infection
+T11	Medical-Problem 582 597	Pulmonary edema
+T12	Medical-Assertion 601 614	felt unlikely
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 618 620	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 621 640	focal consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Lesion-Description:T7 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T12
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

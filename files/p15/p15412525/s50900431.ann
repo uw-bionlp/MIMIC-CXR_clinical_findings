@@ -1,0 +1,33 @@
+T1	Medical-Problem 29 42	Faint opacity
+T2	Medical-Anatomy 63 79	right lower lobe
+T3	Medical-Assertion 80 91	may reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 92 106;108 120	mild dependent  atelectasis
+T5	Medical-Anatomy 271 276	heart
+T6	Medical-Assertion 280 283	not
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 284 292	enlarged
+T8	Medical-Assertion 349 351	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 352 374	large pleural effusion
+T10	Medical-Assertion 379 381	no
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 382 394	pneumothorax
+T12	Medical-Problem 803 830	Heterogeneous consolidation
+T13	Medical-Anatomy 834 850	right lower lobe
+T14	Medical-Assertion 1014 1021	absence
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Assertion 1051 1066	could represent
+A6	Medical-AssertionValue T15 possible
+T16	Medical-Problem 1070 1086;1088 1093	acute aspiration event
+T17	Medical-Assertion 1128 1153	may be helpful to exclude
+A7	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1154 1164;1166 1190	developing infectious consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Anatomy:T13
+E10	Medical-Problem:T16 has-Medical-Assertion:T14 has-Medical-Assertion:T15
+E11	Medical-Problem:T18 has-Medical-Assertion:T17

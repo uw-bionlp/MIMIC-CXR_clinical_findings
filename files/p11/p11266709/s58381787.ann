@@ -1,0 +1,15 @@
+T1	Medical-Anatomy 262 276	left lung base
+T2	Medical-Assertion 282 297	near resolution
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 301 305;307 326	left basilar atelectasis
+T4	Medical-Problem 332 370	persistent small left pleural effusion
+T5	Medical-Problem 385 425	small-to-moderate right pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 453 461;463 481	adjacent increasing opacity
+E5	Medical-Problem:T6
+T7	Medical-Assertion 487 502	likely reflects
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 503 514	atelectasis
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

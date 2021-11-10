@@ -1,0 +1,29 @@
+T1	Medical-Problem 178 202	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 209 229	left cardiac contour
+T3	Medical-Problem 286 304	somewhat prominent
+T4	Medical-Anatomy 309 316;318 336	central pulmonary arteries
+T5	Medical-Assertion 341 349	probably
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 350 367	slightly enlarged
+T7	Medical-Problem 381 385;387 427	mild interstitial process with Kerley B lines
+T8	Medical-Anatomy 429 462;464 468	particularly evident in the right lung
+T9	Medical-Assertion 479 487	suggests
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 488 512	mild vascular congestion
+T11	Medical-Problem 524 535;537 555	exaggerated kyphotic curvature
+T12	Medical-Anatomy 563 577	thoracic spine
+T13	Medical-Anatomy 584 603	lower thoracolumbar
+T14	Medical-Problem 604 608;610 649	mild superior endplate compression deformity
+T15	Medical-Problem 682 687;689 709	bones appear demineralized
+E13	Medical-Problem:T15
+T16	Medical-Assertion 739 757	most suggestive of
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 758 783	mild pulmonary congestion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

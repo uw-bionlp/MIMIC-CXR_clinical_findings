@@ -1,0 +1,19 @@
+T1	Medical-Problem 220 240	persistent elevation
+T2	Medical-Anatomy 248 267	right hemidiaphragm
+T3	Medical-Anatomy 272 289	right middle lobe
+T4	Medical-Problem 290 296;298 318	linear atelectasis/scarring
+T5	Medical-Assertion 355 357	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 358 374	pleural effusion
+T7	Medical-Problem 379 391	pneumothorax
+T8	Medical-Problem 480 500	Persistent elevation
+T9	Medical-Anatomy 508 527	right hemidiaphragm
+T10	Medical-Problem 533 538	right
+E9	Medical-Problem:T10
+T11	Medical-Problem 582 609	significant interval change
+E10	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9

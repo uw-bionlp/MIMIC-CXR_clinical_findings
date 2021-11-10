@@ -1,0 +1,19 @@
+T1	Medical-Assertion 280 282	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 283 299	pleural effusion
+T3	Medical-Problem 303 315	pneumothorax
+T4	Medical-Problem 321 340	large consolidation
+T5	Medical-Anatomy 350 392	posterior portions of the right lower lobe
+T6	Medical-Assertion 394 398;400 413	most suggestive of
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 414 429	lobar pneumonia
+T8	Medical-Problem 482 516	Extensive right lower lobe opacity
+E6	Medical-Problem:T8
+T9	Medical-Assertion 517 527	suggesting
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 528 543	lobar pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

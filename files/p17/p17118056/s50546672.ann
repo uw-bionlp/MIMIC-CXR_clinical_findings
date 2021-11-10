@@ -1,0 +1,41 @@
+T1	Medical-Problem 461 472	obscuration
+T2	Medical-Anatomy 480 498	left hemidiaphragm
+T3	Medical-Assertion 505 516	may reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 518 541	atelectasis/positioning
+T5	Medical-Problem 555 574	early consolidation
+T6	Medical-Assertion 575 593	cannot be excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 597 605	Blunting
+T8	Medical-Anatomy 613 642	posterior costophrenic angles
+T9	Medical-Assertion 643 656	may represent
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 657 672	small effusions
+T11	Medical-Assertion 685 687	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 688 700	pneumothorax
+T13	Medical-Assertion 703 705	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 706 731	acute osseous abnormality
+T15	Medical-Problem 763 793	New retrocardiac opacification
+E10	Medical-Problem:T15
+T16	Medical-Problem 798 809	obscuration
+T17	Medical-Anatomy 817 821;823 836	left hemidiaphragm
+T18	Medical-Assertion 850 861	may reflect
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 862 873	atelectasis
+T20	Medical-Problem 877 896	focal consolidation
+T21	Medical-Problem 902 925	early infective process
+T22	Medical-Assertion 926 944	cannot be excluded
+A7	Medical-AssertionValue T22 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Anatomy:T17
+E13	Medical-Problem:T19 has-Medical-Assertion:T18
+E14	Medical-Problem:T20 has-Medical-Assertion:T18 has-Medical-Assertion:T22
+E15	Medical-Problem:T21 has-Medical-Assertion:T18 has-Medical-Assertion:T22

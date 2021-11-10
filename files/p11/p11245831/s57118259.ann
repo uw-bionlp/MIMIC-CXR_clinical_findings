@@ -1,0 +1,33 @@
+T1	Medical-Anatomy 330 335	lungs
+T2	Medical-Problem 350 363	consolidation
+T3	Medical-Assertion 368 370	no
+A1	Medical-AssertionValue T3 absent
+T4	Lesion-Description 371 377	masses
+E3	Lesion-Description:T4
+T5	Lesion-Anatomy 392 398	apical
+T6	Lesion-Description 399 405	masses
+T7	Medical-Problem 421 435	Hyperexpansion
+T8	Medical-Anatomy 443 448	lungs
+T9	Medical-Assertion 449 457	suggests
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 458 467	emphysema
+T11	Medical-Problem 470 490	Mild apical scarring
+E9	Medical-Problem:T11
+T12	Medical-Assertion 514 516	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 517 533	pleural effusion
+T14	Medical-Problem 537 549	pneumothorax
+T15	Medical-Problem 552 565;567 576	Mild S-shaped scoliosis
+T16	Medical-Anatomy 584 603	thoracolumbar spine
+T17	Lesion-Assertion 637 648	No evidence
+A4	Lesion-AssertionValue T17 absent
+T18	Lesion-Anatomy 652 661	pulmonary
+T19	Lesion-Description 662 668	masses
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Lesion-Description:T19 has-Lesion-Assertion:T17 has-Lesion-Anatomy:T18

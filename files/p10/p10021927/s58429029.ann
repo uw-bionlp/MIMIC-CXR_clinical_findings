@@ -1,0 +1,28 @@
+T1	Medical-Problem 291 300;302 323	Extensive parenchymal opacities
+T2	Medical-Assertion 329 344	mostly resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 393 416	bronchovascular opacity
+T4	Medical-Anatomy 424 440	right lower lobe
+T5	Medical-Assertion 447 450;452 474	can probably be attributed
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 475 486	atelectasis
+T7	Medical-Problem 499 530;532 543	suspected residual retrocardiac atelectasis
+T8	Medical-Assertion 564 583	no further evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 588 605	parenchymal edema
+T10	Medical-Problem 610 639	significant pleural effusions
+T11	Medical-Problem 682 701	pulmonary opacities
+T12	Medical-Problem 707 737	suspected residual atelectasis
+T13	Medical-Anatomy 746 767	posterior lower lobes
+T14	Medical-Assertion 773 775	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 776 798	definite acute process
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Assertion:T2 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T13
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

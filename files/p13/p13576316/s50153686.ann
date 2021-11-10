@@ -1,0 +1,43 @@
+T1	Medical-Problem 310 325	pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 366 375	Opacities
+T3	Medical-Anatomy 383 399	right lower lung
+T4	Medical-Assertion 419 430	may reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 431 442	atelectasis
+T6	Medical-Problem 451 460	infection
+T7	Medical-Assertion 461 479	cannot be excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 483 504	Moderate cardiomegaly
+E6	Medical-Problem:T8
+T9	Medical-Assertion 517 519	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 520 549	appreciable pleural effusions
+T11	Medical-Assertion 551 553	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 555 567	pneumothorax
+T13	Medical-Problem 570 583	Calcification
+T14	Medical-Anatomy 591 632;634 643	pleural surfaces, predominantly the right lung base
+T15	Medical-Problem 653 658	prior
+E11	Medical-Problem:T15
+T16	Medical-Problem 850 898	Significantly improved pulmonary edema, now mild
+E12	Medical-Problem:T16
+T17	Medical-Problem 901 919	Improved opacities
+T18	Medical-Anatomy 928 944	right lower lung
+T19	Medical-Assertion 945 956	may reflect
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 957 968	atelectasis
+T21	Medical-Problem 977 986	infection
+T22	Medical-Assertion 987 996;998 1006	cannot be excluded
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1012 1040	Stable moderate cardiomegaly
+E17	Medical-Problem:T23
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T18 has-Medical-Assertion:T22

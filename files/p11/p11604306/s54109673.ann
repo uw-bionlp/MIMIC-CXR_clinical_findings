@@ -1,0 +1,47 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 60	significant pneumothorax
+T3	Medical-Problem 73 100	Small left pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 107 118	atelectasis
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 216 220	lung
+T6	Lesion-Description 221 228	nodules
+T7	Lesion-Description 230 245	lymphadenopathy
+E6	Lesion-Description:T7
+T8	Lesion-Anatomy 253 263	paraspinal
+T9	Lesion-Description 264 268	mass
+T10	Medical-Problem 549 562	CONSOLIDATION
+T11	Medical-Anatomy 570 583	LEFT MID LUNG
+T12	Medical-Assertion 584 592	COULD BE
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 593 602	PNEUMONIA
+T14	Medical-Problem 606 618;620 625	RE-EXPANSION EDEMA
+ EDEMA
+E12	Medical-Problem:T14
+T15	Medical-Assertion 670 672	NO
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 673 685	PNEUMOTHORAX
+T17	Medical-Problem 687 694;696 701	PLEURAL FLUID
+T18	Medical-Problem 706 716	THICKENING
+T19	Medical-Anatomy 724 740	LEFT LOWER CHEST
+T20	Medical-Problem 772 791	CHRONIC ATELECTASIS
+E17	Medical-Problem:T20
+T21	Medical-Problem 874 891	NEW CONSOLIDATION
+T22	Medical-Anatomy 899 912	LEFT MID LUNG
+T23	Medical-Assertion 914 922	COULD BE
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 923 934	ATELECTASIS
+T25	Medical-Problem 938 950;952 957	RE-EXPANSION EDEMA
+ EDEMA
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T19
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Anatomy:T22
+E20	Medical-Problem:T24 has-Medical-Assertion:T23
+E21	Medical-Problem:T25 has-Medical-Assertion:T23

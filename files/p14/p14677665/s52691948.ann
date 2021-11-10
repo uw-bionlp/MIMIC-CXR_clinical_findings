@@ -1,0 +1,34 @@
+T1	Medical-Problem 403 415	cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 444 466;468 478	new pulmonary vascular congestion
+E2	Medical-Problem:T2
+T3	Medical-Problem 485 520	new moderate right pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 530 546	left hemi thorax
+T5	Medical-Problem 559 583	large peripheral opacity
+T6	Medical-Anatomy 601 619	left major fissure
+T7	Medical-Assertion 628 636	could be
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 639 663	pleural fluid loculation
+T9	Lesion-Anatomy 669 673	lung
+T10	Lesion-Description 674 680	lesion
+T11	Medical-Problem 692 701	pneumonia
+T12	Medical-Problem 706 718	lung abscess
+T13	Medical-Assertion 732 734	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 735 747	pneumothorax
+T15	Medical-Problem 795 799	Mild
+E13	Medical-Problem:T15
+T16	Medical-Problem 800 818	leftward deviation
+T17	Medical-Anatomy 827 868	trachea at just above the thoracic outlet
+T18	Medical-Assertion 869 884	could be due to
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 888 902;904 916	enlarged right thyroid lobe
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T7
+E11	Medical-Problem:T12 has-Medical-Assertion:T7
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

@@ -1,0 +1,17 @@
+T1	Medical-Assertion 256 258	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 259 274	pulmonary edema
+T3	Medical-Problem 277 293	Lung volumes are
+E2	Medical-Problem:T3
+T4	Medical-Problem 313 316;318 329	new atelectasis
+T5	Medical-Anatomy 333 348	both lung bases
+T6	Medical-Problem 373 380	hypoxia
+T7	Medical-Problem 383 390;392 405	Pleural effusions are
+E6	Medical-Problem:T7
+T8	Medical-Assertion 444 446	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 447 459	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

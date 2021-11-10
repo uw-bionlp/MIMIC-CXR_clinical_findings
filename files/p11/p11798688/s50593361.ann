@@ -1,0 +1,58 @@
+T1	Medical-Problem 187 214	acute parenchymal opacities
+T2	Medical-Anatomy 222 231	left apex
+T3	Medical-Assertion 313 323	suggestion
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 330 356	cystic or cavitary process
+T5	Medical-Problem 384 401;403 412	extensive bullous emphysema
+E4	Medical-Problem:T5
+T6	Medical-Assertion 435 444	uncertain
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 471 480;482 487	localized bulla
+T8	Medical-Problem 509 547	more central area of increased opacity
+T9	Medical-Assertion 568 595	could potentially represent
+A3	Medical-AssertionValue T9 possible
+T10	Lesion-Description 598 606	mycetoma
+E7	Lesion-Description:T10
+T11	Medical-Problem 613 666	Bilateral upper lobe pleural and parenchymal scarring
+E8	Medical-Problem:T11
+T12	Medical-Problem 769 786	chronic elevation
+T13	Medical-Anatomy 794 798	hila
+T14	Medical-Problem 803 838	associated architectural distortion
+T15	Medical-Problem 844 867	traction bronchiectasis
+T16	Medical-Problem 870 905	Bilateral calcified pleural plaques
+E13	Medical-Problem:T16
+T17	Medical-Problem 925 948	prior asbestos exposure
+E14	Medical-Problem:T17
+T18	Medical-Problem 951 977	Lung volumes are increased
+E15	Medical-Problem:T18
+T19	Medical-Problem 994 998	COPD
+E16	Medical-Problem:T19
+T20	Medical-Assertion 1034 1036	no
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1037 1053	pleural effusion
+T22	Medical-Problem 1057 1079	acute skeletal finding
+T23	Medical-Problem 1101 1126	Left apical consolidation
+E19	Medical-Problem:T23
+T24	Medical-Problem 1156 1169;1171 1212	newly visible underlying cystic or cavitary abnormality
+E20	Medical-Problem:T24
+T25	Medical-Assertion 1234 1249	could represent
+A5	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1254 1268	infected bulla
+T27	Medical-Problem 1270 1315	cavitary infection (semi-invasive Aspergillus
+T28	Medical-Problem 1318 1331	tuberculosis)
+T29	Lesion-Characteristic 1335 1343	cavitary
+T30	Lesion-Anatomy 1344 1348	lung
+T31	Lesion-Description 1349 1357	neoplasm
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T20
+E21	Medical-Problem:T26 has-Medical-Assertion:T25
+E22	Medical-Problem:T27 has-Medical-Assertion:T25
+E23	Medical-Problem:T28 has-Medical-Assertion:T25
+E26	Lesion-Description:T31 has-Lesion-Characteristic:T29 has-Lesion-Anatomy:T30

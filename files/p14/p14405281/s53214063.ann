@@ -1,0 +1,22 @@
+T1	Medical-Problem 246 277;279 292	interval decrease of right lung opacification
+E1	Medical-Problem:T1
+T2	Medical-Problem 337 357;359 384	interval improvement of large pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 387 403	Residual opacity
+T4	Medical-Anatomy 411 426	lung parenchyma
+T5	Medical-Assertion 430 436	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 438 455	reexpansion edema
+T7	Lesion-Description 458 476	Nodular thickening
+T8	Lesion-Anatomy 484 496	right pleura
+T9	Medical-Assertion 630 632	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 633 655	right pleural effusion
+T11	Medical-Assertion 668 670	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 671 683	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

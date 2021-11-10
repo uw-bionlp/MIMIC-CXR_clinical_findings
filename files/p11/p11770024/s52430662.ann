@@ -1,0 +1,33 @@
+T1	Medical-Problem 242 271	minimal bibasilar atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Problem 282 311;313 323	small component of underlying aspiration
+T3	Medical-Assertion 324 340	could be present
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 343 372	Lingular atelectasis/scarring
+E3	Medical-Problem:T4
+T5	Lesion-Characteristic 383 389	Subtle
+T6	Lesion-Size 391 397	2-3 mm
+T7	Lesion-Description 398 405	nodular
+E6	Lesion-Description:T7
+T8	Lesion-Description 406 413	opacity
+T9	Lesion-Anatomy 434 466;468 492	lateral right lung base over the anterior right fifth rib
+T10	Lesion-Size-Trend 496 502	stable
+A2	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 536 538	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 540 556	pleural effusion
+T13	Medical-Problem 560 572	pneumothorax
+T14	Medical-Problem 665 684	Basilar atelectasis
+E11	Medical-Problem:T14
+T15	Medical-Assertion 690 698	possible
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 699 720	underlying aspiration
+T17	Medical-Assertion 735 737	no
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 738 767	acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

@@ -1,0 +1,45 @@
+T1	Lesion-Size 29 41	3.5 x 2.7 cm
+T2	Lesion-Characteristic 42 50	somewhat
+T3	Lesion-Characteristic 51 62	ill-defined
+T4	Lesion-Description 63 70	opacity
+T5	Lesion-Anatomy 78 106;108 117	right perihilar region/right  mid lung
+T6	Medical-Assertion 149 164	could be due to
+A1	Medical-AssertionValue T6 possible
+T7	Lesion-Characteristic 165 175	underlying
+T8	Lesion-Anatomy 191 200	pulmonary
+T9	Lesion-Description 201 207	lesion
+T10	Medical-Problem 606 613	opacity
+E9	Medical-Problem:T10
+T11	Lesion-Size 638 650	3.5 x 2.7 cm
+T12	Medical-Assertion 684 699	could be due to
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 700 709	infection
+T14	Lesion-Characteristic 720 730	underlying
+T15	Lesion-Anatomy 731 740	pulmonary
+T16	Lesion-Description 741 747	lesion
+T17	Lesion-Assertion 757 769	not excluded
+A3	Lesion-AssertionValue T17 possible
+T18	Medical-Assertion 793 795	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 796 803	pleural
+E15	Medical-Problem:T19
+T20	Medical-Problem 804 812	effusion
+T21	Medical-Problem 817 829	pneumothorax
+T22	Lesion-Size 982 994	3.5 x 2.7 cm
+T23	Lesion-Characteristic 995 1003	somewhat
+T24	Lesion-Description 1016 1023	opacity
+T25	Lesion-Anatomy 1031 1046;1048 1069	right perihilar region/right mid lung
+T26	Medical-Assertion 1101 1116	could be due to
+A5	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1118 1138	underlying infection
+T28	Lesion-Anatomy 1142 1151	pulmonary
+T29	Lesion-Description 1152 1158	lesion
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E14	Lesion-Description:T16 has-Lesion-Size-Present:T11 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15 has-Lesion-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T18
+E20	Lesion-Description:T24 has-Lesion-Size-Present:T22 has-Lesion-Characteristic:T23 has-Lesion-Anatomy:T25
+E22	Medical-Problem:T27 has-Medical-Assertion:T26
+E24	Lesion-Description:T29 has-Lesion-Anatomy:T25 has-Lesion-Anatomy:T28

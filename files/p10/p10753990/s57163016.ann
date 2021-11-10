@@ -1,0 +1,16 @@
+T1	Medical-Problem 377 389;391 398	questionable opacity
+T2	Medical-Anatomy 409 420	right hilus
+T3	Lesion-Assertion 422 429	unclear
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Anatomy 444 453	pulmonary
+T5	Lesion-Description 454 460	nodule
+T6	Medical-Problem 465 485	summation of shadows
+E5	Medical-Problem:T6
+T7	Medical-Assertion 581 583	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 584 596	pneumothorax
+T9	Medical-Problem 600 616	pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

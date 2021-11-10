@@ -1,0 +1,29 @@
+T1	Medical-Problem 299 312	Mild blunting
+T2	Medical-Anatomy 321 335	right CP angle
+T3	Medical-Assertion 366 381	could represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 382 389;391 401	pleural thickening
+T5	Medical-Assertion 404 406	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 407 426	focal consolidation
+T7	Medical-Problem 430 442	pneumothorax
+T8	Medical-Assertion 445 447	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 448 453	signs
+T10	Medical-Problem 457 462	edema
+T11	Medical-Assertion 536 538	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 539 543;545 548	free air
+T13	Medical-Anatomy 559 578	right hemidiaphragm
+T14	Medical-Assertion 596 598	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 599 613	acute findings
+T16	Medical-Anatomy 621 626	chest
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T16

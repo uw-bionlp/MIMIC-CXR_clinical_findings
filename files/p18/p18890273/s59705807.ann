@@ -1,0 +1,33 @@
+T1	Medical-Problem 253 280	near complete opacification
+T2	Medical-Anatomy 288 303	left hemithorax
+T3	Medical-Problem 309 313	only
+T4	Medical-Anatomy 359 378	mid/upper left lung
+T5	Medical-Assertion 429 431	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 432 449	mediastinal shift
+T7	Medical-Problem 456 476;478 486	left heart border is obscured
+E6	Medical-Problem:T7
+T8	Medical-Problem 627 638	indentation
+T9	Medical-Anatomy 649 674	upper margin of the stent
+T10	Medical-Problem 746 758	Degenerative
+E9	Medical-Problem:T10
+T11	Medical-Problem 891 918	near complete opacification
+T12	Medical-Anatomy 926 942	left hemi thorax
+T13	Medical-Assertion 993 1008	could represent
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1013 1035	large pleural effusion
+T15	Medical-Problem 1042 1053	atelectasis
+T16	Medical-Problem 1063 1072	infection
+T17	Lesion-Characteristic 1076 1086	underlying
+T18	Lesion-Description 1087 1093	lesion
+T19	Lesion-Assertion 1098 1106	entirely
+A3	Lesion-AssertionValue T19 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T13
+E16	Lesion-Description:T18 has-Lesion-Characteristic:T17 has-Lesion-Assertion:T19

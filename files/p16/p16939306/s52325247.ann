@@ -1,0 +1,23 @@
+T1	Medical-Problem 255 284	Right lung volume remains low
+E1	Medical-Problem:T1
+T2	Medical-Assertion 298 300	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 301 311;313 324	focal lung abnormality
+T4	Medical-Problem 342 371	Mediastinal fat is interposed
+T5	Medical-Anatomy 384 391;393 397	cardiac apex
+T6	Medical-Assertion 495 497	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 498 520	large pleural effusion
+T8	Medical-Problem 524 536	pneumothorax
+T9	Medical-Assertion 608 610	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 611 631	focal consolidations
+T11	Medical-Assertion 632 642	concerning
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 647 656	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T11

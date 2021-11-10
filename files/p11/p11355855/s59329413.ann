@@ -1,0 +1,17 @@
+T1	Medical-Assertion 342 353	potentially
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 354 380	new right mid lung opacity
+T3	Medical-Anatomy 389 403;405 418	just above the minor fissure
+T4	Lesion-Assertion 424 429	might
+A2	Lesion-AssertionValue T4 possible
+T5	Medical-Problem 438 447	pulmonary
+E3	Medical-Problem:T5
+T6	Lesion-Description 448 454	nodule
+T7	Medical-Assertion 612 614	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 615 631	pleural effusion
+T9	Medical-Problem 636 648	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E4	Lesion-Description:T6 has-Lesion-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7

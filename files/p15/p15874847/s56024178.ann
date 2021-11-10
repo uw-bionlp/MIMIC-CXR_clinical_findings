@@ -1,0 +1,25 @@
+T1	Medical-Problem 243 268	extensive pleural disease
+T2	Medical-Anatomy 302 318	bilateral apices
+T3	Medical-Problem 330 348;350 354	volume loss on the left
+E3	Medical-Problem:T3
+T4	Lesion-Assertion 377 379	no
+A1	Lesion-AssertionValue T4 absent
+T5	Lesion-Size-Trend 380 383	new
+A2	Lesion-Size-TrendValue T5 new
+T6	Lesion-Anatomy 384 393	pulmonary
+T7	Lesion-Description 394 398	mass
+T8	Lesion-Description 402 408	nodule
+T9	Medical-Problem 420 426;428 436	stable blunting
+T10	Medical-Anatomy 444 463	costophrenic angles
+T11	Medical-Assertion 470 483	may be on the
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 493 500;502 512	pleural thickening
+T13	Medical-Assertion 515 517	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 518 530	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Size-Trend:T5 has-Lesion-Anatomy:T6
+E6	Lesion-Description:T8 has-Lesion-Assertion:T4 has-Lesion-Size-Trend:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

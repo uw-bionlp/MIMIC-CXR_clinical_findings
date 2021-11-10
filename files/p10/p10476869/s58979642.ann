@@ -1,0 +1,30 @@
+T1	Medical-Problem 366 373	opacity
+T2	Medical-Anatomy 382 397	left upper lobe
+T3	Medical-Problem 406 428	bulging of the fissure
+T4	Lesion-Anatomy 480 495	left upper lobe
+T5	Lesion-Description 496 502	lesion
+T6	Lesion-Size-Trend 506 529	not appreciably changed
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Anatomy 586 591	lungs
+T8	Medical-Assertion 613 620	without
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 621 637	pleural effusion
+T10	Medical-Problem 641 653	pneumothorax
+T11	Medical-Problem 777 797	Degenerative changes
+T12	Medical-Anatomy 805 819	thoracic spine
+T13	Medical-Problem 825 833;835 846	bridging osteophytes
+T14	Lesion-Size-Trend 874 880	Stable
+A3	Lesion-Size-TrendValue T14 no-change
+T15	Lesion-Anatomy 881 896	left upper lobe
+T16	Lesion-Description 897 903	lesion
+T17	Lesion-Characteristic 909 931	bulging of the fissure
+T18	Medical-Problem 967 1003	Klebsiella and Haemophilus pneumonia
+E15	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E13	Lesion-Description:T16 has-Lesion-Size-Trend:T14 has-Lesion-Anatomy:T15 has-Lesion-Characteristic:T17

@@ -1,0 +1,27 @@
+T1	Medical-Assertion 221 223	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 225 241	pleural effusion
+T3	Medical-Problem 245 257	pneumothorax
+T4	Medical-Problem 280 287	opacity
+T5	Medical-Anatomy 295 300;302 311	right lung base
+T6	Medical-Assertion 315 332	no longer present
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 335 342	Opacity
+T8	Medical-Anatomy 350 368	left mid lung zone
+T9	Medical-Problem 375 401	associated rib destruction
+T10	Lesion-Anatomy 427 442	left chest wall
+T11	Lesion-Description 443 447	mass
+T12	Medical-Assertion 460 462	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 463 486	new focal consolidation
+T14	Medical-Assertion 487 501	concerning for
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 502 511	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

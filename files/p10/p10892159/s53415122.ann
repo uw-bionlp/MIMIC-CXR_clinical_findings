@@ -1,0 +1,18 @@
+T1	Medical-Assertion 242 244	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 246 262	pleural effusion
+T3	Medical-Problem 266 278	pneumothorax
+T4	Medical-Problem 369 380	Indentation
+T5	Medical-Anatomy 391 395;397 437	left trachea above the level of the clavicles
+T6	Lesion-Assertion 438 444	likely
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Anatomy 455 467	left thyroid
+T8	Lesion-Description 468 474	nodule
+T9	Medical-Assertion 491 493	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 494 523	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

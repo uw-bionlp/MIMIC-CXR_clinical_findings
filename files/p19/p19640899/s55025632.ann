@@ -1,0 +1,31 @@
+T1	Medical-Problem 349 364;366 380	mildly tortuous thoracic aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 512 519;521 531	Diffuse prominence
+T3	Medical-Anatomy 539 561	pulmonary interstitium
+T4	Medical-Anatomy 589 594;596 601	lower lobes
+T5	Medical-Problem 656 671	volume overload
+T6	Medical-Problem 675 696	Bibasilar atelectasis
+E6	Medical-Problem:T6
+T7	Medical-Assertion 783 785	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 786 805	focal consolidation
+T9	Medical-Assertion 817 819	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 820 827;829 837	pleural effusion
+T11	Medical-Problem 841 853	pneumothorax
+T12	Medical-Problem 874 891	Stable prominence
+T13	Medical-Anatomy 899 921	pulmonary interstitium
+T14	Medical-Assertion 922 939	likely relates to
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 940 946;948 956	volume overload
+T16	Medical-Assertion 994 996	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 997 1025	definite focal consolidation
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

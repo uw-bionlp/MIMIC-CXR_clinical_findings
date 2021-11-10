@@ -1,0 +1,15 @@
+T1	Medical-Problem 726 745;747 755	right-sided pleural effusion
+T2	Medical-Anatomy 772 805	right-sided lateral pleural sinus
+T3	Medical-Problem 961 968;970 978	pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 1073 1094	left-sided hemithorax
+T5	Medical-Assertion 1169 1176	absence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 1184 1187;1189 1206	new acute infiltrates
+T7	Medical-Assertion 1209 1211	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 1212 1224	pneumothorax
+T9	Medical-Anatomy 1246 1257	apical area
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9

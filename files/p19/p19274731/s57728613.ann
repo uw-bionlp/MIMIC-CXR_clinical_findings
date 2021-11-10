@@ -1,0 +1,19 @@
+T1	Medical-Problem 178 225	Very small region of peribronchial infiltration
+T2	Medical-Anatomy 233 249;251 327;329 347	left lower lobe, projecting just inferior to the apex of the left hemidiaphragm medial to the midclavicular line
+T3	Medical-Assertion 398 400	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 402 418	pleural effusion
+T5	Lesion-Characteristic 422 433	evidence of
+T6	Lesion-Characteristic 434 441	central
+T7	Lesion-Description 442 452	adenopathy
+T8	Medical-Problem 459 475	lung abnormality
+E7	Medical-Problem:T8
+T9	Medical-Assertion 477 492	could be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 493 502	pneumonia
+T11	Medical-Problem 506 523	recent aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

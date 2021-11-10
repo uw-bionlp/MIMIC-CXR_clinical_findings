@@ -1,0 +1,45 @@
+T1	Medical-Problem 335 360	area of increased opacity
+T2	Medical-Anatomy 368 383	right lung base
+T3	Medical-Assertion 394 408	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 412 430	infectious process
+T5	Medical-Problem 432 447	Streaky opacity
+T6	Medical-Anatomy 455 469	left lung base
+T7	Medical-Assertion 474 480	likely
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 481 492	atelectasis
+T9	Medical-Problem 503 513	prominence
+T10	Medical-Anatomy 521 525	hila
+T11	Lesion-Description 543 558	lymphadenopathy
+E9	Lesion-Description:T11
+T12	Medical-Problem 595 621	Worsening apical opacities
+T13	Medical-Anatomy 630 636	apices
+T14	Medical-Assertion 637 650	could reflect
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 651 672	worsening sarcoidosis
+T16	Medical-Assertion 683 685	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 686 693;695 703	pleural effusion
+T18	Medical-Problem 707 719	pneumothorax
+T19	Medical-Problem 744 765	New increased opacity
+T20	Medical-Anatomy 773 788	right lung base
+T21	Medical-Assertion 792 806	concerning for
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 807 816	pneumonia
+T23	Medical-Problem 907 932	Biapical apical opacities
+E18	Medical-Problem:T23
+T24	Medical-Assertion 952 965	could reflect
+A6	Medical-AssertionValue T24 possible
+T25	Medical-Problem 966 975;977 988	worsening sarcoidosis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E19	Medical-Problem:T25 has-Medical-Assertion:T24

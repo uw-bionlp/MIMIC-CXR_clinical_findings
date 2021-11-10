@@ -1,0 +1,27 @@
+T1	Medical-Problem 233 261	increase in subcutaneous gas
+T2	Medical-Anatomy 263 328	tracking along the right hemithorax and now extending to the neck
+T3	Medical-Problem 346 373	unusually sharp demarcation
+T4	Medical-Anatomy 381 399	right heart border
+T5	Medical-Problem 407 418;420 427	thin rim of lucency
+T6	Medical-Anatomy 437 456	cardiophrenic angle
+T7	Medical-Problem 477 496;498 510	medial component of pneumothorax
+T8	Medical-Problem 616 643	persistent low lung volumes
+E8	Medical-Problem:T8
+T9	Medical-Problem 650 672	associated atelectasis
+E9	Medical-Problem:T9
+T10	Medical-Problem 677 701	mild vascular congestion
+E10	Medical-Problem:T10
+T11	Medical-Problem 721 759	Increase in amount of subcutaneous gas
+T12	Medical-Anatomy 767 783	right hemithorax
+T13	Medical-Problem 800 807	lucency
+T14	Medical-Anatomy 818 836	right heart border
+T15	Medical-Assertion 837 847	suggesting
+A1	Medical-AssertionValue T15 possible
+T16	Medical-Problem 850 869;871 883	medial component of pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E11	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T13 has-Medical-Anatomy:T14
+E15	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

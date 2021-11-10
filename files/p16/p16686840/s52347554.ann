@@ -1,0 +1,32 @@
+T1	Medical-Problem 124 157	Small bilateral pleural effusions
+T2	Medical-Assertion 162 170	probable
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 171 182	atelectasis
+T4	Medical-Anatomy 192 207	right lung base
+T5	Medical-Problem 704 731;733 757	persistent but stable small left apical pneumothorax
+E4	Medical-Problem:T5
+T6	Medical-Problem 760 777	Improved aeration
+T7	Medical-Problem 783 803	persistent opacities
+T8	Medical-Anatomy 807 811;813 823	both lung bases
+T9	Medical-Assertion 830 841	may reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 842 853	atelectasis
+T11	Medical-Problem 864 873	pneumonia
+T12	Medical-Problem 877 887	aspiration
+T13	Medical-Assertion 889 914	should also be considered
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Assertion 917 925	Probable
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 926 960	small associated pleural effusions
+T16	Medical-Assertion 963 965	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 967 982	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4
+E2	Medical-Problem:T3 has-Medical-Assertion:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T13
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

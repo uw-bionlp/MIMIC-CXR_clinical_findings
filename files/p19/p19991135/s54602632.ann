@@ -1,0 +1,23 @@
+T1	Medical-Assertion 193 200	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 201 222	definite pneumothorax
+T3	Medical-Problem 277 281	some
+E2	Medical-Problem:T3
+T4	Medical-Problem 282 301	atelectatic changes
+T5	Medical-Anatomy 309 313	base
+T6	Medical-Problem 316 325;327 349	Extensive subcutaneous emphysema
+T7	Medical-Anatomy 375 399	right lateral chest wall
+T8	Medical-Problem 403 416	Opacification
+T9	Medical-Anatomy 427 458	mediastinal border on the right
+T10	Medical-Assertion 465 478	could reflect
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 480 507	collection of pleural fluid
+T12	Medical-Problem 529 537	hematoma
+T13	Medical-Assertion 538 556	cannot be excluded
+A3	Medical-AssertionValue T13 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T13

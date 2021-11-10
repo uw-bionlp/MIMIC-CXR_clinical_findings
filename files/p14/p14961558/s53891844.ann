@@ -1,0 +1,28 @@
+T1	Medical-Problem 270 286	linear interface
+T2	Medical-Anatomy 294 300;302 317	medial left lower lung
+T3	Medical-Problem 323 350	adjacent lung opacification
+T4	Medical-Problem 418 427	Prominent
+E4	Medical-Problem:T4
+T5	Medical-Problem 428 439;441 451	mediastinal contour is
+E5	Medical-Problem:T5
+T6	Medical-Problem 452 462	due to fat
+E6	Medical-Problem:T6
+T7	Medical-Assertion 529 535	if any
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 536 558	right pleural effusion
+T9	Medical-Assertion 623 636	may represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 639 656;658 677	small to moderate medial pneumothorax
+T11	Medical-Problem 727 734	Opacity
+T12	Medical-Anatomy 742 756	left lung base
+T13	Medical-Assertion 760 773	likely due to
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 774 785	atelectasis
+T15	Medical-Problem 789 802;804 811	postoperative changes
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

@@ -1,0 +1,19 @@
+T1	Medical-Problem 282 311	Mild to moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 324 354	Right lower lobe consolidation
+E2	Medical-Problem:T2
+T3	Medical-Problem 382 410	still persistent enlargement
+T4	Medical-Anatomy 418 429	right hilum
+T5	Lesion-Assertion 431 437;439 449	likely reflecting
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 450 460	adenopathy
+T7	Medical-Problem 505 517;519 540	Retrocardiac opacities/atelectasis
+E6	Medical-Problem:T7
+T8	Medical-Assertion 566 568	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 569 581	pneumothorax
+T10	Medical-Problem 585 592;594 602	pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Lesion-Description:T6 has-Lesion-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

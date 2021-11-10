@@ -1,0 +1,39 @@
+T1	Medical-Problem 29 57	Small right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 62 85	right basal atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Assertion 136 144	possible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 145 164	deep sulcus sign on
+T5	Medical-Problem 180 203	small left pneumothorax
+T6	Medical-Assertion 204 222	cannot be excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 874 896	subcutaneous emphysema
+E5	Medical-Problem:T7
+T8	Medical-Problem 937 971	small bilateral layering effusions
+E6	Medical-Problem:T8
+T9	Medical-Problem 977 994;996 1005	increasing patchy opacities
+T10	Medical-Anatomy 1009 1019	both bases
+T11	Medical-Assertion 1026 1039	may represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1040 1063	compressive atelectasis
+T13	Medical-Problem 1075 1085	aspiration
+T14	Medical-Problem 1089 1098	pneumonia
+T15	Medical-Assertion 1099 1124	should also be considered
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Assertion 1127 1129	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1130 1148	large pneumothorax
+T18	Medical-Problem 1153 1168	Pulmonary edema
+E13	Medical-Problem:T18
+T19	Medical-Anatomy 1304 1317	midclavicular
+T20	Medical-Anatomy 1322 1347	left fifth posterolateral
+T21	Medical-Problem 1348 1361	rib fractures
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11 has-Medical-Assertion:T15
+E11	Medical-Problem:T14 has-Medical-Anatomy:T10 has-Medical-Assertion:T11 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Anatomy:T20

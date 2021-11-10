@@ -1,0 +1,31 @@
+T1	Medical-Problem 415 428	cephalization
+E1	Medical-Problem:T1
+T2	Medical-Problem 446 475	pulmonary venous hypertension
+E2	Medical-Problem:T2
+T3	Medical-Assertion 481 483	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 484 505	overt pulmonary edema
+T5	Medical-Assertion 508 510	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 511 516;518 540	focal airspace consolidation
+T7	Medical-Assertion 541 551	to suggest
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 552 561	pneumonia
+T9	Lesion-Characteristic 569 578	calcified
+T10	Lesion-Description 579 585	nodule
+T11	Lesion-Anatomy 594 608	right mid lung
+T12	Lesion-Size-Trend 609 615	stable
+A4	Lesion-Size-TrendValue T12 no-change
+T13	Lesion-Characteristic 667 676	calcified
+T14	Lesion-Description 677 686	granuloma
+T15	Lesion-Assertion 689 691	No
+A5	Lesion-AssertionValue T15 absent
+T16	Medical-Problem 692 709	pleural effusions
+E11	Medical-Problem:T16
+T17	Medical-Problem 713 725	pneumothorax
+E12	Medical-Problem:T17
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Lesion-Description:T10 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T12
+E10	Lesion-Description:T14 has-Lesion-Anatomy:T11 has-Lesion-Characteristic:T13

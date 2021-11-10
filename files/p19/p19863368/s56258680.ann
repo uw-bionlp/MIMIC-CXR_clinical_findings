@@ -1,0 +1,45 @@
+T1	Medical-Problem 383 392	effusion?
+E1	Medical-Problem:T1
+T2	Medical-Problem 562 589;591 625	new small bilateral pleural effusions, left greater than right
+E2	Medical-Problem:T2
+T3	Medical-Problem 627 650	Lung volumes remain low
+E3	Medical-Problem:T3
+T4	Medical-Problem 683 707	new mild pulmonary edema
+E4	Medical-Problem:T4
+T5	Medical-Assertion 719 721	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 722 734	pneumothorax
+T7	Medical-Problem 801 809	thoracic
+E6	Medical-Problem:T7
+T8	Medical-Problem 810 813;815 823	rib fracture
+T9	Medical-Assertion 827 848	not seen on this exam
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 898 917	increased elevation
+T11	Medical-Anatomy 925 930;932 945	right hemidiaphragm
+T12	Medical-Assertion 947 960	likely due to
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 978 999	worsening atelectasis
+T14	Medical-Problem 1005 1021	pleural effusion
+T15	Medical-Problem 1120 1143	increased opacification
+T16	Medical-Anatomy 1154 1159;1161 1182	right paratracheal location
+T17	Medical-Assertion 1184 1205	which could be due to
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1208 1227	developing hematoma
+T19	Medical-Assertion 1263 1265	no
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1266 1278	pneumothorax
+T21	Medical-Problem 1299 1322	Increased opacification
+T22	Medical-Anatomy 1333 1360	right paratracheal location
+T23	Medical-Assertion 1361 1374	may be due to
+A6	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1378 1397	developing hematoma
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T22
+E18	Medical-Problem:T24 has-Medical-Anatomy:T22 has-Medical-Assertion:T23

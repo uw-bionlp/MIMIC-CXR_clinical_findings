@@ -1,0 +1,25 @@
+T1	Medical-Problem 163 184	moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 256 291	moderate aortic knob calcifications
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 294 299	Lungs
+T4	Medical-Problem 304 324	mildly hyperinflated
+T5	Medical-Assertion 330 332	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 333 352	focal consolidation
+T7	Medical-Problem 354 370	pleural effusion
+T8	Medical-Problem 375 387	pneumothorax
+T9	Lesion-Characteristic 400 409	calcified
+T10	Lesion-Anatomy 410 428	right thyroid lobe
+T11	Lesion-Description 429 435	nodule
+T12	Medical-Problem 478 490	Cardiomegaly
+E11	Medical-Problem:T12
+T13	Medical-Assertion 493 495	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 496 533	other acute cardiopulmonary pathology
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E10	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,27 @@
+T1	Medical-Problem 240 245	lungs
+E1	Medical-Problem:T1
+T2	Medical-Problem 250 263	low in volume
+E2	Medical-Problem:T2
+T3	Medical-Problem 344 354	Prominence
+T4	Medical-Anatomy 358 367	both hila
+T5	Medical-Problem 400 409	elevation
+T6	Medical-Anatomy 417 427	left hilus
+T7	Medical-Assertion 429 446	likely related to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 447 467	left apical scarring
+T9	Medical-Problem 474 489	ossific density
+E8	Medical-Problem:T9
+T10	Lesion-Characteristic 542 557	well-corticated
+T11	Lesion-Characteristic 558 565	osseous
+T12	Lesion-Description 566 572	lesion
+T13	Lesion-Anatomy 589 605	left mid humerus
+T14	Medical-Assertion 625 627	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 628 643	acute fractures
+T16	Medical-Problem 647 680	acute intrathoracic abnormalities
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14

@@ -1,0 +1,24 @@
+T1	Medical-Problem 286 307	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 423 432;434 448	extensive calcifications
+T3	Medical-Anatomy 456 467	aortic arch
+T4	Lesion-Characteristic 472 481	prominent
+T5	Lesion-Characteristic 482 491	calcified
+T6	Lesion-Anatomy 492 502	left hilar
+T7	Lesion-Description 503 507	node
+T8	Lesion-Size-Trend 517 526	unchanged
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Assertion 587 589	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 591 605	large effusion
+T11	Medical-Assertion 610 612	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 613 625	pneumothorax
+T13	Medical-Assertion 697 704;706 714	without evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 718 749	acute intrathoracic abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

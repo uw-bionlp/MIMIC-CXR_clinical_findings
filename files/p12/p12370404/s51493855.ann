@@ -1,0 +1,22 @@
+T1	Medical-Problem 295 322	Heterogeneous opacification
+T2	Medical-Anatomy 326 337	both lungs,
+T3	Medical-Assertion 384 392	probably
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 410 425	pulmonary edema
+T5	Medical-Problem 430 442;444 453	disseminated infection
+T6	Medical-Problem 456 487	Moderate right pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Problem 515 536	asymmetric thickening
+T8	Medical-Anatomy 544 570	left apical pleural margin
+T9	Medical-Problem 579 589;591 604	peripheral consolidation
+E8	Medical-Problem:T9
+T10	Medical-Problem 613 632	adjacent cavitation
+E9	Medical-Problem:T10
+T11	Medical-Assertion 782 784	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 785 797	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

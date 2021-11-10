@@ -1,0 +1,29 @@
+T1	Medical-Assertion 391 402	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 408 424	pleural effusion
+T3	Medical-Problem 426 431	edema
+T4	Medical-Problem 433 446	consolidation
+T5	Medical-Problem 452 464	pneumothorax
+T6	Medical-Problem 544 558	mediastinum is
+E5	Medical-Problem:T6
+T7	Medical-Assertion 559 562	not
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 563 570	widened
+T9	Lesion-Assertion 573 575	No
+A3	Lesion-AssertionValue T9 absent
+T10	Lesion-Characteristic 576 586	concerning
+T11	Lesion-Characteristic 587 594	osseous
+T12	Lesion-Description 596 603	lesions
+T13	Medical-Problem 632 662	Bilateral degenerative changes
+T14	Medical-Anatomy 670 672;674 697	AC joints of the shoulders
+T15	Medical-Assertion 731 733	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 734 749	focal pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T1
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T12 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

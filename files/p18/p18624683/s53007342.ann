@@ -1,0 +1,28 @@
+T1	Medical-Problem 540 559;561 568	patchy left basilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 585 605	resolved atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 608 633	Persistent linear opacity
+T4	Medical-Anatomy 642 652	right base
+T5	Medical-Assertion 653 668	likely reflects
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 669 693	subsegmental atelectasis
+T7	Medical-Assertion 696 707	No evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 712 727	pulmonary edema
+T9	Medical-Assertion 833 835	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 836 848	pneumothorax
+T11	Medical-Problem 851 861;863 870	Increasing opacity
+T12	Medical-Anatomy 878 888	right apex
+T13	Medical-Problem 1025 1051	evolving air space process
+T14	Medical-Problem 1055 1077	upper lobe atelectasis
+T15	Medical-Assertion 1078 1087;1089 1106	cannot be entirely excluded
+A4	Medical-AssertionValue T15 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T13 has-Medical-Anatomy:T12 has-Medical-Assertion:T15
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T15

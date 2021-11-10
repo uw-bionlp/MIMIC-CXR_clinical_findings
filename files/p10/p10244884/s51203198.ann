@@ -1,0 +1,15 @@
+T1	Medical-Problem 114 124	pneumonia?
+E1	Medical-Problem:T1
+T2	Medical-Problem 177 207	Moderate left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 217 242	Progressive consolidation
+T4	Medical-Anatomy 250 254;256 279	left mid and lower lung zone
+T5	Medical-Assertion 294 312	most likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 313 322;324 380	pneumonia superimposed on longstanding left lower lobe atelectasis
+T7	Medical-Assertion 593 595	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 596 608	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

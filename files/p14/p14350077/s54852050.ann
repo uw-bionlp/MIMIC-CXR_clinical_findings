@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 233 238	lungs
+T2	Medical-Assertion 250 257	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 258 263;265 278	focal consolidation
+T4	Medical-Problem 290 299	pneumonia
+T5	Medical-Assertion 311 313	no
+A2	Medical-AssertionValue T5 absent
+T6	Lesion-Characteristic 314 322	definite
+T7	Lesion-Anatomy 323 328	hilar
+T8	Lesion-Description 330 345	lymphadenopathy
+T9	Medical-Problem 349 389	findings of granulomatous disease.  Mild
+T10	Medical-Problem 390 400;402 414	peripheral reticulation
+E8	Medical-Problem:T10
+T11	Medical-Assertion 487 489	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 490 506	pleural effusion
+T13	Medical-Problem 510 522	pneumothorax
+T14	Medical-Assertion 540 542	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 586 598	reticulation
+E11	Medical-Problem:T15
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T5
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

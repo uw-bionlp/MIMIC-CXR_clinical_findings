@@ -1,0 +1,31 @@
+T1	Medical-Assertion 249 251	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 252 265;267 275	displaced rib fracture
+T3	Medical-Assertion 278 280	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 281 297	pleural effusion
+T5	Medical-Problem 299 311	pneumothorax
+T6	Medical-Problem 315 343	focal airspace consolidation
+T7	Lesion-Characteristic 349 358	calcified
+T8	Lesion-Anatomy 359 374	left upper lobe
+T9	Lesion-Description 375 384	granuloma
+T10	Lesion-Size-Trend 388 397	unchanged
+A3	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Problem 400 419	Severe cardiomegaly
+E8	Medical-Problem:T11
+T12	Medical-Problem 440 459	obvious enlargement
+T13	Medical-Anatomy 467 479	right atrium
+T14	Medical-Problem 517 548	Multilevel degenerative changes
+E11	Medical-Problem:T14
+T15	Medical-Problem 569 585	osteopenic spine
+E12	Medical-Problem:T15
+T16	Medical-Assertion 602 604	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 605 627	displaced rib fracture
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T3
+E7	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

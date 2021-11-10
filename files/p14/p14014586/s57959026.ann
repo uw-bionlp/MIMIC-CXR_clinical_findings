@@ -1,0 +1,46 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 61	acute cardiopulmonary process
+T3	Lesion-Anatomy 65 76	Right-sided
+T4	Lesion-Description 77 84	nodules
+T5	Lesion-Anatomy 85 95	projecting
+T6	Lesion-Anatomy 105 115	lung bases
+T7	Lesion-Size-Trend 131 137	stable
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 559 566	without
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 567 572	focal
+E6	Medical-Problem:T9
+T10	Medical-Problem 573 586	consolidation
+T11	Medical-Assertion 589 591	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 592 608	pleural effusion
+T13	Medical-Problem 613 625	pneumothorax
+T14	Lesion-Count 636 644	Multiple
+T15	Lesion-Description 645 652	nodules
+T16	Lesion-Anatomy 670 675	right
+T17	Lesion-Anatomy 676 688;690 694	mid to lower lung
+T18	Lesion-Characteristic 710 726	likely calcified
+T19	Lesion-Size-Trend 730 739	unchanged
+A5	Lesion-Size-TrendValue T19 no-change
+T20	Lesion-Description 761 767	nodule
+E15	Lesion-Description:T20
+T21	Medical-Anatomy 789 813	anterior right sixth rib
+T22	Medical-Assertion 814 841	could potentially represent
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 845 858	nipple shadow
+T24	Medical-Assertion 1021 1023	No
+A7	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1024 1053	acute cardiopulmonary process
+T26	Lesion-Size-Trend 1122 1128	stable
+A8	Lesion-Size-TrendValue T26 no-change
+T27	Medical-Assertion 1151 1164	may represent
+A9	Medical-AssertionValue T27 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Count:T14 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T17 has-Lesion-Characteristic:T18 has-Lesion-Size-Trend:T19
+E17	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E18	Medical-Problem:T25 has-Medical-Assertion:T24

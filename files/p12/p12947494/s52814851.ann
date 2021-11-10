@@ -1,0 +1,30 @@
+T1	Medical-Anatomy 211 215;217 230	left hemidiaphragm
+T2	Medical-Problem 239 269	elevated of unknown chronicity
+T3	Medical-Problem 272 291	Increased opacities
+T4	Medical-Anatomy 317 330	left mid lung
+T5	Medical-Assertion 335 356	may be representative
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 363 373;375 382	infectious process
+T7	Medical-Problem 448 453;455 462	Aorta appears
+E6	Medical-Problem:T7
+T8	Medical-Problem 463 480	somewhat tortuous
+E7	Medical-Problem:T8
+T9	Medical-Assertion 483 485	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 486 501	acute fractures
+T11	Medical-Problem 592 611	increased opacities
+T12	Medical-Anatomy 627 640	left mid lung
+T13	Medical-Assertion 647 660	may represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 664 682	infectious process
+T15	Medical-Problem 718 729	atelectasis
+T16	Medical-Problem 741 750	elevation
+T17	Medical-Anatomy 758 762;764 777	left hemidiaphragm
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17

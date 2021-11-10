@@ -1,0 +1,14 @@
+T1	Medical-Assertion 222 224	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 225 237	pneumothorax
+T3	Medical-Problem 241 248;250 258	pleural effusion
+T4	Lesion-Size 265 270	small
+T5	Lesion-Description 271 278	nodules
+T6	Lesion-Anatomy 279 295	right upper lobe
+T7	Lesion-Size-Trend 325 334	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Problem 357 391	Heavy mitral annulus calcification
+E6	Medical-Problem:T8
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7

@@ -1,0 +1,38 @@
+T1	Medical-Assertion 34 45	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 49 58	pneumonia
+T3	Medical-Assertion 61 69	Resolved
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 70 90	right lung opacities
+T5	Medical-Assertion 457 459	no
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 460 479	focal consolidation
+T7	Medical-Problem 481 489	effusion
+T8	Medical-Problem 495 507	pneumothorax
+T9	Medical-Problem 510 521	Mediastinal
+E6	Medical-Problem:T9
+T10	Lesion-Characteristic 594 599	round
+T11	Lesion-Description 600 607	opacity
+T12	Lesion-Anatomy 628 637	left apex
+T13	Lesion-Characteristic 660 669	calcified
+T14	Lesion-Description 670 679	granuloma
+T15	Lesion-Characteristic 683 691	solitary
+T16	Lesion-Description 692 703	bone island
+T17	Medical-Problem 706 713	DISH is
+E14	Medical-Problem:T17
+T18	Medical-Assertion 745 747	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 760 769	pneumonia
+T20	Medical-Assertion 772 780	Resolved
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 792 801	opacities
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T6 has-Medical-Assertion:T5
+E4	Medical-Problem:T7 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T5
+E8	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E11	Lesion-Description:T14 has-Lesion-Anatomy:T12 has-Lesion-Characteristic:T13
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T12 has-Lesion-Characteristic:T15
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

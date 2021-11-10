@@ -1,0 +1,46 @@
+T1	Medical-Assertion 29 37	Possible
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 38 69	small right apical pneumothorax
+T3	Medical-Problem 389 406	are hyperinflated
+E2	Medical-Problem:T3
+T4	Lesion-Description 418 433	nodular opacity
+T5	Lesion-Anatomy 442 458	right upper lobe
+T6	Lesion-Size-Trend 460 469	unchanged
+A2	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Assertion 511 519	possible
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 520 548	pleural contour on the right
+T9	Medical-Assertion 555 567	may indicate
+A4	Medical-AssertionValue T9 possible
+T10	Medical-Problem 570 588;590 602	small right apical pneumothorax
+T11	Medical-Problem 614 631	increased opacity
+T12	Medical-Anatomy 639 654	left lower lobe
+T13	Medical-Problem 657 667;669 671	Thickening of
+E9	Medical-Problem:T13
+T14	Medical-Problem 751 768	aorta is unfolded
+E10	Medical-Problem:T14
+T15	Medical-Assertion 780 782	no
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 783 799	pleural effusion
+T17	Medical-Problem 981 998	Increased opacity
+T18	Medical-Anatomy 1006 1021	left lower lobe
+T19	Medical-Assertion 1022 1035	may represent
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1036 1047	atelectasis
+T21	Medical-Problem 1050 1060	aspiration
+T22	Medical-Problem 1065 1074	pneumonia
+T23	Medical-Problem 1115 1132	Hyperinflation of
+T24	Medical-Anatomy 1137 1142	lungs
+T25	Medical-Problem 1160 1164	COPD
+E19	Medical-Problem:T25
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T18
+E14	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E15	Medical-Problem:T21 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E16	Medical-Problem:T22 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E17	Medical-Problem:T23 has-Medical-Anatomy:T24

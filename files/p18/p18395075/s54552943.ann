@@ -1,0 +1,50 @@
+T1	Lesion-Anatomy 316 334	Right paratracheal
+T2	Lesion-Description 335 339	mass
+T3	Medical-Problem 425 435	Prominence
+T4	Medical-Anatomy 444 455	right hilum
+T5	Lesion-Description 480 490	adenopathy
+E5	Lesion-Description:T5
+T6	Medical-Problem 532 553	continued volume loss
+T7	Medical-Anatomy 561 571	right lung
+T8	Medical-Problem 577 589;591 614	elevation of the right hemidiaphragm
+E8	Medical-Problem:T8
+T9	Lesion-Anatomy 623 639	right upper lobe
+T10	Lesion-Characteristic 640 650	spiculated
+T11	Lesion-Description 651 657	lesion
+T12	Medical-Assertion 681 683	No
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 684 703	focal consolidation
+T14	Medical-Problem 705 721	pleural effusion
+T15	Medical-Problem 725 737	pneumothorax
+T16	Medical-Anatomy 756 777	pulmonary vasculature
+T17	Medical-Assertion 781 784	not
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 785 793	engorged
+T19	Medical-Assertion 796 798	No
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 799 812;814 827	acute osseous abnormalities
+T21	Lesion-Size-Trend 857 881	No gross interval change
+A4	Lesion-Size-TrendValue T21 no-change
+T22	Lesion-Anatomy 885 903	right paratracheal
+T23	Lesion-Description 904 908	mass
+T24	Lesion-Anatomy 910 921	right hilar
+T25	Lesion-Description 923 938	lymphadenopathy
+T26	Lesion-Anatomy 944 960	right upper lobe
+T27	Lesion-Characteristic 961 971	spiculated
+T28	Lesion-Description 972 978	lesion
+T29	Medical-Assertion 1016 1018	No
+A5	Medical-AssertionValue T29 absent
+T30	Medical-Problem 1019 1042	new focal consolidation
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E11	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T14 has-Medical-Assertion:T12
+E14	Medical-Problem:T15 has-Medical-Assertion:T12
+E16	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E19	Lesion-Description:T23 has-Lesion-Size-Trend:T21 has-Lesion-Anatomy:T22
+E21	Lesion-Description:T25 has-Lesion-Anatomy:T24
+E24	Lesion-Description:T28 has-Lesion-Anatomy:T26 has-Lesion-Characteristic:T27
+E25	Medical-Problem:T30 has-Medical-Assertion:T29

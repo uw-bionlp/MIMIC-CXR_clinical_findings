@@ -1,0 +1,25 @@
+T1	Medical-Problem 310 322;324 336	small apical pneumothorax
+T2	Medical-Anatomy 344 348	left
+T3	Medical-Assertion 355 361	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 362 390;392 410	loculated lateral left-sided hydro-pneumothorax
+T5	Medical-Problem 413 454	Stable appearing interstitial abnormality
+T6	Medical-Anatomy 462 467;469 473	right lung
+T7	Medical-Assertion 474 487	may represent
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 488 503	pulmonary edema
+T9	Lesion-Characteristic 511 524	dissemination
+T10	Lesion-Description 528 533	tumor
+T11	Lesion-Characteristic 553 561	discrete
+T12	Lesion-Description 573 577	mass
+T13	Lesion-Anatomy 585 601	right upper lobe
+T14	Medical-Problem 622 658	Small left-sided apical pneumothorax
+E12	Medical-Problem:T14
+T15	Medical-Problem 663 691;693 710	loculated lateral left-sided hydropneumothorax
+E13	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T9
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13

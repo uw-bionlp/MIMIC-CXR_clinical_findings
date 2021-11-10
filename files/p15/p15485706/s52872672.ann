@@ -1,0 +1,26 @@
+T1	Medical-Assertion 211 213	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 214 232;234 243	free air under the diaphragm
+T3	Medical-Assertion 315 317	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 318 334	pleural effusion
+T5	Medical-Problem 338 350	pneumothorax
+T6	Lesion-Description 353 370	Nodular opacities
+T7	Lesion-Anatomy 378 382;384 388	left base
+T8	Medical-Problem 419 428	pneumonia
+E6	Medical-Problem:T8
+T9	Medical-Assertion 558 560	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 561 586	free subdiaphragmatic air
+T11	Medical-Problem 592 605	Consolidation
+T12	Medical-Anatomy 613 622	left base
+T13	Medical-Assertion 623 636	could reflect
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 637 646	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E4	Lesion-Description:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

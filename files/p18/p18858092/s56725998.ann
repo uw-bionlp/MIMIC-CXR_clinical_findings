@@ -1,0 +1,26 @@
+T1	Medical-Assertion 240 242	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 243 259	pleural effusion
+T3	Medical-Problem 261 280	focal consolidation
+T4	Medical-Problem 284 296	pneumothorax
+T5	Medical-Anatomy 358 374	descending aorta
+T6	Medical-Assertion 375 382	appears
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 383 391	tortuous
+T8	Medical-Problem 394 408	Linear opacity
+T9	Medical-Anatomy 416 425	left lung
+T10	Medical-Assertion 426 443	likely represents
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 444 455	atelectasis
+T12	Medical-Problem 459 467	scarring
+T13	Medical-Assertion 537 548	No evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 552 581	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

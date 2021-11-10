@@ -1,0 +1,23 @@
+T1	Medical-Assertion 218 220	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 221 234	consolidation
+T3	Medical-Assertion 248 250	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 251 267	pleural effusion
+T5	Medical-Problem 292 309	heart is enlarged
+E3	Medical-Problem:T5
+T6	Lesion-Assertion 369 371	no
+A3	Lesion-AssertionValue T6 absent
+T7	Lesion-Anatomy 372 383	mediastinal
+T8	Lesion-Description 384 388	mass
+T9	Medical-Problem 415 452	mid dorsal spine compression fracture
+E6	Medical-Problem:T9
+T10	Medical-Problem 534 546	Cardiomegaly
+E7	Medical-Problem:T10
+T11	Medical-Assertion 549 551	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 552 569	pulmonary disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

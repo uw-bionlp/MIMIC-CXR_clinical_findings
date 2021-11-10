@@ -1,0 +1,28 @@
+T1	Medical-Problem 407 415	blunting
+T2	Medical-Anatomy 423 446	left costophrenic angle
+T3	Medical-Assertion 453 463;465 476	raises the possibility
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 480 491	volume loss
+T5	Medical-Anatomy 499 509	lower lobe
+T6	Medical-Problem 514 527	pleural fluid
+T7	Medical-Assertion 539 541	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 543 562	focal consolidation
+T9	Medical-Assertion 573 575	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 576 588	pneumothorax
+T11	Medical-Problem 661 669	Blunting
+T12	Medical-Anatomy 677 700	left costophrenic angle
+T13	Medical-Assertion 707 717;719 730	raises the possibility
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 734 745	volume loss
+T15	Medical-Anatomy 753 763	lower lobe
+T16	Medical-Problem 768 781	pleural fluid
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T16 has-Medical-Anatomy:T12 has-Medical-Assertion:T13 has-Medical-Anatomy:T15

@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 171 176	lungs
+T2	Medical-Assertion 187 194	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 195 208	consolidation
+T4	Medical-Problem 212 217	edema
+T5	Lesion-Assertion 220 222	No
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Size 223 228	large
+T7	Lesion-Description 230 237	nodules
+T8	Medical-Assertion 264 266	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 267 283	pleural effusion
+T10	Medical-Problem 287 299	pneumothorax
+T11	Lesion-Assertion 348 356	Probable
+A4	Lesion-AssertionValue T11 possible
+T12	Lesion-Size 357 362	small
+T13	Lesion-Characteristic 363 372	calcified
+T14	Lesion-Description 373 384	lymph nodes
+T15	Lesion-Anatomy 403 413	left hilum
+T16	Medical-Assertion 431 433	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 434 463	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Size-Present:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Lesion-Description:T14 has-Lesion-Assertion:T11 has-Lesion-Size-Present:T12 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

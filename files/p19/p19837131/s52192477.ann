@@ -1,0 +1,28 @@
+T1	Medical-Assertion 230 232	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 234 250	pleural effusion
+T3	Medical-Problem 254 266	pneumothorax
+T4	Lesion-Assertion 278 280	no
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 281 285	lung
+T6	Lesion-Description 286 292	nodule
+T7	Lesion-Description 296 300	mass
+T8	Medical-Assertion 313 315	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 316 335	focal consolidation
+T10	Medical-Assertion 336 350	concerning for
+A4	Medical-AssertionValue T10 possible
+T11	Medical-Problem 351 360	pneumonia
+T12	Medical-Assertion 427 429	No
+A5	Medical-AssertionValue T12 absent
+T13	Lesion-Anatomy 430 439	pulmonary
+T14	Lesion-Description 440 446	lesion
+T15	Medical-Problem 450 473	other acute abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Lesion-Description:T14 has-Lesion-Anatomy:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T12

@@ -1,0 +1,17 @@
+T1	Medical-Problem 305 325	severe consolidation
+E1	Medical-Problem:T1
+T2	Medical-Problem 334 343	pneumonia
+T3	Medical-Problem 347 367	pulmonary hemorrhage
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 376 380;382 386	left lung
+T5	Medical-Assertion 404 410	may be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 411 459	developing in the postoperative right lower lung
+T7	Medical-Anatomy 462 473	Right hilus
+E6	Medical-Anatomy:T7
+T8	Medical-Assertion 598 600	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 601 613	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

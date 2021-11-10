@@ -1,0 +1,42 @@
+T1	Medical-Anatomy 426 444	Cardiac silhouette
+E1	Medical-Anatomy:T1
+T2	Medical-Assertion 527 533	likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 534 541;543 572	minimal pulmonary vascular congestion
+T4	Medical-Problem 575 621;623 631	Partially loculated moderate size left pleural effusion
+E3	Medical-Problem:T4
+T5	Medical-Problem 659 687	trace right pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 712 729	Increased opacity
+T7	Medical-Anatomy 741 755	left lung base
+T8	Medical-Assertion 756 767	may reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 768 779	atelectasis
+T10	Medical-Problem 788 797	infection
+T11	Medical-Assertion 801 813	not excluded
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 815 817	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 818 830	pneumothorax
+T14	Medical-Problem 844 855;857 867	Left apical thickening
+E10	Medical-Problem:T14
+T15	Medical-Problem 906 961	Moderate size partially loculated left pleural effusion
+E11	Medical-Problem:T15
+T16	Medical-Problem 966 977;979 995	trace right pleural effusion
+E12	Medical-Problem:T16
+T17	Medical-Problem 1008 1031	Worsening opacification
+T18	Medical-Anatomy 1039 1053	left lung base
+T19	Medical-Assertion 1056 1067	potentially
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1068 1079	atelectasis
+T21	Medical-Problem 1087 1096	infection
+T22	Medical-Assertion 1100 1112	not excluded
+A6	Medical-AssertionValue T22 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T19 has-Medical-Assertion:T22

@@ -1,0 +1,25 @@
+T1	Medical-Assertion 323 325	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 326 351	definite pleural effusion
+T3	Medical-Problem 356 368	pneumothorax
+T4	Lesion-Characteristic 381 391	widespread
+T5	Lesion-Description 392 399	nodules
+T6	Lesion-Size 403 414	medium size
+T7	Lesion-Anatomy 461 466	lower
+T8	Medical-Problem 563 578	subtle evidence
+E7	Medical-Problem:T8
+T9	Medical-Problem 584 593	pneumonia
+E8	Medical-Problem:T9
+T10	Medical-Assertion 604 606	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 607 633	definite secondary process
+T12	Lesion-Characteristic 651 661	Widespread
+E10	Lesion-Characteristic:T12
+T13	Medical-Assertion 683 703	No definite evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 707 712;714 734	acute superimposed process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

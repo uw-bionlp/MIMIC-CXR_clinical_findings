@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 230 235	lungs
+T2	Medical-Problem 241 288	hyperinflated with flattening of the diaphragms
+T3	Medical-Assertion 290 304	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 305 312;314 343	chronic obstructive pulmonary disease
+T5	Lesion-Description 357 372	nodular opacity
+T6	Lesion-Anatomy 394 416	right lower lung field
+T7	Medical-Assertion 495 497	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 498 514	pleural effusion
+T9	Medical-Problem 518 530	pneumothorax
+T10	Medical-Anatomy 571 576	aorta
+T11	Medical-Problem 580 602	calcified and tortuous
+T12	Lesion-Characteristic 660 671	Ill-defined
+T13	Lesion-Description 672 687	nodular opacity
+T14	Lesion-Anatomy 708 724;726 731	right lower lung field
+T15	Medical-Problem 815 834	Hyperinflated lungs
+E13	Medical-Problem:T15
+T16	Medical-Assertion 835 842	suggest
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 843 872;874 881	chronic obstructive pulmonary disease
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

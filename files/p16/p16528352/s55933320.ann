@@ -1,0 +1,28 @@
+T1	Medical-Problem 318 339	1-cm diameter opacity
+T2	Medical-Anatomy 348 386	periphery of the right mid lung region
+T3	Medical-Assertion 387 412	may potentially represent
+A1	Medical-AssertionValue T3 possible
+T4	Lesion-Anatomy 445 467	inferior right scapula
+E3	Lesion-Anatomy:T4
+T5	Medical-Anatomy 607 612	Lungs
+T6	Medical-Assertion 649 651	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 652 678	definite pleural effusions
+T8	Medical-Problem 784 789;791 810	small dependent effusions
+E6	Medical-Problem:T8
+T9	Medical-Assertion 847 858	No evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 862 871	pneumonia
+T11	Lesion-Size 878 882	1-cm
+T12	Lesion-Description 883 890	nodular
+E9	Lesion-Description:T12
+T13	Lesion-Description 891 898	opacity
+T14	Lesion-Anatomy 902 922	right mid hemithorax
+T15	Lesion-Anatomy 976 998	inferior right scapula
+T16	Lesion-Anatomy 1120 1124	lung
+T17	Lesion-Description 1125 1131	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T15
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T16

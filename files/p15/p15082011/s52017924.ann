@@ -1,0 +1,15 @@
+T1	Medical-Assertion 297 299	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 300 319	vascular congestion
+T3	Medical-Problem 323 330;332 340	pleural effusion
+T4	Lesion-Assertion 343 345	No
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Characteristic 346 354	definite
+T6	Lesion-Characteristic 355 377	nodular opacifications
+T7	Lesion-Characteristic 381 389	cavitary
+T8	Lesion-Description 390 397	lesions
+T9	Medical-Problem 402 411	Elevation
+E7	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T8 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6 has-Lesion-Characteristic:T7

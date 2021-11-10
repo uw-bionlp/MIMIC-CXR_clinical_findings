@@ -1,0 +1,37 @@
+T1	Medical-Anatomy 33 38	Lungs
+T2	Medical-Problem 43 56	low in volume
+T3	Medical-Problem 62 101	left greater than right basal opacities
+T4	Medical-Assertion 110 123	could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 124 142	infectious process
+T6	Medical-Problem 147 178	small to moderate left effusion
+T7	Lesion-Count 209 212	two
+T8	Lesion-Characteristic 213 220	rounded
+T9	Lesion-Characteristic 221 243	potentially cavitating
+T10	Lesion-Characteristic 247 263	centrally lucent
+T11	Lesion-Description 266 273	lesions
+T12	Lesion-Anatomy 281 313	right lung base and left midlung
+T13	Medical-Problem 354 367	septic emboli
+E12	Medical-Problem:T13
+T14	Medical-Problem 827 845;847 855	size appears to be enlarged
+E13	Medical-Problem:T14
+T15	Medical-Problem 908 915	Bibasal
+E14	Medical-Problem:T15
+T16	Medical-Problem 917 928	atelectasis
+E15	Medical-Problem:T16
+T17	Medical-Problem 933 959	bilateral pleural effusion
+E16	Medical-Problem:T17
+T18	Medical-Assertion 977 988	no evidence
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 993 1005	pneumothorax
+T20	Medical-Problem 1019 1026	process
+T21	Medical-Anatomy 1034 1049	left lower lobe
+T22	Medical-Assertion 1050 1068	cannot be excluded
+A3	Medical-AssertionValue T22 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T1 has-Medical-Assertion:T4
+E10	Lesion-Description:T11 has-Lesion-Count:T7 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Medical-Problem:T20 has-Medical-Anatomy:T21 has-Medical-Assertion:T22

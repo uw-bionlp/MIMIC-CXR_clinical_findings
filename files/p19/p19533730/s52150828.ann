@@ -1,0 +1,16 @@
+T1	Medical-Problem 443 465	heart remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 553 578;580 589	patchy bilateral airspace opacities
+T3	Medical-Anatomy 617 632	left upper lobe
+T4	Medical-Anatomy 661 676	left lower lung
+T5	Medical-Problem 712 727	pulmonary edema
+T6	Medical-Problem 741 767	diffuse infectious process
+T7	Medical-Assertion 768 799	could also have this appearance
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 837 839	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 840 852	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Assertion:T7
+E6	Medical-Problem:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,23 @@
+T1	Medical-Assertion 510 512	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 514 534	pulmonary congestion
+T3	Medical-Assertion 550 552	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 553 574	new acute infiltrates
+T5	Medical-Problem 643 663;665 702	mild increase of the right-sided apical pleural thickening
+E3	Medical-Problem:T5
+T6	Medical-Anatomy 834 841	pleural
+T7	Medical-Anatomy 899 943	right and left-sided lateral pleural sinuses
+T8	Medical-Assertion 948 952	free
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 958 975;977 985	any pleural fluid blunting
+T10	Medical-Problem 1111 1135	hazy increase of density
+T11	Medical-Anatomy 1144 1171	mid field of the right lung
+T12	Medical-Assertion 1189 1213	appears to be related to
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 1217 1259	volume increase of the right breast shadow
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

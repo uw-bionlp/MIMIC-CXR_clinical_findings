@@ -1,0 +1,38 @@
+T1	Medical-Assertion 377 379	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 380 399	focal consolidation
+T3	Medical-Problem 420 435	slight blunting
+T4	Medical-Anatomy 443 477	posterior right costophrenic angle
+T5	Medical-Assertion 484 487;489 498	may be due to
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 501 528	very trace pleural effusion
+T7	Medical-Problem 532 550	pleural thickening
+T8	Medical-Assertion 553 555	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 557 569	pneumothorax
+T10	Medical-Anatomy 584 591	cardiac
+E7	Medical-Anatomy:T10
+T11	Medical-Problem 672 677	aorta
+E8	Medical-Problem:T11
+T12	Medical-Problem 678 700	calcified and tortuous
+E9	Medical-Problem:T12
+T13	Medical-Problem 703 707;709 733	Mild left basilar atelectasis
+E10	Medical-Problem:T13
+T14	Medical-Problem 759 788	Mild left basilar atelectasis
+E11	Medical-Problem:T14
+T15	Medical-Assertion 791 799	Possible
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 800 815	slight blunting
+T17	Medical-Anatomy 824 861	posterior right costophrenic angle on
+T18	Medical-Assertion 879 892	may be due to
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 893 898;900 916	trace pleural effusion
+T20	Medical-Problem 920 938	pleural thickening
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E12	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17
+E14	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

@@ -1,0 +1,64 @@
+T1	Medical-Problem 198 222	widespread opacification
+T2	Medical-Anatomy 230 252	right lower hemithorax
+T3	Medical-Problem 266 329;331 341	suspected large pleural effusion on the right with an expansile appearance
+T4	Medical-Assertion 350 356	may be
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 359 386	corresponding consolidation
+T6	Medical-Problem 390 399;401 412	extensive atelectasis
+T7	Medical-Anatomy 427 443	right lower lobe
+T8	Medical-Problem 505 547	lenticular shape of right mid lung opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 548 553;555 579	could potentially be seen with
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 582 608	loculated pleural effusion
+T11	Lesion-Description 616 620	mass
+T12	Lesion-Assertion 621 631;633 646	could also be considered
+A3	Lesion-AssertionValue T12 possible
+T13	Medical-Problem 728 752	left costophrenic sulcus
+E10	Medical-Problem:T13
+T14	Medical-Problem 756 764	excluded
+E11	Medical-Problem:T14
+T15	Medical-Assertion 779 781;783 791	no evidence
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 795 806	abnormality
+T17	Medical-Anatomy 814 829	left hemithorax
+T18	Medical-Problem 832 848	Mild mass effect
+E14	Medical-Problem:T18
+T19	Medical-Problem 855 891	leftward shift of midline structures
+E15	Medical-Problem:T19
+T20	Medical-Assertion 912 914	no
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 915 927	pneumothorax
+T22	Medical-Assertion 930 932	No
+A6	Medical-AssertionValue T22 absent
+T23	Medical-Problem 934 950	bone destruction
+T24	Medical-Problem 983 1007	Widespread opacification
+T25	Medical-Anatomy 1015 1044	right mid-to-lower hemithorax
+T26	Medical-Problem 1051 1062	mass effect
+T27	Medical-Assertion 1064 1086	suspected to represent
+A7	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1089 1105	pleural effusion
+T29	Medical-Assertion 1137 1145	possible
+A8	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1146 1171	large loculated component
+T31	Lesion-Description 1175 1179	mass
+T32	Lesion-Assertion 1180 1193;1195 1205	could also be considered
+A9	Lesion-AssertionValue T32 possible
+T33	Medical-Problem 1222 1244	widespread atelectasis
+E24	Medical-Problem:T33
+T34	Medical-Problem 1248 1271	pneumonic consolidation
+E25	Medical-Problem:T34
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T4 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Lesion-Description:T11 has-Lesion-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E17	Medical-Problem:T23 has-Medical-Assertion:T22
+E18	Medical-Problem:T24 has-Medical-Anatomy:T25
+E20	Medical-Problem:T26 has-Medical-Anatomy:T25
+E21	Medical-Problem:T28 has-Medical-Anatomy:T25 has-Medical-Assertion:T27
+E22	Medical-Problem:T30 has-Medical-Anatomy:T25 has-Medical-Assertion:T29
+E23	Lesion-Description:T31 has-Lesion-Assertion:T32

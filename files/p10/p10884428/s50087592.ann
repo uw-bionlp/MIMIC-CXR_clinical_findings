@@ -1,0 +1,36 @@
+T1	Medical-Problem 383 405	subtle interval change
+E1	Medical-Problem:T1
+T2	Medical-Problem 500 514	Patchy opacity
+T3	Medical-Anatomy 522 532	right base
+T4	Medical-Problem 557 566	pneumonia
+T5	Medical-Problem 571 581	aspiration
+T6	Medical-Problem 595 606	atelectasis
+T7	Medical-Assertion 641 643;645 653	No evidence
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 657 672	pulmonary edema
+T9	Medical-Problem 674 689	large effusions
+T10	Medical-Problem 693 705	pneumothorax
+T11	Medical-Problem 707 716;718 740	Prominent dilated tortuous aorta
+E10	Medical-Problem:T11
+T12	Medical-Assertion 741 764	raising the possibility
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 771 786	aortic aneurysm
+T14	Lesion-Count 815 818	Two
+T15	Lesion-Characteristic 819 824	faint
+T16	Lesion-Size 825 829	5 mm
+T17	Lesion-Description 830 847	nodular opacities
+T18	Lesion-Anatomy 848 872;874 889	adjacent to the anterior right third rib
+T19	Lesion-Assertion 890 905	could represent
+A3	Lesion-AssertionValue T19 possible
+T20	Lesion-Anatomy 906 915	pulmonary
+T21	Lesion-Description 916 923	nodules
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T3
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E15	Lesion-Description:T17 has-Lesion-Count:T14 has-Lesion-Characteristic:T15 has-Lesion-Size-Present:T16 has-Lesion-Anatomy:T18
+E18	Lesion-Description:T21 has-Lesion-Anatomy:T18 has-Lesion-Assertion:T19 has-Lesion-Anatomy:T20

@@ -1,0 +1,23 @@
+T1	Medical-Problem 283 309	coarse ill-defined opacity
+T2	Medical-Anatomy 317 332	right lung base
+T3	Medical-Assertion 387 389	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 390 402	pneumothorax
+T5	Medical-Problem 404 413;415 428	new focal consolidation
+T6	Medical-Problem 433 449	pleural effusion
+T7	Medical-Problem 486 491	aorta
+E6	Medical-Problem:T7
+T8	Medical-Problem 496 526	heavily calcified and tortuous
+E7	Medical-Problem:T8
+T9	Lesion-Anatomy 529 534	Hilar
+E8	Lesion-Anatomy:T9
+T10	Medical-Problem 615 630	basilar opacity
+E9	Medical-Problem:T10
+T11	Medical-Assertion 679 681	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 682 705	new focal consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

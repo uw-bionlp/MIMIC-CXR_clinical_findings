@@ -1,0 +1,28 @@
+T1	Medical-Problem 236 262	Unchanged minimal blunting
+T2	Medical-Anatomy 270 295	right cardiophrenic angle
+T3	Lesion-Size 314 319	small
+T4	Lesion-Characteristic 320 331	pericardial
+T5	Lesion-Description 332 336	cyst
+T6	Medical-Problem 340 358	epicardial fat pad
+E6	Medical-Problem:T6
+T7	Lesion-Assertion 361 372	No evidence
+A1	Lesion-AssertionValue T7 absent
+T8	Lesion-Anatomy 377 381	lung
+T9	Lesion-Description 382 389	nodules
+T10	Lesion-Description 393 399	masses
+T11	Medical-Assertion 452 454	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 456 465	pneumonia
+T13	Medical-Assertion 468 470	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 471 486	pulmonary edema
+T15	Medical-Assertion 489 491	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 492 509	pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4
+E8	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T10 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

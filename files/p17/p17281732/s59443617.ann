@@ -1,0 +1,57 @@
+T1	Lesion-Count 223 234	innumerable
+T2	Lesion-Characteristic 235 242	diffuse
+T3	Lesion-Description 243 250	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 252 261	opacities
+T5	Lesion-Characteristic 275 283	dominant
+T6	Lesion-Description 284 288	mass
+T7	Lesion-Anatomy 300 315	left upper lobe
+T8	Lesion-Size 326 329;331 339	4.3 x 5.8 cm
+T9	Lesion-Assertion 398 412	concerning for
+A1	Lesion-AssertionValue T9 possible
+T10	Lesion-Count 413 421	multiple
+T11	Lesion-Description 433 440	nodules
+T12	Lesion-Characteristic 445 453	dominant
+T13	Lesion-Description 454 458	mass
+T14	Lesion-Anatomy 500 505	hilar
+T15	Lesion-Description 506 516	adenopathy
+T16	Medical-Assertion 558 560	no
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 561 578	large new opacity
+T18	Medical-Assertion 579 589	suggestive
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 593 602	pneumonia
+T20	Medical-Assertion 628 630	no
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 631 647	pleural effusion
+T22	Medical-Problem 651 663	pneumothorax
+T23	Medical-Assertion 665 667	No
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 668 681;683 702	air under the right hemidiaphragm
+T25	Medical-Problem 776 813	Innumerable diffuse nodular opacities
+E20	Medical-Problem:T25
+T26	Lesion-Anatomy 819 843	left upper lobe dominant
+T27	Lesion-Description 844 848	mass
+T28	Lesion-Count 901 909	multiple
+T29	Lesion-Description 922 929	nodules
+T30	Lesion-Anatomy 934 947	left lingular
+T31	Lesion-Description 948 952	mass
+T32	Medical-Assertion 954 956	No
+A6	Medical-AssertionValue T32 absent
+T33	Medical-Problem 957 979	new opacity convincing
+T34	Medical-Problem 984 993	pneumonia
+E4	Lesion-Description:T4 has-Lesion-Count:T1 has-Lesion-Characteristic:T2
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7 has-Lesion-Size-Present:T8
+E10	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Count:T10
+E12	Lesion-Description:T13 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T12
+E14	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T16 has-Medical-Assertion:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T20
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E22	Lesion-Description:T27 has-Lesion-Anatomy:T26
+E24	Lesion-Description:T29 has-Lesion-Count:T28
+E26	Lesion-Description:T31 has-Lesion-Anatomy:T30
+E27	Medical-Problem:T33 has-Medical-Assertion:T32
+E28	Medical-Problem:T34 has-Medical-Assertion:T32

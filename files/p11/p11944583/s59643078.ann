@@ -1,0 +1,27 @@
+T1	Medical-Problem 768 784	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Assertion 790 792	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 793 821	focal airspace consolidation
+T4	Medical-Problem 834 843	pneumonia
+T5	Medical-Assertion 846 854	Probable
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 855 883	small right pleural effusion
+T7	Medical-Problem 888 901;903 910	stable patchy opacity
+T8	Medical-Anatomy 918 928	right base
+T9	Medical-Assertion 929 951	most likely reflecting
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 952 970	patchy atelectasis
+T11	Medical-Assertion 973 975	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 977 989	pneumothorax
+T13	Medical-Assertion 992 1003	No evidence
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1007 1022	pulmonary edema
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E5	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

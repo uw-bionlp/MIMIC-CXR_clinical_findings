@@ -1,0 +1,19 @@
+T1	Medical-Anatomy 337 342	Lungs
+T2	Medical-Assertion 372 379	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 380 399	focal consolidation
+T4	Lesion-Characteristic 403 410;412 424	clearly identifiable
+T5	Lesion-Anatomy 425 434	pulmonary
+T6	Lesion-Description 435 442	nodules
+T7	Medical-Assertion 455 457	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 458 475	pleural effusions
+T9	Lesion-Assertion 600 624	No radiographic evidence
+A3	Lesion-AssertionValue T9 absent
+T10	Lesion-Description 628 646	metastatic disease
+T11	Medical-Problem 650 667;669 698	other significant cardiopulmonary abnormalities
+E8	Medical-Problem:T11
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Lesion-Description:T10 has-Lesion-Assertion:T9

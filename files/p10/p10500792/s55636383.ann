@@ -1,0 +1,32 @@
+T1	Lesion-Description 266 272	nodule
+T2	Lesion-Anatomy 280 294	right mid lung
+T3	Lesion-Size-Trend 298 321	unchanged in appearance
+A1	Lesion-Size-TrendValue T3 no-change
+T4	Medical-Problem 324 336	Cardiomegaly
+E3	Medical-Problem:T4
+T5	Lesion-Count 370 378	multiple
+T6	Lesion-Size 379 384	small
+T7	Lesion-Anatomy 385 394	pulmonary
+T8	Lesion-Description 395 402	nodules
+T9	Medical-Problem 460 469;471 481	unchanged appearance
+E8	Medical-Problem:T9
+T10	Medical-Problem 489 497	fullness
+T11	Medical-Anatomy 505 530	right cardiophrenic angle
+T12	Lesion-Size 555 560	large
+T13	Lesion-Characteristic 561 569	necrotic
+T14	Lesion-Description 570 581	lymph nodes
+T15	Medical-Anatomy 606 621	left lower lung
+T16	Medical-Problem 623 652	re-demonstrates consolidation
+T17	Medical-Assertion 666 679	might reflect
+A2	Medical-AssertionValue T17 possible
+T18	Medical-Problem 680 691	atelectasis
+T19	Medical-Assertion 780 805	might potentially reflect
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 806 824	infected lung area
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T3
+E7	Lesion-Description:T8 has-Lesion-Count:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E13	Lesion-Description:T14 has-Lesion-Size-Present:T12 has-Lesion-Characteristic:T13
+E15	Medical-Problem:T16 has-Medical-Anatomy:T15
+E16	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T17
+E17	Medical-Problem:T20 has-Medical-Assertion:T19

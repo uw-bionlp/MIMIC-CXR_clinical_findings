@@ -1,0 +1,20 @@
+T1	Medical-Problem 103 142	Moderate-to-large left pleural effusion
+T2	Medical-Anatomy 211 241;243 263	adjacent to the left hilar and mediastinal contours
+T3	Medical-Problem 266 297	Moderate right pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 403 432	Pulmonary vascular congestion
+E4	Medical-Problem:T4
+T5	Medical-Problem 451 469;471 476	moderate pulmonary edema
+E5	Medical-Problem:T5
+T6	Medical-Problem 479 508	Worsening confluent opacities
+T7	Medical-Anatomy 516 526	lung bases
+T8	Medical-Assertion 527 542	could represent
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 544 559	dependent edema
+T10	Medical-Problem 561 571	aspiration
+T11	Medical-Problem 575 584	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

@@ -1,0 +1,39 @@
+T1	Medical-Problem 151 171	small right effusion
+T2	Medical-Assertion 175 190	nearly resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Assertion 214 216	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 217 229	pneumothorax
+T5	Medical-Problem 247 266	small left effusion
+E3	Medical-Problem:T5
+T6	Medical-Assertion 303 305	no
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 306 319	consolidation
+T8	Medical-Problem 374 399	Left retrocardiac opacity
+E5	Medical-Problem:T8
+T9	Lesion-Anatomy 418 434	right upper lobe
+T10	Lesion-Description 435 444	granuloma
+T11	Lesion-Size-Trend 449 455	stable
+A4	Lesion-Size-TrendValue T11 no-change
+T12	Medical-Assertion 473 475	No
+A5	Medical-AssertionValue T12 absent
+T13	Medical-Problem 476 507	residual right pleural effusion
+T14	Medical-Assertion 536 538	No
+A6	Medical-AssertionValue T14 absent
+T15	Medical-Problem 540 552	pneumothorax
+T16	Medical-Problem 555 585	Increased retrocardiac opacity
+E10	Medical-Problem:T16
+T17	Medical-Assertion 589 600	most likely
+A7	Medical-AssertionValue T17 possible
+T18	Medical-Problem 601 612	atelectasis
+T19	Medical-Problem 618 627	pneumonia
+T20	Medical-Assertion 628 646	cannot be excluded
+A8	Medical-AssertionValue T20 possible
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Lesion-Description:T10 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T11
+E8	Medical-Problem:T13 has-Medical-Assertion:T12
+E9	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T18 has-Medical-Assertion:T17
+E12	Medical-Problem:T19 has-Medical-Assertion:T17 has-Medical-Assertion:T20

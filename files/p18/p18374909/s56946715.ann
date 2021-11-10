@@ -1,0 +1,21 @@
+T1	Medical-Problem 159 169	pneumonia?
+E1	Medical-Problem:T1
+T2	Medical-Problem 279 287;289 302	Moderate overinflation
+E2	Medical-Problem:T2
+T3	Medical-Problem 305 345	Severe bullous and fibrotic lung disease
+T4	Medical-Anatomy 354 359	right
+T5	Lesion-Count 362 370	multiple
+T6	Lesion-Characteristic 371 380	calcified
+T7	Lesion-Description 381 391	granulomas
+T8	Lesion-Anatomy 399 403	left
+T9	Medical-Problem 410 436	massively pre damaged lung
+E9	Medical-Problem:T9
+T10	Medical-Assertion 438 472	does not show any current evidence
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 476 494	acute lung disease
+T12	Medical-Problem 500 515;517 527	area of pleural thickening
+T13	Medical-Anatomy 535 540	right
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13

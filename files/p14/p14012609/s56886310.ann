@@ -1,0 +1,22 @@
+T1	Medical-Problem 255 293	mild baseline interstitial abnormality
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 343 348	lungs
+T3	Medical-Assertion 353 361	clear of
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 366 383	acute abnormality
+T5	Medical-Problem 448 469	mild hilar prominence
+E4	Medical-Problem:T5
+T6	Lesion-Assertion 470 476	likely
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Characteristic 477 481;483 490	mild central
+T8	Lesion-Description 491 501	adenopathy
+T9	Medical-Problem 524 531	pleural
+E7	Medical-Problem:T9
+T10	Medical-Problem 532 543	abnormality
+E8	Medical-Problem:T10
+T11	Medical-Assertion 572 574	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 575 580	acute
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,18 @@
+T1	Lesion-Assertion 60 71	No evidence
+A1	Lesion-AssertionValue T1 absent
+T2	Lesion-Anatomy 75 90	superior sulcus
+T3	Lesion-Description 91 96	tumor
+T4	Medical-Problem 404 425	bibasilar atelectasis
+E3	Medical-Problem:T4
+T5	Medical-Assertion 431 433	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 434 447	consolidation
+T7	Medical-Problem 451 458;460 468	pleural effusion
+T8	Lesion-Assertion 608 610;612 620	no evidence
+A3	Lesion-AssertionValue T8 absent
+T9	Lesion-Anatomy 624 639	superior sulcus
+T10	Lesion-Description 640 645	tumor
+E2	Lesion-Description:T3 has-Lesion-Assertion:T1 has-Lesion-Anatomy:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T9

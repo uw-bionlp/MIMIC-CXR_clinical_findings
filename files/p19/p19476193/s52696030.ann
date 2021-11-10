@@ -1,0 +1,38 @@
+T1	Medical-Problem 29 43	Acute fracture
+T2	Medical-Anatomy 47 73	left posterior lateral rib
+T3	Medical-Assertion 77 79	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 80 92	pneumothorax
+T5	Medical-Assertion 423 425	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 426 433;435 443	pleural effusion
+T7	Medical-Problem 447 459	pneumothorax
+T8	Medical-Anatomy 462 467	Lungs
+T9	Medical-Assertion 496 503	without
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 504 509;511 524	focal consolidation
+T11	Medical-Assertion 525 539	concerning for
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 540 549	pneumonia
+T13	Medical-Assertion 610 612	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 613 629	pneumoperitoneum
+T15	Medical-Problem 635 640	acute
+E10	Medical-Problem:T15
+T16	Medical-Problem 641 649	fracture
+T17	Medical-Anatomy 653 657;659 679	left posterolateral rib 9
+T18	Medical-Problem 709 723	Acute fracture
+T19	Medical-Anatomy 727 750	left posterolateral rib
+T20	Medical-Assertion 755 757	No
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 758 770	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Anatomy:T17
+E13	Medical-Problem:T18 has-Medical-Anatomy:T19
+E15	Medical-Problem:T21 has-Medical-Assertion:T20

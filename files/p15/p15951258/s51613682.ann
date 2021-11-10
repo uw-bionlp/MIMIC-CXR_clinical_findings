@@ -1,0 +1,25 @@
+T1	Medical-Problem 278 303;305 313	cardiac silhouette mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 322 327	aorta
+E2	Medical-Problem:T2
+T3	Medical-Problem 328 350	calcified and tortuous
+E3	Medical-Problem:T3
+T4	Medical-Problem 436 451	mild prominence
+T5	Medical-Anatomy 460 464	hila
+T6	Lesion-Assertion 471 474	may
+A1	Lesion-AssertionValue T6 possible
+T7	Lesion-Description 485 500	lymphadenopathy
+T8	Medical-Problem 543 560	streaky opacities
+T9	Medical-Anatomy 568 578	right lung
+T10	Medical-Anatomy 597 605;607 620	left mid to lower lung
+T11	Medical-Assertion 622 637	raising concern
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 642 662	underlying infection
+T13	Medical-Problem 665 685;687 717	Component of central pulmonary vascular engorgement
+T14	Medical-Assertion 721 733	not excluded
+A3	Medical-AssertionValue T14 possible
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T14

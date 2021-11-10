@@ -1,0 +1,32 @@
+T1	Medical-Problem 443 462	Stable cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 465 484;486 491	Decreased pulmonary edema
+T3	Medical-Problem 496 509	opacification
+T4	Medical-Anatomy 517 532	right lung base
+T5	Medical-Problem 538 558;560 594	persistent bibasilar opacities, left greater than right
+T6	Medical-Assertion 597 599	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 600 612	pneumothorax
+T8	Medical-Assertion 615 617	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 618 631;633 641	large pleural effusion
+T10	Medical-Problem 694 702;704 718	Vascular calcifications
+E8	Medical-Problem:T10
+T11	Medical-Problem 749 774	Decreased pulmonary edema
+T12	Medical-Problem 779 792	opacification
+T13	Medical-Anatomy 800 815	right lung base
+T14	Medical-Problem 822 852	persistent bibasilar opacities
+T15	Medical-Assertion 859 874	could represent
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 875 886	atelectasis
+T17	Medical-Problem 890 899	infection
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T13
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T13 has-Medical-Assertion:T15

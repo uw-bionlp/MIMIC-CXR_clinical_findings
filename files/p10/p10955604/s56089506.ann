@@ -1,0 +1,31 @@
+T1	Medical-Problem 459 491	severe, infiltrative abnormality
+T2	Medical-Anatomy 513 523	right lung
+T3	Medical-Problem 555 566	more severe
+E3	Medical-Problem:T3
+T4	Medical-Problem 569 592	generalized involvement
+T5	Medical-Anatomy 600 609	left lung
+T6	Medical-Assertion 683 691	suggests
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 707 712	edema
+T8	Medical-Anatomy 778 788	right lung
+T9	Medical-Assertion 789 796	suggest
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 797 806;808 817	spreading infection
+T11	Medical-Problem 821 841	pulmonary hemorrhage
+T12	Medical-Problem 862 878	Pleural effusion
+T13	Medical-Assertion 896 905	not large
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Assertion 908 910	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 911 923	pneumothorax
+T16	Medical-Problem 926 938;940 958	Lung volumes remain quite small
+E12	Medical-Problem:T16
+T17	Medical-Problem 975 996	intestinal distention
+E13	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

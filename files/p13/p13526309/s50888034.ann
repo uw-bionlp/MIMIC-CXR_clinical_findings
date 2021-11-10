@@ -1,0 +1,37 @@
+T1	Medical-Problem 345 375	increasing pleural effusion on
+E1	Medical-Problem:T1
+T2	Medical-Problem 460 478	Associated opacity
+T3	Medical-Assertion 480 505	can probably be explained
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 509 520	atelectasis
+T5	Medical-Anatomy 528 556	right lower and middle lobes
+T6	Lesion-Anatomy 580 594	right mid lung
+T7	Lesion-Characteristic 600 607	rounded
+T8	Lesion-Description 608 617	mass-like
+E7	Lesion-Description:T8
+T9	Lesion-Description 618 625	opacity
+T10	Lesion-Size 643 647	4 cm
+T11	Lesion-Assertion 661 669	possibly
+A2	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 695 701	nodule
+T13	Medical-Problem 704 710;712 719	Patchy opacity
+T14	Medical-Anatomy 727 741	left lung base
+T15	Medical-Assertion 745 760	probably due to
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 761 778	minor atelectasis
+T17	Medical-Problem 782 805	Compression deformities
+T18	Medical-Anatomy 816 854	lower thoracic and upper lumbar spines
+T19	Medical-Problem 1009 1048	Increasing right-sided pleural effusion
+E16	Medical-Problem:T19
+T20	Lesion-Anatomy 1051 1061	Right lung
+T21	Lesion-Description 1062 1066	mass
+T22	Lesion-Size-Trend 1069 1101	probably increased substantially
+A4	Lesion-Size-TrendValue T22 increasing
+E2	Medical-Problem:T2 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T7 has-Lesion-Size-Present:T10
+E10	Lesion-Description:T12 has-Lesion-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Lesion-Description:T21 has-Lesion-Anatomy:T20 has-Lesion-Size-Trend:T22

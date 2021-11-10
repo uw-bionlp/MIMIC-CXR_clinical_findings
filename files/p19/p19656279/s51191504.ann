@@ -1,0 +1,47 @@
+T1	Medical-Problem 181 201	retrocardiac opacity
+T2	Medical-Problem 207 228	slight leftward shift
+T3	Medical-Anatomy 237 248	mediastinum
+T4	Medical-Problem 288 311;313 321	chronic left lower lobe collapse
+E4	Medical-Problem:T4
+T5	Medical-Problem 324 345	Relative hyperlucency
+T6	Medical-Problem 350 369	mild hyperinflation
+T7	Medical-Anatomy 384 389;391 395	right lung
+T8	Medical-Assertion 402 421	may be secondary to
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 422 444	new or worsened asthma
+T10	Medical-Problem 449 461	bronchospasm
+T11	Medical-Problem 471 490	decreased perfusion
+T12	Medical-Assertion 492 507	possibly due to
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 510 528	pulmonary embolism
+T14	Medical-Assertion 540 542	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 544 560	pleural effusion
+T16	Medical-Problem 564 576	pneumothorax
+T17	Medical-Assertion 588 590	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 591 608	new consolidation
+T19	Medical-Problem 676 688	Hyperlucency
+T20	Medical-Problem 693 712	mild hyperinflation
+T21	Medical-Anatomy 720 725	right
+T22	Medical-Assertion 726 739	may represent
+A5	Medical-AssertionValue T22 possible
+T23	Medical-Problem 740 745;747 759	acute bronchospasm
+T24	Medical-Problem 763 795	oligemia from pulmonary embolism
+T25	Medical-Problem 802 833	Stable left lower lobe collapse
+E20	Medical-Problem:T25
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T7
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E11	Medical-Problem:T13 has-Medical-Anatomy:T7 has-Medical-Assertion:T8 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T21
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21
+E18	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E19	Medical-Problem:T24 has-Medical-Anatomy:T21 has-Medical-Assertion:T22

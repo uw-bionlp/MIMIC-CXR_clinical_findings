@@ -1,0 +1,43 @@
+T1	Medical-Anatomy 325 346	pulmonary vasculature
+T2	Medical-Assertion 350 353	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 354 362	engorged
+T4	Lesion-Size 365 369	7 mm
+T5	Lesion-Description 370 377	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 378 385	opacity
+T7	Lesion-Anatomy 407 421	left lung base
+T8	Medical-Problem 482 493	atelectasis
+T9	Medical-Anatomy 501 511	lung bases
+T10	Medical-Anatomy 517 522	lungs
+T11	Medical-Assertion 533 540	without
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 541 546;548 561	focal consolidation
+T13	Medical-Assertion 564 566	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 567 583	pleural effusion
+T15	Medical-Problem 587 599	pneumothorax
+T16	Medical-Problem 624 649	mild degenerative changes
+T17	Medical-Anatomy 663 677	thoracic spine
+T18	Medical-Problem 702 718	Mild atelectasis
+T19	Medical-Anatomy 726 736	lung bases
+T20	Medical-Assertion 737 744	without
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 745 764	focal consolidation
+T22	Lesion-Description 775 790	nodular opacity
+T23	Lesion-Anatomy 811 825	left lung base
+T24	Lesion-Assertion 855 868	could reflect
+A5	Lesion-AssertionValue T24 possible
+T25	Lesion-Anatomy 871 880	pulmonary
+T26	Lesion-Description 881 887	nodule
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E18	Lesion-Description:T22 has-Lesion-Anatomy:T23
+E21	Lesion-Description:T26 has-Lesion-Anatomy:T23 has-Lesion-Assertion:T24 has-Lesion-Anatomy:T25

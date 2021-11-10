@@ -1,0 +1,32 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 48	pneumothorax
+T3	Medical-Problem 59 87	Small right pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 154 181	Small left pleural effusion
+E3	Medical-Problem:T4
+T5	Medical-Problem 560 565;567 589	small right pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Assertion 635 637	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 638 645;647 659	visible pneumothorax
+T8	Medical-Problem 662 682	Widespread pulmonary
+E6	Medical-Problem:T8
+T9	Lesion-Description 683 690	nodules
+T10	Lesion-Size-Trend 698 707	unchanged
+A3	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Problem 709 718;720 731	bibasilar atelectasis
+E8	Medical-Problem:T11
+T12	Medical-Problem 788 798;800 816	small left pleural effusion
+E9	Medical-Problem:T12
+T13	Medical-Assertion 856 858	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 859 871	pneumothorax
+T15	Medical-Problem 900 924;926 942	slight increase in right pleural effusion
+E11	Medical-Problem:T15
+T16	Medical-Problem 951 971	Widespread pulmonary
+E12	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Lesion-Description:T9 has-Lesion-Size-Trend:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

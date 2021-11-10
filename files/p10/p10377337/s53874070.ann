@@ -1,0 +1,22 @@
+T1	Medical-Problem 341 365	Moderate pulmonary edema
+T2	Medical-Anatomy 425 446	pulmonary vasculature
+T3	Medical-Problem 472 485	Opacification
+T4	Medical-Anatomy 494 533	lung bases, particularly the left above
+T5	Medical-Problem 538 563;565 578	chronically elevated left hemidiaphragm
+E5	Medical-Problem:T5
+T6	Medical-Assertion 583 591	probably
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 609 620	atelectasis
+T8	Medical-Problem 625 630	edema
+T9	Medical-Assertion 645 662	no way to exclude
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 663 672	pneumonia
+T11	Medical-Problem 675 696	Moderate cardiomegaly
+E9	Medical-Problem:T11
+T12	Medical-Problem 728 764	and mediastinal vascular engorgement
+E10	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T4 has-Medical-Assertion:T9

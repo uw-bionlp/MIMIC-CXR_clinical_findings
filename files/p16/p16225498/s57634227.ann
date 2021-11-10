@@ -1,0 +1,81 @@
+T1	Medical-Problem 220 240	retrocardiac opacity
+T2	Medical-Problem 246 257	obscuration
+T3	Medical-Anatomy 265 283	left hemidiaphragm
+T4	Medical-Problem 301 328	left lower lobe atelectasis
+T5	Medical-Problem 332 341	infection
+T6	Medical-Anatomy 355 373;375 396	lateral segment of the right middle lobe
+T7	Medical-Problem 409 451	peripherally located consolidative opacity
+T8	Medical-Assertion 460 463	may
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 467 487	infectious in nature
+T10	Medical-Problem 503 531;533 540	downward displacement of the fissure
+E9	Medical-Problem:T10
+T11	Medical-Assertion 541 549	suggests
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 550 561	volume loss
+T13	Lesion-Characteristic 574 585	obstructing
+T14	Lesion-Description 586 590	mass
+T15	Lesion-Assertion 591 609	cannot be excluded
+A3	Lesion-AssertionValue T15 possible
+T16	Medical-Problem 613 633	Pulmonary infarction
+E13	Medical-Problem:T16
+T17	Medical-Problem 669 681;683 707	wedge shaped peripheral consolidation
+E14	Medical-Problem:T17
+T18	Medical-Problem 719 729	prominence
+T19	Medical-Anatomy 737 758	pulmonary vasculature
+T20	Medical-Assertion 766 778	may indicate
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 779 799	pulmonary congestion
+T22	Lesion-Count 801 809	Multiple
+T23	Lesion-Description 810 827	nodular opacities
+T24	Lesion-Anatomy 847 857	both lungs
+T25	Medical-Problem 919 948	obliteration of heart borders
+E21	Medical-Problem:T25
+T26	Medical-Assertion 960 962	no
+A5	Medical-AssertionValue T26 absent
+T27	Medical-Problem 963 975	pneumothorax
+T28	Medical-Anatomy 1033 1050	Right middle lobe
+T29	Medical-Problem 1051 1083	peripheral consolidative opacity
+T30	Medical-Assertion 1084 1098	concerning for
+A6	Medical-AssertionValue T30 possible
+T31	Medical-Problem 1100 1109	infection
+T32	Medical-Problem 1120 1156	downward displacement of the fissure
+T33	Medical-Assertion 1157 1165	suggests
+A7	Medical-AssertionValue T33 possible
+T34	Medical-Problem 1166 1177	volume loss
+T35	Lesion-Characteristic 1188 1199	obstructing
+T36	Lesion-Description 1200 1204	mass
+T37	Medical-Problem 1226 1243	Pulmonary infarct
+E30	Medical-Problem:T37
+T38	Medical-Problem 1273 1297	wedge like configuration
+E31	Medical-Problem:T38
+T39	Medical-Problem 1357 1377	Retrocardiac opacity
+E32	Medical-Problem:T39
+T40	Medical-Assertion 1378 1384	may be
+A8	Medical-AssertionValue T40 possible
+T41	Medical-Problem 1385 1410	left lower lobe infection
+T42	Medical-Problem 1418 1429	atelectasis
+T43	Lesion-Count 1437 1445	Multiple
+T44	Lesion-Characteristic 1446 1455	scattered
+T45	Lesion-Anatomy 1456 1475	bilateral pulmonary
+T46	Lesion-Description 1476 1483	nodules
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E19	Lesion-Description:T23 has-Lesion-Count:T22 has-Lesion-Anatomy:T24
+E22	Medical-Problem:T27 has-Medical-Assertion:T26
+E24	Medical-Problem:T29 has-Medical-Anatomy:T28
+E25	Medical-Problem:T31 has-Medical-Anatomy:T28 has-Medical-Assertion:T30
+E26	Medical-Problem:T32 has-Medical-Anatomy:T28
+E27	Medical-Problem:T34 has-Medical-Assertion:T33
+E29	Lesion-Description:T36 has-Lesion-Characteristic:T35
+E33	Medical-Problem:T41 has-Medical-Assertion:T40
+E34	Medical-Problem:T42 has-Medical-Assertion:T40
+E38	Lesion-Description:T46 has-Lesion-Count:T43 has-Lesion-Characteristic:T44 has-Lesion-Anatomy:T45

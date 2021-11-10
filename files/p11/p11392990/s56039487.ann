@@ -1,0 +1,26 @@
+T1	Medical-Problem 181 202	moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Assertion 315 317	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 318 333	focal opacities
+T4	Medical-Problem 358 367	infection
+E3	Medical-Problem:T4
+T5	Medical-Assertion 379 381	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 382 389;391 399	pleural effusion
+T7	Medical-Problem 401 413	pneumothorax
+T8	Medical-Problem 415 430	pulmonary edema
+T9	Lesion-Anatomy 432 440	Biapical
+T10	Lesion-Characteristic 441 450	calcified
+T11	Lesion-Description 451 461	granulomas
+T12	Lesion-Size-Trend 467 476	unchanged
+A3	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 494 505	No evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 509 538	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10 has-Lesion-Size-Trend:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

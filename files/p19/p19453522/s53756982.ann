@@ -1,0 +1,21 @@
+T1	Medical-Assertion 338 340	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 341 353	pneumothorax
+T3	Medical-Problem 358 374	pleural effusion
+T4	Medical-Anatomy 499 503;505 515	left hemithorax
+T5	Medical-Assertion 558 571	may represent
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 572 581;583 602	increased soft tissue density
+T7	Medical-Anatomy 653 669	right subclavian
+T8	Medical-Assertion 682 689	without
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 690 702	pneumothorax
+T10	Medical-Problem 706 713;715 723	pleural effusion
+T11	Medical-Problem 726 746	Stable opacification
+T12	Medical-Anatomy 767 782	left hemithorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12

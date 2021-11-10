@@ -1,0 +1,23 @@
+T1	Medical-Assertion 313 324	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 328 347	vascular congestion
+T3	Medical-Problem 349 365	pleural effusion
+T4	Medical-Problem 370 381;383 392	acute focal pneumonia
+T5	Medical-Problem 395 416	Mild fibrotic changes
+T6	Medical-Assertion 421 430	suggested
+A2	Medical-AssertionValue T6 possible
+T7	Lesion-Assertion 450 458	possible
+A3	Lesion-AssertionValue T7 possible
+T8	Lesion-Description 460 469	granuloma
+T9	Lesion-Anatomy 477 496	right mid lung zone
+T10	Medical-Problem 523 533;535 554	old healed tuberculous disease
+E7	Medical-Problem:T10
+T11	Medical-Assertion 569 580	no evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 584 602	acute reactivation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E5	Lesion-Description:T8 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

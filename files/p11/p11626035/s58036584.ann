@@ -1,0 +1,43 @@
+T1	Medical-Problem 423 451	low lung volumes bilaterally
+E1	Medical-Problem:T1
+T2	Medical-Problem 465 489	bronchovascular crowding
+E2	Medical-Problem:T2
+T3	Medical-Problem 496 503	opacity
+T4	Medical-Anatomy 515 524	left base
+T5	Medical-Assertion 525 531	may be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 549 560	atelectasis
+T7	Medical-Problem 565 573	effusion
+T8	Medical-Problem 583 592	infection
+T9	Medical-Assertion 593 611	cannot be excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 614 616	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 617 629	pneumothorax
+T12	Medical-Assertion 652 654	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 656 684	interstitial pulmonary edema
+T14	Lesion-Characteristic 748 755	rounded
+T15	Lesion-Description 756 763	density
+T16	Lesion-Anatomy 771 784	right glenoid
+T17	Lesion-Assertion 785 791	may be
+A5	Lesion-AssertionValue T17 possible
+T18	Lesion-Description 794 805	bone island
+T19	Medical-Problem 829 849	Left basilar opacity
+E14	Medical-Problem:T19
+T20	Medical-Assertion 851 857	likely
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Problem 875 888	pleural fluid
+T22	Medical-Problem 894 905	atelectasis
+T23	Medical-Problem 914 923	infection
+E17	Medical-Problem:T23
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Lesion-Description:T15 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T16
+E13	Lesion-Description:T18 has-Lesion-Anatomy:T16 has-Lesion-Assertion:T17
+E15	Medical-Problem:T21 has-Medical-Assertion:T20
+E16	Medical-Problem:T22 has-Medical-Assertion:T20

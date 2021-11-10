@@ -1,0 +1,50 @@
+T1	Medical-Assertion 142 144	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 145 164	focal consolidation
+T3	Medical-Problem 166 174	effusion
+T4	Medical-Problem 178 190	pneumothorax
+T5	Lesion-Description 195 210	Nodular opacity
+T6	Lesion-Anatomy 220 229	left base
+T7	Lesion-Size-Trend 257 264	similar
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Problem 444 463	focal consolidation
+E6	Medical-Problem:T8
+T9	Medical-Problem 465 473	effusion
+E7	Medical-Problem:T9
+T10	Medical-Problem 477 489	pneumothorax
+E8	Medical-Problem:T10
+T11	Lesion-Description 494 501	Nodular
+E9	Lesion-Description:T11
+T12	Medical-Problem 502 509	opacity
+T13	Medical-Anatomy 519 528	left base
+T14	Medical-Assertion 532 538	likely
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 541 554	nipple shadow
+T16	Medical-Anatomy 945 950	Lungs
+E13	Medical-Anatomy:T16
+T17	Medical-Assertion 953 955	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 956 972	acute infiltrate
+T19	Lesion-Description 985 1000	nodular density
+E15	Lesion-Description:T19
+T20	Medical-Anatomy 1017 1021;1023 1027	left base
+E16	Medical-Anatomy:T20
+T21	Medical-Assertion 1028 1036	probably
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Assertion 1103 1105	no
+A6	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1106 1122	pleural effusion
+T24	Medical-Assertion 1140 1142	No
+A7	Medical-AssertionValue T24 absent
+T25	Medical-Assertion 1216 1219	not
+A8	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1220 1228	enlarged
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Medical-Problem:T23 has-Medical-Assertion:T22
+E18	Medical-Problem:T26 has-Medical-Assertion:T25

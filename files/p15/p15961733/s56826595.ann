@@ -1,0 +1,31 @@
+T1	Lesion-Size 72 82	small 4-mm
+T2	Lesion-Characteristic 83 92	calcified
+T3	Lesion-Characteristic 93 98	round
+T4	Lesion-Anatomy 99 108	pulmonary
+T5	Lesion-Description 109 116	nodular
+E5	Lesion-Description:T5
+T6	Lesion-Description 117 124	opacity
+T7	Lesion-Anatomy 146 169	lateral left upper lung
+T8	Lesion-Assertion 171 195	most likely representing
+A1	Lesion-AssertionValue T8 possible
+T9	Lesion-Characteristic 198 207	calcified
+T10	Lesion-Description 209 218	granuloma
+T11	Medical-Anatomy 592 597	lungs
+T12	Medical-Problem 603 661	relatively hyperinflated with flattening of the diaphragms
+T13	Medical-Assertion 673 675	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 677 696	focal consolidation
+T15	Medical-Problem 698 714	pleural effusion
+T16	Medical-Problem 731 743	pneumothorax
+T17	Medical-Problem 810 819;821 842	bones are relatively osteopenic
+E15	Medical-Problem:T17
+T18	Medical-Assertion 860 862	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 863 892	acute cardiopulmonary process
+E6	Lesion-Description:T6 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T7
+E9	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T13
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

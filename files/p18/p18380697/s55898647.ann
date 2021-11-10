@@ -1,0 +1,51 @@
+T1	Medical-Assertion 40 42	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 43 72	acute cardiopulmonary process
+T3	Medical-Assertion 89 91	no
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 92 101	pneumonia
+T5	Lesion-Size-Trend 108 114	Stable
+A3	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Anatomy 115 135	bilateral lower lobe
+T7	Lesion-Description 136 153	nodular opacities
+T8	Lesion-Description 167 173	nodule
+T9	Lesion-Size 186 191	10 mm
+T10	Lesion-Anatomy 199 215	right lower lobe
+T11	Lesion-Size-Trend 217 226	unchanged
+A4	Lesion-Size-TrendValue T11 no-change
+T12	Medical-Problem 673 700	biapical symmetric scarring
+E8	Medical-Problem:T12
+T13	Lesion-Anatomy 724 744	bilateral lower lobe
+T14	Lesion-Description 745 752	nodular
+E10	Lesion-Description:T14
+T15	Lesion-Description 753 762	opacities
+T16	Lesion-Size-Trend 794 800	stable
+A5	Lesion-Size-TrendValue T16 no-change
+T17	Lesion-Size 816 821	10 mm
+T18	Lesion-Anatomy 822 838	right lower lobe
+T19	Lesion-Description 839 845	nodule
+T20	Medical-Problem 858 879	artery calcifications
+E15	Medical-Problem:T20
+T21	Medical-Assertion 915 917	No
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 918 947	acute cardiopulmonary process
+T23	Medical-Assertion 964 966	no
+A7	Medical-AssertionValue T23 absent
+T24	Medical-Problem 967 976	pneumonia
+T25	Lesion-Anatomy 989 1009	bilateral lower lobe
+T26	Lesion-Description 1010 1027	nodular opacities
+T27	Lesion-Description 1041 1047	nodule
+T28	Lesion-Size 1059 1064	10 mm
+T29	Lesion-Anatomy 1072 1088	right lower lobe
+T30	Lesion-Size-Trend 1090 1099	unchanged
+A8	Lesion-Size-TrendValue T30 no-change
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Lesion-Description:T7 has-Lesion-Size-Trend:T5 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T11
+E5	Lesion-Description:T8 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T11
+E11	Lesion-Description:T15 has-Lesion-Anatomy:T13
+E14	Lesion-Description:T19 has-Lesion-Size-Trend:T16 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T18
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T24 has-Medical-Assertion:T23
+E19	Lesion-Description:T26 has-Lesion-Anatomy:T25 has-Lesion-Anatomy:T29 has-Lesion-Size-Trend:T30
+E20	Lesion-Description:T27 has-Lesion-Size-Present:T28 has-Lesion-Anatomy:T29 has-Lesion-Size-Trend:T30

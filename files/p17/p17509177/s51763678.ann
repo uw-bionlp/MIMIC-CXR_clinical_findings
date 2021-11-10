@@ -1,0 +1,22 @@
+T1	Medical-Assertion 377 379	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 380 400	visible pneumothorax
+T3	Medical-Problem 444 457	Heterogeneous
+E2	Medical-Problem:T3
+T4	Medical-Problem 458 467	opacities
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 475 485	right lung
+T6	Medical-Assertion 521 534	could reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 535 556	multifocal aspiration
+T8	Medical-Problem 558 567	pneumonia
+T9	Medical-Problem 572 582	hemorrhage
+T10	Medical-Problem 585 596	Atelectasis
+T11	Medical-Anatomy 605 614	left base
+T12	Medical-Problem 679 710	adjacent small pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T11

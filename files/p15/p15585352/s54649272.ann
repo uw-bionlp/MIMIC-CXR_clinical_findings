@@ -1,0 +1,22 @@
+T1	Medical-Problem 338 355	new focal opacity
+T2	Medical-Anatomy 363 377	left lung base
+T3	Medical-Assertion 378 391	may be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 392 401;403 412	resolving infection
+T5	Medical-Assertion 423 425	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 426 442	pleural effusion
+T7	Medical-Problem 449 461	cardiomegaly
+E5	Medical-Problem:T7
+T8	Medical-Assertion 483 485	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 486 498	pneumothorax
+T10	Medical-Problem 523 557	small focus of resolving infection
+T11	Medical-Anatomy 565 579	left lung base
+T12	Medical-Problem 591 608	mild cardiomegaly
+E9	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T11

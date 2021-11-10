@@ -1,0 +1,17 @@
+T1	Medical-Assertion 244 246	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 247 266	pleural abnormality
+T3	Medical-Problem 269 284	Rounded contour
+T4	Medical-Anatomy 292 295;297 323	mid portion of the right hilus
+T5	Lesion-Assertion 324 332	probably
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Assertion 333 336	not
+A3	Lesion-AssertionValue T6 absent
+T7	Lesion-Description 344 354	adenopathy
+T8	Medical-Assertion 463 465	no
+A4	Medical-AssertionValue T8 absent
+T9	Medical-Problem 466 485	pleural abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Assertion:T6
+E5	Medical-Problem:T9 has-Medical-Assertion:T8

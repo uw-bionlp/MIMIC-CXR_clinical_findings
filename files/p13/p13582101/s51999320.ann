@@ -1,0 +1,38 @@
+T1	Medical-Problem 60 83	Left lingular pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Problem 172 203	worsening consolidative opacity
+T3	Medical-Problem 210 226	air bronchograms
+T4	Medical-Anatomy 238 265	left upper lobe and lingula
+T5	Medical-Anatomy 300 315	left lower lobe
+T6	Medical-Problem 333 347	patchy opacity
+T7	Medical-Anatomy 356 371	right lung base
+T8	Medical-Assertion 372 385	may represent
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 425 427	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 429 445	pleural effusion
+T11	Medical-Problem 449 461	pneumothorax
+T12	Medical-Anatomy 476 486	heart size
+T13	Medical-Assertion 487 495	does not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 496 502;504 512	appear enlarged
+T15	Medical-Assertion 515 517	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 518 543	acute osseous abnormality
+T17	Medical-Problem 569 592	Worsening consolidation
+T18	Medical-Anatomy 600 627	left upper lobe and lingula
+T19	Medical-Problem 635 648	new opacities
+T20	Medical-Anatomy 656 679	lower lobes bilaterally
+T21	Medical-Assertion 680 694	concerning for
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 695 704;706 726	worsening multifocal pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

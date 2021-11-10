@@ -1,0 +1,66 @@
+T1	Medical-Problem 36 72	Several rounded, scattered densities
+T2	Medical-Anatomy 93 103	right lung
+T3	Medical-Problem 110 130	subpleural asymmetry
+T4	Medical-Anatomy 138 153	right lung apex
+T5	Lesion-Characteristic 275 309	peripherally calcified soft tissue
+T6	Lesion-Description 310 316	lesion
+T7	Lesion-Anatomy 324 342;344 350	right costophrenic  angle
+T8	Lesion-Size-Trend 354 371	unchanged grossly
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Assertion 388 399	No evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 403 412	pneumonia
+T11	Lesion-Characteristic 807 828	calcified soft tissue
+T12	Lesion-Description 829 833	mass
+T13	Lesion-Size-Trend 869 876	grossly
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Problem 899 911	Cardiomegaly
+E11	Medical-Problem:T14
+T15	Medical-Problem 926 941;943 953	Nodular pleural thickening
+T16	Medical-Anatomy 961 971	right apex
+T17	Lesion-Assertion 972 980	could be
+A4	Lesion-AssertionValue T17 possible
+T18	Lesion-Description 983 987	mass
+T19	Medical-Problem 992 1007	rounded density
+E15	Medical-Problem:T19
+T20	Medical-Problem 1079 1094;1096 1113	Additional tiny rounded densities
+T21	Medical-Anatomy 1134 1147	right midlung
+T22	Medical-Assertion 1211 1213	no
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1214 1226	pneumothorax
+T24	Medical-Assertion 1229 1237	Possible
+A6	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1238 1243	small
+E19	Medical-Problem:T25
+T26	Medical-Problem 1245 1267	right pleural effusion
+T27	Medical-Problem 1291 1327	Several rounded, scattered densities
+E21	Medical-Problem:T27
+T28	Lesion-Anatomy 1348 1358	right lung
+T29	Lesion-Anatomy 1364 1371	pleural
+T30	Lesion-Description 1372 1378	nodule
+T31	Lesion-Anatomy 1386 1401	right lung apex
+T32	Medical-Problem 1517 1538	Moderate cardiomegaly
+E26	Medical-Problem:T32
+T33	Medical-Assertion 1541 1543	No
+A7	Medical-AssertionValue T33 absent
+T34	Medical-Problem 1544 1553	pulmonary
+E27	Medical-Problem:T34
+T35	Medical-Problem 1554 1559	edema
+T36	Medical-Problem 1570 1604	peripherally calcified soft tissue
+E29	Medical-Problem:T36
+T37	Medical-Assertion 1681 1692	No evidence
+A8	Medical-AssertionValue T37 absent
+T38	Medical-Problem 1696 1705	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Size-Trend:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Lesion-Description:T18 has-Lesion-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T26 has-Medical-Assertion:T24
+E24	Lesion-Description:T30 has-Lesion-Anatomy:T28 has-Lesion-Anatomy:T29 has-Lesion-Anatomy:T31
+E28	Medical-Problem:T35 has-Medical-Assertion:T33
+E30	Medical-Problem:T38 has-Medical-Assertion:T37

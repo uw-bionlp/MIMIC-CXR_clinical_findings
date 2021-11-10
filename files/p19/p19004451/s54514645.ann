@@ -1,0 +1,40 @@
+T1	Medical-Problem 242 256;258 262	similar volume loss
+T2	Medical-Anatomy 270 286	right hemithorax
+T3	Medical-Problem 292 305	opacification
+T4	Medical-Anatomy 313 330	medial right apex
+T5	Medical-Problem 336 346	thickening
+T6	Medical-Problem 396 404	Blunting
+T7	Medical-Anatomy 413 438	right costophrenic sulcus
+T8	Medical-Assertion 457 465	suggests
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 466 480	minor scarring
+T10	Medical-Problem 485 496	atelectasis
+T11	Medical-Assertion 504 513	potential
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 514 528	small effusion
+T13	Medical-Problem 545 555;557 570	patchy new opacification
+T14	Medical-Anatomy 578 594	right lower lobe
+T15	Medical-Problem 687 722	Patchy new right lower lobe opacity
+E13	Medical-Problem:T15
+T16	Medical-Assertion 728 736	possible
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 737 750;752 760	small pleural effusion
+T18	Medical-Problem 798 812	mild pneumonia
+T19	Medical-Problem 816 827;829 839	sequelae of aspiration
+T20	Medical-Assertion 840 859	could be considered
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 870 887	evolving scarring
+T22	Medical-Assertion 946 970	could also be considered
+A5	Medical-AssertionValue T22 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T7 has-Medical-Assertion:T8 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T20
+E16	Medical-Problem:T19 has-Medical-Assertion:T20
+E17	Medical-Problem:T21 has-Medical-Assertion:T20 has-Medical-Assertion:T22

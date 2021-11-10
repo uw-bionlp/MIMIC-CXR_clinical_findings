@@ -1,0 +1,27 @@
+T1	Medical-Problem 231 262	right hemithorax is hyperlucent
+E1	Medical-Problem:T1
+T2	Medical-Assertion 266 272	do not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 281 296;298 312	pleural edge of a pneumothorax
+T4	Medical-Assertion 332 347	could be due to
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 348 357	emphysema
+T6	Medical-Problem 362 374	air trapping
+T7	Medical-Assertion 491 493	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 494 506	pneumothorax
+T9	Medical-Problem 509 535	Leftward mediastinal shift
+E6	Medical-Problem:T9
+T10	Medical-Problem 541 576	elevation of the left hemidiaphragm
+E7	Medical-Problem:T10
+T11	Medical-Problem 595 608	opacification
+T12	Medical-Anatomy 617 632	left lower lobe
+T13	Medical-Assertion 681 689	possible
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 691 700	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

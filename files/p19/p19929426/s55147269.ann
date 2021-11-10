@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 362 373;375 379	right upper lobe
+T2	Medical-Problem 385 411	persistent rounded opacity
+T3	Medical-Anatomy 419 442	right suprahilar region
+T4	Medical-Problem 448 467	ill-defined opacity
+T5	Medical-Anatomy 475 489	left lung base
+T6	Medical-Assertion 490 504	concerning for
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 505 526;528 535	multifocal infectious process
+T8	Medical-Assertion 622 624	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 625 653	significant pleural effusion
+T10	Medical-Problem 657 669	pneumothorax
+T11	Medical-Problem 672 681;683 705	Bibasilar plate-like atelectasis
+E9	Medical-Problem:T11
+T12	Medical-Problem 866 883	Improved aeration
+T13	Medical-Anatomy 891 926	right upper lobe and left lung base
+T14	Medical-Problem 933 980	persistent multifocal opacities consistent with
+E12	Medical-Problem:T14
+T15	Medical-Problem 981 990	infection
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13

@@ -1,0 +1,20 @@
+T1	Medical-Problem 305 325	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 386 416	mild degree of volume overload
+E2	Medical-Problem:T2
+T3	Medical-Problem 428 457	right base atelectatic change
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 460 483	Right upper mediastinal
+T5	Lesion-Description 484 488	mass
+T6	Lesion-Assertion 498 504	likely
+A1	Lesion-AssertionValue T6 possible
+T7	Lesion-Description 505 520	lymphadenopathy
+T8	Medical-Assertion 528 534	may be
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 538 565	small left pleural effusion
+T10	Lesion-Size 586 591	Large
+T11	Lesion-Description 616 631	lymphadenopathy
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T10

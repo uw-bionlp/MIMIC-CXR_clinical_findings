@@ -1,0 +1,50 @@
+T1	Medical-Assertion 356 358	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 359 378	focal consolidation
+T3	Medical-Problem 380 388	effusion
+T4	Medical-Problem 391 396	edema
+T5	Medical-Problem 401 413	pneumothorax
+T6	Medical-Problem 450 464	mediastinum is
+E5	Medical-Problem:T6
+T7	Medical-Assertion 465 468	not
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 470 477	widened
+T9	Medical-Anatomy 484 509	descending thoracic aorta
+T10	Medical-Problem 513 530	slightly tortuous
+T11	Lesion-Size 569 573	4-mm
+T12	Lesion-Anatomy 574 590	right lower lobe
+T13	Lesion-Description 591 598	opacity
+T14	Lesion-Characteristic 604 613	calcified
+T15	Lesion-Description 615 624	granuloma
+T16	Lesion-Assertion 644 646	No
+A3	Lesion-AssertionValue T16 absent
+T17	Lesion-Characteristic 647 654	obvious
+T18	Lesion-Anatomy 655 664	pulmonary
+T19	Lesion-Description 665 669	mass
+T20	Medical-Problem 674 705	Multilevel degenerative changes
+T21	Medical-Anatomy 727 747	lower thoracic spine
+T22	Medical-Assertion 841 843	No
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 845 870	subdiaphragmatic free air
+T24	Medical-Assertion 891 893	No
+A5	Medical-AssertionValue T24 absent
+T25	Medical-Problem 894 912	pulmonary effusion
+T26	Lesion-Assertion 915 917	No
+A6	Lesion-AssertionValue T26 absent
+T27	Lesion-Characteristic 918 925	obvious
+T28	Lesion-Characteristic 926 931	focal
+T29	Lesion-Anatomy 932 941	pulmonary
+T30	Lesion-Description 942 946	mass
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T1
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T12
+E13	Lesion-Description:T15 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T12 has-Lesion-Characteristic:T14
+E16	Lesion-Description:T19 has-Lesion-Assertion:T16 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T25 has-Medical-Assertion:T24
+E24	Lesion-Description:T30 has-Lesion-Assertion:T26 has-Lesion-Characteristic:T27 has-Lesion-Characteristic:T28 has-Lesion-Anatomy:T29

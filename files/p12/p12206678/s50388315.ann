@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 238 243	lungs
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 314 335	Greater opacification
+T3	Medical-Anatomy 343 353	lung bases
+T4	Medical-Assertion 354 366	could be the
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 377 390;392 401	small pleural effusions
+T6	Medical-Assertion 412 414	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 415 430	pulmonary edema
+T8	Medical-Problem 434 447	consolidation
+T9	Medical-Anatomy 482 507	descending thoracic aorta
+T10	Medical-Problem 511 525	mildly ectatic
+T11	Medical-Problem 540 554	calcifications
+T12	Medical-Problem 557 566	Scoliosis
+E10	Medical-Problem:T12
+T13	Medical-Problem 597 613	Severe emphysema
+E11	Medical-Problem:T13
+T14	Medical-Assertion 615 623	Possible
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 624 647	small pleural effusions
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

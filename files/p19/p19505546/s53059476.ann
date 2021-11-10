@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 264 269	lungs
+T2	Medical-Problem 275 288	hyperinflated
+T3	Medical-Assertion 289 296	without
+A1	Medical-AssertionValue T3 absent
+T4	Lesion-Characteristic 297 305	discrete
+T5	Lesion-Characteristic 306 311	focal
+T6	Lesion-Description 312 318	lesion
+T7	Medical-Problem 322 340	signs of pneumonia
+T8	Medical-Problem 344 347	CHF
+T9	Medical-Problem 362 375	vague density
+T10	Medical-Anatomy 383 406	right infrahilar region
+T11	Medical-Problem 440 458	chest wall density
+T12	Medical-Problem 639 651	ague opacity
+T13	Medical-Anatomy 672 695	right infrahilar region
+T14	Medical-Problem 723 753	chest wall contour abnormality
+T15	Medical-Problem 964 983	Hyperinflated lungs
+E14	Medical-Problem:T15
+T16	Medical-Assertion 984 998	likely reflect
+A2	Medical-AssertionValue T16 possible
+T17	Medical-Problem 999 1003	COPD
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E7	Medical-Problem:T8 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T14 has-Medical-Anatomy:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16

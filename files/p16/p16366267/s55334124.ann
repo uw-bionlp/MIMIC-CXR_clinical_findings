@@ -1,0 +1,30 @@
+T1	Medical-Assertion 236 238	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 239 258	focal consolidation
+T3	Medical-Problem 260 268	effusion
+T4	Medical-Problem 273 285	pneumothorax
+T5	Lesion-Size 291 296	large
+T6	Lesion-Anatomy 297 314	upper mediastinal
+T7	Lesion-Description 315 319	mass
+T8	Lesion-Size-Trend 321 335	stable in size
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Problem 356 364;366 390	leftward deviation of the trachea
+E7	Medical-Problem:T9
+T10	Medical-Problem 397 421	aorta is mildly tortuous
+E8	Medical-Problem:T10
+T11	Medical-Assertion 434 436	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 437 442;444 484	other abnormal cardiac or mediastinal contours
+T13	Lesion-Size-Trend 502 522	Unchanged appearance
+A4	Lesion-Size-TrendValue T13 no-change
+T14	Lesion-Size 526 531	large
+T15	Lesion-Anatomy 532 549	upper mediastinal
+T16	Lesion-Description 550 554	mass
+T17	Medical-Problem 562 570	deviates
+E13	Medical-Problem:T17
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T16 has-Lesion-Size-Trend:T13 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T15

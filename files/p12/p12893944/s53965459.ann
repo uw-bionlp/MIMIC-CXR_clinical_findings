@@ -1,0 +1,24 @@
+T1	Medical-Problem 258 287	Contiguous left rib fractures
+T2	Medical-Anatomy 310 357	fifth through ninth ribs, several in two places
+T3	Medical-Assertion 359 384	raising the possiblity of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 386 397	flail chest
+T5	Medical-Problem 401 431	small left apical pneumothorax
+E4	Medical-Problem:T5
+T6	Medical-Problem 469 535	small left pleural effusion, presumably hemorrhagic to some degree
+E5	Medical-Problem:T6
+T7	Medical-Problem 601 612;614 627	Progressive opacification
+T8	Medical-Anatomy 635 649	left lung base
+T9	Medical-Assertion 711 717	likely
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 735 756	subpleural hemorrhage
+T11	Medical-Problem 758 769	atelectasis
+T12	Medical-Problem 775 788	pleural fluid
+T13	Medical-Problem 833 847	Mild scoliosis
+E11	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

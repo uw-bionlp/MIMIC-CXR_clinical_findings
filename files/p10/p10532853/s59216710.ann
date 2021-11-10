@@ -1,0 +1,35 @@
+T1	Medical-Problem 119 142	worsening opacification
+T2	Medical-Anatomy 150 166	right lung field
+T3	Medical-Problem 392 422	deviated slightly to the right
+E3	Medical-Problem:T3
+T4	Medical-Problem 722 745	worsening opacification
+T5	Medical-Anatomy 753 769	right lung field
+T6	Medical-Problem 995 1025	deviated slightly to the right
+E6	Medical-Problem:T6
+T7	Medical-Problem 1740 1779	large layering right pleural collection
+E7	Medical-Problem:T7
+T8	Medical-Problem 1797 1807	hemothorax
+E8	Medical-Problem:T8
+T9	Medical-Problem 1945 1950	shift
+T10	Medical-Anatomy 1958 2004	mediastinal and cardiac structures to the left
+T11	Medical-Anatomy 2042 2051	left base
+T12	Medical-Problem 2057 2094	interval appearance of patchy opacity
+T13	Medical-Anatomy 2103 2116	left mid lung
+T14	Medical-Assertion 2123 2134	may reflect
+A1	Medical-AssertionValue T14 possible
+T15	Medical-Problem 2138 2157	area of atelectasis
+T16	Medical-Problem 2169 2178	pneumonia
+T17	Medical-Assertion 2179 2197	cannot be excluded
+A2	Medical-AssertionValue T17 possible
+T18	Medical-Assertion 2200 2202	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 2203 2215	pneumothorax
+T20	Medical-Problem 2224 2240	remains enlarged
+E17	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E15	Medical-Problem:T16 has-Medical-Anatomy:T11 has-Medical-Anatomy:T13 has-Medical-Assertion:T14 has-Medical-Assertion:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

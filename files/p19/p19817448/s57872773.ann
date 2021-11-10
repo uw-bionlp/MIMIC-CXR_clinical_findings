@@ -1,0 +1,28 @@
+T1	Medical-Problem 343 370	small left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 375 386	atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Assertion 403 405	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 406 418	pneumothorax
+T5	Lesion-Size 454 459	Large
+T6	Lesion-Anatomy 460 464;466 472	left apical
+T7	Lesion-Size 477 484	smaller
+T8	Lesion-Anatomy 485 501	right apical rib
+T9	Lesion-Anatomy 509 516	pleural
+T10	Lesion-Description 517 524	lesions
+T11	Medical-Problem 580 599	Small left effusion
+E10	Medical-Problem:T11
+T12	Medical-Problem 631 650	Bilateral effusions
+E11	Medical-Problem:T12
+T13	Lesion-Anatomy 655 671	bilateral apical
+T14	Lesion-Description 672 682	metastatic
+E13	Lesion-Description:T14
+T15	Lesion-Description 683 690	lesions
+T16	Medical-Assertion 692 708	without evidence
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 712 724	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E9	Lesion-Description:T10 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E14	Lesion-Description:T15 has-Lesion-Anatomy:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16

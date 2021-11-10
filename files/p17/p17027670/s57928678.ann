@@ -1,0 +1,23 @@
+T1	Medical-Problem 355 383	Lung volumes remain very low
+E1	Medical-Problem:T1
+T2	Medical-Problem 386 399	Opacification
+T3	Medical-Anatomy 422 432;434 438	right lung base
+T4	Medical-Problem 482 493	atelectasis
+T5	Medical-Problem 506 530	infrahilar consolidation
+E5	Medical-Problem:T5
+T6	Medical-Assertion 531 539	could be
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 540 551	atelectasis
+T8	Medical-Problem 561 570	pneumonia
+T9	Medical-Assertion 574 577;579 587	not excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 614 641	Pleural effusions are small
+E8	Medical-Problem:T10
+T11	Medical-Assertion 644 646	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 648 660	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

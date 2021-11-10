@@ -1,0 +1,31 @@
+T1	Medical-Assertion 189 191	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 192 208	pleural effusion
+T3	Medical-Problem 212 231	focal consolidation
+T4	Medical-Assertion 234 236	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 237 249	pneumothorax
+T6	Medical-Problem 256 260;262 287	left hemidiaphragm is obscured
+E4	Medical-Problem:T6
+T7	Medical-Assertion 290 292	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 293 308	pulmonary edema
+T9	Medical-Problem 378 389	Obscuration
+T10	Medical-Anatomy 397 415	left hemidiaphragm
+T11	Medical-Assertion 416 429	likely due to
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 430 452	retrocardiac opacities
+T13	Medical-Assertion 461 472	may reflect
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 473 484	atelectasis
+T15	Medical-Problem 495 517	superimposed infection
+T16	Medical-Assertion 518 524;526 539	may be considered in
+A6	Medical-AssertionValue T16 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Anatomy:T10 has-Medical-Assertion:T11 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T16

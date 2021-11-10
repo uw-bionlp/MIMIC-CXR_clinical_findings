@@ -1,0 +1,71 @@
+T1	Medical-Problem 37 54	New focal opacity
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 75 86	right hilum
+T3	Medical-Assertion 148 159	potentially
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 167 176	pneumonia
+T5	Lesion-Anatomy 273 284	right hilar
+T6	Lesion-Description 285 289	mass
+T7	Medical-Problem 396 407	enlargement
+T8	Medical-Anatomy 415 426	right hilum
+T9	Medical-Assertion 427 437	may be due
+A2	Medical-AssertionValue T9 possible
+T10	Lesion-Characteristic 441 451	underlying
+T11	Lesion-Description 454 469	lymphadenopathy
+T12	Lesion-Description 473 484	mass lesion
+T13	Lesion-Characteristic 565 574	calcified
+T14	Lesion-Anatomy 575 580	hilar
+T15	Lesion-Description 581 586	nodes
+T16	Lesion-Characteristic 607 626;628 636	prior granulomatous  disease
+T17	Medical-Assertion 643 645	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 658 667	pneumonia
+T19	Medical-Anatomy 1032 1037	aorta
+T20	Medical-Problem 1041 1049	tortuous
+T21	Medical-Problem 1055 1062;1064 1094	minimal atherosclerotic calcifications
+T22	Medical-Problem 1099 1124	ill-defined focal opacity
+T23	Medical-Anatomy 1155 1166	right hilum
+T24	Medical-Problem 1318 1323	lungs
+E21	Medical-Problem:T24
+T25	Medical-Problem 1328 1341	hyperinflated
+T26	Medical-Problem 1347 1358;1360 1376	attenuation of the pulmonary
+E23	Medical-Problem:T26
+T27	Medical-Anatomy 1398 1409	upper lobes
+T28	Medical-Assertion 1410 1423	suggestive of
+A4	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1424 1434;1436 1445	underlying emphysema
+T30	Medical-Assertion 1447 1449	No
+A5	Medical-AssertionValue T30 absent
+T31	Medical-Problem 1450 1466	pleural effusion
+T32	Medical-Problem 1470 1482	pneumothorax
+T33	Medical-Problem 1510 1530	degenerative changes
+T34	Medical-Anatomy 1548 1562	thoracic spine
+T35	Medical-Assertion 1574 1576	no
+A6	Medical-AssertionValue T35 absent
+T36	Medical-Problem 1577 1582;1584 1605	acute osseous abnormalities
+T37	Medical-Problem 1626 1643	New focal opacity
+E31	Medical-Problem:T37
+T38	Medical-Anatomy 1695 1703;1705 1735	anterior aspect of the right upper lobe
+T39	Medical-Assertion 1736 1754	potentially due to
+A7	Medical-AssertionValue T39 possible
+T40	Medical-Problem 1755 1764	pneumonia
+T41	Lesion-Anatomy 1859 1870	right hilar
+T42	Lesion-Description 1871 1875	mass
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T10
+E13	Lesion-Description:T15 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14 has-Lesion-Characteristic:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Medical-Problem:T20 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Anatomy:T19
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E22	Medical-Problem:T25 has-Medical-Anatomy:T27
+E25	Medical-Problem:T29 has-Medical-Anatomy:T27 has-Medical-Assertion:T28
+E26	Medical-Problem:T31 has-Medical-Assertion:T30
+E27	Medical-Problem:T32 has-Medical-Assertion:T30
+E28	Medical-Problem:T33 has-Medical-Anatomy:T34
+E30	Medical-Problem:T36 has-Medical-Assertion:T35
+E33	Medical-Problem:T40 has-Medical-Anatomy:T38 has-Medical-Assertion:T39
+E35	Lesion-Description:T42 has-Lesion-Anatomy:T41

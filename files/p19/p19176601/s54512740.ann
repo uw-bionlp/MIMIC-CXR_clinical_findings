@@ -1,0 +1,48 @@
+T1	Medical-Problem 313 332	mild hyperinflation
+T2	Medical-Anatomy 368 389	bilateral upper lungs
+T3	Medical-Problem 394 412	paucity of vessels
+T4	Medical-Assertion 413 423	suggesting
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 424 444	underlying emphysema
+T6	Medical-Problem 448 481	Stable retrocardiac opacification
+E5	Medical-Problem:T6
+T7	Medical-Assertion 482 499	likely represents
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 500 511	atelectasis
+T9	Medical-Assertion 519 525;527 534	cannot exclude
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 535 544	infection
+T11	Medical-Problem 579 600;602 616	Dense atherosclerotic calcifications
+T12	Medical-Anatomy 638 649	aortic arch
+T13	Medical-Problem 652 662	Prominence
+T14	Medical-Anatomy 670 675;677 693	right pulmonary artery
+T15	Medical-Assertion 694 702	suggests
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 705 746	degree of pulmonsry arterial hypertension
+T17	Medical-Anatomy 749 754;756 760	Heart size
+T18	Medical-Assertion 764 767	not
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 768 776	enlarged
+T20	Medical-Problem 811 844	Stable retrocardiac opacification
+E15	Medical-Problem:T20
+T21	Medical-Assertion 846 857	most likely
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 859 870	atelectasis
+T23	Medical-Problem 878 887	pneumonia
+T24	Medical-Assertion 888 913	not definitively excluded
+A7	Medical-AssertionValue T24 possible
+T25	Medical-Assertion 925 935;937 939	suggestive of
+A8	Medical-AssertionValue T25 possible
+T26	Medical-Problem 940 971	pulmonary arterial hypertension
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E14	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T23 has-Medical-Assertion:T21 has-Medical-Assertion:T24
+E18	Medical-Problem:T26 has-Medical-Assertion:T25

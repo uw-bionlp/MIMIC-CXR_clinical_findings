@@ -1,0 +1,17 @@
+T1	Medical-Problem 214 236;238 247	Widespread parenchymal opacities
+T2	Medical-Anatomy 255 293	perihilar area in the right lower lobe
+T3	Medical-Problem 362 391	peribronchovascular extensive
+E3	Medical-Problem:T3
+T4	Medical-Problem 498 508	Bronchitis
+T5	Medical-Assertion 509 540	might be additional possibility
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 547 577	coexisting of the two entities
+T7	Medical-Assertion 581 592	most likely
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 604 617;619 627	no definitive evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 631 670	interval development of pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

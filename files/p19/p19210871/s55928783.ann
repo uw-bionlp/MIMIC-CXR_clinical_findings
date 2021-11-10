@@ -1,0 +1,23 @@
+T1	Medical-Assertion 305 307	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 308 316;318 330	definite pneumothorax
+T3	Medical-Problem 380 389;391 410	bilateral pulmonary opacities
+E2	Medical-Problem:T3
+T4	Medical-Problem 411 441	some containing calcifications
+E3	Medical-Problem:T4
+T5	Lesion-Assertion 448 462	likely reflect
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Count 464 472	numerous
+T7	Lesion-Anatomy 473 482	pulmonary
+T8	Lesion-Description 483 493	hamartomas
+T9	Medical-Problem 547 564	increased opacity
+E7	Medical-Problem:T9
+T10	Medical-Anatomy 581 596	right lung base
+T11	Medical-Problem 603 615;617 627	superimposed aspiration
+T12	Medical-Problem 631 640	pneumonia
+T13	Medical-Assertion 644 653	suspected
+A3	Medical-AssertionValue T13 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Count:T6 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10 has-Medical-Assertion:T13
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T13

@@ -1,0 +1,58 @@
+T1	Medical-Problem 40 69	Pulmonary vascular congestion
+E1	Medical-Problem:T1
+T2	Medical-Problem 74 94	mild pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 101 114	Focal opacity
+T4	Medical-Anatomy 129 156	peripheral right hemithorax
+T5	Medical-Assertion 157 167	may relate
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 173 194	overlying soft tissue
+T7	Medical-Problem 206 230	developing consolidation
+T8	Medical-Problem 232 247;249 255	focal pulmonary  edema
+E7	Medical-Problem:T8
+T9	Medical-Problem 264 284	pulmonary infarction
+E8	Medical-Problem:T9
+T10	Medical-Assertion 397 399	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 400 412	pneumothorax
+T12	Medical-Problem 416 432	pleural effusion
+T13	Lesion-Characteristic 873 883	Peripheral
+T14	Lesion-Description 884 888	mass
+T15	Lesion-Anatomy 909 939;941 961	right upper hemi thorax with a convex medial margin
+T16	Medical-Assertion 963 971	could be
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 972 981	infection
+T18	Medical-Problem 983 993	infarction
+T19	Lesion-Description 998 1010	pleural mass
+E16	Lesion-Description:T19
+T20	Medical-Problem 1014 1019;1021 1031	fluid collection
+T21	Medical-Problem 1156 1179	Mild interstitial edema
+T22	Medical-Problem 1184 1203	vascular congestion
+T23	Medical-Anatomy 1223 1232	left Lung
+T24	Medical-Problem 1286 1299	opacification
+T25	Medical-Anatomy 1307 1312;1314 1323	right lung base
+T26	Medical-Problem 1329 1366	pattern of previous episodes of edema
+T27	Medical-Problem 1417 1437	concurrent pneumonia
+E24	Medical-Problem:T27
+T28	Medical-Problem 1539 1558	effusions are small
+E25	Medical-Problem:T28
+T29	Medical-Assertion 1568 1570	No
+A4	Medical-AssertionValue T29 absent
+T30	Medical-Problem 1571 1583	pneumothorax
+T31	Lesion-Anatomy 1705 1716	right chest
+T32	Lesion-Description 1717 1723	lesion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E17	Medical-Problem:T20 has-Medical-Assertion:T16
+E18	Medical-Problem:T21 has-Medical-Anatomy:T23
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T24 has-Medical-Anatomy:T25
+E23	Medical-Problem:T26 has-Medical-Anatomy:T25
+E26	Medical-Problem:T30 has-Medical-Assertion:T29
+E28	Lesion-Description:T32 has-Lesion-Anatomy:T31

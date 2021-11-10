@@ -1,0 +1,48 @@
+T1	Medical-Problem 280 311	Underlying interstitial disease
+T2	Medical-Assertion 315 324	suspected
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 331 354	peripheral reticulation
+T4	Medical-Problem 357 395	More confluent but irregular opacities
+T5	Medical-Anatomy 410 477;479 519	each lower lung, particularly in the left lower lung, involving the lingula and probably the left lower lobe
+T6	Lesion-Size 524 529	small
+T7	Lesion-Anatomy 530 542	right apical
+T8	Lesion-Description 543 550;552 559	nodular opacity
+T9	Lesion-Characteristic 596 606	more vague
+T10	Lesion-Size 607 611	4 mm
+T11	Lesion-Description 612 619	nodular
+E10	Lesion-Description:T11
+T12	Lesion-Description 620 627	opacity
+T13	Lesion-Anatomy 655 670	left upper lung
+T14	Medical-Problem 673 705	Mild biapical pleural thickening
+E13	Medical-Problem:T14
+T15	Medical-Problem 731 742	small bulla
+T16	Medical-Anatomy 750 760	right apex
+T17	Medical-Problem 765 787	trace pleural effusion
+E16	Medical-Problem:T17
+T18	Medical-Problem 816 841	Mild degenerative changes
+T19	Medical-Problem 846 866	exaggerated kyphosis
+T20	Medical-Anatomy 888 902	thoracic spine
+T21	Medical-Problem 908 934	small anterior osteophytes
+T22	Medical-Assertion 971 981	suggesting
+A2	Medical-AssertionValue T22 possible
+T23	Medical-Problem 982 1018	underlying interstitial lung disease
+T24	Medical-Problem 1029 1048	Bibasilar opacities
+E22	Medical-Problem:T24
+T25	Medical-Assertion 1049 1062	may represent
+A3	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1063 1085	superimposed pneumonia
+T27	Medical-Assertion 1185 1193	Possible
+A4	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1194 1228	trace pleural effusion on the left
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T9 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16
+E17	Medical-Problem:T18 has-Medical-Anatomy:T20
+E18	Medical-Problem:T19 has-Medical-Anatomy:T20
+E20	Medical-Problem:T21 has-Medical-Anatomy:T20
+E21	Medical-Problem:T23 has-Medical-Assertion:T22
+E23	Medical-Problem:T26 has-Medical-Assertion:T25
+E24	Medical-Problem:T28 has-Medical-Assertion:T27

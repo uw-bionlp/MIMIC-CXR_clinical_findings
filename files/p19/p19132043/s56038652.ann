@@ -1,0 +1,29 @@
+T1	Medical-Problem 286 307	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 361 376	Mild prominence
+T3	Medical-Anatomy 384 405	pulmonary vasculature
+T4	Lesion-Description 423 430;432 439	nodular opacity
+T5	Lesion-Anatomy 458 476	left upper lung at
+T6	Lesion-Description 646 653	nodular
+E6	Lesion-Description:T6
+T7	Lesion-Description 655 664	opacities
+T8	Lesion-Anatomy 665 674	scattered
+T9	Lesion-Anatomy 682 706	right mid and upper lung
+T10	Medical-Assertion 718 720	no
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 721 728;730 738	pleural effusion
+T12	Medical-Problem 742 754	pneumothorax
+T13	Lesion-Characteristic 777 786	Scattered
+T14	Lesion-Anatomy 787 796	pulmonary
+T15	Lesion-Description 797 804	nodules
+T16	Lesion-Anatomy 825 840	left upper lung
+T17	Medical-Problem 931 962	Unchanged moderate cardiomegaly
+E16	Medical-Problem:T17
+T18	Medical-Problem 967 1001	mild pulmonary vascular congestion
+E17	Medical-Problem:T18
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T10
+E14	Lesion-Description:T15 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T16

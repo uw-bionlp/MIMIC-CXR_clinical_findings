@@ -1,0 +1,20 @@
+T1	Medical-Problem 247 265;267 288	small wedge-shaped area of opacification
+T2	Medical-Anatomy 299 317	left hemidiaphragm
+T3	Medical-Assertion 399 401	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 402 418	pleural effusion
+T5	Medical-Problem 423 435	pneumothorax
+T6	Medical-Problem 491 531	small wedge-shaped area of opacification
+T7	Medical-Anatomy 539 558;560 573	left base along the hemidiaphragm
+T8	Medical-Assertion 619 630	may reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 632 643	atelectasis
+T10	Medical-Problem 674 681	infarct
+E8	Medical-Problem:T10
+T11	Lesion-Description 685 689	mass
+E9	Lesion-Description:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

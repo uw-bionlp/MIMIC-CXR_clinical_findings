@@ -1,0 +1,31 @@
+T1	Medical-Problem 300 318	Cardiac silhouette
+T2	Medical-Assertion 320 327	appears
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Assertion 374 394;396 403	might potentially be related
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 411 429	sickle cell crisis
+T5	Medical-Problem 431 444	New opacities
+T6	Medical-Anatomy 462 473	lower lobes
+T7	Medical-Problem 486 506	vascular enlargement
+T8	Medical-Assertion 508 516	No clear
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 517 526	pneumonia
+T10	Medical-Problem 539 550;552 566	right lower lobe pneumonia
+T11	Medical-Assertion 567 585	cannot be excluded
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 589 600	potentially
+E8	Medical-Problem:T12
+T13	Medical-Problem 601 618	pulmonary infarct
+T14	Medical-Assertion 620 622	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 623 628;630 646	large pleural effusion
+T16	Medical-Problem 659 681	small pleural effusion
+E11	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T8 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

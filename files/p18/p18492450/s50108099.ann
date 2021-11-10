@@ -1,0 +1,22 @@
+T1	Medical-Assertion 34 36	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 37 49	pneumothorax
+T3	Medical-Assertion 61 69	Possible
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 70 101	new small left pleural effusion
+T5	Medical-Problem 106 130	Persistent large opacity
+T6	Medical-Anatomy 140 156	right lung field
+T7	Medical-Problem 586 607	effusion on the right
+E5	Medical-Problem:T7
+T8	Medical-Assertion 633 635;637 645	no evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 651 669	right pneumothorax
+T10	Lesion-Description 685 708	mass-like large opacity
+T11	Lesion-Anatomy 717 746	level of the right lung hilum
+T12	Lesion-Size-Trend 750 762	unchanged in
+A4	Lesion-Size-TrendValue T12 no-change
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Lesion-Description:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T12

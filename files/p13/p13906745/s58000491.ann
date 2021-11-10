@@ -1,0 +1,29 @@
+T1	Lesion-Size 195 199	Tiny
+T2	Lesion-Description 200 207	nodular
+T3	Lesion-Characteristic 208 218	hyperdense
+T4	Lesion-Description 219 223	foci
+T5	Lesion-Anatomy 225 245	scattered throughout
+T6	Lesion-Assertion 246 259	may represent
+A1	Lesion-AssertionValue T6 possible
+T7	Lesion-Characteristic 260 269	calcified
+T8	Lesion-Description 270 280	granulomas
+T9	Medical-Assertion 383 385	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 386 402	pleural effusion
+T11	Medical-Problem 406 418	pneumothorax
+T12	Medical-Anatomy 421 439	Osseous structures
+T13	Medical-Assertion 452 454	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 456 473	acute abnormality
+T15	Medical-Assertion 491 493	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 494 513	focal opacification
+T17	Medical-Problem 525 534	pneumonia
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T3
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T3
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15

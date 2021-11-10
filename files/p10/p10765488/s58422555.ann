@@ -1,0 +1,26 @@
+T1	Lesion-Anatomy 306 319	pleural-based
+T2	Lesion-Description 320 327	lesions
+T3	Lesion-Assertion 332 335;337 347	not visualized
+A1	Lesion-AssertionValue T3 absent
+T4	Medical-Problem 370 378	Blunting
+T5	Medical-Anatomy 386 415	posterior costophrenic angles
+T6	Medical-Assertion 417 425	suggests
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 426 441	small effusions
+T8	Medical-Problem 522 552	Atherosclerotic calcifications
+T9	Medical-Anatomy 567 578	aortic arch
+T10	Medical-Assertion 581 583	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 584 609	acute osseous abnormality
+T12	Medical-Problem 630 655	Small bilateral effusions
+E9	Medical-Problem:T12
+T13	Lesion-Anatomy 675 687	extrapleural
+T14	Lesion-Description 688 694	masses
+T15	Lesion-Assertion 699 702	not
+A4	Lesion-AssertionValue T15 absent
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Lesion-Description:T14 has-Lesion-Anatomy:T13 has-Lesion-Assertion:T15

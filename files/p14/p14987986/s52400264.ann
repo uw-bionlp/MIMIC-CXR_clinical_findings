@@ -1,0 +1,17 @@
+T1	Medical-Problem 650 663	Consolidation
+T2	Medical-Anatomy 671 693	base of the right lung
+T3	Medical-Assertion 712 722;724 735	may now be accompanied
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 741 778	moderate subpulmonic pleural effusion
+T5	Medical-Problem 781 800	Pneumonia elsewhere
+T6	Medical-Anatomy 809 825	right upper lobe
+T7	Lesion-Size 830 835	large
+T8	Lesion-Characteristic 836 844	cavitary
+T9	Lesion-Description 845 851	lesion
+T10	Lesion-Anatomy 859 874	left upper lobe
+T11	Medical-Problem 906 927	Moderate cardiomegaly
+E10	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T10

@@ -1,0 +1,37 @@
+T1	Medical-Problem 185 200	Streaky opacity
+T2	Medical-Anatomy 204 219	right lung base
+T3	Medical-Assertion 220 233	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 234 245	atelectasis
+T5	Medical-Problem 249 259;261 267	aspiration  event
+T6	Medical-Problem 269 295	Retrocardiac opacification
+E5	Medical-Problem:T6
+T7	Medical-Anatomy 648 663	Left lower lobe
+T8	Medical-Problem 667 682	newly collapsed
+T9	Medical-Problem 688 720	new right lower lobe atelectasis
+T10	Medical-Anatomy 724 740	Right upper lobe
+T11	Medical-Problem 741 752	new opacity
+T12	Medical-Assertion 753 761	could be
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 762 771	pneumonia
+T14	Medical-Problem 814 831	slightly too high
+E12	Medical-Problem:T14
+T15	Medical-Assertion 865 873	Probable
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 874 879;881 898	small pleural effusions
+T17	Medical-Assertion 910 912	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 913 925	pneumothorax
+T19	Medical-Problem 1021 1046	New bibasilar atelectasis
+E15	Medical-Problem:T19
+T20	Medical-Problem 1051 1081	right upper lobe consolidation
+E16	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

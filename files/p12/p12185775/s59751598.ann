@@ -1,0 +1,21 @@
+T1	Medical-Problem 293 313	New airspace opacity
+T2	Medical-Anatomy 314 323;325 341	distal to the catheter tip
+T3	Medical-Assertion 342 369	could potentially represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 370 390	pulmonary hemorrhage
+T5	Medical-Problem 422 433	atelectasis
+E4	Medical-Problem:T5
+T6	Medical-Problem 437 447	aspiration
+T7	Medical-Problem 468 477;479 490	Improving atelectasis
+T8	Medical-Anatomy 494 509	left lower lobe
+T9	Medical-Problem 514 552	persistent small left pleural effusion
+E8	Medical-Problem:T9
+T10	Lesion-Characteristic 556 566	Incidental
+T11	Lesion-Characteristic 567 576	calcified
+T12	Lesion-Description 577 587	granulomas
+T13	Lesion-Anatomy 599 614	left upper lobe
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13

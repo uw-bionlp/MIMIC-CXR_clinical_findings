@@ -1,0 +1,22 @@
+T1	Medical-Assertion 378 380	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 382 412	appreciable right pneumothorax
+T3	Medical-Problem 423 450	Hyperinflation of the lungs
+E2	Medical-Problem:T3
+T4	Medical-Problem 461 465	COPD
+E3	Medical-Problem:T4
+T5	Medical-Problem 468 486	Increased markings
+T6	Medical-Anatomy 503 513	lung bases
+T7	Medical-Anatomy 530 535	lungs
+T8	Medical-Problem 560 579	focal consolidation
+T9	Medical-Problem 581 597	pleural effusion
+T10	Medical-Problem 601 616;618 623	overt pulmonary edema
+T11	Medical-Assertion 758 765	without
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 766 790	appreciable pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 227 234	cardiac
+T2	Medical-Assertion 246 253	appears
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 254 283	mildly to moderately enlarged
+T4	Medical-Problem 316 329	Focal opacity
+T5	Medical-Anatomy 337 353	right lower lobe
+T6	Medical-Assertion 357 371	concerning for
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 373 382	pneumonia
+T8	Medical-Problem 384 407	Pulmonary edema is mild
+E6	Medical-Problem:T8
+T9	Medical-Assertion 410 412	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 413 438	definite pleural effusion
+T11	Medical-Assertion 465 467	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 468 480	pneumothorax
+T13	Medical-Problem 502 528	Right lower lobe pneumonia
+E9	Medical-Problem:T13
+T14	Medical-Problem 651 684	New mild to moderate cardiomegaly
+E10	Medical-Problem:T14
+T15	Medical-Problem 689 709	mild pulmonary edema
+E11	Medical-Problem:T15
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

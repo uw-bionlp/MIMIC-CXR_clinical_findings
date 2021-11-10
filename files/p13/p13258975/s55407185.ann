@@ -1,0 +1,39 @@
+T1	Medical-Problem 247 289	some asymmetry of prominent nipple shadows
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 299 310;312 340	upper outer quadrant of the right nipple
+T3	Lesion-Characteristic 382 389	nodular
+T4	Lesion-Description 391 398	opacity
+T5	Lesion-Assertion 404 412	could be
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Anatomy 415 419	lung
+T7	Lesion-Description 420 426	nodule
+T8	Medical-Problem 517 536	genuine abnormality
+E7	Medical-Problem:T8
+T9	Lesion-Characteristic 561 575	very prominent
+T10	Lesion-Size 576 580	3 mm
+T11	Lesion-Description 586 592	nodule
+T12	Lesion-Anatomy 593 622;624 637	projecting over the pulmonary outflow tract
+T13	Lesion-Assertion 639 655	almost certainly
+A2	Lesion-AssertionValue T13 possible
+T14	Lesion-Characteristic 658 667	calcified
+T15	Lesion-Description 668 677	granuloma
+T16	Medical-Assertion 689 691	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 692 701	pneumonia
+T18	Medical-Problem 706 717	atelectasis
+T19	Medical-Assertion 719 721	no
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 722 737	pulmonary edema
+T21	Medical-Problem 739 758	vascular congestion
+T22	Medical-Problem 763 779	pleural effusion
+T23	Medical-Problem 836 850	azygos fissure
+E19	Medical-Problem:T23
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T2 has-Lesion-Characteristic:T3
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T2 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E10	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T12
+E13	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Characteristic:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T19

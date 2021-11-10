@@ -1,0 +1,21 @@
+T1	Medical-Problem 213 221	Aeration
+T2	Medical-Anatomy 229 244	right lung base
+T3	Medical-Problem 362 396	persistent right basal atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Problem 411 421	aspiration
+E4	Medical-Problem:T4
+T5	Medical-Problem 427 446	retained secretions
+E5	Medical-Problem:T5
+T6	Medical-Problem 449 489	Small-to-moderate right pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Anatomy 561 570	left lung
+T8	Medical-Problem 572 599	peribronchial opacification
+T9	Medical-Anatomy 607 618	lower lobes
+T10	Medical-Problem 670 680	aspiration
+T11	Medical-Assertion 829 831	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 832 844	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7 has-Medical-Anatomy:T9
+E10	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11

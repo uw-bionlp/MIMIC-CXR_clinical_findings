@@ -1,0 +1,15 @@
+T1	Medical-Anatomy 382 396	Left lung base
+T2	Medical-Assertion 408 414;416 428	likely secondary to
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 429 440	atelectasis
+T4	Medical-Problem 448 464	pleural effusion
+T5	Medical-Assertion 476 478	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 479 491	pneumothorax
+T7	Medical-Problem 504 524	mild pulmonary edema
+E5	Medical-Problem:T7
+T8	Medical-Problem 529 548	vascular congestion
+E6	Medical-Problem:T8
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5

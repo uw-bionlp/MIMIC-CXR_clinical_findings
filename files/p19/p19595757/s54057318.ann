@@ -1,0 +1,35 @@
+T1	Medical-Problem 327 341;343 367	persistent low inspiratory lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 373 414;416 425	increased size of small bilateral pleural effusions
+E2	Medical-Problem:T2
+T3	Medical-Problem 437 469	Mild pulmonary edema bilaterally
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 519 540	pulmonary vasculature
+T5	Medical-Assertion 544 547	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 548 556	engorged
+T7	Medical-Assertion 559 561	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 562 567;569 582	focal consolidation
+T9	Medical-Problem 586 598	pneumothorax
+T10	Lesion-Size 614 618	tiny
+T11	Lesion-Characteristic 619 628	calcified
+T12	Lesion-Description 629 635	nodule
+T13	Lesion-Anatomy 644 676	periphery of the left upper lobe
+T14	Lesion-Size-Trend 680 686	stable
+A3	Lesion-Size-TrendValue T14 no-change
+T15	Medical-Assertion 867 869	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 871 881	prominence
+T17	Medical-Anatomy 889 900	azygos vein
+T18	Medical-Problem 951 972	chronic heart failure
+E14	Medical-Problem:T18
+T19	Medical-Assertion 975 986	No evidence
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 991 1009	acute exacerbation
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13 has-Lesion-Size-Trend:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

@@ -1,0 +1,20 @@
+T1	Medical-Problem 188 219	heart size is slightly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 271 276	lungs
+T3	Medical-Problem 291 321	consolidative airspace opacity
+T4	Medical-Anatomy 333 361	primarily the left lung base
+T5	Medical-Assertion 373 375	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 376 392	pleural effusion
+T7	Medical-Problem 397 409	pneumothorax
+T8	Medical-Problem 431 456	Left lower lobe pneumonia
+E7	Medical-Problem:T8
+T9	Medical-Problem 463 484	Mildly enlarged heart
+E8	Medical-Problem:T9
+T10	Medical-Problem 523 534;536 544	pericardial effusion
+T11	Medical-Assertion 545 563	cannot be excluded
+A2	Medical-AssertionValue T11 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Medical-Problem:T10 has-Medical-Assertion:T11

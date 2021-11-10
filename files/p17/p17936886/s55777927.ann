@@ -1,0 +1,51 @@
+T1	Medical-Problem 248 267	ill-defined opacity
+T2	Medical-Anatomy 275 298;300 316	anterior segment of the right upper lobe
+T3	Medical-Problem 414 439	ill defined opacification
+T4	Medical-Anatomy 447 452;454 502	right lower lung field obscuring the right hear border
+T5	Medical-Problem 530 555	moderate pleural effusion
+E5	Medical-Problem:T5
+T6	Medical-Problem 561 583	concurrent atelectasis
+E6	Medical-Problem:T6
+T7	Medical-Problem 591 601;603 610	peripheral opacity
+T8	Medical-Anatomy 618 634	lower lung field
+T9	Medical-Assertion 667 672;674 683	might represent
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 684 702	loculated effusion
+T11	Medical-Problem 710 718	scarring
+T12	Medical-Problem 725 744;746 754	heart is moderately enlarged
+E11	Medical-Problem:T12
+T13	Medical-Assertion 820 822;824 832	no evidence
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 836 848	pneumothorax
+T15	Medical-Problem 902 928	Right upper lobe pneumonia
+E13	Medical-Problem:T15
+T16	Medical-Problem 937 954	Right middle lobe
+E14	Medical-Problem:T16
+T17	Medical-Problem 955 962	opacity
+E15	Medical-Problem:T17
+T18	Medical-Assertion 963 978	might represent
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 979 988	pneumonia
+T20	Medical-Problem 996 1007	atelectasis
+T21	Medical-Problem 1015 1042	Left-sided pleural effusion
+E18	Medical-Problem:T21
+T22	Medical-Problem 1048 1070	concurrent atelectasis
+E19	Medical-Problem:T22
+T23	Medical-Problem 1075 1085;1087 1094	peripheral opacity
+E20	Medical-Problem:T23
+T24	Medical-Assertion 1101 1116	might represent
+A4	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1117 1125	scarring
+T26	Medical-Problem 1135 1157	superimposed pneumonia
+T27	Medical-Assertion 1158 1164;1166 1177	cannot be excluded
+A5	Medical-AssertionValue T27 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T18
+E21	Medical-Problem:T25 has-Medical-Assertion:T24
+E22	Medical-Problem:T26 has-Medical-Assertion:T27

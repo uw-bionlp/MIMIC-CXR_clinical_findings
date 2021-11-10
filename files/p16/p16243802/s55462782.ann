@@ -1,0 +1,25 @@
+T1	Medical-Problem 33 58	Left lower lobe pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Problem 439 452	consolidation
+T3	Medical-Problem 458 474	air bronchograms
+T4	Medical-Anatomy 487 501;503 509	left perihilar region
+T5	Medical-Problem 529 538	pneumonia
+T6	Medical-Assertion 539 545	likely
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Anatomy 557 580;582 589	superior segment of the lingula
+T8	Medical-Assertion 633 635	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 636 648	pneumothorax
+T10	Medical-Problem 650 660;662 674	Persistent elevation of
+E8	Medical-Problem:T10
+T11	Medical-Problem 727 740	Consolidation
+T12	Medical-Anatomy 752 759	lingula
+T13	Medical-Assertion 760 774	concerning for
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 775 784	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Assertion:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

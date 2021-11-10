@@ -1,0 +1,29 @@
+T1	Medical-Problem 239 250	eventration
+T2	Medical-Anatomy 259 277	left hemidiaphragm
+T3	Medical-Problem 280 318	Minimal residual right basilar opacity
+E3	Medical-Problem:T3
+T4	Medical-Problem 385 395;397 428	persistent increased interstitial markings
+T5	Medical-Anatomy 429 439	throughout
+T6	Medical-Assertion 475 482	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 483 501	new consolidations
+T8	Medical-Problem 653 705	Small residual right basilar region of consolidation
+E7	Medical-Problem:T8
+T9	Medical-Assertion 706 717;719 725	potentially due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 726 737	atelectasis
+T11	Medical-Problem 746 755	infection
+T12	Medical-Assertion 759 782	not completely excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 785 797;799 830	Persistently increased interstitial markings
+T14	Medical-Anatomy 846 851	lungs
+T15	Medical-Assertion 853 875	potentially related to
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 877 908	chronic underlying lung disease
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

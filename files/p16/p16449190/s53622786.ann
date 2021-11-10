@@ -1,0 +1,23 @@
+T1	Medical-Assertion 452 454	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 455 467	pneumothorax
+T3	Medical-Problem 470 524	Residual small amount of pleural effusion on the right
+E2	Medical-Problem:T3
+T4	Medical-Problem 537 551	stable opacity
+T5	Medical-Anatomy 559 574	right lung base
+T6	Medical-Problem 579 587	blunting
+T7	Medical-Anatomy 595 600;602 620	right costophrenic angle
+T8	Medical-Assertion 623 625	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 626 649	new focal consolidation
+T10	Medical-Problem 652 660	Blunting
+T11	Medical-Anatomy 668 672;674 692	left costophrenic angle
+T12	Medical-Assertion 715 728	suggestive of
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 729 747;749 757	small left pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

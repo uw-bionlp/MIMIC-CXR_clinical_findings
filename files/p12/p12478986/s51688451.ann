@@ -1,0 +1,23 @@
+T1	Medical-Problem 470 507	Heterogeneous pulmonary opacification
+T2	Medical-Problem 513 538	most severe consolidation
+T3	Medical-Anatomy 547 563	right lower lobe
+T4	Lesion-Assertion 569 579	suggestion
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Size 583 588	small
+T6	Lesion-Anatomy 589 593	lung
+T7	Lesion-Description 594 601	nodules
+T8	Medical-Problem 622 642	concurrent pneumonia
+E7	Medical-Problem:T8
+T9	Medical-Problem 647 660	septic emboli
+E8	Medical-Problem:T9
+T10	Medical-Problem 685 698;700 717	Right pleural effusion is small
+E9	Medical-Problem:T10
+T11	Medical-Assertion 720 722	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 723 744	left pleural effusion
+T13	Medical-Problem 748 760	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11

@@ -1,0 +1,31 @@
+T1	Medical-Assertion 151 158	Suspect
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 159 174	volume overload
+T3	Medical-Problem 233 252	Severe cardiomegaly
+E2	Medical-Problem:T3
+T4	Medical-Problem 323 377;379 390	increased mediastinal and pulmonary and hilar vascular engorgement
+E3	Medical-Problem:T4
+T5	Medical-Problem 408 435	heterogeneous opacification
+T6	Medical-Anatomy 443 453;455 459	right lung base
+T7	Medical-Assertion 460 480	should be questioned
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 484 500	asymmetric edema
+T9	Medical-Problem 505 529;531 547	accompanying small right pleural effusion
+T10	Medical-Problem 611 620	pneumonia
+E8	Medical-Problem:T10
+T11	Medical-Problem 644 654	hemorrhage
+E9	Medical-Problem:T11
+T12	Medical-Assertion 679 681	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 683 695	pneumothorax
+T14	Medical-Problem 739 759	pericardial effusion
+E11	Medical-Problem:T14
+T15	Medical-Problem 816 834;836 854	enlargement of the cardiac silhouette
+E12	Medical-Problem:T15
+T16	Medical-Problem 993 1034	substantial aortic valvular calcification
+E13	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,24 @@
+T1	Medical-Assertion 87 100	suggestive of
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 112 122	recurrence
+T3	Medical-Problem 717 743;745 753	recurrent right upper lobe collapse
+E2	Medical-Problem:T3
+T4	Lesion-Characteristic 767 778	obstructing
+T5	Lesion-Anatomy 779 790	right hilar
+T6	Lesion-Description 791 795	mass
+T7	Medical-Problem 797 814	Tented appearance
+T8	Medical-Anatomy 823 842	right hemidiaphragm
+T9	Medical-Problem 858 879	Emphysematous changes
+E8	Medical-Problem:T9
+T10	Medical-Assertion 937 939	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 940 952	pneumothorax
+T12	Medical-Problem 1054 1067	lobe collapse
+E10	Medical-Problem:T12
+T13	Lesion-Anatomy 1081 1092	right hilar
+T14	Lesion-Description 1093 1097	mass
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T13

@@ -1,0 +1,20 @@
+T1	Medical-Anatomy 439 464	gastroesophageal junction
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 521 548	mild narrowing of the stent
+T3	Medical-Anatomy 556 562;564 569	distal third
+T4	Medical-Problem 586 611	increase in opacification
+T5	Medical-Anatomy 615 640	both lower lungs medially
+T6	Medical-Assertion 641 649;651 657	could be due to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 658 669	atelectasis
+T8	Medical-Problem 673 683	aspiration
+T9	Medical-Problem 686 693	Pleural
+E8	Medical-Problem:T9
+T10	Medical-Problem 694 702	effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 823 835	pneumothorax
+E10	Medical-Problem:T11
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6

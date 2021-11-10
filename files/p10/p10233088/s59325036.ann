@@ -1,0 +1,33 @@
+T1	Medical-Problem 461 488	near complete opacification
+T2	Medical-Anatomy 497 506	left lung
+T3	Medical-Assertion 508 521	likely due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 522 537	new atelectasis
+T5	Medical-Anatomy 597 607	right lung
+T6	Medical-Assertion 608 615	appears
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 624 638;640 659	mild pulmonary vascular congestion
+T8	Medical-Assertion 664 666	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 667 682	pulmonary edema
+T10	Medical-Problem 725 737	pneumothorax
+E7	Medical-Problem:T10
+T11	Lesion-Anatomy 746 749	rib
+T12	Lesion-Description 750 756	lesion
+T13	Lesion-Size-Trend 760 769	unchanged
+A4	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Problem 859 881	complete opacification
+T15	Medical-Anatomy 889 898	left lung
+T16	Medical-Assertion 900 913	likely due to
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 914 929	new atelectasis
+T18	Medical-Anatomy 938 947	left lung
+T19	Lesion-Anatomy 971 994	left mainstem bronchial
+E14	Lesion-Anatomy:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E9	Lesion-Description:T12 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T13
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Anatomy:T18

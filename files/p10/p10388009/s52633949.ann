@@ -1,0 +1,21 @@
+T1	Medical-Problem 34 74	Persistent bilateral confluent opacities
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 101 110	left lung
+T3	Medical-Problem 117 123	stable
+T4	Medical-Anatomy 153 163	right lung
+T5	Medical-Problem 167 185;187 218	component of edema  underlying the primary process
+T6	Medical-Assertion 219 237	cannot be excluded
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 658 687	more confluent consolidations
+T8	Medical-Anatomy 701 716;718 738	right lower and right mid lung field
+T9	Medical-Problem 791 802	appreciable
+E8	Medical-Problem:T9
+T10	Medical-Problem 803 819	pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Assertion 831 833	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 834 846	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

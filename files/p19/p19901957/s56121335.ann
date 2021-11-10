@@ -1,0 +1,27 @@
+T1	Medical-Assertion 232 234	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 235 252	pleural effusions
+T3	Lesion-Assertion 294 310	without evidence
+A2	Lesion-AssertionValue T3 absent
+T4	Lesion-Anatomy 314 318	lung
+T5	Lesion-Description 319 326	nodules
+T6	Lesion-Description 331 337	masses
+T7	Medical-Assertion 340 342	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 343 358	pulmonary edema
+T9	Medical-Assertion 361 363	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 364 373	pneumonia
+T11	Medical-Problem 376 407;409 419	Mild enlargement of the cardiac silhouette
+E7	Medical-Problem:T11
+T12	Medical-Problem 421 436	mild tortuosity
+T13	Medical-Anatomy 444 458	thoracic aorta
+T14	Medical-Problem 463 494	Slightly atypical calcification
+T15	Medical-Anatomy 502 530;532 554	level of the right first rib costochondral junction
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T4
+E4	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Anatomy:T13
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15

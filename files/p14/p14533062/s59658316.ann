@@ -1,0 +1,21 @@
+T1	Medical-Problem 354 367;369 377	right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 388 390	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 391 415	appreciable pneumothorax
+T4	Medical-Problem 429 440;442 455	Right basal consolidation
+E3	Medical-Problem:T4
+T5	Medical-Assertion 456 471	might represent
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 472 491	partial atelectatic
+T7	Medical-Anatomy 492 508	right lower lung
+T8	Lesion-Characteristic 515 524	expanding
+T9	Lesion-Anatomy 529 545	right lower lung
+T10	Lesion-Description 546 550	mass
+T11	Lesion-Assertion 554 573	another possibility
+A3	Lesion-AssertionValue T11 possible
+T12	Medical-Problem 666 696	minimal left basal atelectasis
+E9	Medical-Problem:T12
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9 has-Lesion-Assertion:T11

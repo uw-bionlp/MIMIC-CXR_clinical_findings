@@ -1,0 +1,23 @@
+T1	Medical-Assertion 117 119	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 120 132	penumothorax
+T3	Medical-Problem 134 161	large left pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 863 886	patchy airspace disease
+T5	Medical-Anatomy 898 910;912 922	left mid and lower lung
+T6	Medical-Assertion 929 942	could reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 943 963	residual atelectasis
+T8	Medical-Problem 965 987;989 994	re-expansion pulmonary edema
+T9	Medical-Problem 998 1007	pneumonia
+T10	Medical-Problem 1086 1091	large
+E8	Medical-Problem:T10
+T11	Medical-Problem 1092 1104	pneumothorax
+E9	Medical-Problem:T11
+T12	Medical-Problem 1225 1246	left airspace disease
+E10	Medical-Problem:T12
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6

@@ -1,0 +1,24 @@
+T1	Medical-Assertion 214 216	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 217 233	pleural effusion
+T3	Medical-Problem 237 249	pneumothorax
+T4	Lesion-Anatomy 254 265	right hilar
+T5	Lesion-Anatomy 269 279	juxtahilar
+T6	Lesion-Description 281 285	mass
+T7	Lesion-Size-Trend 290 295	grown
+A2	Lesion-Size-TrendValue T7 increasing
+T8	Lesion-Characteristic 302 331	larger spiculations extending
+T9	Medical-Anatomy 341 349	adjacent
+E7	Medical-Anatomy:T9
+T10	Lesion-Anatomy 367 377	peripheral
+T11	Lesion-Anatomy 378 394	right upper lobe
+T12	Lesion-Description 395 401	nodule
+T13	Lesion-Size-Trend 405 411	stable
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Anatomy 414 419	Lungs
+T15	Medical-Problem 425 455	hyperinflated due to emphysema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7 has-Lesion-Characteristic:T8
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T14

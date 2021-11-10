@@ -1,0 +1,15 @@
+T1	Medical-Problem 624 636;638 653	Overall lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 660 681	bibasilar atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 684 692	Blunting
+T4	Medical-Anatomy 700 704;706 724	left costophrenic angle
+T5	Medical-Assertion 743 760	likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 763 775;777 785	left pleural effusion
+T7	Medical-Assertion 788 790	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 791 803	Pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

@@ -1,0 +1,27 @@
+T1	Medical-Problem 298 320;322 347	substantial prominence of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Assertion 438 449	No evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 453 471;473 483	pulmonary vascular congestion
+T4	Medical-Assertion 503 525	raises the possibility
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 529 539;541 555	underlying cardiomyopathy
+T6	Medical-Problem 564 584	pericardial effusion
+T7	Medical-Assertion 587 589	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 590 611	acute focal pneumonia
+T9	Medical-Problem 614 640	Retrocardiac opacification
+T10	Medical-Assertion 641 649	suggests
+A4	Medical-AssertionValue T10 possible
+T11	Medical-Problem 650 661	volume loss
+T12	Medical-Anatomy 670 685	left lower lobe
+T13	Medical-Assertion 690 698	possible
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 699 715	pleural effusion
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T12
+E7	Medical-Problem:T11 has-Medical-Assertion:T10 has-Medical-Anatomy:T12
+E9	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

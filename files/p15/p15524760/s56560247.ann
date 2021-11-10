@@ -1,0 +1,20 @@
+T1	Medical-Problem 544 552;554 567	complete opacification
+T2	Medical-Anatomy 575 591	left hemi thorax
+T3	Medical-Problem 596 601	shift
+T4	Medical-Anatomy 609 627;629 633	mediastinum to the left
+T5	Medical-Assertion 635 648	worrisome for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 649 672	extensive lung collapse
+T7	Medical-Problem 675 699	underlying consolidation
+T8	Medical-Problem 704 726	small pleural effusion
+T9	Medical-Assertion 727 739	not excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 836 855	shifted to the left
+E8	Medical-Problem:T10
+T11	Medical-Problem 877 917	overlying left hemi thorax opacification
+E9	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Anatomy:T2 has-Medical-Assertion:T5 has-Medical-Assertion:T9

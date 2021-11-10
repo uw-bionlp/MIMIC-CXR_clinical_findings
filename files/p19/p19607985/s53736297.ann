@@ -1,0 +1,23 @@
+T1	Medical-Problem 344 407	Moderate layering pleural effusions with associated atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Assertion 458 460	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 461 473	pneumothorax
+T4	Medical-Problem 535 561	New airspace opacification
+T5	Medical-Anatomy 570 579	left lung
+T6	Medical-Assertion 580 593	may be due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 594 599	edema
+T8	Medical-Problem 603 612	infection
+T9	Medical-Problem 633 652	New left lung edema
+T10	Medical-Assertion 653 655	or
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 656 665	infection
+T12	Medical-Problem 668 746;748 765	Stable layering bilateral pleural effusions with associated atelectasis, right greater than left
+E9	Medical-Problem:T12
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T10
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

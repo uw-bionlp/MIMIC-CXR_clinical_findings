@@ -1,0 +1,34 @@
+T1	Medical-Problem 304 339	Slight asymmetric increased opacity
+T2	Medical-Anatomy 347 363	right lower lobe
+T3	Medical-Assertion 434 454	could simply reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 456 467	atelectasis
+T5	Medical-Problem 471 486	early pneumonia
+T6	Medical-Assertion 489 491	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 492 508	pleural effusion
+T8	Medical-Problem 510 522	pneumothorax
+T9	Medical-Problem 527 532	edema
+T10	Medical-Problem 570 584	mediastinum is
+E8	Medical-Problem:T10
+T11	Medical-Assertion 585 588	not
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 589 596	widened
+T13	Medical-Assertion 599 601	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 602 607;609 628	acute osseous abnormality
+T15	Medical-Problem 649 684	Slight asymmetric increased opacity
+T16	Medical-Anatomy 692 708	right lower lobe
+T17	Medical-Assertion 709 722	could reflect
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 727 742	early pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 161 166	lungs
+T2	Medical-Assertion 182 193	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 199 212	consolidation
+T4	Medical-Problem 214 222	effusion
+T5	Medical-Problem 228 240	pneumothorax
+T6	Medical-Problem 243 257	Patchy opacity
+T7	Medical-Anatomy 272 288	right lower lung
+T8	Medical-Assertion 309 333	likely representative of
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 334 347	mild scarring
+T10	Medical-Problem 350 377;379 399	Right hemidiaphragm remains chronically elevated
+E8	Medical-Problem:T10
+T11	Medical-Problem 402 426	Large left hiatal hernia
+E9	Medical-Problem:T11
+T12	Medical-Problem 486 514	Post-cholecystectomy changes
+E10	Medical-Problem:T12
+T13	Medical-Assertion 592 594	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 595 624	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

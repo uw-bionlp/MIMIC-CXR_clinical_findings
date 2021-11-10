@@ -1,0 +1,42 @@
+T1	Medical-Problem 325 346	Biapical pneumothorax
+E1	Medical-Problem:T1
+T2	Lesion-Description 407 422	nodular opacity
+T3	Lesion-Anatomy 430 444	right mid lung
+T4	Lesion-Characteristic 446 460	concerning for
+T5	Medical-Problem 461 468	deposit
+E5	Medical-Problem:T5
+T6	Lesion-Count 551 559	multiple
+T7	Lesion-Size 560 565	small
+T8	Lesion-Description 566 573	nodules
+T9	Medical-Problem 638 657	minimal atelectasis
+T10	Medical-Anatomy 665 679	left lung base
+T11	Medical-Assertion 692 694	no
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 696 711	other opacities
+T13	Medical-Assertion 712 722	concerning
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 727 736	pneumonia
+T15	Medical-Problem 740 750	aspiration
+T16	Medical-Problem 757 766;768 784	amount of subcutaneous air
+T17	Medical-Anatomy 792 820	left lower and lateral chest
+T18	Medical-Problem 987 1039	small right apical and tiny left apical pneumothorax
+E16	Medical-Problem:T18
+T19	Medical-Problem 1058 1062;1064 1085	left lung base atelectasis
+E17	Medical-Problem:T19
+T20	Medical-Assertion 1088 1090	No
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1091 1100	opacities
+T22	Medical-Assertion 1101 1115	concerning for
+A4	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1116 1126	aspiration
+T24	Medical-Problem 1130 1139	pneumonia
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4
+E8	Lesion-Description:T8 has-Lesion-Count:T6 has-Lesion-Size-Present:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T11 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T24 has-Medical-Assertion:T22

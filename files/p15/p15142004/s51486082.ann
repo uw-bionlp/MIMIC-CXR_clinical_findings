@@ -1,0 +1,32 @@
+T1	Medical-Problem 260 271;273 280	Subtle hazy opacity
+T2	Medical-Anatomy 288 298	right base
+T3	Medical-Assertion 305 318	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 319 330	atelectasis
+T5	Medical-Problem 341 346;348 357	early infection
+T6	Medical-Assertion 358 376	cannot be excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 420 422	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 424 440	pleural effusion
+T9	Medical-Problem 444 456	pneumothorax
+T10	Medical-Assertion 540 542	no
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 543 571	acute skeletal abnormalities
+T12	Medical-Problem 589 608	Subtle hazy opacity
+T13	Medical-Anatomy 609 619	right base
+T14	Medical-Assertion 623 634	most likely
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 635 646	atelectasis
+T16	Medical-Assertion 652 666	cannot exclude
+A6	Medical-AssertionValue T16 possible
+T17	Medical-Problem 667 691	early infectious process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Anatomy:T13
+E10	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E11	Medical-Problem:T17 has-Medical-Anatomy:T13 has-Medical-Assertion:T16

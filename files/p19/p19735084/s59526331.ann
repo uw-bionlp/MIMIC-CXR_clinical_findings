@@ -1,0 +1,25 @@
+T1	Medical-Problem 197 210;212 220	right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 264 282;284 312	residual moderate, loculated effusion remaining
+E2	Medical-Problem:T2
+T3	Medical-Problem 317 334	hydropneumothorax
+E3	Medical-Problem:T3
+T4	Medical-Problem 379 407	associated improved aeration
+T5	Medical-Anatomy 415 425	right lung
+T6	Lesion-Characteristic 435 443	residual
+T7	Lesion-Description 444 461	mass-like opacity
+T8	Lesion-Anatomy 469 492	right juxtahilar region
+T9	Lesion-Characteristic 567 575	residual
+T10	Lesion-Characteristic 579 588	recurrent
+T11	Lesion-Description 590 595	tumor
+T12	Medical-Anatomy 655 664	left lung
+T13	Medical-Problem 667 685	linear atelectasis
+T14	Medical-Anatomy 704 719	mid lung region
+T15	Medical-Assertion 731 742	no evidence
+A1	Medical-AssertionValue T15 absent
+T16	Medical-Problem 747 768	left pleural effusion
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E11	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10
+E13	Medical-Problem:T13 has-Medical-Anatomy:T12 has-Medical-Anatomy:T14
+E15	Medical-Problem:T16 has-Medical-Assertion:T15

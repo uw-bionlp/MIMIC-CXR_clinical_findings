@@ -1,0 +1,41 @@
+T1	Medical-Problem 318 340	Right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 376 394;396 404	Small left pleural effusion
+E2	Medical-Problem:T2
+T3	Lesion-Anatomy 420 431	Left apical
+T4	Lesion-Characteristic 432 440	cavitary
+T5	Lesion-Description 441 447	lesion
+T6	Lesion-Size-Trend 451 460	unchanged
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Problem 462 474;476 482	Large hiatal hernia
+E6	Medical-Problem:T7
+T8	Medical-Problem 494 522	Left perihilar consolidation
+T9	Medical-Problem 542 551;553 567	region of bronchiectasis
+T10	Medical-Anatomy 575 590	left lower lobe
+T11	Medical-Anatomy 610 625	Right lung base
+T12	Medical-Problem 627 634	opacity
+T13	Medical-Assertion 638 644	likely
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 645 656	atelectasis
+T15	Medical-Problem 660 678	re-expansion edema
+T16	Medical-Assertion 746 748	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 749 761	pneumothorax
+T18	Medical-Problem 764 786	Right pleural effusion
+E15	Medical-Problem:T18
+T19	Medical-Anatomy 800 815	Right lung base
+T20	Medical-Problem 816 823	opacity
+T21	Medical-Assertion 828 834	likely
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 835 846	atelectasis
+T23	Medical-Problem 850 868	re-expansion edema
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4 has-Lesion-Size-Trend:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T11 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Medical-Problem:T20 has-Medical-Anatomy:T19
+E18	Medical-Problem:T22 has-Medical-Anatomy:T19 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Anatomy:T19 has-Medical-Assertion:T21

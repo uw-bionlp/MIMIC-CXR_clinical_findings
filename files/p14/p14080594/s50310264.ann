@@ -1,0 +1,23 @@
+T1	Medical-Assertion 350 361	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 366 383	pneumomediastinum
+T3	Medical-Problem 387 399	pneumothorax
+T4	Medical-Problem 450 466	Subcutaneous air
+E3	Medical-Problem:T4
+T5	Medical-Problem 523 565	Minimal amount of anterior mediastinal air
+T6	Medical-Anatomy 586 593	trachea
+T7	Medical-Problem 616 648	Small amount of pneumoperitoneum
+E6	Medical-Problem:T7
+T8	Medical-Problem 686 711	Left retrocardiac opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 720 742	most likely reflecting
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 744 755	atelectasis
+T11	Medical-Assertion 757 768	potentially
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 769 779	aspiration
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9 has-Medical-Assertion:T11

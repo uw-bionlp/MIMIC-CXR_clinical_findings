@@ -1,0 +1,16 @@
+T1	Medical-Problem 267 277	Prominence
+T2	Medical-Anatomy 285 302	right mediastinum
+T3	Medical-Problem 419 446	small left pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 511 528	increased density
+T5	Medical-Anatomy 536 540;542 561	left retrocardiac region
+T6	Medical-Assertion 563 569	likely
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 584 615	increased left pleural effusion
+T8	Medical-Problem 622 646	underlying consolidation
+T9	Medical-Assertion 647 665	cannot be excluded
+A2	Medical-AssertionValue T9 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6 has-Medical-Assertion:T9

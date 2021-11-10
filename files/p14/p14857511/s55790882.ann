@@ -1,0 +1,22 @@
+T1	Medical-Assertion 403 405;407 415	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 419 436	pneumomediastinum
+T3	Medical-Problem 438 456	Moderate scoliosis
+T4	Medical-Problem 462 471	asymmetry
+T5	Medical-Anatomy 480 487	ribcage
+T6	Medical-Problem 489 530	Borderline size of the cardiac silhouette
+E5	Medical-Problem:T6
+T7	Medical-Problem 536 546	elongation
+T8	Medical-Anatomy 555 571	descending aorta
+T9	Medical-Assertion 574 576	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 577 594	pleural effusions
+T11	Medical-Assertion 597 599	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 600 615	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,33 @@
+T1	Lesion-Characteristic 271 279	punctate
+T2	Lesion-Characteristic 280 289	calcified
+T3	Lesion-Description 290 296	nodule
+T4	Lesion-Anatomy 308 322	left lung apex
+T5	Lesion-Size 333 337	3 mm
+T6	Lesion-Assertion 338 344;346 354	likely reflects
+A1	Lesion-AssertionValue T6 possible
+T7	Lesion-Description 357 366	granuloma
+T8	Medical-Anatomy 373 378	lungs
+T9	Medical-Assertion 383 388	clear
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 392 411	focal consolidation
+T11	Medical-Assertion 414 416	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 417 424;426 434	pleural effusion
+T13	Medical-Problem 438 450	pneumothorax
+T14	Medical-Problem 469 499	moderate compression deformity
+T15	Medical-Anatomy 506 533	mid thoracic vertebral body
+T16	Medical-Problem 569 583	loss of height
+E13	Medical-Problem:T16
+T17	Medical-Problem 590 612	old fracture deformity
+T18	Medical-Anatomy 620 644	left sixth posterior rib
+T19	Medical-Assertion 673 675	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 676 709	acute cardiopulmonary abnormality
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4 has-Lesion-Size-Present:T5
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

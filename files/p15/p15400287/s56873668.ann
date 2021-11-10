@@ -1,0 +1,27 @@
+T1	Medical-Assertion 533 535	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 536 548	pneumothorax
+T3	Medical-Assertion 559 565	likely
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 568 577;579 609	new small layering left pleural effusion
+T5	Medical-Problem 611 641	New retrocardiac opacification
+T6	Medical-Anatomy 649 653;655 664	left lung base
+T7	Medical-Assertion 668 681	may be due to
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 682 693	atelectasis
+T9	Medical-Problem 697 707	aspiration
+T10	Medical-Problem 728 780	New left basilar retrocardiac airspace opacification
+E7	Medical-Problem:T10
+T11	Medical-Assertion 781 794	may be due to
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 795 806	atelectasis
+T13	Medical-Problem 811 821	aspiration
+T14	Medical-Problem 823 863	New layering small left pleural effusion
+E10	Medical-Problem:T14
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T11

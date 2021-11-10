@@ -1,0 +1,26 @@
+T1	Medical-Problem 244 252	Fullness
+T2	Medical-Anatomy 261 279	right hilar region
+T3	Medical-Problem 285 301	linear opacities
+T4	Medical-Anatomy 309 324	right lung base
+T5	Lesion-Anatomy 351 362	right hilar
+T6	Lesion-Description 363 367	mass
+T7	Medical-Problem 373 394	resultant atelectasis
+E7	Medical-Problem:T7
+T8	Medical-Assertion 432 434	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 435 451	pleural effusion
+T10	Medical-Problem 455 467	pneumothorax
+T11	Lesion-Size-Trend 534 564	No significant interval change
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Lesion-Size-Trend 581 590	unchanged
+A3	Lesion-Size-TrendValue T12 no-change
+T13	Lesion-Anatomy 591 602	right hilar
+T14	Lesion-Description 603 607	mass
+T15	Medical-Problem 614 639	right basilar atelectasis
+E12	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Lesion-Description:T14 has-Lesion-Size-Trend:T11 has-Lesion-Size-Trend:T12 has-Lesion-Anatomy:T13

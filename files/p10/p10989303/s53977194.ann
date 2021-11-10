@@ -1,0 +1,32 @@
+T1	Medical-Problem 265 303	severe multifocal pulmonary nodulation
+T2	Medical-Problem 308 333	large scale consolidation
+T3	Medical-Assertion 335 356	cleared significantly
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 404 435	Residual consolidation scarring
+T5	Medical-Anatomy 447 457	right base
+T6	Medical-Assertion 486 492	may be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 493 507	bronchiectasis
+T8	Lesion-Characteristic 514 528	peripheral new
+T9	Lesion-Description 529 533	mass
+T10	Medical-Problem 578 620;622 640	greater pulmonary vascular and mediastinal venous engorgement
+E8	Medical-Problem:T10
+T11	Medical-Assertion 701 703	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 704 709	edema
+T13	Medical-Assertion 714 716	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 717 745	appreciable pleural effusion
+T15	Medical-Assertion 868 870	no
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 872 892	mediastinal widening
+T17	Medical-Problem 896 908	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Assertion:T3
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Lesion-Description:T9 has-Lesion-Characteristic:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T15

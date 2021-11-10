@@ -1,0 +1,35 @@
+T1	Medical-Problem 87 96	pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Problem 100 124	congestive heart failure
+E2	Medical-Problem:T2
+T3	Medical-Problem 306 310;312 321	mild unfolding
+T4	Medical-Anatomy 329 343	thoracic aorta
+T5	Medical-Problem 442 456	linear opacity
+T6	Medical-Anatomy 478 492	right mid lung
+T7	Medical-Assertion 493 501	suggests
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 502 519	minor atelectasis
+T9	Medical-Problem 522 538;540 553	Slight posterior opacification
+T10	Medical-Anatomy 557 580	each costophrenic angle
+T11	Medical-Problem 639 656	minor atelectasis
+T12	Medical-Assertion 669 671	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 672 689	pleural effusions
+T14	Medical-Problem 694 706	pneumothorax
+T15	Medical-Problem 774 790	Patchy opacities
+E13	Medical-Problem:T15
+T16	Medical-Assertion 791 809	most suggestive of
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 810 827	minor atelectasis
+T18	Medical-Problem 829 838	pneumonia
+T19	Medical-Assertion 843 851	unlikely
+A4	Medical-AssertionValue T19 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T19

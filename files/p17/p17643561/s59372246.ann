@@ -1,0 +1,24 @@
+T1	Medical-Problem 232 249	Mild cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 254 286	mediastinal vascular engorgement
+E2	Medical-Problem:T2
+T3	Medical-Assertion 287 295	suggests
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 296 302;304 312	volume overload
+T5	Medical-Problem 316 338	cardiac decompensation
+T6	Medical-Problem 354 371	vascular crowding
+E5	Medical-Problem:T6
+T7	Medical-Assertion 407 415	probably
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Assertion 416 418	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 419 434	pulmonary edema
+T10	Medical-Problem 438 453;455 466	other pulmonary abnormality
+T11	Medical-Assertion 467 470	nor
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 471 499	substantial pleural effusion
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E6	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T7 has-Medical-Assertion:T11

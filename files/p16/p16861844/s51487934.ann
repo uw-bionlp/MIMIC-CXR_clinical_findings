@@ -1,0 +1,24 @@
+T1	Medical-Assertion 255 257	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 258 277	focal consolidation
+T3	Medical-Problem 281 293	pneumothorax
+T4	Medical-Problem 296 304	Blunting
+T5	Medical-Anatomy 313 342	posterior costophrenic angles
+T6	Medical-Assertion 343 351	suggests
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 352 366	small efusions
+T8	Medical-Problem 370 383;385 398	Elevated left hemidiaphragm
+E6	Medical-Problem:T8
+T9	Medical-Problem 493 508	rounded density
+T10	Medical-Anatomy 529 542;544 555	middle of the mediastinum
+T11	Medical-Problem 600 625	Small bilateral effusions
+E9	Medical-Problem:T11
+T12	Medical-Assertion 639 641	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 642 663;665 672	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

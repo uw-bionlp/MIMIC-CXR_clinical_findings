@@ -1,0 +1,22 @@
+T1	Medical-Problem 175 195	mild pulmonary edema
+T2	Medical-Assertion 214 229	nearly resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Anatomy 237 241;243 247	left lung
+T4	Medical-Problem 250 271	Greater opacification
+T5	Medical-Anatomy 279 320	base of both lungs particularly the right
+T6	Medical-Problem 342 361	decreasing aeration
+T7	Medical-Assertion 362 368	either
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 382 393	atelectasis
+T9	Medical-Problem 398 407	pneumonia
+T10	Medical-Problem 410 438	Small right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 603 605	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 606 618	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Assertion:T2 has-Medical-Anatomy:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

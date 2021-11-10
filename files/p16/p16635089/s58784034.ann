@@ -1,0 +1,19 @@
+T1	Medical-Problem 425 441;443 454	new mild cardiac enlargement
+E1	Medical-Problem:T1
+T2	Medical-Problem 457 488	New heterogeneous opacification
+T3	Medical-Anatomy 492 508	both lower lungs
+T4	Medical-Assertion 509 517	could be
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 519 539	developing pneumonia
+T6	Medical-Problem 541 565	recent severe aspiration
+T7	Medical-Problem 570 585	dependent edema
+T8	Medical-Problem 627 646	Pleural effusion is
+E7	Medical-Problem:T8
+T9	Medical-Assertion 662 664	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 666 678	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

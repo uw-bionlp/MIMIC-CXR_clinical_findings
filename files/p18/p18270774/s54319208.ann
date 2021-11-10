@@ -1,0 +1,42 @@
+T1	Medical-Problem 338 365	new right-sided volume loss
+E1	Medical-Problem:T1
+T2	Medical-Problem 373 378	shift
+T3	Medical-Anatomy 386 397;399 411	mediastinum to the right
+T4	Medical-Problem 416 427	new opacity
+T5	Medical-Anatomy 435 450	right lung base
+T6	Medical-Problem 457 468	obscuration
+T7	Medical-Anatomy 477 496	right hemidiaphragm
+T8	Medical-Anatomy 501 519	right heart border
+T9	Medical-Problem 521 539	Increased markings
+T10	Medical-Anatomy 547 552;554 564	right upper zone
+T11	Medical-Problem 599 609	asymmetric
+E11	Medical-Problem:T11
+T12	Medical-Problem 651 681	mild upper zone redistribution
+E12	Medical-Problem:T12
+T13	Medical-Assertion 683 705	without other evidence
+A1	Medical-AssertionValue T13 absent
+T14	Medical-Problem 710 713	CHF
+T15	Medical-Problem 715 731	focal infiltrate
+T16	Medical-Problem 735 762	left-sided pleural effusion
+T17	Medical-Problem 932 972	Significant new volume loss on the right
+E16	Medical-Problem:T17
+T18	Medical-Problem 974 981	Opacity
+T19	Medical-Anatomy 989 999	right base
+T20	Medical-Assertion 1000 1006;1008 1018	likely represents
+A2	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1019 1044	in large part atelectasis
+T22	Medical-Problem 1072 1084;1086 1091	some pleural fluid
+T23	Medical-Assertion 1092 1110	cannot be excluded
+A3	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1112 1152	Apparent asymmetric vascular plethora on
+E21	Medical-Problem:T24
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E13	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Medical-Problem:T16 has-Medical-Assertion:T13
+E17	Medical-Problem:T18 has-Medical-Anatomy:T19
+E19	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E20	Medical-Problem:T22 has-Medical-Anatomy:T19 has-Medical-Assertion:T23

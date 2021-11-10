@@ -1,0 +1,17 @@
+T1	Medical-Problem 318 333	low lung volume
+E1	Medical-Problem:T1
+T2	Medical-Problem 339 351;353 384	stable right lung base heterogeneous opacity
+E2	Medical-Problem:T2
+T3	Medical-Problem 483 491;493 510	Multiple rounded opacities
+T4	Medical-Anatomy 533 543	both lungs
+T5	Lesion-Count 572 580	multiple
+T6	Lesion-Anatomy 581 595	bilateral lung
+T7	Lesion-Description 596 603	nodules
+T8	Medical-Assertion 674 676	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 677 693	pleural effusion
+T10	Medical-Problem 697 709	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8

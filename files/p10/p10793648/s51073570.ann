@@ -1,0 +1,34 @@
+T1	Medical-Assertion 361 363	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 364 376	pneumothorax
+T3	Medical-Problem 387 406	Minimal atelectasis
+T4	Medical-Anatomy 418 429;431 435	right lower lung
+T5	Medical-Problem 438 491	Minimally increased left lung base hazy opacification
+E4	Medical-Problem:T5
+T6	Medical-Problem 497 508	obscuration
+T7	Medical-Anatomy 517 535	left hemidiaphragm
+T8	Medical-Assertion 536 551	likely reflects
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 552 563	atelectasis
+T10	Medical-Problem 568 588;590 606	worsening small left pleural effusion
+T11	Medical-Problem 615 633	infectious process
+T12	Medical-Assertion 634 665	cannot be definitively excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 669 671	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 672 695	left-sided pneumothorax
+T15	Medical-Problem 767 811	Worsening left lower lung hazy opacification
+E11	Medical-Problem:T15
+T16	Medical-Assertion 813 819	likely
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 836 847	atelectasis
+T18	Medical-Problem 852 889	increased small left pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Assertion:T16

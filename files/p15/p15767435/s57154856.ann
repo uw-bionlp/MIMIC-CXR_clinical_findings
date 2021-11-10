@@ -1,0 +1,19 @@
+T1	Medical-Problem 216 235;237 240	lung volumes remain low
+E1	Medical-Problem:T1
+T2	Medical-Problem 256 286	minimal right pleural effusion
+T3	Medical-Assertion 287 299	has resolved
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 305 313;315 326	areas of atelectasis
+T5	Medical-Anatomy 345 360	both lung bases
+T6	Medical-Assertion 363 365	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 366 386;388 409	other newly appeared parenchymal opacities
+T8	Medical-Problem 412 429	Mild cardiomegaly
+E6	Medical-Problem:T8
+T9	Medical-Assertion 430 437	without
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 438 453	pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

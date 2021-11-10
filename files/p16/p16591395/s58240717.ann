@@ -1,0 +1,24 @@
+T1	Medical-Problem 248 262	Irregularities
+T2	Medical-Anatomy 271 308	pleural surface of the left lung base
+T3	Medical-Problem 349 360	new opacity
+T4	Medical-Anatomy 364 379	left upper lobe
+T5	Medical-Assertion 413 421	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 423 457	loculated fluid within the fissure
+T7	Medical-Problem 469 478	pneumonia
+T8	Medical-Assertion 480 482	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 483 491	effusion
+T10	Medical-Anatomy 508 543	dependent portions of the left lung
+T11	Medical-Assertion 573 581	Question
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 582 587	fluid
+T13	Medical-Problem 591 600	pneumonia
+T14	Medical-Anatomy 608 624	right upper lobe
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T14
+E10	Medical-Problem:T13 has-Medical-Assertion:T11 has-Medical-Anatomy:T14

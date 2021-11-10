@@ -1,0 +1,30 @@
+T1	Medical-Problem 192 233	Severe widespread pulmonary consolidation
+T2	Medical-Anatomy 289 300	upper lungs
+T3	Medical-Assertion 409 416	neither
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Anatomy 422 447	pulmonary vasculature nor
+T5	Medical-Anatomy 448 467	mediastinal vessels
+T6	Medical-Problem 472 493	particularly engorged
+T7	Medical-Problem 497 520	Small pleural effusions
+E6	Medical-Problem:T7
+T8	Medical-Anatomy 540 547	Stomach
+T9	Medical-Problem 557 567;569 597	moderately distended primarily with air
+T10	Medical-Problem 688 706	cardiogenic causes
+E9	Medical-Problem:T10
+T11	Medical-Problem 767 780	drug reaction
+E10	Medical-Problem:T11
+T12	Medical-Assertion 792 795	not
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 796 805	pneumonia
+T14	Medical-Problem 809 829	pulmonary hemorrhage
+T15	Medical-Problem 841 863;865 872	migration of pulmonary opacity
+E13	Medical-Problem:T15
+T16	Medical-Assertion 874 890	primarily due to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 891 896	edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,17 @@
+T1	Medical-Problem 191 218	small left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 223 231	possible
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 232 242;244 266	very trace right pleural effusion
+T4	Medical-Problem 323 353	Left base retrocardiac opacity
+E3	Medical-Problem:T4
+T5	Lesion-Assertion 354 360	likely
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Anatomy 372 387	left lower lobe
+T7	Lesion-Description 389 405	mass/atelectasis
+T8	Medical-Assertion 408 410	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 411 432	overt pulmonary edema
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

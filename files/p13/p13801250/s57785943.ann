@@ -1,0 +1,26 @@
+T1	Medical-Problem 205 222	streaky opacities
+T2	Medical-Anatomy 230 234;236 241	lung bases
+T3	Medical-Problem 299 310	atelectasis
+E3	Medical-Problem:T3
+T4	Medical-Problem 317 326	pneumonia
+E4	Medical-Problem:T4
+T5	Medical-Problem 351 360	opacities
+E5	Medical-Problem:T5
+T6	Medical-Assertion 361 374	may represent
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 375 384	pneumonia
+T8	Medical-Problem 389 399	aspiration
+T9	Medical-Problem 470 480	prominence
+T10	Medical-Anatomy 488 519	pulmonary interstitial markings
+T11	Medical-Assertion 520 533	suggestive of
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 534 538;540 555	mild pulmonary edema
+T13	Medical-Assertion 567 569	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 570 584	pneumothoraces
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

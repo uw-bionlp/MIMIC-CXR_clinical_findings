@@ -1,0 +1,29 @@
+T1	Medical-Assertion 85 93	Question
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 94 120	increasing left hemothorax
+T3	Medical-Problem 192 215	Right basal atelectasis
+T4	Medical-Assertion 220 234	nearly cleared
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 239 267	small right pleural effusion
+E3	Medical-Problem:T5
+T6	Medical-Problem 361 397	interval rightward mediastinal shift
+E4	Medical-Problem:T6
+T7	Medical-Problem 474 500;502 510	already large left pleural effusion
+E5	Medical-Problem:T7
+T8	Medical-Problem 516 557	nearly completely collapses the left lung
+E6	Medical-Problem:T8
+T9	Lesion-Characteristic 563 571	obscures
+T10	Lesion-Characteristic 573 582	extensive
+T11	Lesion-Anatomy 583 596	intrathoracic
+T12	Lesion-Description 597 607	malignancy
+T13	Medical-Problem 649 662	Bleeding into
+T14	Medical-Assertion 689 707	certainly possible
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Assertion 710 712	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 713 725	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T4
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

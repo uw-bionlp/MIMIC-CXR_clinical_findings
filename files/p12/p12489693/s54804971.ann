@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 283 297	left lung base
+T2	Medical-Problem 301 318	densely opacified
+T3	Medical-Assertion 320 328	possibly
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 347 358	atelectasis
+T5	Medical-Problem 360 373	consolidation
+T6	Medical-Problem 378 391	pleural fluid
+T7	Medical-Assertion 436 438	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 439 451	pneumothorax
+T9	Medical-Problem 454 475	Moderate cardiomegaly
+E7	Medical-Problem:T9
+T10	Medical-Problem 481 495;497 516	mild pulmonary vascular congestion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 537 545	Probable
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 546 576	moderate left pleural effusion
+T13	Medical-Problem 582 609	left lower lobe atelectasis
+T14	Medical-Problem 630 650	developing pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T11

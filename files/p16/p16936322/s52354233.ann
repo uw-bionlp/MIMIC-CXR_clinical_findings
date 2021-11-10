@@ -1,0 +1,66 @@
+T1	Medical-Problem 36 62	Multiple rounded opacities
+T2	Medical-Anatomy 74 93	left hemithorax rib
+T3	Medical-Problem 111 129	pleural thickening
+E3	Medical-Problem:T3
+T4	Lesion-Size-Trend 133 136	new
+A1	Lesion-Size-TrendValue T4 new
+T5	Lesion-Anatomy 137 141	lung
+T6	Lesion-Description 142 149	lesions
+T7	Medical-Problem 156 169	Round opacity
+T8	Medical-Anatomy 173 184	right hilum
+T9	Medical-Problem 340 366	Multiple rounded opacities
+T10	Medical-Anatomy 382 387	lungs
+T11	Lesion-Assertion 451 464	worrisome for
+A2	Lesion-AssertionValue T11 possible
+T12	Lesion-Characteristic 487 494;496 505	unclear  etiology
+E10	Lesion-Characteristic:T12
+T13	Medical-Problem 507 520	septic emboli
+E11	Medical-Problem:T13
+T14	Medical-Problem 526 547	multi focal pneumonia
+E12	Medical-Problem:T14
+T15	Medical-Problem 677 685	Multiple
+E13	Medical-Problem:T15
+T16	Medical-Problem 686 703	rounded opacities
+T17	Medical-Anatomy 715 730	left hemithorax
+T18	Medical-Assertion 731 747	likely represent
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 748 751;753 767	old  rib fractures
+T20	Medical-Problem 773 791	pleural thickening
+T21	Medical-Problem 804 811	opacity
+T22	Medical-Anatomy 815 826	right hilum
+T23	Medical-Problem 1296 1315	mildly hypoinflated
+E20	Medical-Problem:T23
+T24	Medical-Problem 1317 1343	Multiple rounded opacities
+E21	Medical-Problem:T24
+T25	Medical-Assertion 1420 1423;1425 1434	may represent
+A4	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1435 1476	old rib fractures with pleural thickening
+T27	Medical-Problem 1478 1493	Rounded opacity
+E23	Medical-Problem:T27
+T28	Medical-Assertion 1562 1564	No
+A5	Medical-AssertionValue T28 absent
+T29	Medical-Problem 1565 1572;1574 1582	pleural effusion
+T30	Medical-Assertion 1583 1585	or
+A6	Medical-AssertionValue T30 absent
+T31	Medical-Problem 1586 1598	pneumothorax
+T32	Medical-Problem 1600 1622	Mildly prominent heart
+E26	Medical-Problem:T32
+T33	Medical-Problem 1825 1842	rounded opacities
+E27	Medical-Problem:T33
+T34	Medical-Assertion 1878 1886	could be
+A7	Medical-AssertionValue T34 possible
+T35	Medical-Problem 1887 1890;1892 1901	rib fractures
+T36	Medical-Problem 1907 1925	pleural thickening
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Size-Trend:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E18	Medical-Problem:T21 has-Medical-Anatomy:T22
+E22	Medical-Problem:T26 has-Medical-Assertion:T25
+E24	Medical-Problem:T29 has-Medical-Assertion:T28 has-Medical-Assertion:T30
+E25	Medical-Problem:T31 has-Medical-Assertion:T28 has-Medical-Assertion:T30
+E28	Medical-Problem:T35 has-Medical-Assertion:T34
+E29	Medical-Problem:T36 has-Medical-Assertion:T34

@@ -1,0 +1,32 @@
+T1	Medical-Anatomy 275 280	lungs
+T2	Medical-Problem 285 304	mildly hypoinflated
+T3	Medical-Problem 336 345;347 365	New right lower lobe opacity
+E3	Medical-Problem:T3
+T4	Medical-Assertion 379 381	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 382 398	pleural effusion
+T6	Medical-Problem 402 414	pneumothorax
+T7	Medical-Anatomy 555 573	osseous structures
+T8	Medical-Problem 614 618	DISH
+T9	Medical-Problem 629 660	multilevel degenerative changes
+T10	Medical-Problem 662 678;680 691	anterior flowing osteophytes
+T11	Medical-Problem 697 744	subchondral sclerosis with disc space narrowing
+T12	Medical-Problem 768 796	New right lower lobe opacity
+E11	Medical-Problem:T12
+T13	Medical-Assertion 797 808	potentially
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 809 820	atelectasis
+T15	Medical-Problem 849 858	Infection
+T16	Medical-Problem 862 872	aspiration
+T17	Medical-Assertion 873 891	cannot be excluded
+A3	Medical-AssertionValue T17 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7
+E10	Medical-Problem:T11 has-Medical-Anatomy:T7
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T17
+E14	Medical-Problem:T16 has-Medical-Assertion:T17

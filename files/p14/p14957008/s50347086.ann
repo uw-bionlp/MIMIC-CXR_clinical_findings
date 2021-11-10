@@ -1,0 +1,22 @@
+T1	Medical-Problem 439 452;454 473	subtle patchy bibasilar opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 480 493	could reflect
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 494 512	patchy atelectasis
+T4	Medical-Problem 523 532;534 543	bibasilar pneumonia
+T5	Medical-Problem 547 557	aspiration
+T6	Medical-Assertion 558 585	cannot be entirely excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 640 655	pulmonary edema
+E5	Medical-Problem:T7
+T8	Medical-Problem 659 671	pneumothorax
+E6	Medical-Problem:T8
+T9	Medical-Assertion 794 796	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 797 804	pleural
+E7	Medical-Problem:T10
+T11	Medical-Problem 805 814	effusions
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T6
+E4	Medical-Problem:T5 has-Medical-Assertion:T2 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

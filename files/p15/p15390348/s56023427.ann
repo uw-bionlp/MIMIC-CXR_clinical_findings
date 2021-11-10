@@ -1,0 +1,32 @@
+T1	Medical-Problem 373 382	Confluent
+T2	Medical-Anatomy 383 398	left lower lung
+T3	Medical-Problem 430 446	air bronchograms
+T4	Medical-Problem 448 460	silhouetting
+T5	Medical-Anatomy 468 480;482 507	lower aspect of the right heart border
+T6	Medical-Anatomy 523 541	left hemidiaphragm
+T7	Medical-Problem 553 557;559 584	left pleural effusion is small
+E7	Medical-Problem:T7
+T8	Medical-Anatomy 591 601	heart size
+T9	Medical-Assertion 605 613	probably
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 614 635;637 656	overall unchanged and moderately enlarged
+T11	Medical-Problem 741 766	edema is mild-to-moderate
+E10	Medical-Problem:T11
+T12	Medical-Assertion 769 771	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 772 784	pneumothorax
+T14	Medical-Assertion 829 835	likely
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 836 856	mild volume overload
+T16	Medical-Problem 864 877	heart failure
+T17	Medical-Problem 890 899	pneumonia
+T18	Medical-Problem 937 958	left pleural effusion
+E15	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T14

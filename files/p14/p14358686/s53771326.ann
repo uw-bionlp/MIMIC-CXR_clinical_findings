@@ -1,0 +1,42 @@
+T1	Medical-Problem 881 900	dense opacification
+T2	Medical-Anatomy 908 911;913 941	mid and lower zones of left lung
+T3	Medical-Problem 948 989;991 1004	obscuration of the cardiac silhouette and hemidiaphragm
+E3	Medical-Problem:T3
+T4	Medical-Problem 1074 1093	minimal atelectasis
+T5	Medical-Anatomy 1101 1117	right upper zone
+T6	Medical-Assertion 1123 1131	possible
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 1132 1165	minimal upper zone redistribution
+T8	Medical-Assertion 1201 1208	without
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 1209 1228	focal consolidation
+T10	Medical-Problem 1232 1240	effusion
+T11	Medical-Problem 1492 1511	Dense opacification
+T12	Medical-Anatomy 1519 1548	left mid and lower lung zones
+T13	Medical-Assertion 1575 1596	Differential includes
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1597 1613	pleural effusion
+T15	Medical-Problem 1615 1628	consolidation
+T16	Medical-Problem 1630 1641	atelectasis
+T17	Medical-Problem 1648 1667	combination thereof
+T18	Medical-Assertion 1739 1747	possible
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1748 1781	minimal upper zone redistribution
+T20	Medical-Problem 1786 1805	minimal atelectasis
+T21	Medical-Anatomy 1814 1829	right lung apex
+T22	Medical-Assertion 1864 1871	without
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1872 1880	effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T13
+E15	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Anatomy:T21
+E16	Medical-Problem:T20 has-Medical-Assertion:T18 has-Medical-Anatomy:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

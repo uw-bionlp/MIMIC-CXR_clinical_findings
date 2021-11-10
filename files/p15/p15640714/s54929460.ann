@@ -1,0 +1,37 @@
+T1	Medical-Problem 232 240	low lung
+E1	Medical-Problem:T1
+T2	Medical-Problem 251 282	Patchy medial left base opacity
+E2	Medical-Problem:T2
+T3	Medical-Assertion 298 313	could relate to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 314 325	atelectasis
+T5	Medical-Problem 335 355	consolidation due to
+T6	Medical-Problem 356 365	infection
+T7	Medical-Assertion 369 372;374 382	not excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 421 423	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 424 443	focal consolidation
+T10	Medical-Anatomy 460 470	right lung
+T11	Medical-Assertion 482 484	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 485 501	pleural effusion
+T13	Medical-Problem 505 517	pneumothorax
+T14	Medical-Problem 587 611	Patchy left base opacity
+E10	Medical-Problem:T14
+T15	Medical-Assertion 613 628	could relate to
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 629 640	atelectasis
+T17	Medical-Problem 650 663;665 671	consolidation due to
+T18	Medical-Problem 672 681	infection
+T19	Medical-Assertion 685 697	not excluded
+A6	Medical-AssertionValue T19 possible
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T19
+E13	Medical-Problem:T18 has-Medical-Assertion:T19

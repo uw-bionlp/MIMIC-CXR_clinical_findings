@@ -1,0 +1,61 @@
+T1	Medical-Assertion 37 39	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 40 69	acute cardiopulmonary process
+T3	Lesion-Description 79 96	Mass-like opacity
+T4	Lesion-Anatomy 104 119	right lung apex
+T5	Lesion-Assertion 120 134	concerning for
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 135 142	primary
+T7	Lesion-Description 150 160	malignancy
+T8	Medical-Problem 170 189	Large hiatal hernia
+E6	Medical-Problem:T8
+T9	Medical-Problem 195 215	adjacent atelectasis
+E7	Medical-Problem:T9
+T10	Medical-Problem 540 545;547 560	large hiatal hernia
+T11	Medical-Problem 566 586	adjacent atelectasis
+T12	Medical-Anatomy 594 603	left lung
+T13	Lesion-Description 605 622	Mass-like opacity
+E11	Lesion-Description:T13
+T14	Medical-Anatomy 631 646	right lung apex
+E12	Medical-Anatomy:T14
+T15	Lesion-Assertion 647 661	concerning for
+A3	Lesion-AssertionValue T15 possible
+T16	Lesion-Characteristic 662 669	primary
+T17	Lesion-Description 675 685	malignancy
+T18	Medical-Assertion 697 699	no
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 701 717	pleural effusion
+T20	Medical-Problem 721 733	pneumothorax
+T21	Medical-Problem 746 767	aortic calcifications
+E17	Medical-Problem:T21
+T22	Medical-Assertion 843 845	no
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 846 850;852 855	free air
+T24	Medical-Assertion 880 882	No
+A6	Medical-AssertionValue T24 absent
+T25	Medical-Problem 883 888	acute
+E19	Medical-Problem:T25
+T26	Medical-Problem 889 912	cardiopulmonary process
+T27	Medical-Anatomy 945 960	right lung apex
+E21	Medical-Anatomy:T27
+T28	Lesion-Assertion 961 975	concerning for
+A7	Lesion-AssertionValue T28 possible
+T29	Lesion-Characteristic 976 983	primary
+T30	Lesion-Description 990 1000	malignancy
+T31	Medical-Problem 1008 1020	Large hiatal
+E24	Medical-Problem:T31
+T32	Medical-Problem 1021 1027	hernia
+E25	Medical-Problem:T32
+T33	Medical-Problem 1033 1053	adjacent atelectasis
+E26	Medical-Problem:T33
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T12
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E14	Lesion-Description:T17 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T18
+E18	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T26 has-Medical-Assertion:T24
+E23	Lesion-Description:T30 has-Lesion-Assertion:T28 has-Lesion-Characteristic:T29

@@ -1,0 +1,29 @@
+T1	Medical-Problem 270 282;284 302	Patchy right infrahilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 371 389	raises concern for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 390 427	medial right lower lobe consolidation
+T4	Medical-Problem 463 482	area of atelectasis
+E3	Medical-Problem:T4
+T5	Medical-Assertion 520 522	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 523 539	pleural effusion
+T7	Medical-Problem 543 555	pneumothorax
+T8	Lesion-Assertion 625 631	likely
+A3	Lesion-AssertionValue T8 possible
+T9	Lesion-Size 632 636	4 mm
+T10	Lesion-Characteristic 637 646	calcified
+T11	Lesion-Description 647 656	granuloma
+T12	Lesion-Anatomy 678 694	right upper lobe
+T13	Medical-Problem 712 748	Medial right base/infrahilar opacity
+E10	Medical-Problem:T13
+T14	Medical-Assertion 775 794	raising concern for
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 795 808	consolidation
+T16	Medical-Problem 816 825	infection
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Lesion-Description:T11 has-Lesion-Assertion:T8 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14

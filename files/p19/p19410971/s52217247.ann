@@ -1,0 +1,32 @@
+T1	Medical-Problem 418 445	multifocal linear opacities
+T2	Medical-Anatomy 454 483	left mid and both lower lungs
+T3	Medical-Problem 489 525	more confluent area of opacification
+T4	Medical-Anatomy 545 568	right infrahilar region
+T5	Medical-Assertion 574 576	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 577 593	pleural effusion
+T7	Medical-Problem 598 610	pneumothorax
+T8	Medical-Assertion 630 632	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 633 660	acute osseous abnormalities
+T10	Medical-Problem 663 669;671 680	Marked scoliosis
+E8	Medical-Problem:T10
+T11	Medical-Problem 710 730	Multifocal opacities
+T12	Medical-Anatomy 738 772	left mid and bilateral lower lobes
+T13	Medical-Assertion 777 787;789 791	likely due to
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 792 803	atelectasis
+T15	Medical-Problem 842 863	Coexisting aspiration
+T16	Medical-Problem 868 877	pneumonia
+T17	Medical-Anatomy 885 908	right infrahilar region
+T18	Medical-Assertion 912 924	not excluded
+A4	Medical-AssertionValue T18 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

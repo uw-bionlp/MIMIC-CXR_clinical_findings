@@ -1,0 +1,34 @@
+T1	Medical-Problem 367 390;392 401	subtle right lower lobe opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 470 520	interval increase in the size of the opacification
+T3	Medical-Anatomy 528 532;534 556	left lateral pleural region
+T4	Lesion-Assertion 558 577	likely secondary to
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Size-Trend 578 592	increased size
+A2	Lesion-Size-TrendValue T5 increasing
+T6	Lesion-Characteristic 596 600	bony
+T7	Lesion-Description 601 608	lesions
+T8	Medical-Problem 616 643	left lingular consolidation
+E6	Medical-Problem:T8
+T9	Medical-Assertion 695 713	could be secondary
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 717 726	worsening
+E7	Medical-Problem:T10
+T11	Lesion-Description 727 737	metastatic
+E8	Lesion-Description:T11
+T12	Medical-Problem 750 772	superimposed infection
+T13	Lesion-Assertion 923 929;931 943	likely secondary to
+A4	Lesion-AssertionValue T13 possible
+T14	Lesion-Description 954 969	bony metastases
+T15	Medical-Problem 984 1011	left lingular consolidation
+E11	Medical-Problem:T15
+T16	Medical-Assertion 1012 1026	concerning for
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1027 1036	infection
+T18	Lesion-Description 1040 1051;1053 1060	metastastic disease
+E13	Lesion-Description:T18
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Size-Trend:T5 has-Lesion-Characteristic:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T9
+E10	Lesion-Description:T14 has-Lesion-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

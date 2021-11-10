@@ -1,0 +1,28 @@
+T1	Medical-Problem 432 446;448 464	moderate right pleural effusion
+T2	Medical-Problem 469 482	consolidation
+T3	Medical-Anatomy 490 506	right lower lobe
+T4	Lesion-Anatomy 534 544	subpleural
+T5	Lesion-Description 545 551	nodule
+T6	Lesion-Anatomy 564 580	right upper lobe
+T7	Lesion-Characteristic 587 600	lucent center
+T8	Medical-Assertion 609 630	suggests the presence
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 671 673	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 675 687	pneumothorax
+T11	Medical-Problem 924 955	Moderate right pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 961 974	consolidation
+T13	Medical-Anatomy 982 998	right lower lobe
+T14	Lesion-Anatomy 1004 1014	Subpleural
+T15	Lesion-Description 1015 1021	nodule
+T16	Lesion-Anatomy 1029 1045	right upper lobe
+T17	Lesion-Characteristic 1051 1064	lucent center
+T18	Medical-Assertion 1073 1081	suggests
+A3	Medical-AssertionValue T18 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T16 has-Lesion-Characteristic:T17

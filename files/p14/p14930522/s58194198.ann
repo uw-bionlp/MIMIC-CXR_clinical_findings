@@ -1,0 +1,46 @@
+T1	Medical-Problem 331 353	persistent volume loss
+T2	Medical-Anatomy 361 371	right lung
+T3	Medical-Problem 379 398;400 408	right-sided pleural effusion
+T4	Medical-Assertion 418 424	likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 434 453	partially loculated
+T6	Medical-Problem 463 469	strain
+E5	Medical-Problem:T6
+T7	Medical-Problem 552 568	mid lung opacity
+E6	Medical-Problem:T7
+T8	Medical-Assertion 569 575	may be
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 591 605	fissural fluid
+T10	Medical-Problem 610 621	atelectasis
+T11	Medical-Problem 628 652	underlying consolidation
+T12	Medical-Assertion 656 668	not excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 671 673	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 674 695	definite pneumothorax
+T15	Medical-Problem 815 826	volume loss
+T16	Medical-Anatomy 834 844	right lung
+T17	Medical-Problem 850 872	right pleural effusion
+T18	Medical-Assertion 879 882;884 886	may be
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 983 1005	midhemi thorax opacity
+E14	Medical-Problem:T19
+T20	Medical-Assertion 1006 1012	may be
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1028 1036;1038 1043	fissural fluid
+T22	Medical-Problem 1048 1059	atelectasis
+T23	Medical-Problem 1065 1089	underlying consolidation
+T24	Medical-Assertion 1093 1105	not excluded
+A7	Medical-AssertionValue T24 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16
+E13	Medical-Problem:T17 has-Medical-Anatomy:T16 has-Medical-Assertion:T18
+E15	Medical-Problem:T21 has-Medical-Assertion:T20
+E16	Medical-Problem:T22 has-Medical-Assertion:T20
+E17	Medical-Problem:T23 has-Medical-Assertion:T24

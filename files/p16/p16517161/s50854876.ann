@@ -1,0 +1,27 @@
+T1	Medical-Problem 275 302;304 332	interval enlargement of the right-sided pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 388 410	Underlying atelectasis
+T3	Medical-Assertion 411 420	suspected
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 426 439	consolidation
+T5	Medical-Assertion 440 452	not excluded
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Anatomy 460 469	left lung
+T7	Medical-Assertion 479 486	without
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 487 500	consolidation
+T9	Medical-Problem 504 512	effusion
+T10	Medical-Problem 641 697	Interval enlargement of the right-sided pleural effusion
+E7	Medical-Problem:T10
+T11	Medical-Problem 720 729	suspected
+E8	Medical-Problem:T11
+T12	Medical-Problem 730 752	underlying atelectasis
+E9	Medical-Problem:T12
+T13	Medical-Problem 754 774	underlying infection
+T14	Medical-Assertion 779 791	not excluded
+A4	Medical-AssertionValue T14 possible
+E2	Medical-Problem:T2 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Medical-Problem:T13 has-Medical-Assertion:T14

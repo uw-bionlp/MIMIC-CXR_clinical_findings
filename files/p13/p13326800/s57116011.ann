@@ -1,0 +1,25 @@
+T1	Medical-Problem 266 318	persistent, perhaps somewhat increased opacification
+T2	Medical-Anatomy 326 335;337 352	posterior left lower lobe
+T3	Medical-Problem 364 375	atelectasis
+T4	Lesion-Size 394 399	large
+T5	Lesion-Characteristic 400 407	rounded
+T6	Lesion-Description 408 412	mass
+T7	Lesion-Anatomy 421 455	left posterior costophrenic sulcus
+T8	Lesion-Size-Trend 465 480	similar in size
+A1	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Description 604 611	nodules
+E8	Lesion-Description:T9
+T10	Medical-Assertion 674 676	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 677 702	definite pleural effusion
+T12	Medical-Problem 723 753	Mild increase in opacification
+T13	Medical-Anatomy 761 776	left lower lobe
+T14	Medical-Assertion 778 797;799 803	probably associated with
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 804 815	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

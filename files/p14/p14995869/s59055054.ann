@@ -1,0 +1,18 @@
+T1	Medical-Problem 152 171	area of atelectasis
+T2	Medical-Anatomy 180 189	left base
+T3	Medical-Assertion 190 201	has cleared
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Assertion 213 224	no evidence
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 228 243	acute pneumonia
+T6	Medical-Problem 245 253;255 265	vascular congestion
+T7	Medical-Problem 270 286	pleural effusion
+T8	Lesion-Assertion 289 291	No
+A3	Lesion-AssertionValue T8 absent
+T9	Lesion-Characteristic 292 300	definite
+T10	Lesion-Description 301 319	metastatic disease
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T4
+E7	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9

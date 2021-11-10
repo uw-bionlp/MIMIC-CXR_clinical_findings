@@ -1,0 +1,21 @@
+T1	Medical-Problem 281 298	aorta is tortuous
+E1	Medical-Problem:T1
+T2	Medical-Problem 301 307;309 343	Subtle small focal area of patchy opacity
+T3	Medical-Anatomy 347 361	left lung base
+T4	Medical-Assertion 362 375	may relate to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 376 387	atelectasis
+T6	Medical-Problem 393 424	overlapping vascular structures
+T7	Medical-Problem 433 461	early/mild infection process
+T8	Medical-Assertion 466 478	not excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 490 492	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 493 509	pleural effusion
+T11	Medical-Problem 513 525	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

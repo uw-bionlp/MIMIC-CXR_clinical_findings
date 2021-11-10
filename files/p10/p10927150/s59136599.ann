@@ -1,0 +1,55 @@
+T1	Medical-Anatomy 296 301	lungs
+T2	Medical-Problem 306 319	hyperinflated
+T3	Medical-Problem 337 341	COPD
+T4	Medical-Problem 344 358;360 378	Multiple focal airspace opacities
+T5	Medical-Anatomy 390 400	both lungs
+T6	Medical-Problem 406 418	predominance
+T7	Medical-Anatomy 426 435;437 442	bilateral bases
+T8	Medical-Problem 521 534	Opacification
+T9	Medical-Anatomy 542 557	left lower lobe
+T10	Medical-Problem 612 631	focal consolidation
+T11	Medical-Problem 635 644	pneumonia
+T12	Medical-Assertion 645 654;656 664	cannot be excluded
+A1	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 667 669	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 670 698	significant pleural effusion
+T15	Medical-Problem 702 714	pneumothorax
+T16	Medical-Problem 813 826	calcification
+T17	Medical-Anatomy 834 845	aortic knob
+T18	Medical-Assertion 985 987	no
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 988 996	free air
+T20	Medical-Anatomy 1009 1028	right hemidiaphragm
+T21	Medical-Problem 1031 1036;1038 1054	Focal airspace opacity
+T22	Medical-Anatomy 1062 1077	left lower lobe
+T23	Medical-Assertion 1152 1154	No
+A4	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1155 1177	definite consolidation
+T25	Medical-Assertion 1178 1188	concerning
+A5	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1194 1203	pneumonia
+T27	Medical-Problem 1283 1322	Multiple faint focal airspace opacities
+E22	Medical-Problem:T27
+T28	Medical-Assertion 1377 1379	No
+A6	Medical-AssertionValue T28 absent
+T29	Medical-Problem 1380 1399	focal consolidation
+T30	Medical-Assertion 1400 1410	concerning
+A7	Medical-AssertionValue T30 possible
+T31	Medical-Problem 1415 1424	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9 has-Medical-Assertion:T12
+E11	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18 has-Medical-Anatomy:T20
+E18	Medical-Problem:T21 has-Medical-Anatomy:T22
+E20	Medical-Problem:T24 has-Medical-Assertion:T23
+E21	Medical-Problem:T26 has-Medical-Assertion:T23 has-Medical-Assertion:T25
+E23	Medical-Problem:T29 has-Medical-Assertion:T28
+E24	Medical-Problem:T31 has-Medical-Assertion:T28 has-Medical-Assertion:T30

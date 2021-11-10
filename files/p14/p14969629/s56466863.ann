@@ -1,0 +1,39 @@
+T1	Medical-Problem 227 249	subtle interval change
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 334 339	Lungs
+T3	Medical-Problem 347 367	mildly hyperinflated
+T4	Medical-Problem 379 401;403 421	asymmetric left apical pleural thickening
+E4	Medical-Problem:T4
+T5	Lesion-Count 447 455	at least
+T6	Lesion-Count 456 461	three
+T7	Lesion-Characteristic 462 470	discrete
+T8	Lesion-Description 471 478	nodular
+T9	Lesion-Description 480 489	opacities
+T10	Lesion-Anatomy 502 518	right upper lobe
+T11	Lesion-Anatomy 520 536	right lower lobe
+T12	Lesion-Anatomy 541 556	left lower lobe
+T13	Lesion-Assertion 613 626	may represent
+A1	Lesion-AssertionValue T13 possible
+T14	Lesion-Description 627 637	granulomas
+T15	Medical-Assertion 805 807	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 808 836	focal airspace consolidation
+T17	Medical-Problem 856 865	pneumonia
+T18	Medical-Assertion 868 870	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 872 889	pleural effusions
+T20	Medical-Assertion 892 903	No evidence
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 907 919	pneumothorax
+T22	Medical-Assertion 922 924	No
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 925 940	pulmonary edema
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E8	Lesion-Description:T8 has-Lesion-Count:T5
+E9	Lesion-Description:T9 has-Lesion-Count:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T10 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T12
+E13	Lesion-Description:T14 has-Lesion-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T15
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

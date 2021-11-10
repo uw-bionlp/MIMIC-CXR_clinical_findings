@@ -1,0 +1,36 @@
+T1	Medical-Problem 238 267	Heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 327 348	pulmonary vasculature
+T3	Medical-Assertion 352 355	not
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 356 364	engorged
+T5	Lesion-Size 366 370	5 mm
+T6	Lesion-Characteristic 371 380	calcified
+T7	Lesion-Description 381 387	nodule
+T8	Lesion-Anatomy 409 424	left upper lobe
+T9	Lesion-Assertion 425 440	likely reflects
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Description 443 452	granuloma
+T11	Medical-Problem 454 461;463 472	Streaky opacities
+T12	Medical-Anatomy 480 490	lung bases
+T13	Medical-Assertion 491 505	likely reflect
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 506 517	atelectasis
+T15	Medical-Assertion 519 521	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 522 527;529 542	focal consolidation
+T17	Medical-Problem 544 560	pleural effusion
+T18	Medical-Problem 564 576	pneumothorax
+T19	Medical-Problem 599 603;605 625	mild degenerative changes
+T20	Medical-Anatomy 639 653	thoracic spine
+T21	Medical-Problem 674 700	Mild bibasilar atelectasis
+E17	Medical-Problem:T21
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T15
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20

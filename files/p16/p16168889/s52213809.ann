@@ -1,0 +1,18 @@
+T1	Medical-Problem 338 358	Small subtle opacity
+T2	Medical-Anatomy 366 379	left mid lung
+T3	Medical-Assertion 430 444	suspicious for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 445 461	early  pneumonia
+T5	Medical-Assertion 552 554	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 555 562;564 575	pleural abnormality
+T7	Medical-Problem 593 619	Ill-defined, small opacity
+T8	Medical-Anatomy 623 636	left mid lung
+T9	Medical-Assertion 640 654	concerning for
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 659 677	evolving pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

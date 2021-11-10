@@ -1,0 +1,41 @@
+T1	Medical-Problem 29 62	Asymmetric right hilar prominence
+T2	Medical-Assertion 63 73	suggesting
+A1	Medical-AssertionValue T2 possible
+T3	Lesion-Anatomy 74 79	hilar
+T4	Lesion-Description 80 90	adenopathy
+T5	Medical-Assertion 93 105;107 117	Differential  diagnosis
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 127 134	sarcoid
+T7	Medical-Problem 136 148	tuberculosis
+T8	Medical-Problem 150 158	lymphoma
+E6	Medical-Problem:T8
+T9	Lesion-Anatomy 176 185	pulmonary
+T10	Lesion-Description 188 198	malignancy
+T11	Medical-Assertion 442 444	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Anatomy 565 600	both hila, right greatere than left
+E9	Medical-Anatomy:T12
+T13	Medical-Anatomy 623 677;679 690	right lower paratracheal and AP window stations of the mediastinum
+E10	Medical-Anatomy:T13
+T14	Medical-Anatomy 709 730	pulmonary vasculature
+T15	Medical-Assertion 734 737	not
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 738 746	engorged
+T17	Lesion-Anatomy 848 853	hilar
+T18	Lesion-Anatomy 858 869	mediastinal
+T19	Lesion-Description 870 880	adenopathy
+T20	Medical-Assertion 882 893	most likely
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 894 905	sarcoidosis
+T22	Medical-Assertion 913 915	No
+A6	Medical-AssertionValue T22 absent
+T23	Medical-Problem 916 945	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E15	Lesion-Description:T19 has-Lesion-Anatomy:T17 has-Lesion-Anatomy:T18
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E17	Medical-Problem:T23 has-Medical-Assertion:T22

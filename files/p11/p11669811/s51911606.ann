@@ -1,0 +1,36 @@
+T1	Medical-Assertion 476 478	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 479 498	focal consolidation
+T3	Medical-Problem 500 505	edema
+T4	Medical-Problem 507 515	effusion
+T5	Medical-Problem 521 533	pneumothorax
+T6	Lesion-Anatomy 561 570	pulmonary
+T7	Lesion-Description 571 578	nodules
+T8	Medical-Problem 654 664	Prominence
+T9	Medical-Anatomy 673 687	thoracic aorta
+T10	Medical-Problem 693 717	extensive calcifications
+T11	Medical-Problem 752 772	Bilateral prominence
+T12	Medical-Anatomy 780 798	pulmonary arteries
+T13	Medical-Assertion 799 823	might be consistent with
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 825 847	pulmonary hypertension
+T15	Medical-Problem 852 876	Moderate, left scoliosis
+T16	Medical-Anatomy 884 898	thoracic spine
+T17	Medical-Problem 926 968	associated distortion of the thoracic cage
+T18	Medical-Problem 1144 1163	Hyperinflated lungs
+E16	Medical-Problem:T18
+T19	Medical-Assertion 1170 1194	No radiographic evidence
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1198 1223	interstitial lung disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T17 has-Medical-Anatomy:T16
+E17	Medical-Problem:T20 has-Medical-Assertion:T19

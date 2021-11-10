@@ -1,0 +1,29 @@
+T1	Medical-Problem 287 333	bilateral partially layering pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 421 431	Mild edema
+T3	Medical-Assertion 435 444;446 456	difficult to exclude
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 459 473	Consolidations
+T5	Medical-Anatomy 481 492	lower lungs
+T6	Medical-Problem 519 553	compressive lower lobe atelectasis
+T7	Medical-Problem 564 586	superimposed pneumonia
+T8	Medical-Assertion 587 593;595 602	may be present
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 605 616	No definite
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 803 823	Mild pulmonary edema
+E7	Medical-Problem:T10
+T11	Medical-Problem 829 856	bilateral pleural effusions
+E8	Medical-Problem:T11
+T12	Medical-Problem 882 907	lower lung consolidations
+E9	Medical-Problem:T12
+T13	Medical-Assertion 909 920	most likely
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 921 944	compressive atelectasis
+T15	Medical-Problem 953 962	pneumonia
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13

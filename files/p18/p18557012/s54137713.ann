@@ -1,0 +1,27 @@
+T1	Medical-Problem 315 331;333 340	right infrahilar opacity
+T2	Medical-Assertion 341 353	has resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 462 477;479 487	heart is mildly enlarged
+E2	Medical-Problem:T3
+T4	Medical-Problem 501 528	some mild aortic tortuosity
+E3	Medical-Problem:T4
+T5	Medical-Assertion 531 533	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 534 550	pleural effusion
+T7	Medical-Problem 555 567	pneumothorax
+T8	Medical-Problem 603 631	rounded, calcified densities
+T9	Medical-Anatomy 639 666;668 692	right upper quadrant of the abdomen /right lung base
+T10	Lesion-Assertion 699 717	possibly represent
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 718 727	calcified
+T12	Lesion-Description 728 738	granulomas
+T13	Lesion-Anatomy 747 752	liver
+T14	Medical-Assertion 850 860	Resolution
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 864 890	right lower lobe pneumonia
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

@@ -1,0 +1,23 @@
+T1	Medical-Problem 228 259	Increased interstitial markings
+T2	Medical-Anatomy 264 274	lung bases
+T3	Lesion-Anatomy 308 330	Right apical pulmonary
+T4	Lesion-Description 331 337	nodule
+T5	Lesion-Description 490 500	adenopathy
+E5	Lesion-Description:T5
+T6	Medical-Assertion 538 540	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 542 567	acute osseous abnormality
+T8	Medical-Assertion 602 604	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 605 634	acute cardiopulmonary process
+T10	Lesion-Anatomy 637 659	Right apical pulmonary
+T11	Lesion-Description 660 666	nodule
+T12	Medical-Problem 672 683	mediastinal
+E10	Medical-Problem:T12
+T13	Lesion-Description 684 694	adenopathy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E11	Lesion-Description:T13 has-Lesion-Anatomy:T10

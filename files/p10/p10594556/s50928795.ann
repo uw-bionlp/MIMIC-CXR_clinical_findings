@@ -1,0 +1,27 @@
+T1	Medical-Problem 390 409	dense consolidation
+T2	Medical-Anatomy 417 426	left lung
+T3	Medical-Problem 432 448	air bronchograms
+T4	Medical-Anatomy 456 461;463 467	upper lobe
+T5	Medical-Problem 527 539;541 559	lucency with an air-fluid level
+T6	Medical-Anatomy 567 582	left lower lobe
+T7	Lesion-Characteristic 604 612	cavitary
+T8	Lesion-Description 613 619	lesion
+T9	Medical-Problem 655 685	layering left pleural effusion
+E9	Medical-Problem:T9
+T10	Medical-Assertion 734 736	no
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 737 749	pneumothorax
+T12	Medical-Problem 914 933	Dense consolidation
+T13	Medical-Anatomy 941 950	left lung
+T14	Lesion-Characteristic 984 992	Cavitary
+T15	Lesion-Description 993 999	lesion
+T16	Lesion-Anatomy 1003 1018	left lower lobe
+T17	Medical-Problem 1049 1079	Layering left pleural effusion
+E16	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T7
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Lesion-Description:T15 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T16

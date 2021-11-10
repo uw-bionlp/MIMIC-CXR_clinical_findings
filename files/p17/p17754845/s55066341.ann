@@ -1,0 +1,37 @@
+T1	Medical-Problem 306 319	focal opacity
+T2	Medical-Anatomy 327 342	right lung base
+T3	Medical-Problem 346 362;364 377	linear region of opacification
+T4	Medical-Anatomy 385 399	left lung base
+T5	Medical-Assertion 400 422	most likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 423 434	atelectasis
+T7	Medical-Problem 442 465	lungs are hyperinflated
+E6	Medical-Problem:T7
+T8	Medical-Assertion 476 478	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 479 495	pleural effusion
+T10	Medical-Problem 499 511	pneumothorax
+T11	Medical-Problem 561 569	dilation
+T12	Medical-Anatomy 577 584;586 604	central pulmonary arteries
+T13	Medical-Problem 629 642	Focal opacity
+T14	Medical-Anatomy 650 665	right lung base
+T15	Medical-Assertion 666 680	concerning for
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 681 698;700 721	pneumonia, likely bacterial in etiology
+T17	Medical-Problem 727 746	Lung hyperinflation
+E14	Medical-Problem:T17
+T18	Medical-Problem 752 760	Dilation
+T19	Medical-Anatomy 768 792	central pulmonary artery
+T20	Medical-Assertion 803 816	suggestive of
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 817 826;828 847	pulmonary artery hypertension
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

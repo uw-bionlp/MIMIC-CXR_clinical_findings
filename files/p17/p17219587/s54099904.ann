@@ -1,0 +1,28 @@
+T1	Medical-Assertion 34 36	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 37 66	acute cardiopulmonary process
+T3	Medical-Problem 443 459	calcific density
+T4	Medical-Anatomy 504 531	left sternoclavicular joint
+T5	Lesion-Description 554 563	granuloma
+E4	Lesion-Description:T5
+T6	Medical-Assertion 574 576	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 577 596	focal consolidation
+T8	Medical-Problem 598 610	pneumothorax
+T9	Medical-Problem 616 631	pulmonary edema
+T10	Medical-Anatomy 708 744	posterior to the right hemidiaphragm
+T11	Medical-Assertion 745 758	may represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 759 771;773 783	mild pleural thickening
+T13	Medical-Problem 789 808	tiny right effusion
+T14	Medical-Problem 838 842	tiny
+E11	Medical-Problem:T14
+T15	Medical-Problem 843 864	left pleural effusion
+E12	Medical-Problem:T15
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

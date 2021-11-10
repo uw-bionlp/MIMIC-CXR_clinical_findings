@@ -1,0 +1,17 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 61	acute cardiopulmonary process
+T3	Medical-Problem 419 436	Increased opacity
+E2	Medical-Problem:T3
+T4	Medical-Problem 540 550	prominence
+T5	Medical-Anatomy 558 569	mediastinum
+T6	Lesion-Assertion 645 647	no
+A2	Lesion-AssertionValue T6 absent
+T7	Lesion-Description 648 663	lymphadenopathy
+T8	Medical-Problem 694 702	effusion
+E6	Medical-Problem:T8
+T9	Medical-Problem 706 718	pneumothorax
+E7	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Lesion-Description:T7 has-Lesion-Assertion:T6

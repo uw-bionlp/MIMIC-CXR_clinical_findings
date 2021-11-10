@@ -1,0 +1,17 @@
+T1	Medical-Problem 309 329;331 355	diffuse, though more coalescent opacification
+T2	Medical-Anatomy 368 382	right mid zone
+T3	Medical-Anatomy 401 409;411 425	left mid and lower lung
+T4	Medical-Problem 443 463	multifocal pneumonia
+E4	Medical-Problem:T4
+T5	Medical-Problem 466 481	Poor definition
+E5	Medical-Problem:T5
+T6	Medical-Assertion 504 512	suggests
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 513 524	volume loss
+T8	Medical-Anatomy 532 547	left lower lobe
+T9	Medical-Assertion 553 561	possible
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 563 579	pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

@@ -1,0 +1,45 @@
+T1	Medical-Problem 285 305	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 308 312	Left
+T3	Medical-Problem 340 349	opacities
+T4	Medical-Problem 389 405	Residual opacity
+T5	Medical-Anatomy 415 438	left costophrenic angle
+T6	Medical-Assertion 454 462	could be
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 463 474	atelectasis
+T8	Medical-Problem 482 514	residual from prior in infection
+T9	Medical-Problem 520 554	right subpulmonic pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 568 589	left pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Assertion 661 663	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 665 677	pneumothorax
+T13	Medical-Assertion 680 682	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 683 707	new focal consolidations
+T15	Medical-Assertion 732 734	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 735 759	new focal consolidations
+T17	Medical-Problem 762 791	Very minimal residual opacity
+T18	Medical-Anatomy 801 805;807 825	left costophrenic angle
+T19	Medical-Assertion 826 832	may be
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 833 844	atelectasis
+T21	Medical-Problem 852 880	sequelae of recent infection
+T22	Medical-Problem 889 929	Small subpulmonic right pleural effusion
+E17	Medical-Problem:T22
+T23	Medical-Assertion 938 946	Possible
+A6	Medical-AssertionValue T23 possible
+T24	Medical-Problem 947 974	trace left pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E18	Medical-Problem:T24 has-Medical-Assertion:T23

@@ -1,0 +1,19 @@
+T1	Medical-Problem 385 393	blunting
+T2	Medical-Anatomy 401 424	left costophrenic angle
+T3	Medical-Problem 451 482	Chronic appearing rib fractures
+T4	Medical-Anatomy 490 510	left mid hemi-thorax
+T5	Lesion-Assertion 551 553	do
+A1	Lesion-AssertionValue T5 absent
+T6	Lesion-Assertion 554 557	not
+A2	Lesion-AssertionValue T6 absent
+T7	Lesion-Characteristic 567 581	poorly defined
+T8	Lesion-Characteristic 582 590	cavitary
+T9	Lesion-Anatomy 591 595	lung
+T10	Lesion-Description 596 603	nodules
+T11	Medical-Assertion 624 648	No radiographic evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 652 665	septic emboli
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Lesion-Description:T10 has-Lesion-Assertion:T5 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

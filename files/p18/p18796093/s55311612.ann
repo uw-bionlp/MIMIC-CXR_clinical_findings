@@ -1,0 +1,42 @@
+T1	Lesion-Size 177 182	large
+T2	Lesion-Anatomy 183 199	right paraspinal
+T3	Lesion-Description 200 204	mass
+T4	Lesion-Characteristic 236 246	Widespread
+T5	Lesion-Anatomy 248 257	pulmonary
+T6	Lesion-Description 258 265	nodules
+T7	Medical-Problem 329 351	more confluent opacity
+T8	Medical-Anatomy 370 398	right lower lobe posteriorly
+T9	Medical-Assertion 408 431	at least in part due to
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 432 443	atelectasis
+T11	Medical-Problem 449 472	associated displacement
+T12	Medical-Anatomy 481 494	major fissure
+T13	Medical-Problem 497 557	Moderate right pleural effusion with intrafissural component
+E12	Medical-Problem:T13
+T14	Medical-Problem 593 627	Worsening right lower lobe opacity
+E13	Medical-Problem:T14
+T15	Medical-Assertion 638 661	at least in part due to
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 663 674	atelectasis
+T17	Medical-Problem 681 713	associated fissural displacement
+E15	Medical-Problem:T17
+T18	Medical-Problem 724 734;736 745	coexisting pneumonia
+T19	Medical-Assertion 749 757	possible
+A3	Medical-AssertionValue T19 possible
+T20	Lesion-Characteristic 807 817	Widespread
+T21	Lesion-Anatomy 818 827	pulmonary
+T22	Lesion-Description 828 838	metastases
+T23	Lesion-Size 843 848	large
+T24	Lesion-Anatomy 849 865	right paraspinal
+T25	Lesion-Description 866 870	mass
+T26	Medical-Problem 937 968	Moderate right pleural effusion
+E23	Medical-Problem:T26
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Anatomy:T12
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T18 has-Medical-Assertion:T19
+E19	Lesion-Description:T22 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T21
+E22	Lesion-Description:T25 has-Lesion-Size-Present:T23 has-Lesion-Anatomy:T24

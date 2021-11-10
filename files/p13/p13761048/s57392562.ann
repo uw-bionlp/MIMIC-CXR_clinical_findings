@@ -1,0 +1,22 @@
+T1	Lesion-Size 199 204	Large
+T2	Lesion-Anatomy 205 216	left apical
+T3	Lesion-Description 217 221	mass
+T4	Medical-Assertion 247 258	no evidence
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 262 274	pneumothorax
+T6	Medical-Assertion 286 288	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 289 308	focal consolidation
+T8	Medical-Problem 348 377	heart size is mildly enlarged
+E6	Medical-Problem:T8
+T9	Medical-Assertion 395 406	No evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 410 422	pneumothorax
+T11	Lesion-Size 425 430	Large
+T12	Lesion-Anatomy 431 447	left apical lung
+T13	Lesion-Description 448 452	mass
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T12

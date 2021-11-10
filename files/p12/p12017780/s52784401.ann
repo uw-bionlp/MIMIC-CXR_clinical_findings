@@ -1,0 +1,30 @@
+T1	Medical-Assertion 325 327	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 328 332;334 337	free air
+T3	Medical-Anatomy 348 367	right hemidiaphragm
+T4	Medical-Problem 372 385	vague opacity
+T5	Medical-Anatomy 406 411;413 423	right upper lung
+T6	Medical-Assertion 537 548	no evidence
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 552 561	pneumonia
+T8	Medical-Problem 566 569	CHF
+T9	Medical-Assertion 572 574	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 575 583	effusion
+T11	Medical-Problem 587 599	pneumothorax
+T12	Medical-Problem 673 685	Degenerative
+E9	Medical-Problem:T12
+T13	Medical-Problem 686 693	changes
+T14	Medical-Anatomy 701 717;719 726	AC joints, right greater
+T15	Medical-Assertion 745 747	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 748 762	free air below
+T17	Medical-Anatomy 767 786	right hemidiaphragm
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17

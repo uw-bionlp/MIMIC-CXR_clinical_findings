@@ -1,0 +1,34 @@
+T1	Medical-Problem 168 175	opacity
+T2	Medical-Anatomy 183 198	right lung apex
+T3	Medical-Problem 204 219	central lucency
+T4	Medical-Assertion 221 240	raising concern for
+A1	Medical-AssertionValue T4 possible
+T5	Lesion-Characteristic 243 251	cavitary
+T6	Lesion-Description 252 258	lesion
+T7	Medical-Problem 262 289	consolidation around a bleb
+T8	Medical-Assertion 292 294	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 296 320	additional consolidation
+T10	Medical-Assertion 331 333	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 334 350	pleural effusion
+T12	Medical-Problem 352 367	pulmonary edema
+T13	Medical-Problem 373 385	pneumothorax
+T14	Medical-Problem 456 463	Opacity
+T15	Medical-Anatomy 471 486	right lung apex
+T16	Medical-Problem 492 507	central lucency
+T17	Lesion-Assertion 508 515;517 528	raising concern for
+A4	Lesion-AssertionValue T17 possible
+T18	Lesion-Characteristic 531 539	cavitary
+T19	Lesion-Description 540 546	lesion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15
+E15	Lesion-Description:T19 has-Lesion-Assertion:T17 has-Lesion-Characteristic:T18

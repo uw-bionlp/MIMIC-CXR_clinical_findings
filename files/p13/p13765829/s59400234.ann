@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 161 166	heart
+T2	Medical-Assertion 170 173	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 174 182	enlarged
+T4	Lesion-Assertion 230 232	no
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 234 239	hilar
+T6	Lesion-Anatomy 243 254	mediastinal
+T7	Lesion-Description 255 270	lymphadenopathy
+T8	Medical-Assertion 285 287	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 288 291	CHF
+T10	Medical-Problem 293 309	focal infiltrate
+T11	Medical-Problem 314 322	effusion
+T12	Medical-Problem 351 374	slight anterior wedging
+T13	Medical-Anatomy 380 385;387 424	lower thoracic vertebral body, question T12
+T14	Medical-Problem 431 462;464 468	loss of height of approximately ___%
+E11	Medical-Problem:T14
+T15	Medical-Problem 579 609;611 624	irregular, somewhat spiculated focal density
+T16	Medical-Anatomy 678 689;691 746	left of the lower cervical spine, over the soft tissues of the neck
+T17	Medical-Assertion 910 912	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 913 936	acute pulmonary process
+T19	Medical-Problem 1003 1011	Anterior
+E15	Medical-Problem:T19
+T20	Medical-Anatomy 1058 1061	T12
+T21	Medical-Problem 1094 1133	old vertebral body compression fracture
+T22	Lesion-Description 1191 1206	nodular density
+T23	Lesion-Anatomy 1217 1232	left lower neck
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Medical-Problem:T21 has-Medical-Anatomy:T20
+E18	Lesion-Description:T22 has-Lesion-Anatomy:T23

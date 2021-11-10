@@ -1,0 +1,47 @@
+T1	Medical-Problem 112 116;118 134	Left  basilar opacity
+T2	Medical-Anatomy 148 166	left hemidiaphragm
+T3	Medical-Problem 171 181	blunts the
+T4	Medical-Anatomy 182 194	costophrenic
+T5	Medical-Assertion 204 221	likely reflecting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 222 271	combination of pleural effusion and consolidation
+T7	Medical-Problem 275 284	infection
+T8	Medical-Assertion 285 297	not excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 510 525	basilar opacity
+T10	Medical-Anatomy 539 557	left hemidiaphragm
+T11	Medical-Problem 562 572	blunts the
+T12	Medical-Anatomy 573 585	costophrenic
+T13	Medical-Assertion 595 612	likely reflecting
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 613 644	combination of pleural effusion
+T15	Medical-Problem 649 662	consolidation
+T16	Medical-Problem 666 675	infection
+T17	Medical-Assertion 676 688	not excluded
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1305 1311	coiled
+E14	Medical-Problem:T18
+T19	Medical-Problem 1328 1348	Minimal left pleural
+E15	Medical-Problem:T19
+T20	Medical-Problem 1349 1357	effusion
+T21	Medical-Anatomy 1372 1395	left costophrenic sinus
+T22	Medical-Problem 1398 1427	Left retrocardiac atelectasis
+E18	Medical-Problem:T22
+T23	Medical-Assertion 1479 1481	No
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1482 1494	pneumothorax
+T25	Medical-Assertion 1539 1546	without
+A6	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1547 1562	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T10 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T10 has-Medical-Assertion:T13 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E20	Medical-Problem:T26 has-Medical-Assertion:T25

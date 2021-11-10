@@ -1,0 +1,34 @@
+T1	Medical-Problem 34 65	Apparent increased hazy opacity
+T2	Medical-Anatomy 71 92	bilateral lung fields
+T3	Medical-Assertion 93 108	could be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 111 137	increased pleural effusion
+T5	Medical-Assertion 165 167	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 168 186;188 202	discrete new focal  consolidation
+T7	Medical-Problem 643 660	pleural effusions
+T8	Medical-Anatomy 691 702	lower lungs
+T9	Medical-Problem 721 771	substantial persistent or increasing consolidation
+T10	Medical-Anatomy 779 783;785 795	left lower lobe
+T11	Medical-Problem 797 806	pneumonia
+E9	Medical-Problem:T11
+T12	Medical-Problem 851 861	congestion
+E10	Medical-Problem:T12
+T13	Medical-Problem 893 913	mild pulmonary edema
+E11	Medical-Problem:T13
+T14	Medical-Anatomy 952 969	right mediastinal
+T15	Medical-Problem 987 995	tortuous
+T16	Medical-Problem 999 1016;1018 1032	dilated ascending thoracic aorta
+T17	Medical-Assertion 1135 1137	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1138 1150	pneumothorax
+T19	Medical-Problem 1164 1201	severely distended with air and fluid
+E16	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E13	Medical-Problem:T15 has-Medical-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T14
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

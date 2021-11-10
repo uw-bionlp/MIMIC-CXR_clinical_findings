@@ -1,0 +1,38 @@
+T1	Lesion-Size 252 257	large
+T2	Lesion-Anatomy 258 274	right upper lobe
+T3	Lesion-Description 275 279;281 287	mass lesion
+T4	Lesion-Assertion 289 303	concerning for
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Size-Trend 317 323	stable
+A2	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Size 360 365	small
+T7	Lesion-Description 366 373	nodules
+T8	Lesion-Anatomy 377 392	both lung bases
+T9	Medical-Problem 489 505;507 542	mild increase in the moderate right pleural effusion
+E7	Medical-Problem:T9
+T10	Medical-Problem 545 584	Small-to-moderate left pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 602 622	Mild pulmonary edema
+E9	Medical-Problem:T11
+T12	Medical-Problem 635 661	Mild bibasilar atelectasis
+E10	Medical-Problem:T12
+T13	Medical-Assertion 683 685	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 686 698	pneumothorax
+T15	Medical-Problem 759 782	moderate calcifications
+T16	Medical-Anatomy 790 801	aortic knob
+T17	Lesion-Anatomy 829 850	right upper lobe lung
+T18	Lesion-Description 851 855	mass
+T19	Lesion-Count 861 869	multiple
+T20	Lesion-Anatomy 870 889	bibasilar pulmonary
+T21	Lesion-Description 891 898	nodules
+T22	Medical-Problem 947 978	moderate right pleural effusion
+E19	Medical-Problem:T22
+T23	Medical-Problem 984 995;997 1013	stable left pleural effusion
+E20	Medical-Problem:T23
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Assertion:T4 has-Lesion-Size-Trend:T5
+E5	Lesion-Description:T7 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T17
+E18	Lesion-Description:T21 has-Lesion-Count:T19 has-Lesion-Anatomy:T20

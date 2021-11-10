@@ -1,0 +1,33 @@
+T1	Medical-Problem 229 242	Opacification
+T2	Medical-Anatomy 250 265	left hemithorax
+T3	Medical-Assertion 270 284	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 285 297	empymea with
+T5	Medical-Problem 298 307	pneumonia
+T6	Medical-Anatomy 313 320	cardiac
+T7	Medical-Assertion 346 360	concerning for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 361 382	pericardial efffusion
+T9	Medical-Assertion 433 435	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 436 479	significant shift of mediastinal structures
+T11	Medical-Problem 502 515	Opacification
+T12	Medical-Anatomy 523 538	left hemithorax
+T13	Medical-Assertion 539 553	concerning for
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 554 561	empyema
+T15	Medical-Problem 567 576	pneumonia
+T16	Medical-Problem 584 612	Prominent cardiac silhouette
+E12	Medical-Problem:T16
+T17	Medical-Assertion 613 627	concerning for
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 628 649	pericardial efffusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

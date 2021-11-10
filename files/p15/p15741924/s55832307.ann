@@ -1,0 +1,47 @@
+T1	Medical-Problem 277 324	Heart size remains at least moderately enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 421 432	aortic knob
+T3	Medical-Problem 441 450	calcified
+T4	Lesion-Anatomy 453 464	Mediastinal
+T5	Lesion-Characteristic 515 524	calcified
+T6	Lesion-Description 525 536	lymph nodes
+T7	Medical-Assertion 543 549;551 564	likely reflective of
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 595 615	Lung volumes are low
+E7	Medical-Problem:T8
+T9	Medical-Problem 628 636	crowding
+T10	Medical-Anatomy 644 670	bronchovascular structures
+T11	Medical-Assertion 677 685	probable
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 686 700;702 721	mild pulmonary vascular congestion
+T13	Medical-Problem 724 757	Trace bilateral pleural effusions
+E11	Medical-Problem:T13
+T14	Medical-Problem 770 776;778 787	Linear opacities
+T15	Medical-Anatomy 795 810	both lung bases
+T16	Medical-Assertion 811 825	likely reflect
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 826 837	atelectasis
+T18	Medical-Assertion 840 842	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 843 855	pneumothorax
+T20	Medical-Assertion 873 875	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 876 903	acute osseous abnormalities
+T22	Medical-Problem 955 989	Mild pulmonary vascular congestion
+E17	Medical-Problem:T22
+T23	Medical-Problem 991 1014;1016 1025	Small bilateral pleural effusions
+E18	Medical-Problem:T23
+T24	Medical-Problem 1028 1054	Bibasilar linear opacities
+E19	Medical-Problem:T24
+T25	Medical-Assertion 1055 1069	likely reflect
+A6	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1070 1081	atelectasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E20	Medical-Problem:T26 has-Medical-Assertion:T25

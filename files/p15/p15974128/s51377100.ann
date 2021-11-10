@@ -1,0 +1,35 @@
+T1	Medical-Problem 233 264	Moderate to severe cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 346 381	mild pulmonary vascular engorgement
+E2	Medical-Problem:T2
+T3	Medical-Problem 393 413	persistent elevation
+T4	Medical-Anatomy 421 439	left hemidiaphragm
+T5	Medical-Problem 445 468;470 477	associated left basilar opacity
+T6	Medical-Assertion 478 498	likely reflective of
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 499 510	atelectasis
+T8	Medical-Problem 514 541	trace left pleural effusion
+E7	Medical-Problem:T8
+T9	Medical-Problem 560 579	Atelectatic changes
+T10	Medical-Anatomy 596 611	right lung base
+T11	Medical-Assertion 613 615	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 616 628	pneumothorax
+T13	Medical-Problem 666 701	Mild pulmonary vascular engorgement
+E11	Medical-Problem:T13
+T14	Medical-Problem 703 723	Persistent elevation
+T15	Medical-Anatomy 731 735;737 750	left hemidiaphragm
+T16	Medical-Problem 756 785	adjacent left basilar opacity
+E14	Medical-Problem:T16
+T17	Medical-Assertion 787 793	likely
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 794 805	atelectasis
+T19	Medical-Problem 809 814;816 837	trace left pleural effusion
+E16	Medical-Problem:T19
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T17

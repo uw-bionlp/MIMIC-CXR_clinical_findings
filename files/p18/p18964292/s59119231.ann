@@ -1,0 +1,27 @@
+T1	Medical-Assertion 297 299	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 300 326	new focal airspace opacity
+T3	Medical-Assertion 327 336	worrisome
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 342 351	pneumonia
+T5	Lesion-Size 353 358	Small
+T6	Lesion-Anatomy 359 367	biapical
+T7	Lesion-Description 368 375	nodules
+T8	Medical-Assertion 438 440	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 441 457	pleural effusion
+T10	Medical-Problem 461 473	pneumothorax
+T11	Medical-Anatomy 479 484	heart
+T12	Medical-Assertion 488 491	not
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 493 501	enlarged
+T14	Medical-Assertion 561 583	No convincing evidence
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 587 596	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

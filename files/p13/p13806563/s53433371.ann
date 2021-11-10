@@ -1,0 +1,25 @@
+T1	Medical-Problem 184 213	heart appears mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 226 249;251 262	mild congestive changes bilaterally
+E2	Medical-Problem:T2
+T3	Medical-Problem 274 305	somewhat more prominent opacity
+T4	Medical-Anatomy 313 329	right lower lung
+T5	Medical-Assertion 358 377	suspected to be due
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 381 397	low lung volumes
+T7	Medical-Problem 402 406;408 422	mild fluid overload
+T8	Medical-Assertion 428 456	doubt concerning development
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 460 469	pneumonia
+T10	Medical-Assertion 481 483	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 485 501	pleural effusion
+T12	Medical-Problem 505 517	pneumothorax
+T13	Medical-Problem 558 582	mild vascular congestion
+E10	Medical-Problem:T13
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10

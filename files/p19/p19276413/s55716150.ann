@@ -1,0 +1,41 @@
+T1	Medical-Problem 300 322	heart remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 324 357	Mild interstitial pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 383 396	Opacification
+T4	Medical-Anatomy 404 413	left base
+T5	Medical-Assertion 431 442	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 444 455	atelectasis
+T7	Medical-Problem 457 467	aspiration
+T8	Medical-Problem 471 480	pneumonia
+T9	Medical-Assertion 491 493	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 494 506	pneumothorax
+T11	Medical-Problem 650 661	compression
+E9	Medical-Problem:T11
+T12	Medical-Problem 663 692	deformity with vertebra plana
+T13	Medical-Anatomy 707 725	mid thoracic spine
+T14	Medical-Problem 750 769	Cardiac enlargement
+E12	Medical-Problem:T14
+T15	Medical-Problem 774 810	worsening of mild interstitial edema
+E13	Medical-Problem:T15
+T16	Medical-Problem 816 834	Persistent opacity
+T17	Medical-Anatomy 842 851	left base
+T18	Medical-Assertion 852 863	may reflect
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 864 875	atelectasis
+T20	Medical-Problem 880 887;889 897	pleural effusion
+T21	Medical-Problem 910 930	underlying pneumonia
+T22	Medical-Assertion 931 949	cannot be excluded
+A4	Medical-AssertionValue T22 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E18	Medical-Problem:T21 has-Medical-Anatomy:T17 has-Medical-Assertion:T22

@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 328 333	lungs
+T2	Medical-Assertion 379 381	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 382 390;392 411	areas of focal consolidation
+T4	Medical-Problem 413 429	pleural effusion
+T5	Lesion-Description 431 437	masses
+E4	Lesion-Description:T5
+T6	Lesion-Description 442 449	lesions
+E5	Lesion-Description:T6
+T7	Medical-Anatomy 456 467	upper lobes
+T8	Medical-Problem 483 511	paucity of vascular markings
+T9	Medical-Problem 517 536	both diaphragms are
+E8	Medical-Problem:T9
+T10	Medical-Problem 537 543;545 554	mildly flattened
+T11	Medical-Assertion 833 835	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 836 852;854 867	obvious hardware complications
+T13	Lesion-Assertion 885 896	No evidence
+A3	Lesion-AssertionValue T13 absent
+T14	Lesion-Description 900 910	malignancy
+T15	Medical-Problem 914 923	infection
+E12	Medical-Problem:T15
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T14 has-Lesion-Assertion:T13

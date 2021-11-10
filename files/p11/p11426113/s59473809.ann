@@ -1,0 +1,65 @@
+T1	Lesion-Anatomy 448 453;455 460	right hilar
+T2	Lesion-Description 461 465	mass
+T3	Lesion-Anatomy 471 476	hilar
+T4	Lesion-Description 477 492	lymphadenopathy
+T5	Lesion-Count 497 505	multiple
+T6	Lesion-Anatomy 506 519	pleural-based
+T7	Lesion-Description 520 526	masses
+T8	Lesion-Anatomy 632 640	superior
+T9	Lesion-Anatomy 655 665	left hilar
+T10	Lesion-Description 666 670	mass
+T11	Lesion-Anatomy 694 710	right upper lobe
+T12	Lesion-Size-Trend 712 721	unchanged
+A1	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Problem 726 753;755 763	moderate size right pleural effusion
+E12	Medical-Problem:T13
+T14	Medical-Problem 833 865	worsening airspace opacification
+T15	Medical-Anatomy 873 888	right lung base
+T16	Medical-Assertion 895 906	may reflect
+A2	Medical-AssertionValue T16 possible
+T17	Medical-Problem 908 929	worsening atelectasis
+T18	Medical-Problem 935 944	infection
+T19	Medical-Assertion 948 960	not excluded
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Assertion 963 965	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 966 978	pneumothorax
+T22	Medical-Problem 1007 1031	subsegmental atelectasis
+T23	Medical-Anatomy 1039 1054	left lower lobe
+T24	Medical-Problem 1187 1217	Atherosclerotic calcifications
+E20	Medical-Problem:T24
+T25	Medical-Problem 1279 1302	Worsening opacification
+T26	Medical-Anatomy 1310 1325	right lung base
+T27	Medical-Assertion 1332 1343	may reflect
+A5	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1344 1353;1355 1366	increased atelectasis
+T29	Medical-Problem 1372 1381	infection
+T30	Medical-Assertion 1385 1397	not excluded
+A6	Medical-AssertionValue T30 possible
+T31	Medical-Problem 1400 1427;1429 1437	Moderate size right pleural effusion
+E25	Medical-Problem:T31
+T32	Lesion-Size-Trend 1484 1501;1503 1513	Grossly unchanged appearance
+A7	Lesion-Size-TrendValue T32 no-change
+T33	Lesion-Anatomy 1517 1528	right hilar
+T34	Lesion-Description 1529 1533	mass
+T35	Lesion-Count 1538 1546	multiple
+T36	Lesion-Anatomy 1547 1560	pleural-based
+T37	Lesion-Description 1561 1571	metastases
+T38	Medical-Assertion 1574 1576	No
+A8	Medical-AssertionValue T38 absent
+T39	Medical-Problem 1578 1590	pneumothorax
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Anatomy:T6
+E10	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T9 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T12
+E13	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E16	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T25 has-Medical-Anatomy:T26
+E23	Medical-Problem:T28 has-Medical-Anatomy:T26 has-Medical-Assertion:T27
+E24	Medical-Problem:T29 has-Medical-Anatomy:T26 has-Medical-Assertion:T30
+E27	Lesion-Description:T34 has-Lesion-Size-Trend:T32 has-Lesion-Anatomy:T33
+E30	Lesion-Description:T37 has-Lesion-Count:T35 has-Lesion-Anatomy:T36
+E31	Medical-Problem:T39 has-Medical-Assertion:T38

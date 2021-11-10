@@ -1,0 +1,21 @@
+T1	Medical-Problem 288 304	Abnormal contour
+T2	Medical-Anatomy 312 356	mediastinum just inferior to the aortic arch
+T3	Lesion-Anatomy 383 404	right upper lobe lung
+T4	Lesion-Description 405 411	nodule
+T5	Lesion-Anatomy 422 426	lung
+T6	Lesion-Description 427 434	nodules
+T7	Medical-Assertion 483 485	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 486 498	pneumothorax
+T9	Medical-Problem 521 548	small left pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Assertion 560 571	no evidence
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 575 584	pneumonia
+T12	Medical-Problem 589 592	CHF
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10

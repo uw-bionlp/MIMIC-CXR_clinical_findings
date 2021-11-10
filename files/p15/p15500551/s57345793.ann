@@ -1,0 +1,22 @@
+T1	Medical-Problem 257 273;275 282	mildly increased opacity
+T2	Medical-Anatomy 290 306	right lower lung
+T3	Medical-Problem 344 353	Opacities
+T4	Medical-Anatomy 378 408	left lower lung and upper lobe
+T5	Lesion-Assertion 413 416	not
+A1	Lesion-AssertionValue T5 absent
+T6	Medical-Assertion 449 451	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 452 468	pleural effusion
+T8	Medical-Problem 472 484	pneumothorax
+T9	Medical-Problem 616 658	Persistent but improved right base opacity
+E7	Medical-Problem:T9
+T10	Medical-Problem 676 685;687 696	resolving pneumonia
+E8	Medical-Problem:T10
+T11	Medical-Problem 698 732	Left base and upper lobe opacities
+T12	Medical-Assertion 737 758	no longer appreciated
+A3	Medical-AssertionValue T12 absent
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Assertion:T12

@@ -1,0 +1,42 @@
+T1	Medical-Problem 496 513	Ill-defined small
+E1	Medical-Problem:T1
+T2	Lesion-Description 514 531	nodular opacities
+T3	Lesion-Anatomy 557 572	both lung bases
+T4	Medical-Problem 574 586	Hazy opacity
+T5	Medical-Anatomy 598 614	left hemi thorax
+T6	Medical-Assertion 616 623	suggest
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 626 651	layering pleural effusion
+T8	Medical-Assertion 653 655	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 656 661	large
+E7	Medical-Problem:T9
+T10	Medical-Problem 662 674	pneumothorax
+T11	Medical-Assertion 701 703	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 704 731	acute osseous abnormalities
+T13	Medical-Problem 816 837	Bibasilar ill-defined
+E10	Medical-Problem:T13
+T14	Lesion-Size 838 843	small
+T15	Lesion-Description 844 861	nodular opacities
+T16	Medical-Assertion 863 876	worrisome for
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 877 886	infection
+T18	Medical-Problem 891 901	aspiration
+T19	Medical-Assertion 926 938	not excluded
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 944 956	Hazy opacity
+T21	Medical-Anatomy 964 980	left hemi thorax
+T22	Medical-Assertion 982 988	likely
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 991 1012;1014 1022	layering left pleural effusion
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Size-Present:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16
+E15	Medical-Problem:T20 has-Medical-Anatomy:T21
+E17	Medical-Problem:T23 has-Medical-Assertion:T22

@@ -1,0 +1,23 @@
+T1	Medical-Problem 331 351	persistent elevation
+T2	Medical-Anatomy 359 378	right hemidiaphragm
+T3	Medical-Problem 395 405;407 427	persistent mild pulmonary edema
+E3	Medical-Problem:T3
+T4	Medical-Problem 439 460	bibasilar atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Assertion 467 475	probable
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 476 481;483 504	small left pleural effusion
+T7	Medical-Assertion 562 564	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 565 577	pneumothorax
+T9	Medical-Problem 598 625	Stable mild pulmonary edema
+E7	Medical-Problem:T9
+T10	Medical-Problem 630 657	small left pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 663 674	no evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 679 702	new focal consolidation
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

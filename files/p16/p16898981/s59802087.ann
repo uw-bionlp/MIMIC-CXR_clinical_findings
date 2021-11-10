@@ -1,0 +1,24 @@
+T1	Medical-Problem 267 324	Small bilateral pleural effusion, left greater than right
+E1	Medical-Problem:T1
+T2	Medical-Assertion 369 371	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 372 387	pulmonary edema
+T4	Medical-Assertion 403 409	may be
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 410 413;415 428	new consolidation
+T6	Medical-Anatomy 436 451	left lower lobe
+T7	Medical-Assertion 453 459	either
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 460 469	pneumonia
+T9	Medical-Problem 473 484	atelectasis
+T10	Medical-Problem 530 550	heavy calcifications
+T11	Medical-Anatomy 558 564;566 573	mitral annulus
+T12	Medical-Problem 576 604	Granulomatous calcifications
+T13	Medical-Anatomy 626 630	hila
+T14	Medical-Anatomy 635 640;642 652	right upper lobe
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T4 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T4 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T11
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13 has-Medical-Anatomy:T14

@@ -1,0 +1,35 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Medical-Assertion 67 77	Resolution
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 81 96	left lower lobe
+T5	Medical-Problem 97 104	opacity
+E3	Medical-Problem:T5
+T6	Medical-Problem 510 517	opacity
+T7	Medical-Anatomy 526 540	left lung base
+T8	Medical-Assertion 541 553	has resolved
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Assertion 623 625	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 626 642	pleural effusion
+T11	Medical-Problem 646 658	pneumothorax
+T12	Medical-Problem 665 679;681 688	mild bronchial cuffing
+E8	Medical-Problem:T12
+T13	Medical-Assertion 711 714	may
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 720 748	inflammatory airways disease
+T15	Medical-Problem 759 765	asthma
+T16	Medical-Assertion 786 788	No
+A6	Medical-AssertionValue T16 absent
+T17	Medical-Problem 789 818	acute cardiopulmonary process
+T18	Medical-Anatomy 834 838	left
+E12	Medical-Anatomy:T18
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T13
+E11	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,29 @@
+T1	Lesion-Anatomy 307 318	right hilar
+T2	Lesion-Description 319 323	mass
+T3	Medical-Problem 329 351	subsequent atelectasis
+T4	Medical-Anatomy 360 376	right lower lobe
+T5	Medical-Assertion 422 433	most likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 443 465	right pleural effusion
+T7	Medical-Problem 539 557	infectious process
+E6	Medical-Problem:T7
+T8	Medical-Problem 569 583	collapsed lung
+E7	Medical-Problem:T8
+T9	Lesion-Anatomy 601 606	hilar
+T10	Lesion-Description 607 611	mass
+T11	Medical-Problem 621 625	only
+E10	Medical-Problem:T11
+T12	Medical-Problem 626 637	atelectasis
+E11	Medical-Problem:T12
+T13	Medical-Assertion 686 688	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 689 710	left pleural effusion
+T15	Medical-Assertion 721 723	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 724 736	pneumothorax
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

@@ -1,0 +1,31 @@
+T1	Medical-Assertion 29 37	Probable
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 38 65	right middle lobe pneumonia
+T3	Medical-Assertion 67 75	possibly
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 76 86	multifocal
+T5	Medical-Anatomy 103 110	lingula
+T6	Medical-Problem 460 474	hyperinflation
+E4	Medical-Problem:T6
+T7	Medical-Problem 491 495	COPD
+E5	Medical-Problem:T7
+T8	Medical-Problem 498 511;513 526	HETEROGENEOUS OPACIFICATION
+T9	Medical-Anatomy 534 539	RIGHT
+T10	Medical-Anatomy 563 567	LUNG
+T11	Medical-Assertion 571 586	PROBABLY DUE TO
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 588 607	BILATERAL PNEUMONIA
+T13	Medical-Assertion 610 618	Probable
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 619 630	trace right
+E10	Medical-Problem:T14
+T15	Medical-Problem 631 647	pleural effusion
+T16	Medical-Assertion 650 652	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 653 665	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,18 @@
+T1	Medical-Problem 211 240	Heart size is mildly enlarged
+T2	Medical-Anatomy 242 284;286 308	predominantly left ventricle and to lesser extent right ventricle
+T3	Lesion-Anatomy 356 360	hila
+T4	Lesion-Size-Trend 376 382	stable
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Description 480 495	lymphadenopathy
+T6	Lesion-Assertion 500 502	no
+A2	Lesion-AssertionValue T6 absent
+T7	Medical-Assertion 590 592	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 594 610	pleural effusion
+T9	Medical-Problem 614 626	pneumothorax
+T10	Medical-Problem 629 643	Hyperinflation
+E7	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T4 has-Lesion-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7

@@ -1,0 +1,13 @@
+T1	Medical-Problem 431 438;440 458	diffuse airspace opacities
+T2	Medical-Anatomy 459 486	throughout both lung fields
+T3	Medical-Assertion 493 506	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 507 516	pneumonia
+T5	Medical-Problem 525 529	ARDS
+T6	Medical-Assertion 532 534	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 535 549	pneumothoraces
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6

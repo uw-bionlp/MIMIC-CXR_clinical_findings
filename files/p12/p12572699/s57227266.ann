@@ -1,0 +1,39 @@
+T1	Medical-Problem 203 226	lungs are hyperinflated
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 229 238	Calcified
+T3	Lesion-Anatomy 239 249	left hilar
+T4	Lesion-Description 250 261	lymph nodes
+T5	Lesion-Size-Trend 266 275	unchanged
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Characteristic 397 406	Calcified
+T7	Lesion-Description 407 416	granuloma
+T8	Lesion-Anatomy 429 436	lingula
+T9	Lesion-Size-Trend 440 449	unchanged
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Problem 452 474	Minimal patchy opacity
+T11	Medical-Anatomy 486 496	lung bases
+T12	Medical-Assertion 497 503;505 512	likely reflect
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 513 524	atelectasis
+T14	Medical-Assertion 527 529	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 530 549	focal consolidation
+T16	Medical-Problem 551 567	pleural effusion
+T17	Medical-Problem 571 583	pneumothorax
+T18	Medical-Assertion 610 612	no
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 613 630	pneumomediastinum
+T20	Medical-Assertion 661 663	No
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 664 697	acute cardiopulmonary abnormality
+T22	Medical-Problem 709 735	mild bibasilar atelectasis
+E16	Medical-Problem:T22
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T5
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T14
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T21 has-Medical-Assertion:T20

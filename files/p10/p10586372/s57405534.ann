@@ -1,0 +1,24 @@
+T1	Medical-Problem 260 284	Subsegmental atelectasis
+T2	Medical-Anatomy 312 323;325 329	right lower lobe
+T3	Medical-Problem 332 345	Focal opacity
+T4	Medical-Anatomy 357 379	lower lobe posteriorly
+T5	Medical-Anatomy 420 436	right lower lobe
+T6	Medical-Problem 462 478;480 502	associated small right pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Assertion 504 506	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 507 519	pneumothorax
+T9	Medical-Problem 588 616	Posterior lower lobe opacity
+E8	Medical-Problem:T9
+T10	Medical-Anatomy 665 681	right lower lobe
+T11	Medical-Assertion 686 697	may reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 701 719	area of infarction
+T13	Medical-Problem 723 732	infection
+T14	Medical-Problem 735 740;742 764	Small right pleural effusion
+E12	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

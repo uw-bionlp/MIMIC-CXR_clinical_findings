@@ -1,0 +1,35 @@
+T1	Medical-Anatomy 211 216	lungs
+T2	Medical-Problem 222 269	hyperinflated with flattening of the diaphragms
+T3	Medical-Problem 290 298;300 332	Biapical scarring with calcific component
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 366 371	lungs
+T5	Medical-Assertion 377 382	clear
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 386 399	consolidation
+T7	Medical-Anatomy 406 413	cardiac
+T8	Medical-Assertion 425 432	appears
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 433 450	slightly enlarged
+T10	Medical-Problem 481 498	mild cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Problem 501 533;535 550	Posterior left seventh and ninth rib deformities
+E9	Medical-Problem:T11
+T12	Medical-Assertion 551 561	suggesting
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 562 577	prior fractures
+T14	Medical-Problem 605 619	Hyperinflation
+E11	Medical-Problem:T14
+T15	Medical-Assertion 620 639	raising possibility
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 643 647	COPD
+T17	Medical-Assertion 650 652	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 653 665;667 696	superimposed acute cardiopulmonary process
+T19	Medical-Problem 699 716	Mild cardiomegaly
+E14	Medical-Problem:T19
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

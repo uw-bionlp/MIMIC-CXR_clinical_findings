@@ -1,0 +1,16 @@
+T1	Medical-Anatomy 295 314	right pneumonectomy
+T2	Medical-Problem 339 363;365 391	interval increase of the amount of pleural effusion
+T3	Medical-Problem 396 436	decreased in the amount of air component
+T4	Medical-Anatomy 440 451	Right chest
+E4	Medical-Anatomy:T4
+T5	Medical-Assertion 549 551	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 552 564	pneumothorax
+T7	Medical-Problem 568 584	pleural effusion
+T8	Medical-Anatomy 593 597	left
+T9	Medical-Problem 609 625	mild engorgement
+E8	Medical-Problem:T9
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Anatomy:T8

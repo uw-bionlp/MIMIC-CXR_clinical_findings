@@ -1,0 +1,30 @@
+T1	Medical-Problem 318 359	cardiac silhouette is moderately enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 397 407	Effacement
+T3	Medical-Problem 412 421	elevation
+T4	Medical-Anatomy 429 447;449 456	left hemidiaphragm contour
+T5	Medical-Assertion 460 473	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 474 490	pleural effusion
+T7	Medical-Assertion 494 502	possible
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 503 515;517 530	retrocardiac consolidation
+T9	Medical-Assertion 600 602	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 603 615	pneumothorax
+T11	Medical-Problem 637 647	Effacement
+T12	Medical-Anatomy 655 673	left hemidiaphragm
+T13	Medical-Assertion 674 689	could be due to
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 690 698	effusion
+T15	Medical-Problem 701 714	consolidation
+T16	Medical-Problem 720 731	combination
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T13

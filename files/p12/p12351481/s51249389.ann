@@ -1,0 +1,24 @@
+T1	Medical-Problem 273 290;292 326	bilateral pleural effusions, left greater than right
+E1	Medical-Problem:T1
+T2	Medical-Problem 333 355	associated atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 359 386	Heterogeneous consolidation
+T4	Medical-Anatomy 394 422	left mid and lower lung lobe
+T5	Medical-Assertion 454 468	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 469 488	worsening pneumonia
+T7	Medical-Assertion 533 535	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 536 548	pneumothorax
+T9	Medical-Problem 573 592	Worsened pneumonia,
+T10	Medical-Anatomy 593 602	left lung
+T11	Medical-Problem 607 641;643 654	persistent and recurrent bibasilar atelectasis
+T12	Medical-Problem 669 687	chronic aspiration
+T13	Medical-Problem 736 798	Unchanged bilateral pleural effusions, left greater than right
+E11	Medical-Problem:T13
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10

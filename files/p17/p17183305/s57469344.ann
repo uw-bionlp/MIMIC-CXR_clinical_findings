@@ -1,0 +1,51 @@
+T1	Medical-Problem 248 257	Deviation
+T2	Medical-Anatomy 265 285	trachea to the right
+T3	Medical-Assertion 324 337	likely caused
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 344 360	enlarged thyroid
+T5	Medical-Problem 363 389	Position other abnormality
+T6	Medical-Anatomy 397 402;404 425	level of the right shoulder
+T7	Medical-Anatomy 432 447	lung parenchyma
+T8	Medical-Problem 454 505;507 531	rather centralized and right lower lobe predominant extensive bronchiectasis
+T9	Medical-Problem 537 571	signs of bronchial wall thickening
+T10	Medical-Problem 573 583;585 606	Coexisting ill-defined opacities
+T11	Medical-Anatomy 610 636	more peripheral lung zones
+T12	Medical-Assertion 637 650	could reflect
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 651 663	was plugging
+T14	Medical-Problem 668 699	peribronchial foci of infection
+T15	Medical-Problem 702 726	Typical signs suggesting
+E13	Medical-Problem:T15
+T16	Medical-Problem 727 731	ABPA
+T17	Medical-Assertion 736 739;741 748	not visible
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Assertion 751 753	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 754 771	pleural effusions
+T20	Medical-Problem 816 836	severe overinflation
+E16	Medical-Problem:T20
+T21	Medical-Problem 854 877	chronic airways disease
+E17	Medical-Problem:T21
+T22	Lesion-Size 915 919	1 cm
+T23	Lesion-Anatomy 920 924	lung
+T24	Lesion-Description 925 931	nodule
+T25	Medical-Problem 1050 1058	blunting
+T26	Medical-Anatomy 1066 1073	cardiac
+T27	Medical-Problem 1094 1110	lingular opacity
+E23	Medical-Problem:T27
+T28	Medical-Assertion 1112 1118;1120 1130	likely reflecting
+A5	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1131 1140	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E14	Medical-Problem:T16 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E20	Lesion-Description:T24 has-Lesion-Size-Present:T22 has-Lesion-Anatomy:T23
+E21	Medical-Problem:T25 has-Medical-Anatomy:T26
+E24	Medical-Problem:T29 has-Medical-Assertion:T28

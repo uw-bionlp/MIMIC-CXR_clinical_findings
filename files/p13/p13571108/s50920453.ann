@@ -1,0 +1,24 @@
+T1	Medical-Problem 33 52	Ill-defined opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 101 111;113 117	concerning  for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 118 127	pneumonia
+T4	Lesion-Characteristic 428 439	ill-defined
+T5	Lesion-Description 440 447	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 448 455	opacity
+T7	Lesion-Characteristic 512 528	not seen clearly
+T8	Medical-Assertion 657 659	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 660 677	pleural effusions
+T10	Medical-Problem 681 693	pneumothorax
+T11	Medical-Problem 724 743	Ill-defined opacity
+E9	Medical-Problem:T11
+T12	Medical-Assertion 792 802;804 807	concerning for
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 808 817	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

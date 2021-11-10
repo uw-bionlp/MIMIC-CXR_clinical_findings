@@ -1,0 +1,26 @@
+T1	Medical-Problem 363 369	extent
+E1	Medical-Problem:T1
+T2	Medical-Problem 373 401	right upper lobe atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 472 483;485 497	Very coarse reticulation
+T4	Medical-Anatomy 505 521	right upper lobe
+T5	Lesion-Description 548 560;562 567	lymphangitic tumor
+E5	Lesion-Description:T5
+T6	Lesion-Characteristic 586 597	obstructing
+T7	Lesion-Anatomy 598 609	right hilar
+T8	Lesion-Description 610 614	mass
+T9	Medical-Anatomy 656 665	left lung
+T10	Medical-Problem 672 704	diffuse interstitial abnormality
+T11	Medical-Assertion 705 713;715 721	could be due to
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 722 737	volume overload
+T13	Medical-Problem 764 780	severe emphysema
+T14	Medical-Assertion 807 809	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 810 822	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Anatomy:T9
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

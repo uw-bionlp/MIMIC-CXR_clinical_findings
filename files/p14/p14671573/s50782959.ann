@@ -1,0 +1,41 @@
+T1	Medical-Problem 203 255	Moderate to severe enlargement of cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 321 350	atherosclerotic calcification
+T3	Medical-Anatomy 359 373	thoracic aorta
+T4	Medical-Problem 386 416	hilar contours remain enlarged
+E4	Medical-Problem:T4
+T5	Medical-Problem 423 432;434 442	perihilar haziness
+E5	Medical-Problem:T5
+T6	Medical-Problem 447 470	vascular indistinctness
+E6	Medical-Problem:T6
+T7	Medical-Problem 487 507	mild pulmonary edema
+E7	Medical-Problem:T7
+T8	Medical-Problem 617 635	More focal opacity
+T9	Medical-Anatomy 647 657;659 687	peripheral aspect of the left lung base
+T10	Medical-Problem 745 754	infection
+T11	Medical-Problem 758 768	aspiration
+T12	Medical-Assertion 772 784	not excluded
+A1	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 787 789	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 790 812	large pleural effusion
+T15	Medical-Problem 817 829	pneumothorax
+T16	Medical-Assertion 855 857	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 858 883	free subdiaphragmatic air
+T18	Medical-Problem 964 984	Mild pulmonary edema
+E15	Medical-Problem:T18
+T19	Medical-Problem 1062 1080	More focal opacity
+T20	Medical-Anatomy 1092 1113;1115 1124	periphery of the left lung base
+T21	Medical-Problem 1222 1239	area of infection
+T22	Medical-Problem 1243 1253	aspiration
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9 has-Medical-Assertion:T12
+E11	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T21 has-Medical-Anatomy:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T20

@@ -1,0 +1,26 @@
+T1	Medical-Assertion 331 333	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 335 347	pneumothorax
+T3	Medical-Problem 390 402	hazy opacity
+T4	Medical-Anatomy 406 421	both lung bases
+T5	Medical-Assertion 437 447	suggesting
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 448 468	interval improvement
+T7	Medical-Problem 472 491	bilateral effusions
+T8	Medical-Problem 494 512;514 521	Some residual hazy opacity
+T9	Medical-Anatomy 538 543	right
+T10	Medical-Problem 561 584	residual small effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 588 610	Minimal patchy opacity
+T12	Medical-Anatomy 618 628	right base
+T13	Medical-Problem 646 670	Focal pleural thickening
+T14	Medical-Anatomy 681 722	right upper chest wall near the lung apex
+T15	Medical-Problem 838 865	bilateral pleural effusions
+E13	Medical-Problem:T15
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14

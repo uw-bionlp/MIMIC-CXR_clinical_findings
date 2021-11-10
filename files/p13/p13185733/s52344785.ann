@@ -1,0 +1,25 @@
+T1	Medical-Assertion 232 243	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 247 271	congestive heart failure
+T3	Medical-Problem 275 290	pulmonary edema
+T4	Lesion-Anatomy 293 303	Right lung
+T5	Lesion-Description 305 311	nodule
+T6	Lesion-Size 313 318	large
+T7	Lesion-Anatomy 319 328	left lung
+T8	Lesion-Description 329 333	mass
+T9	Medical-Problem 338 372	extensive left pleural abnormality
+E8	Medical-Problem:T9
+T10	Medical-Problem 419 449;451 469	increase in the extent of left pleural thickening
+E9	Medical-Problem:T10
+T11	Medical-Problem 474 496	small pleural effusion
+E10	Medical-Problem:T11
+T12	Medical-Problem 509 514;516 536	Heart size mildly enlarged
+E11	Medical-Problem:T12
+T13	Medical-Assertion 641 643	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 644 656	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

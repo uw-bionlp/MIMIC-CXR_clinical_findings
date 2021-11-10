@@ -1,0 +1,14 @@
+T1	Lesion-Size 210 215	large
+T2	Lesion-Anatomy 216 238	left-sided mediastinal
+T3	Lesion-Description 239 243	mass
+T4	Medical-Problem 245 263;265 273	Small left pleural effusion
+E4	Medical-Problem:T4
+T5	Medical-Assertion 297 299	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 300 312	pneumothorax
+T7	Medical-Assertion 345 347	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 348 375	acute osseous abnormalities
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

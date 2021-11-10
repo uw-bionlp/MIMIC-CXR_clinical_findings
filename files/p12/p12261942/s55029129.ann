@@ -1,0 +1,18 @@
+T1	Medical-Problem 298 309	atelectasis
+T2	Medical-Anatomy 317 327	lung bases
+T3	Medical-Problem 347 365;367 380	more focal area of consolidation
+T4	Medical-Anatomy 388 397	left base
+T5	Medical-Problem 402 423	developing infiltrate
+T6	Medical-Assertion 437 443;445 456	cannot be excluded
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 468 470	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 471 492	overt pulmonary edema
+T9	Medical-Assertion 505 507	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 508 522	pneumothoraces
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

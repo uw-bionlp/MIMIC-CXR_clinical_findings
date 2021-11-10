@@ -1,0 +1,22 @@
+T1	Medical-Assertion 168 170	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 171 178;180 192	visible pneumothorax
+T3	Medical-Problem 238 255;257 288	Small-to-moderate layering right pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 394 414;416 420	Distention of azygos vein
+E3	Medical-Problem:T4
+T5	Medical-Assertion 421 432	may reflect
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 433 471	increased volume status of the patient
+T7	Medical-Assertion 486 494;496 504	no overt evidence
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 526 555	New left retrocardiac opacity
+E5	Medical-Problem:T8
+T9	Medical-Assertion 556 573	probably reflects
+A4	Medical-AssertionValue T9 possible
+T10	Medical-Problem 575 586	atelectasis
+T11	Medical-Problem 609 636	small left pleural effusion
+E7	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9

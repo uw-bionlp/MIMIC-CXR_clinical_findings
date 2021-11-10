@@ -1,0 +1,30 @@
+T1	Lesion-Anatomy 33 44	Right hilar
+T2	Lesion-Description 45 52	opacity
+T3	Medical-Problem 483 505	poorly defined opacity
+T4	Medical-Anatomy 513 535;537 542	right hilum/infrahilar level
+T5	Medical-Assertion 553 555	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 556 581	corresponding abnormality
+T7	Lesion-Assertion 618 632	concerning for
+A2	Lesion-AssertionValue T7 possible
+T8	Lesion-Description 635 639	mass
+T9	Medical-Assertion 642 644	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 645 661	pleural effusion
+T11	Medical-Problem 665 677	pneumothorax
+T12	Medical-Assertion 744 746	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 747 765	bony abnormalities
+T14	Medical-Problem 793 798	Right
+E10	Medical-Problem:T14
+T15	Lesion-Assertion 813 823	concerning
+A5	Lesion-AssertionValue T15 possible
+T16	Lesion-Description 828 832	mass
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Lesion-Description:T16 has-Lesion-Assertion:T15

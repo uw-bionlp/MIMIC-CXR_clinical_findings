@@ -1,0 +1,16 @@
+T1	Medical-Problem 262 296	Cardiac size is minimally enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 351 366	Faint opacities
+T3	Medical-Anatomy 374 397	lower lobes bilaterally
+T4	Medical-Anatomy 409 420;422 426	right upper lobe
+T5	Medical-Assertion 427 442	could represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 443 454	atelectasis
+T7	Medical-Problem 462 472	aspiration
+T8	Medical-Assertion 484 494	no evident
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 496 508	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

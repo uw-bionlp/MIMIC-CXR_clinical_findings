@@ -1,0 +1,42 @@
+T1	Medical-Problem 302 331	heart remains mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 338 373	dense mitral annular calcifications
+E2	Medical-Problem:T2
+T3	Medical-Problem 443 458	mild tortuosity
+T4	Medical-Anatomy 466 480	thoracic aorta
+T5	Medical-Problem 490 510	Lung volumes are low
+E5	Medical-Problem:T5
+T6	Medical-Problem 524 555;557 567	crowding of the bronchovascular structures
+E6	Medical-Problem:T6
+T7	Medical-Assertion 573 581	possible
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 582 597	mild congestion
+T9	Medical-Assertion 602 604	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 605 626	overt pulmonary edema
+T11	Medical-Problem 630 653	Minimal streaky opacity
+T12	Medical-Anatomy 661 676	right lung base
+T13	Medical-Assertion 677 692	likely reflects
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 693 704	atelectasis
+T15	Medical-Assertion 708 710	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 711 730	focal consolidation
+T17	Medical-Problem 732 748	pleural effusion
+T18	Medical-Problem 752 764	pneumothorax
+T19	Medical-Problem 854 870	Low lung volumes
+E15	Medical-Problem:T19
+T20	Medical-Problem 876 904	patchy right basilar opacity
+E16	Medical-Problem:T20
+T21	Medical-Assertion 906 912	likely
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 913 924	atelectasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T15
+E17	Medical-Problem:T22 has-Medical-Assertion:T21

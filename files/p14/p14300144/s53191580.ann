@@ -1,0 +1,33 @@
+T1	Medical-Anatomy 359 377	cardiac silhouette
+T2	Medical-Problem 402 420	minimally enlarged
+T3	Medical-Anatomy 490 511	pulmonary vascularity
+T4	Medical-Assertion 515 518	not
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 519 527	engorged
+T6	Medical-Problem 530 534;536 551	Lung volumes are low
+E5	Medical-Problem:T6
+T7	Medical-Problem 558 585	minimal atelectatic changes
+T8	Medical-Anatomy 599 609	lung bases
+T9	Medical-Assertion 612 614	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 616 635	focal consolidation
+T11	Medical-Problem 637 653	pleural effusion
+T12	Medical-Problem 657 669	pneumothorax
+T13	Medical-Assertion 694 696	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 697 724	acute osseous abnormalities
+T15	Medical-Problem 744 760	Low lung volumes
+E12	Medical-Problem:T15
+T16	Medical-Problem 766 792	mild bibasilar atelectasis
+E13	Medical-Problem:T16
+T17	Medical-Assertion 795 806	No evidence
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 811 820;822 827	pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

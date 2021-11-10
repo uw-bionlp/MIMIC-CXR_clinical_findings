@@ -1,0 +1,16 @@
+T1	Medical-Problem 211 238	Small left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 332 334	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 335 347	pneumothorax
+T4	Medical-Problem 349 355;357 381	Coarse interstitial abnormality
+T5	Medical-Anatomy 389 414	right mid lower lung zone
+T6	Lesion-Assertion 452 467	attributable to
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Characteristic 468 494	lymphangitic dissemination
+T8	Lesion-Description 498 507	carcinoma
+T9	Medical-Problem 509 514;516 538	Small right pleural effusion
+E7	Medical-Problem:T9
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7

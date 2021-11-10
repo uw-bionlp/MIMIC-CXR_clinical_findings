@@ -1,0 +1,35 @@
+T1	Medical-Assertion 391 393	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 394 418	right-sided pneumothorax
+T3	Medical-Problem 430 458;460 467	discrepancy between the lung volumes
+E2	Medical-Problem:T3
+T4	Medical-Problem 479 501	airspace opacification
+T5	Medical-Anatomy 514 534;536 552	medial aspect of the right lower lobe
+T6	Medical-Problem 558 569	obscuration
+T7	Medical-Anatomy 577 604	right diaphragmatic pleural
+T8	Medical-Problem 620 664	left costophrenic sulcus appears fairly deep
+E7	Medical-Problem:T8
+T9	Medical-Assertion 716 718	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 719 737	basal pneumothorax
+T11	Medical-Problem 775 794	Dense opacification
+T12	Medical-Anatomy 802 817	left lower lobe
+T13	Medical-Assertion 835 843	probably
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 844 852	collapse
+T15	Medical-Problem 855 872	Pleural effusions
+T16	Medical-Assertion 877 883	likely
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 997 1035	Worsening severe bibasilar atelectasis
+E13	Medical-Problem:T17
+T18	Medical-Assertion 1085 1093	Probable
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1094 1111	pleural effusions
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

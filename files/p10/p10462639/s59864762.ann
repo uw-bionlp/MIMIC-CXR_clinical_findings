@@ -1,0 +1,43 @@
+T1	Medical-Problem 33 51	linear atelectasis
+T2	Medical-Anatomy 55 69	right mid lung
+T3	Medical-Problem 85 99	linear opacity
+T4	Medical-Anatomy 109 123	left lung base
+T5	Medical-Assertion 132 138	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 139 150	atelectasis
+T7	Medical-Assertion 152 156	less
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 164 174	aspiration
+T9	Medical-Problem 465 487	plate-like atelectasis
+T10	Medical-Anatomy 495 505	right lung
+T11	Medical-Assertion 508 510	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Assertion 519 529	suggesting
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 530 540;542 551	aspiration pneumonia
+T14	Medical-Problem 610 617;619 629	Minimal tortuosity
+T15	Medical-Anatomy 637 645	thoracic
+T16	Medical-Assertion 654 656	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 657 666	pulmonary
+E12	Medical-Problem:T17
+T18	Medical-Problem 667 672	edema
+T19	Medical-Assertion 675 677	No
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 678 685	pleural
+E14	Medical-Problem:T20
+T21	Medical-Problem 686 695	effusions
+T22	Medical-Problem 719 727	fracture
+T23	Medical-Anatomy 735 748	right humerus
+T24	Medical-Assertion 752 772	not displayed on the
+A7	Medical-AssertionValue T24 absent
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T16
+E15	Medical-Problem:T21 has-Medical-Assertion:T19
+E16	Medical-Problem:T22 has-Medical-Anatomy:T23 has-Medical-Assertion:T24

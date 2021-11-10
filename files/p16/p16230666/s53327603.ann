@@ -1,0 +1,61 @@
+T1	Medical-Assertion 39 41	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 42 64	displaced rib fracture
+T3	Medical-Problem 71 98	Indistinct airspace opacity
+T4	Medical-Anatomy 106 121	right lung base
+T5	Medical-Assertion 122 139	may be related to
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 142 153	atelectasis
+T7	Medical-Problem 159 175	low lung volumes
+T8	Medical-Problem 179 198	early consolidation
+T9	Medical-Problem 577 601	bronchovascular crowding
+E7	Medical-Problem:T9
+T10	Medical-Problem 606 628;630 641	bibasilar subsegmental atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Problem 644 663	Indistinct airspace
+E9	Medical-Problem:T11
+T12	Medical-Problem 664 673	opacities
+E10	Medical-Problem:T12
+T13	Medical-Anatomy 681 696	right lung base
+T14	Medical-Assertion 697 700;702 711	may represent
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 712 723	atelectasis
+T16	Medical-Problem 735 751	low lung volumes
+T17	Medical-Problem 755 766;768 781	early focal consolidation
+T18	Medical-Assertion 793 795	no
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 796 812	pleural effusion
+T20	Medical-Problem 814 829	pulmonary edema
+T21	Medical-Problem 831 843	pneumothorax
+T22	Medical-Problem 849 871	displaced rib fracture
+T23	Medical-Assertion 956 958	No
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 959 968	displaced
+E19	Medical-Problem:T24
+T25	Medical-Problem 969 981	rib fracture
+T26	Medical-Problem 987 1006	Indistinct airspace
+E21	Medical-Problem:T26
+T27	Medical-Problem 1007 1014	opacity
+T28	Medical-Anatomy 1022 1037	right lung base
+T29	Medical-Assertion 1038 1055	may be related to
+A6	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1057 1068	atelectasis
+T31	Medical-Problem 1074 1090	low lung volumes
+T32	Medical-Problem 1094 1113	early consolidation
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T18
+E18	Medical-Problem:T22 has-Medical-Assertion:T18
+E20	Medical-Problem:T25 has-Medical-Assertion:T23
+E22	Medical-Problem:T27 has-Medical-Anatomy:T28
+E24	Medical-Problem:T30 has-Medical-Anatomy:T28 has-Medical-Assertion:T29
+E25	Medical-Problem:T31 has-Medical-Assertion:T29
+E26	Medical-Problem:T32 has-Medical-Anatomy:T28 has-Medical-Assertion:T29

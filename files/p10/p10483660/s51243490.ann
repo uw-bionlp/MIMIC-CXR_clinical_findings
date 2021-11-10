@@ -1,0 +1,19 @@
+T1	Medical-Problem 279 334	Relatively symmetric widespread pulmonary opacification
+E1	Medical-Problem:T1
+T2	Medical-Problem 365 384	Severe cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 389 428;430 448	marked pulmonary artery and mediastinal venous engorgement
+E3	Medical-Problem:T3
+T4	Medical-Problem 486 506	concurrent pneumonia
+T5	Medical-Assertion 508 526	cannot be excluded
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 528 550	cardiac decompensation
+T7	Medical-Assertion 551 571	could be responsible
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 601 642	Trachea is deviated markedly to the right
+E6	Medical-Problem:T8
+T9	Lesion-Description 654 658	mass
+T10	Lesion-Anatomy 666 674;676 681	thoracic inlet
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T10

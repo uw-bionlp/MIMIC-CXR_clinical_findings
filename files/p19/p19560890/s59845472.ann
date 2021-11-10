@@ -1,0 +1,17 @@
+T1	Medical-Assertion 289 291	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 292 308	pleural effusion
+T3	Medical-Problem 312 324	pneumothorax
+T4	Medical-Problem 353 368	Vague sclerosis
+T5	Medical-Anatomy 379 414;416 426	anterior lateral course of the left second rib
+T6	Medical-Assertion 427 439	may indicate
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 442 470	prior non-displaced fracture
+T8	Medical-Assertion 537 548	No evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 552 581	acute cardiopulmonary disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

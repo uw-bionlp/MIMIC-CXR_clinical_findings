@@ -1,0 +1,63 @@
+T1	Medical-Assertion 30 32	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 33 68	acute cardiopulmonary abnormality.4
+T3	Lesion-Description 72 79	nodular
+E2	Lesion-Description:T3
+T4	Lesion-Description 80 87	opacity
+T5	Lesion-Anatomy 110 126	right upper lobe
+T6	Medical-Assertion 133 138	could
+A2	Medical-AssertionValue T6 possible
+T7	Lesion-Characteristic 177 181	true
+T8	Lesion-Anatomy 184 193	pulmonary
+T9	Lesion-Description 194 200	nodule
+T10	Medical-Problem 635 647	cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Problem 674 682	tortuous
+E9	Medical-Problem:T11
+T12	Medical-Anatomy 685 690	Hilar
+E10	Medical-Anatomy:T12
+T13	Medical-Assertion 745 748	not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 749 757	engorged
+T15	Medical-Problem 760 767;769 780	Minimal atelectasis
+T16	Medical-Anatomy 796 806	lung bases
+T17	Medical-Assertion 807 814	without
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 815 834	focal consolidation
+T19	Medical-Assertion 837 839	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 840 847;849 857	pleural effusion
+T21	Medical-Problem 861 873	pneumothorax
+T22	Lesion-Size 887 891	4 mm
+T23	Lesion-Description 892 899	nodular
+T24	Medical-Problem 900 907	opacity
+T25	Medical-Anatomy 927 943	right upper lobe
+T26	Medical-Assertion 946 948	No
+A6	Medical-AssertionValue T26 absent
+T27	Medical-Problem 949 962	acute osseous
+E21	Medical-Problem:T27
+T28	Medical-Problem 963 976	abnormalities
+T29	Medical-Assertion 1014 1016	No
+A7	Medical-AssertionValue T29 absent
+T30	Medical-Problem 1017 1038	acute cardiopulmonary
+E23	Medical-Problem:T30
+T31	Medical-Problem 1039 1050	abnormality
+T32	Lesion-Description 1061 1068	nodular
+E25	Lesion-Description:T32
+T33	Lesion-Description 1069 1076	opacity
+T34	Lesion-Anatomy 1097 1113	right upper lobe
+T35	Lesion-Assertion 1121 1126	could
+A8	Lesion-AssertionValue T35 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E7	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T19
+E18	Lesion-Description:T23 has-Lesion-Size-Present:T22
+E19	Medical-Problem:T24 has-Medical-Anatomy:T25
+E22	Medical-Problem:T28 has-Medical-Assertion:T26
+E24	Medical-Problem:T31 has-Medical-Assertion:T29
+E26	Lesion-Description:T33 has-Lesion-Anatomy:T34

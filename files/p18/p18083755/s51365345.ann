@@ -1,0 +1,29 @@
+T1	Lesion-Anatomy 278 294	Right upper lobe
+T2	Lesion-Description 295 301	nodule
+T3	Lesion-Assertion 305 322	no longer visible
+A1	Lesion-AssertionValue T3 absent
+T4	Medical-Problem 324 341	Band-like opacity
+T5	Medical-Anatomy 351 368	right middle lobe
+T6	Medical-Problem 407 415	Fullness
+E5	Medical-Problem:T6
+T7	Medical-Anatomy 456 461	Lungs
+T8	Medical-Assertion 503 510	without
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 511 527	pleural effusion
+T10	Medical-Problem 531 543	pneumothorax
+T11	Medical-Assertion 592 594	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 595 611	bony abnormality
+T13	Medical-Problem 633 657	Right upper lobe opacity
+T14	Medical-Assertion 661 678	no longer visible
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Assertion 685 704	Interval resolution
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 708 730	right pleural effusion
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

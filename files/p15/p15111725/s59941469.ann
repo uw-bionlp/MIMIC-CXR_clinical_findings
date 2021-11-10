@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 610 620	right lung
+T2	Medical-Problem 629 642	low in volume
+T3	Medical-Problem 648 655;657 666	streaky opacities
+T4	Medical-Anatomy 674 678	base
+T5	Medical-Assertion 679 692	suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 693 704	atelectasis
+T7	Medical-Problem 708 716	scarring
+T8	Medical-Problem 718 732;734 743	More scattered opacities
+T9	Medical-Anatomy 759 768	left lung
+T10	Medical-Assertion 823 840	either reflecting
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 841 852	atelectasis
+T12	Medical-Problem 856 876	aspiration pneumonia
+T13	Medical-Assertion 912 914	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 915 927	pneumothorax
+T15	Medical-Problem 931 954	large pleural effusions
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

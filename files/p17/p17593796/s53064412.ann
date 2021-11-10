@@ -1,0 +1,18 @@
+T1	Medical-Problem 283 312	Left-sided pleural thickening
+E1	Medical-Problem:T1
+T2	Medical-Problem 317 325	effusion
+E2	Medical-Problem:T2
+T3	Medical-Assertion 366 372	can be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 373 400	active pleural inflammation
+T5	Lesion-Characteristic 403 413	Widespread
+T6	Lesion-Description 414 431	nodular opacities
+T7	Lesion-Size-Trend 631 639;641 649	interval decrease
+A2	Lesion-Size-TrendValue T7 decreasing
+T8	Lesion-Characteristic 657 667	widespread
+T9	Lesion-Description 668 675	nodular
+E7	Lesion-Description:T9
+T10	Lesion-Description 676 685	opacities
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5
+E8	Lesion-Description:T10 has-Lesion-Size-Trend:T7 has-Lesion-Characteristic:T8

@@ -1,0 +1,30 @@
+T1	Medical-Problem 169 198	heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 287 314	Ill-defined streaky opacity
+T3	Medical-Anatomy 323 339	right lower lobe
+T4	Medical-Assertion 379 392	could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 397 416	area of atelectasis
+T6	Medical-Assertion 428 430	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 431 443	pneumothorax
+T8	Medical-Problem 447 463	pleural effusion
+T9	Medical-Assertion 477 479	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 480 507	acute osseous abnormalities
+T11	Medical-Problem 527 549	Minimal patchy opacity
+T12	Medical-Anatomy 557 573	right lower lobe
+T13	Medical-Assertion 574 585	may reflect
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 589 596;598 609	area of atelectasis
+T15	Medical-Problem 612 621	Infection
+T16	Medical-Assertion 622 640	cannot be excluded
+A5	Medical-AssertionValue T16 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T16

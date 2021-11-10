@@ -1,0 +1,17 @@
+T1	Medical-Problem 556 578;580 588	expected postoperative widening
+T2	Medical-Anatomy 596 628	cardiac and mediastinal contours
+T3	Medical-Problem 641 657;659 668	bibasilar patchy opacities
+E3	Medical-Problem:T3
+T4	Medical-Assertion 673 679	likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 680 729	small layering effusions, right greater than left
+T6	Medical-Problem 755 788	resolving mild interstitial edema
+E5	Medical-Problem:T6
+T7	Medical-Assertion 791 793	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 794 806	pneumothorax
+T9	Medical-Problem 825 848	Lung volumes remain low
+E7	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

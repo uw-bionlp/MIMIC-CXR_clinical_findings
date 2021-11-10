@@ -1,0 +1,23 @@
+T1	Medical-Problem 167 187	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 297 303;305 312	patchy opacity
+T3	Medical-Anatomy 327 345	right heart border
+T4	Medical-Assertion 347 366	probably reflecting
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 367 373;375 388	slight opacification
+T6	Medical-Anatomy 396 413	right middle lobe
+T7	Medical-Anatomy 502 507	Right
+T8	Medical-Problem 520 527	opacity
+T9	Medical-Assertion 529 544	probably due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 545 562	minor atelectasis
+T11	Medical-Problem 567 575	scarring
+T12	Medical-Problem 589 607	infectious process
+T13	Medical-Assertion 608 626	cannot be excluded
+A3	Medical-AssertionValue T13 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T13

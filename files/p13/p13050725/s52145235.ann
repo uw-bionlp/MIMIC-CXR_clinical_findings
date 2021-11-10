@@ -1,0 +1,22 @@
+T1	Medical-Problem 325 330;332 354	Large areas of opacification
+T2	Medical-Anatomy 369 379	right lung
+T3	Medical-Problem 403 422	Transient worsening
+T4	Medical-Anatomy 455 464	left lung
+T5	Medical-Assertion 469 484	probably due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 485 500	pulmonary edema
+T7	Medical-Problem 507 527	right lung component
+E6	Medical-Problem:T7
+T8	Medical-Problem 623 638	pulmonary edema
+E7	Medical-Problem:T8
+T9	Medical-Problem 734 778	tortuous or dilated ascending thoracic aorta
+E8	Medical-Problem:T9
+T10	Medical-Problem 783 802	Pleural effusion is
+E9	Medical-Problem:T10
+T11	Medical-Assertion 828 830	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 831 843	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

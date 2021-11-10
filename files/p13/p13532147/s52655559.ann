@@ -1,0 +1,25 @@
+T1	Medical-Problem 206 228	Ground-glass opacities
+T2	Medical-Anatomy 236 272	upper lobes, left greater than right
+T3	Medical-Anatomy 274 281	lingula
+T4	Medical-Anatomy 287 302	left lower lobe
+T5	Medical-Assertion 354 356	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 357 360;362 380	new lung abnormalities
+T7	Medical-Problem 383 415	Mild biapical pleural thickening
+E6	Medical-Problem:T7
+T8	Medical-Assertion 441 443	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 444 456	pneumothorax
+T10	Medical-Problem 460 476	pleural effusion
+T11	Medical-Problem 509 563	cardiomediastinum is slightly shifted towards the left
+E9	Medical-Problem:T11
+T12	Medical-Problem 591 618	Stable chronic lung disease
+E10	Medical-Problem:T12
+T13	Medical-Assertion 621 623	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 624 648	acute lung abnormalities
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

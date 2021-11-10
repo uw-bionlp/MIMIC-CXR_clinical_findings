@@ -1,0 +1,20 @@
+T1	Medical-Problem 85 112	Right middle lobe pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Problem 181 201	Severe consolidation
+T3	Medical-Anatomy 209 237	right middle and lower lobes
+T4	Medical-Anatomy 268 327	superior segment of the right lower or the right upper lobe
+T5	Medical-Assertion 328 335	suggest
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 337 356	recurrent pneumonia
+T7	Medical-Problem 359 380	Bronchial obstruction
+T8	Medical-Assertion 381 404	could be playing a role
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 450 452	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 453 465	pneumothorax
+T11	Medical-Problem 473 486;488 496	right pleural effusion
+E8	Medical-Problem:T11
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

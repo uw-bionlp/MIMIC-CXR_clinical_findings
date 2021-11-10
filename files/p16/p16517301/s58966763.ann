@@ -1,0 +1,28 @@
+T1	Lesion-Assertion 29 31	No
+A1	Lesion-AssertionValue T1 absent
+T2	Lesion-Description 32 38	nodule
+T3	Lesion-Description 42 46	mass
+T4	Medical-Problem 655 664	opacities
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 668 677	left base
+T6	Medical-Assertion 678 692	likely reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 693 717	subsegmental atelectasis
+T8	Medical-Assertion 816 832	without evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 836 853	pleural effusions
+T10	Medical-Problem 855 883	focal airspace consolidation
+T11	Medical-Problem 888 900	pneumothorax
+T12	Medical-Problem 922 953	slightly less vascular markings
+T13	Medical-Anatomy 961 966;968 1001	upper lungs relative to the lower lungs
+T14	Medical-Assertion 1008 1016	suggests
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1019 1042;1044 1053	component of underlying emphysema
+E1	Lesion-Description:T2 has-Lesion-Assertion:T1
+E2	Lesion-Description:T3 has-Lesion-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

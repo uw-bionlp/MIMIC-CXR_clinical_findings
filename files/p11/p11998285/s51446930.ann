@@ -1,0 +1,35 @@
+T1	Medical-Problem 258 271	opacification
+T2	Medical-Anatomy 279 295	right upper lobe
+T3	Medical-Problem 301 309;311 333	superior deviation of the minor
+T4	Medical-Assertion 338 345	without
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 346 373	rightward mediastinal shift
+T6	Medical-Problem 376 386;388 396	Two convex contours
+E5	Medical-Problem:T6
+T7	Medical-Assertion 433 435	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 436 452	pleural effusion
+T9	Medical-Problem 457 469	pneumothorax
+T10	Medical-Anatomy 535 546	Right upper
+T11	Medical-Problem 552 565	opacification
+T12	Medical-Problem 601 612	volume loss
+T13	Medical-Assertion 613 620	without
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 621 638	mediastinal shift
+T15	Medical-Assertion 640 654	concerning for
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 655 678	space occupying process
+T17	Medical-Anatomy 687 737	right upper lobe which may involve the mediastinum
+T18	Lesion-Assertion 740 752;754 763	Differential diagnosis
+A5	Lesion-AssertionValue T18 possible
+T19	Lesion-Description 773 783	malignancy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15 has-Medical-Anatomy:T17
+E14	Lesion-Description:T19 has-Lesion-Assertion:T18

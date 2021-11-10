@@ -1,0 +1,20 @@
+T1	Lesion-Count 104 112	multiple
+T2	Lesion-Anatomy 113 117	lung
+T3	Lesion-Description 118 125	nodules
+T4	Lesion-Description 130 136	masses
+T5	Medical-Assertion 149 151	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 152 175	definitive pneumothorax
+T7	Medical-Problem 187 218	questionable left basal opacity
+E6	Medical-Problem:T7
+T8	Medical-Assertion 299 324	might potentially reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 325 343	infectious process
+T10	Medical-Problem 355 366	atelectasis
+T11	Medical-Problem 370 392	post-surgical scarring
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Count:T1 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8

@@ -1,0 +1,35 @@
+T1	Medical-Anatomy 301 306	Lungs
+T2	Medical-Problem 311 329;331 341	hyperinflated with flattening
+T3	Medical-Problem 364 380	relative lucency
+T4	Medical-Anatomy 392 403	lung apices
+T5	Medical-Problem 421 441	underlying emphysema
+T6	Medical-Assertion 444 446	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 447 463	pleural effusion
+T8	Medical-Problem 467 479	pneumothorax
+T9	Medical-Problem 529 543	patchy opacity
+T10	Medical-Anatomy 563 595	lower lobe, possibly on the left
+T11	Medical-Assertion 597 616	which could reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 620 637	area of infection
+T13	Medical-Assertion 651 653	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 654 681	acute osseous abnormalities
+T15	Medical-Problem 701 715	Subtle opacity
+T16	Medical-Anatomy 727 744	lower lobe on the
+T17	Medical-Anatomy 780 795	left lower lobe
+T18	Medical-Assertion 803 816	could reflect
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 820 848	area of developing infection
+T20	Medical-Problem 886 895	Emphysema
+E16	Medical-Problem:T20
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

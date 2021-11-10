@@ -1,0 +1,27 @@
+T1	Medical-Problem 194 212;214 231	opacity, likely of infectious origin
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 248 263	left lower lobe
+T3	Medical-Problem 269 289	increased in density
+T4	Medical-Problem 320 355	increasing accompanying atelectasis
+T5	Medical-Anatomy 363 367;369 379	left lower lobe
+T6	Medical-Anatomy 386 401	right lung base
+T7	Medical-Problem 410 425	slightly denser
+T8	Medical-Assertion 467 485	might be caused by
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 486 505	partial atelectasis
+T10	Medical-Anatomy 513 524	middle lobe
+T11	Medical-Problem 535 544	deviation
+T12	Medical-Anatomy 552 565	minor fissure
+T13	Medical-Assertion 568 570	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 571 588	pleural effusions
+T15	Medical-Assertion 591 593	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 594 603;605 610	pulmonary edema
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

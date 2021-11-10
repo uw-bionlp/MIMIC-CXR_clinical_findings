@@ -1,0 +1,27 @@
+T1	Medical-Assertion 160 168	Possible
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 169 184	pulmonary edema
+T3	Medical-Problem 242 278	Moderate bilateral pleural effusions
+E2	Medical-Problem:T3
+T4	Medical-Problem 335 367	increasing bibasilar atelectasis
+E3	Medical-Problem:T4
+T5	Medical-Assertion 369 380	less likely
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 381 390	pneumonia
+T7	Medical-Problem 491 515	Heart is mildly enlarged
+E5	Medical-Problem:T7
+T8	Medical-Anatomy 518 529	Upper lungs
+T9	Medical-Problem 535 559	mild vascular congestion
+T10	Medical-Problem 584 610	poor aeration at the bases
+T11	Medical-Assertion 616 618	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 619 634	pulmonary edema
+T13	Medical-Assertion 647 649	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 650 662	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

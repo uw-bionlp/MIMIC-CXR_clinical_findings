@@ -1,0 +1,51 @@
+T1	Medical-Problem 315 324	Elevation
+T2	Medical-Anatomy 332 337	right
+T3	Medical-Anatomy 364 375	Right hilar
+T4	Medical-Assertion 429 442	could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 446 463	area of infection
+T6	Lesion-Description 482 490	neoplasm
+T7	Lesion-Assertion 492 510	cannot be excluded
+A2	Lesion-AssertionValue T7 possible
+T8	Medical-Problem 513 530	Mild cardiomegaly
+E6	Medical-Problem:T8
+T9	Medical-Problem 542 564	Diffuse calcifications
+T10	Medical-Anatomy 573 578	aorta
+T11	Medical-Problem 601 635	mild pulmonary vascular congestion
+E9	Medical-Problem:T11
+T12	Medical-Problem 638 645;647 675	Streaky bibasilar airspace opacities
+E10	Medical-Problem:T12
+T13	Medical-Assertion 676 690	likely reflect
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 691 702	atelectasis
+T15	Medical-Assertion 714 716	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 718 730	pneumothorax
+T17	Medical-Assertion 733 735	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 736 758	large pleural effusion
+T19	Medical-Problem 778 789;791 807	trace right pleural effusion
+T20	Medical-Assertion 808 822	may be present
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Anatomy 1003 1014	Right hilar
+T22	Medical-Assertion 1048 1061	could reflect
+A7	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1065 1072;1074 1083	area of infection
+T24	Lesion-Description 1088 1096	neoplasm
+T25	Lesion-Assertion 1100 1112	not excluded
+A8	Lesion-AssertionValue T25 possible
+T26	Medical-Problem 1199 1220	Bibasilar atelectasis
+E18	Medical-Problem:T26
+T27	Medical-Problem 1228 1237	Elevation
+T28	Medical-Anatomy 1245 1250	right
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Lesion-Description:T6 has-Lesion-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T19 has-Medical-Assertion:T20
+E16	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E17	Lesion-Description:T24 has-Lesion-Assertion:T25
+E19	Medical-Problem:T27 has-Medical-Anatomy:T28

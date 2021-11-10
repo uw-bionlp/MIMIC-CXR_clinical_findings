@@ -1,0 +1,17 @@
+T1	Medical-Problem 538 542;544 560	left pleural effusion
+T2	Medical-Problem 565 582	improved aeration
+T3	Medical-Anatomy 590 599	left base
+T4	Medical-Problem 683 694;696 730	decrease in size of the right pleural effusion
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 737 769	cardiac and mediastinal contours
+E5	Medical-Anatomy:T5
+T6	Medical-Assertion 811 830	interval resolution
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 838 847;849 854	pulmonary edema
+T8	Medical-Assertion 857 859	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 860 872	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

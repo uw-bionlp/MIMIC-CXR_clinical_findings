@@ -1,0 +1,54 @@
+T1	Medical-Problem 309 332;334 356	Moderate enlargement of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 419 435	Low lung volumes
+E2	Medical-Problem:T2
+T3	Medical-Problem 453 484;486 496	crowding of the bronchovascular structures
+E3	Medical-Problem:T3
+T4	Medical-Assertion 502 504	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 505 526	overt pulmonary edema
+T6	Lesion-Count 529 540	Innumerable
+T7	Lesion-Anatomy 541 550	pulmonary
+T8	Lesion-Description 551 561	metastases
+T9	Medical-Anatomy 626 641	left lower lobe
+T10	Medical-Problem 648 665	adjacent scarring
+T11	Medical-Problem 668 695	Patchy left basilar opacity
+E10	Medical-Problem:T11
+T12	Medical-Assertion 696 711	likely reflects
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 713 724	atelectasis
+T14	Medical-Problem 730 739	infection
+T15	Medical-Assertion 743 766	not completely excluded
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Assertion 768 770	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 771 780;782 795	new focal consolidation
+T18	Medical-Problem 797 813	pleural effusion
+T19	Medical-Problem 817 829	pneumothorax
+T20	Medical-Problem 839 849;851 871	Multilevel degenerative changes
+T21	Medical-Anatomy 904 918	thoracic spine
+T22	Medical-Problem 939 955	Low lung volumes
+E18	Medical-Problem:T22
+T23	Lesion-Count 961 972	innumerable
+T24	Lesion-Anatomy 973 982	pulmonary
+T25	Lesion-Description 983 993	metastases
+T26	Medical-Problem 996 1016	Left basilar opacity
+E22	Medical-Problem:T26
+T27	Medical-Assertion 1019 1025	likely
+A5	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1026 1037	atelectasis
+T29	Medical-Problem 1043 1052	infection
+T30	Medical-Assertion 1053 1082	cannot be completely excluded
+A6	Medical-AssertionValue T30 possible
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E7	Lesion-Description:T8 has-Lesion-Count:T6 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21
+E21	Lesion-Description:T25 has-Lesion-Count:T23 has-Lesion-Anatomy:T24
+E23	Medical-Problem:T28 has-Medical-Assertion:T27
+E24	Medical-Problem:T29 has-Medical-Assertion:T30

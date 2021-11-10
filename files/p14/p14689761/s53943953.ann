@@ -1,0 +1,44 @@
+T1	Medical-Problem 315 339	Right perihilar fullness
+E1	Medical-Problem:T1
+T2	Lesion-Description 477 487	adenopathy
+E2	Lesion-Description:T2
+T3	Lesion-Anatomy 533 543	Right lung
+T4	Lesion-Description 544 551;553 562	nodular densities
+T5	Lesion-Size-Trend 567 581	grossly stable
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Size-Trend 612 623;625 636	increase in conspicuity
+A2	Lesion-Size-TrendValue T6 increasing
+T7	Lesion-Anatomy 660 680	left-sided pulmonary
+T8	Lesion-Description 681 688	nodular
+T9	Lesion-Description 689 698	opacities
+T10	Medical-Assertion 789 791	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 792 808	pleural effusion
+T12	Medical-Problem 812 824	pneumothorax
+T13	Medical-Problem 853 883	Increased right hilar fullness
+E10	Medical-Problem:T13
+T14	Medical-Assertion 884 897	may be due to
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 898 918	increased adenopathy
+T16	Medical-Problem 954 978	underlying consolidation
+T17	Medical-Assertion 979 991	not excluded
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 993 1002;1004 1015	Increased conspicuity
+T19	Medical-Assertion 1020 1028	possibly
+A6	Medical-AssertionValue T19 possible
+T20	Lesion-Anatomy 1039 1048	pulmonary
+T21	Lesion-Description 1049 1066	nodular opacities
+T22	Lesion-Anatomy 1068 1080;1082 1093	particularly on the left
+T23	Medical-Assertion 1095 1110	could relate to
+A7	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1111 1122	sarcoidosis
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T5
+E6	Lesion-Description:T8 has-Lesion-Size-Trend:T6
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T17
+E13	Medical-Problem:T18 has-Medical-Assertion:T19
+E15	Lesion-Description:T21 has-Lesion-Anatomy:T20 has-Lesion-Anatomy:T22
+E17	Medical-Problem:T24 has-Medical-Assertion:T23

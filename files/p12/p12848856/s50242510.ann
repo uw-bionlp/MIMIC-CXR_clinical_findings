@@ -1,0 +1,20 @@
+T1	Medical-Problem 90 102	New air leak
+E1	Medical-Problem:T1
+T2	Medical-Problem 234 268	small dependent right pneumothorax
+E2	Medical-Problem:T2
+T3	Medical-Problem 309 365	evacuation of previously moderate right pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Assertion 374 377;379 383	may have
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 389 448;450 460	interval increase in caliber of the already widened cardiac silhouette
+T6	Medical-Problem 475 509	more pulmonary vascular congestion
+E5	Medical-Problem:T6
+T7	Medical-Problem 517 522;524 539	early pulmonary edema
+T8	Medical-Problem 544 576	mediastinal vascular engorgement
+E7	Medical-Problem:T8
+T9	Medical-Assertion 850 852	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 853 870	left pneumothorax
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T4
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

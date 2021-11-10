@@ -1,0 +1,22 @@
+T1	Lesion-Description 362 371	opacities
+T2	Lesion-Anatomy 413 446;448 479	right upper, middle and posterior portion of the right lower lobe
+T3	Lesion-Characteristic 525 542	Subtle suggestion
+E3	Lesion-Characteristic:T3
+T4	Lesion-Anatomy 590 603;605 615	lateral right upper lobe
+E4	Lesion-Anatomy:T4
+T5	Medical-Problem 705 717	Some tenting
+T6	Medical-Anatomy 725 744	right hemidiaphragm
+T7	Medical-Assertion 762 764	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 765 797	definite new focal consolidation
+T9	Medical-Assertion 817 819	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 820 827;829 837	pleural effusion
+T11	Medical-Problem 841 853	pneumothorax
+T12	Medical-Problem 856 884	Basilar atelectasis/scarring
+E10	Medical-Problem:T12
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

@@ -1,0 +1,22 @@
+T1	Medical-Anatomy 326 331	lungs
+T2	Medical-Problem 345 364	focal consolidation
+T3	Medical-Problem 368 376	effusion
+T4	Lesion-Characteristic 379 384	Focal
+T5	Lesion-Description 385 400	nodular opacity
+T6	Lesion-Anatomy 422 436	left lung base
+T7	Lesion-Description 456 467	bone island
+T8	Lesion-Anatomy 476 499	anterior left sixth rib
+T9	Medical-Assertion 605 607	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 608 637	acute cardiopulmonary process
+T11	Medical-Assertion 640 651	No evidence
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 655 665;667 674	congestive failure
+T13	Medical-Problem 678 697	focal consolidation
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11

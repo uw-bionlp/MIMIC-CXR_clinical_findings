@@ -1,0 +1,56 @@
+T1	Medical-Problem 255 275	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 278 287	Opacities
+T3	Medical-Anatomy 300 335	lung bases, left greater than right
+T4	Medical-Assertion 392 403	may reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 404 426	persistent atelectasis
+T6	Medical-Problem 430 450	resolving aspiration
+T7	Medical-Problem 491 504	Mild blunting
+T8	Medical-Anatomy 512 529;531 536	left costophrenic angle
+T9	Medical-Assertion 537 545	suggests
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 546 571	persistent small effusion
+T11	Lesion-Size 614 619	14 mm
+T12	Lesion-Anatomy 620 645	left lower lobe pulmonary
+T13	Lesion-Description 646 652	nodule
+T14	Lesion-Assertion 656 659	not
+A3	Lesion-AssertionValue T14 absent
+T15	Medical-Assertion 715 717	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 718 730	pneumothorax
+T17	Medical-Assertion 733 735	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 736 755	vascular congestion
+T19	Medical-Problem 760 781	overt pulmonary edema
+T20	Medical-Problem 928 957	Unchanged bibasilar opacities
+E15	Medical-Problem:T20
+T21	Medical-Assertion 962 970	probable
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 971 981;983 999	small left pleural effusion
+T23	Medical-Assertion 1002 1023	Differential includes
+A7	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1024 1043	chronic atelectasis
+T25	Medical-Problem 1047 1057	aspiration
+T26	Medical-Problem 1062 1071	infection
+T27	Medical-Assertion 1213 1215	No
+A8	Medical-AssertionValue T27 absent
+T28	Medical-Problem 1216 1239	new focal consolidation
+T29	Medical-Problem 1241 1253	pneumothorax
+T30	Medical-Problem 1258 1273	pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Lesion-Description:T13 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T12 has-Lesion-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T19 has-Medical-Assertion:T17
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T24 has-Medical-Assertion:T23
+E18	Medical-Problem:T25 has-Medical-Assertion:T23
+E19	Medical-Problem:T26 has-Medical-Assertion:T23
+E20	Medical-Problem:T28 has-Medical-Assertion:T27
+E21	Medical-Problem:T29 has-Medical-Assertion:T27
+E22	Medical-Problem:T30 has-Medical-Assertion:T27

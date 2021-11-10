@@ -1,0 +1,25 @@
+T1	Medical-Assertion 668 670	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 671 683	pneumothorax
+T3	Medical-Problem 707 735	moderate cardiac enlargement
+E2	Medical-Problem:T3
+T4	Medical-Problem 771 775	left
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 814 835	pulmonary vasculature
+T6	Medical-Problem 840 888	moderately distended with some perivascular haze
+T7	Medical-Assertion 903 914	no evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 919 940	acute pulmonary edema
+T9	Medical-Anatomy 949 972	lateral pleural sinuses
+T10	Medical-Problem 990 993;995 1013	any fluid accumulation
+T11	Medical-Assertion 1016 1018	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1019 1031	pneumothorax
+T13	Medical-Anatomy 1050 1061	apical area
+T14	Medical-Problem 1148 1176	moderate cardiac enlargement
+E11	Medical-Problem:T14
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13

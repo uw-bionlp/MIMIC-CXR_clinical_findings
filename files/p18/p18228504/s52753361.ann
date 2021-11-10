@@ -1,0 +1,35 @@
+T1	Medical-Problem 352 357;359 373	dense calcifications
+T2	Medical-Anatomy 381 402	tracheobronchial tree
+T3	Lesion-Anatomy 405 420	Left upper lobe
+T4	Lesion-Characteristic 421 429	cavitary
+T5	Lesion-Description 430 436	lesion
+T6	Lesion-Anatomy 530 545	left upper lobe
+T7	Lesion-Description 546 550	mass
+T8	Medical-Assertion 578 589	No evidence
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 594 603	pneumonia
+T10	Medical-Problem 607 618	overt edema
+T11	Medical-Problem 621 645	Mild vascular congestion
+E10	Medical-Problem:T11
+T12	Medical-Assertion 659 661	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 662 669;671 679	pleural effusion
+T14	Medical-Problem 682 726	Chronic-appearing partially imaged deformity
+T15	Medical-Anatomy 734 747;749 753	right humeral head
+T16	Medical-Assertion 767 769	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 770 778	free air
+T18	Lesion-Anatomy 827 842	Left upper lobe
+T19	Lesion-Description 843 847	mass
+T20	Lesion-Characteristic 860 868	cavitary
+T21	Lesion-Description 869 875	lesion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Lesion-Description:T19 has-Lesion-Anatomy:T18
+E18	Lesion-Description:T21 has-Lesion-Characteristic:T20

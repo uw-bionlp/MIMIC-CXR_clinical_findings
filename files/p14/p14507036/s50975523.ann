@@ -1,0 +1,40 @@
+T1	Medical-Problem 283 326	large loculated left-sided pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 333 373	concurrent left lower lobe consolidation
+T3	Medical-Anatomy 388 409	left lower hemithorax
+T4	Medical-Anatomy 419 436	left heart border
+T5	Medical-Problem 477 489	hazy opacity
+T6	Medical-Anatomy 498 519	left upper lung field
+T7	Medical-Assertion 660 671	may reflect
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 672 686	layering fluid
+T9	Medical-Anatomy 693 703	right lung
+T10	Medical-Problem 715 722;724 731	streaky opacity
+T11	Medical-Assertion 745 751	likely
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 752 770	patchy atelectasis
+T13	Medical-Assertion 782 784	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 785 796;798 814	right-sided pleural effusion
+T15	Medical-Assertion 826 828	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 829 841	pneumothorax
+T17	Medical-Problem 865 908	Large loculated left-sided pleural effusion
+E13	Medical-Problem:T17
+T18	Medical-Problem 914 935;937 955	concurrent left lower lobe consolidation
+E14	Medical-Problem:T18
+T19	Medical-Assertion 957 963	likely
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 981 992	atelectasis
+T21	Medical-Problem 1000 1009	infection
+T22	Medical-Problem 1018 1055	Mild basilar atelectasis on the right
+E17	Medical-Problem:T22
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T19

@@ -1,0 +1,26 @@
+T1	Medical-Problem 229 243	radial opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 373 392	heterogeneous radio
+T3	Medical-Anatomy 423 445	middle lobe or lingula
+T4	Medical-Problem 500 510	chronicity
+E4	Medical-Problem:T4
+T5	Medical-Assertion 587 595	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 598 603	scar,
+E5	Medical-Problem:T6
+T7	Medical-Assertion 612 617;619 626	could also be
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 629 652	small pulmonary infarct
+T9	Lesion-Anatomy 659 663	lung
+T10	Lesion-Description 664 670	nodule
+T11	Medical-Problem 820 828	effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 832 844	pneumothorax
+E10	Medical-Problem:T12
+T13	Medical-Assertion 922 924	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 925 950	subdiaphragmatic free air
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

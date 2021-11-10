@@ -1,0 +1,26 @@
+T1	Lesion-Anatomy 316 331	right perihilar
+T2	Lesion-Description 332 338	nodule
+T3	Lesion-Characteristic 403 421	area of cavitation
+T4	Lesion-Characteristic 441 458	substantial solid
+T5	Lesion-Description 459 465	nodule
+T6	Lesion-Description 474 481	nodules
+E6	Lesion-Description:T6
+T7	Lesion-Characteristic 530 540	cavitating
+T8	Lesion-Description 541 547	nodule
+T9	Lesion-Anatomy 555 571	right upper lobe
+T10	Medical-Assertion 653 655	no
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 656 673	pleural effusions
+T12	Medical-Problem 678 690	pneumothorax
+T13	Medical-Problem 693 730	Mild-to-moderate degenerative changes
+E12	Medical-Problem:T13
+T14	Lesion-Size 791 798	Smaller
+T15	Lesion-Anatomy 799 803	lung
+T16	Lesion-Description 804 811	nodules
+T17	Lesion-Characteristic 845 854;856 866	increased cavitation
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T10
+E15	Lesion-Description:T16 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T15 has-Lesion-Characteristic:T17

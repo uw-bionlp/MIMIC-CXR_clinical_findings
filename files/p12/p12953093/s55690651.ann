@@ -1,0 +1,31 @@
+T1	Medical-Problem 486 502	Patchy opacities
+T2	Medical-Anatomy 510 523	left mid lung
+T3	Medical-Assertion 524 531	suggest
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 532 550	unchanged scarring
+T5	Medical-Anatomy 554 565	Upper lungs
+T6	Medical-Problem 570 576	lucent
+T7	Medical-Assertion 577 587	suggesting
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 588 597	emphysema
+T9	Lesion-Count 600 605	Three
+T10	Lesion-Description 606 613	nodules
+T11	Lesion-Anatomy 621 630;632 647	posterior left lower lobe
+T12	Lesion-Size-Trend 653 670	increased in size
+A3	Lesion-Size-TrendValue T12 increasing
+T13	Medical-Problem 677 699	chest is hyperinflated
+E10	Medical-Problem:T13
+T14	Lesion-Size-Trend 720 729	Increased
+A4	Lesion-Size-TrendValue T14 increasing
+T15	Lesion-Description 730 737	nodules
+T16	Lesion-Anatomy 745 760	left lower lobe
+T17	Medical-Assertion 796 798;800 808	No evidence
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 812 830	acute cardiomegaly
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Count:T9 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T12
+E11	Lesion-Description:T15 has-Lesion-Size-Trend:T14 has-Lesion-Anatomy:T16
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

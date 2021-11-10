@@ -1,0 +1,25 @@
+T1	Medical-Assertion 141 149	Consider
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 151 160	pneumonia
+T3	Medical-Problem 164 175	atelectasis
+T4	Medical-Problem 250 267	new opacification
+T5	Medical-Anatomy 275 296	base of the left lung
+T6	Medical-Assertion 329 344	nearly resolved
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 364 375	atelectasis
+T8	Medical-Assertion 380 383	not
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 384 393	pneumonia
+T10	Medical-Problem 438 469	chain suture from prior surgery
+E7	Medical-Problem:T10
+T11	Medical-Problem 475 510	multiple healed right rib fractures
+E8	Medical-Problem:T11
+T12	Medical-Assertion 547 549	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 551 567	pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

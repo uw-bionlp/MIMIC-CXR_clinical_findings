@@ -1,0 +1,28 @@
+T1	Medical-Problem 380 406	subtle increase in opacity
+T2	Medical-Anatomy 415 437	left mid to lower lung
+T3	Medical-Problem 519 540;542 549	underlying infectious process
+T4	Medical-Assertion 550 562	not excluded
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Assertion 565 567	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 568 575	pleural
+E4	Medical-Problem:T6
+T7	Medical-Problem 576 584	effusion
+T8	Medical-Problem 588 600	pneumothorax
+T9	Medical-Assertion 611 619	No overt
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 621 636	pulmonary edema
+T11	Medical-Anatomy 665 678	left mid lung
+E8	Medical-Anatomy:T11
+T12	Medical-Problem 706 720	Subtle opacity
+T13	Medical-Anatomy 741 763	left mid to lower lung
+T14	Medical-Assertion 764 779	could be due to
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 783 799	subtle pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

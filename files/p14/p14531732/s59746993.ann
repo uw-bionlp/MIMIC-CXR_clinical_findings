@@ -1,0 +1,28 @@
+T1	Medical-Problem 278 295	diffuse sclerosis
+T2	Medical-Anatomy 303 319	vertebral bodies
+T3	Medical-Problem 325 341;343 352	abnormal foci of sclerosis
+T4	Medical-Problem 357 371	bone expansion
+T5	Medical-Anatomy 375 389	bilateral ribs
+T6	Medical-Problem 447 484	new small bilateral pleural effusions
+E6	Medical-Problem:T6
+T7	Medical-Assertion 495 497	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 499 518	focal consolidation
+T9	Medical-Problem 520 532	pneumothorax
+T10	Medical-Problem 537 552	pulmonary edema
+T11	Medical-Assertion 636 638	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 639 648	pneumonia
+T13	Medical-Problem 654 691	New small bilateral pleural effusions
+E11	Medical-Problem:T13
+T14	Lesion-Characteristic 697 707	Widespread
+T15	Lesion-Characteristic 708 712	bony
+T16	Lesion-Description 713 723	metastases
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E14	Lesion-Description:T16 has-Lesion-Characteristic:T14 has-Lesion-Characteristic:T15

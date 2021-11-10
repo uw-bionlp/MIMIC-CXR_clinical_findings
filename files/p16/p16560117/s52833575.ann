@@ -1,0 +1,28 @@
+T1	Medical-Problem 82 99	Improved aeration
+T2	Medical-Anatomy 109 118	left lung
+T3	Medical-Assertion 132 139	without
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 140 153	focal opacity
+T5	Medical-Problem 155 180	Right basilar atelectasis
+E4	Medical-Problem:T5
+T6	Medical-Problem 195 218	Small pleural effusions
+E5	Medical-Problem:T6
+T7	Medical-Problem 664 692;694 718	stable postoperative cardiac and mediastinal contours
+E6	Medical-Problem:T7
+T8	Medical-Problem 721 739	Improving aeration
+T9	Medical-Anatomy 747 756	left base
+T10	Medical-Problem 762 767;769 799	small layering effusions bilaterally
+T11	Medical-Problem 816 844;846 857	resolving partial lower lobe atelectasis
+T12	Medical-Assertion 860 871	No evidence
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 875 890	pulmonary edema
+T14	Medical-Problem 894 906	pneumothorax
+T15	Medical-Anatomy 909 914;916 926	Right subclavian
+E13	Medical-Anatomy:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12

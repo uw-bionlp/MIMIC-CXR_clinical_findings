@@ -1,0 +1,20 @@
+T1	Medical-Assertion 220 222	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 223 237	focal findings
+T3	Medical-Problem 249 258	pneumonia
+T4	Lesion-Anatomy 261 271	Left hilus
+T5	Medical-Assertion 272 280	may have
+A2	Medical-AssertionValue T5 possible
+T6	Lesion-Assertion 317 333	no good evidence
+A3	Lesion-AssertionValue T6 absent
+T7	Lesion-Characteristic 341 352	substantial
+T8	Lesion-Characteristic 353 360	central
+T9	Lesion-Description 361 371	lymph node
+T10	Lesion-Characteristic 372 383	enlargement
+T11	Medical-Assertion 409 411	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 412 419;421 432	pleural abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T9 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

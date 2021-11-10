@@ -1,0 +1,32 @@
+T1	Medical-Anatomy 95 100	lungs
+T2	Medical-Assertion 101 117	without evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 123 138	pulmonary edema
+T4	Medical-Problem 145 178	Small bilateral pleural effusions
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 272 277	lungs
+T6	Medical-Assertion 278 294	without evidence
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 300 315	pulmonary edema
+T8	Medical-Problem 322 355	Small bilateral pleural effusions
+E6	Medical-Problem:T8
+T9	Medical-Problem 904 921	Residual layering
+E7	Medical-Problem:T9
+T10	Medical-Problem 922 931;933 942	bilateral effusions
+E8	Medical-Problem:T10
+T11	Medical-Assertion 945 947	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 948 953	focal
+E9	Medical-Problem:T12
+T13	Medical-Problem 954 976	airspace consolidation
+T14	Medical-Assertion 977 987	to suggest
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 988 997	pneumonia
+T16	Medical-Assertion 1055 1057	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1058 1070	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T11 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

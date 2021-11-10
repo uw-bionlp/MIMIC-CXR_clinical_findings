@@ -1,0 +1,29 @@
+T1	Medical-Problem 248 275	small left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 320 322	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 323 335	pneumothorax
+T4	Medical-Problem 337 362	Large scale opacification
+T5	Medical-Anatomy 370 386	left lower chest
+T6	Medical-Problem 398 425	residual loculated effusion
+T7	Medical-Problem 429 458	left lower lobe consolidation
+T8	Medical-Problem 463 471	collapse
+T9	Medical-Problem 598 607	infection
+E8	Medical-Problem:T9
+T10	Lesion-Anatomy 615 619;621 632	left hemi thorax
+E9	Lesion-Anatomy:T10
+T11	Medical-Anatomy 664 669	Heart
+T12	Medical-Assertion 673 676	not
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 677 685	enlarged
+T14	Medical-Problem 687 691;693 703	Mild dilatation
+T15	Medical-Anatomy 711 722	azygos vein
+T16	Medical-Problem 732 767;769 775	elevated central venous pressure or volume
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T16 has-Medical-Anatomy:T15

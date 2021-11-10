@@ -1,0 +1,28 @@
+T1	Medical-Problem 301 316;318 326	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 365 384	Aortic knob and LAD
+E2	Medical-Problem:T2
+T3	Medical-Problem 386 406	calcifications/stent
+E3	Medical-Problem:T3
+T4	Medical-Problem 425 449	Subsegmental atelectasis
+T5	Medical-Anatomy 457 461;463 485	left mid lung and lung base
+T6	Medical-Problem 502 523	Right apical scarring
+E6	Medical-Problem:T6
+T7	Medical-Anatomy 557 562	lungs
+T8	Medical-Assertion 578 589	no evidence
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 593 609	pleural effusion
+T10	Medical-Problem 611 620;622 627	pulmonary edema
+T11	Medical-Problem 631 650	focal consolidation
+T12	Medical-Problem 666 675	pneumonia
+T13	Medical-Assertion 697 699	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 700 729	acute cardiopulmonary process
+T15	Medical-Problem 738 755	Mild cardiomegaly
+E13	Medical-Problem:T15
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E11	Medical-Problem:T12 has-Medical-Assertion:T8
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

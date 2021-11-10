@@ -1,0 +1,27 @@
+T1	Medical-Problem 295 302;304 370	cardiac silhouette remains enlarged and somewhat globular in configuration
+E1	Medical-Problem:T1
+T2	Medical-Problem 372 382;384 404	underlying pericardial effusion
+T3	Medical-Assertion 408 420	not excluded
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 489 515	slight increase in opacity
+T5	Medical-Anatomy 537 556	right hemithorax as
+T6	Medical-Problem 631 653	small pleural effusion
+T7	Medical-Assertion 657 669	not excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 672 682;684 700	Minor left base atelectasis
+E6	Medical-Problem:T8
+T9	Medical-Assertion 709 716	without
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 717 745	definite focal consolidation
+T11	Medical-Assertion 758 764	likely
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 767 794	trace left pleural effusion
+T13	Medical-Assertion 797 799	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 800 812	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

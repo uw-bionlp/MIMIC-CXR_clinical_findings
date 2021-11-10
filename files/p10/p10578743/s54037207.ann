@@ -1,0 +1,21 @@
+T1	Medical-Problem 271 281	Mild edema
+T2	Medical-Anatomy 296 312	both lower lungs
+T3	Medical-Problem 327 339;341 354	worsening of consolidation
+T4	Medical-Anatomy 362 372	right base
+T5	Medical-Problem 381 390	pneumonia
+E5	Medical-Problem:T5
+T6	Medical-Problem 394 405	atelectasis
+E6	Medical-Problem:T6
+T7	Medical-Problem 423 474	increasing small to moderate right pleural effusion
+E7	Medical-Problem:T7
+T8	Medical-Anatomy 477 482	Heart
+T9	Medical-Assertion 486 489	not
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 491 499	enlarged
+T11	Medical-Assertion 554 556	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 558 570	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

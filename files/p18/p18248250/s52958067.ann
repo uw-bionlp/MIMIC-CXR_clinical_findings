@@ -1,0 +1,18 @@
+T1	Medical-Problem 216 232;234 237	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 287 300	vague opacity
+T3	Medical-Anatomy 308 312;314 361	left of the left heart border in the left lower lung
+T4	Medical-Assertion 362 377	could represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 378 389	atelectasis
+T6	Medical-Assertion 451 453	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 454 458;460 473	bony abnormalities
+T8	Medical-Problem 500 513	Vague opacity
+T9	Medical-Anatomy 521 543	left lateral lung base
+T10	Medical-Problem 576 587	atelectasis
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9

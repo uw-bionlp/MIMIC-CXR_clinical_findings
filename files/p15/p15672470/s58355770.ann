@@ -1,0 +1,35 @@
+T1	Medical-Anatomy 333 338	lungs
+T2	Medical-Problem 343 356	hyperinflated
+T3	Medical-Assertion 367 369	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 370 393	new focal consolidation
+T5	Lesion-Assertion 402 405	may
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 410 422	subtle small
+T7	Lesion-Description 423 440	nodular opacities
+T8	Lesion-Anatomy 448 463	left upper lung
+T9	Medical-Problem 466 483	Slight prominence
+T10	Medical-Anatomy 492 503	right hilum
+T11	Medical-Assertion 516 518	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 519 535	pleural effusion
+T13	Medical-Problem 539 551	pneumothorax
+T14	Medical-Problem 639 656	Slight prominence
+T15	Medical-Anatomy 664 675	right hilum
+T16	Medical-Assertion 696 698	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 699 717;719 732	definite new focal consolidation
+T18	Lesion-Assertion 735 743	Possible
+A5	Lesion-AssertionValue T18 possible
+T19	Lesion-Characteristic 744 756	subtle small
+T20	Lesion-Description 757 774	nodular opacities
+T21	Lesion-Anatomy 782 792;794 798	left upper lung
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Lesion-Description:T20 has-Lesion-Assertion:T18 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T21

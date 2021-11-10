@@ -1,0 +1,49 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 44	pneumothorax
+T3	Medical-Problem 48 64	pleural effusion
+T4	Medical-Problem 67 90	Right perihilar opacity
+E3	Medical-Problem:T4
+T5	Medical-Assertion 91 104	could reflect
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 107 118	volume loss
+T7	Lesion-Anatomy 130 135	hilar
+T8	Lesion-Description 136 151	lymphadenopathy
+T9	Lesion-Anatomy 655 660	hilar
+E7	Lesion-Anatomy:T9
+T10	Medical-Problem 765 781	Mild generalized
+E8	Medical-Problem:T10
+T11	Medical-Problem 782 788;790 794	volume loss
+T12	Medical-Anatomy 796 813	right hemi thorax
+T13	Medical-Assertion 816 818	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 819 825	pneumo
+T15	Medical-Assertion 834 836	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 837 855	pneumo mediastinum
+T17	Medical-Problem 858 865;867 876	Pleural effusions
+E13	Medical-Problem:T17
+T18	Lesion-Anatomy 911 931	left suprahilar lung
+T19	Lesion-Description 932 938	nodule
+T20	Medical-Assertion 941 943	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 945 950	edema
+T22	Medical-Problem 954 963	pneumonia
+T23	Medical-Anatomy 971 980	left lung
+T24	Medical-Problem 983 1007	Interstitial abnormality
+T25	Medical-Anatomy 1008 1023;1025 1029	perihilar right lung
+T26	Medical-Assertion 1030 1038	probably
+A6	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1039 1062	lymphovenous congestion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Lesion-Description:T19 has-Lesion-Anatomy:T18
+E16	Medical-Problem:T21 has-Medical-Assertion:T20 has-Medical-Anatomy:T23
+E17	Medical-Problem:T22 has-Medical-Assertion:T20 has-Medical-Anatomy:T23
+E19	Medical-Problem:T24 has-Medical-Anatomy:T25
+E21	Medical-Problem:T27 has-Medical-Anatomy:T25 has-Medical-Assertion:T26

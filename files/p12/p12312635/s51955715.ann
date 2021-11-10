@@ -1,0 +1,25 @@
+T1	Medical-Problem 303 325	area of patchy opacity
+T2	Medical-Anatomy 338 354;356 361	right lower lung field
+T3	Medical-Assertion 363 368	which
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 387 407	developing pneumonia
+T5	Medical-Anatomy 414 419	lungs
+T6	Medical-Assertion 444 455	no evidence
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 459 473	hyperinflation
+T8	Medical-Problem 488 506;508 538	hemidiaphragms are somewhat flattened bilaterally
+E6	Medical-Problem:T8
+T9	Medical-Problem 645 665	aortic calcification
+E7	Medical-Problem:T9
+T10	Medical-Problem 715 743;745 752	Mild multilevel degenerative changes
+T11	Medical-Anatomy 760 774	thoracic spine
+T12	Medical-Problem 804 830	Right lower lobe pneumonia
+E10	Medical-Problem:T12
+T13	Medical-Assertion 833 850	No clear evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 854 858	COPD
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

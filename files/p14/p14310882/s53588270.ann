@@ -1,0 +1,17 @@
+T1	Medical-Anatomy 183 188	lungs
+T2	Medical-Problem 193 240	hyperinflated with flattening of the diaphragms
+T3	Medical-Problem 253 295	right biapical pleural thickening/scarring
+E3	Medical-Problem:T3
+T4	Medical-Problem 298 317;319 328	Bilateral perihilar opacities
+T5	Medical-Problem 395 413	infectious process
+T6	Medical-Assertion 414 428	may be present
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 431 433	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 434 450	pleural effusion
+T9	Medical-Problem 454 466	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Assertion:T6
+E5	Medical-Problem:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

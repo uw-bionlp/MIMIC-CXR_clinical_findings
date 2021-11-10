@@ -1,0 +1,25 @@
+T1	Medical-Problem 269 282	Focal opacity
+T2	Medical-Anatomy 290 307;309 314	left costophrenic angle
+T3	Medical-Assertion 315 327	maybe due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 328 339	atelectasis
+T5	Medical-Problem 343 359	adjacent fat pad
+T6	Medical-Anatomy 365 370	lungs
+T7	Medical-Assertion 405 407	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 408 420	pneumothorax
+T9	Medical-Problem 426 456	cardiac silhouette is enlarged
+E7	Medical-Problem:T9
+T10	Medical-Problem 512 537	prominent mediastinal fat
+E8	Medical-Problem:T10
+T11	Medical-Problem 638 658	Degenerative changes
+T12	Medical-Anatomy 672 681	shoulders
+T13	Medical-Assertion 702 704	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 705 734	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

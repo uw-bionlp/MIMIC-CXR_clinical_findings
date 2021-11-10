@@ -1,0 +1,26 @@
+T1	Medical-Assertion 214 221	Suspect
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 222 231;233 238	pulmonary edema
+T3	Medical-Anatomy 285 294	Pulmonary
+T4	Medical-Problem 325 363;365 382	small bilateral pleural effusion right greater than left
+T5	Medical-Problem 400 417	New opacification
+T6	Medical-Anatomy 425 440	right lung base
+T7	Medical-Assertion 442 450	could be
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 451 462	atelectasis
+T9	Medical-Problem 467 487	mild dependent edema
+T10	Medical-Problem 495 504	pneumonia
+T11	Medical-Assertion 505 514;516 524	cannot be excluded
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 530 543	does not need
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Assertion 586 588	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 590 602	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

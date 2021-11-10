@@ -1,0 +1,43 @@
+T1	Medical-Problem 312 317	right
+E1	Medical-Problem:T1
+T2	Medical-Assertion 343 364	while could represent
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 365 374	infection
+T4	Medical-Problem 383 398	underlying COPD
+E3	Medical-Problem:T4
+T5	Lesion-Description 400 410	malignancy
+T6	Lesion-Assertion 414 426	not excluded
+A2	Lesion-AssertionValue T6 possible
+T7	Medical-Problem 449 457;459 466	relative lucency
+T8	Medical-Anatomy 474 484	upper lobe
+T9	Medical-Problem 489 512	interstitial prominence
+T10	Medical-Problem 530 549	pulmonary emphysema
+T11	Medical-Problem 552 576	Left base linear opacity
+E9	Medical-Problem:T11
+T12	Medical-Assertion 577 590	may be due to
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 592 612	atelectasis/scarring
+T14	Medical-Assertion 615 617	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 618 640	large pleural effusion
+T16	Medical-Assertion 651 662	No evidence
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 667 679	pneumothorax
+T18	Medical-Problem 774 811	right upper lobe/right apical opacity
+E13	Medical-Problem:T18
+T19	Medical-Assertion 814 829	could represent
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 830 839	infection
+T21	Medical-Problem 847 882	underlying COPD/pulmonary emphysema
+E15	Medical-Problem:T21
+T22	Lesion-Assertion 899 911	not excluded
+A7	Lesion-AssertionValue T22 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Assertion:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

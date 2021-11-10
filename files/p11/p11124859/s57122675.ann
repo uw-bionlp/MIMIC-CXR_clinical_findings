@@ -1,0 +1,20 @@
+T1	Medical-Problem 327 366	Small loculations of left pleural fluid
+T2	Medical-Problem 371 400	moderately severe atelectasis
+T3	Medical-Anatomy 409 424	left lower lung
+T4	Medical-Assertion 524 526	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 527 539	pneumothorax
+T6	Lesion-Description 551 555	mass
+T7	Lesion-Anatomy 572 603	aorta and left pulmonary artery
+T8	Lesion-Size-Trend 607 616	unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Problem 618 629;631 647	Small right pleural effusion
+E7	Medical-Problem:T9
+T10	Medical-Assertion 659 661	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 662 680	right pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10

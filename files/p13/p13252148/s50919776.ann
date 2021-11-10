@@ -1,0 +1,14 @@
+T1	Medical-Assertion 389 391	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 392 399	pleural
+E1	Medical-Problem:T2
+T3	Medical-Problem 400 411	abnormality
+T4	Lesion-Size 438 444	1.4 cm
+T5	Lesion-Description 445 452	opacity
+T6	Lesion-Anatomy 460 470	right base
+T7	Medical-Problem 541 548	opacity
+T8	Medical-Assertion 552 560	not seen
+A2	Medical-AssertionValue T8 absent
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Assertion:T8

@@ -1,0 +1,33 @@
+T1	Medical-Problem 91 104;106 141	right lung is  hyperexpanded relative to the left
+E1	Medical-Problem:T1
+T2	Medical-Assertion 143 158	possibly due to
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 159 181;183 188	mucous plugging on the  left
+T4	Medical-Assertion 190 192	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 193 205	pneumothorax
+T6	Medical-Assertion 218 220	No
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 221 237	pleural effusion
+T8	Medical-Problem 623 633	congestion
+E5	Medical-Problem:T8
+T9	Medical-Problem 649 672	Relative hyperinflation
+T10	Medical-Anatomy 673 678;680 690	right lower lung
+T11	Medical-Assertion 691 706	could be due to
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 707 719	bronchospasm
+T13	Medical-Assertion 731 733	no
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 734 743	pneumonia
+T15	Medical-Problem 747 756;758 763	pulmonary edema
+T16	Medical-Problem 767 775	evidence
+E11	Medical-Problem:T16
+T17	Medical-Problem 779 795	pleural effusion
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E8	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T13

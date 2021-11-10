@@ -1,0 +1,21 @@
+T1	Medical-Assertion 53 55	NO
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 56 77	OVERT PULMONARY EDEMA
+T3	Medical-Assertion 457 459	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 460 469	pneumonia
+T5	Medical-Problem 473 488	pulmonary edema
+T6	Medical-Anatomy 533 538	right
+T7	Medical-Assertion 566 581	could be due to
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 582 602	vascular engorgement
+T9	Lesion-Size-Trend 606 609	new
+A4	Lesion-Size-TrendValue T9 new
+T10	Lesion-Description 611 621	adenopathy
+T11	Medical-Assertion 624 626	No
+A5	Medical-AssertionValue T11 absent
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Lesion-Description:T10 has-Lesion-Size-Trend:T9

@@ -1,0 +1,23 @@
+T1	Medical-Assertion 320 322	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 323 335	pneumothorax
+T3	Medical-Problem 338 357	vascular congestion
+T4	Medical-Problem 362 378	pleural effusion
+T5	Lesion-Size 383 387	3-mm
+T6	Lesion-Description 388 394	nodule
+T7	Lesion-Anatomy 402 411	left base
+T8	Lesion-Size-Trend 416 425	unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Problem 463 477	indistinctness
+T10	Medical-Anatomy 485 489;491 538	most posterior part of the left diaphragmatic margin
+T11	Medical-Assertion 624 644	No definite evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 648 657	pneumonia
+T13	Medical-Problem 660 684;686 719	Equivocal posterior left diaphragmatic contour abnormality
+E10	Medical-Problem:T13
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

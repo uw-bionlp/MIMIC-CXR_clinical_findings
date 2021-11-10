@@ -1,0 +1,31 @@
+T1	Medical-Problem 349 358	opacities
+T2	Medical-Anatomy 366 375;377 381	left lung base
+T3	Medical-Problem 386 409	heterogeneous opacities
+T4	Medical-Anatomy 417 430	left mid lung
+T5	Medical-Assertion 451 454;456 465	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 466 475	infection
+T7	Medical-Assertion 526 528	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 530 558	substantial pleural effusion
+T9	Medical-Problem 562 574	pneumothorax
+T10	Medical-Problem 595 608	Heterogeneous
+E8	Medical-Problem:T10
+T11	Medical-Problem 609 618	opacities
+E9	Medical-Problem:T11
+T12	Medical-Anatomy 626 639	left mid lung
+T13	Medical-Assertion 640 653	may represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 654 665	atelectasis
+T15	Medical-Problem 671 680	infection
+T16	Medical-Assertion 681 699	cannot be excluded
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 718 723	fever
+E13	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13 has-Medical-Assertion:T16

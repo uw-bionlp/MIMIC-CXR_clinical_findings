@@ -1,0 +1,23 @@
+T1	Medical-Problem 380 403	persistent silhouetting
+T2	Medical-Anatomy 411 429	left hemidiaphragm
+T3	Medical-Problem 447 474	left lower lobe atelectasis
+T4	Medical-Problem 476 498	superimposed infection
+T5	Medical-Assertion 499 517	cannot be excluded
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 521 523	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 524 536	pneumothorax
+T8	Medical-Problem 540 556	pleural effusion
+T9	Medical-Assertion 564 566	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 567 580	consolidation
+T11	Medical-Problem 627 656	heart appears mildly enlarged
+E8	Medical-Problem:T11
+T12	Medical-Problem 662 666;668 697	mild pulmonary vascular congestion
+E9	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

@@ -1,0 +1,28 @@
+T1	Medical-Problem 289 325	Moderately severe pulmonary fibrosis
+E1	Medical-Problem:T1
+T2	Medical-Problem 379 422	substantially more interstitial abnormality
+T3	Medical-Anatomy 430 435	lungs
+T4	Medical-Assertion 442 452	suggesting
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 453 479	subsequent acute condition
+T6	Medical-Problem 515 537	simple pulmonary edema
+E5	Medical-Problem:T6
+T7	Medical-Problem 539 552	Drug reaction
+T8	Medical-Problem 557 575	atypical pneumonia
+T9	Medical-Assertion 580 591;593 606	alternative possibilities
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Anatomy 622 638	right lower lobe
+T11	Medical-Problem 646 652	region
+T12	Medical-Problem 697 742;744 757	confluent in interstitial fibrosis simulating consolidation
+T13	Medical-Assertion 759 762	not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 763 791	Small right pleural effusion
+T15	Medical-Problem 805 821;823 835	Mild to moderate cardiomegaly
+E12	Medical-Problem:T15
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T10 has-Medical-Assertion:T13

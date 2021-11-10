@@ -1,0 +1,31 @@
+T1	Medical-Problem 724 751	left lower lobe atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Assertion 776 782	may be
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 785 788;790 817	new small left pleural effusion
+T4	Medical-Problem 820 828	Fullness
+T5	Medical-Anatomy 836 868;870 888	right side of the mediastinum at the thoracic inlet
+T6	Medical-Assertion 892 907	probably due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 908 938	tortuous head and neck vessels
+T8	Medical-Problem 945 975	slight indentation in the wall
+E6	Medical-Problem:T8
+T9	Medical-Problem 1038 1049	enlargement
+E7	Medical-Problem:T9
+T10	Lesion-Size 1096 1100	8 mm
+T11	Lesion-Description 1106 1121	nodular opacity
+T12	Lesion-Anatomy 1142 1163;1165 1175	anterior right second interspace
+T13	Lesion-Assertion 1176 1184	could be
+A3	Lesion-AssertionValue T13 possible
+T14	Lesion-Anatomy 1187 1191	lung
+T15	Lesion-Description 1192 1198	nodule
+T16	Lesion-Size-Trend 1199 1202	new
+A4	Lesion-Size-TrendValue T16 new
+T17	Medical-Anatomy 1261 1268	Stomach
+T18	Medical-Problem 1272 1309	severely distended with air and fluid
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T12
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T12 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14 has-Lesion-Size-Trend:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T17

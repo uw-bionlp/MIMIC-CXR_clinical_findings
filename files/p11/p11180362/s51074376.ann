@@ -1,0 +1,22 @@
+T1	Medical-Problem 262 309;311 320	New bilateral parenchymal opacities, right more than left
+T2	Medical-Anatomy 337 347	lung bases
+T3	Lesion-Size 361 366	large
+T4	Lesion-Anatomy 367 381	left perihilar
+T5	Lesion-Description 383 391	masslike
+T6	Medical-Problem 445 460	basal opacities
+E6	Medical-Problem:T6
+T7	Medical-Assertion 462 476	likely reflect
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 477 486	pneumonia
+T9	Medical-Problem 493 506	apical change
+T10	Medical-Anatomy 514 537	level of the left hilus
+T11	Medical-Problem 573 594	Moderate cardiomegaly
+E10	Medical-Problem:T11
+T12	Medical-Assertion 617 619	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 621 638	pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

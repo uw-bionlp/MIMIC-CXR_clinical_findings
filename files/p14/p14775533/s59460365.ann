@@ -1,0 +1,37 @@
+T1	Medical-Problem 314 329;331 373	increase in the amount of extensive subcutaneous emphysema
+T2	Medical-Anatomy 381 402	bilateral chest walls
+T3	Medical-Anatomy 404 408;410 429	soft tissues of the neck
+T4	Medical-Problem 470 478	probable
+E4	Medical-Problem:T4
+T5	Medical-Problem 480 497	pneumomediastinum
+E5	Medical-Problem:T5
+T6	Medical-Assertion 689 691	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 692 704	pneumothorax
+T8	Medical-Problem 762 784;786 795	extensive subcutaneous emphysema
+E7	Medical-Problem:T8
+T9	Medical-Problem 798 821	Increased opacification
+T10	Medical-Anatomy 829 844	bilateral bases
+T11	Medical-Problem 898 914	pleural effusion
+T12	Medical-Problem 920 931;933 953	compressive adjacent atelectasis
+T13	Medical-Problem 1024 1082	Increase in the amount of extensive subcutaneous emphysema
+E12	Medical-Problem:T13
+T14	Medical-Assertion 1083 1101	raises concern for
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1103 1111	air leak
+T16	Medical-Assertion 1113 1115	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1116 1137	definite pneumothorax
+T18	Medical-Problem 1174 1186	pneumothorax
+T19	Medical-Assertion 1190 1197	limited
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1208 1250	extensive amount of subcutaneous emphysema
+E16	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T19

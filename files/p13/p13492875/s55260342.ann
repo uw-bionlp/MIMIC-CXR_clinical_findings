@@ -1,0 +1,22 @@
+T1	Medical-Anatomy 239 244	lungs
+T2	Medical-Assertion 250 252	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 253 269	acute infiltrate
+T4	Medical-Anatomy 276 280	hila
+E3	Medical-Anatomy:T4
+T5	Medical-Problem 383 394;396 423	Chronically elevated left hemidiaphragm
+E4	Medical-Problem:T5
+T6	Medical-Assertion 459 461	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 462 469;471 479	pleural effusion
+T8	Medical-Problem 483 495	pneumothorax
+T9	Medical-Assertion 521 532	No evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 536 552	acute infiltrate
+T11	Lesion-Anatomy 556 561	hilar
+T12	Lesion-Description 562 577	lymphadenopathy
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Lesion-Description:T12 has-Lesion-Anatomy:T11

@@ -1,0 +1,19 @@
+T1	Medical-Problem 284 327	large poorly characterize region of opacity
+T2	Medical-Anatomy 335 357	base of the right lung
+T3	Medical-Assertion 359 367	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 368 379	atelectasis
+T5	Lesion-Description 399 403	mass
+E4	Lesion-Description:T5
+T6	Medical-Problem 515 543	Small right pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Assertion 545 547	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 548 560	pneumothorax
+T9	Medical-Assertion 562 564	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 565 585	mediastinal widening
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

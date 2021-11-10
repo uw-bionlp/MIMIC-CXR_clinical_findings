@@ -1,0 +1,34 @@
+T1	Medical-Assertion 325 327	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 328 351;353 364	typical configurational abnormality
+T3	Medical-Anatomy 381 389	Thoracic
+T4	Medical-Problem 399 427	mildly widened and elongated
+T5	Medical-Assertion 433 435	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 436 463	local contour abnormalities
+T7	Medical-Assertion 511 514	not
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 515 524	congested
+T9	Medical-Assertion 527 529	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 539 579	acute or chronic parenchymal infiltrates
+T11	Medical-Problem 650 662;664 674	Somewhat low positioned
+E7	Medical-Problem:T11
+T12	Medical-Problem 679 699	flattened diaphragms
+E8	Medical-Problem:T12
+T13	Medical-Assertion 700 713	suggestive of
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 714 718	COPD
+T15	Medical-Problem 729 734;736 747	acute infiltrates
+E10	Medical-Problem:T15
+T16	Medical-Assertion 780 782	no
+A6	Medical-AssertionValue T16 absent
+T17	Medical-Problem 783 795	pneumothorax
+T18	Medical-Anatomy 803 809;811 815	apical area
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Anatomy:T18

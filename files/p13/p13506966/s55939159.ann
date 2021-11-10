@@ -1,0 +1,39 @@
+T1	Medical-Problem 313 361	Large right pleural effusion, probably loculated
+T2	Medical-Anatomy 372 388	right chest wall
+T3	Medical-Problem 448 490	Large right hilar and infrahilar opacities
+T4	Medical-Assertion 491 494	may
+A1	Medical-AssertionValue T4 possible
+T5	Lesion-Characteristic 540 549	cavitated
+T6	Lesion-Description 550 554	mass
+T7	Medical-Problem 562 587	postobstructive infection
+E6	Medical-Problem:T7
+T8	Medical-Assertion 638 640	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 641 651	cavitation
+T10	Medical-Problem 661 665;667 691	Left infrahilar consolidation
+E8	Medical-Problem:T10
+T11	Medical-Assertion 692 700	could be
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 701 710	pneumonia
+T13	Medical-Problem 719 730	atelectasis
+T14	Medical-Problem 769 791	right pleural effusion
+E11	Medical-Problem:T14
+T15	Medical-Problem 797 817;819 824	leftward mediastinal shift
+T16	Medical-Anatomy 826 831	Heart
+T17	Medical-Assertion 835 838	not
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 839 847	enlarged
+T19	Medical-Problem 849 886;888 899	Diffuse coarse interstitial pulmonary abnormality
+E15	Medical-Problem:T19
+T20	Medical-Assertion 929 937	probably
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 938 963;965 992	pulmonary fibrosis in the setting of severe emphysema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T11
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

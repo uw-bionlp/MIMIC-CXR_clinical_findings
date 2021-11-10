@@ -1,0 +1,49 @@
+T1	Lesion-Size 34 38	7 mm
+T2	Lesion-Description 39 46	nodular
+E2	Lesion-Description:T2
+T3	Lesion-Description 47 54	opacity
+T4	Lesion-Anatomy 69 103	left mid lung, btwn posterior left
+T5	Lesion-Anatomy 164 173	pulmonary
+T6	Lesion-Description 174 180	nodule
+T7	Lesion-Assertion 181 184;186 195	not  excluded
+A1	Lesion-AssertionValue T7 possible
+T8	Medical-Assertion 645 647	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 648 653;655 668	focal consolidation
+T10	Medical-Problem 670 686	pleural effusion
+T11	Medical-Problem 691 699	evidence
+E9	Medical-Problem:T11
+T12	Medical-Problem 703 715	pneumothorax
+T13	Medical-Problem 726 731;733 769	Areas of mild left base linear atelectasis
+E11	Medical-Problem:T13
+T14	Lesion-Anatomy 799 807;809 865	left mid lung, between the posterior left seventh and eighth ribs
+T15	Lesion-Size 872 876	7-mm
+T16	Lesion-Description 877 884	nodular
+T17	Lesion-Description 886 893	opacity
+T18	Lesion-Anatomy 947 956	pulmonary
+T19	Lesion-Description 957 963	nodule
+T20	Lesion-Assertion 968 980	not excluded
+A3	Lesion-AssertionValue T20 possible
+T21	Medical-Assertion 1095 1097	No
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1098 1114	pleural effusion
+T23	Medical-Problem 1119 1131	pneumothorax
+T24	Medical-Problem 1190 1210	Degenerative changes
+T25	Medical-Anatomy 1227 1256	right acromioclavicular joint
+T26	Lesion-Size 1274 1278	7-mm
+T27	Lesion-Description 1279 1286	nodular
+E23	Lesion-Description:T27
+T28	Lesion-Description 1287 1294	opacity
+T29	Lesion-Anatomy 1302 1315	left mid lung
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T8
+E14	Lesion-Description:T16 has-Lesion-Anatomy:T14
+E15	Lesion-Description:T17 has-Lesion-Size-Present:T15
+E17	Lesion-Description:T19 has-Lesion-Anatomy:T18 has-Lesion-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Assertion:T21
+E20	Medical-Problem:T24 has-Medical-Anatomy:T25
+E24	Lesion-Description:T28 has-Lesion-Size-Present:T26 has-Lesion-Anatomy:T29

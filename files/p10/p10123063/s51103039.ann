@@ -1,0 +1,21 @@
+T1	Medical-Anatomy 307 312	lungs
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 345 360	subtle blunting
+T3	Medical-Anatomy 368 377;379 398	posterior costophrenic angles
+T4	Medical-Assertion 404 417	likely due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 418 434	mild atelectasis
+T6	Medical-Problem 447 452;454 471	trace pleural effusions
+T7	Medical-Assertion 474 476	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 477 499	large pleural effusion
+T9	Medical-Assertion 519 530	no evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 535 547	pneumothorax
+T11	Medical-Problem 620 644	Mild basilar atelectasis
+E8	Medical-Problem:T11
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

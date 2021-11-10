@@ -1,0 +1,52 @@
+T1	Medical-Anatomy 99 109;111 116	left lower  lung
+T2	Medical-Assertion 131 138	appears
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 139 153	more opacified
+T4	Medical-Problem 163 168	heart
+E3	Medical-Problem:T4
+T5	Medical-Assertion 303 315	Differential
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 341 350;352 372	pulmonary  vascular congestion
+T7	Medical-Problem 374 405	developing underlying pneumonia
+T8	Medical-Problem 435 445	aspiration
+T9	Medical-Assertion 448 450	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 451 465	pneumothoraces
+T11	Medical-Problem 530 554	mild basilar atelectasis
+E8	Medical-Problem:T11
+T12	Medical-Problem 1050 1068	SEGMENTAL COLLAPSE
+E9	Medical-Problem:T12
+T13	Lesion-Size 1164 1169	LARGE
+E10	Lesion-Size:T13
+T14	Lesion-Anatomy 1170 1193	CENTRAL LEFT UPPER LOBE
+E11	Lesion-Anatomy:T14
+T15	Lesion-Description 1195 1199	MASS
+E12	Lesion-Description:T15
+T16	Medical-Problem 1202 1229	HETEROGENEOUS OPACIFICATION
+T17	Medical-Anatomy 1237 1260	RIGHT INFRAHILAR REGION
+T18	Medical-Assertion 1261 1269	COULD BE
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1271 1282	ATELECTASIS
+T20	Medical-Problem 1286 1301	EARLY PNEUMONIA
+T21	Medical-Problem 1340 1357	MILD CARDIOMEGALY
+E17	Medical-Problem:T21
+T22	Medical-Problem 1424 1454	INCREASED INTRAVASCULAR VOLUME
+E18	Medical-Problem:T22
+T23	Medical-Assertion 1469 1471	NO
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1472 1481;1483 1488	PULMONARY EDEMA
+T25	Medical-Problem 1492 1520	APPRECIABLE PLEURAL EFFUSION
+T26	Medical-Assertion 1540 1573	NEITHER SUGGESTS NOR EXCLUDES THE
+A6	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1587 1592;1594 1612	ACUTE PULMONARY EMBOLISM
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E20	Medical-Problem:T25 has-Medical-Assertion:T23
+E21	Medical-Problem:T27 has-Medical-Assertion:T26

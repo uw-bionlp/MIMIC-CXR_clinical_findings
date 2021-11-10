@@ -1,0 +1,29 @@
+T1	Medical-Problem 205 222	minimal stranding
+T2	Medical-Anatomy 230 252	site of the chest tube
+T3	Medical-Problem 255 261;263 270	Patchy opacity
+T4	Medical-Anatomy 278 304	right cardiophrenic region
+T5	Medical-Problem 320 334;336 349	Elevated right hemidiaphragm
+E5	Medical-Problem:T5
+T6	Medical-Assertion 365 373	Possible
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 374 399	trace right pleural fluid
+T8	Medical-Assertion 405 407	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 408 413;415 423	gross effusion
+T10	Medical-Assertion 426 428	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 429 441	pneumothorax
+T12	Medical-Problem 453 472	Minimal atelectasis
+T13	Medical-Anatomy 480 489	left base
+T14	Medical-Problem 502 527	upper zone redistribution
+E11	Medical-Problem:T14
+T15	Medical-Assertion 529 536	without
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 537 546	overt CHF
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

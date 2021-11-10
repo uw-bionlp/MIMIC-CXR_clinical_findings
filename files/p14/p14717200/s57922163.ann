@@ -1,0 +1,15 @@
+T1	Medical-Problem 283 299	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 305 339	pulmonary vascular re-distribution
+E2	Medical-Problem:T2
+T3	Medical-Problem 353 376	new/increased opacities
+T4	Medical-Anatomy 380 396	both lower lungs
+T5	Medical-Assertion 410 425	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 427 438	volume loss
+T7	Medical-Problem 440 456	early infiltrate
+T8	Medical-Assertion 457 475	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T8

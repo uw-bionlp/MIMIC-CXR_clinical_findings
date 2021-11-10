@@ -1,0 +1,19 @@
+T1	Medical-Problem 189 221	Mild-to-moderate pulmonary edema
+T2	Medical-Anatomy 268 304	perihilar left and right lower lungs
+T3	Medical-Problem 311 335;337 350	large area of persistent consolidation
+T4	Medical-Anatomy 358 414;416 420	right upper lobe and superior segment of the right lower lobe
+T5	Medical-Problem 440 471	Moderate-to-severe cardiomegaly
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 485 511	Mediastinal vascular veins
+T7	Medical-Assertion 516 519	not
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 520 527	dilated
+T9	Medical-Problem 658 681	Small pleural effusions
+E8	Medical-Problem:T9
+T10	Medical-Assertion 707 709	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 710 722	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

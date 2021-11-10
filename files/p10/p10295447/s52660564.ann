@@ -1,0 +1,30 @@
+T1	Medical-Problem 258 307	Severe diffuse infiltrative pulmonary abnormality
+T2	Medical-Anatomy 317 333;335 350	both lungs, left more than right
+T3	Lesion-Count 358 365	handful
+T4	Lesion-Description 385 392	nodules
+T5	Medical-Assertion 395 407;409 418	Differential diagnosis
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 428 467	acute pneumonia, probably not bacterial
+T7	Medical-Problem 473 482;484 494	pulmonary hemorrhage
+T8	Medical-Assertion 506 508	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 509 525	pleural effusion
+T10	Medical-Problem 527 539	cardiomegaly
+T11	Medical-Problem 543 554;556 576	mediastinal vascular engorgement
+T12	Medical-Problem 589 620	edema due to cardiogenic causes
+E10	Medical-Problem:T12
+T13	Lesion-Size 638 643	small
+T14	Lesion-Anatomy 644 648	lung
+T15	Lesion-Description 649 656	nodules
+T16	Lesion-Assertion 661 669	presumed
+A3	Lesion-AssertionValue T16 possible
+T17	Lesion-Description 1094 1101	nodules
+E14	Lesion-Description:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Count:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E13	Lesion-Description:T15 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T14 has-Lesion-Assertion:T16

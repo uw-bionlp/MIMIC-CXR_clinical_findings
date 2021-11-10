@@ -1,0 +1,24 @@
+T1	Medical-Problem 262 273	Obscuration
+T2	Medical-Anatomy 281 299	right heart border
+T3	Medical-Problem 305 318	wedge opacity
+T4	Medical-Anatomy 340 357	right middle lobe
+T5	Medical-Anatomy 369 374	Lungs
+T6	Medical-Problem 401 410;412 433	increased interstitial markings
+T7	Medical-Assertion 476 478	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 479 487	effusion
+T9	Medical-Problem 491 508	Mild cardiomegaly
+E8	Medical-Problem:T9
+T10	Medical-Anatomy 644 649	Right
+T11	Medical-Problem 662 669	opacity
+E10	Medical-Problem:T11
+T12	Medical-Problem 686 697	atelectasis
+T13	Medical-Assertion 702 711	posssible
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 712 721	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10
+E12	Medical-Problem:T14 has-Medical-Anatomy:T10 has-Medical-Assertion:T13

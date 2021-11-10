@@ -1,0 +1,39 @@
+T1	Medical-Problem 483 498	left upper lobe
+E1	Medical-Problem:T1
+T2	Medical-Problem 499 506	opacity
+E2	Medical-Problem:T2
+T3	Medical-Problem 545 566	focal, linear opacity
+T4	Medical-Anatomy 574 589	left lower lobe
+T5	Medical-Assertion 590 605	likely reflects
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 607 615	scarring
+T7	Medical-Problem 619 630	atelectasis
+T8	Medical-Problem 647 662	stable scarring
+E7	Medical-Problem:T8
+T9	Medical-Problem 664 675	atelectasis
+E8	Medical-Problem:T9
+T10	Medical-Problem 683 705	small pleural effusion
+T11	Medical-Anatomy 713 737	right costophrenic angle
+T12	Medical-Problem 750 764	calcifications
+T13	Medical-Anatomy 776 799	wall of the aortic arch
+T14	Medical-Problem 803 828	Bilateral hyper inflation
+E13	Medical-Problem:T14
+T15	Medical-Problem 854 871	severe osteopenia
+E14	Medical-Problem:T15
+T16	Medical-Problem 876 897;899 910	unchanged compression deformities
+T17	Medical-Anatomy 914 921	T11-T12
+T18	Lesion-Size-Trend 942 962	Unchanged appearance
+A2	Lesion-Size-TrendValue T18 no-change
+T19	Lesion-Anatomy 966 981	left upper lobe
+T20	Lesion-Description 982 986	mass
+T21	Medical-Assertion 989 1000	No evidence
+A3	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1004 1013	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E15	Medical-Problem:T16 has-Medical-Anatomy:T17
+E18	Lesion-Description:T20 has-Lesion-Size-Trend:T18 has-Lesion-Anatomy:T19
+E19	Medical-Problem:T22 has-Medical-Assertion:T21

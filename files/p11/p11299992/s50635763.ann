@@ -1,0 +1,26 @@
+T1	Medical-Problem 681 694	opacification
+T2	Medical-Anatomy 702 724	base of the right lung
+T3	Medical-Assertion 732 739	absence
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 744 769	pulmonary edema elsewhere
+T5	Medical-Problem 785 795	aspiration
+E4	Medical-Problem:T5
+T6	Medical-Problem 799 808	pneumonia
+T7	Medical-Assertion 826 832	may be
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 841 869	left perihilar consolidation
+T9	Lesion-Anatomy 890 894;896 901	left hilar
+T10	Lesion-Description 902 906	mass
+T11	Medical-Assertion 918 920	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 921 949	appreciable pleural effusion
+T13	Medical-Problem 953 965	pneumothorax
+T14	Medical-Problem 978 1006	at least moderately enlarged
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

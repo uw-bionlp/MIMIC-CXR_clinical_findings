@@ -1,0 +1,29 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 45	pneumonia
+T3	Medical-Anatomy 361 366	Lungs
+E2	Medical-Anatomy:T3
+T4	Medical-Problem 397 416	Coarse interstitial
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 434 443	bilateral
+T6	Medical-Assertion 455 470	likely reflects
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 471 491	chronic lung disease
+T8	Medical-Problem 556 576;578 586	heart remains mildly enlarged
+E6	Medical-Problem:T8
+T9	Medical-Problem 589 603	Calcifications
+E7	Medical-Problem:T9
+T10	Medical-Assertion 634 636	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 637 649	pneumothorax
+T12	Medical-Problem 652 668	pleural effusion
+T13	Medical-Problem 673 686	consolidation
+T14	Medical-Assertion 707 709	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 710 719	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

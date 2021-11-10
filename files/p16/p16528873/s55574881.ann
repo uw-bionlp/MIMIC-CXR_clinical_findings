@@ -1,0 +1,36 @@
+T1	Medical-Problem 33 61	Hazy increased opacification
+T2	Medical-Anatomy 69 85	right lower lung
+T3	Medical-Problem 91 105;107 117	linear streaky  opacities
+T4	Medical-Anatomy 138 165	right lung base posteriorly
+T5	Medical-Assertion 232 257	which may be secondary to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 260 271	atelectasis
+T7	Medical-Problem 279 288	infection
+T8	Medical-Problem 640 649;651 668	unchanged increased density
+T9	Medical-Anatomy 676 691	right lung base
+T10	Medical-Problem 698 705	opacity
+E9	Medical-Problem:T10
+T11	Medical-Problem 832 842	of opacity
+T12	Medical-Anatomy 863 882;884 888	bases of the middle lobe
+T13	Medical-Assertion 915 923	could be
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 931 952	atelectatic in nature
+T15	Medical-Problem 969 1014	combination between atelectasis and infection
+T16	Medical-Assertion 1017 1019	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1020 1028	effusion
+T18	Medical-Problem 1083 1092	pulmonary
+E15	Medical-Problem:T18
+T19	Medical-Problem 1093 1098	edema
+E16	Medical-Problem:T19
+T20	Medical-Anatomy 1101 1114	Left pectoral
+E17	Medical-Anatomy:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

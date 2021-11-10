@@ -1,0 +1,26 @@
+T1	Medical-Problem 363 379;381 393	mild-to-moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 396 415	Dense consolidation
+T3	Medical-Anatomy 426 436	both lungs
+T4	Medical-Assertion 466 485	likely representing
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 486 527	combination pneumonia and pulmonary edema
+T6	Medical-Assertion 531 539	Possible
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 540 559	bilateral effusions
+T8	Medical-Assertion 560 578	cannot be excluded
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 581 583	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 584 596	pneumothorax
+T11	Medical-Problem 616 635	Dense consolidation
+T12	Medical-Anatomy 646 656	both lungs
+T13	Medical-Assertion 686 705	likely representing
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 706 747	combination pneumonia and pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Anatomy:T12
+E9	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

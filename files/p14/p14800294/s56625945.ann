@@ -1,0 +1,17 @@
+T1	Medical-Problem 338 366	Minimal areas of atelectasis
+T2	Medical-Anatomy 374 378;380 385	lung bases
+T3	Medical-Assertion 391 402	no evidence
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 406 415	pneumonia
+T5	Medical-Assertion 418 420	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 421 433	pneumothorax
+T7	Medical-Problem 436 458;460 478	Borderline size of the cardiac silhouette
+E5	Medical-Problem:T7
+T8	Medical-Assertion 479 486	without
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 487 508	overt pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

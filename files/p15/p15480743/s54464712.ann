@@ -1,0 +1,23 @@
+T1	Medical-Problem 222 243	Postoperative changes
+T2	Medical-Anatomy 255 270	left lower lobe
+T3	Medical-Problem 312 328	mild volume loss
+T4	Medical-Problem 333 347	focal scarring
+T5	Medical-Problem 366 391	Persistent patchy opacity
+T6	Medical-Anatomy 395 418	right infrahilar region
+T7	Medical-Assertion 419 425;427 437	likely represents
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 438 457	crowding of vessels
+T9	Medical-Assertion 608 616	Probable
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 617 628	atelectasis
+T11	Medical-Anatomy 632 648;650 656	right infrahilar region
+T12	Medical-Assertion 661 672	less likely
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 673 688	focal pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

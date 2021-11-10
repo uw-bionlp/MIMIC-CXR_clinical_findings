@@ -1,0 +1,36 @@
+T1	Medical-Problem 273 295;297 305	Pulmonary arteries are enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 307 334	most likely consistent with
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 335 357	pulmonary hypertension
+T4	Medical-Problem 360 367;369 391	Diffuse interstitial opacities
+T5	Medical-Anatomy 402 422	throughout the lungs
+T6	Medical-Assertion 459 481	Differential diagnosis
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 496 523;525 530	mild interstitial pulmonary edema
+T8	Medical-Problem 538 563	interstitial lung disease
+T9	Medical-Assertion 580 582	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 583 599	pleural effusion
+T11	Medical-Problem 604 616	pneumothorax
+T12	Lesion-Assertion 627 629	No
+A4	Lesion-AssertionValue T12 absent
+T13	Lesion-Characteristic 630 640	definitive
+T14	Lesion-Characteristic 641 646	focal
+T15	Lesion-Description 647 651	mass
+T16	Medical-Problem 781 797	slight narrowing
+T17	Medical-Anatomy 805 818	upper trachea
+T18	Medical-Problem 823 827;829 850	mild deviation to the left
+E14	Medical-Problem:T18
+T19	Medical-Assertion 856 880	might be consistent with
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 881 906	right thyroid enlargement
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Lesion-Description:T15 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

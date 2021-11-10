@@ -1,0 +1,17 @@
+T1	Medical-Problem 196 243	Continued enlargement of the cardiac silhouette
+T2	Medical-Problem 249 260	atelectasis
+T3	Medical-Anatomy 269 302	base, most prominent on the right
+T4	Medical-Problem 309 331	soft tissue prominence
+T5	Medical-Anatomy 340 373	superior mediastinum to the right
+T6	Medical-Assertion 374 396	most likely represents
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 397 416;418 425	tortuosity of great vessels
+T8	Lesion-Characteristic 436 444	discrete
+T9	Lesion-Description 445 449	mass
+T10	Lesion-Assertion 450 463	could present
+A2	Lesion-AssertionValue T10 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T8 has-Lesion-Assertion:T10

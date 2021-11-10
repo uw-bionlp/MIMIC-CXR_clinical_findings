@@ -1,0 +1,20 @@
+T1	Medical-Problem 327 342	mild tortuosity
+T2	Medical-Anatomy 350 366	descending aorta
+T3	Lesion-Count 395 402	Several
+T4	Lesion-Characteristic 404 416	noncalcified
+T5	Lesion-Anatomy 417 426	pulmonary
+T6	Lesion-Description 427 434	nodules
+T7	Medical-Assertion 518 520	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 521 540	focal consolidation
+T9	Medical-Problem 542 549;551 559	pleural effusion
+T10	Medical-Problem 563 575	pneumothorax
+T11	Medical-Assertion 594 596	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 597 626	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Count:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

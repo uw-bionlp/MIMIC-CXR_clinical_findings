@@ -1,0 +1,21 @@
+T1	Medical-Problem 242 255;257 268	mild vascular engorgement
+T2	Medical-Anatomy 276 291	perihilar areas
+T3	Medical-Problem 296 326	slight interstitial prominence
+T4	Medical-Anatomy 335 345	lung bases
+T5	Medical-Assertion 351 375	might be consistent with
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 376 381	edema
+T7	Medical-Problem 412 460	slight interval increase in pleural effusion, on
+T8	Medical-Anatomy 465 470	right
+T9	Medical-Problem 532 546	small effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 586 601	amount of fluid
+E9	Medical-Problem:T10
+T11	Medical-Assertion 652 654	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 655 667	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

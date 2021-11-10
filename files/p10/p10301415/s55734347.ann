@@ -1,0 +1,24 @@
+T1	Medical-Problem 302 315	consolidation
+T2	Medical-Anatomy 323 339	right upper lobe
+T3	Medical-Problem 343 360	Increased opacity
+T4	Medical-Anatomy 368 383	right lung base
+T5	Medical-Assertion 384 398	likely reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 417 433	pleural effusion
+T7	Medical-Problem 438 449	atelectasis
+T8	Medical-Problem 452 479	Left lower lobe atelectasis
+E7	Medical-Problem:T8
+T9	Medical-Problem 486 491;493 514	small left pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Assertion 528 530	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 531 557	new areas of consolidation
+T12	Medical-Assertion 565 567	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 569 581	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,28 @@
+T1	Medical-Problem 396 418	heart remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 472 499	small left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Assertion 606 608	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 610 622	pneumothorax
+T5	Medical-Problem 624 643	Rightward deviation
+T6	Medical-Anatomy 651 658	trachea
+T7	Medical-Problem 667 683;685 702	adjacent area of increased opacity
+T8	Lesion-Assertion 706 719	suggestive of
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Anatomy 722 729	thyroid
+T10	Lesion-Description 730 734	mass
+T11	Medical-Problem 822 859	Increased small left pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 868 887	Rightward deviation
+T13	Medical-Anatomy 895 902	trachea
+T14	Lesion-Assertion 903 923	may be suggestive of
+A3	Lesion-AssertionValue T14 possible
+T15	Lesion-Anatomy 926 933	thyroid
+T16	Lesion-Description 934 938	mass
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Lesion-Description:T16 has-Lesion-Assertion:T14 has-Lesion-Anatomy:T15

@@ -1,0 +1,32 @@
+T1	Medical-Problem 236 261	right apical pneumothorax
+T2	Medical-Assertion 262 280	has since resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 340 399	Predominantly basilar, reticular interstitial opacification
+E2	Medical-Problem:T3
+T4	Medical-Problem 432 461	idiopathic pulmonary fibrosis
+E3	Medical-Problem:T4
+T5	Medical-Problem 463 482	Increased opacities
+T6	Medical-Anatomy 500 514	left lung base
+T7	Medical-Assertion 525 527	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 528 544	pleural effusion
+T9	Medical-Problem 596 613	mild cardiomegaly
+E7	Medical-Problem:T9
+T10	Medical-Assertion 645 655	Resolution
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 663 688	right apical pneumothorax
+T12	Medical-Problem 690 709;711 740	Baseline changes of idiopathic pulmonary fibrosis
+T13	Medical-Problem 748 768	superimposed opacity
+T14	Medical-Anatomy 776 785;787 791	left lung base
+T15	Medical-Assertion 798 809	may reflect
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 810 851	atelectasis acute on chronic inflammation
+T17	Medical-Problem 890 899	infection
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T14
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

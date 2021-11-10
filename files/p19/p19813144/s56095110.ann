@@ -1,0 +1,13 @@
+T1	Medical-Problem 227 248	Minimal opacification
+T2	Medical-Anatomy 265 274;276 280	left lung base
+T3	Medical-Assertion 287 300	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 301 312	atelectasis
+T5	Medical-Problem 323 352	underlying infectious process
+T6	Medical-Problem 362 371	pneumonia
+T7	Medical-Assertion 372 401	cannot be completely excluded
+A2	Medical-AssertionValue T7 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T7

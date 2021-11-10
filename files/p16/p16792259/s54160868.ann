@@ -1,0 +1,34 @@
+T1	Medical-Problem 309 329	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 331 360	Heart size is mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 363 371	Widening
+T4	Medical-Anatomy 379 407	superior mediastinal contour
+T5	Medical-Problem 441 471	Atherosclerotic calcifications
+T6	Medical-Anatomy 489 500	aortic knob
+T7	Medical-Problem 502 516	Hazy opacities
+T8	Medical-Anatomy 535 583	mid lung fields bilaterally, more so on the left
+T9	Medical-Problem 585 595;597 613	Small left pleural effusion
+E9	Medical-Problem:T9
+T10	Medical-Assertion 633 635	No
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 636 648	pneumothorax
+T12	Medical-Assertion 664 666	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 667 672;674 693	acute osseous abnormality
+T14	Medical-Problem 726 740	Hazy opacities
+T15	Medical-Anatomy 744 785	both mid lung fields, more so on the left
+T16	Medical-Assertion 790 796	likely
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 797 802;804 825	trace left pleural effusion
+T18	Medical-Problem 855 875	multifocal pneumonia
+E15	Medical-Problem:T18
+T19	Medical-Problem 888 927	component of asymmetric pulmonary edema
+E16	Medical-Problem:T19
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

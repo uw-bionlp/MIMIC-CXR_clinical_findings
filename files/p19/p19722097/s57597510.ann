@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 241 246	lungs
+T2	Medical-Assertion 258 265	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 266 279	consolidation
+T4	Medical-Problem 283 300	pleural effusions
+T5	Medical-Problem 312 333	stable hyperinflation
+T6	Medical-Problem 339 353	subtle lucency
+T7	Medical-Anatomy 361 372	upper lobes
+T8	Medical-Problem 389 409	underlying emphysema
+T9	Lesion-Size-Trend 424 430	stable
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Lesion-Characteristic 431 447	benign-appearing
+T11	Lesion-Characteristic 448 455	osseous
+T12	Lesion-Description 456 462	lesion
+T13	Lesion-Anatomy 474 486	left humerus
+T14	Lesion-Assertion 489 495	likely
+A3	Lesion-AssertionValue T14 possible
+T15	Lesion-Description 499 510	enchondroma
+T16	Medical-Problem 528 537	Emphysema
+E13	Medical-Problem:T16
+T17	Medical-Assertion 539 541	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 542 557	acute pneumonia
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T7
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E10	Lesion-Description:T12 has-Lesion-Size-Trend:T9 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E12	Lesion-Description:T15 has-Lesion-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

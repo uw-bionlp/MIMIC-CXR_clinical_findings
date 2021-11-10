@@ -1,0 +1,42 @@
+T1	Lesion-Size 250 265	very small 2 mm
+T2	Lesion-Description 266 272	nodule
+T3	Lesion-Anatomy 295 310	left upper lobe
+T4	Lesion-Assertion 316 324	could be
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Characteristic 327 336	calcified
+T6	Lesion-Description 337 346	granuloma
+T7	Lesion-Size 357 362	small
+T8	Lesion-Description 363 374	bone island
+T9	Lesion-Anatomy 382 413	posterior portion of fourth rib
+T10	Medical-Anatomy 420 434;436 451	right superior paramediastinal
+T11	Medical-Assertion 482 495	could only be
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 496 512	tortuous vessels
+T13	Medical-Problem 517 540	mediastinal lipomatosis
+T14	Lesion-Characteristic 548 558	underlying
+T15	Lesion-Description 559 563	mass
+T16	Lesion-Assertion 564 582	cannot be excluded
+A3	Lesion-AssertionValue T16 possible
+T17	Medical-Assertion 628 630	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 631 647	pleural effusion
+T19	Medical-Assertion 652 654	no
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 656 668	pneumothorax
+T21	Medical-Anatomy 842 879	right superior paramediastinal region
+T22	Medical-Problem 883 899	slightly widened
+T23	Medical-Assertion 906 932	could only be secondary to
+A6	Medical-AssertionValue T23 possible
+T24	Medical-Problem 933 949	tortuous vessels
+T25	Medical-Problem 953 964	lipomatosis
+E2	Lesion-Description:T2 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5
+E7	Lesion-Description:T8 has-Lesion-Assertion:T4 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Lesion-Description:T15 has-Lesion-Characteristic:T14 has-Lesion-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T22 has-Medical-Anatomy:T21
+E18	Medical-Problem:T24 has-Medical-Anatomy:T21 has-Medical-Assertion:T23
+E19	Medical-Problem:T25 has-Medical-Anatomy:T21 has-Medical-Assertion:T23

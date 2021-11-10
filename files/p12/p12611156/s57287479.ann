@@ -1,0 +1,25 @@
+T1	Medical-Problem 350 395	persistent small to moderate pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 459 482	compressive atelectasis
+T3	Medical-Anatomy 490 494;496 506	left lower lung
+T4	Medical-Problem 548 557	pneumonia
+T5	Medical-Assertion 561 574;576 583	impossible to exclude
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 621 623	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 624 636	pneumothorax
+T8	Medical-Problem 725 737	DISH-related
+T9	Medical-Problem 738 745	changes
+T10	Medical-Anatomy 753 760	T-spine
+T11	Medical-Assertion 769 771	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 772 780	free air
+T13	Medical-Anatomy 791 796;798 811	right hemidiaphragm
+T14	Medical-Problem 836 867	small to moderate left effusion
+E11	Medical-Problem:T14
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T10
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13

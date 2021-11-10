@@ -1,0 +1,36 @@
+T1	Medical-Problem 199 232	retrocardiac opacity silhouetting
+T2	Medical-Anatomy 237 257	medial hemidiaphragm
+T3	Medical-Problem 279 290	atelectasis
+T4	Medical-Anatomy 297 302	lungs
+T5	Medical-Assertion 323 330	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 331 336;338 345	focal opacity
+T7	Medical-Problem 347 362	pulmonary edema
+T8	Medical-Problem 364 380	pleural effusion
+T9	Medical-Problem 384 396	pneumothorax
+T10	Medical-Problem 399 414;416 420	Cardiomegaly is mild
+E9	Medical-Problem:T10
+T11	Medical-Problem 427 444	aorta is tortuous
+E10	Medical-Problem:T11
+T12	Medical-Problem 447 486	Mid thoracic vertebral body height loss
+E11	Medical-Problem:T12
+T13	Medical-Problem 536 553	Mild cardiomegaly
+E12	Medical-Problem:T13
+T14	Medical-Problem 556 576	Retrocardiac opacity
+E13	Medical-Problem:T14
+T15	Medical-Assertion 578 589	potentially
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 590 601	atelectasis
+T17	Medical-Problem 610 619	infection
+T18	Medical-Assertion 620 638	cannot be excluded
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 641 677	Mid thoracic compression deformities
+E16	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T15 has-Medical-Assertion:T18

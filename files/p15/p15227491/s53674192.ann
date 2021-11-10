@@ -1,0 +1,34 @@
+T1	Medical-Assertion 421 423	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 424 429;431 448	large residual effusion
+T3	Medical-Problem 480 501	small amount of fluid
+E2	Medical-Problem:T3
+T4	Medical-Problem 617 631	Linear opacity
+T5	Medical-Anatomy 639 648	left base
+T6	Medical-Assertion 649 660;662 670	most likely reflects
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 671 695	subsegmental atelectasis
+T8	Medical-Problem 706 720	patchy opacity
+T9	Medical-Anatomy 728 738	right base
+T10	Medical-Assertion 751 764	could reflect
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 765 776	atelectasis
+T12	Medical-Problem 787 809	superimposed pneumonia
+T13	Medical-Assertion 810 816;818 831	should be considered
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 850 889	interstitium is slightly more prominent
+E10	Medical-Problem:T14
+T15	Medical-Assertion 912 935	raising the possibility
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 939 975	superimposed mild interstitial edema
+T17	Medical-Assertion 1011 1013	No
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1014 1026	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T18 has-Medical-Assertion:T17

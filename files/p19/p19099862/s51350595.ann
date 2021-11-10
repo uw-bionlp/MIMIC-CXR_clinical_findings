@@ -1,0 +1,31 @@
+T1	Medical-Problem 220 257	cardiac silhouette is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 264 272	aorta is
+E2	Medical-Problem:T2
+T3	Medical-Problem 273 286;288 296	calcified and tortuous
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 299 308	Bibasilar
+T5	Medical-Problem 309 318	opacities
+T6	Medical-Assertion 334 349	could be due to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 350 359	pneumonia
+T8	Medical-Problem 362 372	aspiration
+T9	Medical-Problem 377 388	atelectasis
+T10	Medical-Problem 405 434	patchy right mid lung opacity
+E9	Medical-Problem:T10
+T11	Medical-Problem 443 472	pulmonary vascular congestion
+T12	Medical-Assertion 473 487	may be present
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 490 492	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 493 515	large pleural effusion
+T15	Medical-Assertion 536 547	no evidence
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 551 563	pneumothorax
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Medical-Problem:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

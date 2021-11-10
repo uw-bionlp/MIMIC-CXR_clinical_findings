@@ -1,0 +1,28 @@
+T1	Medical-Assertion 436 438	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 439 451	pneumothorax
+T3	Medical-Problem 492 523	left lateral pleural thickening
+E2	Medical-Problem:T3
+T4	Medical-Problem 535 549	patchy opacity
+T5	Medical-Anatomy 558 567	left base
+T6	Medical-Problem 577 603	scattered linear opacities
+T7	Medical-Assertion 610 624	likely reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 625 631;633 661	patchy and subsegmental atelectasis
+T9	Medical-Problem 672 681	pneumonia
+T10	Medical-Assertion 682 709	cannot be entirely excluded
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Anatomy 842 859	left heart border
+T12	Medical-Problem 864 875	obscured by
+E9	Medical-Problem:T12
+T13	Medical-Problem 876 902	overlying airspace process
+T14	Medical-Assertion 905 907	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 908 923	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T7 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

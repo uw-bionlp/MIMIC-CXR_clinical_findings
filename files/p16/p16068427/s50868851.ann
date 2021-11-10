@@ -1,0 +1,71 @@
+T1	Medical-Problem 262 281	moderate tortuosity
+T2	Medical-Anatomy 289 308	aorta and the archs
+T3	Medical-Problem 315 335	patchy calcification
+T4	Lesion-Characteristic 350 359	Calcified
+T5	Lesion-Description 360 371	lymph nodes
+T6	Lesion-Anatomy 379 390	right hilum
+T7	Lesion-Anatomy 402 413;415 434	right lower paratracheal region
+T8	Lesion-Characteristic 435 471	suggest prior granulomatous exposure
+T9	Medical-Problem 476 493;495 511	trace right-sided pleural effusion
+E9	Medical-Problem:T9
+T10	Medical-Problem 529 543	small effusion
+E10	Medical-Problem:T10
+T11	Medical-Problem 576 580	left
+E11	Medical-Problem:T11
+T12	Medical-Problem 592 645	new mild relative elevation of the left hemidiaphragm
+E12	Medical-Problem:T12
+T13	Medical-Problem 653 673	lung volumes are low
+E13	Medical-Problem:T13
+T14	Medical-Problem 689 711	new perihilar fullness
+E14	Medical-Problem:T14
+T15	Medical-Problem 723 753;755 766	indistinct prominent pulmonary vascularity
+T16	Medical-Problem 774 799	mild interstitial process
+E16	Medical-Problem:T16
+T17	Medical-Anatomy 801 831	predominantly in the mid lungs
+T18	Medical-Assertion 834 844	suggesting
+A1	Medical-AssertionValue T18 possible
+T19	Medical-Problem 845 869	mild vascular congestion
+T20	Medical-Problem 874 891	band-like opacity
+T21	Medical-Anatomy 899 909;911 915	left upper lobe
+T22	Medical-Problem 924 951	slightly altered morphology
+T23	Medical-Assertion 956 959	may
+A2	Medical-AssertionValue T23 possible
+T24	Lesion-Description 977 984;986 993	nodular density
+E22	Lesion-Description:T24
+T25	Lesion-Size-Trend 1080 1083	new
+A3	Lesion-Size-TrendValue T25 new
+T26	Lesion-Description 1084 1090	nodule
+T27	Lesion-Anatomy 1152 1161	posterior
+T28	Lesion-Description 1162 1169	nodular
+E25	Lesion-Description:T28
+T29	Lesion-Description 1170 1177	opacity
+T30	Lesion-Anatomy 1185 1213;1215 1246	lateral view projecting over the mid to lower thoracic spine
+T31	Medical-Problem 1249 1273	Patchy basilar opacities
+E28	Medical-Problem:T31
+T32	Medical-Assertion 1274 1281	suggest
+A4	Medical-AssertionValue T32 possible
+T33	Medical-Problem 1282 1292;1294 1320	additional areas of minor atelectasis
+T34	Medical-Problem 1331 1363	bones are probably demineralized
+E30	Medical-Problem:T34
+T35	Medical-Problem 1375 1403;1405 1414	similar exaggerated kyphotic curvature
+T36	Medical-Anatomy 1422 1444	thoracolumbar junction
+T37	Medical-Problem 1450 1475	mild degenerative changes
+T38	Medical-Problem 1519 1543	mild vascular congestion
+E34	Medical-Problem:T38
+T39	Lesion-Assertion 1552 1560	Possible
+A5	Lesion-AssertionValue T39 possible
+T40	Lesion-Description 1561 1567	nodule
+T41	Lesion-Anatomy 1575 1588	left mid lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T8
+E15	Medical-Problem:T15 has-Medical-Anatomy:T17
+E18	Medical-Problem:T19 has-Medical-Assertion:T18
+E19	Medical-Problem:T20 has-Medical-Anatomy:T21
+E21	Medical-Problem:T22 has-Medical-Anatomy:T21 has-Medical-Assertion:T23
+E23	Lesion-Description:T26 has-Lesion-Size-Trend:T25
+E26	Lesion-Description:T29 has-Lesion-Anatomy:T27 has-Lesion-Anatomy:T30
+E29	Medical-Problem:T33 has-Medical-Assertion:T32
+E31	Medical-Problem:T35 has-Medical-Anatomy:T36
+E33	Medical-Problem:T37 has-Medical-Anatomy:T36
+E35	Lesion-Description:T40 has-Lesion-Assertion:T39 has-Lesion-Anatomy:T41

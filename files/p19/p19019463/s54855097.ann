@@ -1,0 +1,31 @@
+T1	Medical-Problem 242 259	interval decrease
+E1	Medical-Problem:T1
+T2	Medical-Problem 264 293	right-sided pleural effusion,
+E2	Medical-Problem:T2
+T3	Medical-Problem 306 335	Residual linear opacification
+T4	Medical-Anatomy 348 364	right lower lung
+T5	Medical-Assertion 365 382	likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 383 394	atelectasis
+T7	Lesion-Size-Trend 439 445	Stable
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Lesion-Anatomy 446 462	right upper lung
+T9	Lesion-Description 463 467	mass
+T10	Medical-Problem 607 636	right-sided pleural effusion,
+E8	Medical-Problem:T10
+T11	Medical-Problem 658 685	Small left pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 688 709	Bibasilar atelectasis
+E10	Medical-Problem:T12
+T13	Lesion-Size-Trend 712 718	Stable
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Lesion-Anatomy 719 724;726 736	right upper lung
+T15	Lesion-Description 737 741	mass
+T16	Medical-Assertion 744 746	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 747 759	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Size-Trend:T7 has-Lesion-Anatomy:T8
+E12	Lesion-Description:T15 has-Lesion-Size-Trend:T13 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

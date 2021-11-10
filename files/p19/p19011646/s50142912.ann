@@ -1,0 +1,21 @@
+T1	Medical-Problem 237 277	Small right pneumothorax, largely medial
+E1	Medical-Problem:T1
+T2	Medical-Problem 299 315;317 328	Right lower lobe atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 381 388	Opacity
+T4	Medical-Anatomy 397 411	left lung base
+T5	Medical-Assertion 412 420	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 421 432	atelectasis
+T7	Medical-Problem 436 456	developing pneumonia
+T8	Medical-Assertion 468 470;472 482	no longer any
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 483 498	pulmonary edema
+T10	Medical-Problem 501 517	Pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 739 755	pneumoperitoneum
+E9	Medical-Problem:T11
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

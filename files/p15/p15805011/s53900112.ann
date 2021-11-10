@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 253 260;262 279	Central pulmonary vessels
+T2	Medical-Problem 290 306	mildly prominent
+T3	Medical-Problem 346 374	Mild interstitial prominence
+T4	Medical-Anatomy 382 393	lower lungs
+T5	Medical-Problem 405 426	peribronchial cuffing
+T6	Medical-Assertion 427 435	suggests
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 436 463	chronic airway inflammation
+T8	Medical-Assertion 488 490	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 491 520	definite superimposed process
+T10	Medical-Problem 527 549	chest is hyperinflated
+E8	Medical-Problem:T10
+T11	Medical-Assertion 562 564	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 565 581	pleural effusion
+T13	Medical-Problem 585 597	pneumothorax
+T14	Medical-Assertion 648 659	No evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 663 668;670 693	acute cardiopulmonary disease
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

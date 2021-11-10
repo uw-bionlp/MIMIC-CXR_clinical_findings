@@ -1,0 +1,31 @@
+T1	Medical-Assertion 482 484	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 485 497	pneumothorax
+T3	Medical-Problem 529 567	left lower lobe airspace consolidation
+E2	Medical-Problem:T3
+T4	Medical-Assertion 578 592	suspicious for
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 593 603	aspiration
+T6	Medical-Problem 607 616	pneumonia
+T7	Medical-Assertion 619 630	No evidence
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 634 649	pulmonary edema
+T9	Medical-Problem 758 772	Linear opacity
+T10	Medical-Anatomy 780 804	right costophrenic angle
+T11	Medical-Assertion 805 808;810 819	may represent
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 822 836	small effusion
+T13	Medical-Problem 838 856	patchy atelectasis
+T14	Medical-Problem 861 869	scarring
+T15	Medical-Assertion 872 874	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 875 887	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T10
+E8	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

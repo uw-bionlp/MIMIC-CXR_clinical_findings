@@ -1,0 +1,51 @@
+T1	Medical-Problem 229 249	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 252 281	Heart size is mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 366 381;383 397	atherosclerotic calcifications
+T4	Medical-Anatomy 411 422	aortic knob
+T5	Medical-Anatomy 425 446	Pulmonary vasculature
+T6	Medical-Assertion 450 453	not
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 455 463	engorged
+T8	Medical-Problem 466 483	Streaky opacities
+T9	Medical-Anatomy 496 511	both lung bases
+T10	Medical-Assertion 512 519	without
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 520 525;527 540	focal consolidation
+T12	Medical-Assertion 549 555	may be
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 558 585	trace left pleural effusion
+T14	Medical-Assertion 588 590	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 591 603	pneumothorax
+T16	Lesion-Characteristic 618 627	Sclerotic
+T17	Lesion-Characteristic 628 639	serpiginous
+T18	Lesion-Description 640 646	lesion
+T19	Lesion-Anatomy 658 679;681 690	left proximal humeral diaphysis
+T20	Lesion-Size-Trend 694 703	unchanged
+A5	Lesion-Size-TrendValue T20 no-change
+T21	Medical-Assertion 705 713	possibly
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 717 728	enchondroma
+T23	Medical-Problem 732 744	bone infarct
+T24	Medical-Problem 765 782	Streaky opacities
+T25	Medical-Anatomy 790 800	lung bases
+T26	Medical-Assertion 802 808	likely
+A7	Medical-AssertionValue T26 possible
+T27	Medical-Problem 809 820	atelectasis
+T28	Medical-Assertion 827 835	possible
+A8	Medical-AssertionValue T28 possible
+T29	Medical-Problem 836 841;843 864	trace left pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Lesion-Description:T18 has-Lesion-Characteristic:T16 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T19 has-Lesion-Size-Trend:T20
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T23 has-Medical-Assertion:T21
+E18	Medical-Problem:T24 has-Medical-Anatomy:T25
+E20	Medical-Problem:T27 has-Medical-Assertion:T26
+E21	Medical-Problem:T29 has-Medical-Assertion:T28

@@ -1,0 +1,40 @@
+T1	Medical-Problem 578 580	no
+T2	Medical-Anatomy 609 625	right hemithorax
+T3	Medical-Assertion 640 646	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 649 654;656 687	small basilar and apical pneumothorax
+T5	Medical-Problem 706 726	lobulated appearance
+T6	Medical-Anatomy 735 755	right lateral pleura
+T7	Medical-Assertion 762 775	may represent
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 776 800	areas of loculated fluid
+T9	Medical-Problem 805 815	hemorrhage
+T10	Medical-Problem 829 849	stable left effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 895 912	likely reflecting
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 913 936	compressive atelectasis
+T13	Medical-Problem 948 957	pneumonia
+T14	Medical-Problem 961 971	aspiration
+T15	Medical-Assertion 972 997	should also be considered
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Assertion 1000 1002	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1015 1024;1026 1031	pulmonary edema
+T18	Medical-Problem 1037 1055	elliptical opacity
+T19	Medical-Anatomy 1063 1077	right mid lung
+T20	Medical-Assertion 1078 1093	likely reflects
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1094 1103;1105 1110	loculated fluid
+T22	Medical-Anatomy 1122 1140	horizontal fissure
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T15
+E11	Medical-Problem:T14 has-Medical-Assertion:T11 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T19
+E15	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20 has-Medical-Anatomy:T22

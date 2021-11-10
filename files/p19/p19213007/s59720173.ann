@@ -1,0 +1,20 @@
+T1	Medical-Problem 400 421	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 441 470	Pulmonary vascular congestion
+T3	Medical-Anatomy 499 503	hila
+T4	Medical-Problem 517 544	Heterogeneous opacification
+T5	Medical-Anatomy 552 566	left lung base
+T6	Medical-Assertion 582 590	could be
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 591 612	resolving atelectasis
+T8	Medical-Problem 616 625	pneumonia
+T9	Medical-Assertion 637 639	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 640 659;661 669	appreciable pleural effusion
+T11	Medical-Problem 673 699	indication of pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

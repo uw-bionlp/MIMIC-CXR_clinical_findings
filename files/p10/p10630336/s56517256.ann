@@ -1,0 +1,58 @@
+T1	Medical-Problem 419 441	persistent volume loss
+T2	Medical-Anatomy 449 466	right hemi thorax
+T3	Medical-Problem 472 477	shift
+T4	Medical-Anatomy 486 507	mediastinum rightward
+T5	Medical-Assertion 637 639	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 640 658	appreciable change
+T7	Medical-Problem 662 680	pleural thickening
+T8	Medical-Anatomy 691 711;713 718	right apical-lateral chest
+T9	Medical-Problem 723 736	Large opacity
+T10	Medical-Anatomy 744 756	left midlung
+T11	Medical-Assertion 757 769	has resolved
+A2	Medical-AssertionValue T11 absent
+T12	Lesion-Size-Trend 794 797	new
+A3	Lesion-Size-TrendValue T12 new
+T13	Lesion-Size 798 801;803 805	2.1 cm
+T14	Lesion-Characteristic 806 816	relatively
+T15	Lesion-Characteristic 817 835	well-circumscribed
+T16	Lesion-Description 836 842	nodule
+T17	Lesion-Anatomy 850 862	left midlung
+T18	Lesion-Assertion 863 877	not definitely
+A4	Lesion-AssertionValue T18 absent
+T19	Medical-Problem 914 931	worsening opacity
+T20	Medical-Anatomy 943 981	entire right hemi thorax and left base
+T21	Medical-Assertion 982 1001	possibly reflecting
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1002 1012;1014 1029	asymmetric pulmonary edema
+T23	Medical-Assertion 1065 1067	no
+A6	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1068 1084	pleural effusion
+T25	Medical-Problem 1089 1101	pneumothorax
+T26	Medical-Assertion 1126 1136	Resolution
+A7	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1140 1153	large opacity
+T28	Medical-Anatomy 1161 1174	left mid lung
+T29	Lesion-Size-Trend 1189 1192	new
+A8	Lesion-Size-TrendValue T29 new
+T30	Lesion-Size 1193 1199	2.1 cm
+T31	Lesion-Description 1201 1207	nodule
+T32	Medical-Problem 1240 1251	New opacity
+T33	Medical-Anatomy 1259 1289	right lung and left lower lobe
+T34	Medical-Assertion 1290 1301	may reflect
+A9	Medical-AssertionValue T34 possible
+T35	Medical-Problem 1302 1312;1314 1329	asymmetric pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Lesion-Description:T16 has-Lesion-Size-Trend:T12 has-Lesion-Size-Present:T13 has-Lesion-Characteristic:T14 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T17 has-Lesion-Assertion:T18
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E18	Medical-Problem:T24 has-Medical-Assertion:T23
+E19	Medical-Problem:T25 has-Medical-Assertion:T23
+E20	Medical-Problem:T27 has-Medical-Assertion:T26 has-Medical-Anatomy:T28
+E23	Lesion-Description:T31 has-Lesion-Size-Trend:T29 has-Lesion-Size-Present:T30
+E24	Medical-Problem:T32 has-Medical-Anatomy:T33
+E26	Medical-Problem:T35 has-Medical-Anatomy:T33 has-Medical-Assertion:T34

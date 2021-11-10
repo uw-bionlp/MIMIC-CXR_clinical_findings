@@ -1,0 +1,40 @@
+T1	Medical-Problem 254 286	Severe bronchiectasis is chronic
+T2	Medical-Anatomy 302 327;329 342	anterior lungs (upper and middle lobes)
+E2	Medical-Anatomy:T2
+T3	Medical-Anatomy 348 384	superior segments of the lower lobes
+T4	Medical-Problem 387 405;407 419	Fine peribronchial reticulation
+T5	Medical-Anatomy 431 441	left hilum
+T6	Medical-Assertion 445 458	likely due to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 459 471	infiltration
+T8	Medical-Anatomy 479 483	lung
+T9	Medical-Assertion 614 625	no evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 631 646	pulmonary edema
+T11	Medical-Problem 648 671	pulmonary consolidation
+T12	Medical-Problem 673 689	pleural effusion
+T13	Medical-Problem 694 706	pneumothorax
+T14	Medical-Problem 731 743	Infiltration
+T15	Medical-Anatomy 755 765	left hilum
+T16	Medical-Assertion 767 780	likely due to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 781 799;801 815	active suppurative bronchiectasis
+T18	Medical-Assertion 818 820	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 821 834	consolidation
+T20	Medical-Assertion 835 849	concerning for
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 850 859	pneumonia
+T22	Medical-Problem 865 894	Severe chronic bronchiectasis
+E17	Medical-Problem:T22
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

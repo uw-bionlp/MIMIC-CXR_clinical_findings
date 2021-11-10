@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 331 350	right hemidiaphragm
+T2	Medical-Problem 355 403	mild to moderately elevated compared to the left
+T3	Medical-Problem 421 428	opacity
+T4	Medical-Anatomy 437 453	right lower lobe
+T5	Medical-Assertion 455 474	which could be seen
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 480 489	pneumonia
+T7	Medical-Assertion 538 540	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 541 557	pleural effusion
+T9	Medical-Problem 561 573	pneumothorax
+T10	Medical-Problem 627 649	Hazy posterior opacity
+E8	Medical-Problem:T10
+T11	Medical-Anatomy 667 683	right lower lobe
+T12	Medical-Assertion 686 700	concerning for
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 701 710	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

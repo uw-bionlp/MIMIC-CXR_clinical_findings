@@ -1,0 +1,31 @@
+T1	Medical-Problem 234 238;240 250	mild tortuosity
+T2	Medical-Anatomy 258 274	descending aorta
+T3	Medical-Assertion 286 288	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 289 305	pleural effusion
+T5	Medical-Problem 310 322	pneumothorax
+T6	Medical-Assertion 333 335	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 336 351	pulmonary edema
+T8	Medical-Problem 355 374	focal consolidation
+T9	Medical-Assertion 375 385;387 390	concerning for
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 391 400	pneumonia
+T11	Medical-Assertion 411 413	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 414 425	abnormality
+T13	Medical-Anatomy 433 449	right upper lobe
+T14	Lesion-Description 468 474	nodule
+E10	Lesion-Description:T14
+T15	Lesion-Assertion 493 504	No evidence
+A5	Lesion-AssertionValue T15 absent
+T16	Lesion-Anatomy 509 525	right upper lobe
+T17	Lesion-Description 526 532	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E12	Lesion-Description:T17 has-Lesion-Assertion:T15 has-Lesion-Anatomy:T16

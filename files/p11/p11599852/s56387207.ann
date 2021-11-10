@@ -1,0 +1,33 @@
+T1	Medical-Problem 298 328	Atherosclerotic calcifications
+T2	Medical-Anatomy 361 375	thoracic aorta
+T3	Medical-Anatomy 382 387	lungs
+E3	Medical-Anatomy:T3
+T4	Medical-Anatomy 463 474	upper lobes
+E4	Medical-Anatomy:T4
+T5	Medical-Assertion 477 479	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 480 499	focal consolidation
+T7	Medical-Problem 501 508;510 518	pleural effusion
+T8	Medical-Problem 522 534	pneumothorax
+T9	Medical-Problem 548 579	Diffuse demineralization of the
+E8	Medical-Problem:T9
+T10	Medical-Anatomy 580 587;589 599	osseous structures
+T11	Medical-Assertion 611 618	without
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 619 637	displaced fracture
+T13	Medical-Problem 640 649	Deformity
+T14	Medical-Anatomy 657 662;664 680	right proximal humerus
+T15	Medical-Problem 702 717	remote fracture
+T16	Medical-Assertion 738 740	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 741 774	acute cardiopulmonary abnormality
+T18	Medical-Problem 777 793	Severe emphysema
+E15	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T15 has-Medical-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

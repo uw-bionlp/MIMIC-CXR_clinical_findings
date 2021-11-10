@@ -1,0 +1,19 @@
+T1	Medical-Assertion 196 198	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 199 211	pneumothorax
+T3	Medical-Problem 218 262	irregular area of peribronchial infiltration
+T4	Lesion-Description 268 277	mass-like
+E3	Lesion-Description:T4
+T5	Medical-Anatomy 299 325	suprahilar right lung apex
+T6	Medical-Assertion 363 371	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Anatomy 488 499	Lower lungs
+T8	Medical-Problem 523 536	hyperinflated
+T9	Lesion-Assertion 559 570	No evidence
+A3	Lesion-AssertionValue T9 absent
+T10	Lesion-Characteristic 574 581	central
+T11	Lesion-Description 582 592	adenopathy
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10

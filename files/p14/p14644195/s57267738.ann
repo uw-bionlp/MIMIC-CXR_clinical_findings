@@ -1,0 +1,46 @@
+T1	Medical-Problem 254 270	Low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Assertion 271 278	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 279 298	focal consolidation
+T4	Medical-Problem 310 319	pneumonia
+T5	Medical-Anatomy 322 326	Left
+T6	Medical-Problem 339 350	volume loss
+T7	Medical-Problem 356 376	linear opacification
+T8	Medical-Problem 396 407	atelectasis
+T9	Medical-Problem 411 419	Blunting
+T10	Medical-Anatomy 427 446	costophrenic angles
+T11	Medical-Problem 463 486;488 497	small bilateral pleural effusions
+T12	Medical-Problem 500 519	Prominent left hila
+E11	Medical-Problem:T12
+T13	Medical-Problem 525 537	obliteration
+T14	Medical-Anatomy 545 566	aortopulmonary window
+T15	Lesion-Assertion 568 576	suggests
+A2	Lesion-AssertionValue T15 possible
+T16	Lesion-Anatomy 577 587	left hilar
+T17	Lesion-Anatomy 591 602	mediastinal
+T18	Lesion-Description 603 613	adenopathy
+T19	Medical-Assertion 638 649	No evidence
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 653 662	pneumonia
+T21	Medical-Problem 670 703	Small bilateral pleural effusions
+E18	Medical-Problem:T21
+T22	Medical-Assertion 709 717	Possible
+A4	Medical-AssertionValue T22 possible
+T23	Lesion-Anatomy 718 728	left hilar
+T24	Lesion-Description 754 764	adenopathy
+T25	Medical-Assertion 885 901	neither suggests
+A5	Medical-AssertionValue T25 absent
+T26	Medical-Problem 914 932	pulmonary embolism
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E16	Lesion-Description:T18 has-Lesion-Assertion:T15 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T17
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E20	Lesion-Description:T24 has-Lesion-Anatomy:T23
+E21	Medical-Problem:T26 has-Medical-Assertion:T25

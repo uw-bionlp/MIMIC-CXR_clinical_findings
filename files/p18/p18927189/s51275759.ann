@@ -1,0 +1,19 @@
+T1	Lesion-Anatomy 331 340;342 351	Bilateral pulmonary
+T2	Lesion-Description 352 359	nodules
+T3	Lesion-Description 364 370	masses
+T4	Lesion-Size-Trend 407 414;416 425	grossly unchanged
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Characteristic 530 538	Dominant
+T6	Lesion-Anatomy 539 548	left lung
+T7	Lesion-Description 549 556	lesions
+T8	Medical-Problem 614 643;645 653	persistent small left pleural effusion
+E7	Medical-Problem:T8
+T9	Medical-Problem 656 691	Lower right lateral rib abnormality
+E8	Medical-Problem:T9
+T10	Lesion-Assertion 692 709	could potentially
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 713 723	metastatic
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T1 has-Lesion-Size-Trend:T4
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T6
+E9	Lesion-Description:T11 has-Lesion-Assertion:T10

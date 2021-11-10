@@ -1,0 +1,29 @@
+T1	Medical-Problem 204 225	Emphysematous changes
+E1	Medical-Problem:T1
+T2	Medical-Problem 240 261	biapical predominance
+E2	Medical-Problem:T2
+T3	Lesion-Characteristic 263 272	Calcified
+T4	Lesion-Description 273 280	nodules
+T5	Lesion-Anatomy 299 309	right lung
+T6	Lesion-Assertion 310 320	suggestive
+A1	Lesion-AssertionValue T6 possible
+T7	Lesion-Description 324 334	granulomas
+T8	Medical-Anatomy 340 345	lungs
+T9	Medical-Assertion 367 374	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 375 388	consolidation
+T11	Medical-Problem 392 400	effusion
+T12	Medical-Assertion 461 463	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 464 491	acute osseous abnormalities
+T14	Medical-Problem 523 542	Extensive emphysema
+E11	Medical-Problem:T14
+T15	Lesion-Anatomy 545 555	Right lung
+T16	Lesion-Characteristic 556 565	calcified
+T17	Lesion-Description 566 576	granulomas
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T15 has-Lesion-Characteristic:T16

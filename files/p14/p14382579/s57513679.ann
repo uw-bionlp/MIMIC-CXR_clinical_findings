@@ -1,0 +1,23 @@
+T1	Medical-Assertion 275 277	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 278 297	focal consolidation
+T3	Lesion-Size 308 321	Subcentimeter
+T4	Lesion-Characteristic 322 331	calcified
+T5	Lesion-Anatomy 332 348	right upper lobe
+T6	Lesion-Description 350 356	nodule
+T7	Lesion-Assertion 378 382	most
+A2	Lesion-AssertionValue T7 possible
+T8	Lesion-Description 401 410	granuloma
+T9	Medical-Assertion 413 415	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 416 423;425 433	pleural effusion
+T11	Medical-Problem 437 449	pneumothorax
+T12	Medical-Assertion 607 609	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 610 639	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

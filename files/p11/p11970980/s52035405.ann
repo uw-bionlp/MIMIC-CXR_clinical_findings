@@ -1,0 +1,24 @@
+T1	Medical-Problem 194 222	Large right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 234 247	consolidation
+T3	Medical-Problem 251 259	collapse
+T4	Medical-Anatomy 267 272;274 298	right mid and lower lung worse
+T5	Medical-Problem 304 324	mild pulmonary edema
+T6	Medical-Anatomy 332 341	left lung
+T7	Medical-Problem 575 581;583 612	Severe left lower lobe consolidation
+T8	Medical-Assertion 613 615	or
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 616 624	collapse
+T10	Medical-Problem 637 655;657 665	Small left pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 711 731;733 758	adjacent pleural and parenchymal abnormalities
+E10	Medical-Problem:T11
+T12	Medical-Assertion 761 763	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 764 776	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

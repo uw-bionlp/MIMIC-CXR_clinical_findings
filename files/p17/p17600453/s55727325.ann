@@ -1,0 +1,48 @@
+T1	Medical-Problem 208 224	abnormal contour
+T2	Medical-Anatomy 240 265	pulmonary arterial window
+T3	Medical-Problem 273 303	enlarged left pulmonary artery
+T4	Lesion-Description 308 318	adenopathy
+E4	Lesion-Description:T4
+T5	Medical-Assertion 360 371	No evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 376 391	pulmonary edema
+T7	Medical-Assertion 394 396	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 397 416	focal consolidation
+T9	Medical-Assertion 417 427	convincing
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 432 441	pneumonia
+T11	Medical-Assertion 465 467	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 468 484	pleural effusion
+T13	Medical-Problem 488 496	evidence
+E9	Medical-Problem:T13
+T14	Medical-Problem 500 512	pneumothorax
+T15	Medical-Assertion 564 571	without
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 575 592	acute abnormality
+T17	Medical-Problem 613 623	Prominence
+T18	Medical-Anatomy 631 661	left pulmonary arterial window
+T19	Medical-Assertion 662 673	may reflect
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 674 682;684 700	enlarged pulmonary artery
+T21	Lesion-Description 718 728	adenopathy
+E15	Lesion-Description:T21
+T22	Medical-Assertion 731 733	No
+A7	Medical-AssertionValue T22 absent
+T23	Medical-Problem 734 747	focal opacity
+T24	Medical-Assertion 748 762	convincing for
+A8	Medical-AssertionValue T24 possible
+T25	Medical-Problem 764 773	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T11
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T18
+E14	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T23 has-Medical-Assertion:T22
+E17	Medical-Problem:T25 has-Medical-Assertion:T24

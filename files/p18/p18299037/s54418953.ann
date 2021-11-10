@@ -1,0 +1,22 @@
+T1	Medical-Assertion 230 232	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 233 271	definite pulmonary vascular congestion
+T3	Medical-Problem 275 296	Left pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 301 321	small right effusion
+E3	Medical-Problem:T4
+T5	Lesion-Count 333 341	Multiple
+T6	Lesion-Description 342 349	nodular
+T7	Medical-Problem 382 409	extensive prominence of the
+E6	Medical-Problem:T7
+T8	Medical-Anatomy 410 421	mediastinum
+T9	Medical-Assertion 436 449	could reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 450 468	venous engorgement
+T11	Lesion-Description 470 485	lymphadenopathy
+E9	Lesion-Description:T11
+T12	Medical-Problem 490 494	both
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Count:T5
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

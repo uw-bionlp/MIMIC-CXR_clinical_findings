@@ -1,0 +1,33 @@
+T1	Medical-Problem 359 383	Persistent consolidation
+T2	Medical-Anatomy 391 408	right middle lobe
+T3	Medical-Assertion 415 430	likely reflects
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 432 458	post-obstructive pneumonia
+T5	Medical-Anatomy 488 497	left base
+T6	Medical-Problem 510 528	patchy atelectasis
+T7	Medical-Problem 539 549	aspiration
+T8	Medical-Problem 553 562	pneumonia
+T9	Medical-Assertion 580 586;588 606	should also be considered
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 609 620	No evidence
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 624 639	pulmonary edema
+T12	Medical-Anatomy 644 655	right hilar
+T13	Medical-Problem 680 699	soft tissue opacity
+T14	Lesion-Description 711 726	lymphadenopathy
+E11	Lesion-Description:T14
+T15	Medical-Assertion 768 770	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 771 783	pneumothorax
+T17	Medical-Assertion 786 788	No
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 789 811	acute bony abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Anatomy:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

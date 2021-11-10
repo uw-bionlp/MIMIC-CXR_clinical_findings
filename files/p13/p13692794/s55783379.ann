@@ -1,0 +1,35 @@
+T1	Medical-Problem 60 80	Multifocal pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Assertion 229 248	interval resolution
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 252 301;303 312	extensive bilateral mid lung and right upper lung opacities
+T4	Medical-Problem 315 342	Linear atelectasis/scarring
+T5	Medical-Anatomy 358 376;378 382	right mid-to-lower lung
+T6	Medical-Problem 399 434	minimal left lower lung atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Assertion 513 515	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 516 533	pleural effusions
+T9	Medical-Assertion 536 538	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 539 551	pneumothorax
+T11	Medical-Assertion 640 659	Interval resolution
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 679 713;715 729	bilateral mid lung and right upper lung opacities
+T13	Medical-Assertion 747 755	resolved
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 774 814	Linear right mid-to-lower lung opacities
+E9	Medical-Problem:T14
+T15	Medical-Assertion 816 822	likely
+A6	Medical-AssertionValue T15 possible
+T16	Medical-Problem 823 831	scarring
+T17	Medical-Problem 840 851	atelectasis
+T18	Medical-Problem 854 889	Minimal left lower lung atelectasis
+E12	Medical-Problem:T18
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Assertion:T13
+E10	Medical-Problem:T16 has-Medical-Assertion:T15
+E11	Medical-Problem:T17 has-Medical-Assertion:T15

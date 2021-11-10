@@ -1,0 +1,26 @@
+T1	Medical-Problem 257 284	Heterogeneous opacification
+T2	Medical-Anatomy 292 307	left lower lung
+T3	Medical-Assertion 308 323	could represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 324 329;331 351	early effect of aspiration
+T5	Lesion-Anatomy 354 365	Right hilar
+T6	Lesion-Description 366 376	adenopathy
+T7	Medical-Assertion 426 428	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 429 457	appreciable pleural effusion
+T9	Medical-Problem 461 473	pneumothorax
+T10	Medical-Problem 478 485;487 506	bulging mediastinal contour
+E8	Medical-Problem:T10
+T11	Medical-Assertion 544 559	could be due to
+A3	Medical-AssertionValue T11 possible
+T12	Lesion-Description 561 571	adenopathy
+E9	Lesion-Description:T12
+T13	Medical-Problem 577 585	tortuous
+T14	Medical-Problem 589 602	dilated aorta
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T11

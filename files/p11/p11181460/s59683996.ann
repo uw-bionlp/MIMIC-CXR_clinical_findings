@@ -1,0 +1,75 @@
+T1	Medical-Problem 322 335	Opacification
+T2	Medical-Anatomy 343 358	left lower lung
+T3	Medical-Problem 363 371	blunting
+T4	Medical-Anatomy 379 396;398 403	left costophrenic angle
+T5	Medical-Assertion 404 415	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 433 449	pleural effusion
+T7	Medical-Problem 451 456	edema
+T8	Medical-Problem 462 473	atelectasis
+T9	Medical-Problem 488 513	underlying superinfection
+T10	Medical-Assertion 514 532	cannot be excluded
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 603 619	mild atelectasis
+T12	Medical-Anatomy 628 643	right lung base
+T13	Medical-Problem 667 696	Pulmonary vascular congestion
+E11	Medical-Problem:T13
+T14	Medical-Problem 721 738	Mild cardiomegaly
+E12	Medical-Problem:T14
+T15	Medical-Problem 756 765;767 781	Extensive calcifications
+T16	Medical-Anatomy 789 803	thoracic aorta
+T17	Medical-Problem 832 841;843 868	Bilateral apical pleural thickening
+E15	Medical-Problem:T17
+T18	Medical-Problem 893 909	mild atelectasis
+T19	Medical-Anatomy 918 933	right lung base
+T20	Medical-Assertion 944 946	No
+A3	Medical-AssertionValue T20 absent
+T21	Medical-Problem 947 959	pneumothorax
+T22	Medical-Problem 1029 1050	Cortical irregularity
+T23	Medical-Anatomy 1058 1095	lateral left ___ and perhaps 7th ribs
+T24	Medical-Assertion 1097 1107;1109 1112	concerning for
+A4	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1113 1121	fracture
+T26	Medical-Problem 1140 1146	trauma
+T27	Medical-Problem 1149 1178	Anterior compression fracture
+T28	Medical-Problem 1185 1192	wedging
+T29	Medical-Anatomy 1198 1225	mid thoracic vertebral body
+T30	Medical-Assertion 1356 1358	No
+A5	Medical-AssertionValue T30 absent
+T31	Medical-Problem 1359 1371	pneumothorax
+T32	Medical-Problem 1378 1401	Left lower lung opacity
+E27	Medical-Problem:T32
+T33	Medical-Assertion 1431 1447;1449 1459	possibly oblique reflecting
+A6	Medical-AssertionValue T33 possible
+T34	Medical-Problem 1477 1485	effusion
+T35	Medical-Problem 1487 1498	atelectasis
+T36	Medical-Problem 1507 1519;1521 1530	superimposed pneumonia
+T37	Medical-Assertion 1612 1620	Possible
+A7	Medical-AssertionValue T37 possible
+T38	Medical-Problem 1621 1665	left sixth and seventh lateral rib fractures
+T39	Medical-Problem 1772 1775	rib
+E32	Medical-Problem:T39
+T40	Medical-Anatomy 1791 1812	Midthoracic vertebral
+E33	Medical-Anatomy:T40
+T41	Medical-Problem 1964 1979	left lower lung
+E34	Medical-Problem:T41
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T2 has-Medical-Assertion:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T25 has-Medical-Assertion:T24
+E22	Medical-Problem:T26 has-Medical-Assertion:T24
+E23	Medical-Problem:T27 has-Medical-Anatomy:T29
+E24	Medical-Problem:T28 has-Medical-Anatomy:T29
+E26	Medical-Problem:T31 has-Medical-Assertion:T30
+E28	Medical-Problem:T34 has-Medical-Assertion:T33
+E29	Medical-Problem:T35 has-Medical-Assertion:T33
+E30	Medical-Problem:T36 has-Medical-Assertion:T33
+E31	Medical-Problem:T38 has-Medical-Assertion:T37

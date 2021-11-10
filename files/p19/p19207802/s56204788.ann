@@ -1,0 +1,37 @@
+T1	Lesion-Characteristic 320 334;336 346	post radiation appearance
+T2	Lesion-Anatomy 371 391	anterior mediastinal
+T3	Lesion-Description 392 396	mass
+T4	Lesion-Size-Trend 400 409	unchanged
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Medical-Problem 431 476	well-circumscribed area of radiation fibrosis
+T6	Medical-Anatomy 492 513	left perihilar region
+T7	Medical-Problem 519 542	traction bronchiectasis
+T8	Medical-Problem 549 556;558 598	area of fibrosis superior denser more contracted
+E7	Medical-Problem:T8
+T9	Medical-Problem 644 678	small pleural effusion on the left
+E8	Medical-Problem:T9
+T10	Medical-Problem 680 702;704 715	Leftward retraction of mediastinum
+E9	Medical-Problem:T10
+T11	Medical-Problem 720 751	elevation of left hemidiaphragm
+E10	Medical-Problem:T11
+T12	Medical-Anatomy 773 780	Cardiac
+T13	Medical-Problem 796 805	distorted
+T14	Lesion-Characteristic 872 881	involuted
+T15	Lesion-Anatomy 882 898	left mediastinal
+T16	Lesion-Description 899 903	mass
+T17	Lesion-Size-Trend 907 913	stable
+A2	Lesion-Size-TrendValue T17 no-change
+T18	Medical-Problem 939 983	Progressive maturation of radiation fibrosis
+T19	Medical-Anatomy 991 1010;1012 1018	left lung perihilar region
+T20	Lesion-Assertion 1027 1029	No
+A3	Lesion-AssertionValue T20 absent
+T21	Lesion-Characteristic 1030 1040	recurrence
+T22	Lesion-Anatomy 1044 1057	intrathoracic
+T23	Lesion-Description 1058 1068	malignancy
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E12	Medical-Problem:T13 has-Medical-Anatomy:T12
+E15	Lesion-Description:T16 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15 has-Lesion-Size-Trend:T17
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E20	Lesion-Description:T23 has-Lesion-Assertion:T20 has-Lesion-Characteristic:T21 has-Lesion-Anatomy:T22

@@ -1,0 +1,29 @@
+T1	Medical-Assertion 503 505	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 506 518	pneumothorax
+T3	Medical-Problem 533 554	Moderate cardiomegaly
+E2	Medical-Problem:T3
+T4	Medical-Problem 584 591	opacity
+T5	Medical-Anatomy 600 629	left lower lobe obscuring the
+T6	Medical-Anatomy 630 670	left hemidiaphragm and left heart border
+T7	Medical-Problem 688 712	left lower lung collapse
+T8	Medical-Problem 719 726	opacity
+T9	Medical-Anatomy 734 744;746 754	right base medially
+T10	Medical-Problem 779 788	pneumonia
+T11	Medical-Assertion 789 807	cannot be excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 846 861	rounded density
+T13	Medical-Anatomy 882 895;897 904	lateral right midzone
+T14	Medical-Problem 1119 1126	opacity
+T15	Medical-Anatomy 1134 1158	right lung base medially
+T16	Medical-Problem 1189 1198	pneumonia
+T17	Medical-Assertion 1199 1217	cannot be excluded
+A3	Medical-AssertionValue T17 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T16 has-Medical-Anatomy:T15 has-Medical-Assertion:T17

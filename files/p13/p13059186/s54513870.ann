@@ -1,0 +1,28 @@
+T1	Medical-Problem 246 261	Pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Assertion 295 297	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 298 307	pneumonia
+T4	Medical-Anatomy 316 327	upper lobes
+T5	Medical-Problem 330 352	Residual opacification
+T6	Medical-Anatomy 360 391;393 409	lung bases, particularly in the right lower lobe
+T7	Medical-Assertion 413 426	suggestive of
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 427 436	pneumonia
+T9	Medical-Assertion 448 454	may be
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 477 491	residual edema
+T11	Medical-Problem 496 507	atelectasis
+T12	Medical-Problem 509 532	Small pleural effusions
+E9	Medical-Problem:T12
+T13	Medical-Problem 551 575	heart is mildly enlarged
+E10	Medical-Problem:T13
+T14	Medical-Assertion 650 652	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 653 665	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T6 has-Medical-Assertion:T9
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

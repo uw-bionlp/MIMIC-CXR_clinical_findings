@@ -1,0 +1,21 @@
+T1	Medical-Problem 277 296	Moderate tortuosity
+T2	Medical-Anatomy 305 319	thoracic aorta
+T3	Medical-Problem 322 371	Multiple very subtle and non-characteristic scars
+T4	Medical-Anatomy 379 383;385 395	lung parenchyma
+T5	Medical-Anatomy 412 433	periphery of the lung
+T6	Medical-Assertion 434 445	suggest the
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 458 463;465 513	mild, potentially smoking-related interstitial changes
+T8	Medical-Assertion 525 527	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 528 534;536 549	severe overinflation
+T10	Lesion-Assertion 565 567	no
+A3	Lesion-AssertionValue T10 absent
+T11	Lesion-Description 568 575	nodules
+T12	Lesion-Description 579 591	mass lesions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Lesion-Description:T11 has-Lesion-Assertion:T10
+E9	Lesion-Description:T12 has-Lesion-Assertion:T10

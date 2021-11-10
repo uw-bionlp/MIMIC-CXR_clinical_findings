@@ -1,0 +1,20 @@
+T1	Medical-Problem 253 270	mild cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 273 297	Bibasilar consolidations
+E2	Medical-Problem:T2
+T3	Medical-Problem 326 339	Consolidation
+T4	Medical-Anatomy 347 364	right middle lobe
+T5	Medical-Problem 369 391	ground-glass opacities
+T6	Medical-Anatomy 400 416	right upper lobe
+T7	Medical-Assertion 446 459	likely due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 460 470;472 481	multifocal pneumonia
+T9	Medical-Assertion 493 495	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 496 508	pneumothorax
+T11	Medical-Problem 512 528	pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

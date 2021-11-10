@@ -1,0 +1,47 @@
+T1	Medical-Assertion 50 64	concerning for
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 68 86	infectious process
+T3	Medical-Anatomy 94 110	right upper lobe
+T4	Medical-Problem 119 136	increased density
+T5	Medical-Anatomy 144 155	mediastinum
+T6	Medical-Anatomy 160 171	right hilus
+T7	Medical-Assertion 173 185;187 200	which may be  secondary to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 201 225	reactive lymphadenopathy
+T9	Medical-Problem 711 738	new right perihilar opacity
+T10	Medical-Problem 744 772	associated increased opacity
+T11	Medical-Anatomy 781 797	right upper lobe
+T12	Medical-Problem 805 837	new small right pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Problem 840 854	Increased soft
+E11	Medical-Problem:T13
+T14	Medical-Problem 856 870	tissue density
+T15	Medical-Anatomy 878 903	right paratracheal margin
+T16	Lesion-Assertion 921 929	possible
+A3	Lesion-AssertionValue T16 possible
+T17	Lesion-Anatomy 931 942	mediastinal
+T18	Lesion-Description 943 958	lymphadenopathy
+T19	Medical-Assertion 960 962	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 963 975	pneumothorax
+T21	Medical-Assertion 1035 1049	concerning for
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1053 1071	infectious process
+T23	Medical-Anatomy 1079 1095	right upper lobe
+T24	Medical-Problem 1103 1120	increased density
+T25	Medical-Anatomy 1128 1139	mediastinum
+T26	Medical-Anatomy 1144 1155	right hilus
+T27	Medical-Assertion 1157 1169;1171 1180	which may be secondary
+A6	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1184 1208	reactive lymphadenopathy
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T11
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Lesion-Description:T18 has-Lesion-Assertion:T16 has-Lesion-Anatomy:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21 has-Medical-Anatomy:T23
+E19	Medical-Problem:T24 has-Medical-Anatomy:T25 has-Medical-Anatomy:T26
+E22	Medical-Problem:T28 has-Medical-Anatomy:T25 has-Medical-Assertion:T27

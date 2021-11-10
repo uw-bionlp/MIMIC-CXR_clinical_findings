@@ -1,0 +1,61 @@
+T1	Medical-Assertion 37 39	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 40 52	cardiomegaly
+T3	Medical-Problem 56 65	pneumonia
+T4	Medical-Problem 82 86	COPD
+E3	Medical-Problem:T4
+T5	Medical-Problem 91 108;110 119	nodular by apical  scarring
+E4	Medical-Problem:T5
+T6	Medical-Problem 548 577	hyperinflated with flattening
+T7	Medical-Anatomy 585 595	diaphragms
+T8	Medical-Problem 613 628	underlying COPD
+T9	Medical-Problem 640 649	extensive
+E8	Medical-Problem:T9
+T10	Medical-Problem 650 667	biapical scarring
+E9	Medical-Problem:T10
+T11	Medical-Assertion 712 714	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 715 734	focal consolidation
+T13	Medical-Assertion 735 749	concerning for
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 750 759	pneumonia
+T15	Medical-Problem 761 768;770 778	pleural effusion
+T16	Medical-Problem 782 794	pneumothorax
+T17	Medical-Problem 865 878	calcification
+T18	Medical-Anatomy 886 897	aortic knob
+T19	Medical-Assertion 900 902	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 903 916	acute osseous
+E16	Medical-Problem:T20
+T21	Medical-Problem 918 931	abnormalities
+T22	Medical-Problem 952 963	generalized
+E18	Medical-Problem:T22
+T23	Medical-Problem 964 978	loss of height
+T24	Medical-Anatomy 986 991;993 1018	lower thoracic vertebral bodies
+T25	Medical-Assertion 1042 1044	No
+A5	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1045 1057	cardiomegaly
+T27	Medical-Problem 1061 1070	pneumonia
+T28	Medical-Problem 1097 1123	nodular by apical scarring
+E23	Medical-Problem:T28
+T29	Medical-Assertion 1239 1251	Differential
+A6	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1261 1273	reactivation
+E24	Medical-Problem:T30
+T31	Medical-Problem 1288 1296	mycetoma
+T32	Lesion-Description 1302 1312	malignancy
+E26	Lesion-Description:T32
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T11 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T11 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T19
+E19	Medical-Problem:T23 has-Medical-Anatomy:T24
+E21	Medical-Problem:T26 has-Medical-Assertion:T25
+E22	Medical-Problem:T27 has-Medical-Assertion:T25
+E25	Medical-Problem:T31 has-Medical-Assertion:T29

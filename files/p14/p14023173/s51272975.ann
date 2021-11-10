@@ -1,0 +1,17 @@
+T1	Medical-Problem 214 228;230 238	newly occurred blunting
+T2	Medical-Anatomy 246 270	right costophrenic sinus
+T3	Medical-Assertion 306 316	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 319 347	small right pleural effusion
+T5	Medical-Assertion 349 372	potentially combined to
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 375 380;382 399	small basal atelectasis
+T7	Lesion-Assertion 447 454;456 464	without evidence
+A3	Lesion-AssertionValue T7 absent
+T8	Lesion-Description 468 475	nodules
+T9	Lesion-Description 479 485	masses
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E5	Lesion-Description:T8 has-Lesion-Assertion:T7
+E6	Lesion-Description:T9 has-Lesion-Assertion:T7

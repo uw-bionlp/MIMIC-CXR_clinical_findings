@@ -1,0 +1,32 @@
+T1	Medical-Problem 174 197	increased opacification
+T2	Medical-Anatomy 209 220;222 226	right lower lobe
+T3	Medical-Problem 232 271	silhouetting of the right hemidiaphragm
+T4	Medical-Assertion 279 292	may represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 293 298;300 322	right lower lobe atelectasis
+T6	Medical-Problem 332 350	infectious process
+T7	Medical-Problem 354 370	asymmetric edema
+T8	Medical-Assertion 371 377;379 390	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 393 426	Additional areas of opacification
+T10	Medical-Anatomy 434 450	right upper lung
+T11	Medical-Assertion 451 454;456 465	may represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 466 492	asymmetric pulmonary edema
+T13	Medical-Problem 495 525	Cardiac silhouette is enlarged
+E10	Medical-Problem:T13
+T14	Medical-Assertion 526 532;534 546	likely representing
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 547 562	volume overload
+T16	Medical-Problem 633 654	area of consolidation
+E12	Medical-Problem:T16
+T17	Lesion-Description 770 774	mass
+E13	Lesion-Description:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

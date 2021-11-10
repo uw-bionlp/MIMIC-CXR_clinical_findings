@@ -1,0 +1,20 @@
+T1	Medical-Problem 326 334	at least
+E1	Medical-Problem:T1
+T2	Medical-Problem 335 354	vascular congestion
+T3	Medical-Problem 359 369	mild edema
+T4	Medical-Anatomy 377 382;384 389	lower lungs
+T5	Lesion-Description 395 402	nodules
+T6	Lesion-Anatomy 410 423	left mid lung
+T7	Lesion-Characteristic 428 460	concerning for foci of infection
+T8	Medical-Problem 464 481	Mild cardiomegaly
+E8	Medical-Problem:T8
+T9	Medical-Problem 591 611	Discrete atelectasis
+T10	Medical-Anatomy 619 634	right lung base
+T11	Medical-Assertion 667 669	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 671 683	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T11

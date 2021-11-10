@@ -1,0 +1,24 @@
+T1	Medical-Problem 161 188;190 199	decreased bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Assertion 211 213	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 214 226	pneumothorax
+T4	Medical-Problem 282 308	dense retrocardiac opacity
+T5	Medical-Problem 313 324	volume loss
+T6	Medical-Anatomy 328 344	both lower lungs
+T7	Medical-Problem 370 403	pulmonary vascular redistribution
+E6	Medical-Problem:T7
+T8	Medical-Problem 405 426	perihilar infiltrates
+T9	Medical-Problem 432 452	alveolar infiltrates
+T10	Medical-Anatomy 472 482	right lung
+T11	Medical-Problem 515 518	CHF
+T12	Medical-Problem 526 558	underlying infectious infiltrate
+T13	Medical-Assertion 559 568;570 578	cannot be excluded
+A2	Medical-AssertionValue T13 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T6
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Assertion:T13
+E11	Medical-Problem:T12 has-Medical-Assertion:T13

@@ -1,0 +1,21 @@
+T1	Medical-Anatomy 312 317	lungs
+T2	Medical-Assertion 341 348	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 349 369	focal consolidations
+T4	Medical-Problem 371 378;380 389	pleural effusions
+T5	Medical-Problem 394 406	pneumothorax
+T6	Lesion-Assertion 464 475	No evidence
+A2	Lesion-AssertionValue T6 absent
+T7	Lesion-Anatomy 479 484	hilar
+T8	Lesion-Description 485 500	lymphadenopathy
+T9	Lesion-Characteristic 504 512	cavitary
+T10	Lesion-Description 513 520	lesions
+T11	Medical-Assertion 541 568	No radiographic findings to
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 577 596	active tuberculosis
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

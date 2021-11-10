@@ -1,0 +1,34 @@
+T1	Lesion-Anatomy 190 195;197 203	right apical
+T2	Lesion-Characteristic 204 212	cavitary
+T3	Lesion-Description 213 219	lesion
+T4	Lesion-Size 223 235	3.4 x 2.8 cm
+T5	Lesion-Size 248 260	3.3 x 2.8 cm
+T6	Lesion-Size-Trend 262 271	unchanged
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Problem 284 302	Adjacent opacities
+E6	Medical-Problem:T7
+T8	Medical-Problem 379 403	right upper lobe opacity
+T9	Medical-Anatomy 404 415;417 428	adjacent to the fissure
+T10	Medical-Assertion 452 454	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 455 466	new opacity
+T12	Medical-Assertion 477 479	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 481 497	pleural effusion
+T14	Medical-Problem 501 513	pneumothorax
+T15	Medical-Problem 572 594	Moderate hiatal hernia
+E12	Medical-Problem:T15
+T16	Lesion-Anatomy 646 667	right apical cavitary
+T17	Lesion-Description 668 674	lesion
+T18	Medical-Problem 680 698	adjacent opacities
+E15	Medical-Problem:T18
+T19	Medical-Assertion 725 727	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 728 739	new opacity
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T1 has-Lesion-Characteristic:T2 has-Lesion-Size-Present:T4 has-Lesion-Size-Past:T5 has-Lesion-Size-Trend:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

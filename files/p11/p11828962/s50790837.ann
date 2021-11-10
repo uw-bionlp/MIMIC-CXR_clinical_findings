@@ -1,0 +1,18 @@
+T1	Medical-Problem 292 313;315 323	moderate left pleural effusion
+T2	Medical-Problem 329 358	associated pleural thickening
+T3	Medical-Problem 363 383;385 396	relatively extensive atelectasis
+T4	Medical-Anatomy 404 419	left lung bases
+T5	Medical-Problem 472 493	Moderate cardiomegaly
+E5	Medical-Problem:T5
+T6	Medical-Assertion 518 520	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 521 534	abnormalities
+T8	Medical-Anatomy 543 552	left lung
+T9	Medical-Assertion 574 585	no evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 609 621	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

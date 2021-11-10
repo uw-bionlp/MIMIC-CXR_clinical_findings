@@ -1,0 +1,18 @@
+T1	Medical-Problem 299 323	postoperative appearance
+T2	Medical-Anatomy 331 346	left hemithorax
+T3	Medical-Assertion 347 354	without
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 355 366;368 399	appreciable reaccumulation of pleural fluid
+T5	Medical-Assertion 415 426	No evidence
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 430 442	pneumothorax
+T7	Medical-Problem 446 468	Multiple rib fractures
+E5	Medical-Problem:T7
+T8	Medical-Anatomy 490 495	right
+T9	Medical-Assertion 528 539	no evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 543 562	vascular congestion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

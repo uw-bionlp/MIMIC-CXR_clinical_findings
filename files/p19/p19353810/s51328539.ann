@@ -1,0 +1,21 @@
+T1	Medical-Problem 249 269;271 284	essentially complete opacification
+T2	Medical-Anatomy 292 307	left hemithorax
+T3	Medical-Problem 334 345	volume loss
+T4	Medical-Anatomy 354 363	left lung
+T5	Medical-Problem 375 396	some pleural effusion
+E5	Medical-Problem:T5
+T6	Medical-Problem 407 426;428 440	mediastinum shifted to this side
+E6	Medical-Problem:T6
+T7	Medical-Problem 447 460	opacification
+T8	Medical-Anatomy 468 484	right hemithorax
+T9	Medical-Problem 505 521	pleural effusion
+T10	Medical-Problem 526 560	underlying compressive atelectasis
+T11	Medical-Assertion 625 643;645 647	does not appear to be
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 648 675	substantial pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Anatomy:T8
+E11	Medical-Problem:T12 has-Medical-Assertion:T11

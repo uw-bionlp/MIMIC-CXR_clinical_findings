@@ -1,0 +1,32 @@
+T1	Medical-Assertion 263 265	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 267 283	pleural effusion
+T3	Medical-Problem 287 299	pneumothorax
+T4	Medical-Problem 320 327	opacity
+T5	Medical-Anatomy 335 340;342 353	right middle lobe
+T6	Medical-Problem 378 402	interstitial abnormality
+T7	Medical-Anatomy 410 415;417 422	lower lungs
+T8	Medical-Assertion 503 505	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 506 522	pleural effusion
+T10	Medical-Problem 526 538	pneumothorax
+T11	Medical-Problem 559 591	Similar interstitial abnormality
+E9	Medical-Problem:T11
+T12	Medical-Problem 596 629	focal right middle lobe opacities
+E10	Medical-Problem:T12
+T13	Medical-Assertion 632 653	possibilities include
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 657 698	acquired chronic interstitial abnormality
+T15	Medical-Problem 704 709;711 734	right middle lobe atelectasis
+T16	Medical-Problem 740 787;789 801	recurrence of acute infectious process with the same pattern
+T17	Medical-Assertion 815 827	not excluded
+A4	Medical-AssertionValue T17 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T13 has-Medical-Assertion:T17

@@ -1,0 +1,43 @@
+T1	Medical-Problem 353 360	Lung is
+E1	Medical-Problem:T1
+T2	Medical-Problem 361 380	moderately inflated
+T3	Medical-Problem 386 399	opacification
+T4	Medical-Anatomy 407 416;418 422	left lung base
+T5	Medical-Problem 427 453	elevation of the diaphragm
+T6	Medical-Problem 458 471	opacification
+T7	Medical-Anatomy 479 491;493 498	costophrenic angle
+T8	Medical-Assertion 500 510	likely for
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 511 522	atelectasis
+T10	Medical-Anatomy 525 529	Lung
+T11	Medical-Assertion 549 556	without
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 557 570	consolidation
+T13	Lesion-Description 575 581	nodule
+E11	Lesion-Description:T13
+T14	Medical-Assertion 593 595	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 596 608	pneumothorax
+T16	Medical-Anatomy 654 672	mid thoracic spine
+E13	Medical-Anatomy:T16
+T17	Medical-Problem 723 749	multiple wedge deformities
+E14	Medical-Problem:T17
+T18	Medical-Problem 754 764	osteopenia
+E15	Medical-Problem:T18
+T19	Medical-Problem 766 771	Aorta
+E16	Medical-Problem:T19
+T20	Medical-Problem 775 784	elongated
+E17	Medical-Problem:T20
+T21	Medical-Problem 789 796;798 807	heavily calcified
+E18	Medical-Problem:T21
+T22	Medical-Assertion 833 846	No clear sign
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 850 863	rib fractures
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E19	Medical-Problem:T23 has-Medical-Assertion:T22

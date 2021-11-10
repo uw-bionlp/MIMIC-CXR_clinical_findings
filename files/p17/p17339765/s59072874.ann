@@ -1,0 +1,31 @@
+T1	Medical-Problem 389 424	interval worsening of consolidation
+T2	Medical-Anatomy 448 464;466 493	right upper lobe and left upper and mid lung
+T3	Medical-Anatomy 535 544;546 550	left lung base
+E3	Medical-Anatomy:T3
+T4	Medical-Anatomy 557 581	right mid and lower lung
+E4	Medical-Anatomy:T4
+T5	Medical-Assertion 640 654	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 655 674	worsening pneumonia
+T7	Medical-Assertion 684 696;698 702	differential also
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 713 723	hemorrhage
+T9	Medical-Problem 727 747	leukemic infiltrates
+T10	Medical-Problem 829 849;851 859	heart remains stably enlarged
+E8	Medical-Problem:T10
+T11	Medical-Problem 871 907	fullness to the mediastinal contours
+E9	Medical-Problem:T11
+T12	Medical-Problem 942 974	loculated right pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Assertion 1009 1011	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1012 1024	pneumothorax
+T15	Medical-Assertion 1027 1029	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1042 1057	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

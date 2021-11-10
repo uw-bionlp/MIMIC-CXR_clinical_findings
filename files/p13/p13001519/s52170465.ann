@@ -1,0 +1,18 @@
+T1	Medical-Assertion 305 307	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 308 322;324 337	areas of focal consolidation
+T3	Lesion-Description 339 345	masses
+E2	Lesion-Description:T3
+T4	Lesion-Description 347 354	lesions
+E3	Lesion-Description:T4
+T5	Medical-Problem 356 372	pleural effusion
+T6	Medical-Problem 376 388	pneumothorax
+T7	Lesion-Assertion 507 518	No evidence
+A2	Lesion-AssertionValue T7 absent
+T8	Lesion-Description 522 532	malignancy
+T9	Medical-Problem 536 545	infection
+E7	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Assertion:T1
+E6	Lesion-Description:T8 has-Lesion-Assertion:T7

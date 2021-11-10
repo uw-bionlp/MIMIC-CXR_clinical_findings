@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 223 228	lungs
+T2	Medical-Problem 252 280	flattening of the diaphragms
+T3	Medical-Assertion 282 292	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 293 300;302 331	chronic obstructive pulmonary disease
+T5	Medical-Problem 343 366	mild interstitial edema
+E4	Medical-Problem:T5
+T6	Medical-Anatomy 432 437	aorta
+T7	Medical-Problem 446 459;461 469	calcified and tortuous
+T8	Medical-Problem 667 687;689 699	bones are relatively osteopenic
+E7	Medical-Problem:T8
+T9	Medical-Problem 702 739	Dense subcentimeter rounded opacities
+T10	Medical-Anatomy 760 765;767 776	right lung base
+T11	Lesion-Assertion 777 781	most
+A2	Lesion-AssertionValue T11 possible
+T12	Lesion-Characteristic 799 808	calcified
+T13	Lesion-Description 809 818	granuloma
+T14	Medical-Problem 847 870	Mild interstitial edema
+E12	Medical-Problem:T14
+T15	Medical-Assertion 873 875	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 876 895	focal consolidation
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

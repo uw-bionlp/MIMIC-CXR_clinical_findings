@@ -1,0 +1,20 @@
+T1	Medical-Problem 440 457	new opacification
+T2	Medical-Anatomy 465 474	left base
+T3	Medical-Assertion 481 496	could represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 498 506	effusion
+T5	Medical-Problem 508 519	atelectasis
+T6	Medical-Problem 532 545	consolidation
+T7	Medical-Problem 548 554	Mucous
+E6	Medical-Problem:T7
+T8	Medical-Problem 555 563	plugging
+T9	Medical-Assertion 564 575;577 608	should also be included in the differential
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 635 652	abrupt transition
+T11	Medical-Anatomy 661 718	left mainstem bronchus approximately 4 cm from the carina
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11

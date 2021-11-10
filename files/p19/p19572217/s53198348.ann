@@ -1,0 +1,24 @@
+T1	Medical-Assertion 304 313	worrisome
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 318 327	infection
+T3	Medical-Assertion 330 332	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 333 349	pleural effusion
+T5	Medical-Problem 354 366	pneumothorax
+T6	Medical-Anatomy 381 386	lungs
+T7	Medical-Problem 391 415	relatively hyperinflated
+T8	Medical-Assertion 417 427	suggesting
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 429 466	chronic obstructive pulmonary disease
+T10	Medical-Assertion 584 597	worrisome for
+A4	Medical-AssertionValue T10 possible
+T11	Medical-Problem 598 607	infection
+T12	Lesion-Characteristic 654 664	underlying
+T13	Lesion-Description 665 671	lesion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Lesion-Description:T13 has-Lesion-Characteristic:T12

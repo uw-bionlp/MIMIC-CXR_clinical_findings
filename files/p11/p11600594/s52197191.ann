@@ -1,0 +1,38 @@
+T1	Medical-Problem 282 292	Tortuosity
+T2	Medical-Anatomy 300 314	thoracic aorta
+T3	Medical-Problem 329 337;339 346	Abnormal contour
+T4	Medical-Anatomy 354 365	mediastinum
+T5	Medical-Problem 371 379	fullness
+T6	Medical-Anatomy 387 415	right tracheobronchial angle
+T7	Medical-Problem 438 458	Mild pulmonary edema
+E7	Medical-Problem:T7
+T8	Medical-Assertion 474 476	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 477 484;486 494	pleural effusion
+T10	Medical-Problem 498 510	pneumothorax
+T11	Medical-Assertion 513 515	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 516 535	focal consolidation
+T13	Medical-Problem 556 583	Stable mild pulmonary edema
+E11	Medical-Problem:T13
+T14	Medical-Problem 589 605	Abnormal contour
+T15	Medical-Anatomy 613 624	mediastinum
+T16	Medical-Problem 630 638	fullness
+T17	Medical-Anatomy 646 651;653 675	right tracheobronchial angle
+T18	Medical-Assertion 676 691	could be due to
+A3	Medical-AssertionValue T18 possible
+T19	Lesion-Description 692 707	lymphadenopathy
+E16	Lesion-Description:T19
+T20	Lesion-Size 709 714	large
+T21	Lesion-Anatomy 715 727	azygous vein
+T22	Lesion-Anatomy 732 743	mediastinal
+T23	Lesion-Description 744 748	cyst
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E20	Lesion-Description:T23 has-Lesion-Size-Present:T20 has-Lesion-Anatomy:T21 has-Lesion-Anatomy:T22

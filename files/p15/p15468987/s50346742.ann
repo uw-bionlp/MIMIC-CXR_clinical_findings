@@ -1,0 +1,19 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 69	acute cardiopulmonary abnormality
+T3	Lesion-Description 71 77	Nodule
+E2	Lesion-Description:T3
+T4	Medical-Problem 598 612	Hyperinflation
+T5	Medical-Anatomy 620 625	lungs
+T6	Medical-Problem 642 651	emphysema
+T7	Medical-Problem 655 667;669 680	small airway obstruction
+T8	Medical-Assertion 683 685	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 686 713	focal pulmonary abnormality
+T10	Medical-Problem 943 951	engorged
+E8	Medical-Problem:T10
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

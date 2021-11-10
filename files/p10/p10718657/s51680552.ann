@@ -1,0 +1,22 @@
+T1	Medical-Problem 234 268	Posterior right lower lobe opacity
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 509 514;516 542	right mid-to-lower lateral chest
+E2	Medical-Anatomy:T2
+T3	Medical-Problem 586 591;593 601	Trace blunting
+T4	Medical-Anatomy 609 640	costophrenic angles bilaterally
+T5	Medical-Assertion 641 660	may be secondary to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 661 666;668 695	small bilateral pleural effusions
+T7	Medical-Assertion 731 733	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 734 746	pneumothorax
+T9	Medical-Problem 795 812	aorta is tortuous
+E7	Medical-Problem:T9
+T10	Lesion-Size 919 924	large
+T11	Lesion-Anatomy 925 941	right lower lobe
+T12	Lesion-Description 942 949	opacity
+T13	Lesion-Size 966 972	7.6 cm
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Present:T13

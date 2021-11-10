@@ -1,0 +1,27 @@
+T1	Medical-Problem 184 197;199 204	hyperinflated lungs
+E1	Medical-Problem:T1
+T2	Medical-Problem 221 230	emphysema
+E2	Medical-Problem:T2
+T3	Medical-Assertion 297 299	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 300 312	pneumothorax
+T5	Medical-Problem 316 332	pleural effusion
+T6	Medical-Problem 370 381	Enlargement
+T7	Medical-Anatomy 389 400	aortic root
+T8	Medical-Problem 405 418	calcification
+T9	Medical-Anatomy 426 432;434 438	aortic arch
+T10	Lesion-Characteristic 457 467	concerning
+T11	Lesion-Characteristic 468 478	spiculated
+T12	Lesion-Description 479 483	mass
+T13	Lesion-Anatomy 491 506	left upper lobe
+T14	Medical-Assertion 637 639	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 640 669	acute cardiopulmonary process
+T16	Medical-Problem 672 681	Emphysema
+E14	Medical-Problem:T16
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

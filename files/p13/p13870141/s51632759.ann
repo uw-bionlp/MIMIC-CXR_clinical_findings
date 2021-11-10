@@ -1,0 +1,18 @@
+T1	Medical-Problem 408 437	tiny left apical pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 495 553	Small bilateral pleural effusions, left greater than right
+E2	Medical-Problem:T2
+T3	Medical-Problem 572 593	Increase in opacities
+T4	Medical-Anatomy 601 623	lung bases bilaterally
+T5	Medical-Assertion 624 630;632 646	may be concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 647 666	worsening infection
+T7	Medical-Problem 740 759	Worsening opacities
+T8	Medical-Anatomy 767 789	lung bases bilaterally
+T9	Medical-Assertion 793 807	concerning for
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 808 817;819 828	worsening infection
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

@@ -1,0 +1,20 @@
+T1	Medical-Assertion 124 132	Possible
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 133 148	volume overload
+T3	Medical-Problem 195 223	Large right pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 253 263;265 276	equivalent atelectasis
+T5	Medical-Anatomy 289 311	mediastinum in midline
+T6	Medical-Anatomy 314 323	Left lung
+T7	Medical-Assertion 327 332	clear
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 336 341	edema
+T9	Medical-Problem 346 355	pneumonia
+T10	Lesion-Count 367 375	multiple
+T11	Lesion-Size 376 381	small
+T12	Lesion-Description 382 389	nodules
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Lesion-Description:T12 has-Lesion-Count:T10 has-Lesion-Size-Present:T11

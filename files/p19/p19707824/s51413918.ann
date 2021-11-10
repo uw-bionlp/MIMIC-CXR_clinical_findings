@@ -1,0 +1,42 @@
+T1	Medical-Anatomy 269 274	aorta
+T2	Medical-Problem 288 311;313 327	diffuse atherosclerotic calcifications
+T3	Medical-Problem 330 364	Mild pulmonary vascular congestion
+E3	Medical-Problem:T3
+T4	Medical-Problem 394 410	patchy opacities
+T5	Medical-Anatomy 418 428	lung bases
+T6	Medical-Assertion 434 447	could reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 448 459	atelectasis
+T8	Medical-Problem 463 472	Infection
+T9	Medical-Assertion 484 496	not excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 499 532	Small bilateral pleural effusions
+E8	Medical-Problem:T10
+T11	Medical-Assertion 562 564	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 565 577	pneumothorax
+T13	Medical-Problem 580 607	Marked degenerative changes
+T14	Medical-Anatomy 616 640	right glenohumeral joint
+T15	Medical-Problem 653 682	Moderate degenerative changes
+T16	Medical-Anatomy 695 709	thoracic spine
+T17	Medical-Problem 743 777	Mild pulmonary vascular congestion
+E14	Medical-Problem:T17
+T18	Medical-Problem 782 815	small bilateral pleural effusions
+E15	Medical-Problem:T18
+T19	Medical-Problem 819 845	Bibasilar patchy opacities
+E16	Medical-Problem:T19
+T20	Medical-Assertion 846 859	could reflect
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 860 871	atelectasis
+T22	Medical-Problem 876 885	infection
+T23	Medical-Assertion 889 892;894 902	not excluded
+A5	Medical-AssertionValue T23 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T23

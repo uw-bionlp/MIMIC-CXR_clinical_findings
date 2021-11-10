@@ -1,0 +1,30 @@
+T1	Medical-Problem 87 110	Decreased breath sounds
+T2	Medical-Problem 116 124	crepitus
+T3	Medical-Problem 130 138	dullness
+T4	Medical-Anatomy 146 156	right base
+T5	Medical-Assertion 290 297	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 299 318	focal consolidation
+T7	Medical-Problem 320 336	pleural effusion
+T8	Medical-Problem 340 352	pneumothorax
+T9	Medical-Problem 443 454;456 466	mild aortic tortuosity
+E8	Medical-Problem:T9
+T10	Lesion-Description 470 476	nodule
+T11	Lesion-Anatomy 497 513	right lower lung
+T12	Lesion-Size-Trend 535 544	unchanged
+A2	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 571 573	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 574 583	pneumonia
+T15	Medical-Problem 585 590	edema
+T16	Medical-Problem 595 603	effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T13

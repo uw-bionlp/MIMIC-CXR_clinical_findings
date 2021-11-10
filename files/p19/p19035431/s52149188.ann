@@ -1,0 +1,22 @@
+T1	Medical-Problem 286 305	stable cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 322 340;342 352	pulmonary vascular congestion
+E2	Medical-Problem:T2
+T3	Medical-Problem 357 385	bilateral interstitial edema
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 509 520	mediastinal
+T5	Lesion-Anatomy 525 530	hilar
+T6	Lesion-Description 531 546	lymphadenopathy
+T7	Medical-Problem 611 635	Bibasilar lung opacities
+E7	Medical-Problem:T7
+T8	Medical-Assertion 679 699	may have represented
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 703 728	dependent pulmonary edema
+T10	Medical-Problem 797 813	aspiration event
+T11	Medical-Problem 816 836	Infectious pneumonia
+T12	Medical-Assertion 840 855;857 863	considered less likely
+A2	Medical-AssertionValue T12 possible
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T12

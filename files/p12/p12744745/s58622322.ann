@@ -1,0 +1,23 @@
+T1	Medical-Assertion 285 287	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 289 305	pleural effusion
+T3	Medical-Problem 309 321	pneumothorax
+T4	Medical-Problem 328 348	lung volumes are low
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 358 363	lungs
+T6	Medical-Assertion 375 382	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 383 402	focal consolidation
+T8	Medical-Assertion 403 413	concerning
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 418 427	pneumonia
+T10	Medical-Problem 482 498	Low lung volumes
+E7	Medical-Problem:T10
+T11	Medical-Assertion 503 505	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 506 535	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

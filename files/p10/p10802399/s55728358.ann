@@ -1,0 +1,21 @@
+T1	Medical-Problem 343 403	slight increase of the moderate sized right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 409 419;421 444	associated compressive atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 458 482	underlying consolidation
+T4	Medical-Assertion 483 492;494 502	cannot be excluded
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Anatomy 545 552	cardiac
+T6	Medical-Assertion 564 571	appears
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 573 588	mildly enlarged
+T8	Medical-Assertion 651 653	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 654 666	pneumothorax
+T10	Medical-Problem 670 689	focal consolidation
+T11	Medical-Problem 771 793	associated atelectasis
+E8	Medical-Problem:T11
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8

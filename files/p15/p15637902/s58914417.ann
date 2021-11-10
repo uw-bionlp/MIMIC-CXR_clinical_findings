@@ -1,0 +1,26 @@
+T1	Medical-Problem 604 611	Diffuse
+E1	Medical-Problem:T1
+T2	Medical-Problem 613 639	bilateral airspace process
+E2	Medical-Problem:T2
+T3	Medical-Problem 676 686;688 701	more focal consolidation
+T4	Medical-Anatomy 709 718	left base
+T5	Medical-Assertion 725 738	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 739 750	atelectasis
+T7	Medical-Problem 759 767	effusion
+T8	Medical-Problem 778 787	pneumonia
+T9	Medical-Assertion 788 806	cannot be excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 819 824	edema
+T11	Medical-Assertion 825 835;837 857	could also have this appearance
+A3	Medical-AssertionValue T11 possible
+T12	Lesion-Characteristic 910 918	cavitary
+T13	Lesion-Description 919 926	lesions
+T14	Medical-Problem 1024 1040	remains enlarged
+E11	Medical-Problem:T14
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T10 has-Medical-Assertion:T11
+E10	Lesion-Description:T13 has-Lesion-Characteristic:T12

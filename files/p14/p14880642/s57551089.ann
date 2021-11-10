@@ -1,0 +1,19 @@
+T1	Medical-Problem 187 200	Consolidation
+T2	Medical-Anatomy 208 223	left upper lobe
+T3	Lesion-Anatomy 287 302	left upper lobe
+T4	Lesion-Description 303 307	mass
+T5	Lesion-Characteristic 312 319	central
+T6	Lesion-Description 320 330	adenopathy
+T7	Lesion-Anatomy 339 359	aortopulmonic window
+T8	Medical-Problem 377 402	left pleural air or fluid
+E8	Medical-Problem:T8
+T9	Medical-Problem 463 479	Marked elevation
+T10	Medical-Anatomy 487 491;493 506	left hemidiaphragm
+T11	Medical-Problem 597 610	phrenic nerve
+E11	Medical-Problem:T11
+T12	Medical-Problem 643 667	stomach is overdistended
+E12	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T7
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10

@@ -1,0 +1,31 @@
+T1	Medical-Problem 320 331	obscuration
+T2	Medical-Anatomy 340 360	left CP angle on the
+T3	Medical-Assertion 380 394	could indicate
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 397 402;404 412	small effusion
+T5	Medical-Problem 415 438	Areas of linear density
+T6	Medical-Anatomy 446 461	left lower lung
+T7	Medical-Assertion 462 480;482 484	could be secondary to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 485 502	areas of scarring
+T9	Medical-Problem 506 528	plate-like atelectasis
+T10	Medical-Problem 530 549	Tine right effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 561 572	No definite
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 582 591	pneumonia
+T13	Medical-Problem 595 598	CHF
+T14	Medical-Problem 707 733	tiny b/l pleural effusions
+E11	Medical-Problem:T14
+T15	Medical-Anatomy 738 743	lower
+T16	Medical-Assertion 773 779	versus
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 780 788	scarring
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

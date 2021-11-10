@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 295 300	aorta
+T2	Medical-Problem 307 326	moderate tortuosity
+T3	Medical-Problem 335 339;341 361	arch patchy calcification
+T4	Medical-Assertion 373 375	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 376 392	pleural effusion
+T6	Medical-Assertion 395 397	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 398 410	pneumothorax
+T8	Medical-Problem 454 483	Moderate degenerative changes
+T9	Medical-Anatomy 496 528	mid through lower thoracic spine
+T10	Medical-Anatomy 540 554	both shoulders
+T11	Medical-Problem 556 569;571 583	Mild cortical irregularity
+E9	Medical-Problem:T11
+T12	Medical-Assertion 636 644	suggests
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 648 670	non-displaced fracture
+T14	Medical-Assertion 742 751	Suspected
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 752 790	non-displaced left eighth rib fracture
+T16	Medical-Assertion 793 817	No radiographic evidence
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 822 842	intrathoracic injury
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

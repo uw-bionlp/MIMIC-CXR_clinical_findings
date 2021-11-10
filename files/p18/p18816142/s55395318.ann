@@ -1,0 +1,27 @@
+T1	Medical-Problem 378 411	Increased peribronchial opacities
+T2	Medical-Anatomy 419 429	right base
+T3	Medical-Problem 434 443;445 464	scattered pulmonary opacities
+T4	Medical-Anatomy 472 493	base of the left lung
+T5	Medical-Assertion 506 522;524 526	could be related to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 527 542	focal infection
+T7	Medical-Problem 546 558	inflammation
+T8	Medical-Assertion 585 587	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 588 596	effusion
+T10	Medical-Problem 601 613	pneumothorax
+T11	Medical-Problem 645 674	Scattered pulmonary opacities
+T12	Medical-Anatomy 682 687	bases
+T13	Medical-Assertion 688 703	could represent
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 704 722;724 736	some peribronchial inflammation
+T15	Medical-Problem 741 750	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

@@ -1,0 +1,20 @@
+T1	Lesion-Description 44 50	nodule
+T2	Lesion-Anatomy 58 70	left midlung
+T3	Lesion-Description 231 237	nodule
+T4	Lesion-Anatomy 245 257	left midlung
+T5	Medical-Problem 699 708	elevation
+T6	Medical-Anatomy 716 721;723 736	right hemidiaphragm
+T7	Medical-Problem 753 757	loss
+T8	Medical-Anatomy 761 771	both bases
+T9	Medical-Problem 775 791	small infiltrate
+T10	Medical-Assertion 792 800;802 810	can't be excluded
+A1	Medical-AssertionValue T10 possible
+T11	Lesion-Assertion 813 815	No
+A2	Lesion-AssertionValue T11 absent
+T12	Lesion-Description 816 822	nodule
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Assertion:T10
+E10	Lesion-Description:T12 has-Lesion-Assertion:T11

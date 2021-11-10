@@ -1,0 +1,33 @@
+T1	Medical-Problem 283 311	new right infrahilar opacity
+T2	Medical-Anatomy 326 352;354 365	right heart border, in the middle lobe
+T3	Medical-Problem 368 386	Additional opacity
+T4	Medical-Anatomy 394 406	left midlung
+T5	Medical-Problem 475 492	increased density
+T6	Medical-Anatomy 508 545	right hilar structures on the lateral
+T7	Medical-Problem 555 576	moderate cardiomegaly
+E7	Medical-Problem:T7
+T8	Medical-Assertion 601 603	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 604 620	pleural effusion
+T10	Medical-Problem 624 636	pneumothorax
+T11	Medical-Assertion 648 650	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 652 667	pulmonary edema
+T13	Medical-Problem 774 786	Healed right
+E11	Medical-Problem:T13
+T14	Medical-Problem 787 790;792 801	rib fractures
+E12	Medical-Problem:T14
+T15	Medical-Problem 851 881	focal regions of consolidation
+T16	Medical-Anatomy 886 903	right middle lobe
+T17	Medical-Anatomy 908 912;914 921	left midlung
+T18	Medical-Assertion 922 935	worrisome for
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 936 945	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T16 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

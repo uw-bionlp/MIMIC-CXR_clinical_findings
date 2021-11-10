@@ -1,0 +1,28 @@
+T1	Medical-Assertion 344 351	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 352 366	consolidations
+T3	Lesion-Characteristic 370 380	suspicious
+T4	Lesion-Anatomy 382 391	pulmonary
+T5	Lesion-Description 392 399	nodules
+T6	Medical-Problem 423 446	left atrial enlargement
+E5	Medical-Problem:T6
+T7	Medical-Problem 502 535;537 548	bulging of the cardiac silhouette posteriorly
+E6	Medical-Problem:T7
+T8	Medical-Assertion 588 590	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 591 609;611 621	pulmonary vascular congestion
+T10	Medical-Problem 623 638	pulmonary edema
+T11	Medical-Problem 643 660	pleural effusions
+T12	Medical-Assertion 771 795	No radiographic evidence
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 799 808	pneumonia
+T14	Medical-Problem 812 839;841 854	other acute cardiopulmonary abnormalities
+T15	Medical-Problem 857 885	Mild left atrial enlargement
+E12	Medical-Problem:T15
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12

@@ -1,0 +1,34 @@
+T1	Medical-Problem 167 176;178 187	Reticular opacities
+T2	Medical-Anatomy 214 224	right base
+T3	Medical-Assertion 236 238	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 239 252	consolidation
+T5	Medical-Problem 255 263	effusion
+T6	Medical-Problem 267 279	pneumothorax
+T7	Medical-Problem 282 306	Cardiomegaly is moderate
+E6	Medical-Problem:T7
+T8	Medical-Problem 313 323	trachea is
+E7	Medical-Problem:T8
+T9	Medical-Problem 324 332;334 342	deviated leftward
+E8	Medical-Problem:T9
+T10	Medical-Problem 379 400	calcified aortic arch
+E9	Medical-Problem:T10
+T11	Lesion-Description 415 421	nodule
+T12	Lesion-Anatomy 429 439	right apex
+T13	Medical-Problem 562 587	Chronic lung disease--___
+E12	Medical-Problem:T13
+T14	Medical-Problem 595 609	bronchiectasis
+E13	Medical-Problem:T14
+T15	Lesion-Anatomy 617 638	Right upper lobe lung
+T16	Lesion-Description 639 645	nodule
+T17	Lesion-Characteristic 647 667	nature indeterminate
+T18	Medical-Assertion 698 718	No definite evidence
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 722 751	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T12
+E15	Lesion-Description:T16 has-Lesion-Anatomy:T15 has-Lesion-Characteristic:T17
+E17	Medical-Problem:T19 has-Medical-Assertion:T18

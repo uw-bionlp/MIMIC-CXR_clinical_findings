@@ -1,0 +1,31 @@
+T1	Medical-Assertion 417 419	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 420 439	focal consolidation
+T3	Medical-Problem 441 448;450 458	pleural effusion
+T4	Medical-Problem 462 474	pneumothorax
+T5	Lesion-Characteristic 479 485	subtle
+T6	Lesion-Description 486 493	nodular
+E5	Lesion-Description:T6
+T7	Lesion-Description 494 501	opacity
+T8	Lesion-Anatomy 516 526;528 540	left sixth anterior rib
+T9	Lesion-Characteristic 554 560	subtle
+T10	Lesion-Description 561 568	nodular
+E9	Lesion-Description:T10
+T11	Lesion-Description 569 576	opacity
+T12	Lesion-Anatomy 591 604;606 619	right seventh posterior rib
+T13	Medical-Assertion 620 633	may represent
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Assertion 742 744	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 745 750	acute
+T16	Lesion-Assertion 781 789	Possible
+A4	Lesion-AssertionValue T16 possible
+T17	Lesion-Anatomy 790 799	bilateral
+T18	Lesion-Description 800 817	nodular opacities
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T8
+E10	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Lesion-Description:T18 has-Lesion-Assertion:T16 has-Lesion-Anatomy:T17

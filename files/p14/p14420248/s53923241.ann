@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 235 240	heart
+T2	Medical-Problem 244 271	mild-to-moderately enlarged
+T3	Medical-Problem 283 301;303 323	moderate pulmonary vascular engorgement
+E3	Medical-Problem:T3
+T4	Medical-Problem 328 361	mild interstitial pulmonary edema
+E4	Medical-Problem:T4
+T5	Medical-Problem 366 380;382 389	more confluent opacity
+T6	Medical-Anatomy 412 427	left lower lobe
+T7	Medical-Assertion 430 432	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 433 449	pleural effusion
+T9	Medical-Problem 454 466	pneumothorax
+T10	Medical-Problem 554 574	vascular engorgement
+E9	Medical-Problem:T10
+T11	Medical-Problem 579 612	mild interstitial pulmonary edema
+E10	Medical-Problem:T11
+T12	Medical-Problem 620 625;627 634	focal opacity
+T13	Medical-Anatomy 649 658	left base
+T14	Medical-Problem 680 689	infection
+T15	Medical-Assertion 690 699;701 711	should be considered
+A2	Medical-AssertionValue T15 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T14 has-Medical-Assertion:T15

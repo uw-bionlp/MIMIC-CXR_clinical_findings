@@ -1,0 +1,24 @@
+T1	Medical-Anatomy 169 174	lungs
+T2	Medical-Assertion 190 201	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 205 218	consolidation
+T4	Medical-Problem 220 228	effusion
+T5	Medical-Problem 234 246	pneumothorax
+T6	Medical-Anatomy 252 257	lungs
+T7	Medical-Problem 265 301;303 313	hyperinflated with flattening of the diaphragms
+T8	Medical-Assertion 315 328	suggestive of
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 329 344	underlying COPD
+T10	Medical-Problem 396 401	aorta
+E8	Medical-Problem:T10
+T11	Medical-Problem 410 425	mildly tortuous
+E9	Medical-Problem:T11
+T12	Medical-Assertion 454 456	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 457 486	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

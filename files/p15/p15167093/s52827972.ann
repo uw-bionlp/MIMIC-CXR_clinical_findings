@@ -1,0 +1,34 @@
+T1	Medical-Problem 34 53	Minimal atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Assertion 55 66	No evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 70 79	pneumonia
+T4	Medical-Assertion 395 403	possible
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 404 415	atelectasis
+T6	Medical-Problem 420 434;436 451	mild bronchial wall thickening
+T7	Medical-Anatomy 459 469	lung bases
+T8	Medical-Assertion 566 568	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 569 585	pleural effusion
+T10	Medical-Problem 590 602	pneumothorax
+T11	Medical-Problem 631 642	atelectasis
+T12	Medical-Assertion 647 655	possible
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 656 689	minimal bronchial wall thickening
+T14	Medical-Anatomy 697 701;703 708	lung bases
+T15	Medical-Assertion 709 728	possibly reflecting
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 729 739	bronchitis
+T17	Medical-Assertion 741 743	No
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 756 765	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T7
+E4	Medical-Problem:T6 has-Medical-Assertion:T4 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T14
+E9	Medical-Problem:T13 has-Medical-Assertion:T12 has-Medical-Anatomy:T14
+E11	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E12	Medical-Problem:T18 has-Medical-Assertion:T17

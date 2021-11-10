@@ -1,0 +1,26 @@
+T1	Medical-Problem 438 444;446 456	marked regression
+E1	Medical-Problem:T1
+T2	Medical-Problem 495 524;526 555	bilateral pattern of multiple patchy confluenting densities
+T3	Medical-Anatomy 563 573	parenchyma
+T4	Lesion-Size-Trend 580 586	marked
+A1	Lesion-Size-TrendValue T4 increasing
+T5	Lesion-Description 659 665	lesion
+T6	Medical-Problem 689 704	pulmonary edema
+E5	Medical-Problem:T6
+T7	Medical-Problem 709 729	diffuse hazy density
+T8	Medical-Anatomy 739 755	right hemithorax
+T9	Medical-Assertion 757 779	most likely represents
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 780 796	pleural effusion
+T11	Medical-Anatomy 816 833;835 841	posterior pleural spaces
+T12	Medical-Problem 886 909;911 919	small amount of pleural effusion
+T13	Medical-Anatomy 949 958	left base
+T14	Medical-Assertion 961 963	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 964 979;981 992	new parenchymal infiltrates
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Lesion-Description:T5 has-Lesion-Size-Trend:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

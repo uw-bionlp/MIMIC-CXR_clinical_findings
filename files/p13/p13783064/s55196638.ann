@@ -1,0 +1,36 @@
+T1	Medical-Problem 33 66	Large bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 72 92	adjacent atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Assertion 213 215	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 216 228	pneumothorax
+T5	Medical-Problem 231 240	Pneumonia
+T6	Medical-Assertion 241 250;252 261	cannot be  excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 603 664	Moderate bilateral pleural effusions, left greater than right
+E5	Medical-Problem:T7
+T8	Medical-Anatomy 689 699	Lung bases
+T9	Medical-Problem 738 751	opacification
+T10	Medical-Anatomy 756 772	both lower lungs
+T11	Medical-Problem 782 793	atelectasis
+T12	Medical-Problem 797 806	pneumonia
+T13	Lesion-Description 862 871	mass-like
+E11	Lesion-Description:T13
+T14	Lesion-Size 872 877	22 mm
+T15	Lesion-Description 883 889	lesion
+T16	Lesion-Anatomy 897 902;904 926	upper pole of the left hilus
+T17	Medical-Problem 970 979	infection
+E15	Medical-Problem:T17
+T18	Medical-Problem 983 1013	Cardiac silhouette is obscured
+E16	Medical-Problem:T18
+T19	Medical-Assertion 1025 1027	no
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1028 1040	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8
+E13	Lesion-Description:T15 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T16
+E17	Medical-Problem:T20 has-Medical-Assertion:T19

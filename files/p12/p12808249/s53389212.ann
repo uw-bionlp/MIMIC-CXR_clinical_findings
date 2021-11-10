@@ -1,0 +1,22 @@
+T1	Lesion-Description 312 319	nodular
+T2	Lesion-Characteristic 324 330	linear
+T3	Lesion-Description 331 340	opacities
+T4	Lesion-Anatomy 341 373	throughout the lungs bilaterally
+T5	Lesion-Size-Trend 378 384	stable
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Problem 431 456;458 467	superimposed interstitial opacities
+E5	Medical-Problem:T6
+T7	Medical-Problem 481 496	pulmonary edema
+E6	Medical-Problem:T7
+T8	Medical-Assertion 512 514	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 515 532	pleural effusions
+T10	Medical-Problem 537 549	pneumothorax
+T11	Medical-Problem 657 672	pulmonary edema
+E9	Medical-Problem:T11
+T12	Medical-Problem 677 720	Coalescence of chronic organizing pneumonia
+E10	Medical-Problem:T12
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T4
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

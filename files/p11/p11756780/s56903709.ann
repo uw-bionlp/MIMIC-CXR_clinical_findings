@@ -1,0 +1,40 @@
+T1	Medical-Problem 532 546	Calcifications
+T2	Medical-Anatomy 565 576	aortic knob
+T3	Medical-Problem 617 633	Subtle opacities
+T4	Medical-Anatomy 642 662	bilateral lung bases
+T5	Medical-Assertion 663 680	likely relates to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 681 702	bibasilar atelectasis
+T7	Medical-Problem 708 728	retrocardiac opacity
+E6	Medical-Problem:T7
+T8	Medical-Problem 754 773	large hiatus hernia
+E7	Medical-Problem:T8
+T9	Medical-Assertion 818 829	no evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 833 862	pulmonary vascular congestion
+T11	Medical-Assertion 874 876	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 878 890	pneumothorax
+T13	Medical-Problem 894 910	pleural effusion
+T14	Medical-Anatomy 917 935	osseous structures
+T15	Medical-Problem 956 958	be
+E12	Medical-Problem:T15
+T16	Medical-Problem 959 978	diffusely sclerotic
+T17	Medical-Assertion 1073 1075	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1076 1105	acute cardiopulmonary process
+T19	Lesion-Characteristic 1199 1206	Diffuse
+T20	Lesion-Characteristic 1207 1214	osseous
+T21	Lesion-Characteristic 1215 1224	sclerotic
+T22	Lesion-Description 1225 1235	metastases
+T23	Medical-Problem 1241 1260	Large hiatus hernia
+E19	Medical-Problem:T23
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E18	Lesion-Description:T22 has-Lesion-Characteristic:T19 has-Lesion-Characteristic:T20 has-Lesion-Characteristic:T21

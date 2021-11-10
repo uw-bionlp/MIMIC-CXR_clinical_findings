@@ -1,0 +1,22 @@
+T1	Medical-Problem 337 365	minimal areas of atelectasis
+T2	Medical-Anatomy 379 407	left and the right lung base
+T3	Medical-Problem 425 441;443 451	mild increase in diameter
+T4	Medical-Anatomy 459 480	pulmonary vasculature
+T5	Medical-Assertion 481 494	could suggest
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 495 514	mild fluid overload
+T7	Medical-Problem 518 528	Borderline
+E6	Medical-Problem:T7
+T8	Medical-Assertion 562 584	No convincing evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 608 620	pneumothorax
+T10	Medical-Problem 625 653	hyperlucent paracardiac line
+E8	Medical-Problem:T10
+T11	Medical-Assertion 723 725	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 726 743	pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

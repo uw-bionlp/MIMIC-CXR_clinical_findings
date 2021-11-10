@@ -1,0 +1,19 @@
+T1	Medical-Problem 227 237;239 254	increasing pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 274 295	atelectatic opacities
+T3	Medical-Anatomy 303 317;319 326	perihilar lung regions
+T4	Medical-Anatomy 345 370	retrocardiac lung regions
+T5	Medical-Problem 389 409	Coexisting pneumonia
+T6	Medical-Assertion 410 428	cannot be excluded
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 494 496	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 497 521	larger pleural effusions
+T9	Lesion-Anatomy 537 544	pleural
+T10	Lesion-Description 546 552	lesion
+T11	Lesion-Size-Trend 568 591	unchanged in appearance
+A3	Lesion-Size-TrendValue T11 no-change
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T11

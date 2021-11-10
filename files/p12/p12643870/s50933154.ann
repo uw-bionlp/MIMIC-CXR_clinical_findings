@@ -1,0 +1,23 @@
+T1	Medical-Problem 420 440	stable postoperative
+E1	Medical-Problem:T1
+T2	Medical-Problem 477 504	Persistent low lung volumes
+T3	Medical-Problem 510 516;518 527	patchy opacities
+T4	Medical-Anatomy 531 541	both bases
+T5	Medical-Assertion 542 559	likely reflecting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 560 571	atelectasis
+T7	Medical-Problem 582 591	pneumonia
+T8	Medical-Assertion 593 611	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 613 621	Probable
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 622 651	small layering right effusion
+T11	Medical-Assertion 654 656	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 657 669	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

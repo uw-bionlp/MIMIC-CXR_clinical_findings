@@ -1,0 +1,32 @@
+T1	Medical-Problem 132 144	pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 227 259	Asymmetric pulmonary abnormality
+E2	Medical-Problem:T2
+T3	Medical-Problem 285 305;307 328	generalized increase in background density
+T4	Medical-Problem 333 357	interstitial abnormality
+T5	Medical-Anatomy 361 371	both lungs
+T6	Medical-Problem 380 385;387 427	right infrahilar and left perihilar prominence
+E6	Medical-Problem:T6
+T7	Medical-Assertion 433 441	could be
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 442 464	simple pulmonary edema
+T9	Medical-Problem 469 474	edema
+T10	Medical-Problem 480 500	aspiration pneumonia
+T11	Medical-Problem 567 577	aspiration
+E10	Medical-Problem:T11
+T12	Medical-Anatomy 630 635	heart
+T13	Medical-Assertion 639 642	not
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 653 669	pleural effusion
+T15	Medical-Assertion 703 705	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 706 738	mediastinal vascular engorgement
+T17	Medical-Problem 756 762;764 777	simple cardiac edema
+E14	Medical-Problem:T17
+E3	Medical-Problem:T3 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

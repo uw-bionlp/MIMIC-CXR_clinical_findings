@@ -1,0 +1,35 @@
+T1	Lesion-Characteristic 33 39	Bulkly
+T2	Lesion-Anatomy 40 51	right hilar
+T3	Lesion-Description 52 62	adenopathy
+T4	Medical-Problem 76 104	Minimal heterogenous opacity
+T5	Medical-Anatomy 114 136	right medial lung base
+T6	Medical-Assertion 181 191	could left
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 205 223	infectious process
+T8	Medical-Problem 631 655	right infrahilar density
+E7	Medical-Problem:T8
+T9	Medical-Problem 763 798	minimal patchy retrocardiac opacity
+E8	Medical-Problem:T9
+T10	Medical-Problem 811 847	borderline upper zone redistribution
+E9	Medical-Problem:T10
+T11	Medical-Assertion 850 852	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 853 858	gross
+E10	Medical-Problem:T12
+T13	Medical-Problem 859 867	effusion
+T14	Lesion-Anatomy 933 938	hilar
+T15	Lesion-Description 939 949	adenopathy
+T16	Medical-Problem 993 1007	Patchy opacity
+T17	Medical-Anatomy 1008 1027;1029 1035	right cardiophrenic region
+T18	Medical-Assertion 1036 1042	may be
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1043 1055	projectional
+T20	Medical-Problem 1059 1073	new infiltrate
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

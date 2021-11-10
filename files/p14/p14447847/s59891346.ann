@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 143 153	Both lungs
+T2	Medical-Problem 166 196	mild to moderate overinflation
+T3	Medical-Problem 229 245	Chronic blunting
+T4	Medical-Anatomy 249 283;285 290	lateral and posterior costophrenic angle
+T5	Medical-Problem 300 324	chronic pleural scarring
+T6	Medical-Assertion 337 339	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 340 354	lung opacities
+T8	Medical-Assertion 356 366	concerning
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 371 380	pneumonia
+T10	Medical-Problem 384 394	aspiration
+T11	Medical-Problem 398 409	atelectasis
+T12	Medical-Problem 411 432	Postoperative changes
+T13	Medical-Anatomy 441 465	right lung (middle lobe)
+T14	Medical-Assertion 583 585	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 586 595	pneumonia
+T16	Medical-Problem 598 632	Chronic bilateral pleural scarring
+E13	Medical-Problem:T16
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

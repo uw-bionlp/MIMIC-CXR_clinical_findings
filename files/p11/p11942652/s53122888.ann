@@ -1,0 +1,31 @@
+T1	Medical-Problem 387 431	new, oval shaped, well-circumscribed opacity
+T2	Medical-Anatomy 439 453;455 495	right mid-lung region projecting over the minor fissure
+T3	Medical-Assertion 625 627	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 628 648	focal consolidations
+T5	Medical-Problem 650 667	pleural effusions
+T6	Medical-Problem 673 685	pneumothorax
+T7	Medical-Assertion 687 689	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 690 717	acute osseous abnormalities
+T9	Lesion-Size-Trend 738 741	New
+A3	Lesion-Size-TrendValue T9 new
+T10	Lesion-Anatomy 742 756	right mid-lung
+T11	Lesion-Description 757 761	mass
+T12	Lesion-Size 776 788	5.6 x 3.8 cm
+T13	Medical-Assertion 790 811	Differential includes
+A4	Medical-AssertionValue T13 possible
+T14	Lesion-Anatomy 813 820	pleural
+T15	Lesion-Description 821 825	mass
+T16	Medical-Problem 830 841	pseudotumor
+T17	Lesion-Anatomy 846 850	lung
+T18	Lesion-Description 851 861	malignancy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T11 has-Lesion-Size-Trend:T9 has-Lesion-Anatomy:T10 has-Lesion-Size-Present:T12
+E11	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T13
+E14	Lesion-Description:T18 has-Lesion-Anatomy:T17

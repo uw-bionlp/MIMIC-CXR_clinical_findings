@@ -1,0 +1,19 @@
+T1	Medical-Problem 350 359;361 374	Extensive consolidation
+T2	Medical-Anatomy 382 391	left lung
+T3	Lesion-Assertion 398 406	possible
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Characteristic 407 412	focal
+T5	Lesion-Anatomy 413 417	lung
+T6	Lesion-Description 418 424	lesion
+T7	Medical-Problem 429 436;438 449	pleural abnormality
+E6	Medical-Problem:T7
+T8	Medical-Problem 463 488	right upper lobe scarring
+E7	Medical-Problem:T8
+T9	Medical-Problem 509 516;518 527	pleural effusions
+E8	Medical-Problem:T9
+T10	Medical-Assertion 542 544	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 545 557	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

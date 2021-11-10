@@ -1,0 +1,61 @@
+T1	Medical-Problem 30 55	Worsening pulmonary edema
+T2	Medical-Problem 61 84	increased opacification
+T3	Medical-Anatomy 92 107;109 139	right lung base  and right retrocardiac region
+T4	Medical-Assertion 140 146	likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 147 173	worsening pleural effusion
+T6	Medical-Problem 179 188;190 220	collapsed  right lower lobe/atelectastes
+T7	Medical-Problem 224 239	worsening edema
+T8	Medical-Problem 241 261	Underlying infection
+T9	Medical-Assertion 262 267;269 281	can't  be excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 283 315	Trachea mildly deviated to right
+E8	Medical-Problem:T10
+T11	Medical-Problem 356 381	right lower lobe collapse
+E9	Medical-Problem:T11
+T12	Medical-Problem 383 403	Milder opacification
+T13	Medical-Anatomy 407 421	left lung base
+T14	Medical-Assertion 424 437	may represent
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 438 453	worsening edema
+T16	Medical-Problem 457 465	effusion
+T17	Medical-Problem 469 480	atelectasis
+T18	Medical-Problem 787 820	Moderately severe pulmonary edema
+E15	Medical-Problem:T18
+T19	Medical-Problem 846 864;866 879	relatively greater opacification
+T20	Medical-Anatomy 887 902	right lung base
+T21	Medical-Problem 948 953	edema
+T22	Medical-Problem 955 966	atelectasis
+T23	Medical-Problem 971 993	right pleural effusion
+T24	Medical-Problem 1038 1047	pneumonia
+T25	Medical-Problem 1097 1139	Moderate-to-severe cardiomegaly is chronic
+E22	Medical-Problem:T25
+T26	Medical-Problem 1152 1172	vascular engorgement
+E23	Medical-Problem:T26
+T27	Medical-Problem 1178 1188	distention
+E24	Medical-Problem:T27
+T28	Medical-Problem 1192 1223	mediastinal veins have worsened
+E25	Medical-Problem:T28
+T29	Medical-Assertion 1226 1228	No
+A4	Medical-AssertionValue T29 absent
+T30	Medical-Problem 1229 1241	pneumothorax
+T31	Lesion-Size 1244 1249	Large
+T32	Lesion-Characteristic 1251 1260	calcified
+T33	Lesion-Description 1261 1271	granulomas
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T21 has-Medical-Anatomy:T20
+E19	Medical-Problem:T22 has-Medical-Anatomy:T20
+E20	Medical-Problem:T23 has-Medical-Anatomy:T20
+E21	Medical-Problem:T24 has-Medical-Anatomy:T20
+E26	Medical-Problem:T30 has-Medical-Assertion:T29
+E29	Lesion-Description:T33 has-Lesion-Size-Present:T31 has-Lesion-Characteristic:T32

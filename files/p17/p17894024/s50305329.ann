@@ -1,0 +1,41 @@
+T1	Medical-Problem 33 60	Bilateral upper lobe bullae
+E1	Medical-Problem:T1
+T2	Medical-Assertion 63 65	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 66 69	PTX
+T4	Medical-Problem 413 425	Large bullae
+T5	Medical-Anatomy 442 459;461 479	upper lobes, left greater than right
+T6	Medical-Problem 493 538	well-defined, thin walls, with convex margins
+E5	Medical-Problem:T6
+T7	Medical-Problem 569 581	pneumothorax
+E6	Medical-Problem:T7
+T8	Lesion-Anatomy 593 609	right lower lobe
+T9	Lesion-Characteristic 622 629	cluster
+T10	Lesion-Characteristic 633 643	hyperdense
+T11	Lesion-Description 644 651	nodules
+T12	Medical-Assertion 659 662;664 673	may represent
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 674 688	calcifications
+T14	Medical-Problem 692 714	mucus-impacted bronchi
+T15	Medical-Assertion 799 801	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 802 809;811 820	pleural effusions
+T17	Medical-Problem 835 848	hiatal hernia
+E14	Medical-Problem:T17
+T18	Medical-Assertion 945 947	no
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 948 956	free air
+T20	Medical-Problem 1016 1052	lobe bullae, left greater than right
+E16	Medical-Problem:T20
+T21	Medical-Problem 1071 1086	lobe aspiration
+E17	Medical-Problem:T21
+T22	Lesion-Characteristic 1094 1103	calcified
+T23	Lesion-Description 1104 1111	nodules
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E19	Lesion-Description:T23 has-Lesion-Characteristic:T22

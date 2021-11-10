@@ -1,0 +1,21 @@
+T1	Medical-Problem 332 356	Postoperative appearance
+T2	Medical-Anatomy 364 380	left hemi thorax
+T3	Medical-Problem 431 462	extent of volume loss reflected
+E3	Medical-Problem:T3
+T4	Medical-Problem 466 486;488 493	leftward mediastinal shift
+E4	Medical-Problem:T4
+T5	Medical-Problem 495 506	atelectasis
+T6	Medical-Problem 511 524	pleural fluid
+T7	Medical-Anatomy 532 554	base of the left chest
+T8	Lesion-Size-Trend 613 616	new
+A1	Lesion-Size-TrendValue T8 new
+T9	Lesion-Size 617 622	15 mm
+T10	Lesion-Description 628 634	nodule
+T11	Lesion-Anatomy 643 653	right base
+T12	Lesion-Anatomy 673 689	right lower lobe
+T13	Lesion-Description 690 696	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T7
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Lesion-Description:T10 has-Lesion-Size-Trend:T8 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T11
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T12

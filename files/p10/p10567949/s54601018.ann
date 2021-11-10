@@ -1,0 +1,18 @@
+T1	Lesion-Anatomy 320 331	Mediastinal
+T2	Lesion-Description 332 347	lymphadenopathy
+T3	Lesion-Anatomy 351 381	right upper lobe consolidation
+T4	Lesion-Anatomy 383 394	right hilar
+T5	Lesion-Description 396 400	mass
+T6	Medical-Problem 433 465	small amount of pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Assertion 468 470	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 471 474;476 484	new findings
+T9	Medical-Anatomy 496 505	left lung
+T10	Medical-Assertion 530 532	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 533 545	pneumothorax
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

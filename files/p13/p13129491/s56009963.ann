@@ -1,0 +1,16 @@
+T1	Medical-Problem 232 241	opacities
+T2	Medical-Anatomy 249 262	left mid lung
+T3	Lesion-Anatomy 294 314	Bilateral upper lobe
+T4	Lesion-Description 315 332	nodular opacities
+T5	Medical-Problem 355 385	small left apical pneumothorax
+E5	Medical-Problem:T5
+T6	Medical-Problem 388 414;416 436	Interval worsening of left retrocardiac opacity
+E6	Medical-Problem:T6
+T7	Medical-Assertion 438 451	likely due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 452 463	atelectasis
+T9	Medical-Problem 488 515	bilateral pleural effusions
+E8	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E7	Medical-Problem:T8 has-Medical-Assertion:T7

@@ -1,0 +1,33 @@
+T1	Medical-Problem 339 357	triangular opacity
+T2	Medical-Anatomy 378 390;392 401	left lateral lung base
+T3	Lesion-Assertion 402 415	could reflect
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Anatomy 418 421	rib
+T5	Lesion-Anatomy 425 435	chest wall
+T6	Lesion-Description 436 442	lesion
+T7	Lesion-Assertion 495 497	No
+A2	Lesion-AssertionValue T7 absent
+T8	Medical-Assertion 498 508	convincing
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 518 527	pneumonia
+E6	Medical-Problem:T9
+T10	Medical-Problem 529 534	edema
+E7	Medical-Problem:T10
+T11	Medical-Problem 537 545	effusion
+T12	Medical-Problem 549 561	pneumothorax
+T13	Medical-Problem 642 649	opacity
+T14	Medical-Anatomy 670 692	left lateral lung base
+T15	Lesion-Assertion 693 706	could reflect
+A4	Lesion-AssertionValue T15 possible
+T16	Lesion-Characteristic 708 717	expansile
+T17	Lesion-Characteristic 718 722	bone
+T18	Lesion-Description 723 729	lesion
+T19	Lesion-Description 733 739	lesion
+T20	Lesion-Anatomy 751 761	chest wall
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Lesion-Description:T18 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T20
+E15	Lesion-Description:T19 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T20

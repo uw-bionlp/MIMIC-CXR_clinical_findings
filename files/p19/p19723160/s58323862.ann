@@ -1,0 +1,31 @@
+T1	Medical-Problem 521 531	Prominence
+T2	Medical-Anatomy 539 543	hila
+T3	Medical-Problem 571 581	prominence
+T4	Medical-Anatomy 589 610	pulmonary vasculature
+T5	Medical-Assertion 613 615	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 616 638	large pleural effusion
+T7	Medical-Assertion 650 652	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 653 681	definite focal consolidation
+T9	Medical-Anatomy 755 765	lung bases
+T10	Medical-Anatomy 774 787	hilar regions
+T11	Medical-Assertion 790 792;794 802	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 806 818	pneumothorax
+T13	Medical-Problem 960 963	Re-
+E10	Medical-Problem:T13
+T14	Medical-Anatomy 996 1025	central pulmonary vasculature
+T15	Medical-Assertion 1026 1034	suggests
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 1035 1065	pulmonary vascular engorgement
+T17	Medical-Assertion 1066 1073	without
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1075 1096	overt pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Anatomy:T14 has-Medical-Assertion:T15 has-Medical-Assertion:T17

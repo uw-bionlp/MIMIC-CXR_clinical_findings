@@ -1,0 +1,54 @@
+T1	Medical-Problem 292 297	aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 301 323	calcified and unfolded
+E2	Medical-Problem:T2
+T3	Medical-Problem 395 402;404 436	diffuse chronic interstitial abnormality
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 481 486	lungs
+T5	Medical-Assertion 487 499	appear to be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 500 513	hyperinflated
+T7	Lesion-Size 518 524	1.3 cm
+T8	Lesion-Description 525 532	nodular
+E7	Lesion-Description:T8
+T9	Lesion-Description 533 540	density
+T10	Lesion-Anatomy 582 608	right posterior fourth rib
+T11	Medical-Problem 610 635	More diffuse hazy opacity
+T12	Medical-Anatomy 656 686	right mid-chest wall laterally
+T13	Medical-Assertion 697 708	no evidence
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 715 727	pneumothorax
+T15	Medical-Problem 731 747	pleural effusion
+T16	Medical-Assertion 759 761	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 762 787	upper zone redistribution
+T18	Medical-Problem 792 811	new pulmonary edema
+T19	Medical-Problem 955 987	Diffuse interstitial abnormality
+E16	Medical-Problem:T19
+T20	Medical-Assertion 1125 1144	could be related to
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1145 1166	enphysematous changes
+T22	Medical-Problem 1186 1200	hyperinflation
+T23	Medical-Problem 1223 1246;1248 1255	superimposed interstial process
+E19	Medical-Problem:T23
+T24	Medical-Problem 1323 1354	superimposed infectious process
+T25	Medical-Problem 1358 1389;1391 1403	superimposed CHF in an atypical distribution
+T26	Medical-Assertion 1404 1422	cannot be excluded
+A5	Medical-AssertionValue T26 possible
+T27	Lesion-Size 1431 1437	1.3-cm
+T28	Lesion-Description 1438 1445	nodular
+E23	Lesion-Description:T28
+T29	Lesion-Description 1446 1453	density
+T30	Lesion-Anatomy 1461 1477	upper right lung
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T20
+E20	Medical-Problem:T24 has-Medical-Assertion:T26
+E21	Medical-Problem:T25 has-Medical-Assertion:T26
+E24	Lesion-Description:T29 has-Lesion-Size-Present:T27 has-Lesion-Anatomy:T30

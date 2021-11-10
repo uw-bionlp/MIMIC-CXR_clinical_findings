@@ -1,0 +1,41 @@
+T1	Lesion-Count 209 216	mutiple
+T2	Lesion-Anatomy 217 221	lung
+T3	Lesion-Description 222 229	nodules
+T4	Lesion-Anatomy 276 285	all lobes
+T5	Medical-Problem 288 311;313 323	Background reticulation throughout
+T6	Medical-Anatomy 328 333	lungs
+T7	Medical-Problem 343 378	widespread interstitial abnormality
+T8	Medical-Anatomy 405 426	right lower lung zone
+T9	Medical-Problem 437 462	bronchial wall thickening
+T10	Medical-Assertion 468 474	likely
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Problem 475 489	bronchiectasis
+T12	Medical-Anatomy 496 507	right hilum
+T13	Medical-Problem 511 526	mildly enlarged
+T14	Lesion-Assertion 528 538	suggesting
+A2	Lesion-AssertionValue T14 possible
+T15	Lesion-Description 540 550	adenopathy
+T16	Medical-Assertion 562 564	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 565 581	pleural effusion
+T18	Medical-Problem 585 597	pneumothorax
+T19	Lesion-Anatomy 643 660	Bilateral diffuse
+T20	Lesion-Description 661 668	nodules
+T21	Medical-Problem 674 687	reticulations
+E18	Medical-Problem:T21
+T22	Medical-Problem 704 714	background
+E19	Medical-Problem:T22
+T23	Lesion-Characteristic 773 783	widespread
+E20	Lesion-Characteristic:T23
+T24	Medical-Problem 810 855	preexisting diffuse interstitial lung disease
+E21	Medical-Problem:T24
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E9	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T12
+E13	Lesion-Description:T15 has-Lesion-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E17	Lesion-Description:T20 has-Lesion-Anatomy:T19

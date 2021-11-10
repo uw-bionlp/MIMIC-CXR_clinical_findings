@@ -1,0 +1,27 @@
+T1	Medical-Problem 231 251	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 348 380	minimal subsegmental atelectasis
+T3	Medical-Anatomy 389 399	lung bases
+T4	Lesion-Characteristic 401 410	Calcified
+T5	Lesion-Description 411 420	granuloma
+T6	Lesion-Anatomy 432 439	lingula
+T7	Lesion-Size-Trend 443 452	unchanged
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 454 456	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 457 462;464 477	focal consolidation
+T10	Medical-Problem 479 495	pleural effusion
+T11	Medical-Problem 499 511	pneumothorax
+T12	Medical-Assertion 534 536	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 537 542;544 565	acute osseous abnormalities
+T14	Medical-Assertion 586 588	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 589 622	acute cardiopulmonary abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

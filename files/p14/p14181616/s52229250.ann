@@ -1,0 +1,25 @@
+T1	Medical-Problem 357 377	Severe consolidation
+T2	Medical-Anatomy 385 401	right lower lung
+T3	Medical-Problem 420 433;435 467	indeterminate volume of right pleural effusion
+T4	Medical-Problem 531 537	airway
+T5	Medical-Anatomy 545 565	right bronchial tree
+T6	Medical-Assertion 566 574	suggests
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 575 584;586 599	retention of secretions
+T8	Medical-Problem 611 663	left lung atelectasis at the bases moderately severe
+E7	Medical-Problem:T8
+T9	Medical-Problem 690 718	at least moderately enlarged
+E8	Medical-Problem:T9
+T10	Medical-Anatomy 740 745;747 752	upper lungs
+T11	Medical-Assertion 763 765	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 766 771	edema
+T13	Medical-Assertion 862 864	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 865 877	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

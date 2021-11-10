@@ -1,0 +1,26 @@
+T1	Medical-Problem 564 572	blunting
+T2	Medical-Anatomy 580 603	left costophrenic angle
+T3	Medical-Assertion 604 614	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 615 622;624 632	pleural effusion
+T5	Medical-Problem 638 659	overlying atelectasis
+T6	Medical-Problem 662 686	Underlying consolidation
+T7	Medical-Assertion 687 696;698 706	cannot be excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 718 744	slight increase in opacity
+T9	Medical-Anatomy 752 767	right lung base
+T10	Medical-Assertion 775 788	may be due to
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 789 800	atelectasis
+T12	Medical-Problem 845 850;852 862	early aspiration
+T13	Medical-Problem 866 875	pneumonia
+T14	Medical-Assertion 880 892	not excluded
+A4	Medical-AssertionValue T14 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T10 has-Medical-Assertion:T14
+E10	Medical-Problem:T13 has-Medical-Anatomy:T9 has-Medical-Assertion:T10 has-Medical-Assertion:T14

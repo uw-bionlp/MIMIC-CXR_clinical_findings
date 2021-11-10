@@ -1,0 +1,25 @@
+T1	Medical-Problem 325 333;335 350	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 410 419	calcified
+T3	Lesion-Description 420 426	nodule
+T4	Lesion-Anatomy 434 450	right upper lobe
+T5	Lesion-Assertion 451 461	suggesting
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 464 473	granuloma
+T7	Lesion-Size-Trend 483 492	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 540 542	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 543 559	pleural effusion
+T10	Medical-Problem 564 576	pneumothorax
+T11	Medical-Problem 579 596	Small osteophytes
+T12	Medical-Anatomy 617 638;640 645	mid-to-lower thoracic spine
+T13	Medical-Assertion 663 674	No evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 678 691	acute disease
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T5 has-Lesion-Size-Trend:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

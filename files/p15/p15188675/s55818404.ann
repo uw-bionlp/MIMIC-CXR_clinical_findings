@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 240 245	lungs
+T2	Medical-Problem 250 263	hyperinflated
+T3	Medical-Problem 276 300	Small calcific densities
+T4	Medical-Anatomy 322 346	left posterior sixth rib
+T5	Lesion-Assertion 351 357	likely
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 358 367	calcified
+T7	Lesion-Description 368 378	granulomas
+T8	Medical-Assertion 475 477	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 478 494	pleural effusion
+T10	Medical-Problem 498 510	pneumothorax
+T11	Medical-Assertion 522 524	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 525 543;545 554	free air under the diaphragm
+T13	Medical-Assertion 575 577	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 578 606	free air under the diaphragm
+T15	Medical-Problem 615 635	hyperinflated  lungs
+E11	Medical-Problem:T15
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

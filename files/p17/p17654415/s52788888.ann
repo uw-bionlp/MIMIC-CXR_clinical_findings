@@ -1,0 +1,43 @@
+T1	Medical-Problem 33 47	Subtle opacity
+T2	Medical-Anatomy 68 89	medial left lung apex
+T3	Medical-Assertion 117 131	may be present
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 640 654	Subtle opacity
+T5	Medical-Anatomy 684 705	medial left lung apex
+T6	Medical-Assertion 734 736	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 737 753	pleural effusion
+T8	Medical-Problem 758 770	pneumothorax
+T9	Medical-Problem 785 823	right hemidiaphragm is mildly elevated
+E7	Medical-Problem:T9
+T10	Medical-Anatomy 831 838	cardiac
+T11	Medical-Assertion 853 856	not
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 857 865	enlarged
+T13	Medical-Assertion 874 880	may be
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 881 897	mild enlargement
+T15	Medical-Anatomy 905 909;911 927	main pulmonary artery
+T16	Medical-Problem 948 962	Subtle opacity
+T17	Medical-Anatomy 983 1004	medial left lung apex
+T18	Medical-Problem 1006 1016;1018 1031	underlying consolidation
+T19	Medical-Assertion 1032 1046	may be present
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1107 1133	Equivocal mild enlargement
+T21	Medical-Anatomy 1141 1162	main pulmonary artery
+T22	Medical-Assertion 1163 1176	may relate to
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1178 1211	underlying pulmonary hypertension
+T24	Medical-Problem 1297 1311	subtle opacity
+T25	Medical-Anatomy 1319 1340	medial left lung apex
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T16 has-Medical-Anatomy:T17 has-Medical-Assertion:T19
+E14	Medical-Problem:T18 has-Medical-Assertion:T19
+E15	Medical-Problem:T20 has-Medical-Anatomy:T21
+E17	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E18	Medical-Problem:T24 has-Medical-Anatomy:T25

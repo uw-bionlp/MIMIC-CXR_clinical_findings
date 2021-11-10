@@ -1,0 +1,21 @@
+T1	Lesion-Size 212 216	1 cm
+T2	Lesion-Characteristic 217 224	rounded
+T3	Lesion-Description 225 232	opacity
+T4	Lesion-Anatomy 253 267	right mid lung
+T5	Lesion-Size-Trend 335 342;344 350	grossly stable
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Assertion 414 416	No
+A2	Lesion-AssertionValue T6 absent
+T7	Medical-Problem 417 422;424 437	focal consolidation
+E5	Medical-Problem:T7
+T8	Medical-Assertion 457 459	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 460 476	pleural effusion
+T10	Medical-Problem 480 492	pneumothorax
+T11	Medical-Assertion 555 557	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 558 573;575 580	overt pulmonary edema
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

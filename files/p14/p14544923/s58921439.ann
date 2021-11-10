@@ -1,0 +1,38 @@
+T1	Medical-Problem 249 272	increased opacification
+T2	Medical-Anatomy 285 314	right mid and lower lung zone
+T3	Medical-Problem 317 334	Streaky opacities
+T4	Medical-Anatomy 342 356	left lung base
+T5	Medical-Assertion 361 380	likely secondary to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 381 392	atelectasis
+T7	Medical-Problem 632 656	Architectural distortion
+E6	Medical-Problem:T7
+T8	Medical-Problem 662 690	bilateral pleural thickening
+E7	Medical-Problem:T8
+T9	Lesion-Description 754 763	granuloma
+T10	Lesion-Anatomy 775 790	left upper lobe
+T11	Lesion-Size-Trend 794 800	stable
+A2	Lesion-Size-TrendValue T11 no-change
+T12	Medical-Assertion 812 814	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 816 832	pleural effusion
+T14	Medical-Problem 834 846	pneumothorax
+T15	Medical-Problem 851 878	evidence of pulmonary edema
+T16	Medical-Problem 883 889;891 916	healed right clavicular fracture
+E13	Medical-Problem:T16
+T17	Medical-Problem 981 1003	airspace opacification
+T18	Medical-Anatomy 1011 1024;1026 1037	right mid and lower lobes
+T19	Medical-Problem 1071 1089	infectious process
+T20	Medical-Problem 1122 1168	fibrotic changes with architectural distortion
+E17	Medical-Problem:T20
+T21	Medical-Problem 1173 1182;1184 1202	bilateral pleural thickening
+E18	Medical-Problem:T21
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T12
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T19 has-Medical-Anatomy:T18

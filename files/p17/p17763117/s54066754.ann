@@ -1,0 +1,40 @@
+T1	Medical-Assertion 265 267	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 268 281	focal opacity
+T3	Medical-Problem 293 302	pneumonia
+T4	Medical-Assertion 313 315	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 316 328	pneumothorax
+T6	Medical-Problem 333 361	significant pleural effusion
+T7	Medical-Assertion 375 377	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 378 393	pulmonary edema
+T9	Lesion-Count 415 423	multiple
+T10	Lesion-Characteristic 424 433	calcified
+T11	Lesion-Description 434 441	nodules
+T12	Lesion-Characteristic 458 485	prior granulomatous disease
+T13	Lesion-Anatomy 500 516	right upper lobe
+T14	Lesion-Description 517 523	nodule
+T15	Lesion-Size 534 538	9 mm
+T16	Medical-Problem 701 711	tortuosity
+T17	Medical-Problem 717 730	calcification
+T18	Medical-Anatomy 738 752	thoracic aorta
+T19	Medical-Assertion 952 963	No evidence
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 967 976	pneumonia
+T21	Lesion-Anatomy 983 999	Right upper lobe
+T22	Lesion-Description 1000 1006	nodule
+T23	Lesion-Size 1017 1021	9 mm
+T24	Lesion-Description 1169 1175	nodule
+E20	Lesion-Description:T24
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T11 has-Lesion-Count:T9 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T12
+E11	Lesion-Description:T14 has-Lesion-Anatomy:T13 has-Lesion-Size-Present:T15
+E13	Medical-Problem:T16 has-Medical-Anatomy:T18
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Lesion-Description:T22 has-Lesion-Anatomy:T21 has-Lesion-Size-Present:T23

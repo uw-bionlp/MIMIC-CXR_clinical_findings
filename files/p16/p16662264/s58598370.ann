@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 252 257	lungs
+T2	Medical-Problem 263 308	mild bilateral lower lobe confluent opacities
+T3	Medical-Problem 316 319;321 328	new opacity
+T4	Medical-Anatomy 336 352	right upper lobe
+T5	Medical-Problem 376 385	effusions
+T6	Medical-Assertion 386 390	have
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Assertion 391 394;396 404	now resolved
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 508 548	Unchanged bilateral lower lobe opacities
+E6	Medical-Problem:T8
+T9	Medical-Assertion 554 569	could represent
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 570 579;581 590	resolving pneumonia
+T11	Medical-Problem 598 601	new
+E8	Medical-Problem:T11
+T12	Lesion-Description 602 607	focal
+E9	Lesion-Description:T12
+T13	Lesion-Description 608 615	opacity
+T14	Lesion-Anatomy 623 639	right upper lobe
+T15	Lesion-Characteristic 648 658;660 666	nodular in nature
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Lesion-Description:T13 has-Lesion-Anatomy:T14 has-Lesion-Characteristic:T15

@@ -1,0 +1,24 @@
+T1	Medical-Problem 296 315	focal consolidation
+T2	Medical-Anatomy 323 339	right lower lobe
+T3	Lesion-Count 356 363	several
+T4	Lesion-Size 365 372	smaller
+T5	Lesion-Description 373 382	opacities
+T6	Lesion-Anatomy 394 409	right upper and
+T7	Medical-Assertion 487 500	could suggest
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 501 521	multifocal pneumonia
+T9	Medical-Assertion 534 536	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 537 553	pleural effusion
+T11	Medical-Problem 557 569	pneumothorax
+T12	Medical-Assertion 628 630	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 631 658	acute osseous abnormalities
+T14	Medical-Problem 718 738	multifocal pneumonia
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Count:T3 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,39 @@
+T1	Medical-Problem 271 282	atelectasis
+T2	Medical-Problem 286 294	scarring
+T3	Medical-Anatomy 316 330	left lung base
+T4	Medical-Anatomy 336 341	lungs
+T5	Medical-Problem 350 375	relatively hyper expanded
+T6	Medical-Problem 381 420	relative paucity of vascular structures
+T7	Medical-Assertion 459 482	raising the possibility
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 486 496;498 507	underlying emphysema
+T9	Medical-Assertion 510 512	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 513 532	focal consolidation
+T11	Medical-Problem 534 550	pleural effusion
+T12	Medical-Problem 552 564	pneumothorax
+T13	Medical-Problem 570 585	pulmonary edema
+T14	Medical-Problem 668 681	Hyperexpanded
+T15	Medical-Anatomy 682 687	lungs
+T16	Medical-Assertion 693 701	possible
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 702 722	underlying emphysema
+T18	Medical-Problem 732 744;746 757	left basilar atelectasis
+E15	Medical-Problem:T18
+T19	Medical-Problem 761 769	scarring
+E16	Medical-Problem:T19
+T20	Medical-Assertion 770 786	without evidence
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 791 820	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

@@ -1,0 +1,33 @@
+T1	Medical-Problem 355 369	Hyperinflation
+E1	Medical-Problem:T1
+T2	Medical-Problem 379 390	severe COPD
+E2	Medical-Problem:T2
+T3	Medical-Problem 393 406	Opacification
+T4	Medical-Anatomy 410 429;431 466	projecting over the lateral aspect of the right midlung
+T5	Medical-Assertion 467 475	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 476 500	peripheral consolidation
+T7	Medical-Problem 509 525	active pneumonia
+T8	Medical-Problem 541 569	17 mm wide lobulated opacity
+T9	Medical-Anatomy 586 607;609 612	anterior right second rib
+T10	Medical-Problem 706 726	extensive lobulation
+T11	Medical-Anatomy 734 749	right lung apex
+T12	Medical-Problem 851 863	tuberculosis
+E11	Medical-Problem:T12
+T13	Medical-Problem 883 890	opacity
+T14	Medical-Anatomy 898 908	right lung
+T15	Medical-Assertion 910 918	could be
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 919 937	pleural thickening
+T17	Lesion-Assertion 1036 1038	No
+A3	Lesion-AssertionValue T17 absent
+T18	Lesion-Characteristic 1039 1046	central
+T19	Lesion-Description 1047 1057	adenopathy
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E16	Lesion-Description:T19 has-Lesion-Assertion:T17 has-Lesion-Characteristic:T18

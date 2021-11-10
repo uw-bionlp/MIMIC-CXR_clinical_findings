@@ -1,0 +1,62 @@
+T1	Lesion-Anatomy 72 82	Left hilar
+T2	Lesion-Description 83 87	mass
+T3	Medical-Problem 93 121	LUL and partial LLL collapse
+E3	Medical-Problem:T3
+T4	Medical-Problem 123 141;143 152	small left pleural  effusion
+E4	Medical-Problem:T4
+T5	Lesion-Anatomy 501 506	hilar
+T6	Lesion-Description 507 511	mass
+T7	Medical-Problem 517 521	left
+E7	Medical-Problem:T7
+T8	Lesion-Size 699 704	large
+T9	Lesion-Anatomy 705 715	left hilar
+T10	Lesion-Description 716 720	mass
+T11	Medical-Problem 726 730	hazy
+E11	Medical-Problem:T11
+T12	Medical-Anatomy 750 759	left lung
+T13	Medical-Problem 777 801	left upper lobe collapse
+T14	Medical-Problem 806 834;836 844	component of left lower lobe collapse
+T15	Medical-Assertion 848 860	not excluded
+A1	Medical-AssertionValue T15 possible
+T16	Medical-Problem 872 889	increased opacity
+T17	Medical-Anatomy 897 913;915 941	right upper lobe abutting the minor fissure
+T18	Medical-Assertion 951 965	concerning for
+A2	Medical-AssertionValue T18 possible
+T19	Medical-Problem 966 975	pneumonia
+T20	Medical-Problem 990 999	emphysema
+E18	Medical-Problem:T20
+T21	Medical-Problem 1011 1020	Calcified
+E19	Medical-Problem:T21
+T22	Lesion-Description 1021 1031	granulomas
+T23	Lesion-Anatomy 1048 1064	right lower lung
+T24	Medical-Anatomy 1104 1126	mediastinal structures
+T25	Medical-Problem 1131 1139;1141 1161	slightly deviated to the left
+T26	Medical-Assertion 1168 1183	likely reflects
+A3	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1200 1216;1218 1231	significant left lung collapse
+T28	Lesion-Anatomy 1298 1303	hilar
+T29	Lesion-Description 1304 1308	mass
+T30	Medical-Problem 1314 1338	left upper lobe collapse
+E27	Medical-Problem:T30
+T31	Medical-Assertion 1343 1349	likely
+A4	Medical-AssertionValue T31 possible
+T32	Medical-Problem 1350 1362;1364 1383	partial left lower lobe collapse
+T33	Medical-Problem 1392 1413	left pleural effusion
+E29	Medical-Problem:T33
+T34	Medical-Problem 1442 1464	airspace consolidation
+T35	Medical-Anatomy 1472 1501;1503 1516	right upper lobe abutting the minor fissure
+T36	Medical-Problem 1536 1545	pneumonia
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E10	Lesion-Description:T10 has-Lesion-Size-Present:T8 has-Lesion-Anatomy:T9
+E13	Medical-Problem:T13 has-Medical-Anatomy:T12
+E14	Medical-Problem:T14 has-Medical-Assertion:T15
+E15	Medical-Problem:T16 has-Medical-Anatomy:T17
+E17	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E20	Lesion-Description:T22 has-Lesion-Anatomy:T23
+E23	Medical-Problem:T25 has-Medical-Anatomy:T24
+E24	Medical-Problem:T27 has-Medical-Anatomy:T24 has-Medical-Assertion:T26
+E26	Lesion-Description:T29 has-Lesion-Anatomy:T28
+E28	Medical-Problem:T32 has-Medical-Assertion:T31
+E30	Medical-Problem:T34 has-Medical-Anatomy:T35
+E32	Medical-Problem:T36 has-Medical-Anatomy:T35

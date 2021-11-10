@@ -1,0 +1,28 @@
+T1	Medical-Problem 316 330	Indistinctness
+T2	Medical-Anatomy 334 343	pulmonary
+T3	Medical-Problem 372 406	elevated pulmonary venous pressure
+T4	Medical-Problem 408 421	Opacification
+T5	Medical-Anatomy 429 438	left base
+T6	Medical-Assertion 439 444;446 455	could represent
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 456 474	merely atelectasis
+T8	Medical-Assertion 494 502	suggests
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 503 515;517 527	superimposed aspiration
+T10	Medical-Problem 531 551	infectious pneumonia
+T11	Medical-Problem 553 571	Continued blunting
+T12	Medical-Anatomy 579 591;593 599	costophrenic angles
+T13	Medical-Problem 619 642	small pleural effusions
+T14	Medical-Problem 644 670	Retrocardiac opacification
+T15	Medical-Problem 691 702	volume loss
+T16	Medical-Anatomy 710 719	left lobe
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T16
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16

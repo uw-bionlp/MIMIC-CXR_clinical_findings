@@ -1,0 +1,53 @@
+T1	Medical-Problem 36 55	Hyperinflated lungs
+E1	Medical-Problem:T1
+T2	Medical-Problem 72 109	chronic obstructive pulmonary disease
+E2	Medical-Problem:T2
+T3	Medical-Problem 116 129	Focal opacity
+T4	Medical-Anatomy 150 174	anterior right third rib
+T5	Lesion-Anatomy 257 266	pulmonary
+T6	Lesion-Description 267 273	lesion
+T7	Lesion-Assertion 279 291	not excluded
+A1	Lesion-AssertionValue T7 possible
+T8	Medical-Problem 378 385	opacity
+T9	Medical-Anatomy 393 417	anterior right third rib
+T10	Medical-Problem 833 853	remain hyperinflated
+E9	Medical-Problem:T10
+T11	Medical-Problem 871 900;902 909	chronic obstructive pulmonary disease
+E10	Medical-Problem:T11
+T12	Medical-Anatomy 932 956	anterior right third rib
+T13	Medical-Problem 969 974;976 983	focal opacity
+T14	Lesion-Anatomy 1073 1082	pulmonary
+T15	Lesion-Description 1083 1089	lesion
+T16	Lesion-Assertion 1093 1105	not excluded
+A2	Lesion-AssertionValue T16 possible
+T17	Medical-Assertion 1193 1195	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1196 1201	focal
+E15	Medical-Problem:T18
+T19	Medical-Problem 1203 1216	consolidation
+T20	Medical-Assertion 1217 1219	or
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1220 1242	large pleural effusion
+T22	Medical-Assertion 1262 1264	no
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1265 1277	pneumothorax
+T24	Medical-Problem 1343 1353;1355 1382	persistent biapical pleural thickening
+E19	Medical-Problem:T24
+T25	Medical-Problem 1403 1422	Hyperinflated lungs
+E20	Medical-Problem:T25
+T26	Medical-Problem 1439 1476	chronic obstructive pulmonary disease
+E21	Medical-Problem:T26
+T27	Medical-Problem 1481 1494	Focal opacity
+E22	Medical-Problem:T27
+T28	Lesion-Description 1633 1639	lesion
+T29	Lesion-Assertion 1643 1655	not excluded
+A6	Lesion-AssertionValue T29 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E12	Medical-Problem:T13 has-Medical-Anatomy:T12
+E14	Lesion-Description:T15 has-Lesion-Anatomy:T14 has-Lesion-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T17 has-Medical-Assertion:T20
+E17	Medical-Problem:T21 has-Medical-Assertion:T17 has-Medical-Assertion:T20
+E18	Medical-Problem:T23 has-Medical-Assertion:T22
+E23	Lesion-Description:T28 has-Lesion-Assertion:T29

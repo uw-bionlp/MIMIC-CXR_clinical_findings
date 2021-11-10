@@ -1,0 +1,26 @@
+T1	Medical-Assertion 42 44	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 45 57	pneumothorax
+T3	Medical-Problem 76 106;108 117	moderate to large left pleural  effusion
+E2	Medical-Problem:T3
+T4	Lesion-Anatomy 155 182	Left lower lobe/ infrahilar
+T5	Lesion-Description 183 187	mass
+T6	Medical-Problem 224 249	some areas of atelectasis
+T7	Medical-Anatomy 257 267;269 274	right lung  base
+T8	Medical-Problem 277 297	Mild pulmonary edema
+E7	Medical-Problem:T8
+T9	Medical-Problem 625 641	pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 646 687	moderate to severe left basal atelectasis
+E9	Medical-Problem:T10
+T11	Medical-Assertion 803 805	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 806 818	pneumothorax
+T13	Medical-Problem 823 844	Moderate cardiomegaly
+E11	Medical-Problem:T13
+T14	Medical-Problem 868 901	mild interstitial pulmonary edema
+E12	Medical-Problem:T14
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

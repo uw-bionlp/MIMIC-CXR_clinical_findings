@@ -1,0 +1,23 @@
+T1	Medical-Problem 504 520	linear opacities
+T2	Medical-Anatomy 528 544	right upper lung
+T3	Medical-Anatomy 546 562	right lower lobe
+T4	Medical-Anatomy 568 572;574 584	left lower lung
+T5	Medical-Problem 666 706	still present chronic changes related to
+E5	Medical-Problem:T5
+T6	Medical-Assertion 724 734	resolution
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 742 757	acute component
+T8	Medical-Assertion 760 762	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 763 780	new consolidation
+T10	Medical-Problem 793 834	intermittent development of acute process
+T11	Medical-Assertion 881 883	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 884 912	appreciable pleural effusion
+T13	Medical-Problem 916 928	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

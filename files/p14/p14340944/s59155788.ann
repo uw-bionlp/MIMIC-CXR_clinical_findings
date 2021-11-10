@@ -1,0 +1,19 @@
+T1	Medical-Problem 60 92	Left upper lobe pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 384 411	large left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 563 588	Significant opacification
+T4	Medical-Anatomy 597 607	left chest
+T5	Medical-Assertion 629 646	likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 665 709	remaining moderate-to-large pleural effusion
+T7	Medical-Problem 714 725	atelectasis
+T8	Medical-Assertion 778 780	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 781 793	pneumothorax
+T10	Medical-Problem 822 843	Left pleural effusion
+E8	Medical-Problem:T10
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,31 @@
+T1	Medical-Problem 39 52	Consolidation
+T2	Medical-Anatomy 60 76	right upper lobe
+T3	Medical-Problem 101 116;118 127	mildly improved  aeration
+T4	Medical-Anatomy 135 145	lung bases
+T5	Medical-Problem 248 261	Consolidation
+T6	Medical-Anatomy 269 285	right upper lobe
+T7	Medical-Problem 310 325;327 336	mildly improved  aeration
+T8	Medical-Anatomy 344 354	lung bases
+T9	Medical-Assertion 736 747	no evidence
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 751 763	pneumothorax
+T11	Medical-Problem 767 784	pneumomediastinum
+T12	Medical-Problem 826 850	Postobstructive collapse
+E11	Medical-Problem:T12
+T13	Lesion-Anatomy 886 902	right upper lobe
+T14	Lesion-Size 915 920	large
+T15	Lesion-Description 921 931	neoplastic
+E14	Lesion-Description:T15
+T16	Lesion-Description 932 936	mass
+T17	Medical-Anatomy 1064 1079	right lung base
+T18	Medical-Assertion 1084 1094	resolution
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1098 1107;1109 1128	pulmonary vascular congestion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E15	Lesion-Description:T16 has-Lesion-Anatomy:T13 has-Lesion-Size-Present:T14
+E17	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

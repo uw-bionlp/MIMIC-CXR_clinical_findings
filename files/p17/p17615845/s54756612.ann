@@ -1,0 +1,30 @@
+T1	Medical-Problem 480 493	calcification
+T2	Medical-Anatomy 501 512	aortic knob
+T3	Medical-Problem 515 535	Multifocal opacities
+T4	Medical-Anatomy 536 557	throughout both lungs
+T5	Medical-Assertion 559 566	suggest
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 567 576	pneumonia
+T7	Medical-Assertion 581 589	possibly
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 593 624	element of mild pulmonary edema
+T9	Medical-Assertion 637 639	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 640 652	pneumothorax
+T11	Medical-Problem 656 672	pleural effusion
+T12	Medical-Problem 841 851;853 862	Multifocal opacities
+E9	Medical-Problem:T12
+T13	Medical-Assertion 863 877	likely reflect
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 878 898	multifocal pneumonia
+T15	Medical-Assertion 903 911	possibly
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 915 930;932 947	element of mild pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

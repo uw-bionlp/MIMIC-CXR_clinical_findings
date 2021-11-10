@@ -1,0 +1,25 @@
+T1	Medical-Problem 403 421;423 435	Small right apical pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 470 498	right-sided pleural effusion
+T3	Medical-Problem 507 518	volume loss
+T4	Medical-Anatomy 526 542	right lower lobe
+T5	Medical-Anatomy 566 578;580 584	right middle lobe
+T6	Medical-Problem 630 654	Bibasilar consolidations
+E6	Medical-Problem:T6
+T7	Medical-Problem 706 747	Small unchanged right apical pneumothorax
+E7	Medical-Problem:T7
+T8	Medical-Assertion 749 756	without
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 757 774	mediastinal shift
+T10	Medical-Problem 783 811	Right-sided pleural effusion
+T11	Medical-Problem 816 827	volume loss
+T12	Medical-Anatomy 835 851	right lower lobe
+T13	Medical-Problem 891 913	Superimposed pneumonia
+T14	Medical-Assertion 917 929	not excluded
+A2	Medical-AssertionValue T14 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T12
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T13 has-Medical-Assertion:T14

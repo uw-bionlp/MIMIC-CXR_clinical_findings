@@ -1,0 +1,17 @@
+T1	Medical-Problem 284 334	Small region new peribronchovascular opacification
+T2	Medical-Anatomy 335 347	left midlung
+T3	Medical-Assertion 348 356	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 357 362;364 373	early pneumonia
+T5	Medical-Assertion 409 411	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 412 427	pulmonary edema
+T7	Medical-Problem 430 436;438 461	Severe cardiomegaly is chronic
+E5	Medical-Problem:T7
+T8	Medical-Assertion 464 466	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 467 486	pleural abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

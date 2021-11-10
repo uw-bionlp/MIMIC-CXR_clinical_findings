@@ -1,0 +1,39 @@
+T1	Medical-Problem 353 379	probable vascular plethora
+E1	Medical-Problem:T1
+T2	Medical-Problem 489 504	left lower lobe
+E2	Medical-Problem:T2
+T3	Medical-Problem 506 514	collapse
+E3	Medical-Problem:T3
+T4	Medical-Problem 522 535	consolidation
+E4	Medical-Problem:T4
+T5	Medical-Problem 547 571	increased patchy opacity
+T6	Medical-Anatomy 579 584;586 606	right cardiophrenic region
+T7	Medical-Assertion 609 617	Possible
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 618 637	small left effusion
+T9	Medical-Problem 662 678	Low lung volumes
+E8	Medical-Problem:T9
+T10	Medical-Problem 718 765	Increase in the appearance of vascular plethora
+E9	Medical-Problem:T10
+T11	Medical-Assertion 767 780	suggestive of
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 781 784	CHF
+T13	Medical-Anatomy 856 860	Left
+T14	Medical-Problem 872 880	collapse
+T15	Medical-Problem 888 901	consolidation
+T16	Medical-Problem 906 920	patchy opacity
+T17	Medical-Anatomy 929 939	right base
+T18	Medical-Assertion 940 959	likely also reflect
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 960 971	atelectasis
+T20	Medical-Problem 1032 1053	infectious infiltrate
+T21	Medical-Assertion 1054 1083	would be difficult to exclude
+A4	Medical-AssertionValue T21 possible
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13 has-Medical-Anatomy:T17
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Anatomy:T17
+E14	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T13 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T21

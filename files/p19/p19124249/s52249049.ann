@@ -1,0 +1,14 @@
+T1	Medical-Problem 314 337	Irregular opacification
+T2	Medical-Anatomy 345 356	lung apices
+T3	Lesion-Size 364 369	17 mm
+T4	Lesion-Description 375 382	nodular
+E4	Lesion-Description:T4
+T5	Lesion-Description 383 390	opacity
+T6	Lesion-Anatomy 399 421	left apex particularly
+T7	Medical-Anatomy 581 592	Lower lungs
+T8	Medical-Assertion 616 618	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 620 639	pleural abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

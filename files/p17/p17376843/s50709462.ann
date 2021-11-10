@@ -1,0 +1,24 @@
+T1	Lesion-Description 339 356	nodular opacities
+T2	Lesion-Anatomy 364 379	left upper lobe
+T3	Medical-Problem 392 402;404 423	linear and irregular opacities
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 431 438	lingula
+T5	Medical-Problem 533 550	pleural effusions
+E5	Medical-Problem:T5
+T6	Medical-Problem 555 567	pneumothorax
+E6	Medical-Problem:T6
+T7	Lesion-Description 599 616	nodular opacities
+T8	Lesion-Anatomy 624 639	left upper lobe
+T9	Medical-Assertion 640 653	can represent
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 655 671	bronchopneumonia
+T11	Medical-Problem 684 693	opacities
+E10	Medical-Problem:T11
+T12	Medical-Anatomy 701 708	lingula
+T13	Medical-Assertion 741 747	may be
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 752 779	sequelae of prior infection
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

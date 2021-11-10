@@ -1,0 +1,41 @@
+T1	Medical-Problem 33 53	Retrocardiac opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 70 79	pneumonia
+E2	Medical-Problem:T2
+T3	Medical-Problem 139 146	opacity
+E3	Medical-Problem:T3
+T4	Medical-Assertion 147 160	may represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 161 172	atelectasis
+T6	Medical-Problem 206 216	aspiration
+T7	Medical-Problem 220 229	pneumonia
+T8	Medical-Anatomy 237 259	right clinical setting
+T9	Medical-Anatomy 737 753	right hemithorax
+E8	Medical-Anatomy:T9
+T10	Medical-Problem 756 775	Bibasilar opacities
+E9	Medical-Problem:T10
+T11	Medical-Assertion 776 779;781 788	may reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 789 800	atelectasis
+T13	Medical-Assertion 801 807	versus
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 808 817	pneumonia
+T15	Medical-Assertion 917 930;932 940	No convincing evidence
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 945 953	effusion
+T17	Medical-Problem 957 969	pneumothorax
+T18	Medical-Problem 1067 1086	Bibasilar opacities
+E14	Medical-Problem:T18
+T19	Medical-Problem 1099 1110	atelectasis
+T20	Medical-Assertion 1111 1117	versus
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1118 1141;1143 1153	pneumonia, left greater than right
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Assertion:T13
+E11	Medical-Problem:T14 has-Medical-Assertion:T11 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T19 has-Medical-Assertion:T20
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

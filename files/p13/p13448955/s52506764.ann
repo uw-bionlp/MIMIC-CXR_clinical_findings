@@ -1,0 +1,18 @@
+T1	Medical-Problem 371 384;386 402	moderate left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 465 479	Left lung base
+T3	Medical-Problem 494 505	atelectatic
+T4	Medical-Assertion 517 519	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 520 532	pneumothorax
+T6	Medical-Problem 551 597	Moderate enlargement of the cardiac silhouette
+E5	Medical-Problem:T6
+T7	Medical-Assertion 632 634	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 635 650	pulmonary edema
+T9	Medical-Problem 654 665	engorgement
+T10	Medical-Anatomy 669 693;695 702	pulmonary or mediastinal vessels
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T10
+E7	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Anatomy:T10

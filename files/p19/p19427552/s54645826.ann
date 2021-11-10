@@ -1,0 +1,28 @@
+T1	Medical-Problem 276 287	Ill-defined
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 289 301	interstitial
+T3	Lesion-Description 306 313	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 314 323	opacities
+T5	Lesion-Anatomy 334 343	diffusely
+T6	Lesion-Characteristic 368 392	concerning for infection
+T7	Lesion-Assertion 395 397	No
+A1	Lesion-AssertionValue T7 absent
+T8	Medical-Problem 398 414	pleural effusion
+E7	Medical-Problem:T8
+T9	Medical-Problem 418 430	pneumothorax
+E8	Medical-Problem:T9
+T10	Medical-Problem 454 494	moderate multilevel degenerative changes
+T11	Medical-Anatomy 507 521	thoracic spine
+T12	Medical-Problem 550 571	ill-defined opacities
+E11	Medical-Problem:T12
+T13	Medical-Assertion 617 627	concerning
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 632 652	multifocal infection
+T15	Medical-Problem 658 676	atypical organisms
+T16	Medical-Assertion 677 686;688 698	should be considered
+A3	Medical-AssertionValue T16 possible
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Assertion:T16
+E13	Medical-Problem:T15 has-Medical-Assertion:T13 has-Medical-Assertion:T16

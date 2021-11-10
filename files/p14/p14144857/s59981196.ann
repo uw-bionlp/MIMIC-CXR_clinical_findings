@@ -1,0 +1,35 @@
+T1	Medical-Problem 191 214	lungs are hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Problem 227 267	asymmetric left apical pulmonary opacity
+E2	Medical-Problem:T2
+T3	Lesion-Assertion 268 281	worrisome for
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Characteristic 282 292	underlying
+T5	Lesion-Description 293 299	nodule
+T6	Medical-Problem 369 375;377 394	subtle increased opacity
+E5	Medical-Problem:T6
+T7	Medical-Assertion 529 531	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 533 558	acute osseous abnormality
+T9	Medical-Problem 617 621	COPD
+E7	Medical-Problem:T9
+T10	Medical-Problem 624 663	Subtle asymmetric right basilar opacity
+T11	Medical-Anatomy 684 695	middle lobe
+T12	Medical-Assertion 702 717	could represent
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 718 729	atelectasis
+T14	Medical-Problem 733 741	scarring
+T15	Medical-Problem 751 760	infection
+T16	Medical-Assertion 761 787	cannot be totally excluded
+A4	Medical-AssertionValue T16 possible
+T17	Lesion-Assertion 801 810	worrisome
+A5	Lesion-AssertionValue T17 possible
+T18	Lesion-Anatomy 815 836	left apical pulmonary
+T19	Lesion-Description 837 843	nodule
+E4	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Characteristic:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T11 has-Medical-Assertion:T12 has-Medical-Assertion:T16
+E14	Lesion-Description:T19 has-Lesion-Assertion:T17 has-Lesion-Anatomy:T18

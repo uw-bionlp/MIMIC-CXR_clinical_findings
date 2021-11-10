@@ -1,0 +1,17 @@
+T1	Medical-Assertion 122 124	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 125 152	significant pulmonary edema
+T3	Medical-Problem 155 173	Increasing opacity
+T4	Medical-Anatomy 183 197	left lung base
+T5	Medical-Assertion 198 211	could reflect
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 212 234	small pleural effusion
+T7	Medical-Problem 662 683	left mid lung opacity
+E5	Medical-Problem:T7
+T8	Medical-Assertion 758 760	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 761 764;766 779	new abnormalities
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

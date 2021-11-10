@@ -1,0 +1,27 @@
+T1	Medical-Assertion 149 151	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 152 160	relevant
+T3	Medical-Problem 209 219	Borderline
+E2	Medical-Problem:T3
+T4	Medical-Problem 253 263	Elongation
+T5	Medical-Anatomy 271 287	descending aorta
+T6	Medical-Assertion 289 291	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 292 299;301 310	pleural effusions
+T8	Medical-Assertion 313 315	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 316 325	pneumonia
+T10	Medical-Assertion 327 329	no
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 330 345	pulmonary edema
+T12	Lesion-Assertion 426 437	no evidence
+A5	Lesion-AssertionValue T12 absent
+T13	Lesion-Characteristic 441 450	traumatic
+T14	Lesion-Anatomy 451 454	rib
+T15	Lesion-Description 456 463	lesions
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Lesion-Description:T15 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14

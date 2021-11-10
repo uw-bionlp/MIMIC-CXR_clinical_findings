@@ -1,0 +1,51 @@
+T1	Medical-Problem 201 233	Markedly tortuous thoracic aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 255 265	dilatation
+T3	Medical-Anatomy 273 288	ascending aorta
+T4	Medical-Assertion 289 303	concerning for
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 304 312	aneurysm
+T6	Medical-Anatomy 339 360	pulmonary vascularity
+T7	Medical-Assertion 364 367	not
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 368 376	engorged
+T9	Lesion-Characteristic 379 388	Calcified
+T10	Lesion-Description 389 399	granulomas
+T11	Lesion-Anatomy 411 422	bilaterally
+T12	Lesion-Anatomy 455 470	left upper lobe
+T13	Lesion-Size-Trend 472 481	unchanged
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Problem 485 509	Streaky linear opacities
+T15	Medical-Anatomy 537 547	lung bases
+T16	Medical-Problem 565 576	atelectasis
+T17	Medical-Anatomy 579 584	Lungs
+T18	Medical-Problem 589 629	hyperinflated with emphysematous changes
+T19	Medical-Assertion 645 647	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 648 667	focal consolidation
+T21	Medical-Problem 669 685	pleural effusion
+T22	Medical-Problem 689 701	pneumothorax
+T23	Medical-Assertion 715 717	No
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 718 723;725 744	acute osseous abnormality
+T25	Medical-Problem 772 793	Bibasilar atelectasis
+E20	Medical-Problem:T25
+T26	Medical-Problem 796 810	Tortuous aorta
+E21	Medical-Problem:T26
+T27	Medical-Assertion 816 822	likely
+A6	Medical-AssertionValue T27 possible
+T28	Medical-Problem 823 848	ascending aortic aneurysm
+T29	Medical-Problem 919 928	Emphysema
+E23	Medical-Problem:T29
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15
+E15	Medical-Problem:T18 has-Medical-Anatomy:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T19
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E22	Medical-Problem:T28 has-Medical-Assertion:T27

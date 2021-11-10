@@ -1,0 +1,22 @@
+T1	Medical-Assertion 231 233	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 234 253	focal consolidation
+T3	Medical-Problem 264 269	Ovoid
+E2	Medical-Problem:T3
+T4	Lesion-Size 270 274	9 mm
+T5	Lesion-Description 275 282	opacity
+T6	Lesion-Anatomy 303 307;309 317	left mid lung
+T7	Lesion-Size-Trend 333 339	stable
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 351 353	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 354 370	pleural effusion
+T10	Medical-Problem 374 386	pneumothorax
+T11	Medical-Assertion 460 462	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 463 492	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

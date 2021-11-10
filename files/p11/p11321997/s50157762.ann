@@ -1,0 +1,31 @@
+T1	Lesion-Description 199 203	mass
+T2	Lesion-Anatomy 211 227;229 252	superior segment of the right lower lobe
+T3	Medical-Problem 255 289	Faintly increased regional opacity
+T4	Medical-Anatomy 297 307	right lung
+T5	Medical-Assertion 309 317	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 318 356	developing postobstructive pneumonitis
+T7	Medical-Problem 359 370	Obscuration
+T8	Medical-Anatomy 378 383;385 404	right paratracheal stripe
+T9	Lesion-Description 409 419	nodularity
+T10	Lesion-Anatomy 427 441	bilateral hila
+T11	Lesion-Description 463 473	adenopathy
+T12	Medical-Assertion 476 478	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 479 496	pleural effusions
+T14	Medical-Problem 500 512	pneumothorax
+T15	Lesion-Size 557 562	Large
+T16	Lesion-Anatomy 563 589	right lower lobe pulmonary
+T17	Lesion-Description 590 594	mass
+T18	Medical-Problem 601 627;629 640	developing postobstructive pneumonitis
+E16	Medical-Problem:T18
+T19	Lesion-Anatomy 645 654	bilateral
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T10
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E15	Lesion-Description:T17 has-Lesion-Size-Present:T15 has-Lesion-Anatomy:T16 has-Lesion-Anatomy:T19

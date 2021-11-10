@@ -1,0 +1,34 @@
+T1	Medical-Anatomy 408 422	left lung base
+T2	Medical-Problem 445 479	some residual haziness posteriorly
+T3	Medical-Anatomy 487 491;493 497	left base
+T4	Medical-Problem 500 514	Linear opacity
+T5	Medical-Anatomy 522 561	medial segment of the right middle lobe
+T6	Medical-Problem 627 631	scar
+E6	Medical-Problem:T6
+T7	Medical-Problem 635 644;646 652	thickened pleura
+E7	Medical-Problem:T7
+T8	Medical-Problem 702 718;720 735	Right upper lobe peripheral scar
+E8	Medical-Problem:T8
+T9	Lesion-Count 750 751	2
+T10	Lesion-Characteristic 752 761	calcified
+T11	Lesion-Anatomy 762 773	right-sided
+T12	Lesion-Description 774 781	nodules
+T13	Lesion-Anatomy 792 795;797 807	and lower lobe
+T14	Lesion-Anatomy 821 855	anterior segment of the upper lobe
+T15	Lesion-Size-Trend 860 869	unchanged
+A1	Lesion-Size-TrendValue T15 no-change
+T16	Medical-Problem 900 918	slightly prominent
+E15	Medical-Problem:T16
+T17	Medical-Problem 938 963	Minimal residual haziness
+T18	Medical-Anatomy 971 997	left lung base posteriorly
+T19	Medical-Problem 1003 1012	otherwise
+E18	Medical-Problem:T19
+T20	Medical-Problem 1014 1044	interval clearing of pneumonia
+T21	Medical-Problem 1053 1067	Linear opacity
+T22	Medical-Anatomy 1075 1092;1094 1143	right middle lobe abutting the anterior aspect of the major fissure
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E12	Lesion-Description:T12 has-Lesion-Count:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T14 has-Lesion-Size-Trend:T15
+E16	Medical-Problem:T17 has-Medical-Anatomy:T18
+E19	Medical-Problem:T20 has-Medical-Anatomy:T18
+E20	Medical-Problem:T21 has-Medical-Anatomy:T22

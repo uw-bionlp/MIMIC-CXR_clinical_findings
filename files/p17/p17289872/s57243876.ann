@@ -1,0 +1,28 @@
+T1	Medical-Assertion 343 345	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 346 362	pleural effusion
+T3	Medical-Problem 366 378	pneumothorax
+T4	Lesion-Size 391 396	small
+T5	Lesion-Characteristic 398 407	calcified
+T6	Lesion-Description 408 417	granuloma
+T7	Lesion-Anatomy 425 440	left lower lobe
+T8	Lesion-Characteristic 491 506	mixed lytic and
+T9	Lesion-Characteristic 507 516	sclerotic
+T10	Lesion-Characteristic 517 521	bone
+T11	Lesion-Description 522 528	lesion
+T12	Lesion-Anatomy 539 552;554 572	left anterior lateral fourth rib
+T13	Lesion-Size-Trend 581 590	unchanged
+A2	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Assertion 692 703	No evidence
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 707 736	acute cardiopulmonary disease
+T16	Lesion-Size-Trend 739 745	Stable
+A4	Lesion-Size-TrendValue T16 no-change
+T17	Lesion-Anatomy 746 749	rib
+T18	Lesion-Description 750 756	lesion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E10	Lesion-Description:T11 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Lesion-Description:T18 has-Lesion-Size-Trend:T16 has-Lesion-Anatomy:T17

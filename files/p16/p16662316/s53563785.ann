@@ -1,0 +1,35 @@
+T1	Medical-Problem 279 305	new or worsening pneumonia
+E1	Medical-Problem:T1
+T2	Medical-Problem 489 505	chronic collapse
+T3	Medical-Anatomy 513 530	right middle lobe
+T4	Medical-Problem 565 589	flattened hemidiaphragms
+E4	Medical-Problem:T4
+T5	Medical-Problem 594 615;617 625	generalized increased markings
+E5	Medical-Problem:T5
+T6	Medical-Problem 647 651	COPD
+E6	Medical-Problem:T6
+T7	Lesion-Assertion 659 681	raises the concern for
+A1	Lesion-AssertionValue T7 possible
+T8	Lesion-Characteristic 685 694	extrinsic
+T9	Lesion-Description 696 700	mass
+T10	Medical-Problem 709 720	obstruction
+E9	Medical-Problem:T10
+T11	Medical-Problem 725 747	subsequent volume loss
+E10	Medical-Problem:T11
+T12	Medical-Problem 758 769	atelectasis
+T13	Medical-Anatomy 778 787	left base
+T14	Medical-Assertion 792 797	no no
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 798 826	definite focal consolidation
+T16	Medical-Problem 828 844	pleural effusion
+T17	Medical-Problem 850 862	pneumothorax
+T18	Medical-Problem 960 997	Chronic right middle lobe atelectasis
+E16	Medical-Problem:T18
+T19	Medical-Problem 1016 1020	COPD
+E17	Medical-Problem:T19
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E8	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Anatomy:T8
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E15	Medical-Problem:T17 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

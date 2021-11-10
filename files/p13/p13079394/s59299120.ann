@@ -1,0 +1,28 @@
+T1	Medical-Problem 223 241	Minimal tortuosity
+T2	Medical-Anatomy 249 263	thoracic aorta
+T3	Medical-Problem 387 409	Minimal patchy opacity
+T4	Medical-Anatomy 438 449	lower lobes
+T5	Medical-Anatomy 539 554	left lower lobe
+T6	Medical-Assertion 557 559	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 560 576	pleural effusion
+T8	Medical-Problem 581 593	pneumothorax
+T9	Medical-Assertion 607 609	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 610 637	acute osseous abnormalities
+T11	Medical-Problem 666 680	Patchy opacity
+T12	Medical-Anatomy 692 732	lower lobe, possibly the left lower lobe
+T13	Medical-Assertion 734 739;741 754	which could reflect
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 755 766	atelectasis
+T15	Medical-Problem 771 780	infection
+T16	Medical-Assertion 784 796	not excluded
+A4	Medical-AssertionValue T16 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13 has-Medical-Assertion:T16

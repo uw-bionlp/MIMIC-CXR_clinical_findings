@@ -1,0 +1,29 @@
+T1	Medical-Problem 66 99	Small bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 102 108;110 132	Stable  moderate cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Assertion 135 137	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 138 150	pneumothorax
+T5	Medical-Problem 374 389;391 404	some increasing opacification
+T6	Medical-Anatomy 412 421	left base
+T7	Medical-Problem 438 449	volume loss
+T8	Medical-Anatomy 457 467	lower lobe
+T9	Medical-Problem 473 489	pleural effusion
+T10	Medical-Assertion 498 509	may also be
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 512 526	small effusion
+T12	Medical-Problem 532 543	atelectasis
+T13	Medical-Anatomy 552 562	right base
+T14	Medical-Problem 565 609	Stable enlargement of the cardiac silhouette
+E12	Medical-Problem:T14
+T15	Medical-Assertion 612 623	No evidence
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 628 640	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10 has-Medical-Anatomy:T13
+E10	Medical-Problem:T12 has-Medical-Assertion:T10 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

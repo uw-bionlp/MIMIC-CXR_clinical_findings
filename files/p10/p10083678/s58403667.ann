@@ -1,0 +1,26 @@
+T1	Lesion-Anatomy 162 167	lungs
+T2	Lesion-Size 191 196	small
+T3	Lesion-Description 197 204	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 205 212	opacity
+T5	Medical-Assertion 320 322	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 323 339	pleural effusion
+T7	Medical-Problem 341 353	pneumothorax
+T8	Medical-Problem 357 372	pulmonary edema
+T9	Medical-Anatomy 457 464	trachea
+T10	Medical-Problem 475 505	mildly deviated to the left at
+T11	Lesion-Assertion 576 583	without
+A2	Lesion-AssertionValue T11 absent
+T12	Lesion-Characteristic 584 594	associated
+T13	Lesion-Description 595 606	mass lesion
+T14	Medical-Assertion 627 638	No evidence
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 642 671	acute cardiopulmonary process
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T1 has-Lesion-Size-Present:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Lesion-Description:T13 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

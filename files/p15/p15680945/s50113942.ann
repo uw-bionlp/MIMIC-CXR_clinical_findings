@@ -1,0 +1,46 @@
+T1	Medical-Problem 547 571	increasing consolidation
+T2	Medical-Anatomy 604 620	right upper lobe
+T3	Medical-Problem 635 653	decreased aeration
+T4	Medical-Problem 659 680	greater opacification
+T5	Medical-Problem 683 694	Volume loss
+E5	Medical-Problem:T5
+T6	Medical-Problem 720 728;730 775	moderate relative elevation of the right hemidiaphragm
+E6	Medical-Problem:T6
+T7	Medical-Problem 801 806;808 824	vague patchy opacities
+T8	Medical-Anatomy 891 913	left infrahilar region
+T9	Lesion-Count 925 928	two
+T10	Lesion-Description 945 952	nodular
+T11	Lesion-Characteristic 979 1008	suggestive of a nipple shadow
+T12	Medical-Assertion 1020 1022	no
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 1023 1039;1041 1049	definite pleural effusion
+T14	Medical-Problem 1053 1065	pneumothorax
+T15	Medical-Problem 1083 1107	Increasing opacification
+T16	Medical-Anatomy 1115 1131	right upper lobe
+T17	Medical-Problem 1137 1148;1150 1161	substantial volume loss
+T18	Medical-Problem 1166 1182	air bronchograms
+T19	Medical-Problem 1199 1226	widespread patchy opacities
+E18	Medical-Problem:T19
+T20	Lesion-Characteristic 1238 1244	patchy
+T21	Lesion-Characteristic 1245 1255	geographic
+T22	Lesion-Description 1260 1267	nodular
+E21	Lesion-Description:T22
+T23	Lesion-Description 1268 1277	opacities
+T24	Lesion-Anatomy 1285 1300	left lower lung
+T25	Medical-Assertion 1320 1333	could be seen
+A2	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1342 1361	infectious etiology
+T27	Medical-Problem 1372 1380;1382 1400	atypical forms of pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Lesion-Description:T10 has-Lesion-Count:T9 has-Lesion-Characteristic:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T14 has-Medical-Assertion:T12
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T17 has-Medical-Anatomy:T16
+E17	Medical-Problem:T18 has-Medical-Anatomy:T16
+E22	Lesion-Description:T23 has-Lesion-Characteristic:T20 has-Lesion-Characteristic:T21 has-Lesion-Anatomy:T24
+E24	Medical-Problem:T26 has-Medical-Assertion:T25
+E25	Medical-Problem:T27 has-Medical-Assertion:T25

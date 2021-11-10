@@ -1,0 +1,50 @@
+T1	Medical-Assertion 39 41	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 42 71	acute cardiopulmonary process
+T3	Medical-Problem 78 94	Calcific density
+T4	Medical-Anatomy 114 124	left hilum
+T5	Lesion-Assertion 125 138	may represent
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 141 150	calcified
+T7	Lesion-Description 153 163	lymph node
+T8	Medical-Problem 477 500	tortuous thoracic aorta
+E6	Medical-Problem:T8
+T9	Medical-Problem 507 533	aortic arch calcifications
+E7	Medical-Problem:T9
+T10	Medical-Problem 547 564	cardiomediastinal
+E8	Medical-Problem:T10
+T11	Medical-Problem 655 663	calcific
+E9	Medical-Problem:T11
+T12	Lesion-Anatomy 693 697;699 704	left hilum
+T13	Lesion-Assertion 705 718	may represent
+A3	Lesion-AssertionValue T13 possible
+T14	Lesion-Characteristic 721 730	calcified
+T15	Lesion-Description 731 741	lymph node
+T16	Medical-Assertion 824 826	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 827 839	pneumothorax
+T18	Medical-Problem 843 850;852 860	pleural effusion
+T19	Medical-Assertion 872 883	no evidence
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 887 906	osseous abnormality
+T21	Medical-Assertion 931 933	No
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 934 939	acute
+E16	Medical-Problem:T22
+T23	Medical-Problem 940 963	cardiopulmonary process
+T24	Medical-Problem 969 985	Calcific density
+E18	Medical-Problem:T24
+T25	Lesion-Anatomy 1005 1015	left hilum
+T26	Lesion-Assertion 1016 1029	may represent
+A7	Lesion-AssertionValue T26 possible
+T27	Lesion-Characteristic 1032 1041	calcified
+T28	Lesion-Description 1043 1053	lymph node
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T12 has-Lesion-Assertion:T13 has-Lesion-Characteristic:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T23 has-Medical-Assertion:T21
+E21	Lesion-Description:T28 has-Lesion-Anatomy:T25 has-Lesion-Assertion:T26 has-Lesion-Characteristic:T27

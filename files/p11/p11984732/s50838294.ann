@@ -1,0 +1,43 @@
+T1	Medical-Problem 241 245;247 284	mild enlargement of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 291 302	aortic knob
+T3	Medical-Problem 306 315	calcified
+T4	Medical-Problem 318 322;324 339	Mild pulmonary edema
+E4	Medical-Problem:T4
+T5	Medical-Problem 356 379	vascular indistinctness
+E5	Medical-Problem:T5
+T6	Medical-Problem 384 393;395 403	perihilar haziness
+E6	Medical-Problem:T6
+T7	Medical-Problem 406 439	Small bilateral pleural effusions
+E7	Medical-Problem:T7
+T8	Medical-Assertion 453 455	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 456 468	pneumothorax
+T10	Medical-Problem 486 494	Widening
+T11	Medical-Anatomy 502 527	right paratracheal stripe
+T12	Medical-Assertion 528 543;545 553	may suggest the presence
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 557 573	tortuous vessels
+T14	Medical-Assertion 575 577	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 578 603	acute osseous abnormality
+T16	Medical-Problem 637 666	Mild congestive heart failure
+E13	Medical-Problem:T16
+T17	Medical-Problem 672 705	small bilateral pleural effusions
+E14	Medical-Problem:T17
+T18	Medical-Problem 715 748	Widened right paratracheal stripe
+E15	Medical-Problem:T18
+T19	Medical-Assertion 749 766	may be related to
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 767 783	tortuous vessels
+T21	Lesion-Characteristic 789 799	underlying
+T22	Lesion-Description 800 815	lymphadenopathy
+T23	Lesion-Assertion 819 822	not
+A5	Lesion-AssertionValue T23 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Lesion-Description:T22 has-Lesion-Characteristic:T21 has-Lesion-Assertion:T23

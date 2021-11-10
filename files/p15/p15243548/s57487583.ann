@@ -1,0 +1,46 @@
+T1	Medical-Problem 226 260	Heart size remains mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 269 298	left ventricular predominance
+E2	Medical-Problem:T2
+T3	Medical-Problem 300 321	Diffuse calcification
+T4	Medical-Anatomy 329 343	thoracic aorta
+T5	Lesion-Anatomy 440 456	right lower lobe
+T6	Lesion-Description 457 463	lesion
+T7	Lesion-Anatomy 486 501	left lower lobe
+T8	Lesion-Description 503 509	lesion
+T9	Lesion-Characteristic 515 546	surrounding ill-defined opacity
+T10	Lesion-Anatomy 579 596	Right apical lung
+T11	Lesion-Description 597 604	nodules
+T12	Medical-Anatomy 667 688	pulmonary vascularity
+T13	Medical-Assertion 692 695	not
+A1	Medical-AssertionValue T13 absent
+T14	Medical-Problem 696 704	engorged
+T15	Medical-Assertion 707 709	No
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 710 726	pleural effusion
+T17	Medical-Problem 731 743	pneumothorax
+T18	Lesion-Characteristic 767 772	lytic
+T19	Lesion-Description 773 779	lesion
+T20	Lesion-Anatomy 794 805;807 815	distal left clavicle
+T21	Medical-Problem 872 893	Ill-defined opacities
+T22	Medical-Anatomy 897 913	both lower lobes
+T23	Medical-Assertion 965 984	which could reflect
+A3	Medical-AssertionValue T23 possible
+T24	Medical-Problem 985 1006	radiation pneumonitis
+T25	Medical-Problem 1016 1025	infection
+T26	Medical-Assertion 1029 1041	not excluded
+A4	Medical-AssertionValue T26 possible
+T27	Lesion-Anatomy 1093 1105	Right apical
+T28	Lesion-Description 1106 1112	nodule
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T9
+E11	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E13	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Assertion:T15
+E17	Lesion-Description:T19 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T20
+E19	Medical-Problem:T21 has-Medical-Anatomy:T22
+E21	Medical-Problem:T24 has-Medical-Anatomy:T22 has-Medical-Assertion:T23
+E22	Medical-Problem:T25 has-Medical-Anatomy:T22 has-Medical-Assertion:T26
+E24	Lesion-Description:T28 has-Lesion-Anatomy:T27

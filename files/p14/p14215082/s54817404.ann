@@ -1,0 +1,24 @@
+T1	Medical-Problem 77 96	Bibasilar opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 97 103	likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 123 134	atelectasis
+T4	Medical-Problem 139 147	effusion
+T5	Medical-Problem 157 166	pneumonia
+T6	Medical-Assertion 167 185	cannot be excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 445 480	elevation of the left hemidiaphragm
+E5	Medical-Problem:T7
+T8	Medical-Problem 485 506	bibasilar atelectasis
+E6	Medical-Problem:T8
+T9	Medical-Problem 509 514;516 533	Small pleural effusions
+E7	Medical-Problem:T9
+T10	Medical-Problem 628 645	basilar pneumonia
+E8	Medical-Problem:T10
+T11	Medical-Assertion 714 716	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 717 736	vascular congestion
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T2 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

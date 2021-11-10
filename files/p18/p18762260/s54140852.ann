@@ -1,0 +1,28 @@
+T1	Medical-Problem 260 289	Lung volumes remain quite low
+E1	Medical-Problem:T1
+T2	Medical-Problem 292 303	Atelectasis
+T3	Medical-Anatomy 324 335;337 341	right upper lobe
+T4	Medical-Anatomy 370 380	left lower
+T5	Medical-Problem 398 407;409 428	pulmonary vascular congestion
+E5	Medical-Problem:T5
+T6	Medical-Problem 435 452	vascular crowding
+E6	Medical-Problem:T6
+T7	Medical-Problem 498 534	increased apparent mild cardiomegaly
+E7	Medical-Problem:T7
+T8	Medical-Problem 539 559;561 572	mediastinal vascular engorgement
+E8	Medical-Problem:T8
+T9	Medical-Problem 575 594	Cardiac dysfunction
+E9	Medical-Problem:T9
+T10	Medical-Problem 598 632	volume overload is relatively mild
+E10	Medical-Problem:T10
+T11	Medical-Assertion 635 637	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 639 651	pneumothorax
+T13	Medical-Problem 655 683	substantial pleural effusion
+T14	Medical-Problem 700 715;717 730	small amount of pleural fluid
+T15	Medical-Assertion 731 747	could be present
+A2	Medical-AssertionValue T15 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T14 has-Medical-Assertion:T15

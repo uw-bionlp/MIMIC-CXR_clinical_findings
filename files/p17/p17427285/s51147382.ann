@@ -1,0 +1,18 @@
+T1	Medical-Problem 445 470	Significant opacification
+T2	Medical-Anatomy 478 495	right hemi thorax
+T3	Medical-Assertion 518 534	likely represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 583 617	small to moderate pleural effusion
+T5	Medical-Problem 631 653;655 663	small new left pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 666 698	Crowding of bronchovascular tear
+T7	Medical-Anatomy 706 721	left lower lung
+T8	Medical-Problem 727 731;733 744	mild atelectasis
+T9	Medical-Assertion 789 791	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 792 810	large pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

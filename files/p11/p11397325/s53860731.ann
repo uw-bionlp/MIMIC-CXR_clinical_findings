@@ -1,0 +1,17 @@
+T1	Medical-Assertion 317 328	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 332 344	pneumothorax
+T3	Medical-Problem 388 392;394 409	Lung volumes are low
+T4	Medical-Problem 415 438	increased opacification
+T5	Medical-Anatomy 446 471;473 491	bilateral lung bases left greater than right
+T6	Medical-Problem 530 541	atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Problem 547 560	pleural fluid
+E6	Medical-Problem:T7
+T8	Medical-Assertion 650 652;654 662	No evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 666 678	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,21 @@
+T1	Medical-Problem 438 443	aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 447 456;458 466	minimally tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 469 484	Streaky opacity
+T4	Medical-Anatomy 492 514	base of the right lung
+T5	Medical-Assertion 515 530	likely reflects
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 532 543	atelectasis
+T7	Medical-Assertion 555 557	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 558 570	pneumothorax
+T9	Medical-Problem 572 587	pulmonary edema
+T10	Medical-Problem 591 607	pleural effusion
+T11	Medical-Problem 769 782;784 802	Right basilar patchy atelectasis
+E9	Medical-Problem:T11
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7

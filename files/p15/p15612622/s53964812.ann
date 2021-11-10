@@ -1,0 +1,30 @@
+T1	Medical-Assertion 399 401	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 402 418	pleural effusion
+T3	Medical-Problem 422 434	pneumothorax
+T4	Medical-Problem 486 509	substantial new opacity
+T5	Medical-Anatomy 517 533	right lower lobe
+T6	Medical-Assertion 534 548	concerning for
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 550 559	pneumonia
+T8	Medical-Problem 566 592	bones appear demineralized
+E6	Medical-Problem:T8
+T9	Medical-Problem 604 620;622 648	mild-to-moderate rightward convex curvature
+T10	Medical-Anatomy 674 694	lower thoracic spine
+T11	Medical-Problem 701 758	incompletely characterized lumbar compression deformities
+T12	Medical-Problem 761 769;771 791	Moderate degenerative changes
+T13	Medical-Anatomy 814 835	lower thoracic levels
+T14	Medical-Problem 878 887	pneumonia
+T15	Medical-Anatomy 895 911	right lower lobe
+T16	Medical-Problem 971 981	aspiration
+T17	Medical-Assertion 982 992;994 1007	could also be considered
+A3	Medical-AssertionValue T17 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T16 has-Medical-Assertion:T17

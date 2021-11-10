@@ -1,0 +1,18 @@
+T1	Medical-Problem 300 310	tortuosity
+T2	Medical-Anatomy 319 335	descending aorta
+T3	Medical-Problem 340 354	hyperexpansion
+T4	Medical-Anatomy 362 367	lungs
+T5	Medical-Assertion 368 391	raising the possibility
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 396 421	chronic pulmonary disease
+T7	Medical-Assertion 424 426	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 427 436	pneumonia
+T9	Medical-Problem 438 457	vascular congestion
+T10	Medical-Problem 462 469;471 479	pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7

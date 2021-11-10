@@ -1,0 +1,24 @@
+T1	Medical-Assertion 211 213	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 214 219;221 234	focal consolidation
+T3	Medical-Problem 236 252	pleural effusion
+T4	Medical-Problem 257 265	evidence
+E3	Medical-Problem:T4
+T5	Medical-Problem 269 281	pneumothorax
+T6	Medical-Problem 344 376;378 387	couple punctate calcific rounded densities
+T7	Medical-Anatomy 408 437	right mid-to-lower hemithorax
+T8	Lesion-Assertion 438 441	may
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Characteristic 453 462	calcified
+T10	Lesion-Description 463 473	granulomas
+T11	Medical-Problem 487 501	prior fracture
+E9	Medical-Problem:T11
+T12	Medical-Assertion 578 580	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 581 610	acute cardiopulmonary process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

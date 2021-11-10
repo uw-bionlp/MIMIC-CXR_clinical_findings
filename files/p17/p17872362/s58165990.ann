@@ -1,0 +1,39 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 61	acute cardiopulmonary process
+T3	Lesion-Size 67 71	9 mm
+T4	Lesion-Description 72 87	nodular density
+T5	Lesion-Anatomy 104 143;145 155	light lung apex over the anterior right  first rib
+T6	Lesion-Characteristic 213 223	underlying
+T7	Lesion-Anatomy 226 235	pulmonary
+T8	Lesion-Description 236 242	nodule
+T9	Medical-Assertion 594 599	clear
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 603 616	consolidation
+T11	Medical-Problem 620 628	effusion
+T12	Lesion-Size 642 646	9 mm
+T13	Lesion-Description 647 653	nodule
+T14	Lesion-Anatomy 675 690	right lung apex
+T15	Lesion-Anatomy 695 719	anterior right first rib
+T16	Medical-Assertion 782 784	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 785 790	acute
+E14	Medical-Problem:T17
+T18	Medical-Problem 791 798;800 813	osseous abnormalities
+T19	Medical-Assertion 834 836	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 837 842	acute
+T21	Lesion-Description 876 882	nodule
+T22	Lesion-Anatomy 901 945;947 950	light lung apex and the anterior right first rib
+T23	Lesion-Characteristic 1008 1018	underlying
+T24	Lesion-Description 1030 1036	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Lesion-Description:T13 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Lesion-Description:T21 has-Lesion-Anatomy:T22
+E20	Lesion-Description:T24 has-Lesion-Characteristic:T23

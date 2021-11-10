@@ -1,0 +1,25 @@
+T1	Medical-Problem 278 286	Collapse
+T2	Medical-Anatomy 294 301	lingula
+T3	Medical-Assertion 302 314	has resolved
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 320 331	atelectasis
+T5	Medical-Anatomy 339 354	left lower lobe
+T6	Medical-Problem 388 421	worsening right basal atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Problem 498 506;508 516	New mild widening
+T8	Medical-Anatomy 524 535	mediastinum
+T9	Medical-Assertion 536 544	suggests
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 545 581;583 589	increased central venous pressure or volume
+T11	Medical-Assertion 604 606	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 607 622	pulmonary edema
+T13	Medical-Assertion 625 627	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 628 640	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

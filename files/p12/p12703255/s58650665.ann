@@ -1,0 +1,24 @@
+T1	Medical-Problem 239 259	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 306 309;311 363	new bilateral basilar opacities, left greater than right
+E2	Medical-Problem:T2
+T3	Medical-Assertion 365 367	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 368 384	pleural effusion
+T5	Medical-Problem 389 401	pneumothorax
+T6	Medical-Assertion 488 490	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 491 506	pulmonary edema
+T8	Medical-Problem 527 576	New, bibasilar opacities, left greater than right
+E6	Medical-Problem:T8
+T9	Medical-Assertion 583 596	may represent
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 598 609	atelectasis
+T11	Medical-Problem 655 664	infection
+T12	Medical-Assertion 665 674;676 693	should be considered in the
+A4	Medical-AssertionValue T12 possible
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Assertion:T12

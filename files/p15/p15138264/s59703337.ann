@@ -1,0 +1,22 @@
+T1	Medical-Problem 199 228	Multifocal airspace opacities
+T2	Medical-Anatomy 243 259	right upper lobe
+T3	Medical-Anatomy 261 277;279 290	right lower lobe and lingula
+T4	Medical-Problem 321 351	resolving multifocal pneumonia
+T5	Medical-Anatomy 359 364	heart
+T6	Medical-Assertion 368 371	not
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 372 380	enlarged
+T8	Medical-Assertion 383 385	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 386 403	pleural effusions
+T10	Medical-Problem 407 419	pneumothorax
+T11	Medical-Problem 440 470	Improved bronchopneumonia with
+E9	Medical-Problem:T11
+T12	Medical-Problem 471 489	residual opacities
+T13	Medical-Anatomy 497 515;517 534	right upper, right lower and lingula
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13

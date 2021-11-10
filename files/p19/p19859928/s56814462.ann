@@ -1,0 +1,52 @@
+T1	Medical-Problem 199 226	Symmetric hilar enlargement
+E1	Medical-Problem:T1
+T2	Medical-Problem 231 270	widened or bulging mediastinal contours
+E2	Medical-Problem:T2
+T3	Lesion-Description 281 291	adenopathy
+T4	Lesion-Anatomy 295 312	both paratracheal
+T5	Lesion-Anatomy 318 328	subcarinal
+T6	Lesion-Anatomy 363 372	both hila
+T7	Medical-Assertion 388 398	suggestion
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 402 431	mild interstitial abnormality
+T9	Lesion-Size 446 450	tiny
+T10	Lesion-Description 452 459	nodules
+T11	Medical-Problem 464 477	thickening of
+E10	Medical-Problem:T11
+T12	Lesion-Description 478 488	lymphatics
+T13	Lesion-Anatomy 496 515	mid and lower lungs
+T14	Lesion-Count 537 540	one
+T15	Lesion-Size 541 547	sub cm
+T16	Lesion-Description 548 554	nodule
+T17	Lesion-Anatomy 575 596	left ___ anterior rib
+T18	Medical-Assertion 632 643	no evidence
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 647 678	pericardial or pleural effusion
+T20	Lesion-Characteristic 698 707	Symmetric
+T21	Lesion-Description 708 718	adenopathy
+T22	Lesion-Anatomy 726 746	mediastinum and hila
+T23	Medical-Problem 748 772;774 783	numerous small pulmonary opacities
+E21	Medical-Problem:T23
+T24	Medical-Assertion 789 797	probable
+A3	Medical-AssertionValue T24 possible
+T25	Medical-Problem 798 820	lymphatic infiltration
+T26	Medical-Problem 840 851	sarcoidosis
+E23	Medical-Problem:T26
+T27	Lesion-Count 863 866	one
+T28	Lesion-Characteristic 867 875	discrete
+T29	Lesion-Size 876 889	subcentimeter
+T30	Lesion-Anatomy 890 899	pulmonary
+T31	Lesion-Description 900 906	nodule
+T32	Medical-Assertion 913 931	most likely due to
+A4	Medical-AssertionValue T32 possible
+T33	Medical-Problem 933 944	sarcoidosis
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Lesion-Description:T10 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T13
+E11	Lesion-Description:T12 has-Lesion-Anatomy:T13
+E15	Lesion-Description:T16 has-Lesion-Count:T14 has-Lesion-Size-Present:T15 has-Lesion-Anatomy:T17
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E19	Lesion-Description:T21 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T22
+E22	Medical-Problem:T25 has-Medical-Assertion:T24
+E28	Lesion-Description:T31 has-Lesion-Count:T27 has-Lesion-Characteristic:T28 has-Lesion-Size-Present:T29 has-Lesion-Anatomy:T30
+E29	Medical-Problem:T33 has-Medical-Assertion:T32

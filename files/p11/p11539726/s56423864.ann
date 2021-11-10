@@ -1,0 +1,27 @@
+T1	Medical-Anatomy 227 232	lungs
+T2	Medical-Problem 247 292	mildly hyperinflated with flattened diaphrams
+T3	Medical-Problem 310 328	airtrapping due to
+E3	Medical-Problem:T3
+T4	Medical-Problem 329 338	emphysema
+T5	Medical-Problem 342 366	small airway obstruction
+T6	Medical-Assertion 379 390	no evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 394 403	pneumonia
+T8	Medical-Assertion 506 514	Possible
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 515 524	emphysema
+T10	Medical-Problem 528 552	small airway obstruction
+T11	Medical-Assertion 554 556	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 557 566	pneumonia
+T13	Lesion-Characteristic 570 575	focal
+T14	Lesion-Anatomy 576 580	lung
+T15	Lesion-Description 582 588	lesion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T1
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14

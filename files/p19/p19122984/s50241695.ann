@@ -1,0 +1,30 @@
+T1	Medical-Problem 432 480	Borderline enlargement of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 508 541	Bilateral pulmonary opacification
+E2	Medical-Problem:T2
+T3	Medical-Problem 558 563	edema
+T4	Medical-Anatomy 571 581	right lung
+T5	Medical-Problem 587 614	concurrent consolidation on
+E5	Medical-Problem:T5
+T6	Medical-Assertion 625 632	perhaps
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 633 642	pneumonia
+T8	Medical-Problem 646 655;657 667	pulmonary hemorrhage
+T9	Medical-Assertion 679 681	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 682 694	pneumothorax
+T11	Medical-Problem 698 706	effusion
+T12	Medical-Problem 727 764	New moderately severe pulmonary edema
+E10	Medical-Problem:T12
+T13	Medical-Assertion 767 775	Possible
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 776 785	pneumonia
+T15	Medical-Problem 793 802;804 814	pulmonary hemorrhage
+T16	Medical-Anatomy 816 825	left lung
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T16
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

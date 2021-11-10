@@ -1,0 +1,42 @@
+T1	Medical-Anatomy 336 343	cardiac
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 395 404	Bibasilar
+E2	Medical-Problem:T2
+T3	Medical-Problem 405 414	opacities
+E3	Medical-Problem:T3
+T4	Medical-Problem 449 457	blunting
+T5	Medical-Anatomy 465 477	costophrenic
+T6	Medical-Problem 516 561	small to moderate bilateral pleural effusions
+E6	Medical-Problem:T6
+T7	Medical-Problem 567 576;578 589	overlying atelectasis
+E7	Medical-Problem:T7
+T8	Medical-Problem 591 615	underlying consolidation
+T9	Medical-Problem 623 632	pneumonia
+T10	Medical-Assertion 636 648	not excluded
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Problem 660 684	moderate pulmonary edema
+E10	Medical-Problem:T11
+T12	Medical-Assertion 687 689	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 690 702	pneumothorax
+T14	Medical-Problem 733 750	pleural effusions
+E12	Medical-Problem:T14
+T15	Medical-Problem 752 767	pulmonary edema
+E13	Medical-Problem:T15
+T16	Medical-Problem 773 798;800 818	marked enlargement of the cardiac silhouette
+E14	Medical-Problem:T16
+T17	Medical-Assertion 819 826	suggest
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 827 830	CHF
+T19	Medical-Problem 840 864	underlying consolidation
+T20	Medical-Problem 873 882	pneumonia
+T21	Medical-Anatomy 890 900	lung bases
+T22	Medical-Assertion 901 920	not excluded in the
+A4	Medical-AssertionValue T22 possible
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E8	Medical-Problem:T8 has-Medical-Assertion:T10
+E9	Medical-Problem:T9 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T19 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21 has-Medical-Assertion:T22

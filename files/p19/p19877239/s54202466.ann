@@ -1,0 +1,25 @@
+T1	Medical-Assertion 29 31	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 61	acute cardiopulmonary process
+T3	Medical-Problem 64 73	elevation
+T4	Medical-Anatomy 81 97	rt hemidiaphragm
+T5	Lesion-Size-Trend 149 166	stable appearance
+A2	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Anatomy 178 199	right paramediastinal
+T7	Lesion-Description 200 204	mass
+T8	Medical-Problem 455 481	upper mediastinal widening
+E6	Medical-Problem:T8
+T9	Lesion-Anatomy 486 491;493 503	right juxtahilar
+T10	Lesion-Description 504 508	mass
+T11	Medical-Assertion 626 628;630 638	no evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 649 665	pleural effusion
+T13	Medical-Problem 669 681	pneumothorax
+T14	Medical-Problem 693 705;707 726	elevation of right hemidiaphragm
+E11	Medical-Problem:T14
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Lesion-Description:T7 has-Lesion-Size-Trend:T5 has-Lesion-Anatomy:T6
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

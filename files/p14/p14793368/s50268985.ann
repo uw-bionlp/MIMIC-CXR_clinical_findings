@@ -1,0 +1,56 @@
+T1	Medical-Assertion 162 164	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 165 184	focal consolidation
+T3	Medical-Problem 196 205	pneumonia
+T4	Medical-Problem 208 229	Bibasilar atelectasis
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 246 251	lungs
+T6	Medical-Assertion 271 281	suggesting
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 282 300;302 326	underlying chronic obstructive lung disease
+T8	Medical-Problem 332 349	heart is enlarged
+E6	Medical-Problem:T8
+T9	Medical-Problem 356 366	prominence
+T10	Medical-Anatomy 374 378;380 386	left atrium
+T11	Medical-Problem 421 453;455 462	widening of the central vascular pedicle
+E9	Medical-Problem:T11
+T12	Medical-Problem 469 500	increased interstitial markings
+E10	Medical-Problem:T12
+T13	Medical-Problem 522 532;534 547	congestive heart failure
+E11	Medical-Problem:T13
+T14	Medical-Assertion 560 566	likely
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 567 600	small bilateral pleural effusions
+T16	Medical-Assertion 613 615	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 616 628	pneumothorax
+T18	Medical-Problem 635 649	aortic knob is
+E14	Medical-Problem:T18
+T19	Medical-Problem 650 659	calcified
+E15	Medical-Problem:T19
+T20	Medical-Problem 669 688;690 698	descending aorta is tortuous
+E16	Medical-Problem:T20
+T21	Medical-Problem 735 755	Degenerative changes
+T22	Medical-Anatomy 774 788	thoracic spine
+T23	Medical-Problem 795 805	osteopenia
+E19	Medical-Problem:T23
+T24	Medical-Problem 845 867	Increased cardiomegaly
+E20	Medical-Problem:T24
+T25	Medical-Problem 873 904	prominent interstitial markings
+E21	Medical-Problem:T25
+T26	Medical-Problem 922 951	mild congestive heart failure
+E22	Medical-Problem:T26
+T27	Medical-Problem 954 968	Hyperexpansion
+T28	Medical-Anatomy 976 981	lungs
+T29	Medical-Assertion 982 990	suggests
+A5	Medical-AssertionValue T29 possible
+T30	Medical-Problem 992 1007	underlying COPD
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22
+E23	Medical-Problem:T27 has-Medical-Anatomy:T28
+E25	Medical-Problem:T30 has-Medical-Anatomy:T28 has-Medical-Assertion:T29

@@ -1,0 +1,22 @@
+T1	Medical-Problem 254 258;260 287	area of slight increased opacity
+T2	Medical-Anatomy 295 310	right lung base
+T3	Medical-Problem 385 404	early consolidation
+T4	Medical-Assertion 408 417;419 429	difficult to exclude
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 440 464	stable mild cardiomegaly
+E4	Medical-Problem:T5
+T6	Medical-Assertion 476 478	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 479 495	pleural effusion
+T8	Medical-Problem 500 512	pneumothorax
+T9	Medical-Problem 530 554	Slight increased opacity
+T10	Medical-Anatomy 558 573	right lung base
+T11	Medical-Problem 621 640	early consolidation
+T12	Medical-Assertion 641 659	cannot be excluded
+A3	Medical-AssertionValue T12 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10 has-Medical-Assertion:T12

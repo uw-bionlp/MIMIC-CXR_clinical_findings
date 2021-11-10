@@ -1,0 +1,27 @@
+T1	Medical-Assertion 413 415	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 416 428	pneumothorax
+T3	Medical-Problem 439 463	mildly increased density
+T4	Medical-Anatomy 467 476;478 483	both lung bases
+T5	Medical-Assertion 494 507	likely due to
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 508 519	atelectasis
+T7	Medical-Problem 572 587	pneumonia.There
+T8	Medical-Assertion 591 593	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 594 610	pleural effusion
+T10	Medical-Problem 615 630	pulmonary edema
+T11	Medical-Problem 788 805	Minimal bibasilar
+E8	Medical-Problem:T11
+T12	Medical-Problem 806 815	densities
+E9	Medical-Problem:T12
+T13	Medical-Assertion 817 823	likely
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 824 835	atelectasis
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

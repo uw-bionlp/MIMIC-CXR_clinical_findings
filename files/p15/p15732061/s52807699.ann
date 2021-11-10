@@ -1,0 +1,15 @@
+T1	Medical-Problem 152 169	Minimal opacities
+T2	Medical-Anatomy 177 187;189 193	left lower lobe
+T3	Medical-Assertion 198 204	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 205 216	atelectasis
+T5	Medical-Assertion 259 261;263 271	no evidence
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 275 284	pneumonia
+T7	Medical-Problem 286 298	pneumothorax
+T8	Medical-Problem 302 318	pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5

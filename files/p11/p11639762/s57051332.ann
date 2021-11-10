@@ -1,0 +1,19 @@
+T1	Medical-Problem 152 175	increased opacification
+T2	Medical-Anatomy 179 189	both bases
+T3	Medical-Problem 195 203	blunting
+T4	Medical-Anatomy 212 231	costophrenic angles
+T5	Medical-Assertion 233 255	most likely reflecting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 256 275	atelectatic changes
+T7	Medical-Problem 280 287;289 298	pleural effusions
+T8	Medical-Problem 347 358;360 369	supervening pneumonia
+E7	Medical-Problem:T8
+T9	Lesion-Assertion 507 532	raises the possibility of
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Anatomy 535 542	thyroid
+T11	Lesion-Description 543 547	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Assertion:T5
+E9	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Anatomy:T10

@@ -1,0 +1,18 @@
+T1	Medical-Problem 256 276	Mild pulmonary edema
+T2	Medical-Anatomy 288 298	both lungs
+T3	Medical-Problem 324 345	Greater opacification
+T4	Medical-Anatomy 353 374	base of the left lung
+T5	Medical-Assertion 375 390	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 399 415	asymmetric edema
+T7	Medical-Problem 417 437	concurrent pneumonia
+T8	Medical-Problem 441 469;471 479	posteriorly layering pleural effusion
+T9	Medical-Problem 481 510	Mild to moderate cardiomegaly
+E8	Medical-Problem:T9
+T10	Medical-Problem 511 541	mediastinal venous engorgement
+E9	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5

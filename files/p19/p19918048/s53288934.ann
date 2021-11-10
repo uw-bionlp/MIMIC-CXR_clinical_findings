@@ -1,0 +1,21 @@
+T1	Medical-Problem 183 187;189 203	mild hyperexpansion
+T2	Medical-Anatomy 211 216	lungs
+T3	Medical-Assertion 217 227	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 228 264	underlying chronic pulmonary disease
+T5	Medical-Assertion 286 297	no evidence
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 301 310	pneumonia
+T7	Medical-Problem 312 331	vascular congestion
+T8	Medical-Problem 336 343;345 353	pleural effusion
+T9	Lesion-Assertion 370 372	no
+A3	Lesion-AssertionValue T9 absent
+T10	Lesion-Anatomy 373 382	pulmonary
+T11	Lesion-Anatomy 386 394	skeletal
+T12	Lesion-Description 395 405	metastases
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E9	Lesion-Description:T12 has-Lesion-Assertion:T9 has-Lesion-Anatomy:T10 has-Lesion-Anatomy:T11

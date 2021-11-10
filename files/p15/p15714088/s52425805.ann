@@ -1,0 +1,21 @@
+T1	Medical-Problem 312 320	Blunting
+T2	Medical-Anatomy 329 352	left costophrenic angle
+T3	Medical-Assertion 400 413	might reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 414 448	minimal amount of pleural effusion
+T5	Medical-Problem 452 470	pleural thickening
+T6	Medical-Assertion 473 475	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 477 493	pleural effusion
+T8	Medical-Problem 497 509	pneumothorax
+T9	Medical-Assertion 520 522	No
+A3	Medical-AssertionValue T9 absent
+T10	Lesion-Description 523 529	nodule
+E7	Lesion-Description:T10
+T11	Lesion-Description 612 618	nodule
+E8	Lesion-Description:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6

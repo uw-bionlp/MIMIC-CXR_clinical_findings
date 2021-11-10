@@ -1,0 +1,44 @@
+T1	Lesion-Size 146 151	large
+T2	Lesion-Anatomy 152 164	retrocardiac
+T3	Lesion-Description 165 169	mass
+T4	Medical-Anatomy 354 363;365 377	posterior to the heart
+T5	Medical-Problem 413 427	hiatal hernias
+T6	Medical-Assertion 438 440	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 442 466	definite air-fluid level
+T8	Lesion-Description 549 553	mass
+E7	Lesion-Description:T8
+T9	Medical-Anatomy 583 594;596 602	right heart border
+E8	Medical-Anatomy:T9
+T10	Medical-Anatomy 666 671	Lungs
+T11	Medical-Problem 677 689	overexpanded
+T12	Medical-Problem 711 722	attenuation
+T13	Medical-Anatomy 726 744	upper lobe vessels
+T14	Medical-Assertion 746 759	suggestive of
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 760 769	emphysema
+T16	Medical-Problem 772 792	Linear areas of scar
+T17	Medical-Problem 796 807	atelectasis
+T18	Medical-Anatomy 824 839	both lung bases
+T19	Medical-Problem 842 875	Bones are diffusely demineralized
+E17	Medical-Problem:T19
+T20	Lesion-Size 893 898	15 cm
+T21	Lesion-Anatomy 899 911	retrocardiac
+T22	Lesion-Description 912 916	mass
+T23	Medical-Assertion 917 936	probably represents
+A3	Medical-AssertionValue T23 possible
+T24	Medical-Problem 939 952	hiatal hernia
+T25	Medical-Assertion 959 961	no
+A4	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1230 1269	Severe upper lobe predominant emphysema
+E22	Medical-Problem:T26
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T10 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T18
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E20	Lesion-Description:T22 has-Lesion-Size-Present:T20 has-Lesion-Anatomy:T21
+E21	Medical-Problem:T24 has-Medical-Assertion:T23 has-Medical-Assertion:T25

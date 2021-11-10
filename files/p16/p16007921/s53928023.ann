@@ -1,0 +1,40 @@
+T1	Medical-Problem 231 278	paramediastinal fibrotic changes/bronchiectasis
+E1	Medical-Problem:T1
+T2	Medical-Problem 314 351	persistent right apical opacity/fluid
+E2	Medical-Problem:T2
+T3	Medical-Assertion 357 365	possible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 366 380;382 385	small focus of gas
+T5	Lesion-Count 404 412	multiple
+T6	Lesion-Anatomy 413 432	bilateral pulmonary
+T7	Lesion-Description 433 440	nodules
+T8	Medical-Problem 451 460	elevation
+T9	Medical-Anatomy 469 488	right hemidiaphragm
+T10	Medical-Problem 494 522	right-sided pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 534 565	increased right basilar opacity
+T12	Medical-Problem 579 602	mild decrease in volume
+T13	Medical-Anatomy 611 621	right lung
+T14	Medical-Assertion 623 642	which may be due to
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 643 659	pleural effusion
+T16	Medical-Problem 664 675	volume loss
+T17	Medical-Problem 686 704	infectious process
+T18	Medical-Assertion 705 717	not excluded
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Assertion 719 721	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 722 743	left pleural effusion
+T21	Medical-Assertion 745 747	No
+A5	Medical-AssertionValue T21 absent
+T22	Medical-Problem 748 763;765 770	overt pulmonary edema
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T18
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14 has-Medical-Assertion:T18
+E15	Medical-Problem:T17 has-Medical-Assertion:T14 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21

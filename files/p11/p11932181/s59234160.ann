@@ -1,0 +1,70 @@
+T1	Medical-Problem 29 48	new air fluid level
+T2	Medical-Anatomy 56 77	upper left hemithorax
+T3	Medical-Problem 130 152	bronchopleural fistula
+T4	Medical-Assertion 153 177	can have this appearance
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 182 204	left hydropneumothorax
+E4	Medical-Problem:T5
+T6	Medical-Assertion 250 256	likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 259 287	pleural effusion/atelectasis
+T8	Medical-Problem 289 313	underlying consolidation
+T9	Medical-Assertion 314 326	not excluded
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 686 695;697 717	Increased left basilar opacity
+E7	Medical-Problem:T10
+T11	Medical-Problem 753 771;773 781	large left pleural effusion
+E8	Medical-Problem:T11
+T12	Medical-Problem 787 808	overlying atelectasis
+E9	Medical-Problem:T12
+T13	Medical-Problem 811 834	Small left pneumothorax
+E10	Medical-Problem:T13
+T14	Medical-Problem 847 857	Prominence
+T15	Medical-Anatomy 865 875	left hilum
+T16	Medical-Assertion 876 889	may relate to
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 890 914	left-sided pleural fluid
+T18	Lesion-Characteristic 926 936	underlying
+T19	Lesion-Description 937 952	lymphadenopathy
+T20	Medical-Problem 956 969	consolidation
+T21	Medical-Assertion 973 985	not excluded
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1059 1071;1073 1086	left basilar consolidation
+E17	Medical-Problem:T22
+T23	Medical-Problem 1191 1213	Left hydropneumothorax
+E18	Medical-Problem:T23
+T24	Medical-Problem 1216 1253;1255 1270	Significant interval increase in left basilar opacity
+E19	Medical-Problem:T24
+T25	Medical-Assertion 1272 1278	likely
+A6	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1279 1300	left pleural effusion
+T27	Medical-Problem 1306 1327	overlying atelectasis
+T28	Medical-Problem 1330 1354	underlying consolidation
+T29	Medical-Assertion 1355 1367	not excluded
+A7	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1370 1392	Left perihilar opacity
+E23	Medical-Problem:T30
+T31	Medical-Problem 1438 1464	underlying lymphadenopathy
+T32	Medical-Problem 1468 1478;1480 1493	additional consolidation
+T33	Medical-Assertion 1497 1509	not excluded
+A8	Medical-AssertionValue T33 possible
+T34	Medical-Problem 1512 1527	Air-fluid level
+T35	Medical-Anatomy 1540 1550;1552 1562	left upper hemithorax
+T36	Medical-Assertion 1631 1642	can be seen
+A9	Medical-AssertionValue T36 possible
+T37	Medical-Problem 1646 1668	bronchopleural fistula
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Lesion-Description:T19 has-Lesion-Characteristic:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T15 has-Medical-Assertion:T21
+E20	Medical-Problem:T26 has-Medical-Assertion:T25
+E21	Medical-Problem:T27 has-Medical-Assertion:T25
+E22	Medical-Problem:T28 has-Medical-Assertion:T25 has-Medical-Assertion:T29
+E24	Medical-Problem:T31 has-Medical-Assertion:T33
+E25	Medical-Problem:T32 has-Medical-Assertion:T33
+E26	Medical-Problem:T34 has-Medical-Anatomy:T35
+E28	Medical-Problem:T37 has-Medical-Assertion:T36

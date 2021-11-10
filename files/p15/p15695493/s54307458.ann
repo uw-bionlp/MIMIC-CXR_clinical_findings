@@ -1,0 +1,26 @@
+T1	Medical-Problem 228 248	Multifocal opacities
+T2	Medical-Anatomy 256 266	right lung
+T3	Medical-Problem 286 298;300 311	component of atelectasis
+T4	Medical-Anatomy 319 329	right base
+T5	Medical-Problem 359 366	density
+T6	Medical-Anatomy 374 378;380 384	left lung
+T7	Medical-Assertion 416 431	could be due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 432 448	pleural effusion
+T9	Medical-Problem 539 567	cardiomediastinal silhouette
+E8	Medical-Problem:T9
+T10	Medical-Problem 576 605	shifted towards the left side
+E9	Medical-Problem:T10
+T11	Lesion-Anatomy 612 622	left hilar
+T12	Lesion-Description 623 627	mass
+T13	Medical-Problem 636 666	postobstructive consolidations
+E12	Medical-Problem:T13
+T14	Lesion-Size-Trend 670 679	unchanged
+A2	Lesion-Size-TrendValue T14 no-change
+T15	Medical-Problem 682 687;689 711	Small right pleural effusion
+E13	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E11	Lesion-Description:T12 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T14

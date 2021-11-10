@@ -1,0 +1,28 @@
+T1	Medical-Problem 270 307	Moderate-sized right pleural effusion
+T2	Medical-Problem 313 340	heterogeneous opacification
+T3	Medical-Anatomy 348 377	retrocardiac right lower lobe
+T4	Medical-Problem 407 416	pneumonia
+T5	Lesion-Count 419 427	Multiple
+T6	Lesion-Description 439 456	nodular opacities
+T7	Lesion-Anatomy 460 470	both lungs
+T8	Lesion-Anatomy 487 502	left lower lobe
+T9	Lesion-Size-Trend 510 526	minimally larger
+A1	Lesion-Size-TrendValue T9 increasing
+T10	Lesion-Assertion 551 564	worrisome for
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 565 576	progression
+T12	Medical-Problem 676 705	Linear left basal atelectasis
+E10	Medical-Problem:T12
+T13	Medical-Assertion 731 733	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 734 746	pneumothorax
+T15	Medical-Problem 768 794	Right lower lobe pneumonia
+E12	Medical-Problem:T15
+T16	Lesion-Size-Trend 803 819	Mild progression
+A4	Lesion-Size-TrendValue T16 increasing
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Count:T5 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E9	Lesion-Description:T11 has-Lesion-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

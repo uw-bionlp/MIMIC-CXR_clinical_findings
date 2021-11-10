@@ -1,0 +1,26 @@
+T1	Medical-Assertion 318 320	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 321 337	pleural effusion
+T3	Medical-Problem 341 353	pneumothorax
+T4	Medical-Problem 445 469	Right lung base scarring
+E3	Medical-Problem:T4
+T5	Medical-Problem 482 498	Linear opacities
+T6	Medical-Anatomy 506 521	right lung apex
+T7	Medical-Problem 602 623	right basilar opacity
+E6	Medical-Problem:T7
+T8	Medical-Problem 721 728	bulging
+T9	Medical-Problem 733 744	obscuration
+T10	Medical-Anatomy 752 774	azygoesophageal recess
+T11	Medical-Problem 1069 1078;1080 1091	Right rib deformities
+E10	Medical-Problem:T11
+T12	Medical-Problem 1125 1164	New right basilar consolidative opacity
+E11	Medical-Problem:T12
+T13	Medical-Assertion 1165 1175	concerning
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1180 1189	infection
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T10
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

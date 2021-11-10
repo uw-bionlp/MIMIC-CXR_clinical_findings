@@ -1,0 +1,34 @@
+T1	Medical-Problem 390 403	Opacification
+T2	Medical-Anatomy 407 423	both lower lungs
+T3	Medical-Assertion 454 467;469 476	impossible to exclude
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 479 507	component of dependent edema
+T5	Medical-Problem 517 526	asymmetry
+T6	Medical-Problem 535 545;547 567	especially severe consolidation
+T7	Medical-Anatomy 575 591	right lower lobe
+T8	Medical-Assertion 592 605	suggests that
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 636 647	abnormality
+T10	Medical-Problem 651 660	pneumonia
+T11	Medical-Problem 667 698;700 720	sudden onset of right lower and middle lobe collapse
+E9	Medical-Problem:T11
+T12	Medical-Assertion 728 736	suggests
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 737 747	aspiration
+T14	Medical-Problem 752 771	retained secretions
+T15	Medical-Problem 784 815	Moderate right pleural effusion
+T16	Medical-Assertion 852 854	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 855 867	pneumothorax
+T18	Medical-Problem 871 904	appreciable left pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T7
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T12
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16

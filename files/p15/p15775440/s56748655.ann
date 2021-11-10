@@ -1,0 +1,23 @@
+T1	Medical-Assertion 396 398	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 399 427	definite vascular congestion
+T3	Medical-Problem 429 445	pleural effusion
+T4	Medical-Problem 450 471	acute focal pneumonia
+T5	Medical-Anatomy 481 500	right apical region
+T6	Medical-Problem 538 548;550 563	elliptical opacification
+T7	Medical-Problem 594 626;628 636	overlapping shadows of pulmonary markings
+T8	Medical-Anatomy 638 658	fourth posterior rib
+T9	Medical-Anatomy 664 700	lower portion of the medial clavicle
+T10	Lesion-Description 781 792	parenchymal
+E9	Lesion-Description:T10
+T11	Lesion-Description 793 799	lesion
+E10	Lesion-Description:T11
+T12	Medical-Assertion 923 930	exclude
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 933 950;952 959	right parenchymal process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

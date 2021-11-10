@@ -1,0 +1,17 @@
+T1	Medical-Anatomy 567 572	Heart
+T2	Medical-Assertion 604 607;609 616	may reflect
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 617 629	cardiomegaly
+T4	Medical-Problem 640 660	pericardial effusion
+T5	Medical-Assertion 661 686	should also be considered
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 699 727	layering bilateral effusions
+E4	Medical-Problem:T6
+T7	Medical-Problem 733 767;769 774	persistent but improving pulmonary edema
+E5	Medical-Problem:T7
+T8	Medical-Assertion 777 779	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 780 792	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

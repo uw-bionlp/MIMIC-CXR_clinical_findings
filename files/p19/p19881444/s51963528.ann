@@ -1,0 +1,21 @@
+T1	Medical-Problem 436 449	minimal edema
+T2	Medical-Anatomy 457 467	right lung
+T3	Medical-Assertion 604 607	not
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 608 616	migrated
+T5	Lesion-Anatomy 684 695	Right hilar
+T6	Lesion-Description 696 700	mass
+T7	Lesion-Anatomy 705 710;712 724	lower paratracheal
+T8	Lesion-Description 725 735	adenopathy
+T9	Lesion-Assertion 736 744	unlikely
+A2	Lesion-AssertionValue T9 possible
+T10	Medical-Problem 908 947	Thoracic scoliosis is moderately severe
+E8	Medical-Problem:T10
+T11	Medical-Assertion 950 952	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 953 965	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T9
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T7 has-Lesion-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

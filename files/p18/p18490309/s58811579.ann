@@ -1,0 +1,15 @@
+T1	Medical-Assertion 641 643	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 644 656	pneumothorax
+T3	Medical-Problem 660 688	appreciable pleural effusion
+T4	Medical-Problem 692 719	Heterogeneous opacification
+T5	Medical-Anatomy 723 739	both lower lungs
+T6	Medical-Assertion 743 751	probably
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 752 761	pneumonia
+T8	Lesion-Description 778 785	nodules
+E6	Lesion-Description:T8
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6

@@ -1,0 +1,46 @@
+T1	Medical-Problem 276 305	atherosclerotic calcification
+T2	Medical-Anatomy 313 324	aortic arch
+T3	Lesion-Anatomy 379 404	posterior left lower lobe
+T4	Lesion-Description 405 411	lesion
+T5	Medical-Problem 480 505;507 516	Minimal streaky bibasilar opacities
+E5	Medical-Problem:T5
+T6	Medical-Assertion 517 531	likely reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 532 543	atelectasis
+T8	Medical-Problem 552 561	infection
+T9	Medical-Assertion 565 577;579 586	difficult to exclude
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 598 600	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 601 624	new focal consolidation
+T12	Medical-Problem 626 642	pleural effusion
+T13	Medical-Problem 647 659	pneumothorax
+T14	Medical-Assertion 662 664	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 665 694	pulmonary vascular congestion
+T16	Medical-Assertion 776 778	no
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 779 792;794 807	acute osseous abnormalities
+T18	Lesion-Anatomy 827 842	Left lower lobe
+T19	Lesion-Description 843 849	lesion
+T20	Lesion-Characteristic 850 878	containing a fudicial marker
+T21	Lesion-Size-Trend 880 905	not significantly changed
+A6	Lesion-Size-TrendValue T21 no-change
+T22	Medical-Assertion 930 938	Probable
+A7	Medical-AssertionValue T22 possible
+T23	Medical-Problem 939 960	bibasilar atelectasis
+T24	Medical-Problem 968 977	infection
+T25	Medical-Assertion 982 1002	difficult to exclude
+A8	Medical-AssertionValue T25 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Lesion-Description:T19 has-Lesion-Anatomy:T18 has-Lesion-Characteristic:T20 has-Lesion-Size-Trend:T21
+E16	Medical-Problem:T23 has-Medical-Assertion:T22
+E17	Medical-Problem:T24 has-Medical-Assertion:T22 has-Medical-Assertion:T25

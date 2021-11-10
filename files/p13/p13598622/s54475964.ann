@@ -1,0 +1,26 @@
+T1	Medical-Problem 258 284	mild bibasilar atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Assertion 285 301	without evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 305 324	focal consolidation
+T4	Lesion-Size 326 327;329 331	4 mm
+T5	Lesion-Characteristic 332 341	calcified
+T6	Lesion-Description 342 348	nodule
+T7	Lesion-Anatomy 369 391	lateral left lung base
+T8	Lesion-Size-Trend 395 401	stable
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Lesion-Characteristic 435 444	calcified
+T10	Lesion-Description 445 454	granuloma
+T11	Medical-Assertion 457 459	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 460 476	pleural effusion
+T13	Medical-Problem 481 493	pneumothorax
+T14	Medical-Assertion 581 583	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 584 613	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T8
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T7 has-Lesion-Characteristic:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

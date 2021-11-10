@@ -1,0 +1,29 @@
+T1	Medical-Problem 220 252	Apparent transverse cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Assertion 255 257	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 258 273	pulmonary edema
+T4	Medical-Problem 277 301	Subsegmental atelectasis
+T5	Medical-Anatomy 309 324	right lung base
+T6	Medical-Assertion 327 329	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 330 352	airspace consolidation
+T8	Lesion-Assertion 356 358	No
+A3	Lesion-AssertionValue T8 absent
+T9	Lesion-Characteristic 359 369	suspicious
+T10	Lesion-Anatomy 370 379	pulmonary
+T11	Lesion-Description 380 387	nodules
+E8	Lesion-Description:T11
+T12	Lesion-Description 388 394	masses
+T13	Medical-Assertion 397 399	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 400 412	pneumothorax
+T15	Medical-Assertion 433 444	No features
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 448 457	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E9	Lesion-Description:T12 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

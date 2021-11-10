@@ -1,0 +1,68 @@
+T1	Medical-Assertion 42 55	worrisome for
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 56 76	developing pneumonia
+T3	Medical-Anatomy 84 108;110 121	superior segment of left  lower lobe
+T4	Medical-Problem 127 151	small pleural effusion.2
+T5	Lesion-Anatomy 153 177	Tubular right upper lobe
+T6	Lesion-Size 178 184	1.9 cm
+T7	Lesion-Description 187 194	opacity
+T8	Medical-Assertion 198 202	most
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 219 234	mucous plugging
+T10	Lesion-Size 245 250	small
+T11	Lesion-Anatomy 251 260	pulmonary
+T12	Lesion-Description 263 269	nodule
+T13	Lesion-Size-Trend 279 300	similar in appearance
+A3	Lesion-Size-TrendValue T13 no-change
+T14	Medical-Anatomy 805 810	lungs
+T15	Medical-Problem 815 827	hypoinflated
+T16	Medical-Problem 833 844	crowding of
+T17	Medical-Problem 920 936	right lower lobe
+E14	Medical-Problem:T17
+T18	Medical-Problem 937 944	opacity
+E15	Medical-Problem:T18
+T19	Medical-Problem 974 998	right upper lobe opacity
+E16	Medical-Problem:T19
+T20	Medical-Problem 1024 1039	mucous plugging
+E17	Medical-Problem:T20
+T21	Lesion-Size 1050 1055	small
+T22	Lesion-Anatomy 1056 1065	pulmonary
+T23	Lesion-Description 1066 1072	nodule
+T24	Lesion-Size-Trend 1082 1092;1094 1104	similar in appearance
+A4	Lesion-Size-TrendValue T24 no-change
+T25	Medical-Problem 1107 1151	Interval increase in a heterogeneous opacity
+T26	Medical-Anatomy 1163 1171;1173 1203	superior segment of the left lower lobe
+T27	Medical-Assertion 1204 1217	worrisome for
+A5	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1218 1238	developing pneumonia
+T29	Medical-Problem 1241 1251;1253 1269	Small left pleural effusion
+E24	Medical-Problem:T29
+T30	Medical-Problem 1348 1372	mild rightward deviation
+E25	Medical-Problem:T30
+T31	Medical-Assertion 1456 1469	worrisome for
+A6	Medical-AssertionValue T31 possible
+T32	Medical-Problem 1470 1490	developing pneumonia
+T33	Medical-Anatomy 1498 1506	superior
+T34	Medical-Problem 1540 1562	small pleural effusion
+T35	Medical-Assertion 1612 1627	most consistent
+A7	Medical-AssertionValue T35 possible
+T36	Medical-Problem 1633 1639;1641 1649	mucous plugging
+T37	Lesion-Size 1660 1665	small
+T38	Lesion-Anatomy 1666 1675	pulmonary
+T39	Lesion-Description 1676 1682	nodule
+T40	Lesion-Size-Trend 1692 1713	similar in appearance
+A8	Lesion-Size-TrendValue T40 no-change
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14
+E20	Lesion-Description:T23 has-Lesion-Size-Present:T21 has-Lesion-Anatomy:T22 has-Lesion-Size-Trend:T24
+E21	Medical-Problem:T25 has-Medical-Anatomy:T26
+E23	Medical-Problem:T28 has-Medical-Anatomy:T26 has-Medical-Assertion:T27
+E26	Medical-Problem:T32 has-Medical-Assertion:T31 has-Medical-Anatomy:T33
+E28	Medical-Problem:T34 has-Medical-Anatomy:T33
+E29	Medical-Problem:T36 has-Medical-Assertion:T35
+E32	Lesion-Description:T39 has-Lesion-Size-Present:T37 has-Lesion-Anatomy:T38 has-Lesion-Size-Trend:T40

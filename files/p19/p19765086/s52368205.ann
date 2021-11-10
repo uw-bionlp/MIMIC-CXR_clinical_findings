@@ -1,0 +1,19 @@
+T1	Medical-Assertion 418 420	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 421 441	obvious pneumothorax
+T3	Medical-Problem 581 589;591 606	heart is mildly enlarged
+E2	Medical-Problem:T3
+T4	Medical-Problem 634 665;667 675	moderate layering right pleural effusion
+E3	Medical-Problem:T4
+T5	Medical-Problem 691 737;739 748	Widespread bilateral interstitial and airspace opacities
+E4	Medical-Problem:T5
+T6	Medical-Anatomy 774 797	Left lateral chest wall
+T7	Medical-Problem 812 854	small postoperative subcutaneous emphysema
+T8	Medical-Problem 988 1052	Slightly increased bilateral interstitial and airspace opacities
+E7	Medical-Problem:T8
+T9	Medical-Assertion 1064 1077	likely due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 1078 1093	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

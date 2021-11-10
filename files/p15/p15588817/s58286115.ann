@@ -1,0 +1,39 @@
+T1	Medical-Problem 397 406;408 424	extensive pulmonary emboli
+E1	Medical-Problem:T1
+T2	Lesion-Size 426 431	large
+T3	Lesion-Anatomy 432 442	left hilar
+T4	Lesion-Description 443 447	mass
+T5	Medical-Problem 474 486;488 496	left pleural effusion
+E5	Medical-Problem:T5
+T6	Lesion-Anatomy 498 502	lung
+T7	Lesion-Description 503 510	nodules
+T8	Medical-Problem 515 542	probable pulmonary infarcts
+E8	Medical-Problem:T8
+T9	Medical-Anatomy 655 660;662 666	right lung
+T10	Medical-Assertion 673 675	no
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 676 691	pulmonary edema
+T12	Medical-Anatomy 698 707	left lung
+T13	Medical-Problem 711 729	partially obscured
+T14	Medical-Problem 733 740;742 750	pleural effusion
+T15	Medical-Assertion 755 763	probable
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 764 801	worsening left lower lobe atelectasis
+T17	Medical-Problem 804 814	Mild edema
+T18	Medical-Anatomy 823 833	upper lobe
+T19	Medical-Problem 851 874	Lymphovenous congestion
+T20	Lesion-Anatomy 882 892	left hilar
+T21	Lesion-Description 894 898	mass
+T22	Medical-Assertion 901 903	No
+A3	Medical-AssertionValue T22 absent
+T23	Medical-Problem 904 916	pneumothorax
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E10	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Anatomy:T12
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T19 has-Medical-Anatomy:T18
+E19	Lesion-Description:T21 has-Lesion-Anatomy:T20
+E20	Medical-Problem:T23 has-Medical-Assertion:T22

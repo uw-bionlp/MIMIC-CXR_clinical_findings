@@ -1,0 +1,17 @@
+T1	Medical-Assertion 307 309	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 310 322	pneumothorax
+T3	Medical-Problem 334 353;355 366	unchanged bibasilar atelectasis
+E2	Medical-Problem:T3
+T4	Medical-Problem 383 390	lucency
+T5	Medical-Anatomy 400 419	right hemidiaphragm
+T6	Medical-Problem 440 464	free intraperitoneal air
+T7	Medical-Assertion 584 586	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 587 599	pneumothorax
+T9	Medical-Problem 603 638	Persistent free intraperitoneal air
+E7	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

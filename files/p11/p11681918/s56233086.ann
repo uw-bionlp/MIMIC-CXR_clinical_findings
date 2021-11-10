@@ -1,0 +1,33 @@
+T1	Medical-Problem 82 106;108 121	persistent moderate left  pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 126 158	mild rightward mediastinal shift
+E2	Medical-Problem:T2
+T3	Medical-Problem 662 674	pneumothorax
+E3	Medical-Problem:T3
+T4	Medical-Problem 679 711	mild rightward mediastinal shift
+E4	Medical-Problem:T4
+T5	Medical-Problem 762 772	depression
+T6	Medical-Anatomy 780 798	left hemidiaphragm
+T7	Medical-Assertion 799 809	suggesting
+A1	Medical-AssertionValue T7 possible
+T8	Lesion-Size 836 841	Large
+T9	Lesion-Characteristic 842 850	cavitary
+T10	Lesion-Description 851 857	lesion
+T11	Medical-Anatomy 861 876	left lower lobe
+T12	Medical-Problem 889 913	complex cavitary disease
+T13	Medical-Anatomy 921 936	left upper lobe
+T14	Medical-Problem 942 958;960 970	adjacent pleural thickening
+T15	Medical-Assertion 1032 1034	no
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1036 1052	pleural effusion
+T17	Medical-Problem 1122 1146;1148 1160	persistent moderate left pneumothorax
+E15	Medical-Problem:T17
+T18	Medical-Assertion 1166 1172	likely
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1173 1193	component of tension
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Lesion-Description:T10 has-Lesion-Size-Present:T8 has-Lesion-Characteristic:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T11 has-Medical-Anatomy:T13
+E13	Medical-Problem:T14 has-Medical-Anatomy:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

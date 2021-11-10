@@ -1,0 +1,29 @@
+T1	Lesion-Characteristic 247 254	Rounded
+T2	Lesion-Description 255 261	lesion
+T3	Lesion-Anatomy 282 294	left midlung
+T4	Lesion-Size-Trend 295 303	slightly
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Anatomy 365 375	chest wall
+T6	Lesion-Description 376 382	lesion
+T7	Medical-Problem 388 394;396 415	subtle region of pneumonia
+T8	Medical-Anatomy 423 462	superior segment of the left lower lobe
+T9	Medical-Problem 529 547;549 557	Small left pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Anatomy 600 610	Right lung
+T11	Medical-Problem 614 627	hyperinflated
+T12	Medical-Assertion 651 653	no
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 654 676	right pleural effusion
+T14	Medical-Problem 705 742	Biapical pleural parenchymal scarring
+E12	Medical-Problem:T14
+T15	Lesion-Assertion 761 765	does
+A3	Lesion-AssertionValue T15 absent
+T16	Lesion-Description 788 798	malignancy
+T17	Medical-Problem 802 811	infection
+E14	Medical-Problem:T17
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T4
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T12
+E13	Lesion-Description:T16 has-Lesion-Assertion:T15

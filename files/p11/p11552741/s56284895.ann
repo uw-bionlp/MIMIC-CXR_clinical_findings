@@ -1,0 +1,70 @@
+T1	Medical-Problem 349 378;380 388	heart size remains moderately enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 435 440	aorta
+T3	Medical-Problem 452 460	tortuous
+T4	Medical-Assertion 465 471	likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 472 479	dilated
+T6	Medical-Problem 482 490	Widening
+T7	Medical-Anatomy 498 526	superior mediastinal contour
+T8	Medical-Assertion 533 554	may in part be due to
+A2	Medical-AssertionValue T8 possible
+T9	Lesion-Description 571 586	lymphadenopathy
+E7	Lesion-Description:T9
+T10	Medical-Problem 589 593	Hazy
+E8	Medical-Problem:T10
+T11	Medical-Problem 595 609	opacifications
+T12	Medical-Anatomy 613 623	both lungs
+T13	Medical-Problem 656 670;672 708	moderate-sized layering bilateral pleural effusions
+T14	Medical-Problem 711 720	Bibasilar
+E12	Medical-Problem:T14
+T15	Medical-Problem 721 739	airspace opacities
+E13	Medical-Problem:T15
+T16	Medical-Assertion 740 745;747 754	could reflect
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 755 766	atelectasis
+T18	Medical-Problem 772 781	infection
+T19	Medical-Assertion 785 805	difficult to exclude
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 820 840	wedge-shaped opacity
+T21	Medical-Anatomy 848 869	left upper lung field
+T22	Medical-Assertion 899 912	appears to be
+A5	Medical-AssertionValue T22 possible
+T23	Medical-Problem 913 933	mild pulmonary edema
+T24	Medical-Problem 951 963	pneumothorax
+E19	Medical-Problem:T24
+T25	Medical-Assertion 1003 1005	no
+A6	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1006 1024	large pneumothorax
+T27	Medical-Problem 1107 1122	pulmonary edema
+E21	Medical-Problem:T27
+T28	Medical-Problem 1135 1176	moderate size bilateral pleural effusions
+E22	Medical-Problem:T28
+T29	Medical-Problem 1179 1188	Bibasilar
+E23	Medical-Problem:T29
+T30	Medical-Problem 1189 1207	airspace opacities
+E24	Medical-Problem:T30
+T31	Medical-Problem 1227 1247	wedge-shaped opacity
+T32	Medical-Anatomy 1255 1276	left upper lung field
+T33	Medical-Problem 1279 1287	Tortuous
+E27	Medical-Problem:T33
+T34	Medical-Assertion 1293 1299	likely
+A7	Medical-AssertionValue T34 possible
+T35	Medical-Problem 1300 1313	dilated aorta
+T36	Lesion-Assertion 1319 1327	probable
+A8	Lesion-AssertionValue T36 possible
+T37	Lesion-Anatomy 1328 1339	mediastinal
+T38	Lesion-Description 1340 1355	lymphadenopathy
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T19
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T26 has-Medical-Assertion:T25
+E25	Medical-Problem:T31 has-Medical-Anatomy:T32
+E28	Medical-Problem:T35 has-Medical-Assertion:T34
+E30	Lesion-Description:T38 has-Lesion-Assertion:T36 has-Lesion-Anatomy:T37

@@ -1,0 +1,33 @@
+T1	Medical-Problem 372 412	Persistence of a large left pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Assertion 413 421	suggests
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 422 444	chest tube malfunction
+T4	Medical-Assertion 445 450;452 458	could be due
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 462 470	fissural
+T6	Medical-Problem 566 575	emphysema
+E4	Medical-Problem:T6
+T7	Medical-Problem 582 596	large air leak
+E5	Medical-Problem:T7
+T8	Medical-Problem 601 619	Right pneumothorax
+E6	Medical-Problem:T8
+T9	Medical-Assertion 681 683	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 684 708	appreciable pneumothorax
+T11	Medical-Problem 710 730	Mild pulmonary edema
+E8	Medical-Problem:T11
+T12	Medical-Problem 776 801	More severe opacification
+T13	Medical-Anatomy 809 824	right lung base
+T14	Medical-Assertion 825 833	could be
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 835 858	residual of atelectasis
+T16	Medical-Assertion 864 882	does raise concern
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 887 896	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Anatomy:T13 has-Medical-Assertion:T16

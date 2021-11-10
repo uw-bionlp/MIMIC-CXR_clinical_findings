@@ -1,0 +1,26 @@
+T1	Medical-Problem 168 188	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 200 225;227 248	mild-to-moderate relative elevation of the left
+E2	Medical-Problem:T2
+T3	Medical-Problem 265 292	Heterogeneous opacification
+T4	Medical-Anatomy 296 305	each lung
+T5	Medical-Anatomy 339 350	upper lungs
+T6	Lesion-Anatomy 377 381;383 393	left upper lobe
+T7	Lesion-Description 394 400	nodule
+T8	Medical-Assertion 413 415	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 416 433	pleural effusions
+T10	Medical-Problem 437 449	pneumothorax
+T11	Medical-Problem 467 498	New heterogeneous opacification
+T12	Medical-Anatomy 502 511	each lung
+T13	Medical-Assertion 514 526;528 542	Differential considerations
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 551 571	widespread pneumonia
+T15	Medical-Problem 575 590	pulmonary edema
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13

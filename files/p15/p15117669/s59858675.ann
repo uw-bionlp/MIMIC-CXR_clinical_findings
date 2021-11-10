@@ -1,0 +1,63 @@
+T1	Medical-Problem 301 323;325 338	moderate sized pleural based density
+E1	Medical-Problem:T1
+T2	Medical-Assertion 340 353	suggestive of
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 356 382	loculated pleural effusion
+T4	Medical-Anatomy 390 401;403 418	right lower thoracic region
+T5	Medical-Problem 433 471	medial displacement of the lung tissue
+E4	Medical-Problem:T5
+T6	Medical-Problem 478 509	minimal compressive atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Problem 515 541	ovoid well-defined opacity
+T8	Medical-Anatomy 563 579	mid lung fissure
+T9	Medical-Assertion 580 597	likely represents
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 600 631;633 644	small loculated effusion within the fissure
+T11	Medical-Problem 677 696	ill-defined opacity
+T12	Medical-Anatomy 704 733	right mid-to-upper lung field
+T13	Medical-Problem 737 742;744 771	small left-sided pleural effusion
+E11	Medical-Problem:T13
+T14	Medical-Problem 794 811	aorta is tortuous
+E12	Medical-Problem:T14
+T15	Medical-Problem 817 822;824 842	heart is mildly enlarged
+E13	Medical-Problem:T15
+T16	Medical-Assertion 937 948	no evidence
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 952 964	pneumothorax
+T18	Medical-Assertion 967 969	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 971 996	subdiaphragmatic free air
+T20	Medical-Problem 1032 1051	Ill defined opacity
+T21	Medical-Anatomy 1059 1082	right mid to upper lung
+T22	Medical-Assertion 1083 1096	suggestive of
+A5	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1098 1129	infectious/inflammatory process
+T24	Medical-Problem 1138 1181	Right-sided loculated pleural based density
+T25	Medical-Assertion 1182 1195	suggestive of
+A6	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1198 1207;1209 1217	loculated effusion
+T27	Medical-Problem 1223 1245	associated atelectasis
+T28	Medical-Anatomy 1253 1268	right lung base
+T29	Medical-Problem 1271 1283;1285 1294	Superimposed infection
+T30	Medical-Assertion 1310 1328	cannot be excluded
+A7	Medical-AssertionValue T30 possible
+T31	Lesion-Size 1333 1338	small
+T32	Lesion-Characteristic 1339 1344	ovoid
+T33	Lesion-Description 1345 1351	lesion
+T34	Medical-Assertion 1390 1396	likely
+A8	Medical-AssertionValue T34 possible
+T35	Medical-Problem 1397 1427	loculated fluid in the fissure
+E2	Medical-Problem:T3 has-Medical-Assertion:T2 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21
+E18	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22
+E19	Medical-Problem:T24 has-Medical-Anatomy:T28
+E20	Medical-Problem:T26 has-Medical-Assertion:T25 has-Medical-Anatomy:T28
+E21	Medical-Problem:T27 has-Medical-Assertion:T25 has-Medical-Anatomy:T28
+E23	Medical-Problem:T29 has-Medical-Assertion:T30
+E26	Lesion-Description:T33 has-Lesion-Size-Present:T31 has-Lesion-Characteristic:T32
+E27	Medical-Problem:T35 has-Medical-Assertion:T34

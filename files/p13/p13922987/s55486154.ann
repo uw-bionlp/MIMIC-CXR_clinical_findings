@@ -1,0 +1,29 @@
+T1	Medical-Problem 313 324	appreciable
+E1	Medical-Problem:T1
+T2	Medical-Problem 339 361	residual consolidation
+T3	Medical-Problem 366 377	atelectasis
+T4	Medical-Anatomy 386 402	right upper lobe
+T5	Medical-Problem 404 431	Heterogeneous opacification
+T6	Medical-Anatomy 439 462;464 468	left mid and lower lung zone
+T7	Medical-Problem 482 519	residual of left aspiration pneumonia
+T8	Medical-Problem 556 572	severe emphysema
+E8	Medical-Problem:T8
+T9	Medical-Problem 614 628	bronchiectasis
+E9	Medical-Problem:T9
+T10	Medical-Problem 630 649	fluid-filled bullae
+E10	Medical-Problem:T10
+T11	Lesion-Anatomy 655 659	lung
+T12	Lesion-Description 660 667	nodules
+T13	Lesion-Characteristic 674 682	cavitary
+T14	Lesion-Anatomy 683 687	lung
+T15	Lesion-Description 689 696	nodules
+T16	Medical-Assertion 732 734	no
+A1	Medical-AssertionValue T16 absent
+T17	Medical-Problem 735 754	pleural abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E12	Lesion-Description:T12 has-Lesion-Anatomy:T11
+E15	Lesion-Description:T15 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14
+E16	Medical-Problem:T17 has-Medical-Assertion:T16

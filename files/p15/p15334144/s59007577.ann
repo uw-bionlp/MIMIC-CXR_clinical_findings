@@ -1,0 +1,37 @@
+T1	Medical-Problem 360 398;400 403	interval increase in right lung volume and
+E1	Medical-Problem:T1
+T2	Medical-Problem 404 425	right pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 437 459	stable low lung volume
+T4	Medical-Anatomy 467 476	left lung
+T5	Medical-Problem 480 513	Small bilateral pleural effusions
+E5	Medical-Problem:T5
+T6	Lesion-Count 526 534	Multiple
+T7	Lesion-Description 535 552	nodular opacities
+T8	Lesion-Anatomy 565 575	right lung
+T9	Medical-Assertion 582 595	can represent
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 596 613	early atelectasis
+T11	Medical-Problem 617 627	infiltrate
+T12	Medical-Problem 640 659	stable cardiomegaly
+E11	Medical-Problem:T12
+T13	Medical-Assertion 662 664	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 665 677	pneumothorax
+T15	Medical-Problem 898 924	Increasing pulmonary edema
+E13	Medical-Problem:T15
+T16	Medical-Problem 927 965	Increasing nodular confluent opacities
+E14	Medical-Problem:T16
+T17	Medical-Problem 983 1000	early atelectasis
+E15	Medical-Problem:T17
+T18	Medical-Problem 1004 1014	infiltrate
+E16	Medical-Problem:T18
+T19	Medical-Problem 1021 1040	Stable cardiomegaly
+E17	Medical-Problem:T19
+T20	Medical-Problem 1046 1081	small unchanged bilateral effusions
+E18	Medical-Problem:T20
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Count:T6 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

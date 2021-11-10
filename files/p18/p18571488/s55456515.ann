@@ -1,0 +1,42 @@
+T1	Medical-Anatomy 322 330;332 347	left mid and lower lungs
+E1	Medical-Anatomy:T1
+T2	Lesion-Count 394 402	Multiple
+T3	Lesion-Anatomy 403 417	bilateral lung
+T4	Lesion-Description 418 425	nodules
+T5	Medical-Assertion 471 473	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 474 493	focal consolidation
+T7	Medical-Assertion 494 504	concerning
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 509 518	pneumonia
+T9	Medical-Assertion 544 546	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 547 563	pleural effusion
+T11	Medical-Problem 567 579	pneumothorax
+T12	Medical-Assertion 669 671	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 672 693	overt pulmonary edema
+T14	Medical-Anatomy 704 722	Osseous structures
+T15	Medical-Assertion 727 734	without
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 735 752	acute abnormality
+T17	Medical-Assertion 773 775	No
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 776 795	focal consolidation
+T19	Medical-Assertion 796 810	concerning for
+A7	Medical-AssertionValue T19 possible
+T20	Medical-Problem 811 820	pneumonia
+T21	Lesion-Count 822 830	Multiple
+T22	Lesion-Characteristic 831 838	diffuse
+T23	Lesion-Anatomy 839 848;850 854	bilateral lung
+T24	Lesion-Description 855 862	nodules
+E4	Lesion-Description:T4 has-Lesion-Count:T2 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E12	Medical-Problem:T18 has-Medical-Assertion:T17
+E13	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Lesion-Description:T24 has-Lesion-Count:T21 has-Lesion-Characteristic:T22 has-Lesion-Anatomy:T23

@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 306 311	lungs
+T2	Medical-Assertion 323 330	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 331 350	focal consolidation
+T4	Medical-Assertion 351 365	concerning for
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 366 375	pneumonia
+T6	Medical-Problem 377 393	pleural effusion
+T7	Medical-Problem 398 410	pneumothorax
+T8	Medical-Anatomy 417 438	pulmonary vasculature
+T9	Medical-Assertion 442 445	not
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 446 454	engorged
+T11	Medical-Problem 457 473;475 493	Mild left apical pleural thickening
+E8	Medical-Problem:T11
+T12	Medical-Problem 615 625;627 660	trachea is deviated to the right in the neck
+E9	Medical-Problem:T12
+T13	Lesion-Size 666 671	large
+T14	Lesion-Characteristic 672 680	dominant
+T15	Lesion-Anatomy 681 693	left thyroid
+T16	Lesion-Description 694 700	nodule
+T17	Medical-Assertion 740 742	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 743 772	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Anatomy:T1 has-Medical-Assertion:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T1 has-Medical-Assertion:T2 has-Medical-Assertion:T4
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E13	Lesion-Description:T16 has-Lesion-Size-Present:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

@@ -1,0 +1,27 @@
+T1	Medical-Problem 209 230	small angular opacity
+T2	Medical-Anatomy 238 284	periphery of the lower pole of the right hilus
+T3	Medical-Assertion 286 301	could be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 304 340	superimposition of normal structures
+T5	Lesion-Size-Trend 426 429	new
+A2	Lesion-Size-TrendValue T5 new
+T6	Lesion-Anatomy 430 434	lung
+T7	Lesion-Description 436 442	lesion
+T8	Medical-Assertion 507 509	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 511 530	pleural abnormality
+T10	Lesion-Characteristic 546 553	central
+T11	Lesion-Description 554 564	adenopathy
+T12	Lesion-Size-Trend 667 684	grossly unchanged
+A4	Lesion-Size-TrendValue T12 no-change
+T13	Lesion-Assertion 800 802	no
+A5	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 803 807	lung
+T15	Lesion-Description 808 814	lesion
+T16	Lesion-Anatomy 822 842	right perihilar area
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Size-Trend:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Lesion-Description:T11 has-Lesion-Characteristic:T10
+E10	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T16

@@ -1,0 +1,18 @@
+T1	Medical-Problem 174 187	Consolidation
+E1	Medical-Problem:T1
+T2	Medical-Assertion 315 317	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 318 330	pneumothorax
+T4	Medical-Problem 430 451;453 471	Minimal right basilar linear atelectasis
+E3	Medical-Problem:T4
+T5	Lesion-Size 489 493	6 mm
+T6	Lesion-Anatomy 494 511	right middle lobe
+T7	Lesion-Description 512 518	nodule
+T8	Lesion-Size-Trend 523 532	unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Assertion 585 596	No evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 600 609	pneumonia
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

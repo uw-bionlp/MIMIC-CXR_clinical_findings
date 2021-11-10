@@ -1,0 +1,15 @@
+T1	Medical-Anatomy 194 199	lungs
+T2	Medical-Assertion 213 220	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 221 240	focal consolidation
+T4	Medical-Problem 242 250	effusion
+T5	Medical-Problem 255 267	pneumothorax
+T6	Medical-Problem 325 333;335 349	unfolded thoracic aorta
+E5	Medical-Problem:T6
+T7	Medical-Assertion 418 429	No evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 433 442	pneumonia
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

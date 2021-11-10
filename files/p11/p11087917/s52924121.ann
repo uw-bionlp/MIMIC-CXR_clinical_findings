@@ -1,0 +1,25 @@
+T1	Medical-Problem 306 338;340 368	interval increase in size of the right-sided pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 529 531	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 532 555	visualized pneumothorax
+T4	Medical-Anatomy 561 570	left lung
+T5	Medical-Assertion 586 593	without
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 594 607	consolidation
+T7	Medical-Problem 611 619	effusion
+T8	Medical-Problem 694 722	Large right pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Problem 812 836	Underlying consolidation
+E7	Medical-Problem:T9
+T10	Medical-Problem 865 876	atelectasis
+E8	Medical-Problem:T10
+T11	Lesion-Description 887 891	mass
+E9	Lesion-Description:T11
+T12	Medical-Problem 917 939	Superimposed infection
+T13	Medical-Assertion 940 959	can not be excluded
+A3	Medical-AssertionValue T13 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E10	Medical-Problem:T12 has-Medical-Assertion:T13

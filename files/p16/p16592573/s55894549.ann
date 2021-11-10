@@ -1,0 +1,19 @@
+T1	Medical-Problem 344 360;362 374	mild-to-moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Assertion 458 460	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 461 473	pneumothorax
+T4	Medical-Problem 477 493	pleural effusion
+T5	Medical-Anatomy 500 514;516 524	main pulmonary arteries
+T6	Medical-Assertion 525 531	appear
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 535 546	be enlarged
+T8	Medical-Problem 549 573	Left perihilar opacities
+E6	Medical-Problem:T8
+T9	Medical-Assertion 574 580	likely
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 581 592	atelectasis
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

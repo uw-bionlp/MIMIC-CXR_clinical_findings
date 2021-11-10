@@ -1,0 +1,38 @@
+T1	Lesion-Size 38 42	5 mm
+T2	Lesion-Description 43 58	nodular density
+T3	Lesion-Anatomy 79 102;104 156	left upper lobe, at the  intersection of the first anterior rib and clavicle
+T4	Lesion-Anatomy 195 204	pulmonary
+T5	Lesion-Description 205 211	nodule
+T6	Medical-Assertion 276 278	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 279 312	acute cardiopulmonary abnormality
+T8	Lesion-Size 727 731	5 mm
+T9	Lesion-Description 732 747	nodular density
+T10	Medical-Anatomy 766 770;772 782	left upper lobe
+E9	Medical-Anatomy:T10
+T11	Medical-Assertion 873 875	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 876 892	pleural effusion
+T13	Medical-Problem 896 908	pneumothorax
+T14	Medical-Assertion 929 931	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 932 959	acute osseous abnormalities
+T16	Lesion-Description 989 1004	nodular density
+E13	Lesion-Description:T16
+T17	Medical-Anatomy 1025 1040	left upper lobe
+E14	Medical-Anatomy:T17
+T18	Medical-Problem 1139 1148	pulmonary
+E15	Medical-Problem:T18
+T19	Lesion-Description 1149 1155	nodule
+E16	Lesion-Description:T19
+T20	Medical-Assertion 1218 1220	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1221 1254	acute cardiopulmonary abnormality
+E2	Lesion-Description:T2 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E17	Medical-Problem:T21 has-Medical-Assertion:T20

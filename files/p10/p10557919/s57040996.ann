@@ -1,0 +1,15 @@
+T1	Medical-Problem 216 241	right apical pneumothorax
+T2	Medical-Assertion 245 271;273 281	much smaller or completely resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Assertion 284 295	Possibility
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 301 333	very small residual pneumothorax
+T5	Medical-Problem 460 471;473 500	right focal consolidation focal opacity
+T6	Medical-Anatomy 508 529	right mid/lower zones
+T7	Medical-Problem 546 551;553 566	focal consolidation
+T8	Medical-Problem 598 610	Cardiomegaly
+E6	Medical-Problem:T8
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6

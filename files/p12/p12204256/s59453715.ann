@@ -1,0 +1,29 @@
+T1	Lesion-Characteristic 329 339	suspicious
+T2	Lesion-Anatomy 340 344	lung
+T3	Lesion-Description 346 352	nodule
+T4	Lesion-Anatomy 360 376	right lower lobe
+T5	Medical-Problem 383 399	right lower lobe
+E5	Medical-Problem:T5
+T6	Medical-Problem 400 409	pneumonia
+E6	Medical-Problem:T6
+T7	Medical-Problem 483 505	minimal patchy opacity
+T8	Medical-Anatomy 513 523	right base
+T9	Medical-Problem 546 578	residua from the prior pneumonia
+E9	Medical-Problem:T9
+T10	Medical-Problem 588 603;605 616	small amount of atelectasis
+E10	Medical-Problem:T10
+T11	Medical-Assertion 619 621	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 622 636	new infiltrate
+T13	Medical-Assertion 653 655	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 656 659	CHF
+T15	Medical-Problem 663 671	effusion
+T16	Lesion-Anatomy 681 690	pulmonary
+T17	Lesion-Description 691 697	nodule
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Lesion-Description:T17 has-Lesion-Anatomy:T16

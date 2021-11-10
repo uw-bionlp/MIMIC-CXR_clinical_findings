@@ -1,0 +1,22 @@
+T1	Medical-Problem 436 462	bilateral patchy opacities
+T2	Medical-Anatomy 463 495;497 520	predominantly in a perihilar and lower lobe distribution
+T3	Medical-Problem 542 570;572 577	moderate to severe pulmonary edema
+T4	Medical-Problem 580 588	Blunting
+T5	Medical-Anatomy 592 621	bilateral costophrenic angles
+T6	Medical-Assertion 622 637	likely reflects
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 638 643;645 662	small pleural effusions
+T8	Medical-Assertion 674 676	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 677 689	pneumothorax
+T10	Medical-Problem 710 744	Moderate to severe pulmonary edema
+E8	Medical-Problem:T10
+T11	Medical-Assertion 789 797	Probable
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 798 831	small bilateral pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

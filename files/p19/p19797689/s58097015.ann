@@ -1,0 +1,31 @@
+T1	Medical-Problem 432 446;448 459	stable cardiac enlargement
+E1	Medical-Problem:T1
+T2	Medical-Assertion 470 478	possibly
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 481 500	small hiatal hernia
+T4	Medical-Problem 521 539	increasing opacity
+T5	Medical-Anatomy 547 556	left base
+T6	Medical-Problem 598 622	increasing left effusion
+T7	Medical-Problem 633 655	airspace consolidation
+T8	Medical-Assertion 656 674;676 684	cannot be entirely excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 686 697	No evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 701 716	pulmonary edema
+T11	Medical-Problem 720 732	pneumothorax
+T12	Medical-Problem 766 787	Prominent right hilum
+E9	Medical-Problem:T12
+T13	Medical-Assertion 788 808	most likely reflects
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 809 818;820 831	prominent vasculature
+T15	Medical-Assertion 832 842	suggesting
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 843 885	underlying pulmonary arterial hypertension
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

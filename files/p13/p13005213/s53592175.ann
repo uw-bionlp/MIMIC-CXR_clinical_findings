@@ -1,0 +1,25 @@
+T1	Medical-Problem 241 245;247 269	near complete opacification
+T2	Medical-Anatomy 277 292	left hemithorax
+T3	Medical-Problem 298 321;323 327	some aerated left upper lung
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 330 337	Cardiac
+T5	Medical-Problem 352 372	deviated to the left
+T6	Medical-Assertion 373 383	suggesting
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 384 396;398 420	component of left-sided volume loss
+T8	Medical-Problem 559 578	Significant opacity
+T9	Medical-Anatomy 586 601	left hemithorax
+T10	Medical-Problem 608 634	leftward mediastinal shift
+T11	Medical-Assertion 635 645	suggesting
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 646 648	at
+T13	Medical-Problem 718 726	effusion
+E11	Medical-Problem:T13
+T14	Medical-Problem 730 739	infection
+E12	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

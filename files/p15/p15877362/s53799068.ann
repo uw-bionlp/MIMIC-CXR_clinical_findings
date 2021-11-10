@@ -1,0 +1,48 @@
+T1	Medical-Problem 289 302	calcification
+T2	Medical-Anatomy 310 315	aorta
+T3	Medical-Problem 329 344	atherosclerosis
+E3	Medical-Problem:T3
+T4	Medical-Problem 466 472;474 482	slight blunting
+T5	Medical-Anatomy 490 509	costophrenic angles
+T6	Medical-Assertion 512 514	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 515 527	pneumothorax
+T8	Medical-Assertion 547 549	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 551 578	acute osseous abnormalities
+T10	Lesion-Characteristic 597 617	partially visualized
+T11	Lesion-Characteristic 618 627	sclerotic
+T12	Lesion-Characteristic 630 653	nonaggressive appearing
+T13	Lesion-Description 654 660	lesion
+T14	Lesion-Anatomy 668 690	right proximal humerus
+T15	Medical-Assertion 692 698;700 712	likely representing
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 716 727	enchondroma
+E13	Medical-Problem:T16
+T17	Medical-Problem 733 745	bone infarct
+T18	Medical-Assertion 746 768	considered less likely
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 772 792	Degenerative changes
+T20	Medical-Anatomy 800 830	visualized thoracolumbar spine
+T21	Medical-Problem 851 859	Blunting
+T22	Medical-Anatomy 867 896	bilateral costophrenic angles
+T23	Medical-Assertion 904 917	may represent
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 918 923;925 942	trace pleural effusions
+T25	Medical-Problem 944 960	mild atelectasis
+T26	Medical-Problem 964 982	pleural thickening
+T27	Medical-Assertion 996 998	no
+A6	Medical-AssertionValue T27 absent
+T28	Medical-Problem 1000 1033	acute cardiopulmonary abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T15 has-Medical-Assertion:T18
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E20	Medical-Problem:T25 has-Medical-Assertion:T23
+E21	Medical-Problem:T26 has-Medical-Assertion:T23
+E22	Medical-Problem:T28 has-Medical-Assertion:T27

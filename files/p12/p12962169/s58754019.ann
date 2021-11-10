@@ -1,0 +1,22 @@
+T1	Medical-Problem 291 304	focal opacity
+T2	Medical-Anatomy 312 353	left lung base near the left heart border
+T3	Medical-Assertion 362 375	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 378 404	new or resolving pneumonia
+T5	Medical-Anatomy 420 428;430 446	inferior lingular segment
+T6	Medical-Assertion 458 460	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 461 477	pleural effusion
+T8	Medical-Problem 479 494	pulmonary edema
+T9	Medical-Problem 499 511	pneumothorax
+T10	Medical-Problem 580 584	Left
+E8	Medical-Problem:T10
+T11	Medical-Assertion 603 616	may represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 620 648	early or resolving pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,34 @@
+T1	Lesion-Count 36 47	Innumerable
+T2	Lesion-Anatomy 48 57	pulmonary
+T3	Lesion-Description 58 65	nodules
+T4	Lesion-Count 585 596	Innumerable
+T5	Lesion-Characteristic 597 602	round
+T6	Lesion-Description 603 610	nodules
+T7	Lesion-Anatomy 625 635	both lungs
+T8	Medical-Problem 673 693	Retrocardiac opacity
+E8	Medical-Problem:T8
+T9	Medical-Problem 733 747	Linear density
+T10	Medical-Anatomy 755 770	left lower lobe
+T11	Medical-Assertion 772 778	likely
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 779 790	atelectasis
+T13	Medical-Assertion 793 795	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 796 810	large effusion
+T15	Medical-Problem 814 826	pneumothorax
+T16	Medical-Assertion 905 907	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 908 912	free
+T18	Medical-Problem 913 926;928 947	air below the right hemidiaphragm
+E15	Medical-Problem:T18
+T19	Lesion-Count 968 979	Innumerable
+T20	Lesion-Anatomy 980 989	pulmonary
+T21	Lesion-Description 990 997	nodules
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Count:T4 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E18	Lesion-Description:T21 has-Lesion-Count:T19 has-Lesion-Anatomy:T20

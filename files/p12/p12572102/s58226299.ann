@@ -1,0 +1,21 @@
+T1	Medical-Problem 165 178	consolidation
+T2	Medical-Anatomy 186 208	base of the right lung
+T3	Medical-Problem 253 261	blunting
+T4	Medical-Anatomy 269 293	right costophrenic angle
+T5	Medical-Assertion 300 313	may be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 315 343	trace right pleural effusion
+T7	Medical-Assertion 420 431	no evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 435 447	pneumothorax
+T9	Medical-Problem 469 482	Consolidation
+T10	Medical-Anatomy 490 500	right base
+T11	Medical-Assertion 501 515	concerning for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 516 525	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

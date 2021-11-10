@@ -1,0 +1,25 @@
+T1	Medical-Problem 337 357	3-cm rounded opacity
+T2	Medical-Anatomy 379 390	right hilum
+T3	Lesion-Anatomy 438 443	hilar
+T4	Lesion-Description 444 459	lymphadenopathy
+T5	Lesion-Assertion 462 464	No
+A1	Lesion-AssertionValue T5 absent
+T6	Lesion-Size-Trend 465 468	new
+A2	Lesion-Size-TrendValue T6 new
+T7	Lesion-Anatomy 469 474	hilar
+T8	Lesion-Anatomy 478 489	mediastinal
+T9	Lesion-Description 490 494	mass
+T10	Medical-Assertion 575 577	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 578 585;587 595	pleural effusion
+T12	Medical-Problem 599 611	pneumothorax
+T13	Lesion-Size-Trend 680 697	Interval increase
+A4	Lesion-Size-TrendValue T13 increasing
+T14	Lesion-Anatomy 701 712	right hilar
+T15	Lesion-Description 713 717	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E7	Lesion-Description:T9 has-Lesion-Assertion:T5 has-Lesion-Size-Trend:T6 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Lesion-Description:T15 has-Lesion-Size-Trend:T13 has-Lesion-Anatomy:T14

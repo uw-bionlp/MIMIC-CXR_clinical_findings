@@ -1,0 +1,30 @@
+T1	Medical-Problem 285 302	Streaky opacities
+T2	Medical-Anatomy 310 324	left lung base
+T3	Medical-Assertion 325 333	suggests
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 334 339;341 359	minor unchanged scarring
+T5	Medical-Anatomy 405 410;412 431	right costophrenic sulcus
+E4	Medical-Anatomy:T5
+T6	Medical-Problem 433 454	Right basilar opacity
+E5	Medical-Problem:T6
+T7	Medical-Assertion 529 531	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 532 548	pleural effusion
+T9	Medical-Problem 552 564	pneumothorax
+T10	Lesion-Characteristic 580 590	widespread
+T11	Lesion-Characteristic 591 600	sclerotic
+T12	Lesion-Characteristic 601 609	skeletal
+T13	Lesion-Characteristic 610 614	bony
+T14	Lesion-Description 615 625	metastases
+T15	Medical-Problem 627 642;644 655	Right-sided rib deformities
+E13	Medical-Problem:T15
+T16	Medical-Problem 693 737	Continued decreased in right basilar opacity
+E14	Medical-Problem:T16
+T17	Lesion-Characteristic 771 776	Dense
+T18	Lesion-Description 786 796	metastases
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T13
+E16	Lesion-Description:T18 has-Lesion-Characteristic:T17

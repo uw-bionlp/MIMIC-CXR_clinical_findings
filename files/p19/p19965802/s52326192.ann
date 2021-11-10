@@ -1,0 +1,18 @@
+T1	Medical-Anatomy 571 576	lungs
+T2	Medical-Problem 627 642;644 651	residual patchy opacity
+T3	Medical-Anatomy 659 669	right base
+T4	Medical-Assertion 670 687	likely reflecting
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 688 708	residual atelectasis
+T6	Medical-Problem 721 741	small right effusion
+E5	Medical-Problem:T6
+T7	Medical-Assertion 744 746	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 747 759	pneumothorax
+T9	Medical-Assertion 762 764	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 777 792	pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

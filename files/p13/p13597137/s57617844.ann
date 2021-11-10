@@ -1,0 +1,18 @@
+T1	Medical-Assertion 247 249	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 250 262	pneumothorax
+T3	Medical-Problem 266 277	evidence of
+E2	Medical-Problem:T3
+T4	Medical-Problem 278 288	hemorrhage
+T5	Lesion-Size 336 340	5 cm
+T6	Lesion-Anatomy 341 357	right upper lobe
+T7	Lesion-Description 358 362	mass
+T8	Medical-Assertion 492 494	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 495 507	pneumothorax
+T10	Medical-Problem 511 527	pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

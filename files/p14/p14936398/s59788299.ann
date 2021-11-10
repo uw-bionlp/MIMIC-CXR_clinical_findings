@@ -1,0 +1,19 @@
+T1	Medical-Problem 60 89	Increased tracheal secretions
+E1	Medical-Problem:T1
+T2	Medical-Problem 166 186;188 201	new right lower lobe consolidation
+E2	Medical-Problem:T2
+T3	Medical-Assertion 202 223	highly suspicious for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 224 233	pneumonia
+T5	Medical-Problem 236 263	Bilateral pleural effusions
+E4	Medical-Problem:T5
+T6	Medical-Anatomy 395 411	Right lower lobe
+T7	Medical-Problem 412 425	consolidation
+T8	Medical-Assertion 427 446	likely representing
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 447 456	pneumonia
+T10	Medical-Problem 470 480	aspiration
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T8

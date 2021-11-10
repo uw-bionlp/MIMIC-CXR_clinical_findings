@@ -1,0 +1,27 @@
+T1	Medical-Problem 228 251;253 307	interval progression of pulmonary congestion and edema, now moderate to severe
+E1	Medical-Problem:T1
+T2	Medical-Problem 325 342	increased opacity
+T3	Medical-Anatomy 350 365	left lower lobe
+T4	Medical-Assertion 372 385	may represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 388 400;402 411	superimposed pneumonia
+T6	Medical-Assertion 414 416	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 417 431	large effusion
+T8	Medical-Problem 435 447	pneumothorax
+T9	Medical-Problem 564 588	Moderate pulmonary edema
+E7	Medical-Problem:T9
+T10	Medical-Problem 593 622	pulmonary vascular congestion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 625 633	Possible
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 634 638;640 664	left lower lobe consolidation
+T13	Medical-Assertion 665 680	could represent
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 683 705	superimposed pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T11 has-Medical-Assertion:T13

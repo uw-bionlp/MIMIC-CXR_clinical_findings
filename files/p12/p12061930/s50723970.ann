@@ -1,0 +1,15 @@
+T1	Medical-Problem 229 264	bilateral airspace patchy opacities
+T2	Medical-Anatomy 286 308	both lower lung fields
+T3	Medical-Anatomy 335 363;365 369	right middle and right lower lobe
+T4	Medical-Anatomy 388 430	left lower lobe in the retrocardiac region
+T5	Medical-Assertion 433 435	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 436 443;445 453	pleural effusion
+T7	Medical-Problem 457 469	pneumothorax
+T8	Medical-Problem 490 514	heart is mildly enlarged
+E7	Medical-Problem:T8
+T9	Medical-Problem 532 552	Multifocal pneumonia
+E8	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5

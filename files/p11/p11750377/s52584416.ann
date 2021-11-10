@@ -1,0 +1,35 @@
+T1	Medical-Problem 347 375	ill-defined opacity blunting
+T2	Medical-Anatomy 380 398	costophrenic angle
+T3	Medical-Assertion 400 407	without
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 410 430	clear fluid meniscus
+T5	Medical-Problem 446 462	pleural effusion
+T6	Medical-Assertion 488 490	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 491 507	pleural effusion
+T8	Medical-Anatomy 515 520	right
+T9	Medical-Assertion 539 541	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 542 554	pneumothorax
+T11	Medical-Problem 580 608	stable moderate cardiomegaly
+E8	Medical-Problem:T11
+T12	Medical-Problem 613 627;629 639	minimal aortic tortuosity
+E9	Medical-Problem:T12
+T13	Medical-Assertion 718 726	Probable
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 727 740	consolidation
+T15	Medical-Anatomy 748 763	left lower lobe
+T16	Medical-Assertion 795 810	might represent
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 811 822	atelectasis
+T18	Medical-Problem 834 852	focus of pneumonia
+T19	Medical-Assertion 853 859;861 872	cannot be excluded
+A6	Medical-AssertionValue T19 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T19

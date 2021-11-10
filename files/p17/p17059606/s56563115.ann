@@ -1,0 +1,15 @@
+T1	Medical-Problem 228 249;251 289	bilateral, right more than left prominence of pulmonary hila
+T2	Medical-Anatomy 309 328;330 341	lower aspect of the right hilus
+T3	Medical-Problem 383 407	dilated pulmonary artery
+E3	Medical-Problem:T3
+T4	Lesion-Characteristic 420 433	non-calcified
+T5	Lesion-Anatomy 434 443	pulmonary
+T6	Lesion-Description 444 450	nodule
+T7	Medical-Assertion 509 511	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 512 528	pleural effusion
+T9	Medical-Problem 532 544	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7

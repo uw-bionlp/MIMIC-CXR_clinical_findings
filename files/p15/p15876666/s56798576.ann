@@ -1,0 +1,29 @@
+T1	Medical-Problem 410 434	new retrocardiac opacity
+T2	Medical-Assertion 441 455	likely reflect
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 513 522	pneumonia
+T4	Medical-Assertion 523 541	cannot be excluded
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 587 603	minimal blunting
+T6	Medical-Anatomy 611 634	left costophrenic sinus
+T7	Medical-Assertion 641 656	could represent
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 659 664;666 682	small pleural effusion
+T9	Medical-Assertion 751 753	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 754 773	other abnormalities
+T11	Medical-Assertion 776 778	No
+A5	Medical-AssertionValue T11 absent
+T12	Medical-Problem 779 794	pulmonary edema
+T13	Medical-Problem 796 806	Borderline
+E8	Medical-Problem:T13
+T14	Medical-Assertion 841 843	No
+A6	Medical-AssertionValue T14 absent
+T15	Medical-Problem 844 856	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E2	Medical-Problem:T3 has-Medical-Assertion:T4
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T15 has-Medical-Assertion:T14

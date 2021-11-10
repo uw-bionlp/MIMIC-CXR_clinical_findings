@@ -1,0 +1,20 @@
+T1	Medical-Assertion 348 350	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 351 358;360 368	pleural effusion
+T3	Medical-Problem 372 384	pneumothorax
+T4	Lesion-Description 427 434;436 441	nodular focus
+E3	Lesion-Description:T4
+T5	Lesion-Anatomy 524 528	lung
+T6	Lesion-Description 529 535	nodule
+T7	Lesion-Assertion 536 556	should be considered
+A2	Lesion-AssertionValue T7 possible
+T8	Medical-Assertion 587 598	No evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 602 615	acute disease
+T10	Lesion-Description 628 634	nodule
+T11	Lesion-Anatomy 656 670	right mid lung
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Lesion-Description:T10 has-Lesion-Anatomy:T11

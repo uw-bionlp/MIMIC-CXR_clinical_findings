@@ -1,0 +1,35 @@
+T1	Medical-Problem 150 166	increase opacity
+T2	Medical-Anatomy 174 184	right apex
+T3	Medical-Assertion 191 204	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 205 213	scarring
+T5	Lesion-Assertion 222 226	less
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 234 238	mass
+T7	Medical-Anatomy 244 249	lungs
+T8	Medical-Assertion 275 286	no evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 293 306	consolidation
+T10	Medical-Problem 308 316	effusion
+T11	Medical-Problem 321 333	pneumothorax
+T12	Medical-Assertion 386 388	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 389 404	acute fractures
+T14	Medical-Problem 450 466	increase opacity
+T15	Medical-Anatomy 474 484	right apex
+T16	Medical-Assertion 491 504	may represent
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 505 513	scarring
+T18	Lesion-Assertion 522 526	less
+A6	Lesion-AssertionValue T18 possible
+T19	Lesion-Description 534 538	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Lesion-Description:T6 has-Lesion-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E13	Lesion-Description:T19 has-Lesion-Assertion:T18

@@ -1,0 +1,19 @@
+T1	Medical-Problem 172 193	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 216 232	low lung volumes
+E2	Medical-Problem:T2
+T3	Medical-Problem 235 245;247 256	Increasing opacities
+T4	Medical-Anatomy 264 279	left lower lobe
+T5	Medical-Assertion 280 295	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 296 318	increasing atelectasis
+T7	Medical-Problem 324 334	aspiration
+T8	Medical-Assertion 335 356	could also be present
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 370 397	small left pleural effusion
+E7	Medical-Problem:T9
+T10	Medical-Problem 499 518	Widened mediastinum
+E8	Medical-Problem:T10
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8

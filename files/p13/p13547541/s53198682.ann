@@ -1,0 +1,24 @@
+T1	Medical-Anatomy 210 215	lungs
+T2	Medical-Assertion 220 225	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 229 242	consolidation
+T4	Medical-Problem 246 254	effusion
+T5	Lesion-Size 267 272	small
+T6	Lesion-Anatomy 273 284;286 290	right upper lung
+T7	Lesion-Description 291 297	nodule
+T8	Lesion-Anatomy 318 353	anterior right first rib interspace
+T9	Lesion-Size-Trend 396 405	unchanged
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Problem 452 477	acute osseous abnormality
+E8	Medical-Problem:T10
+T11	Medical-Assertion 512 514	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 515 544	acute cardiopulmonary process
+T13	Medical-Assertion 546 548	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 549 558	pneumonia
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

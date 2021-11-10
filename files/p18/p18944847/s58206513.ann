@@ -1,0 +1,24 @@
+T1	Medical-Problem 316 338	Complete opacification
+T2	Medical-Anatomy 346 361	left hemithorax
+T3	Medical-Problem 424 465	persistent consolidative airspace process
+T4	Medical-Anatomy 474 497	right mid to lower lung
+T5	Medical-Assertion 504 527	would be concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 528 537	pneumonia
+T7	Medical-Assertion 540 542	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 544 559	pulmonary edema
+T9	Medical-Assertion 579 590	no evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 596 608	pneumothorax
+T11	Medical-Assertion 611 613	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 614 619;621 635	large right effusion
+T13	Medical-Problem 697 735	leftward cardiac and mediastinal shift
+E9	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

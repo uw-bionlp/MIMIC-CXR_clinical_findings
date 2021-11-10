@@ -1,0 +1,25 @@
+T1	Medical-Problem 211 228;230 240	mild interstitial prominence
+E1	Medical-Problem:T1
+T2	Lesion-Description 246 255	opacities
+T3	Lesion-Anatomy 263 279	right lower lobe
+T4	Medical-Anatomy 404 413	Left lung
+T5	Medical-Problem 427 456	chronic interstitial markings
+T6	Medical-Assertion 461 463;465 473	no evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 477 486	pneumonia
+T8	Medical-Assertion 489 491	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 492 508	pleural effusion
+T10	Medical-Problem 512 524	pneumothorax
+T11	Medical-Problem 578 588	prominence
+T12	Medical-Anatomy 596 612;614 635	right lower lobe interstitial markings
+T13	Medical-Assertion 636 660	could be consistent with
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 664 691	early or atypical pneumonia
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

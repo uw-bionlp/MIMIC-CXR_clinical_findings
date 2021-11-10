@@ -1,0 +1,19 @@
+T1	Medical-Problem 525 550	Postoperative alterations
+T2	Medical-Anatomy 558 587	left chest wall and left lung
+T3	Medical-Problem 604 637	Asymmetrical interstitial pattern
+T4	Medical-Anatomy 638 676	predominantly involving the right lung
+T5	Medical-Assertion 681 694	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 695 713	asymmetrical edema
+T7	Medical-Problem 723 741	atypical pneumonia
+T8	Medical-Assertion 742 757;759 766	could produce a similar
+A2	Medical-AssertionValue T8 possible
+T9	Lesion-Anatomy 785 801	right lower lobe
+T10	Lesion-Description 802 806	mass
+T11	Medical-Problem 879 907	small right pleural effusion
+E9	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T9

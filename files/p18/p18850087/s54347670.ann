@@ -1,0 +1,33 @@
+T1	Medical-Problem 274 283	elevation
+T2	Medical-Anatomy 291 310	right hemidiaphragm
+T3	Medical-Problem 312 320	aeration
+T4	Medical-Anatomy 328 333;335 344	right lung base
+T5	Medical-Problem 363 371	at least
+E5	Medical-Problem:T5
+T6	Medical-Problem 374 402	small right pleural effusion
+T7	Medical-Problem 407 412;414 425	basal atelectasis
+T8	Medical-Problem 432 443	atelectasis
+E8	Medical-Problem:T8
+T9	Medical-Problem 479 506	Heterogeneous opacification
+T10	Medical-Anatomy 514 528	left lung base
+T11	Medical-Assertion 532 540	probably
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 559 570	atelectasis
+T13	Medical-Problem 575 591	pleural effusion
+T14	Medical-Problem 601 631;633 646	increase in the volume of left pleural fluid
+E13	Medical-Problem:T14
+T15	Medical-Problem 802 809	pleural
+E14	Medical-Problem:T15
+T16	Medical-Assertion 847 849	no
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 851 866	pulmonary edema
+T18	Medical-Problem 870 882	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T4
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T18 has-Medical-Assertion:T16

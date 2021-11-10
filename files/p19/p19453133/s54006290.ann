@@ -1,0 +1,31 @@
+T1	Lesion-Assertion 213 223	suggestion
+A1	Lesion-AssertionValue T1 possible
+T2	Lesion-Size-Trend 229 232	new
+A2	Lesion-Size-TrendValue T2 new
+T3	Lesion-Size 233 238	11 mm
+T4	Lesion-Description 244 250	nodule
+T5	Lesion-Anatomy 258 275;277 313	right mid lung at the level of the fourth anterior rib
+T6	Medical-Problem 348 353;355 382	Heart size is borderline enlarged
+E4	Medical-Problem:T6
+T7	Medical-Assertion 411 413	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 414 430	pleural effusion
+T9	Lesion-Characteristic 435 443	evidence
+T10	Lesion-Characteristic 447 454	central
+T11	Lesion-Description 455 465	adenopathy
+T12	Medical-Problem 468 497	Atherosclerotic calcification
+T13	Medical-Anatomy 505 510;512 537	aorta and head and neck vessels
+T14	Medical-Assertion 559 561	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 562 570	aneurysm
+T16	Lesion-Description 608 614	nodule
+E12	Lesion-Description:T16
+T17	Medical-Assertion 626 634	could be
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 635 647	inflammatory
+E2	Lesion-Description:T4 has-Lesion-Assertion:T1 has-Lesion-Size-Trend:T2 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T18 has-Medical-Assertion:T17

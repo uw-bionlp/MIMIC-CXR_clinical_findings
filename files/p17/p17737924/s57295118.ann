@@ -1,0 +1,22 @@
+T1	Medical-Problem 200 220	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Assertion 236 238	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 239 254	focal opacities
+T4	Lesion-Description 258 265;267 274	nodular opacity
+T5	Lesion-Anatomy 275 323	just below the margin of the right hemidiaphragm
+T6	Lesion-Characteristic 338 347	calcified
+T7	Lesion-Description 348 357	granuloma
+T8	Medical-Assertion 443 445	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 446 462	pleural effusion
+T10	Medical-Problem 466 478	pneumothorax
+T11	Medical-Assertion 569 580	No evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 584 613	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

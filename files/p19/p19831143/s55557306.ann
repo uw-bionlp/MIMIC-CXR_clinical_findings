@@ -1,0 +1,38 @@
+T1	Lesion-Anatomy 144 160	right upper lobe
+T2	Lesion-Description 161 167	nodule
+T3	Lesion-Anatomy 249 263	intrapulmonary
+T4	Lesion-Description 264 274	lymph node
+T5	Medical-Problem 293 310	diffuse emphysema
+T6	Medical-Problem 316 329	overexpansion
+T7	Medical-Anatomy 337 342	lungs
+T8	Medical-Assertion 344 346	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 347 363	pleural effusion
+T10	Medical-Problem 368 380	pneumothorax
+T11	Medical-Assertion 383 385	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 386 413	acute osseous abnormalities
+T13	Medical-Anatomy 422 427	lungs
+T14	Medical-Problem 441 461	focal consolidations
+T15	Medical-Problem 467 488;490 499	ill defined bibasilar opacities
+T16	Medical-Assertion 518 531	may relate to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 532 547	chronic changes
+T18	Medical-Problem 551 565;567 573	overlying soft tissue
+T19	Medical-Problem 575 584	Infection
+T20	Medical-Problem 588 598	aspiration
+T21	Medical-Assertion 602 614	not excluded
+A4	Medical-AssertionValue T21 possible
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T7
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T13 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T13 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T21
+E17	Medical-Problem:T20 has-Medical-Assertion:T21

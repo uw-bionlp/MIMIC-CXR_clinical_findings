@@ -1,0 +1,37 @@
+T1	Medical-Problem 256 285	Heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 292 297	aorta
+T3	Medical-Problem 301 318	slightly tortuous
+T4	Medical-Problem 325 355	atherosclerotic calcifications
+T5	Medical-Anatomy 369 373	arch
+T6	Medical-Anatomy 409 430	pulmonary vasculature
+T7	Medical-Assertion 434 437	not
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 438 446	engorged
+T9	Medical-Problem 449 466	Streaky opacities
+T10	Medical-Anatomy 485 495	lung bases
+T11	Medical-Assertion 496 503	without
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 504 523	focal consolidation
+T13	Medical-Assertion 526 528	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 529 545	pleural effusion
+T15	Medical-Problem 549 561	pneumothorax
+T16	Medical-Assertion 577 579	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 580 607	acute osseous abnormalities
+T18	Medical-Problem 633 650	Streaky opacities
+T19	Medical-Anatomy 658 668	lung bases
+T20	Medical-Assertion 670 676	likely
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 677 688	atelectasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

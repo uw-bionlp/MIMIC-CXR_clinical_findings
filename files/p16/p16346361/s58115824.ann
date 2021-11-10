@@ -1,0 +1,36 @@
+T1	Medical-Assertion 331 333	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 334 351	new abnormalities
+T3	Lesion-Anatomy 399 408	left lung
+T4	Lesion-Description 409 415	nodule
+T5	Lesion-Anatomy 423 461	level of the left eighth posterior rib
+T6	Lesion-Size-Trend 466 470	less
+A2	Lesion-Size-TrendValue T6 decreasing
+T7	Medical-Assertion 500 502	no
+A3	Medical-AssertionValue T7 absent
+T8	Lesion-Size-Trend 503 506	new
+A4	Lesion-Size-TrendValue T8 new
+T9	Lesion-Description 507 514	nodules
+T10	Medical-Problem 516 540	interstitial abnormality
+T11	Medical-Problem 546 563	new consolidation
+T12	Medical-Problem 565 588	Lung volumes remain low
+E8	Medical-Problem:T12
+T13	Medical-Problem 602 612	thickening
+T14	Medical-Anatomy 621 667	pleural surfaces particularly the right costal
+T15	Medical-Assertion 673 675	no
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 676 692	pleural effusion
+T17	Medical-Problem 718 731	Mild widening
+T18	Medical-Anatomy 739 750	mediastinum
+T19	Medical-Assertion 918 920	no
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 921 936	abnormal tissue
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T6
+E5	Lesion-Description:T9 has-Lesion-Size-Trend:T8
+E6	Medical-Problem:T10 has-Medical-Assertion:T7
+E7	Medical-Problem:T11 has-Medical-Assertion:T7
+E9	Medical-Problem:T13 has-Medical-Anatomy:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T18
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

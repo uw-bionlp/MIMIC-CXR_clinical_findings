@@ -1,0 +1,20 @@
+T1	Lesion-Anatomy 267 282	left upper lobe
+T2	Lesion-Description 283 287	mass
+T3	Lesion-Assertion 291 294	not
+A1	Lesion-AssertionValue T3 absent
+T4	Medical-Problem 329 338	opacities
+T5	Medical-Anatomy 346 361	left upper lobe
+T6	Medical-Assertion 362 372	can be and
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 421 423	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 424 439	pulmonary edema
+T9	Medical-Problem 441 457	pleural effusion
+T10	Medical-Problem 462 474	pneumothorax
+T11	Medical-Problem 547 557	upper lobe
+E8	Medical-Problem:T11
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T7

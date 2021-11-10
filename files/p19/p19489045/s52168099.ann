@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 219 224	Lungs
+T2	Medical-Problem 229 247	hyperinflated with
+E2	Medical-Problem:T2
+T3	Medical-Problem 249 269	flattened diaphragms
+T4	Medical-Assertion 270 280	suggesting
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 281 285	COPD
+T6	Medical-Anatomy 288 293	Lungs
+T7	Medical-Assertion 304 311	without
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 312 317;319 332	focal consolidation
+T9	Medical-Problem 334 348	large effusion
+T10	Medical-Problem 352 364	pneumothorax
+T11	Medical-Assertion 443 445	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 446 454	free air
+T13	Medical-Anatomy 465 470;472 485	right hemidiaphragm
+T14	Medical-Problem 506 510	COPD
+E11	Medical-Problem:T14
+T15	Medical-Assertion 512 514	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 515 537	superimposed pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

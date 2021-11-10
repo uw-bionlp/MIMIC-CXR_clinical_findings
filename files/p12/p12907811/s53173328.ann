@@ -1,0 +1,30 @@
+T1	Medical-Problem 286 320	mildly enlarged cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Assertion 364 366	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 367 389	large pleural effusion
+T4	Medical-Problem 393 405	pneumothorax
+T5	Medical-Problem 408 417;419 429	Increased prominence
+T6	Medical-Anatomy 437 454	left heart border
+T7	Medical-Problem 472 482	___ effect
+T8	Medical-Problem 496 513	pneumomediastinum
+E7	Medical-Problem:T8
+T9	Medical-Assertion 581 597	without evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 601 609	free air
+T11	Medical-Problem 613 629	subcutaneous gas
+T12	Lesion-Size 636 641	large
+T13	Lesion-Characteristic 643 653	cavitating
+T14	Lesion-Anatomy 654 669	left lower lobe
+T15	Lesion-Description 670 674	mass
+T16	Medical-Assertion 802 818	without evidence
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 822 834	complication
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E13	Lesion-Description:T15 has-Lesion-Size-Present:T12 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

@@ -1,0 +1,26 @@
+T1	Medical-Problem 612 634	volumes are diminished
+T2	Medical-Problem 648 666	increasing opacity
+T3	Medical-Anatomy 671 706	both bases, left greater than right
+T4	Medical-Problem 726 737	atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Problem 749 769	developing pneumonia
+T6	Medical-Anatomy 790 799	left base
+T7	Medical-Assertion 800 809;811 821	should be considered
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 823 831	Crowding
+E7	Medical-Problem:T8
+T9	Medical-Assertion 873 884	no evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 889 904	pulmonary edema
+T11	Medical-Assertion 907 909	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 910 922	pneumothorax
+T13	Medical-Assertion 1020 1022	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1023 1038	large effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

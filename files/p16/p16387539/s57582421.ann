@@ -1,0 +1,23 @@
+T1	Medical-Problem 502 512;514 542	associated predominately linear opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 558 575	likely reflecting
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 576 589;591 612	postoperative changes with scarring
+T4	Medical-Problem 655 665;667 690	Increasing areas of patchy opacity
+T5	Medical-Anatomy 694 709	both lung bases
+T6	Medical-Problem 730 741	atelectasis
+T7	Medical-Problem 756 774	infectious process
+T8	Medical-Assertion 775 802	cannot be entirely excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 844 846	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 847 862	large effusions
+T11	Medical-Assertion 865 867	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 868 880	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

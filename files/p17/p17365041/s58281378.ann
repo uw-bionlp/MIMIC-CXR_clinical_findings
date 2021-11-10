@@ -1,0 +1,27 @@
+T1	Medical-Problem 275 304	Heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 420 429;431 448	bilateral pleural effusions
+E2	Medical-Problem:T2
+T3	Medical-Problem 529 558	area of linear focal scarring
+T4	Medical-Anatomy 571 580;582 586	left lung base
+T5	Medical-Assertion 589 591	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 592 604	pneumothorax
+T7	Lesion-Characteristic 627 636	expansile
+T8	Lesion-Description 637 643	lesion
+T9	Lesion-Anatomy 651 655	left
+T10	Medical-Anatomy 661 675	posterolateral
+E9	Medical-Anatomy:T10
+T11	Medical-Problem 782 819	Improving bilateral pleural effusions
+E10	Medical-Problem:T11
+T12	Lesion-Characteristic 826 835	Expansile
+T13	Lesion-Description 836 842	lesion
+T14	Lesion-Anatomy 850 877	left ___ posterolateral rib
+T15	Medical-Assertion 931 948	likely represents
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 951 972;974 982	healed pathologic rib fracture
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E12	Lesion-Description:T13 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T15

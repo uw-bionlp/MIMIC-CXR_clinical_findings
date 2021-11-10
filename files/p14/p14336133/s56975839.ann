@@ -1,0 +1,22 @@
+T1	Medical-Anatomy 276 281	Lungs
+T2	Medical-Problem 286 298	hypoinflated
+T3	Medical-Problem 304 325	heterogeneous opacity
+T4	Medical-Anatomy 333 347	left lung base
+T5	Medical-Problem 374 385	atelectasis
+T6	Medical-Assertion 396 398	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 399 415	pleural effusion
+T8	Medical-Problem 419 431	pneumothorax
+T9	Medical-Problem 554 570	Low lung volumes
+E8	Medical-Problem:T9
+T10	Medical-Problem 576 613	heterogeneous left lower lobe opacity
+E9	Medical-Problem:T10
+T11	Medical-Assertion 614 620;622 634	likely representing
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 635 646	atelectasis
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T1
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,27 @@
+T1	Medical-Problem 228 259	stable postoperative appearance
+T2	Medical-Anatomy 267 282	left hemithorax
+T3	Lesion-Assertion 377 379	no
+A1	Lesion-AssertionValue T3 absent
+T4	Lesion-Size-Trend 380 383	new
+A2	Lesion-Size-TrendValue T4 new
+T5	Lesion-Anatomy 384 393	pulmonary
+T6	Lesion-Description 394 401	nodules
+T7	Lesion-Description 405 411	masses
+T8	Lesion-Anatomy 434 438	lung
+T9	Medical-Assertion 452 454	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 455 472	pleural effusions
+T11	Medical-Problem 476 499	acute skeletal findings
+T12	Medical-Problem 517 548	Stable postoperative appearance
+E9	Medical-Problem:T12
+T13	Lesion-Assertion 567 578	no findings
+A4	Lesion-AssertionValue T13 absent
+T14	Lesion-Characteristic 591 596	local
+T15	Lesion-Anatomy 611 620	pulmonary
+T16	Lesion-Description 621 631	metastases
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Size-Trend:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T8
+E5	Lesion-Description:T7 has-Lesion-Assertion:T3 has-Lesion-Size-Trend:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E12	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15

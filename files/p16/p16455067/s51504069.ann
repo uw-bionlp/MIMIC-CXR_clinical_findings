@@ -1,0 +1,24 @@
+T1	Medical-Assertion 143 150	Suspect
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 151 155;157 177	left lower lobe pneumonia
+T3	Medical-Problem 236 263	Peribronchial opacification
+T4	Medical-Anatomy 267 282	both lung bases
+T5	Medical-Problem 488 507	heavy calcification
+T6	Medical-Anatomy 515 529;531 571	mitral annulus possibly extending into the mitral valve
+T7	Medical-Problem 618 642	calcific aortic stenosis
+E6	Medical-Problem:T7
+T8	Medical-Anatomy 686 707	pulmonary vasculature
+T9	Medical-Assertion 711 714	not
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 715 723	engorged
+T11	Medical-Problem 728 742	Hyperinflation
+T12	Medical-Problem 747 768	deficient vasculature
+T13	Medical-Anatomy 776 787	upper lungs
+T14	Medical-Problem 809 818	emphysema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T13
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13

@@ -1,0 +1,29 @@
+T1	Medical-Problem 46 59	Opacification
+T2	Medical-Anatomy 67 106	superior segment of the left lower lobe
+T3	Medical-Assertion 141 155	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 156 165	pneumonia
+T5	Lesion-Anatomy 572 577	hilar
+E4	Lesion-Anatomy:T5
+T6	Medical-Problem 612 633	opacity/consolidation
+T7	Medical-Anatomy 641 657	superior segment
+T8	Medical-Anatomy 665 680	left lower lobe
+T9	Medical-Assertion 720 727	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 728 735	pleural
+E8	Medical-Problem:T10
+T11	Medical-Problem 736 744	effusion
+T12	Medical-Problem 748 760	pneumothorax
+T13	Medical-Problem 781 794	Opacification
+T14	Medical-Anatomy 802 821	superior segment of
+T15	Medical-Anatomy 831 841	lower lobe
+T16	Medical-Assertion 843 858;860 864	most consistent with
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 865 874	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

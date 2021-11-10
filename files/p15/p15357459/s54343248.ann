@@ -1,0 +1,19 @@
+T1	Medical-Assertion 316 318	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 319 331	pneumothorax
+T3	Medical-Problem 401 410;412 415	Unchanged low
+E2	Medical-Problem:T3
+T4	Medical-Problem 431 462	Unchanged moderate cardiomegaly
+T5	Medical-Problem 468 479	atelectasis
+T6	Medical-Anatomy 488 503	left lung bases
+T7	Medical-Assertion 506 515	Potential
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 516 550	small pleural effusion on the left
+T9	Medical-Assertion 552 554	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 555 560;562 578	right pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T6
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

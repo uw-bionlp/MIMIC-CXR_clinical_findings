@@ -1,0 +1,27 @@
+T1	Medical-Problem 382 408	worsening airspace disease
+T2	Medical-Anatomy 420 430	right lung
+T3	Medical-Problem 443 470	increasing airspace disease
+T4	Medical-Anatomy 482 491	left lung
+T5	Medical-Assertion 509 515;517 524	either reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 527 556	worsening bilateral pneumonia
+T7	Medical-Problem 569 584	pulmonary edema
+T8	Medical-Problem 713 731	persistent opacity
+T9	Medical-Anatomy 739 748	left base
+T10	Medical-Problem 772 780	effusion
+T11	Medical-Problem 822 826;828 862	Lung volumes remain markedly diminished
+E10	Medical-Problem:T11
+T12	Medical-Assertion 865 867	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 868 882	right effusion
+T14	Medical-Assertion 893 895	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 897 909	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

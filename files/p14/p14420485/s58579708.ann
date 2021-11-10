@@ -1,0 +1,17 @@
+T1	Medical-Assertion 375 386	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 390 404;406 418	post procedure pneumothorax
+T3	Medical-Problem 502 512	tortuosity
+T4	Medical-Anatomy 520 525	aorta
+T5	Medical-Assertion 534 540	may be
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 541 558;560 585	mild elevation of pulmonary venous pressure
+T7	Medical-Assertion 586 593	without
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 594 615	acute focal pneumonia
+T9	Medical-Problem 619 635	pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T5 has-Medical-Assertion:T7

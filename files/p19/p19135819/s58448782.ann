@@ -1,0 +1,18 @@
+T1	Medical-Problem 341 377	Widespread consolidative abnormality
+T2	Medical-Anatomy 385 395	right lung
+T3	Medical-Problem 424 462	new perihilar interstitial abnormality
+T4	Medical-Anatomy 470 479	left lung
+T5	Medical-Problem 520 535	pulmonary edema
+T6	Medical-Problem 545 565	concurrent pneumonia
+T7	Medical-Problem 581 605	Cardiomegaly is moderate
+E7	Medical-Problem:T7
+T8	Medical-Problem 608 639	Right pleural effusion is small
+E8	Medical-Problem:T8
+T9	Medical-Assertion 642 644	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 646 658	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E9	Medical-Problem:T10 has-Medical-Assertion:T9

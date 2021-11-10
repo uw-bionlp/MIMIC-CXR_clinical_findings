@@ -1,0 +1,23 @@
+T1	Medical-Problem 230 264	Mild pulmonary vascular congestion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 286 288	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 289 304	pulmonary edema
+T4	Medical-Problem 338 365	Heterogeneous opacification
+T5	Medical-Anatomy 373 384;386 395	base of the left lung
+T6	Medical-Assertion 396 404	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 405 420	early pneumonia
+T8	Medical-Problem 455 459;461 472	mild atelectasis
+T9	Medical-Problem 479 506	small left pleural effusion
+T10	Medical-Problem 594 611	Mild cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Assertion 622 624	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 625 637	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,19 @@
+T1	Medical-Problem 212 233	Peribronchial cuffing
+T2	Medical-Anatomy 253 269	perihilar region
+T3	Medical-Problem 276 293	confluent opacity
+T4	Medical-Anatomy 309 314;316 349	right lower lobe in the infrahilar area
+T5	Medical-Assertion 361 363	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 364 380	pleural effusion
+T7	Medical-Problem 385 397	pneumothorax
+T8	Medical-Problem 468 511	Peribronchial cuffing suggetsing bronchitis
+T9	Medical-Assertion 517 525	possible
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 526 531;533 551	early focus of pneumonia
+T11	Medical-Anatomy 559 575	right lower lobe
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T11
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11

@@ -1,0 +1,35 @@
+T1	Medical-Problem 366 375;377 402	increased multifocal opacifications
+T2	Medical-Anatomy 431 455;457 470	right upper lung and the left mid lung
+T3	Medical-Assertion 485 498	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 499 525	asymmetric pulmonary edema
+T5	Medical-Assertion 536 550	concerning for
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 551 571	multifocal pneumonia
+T7	Medical-Assertion 573 586	likely due to
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 587 597	aspiration
+T9	Medical-Assertion 659 661	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 662 676	pneumothoraces
+T11	Medical-Problem 809 845	Background worsening pulmonary edema
+E7	Medical-Problem:T11
+T12	Medical-Problem 847 867;869 883	increased multifocal opacifications
+E8	Medical-Problem:T12
+T13	Medical-Assertion 884 898	concerning for
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 899 908	pneumonia
+T15	Medical-Assertion 910 923	likely due to
+A6	Medical-AssertionValue T15 possible
+T16	Medical-Problem 924 934	aspiration
+T17	Medical-Assertion 937 939	No
+A7	Medical-AssertionValue T17 absent
+T18	Medical-Problem 941 953	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T16 has-Medical-Assertion:T13 has-Medical-Assertion:T15
+E11	Medical-Problem:T18 has-Medical-Assertion:T17

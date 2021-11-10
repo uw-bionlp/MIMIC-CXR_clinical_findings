@@ -1,0 +1,39 @@
+T1	Medical-Problem 102 105;107 117	new  elevation
+T2	Medical-Anatomy 125 143	left hemidiaphragm
+T3	Medical-Problem 148 171	increased opacification
+T4	Medical-Anatomy 181 200	retrocardiac region
+T5	Medical-Assertion 202 225	which likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 226 237	atelectasis
+T7	Medical-Problem 247 257;259 269	underlying  pneumonia
+T8	Medical-Assertion 270 299	cannot be completely excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 332 334	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 337 359	large pleural effusion
+T11	Medical-Problem 363 375	pneumothorax
+T12	Medical-Problem 798 821	Increased opacification
+T13	Medical-Anatomy 825 840	both lung bases
+T14	Medical-Assertion 844 857	likely due to
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 876 900	subsegmental atelectasis
+T16	Medical-Problem 905 937	prominent overlying soft tissues
+T17	Medical-Assertion 949 951	no
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 953 965	pneumothorax
+T19	Medical-Assertion 1045 1047	No
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1048 1056	definite
+E14	Medical-Problem:T20
+T21	Medical-Problem 1082 1091	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T21 has-Medical-Assertion:T19

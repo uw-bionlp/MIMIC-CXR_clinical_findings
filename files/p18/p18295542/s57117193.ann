@@ -1,0 +1,37 @@
+T1	Medical-Problem 300 317;319 328	bilateral pleural effusions
+T2	Medical-Problem 334 348	linear opacity
+T3	Medical-Anatomy 356 370	left lung base
+T4	Medical-Assertion 425 442	likely represents
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 443 454	atelectasis
+T6	Medical-Problem 474 501	bibasilar, patchy opacities
+E5	Medical-Problem:T6
+T7	Lesion-Description 581 596	nodular regions
+T8	Lesion-Anatomy 604 609;611 626	right peripheral lung
+T9	Medical-Assertion 631 639	possible
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 640 660	retrocardiac opacity
+T11	Medical-Assertion 717 734	may be consistent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 740 749	pneumonia
+T13	Medical-Assertion 752 754	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 756 768	pneumothorax
+T15	Medical-Problem 863 889	bilateral pleural effusion
+E11	Medical-Problem:T15
+T16	Medical-Problem 894 913	bilateral opacities
+E12	Medical-Problem:T16
+T17	Medical-Anatomy 916 928	Retrocardiac
+T18	Medical-Problem 930 937	opacity
+T19	Medical-Assertion 976 989	may represent
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 990 999	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T18 has-Medical-Anatomy:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

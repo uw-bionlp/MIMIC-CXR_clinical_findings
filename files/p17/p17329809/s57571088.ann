@@ -1,0 +1,26 @@
+T1	Medical-Problem 303 330	Large left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 397 425	Small right pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 457 477	expected atelectasis
+T4	Medical-Anatomy 485 500	left lower lobe
+T5	Medical-Problem 518 538	substantial aeration
+T6	Medical-Anatomy 546 555	left lung
+T7	Medical-Problem 557 588	Moderate to large hiatus hernia
+E7	Medical-Problem:T7
+T8	Medical-Anatomy 608 625	Left heart border
+T9	Medical-Problem 629 637	obscured
+T10	Medical-Problem 641 654	pleural fluid
+T11	Medical-Anatomy 707 744	Mediastinal and pulmonary vasculature
+T12	Medical-Assertion 750 753	not
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 754 762	engorged
+T14	Lesion-Size 848 852	2 cm
+T15	Lesion-Description 854 858	mass
+T16	Lesion-Anatomy 866 915	superior segment of the collapsed left lower lobe
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E9	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Medical-Problem:T10 has-Medical-Anatomy:T8
+E12	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E14	Lesion-Description:T15 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T16

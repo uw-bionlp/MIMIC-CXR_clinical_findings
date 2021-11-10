@@ -1,0 +1,54 @@
+T1	Medical-Problem 407 417	prominence
+T2	Medical-Anatomy 422 433	right hilum
+T3	Medical-Assertion 496 504	Question
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 505 512;514 538	minimal increased patchy opacity
+T5	Medical-Anatomy 546 589	right mid zone laterally, immediately above
+T6	Medical-Problem 595 627	slightly thickened minor fissure
+T7	Medical-Problem 630 649	Minimal atelectasis
+T8	Medical-Anatomy 657 667	right base
+T9	Medical-Problem 673 690	slight prominence
+T10	Medical-Anatomy 698 729	right paratracheal soft tissues
+T11	Medical-Assertion 734 736	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 737 758	definite pneumothorax
+T13	Medical-Anatomy 780 790	left  lung
+T14	Medical-Assertion 809 816	without
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 817 829	pneumothorax
+T16	Medical-Assertion 830 837	without
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 838 845;847 859	obvious pneumothorax
+T18	Medical-Problem 862 881	Minimal atelectasis
+T19	Medical-Anatomy 882 896	left lung base
+T20	Medical-Problem 943 948	gross
+E16	Medical-Problem:T20
+T21	Medical-Assertion 981 989	Question
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 990 1012;1014 1021	minimal increased hazy opacity
+T23	Medical-Anatomy 1029 1053	right mid zone laterally
+T24	Medical-Assertion 1106 1108	No
+A6	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1109 1129	obvious pneumothorax
+T26	Medical-Anatomy 1146 1156	right lung
+T27	Medical-Assertion 1159 1170	Possibility
+A7	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1176 1180;1182 1201	tiny occult pneumothorax
+T29	Medical-Assertion 1202 1229	cannot be entirely excluded
+A8	Medical-AssertionValue T29 possible
+T30	Medical-Assertion 1234 1236	No
+A9	Medical-AssertionValue T30 absent
+T31	Medical-Problem 1237 1259	right pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Anatomy:T13 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21 has-Medical-Anatomy:T23
+E19	Medical-Problem:T25 has-Medical-Assertion:T24 has-Medical-Anatomy:T26
+E21	Medical-Problem:T28 has-Medical-Assertion:T27 has-Medical-Assertion:T29
+E22	Medical-Problem:T31 has-Medical-Assertion:T30

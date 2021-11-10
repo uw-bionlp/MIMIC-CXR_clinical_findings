@@ -1,0 +1,49 @@
+T1	Medical-Problem 205 234	Lung volume is borderline-low
+E1	Medical-Problem:T1
+T2	Lesion-Characteristic 288 293	focal
+T3	Lesion-Characteristic 294 299	round
+T4	Lesion-Description 300 307	nodular
+E4	Lesion-Description:T4
+T5	Lesion-Description 308 315	opacity
+T6	Lesion-Anatomy 323 336	left mid lung
+T7	Lesion-Size 348 359	1 cm x 1 cm
+T8	Lesion-Anatomy 367 404	level of the left sixth posterior rib
+T9	Lesion-Size-Trend 411 434	appears slightly larger
+A1	Lesion-Size-TrendValue T9 increasing
+T10	Lesion-Description 456 462	nodule
+E9	Lesion-Description:T10
+T11	Lesion-Assertion 506 520	concerning for
+A2	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 530 538	neoplasm
+T13	Medical-Assertion 561 563	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 564 567;569 582	new consolidation
+T15	Medical-Problem 584 597	opacification
+T16	Medical-Problem 599 611	pneumothorax
+T17	Medical-Problem 616 632	pleural effusion
+T18	Medical-Assertion 749 751	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 752 776	acute bony abnormalities
+T20	Medical-Assertion 777 789	nor evidence
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 793 798;800 808	acute fracture
+T22	Lesion-Size 834 845	1 cm x 1 cm
+T23	Lesion-Description 846 852	nodule
+T24	Lesion-Anatomy 865 908;910 919	left mid lung at the level of the posterior sixth rib
+T25	Lesion-Size-Trend 934 951	slightly enlarged
+A6	Lesion-Size-TrendValue T25 increasing
+T26	Lesion-Description 1010 1018	neoplasm
+T27	Medical-Assertion 1024 1026	No
+A7	Medical-AssertionValue T27 absent
+T28	Medical-Problem 1027 1036	pneumonia
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T6 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E10	Lesion-Description:T12 has-Lesion-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T13
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Lesion-Description:T23 has-Lesion-Size-Present:T22 has-Lesion-Anatomy:T24 has-Lesion-Size-Trend:T25
+E20	Lesion-Description:T26 has-Lesion-Anatomy:T24
+E21	Medical-Problem:T28 has-Medical-Assertion:T27

@@ -1,0 +1,29 @@
+T1	Medical-Problem 346 368	increasing volume loss
+T2	Medical-Anatomy 376 392	right hemithorax
+T3	Medical-Problem 399 410;412 448	progressive elevation of the right hemidiaphragm
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 451 472	Right paramediastinal
+T5	Medical-Problem 528 559	decreased in a geographic stent
+T6	Medical-Assertion 562 572	suggesting
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 573 606	progression of radiation fibrosis
+T8	Medical-Assertion 694 696	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 697 704;706 714	pleural effusion
+T10	Medical-Problem 718 730	pneumothorax
+T11	Medical-Problem 800 827	Decreased geographic extent
+E9	Medical-Problem:T11
+T12	Lesion-Anatomy 853 864;866 886	right upper lobe paramediastinal
+T13	Lesion-Description 887 896	opacities
+T14	Medical-Problem 902 941;943 948	associated increased volume loss on the right
+E12	Medical-Problem:T14
+T15	Medical-Assertion 950 960	suggesting
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 961 994	progression of radiation fibrosis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Lesion-Description:T13 has-Lesion-Anatomy:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

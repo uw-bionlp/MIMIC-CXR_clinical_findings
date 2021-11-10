@@ -1,0 +1,35 @@
+T1	Medical-Problem 382 401	retrocardiac streak
+E1	Medical-Problem:T1
+T2	Medical-Problem 406 414;416 423	airspace opacity
+E2	Medical-Problem:T2
+T3	Medical-Assertion 424 439	likely reflects
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 440 451	atelectasis
+T5	Medical-Anatomy 458 487	bilateral costophrenic angles
+T6	Medical-Problem 493 509	slightly blunted
+T7	Medical-Assertion 517 536	may be secondary to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 537 551	small effusion
+T9	Medical-Problem 553 564	atelectasis
+T10	Medical-Problem 567 575	scarring
+T11	Lesion-Characteristic 605 612	rounded
+T12	Lesion-Description 613 628	nodular opacity
+T13	Lesion-Anatomy 643 679	right upper lung and distal clavicle
+T14	Lesion-Characteristic 688 710	incompletely localized
+T15	Medical-Assertion 744 746	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 747 765	large pneumothorax
+T17	Medical-Problem 769 790	frank pulmonary edema
+T18	Medical-Problem 881 910	acute cardiopulmonary process
+E15	Medical-Problem:T18
+T19	Medical-Problem 930 955	localized rounded opacity
+T20	Medical-Anatomy 976 987;989 993	right upper lung
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20

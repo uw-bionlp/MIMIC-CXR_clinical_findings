@@ -1,0 +1,46 @@
+T1	Medical-Problem 33 61	Coarsened reticular markings
+T2	Medical-Anatomy 83 94	lower lungs
+T3	Medical-Assertion 95 108	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 114 132	atypical infection
+T5	Lesion-Characteristic 134 143	Scattered
+T6	Lesion-Characteristic 144 150	subtle
+T7	Lesion-Description 151 168	nodular opacities
+T8	Medical-Problem 300 337	Biapical pleural-parenchymal scarring
+E7	Medical-Problem:T8
+T9	Medical-Assertion 421 423	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 424 451	acute intrathoracic process
+T11	Medical-Problem 770 793	Lungs are hyperinflated
+E9	Medical-Problem:T11
+T12	Medical-Assertion 805 807	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 808 827	lobar consolidation
+T14	Medical-Problem 829 837	effusion
+T15	Medical-Problem 841 853	pneumothorax
+T16	Medical-Problem 855 883	Coarsened reticular markings
+T17	Lesion-Characteristic 892 898	subtle
+E14	Lesion-Characteristic:T17
+T18	Medical-Anatomy 917 949	predominantly in the lower lungs
+T19	Medical-Assertion 950 961	may reflect
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 966 984	atypical infection
+T21	Medical-Problem 1023 1031;1033 1061	Biapical pleural-parenchymal scarring
+E17	Medical-Problem:T21
+T22	Lesion-Characteristic 1119 1128	Reticular
+T23	Lesion-Description 1129 1144	nodular opacity
+T24	Lesion-Anatomy 1152 1163	lower lungs
+T25	Medical-Assertion 1164 1177	may represent
+A5	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1178 1186	atypical
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T12
+E13	Medical-Problem:T16 has-Medical-Anatomy:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E19	Lesion-Description:T23 has-Lesion-Characteristic:T22 has-Lesion-Anatomy:T24
+E21	Medical-Problem:T26 has-Medical-Assertion:T25

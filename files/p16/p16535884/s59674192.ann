@@ -1,0 +1,32 @@
+T1	Medical-Problem 241 265	Pulmonary hyperinflation
+E1	Medical-Problem:T1
+T2	Medical-Problem 280 315	generalized increased lung markings
+E2	Medical-Problem:T2
+T3	Medical-Problem 328 354	chronic pleural thickening
+T4	Medical-Anatomy 362 371	left base
+T5	Medical-Problem 397 421	additional opacification
+T6	Medical-Assertion 428 445	likely represents
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 446 457	atelectasis
+T8	Medical-Assertion 458 470	has resolved
+A2	Medical-AssertionValue T8 absent
+T9	Lesion-Characteristic 476 481	faint
+T10	Lesion-Description 482 497	nodular opacity
+T11	Lesion-Assertion 533 536;538 550	not definitively
+A3	Lesion-AssertionValue T11 absent
+T12	Medical-Problem 666 690	Pulmonary hyperinflation
+E9	Medical-Problem:T12
+T13	Medical-Problem 692 717	bronchial wall thickening
+E10	Medical-Problem:T13
+T14	Medical-Assertion 747 762	likely reflects
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 763 767	COPD
+T16	Lesion-Assertion 831 833	no
+A5	Lesion-AssertionValue T16 absent
+T17	Lesion-Description 861 876	nodular changes
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Assertion:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T9 has-Lesion-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Lesion-Description:T17 has-Lesion-Assertion:T16

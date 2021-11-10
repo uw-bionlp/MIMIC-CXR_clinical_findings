@@ -1,0 +1,36 @@
+T1	Medical-Problem 195 230	Ill-defined heterogeneous opacities
+T2	Medical-Anatomy 234 248	left lung base
+T3	Medical-Assertion 261 271;273 276	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 277 286	infection
+T5	Medical-Problem 290 300	aspiration
+T6	Medical-Problem 303 317	Indistinctness
+T7	Medical-Anatomy 325 348	left costophrenic angle
+T8	Medical-Assertion 350 358	suggests
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 359 381	small pleural effusion
+T10	Medical-Problem 383 403	Lung volumes are low
+E8	Medical-Problem:T10
+T11	Medical-Assertion 405 407	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 408 420	pneumothorax
+T13	Medical-Problem 483 497	Azygos fissure
+E10	Medical-Problem:T13
+T14	Medical-Problem 541 572	Left base heterogeneous opacity
+E11	Medical-Problem:T14
+T15	Medical-Assertion 573 587	concerning for
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 588 597	infection
+T17	Medical-Problem 601 611	aspiration
+T18	Medical-Assertion 614 622	Probable
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 623 650	small left pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

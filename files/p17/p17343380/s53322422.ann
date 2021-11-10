@@ -1,0 +1,18 @@
+T1	Medical-Problem 200 223	New increased opacities
+T2	Medical-Anatomy 241 256	right lung base
+T3	Medical-Assertion 261 267;269 283	likely representative
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 289 298	pneumonia
+T5	Medical-Anatomy 363 370	Cardiac
+T6	Medical-Assertion 382 389	appears
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 390 405	mildly enlarged
+T8	Medical-Problem 506 534	New right lower lobe opacity
+E6	Medical-Problem:T8
+T9	Medical-Assertion 535 548	suggestive of
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 549 558	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

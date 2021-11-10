@@ -1,0 +1,24 @@
+T1	Medical-Problem 193 215	Low lung volumes crowd
+E1	Medical-Problem:T1
+T2	Medical-Assertion 253 255	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 256 265;267 272	pulmonary edema
+T4	Medical-Problem 287 318	new heterogeneous opacification
+T5	Medical-Anatomy 326 340	left lung base
+T6	Medical-Assertion 342 356	concerning for
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 357 374	recent aspiration
+T8	Medical-Problem 377 403	Slightly increased caliber
+T9	Medical-Anatomy 411 417;419 423	azygos vein
+T10	Medical-Problem 457 472	volume depleted
+T11	Medical-Assertion 500 502	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 503 515	pneumothorax
+T13	Medical-Problem 519 535	pleural effusion
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

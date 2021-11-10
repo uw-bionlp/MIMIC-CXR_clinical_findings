@@ -1,0 +1,29 @@
+T1	Medical-Problem 673 686	new elevation
+T2	Medical-Anatomy 694 714	right hemi diaphragm
+T3	Medical-Problem 727 737	prominence
+T4	Medical-Anatomy 745 759	bilateral hila
+T5	Medical-Problem 765 790;792 801	bilateral patchy airspace opacities
+T6	Medical-Assertion 809 824	likely reflects
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 825 840	pulmonary edema
+T8	Medical-Problem 850 859	infection
+T9	Medical-Assertion 860 869;871 879	cannot be excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 883 919	more confluent area of consolidation
+T11	Medical-Anatomy 927 942	left upper lobe
+T12	Medical-Assertion 947 961	suspicious for
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 962 975	consolidation
+T14	Medical-Problem 1021 1042	acute pulmonary edema
+E11	Medical-Problem:T14
+T15	Medical-Problem 1051 1073	superimposed infection
+T16	Medical-Assertion 1075 1093	cannot be excluded
+A4	Medical-AssertionValue T16 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6 has-Medical-Assertion:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T16

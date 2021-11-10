@@ -1,0 +1,26 @@
+T1	Medical-Problem 161 184	Extensive consolidation
+T2	Medical-Anatomy 192 202	right lung
+T3	Medical-Assertion 245 256	most likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 259 274	large pneumonia
+T5	Medical-Problem 277 290	Consolidation
+T6	Medical-Anatomy 298 309;311 320	base of the left lung
+T7	Medical-Problem 336 363	downward hilar displacement
+T8	Medical-Assertion 364 385	could be explained by
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 387 396	collapsed
+T10	Medical-Problem 407 427	concurrent infection
+T11	Medical-Assertion 431 443	not excluded
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 481 520	increase in small left pleural effusion
+E9	Medical-Problem:T12
+T13	Medical-Assertion 559 561	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 562 574	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,21 @@
+T1	Medical-Problem 291 306	focal opacities
+T2	Medical-Anatomy 321 355;357 391	right heart border and posteriorly over the spine in the lateral view
+T3	Medical-Assertion 393 407	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 408 428	multifocal pneumonia
+T5	Medical-Anatomy 437 454	right middle lobe
+T6	Medical-Anatomy 459 483	right or left lower lobe
+T7	Medical-Assertion 549 551	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 552 564	pneumothorax
+T9	Medical-Problem 585 606	Multi-focal pneumonia
+T10	Medical-Anatomy 611 628	right middle lobe
+T11	Medical-Anatomy 633 657	right or left lower lobe
+T12	Medical-Assertion 660 666	likely
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 670 688	atypical pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T12

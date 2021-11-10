@@ -1,0 +1,22 @@
+T1	Medical-Problem 212 226	mild unfolding
+T2	Medical-Anatomy 234 259	descending thoracic aorta
+T3	Medical-Problem 273 279;281 301	patchy linear opacification
+T4	Medical-Anatomy 309 324	left lower lung
+T5	Medical-Assertion 325 343	most suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 344 349;351 362	minor atelectasis
+T7	Medical-Assertion 413 415	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 416 423;425 433	pleural effusion
+T9	Medical-Problem 437 449	pneumothorax
+T10	Medical-Problem 467 494	Patchy left basilar opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 495 505	suggesting
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 506 523	minor atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

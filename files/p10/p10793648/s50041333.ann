@@ -1,0 +1,31 @@
+T1	Medical-Problem 254 295	moderate right loculated pleural effusion
+T2	Medical-Anatomy 332 359	apical and lateral portions
+T3	Medical-Problem 365 385;387 400	resultant increasing consolidation
+T4	Medical-Anatomy 408 418	right lung
+T5	Medical-Assertion 443 449	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 450 461;463 474	compressive atelectasis
+T7	Medical-Problem 476 503	concomitant pulmonary edema
+T8	Medical-Problem 507 525	infectious process
+T9	Lesion-Description 588 609	malignant progression
+E8	Lesion-Description:T9
+T10	Medical-Problem 628 659	Left dependent pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 691 727	accompanying mild interstitial edema
+E10	Medical-Problem:T11
+T12	Medical-Problem 750 766;768 773	thickened septal lines
+E11	Medical-Problem:T12
+T13	Medical-Problem 958 1017;1019 1036	Increased moderate loculated right and small dependent left pleural effusions
+E12	Medical-Problem:T13
+T14	Medical-Problem 1042 1075	accompanying mild pulmonary edema
+E13	Medical-Problem:T14
+T15	Medical-Problem 1078 1096	Infectious process
+T16	Medical-Anatomy 1105 1115	right lobe
+T17	Medical-Assertion 1116 1145	would be difficult to exclude
+A2	Medical-AssertionValue T17 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

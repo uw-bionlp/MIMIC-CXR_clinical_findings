@@ -1,0 +1,29 @@
+T1	Medical-Assertion 498 506	probable
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 507 542	borderline versus mild cardiomegaly
+T3	Medical-Problem 547 573	diffuse increased markings
+T4	Medical-Anatomy 586 596	both lungs
+T5	Medical-Problem 599 615	Air bronchograms
+T6	Medical-Anatomy 623 642	retrocardiac region
+T7	Medical-Problem 802 843	severe infiltrative pulmonary abnormality
+E6	Medical-Problem:T7
+T8	Medical-Problem 856 877;879 903	fibrosing nonspecific interstitial pneumonitis
+E7	Medical-Problem:T8
+T9	Medical-Problem 989 1000	abnormality
+E8	Medical-Problem:T9
+T10	Medical-Problem 1017 1029;1031 1041	superimposed infiltrate
+T11	Medical-Problem 1045 1048	CHF
+T12	Medical-Assertion 1052 1063	challenging
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 1075 1091	minimal blunting
+T14	Medical-Anatomy 1099 1104;1106 1124	right costophrenic angle
+T15	Medical-Assertion 1131 1133	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1134 1162	gross right or left effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T4
+E2	Medical-Problem:T3 has-Medical-Assertion:T1 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T12
+E10	Medical-Problem:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

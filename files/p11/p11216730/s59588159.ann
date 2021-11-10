@@ -1,0 +1,19 @@
+T1	Medical-Problem 410 415;417 441	small preexisting linear scars
+T2	Medical-Anatomy 449 463	left lung base
+T3	Medical-Anatomy 475 495	left perihilar areas
+T4	Lesion-Characteristic 567 583	relatively dense
+T5	Lesion-Anatomy 584 588;590 596	left apical
+T6	Lesion-Size 597 603	3-4 mm
+T7	Lesion-Anatomy 604 608	lung
+T8	Lesion-Description 609 615	nodule
+T9	Lesion-Assertion 617 623	likely
+A1	Lesion-AssertionValue T9 possible
+T10	Lesion-Characteristic 653 662	calcified
+T11	Lesion-Description 664 673	granuloma
+T12	Medical-Assertion 760 762	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 763 790	left-sided pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T6 has-Lesion-Anatomy:T7
+E10	Lesion-Description:T11 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

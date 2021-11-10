@@ -1,0 +1,25 @@
+T1	Medical-Problem 231 239	Blunting
+T2	Medical-Anatomy 247 288	lateral and posterior costophrenic angles
+T3	Medical-Assertion 289 297	suggests
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 298 303;305 322	small pleural effusions
+T5	Medical-Anatomy 329 334	lungs
+T6	Medical-Assertion 339 344	clear
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 348 361	consolidation
+T8	Medical-Problem 365 380;382 387	overt pulmonary edema
+T9	Medical-Problem 529 546	Irregular contour
+T10	Medical-Anatomy 554 571	ribs on the right
+T11	Medical-Assertion 572 580	suggests
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 581 603	prior healed fractures
+T13	Medical-Problem 624 657	old right mid clavicular fracture
+E10	Medical-Problem:T13
+T14	Medical-Problem 678 711	Small bilateral pleural effusions
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

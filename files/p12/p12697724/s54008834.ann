@@ -1,0 +1,26 @@
+T1	Medical-Problem 215 230	INJURY,IMPROVES
+E1	Medical-Problem:T1
+T2	Medical-Assertion 360 362;364 372	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 376 405	acute cardiopulmonary disease
+T4	Medical-Problem 408 427	Mild hyperexpansion
+T5	Medical-Anatomy 435 440	lungs
+T6	Medical-Assertion 442 450	suggests
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 451 476	chronic pulmonary disease
+T8	Medical-Assertion 482 484	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 485 500	acute pneumonia
+T10	Medical-Problem 502 510;512 522	vascular congestion
+T11	Medical-Problem 527 543	pleural effusion
+T12	Medical-Problem 561 596	relatively mild degenerative change
+T13	Medical-Anatomy 604 618	thoracic spine
+T14	Medical-Assertion 625 636	no evidence
+A4	Medical-AssertionValue T14 absent
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

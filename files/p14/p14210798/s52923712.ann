@@ -1,0 +1,14 @@
+T1	Medical-Anatomy 296 323	left lower lobe parenchymal
+T2	Medical-Problem 325 332	opacity
+E2	Medical-Problem:T2
+T3	Medical-Problem 338 354	air bronchograms
+T4	Medical-Anatomy 364 385	retrocardiac location
+T5	Medical-Problem 450 477;479 500	coexisting small unilateral left pleural effusion
+E5	Medical-Problem:T5
+T6	Medical-Assertion 501 519	could also suggest
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 520 538	pulmonary embolism
+T8	Medical-Assertion 560 568	unlikely
+A2	Medical-AssertionValue T8 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Assertion:T8

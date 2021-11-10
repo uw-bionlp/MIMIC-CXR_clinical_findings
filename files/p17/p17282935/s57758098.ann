@@ -1,0 +1,48 @@
+T1	Medical-Problem 222 229	Opacity
+T2	Medical-Anatomy 237 252	left upper lobe
+T3	Medical-Assertion 256 270	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 271 280	pneumonia
+T5	Lesion-Characteristic 292 302	underlying
+T6	Lesion-Description 303 307	mass
+T7	Lesion-Assertion 308 326	cannot be excluded
+A2	Lesion-AssertionValue T7 possible
+T8	Medical-Assertion 338 340	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 341 357	pleural effusion
+T10	Medical-Problem 362 374	pneumothorax
+T11	Medical-Problem 377 394	Mild cardiomegaly
+E8	Medical-Problem:T11
+T12	Medical-Anatomy 410 431	Pulmonary vasculature
+T13	Medical-Problem 436 460	slightly indistinct with
+E10	Medical-Problem:T13
+T14	Medical-Problem 461 492	increased interstitial markings
+T15	Medical-Problem 497 510	Kerly B lines
+T16	Medical-Assertion 512 522	suggesting
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 523 543	mild pulmonary edema
+T18	Medical-Anatomy 550 561	right hilar
+E14	Medical-Anatomy:T18
+T19	Medical-Problem 741 766	smaller catheter fragment
+E15	Medical-Problem:T19
+T20	Medical-Assertion 872 878	likely
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 882 909	embolized catheter fragment
+T22	Medical-Anatomy 916 925	pulmonary
+T23	Medical-Problem 971 1013	smaller one is embolized catheter fragment
+T24	Medical-Anatomy 1019 1035	pulmonary vessel
+T25	Medical-Problem 1073 1098	Left upper lobe pneumonia
+E20	Medical-Problem:T25
+T26	Medical-Problem 1247 1274	Embolized catheter fragment
+T27	Medical-Anatomy 1284 1300	pulmonary vessel
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T12
+E13	Medical-Problem:T17 has-Medical-Anatomy:T12 has-Medical-Assertion:T16
+E16	Medical-Problem:T21 has-Medical-Assertion:T20 has-Medical-Anatomy:T22
+E18	Medical-Problem:T23 has-Medical-Anatomy:T24
+E21	Medical-Problem:T26 has-Medical-Anatomy:T27

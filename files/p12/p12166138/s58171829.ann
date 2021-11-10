@@ -1,0 +1,22 @@
+T1	Medical-Problem 284 299;301 310	Left lower lobe opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 348 366	air in the stomach
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 423 430	stomach
+T4	Medical-Problem 445 449;451 467	left Bochdalek hernia
+T5	Medical-Assertion 470 478	Probable
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 479 502	small pleural effusions
+T7	Medical-Problem 509 530	tiny ill defined line
+T8	Medical-Anatomy 546 582	left apex adjacent to the chest wall
+T9	Medical-Assertion 584 595	without any
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 596 628	significant visible pneumothorax
+T11	Medical-Assertion 689 691	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 692 716	significant pneumothorax
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

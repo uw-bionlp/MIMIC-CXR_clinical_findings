@@ -1,0 +1,32 @@
+T1	Medical-Assertion 165 167	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 168 181	focal opacity
+T3	Medical-Problem 193 202	pneumonia
+T4	Medical-Assertion 213 215	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 216 223;225 233	pleural effusion
+T6	Medical-Problem 235 250	pulmonary edema
+T7	Medical-Problem 255 267	pneumothorax
+T8	Medical-Problem 309 326	Apparent fullness
+T9	Medical-Anatomy 334 345	right hilum
+T10	Lesion-Characteristic 416 421	dense
+T11	Lesion-Description 422 428	nodule
+T12	Lesion-Anatomy 436 448;450 460	left lateral mid-thorax
+T13	Lesion-Characteristic 491 500	calcified
+T14	Lesion-Description 501 510	granuloma
+T15	Medical-Problem 525 555	linear radiodense foreign body
+E13	Medical-Problem:T15
+T16	Medical-Assertion 685 696	No evidence
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 700 729	acute cardiopulmonary process
+T18	Medical-Problem 738 761	Radiodense foreign body
+E15	Medical-Problem:T18
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T12 has-Lesion-Characteristic:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

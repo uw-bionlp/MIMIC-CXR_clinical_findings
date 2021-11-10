@@ -1,0 +1,23 @@
+T1	Medical-Problem 368 397	Lung volumes are slightly low
+E1	Medical-Problem:T1
+T2	Medical-Problem 401 423	Subtle faint opacities
+T3	Medical-Anatomy 427 437	both bases
+T4	Medical-Assertion 484 497	could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 498 518	areas of atelectasis
+T6	Medical-Problem 529 539	aspiration
+T7	Medical-Problem 543 548;550 559	early pneumonia
+T8	Medical-Assertion 560 585	should also be considered
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 588 590	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 591 608	pleural effusions
+T11	Medical-Problem 610 625	pulmonary edema
+T12	Medical-Problem 631 643	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4 has-Medical-Assertion:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9

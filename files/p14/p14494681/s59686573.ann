@@ -1,0 +1,30 @@
+T1	Medical-Problem 290 306	Linear opacities
+T2	Medical-Anatomy 314 329	left lower lung
+T3	Medical-Problem 340 351	atelectasis
+T4	Medical-Assertion 385 392	without
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 393 412	focal consolidation
+T6	Medical-Problem 414 429	pulmonary edema
+T7	Medical-Problem 432 448	pleural effusion
+T8	Medical-Problem 452 464	pneumothorax
+T9	Medical-Problem 467 488	Aortic calcifications
+E8	Medical-Problem:T9
+T10	Medical-Problem 493 510	mild cardiomegaly
+E9	Medical-Problem:T10
+T11	Lesion-Assertion 538 540	no
+A2	Lesion-AssertionValue T11 absent
+T12	Lesion-Characteristic 541 551	concerning
+T13	Lesion-Characteristic 552 559	osseous
+T14	Lesion-Characteristic 563 574	soft tissue
+T15	Lesion-Description 575 582	lesions
+T16	Medical-Assertion 602 626	No radiographic evidence
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 630 639	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T4
+E13	Lesion-Description:T15 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12 has-Lesion-Characteristic:T13 has-Lesion-Characteristic:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

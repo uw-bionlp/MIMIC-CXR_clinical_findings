@@ -1,0 +1,14 @@
+T1	Medical-Problem 423 445	Airspace consolidation
+T2	Medical-Anatomy 466 495	right lung, likely lower lobe
+T3	Medical-Problem 502 535	associated right pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 766 774;776 789	Airspace consolidation
+T5	Medical-Anatomy 801 817	right lower lobe
+T6	Medical-Assertion 818 832	concerning for
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 833 842	pneumonia
+T8	Medical-Problem 849 882	associated right pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6

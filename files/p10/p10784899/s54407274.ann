@@ -1,0 +1,38 @@
+T1	Medical-Problem 223 237	Linear opacity
+T2	Medical-Anatomy 260 285	right lung base laterally
+T3	Medical-Assertion 287 300	suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 301 312	atelectasis
+T5	Medical-Anatomy 319 324	lungs
+T6	Medical-Assertion 330 335	clear
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 339 352	consolidation
+T8	Medical-Assertion 353 367	suspicious for
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 368 377	pneumonia
+T10	Medical-Problem 379 387	effusion
+T11	Medical-Problem 392 401;403 422	pulmonary vascular congestion
+T12	Medical-Problem 425 455	Cardiac silhouette is enlarged
+E9	Medical-Problem:T12
+T13	Medical-Problem 505 535	Atherosclerotic calcifications
+T14	Medical-Anatomy 550 565	ascending aorta
+T15	Medical-Assertion 568 570	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 571 596	acute osseous abnormality
+T17	Medical-Problem 613 625;627 634	Degenerative changes
+T18	Medical-Anatomy 651 672	shoulders bilaterally
+T19	Medical-Assertion 690 692	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 693 722	acute cardiopulmonary process
+T21	Medical-Problem 725 737	Cardiomegaly
+E16	Medical-Problem:T21
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

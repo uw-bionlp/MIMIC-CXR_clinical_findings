@@ -1,0 +1,30 @@
+T1	Medical-Problem 280 294	linear density
+T2	Medical-Anatomy 314 336	left mid to lower lung
+T3	Medical-Problem 356 364	scarring
+T4	Medical-Anatomy 371 376	lungs
+T5	Medical-Problem 385 398	hyperinflated
+T6	Medical-Assertion 399 412	suggestive of
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 413 433	underlying emphysema
+T8	Medical-Assertion 436 438	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 439 444;446 459	focal consolidation
+T10	Medical-Problem 461 469	effusion
+T11	Medical-Problem 473 485	pneumothorax
+T12	Medical-Assertion 571 573	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 574 592;594 599	free air below the right
+T14	Medical-Problem 639 648	Emphysema
+E11	Medical-Problem:T14
+T15	Medical-Assertion 649 656	without
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 657 679	superimposed pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

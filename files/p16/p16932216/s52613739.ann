@@ -1,0 +1,50 @@
+T1	Medical-Problem 95 102	cluster
+E1	Medical-Problem:T1
+T2	Lesion-Description 112 119;121 130	nodular opacities
+T3	Lesion-Anatomy 151 161	left chest
+T4	Lesion-Description 370 377	nodules
+E4	Lesion-Description:T4
+T5	Medical-Assertion 572 574	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 575 604	acute cardiopulmonary process
+T7	Medical-Assertion 611 613	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 614 630	pneumoperitoneum
+T9	Medical-Problem 986 1005	vascular congestion
+E7	Medical-Problem:T9
+T10	Medical-Problem 1007 1032	septal interstitial lines
+T11	Medical-Anatomy 1041 1051	right base
+T12	Medical-Problem 1057 1074	bronchial cuffing
+E10	Medical-Problem:T12
+T13	Medical-Assertion 1090 1098	could be
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1099 1110;1112 1134	early acute cardiac decompensation
+T15	Medical-Problem 1154 1161	chronic
+T16	Medical-Assertion 1188 1190	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1192 1199	pleural
+E13	Medical-Problem:T17
+T18	Medical-Problem 1200 1208	effusion
+T19	Lesion-Characteristic 1262 1269	complex
+T20	Lesion-Size 1273 1278	small
+T21	Lesion-Description 1279 1286;1288 1297	nodular opacities
+T22	Lesion-Anatomy 1359 1363	Lung
+T23	Lesion-Description 1365 1372	nodules
+T24	Lesion-Assertion 1377 1385	presumed
+A5	Lesion-AssertionValue T24 possible
+T25	Lesion-Assertion 1602 1610	possible
+A6	Lesion-AssertionValue T25 possible
+T26	Lesion-Size-Trend 1611 1614	new
+A7	Lesion-Size-TrendValue T26 new
+T27	Lesion-Anatomy 1615 1624	left lung
+T28	Lesion-Description 1625 1631	nodule
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T18 has-Medical-Assertion:T16
+E17	Lesion-Description:T21 has-Lesion-Characteristic:T19 has-Lesion-Size-Present:T20
+E19	Lesion-Description:T23 has-Lesion-Anatomy:T22 has-Lesion-Assertion:T24
+E21	Lesion-Description:T28 has-Lesion-Assertion:T25 has-Lesion-Size-Trend:T26 has-Lesion-Anatomy:T27

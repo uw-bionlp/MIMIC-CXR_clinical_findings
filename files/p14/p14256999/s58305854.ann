@@ -1,0 +1,39 @@
+T1	Medical-Assertion 75 77	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 78 95	acute abnormality
+T3	Medical-Problem 135 146	abnormality
+T4	Medical-Anatomy 154 161	lingula
+T5	Medical-Anatomy 163 178	adjacent pleura
+T6	Medical-Problem 657 667	distortion
+T7	Medical-Anatomy 675 683;685 689	apparent left
+T8	Medical-Anatomy 690 695	heart
+T9	Medical-Assertion 716 724	could be
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 727 731	scar
+T11	Medical-Problem 735 754	chronic atelectasis
+T12	Medical-Anatomy 763 770	lingula
+T13	Lesion-Anatomy 781 788	pleural
+T14	Lesion-Anatomy 792 803	mediastinal
+T15	Lesion-Description 804 810	nodule
+T16	Medical-Assertion 1048 1050	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1051 1058;1060 1069	pleural effusions
+T18	Medical-Problem 1073 1085	pneumothorax
+T19	Medical-Assertion 1113 1115	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1116 1133	acute abnormality
+T21	Medical-Anatomy 1275 1282	lingula
+E17	Medical-Anatomy:T21
+T22	Medical-Assertion 1366 1368	No
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1369 1396	acute intrathoracic process
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T12
+E9	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Anatomy:T12
+E13	Lesion-Description:T15 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

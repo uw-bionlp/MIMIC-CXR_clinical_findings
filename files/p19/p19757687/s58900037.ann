@@ -1,0 +1,35 @@
+T1	Medical-Problem 212 226	thoracic aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 230 238	tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 245 271	aortic arch calcifications
+E3	Medical-Problem:T3
+T4	Lesion-Size 392 396	8 mm
+T5	Lesion-Description 397 404	opacity
+T6	Lesion-Anatomy 425 429;431 441	left lower lung
+T7	Medical-Anatomy 485 490	lungs
+T8	Medical-Problem 495 508	hyperinflated
+T9	Medical-Assertion 520 527	without
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 528 547	focal consolidation
+T11	Medical-Assertion 559 570	no evidence
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 574 583;585 604	pulmonary vascular congestion
+T13	Medical-Problem 608 623	pulmonary edema
+T14	Medical-Assertion 635 637	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 638 650	pneumothorax
+T16	Medical-Problem 654 661;663 671	pleural effusion
+T17	Medical-Assertion 692 694	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 695 724	acute cardiopulmonary process
+T19	Medical-Problem 727 746	Hyperinflated lungs
+E15	Medical-Problem:T19
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

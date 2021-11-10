@@ -1,0 +1,23 @@
+T1	Medical-Problem 284 332;334 341	significant interval increase in left hemithorax opacity
+T2	Medical-Anatomy 361 391	left mid and lower lung fields
+T3	Medical-Assertion 453 461	possible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 462 474;476 502	superimposed infection/pleural effusion
+T5	Lesion-Count 505 513	Mulitple
+T6	Lesion-Anatomy 514 523	pulmonary
+T7	Lesion-Description 524 531	nodules
+T8	Medical-Problem 548 554;556 574	Patchy right base opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 589 610	which could be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 611 620	infection
+T11	Lesion-Description 629 640	progression
+E9	Lesion-Description:T11
+T12	Lesion-Description 644 662	metastatic disease
+E10	Lesion-Description:T12
+T13	Medical-Problem 721 739	left-sided opacity
+E11	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

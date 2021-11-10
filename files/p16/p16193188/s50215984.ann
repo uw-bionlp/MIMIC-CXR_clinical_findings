@@ -1,0 +1,29 @@
+T1	Medical-Problem 334 359	persistent patchy opacity
+T2	Medical-Anatomy 367 382	right lung base
+T3	Medical-Assertion 418 428	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 429 448	improving pneumonia
+T5	Lesion-Anatomy 451 462	Mediastinal
+T6	Lesion-Anatomy 467 472	hilar
+T7	Lesion-Description 473 478	nodes
+T8	Lesion-Characteristic 511 540	prior granulomatous infection
+T9	Medical-Problem 567 601	biapical calcified pleural plaques
+E8	Medical-Problem:T9
+T10	Medical-Assertion 604 606	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 607 622	pulmonary edema
+T12	Medical-Problem 626 633;635 644	pleural effusions
+T13	Medical-Assertion 647 649	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 650 662	pneumothorax
+T15	Medical-Problem 779 792	Calcification
+T16	Medical-Anatomy 801 806	aorta
+T17	Medical-Problem 823 838	atherosclerosis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T16

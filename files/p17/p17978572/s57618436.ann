@@ -1,0 +1,29 @@
+T1	Medical-Problem 499 534;536 544	only minimal residual right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 547 569	Ground-glass opacities
+T3	Medical-Anatomy 577 593	right lower lung
+T4	Medical-Assertion 594 607	could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 609 637	re-expansion pulmonary edema
+T6	Medical-Problem 645 654	infection
+T7	Medical-Problem 666 681	loculated fluid
+T8	Medical-Anatomy 693 706	minor fissure
+T9	Medical-Problem 739 761	Heart size is enlarged
+E8	Medical-Problem:T9
+T10	Medical-Problem 875 902;904 912	only small residual pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 921 941	ground-glass opacity
+T12	Medical-Anatomy 949 965	right lower lung
+T13	Medical-Assertion 966 980;982 985	raises concern for
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 986 1014	re-expansion pulmonary edema
+T15	Medical-Problem 1022 1031	infection
+T16	Medical-Problem 1034 1057	Persistent cardiomegaly
+E14	Medical-Problem:T16
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

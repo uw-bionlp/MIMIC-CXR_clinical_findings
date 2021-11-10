@@ -1,0 +1,18 @@
+T1	Medical-Problem 243 263	discrete atelectasis
+T2	Medical-Anatomy 276 281;283 304	right upper and lower lungs
+T3	Medical-Problem 307 334	New consolidative opacities
+T4	Medical-Anatomy 342 358;360 364	base of the left lung
+T5	Medical-Assertion 365 380	could be either
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 381 392	atelectasis
+T7	Medical-Problem 396 405	pneumonia
+T8	Medical-Assertion 417 419	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 420 436	pleural effusion
+T10	Medical-Problem 441 453	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

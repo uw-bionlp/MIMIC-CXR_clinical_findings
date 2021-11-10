@@ -1,0 +1,47 @@
+T1	Medical-Problem 287 304	Mild cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 319 340	Aortic calcifications
+T3	Medical-Anatomy 368 379	aortic knob
+T4	Medical-Anatomy 386 395;397 408	pulmonary vascularity
+T5	Medical-Assertion 412 415	not
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 416 424	engorged
+T7	Medical-Anatomy 431 436	lungs
+T8	Medical-Problem 441 454	hyperinflated
+T9	Medical-Anatomy 485 491	apices
+T10	Medical-Problem 508 517	emphysema
+T11	Medical-Problem 520 542	Minimal patchy opacity
+T12	Medical-Anatomy 551 566	right lung base
+T13	Medical-Assertion 567 582	likely reflects
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 583 594	atelectasis
+T15	Medical-Assertion 606 608	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 609 614;616 629	focal consolidation
+T17	Medical-Problem 631 647	pleural effusion
+T18	Medical-Problem 651 663	pneumothorax
+T19	Medical-Problem 666 693;695 717	Diffuse demineralization of the osseous structures
+E16	Medical-Problem:T19
+T20	Medical-Problem 732 753	mild decreased height
+T21	Medical-Anatomy 757 769;771 785	mid thoracic vertebral body
+T22	Medical-Problem 891 913	Minimal patchy opacity
+T23	Medical-Anatomy 921 936	right lung base
+T24	Medical-Assertion 937 952	likely reflects
+A4	Medical-AssertionValue T24 possible
+T25	Medical-Problem 954 965	atelectasis
+T26	Medical-Problem 974 983	infection
+T27	Medical-Assertion 987 1010	not completely excluded
+A5	Medical-AssertionValue T27 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T15
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T25 has-Medical-Anatomy:T23 has-Medical-Assertion:T24
+E22	Medical-Problem:T26 has-Medical-Anatomy:T23 has-Medical-Assertion:T27

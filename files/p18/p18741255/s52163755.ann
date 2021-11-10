@@ -1,0 +1,22 @@
+T1	Medical-Problem 228 239;241 254	New diffuse opacification
+T2	Medical-Anatomy 262 278	right hemithorax
+T3	Medical-Assertion 279 306	could potentially represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 309 317;319 359	layering moderate-to-large right pleural effusion
+T5	Medical-Problem 365 392;394 401	coexisting lung parenchymal disease
+T6	Medical-Assertion 405 422	considered likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Anatomy 512 527	left hemithorax
+T8	Medical-Problem 539 587	persistent dense left retrocardiac opacification
+T9	Medical-Assertion 601 609	probable
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 610 615;617 638	small left pleural effusion
+T11	Medical-Assertion 650 652	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 653 676	detectable pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

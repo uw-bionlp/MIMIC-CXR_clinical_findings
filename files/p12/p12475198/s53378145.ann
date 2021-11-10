@@ -1,0 +1,29 @@
+T1	Medical-Problem 300 341	severe extremely irregular opacifications
+T2	Medical-Anatomy 345 368;370 382	both lungs, more severe on the right
+T3	Lesion-Description 422 429	nodular
+T4	Lesion-Anatomy 449 454	lungs
+T5	Medical-Assertion 458 473	probably due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 474 507	severe peribronchial infiltration
+T7	Medical-Problem 527 536	emphysema
+T8	Medical-Problem 602 630	component of pulmonary edema
+E7	Medical-Problem:T8
+T9	Medical-Problem 632 659	Small left pleural effusion
+T10	Medical-Assertion 677 680;682 693	not significant
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Assertion 704 706	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 707 719	pneumothorax
+T13	Medical-Anatomy 721 726	Heart
+T14	Medical-Problem 730 748	partially obscured
+T15	Medical-Assertion 880 882	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 883 895	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

@@ -1,0 +1,21 @@
+T1	Medical-Problem 290 314	increasing opacification
+T2	Medical-Anatomy 323 332	left base
+T3	Medical-Problem 350 376	worsening pleural effusion
+T4	Medical-Problem 381 392	volume loss
+T5	Medical-Anatomy 401 416	left lower lobe
+T6	Medical-Problem 423 448	generalized opacification
+T7	Medical-Assertion 449 457	obscures
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 477 489	lung abscess
+E7	Medical-Problem:T8
+T9	Medical-Problem 492 505	Opacification
+T10	Medical-Anatomy 506 520	just above the
+T11	Medical-Assertion 530 545	could represent
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 546 553;555 564	site of infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

@@ -1,0 +1,27 @@
+T1	Medical-Problem 293 335	Diffuse infiltrative pulmonary abnormality
+T2	Medical-Anatomy 352 370;372 376	both lungs, on the left
+T3	Medical-Assertion 377 392	probably due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 393 408	worsening edema
+T5	Lesion-Description 434 441;443 452	nodular opacities
+E4	Lesion-Description:T5
+T6	Medical-Assertion 457 471	concerning for
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 472 492	concurrent pneumonia
+T8	Medical-Problem 496 516	pulmonary hemorrhage
+T9	Medical-Problem 622 650	cardiac borders are obscured
+E7	Medical-Problem:T9
+T10	Medical-Problem 655 675	mediastinal widening
+E8	Medical-Problem:T10
+T11	Medical-Assertion 677 692	could be due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 693 711	venous engorgement
+T13	Medical-Assertion 787 789	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 790 802	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,19 @@
+T1	Medical-Assertion 593 595	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 597 617	visible pneumothorax
+T3	Medical-Problem 619 638	Stable cardiomegaly
+E2	Medical-Problem:T3
+T4	Medical-Problem 654 672;674 684	pulmonary vascular congestion
+E3	Medical-Problem:T4
+T5	Medical-Problem 689 717	worsening interstitial edema
+E4	Medical-Problem:T5
+T6	Medical-Problem 720 746	New poorly defined opacity
+T7	Medical-Anatomy 751 775	left retrocardiac region
+T8	Medical-Assertion 776 803	could potentially represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 806 826	developing pneumonia
+T10	Medical-Problem 895 903;905 942	Adjacent left pleural and parenchymal scarring
+E8	Medical-Problem:T10
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

@@ -1,0 +1,29 @@
+T1	Medical-Problem 225 240	volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 249 277	size remains mildly enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 334 342	widening
+T4	Medical-Anatomy 350 358;360 371	superior mediastinum
+T5	Medical-Problem 515 534	hazy opacifications
+T6	Medical-Anatomy 555 564	left lung
+T7	Medical-Anatomy 585 589;591 623	left apex and left costophrenic angle
+T8	Medical-Anatomy 640 664;666 672	right mid and lower lung fields
+T9	Medical-Assertion 681 688	unclear
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 706 736	true parenchymal abnormalities
+T11	Medical-Assertion 801 809	does not
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 810 816;818 826	appear engorged
+T13	Medical-Assertion 829 831	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 832 844	pneumothorax
+T15	Medical-Problem 848 864	pleural effusion
+T16	Medical-Problem 904 913	opacities
+T17	Medical-Anatomy 932 942	both lungs
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17

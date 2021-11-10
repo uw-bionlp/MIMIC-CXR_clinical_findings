@@ -1,0 +1,21 @@
+T1	Medical-Problem 187 208	left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 253 277	small remaining effusion
+E2	Medical-Problem:T2
+T3	Medical-Assertion 289 291	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 292 313	definite pneumothorax
+T5	Medical-Anatomy 320 329	left lung
+T6	Medical-Problem 346 366	completely collapsed
+T7	Medical-Problem 398 406;408 419	residual atelectasis
+T8	Medical-Anatomy 437 460	left mid and lower lung
+T9	Medical-Anatomy 492 513	left parahilar region
+T10	Medical-Problem 529 552	peripheral septal lines
+T11	Medical-Assertion 553 564	may reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 568 608	component of reexpansion pulmonary edema
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11

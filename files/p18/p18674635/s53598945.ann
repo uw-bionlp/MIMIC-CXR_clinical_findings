@@ -1,0 +1,22 @@
+T1	Medical-Problem 483 507;509 521	stable tiny right apical pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 583 615	smaller left apical pneumothorax
+E2	Medical-Problem:T2
+T3	Medical-Problem 664 697	increasing airspace consolidation
+T4	Medical-Anatomy 705 716	lower lungs
+T5	Medical-Anatomy 736 743	lingula
+T6	Medical-Assertion 761 774	could reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 775 790	pulmonary edema
+T8	Medical-Problem 801 811	aspiration
+T9	Medical-Problem 816 825	pneumonia
+T10	Medical-Assertion 826 851	should also be considered
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 854 856	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 857 880	large pleural effusions
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T10
+E8	Medical-Problem:T9 has-Medical-Assertion:T6 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

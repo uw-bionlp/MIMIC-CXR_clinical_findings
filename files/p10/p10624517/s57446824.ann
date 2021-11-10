@@ -1,0 +1,40 @@
+T1	Medical-Problem 159 184;186 199	Bilateral effusions, mild  on the right
+E1	Medical-Problem:T1
+T2	Medical-Problem 231 251	adjacent atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 271 311	Retrocardiac and left lower lobe opacity
+E3	Medical-Problem:T3
+T4	Medical-Assertion 315 321	likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 341 352	atelectasis
+T6	Medical-Problem 357 365	effusion
+T7	Medical-Problem 376 385	pneumonia
+T8	Medical-Assertion 386 402	must be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 911 924	Opacification
+T10	Medical-Anatomy 933 942	left base
+T11	Medical-Problem 968 991	substantial volume loss
+T12	Medical-Anatomy 999 1003;1005 1015	left lower lobe
+T13	Medical-Problem 1020 1036	pleural effusion
+T14	Medical-Assertion 1043 1054	possibility
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1058 1079	supervening pneumonia
+T16	Medical-Assertion 1153 1163	suggesting
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 1164 1168	some
+E13	Medical-Problem:T17
+T18	Medical-Problem 1169 1207	increasing pulmonary venous congestion
+T19	Medical-Problem 1212 1247	Continued apical pleural capping on
+E15	Medical-Problem:T19
+T20	Medical-Assertion 1302 1313	no evidence
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1317 1329	pneumothorax
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

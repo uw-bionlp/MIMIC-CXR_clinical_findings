@@ -1,0 +1,50 @@
+T1	Medical-Problem 83 95	hypertension
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 166 171	lungs
+T3	Medical-Assertion 191 201	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 202 206	COPD
+T5	Medical-Problem 218 240;242 261	moderate-to-moderately severe cardiomegaly
+E4	Medical-Problem:T5
+T6	Medical-Anatomy 328 333	aorta
+T7	Medical-Problem 337 368	calcified and slightly unfolded
+T8	Medical-Problem 380 390;392 406	upper zone redistribution
+E7	Medical-Problem:T8
+T9	Medical-Problem 411 441	mild diffuse vascular blurring
+E8	Medical-Problem:T9
+T10	Medical-Problem 459 462	CHF
+E9	Medical-Problem:T10
+T11	Medical-Assertion 551 553	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 554 584	focal infiltrate/consolidation
+T13	Medical-Assertion 589 591	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 592 600	effusion
+T15	Lesion-Assertion 617 625	Probable
+A4	Lesion-AssertionValue T15 possible
+T16	Lesion-Characteristic 626 635	calcified
+T17	Lesion-Description 636 645	granuloma
+T18	Lesion-Anatomy 646 662	right upper zone
+T19	Medical-Problem 681 690	effusions
+T20	Medical-Problem 695 711	basilar collapse
+T21	Medical-Problem 719 732	consolidation
+T22	Medical-Assertion 733 745	has resolved
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 767 779	Cardiomegaly
+E18	Medical-Problem:T23
+T24	Medical-Problem 831 839	Mild CHF
+E19	Medical-Problem:T24
+T25	Medical-Assertion 889 891	No
+A6	Medical-AssertionValue T25 absent
+T26	Medical-Problem 892 908	focal infiltrate
+T27	Medical-Problem 912 920	effusion
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Lesion-Description:T17 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T18
+E15	Medical-Problem:T19 has-Medical-Assertion:T22
+E16	Medical-Problem:T20 has-Medical-Assertion:T22
+E17	Medical-Problem:T21 has-Medical-Assertion:T22
+E20	Medical-Problem:T26 has-Medical-Assertion:T25
+E21	Medical-Problem:T27 has-Medical-Assertion:T25

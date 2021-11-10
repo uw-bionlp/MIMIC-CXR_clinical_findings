@@ -1,0 +1,25 @@
+T1	Medical-Problem 258 276	New leftward shift
+T2	Medical-Anatomy 284 295	mediastinum
+T3	Medical-Assertion 303 310	absence
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 314 336	right pleural effusion
+T5	Medical-Problem 341 359	other displacement
+T6	Medical-Anatomy 367 383	right hemithorax
+T7	Medical-Problem 403 414;416 437	progressive left lung volume loss
+T8	Medical-Problem 448 470	lower lobe atelectasis
+T9	Medical-Problem 472 490;492 502	Pulmonary vascular congestion
+E8	Medical-Problem:T9
+T10	Medical-Problem 523 544	Moderate cardiomegaly
+T11	Medical-Problem 549 562	mild widening
+T12	Medical-Anatomy 571 594	mediastinal vasculature
+T13	Medical-Assertion 715 717	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 718 730	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T12
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

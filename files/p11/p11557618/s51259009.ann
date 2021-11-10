@@ -1,0 +1,67 @@
+T1	Medical-Problem 398 438	moderate to large right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 446 473	small left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 500 513	ovoid opacity
+T4	Medical-Anatomy 534 547;549 559	left inferior hemithorax
+T5	Medical-Assertion 566 581	likely reflects
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 584 621;623 639	loculated component of the left-sided pleural effusion
+T7	Lesion-Characteristic 647 660	pleural based
+T8	Lesion-Description 661 665	mass
+T9	Lesion-Assertion 669 681	not excluded
+A2	Lesion-AssertionValue T9 possible
+T10	Medical-Problem 684 693;695 735	Bibasilar airspace opacities right worse than left
+E8	Medical-Problem:T10
+T11	Medical-Assertion 736 750	likely reflect
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 751 762;764 775	compressive atelectasis
+T13	Medical-Problem 783 792	infection
+T14	Medical-Problem 796 806	aspiration
+T15	Medical-Assertion 810 822	not excluded
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 825 839;841 860	Mild pulmonary vascular congestion
+T17	Medical-Assertion 861 874	appears to be
+A5	Medical-AssertionValue T17 possible
+T18	Medical-Problem 875 885	asymmetric
+T19	Medical-Anatomy 889 917;919 923	primarily noted in the right lung
+T20	Medical-Assertion 935 937	no
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 938 950	pneumothorax
+T22	Medical-Assertion 953 955	No
+A7	Medical-AssertionValue T22 absent
+T23	Medical-Problem 956 981	acute osseous abnormality
+T24	Medical-Anatomy 997 1008	aortic knob
+T25	Medical-Problem 1012 1021	calcified
+T26	Medical-Problem 1044 1100	Moderate to large right and small left pleural effusions
+E19	Medical-Problem:T26
+T27	Medical-Problem 1106 1115;1117 1135	bibasilar airspace opacities
+E20	Medical-Problem:T27
+T28	Medical-Assertion 1136 1156	likely reflective of
+A8	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1157 1180	compressive atelectasis
+T30	Medical-Problem 1189 1199	aspiration
+T31	Medical-Problem 1203 1212	infection
+T32	Medical-Assertion 1213 1231	cannot be excluded
+A9	Medical-AssertionValue T32 possible
+T33	Lesion-Characteristic 1313 1326	pleural based
+T34	Lesion-Description 1327 1331	mass
+T35	Lesion-Assertion 1332 1341;1343 1351	cannot be excluded
+A10	Lesion-AssertionValue T35 possible
+T36	Medical-Problem 1361 1395	Mild pulmonary vascular congestion
+E26	Medical-Problem:T36
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11 has-Medical-Assertion:T15
+E11	Medical-Problem:T14 has-Medical-Assertion:T11 has-Medical-Assertion:T15
+E12	Medical-Problem:T16 has-Medical-Anatomy:T19
+E13	Medical-Problem:T18 has-Medical-Assertion:T17 has-Medical-Anatomy:T19
+E15	Medical-Problem:T21 has-Medical-Assertion:T20
+E16	Medical-Problem:T23 has-Medical-Assertion:T22
+E18	Medical-Problem:T25 has-Medical-Anatomy:T24
+E21	Medical-Problem:T29 has-Medical-Assertion:T28
+E22	Medical-Problem:T30 has-Medical-Assertion:T28 has-Medical-Assertion:T32
+E23	Medical-Problem:T31 has-Medical-Assertion:T28 has-Medical-Assertion:T32
+E25	Lesion-Description:T34 has-Lesion-Characteristic:T33 has-Lesion-Assertion:T35

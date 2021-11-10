@@ -1,0 +1,39 @@
+T1	Medical-Assertion 380 396	no definite sign
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 401 410	pneumonia
+T3	Medical-Problem 412 428	pleural effusion
+T4	Medical-Problem 432 444	pneumothorax
+T5	Lesion-Characteristic 449 455	subtle
+T6	Lesion-Description 456 471	nodular opacity
+T7	Lesion-Anatomy 473 529	adjacent to the left heart border in the left lower lung
+T8	Lesion-Assertion 560 582	possibly may represent
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Size-Trend 585 588	new
+A3	Lesion-Size-TrendValue T9 new
+T10	Lesion-Anatomy 589 598	pulmonary
+T11	Lesion-Description 599 605	nodule
+T12	Medical-Problem 705 738	hyperinflated widened AP diameter
+E9	Medical-Problem:T12
+T13	Medical-Assertion 810 812	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 813 821	free air
+T15	Medical-Anatomy 832 851	right hemidiaphragm
+T16	Medical-Problem 869 878	Emphysema
+E12	Medical-Problem:T16
+T17	Lesion-Assertion 880 888	possible
+A5	Lesion-AssertionValue T17 possible
+T18	Lesion-Description 889 895	nodule
+T19	Lesion-Anatomy 903 918	left lower lung
+T20	Medical-Assertion 968 970	No
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 980 989	pneumonia
+T22	Medical-Problem 993 996	CHF
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T11 has-Lesion-Assertion:T8 has-Lesion-Size-Trend:T9 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E13	Lesion-Description:T18 has-Lesion-Assertion:T17 has-Lesion-Anatomy:T19
+E15	Medical-Problem:T21 has-Medical-Assertion:T20
+E16	Medical-Problem:T22 has-Medical-Assertion:T20

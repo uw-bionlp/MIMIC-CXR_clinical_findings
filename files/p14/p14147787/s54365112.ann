@@ -1,0 +1,28 @@
+T1	Medical-Assertion 377 379	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 380 404	focal lung consolidation
+T3	Medical-Problem 407 429	Changes of sarcoidosis
+E2	Medical-Problem:T3
+T4	Medical-Problem 440 445;447 460	upper lobe fibrosis
+E3	Medical-Problem:T4
+T5	Medical-Problem 465 488	traction bronchiectasis
+E4	Medical-Problem:T5
+T6	Lesion-Assertion 529 531	no
+A2	Lesion-AssertionValue T6 absent
+T7	Lesion-Anatomy 532 537	hilar
+T8	Lesion-Description 538 548	adenopathy
+T9	Medical-Problem 550 574	Lenticular calcification
+T10	Medical-Anatomy 582 587;589 594	right hilus
+T11	Medical-Assertion 676 678	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 679 695	pleural effusion
+T13	Medical-Problem 699 711	pneumothorax
+T14	Medical-Assertion 732 743	No evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 747 756	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

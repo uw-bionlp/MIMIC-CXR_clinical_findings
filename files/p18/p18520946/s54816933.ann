@@ -1,0 +1,22 @@
+T1	Medical-Assertion 213 215	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 217 233	pleural effusion
+T3	Medical-Problem 237 249	pneumothorax
+T4	Medical-Problem 251 280	Linear left basal atelectasis
+E3	Medical-Problem:T4
+T5	Lesion-Size 317 322	11 mm
+T6	Lesion-Characteristic 323 328	round
+T7	Lesion-Anatomy 329 340	left apical
+T8	Lesion-Description 341 348	nodular
+E7	Lesion-Description:T8
+T9	Lesion-Description 349 356	opacity
+T10	Lesion-Assertion 358 361;363 372	may represent
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Anatomy 375 384	pulmonary
+T12	Lesion-Description 385 391	nodule
+T13	Lesion-Description 395 406	bone island
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E10	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Anatomy:T11
+E11	Lesion-Description:T13 has-Lesion-Assertion:T10 has-Lesion-Anatomy:T11

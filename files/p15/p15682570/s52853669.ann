@@ -1,0 +1,30 @@
+T1	Medical-Problem 159 166;168 176	pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 225 233	effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 237 246;248 253	pulmonary edema
+E3	Medical-Problem:T3
+T4	Medical-Problem 470 482;484 526	stable small righ apicolateral and basilar pneumothorax
+E4	Medical-Problem:T4
+T5	Medical-Problem 540 561;563 568	layering component of fluid
+T6	Medical-Anatomy 576 586	right base
+T7	Medical-Problem 605 622	hydropneumothorax
+T8	Medical-Problem 731 752	smaller left effusion
+E8	Medical-Problem:T8
+T9	Medical-Problem 755 771	Patchy opacities
+T10	Medical-Anatomy 775 785	both bases
+T11	Medical-Assertion 786 792;794 801	likely reflect
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 802 822	areas of atelectasis
+T13	Medical-Problem 833 864	superimposed infectious process
+T14	Medical-Assertion 865 871;873 891	should also be considered
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Assertion 903 914	no evidence
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 918 933	pulmonary edema
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

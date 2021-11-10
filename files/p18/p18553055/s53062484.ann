@@ -1,0 +1,38 @@
+T1	Medical-Problem 474 494	mild pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 501 519	perihilar haziness
+E2	Medical-Problem:T2
+T3	Medical-Problem 524 547	vascular indistinctness
+E3	Medical-Problem:T3
+T4	Medical-Problem 589 603	Patchy opacity
+T5	Medical-Anatomy 623 638	right lung base
+T6	Medical-Assertion 645 648;650 657	may reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 658 668	aspiration
+T8	Medical-Problem 672 681	infection
+T9	Medical-Assertion 759 761	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 762 784	large pleural effusion
+T11	Medical-Problem 788 800	pneumothorax
+T12	Medical-Problem 804 821	Rounded calcified
+E10	Medical-Problem:T12
+T13	Lesion-Anatomy 896 907	right renal
+T14	Lesion-Description 908 914	lesion
+T15	Medical-Problem 1044 1049	edema
+E13	Medical-Problem:T15
+T16	Medical-Problem 1055 1067	Patchy right
+E14	Medical-Problem:T16
+T17	Medical-Problem 1068 1083	basilar opacity
+E15	Medical-Problem:T17
+T18	Medical-Assertion 1090 1101	may reflect
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1102 1112	aspiration
+T20	Medical-Problem 1116 1125	infection
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T13
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T18

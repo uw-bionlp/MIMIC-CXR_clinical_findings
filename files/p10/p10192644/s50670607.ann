@@ -1,0 +1,29 @@
+T1	Medical-Problem 240 257	chronic elevation
+T2	Medical-Anatomy 265 283	left hemidiaphragm
+T3	Medical-Problem 286 301	Hyper-inlfation
+T4	Medical-Anatomy 309 314;316 326	right hemithorax
+T5	Medical-Problem 342 351	emphysema
+T6	Medical-Anatomy 358 376	cardiac silhouette
+E6	Medical-Anatomy:T6
+T7	Medical-Problem 418 446	calcified and tortuous aorta
+E7	Medical-Problem:T7
+T8	Medical-Problem 465 504	Increased prominence of septal markings
+E8	Medical-Problem:T8
+T9	Medical-Anatomy 526 536	right lung
+T10	Medical-Problem 548 571	mild congestive failure
+T11	Medical-Assertion 582 584	no
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 585 613	focal airspace consolidation
+T13	Medical-Problem 626 635	pneumonia
+T14	Medical-Assertion 647 649	no
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 650 662	pneumothorax
+T16	Medical-Problem 679 703	Mild congestive failure,
+E14	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

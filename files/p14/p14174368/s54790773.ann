@@ -1,0 +1,43 @@
+T1	Medical-Anatomy 227 238	mediastinal
+T2	Medical-Problem 263 277	tortuous aorta
+T3	Medical-Problem 310 318;320 329	S-shaped scoliosis
+T4	Medical-Anatomy 337 350	thoracolumbar
+T5	Medical-Anatomy 363 368	lungs
+T6	Medical-Assertion 381 383	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 384 389;391 404	lobar consolidation
+T8	Medical-Problem 459 465;467 482	subtle basal opacities
+T9	Medical-Problem 506 531	components of atelectasis
+T10	Medical-Problem 536 560	viral/atypical infection
+T11	Medical-Assertion 572 574	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 575 597	large pleural effusion
+T13	Medical-Problem 601 613	pneumothorax
+T14	Medical-Problem 629 663	right humeral head is low-lying --
+E12	Medical-Problem:T14
+T15	Medical-Problem 691 702	subluxation
+E13	Medical-Problem:T15
+T16	Medical-Assertion 723 725	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 726 745	lobar consolidation
+T18	Medical-Assertion 746 748	to
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 757 776	bacterial pneumonia
+T20	Medical-Problem 809 835	subtle bibasilar opacities
+E16	Medical-Problem:T20
+T21	Medical-Assertion 836 849	may represent
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 850 864;866 875	viral/atypical infection
+T23	Medical-Problem 953 998	Apparent right glenohumeral joint subluxation
+E18	Medical-Problem:T23
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T5
+E9	Medical-Problem:T10 has-Medical-Anatomy:T5
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E14	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Assertion:T18
+E15	Medical-Problem:T19 has-Medical-Assertion:T16 has-Medical-Assertion:T18
+E17	Medical-Problem:T22 has-Medical-Assertion:T21

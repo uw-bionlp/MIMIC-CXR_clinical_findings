@@ -1,0 +1,31 @@
+T1	Medical-Problem 380 421	persistent left basal pleural abnormality
+E1	Medical-Problem:T1
+T2	Medical-Problem 428 437	elevation
+T3	Medical-Anatomy 445 463	left hemidiaphragm
+T4	Medical-Assertion 465 478	likely due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 479 503	persistent pleural fluid
+T6	Medical-Problem 509 531	associated volume loss
+T7	Lesion-Description 534 549	Nodular opacity
+T8	Lesion-Anatomy 570 583;585 594	left anterior third rib
+T9	Lesion-Assertion 598 604	likely
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Characteristic 607 615	fissural
+T11	Lesion-Description 616 622	nodule
+T12	Lesion-Size 640 646	1.2 cm
+T13	Medical-Assertion 658 660	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 662 674	pneumothorax
+T15	Medical-Problem 737 774	volume loss associated leftward shift
+E12	Medical-Problem:T15
+T16	Medical-Problem 821 862	Persistent left basal pleural abnormality
+E13	Medical-Problem:T16
+T17	Lesion-Anatomy 895 908	Left fissural
+T18	Lesion-Description 909 915	nodule
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T9 has-Lesion-Characteristic:T10 has-Lesion-Size-Present:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E15	Lesion-Description:T18 has-Lesion-Anatomy:T17

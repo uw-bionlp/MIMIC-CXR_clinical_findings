@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 215 220	Lungs
+T2	Medical-Problem 225 238;240 255	hyperinflated with flattening
+T3	Medical-Problem 278 299	emphysematous changes
+T4	Medical-Anatomy 324 330	apices
+T5	Medical-Problem 333 367	Heart size remains mildly enlarged
+E5	Medical-Problem:T5
+T6	Medical-Problem 375 391;393 405	left ventricular predominance
+E6	Medical-Problem:T6
+T7	Medical-Problem 412 434	aorta remains tortuous
+E7	Medical-Problem:T7
+T8	Medical-Problem 439 458	diffusely calcified
+E8	Medical-Problem:T8
+T9	Medical-Assertion 461 463	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 465 494	pulmonary vascular congestion
+T11	Medical-Problem 511 536;538 547	Patchy bibasilar airspace opacities
+E10	Medical-Problem:T11
+T12	Medical-Assertion 606 612;614 621	likely reflect
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 622 633	atelectasis
+T14	Medical-Problem 636 644	Blunting
+T15	Medical-Anatomy 652 675	left costophrenic angle
+T16	Medical-Assertion 703 721	most likely due to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 722 748	chronic pleural thickening
+T18	Medical-Assertion 751 753	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 754 759;761 782	acute osseous abnormalities
+T20	Medical-Problem 815 836	Bibasilar atelectasis
+E16	Medical-Problem:T20
+T21	Medical-Problem 839 848	Emphysema
+E17	Medical-Problem:T21
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

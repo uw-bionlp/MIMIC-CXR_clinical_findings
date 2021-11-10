@@ -1,0 +1,23 @@
+T1	Medical-Problem 259 263;265 306	Very extensive bilateral parenchymal opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 312 328	air bronchograms
+E2	Medical-Problem:T2
+T3	Medical-Problem 330 340;342 356	additional consolidations
+T4	Medical-Anatomy 364 386	retrocardiac lung zone
+T5	Medical-Assertion 405 411;413 423	likely reflecting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 441 456	pulmonary edema
+T7	Medical-Problem 461 472	atelectasis
+T8	Medical-Assertion 474 485;487 498	potentially combined to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 499 508	pneumonia
+T10	Medical-Problem 510 551	Borderline size of the cardiac silhouette
+E8	Medical-Problem:T10
+T11	Medical-Assertion 563 565	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 567 591	larger pleural effusions
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

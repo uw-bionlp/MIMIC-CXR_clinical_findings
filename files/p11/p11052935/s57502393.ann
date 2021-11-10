@@ -1,0 +1,58 @@
+T1	Medical-Anatomy 306 311	lungs
+T2	Medical-Problem 316 341;343 352	hyperinflated with severe emphysema
+T3	Lesion-Characteristic 355 363	Punctate
+T4	Lesion-Characteristic 364 373	calcified
+T5	Lesion-Description 374 384	granulomas
+T6	Lesion-Anatomy 405 415	lung bases
+T7	Medical-Problem 419 435	Linear opacities
+T8	Medical-Anatomy 443 453	lung bases
+T9	Medical-Assertion 454 468	likely reflect
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 469 477	scarring
+T11	Medical-Problem 481 493;495 506	subsegmental atelectasis
+T12	Medical-Problem 509 532	Residual patchy opacity
+T13	Medical-Anatomy 544 559	left upper lobe
+T14	Medical-Assertion 560 566;568 576	likely reflects
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 577 585	scarring
+T16	Medical-Assertion 619 621	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 622 639	new consolidation
+T18	Medical-Problem 642 658	pleural effusion
+T19	Medical-Problem 662 674	pneumothorax
+T20	Medical-Problem 691 699	Scarring
+T21	Medical-Anatomy 711 715;717 723	lung apices
+T22	Medical-Problem 750 781	diffuse demineralization of the
+T23	Medical-Anatomy 782 789;791 801	osseous structures
+T24	Medical-Assertion 821 823	No
+A4	Medical-AssertionValue T24 absent
+T25	Medical-Problem 824 857	acute cardiopulmonary abnormality
+T26	Medical-Problem 860 876	Severe emphysema
+E22	Medical-Problem:T26
+T27	Medical-Problem 879 898;900 912	Residual left upper lobe opacity
+E23	Medical-Problem:T27
+T28	Medical-Assertion 913 928	likely reflects
+A5	Medical-AssertionValue T28 possible
+T29	Medical-Problem 929 937	scarring
+T30	Medical-Problem 976 1002	bibasilar linear opacities
+E25	Medical-Problem:T30
+T31	Medical-Assertion 1003 1020	either reflecting
+A6	Medical-AssertionValue T31 possible
+T32	Medical-Problem 1021 1045	subsegmental atelectasis
+T33	Medical-Problem 1050 1058	scarring
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T16
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21
+E19	Medical-Problem:T22 has-Medical-Anatomy:T23
+E21	Medical-Problem:T25 has-Medical-Assertion:T24
+E24	Medical-Problem:T29 has-Medical-Assertion:T28
+E26	Medical-Problem:T32 has-Medical-Assertion:T31
+E27	Medical-Problem:T33 has-Medical-Assertion:T31

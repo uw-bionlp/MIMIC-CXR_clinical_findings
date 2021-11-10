@@ -1,0 +1,29 @@
+T1	Medical-Problem 269 278;280 295	Posterior basilar opacity
+T2	Medical-Anatomy 303 318	left lower lobe
+T3	Medical-Problem 362 382	New patchy opacities
+T4	Medical-Anatomy 400 407	lingula
+T5	Medical-Problem 409 422;424 431	Band-like new opacity
+T6	Medical-Anatomy 439 455	right lower lobe
+T7	Medical-Assertion 459 474	probably due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 475 492	minor atelectasis
+T9	Medical-Problem 507 532	small pleural effusion on
+E8	Medical-Problem:T9
+T10	Medical-Assertion 573 575	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 577 602	definite pleural effusion
+T12	Medical-Problem 655 677	New lingular opacities
+E10	Medical-Problem:T12
+T13	Medical-Assertion 678 692	concerning for
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 693 702	pneumonia
+T15	Medical-Assertion 733 744	No evidence
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 748 772	congestive heart failure
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

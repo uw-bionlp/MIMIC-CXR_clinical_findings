@@ -1,0 +1,25 @@
+T1	Medical-Assertion 456 458	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 459 482;484 495	typical configurational abnormality
+T3	Medical-Assertion 612 614	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 624 632;634 665	acute or chronic parenchymal infiltrates
+T5	Medical-Assertion 736 747	No evidence
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 751 763	pneumothorax
+T7	Medical-Anatomy 771 782	apical area
+T8	Medical-Assertion 875 886	no evidence
+A4	Medical-AssertionValue T8 absent
+T9	Lesion-Anatomy 890 895	hilar
+T10	Lesion-Description 896 906	adenopathy
+T11	Medical-Problem 910 918	widening
+T12	Medical-Anatomy 926 937;939 949	mediastinal structures
+T13	Lesion-Characteristic 983 993	widespread
+T14	Lesion-Description 994 1004	adenopathy
+T15	Lesion-Anatomy 1012 1016;1018 1024	neck region
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E6	Lesion-Description:T10 has-Lesion-Anatomy:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T8 has-Medical-Anatomy:T12
+E10	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15

@@ -1,0 +1,33 @@
+T1	Medical-Problem 259 273;275 287	persistent low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Assertion 288 295	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 296 312	pleural effusion
+T4	Medical-Problem 314 333	focal consolidation
+T5	Medical-Problem 337 349	pneumothorax
+T6	Medical-Anatomy 357 378	pulmonary vasculature
+T7	Medical-Assertion 382 385	not
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 386 394	engorged
+T9	Medical-Problem 456 476	Left hilar densities
+E7	Medical-Problem:T9
+T10	Lesion-Assertion 526 542	likely represent
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 543 552	calcified
+T12	Lesion-Description 553 564	lymph nodes
+T13	Medical-Assertion 680 682	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 683 708	acute osseous abnormality
+T15	Medical-Anatomy 738 743	lower
+T16	Medical-Assertion 797 799	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 800 823	cardiopulmonary finding
+T18	Medical-Problem 835 841	trauma
+E13	Medical-Problem:T18
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T2
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

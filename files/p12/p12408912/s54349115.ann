@@ -1,0 +1,25 @@
+T1	Medical-Problem 190 211;213 230	interval worsening of the consolidation
+T2	Medical-Anatomy 238 245	lingula
+T3	Medical-Problem 301 331	persistent atelectatic changes
+T4	Medical-Anatomy 339 349	right base
+T5	Medical-Problem 356 367	volume loss
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 420 430	left heart
+T7	Medical-Problem 476 510	adjacent parenchymal opacification
+T8	Medical-Assertion 571 573	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 574 590	pleural effusion
+T10	Medical-Problem 595 607	pneumothorax
+T11	Medical-Problem 627 650	Worsening opacification
+T12	Medical-Anatomy 658 665	lingula
+T13	Medical-Assertion 666 680	concerning for
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 681 696;698 707	postobstructive pneumonia
+T15	Medical-Anatomy 738 748	right base
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13 has-Medical-Anatomy:T15

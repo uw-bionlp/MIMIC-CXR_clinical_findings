@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 459 468	Left lung
+T2	Medical-Problem 472 497	generally more radiodense
+T3	Medical-Assertion 547 555	probably
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 572 587	terminated ECMO
+T5	Medical-Assertion 589 596	perhaps
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 597 617	widespread pneumonia
+T7	Medical-Problem 665 696	smaller region of consolidation
+T8	Medical-Anatomy 705 725	parahilar right lung
+T9	Medical-Problem 834 854	widespread pneumonia
+E7	Medical-Problem:T9
+T10	Medical-Problem 866 892	asymmetric pulmonary edema
+E8	Medical-Problem:T10
+T11	Medical-Anatomy 970 989	mediastinal vessels
+T12	Medical-Assertion 994 997	not
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 998 1006	engorged
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

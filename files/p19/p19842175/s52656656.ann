@@ -1,0 +1,38 @@
+T1	Medical-Problem 33 62	Right middle lobe atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Assertion 64 75	less likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 76 85	infection
+T4	Medical-Problem 389 410	Ill-defined opacities
+T5	Medical-Anatomy 418 434	right lower lung
+T6	Medical-Assertion 484 500	likely represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 501 517	mild atelectasis
+T8	Medical-Problem 528 537	infection
+T9	Medical-Assertion 538 547;549 557	cannot be excluded
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 596 623;625 633	heart is mild to moderately enlarged
+E7	Medical-Problem:T10
+T11	Medical-Assertion 684 686	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 687 694;696 705	pleural effusions
+T13	Medical-Assertion 708 710	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 711 723	pneumothorax
+T15	Medical-Problem 734 746	Mild wedging
+T16	Medical-Anatomy 752 766;768 782	lower thoracic vertebral body
+T17	Medical-Problem 897 930	Mild right lower lung atelectasis
+E12	Medical-Problem:T17
+T18	Medical-Assertion 932 943	less likely
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 944 953	infection
+T20	Medical-Problem 963 992	Mild to moderate cardiomegaly
+E14	Medical-Problem:T20
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Anatomy:T16
+E13	Medical-Problem:T19 has-Medical-Assertion:T18

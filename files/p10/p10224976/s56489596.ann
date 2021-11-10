@@ -1,0 +1,26 @@
+T1	Lesion-Description 373 377	mass
+T2	Lesion-Anatomy 385 396	right hilum
+T3	Lesion-Size-Trend 400 409	unchanged
+A1	Lesion-Size-TrendValue T3 no-change
+T4	Medical-Problem 426 455	increased atelectatis changes
+T5	Medical-Anatomy 463 473	right base
+T6	Medical-Problem 482 516	right pleural thickening is stable
+E5	Medical-Problem:T6
+T7	Medical-Anatomy 569 578	left lung
+T8	Medical-Problem 586 592;594 605	linear atelectasis
+T9	Medical-Assertion 611 618	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 619 635	pleural effusion
+T11	Medical-Problem 718 741	Increased opacification
+T12	Medical-Anatomy 749 759	right lung
+T13	Medical-Assertion 761 773	probably for
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 774 792;794 805	progression of the atelectasis
+T15	Medical-Problem 810 836	Minimal linear atelectasis
+E12	Medical-Problem:T15
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 355 370	left lower lobe
+T2	Medical-Assertion 375 381	likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 382 393	atelectasis
+T4	Medical-Assertion 405 407	no
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 409 421	pneumothorax
+T6	Medical-Problem 425 440	large effusions
+T7	Medical-Problem 443 456	New opacities
+T8	Medical-Anatomy 464 480	right upper lobe
+T9	Medical-Assertion 481 486;488 497	could represent
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 498 508	aspiration
+T11	Medical-Assertion 520 522	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 523 544	overt pulmonary edema
+T13	Medical-Problem 547 564	Biapical scarring
+E9	Medical-Problem:T13
+T14	Medical-Problem 600 613	New opacities
+T15	Medical-Anatomy 621 637	right upper lobe
+T16	Medical-Assertion 638 653	could represent
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 654 664	aspiration
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

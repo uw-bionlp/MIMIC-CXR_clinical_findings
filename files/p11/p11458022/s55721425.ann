@@ -1,0 +1,41 @@
+T1	Medical-Assertion 489 491	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 492 519	configurational abnormality
+T3	Medical-Assertion 610 613	not
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 615 624	congested
+T5	Medical-Assertion 627 629	No
+A3	Medical-AssertionValue T5 absent
+T6	Medical-Problem 630 668	signs of acute parenchymal infiltrates
+T7	Medical-Anatomy 738 748	diaphragms
+T8	Medical-Problem 756 770;772 780	relatively low position
+T9	Medical-Problem 785 801	appear flattened
+T10	Medical-Problem 827 831	COPD
+T11	Medical-Problem 841 849;851 866	acute or new infiltrates
+E8	Medical-Problem:T11
+T12	Medical-Problem 924 963	moderate degree of degenerative changes
+T13	Medical-Anatomy 971 1000;1002 1012	thoracic spine, mostly in the lower half
+T14	Medical-Assertion 1027 1038	no evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 1046 1072;1074 1082	vertebral body compression fracture
+T16	Medical-Assertion 1123 1125	no
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 1126 1153	acute pulmonary infiltrates
+T18	Lesion-Assertion 1155 1157	no
+A6	Lesion-AssertionValue T18 absent
+T19	Lesion-Characteristic 1159 1169	suspicious
+T20	Lesion-Description 1170 1182	mass lesions
+T21	Medical-Assertion 1202 1215	suggestive of
+A7	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1216 1220	COPD
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Lesion-Description:T20 has-Lesion-Assertion:T18 has-Lesion-Characteristic:T19
+E15	Medical-Problem:T22 has-Medical-Assertion:T21

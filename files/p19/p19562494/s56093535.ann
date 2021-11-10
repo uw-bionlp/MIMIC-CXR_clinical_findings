@@ -1,0 +1,32 @@
+T1	Medical-Problem 512 536	large left hiatal hernia
+E1	Medical-Problem:T1
+T2	Medical-Problem 555 578	extensive opacification
+T3	Medical-Anatomy 586 610	left mid and lower zones
+T4	Medical-Problem 641 664	additional hazy opacity
+T5	Medical-Anatomy 684 689;691 721	lower portion of the left upper zone
+T6	Medical-Anatomy 730 740	right lung
+T7	Medical-Problem 772 784	hazy opacity
+T8	Medical-Anatomy 788 803	right lung base
+T9	Medical-Assertion 811 824	could reflect
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 825 838	pleural fluid
+T11	Medical-Problem 843 862	underlying collapse
+T12	Medical-Problem 871 884	consolidation
+T13	Medical-Problem 887 920	Background interstitial opacities
+T14	Medical-Anatomy 928 947	right upper and mid
+T15	Medical-Assertion 949 964	could represent
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 972 990	interstitial edema
+T17	Medical-Problem 994 1024	other interstitial infiltrates
+T18	Medical-Problem 1164 1180	new hazy opacity
+T19	Medical-Anatomy 1188 1192;1194 1204	left upper zone
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T6 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Anatomy:T6 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19

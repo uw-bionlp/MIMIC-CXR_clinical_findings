@@ -1,0 +1,17 @@
+T1	Medical-Problem 253 270	increased density
+T2	Medical-Anatomy 301 312	mediastinal
+T3	Medical-Anatomy 317 341	right suprahilar regions
+T4	Lesion-Anatomy 359 370	mediastinal
+T5	Lesion-Description 371 375	mass
+T6	Medical-Problem 393 430	distal right upper lobe opacification
+E6	Medical-Problem:T6
+T7	Medical-Problem 449 474	postobstructive pneumonia
+E7	Medical-Problem:T7
+T8	Medical-Assertion 595 597	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 599 611	pneumothorax
+T10	Medical-Problem 615 631	pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8

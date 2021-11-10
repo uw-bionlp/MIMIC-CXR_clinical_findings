@@ -1,0 +1,21 @@
+T1	Medical-Problem 202 216	patchy opacity
+T2	Medical-Anatomy 224 229;231 249	right lower and mid lung
+T3	Medical-Assertion 250 265	most consistent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 273 282	pneumonia
+T5	Medical-Anatomy 292 301	left lung
+T6	Medical-Problem 315 329	patchy opacity
+T7	Medical-Anatomy 337 345	mid lung
+T8	Medical-Assertion 357 359	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 360 376	pleural effusion
+T10	Medical-Problem 379 391	pneumothorax
+T11	Medical-Problem 396 411	pulmonary edema
+T12	Medical-Problem 474 494	Multifocal pneumonia
+E10	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8

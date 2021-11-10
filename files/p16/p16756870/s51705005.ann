@@ -1,0 +1,32 @@
+T1	Medical-Problem 214 223	elevation
+T2	Medical-Anatomy 231 250	right hemidiaphragm
+T3	Medical-Problem 256 280	indeterminate chronicity
+E3	Medical-Problem:T3
+T4	Medical-Assertion 282 284	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 285 305	focal consolidations
+T6	Medical-Assertion 306 320	concerning for
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 321 330	pneumonia
+T8	Medical-Assertion 357 359	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 360 382	large pleural effusion
+T10	Medical-Problem 386 398	pneumothorax
+T11	Medical-Problem 407 412;414 430	lower lobe atelectasis
+E8	Medical-Problem:T11
+T12	Medical-Assertion 451 453	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 454 474	focal consolidations
+T14	Medical-Assertion 475 489	concerning for
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 490 499	pneumonia
+T16	Medical-Anatomy 530 549	right hemidiaphragm
+T17	Medical-Problem 557 581	indeterminate chronicity
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T12 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Anatomy:T16

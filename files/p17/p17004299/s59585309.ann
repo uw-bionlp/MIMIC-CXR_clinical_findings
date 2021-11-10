@@ -1,0 +1,25 @@
+T1	Medical-Problem 274 308	Heterogeneous, irregular opacities
+T2	Medical-Anatomy 316 332	right lower lung
+T3	Medical-Assertion 337 343;345 359	highly suspicious for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 360 369	pneumonia
+T5	Medical-Problem 372 394	Streaks of atelectasis
+T6	Medical-Anatomy 414 423;425 429	left lung base
+T7	Medical-Problem 441 461	lung volumes are low
+E6	Medical-Problem:T7
+T8	Medical-Assertion 473 475	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 476 498	large pleural effusion
+T10	Medical-Problem 503 515	pneumothorax
+T11	Medical-Problem 533 556	Heterogeneous opacities
+T12	Medical-Anatomy 564 580	right lower lung
+T13	Medical-Assertion 585 595;597 600	suspicious for
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 601 610	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

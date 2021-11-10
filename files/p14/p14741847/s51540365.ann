@@ -1,0 +1,12 @@
+T1	Medical-Problem 304 312;314 321	airspace opacity
+T2	Medical-Problem 327 349	areas of consolidation
+T3	Medical-Anatomy 350 356	mostly
+T4	Medical-Anatomy 368 391;393 411	left lung, particularly at the upper lobes
+T5	Medical-Problem 446 469;471 480	small bilateral pleural effusions
+E5	Medical-Problem:T5
+T6	Medical-Assertion 493 495	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 496 510	pneumothoraces
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6

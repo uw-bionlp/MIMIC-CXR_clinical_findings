@@ -1,0 +1,58 @@
+T1	Medical-Problem 333 344	Enlargement
+T2	Medical-Anatomy 352 363	right hilus
+T3	Lesion-Assertion 367 380	likely due to
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Description 382 397	lymphadenopathy
+T5	Lesion-Anatomy 404 424	right apical primary
+T6	Lesion-Description 425 431	lesion
+T7	Lesion-Size-Trend 436 453	increased in size
+A2	Lesion-Size-TrendValue T7 increasing
+T8	Medical-Problem 483 521	mild leftward deviation of the trachea
+E6	Medical-Problem:T8
+T9	Medical-Assertion 522 532;534 536	suggestive of
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 537 557	mediastinal invasion
+T11	Medical-Problem 560 579	Reticular opacities
+T12	Medical-Anatomy 587 611	right mid and upper lung
+T13	Medical-Assertion 618 631	may be due to
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 632 662	post radiative fibrotic change
+T15	Medical-Problem 671 684;686 695	postradiation pneumonia
+T16	Medical-Assertion 696 714	cannot be excluded
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Assertion 774 776	no
+A6	Medical-AssertionValue T17 absent
+T18	Medical-Problem 777 793	pleural effusion
+T19	Medical-Problem 797 809	pneumothorax
+T20	Lesion-Size-Trend 829 854	Interval increase in size
+A7	Lesion-Size-TrendValue T20 increasing
+T21	Lesion-Anatomy 858 883	right apical primary lung
+T22	Lesion-Description 884 890	lesion
+T23	Medical-Problem 893 901	Fullness
+T24	Medical-Anatomy 910 920	right hila
+T25	Medical-Assertion 921 934	suggestive of
+A8	Medical-AssertionValue T25 possible
+T26	Lesion-Description 935 950	lymphadenopathy
+E18	Lesion-Description:T26
+T27	Medical-Problem 953 982	Increased reticular opacities
+T28	Medical-Anatomy 991 1015	right mid and upper lung
+T29	Medical-Assertion 1016 1029	may be due to
+A9	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1030 1052	postradiation fibrosis
+T31	Medical-Problem 1064 1088	post radiation pneumonia
+T32	Medical-Assertion 1089 1107	cannot be excluded
+A10	Medical-AssertionValue T32 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Lesion-Description:T4 has-Lesion-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T16
+E12	Medical-Problem:T18 has-Medical-Assertion:T17
+E13	Medical-Problem:T19 has-Medical-Assertion:T17
+E15	Lesion-Description:T22 has-Lesion-Size-Trend:T20 has-Lesion-Anatomy:T21
+E16	Medical-Problem:T23 has-Medical-Anatomy:T24 has-Medical-Assertion:T25
+E19	Medical-Problem:T27 has-Medical-Anatomy:T28
+E21	Medical-Problem:T30 has-Medical-Anatomy:T28 has-Medical-Assertion:T29
+E22	Medical-Problem:T31 has-Medical-Anatomy:T28 has-Medical-Assertion:T32

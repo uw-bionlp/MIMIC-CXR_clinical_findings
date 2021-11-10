@@ -1,0 +1,35 @@
+T1	Medical-Problem 239 252	malpositioned
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 333 337	Lung
+T3	Medical-Problem 361 370;372 388	increased linear opacities
+T4	Medical-Anatomy 407 417	upper lobe
+T5	Medical-Problem 426 435	emphysema
+T6	Medical-Problem 438 448;450 459	New linear opacities
+T7	Medical-Anatomy 467 491	left retrocardiac region
+T8	Medical-Assertion 495 501	likely
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 502 520	linear atelectasis
+T10	Medical-Assertion 533 535	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 536 552	pleural effusion
+T12	Medical-Problem 556 568	pneumothorax
+T13	Medical-Assertion 625 627	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 628 640	pneumothorax
+T15	Medical-Problem 669 682	malpositioned
+E12	Medical-Problem:T15
+T16	Medical-Assertion 752 754	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 755 772	new consolidation
+T18	Medical-Assertion 773 787	suggestive for
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Problem 788 793;795 818	acute cardiopulmonary process
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

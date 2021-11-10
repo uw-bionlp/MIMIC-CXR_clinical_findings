@@ -1,0 +1,26 @@
+T1	Medical-Problem 190 200	Flattening
+T2	Medical-Anatomy 208 218	diaphragms
+T3	Medical-Problem 239 243	COPD
+T4	Medical-Problem 255 276	bibasilar atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 283 290	cardiac
+T6	Medical-Assertion 306 309	not
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 310 318	enlarged
+T8	Medical-Assertion 321 323	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 324 337	consolidation
+T10	Medical-Problem 341 353	pneumothorax
+T11	Medical-Problem 367 377;379 393	Left-sided pleural plaque
+E9	Medical-Problem:T11
+T12	Medical-Problem 463 467	COPD
+E10	Medical-Problem:T12
+T13	Medical-Assertion 470 472	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 473 502	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,22 @@
+T1	Medical-Problem 33 53	Multifocal pneumonia
+T2	Medical-Anatomy 68 96	right middle and lower lobes
+T3	Medical-Problem 484 496	lung opacity
+T4	Medical-Anatomy 510 528	right heart border
+T5	Medical-Anatomy 533 538;540 553	right hemidiaphragm
+T6	Medical-Problem 560 583	corresponding opacities
+T7	Medical-Assertion 710 712	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 713 722	pulmonary
+E7	Medical-Problem:T8
+T9	Medical-Problem 723 728	edema
+T10	Medical-Problem 730 746	pleural effusion
+T11	Medical-Problem 751 763	pneumothorax
+T12	Medical-Problem 791 800	pneumonia
+T13	Medical-Anatomy 815 843	right middle and lower lobes
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E10	Medical-Problem:T11 has-Medical-Assertion:T7
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13

@@ -1,0 +1,35 @@
+T1	Medical-Problem 33 52	Displaced fractures
+T2	Medical-Anatomy 56 95	left posterior lateral ribs 5 through 8
+T3	Medical-Problem 101 111;113 130	left lower  lobe atelectasis
+T4	Medical-Assertion 555 557	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 558 574	pleural effusion
+T6	Medical-Problem 578 590	pneumothorax
+T7	Medical-Problem 626 630;632 648	left base atelectasis
+E6	Medical-Problem:T7
+T8	Medical-Problem 651 669	Multiple displaced
+E7	Medical-Problem:T8
+T9	Medical-Problem 670 683	rib fractures
+T10	Medical-Anatomy 701 705;707 744	left posterior lateral ribs including ribs
+T11	Medical-Problem 766 775	fractures
+T12	Medical-Assertion 803 816	not well seen
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 852 871	Displaced fractures
+T14	Medical-Anatomy 875 914	left posterior lateral ribs 5 through 8
+T15	Medical-Problem 920 930;932 948	left lower lobe atelectasis
+E13	Medical-Problem:T15
+T16	Medical-Problem 950 969	pulmonary contusion
+T17	Medical-Assertion 970 982	not excluded
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Assertion 985 987	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 988 1000	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T18

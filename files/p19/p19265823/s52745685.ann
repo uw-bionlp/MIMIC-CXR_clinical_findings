@@ -1,0 +1,31 @@
+T1	Medical-Problem 318 326	widening
+T2	Medical-Anatomy 334 354	superior mediastinum
+T3	Lesion-Description 370 385	lymphadenopathy
+T4	Lesion-Anatomy 393 425	right lower paratracheal station
+T5	Medical-Anatomy 450 455	heart
+T6	Medical-Assertion 459 462	not
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 463 471	enlarged
+T8	Medical-Assertion 483 485	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 486 498	pneumothorax
+T10	Medical-Problem 502 518	pleural effusion
+T11	Medical-Problem 523 536	consolidation
+T12	Medical-Problem 560 568	Widening
+T13	Medical-Anatomy 576 596	superior mediastinum
+T14	Lesion-Assertion 600 614	concerning for
+A3	Lesion-AssertionValue T14 possible
+T15	Lesion-Description 615 630	lymphadenopathy
+T16	Lesion-Anatomy 639 671	right lower paratracheal station
+T17	Medical-Assertion 694 696	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 697 706	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Lesion-Description:T15 has-Lesion-Assertion:T14 has-Lesion-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

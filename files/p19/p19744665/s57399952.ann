@@ -1,0 +1,30 @@
+T1	Medical-Problem 154 174	reported abnormality
+T2	Medical-Anatomy 279 292;294 303	left anterior first rib
+T3	Lesion-Assertion 311 322	may reflect
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Size 325 330	small
+T5	Lesion-Description 331 342	bone island
+T6	Lesion-Anatomy 362 368;370 374	apical lung
+T7	Lesion-Description 375 381	nodule
+T8	Medical-Problem 509 525	mild volume loss
+E7	Medical-Problem:T8
+T9	Medical-Problem 531 572	areas of parenchymal and pleural scarring
+E8	Medical-Problem:T9
+T10	Medical-Problem 598 603;605 623	Aorta is mildly tortuous
+E9	Medical-Problem:T10
+T11	Lesion-Characteristic 685 690	Dense
+T12	Lesion-Anatomy 691 702	left apical
+T13	Lesion-Description 703 718	nodular opacity
+T14	Lesion-Assertion 778 795	probably reflects
+A2	Lesion-AssertionValue T14 possible
+T15	Lesion-Size 798 803	small
+T16	Lesion-Description 804 815	bone island
+T17	Lesion-Characteristic 820 829	calcified
+T18	Lesion-Anatomy 830 842	right apical
+T19	Lesion-Description 843 852	granuloma
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Assertion:T3 has-Lesion-Size-Present:T4
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6
+E12	Lesion-Description:T13 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12
+E14	Lesion-Description:T16 has-Lesion-Assertion:T14 has-Lesion-Size-Present:T15
+E17	Lesion-Description:T19 has-Lesion-Assertion:T14 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T18

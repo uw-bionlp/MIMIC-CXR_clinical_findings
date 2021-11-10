@@ -1,0 +1,29 @@
+T1	Medical-Assertion 290 293	not
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 294 302	engorged
+T3	Medical-Problem 304 310	Patchy
+E2	Medical-Problem:T3
+T4	Lesion-Characteristic 311 322	ill-defined
+T5	Lesion-Description 323 340	nodular opacities
+T6	Lesion-Anatomy 351 365;367 396	throughout the right lung and left lung base
+T7	Medical-Anatomy 418 433	left upper lobe
+T8	Medical-Assertion 435 445;447 450	concerning for
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 451 471	multifocal pneumonia
+T10	Medical-Assertion 473 475	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 476 492	pleural effusion
+T12	Medical-Problem 496 508	pneumothorax
+T13	Medical-Assertion 521 523	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 525 550	acute osseous abnormality
+T15	Medical-Assertion 594 608	concerning for
+A5	Medical-AssertionValue T15 possible
+T16	Medical-Problem 609 629	multifocal pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

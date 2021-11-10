@@ -1,0 +1,22 @@
+T1	Medical-Problem 288 319	Moderate right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 321 346	interstitial infiltration
+T3	Medical-Anatomy 354 364	right lung
+T4	Lesion-Anatomy 371 381	right lung
+T5	Lesion-Description 382 388	nodule
+T6	Lesion-Characteristic 419 426	Central
+T7	Lesion-Description 427 437	adenopathy
+T8	Lesion-Anatomy 466 511	right paratracheal station of the mediastinum
+T9	Lesion-Size 551 556	large
+T10	Lesion-Description 557 561	mass
+T11	Lesion-Anatomy 569 586;588 598	base of the right hemithorax
+T12	Lesion-Size-Trend 632 641	unchanged
+A1	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 644 646	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 647 659	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E10	Lesion-Description:T10 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T11 has-Lesion-Size-Trend:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

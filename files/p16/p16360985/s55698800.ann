@@ -1,0 +1,21 @@
+T1	Medical-Problem 394 417	Consolidative opacities
+T2	Medical-Anatomy 432 457;459 470	left upper lobe and right middle lobe
+T3	Medical-Assertion 475 489	suspicious for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 490 510	multifocal pneumonia
+T5	Medical-Problem 513 523	Small left
+T6	Medical-Problem 524 532	effusion
+T7	Medical-Assertion 533 536;538 553	may also be present
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 565 567	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 568 583	pulmonary edema
+T10	Medical-Problem 809 821	Large hiatal
+E7	Medical-Problem:T10
+T11	Medical-Problem 822 828	hernia
+E8	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

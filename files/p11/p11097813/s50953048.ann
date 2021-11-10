@@ -1,0 +1,26 @@
+T1	Medical-Problem 226 233	Opacity
+T2	Medical-Anatomy 241 256	right lung base
+T3	Medical-Problem 301 328	new left lower lobe opacity
+T4	Medical-Anatomy 336 353	retrocardiac area
+T5	Medical-Assertion 364 378	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 379 388	pneumonia
+T7	Medical-Problem 392 402	aspiration
+T8	Medical-Problem 415 438;440 449	small bilateral pleural effusions
+E7	Medical-Problem:T8
+T9	Medical-Problem 524 551	New left lower lobe opacity
+E8	Medical-Problem:T9
+T10	Medical-Assertion 552 566	concerning for
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 567 576	pneumonia
+T12	Medical-Problem 581 601	aspiration pneumonia
+T13	Medical-Problem 604 633	Improving right basal opacity
+E11	Medical-Problem:T13
+T14	Medical-Problem 636 653;655 664	Bilateral pleural effusions
+E12	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10

@@ -1,0 +1,24 @@
+T1	Medical-Problem 166 186	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 272 289	basilar opacities
+T3	Medical-Problem 303 319	layering opacity
+T4	Medical-Anatomy 330 373	posterior margin of the right hemidiaphragm
+T5	Medical-Assertion 375 381;383 396	highly suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 397 408	atelectasis
+T7	Medical-Problem 536 561	Streaky basilar opacities
+E6	Medical-Problem:T7
+T8	Medical-Assertion 575 597	suspected to represent
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 599 610	atelectasis
+T10	Medical-Problem 629 650	very low lung volumes
+T11	Medical-Assertion 662 674;676 683	difficult to exclude
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 684 704	developing pneumonia
+T13	Medical-Anatomy 712 727	right lung base
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13

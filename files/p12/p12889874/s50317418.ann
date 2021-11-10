@@ -1,0 +1,18 @@
+T1	Medical-Assertion 253 255	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 256 271	pulmonary edema
+T3	Medical-Problem 274 308	Layering moderate pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 314 323;325 336	bibasilar atelectasis
+E3	Medical-Problem:T4
+T5	Medical-Assertion 358 360	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 361 373	pneumothorax
+T7	Medical-Assertion 590 592	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 593 608	pulmonary edema
+T9	Medical-Problem 617 652	Unchanged layering pleural effusion
+E6	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7

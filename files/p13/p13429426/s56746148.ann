@@ -1,0 +1,28 @@
+T1	Medical-Problem 614 642;644 669	new mild to moderate central vascular hilar congestion
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 682 696	left lung base
+T3	Medical-Problem 698 709	volume loss
+T4	Medical-Problem 717 720;722 738	new pleural effusion
+E4	Medical-Problem:T4
+T5	Medical-Assertion 739 757	probably including
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 758 769	atelectasis
+T7	Lesion-Description 778 787	carcinoma
+T8	Lesion-Assertion 791 794;796 803	not visible
+A2	Lesion-AssertionValue T8 absent
+T9	Medical-Problem 855 887	mild to moderate pulmonary edema
+E7	Medical-Problem:T9
+T10	Medical-Problem 889 900	Volume loss
+T11	Medical-Problem 906 919	opacification
+T12	Medical-Anatomy 927 941	left lung base
+T13	Medical-Assertion 943 958	probably due to
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 961 977	pleural effusion
+T15	Medical-Problem 984 995	atelectasis
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Lesion-Description:T7 has-Lesion-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T12
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

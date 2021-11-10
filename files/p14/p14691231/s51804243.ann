@@ -1,0 +1,41 @@
+T1	Medical-Problem 438 457	homogeneous opacity
+T2	Medical-Anatomy 465 480	left hemithorax
+T3	Medical-Anatomy 504 540	left diaphragmatic surface and heart
+T4	Medical-Problem 567 594	large left pleural effusion
+T5	Medical-Problem 600 627	left lower lobe atelectasis
+E5	Medical-Problem:T5
+T6	Medical-Problem 661 676	Mild prominence
+T7	Medical-Anatomy 684 695	right hilum
+T8	Medical-Problem 793 814;816 836	multiple fluid-filled loops of small bowel
+E8	Medical-Problem:T8
+T9	Medical-Problem 842 858	air-fluid levels
+E9	Medical-Problem:T9
+T10	Medical-Anatomy 864 871	gastric
+E10	Medical-Anatomy:T10
+T11	Medical-Problem 916 927	enchondroma
+T12	Medical-Assertion 928 930	vs
+A1	Medical-AssertionValue T12 possible
+T13	Medical-Problem 930 931	.
+E12	Medical-Problem:T13
+T14	Medical-Problem 932 939	infarct
+T15	Medical-Anatomy 956 968;970 974	left humeral neck
+T16	Medical-Problem 1002 1037	anterior wedge compression fracture
+T17	Medical-Anatomy 1046 1066	lower thoracic spine
+T18	Medical-Problem 1088 1115	Large left pleural effusion
+E17	Medical-Problem:T18
+T19	Medical-Problem 1142 1167	Multiple air-fluid levels
+T20	Medical-Anatomy 1175 1206	partially evaluated small bowel
+T21	Medical-Assertion 1212 1226	concerning for
+A2	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1227 1250	small bowel obstruction
+T23	Medical-Problem 1342 1394	Stable multiple anterior wedge compression fractures
+T24	Medical-Anatomy 1402 1416;1418 1427	lower thoracic vertebrae
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E11	Medical-Problem:T11 has-Medical-Assertion:T12 has-Medical-Anatomy:T15
+E13	Medical-Problem:T14 has-Medical-Assertion:T12 has-Medical-Anatomy:T15
+E15	Medical-Problem:T16 has-Medical-Anatomy:T17
+E18	Medical-Problem:T19 has-Medical-Anatomy:T20
+E20	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E21	Medical-Problem:T23 has-Medical-Anatomy:T24

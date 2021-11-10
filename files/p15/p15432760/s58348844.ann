@@ -1,0 +1,35 @@
+T1	Medical-Problem 341 354	consolidation
+T2	Medical-Anatomy 362 366;368 391	left lower lobe silhouetting
+T3	Medical-Problem 423 440;442 453	similar degree of volume loss
+E3	Medical-Problem:T3
+T4	Medical-Problem 460 474	leftward shift
+T5	Medical-Anatomy 482 493	mediastinum
+T6	Medical-Problem 528 557	Atherosclerotic calcification
+T7	Medical-Anatomy 573 584	aortic arch
+T8	Medical-Problem 646 665;667 671	silhouetting on the left
+E8	Medical-Problem:T8
+T9	Medical-Assertion 674 676	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 677 702	acute osseous abnormality
+T11	Medical-Problem 734 747	Consolidation
+T12	Medical-Anatomy 755 770	left lower lobe
+T13	Medical-Problem 776 784	at least
+E12	Medical-Problem:T13
+T14	Medical-Problem 785 799;801 815	some component of volume loss
+T15	Medical-Assertion 822 835	suggestive of
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 836 854	probable infection
+T17	Medical-Problem 859 871;873 884	component of atelectasis
+T18	Lesion-Characteristic 1025 1036	obstructing
+T19	Lesion-Description 1037 1043	lesion
+T20	Medical-Problem 1047 1069	persistent atelectasis
+E18	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Anatomy:T12
+E14	Medical-Problem:T16 has-Medical-Anatomy:T12 has-Medical-Assertion:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T12 has-Medical-Assertion:T15
+E17	Lesion-Description:T19 has-Lesion-Characteristic:T18

@@ -1,0 +1,13 @@
+T1	Medical-Problem 421 425;427 438	mild atelectasis
+T2	Medical-Assertion 443 451	possible
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 452 468	pleural effusion
+T4	Medical-Anatomy 476 503;505 518	costodiaphragmatic angle on the left side
+T5	Medical-Problem 521 565	Small amount of subcutaneous air on the left
+E4	Medical-Problem:T5
+T6	Medical-Assertion 615 617	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 618 630	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4
+E2	Medical-Problem:T3 has-Medical-Assertion:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6

@@ -1,0 +1,17 @@
+T1	Medical-Problem 333 344	Atelectasis
+T2	Medical-Anatomy 352 368	right lower lobe
+T3	Medical-Problem 418 446	large right pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 448 478;480 488	moderate to large left pleural effusion
+E4	Medical-Problem:T4
+T5	Lesion-Anatomy 494 505	Right hilar
+T6	Lesion-Anatomy 510 522	right apical
+T7	Lesion-Description 523 529	masses
+T8	Lesion-Anatomy 531 542	mediastinal
+T9	Lesion-Description 543 558	lymphadenopathy
+T10	Lesion-Characteristic 575 582	osseous
+T11	Medical-Assertion 630 632;634 641	no evident
+A1	Medical-AssertionValue T11 absent
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E9	Lesion-Description:T9 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T10

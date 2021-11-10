@@ -1,0 +1,67 @@
+T1	Medical-Problem 411 422	Enlargement
+T2	Medical-Anatomy 426 444	both hilar regions
+T3	Medical-Problem 464 474;476 505	underlying pulmonary arterial dilatation
+T4	Medical-Assertion 533 536	not
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 537 545	engorged
+T6	Medical-Problem 556 565	emphysema
+T7	Medical-Problem 582 596	hyperinflation
+T8	Medical-Anatomy 604 609	lungs
+T9	Medical-Problem 618 630;632 640	left pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 658 686	trace right pleural effusion
+E9	Medical-Problem:T10
+T11	Lesion-Description 732 739	Nodular
+E10	Lesion-Description:T11
+T12	Lesion-Description 740 749	opacities
+T13	Medical-Anatomy 757 761	both
+E12	Medical-Anatomy:T13
+T14	Lesion-Size-Trend 782 799	grossly unchanged
+A2	Lesion-Size-TrendValue T14 no-change
+T15	Medical-Problem 845 851	Patchy
+E13	Medical-Problem:T15
+T16	Medical-Problem 852 857;859 874	right basilar opacity
+T17	Medical-Problem 879 892	consolidation
+T18	Medical-Anatomy 900 915	left lower lobe
+T19	Medical-Problem 965 977	Pneumothorax
+E17	Medical-Problem:T19
+T20	Medical-Problem 992 1003	Compression
+T21	Medical-Problem 1004 1013	deformity
+E19	Medical-Problem:T21
+T22	Medical-Anatomy 1024 1051	mid thoracic vertebral body
+T23	Medical-Problem 1089 1099	Persistent
+E21	Medical-Problem:T23
+T24	Medical-Problem 1100 1109	opacities
+T25	Medical-Anatomy 1117 1127	lung bases
+T26	Medical-Assertion 1128 1142	concerning for
+A3	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1143 1152	pneumonia
+T28	Medical-Problem 1157 1167	aspiration
+T29	Medical-Problem 1173 1194	continued atelectasis
+T30	Medical-Anatomy 1202 1217	left lower lobe
+T31	Medical-Problem 1229 1250	left pleural effusion
+E28	Medical-Problem:T31
+T32	Medical-Problem 1272 1294	right pleural effusion
+E29	Medical-Problem:T32
+T33	Lesion-Description 1332 1341	opacities
+T34	Lesion-Anatomy 1345 1361	both upper lobes
+T35	Lesion-Size-Trend 1366 1386	relatively unchanged
+A4	Lesion-Size-TrendValue T35 no-change
+T36	Medical-Problem 1446 1455	emphysema
+E32	Medical-Problem:T36
+T37	Medical-Problem 1461 1492	pulmonary arterial hypertension
+E33	Medical-Problem:T37
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E11	Lesion-Description:T12 has-Lesion-Size-Trend:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T18
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Medical-Problem:T20 has-Medical-Anatomy:T22
+E22	Medical-Problem:T24 has-Medical-Anatomy:T25
+E24	Medical-Problem:T27 has-Medical-Anatomy:T25 has-Medical-Assertion:T26 has-Medical-Anatomy:T30
+E25	Medical-Problem:T28 has-Medical-Anatomy:T25 has-Medical-Assertion:T26 has-Medical-Anatomy:T30
+E26	Medical-Problem:T29 has-Medical-Anatomy:T30
+E30	Lesion-Description:T33 has-Lesion-Anatomy:T34 has-Lesion-Size-Trend:T35

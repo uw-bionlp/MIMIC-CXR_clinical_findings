@@ -1,0 +1,30 @@
+T1	Medical-Problem 272 289	Poor air movement
+E1	Medical-Problem:T1
+T2	Medical-Problem 476 488	Cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 493 511;513 523	pulmonary vascular congestion
+E3	Medical-Problem:T3
+T4	Medical-Problem 653 662;664 671	new focal opacity
+T5	Medical-Anatomy 679 694	right lung base
+T6	Medical-Assertion 704 718	concerning for
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 722 740	infectious process
+T8	Medical-Assertion 743 745	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 746 768	large pleural effusion
+T10	Medical-Problem 772 784	pneumothorax
+T11	Medical-Problem 819 842	New focal consolidation
+T12	Medical-Anatomy 850 865	right lung base
+T13	Medical-Assertion 866 880	concerning for
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 881 890	pneumonia
+T15	Medical-Problem 1011 1023	cardiomegaly
+E12	Medical-Problem:T15
+T16	Medical-Problem 1029 1058	pulmonary vascular congestion
+E13	Medical-Problem:T16
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

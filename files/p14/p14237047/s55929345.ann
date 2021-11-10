@@ -1,0 +1,58 @@
+T1	Medical-Problem 265 277	pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 281 303	gross pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 326 344	linear atelectasis
+T4	Medical-Anatomy 352 380	right middle and lower lobes
+T5	Medical-Problem 393 423	increased retrocardiac opacity
+E5	Medical-Problem:T5
+T6	Medical-Assertion 430 445	likely reflects
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 446 457	atelectasis
+T8	Medical-Problem 466 488	superimposed infection
+T9	Medical-Assertion 489 518	would be difficult to exclude
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 559 589	left ventricular configuration
+E8	Medical-Problem:T10
+T11	Medical-Problem 594 612;614 619	calcified unfolded aorta
+E9	Medical-Problem:T11
+T12	Medical-Assertion 637 639	No
+A3	Medical-AssertionValue T12 absent
+T13	Lesion-Anatomy 657 672	left upper zone
+T14	Lesion-Characteristic 673 682	calcified
+T15	Lesion-Description 683 693	granulomas
+T16	Lesion-Characteristic 698 707	calcified
+T17	Lesion-Anatomy 708 713	hilar
+T18	Lesion-Anatomy 718 729	mediastinal
+T19	Lesion-Description 730 741	lymph nodes
+T20	Lesion-Characteristic 743 783	suggesting prior granulomatous infection
+T21	Lesion-Characteristic 794 806	noncalcified
+T22	Lesion-Description 807 812	nodes
+T23	Medical-Problem 1102 1114	pneumothorax
+E20	Medical-Problem:T23
+T24	Medical-Problem 1118 1132	gross effusion
+E21	Medical-Problem:T24
+T25	Medical-Anatomy 1149 1158	Bibasilar
+T26	Medical-Problem 1159 1168	opacities
+T27	Medical-Assertion 1169 1186	likely reflecting
+A4	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1187 1198	atelectasis
+T29	Medical-Problem 1207 1219;1221 1230	superimposed infection
+T30	Medical-Assertion 1234 1265	difficult to completely exclude
+A5	Medical-AssertionValue T30 possible
+T31	Lesion-Description 1270 1277	Nodular
+E26	Lesion-Description:T31
+T32	Medical-Problem 1278 1287	densities
+T33	Medical-Anatomy 1291 1306	left upper lobe
+T34	Medical-Problem 1326 1335	calcified
+E29	Medical-Problem:T34
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T14
+E16	Lesion-Description:T19 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T17 has-Lesion-Anatomy:T18 has-Lesion-Characteristic:T20
+E19	Lesion-Description:T22 has-Lesion-Characteristic:T21
+E23	Medical-Problem:T26 has-Medical-Anatomy:T25
+E24	Medical-Problem:T28 has-Medical-Anatomy:T25 has-Medical-Assertion:T27
+E25	Medical-Problem:T29 has-Medical-Assertion:T30
+E27	Medical-Problem:T32 has-Medical-Anatomy:T33

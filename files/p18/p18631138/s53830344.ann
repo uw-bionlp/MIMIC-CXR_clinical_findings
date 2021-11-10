@@ -1,0 +1,24 @@
+T1	Medical-Problem 33 46	Consolidation
+T2	Medical-Assertion 47 60	worrisome for
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 61 70	pneumonia
+T4	Medical-Anatomy 78 107;109 120	superior segment of the right  lower lobe
+T5	Medical-Problem 457 470	Consolidation
+T6	Medical-Anatomy 478 518	superior segment of the right lower lobe
+T7	Medical-Problem 545 554	pneumonia
+T8	Medical-Anatomy 561 565	left
+E7	Medical-Anatomy:T8
+T9	Medical-Assertion 582 584	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 585 592	pleural
+E8	Medical-Problem:T10
+T11	Medical-Problem 593 601	effusion
+T12	Medical-Problem 606 618	pneumothorax
+T13	Medical-Anatomy 723 763	superior segment of the right lower lobe
+E11	Medical-Anatomy:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4
+E2	Medical-Problem:T3 has-Medical-Assertion:T2 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9

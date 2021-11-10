@@ -1,0 +1,33 @@
+T1	Medical-Problem 459 475	Linear opacities
+T2	Medical-Anatomy 483 488	bases
+T3	Medical-Assertion 489 503	likely reflect
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 504 515	atelectasis
+T5	Medical-Problem 523 531	scarring
+T6	Medical-Anatomy 539 544	lungs
+T7	Medical-Assertion 559 575	without evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 579 607	focal airspace consolidation
+T9	Medical-Problem 620 629	pneumonia
+T10	Medical-Problem 632 654	Right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 657 659	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 660 672	pneumothorax
+T13	Medical-Assertion 675 677	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 678 687;689 694	pulmonary edema
+T15	Medical-Assertion 739 741	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 742 764	acute bony abnormality
+T17	Medical-Problem 768 788	Degenerative changes
+T18	Medical-Anatomy 796 814	mid thoracic spine
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Anatomy:T18

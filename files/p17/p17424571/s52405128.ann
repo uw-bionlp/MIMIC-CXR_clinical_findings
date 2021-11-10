@@ -1,0 +1,49 @@
+T1	Medical-Assertion 235 237	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 238 243;245 258	focal consolidation
+T3	Medical-Problem 262 273	evidence of
+E2	Medical-Problem:T3
+T4	Medical-Problem 274 286	pneumothorax
+T5	Medical-Problem 297 319	Trace pleural effusion
+E4	Medical-Problem:T5
+T6	Medical-Problem 349 386	small rounded 4-5 mm calcific density
+T7	Medical-Anatomy 408 432	anterior right first rib
+T8	Lesion-Assertion 439 452	may represent
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Description 455 466	bone island
+T10	Lesion-Characteristic 485 505	underlying calcified
+T11	Lesion-Description 506 515	granuloma
+T12	Medical-Problem 522 548	aorta is slightly tortuous
+E10	Medical-Problem:T12
+T13	Medical-Anatomy 555 562	cardiac
+T14	Medical-Assertion 577 580	not
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 581 589	enlarged
+T16	Medical-Problem 592 621	Retrocardiac density with air
+E13	Medical-Problem:T16
+T17	Medical-Assertion 671 675	most
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 694 707	hiatal hernia
+T19	Medical-Assertion 725 727	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 728 757	acute cardiopulmonary process
+T21	Medical-Assertion 760 768	Possible
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 769 782;784 792	trace pleural effusion
+T23	Medical-Assertion 806 808	no
+A7	Medical-AssertionValue T23 absent
+T24	Medical-Problem 809 838	acute cardiopulmonary process
+T25	Medical-Assertion 841 847	Likely
+A8	Medical-AssertionValue T25 possible
+T26	Medical-Problem 848 861	hiatal hernia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Lesion-Description:T9 has-Lesion-Assertion:T8
+E9	Lesion-Description:T11 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T10
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T24 has-Medical-Assertion:T23
+E18	Medical-Problem:T26 has-Medical-Assertion:T25

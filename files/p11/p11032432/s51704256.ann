@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 270 275;277 290	right hemidiaphragm
+T2	Medical-Problem 294 324	slightly persistently elevated
+T3	Medical-Problem 339 355	some atelectasis
+T4	Medical-Anatomy 364 379	right lung base
+T5	Medical-Anatomy 397 402	lungs
+T6	Medical-Assertion 418 429	no evidence
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 434 449	pulmonary edema
+T8	Medical-Problem 451 467	pleural effusion
+T9	Medical-Problem 469 481	pneumothorax
+T10	Medical-Problem 485 504	focal consolidation
+T11	Medical-Assertion 506 516	concerning
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 521 530	pneumonia
+T13	Medical-Assertion 630 632	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 633 662	acute cardiopulmonary process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Anatomy:T5 has-Medical-Assertion:T6 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

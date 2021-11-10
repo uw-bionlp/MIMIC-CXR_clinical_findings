@@ -1,0 +1,41 @@
+T1	Medical-Problem 305 329	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 342 353	sub carinal
+T3	Lesion-Description 354 358	mass
+T4	Medical-Assertion 359 370	may account
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 376 386	effacement
+T6	Medical-Anatomy 394 415	aortopulmonary window
+T7	Medical-Problem 471 516;518 541	increased vascular and interstitial markings, right-greater-than-left
+E6	Medical-Problem:T7
+T8	Medical-Problem 548 587	more focal patchy and confluent opacity
+T9	Medical-Anatomy 596 611	right lung base
+T10	Medical-Problem 614 642	Small right pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Assertion 705 707	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 708 720	pneumothorax
+T13	Medical-Assertion 797 799	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 800 812	pneumothorax
+T15	Medical-Problem 827 858	Increased interstitial markings
+E12	Medical-Problem:T15
+T16	Medical-Problem 861 881	More focal opacities
+T17	Medical-Anatomy 889 899;901 905	right lung base
+T18	Medical-Assertion 906 921	could represent
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 924 949	postobstructive pneumonia
+T20	Lesion-Characteristic 1014 1022	Stellate
+T21	Lesion-Anatomy 1023 1028	right
+T22	Lesion-Anatomy 1029 1045	right upper lobe
+T23	Lesion-Description 1046 1052	lesion
+T24	Lesion-Assertion 1083 1086;1088 1110	not definitely appreciated
+A5	Lesion-AssertionValue T24 absent
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18
+E19	Lesion-Description:T23 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T21 has-Lesion-Anatomy:T22 has-Lesion-Assertion:T24

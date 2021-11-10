@@ -1,0 +1,42 @@
+T1	Medical-Problem 282 289	opacity
+T2	Medical-Anatomy 312 328	right upper lung
+T3	Medical-Problem 345 355	prominence
+T4	Medical-Anatomy 363 401	hila and perihilar vessels bilaterally
+T5	Medical-Assertion 402 412	suggesting
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 413 417;419 434	some pulmonary edema
+T7	Medical-Problem 473 481	blunting
+T8	Medical-Anatomy 489 493;495 513	left costophrenic angle
+T9	Medical-Assertion 520 535	could be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 538 560	trace pleural effusion
+T11	Medical-Problem 575 589	linear opacity
+T12	Medical-Anatomy 610 640	lateral left mid to lower lung
+T13	Medical-Problem 664 669	aorta
+E11	Medical-Problem:T13
+T14	Medical-Problem 673 695	calcified and tortuous
+E12	Medical-Problem:T14
+T15	Medical-Anatomy 701 708	cardiac
+T16	Medical-Problem 724 751	mild to moderately enlarged
+T17	Medical-Problem 823 850	upper lung airspace opacity
+E15	Medical-Problem:T17
+T18	Medical-Assertion 854 867	worrisome for
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 868 877	pneumonia
+T20	Medical-Problem 881 891	aspiration
+T21	Medical-Anatomy 946 972	hila and perihilar vessels
+T22	Medical-Assertion 974 982	suggests
+A4	Medical-AssertionValue T22 possible
+T23	Medical-Problem 983 1003	some pulmonary edema
+T24	Medical-Problem 1005 1013	Enlarged
+E20	Medical-Problem:T24
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E14	Medical-Problem:T16 has-Medical-Anatomy:T15
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T18
+E19	Medical-Problem:T23 has-Medical-Anatomy:T21 has-Medical-Assertion:T22

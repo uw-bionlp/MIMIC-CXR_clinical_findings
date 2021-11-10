@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 250 271	pulmonary vascularity
+T2	Medical-Assertion 275 278	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 279 287	engorged
+T4	Medical-Problem 290 312	Minimal patchy opacity
+T5	Medical-Anatomy 325 340	left lower lobe
+T6	Medical-Assertion 341 354	could reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 358 375	area of infection
+T8	Medical-Assertion 410 412	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 413 429	pleural effusion
+T10	Medical-Problem 433 445	pneumothorax
+T11	Medical-Problem 463 501	Bilateral pleural thickening laterally
+E8	Medical-Problem:T11
+T12	Medical-Problem 534 564	Patchy left lower lobe opacity
+E9	Medical-Problem:T12
+T13	Medical-Assertion 565 578	could reflect
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 582 599	area of infection
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,36 @@
+T1	Medical-Problem 603 625	persistent atelectasis
+T2	Medical-Anatomy 633 648	left lower lobe
+T3	Medical-Assertion 656 664	probable
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 665 670;672 688	small pleural effusion
+T5	Medical-Anatomy 691 707	Right lower lobe
+T6	Medical-Problem 708 721	opacification
+T7	Medical-Assertion 761 774	likely due to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 775 802	developing pleural effusion
+T9	Medical-Assertion 805 807	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 808 817;819 832	new focal consolidation
+T11	Medical-Problem 837 849	pneumothorax
+T12	Medical-Problem 874 916	Progressing right lower lobe opacification
+E9	Medical-Problem:T12
+T13	Medical-Assertion 920 933	likely due to
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 934 944;946 962	developing pleural effusion
+T15	Medical-Assertion 965 967	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 968 980	pneumothorax
+T17	Medical-Problem 989 1027	Persistent left lower lobe atelectasis
+E12	Medical-Problem:T17
+T18	Medical-Assertion 1032 1040	probable
+A6	Medical-AssertionValue T18 possible
+T19	Medical-Problem 1041 1054;1056 1064	small pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T19 has-Medical-Assertion:T18

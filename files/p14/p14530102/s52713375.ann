@@ -1,0 +1,19 @@
+T1	Medical-Assertion 155 162	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 164 183	vascular congestion
+T3	Medical-Problem 187 203	pleural effusion
+T4	Lesion-Description 242 249	nodular
+E3	Lesion-Description:T4
+T5	Lesion-Description 250 257	opacity
+T6	Lesion-Anatomy 265 274	left apex
+T7	Lesion-Size-Trend 293 299	stable
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Lesion-Description 300 309	granuloma
+T9	Medical-Assertion 314 325	No evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 329 344	acute pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

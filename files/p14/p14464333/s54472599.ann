@@ -1,0 +1,17 @@
+T1	Medical-Assertion 303 305	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 306 318	pneumothorax
+T3	Medical-Problem 323 339	pleural effusion
+T4	Medical-Problem 341 366	Vaugely increased density
+T5	Medical-Anatomy 374 390	right lower lobe
+T6	Medical-Assertion 391 394;396 405	may represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 406 430	bronchovascular crowding
+T8	Medical-Problem 574 604	vague right lower lobe density
+E6	Medical-Problem:T8
+T9	Medical-Problem 627 640	consolidation
+E7	Medical-Problem:T9
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6

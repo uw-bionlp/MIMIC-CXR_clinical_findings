@@ -1,0 +1,26 @@
+T1	Medical-Problem 306 355	new, moderate interstitial and airspace opacities
+T2	Medical-Anatomy 363 374;376 399	lung bases, right greater than left
+T3	Medical-Problem 427 447	mild pulmonary edema
+T4	Medical-Anatomy 456 473	upper lung fields
+T5	Medical-Problem 538 567	new, moderate pulmonary edema
+T6	Medical-Anatomy 578 597	right hemidiaphragm
+T7	Medical-Assertion 622 635	probably from
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 636 647;649 661	dysfunction secondary to
+T9	Medical-Problem 666 687	hepatic abnormalities
+T10	Medical-Assertion 703 716	could explain
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 721 725;727 740	more focal opacity
+T12	Medical-Anatomy 748 763	right lung base
+T13	Medical-Problem 767 793	asymmetric pulmonary edema
+T14	Medical-Problem 805 815	aspiration
+T15	Medical-Problem 907 935	small right pleural effusion
+E13	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Assertion:T10 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T10 has-Medical-Anatomy:T12

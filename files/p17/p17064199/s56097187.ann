@@ -1,0 +1,38 @@
+T1	Medical-Problem 318 341;343 365	Moderate enlargement of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 385 399	thoracic aorta
+T3	Medical-Problem 403 412;414 436	diffusely calcified and tortuous
+T4	Medical-Problem 459 482;484 494	Mild pulmonary vascular congestion
+E4	Medical-Problem:T4
+T5	Medical-Problem 508 521	Focal opacity
+T6	Medical-Anatomy 529 548	left mid lung field
+T7	Medical-Assertion 552 562;564 567	concerning for
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 568 577	pneumonia
+T9	Medical-Assertion 586 608	appears to be possible
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 609 632;634 643	trace bilateral pleural effusions
+T11	Medical-Assertion 646 648	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 649 668	displaced fractures
+T13	Medical-Problem 693 710;712 719	mild degenerative changes
+T14	Medical-Anatomy 733 747	thoracic spine
+T15	Medical-Problem 768 781	Focal opacity
+T16	Medical-Anatomy 789 808	left mid lung field
+T17	Medical-Assertion 812 826	concerning for
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 827 836	pneumonia
+T19	Medical-Problem 839 843;845 874	Mild pulmonary vascular congestion
+E15	Medical-Problem:T19
+T20	Medical-Assertion 879 887	probable
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 888 921	trace bilateral pleural effusions
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

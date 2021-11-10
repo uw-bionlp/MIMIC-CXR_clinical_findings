@@ -1,0 +1,43 @@
+T1	Medical-Problem 356 368	Lungs remain
+E1	Medical-Problem:T1
+T2	Medical-Problem 369 388	quite low in volume
+E2	Medical-Problem:T2
+T3	Medical-Problem 400 430	new ground-glass opacification
+T4	Medical-Anatomy 439 451	left midlung
+T5	Medical-Problem 474 509	widespread interstitial abnormality
+E5	Medical-Problem:T5
+T6	Medical-Problem 528 544	low lung volumes
+E6	Medical-Problem:T6
+T7	Medical-Problem 549 566	bronchial cuffing
+E7	Medical-Problem:T7
+T8	Medical-Assertion 575 588	may have been
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 592 625	similar, ground-glass abnormality
+T10	Medical-Anatomy 633 643	lung bases
+T11	Medical-Assertion 748 770	Differential diagnosis
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 780 815	desquamative interstitial pneumonia
+T13	Medical-Problem 820 833	drug reaction
+T14	Lesion-Size 848 864	centimeter-sized
+T15	Lesion-Description 865 872	nodules
+T16	Lesion-Anatomy 880 889	left apex
+T17	Medical-Assertion 1042 1048	may be
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1049 1063	calcifications
+T19	Medical-Anatomy 1071 1075	hila
+T20	Medical-Anatomy 1080 1089;1091 1099	pulmonary arteries
+T21	Medical-Problem 1107 1122	mildly enlarged
+T22	Lesion-Assertion 1133 1135	no
+A4	Lesion-AssertionValue T22 absent
+T23	Medical-Problem 1148 1166;1168 1178	severe mediastinal adenopathy
+E19	Medical-Problem:T23
+T24	Lesion-Characteristic 1183 1199	enlarged central
+T25	Lesion-Description 1200 1211	lymph nodes
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Lesion-Description:T15 has-Lesion-Size-Present:T14 has-Lesion-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17 has-Medical-Anatomy:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Anatomy:T20
+E21	Lesion-Description:T25 has-Lesion-Assertion:T22 has-Lesion-Characteristic:T24

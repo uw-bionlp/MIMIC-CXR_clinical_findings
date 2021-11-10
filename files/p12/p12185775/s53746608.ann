@@ -1,0 +1,12 @@
+T1	Medical-Problem 300 322	Diffuse lung opacities
+T2	Medical-Anatomy 344 354;356 360	left lower lobe
+T3	Medical-Problem 367 384	new focal opacity
+T4	Medical-Anatomy 392 407	left lower lobe
+T5	Medical-Assertion 408 423	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 425 436	atelectasis
+T7	Medical-Problem 444 454	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5

@@ -1,0 +1,32 @@
+T1	Medical-Problem 42 60	increasing opacity
+T2	Medical-Anatomy 68 83	right lung base
+T3	Medical-Assertion 84 98	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 99 107;109 119	evolving  pneumonia
+T5	Medical-Problem 142 170	interval increase in opacity
+T6	Medical-Anatomy 178 187	left lung
+T7	Medical-Assertion 190 204	concerning for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 205 236	aspiration/developing pneumonia
+T9	Medical-Anatomy 777 792	left upper lobe
+E7	Medical-Anatomy:T9
+T10	Medical-Problem 865 890	Less severe consolidation
+E8	Medical-Problem:T10
+T11	Medical-Problem 1057 1084	small left pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Assertion 1110 1118	suggests
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 1121 1143	large scale aspiration
+T14	Medical-Problem 1176 1206	incompletely treated pneumonia
+E11	Medical-Problem:T14
+T15	Medical-Problem 1210 1229	repeated aspiration
+T16	Medical-Problem 1246 1268	right pleural effusion
+E13	Medical-Problem:T16
+T17	Medical-Problem 1295 1313	developing empyema
+E14	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T12

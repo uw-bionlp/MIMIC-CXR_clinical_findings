@@ -1,0 +1,26 @@
+T1	Medical-Problem 277 299	subtle interval change
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 454 480	central pulmonary arteries
+T3	Medical-Problem 485 503	somewhat prominent
+T4	Lesion-Characteristic 550 562	questionable
+T5	Lesion-Anatomy 563 572	pulmonary
+T6	Lesion-Description 573 579	nodule
+T7	Medical-Problem 587 596	prominent
+E7	Medical-Problem:T7
+T8	Lesion-Size 629 633	1 cm
+T9	Medical-Assertion 881 883	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 884 912	focal airspace consolidation
+T11	Medical-Problem 925 934	pneumonia
+T12	Medical-Assertion 937 939	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 940 957	pleural effusions
+T14	Medical-Problem 959 974	pulmonary edema
+T15	Medical-Problem 979 991	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Present:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T12

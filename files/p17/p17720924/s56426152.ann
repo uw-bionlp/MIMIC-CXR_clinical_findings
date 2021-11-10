@@ -1,0 +1,33 @@
+T1	Medical-Assertion 338 344	little
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 400 429	minimal bibasilar atelectasis
+E1	Medical-Problem:T2
+T3	Lesion-Assertion 455 465	suggestion
+A2	Lesion-AssertionValue T3 possible
+T4	Lesion-Size-Trend 471 474	new
+A3	Lesion-Size-TrendValue T4 new
+T5	Lesion-Size 475 480	16 mm
+T6	Lesion-Anatomy 481 496	left upper lobe
+T7	Lesion-Description 497 503	nodule
+T8	Medical-Problem 525 557	aortopulmonary window is bulging
+E5	Medical-Problem:T8
+T9	Medical-Assertion 584 586	no
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 587 593;595 607	apical pneumothorax
+T11	Medical-Problem 611 633	large pleural effusion
+T12	Medical-Assertion 665 667	no
+A5	Medical-AssertionValue T12 absent
+T13	Medical-Problem 668 683	pulmonary edema
+T14	Medical-Problem 688 715	little vascular engorgement
+T15	Medical-Problem 723 730	Bulging
+T16	Medical-Anatomy 738 759	aortopulmonary window
+T17	Lesion-Size 800 805	16 mm
+T18	Lesion-Anatomy 806 821	left upper lobe
+T19	Lesion-Description 822 828	nodule
+E4	Lesion-Description:T7 has-Lesion-Assertion:T3 has-Lesion-Size-Trend:T4 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T9
+E8	Medical-Problem:T13 has-Medical-Assertion:T12
+E9	Medical-Problem:T14 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Lesion-Description:T19 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T18

@@ -1,0 +1,32 @@
+T1	Lesion-Characteristic 322 331	calcified
+T2	Lesion-Anatomy 332 354	right apical pulmonary
+T3	Lesion-Description 355 361	nodule
+T4	Medical-Anatomy 369 374	lungs
+T5	Medical-Assertion 403 410	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 411 425	large effusion
+T7	Medical-Problem 427 440	consolidation
+T8	Medical-Problem 445 474	pulmonary vascular congestion
+T9	Medical-Anatomy 481 488	cardiac
+T10	Medical-Assertion 500 507	appears
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 508 516;518 526	slightly enlarged
+T12	Medical-Assertion 576 578	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 579 592;594 605	acute osseous abnormality
+T14	Lesion-Assertion 622 630	Probable
+A4	Lesion-AssertionValue T14 possible
+T15	Lesion-Characteristic 631 640	calcified
+T16	Lesion-Anatomy 641 652	right hilar
+T17	Lesion-Description 653 658	nodes
+T18	Medical-Assertion 691 693	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 694 723	acute cardiopulmonary process
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Lesion-Description:T17 has-Lesion-Assertion:T14 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

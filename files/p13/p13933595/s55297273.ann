@@ -1,0 +1,42 @@
+T1	Lesion-Size 29 33	6 mm
+T2	Lesion-Description 34 41	nodular
+E2	Lesion-Description:T2
+T3	Lesion-Description 42 49	opacity
+T4	Lesion-Anatomy 70 106;108 145	right mid to lower lung, between the  posterior right ninth and tenth ribs
+T5	Lesion-Anatomy 200 209	pulmonary
+T6	Lesion-Description 210 216	nodule
+T7	Lesion-Assertion 220 232	not excluded
+A1	Lesion-AssertionValue T7 possible
+T8	Lesion-Size 673 677	6 mm
+T9	Lesion-Description 678 685	nodular
+E8	Lesion-Description:T9
+T10	Lesion-Description 686 693	opacity
+T11	Medical-Anatomy 722 746;748 796	right mid to lower lung, between the posterior right ninth and tenth ribs
+E10	Medical-Anatomy:T11
+T12	Medical-Assertion 799 801	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 802 816;818 831	definite focal consolidation
+T14	Medical-Assertion 841 843	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 844 866	large pleural effusion
+T16	Medical-Problem 882 894	pneumothorax
+T17	Medical-Problem 947 965	aorta is calcified
+E14	Medical-Problem:T17
+T18	Medical-Assertion 968 970	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 972 981	pulmonary
+E15	Medical-Problem:T19
+T20	Medical-Problem 982 987	edema
+T21	Medical-Anatomy 1049 1072	right mid to lower lung
+E17	Medical-Anatomy:T21
+T22	Lesion-Description 1187 1193	nodule
+T23	Lesion-Assertion 1197 1209	not excluded
+A5	Lesion-AssertionValue T23 possible
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Anatomy:T5 has-Lesion-Assertion:T7
+E9	Lesion-Description:T10 has-Lesion-Size-Present:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14
+E16	Medical-Problem:T20 has-Medical-Assertion:T18
+E18	Lesion-Description:T22 has-Lesion-Assertion:T23

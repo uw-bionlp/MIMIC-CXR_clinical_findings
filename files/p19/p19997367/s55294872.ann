@@ -1,0 +1,31 @@
+T1	Medical-Problem 342 384	Mild enlargement of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 488 496;498 513	moderate pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 571 584	focal opacity
+T4	Medical-Anatomy 597 612	right lung base
+T5	Medical-Assertion 613 628	could represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 632 639;641 652	area of atelectasis
+T7	Medical-Problem 657 665	effusion
+T8	Medical-Problem 674 683	infection
+T9	Medical-Assertion 684 704	should be considered
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 713 719	may be
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 723 750	small left pleural effusion
+T12	Medical-Problem 813 837	Moderate pulmonary edema
+E9	Medical-Problem:T12
+T13	Medical-Problem 871 882;884 891	Right basal opacity
+T14	Medical-Problem 929 938	infection
+T15	Medical-Assertion 939 959	should be considered
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 999 1039;1041 1058	Small bilateral pleural effusions, right greater than left
+E12	Medical-Problem:T16
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T15
+E11	Medical-Problem:T14 has-Medical-Assertion:T15

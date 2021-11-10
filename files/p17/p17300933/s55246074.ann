@@ -1,0 +1,22 @@
+T1	Medical-Assertion 258 260	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 262 278	pleural effusion
+T3	Medical-Problem 282 294	pneumothorax
+T4	Medical-Problem 306 319	focal opacity
+T5	Medical-Anatomy 327 337;339 343	left lower lung
+T6	Medical-Assertion 345 369	most likely representing
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 370 381	atelectasis
+T8	Medical-Assertion 386 407	unlikely to represent
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 409 427	infectious process
+T10	Medical-Problem 608 617	pneumonia
+T11	Medical-Anatomy 625 640	left lower lung
+T12	Medical-Assertion 645 660	not substantial
+A4	Medical-AssertionValue T12 absent
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

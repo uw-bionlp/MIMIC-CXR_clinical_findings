@@ -1,0 +1,18 @@
+T1	Medical-Problem 208 234	Post-operative volume loss
+T2	Medical-Anatomy 250 266	right hemithorax
+T3	Medical-Problem 322 350	Small right pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 355 389	adjacent right basilar atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Problem 424 448	Poorly defined opacities
+T6	Medical-Anatomy 456 470	left lung base
+T7	Medical-Assertion 491 504	may be due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 505 516	atelectasis
+T9	Medical-Problem 520 529	pneumonia
+T10	Medical-Problem 532 551;553 561	Adjacent small left effusion
+E9	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7

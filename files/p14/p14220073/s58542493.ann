@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 629 645	Left hemi thorax
+T2	Medical-Problem 649 664	fully opacified
+T3	Medical-Problem 669 704;706 711	mediastinum shifted markedly to the right
+T4	Lesion-Assertion 749 756	absence
+A1	Lesion-AssertionValue T4 absent
+T5	Lesion-Description 764 768	mass
+T6	Medical-Assertion 795 803	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 806 819	huge hematoma
+T8	Medical-Problem 823 845	large pleural effusion
+T9	Medical-Problem 851 861	collapsing
+T10	Medical-Anatomy 867 876	left lung
+T11	Medical-Problem 881 903	displacing the midline
+E9	Medical-Problem:T11
+T12	Medical-Problem 944 971	small left pleural effusion
+E10	Medical-Problem:T12
+T13	Lesion-Anatomy 973 980	pleural
+T14	Lesion-Description 981 988	nodules
+T15	Lesion-Characteristic 993 1000	central
+T16	Lesion-Description 1001 1011	adenopathy
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E4	Lesion-Description:T5 has-Lesion-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T6 has-Medical-Anatomy:T10
+E12	Lesion-Description:T14 has-Lesion-Anatomy:T13
+E14	Lesion-Description:T16 has-Lesion-Characteristic:T15

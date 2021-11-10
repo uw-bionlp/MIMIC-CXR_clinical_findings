@@ -1,0 +1,15 @@
+T1	Medical-Problem 392 401;403 429	Worsening patchy bibasilar opacities
+E1	Medical-Problem:T1
+T2	Medical-Assertion 430 448	probably represent
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 449 460	atelectasis
+T4	Medical-Problem 466 476;478 488	coexisting aspiration
+T5	Medical-Assertion 492 500	possible
+A2	Medical-AssertionValue T5 possible
+T6	Lesion-Size 579 584	small
+T7	Lesion-Characteristic 585 594	calcified
+T8	Lesion-Description 595 604	granuloma
+T9	Lesion-Anatomy 612 622	right apex
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9

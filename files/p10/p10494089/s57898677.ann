@@ -1,0 +1,32 @@
+T1	Medical-Problem 323 358	cardiac silhouette remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 365 383	aorta is calcified
+E2	Medical-Problem:T2
+T3	Medical-Problem 440 459	persistent blunting
+T4	Medical-Anatomy 467 471;473 491	left costophrenic angle
+T5	Medical-Assertion 498 511	may be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 514 536	trace pleural effusion
+T7	Medical-Problem 540 547;549 559	pleural thickening
+T8	Medical-Assertion 562 564	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 565 593	definite focal consolidation
+T10	Medical-Assertion 613 624	no evidence
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 629 641	pneumothorax
+T12	Medical-Problem 659 682	Persistent cardiomegaly
+E9	Medical-Problem:T12
+T13	Medical-Problem 685 693	Blunting
+T14	Medical-Anatomy 701 724	left costophrenic angle
+T15	Medical-Assertion 726 739	may be due to
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 740 762	trace pleural effusion
+T17	Medical-Problem 770 788	pleural thickening
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

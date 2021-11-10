@@ -1,0 +1,20 @@
+T1	Medical-Anatomy 207 212	Lungs
+T2	Medical-Problem 248 265	focal abnormality
+T3	Medical-Anatomy 323 337	Thoracic aorta
+T4	Medical-Problem 341 359	generally tortuous
+T5	Medical-Problem 365 382	heavily calcified
+T6	Medical-Assertion 387 390	not
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 391 409	focally aneurysmal
+T8	Medical-Assertion 412 414	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 415 434	pleural abnormality
+T10	Lesion-Characteristic 439 447	evidence
+T11	Lesion-Characteristic 451 458	central
+T12	Lesion-Description 459 481	lymph node enlargement
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11

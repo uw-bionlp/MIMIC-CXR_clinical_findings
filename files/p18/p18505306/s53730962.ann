@@ -1,0 +1,62 @@
+T1	Medical-Problem 229 242	abnormalities
+E1	Medical-Problem:T1
+T2	Lesion-Anatomy 421 425	lung
+T3	Lesion-Description 427 433	nodule
+T4	Lesion-Anatomy 453 473	lower thoracic spine
+T5	Lesion-Description 494 505	bone island
+T6	Lesion-Anatomy 512 541	lower thoracic vertebral body
+T7	Lesion-Size 598 606	6 x 9 mm
+T8	Lesion-Anatomy 607 617	upper lung
+T9	Lesion-Description 618 624	nodule
+T10	Lesion-Anatomy 643 661;663 691	lateral view above the ascending thoracic aorta
+T11	Medical-Assertion 696 698	no
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 699 724	corresponding abnormality
+T13	Medical-Assertion 746 754	could be
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 755 768	calcification
+T15	Lesion-Count 798 805	several
+T16	Lesion-Anatomy 806 817;819 830	prevascular mediastinal
+T17	Lesion-Description 831 842	lymph nodes
+T18	Lesion-Assertion 849 865	could in fact be
+A3	Lesion-AssertionValue T18 possible
+T19	Lesion-Anatomy 868 872	lung
+T20	Lesion-Description 873 879	nodule
+T21	Lesion-Count 903 910	several
+T22	Lesion-Anatomy 917 936	subcentimenter lung
+T23	Lesion-Description 937 944	nodules
+T24	Lesion-Anatomy 1118 1128	upper lung
+T25	Lesion-Description 1130 1136	nodule
+T26	Medical-Assertion 1473 1480	without
+A4	Medical-AssertionValue T26 absent
+T27	Medical-Problem 1485 1498	consolidation
+T28	Medical-Problem 1543 1558	rounded density
+T29	Medical-Anatomy 1570 1584	over the spine
+T30	Medical-Assertion 1591 1599	possible
+A5	Medical-AssertionValue T30 possible
+T31	Medical-Problem 1600 1606	second
+E26	Medical-Problem:T31
+T32	Medical-Problem 1607 1614;1616 1623	rounded density
+T33	Medical-Anatomy 1631 1646	upper lung zone
+T34	Medical-Assertion 1658 1660	no
+A6	Medical-AssertionValue T34 absent
+T35	Medical-Problem 1661 1677	pleural effusion
+T36	Medical-Problem 1681 1693	pneumothorax
+T37	Medical-Assertion 1892 1894	No
+A7	Medical-AssertionValue T37 absent
+T38	Medical-Problem 1895 1904	pneumonia
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T4
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T6
+E9	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8 has-Lesion-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E15	Lesion-Description:T17 has-Lesion-Count:T15 has-Lesion-Anatomy:T16
+E17	Lesion-Description:T20 has-Lesion-Assertion:T18 has-Lesion-Anatomy:T19
+E20	Lesion-Description:T23 has-Lesion-Count:T21 has-Lesion-Anatomy:T22
+E22	Lesion-Description:T25 has-Lesion-Anatomy:T24
+E23	Medical-Problem:T27 has-Medical-Assertion:T26
+E24	Medical-Problem:T28 has-Medical-Anatomy:T29
+E27	Medical-Problem:T32 has-Medical-Assertion:T30 has-Medical-Anatomy:T33
+E29	Medical-Problem:T35 has-Medical-Assertion:T34
+E30	Medical-Problem:T36 has-Medical-Assertion:T34
+E31	Medical-Problem:T38 has-Medical-Assertion:T37

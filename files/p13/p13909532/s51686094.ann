@@ -1,0 +1,41 @@
+T1	Medical-Assertion 405 407	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 408 423;425 436	configurational abnormality
+T3	Medical-Anatomy 447 455	Thoracic
+T4	Medical-Problem 462 478	mildly prominent
+T5	Medical-Assertion 484 486	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 487 500;502 515	local contour abnormalities
+T7	Medical-Assertion 559 562	not
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 563 572	congested
+T9	Lesion-Anatomy 583 599	right hemithorax
+T10	Lesion-Characteristic 603 620	centrally located
+T11	Lesion-Description 621 625	mass
+T12	Lesion-Size 641 647	3.5 cm
+T13	Lesion-Anatomy 676 695	infrahilar position
+T14	Lesion-Anatomy 804 813;815 831	pulmonary right lower lobe
+T15	Lesion-Description 832 836	mass
+T16	Medical-Problem 967 1001	peripheral parenchymal infiltrates
+E13	Medical-Problem:T16
+T17	Lesion-Anatomy 1009 1014	right
+T18	Lesion-Assertion 1046 1065	probably related to
+A4	Lesion-AssertionValue T18 possible
+T19	Lesion-Description 1093 1097	mass
+T20	Medical-Problem 1101 1111	Thickening
+T21	Medical-Anatomy 1119 1132	pleural space
+T22	Medical-Problem 1150 1164	mild elevation
+T23	Medical-Anatomy 1173 1198	posterior right diaphragm
+T24	Medical-Assertion 1199 1206	suggest
+A5	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1207 1239	involvement of the pleural space
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Characteristic:T10 has-Lesion-Size-Present:T12 has-Lesion-Anatomy:T13
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E15	Lesion-Description:T19 has-Lesion-Anatomy:T17 has-Lesion-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Anatomy:T21
+E18	Medical-Problem:T22 has-Medical-Anatomy:T23
+E20	Medical-Problem:T25 has-Medical-Assertion:T24

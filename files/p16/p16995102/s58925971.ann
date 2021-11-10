@@ -1,0 +1,23 @@
+T1	Medical-Assertion 312 319	absence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Anatomy 348 353	Lungs
+T3	Medical-Problem 358 371	hyperinflated
+T4	Medical-Assertion 379 394	likely reflects
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 395 409	emphysema/COPD
+T6	Medical-Assertion 412 414	No
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 415 429	large effusion
+T8	Medical-Problem 433 445	pneumothorax
+T9	Medical-Problem 449 469	Cardiomegaly is mild
+E6	Medical-Problem:T9
+T10	Medical-Problem 507 523;525 545	Biapical pleural parenchymal scarring
+E7	Medical-Problem:T10
+T11	Medical-Assertion 608 610	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 611 638	acute intrathoracic process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T2
+E3	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

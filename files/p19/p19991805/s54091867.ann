@@ -1,0 +1,47 @@
+T1	Medical-Problem 40 63	Peribronchial opacities
+T2	Medical-Anatomy 71 86	right lung base
+T3	Medical-Problem 128 137	pneumonia
+T4	Medical-Problem 139 156	Mild cardiomegaly
+T5	Medical-Assertion 194 202	no overt
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Assertion 229 231	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 232 248	pleural effusion
+T8	Medical-Problem 252 264	pneumothorax
+T9	Medical-Problem 325 334	opacities
+E7	Medical-Problem:T9
+T10	Medical-Anatomy 342 357	right lung base
+T11	Medical-Problem 399 408	pneumonia
+T12	Medical-Problem 410 414	Mild
+E10	Medical-Problem:T12
+T13	Medical-Problem 415 427	cardiomegaly
+T14	Medical-Assertion 465 473	no overt
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Assertion 500 502	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 503 519	pleural effusion
+T17	Medical-Problem 523 535	pneumothorax
+T18	Medical-Problem 836 848	cardiomegaly
+E14	Medical-Problem:T18
+T19	Medical-Problem 894 903	Opacities
+T20	Medical-Anatomy 912 947	lung bases, right greater than left
+T21	Medical-Assertion 968 982;984 986	may be related to
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 987 996	pneumonia
+T23	Medical-Problem 1000 1010	aspiration
+T24	Medical-Assertion 1012 1014	No
+A6	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1015 1029	pneumothoraces
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E18	Medical-Problem:T23 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E19	Medical-Problem:T25 has-Medical-Assertion:T24

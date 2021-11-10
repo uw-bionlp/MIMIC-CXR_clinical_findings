@@ -1,0 +1,27 @@
+T1	Medical-Problem 282 299	new opacification
+T2	Medical-Anatomy 307 322	right lung base
+T3	Medical-Anatomy 325 334	obscuring
+T4	Medical-Anatomy 339 357	right heart border
+T5	Medical-Anatomy 362 381	right hemidiaphragm
+T6	Medical-Assertion 392 398	likely
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 414 427	consolidation
+T8	Medical-Anatomy 435 463	right middle and lower lobes
+T9	Medical-Problem 474 505	moderate right pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 531 545;547 566	mild pulmonary vascular congestion
+E9	Medical-Problem:T10
+T11	Medical-Assertion 571 573	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 574 601	left-sided pleural effusion
+T13	Medical-Problem 906 923	New opacification
+T14	Medical-Problem 928 941	pleural fluid
+T15	Medical-Anatomy 949 982;984 987	right lung base, likely affecting the
+T16	Medical-Anatomy 988 1010	middle and lower lobes
+T17	Medical-Problem 1013 1022	Pneumonia
+E15	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15 has-Medical-Anatomy:T16

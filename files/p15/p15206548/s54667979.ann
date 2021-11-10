@@ -1,0 +1,22 @@
+T1	Medical-Assertion 315 322	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 323 342	focal consolidation
+T3	Medical-Assertion 345 347	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 348 364	pleural effusion
+T5	Medical-Problem 369 381	pneumothorax
+T6	Medical-Anatomy 501 506;508 520	Lower paratracheal
+E4	Medical-Anatomy:T6
+T7	Lesion-Assertion 533 539	likely
+A3	Lesion-AssertionValue T7 possible
+T8	Lesion-Description 551 566	lymphadenopathy
+T9	Medical-Assertion 586 588	No
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 589 608	focal consolidation
+T11	Medical-Problem 620 629	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Lesion-Description:T8 has-Lesion-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T9

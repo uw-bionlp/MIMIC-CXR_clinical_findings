@@ -1,0 +1,35 @@
+T1	Lesion-Anatomy 408 426	Right extrapleural
+T2	Lesion-Description 427 431	mass
+T3	Lesion-Anatomy 436 453	left extrapleural
+T4	Lesion-Description 454 458	mass
+T5	Medical-Problem 480 483;485 496	rib destruction
+E5	Medical-Problem:T5
+T6	Lesion-Size-Trend 497 512	appears similar
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Problem 549 573	Cardiac size is enlarged
+E6	Medical-Problem:T7
+T8	Medical-Problem 611 620	Bilateral
+E7	Medical-Problem:T8
+T9	Medical-Assertion 649 651	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 652 664	pneumothorax
+T11	Medical-Problem 668 684	pleural effusion
+T12	Lesion-Characteristic 840 847	Osseous
+T13	Lesion-Description 849 856	lesions
+T14	Lesion-Size-Trend 902 908	Stable
+A3	Lesion-Size-TrendValue T14 no-change
+T15	Lesion-Anatomy 909 921	extrapleural
+T16	Lesion-Description 922 928	masses
+T17	Lesion-Anatomy 929 940	bilaterally
+T18	Medical-Problem 953 968;970 982	Stable moderate cardiomegaly
+E15	Medical-Problem:T18
+T19	Medical-Assertion 985 987	No
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 988 1017	acute cardiopulmonary process
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T12
+E13	Lesion-Description:T16 has-Lesion-Size-Trend:T14 has-Lesion-Anatomy:T15 has-Lesion-Anatomy:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

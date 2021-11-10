@@ -1,0 +1,20 @@
+T1	Medical-Problem 306 333	linear focus of atelectasis
+T2	Medical-Anatomy 342 357	left lower lobe
+T3	Medical-Assertion 358 370	has resolved
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 379 400	left pleural effusion
+T5	Medical-Assertion 404 413;415 423	no longer apparent
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 453 483	subtle peribronchial opacities
+T7	Medical-Anatomy 504 523	retrocardiac region
+T8	Medical-Problem 713 740	Subtle retrocardiac opacity
+E6	Medical-Problem:T8
+T9	Medical-Assertion 748 761	could reflect
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 770 781	atelectasis
+T11	Medical-Problem 785 805	developing pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3 has-Medical-Assertion:T5
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9

@@ -1,0 +1,22 @@
+T1	Medical-Problem 294 301;303 315	massive cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 322 348	mild left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 365 381	minimal blunting
+T4	Medical-Anatomy 390 408	costophrenic sinus
+T5	Medical-Assertion 409 432	could indicate presence
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 438 457;459 467	small right pleural effusion
+T7	Medical-Problem 482 516	pre-existing parenchymal opacities
+T8	Medical-Anatomy 524 534;536 541	right lung bases
+T9	Medical-Problem 593 614;616 627	areas of retrocardiac atelectasis
+E8	Medical-Problem:T9
+T10	Medical-Problem 672 692	mild pulmonary edema
+E9	Medical-Problem:T10
+T11	Medical-Assertion 696 698	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 699 711	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

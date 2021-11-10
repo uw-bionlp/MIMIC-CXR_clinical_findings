@@ -1,0 +1,32 @@
+T1	Medical-Anatomy 196 201	Lungs
+T2	Medical-Assertion 206 211	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 215 228	consolidation
+T4	Medical-Problem 231 247	Chronic blunting
+T5	Medical-Anatomy 255 268;270 288	right lateral costophrenic angle
+T6	Medical-Assertion 289 304	could be due to
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 305 323	pleural thickening
+T8	Medical-Problem 340 346;348 379	subtle increased interstitial markings
+T9	Medical-Anatomy 400 419	left lung laterally
+T10	Medical-Problem 462 492	Cardiac silhouette is enlarged
+E8	Medical-Problem:T10
+T11	Medical-Problem 523 553	Atherosclerotic calcifications
+T12	Medical-Anatomy 571 579;581 586	thoracic aorta
+T13	Medical-Problem 596 613	slightly tortuous
+T14	Medical-Assertion 616 618	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 619 646	acute osseous abnormalities
+T16	Medical-Problem 667 679	Cardiomegaly
+E13	Medical-Problem:T16
+T17	Medical-Assertion 680 687	without
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 688 730	superimposed acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

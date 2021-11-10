@@ -1,0 +1,24 @@
+T1	Medical-Problem 251 271	Mild pulmonary edema
+T2	Medical-Anatomy 279 289	right lung
+T3	Medical-Problem 304 328	Increasing opacification
+T4	Medical-Anatomy 337 352	left hemithorax
+T5	Medical-Assertion 353 368	could be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 373 404;406 414	enlarging moderate left pleural effusion
+T7	Lesion-Anatomy 463 473	left hilar
+T8	Lesion-Anatomy 479 490	mediastinal
+T9	Lesion-Description 491 495	mass
+T10	Medical-Problem 498 507	Pneumonia
+T11	Medical-Assertion 511 523	not excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 528 555;557 559	does not need to be invoked to
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Assertion 591 593	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 594 606	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

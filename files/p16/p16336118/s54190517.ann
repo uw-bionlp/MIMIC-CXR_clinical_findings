@@ -1,0 +1,36 @@
+T1	Medical-Assertion 33 44	No evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 48 56	fracture
+T3	Medical-Assertion 58 66	Probable
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 67 94	small left pleural effusion
+T5	Medical-Problem 586 594	blunting
+T6	Medical-Anatomy 602 606;608 626	left costophrenic angle
+T7	Medical-Problem 636 658	trace pleural effusion
+T8	Medical-Problem 662 680	pleural thickening
+T9	Medical-Assertion 682 684	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 686 698	pneumothorax
+T11	Medical-Problem 770 788	increased kyphosis
+T12	Medical-Anatomy 796 810	thoracic spine
+T13	Medical-Assertion 813 815	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 816 834	displaced fracture
+T15	Medical-Assertion 864 866	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Assertion 867 888	radiographic evidence
+A6	Medical-AssertionValue T16 absent
+T17	Medical-Problem 892 910	displaced fracture
+T18	Medical-Problem 922 940;942 950	trace left pleural effusion
+E12	Medical-Problem:T18
+T19	Medical-Problem 954 972	pleural thickening
+E13	Medical-Problem:T19
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T7 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T17 has-Medical-Assertion:T15 has-Medical-Assertion:T16

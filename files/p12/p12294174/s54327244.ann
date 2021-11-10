@@ -1,0 +1,19 @@
+T1	Medical-Assertion 30 32	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 33 45	Penumothorax
+T3	Medical-Problem 239 251	pneumothorax
+E2	Medical-Problem:T3
+T4	Medical-Problem 276 300	slight increased lucency
+T5	Medical-Anatomy 308 326	left hemidiaphragm
+T6	Medical-Assertion 333 348	could represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 351 378	small inferior pneumothorax
+T8	Medical-Problem 385 406	left mid lung opacity
+E6	Medical-Problem:T8
+T9	Medical-Assertion 470 477	unclear
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 492 519	small inferior pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

@@ -1,0 +1,27 @@
+T1	Medical-Problem 335 354	soft tissue density
+T2	Medical-Anatomy 362 372	right apex
+T3	Medical-Problem 433 443	infiltrate
+T4	Medical-Anatomy 451 467	right upper lobe
+T5	Medical-Assertion 478 484	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 485 495	infectious
+T7	Medical-Problem 498 516	Linear atelectasis
+T8	Medical-Anatomy 528 545	left midlung zone
+T9	Medical-Problem 568 589	right pleural disease
+E8	Medical-Problem:T9
+T10	Medical-Anatomy 665 670	heart
+T11	Medical-Assertion 674 677	not
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 678 686	enlarged
+T13	Lesion-Assertion 761 763	no
+A3	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 764 775	mediastinal
+T15	Lesion-Description 776 780	mass
+T16	Medical-Assertion 870 874	None
+A4	Medical-AssertionValue T16 absent
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14

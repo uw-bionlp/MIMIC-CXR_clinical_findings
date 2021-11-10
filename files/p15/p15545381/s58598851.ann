@@ -1,0 +1,13 @@
+T1	Medical-Assertion 285 287	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 288 300	pneumothorax
+T3	Medical-Problem 312 316;318 344	left pleural effusion, moderate
+E2	Medical-Problem:T3
+T4	Medical-Problem 358 377	Minimal atelectasis
+T5	Medical-Anatomy 385 395;397 401	right lung base
+T6	Medical-Assertion 434 436	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 437 452	pulmonary edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6

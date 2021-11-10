@@ -1,0 +1,23 @@
+T1	Medical-Problem 257 265	Widening
+T2	Medical-Anatomy 273 284	mediastinum
+T3	Medical-Problem 285 298	opacification
+T4	Medical-Anatomy 306 319	neo esophagus
+T5	Medical-Assertion 377 387	do not see
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 392 407	air-fluid level
+T7	Medical-Anatomy 461 464	neo
+T8	Medical-Problem 511 519	Hematoma
+E7	Medical-Problem:T8
+T9	Medical-Problem 523 540;542 558	other mediastinal fluid collection
+E8	Medical-Problem:T9
+T10	Medical-Problem 584 611	Pleural effusions are small
+E9	Medical-Problem:T10
+T11	Medical-Assertion 623 625	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 626 638	pneumothorax
+T13	Medical-Problem 641 662;664 675	Bibasilar atelectasis is moderate
+E11	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,29 @@
+T1	Medical-Problem 184 213	Heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 259 282	substantial enlargement
+T3	Medical-Anatomy 286 307	main pulmonary artery
+T4	Medical-Anatomy 312 331;333 351	both right and left pulmonary arteries
+T5	Medical-Assertion 353 380	most likely consistent with
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 381 403	pulmonary hypertension
+T7	Medical-Problem 407 437	Diffuse interstitial opacities
+E6	Medical-Problem:T7
+T8	Medical-Assertion 609 622	might reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 641 674	chronic interstitial lung disease
+T10	Medical-Problem 686 716	superimposed overload of fluid
+T11	Medical-Problem 720 758	Small amount of right pleural effusion
+E9	Medical-Problem:T11
+T12	Medical-Problem 780 793	abnormalities
+T13	Medical-Anatomy 806 816	lung bases
+T14	Medical-Problem 936 959	underlying lung disease
+E12	Medical-Problem:T14
+T15	Medical-Problem 992 1009;1011 1023	evident pulmonary hypertension
+E13	Medical-Problem:T15
+T16	Lesion-Anatomy 1050 1055	hilar
+E14	Lesion-Anatomy:T16
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13

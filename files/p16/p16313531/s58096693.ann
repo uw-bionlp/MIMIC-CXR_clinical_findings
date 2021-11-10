@@ -1,0 +1,33 @@
+T1	Medical-Problem 201 240	Slightly increased retrocardiac opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 244 250	likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 251 262	atelectasis
+T4	Medical-Problem 273 282	infection
+T5	Medical-Assertion 283 301	cannot be excluded
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 350 368	linear atelectasis
+T7	Medical-Anatomy 376 389	left mid lung
+T8	Medical-Assertion 401 403	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 404 420	pleural effusion
+T10	Medical-Problem 425 437	pneumothorax
+T11	Medical-Assertion 539 541	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 542 568;570 581	upper abdominal or osseous abnormality
+T13	Medical-Problem 613 633	Retrocardiac opacity
+E9	Medical-Problem:T13
+T14	Medical-Assertion 637 643	likely
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 644 655	atelectasis
+T16	Medical-Problem 665 674	infection
+T17	Medical-Assertion 676 694	cannot be excluded
+A6	Medical-AssertionValue T17 possible
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2 has-Medical-Assertion:T5
+E4	Medical-Problem:T6 has-Medical-Anatomy:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T14 has-Medical-Assertion:T17

@@ -1,0 +1,27 @@
+T1	Medical-Problem 193 216	tortuous thoracic aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 379 402	interstitial prominence
+E2	Medical-Problem:T2
+T3	Medical-Assertion 403 409;411 421	likely relates to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 422 460	crowding of bronchovascular structures
+T5	Lesion-Characteristic 465 472	rounded
+T6	Lesion-Characteristic 479 487	calcific
+T7	Medical-Anatomy 523 546	lateral left hemithorax
+E6	Medical-Anatomy:T7
+T8	Lesion-Assertion 547 550	may
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Characteristic 564 573	calcified
+T10	Lesion-Description 574 583	granuloma
+T11	Medical-Assertion 595 606	no evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 610 622	pneumothorax
+T13	Medical-Problem 626 633;635 643	pleural effusion
+T14	Medical-Assertion 733 735	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 736 765	acute cardiopulmonary process
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E8	Lesion-Description:T10 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

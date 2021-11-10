@@ -1,0 +1,22 @@
+T1	Lesion-Anatomy 255 267	retrocardiac
+T2	Lesion-Description 268 274	nodule
+T3	Lesion-Assertion 278 280;282 299	no longer visualized
+A1	Lesion-AssertionValue T3 absent
+T4	Medical-Problem 341 356	Mild elongation
+T5	Medical-Anatomy 365 381	descending aorta
+T6	Medical-Assertion 384 386	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 387 394	pleural
+E5	Medical-Problem:T7
+T8	Medical-Problem 395 404	effusions
+T9	Medical-Assertion 407 409	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 410 419	pneumonia
+T11	Medical-Assertion 421 423	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 424 433;435 440	pulmonary edema
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1 has-Lesion-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

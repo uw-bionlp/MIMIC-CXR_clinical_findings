@@ -1,0 +1,28 @@
+T1	Medical-Problem 371 385	Calcifications
+T2	Medical-Anatomy 406 417	aortic arch
+T3	Medical-Assertion 548 550	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 551 567	pleural effusion
+T5	Medical-Problem 571 583	pneumothorax
+T6	Lesion-Anatomy 587 596	Pulmonary
+T7	Lesion-Description 597 604	nodules
+T8	Lesion-Assertion 642 653	not visible
+A2	Lesion-AssertionValue T8 absent
+T9	Medical-Problem 730 735;737 766	small quantity of retained contrast
+T10	Medical-Anatomy 778 783	colon
+T11	Medical-Problem 811 815;817 843	Mild rightward convex curvature
+T12	Medical-Anatomy 863 883	lower thoracic spine
+T13	Medical-Problem 890 919	small-to-moderate osteophytes
+T14	Medical-Problem 926 966;968 974	bones are probably demineralized to some degree
+E12	Medical-Problem:T14
+T15	Medical-Assertion 992 1003	No evidence
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1007 1020	acute disease
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T6 has-Lesion-Assertion:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

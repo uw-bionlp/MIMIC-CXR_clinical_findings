@@ -1,0 +1,27 @@
+T1	Medical-Assertion 322 324	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 325 344	significant changes
+T3	Medical-Problem 418 438	Postsurgical changes
+T4	Medical-Anatomy 455 470	right lung base
+T5	Lesion-Size-Trend 474 480	Stable
+A2	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Characteristic 481 490	calcified
+T7	Lesion-Description 491 500	granuloma
+T8	Lesion-Anatomy 508 522	left lung base
+T9	Medical-Problem 525 548;550 559	Small bilateral pleural effusions
+T10	Medical-Assertion 560 577	can't be excluded
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 580 599	Enlarged heart size
+E8	Medical-Problem:T11
+T12	Medical-Assertion 624 626	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 628 640	pneumothorax
+T14	Medical-Assertion 661 672	No evidence
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 676 688	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Lesion-Description:T7 has-Lesion-Size-Trend:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E7	Medical-Problem:T9 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

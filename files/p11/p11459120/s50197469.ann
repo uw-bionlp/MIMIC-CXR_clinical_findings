@@ -1,0 +1,37 @@
+T1	Medical-Problem 300 324	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 346 363	aorta is tortuous
+T3	Medical-Problem 369 383	calcifications
+T4	Medical-Anatomy 397 403;405 409	aortic knob
+T5	Medical-Anatomy 416 437	pulmonary vasculature
+T6	Medical-Assertion 441 444	not
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 445 453	engorged
+T8	Medical-Problem 456 472	Patchy opacities
+T9	Medical-Anatomy 494 510	right upper lobe
+T10	Medical-Anatomy 525 540	both lung bases
+T11	Medical-Assertion 581 595	concerning for
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 596 625	areas of multifocal infection
+T13	Medical-Assertion 628 630	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 631 638;640 648	pleural effusion
+T15	Medical-Problem 652 664	pneumothorax
+T16	Medical-Problem 684 715	diffuse demineralization of the
+T17	Medical-Anatomy 717 735	osseous structures
+T18	Medical-Problem 808 824	Patchy opacities
+T19	Medical-Anatomy 832 848	right upper lobe
+T20	Medical-Anatomy 860 875	both lung bases
+T21	Medical-Assertion 876 886;888 891	concerning for
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 892 912	multifocal pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

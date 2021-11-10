@@ -1,0 +1,18 @@
+T1	Medical-Assertion 379 381	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 382 398	pleural effusion
+T3	Medical-Problem 402 414	pneumothorax
+T4	Lesion-Characteristic 419 437	well-circumscribed
+T5	Lesion-Size 439 444	12 mm
+T6	Lesion-Characteristic 445 449	oval
+T7	Lesion-Description 450 457	density
+T8	Lesion-Anatomy 472 494	left posterior 7th rib
+T9	Medical-Assertion 645 656	No evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 660 669	pneumonia
+T11	Medical-Problem 675 696	Left mid lung density
+E9	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T4 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

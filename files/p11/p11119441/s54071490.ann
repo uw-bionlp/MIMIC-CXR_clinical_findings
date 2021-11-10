@@ -1,0 +1,44 @@
+T1	Medical-Problem 216 236	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Assertion 350 352	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 353 362;364 383	pulmonary vascular congestion
+T4	Medical-Problem 386 408	Minimal patchy opacity
+T5	Medical-Anatomy 424 434	lung bases
+T6	Medical-Assertion 435 440;442 449	could reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 450 461	atelectasis
+T8	Medical-Problem 466 475	infection
+T9	Medical-Assertion 476 494	cannot be excluded
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 497 499	No
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 500 516	pleural effusion
+T12	Medical-Problem 519 538	focal consolidation
+T13	Medical-Problem 542 554	pneumothorax
+T14	Medical-Problem 571 592	Compression deformity
+T15	Medical-Anatomy 599 626	mid thoracic vertebral body
+T16	Medical-Problem 657 673	Low lung volumes
+T17	Medical-Problem 679 701	minimal patchy opacity
+T18	Medical-Anatomy 705 720	both lung bases
+T19	Medical-Assertion 721 727;729 742	likely reflective of
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 743 754	atelectasis
+T21	Medical-Problem 759 768	infection
+T22	Medical-Assertion 769 798	cannot be completely excluded
+A6	Medical-AssertionValue T22 possible
+T23	Medical-Problem 802 832	Unchanged compression fracture
+T24	Medical-Anatomy 840 858	mid thoracic spine
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T10
+E8	Medical-Problem:T12 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T10
+E10	Medical-Problem:T14 has-Medical-Anatomy:T15
+E12	Medical-Problem:T16 has-Medical-Anatomy:T18
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T18 has-Medical-Assertion:T22
+E17	Medical-Problem:T23 has-Medical-Anatomy:T24

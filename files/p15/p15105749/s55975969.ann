@@ -1,0 +1,58 @@
+T1	Medical-Problem 287 297;299 312	increasing opacification
+T2	Medical-Anatomy 320 335	right lung base
+T3	Medical-Problem 341 374	more patchy heterogeneous opacity
+T4	Medical-Anatomy 392 406	right mid lung
+T5	Medical-Problem 418 452;454 464	mild leftward shift of mediastinal structures
+E5	Medical-Problem:T5
+T6	Medical-Problem 569 584	vague opacities
+T7	Medical-Anatomy 592 609;611 615	left mid to lower lung
+T8	Medical-Assertion 622 635	may be due to
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 636 647	atelectasis
+T10	Medical-Problem 651 670	mild fluid overload
+T11	Medical-Problem 717 755	substantial component of opacification
+T12	Medical-Anatomy 764 780	right hemithorax
+T13	Medical-Assertion 784 802	potentially due to
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 803 829	pleural effusion, possibly
+E12	Medical-Problem:T14
+T15	Medical-Problem 836 847	loculations
+T16	Medical-Problem 850 861	Enlargement
+T17	Medical-Anatomy 869 913;915 925	right paratracheal stripe, immediately above the carina
+T18	Medical-Assertion 926 934	suggests
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 953 963	increasing
+T20	Lesion-Description 964 979	lymphadenopathy
+E17	Lesion-Description:T20
+T21	Medical-Problem 1053 1076	Increased opacification
+T22	Medical-Anatomy 1084 1100	right hemithorax
+T23	Medical-Problem 1106 1126	leftward mass effect
+T24	Lesion-Assertion 1132 1143	concern for
+A4	Lesion-AssertionValue T24 possible
+T25	Lesion-Size-Trend 1144 1147	new
+A5	Lesion-Size-TrendValue T25 new
+T26	Lesion-Anatomy 1148 1165	right mediastinal
+T27	Lesion-Description 1166 1181	lymphadenopathy
+T28	Medical-Problem 1208 1237	pleural effusion on the right
+E23	Medical-Problem:T28
+T29	Medical-Problem 1376 1391	Vague opacities
+T30	Medical-Anatomy 1399 1421	left mid to lower lung
+T31	Medical-Problem 1441 1445;1447 1461	mild fluid overload
+E26	Medical-Problem:T31
+T32	Medical-Assertion 1462 1486	could be considered with
+A6	Medical-AssertionValue T32 possible
+T33	Medical-Problem 1487 1498	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Medical-Problem:T21 has-Medical-Anatomy:T22
+E20	Medical-Problem:T23 has-Medical-Anatomy:T22
+E22	Lesion-Description:T27 has-Lesion-Assertion:T24 has-Lesion-Size-Trend:T25 has-Lesion-Anatomy:T26
+E24	Medical-Problem:T29 has-Medical-Anatomy:T30
+E27	Medical-Problem:T33 has-Medical-Assertion:T32

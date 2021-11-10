@@ -1,0 +1,26 @@
+T1	Medical-Problem 536 544	free air
+T2	Medical-Anatomy 545 550;552 571	under the right diaphragm
+T3	Medical-Problem 611 624;626 633	diffuse solid density
+T4	Medical-Anatomy 663 696	right superior-lateral chest wall
+T5	Medical-Problem 735 761	increased pleural effusion
+T6	Medical-Assertion 764 766	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 767 780;782 807	new pulmonary parenchymal abnormalities
+T8	Medical-Anatomy 898 919	pulmonary vasculature
+T9	Medical-Assertion 934 950	does not suggest
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 951 960	overt CHF
+T11	Medical-Assertion 966 968	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 969 981	pneumothorax
+T13	Medical-Anatomy 997 1003;1005 1009	apical area
+T14	Medical-Assertion 1022 1028	may be
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1029 1045	fluid overloaded
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

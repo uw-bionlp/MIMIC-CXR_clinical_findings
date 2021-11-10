@@ -1,0 +1,28 @@
+T1	Medical-Problem 262 283	ill-defined opacities
+T2	Medical-Anatomy 298 321	upper lobes bilaterally
+T3	Medical-Anatomy 338 355	right middle lobe
+T4	Medical-Assertion 357 380	which likely represents
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 381 401	multifocal pneumonia
+T6	Medical-Assertion 514 516	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 517 533	pleural effusion
+T8	Medical-Problem 537 549	pneumothorax
+T9	Medical-Assertion 570 572	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 573 600	acute osseous abnormalities
+T11	Medical-Problem 621 632	Ill-defined
+E8	Medical-Problem:T11
+T12	Medical-Problem 633 642	opacities
+T13	Medical-Anatomy 657 680	upper lobes bilaterally
+T14	Medical-Anatomy 690 695;697 708	right middle lobe
+T15	Medical-Assertion 710 733	which likely represents
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 734 754	multifocal pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

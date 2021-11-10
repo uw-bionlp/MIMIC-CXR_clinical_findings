@@ -1,0 +1,42 @@
+T1	Medical-Problem 146 151;153 162	C6-C7 fractures
+E1	Medical-Problem:T1
+T2	Medical-Problem 174 186	pneumothorax
+E2	Medical-Problem:T2
+T3	Medical-Problem 190 200	infiltrate
+E3	Medical-Problem:T3
+T4	Medical-Problem 308 345	more discrete region of consolidation
+T5	Medical-Anatomy 354 370	right lower lobe
+T6	Medical-Assertion 391 404	worrisome for
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 421 431	infiltrate
+T8	Medical-Problem 454 464	aspiration
+T9	Medical-Problem 467 489	Well-defined opacities
+T10	Medical-Anatomy 512 539	bilateral perihilar regions
+T11	Medical-Problem 560 577	Biapical scarring
+E10	Medical-Problem:T11
+T12	Medical-Problem 596 614	Diffuse dilatation
+T13	Medical-Anatomy 631 651;653 662	proximal half of the esophagus
+T14	Medical-Problem 674 689	Rounded density
+E13	Medical-Problem:T14
+T15	Lesion-Anatomy 697 716	retrocardiac region
+T16	Lesion-Description 743 747	cyst
+T17	Medical-Problem 853 881	New right lower lobe opacity
+E16	Medical-Problem:T17
+T18	Medical-Assertion 882 895	worrisome for
+A2	Medical-AssertionValue T18 possible
+T19	Medical-Problem 896 905	pneumonia
+T20	Medical-Problem 940 969	Bilateral perihilar opacities
+E18	Medical-Problem:T20
+T21	Medical-Assertion 984 1002	potentially due to
+A3	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1003 1013	aspiration
+T23	Medical-Problem 1017 1037	chronic lung changes
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E15	Lesion-Description:T16 has-Lesion-Anatomy:T15
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E19	Medical-Problem:T22 has-Medical-Assertion:T21
+E20	Medical-Problem:T23 has-Medical-Assertion:T21

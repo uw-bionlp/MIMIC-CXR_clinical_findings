@@ -1,0 +1,18 @@
+T1	Medical-Problem 326 349	Worsening consolidation
+T2	Medical-Anatomy 357 372	left lower lobe
+T3	Medical-Assertion 373 388	could be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 389 398;400 446	pneumonia developing in a region of previous atelectasis
+T5	Medical-Anatomy 503 519	left lower chest
+T6	Medical-Assertion 528 536	could be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 537 547	hemothorax
+T8	Medical-Problem 552 559	empyema
+T9	Medical-Problem 564 580	Low lung volumes
+E7	Medical-Problem:T9
+T10	Medical-Problem 609 629	mild pulmonary edema
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6

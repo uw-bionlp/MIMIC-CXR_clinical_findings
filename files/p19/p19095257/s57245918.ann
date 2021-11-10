@@ -1,0 +1,41 @@
+T1	Medical-Problem 394 414	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 428 465	extensive heterogeneous opacification
+T3	Medical-Anatomy 470 485	both lung bases
+T4	Medical-Problem 501 530	azygos vein is mildly dilated
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 536 541	upper
+T6	Medical-Problem 654 666	distribution
+E6	Medical-Problem:T6
+T7	Medical-Problem 677 686	pneumonia
+T8	Medical-Problem 758 766;768 787	abundant tracheal secretions
+T9	Medical-Problem 792 820	relatively minor atelectasis
+T10	Medical-Problem 824 834	aspiration
+T11	Medical-Problem 839 861	post-pneumonia changes
+T12	Medical-Anatomy 869 879	right base
+T13	Lesion-Size 917 932	centimeter size
+T14	Lesion-Description 933 939	nodule
+T15	Lesion-Anatomy 947 990;992 1011	right upper lobe at the level of the second anterior interspace
+T16	Lesion-Assertion 1023 1025	no
+A1	Lesion-AssertionValue T16 absent
+T17	Lesion-Characteristic 1026 1037	soft tissue
+T18	Lesion-Anatomy 1038 1042	lung
+T19	Lesion-Description 1043 1049	nodule
+T20	Lesion-Anatomy 1082 1092	peritoneal
+T21	Lesion-Description 1093 1107	carcinomatosis
+T22	Lesion-Assertion 1115 1123	possible
+A2	Lesion-AssertionValue T22 possible
+T23	Lesion-Anatomy 1132 1141	pulmonary
+T24	Lesion-Description 1142 1152	metastasis
+T25	Lesion-Size-Trend 1164 1169	grown
+A3	Lesion-Size-TrendValue T25 increasing
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E7	Medical-Problem:T7 has-Medical-Anatomy:T5
+E8	Medical-Problem:T8 has-Medical-Anatomy:T12
+E9	Medical-Problem:T9 has-Medical-Anatomy:T12
+E10	Medical-Problem:T10 has-Medical-Anatomy:T12
+E11	Medical-Problem:T11 has-Medical-Anatomy:T12
+E14	Lesion-Description:T14 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T15
+E18	Lesion-Description:T19 has-Lesion-Assertion:T16 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T18
+E20	Lesion-Description:T21 has-Lesion-Anatomy:T20
+E22	Lesion-Description:T24 has-Lesion-Assertion:T22 has-Lesion-Anatomy:T23 has-Lesion-Size-Trend:T25

@@ -1,0 +1,38 @@
+T1	Medical-Problem 255 276	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 296 301	lungs
+T3	Medical-Problem 306 349	hyperinflated with a hyperlucent appearance
+T4	Medical-Problem 379 396	Increased opacity
+T5	Medical-Anatomy 404 419	left lower lobe
+T6	Medical-Assertion 420 423;425 432	may reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 433 442	pneumonia
+T8	Medical-Problem 450 461	atelectasis
+T9	Medical-Assertion 463 465	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 466 480	large effusion
+T11	Medical-Problem 484 496	pneumothorax
+T12	Medical-Assertion 513 519	may be
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 522 548	tiny left pleural effusion
+T14	Medical-Problem 616 652	Aortic atherosclerotic calcification
+E11	Medical-Problem:T14
+T15	Medical-Problem 726 745	Stable cardiomegaly
+E12	Medical-Problem:T15
+T16	Medical-Problem 747 779	subtle left lower lobe opacities
+E13	Medical-Problem:T16
+T17	Medical-Problem 802 813	atelectasis
+E14	Medical-Problem:T17
+T18	Medical-Problem 821 830	pneumonia
+E15	Medical-Problem:T18
+T19	Medical-Assertion 832 840	Possible
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 841 867	tiny left pleural effusion
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E16	Medical-Problem:T20 has-Medical-Assertion:T19

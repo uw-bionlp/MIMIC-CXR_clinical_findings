@@ -1,0 +1,38 @@
+T1	Medical-Assertion 532 540	NO CLEAR
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 541 554	CONSOLIDATION
+T3	Lesion-Description 580 587	OPACITY
+T4	Lesion-Anatomy 597 612	LEFT LOWER LOBE
+T5	Medical-Assertion 613 621	COULD BE
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 626 634;636 648	RESIDUAL OF INFECTION
+T7	Lesion-Description 670 676	NODULE
+E5	Lesion-Description:T7
+T8	Medical-Assertion 709 711	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 713 729	pleural effusion
+T10	Medical-Problem 731 743	pneumothorax
+T11	Medical-Problem 747 762	pulmonary edema
+T12	Medical-Problem 793 808	MILD THICKENING
+T13	Medical-Anatomy 816 841	RIGHT PARATRACHEAL STRIPE
+T14	Lesion-Assertion 842 847	COULD
+A4	Lesion-AssertionValue T14 possible
+T15	Lesion-Description 858 868	ADENOPATHY
+T16	Lesion-Assertion 889 897	POSSIBLE
+A5	Lesion-AssertionValue T16 possible
+T17	Lesion-Anatomy 898 918	LEFT LOWER LOBE LUNG
+T18	Lesion-Description 919 925	NODULE
+T19	Lesion-Assertion 928 936	POSSIBLE
+A6	Lesion-AssertionValue T19 possible
+T20	Lesion-Anatomy 937 955	RIGHT PARATRACHEAL
+T21	Lesion-Description 956 966	ADENOPATHY
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13
+E11	Lesion-Description:T15 has-Lesion-Assertion:T14
+E13	Lesion-Description:T18 has-Lesion-Assertion:T16 has-Lesion-Anatomy:T17
+E15	Lesion-Description:T21 has-Lesion-Assertion:T19 has-Lesion-Anatomy:T20

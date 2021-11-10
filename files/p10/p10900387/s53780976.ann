@@ -1,0 +1,31 @@
+T1	Medical-Problem 272 321	rapid clearing of relatively severe consolidation
+T2	Medical-Anatomy 329 339	right lung
+T3	Medical-Problem 346 364	interstitial edema
+T4	Medical-Anatomy 372 376	left
+T5	Medical-Assertion 397 405	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 412 417	edema
+T7	Medical-Anatomy 459 469	both lungs
+T8	Medical-Problem 489 538	return of the widespread interstitial abnormality
+T9	Medical-Anatomy 542 552	both lungs
+T10	Medical-Problem 580 585	edema
+T11	Medical-Problem 612 632	mild cardiomegaly is
+E10	Medical-Problem:T11
+T12	Medical-Problem 644 677	pulmonary vasculature is engorged
+E11	Medical-Problem:T12
+T13	Medical-Problem 696 717	greater consolidation
+T14	Medical-Anatomy 725 740	left lower lung
+T15	Medical-Problem 749 760	atelectasis
+E14	Medical-Problem:T15
+T16	Medical-Problem 765 774	pneumonia
+E15	Medical-Problem:T16
+T17	Medical-Assertion 776 778	No
+A2	Medical-AssertionValue T17 absent
+T18	Medical-Problem 779 791	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E16	Medical-Problem:T18 has-Medical-Assertion:T17

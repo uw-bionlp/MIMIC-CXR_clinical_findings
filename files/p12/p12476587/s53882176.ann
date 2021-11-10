@@ -1,0 +1,51 @@
+T1	Lesion-Anatomy 461 472	mediastinal
+T2	Lesion-Description 473 488	lymphadenopathy
+T3	Medical-Problem 521 535	Hilar contours
+E3	Medical-Problem:T3
+T4	Medical-Assertion 625 631	likely
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 632 646;648 667	mild pulmonary vascular congestion
+T6	Medical-Problem 670 715	Small to moderate size right pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Problem 720 725;727 748	small left pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Problem 765 793	Bibasilar airspace opacities
+E7	Medical-Problem:T8
+T9	Medical-Assertion 794 799;801 808	could reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 809 820	atelectasis
+T11	Medical-Problem 824 833	infection
+T12	Lesion-Count 836 844	Multiple
+T13	Lesion-Description 845 862	nodular opacities
+T14	Lesion-Anatomy 866 876	both lungs
+T15	Medical-Assertion 936 938	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 939 951	pneumothorax
+T17	Medical-Problem 978 1015	mild to moderate degenerative changes
+T18	Medical-Anatomy 1023 1031;1033 1038	thoracic spine
+T19	Medical-Problem 1143 1204;1206 1215	Small to moderate biilateral pleural effusions, right greater than left
+E16	Medical-Problem:T19
+T20	Medical-Problem 1222 1241	bibasilar opacities
+E17	Medical-Problem:T20
+T21	Medical-Assertion 1242 1261	possibly reflecting
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1262 1273	atelectasis
+T23	Medical-Problem 1278 1287	infection
+T24	Medical-Problem 1290 1324	Mild pulmonary vascular congestion
+E20	Medical-Problem:T24
+T25	Lesion-Anatomy 1333 1342	pulmonary
+T26	Lesion-Description 1355 1362	lesions
+T27	Lesion-Anatomy 1413 1424	mediastinal
+T28	Lesion-Anatomy 1430 1435	hilar
+T29	Lesion-Description 1436 1451	lymphadenopathy
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Lesion-Description:T13 has-Lesion-Count:T12 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Assertion:T21
+E22	Lesion-Description:T26 has-Lesion-Anatomy:T25
+E25	Lesion-Description:T29 has-Lesion-Anatomy:T27 has-Lesion-Anatomy:T28

@@ -1,0 +1,22 @@
+T1	Medical-Problem 290 306	low lung volumes
+T2	Medical-Problem 312 355	crowding of the pulmonary vascular markings
+T3	Medical-Anatomy 364 374	lung bases
+T4	Medical-Problem 386 401	mild prominence
+T5	Medical-Anatomy 409 431;433 441	pulmonary interstitial markings
+T6	Medical-Assertion 442 449	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 450 455	signs
+T8	Medical-Problem 460 481	overt pulmonary edema
+T9	Medical-Assertion 484 486	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 487 501	pneumothoraces
+T11	Medical-Assertion 530 536	likely
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 537 570	small bilateral pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,30 @@
+T1	Lesion-Size 151 163	1.3 x 1.0-cm
+T2	Lesion-Anatomy 164 180	right lower lobe
+T3	Lesion-Description 181 188	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 189 196	density
+T5	Lesion-Size-Trend 212 237	relatively stable in size
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Anatomy 314 319	lungs
+T7	Medical-Assertion 336 347	no evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 351 364	consolidation
+T9	Medical-Problem 366 374	effusion
+T10	Medical-Problem 379 391	pneumothorax
+T11	Medical-Assertion 440 442	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 443 458	acute fractures
+T13	Lesion-Size-Trend 491 500	Unchanged
+A4	Lesion-Size-TrendValue T13 no-change
+T14	Lesion-Anatomy 501 527	right lower lobe pulmonary
+T15	Lesion-Description 528 534	nodule
+T16	Medical-Assertion 604 606	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 607 628;630 647	acute cardiopulmonary process otherwise
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Size-Trend:T13 has-Lesion-Anatomy:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

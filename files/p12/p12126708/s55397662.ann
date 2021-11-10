@@ -1,0 +1,29 @@
+T1	Medical-Problem 314 358;360 374	Unchanged bilateral pleural effusions, right more than left
+E1	Medical-Problem:T1
+T2	Medical-Problem 379 410	small parenchymal consolidation
+T3	Medical-Anatomy 418 433	right lung base
+T4	Medical-Problem 503 510;512 554	further simultaneous left retrocardiac atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Assertion 555 563	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 569 574	these
+T7	Medical-Problem 575 586;588 594	parenchymal change
+T8	Medical-Problem 604 615	atelectasis
+T9	Medical-Assertion 616 622	rather
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 628 637	pneumonia
+T11	Medical-Assertion 640 642	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 643 658;660 669	new parenchymal opacities
+T13	Medical-Assertion 671 673	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 674 686	pneumothorax
+T15	Medical-Problem 689 710	Moderate cardiomegaly
+E11	Medical-Problem:T15
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T10 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

@@ -1,0 +1,28 @@
+T1	Lesion-Assertion 80 92	Questionable
+A1	Lesion-AssertionValue T1 possible
+T2	Lesion-Anatomy 93 109	right upper lobe
+T3	Lesion-Description 110 116	lesion
+T4	Medical-Assertion 222 233	no evidence
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 238 254;256 269	right upper lung abnormalities
+T6	Medical-Assertion 272 274	No
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 275 292	pleural effusions
+T8	Medical-Assertion 295 297	No
+A4	Medical-AssertionValue T8 absent
+T9	Medical-Problem 298 312	acute findings
+T10	Medical-Problem 315 323;325 339	Valvular calcifications
+E6	Medical-Problem:T10
+T11	Medical-Problem 342 383	Borderline size of the cardiac silhouette
+E7	Medical-Problem:T11
+T12	Medical-Problem 388 398	tortuosity
+T13	Medical-Anatomy 407 421	thoracic aorta
+T14	Medical-Assertion 424 426	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 427 442	pulmonary edema
+E2	Lesion-Description:T3 has-Lesion-Assertion:T1 has-Lesion-Anatomy:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Anatomy:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

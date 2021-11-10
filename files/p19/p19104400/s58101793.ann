@@ -1,0 +1,15 @@
+T1	Medical-Assertion 265 267	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 269 285	pleural effusion
+T3	Medical-Problem 289 301	pneumothorax
+T4	Lesion-Anatomy 335 347;349 363	mid thoracic vertebral body
+T5	Lesion-Description 364 370	lesion
+T6	Lesion-Assertion 374 377	not
+A2	Lesion-AssertionValue T6 absent
+T7	Medical-Assertion 429 440	No evidence
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 444 473	acute cardiopulmonary disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7

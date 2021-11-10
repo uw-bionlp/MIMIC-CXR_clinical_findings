@@ -1,0 +1,22 @@
+T1	Medical-Assertion 272 274	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 275 287	pneumothorax
+T3	Medical-Problem 292 312	mediastinal widening
+T4	Medical-Problem 389 425	new small bilateral pleural effusion
+E3	Medical-Problem:T4
+T5	Lesion-Characteristic 428 437	Extensive
+T6	Lesion-Description 449 459	nodulation
+T7	Lesion-Size-Trend 481 490	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 502 509;511 519	no good evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 524 533	new edema
+T10	Medical-Problem 537 550	consolidation
+T11	Medical-Problem 576 580;582 593	mild atelectasis
+T12	Medical-Anatomy 601 622	base of the left lung
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Size-Trend:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12

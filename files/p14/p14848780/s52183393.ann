@@ -1,0 +1,34 @@
+T1	Medical-Problem 220 258	Several broken median sternotomy wires
+E1	Medical-Problem:T1
+T2	Medical-Problem 285 309	prior sternal dehiscence
+E2	Medical-Problem:T2
+T3	Medical-Problem 361 372	atelectasis
+T4	Medical-Anatomy 380 415	lung bases, left greater than right
+T5	Medical-Problem 428 438	flattening
+T6	Medical-Anatomy 446 460	hemidiaphragms
+T7	Medical-Assertion 465 471	likely
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 472 495;497 506	small bilateral pleural effusions
+T9	Medical-Problem 509 553	Several healed right posterior rib fractures
+E8	Medical-Problem:T9
+T10	Medical-Anatomy 565 570	Lungs
+T11	Medical-Assertion 585 587	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 588 607	focal consolidation
+T13	Medical-Problem 611 632	overt pulmonary edema
+T14	Medical-Assertion 645 647	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 649 663	pneumothoraces
+T16	Medical-Problem 666 678	Irregularity
+T17	Medical-Anatomy 686 711	humeral heads bilaterally
+T18	Medical-Assertion 716 726	suggestive
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 728 747	prior old fractures
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Anatomy:T17 has-Medical-Assertion:T18

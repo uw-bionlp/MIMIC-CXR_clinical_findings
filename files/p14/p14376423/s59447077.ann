@@ -1,0 +1,20 @@
+T1	Medical-Problem 289 294;296 310	Areas of atelectasis
+T2	Medical-Anatomy 332 361	left and the right lung bases
+T3	Medical-Problem 373 408	relatively extensive air collection
+T4	Medical-Anatomy 416 450;452 456	left and right soft tissues of the neck
+T5	Medical-Assertion 458 469	No evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 473 497	free intra-abdominal air
+T7	Medical-Problem 499 516	pneumomediastinum
+T8	Medical-Problem 521 533	pneumothorax
+T9	Medical-Assertion 556 558	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 559 576	pleural effusions
+T11	Medical-Problem 578 588	Borderline
+E9	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

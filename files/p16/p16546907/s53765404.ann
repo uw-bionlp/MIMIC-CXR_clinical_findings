@@ -1,0 +1,71 @@
+T1	Medical-Problem 613 631	large pneumothorax
+T2	Medical-Anatomy 648 663	right lung base
+T3	Medical-Problem 674 691	increased opacity
+T4	Medical-Anatomy 699 708	retracted
+T5	Medical-Anatomy 709 714;716 751	right lung base and perihilar region. The
+T6	Medical-Anatomy 752 757	right
+E6	Medical-Anatomy:T6
+T7	Medical-Assertion 796 804	Probable
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 805 809	mild
+E7	Medical-Problem:T8
+T9	Medical-Problem 810 825	rightward shift
+T10	Medical-Anatomy 833 844	mediastinum
+T11	Medical-Problem 858 875	mild cardiomegaly
+E10	Medical-Problem:T11
+T12	Medical-Assertion 876 883	without
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 884 898	unfolded aorta
+T14	Medical-Anatomy 909 914	hilum
+T15	Medical-Problem 919 955	prominent, with a tapered appearance
+T16	Medical-Problem 1030 1049	minimal atelectasis
+T17	Medical-Assertion 1050 1052	or
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1053 1061	scarring
+T19	Medical-Anatomy 1069 1083	left lung base
+T20	Medical-Problem 1094 1096;1098 1128	mi prominence of the interstitial
+T21	Medical-Anatomy 1145 1154	left lung
+T22	Medical-Anatomy 1178 1187	left lung
+T23	Medical-Problem 1203 1234	increased interstitial markings
+T24	Lesion-Count 1239 1247	multiple
+T25	Lesion-Size 1248 1253	small
+T26	Lesion-Description 1255 1262	nodular
+E23	Lesion-Description:T26
+T27	Lesion-Description 1263 1272	opacities
+T28	Medical-Problem 1400 1412	pneumothorax
+T29	Medical-Anatomy 1416 1426;1428 1432	right lung base
+T30	Medical-Problem 1451 1471	shift of mediastinum
+E27	Medical-Problem:T30
+T31	Medical-Problem 1482 1509	Retracted/atelectatic right
+E28	Medical-Problem:T31
+T32	Medical-Problem 1521 1538	increased opacity
+T33	Medical-Anatomy 1546 1556;1558 1562	right lung base
+T34	Medical-Anatomy 1567 1583	perihilar region
+T35	Medical-Problem 1669 1679	Prominence
+T36	Medical-Anatomy 1687 1707	left pulmonary hilum
+T37	Medical-Assertion 1708 1723	raises question
+A4	Medical-AssertionValue T37 possible
+T38	Medical-Problem 1727 1736;1738 1750	pulmonary hypertension
+T39	Medical-Problem 1756 1772	Subtle increased
+E35	Medical-Problem:T39
+T40	Medical-Problem 1773 1794	interstitial markings
+T41	Medical-Problem 1799 1816	nodular densities
+E37	Medical-Problem:T41
+T42	Medical-Anatomy 1824 1828;1830 1834	left lung
+T43	Medical-Problem 1932 1955	right base pneumothorax
+E39	Medical-Problem:T43
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T17 has-Medical-Anatomy:T19
+E15	Medical-Problem:T18 has-Medical-Assertion:T17 has-Medical-Anatomy:T19
+E17	Medical-Problem:T20 has-Medical-Anatomy:T21
+E20	Medical-Problem:T23 has-Medical-Anatomy:T22
+E24	Lesion-Description:T27 has-Lesion-Count:T24 has-Lesion-Size-Present:T25
+E25	Medical-Problem:T28 has-Medical-Anatomy:T29
+E29	Medical-Problem:T32 has-Medical-Anatomy:T33 has-Medical-Anatomy:T34
+E32	Medical-Problem:T35 has-Medical-Anatomy:T36
+E34	Medical-Problem:T38 has-Medical-Anatomy:T36 has-Medical-Assertion:T37
+E36	Medical-Problem:T40 has-Medical-Anatomy:T42

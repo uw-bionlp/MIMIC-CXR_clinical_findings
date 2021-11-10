@@ -1,0 +1,36 @@
+T1	Lesion-Assertion 395 397	no
+A1	Lesion-AssertionValue T1 absent
+T2	Lesion-Characteristic 398 408	suspicious
+T3	Lesion-Anatomy 409 418	pulmonary
+T4	Lesion-Description 419 426	nodules
+T5	Lesion-Description 430 436	masses
+T6	Medical-Problem 450 484	small, linear focus of atelectasis
+T7	Medical-Anatomy 492 508	right lower lobe
+T8	Medical-Problem 522 545	otherwise hyperinflated
+E7	Medical-Problem:T8
+T9	Medical-Assertion 587 594	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 596 615	focal consolidation
+T11	Medical-Problem 617 634	pleural effusions
+T12	Medical-Problem 639 657	pleural thickening
+T13	Medical-Assertion 751 753	No
+A3	Medical-AssertionValue T13 absent
+T14	Lesion-Anatomy 779 792	intrathoracic
+T15	Lesion-Description 793 811	metastatic disease
+T16	Medical-Problem 815 826;828 857	other acute cardiopulmonary abnormalities
+T17	Lesion-Size-Trend 860 869	Unchanged
+A4	Lesion-Size-TrendValue T17 no-change
+T18	Medical-Problem 870 896	hyperinflation bilaterally
+E14	Medical-Problem:T18
+T19	Medical-Assertion 897 903;905 915	may be consistent
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 921 958	chronic obstructive pulmonary disease
+E3	Lesion-Description:T4 has-Lesion-Assertion:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T3
+E4	Lesion-Description:T5 has-Lesion-Assertion:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T9
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T13
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

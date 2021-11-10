@@ -1,0 +1,54 @@
+T1	Medical-Problem 274 291	slight prominence
+T2	Medical-Anatomy 299 303	hila
+T3	Medical-Assertion 310 323	may be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 324 342;344 355	pulmonary vascular engorgement
+T5	Lesion-Characteristic 366 376	underlying
+T6	Lesion-Description 377 392	lymphadenopathy
+T7	Lesion-Assertion 396 399	not
+A2	Lesion-AssertionValue T7 possible
+T8	Medical-Problem 499 536	Subtle left base retrocardiac opacity
+E6	Medical-Problem:T8
+T9	Medical-Problem 575 586	atelectasis
+E7	Medical-Problem:T9
+T10	Medical-Problem 590 600	aspiration
+T11	Medical-Problem 602 626	underlying consolidation
+T12	Medical-Assertion 630 642	not excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 655 657	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 658 674	pleural effusion
+T15	Medical-Problem 678 690	pneumothorax
+T16	Medical-Problem 697 719	aorta remains tortuous
+E12	Medical-Problem:T16
+T17	Medical-Problem 726 733;735 764	cardiac silhouette is mildly enlarged
+E13	Medical-Problem:T17
+T18	Medical-Problem 837 854	Slight prominence
+T19	Medical-Anatomy 862 898	hila, particularly of the left hilum
+T20	Medical-Assertion 906 927	while could relate to
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 928 948	vascular engorgement
+T22	Lesion-Characteristic 950 960	underlying
+T23	Lesion-Description 961 976	lymphadenopathy
+T24	Lesion-Assertion 981 993	not excluded
+A6	Lesion-AssertionValue T24 possible
+T25	Medical-Problem 1046 1052;1054 1084	Subtle left base retrocardiac opacity
+E19	Medical-Problem:T25
+T26	Medical-Problem 1123 1134	atelectasis
+E20	Medical-Problem:T26
+T27	Medical-Problem 1138 1148	aspiration
+T28	Medical-Problem 1150 1174	underlying consolidation
+T29	Medical-Assertion 1178 1190	not excluded
+A7	Medical-AssertionValue T29 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T12
+E9	Medical-Problem:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E18	Lesion-Description:T23 has-Lesion-Characteristic:T22 has-Lesion-Assertion:T24
+E21	Medical-Problem:T27 has-Medical-Assertion:T29
+E22	Medical-Problem:T28 has-Medical-Assertion:T29

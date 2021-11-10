@@ -1,0 +1,23 @@
+T1	Medical-Problem 60 77	New consolidation
+T2	Medical-Anatomy 81 96	left lower lobe
+T3	Medical-Assertion 98 104	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 107 118	atelectasis
+T5	Medical-Problem 123 132	pneumonia
+T6	Medical-Assertion 136 148	not excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 151 174	Lung volumes remain low
+E5	Medical-Problem:T7
+T8	Medical-Problem 202 221	vascular congestion
+E6	Medical-Problem:T8
+T9	Medical-Problem 688 693;695 722	signs of moderate pulmonary edema
+E7	Medical-Problem:T9
+T10	Medical-Problem 738 764	mild left pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 770 792	subsequent atelectasis
+E9	Medical-Problem:T11
+T12	Medical-Anatomy 811 818	cardiac
+E10	Medical-Anatomy:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6

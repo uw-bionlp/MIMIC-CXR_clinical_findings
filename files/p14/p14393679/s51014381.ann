@@ -1,0 +1,46 @@
+T1	Medical-Problem 328 332;334 371	mild enlargement of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 378 395	aorta is unfolded
+E2	Medical-Problem:T2
+T3	Medical-Problem 402 407;409 422	small hiatal hernia
+E3	Medical-Problem:T3
+T4	Medical-Problem 506 512	Patchy
+E4	Medical-Problem:T4
+T5	Medical-Problem 513 520	opacity
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 528 543	left lower lobe
+T7	Medical-Assertion 565 578	could reflect
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 582 601	area of atelectasis
+T9	Medical-Problem 609 618	infection
+T10	Medical-Problem 622 632	aspiration
+T11	Medical-Assertion 633 642;644 652	cannot be excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 660 681	left pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Assertion 703 705	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 706 718	pneumothorax
+T15	Medical-Problem 726 746	degenerative changes
+T16	Medical-Anatomy 764 785	imaged thoracic spine
+T17	Medical-Anatomy 805 819	both AC joints
+T18	Medical-Problem 852 866	patchy opacity
+T19	Medical-Anatomy 874 889	left lower lobe
+T20	Medical-Assertion 891 899	possibly
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 900 911	atelectasis
+T22	Medical-Problem 920 929	infection
+T23	Medical-Problem 933 943	aspiration
+T24	Medical-Assertion 944 962	cannot be excluded
+A5	Medical-AssertionValue T24 possible
+T25	Medical-Problem 970 991	left pleural effusion
+E20	Medical-Problem:T25
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7 has-Medical-Assertion:T11
+E9	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T20 has-Medical-Assertion:T24
+E19	Medical-Problem:T23 has-Medical-Assertion:T20 has-Medical-Assertion:T24

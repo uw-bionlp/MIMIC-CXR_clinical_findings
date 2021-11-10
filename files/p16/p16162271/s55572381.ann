@@ -1,0 +1,62 @@
+T1	Medical-Assertion 102 109	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 110 122	pneumothorax
+T3	Lesion-Size 149 154	large
+T4	Lesion-Anatomy 155 176	right hilar pulmonary
+T5	Lesion-Description 177 181	mass
+T6	Medical-Problem 190 194;196 220	post  obstructive atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Problem 223 244	Supervening infection
+T8	Medical-Problem 252 262	aspiration
+T9	Medical-Assertion 263 272;274 283	cannot be  excluded
+A2	Medical-AssertionValue T9 possible
+T10	Lesion-Size 853 858	large
+T11	Lesion-Anatomy 860 871	right hilar
+T12	Lesion-Description 872 876	mass
+T13	Lesion-Size 896 908	6.5 x 5.3 cm
+T14	Medical-Problem 914 937;939 946	plate like perifissural opacity
+T15	Medical-Anatomy 954 970	right upper lobe
+T16	Medical-Assertion 972 985	suggestive of
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 986 1014	post obstructive volume loss
+T18	Medical-Problem 1033 1054	supervening infection
+E15	Medical-Problem:T18
+T19	Medical-Problem 1062 1072	aspiration
+E16	Medical-Problem:T19
+T20	Medical-Problem 1131 1141	Trace left
+E17	Medical-Problem:T20
+T21	Medical-Problem 1142 1161	basilar atelectasis
+E18	Medical-Problem:T21
+T22	Medical-Assertion 1185 1187	no
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1188 1200	pneumothorax
+T24	Medical-Problem 1204 1220	pleural effusion
+T25	Medical-Assertion 1223 1225	No
+A5	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1226 1235	displaced
+E21	Medical-Problem:T26
+T27	Medical-Problem 1236 1250	osseous injury
+T28	Medical-Assertion 1317 1324	without
+A6	Medical-AssertionValue T28 absent
+T29	Medical-Problem 1325 1337	pneumothorax
+T30	Lesion-Size 1363 1368	large
+T31	Lesion-Anatomy 1369 1390	right hilar pulmonary
+T32	Lesion-Description 1391 1395	mass
+T33	Medical-Problem 1404 1408;1410 1433	post obstructive atelectasis
+E27	Medical-Problem:T33
+T34	Medical-Problem 1436 1457	Supervening infection
+E28	Medical-Problem:T34
+T35	Medical-Problem 1465 1475	aspiration
+E29	Medical-Problem:T35
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T11 has-Lesion-Size-Present:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E19	Medical-Problem:T23 has-Medical-Assertion:T22
+E20	Medical-Problem:T24 has-Medical-Assertion:T22
+E22	Medical-Problem:T27 has-Medical-Assertion:T25
+E23	Medical-Problem:T29 has-Medical-Assertion:T28
+E26	Lesion-Description:T32 has-Lesion-Size-Present:T30 has-Lesion-Anatomy:T31

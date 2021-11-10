@@ -1,0 +1,28 @@
+T1	Medical-Problem 738 768	moderate left pleural effusion
+T2	Medical-Problem 774 796	associated volume loss
+T3	Medical-Anatomy 804 814;816 820	left lower lobe
+T4	Medical-Problem 871 883;885 894	superimposed infection
+T5	Medical-Assertion 895 913	cannot be excluded
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 942 944	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 945 957	pneumothorax
+T8	Medical-Anatomy 977 998	pulmonary vasculature
+T9	Medical-Assertion 1002 1005	not
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 1006 1014	engorged
+T11	Medical-Problem 1227 1244	Thoracic kyphosis
+E8	Medical-Problem:T11
+T12	Medical-Problem 1259 1276;1278 1284	mild degenerative change
+E9	Medical-Problem:T12
+T13	Medical-Problem 1473 1503	moderate left pleural effusion
+E10	Medical-Problem:T13
+T14	Medical-Problem 1509 1519;1521 1532	underlying atelectasis
+E11	Medical-Problem:T14
+T15	Medical-Problem 1536 1549	consolidation
+E12	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

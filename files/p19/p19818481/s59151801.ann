@@ -1,0 +1,19 @@
+T1	Medical-Problem 296 326	Worsening multifocal opacities
+T2	Medical-Anatomy 334 349	bilateral lungs
+T3	Medical-Assertion 350 365	could represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 367 376	pneumonia
+T5	Medical-Problem 380 390	aspiration
+T6	Medical-Problem 400 427	small left pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Problem 507 547	Worsening bilateral multifocal opacities
+E6	Medical-Problem:T7
+T8	Medical-Assertion 548 561	could reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 562 582	multifocal pneumonia
+T10	Medical-Problem 587 597	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

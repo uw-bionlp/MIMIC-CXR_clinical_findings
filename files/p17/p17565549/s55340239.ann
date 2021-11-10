@@ -1,0 +1,18 @@
+T1	Medical-Problem 406 431	Multifocal consolidations
+T2	Medical-Anatomy 471 490	left perihilar area
+T3	Medical-Problem 496 504	worsened
+T4	Medical-Anatomy 513 536	right medial lower lung
+T5	Medical-Assertion 541 565	might be consistent with
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 566 576	aspiration
+T7	Medical-Problem 585 619	position-dependent pulmonary edema
+T8	Medical-Assertion 622 624	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 625 637	pneumothorax
+T10	Medical-Problem 648 655;657 665	Pleural effusion
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

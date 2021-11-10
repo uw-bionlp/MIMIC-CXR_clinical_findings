@@ -1,0 +1,18 @@
+T1	Medical-Assertion 292 294	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 295 307	pneumothorax
+T3	Medical-Anatomy 339 356	right hemi thorax
+T4	Medical-Problem 375 418	change in the diaphragmatic pleural contour
+T5	Medical-Anatomy 448 463	right lung base
+T6	Medical-Problem 465 486	Left pleural effusion
+E5	Medical-Problem:T6
+T7	Lesion-Assertion 568 571	may
+A2	Lesion-AssertionValue T7 possible
+T8	Lesion-Size-Trend 575 578	new
+A3	Lesion-Size-TrendValue T8 new
+T9	Lesion-Description 580 590	adenopathy
+T10	Lesion-Anatomy 598 630	right lower paratracheal station
+T11	Lesion-Anatomy 637 654;656 676	upper pole of the adjacent right hilus
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Size-Trend:T8 has-Lesion-Anatomy:T10 has-Lesion-Anatomy:T11

@@ -1,0 +1,50 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Lesion-Characteristic 68 70	At
+T4	Lesion-Characteristic 77 96	partially calcified
+T5	Lesion-Anatomy 97 107;109 114	left upper  lobe
+T6	Lesion-Description 115 121	nodule
+T7	Lesion-Size 571 577	1.2 cm
+T8	Lesion-Anatomy 578 588;590 594	left upper lobe
+T9	Lesion-Description 595 601	nodule
+T10	Medical-Problem 614 637	internal calcifications
+E9	Medical-Problem:T10
+T11	Medical-Assertion 664 668;670 680	does not appear
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 681 699	entirely calcified
+T13	Lesion-Description 721 736	nodular opacity
+T14	Lesion-Anatomy 756 799	right upper lung over the posterior 5th rib
+T15	Medical-Assertion 844 846	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 847 860	consolidation
+T17	Medical-Problem 864 872	effusion
+T18	Medical-Problem 875 893	Pleural thickening
+T19	Medical-Assertion 894 900	versus
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 902 928	prominent extrapleural fat
+T21	Medical-Assertion 1056 1058	No
+A5	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1060 1087	acute osseous abnormalities
+T23	Medical-Problem 1098 1118	hypertrophic changes
+T24	Medical-Anatomy 1136 1141	spine
+T25	Medical-Assertion 1161 1163	No
+A6	Medical-AssertionValue T25 absent
+T26	Medical-Problem 1164 1193	acute cardiopulmonary process
+T27	Lesion-Characteristic 1196 1198	At
+T28	Lesion-Characteristic 1205 1224	partially calcified
+T29	Lesion-Anatomy 1225 1235;1237 1241	left upper lobe
+T30	Lesion-Description 1242 1248	nodule
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T13 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T19
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T21 has-Medical-Anatomy:T24
+E20	Medical-Problem:T26 has-Medical-Assertion:T25
+E24	Lesion-Description:T30 has-Lesion-Characteristic:T27 has-Lesion-Characteristic:T28 has-Lesion-Anatomy:T29

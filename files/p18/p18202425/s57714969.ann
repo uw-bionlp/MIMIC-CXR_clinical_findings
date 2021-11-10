@@ -1,0 +1,27 @@
+T1	Medical-Problem 187 208	Region of abnormality
+T2	Medical-Anatomy 253 262;264 315	right mid lung above and below the level of the minor fissure
+T3	Medical-Problem 360 369	pneumonia
+T4	Medical-Anatomy 377 418;420 445	superior segment of the right lower lobe, projecting over the spine
+T5	Medical-Assertion 474 477	may
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 486 494	elements
+T7	Medical-Anatomy 503 537	anterior segment of the upper lobe
+T8	Medical-Anatomy 547 570	lower pole of the hilus
+T9	Medical-Assertion 571 577	may be
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 579 587	enlarged
+T11	Lesion-Assertion 627 638	no evidence
+A3	Lesion-AssertionValue T11 absent
+T12	Lesion-Description 642 652	adenopathy
+T13	Lesion-Anatomy 654 663	elsewhere
+T14	Medical-Assertion 665 668	nor
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 669 672	any
+E11	Medical-Problem:T15
+T16	Medical-Problem 673 692	pleural abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Lesion-Description:T12 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T14

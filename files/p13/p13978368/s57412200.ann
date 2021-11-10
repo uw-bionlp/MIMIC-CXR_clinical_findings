@@ -1,0 +1,38 @@
+T1	Medical-Problem 280 314	heart size appears mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 366 376	tortuosity
+T3	Medical-Anatomy 384 398	thoracic aorta
+T4	Medical-Problem 413 424	Volume loss
+T5	Medical-Anatomy 433 443	right lung
+T6	Medical-Problem 518 548	Right-sided pleural thickening
+E6	Medical-Problem:T6
+T7	Medical-Problem 561 572;574 585	right hilar enlargement
+E7	Medical-Problem:T7
+T8	Medical-Problem 590 608	hazy opacification
+T9	Medical-Anatomy 616 644;646 686	right lung, particularly the superior segment of the right lower lobe
+T10	Medical-Problem 758 781	degree of opacification
+T11	Medical-Anatomy 793 798;800 851	right hemithorax, particularly the right perihilar region
+T12	Medical-Assertion 942 944	no
+A1	Medical-AssertionValue T12 absent
+T13	Medical-Problem 945 957	pneumothorax
+T14	Medical-Assertion 1118 1126;1128 1138	possibly reflecting
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1139 1158	disease progression
+T16	Medical-Problem 1160 1169	infection
+T17	Medical-Problem 1174 1200	asymmetric pulmonary edema
+T18	Lesion-Anatomy 1204 1215	Right hilar
+T19	Lesion-Description 1216 1220	mass
+T20	Medical-Problem 1222 1246	right pleural thickening
+T21	Medical-Problem 1251 1269	hazy opacification
+T22	Medical-Anatomy 1282 1292	right lung
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T10 has-Medical-Anatomy:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T14
+E17	Lesion-Description:T19 has-Lesion-Anatomy:T18
+E18	Medical-Problem:T20 has-Medical-Anatomy:T22
+E19	Medical-Problem:T21 has-Medical-Anatomy:T22

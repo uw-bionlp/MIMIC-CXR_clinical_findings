@@ -1,0 +1,27 @@
+T1	Medical-Problem 401 427	pattern of pulmonary edema
+T2	Medical-Assertion 428 440	has resolved
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 443 448;450 477	Small bilateral pleural effusions
+E2	Medical-Problem:T3
+T4	Medical-Problem 515 522;524 533	Streaky opacities
+T5	Medical-Anatomy 541 555	left lung base
+T6	Medical-Assertion 556 570	likely reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 571 582	atelectasis
+T8	Medical-Assertion 585 587	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 588 600	pneumothorax
+T10	Medical-Problem 618 645	Old bilateral rib fractures
+E7	Medical-Problem:T10
+T11	Medical-Assertion 675 685	Resolution
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 706 721	pulmonary edema
+T13	Medical-Problem 724 750;752 761	Persistent small bilateral effusions
+E9	Medical-Problem:T13
+T14	Medical-Problem 766 790	left basilar atelectasis
+E10	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

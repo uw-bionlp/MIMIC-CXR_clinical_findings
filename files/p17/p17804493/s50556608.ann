@@ -1,0 +1,63 @@
+T1	Medical-Anatomy 305 323	cardiac silhouette
+E1	Medical-Anatomy:T1
+T2	Lesion-Description 471 486	lymphadenopathy
+E2	Lesion-Description:T2
+T3	Medical-Problem 498 511;513 521	new perihilar haziness
+E3	Medical-Problem:T3
+T4	Medical-Problem 526 549	vascular indistinctness
+E4	Medical-Problem:T4
+T5	Medical-Problem 566 590	moderate pulmonary edema
+E5	Medical-Problem:T5
+T6	Medical-Problem 595 630	moderate size left pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Problem 635 663	small right pleural effusion
+E7	Medical-Problem:T7
+T8	Medical-Problem 727 747	Retrocardiac opacity
+E8	Medical-Problem:T8
+T9	Medical-Assertion 748 763	likely reflects
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 764 775	atelectasis
+T11	Medical-Problem 783 792	infection
+T12	Medical-Assertion 793 802;804 812	cannot be excluded
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 824 826	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 827 839	pneumothorax
+T15	Lesion-Count 842 850	Mutliple
+T16	Lesion-Anatomy 851 860	pulmonary
+T17	Lesion-Description 861 868	nodules
+T18	Medical-Problem 920 935	pulmonary edema
+E15	Medical-Problem:T18
+T19	Lesion-Characteristic 958 967	Expansile
+T20	Lesion-Characteristic 968 973	lytic
+T21	Lesion-Description 974 980	lesion
+T22	Lesion-Anatomy 988 1001	right 8th rib
+T23	Lesion-Characteristic 1037 1042	lytic
+T24	Lesion-Description 1043 1050	lesions
+T25	Lesion-Anatomy 1062 1068	thorax
+T26	Medical-Problem 1133 1190	New moderate pulmonary edema with moderate size left, and
+E23	Medical-Problem:T26
+T27	Medical-Problem 1191 1202;1204 1221	small right pleural effusions
+E24	Medical-Problem:T27
+T28	Medical-Problem 1224 1250	Left basilar opacification
+E25	Medical-Problem:T28
+T29	Medical-Assertion 1251 1262	may reflect
+A4	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1263 1274	atelectasis
+T31	Medical-Problem 1283 1292	infection
+T32	Medical-Problem 1296 1306	aspiration
+T33	Medical-Assertion 1307 1325	cannot be excluded
+A5	Medical-AssertionValue T33 possible
+T34	Lesion-Anatomy 1352 1361	pulmonary
+T35	Lesion-Anatomy 1385 1396	mediastinal
+T36	Lesion-Description 1398 1413	lymphadenopathy
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Lesion-Description:T17 has-Lesion-Count:T15 has-Lesion-Anatomy:T16
+E18	Lesion-Description:T21 has-Lesion-Characteristic:T19 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T22
+E21	Lesion-Description:T24 has-Lesion-Characteristic:T23 has-Lesion-Anatomy:T25
+E26	Medical-Problem:T30 has-Medical-Assertion:T29
+E27	Medical-Problem:T31 has-Medical-Assertion:T29 has-Medical-Assertion:T33
+E28	Medical-Problem:T32 has-Medical-Assertion:T29 has-Medical-Assertion:T33
+E31	Lesion-Description:T36 has-Lesion-Anatomy:T34 has-Lesion-Anatomy:T35

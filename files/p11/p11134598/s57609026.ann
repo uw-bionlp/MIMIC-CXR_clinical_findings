@@ -1,0 +1,35 @@
+T1	Medical-Problem 285 305	Retrosternal opacity
+T2	Medical-Problem 310 321	obscuration
+T3	Medical-Anatomy 329 354	right paratracheal stripe
+T4	Lesion-Assertion 355 358;360 367	may reflect
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Anatomy 371 391	anterior mediastinal
+T6	Lesion-Description 392 396	mass
+T7	Medical-Problem 399 416	Diffuse sclerosis
+T8	Medical-Anatomy 424 438;440 449	upper thoracic vertebrae
+T9	Lesion-Assertion 453 467	concerning for
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Assertion 468 476	possible
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 477 486	sclerotic
+T12	Lesion-Description 487 497	metastases
+T13	Lesion-Assertion 594 600	Likely
+A4	Lesion-AssertionValue T13 possible
+T14	Lesion-Anatomy 601 621	anterior mediastinal
+T15	Lesion-Description 622 626	mass
+T16	Medical-Problem 677 711	Upper thoracic vertebral sclerosis
+E12	Medical-Problem:T16
+T17	Lesion-Assertion 712 726	raises concern
+A5	Lesion-AssertionValue T17 possible
+T18	Lesion-Description 731 749	metastatic disease
+T19	Medical-Assertion 855 857	No
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 858 873	acute pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Lesion-Description:T12 has-Lesion-Assertion:T9 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11
+E11	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14
+E13	Lesion-Description:T18 has-Lesion-Assertion:T17
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

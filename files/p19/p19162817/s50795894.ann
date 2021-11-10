@@ -1,0 +1,42 @@
+T1	Medical-Problem 284 301	aorta is tortuous
+E1	Medical-Problem:T1
+T2	Medical-Problem 305 319	Calcifications
+T3	Medical-Anatomy 331 342	right hilum
+T4	Medical-Assertion 343 357	likely reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 358 377;379 386	prior granulomatous disease
+T6	Medical-Anatomy 393 414	pulmonary vascularity
+T7	Medical-Assertion 418 421	not
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 422 430	engorged
+T9	Lesion-Size 433 437	Tiny
+T10	Lesion-Characteristic 438 447	calcified
+T11	Lesion-Description 448 457	granuloma
+T12	Lesion-Anatomy 486 506	right mid lung field
+T13	Medical-Problem 518 532;534 545	minimal linear atelectasis
+T14	Medical-Anatomy 553 567	left lung base
+T15	Medical-Assertion 570 572	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 573 592	focal consolidation
+T17	Medical-Problem 594 610	pleural effusion
+T18	Medical-Problem 615 627	pneumothorax
+T19	Medical-Problem 641 666	Mild degenerative changes
+T20	Medical-Anatomy 685 699	thoracic spine
+T21	Medical-Problem 719 737	Linear atelectasis
+T22	Medical-Anatomy 745 759	left lung base
+T23	Medical-Problem 774 793;795 802	prior granulomatous disease
+E20	Medical-Problem:T23
+T24	Medical-Assertion 805 807	No
+A4	Medical-AssertionValue T24 absent
+T25	Medical-Problem 808 841	acute cardiopulmonary abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T15
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T21 has-Medical-Anatomy:T22
+E21	Medical-Problem:T25 has-Medical-Assertion:T24

@@ -1,0 +1,55 @@
+T1	Medical-Problem 30 32	At
+E1	Medical-Problem:T1
+T2	Medical-Problem 39 68	6 bilateral rounded densities
+E2	Medical-Problem:T2
+T3	Lesion-Assertion 92 106	concerning for
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Description 109 115	masses
+T5	Lesion-Assertion 118 126	Possible
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Anatomy 127 132	hilar
+T7	Lesion-Description 133 143	adenopathy
+T8	Medical-Assertion 205 216	No evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 220 234	fluid overload
+T10	Medical-Problem 536 551	mild tortuosity
+E7	Medical-Problem:T10
+T11	Lesion-Count 599 602	two
+T12	Lesion-Description 603 620	nodular densities
+T13	Lesion-Anatomy 641 652;654 664	right lower lung field
+T14	Medical-Problem 695 727	additional large rounded density
+T15	Medical-Anatomy 749 780	posterior lung field inferiorly
+T16	Medical-Problem 850 880	hilar contours are mildly full
+E13	Medical-Problem:T16
+T17	Lesion-Assertion 888 891	may
+A4	Lesion-AssertionValue T17 possible
+T18	Lesion-Description 902 917	lymphadenopathy
+T19	Lesion-Size 929 942	subcentimeter
+T20	Lesion-Description 943 960	nodular densities
+T21	Lesion-Anatomy 982 997	left lung field
+T22	Medical-Assertion 1009 1020	no evidence
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1024 1029	edema
+T24	Medical-Assertion 1042 1044	no
+A6	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1045 1061	pleural effusion
+T26	Medical-Problem 1065 1077	pneumothorax
+T27	Lesion-Anatomy 1103 1113	left sided
+E21	Lesion-Anatomy:T27
+T28	Medical-Problem 1135 1156	larger sclerotic foci
+T29	Medical-Anatomy 1158 1227	projecting over ribs on the right and vertebral column on the lateral
+T30	Medical-Assertion 1229 1234;1236 1249	which may represent
+A7	Medical-AssertionValue T30 possible
+T31	Medical-Problem 1250 1269	degenerative change
+E3	Lesion-Description:T4 has-Lesion-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T12 has-Lesion-Count:T11 has-Lesion-Anatomy:T13
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Lesion-Description:T18 has-Lesion-Assertion:T17
+E16	Lesion-Description:T20 has-Lesion-Size-Present:T19 has-Lesion-Anatomy:T21
+E18	Medical-Problem:T23 has-Medical-Assertion:T22
+E19	Medical-Problem:T25 has-Medical-Assertion:T24
+E20	Medical-Problem:T26 has-Medical-Assertion:T24
+E22	Medical-Problem:T28 has-Medical-Anatomy:T29
+E24	Medical-Problem:T31 has-Medical-Assertion:T30

@@ -1,0 +1,35 @@
+T1	Lesion-Size-Trend 33 42	Unchanged
+A1	Lesion-Size-TrendValue T1 no-change
+T2	Lesion-Anatomy 43 56	left low lung
+T3	Lesion-Description 57 64	nodular
+E2	Lesion-Description:T3
+T4	Lesion-Description 65 74	opacities
+T5	Lesion-Assertion 75 90	suspected to be
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Description 91 101	rheumatoid
+E4	Lesion-Description:T6
+T7	Lesion-Description 102 109	nodules
+T8	Medical-Assertion 525 527	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 528 544	pleural effusion
+T10	Medical-Problem 546 558	pneumothorax
+T11	Medical-Problem 563 578	pulmonary edema
+T12	Lesion-Description 600 607	nodular
+E9	Lesion-Description:T12
+T13	Medical-Problem 608 617	densities
+T14	Medical-Anatomy 625 640	left lower lobe
+T15	Medical-Assertion 663 665	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 666 682	bony abnormality
+T17	Lesion-Description 740 750	rheumatoid
+E13	Lesion-Description:T17
+T18	Lesion-Description 751 758	nodules
+T19	Lesion-Anatomy 762 772;774 778	left lower lobe
+E3	Lesion-Description:T4 has-Lesion-Size-Trend:T1 has-Lesion-Anatomy:T2
+E5	Lesion-Description:T7 has-Lesion-Anatomy:T2 has-Lesion-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Lesion-Description:T18 has-Lesion-Anatomy:T19

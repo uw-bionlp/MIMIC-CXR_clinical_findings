@@ -1,0 +1,39 @@
+T1	Medical-Problem 34 60	Subtle ill-defined opacity
+T2	Medical-Anatomy 72 87	right lung base
+T3	Medical-Assertion 88 102	concerning for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 106 110;112 136	area  of developing infection
+T5	Medical-Problem 445 463	Subtle ill-defined
+E4	Medical-Problem:T5
+T6	Medical-Problem 464 478	patchy opacity
+T7	Medical-Anatomy 500 516	right lower lobe
+T8	Medical-Assertion 517 531	concerning for
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 535 563	area of developing infection
+T10	Medical-Anatomy 566 575	Left lung
+E8	Medical-Anatomy:T10
+T11	Medical-Assertion 588 590	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 591 598	pleural
+T13	Medical-Problem 599 607	effusion
+T14	Medical-Problem 611 623	pneumothorax
+T15	Medical-Assertion 647 649	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 650 655;657 678	acute osseous abnormalities
+T17	Medical-Problem 696 714	Subtle ill-defined
+E13	Medical-Problem:T17
+T18	Medical-Problem 715 722	opacity
+T19	Medical-Anatomy 734 749	right lung base
+T20	Medical-Assertion 750 760;762 765	concerning for
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 769 797	area of developing infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20

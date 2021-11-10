@@ -1,0 +1,29 @@
+T1	Medical-Assertion 460 462	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 463 475	pneumothorax
+T3	Medical-Problem 480 500	Lung volumes are low
+T4	Medical-Problem 506 539	significant bibasilar atelectasis
+T5	Medical-Anatomy 559 574	left lower lobe
+T6	Medical-Problem 577 604	Right basilar opacification
+E5	Medical-Problem:T6
+T7	Medical-Problem 628 636;638 650	Moderate cardiomegaly
+E6	Medical-Problem:T7
+T8	Medical-Problem 666 686	Mild pulmonary edema
+E7	Medical-Problem:T8
+T9	Medical-Problem 723 752	Persistently low lung volumes
+E8	Medical-Problem:T9
+T10	Medical-Problem 758 798;800 805	bibasilar atelectasis, left greater than right
+E9	Medical-Problem:T10
+T11	Medical-Problem 811 832	Right basilar opacity
+E10	Medical-Problem:T11
+T12	Medical-Assertion 839 852	could reflect
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 853 863	aspiration
+T14	Medical-Problem 867 876	pneumonia
+T15	Medical-Problem 914 934	Mild pulmonary edema
+E13	Medical-Problem:T15
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12

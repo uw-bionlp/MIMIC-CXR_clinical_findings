@@ -1,0 +1,30 @@
+T1	Medical-Assertion 33 35	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 48	pneumothorax
+T3	Medical-Problem 50 89	slight worsening of bilateral opacities
+E2	Medical-Problem:T3
+T4	Medical-Problem 444 477;479 521	Slight worsening of predominantly right-sided diffuse airspace consolidation
+T5	Medical-Anatomy 542 556	lung periphery
+T6	Medical-Problem 578 601	left perihilar haziness
+E5	Medical-Problem:T6
+T7	Medical-Problem 606 628;630 639	scattered interstitial opacities
+E6	Medical-Problem:T7
+T8	Medical-Assertion 642 664	Differential diagnosis
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 674 702	asymmetrical pulmonary edema
+T10	Medical-Problem 710 738	diffuse aspiration pneumonia
+T11	Medical-Anatomy 746 756	right lung
+T12	Medical-Problem 757 778	coexisting with edema
+T13	Medical-Problem 782 812	Moderate left pleural effusion
+E11	Medical-Problem:T13
+T14	Medical-Problem 869 903	adjacent left retrocardiac opacity
+E12	Medical-Problem:T14
+T15	Medical-Assertion 906 908	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 909 921	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T11
+E8	Medical-Problem:T10 has-Medical-Assertion:T8 has-Medical-Anatomy:T11
+E10	Medical-Problem:T12 has-Medical-Assertion:T8 has-Medical-Anatomy:T11
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

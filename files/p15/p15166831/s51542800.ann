@@ -1,0 +1,33 @@
+T1	Medical-Problem 127 143	marked elevation
+T2	Medical-Anatomy 151 169	left hemidiaphragm
+T3	Medical-Problem 172 175;177 194	New increased opacity
+T4	Medical-Anatomy 202 226	left retrocardiac region
+T5	Medical-Problem 242 254;256 283	increasingly elevated left hemidiaphragm
+E5	Medical-Problem:T5
+T6	Medical-Assertion 284 297	could reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 298 309	atelectasis
+T8	Medical-Problem 313 323	aspiration
+T9	Lesion-Size 380 393	subcentimeter
+T10	Lesion-Description 394 401	nodular
+E9	Lesion-Description:T10
+T11	Lesion-Description 402 409	opacity
+T12	Lesion-Anatomy 418 455	level of the right third anterior rib
+T13	Medical-Problem 552 568	Linear opacities
+T14	Medical-Anatomy 573 588	right lung base
+T15	Medical-Problem 609 620	atelectasis
+T16	Medical-Problem 682 709	Left lower lobe atelectasis
+E15	Medical-Problem:T16
+T17	Medical-Problem 713 723	aspiration
+E16	Medical-Problem:T17
+T18	Lesion-Characteristic 726 736	Persistent
+T19	Lesion-Description 737 752	nodular opacity
+T20	Lesion-Anatomy 753 781	right ___ anterior rib level
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E10	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T15 has-Medical-Anatomy:T14
+E18	Lesion-Description:T19 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T20

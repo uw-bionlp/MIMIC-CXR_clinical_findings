@@ -1,0 +1,39 @@
+T1	Lesion-Characteristic 288 297	lobulated
+T2	Lesion-Description 298 302	mass
+T3	Lesion-Anatomy 311 342	inferior right perihilar region
+T4	Lesion-Size-Trend 353 363	unchanged.
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Medical-Problem 375 382	opacity
+E4	Medical-Problem:T5
+T6	Medical-Anatomy 391 413	lateral right mid lung
+T7	Medical-Assertion 425 439	concerning for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 440 449	pneumonia
+T9	Medical-Problem 454 466;468 475	retrocardiac opacity
+E7	Medical-Problem:T9
+T10	Medical-Assertion 477 483	likely
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 484 495	atelectasis
+T12	Medical-Problem 512 520	Multiple
+E9	Medical-Problem:T12
+T13	Lesion-Anatomy 521 525	lung
+T14	Lesion-Description 526 533	nodules
+T15	Lesion-Assertion 563 579	not clearly seen
+A4	Lesion-AssertionValue T15 absent
+T16	Medical-Assertion 608 610	no
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 611 618;620 628	pleural effusion
+T18	Medical-Problem 632 644	pneumothorax
+T19	Medical-Problem 666 687	New increased opacity
+T20	Medical-Anatomy 695 717	lateral right mid lung
+T21	Medical-Assertion 721 735	concerning for
+A6	Medical-AssertionValue T21 possible
+T22	Medical-Problem 737 746	pneumonia
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T4
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Lesion-Description:T14 has-Lesion-Anatomy:T13 has-Lesion-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Anatomy:T20
+E16	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

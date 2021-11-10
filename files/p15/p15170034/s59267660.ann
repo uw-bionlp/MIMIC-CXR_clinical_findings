@@ -1,0 +1,31 @@
+T1	Medical-Assertion 101 103	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 106 122	pleural effusion
+T3	Medical-Problem 126 138	pneumothorax
+T4	Medical-Assertion 175 177	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 180 205	radiopaque foreign bodies
+T6	Medical-Anatomy 469 474	heart
+T7	Medical-Assertion 479 482	not
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 483 491	enlarged
+T9	Medical-Assertion 503 505	no
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 506 509	CHF
+T11	Medical-Problem 511 527	focal infiltrate
+T12	Medical-Problem 532 540	effusion
+T13	Lesion-Assertion 589 591	no
+A5	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 592 597	hilar
+T15	Lesion-Anatomy 601 612	mediastinal
+T16	Lesion-Description 613 628	lymphadenopathy
+T17	Medical-Problem 693 711;713 717	radiopaque foreign body
+E12	Medical-Problem:T17
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Lesion-Description:T16 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T15

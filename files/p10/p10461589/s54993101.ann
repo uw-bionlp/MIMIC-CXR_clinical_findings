@@ -1,0 +1,28 @@
+T1	Lesion-Size 172 177	large
+T2	Lesion-Anatomy 178 183;185 196	right  upper lobe
+T3	Lesion-Description 197 201	mass
+T4	Lesion-Size 379 384	large
+T5	Lesion-Anatomy 385 390;392 403	right  upper lobe
+T6	Lesion-Description 404 408	mass
+T7	Lesion-Size 1067 1072	large
+T8	Lesion-Anatomy 1073 1089	right upper lobe
+T9	Lesion-Description 1090 1094	mass
+T10	Lesion-Assertion 1097 1099	No
+A1	Lesion-AssertionValue T10 absent
+T11	Lesion-Size-Trend 1100 1103	new
+A2	Lesion-Size-TrendValue T11 new
+T12	Medical-Problem 1104 1123	focal consolidation
+E10	Medical-Problem:T12
+T13	Medical-Assertion 1144 1146	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1147 1163	pleural effusion
+T15	Medical-Problem 1167 1179	pneumothorax
+T16	Medical-Anatomy 1280 1303	right mainstem bronchus
+E13	Medical-Anatomy:T16
+T17	Medical-Anatomy 1325 1350	right lower lobe bronchus
+E14	Medical-Anatomy:T17
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T5
+E9	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

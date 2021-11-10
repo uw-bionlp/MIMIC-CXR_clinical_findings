@@ -1,0 +1,22 @@
+T1	Medical-Problem 216 235	Dense consolidation
+T2	Medical-Problem 240 251	volume loss
+T3	Medical-Anatomy 259 273	left lung base
+T4	Medical-Problem 293 317	left lower lobe collapse
+T5	Medical-Problem 367 396	Pulmonary vascular congestion
+T6	Medical-Anatomy 413 423	right lung
+T7	Medical-Problem 430 445;447 481	small region of basal atelectasis or consolidation
+T8	Medical-Problem 585 591;593 630	Severe enlargement of the cardiac silhouette
+E8	Medical-Problem:T8
+T9	Medical-Assertion 796 798	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 799 811	pneumothorax
+T11	Medical-Problem 826 853	small left pleural effusion
+E10	Medical-Problem:T11
+T12	Medical-Problem 884 899;901 909	left lower lobe collapse
+E11	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E9	Medical-Problem:T10 has-Medical-Assertion:T9

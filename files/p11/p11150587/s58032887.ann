@@ -1,0 +1,16 @@
+T1	Medical-Problem 300 316	Left volume loss
+E1	Medical-Problem:T1
+T2	Medical-Problem 338 362	large amount of free air
+T3	Medical-Anatomy 363 391	underneath the hemidiaphragm
+T4	Medical-Problem 443 454	atelectasis
+T5	Medical-Assertion 455 461	versus
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 462 481	early consolidation
+T7	Medical-Anatomy 494 516	lung bases bilaterally
+T8	Medical-Assertion 567 569	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 570 584	pneumothoraces
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

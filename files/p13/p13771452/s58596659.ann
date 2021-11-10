@@ -1,0 +1,19 @@
+T1	Medical-Problem 142 153;155 187	progressive decrease in the subcutaneous gas
+T2	Medical-Anatomy 195 225;227 234	right supraclavicular and neck regions
+T3	Medical-Anatomy 324 344	right base laterally
+T4	Medical-Assertion 345 367	raises the possibility
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 371 381	aspiration
+T6	Medical-Problem 386 407	supervening pneumonia
+T7	Medical-Assertion 516 534	does not represent
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 538 550	pneumothorax
+T9	Medical-Assertion 555 557	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 558 570	definite gas
+T11	Medical-Anatomy 590 601	mediastinum
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11

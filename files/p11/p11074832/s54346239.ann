@@ -1,0 +1,25 @@
+T1	Medical-Problem 251 271	Unchanged tortuosity
+T2	Medical-Anatomy 279 287;289 294	thoracic aorta
+T3	Medical-Problem 297 323	Minimal pleural thickening
+T4	Medical-Anatomy 331 364;366 370	lateral aspect of the right chest wall
+T5	Medical-Assertion 442 444	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 446 463	pleural effusions
+T7	Medical-Assertion 466 468	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 469 478	pneumonia
+T9	Medical-Assertion 480 482	no
+A3	Medical-AssertionValue T9 absent
+T10	Lesion-Anatomy 483 487	lung
+T11	Lesion-Description 488 495	nodules
+T12	Lesion-Description 499 505	masses
+T13	Medical-Assertion 508 510	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 511 520;522 527	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Assertion:T9
+E8	Lesion-Description:T11 has-Lesion-Anatomy:T10
+E9	Lesion-Description:T12 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

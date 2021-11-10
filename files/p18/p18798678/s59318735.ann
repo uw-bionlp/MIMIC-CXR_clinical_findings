@@ -1,0 +1,35 @@
+T1	Medical-Assertion 330 332	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 333 351	pathologic changes
+T3	Medical-Anatomy 362 377	left chest wall
+T4	Medical-Problem 431 471	unchanged degenerative vertebral disease
+E3	Medical-Problem:T4
+T5	Lesion-Assertion 499 501	no
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Characteristic 502 511	traumatic
+T7	Lesion-Characteristic 515 526	compressive
+T8	Lesion-Characteristic 527 536	vertebral
+T9	Lesion-Description 537 544	lesions
+T10	Medical-Problem 547 562;564 589	Borderline size of the cardiac silhouette
+E8	Medical-Problem:T10
+T11	Medical-Assertion 590 597	without
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 598 613	pulmonary edema
+T13	Medical-Problem 616 631	Mild elongation
+T14	Medical-Anatomy 640 656	descending aorta
+T15	Medical-Assertion 659 661	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 662 671	pneumonia
+T17	Medical-Assertion 673 675	no
+A5	Medical-AssertionValue T17 absent
+T18	Medical-Problem 676 688	pneumothorax
+T19	Medical-Assertion 690 692	no
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 693 710	pleural effusions
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E7	Lesion-Description:T9 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T18 has-Medical-Assertion:T17
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

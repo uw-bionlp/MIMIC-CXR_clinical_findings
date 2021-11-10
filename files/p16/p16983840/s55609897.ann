@@ -1,0 +1,36 @@
+T1	Lesion-Characteristic 294 301	roughly
+T2	Lesion-Characteristic 303 314	rectangular
+T3	Lesion-Anatomy 315 319	lung
+T4	Lesion-Description 320 326	lesion
+T5	Lesion-Size 402 405	6mm
+T6	Lesion-Characteristic 406 411	round
+T7	Lesion-Description 412 419	opacity
+T8	Lesion-Anatomy 429 448	third left anterior
+T9	Lesion-Description 462 469	lesions
+T10	Lesion-Anatomy 479 503	right third anterior rib
+T11	Lesion-Size-Trend 508 511	new
+A1	Lesion-Size-TrendValue T11 new
+T12	Medical-Anatomy 529 550	pulmonary vasculature
+T13	Medical-Assertion 554 557	not
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 558 566	engorged
+T15	Medical-Problem 705 726	Partial calcification
+T16	Medical-Anatomy 734 745	aortic knob
+T17	Medical-Problem 769 799	healed lower left rib fracture
+E15	Medical-Problem:T17
+T18	Lesion-Count 877 882	three
+T19	Lesion-Size-Trend 884 887	new
+A3	Lesion-Size-TrendValue T19 new
+T20	Lesion-Size 889 894	small
+T21	Lesion-Anatomy 895 899	lung
+T22	Lesion-Description 900 907	nodules
+T23	Medical-Assertion 909 911	No
+A4	Medical-AssertionValue T23 absent
+T24	Medical-Problem 912 941	acute cardiopulmonary process
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E9	Lesion-Description:T9 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E19	Lesion-Description:T22 has-Lesion-Count:T18 has-Lesion-Size-Trend:T19 has-Lesion-Size-Present:T20 has-Lesion-Anatomy:T21
+E20	Medical-Problem:T24 has-Medical-Assertion:T23

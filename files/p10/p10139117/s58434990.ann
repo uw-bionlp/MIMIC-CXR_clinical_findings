@@ -1,0 +1,40 @@
+T1	Medical-Problem 33 51	New consolidations
+T2	Medical-Anatomy 59 83	right mid and lower lung
+T3	Medical-Problem 101 110	pneumonia
+E3	Medical-Problem:T3
+T4	Lesion-Anatomy 114 129	Left upper lobe
+T5	Lesion-Description 130 134	mass
+T6	Medical-Problem 166 189	Worsening consolidation
+T7	Medical-Anatomy 199 214	left lower lung
+T8	Medical-Problem 228 242	small effusion
+T9	Medical-Problem 485 527	Worsened peripheral areas of consolidation
+T10	Medical-Anatomy 535 551;553 577	periphery of the right mid and lower lung
+T11	Medical-Assertion 582 596	concerning for
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 597 615	evolving pneumonia
+T13	Lesion-Anatomy 655 692	Superior segment left lower lobe lung
+T14	Lesion-Description 693 697	mass
+T15	Lesion-Size-Trend 702 709	similar
+A2	Lesion-Size-TrendValue T15 no-change
+T16	Medical-Problem 749 771	left apical thickening
+T17	Medical-Problem 777 802	postoperative volume loss
+T18	Medical-Anatomy 810 819	left lung
+T19	Medical-Problem 822 851	Pulmonary vascular congestion
+E17	Medical-Problem:T19
+T20	Medical-Problem 857 879	mild-to-moderate edema
+E18	Medical-Problem:T20
+T21	Medical-Problem 922 930;932 965	probable small bilateral pleural effusions
+E19	Medical-Problem:T21
+T22	Medical-Assertion 971 973	no
+A3	Medical-AssertionValue T22 absent
+T23	Medical-Problem 974 986	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E13	Lesion-Description:T14 has-Lesion-Anatomy:T13 has-Lesion-Size-Trend:T15
+E14	Medical-Problem:T16 has-Medical-Anatomy:T18
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18
+E20	Medical-Problem:T23 has-Medical-Assertion:T22

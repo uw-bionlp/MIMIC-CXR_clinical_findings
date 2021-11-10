@@ -1,0 +1,32 @@
+T1	Medical-Problem 290 299	elevation
+T2	Medical-Anatomy 307 326	right hemidiaphragm
+T3	Medical-Problem 329 343	Patchy opacity
+T4	Medical-Anatomy 357 371	left lung base
+T5	Medical-Anatomy 387 402	right lung apex
+T6	Medical-Assertion 403 418	could be due to
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 419 429;431 440	multifocal pneumonia
+T8	Lesion-Description 444 462	metastatic disease
+E7	Lesion-Description:T8
+T9	Medical-Problem 502 511	elevation
+T10	Medical-Anatomy 519 538	right hemidiaphragm
+T11	Medical-Anatomy 545 552	cardiac
+T12	Medical-Assertion 567 570	not
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 571 579	enlarged
+T14	Medical-Problem 653 669	Patchy opacities
+T15	Medical-Anatomy 690 724	left lung base and right lung apex
+T16	Medical-Assertion 725 730;732 741	could be due to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 742 762	multifocal pneumonia
+T18	Lesion-Description 766 784	metastatic disease
+E15	Lesion-Description:T18
+T19	Medical-Problem 787 801;803 816	Elevated right hemidiaphragm
+E16	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

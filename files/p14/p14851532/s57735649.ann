@@ -1,0 +1,19 @@
+T1	Medical-Assertion 230 232	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 233 248	pulmonary edema
+T3	Medical-Problem 251 260	Pneumonia
+T4	Medical-Anatomy 268 295;297 301	superior segment left lower lobe
+T5	Medical-Assertion 305 326	continuing to resolve
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Assertion 337 339	no
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 340 352	pneumothorax
+T8	Medical-Problem 356 372	pleural effusion
+T9	Medical-Problem 375 389	Hyperinflation
+E6	Medical-Problem:T9
+T10	Medical-Problem 400 409	emphysema
+E7	Medical-Problem:T10
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T6

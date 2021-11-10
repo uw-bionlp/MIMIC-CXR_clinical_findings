@@ -1,0 +1,23 @@
+T1	Medical-Assertion 448 450	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 451 470	vascular congestion
+T3	Medical-Problem 474 504	definite acute focal pneumonia
+T4	Medical-Problem 506 510;512 525	Hazy opacification
+T5	Medical-Anatomy 545 560	left hemithorax
+T6	Medical-Problem 619 626	Several
+E5	Medical-Problem:T6
+T7	Lesion-Description 627 649	nodular opacifications
+T8	Lesion-Anatomy 672 682	right base
+T9	Lesion-Assertion 693 696	may
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Description 705 720	lymphadenopathy
+T11	Lesion-Assertion 725 733	possible
+A3	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 742 748	nodule
+T13	Lesion-Anatomy 759 784	just below the left hilum
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Anatomy:T8
+E8	Lesion-Description:T10 has-Lesion-Assertion:T9
+E9	Lesion-Description:T12 has-Lesion-Assertion:T11 has-Lesion-Anatomy:T13

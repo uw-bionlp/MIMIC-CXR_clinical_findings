@@ -1,0 +1,30 @@
+T1	Medical-Problem 153 178	Lung volumes are very low
+E1	Medical-Problem:T1
+T2	Medical-Problem 181 208	Heterogeneous opacification
+T3	Medical-Anatomy 216 226	right lung
+T4	Medical-Assertion 242 250	probably
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 251 262	atelectasis
+T6	Medical-Problem 267 306;308 313	concurrent mild but worsening pulmonary edema
+T7	Medical-Problem 316 339	Small pleural effusions
+E6	Medical-Problem:T7
+T8	Medical-Assertion 355 357	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 358 370	pneumothorax
+T10	Medical-Problem 373 384;386 394	Mediastinal widening
+E8	Medical-Problem:T10
+T11	Medical-Problem 405 444	severe mediastinal vascular engorgement
+E9	Medical-Problem:T11
+T12	Medical-Anatomy 451 456	heart
+T13	Medical-Assertion 460 463	not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 465 486	particularly enlarged
+T15	Medical-Assertion 633 635	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 636 648	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

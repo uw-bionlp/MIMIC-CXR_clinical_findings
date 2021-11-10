@@ -1,0 +1,35 @@
+T1	Medical-Anatomy 196 201	heart
+T2	Medical-Assertion 205 208	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 209 217	enlarged
+T4	Lesion-Assertion 265 267	no
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 269 274	hilar
+T6	Lesion-Anatomy 278 289	mediastinal
+T7	Lesion-Description 290 305	lymphadenopathy
+T8	Medical-Assertion 320 322	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 323 326	CHF
+T10	Medical-Problem 328 344	focal infiltrate
+T11	Medical-Problem 349 357	effusion
+T12	Medical-Assertion 374 382	Possible
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 383 402	minimal atelectasis
+T14	Medical-Anatomy 410 422;424 428	right middle lobe
+T15	Medical-Problem 435 459	slight vascular crowding
+E11	Medical-Problem:T15
+T16	Medical-Assertion 483 491	Possible
+A5	Medical-AssertionValue T16 possible
+T17	Medical-Problem 492 511	minimal atelectasis
+T18	Medical-Anatomy 519 536	right middle lobe
+T19	Medical-Assertion 551 553	no
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 554 577	acute pulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T8
+E9	Medical-Problem:T13 has-Medical-Assertion:T12 has-Medical-Anatomy:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Anatomy:T18
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

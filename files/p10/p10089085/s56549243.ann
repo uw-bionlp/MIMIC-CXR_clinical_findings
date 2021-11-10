@@ -1,0 +1,14 @@
+T1	Medical-Problem 417 440;442 453	Mild pulmonary vascular engorgement
+E1	Medical-Problem:T1
+T2	Medical-Problem 486 494	Widening
+T3	Medical-Anatomy 502 520;522 576	mediastinum to the right of the midline in the right paratracheal station
+T4	Lesion-Assertion 577 585	could be
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Anatomy 591 602	mediastinal
+T6	Lesion-Description 603 607	mass
+T7	Medical-Assertion 637 639	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 640 652	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

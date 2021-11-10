@@ -1,0 +1,27 @@
+T1	Medical-Assertion 69 71	No
+A1	Medical-AssertionValue T1 absent
+T2	Lesion-Size 181 186	small
+T3	Lesion-Characteristic 187 196	calcified
+T4	Lesion-Description 197 208	lymph nodes
+T5	Lesion-Anatomy 228 248	left supraclavicular
+T6	Lesion-Anatomy 254 273	mediastinal regions
+T7	Medical-Assertion 317 319	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 320 327;329 338	pleural effusions
+T9	Medical-Problem 342 370	concerning skeletal findings
+T10	Medical-Assertion 470 472	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 485 494	pneumonia
+T12	Medical-Problem 501 510	Calcified
+E9	Medical-Problem:T12
+T13	Lesion-Anatomy 511 515	left
+T14	Lesion-Anatomy 516 531	supraclavicular
+T15	Lesion-Anatomy 536 547	mediastinal
+T16	Lesion-Description 548 559	lymph nodes
+T17	Medical-Problem 567 575;577 613	sequelae of previous lymphangiogram procedure
+E14	Medical-Problem:T17
+E3	Lesion-Description:T4 has-Lesion-Size-Present:T2 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T14 has-Lesion-Anatomy:T15

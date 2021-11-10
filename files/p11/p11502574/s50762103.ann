@@ -1,0 +1,26 @@
+T1	Medical-Assertion 314 316	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 317 324	opacity
+T3	Medical-Problem 337 346	pneumonia
+T4	Medical-Anatomy 352 363	azygos vein
+T5	Medical-Anatomy 368 385	pulmonary vessels
+T6	Medical-Problem 426 455	worsening vascular congestion
+T7	Medical-Assertion 466 468	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 469 474;476 491	frank pulmonary edema
+T9	Medical-Assertion 493 495	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 496 512	pleural effusion
+T11	Medical-Problem 516 528	pneumothorax
+T12	Medical-Problem 544 552;554 566	Moderate cardiomegaly
+E9	Medical-Problem:T12
+T13	Medical-Assertion 663 674	No evidence
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 679 688	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

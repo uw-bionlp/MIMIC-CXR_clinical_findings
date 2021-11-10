@@ -1,0 +1,32 @@
+T1	Medical-Problem 260 287	large chronic hiatus hernia
+E1	Medical-Problem:T1
+T2	Medical-Problem 308 322;324 338	at least three retained pills
+E2	Medical-Problem:T2
+T3	Medical-Problem 346 359	hiatus hernia
+E3	Medical-Problem:T3
+T4	Medical-Problem 361 391	Increased linear opacification
+T5	Medical-Anatomy 400 414	left lung base
+T6	Medical-Assertion 418 434	not sufficiently
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 457 466	pneumonia
+T8	Medical-Assertion 472 475;477 484	may reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 485 502	recent aspiration
+T10	Medical-Problem 633 646	hiatus hernia
+E8	Medical-Problem:T10
+T11	Medical-Assertion 658 660	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 661 676	pulmonary edema
+T13	Medical-Assertion 679 681	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 682 694	pneumothorax
+T15	Lesion-Size 699 704	Large
+T16	Lesion-Characteristic 705 714	calcified
+T17	Lesion-Description 715 721	nodule
+T18	Lesion-Anatomy 729 746	left thyroid lobe
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Lesion-Description:T17 has-Lesion-Size-Present:T15 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T18

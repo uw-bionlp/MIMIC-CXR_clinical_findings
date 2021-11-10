@@ -1,0 +1,18 @@
+T1	Medical-Problem 289 302	Poor aeration
+T2	Medical-Anatomy 310 314	left
+T3	Medical-Problem 572 587;589 597	reduced pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 602 613	atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 627 641	Left lung base
+T6	Medical-Problem 645 660	still opacified
+T7	Medical-Problem 670 694	left lower lobe collapse
+T8	Medical-Problem 726 739;741 756	Heart size is mildly enlarged
+E8	Medical-Problem:T8
+T9	Medical-Assertion 873 875	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 876 888	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T5
+E9	Medical-Problem:T10 has-Medical-Assertion:T9

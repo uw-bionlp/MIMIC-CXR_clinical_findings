@@ -1,0 +1,35 @@
+T1	Medical-Problem 100 128	Unusual soft tissue swelling
+T2	Medical-Anatomy 136 163;165 172	superior left margin of the sternum
+T3	Medical-Anatomy 252 257	lungs
+T4	Medical-Assertion 268 275	without
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 276 289	consolidation
+T6	Medical-Problem 293 298	edema
+T7	Medical-Problem 301 312;314 324	Mild aortic tortuosity
+E6	Medical-Problem:T7
+T8	Medical-Assertion 401 403	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 404 412	effusion
+T10	Medical-Problem 416 428	pneumothorax
+T11	Medical-Problem 440 466	Minimal pleural thickening
+T12	Medical-Anatomy 484 509	inferior right hemithorax
+T13	Medical-Assertion 590 597	without
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 598 610	demonstrable
+E11	Medical-Problem:T14
+T15	Medical-Problem 611 620;622 634	displaced rib fracture
+T16	Medical-Assertion 696 698	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 699 722	acute pulmonary process
+T18	Medical-Assertion 726 728	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 729 752	displaced rib fractures
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

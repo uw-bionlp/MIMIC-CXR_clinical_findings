@@ -1,0 +1,43 @@
+T1	Medical-Problem 232 253	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 269 286	aorta is tortuous
+E2	Medical-Problem:T2
+T3	Medical-Problem 288 297	Opacities
+T4	Medical-Anatomy 305 309;311 321	left lower lobe
+T5	Medical-Assertion 326 332	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 333 344	atelectases
+T7	Medical-Assertion 345 349	less
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 357 366	pneumonia
+T9	Medical-Problem 405 413	Scarring
+E7	Medical-Problem:T9
+T10	Lesion-Size 418 422	tiny
+T11	Lesion-Characteristic 423 432	calcified
+T12	Lesion-Description 433 440	nodules
+T13	Lesion-Anatomy 448 454;456 491	apices bilaterally right greater than left
+T14	Lesion-Size-Trend 496 505	unchanged
+A3	Lesion-Size-TrendValue T14 no-change
+T15	Medical-Assertion 517 519	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 520 532	pneumothorax
+T17	Medical-Problem 537 553	pleural effusion
+T18	Medical-Problem 566 591	mild degenerative changes
+T19	Medical-Anatomy 599 607;609 614	thoracic spine
+T20	Medical-Problem 634 659	Left lower lobe opacities
+E16	Medical-Problem:T20
+T21	Medical-Assertion 664 670	likely
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 671 682	atelectasis
+T23	Medical-Assertion 684 706	differential diagnosis
+A6	Medical-AssertionValue T23 possible
+T24	Medical-Problem 717 726	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13 has-Lesion-Size-Trend:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21
+E18	Medical-Problem:T24 has-Medical-Assertion:T23

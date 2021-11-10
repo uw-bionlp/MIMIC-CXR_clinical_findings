@@ -1,0 +1,36 @@
+T1	Medical-Problem 314 338	mild cardiac enlargement
+E1	Medical-Problem:T1
+T2	Medical-Problem 341 345;347 370	Mild interstitial prominence
+E2	Medical-Problem:T2
+T3	Medical-Problem 440 464	new retrocardiac opacity
+E3	Medical-Problem:T3
+T4	Medical-Assertion 472 487	could represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 490 496;498 504	sickle crisis
+T6	Medical-Problem 508 517	pneumonia
+T7	Lesion-Size 521 525	3 mm
+T8	Lesion-Description 526 532	nodule
+T9	Lesion-Anatomy 540 554	left lung apex
+T10	Lesion-Size-Trend 558 567	unchanged
+A2	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 599 601	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 602 618	pleural effusion
+T13	Medical-Problem 622 634	pneumothorax
+T14	Medical-Problem 641 653;655 669	bones appear somewhat dense
+E11	Medical-Problem:T14
+T15	Medical-Problem 684 711	H-shaped thoracic vertebrae
+E12	Medical-Problem:T15
+T16	Medical-Problem 791 811	Retrocardiac opacity
+E13	Medical-Problem:T16
+T17	Medical-Assertion 812 826	concerning for
+A4	Medical-AssertionValue T17 possible
+T18	Medical-Problem 827 840	sickle crisis
+T19	Medical-Problem 844 853	pneumonia
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E7	Lesion-Description:T8 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9 has-Lesion-Size-Trend:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T17

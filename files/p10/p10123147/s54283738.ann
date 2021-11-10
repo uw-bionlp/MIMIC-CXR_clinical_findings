@@ -1,0 +1,23 @@
+T1	Medical-Problem 480 493;495 502	right basilar opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 518 542	New left basilar opacity
+E2	Medical-Problem:T2
+T3	Medical-Assertion 546 552	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 553 564	atelectasis
+T5	Medical-Problem 596 608	Hyperlucency
+T6	Medical-Anatomy 616 630	left lung base
+T7	Medical-Assertion 634 647	likely due to
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 649 670	confluence of shadows
+T9	Medical-Assertion 696 710	unlikely to be
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 714 726	pneumothorax
+T11	Medical-Assertion 737 739	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 740 768	substantial pleural effusion
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

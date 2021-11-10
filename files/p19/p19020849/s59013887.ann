@@ -1,0 +1,29 @@
+T1	Medical-Assertion 498 509	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 513 528	acute pneumonia
+T3	Medical-Problem 530 549	vascular congestion
+T4	Medical-Problem 555 571	pleural effusion
+T5	Lesion-Characteristic 585 600	sharply defined
+T6	Lesion-Description 601 608	nodular
+E5	Lesion-Description:T6
+T7	Lesion-Description 609 622	opacification
+T8	Lesion-Anatomy 630 639	left base
+T9	Medical-Assertion 647 651;653 670	most likely represents
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 673 686	nipple shadow
+T11	Medical-Problem 697 718	similar opacification
+T12	Medical-Assertion 722 730	not seen
+A3	Medical-AssertionValue T12 absent
+T13	Lesion-Assertion 746 748	No
+A4	Lesion-AssertionValue T13 absent
+T14	Lesion-Characteristic 749 757	definite
+T15	Lesion-Description 758 765	nodules
+T16	Lesion-Description 940 946	lesion
+E12	Lesion-Description:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T12
+E11	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Characteristic:T14

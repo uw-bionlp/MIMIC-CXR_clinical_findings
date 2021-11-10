@@ -1,0 +1,41 @@
+T1	Medical-Assertion 433 435	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 436 452	pleural effusion
+T3	Medical-Problem 457 469	pneumothorax
+T4	Medical-Problem 472 489	Streaky opacities
+T5	Medical-Anatomy 497 535	right upper and left mid-to-lower lung
+T6	Medical-Assertion 537 544	suggest
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 545 562	minor atelectasis
+T8	Medical-Problem 567 578	lucent area
+T9	Medical-Anatomy 599 615	right lower lung
+T10	Medical-Problem 629 642	postoperative
+T11	Lesion-Count 704 708	many
+T12	Lesion-Description 709 716	nodules
+T13	Medical-Problem 803 840	new substantial opacity of oval shape
+T14	Medical-Anatomy 894 908	right mid lung
+T15	Lesion-Size-Trend 977 994	rapid progression
+A3	Lesion-Size-TrendValue T15 increasing
+T16	Lesion-Count 1035 1043	Numerous
+T17	Lesion-Size-Trend 1044 1047	new
+A4	Lesion-Size-TrendValue T17 new
+T18	Lesion-Description 1048 1065	nodular opacities
+T19	Medical-Assertion 1090 1092;1094 1113	No definite indication
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1120 1138	infectious process
+T21	Lesion-Characteristic 1167 1175	dominant
+T22	Lesion-Description 1176 1182	lesion
+T23	Lesion-Anatomy 1190 1208	lateral right lung
+T24	Medical-Assertion 1209 1215	may be
+A6	Medical-AssertionValue T24 possible
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Lesion-Description:T12 has-Lesion-Count:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Lesion-Description:T18 has-Lesion-Count:T16 has-Lesion-Size-Trend:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Lesion-Description:T22 has-Lesion-Characteristic:T21 has-Lesion-Anatomy:T23

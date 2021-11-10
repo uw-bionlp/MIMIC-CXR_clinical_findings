@@ -1,0 +1,44 @@
+T1	Medical-Problem 284 288	loss
+T2	Medical-Anatomy 296 305	left lung
+T3	Medical-Problem 332 372	leftward shift of mediastinal structures
+T4	Lesion-Description 388 395	Nodular
+E4	Lesion-Description:T4
+T5	Medical-Problem 400 422	interstitial opacities
+T6	Medical-Anatomy 438 463;465 502	throughout the left lung, most pronounced in the left lung base
+T7	Lesion-Anatomy 515 530	left suprahilar
+T8	Lesion-Description 531 535	mass
+T9	Medical-Problem 583 601	pleural thickening
+E9	Medical-Problem:T9
+T10	Medical-Problem 628 672	small to moderate size left pleural effusion
+E10	Medical-Problem:T10
+T11	Medical-Assertion 675 677	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 678 687;689 694	pulmonary edema
+T13	Medical-Problem 699 730	right-sided focal consolidation
+T14	Medical-Problem 732 760	right-sided pleural effusion
+T15	Medical-Problem 766 778	pneumothorax
+T16	Lesion-Characteristic 801 808	osseous
+T17	Lesion-Description 820 827	lesions
+T18	Lesion-Anatomy 840 854	thoracic spine
+T19	Lesion-Anatomy 930 945	left suprahilar
+T20	Lesion-Description 946 950	mass
+T21	Lesion-Anatomy 1017 1026	left lung
+T22	Medical-Problem 1031 1059;1061 1079	continued diffuse left-sided pleural thickening
+E21	Medical-Problem:T22
+T23	Medical-Problem 1087 1126	small to moderate left pleural effusion
+E22	Medical-Problem:T23
+T24	Medical-Assertion 1129 1131	No
+A2	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1132 1135;1137 1156	new focal consolidation
+T26	Medical-Anatomy 1175 1185	right lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T14 has-Medical-Assertion:T11
+E14	Medical-Problem:T15 has-Medical-Assertion:T11
+E16	Lesion-Description:T17 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T18
+E19	Lesion-Description:T20 has-Lesion-Anatomy:T19 has-Lesion-Anatomy:T21
+E23	Medical-Problem:T25 has-Medical-Assertion:T24 has-Medical-Anatomy:T26

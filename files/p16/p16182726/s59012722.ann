@@ -1,0 +1,24 @@
+T1	Medical-Problem 202 210	heart is
+E1	Medical-Problem:T1
+T2	Medical-Problem 211 238	mild to moderately enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 342 351;353 362	new dense opacities
+T4	Medical-Anatomy 373 421	both lower lobes, greater on the right than left
+T5	Medical-Assertion 437 445	probably
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 451 477	some degree of atelectasis
+T7	Medical-Problem 481 490	pneumonia
+T8	Medical-Anatomy 555 572	right middle lobe
+T9	Medical-Assertion 585 587	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 588 604	pleural effusion
+T11	Medical-Problem 608 620	pneumothorax
+T12	Medical-Problem 732 752	multifocal pneumonia
+E10	Medical-Problem:T12
+T13	Medical-Problem 755 784	Mild to moderate cardiomegaly
+E11	Medical-Problem:T13
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

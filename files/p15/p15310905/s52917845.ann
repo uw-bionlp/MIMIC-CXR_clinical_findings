@@ -1,0 +1,25 @@
+T1	Medical-Problem 217 253	Moderate bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 299 314	right lung base
+T3	Medical-Assertion 315 330	could be either
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 331 336	edema
+T5	Medical-Problem 340 349	pneumonia
+T6	Medical-Anatomy 352 359	Cardiac
+T7	Medical-Problem 388 396	rotation
+T8	Medical-Problem 401 427	leftward mediastinal shift
+T9	Medical-Problem 430 445	Poor definition
+T10	Medical-Anatomy 454 472	lower lobe bronchi
+T11	Medical-Assertion 473 481	suggests
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 482 501	retained secretions
+T13	Medical-Assertion 504 506	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 507 519	pneumothorax
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

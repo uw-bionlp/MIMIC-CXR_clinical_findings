@@ -1,0 +1,23 @@
+T1	Medical-Problem 315 328	heart appears
+E1	Medical-Problem:T1
+T2	Medical-Problem 329 349	mildly enlarged with
+E2	Medical-Problem:T2
+T3	Medical-Problem 376 384;386 406	apparent ground-glass opacity
+T4	Medical-Anatomy 418 423	lungs
+T5	Medical-Problem 493 503	mild edema
+T6	Medical-Assertion 507 519	not excluded
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 522 524	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 525 533	effusion
+T9	Medical-Problem 538 550	pneumothorax
+T10	Medical-Problem 678 695	mild cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Assertion 700 708	possible
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 709 729	mild pulmonary edema
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

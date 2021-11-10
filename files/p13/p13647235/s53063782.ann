@@ -1,0 +1,26 @@
+T1	Medical-Problem 244 306;308 314	interval progression of pulmonary edema, currently moderate to severe
+E1	Medical-Problem:T1
+T2	Medical-Problem 317 338	Lung volumes are high
+E2	Medical-Problem:T2
+T3	Medical-Problem 345 367	heart size is enlarged
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 384 395	mediastinum
+T5	Medical-Problem 401 450	gradual progressing of right mediastinal widening
+T6	Medical-Problem 585 604	gradual progressing
+T7	Medical-Anatomy 640 645	aorta
+T8	Lesion-Anatomy 649 660	mediastinal
+T9	Lesion-Characteristic 661 676	space-occupying
+T10	Lesion-Description 677 683	lesion
+T11	Medical-Assertion 686 688	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 689 700;702 718	appreciable pleural effusion
+T13	Medical-Problem 737 758	small amount of fluid
+T14	Medical-Assertion 781 783	No
+A2	Medical-AssertionValue T14 absent
+T15	Medical-Problem 784 796	pneumothorax
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E10	Lesion-Description:T10 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T15 has-Medical-Assertion:T14

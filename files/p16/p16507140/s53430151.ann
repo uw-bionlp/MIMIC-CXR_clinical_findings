@@ -1,0 +1,21 @@
+T1	Medical-Assertion 205 207	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 208 223	relevant change
+T3	Medical-Problem 226 248	Moderate overinflation
+E2	Medical-Problem:T3
+T4	Lesion-Assertion 252 254	No
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Characteristic 255 260	focal
+T6	Lesion-Characteristic 264 271	diffuse
+T7	Lesion-Characteristic 272 283	parenchymal
+T8	Lesion-Description 284 291	lesions
+T9	Lesion-Anatomy 299 314	lung parenchyma
+T10	Medical-Problem 317 321;323 333	Mild elongation
+T11	Medical-Anatomy 341 357	descending aorta
+T12	Medical-Assertion 360 362	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 363 380	pleural effusions
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Lesion-Description:T8 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

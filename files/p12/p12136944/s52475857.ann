@@ -1,0 +1,69 @@
+T1	Medical-Assertion 36 44	Possible
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 45 61	right lower lobe
+E1	Medical-Problem:T2
+T3	Medical-Problem 62 82	moderate atelectasis
+T4	Medical-Assertion 83 89	versus
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 90 109	small consolidation
+T6	Medical-Problem 115 125	aspiration
+T7	Lesion-Size 132 136	8 mm
+T8	Lesion-Anatomy 137 151	right mid-zone
+T9	Lesion-Description 152 167	nodular opacity
+T10	Lesion-Assertion 168 179	may reflect
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 182 188	nodule
+T12	Medical-Problem 562 591	lung volumes are markedly low
+E9	Medical-Problem:T12
+T13	Medical-Problem 607 643	substantial bronchovascular crowding
+E10	Medical-Problem:T13
+T14	Medical-Anatomy 646 662	Right lower zone
+T15	Medical-Problem 683 703	moderate atelectasis
+T16	Medical-Problem 714 735	underlying aspiration
+T17	Medical-Problem 739 752	consolidation
+T18	Medical-Assertion 753 759;761 772	cannot be excluded
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Assertion 784 786	no
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 787 799	pneumothorax
+T21	Medical-Problem 803 819	pleural effusion
+T22	Lesion-Size 827 831	8 mm
+T23	Lesion-Anatomy 832 846	right mid-zone
+T24	Lesion-Characteristic 847 852	round
+T25	Lesion-Description 853 860	opacity
+T26	Lesion-Assertion 861 872	may reflect
+A6	Lesion-AssertionValue T26 possible
+T27	Lesion-Anatomy 875 884	pulmonary
+T28	Lesion-Description 885 891	nodule
+T29	Medical-Assertion 915 923	Possible
+A7	Medical-AssertionValue T29 possible
+T30	Medical-Problem 924 940	right lower lobe
+E23	Medical-Problem:T30
+T31	Medical-Problem 941 961	moderate atelectasis
+T32	Medical-Assertion 962 968	versus
+A8	Medical-AssertionValue T32 possible
+T33	Medical-Problem 969 988	small consolidation
+T34	Medical-Problem 993 1003	aspiration
+T35	Lesion-Size 1009 1013	8 mm
+T36	Lesion-Anatomy 1014 1028	right mid-zone
+T37	Lesion-Description 1029 1044	nodular opacity
+T38	Lesion-Assertion 1045 1056	may reflect
+A9	Lesion-AssertionValue T38 possible
+T39	Lesion-Description 1059 1065	nodule
+E2	Medical-Problem:T3 has-Medical-Assertion:T1 has-Medical-Assertion:T4
+E3	Medical-Problem:T5 has-Medical-Assertion:T1 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T1 has-Medical-Assertion:T4
+E7	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8
+E8	Lesion-Description:T11 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T10
+E12	Medical-Problem:T15 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T18
+E14	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T19
+E20	Lesion-Description:T25 has-Lesion-Size-Present:T22 has-Lesion-Anatomy:T23 has-Lesion-Characteristic:T24
+E22	Lesion-Description:T28 has-Lesion-Assertion:T26 has-Lesion-Anatomy:T27
+E24	Medical-Problem:T31 has-Medical-Assertion:T29 has-Medical-Assertion:T32
+E25	Medical-Problem:T33 has-Medical-Assertion:T29 has-Medical-Assertion:T32
+E26	Medical-Problem:T34 has-Medical-Assertion:T29 has-Medical-Assertion:T32
+E29	Lesion-Description:T37 has-Lesion-Size-Present:T35 has-Lesion-Anatomy:T36
+E30	Lesion-Description:T39 has-Lesion-Anatomy:T36 has-Lesion-Assertion:T38

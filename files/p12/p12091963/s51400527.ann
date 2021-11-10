@@ -1,0 +1,41 @@
+T1	Medical-Anatomy 307 318	aortic knob
+T2	Medical-Problem 322 331	calcified
+T3	Medical-Problem 407 428	Consolidative opacity
+T4	Medical-Anatomy 437 452	left lower lobe
+T5	Medical-Assertion 463 484	which could represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 488 505	area of infection
+T7	Medical-Problem 510 520	aspiration
+T8	Medical-Assertion 562 564	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 565 583;585 595	pulmonary vascular congestion
+T10	Medical-Problem 599 615	pleural effusion
+T11	Medical-Assertion 618 620	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 621 639	large pneumothorax
+T13	Medical-Assertion 656 658	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 660 683	displaced rib fractures
+T15	Medical-Anatomy 744 755	right upper
+E11	Medical-Anatomy:T15
+T16	Lesion-Assertion 781 795	which could be
+A5	Lesion-AssertionValue T16 possible
+T17	Lesion-Description 798 808	lymph node
+T18	Medical-Anatomy 826 841	Left lower lobe
+T19	Medical-Problem 842 863	consolidative opacity
+T20	Medical-Assertion 870 883	may represent
+A6	Medical-AssertionValue T20 possible
+T21	Medical-Problem 884 891;893 902	area of infection
+T22	Medical-Problem 906 916	aspiration
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Lesion-Description:T17 has-Lesion-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Anatomy:T18
+E15	Medical-Problem:T21 has-Medical-Anatomy:T18 has-Medical-Assertion:T20
+E16	Medical-Problem:T22 has-Medical-Anatomy:T18 has-Medical-Assertion:T20

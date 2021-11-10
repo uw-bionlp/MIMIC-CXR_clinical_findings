@@ -1,0 +1,24 @@
+T1	Medical-Problem 312 322	Prominence
+T2	Medical-Anatomy 330 340	right hila
+T3	Medical-Anatomy 380 385	lungs
+T4	Medical-Problem 390 403	hyperinflated
+T5	Medical-Problem 416 425	Deviation
+T6	Medical-Anatomy 460 467	trachea
+T7	Medical-Problem 477 504	underlying enlarged thyroid
+T8	Medical-Assertion 582 584	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 585 597	pneumothorax
+T10	Lesion-Characteristic 601 610	Calcified
+T11	Lesion-Description 611 620	granuloma
+T12	Lesion-Anatomy 628 643	right lung apex
+T13	Lesion-Assertion 674 698	No radiographic evidence
+A2	Lesion-AssertionValue T13 absent
+T14	Lesion-Anatomy 702 715	intrathoracic
+T15	Lesion-Description 716 726	malignancy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E13	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14

@@ -1,0 +1,32 @@
+T1	Medical-Problem 296 324	small right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 370 414	minimal elevation of the right hemidiaphragm
+E2	Medical-Problem:T2
+T3	Medical-Problem 417 427	Prominence
+T4	Medical-Anatomy 436 469	pulmonary vasculature bilaterally
+T5	Medical-Assertion 470 483	may be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 484 498	fluid overload
+T7	Medical-Problem 501 513;515 530	Patchy right basilar opacity
+E6	Medical-Problem:T7
+T8	Medical-Assertion 545 568	could in part relate to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 569 590	prominent vasculature
+T10	Medical-Problem 593 617	underlying consolidation
+T11	Medical-Assertion 618 632	may be present
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 635 637	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 638 659	left pleural effusion
+T14	Medical-Assertion 680 682	no
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 683 695	pneumothorax
+T16	Medical-Problem 698 708	Prominence
+T17	Medical-Anatomy 716 737	main pulmonary artery
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8 has-Medical-Assertion:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Anatomy:T17

@@ -1,0 +1,24 @@
+T1	Medical-Problem 233 269	Small-to-moderate right pneumothorax
+T2	Medical-Anatomy 291 308;310 320	apex of the right hemithorax
+T3	Medical-Problem 323 356	Moderate air and fluid loculation
+T4	Medical-Anatomy 364 383	right pleural space
+T5	Medical-Problem 388 397	collected
+T6	Medical-Anatomy 405 420	posterior chest
+T7	Medical-Problem 441 450	fractures
+T8	Medical-Anatomy 458 463;465 495	right sixth and seventh lateral ribs
+T9	Medical-Problem 566 605	Mild-to-moderate left basal atelectasis
+E9	Medical-Problem:T9
+T10	Medical-Assertion 662 664	no
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 665 682	left pneumothorax
+T12	Medical-Assertion 687 700	little if any
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 701 717	pleural effusion
+T14	Medical-Problem 721 738	Mild cardiomegaly
+E12	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

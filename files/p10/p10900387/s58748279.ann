@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 386 396	Heart size
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 468 479;481 488	Increase in opacity
+T3	Medical-Anatomy 496 512	right lower lobe
+T4	Medical-Problem 518 548	continued retrocardiac opacity
+T5	Medical-Assertion 550 553;555 564	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 565 576	atelectasis
+T7	Medical-Problem 580 590	aspiration
+T8	Medical-Assertion 592 594	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 595 617	large pleural effusion
+T10	Medical-Problem 622 634	pneumothorax
+T11	Medical-Problem 655 685	Increasing bibasilar opacities
+E9	Medical-Problem:T11
+T12	Medical-Problem 702 726;728 737	aspiration of developing pneumonia
+E10	Medical-Problem:T12
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

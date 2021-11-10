@@ -1,0 +1,27 @@
+T1	Medical-Problem 231 258	Large left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 294 299;301 318	right mediastinal shift
+E2	Medical-Problem:T2
+T3	Medical-Problem 324 349	substantial opacification
+T4	Medical-Anatomy 357 372	left lower lung
+T5	Medical-Assertion 374 378;380 397	most likely consistent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 403 425	underlying atelectasis
+T7	Lesion-Description 436 440	mass
+E6	Lesion-Description:T7
+T8	Lesion-Characteristic 444 451	pleural
+T9	Lesion-Description 452 458	lesion
+T10	Lesion-Assertion 460 478	cannot be excluded
+A2	Lesion-AssertionValue T10 possible
+T11	Medical-Problem 672 683	obscuration
+T12	Medical-Anatomy 692 711	left cardiac border
+T13	Medical-Problem 715 731	pleural effusion
+T14	Medical-Assertion 743 745	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 746 758	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

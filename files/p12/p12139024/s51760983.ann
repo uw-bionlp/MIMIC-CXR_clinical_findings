@@ -1,0 +1,24 @@
+T1	Medical-Problem 287 314	Large left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 343 345	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 346 358	pneumothorax
+T4	Medical-Problem 362 392	Mediastinal shift to the right
+T5	Medical-Anatomy 409 419	right Lung
+T6	Medical-Problem 426 431;433 446	basal consolidation
+T7	Medical-Assertion 450 458	probably
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 459 470	atelectasis
+T9	Medical-Problem 539 558	Vascular congestion
+T10	Medical-Anatomy 566 580;582 593	right lung and mediastinum
+T11	Medical-Assertion 594 602	suggests
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 603 618	volume overload
+T13	Medical-Problem 626 658	elevated central venous pressure
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

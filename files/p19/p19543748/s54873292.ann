@@ -1,0 +1,38 @@
+T1	Medical-Problem 417 445	small right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 480 482	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 483 510	left-sided pleural effusion
+T4	Medical-Problem 534 539	right
+T5	Medical-Problem 550 570	patchy opacification
+T6	Medical-Assertion 571 583	has resolved
+A2	Medical-AssertionValue T6 absent
+T7	Lesion-Count 585 593	Multiple
+T8	Lesion-Characteristic 594 603	scattered
+T9	Lesion-Characteristic 605 616	ill-defined
+T10	Lesion-Description 617 624	nodular
+E8	Lesion-Description:T10
+T11	Lesion-Description 625 634	opacities
+T12	Medical-Assertion 731 733	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 734 739;741 754	focal consolidation
+T14	Medical-Problem 756 768	pneumothorax
+T15	Medical-Problem 773 788	pulmonary edema
+T16	Medical-Assertion 881 891	resolution
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Anatomy 895 910	right lung base
+T18	Medical-Problem 911 931	patchy opacification
+T19	Medical-Assertion 933 939	likely
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 941 957	asymmetric edema
+T21	Medical-Problem 963 1009	Decreased size of small right pleural effusion
+E16	Medical-Problem:T21
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T6
+E4	Medical-Problem:T5 has-Medical-Assertion:T6
+E9	Lesion-Description:T11 has-Lesion-Count:T7 has-Lesion-Characteristic:T8 has-Lesion-Characteristic:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T12
+E14	Medical-Problem:T18 has-Medical-Assertion:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T16 has-Medical-Anatomy:T17 has-Medical-Assertion:T19

@@ -1,0 +1,29 @@
+T1	Medical-Anatomy 164 169	lungs
+T2	Medical-Problem 183 209	focal opacities concerning
+E2	Medical-Problem:T2
+T3	Medical-Problem 214 223	infection
+T4	Lesion-Assertion 343 349	likely
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Characteristic 352 361	calcified
+T6	Lesion-Description 362 372	lymph node
+T7	Lesion-Characteristic 390 399	calcified
+T8	Lesion-Description 400 409	granuloma
+T9	Lesion-Size 411 427	sub-4-mm in size
+T10	Lesion-Anatomy 449 453;455 511	left hemithorax projecting underneath the sixth posterior rib
+T11	Medical-Assertion 566 568	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 569 585	pleural effusion
+T13	Medical-Problem 589 601	pneumothorax
+T14	Medical-Assertion 604 606	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 608 626	abdominal free air
+T16	Medical-Assertion 644 655	No evidence
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 659 688	acute cardiopulmonary process
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

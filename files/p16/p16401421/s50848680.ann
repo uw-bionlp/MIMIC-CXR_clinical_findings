@@ -1,0 +1,66 @@
+T1	Medical-Problem 162 182	increased prominence
+T2	Medical-Anatomy 190 200	left hilum
+T3	Medical-Problem 205 222	increased opacity
+T4	Lesion-Assertion 233 251	raises concern for
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Size-Trend 252 262	increasing
+A2	Lesion-Size-TrendValue T5 increasing
+T6	Lesion-Anatomy 263 273	left hilar
+T7	Lesion-Description 274 295	mass /lymphadenopathy
+T8	Lesion-Size 298 303	Large
+T9	Lesion-Characteristic 304 311	rounded
+T10	Lesion-Description 313 326	pleural-based
+E8	Lesion-Description:T10
+T11	Lesion-Description 327 334	opacity
+T12	Lesion-Anatomy 342 365	right upper to mid lung
+T13	Lesion-Size 461 466;468 474	4.9 x 4.2 cm
+T14	Medical-Anatomy 509 534	Multiple ribs bilaterally
+T15	Medical-Problem 553 564	destruction
+T16	Lesion-Characteristic 617 622	lytic
+T17	Lesion-Description 623 630	lesions
+T18	Lesion-Anatomy 634 661	scattered in the hemothorax
+T19	Medical-Problem 672 681	lucencies
+T20	Medical-Anatomy 697 701	ribs
+T21	Medical-Anatomy 703 712	clavicles
+T22	Medical-Anatomy 714 721	sternum
+T23	Medical-Anatomy 723 731	scapulae
+T24	Medical-Assertion 734 736	No
+A3	Medical-AssertionValue T24 absent
+T25	Medical-Problem 737 765	definite focal consolidation
+T26	Medical-Assertion 786 788	no
+A4	Medical-AssertionValue T26 absent
+T27	Medical-Problem 789 805	pleural effusion
+T28	Medical-Problem 809 823	intimal thorax
+T29	Medical-Problem 875 917	increased paratracheal soft tissue opacity
+T30	Medical-Assertion 924 930;932 938	may be due to
+A5	Medical-AssertionValue T30 possible
+T31	Lesion-Description 957 972	lymphadenopathy
+E26	Lesion-Description:T31
+T32	Medical-Problem 992 1000	Interval
+E27	Medical-Problem:T32
+T33	Lesion-Size-Trend 1029 1045	increase in size
+A6	Lesion-Size-TrendValue T33 increasing
+T34	Lesion-Anatomy 1049 1068	right pleural based
+T35	Lesion-Description 1070 1074	mass
+T36	Medical-Problem 1079 1131	increase left hilar opacity and paratracheal opacity
+T37	Medical-Assertion 1132 1145	may be due to
+A7	Medical-AssertionValue T37 possible
+T38	Lesion-Description 1159 1174	lymphadenopathy
+E31	Lesion-Description:T38
+T39	Lesion-Characteristic 1179 1188	Extensive
+T40	Lesion-Characteristic 1189 1196	osseous
+T41	Lesion-Description 1197 1215	metastatic disease
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Size-Trend:T5 has-Lesion-Anatomy:T6
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T8 has-Lesion-Characteristic:T9 has-Lesion-Anatomy:T12 has-Lesion-Size-Past:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T14
+E15	Lesion-Description:T17 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T18
+E17	Medical-Problem:T19 has-Medical-Anatomy:T20 has-Medical-Anatomy:T21 has-Medical-Anatomy:T22 has-Medical-Anatomy:T23
+E22	Medical-Problem:T25 has-Medical-Assertion:T24
+E23	Medical-Problem:T27 has-Medical-Assertion:T26
+E24	Medical-Problem:T28 has-Medical-Assertion:T26
+E25	Medical-Problem:T29 has-Medical-Assertion:T30
+E29	Lesion-Description:T35 has-Lesion-Size-Trend:T33 has-Lesion-Anatomy:T34
+E30	Medical-Problem:T36 has-Medical-Assertion:T37
+E34	Lesion-Description:T41 has-Lesion-Characteristic:T39 has-Lesion-Characteristic:T40

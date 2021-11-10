@@ -1,0 +1,36 @@
+T1	Medical-Problem 338 361;363 376	diffuse atherosclerotic calcification
+T2	Medical-Anatomy 384 398	thoracic aorta
+T3	Lesion-Characteristic 440 449	Scattered
+T4	Lesion-Description 450 460	granulomas
+T5	Lesion-Anatomy 470 490	throughout the lungs
+T6	Medical-Assertion 493 495	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 496 515	focal consolidation
+T8	Medical-Problem 518 534	pleural effusion
+T9	Medical-Problem 538 550	pneumothorax
+T10	Medical-Problem 561 575	Bronchiectasis
+T11	Medical-Problem 580 588	scarring
+T12	Medical-Anatomy 617 633	right upper lobe
+T13	Medical-Assertion 645 647	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 648 664	pleural effusion
+T15	Medical-Problem 669 681	pneumothorax
+T16	Medical-Problem 684 721	Subdiaphragmatic free air bilaterally
+E14	Medical-Problem:T16
+T17	Medical-Problem 742 758	pneumoperitoneum
+E15	Medical-Problem:T17
+T18	Medical-Assertion 820 822	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 823 856	acute cardiopulmonary abnormality
+T20	Medical-Problem 864 880	Pneumoperitoneum
+E17	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E9	Medical-Problem:T10 has-Medical-Anatomy:T12
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

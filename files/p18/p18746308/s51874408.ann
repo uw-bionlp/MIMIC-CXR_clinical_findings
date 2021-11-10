@@ -1,0 +1,34 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 65	acute cardiopulmonary process
+T3	Medical-Problem 68 89	Moderate cardiomegaly
+E2	Medical-Problem:T3
+T4	Medical-Problem 494 515	moderate cardiomegaly
+E3	Medical-Problem:T4
+T5	Medical-Problem 550 555	aorta
+E4	Medical-Problem:T5
+T6	Medical-Problem 581 589;591 611	Coronary artery calcification
+E5	Medical-Problem:T6
+T7	Medical-Anatomy 626 631	lungs
+T8	Medical-Problem 642 655	hyperinflated
+T9	Medical-Assertion 657 664	without
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 666 685	focal consolidation
+T11	Medical-Problem 689 701	pneumothorax
+T12	Medical-Problem 704 720	Minimal blunting
+T13	Medical-Anatomy 728 732;734 746	left costophrenic
+T14	Medical-Assertion 753 766	may represent
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 767 792	PA trace pleural effusion
+T16	Medical-Assertion 955 957	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 958 987	acute cardiopulmonary process
+T18	Medical-Problem 999 1011	cardiomegaly
+E14	Medical-Problem:T18
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E7	Medical-Problem:T8 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

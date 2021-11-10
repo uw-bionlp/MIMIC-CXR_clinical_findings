@@ -1,0 +1,17 @@
+T1	Medical-Problem 158 173;175 193	decrease in the hazy opacification
+T2	Medical-Anatomy 201 211	right base
+T3	Medical-Problem 228 244	pleural effusion
+T4	Medical-Problem 319 323;325 345	some decrease in effusion
+T5	Medical-Assertion 346 356	could have
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 368 395;397 408	Mild elevation of pulmonary vascularity
+E5	Medical-Problem:T6
+T7	Medical-Problem 442 472;474 492	substantial enlargement of the cardiac silhouette
+E6	Medical-Problem:T7
+T8	Medical-Assertion 493 501	suggests
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 502 527	underlying cardiomyopathy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,28 @@
+T1	Medical-Problem 222 234	cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 304 321	aorta is tortuous
+T3	Medical-Anatomy 340 356	descending aorta
+T4	Medical-Anatomy 426 431	lungs
+T5	Medical-Assertion 442 449;451 459	without evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 463 483	focal consolidations
+T7	Medical-Problem 499 508	pneumonia
+T8	Medical-Assertion 519 521	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 522 529;531 539	pleural effusion
+T10	Medical-Problem 543 555	pneumothorax
+T11	Medical-Problem 581 593	cardiomegaly
+E9	Medical-Problem:T11
+T12	Medical-Assertion 596 598	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 599 619	focal consolidations
+T14	Medical-Assertion 620 634	concerning for
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 635 644	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T12 has-Medical-Assertion:T14

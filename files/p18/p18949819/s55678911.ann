@@ -1,0 +1,23 @@
+T1	Medical-Assertion 267 269	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 270 277;279 287	pleural effusion
+T3	Medical-Problem 301 331	small left apical pneumothorax
+E2	Medical-Problem:T3
+T4	Medical-Problem 378 402	Slight increased density
+T5	Medical-Anatomy 413 432;434 450	left base along the chest tube tract
+T6	Medical-Assertion 454 460	likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 461 478	slight hemorrhage
+T8	Medical-Assertion 563 565	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 566 585	focal consolidation
+T10	Medical-Assertion 587 601	concerning for
+A4	Medical-AssertionValue T10 possible
+T11	Medical-Problem 602 611	pneumonia
+T12	Medical-Problem 634 658	Left apical pneumothorax
+E8	Medical-Problem:T12
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T11 has-Medical-Assertion:T10

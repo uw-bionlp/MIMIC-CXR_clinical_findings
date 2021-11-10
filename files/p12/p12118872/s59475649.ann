@@ -1,0 +1,30 @@
+T1	Medical-Problem 300 316	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 323 357	resulting bronchovascular crowding
+E2	Medical-Problem:T2
+T3	Medical-Problem 414 444	Engorged pulmonary vasculature
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 449 460	mediastinal
+T5	Medical-Assertion 471 484	suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 485 500	volume overload
+T7	Medical-Problem 508 530	cardiac decompensation
+T8	Medical-Problem 533 537;539 551	Mild cardiomegaly
+E7	Medical-Problem:T8
+T9	Medical-Problem 567 600	Small bilateral pleural effusions
+E8	Medical-Problem:T9
+T10	Medical-Assertion 677 679	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 680 692	pneumothorax
+T12	Medical-Problem 714 744	Engorged pulmonary vasculature
+E10	Medical-Problem:T12
+T13	Medical-Anatomy 749 766	mediastinal veins
+T14	Medical-Assertion 770 783	suggestive of
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 784 790;792 800	volume overload
+T16	Medical-Problem 808 830	cardiac decompensation
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

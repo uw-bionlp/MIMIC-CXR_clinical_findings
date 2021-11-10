@@ -1,0 +1,23 @@
+T1	Medical-Problem 280 294	Hyperinflation
+E1	Medical-Problem:T1
+T2	Medical-Assertion 325 336	no evidence
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 340 355	pulmonary edema
+T4	Medical-Problem 359 367;369 379	vascular congestion
+T5	Medical-Problem 382 395	Faint opacity
+T6	Medical-Anatomy 403 419	right lower lung
+T7	Medical-Assertion 420 445	might potentially reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 459 468	infection
+T9	Medical-Problem 479 490	atelectasis
+T10	Medical-Problem 494 516	suboptimal inspiration
+T11	Medical-Assertion 546 548	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 549 562	acute process
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

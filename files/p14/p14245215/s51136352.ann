@@ -1,0 +1,36 @@
+T1	Medical-Problem 211 230	Severe cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 232 246	tortuous aorta
+E2	Medical-Problem:T2
+T3	Medical-Problem 251 278	enlarged pulmonary arteries
+E3	Medical-Problem:T3
+T4	Medical-Problem 305 345	increase in the AP diameter of the chest
+E4	Medical-Problem:T4
+T5	Medical-Problem 350 360;362 383	flattening of the hemidiaphragms
+E5	Medical-Problem:T5
+T6	Medical-Assertion 385 395	suggesting
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 396 400	COPD
+T8	Medical-Assertion 412 414	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 415 427	pneumothorax
+T10	Medical-Problem 431 436;438 446	large effusion
+T11	Lesion-Characteristic 449 454	Dense
+T12	Lesion-Description 455 462	nodules
+T13	Lesion-Anatomy 470 486	right upper lobe
+T14	Lesion-Assertion 491 497	likely
+A3	Lesion-AssertionValue T14 possible
+T15	Lesion-Characteristic 498 507	calcified
+T16	Lesion-Description 509 519	granulomas
+T17	Medical-Problem 522 553	Right pleural effusion is small
+E14	Medical-Problem:T17
+T18	Medical-Problem 567 585	linear atelectasis
+T19	Medical-Anatomy 594 610	right lower lobe
+T20	Medical-Problem 622 650	very mild interstitial edema
+E17	Medical-Problem:T20
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T13 has-Lesion-Assertion:T14 has-Lesion-Characteristic:T15
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19

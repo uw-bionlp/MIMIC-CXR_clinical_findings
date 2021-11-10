@@ -1,0 +1,23 @@
+T1	Medical-Problem 197 217;219 242	multiple mediastinal eggshell calcifications
+T2	Medical-Problem 247 255	scarring
+T3	Medical-Anatomy 259 275	both upper lobes
+T4	Medical-Assertion 287 289	no
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 290 293;295 313	new lung consolidation
+T6	Medical-Assertion 314 327	worrisome for
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 328 337	pneumonia
+T8	Medical-Problem 384 418	minimal bilateral pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Assertion 429 431	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 432 444	pneumothorax
+T11	Medical-Assertion 477 488	no evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 492 501	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

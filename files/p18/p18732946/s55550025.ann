@@ -1,0 +1,25 @@
+T1	Medical-Problem 258 290	Moderate right pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 301 332	Moderate left pleural effusions
+E2	Medical-Problem:T2
+T3	Medical-Problem 343 374	Moderate to severe cardiomegaly
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 384 399	Left lower lobe
+T5	Medical-Problem 403 411;413 420	entirely airless
+T6	Medical-Problem 433 442	collapsed
+T7	Medical-Problem 445 458	Consolidation
+T8	Medical-Assertion 459 461	or
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 462 473	atelectasis
+T10	Medical-Anatomy 475 486;488 492	right lower lobe
+T11	Medical-Problem 534 549	pulmonary edema
+T12	Medical-Anatomy 589 598	pulmonary
+T13	Medical-Assertion 631 633	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 634 646	pneumothorax
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

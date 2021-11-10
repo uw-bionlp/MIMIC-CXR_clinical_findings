@@ -1,0 +1,31 @@
+T1	Lesion-Characteristic 415 424	scattered
+T2	Lesion-Description 425 444	nodular parenchymal
+E2	Lesion-Description:T2
+T3	Lesion-Description 445 454	opacities
+T4	Lesion-Anatomy 455 483;485 495	throughout the right mid and upper lung
+T5	Medical-Problem 501 517	associated right
+E5	Medical-Problem:T5
+T6	Medical-Problem 628 641;643 651	right pleural effusion
+E6	Medical-Problem:T6
+T7	Medical-Problem 691 705	Patchy opacity
+T8	Medical-Anatomy 713 718;720 724	right base
+T9	Medical-Assertion 725 738	could reflect
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 739 750	atelectasis
+T11	Medical-Problem 761 770	pneumonia
+T12	Medical-Problem 774 784	aspiration
+T13	Medical-Assertion 785 796;798 811	should also be considered
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Assertion 852 854	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 855 870	pulmonary edema
+T16	Medical-Problem 875 887	pneumothorax
+T17	Medical-Problem 988 1014;1016 1030	Prominent splenic arterial calcifications
+E14	Medical-Problem:T17
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T13
+E11	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14

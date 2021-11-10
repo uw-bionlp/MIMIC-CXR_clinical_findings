@@ -1,0 +1,22 @@
+T1	Medical-Problem 241 273	subtle area of increased opacity
+T2	Medical-Anatomy 281 296	right lung base
+T3	Medical-Problem 355 369;371 380	am early/focal pneumonia
+E3	Medical-Problem:T3
+T4	Medical-Assertion 383 385	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 386 412	other focal consolidations
+T6	Medical-Assertion 440 442	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 444 461	pleural effusions
+T8	Medical-Problem 465 477	pneumothorax
+T9	Medical-Problem 628 660	Subtle area of increased opacity
+T10	Medical-Anatomy 668 683	right lung base
+T11	Medical-Assertion 690 703	may represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 708 732	early focus of pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

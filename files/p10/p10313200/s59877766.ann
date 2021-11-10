@@ -1,0 +1,21 @@
+T1	Medical-Problem 383 397;399 424	heterogeneous, ill-defined focal opacity
+T2	Medical-Anatomy 432 465	right mid to lower lung partially
+T3	Medical-Problem 502 518	Air bronchograms
+T4	Medical-Anatomy 540 552;554 564	right mid to lower lung
+T5	Medical-Problem 567 599	Homogeneous retrocardiac opacity
+T6	Medical-Anatomy 624 628;630 643	left hemidiaphragm
+T7	Medical-Problem 663 687	left lower lobe collapse
+T8	Medical-Assertion 698 700	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 702 714	pneumothorax
+T10	Medical-Problem 718 734	pleural effusion
+T11	Medical-Problem 759 785	Right lower lung pneumonia
+E10	Medical-Problem:T11
+T12	Medical-Problem 791 815	Left lower lobe collapse
+E11	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8

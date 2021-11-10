@@ -1,0 +1,23 @@
+T1	Medical-Assertion 683 685	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 687 699	pneumothorax
+T3	Medical-Problem 790 820	increased retrocardiac density
+E2	Medical-Problem:T3
+T4	Medical-Problem 822 833	obscuration
+T5	Medical-Anatomy 841 859	left hemidiaphragm
+T6	Medical-Anatomy 873 908	extreme lateral right hemidiaphragm
+T7	Medical-Problem 911 920	Confluent
+E6	Medical-Problem:T7
+T8	Medical-Problem 921 937	biapical opacity
+E7	Medical-Problem:T8
+T9	Medical-Assertion 1195 1206	possibility
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 1210 1235	bilateral small effusions
+T11	Medical-Assertion 1236 1254	cannot be excluded
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1318 1352	diffuse bilateral patchy opacities
+T13	Medical-Anatomy 1429 1439	right lung
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Assertion:T11
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13

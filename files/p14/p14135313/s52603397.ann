@@ -1,0 +1,25 @@
+T1	Medical-Problem 334 352	multiple fractures
+T2	Medical-Anatomy 370 375	right
+T3	Medical-Problem 429 455;457 471	persistence of right-sided opacifications
+T4	Medical-Anatomy 473 507	particularly in the mid right lung
+T5	Medical-Assertion 531 533	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 535 564	significant pleural effusions
+T7	Medical-Assertion 569 571	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 572 584	pneumothorax
+T9	Medical-Problem 602 626	Persistent opacification
+T10	Medical-Anatomy 639 644	right
+T11	Medical-Assertion 648 667;669 671	no longer explained by
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 684 710	simple pulmonary contusion
+T13	Medical-Problem 809 818;820 840	pulmonary contusion/laceration
+E10	Medical-Problem:T13
+T14	Medical-Problem 864 873	pneumonia
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

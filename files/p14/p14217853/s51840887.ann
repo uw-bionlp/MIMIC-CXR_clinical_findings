@@ -1,0 +1,24 @@
+T1	Medical-Problem 317 322;324 346	large right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 352 372	adjacent atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Assertion 377 383	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 384 392	collapse
+T5	Medical-Anatomy 401 429	right middle and lower lobes
+T6	Medical-Assertion 432 434	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 435 456	left pleural effusion
+T8	Medical-Assertion 563 565	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 566 578	pneumothorax
+T10	Medical-Problem 604 636	New large right pleural effusion
+E7	Medical-Problem:T10
+T11	Medical-Problem 642 663	resultant atelectasis
+T12	Medical-Problem 669 677	collapse
+T13	Medical-Anatomy 685 713	right middle and lower lobes
+E3	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T13
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13

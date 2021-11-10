@@ -1,0 +1,18 @@
+T1	Lesion-Description 281 303	masslike consolidation
+T2	Lesion-Anatomy 311 321	right lung
+T3	Medical-Problem 335 400	Stable relatively diffuse both RFA aligned interstitial opacities
+T4	Medical-Anatomy 424 449	left and right lung bases
+T5	Medical-Assertion 463 465	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 466 474;476 491	signs of pulmonary edema
+T7	Medical-Problem 505 514	infection
+T8	Medical-Assertion 515 532	must be suspected
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 582 584	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 585 602	pleural effusions
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

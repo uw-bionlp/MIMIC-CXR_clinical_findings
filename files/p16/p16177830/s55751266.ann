@@ -1,0 +1,36 @@
+T1	Medical-Anatomy 367 378	aortic knob
+T2	Medical-Problem 382 391	calcified
+T3	Lesion-Characteristic 394 404	Spiculated
+T4	Lesion-Anatomy 406 417	right hilar
+T5	Lesion-Description 418 422	mass
+T6	Lesion-Size-Trend 426 446	relatively unchanged
+A1	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Assertion 476 478	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 479 484;486 501	overt pulmonary edema
+T9	Medical-Anatomy 513 517	Left
+T10	Medical-Problem 529 536	opacity
+T11	Medical-Assertion 537 551	concerning for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 552 561	pneumonia
+T13	Medical-Assertion 565 567	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 568 592	acute bony abnormalities
+T15	Medical-Assertion 603 605	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 606 622	pleural effusion
+T17	Medical-Problem 626 638	pneumothorax
+T18	Medical-Problem 667 694	New left lower lobe opacity
+E13	Medical-Problem:T18
+T19	Medical-Assertion 695 709	concerning for
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 710 719	pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15
+E12	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

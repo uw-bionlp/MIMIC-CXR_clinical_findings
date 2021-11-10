@@ -1,0 +1,22 @@
+T1	Medical-Problem 273 305	pre-existing parenchymal opacity
+T2	Medical-Anatomy 313 336	retrocardiac lung areas
+T3	Medical-Assertion 341 353	likely to be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 354 365	atelectatic
+T5	Medical-Problem 377 410;412 425	concomitant elevation of the left hemidiaphragm
+E4	Medical-Problem:T5
+T6	Medical-Problem 446 475	minimal left pleural effusion
+E5	Medical-Problem:T6
+T7	Medical-Assertion 500 502	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 503 534	other parenchymal abnormalities
+T9	Medical-Problem 551 565	hyperlucencies
+T10	Medical-Anatomy 573 577;579 585	lung apices
+T11	Medical-Assertion 587 609	strongly indicative of
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 610 639	extensive pulmonary emphysema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

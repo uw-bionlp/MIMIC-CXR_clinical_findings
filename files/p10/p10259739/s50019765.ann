@@ -1,0 +1,17 @@
+T1	Medical-Anatomy 367 382	Left upper lobe
+T2	Medical-Assertion 389 395	likely
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 396 417	postradiation changes
+T4	Medical-Assertion 456 458	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 459 462;464 478	new consolidations
+T6	Lesion-Description 482 488	masses
+E4	Lesion-Description:T6
+T7	Medical-Assertion 505 507	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 508 524	pleural effusion
+T9	Medical-Problem 528 540	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7

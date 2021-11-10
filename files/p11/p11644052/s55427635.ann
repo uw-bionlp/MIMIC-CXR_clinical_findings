@@ -1,0 +1,19 @@
+T1	Medical-Assertion 302 313	potentially
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 314 317	new
+T3	Lesion-Description 318 325	opacity
+E2	Lesion-Description:T3
+T4	Lesion-Anatomy 371 386	left upper lobe
+T5	Lesion-Description 388 395	nodular
+T6	Lesion-Size 413 426	7 by 11 mm in
+T7	Medical-Assertion 480 482	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 483 499	pleural effusion
+T9	Medical-Problem 503 515	pneumothorax
+T10	Medical-Problem 517 535	Linear atelectasis
+T11	Medical-Anatomy 543 558	left lower lobe
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Size-Present:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11

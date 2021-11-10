@@ -1,0 +1,27 @@
+T1	Medical-Problem 230 259;261 272	Persistent pulmonary vascular engorgement
+E1	Medical-Problem:T1
+T2	Medical-Problem 288 314	diffuse interstitial edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 317 332;334 353	Worsening, more confluent opacities
+T4	Medical-Anatomy 361 396	lung bases, right greater than left
+T5	Medical-Assertion 398 411	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 413 428	dependent edema
+T7	Medical-Problem 433 444	atelectasis
+T8	Medical-Problem 450 470	infectious pneumonia
+T9	Medical-Assertion 471 485;487 504	should also be considered in the
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 536 558;560 568	Moderate right pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 613 619	likely
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 627 637;639 655	small left pleural effusion
+T13	Medical-Assertion 658 660	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 661 681	visible pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

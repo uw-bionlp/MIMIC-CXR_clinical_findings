@@ -1,0 +1,22 @@
+T1	Medical-Problem 330 347;349 375	bilateral diffuse interstitial abnormalities
+T2	Medical-Anatomy 399 423;425 429	right lower and mid lung zone
+T3	Lesion-Anatomy 487 492	Hilar
+T4	Lesion-Description 494 504	adenopathy
+T5	Medical-Assertion 600 602	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 603 619	pleural effusion
+T7	Medical-Problem 623 635	pneumothorax
+T8	Medical-Problem 656 688	Diffuse interstitial abnormality
+T9	Medical-Anatomy 710 724	right mid lung
+T10	Lesion-Characteristic 745 764	lymphangitic spread
+E9	Lesion-Characteristic:T10
+T11	Lesion-Anatomy 768 773	renal
+E10	Lesion-Anatomy:T11
+T12	Lesion-Anatomy 790 795	Hilar
+T13	Lesion-Description 796 806	adenopathy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E12	Lesion-Description:T13 has-Lesion-Anatomy:T12

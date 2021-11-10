@@ -1,0 +1,27 @@
+T1	Medical-Problem 368 383	Slight blunting
+T2	Medical-Anatomy 388 440	lateral and posterior costophrenic sulci on the left
+T3	Medical-Assertion 441 465;467 469	suggests the possibility of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 472 486	trace effusion
+T5	Medical-Assertion 542 544	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 546 558	pneumothorax
+T7	Lesion-Characteristic 584 594	widespread
+T8	Lesion-Description 604 614	metastases
+T9	Lesion-Characteristic 636 641	lysis
+T10	Lesion-Characteristic 648 659	soft tissue
+T11	Lesion-Description 660 664	mass
+T12	Lesion-Anatomy 675 688;690 733	course of the anterolateral course of the left fourth rib
+T13	Medical-Assertion 762 773	No evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 777 790	acute disease
+T15	Lesion-Characteristic 793 803	Widespread
+T16	Lesion-Anatomy 804 812	skeletal
+T17	Lesion-Description 813 823	metastases
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Characteristic:T7
+E9	Lesion-Description:T11 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Lesion-Description:T17 has-Lesion-Characteristic:T15 has-Lesion-Anatomy:T16

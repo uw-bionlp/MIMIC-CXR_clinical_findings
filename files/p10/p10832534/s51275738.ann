@@ -1,0 +1,37 @@
+T1	Medical-Problem 306 320	Patchy opacity
+T2	Medical-Anatomy 332 347	right lung base
+T3	Medical-Problem 385 409	subsegmental atelectasis
+T4	Medical-Anatomy 417 433	right lower lobe
+T5	Medical-Problem 482 497	streaky opacity
+T6	Medical-Anatomy 509 526	right middle lobe
+T7	Medical-Assertion 537 551	concerning for
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 552 561	pneumonia
+T9	Medical-Assertion 585 587	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 588 604	pleural effusion
+T11	Medical-Problem 609 621	pneumothorax
+T12	Medical-Assertion 682 684	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 686 713	acute osseous abnormalities
+T14	Medical-Problem 733 748	Streaky opacity
+T15	Medical-Anatomy 756 773	right middle lobe
+T16	Medical-Assertion 783 797	concerning for
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 798 807	pneumonia
+T18	Medical-Problem 811 825	Linear opacity
+T19	Medical-Anatomy 837 853	right lower lobe
+T20	Medical-Assertion 854 869	likely reflects
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 870 882;884 895	subsegmental atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20

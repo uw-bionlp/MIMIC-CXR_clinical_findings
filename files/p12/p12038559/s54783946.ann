@@ -1,0 +1,29 @@
+T1	Medical-Problem 260 279	Global interstitial
+E1	Medical-Problem:T1
+T2	Medical-Problem 280 301	pulmonary abnormality
+E2	Medical-Problem:T2
+T3	Medical-Problem 325 338	consolidation
+T4	Medical-Anatomy 347 357	right lung
+T5	Medical-Assertion 381 385	more
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 397 412	pulmonary edema
+T7	Medical-Problem 419 428	pneumonia
+T8	Medical-Problem 442 451	pneumonia
+T9	Medical-Assertion 452 468	could be present
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 513 548	edema due to cardiac decompensation
+E8	Medical-Problem:T10
+T11	Medical-Problem 569 610	worsening dilatation of mediastinal veins
+E9	Medical-Problem:T11
+T12	Medical-Problem 619 641;643 651	increased intracranial pressure
+E10	Medical-Problem:T12
+T13	Medical-Problem 662 693	moderate right pleural effusion
+E11	Medical-Problem:T13
+T14	Medical-Assertion 706 708	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 710 722	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

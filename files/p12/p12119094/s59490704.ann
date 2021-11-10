@@ -1,0 +1,23 @@
+T1	Medical-Assertion 305 307	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 308 317	pneumonia
+T3	Medical-Problem 320 359	Chronic focal diaphragmatic eventration
+E2	Medical-Problem:T3
+T4	Medical-Problem 363 381	partial herniation
+T5	Medical-Anatomy 390 397	stomach
+T6	Medical-Problem 417 445	Rightward tracheal deviation
+E5	Medical-Problem:T6
+T7	Lesion-Size 453 458	large
+T8	Lesion-Anatomy 460 472	left thyroid
+T9	Lesion-Description 473 477	mass
+T10	Medical-Problem 496 501	Lungs
+E9	Medical-Problem:T10
+T11	Medical-Problem 502 529;531 540	hyperinflated due to severe emphysema
+E10	Medical-Problem:T11
+T12	Medical-Assertion 545 550	clear
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 554 571	focal abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E8	Lesion-Description:T9 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,17 @@
+T1	Medical-Problem 276 306	Pulmonary vascular engorgement
+E1	Medical-Problem:T1
+T2	Medical-Problem 332 336;338 350	Mild cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 363 382	Heavy calcification
+T4	Medical-Anatomy 396 410	mitral annulus
+T5	Medical-Assertion 411 414;416 429	can contribute to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 430 450	mitral regurgitation
+T7	Medical-Problem 453 469	Pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Assertion 490 492	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 494 506	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

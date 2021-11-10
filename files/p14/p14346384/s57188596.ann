@@ -1,0 +1,37 @@
+T1	Medical-Assertion 293 295	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 296 312	pleural effusion
+T3	Medical-Problem 316 328	pneumothorax
+T4	Medical-Problem 335 357	chest is hyperinflated
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 365 387	pulmonary interstitium
+T6	Medical-Problem 391 407	mildly prominent
+T7	Medical-Problem 419 432;434 441	peribronchial cuffing
+T8	Medical-Assertion 477 490	could be seen
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 496 509;511 529	mild forms of atypical infection
+T10	Medical-Problem 533 554	pulmonary congestion,
+T11	Medical-Assertion 559 573	could coincide
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 579 585	asthma
+T13	Medical-Problem 589 610	Right basilar opacity
+E10	Medical-Problem:T13
+T14	Medical-Assertion 628 636	suggests
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 637 651	minor scarring
+T16	Medical-Problem 668 711	Mild interstitial abnormality, non-specific
+E12	Medical-Problem:T16
+T17	Medical-Problem 733 739	asthma
+E13	Medical-Problem:T17
+T18	Medical-Problem 741 759	atypical pneumonia
+E14	Medical-Problem:T18
+T19	Medical-Problem 763 787	mild vascular congestion
+E15	Medical-Problem:T19
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T8 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

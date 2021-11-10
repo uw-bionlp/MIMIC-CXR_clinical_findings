@@ -1,0 +1,32 @@
+T1	Medical-Problem 315 327	silhouetting
+T2	Medical-Anatomy 335 354	right hemidiaphragm
+T3	Medical-Assertion 356 369	likely due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 372 380;382 398	layering pleural effusion
+T5	Medical-Problem 403 428	right basal consolidation
+T6	Medical-Assertion 429 447	cannot be excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 636 655	pneumothorax.  Mild
+E5	Medical-Problem:T7
+T8	Medical-Problem 656 674;676 686	pulmonary vascular congestion
+E6	Medical-Problem:T8
+T9	Medical-Problem 767 779	silhouetting
+T10	Medical-Anatomy 787 806	right hemidiaphragm
+T11	Medical-Assertion 807 820	likely due to
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 841 866	layering pleural effusion
+T13	Medical-Problem 871 899	right lower lobe atelectasis
+T14	Medical-Problem 901 913;915 924	superimposed infection
+T15	Medical-Assertion 925 943	cannot be excluded
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 948 958	Persistent
+E12	Medical-Problem:T16
+T17	Medical-Problem 959 993	mild pulmonary vascular congestion
+E13	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T10 has-Medical-Assertion:T11 has-Medical-Assertion:T15

@@ -1,0 +1,42 @@
+T1	Medical-Problem 371 386;388 419	diffuse basilar predominant reticular opacities
+T2	Lesion-Anatomy 431 447	right lower lobe
+E2	Lesion-Anatomy:T2
+T3	Lesion-Anatomy 449 461;463 467	right middle lobe
+E3	Lesion-Anatomy:T3
+T4	Medical-Anatomy 473 477	left
+T5	Medical-Problem 575 592	increased density
+T6	Medical-Anatomy 607 617;619 635	peripheral right lower lobe
+T7	Medical-Anatomy 637 654	right middle lobe
+T8	Lesion-Assertion 741 755	likely reflect
+A1	Lesion-AssertionValue T8 possible
+T9	Lesion-Description 756 767	progression
+T10	Medical-Problem 803 825	superimposed pneumonia
+T11	Medical-Assertion 829 840	possible in
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 877 879	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 880 902	large pleural effusion
+T14	Medical-Assertion 929 931	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 932 953	overt pulmonary edema
+T16	Medical-Assertion 965 967	no
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 968 980	pneumothorax
+T18	Medical-Problem 1089 1136	Diffuse basilar predominant reticular opacities
+T19	Medical-Problem 1142 1153;1155 1172	progressive increased density
+T20	Medical-Anatomy 1180 1196	right lower lobe
+T21	Medical-Anatomy 1198 1215	right middle lobe
+T22	Medical-Anatomy 1221 1231;1233 1237	left lower lobe
+T23	Lesion-Assertion 1288 1302	likely reflect
+A6	Lesion-AssertionValue T23 possible
+T24	Lesion-Description 1304 1315	progression
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6 has-Medical-Anatomy:T7
+E8	Lesion-Description:T9 has-Lesion-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16
+E13	Medical-Problem:T18 has-Medical-Anatomy:T20 has-Medical-Anatomy:T21 has-Medical-Anatomy:T22
+E14	Medical-Problem:T19 has-Medical-Anatomy:T20 has-Medical-Anatomy:T21 has-Medical-Anatomy:T22
+E18	Lesion-Description:T24 has-Lesion-Assertion:T23

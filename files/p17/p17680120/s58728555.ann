@@ -1,0 +1,43 @@
+T1	Medical-Problem 72 88	Low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 93 102;104 116	bibasilar  atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 118 147	Pulmonary vascular congestion
+E3	Medical-Problem:T3
+T4	Medical-Problem 152 180	very mild interstitial edema
+E4	Medical-Problem:T4
+T5	Medical-Assertion 184 186	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 187 199	pneumothorax
+T7	Medical-Problem 597 610	opacification
+T8	Medical-Anatomy 618 628	lung bases
+T9	Medical-Assertion 633 641	probably
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 642 659	vascular crowding
+T11	Medical-Problem 664 680	mild atelectasis
+T12	Medical-Assertion 689 699	could mask
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 700 710	aspiration
+T14	Medical-Problem 716 731	early pneumonia
+T15	Medical-Problem 775 786	engorgement
+E12	Medical-Problem:T15
+T16	Medical-Assertion 842 849	not see
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 850 865	pulmonary edema
+T18	Medical-Assertion 878 880	no
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 881 897	pleural effusion
+T20	Medical-Problem 909 924	mildly enlarged
+E15	Medical-Problem:T20
+T21	Medical-Anatomy 938 943;945 952	Right jugular
+E16	Medical-Anatomy:T21
+T22	Medical-Assertion 985 987	No
+A6	Medical-AssertionValue T22 absent
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T8 has-Medical-Assertion:T12
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

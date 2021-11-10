@@ -1,0 +1,35 @@
+T1	Medical-Problem 220 229;231 253	Bilateral upper lobe volume loss
+E1	Medical-Problem:T1
+T2	Medical-Problem 258 266	scarring
+E2	Medical-Problem:T2
+T3	Medical-Problem 299 302;304 323	new confluent opacities
+T4	Medical-Anatomy 331 348	right middle lobe
+T5	Medical-Anatomy 350 357	lingula
+T6	Medical-Anatomy 362 377	left lower lobe
+T7	Medical-Assertion 380 388	possibly
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 394 421	accompanying bronchiectasis
+T9	Medical-Anatomy 429 450;452 459	right middle lobe and lingula
+T10	Medical-Assertion 462 464	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 465 481	pleural effusion
+T12	Medical-Problem 485 497	pneumothorax
+T13	Medical-Problem 518 550	Multifocal parenchymal opacities
+T14	Medical-Anatomy 558 575	right middle lobe
+T15	Medical-Anatomy 577 584	lingula
+T16	Medical-Anatomy 589 593;595 605	left lower lobe
+T17	Medical-Assertion 612 620	possible
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 621 648	accompanying bronchiectasis
+T19	Medical-Assertion 700 715	could be due to
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 716 746;748 757	chronic atypical mycobacterial infection
+T21	Medical-Problem 771 794	acute pneumonic process
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14 has-Medical-Anatomy:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T19

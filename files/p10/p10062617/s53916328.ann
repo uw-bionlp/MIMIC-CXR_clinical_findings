@@ -1,0 +1,32 @@
+T1	Medical-Problem 418 424;426 438	Severe cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 464 480	remains tortuous
+T3	Medical-Problem 486 501;503 517	atherosclerotic calcifications
+T4	Medical-Anatomy 525 529	knob
+T5	Medical-Problem 591 623	hyperinflated.  Linear opacities
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 631 641	lung bases
+T7	Medical-Assertion 642 656	likely reflect
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 658 675	areas of scarring
+T9	Medical-Problem 680 691	atelectasis
+T10	Medical-Assertion 694 696	No
+A2	Medical-AssertionValue T10 absent
+T11	Lesion-Characteristic 697 702	focal
+E9	Lesion-Characteristic:T11
+T12	Medical-Problem 703 716	consolidation
+T13	Medical-Problem 718 734	pleural effusion
+T14	Medical-Problem 739 751	pneumothorax
+T15	Medical-Assertion 784 786	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 787 792	acute
+E13	Medical-Problem:T16
+T17	Medical-Problem 793 820	cardiopulmonary abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T10
+E14	Medical-Problem:T17 has-Medical-Assertion:T15

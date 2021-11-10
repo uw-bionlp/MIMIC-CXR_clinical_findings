@@ -1,0 +1,37 @@
+T1	Lesion-Characteristic 119 129	spiculated
+T2	Lesion-Characteristic 134 142	cavitary
+T3	Lesion-Description 143 149	nodule
+T4	Lesion-Anatomy 157 183;185 215	left mid lung at the level of the third left anterior rib
+T5	Lesion-Size 226 232	2.5 cm
+T6	Lesion-Size-Trend 253 261;263 269	slightly larger
+A1	Lesion-Size-TrendValue T6 increasing
+T7	Lesion-Anatomy 326 341	left upper lobe
+T8	Lesion-Description 343 349	lesion
+T9	Lesion-Assertion 377 407	morphologically concerning for
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Description 424 430	cancer
+T11	Medical-Assertion 435 446	less likely
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 450 482	indolent granulomatous infection
+T13	Medical-Anatomy 486 491	Lungs
+T14	Medical-Assertion 518 520	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 521 553	new focal areas of consolidation
+T16	Medical-Problem 585 600	acute pneumonia
+T17	Medical-Anatomy 603 608	Lungs
+T18	Medical-Problem 638 644;646 650	linear scar
+T19	Medical-Assertion 651 657	versus
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 658 669	atelectasis
+T21	Medical-Anatomy 677 693	mid lung regions
+T22	Medical-Problem 695 704	Sclerosis
+T23	Medical-Anatomy 708 719;721 729	medial left clavicle
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4 has-Lesion-Size-Present:T5 has-Lesion-Size-Trend:T6
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Anatomy:T17 has-Medical-Assertion:T19 has-Medical-Anatomy:T21
+E15	Medical-Problem:T20 has-Medical-Anatomy:T17 has-Medical-Assertion:T19 has-Medical-Anatomy:T21
+E17	Medical-Problem:T22 has-Medical-Anatomy:T23

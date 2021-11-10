@@ -1,0 +1,17 @@
+T1	Medical-Problem 326 335	elevation
+T2	Medical-Anatomy 343 362	right hemidiaphragm
+T3	Lesion-Count 547 555	multiple
+T4	Lesion-Anatomy 556 570	bilateral lung
+T5	Lesion-Description 571 578	nodules
+T6	Medical-Problem 606 620;622 635	left perihilar consolidation
+E6	Medical-Problem:T6
+T7	Lesion-Size-Trend 648 657	unchanged
+A1	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Assertion 727 729	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 730 752	new lung abnormalities
+T10	Medical-Problem 757 769	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Count:T3 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

@@ -1,0 +1,45 @@
+T1	Medical-Problem 33 50	Heart is enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 53 70	Increased opacity
+T3	Medical-Anatomy 78 93	right lung base
+T4	Medical-Assertion 94 107	could reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 110 121	atelectasis
+T6	Medical-Problem 170 188	infectious process
+T7	Medical-Assertion 191 209	cannot be excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 222 255	small bilateral pleural effusions
+E6	Medical-Problem:T8
+T9	Medical-Problem 262 272	prominence
+T10	Medical-Anatomy 280 301	pulmonary vasculature
+T11	Medical-Problem 933 939	patchy
+E9	Medical-Problem:T11
+T12	Medical-Problem 940 984	bibasilar opacities, right greater than left
+E10	Medical-Problem:T12
+T13	Medical-Problem 986 1001	small effusions
+E11	Medical-Problem:T13
+T14	Medical-Problem 1007 1022	some prominence
+T15	Medical-Anatomy 1030 1042	interstitium
+T16	Medical-Problem 1096 1128	pulmonary and interstitial edema
+E14	Medical-Problem:T16
+T17	Medical-Problem 1131 1154;1156 1163	Superimposed infectious process
+E15	Medical-Problem:T17
+T18	Medical-Problem 1260 1277	Heart is enlarged
+E16	Medical-Problem:T18
+T19	Medical-Assertion 1285 1296	may reflect
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1298 1310	cardiomegaly
+T21	Medical-Problem 1321 1341	pericardial effusion
+T22	Medical-Assertion 1342 1367	should also be considered
+A4	Medical-AssertionValue T22 possible
+T23	Medical-Assertion 1419 1421	No
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1422 1434	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T22
+E19	Medical-Problem:T24 has-Medical-Assertion:T23

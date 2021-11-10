@@ -1,0 +1,20 @@
+T1	Medical-Problem 194 209	rounded opacity
+T2	Medical-Anatomy 217 228;230 240	lower right hemithorax
+T3	Medical-Assertion 241 249	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 250 286	superimposition of normal structures
+T5	Lesion-Anatomy 292 296	lung
+T6	Lesion-Description 297 303	nodule
+T7	Medical-Assertion 401 403	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 404 416	pneumothorax
+T9	Medical-Problem 418 434	pleural effusion
+T10	Medical-Problem 436 445	pneumonia
+T11	Medical-Problem 449 458;460 465	pulmonary edema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T7

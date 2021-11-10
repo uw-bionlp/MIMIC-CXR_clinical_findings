@@ -1,0 +1,30 @@
+T1	Medical-Problem 436 445	extension
+E1	Medical-Problem:T1
+T2	Medical-Assertion 648 650	No
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 651 663	pneumothorax
+T4	Medical-Problem 665 684	focal consolidation
+T5	Medical-Problem 689 705	pleural effusion
+T6	Medical-Problem 708 725;727 754	Central pulmonary vascular congestion is mild
+E5	Medical-Problem:T6
+T7	Medical-Assertion 760 773	suggestion of
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 774 784	mild edema
+T9	Medical-Anatomy 792 802	right lung
+T10	Lesion-Assertion 839 841	No
+A3	Lesion-AssertionValue T10 absent
+T11	Lesion-Characteristic 842 852	suspicious
+T12	Lesion-Characteristic 853 860	osseous
+T13	Lesion-Description 861 867	lesion
+T14	Medical-Problem 870 890	Degenerative changes
+T15	Medical-Anatomy 898 907	shoulders
+T16	Medical-Anatomy 909 911;913 919	AC joints
+T17	Medical-Anatomy 925 939	thoracic spine
+T18	Medical-Problem 1035 1053	Mild heart failure
+E15	Medical-Problem:T18
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T2
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E10	Lesion-Description:T13 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15 has-Medical-Anatomy:T16 has-Medical-Anatomy:T17

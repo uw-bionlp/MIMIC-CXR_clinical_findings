@@ -1,0 +1,23 @@
+T1	Medical-Problem 420 453	large left-sided pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 473 513	minimal adjacent compressive atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 519 536;538 550	small apical left pneumothorax
+T4	Medical-Assertion 551 563	has resolved
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Anatomy 569 579	right lung
+T6	Medical-Assertion 594 601	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 602 607;609 622	focal consolidation
+T8	Medical-Problem 624 640	pleural effusion
+T9	Medical-Problem 645 657	pneumothorax
+T10	Medical-Problem 793 830	Recurrent large left pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 839 849	Resolution
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 853 883	small left apical pneumothorax
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

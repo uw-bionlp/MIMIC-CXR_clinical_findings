@@ -1,0 +1,21 @@
+T1	Medical-Problem 332 346;348 379	large areas of dense consolidation bilaterally
+E1	Medical-Problem:T1
+T2	Medical-Problem 394 403	pneumonia
+T3	Medical-Assertion 404 410	versus
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 411 420;422 432	pulmonary hemorrhage
+T5	Medical-Assertion 742 744	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 745 757	pneumothorax
+T7	Medical-Problem 777 811	Large areas of dense consolidation
+T8	Medical-Anatomy 815 835	both bilateral lungs
+T9	Medical-Assertion 836 842	likely
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 843 852	pneumonia
+T11	Medical-Problem 857 877	pulmonary hemorrhage
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

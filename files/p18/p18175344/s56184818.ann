@@ -1,0 +1,56 @@
+T1	Medical-Problem 57 80	Coronary artery disease
+E1	Medical-Problem:T1
+T2	Medical-Problem 279 292;294 313	heart remains moderately enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 320 325	aorta
+E3	Medical-Problem:T3
+T4	Medical-Problem 329 337	tortuous
+E4	Medical-Problem:T4
+T5	Medical-Problem 342 361	diffusely calcified
+E5	Medical-Problem:T5
+T6	Medical-Problem 374 394	mild pulmonary edema
+E6	Medical-Problem:T6
+T7	Medical-Problem 437 448;450 500	Small right pleural effusion demonstrates loculation laterally
+E7	Medical-Problem:T7
+T8	Medical-Problem 561 576	Rounded opacity
+T9	Medical-Anatomy 598 648	right lung base in the region of the minor fissure
+T10	Medical-Assertion 649 664	likely reflects
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Problem 668 720	pseudotumor due to fluid tracking within the fissure
+T12	Medical-Problem 723 742	Bibasilar opacities
+E11	Medical-Problem:T12
+T13	Medical-Assertion 744 758	likely reflect
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 759 770	atelectasis
+T15	Medical-Assertion 782 784	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 785 797	pneumothorax
+T17	Lesion-Characteristic 800 809	Calcified
+T18	Lesion-Description 810 816	nodule
+T19	Lesion-Anatomy 829 844	right lung apex
+T20	Lesion-Assertion 845 860	likely reflects
+A4	Lesion-AssertionValue T20 possible
+T21	Lesion-Description 863 872	granuloma
+T22	Lesion-Characteristic 875 884	Calcified
+T23	Lesion-Anatomy 885 890	hilar
+T24	Lesion-Anatomy 896 907	mediastinal
+T25	Lesion-Description 908 919	lymph nodes
+T26	Medical-Problem 931 974	right basilar pleural plaque calcifications
+E22	Medical-Problem:T26
+T27	Medical-Assertion 994 996	No
+A5	Medical-AssertionValue T27 absent
+T28	Medical-Problem 997 1024	acute osseous abnormalities
+T29	Medical-Problem 1049 1069	Mild pulmonary edema
+E24	Medical-Problem:T29
+T30	Medical-Problem 1111 1122;1124 1140	small right pleural effusion
+E25	Medical-Problem:T30
+T31	Medical-Problem 1143 1164	Bibasilar atelectasis
+E26	Medical-Problem:T31
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Lesion-Description:T18 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T19
+E17	Lesion-Description:T21 has-Lesion-Anatomy:T19 has-Lesion-Assertion:T20
+E21	Lesion-Description:T25 has-Lesion-Characteristic:T22 has-Lesion-Anatomy:T23 has-Lesion-Anatomy:T24
+E23	Medical-Problem:T28 has-Medical-Assertion:T27

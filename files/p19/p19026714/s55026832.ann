@@ -1,0 +1,23 @@
+T1	Medical-Problem 112 136	Widespread consolidation
+T2	Medical-Anatomy 144 154	right lung
+T3	Medical-Problem 214 249	more well-defined rounded lucencies
+E3	Medical-Problem:T3
+T4	Medical-Problem 262 275	consolidation
+T5	Medical-Anatomy 283 315	right upper and mid lung regions
+T6	Medical-Assertion 323 328;330 337	could reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 338 367	areas of underlying emphysema
+T8	Medical-Problem 386 407	necrotizing pneumonia
+T9	Medical-Problem 410 446	Predominantly interstitial opacities
+T10	Medical-Anatomy 454 463	left lung
+T11	Medical-Assertion 464 480	likely represent
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 482 500	interstitial edema
+T13	Medical-Problem 503 525	Right pleural effusion
+E11	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

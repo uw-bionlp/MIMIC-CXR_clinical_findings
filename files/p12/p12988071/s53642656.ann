@@ -1,0 +1,51 @@
+T1	Medical-Anatomy 271 276	lungs
+T2	Medical-Problem 281 294	hyperinflated
+T3	Medical-Problem 312 316	COPD
+T4	Medical-Anatomy 323 328	lungs
+T5	Medical-Assertion 340 347	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 348 361	consolidation
+T7	Medical-Problem 365 370	edema
+T8	Medical-Assertion 382 384	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 385 401	pleural effusion
+T10	Medical-Problem 406 418	pneumothorax
+T11	Medical-Problem 430 454	mild rightward deviation
+T12	Medical-Anatomy 462 469	trachea
+T13	Lesion-Assertion 477 482;484 493	could be due to
+A3	Lesion-AssertionValue T13 possible
+T14	Lesion-Anatomy 496 503	thyroid
+T15	Lesion-Description 504 510	lesion
+T16	Medical-Assertion 558 560	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 562 570	free air
+T18	Medical-Anatomy 585 609	below the hemidiaphragms
+T19	Medical-Problem 694 716;718 729	Mild loss of vertebral body height
+T20	Medical-Anatomy 746 775	mid thoracic vertebral bodies
+T21	Medical-Assertion 799 801	No
+A5	Medical-AssertionValue T21 absent
+T22	Medical-Problem 802 831	acute cardiopulmonary process
+T23	Medical-Problem 838 852	Hyperinflation
+E18	Medical-Problem:T23
+T24	Medical-Assertion 854 867	suggestive of
+A6	Medical-AssertionValue T24 possible
+T25	Medical-Problem 868 872	COPD
+T26	Medical-Problem 879 895	Deviated trachea
+E20	Medical-Problem:T26
+T27	Lesion-Assertion 897 912	possibly due to
+A7	Lesion-AssertionValue T27 possible
+T28	Lesion-Anatomy 915 922	thyroid
+T29	Lesion-Description 923 929	lesion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Lesion-Description:T15 has-Lesion-Assertion:T13 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Anatomy:T18
+E15	Medical-Problem:T19 has-Medical-Anatomy:T20
+E17	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T25 has-Medical-Assertion:T24
+E22	Lesion-Description:T29 has-Lesion-Assertion:T27 has-Lesion-Anatomy:T28

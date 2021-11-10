@@ -1,0 +1,22 @@
+T1	Medical-Problem 318 344	Slight increase in opacity
+T2	Medical-Anatomy 352 357;359 376	right mid-to-lower lung
+T3	Medical-Problem 422 432;434 443	underlying infection
+T4	Medical-Assertion 444 462	cannot be excluded
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Assertion 507 510;512 519	may also be
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 520 557	minimal overlying vascular congestion
+T7	Medical-Assertion 560 562	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 563 585	large pleural effusion
+T9	Medical-Problem 590 602	pneumothorax
+T10	Medical-Problem 675 713	multiple old right-sided rib fractures
+E7	Medical-Problem:T10
+T11	Medical-Problem 724 736;738 744	Degenerative change
+T12	Medical-Anatomy 752 777	bilateral shoulder joints
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12

@@ -1,0 +1,44 @@
+T1	Medical-Assertion 70 72	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 73 89	pleural effusion
+T3	Medical-Problem 93 105	pneumothorax
+T4	Medical-Problem 109 129	retrocardiac opacity
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 152 171	left hemidiaphragme
+T6	Medical-Assertion 202 208	likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 209 220	atelectasis
+T8	Medical-Problem 224 233	infection
+T9	Medical-Problem 659 680	Moderate cardiomegaly
+E7	Medical-Problem:T9
+T10	Medical-Problem 693 707	Unchanged mild
+E8	Medical-Problem:T10
+T11	Medical-Problem 708 717;719 738	pulmonary vascular congestion
+E9	Medical-Problem:T11
+T12	Medical-Assertion 740 742	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 743 758	pulmonary edema
+T14	Medical-Problem 831 842	Mild linear
+E11	Medical-Problem:T14
+T15	Medical-Problem 843 854	atelectasis
+T16	Medical-Anatomy 862 870;872 876	left mid lung
+T17	Medical-Assertion 900 911	No evidence
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 915 924	pneumonia
+T19	Medical-Problem 931 945	Unchanged mild
+E15	Medical-Problem:T19
+T20	Medical-Problem 946 975	pulmonary vascular congestion
+E16	Medical-Problem:T20
+T21	Medical-Assertion 978 980	No
+A5	Medical-AssertionValue T21 absent
+T22	Medical-Problem 981 990	pulmonary
+E17	Medical-Problem:T22
+T23	Medical-Problem 991 996	edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E18	Medical-Problem:T23 has-Medical-Assertion:T21

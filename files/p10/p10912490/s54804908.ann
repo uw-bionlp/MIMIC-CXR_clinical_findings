@@ -1,0 +1,36 @@
+T1	Medical-Problem 57 69	Foreign body
+T2	Medical-Anatomy 77 86	esophagus
+T3	Medical-Assertion 87 95	question
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 96 105	pneumonia
+T5	Lesion-Count 246 254	Numerous
+T6	Lesion-Characteristic 255 262	rounded
+T7	Lesion-Description 263 272	opacities
+T8	Lesion-Anatomy 286 290;292 297	both lungs
+T9	Lesion-Size-Trend 308 336	increased in size and number
+A2	Lesion-Size-TrendValue T9 increasing
+T10	Medical-Assertion 417 419	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 420 436	pleural effusion
+T12	Medical-Problem 441 453	pneumothorax
+T13	Medical-Problem 476 500	Stable aortic tortuosity
+E10	Medical-Problem:T13
+T14	Medical-Assertion 503 505	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 506 514;516 525	definite pneumonia
+T16	Lesion-Size-Trend 545 571	Increasing size and number
+A5	Lesion-Size-TrendValue T16 increasing
+T17	Lesion-Count 575 583	numerous
+T18	Lesion-Anatomy 584 593	pulmonary
+T19	Lesion-Description 594 604	metastases
+T20	Medical-Assertion 611 613	No
+A6	Medical-AssertionValue T20 absent
+T21	Medical-Problem 614 639	radio-opaque foreign body
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Lesion-Description:T7 has-Lesion-Count:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Lesion-Description:T19 has-Lesion-Size-Trend:T16 has-Lesion-Count:T17 has-Lesion-Anatomy:T18
+E15	Medical-Problem:T21 has-Medical-Assertion:T20

@@ -1,0 +1,50 @@
+T1	Medical-Problem 452 474	minimal patchy opacity
+T2	Medical-Anatomy 482 510	retrocardiac region medially
+T3	Medical-Problem 566 585	minimal atelectasis
+T4	Medical-Anatomy 594 604	right base
+T5	Medical-Problem 638 663	upper zone redistribution
+E5	Medical-Problem:T5
+T6	Medical-Assertion 665 672	without
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 674 683	overt CHF
+T8	Medical-Assertion 686 688	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 689 703	gross effusion
+T10	Lesion-Size 708 713	Small
+T11	Lesion-Anatomy 714 729	left upper lobe
+T12	Lesion-Description 730 736	nodule
+T13	Medical-Problem 741 745	left
+E11	Medical-Problem:T13
+T14	Medical-Problem 778 783;785 805	small pericardial effusion
+E12	Medical-Problem:T14
+T15	Medical-Problem 810 835	bronchial wall thickening
+E13	Medical-Problem:T15
+T16	Medical-Problem 946 968	Minimal patchy opacity
+T17	Medical-Anatomy 976 1004	retrocardiac region medially
+T18	Medical-Problem 1009 1016;1018 1029	minimal atelectasis
+T19	Medical-Anatomy 1037 1052	right lung base
+T20	Medical-Assertion 1105 1120	could represent
+A3	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1121 1132	atelectasis
+T22	Medical-Problem 1137 1165	early pneumonic infiltrative
+T23	Medical-Problem 1170 1199	changes related to aspiration
+T24	Medical-Assertion 1200 1218	could also account
+A4	Medical-AssertionValue T24 possible
+T25	Medical-Problem 1227 1239;1241 1248	retrocardiac opacity
+T26	Medical-Problem 1253 1278	Upper zone redistribution
+E22	Medical-Problem:T26
+T27	Medical-Assertion 1308 1310	No
+A5	Medical-AssertionValue T27 absent
+T28	Medical-Problem 1311 1320	overt CHF
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T10 has-Lesion-Anatomy:T11
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T18 has-Medical-Anatomy:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T22 has-Medical-Assertion:T20
+E20	Medical-Problem:T23 has-Medical-Assertion:T20
+E21	Medical-Problem:T25 has-Medical-Assertion:T24
+E23	Medical-Problem:T28 has-Medical-Assertion:T27

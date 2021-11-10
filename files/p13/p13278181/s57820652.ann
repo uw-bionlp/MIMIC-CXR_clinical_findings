@@ -1,0 +1,37 @@
+T1	Medical-Problem 267 291	Mild vascular congestion
+E1	Medical-Problem:T1
+T2	Medical-Problem 296 302;304 328	subtle interstitial abnormality
+E2	Medical-Problem:T2
+T3	Medical-Problem 359 379	mild pulmonary edema
+E3	Medical-Problem:T3
+T4	Lesion-Description 400 407	nodular
+E4	Lesion-Description:T4
+T5	Lesion-Description 408 415	opacity
+T6	Lesion-Anatomy 436 459	posterior right 6th rib
+T7	Lesion-Size 472 476	5-mm
+T8	Medical-Assertion 529 531	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 532 537;539 555	large pleural effusion
+T10	Medical-Problem 559 571	pneumothorax
+T11	Medical-Assertion 686 688	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 689 701	pneumothorax
+T13	Medical-Problem 705 710;712 724	other complication
+T14	Medical-Problem 733 753	Mild pulmonary edema
+E12	Medical-Problem:T14
+T15	Lesion-Size 762 766	5-mm
+T16	Lesion-Description 767 782	nodular opacity
+T17	Lesion-Anatomy 803 826	right posterior 6th rib
+T18	Medical-Assertion 827 833;835 847	may be secondary to
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 850 873	pulmonary calcification
+T20	Lesion-Description 879 890	bone-island
+T21	Lesion-Anatomy 902 905	rib
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T6 has-Lesion-Size-Present:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E14	Lesion-Description:T16 has-Lesion-Size-Present:T15 has-Lesion-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Lesion-Description:T20 has-Lesion-Anatomy:T21

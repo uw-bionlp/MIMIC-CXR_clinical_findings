@@ -1,0 +1,28 @@
+T1	Medical-Assertion 498 500	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 501 538	pulmonary vascular congestive pattern
+T3	Medical-Problem 582 592	prominence
+T4	Medical-Anatomy 600 617;619 629	right-sided hilar structures
+T5	Medical-Anatomy 676 694;696 715	central portion of the lower lobe area
+T6	Medical-Assertion 775 786	no evidence
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 790 806	pleural effusion
+T8	Medical-Anatomy 814 837	lateral pleural sinuses
+T9	Medical-Assertion 849 851;853 861	No evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 865 892	new pulmonary abnormalities
+T11	Medical-Anatomy 900 915	left hemithorax
+T12	Medical-Assertion 1005 1007	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 1008 1020	pneumothorax
+T14	Medical-Problem 1046 1088	Progression of central pulmonary densities
+E10	Medical-Problem:T14
+T15	Lesion-Anatomy 1127 1132	hilar
+T16	Lesion-Description 1133 1143	adenopathy
+T17	Lesion-Anatomy 1161 1171;1173 1177	infrahilar area
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Lesion-Description:T16 has-Lesion-Anatomy:T15 has-Lesion-Anatomy:T17

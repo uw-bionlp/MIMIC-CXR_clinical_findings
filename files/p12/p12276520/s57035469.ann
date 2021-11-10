@@ -1,0 +1,20 @@
+T1	Lesion-Size 222 226	4-mm
+T2	Lesion-Description 227 233	nodule
+T3	Lesion-Size 410 414	4 mm
+T4	Lesion-Description 415 421	nodule
+T5	Medical-Problem 554 565	atelectasis
+T6	Medical-Anatomy 573 587	left lung base
+T7	Medical-Assertion 636 638	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 639 656	pleural effusions
+T9	Medical-Problem 661 675	pneumothoraces
+T10	Lesion-Assertion 693 704	No evidence
+A2	Lesion-AssertionValue T10 absent
+T11	Lesion-Anatomy 708 717	pulmonary
+T12	Lesion-Description 718 724	nodule
+E2	Lesion-Description:T2 has-Lesion-Size-Present:T1
+E4	Lesion-Description:T4 has-Lesion-Size-Present:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E10	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Anatomy:T11

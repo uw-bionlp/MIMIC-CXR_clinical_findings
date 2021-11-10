@@ -1,0 +1,23 @@
+T1	Medical-Problem 250 256;258 277	slight asymmetric fullness
+T2	Medical-Anatomy 285 296	right hilus
+T3	Medical-Problem 302 322	subtle opacification
+T4	Medical-Anatomy 334 370	inferiorly over the right lower lung
+T5	Medical-Assertion 494 496	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 497 513	pleural effusion
+T7	Medical-Problem 517 529	pneumothorax
+T8	Medical-Assertion 557 574	definite evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 578 591	consolidation
+T10	Medical-Problem 595 613	significant change
+T11	Medical-Problem 668 676	fullness
+T12	Medical-Anatomy 684 695	right hilus
+T13	Medical-Anatomy 805 816	right hilus
+E11	Medical-Anatomy:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12

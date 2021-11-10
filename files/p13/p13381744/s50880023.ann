@@ -1,0 +1,27 @@
+T1	Medical-Assertion 330 341	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 345 379	primary or mediastinal abnormality
+T3	Lesion-Assertion 392 416	no radiographic evidence
+A2	Lesion-AssertionValue T3 absent
+T4	Lesion-Description 420 430	adenopathy
+T5	Medical-Anatomy 543 548	lungs
+T6	Medical-Assertion 584 586	no
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 587 601;603 616	areas of focal consolidation
+T8	Lesion-Description 618 624	masses
+E5	Lesion-Description:T8
+T9	Lesion-Description 626 633	lesions
+E6	Lesion-Description:T9
+T10	Medical-Problem 635 651	pleural effusion
+T11	Medical-Problem 655 667	pneumothorax
+T12	Medical-Assertion 809 820	No evidence
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 824 833	infection
+T14	Lesion-Description 837 847	malignancy
+E10	Lesion-Description:T14
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Lesion-Description:T4 has-Lesion-Assertion:T3
+E4	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

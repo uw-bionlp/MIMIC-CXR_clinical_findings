@@ -1,0 +1,21 @@
+T1	Medical-Assertion 296 298	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 299 337	focal parenchymal opacities suggesting
+E1	Medical-Problem:T2
+T3	Medical-Problem 338 347	pneumonia
+T4	Lesion-Assertion 452 454	No
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 455 459	lung
+T6	Lesion-Description 460 467	nodules
+T7	Lesion-Description 471 477	masses
+T8	Medical-Anatomy 526 536	left hilus
+T9	Medical-Problem 554 586	slightly rounder and denser than
+T10	Medical-Assertion 611 613	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 614 624;626 634	pathologic contours
+T12	Medical-Anatomy 670 675	hilus
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T10 has-Medical-Anatomy:T12

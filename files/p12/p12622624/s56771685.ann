@@ -1,0 +1,30 @@
+T1	Medical-Assertion 245 254	no longer
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 255 270	pulmonary edema
+T3	Medical-Problem 273 293	Persistent elevation
+T4	Medical-Anatomy 301 306;308 321	right hemidiaphragm
+T5	Medical-Problem 331 371	some severe right lower lobe atelectasis
+E4	Medical-Problem:T5
+T6	Medical-Problem 374 382;384 395	Moderate enlargement
+T7	Medical-Anatomy 403 421	cardiac silhouette
+T8	Medical-Assertion 436 451	could be due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 453 465	cardiomegaly
+T10	Medical-Problem 473 493	pericardial effusion
+T11	Medical-Assertion 508 510	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 511 523;525 557	pulmonary or mediastinal vascular engorgement
+T13	Medical-Assertion 672 674	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 676 688	pneumothorax
+T15	Medical-Problem 794 820	mediastinal fat deposition
+E11	Medical-Problem:T15
+T16	Medical-Problem 842 883	increase in aortic valvular calcification
+E12	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

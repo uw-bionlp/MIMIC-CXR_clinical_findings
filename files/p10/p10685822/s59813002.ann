@@ -1,0 +1,21 @@
+T1	Medical-Problem 301 334;336 345	bilateral heterogeneous pulmonary opacities
+T2	Medical-Problem 351 394	combined alveolar and interstitial features
+T3	Medical-Problem 418 438	increased confluence
+T4	Medical-Anatomy 446 456	lung bases
+T5	Medical-Problem 459 485	Scattered cystic lucencies
+T6	Medical-Assertion 486 491;493 508	raise the possibility
+A1	Medical-AssertionValue T6 possible
+T7	Lesion-Characteristic 512 522	underlying
+T8	Lesion-Characteristic 523 531	cavitary
+T9	Lesion-Description 532 539	lesions
+T10	Medical-Problem 669 714	Small to moderate bilateral pleural effusions
+E9	Medical-Problem:T10
+T11	Lesion-Characteristic 741 751	widespread
+T12	Lesion-Characteristic 752 761	sclerotic
+T13	Lesion-Description 762 772	metastasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T4
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Assertion:T6
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Characteristic:T8
+E12	Lesion-Description:T13 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12

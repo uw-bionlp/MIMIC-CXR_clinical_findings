@@ -1,0 +1,36 @@
+T1	Medical-Assertion 379 381	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 382 397;399 410	configurational abnormality
+T3	Lesion-Characteristic 463 467	very
+T4	Lesion-Anatomy 475 500	left upper lobe pulmonary
+T5	Lesion-Description 501 505	mass
+T6	Medical-Problem 589 616	Hilar structures prominence
+E5	Medical-Problem:T6
+T7	Medical-Assertion 620 630;632 635	suspicious for
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 636 658	extension into vessels
+T9	Medical-Problem 661 684	Local pleural densities
+T10	Medical-Anatomy 709 739	entire left lateral chest wall
+T11	Medical-Anatomy 749 781	lower left lateral pleural sinus
+T12	Medical-Problem 786 800	mildly blunted
+T13	Lesion-Description 833 839	lesion
+T14	Lesion-Anatomy 883 904	anterior apical chest
+T15	Medical-Assertion 955 957	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 958 981	pulmonary abnormalities
+T17	Medical-Problem 986 1005	free pleural spaces
+T18	Lesion-Size-Trend 1085 1105	Unchanged appearance
+A4	Lesion-Size-TrendValue T18 no-change
+T19	Lesion-Size 1109 1114	large
+T20	Lesion-Anatomy 1115 1119	lung
+T21	Lesion-Description 1120 1124	mass
+T22	Lesion-Anatomy 1128 1146;1148 1154	left upper half of thorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T11
+E11	Lesion-Description:T13 has-Lesion-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E17	Lesion-Description:T21 has-Lesion-Size-Trend:T18 has-Lesion-Size-Present:T19 has-Lesion-Anatomy:T20 has-Lesion-Anatomy:T22

@@ -1,0 +1,37 @@
+T1	Medical-Problem 265 295	Diffuse micronodular opacities
+T2	Medical-Anatomy 322 327	lungs
+T3	Medical-Problem 379 398	mild linear density
+T4	Medical-Anatomy 407 422	right lung base
+T5	Medical-Assertion 429 446	likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 447 455	scarring
+T7	Medical-Assertion 458 460	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 461 475	large effusion
+T9	Medical-Assertion 486 488	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 489 501	pneumothorax
+T11	Medical-Assertion 545 547	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 548 556	free air
+T13	Medical-Anatomy 568 587	right hemidiaphragm
+T14	Lesion-Anatomy 630 635	lungs
+T15	Lesion-Characteristic 641 653	diffuse tiny
+T16	Lesion-Description 654 661;663 672	nodular opacities
+T17	Medical-Problem 689 700	sarcoidosis
+E13	Medical-Problem:T17
+T18	Medical-Problem 703 734	Mild right basal linear density
+E14	Medical-Problem:T18
+T19	Medical-Assertion 739 745	likely
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 746 754	scarring
+T21	Medical-Problem 758 769	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E12	Lesion-Description:T16 has-Lesion-Anatomy:T14 has-Lesion-Characteristic:T15
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T19

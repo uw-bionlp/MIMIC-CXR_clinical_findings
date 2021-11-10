@@ -1,0 +1,41 @@
+T1	Medical-Problem 185 201;203 206	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 316 337	enlarged azygous vein
+E2	Medical-Problem:T2
+T3	Medical-Assertion 348 361	suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 365 397	elevated central venous pressure
+T5	Medical-Assertion 409 411	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 412 420;422 437	definite pulmonary edema
+T7	Medical-Anatomy 444 467	left costophrenic angle
+T8	Medical-Problem 471 479	obscured
+T9	Medical-Assertion 481 496	possibly due to
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 500 527	small left pleural effusion
+T11	Medical-Assertion 539 541	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 542 554	pneumothorax
+T13	Medical-Problem 626 647	Enlarged azygous vein
+E9	Medical-Problem:T13
+T14	Medical-Assertion 648 656	suggests
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 657 689	elevated central venous pressure
+T16	Medical-Assertion 706 728	differential diagnosis
+A6	Medical-AssertionValue T16 possible
+T17	Medical-Problem 732 760	isolated right heart failure
+T18	Medical-Problem 764 775;777 785	pericardial effusion
+T19	Medical-Problem 792 816	large pulmonary embolism
+T20	Medical-Assertion 822 830	Probable
+A7	Medical-AssertionValue T20 possible
+T21	Medical-Problem 831 858	small left pleural effusion
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T17 has-Medical-Assertion:T14 has-Medical-Assertion:T16
+E12	Medical-Problem:T18 has-Medical-Assertion:T16
+E13	Medical-Problem:T19 has-Medical-Assertion:T16
+E14	Medical-Problem:T21 has-Medical-Assertion:T20

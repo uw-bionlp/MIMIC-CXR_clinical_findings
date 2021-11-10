@@ -1,0 +1,18 @@
+T1	Medical-Problem 210 235	large homogeneous opacity
+T2	Medical-Anatomy 243 252	left apex
+T3	Medical-Problem 380 397;399 416	Small left apical hydropneumothorax
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 595 604	left apex
+E4	Medical-Anatomy:T4
+T5	Medical-Anatomy 606 629;631 638	left mid and lower lung regions
+E5	Medical-Anatomy:T5
+T6	Medical-Problem 650 681	diffuse heterogeneous opacities
+T7	Medical-Anatomy 682 707	throughout the right lung
+T8	Medical-Assertion 737 752	could be due to
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 753 771	asymmetrical edema
+T10	Medical-Problem 779 787;789 798	evolving infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8

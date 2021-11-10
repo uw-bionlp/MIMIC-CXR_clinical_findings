@@ -1,0 +1,27 @@
+T1	Lesion-Characteristic 233 242	Calcified
+T2	Lesion-Anatomy 244 257	left mid lung
+T3	Lesion-Size 258 271	subcentimeter
+T4	Lesion-Anatomy 272 281	pulmonary
+T5	Lesion-Description 282 288	nodule
+T6	Lesion-Assertion 301 318	likely related to
+A1	Lesion-AssertionValue T6 possible
+T7	Lesion-Characteristic 320 329	calcified
+T8	Lesion-Description 330 339	granuloma
+T9	Lesion-Size 353 357	6-mm
+T10	Lesion-Description 358 365	nodular
+E9	Lesion-Description:T10
+T11	Lesion-Description 366 373	opacity
+T12	Lesion-Anatomy 407 431	anterior right fifth rib
+T13	Medical-Assertion 569 571	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 572 591	focal consolidation
+T15	Medical-Problem 593 609	pleural effusion
+T16	Medical-Problem 614 622	evidence
+E14	Medical-Problem:T16
+T17	Medical-Problem 627 639	pneumothorax
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4
+E7	Lesion-Description:T8 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7
+E10	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T13

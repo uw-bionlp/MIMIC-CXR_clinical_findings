@@ -1,0 +1,35 @@
+T1	Medical-Problem 309 330	left base atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Problem 332 356	underlying consolidation
+T3	Medical-Assertion 357 375	cannot be excluded
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Assertion 378 380	No
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 382 407	definite pleural effusion
+T6	Medical-Assertion 444 446	No
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 447 459	pneumothorax
+T8	Medical-Assertion 530 532	No
+A4	Medical-AssertionValue T8 absent
+T9	Medical-Problem 534 556	displaced rib fracture
+T10	Medical-Problem 599 611	rib fracture
+E6	Medical-Problem:T10
+T11	Medical-Problem 669 697	Small linear area of opacity
+T12	Medical-Anatomy 705 719	left lung base
+T13	Medical-Assertion 720 731;733 743	most likely represents
+A5	Medical-AssertionValue T13 possible
+T14	Medical-Problem 744 755	atelectasis
+T15	Medical-Problem 765 789	underlying consolidation
+T16	Medical-Assertion 793 805	not excluded
+A6	Medical-AssertionValue T16 possible
+T17	Medical-Assertion 808 810	No
+A7	Medical-AssertionValue T17 absent
+T18	Medical-Problem 812 834	displaced rib fracture
+E2	Medical-Problem:T2 has-Medical-Assertion:T3
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T11 has-Medical-Anatomy:T12
+E9	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T16
+E11	Medical-Problem:T18 has-Medical-Assertion:T17

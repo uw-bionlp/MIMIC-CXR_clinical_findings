@@ -1,0 +1,32 @@
+T1	Medical-Problem 285 298	hyperinflated
+T2	Medical-Anatomy 305 310	lungs
+T3	Medical-Assertion 317 319	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 320 339	focal consolidation
+T5	Lesion-Assertion 342 344	No
+A2	Lesion-AssertionValue T5 absent
+T6	Lesion-Characteristic 345 353	discrete
+T7	Lesion-Description 354 360	nodule
+T8	Lesion-Description 364 368	mass
+T9	Medical-Assertion 395 397	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 398 414	pleural effusion
+T11	Medical-Problem 418 430	pneumothorax
+T12	Medical-Problem 433 461	Heart is moderatley enlarged
+E9	Medical-Problem:T12
+T13	Lesion-Assertion 548 550	No
+A4	Lesion-AssertionValue T13 absent
+T14	Lesion-Description 551 555	mass
+T15	Lesion-Description 559 565	nodule
+T16	Medical-Problem 581 600	Hyperinflated lungs
+E12	Medical-Problem:T16
+T17	Medical-Problem 602 619	Mild cardiomegaly
+E13	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E6	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Lesion-Description:T14 has-Lesion-Assertion:T13
+E11	Lesion-Description:T15 has-Lesion-Assertion:T13

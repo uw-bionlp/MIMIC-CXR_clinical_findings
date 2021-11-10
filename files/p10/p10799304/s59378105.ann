@@ -1,0 +1,51 @@
+T1	Medical-Problem 366 371;373 410	large right-sided pleural effusion layering
+T2	Medical-Anatomy 421 450	right lateral pleural surface
+T3	Medical-Problem 478 501	increased opacification
+T4	Medical-Anatomy 509 519	right lung
+T5	Medical-Assertion 526 529;531 546	may be secondary to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 547 561	layering fluid
+T7	Medical-Problem 585 608	increased opacification
+T8	Medical-Anatomy 617 627	right lung
+T9	Medical-Problem 631 654	new focal consolidation
+T10	Medical-Assertion 655 673	cannot be excluded
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Anatomy 679 688	left lung
+T12	Medical-Problem 708 738	increased peripheral opacities
+T13	Medical-Assertion 745 764	may be secondary to
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 766 777	atelectasis
+T15	Medical-Problem 838 857	infectious etiology
+T16	Medical-Assertion 858 877	cannot be ruled out
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 884 907	left lung volume is low
+E13	Medical-Problem:T17
+T18	Medical-Assertion 949 951	no
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 952 964	pneumothorax
+T20	Medical-Problem 1027 1061;1063 1071	large layering right-sided pleural effusion
+E15	Medical-Problem:T20
+T21	Medical-Problem 1096 1120	background opacification
+T22	Medical-Anatomy 1128 1138	right lung
+T23	Medical-Problem 1145 1187	focal consolidation of infectious etiology
+E18	Medical-Problem:T23
+T24	Medical-Problem 1191 1200	otherwise
+E19	Medical-Problem:T24
+T25	Medical-Problem 1253 1293	peripheral left mid-lung focal opacities
+E20	Medical-Problem:T25
+T26	Medical-Assertion 1301 1304;1306 1321	may be secondary to
+A6	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1322 1333	atelectasis
+T28	Medical-Problem 1352 1379;1381 1394	left-sided focal infectious consolidation
+E22	Medical-Problem:T28
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T11 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T21 has-Medical-Anatomy:T22
+E21	Medical-Problem:T27 has-Medical-Assertion:T26

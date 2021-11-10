@@ -1,0 +1,35 @@
+T1	Medical-Problem 412 429	increased density
+T2	Medical-Anatomy 440 451	lower spine
+T3	Medical-Problem 463 479	linear lucencies
+T4	Medical-Assertion 480 493	suggestive of
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 496 509;511 518	peribronchial process
+T6	Medical-Assertion 563 565	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 566 582	pleural effusion
+T8	Medical-Problem 587 599	pneumothorax
+T9	Medical-Problem 602 623	Mild anterior wedging
+T10	Medical-Anatomy 627 656	mid thoracic vertebral bodies
+T11	Medical-Problem 691 708	Increased density
+T12	Medical-Anatomy 718 729	lower spine
+T13	Medical-Problem 735 751	air bronchograms
+T14	Medical-Assertion 753 766	suggestive of
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 770 793	peribronchial processes
+T16	Medical-Assertion 838 843;845 854	could represent
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 855 864	pneumonia
+T18	Lesion-Description 873 898	lymphomatous infiltration
+E14	Lesion-Description:T18
+T19	Medical-Assertion 899 911	not excluded
+A5	Medical-AssertionValue T19 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16 has-Medical-Assertion:T19

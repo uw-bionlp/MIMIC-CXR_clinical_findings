@@ -1,0 +1,23 @@
+T1	Medical-Assertion 265 276	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 281 301	mediastinal widening
+T3	Medical-Problem 308 313	aorta
+E2	Medical-Problem:T3
+T4	Medical-Problem 318 326	tortuous
+E3	Medical-Problem:T4
+T5	Medical-Problem 331 340	calcified
+E4	Medical-Problem:T5
+T6	Medical-Anatomy 392 396;398 404	lung fields
+T7	Medical-Assertion 417 419	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 420 439	focal consolidation
+T9	Medical-Problem 441 457	pleural effusion
+T10	Medical-Problem 462 474	pneumothorax
+T11	Medical-Assertion 530 554	No radiographic evidence
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 559 578	acute aortic injury
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

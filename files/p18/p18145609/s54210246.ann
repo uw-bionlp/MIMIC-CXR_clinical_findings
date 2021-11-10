@@ -1,0 +1,14 @@
+T1	Medical-Problem 229 256	persistent low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 309 329	Multifocal opacities
+T3	Medical-Anatomy 337 342;344 384	right upper, right lower, and left lower lobes
+T4	Lesion-Anatomy 398 413	Multifocal lung
+T5	Lesion-Description 414 421;423 432	nodular opacities
+T6	Medical-Problem 501 515	lung opacities
+E6	Medical-Problem:T6
+T7	Medical-Assertion 520 526	likely
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 527 547	multifocal pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7

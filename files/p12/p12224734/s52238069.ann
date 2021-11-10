@@ -1,0 +1,30 @@
+T1	Medical-Problem 378 404	Severe, abnormal convexity
+T2	Medical-Anatomy 412 436	right mediastinal border
+T3	Lesion-Anatomy 511 531	anterior mediastinal
+T4	Lesion-Description 533 537	mass
+T5	Lesion-Size-Trend 540 555	Interval change
+A1	Lesion-Size-TrendValue T5 increasing
+T6	Lesion-Anatomy 575 592	right mediastinal
+T7	Lesion-Description 593 597	mass
+T8	Lesion-Description 734 738	mass
+T9	Lesion-Size-Trend 739 746;748 762	appears grossly larger
+A2	Lesion-Size-TrendValue T9 increasing
+T10	Medical-Problem 867 888	bibasilar atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Problem 891 898;900 917	Stable, mild cardiomegaly
+E9	Medical-Problem:T11
+T12	Medical-Assertion 952 954	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 955 967	pneumothorax
+T14	Medical-Problem 971 978;980 988	pleural effusion
+T15	Lesion-Anatomy 1009 1014	Right
+T16	Lesion-Description 1040 1044	mass
+T17	Lesion-Size-Trend 1053 1067	grossly larger
+A4	Lesion-Size-TrendValue T17 increasing
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Lesion-Description:T7 has-Lesion-Size-Trend:T5 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T8 has-Lesion-Size-Trend:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Lesion-Description:T16 has-Lesion-Anatomy:T15 has-Lesion-Size-Trend:T17

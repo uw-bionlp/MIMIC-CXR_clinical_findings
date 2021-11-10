@@ -1,0 +1,39 @@
+T1	Medical-Problem 277 307	left apical pleural thickening
+E1	Medical-Problem:T1
+T2	Medical-Problem 312 320	scarring
+T3	Medical-Problem 326 343;345 349	associated volume loss
+T4	Medical-Problem 354 373	superior retraction
+T5	Medical-Anatomy 381 391	left hilum
+T6	Lesion-Characteristic 394 403	Calcified
+T7	Lesion-Anatomy 404 414	left hilar
+T8	Lesion-Description 415 420	nodes
+T9	Medical-Problem 440 463	New perihilar opacities
+T10	Medical-Anatomy 481 499;501 505	right greater than left
+T11	Medical-Problem 517 525	blunting
+T12	Medical-Anatomy 533 565	right lateral costophrenic angle
+T13	Medical-Assertion 566 576	suggesting
+A1	Medical-AssertionValue T13 possible
+T14	Medical-Problem 578 597	underlying effusion
+T15	Medical-Problem 700 727	Severe degenerative changes
+T16	Medical-Anatomy 742 763	shoulders bilaterally
+T17	Medical-Problem 821 869	Perihilar opacities, right greater than the left
+E16	Medical-Problem:T17
+T18	Medical-Problem 877 890;892 900	right pleural effusion
+E17	Medical-Problem:T18
+T19	Medical-Assertion 916 929	suggestive of
+A2	Medical-AssertionValue T19 possible
+T20	Medical-Problem 930 945	pulmonary edema
+T21	Medical-Problem 958 967	infection
+T22	Medical-Problem 994 1009	Chronic changes
+T23	Medical-Anatomy 1024 1038	left lung apex
+E2	Medical-Problem:T2 has-Medical-Anatomy:T5
+E3	Medical-Problem:T3 has-Medical-Anatomy:T5
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E8	Lesion-Description:T8 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16
+E18	Medical-Problem:T20 has-Medical-Assertion:T19
+E19	Medical-Problem:T21 has-Medical-Assertion:T19
+E20	Medical-Problem:T22 has-Medical-Anatomy:T23

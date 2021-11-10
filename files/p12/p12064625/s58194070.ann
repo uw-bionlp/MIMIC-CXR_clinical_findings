@@ -1,0 +1,25 @@
+T1	Medical-Assertion 469 471	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 472 488	pleural effusion
+T3	Medical-Problem 492 504	pneumothorax
+T4	Medical-Problem 538 561	Heterogeneous opacities
+T5	Medical-Anatomy 569 579	lung bases
+T6	Medical-Anatomy 610 624	left lung base
+T7	Medical-Problem 629 637	worsened
+T8	Medical-Anatomy 645 660	right lung base
+T9	Medical-Assertion 665 676	may reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 677 683;685 695	recent aspiration
+T11	Medical-Problem 699 714	pulmonary edema
+T12	Medical-Problem 735 768	Heterogeneous bibasilar opacities
+E10	Medical-Problem:T12
+T13	Medical-Problem 807 813;815 825	recent aspiration
+E11	Medical-Problem:T13
+T14	Medical-Problem 829 844	pulmonary edema
+E12	Medical-Problem:T14
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

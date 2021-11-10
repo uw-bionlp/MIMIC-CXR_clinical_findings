@@ -1,0 +1,27 @@
+T1	Medical-Problem 296 318	Mild septal thickening
+T2	Medical-Anatomy 320 350	scattered throughout the lungs
+T3	Medical-Problem 391 424	decrease in pulmonary vascularity
+T4	Medical-Anatomy 432 443	lower lungs
+T5	Medical-Assertion 465 473	suggests
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 489 498	emphysema
+T7	Medical-Assertion 509 511	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 512 515;517 530	new consolidation
+T9	Medical-Problem 532 542	nodulation
+T10	Medical-Problem 547 555	scarring
+T11	Lesion-Description 565 576	lymph nodes
+T12	Lesion-Assertion 581 584	not
+A3	Lesion-AssertionValue T12 absent
+T13	Lesion-Characteristic 585 593	enlarged
+T14	Medical-Assertion 608 610	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 611 627	pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

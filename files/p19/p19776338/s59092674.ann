@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 333 338	Lungs
+T2	Medical-Problem 352 373	stable hyperinflation
+T3	Medical-Assertion 374 381	without
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 382 389	paucity
+T5	Medical-Anatomy 397 413	upper lung zones
+T6	Medical-Problem 425 429	COPD
+T7	Medical-Assertion 450 452	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 453 469	pleural effusion
+T9	Medical-Problem 473 485	pneumothorax
+T10	Medical-Problem 511 541	Stable hyperinflation of lungs
+E8	Medical-Problem:T10
+T11	Medical-Assertion 544 546	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 547 567	focal opacifications
+T13	Medical-Problem 625 649;651 658	subtle interstitial lung disease
+E10	Medical-Problem:T13
+T14	Lesion-Description 676 683	lesions
+E11	Lesion-Description:T14
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Assertion:T3 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

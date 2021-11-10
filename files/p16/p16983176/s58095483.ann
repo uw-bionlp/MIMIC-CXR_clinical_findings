@@ -1,0 +1,19 @@
+T1	Medical-Problem 255 296	Consolidation containing air bronchograms
+T2	Medical-Anatomy 304 320	right lower lung
+T3	Medical-Problem 326 333;335 346	partial obscuration
+T4	Medical-Anatomy 354 372	right heart border
+T5	Medical-Anatomy 377 404	lateral right hemidiaphragm
+T6	Medical-Assertion 405 413	suggests
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 415 463	right middle lobe and right lower lobe pneumonia
+T8	Medical-Problem 561 569	obscured
+E7	Medical-Problem:T8
+T9	Medical-Problem 574 605	right middle lobe consolidation
+E8	Medical-Problem:T9
+T10	Medical-Assertion 626 632	Likely
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 633 675	right middle lobe and lower lobe pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

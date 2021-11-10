@@ -1,0 +1,22 @@
+T1	Medical-Problem 306 325	mild loss of volume
+T2	Medical-Anatomy 333 348	left lower lobe
+T3	Medical-Problem 357 367;369 382	infrahilar consolidation
+T4	Medical-Anatomy 577 582	Lungs
+T5	Medical-Assertion 597 602	clear
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 607 624	focal abnormality
+T7	Medical-Problem 636 653	mild cardiomegaly
+E6	Medical-Problem:T7
+T8	Medical-Assertion 678 680	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 682 698	pleural effusion
+T10	Lesion-Characteristic 702 710	evidence
+T11	Lesion-Characteristic 714 721	central
+T12	Lesion-Description 722 732	lymph node
+T13	Medical-Problem 770 800	coronary artery calcifications
+E11	Medical-Problem:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11

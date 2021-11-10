@@ -1,0 +1,30 @@
+T1	Medical-Assertion 288 290	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 291 303	pneumothorax
+T3	Medical-Problem 329 367	persisting small left pleural effusion
+E2	Medical-Problem:T3
+T4	Medical-Problem 373 394	subjacent atelectasis
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 402 412	right lung
+T6	Medical-Assertion 426 428	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 429 442	consolidation
+T8	Medical-Problem 444 460	pleural effusion
+T9	Medical-Problem 464 476	pneumothorax
+T10	Medical-Problem 484 526	size of the cardiac silhouette is enlarged
+E8	Medical-Problem:T10
+T11	Medical-Problem 626 633;635 645	Gaseous distention
+T12	Medical-Anatomy 653 660	stomach
+T13	Medical-Assertion 726 728	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 729 741	pneumothorax
+T15	Medical-Problem 757 794	Unchanged small left pleural effusion
+E12	Medical-Problem:T15
+T16	Medical-Problem 800 821	subjacent atelectasis
+E13	Medical-Problem:T16
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

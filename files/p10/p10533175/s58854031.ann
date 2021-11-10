@@ -1,0 +1,24 @@
+T1	Medical-Problem 227 241	Linear opacity
+T2	Medical-Anatomy 249 264	right lung base
+T3	Medical-Assertion 268 283;285 287	most suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 288 299	atelectasis
+T5	Medical-Anatomy 302 307	Lungs
+T6	Medical-Problem 321 344	confluent consolidation
+T7	Medical-Problem 348 357;359 378	pulmonary vascular congestion
+T8	Medical-Assertion 472 486	no longer seen
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 640 661	Right basilar opacity
+E7	Medical-Problem:T9
+T10	Medical-Assertion 662 680	most suggestive of
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 681 692	atelectasis
+T12	Medical-Problem 707 716	infection
+T13	Medical-Assertion 717 735	cannot be excluded
+A4	Medical-AssertionValue T13 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T13

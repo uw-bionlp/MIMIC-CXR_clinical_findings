@@ -1,0 +1,30 @@
+T1	Medical-Problem 409 431	right pleural effusion
+T2	Medical-Problem 436 459	compressive atelectasis
+T3	Medical-Anatomy 467 477	right lung
+T4	Medical-Assertion 558 571	suggestion of
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 572 602	pulmonary vascular engorgement
+T6	Medical-Assertion 603 610	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 611 622	frank edema
+T8	Medical-Problem 625 629;631 650	Left basilar atelectasis
+E6	Medical-Problem:T8
+T9	Medical-Assertion 670 683	possibly with
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 686 699	tiny effusion
+T11	Medical-Assertion 712 714	no
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 715 727	pneumothorax
+T13	Medical-Anatomy 735 744	left lung
+T14	Medical-Problem 751 779	right upper lung is obscured
+E10	Medical-Problem:T14
+T15	Medical-Problem 783 817	Postoperative mediastinal widening
+E11	Medical-Problem:T15
+T16	Medical-Anatomy 836 843	cardiac
+E12	Medical-Anatomy:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13

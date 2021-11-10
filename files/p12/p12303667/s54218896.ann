@@ -1,0 +1,17 @@
+T1	Medical-Assertion 218 220	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 222 238	pleural effusion
+T3	Medical-Problem 242 254	pneumothorax
+T4	Medical-Problem 326 358	Diffuse interstitial abnormality
+E3	Medical-Problem:T4
+T5	Lesion-Size 364 369	small
+T6	Lesion-Description 370 377	nodules
+T7	Medical-Problem 470 504	Diffuse interstitial abnormalities
+E6	Medical-Problem:T7
+T8	Lesion-Description 512 519	nodules
+T9	Lesion-Size-Trend 526 528;530 553	no appreciable progression
+A2	Lesion-Size-TrendValue T9 no-change
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T5
+E7	Lesion-Description:T8 has-Lesion-Size-Trend:T9

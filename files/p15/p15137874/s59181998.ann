@@ -1,0 +1,47 @@
+T1	Medical-Problem 307 343	Inspiratory volumes are slightly low
+E1	Medical-Problem:T1
+T2	Medical-Problem 369 381;383 391	heart is not enlarged
+E2	Medical-Problem:T2
+T3	Medical-Problem 394 402	Aorta is
+E3	Medical-Problem:T3
+T4	Medical-Problem 403 421	minimally unfolded
+E4	Medical-Problem:T4
+T5	Medical-Assertion 424 426	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 427 430	CHF
+T7	Medical-Problem 432 448	focal infiltrate
+T8	Medical-Problem 453 465	pneumothorax
+T9	Medical-Assertion 480 482	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 483 499	pleural effusion
+T11	Medical-Assertion 516 518	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 519 527	free air
+T13	Medical-Anatomy 546 556	diaphragms
+T14	Lesion-Description 563 578	nodular density
+T15	Lesion-Size 603 609	6.5 mm
+T16	Lesion-Anatomy 648 673	right lung base laterally
+T17	Lesion-Characteristic 752 761	calcified
+T18	Lesion-Description 762 771	granuloma
+T19	Lesion-Anatomy 790 795;797 806	right lung base
+T20	Medical-Assertion 1057 1059	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1060 1083	acute pulmonary process
+T22	Medical-Assertion 1112 1114	no
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1115 1131	pleural effusion
+T24	Lesion-Description 1147 1162	Nodular density
+T25	Lesion-Anatomy 1170 1185	right lung base
+T26	Lesion-Characteristic 1202 1211	calcified
+T27	Lesion-Description 1212 1221	granuloma
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E11	Lesion-Description:T14 has-Lesion-Size-Present:T15 has-Lesion-Anatomy:T16
+E15	Lesion-Description:T18 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T19
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T23 has-Medical-Assertion:T22
+E19	Lesion-Description:T24 has-Lesion-Anatomy:T25
+E22	Lesion-Description:T27 has-Lesion-Anatomy:T25 has-Lesion-Characteristic:T26

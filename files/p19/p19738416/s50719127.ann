@@ -1,0 +1,16 @@
+T1	Medical-Assertion 377 379	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 380 396	pleural effusion
+T3	Medical-Problem 400 412	pneumothorax
+T4	Medical-Problem 431 503	unchanged mild to moderate relative elevation of the right hemidiaphragm
+E3	Medical-Problem:T4
+T5	Lesion-Characteristic 527 540	rim-calcified
+T6	Lesion-Description 541 546	cysts
+T7	Lesion-Anatomy 572 585;587 591	right hepatic dome
+T8	Medical-Assertion 637 648	No evidence
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 652 681	acute cardiopulmonary disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

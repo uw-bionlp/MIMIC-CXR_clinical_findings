@@ -1,0 +1,31 @@
+T1	Lesion-Count 302 310	numerous
+T2	Lesion-Characteristic 311 322	soft tissue
+T3	Lesion-Description 324 331	nodules
+T4	Lesion-Anatomy 347 364	lungs bilaterally
+T5	Lesion-Anatomy 447 474;476 482	adjacent to the right heart border
+E5	Lesion-Anatomy:T5
+T6	Medical-Problem 499 520	heterogeneous opacity
+E6	Medical-Problem:T6
+T7	Medical-Problem 556 572	Increase opacity
+T8	Medical-Anatomy 580 595	right lung base
+T9	Medical-Problem 650 672	superimposed infection
+T10	Medical-Assertion 673 702	would be difficult to exclude
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 803 805	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 806 818	pneumothorax
+T13	Medical-Problem 821 840	Large hiatal hernia
+E11	Medical-Problem:T13
+T14	Lesion-Count 875 883	Numerous
+T15	Lesion-Anatomy 884 893	pulmonary
+T16	Lesion-Description 894 904	metastases
+T17	Lesion-Anatomy 917 939	right lower lung field
+T18	Medical-Problem 946 968	superimposed infection
+T19	Medical-Assertion 969 987	cannot be excluded
+A3	Medical-AssertionValue T19 possible
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T8 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E14	Lesion-Description:T16 has-Lesion-Count:T14 has-Lesion-Anatomy:T15 has-Lesion-Anatomy:T17
+E16	Medical-Problem:T18 has-Medical-Assertion:T19

@@ -1,0 +1,39 @@
+T1	Medical-Problem 274 283	elevation
+T2	Medical-Anatomy 291 310	right hemidiaphragm
+T3	Medical-Problem 315 329	chronic change
+T4	Medical-Anatomy 344 374	right mid to lower hemi thorax
+T5	Medical-Problem 381 402	pleural calcification
+E5	Medical-Problem:T5
+T6	Medical-Problem 447 468	Subtle patchy opacity
+T7	Medical-Anatomy 477 499	lateral left lung base
+T8	Medical-Problem 514 521	overlap
+T9	Medical-Problem 547 552;554 576	small focus of consolidation
+T10	Medical-Assertion 580 600	difficult to exclude
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Assertion 603 605	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 606 622	pleural effusion
+T13	Medical-Problem 627 639	pneumothorax
+T14	Medical-Problem 720 741	Subtle patchy opacity
+T15	Medical-Anatomy 749 771	lateral left lung base
+T16	Medical-Problem 802 809	overlap
+E14	Medical-Problem:T16
+T17	Medical-Problem 833 861	small focus of consolidation
+T18	Medical-Assertion 865 877;879 886	difficult to exclude
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Assertion 906 917	no evidence
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 921 936	lobar pneumonia
+T21	Medical-Problem 970 984	Chronic change
+T22	Medical-Anatomy 992 1022	right mid to lower hemi thorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22

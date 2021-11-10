@@ -1,0 +1,28 @@
+T1	Medical-Problem 91 109;111 120	large left pleural  effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 125 149	left lower lobe collapse
+E2	Medical-Problem:T2
+T3	Medical-Problem 181 190;192 200	Increased  opacity
+T4	Medical-Anatomy 208 229	left perihilar region
+T5	Medical-Assertion 287 302	could relate to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 303 314	atelectasis
+T7	Medical-Problem 374 409	redemonstration of pneumoperitoneum
+E6	Medical-Problem:T7
+T8	Medical-Problem 874 901	Bilateral pleural effusions
+E7	Medical-Problem:T8
+T9	Medical-Problem 941 952	Atelectasis
+T10	Medical-Anatomy 960 970	left lower
+T11	Medical-Anatomy 1021 1032	right chest
+E10	Medical-Anatomy:T11
+T12	Medical-Assertion 1057 1059	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 1061 1084	definitive pneumothorax
+T14	Medical-Problem 1111 1123	small amount
+T15	Medical-Assertion 1124 1133;1135 1143	cannot be excluded
+A3	Medical-AssertionValue T15 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12 has-Medical-Assertion:T15
+E12	Medical-Problem:T14 has-Medical-Assertion:T15

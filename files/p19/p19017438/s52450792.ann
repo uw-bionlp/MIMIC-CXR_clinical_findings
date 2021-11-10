@@ -1,0 +1,26 @@
+T1	Medical-Assertion 250 252	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 253 260;262 270	pleural effusion
+T3	Medical-Problem 274 286	pneumothorax
+T4	Lesion-Characteristic 376 382	subtle
+T5	Lesion-Size 383 389	1.8-cm
+T6	Lesion-Characteristic 390 399	sclerotic
+T7	Lesion-Description 400 405	focus
+T8	Lesion-Anatomy 427 451	anterior right fifth rib
+T9	Lesion-Size-Trend 455 461	stable
+A2	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Problem 530 555	Mild degenerative changes
+E8	Medical-Problem:T10
+T11	Medical-Problem 593 609	relative lucency
+T12	Medical-Anatomy 630 644;646 660	inferior right scapular spine
+T13	Medical-Assertion 825 827	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 828 857	acute cardiopulmonary process
+T15	Medical-Problem 862 878	Relative lucency
+T16	Medical-Anatomy 899 928	inferior right scapular spine
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T4 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16

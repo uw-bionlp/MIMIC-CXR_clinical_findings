@@ -1,0 +1,33 @@
+T1	Medical-Problem 310 319	fractured
+E1	Medical-Problem:T1
+T2	Medical-Problem 472 516	bilateral asymmetric parenchymal abnormality
+T3	Medical-Anatomy 554 571	right hemi thorax
+T4	Medical-Problem 624 677	recurrent left lower lobe heterogeneous consolidation
+E4	Medical-Problem:T4
+T5	Medical-Assertion 678 692;694 697	raises concern for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 698 728	recurrent aspiration pneumonia
+T7	Lesion-Characteristic 747 760	somewhat more
+T8	Lesion-Characteristic 761 768	nodular
+T9	Lesion-Description 770 775	focus
+T10	Lesion-Anatomy 776 805	just below the right clavicle
+T11	Medical-Assertion 808 810	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 811 827	pleural effusion
+T13	Medical-Problem 831 843	pneumothorax
+T14	Medical-Problem 877 930	Recurrent left lower lobe heterogeneous consolidation
+E12	Medical-Problem:T14
+T15	Medical-Assertion 932 946	concerning for
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 948 978	recurrent aspiration pneumonia
+T17	Lesion-Anatomy 1032 1048	right upper lobe
+T18	Lesion-Characteristic 1066 1073	nodular
+T19	Lesion-Description 1074 1081	opacity
+T20	Lesion-Anatomy 1082 1111	just below the right clavicle
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Characteristic:T8 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Lesion-Description:T19 has-Lesion-Anatomy:T17 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T20

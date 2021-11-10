@@ -1,0 +1,34 @@
+T1	Medical-Problem 259 282	lungs are hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Assertion 294 296	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 297 313	pleural effusion
+T4	Medical-Problem 315 330	pulmonary edema
+T5	Medical-Problem 333 345	pneumothorax
+T6	Medical-Problem 350 369	focal consolidation
+T7	Medical-Assertion 370 380	concerning
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 385 394	pneumonia
+T9	Lesion-Size 397 402	Small
+T10	Lesion-Characteristic 404 413	calcified
+T11	Lesion-Description 414 424	granulomas
+T12	Lesion-Anatomy 442 452	right apex
+T13	Medical-Problem 455 472	Focal linear scar
+T14	Medical-Problem 477 488	atelectasis
+T15	Medical-Anatomy 505 537	periphery of the right lung base
+T16	Medical-Problem 540 548;550 564	Tortuous thoracic aorta
+E14	Medical-Problem:T16
+T17	Medical-Problem 570 609	extensive atherosclerotic calcification
+E15	Medical-Problem:T17
+T18	Medical-Assertion 699 701	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 702 731	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T2
+E6	Medical-Problem:T8 has-Medical-Assertion:T2 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T15
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

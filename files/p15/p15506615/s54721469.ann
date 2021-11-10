@@ -1,0 +1,45 @@
+T1	Medical-Assertion 202 209	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 211 227	pleural effusion
+T3	Medical-Problem 229 248	focal consolidation
+T4	Medical-Problem 252 264	pneumothorax
+T5	Medical-Assertion 357 359	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 361 376	pulmonary edema
+T7	Medical-Problem 381 399	9-mm ovoid density
+E5	Medical-Problem:T7
+T8	Medical-Problem 408 417	calcified
+T9	Medical-Anatomy 434 439;441 450	right lung apex
+T10	Lesion-Assertion 452 455	may
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 468 477	calcified
+T12	Lesion-Description 478 487	granuloma
+T13	Medical-Problem 490 519;521 548	Prominent air-filled loops of bowel with air-fluid levels
+E10	Medical-Problem:T13
+T14	Medical-Assertion 606 617	No evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 621 650	acute cardiopulmonary process
+T16	Lesion-Size 661 665	9-mm
+T17	Lesion-Description 666 673	opacity
+T18	Medical-Anatomy 690 695	right
+E14	Medical-Anatomy:T18
+T19	Lesion-Assertion 706 719	may represent
+A5	Lesion-AssertionValue T19 possible
+T20	Lesion-Characteristic 720 729	calcified
+T21	Lesion-Description 731 740	granuloma
+T22	Lesion-Anatomy 752 761	pulmonary
+T23	Lesion-Description 762 768	nodule
+T24	Lesion-Assertion 769 781	not excluded
+A6	Lesion-AssertionValue T24 possible
+T25	Medical-Problem 850 897	Air-filled loops of bowel with air-fluid levels
+E19	Medical-Problem:T25
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Lesion-Description:T17 has-Lesion-Size-Present:T16
+E16	Lesion-Description:T21 has-Lesion-Assertion:T19 has-Lesion-Characteristic:T20
+E18	Lesion-Description:T23 has-Lesion-Anatomy:T22 has-Lesion-Assertion:T24

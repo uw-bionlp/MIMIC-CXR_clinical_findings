@@ -1,0 +1,38 @@
+T1	Medical-Problem 141 169	new small right pneumothorax
+T2	Medical-Anatomy 177 182;184 193	right lung apex
+T3	Lesion-Size 200 205	large
+T4	Lesion-Anatomy 206 224	right paratracheal
+T5	Lesion-Description 225 229	mass
+T6	Medical-Problem 236 254	leftward deviation
+T7	Medical-Anatomy 263 270	trachea
+T8	Medical-Problem 279 290	atelectasis
+T9	Medical-Problem 295 307	hazy opacity
+T10	Medical-Anatomy 315 325	right base
+T11	Medical-Problem 332 340;342 370	slightly elevated right hemidiaphragm
+E11	Medical-Problem:T11
+T12	Lesion-Size-Trend 376 397	essentially unchanged
+A1	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 411 417	may be
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 419 455	very minimally displaced to the left
+T15	Medical-Problem 487 506	minimal atelectasis
+T16	Medical-Anatomy 514 523	left base
+T17	Medical-Problem 526 554;556 571	Slight asymmetric upper zone re-distribution
+E15	Medical-Problem:T17
+T18	Medical-Assertion 590 597	without
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 598 607	overt CHF
+T20	Lesion-Size 616 622	1.5 mm
+T21	Lesion-Anatomy 623 645	right apical pulmonary
+T22	Lesion-Description 646 652	nodule
+T23	Medical-Problem 739 770	Small right apical pneumothorax
+E20	Medical-Problem:T23
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T12
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T10
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E19	Lesion-Description:T22 has-Lesion-Size-Present:T20 has-Lesion-Anatomy:T21

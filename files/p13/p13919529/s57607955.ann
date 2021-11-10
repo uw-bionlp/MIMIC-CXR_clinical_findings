@@ -1,0 +1,49 @@
+T1	Medical-Assertion 37 50	worrisome for
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 51 68	pneumomediastinum
+T3	Medical-Problem 140 161	right basilar opacity
+T4	Medical-Assertion 162 175	may be due to
+A2	Medical-AssertionValue T4 possible
+T5	Medical-Problem 176 187	atelectasis
+T6	Medical-Problem 197 207;209 217	infectious  process
+T7	Medical-Assertion 221 233	not excluded
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 649 677	Subtle right basilar opacity
+E5	Medical-Problem:T8
+T9	Medical-Problem 692 703	atelectasis
+E6	Medical-Problem:T9
+T10	Medical-Problem 713 723;725 732	infectious process
+T11	Medical-Assertion 736 748	not excluded
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Assertion 812 814	No
+A5	Medical-AssertionValue T12 absent
+T13	Medical-Problem 815 822	pleural
+E8	Medical-Problem:T13
+T14	Medical-Problem 823 831	effusion
+T15	Medical-Problem 835 847	pneumothorax
+T16	Medical-Problem 858 872	Subtle lucency
+T17	Medical-Anatomy 884 895	mediastinum
+T18	Medical-Anatomy 916 951;953 964	upper left cardiac border and upper mediastinum
+T19	Medical-Assertion 968 982	concerning for
+A6	Medical-AssertionValue T19 possible
+T20	Medical-Problem 983 1000	pneumomediastinum
+T21	Medical-Problem 1003 1022	Mediastinal lucency
+E15	Medical-Problem:T21
+T22	Medical-Anatomy 1059 1066	cardiac
+T23	Medical-Assertion 1081 1084	not
+A7	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1085 1093	enlarged
+T25	Medical-Assertion 1123 1132	worrisome
+A8	Medical-AssertionValue T25 possible
+T26	Medical-Problem 1137 1154	pneumomediastinum
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T7
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T12
+E11	Medical-Problem:T16 has-Medical-Anatomy:T17 has-Medical-Anatomy:T18
+E14	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T24 has-Medical-Anatomy:T22 has-Medical-Assertion:T23
+E18	Medical-Problem:T26 has-Medical-Assertion:T25

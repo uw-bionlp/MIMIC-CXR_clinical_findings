@@ -1,0 +1,29 @@
+T1	Medical-Problem 208 252	Small right, moderate left pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 305 310	Edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 345 357	redeveloping
+T4	Medical-Anatomy 365 380	left upper lung
+T5	Lesion-Size 383 388	15 mm
+T6	Lesion-Anatomy 389 405	right upper lobe
+T7	Lesion-Description 406 412	nodule
+T8	Lesion-Description 434 438	mass
+T9	Lesion-Anatomy 446 464	left apex medially
+T10	Lesion-Assertion 469 486	presumably due to
+A1	Lesion-AssertionValue T10 possible
+T11	Lesion-Description 501 510	carcinoma
+T12	Medical-Problem 513 530	Consolidated lung
+T13	Medical-Anatomy 538 577	infrahilar portions of both lower lobes
+T14	Medical-Problem 624 635	atelectasis
+E13	Medical-Problem:T14
+T15	Medical-Problem 646 666	concurrent pneumonia
+E14	Medical-Problem:T15
+T16	Medical-Assertion 703 705	No
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 706 718	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T6
+E8	Lesion-Description:T8 has-Lesion-Anatomy:T9
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T9 has-Lesion-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16

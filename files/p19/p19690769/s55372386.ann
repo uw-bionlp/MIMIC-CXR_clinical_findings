@@ -1,0 +1,32 @@
+T1	Lesion-Characteristic 468 473	lytic
+T2	Lesion-Anatomy 474 489	left fourth rib
+T3	Lesion-Description 490 496	lesion
+T4	Lesion-Size-Trend 501 507	stable
+A1	Lesion-Size-TrendValue T4 no-change
+T5	Lesion-Characteristic 516 521	lytic
+T6	Lesion-Description 522 529	lesions
+T7	Lesion-Anatomy 537 554	left humeral head
+T8	Medical-Problem 607 625	interstitial edema
+E7	Medical-Problem:T8
+T9	Medical-Problem 650 677	more focal patchy opacities
+E8	Medical-Problem:T9
+T10	Medical-Anatomy 755 770	left lower lung
+E9	Medical-Anatomy:T10
+T11	Medical-Anatomy 772 788	right lower lung
+E10	Medical-Anatomy:T11
+T12	Medical-Anatomy 801 844	right upper lobe abutting the minor fissure
+E11	Medical-Anatomy:T12
+T13	Medical-Assertion 872 887	could represent
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 888 902	residual edema
+T15	Medical-Problem 904 924	multifocal pneumonia
+T16	Medical-Assertion 925 939;941 951	should also be considered
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Assertion 988 990	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 991 1003	pneumothorax
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Trend:T4
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E12	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Assertion:T16
+E13	Medical-Problem:T15 has-Medical-Assertion:T13 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

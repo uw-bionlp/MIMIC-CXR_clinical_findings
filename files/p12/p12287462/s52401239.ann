@@ -1,0 +1,59 @@
+T1	Medical-Problem 407 414;416 433	gaseous distention of the
+T2	Medical-Anatomy 434 441	stomach
+T3	Medical-Problem 472 477	aorta
+E3	Medical-Problem:T3
+T4	Medical-Problem 481 489	tortuous
+T5	Medical-Problem 507 522;524 538	atherosclerotic calcifications
+T6	Medical-Anatomy 550 554	arch
+T7	Medical-Problem 556 566	Prominence
+T8	Medical-Anatomy 574 585	right hilum
+T9	Medical-Problem 610 624	linear opacity
+T10	Medical-Anatomy 638 664	minor fissure on the right
+T11	Medical-Problem 682 710	right upper lobe atelectasis
+T12	Medical-Problem 712 718	Patchy
+E12	Medical-Problem:T12
+T13	Medical-Problem 719 728	opacities
+E13	Medical-Problem:T13
+T14	Medical-Anatomy 736 752	right upper lobe
+T15	Medical-Assertion 754 767	could reflect
+A1	Medical-AssertionValue T15 possible
+T16	Medical-Problem 768 799	mild asymmetric pulmonary edema
+T17	Medical-Problem 807 816	infection
+T18	Medical-Assertion 820 823;825 833	not excluded
+A2	Medical-AssertionValue T18 possible
+T19	Medical-Assertion 835 837	No
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 838 857	focal consolidation
+T21	Medical-Problem 859 875	pleural effusion
+T22	Medical-Problem 879 891	pneumothorax
+T23	Medical-Problem 928 938	Multilevel
+E20	Medical-Problem:T23
+T24	Medical-Problem 939 959	degenerative changes
+T25	Medical-Anatomy 978 992	thoracic spine
+T26	Medical-Problem 1079 1092;1094 1105	distention of the stomach
+E23	Medical-Problem:T26
+T27	Medical-Problem 1126 1148	upper lobe atelectasis
+E24	Medical-Problem:T27
+T28	Medical-Problem 1161 1168	opacity
+E25	Medical-Problem:T28
+T29	Medical-Anatomy 1176 1192	right upper lobe
+T30	Medical-Assertion 1193 1206	could reflect
+A4	Medical-AssertionValue T30 possible
+T31	Medical-Problem 1207 1227;1229 1234	asymmetric pulmonary edema
+T32	Medical-Problem 1239 1248	infection
+T33	Medical-Assertion 1252 1264	not excluded
+A5	Medical-AssertionValue T33 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T6
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T9 has-Medical-Anatomy:T10
+E11	Medical-Problem:T11 has-Medical-Anatomy:T10
+E15	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E16	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T15 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T21 has-Medical-Assertion:T19
+E19	Medical-Problem:T22 has-Medical-Assertion:T19
+E21	Medical-Problem:T24 has-Medical-Anatomy:T25
+E27	Medical-Problem:T31 has-Medical-Anatomy:T29 has-Medical-Assertion:T30
+E28	Medical-Problem:T32 has-Medical-Anatomy:T29 has-Medical-Assertion:T30 has-Medical-Assertion:T33

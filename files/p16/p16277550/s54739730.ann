@@ -1,0 +1,30 @@
+T1	Medical-Anatomy 175 180	Lungs
+T2	Medical-Problem 185 207	slightly low in volume
+T3	Medical-Problem 213 220	opacity
+T4	Medical-Anatomy 229 245	right upper lobe
+T5	Medical-Assertion 246 260	concerning for
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 261 287	early developing pneumonia
+T7	Medical-Assertion 290 292	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 293 305;307 316	interstitial opacities
+T9	Medical-Problem 360 365	edema
+T10	Medical-Assertion 377 379	no
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 381 397	pleural effusion
+T12	Medical-Problem 401 413	pneumothorax
+T13	Medical-Problem 420 437	heart is enlarged
+E10	Medical-Problem:T13
+T14	Medical-Problem 496 519	tortuous thoracic aorta
+E11	Medical-Problem:T14
+T15	Medical-Problem 522 525;527 547	T12 compression fracture
+E12	Medical-Problem:T15
+T16	Medical-Problem 583 629	Early or developing right upper lobe pneumonia
+E13	Medical-Problem:T16
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10

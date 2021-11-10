@@ -1,0 +1,24 @@
+T1	Medical-Problem 260 280	Asymmetric pulmonary
+E1	Medical-Problem:T1
+T2	Medical-Problem 281 303	edema much more severe
+T3	Medical-Anatomy 311 321	right lung
+T4	Medical-Anatomy 348 359	Right basal
+T5	Medical-Problem 360 373	consolidation
+T6	Medical-Assertion 382 388	likely
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 389 400	atelectasis
+T8	Medical-Problem 437 446	pneumonia
+T9	Medical-Problem 471 473	is
+E8	Medical-Problem:T9
+T10	Medical-Problem 474 482	engorged
+E9	Medical-Problem:T10
+T11	Medical-Problem 512 528	Pleural effusion
+E10	Medical-Problem:T11
+T12	Medical-Assertion 557 559	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 561 573	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

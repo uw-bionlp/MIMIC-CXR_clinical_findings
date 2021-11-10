@@ -1,0 +1,29 @@
+T1	Medical-Problem 292 303	enlargement
+T2	Medical-Anatomy 311 339	cardiomediastinal silhouette
+T3	Medical-Problem 390 397	Diffuse
+E3	Medical-Problem:T3
+T4	Medical-Problem 398 425;427 445	increased lung opacity left greater than right
+E4	Medical-Problem:T4
+T5	Medical-Assertion 497 503	may be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 507 534	component of fluid overload
+T7	Medical-Assertion 546 548	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 549 565	pleural effusion
+T9	Medical-Problem 569 581	pneumothorax
+T10	Medical-Problem 818 830	lung opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 832 846	may be related
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 850 866	low lung volumes
+T13	Medical-Assertion 918 926	possible
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Assertion 929 931	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 932 941	effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

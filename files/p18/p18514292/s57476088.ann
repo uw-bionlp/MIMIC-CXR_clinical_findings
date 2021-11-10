@@ -1,0 +1,33 @@
+T1	Medical-Assertion 115 123	Consider
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 124 137;139 150	intrathoracic abnormality
+T3	Medical-Problem 464 483;485 490	generally distended colon
+T4	Medical-Anatomy 509 539	right upper abdominal quadrant
+T5	Medical-Problem 573 589	pneumoperitoneum
+E4	Medical-Problem:T5
+T6	Medical-Assertion 646 652	may be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 653 663	herniation
+T8	Medical-Anatomy 669 687	loop of bowel in a
+T9	Medical-Problem 775 792	New opacification
+T10	Medical-Anatomy 801 827	infrahilar left lower lobe
+T11	Medical-Problem 838 849	atelectasis
+T12	Medical-Problem 853 866	consolidation
+T13	Medical-Problem 875 884	pneumonia
+T14	Medical-Problem 918 939	moderate cardiomegaly
+E12	Medical-Problem:T14
+T15	Medical-Problem 952 969	azygos distention
+E13	Medical-Problem:T15
+T16	Medical-Assertion 972 974	No
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 975 987	pneumothorax
+T18	Medical-Problem 990 1011	Pleural effusions are
+E15	Medical-Problem:T18
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10
+E14	Medical-Problem:T17 has-Medical-Assertion:T16

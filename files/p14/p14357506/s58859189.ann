@@ -1,0 +1,16 @@
+T1	Medical-Problem 271 288	nearly opacifying
+T2	Medical-Anatomy 293 310	entire right lung
+T3	Medical-Problem 322 332;334 351	associated mediastinal shift
+E3	Medical-Problem:T3
+T4	Lesion-Count 354 362	Numerous
+T5	Lesion-Anatomy 363 372	pulmonary
+T6	Lesion-Description 373 380	nodules
+T7	Lesion-Anatomy 396 410;412 421	throughout the left lung
+T8	Medical-Assertion 424 426	No
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 427 446	left-sided effusion
+T10	Medical-Problem 467 493	Large right-sided effusion
+E9	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Count:T4 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8

@@ -1,0 +1,22 @@
+T1	Medical-Anatomy 213 218	Lungs
+T2	Medical-Problem 224 237	hyperinflated
+T3	Medical-Assertion 238 245	without
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 246 265	focal consolidation
+T5	Medical-Problem 267 275	effusion
+T6	Medical-Problem 280 292	pneumothorax
+T7	Medical-Assertion 366 368	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 369 373;375 378	free air
+T9	Medical-Anatomy 389 408	right hemidiaphragm
+T10	Medical-Problem 426 445	Hyperinflated lungs
+E8	Medical-Problem:T10
+T11	Medical-Assertion 446 453	without
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 454 481	acute intrathoracic process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7 has-Medical-Anatomy:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

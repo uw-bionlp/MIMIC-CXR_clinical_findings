@@ -1,0 +1,42 @@
+T1	Medical-Problem 285 319	bilateral hazy perihilar opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 360 381	focal rounded opacity
+T3	Medical-Anatomy 421 432	lower lobes
+T4	Lesion-Description 498 513	nodular opacity
+T5	Lesion-Anatomy 532 566	anterior right third rib laterally
+T6	Lesion-Size-Trend 568 571	new
+A1	Lesion-Size-TrendValue T6 new
+T7	Medical-Problem 621 632	rib changes
+E6	Medical-Problem:T7
+T8	Medical-Problem 636 646;648 671	underlying parenchymal abnormality
+E7	Medical-Problem:T8
+T9	Medical-Assertion 683 685	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 686 708	large pleural effusion
+T11	Medical-Assertion 805 807	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 808 835	acute osseous abnormalities
+T13	Medical-Problem 855 884	Bilateral perihilar opacities
+E10	Medical-Problem:T13
+T14	Medical-Assertion 901 919	potentially due to
+A4	Medical-AssertionValue T14 possible
+T15	Medical-Problem 920 925	edema
+T16	Medical-Problem 928 937	infection
+T17	Lesion-Description 945 955	malignancy
+E13	Lesion-Description:T17
+T18	Medical-Problem 988 1006	More focal opacity
+T19	Medical-Anatomy 1027 1041	lower lobes on
+T20	Medical-Anatomy 1187 1211	anterior right third rib
+T21	Medical-Assertion 1212 1224;1226 1228	could be due to
+A5	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1229 1240	rib changes
+T23	Medical-Problem 1244 1278	underlying parenchymal abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T16 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E17	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E18	Medical-Problem:T23 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

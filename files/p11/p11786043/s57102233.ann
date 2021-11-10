@@ -1,0 +1,32 @@
+T1	Lesion-Characteristic 254 260	subtle
+T2	Lesion-Description 261 276	nodular opacity
+T3	Lesion-Anatomy 295 321	upper anterior mediastinum
+T4	Medical-Anatomy 359 383	upper middle mediastinum
+E4	Medical-Anatomy:T4
+T5	Medical-Problem 467 472;474 495	small streak of atelectasis
+T6	Medical-Anatomy 514 528	left lung base
+T7	Medical-Assertion 540 542	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 543 550;552 560	pleural effusion
+T9	Medical-Problem 564 576	pneumothorax
+T10	Medical-Assertion 596 613	No clear evidence
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 617 626	pneumonia
+T12	Lesion-Characteristic 629 635	Subtle
+T13	Lesion-Description 636 643	nodular
+E11	Lesion-Description:T13
+T14	Lesion-Description 644 651	opacity
+T15	Lesion-Anatomy 659 667;669 680	anterior mediastinum
+T16	Medical-Problem 687 698	ring-shadow
+T17	Medical-Anatomy 719 737	middle mediastinum
+T18	Medical-Assertion 806 819	may represent
+A3	Medical-AssertionValue T18 possible
+T19	Medical-Problem 821 840	overlapping shadows
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18

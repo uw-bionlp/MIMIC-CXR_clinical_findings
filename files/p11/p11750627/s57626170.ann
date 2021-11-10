@@ -1,0 +1,32 @@
+T1	Medical-Problem 289 298;300 313	increased opacification
+T2	Medical-Anatomy 321 357	left lung base compared to the right
+T3	Medical-Assertion 365 378	likely due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 380 391	atelectasis
+T5	Medical-Problem 410 431	decreased inspiratory
+E4	Medical-Problem:T5
+T6	Lesion-Assertion 478 485	without
+A2	Lesion-AssertionValue T6 absent
+T7	Lesion-Characteristic 486 497	appreciable
+T8	Lesion-Anatomy 498 507	pulmonary
+T9	Lesion-Description 508 515	lesions
+T10	Medical-Problem 517 533	pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 538 550	pneumothorax
+E9	Medical-Problem:T11
+T12	Medical-Anatomy 557 578	pulmonary vasculature
+T13	Medical-Assertion 582 585	not
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 586 594	engorged
+T15	Medical-Problem 708 735	Left lower lobe atelectasis
+E12	Medical-Problem:T15
+T16	Medical-Problem 767 789	decreased lung volumes
+E13	Medical-Problem:T16
+T17	Medical-Assertion 792 803	No evidence
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 807 836	acute or chronic tuberculosis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E7	Lesion-Description:T9 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T18 has-Medical-Assertion:T17

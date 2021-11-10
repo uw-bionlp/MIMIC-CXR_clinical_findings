@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 295 300	lungs
+T2	Medical-Problem 305 325	mildly underinflated
+T3	Medical-Problem 339 357	linear atelectasis
+T4	Medical-Anatomy 381 426	periphery from the right hilum and left hilum
+T5	Medical-Problem 444 455	atelectasis
+T6	Medical-Anatomy 463 473	right base
+T7	Medical-Problem 485 493	blunting
+T8	Medical-Anatomy 501 516;518 537	right posterior costophrenic sulcus
+T9	Medical-Assertion 538 548	suggesting
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 549 571	small pleural effusion
+T11	Medical-Anatomy 578 583	heart
+T12	Medical-Assertion 587 590	not
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 592 600	enlarged
+T14	Medical-Assertion 612 614	no
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 615 627	pneumothorax
+T16	Medical-Problem 700 726	Streaky linear atelectasis
+T17	Medical-Anatomy 730 758	both mid lung and right base
+T18	Medical-Problem 766 797	Small pleural effusion blunting
+T19	Medical-Anatomy 802 837	right posterior costophrenic sulcus
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T18 has-Medical-Anatomy:T19

@@ -1,0 +1,15 @@
+T1	Medical-Problem 320 380	progression of a now dense retrocardiac opacity silhouetting
+T2	Medical-Anatomy 385 391;393 406	medial hemidiaphragm
+T3	Medical-Problem 663 693	Worsening retrocardiac opacity
+E3	Medical-Problem:T3
+T4	Medical-Assertion 694 705	potentially
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 707 718	atelectasis
+T6	Medical-Problem 728 738	aspiration
+T7	Medical-Problem 742 751	pneumonia
+T8	Medical-Assertion 756 764	possible
+A2	Medical-AssertionValue T8 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4 has-Medical-Assertion:T8
+E6	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T8

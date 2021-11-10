@@ -1,0 +1,30 @@
+T1	Medical-Problem 364 385;387 402	cardiac silhouette is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 416 433	slight prominence
+T3	Medical-Anatomy 441 462	main pulmonary artery
+T4	Lesion-Characteristic 466 475	Reticular
+T5	Lesion-Description 476 493	nodular opacities
+T6	Lesion-Anatomy 514 529	left lower lobe
+T7	Lesion-Characteristic 538 555	indeterminate age
+T8	Medical-Assertion 616 629	may be due to
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 630 645	chronic changes
+T10	Medical-Problem 656 664	atypical
+T11	Medical-Assertion 678 690	not excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 739 766	biapical pleural thickening
+E10	Medical-Problem:T12
+T13	Medical-Assertion 822 824	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 825 847	large pleural effusion
+T15	Medical-Problem 852 864	pneumothorax
+T16	Medical-Assertion 867 869	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 870 891	overt pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

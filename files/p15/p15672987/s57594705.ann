@@ -1,0 +1,57 @@
+T1	Medical-Problem 298 329	moderate to large hiatal hernia
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 356 361	lungs
+T3	Medical-Problem 367 407	hyperinflated with emphysematous changes
+T4	Medical-Problem 422 441	Ill-defined opacity
+T5	Medical-Anatomy 454 470	right upper lobe
+T6	Lesion-Description 510 516	lesion
+E6	Lesion-Description:T6
+T7	Lesion-Description 533 541	neoplasm
+T8	Lesion-Anatomy 553 568	left upper lobe
+T9	Lesion-Size-Trend 577 587;589 598	relatively unchanged
+A1	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Problem 639 664	Bronchial wall thickening
+T11	Medical-Problem 671 700	mild interstitial abnormality
+T12	Medical-Anatomy 712 722	lung bases
+T13	Medical-Assertion 723 738	likely reflects
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 740 753	bronchiolitis
+T15	Medical-Assertion 812 814	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 815 818;820 839	new focal consolidation
+T17	Medical-Problem 841 857	pleural effusion
+T18	Medical-Problem 861 873	pneumothorax
+T19	Medical-Assertion 894 896	no
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 898 925	acute osseous abnormalities
+T21	Medical-Problem 948 973	Bronchial wall thickening
+T22	Medical-Problem 979 1008	mild interstitial abnormality
+T23	Medical-Anatomy 1016 1020;1022 1027	lung bases
+T24	Medical-Problem 1105 1128	improving bronchiolitis
+T25	Medical-Problem 1136 1163	Ill-defined focal opacities
+T26	Medical-Anatomy 1171 1182	upper lobes
+T27	Lesion-Anatomy 1236 1251	left upper lobe
+T28	Lesion-Description 1252 1258	lesion
+T29	Medical-Problem 1311 1320	Emphysema
+E25	Medical-Problem:T29
+T30	Medical-Problem 1325 1356	moderate to large hiatal hernia
+E26	Medical-Problem:T30
+T31	Medical-Assertion 1364 1366	No
+A5	Medical-AssertionValue T31 absent
+T32	Medical-Problem 1367 1390	new focal consolidation
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T8 has-Lesion-Size-Trend:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T12
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T15
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E17	Medical-Problem:T21 has-Medical-Anatomy:T23
+E18	Medical-Problem:T22 has-Medical-Anatomy:T23
+E20	Medical-Problem:T24 has-Medical-Anatomy:T23
+E21	Medical-Problem:T25 has-Medical-Anatomy:T26
+E24	Lesion-Description:T28 has-Lesion-Anatomy:T27
+E27	Medical-Problem:T32 has-Medical-Assertion:T31

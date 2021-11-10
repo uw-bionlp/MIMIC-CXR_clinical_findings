@@ -1,0 +1,17 @@
+T1	Medical-Problem 308 316	aeration
+T2	Medical-Anatomy 324 329;331 341	right upper lobe
+T3	Medical-Anatomy 374 407	right middle and right lower lobe
+T4	Medical-Problem 412 432	completely collapsed
+T5	Medical-Problem 435 465	New diffuse airspace opacities
+T6	Medical-Anatomy 468 484	right upper lobe
+T7	Medical-Assertion 490 504	concerning for
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 505 514	pneumonia
+T9	Medical-Problem 519 541	right pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Problem 604 628;630 643	substantial collapse and consolidation
+E9	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7

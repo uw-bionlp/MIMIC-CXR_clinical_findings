@@ -1,0 +1,70 @@
+T1	Medical-Problem 225 240	diffuse opacity
+T2	Medical-Anatomy 248 274	right lower lobe obscuring
+T3	Medical-Anatomy 280 299	right hemidiaphragm
+T4	Medical-Problem 305 317	reticulation
+T5	Medical-Problem 346 353	opacity
+T6	Medical-Anatomy 362 371	left base
+T7	Medical-Problem 427 449	superimposed pneumonia
+E7	Medical-Problem:T7
+T8	Medical-Problem 455 476	chronic lung fibrosis
+E8	Medical-Problem:T8
+T9	Medical-Problem 500 546	somewhat round asymmetric right apical opacity
+E9	Medical-Problem:T9
+T10	Medical-Assertion 548 562	which could be
+A1	Medical-AssertionValue T10 possible
+T11	Medical-Problem 563 570;572 582	pleural thickening
+T12	Medical-Problem 587 595	scarring
+T13	Lesion-Description 606 610	mass
+E12	Lesion-Description:T13
+T14	Lesion-Description 616 629	cavity lesion
+E13	Lesion-Description:T14
+T15	Medical-Assertion 675 677	no
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 678 693	pulmonary edema
+T17	Medical-Assertion 705 707	no
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 708 716;718 734	definite pleural effusion
+T19	Medical-Assertion 822 833	no evidence
+A4	Medical-AssertionValue T19 absent
+T20	Medical-Problem 837 849	pneumothorax
+T21	Lesion-Count 852 860	Multiple
+T22	Lesion-Characteristic 861 870	calcified
+T23	Lesion-Anatomy 872 882	upper lobe
+T24	Lesion-Description 883 890	nodules
+T25	Medical-Problem 980 1008	heart is moderately enlarged
+E21	Medical-Problem:T25
+T26	Medical-Problem 1118 1137	Bibasilar opacities
+E22	Medical-Problem:T26
+T27	Medical-Assertion 1138 1151	could reflect
+A5	Medical-AssertionValue T27 possible
+T28	Medical-Problem 1152 1162	aspiration
+T29	Medical-Problem 1166 1175	pneumonia
+T30	Medical-Problem 1182 1190;1192 1231	apparent underlying chronic interstitial fibrosi
+E25	Medical-Problem:T30
+T31	Medical-Problem 1238 1258	Right apical opacity
+E26	Medical-Problem:T31
+T32	Medical-Assertion 1266 1272	may be
+A6	Medical-AssertionValue T32 possible
+T33	Medical-Problem 1273 1307	asymmetric apical pleural scarring
+T34	Lesion-Description 1319 1323	mass
+T35	Lesion-Description 1327 1340	cavity lesion
+T36	Lesion-Assertion 1344 1364	difficult to exclude
+A7	Lesion-AssertionValue T36 possible
+T37	Medical-Problem 1437 1445	scarring
+E30	Medical-Problem:T37
+T38	Medical-Problem 1489 1510	Moderate cardiomegaly
+E31	Medical-Problem:T38
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T10
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T19
+E20	Lesion-Description:T24 has-Lesion-Count:T21 has-Lesion-Characteristic:T22 has-Lesion-Anatomy:T23
+E23	Medical-Problem:T28 has-Medical-Assertion:T27
+E24	Medical-Problem:T29 has-Medical-Assertion:T27
+E27	Medical-Problem:T33 has-Medical-Assertion:T32
+E28	Lesion-Description:T34 has-Lesion-Assertion:T36
+E29	Lesion-Description:T35 has-Lesion-Assertion:T36

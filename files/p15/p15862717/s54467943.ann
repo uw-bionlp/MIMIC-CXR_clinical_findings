@@ -1,0 +1,21 @@
+T1	Medical-Problem 243 265	severe pulmonary edema
+T2	Medical-Anatomy 334 350	lower lung zones
+T3	Lesion-Description 381 391	adenopathy
+T4	Lesion-Anatomy 399 410	mediastinum
+T5	Medical-Problem 427 454	bulky appearing right hilus
+E5	Medical-Problem:T5
+T6	Medical-Problem 461 481	apparent enlargement
+E6	Medical-Problem:T6
+T7	Medical-Assertion 485 500	probably due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 501 523	dilated crossing veins
+T9	Medical-Problem 555 575	adjacent atelectasis
+T10	Medical-Anatomy 599 609;611 615	left lower lobe
+T11	Medical-Problem 617 650	Small bilateral pleural effusions
+E10	Medical-Problem:T11
+T12	Medical-Problem 665 685;687 695	Heart size is mildly enlarged
+E11	Medical-Problem:T12
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Lesion-Description:T3 has-Lesion-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Anatomy:T10

@@ -1,0 +1,28 @@
+T1	Medical-Assertion 326 328	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 329 345	pleural effusion
+T3	Medical-Problem 349 361	pneumothorax
+T4	Medical-Problem 374 392	slight volume loss
+T5	Medical-Anatomy 400 414	left lung base
+T6	Medical-Problem 420 441;443 465	relative elevation of the left hemidiaphragm
+E5	Medical-Problem:T6
+T7	Medical-Problem 470 491	streaky opacification
+T8	Medical-Assertion 492 502	suggesting
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 503 520	minor atelectasis
+T10	Medical-Problem 559 592;594 603	Mild-to-moderate rightward convex curvature
+T11	Medical-Anatomy 626 646	lower thoracic spine
+T12	Medical-Problem 664 697	Patchy left basilar opacification
+E10	Medical-Problem:T12
+T13	Medical-Assertion 699 717	most likely due to
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 718 723;725 736	minor atelectasis
+T15	Medical-Problem 741 752	volume loss
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

@@ -1,0 +1,24 @@
+T1	Medical-Assertion 287 289	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 290 307	detectable change
+T3	Medical-Anatomy 315 332	right hemi thorax
+T4	Medical-Problem 434 443;445 467	Extensive right pleural effusion
+E3	Medical-Problem:T4
+T5	Medical-Assertion 478 480	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 481 493	pneumothorax
+T7	Lesion-Count 496 504	Multiple
+T8	Lesion-Anatomy 505 514	pulmonary
+T9	Lesion-Description 516 526	metastases
+T10	Lesion-Characteristic 528 542	some cavitated
+T11	Medical-Problem 545 573	Heart is moderately enlarged
+E9	Medical-Problem:T11
+T12	Medical-Problem 667 697	increased intravascular volume
+E10	Medical-Problem:T12
+T13	Medical-Assertion 719 728	no way to
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 756 776	pericardial effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E7	Lesion-Description:T9 has-Lesion-Count:T7 has-Lesion-Anatomy:T8 has-Lesion-Characteristic:T10
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

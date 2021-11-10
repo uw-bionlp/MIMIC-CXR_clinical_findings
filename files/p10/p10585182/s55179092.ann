@@ -1,0 +1,36 @@
+T1	Medical-Problem 273 279;281 296	severe dextroscoliosis
+T2	Medical-Anatomy 304 311	T-spine
+T3	Medical-Problem 372 387	mild prominence
+T4	Medical-Anatomy 395 415	left pulmonary hilum
+T5	Medical-Problem 421 425;427 451	left perihilar linear density
+T6	Medical-Assertion 452 471	likely representing
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 472 480	scarring
+T8	Medical-Assertion 545 547	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 548 565	new consolidation
+T10	Medical-Problem 567 575	effusion
+T11	Medical-Problem 581 593	pneumothorax
+T12	Medical-Problem 641 657	severe scoliosis
+E10	Medical-Problem:T12
+T13	Medical-Problem 774 791	mid lung scarring
+E11	Medical-Problem:T13
+T14	Medical-Assertion 792 798	likely
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 799 824	sequelae of old infection
+T16	Medical-Assertion 827 829	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 843 852	pneumonia
+T18	Medical-Problem 856 859	CHF
+T19	Medical-Problem 862 877	Dextroscoliotic
+E15	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16

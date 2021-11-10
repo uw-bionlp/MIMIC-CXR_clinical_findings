@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 246 256	right lung
+T2	Medical-Problem 260 314	nearly completely collapsed due to central obstruction
+T3	Medical-Problem 322 344	large pleural effusion
+T4	Lesion-Count 347 355	Multiple
+T5	Lesion-Description 356 363	nodules
+T6	Lesion-Anatomy 383 392	left lung
+T7	Medical-Assertion 447 449	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 450 473;475 479	pleural effusion on the left
+T9	Medical-Assertion 491 493	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 494 506	pneumothorax
+T11	Medical-Problem 548 578	intraparenchymal abnormalities
+E9	Medical-Problem:T11
+T12	Medical-Problem 596 618	Near-complete collapse
+T13	Medical-Anatomy 626 636	right lung
+T14	Medical-Problem 650 657;659 670	central obstruction
+T15	Medical-Problem 675 697	large pleural effusion
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Lesion-Description:T5 has-Lesion-Count:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T13

@@ -1,0 +1,43 @@
+T1	Medical-Problem 329 344	stable scarring
+T2	Medical-Anatomy 353 374	peripheral right lung
+T3	Medical-Assertion 379 387	possible
+A1	Medical-AssertionValue T3 possible
+T4	Lesion-Size-Trend 388 391	new
+A2	Lesion-Size-TrendValue T4 new
+T5	Lesion-Description 392 398	nodule
+T6	Lesion-Anatomy 436 472	right posterior fifth and sixth ribs
+T7	Medical-Problem 522 550	Multiple bilateral opacities
+E5	Medical-Problem:T7
+T8	Medical-Problem 575 600	calcified pleural plaques
+E6	Medical-Problem:T8
+T9	Medical-Problem 635 652	asbestos exposure
+E7	Medical-Problem:T9
+T10	Medical-Assertion 655 657	No
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 658 674	pleural effusion
+T12	Medical-Problem 678 690	pneumothorax
+T13	Medical-Anatomy 708 729	pulmonary vasculature
+T14	Medical-Assertion 734 737	not
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 738 746	engorged
+T16	Medical-Anatomy 873 884	aortic knob
+T17	Medical-Problem 889 908	partially calcified
+T18	Lesion-Assertion 930 938	Possible
+A5	Lesion-AssertionValue T18 possible
+T19	Lesion-Size-Trend 939 942	new
+A6	Lesion-Size-TrendValue T19 new
+T20	Lesion-Anatomy 943 952	pulmonary
+T21	Lesion-Description 953 959	nodule
+T22	Lesion-Anatomy 967 994	peripheral right upper lobe
+T23	Medical-Problem 1056 1090	Multiple bilateral pleural plaques
+T24	Medical-Problem 1095 1103	scarring
+T25	Medical-Anatomy 1111 1125	right mid lung
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Lesion-Description:T5 has-Lesion-Size-Trend:T4 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T10
+E11	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Anatomy:T16
+E15	Lesion-Description:T21 has-Lesion-Assertion:T18 has-Lesion-Size-Trend:T19 has-Lesion-Anatomy:T20 has-Lesion-Anatomy:T22
+E17	Medical-Problem:T23 has-Medical-Anatomy:T25
+E18	Medical-Problem:T24 has-Medical-Anatomy:T25

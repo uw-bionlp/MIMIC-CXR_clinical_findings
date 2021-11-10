@@ -1,0 +1,22 @@
+T1	Medical-Assertion 226 234	probably
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 235 241;243 264	stable moderate cardiomegaly
+T3	Medical-Problem 293 308	Mild tortuosity
+T4	Medical-Anatomy 317 331	thoracic aorta
+T5	Medical-Anatomy 347 351	Lung
+T6	Medical-Problem 407 453	subtle increased perihilar vascular congestion
+T7	Medical-Assertion 464 466	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 468 482	large effusion
+T9	Medical-Problem 509 530	Moderate cardiomegaly
+E7	Medical-Problem:T9
+T10	Medical-Problem 535 558	perivascular congestion
+E8	Medical-Problem:T10
+T11	Medical-Assertion 559 566	without
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 567 574;576 584	pleural effusion
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

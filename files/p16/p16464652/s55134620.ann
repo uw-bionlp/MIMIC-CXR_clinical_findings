@@ -1,0 +1,32 @@
+T1	Medical-Problem 88 117	multifocal airspace opacities
+T2	Medical-Anatomy 156 172	right upper lobe
+T3	Medical-Problem 178 198;200 211	diffuse interstitial  prominence
+E3	Medical-Problem:T3
+T4	Lesion-Assertion 212 218	likely
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Characteristic 232 242	underlying
+T6	Lesion-Description 243 255	lymphangitic
+T7	Medical-Problem 426 455	multifocal airspace opacities
+T8	Medical-Anatomy 494 510	right upper lobe
+T9	Medical-Problem 516 536;538 549	diffuse interstitial  prominence
+E8	Medical-Problem:T9
+T10	Lesion-Assertion 550 556	likely
+A2	Lesion-AssertionValue T10 possible
+T11	Lesion-Characteristic 570 580	underlying
+T12	Lesion-Description 581 593	lymphangitic
+T13	Medical-Problem 1111 1120;1122 1143	bilateral parenchymal opacities
+T14	Medical-Anatomy 1166 1182	right upper lobe
+T15	Medical-Anatomy 1194 1198;1200 1215	left perihilar areas
+T16	Medical-Problem 1288 1315	focal parenchymal opacities
+E14	Medical-Problem:T16
+T17	Medical-Assertion 1317 1319	No
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1320 1332	pneumothorax
+T19	Medical-Problem 1351 1373	right pleural effusion
+E16	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E10	Lesion-Description:T12 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14 has-Medical-Anatomy:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

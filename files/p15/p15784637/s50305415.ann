@@ -1,0 +1,23 @@
+T1	Medical-Assertion 301 303	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 304 309;311 324	focal consolidation
+T3	Medical-Problem 328 340	pneumothorax
+T4	Medical-Problem 376 387	Atelectasis
+E3	Medical-Problem:T4
+T5	Medical-Problem 433 440	Pleural
+E4	Medical-Problem:T5
+T6	Medical-Problem 441 462	effusion on the right
+T7	Medical-Assertion 467 493	almost completely resolved
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 508 529	post surgical changes
+T9	Medical-Anatomy 537 542;544 548	right lung
+T10	Medical-Problem 587 598	Atelectasis
+E8	Medical-Problem:T10
+T11	Medical-Problem 655 676	effusion on the right
+T12	Medical-Assertion 680 706	almost completely resolved
+A3	Medical-AssertionValue T12 absent
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T12

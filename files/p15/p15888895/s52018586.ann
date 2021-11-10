@@ -1,0 +1,17 @@
+T1	Medical-Problem 267 282	pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 315 358	asymmetrical area of airspace opacification
+T3	Medical-Anatomy 375 385	right apex
+T4	Medical-Assertion 397 412	possibly due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 413 441	resolving asymmetrical edema
+T6	Medical-Problem 443 453;455 464	infectious pneumonia
+T7	Medical-Assertion 465 485	should be considered
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 504 516	leukocytosis
+T9	Medical-Problem 519 532;534 567	Moderate left and small right pleural effusions
+E7	Medical-Problem:T9
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Assertion:T4 has-Medical-Assertion:T7
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

@@ -1,0 +1,39 @@
+T1	Medical-Anatomy 274 295	pulmonary vascularity
+T2	Medical-Assertion 299 302	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 303 311	engorged
+T4	Lesion-Size 316 321	17 mm
+T5	Lesion-Description 322 329	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 330 337	opacity
+T7	Lesion-Anatomy 359 374	left upper lobe
+T8	Medical-Problem 392 416	calcified pleural plaque
+T9	Medical-Anatomy 429 448	left anterior chest
+T10	Medical-Problem 476 507	Streaky right basilar opacities
+E9	Medical-Problem:T10
+T11	Medical-Assertion 509 523	likely reflect
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 524 535	atelectasis
+T13	Medical-Assertion 538 540	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 541 560	focal consolidation
+T15	Medical-Problem 562 578	pleural effusion
+T16	Medical-Problem 583 595	pneumothorax
+T17	Medical-Assertion 690 692	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 693 717	free intraperitoneal air
+T19	Medical-Anatomy 726 735;737 747	under the diaphragms
+T20	Medical-Problem 769 799	Mild right basilar atelectasis
+E16	Medical-Problem:T20
+T21	Medical-Assertion 802 804	No
+A5	Medical-AssertionValue T21 absent
+T22	Medical-Problem 805 829	free intraperitoneal air
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T13
+E14	Medical-Problem:T18 has-Medical-Assertion:T17 has-Medical-Anatomy:T19
+E17	Medical-Problem:T22 has-Medical-Assertion:T21

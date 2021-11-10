@@ -1,0 +1,41 @@
+T1	Medical-Problem 352 372	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 374 402	Focal airspace consolidation
+T3	Medical-Anatomy 410 428;430 434	right mid to lower lung
+T4	Medical-Assertion 471 489	likely corresponds
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 495 499;501 518	more confluent opacity
+T6	Medical-Anatomy 530 547	right middle lobe
+T7	Medical-Problem 562 579;581 588	post bronchoscopy changes
+T8	Medical-Anatomy 594 612	right paratracheal
+E7	Medical-Anatomy:T8
+T9	Lesion-Description 665 680	lymphadenopathy
+E8	Lesion-Description:T9
+T10	Lesion-Count 711 719	multiple
+T11	Lesion-Anatomy 721 730	pulmonary
+T12	Lesion-Description 731 738	nodules
+T13	Lesion-Assertion 765 769	less
+A2	Lesion-AssertionValue T13 absent
+T14	Lesion-Characteristic 850 859	extensive
+T15	Lesion-Anatomy 860 865	hilar
+T16	Lesion-Anatomy 871 882	mediastinal
+T17	Lesion-Description 883 898	lymphadenopathy
+T18	Medical-Assertion 901 903	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 904 919	large effusions
+T20	Medical-Assertion 930 932	No
+A4	Medical-AssertionValue T20 absent
+T21	Medical-Problem 933 945	pneumothorax
+T22	Medical-Assertion 1070 1072	No
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1073 1091	large pneumothorax
+T24	Medical-Problem 1129 1144	pneumothorax is
+E19	Medical-Problem:T24
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E11	Lesion-Description:T12 has-Lesion-Count:T10 has-Lesion-Anatomy:T11 has-Lesion-Assertion:T13
+E15	Lesion-Description:T17 has-Lesion-Characteristic:T14 has-Lesion-Anatomy:T15 has-Lesion-Anatomy:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

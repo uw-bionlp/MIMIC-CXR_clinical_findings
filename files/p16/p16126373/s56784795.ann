@@ -1,0 +1,37 @@
+T1	Lesion-Description 221 228	lesion?
+E1	Lesion-Description:T1
+T2	Medical-Problem 325 339	Tortuous aorta
+E2	Medical-Problem:T2
+T3	Medical-Problem 393 416	Lungs are hyperinflated
+E3	Medical-Problem:T3
+T4	Medical-Assertion 470 482	Questionable
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 483 507	right upper lobe opacity
+T6	Medical-Assertion 508 523	might represent
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 524 544	asymmetric emphysema
+T8	Medical-Problem 549 560	potentially
+E6	Medical-Problem:T8
+T9	Medical-Problem 561 583	other lung abnormality
+T10	Medical-Problem 586 611	Left basal linear opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 612 623;625 634	most likely represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 635 646	atelectasis
+T13	Lesion-Characteristic 651 660	Sclerotic
+T14	Lesion-Description 661 667	lesion
+T15	Lesion-Anatomy 675 690	left humeral 's
+T16	Medical-Problem 712 723;725 734	Compression fractures
+T17	Medical-Anatomy 742 773	thoracic spine and lumbar spine
+T18	Medical-Assertion 789 791	No
+A4	Medical-AssertionValue T18 absent
+T19	Medical-Problem 792 799;801 809	pleural effusion
+T20	Medical-Problem 813 825	pneumothorax
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15
+E13	Medical-Problem:T16 has-Medical-Anatomy:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E16	Medical-Problem:T20 has-Medical-Assertion:T18

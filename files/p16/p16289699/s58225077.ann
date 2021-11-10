@@ -1,0 +1,38 @@
+T1	Medical-Assertion 133 135	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 136 148	pneumothorax
+T3	Medical-Problem 151 178	increased hazy opacifcation
+T4	Medical-Anatomy 182 186;188 200	righ  tlung field
+T5	Medical-Problem 207 236	gradually increasing luncency
+T6	Medical-Anatomy 240 250	upper lung
+T7	Medical-Assertion 251 259;261 272	suggests  appearance
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 276 299	increased opacification
+T9	Medical-Problem 310 327	layering effusion
+T10	Medical-Problem 673 683	aspiration
+E8	Medical-Problem:T10
+T11	Medical-Problem 750 773	Moderate-to-large right
+E9	Medical-Problem:T11
+T12	Medical-Problem 774 790	pleural effusion
+T13	Medical-Assertion 809 814	could
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 915 929	subtle changes
+E11	Medical-Problem:T14
+T15	Medical-Problem 944 958	Mild pulmonary
+E12	Medical-Problem:T15
+T16	Medical-Problem 959 964	edema
+E13	Medical-Problem:T16
+T17	Medical-Assertion 1036 1038	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 1040 1052	pneumothorax
+T19	Medical-Assertion 1367 1369	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1370 1382	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T13
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

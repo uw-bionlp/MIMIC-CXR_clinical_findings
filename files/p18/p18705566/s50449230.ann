@@ -1,0 +1,29 @@
+T1	Lesion-Characteristic 33 39	Subtle
+T2	Lesion-Size 40 44	8 mm
+T3	Lesion-Description 45 52	opacity
+T4	Lesion-Anatomy 73 103	lateral right upper hemithorax
+T5	Lesion-Characteristic 110 126	unclear etiology
+T6	Lesion-Anatomy 185 194	pulmonary
+T7	Lesion-Description 195 201	nodule
+T8	Lesion-Assertion 205 208	not
+A1	Lesion-AssertionValue T8 possible
+T9	Medical-Problem 731 738	opacity
+T10	Medical-Anatomy 757 794;796 846	lateral right upper hemi thorax above the level of the posterior lateral right sixth rib
+T11	Medical-Assertion 1008 1010	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1011 1027	pleural effusion
+T13	Medical-Problem 1032 1044	pneumothorax
+T14	Medical-Problem 1136 1143	opacity
+T15	Medical-Anatomy 1164 1195	lateral right upper hemi thorax
+T16	Lesion-Characteristic 1274 1284	underlying
+T17	Lesion-Anatomy 1285 1294	pulmonary
+T18	Lesion-Description 1295 1301	nodule
+T19	Lesion-Assertion 1305 1317	not excluded
+A3	Lesion-AssertionValue T19 possible
+E3	Lesion-Description:T3 has-Lesion-Characteristic:T1 has-Lesion-Size-Present:T2 has-Lesion-Anatomy:T4 has-Lesion-Characteristic:T5
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T6 has-Lesion-Assertion:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E16	Lesion-Description:T18 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T17 has-Lesion-Assertion:T19

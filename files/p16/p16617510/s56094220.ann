@@ -1,0 +1,31 @@
+T1	Medical-Problem 291 304	Calcification
+T2	Medical-Anatomy 312 318;320 324	aortic arch
+T3	Medical-Problem 336 343	Opacity
+T4	Medical-Anatomy 351 366	left lower lobe
+T5	Medical-Assertion 367 380	could reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 381 398;400 407	interstitial lung disease
+T7	Medical-Problem 447 456	pneumonia
+T8	Medical-Assertion 459 461	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 462 478	pleural effusion
+T10	Medical-Problem 483 495	pneumothorax
+T11	Medical-Problem 497 550	Height loss of multiple mid thoracic vertebral bodies
+E9	Medical-Problem:T11
+T12	Medical-Problem 583 590	Opacity
+T13	Medical-Anatomy 598 613	left lower lobe
+T14	Medical-Assertion 614 627	could reflect
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 628 653	interstitial lung disease
+T16	Medical-Problem 696 705	pneumonia
+T17	Medical-Problem 707 732	Interstitial lung disease
+E14	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T14

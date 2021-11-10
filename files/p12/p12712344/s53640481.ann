@@ -1,0 +1,44 @@
+T1	Lesion-Characteristic 297 306	round 5.6
+T2	Lesion-Description 310 317	density
+T3	Lesion-Anatomy 328 353	left lung base anteriorly
+T4	Lesion-Characteristic 362 382	likely pleural based
+T5	Medical-Problem 393 397	loss
+T6	Medical-Anatomy 429 437;439 453	anterior left sixth rib
+T7	Lesion-Description 471 475	mass
+T8	Lesion-Characteristic 485 513;515 526	worrisome underlying osseous destruction
+T9	Medical-Assertion 528 530	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 531 550	focal consolidation
+T11	Medical-Problem 552 568	pleural effusion
+T12	Medical-Problem 572 587	pulmonary edema
+T13	Medical-Problem 639 655	abnormal contour
+T14	Medical-Anatomy 661 665;667 694	just superior to the aortic arch
+T15	Medical-Assertion 738 747	worrisome
+A2	Medical-AssertionValue T15 possible
+T16	Medical-Problem 752 774	underlying abnormality
+T17	Lesion-Description 788 798	adenopathy
+E15	Lesion-Description:T17
+T18	Lesion-Size 819 825	5.6 cm
+T19	Lesion-Characteristic 826 831	round
+T20	Lesion-Description 832 839	density
+T21	Lesion-Anatomy 847 870	left anterior lung base
+T22	Medical-Assertion 876 884	probable
+A3	Medical-AssertionValue T22 possible
+T23	Medical-Problem 885 895;897 908	associated destruction
+T24	Lesion-Anatomy 916 929	anterolateral
+T25	Lesion-Characteristic 965 975	aggressive
+T26	Lesion-Description 977 983	lesion
+T27	Medical-Problem 1030 1046	Abnormal contour
+T28	Medical-Anatomy 1047 1051;1053 1080	just superior to the aortic arch
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3 has-Lesion-Characteristic:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Lesion-Description:T7 has-Lesion-Characteristic:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T9
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E14	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E18	Lesion-Description:T20 has-Lesion-Size-Present:T18 has-Lesion-Characteristic:T19 has-Lesion-Anatomy:T21
+E20	Medical-Problem:T23 has-Medical-Assertion:T22
+E23	Lesion-Description:T26 has-Lesion-Anatomy:T24 has-Lesion-Characteristic:T25
+E24	Medical-Problem:T27 has-Medical-Anatomy:T28

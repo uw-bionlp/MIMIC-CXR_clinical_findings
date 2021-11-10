@@ -1,0 +1,28 @@
+T1	Medical-Problem 180 201	Moderate cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 203 213	dilatation
+T3	Medical-Anatomy 221 237	descending aorta
+T4	Medical-Anatomy 268 289	main pulmonary artery
+T5	Medical-Problem 334 359	Multifocal lung opacities
+T6	Medical-Anatomy 367 410;412 416	lower lobes bilaterally, right greater than left
+T7	Medical-Problem 422 446	right upper lobe opacity
+E7	Medical-Problem:T7
+T8	Medical-Assertion 463 485	differential diagnosis
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 512 530	residual pneumonia
+T10	Medical-Problem 535 543	probably
+E9	Medical-Problem:T10
+T11	Medical-Problem 544 551	infarct
+T12	Medical-Anatomy 559 564;566 576	right lower lobe
+T13	Medical-Assertion 589 591	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 592 610	new lung opacities
+T15	Medical-Assertion 622 624	no
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 625 637	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8 has-Medical-Anatomy:T12
+E10	Medical-Problem:T11 has-Medical-Assertion:T8 has-Medical-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

@@ -1,0 +1,42 @@
+T1	Medical-Problem 268 276;278 298	slightly flattened diaphragms
+E1	Medical-Problem:T1
+T2	Medical-Assertion 300 310	suggesting
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 311 333	moderate overinflation
+T4	Medical-Problem 336 342;344 358	Subtle irregularities
+T5	Medical-Anatomy 366 390	left lateral rib margins
+T6	Medical-Assertion 391 405	might indicate
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 406 416;418 427	healed rib fractures
+T8	Medical-Problem 441 458	mild hyperlucency
+T9	Medical-Anatomy 466 477	lung apices
+T10	Medical-Assertion 479 504	potentially suggestive of
+A3	Medical-AssertionValue T10 possible
+T11	Medical-Problem 506 525	pulmonary emphysema
+T12	Medical-Assertion 530 532	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 533 550	pleural effusions
+T14	Medical-Assertion 553 555	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 556 571	acute infection
+T16	Medical-Assertion 574 576	No
+A6	Medical-AssertionValue T16 absent
+T17	Medical-Problem 577 592	pulmonary edema
+T18	Medical-Problem 657 675	minimal tortuosity
+T19	Medical-Anatomy 684 698	thoracic aorta
+T20	Lesion-Assertion 761 772	No evidence
+A7	Lesion-AssertionValue T20 absent
+T21	Lesion-Anatomy 776 780	lung
+T22	Lesion-Description 781 788	nodules
+T23	Lesion-Description 792 798	masses
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T17 has-Medical-Assertion:T16
+E12	Medical-Problem:T18 has-Medical-Anatomy:T19
+E15	Lesion-Description:T22 has-Lesion-Assertion:T20 has-Lesion-Anatomy:T21
+E16	Lesion-Description:T23 has-Lesion-Assertion:T20 has-Lesion-Anatomy:T21

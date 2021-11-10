@@ -1,0 +1,17 @@
+T1	Medical-Problem 320 343	Continued opacification
+T2	Medical-Anatomy 351 360	left base
+T3	Medical-Problem 380 386;388 392	volume loss
+T4	Medical-Anatomy 400 410	lower lobe
+T5	Medical-Problem 415 428	pleural fluid
+T6	Medical-Problem 430 458;460 485	Relatively mild elevation of pulmonary venous pressure
+E6	Medical-Problem:T6
+T7	Medical-Problem 488 511	Extensive opacification
+T8	Medical-Anatomy 519 550	left hilar and perihilar region
+T9	Medical-Assertion 567 580	worrisome for
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 581 590	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

@@ -1,0 +1,26 @@
+T1	Medical-Problem 336 340;342 357	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Assertion 360 379	No convincing signs
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 383 392	pneumonia
+T4	Medical-Problem 396 399	CHF
+T5	Medical-Problem 411 415;417 446	mild linear plate-like atelectasis
+T6	Medical-Anatomy 454 469	left lower lung
+T7	Lesion-Characteristic 474 479	vague
+T8	Lesion-Description 480 495	nodular opacity
+T9	Lesion-Anatomy 504 517	left mid lung
+T10	Medical-Anatomy 546 554	anterior
+E9	Medical-Anatomy:T10
+T11	Medical-Assertion 689 691	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 692 700	free air
+T13	Medical-Anatomy 711 716;718 731	right hemidiaphragm
+T14	Medical-Assertion 749 751	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 752 766	acute findings
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Lesion-Description:T8 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

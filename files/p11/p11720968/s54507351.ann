@@ -1,0 +1,36 @@
+T1	Medical-Problem 285 315	small left apical pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 362 391	large extra pulmonary opacity
+T3	Medical-Anatomy 399 415	left upper chest
+T4	Lesion-Assertion 416 421;423 425	could be
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Description 428 432	mass
+T6	Medical-Problem 436 459	loculated pleural fluid
+T7	Medical-Problem 482 501;503 528	much smaller volume of residual pleural fluid
+T8	Medical-Anatomy 536 547	lower chest
+T9	Medical-Problem 549 562	consolidation
+T10	Medical-Anatomy 570 580;582 586	left lower lobe
+T11	Medical-Problem 602 631	ipsilateral mediastinal shift
+T12	Medical-Assertion 635 643	probably
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 644 651;653 664	largely atelectasis
+T14	Medical-Problem 667 696	Pulmonary vascular congestion
+T15	Medical-Anatomy 715 725	right lung
+T16	Medical-Assertion 740 742	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 743 748	edema
+T18	Medical-Problem 752 786	appreciable right pleural effusion
+T19	Medical-Problem 791 801	heart size
+E16	Medical-Problem:T19
+T20	Medical-Problem 805 809;811 830	only moderately enlarged
+E17	Medical-Problem:T20
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Lesion-Description:T5 has-Lesion-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16

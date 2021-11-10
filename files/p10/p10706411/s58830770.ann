@@ -1,0 +1,19 @@
+T1	Medical-Assertion 488 490	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 491 507	pleural effusion
+T3	Medical-Problem 512 524	pneumothorax
+T4	Medical-Problem 527 541	Consolidations
+T5	Medical-Anatomy 549 579	right lung and left lower lung
+T6	Medical-Assertion 601 612	may reflect
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 613 623	aspiration
+T8	Medical-Problem 730 783	Diffuse right lung and left lower lung consolidations
+E6	Medical-Problem:T8
+T9	Medical-Assertion 811 822	may reflect
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 823 833	aspiration
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

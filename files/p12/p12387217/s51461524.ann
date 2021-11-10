@@ -1,0 +1,28 @@
+T1	Medical-Problem 253 258;260 276	Right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 281 298	basal atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 328 352	ill-defined, lucent area
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 361 375	right mid lung
+T5	Medical-Assertion 376 390	may represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 391 403;405 415	locuated air collection
+T7	Medical-Assertion 435 437	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 438 456	large pneumothorax
+T9	Medical-Assertion 540 542	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 543 552	opacities
+T11	Medical-Anatomy 561 570	left lung
+T12	Medical-Assertion 571 585	concerning for
+A4	Medical-AssertionValue T12 possible
+T13	Medical-Problem 586 595	pneumonia
+T14	Medical-Assertion 598 600	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 601 634	pleural effusion on the left side
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11
+E9	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

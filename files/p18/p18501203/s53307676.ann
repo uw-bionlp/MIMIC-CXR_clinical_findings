@@ -1,0 +1,27 @@
+T1	Medical-Problem 382 404	right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 410 427;429 446	residual small to moderate effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 488 498;500 509	Persistent opacities
+T4	Medical-Anatomy 517 527	right base
+T5	Medical-Assertion 534 545	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 546 566	residual atelectasis
+T7	Medical-Problem 578 587	pneumonia
+T8	Medical-Assertion 588 606	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 640 642	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 643 648;650 662	large pneumothorax
+T11	Medical-Assertion 690 698	possibly
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 701 718;720 732	tiny right apical pneumothorax
+T13	Medical-Assertion 783 785	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 786 795;797 802	pulmonary edema
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13

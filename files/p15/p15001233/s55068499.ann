@@ -1,0 +1,28 @@
+T1	Medical-Assertion 398 405	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 415 424	pneumonia
+T3	Medical-Problem 428 431	CHF
+T4	Medical-Problem 436 464	hyperdense nodular structure
+T5	Medical-Anatomy 480 495	left lower lung
+T6	Lesion-Assertion 496 501	could
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Characteristic 514 523	calcified
+T8	Lesion-Description 524 533	granuloma
+T9	Medical-Assertion 536 538	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 539 547	effusion
+T11	Medical-Problem 552 564	pneumothorax
+T12	Medical-Assertion 659 661	no
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 662 670	free air
+T14	Medical-Assertion 718 720	No
+A5	Medical-AssertionValue T14 absent
+T15	Medical-Problem 721 735	acute findings
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Lesion-Description:T8 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14

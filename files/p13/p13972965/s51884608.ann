@@ -1,0 +1,28 @@
+T1	Medical-Problem 353 383	Small left apical pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 429 446	Increased density
+T3	Medical-Anatomy 454 469	left lower lobe
+T4	Medical-Assertion 470 494	most likely representing
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 495 506	atelectasis
+T6	Medical-Assertion 509 517	Possible
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 518 543	small associated effusion
+T8	Medical-Assertion 572 574	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 576 601	subdiaphragmatic free air
+T10	Lesion-Assertion 604 606	No
+A4	Lesion-AssertionValue T10 absent
+T11	Lesion-Characteristic 607 615	sinister
+T12	Lesion-Characteristic 616 620	bony
+T13	Lesion-Description 621 628	lesions
+T14	Medical-Problem 649 673	Left apical pneumothorax
+E10	Medical-Problem:T14
+T15	Medical-Problem 719 738	Atelectatic changes
+T16	Medical-Anatomy 746 761	left lower lobe
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Lesion-Description:T13 has-Lesion-Assertion:T10 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12
+E11	Medical-Problem:T15 has-Medical-Anatomy:T16

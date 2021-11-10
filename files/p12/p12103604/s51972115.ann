@@ -1,0 +1,27 @@
+T1	Medical-Assertion 361 363	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 364 383	focal consolidation
+T3	Medical-Problem 386 402	pleural effusion
+T4	Medical-Problem 406 418	pneumothorax
+T5	Lesion-Size 435 439	8 mm
+T6	Lesion-Description 440 447	nodular
+E5	Lesion-Description:T6
+T7	Lesion-Description 448 455	opacity
+T8	Lesion-Anatomy 477 492	right lung base
+T9	Medical-Problem 523 527;529 549	Mild degenerative changes
+T10	Medical-Anatomy 566 586	lower thoracic spine
+T11	Medical-Assertion 607 609	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 610 643	acute cardiopulmonary abnormality
+T13	Lesion-Size 646 650	8 mm
+T14	Lesion-Description 651 658	nodular
+E12	Lesion-Description:T14
+T15	Lesion-Description 659 666	opacity
+T16	Lesion-Anatomy 688 703	right lung base
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E6	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Lesion-Description:T15 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T16

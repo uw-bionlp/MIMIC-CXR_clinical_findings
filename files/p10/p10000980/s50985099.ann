@@ -1,0 +1,20 @@
+T1	Medical-Problem 330 350	mild pulmonary edema
+T2	Medical-Assertion 355 363	possible
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 364 384	concurrent pneumonia
+T4	Medical-Assertion 385 392;394 401	has all cleared
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 444 461	pleural effusions
+T6	Medical-Assertion 462 466;468 476	have resolved
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Anatomy 479 498	Right hilar vessels
+T8	Medical-Assertion 519 533	perhaps due to
+A4	Medical-AssertionValue T8 possible
+T9	Medical-Problem 534 543;545 566	pulmonary arterial hypertension
+T10	Medical-Problem 588 612;614 627	atherosclerotic coronary calcification
+T11	Medical-Anatomy 635 650	left circumflex
+E1	Medical-Problem:T1 has-Medical-Assertion:T4
+E2	Medical-Problem:T3 has-Medical-Assertion:T2 has-Medical-Assertion:T4
+E3	Medical-Problem:T5 has-Medical-Assertion:T6
+E5	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E6	Medical-Problem:T10 has-Medical-Anatomy:T11

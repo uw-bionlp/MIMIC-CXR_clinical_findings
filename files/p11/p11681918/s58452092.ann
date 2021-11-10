@@ -1,0 +1,30 @@
+T1	Medical-Assertion 80 95	near resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 99 103;105 118	left  pneumothorax
+T3	Medical-Problem 605 631	moderate left pneumothorax
+T4	Medical-Assertion 632 667	has nearly resolved in the interval
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 682 706	small trace pneumothorax
+E3	Medical-Problem:T5
+T6	Medical-Problem 724 738	Large cavitary
+E4	Medical-Problem:T6
+T7	Lesion-Anatomy 739 754	left lower lobe
+T8	Lesion-Description 756 762	lesion
+T9	Medical-Problem 774 826	complex left upper lobe cavitary parenchymal disease
+E7	Medical-Problem:T9
+T10	Medical-Problem 833 860	adjacent pleural thickening
+E8	Medical-Problem:T10
+T11	Medical-Assertion 918 920	no
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 921 937	pleural effusion
+T13	Medical-Anatomy 943 960	cardiomediastinal
+E10	Medical-Anatomy:T13
+T14	Medical-Problem 1006 1025	vascular congestion
+E11	Medical-Problem:T14
+T15	Medical-Anatomy 1072 1082	left chest
+T16	Medical-Problem 1093 1112;1114 1126	small residual left pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T4
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E13	Medical-Problem:T16 has-Medical-Anatomy:T15

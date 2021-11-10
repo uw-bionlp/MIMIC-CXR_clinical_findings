@@ -1,0 +1,21 @@
+T1	Medical-Problem 327 331;333 353	lung volumes are very low
+E1	Medical-Problem:T1
+T2	Medical-Problem 355 375	Vascular enlargement
+T3	Medical-Anatomy 383 407	level of the right hilus
+T4	Lesion-Characteristic 410 419	Calcified
+T5	Lesion-Description 420 430	granulomas
+T6	Lesion-Anatomy 438 454	right upper lobe
+T7	Medical-Assertion 456 458	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 459 472	acute changes
+T9	Medical-Problem 482 491	pneumonia
+T10	Medical-Problem 495 510	pulmonary edema
+T11	Medical-Assertion 513 515	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 516 540	larger pleural effusions
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

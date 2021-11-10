@@ -1,0 +1,43 @@
+T1	Medical-Problem 244 249	aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 253 268	mildly tortuous
+T3	Medical-Problem 275 289	calcifications
+T4	Medical-Anatomy 306 317	aortic knob
+T5	Lesion-Characteristic 320 329	Calcified
+T6	Lesion-Description 330 340	granulomas
+T7	Lesion-Anatomy 370 394	left upper lobe medially
+T8	Medical-Anatomy 476 481	Lungs
+T9	Medical-Problem 517 526	emphysema
+T10	Lesion-Characteristic 548 559	Ill-defined
+T11	Lesion-Description 560 567	nodular
+T12	Lesion-Characteristic 573 582	branching
+T13	Lesion-Anatomy 614 628	left lung base
+T14	Medical-Assertion 630 649	which could reflect
+A1	Medical-AssertionValue T14 possible
+T15	Medical-Problem 651 673	bronchial inflammation
+T16	Medical-Problem 677 686	infection
+T17	Medical-Problem 690 699	infection
+T18	Medical-Assertion 739 741	No
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 742 758	pleural effusion
+T20	Medical-Problem 762 774	pneumothorax
+T21	Medical-Assertion 798 800	no
+A3	Medical-AssertionValue T21 absent
+T22	Medical-Problem 801 806;808 829	acute osseous abnormalities
+T23	Medical-Assertion 858 871	suggestive of
+A4	Medical-AssertionValue T23 possible
+T24	Medical-Problem 875 890	inflammatory or
+E20	Medical-Problem:T24
+T25	Medical-Problem 891 909	infectious process
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7
+E9	Medical-Problem:T9 has-Medical-Anatomy:T8
+E11	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Medical-Problem:T16 has-Medical-Assertion:T14
+E16	Medical-Problem:T17 has-Medical-Assertion:T14
+E17	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Medical-Problem:T20 has-Medical-Assertion:T18
+E19	Medical-Problem:T22 has-Medical-Assertion:T21
+E21	Medical-Problem:T25 has-Medical-Assertion:T23

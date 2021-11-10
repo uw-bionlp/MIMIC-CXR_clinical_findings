@@ -1,0 +1,41 @@
+T1	Medical-Anatomy 346 351	heart
+T2	Medical-Assertion 355 358	not
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 359 367	enlarged
+T4	Medical-Problem 373 403	trachea is indented rightwards
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 416 427	mediastinal
+T6	Lesion-Description 428 438	adenopathy
+T7	Medical-Problem 478 487;489 503	Bilateral hilar fullness
+E6	Medical-Problem:T7
+T8	Medical-Assertion 504 519	likely reflects
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 520 525	hilar
+T10	Lesion-Description 526 536	adenopathy
+E8	Lesion-Description:T10
+T11	Medical-Problem 578 594	minimal scarring
+T12	Medical-Problem 599 617	pleural thickening
+T13	Medical-Anatomy 625 641	right upper lung
+T14	Medical-Problem 668 681	Focal opacity
+T15	Medical-Anatomy 689 704	left upper lung
+T16	Lesion-Anatomy 714 718;720 730	left upper lobe
+T17	Lesion-Description 731 735	mass
+T18	Medical-Assertion 790 792	no
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 793 816	new focal consolidation
+T20	Medical-Problem 818 830	pneumothorax
+T21	Medical-Problem 834 850	pleural effusion
+T22	Medical-Assertion 871 882	No evidence
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 886 895	pneumonia
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T13
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E15	Lesion-Description:T17 has-Lesion-Anatomy:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T18
+E18	Medical-Problem:T21 has-Medical-Assertion:T18
+E19	Medical-Problem:T23 has-Medical-Assertion:T22

@@ -1,0 +1,19 @@
+T1	Medical-Assertion 749 757	probably
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 760 784	left lower lobe collapse
+T3	Medical-Problem 795 802	contour
+E2	Medical-Problem:T3
+T4	Medical-Problem 811 834	depressed major fissure
+E3	Medical-Problem:T4
+T5	Lesion-Assertion 835 857	raising possibility of
+A2	Lesion-AssertionValue T5 possible
+T6	Lesion-Anatomy 860 864	lung
+T7	Lesion-Description 865 869	mass
+T8	Medical-Problem 872 882;884 900	Small left pleural effusion
+T9	Medical-Assertion 901 920	may also be present
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 1034 1051	some pneumothorax
+E7	Medical-Problem:T10
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T7 has-Lesion-Assertion:T5 has-Lesion-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T9

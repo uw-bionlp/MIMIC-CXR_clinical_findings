@@ -1,0 +1,26 @@
+T1	Medical-Problem 185 193	effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 309 351	reduction in size of left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 356 373;375 382	large homogeneous opacity
+T4	Medical-Anatomy 390 410	left mid hemi thorax
+T5	Medical-Assertion 411 422	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 423 449;451 456	residual loculated pleural fluid
+T7	Lesion-Description 468 472	mass
+T8	Lesion-Assertion 473 483	could have
+A2	Lesion-AssertionValue T8 possible
+T9	Medical-Anatomy 507 520	Adjacent lung
+T10	Medical-Problem 526 547	partially re-expanded
+T11	Medical-Problem 557 577	residual atelectasis
+T12	Medical-Problem 581 594	consolidation
+T13	Medical-Anatomy 603 618	left lower lobe
+T14	Medical-Problem 621 650	Multifocal linear atelectasis
+T15	Medical-Anatomy 669 678;680 694	right mid and lower lung
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Lesion-Description:T7 has-Lesion-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Anatomy:T13
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15

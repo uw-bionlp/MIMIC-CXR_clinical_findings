@@ -1,0 +1,24 @@
+T1	Medical-Problem 451 463	pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Assertion 472 474	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 475 493	large pneumothorax
+T4	Medical-Problem 520 546	extensive subcutaneous gas
+T5	Medical-Anatomy 557 575	lateral chest wall
+T6	Medical-Problem 628 650	Multiple rib fractures
+E5	Medical-Problem:T6
+T7	Medical-Problem 674 688	indistinctness
+T8	Medical-Anatomy 692 701	pulmonary
+T9	Medical-Problem 736 770	elevated pulmonary venous pressure
+T10	Medical-Assertion 772 790	most likely due to
+A2	Medical-AssertionValue T10 possible
+T11	Medical-Problem 791 805	over hydration
+T12	Medical-Assertion 1006 1008;1010 1029	no evidence clinically
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 1033 1053	bronchial disruption
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

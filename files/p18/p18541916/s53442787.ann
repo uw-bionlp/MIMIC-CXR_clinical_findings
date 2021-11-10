@@ -1,0 +1,24 @@
+T1	Lesion-Size 211 215	4-mm
+T2	Lesion-Characteristic 216 225	calcified
+T3	Lesion-Description 226 235	granuloma
+T4	Lesion-Anatomy 243 258	left lower lung
+T5	Medical-Assertion 261 272	No evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 276 284;286 314	acute or chronic diffuse lung disease
+T7	Medical-Assertion 317 319	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 320 335	acute pneumonia
+T9	Medical-Problem 339 354	pulmonary edema
+T10	Medical-Problem 358 368	Borderline
+E8	Medical-Problem:T10
+T11	Medical-Problem 402 421	Moderate tortuosity
+T12	Medical-Anatomy 430 444	thoracic aorta
+T13	Medical-Assertion 447 458	No evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 462 479	pleural effusions
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13

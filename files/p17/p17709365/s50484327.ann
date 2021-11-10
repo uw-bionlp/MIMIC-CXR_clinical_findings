@@ -1,0 +1,22 @@
+T1	Medical-Problem 331 343	Mild opacity
+T2	Medical-Anatomy 351 372	right mid lung on the
+T3	Medical-Assertion 426 439	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 440 448;450 470	early or developing pneumonia
+T5	Medical-Assertion 481 483	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 484 503	dense consolidation
+T7	Medical-Problem 505 521	pleural effusion
+T8	Medical-Problem 526 538	pneumothorax
+T9	Medical-Problem 715 729	Subtle opacity
+T10	Medical-Anatomy 737 766	right mid lung on the frontal
+T11	Medical-Assertion 772 775;777 786	may represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 787 802	early pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

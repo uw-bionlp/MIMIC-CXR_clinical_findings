@@ -1,0 +1,19 @@
+T1	Medical-Assertion 624 634	Resolution
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 638 661	residual linear opacity
+T3	Medical-Anatomy 669 689;691 711	right upper lobe and in the left mid lung
+T4	Medical-Problem 728 748	resolved atelectasis
+T5	Medical-Problem 776 819	interval appearance of mild pulmonary edema
+E4	Medical-Problem:T5
+T6	Medical-Assertion 832 838	likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 839 847;849 883	layering effusions, right greater than left
+T8	Medical-Assertion 970 972	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 973 985	pneumothorax
+T10	Medical-Problem 1012 1036	stable pneumopericardium
+E7	Medical-Problem:T10
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8

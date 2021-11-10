@@ -1,0 +1,38 @@
+T1	Medical-Problem 265 284	Superior retraction
+T2	Medical-Anatomy 292 296;298 313	left pulmonary hilum
+T3	Lesion-Anatomy 375 390	left upper lobe
+T4	Lesion-Description 391 397	nodule
+T5	Medical-Problem 415 435	Background emphysema
+E5	Medical-Problem:T5
+T6	Medical-Assertion 444 451;453 469	without convincing signs
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 473 482	pneumonia
+T8	Medical-Assertion 485 487	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 488 502	large effusion
+T10	Medical-Problem 506 518	pneumothorax
+T11	Medical-Assertion 521 523	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 534 544	congestion
+T13	Medical-Problem 548 553	edema
+T14	Medical-Assertion 592 594	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 595 603	free air
+T16	Medical-Anatomy 615 634	right hemidiaphragm
+T17	Lesion-Anatomy 659 674	Left upper lobe
+T18	Lesion-Description 675 681	nodule
+T19	Medical-Problem 687 696	Emphysema
+E15	Medical-Problem:T19
+T20	Medical-Assertion 702 704	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 714 723	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T16
+E14	Lesion-Description:T18 has-Lesion-Anatomy:T17
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

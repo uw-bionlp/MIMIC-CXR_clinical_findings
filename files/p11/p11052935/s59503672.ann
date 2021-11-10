@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 252 257	lungs
+T2	Medical-Problem 262 292;294 301	hyperinflated with parenchymal changes
+T3	Medical-Assertion 302 315	suggestive of
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 316 325	emphysema
+T5	Medical-Anatomy 327 361	particularly at the left lung apex
+T6	Medical-Problem 365 396	Increased interstitial markings
+T7	Medical-Anatomy 419 433	left lung base
+T8	Medical-Problem 589 602	Linear patchy
+T9	Medical-Anatomy 610 625	right lung base
+T10	Medical-Problem 645 656	atelectasis
+T11	Medical-Assertion 657 663	versus
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 665 673	scarring
+T13	Medical-Problem 691 722	Increased interstitial markings
+T14	Medical-Anatomy 730 744	left lung base
+T15	Medical-Assertion 747 765	potentially due to
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 766 781	chronic changes
+T17	Medical-Problem 825 834	component
+E14	Medical-Problem:T17
+T18	Medical-Problem 838 847	infection
+E15	Medical-Problem:T18
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

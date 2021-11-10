@@ -1,0 +1,22 @@
+T1	Medical-Problem 254 268	subtle opacity
+T2	Medical-Anatomy 277 300	medial right lower lobe
+T3	Medical-Problem 306 317	obscuration
+T4	Medical-Anatomy 338 343;345 358	right hemidiaphragm
+T5	Medical-Assertion 359 372	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 376 391	early pneumonia
+T7	Medical-Assertion 417 419	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 421 437	pleural effusion
+T9	Medical-Problem 441 453	pneumothorax
+T10	Medical-Problem 640 671	Subtle right lower lobe opacity
+E8	Medical-Problem:T10
+T11	Medical-Assertion 672 685	may represent
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 686 701	early pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

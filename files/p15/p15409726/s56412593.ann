@@ -1,0 +1,26 @@
+T1	Medical-Assertion 361 363	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 364 383	focal consolidation
+T3	Medical-Problem 385 401	pleural effusion
+T4	Medical-Problem 405 420	pulmonary edema
+T5	Lesion-Size-Trend 442 445	new
+A2	Lesion-Size-TrendValue T5 new
+T6	Lesion-Description 446 452	nodule
+T7	Lesion-Anatomy 460 483	right upper-to-mid lung
+T8	Medical-Problem 490 515;517 525	right pulmonary artery is enlarged
+E6	Medical-Problem:T8
+T9	Medical-Assertion 580 582	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 583 602	focal consolidation
+T11	Lesion-Size-Trend 613 616	New
+A4	Lesion-Size-TrendValue T11 new
+T12	Lesion-Description 617 623	nodule
+T13	Lesion-Anatomy 631 647	right upper lung
+T14	Medical-Problem 653 680	enlarged pulmonary arteries
+E10	Medical-Problem:T14
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Size-Trend:T5 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Lesion-Description:T12 has-Lesion-Size-Trend:T11 has-Lesion-Anatomy:T13

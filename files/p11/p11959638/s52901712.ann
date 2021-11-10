@@ -1,0 +1,31 @@
+T1	Medical-Problem 275 331	Interval worsening of infiltrative pulmonary abnormality
+T2	Medical-Anatomy 339 350;352 356	right lower lobe
+T3	Medical-Problem 363 376	consolidation
+T4	Medical-Assertion 412 427	could be due to
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 429 445	asymmetric edema
+T6	Medical-Assertion 458 472	unlikely to be
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 476 502;504 526	isolated area of recurrent pneumocystis pneumonia
+T8	Medical-Problem 579 622	Episodes of transient generalized worsening
+E6	Medical-Problem:T8
+T9	Medical-Assertion 627 648	most likely explained
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 653 686	periods of pulmonary edema due to
+E7	Medical-Problem:T10
+T11	Medical-Problem 687 702	volume overload
+T12	Medical-Problem 706 728	cardiac decompensation
+T13	Medical-Problem 733 761	Small right pleural effusion
+E10	Medical-Problem:T13
+T14	Medical-Assertion 774 776	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 777 789	pneumothorax
+T16	Medical-Problem 838 850	pleural edge
+E12	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T9
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

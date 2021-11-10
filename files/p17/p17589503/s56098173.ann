@@ -1,0 +1,23 @@
+T1	Medical-Anatomy 506 514	thoracic
+E1	Medical-Anatomy:T1
+T2	Medical-Assertion 544 546	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 547 563	pleural effusion
+T4	Medical-Problem 568 580	pneumothorax
+T5	Medical-Problem 596 658	mildly displaced, unchanged right seventh lateral rib fracture
+E4	Medical-Problem:T5
+T6	Medical-Problem 662 681	Calcified densities
+T7	Medical-Anatomy 702 740;742 747	left scapula and inferior glenohumeral joint
+T8	Medical-Assertion 763 769	likely
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 770 782	degenerative
+T10	Medical-Problem 786 799	posttraumatic
+T11	Medical-Assertion 939 941	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 942 954	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

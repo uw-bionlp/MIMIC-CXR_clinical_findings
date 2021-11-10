@@ -1,0 +1,25 @@
+T1	Medical-Problem 281 294	Faint opacity
+T2	Medical-Anatomy 303 330	periphery of the left lower
+T3	Medical-Assertion 334 340	likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 341 352	atelectasis
+T5	Medical-Anatomy 400 410	right lung
+T6	Medical-Assertion 420 427	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 428 447	focal consolidation
+T8	Medical-Assertion 451 462	No evidence
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 466 483	pleural effusions
+T10	Medical-Problem 487 499	pneumothorax
+T11	Medical-Problem 707 720	Faint opacity
+T12	Medical-Anatomy 728 760	periphery of the left lower lung
+T13	Medical-Assertion 764 770	likely
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 772 783	atelectasis
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

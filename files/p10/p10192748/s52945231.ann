@@ -1,0 +1,51 @@
+T1	Medical-Problem 243 251	Aeration
+T2	Medical-Anatomy 259 268	left lobe
+T3	Medical-Problem 288 299	volume loss
+T4	Medical-Problem 304 318;320 336	increased left pleural effusion
+T5	Medical-Problem 342 349	opacity
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 357 368	left pleura
+T7	Medical-Assertion 372 380	probably
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 381 393;395 402	fluid in the fissure
+T9	Lesion-Assertion 404 415	less likely
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Description 418 422	mass
+T11	Medical-Problem 426 435	infection
+T12	Medical-Problem 439 461	right pleural effusion
+E10	Medical-Problem:T12
+T13	Medical-Assertion 477 479	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 480 492	pneumothorax
+T15	Medical-Problem 550 559	effusions
+E12	Medical-Problem:T15
+T16	Medical-Problem 562 588	Aortic knob calcifications
+E13	Medical-Problem:T16
+T17	Medical-Problem 615 621;623 632	marked scoliosis
+T18	Medical-Anatomy 640 654	thoracic spine
+T19	Medical-Problem 725 747;749 753	left lower lobe volume loss
+E16	Medical-Problem:T19
+T20	Medical-Problem 755 776	Supervening infection
+T21	Medical-Assertion 777 795	cannot be excluded
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 803 826	Left pleural opacity is
+E18	Medical-Problem:T22
+T23	Medical-Assertion 827 833	likely
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 834 854	fluid in the fissure
+T25	Medical-Assertion 856 867	less likely
+A6	Medical-AssertionValue T25 possible
+T26	Lesion-Description 868 872	mass
+E20	Lesion-Description:T26
+T27	Medical-Problem 877 886	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T2
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T6
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T20 has-Medical-Assertion:T21
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E21	Medical-Problem:T27 has-Medical-Assertion:T25

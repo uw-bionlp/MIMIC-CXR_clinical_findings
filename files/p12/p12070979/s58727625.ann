@@ -1,0 +1,21 @@
+T1	Lesion-Assertion 224 226	no
+A1	Lesion-AssertionValue T1 absent
+T2	Lesion-Characteristic 228 238	suspicious
+T3	Lesion-Description 239 245	lesion
+T4	Lesion-Anatomy 253 263	right apex
+T5	Medical-Assertion 295 297	No
+A2	Medical-AssertionValue T5 absent
+T6	Lesion-Description 310 316	nodule
+E4	Lesion-Description:T6
+T7	Medical-Problem 318 331	consolidation
+T8	Medical-Problem 333 341	effusion
+T9	Medical-Problem 346 358	pneumothorax
+T10	Medical-Problem 400 407	opacity
+T11	Medical-Anatomy 415 425	right apex
+T12	Medical-Assertion 429 441	not apparent
+A3	Medical-AssertionValue T12 absent
+E2	Lesion-Description:T3 has-Lesion-Assertion:T1 has-Lesion-Characteristic:T2 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11 has-Medical-Assertion:T12

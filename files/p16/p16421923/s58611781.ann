@@ -1,0 +1,37 @@
+T1	Medical-Assertion 220 222	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 223 256	interstitial opacities suggesting
+E1	Medical-Problem:T2
+T3	Medical-Problem 257 265	fibrosis
+T4	Lesion-Anatomy 270 286	right lower lung
+T5	Lesion-Description 287 293	nodule
+T6	Lesion-Size-Trend 297 303	stable
+A2	Lesion-Size-TrendValue T6 no-change
+T7	Lesion-Assertion 317 334	likely represents
+A3	Lesion-AssertionValue T7 possible
+T8	Lesion-Characteristic 335 344	calcified
+T9	Lesion-Description 346 355	granuloma
+T10	Medical-Problem 362 381	large hiatal hernia
+E7	Medical-Problem:T10
+T11	Medical-Problem 402 417	volumes are low
+E8	Medical-Problem:T11
+T12	Medical-Problem 424 448	mild basilar atelectasis
+E9	Medical-Problem:T12
+T13	Medical-Assertion 460 462	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 463 482	focal consolidation
+T15	Medical-Problem 484 500	pleural effusion
+T16	Medical-Problem 506 518	pneumothorax
+T17	Medical-Problem 531 563	multiple compression deformities
+T18	Medical-Anatomy 571 579;581 586	thoracic spine
+T19	Medical-Assertion 633 635	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 648 685	amiodarone-related pulmonary fibrosis
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T6
+E6	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Characteristic:T8
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T19

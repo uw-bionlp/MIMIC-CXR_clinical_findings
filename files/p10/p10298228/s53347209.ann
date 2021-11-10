@@ -1,0 +1,21 @@
+T1	Medical-Problem 378 400	heart remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 407 418	may reflect
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 419 431	cardiomegaly
+T4	Medical-Problem 436 447;449 457	pericardial effusion
+T5	Medical-Assertion 458 483	should also be considered
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Assertion 510 526	without evidence
+A3	Medical-AssertionValue T6 absent
+T7	Medical-Problem 531 559	focal airspace consolidation
+T8	Medical-Problem 561 578	pleural effusions
+T9	Medical-Problem 582 594	pneumothorax
+T10	Lesion-Anatomy 707 719	retrosternal
+T11	Lesion-Description 720 724	mass
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T5
+E4	Medical-Problem:T7 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T6
+E8	Lesion-Description:T11 has-Lesion-Anatomy:T10

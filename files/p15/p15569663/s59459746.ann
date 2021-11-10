@@ -1,0 +1,30 @@
+T1	Medical-Problem 229 259	Chronic rightward shift of the
+T2	Medical-Anatomy 260 271	mediastinal
+T3	Medical-Problem 373 389	Chronic collapse
+T4	Medical-Anatomy 397 416	residual right lung
+T5	Medical-Problem 441 470	marked bronchiectatic changes
+T6	Medical-Problem 536 560	mild vascular congestion
+E6	Medical-Problem:T6
+T7	Medical-Problem 563 566;568 585	New increased opacity
+T8	Medical-Anatomy 595 625	lower portion of the left lung
+T9	Medical-Assertion 626 641	could represent
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 643 656	consolidation
+T11	Medical-Problem 674 699	layering pleural effusion
+T12	Medical-Problem 704 720	pleural effusion
+T13	Medical-Assertion 730 739	suspected
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 798 822	mild vascular congestion
+E12	Medical-Problem:T14
+T15	Medical-Problem 863 893	developing parenchymal opacity
+T16	Medical-Anatomy 901 905;907 916	left lung base
+T17	Medical-Assertion 920 932	not excluded
+A3	Medical-AssertionValue T17 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

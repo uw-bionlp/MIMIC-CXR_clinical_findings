@@ -1,0 +1,40 @@
+T1	Lesion-Size 314 318	5 mm
+T2	Lesion-Description 319 326	nodular
+E2	Lesion-Description:T2
+T3	Lesion-Description 327 334	opacity
+T4	Lesion-Anatomy 342 352	right apex
+T5	Lesion-Size-Trend 356 362	stable
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Lesion-Assertion 386 403	likely represents
+A2	Lesion-AssertionValue T6 possible
+T7	Lesion-Characteristic 406 415	calcified
+T8	Lesion-Description 416 425	granuloma
+T9	Lesion-Description 428 445	Nodular opacities
+T10	Lesion-Anatomy 449 453;455 465	both lung bases
+T11	Medical-Anatomy 497 502	Lungs
+T12	Medical-Assertion 507 514	without
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 515 529;531 544	focal airspace consolidation
+T14	Medical-Problem 556 565	pneumonia
+T15	Medical-Assertion 568 570	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 571 586	pulmonary edema
+T17	Medical-Problem 590 602	pneumothorax
+T18	Medical-Problem 606 614	Blunting
+T19	Medical-Anatomy 622 645	left costophrenic angle
+T20	Medical-Assertion 646 661	likely reflects
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 662 676	small effusion
+T22	Medical-Assertion 734 736	No
+A6	Medical-AssertionValue T22 absent
+T23	Medical-Problem 737 749	pneumothorax
+E3	Lesion-Description:T3 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T4 has-Lesion-Size-Trend:T5
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T4 has-Lesion-Assertion:T6 has-Lesion-Characteristic:T7
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T11 has-Medical-Assertion:T12
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E17	Medical-Problem:T23 has-Medical-Assertion:T22

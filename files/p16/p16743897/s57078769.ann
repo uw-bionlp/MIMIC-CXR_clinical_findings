@@ -1,0 +1,29 @@
+T1	Medical-Problem 291 328	moderate-sized right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 333 351;353 361	trace left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 397 410	Consolidation
+T4	Medical-Anatomy 418 428	right base
+T5	Medical-Assertion 430 447	likely represents
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 448 471	compressive atelectasis
+T7	Medical-Problem 477 497	underlying pneumonia
+T8	Medical-Assertion 498 507;509 517	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 773 775	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 776 788	pneumothorax
+T11	Medical-Problem 818 872	Stable moderate right and trace left pleural effusions
+E8	Medical-Problem:T11
+T12	Medical-Problem 880 921	underlying right lower lung consolidation
+E9	Medical-Problem:T12
+T13	Medical-Assertion 923 944	which could represent
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 945 956	atelectasis
+T15	Medical-Problem 961 970	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13

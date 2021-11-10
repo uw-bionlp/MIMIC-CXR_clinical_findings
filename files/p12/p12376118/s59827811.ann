@@ -1,0 +1,46 @@
+T1	Medical-Problem 215 244	Lung volumes are markedly low
+E1	Medical-Problem:T1
+T2	Medical-Problem 372 384	Cardiomegaly
+E2	Medical-Problem:T2
+T3	Medical-Problem 415 440	rounded calcified density
+T4	Medical-Anatomy 461 471;473 477	left chest wall
+T5	Lesion-Assertion 478 495	likely represents
+A1	Lesion-AssertionValue T5 possible
+T6	Lesion-Characteristic 498 507	calcified
+T7	Lesion-Description 508 514	breast
+E6	Lesion-Description:T7
+T8	Lesion-Description 515 522	implant
+T9	Medical-Problem 524 538	Subtle opacity
+T10	Medical-Anatomy 546 551;553 562	right lung base
+T11	Medical-Assertion 611 624	may represent
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 626 637	atelectasis
+T13	Medical-Problem 646 655	pneumonia
+T14	Medical-Assertion 656 674	cannot be excluded
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 709 733	Bronchovascular crowding
+E12	Medical-Problem:T15
+T16	Medical-Problem 754 773	perihilar opacities
+E13	Medical-Problem:T16
+T17	Medical-Assertion 813 815	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 816 830	large effusion
+T19	Medical-Problem 834 846	pneumothorax
+T20	Medical-Problem 892 916	calcified thoracic aorta
+E16	Medical-Problem:T20
+T21	Medical-Problem 979 993	Subtle opacity
+T22	Medical-Anatomy 1001 1016	right lung base
+T23	Medical-Assertion 1051 1059	question
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1060 1071	atelectasis
+T25	Medical-Problem 1079 1088	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T8 has-Lesion-Assertion:T5 has-Lesion-Characteristic:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T17
+E17	Medical-Problem:T21 has-Medical-Anatomy:T22
+E19	Medical-Problem:T24 has-Medical-Assertion:T23
+E20	Medical-Problem:T25 has-Medical-Assertion:T23

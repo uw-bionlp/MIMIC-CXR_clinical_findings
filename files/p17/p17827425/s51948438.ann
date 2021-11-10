@@ -1,0 +1,23 @@
+T1	Lesion-Count 184 192	Multiple
+T2	Lesion-Anatomy 193 202	pulmonary
+T3	Lesion-Description 203 213	metastases
+T4	Medical-Problem 309 334	increase in opacification
+T5	Medical-Anatomy 339 386	both lower lobes, in particular left lower lobe
+T6	Medical-Assertion 392 416	might be consistent with
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 418 451	interval development of infection
+T8	Medical-Problem 453 475	Left mediastinal shift
+E7	Medical-Problem:T8
+T9	Lesion-Size-Trend 549 552	new
+A2	Lesion-Size-TrendValue T9 new
+T10	Lesion-Description 553 568	lymphadenopathy
+T11	Lesion-Size-Trend 632 653	gradually progressing
+A3	Lesion-Size-TrendValue T11 increasing
+T12	Medical-Assertion 676 678	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 679 691	pneumothorax
+E3	Lesion-Description:T3 has-Lesion-Count:T1 has-Lesion-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Lesion-Description:T10 has-Lesion-Size-Trend:T9 has-Lesion-Size-Trend:T11
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

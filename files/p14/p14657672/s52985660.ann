@@ -1,0 +1,26 @@
+T1	Medical-Problem 153 181	increased hazy opacification
+T2	Medical-Anatomy 189 209;211 248	posterior lower lung zones, likely in the right lower lobe
+T3	Medical-Assertion 333 354	may indicate possible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 355 364	infection
+T5	Medical-Assertion 377 379	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 380 385	edema
+T7	Medical-Problem 387 403	pleural effusion
+T8	Medical-Problem 408 420	pneumothorax
+T9	Medical-Assertion 477 479	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 480 498	free air below the
+T11	Medical-Problem 532 550	Hazy opacification
+T12	Medical-Anatomy 551 594	overlying the spine in the right lower lobe
+T13	Medical-Assertion 595 607	may indicate
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 609 618	infection
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

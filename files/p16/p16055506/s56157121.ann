@@ -1,0 +1,22 @@
+T1	Medical-Assertion 338 340	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 341 353	pneumothorax
+T3	Medical-Anatomy 369 387	left hemidiaphragm
+T4	Medical-Problem 421 430;432 445	prominent amount of gas
+T5	Medical-Anatomy 457 464	stomach
+T6	Medical-Problem 467 481	Patchy opacity
+T7	Medical-Anatomy 489 498	left base
+T8	Medical-Assertion 499 505;507 515	likely reflects
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 516 527	atelectasis
+T10	Medical-Problem 539 563	early infectious process
+T11	Medical-Assertion 564 578;580 590	should also be considered
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 650 657;659 672	minimal amount of air
+T13	Medical-Anatomy 684 720	left lateral chest wall soft tissues
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T11
+E9	Medical-Problem:T12 has-Medical-Anatomy:T13

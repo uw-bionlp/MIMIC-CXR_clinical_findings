@@ -1,0 +1,20 @@
+T1	Medical-Assertion 146 148	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 149 161	pneumothorax
+T3	Medical-Problem 164 183;185 214	Persistent moderate  bilateral pleural effusions,
+E2	Medical-Problem:T3
+T4	Medical-Problem 238 262	Moderate pulmonary edema
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 954 961	cardiac
+E4	Medical-Anatomy:T5
+T6	Medical-Problem 1014 1029	pulmonary edema
+E5	Medical-Problem:T6
+T7	Medical-Assertion 1064 1070	likely
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 1071 1085;1087 1096	small layering effusions
+T9	Medical-Assertion 1099 1101	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 1102 1114	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

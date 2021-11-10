@@ -1,0 +1,26 @@
+T1	Medical-Problem 352 363	abnormality
+T2	Medical-Anatomy 371 386	lung parenchyma
+T3	Lesion-Size 392 397	small
+T4	Lesion-Characteristic 398 407	calcified
+T5	Lesion-Description 408 417	granuloma
+T6	Lesion-Anatomy 426 495	left lung base, projecting over the lateral aspects of the eighth rib
+T7	Medical-Assertion 587 589	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 590 620	other lung parenchymal changes
+T9	Lesion-Assertion 636 647	no evidence
+A2	Lesion-AssertionValue T9 absent
+T10	Lesion-Description 651 658	nodules
+T11	Lesion-Description 663 669	masses
+T12	Medical-Assertion 706 708	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 709 726	pleural effusions
+T14	Medical-Assertion 729 731	No
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 732 740;742 757	areas of rib destruction
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T9
+E9	Lesion-Description:T11 has-Lesion-Assertion:T9
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

@@ -1,0 +1,28 @@
+T1	Medical-Anatomy 444 452	Thoracic
+T2	Medical-Problem 462 470	unfolded
+T3	Medical-Problem 476 491;493 507	atherosclerotic calcifications
+T4	Medical-Anatomy 514 532	right heart border
+T5	Medical-Problem 536 544	obscured
+T6	Medical-Problem 548 563	dense opacities
+T7	Medical-Anatomy 565 590	throughout the right lung
+T8	Medical-Assertion 597 614	likely represents
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 615 641	asymmetric pulmonary edema
+T10	Medical-Problem 644 659	Small effusions
+T11	Medical-Assertion 660 678	cannot be excluded
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 690 713	remote lateral fracture
+T13	Medical-Anatomy 722 735	right 9th rib
+T14	Medical-Problem 814 853	Bilateral pulmonary opacity, right>left
+E12	Medical-Problem:T14
+T15	Medical-Assertion 855 861	likely
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 862 882;884 889	asymmetric pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4 has-Medical-Anatomy:T7
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15

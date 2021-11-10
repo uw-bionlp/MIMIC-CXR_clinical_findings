@@ -1,0 +1,27 @@
+T1	Medical-Problem 298 344	mediastinal and pulmonary vascular engorgement
+E1	Medical-Problem:T1
+T2	Medical-Problem 354 361;363 377	cardiac decompensation
+E2	Medical-Problem:T2
+T3	Medical-Problem 380 399	Deposition of edema
+T4	Medical-Assertion 400 411	may explain
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 416 441;443 456	increase in the extent of consolidation
+T6	Medical-Anatomy 464 480	right lower lobe
+T7	Medical-Problem 497 510	consolidation
+E6	Medical-Problem:T7
+T8	Medical-Problem 588 601	Consolidation
+T9	Medical-Anatomy 609 624	left lower lobe
+T10	Medical-Anatomy 678 703	descending thoracic aorta
+T11	Medical-Assertion 714 724	presumably
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 725 736	atelectasis
+T13	Medical-Assertion 1000 1002	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 1004 1016	pneumothorax
+T15	Medical-Problem 1020 1048	substantial pleural effusion
+E3	Medical-Problem:T3 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13

@@ -1,0 +1,39 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 49	consolidation
+T3	Medical-Problem 52 98	Residual fibrotic changes from prior pneumonia
+E2	Medical-Problem:T3
+T4	Medical-Problem 441 464	extensive consolidation
+T5	Medical-Anatomy 476 541;543 546	all of the left lung and the right upper lung at the beginning of ___
+T6	Medical-Problem 549 571	Residual peribronchial
+E5	Medical-Problem:T6
+T7	Medical-Problem 572 585	opacification
+T8	Medical-Anatomy 593 604	upper lungs
+T9	Medical-Assertion 610 618	probably
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 619 627	scarring
+T11	Medical-Problem 659 686;688 720	very slight increase in the pleural perfusion of abnormality
+T12	Medical-Anatomy 728 743	left upper lung
+T13	Medical-Assertion 749 762;764 768	not enough to call
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 769 778	pneumonia
+T15	Medical-Assertion 903 905	no
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 906 913;915 926	pleural abnormality
+T17	Medical-Problem 983 991;993 1010	medially displaced stomach
+E13	Medical-Problem:T17
+T18	Medical-Problem 1014 1043	postoperative gastric remnant
+E14	Medical-Problem:T18
+T19	Medical-Assertion 1046 1048	No
+A5	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1049 1056	pleural
+E15	Medical-Problem:T20
+T21	Medical-Problem 1057 1068	abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T21 has-Medical-Assertion:T19

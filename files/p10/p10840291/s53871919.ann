@@ -1,0 +1,14 @@
+T1	Medical-Assertion 190 201	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 205 234	acute cardiopulmonary disease
+T3	Lesion-Assertion 251 253;255 263	no evidence
+A2	Lesion-AssertionValue T3 absent
+T4	Lesion-Anatomy 267 272	hilar
+T5	Lesion-Anatomy 276 287	mediastinal
+T6	Lesion-Description 288 299	lymph nodes
+T7	Medical-Problem 303 329;331 343	prominence of interstitial lung disease
+E5	Medical-Problem:T7
+T8	Medical-Problem 372 383	sarcoidosis
+E6	Medical-Problem:T8
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T5

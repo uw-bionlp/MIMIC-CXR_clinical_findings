@@ -1,0 +1,21 @@
+T1	Medical-Problem 200 221	Postoperative changes
+T2	Medical-Anatomy 225 232	gastric
+T3	Medical-Problem 267 276;278 285	increased opacity
+T4	Medical-Anatomy 302 333	right aspect of the mediastinum
+T5	Medical-Anatomy 340 345	lungs
+T6	Medical-Assertion 350 355	clear
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 357 376	focal consolidation
+T8	Medical-Problem 380 388	effusion
+T9	Medical-Assertion 453 455	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 456 483	acute osseous abnormalities
+T11	Medical-Assertion 504 506	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 507 536	acute cardiopulmonary process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

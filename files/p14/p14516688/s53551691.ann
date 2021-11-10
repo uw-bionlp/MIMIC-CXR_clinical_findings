@@ -1,0 +1,21 @@
+T1	Medical-Anatomy 194 199	Lungs
+T2	Medical-Problem 204 229	chronically hyperinflated
+T3	Medical-Problem 232 270	Small areas of irregular opacification
+T4	Medical-Anatomy 279 308	left base on the frontal view
+T5	Medical-Anatomy 313 340;342 400	projecting over the cardiac silhouette on the lateral, perhaps in the right lower lobe
+T6	Medical-Assertion 401 409	could be
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 410 415;417 435	small areas of pneumonia
+T8	Medical-Assertion 547 549	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 550 568;570 581	pulmonary vascular abnormality
+T10	Medical-Problem 585 600	pulmonary edema
+T11	Medical-Problem 605 633	tiny volume of pleural fluid
+E9	Medical-Problem:T11
+T12	Medical-Problem 642 664	collecting posteriorly
+E10	Medical-Problem:T12
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8

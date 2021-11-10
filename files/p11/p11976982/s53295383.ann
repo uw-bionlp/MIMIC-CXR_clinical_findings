@@ -1,0 +1,22 @@
+T1	Lesion-Anatomy 227 238	Mediastinal
+T2	Lesion-Description 239 254	lymphadenopathy
+T3	Lesion-Anatomy 256 271	bilateral hilar
+T4	Lesion-Description 273 288	lymphadenopathy
+T5	Medical-Problem 290 322	loculated right pleural effusion
+E5	Medical-Problem:T5
+T6	Lesion-Count 328 336	multiple
+T7	Lesion-Anatomy 337 351	bilateral lung
+T8	Lesion-Description 353 360	nodules
+T9	Lesion-Size-Trend 381 390	unchanged
+A1	Lesion-Size-TrendValue T9 no-change
+T10	Medical-Assertion 433 435	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 436 454	new consolidations
+T12	Lesion-Count 469 477	Multiple
+T13	Lesion-Characteristic 478 485	osseous
+T14	Lesion-Description 486 496	metastases
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E8	Lesion-Description:T8 has-Lesion-Count:T6 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E12	Lesion-Description:T14 has-Lesion-Count:T12 has-Lesion-Characteristic:T13

@@ -1,0 +1,26 @@
+T1	Medical-Problem 126 139	Consolidation
+T2	Medical-Problem 144 155	volume loss
+T3	Medical-Anatomy 178 189;191 204	right upper lobe, less so
+T4	Medical-Anatomy 212 233	right infrahilar lung
+T5	Medical-Problem 236 268	Diffuse interstitial abnormality
+E5	Medical-Problem:T5
+T6	Medical-Assertion 270 282	could be due
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 283 307	moderate pulmonary edema
+T8	Lesion-Description 317 327	nodularity
+E7	Lesion-Description:T8
+T9	Lesion-Assertion 328 336	suggests
+A2	Lesion-AssertionValue T9 possible
+T10	Lesion-Description 338 352	carcinomatosis
+T11	Medical-Problem 355 382	Pleural effusions are small
+E9	Medical-Problem:T11
+T12	Lesion-Description 385 408	Mass-like consolidation
+T13	Lesion-Anatomy 423 439	right suprahilar
+T14	Lesion-Anatomy 444 463	left mid lung zones
+T15	Medical-Problem 470 488;490 495	aorta is generally large
+E13	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Lesion-Description:T10 has-Lesion-Assertion:T9
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T14

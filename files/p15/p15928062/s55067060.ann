@@ -1,0 +1,26 @@
+T1	Medical-Problem 326 337	Ill-defined
+E1	Medical-Problem:T1
+T2	Medical-Problem 338 363	patchy airspace opacities
+T3	Medical-Anatomy 388 404;406 410	right lower lung zone
+T4	Medical-Assertion 411 422	may reflect
+A1	Medical-AssertionValue T4 possible
+T5	Lesion-Characteristic 427 436	clustered
+T6	Lesion-Characteristic 437 450	centrilobular
+T7	Lesion-Description 451 458	nodular
+T8	Medical-Assertion 492 494	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 495 511	pleural effusion
+T10	Medical-Problem 515 527	pneumothorax
+T11	Medical-Problem 631 642	Ill-defined
+E9	Medical-Problem:T11
+T12	Medical-Problem 643 661	airspace opacities
+T13	Medical-Anatomy 688 709	right lower lung zone
+T14	Medical-Assertion 767 784	may be reflective
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 789 809	aspiration pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Lesion-Description:T7 has-Lesion-Characteristic:T5 has-Lesion-Characteristic:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14

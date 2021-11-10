@@ -1,0 +1,22 @@
+T1	Medical-Problem 480 505	hypoventilated appearance
+T2	Medical-Anatomy 509 519	both lungs
+T3	Medical-Problem 555 580	left basal linear density
+E3	Medical-Problem:T3
+T4	Medical-Problem 620 631	atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Assertion 643 654	no evidence
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 658 677;679 690	new acute pulmonary infiltrates
+T7	Medical-Anatomy 699 722	lateral pleural sinuses
+T8	Medical-Assertion 737 739	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 740 752	pneumothorax
+T10	Medical-Problem 929 933	tube
+E8	Medical-Problem:T10
+T11	Medical-Assertion 978 980	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 981 1008	new pulmonary abnormalities
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5 has-Medical-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

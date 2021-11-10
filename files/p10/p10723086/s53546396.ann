@@ -1,0 +1,52 @@
+T1	Medical-Problem 38 64	malpositioned enteric tube
+T2	Medical-Anatomy 97 110;112 121	left mainstem  bronchus
+T3	Medical-Anatomy 133 148	left lower lobe
+T4	Medical-Assertion 150 152	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 153 177	other significant change
+T6	Medical-Problem 450 476	malpositioned enteric tube
+T7	Medical-Anatomy 509 522;524 533	left mainstem  bronchus
+T8	Medical-Anatomy 545 560	left lower lobe
+T9	Medical-Assertion 562 564	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 565 589	other significant change
+T11	Medical-Problem 871 897	malpositioned enteric tube
+T12	Medical-Anatomy 930 943;945 954	left mainstem  bronchus
+T13	Medical-Anatomy 966 981	left lower lobe
+T14	Medical-Assertion 983 985	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 986 1010	other significant change
+T16	Lesion-Count 1900 1908	multiple
+T17	Lesion-Anatomy 1909 1928	bilateral pulmonary
+T18	Lesion-Description 1929 1936	nodules
+T19	Medical-Problem 2020 2032;2034 2039	superimposed edema
+E16	Medical-Problem:T19
+T20	Medical-Problem 2052 2075	remains stably enlarged
+E17	Medical-Problem:T20
+T21	Medical-Assertion 2082 2093	may reflect
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 2094 2106	cardiomegaly
+T23	Medical-Problem 2120 2140	pericardial effusion
+T24	Medical-Assertion 2141 2159	cannot be excluded
+A5	Medical-AssertionValue T24 possible
+T25	Medical-Problem 2162 2182	Retrocardiac opacity
+E20	Medical-Problem:T25
+T26	Medical-Assertion 2183 2186;2188 2195	may reflect
+A6	Medical-AssertionValue T26 possible
+T27	Medical-Problem 2196 2226	partial lower lobe atelectasis
+T28	Medical-Problem 2237 2246	infection
+T29	Medical-Assertion 2247 2265;2267 2275	cannot be entirely excluded
+A7	Medical-AssertionValue T29 possible
+T30	Medical-Problem 2320 2332	pneumothorax
+E23	Medical-Problem:T30
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E15	Lesion-Description:T18 has-Lesion-Count:T16 has-Lesion-Anatomy:T17
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Assertion:T24
+E21	Medical-Problem:T27 has-Medical-Assertion:T26
+E22	Medical-Problem:T28 has-Medical-Assertion:T29

@@ -1,0 +1,28 @@
+T1	Medical-Problem 412 431	moderate tortuosity
+T2	Medical-Anatomy 439 444	aorta
+T3	Medical-Anatomy 504 523	right hemidiaphragm
+T4	Medical-Problem 529 548	substantial opacity
+T5	Medical-Anatomy 564 575	right hilum
+T6	Medical-Anatomy 580 607	nearby cardiophrenic sulcus
+T7	Lesion-Anatomy 681 696	lung parenchyma
+T8	Lesion-Assertion 698 700	no
+A1	Lesion-AssertionValue T8 absent
+T9	Lesion-Characteristic 701 709	definite
+T10	Lesion-Description 710 717	nodules
+T11	Medical-Problem 778 806	medial right basilar opacity
+E10	Medical-Problem:T11
+T12	Medical-Problem 839 855	air bronchograms
+E11	Medical-Problem:T12
+T13	Medical-Assertion 857 864	perhaps
+A2	Medical-AssertionValue T13 possible
+T14	Medical-Problem 881 899	radiation fibrosis
+T15	Lesion-Characteristic 938 948	coinciding
+T16	Lesion-Characteristic 949 958	malignant
+T17	Lesion-Description 959 963	mass
+T18	Lesion-Assertion 979 982;984 992	not excluded
+A3	Lesion-AssertionValue T18 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T3 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E9	Lesion-Description:T10 has-Lesion-Anatomy:T7 has-Lesion-Assertion:T8 has-Lesion-Characteristic:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E15	Lesion-Description:T17 has-Lesion-Characteristic:T15 has-Lesion-Characteristic:T16 has-Lesion-Assertion:T18

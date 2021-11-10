@@ -1,0 +1,21 @@
+T1	Medical-Problem 110 134	Free intraperitoneal air
+T2	Medical-Anatomy 135 164	below the right hemidiaphragm
+T3	Medical-Problem 289 306	perforated viscus
+E3	Medical-Problem:T3
+T4	Medical-Problem 368 406;408 425	Small-to-moderate left and small right pleural effusions
+E4	Medical-Problem:T4
+T5	Medical-Problem 480 511	accompanying slight improvement
+E5	Medical-Problem:T5
+T6	Medical-Problem 515 534	bibasilar opacities
+E6	Medical-Problem:T6
+T7	Medical-Problem 541 549;551 560	residual opacities
+T8	Medical-Anatomy 583 627	retrocardiac region, left greater than right
+T9	Medical-Assertion 631 633	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 634 660	new areas of consolidation
+T11	Medical-Problem 686 707	new site of infection
+T12	Medical-Anatomy 716 721	lungs
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T12
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12

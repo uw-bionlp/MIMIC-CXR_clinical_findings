@@ -1,0 +1,31 @@
+T1	Medical-Problem 145 159	tortuous aorta
+E1	Medical-Problem:T1
+T2	Medical-Problem 166 187	calcified aortic knob
+E2	Medical-Problem:T2
+T3	Medical-Problem 200 210	dilatation
+T4	Medical-Anatomy 218 233	ascending aorta
+T5	Medical-Problem 237 258	Bibasilar atelectasis
+E5	Medical-Problem:T5
+T6	Lesion-Count 272 280	Multiple
+T7	Lesion-Size 281 285	tiny
+T8	Lesion-Description 286 293	nodules
+T9	Lesion-Anatomy 345 350	lungs
+T10	Medical-Assertion 432 434	No
+A1	Medical-AssertionValue T10 absent
+T11	Medical-Problem 435 451	pleural effusion
+T12	Medical-Problem 455 467	pneumothorax
+T13	Medical-Problem 472 496	veterbra plana deformity
+T14	Medical-Anatomy 504 531	mid thoracic veterbral body
+T15	Medical-Problem 582 607	Ascending aortic aneurysm
+E14	Medical-Problem:T15
+T16	Medical-Assertion 615 626	No evidence
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 630 653	acute pulmonary process
+T18	Medical-Problem 659 683	Veterbra plana deformity
+E16	Medical-Problem:T18
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E8	Lesion-Description:T8 has-Lesion-Count:T6 has-Lesion-Size-Present:T7 has-Lesion-Anatomy:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T10
+E11	Medical-Problem:T12 has-Medical-Assertion:T10
+E12	Medical-Problem:T13 has-Medical-Anatomy:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T16

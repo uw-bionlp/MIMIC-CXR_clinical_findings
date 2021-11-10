@@ -1,0 +1,51 @@
+T1	Medical-Problem 200 229	Atherosclerotic calcification
+T2	Medical-Anatomy 237 242	aorta
+T3	Medical-Anatomy 247 255;257 265	coronary arteries
+T4	Lesion-Assertion 286 297	no evidence
+A1	Lesion-AssertionValue T4 absent
+T5	Lesion-Characteristic 301 308	central
+T6	Lesion-Description 309 319	adenopathy
+T7	Medical-Assertion 330 332	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 334 350	pleural effusion
+T9	Medical-Problem 354 366	pneumothorax
+T10	Medical-Anatomy 373 378	lungs
+T11	Medical-Problem 383 403	mildly hyperinflated
+T12	Medical-Problem 410 433	displacement of vessels
+T13	Medical-Anatomy 441 456	left upper lobe
+T14	Medical-Assertion 457 465	suggests
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 466 475	emphysema
+T16	Medical-Problem 477 481;483 504	Mild bibasilar atelectasis
+E13	Medical-Problem:T16
+T17	Medical-Assertion 524 526	no
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 527 546	focal consolidation
+T19	Medical-Assertion 547 561	concerning for
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 563 572	pneumonia
+T21	Medical-Assertion 583 585	no
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 586 602	pneumoperitoneum
+T23	Medical-Assertion 623 625	No
+A7	Medical-AssertionValue T23 absent
+T24	Medical-Problem 626 645	focal consolidation
+T25	Medical-Assertion 646 660	concerning for
+A8	Medical-AssertionValue T25 possible
+T26	Medical-Problem 661 670	pneumonia
+T27	Medical-Assertion 673 681	Possible
+A9	Medical-AssertionValue T27 possible
+T28	Medical-Problem 682 691	emphysema
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Characteristic:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E17	Medical-Problem:T24 has-Medical-Assertion:T23
+E18	Medical-Problem:T26 has-Medical-Assertion:T25
+E19	Medical-Problem:T28 has-Medical-Assertion:T27

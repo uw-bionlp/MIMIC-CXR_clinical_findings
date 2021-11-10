@@ -1,0 +1,30 @@
+T1	Medical-Problem 233 249	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 305 311;313 323	Slight prominence
+T3	Medical-Anatomy 331 349	pulmonary markings
+T4	Medical-Assertion 350 360	may relate
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 391 417	minimal interstitial edema
+T6	Medical-Assertion 421 433	not excluded
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Assertion 436 438	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 439 467	definite focal consolidation
+T9	Medical-Assertion 488 490	no
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 491 507	pleural effusion
+T11	Medical-Problem 511 523	pneumothorax
+T12	Medical-Problem 650 667	Slight prominence
+T13	Medical-Anatomy 675 684;686 694	pulmonary markings
+T14	Medical-Assertion 695 705	may be due
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 735 761	minimal interstitial edema
+T16	Medical-Assertion 766 778	not excluded
+A6	Medical-AssertionValue T16 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E7	Medical-Problem:T11 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Anatomy:T13
+E10	Medical-Problem:T15 has-Medical-Anatomy:T13 has-Medical-Assertion:T14 has-Medical-Assertion:T16

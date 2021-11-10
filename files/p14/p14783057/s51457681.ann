@@ -1,0 +1,21 @@
+T1	Medical-Problem 264 304	massive bilateral opacities on the right
+E1	Medical-Problem:T1
+T2	Medical-Problem 311 337;339 363	new consolidation with air bronchograms on the left
+E2	Medical-Problem:T2
+T3	Medical-Problem 379 392	new opacities
+T4	Medical-Anatomy 414 416;418 448	AP hilar lung regions bilaterally
+T5	Medical-Assertion 463 472	could due
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 483 490;492 502	massive aspiration
+T7	Medical-Problem 509 537	newly appear pulmonary edema
+T8	Medical-Problem 671 701	moderate left pleural effusion
+E7	Medical-Problem:T8
+T9	Medical-Problem 717 745	Small right pleural effusion
+E8	Medical-Problem:T9
+T10	Medical-Assertion 748 750	No
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 751 763	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E9	Medical-Problem:T11 has-Medical-Assertion:T10

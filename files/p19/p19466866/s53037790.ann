@@ -1,0 +1,43 @@
+T1	Medical-Problem 333 355	right pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 367 376;378 388	increased prominence
+T3	Medical-Anatomy 396 400	hila
+T4	Lesion-Characteristic 403 412	Calcified
+T5	Lesion-Description 413 424	lymph nodes
+T6	Lesion-Anatomy 447 456;458 465	perihilar regions
+T7	Medical-Problem 468 488	Reticular thickening
+T8	Medical-Anatomy 509 525	right upper lobe
+T9	Medical-Assertion 526 536;538 540	suggestive of
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 541 563	new interstitial edema
+T11	Medical-Problem 575 603	increased perihilar opacitiy
+E10	Medical-Problem:T11
+T12	Medical-Assertion 611 616;618 627	could represent
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 628 648	vascular engorgement
+T14	Medical-Problem 656 681	increased lymphadenopathy
+T15	Medical-Problem 689 707	subpleural opacity
+T16	Medical-Anatomy 715 730	left upper lobe
+T17	Medical-Assertion 781 783	no
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 784 796	pneumothorax
+T19	Medical-Problem 898 930	Improving right pleural effusion
+E16	Medical-Problem:T19
+T20	Medical-Problem 933 961	Worsening interstitial edema
+E17	Medical-Problem:T20
+T21	Medical-Problem 965 994	Increase in perihilar opacity
+E18	Medical-Problem:T21
+T22	Medical-Assertion 995 1008	likely due to
+A4	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1009 1029	vascular engorgement
+T24	Lesion-Description 1033 1043;1045 1056	lymph node enlargement
+E20	Lesion-Description:T24
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Medical-Problem:T15 has-Medical-Anatomy:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E19	Medical-Problem:T23 has-Medical-Assertion:T22

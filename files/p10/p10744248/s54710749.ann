@@ -1,0 +1,27 @@
+T1	Medical-Problem 293 312	Dense consolidation
+T2	Medical-Anatomy 316 326	right lung
+T3	Medical-Assertion 332 340	possible
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 341 354;356 364	small pleural effusion
+T5	Medical-Problem 400 416	Linear opacities
+T6	Medical-Anatomy 424 433	left base
+T7	Medical-Assertion 435 448	may represent
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 449 460	atelectasis
+T9	Medical-Assertion 553 555	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 556 568	pneumothorax
+T11	Medical-Problem 586 605	Dense consolidation
+T12	Medical-Anatomy 613 623	right lung
+T13	Medical-Assertion 625 636	most likely
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 637 650;652 660	infectious in etiology
+T15	Medical-Problem 663 691	Small right pleural effusion
+E11	Medical-Problem:T15
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

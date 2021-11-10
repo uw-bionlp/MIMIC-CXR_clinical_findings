@@ -1,0 +1,20 @@
+T1	Medical-Problem 243 269	lung volumes are quite low
+E1	Medical-Problem:T1
+T2	Medical-Problem 275 298	bibasilar opacification
+E2	Medical-Problem:T2
+T3	Medical-Assertion 302 306;308 314	more likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 315 326	atelectasis
+T5	Medical-Problem 332 342	aspiration
+T6	Medical-Problem 375 382;384 393	pleural effusions
+E5	Medical-Problem:T6
+T7	Medical-Assertion 418 420	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 421 433	pneumothorax
+T9	Medical-Assertion 665 679	minimal if any
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 680 691;693 701	mediastinal widening
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

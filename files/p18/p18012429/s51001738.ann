@@ -1,0 +1,20 @@
+T1	Medical-Problem 290 321	small right apical pneumothorax
+E1	Medical-Problem:T1
+T2	Medical-Problem 324 333;335 348	Extensive consolidation
+T3	Medical-Anatomy 356 392	left upper lobe and left lower lobes
+T4	Medical-Problem 471 488;490 504	interval increase in the opacity
+T5	Medical-Anatomy 512 529	right middle lobe
+T6	Lesion-Assertion 536 541	could
+A1	Lesion-AssertionValue T6 possible
+T7	Lesion-Description 569 579	malignancy
+T8	Medical-Problem 583 594	atelectasis
+T9	Medical-Assertion 671 690	likely secondary to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 691 702	atelectasis
+T11	Medical-Problem 724 755	Small right apical pneumothorax
+E9	Medical-Problem:T11
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Lesion-Description:T7 has-Lesion-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

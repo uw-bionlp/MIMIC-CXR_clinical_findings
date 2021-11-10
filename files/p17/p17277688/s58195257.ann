@@ -1,0 +1,19 @@
+T1	Medical-Problem 251 270	Severe cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 286 314	Interstitial pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 352 390	Small region of increased radiodensity
+T4	Medical-Anatomy 398 403;405 455	right lower lung at the level of the anterior fourth rib
+T5	Medical-Assertion 456 464	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 467 481;483 492	small focus of pneumonia
+T7	Medical-Assertion 552 554	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 555 583	appreciable pleural effusion
+T9	Medical-Problem 587 600	indication of
+E7	Medical-Problem:T9
+T10	Medical-Problem 601 613	pneumothorax
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7

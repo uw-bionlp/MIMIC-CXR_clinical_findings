@@ -1,0 +1,15 @@
+T1	Medical-Problem 263 275	Cardiomegaly
+E1	Medical-Problem:T1
+T2	Medical-Problem 301 316	faint opacities
+T3	Medical-Anatomy 324 333	left base
+T4	Medical-Assertion 334 340;342 351	likely represent
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 391 411	adjacent atelectasis
+T6	Medical-Problem 421 443	lower lobe atelectasis
+E5	Medical-Problem:T6
+T7	Medical-Assertion 581 583	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 584 596	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

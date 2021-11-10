@@ -1,0 +1,20 @@
+T1	Medical-Assertion 401 412	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 416 428	pneumothorax
+T3	Medical-Problem 430 461	Small residual pleural effusion
+T4	Medical-Problem 468 487	atelectatic changes
+T5	Medical-Anatomy 495 499	base
+T6	Medical-Problem 505 511	degree
+E5	Medical-Problem:T6
+T7	Medical-Problem 515 528	opacification
+T8	Medical-Anatomy 536 541;543 553	lower right lung
+T9	Medical-Assertion 578 591	could reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 612 619;621 629	pleural effusion
+T11	Medical-Problem 768 776;778 803	elevated pulmonary venous pressure
+E9	Medical-Problem:T11
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T5
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

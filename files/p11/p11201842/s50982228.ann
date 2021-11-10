@@ -1,0 +1,20 @@
+T1	Medical-Problem 278 309	Moderate subcutaneous emphysema
+T2	Medical-Anatomy 317 333	right chest wall
+T3	Medical-Problem 379 402	mild interstitial edema
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 418 429;431 435	right lower lobe
+T5	Medical-Assertion 436 442	likely
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 443 454	atelectasis
+T7	Medical-Problem 462 476	alveolar edema
+T8	Medical-Assertion 479 481	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 482 506	significant pneumothorax
+T10	Medical-Problem 527 554	Persistent low lung volumes
+E8	Medical-Problem:T10
+T11	Medical-Problem 560 587	new mild interstitial edema
+E9	Medical-Problem:T11
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

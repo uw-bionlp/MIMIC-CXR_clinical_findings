@@ -1,0 +1,22 @@
+T1	Medical-Problem 167 187	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 199 223;225 261	persistent mild relative elevation of the right hemidiaphragm
+E2	Medical-Problem:T2
+T3	Medical-Assertion 360 362	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 363 379	pleural effusion
+T5	Medical-Problem 384 396	pneumothorax
+T6	Medical-Problem 399 420	New streaky opacities
+T7	Medical-Anatomy 429 443	each lung base
+T8	Medical-Anatomy 460 473	left mid lung
+T9	Medical-Problem 564 581	minor atelectasis
+E8	Medical-Problem:T9
+T10	Medical-Problem 636 657	New basilar opacities
+E9	Medical-Problem:T10
+T11	Medical-Assertion 659 677	most likely due to
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 678 689	atelectasis
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

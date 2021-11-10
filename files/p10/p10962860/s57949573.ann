@@ -1,0 +1,45 @@
+T1	Medical-Assertion 449 456	without
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 457 474	abnormal widening
+T3	Medical-Anatomy 483 494	mediastinum
+T4	Medical-Anatomy 500 505	aorta
+T5	Medical-Problem 509 531	calcified and tortuous
+T6	Medical-Assertion 533 535	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 536 541;543 556	focal consolidation
+T8	Medical-Assertion 566 568	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 569 585	pleural effusion
+T10	Medical-Problem 589 601	pneumothorax
+T11	Medical-Problem 622 653	persistent moderate compression
+T12	Medical-Anatomy 659 688	lower thoracic vertebral body
+T13	Medical-Problem 714 738	stable chronic deformity
+T14	Medical-Anatomy 742 760	anterior left rib,
+E11	Medical-Anatomy:T14
+T15	Medical-Anatomy 762 766;768 786	left anterior sixth rib
+T16	Lesion-Characteristic 788 794	Subtle
+T17	Lesion-Size 795 801	3-4 mm
+T18	Lesion-Description 802 817	nodular density
+T19	Lesion-Anatomy 838 846;848 870	anterior lateral left third rib
+T20	Lesion-Size-Trend 874 880	stable
+A4	Lesion-Size-TrendValue T20 no-change
+T21	Lesion-Assertion 885 898	may represent
+A5	Lesion-AssertionValue T21 possible
+T22	Lesion-Description 901 912	bone island
+T23	Medical-Problem 914 922	artifact
+E18	Medical-Problem:T23
+T24	Medical-Assertion 969 971	No
+A6	Medical-AssertionValue T24 absent
+T25	Medical-Problem 972 1001	acute cardiopulmonary process
+T26	Medical-Problem 1007 1034	significant interval change
+E20	Medical-Problem:T26
+E1	Medical-Problem:T2 has-Medical-Assertion:T1 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T13 has-Medical-Anatomy:T15
+E15	Lesion-Description:T18 has-Lesion-Characteristic:T16 has-Lesion-Size-Present:T17 has-Lesion-Anatomy:T19 has-Lesion-Size-Trend:T20
+E17	Lesion-Description:T22 has-Lesion-Anatomy:T19 has-Lesion-Assertion:T21
+E19	Medical-Problem:T25 has-Medical-Assertion:T24

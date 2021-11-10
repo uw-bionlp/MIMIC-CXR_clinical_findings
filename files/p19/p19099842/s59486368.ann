@@ -1,0 +1,19 @@
+T1	Medical-Problem 298 320	chest is hyperinflated
+E1	Medical-Problem:T1
+T2	Medical-Problem 322 337	Slight blunting
+T3	Medical-Anatomy 348 352;354 372	left costophrenic angle
+T4	Medical-Assertion 373 381	suggests
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 384 398	trace effusion
+T6	Medical-Problem 410 424	minor scarring
+T7	Medical-Assertion 436 447	no evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 452 471	pleural effusion on
+T9	Medical-Assertion 526 537	No evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 541 570	acute cardiopulmonary disease
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

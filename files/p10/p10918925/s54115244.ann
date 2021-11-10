@@ -1,0 +1,32 @@
+T1	Medical-Problem 200 236	Layering bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 249 270	Retrocardiac fullness
+E2	Medical-Problem:T2
+T3	Medical-Assertion 300 308	probably
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 326 339	hiatus hernia
+T5	Medical-Problem 344 354;356 370	descending thoracic aorta
+E4	Medical-Problem:T5
+T6	Medical-Problem 382 411	very small areas of pneumonia
+T7	Medical-Assertion 412 430	cannot be excluded
+A2	Medical-AssertionValue T7 possible
+T8	Lesion-Description 437 443	lesion
+T9	Lesion-Anatomy 451 487	lateral aspect of the left lung base
+T10	Medical-Problem 491 502;504 515	conceivably atelectasis
+E8	Medical-Problem:T10
+T11	Lesion-Size 518 523	Small
+T12	Lesion-Description 524 539	nodular opacity
+T13	Lesion-Anatomy 558 578;580 586	left supraclavicular region
+T14	Medical-Assertion 591 599	could be
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 600 633	apical pleuroparenchymal scarring
+T16	Medical-Anatomy 636 641	Heart
+T17	Medical-Assertion 645 648	not
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 649 657	enlarged
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T9
+E10	Lesion-Description:T12 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T18 has-Medical-Anatomy:T16 has-Medical-Assertion:T17

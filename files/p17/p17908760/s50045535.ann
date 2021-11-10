@@ -1,0 +1,30 @@
+T1	Medical-Problem 324 362	persistent near complete opacification
+T2	Medical-Anatomy 370 375;377 387	right hemithorax
+T3	Medical-Problem 393 441	slight rightward shift of mediastinal structures
+T4	Medical-Assertion 443 453	suggesting
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 455 477	right lung atelectasis
+T6	Medical-Assertion 483 489	likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 490 509	coexisting effusion
+T8	Medical-Problem 570 592	residual consolidation
+E6	Medical-Problem:T8
+T9	Medical-Problem 595 605;607 623	Small left pleural effusion
+E7	Medical-Problem:T9
+T10	Lesion-Characteristic 635 645	Widespread
+T11	Lesion-Characteristic 646 653	nodular
+T12	Lesion-Anatomy 654 663	pulmonary
+T13	Lesion-Description 664 674	metastases
+T14	Lesion-Size-Trend 680 696	similar to prior
+A3	Lesion-Size-TrendValue T14 no-change
+T15	Medical-Problem 719 784	Stable appearance of near complete right hemithorax opacification
+E12	Medical-Problem:T15
+T16	Medical-Problem 802 824	right lung atelectasis
+E13	Medical-Problem:T16
+T17	Medical-Problem 830 857	coexisting pleural effusion
+E14	Medical-Problem:T17
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T2 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E11	Lesion-Description:T13 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12 has-Lesion-Size-Trend:T14

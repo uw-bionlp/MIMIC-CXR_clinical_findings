@@ -1,0 +1,21 @@
+T1	Medical-Problem 212 226	total collapse
+T2	Medical-Anatomy 234 244	right lung
+T3	Medical-Problem 253 283	obstructed right main bronchus
+T4	Lesion-Size-Trend 291 307	increase in size
+A1	Lesion-Size-TrendValue T4 increasing
+T5	Lesion-Description 315 319	mass
+T6	Medical-Assertion 322 324	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 326 344	substantial change
+T8	Medical-Problem 403 416	basal opacity
+E6	Medical-Problem:T8
+T9	Medical-Assertion 473 478;480 487	might reflect
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 488 505	slight resolution
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 509 519	aspiration
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Size-Trend:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Assertion:T10

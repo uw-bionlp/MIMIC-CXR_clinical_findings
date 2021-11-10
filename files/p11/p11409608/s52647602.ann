@@ -1,0 +1,42 @@
+T1	Medical-Problem 76 87	small bowel
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 337 342	lungs
+T3	Medical-Problem 348 359	atelectasis
+T4	Medical-Anatomy 363 373	both bases
+T5	Medical-Anatomy 427 432	heart
+T6	Medical-Assertion 436 439	not
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 440 448	enlarged
+T8	Medical-Assertion 509 511	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 512 528	pleural effusion
+T10	Medical-Problem 532 544	pneumothorax
+T11	Medical-Problem 547 551;553 577	Mild right pleural thickening
+E9	Medical-Problem:T11
+T12	Lesion-Size 595 607	3.5 x 2.1 cm
+T13	Lesion-Characteristic 608 615	rounded
+T14	Lesion-Description 616 623	density
+T15	Lesion-Anatomy 632 641	left base
+T16	Medical-Assertion 642 663	likely corresponds to
+A3	Medical-AssertionValue T16 possible
+T17	Medical-Problem 664 670	callus
+T18	Medical-Problem 676 688	rib fracture
+T19	Medical-Problem 716 755	multiple bilateral healed rib fractures
+E16	Medical-Problem:T19
+T20	Medical-Problem 782 790;792 820	multiple dilated loops of small bowel
+E17	Medical-Problem:T20
+T21	Medical-Problem 1023 1082	Multiple dilated loops of small bowel with air-fluid levels
+E18	Medical-Problem:T21
+T22	Medical-Problem 1136 1162	Mild bibasilar atelectasis
+E19	Medical-Problem:T22
+T23	Medical-Assertion 1184 1200	without evidence
+A4	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1205 1214	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E12	Lesion-Description:T14 has-Lesion-Size-Present:T12 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T18 has-Medical-Assertion:T16
+E20	Medical-Problem:T24 has-Medical-Assertion:T23

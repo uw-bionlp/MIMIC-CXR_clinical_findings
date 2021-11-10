@@ -1,0 +1,59 @@
+T1	Medical-Problem 292 302;304 313	persistent elevation
+T2	Medical-Anatomy 321 340	right hemidiaphragm
+T3	Medical-Anatomy 343 360	Right upper chest
+E3	Medical-Anatomy:T3
+T4	Medical-Problem 443 460;462 498	interval increase in adjacent right upper lung opacity
+E4	Medical-Problem:T4
+T5	Medical-Assertion 505 518	may be due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 519 537;539 547	underlying pleural effusion
+T7	Medical-Problem 552 565	consolidation
+T8	Medical-Assertion 571 579	possible
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 580 601	component of collapse
+T10	Medical-Assertion 602 609	without
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 610 615	shift
+T12	Medical-Anatomy 624 635	mediastinum
+T13	Medical-Problem 680 693;695 706	minor basilar atelectasis
+E10	Medical-Problem:T13
+T14	Medical-Problem 820 841	right-sided opacities
+E11	Medical-Problem:T14
+T15	Medical-Problem 845 877	Extensive subcutaneous emphysema
+T16	Medical-Anatomy 892 922;924 952	tracking along the right chest wall and into the right neck
+T17	Medical-Problem 974 996	Loculated pneumothorax
+T18	Medical-Anatomy 1018 1035	right upper chest
+T19	Medical-Problem 1094 1123;1125 1156	interval increase in adjacent right upper chest opacification
+E16	Medical-Problem:T19
+T20	Medical-Assertion 1163 1176	may be due to
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1194 1201;1203 1226	pleural fluid and consolidation
+T22	Medical-Assertion 1232 1240	possible
+A5	Medical-AssertionValue T22 possible
+T23	Medical-Problem 1241 1267	component of lung collapse
+T24	Medical-Assertion 1268 1275	without
+A6	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1277 1294	mediastinal shift
+T26	Lesion-Description 1307 1317	malignancy
+E20	Lesion-Description:T26
+T27	Medical-Problem 1333 1342	Elevation
+T28	Medical-Anatomy 1350 1355;1357 1370	right hemidiaphragm
+T29	Medical-Assertion 1371 1384	may be due to
+A7	Medical-AssertionValue T29 possible
+T30	Medical-Problem 1385 1396	volume loss
+T31	Medical-Assertion 1402 1410	possible
+A8	Medical-AssertionValue T31 possible
+T32	Medical-Problem 1411 1431	subpulmonic effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T5 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Assertion:T5 has-Medical-Assertion:T8 has-Medical-Assertion:T10 has-Medical-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Anatomy:T16
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T23 has-Medical-Assertion:T22
+E19	Medical-Problem:T25 has-Medical-Assertion:T20 has-Medical-Assertion:T22 has-Medical-Assertion:T24
+E21	Medical-Problem:T27 has-Medical-Anatomy:T28
+E23	Medical-Problem:T30 has-Medical-Anatomy:T28 has-Medical-Assertion:T29
+E24	Medical-Problem:T32 has-Medical-Assertion:T31

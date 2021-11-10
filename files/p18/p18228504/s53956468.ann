@@ -1,0 +1,40 @@
+T1	Medical-Problem 365 384	ill defined opacity
+T2	Medical-Anatomy 392 408	right lower lobe
+T3	Medical-Problem 451 474	left lower lobe density
+E3	Medical-Problem:T3
+T4	Lesion-Characteristic 504 512	cavitary
+T5	Lesion-Description 524 530	masses
+T6	Lesion-Anatomy 538 553	left upper lobe
+T7	Medical-Problem 609 632	mild interstitial edema
+E7	Medical-Problem:T7
+T8	Medical-Assertion 643 645	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 646 658	pneumothorax
+T10	Medical-Problem 663 680	pleural effusions
+T11	Medical-Problem 682 694	Cardiomegaly
+E10	Medical-Problem:T11
+T12	Medical-Problem 709 718	Lucencies
+T13	Medical-Anatomy 719 740	above both diaphragms
+T14	Medical-Problem 762 787	free intraperiotoneal air
+T15	Medical-Problem 848 867	Ill defined opacity
+T16	Medical-Anatomy 875 891	right lower lobe
+T17	Medical-Assertion 899 912	may represent
+A2	Medical-AssertionValue T17 possible
+T18	Medical-Problem 914 924	aspiration
+T19	Medical-Problem 928 959	developing infectious pneumonia
+T20	Medical-Problem 969 993	Free intraperitoneal air
+E18	Medical-Problem:T20
+T21	Lesion-Anatomy 1036 1051	Left upper lobe
+T22	Lesion-Description 1052 1058	masses
+T23	Lesion-Description 1075 1084	neoplasms
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T14 has-Medical-Anatomy:T13
+E14	Medical-Problem:T15 has-Medical-Anatomy:T16
+E16	Medical-Problem:T18 has-Medical-Assertion:T17
+E17	Medical-Problem:T19 has-Medical-Assertion:T17
+E20	Lesion-Description:T22 has-Lesion-Anatomy:T21
+E21	Lesion-Description:T23 has-Lesion-Anatomy:T21

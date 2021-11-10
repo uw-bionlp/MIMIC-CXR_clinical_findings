@@ -1,0 +1,17 @@
+T1	Medical-Assertion 229 240	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 244 256	pneumothorax
+T3	Medical-Problem 350 389	minimal symmetrical biapical thickening
+E2	Medical-Problem:T3
+T4	Lesion-Characteristic 396 405	calcified
+T5	Lesion-Description 406 415	granuloma
+T6	Lesion-Anatomy 423 428;430 441	right middle lobe
+T7	Lesion-Size-Trend 448 457	unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Anatomy 524 536	right atrium
+T9	Medical-Assertion 564 575	no evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 579 591	pneumothorax
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6 has-Lesion-Size-Trend:T7
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

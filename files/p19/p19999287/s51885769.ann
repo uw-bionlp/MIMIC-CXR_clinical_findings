@@ -1,0 +1,42 @@
+T1	Medical-Problem 269 281	New collapse
+T2	Medical-Anatomy 289 304	left upper lobe
+T3	Lesion-Anatomy 334 344	left hilar
+T4	Lesion-Description 346 350	mass
+T5	Medical-Problem 360 393	leftward shift of the mediastinum
+E5	Medical-Problem:T5
+T6	Medical-Problem 398 407	elevation
+T7	Medical-Anatomy 415 424;426 430	left lung base
+T8	Medical-Problem 438 466	subpulmonic pleural effusion
+T9	Medical-Assertion 470 483	probably also
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 498 537	aeration of the left lower lobe is poor
+T11	Medical-Assertion 539 559	probably also due to
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 560 569;571 582	bronchial obstruction
+T13	Medical-Assertion 632 638	may be
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 641 660;662 670	small right pleural effusion
+T15	Medical-Assertion 681 692	no evidence
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 697 709	pneumothorax
+T17	Medical-Problem 787 810	New upper lobe collapse
+E13	Medical-Problem:T17
+T18	Medical-Problem 815 842	some lower lobe atelectasis
+E14	Medical-Problem:T18
+T19	Lesion-Size 852 857	large
+T20	Lesion-Characteristic 859 870	obstructing
+T21	Lesion-Anatomy 871 881	left hilar
+T22	Lesion-Description 882 886	mass
+T23	Medical-Assertion 894 902	Probable
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 903 936	small bilateral pleural effusions
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T8 has-Medical-Anatomy:T7 has-Medical-Assertion:T9
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E18	Lesion-Description:T22 has-Lesion-Size-Present:T19 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T21
+E19	Medical-Problem:T24 has-Medical-Assertion:T23

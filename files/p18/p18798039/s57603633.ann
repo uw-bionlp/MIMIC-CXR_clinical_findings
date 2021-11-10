@@ -1,0 +1,18 @@
+T1	Medical-Assertion 175 177	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 178 185;187 199	visible pneumothorax
+T3	Lesion-Characteristic 242 252	Widespread
+T4	Lesion-Characteristic 253 262	reticular
+T5	Lesion-Description 268 275	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 276 285	opacities
+T7	Lesion-Size-Trend 293 300	similar
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Medical-Problem 397 415	more focal opacity
+T9	Medical-Anatomy 424 439	right lung base
+T10	Medical-Problem 464 486	Subcutaneous emphysema
+T11	Medical-Anatomy 495 505	chest wall
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4 has-Lesion-Size-Trend:T7
+E6	Medical-Problem:T8 has-Medical-Anatomy:T9
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11

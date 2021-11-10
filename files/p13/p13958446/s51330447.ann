@@ -1,0 +1,33 @@
+T1	Medical-Anatomy 465 497	apex and lateral left chest wall
+T2	Medical-Problem 510 536	areas of increased lucency
+T3	Medical-Problem 560 572	pneumothorax
+E3	Medical-Problem:T3
+T4	Medical-Problem 581 594	expanded lung
+E4	Medical-Problem:T4
+T5	Medical-Problem 597 638	Stable-appearing interstitial abnormality
+T6	Medical-Anatomy 646 656	right lung
+T7	Medical-Assertion 658 671	may represent
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 672 687	pulmonary edema
+T9	Lesion-Description 695 711	dissemination of
+E8	Lesion-Description:T9
+T10	Lesion-Description 712 717	tumor
+E9	Lesion-Description:T10
+T11	Lesion-Characteristic 737 745	discrete
+T12	Lesion-Description 757 761	mass
+T13	Lesion-Anatomy 769 785	right upper lobe
+T14	Medical-Problem 876 903	left-sided pleural effusion
+E13	Medical-Problem:T14
+T15	Medical-Anatomy 906 923	Left-sided apical
+T16	Medical-Assertion 958 971	may represent
+A2	Medical-AssertionValue T16 possible
+T17	Medical-Problem 972 984	pneumothorax
+T18	Medical-Problem 992 1006	expanding lung
+T19	Medical-Problem 1090 1102	pneumothorax
+E17	Medical-Problem:T19
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E15	Medical-Problem:T17 has-Medical-Anatomy:T15 has-Medical-Assertion:T16
+E16	Medical-Problem:T18 has-Medical-Anatomy:T15 has-Medical-Assertion:T16

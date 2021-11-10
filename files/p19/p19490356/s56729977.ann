@@ -1,0 +1,31 @@
+T1	Medical-Problem 174 197	mild relative elevation
+T2	Medical-Anatomy 205 223	left hemidiaphragm
+T3	Medical-Problem 230 259	streaky basilar opacification
+T4	Medical-Assertion 260 270	suggesting
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 271 303;305 309	atelectasis, overall with volume loss
+T6	Medical-Problem 318 336	infectious process
+T7	Medical-Assertion 337 356	could be considered
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 384 414	patchy left lower lobe opacity
+T9	Medical-Assertion 446 448	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 449 456;458 466	pleural effusion
+T11	Medical-Problem 470 482	pneumothorax
+T12	Medical-Problem 575 605	Patchy left lower lobe opacity
+E9	Medical-Problem:T12
+T13	Medical-Assertion 613 635	may be consistent with
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 637 646	pneumonia
+T15	Medical-Problem 652 663	atelectasis
+T16	Medical-Assertion 664 691	could also be considered as
+A5	Medical-AssertionValue T16 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T7
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13 has-Medical-Assertion:T16

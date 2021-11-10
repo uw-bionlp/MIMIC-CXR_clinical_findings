@@ -1,0 +1,51 @@
+T1	Medical-Assertion 387 389	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 391 420	configurational abnormalities
+T3	Medical-Assertion 464 466	No
+A2	Medical-AssertionValue T3 absent
+T4	Medical-Problem 468 493	mediastinal abnormalities
+T5	Medical-Anatomy 512 528	left apical area
+T6	Medical-Problem 532 540;542 559	2 x 3 cm calcified density
+T7	Lesion-Anatomy 591 598	thyroid
+T8	Lesion-Description 599 605	nodule
+T9	Lesion-Anatomy 610 631	paratracheal position
+T10	Lesion-Size-Trend 640 649	unchanged
+A3	Lesion-Size-TrendValue T10 no-change
+T11	Medical-Assertion 723 726	not
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 727 736	congested
+T13	Medical-Assertion 739 741	No
+A5	Medical-AssertionValue T13 absent
+T14	Medical-Problem 751 756;758 769	acute infiltrates
+T15	Medical-Problem 872 885	mild blunting
+T16	Medical-Anatomy 893 914	lateral pleural sinus
+T17	Medical-Problem 933 953	2 to 3 mm thickening
+T18	Medical-Anatomy 961 968	pleural
+T19	Medical-Assertion 1133 1144	no evidence
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 1153 1165	pneumothorax
+T21	Medical-Problem 1173 1193	new pleural effusion
+T22	Medical-Problem 1351 1363;1365 1374	multiple rib fractures
+E16	Medical-Problem:T22
+T23	Medical-Problem 1430 1435;1437 1451	small pneumothoraces
+E17	Medical-Problem:T23
+T24	Medical-Assertion 1495 1506	no evidence
+A7	Medical-AssertionValue T24 absent
+T25	Medical-Problem 1513 1535	remaining pneumothorax
+T26	Medical-Problem 1539 1555	acute infiltrate
+T27	Medical-Assertion 1670 1672	no
+A8	Medical-AssertionValue T27 absent
+T28	Medical-Problem 1673 1699	major skeletal abnormality
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Anatomy:T5
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T7 has-Lesion-Anatomy:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E9	Medical-Problem:T14 has-Medical-Assertion:T13
+E10	Medical-Problem:T15 has-Medical-Anatomy:T16
+E12	Medical-Problem:T17 has-Medical-Anatomy:T18
+E14	Medical-Problem:T20 has-Medical-Assertion:T19
+E15	Medical-Problem:T21 has-Medical-Assertion:T19
+E18	Medical-Problem:T25 has-Medical-Assertion:T24
+E19	Medical-Problem:T26 has-Medical-Assertion:T24
+E20	Medical-Problem:T28 has-Medical-Assertion:T27

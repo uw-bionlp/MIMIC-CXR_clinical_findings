@@ -1,0 +1,16 @@
+T1	Medical-Assertion 123 147	no radiographic evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 151 163	pneumothorax
+T3	Medical-Problem 168 185	pneumomediastinum
+T4	Lesion-Characteristic 236 242;244 251	Poorly defined
+T5	Lesion-Description 252 259	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 260 267	opacity
+T7	Lesion-Anatomy 271 286	left upper lobe
+T8	Medical-Assertion 338 346	possible
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 347 387	component of mild perinodular hemorrhage
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8

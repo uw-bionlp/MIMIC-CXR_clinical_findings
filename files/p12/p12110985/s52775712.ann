@@ -1,0 +1,33 @@
+T1	Lesion-Count 282 293	innumerable
+T2	Lesion-Anatomy 294 303	bilateral
+T3	Lesion-Description 304 311	nodular
+E3	Lesion-Description:T3
+T4	Lesion-Description 312 321	opacities
+T5	Lesion-Anatomy 322 342;344 355	throughout the lungs bilaterally
+T6	Lesion-Size-Trend 371 403	significant interval progression
+A1	Lesion-Size-TrendValue T6 increasing
+T7	Medical-Problem 438 446	blunting
+T8	Medical-Anatomy 454 483	posterior costophrenic angles
+T9	Medical-Assertion 490 495;497 518	could potentially be due to
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 519 534	small effusions
+T11	Lesion-Anatomy 663 672	bilateral
+T12	Lesion-Description 673 690	nodular opacities
+T13	Lesion-Anatomy 694 699	lungs
+T14	Lesion-Description 716 727	progression
+E12	Lesion-Description:T14
+T15	Lesion-Assertion 752 754	No
+A3	Lesion-AssertionValue T15 absent
+T16	Medical-Problem 755 779	definite pulmonary edema
+E13	Medical-Problem:T16
+T17	Medical-Problem 783 786;788 811	new confluent consolidation
+T18	Medical-Assertion 837 850	may be missed
+A4	Medical-AssertionValue T18 possible
+T19	Lesion-Characteristic 859 875	extensive burden
+T20	Lesion-Description 879 897	metastatic disease
+E4	Lesion-Description:T4 has-Lesion-Count:T1 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T5 has-Lesion-Size-Trend:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T11 has-Lesion-Anatomy:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T18
+E16	Lesion-Description:T20 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T19

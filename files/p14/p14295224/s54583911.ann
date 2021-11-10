@@ -1,0 +1,25 @@
+T1	Medical-Assertion 305 307	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 308 326	new lung opacities
+T3	Lesion-Anatomy 329 350	Right lower lobe lung
+T4	Lesion-Description 351 357	nodule
+T5	Lesion-Size 368 372	8 mm
+T6	Lesion-Size-Trend 377 383	stable
+A2	Lesion-Size-TrendValue T6 no-change
+T7	Medical-Problem 411 446	Biapical post-radiation changes are
+E5	Medical-Problem:T7
+T8	Medical-Assertion 518 520	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 522 534	pneumothorax
+T10	Medical-Problem 538 554	pleural effusion
+T11	Medical-Problem 557 571	Fusion between
+T12	Medical-Anatomy 576 585	posterior
+T13	Medical-Assertion 720 722	no
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 723 732	pneumonia
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Size-Present:T5 has-Lesion-Size-Trend:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13

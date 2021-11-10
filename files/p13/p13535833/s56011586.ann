@@ -1,0 +1,38 @@
+T1	Medical-Anatomy 299 304	heart
+T2	Medical-Assertion 310 317	appears
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 324 339;341 377	mildly enlarged with a left ventricular predominance
+T4	Medical-Problem 441 491	bilateral pleural effusions, moderate on the right
+E3	Medical-Problem:T4
+T5	Medical-Anatomy 533 544	aortic knob
+T6	Medical-Problem 548 557	calcified
+T7	Medical-Problem 605 633	Bibasilar airspace opacities
+E6	Medical-Problem:T7
+T8	Medical-Assertion 634 645	may reflect
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 647 658	atelectasis
+T10	Medical-Problem 666 675	infection
+T11	Medical-Assertion 676 705	cannot be completely excluded
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 791 841	Bilateral pleural effusions, moderate on the right
+E9	Medical-Problem:T12
+T13	Medical-Problem 846 854;856 872	small to moderate on left
+E10	Medical-Problem:T13
+T14	Medical-Problem 879 907	bibasilar airspace opacities
+E11	Medical-Problem:T14
+T15	Medical-Assertion 909 915	likely
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 916 927	atelectasis
+T17	Medical-Problem 936 945	infection
+T18	Medical-Assertion 946 975	cannot be completely excluded
+A5	Medical-AssertionValue T18 possible
+T19	Medical-Assertion 978 980	No
+A6	Medical-AssertionValue T19 absent
+T20	Medical-Problem 981 1010	free air under the diaphragms
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T15 has-Medical-Assertion:T18
+E14	Medical-Problem:T20 has-Medical-Assertion:T19

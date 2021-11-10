@@ -1,0 +1,40 @@
+T1	Medical-Problem 290 329	healing of multiple right rib fractures
+E1	Medical-Problem:T1
+T2	Medical-Problem 353 384	pleural thickening on the right
+E2	Medical-Problem:T2
+T3	Medical-Problem 396 416;418 425	persistent increased density
+T4	Medical-Anatomy 433 470	lateral aspect of the right lung base
+T5	Medical-Assertion 471 484	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 486 531	posttraumatic extrapleural or pleural changes
+T7	Medical-Problem 534 557	Minimal streaky density
+T8	Medical-Anatomy 566 576	lung bases
+T9	Medical-Anatomy 588 604	right upper lobe
+T10	Medical-Problem 624 632	scarring
+T11	Medical-Assertion 638 646	possibly
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 647 671	subsegmental atelectasis
+T13	Medical-Problem 733 741	aorta is
+E11	Medical-Problem:T13
+T14	Medical-Problem 742 750	tortuous
+E12	Medical-Problem:T14
+T15	Medical-Problem 755 764	calcified
+E13	Medical-Problem:T15
+T16	Medical-Problem 856 876	Posttraumatic change
+T17	Medical-Anatomy 884 901	right hemi thorax
+T18	Medical-Problem 920 929;931 955	Bilateral subsegmental atelectasis
+T19	Medical-Assertion 956 958	or
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 959 967	scarring
+T21	Medical-Assertion 970 981	No evidence
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 985 994	pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T10 has-Medical-Anatomy:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T18 has-Medical-Assertion:T19
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T21

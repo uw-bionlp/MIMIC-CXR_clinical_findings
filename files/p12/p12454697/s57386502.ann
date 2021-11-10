@@ -1,0 +1,48 @@
+T1	Medical-Assertion 29 31	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 32 61	acute cardiopulmonary process
+T3	Medical-Problem 64 79	Chronic changes
+T4	Medical-Anatomy 87 98;100 112	lung apices  bilaterally
+T5	Lesion-Anatomy 117 136	left base pulmonary
+T6	Lesion-Description 137 143	nodule
+T7	Medical-Problem 558 600	persistent increased interstitial markings
+E6	Medical-Problem:T7
+T8	Medical-Anatomy 622 626;628 634	lung apices
+T9	Medical-Problem 657 683	centrilobular micronodules
+T10	Lesion-Anatomy 726 735	pulmonary
+T11	Lesion-Description 736 742	nodule
+T12	Lesion-Size-Trend 787 804	grossly unchanged
+A2	Lesion-Size-TrendValue T12 no-change
+T13	Medical-Assertion 816 818	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 819 836	new consolidation
+T15	Medical-Problem 840 845;847 855	large effusion
+T16	Medical-Assertion 867 869	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 870 882	pneumothorax
+T18	Medical-Problem 999 1019	Degenerative changes
+E14	Medical-Problem:T18
+T19	Medical-Assertion 1082 1090	possible
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1091 1105	right shoulder
+T21	Medical-Assertion 1138 1140	No
+A6	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1141 1146	acute
+T23	Lesion-Anatomy 1196 1207;1209 1220	lung apices bilaterally
+T24	Lesion-Anatomy 1225 1244	left base pulmonary
+T25	Lesion-Description 1245 1251	nodule
+T26	Medical-Assertion 1254 1262	Possible
+A7	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1263 1268	right
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E10	Lesion-Description:T11 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E15	Medical-Problem:T20 has-Medical-Assertion:T19
+E16	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Lesion-Description:T25 has-Lesion-Anatomy:T23 has-Lesion-Anatomy:T24
+E20	Medical-Problem:T27 has-Medical-Assertion:T26

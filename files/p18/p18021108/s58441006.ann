@@ -1,0 +1,25 @@
+T1	Medical-Anatomy 270 275	lungs
+T2	Medical-Assertion 299 309	suggesting
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 310 335	chronic pulmonary disease
+T4	Medical-Problem 338 345	Lucency
+T5	Medical-Anatomy 354 359	lungs
+T6	Medical-Anatomy 381 391	lung bases
+T7	Medical-Problem 429 438	emphysema
+T8	Medical-Assertion 441 443	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 444 460	pleural effusion
+T10	Medical-Problem 464 476	pneumothorax
+T11	Medical-Assertion 589 591	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 592 621	acute cardiopulmonary process
+T13	Lesion-Size 641 654	subcentimeter
+T14	Lesion-Anatomy 656 665	pulmonary
+T15	Lesion-Description 666 673	nodules
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T14

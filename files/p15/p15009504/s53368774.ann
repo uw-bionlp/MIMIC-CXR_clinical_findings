@@ -1,0 +1,44 @@
+T1	Medical-Anatomy 94 103;105 111	bilateral  lungs
+T2	Medical-Assertion 116 126	resolution
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 130 153	small pleural effusions
+T4	Medical-Problem 155 183;185 192	R lateral pleural thickening  likely
+E3	Medical-Problem:T4
+T5	Lesion-Anatomy 232 237	hilar
+T6	Lesion-Description 238 248	adenopathy
+T7	Medical-Problem 655 674;676 690	lung volumes remain relatively low
+E6	Medical-Problem:T7
+T8	Medical-Anatomy 700 716	right lung bases
+T9	Medical-Problem 727 736	unchanged
+T10	Medical-Problem 752 771	parenchymal opacity
+E9	Medical-Problem:T10
+T11	Medical-Problem 777 793	air bronchograms
+E10	Medical-Problem:T11
+T12	Medical-Problem 795 807	obliterating
+T13	Medical-Anatomy 812 823;825 831	right heart border
+T14	Medical-Assertion 837 851	suspicious for
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 854 876	status post aspiration
+T16	Medical-Problem 880 889	pneumonia
+T17	Medical-Problem 898 919	pre-existing effusion
+T18	Medical-Problem 924 934	opacity on
+T19	Medical-Assertion 944 966;968 976	have almost completely resolved
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 983 1027	size of the cardiac silhouette remains large
+E17	Medical-Problem:T20
+T21	Medical-Assertion 1042 1044;1046 1054	no evidence
+A4	Medical-AssertionValue T21 absent
+T22	Medical-Problem 1059 1075	pleural effusion
+T23	Medical-Assertion 1078 1080	No
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1081 1093	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T8
+E11	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T17 has-Medical-Assertion:T19
+E16	Medical-Problem:T18 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T24 has-Medical-Assertion:T23

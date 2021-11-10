@@ -1,0 +1,37 @@
+T1	Lesion-Anatomy 151 164	mid left lung
+T2	Lesion-Description 165 175	nodularity
+T3	Lesion-Anatomy 189 198;200 204	mid right lung
+T4	Lesion-Description 205 215	nodularity
+T5	Lesion-Size-Trend 222 235	appear stable
+A1	Lesion-Size-TrendValue T5 no-change
+T6	Medical-Problem 299 333	Faint band of atelectasis/scarring
+T7	Medical-Anatomy 345 356	bilaterally
+T8	Medical-Anatomy 358 363	Lungs
+T9	Medical-Assertion 389 400	no evidence
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 404 417	consolidation
+T11	Medical-Problem 420 428	effusion
+T12	Medical-Problem 433 445	pneumothorax
+T13	Medical-Problem 454 487	heart remains moderately enlarged
+E11	Medical-Problem:T13
+T14	Medical-Problem 502 532	Atherosclerotic calcifications
+T15	Medical-Anatomy 550 561	aortic arch
+T16	Medical-Problem 565 586	Compression deformity
+T17	Medical-Anatomy 594 621	mid thoracic vertebral body
+T18	Medical-Assertion 654 656	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 657 686	acute cardiopulmonary process
+T20	Lesion-Assertion 688 698	Suggestion
+A4	Lesion-AssertionValue T20 possible
+T21	Lesion-Anatomy 702 716	bilateral lung
+T22	Lesion-Description 718 725	nodules
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T3 has-Lesion-Size-Trend:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Anatomy:T15
+E14	Medical-Problem:T16 has-Medical-Anatomy:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Lesion-Description:T22 has-Lesion-Assertion:T20 has-Lesion-Anatomy:T21

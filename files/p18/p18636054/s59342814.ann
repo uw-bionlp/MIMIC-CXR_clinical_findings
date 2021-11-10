@@ -1,0 +1,33 @@
+T1	Medical-Problem 172 196	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 203 208	aorta
+T3	Medical-Problem 222 236	calcifications
+T4	Medical-Anatomy 249 260	aortic knob
+T5	Medical-Assertion 307 313	may be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 314 318;320 349	mild pulmonary vascular congestion
+T7	Medical-Assertion 355 357	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 358 379	overt pulmonary edema
+T9	Medical-Problem 390 397;399 423	Minimal streaky linear opacities
+T10	Medical-Anatomy 431 441	lung bases
+T11	Medical-Assertion 442 456	likely reflect
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 457 468	atelectasis
+T13	Medical-Assertion 471 473	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 475 491	pleural effusion
+T15	Medical-Problem 495 507	pneumothorax
+T16	Medical-Assertion 524 526	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 527 540;542 555	acute osseous abnormalities
+T18	Medical-Problem 584 610	Mild bibasilar atelectasis
+E13	Medical-Problem:T18
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T13
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

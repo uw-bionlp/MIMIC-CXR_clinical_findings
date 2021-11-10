@@ -1,0 +1,28 @@
+T1	Medical-Problem 384 392;394 402	improved aeration
+T2	Medical-Anatomy 410 421	lower lungs
+T3	Medical-Problem 459 466;468 475	Minimal opacity
+T4	Medical-Anatomy 492 508	right lower lung
+T5	Medical-Assertion 515 530	could represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 531 542	atelectasis
+T7	Medical-Problem 570 579	pneumonia
+T8	Medical-Assertion 583 604	impossible to exclude
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 607 609	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 610 615;617 625	large effusion
+T11	Medical-Problem 629 641	pneumothorax
+T12	Medical-Assertion 748 772	Near complete resolution
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 776 796	lower lung opacities
+T14	Medical-Problem 834 864	residual atelectasis/pneumonia
+T15	Medical-Assertion 868 889	impossible to exclude
+A5	Medical-AssertionValue T15 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T12 has-Medical-Assertion:T15

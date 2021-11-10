@@ -1,0 +1,29 @@
+T1	Medical-Problem 297 305;307 337	small to moderate left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Assertion 342 350	possibly
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 351 379	trace right pleural effusion
+T4	Medical-Problem 393 406	opacification
+T5	Medical-Anatomy 414 429	left lower lobe
+T6	Medical-Problem 497 534	some degree of superimposed infection
+T7	Lesion-Anatomy 547 557	left hilar
+T8	Lesion-Assertion 562 568	likely
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Anatomy 569 580	right hilar
+T10	Lesion-Description 581 596	lymphadenopathy
+T11	Medical-Problem 623 656	to moderate left pleural effusion
+T12	Medical-Problem 662 685	increased opacification
+T13	Medical-Anatomy 701 752	left lung, predominantly the lower lobe and lingula
+T14	Medical-Assertion 760 773	may represent
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 831 853	superimposed infection
+T16	Lesion-Anatomy 867 872	hilar
+T17	Lesion-Description 873 888	lymphadenopathy
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E8	Lesion-Description:T10 has-Lesion-Anatomy:T7 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T13
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Lesion-Description:T17 has-Lesion-Anatomy:T16

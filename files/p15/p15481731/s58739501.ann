@@ -1,0 +1,19 @@
+T1	Medical-Problem 456 500	Patchy interstitial and alveolar infiltrates
+T2	Medical-Anatomy 529 534;536 564	right lung and the left upper lobe
+T3	Medical-Assertion 591 593	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 594 610	pleural effusion
+T5	Medical-Problem 614 626	pneumothorax
+T6	Lesion-Anatomy 631 636	Hilar
+E5	Lesion-Anatomy:T6
+T7	Medical-Problem 713 722	opacities
+E6	Medical-Problem:T7
+T8	Medical-Problem 727 763	increased retrocardiac opacification
+E7	Medical-Problem:T8
+T9	Medical-Assertion 764 772	suggests
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 774 793	worsening pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E8	Medical-Problem:T10 has-Medical-Assertion:T9

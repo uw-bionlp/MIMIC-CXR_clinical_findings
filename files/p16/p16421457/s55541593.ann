@@ -1,0 +1,30 @@
+T1	Lesion-Size 319 323	3 mm
+T2	Lesion-Description 324 330	nodule
+T3	Lesion-Anatomy 349 360;362 366	right upper lobe
+T4	Lesion-Assertion 368 379	potentially
+A1	Lesion-AssertionValue T4 possible
+T5	Lesion-Description 382 391	granuloma
+T6	Medical-Assertion 421 423	No
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 424 440	pleural effusion
+T8	Medical-Problem 445 457	pneumothorax
+T9	Medical-Assertion 477 479	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 480 507	acute osseous abnormalities
+T11	Medical-Assertion 532 534	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 535 568	acute cardiopulmonary abnormality
+T13	Lesion-Size 574 578	3 mm
+T14	Lesion-Anatomy 579 595	right upper lobe
+T15	Lesion-Description 596 602	nodule
+T16	Lesion-Assertion 604 615	potentially
+A5	Lesion-AssertionValue T16 possible
+T17	Lesion-Description 618 627	granuloma
+E2	Lesion-Description:T2 has-Lesion-Size-Present:T1 has-Lesion-Anatomy:T3
+E4	Lesion-Description:T5 has-Lesion-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Lesion-Description:T15 has-Lesion-Size-Present:T13 has-Lesion-Anatomy:T14
+E12	Lesion-Description:T17 has-Lesion-Anatomy:T14 has-Lesion-Assertion:T16

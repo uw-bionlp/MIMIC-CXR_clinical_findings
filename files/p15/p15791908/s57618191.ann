@@ -1,0 +1,26 @@
+T1	Medical-Problem 270 287	Stable tortuosity
+T2	Medical-Anatomy 296 310	thoracic aorta
+T3	Medical-Assertion 313 315	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 316 335	focal consolidation
+T5	Medical-Problem 337 353	pleural effusion
+T6	Medical-Problem 357 369	pneumothorax
+T7	Lesion-Size-Trend 373 382	Unchanged
+A2	Lesion-Size-TrendValue T7 no-change
+T8	Lesion-Characteristic 383 392	calcified
+T9	Lesion-Size 393 397	6 mm
+T10	Lesion-Description 398 407	granuloma
+T11	Lesion-Anatomy 415 431	right lower lobe
+T12	Medical-Problem 438 448;450 470	trachea is deviated to the left
+E10	Medical-Problem:T12
+T13	Medical-Problem 491 505	thyroid goiter
+E11	Medical-Problem:T13
+T14	Medical-Assertion 548 550	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 551 564	acute process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Assertion:T3
+E8	Lesion-Description:T10 has-Lesion-Size-Trend:T7 has-Lesion-Characteristic:T8 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T11
+E12	Medical-Problem:T15 has-Medical-Assertion:T14

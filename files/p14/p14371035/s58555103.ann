@@ -1,0 +1,36 @@
+T1	Medical-Problem 285 305	mild dextroscoliosis
+T2	Medical-Anatomy 322 340	mid thoracic spine
+T3	Medical-Problem 353 380	severe degenerative changes
+T4	Medical-Anatomy 384 398	both shoulders
+T5	Medical-Problem 544 568	Post-thoracotomy changes
+E5	Medical-Problem:T5
+T6	Medical-Assertion 721 723	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 724 736	cardiomegaly
+T8	Medical-Assertion 739 741	No
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 742 758	pleural effusion
+T10	Medical-Problem 763 775	pneumothorax
+T11	Medical-Problem 791 811	Small oblong opacity
+T12	Medical-Anatomy 819 840;842 873	left lower lung field projecting over a posterior rib
+T13	Medical-Assertion 874 891	likely relates to
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 892 903	bony callus
+T15	Medical-Assertion 975 986	No evidence
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 990 1019	acute cardiopulmonary process
+T17	Medical-Problem 1022 1034;1036 1043	Small oblong opacity
+T18	Medical-Anatomy 1051 1104	left lower lung field projecting over a posterior rib
+T19	Medical-Assertion 1105 1111;1113 1123	likely relates to
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1124 1135	bony callus
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E15	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T19

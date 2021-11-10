@@ -1,0 +1,22 @@
+T1	Medical-Problem 266 305	Mild to moderate residual opacification
+T2	Medical-Anatomy 313 323	right lung
+T3	Medical-Assertion 345 353	could be
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 354 359	edema
+T5	Medical-Anatomy 362 371	Left lung
+T6	Medical-Problem 400 411;413 440	chronically elevated left hemidiaphragm
+T7	Medical-Problem 447 471	heart shadow is obscured
+E6	Medical-Problem:T7
+T8	Medical-Assertion 473 481	probably
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 483 502	moderately enlarged
+T10	Medical-Problem 505 524	Pleural effusion is
+E8	Medical-Problem:T10
+T11	Medical-Assertion 540 542	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 543 555	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

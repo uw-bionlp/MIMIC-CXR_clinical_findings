@@ -1,0 +1,41 @@
+T1	Medical-Problem 95 122	Large left pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 266 276;278 316	Left-sided cardiac and hilar borders are obscured
+E2	Medical-Problem:T2
+T3	Medical-Anatomy 404 414	right lung
+T4	Medical-Assertion 430 437	without
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 438 454	pleural effusion
+T6	Medical-Anatomy 474 502	lower half of the hemithorax
+T7	Medical-Problem 507 516	opacified
+T8	Medical-Problem 551 581	probably extensive atelectasis
+T9	Medical-Assertion 591 593	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 594 629	net shift in mediastinal structures
+T11	Lesion-Anatomy 652 659;661 675	lateral left lung apex
+T12	Lesion-Size 679 684	small
+T13	Lesion-Size-Trend 685 688	new
+A3	Lesion-Size-TrendValue T13 new
+T14	Lesion-Characteristic 689 694	vague
+T15	Lesion-Description 703 713	nodularity
+T16	Medical-Problem 814 835	subpleural thickening
+T17	Medical-Problem 839 848	sclerosis
+T18	Medical-Anatomy 856 871	left second rib
+T19	Medical-Problem 924 946	Large pleural effusion
+E16	Medical-Problem:T19
+T20	Medical-Assertion 956 965	suspected
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 966 977	atelectasis
+T22	Lesion-Size 980 985	Small
+T23	Lesion-Description 986 1001	nodular opacity
+T24	Lesion-Anatomy 1010 1025	left upper lung
+T25	Lesion-Characteristic 1029 1045	unclear etiology
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E12	Lesion-Description:T15 has-Lesion-Anatomy:T11 has-Lesion-Size-Present:T12 has-Lesion-Size-Trend:T13 has-Lesion-Characteristic:T14
+E13	Medical-Problem:T16 has-Medical-Anatomy:T18
+E14	Medical-Problem:T17 has-Medical-Anatomy:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Lesion-Description:T23 has-Lesion-Size-Present:T22 has-Lesion-Anatomy:T24 has-Lesion-Characteristic:T25

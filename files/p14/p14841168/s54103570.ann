@@ -1,0 +1,33 @@
+T1	Medical-Problem 516 523;525 534	Minimal elevation
+T2	Medical-Anatomy 542 561	right hemidiaphragm
+T3	Medical-Problem 619 636	Increased opacity
+T4	Medical-Anatomy 644 665	base of the left lung
+T5	Medical-Assertion 666 677	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 679 690	atelectasis
+T7	Medical-Problem 702 726	mild vascular congestion
+E6	Medical-Problem:T7
+T8	Medical-Problem 732 752	mild pulmonary edema
+E7	Medical-Problem:T8
+T9	Medical-Assertion 755 757	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 759 771	pneumothorax
+T11	Medical-Assertion 897 899	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 900 912	pneumothorax
+T13	Medical-Problem 968 975	opacity
+T14	Medical-Anatomy 983 1004	base of the left lung
+T15	Medical-Assertion 1005 1020	likely reflects
+A4	Medical-AssertionValue T15 possible
+T16	Medical-Problem 1022 1033	atelectasis
+T17	Medical-Problem 1037 1047	aspiration
+T18	Medical-Problem 1050 1070	Mild pulmonary edema
+E14	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Anatomy:T14
+E12	Medical-Problem:T16 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T14 has-Medical-Assertion:T15

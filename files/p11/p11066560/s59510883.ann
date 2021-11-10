@@ -1,0 +1,41 @@
+T1	Medical-Problem 308 328	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 352 376	aorta is mildly tortuous
+E2	Medical-Problem:T2
+T3	Medical-Assertion 435 437	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 438 467	pulmonary vascular congestion
+T5	Medical-Problem 470 488;490 497	Patchy ill-defined opacity
+T6	Medical-Anatomy 509 524	right lung base
+T7	Medical-Assertion 525 540	likely reflects
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 541 552	atelectasis
+T9	Lesion-Size 555 560	17 mm
+T10	Lesion-Description 561 568	nodular
+E8	Lesion-Description:T10
+T11	Lesion-Description 570 577	opacity
+T12	Lesion-Anatomy 598 617	left mid lung field
+T13	Medical-Assertion 645 647	no
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 649 665	pleural effusion
+T15	Medical-Problem 669 681	pneumothorax
+T16	Medical-Problem 706 722	Low lung volumes
+E13	Medical-Problem:T16
+T17	Medical-Problem 728 756	patchy right basilar opacity
+E14	Medical-Problem:T17
+T18	Medical-Assertion 763 778	likely reflects
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 780 791	atelectasis
+T20	Lesion-Size 797 802	17 mm
+T21	Lesion-Description 803 810	nodular
+E17	Lesion-Description:T21
+T22	Lesion-Description 811 818	opacity
+T23	Lesion-Anatomy 835 854	left mid lung field
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Lesion-Description:T11 has-Lesion-Size-Present:T9 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E15	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Lesion-Description:T22 has-Lesion-Size-Present:T20 has-Lesion-Anatomy:T23

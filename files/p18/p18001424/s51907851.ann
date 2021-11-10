@@ -1,0 +1,37 @@
+T1	Medical-Anatomy 324 329	Lungs
+E1	Medical-Anatomy:T1
+T2	Medical-Problem 353 373	new lingular opacity
+T3	Medical-Anatomy 397 401;403 415	left heart border
+T4	Medical-Assertion 459 481	Differential diagnoses
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 491 511	developing pneumonia
+T6	Medical-Problem 513 524	atelectasis
+T7	Medical-Problem 590 599	radiation
+E6	Medical-Problem:T7
+T8	Medical-Problem 702 713;715 722	new rounded opacity
+T9	Medical-Anatomy 730 786	right upper lung projecting over the posterolateral left
+T10	Lesion-Anatomy 792 795	rib
+T11	Lesion-Assertion 803 809	may be
+A2	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 812 818	nodule
+T13	Medical-Assertion 974 982	Possible
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 983 992	pneumonia
+T15	Medical-Problem 994 1005	atelectasis
+T16	Medical-Problem 1052 1070	radiation fibrosis
+T17	Medical-Anatomy 1078 1085	lingula
+T18	Lesion-Assertion 1159 1167	Possible
+A4	Lesion-AssertionValue T18 possible
+T19	Lesion-Size-Trend 1168 1171	new
+A5	Lesion-Size-TrendValue T19 new
+T20	Lesion-Anatomy 1172 1188	right upper lung
+T21	Lesion-Description 1189 1195	nodule
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T4
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Lesion-Description:T12 has-Lesion-Anatomy:T10 has-Lesion-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T13 has-Medical-Anatomy:T17
+E16	Lesion-Description:T21 has-Lesion-Assertion:T18 has-Lesion-Size-Trend:T19 has-Lesion-Anatomy:T20

@@ -1,0 +1,42 @@
+T1	Medical-Problem 270 287	increased opacity
+T2	Medical-Anatomy 308 313;315 325	right hemithorax
+T3	Medical-Problem 405 426	Postoperative changes
+T4	Medical-Anatomy 434 457	right suprahilar region
+T5	Medical-Problem 485 493	blunting
+T6	Medical-Anatomy 501 525	right costophrenic angle
+T7	Medical-Assertion 526 544	potentially due to
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 546 553	pleural
+E7	Medical-Problem:T8
+T9	Medical-Problem 566 585	underlying effusion
+T10	Medical-Problem 638 656	persistent opacity
+T11	Medical-Anatomy 677 689	left 1st rib
+T12	Medical-Problem 707 730	region of consolidation
+T13	Medical-Assertion 763 765	no
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 766 778;780 803	definite new region of consolidation
+T15	Medical-Assertion 850 852	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 853 858;860 879	acute osseous abnormality
+T17	Lesion-Characteristic 891 898	Osseous
+T18	Lesion-Description 899 909	metastases
+T19	Lesion-Anatomy 1016 1035	right pleural based
+T20	Lesion-Description 1036 1046	metastatic
+T21	Medical-Problem 1060 1095	left apical region of consolidation
+E18	Medical-Problem:T21
+T22	Medical-Assertion 1098 1100	No
+A4	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1101 1136	definite superimposed acute process
+T24	Medical-Problem 1187 1200	subtle change
+E20	Medical-Problem:T24
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T12 has-Medical-Anatomy:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Lesion-Description:T18 has-Lesion-Characteristic:T17
+E17	Lesion-Description:T20 has-Lesion-Anatomy:T19
+E19	Medical-Problem:T23 has-Medical-Assertion:T22

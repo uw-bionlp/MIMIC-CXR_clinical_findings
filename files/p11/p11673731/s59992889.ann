@@ -1,0 +1,45 @@
+T1	Medical-Problem 314 329;331 340	streaky basilar opacities
+E1	Medical-Problem:T1
+T2	Medical-Problem 360 371	atelectasis
+E2	Medical-Problem:T2
+T3	Lesion-Characteristic 384 404	somewhat conspicuous
+E3	Lesion-Characteristic:T3
+T4	Lesion-Anatomy 413 430	retrocardiac area
+E4	Lesion-Anatomy:T4
+T5	Medical-Problem 464 484;486 517	slight peribronchial vascular thickening bilaterally
+E5	Medical-Problem:T5
+T6	Medical-Problem 523 544	peribronchial cuffing
+E6	Medical-Problem:T6
+T7	Medical-Assertion 545 555	suggesting
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 560 575	inflammatory or
+T9	Medical-Problem 576 602	perhaps infectious process
+T10	Medical-Anatomy 613 626	lower airways
+T11	Medical-Problem 629 637;639 659	Moderate degenerative changes
+T12	Medical-Anatomy 680 700	lower thoracic spine
+T13	Medical-Problem 719 775	Mildly prominent interstitium with peribronchial cuffing
+E12	Medical-Problem:T13
+T14	Medical-Assertion 787 814	differential considerations
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 823 835	inflammation
+T16	Medical-Problem 852 861	infection
+T17	Medical-Anatomy 872 877	lower
+T18	Medical-Problem 897 913	bronchopneumonia
+T19	Medical-Assertion 917 929;931 947	difficult to entirely exclude
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 949 974	streaky basilar opacities
+T21	Medical-Assertion 979 994	probably due to
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 1017 1028	atelectasis
+T23	Medical-Assertion 1029 1035	rather
+A5	Medical-AssertionValue T23 absent
+T24	Medical-Problem 1041 1064	consolidative pneumonia
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T7 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T17
+E14	Medical-Problem:T16 has-Medical-Assertion:T14 has-Medical-Anatomy:T17
+E16	Medical-Problem:T18 has-Medical-Assertion:T19
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E18	Medical-Problem:T22 has-Medical-Assertion:T21 has-Medical-Assertion:T23
+E19	Medical-Problem:T24 has-Medical-Assertion:T21 has-Medical-Assertion:T23

@@ -1,0 +1,21 @@
+T1	Medical-Assertion 206 216	no evident
+A1	Medical-AssertionValue T1 absent
+T2	Lesion-Anatomy 232 247	Left upper lobe
+T3	Lesion-Description 248 254	nodule
+T4	Lesion-Anatomy 259 271;273 277	right middle lobe
+T5	Lesion-Description 278 285	opacity
+T6	Medical-Assertion 312 314	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 315 331	pleural effusion
+T8	Medical-Problem 334 349;351 360	Left lower lobe opacities
+E6	Medical-Problem:T8
+T9	Medical-Assertion 370 381	most likely
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 382 393	atelectasis
+T11	Medical-Problem 446 460	mild elevation
+T12	Medical-Anatomy 468 486	left hemidiaphragm
+E2	Lesion-Description:T3 has-Lesion-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T2 has-Lesion-Anatomy:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12

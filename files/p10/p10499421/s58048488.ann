@@ -1,0 +1,19 @@
+T1	Medical-Assertion 271 289	grossly reflecting
+A1	Medical-AssertionValue T1 possible
+T2	Medical-Problem 290 294	only
+E1	Medical-Problem:T2
+T3	Medical-Problem 295 307;309 320	mild cardiac enlargement
+T4	Medical-Anatomy 323 327	Left
+T5	Medical-Assertion 412 425	might reflect
+A2	Medical-AssertionValue T5 possible
+T6	Medical-Problem 426 462	worsening asymmetric pulmonary edema
+T7	Medical-Problem 479 497	infectious process
+T8	Medical-Assertion 498 509	potentially
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 530 540	aspiration
+T10	Medical-Problem 544 584	High position of the right hemidiaphragm
+E7	Medical-Problem:T10
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Anatomy:T4 has-Medical-Assertion:T5 has-Medical-Assertion:T8

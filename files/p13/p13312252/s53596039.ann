@@ -1,0 +1,30 @@
+T1	Medical-Problem 543 551;553 566	apparent opacification
+T2	Medical-Anatomy 574 589	lower left lung
+T3	Medical-Assertion 595 612	likely represents
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 613 630;632 638	superimposed soft tissue
+T5	Medical-Assertion 650 661	no evidence
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 665 681	pleural effusion
+T7	Medical-Problem 683 695	pneumothorax
+T8	Medical-Problem 700 709;711 716	pulmonary edema
+T9	Medical-Problem 730 755	small bilateral lucencies
+T10	Medical-Anatomy 756 780	underneath the diaphragm
+T11	Medical-Problem 806 825	intraperitoneal air
+T12	Medical-Assertion 908 919	No evidence
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 923 938	pulmonary edema
+T14	Medical-Problem 944 959	Small bilateral
+E11	Medical-Problem:T14
+T15	Medical-Problem 960 986	subdiaphragmatic lucencies
+E12	Medical-Problem:T15
+T16	Medical-Problem 1006 1025	intraperitoneal air
+E13	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T11 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

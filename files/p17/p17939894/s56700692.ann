@@ -1,0 +1,22 @@
+T1	Medical-Problem 375 389	hyperinflation
+T2	Medical-Anatomy 398 403	lungs
+T3	Medical-Problem 501 543;545 566	increased prominence of engorged pulmonary interstitial markings
+E3	Medical-Problem:T3
+T4	Medical-Problem 584 618	elevated pulmonary venous pressure
+E4	Medical-Problem:T4
+T5	Medical-Problem 622 648	Retrocardiac opacification
+E5	Medical-Problem:T5
+T6	Medical-Assertion 655 663	suggests
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 664 675	volume loss
+T8	Medical-Anatomy 683 693	lower lobe
+T9	Medical-Problem 699 715	pleural effusion
+T10	Medical-Problem 728 755	extensive pulmonary changes
+E9	Medical-Problem:T10
+T11	Medical-Assertion 760 768;770 804	would be difficult to unequivocally exclude
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 805 827	superimposed pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Medical-Problem:T7 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E8	Medical-Problem:T9 has-Medical-Assertion:T6 has-Medical-Anatomy:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

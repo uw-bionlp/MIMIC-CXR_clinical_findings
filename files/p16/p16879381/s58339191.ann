@@ -1,0 +1,32 @@
+T1	Medical-Problem 33 64	Patchy right upper lung opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 65 78	may be due to
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 79 99	underlying pneumonia
+T4	Lesion-Anatomy 141 150	pulmonary
+T5	Lesion-Description 151 155	mass
+T6	Medical-Anatomy 583 588	lungs
+T7	Medical-Problem 593 617	relatively hyperinflated
+T8	Medical-Problem 629 643	patchy opacity
+T9	Medical-Anatomy 651 656;658 668	right upper lung
+T10	Medical-Assertion 705 707	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 708 724	pleural effusion
+T12	Medical-Problem 729 741	pneumothorax
+T13	Medical-Problem 820 851	Patchy right upper lung opacity
+E11	Medical-Problem:T13
+T14	Medical-Assertion 852 865	may be due to
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 866 886	underlying pneumonia
+T16	Lesion-Assertion 936 950	concerning for
+A4	Lesion-AssertionValue T16 possible
+T17	Lesion-Anatomy 953 962	pulmonary
+T18	Lesion-Description 963 967	mass
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Lesion-Description:T5 has-Lesion-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T10
+E10	Medical-Problem:T12 has-Medical-Assertion:T10
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Lesion-Description:T18 has-Lesion-Assertion:T16 has-Lesion-Anatomy:T17

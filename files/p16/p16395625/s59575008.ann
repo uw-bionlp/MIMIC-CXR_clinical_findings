@@ -1,0 +1,30 @@
+T1	Medical-Problem 561 588	Biapical pleural thickening
+E1	Medical-Problem:T1
+T2	Medical-Problem 601 617	linear opacities
+T3	Medical-Anatomy 626 643	bases bilaterally
+T4	Medical-Problem 658 669	atelectasis
+E4	Medical-Problem:T4
+T5	Lesion-Size 683 696	subcentimeter
+T6	Lesion-Characteristic 698 703	dense
+T7	Lesion-Description 704 710	nodule
+T8	Lesion-Anatomy 719 728	left apex
+T9	Lesion-Characteristic 749 758	calcified
+T10	Lesion-Description 759 768	granuloma
+T11	Medical-Assertion 914 916	No
+A1	Medical-AssertionValue T11 absent
+T12	Medical-Problem 917 924;926 934	pleural effusion
+T13	Medical-Problem 938 950	pneumothorax
+T14	Medical-Problem 1063 1079	Linear opacities
+T15	Medical-Anatomy 1087 1104	bases bilaterally
+T16	Medical-Problem 1130 1141	atelectasis
+E15	Medical-Problem:T16
+T17	Medical-Problem 1176 1186	aspiration
+T18	Medical-Assertion 1187 1205	cannot be excluded
+A2	Medical-AssertionValue T18 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E7	Lesion-Description:T7 has-Lesion-Size-Present:T5 has-Lesion-Characteristic:T6 has-Lesion-Anatomy:T8
+E10	Lesion-Description:T10 has-Lesion-Characteristic:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T13 has-Medical-Assertion:T11
+E13	Medical-Problem:T14 has-Medical-Anatomy:T15
+E16	Medical-Problem:T17 has-Medical-Assertion:T18

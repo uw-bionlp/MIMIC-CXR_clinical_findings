@@ -1,0 +1,33 @@
+T1	Medical-Problem 198 223;225 233	some mediastinal shift to the left
+E1	Medical-Problem:T1
+T2	Medical-Problem 313 337	almost complete whiteout
+T3	Medical-Anatomy 345 355	left chest
+T4	Medical-Assertion 356 375	probably indicating
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 377 388	volume loss
+T6	Medical-Problem 395 408	left effusion
+T7	Medical-Problem 432 474	increase in the size of the right effusion
+E6	Medical-Problem:T7
+T8	Medical-Problem 479 488;490 508	increased pulmonary plethora
+E7	Medical-Problem:T8
+T9	Medical-Assertion 540 547	suggest
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 548 565	worsening failure
+T11	Medical-Problem 570 581	volume loss
+T12	Medical-Anatomy 589 593;595 599	left lung
+T13	Medical-Assertion 600 615	probably due to
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 616 624	collapse
+T15	Medical-Anatomy 632 647	left lower lobe
+T16	Medical-Problem 665 682	Worsening failure
+E13	Medical-Problem:T16
+T17	Medical-Problem 684 695	volume loss
+E14	Medical-Problem:T17
+T18	Medical-Problem 700 729	mediastinal shift to the left
+E15	Medical-Problem:T18
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T12
+E9	Medical-Problem:T11 has-Medical-Assertion:T9 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13 has-Medical-Anatomy:T15

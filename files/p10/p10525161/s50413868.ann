@@ -1,0 +1,24 @@
+T1	Medical-Problem 309 327	Moderate scoliosis
+T2	Medical-Anatomy 335 349	thoracic spine
+T3	Medical-Problem 362 378;380 383	asymmetry of the rib
+E3	Medical-Problem:T3
+T4	Lesion-Assertion 391 393	No
+A1	Lesion-AssertionValue T4 absent
+T5	Lesion-Description 394 400	masses
+T6	Lesion-Description 404 411	nodules
+T7	Medical-Assertion 414 416	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 417 438	parenchymal pathology
+T9	Medical-Assertion 522 524	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 525 532;534 543	pleural effusions
+T11	Medical-Assertion 546 548	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 549 562	abnormalities
+T13	Medical-Anatomy 570 594	region of the chest wall
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T5 has-Lesion-Assertion:T4
+E5	Lesion-Description:T6 has-Lesion-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11 has-Medical-Anatomy:T13

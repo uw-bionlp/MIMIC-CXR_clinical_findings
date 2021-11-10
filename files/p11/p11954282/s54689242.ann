@@ -1,0 +1,27 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 55	focal consolidation
+T3	Medical-Problem 57 69	pneumothorax
+T4	Medical-Problem 74 90	pleural effusion
+T5	Medical-Anatomy 615 620	lungs
+T6	Medical-Assertion 641 648	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 649 665	pleural effusion
+T8	Medical-Problem 667 672;674 687	focal consolidation
+T9	Medical-Problem 692 704	pneumothorax
+T10	Lesion-Assertion 725 727	No
+A3	Lesion-AssertionValue T10 absent
+T11	Lesion-Characteristic 728 733	focal
+E8	Lesion-Characteristic:T11
+T12	Medical-Problem 734 747	consolidation
+E9	Medical-Problem:T12
+T13	Medical-Problem 749 761	pneumothorax
+E10	Medical-Problem:T13
+T14	Medical-Problem 766 782	pleural effusion
+E11	Medical-Problem:T14
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6

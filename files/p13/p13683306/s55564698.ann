@@ -1,0 +1,32 @@
+T1	Medical-Assertion 303 305	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 307 323	pleural effusion
+T3	Medical-Problem 327 339	pneumothorax
+T4	Medical-Assertion 400 411	no evidence
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 415 427	rib fracture
+T6	Medical-Assertion 454 466	questionable
+A3	Medical-AssertionValue T6 possible
+T7	Medical-Anatomy 483 493	left hilum
+T8	Medical-Assertion 507 520	might reflect
+A4	Medical-AssertionValue T8 possible
+T9	Medical-Problem 522 526	only
+T10	Medical-Problem 527 567	superposition of the vascular structures
+T11	Medical-Problem 677 713	decrease anterior retrosternal space
+E7	Medical-Problem:T11
+T12	Medical-Assertion 731 739	might be
+A5	Medical-AssertionValue T12 possible
+T13	Medical-Problem 742 768	constitutional abnormality
+T14	Medical-Problem 770 793	dilated ascending aorta
+T15	Lesion-Anatomy 798 818	anterior mediastinal
+T16	Lesion-Description 819 823	mass
+T17	Medical-Problem 918 945	two potential abnormalities
+E12	Medical-Problem:T17
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T9 has-Medical-Assertion:T6 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E6	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T13 has-Medical-Assertion:T12
+E9	Medical-Problem:T14 has-Medical-Assertion:T12
+E11	Lesion-Description:T16 has-Lesion-Anatomy:T15

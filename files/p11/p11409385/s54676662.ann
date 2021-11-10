@@ -1,0 +1,21 @@
+T1	Medical-Problem 288 308	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 425 434;436 445	confluent opacities
+T3	Medical-Anatomy 449 492	nearly the entirety of the right lung field
+T4	Medical-Anatomy 520 534	left lung base
+T5	Medical-Anatomy 550 565	right lung base
+T6	Medical-Problem 566 579	consolidation
+T7	Medical-Assertion 583 589	likely
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 591 602	atelectatic
+T9	Medical-Assertion 644 646	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 647 663;665 673	definite pleural effusion
+T11	Medical-Problem 677 689	pneumothorax
+T12	Medical-Problem 707 722	Right pneumonia
+E10	Medical-Problem:T12
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9

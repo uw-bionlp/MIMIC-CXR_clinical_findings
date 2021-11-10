@@ -1,0 +1,18 @@
+T1	Medical-Problem 568 594	slightly improved aeration
+T2	Medical-Anatomy 602 617	right lung base
+T3	Medical-Problem 620 624;626 639	Hazy opacification
+T4	Medical-Anatomy 647 669	right lower lung field
+T5	Medical-Assertion 673 692	likely secondary to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 693 700;702 707	pleural fluid
+T7	Medical-Assertion 710 712	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 713 725	pneumothorax
+T9	Medical-Anatomy 861 876	right lung base
+E7	Medical-Anatomy:T9
+T10	Medical-Problem 880 902	Right pleural effusion
+E8	Medical-Problem:T10
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

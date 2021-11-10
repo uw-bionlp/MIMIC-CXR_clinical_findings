@@ -1,0 +1,56 @@
+T1	Medical-Problem 223 243	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 267 293	Aortic knob calcifications
+E2	Medical-Problem:T2
+T3	Medical-Problem 378 415	Diffuse coarse interstitial opacities
+T4	Medical-Anatomy 432 442	both lungs
+T5	Medical-Problem 463 496	chronic interstitial lung disease
+E5	Medical-Problem:T5
+T6	Medical-Problem 498 514	Patchy opacities
+T7	Medical-Anatomy 526 530;532 537	lung bases
+T8	Medical-Assertion 590 603	could reflect
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 605 645	progression of interstitial lung disease
+T10	Medical-Problem 651 662	atelectasis
+T11	Medical-Problem 666 678;680 689	superimposed infection
+T12	Medical-Assertion 693 705	not excluded
+A2	Medical-AssertionValue T12 possible
+T13	Medical-Problem 724 745	consolidative opacity
+T14	Medical-Anatomy 753 758;760 770	right upper lobe
+T15	Medical-Assertion 771 795	has essentially resolved
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Assertion 797 799	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 800 815	pulmonary edema
+T18	Medical-Assertion 829 831	No
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 833 849	pleural effusion
+T20	Medical-Problem 851 874	new focal consolidation
+T21	Medical-Problem 878 890	pneumothorax
+T22	Medical-Assertion 907 909	No
+A6	Medical-AssertionValue T22 absent
+T23	Medical-Problem 911 936	acute osseous abnormality
+T24	Medical-Problem 965 991	Increased patchy opacities
+T25	Medical-Anatomy 999 1009	lung bases
+T26	Medical-Assertion 1010 1021	may reflect
+A7	Medical-AssertionValue T26 possible
+T27	Medical-Problem 1022 1036;1038 1082	progression of underlying chronic interstitial lung disease
+T28	Medical-Problem 1088 1112	superimposed atelectasis
+T29	Medical-Problem 1117 1126	infection
+T30	Medical-Assertion 1127 1156	cannot be completely excluded
+A8	Medical-AssertionValue T30 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8 has-Medical-Assertion:T12
+E10	Medical-Problem:T11 has-Medical-Anatomy:T7 has-Medical-Assertion:T8 has-Medical-Assertion:T12
+E11	Medical-Problem:T13 has-Medical-Anatomy:T14 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E15	Medical-Problem:T20 has-Medical-Assertion:T18
+E16	Medical-Problem:T21 has-Medical-Assertion:T18
+E17	Medical-Problem:T23 has-Medical-Assertion:T22
+E18	Medical-Problem:T24 has-Medical-Anatomy:T25
+E20	Medical-Problem:T27 has-Medical-Anatomy:T25 has-Medical-Assertion:T26
+E21	Medical-Problem:T28 has-Medical-Anatomy:T25 has-Medical-Assertion:T26 has-Medical-Assertion:T30
+E22	Medical-Problem:T29 has-Medical-Anatomy:T25 has-Medical-Assertion:T30

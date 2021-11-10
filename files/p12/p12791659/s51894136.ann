@@ -1,0 +1,31 @@
+T1	Lesion-Anatomy 280 300	upper lobe component
+T2	Lesion-Description 312 321	mass-like
+T3	Medical-Problem 430 432	at
+E3	Medical-Problem:T3
+T4	Medical-Problem 439 443	some
+E4	Medical-Problem:T4
+T5	Medical-Problem 451 462	abnormality
+T6	Medical-Anatomy 471 481	right lung
+T7	Medical-Assertion 483 492	being due
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Problem 496 505	pneumonia
+T9	Medical-Problem 588 612	right lung consolidation
+E8	Medical-Problem:T9
+T10	Lesion-Characteristic 794 802	residual
+T11	Lesion-Characteristic 806 815	recurrent
+T12	Lesion-Description 816 821	tumor
+T13	Lesion-Anatomy 830 840	right lung
+T14	Medical-Problem 843 875	Moderate cardiomegaly is chronic
+E13	Medical-Problem:T14
+T15	Medical-Assertion 909 911	no
+A2	Medical-AssertionValue T15 absent
+T16	Medical-Problem 912 940	appreciable pleural effusion
+T17	Medical-Assertion 945 947	no
+A3	Medical-AssertionValue T17 absent
+T18	Medical-Problem 948 960	pneumothorax
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E11	Lesion-Description:T12 has-Lesion-Characteristic:T10 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T13
+E14	Medical-Problem:T16 has-Medical-Assertion:T15
+E15	Medical-Problem:T18 has-Medical-Assertion:T17

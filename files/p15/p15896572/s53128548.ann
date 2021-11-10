@@ -1,0 +1,40 @@
+T1	Medical-Anatomy 283 288	lungs
+T2	Medical-Problem 327 356;358 365	chronic obstructive pulmonary disease
+T3	Medical-Problem 372 402	cardiac silhouette is enlarged
+E3	Medical-Problem:T3
+T4	Medical-Problem 417 430	hiatal hernia
+E4	Medical-Problem:T4
+T5	Medical-Anatomy 452 457	aorta
+T6	Medical-Problem 461 483	calcified and tortuous
+T7	Medical-Problem 495 509;511 530	mild pulmonary vascular congestion
+E7	Medical-Problem:T7
+T8	Medical-Problem 542 550	blunting
+T9	Medical-Anatomy 558 582	right costophrenic angle
+T10	Medical-Problem 636 658	small pleural effusion
+T11	Medical-Assertion 659 668;670 678	cannot be excluded
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 681 702	Bibasilar atelectasis
+E11	Medical-Problem:T12
+T13	Medical-Assertion 711 718	without
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 719 747	discrete focal consolidation
+T15	Medical-Problem 771 783	Cardiomegaly
+E13	Medical-Problem:T15
+T16	Medical-Problem 788 825	minimal pulmonary vascular congestion
+E14	Medical-Problem:T16
+T17	Medical-Problem 828 836	Blunting
+T18	Medical-Anatomy 845 869	right costophrenic angle
+T19	Medical-Assertion 870 880	may be due
+A3	Medical-AssertionValue T19 possible
+T20	Medical-Problem 918 923;925 933	trace effusion
+T21	Medical-Assertion 934 952	cannot be excluded
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 959 972	Hiatal hernia
+E18	Medical-Problem:T22
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E10	Medical-Problem:T10 has-Medical-Anatomy:T9 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E15	Medical-Problem:T17 has-Medical-Anatomy:T18 has-Medical-Assertion:T19
+E17	Medical-Problem:T20 has-Medical-Anatomy:T18 has-Medical-Assertion:T21

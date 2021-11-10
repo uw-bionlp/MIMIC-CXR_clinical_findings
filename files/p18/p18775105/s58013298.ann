@@ -1,0 +1,31 @@
+T1	Medical-Anatomy 38 42	Left
+T2	Lesion-Characteristic 54 71	triangular-shaped
+E2	Lesion-Characteristic:T2
+T3	Medical-Assertion 80 97	likely represents
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 98 109	atelectasis
+T5	Medical-Problem 120 129	pneumonia
+T6	Medical-Assertion 130 155	cannot be excluded in the
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Anatomy 365 375	Left lower
+T8	Medical-Assertion 407 424	likely represents
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 425 436	atelectasis
+T10	Medical-Problem 447 456	pneumonia
+T11	Medical-Assertion 457 475	cannot be excluded
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 1059 1073;1075 1088	some increased opacification
+T13	Medical-Anatomy 1096 1105	left base
+T14	Medical-Assertion 1149 1168	probably represents
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1169 1180	atelectasis
+T16	Medical-Problem 1249 1271	superimposed pneumonia
+T17	Medical-Assertion 1272 1293;1295 1316	would be difficult to unequivocally exclude
+A6	Medical-AssertionValue T17 possible
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Anatomy:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T7 has-Medical-Assertion:T8 has-Medical-Assertion:T11
+E8	Medical-Problem:T12 has-Medical-Anatomy:T13
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Assertion:T17

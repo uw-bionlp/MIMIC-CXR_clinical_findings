@@ -1,0 +1,57 @@
+T1	Medical-Anatomy 277 282	lungs
+T2	Medical-Assertion 305 312	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 313 332	focal consolidation
+T4	Medical-Problem 334 342	effusion
+T5	Medical-Problem 347 359	pneumothorax
+T6	Medical-Problem 417 430	Calcification
+E5	Medical-Problem:T6
+T7	Lesion-Assertion 466 472	likely
+A2	Lesion-AssertionValue T7 possible
+T8	Lesion-Characteristic 475 484	calcified
+T9	Lesion-Description 485 495	lymph node
+T10	Lesion-Assertion 500 508	possible
+A3	Lesion-AssertionValue T10 possible
+T11	Lesion-Anatomy 509 519	subcarinal
+T12	Lesion-Characteristic 520 529	calcified
+T13	Lesion-Description 531 542	lymph nodes
+T14	Medical-Problem 575 596	posterior indentation
+T15	Medical-Anatomy 605 642	trachea just below the thoracic inlet
+T16	Medical-Assertion 644 662	potentially due to
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 663 680;682 695	adjacent tortuous great vessels
+T18	Medical-Problem 705 721	enlarged thyroid
+T19	Medical-Assertion 722 744	would also be possible
+A5	Medical-AssertionValue T19 possible
+T20	Medical-Problem 746 758;760 767	Degenerative changes
+T21	Medical-Anatomy 781 802	shoulders bilaterally
+T22	Medical-Assertion 804 806	No
+A6	Medical-AssertionValue T22 absent
+T23	Medical-Problem 807 832	acute osseous abnormality
+T24	Medical-Assertion 844 846	no
+A7	Medical-AssertionValue T24 absent
+T25	Medical-Problem 847 871	free intraperitoneal air
+T26	Medical-Assertion 892 894	No
+A8	Medical-AssertionValue T26 absent
+T27	Medical-Problem 895 924	acute cardiopulmonary process
+T28	Medical-Problem 927 949	Posterior displacement
+T29	Medical-Anatomy 957 994	trachea just below the thoracic inlet
+T30	Medical-Assertion 996 1014	potentially due to
+A9	Medical-AssertionValue T30 possible
+T31	Medical-Problem 1015 1034	thyroid enlargement
+T32	Medical-Problem 1038 1060	tortuous great vessels
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E7	Lesion-Description:T9 has-Lesion-Assertion:T7 has-Lesion-Characteristic:T8
+E10	Lesion-Description:T13 has-Lesion-Assertion:T10 has-Lesion-Anatomy:T11 has-Lesion-Characteristic:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T16 has-Medical-Assertion:T19
+E15	Medical-Problem:T20 has-Medical-Anatomy:T21
+E17	Medical-Problem:T23 has-Medical-Assertion:T22
+E18	Medical-Problem:T25 has-Medical-Assertion:T24
+E19	Medical-Problem:T27 has-Medical-Assertion:T26
+E20	Medical-Problem:T28 has-Medical-Anatomy:T29
+E22	Medical-Problem:T31 has-Medical-Assertion:T30
+E23	Medical-Problem:T32 has-Medical-Assertion:T30

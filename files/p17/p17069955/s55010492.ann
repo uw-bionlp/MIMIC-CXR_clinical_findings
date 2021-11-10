@@ -1,0 +1,20 @@
+T1	Medical-Problem 186 194;196 211	apparent slight widening
+E1	Medical-Problem:T1
+T2	Medical-Problem 291 317	Nonspecific patchy opacity
+T3	Medical-Anatomy 325 339	left lung base
+T4	Medical-Assertion 341 363	most likely represents
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 364 375	atelectasis
+T6	Medical-Assertion 380 391	less likely
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 394 413;415 424	developing focus of pneumonia
+T8	Medical-Anatomy 427 432	Lungs
+T9	Medical-Assertion 476 478	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 479 486;488 497	pleural effusions
+T11	Medical-Problem 501 515	pneumothoraces
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Anatomy:T3 has-Medical-Assertion:T4 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9

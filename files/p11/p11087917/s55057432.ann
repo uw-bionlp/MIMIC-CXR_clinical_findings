@@ -1,0 +1,23 @@
+T1	Lesion-Anatomy 251 267	right lower lobe
+T2	Lesion-Description 268 272	mass
+T3	Medical-Problem 278 301	increased opacification
+T4	Medical-Anatomy 309 324	right lung base
+T5	Medical-Problem 333 361	small right pleural effusion
+T6	Medical-Assertion 420 422	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 423 444	left pleural effusion
+T8	Medical-Problem 446 467	Emphysematous changes
+T9	Medical-Anatomy 475 486	lung apices
+T10	Medical-Assertion 511 513	no
+A2	Medical-AssertionValue T10 absent
+T11	Medical-Problem 514 526	pneumothorax
+T12	Medical-Assertion 554 556	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 557 569	pneumothorax
+E2	Lesion-Description:T2 has-Lesion-Anatomy:T1
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T9 has-Medical-Assertion:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

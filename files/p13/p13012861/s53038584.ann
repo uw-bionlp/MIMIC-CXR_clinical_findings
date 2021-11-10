@@ -1,0 +1,28 @@
+T1	Medical-Problem 421 434	Consolidation
+T2	Medical-Anatomy 438 471	right middle and right lower lobe
+T3	Medical-Problem 484 511	heterogeneous consolidation
+T4	Medical-Anatomy 515 530	left lower lung
+T5	Lesion-Anatomy 573 583	multifocal
+T6	Lesion-Anatomy 584 593	pulmonary
+T7	Lesion-Description 594 600	masses
+T8	Medical-Assertion 606 614	possible
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 615 627;629 638	superimposed pneumonia
+T10	Medical-Problem 665 696	Moderate right pleural effusion
+E9	Medical-Problem:T10
+T11	Medical-Problem 700 705;707 728	small left pleural effusion
+E10	Medical-Problem:T11
+T12	Medical-Assertion 740 742	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 743 755	pneumothorax
+T14	Medical-Problem 807 844	marked lung parenchymal abnormalities
+E12	Medical-Problem:T14
+T15	Medical-Problem 866 913	Similar appearance of multifocal consolidations
+E13	Medical-Problem:T15
+T16	Medical-Problem 919 943;945 967	moderate right and small left pleural effusions
+E14	Medical-Problem:T16
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Lesion-Description:T7 has-Lesion-Anatomy:T5 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E11	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,22 @@
+T1	Medical-Problem 334 354	mild pulmonary edema
+T2	Medical-Anatomy 380 390	lung bases
+T3	Medical-Problem 424 445	Greater opacification
+T4	Medical-Anatomy 453 464	lower lobes
+T5	Medical-Problem 485 527	concurrent atelectasis, severe on the left
+T6	Medical-Problem 533 560;562 573	pleural effusions, moderate on the left
+E6	Medical-Problem:T6
+T7	Medical-Assertion 605 607	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 608 620	pneumothorax
+T9	Medical-Problem 623 637;639 657	Enlargement of cardiac silhouette
+E8	Medical-Problem:T9
+T10	Medical-Problem 687 713	leftward mediastinal shift
+E9	Medical-Problem:T10
+T11	Medical-Assertion 717 719	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 720 732	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

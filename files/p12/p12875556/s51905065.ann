@@ -1,0 +1,40 @@
+T1	Medical-Assertion 33 35	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 36 69	acute cardiopulmonary abnormality
+T3	Medical-Anatomy 419 424	lungs
+T4	Medical-Problem 429 449	mildly hyperinflated
+T5	Medical-Assertion 498 500	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 501 504	CHF
+T7	Medical-Problem 506 522	focal infiltrate
+T8	Medical-Problem 526 534	effusion
+T9	Lesion-Size 587 599	tiny (3.1 mm
+T10	Lesion-Description 601 608	nodular
+T11	Lesion-Description 609 616	opacity
+T12	Lesion-Anatomy 633 643;645 649	right lung apex
+T13	Medical-Assertion 653 655	No
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 656 668	pneumothorax
+T15	Medical-Problem 689 704	Background COPD
+E12	Medical-Problem:T15
+T16	Medical-Assertion 709 711	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 712 717	acute
+T18	Medical-Assertion 764 766	no
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 767 787	pulmonary infiltrate
+T20	Lesion-Size 804 809	small
+T21	Lesion-Description 816 823	nodular
+E16	Lesion-Description:T21
+T22	Lesion-Description 824 831	opacity
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5
+E8	Lesion-Description:T10 has-Lesion-Size-Present:T9
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18
+E17	Lesion-Description:T22 has-Lesion-Size-Present:T20

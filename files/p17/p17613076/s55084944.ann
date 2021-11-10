@@ -1,0 +1,36 @@
+T1	Medical-Anatomy 337 342	aorta
+T2	Medical-Problem 349 353;355 364	mild unfolding
+T3	Medical-Problem 369 400	right upper mediastinal density
+E3	Medical-Problem:T3
+T4	Lesion-Description 659 663	cyst
+E4	Lesion-Description:T4
+T5	Lesion-Size-Trend 713 736;738 744	some long-term increase in the
+A1	Lesion-Size-TrendValue T5 increasing
+T6	Lesion-Description 762 766	cyst
+T7	Medical-Problem 773 813;815 819	airway is again splayed minimally to the left
+E6	Medical-Problem:T7
+T8	Medical-Assertion 824 832	does not
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 833 839	appear
+E7	Medical-Problem:T9
+T10	Medical-Problem 840 848	narrowed
+T11	Medical-Problem 852 881	under substantial mass effect
+T12	Medical-Assertion 916 918	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 919 936	pleural effusions
+T14	Medical-Problem 940 952	pneumothorax
+T15	Lesion-Size-Trend 973 987	Increased size
+A4	Lesion-Size-TrendValue T15 increasing
+T16	Lesion-Anatomy 991 1002	mediastinal
+T17	Lesion-Description 1003 1007	cyst
+T18	Medical-Assertion 1010 1021	No evidence
+A5	Medical-AssertionValue T18 absent
+T19	Medical-Problem 1025 1046;1048 1055	acute cardiopulmonary disease
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Lesion-Description:T6 has-Lesion-Size-Trend:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E9	Medical-Problem:T11 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T12
+E13	Lesion-Description:T17 has-Lesion-Size-Trend:T15 has-Lesion-Anatomy:T16
+E14	Medical-Problem:T19 has-Medical-Assertion:T18

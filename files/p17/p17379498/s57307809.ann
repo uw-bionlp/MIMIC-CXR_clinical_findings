@@ -1,0 +1,34 @@
+T1	Medical-Problem 242 259	nodular structure
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 281 285	left
+T3	Medical-Assertion 297 310	may represent
+A1	Medical-AssertionValue T3 possible
+T4	Lesion-Characteristic 313 322	calcified
+T5	Lesion-Description 323 332	granuloma
+T6	Medical-Problem 341 357	bony abnormality
+T7	Medical-Assertion 388 390	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 391 410	focal consolidation
+T9	Medical-Problem 412 417;419 427	large effusion
+T10	Medical-Problem 431 443	pneumothorax
+T11	Medical-Assertion 530 532	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 533 557	free air below the right
+T13	Medical-Assertion 600 602	No
+A4	Medical-AssertionValue T13 absent
+T14	Medical-Problem 603 630	acute intrathoracic process
+T15	Lesion-Assertion 633 641	Probable
+A5	Lesion-AssertionValue T15 possible
+T16	Lesion-Characteristic 642 651	calcified
+T17	Lesion-Description 652 661	granuloma
+T18	Lesion-Description 669 673;675 682	bone islands
+T19	Lesion-Anatomy 703 718	left upper lung
+E4	Lesion-Description:T5 has-Lesion-Characteristic:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Lesion-Description:T17 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16 has-Lesion-Anatomy:T19
+E13	Lesion-Description:T18 has-Lesion-Assertion:T15 has-Lesion-Anatomy:T19

@@ -1,0 +1,37 @@
+T1	Medical-Problem 221 230	elevation
+T2	Medical-Anatomy 238 256	left hemidiaphragm
+T3	Medical-Problem 292 306	Linear opacity
+T4	Medical-Anatomy 314 328	left lung base
+T5	Medical-Assertion 332 345	likely due to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 347 358	atelectasis
+T7	Medical-Problem 366 374	scarring
+T8	Medical-Assertion 386 388	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 389 405	pleural effusion
+T10	Medical-Problem 417 425;427 439	moderate cardiomegaly
+E8	Medical-Problem:T10
+T11	Medical-Problem 442 469	Hilar contours are enlarged
+E9	Medical-Problem:T11
+T12	Medical-Assertion 471 484	likely due to
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 485 503;505 516	pulmonary arterial enlargement
+T14	Medical-Problem 583 613	Atherosclerotic calcifications
+T15	Medical-Anatomy 626 637	aortic arch
+T16	Medical-Assertion 640 642	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 643 656;658 669	acute osseous abnormality
+T18	Medical-Problem 701 722	Moderate cardiomegaly
+E14	Medical-Problem:T18
+T19	Medical-Problem 725 748	Enlarged hilar contours
+E15	Medical-Problem:T19
+T20	Medical-Problem 781 809	pulmonary artery enlargement
+E16	Medical-Problem:T20
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

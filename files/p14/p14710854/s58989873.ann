@@ -1,0 +1,38 @@
+T1	Medical-Problem 536 566	Left perihilar pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 582 594;596 604	left pleural effusion
+E2	Medical-Problem:T2
+T3	Medical-Problem 625 645	marked consolidation
+T4	Medical-Anatomy 653 668	left lower lobe
+T5	Medical-Problem 708 736	Right lower lobe atelectasis
+E5	Medical-Problem:T5
+T6	Medical-Anatomy 773 780	cardiac
+T7	Medical-Problem 811 815;817 835	left lower lobe opacity
+T8	Medical-Assertion 843 849	likely
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 850 875	still borderline enlarged
+T10	Medical-Problem 923 943	Lung volumes are low
+E9	Medical-Problem:T10
+T11	Medical-Assertion 955 957	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 958 970	pneumothorax
+T13	Medical-Problem 1057 1083	Asymmetric pulmonary edema
+E11	Medical-Problem:T13
+T14	Medical-Problem 1097 1117	left perihilar edema
+E12	Medical-Problem:T14
+T15	Medical-Problem 1126 1156	moderate left pleural effusion
+E13	Medical-Problem:T15
+T16	Medical-Problem 1187 1218	Severe left basal consolidation
+E14	Medical-Problem:T16
+T17	Medical-Assertion 1249 1257	probably
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 1258 1269	atelectasis
+T19	Medical-Assertion 1271 1282	less likely
+A4	Medical-AssertionValue T19 possible
+T20	Medical-Problem 1283 1303	unresolved pneumonia
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T20 has-Medical-Assertion:T17 has-Medical-Assertion:T19

@@ -1,0 +1,20 @@
+T1	Medical-Problem 271 297	severe fibrotic distortion
+T2	Medical-Anatomy 305 329	mid and upper lung zones
+T3	Lesion-Size 372 377	large
+T4	Lesion-Characteristic 378 395	heavily calcified
+T5	Lesion-Characteristic 396 403	central
+T6	Lesion-Description 404 415	lymph nodes
+T7	Medical-Problem 434 445	sarcoidosis
+T8	Medical-Assertion 457 459	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 484 494;496 505	concurrent pneumonia
+T10	Medical-Problem 525 530	edema
+T11	Medical-Assertion 573 575	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 576 592	pleural effusion
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E6	Lesion-Description:T6 has-Lesion-Size-Present:T3 has-Lesion-Characteristic:T4 has-Lesion-Characteristic:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T2
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

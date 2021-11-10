@@ -1,0 +1,20 @@
+T1	Medical-Problem 325 341	low lung volumes
+E1	Medical-Problem:T1
+T2	Medical-Problem 356 380	bronchovascular crowding
+E2	Medical-Problem:T2
+T3	Medical-Problem 382 412	Stable hazy alveolar opacities
+T4	Medical-Anatomy 421 443	right perihilar region
+T5	Medical-Anatomy 448 463	right lung base
+T6	Medical-Problem 484 493	infection
+T7	Medical-Assertion 589 591	No
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 592 604	pneumothorax
+T9	Medical-Problem 625 655	Stable hazy alveolar opacities
+T10	Medical-Anatomy 663 685	right perihilar region
+T11	Medical-Anatomy 690 700;702 706	right lung base
+T12	Medical-Problem 727 736	infection
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Anatomy:T5
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10 has-Medical-Anatomy:T11
+E11	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Anatomy:T11

@@ -1,0 +1,42 @@
+T1	Medical-Problem 217 241	heart is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 310 330	retrocardiac opacity
+E2	Medical-Problem:T2
+T3	Medical-Problem 359 392	small left-sided pleural effusion
+E3	Medical-Problem:T3
+T4	Medical-Problem 397 427	associated parenchymal opacity
+E4	Medical-Problem:T4
+T5	Medical-Assertion 433 436;438 463	can probably be attributed to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 464 475	atelectasis
+T7	Medical-Problem 478 487	Pneumonia
+E6	Medical-Problem:T7
+T8	Medical-Problem 557 586;588 593	trace pleural effusion on the right
+E7	Medical-Problem:T8
+T9	Lesion-Description 598 604	nodule
+T10	Lesion-Anatomy 612 619	lingula
+T11	Lesion-Characteristic 689 698	Sclerotic
+T12	Lesion-Characteristic 699 703	bony
+T13	Lesion-Description 704 714	metastases
+T14	Medical-Assertion 757 766	Suspected
+A2	Medical-AssertionValue T14 possible
+T15	Medical-Problem 767 794	left-sided pleural effusion
+T16	Medical-Problem 800 819	parenchymal opacity
+T17	Medical-Assertion 832 859	differential considerations
+A3	Medical-AssertionValue T17 possible
+T18	Medical-Problem 868 902	associated compressive atelectasis
+T19	Medical-Problem 907 928	potentially pneumonia
+T20	Lesion-Characteristic 966 976	Widespread
+T21	Lesion-Characteristic 977 984	osseous
+T22	Lesion-Description 985 1003	metastatic disease
+T23	Lesion-Description 1035 1041	nodule
+T24	Lesion-Anatomy 1049 1056	lingula
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E8	Lesion-Description:T9 has-Lesion-Anatomy:T10
+E12	Lesion-Description:T13 has-Lesion-Characteristic:T11 has-Lesion-Characteristic:T12
+E13	Medical-Problem:T15 has-Medical-Assertion:T14
+E14	Medical-Problem:T16 has-Medical-Assertion:T14
+E15	Medical-Problem:T18 has-Medical-Assertion:T17
+E16	Medical-Problem:T19 has-Medical-Assertion:T17
+E19	Lesion-Description:T22 has-Lesion-Characteristic:T20 has-Lesion-Characteristic:T21
+E20	Lesion-Description:T23 has-Lesion-Anatomy:T24

@@ -1,0 +1,41 @@
+T1	Medical-Problem 255 324	Stable appearance of right greater than left diffuse airspace opacity
+E1	Medical-Problem:T1
+T2	Medical-Assertion 345 357	differential
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 361 383	severe pulmonary edema
+T4	Medical-Problem 387 397	hemorrhage
+T5	Medical-Problem 401 421	widespread pneumonia
+T6	Medical-Problem 426 430	ARDS
+T7	Medical-Assertion 434 442	Probable
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 443 464	left pleural effusion
+T9	Medical-Assertion 467 475	Possible
+A3	Medical-AssertionValue T9 possible
+T10	Medical-Problem 476 504	trace right pleural effusion
+T11	Medical-Assertion 508 510	No
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 511 523	pneumothorax
+T13	Medical-Problem 941 984	global, consolidative pulmonary abnormality
+E9	Medical-Problem:T13
+T14	Medical-Anatomy 1134 1144	Left lower
+T15	Medical-Problem 1145 1157;1159 1179	lobe remains densely consolidated
+T16	Medical-Problem 1189 1228	accompanying leftward mediastinal shift
+E12	Medical-Problem:T16
+T17	Medical-Problem 1249 1274	substantially atelectasis
+T18	Lesion-Characteristic 1291 1304	indeterminate
+E14	Lesion-Characteristic:T18
+T19	Lesion-Characteristic 1307 1315	probably
+E15	Lesion-Characteristic:T19
+T20	Medical-Assertion 1361 1363	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 1364 1376	pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E4	Medical-Problem:T5 has-Medical-Assertion:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T2
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11
+E11	Medical-Problem:T15 has-Medical-Anatomy:T14
+E13	Medical-Problem:T17 has-Medical-Anatomy:T14
+E16	Medical-Problem:T21 has-Medical-Assertion:T20

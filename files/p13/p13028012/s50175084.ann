@@ -1,0 +1,20 @@
+T1	Medical-Problem 300 309;311 344	Unchanged small bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 349 369	mild pulmonary edema
+E2	Medical-Problem:T2
+T3	Medical-Problem 372 380;382 394	Moderate cardiomegaly
+E3	Medical-Problem:T3
+T4	Medical-Problem 400 430	bilateral areas of atelectasis
+E4	Medical-Problem:T4
+T5	Medical-Assertion 433 435	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 436 451;453 462	new parenchymal opacities
+T7	Medical-Assertion 463 473	suggesting
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 474 483	pneumonia
+T9	Medical-Assertion 485 487	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 488 500	pneumothorax
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T7
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

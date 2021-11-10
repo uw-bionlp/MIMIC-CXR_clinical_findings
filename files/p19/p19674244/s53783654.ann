@@ -1,0 +1,18 @@
+T1	Medical-Problem 798 810	hazy opacity
+T2	Medical-Anatomy 818 833	right lung base
+T3	Medical-Problem 853 870	layering effusion
+T4	Medical-Problem 873 900	Small left pleural effusion
+E4	Medical-Problem:T4
+T5	Medical-Problem 914 946	Bilateral lower lobe atelectasis
+E5	Medical-Problem:T5
+T6	Medical-Problem 989 1011	Superimposed infection
+T7	Medical-Assertion 1012 1030	cannot be excluded
+A1	Medical-AssertionValue T7 possible
+T8	Lesion-Assertion 1036 1044	apparent
+A2	Lesion-AssertionValue T8 possible
+T9	Lesion-Anatomy 1045 1065	superior mediastinal
+T10	Lesion-Description 1067 1071	mass
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E6	Medical-Problem:T6 has-Medical-Assertion:T7
+E8	Lesion-Description:T10 has-Lesion-Assertion:T8 has-Lesion-Anatomy:T9

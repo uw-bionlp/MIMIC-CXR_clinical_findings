@@ -1,0 +1,18 @@
+T1	Medical-Assertion 362 364	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 382 391	opacities
+T3	Medical-Problem 451 473;475 480	perihilar opacities of edema
+E2	Medical-Problem:T3
+T4	Medical-Assertion 511 531	no definite evidence
+A2	Medical-AssertionValue T4 absent
+T5	Medical-Problem 535 544	pneumonia
+T6	Medical-Problem 546 552;554 563	subtle infection
+T7	Medical-Assertion 564 582	cannot be excluded
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 590 597	context
+E5	Medical-Problem:T8
+T9	Medical-Problem 601 604	CHF
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E3	Medical-Problem:T5 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T4 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7

@@ -1,0 +1,16 @@
+T1	Medical-Problem 225 233	Aeration
+T2	Medical-Anatomy 241 251	right lung
+T3	Medical-Problem 271 287	less atelectasis
+T4	Medical-Anatomy 295 302;304 318	base of the right lung
+T5	Medical-Assertion 324 332	probable
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 333 377;379 387	decrease in volume of residual right pleural effusion
+T7	Medical-Assertion 390 392	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 393 405	pneumothorax
+T9	Medical-Problem 580 601	Moderate cardiomegaly
+E7	Medical-Problem:T9
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7

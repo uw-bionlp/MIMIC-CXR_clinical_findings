@@ -1,0 +1,33 @@
+T1	Medical-Assertion 536 538	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 539 551	pneumothorax
+T3	Medical-Problem 580 601	left base atelectasis
+E2	Medical-Problem:T3
+T4	Medical-Problem 656 681	upper zone redistribution
+E3	Medical-Problem:T4
+T5	Medical-Assertion 683 705	without other evidence
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 709 712	CHF
+T7	Medical-Problem 818 833	background COPD
+E5	Medical-Problem:T7
+T8	Lesion-Description 835 850	Nodular density
+T9	Lesion-Anatomy 858 873;875 927	right lung base projecting between the anterior fifth and sixth ribs
+T10	Lesion-Count 1038 1039	2
+T11	Lesion-Size 1040 1045	small
+T12	Lesion-Anatomy 1046 1051	right
+T13	Lesion-Description 1052 1059	nodules
+T14	Medical-Assertion 1064 1072	Probable
+A3	Medical-AssertionValue T14 possible
+T15	Medical-Problem 1073 1092	old healed fracture
+T16	Medical-Anatomy 1093 1107	right clavicle
+T17	Medical-Problem 1116 1141;1143 1157	severe right glenohumeral osteoarthritis
+E14	Medical-Problem:T17
+T18	Lesion-Characteristic 1455 1464	Equivocal
+T19	Lesion-Description 1465 1471	nodule
+T20	Lesion-Anatomy 1472 1487	right lung base
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Lesion-Description:T8 has-Lesion-Anatomy:T9
+E11	Lesion-Description:T13 has-Lesion-Count:T10 has-Lesion-Size-Present:T11 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T15 has-Medical-Assertion:T14 has-Medical-Anatomy:T16
+E16	Lesion-Description:T19 has-Lesion-Characteristic:T18 has-Lesion-Anatomy:T20

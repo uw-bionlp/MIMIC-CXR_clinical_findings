@@ -1,0 +1,53 @@
+T1	Medical-Problem 204 233	heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Problem 296 313	aorta is tortuous
+E2	Medical-Problem:T2
+T3	Medical-Assertion 325 327	no
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 328 346;348 358	pulmonary vascular congestion
+T5	Medical-Problem 361 383	Fibronodular opacities
+T6	Medical-Anatomy 395 406	lung apices
+T7	Lesion-Count 440 441	2
+T8	Lesion-Size-Trend 442 445	new
+A2	Lesion-Size-TrendValue T8 new
+T9	Lesion-Characteristic 446 457	ill-defined
+T10	Lesion-Characteristic 458 465	nodular
+T11	Lesion-Description 466 475	opacities
+T12	Lesion-Anatomy 493 498;500 510	right upper lobe
+T13	Lesion-Characteristic 513 522	Calcified
+T14	Lesion-Description 523 532	granuloma
+T15	Lesion-Anatomy 544 577	left lower lobe, superior segment
+T16	Lesion-Size-Trend 582 591	unchanged
+A3	Lesion-Size-TrendValue T16 no-change
+T17	Medical-Assertion 594 596	No
+A4	Medical-AssertionValue T17 absent
+T18	Medical-Problem 597 613	pleural effusion
+T19	Medical-Problem 617 629	pneumothorax
+T20	Medical-Assertion 648 650	No
+A5	Medical-AssertionValue T20 absent
+T21	Medical-Problem 651 656;658 679	acute osseous abnormalities
+T22	Medical-Problem 708 735	Increased nodular opacities
+E17	Medical-Problem:T22
+T23	Medical-Anatomy 747 762	right lung apex
+T24	Medical-Assertion 763 776	could reflect
+A6	Medical-AssertionValue T24 possible
+T25	Medical-Problem 780 849	superimposed process on a background of chronic granulomatous disease
+T26	Medical-Anatomy 862 873	lung apices
+T27	Medical-Problem 882 891	processes
+E21	Medical-Problem:T27
+T28	Medical-Assertion 892 900	could be
+A7	Medical-AssertionValue T28 possible
+T29	Medical-Problem 901 911	infectious
+T30	Medical-Problem 913 925	inflammatory
+T31	Lesion-Description 940 950	neoplastic
+E24	Lesion-Description:T31
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E9	Lesion-Description:T11 has-Lesion-Count:T7 has-Lesion-Size-Trend:T8 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E12	Lesion-Description:T14 has-Lesion-Characteristic:T13 has-Lesion-Anatomy:T15 has-Lesion-Size-Trend:T16
+E14	Medical-Problem:T18 has-Medical-Assertion:T17
+E15	Medical-Problem:T19 has-Medical-Assertion:T17
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E19	Medical-Problem:T25 has-Medical-Anatomy:T23 has-Medical-Assertion:T24 has-Medical-Anatomy:T26
+E22	Medical-Problem:T29 has-Medical-Assertion:T28
+E23	Medical-Problem:T30 has-Medical-Assertion:T28

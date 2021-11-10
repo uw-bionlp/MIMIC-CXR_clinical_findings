@@ -1,0 +1,37 @@
+T1	Lesion-Characteristic 236 243	diffuse
+T2	Lesion-Anatomy 244 253	bilateral
+T3	Lesion-Size 254 258	tiny
+T4	Lesion-Anatomy 259 268	pulmonary
+T5	Lesion-Description 269 274	nodal
+T6	Lesion-Anatomy 275 286	bilaterally
+T7	Lesion-Characteristic 293 307;309 326	somewhat upper lobe predominance
+T8	Medical-Assertion 338 340	no
+A1	Medical-AssertionValue T8 absent
+T9	Medical-Problem 341 364	confluent consolidation
+T10	Medical-Problem 368 376	effusion
+T11	Lesion-Assertion 439 441	No
+A2	Lesion-AssertionValue T11 absent
+T12	Lesion-Characteristic 442 449	obvious
+T13	Lesion-Anatomy 450 455	hilar
+T14	Lesion-Description 457 467	adenopathy
+T15	Medical-Assertion 470 472	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 473 500	acute osseous abnormalities
+T17	Lesion-Characteristic 521 528	Diffuse
+T18	Lesion-Size 529 534	small
+T19	Lesion-Anatomy 535 554	bilateral pulmonary
+T20	Lesion-Description 555 562	nodules
+T21	Medical-Assertion 565 592	Differential considerations
+A4	Medical-AssertionValue T21 possible
+T22	Lesion-Description 602 620	metastatic disease
+E18	Lesion-Description:T22
+T23	Medical-Problem 624 634	infection,
+E19	Medical-Problem:T23
+T24	Medical-Problem 666 679	mycobacterial
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T2 has-Lesion-Size-Present:T3 has-Lesion-Anatomy:T4 has-Lesion-Anatomy:T6 has-Lesion-Characteristic:T7
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T8
+E12	Lesion-Description:T14 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E17	Lesion-Description:T20 has-Lesion-Characteristic:T17 has-Lesion-Size-Present:T18 has-Lesion-Anatomy:T19
+E20	Medical-Problem:T24 has-Medical-Assertion:T21

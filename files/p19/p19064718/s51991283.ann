@@ -1,0 +1,24 @@
+T1	Medical-Assertion 339 341	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 342 359	pleural effusions
+T3	Medical-Problem 363 375	pneumothorax
+T4	Medical-Problem 379 396	Streaky opacities
+T5	Medical-Anatomy 404 414	lung bases
+T6	Medical-Assertion 415 422	suggest
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 423 440	minor atelectasis
+T8	Lesion-Anatomy 480 489	Pulmonary
+T9	Lesion-Description 490 497	nodules
+T10	Lesion-Assertion 537 549	not apparent
+A3	Lesion-AssertionValue T10 absent
+T11	Medical-Problem 602 611;613 633	sclerotic upper vertebral body
+E8	Medical-Problem:T11
+T12	Medical-Assertion 714 725	No evidence
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 729 742	acute disease
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,47 @@
+T1	Medical-Problem 230 255	Heterogeneous abnormality
+T2	Medical-Anatomy 263 273	right lung
+T3	Medical-Problem 311 323	has worsened
+T4	Medical-Anatomy 351 370	mid and upper zones
+T5	Medical-Assertion 437 439	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 440 456	pleural effusion
+T7	Medical-Problem 464 475	abnormality
+E6	Medical-Problem:T7
+T8	Medical-Problem 488 508	linear opacities and
+E7	Medical-Problem:T8
+T9	Medical-Problem 509 535	background of ground glass
+E8	Medical-Problem:T9
+T10	Medical-Anatomy 546 562	right upper lobe
+T11	Medical-Problem 578 597	region of emphysema
+T12	Medical-Problem 601 615	bronchiectasis
+E11	Medical-Problem:T12
+T13	Medical-Anatomy 623 638	left lower lobe
+T14	Medical-Problem 642 657	mildly abnormal
+T15	Lesion-Assertion 737 739	no
+A2	Lesion-AssertionValue T15 absent
+T16	Lesion-Characteristic 758 765	central
+T17	Lesion-Description 766 776;778 789	lymph node enlargement
+T18	Medical-Problem 793 809	pleural effusion
+E16	Medical-Problem:T18
+T19	Medical-Assertion 858 874	no good evidence
+A3	Medical-AssertionValue T19 absent
+T20	Medical-Problem 879 892	heart failure
+T21	Medical-Problem 927 935;937 946	atypical infection
+E18	Medical-Problem:T21
+T22	Medical-Problem 951 971	pulmonary hemorrhage
+E19	Medical-Problem:T22
+T23	Medical-Problem 976 999	pulmonary drug reaction
+E20	Medical-Problem:T23
+T24	Lesion-Assertion 1067 1069	no
+A4	Lesion-AssertionValue T24 absent
+T25	Lesion-Characteristic 1070 1081	discernable
+T26	Lesion-Anatomy 1082 1086	lung
+T27	Lesion-Description 1087 1093	nodule
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E13	Medical-Problem:T14 has-Medical-Anatomy:T13
+E15	Lesion-Description:T17 has-Lesion-Assertion:T15 has-Lesion-Characteristic:T16
+E17	Medical-Problem:T20 has-Medical-Assertion:T19
+E23	Lesion-Description:T27 has-Lesion-Assertion:T24 has-Lesion-Characteristic:T25 has-Lesion-Anatomy:T26

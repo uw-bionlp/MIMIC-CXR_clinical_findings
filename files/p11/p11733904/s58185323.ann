@@ -1,0 +1,22 @@
+T1	Medical-Anatomy 101 111	right lung
+T2	Medical-Assertion 119 129	resolution
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 133 164	small right apical pneumothorax
+T4	Medical-Problem 167 192;194 218	Stable pleural effusions,  right greater than left
+E3	Medical-Problem:T4
+T5	Medical-Problem 225 246	bibasilar atelectasis
+E4	Medical-Problem:T5
+T6	Medical-Assertion 525 545	no definite evidence
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 549 573	left apical pneumothorax
+T8	Medical-Problem 576 594;596 607	Bibasilar areas of atelectasis
+E6	Medical-Problem:T8
+T9	Medical-Problem 776 783	lucency
+T10	Medical-Anatomy 804 822;824 831	left mid and upper abdomen
+T11	Medical-Assertion 832 846	concerning for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 847 871	free intraperitoneal air
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E9	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11

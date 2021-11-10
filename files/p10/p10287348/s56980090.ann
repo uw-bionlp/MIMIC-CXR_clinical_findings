@@ -1,0 +1,44 @@
+T1	Medical-Problem 303 323;325 333	Heart size is mildly enlarged
+E1	Medical-Problem:T1
+T2	Medical-Anatomy 387 392	Lungs
+T3	Medical-Problem 401 448	hyperinflated with apical predominant emphysema
+T4	Medical-Problem 475 491	linear opacities
+T5	Medical-Anatomy 499 510	upper lobes
+T6	Medical-Problem 531 539	scarring
+T7	Medical-Problem 551 579	increased hazy opacification
+T8	Medical-Anatomy 583 599	both upper lobes
+T9	Medical-Assertion 602 604	No
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 605 620	pulmonary edema
+T11	Medical-Problem 635 679	Small to moderate size left pleural effusion
+E10	Medical-Problem:T11
+T12	Medical-Problem 694 703;705 716	bibasilar atelectasis
+E11	Medical-Problem:T12
+T13	Medical-Assertion 719 721	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 722 734	pneumothorax
+T15	Medical-Assertion 748 750	No
+A3	Medical-AssertionValue T15 absent
+T16	Medical-Problem 751 776	acute osseous abnormality
+T17	Medical-Problem 816 861	Small to moderate-sized left pleural effusion
+E14	Medical-Problem:T17
+T18	Medical-Problem 867 888	bibasilar atelectasis
+E15	Medical-Problem:T18
+T19	Medical-Problem 894 918	Increased hazy opacities
+T20	Medical-Anatomy 926 937	upper lobes
+T21	Medical-Assertion 938 949	may reflect
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 950 962;964 973	superimposed infection
+T23	Medical-Problem 977 992	aspiration on a
+T24	Medical-Problem 993 1029	background of scarring and emphysema
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T6 has-Medical-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T8
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T22 has-Medical-Anatomy:T20 has-Medical-Assertion:T21
+E19	Medical-Problem:T23 has-Medical-Assertion:T21
+E20	Medical-Problem:T24 has-Medical-Anatomy:T20 has-Medical-Assertion:T21

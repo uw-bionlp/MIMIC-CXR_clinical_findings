@@ -1,0 +1,21 @@
+T1	Medical-Problem 210 236	Lung volumes are increased
+E1	Medical-Problem:T1
+T2	Medical-Problem 273 306	Worsening heterogeneous opacities
+T3	Medical-Anatomy 319 350	mid and lower lungs bilaterally
+T4	Medical-Problem 357 375	confluent airspace
+T5	Medical-Anatomy 387 392;394 399	lower lungs
+T6	Medical-Assertion 407 424	likely represents
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 425 460	worsening dependent pulmonary edema
+T8	Medical-Problem 467 495	underlying basilar pneumonia
+T9	Medical-Assertion 499 505	likely
+A2	Medical-AssertionValue T9 possible
+T10	Lesion-Anatomy 548 559	right hilar
+T11	Lesion-Description 560 570	lymph node
+T12	Lesion-Size-Trend 622 645	not appreciably changed
+A3	Lesion-Size-TrendValue T12 no-change
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T9
+E9	Lesion-Description:T11 has-Lesion-Anatomy:T10 has-Lesion-Size-Trend:T12

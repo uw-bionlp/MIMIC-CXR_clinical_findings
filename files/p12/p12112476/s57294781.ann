@@ -1,0 +1,21 @@
+T1	Lesion-Characteristic 215 225	spiculated
+T2	Lesion-Description 226 230	mass
+T3	Lesion-Anatomy 265 276	right hilum
+T4	Lesion-Description 300 304	mass
+T5	Lesion-Anatomy 312 328	right lower lobe
+T6	Medical-Assertion 348 350	No
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 351 363	pneumothorax
+T8	Medical-Problem 366 383	pleural effusions
+T9	Medical-Problem 388 411	new focal consolidation
+T10	Medical-Problem 479 517	multiple old right-sided rib fractures
+E9	Medical-Problem:T10
+T11	Medical-Assertion 535 537	No
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 538 550	pneumothorax
+E2	Lesion-Description:T2 has-Lesion-Characteristic:T1 has-Lesion-Anatomy:T3
+E4	Lesion-Description:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T6
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

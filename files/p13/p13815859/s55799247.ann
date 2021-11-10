@@ -1,0 +1,27 @@
+T1	Medical-Problem 283 299	slight unfolding
+T2	Medical-Anatomy 307 321	thoracic aorta
+T3	Medical-Problem 387 395	Blunting
+T4	Medical-Anatomy 403 432;434 446	posterior costophrenic sulcus on the right
+T5	Medical-Assertion 447 474	may suggest the presence of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 477 505	trace right pleural effusion
+T7	Medical-Assertion 518 520	no
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 521 533	pneumothorax
+T9	Medical-Problem 536 567	Multilevel degenerative changes
+T10	Medical-Anatomy 586 600	thoracic spine
+T11	Medical-Problem 620 662	Blunted right posterior costophrenic angle
+E9	Medical-Problem:T11
+T12	Medical-Assertion 663 683	likely indicative of
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Problem 686 691;693 709	small pleural effusion
+T14	Medical-Assertion 722 724	no
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 725 758	acute cardiopulmonary abnormality
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T13 has-Medical-Assertion:T12
+E11	Medical-Problem:T15 has-Medical-Assertion:T14

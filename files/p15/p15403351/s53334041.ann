@@ -1,0 +1,26 @@
+T1	Medical-Problem 220 231;233 245	Patchy left base opacity
+E1	Medical-Problem:T1
+T2	Medical-Problem 277 288	atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 299 309;311 329	underlying infectious process
+T4	Medical-Assertion 330 344	may be present
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Assertion 383 385	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 387 409	large pleural effusion
+T7	Medical-Assertion 420 422	No
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 423 445	right base atelectasis
+T9	Medical-Assertion 448 459	No evidence
+A4	Medical-AssertionValue T9 absent
+T10	Medical-Problem 464 476	pneumothorax
+T11	Medical-Problem 557 574	Left base opacity
+E7	Medical-Problem:T11
+T12	Medical-Assertion 575 588	worrisome for
+A5	Medical-AssertionValue T12 possible
+T13	Medical-Problem 589 598	pneumonia
+E3	Medical-Problem:T3 has-Medical-Assertion:T4
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,33 @@
+T1	Medical-Problem 374 411	Interval worsening of  linear opacity
+T2	Medical-Anatomy 419 429	right base
+T3	Medical-Problem 434 445;447 454	more patchy opacity
+T4	Medical-Anatomy 462 471	left base
+T5	Medical-Assertion 489 500	may reflect
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 501 522	bibasilar atelectasis
+T7	Medical-Problem 534 544	aspiration
+T8	Medical-Problem 548 557	pneumonia
+T9	Medical-Assertion 558 585	cannot be entirely excluded
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Assertion 588 599	No evidence
+A3	Medical-AssertionValue T10 absent
+T11	Medical-Problem 604 619	pulmonary edema
+T12	Medical-Assertion 622 624	No
+A4	Medical-AssertionValue T12 absent
+T13	Medical-Problem 625 637	pneumothorax
+T14	Medical-Assertion 738 746	Possible
+A5	Medical-AssertionValue T14 possible
+T15	Medical-Problem 747 761;763 772	small layering effusions
+T16	Medical-Problem 775 796	Apparent irregularity
+T17	Medical-Anatomy 804 833	right fifth anterolateral rib
+T18	Medical-Problem 883 896	remote trauma
+E13	Medical-Problem:T18
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T9
+E7	Medical-Problem:T8 has-Medical-Assertion:T5 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T10
+E9	Medical-Problem:T13 has-Medical-Assertion:T12
+E10	Medical-Problem:T15 has-Medical-Assertion:T14
+E11	Medical-Problem:T16 has-Medical-Anatomy:T17

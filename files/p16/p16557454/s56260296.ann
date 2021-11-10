@@ -1,0 +1,25 @@
+T1	Lesion-Description 29 46	Nodular opacities
+T2	Lesion-Anatomy 64 92	right mid to upper lung zone
+T3	Medical-Assertion 117 130	worrisome for
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 131 134	air
+T5	Lesion-Description 495 502	nodular
+E4	Lesion-Description:T5
+T6	Lesion-Description 503 512	opacities
+T7	Lesion-Anatomy 537 578	right mid to upper lung zone peripherally
+T8	Medical-Assertion 647 649	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 650 666	pleural effusion
+T10	Medical-Problem 671 683	pneumothorax
+T11	Medical-Problem 786 793	project
+E9	Medical-Problem:T11
+T12	Medical-Anatomy 803 831	right mid to upper lung zone
+T13	Medical-Assertion 855 868	worrisome for
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 869 897	air space infectious process
+E1	Lesion-Description:T1 has-Lesion-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Lesion-Description:T6 has-Lesion-Anatomy:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T8
+E11	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

@@ -1,0 +1,62 @@
+T1	Medical-Problem 322 343	Cortical irregularity
+T2	Medical-Problem 348 355	lucency
+T3	Medical-Anatomy 368 392	lateral seventh left rib
+T4	Medical-Assertion 393 396;398 405	may reflect
+A1	Medical-AssertionValue T4 possible
+T5	Medical-Problem 408 429	nondisplaced fracture
+T6	Medical-Problem 433 449	chronic fracture
+T7	Medical-Assertion 478 489	No evidence
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 493 505	pneumothorax
+T9	Medical-Problem 566 590	Slight increased opacity
+T10	Medical-Anatomy 598 614	right mid thorax
+T11	Lesion-Assertion 615 628	could reflect
+A3	Lesion-AssertionValue T11 possible
+T12	Lesion-Description 632 639	nodular
+E9	Lesion-Description:T12
+T13	Lesion-Description 640 647	opacity
+T14	Medical-Problem 699 725	heart is severely enlarged
+T15	Medical-Anatomy 744 771	right heart and left atrium
+T16	Medical-Assertion 807 818	may suggest
+A4	Medical-AssertionValue T16 possible
+T17	Medical-Problem 819 833	cardiomyopathy
+T18	Medical-Problem 836 845	Elevation
+T19	Medical-Anatomy 853 857;859 876	left mainstem bronchus
+T20	Medical-Assertion 899 916	likely related to
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 917 927;929 940	left heart enlargement
+T22	Medical-Anatomy 947 972	descending thoracic aorta
+T23	Medical-Problem 976 984	tortuous
+T24	Medical-Problem 992 999	ectatic
+T25	Medical-Problem 1014 1023	Scoliosis
+E20	Medical-Problem:T25
+T26	Medical-Problem 1066 1088	Left 7th rib deformity
+E21	Medical-Problem:T26
+T27	Medical-Assertion 1214 1216	No
+A6	Medical-AssertionValue T27 absent
+T28	Medical-Problem 1217 1229	pneumothorax
+T29	Medical-Problem 1236 1266	Persistent severe cardiomegaly
+E23	Medical-Problem:T29
+T30	Medical-Assertion 1268 1282	concerning for
+A7	Medical-AssertionValue T30 possible
+T31	Medical-Problem 1283 1297	cardiomyopathy
+T32	Medical-Problem 1304 1311	Opacity
+T33	Medical-Anatomy 1315 1335	right mid hemithorax
+T34	Medical-Assertion 1336 1352	could correspond
+A8	Medical-AssertionValue T34 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T3
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T3 has-Medical-Assertion:T4
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Lesion-Description:T13 has-Lesion-Assertion:T11
+E11	Medical-Problem:T14 has-Medical-Anatomy:T15
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T23 has-Medical-Anatomy:T22
+E19	Medical-Problem:T24 has-Medical-Anatomy:T22
+E22	Medical-Problem:T28 has-Medical-Assertion:T27
+E24	Medical-Problem:T31 has-Medical-Assertion:T30
+E25	Medical-Problem:T32 has-Medical-Anatomy:T33 has-Medical-Assertion:T34

@@ -1,0 +1,36 @@
+T1	Medical-Problem 245 278	increase in degree of the opacity
+T2	Medical-Anatomy 286 296;298 302	right lung base
+T3	Medical-Assertion 303 316	likely due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 317 333	pleural effusion
+T5	Medical-Problem 339 361	underlying atelectasis
+T6	Medical-Problem 371 380	infection
+T7	Medical-Assertion 384 396	not excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 415 442	small left pleural effusion
+E6	Medical-Problem:T8
+T9	Medical-Problem 463 483	Retrocardiac opacity
+E7	Medical-Problem:T9
+T10	Medical-Problem 529 559	cardiac silhouette is enlarged
+E8	Medical-Problem:T10
+T11	Medical-Problem 625 645	Degenerative changes
+T12	Medical-Anatomy 658 667	shoulders
+T13	Medical-Problem 685 706	Right basilar opacity
+E11	Medical-Problem:T13
+T14	Medical-Problem 723 739	pleural effusion
+E12	Medical-Problem:T14
+T15	Medical-Assertion 744 750	likely
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 752 763	atelectasis
+T17	Medical-Problem 772 781	infection
+T18	Medical-Assertion 782 800	cannot be excluded
+A4	Medical-AssertionValue T18 possible
+T19	Medical-Problem 860 883	New left-sided effusion
+E15	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T18

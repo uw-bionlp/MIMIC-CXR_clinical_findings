@@ -1,0 +1,30 @@
+T1	Medical-Problem 384 408	postoperative appearance
+T2	Medical-Anatomy 416 427	mediastinum
+T3	Medical-Problem 430 450	Lung volumes are low
+E3	Medical-Problem:T3
+T4	Lesion-Characteristic 532 542	widespread
+T5	Lesion-Description 543 560	nodular opacities
+T6	Lesion-Size 564 576	varying size
+T7	Lesion-Characteristic 582 607	associated bronchial wall
+T8	Medical-Problem 609 631	thickening bilaterally
+E8	Medical-Problem:T8
+T9	Medical-Assertion 643 645	no
+A1	Medical-AssertionValue T9 absent
+T10	Medical-Problem 646 668	large pleural effusion
+T11	Medical-Problem 672 684	pneumothorax
+T12	Lesion-Anatomy 704 714	Widespread
+T13	Lesion-Anatomy 716 733	bilateral varying
+T14	Lesion-Description 734 751	nodular opacities
+T15	Medical-Problem 756 781	bronchial wall thickening
+E14	Medical-Problem:T15
+T16	Medical-Assertion 783 798	could represent
+A2	Medical-AssertionValue T16 possible
+T17	Medical-Problem 799 815	bronchopneumonia
+T18	Medical-Problem 819 839	pulmonary hemorrhage
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T4 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T11 has-Medical-Assertion:T9
+E13	Lesion-Description:T14 has-Lesion-Anatomy:T12 has-Lesion-Anatomy:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T18 has-Medical-Assertion:T16

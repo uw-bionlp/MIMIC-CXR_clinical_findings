@@ -1,0 +1,23 @@
+T1	Medical-Problem 123 144	Bibasilar atelectasis
+E1	Medical-Problem:T1
+T2	Medical-Problem 762 785	Lung volumes remain low
+E2	Medical-Problem:T2
+T3	Medical-Problem 865 889	patchy streaky opacities
+T4	Medical-Anatomy 893 897;899 904	both bases
+T5	Medical-Assertion 905 918	suggestive of
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 919 930	atelectasis
+T7	Medical-Problem 943 952	pneumonia
+T8	Medical-Assertion 953 971;973 981	cannot be entirely excluded
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 984 986	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 987 1005	large pneumothorax
+T11	Medical-Assertion 1008 1019	No evidence
+A4	Medical-AssertionValue T11 absent
+T12	Medical-Problem 1023 1038	pulmonary edema
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,34 @@
+T1	Medical-Problem 258 283	mildly increased widening
+T2	Medical-Anatomy 291 302	mediastinum
+T3	Medical-Problem 305 318	Small opacity
+T4	Medical-Anatomy 327 341	left lung base
+T5	Medical-Assertion 350 358	could be
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 359 363	scar
+T7	Lesion-Description 367 373	nodule
+E6	Lesion-Description:T7
+T8	Medical-Problem 387 396	infection
+T9	Medical-Problem 400 410	Prominence
+T10	Medical-Anatomy 418 445	pulmonary vascular markings
+T11	Medical-Problem 465 473;475 485	vascular congestion
+T12	Medical-Assertion 488 490	No
+A2	Medical-AssertionValue T12 absent
+T13	Medical-Problem 491 519	substantial pleural effusion
+T14	Medical-Problem 523 535	pneumothorax
+T15	Medical-Problem 557 586	Pulmonary vascular congestion
+E13	Medical-Problem:T15
+T16	Lesion-Size-Trend 588 591	New
+A3	Lesion-Size-TrendValue T16 new
+T17	Lesion-Anatomy 592 601	left lung
+T18	Lesion-Description 602 608	nodule
+T19	Medical-Problem 612 616	scar
+E16	Medical-Problem:T19
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Anatomy:T10
+E11	Medical-Problem:T13 has-Medical-Assertion:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T12
+E15	Lesion-Description:T18 has-Lesion-Size-Trend:T16 has-Lesion-Anatomy:T17

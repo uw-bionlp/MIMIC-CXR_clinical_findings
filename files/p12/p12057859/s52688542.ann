@@ -1,0 +1,22 @@
+T1	Medical-Problem 246 266	Mild pulmonary edema
+E1	Medical-Problem:T1
+T2	Medical-Problem 276 296	Severe consolidation
+T3	Medical-Anatomy 307 322;324 328	all of the left lung
+T4	Medical-Anatomy 373 383	right lung
+T5	Medical-Problem 387 399;401 413	growing more consolidated
+T6	Medical-Problem 422 431	pneumonia
+T7	Medical-Problem 435 446	atelectasis
+T8	Medical-Problem 449 471	Cardiomegaly is severe
+E8	Medical-Problem:T8
+T9	Medical-Assertion 531 541	suggesting
+A1	Medical-AssertionValue T9 possible
+T10	Medical-Problem 542 551;553 584	worsening pulmonary arterial hypertension
+T11	Medical-Assertion 745 747	no
+A2	Medical-AssertionValue T11 absent
+T12	Medical-Problem 748 760	pneumothorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Anatomy:T4
+E7	Medical-Problem:T7 has-Medical-Anatomy:T4
+E9	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Assertion:T11

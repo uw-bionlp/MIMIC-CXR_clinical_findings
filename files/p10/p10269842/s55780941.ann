@@ -1,0 +1,28 @@
+T1	Medical-Problem 328 348	Lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 351 375	Confluent consolidations
+T3	Medical-Anatomy 383 388;390 407	lower lobes bilaterally
+T4	Medical-Assertion 433 435	No
+A1	Medical-AssertionValue T4 absent
+T5	Medical-Problem 436 452	pleural effusion
+T6	Medical-Assertion 472 474	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 475 487	pneumothorax
+T8	Medical-Problem 543 577	Ascending aorta is mildly tortuous
+E6	Medical-Problem:T8
+T9	Medical-Assertion 612 614	no
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 616 631	pulmonary edema
+T11	Medical-Problem 703 726	Airspace consolidations
+T12	Medical-Anatomy 734 756	lung bases bilaterally
+T13	Medical-Assertion 757 773	likely represent
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 775 785	aspiration
+T15	Medical-Problem 789 798	infection
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T4
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12
+E10	Medical-Problem:T14 has-Medical-Anatomy:T12 has-Medical-Assertion:T13
+E11	Medical-Problem:T15 has-Medical-Anatomy:T12 has-Medical-Assertion:T13

@@ -1,0 +1,19 @@
+T1	Medical-Problem 201 222;224 237	Diffuse heterogeneous opacification
+T2	Medical-Anatomy 245 255	right lung
+T3	Medical-Problem 278 289;291 305	generalized hyperexpansion
+T4	Medical-Assertion 323 343	most likely reflects
+A1	Medical-AssertionValue T4 possible
+T5	Lesion-Size-Trend 344 355	progression
+A2	Lesion-Size-TrendValue T5 increasing
+T6	Lesion-Anatomy 370 391	right upper lobe lung
+T7	Lesion-Description 392 396	mass
+T8	Lesion-Anatomy 401 406	hilar
+T9	Lesion-Description 407 422	lymphadenopathy
+T10	Medical-Problem 431 442;444 453	supervening pneumonia
+T11	Medical-Assertion 454 488	would have to be considered in the
+A3	Medical-AssertionValue T11 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Lesion-Description:T7 has-Lesion-Size-Trend:T5 has-Lesion-Anatomy:T6
+E7	Lesion-Description:T9 has-Lesion-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Assertion:T4 has-Medical-Assertion:T11

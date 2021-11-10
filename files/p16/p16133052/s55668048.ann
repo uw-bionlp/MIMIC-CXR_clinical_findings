@@ -1,0 +1,32 @@
+T1	Medical-Problem 340 345;347 374	Small bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 433 456	Worsening opacification
+T3	Lesion-Characteristic 462 473	ill-defined
+E3	Lesion-Characteristic:T3
+T4	Medical-Anatomy 497 501;503 513	both lung bases
+T5	Medical-Assertion 524 526	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 527 539	pneumothorax
+T7	Medical-Assertion 542 544	No
+A2	Medical-AssertionValue T7 absent
+T8	Medical-Problem 545 574	pulmonary vascular congestion
+T9	Medical-Problem 713 764	Increased size of small bilateral pleural effusions
+E7	Medical-Problem:T9
+T10	Medical-Problem 769 788;790 833	worsening bibasilar airspace opacities, right greater than left
+E8	Medical-Problem:T10
+T11	Medical-Assertion 845 858	could reflect
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 859 868	pneumonia
+T13	Medical-Problem 873 883	aspiration
+T14	Lesion-Characteristic 902 912	background
+T15	Lesion-Description 939 944	tumor
+T16	Lesion-Description 954 973	disease progression
+T17	Lesion-Assertion 982 994	not excluded
+A4	Lesion-AssertionValue T17 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Lesion-Description:T15 has-Lesion-Characteristic:T14
+E13	Lesion-Description:T16 has-Lesion-Assertion:T17

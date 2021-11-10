@@ -1,0 +1,36 @@
+T1	Medical-Anatomy 227 232	lungs
+T2	Medical-Problem 246 261	focal opacities
+T3	Medical-Assertion 263 273	concerning
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 281 299	infectious process
+T5	Medical-Anatomy 329 341	cardiac apex
+T6	Medical-Problem 395 417	1.3 cm rounded density
+T7	Lesion-Characteristic 486 495	calcified
+T8	Lesion-Anatomy 497 503	breast
+T9	Lesion-Description 504 510	nodule
+T10	Lesion-Assertion 514 522	possible
+A2	Lesion-AssertionValue T10 possible
+T11	Medical-Assertion 611 613	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 614 630	pleural effusion
+T13	Medical-Problem 634 646	pneumothorax
+T14	Medical-Problem 650 672	Old right rib fracture
+E11	Medical-Problem:T14
+T15	Medical-Assertion 710 721	No evidence
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 725 734	pneumonia
+T17	Medical-Problem 741 748	Opacity
+T18	Medical-Anatomy 769 792	cardiac apex on lateral
+T19	Lesion-Assertion 805 811	may be
+A5	Lesion-AssertionValue T19 possible
+T20	Lesion-Characteristic 813 822	calcified
+T21	Lesion-Description 830 836	nodule
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T6 has-Medical-Anatomy:T5
+E8	Lesion-Description:T9 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T8 has-Lesion-Assertion:T10
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11
+E12	Medical-Problem:T16 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T18
+E16	Lesion-Description:T21 has-Lesion-Assertion:T19 has-Lesion-Characteristic:T20

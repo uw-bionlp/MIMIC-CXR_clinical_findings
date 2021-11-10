@@ -1,0 +1,24 @@
+T1	Medical-Problem 218 239	Subtle 1,4 cm density
+T2	Medical-Anatomy 243 288	right upper lobe overlying anterior third rib
+T3	Lesion-Assertion 289 294;296 298	could be
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Size-Trend 301 304	new
+A2	Lesion-Size-TrendValue T4 new
+T5	Lesion-Anatomy 305 309	lung
+T6	Lesion-Description 310 316	lesion
+T7	Medical-Assertion 363 365	no
+A3	Medical-AssertionValue T7 absent
+T8	Medical-Problem 366 373;375 383	pleural effusion
+T9	Medical-Problem 387 399	pneumothorax
+T10	Medical-Problem 465 503	Subtle right upper lobe 1.4 cm density
+E7	Medical-Problem:T10
+T11	Medical-Assertion 504 512	could be
+A4	Medical-AssertionValue T11 possible
+T12	Medical-Problem 515 540;542 552	superimposition of normal structures
+T13	Lesion-Characteristic 558 562	real
+E9	Lesion-Characteristic:T13
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E4	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Size-Trend:T4 has-Lesion-Anatomy:T5
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T7
+E8	Medical-Problem:T12 has-Medical-Assertion:T11

@@ -1,0 +1,36 @@
+T1	Medical-Problem 141 148	hypoxic
+E1	Medical-Problem:T1
+T2	Medical-Problem 243 259	Mild volume loss
+T3	Medical-Anatomy 278 300	right upper hemithorax
+T4	Lesion-Size 310 315	large
+T5	Lesion-Description 316 320	mass
+T6	Lesion-Anatomy 345 391;393 404	upper pole of the right hilus and the adjacent mediastinum
+T7	Lesion-Description 424 428	mass
+E7	Lesion-Description:T7
+T8	Medical-Problem 432 461	extensive linear infiltration
+T9	Medical-Anatomy 470 509	right upper lobe pulmonary interstitium
+T10	Medical-Problem 516 548;550 558	upper pole of the right hilus is enlarged
+E10	Medical-Problem:T10
+T11	Lesion-Assertion 653 660	suggest
+A1	Lesion-AssertionValue T11 possible
+T12	Lesion-Characteristic 664 673	extensive
+T13	Lesion-Anatomy 674 690	right upper lung
+T14	Lesion-Description 691 701	malignancy
+T15	Lesion-Characteristic 708 736	local lymphangitic extension
+T16	Lesion-Characteristic 741 759	central adenopathy
+T17	Medical-Anatomy 764 768	both
+E16	Medical-Anatomy:T17
+T18	Medical-Assertion 802 804	no
+A2	Medical-AssertionValue T18 absent
+T19	Medical-Problem 805 821	pleural effusion
+T20	Medical-Problem 853 861	Heart is
+E18	Medical-Problem:T20
+T21	Medical-Problem 863 878	mildly enlarged
+E19	Medical-Problem:T21
+T22	Medical-Problem 910 930;932 954	left atrial and left ventricular dilatation
+E20	Medical-Problem:T22
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E5	Lesion-Description:T5 has-Lesion-Size-Present:T4 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T8 has-Medical-Anatomy:T9
+E13	Lesion-Description:T14 has-Lesion-Assertion:T11 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T13 has-Lesion-Characteristic:T15 has-Lesion-Characteristic:T16
+E17	Medical-Problem:T19 has-Medical-Assertion:T18

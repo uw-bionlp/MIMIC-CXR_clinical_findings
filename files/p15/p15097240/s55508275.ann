@@ -1,0 +1,25 @@
+T1	Medical-Problem 311 354	moderate sized right-sided pleural effusion
+E1	Medical-Problem:T1
+T2	Medical-Problem 359 381	associated atelectasis
+E2	Medical-Problem:T2
+T3	Medical-Problem 395 409	linear opacity
+T4	Medical-Anatomy 417 431	mid right lung
+T5	Medical-Problem 453 471	linear atelectasis
+T6	Medical-Problem 474 504	Underlying focal consolidation
+T7	Medical-Assertion 508 511;513 530	not entirely excluded
+A1	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 542 544	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 545 557	pneumothorax
+T10	Medical-Problem 578 606	Right-sided pleural effusion
+E8	Medical-Problem:T10
+T11	Medical-Problem 612 634	associated atelectasis
+E9	Medical-Problem:T11
+T12	Medical-Problem 637 655;657 666	Focal superimposed infection
+T13	Medical-Assertion 670 682	not excluded
+A3	Medical-AssertionValue T13 possible
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E6	Medical-Problem:T6 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T12 has-Medical-Assertion:T13

@@ -1,0 +1,25 @@
+T1	Medical-Problem 267 280	few opacities
+T2	Medical-Anatomy 288 302	left lung base
+T3	Medical-Problem 308 317;319 326	increased density
+T4	Medical-Anatomy 336 356	lower thoracic spine
+T5	Medical-Assertion 424 426	No
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 427 443	pleural effusion
+T7	Medical-Problem 447 459	pneumothorax
+T8	Medical-Problem 614 619;621 640	right healed rib fracture
+E7	Medical-Problem:T8
+T9	Medical-Problem 680 689	Opacities
+T10	Medical-Anatomy 697 712	left lower lobe
+T11	Medical-Assertion 713 726	may represent
+A2	Medical-AssertionValue T11 possible
+T12	Medical-Problem 727 738	atelectasis
+T13	Medical-Problem 749 775	early developing pneumonia
+T14	Medical-Assertion 779 800	not entirely excluded
+A3	Medical-AssertionValue T14 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T5
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T12 has-Medical-Anatomy:T10 has-Medical-Assertion:T11
+E11	Medical-Problem:T13 has-Medical-Anatomy:T10 has-Medical-Assertion:T14

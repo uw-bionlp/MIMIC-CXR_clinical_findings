@@ -1,0 +1,21 @@
+T1	Medical-Assertion 278 284	little
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Assertion 306 317	no evidence
+A2	Medical-AssertionValue T2 absent
+T3	Medical-Problem 321 333	pneumothorax
+T4	Medical-Problem 366 388	Left basal atelectasis
+E2	Medical-Problem:T4
+T5	Medical-Problem 404 420;422 448	Small regions of peribronchial infiltration
+T6	Medical-Anatomy 464 496	right upper and lower lung zones
+T7	Medical-Assertion 499 513	concerning for
+A3	Medical-AssertionValue T7 possible
+T8	Medical-Problem 514 523	pneumonia
+T9	Medical-Problem 526 554	Small right pleural effusion
+E6	Medical-Problem:T9
+T10	Medical-Assertion 592 594	no
+A4	Medical-AssertionValue T10 absent
+T11	Medical-Problem 595 610	pulmonary edema
+E1	Medical-Problem:T3 has-Medical-Assertion:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T5 has-Medical-Anatomy:T6
+E5	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T11 has-Medical-Assertion:T10

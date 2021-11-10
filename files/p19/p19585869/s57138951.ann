@@ -1,0 +1,19 @@
+T1	Medical-Problem 423 450	bilateral pleural effusions
+E1	Medical-Problem:T1
+T2	Medical-Problem 455 464;466 476	pulmonary edema, now
+E2	Medical-Problem:T2
+T3	Medical-Assertion 494 496	No
+A1	Medical-AssertionValue T3 absent
+T4	Medical-Problem 497 509	pneumothorax
+T5	Medical-Problem 523 539	Patchy opacities
+T6	Medical-Anatomy 548 568	left lower lung zone
+T7	Medical-Assertion 569 580	may reflect
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 581 592	atelectasis
+T9	Medical-Problem 724 739	pulmonary edema
+E7	Medical-Problem:T9
+T10	Medical-Problem 744 761;763 777	bilateral pleural effusions, now
+E8	Medical-Problem:T10
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7

@@ -1,0 +1,51 @@
+T1	Medical-Problem 325 331;333 352	coarse reticular opacities
+T2	Medical-Anatomy 367 393	majority of the right lung
+T3	Lesion-Assertion 454 468	concerning for
+A1	Lesion-AssertionValue T3 possible
+T4	Lesion-Description 480 492	lymphangitic
+T5	Medical-Problem 518 525	opacity
+T6	Medical-Anatomy 533 555	base of the right lung
+T7	Medical-Assertion 607 610	may
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 611 634	worsening consolidation
+T9	Lesion-Description 637 641	mass
+E7	Lesion-Description:T9
+T10	Medical-Problem 645 656	atelectasis
+T11	Medical-Problem 673 715	subtle increase in the reticular opacities
+T12	Medical-Anatomy 732 768	mid and lower zones of the left lung
+T13	Medical-Assertion 780 791	no evidence
+A3	Medical-AssertionValue T13 absent
+T14	Medical-Problem 796 808	pneumothorax
+T15	Medical-Problem 814 834	right-sided effusion
+E12	Medical-Problem:T15
+T16	Medical-Assertion 882 884	no
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 885 906	left pleural effusion
+T18	Medical-Problem 927 953	Coarse reticular opacities
+T19	Medical-Anatomy 968 1002;1004 1034	majority of the right lung and the lower portion of the left lung
+T20	Medical-Assertion 1092 1106	concerning for
+A5	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1152 1157	edema
+T22	Medical-Problem 1195 1214	right basal opacity
+E17	Medical-Problem:T22
+T23	Medical-Assertion 1256 1269	may represent
+A6	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1285 1309	infectious consolidation
+T25	Lesion-Characteristic 1311 1320	enlarging
+T26	Lesion-Description 1321 1325	mass
+T27	Medical-Problem 1330 1341	atelectasis
+T28	Medical-Problem 1346 1374	Right-sided pleural effusion
+E22	Medical-Problem:T28
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Lesion-Description:T4 has-Lesion-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Anatomy:T6 has-Medical-Assertion:T7
+E9	Medical-Problem:T11 has-Medical-Anatomy:T12
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T17 has-Medical-Assertion:T16
+E14	Medical-Problem:T18 has-Medical-Anatomy:T19
+E16	Medical-Problem:T21 has-Medical-Anatomy:T19 has-Medical-Assertion:T20
+E18	Medical-Problem:T24 has-Medical-Assertion:T23
+E20	Lesion-Description:T26 has-Lesion-Characteristic:T25
+E21	Medical-Problem:T27 has-Medical-Assertion:T23

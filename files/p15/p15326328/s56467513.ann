@@ -1,0 +1,19 @@
+T1	Medical-Assertion 261 263	No
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 264 279	relevant change
+T3	Lesion-Assertion 282 284	No
+A2	Lesion-AssertionValue T3 absent
+T4	Lesion-Characteristic 285 295	suspicious
+T5	Lesion-Anatomy 296 305	pulmonary
+T6	Lesion-Description 307 314	nodules
+T7	Lesion-Description 318 324	masses
+T8	Medical-Assertion 327 329	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 330 347	pleural effusions
+T10	Medical-Problem 376 380;382 392	Mild elongation
+T11	Medical-Anatomy 400 416	descending aorta
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E4	Lesion-Description:T6 has-Lesion-Assertion:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E5	Lesion-Description:T7 has-Lesion-Assertion:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T11

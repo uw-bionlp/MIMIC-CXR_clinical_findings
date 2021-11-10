@@ -1,0 +1,22 @@
+T1	Medical-Problem 223 264	Borderline size of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Assertion 265 272	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 273 288	pulmonary edema
+T4	Lesion-Assertion 291 293	No
+A2	Lesion-AssertionValue T4 absent
+T5	Lesion-Anatomy 294 298	lung
+T6	Lesion-Description 300 307	nodules
+T7	Lesion-Description 311 317	masses
+T8	Medical-Assertion 320 322	No
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 323 359	focal parenchymal opacity suggesting
+E6	Medical-Problem:T9
+T10	Medical-Problem 360 369	pneumonia
+T11	Medical-Problem 373 407	Unchanged focal pleural thickening
+T12	Medical-Anatomy 415 430	right lung apex
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E4	Lesion-Description:T6 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E5	Lesion-Description:T7 has-Lesion-Assertion:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T10 has-Medical-Assertion:T8
+E8	Medical-Problem:T11 has-Medical-Anatomy:T12

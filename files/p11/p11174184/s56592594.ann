@@ -1,0 +1,30 @@
+T1	Medical-Problem 427 452	Persistent patchy opacity
+T2	Medical-Anatomy 460 469	left base
+T3	Medical-Assertion 470 490	most likely reflects
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 491 499;501 538	slightly worsening left lower lobe atelectasis
+T5	Medical-Problem 549 571	superimposed pneumonia
+T6	Medical-Problem 576 586	aspiration
+T7	Medical-Assertion 587 605	cannot be excluded
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Assertion 607 615	Possible
+A3	Medical-AssertionValue T8 possible
+T9	Medical-Problem 616 638	layering left effusion
+T10	Lesion-Characteristic 640 649	Calcified
+T11	Lesion-Description 651 657	nodule
+T12	Lesion-Anatomy 665 680	left upper lobe
+T13	Lesion-Characteristic 697 726	prior granulomatous infection
+T14	Medical-Assertion 729 740	No evidence
+A4	Medical-AssertionValue T14 absent
+T15	Medical-Problem 744 759	pulmonary edema
+T16	Medical-Assertion 856 858	No
+A5	Medical-AssertionValue T16 absent
+T17	Medical-Problem 859 871	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Anatomy:T2 has-Medical-Assertion:T7
+E5	Medical-Problem:T6 has-Medical-Anatomy:T2 has-Medical-Assertion:T7
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E8	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12 has-Lesion-Characteristic:T13
+E11	Medical-Problem:T15 has-Medical-Assertion:T14
+E12	Medical-Problem:T17 has-Medical-Assertion:T16

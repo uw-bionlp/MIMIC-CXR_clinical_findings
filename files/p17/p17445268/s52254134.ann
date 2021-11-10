@@ -1,0 +1,50 @@
+T1	Medical-Problem 390 415	multifocal opacifications
+T2	Medical-Anatomy 457 466;468 478	bilateral lung bases
+T3	Medical-Anatomy 483 497	right mid lung
+T4	Medical-Anatomy 502 524	left upper to mid lung
+T5	Lesion-Characteristic 552 567	well-delineated
+T6	Lesion-Size 568 574	3.7-cm
+T7	Lesion-Characteristic 575 582	bilobed
+T8	Lesion-Description 583 590	nodular
+E8	Lesion-Description:T8
+T9	Lesion-Description 591 598	density
+T10	Lesion-Anatomy 619 658	inferior aspect of the right upper lung
+T11	Lesion-Size 663 668	small
+T12	Lesion-Description 669 675	nodule
+T13	Lesion-Assertion 750 760	concerning
+A1	Lesion-AssertionValue T13 possible
+T14	Lesion-Description 777 787	malignancy
+T15	Medical-Problem 790 818	Trace right pleural effusion
+E14	Medical-Problem:T15
+T16	Medical-Assertion 831 833	No
+A2	Medical-AssertionValue T16 absent
+T17	Medical-Problem 835 847	pneumothorax
+T18	Medical-Assertion 858 860	No
+A3	Medical-AssertionValue T18 absent
+T19	Medical-Problem 861 869	fracture
+T20	Lesion-Characteristic 897 904	Bilobed
+T21	Lesion-Description 905 920	nodular density
+T22	Lesion-Anatomy 928 956	base of the right upper lung
+T23	Lesion-Assertion 958 972	concerning for
+A4	Lesion-AssertionValue T23 possible
+T24	Lesion-Description 973 977	mass
+T25	Lesion-Assertion 979 990	less likely
+A5	Lesion-AssertionValue T25 possible
+T26	Lesion-Description 1014 1022	hematoma
+T27	Medical-Problem 1024 1029;1031 1088	Small multifocal opacities bilaterally, right greater than left
+E22	Medical-Problem:T27
+T28	Medical-Assertion 1090 1101	may reflect
+A6	Medical-AssertionValue T28 possible
+T29	Medical-Problem 1103 1121	infectious process
+T30	Medical-Problem 1134 1144	hemorrhage
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2 has-Medical-Anatomy:T3 has-Medical-Anatomy:T4
+E9	Lesion-Description:T9 has-Lesion-Characteristic:T5 has-Lesion-Size-Present:T6 has-Lesion-Characteristic:T7 has-Lesion-Anatomy:T10
+E12	Lesion-Description:T12 has-Lesion-Size-Present:T11
+E13	Lesion-Description:T14 has-Lesion-Assertion:T13
+E15	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Assertion:T18
+E18	Lesion-Description:T21 has-Lesion-Characteristic:T20 has-Lesion-Anatomy:T22
+E20	Lesion-Description:T24 has-Lesion-Anatomy:T22 has-Lesion-Assertion:T23
+E21	Lesion-Description:T26 has-Lesion-Anatomy:T22 has-Lesion-Assertion:T25
+E23	Medical-Problem:T29 has-Medical-Assertion:T28
+E24	Medical-Problem:T30 has-Medical-Assertion:T28

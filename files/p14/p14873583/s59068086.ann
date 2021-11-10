@@ -1,0 +1,31 @@
+T1	Medical-Problem 210 218;220 239	elevated right hemidiaphragm
+E1	Medical-Problem:T1
+T2	Medical-Problem 245 273	linear right basilar opacity
+E2	Medical-Problem:T2
+T3	Medical-Assertion 275 286	most likely
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 288 299	atelectasis
+T5	Medical-Anatomy 306 311	lungs
+T6	Medical-Assertion 332 339	without
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 340 363	confluent consolidation
+T8	Medical-Problem 366 374	effusion
+T9	Medical-Problem 378 397	vascular congestion
+T10	Medical-Problem 449 459	Tortuosity
+T11	Medical-Anatomy 467 492	descending thoracic aorta
+T12	Medical-Problem 511 521	Prominence
+T13	Medical-Anatomy 529 540	right hilum
+T14	Medical-Assertion 569 571	No
+A3	Medical-AssertionValue T14 absent
+T15	Medical-Problem 572 585;587 598	acute osseous abnormality
+T16	Medical-Assertion 630 632	No
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 633 662	acute cardiopulmonary process
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T9 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Anatomy:T11
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T14
+E13	Medical-Problem:T17 has-Medical-Assertion:T16

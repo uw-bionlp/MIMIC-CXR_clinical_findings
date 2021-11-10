@@ -1,0 +1,31 @@
+T1	Medical-Problem 702 724	heart remains enlarged
+E1	Medical-Problem:T1
+T2	Medical-Assertion 729 740	may reflect
+A1	Medical-AssertionValue T2 possible
+T3	Medical-Problem 741 753	cardiomegaly
+T4	Medical-Problem 758 778	pericardial effusion
+T5	Medical-Problem 802 818	low lung volumes
+E4	Medical-Problem:T5
+T6	Medical-Problem 824 832;834 878	layering bilateral effusions, right greater than left
+E5	Medical-Problem:T6
+T7	Medical-Problem 890 903	consolidation
+T8	Medical-Anatomy 912 931	retrocardiac region
+T9	Medical-Assertion 938 951	may represent
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 952 982	partial lower lobe atelectasis
+T11	Medical-Problem 994 1003	pneumonia
+T12	Medical-Assertion 1004 1031	cannot be entirely excluded
+A3	Medical-AssertionValue T12 possible
+T13	Medical-Assertion 1102 1126	which raises concern for
+A4	Medical-AssertionValue T13 possible
+T14	Medical-Problem 1128 1160	mild-to-moderate pulmonary edema
+T15	Medical-Assertion 1163 1165	No
+A5	Medical-AssertionValue T15 absent
+T16	Medical-Problem 1166 1184	large pneumothorax
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Anatomy:T8 has-Medical-Assertion:T9 has-Medical-Assertion:T12
+E10	Medical-Problem:T14 has-Medical-Assertion:T13
+E11	Medical-Problem:T16 has-Medical-Assertion:T15

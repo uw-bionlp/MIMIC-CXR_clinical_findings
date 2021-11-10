@@ -1,0 +1,24 @@
+T1	Medical-Problem 198 206	Fullness
+T2	Medical-Anatomy 214 224	left hilus
+T3	Medical-Assertion 225 230;232 241	could be due to
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 245 275	enlarged left pulmonary artery
+T5	Lesion-Description 279 289	adenopathy
+E4	Lesion-Description:T5
+T6	Medical-Assertion 301 303	no
+A2	Medical-AssertionValue T6 absent
+T7	Medical-Problem 305 321	pleural effusion
+T8	Medical-Problem 325 337	pneumothorax
+T9	Medical-Assertion 459 461	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 462 491	acute cardiopulmonary process
+T11	Lesion-Characteristic 496 504	Enlarged
+T12	Lesion-Anatomy 505 526	left pulmonary artery
+T13	Lesion-Anatomy 530 535	hilar
+T14	Lesion-Description 536 546	adenopathy
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T3
+E5	Medical-Problem:T7 has-Medical-Assertion:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T6
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E11	Lesion-Description:T14 has-Lesion-Characteristic:T11 has-Lesion-Anatomy:T12 has-Lesion-Anatomy:T13

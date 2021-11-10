@@ -1,0 +1,25 @@
+T1	Medical-Problem 155 176	Marked focal kyphosis
+T2	Medical-Anatomy 189 211	thoracolumbar junction
+T3	Medical-Problem 342 350	crowding
+T4	Medical-Anatomy 358 384	bronchovascular structures
+T5	Medical-Assertion 390 392	no
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 393 414	overt pulmonary edema
+T7	Medical-Problem 433 450	Streaky opacities
+T8	Medical-Anatomy 458 462;464 469	lung bases
+T9	Medical-Assertion 470 484	likely reflect
+A2	Medical-AssertionValue T9 possible
+T10	Medical-Problem 485 496	atelectasis
+T11	Medical-Assertion 499 501	No
+A3	Medical-AssertionValue T11 absent
+T12	Medical-Problem 502 524	large pleural effusion
+T13	Medical-Problem 528 540	pneumothorax
+T14	Medical-Problem 571 592	Bibasilar atelectasis
+E11	Medical-Problem:T14
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T8
+E8	Medical-Problem:T10 has-Medical-Anatomy:T8 has-Medical-Assertion:T9
+E9	Medical-Problem:T12 has-Medical-Assertion:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T11

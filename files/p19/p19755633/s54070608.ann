@@ -1,0 +1,26 @@
+T1	Medical-Anatomy 218 223	lungs
+T2	Medical-Assertion 234 241	without
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 242 255	consolidation
+T4	Medical-Problem 259 264	edema
+T5	Medical-Assertion 276 278	no
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 280 296	pleural effusion
+T7	Medical-Problem 300 312	pneumothorax
+T8	Lesion-Count 360 363	Two
+T9	Lesion-Characteristic 364 372	punctate
+T10	Lesion-Characteristic 373 382	sclerotic
+T11	Lesion-Anatomy 395 411	right hemithorax
+T12	Lesion-Assertion 416 422	likely
+A3	Lesion-AssertionValue T12 possible
+T13	Lesion-Characteristic 423 432	calcified
+T14	Lesion-Description 434 444	granulomas
+T15	Medical-Assertion 540 542	No
+A4	Medical-AssertionValue T15 absent
+T16	Medical-Problem 543 572	acute cardiopulmonary process
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E11	Lesion-Description:T14 has-Lesion-Count:T8 has-Lesion-Characteristic:T9 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T11 has-Lesion-Assertion:T12 has-Lesion-Characteristic:T13
+E12	Medical-Problem:T16 has-Medical-Assertion:T15

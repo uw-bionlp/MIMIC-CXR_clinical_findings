@@ -1,0 +1,22 @@
+T1	Medical-Problem 333 353	multilobar opacities
+T2	Medical-Anatomy 370 401	mid and lower lobes bilaterally
+T3	Medical-Problem 404 421	Increased density
+T4	Medical-Anatomy 432 437;439 446	major fissure
+T5	Medical-Assertion 460 475	could represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 483 491	fluid or
+T7	Medical-Problem 492 503	volume loss
+T8	Medical-Assertion 514 516	no
+A2	Medical-AssertionValue T8 absent
+T9	Medical-Problem 518 530	pneumothorax
+T10	Medical-Problem 641 671	Multilobar bilateral opacities
+E8	Medical-Problem:T10
+T11	Medical-Assertion 672 686	concerning for
+A3	Medical-AssertionValue T11 possible
+T12	Medical-Problem 687 696	pneumonia
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E9	Medical-Problem:T12 has-Medical-Assertion:T11

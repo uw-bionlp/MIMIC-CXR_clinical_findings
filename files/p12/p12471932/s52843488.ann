@@ -1,0 +1,26 @@
+T1	Medical-Problem 308 328	persistent elevation
+T2	Medical-Anatomy 336 355	right hemidiaphragm
+T3	Medical-Problem 439 448;450 469	bilateral pulmonary opacities
+E3	Medical-Problem:T3
+T4	Medical-Problem 475 517;519 529	right infrahilar/right middle lobe opacity persisting
+E4	Medical-Problem:T4
+T5	Medical-Assertion 531 558	which may in part relate to
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 559 570	atelectasis
+T7	Medical-Problem 581 591;593 606	underlying consolidation
+T8	Medical-Assertion 607 626	may also be present
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Assertion 629 631	No
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 632 654	large pleural effusion
+T11	Medical-Problem 658 670	pneumothorax
+T12	Lesion-Characteristic 739 748	calcified
+T13	Lesion-Anatomy 750 761	mediastinum
+T14	Lesion-Anatomy 766 771	hilar
+T15	Lesion-Description 772 777	nodes
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9
+E8	Medical-Problem:T11 has-Medical-Assertion:T9
+E12	Lesion-Description:T15 has-Lesion-Characteristic:T12 has-Lesion-Anatomy:T13 has-Lesion-Anatomy:T14

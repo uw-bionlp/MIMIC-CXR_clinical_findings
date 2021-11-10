@@ -1,0 +1,23 @@
+T1	Medical-Problem 221 232	Obscuration
+T2	Medical-Anatomy 240 252;254 275	right height inferior heart border
+T3	Medical-Problem 289 305	adjacent fat pad
+T4	Medical-Anatomy 355 360	Lungs
+T5	Medical-Assertion 371 378	without
+A1	Medical-AssertionValue T5 absent
+T6	Medical-Problem 379 398	focal consolidation
+T7	Medical-Problem 400 405;407 415	large effusion
+T8	Medical-Problem 419 431	pneumothorax
+T9	Medical-Assertion 518 520	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 521 529	free air
+T11	Medical-Anatomy 540 545;547 560	right hemidiaphragm
+T12	Medical-Assertion 581 583	No
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 584 611	acute intrathoracic process
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T2
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E7	Medical-Problem:T8 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E8	Medical-Problem:T10 has-Medical-Assertion:T9 has-Medical-Anatomy:T11
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

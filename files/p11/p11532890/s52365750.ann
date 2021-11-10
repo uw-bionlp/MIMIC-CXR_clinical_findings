@@ -1,0 +1,25 @@
+T1	Medical-Problem 617 630	Opacification
+T2	Medical-Anatomy 639 650	lower lungs
+T3	Medical-Assertion 654 662	probably
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 663 686	atelectasis on the left
+T5	Medical-Problem 691 696	edema
+T6	Medical-Problem 700 709	pneumonia
+E5	Medical-Problem:T6
+T7	Medical-Problem 740 778	substantial bilateral pleural effusion
+E6	Medical-Problem:T7
+T8	Medical-Assertion 845 860	probably due to
+A2	Medical-AssertionValue T8 possible
+T9	Medical-Problem 862 888	decreasing pulmonary edema
+T10	Medical-Problem 899 914	mildly enlarged
+E8	Medical-Problem:T10
+T11	Medical-Problem 920 937;939 957	mediastinal veins are less distended
+E9	Medical-Problem:T11
+T12	Medical-Assertion 1023 1025	no
+A3	Medical-AssertionValue T12 absent
+T13	Medical-Problem 1026 1038	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T2 has-Medical-Assertion:T3
+E4	Medical-Problem:T5 has-Medical-Assertion:T3
+E7	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Medical-Problem:T13 has-Medical-Assertion:T12

@@ -1,0 +1,42 @@
+T1	Medical-Anatomy 240 249	left base
+T2	Medical-Problem 262 296;298 314	patchy infiltrate including fluffy nodular elements
+T3	Medical-Problem 330 369	opacity appears linear at the periphery
+E3	Medical-Problem:T3
+T4	Medical-Anatomy 380 390	right base
+T5	Medical-Problem 403 422	more subtle opacity
+T6	Medical-Problem 425 449;451 459	Pulmonary vasculature is engorged
+E6	Medical-Problem:T6
+T7	Medical-Assertion 474 476	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 477 498	overt pulmonary edema
+T9	Medical-Assertion 510 512	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 513 529	pleural effusion
+T11	Medical-Problem 534 546	pneumothorax
+T12	Medical-Problem 615 634	Bibasilar opacities
+E10	Medical-Problem:T12
+T13	Medical-Assertion 669 682	worrisome for
+A3	Medical-AssertionValue T13 possible
+T14	Medical-Problem 684 693	pneumonia
+T15	Medical-Problem 706 716	aspiration
+T16	Lesion-Description 719 728	Opacities
+T17	Lesion-Characteristic 733 760	partly nodular in character
+T18	Lesion-Anatomy 765 774	pulmonary
+T19	Lesion-Description 775 782	nodules
+T20	Medical-Assertion 1076 1089	suggestive of
+A4	Medical-AssertionValue T20 possible
+T21	Medical-Problem 1090 1109	vascular congestion
+T22	Medical-Assertion 1110 1117	without
+A5	Medical-AssertionValue T22 absent
+T23	Medical-Problem 1118 1139	overt pulmonary edema
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E5	Medical-Problem:T5 has-Medical-Anatomy:T4
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E11	Medical-Problem:T14 has-Medical-Assertion:T13
+E12	Medical-Problem:T15 has-Medical-Assertion:T13
+E13	Lesion-Description:T16 has-Lesion-Characteristic:T17
+E16	Lesion-Description:T19 has-Lesion-Characteristic:T17 has-Lesion-Anatomy:T18
+E17	Medical-Problem:T21 has-Medical-Assertion:T20
+E18	Medical-Problem:T23 has-Medical-Assertion:T22

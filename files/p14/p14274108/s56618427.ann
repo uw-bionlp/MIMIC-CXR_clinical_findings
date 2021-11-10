@@ -1,0 +1,20 @@
+T1	Medical-Anatomy 234 239	lungs
+T2	Medical-Problem 248 295	hyperinflated with flattening of the diaphragms
+T3	Medical-Assertion 297 307	suggesting
+A1	Medical-AssertionValue T3 possible
+T4	Medical-Problem 308 315;317 346	chronic obstructive pulmonary disease
+T5	Medical-Assertion 430 432	No
+A2	Medical-AssertionValue T5 absent
+T6	Medical-Problem 433 449	pleural effusion
+T7	Medical-Problem 453 465	pneumothorax
+T8	Medical-Assertion 486 488	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 489 517	definite focal consolidation
+T10	Medical-Problem 520 547;549 556	Slight relative increase in opacity
+T11	Medical-Anatomy 566 582	right hemithorax
+E2	Medical-Problem:T2 has-Medical-Anatomy:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1 has-Medical-Assertion:T3
+E4	Medical-Problem:T6 has-Medical-Assertion:T5
+E5	Medical-Problem:T7 has-Medical-Assertion:T5
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Anatomy:T11

@@ -1,0 +1,43 @@
+T1	Medical-Problem 193 228;230 240	Moderate enlargement of the cardiac silhouette
+E1	Medical-Problem:T1
+T2	Medical-Problem 298 306	widening
+T3	Medical-Anatomy 315 340	right paratracheal stripe
+T4	Lesion-Characteristic 357 367	underlying
+T5	Lesion-Anatomy 368 379	mediastinal
+T6	Lesion-Description 381 396	lymphadenopathy
+T7	Medical-Problem 399 428	Diffuse interstitial markings
+T8	Medical-Problem 450 472	ground-glass opacities
+E8	Medical-Problem:T8
+T9	Medical-Anatomy 505 520	right lung base
+T10	Medical-Problem 587 594;596 621	chronic interstitial lung disease
+E10	Medical-Problem:T10
+T11	Medical-Assertion 629 637	possible
+A1	Medical-AssertionValue T11 possible
+T12	Medical-Problem 638 658	superimposed process
+T13	Medical-Assertion 661 663	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 664 671;673 681	pleural effusion
+T15	Medical-Problem 685 697	pneumothorax
+T16	Medical-Assertion 724 726	no
+A3	Medical-AssertionValue T16 absent
+T17	Medical-Problem 727 740;742 755	acute osseous abnormalities
+T18	Medical-Problem 773 793	Diffuse lung disease
+E15	Medical-Problem:T18
+T19	Medical-Problem 800 828;830 843	slight interval worsening of opacification
+T20	Medical-Anatomy 851 866	right lung base
+T21	Medical-Assertion 884 895	may reflect
+A4	Medical-AssertionValue T21 possible
+T22	Medical-Problem 896 908;910 965	superimposed pulmonary edema on a background of chronic lung disease
+T23	Medical-Assertion 990 1014	could also be related to
+A5	Medical-AssertionValue T23 possible
+T24	Medical-Problem 1015 1058;1060 1071	acute exacerbation of a recurrent pulmonary abnormality
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E6	Lesion-Description:T6 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T5
+E7	Medical-Problem:T7 has-Medical-Anatomy:T9
+E11	Medical-Problem:T12 has-Medical-Assertion:T11
+E12	Medical-Problem:T14 has-Medical-Assertion:T13
+E13	Medical-Problem:T15 has-Medical-Assertion:T13
+E14	Medical-Problem:T17 has-Medical-Assertion:T16
+E16	Medical-Problem:T19 has-Medical-Anatomy:T20
+E18	Medical-Problem:T22 has-Medical-Assertion:T21
+E19	Medical-Problem:T24 has-Medical-Assertion:T23

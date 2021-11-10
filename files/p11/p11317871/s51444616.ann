@@ -1,0 +1,31 @@
+T1	Medical-Problem 197 222	convex thoracic scoliosis
+E1	Medical-Problem:T1
+T2	Medical-Problem 327 331	Mild
+E2	Medical-Problem:T2
+T3	Medical-Problem 332 339;341 352	cardiac enlargement
+T4	Medical-Anatomy 376 380	apex
+T5	Medical-Problem 406 413;415 425	diffuse prominence
+T6	Medical-Anatomy 433 464	pulmonary interstitial markings
+T7	Medical-Assertion 470 472	no
+A1	Medical-AssertionValue T7 absent
+T8	Medical-Problem 473 492	focal consolidation
+T9	Medical-Assertion 522 524	no
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 525 541	pleural effusion
+T11	Medical-Problem 545 557	pneumothorax
+T12	Medical-Problem 624 634	prominence
+T13	Medical-Anatomy 642 673	pulmonary interstitial markings
+T14	Medical-Problem 684 692;694 703	atypical infection
+T15	Medical-Assertion 704 722	cannot be excluded
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Assertion 728 739	no evidence
+A4	Medical-AssertionValue T16 absent
+T17	Medical-Problem 743 762	focal consolidation
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T5 has-Medical-Anatomy:T6
+E7	Medical-Problem:T8 has-Medical-Assertion:T7
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E9	Medical-Problem:T11 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E12	Medical-Problem:T14 has-Medical-Anatomy:T13 has-Medical-Assertion:T15
+E13	Medical-Problem:T17 has-Medical-Anatomy:T13 has-Medical-Assertion:T16

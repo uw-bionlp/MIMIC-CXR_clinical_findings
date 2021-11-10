@@ -1,0 +1,20 @@
+T1	Medical-Anatomy 329 334	lungs
+T2	Medical-Assertion 339 344	clear
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 348 361	consolidation
+T4	Medical-Problem 372 379;381 402	minimal bibasilar atelectasis
+T5	Medical-Anatomy 438 459	pulmonary vasculature
+T6	Medical-Assertion 489 506	likely signifying
+A2	Medical-AssertionValue T6 possible
+T7	Medical-Problem 507 534	minimal vascular congestion
+T8	Medical-Assertion 547 549	no
+A3	Medical-AssertionValue T8 absent
+T9	Medical-Problem 550 572	large pleural effusion
+T10	Medical-Problem 576 588	pneumothorax
+T11	Medical-Problem 606 633	Minimal vascular congestion
+E8	Medical-Problem:T11
+E2	Medical-Problem:T3 has-Medical-Anatomy:T1 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Anatomy:T1
+E5	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T8

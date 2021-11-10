@@ -1,0 +1,31 @@
+T1	Medical-Problem 241 259	Low bilateral lung
+E1	Medical-Problem:T1
+T2	Medical-Problem 273 313;315 325	interval increase in size of the pleural effusions,
+T3	Medical-Anatomy 326 347	particularly the left
+T4	Medical-Problem 350 391;393 402	Interval worsening of the patchy airspace opacities
+T5	Medical-Anatomy 406 416	both lungs
+T6	Medical-Assertion 423 434	may reflect
+A1	Medical-AssertionValue T6 possible
+T7	Medical-Problem 435 450	pulmonary edema
+T8	Medical-Problem 454 464;466 475	multifocal pneumonia
+T9	Medical-Assertion 478 480	No
+A2	Medical-AssertionValue T9 absent
+T10	Medical-Problem 481 493	pneumothorax
+T11	Medical-Problem 587 603;605 614	adjacent pleural effusions
+E9	Medical-Problem:T11
+T12	Medical-Problem 635 686	Interval increase in size of the pleural effusions,
+T13	Medical-Anatomy 687 711	particularly on the left
+T14	Medical-Problem 716 764	Increasing patchy airspace opacities bilaterally
+E12	Medical-Problem:T14
+T15	Medical-Assertion 771 782	may reflect
+A3	Medical-AssertionValue T15 possible
+T16	Medical-Problem 783 792;794 809	worsening pulmonary edema
+T17	Medical-Problem 813 833	multifocal pneumonia
+E2	Medical-Problem:T2 has-Medical-Anatomy:T3
+E4	Medical-Problem:T4 has-Medical-Anatomy:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E7	Medical-Problem:T8 has-Medical-Anatomy:T5 has-Medical-Assertion:T6
+E8	Medical-Problem:T10 has-Medical-Assertion:T9
+E10	Medical-Problem:T12 has-Medical-Anatomy:T13
+E13	Medical-Problem:T16 has-Medical-Assertion:T15
+E14	Medical-Problem:T17 has-Medical-Assertion:T15

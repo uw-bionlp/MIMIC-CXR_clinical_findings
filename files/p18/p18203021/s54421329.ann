@@ -1,0 +1,17 @@
+T1	Medical-Assertion 269 271	no
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 272 279;281 292	pleural abnormality
+T3	Medical-Assertion 331 341	suggestion
+A2	Medical-AssertionValue T3 possible
+T4	Medical-Problem 345 352;354 374	greater mediastinal fullness
+T5	Medical-Problem 379 392	opacification
+T6	Medical-Anatomy 400 411	mediastinum
+T7	Medical-Assertion 499 521	Differential diagnosis
+A3	Medical-AssertionValue T7 possible
+T8	Lesion-Description 531 541	adenopathy
+E5	Lesion-Description:T8
+T9	Medical-Problem 557 562	edema
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T4 has-Medical-Assertion:T3 has-Medical-Anatomy:T6
+E3	Medical-Problem:T5 has-Medical-Assertion:T3 has-Medical-Anatomy:T6
+E6	Medical-Problem:T9 has-Medical-Assertion:T7

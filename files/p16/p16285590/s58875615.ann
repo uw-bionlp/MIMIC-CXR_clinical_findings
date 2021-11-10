@@ -1,0 +1,22 @@
+T1	Medical-Problem 317 332	early pneumonia
+T2	Medical-Anatomy 340 351	lower lungs
+T3	Lesion-Characteristic 452 459	chronic
+T4	Lesion-Characteristic 460 468	fibrotic
+T5	Lesion-Description 469 475	lesion
+T6	Lesion-Anatomy 483 498	left upper lobe
+T7	Medical-Problem 525 530;532 553	Small left pleural effusion
+E7	Medical-Problem:T7
+T8	Medical-Assertion 583 589	may be
+A1	Medical-AssertionValue T8 possible
+T9	Medical-Problem 592 600	fracture
+T10	Lesion-Characteristic 604 609	lytic
+T11	Lesion-Description 610 616	lesion
+T12	Lesion-Anatomy 624 649	left eighth rib laterally
+T13	Medical-Assertion 782 784	No
+A2	Medical-AssertionValue T13 absent
+T14	Medical-Problem 785 797	pneumothorax
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E5	Lesion-Description:T5 has-Lesion-Characteristic:T3 has-Lesion-Characteristic:T4 has-Lesion-Anatomy:T6
+E8	Medical-Problem:T9 has-Medical-Assertion:T8
+E10	Lesion-Description:T11 has-Lesion-Characteristic:T10 has-Lesion-Anatomy:T12
+E12	Medical-Problem:T14 has-Medical-Assertion:T13

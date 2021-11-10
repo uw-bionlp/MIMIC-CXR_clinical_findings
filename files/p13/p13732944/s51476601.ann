@@ -1,0 +1,18 @@
+T1	Medical-Problem 252 258	aortic
+E1	Medical-Problem:T1
+T2	Medical-Assertion 300 302	no
+A1	Medical-AssertionValue T2 absent
+T3	Medical-Problem 303 319	pleural effusion
+T4	Medical-Problem 323 335	pneumothorax
+T5	Lesion-Characteristic 339 348	Calcified
+T6	Lesion-Description 349 358	granuloma
+T7	Lesion-Anatomy 366 379	left mid lung
+T8	Lesion-Size-Trend 388 397	unchanged
+A2	Lesion-Size-TrendValue T8 no-change
+T9	Medical-Assertion 454 465	No evidence
+A3	Medical-AssertionValue T9 absent
+T10	Medical-Problem 469 498	acute cardiopulmonary disease
+E2	Medical-Problem:T3 has-Medical-Assertion:T2
+E3	Medical-Problem:T4 has-Medical-Assertion:T2
+E5	Lesion-Description:T6 has-Lesion-Characteristic:T5 has-Lesion-Anatomy:T7 has-Lesion-Size-Trend:T8
+E7	Medical-Problem:T10 has-Medical-Assertion:T9

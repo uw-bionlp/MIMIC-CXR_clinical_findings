@@ -1,0 +1,22 @@
+T1	Medical-Problem 179 199	lung volumes are low
+E1	Medical-Problem:T1
+T2	Medical-Problem 203 211	Fibrotic
+T3	Medical-Problem 212 219	changes
+T4	Medical-Anatomy 223 238	both lung bases
+T5	Medical-Anatomy 257 261	left
+E5	Medical-Anatomy:T5
+T6	Medical-Assertion 361 363	no
+A1	Medical-AssertionValue T6 absent
+T7	Medical-Problem 364 408	new abnormal cardiac or mediastinal contours
+T8	Medical-Problem 411 425	Calcifications
+E7	Medical-Problem:T8
+T9	Medical-Problem 484 492	blunting
+T10	Medical-Anatomy 500 523	left costophrenic angle
+T11	Medical-Problem 528 542	small effusion
+T12	Medical-Assertion 543 552;554 562	cannot be excluded
+A2	Medical-AssertionValue T12 possible
+E2	Medical-Problem:T2 has-Medical-Anatomy:T4
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E6	Medical-Problem:T7 has-Medical-Assertion:T6
+E8	Medical-Problem:T9 has-Medical-Anatomy:T10
+E10	Medical-Problem:T11 has-Medical-Assertion:T12

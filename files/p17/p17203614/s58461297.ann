@@ -1,0 +1,18 @@
+T1	Medical-Assertion 269 271;273 281	no evidence
+A1	Medical-AssertionValue T1 absent
+T2	Medical-Problem 285 302	pneumomediastinum
+T3	Medical-Problem 306 318	pneumothorax
+T4	Medical-Problem 532 574	Bilateral predominantly alveolar opacities
+T5	Medical-Anatomy 590 634	right lung to a greater degree than the left
+T6	Medical-Anatomy 674 706	right mid and lower lung regions
+T7	Medical-Assertion 713 726	may represent
+A2	Medical-AssertionValue T7 possible
+T8	Medical-Problem 745 760	pulmonary edema
+T9	Medical-Problem 765 785	multifocal pneumonia
+T10	Medical-Problem 788 805;807 816	Bilateral pleural effusions
+E8	Medical-Problem:T10
+E1	Medical-Problem:T2 has-Medical-Assertion:T1
+E2	Medical-Problem:T3 has-Medical-Assertion:T1
+E3	Medical-Problem:T4 has-Medical-Anatomy:T5 has-Medical-Anatomy:T6
+E6	Medical-Problem:T8 has-Medical-Assertion:T7
+E7	Medical-Problem:T9 has-Medical-Assertion:T7

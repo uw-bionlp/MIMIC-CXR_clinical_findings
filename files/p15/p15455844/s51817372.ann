@@ -1,0 +1,14 @@
+T1	Medical-Problem 334 350	some atelectasis
+T2	Medical-Anatomy 358 412;414 422	lung bases, particularly in the retrocardiac region on the left
+T3	Medical-Problem 768 784	Patchy opacities
+T4	Medical-Anatomy 792 806	left lung base
+T5	Medical-Assertion 807 820	may represent
+A1	Medical-AssertionValue T5 possible
+T6	Medical-Problem 821 832	atelectasis
+T7	Medical-Problem 844 853	pneumonia
+T8	Medical-Assertion 854 872	cannot be excluded
+A2	Medical-AssertionValue T8 possible
+E1	Medical-Problem:T1 has-Medical-Anatomy:T2
+E3	Medical-Problem:T3 has-Medical-Anatomy:T4
+E5	Medical-Problem:T6 has-Medical-Anatomy:T4 has-Medical-Assertion:T5
+E6	Medical-Problem:T7 has-Medical-Anatomy:T4 has-Medical-Assertion:T8
