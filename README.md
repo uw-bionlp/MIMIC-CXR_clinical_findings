@@ -12,3 +12,14 @@ The schema in the annotation guideline document provides details of the two clin
 The extracted findings are in [BRAT's standoff format](https://brat.nlplab.org/standoff.html). 
  
 The directory structure of the extracted data is identical to the MIMIC-CXR data, so that it can be easily integrated.  Only the extractions are included in this repo. The original X-ray reports and images will needed to acquired from MIMIC-CXR with proper data usage agreement.
+
+Please cite our work.
+ 
+```
+@article{Wilson-Lau-2021-event-extraction,
+    title = "Event-based clinical findings extraction from radiology reports with pre-trained language model",
+    author = "Wilson Lau, Kevin Lybarger, Martin L. Gunn, Meliha Yetisgen",    
+    url = "https://arxiv.org/abs/2112.13512"
+    }
+
+```
